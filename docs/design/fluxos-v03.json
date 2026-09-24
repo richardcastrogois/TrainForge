@@ -1,0 +1,607 @@
+[
+  [
+    8,
+    "Abertura A",
+    "O teu ritmo.",
+    "Treinar. Registar. Continuar.",
+    [],
+    []
+  ],
+  [
+    9,
+    "Abertura B",
+    "O teu ritmo.",
+    "A preparar o teu espaço…",
+    [],
+    []
+  ],
+  [
+    10,
+    "Entrar",
+    "Bom ter-te por aqui.",
+    "Entra para continuar a tua rotina.",
+    [
+      [
+        "field",
+        "E-mail ou utilizador",
+        "O teu e-mail"
+      ],
+      [
+        "field",
+        "Palavra-passe",
+        "••••••••"
+      ],
+      [
+        "link",
+        "Esqueci a palavra-passe",
+        12
+      ],
+      [
+        "button",
+        "Entrar",
+        26
+      ],
+      [
+        "social",
+        "Continuar com Google",
+        14
+      ],
+      [
+        "social",
+        "Continuar com Apple · iOS",
+        14
+      ],
+      [
+        "link",
+        "Ainda não tenho conta",
+        11
+      ]
+    ],
+    []
+  ],
+  [
+    11,
+    "Criar conta",
+    "Vamos começar.",
+    "Uma conta para guardar a tua evolução.",
+    [
+      [
+        "field",
+        "Nome *",
+        "Como te podemos chamar?"
+      ],
+      [
+        "field",
+        "E-mail *",
+        "nome@exemplo.pt"
+      ],
+      [
+        "field",
+        "Palavra-passe *",
+        "Criar palavra-passe"
+      ],
+      [
+        "field",
+        "Confirmar palavra-passe *",
+        "Repetir palavra-passe"
+      ],
+      [
+        "note",
+        "Ao criar conta, consulta os Termos e a\nPolítica de Privacidade."
+      ],
+      [
+        "button",
+        "Criar a minha conta",
+        13
+      ],
+      [
+        "link",
+        "Já tenho conta",
+        10
+      ]
+    ],
+    []
+  ],
+  [
+    12,
+    "Recuperar acesso",
+    "Recuperar acesso.",
+    "Vamos enviar um link para o teu e-mail.",
+    [
+      [
+        "field",
+        "E-mail *",
+        "nome@exemplo.pt"
+      ],
+      [
+        "note",
+        "Se existir uma conta com este endereço,\nreceberás instruções para recuperar o acesso."
+      ],
+      [
+        "button",
+        "Enviar instruções",
+        33
+      ],
+      [
+        "link",
+        "Voltar ao login",
+        10
+      ]
+    ],
+    []
+  ],
+  [
+    13,
+    "Confirmar e-mail",
+    "Confirma o teu e-mail.",
+    "Falta este passo para proteger a tua conta.",
+    [
+      [
+        "card",
+        "Verifica a caixa de entrada",
+        "Abre o link que enviámos para confirmar.\nPodes regressar aqui quando terminares."
+      ],
+      [
+        "button",
+        "Já confirmei o e-mail",
+        14
+      ],
+      [
+        "link",
+        "Reenviar e-mail",
+        13
+      ],
+      [
+        "link",
+        "Corrigir o endereço",
+        11
+      ]
+    ],
+    []
+  ],
+  [
+    14,
+    "Antes de começar",
+    "Feito à tua medida.",
+    "Tu escolhes o que configurar agora.",
+    [
+      [
+        "card",
+        "Treino com contexto",
+        "Objetivo, experiência e equipamento ajudam\na encontrar e organizar um plano adequado."
+      ],
+      [
+        "card",
+        "Alimentação sem complicar",
+        "Preferências e horários organizam o diário.\nMedidas são opcionais; podes adicioná-las depois."
+      ],
+      [
+        "card",
+        "Uma rotina possível",
+        "Dias e lembretes ajudam a manter o ritmo.\nAs notificações só são pedidas se as ativares."
+      ],
+      [
+        "note",
+        "Podes rever e apagar os teus dados no Perfil.\nAs informações opcionais podem ficar para depois."
+      ],
+      [
+        "button",
+        "Escolher por onde começar",
+        15
+      ]
+    ],
+    []
+  ],
+  [
+    15,
+    "Escolher áreas",
+    "Por onde começamos?",
+    "Configura cada área quando fizer sentido.",
+    [
+      [
+        "card",
+        "Treino",
+        "Objetivo, experiência, dias e equipamento.\nNecessário para selecionar e organizar um plano."
+      ],
+      [
+        "button",
+        "Configurar o meu treino",
+        16
+      ],
+      [
+        "social",
+        "Configurar alimentação",
+        19
+      ],
+      [
+        "social",
+        "Organizar a minha rotina",
+        21
+      ],
+      [
+        "link",
+        "Explorar e preencher depois",
+        23
+      ]
+    ],
+    []
+  ],
+  [
+    16,
+    "Treino · objetivo",
+    "O que queres alcançar?",
+    "TREINO · 1 DE 3",
+    [
+      [
+        "choice",
+        "Objetivo principal *",
+        "Força e massa muscular  ✓"
+      ],
+      [
+        "choice",
+        "Outras opções",
+        "Condicionamento · Mobilidade · Consistência"
+      ],
+      [
+        "choice",
+        "Experiência *",
+        "A começar · Alguma prática ✓ · Experiente"
+      ],
+      [
+        "note",
+        "Usamos estas escolhas para filtrar planos.\nNão geramos uma prescrição com IA."
+      ],
+      [
+        "button",
+        "Continuar para disponibilidade",
+        17
+      ],
+      [
+        "link",
+        "Voltar às áreas",
+        15
+      ]
+    ],
+    []
+  ],
+  [
+    17,
+    "Treino · contexto",
+    "O treino cabe na tua vida.",
+    "TREINO · 2 DE 3",
+    [
+      [
+        "choice",
+        "Onde vais treinar? *",
+        "Ginásio ✓ · Em casa · Ao ar livre"
+      ],
+      [
+        "choice",
+        "Equipamento disponível *",
+        "Pesos e máquinas ✓ · Peso corporal"
+      ],
+      [
+        "choice",
+        "Dias por semana *",
+        "2 · 3 ✓ · 4 · 5"
+      ],
+      [
+        "choice",
+        "Tempo por sessão *",
+        "30 min · 45 min ✓ · 60 min"
+      ],
+      [
+        "button",
+        "Continuar para dados opcionais",
+        18
+      ],
+      [
+        "link",
+        "Voltar ao objetivo",
+        16
+      ]
+    ],
+    []
+  ],
+  [
+    18,
+    "Treino · dados opcionais",
+    "Só o que quiseres partilhar.",
+    "TREINO · 3 DE 3 · OPCIONAL",
+    [
+      [
+        "field",
+        "Altura · opcional",
+        "Adicionar em cm"
+      ],
+      [
+        "field",
+        "Peso · opcional",
+        "Adicionar em kg"
+      ],
+      [
+        "field",
+        "Movimentos a evitar · opcional",
+        "Adicionar preferências ou limitações"
+      ],
+      [
+        "note",
+        "As medidas ajudam no registo de evolução.\nLimitações não equivalem a avaliação clínica.\nUm plano pode exigir revisão por um profissional."
+      ],
+      [
+        "button",
+        "Guardar preferências de treino",
+        22
+      ],
+      [
+        "link",
+        "Continuar sem estes dados",
+        22
+      ]
+    ],
+    []
+  ],
+  [
+    19,
+    "Alimentação · preferências",
+    "Vamos organizar o diário.",
+    "ALIMENTAÇÃO · 1 DE 2",
+    [
+      [
+        "choice",
+        "Como queres usar esta área? *",
+        "Registar refeições ✓ · Seguir plano próprio"
+      ],
+      [
+        "choice",
+        "Preferência alimentar · opcional",
+        "Sem preferência · Vegetariana · Outra"
+      ],
+      [
+        "field",
+        "Alergias ou alimentos a evitar · opcional",
+        "Adicionar ou preencher depois"
+      ],
+      [
+        "note",
+        "Informações alimentares são opcionais e sensíveis.\nServem para organizar os teus registos.\nO app não valida segurança de dietas ou alergénios."
+      ],
+      [
+        "button",
+        "Continuar para horários",
+        20
+      ],
+      [
+        "link",
+        "Configurar alimentação depois",
+        24
+      ]
+    ],
+    []
+  ],
+  [
+    20,
+    "Alimentação · horários",
+    "Como são as tuas refeições?",
+    "ALIMENTAÇÃO · 2 DE 2",
+    [
+      [
+        "choice",
+        "Refeições que queres registar *",
+        "Pequeno-almoço ✓ · Almoço ✓ · Jantar ✓"
+      ],
+      [
+        "field",
+        "Horários · opcionais",
+        "08:00 · 13:00 · 20:00"
+      ],
+      [
+        "choice",
+        "Lembretes · opcionais",
+        "Desativados ✓ · Ativar depois"
+      ],
+      [
+        "note",
+        "Podes registar refeições sem definir calorias.\nUm objetivo calórico depende de configuração\nespecífica ou de um plano do teu profissional."
+      ],
+      [
+        "button",
+        "Guardar e abrir o diário",
+        5
+      ],
+      [
+        "link",
+        "Voltar às preferências",
+        19
+      ]
+    ],
+    []
+  ],
+  [
+    21,
+    "Rotina · configurar",
+    "Uma rotina que funciona.",
+    "ROTINA · CONFIGURAÇÃO INDEPENDENTE",
+    [
+      [
+        "field",
+        "Nome da rotina *",
+        "Caminhada ao fim do dia"
+      ],
+      [
+        "choice",
+        "Atividade *",
+        "Caminhada ✓ · Corrida · Treino · Outra"
+      ],
+      [
+        "choice",
+        "Dias *",
+        "S · T ✓ · Q · Q ✓ · S · S ✓ · D"
+      ],
+      [
+        "field",
+        "Horário · opcional",
+        "18:30"
+      ],
+      [
+        "choice",
+        "Lembrete · opcional",
+        "Desativado ✓ · Ativar"
+      ],
+      [
+        "button",
+        "Guardar a minha rotina",
+        1
+      ],
+      [
+        "link",
+        "Configurar rotina depois",
+        25
+      ]
+    ],
+    []
+  ],
+  [
+    22,
+    "Rever configuração",
+    "Pronto para o primeiro passo.",
+    "Podes completar o resto quando quiseres.",
+    [
+      [
+        "card",
+        "Treino · configurado",
+        "Objetivo, experiência e disponibilidade guardados.\nAgora podes escolher um plano com uma origem."
+      ],
+      [
+        "card",
+        "Alimentação · por configurar",
+        "O diário terá um convite para preencher só\nas preferências e a rotina alimentar."
+      ],
+      [
+        "card",
+        "Rotina · por configurar",
+        "Podes adicionar atividades e lembretes depois."
+      ],
+      [
+        "button",
+        "Explorar os planos",
+        2
+      ],
+      [
+        "social",
+        "Configurar alimentação agora",
+        19
+      ],
+      [
+        "link",
+        "Rever preferências de treino",
+        16
+      ]
+    ],
+    []
+  ],
+  [
+    23,
+    "Planos · por configurar",
+    "O teu primeiro plano.",
+    "PLANOS · CONFIGURAÇÃO PENDENTE",
+    [
+      [
+        "card",
+        "Falta conhecer o teu contexto",
+        "Preenche objetivo, experiência, equipamento\ne disponibilidade para organizar o teu treino."
+      ],
+      [
+        "note",
+        "Altura, peso e limitações são opcionais.\nPodes consultar a origem dos planos antes de escolher."
+      ],
+      [
+        "button",
+        "Configurar treino",
+        16
+      ],
+      [
+        "social",
+        "Já tenho um plano",
+        2
+      ],
+      [
+        "link",
+        "Configurar outras áreas",
+        15
+      ]
+    ],
+    []
+  ],
+  [
+    24,
+    "Diário · por configurar",
+    "O teu diário começa aqui.",
+    "ALIMENTAÇÃO · CONFIGURAÇÃO PENDENTE",
+    [
+      [
+        "card",
+        "Ainda não configuraste a alimentação",
+        "Escolhe como queres usar o diário e quais\nrefeições vais registar. Horários são opcionais."
+      ],
+      [
+        "note",
+        "Não precisas de repetir os dados do treino.\nSem meta calórica? Podes apenas registar refeições."
+      ],
+      [
+        "button",
+        "Configurar alimentação",
+        19
+      ],
+      [
+        "link",
+        "Voltar a Hoje",
+        1
+      ]
+    ],
+    []
+  ],
+  [
+    25,
+    "Rotina · por configurar",
+    "Encontra o teu ritmo.",
+    "ROTINA · CONFIGURAÇÃO PENDENTE",
+    [
+      [
+        "card",
+        "Ainda não criaste uma rotina",
+        "Escolhe uma atividade e os dias em que a queres\nfazer. Um horário e lembretes são opcionais."
+      ],
+      [
+        "button",
+        "Criar a minha rotina",
+        21
+      ],
+      [
+        "link",
+        "Voltar a Hoje",
+        1
+      ]
+    ],
+    []
+  ],
+  [
+    33,
+    "Recuperação · enviada",
+    "Verifica o teu e-mail.",
+    "Se a conta existir, enviámos as instruções.",
+    [
+      [
+        "card",
+        "Segue o link de recuperação",
+        "Verifica também o spam. O link permite definir\numa nova palavra-passe fora deste esboço."
+      ],
+      [
+        "button",
+        "Voltar ao login",
+        10
+      ]
+    ],
+    []
+  ]
+]

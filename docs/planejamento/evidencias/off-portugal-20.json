@@ -1,0 +1,8 @@
+{
+  "url": "https://world.openfoodfacts.org/api/v3.6/search?countries_tags=en%3Aportugal&page_size=20&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang&sort_by=unique_scans_n",
+  "collectedAtUtc": "2026-09-22T03:24:38Z",
+  "method": "GET",
+  "status": 503,
+  "error": "Service Temporarily Unavailable",
+  "elapsedSeconds": 1.094
+}

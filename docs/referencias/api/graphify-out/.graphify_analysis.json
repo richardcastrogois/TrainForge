@@ -1,0 +1,366 @@
+{
+  "communities": {
+    "0": [
+      "errors_index_invaliddaterangeerror",
+      "errors_index_invaliddaterangeerror_constructor",
+      "errors_index_notfounderror",
+      "errors_index_notfounderror_constructor",
+      "index",
+      "index_allowedorigins",
+      "index_app",
+      "index_envtologger",
+      "index_handler",
+      "lib_auth",
+      "lib_auth_auth",
+      "lib_auth_trustedorigins",
+      "lib_workout_streak",
+      "lib_workout_streak_calculateworkoutstreak",
+      "lib_workout_streak_calculateworkoutstreakinput",
+      "lib_workout_streak_weekday_map",
+      "lib_workout_streak_workoutdayforstreak",
+      "routes_bootstrap",
+      "routes_bootstrap_bootstraproutes",
+      "routes_home",
+      "routes_home_homeroutes",
+      "routes_mobile_bootstrap_mobilebootstraproutes",
+      "routes_mobile_stats",
+      "routes_mobile_stats_mobilestatsroutes",
+      "routes_stats",
+      "routes_stats_statsroutes",
+      "schemas_index_errorschema",
+      "schemas_index_statsqueryschema",
+      "schemas_index_statsschema",
+      "usecases_gethomedata",
+      "usecases_gethomedata_gethomedata",
+      "usecases_gethomedata_gethomedata_execute",
+      "usecases_gethomedata_inputdto",
+      "usecases_gethomedata_outputdto",
+      "usecases_gethomedata_parseisodate",
+      "usecases_gethomedata_weekday_map",
+      "usecases_getstats",
+      "usecases_getstats_getstats",
+      "usecases_getstats_getstats_execute",
+      "usecases_getstats_inputdto",
+      "usecases_getstats_outputdto",
+      "usecases_getstats_parseisodate"
+    ],
+    "1": [
+      "errors_index_invalidworkoutplanerror",
+      "errors_index_invalidworkoutplanerror_constructor",
+      "errors_index_invalidworkoutsessioncompletionerror",
+      "errors_index_invalidworkoutsessioncompletionerror_constructor",
+      "errors_index_sessionalreadystartederror",
+      "errors_index_sessionalreadystartederror_constructor",
+      "errors_index_workoutdayisresterror",
+      "errors_index_workoutdayisresterror_constructor",
+      "errors_index_workoutplannotactiveerror",
+      "errors_index_workoutplannotactiveerror_constructor",
+      "errors_index_workoutsessionalreadycompletederror",
+      "errors_index_workoutsessionalreadycompletederror_constructor",
+      "routes_mobile_workout_plans",
+      "routes_workout_plan",
+      "schemas_index",
+      "schemas_index_bodyfatpercentageschema",
+      "schemas_index_bootstrapschema",
+      "schemas_index_getworkoutdayschema",
+      "schemas_index_getworkoutplanschema",
+      "schemas_index_homedataschema",
+      "schemas_index_listworkoutplansqueryschema",
+      "schemas_index_listworkoutplansschema",
+      "schemas_index_nonnegativeintegerschema",
+      "schemas_index_positiveintegerschema",
+      "schemas_index_startworkoutsessionschema",
+      "schemas_index_updateworkoutsessionbodyschema",
+      "schemas_index_updateworkoutsessionschema",
+      "schemas_index_workoutdayinputschema",
+      "schemas_index_workoutdaysinputschema",
+      "schemas_index_workoutexerciseinputschema",
+      "schemas_index_workoutplanschema",
+      "usecases_getworkoutday",
+      "usecases_getworkoutday_getworkoutday",
+      "usecases_getworkoutday_inputdto",
+      "usecases_getworkoutday_outputdto",
+      "usecases_startworkoutsession",
+      "usecases_startworkoutsession_inputdto",
+      "usecases_startworkoutsession_outputdto",
+      "usecases_updateworkoutsession",
+      "usecases_updateworkoutsession_inputdto",
+      "usecases_updateworkoutsession_outputdto",
+      "usecases_updateworkoutsession_updateworkoutsession"
+    ],
+    "2": [
+      "lib_manual_plan_builder",
+      "lib_manual_plan_builder_all_week_days",
+      "lib_manual_plan_builder_buildmanualworkoutplan",
+      "lib_manual_plan_builder_getcoverimageurl",
+      "lib_manual_plan_builder_getmaxexercises",
+      "lib_manual_plan_builder_getplanname",
+      "lib_manual_plan_builder_getreps",
+      "lib_manual_plan_builder_getresttime",
+      "lib_manual_plan_builder_getsets",
+      "lib_manual_plan_builder_gettemplates",
+      "lib_manual_plan_builder_gettrainingdays",
+      "lib_manual_plan_builder_lower_cover_urls",
+      "lib_manual_plan_builder_manualexperiencelevel",
+      "lib_manual_plan_builder_manualgoal",
+      "lib_manual_plan_builder_manualplaninput",
+      "lib_manual_plan_builder_templateday",
+      "lib_manual_plan_builder_templatefocus",
+      "lib_manual_plan_builder_upper_cover_urls",
+      "routes_mobile_onboarding",
+      "routes_mobile_onboarding_conflictresponseschema",
+      "routes_mobile_onboarding_createdworkoutplanresponseschema",
+      "routes_mobile_onboarding_createplanrequestschema",
+      "routes_mobile_onboarding_generatedworkoutplandayschema",
+      "routes_mobile_onboarding_generatedworkoutplanschema",
+      "routes_mobile_onboarding_planpreferencesschema",
+      "routes_mobile_onboarding_traindatainputschema",
+      "routes_mobile_onboarding_userscreatingaiplan",
+      "routes_mobile_onboarding_userscreatingmanualplan"
+    ],
+    "3": [
+      "errors_index",
+      "errors_index_invalidmobileauthtokenerror",
+      "errors_index_invalidmobileauthtokenerror_constructor",
+      "errors_index_invalidusertraindataerror",
+      "errors_index_invalidusertraindataerror_constructor",
+      "routes_me",
+      "routes_me_meroutes",
+      "routes_mobile_bootstrap",
+      "routes_mobile_onboarding_mobileonboardingroutes",
+      "routes_mobile_profile",
+      "routes_mobile_profile_mobileprofileroutes",
+      "schemas_index_upsertusertraindatabodyschema",
+      "schemas_index_upsertusertraindataschema",
+      "schemas_index_usertraindataschema",
+      "usecases_getusertraindata",
+      "usecases_getusertraindata_getusertraindata",
+      "usecases_getusertraindata_getusertraindata_execute",
+      "usecases_getusertraindata_inputdto",
+      "usecases_getusertraindata_outputdto",
+      "usecases_upsertusertraindata",
+      "usecases_upsertusertraindata_assertvalidtraindata",
+      "usecases_upsertusertraindata_inputdto",
+      "usecases_upsertusertraindata_outputdto",
+      "usecases_upsertusertraindata_upsertusertraindata",
+      "usecases_upsertusertraindata_upsertusertraindata_execute"
+    ],
+    "4": [
+      "lib_env",
+      "lib_env_env",
+      "lib_env_envschema",
+      "lib_env_parsedenv",
+      "lib_env_trustedoriginslist",
+      "lib_get_mobile_user",
+      "lib_get_mobile_user_getmobileuserfromauthorizationheader",
+      "lib_mobile_auth",
+      "lib_mobile_auth_allowedaudiences",
+      "lib_mobile_auth_generatemobilerefreshtoken",
+      "lib_mobile_auth_googleclient",
+      "lib_mobile_auth_hashmobilerefreshtoken",
+      "lib_mobile_auth_mobilejwtpayload",
+      "lib_mobile_auth_mobiletokenpayload",
+      "lib_mobile_auth_signmobileapptoken",
+      "lib_mobile_auth_verifygoogleidtoken",
+      "lib_mobile_auth_verifymobileapptoken",
+      "routes_mobile_auth",
+      "routes_mobile_auth_authsuccessschema",
+      "routes_mobile_auth_getclientip",
+      "routes_mobile_auth_mobileauthroutes",
+      "routes_mobile_auth_refreshbodyschema",
+      "routes_mobile_home",
+      "routes_mobile_home_mobilehomeroutes"
+    ],
+    "5": [
+      "routes_ai",
+      "routes_ai_airoutes",
+      "routes_mobile_workout_plans_mobileworkoutplanroutes",
+      "routes_workout_plan_workoutplanroutes",
+      "usecases_createworkoutplan",
+      "usecases_createworkoutplan_areworkoutplansequivalent",
+      "usecases_createworkoutplan_assertvalidworkoutplan",
+      "usecases_createworkoutplan_createworkoutplan",
+      "usecases_createworkoutplan_createworkoutplan_execute",
+      "usecases_createworkoutplan_inputdto",
+      "usecases_createworkoutplan_normalizeworkoutdays",
+      "usecases_createworkoutplan_outputdto",
+      "usecases_getworkoutday_getworkoutday_execute",
+      "usecases_getworkoutplan_getworkoutplan",
+      "usecases_getworkoutplan_getworkoutplan_execute",
+      "usecases_listworkoutplans_listworkoutplans",
+      "usecases_listworkoutplans_listworkoutplans_execute",
+      "usecases_startworkoutsession_startworkoutsession",
+      "usecases_startworkoutsession_startworkoutsession_execute",
+      "usecases_updateworkoutsession_parsecompletedat",
+      "usecases_updateworkoutsession_updateworkoutsession_execute"
+    ],
+    "6": [
+      "lib_db",
+      "lib_db_adapter",
+      "lib_db_createprismaclient",
+      "lib_db_globalforprisma",
+      "lib_db_prisma",
+      "usecases_getworkoutplan",
+      "usecases_getworkoutplan_inputdto",
+      "usecases_getworkoutplan_outputdto",
+      "usecases_listworkoutplans",
+      "usecases_listworkoutplans_inputdto",
+      "usecases_listworkoutplans_outputdto"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09523809523809523,
+    "1": 0.08710801393728224,
+    "2": 0.10052910052910052,
+    "3": 0.14333333333333334,
+    "4": 0.15217391304347827,
+    "5": 0.15714285714285714,
+    "6": 0.21818181818181817
+  },
+  "gods": [
+    {
+      "id": "lib_get_mobile_user_getmobileuserfromauthorizationheader",
+      "label": "getMobileUserFromAuthorizationHeader()",
+      "degree": 16
+    },
+    {
+      "id": "lib_db_prisma",
+      "label": "prisma",
+      "degree": 14
+    },
+    {
+      "id": "errors_index_notfounderror",
+      "label": "NotFoundError",
+      "degree": 13
+    },
+    {
+      "id": "lib_manual_plan_builder_buildmanualworkoutplan",
+      "label": "buildManualWorkoutPlan()",
+      "degree": 11
+    },
+    {
+      "id": "schemas_index_errorschema",
+      "label": "ErrorSchema",
+      "degree": 10
+    },
+    {
+      "id": "routes_mobile_workout_plans_mobileworkoutplanroutes",
+      "label": "mobileWorkoutPlanRoutes()",
+      "degree": 9
+    },
+    {
+      "id": "errors_index_invaliddaterangeerror",
+      "label": "InvalidDateRangeError",
+      "degree": 8
+    },
+    {
+      "id": "routes_mobile_auth_mobileauthroutes",
+      "label": "mobileAuthRoutes()",
+      "degree": 8
+    },
+    {
+      "id": "routes_workout_plan_workoutplanroutes",
+      "label": "workoutPlanRoutes()",
+      "degree": 8
+    },
+    {
+      "id": "lib_auth_auth",
+      "label": "auth",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "mobileBootstrapRoutes()",
+      "target": "getMobileUserFromAuthorizationHeader()",
+      "source_files": [
+        "routes/mobile-bootstrap.ts",
+        "lib/get-mobile-user.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "mobileStatsRoutes()",
+      "target": "getMobileUserFromAuthorizationHeader()",
+      "source_files": [
+        "routes/mobile-stats.ts",
+        "lib/get-mobile-user.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "mobileOnboardingRoutes()",
+      "target": "buildManualWorkoutPlan()",
+      "source_files": [
+        "routes/mobile-onboarding.ts",
+        "lib/manual-plan-builder.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "mobileOnboardingRoutes()",
+      "target": "getMobileUserFromAuthorizationHeader()",
+      "source_files": [
+        "routes/mobile-onboarding.ts",
+        "lib/get-mobile-user.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "mobileProfileRoutes()",
+      "target": "getMobileUserFromAuthorizationHeader()",
+      "source_files": [
+        "routes/mobile-profile.ts",
+        "lib/get-mobile-user.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `getMobileUserFromAuthorizationHeader()` connect `getMobileUserFromAuthorizationHeader` to `index.ts`, `mobile-workout-plans.ts`, `mobile-onboarding.ts`, `errors/index.ts`, `CreateWorkoutPlan.ts`?",
+      "why": "High betweenness centrality (0.046) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `buildManualWorkoutPlan()` connect `mobile-onboarding.ts` to `errors/index.ts`?",
+      "why": "High betweenness centrality (0.045) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `prisma` connect `db.ts` to `index.ts`, `mobile-workout-plans.ts`, `errors/index.ts`, `getMobileUserFromAuthorizationHeader`, `CreateWorkoutPlan.ts`?",
+      "why": "High betweenness centrality (0.031) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `CalculateWorkoutStreakInput`, `WorkoutDayForStreak`, `InputDto` to the rest of the system?",
+      "why": "60 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `mobile-workout-plans.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08710801393728224 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `mobile-onboarding.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10052910052910052 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

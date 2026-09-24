@@ -1,0 +1,247 @@
+[
+  {
+    "id": "cofid-2021",
+    "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+    "status": 200,
+    "finalUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+    "bytes": 4629542,
+    "sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+    "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "bodyFile": "cofid-2021.xlsx",
+    "elapsedSeconds": 3.094
+  },
+  {
+    "id": "ciqual-2025-metadata",
+    "url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/RDMHWY",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+    "status": 200,
+    "finalUrl": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/RDMHWY",
+    "bytes": 17726,
+    "sha256": "1ed52f01d544bd7f6be360c71110afdb5b2422d5d4638bff775649d057ccd66b",
+    "contentType": "application/json;charset=UTF-8",
+    "bodyFile": "ciqual-2025-metadata.json",
+    "elapsedSeconds": 1.438
+  },
+  {
+    "id": "ciqual-2025",
+    "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666260",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:21:17.178645+00:00",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>",
+    "elapsedSeconds": 1.829
+  },
+  {
+    "id": "fineli-food-11060",
+    "url": "https://fineli.fi/fineli/api/v1/foods/11060",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden",
+    "elapsedSeconds": 0.141
+  },
+  {
+    "id": "compendium-running",
+    "url": "https://pacompendium.com/running/",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.658780+00:00",
+    "status": 200,
+    "finalUrl": "https://pacompendium.com/running/",
+    "bytes": 68593,
+    "sha256": "8872bee0dddd098abf3ba67ded6a528a27f3a85df893227a757b5b21ae164bcb",
+    "contentType": "text/html; charset=UTF-8",
+    "tableRowCount": 66,
+    "sample": [
+      {
+        "activityCode": "12010",
+        "metOriginal": "6.0",
+        "descriptionOriginal": "Jog/walk combination (jogging component of less than 10 minutes) (Taylor Code 180)"
+      },
+      {
+        "activityCode": "12020",
+        "metOriginal": "7.5",
+        "descriptionOriginal": "Jogging, general, self-selected pace"
+      },
+      {
+        "activityCode": "12025",
+        "metOriginal": "4.8",
+        "descriptionOriginal": "Jogging, in place"
+      },
+      {
+        "activityCode": "12026",
+        "metOriginal": "3.3",
+        "descriptionOriginal": "Jogging 2.6 to 3.7 mph"
+      }
+    ],
+    "elapsedSeconds": 0.125
+  },
+  {
+    "id": "compendium-walking",
+    "url": "https://pacompendium.com/walking/",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.791769+00:00",
+    "status": 200,
+    "finalUrl": "https://pacompendium.com/walking/",
+    "bytes": 71601,
+    "sha256": "722aee8d10ffea2fabb8b2e25196a7ddda4f8684b5220a0662c303781efbdb7c",
+    "contentType": "text/html; charset=UTF-8",
+    "tableRowCount": 93,
+    "sample": [
+      {
+        "activityCode": "17010",
+        "metOriginal": "7.0",
+        "descriptionOriginal": "Backpacking (Taylor Code 050)"
+      },
+      {
+        "activityCode": "17011",
+        "metOriginal": "3.5",
+        "descriptionOriginal": "Walking with a day pack, level ground, assumed in the city"
+      },
+      {
+        "activityCode": "17012",
+        "metOriginal": "7.8",
+        "descriptionOriginal": "Backpacking,  hiking with a daypack, organized walking with daypack"
+      },
+      {
+        "activityCode": "17016",
+        "metOriginal": "4.0",
+        "descriptionOriginal": "Carrying 5 to 14 lb (2.3 to 6.4 kg) load (e.g. suitcase, boxes, groceries), level ground, moderate pace"
+      }
+    ],
+    "elapsedSeconds": 0.094
+  },
+  {
+    "id": "compendium-bicycling",
+    "url": "https://pacompendium.com/bicycling/",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.890538+00:00",
+    "status": 200,
+    "finalUrl": "https://pacompendium.com/bicycling/",
+    "bytes": 66912,
+    "sha256": "1199bdb682ac75311bc9d6a1ade18d7e1b45dcd8fa0f36c2246184c8550efb9b",
+    "contentType": "text/html; charset=UTF-8",
+    "tableRowCount": 44,
+    "sample": [
+      {
+        "activityCode": "01003",
+        "metOriginal": "14.0",
+        "descriptionOriginal": "Bicycling, mountain, uphill, vigorous"
+      },
+      {
+        "activityCode": "01004",
+        "metOriginal": "16.0",
+        "descriptionOriginal": "Bicycling, mountain, competitive racing"
+      },
+      {
+        "activityCode": "01008",
+        "metOriginal": "8.5",
+        "descriptionOriginal": "Bicycling, BMX"
+      },
+      {
+        "activityCode": "01009",
+        "metOriginal": "8.5",
+        "descriptionOriginal": "Bicycling, mountain, general"
+      }
+    ],
+    "elapsedSeconds": 0.078
+  },
+  {
+    "id": "compendium-conditioning",
+    "url": "https://pacompendium.com/conditioning-exercise/",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:18.957820+00:00",
+    "status": 200,
+    "finalUrl": "https://pacompendium.com/conditioning-exercise/",
+    "bytes": 71026,
+    "sha256": "4ec2a6b985be73dec3fe246dbec33fa9a7da7014961c46b23c43e4cc15aef00f",
+    "contentType": "text/html; charset=UTF-8",
+    "tableRowCount": 86,
+    "sample": [
+      {
+        "activityCode": "02020",
+        "metOriginal": "7.5",
+        "descriptionOriginal": "Calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks, burpees, battling ropes), vigorous effort"
+      },
+      {
+        "activityCode": "02022",
+        "metOriginal": "3.8",
+        "descriptionOriginal": "Calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort"
+      },
+      {
+        "activityCode": "02024",
+        "metOriginal": "2.8",
+        "descriptionOriginal": "Calisthenics (e.g., curl ups, abdominal crunches, plank),  light effort"
+      },
+      {
+        "activityCode": "02030",
+        "metOriginal": "3.5",
+        "descriptionOriginal": "Calisthenics, light or moderate effort, general (e.g., back exercises), going up & down from floor (Taylor Code 150)"
+      }
+    ],
+    "elapsedSeconds": 0.093
+  },
+  {
+    "id": "compendium-water",
+    "url": "https://pacompendium.com/water-activities/",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:19.050541+00:00",
+    "status": 200,
+    "finalUrl": "https://pacompendium.com/water-activities/",
+    "bytes": 70369,
+    "sha256": "555e221034216d302912a4e27a9ae985f07ba3abfce5a4d85bb65782a6e2419d",
+    "contentType": "text/html; charset=UTF-8",
+    "tableRowCount": 87,
+    "sample": [
+      {
+        "activityCode": "18230",
+        "metOriginal": "9.8",
+        "descriptionOriginal": "Swimming laps, freestyle, fast, vigorous effort"
+      },
+      {
+        "activityCode": "18240",
+        "metOriginal": "5.8",
+        "descriptionOriginal": "Swimming laps, freestyle, slow, recreational"
+      },
+      {
+        "activityCode": "18250",
+        "metOriginal": "9.5",
+        "descriptionOriginal": "Swimming, backstroke, training or competition"
+      },
+      {
+        "activityCode": "18255",
+        "metOriginal": "4.8",
+        "descriptionOriginal": "Swimming, backstroke, recreational"
+      }
+    ],
+    "elapsedSeconds": 0.079
+  },
+  {
+    "id": "wger-offset-300",
+    "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:19.134235+00:00",
+    "status": 200,
+    "finalUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+    "bytes": 151447,
+    "sha256": "1724b934691e7ea0aec2f9bd9ce21b281489618edaa2c9bfa704962f7390ec01",
+    "contentType": "application/json",
+    "bodyFile": "wger-offset-300.json",
+    "elapsedSeconds": 2.0
+  },
+  {
+    "id": "wger-offset-600",
+    "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+    "method": "GET",
+    "collectedAtUtc": "2026-09-23T11:20:19.956999+00:00",
+    "status": 200,
+    "finalUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+    "bytes": 140943,
+    "sha256": "9260581c43804fb80fbd08a56407ac48b624e2ab95ae7ce7f7705df072d903ff",
+    "contentType": "application/json",
+    "bodyFile": "wger-offset-600.json",
+    "elapsedSeconds": 1.547
+  }
+]

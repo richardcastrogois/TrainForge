@@ -1,0 +1,7 @@
+* text=auto
+
+# Generated indexes and historical design exports do not define source language
+**/graphify-out/** linguist-generated=true
+docs/design/*.scripter.js linguist-generated=true
+docs/design/fluxos-v03/*.svg linguist-generated=true
+docs/design/screens/*.svg linguist-generated=true

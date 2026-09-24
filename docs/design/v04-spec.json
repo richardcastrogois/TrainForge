@@ -1,0 +1,1590 @@
+{
+  "screens": [
+    [
+      34,
+      "Dados pessoais",
+      "Escolhe o que queres partilhar.",
+      7,
+      [
+        [
+          "RG · Richard Gois",
+          "Alterar imagem e nome",
+          35
+        ],
+        [
+          "E-mail e acesso",
+          "richard@exemplo.pt · dados de demonstração",
+          36
+        ],
+        [
+          "Medidas corporais",
+          "Opcionais · altura e peso",
+          37
+        ]
+      ],
+      [
+        "Guardar e voltar ao perfil",
+        7
+      ]
+    ],
+    [
+      35,
+      "Editar perfil",
+      "A tua presença no TrainForge.",
+      34,
+      [
+        [
+          "Imagem do perfil",
+          "Monograma RG · escolher apresentação",
+          75
+        ],
+        [
+          "Nome de apresentação",
+          "Richard Gois · tocar para ver exemplo",
+          76
+        ]
+      ],
+      [
+        "Guardar alterações",
+        34
+      ]
+    ],
+    [
+      36,
+      "Conta e acesso",
+      "Mantém o controlo da tua conta.",
+      34,
+      [
+        [
+          "E-mail confirmado",
+          "richard@exemplo.pt · exemplo",
+          77
+        ],
+        [
+          "Palavra-passe",
+          "Alterar palavra-passe",
+          96
+        ],
+        [
+          "Métodos de entrada",
+          "E-mail · Google e Apple por associar",
+          78
+        ]
+      ],
+      [
+        "Voltar aos dados pessoais",
+        34
+      ]
+    ],
+    [
+      37,
+      "Medidas corporais",
+      "Dados opcionais para acompanhar a evolução.",
+      34,
+      [
+        [
+          "Altura",
+          "175 cm · exemplo editável no fluxo",
+          79
+        ],
+        [
+          "Peso atual",
+          "72 kg · exemplo editável no fluxo",
+          79
+        ],
+        [
+          "Histórico de medidas",
+          "Ver registos anteriores",
+          67
+        ]
+      ],
+      [
+        "Guardar medidas",
+        34
+      ]
+    ],
+    [
+      38,
+      "Objetivos e preferências",
+      "Configura cada área de forma independente.",
+      7,
+      [
+        [
+          "Treino",
+          "Objetivo, experiência e disponibilidade",
+          16
+        ],
+        [
+          "Alimentação",
+          "Preferências e organização das refeições",
+          19
+        ],
+        [
+          "Rotina",
+          "Atividades, dias e lembretes",
+          21
+        ]
+      ],
+      [
+        "Voltar ao perfil",
+        7
+      ]
+    ],
+    [
+      39,
+      "Notificações",
+      "Tu decides quando receber lembretes.",
+      7,
+      [
+        [
+          "Lembretes de treino · desligados",
+          "Tocar para ativar no exemplo",
+          40
+        ],
+        [
+          "Refeições · desligadas",
+          "Tocar para ativar no exemplo",
+          40
+        ],
+        [
+          "Resumo semanal · desligado",
+          "Tocar para ativar no exemplo",
+          40
+        ]
+      ],
+      [
+        "Guardar preferências",
+        7
+      ]
+    ],
+    [
+      40,
+      "Notificações ativadas",
+      "Estado de demonstração · sem aviso real.",
+      39,
+      [
+        [
+          "Lembretes de treino · ligados",
+          "18:30 · tocar para desativar",
+          39
+        ],
+        [
+          "Refeições · ligadas",
+          "Nos horários que configuraste",
+          39
+        ],
+        [
+          "Resumo semanal · ligado",
+          "Domingo às 19:00",
+          39
+        ],
+        [
+          "Permissão do dispositivo",
+          "No app, pedida apenas ao ativar lembretes.",
+          null
+        ]
+      ],
+      [
+        "Guardar e voltar",
+        7
+      ]
+    ],
+    [
+      41,
+      "Idioma e unidades",
+      "Escolhe como queres ver os teus dados.",
+      7,
+      [
+        [
+          "Português · Portugal ✓",
+          "Quilogramas, centímetros e quilómetros",
+          null
+        ],
+        [
+          "Português · Brasil",
+          "Ver exemplo de outra preferência",
+          42
+        ],
+        [
+          "Sistema métrico ✓",
+          "Alterar para unidades imperiais",
+          42
+        ]
+      ],
+      [
+        "Guardar preferências",
+        7
+      ]
+    ],
+    [
+      42,
+      "Preferências alternativas",
+      "Exemplo de seleção antes de guardar.",
+      41,
+      [
+        [
+          "Português · Brasil ✓",
+          "Tocar para voltar a Português · Portugal",
+          41
+        ],
+        [
+          "Unidades imperiais ✓",
+          "lb · ft · mi. Tocar para voltar a métricas.",
+          41
+        ]
+      ],
+      [
+        "Guardar e voltar",
+        7
+      ]
+    ],
+    [
+      43,
+      "Privacidade e dados",
+      "Os teus dados continuam sob o teu controlo.",
+      7,
+      [
+        [
+          "Como usamos os dados",
+          "Ler resumo da proposta de privacidade",
+          44
+        ],
+        [
+          "Exportar os meus dados",
+          "Ver o fluxo de exportação",
+          45
+        ],
+        [
+          "Apagar dados opcionais",
+          "Medidas e preferências sensíveis",
+          46
+        ],
+        [
+          "Eliminar conta",
+          "Requer confirmação explícita",
+          47
+        ]
+      ],
+      [
+        "Voltar ao perfil",
+        7
+      ]
+    ],
+    [
+      44,
+      "Sobre os teus dados",
+      "Texto de produto provisório para revisão.",
+      43,
+      [
+        [
+          "Conta e registos",
+          "Usados para guardar a tua rotina e evolução.",
+          null
+        ],
+        [
+          "Informações opcionais",
+          "Medidas e limitações podem ficar por preencher.",
+          null
+        ],
+        [
+          "Controlo e transparência",
+          "Exportação e eliminação previstas. Política final\na definir antes de publicar.",
+          null
+        ]
+      ],
+      [
+        "Voltar à privacidade",
+        43
+      ]
+    ],
+    [
+      45,
+      "Exportação solicitada",
+      "SIMULAÇÃO · nenhum ficheiro foi enviado.",
+      43,
+      [
+        [
+          "O que inclui",
+          "Perfil, sessões, atividades e diário alimentar.",
+          null
+        ],
+        [
+          "Como receberás",
+          "No produto, um ficheiro descarregável após\nconfirmar a identidade. Prazo ainda a definir.",
+          null
+        ]
+      ],
+      [
+        "Entendido",
+        43
+      ]
+    ],
+    [
+      46,
+      "Apagar dados opcionais?",
+      "Confirmação de exemplo · nada será eliminado.",
+      43,
+      [
+        [
+          "O que será removido",
+          "Altura, peso e informações opcionais.",
+          null
+        ],
+        [
+          "O que permanece",
+          "Conta e registos de atividade.",
+          null
+        ],
+        [
+          "Cancelar",
+          "Manter os dados e voltar",
+          43
+        ]
+      ],
+      [
+        "Confirmar no exemplo",
+        80
+      ]
+    ],
+    [
+      47,
+      "Eliminar a conta?",
+      "Esta ação será irreversível no aplicativo.",
+      43,
+      [
+        [
+          "Perderás os teus registos",
+          "Exporta uma cópia antes de continuar.",
+          45
+        ],
+        [
+          "Cancelar eliminação",
+          "Manter a conta",
+          43
+        ]
+      ],
+      [
+        "Confirmar eliminação · simulação",
+        81
+      ]
+    ],
+    [
+      48,
+      "Ajuda e feedback",
+      "Estamos aqui para tornar a rotina mais simples.",
+      7,
+      [
+        [
+          "Perguntas frequentes",
+          "Planos, registos e funcionamento offline",
+          49
+        ],
+        [
+          "Enviar feedback",
+          "Descreve uma sugestão ou problema",
+          50
+        ],
+        [
+          "Sobre o TrainForge",
+          "Protótipo v0.4 · em construção",
+          null
+        ]
+      ],
+      [
+        "Voltar ao perfil",
+        7
+      ]
+    ],
+    [
+      49,
+      "Perguntas frequentes",
+      "Respostas sobre a proposta do produto.",
+      48,
+      [
+        [
+          "Quem cria os planos?",
+          "Planos com origem identificada. A fonte real\nainda será selecionada e validada.",
+          null
+        ],
+        [
+          "O aplicativo usa IA?",
+          "Não para prescrever treinos ou alimentação.",
+          null
+        ],
+        [
+          "Funciona sem ligação?",
+          "É uma intenção de produto. A sincronização\nainda será definida na arquitetura.",
+          null
+        ]
+      ],
+      [
+        "Voltar à ajuda",
+        48
+      ]
+    ],
+    [
+      50,
+      "Enviar feedback",
+      "Não envia mensagens neste protótipo.",
+      48,
+      [
+        [
+          "Assunto",
+          "Sugestão de melhoria · exemplo",
+          82
+        ],
+        [
+          "Mensagem",
+          "Gostava de organizar os treinos por semana.",
+          82
+        ],
+        [
+          "Contacto · opcional",
+          "richard@exemplo.pt · exemplo",
+          82
+        ]
+      ],
+      [
+        "Simular envio",
+        51
+      ]
+    ],
+    [
+      51,
+      "Obrigado pelo feedback",
+      "A tua opinião ajuda a melhorar o produto.",
+      48,
+      [
+        [
+          "Demonstração concluída",
+          "Nenhuma mensagem foi enviada.\nEste é o estado de sucesso do fluxo.",
+          null
+        ]
+      ],
+      [
+        "Voltar à ajuda",
+        48
+      ]
+    ],
+    [
+      52,
+      "Terminar sessão?",
+      "Podes voltar a entrar quando quiseres.",
+      7,
+      [
+        [
+          "Os teus registos ficam na conta",
+          "No app, dados ainda não sincronizados deverão\nser tratados antes de terminar a sessão.",
+          null
+        ],
+        [
+          "Continuar com sessão iniciada",
+          "Cancelar e voltar ao perfil",
+          7
+        ]
+      ],
+      [
+        "Terminar sessão · exemplo",
+        10
+      ]
+    ],
+    [
+      53,
+      "Detalhe do plano",
+      "BASE DE FORÇA · PLANO DE DEMONSTRAÇÃO",
+      2,
+      [
+        [
+          "Plano de exemplo A",
+          "3 dias por semana · 45 min · ginásio",
+          null
+        ],
+        [
+          "Origem e autoria",
+          "Consultar antes de adotar um plano",
+          54
+        ],
+        [
+          "Sessão A · corpo inteiro",
+          "5 exercícios · ver a sequência",
+          55
+        ],
+        [
+          "Guardar na minha rotina",
+          "Ver confirmação",
+          56
+        ]
+      ],
+      [
+        "Abrir sessão A",
+        3
+      ]
+    ],
+    [
+      54,
+      "Origem do plano",
+      "A confiança começa na identificação da fonte.",
+      53,
+      [
+        [
+          "Conteúdo fictício",
+          "Este plano serve apenas para validar o design.",
+          null
+        ],
+        [
+          "Antes da publicação",
+          "Identificar autor, licença, versão e fonte.\nAinda não existe um plano profissional validado.",
+          null
+        ],
+        [
+          "Adequação individual",
+          "Limitações exigem avaliação adequada.\nO app não valida condições clínicas.",
+          null
+        ]
+      ],
+      [
+        "Voltar ao plano",
+        53
+      ]
+    ],
+    [
+      55,
+      "Exercícios da sessão",
+      "SESSÃO A · SEQUÊNCIA ILUSTRATIVA",
+      53,
+      [
+        [
+          "01 · Aquecimento",
+          "5 min · preparação",
+          57
+        ],
+        [
+          "02 · Remada sentada",
+          "3 séries · regista a carga utilizada",
+          57
+        ],
+        [
+          "03–05 · Restantes exercícios",
+          "Sequência a validar com a fonte do plano",
+          57
+        ]
+      ],
+      [
+        "Iniciar sessão de exemplo",
+        3
+      ]
+    ],
+    [
+      56,
+      "Plano guardado",
+      "A tua próxima sessão está organizada.",
+      53,
+      [
+        [
+          "Plano de exemplo A",
+          "Adicionado à rotina de demonstração.",
+          null
+        ],
+        [
+          "Rever disponibilidade",
+          "Alterar dias e tempo de treino",
+          17
+        ]
+      ],
+      [
+        "Ir para Hoje",
+        1
+      ]
+    ],
+    [
+      57,
+      "Instruções do exercício",
+      "REMADA SENTADA · CONTEÚDO ILUSTRATIVO",
+      3,
+      [
+        [
+          "Demonstração do movimento",
+          "Área reservada para vídeo ou ilustração\nlicenciada da fonte selecionada.",
+          null
+        ],
+        [
+          "Orientações e execução",
+          "As instruções técnicas serão revistas antes\nda publicação. Não são uma prescrição.",
+          null
+        ],
+        [
+          "Desconforto durante o movimento",
+          "Interrompe o exercício e procura orientação\nadequada quando necessário.",
+          null
+        ]
+      ],
+      [
+        "Voltar à sessão",
+        3
+      ]
+    ],
+    [
+      58,
+      "Registar série",
+      "SÉRIE 3 · EXEMPLO DE PREENCHIMENTO",
+      3,
+      [
+        [
+          "Carga",
+          "20 kg · tocar para ver outra carga",
+          83
+        ],
+        [
+          "Repetições",
+          "10 repetições · tocar para editar exemplo",
+          83
+        ],
+        [
+          "Esforço percebido · opcional",
+          "Moderado · exemplo",
+          83
+        ]
+      ],
+      [
+        "Registar e iniciar descanso",
+        59
+      ]
+    ],
+    [
+      59,
+      "Série registada",
+      "PAUSA ENTRE SÉRIES",
+      3,
+      [
+        [
+          "01:00",
+          "Descanso de demonstração · sem cronómetro real",
+          null
+        ],
+        [
+          "Série 3 concluída",
+          "20 kg × 10 repetições",
+          null
+        ],
+        [
+          "Saltar descanso",
+          "Retomar a sessão",
+          3
+        ]
+      ],
+      [
+        "Continuar treino",
+        3
+      ]
+    ],
+    [
+      60,
+      "Terminar este treino?",
+      "Confirma como queres guardar a sessão.",
+      3,
+      [
+        [
+          "Guardar como concluído",
+          "Ver resumo da sessão de exemplo",
+          61
+        ],
+        [
+          "Guardar como incompleto",
+          "Podes retomar a partir do histórico",
+          62
+        ],
+        [
+          "Continuar a treinar",
+          "Voltar à sessão",
+          3
+        ]
+      ],
+      [
+        "Voltar ao treino",
+        3
+      ]
+    ],
+    [
+      61,
+      "Treino concluído",
+      "Mais um passo no teu ritmo.",
+      6,
+      [
+        [
+          "45 min · 5 exercícios",
+          "Resumo fictício da sessão",
+          null
+        ],
+        [
+          "Como correu? · opcional",
+          "Bem · estado de exemplo",
+          null
+        ],
+        [
+          "Ver histórico",
+          "Consultar esta e outras sessões",
+          66
+        ]
+      ],
+      [
+        "Voltar a Hoje",
+        1
+      ]
+    ],
+    [
+      62,
+      "Treino incompleto",
+      "O que fizeste também conta.",
+      6,
+      [
+        [
+          "12 min · 2 de 5 exercícios",
+          "Sessão de exemplo guardada como incompleta.",
+          null
+        ],
+        [
+          "Retomar a sessão",
+          "Continuar o treino",
+          3
+        ]
+      ],
+      [
+        "Ver histórico",
+        66
+      ]
+    ],
+    [
+      63,
+      "Registar atividade",
+      "Uma caminhada também faz parte.",
+      4,
+      [
+        [
+          "Atividade",
+          "Caminhada · alterar tipo de atividade",
+          84
+        ],
+        [
+          "Duração e distância",
+          "24 min 18 s · 3,20 km · editar exemplo",
+          84
+        ],
+        [
+          "Data e hora",
+          "Hoje · 18:30 · editar exemplo",
+          84
+        ],
+        [
+          "Sem GPS",
+          "Neste esboço o registo é manual.\nO mapa da página é ilustrativo.",
+          null
+        ]
+      ],
+      [
+        "Guardar atividade",
+        64
+      ]
+    ],
+    [
+      64,
+      "Atividade guardada",
+      "CAMINHADA · EXEMPLO",
+      4,
+      [
+        [
+          "3,20 km",
+          "24 min 18 s · ritmo médio 7:36 /km",
+          null
+        ],
+        [
+          "Ver no histórico",
+          "Rever o registo e os detalhes",
+          66
+        ]
+      ],
+      [
+        "Voltar à atividade",
+        4
+      ]
+    ],
+    [
+      65,
+      "Adicionar alimento",
+      "PESQUISA · RESULTADOS DE DEMONSTRAÇÃO",
+      5,
+      [
+        [
+          "Pesquisar alimento",
+          "Iogurte natural · exemplo de pesquisa",
+          85
+        ],
+        [
+          "Iogurte natural",
+          "Por 100 g · consultar porção e nutrientes",
+          86
+        ],
+        [
+          "Registar manualmente",
+          "Quando não encontrares o que procuras",
+          87
+        ]
+      ],
+      [
+        "Voltar ao diário",
+        5
+      ]
+    ],
+    [
+      66,
+      "Histórico",
+      "A tua rotina ao longo do tempo.",
+      6,
+      [
+        [
+          "Hoje · treino concluído",
+          "45 min · 5 exercícios",
+          61
+        ],
+        [
+          "Ontem · treino incompleto",
+          "12 min · 2 de 5 exercícios",
+          62
+        ],
+        [
+          "Caminhada",
+          "3,20 km · 24 min 18 s",
+          64
+        ],
+        [
+          "Medidas corporais",
+          "Acompanhar os teus registos opcionais",
+          67
+        ]
+      ],
+      [
+        "Voltar à evolução",
+        6
+      ]
+    ],
+    [
+      67,
+      "Histórico de medidas",
+      "EXEMPLOS · SEM AVALIAÇÃO CLÍNICA",
+      6,
+      [
+        [
+          "Peso · última entrada",
+          "72 kg · 12 setembro",
+          79
+        ],
+        [
+          "Altura",
+          "175 cm · 12 setembro",
+          79
+        ],
+        [
+          "Nova medição",
+          "Adicionar um registo ao histórico",
+          79
+        ]
+      ],
+      [
+        "Voltar à evolução",
+        6
+      ]
+    ],
+    [
+      68,
+      "Pesquisar planos",
+      "RESULTADOS FICTÍCIOS PARA REVISÃO",
+      2,
+      [
+        [
+          "Pesquisa",
+          "Força · pesquisa ilustrativa",
+          89
+        ],
+        [
+          "Musculação · ginásio ✓",
+          "Alterar filtro",
+          89
+        ],
+        [
+          "Plano de exemplo A",
+          "3 dias · 45 min · ver detalhes",
+          53
+        ],
+        [
+          "Criar o meu plano",
+          "Registar um plano que já tens",
+          69
+        ]
+      ],
+      [
+        "Voltar aos planos",
+        2
+      ]
+    ],
+    [
+      69,
+      "O meu plano",
+      "Traz um plano preparado para ti.",
+      2,
+      [
+        [
+          "Nome do plano *",
+          "O meu treino semanal · exemplo",
+          90
+        ],
+        [
+          "Origem e autoria *",
+          "Plano do meu profissional · exemplo",
+          90
+        ],
+        [
+          "Dias e exercícios *",
+          "Segunda, quarta e sexta · configurar",
+          90
+        ]
+      ],
+      [
+        "Guardar plano de exemplo",
+        56
+      ]
+    ],
+    [
+      70,
+      "Nova palavra-passe",
+      "Fluxo de exemplo · não altera credenciais.",
+      36,
+      [
+        [
+          "Nova palavra-passe *",
+          "•••••••••••• · exemplo",
+          91
+        ],
+        [
+          "Confirmar palavra-passe *",
+          "•••••••••••• · exemplo",
+          91
+        ],
+        [
+          "Requisitos de segurança",
+          "As regras finais serão definidas com o serviço\nde autenticação. Nunca usar dados reais aqui.",
+          null
+        ]
+      ],
+      [
+        "Simular alteração e entrar",
+        10
+      ]
+    ],
+    [
+      71,
+      "Reenviar confirmação",
+      "SIMULAÇÃO DE ENVIO",
+      13,
+      [
+        [
+          "Verifica a caixa de entrada",
+          "No app, o envio deverá ter limite e indicar\nquando será possível tentar novamente.",
+          null
+        ]
+      ],
+      [
+        "Voltar à confirmação",
+        13
+      ]
+    ],
+    [
+      72,
+      "Termos de utilização",
+      "DOCUMENTO PROVISÓRIO",
+      11,
+      [
+        [
+          "Antes de publicar",
+          "Definir condições de utilização, direitos\nsobre conteúdo e canais de contacto.",
+          null
+        ],
+        [
+          "Neste protótipo",
+          "Não há aceitação contratual nem conta real.",
+          null
+        ]
+      ],
+      [
+        "Voltar ao registo",
+        11
+      ]
+    ],
+    [
+      73,
+      "Detalhe do dia",
+      "QUARTA-FEIRA · EXEMPLO INCOMPLETO",
+      1,
+      [
+        [
+          "Treino · incompleto",
+          "12 min · retomar sessão",
+          3
+        ],
+        [
+          "Rotina · caminhada",
+          "Consultar registo",
+          64
+        ],
+        [
+          "Outros estados da semana",
+          "✓ Feito · ◐ Incompleto · × Não feito\nSem registo não significa falha.",
+          null
+        ]
+      ],
+      [
+        "Voltar à semana",
+        1
+      ]
+    ],
+    [
+      74,
+      "Detalhe da refeição",
+      "PEQUENO-ALMOÇO · EXEMPLO",
+      5,
+      [
+        [
+          "Iogurte natural · 170 g",
+          "Ver porção e nutrientes",
+          86
+        ],
+        [
+          "Aveia · 40 g",
+          "Ver registo manual de exemplo",
+          87
+        ],
+        [
+          "Adicionar à refeição",
+          "Procurar outro alimento",
+          65
+        ]
+      ],
+      [
+        "Voltar ao diário",
+        5
+      ]
+    ],
+    [
+      75,
+      "Imagem do perfil",
+      "Escolhe uma apresentação de exemplo.",
+      35,
+      [
+        [
+          "RG · monograma ✓",
+          "Manter as iniciais",
+          35
+        ],
+        [
+          "Fotografia",
+          "No app: escolher uma imagem no dispositivo.\nNeste protótipo não acedemos aos teus ficheiros.",
+          null
+        ]
+      ],
+      [
+        "Usar monograma",
+        35
+      ]
+    ],
+    [
+      76,
+      "Nome de apresentação",
+      "EXEMPLO DE EDIÇÃO",
+      35,
+      [
+        [
+          "Richard Gois",
+          "Valor de demonstração. A edição livre será\nimplementada no aplicativo.",
+          null
+        ]
+      ],
+      [
+        "Aplicar exemplo",
+        35
+      ]
+    ],
+    [
+      77,
+      "Alterar e-mail",
+      "CONFIRMAÇÃO EM DOIS PASSOS",
+      36,
+      [
+        [
+          "Novo endereço *",
+          "richard@exemplo.pt · exemplo",
+          null
+        ],
+        [
+          "Verificação necessária",
+          "No app, o novo endereço só substitui o anterior\ndepois da confirmação.",
+          null
+        ]
+      ],
+      [
+        "Simular envio de confirmação",
+        71
+      ]
+    ],
+    [
+      78,
+      "Métodos de entrada",
+      "ASSOCIAÇÃO DE CONTA · SIMULAÇÃO",
+      36,
+      [
+        [
+          "E-mail e palavra-passe ✓",
+          "Método de exemplo ativo",
+          null
+        ],
+        [
+          "Google",
+          "Simular associação e regressar",
+          36
+        ],
+        [
+          "Apple · iOS",
+          "Simular associação e regressar",
+          36
+        ]
+      ],
+      [
+        "Voltar à conta",
+        36
+      ]
+    ],
+    [
+      79,
+      "Registar medida",
+      "DADOS OPCIONAIS · EXEMPLO",
+      37,
+      [
+        [
+          "Peso",
+          "72 kg",
+          null
+        ],
+        [
+          "Altura",
+          "175 cm",
+          null
+        ],
+        [
+          "Data",
+          "12 setembro · demonstração",
+          null
+        ]
+      ],
+      [
+        "Guardar exemplo",
+        67
+      ]
+    ],
+    [
+      80,
+      "Dados opcionais apagados",
+      "ESTADO DE SUCESSO · SIMULAÇÃO",
+      43,
+      [
+        [
+          "Nada foi apagado de verdade",
+          "O protótipo demonstra a conclusão do fluxo.",
+          null
+        ]
+      ],
+      [
+        "Voltar à privacidade",
+        43
+      ]
+    ],
+    [
+      81,
+      "Conta eliminada",
+      "ESTADO DE SUCESSO · SIMULAÇÃO",
+      10,
+      [
+        [
+          "Nenhuma conta foi alterada",
+          "Esta página demonstra o resultado da ação.",
+          null
+        ]
+      ],
+      [
+        "Voltar à entrada",
+        10
+      ]
+    ],
+    [
+      82,
+      "Pré-visualizar feedback",
+      "CONTEÚDO DE DEMONSTRAÇÃO",
+      50,
+      [
+        [
+          "Sugestão de melhoria",
+          "Gostava de organizar os treinos por semana.",
+          null
+        ],
+        [
+          "Contacto opcional",
+          "Não serão enviados dados neste protótipo.",
+          null
+        ]
+      ],
+      [
+        "Usar este exemplo",
+        50
+      ]
+    ],
+    [
+      83,
+      "Editar série",
+      "VALORES ALTERNATIVOS DE EXEMPLO",
+      58,
+      [
+        [
+          "Carga",
+          "22 kg",
+          null
+        ],
+        [
+          "Repetições",
+          "8",
+          null
+        ],
+        [
+          "Esforço",
+          "Moderado",
+          null
+        ]
+      ],
+      [
+        "Registar este exemplo",
+        59
+      ]
+    ],
+    [
+      84,
+      "Editar atividade",
+      "REGISTO MANUAL DE DEMONSTRAÇÃO",
+      63,
+      [
+        [
+          "Modalidade",
+          "Caminhada",
+          null
+        ],
+        [
+          "Duração",
+          "24 minutos e 18 segundos",
+          null
+        ],
+        [
+          "Distância · opcional",
+          "3,20 km",
+          null
+        ]
+      ],
+      [
+        "Guardar este exemplo",
+        64
+      ]
+    ],
+    [
+      85,
+      "Resultados da pesquisa",
+      "PESQUISA: IOGURTE · EXEMPLO",
+      65,
+      [
+        [
+          "Iogurte natural",
+          "Consultar porção",
+          86
+        ],
+        [
+          "Não encontraste?",
+          "Criar registo manual",
+          87
+        ]
+      ],
+      [
+        "Voltar à pesquisa",
+        65
+      ]
+    ],
+    [
+      86,
+      "Porção e nutrientes",
+      "IOGURTE NATURAL · DADOS ILUSTRATIVOS",
+      65,
+      [
+        [
+          "Porção",
+          "170 g · editar manualmente",
+          87
+        ],
+        [
+          "Energia e macronutrientes",
+          "104 kcal · proteínas 6 g · hidratos 8 g\nlípidos 5 g · valores de exemplo",
+          null
+        ],
+        [
+          "Refeição",
+          "Pequeno-almoço · hoje",
+          null
+        ],
+        [
+          "Fonte nutricional",
+          "A definir e validar antes da publicação.",
+          null
+        ]
+      ],
+      [
+        "Adicionar ao diário",
+        88
+      ]
+    ],
+    [
+      87,
+      "Registo alimentar manual",
+      "Preenche a partir do rótulo ou da tua fonte.",
+      65,
+      [
+        [
+          "Nome e quantidade *",
+          "Iogurte natural · 170 g · exemplo",
+          null
+        ],
+        [
+          "Energia · opcional",
+          "104 kcal · exemplo",
+          null
+        ],
+        [
+          "Refeição *",
+          "Pequeno-almoço",
+          null
+        ]
+      ],
+      [
+        "Guardar registo de exemplo",
+        88
+      ]
+    ],
+    [
+      88,
+      "Alimento adicionado",
+      "PEQUENO-ALMOÇO · SIMULAÇÃO",
+      5,
+      [
+        [
+          "Iogurte natural · 170 g",
+          "104 kcal de exemplo adicionadas ao registo.",
+          null
+        ],
+        [
+          "Continuar a registar",
+          "Adicionar outro alimento",
+          65
+        ]
+      ],
+      [
+        "Ver refeição",
+        74
+      ]
+    ],
+    [
+      89,
+      "Filtros de planos",
+      "Escolhe um contexto de exemplo.",
+      68,
+      [
+        [
+          "Musculação · ginásio",
+          "3 dias · 45 min",
+          53
+        ],
+        [
+          "Em casa · peso corporal",
+          "Sem plano disponível neste exemplo",
+          92
+        ],
+        [
+          "Mobilidade",
+          "Sem plano disponível neste exemplo",
+          92
+        ]
+      ],
+      [
+        "Limpar filtros",
+        68
+      ]
+    ],
+    [
+      90,
+      "Sessão do meu plano",
+      "REGISTO MANUAL · EXEMPLO",
+      69,
+      [
+        [
+          "Segunda · sessão A",
+          "Remada sentada · 3 séries × 10",
+          57
+        ],
+        [
+          "Autoria e instruções",
+          "Usa o plano do teu profissional.\nO app apenas organiza o que registas.",
+          null
+        ]
+      ],
+      [
+        "Guardar plano de exemplo",
+        56
+      ]
+    ],
+    [
+      91,
+      "Confirmar nova palavra-passe",
+      "VALIDAÇÃO DE EXEMPLO",
+      70,
+      [
+        [
+          "As palavras-passe coincidem ✓",
+          "Nenhuma credencial real é criada ou alterada.",
+          null
+        ],
+        [
+          "Se os valores não coincidirem",
+          "O aplicativo deverá indicar o erro junto\nao campo e preservar o preenchimento.",
+          null
+        ]
+      ],
+      [
+        "Concluir simulação",
+        10
+      ]
+    ],
+    [
+      92,
+      "Sem planos encontrados",
+      "Tenta outro filtro ou traz o teu plano.",
+      68,
+      [
+        [
+          "Rever filtros",
+          "Escolher outro contexto",
+          89
+        ],
+        [
+          "Registar o meu plano",
+          "Organizar um plano que já tens",
+          69
+        ]
+      ],
+      [
+        "Voltar aos planos",
+        2
+      ]
+    ],
+    [
+      93,
+      "Privacidade no registo",
+      "PROPOSTA A REVER ANTES DA PUBLICAÇÃO",
+      11,
+      [
+        [
+          "Conta e registos",
+          "São usados para guardar a tua rotina.",
+          null
+        ],
+        [
+          "Informações opcionais",
+          "Podes deixar medidas e preferências para depois.",
+          null
+        ],
+        [
+          "Controlo dos dados",
+          "A proposta prevê exportação e eliminação\natravés do Perfil.",
+          null
+        ]
+      ],
+      [
+        "Voltar à criação de conta",
+        11
+      ]
+    ],
+    [
+      94,
+      "Detalhe do almoço",
+      "ALMOÇO · REGISTO DE DEMONSTRAÇÃO",
+      5,
+      [
+        [
+          "Arroz, legumes e frango",
+          "Porção e energia de exemplo · editar registo",
+          87
+        ],
+        [
+          "Adicionar à refeição",
+          "Pesquisar outro alimento",
+          65
+        ]
+      ],
+      [
+        "Voltar ao diário",
+        5
+      ]
+    ],
+    [
+      95,
+      "Palavra-passe atualizada",
+      "SIMULAÇÃO CONCLUÍDA",
+      36,
+      [
+        [
+          "Nenhuma credencial foi alterada",
+          "No app, a alteração deverá exigir a confirmação\nda identidade e os campos necessários.",
+          null
+        ]
+      ],
+      [
+        "Voltar à conta",
+        36
+      ]
+    ],
+    [
+      96,
+      "Alterar palavra-passe",
+      "CONTA · ESTADO DE PREENCHIMENTO",
+      36,
+      [
+        [
+          "Palavra-passe atual *",
+          "•••••••••• · exemplo",
+          null
+        ],
+        [
+          "Nova palavra-passe *",
+          "•••••••••••• · exemplo",
+          null
+        ],
+        [
+          "Confirmar nova palavra-passe *",
+          "•••••••••••• · exemplo",
+          null
+        ]
+      ],
+      [
+        "Simular alteração",
+        95
+      ]
+    ]
+  ]
+}

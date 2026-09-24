@@ -1,0 +1,113 @@
+{
+  "cofid": {
+    "parsedFoods": 2760,
+    "queryGroups": 16,
+    "queryGroupsWithMatch": 14,
+    "selectedRecords": 27,
+    "coreNumericInSample": 22
+  },
+  "ciqual": {
+    "parsedFoods": 3484,
+    "queryGroups": 16,
+    "queryGroupsWithMatch": 15,
+    "selectedRecords": 29,
+    "specialCellsInSixSelectedColumns": {
+      "lessThanBound": 304,
+      "trace": 204,
+      "dashMissing": 361
+    }
+  },
+  "wger": {
+    "method": "25 records each at offsets 0, 300, 600; convenience sample, not random or exhaustive; two collection dates may differ.",
+    "pages": [
+      {
+        "file": "wger-25.json",
+        "reportedCatalogCount": 910,
+        "records": 25,
+        "portuguese": 4,
+        "withImages": 16,
+        "withVideos": 8,
+        "imagesFlaggedAi": 4,
+        "licenses": {
+          "CC-BY-SA 4": 10,
+          "CC-BY-SA 3": 15
+        }
+      },
+      {
+        "file": "wger-offset-300.json",
+        "reportedCatalogCount": 910,
+        "records": 25,
+        "portuguese": 0,
+        "withImages": 10,
+        "withVideos": 0,
+        "imagesFlaggedAi": 0,
+        "licenses": {
+          "CC-BY-SA 4": 25
+        }
+      },
+      {
+        "file": "wger-offset-600.json",
+        "reportedCatalogCount": 910,
+        "records": 25,
+        "portuguese": 2,
+        "withImages": 11,
+        "withVideos": 0,
+        "imagesFlaggedAi": 0,
+        "licenses": {
+          "CC-BY-SA 4": 25
+        }
+      }
+    ],
+    "combinedUnique": {
+      "records": 75,
+      "portuguese": 6,
+      "withImages": 37,
+      "withVideos": 8,
+      "imagesFlaggedAi": 4,
+      "licenses": {
+        "CC-BY-SA 4": 60,
+        "CC-BY-SA 3": 15
+      }
+    },
+    "editorialExample": {
+      "exerciseId": 1022,
+      "finding": "Translations within one ID appear to describe different movements. Manual editorial finding, not automated clinical diagnosis.",
+      "namesByLanguage": [
+        {
+          "languageId": 13,
+          "name": "Kettlebell swing a una mano"
+        },
+        {
+          "languageId": 4,
+          "name": "Remo en Plancha con un Brazo"
+        },
+        {
+          "languageId": 2,
+          "name": "Single Arm Plank to Row"
+        }
+      ],
+      "publicationStatus": "hold_for_semantic_review"
+    }
+  },
+  "requests": {
+    "total": 12,
+    "http200": 10,
+    "failures": [
+      {
+        "id": "ciqual-2025",
+        "status": null,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+      },
+      {
+        "id": "fineli-food-11060",
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  "compendium": {
+    "pages": 5,
+    "selectedActivities": 20,
+    "note": "Official original codes, MET values and descriptions retained; no physiological validation or translation implied."
+  }
+}

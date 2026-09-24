@@ -1,0 +1,652 @@
+{
+  "pageId": "126:2",
+  "name": "Arquivo · Base v0.4 · 22-09-2026",
+  "rows": [
+    {
+      "id": "126:3",
+      "name": "01 · Hoje",
+      "nodes": 110,
+      "reactions": 9
+    },
+    {
+      "id": "126:114",
+      "name": "02 · Planos",
+      "nodes": 84,
+      "reactions": 11
+    },
+    {
+      "id": "126:199",
+      "name": "03 · Treino em curso",
+      "nodes": 57,
+      "reactions": 7
+    },
+    {
+      "id": "126:257",
+      "name": "04 · Atividade",
+      "nodes": 78,
+      "reactions": 6
+    },
+    {
+      "id": "126:336",
+      "name": "05 · Alimentação",
+      "nodes": 77,
+      "reactions": 8
+    },
+    {
+      "id": "126:414",
+      "name": "06 · Evolução",
+      "nodes": 84,
+      "reactions": 7
+    },
+    {
+      "id": "126:499",
+      "name": "07 · Perfil",
+      "nodes": 61,
+      "reactions": 12
+    },
+    {
+      "id": "126:561",
+      "name": "10 · Entrar",
+      "nodes": 30,
+      "reactions": 7
+    },
+    {
+      "id": "126:592",
+      "name": "08 · Abertura A",
+      "nodes": 7,
+      "reactions": 1
+    },
+    {
+      "id": "126:600",
+      "name": "09 · Abertura B",
+      "nodes": 7,
+      "reactions": 1
+    },
+    {
+      "id": "126:608",
+      "name": "11 · Criar conta",
+      "nodes": 33,
+      "reactions": 7
+    },
+    {
+      "id": "126:642",
+      "name": "12 · Recuperar acesso",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:663",
+      "name": "13 · Confirmar e-mail",
+      "nodes": 21,
+      "reactions": 3
+    },
+    {
+      "id": "126:685",
+      "name": "14 · Antes de começar",
+      "nodes": 26,
+      "reactions": 1
+    },
+    {
+      "id": "126:712",
+      "name": "15 · Escolher áreas",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:737",
+      "name": "16 · Treino · objetivo",
+      "nodes": 28,
+      "reactions": 5
+    },
+    {
+      "id": "126:766",
+      "name": "17 · Treino · contexto",
+      "nodes": 30,
+      "reactions": 6
+    },
+    {
+      "id": "126:797",
+      "name": "18 · Treino · dados opcionais",
+      "nodes": 29,
+      "reactions": 5
+    },
+    {
+      "id": "126:827",
+      "name": "19 · Alimentação · preferências",
+      "nodes": 29,
+      "reactions": 5
+    },
+    {
+      "id": "126:857",
+      "name": "20 · Alimentação · horários",
+      "nodes": 29,
+      "reactions": 5
+    },
+    {
+      "id": "126:887",
+      "name": "21 · Rotina · configurar",
+      "nodes": 34,
+      "reactions": 7
+    },
+    {
+      "id": "126:922",
+      "name": "22 · Rever configuração",
+      "nodes": 28,
+      "reactions": 3
+    },
+    {
+      "id": "126:951",
+      "name": "23 · Planos · por configurar",
+      "nodes": 23,
+      "reactions": 3
+    },
+    {
+      "id": "126:975",
+      "name": "24 · Diário · por configurar",
+      "nodes": 20,
+      "reactions": 2
+    },
+    {
+      "id": "126:996",
+      "name": "25 · Rotina · por configurar",
+      "nodes": 18,
+      "reactions": 2
+    },
+    {
+      "id": "126:1015",
+      "name": "33 · Recuperação · enviada",
+      "nodes": 19,
+      "reactions": 3
+    },
+    {
+      "id": "126:1035",
+      "name": "26 · A carregar · hoje",
+      "nodes": 92,
+      "reactions": 1
+    },
+    {
+      "id": "126:1128",
+      "name": "27 · A carregar · planos",
+      "nodes": 62,
+      "reactions": 1
+    },
+    {
+      "id": "126:1191",
+      "name": "28 · A carregar · sessao",
+      "nodes": 53,
+      "reactions": 1
+    },
+    {
+      "id": "126:1245",
+      "name": "29 · A carregar · atividade",
+      "nodes": 66,
+      "reactions": 1
+    },
+    {
+      "id": "126:1312",
+      "name": "30 · A carregar · alimentacao",
+      "nodes": 63,
+      "reactions": 1
+    },
+    {
+      "id": "126:1376",
+      "name": "31 · A carregar · evolucao",
+      "nodes": 71,
+      "reactions": 1
+    },
+    {
+      "id": "126:1448",
+      "name": "32 · A carregar · perfil",
+      "nodes": 45,
+      "reactions": 1
+    },
+    {
+      "id": "126:1494",
+      "name": "00 · Mapa dos fluxos v0.3",
+      "nodes": 97,
+      "reactions": 33
+    },
+    {
+      "id": "126:1592",
+      "name": "34 · Dados pessoais",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:1618",
+      "name": "35 · Editar perfil",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:1640",
+      "name": "36 · Conta e acesso",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:1666",
+      "name": "37 · Medidas corporais",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:1692",
+      "name": "38 · Objetivos e preferências",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:1718",
+      "name": "39 · Notificações",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:1744",
+      "name": "40 · Notificações ativadas",
+      "nodes": 28,
+      "reactions": 5
+    },
+    {
+      "id": "126:1773",
+      "name": "41 · Idioma e unidades",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:1798",
+      "name": "42 · Preferências alternativas",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:1820",
+      "name": "43 · Privacidade e dados",
+      "nodes": 29,
+      "reactions": 6
+    },
+    {
+      "id": "126:1850",
+      "name": "44 · Sobre os teus dados",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:1873",
+      "name": "45 · Exportação solicitada",
+      "nodes": 19,
+      "reactions": 2
+    },
+    {
+      "id": "126:1893",
+      "name": "46 · Apagar dados opcionais?",
+      "nodes": 23,
+      "reactions": 3
+    },
+    {
+      "id": "126:1917",
+      "name": "47 · Eliminar a conta?",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:1939",
+      "name": "48 · Ajuda e feedback",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:1964",
+      "name": "49 · Perguntas frequentes",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:1987",
+      "name": "50 · Enviar feedback",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2013",
+      "name": "51 · Obrigado pelo feedback",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:2030",
+      "name": "52 · Terminar sessão?",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2051",
+      "name": "53 · Detalhe do plano",
+      "nodes": 28,
+      "reactions": 5
+    },
+    {
+      "id": "126:2080",
+      "name": "54 · Origem do plano",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2103",
+      "name": "55 · Exercícios da sessão",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2129",
+      "name": "56 · Plano guardado",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2150",
+      "name": "57 · Instruções do exercício",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2173",
+      "name": "58 · Registar série",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2199",
+      "name": "59 · Série registada",
+      "nodes": 23,
+      "reactions": 3
+    },
+    {
+      "id": "126:2223",
+      "name": "60 · Terminar este treino?",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2249",
+      "name": "61 · Treino concluído",
+      "nodes": 23,
+      "reactions": 3
+    },
+    {
+      "id": "126:2273",
+      "name": "62 · Treino incompleto",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2294",
+      "name": "63 · Registar atividade",
+      "nodes": 28,
+      "reactions": 5
+    },
+    {
+      "id": "126:2323",
+      "name": "64 · Atividade guardada",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2344",
+      "name": "65 · Adicionar alimento",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2370",
+      "name": "66 · Histórico",
+      "nodes": 29,
+      "reactions": 6
+    },
+    {
+      "id": "126:2400",
+      "name": "67 · Histórico de medidas",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2426",
+      "name": "68 · Pesquisar planos",
+      "nodes": 29,
+      "reactions": 6
+    },
+    {
+      "id": "126:2456",
+      "name": "69 · O meu plano",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2482",
+      "name": "70 · Nova palavra-passe",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:2507",
+      "name": "71 · Reenviar confirmação",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:2524",
+      "name": "72 · Termos de utilização",
+      "nodes": 21,
+      "reactions": 3
+    },
+    {
+      "id": "126:2546",
+      "name": "73 · Detalhe do dia",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:2571",
+      "name": "74 · Detalhe da refeição",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2597",
+      "name": "75 · Imagem do perfil",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2618",
+      "name": "76 · Nome de apresentação",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:2635",
+      "name": "77 · Alterar e-mail",
+      "nodes": 19,
+      "reactions": 2
+    },
+    {
+      "id": "126:2655",
+      "name": "78 · Métodos de entrada",
+      "nodes": 24,
+      "reactions": 4
+    },
+    {
+      "id": "126:2680",
+      "name": "79 · Registar medida",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2703",
+      "name": "80 · Dados opcionais apagados",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:2720",
+      "name": "81 · Conta eliminada",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:2737",
+      "name": "82 · Pré-visualizar feedback",
+      "nodes": 19,
+      "reactions": 2
+    },
+    {
+      "id": "126:2757",
+      "name": "83 · Editar série",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2780",
+      "name": "84 · Editar atividade",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2803",
+      "name": "85 · Resultados da pesquisa",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:2825",
+      "name": "86 · Porção e nutrientes",
+      "nodes": 26,
+      "reactions": 3
+    },
+    {
+      "id": "126:2852",
+      "name": "87 · Registo alimentar manual",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:2875",
+      "name": "88 · Alimento adicionado",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2896",
+      "name": "89 · Filtros de planos",
+      "nodes": 25,
+      "reactions": 5
+    },
+    {
+      "id": "126:2922",
+      "name": "90 · Sessão do meu plano",
+      "nodes": 20,
+      "reactions": 3
+    },
+    {
+      "id": "126:2943",
+      "name": "91 · Confirmar nova palavra-passe",
+      "nodes": 19,
+      "reactions": 2
+    },
+    {
+      "id": "126:2963",
+      "name": "92 · Sem planos encontrados",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:2985",
+      "name": "93 · Privacidade no registo",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:3008",
+      "name": "94 · Detalhe do almoço",
+      "nodes": 21,
+      "reactions": 4
+    },
+    {
+      "id": "126:3030",
+      "name": "95 · Palavra-passe atualizada",
+      "nodes": 16,
+      "reactions": 2
+    },
+    {
+      "id": "126:3047",
+      "name": "96 · Alterar palavra-passe",
+      "nodes": 22,
+      "reactions": 2
+    },
+    {
+      "id": "126:3070",
+      "name": "110 · Rever dados · 10",
+      "nodes": 12,
+      "reactions": 1
+    },
+    {
+      "id": "126:3083",
+      "name": "111 · Rever dados · 11",
+      "nodes": 18,
+      "reactions": 1
+    },
+    {
+      "id": "126:3102",
+      "name": "112 · Rever dados · 12",
+      "nodes": 9,
+      "reactions": 1
+    },
+    {
+      "id": "126:3112",
+      "name": "116 · Rever dados · 16",
+      "nodes": 15,
+      "reactions": 1
+    },
+    {
+      "id": "126:3128",
+      "name": "117 · Rever dados · 17",
+      "nodes": 18,
+      "reactions": 1
+    },
+    {
+      "id": "126:3147",
+      "name": "118 · Rever dados · 18",
+      "nodes": 15,
+      "reactions": 1
+    },
+    {
+      "id": "126:3163",
+      "name": "119 · Rever dados · 19",
+      "nodes": 15,
+      "reactions": 1
+    },
+    {
+      "id": "126:3179",
+      "name": "120 · Rever dados · 20",
+      "nodes": 15,
+      "reactions": 1
+    },
+    {
+      "id": "126:3195",
+      "name": "121 · Rever dados · 21",
+      "nodes": 21,
+      "reactions": 1
+    },
+    {
+      "id": "126:3217",
+      "name": "00 · Destinos e percursos v0.4",
+      "nodes": 131,
+      "reactions": 43
+    }
+  ],
+  "frames": 107,
+  "screens": 105,
+  "screenReactions": 372,
+  "mapReactions": 76
+}

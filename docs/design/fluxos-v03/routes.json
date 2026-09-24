@@ -1,0 +1,496 @@
+[
+  {
+    "from": 8,
+    "trigger": "after-delay",
+    "to": 9,
+    "delayMs": 250
+  },
+  {
+    "from": 9,
+    "trigger": "after-delay",
+    "to": 10,
+    "delayMs": 250
+  },
+  {
+    "from": 10,
+    "label": "Esqueci a palavra-passe",
+    "to": 12,
+    "rect": [
+      24,
+      343,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 10,
+    "label": "Entrar",
+    "to": 26,
+    "rect": [
+      24,
+      383,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 10,
+    "label": "Continuar com Google",
+    "to": 14,
+    "rect": [
+      24,
+      441,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 10,
+    "label": "Continuar com Apple · iOS",
+    "to": 14,
+    "rect": [
+      24,
+      499,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 10,
+    "label": "Ainda não tenho conta",
+    "to": 11,
+    "rect": [
+      24,
+      557,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 11,
+    "label": "Criar a minha conta",
+    "to": 13,
+    "rect": [
+      24,
+      555,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 11,
+    "label": "Já tenho conta",
+    "to": 10,
+    "rect": [
+      24,
+      613,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 12,
+    "label": "Enviar instruções",
+    "to": 33,
+    "rect": [
+      24,
+      318,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 12,
+    "label": "Voltar ao login",
+    "to": 10,
+    "rect": [
+      24,
+      376,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 13,
+    "label": "Já confirmei o e-mail",
+    "to": 14,
+    "rect": [
+      24,
+      283,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 13,
+    "label": "Reenviar e-mail",
+    "to": 13,
+    "rect": [
+      24,
+      341,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 13,
+    "label": "Corrigir o endereço",
+    "to": 11,
+    "rect": [
+      24,
+      381,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 14,
+    "label": "Escolher por onde começar",
+    "to": 15,
+    "rect": [
+      24,
+      533,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 15,
+    "label": "Configurar o meu treino",
+    "to": 16,
+    "rect": [
+      24,
+      283,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 15,
+    "label": "Configurar alimentação",
+    "to": 19,
+    "rect": [
+      24,
+      341,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 15,
+    "label": "Organizar a minha rotina",
+    "to": 21,
+    "rect": [
+      24,
+      399,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 15,
+    "label": "Explorar e preencher depois",
+    "to": 23,
+    "rect": [
+      24,
+      457,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 16,
+    "label": "Continuar para disponibilidade",
+    "to": 17,
+    "rect": [
+      24,
+      476,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 16,
+    "label": "Voltar às áreas",
+    "to": 15,
+    "rect": [
+      24,
+      534,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 17,
+    "label": "Continuar para dados opcionais",
+    "to": 18,
+    "rect": [
+      24,
+      501,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 17,
+    "label": "Voltar ao objetivo",
+    "to": 16,
+    "rect": [
+      24,
+      559,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 18,
+    "label": "Guardar preferências de treino",
+    "to": 22,
+    "rect": [
+      24,
+      492,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 18,
+    "label": "Continuar sem estes dados",
+    "to": 22,
+    "rect": [
+      24,
+      550,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 19,
+    "label": "Continuar para horários",
+    "to": 20,
+    "rect": [
+      24,
+      492,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 19,
+    "label": "Configurar alimentação depois",
+    "to": 24,
+    "rect": [
+      24,
+      550,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 20,
+    "label": "Guardar e abrir o diário",
+    "to": 5,
+    "rect": [
+      24,
+      492,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 20,
+    "label": "Voltar às preferências",
+    "to": 19,
+    "rect": [
+      24,
+      550,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 21,
+    "label": "Guardar a minha rotina",
+    "to": 1,
+    "rect": [
+      24,
+      580,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 21,
+    "label": "Configurar rotina depois",
+    "to": 25,
+    "rect": [
+      24,
+      638,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 22,
+    "label": "Explorar os planos",
+    "to": 2,
+    "rect": [
+      24,
+      462,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 22,
+    "label": "Configurar alimentação agora",
+    "to": 19,
+    "rect": [
+      24,
+      520,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 22,
+    "label": "Rever preferências de treino",
+    "to": 16,
+    "rect": [
+      24,
+      578,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 23,
+    "label": "Configurar treino",
+    "to": 16,
+    "rect": [
+      24,
+      337,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 23,
+    "label": "Já tenho um plano",
+    "to": 2,
+    "rect": [
+      24,
+      395,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 23,
+    "label": "Configurar outras áreas",
+    "to": 15,
+    "rect": [
+      24,
+      453,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 24,
+    "label": "Configurar alimentação",
+    "to": 19,
+    "rect": [
+      24,
+      337,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 24,
+    "label": "Voltar a Hoje",
+    "to": 1,
+    "rect": [
+      24,
+      395,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 25,
+    "label": "Criar a minha rotina",
+    "to": 21,
+    "rect": [
+      24,
+      283,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 25,
+    "label": "Voltar a Hoje",
+    "to": 1,
+    "rect": [
+      24,
+      341,
+      342,
+      30
+    ]
+  },
+  {
+    "from": 33,
+    "label": "Voltar ao login",
+    "to": 10,
+    "rect": [
+      24,
+      283,
+      342,
+      48
+    ]
+  },
+  {
+    "from": 26,
+    "trigger": "after-delay",
+    "to": 1,
+    "delayMs": 350
+  },
+  {
+    "from": 27,
+    "trigger": "after-delay",
+    "to": 2,
+    "delayMs": 350
+  },
+  {
+    "from": 28,
+    "trigger": "after-delay",
+    "to": 3,
+    "delayMs": 350
+  },
+  {
+    "from": 29,
+    "trigger": "after-delay",
+    "to": 4,
+    "delayMs": 350
+  },
+  {
+    "from": 30,
+    "trigger": "after-delay",
+    "to": 5,
+    "delayMs": 350
+  },
+  {
+    "from": 31,
+    "trigger": "after-delay",
+    "to": 6,
+    "delayMs": 350
+  },
+  {
+    "from": 32,
+    "trigger": "after-delay",
+    "to": 7,
+    "delayMs": 350
+  }
+]
