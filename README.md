@@ -29,7 +29,7 @@ Dores, limitações e retornos após pausa ou cirurgia fazem parte da investiga�
 | Design | Figma v0.4 inventariado em setembro de 2026; próximos ajustes especificados, ainda não aplicados |
 | Conteúdo | 43 fontes/famílias investigadas; amostras e limites documentados. Não equivale a catálogo homologado |
 | Planeamento | Etapa 0 inventariada; etapa 01 aberta para fechar conteúdo, direitos, métodos e viabilidade da visão integral |
-| Publicação | Primeiro versionamento da base; sem deploy ou lançamento nas lojas |
+| Publicação | [Primeiro commit da base](https://github.com/richardcastrogois/TrainForge/commit/16565d5e882e89d094150e79e2a2c0934af758af) em 24/09/2026; sem deploy ou lançamento nas lojas |
 
 O código inicial ainda contém geração de planos e fluxos de IA herdados, além de problemas conhecidos de autenticação, recorrência e histórico. A mudança de direção do produto está documentada; **essa lógica não foi removida ou corrigida nesta entrega**.
 

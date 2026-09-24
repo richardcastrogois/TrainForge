@@ -2,7 +2,7 @@
 
 **Atualizado em 24/09/2026. Etapa aberta.** As rodadas de 22–23/09 estão concluídas como pesquisa, mas não homologaram a oferta integral. A revisão atual compara a evidência com a [visão completa R01–R18](README.md): orientação do iniciante ao experiente, múltiplas práticas, alimentação integrada, registos manuais/conectados/por imagem e acompanhamento didático.
 
-Este documento concentra o balanço da etapa; não cria outra base paralela. **No fim há a matriz “o que temos e o que falta”.** Figma, contratos e banco não foram alterados. O envio ao GitHub foi solicitado posteriormente pelo autor e será tratado como publicação da base existente, sem transformar pesquisa em implementação.
+Este documento concentra o balanço da etapa; não cria outra base paralela. **No fim há a matriz “o que temos e o que falta”.** Figma, contratos e banco não foram alterados. O envio ao GitHub foi solicitado posteriormente e concluído em 24/09, como publicação da base existente, sem transformar pesquisa em implementação. O check-in está no plano de execução.
 
 ## Correções de escopo
 

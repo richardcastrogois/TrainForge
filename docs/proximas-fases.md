@@ -1,6 +1,6 @@
 # Continuidade acordada
 
-**Estado de 24/09/2026:** [visão integral](planejamento/README.md) e [balanço da etapa 01](planejamento/etapa-01-pesquisa.md) atualizados. Etapa 0 histórica concluída; alinhamento documental realizado; etapa 01 aberta. Próximas intervenções do [Figma](design/ajustes-visao-integrada.md) estão especificadas, sem execução. O autor autorizou publicar a base existente em `richardcastrogois/TrainForge`; implementação, banco, skill global e deploy continuam pendentes.
+**Estado de 24/09/2026:** [visão integral](planejamento/README.md) e [balanço da etapa 01](planejamento/etapa-01-pesquisa.md) atualizados. Etapa 0 histórica concluída; alinhamento documental realizado; etapa 01 aberta. Próximas intervenções do [Figma](design/ajustes-visao-integrada.md) estão especificadas, sem execução. A base foi publicada em [richardcastrogois/TrainForge](https://github.com/richardcastrogois/TrainForge), branch `main`, primeiro commit `16565d5`. Implementação da visão, banco, skill global e deploy continuam pendentes.
 
 **Atualização de 17/09/2026:** o pedido atual de planejamento está organizado em [plano de produto e execução](planejamento/README.md). Esse conjunto complementa a sequência histórica abaixo, detalha pesquisa preliminar antes de fechar o Figma e separa aprovação visual, arquitetura/contratos, banco e implementação. As propostas ainda precisam de revisão; não significam que GitHub, skill global, fontes, deploy ou migrações foram concluídos.
 
@@ -14,9 +14,11 @@ Analisar as três pastas com foco no Flutter, gerar grafos estruturais, document
 
 ## Fase 2 — depois da revisão do autor
 
-### GitHub
+### GitHub — publicação inicial concluída
 
-Definir se o repositório incluirá só Flutter ou também o backend atual, nome, visibilidade e tratamento do histórico da API. Inventariar arquivos novos, caches, artefatos, configurações de máquina e segredos antes do staging. Preservar os projetos de referência. Publicar só depois de escopo e conteúdo concretos revisados.
+Primeiro commit `16565d5`, 24/09/2026: 322 arquivos de Flutter, docs, design próprio e índices Graphify. Branch `main` enviada ao repositório indicado pelo autor. Backend atual permanece em sua pasta/repositório separados. Downloads brutos de terceiros, caches, logs, chaves e arquivos de máquina foram preservados localmente e excluídos; regras em `.gitignore`.
+
+Próximos commits devem preservar esse escopo e conferir dados/licenças antes de incluir material novo. O [plano de execução](planejamento/plano-de-execucao.md) registra os check-ins. Publicar código não é lançar nas lojas nem hospedar a API.
 
 ### Fontes públicas — pesquisa entregue; homologação pendente
 
@@ -51,4 +53,4 @@ A visão já inclui programas prontos e montagem livre; alimentação, modalidad
 
 Revisar agora o alinhamento de [R01–R18](planejamento/README.md), a matriz de evidências/lacunas e a sequência de viabilidade. Depois decidir cobertura de lançamento, conteúdo autorizado, métodos de orientação e capacidades condicionais. A disponibilidade atual de orçamento/parceiros não deve ser presumida.
 
-GitHub foi autorizado nesta conversa; preparar/publicar o conjunto revisto não autoriza deploy, alterações de banco ou geração clínica.
+GitHub foi publicado nesta conversa; isso não autoriza deploy, alterações de banco ou geração clínica.

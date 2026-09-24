@@ -64,3 +64,9 @@ Os dados brutos de pesquisa, caches, builds, logs, chaves e configurações de m
 Análise estática da base antes do commit: `flutter analyze --no-pub` terminou com **No issues found!**. Foi necessário usar o SDK fora do sandbox; não houve upgrade de Flutter/dependências. A primeira tentativa restrita, sem saída útil, foi interrompida. Sem testes integrados de login, API, banco, sensores ou reconhecimento — não foram implementadas essas evoluções nesta entrega.
 
 Revisão do conjunto inicial staged: **322 arquivos**, aproximadamente 3,9 MB de arquivos de trabalho, sem arquivos individuais acima de 1 MB. `git diff --cached --check` passou. A inspeção de credenciais usa padrões explícitos, não certificação de segurança do produto. Os riscos de logs/recorrência/autenticação do diagnóstico permanecem abertos.
+
+### Publicação inicial confirmada
+
+Em 24/09/2026, commit `16565d5e882e89d094150e79e2a2c0934af758af` criado e enviado para `origin/main` em [richardcastrogois/TrainForge](https://github.com/richardcastrogois/TrainForge). O remoto consultado estava vazio antes do envio. Repositório local: `C:\dev\TrainForge\trainforge`. Backend não foi copiado, deploy não foi executado e conteúdo bruto excluído não foi apagado.
+
+Git identificou diferença de proprietário entre sandbox e conta do utilizador. A mudança do proprietário foi negada pelo Windows. A revisão automática rejeitou adicionar confiança global persistente; nada foi alterado globalmente. Commit/push funcionam com `git -c safe.directory=C:/dev/TrainForge/trainforge ...`, limitado à execução e ao caminho conhecido. Não repetir a tentativa global sem autorização específica.

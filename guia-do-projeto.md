@@ -1,6 +1,6 @@
 # TrainForge — guia de retomada
 
-**Retomada atual — 24/09/2026:** começar pela [visão integral R01–R18](docs/planejamento/README.md), [pitch](docs/planejamento/pitch-e-decisoes.md) e [balanço da etapa 01](docs/planejamento/etapa-01-pesquisa.md). A etapa 0 tem inventário preservado e alinhamento documental; a etapa 01 continua aberta. Alterações futuras do design estão em [ajustes do Figma](docs/design/ajustes-visao-integrada.md), sem edição visual neste incremento. A publicação inicial no GitHub foi autorizada pelo autor, com revisão do conjunto.
+**Retomada atual — 24/09/2026:** começar pela [visão integral R01–R18](docs/planejamento/README.md), [pitch](docs/planejamento/pitch-e-decisoes.md) e [balanço da etapa 01](docs/planejamento/etapa-01-pesquisa.md). A etapa 0 tem inventário preservado e alinhamento documental; a etapa 01 continua aberta. Alterações futuras do design estão em [ajustes do Figma](docs/design/ajustes-visao-integrada.md), sem edição visual neste incremento. A [primeira publicação no GitHub](https://github.com/richardcastrogois/TrainForge) foi concluída em 24/09, com 322 arquivos no commit inicial `16565d5`. Evidências brutas e arquivos locais ficam fora.
 
 Análise em **9 de setembro de 2026**. Primeira etapa: contexto, diagnóstico, Graphify, documentação e proposta visual. Código de aplicação preservado; publicação, refatoração e pesquisa profunda de fontes ficam para as próximas etapas.referente ao documento dfrgf
 
@@ -20,7 +20,7 @@ O backend de que esse app depende continua em **`C:\dev\bootcamp-treinos-api`**.
 
 | Pasta | Estado observado | Papel na retomada |
 | --- | --- | --- |
-| `C:\dev\TrainForge\trainforge` | Flutter 0.1.0+1; Git iniciado em 24/09 para publicação da base | Produto principal e localização desta documentação |
+| `C:\dev\TrainForge\trainforge` | Flutter 0.1.0+1; publicado em `richardcastrogois/TrainForge`, branch `main` | Produto principal e localização desta documentação |
 | `C:\dev\bootcamp-treinos-api` | API evoluída depois da imersão; Git existente | Backend efetivamente consumido pelo app; referência a preservar |
 | `C:\dev\bootcamp-treinos-frontend` | Next.js/React; Git existente | Frontend web histórico; não necessário para iniciar o Flutter |
 

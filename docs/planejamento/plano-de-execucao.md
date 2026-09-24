@@ -34,7 +34,7 @@ Atualizado em 24/09/2026. Marcar `[x]` somente após executar e registrar evidê
 - [x] Especificar [ajustes futuros do Figma](../design/ajustes-visao-integrada.md), sem editar o arquivo visual.
 - [x] Corrigir recortes de musculação exclusiva, parceria pressuposta e foto somente como anexo.
 - [ ] Resolver as evidências abertas da etapa 01; a revisão documental não conclui essa etapa.
-- [ ] Publicação inicial solicitada pelo autor: README, revisão do conjunto, commit e push em `richardcastrogois/TrainForge`. Registrar resultado após verificar.
+- [x] **Publicação inicial — 24/09/2026:** README e base revisados, 322 arquivos no primeiro commit [`16565d5`](https://github.com/richardcastrogois/TrainForge/commit/16565d5e882e89d094150e79e2a2c0934af758af), push de `main` concluído. Código Flutter, documentação, design próprio e índices publicados; API externa, segredos, caches e evidências brutas excluídos.
 
 ## Entregas e critérios
 
@@ -87,7 +87,7 @@ Publicar a base existente no GitHub não encerra a etapa 01 nem aprova capacidad
 
 **Revisão da visão integral — 24/09/2026:** 32 documentos revisados passaram no validador documental sem erros/links locais quebrados. Avisos de possível placeholder correspondem a palavras portuguesas e registros de validação anteriores; os avisos de títulos técnicos são heurísticos, e os fluxos/arquitetura/riscos existentes foram preservados. R01–R18 aparecem na visão e no balanço final da etapa 01; F01–F12 especificam a intervenção visual futura.
 
-Graphify consultado no início e atualizado ao final: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Não houve implementação ou mudança no arquivo Figma. Preparação do primeiro commit: README, código existente, docs/design e índices; caches/segredos e evidências brutas de terceiros excluídos. `flutter analyze --no-pub` passou sem problemas; staged contém 322 arquivos e passou em `git diff --cached --check`. Não houve teste integrado nem upgrade. Publicação remota só deve ser marcada após conferência.
+Graphify consultado no início e atualizado ao final: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Não houve implementação ou mudança no arquivo Figma. Preparação do primeiro commit: README, código existente, docs/design e índices; caches/segredos e evidências brutas de terceiros excluídos. `flutter analyze --no-pub` passou sem problemas; staged contém 322 arquivos e passou em `git diff --cached --check`. Não houve teste integrado nem upgrade. Primeiro push confirmado em 24/09/2026; este check-in registra a entrega, sem encerrar a etapa 01.
 
 
 **Validação da expansão — 23/09/2026:** 15 documentos novos/atualizados passaram no validador da skill `documentacao-projeto`, sem erros ou links locais quebrados detectados. Os avisos de possível placeholder foram revistos: correspondem a palavras portuguesas como “todo”, “todos” e “método”, ou à explicação histórica desse aviso, não a campos deixados por preencher. O catálogo gerado contém 43 IDs únicos: 10 candidatos, 10 condicionais, 8 incompatíveis com o caminho gratuito comercial e 15 referências; essa classificação não equivale a aprovação editorial.
