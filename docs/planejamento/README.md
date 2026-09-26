@@ -1,5 +1,7 @@
 # TrainForge — visão do produto e base de execução
 
+**Execução atual — 26/09/2026:** o autor escolheu permanecer na etapa 01, dividida em [46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), com um foco por vez. N01, identificação alimentar, concluído para pesquisa no recorte Ciqual 2025; N02, composição/calorias, é o próximo. Retorno, origem, chamada e limites estão no [dossiê de implementação futura](../conteudo/evidencias-para-integracao.md). Isso não encerra a etapa 01 inteira nem inicia a etapa 02.
+
 Atualizado em **24/09/2026**, a partir do esclarecimento do autor. Este é o documento central da visão esperada; substitui os recortes anteriores que davam prioridade exclusiva à musculação, tratavam alimentação como simples complemento ou fotografia apenas como anexo. Define intenção de produto, **não funcionalidades já implementadas nem promessa de que tudo cabe no primeiro lançamento**.
 
 ## O produto que queremos construir
@@ -65,7 +67,7 @@ Alimentação e atividade partilham objetivos e histórico. O app deve distingui
 - **Código:** Flutter já existe; a API ativa continua em `C:\dev\bootcamp-treinos-api`. O Next.js antigo é referência. A descrição factual permanece na [documentação técnica](../../documentacao-tecnica.md).
 - **Figma:** base v0.4 preservada e inventariada em 22/09: 105 telas/estados e 372 reações das telas. Não foi conferida visualmente nem editada neste incremento. Quantidade de telas não demonstra cobertura desta nova visão.
 - **Etapa 0:** inventário histórico concluído; alinhamento documental da visão feito em 24/09. Conferência do Figma contra estes requisitos fica para a próxima intervenção visual.
-- **Etapa 01:** pesquisas de 22–23/09 entregues, mas a etapa continua aberta. A cobertura integral e as condições de passagem estão no [balanço da etapa 01](etapa-01-pesquisa.md).
+- **Etapa 01:** pesquisas, pilotos e N01 entregues até 26/09, mas a etapa continua aberta. A [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho) organiza a decisão do autor de pesquisar um foco por vez; N02 é o próximo. Não confundir pesquisa com conteúdo homologado no app.
 - **Este incremento:** ajusta documentação e especifica alterações futuras de design. Não implementa funcionalidades, integra fontes, altera Figma/banco ou publica o app.
 
 ## Leitura e responsabilidade de cada documento
@@ -76,7 +78,7 @@ Alimentação e atividade partilham objetivos e histórico. O app deve distingui
 | [Plano de execução](plano-de-execucao.md) | Ordem, check-ins, dependências e critérios de conclusão das etapas |
 | [Etapa 0](etapa-00-base.md) | Evidências da base preservada e limites do inventário |
 | [Etapa 01](etapa-01-pesquisa.md) | Síntese da viabilidade, histórico de pesquisa e balanço final do que temos/falta |
-| [Cobertura do conteúdo](../conteudo/cobertura-e-prioridades.md) | Modalidades, público, programas, nutrição e lotes a avaliar |
+| [Cobertura do conteúdo](../conteudo/cobertura-e-prioridades.md) | Inventário de 25/09: o que o app deve entregar, retornos esperados de fontes/APIs, o que existe com evidência e o que falta; modalidades e lotes a avaliar |
 | [Base de fontes](../conteudo/README.md) | Catálogo, amostras, direitos e processo de curadoria existentes |
 | [Ajustes futuros do Figma](../design/ajustes-visao-integrada.md) | Único novo documento deste incremento: especificação detalhada para desenhar depois |
 | [Experiência e Figma](experiencia-e-figma.md) | Regras transversais de interação, teclado, movimento e persistência |

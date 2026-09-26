@@ -5,7 +5,15 @@
 
 Coleta adicional: **23/09/2026**. Reutiliza as evidências de 22/09. Os números abaixo são observações da coleta, não percentuais de qualidade do catálogo inteiro, auditoria clínica ou benchmark de disponibilidade.
 
-## Resultado verificável
+## Pilotos posteriores — 26/09/2026
+
+Acrescentamos [evidência estrutural reproduzível](evidencias/2026-09-26/pilotos-resumo.json): um programa NHS de corrida com 27 sessões e 12 padrões, conferido contra HTML e PDF; uma rotina NHS de força com sete exercícios e 20 passos de instrução na fonte; e cálculos por massa para 12 alimentos CoFID. Isso melhora a prova de obtenção e importação experimental de conteúdo humano, sem indicar treino/dieta a uma pessoa nem aprovar o lote para publicação.
+
+Exemplo aritmético: para a entrada fictícia **150 g**, o arroz integral basmati cozido CoFID `11-867` resulta em **196,50 kcal**; a mesma massa do cru `11-866`, **532,50 kcal**. Não são porções recomendadas ou alimentos intercambiáveis. Traço, desconhecido e limites superiores permanecem identificados; não são zeros. [Resultados e método](evidencias/2026-09-26/alimentacao-piloto.json).
+
+Uma consulta OFF limitada a 30 produtos portugueses voltou a retornar 503, sem produto recebido. Um PDF de caminhada NHLBI retornou 404. A investigação CDC/Tufts encontrou divergência entre metadados e restrição de adaptação no material: não liberado. O [balanço da etapa 01](../planejamento/etapa-01-pesquisa.md) detalha as consequências e a passagem ainda pendente para a etapa 02.
+
+## Resultado verificável — 23/09/2026
 
 | Fonte | Operação | Resultado | Implicação |
 |---|---|---|---|

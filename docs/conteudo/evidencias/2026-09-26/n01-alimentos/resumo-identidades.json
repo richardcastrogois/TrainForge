@@ -1,0 +1,52 @@
+{
+  "niche": "N01",
+  "researchStatus": "completed_with_explicit_scope_limits",
+  "releaseApproved": false,
+  "sourceId": "AL04",
+  "sourceVersion": "Ciqual 2025; DOI 10.57745/RDMHWY V1",
+  "foods": 3484,
+  "uniqueFoodIds": 3484,
+  "classificationRows": 138,
+  "groupLevelsUniqueNonzero": [
+    11,
+    65,
+    85
+  ],
+  "namesFrench": 3484,
+  "namesEnglish": 3484,
+  "scientificNames": 720,
+  "namesPortugueseSupplied": 0,
+  "duplicateFrenchNames": 0,
+  "unclassifiedFoodIds": [
+    "24999"
+  ],
+  "checks": {
+    "inputHashesVerified": 4,
+    "depositMd5Verified": 2,
+    "xmlXlsxIdentityMatches": 3484,
+    "classificationPaddingPreserved": true,
+    "preparationPairs": 9,
+    "compoundDishSeparated": true,
+    "sampleRecords": 30
+  },
+  "provenance": [
+    {
+      "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666252",
+      "collectedAtUtc": "2026-09-26T14:28:11.6552787Z",
+      "sha256": "e0b1de25b3039028205e9d54a96892e403e1b313c2efeb41180fabe132627478"
+    },
+    {
+      "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666250",
+      "collectedAtUtc": "2026-09-26T14:28:15.2137036Z",
+      "sha256": "e216928be1001aed15ba1b120405b70a98145da2a1a76026d6e33542bd5e39dc"
+    }
+  ],
+  "limits": [
+    "Not all foods or brands sold in Portugal",
+    "No Portuguese names in source",
+    "Preparation embedded in names, not structured field",
+    "One unclassified generic dessert; retain unknown classification",
+    "No calories, serving sizes, photos, recommendations or diets assessed in this niche",
+    "Normalized full dataset kept locally, not seeded into the app"
+  ]
+}

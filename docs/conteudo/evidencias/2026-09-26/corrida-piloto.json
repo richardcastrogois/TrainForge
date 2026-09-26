@@ -1,0 +1,677 @@
+{
+  "kind": "existing_human_running_program_research_pilot",
+  "sourceId": "PR06",
+  "source": {
+    "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+    "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+    "sha256": "79562655a75dfd914ff99aea3bf2e1ba16d345bf1468264ee42d235ccabc9760"
+  },
+  "crossCheckSource": {
+    "url": "https://digitalcampaignsstorage.blob.core.windows.net/campaigns-cms-prod/documents/c25k_printable_plan.pdf",
+    "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+    "sha256": "c7dffd6cf49949eb1874b6989a33c66c9ce73dcd0dd1948512b33a2886da7957"
+  },
+  "method": "27 HTML session tables parsed; duration sums checked; every interval compared to numeric transcription visually checked against both PDF pages on 2026-09-26.",
+  "rights": "Eligible NHS text: OGL v3.0 subject to NHS terms and exclusions. No audio, app, logos, photos or video included.",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+  "releaseStatus": "research_only_not_release_approved",
+  "weeks": 9,
+  "sessionsPerWeek": 3,
+  "restDaysBetweenRunsMinimum": 1,
+  "endTarget": {
+    "runningMinutes": 30,
+    "guaranteedDistanceKm": null
+  },
+  "stretchDurationSeconds": null,
+  "publicationGaps": [
+    "Reviewed Portuguese instructions, warm-up/cool-down guidance and applicability",
+    "Exact dated-copy or refresh/attribution workflow under NHS terms",
+    "App integration, recovery states and on-device tests"
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 180
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 150
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 90
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1200
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600
+        },
+        {
+          "phase": "main",
+          "activity": "walk",
+          "seconds": 180
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1500
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1680
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1800
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "week": 1,
+      "run": 1,
+      "patternId": 1,
+      "declaredSecondsExcludingStretches": 1710
+    },
+    {
+      "week": 1,
+      "run": 2,
+      "patternId": 1,
+      "declaredSecondsExcludingStretches": 1710
+    },
+    {
+      "week": 1,
+      "run": 3,
+      "patternId": 1,
+      "declaredSecondsExcludingStretches": 1710
+    },
+    {
+      "week": 2,
+      "run": 1,
+      "patternId": 2,
+      "declaredSecondsExcludingStretches": 1740
+    },
+    {
+      "week": 2,
+      "run": 2,
+      "patternId": 2,
+      "declaredSecondsExcludingStretches": 1740
+    },
+    {
+      "week": 2,
+      "run": 3,
+      "patternId": 2,
+      "declaredSecondsExcludingStretches": 1740
+    },
+    {
+      "week": 3,
+      "run": 1,
+      "patternId": 3,
+      "declaredSecondsExcludingStretches": 1500
+    },
+    {
+      "week": 3,
+      "run": 2,
+      "patternId": 3,
+      "declaredSecondsExcludingStretches": 1500
+    },
+    {
+      "week": 3,
+      "run": 3,
+      "patternId": 3,
+      "declaredSecondsExcludingStretches": 1500
+    },
+    {
+      "week": 4,
+      "run": 1,
+      "patternId": 4,
+      "declaredSecondsExcludingStretches": 1890
+    },
+    {
+      "week": 4,
+      "run": 2,
+      "patternId": 4,
+      "declaredSecondsExcludingStretches": 1890
+    },
+    {
+      "week": 4,
+      "run": 3,
+      "patternId": 4,
+      "declaredSecondsExcludingStretches": 1890
+    },
+    {
+      "week": 5,
+      "run": 1,
+      "patternId": 5,
+      "declaredSecondsExcludingStretches": 1860
+    },
+    {
+      "week": 5,
+      "run": 2,
+      "patternId": 6,
+      "declaredSecondsExcludingStretches": 1860
+    },
+    {
+      "week": 5,
+      "run": 3,
+      "patternId": 7,
+      "declaredSecondsExcludingStretches": 1800
+    },
+    {
+      "week": 6,
+      "run": 1,
+      "patternId": 8,
+      "declaredSecondsExcludingStretches": 2040
+    },
+    {
+      "week": 6,
+      "run": 2,
+      "patternId": 9,
+      "declaredSecondsExcludingStretches": 1980
+    },
+    {
+      "week": 6,
+      "run": 3,
+      "patternId": 10,
+      "declaredSecondsExcludingStretches": 2100
+    },
+    {
+      "week": 7,
+      "run": 1,
+      "patternId": 10,
+      "declaredSecondsExcludingStretches": 2100
+    },
+    {
+      "week": 7,
+      "run": 2,
+      "patternId": 10,
+      "declaredSecondsExcludingStretches": 2100
+    },
+    {
+      "week": 7,
+      "run": 3,
+      "patternId": 10,
+      "declaredSecondsExcludingStretches": 2100
+    },
+    {
+      "week": 8,
+      "run": 1,
+      "patternId": 11,
+      "declaredSecondsExcludingStretches": 2280
+    },
+    {
+      "week": 8,
+      "run": 2,
+      "patternId": 11,
+      "declaredSecondsExcludingStretches": 2280
+    },
+    {
+      "week": 8,
+      "run": 3,
+      "patternId": 11,
+      "declaredSecondsExcludingStretches": 2280
+    },
+    {
+      "week": 9,
+      "run": 1,
+      "patternId": 12,
+      "declaredSecondsExcludingStretches": 2400
+    },
+    {
+      "week": 9,
+      "run": 2,
+      "patternId": 12,
+      "declaredSecondsExcludingStretches": 2400
+    },
+    {
+      "week": 9,
+      "run": 3,
+      "patternId": 12,
+      "declaredSecondsExcludingStretches": 2400
+    }
+  ]
+}

@@ -38,6 +38,14 @@ Textos legais de licença: [CC BY 4.0](https://creativecommons.org/licenses/by/4
 
 **Conteúdo científico.** OMS, ACSM e EFSA são referências importantes. Referenciar fatos e conclusões com redação própria não equivale a redistribuir livros, tabelas, infográficos ou protocolos inteiros. A política OMS examinada contém restrição comercial; não inferir que um PDF gratuito é material livre para anúncios. [Política OMS](https://www.who.int/about/policies/publishing/copyright).
 
+## Conferência dos pilotos — 26/09/2026
+
+**NHS:** obtivemos o texto exato do programa de corrida e da rotina de força, termos e exclusões, com hash/data. A cláusula 3.4 admite uso comercial de conteúdo elegível; 3.6 distingue cópia de adaptação/tradução. Para a cópia, há a alternativa de indicar a data ou manter a atualização na periodicidade descrita; não interpretar a recomendação de atualização diária como única opção contratual. Uma tradução não conserva automaticamente aprovação clínica nem pode sugerir endosso. O lote de pesquisa contém fatos/intervalos e atribuição OGL; original completo permanece local. Antes da apresentação no app, conferir a atribuição aplicável, versão, instruções, público e revisão pt-PT. Áudio, fotos, app e marcas não foram liberados. [Termos consultados](https://www.nhs.uk/our-policies/terms-and-conditions/), [exclusões](https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/).
+
+**CDC/Tufts — Growing Stronger:** [metadados CDC](https://stacks.cdc.gov/view/cdc/11447) rotulam domínio público; o [PDF, página impressa ii](https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf) informa copyright Tufts, materiais de terceiros e distribuição sem modificar o conteúdo. O conflito impede classificar uma tradução/adaptação comercial como permitida somente pelo rótulo do repositório. PR11 fica condicional; não houve contato nem importação para o catálogo do app.
+
+**Competitive Edge:** o [artigo de 2024](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1439431/full) declara CC BY 4.0, mas a pesquisa não obteve o programa integral e sua aplicação foi supervisionada. A licença do artigo não comprova que todos os materiais externos/questionários citados possam ser reutilizados. PR12 é referência; licença aberta não fecha adequação nem completude.
+
 ## Perguntas prontas para os titulares
 
 Não foram enviadas mensagens nem pedidos de autorização nesta pesquisa. Os itens abaixo delimitam o que perguntar, evitando uma autorização vaga como “posso usar os dados?”. O envio será uma ação separada autorizada pelo autor.

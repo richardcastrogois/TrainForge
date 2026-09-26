@@ -1,9 +1,31 @@
 # Evidências da expansão de conteúdo
 
+**N01 — identidade alimentar, 26/09/2026:** [resumo](2026-09-26/n01-alimentos/resumo-identidades.json) e [30 exemplos](2026-09-26/n01-alimentos/amostra-identidades.json). Dois XMLs Ciqual recebidos, 3.484 IDs/nomes/grupos cruzados com a planilha; francês/inglês presentes, português ausente e uma classificação desconhecida preservada. [Coletor](coletar-identidades.ps1), [analisador sem rede](analisar-identidades.py) e [retorno exato](../evidencias-para-integracao.md#n01--retorno-xml-de-identidade-alimentar). XMLs/normalizado integral em `2026-09-26/n01-alimentos/raw/` ficam locais. N02 não foi iniciado neste ataque.
+
+**Entrada técnica:** [dossiê de retornos para implementação](../evidencias-para-integracao.md) e [índice de chamadas](retornos-observados.json), gerado localmente por [inventariar-retornos.py](inventariar-retornos.py). Separa o corpo externo dos campos criados pelos coletores/analisadores. A disponibilidade do corpo integral em disco e a possibilidade de conferir seu hash estão explícitas por registro.
+
 **Publicação inicial — 24/09/2026:** scripts, resumos, inventário e manifestos de pesquisa podem ser consultados no repositório. Planilhas, respostas integrais de fornecedores e subconjuntos indicados como “apenas local” permanecem preservados nesta máquina e excluídos do Git; sua redistribuição não foi aprovada neste incremento. Os manifestos descrevem o conjunto local original, não uma garantia de que cada arquivo está no clone. Para reproduzir os analisadores, primeiro obter legitimamente as entradas documentadas; não esperar que funcionem com todos os dados em um clone limpo.
 
 
-Coleta de 23/09/2026. Consulta recomendada: [resumo-expansao.json](resumo-expansao.json), depois o subconjunto necessário. A [primeira coleta](../../planejamento/evidencias/README.md) continua intacta.
+## Pilotos de 26/09/2026
+
+Começar por [pilotos-resumo.json](2026-09-26/pilotos-resumo.json). O [analisador local](analisar-pilotos.py) não usa rede nem IA e verifica hashes antes de extrair as tabelas de corrida. Resultados: **27 sessões / 12 padrões** NHS, sete movimentos de força com 20 passos na fonte e conversão de massa de 12 alimentos CoFID. A conferência da corrida inclui os totais declarados e comparação de todos os intervalos com as duas páginas do PDF oficial, inspecionadas visualmente. Não há integração, revisão pt-PT concluída ou aprovação de publicação.
+
+Artefatos numéricos com origem/limites: [corrida](2026-09-26/corrida-piloto.json), [força](2026-09-26/forca-piloto.json), [alimentação](2026-09-26/alimentacao-piloto.json). O JSON de força preserva parâmetros e número de passos, não substitui as instruções integrais conservadas no HTML local. Alongamentos sem duração, séries e descansos ausentes não foram inventados; traços nutricionais não viraram zero.
+
+O [coletor limitado](coletar-pilotos.py) guarda sucesso e falha. A primeira tentativa ficou bloqueada pelo sandbox antes dos fornecedores; a tentativa separada `--attempt network`, com acesso de rede autorizado, obteve cinco respostas 200, OFF 503 e PDF NHLBI 404. [Resumo da tentativa com rede](2026-09-26/network/coleta-resumo.json). Não repetir esses pedidos para recuperar contexto. HTML/PDF/PNG originais ficam em `2026-09-26/network/raw/`, ignorados pelo Git; registros de URL, data e hash ficam fora de `raw/`. Os PNGs são renderizações locais das duas páginas para inspeção, não material visual do app.
+
+Reproduzir **com as entradas locais já presentes**, sem nova coleta:
+
+```powershell
+& 'C:\Users\richa\AppData\Roaming\uv\tools\graphifyy\Scripts\python.exe' 'C:\dev\TrainForge\trainforge\docs\conteudo\evidencias\analisar-pilotos.py'
+```
+
+Em um clone limpo, obter as entradas permitidas indicadas pelos registros de coleta e a amostra CoFID, preservando os hashes; os corpos de terceiros não acompanham o clone. Os resultados estruturados também são **pesquisa**, não catálogo liberado. [Decisão e pendências da etapa](../../planejamento/etapa-01-pesquisa.md).
+
+## Coleta de 23/09/2026
+
+Consulta recomendada: [resumo-expansao.json](resumo-expansao.json), depois o subconjunto necessário. A [primeira coleta](../../planejamento/evidencias/README.md) continua intacta.
 
 | Artefato | Conteúdo e origem |
 |---|---|
@@ -28,6 +50,6 @@ O [coletor](coletar-expansao.py) só deve ser executado quando houver motivo par
 
 ## Falhas e limites
 
-Fineli retornou 403 e permanece não amostrado. Ciqual falhou no certificado do Python e funcionou pelo cliente nativo Windows; ambas as evidências permanecem. Não foram baixadas imagens, vídeos ou o XML Ciqual de composição de cerca de 69 MB. OFF não foi novamente consultado; as duas respostas 503 estão na primeira coleta.
+Na rodada de 23/09, Fineli retornou 403 e permanece não amostrado. Ciqual falhou no certificado do Python e funcionou pelo cliente nativo Windows; ambas as evidências permanecem. Não foram baixadas imagens, vídeos ou o XML Ciqual de composição de cerca de 69 MB. OFF não foi novamente consultado naquela rodada; em 26/09 a consulta limitada também retornou 503, conforme registro acima.
 
 Esta pasta mantém a pesquisa local e seus resumos públicos separados. A seleção de arquivos para o primeiro commit exclui dados brutos; a publicação do código não libera automaticamente os conteúdos das fontes.

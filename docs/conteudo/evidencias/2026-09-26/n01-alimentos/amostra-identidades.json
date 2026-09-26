@@ -1,0 +1,902 @@
+{
+  "sourceId": "AL04",
+  "sourceVersion": "Ciqual 2025; DOI 10.57745/RDMHWY V1",
+  "license": {
+    "name": "etalab 2.0",
+    "uri": "https://spdx.org/licenses/etalab-2.0.html",
+    "iconUri": "https://entrepot.recherche.data.gouv.fr/assets/licence-ouverte.png"
+  },
+  "selection": "Thirty explicit IDs, including nine preparation pairs, a compound dish and the unclassified average dessert; convenience fixtures, not a Portugal coverage claim.",
+  "records": [
+    {
+      "sourceKey": "ciqual:2025:9100",
+      "sourceFoodId": "9100",
+      "names": {
+        "fr": "Riz blanc, cru",
+        "en": "Rice, white, raw"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "03",
+        "alim_ssgrp_code": "0301",
+        "alim_ssssgrp_code": "030102"
+      },
+      "classification": {
+        "alim_grp_code": "03",
+        "alim_grp_nom_fr": "produits céréaliers",
+        "alim_grp_nom_eng": "cereal products",
+        "alim_ssgrp_code": "0301",
+        "alim_ssgrp_nom_fr": "pâtes, riz et céréales",
+        "alim_ssgrp_nom_eng": "pasta, rice and grains",
+        "alim_ssssgrp_code": "030102",
+        "alim_ssssgrp_nom_fr": "pâtes, riz et céréales crus",
+        "alim_ssssgrp_nom_eng": "pasta, rice and grains, raw"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:9104",
+      "sourceFoodId": "9104",
+      "names": {
+        "fr": "Riz blanc, cuit, sans sel ajouté",
+        "en": "Rice, white, cooked, no added salt"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "03",
+        "alim_ssgrp_code": "0301",
+        "alim_ssssgrp_code": "030101"
+      },
+      "classification": {
+        "alim_grp_code": "03",
+        "alim_grp_nom_fr": "produits céréaliers",
+        "alim_grp_nom_eng": "cereal products",
+        "alim_ssgrp_code": "0301",
+        "alim_ssgrp_nom_fr": "pâtes, riz et céréales",
+        "alim_ssgrp_nom_eng": "pasta, rice and grains",
+        "alim_ssssgrp_code": "030101",
+        "alim_ssssgrp_nom_fr": "pâtes, riz et céréales cuits",
+        "alim_ssssgrp_nom_eng": "pasta, rice and grains, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:25088",
+      "sourceFoodId": "25088",
+      "names": {
+        "fr": "Riz cantonais, préemballé",
+        "en": "Cantonese rice, prepacked"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "01",
+        "alim_ssgrp_code": "0103",
+        "alim_ssssgrp_code": "010307"
+      },
+      "classification": {
+        "alim_grp_code": "01",
+        "alim_grp_nom_fr": "entrées et plats composés",
+        "alim_grp_nom_eng": "starters and dishes",
+        "alim_ssgrp_code": "0103",
+        "alim_ssgrp_nom_fr": "plats composés",
+        "alim_ssgrp_nom_eng": "dishes",
+        "alim_ssssgrp_code": "010307",
+        "alim_ssssgrp_nom_fr": "plats de céréales/pâtes",
+        "alim_ssssgrp_nom_eng": "pasta or cereal dishes"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:22000",
+      "sourceFoodId": "22000",
+      "names": {
+        "fr": "Oeuf cru",
+        "en": "Egg, raw"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0410",
+        "alim_ssssgrp_code": "041002"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0410",
+        "alim_ssgrp_nom_fr": "oeufs",
+        "alim_ssgrp_nom_eng": "eggs",
+        "alim_ssssgrp_code": "041002",
+        "alim_ssssgrp_nom_fr": "oeufs crus",
+        "alim_ssssgrp_nom_eng": "eggs, raw"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:22010",
+      "sourceFoodId": "22010",
+      "names": {
+        "fr": "Oeuf dur",
+        "en": "Egg, hard-boiled"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0410",
+        "alim_ssssgrp_code": "041001"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0410",
+        "alim_ssgrp_nom_fr": "oeufs",
+        "alim_ssgrp_nom_eng": "eggs",
+        "alim_ssssgrp_code": "041001",
+        "alim_ssssgrp_nom_fr": "oeufs cuits",
+        "alim_ssssgrp_nom_eng": "eggs, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:22013",
+      "sourceFoodId": "22013",
+      "names": {
+        "fr": "Oeuf, en poudre",
+        "en": "Egg, powder"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0410",
+        "alim_ssssgrp_code": "041003"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0410",
+        "alim_ssgrp_nom_fr": "oeufs",
+        "alim_ssgrp_nom_eng": "eggs",
+        "alim_ssssgrp_code": "041003",
+        "alim_ssssgrp_nom_fr": "omelettes et autres ovoproduits",
+        "alim_ssssgrp_nom_eng": "omelettes and other egg products"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:19023",
+      "sourceFoodId": "19023",
+      "names": {
+        "fr": "Lait entier, UHT",
+        "en": "Milk, whole, UHT"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "05",
+        "alim_ssgrp_code": "0501",
+        "alim_ssssgrp_code": "050101"
+      },
+      "classification": {
+        "alim_grp_code": "05",
+        "alim_grp_nom_fr": "produits laitiers",
+        "alim_grp_nom_eng": "milk and milk products",
+        "alim_ssgrp_code": "0501",
+        "alim_ssgrp_nom_fr": "laits",
+        "alim_ssgrp_nom_eng": "milk",
+        "alim_ssssgrp_code": "050101",
+        "alim_ssssgrp_nom_fr": "laits de vaches liquides (non concentrés)",
+        "alim_ssssgrp_nom_eng": "milk from cow, liquid (not concentrated)"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:19024",
+      "sourceFoodId": "19024",
+      "names": {
+        "fr": "Lait entier, pasteurisé",
+        "en": "Milk, whole, pasteurised"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "05",
+        "alim_ssgrp_code": "0501",
+        "alim_ssssgrp_code": "050101"
+      },
+      "classification": {
+        "alim_grp_code": "05",
+        "alim_grp_nom_fr": "produits laitiers",
+        "alim_grp_nom_eng": "milk and milk products",
+        "alim_ssgrp_code": "0501",
+        "alim_ssgrp_nom_fr": "laits",
+        "alim_ssgrp_nom_eng": "milk",
+        "alim_ssssgrp_code": "050101",
+        "alim_ssssgrp_nom_fr": "laits de vaches liquides (non concentrés)",
+        "alim_ssssgrp_nom_eng": "milk from cow, liquid (not concentrated)"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:26024",
+      "sourceFoodId": "26024",
+      "names": {
+        "fr": "Morue, salée, bouillie/cuite à l'eau",
+        "en": "Cod, salted, boiled/cooked in water"
+      },
+      "scientificName": "Gadus morhua morhua (Linnaeus, 1758)",
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0405",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0405",
+        "alim_ssgrp_nom_fr": "poissons cuits",
+        "alim_ssgrp_nom_eng": "fish, cooked",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:26043",
+      "sourceFoodId": "26043",
+      "names": {
+        "fr": "Cabillaud, cru",
+        "en": "Cod, raw"
+      },
+      "scientificName": "Gadus morhua morhua (Linnaeus, 1758)",
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0406",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0406",
+        "alim_ssgrp_nom_fr": "poissons crus",
+        "alim_ssgrp_nom_eng": "fish, raw",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:17270",
+      "sourceFoodId": "17270",
+      "names": {
+        "fr": "Huile d'olive vierge extra",
+        "en": "Olive oil, extra virgin"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "09",
+        "alim_ssgrp_code": "0902",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "09",
+        "alim_grp_nom_fr": "matières grasses",
+        "alim_grp_nom_eng": "fats and oils",
+        "alim_ssgrp_code": "0902",
+        "alim_ssgrp_nom_fr": "huiles et graisses végétales",
+        "alim_ssgrp_nom_eng": "vegetable oils",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20359",
+      "sourceFoodId": "20359",
+      "names": {
+        "fr": "Lentille, sèche (aliment moyen)",
+        "en": "Lentil, dried (average)"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0203",
+        "alim_ssssgrp_code": "020303"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0203",
+        "alim_ssgrp_nom_fr": "légumineuses",
+        "alim_ssgrp_nom_eng": "legumes",
+        "alim_ssssgrp_code": "020303",
+        "alim_ssssgrp_nom_fr": "légumineuses sèches",
+        "alim_ssssgrp_nom_eng": "legumes, dried"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20360",
+      "sourceFoodId": "20360",
+      "names": {
+        "fr": "Lentille, bouillie/cuite à l'eau (aliment moyen)",
+        "en": "Lentil, boiled/cooked in water (average)"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0203",
+        "alim_ssssgrp_code": "020301"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0203",
+        "alim_ssgrp_nom_fr": "légumineuses",
+        "alim_ssgrp_nom_eng": "legumes",
+        "alim_ssssgrp_code": "020301",
+        "alim_ssssgrp_nom_fr": "légumineuses cuites",
+        "alim_ssssgrp_nom_eng": "legumes, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20507",
+      "sourceFoodId": "20507",
+      "names": {
+        "fr": "Pois chiche, bouilli/cuit à l'eau",
+        "en": "Chick pea, boiled/cooked in water"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0203",
+        "alim_ssssgrp_code": "020301"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0203",
+        "alim_ssgrp_nom_fr": "légumineuses",
+        "alim_ssgrp_nom_eng": "legumes",
+        "alim_ssssgrp_code": "020301",
+        "alim_ssssgrp_nom_fr": "légumineuses cuites",
+        "alim_ssssgrp_nom_eng": "legumes, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20516",
+      "sourceFoodId": "20516",
+      "names": {
+        "fr": "Pois chiche, sec",
+        "en": "Chick pea, dried"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0203",
+        "alim_ssssgrp_code": "020303"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0203",
+        "alim_ssgrp_nom_fr": "légumineuses",
+        "alim_ssgrp_nom_eng": "legumes",
+        "alim_ssssgrp_code": "020303",
+        "alim_ssssgrp_nom_fr": "légumineuses sèches",
+        "alim_ssssgrp_nom_eng": "legumes, dried"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20532",
+      "sourceFoodId": "20532",
+      "names": {
+        "fr": "Pois chiche, appertisé, égoutté",
+        "en": "Chick pea, canned, drained"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0203",
+        "alim_ssssgrp_code": "020301"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0203",
+        "alim_ssgrp_nom_fr": "légumineuses",
+        "alim_ssgrp_nom_eng": "legumes",
+        "alim_ssssgrp_code": "020301",
+        "alim_ssssgrp_nom_fr": "légumineuses cuites",
+        "alim_ssssgrp_nom_eng": "legumes, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:36017",
+      "sourceFoodId": "36017",
+      "names": {
+        "fr": "Poulet, filet sans peau cru",
+        "en": "Chicken, breast, without skin, raw"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0402",
+        "alim_ssssgrp_code": "040203"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0402",
+        "alim_ssgrp_nom_fr": "viandes crues",
+        "alim_ssgrp_nom_eng": "raw meat",
+        "alim_ssssgrp_code": "040203",
+        "alim_ssssgrp_nom_fr": "poulet",
+        "alim_ssssgrp_nom_eng": "poultry"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:36018",
+      "sourceFoodId": "36018",
+      "names": {
+        "fr": "Poulet, filet sans peau grillé/poêlé",
+        "en": "Chicken, breast, without skin, grilled/pan-fried"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0401",
+        "alim_ssssgrp_code": "040103"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0401",
+        "alim_ssgrp_nom_fr": "viandes cuites",
+        "alim_ssgrp_nom_eng": "cooked meat",
+        "alim_ssssgrp_code": "040103",
+        "alim_ssssgrp_nom_fr": "poulet",
+        "alim_ssssgrp_nom_eng": "poultry"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:36029",
+      "sourceFoodId": "36029",
+      "names": {
+        "fr": "Poulet, poitrine, viande et peau crues",
+        "en": "Chicken, breast, meat and skin, raw"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0402",
+        "alim_ssssgrp_code": "040203"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0402",
+        "alim_ssgrp_nom_fr": "viandes crues",
+        "alim_ssgrp_nom_eng": "raw meat",
+        "alim_ssssgrp_code": "040203",
+        "alim_ssssgrp_nom_fr": "poulet",
+        "alim_ssssgrp_nom_eng": "poultry"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:13005",
+      "sourceFoodId": "13005",
+      "names": {
+        "fr": "Banane, chair sans peau, crue",
+        "en": "Banana, flesh without skin, raw"
+      },
+      "scientificName": "Musa spp.",
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0204",
+        "alim_ssssgrp_code": "020401"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0204",
+        "alim_ssgrp_nom_fr": "fruits",
+        "alim_ssgrp_nom_eng": "fruits",
+        "alim_ssssgrp_code": "020401",
+        "alim_ssssgrp_nom_fr": "fruits crus",
+        "alim_ssssgrp_nom_eng": "fresh fruits"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:13089",
+      "sourceFoodId": "13089",
+      "names": {
+        "fr": "Banane, chair sans peau, sèche",
+        "en": "Banana, flesh without skin, dried"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0204",
+        "alim_ssssgrp_code": "020404"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0204",
+        "alim_ssgrp_nom_fr": "fruits",
+        "alim_ssgrp_nom_eng": "fruits",
+        "alim_ssssgrp_code": "020404",
+        "alim_ssssgrp_nom_fr": "fruits séchés",
+        "alim_ssssgrp_nom_eng": "dried fruits"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:9313",
+      "sourceFoodId": "9313",
+      "names": {
+        "fr": "Flocons d'avoine bouillis/cuits à l'eau",
+        "en": "Oat flakes, boiled/cooked in water"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "03",
+        "alim_ssgrp_code": "0301",
+        "alim_ssssgrp_code": "030101"
+      },
+      "classification": {
+        "alim_grp_code": "03",
+        "alim_grp_nom_fr": "produits céréaliers",
+        "alim_grp_nom_eng": "cereal products",
+        "alim_ssgrp_code": "0301",
+        "alim_ssgrp_nom_fr": "pâtes, riz et céréales",
+        "alim_ssgrp_nom_eng": "pasta, rice and grains",
+        "alim_ssssgrp_code": "030101",
+        "alim_ssssgrp_nom_fr": "pâtes, riz et céréales cuits",
+        "alim_ssssgrp_nom_eng": "pasta, rice and grains, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:32140",
+      "sourceFoodId": "32140",
+      "names": {
+        "fr": "Flocons d'avoine",
+        "en": "Oat flakes"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "07",
+        "alim_ssgrp_code": "0707",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "07",
+        "alim_grp_nom_fr": "produits sucrés",
+        "alim_grp_nom_eng": "sugar and confectionery",
+        "alim_ssgrp_code": "0707",
+        "alim_ssgrp_nom_fr": "céréales de petit-déjeuner",
+        "alim_ssgrp_nom_eng": "breakfast cereals",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:4003",
+      "sourceFoodId": "4003",
+      "names": {
+        "fr": "Pomme de terre, bouillie/cuite à l'eau",
+        "en": "Potato, boiled/cooked in water"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0202",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0202",
+        "alim_ssgrp_nom_fr": "pommes de terre et autres tubercules",
+        "alim_ssgrp_nom_eng": "potatoes and other tubers",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:4008",
+      "sourceFoodId": "4008",
+      "names": {
+        "fr": "Pomme de terre, sans peau, crue",
+        "en": "Potato, peeled, raw"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0202",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0202",
+        "alim_ssgrp_nom_fr": "pommes de terre et autres tubercules",
+        "alim_ssgrp_nom_eng": "potatoes and other tubers",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20048",
+      "sourceFoodId": "20048",
+      "names": {
+        "fr": "Tomate, pelée, appertisée, égouttée",
+        "en": "Tomato, peeled, canned, drained"
+      },
+      "scientificName": "Solanum lycopersicum L.",
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0201",
+        "alim_ssssgrp_code": "020102"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0201",
+        "alim_ssgrp_nom_fr": "légumes",
+        "alim_ssgrp_nom_eng": "vegetables",
+        "alim_ssssgrp_code": "020102",
+        "alim_ssssgrp_nom_fr": "légumes cuits",
+        "alim_ssssgrp_nom_eng": "vegetables, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:20137",
+      "sourceFoodId": "20137",
+      "names": {
+        "fr": "Tomate, pelée, appertisée, au jus, non égouttée",
+        "en": "Tomato, peeled, canned, in juice, solids and liquids"
+      },
+      "scientificName": "Solanum lycopersicum L.",
+      "classificationCodes": {
+        "alim_grp_code": "02",
+        "alim_ssgrp_code": "0201",
+        "alim_ssssgrp_code": "020102"
+      },
+      "classification": {
+        "alim_grp_code": "02",
+        "alim_grp_nom_fr": "fruits, légumes, légumineuses et oléagineux",
+        "alim_grp_nom_eng": "fruits, vegetables, legumes and nuts",
+        "alim_ssgrp_code": "0201",
+        "alim_ssgrp_nom_fr": "légumes",
+        "alim_ssgrp_nom_eng": "vegetables",
+        "alim_ssssgrp_code": "020102",
+        "alim_ssssgrp_nom_fr": "légumes cuits",
+        "alim_ssssgrp_nom_eng": "vegetables, cooked"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:26034",
+      "sourceFoodId": "26034",
+      "names": {
+        "fr": "Sardine, à l'huile, appertisée, égouttée",
+        "en": "European pilchard or sardine, in oil, canned, drained"
+      },
+      "scientificName": "Sardina pichardus (Walbaum, 1792)",
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0409",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0409",
+        "alim_ssgrp_nom_fr": "produits à base de poissons et produits de la mer",
+        "alim_ssgrp_nom_eng": "fish products",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:26040",
+      "sourceFoodId": "26040",
+      "names": {
+        "fr": "Sardine, à l'huile d'olive, appertisée, égouttée",
+        "en": "European pilchard or sardine, in olive oil, canned, drained"
+      },
+      "scientificName": "Sardina pichardus (Walbaum, 1792)",
+      "classificationCodes": {
+        "alim_grp_code": "04",
+        "alim_ssgrp_code": "0409",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": {
+        "alim_grp_code": "04",
+        "alim_grp_nom_fr": "viandes, oeufs, poissons",
+        "alim_grp_nom_eng": "meat, egg and fish",
+        "alim_ssgrp_code": "0409",
+        "alim_ssgrp_nom_fr": "produits à base de poissons et produits de la mer",
+        "alim_ssgrp_nom_eng": "fish products",
+        "alim_ssssgrp_code": "000000",
+        "alim_ssssgrp_nom_fr": "-",
+        "alim_ssssgrp_nom_eng": "-"
+      },
+      "classificationStatus": "matched",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    },
+    {
+      "sourceKey": "ciqual:2025:24999",
+      "sourceFoodId": "24999",
+      "names": {
+        "fr": "Dessert (aliment moyen)",
+        "en": "Dessert (average)"
+      },
+      "scientificName": null,
+      "classificationCodes": {
+        "alim_grp_code": "00",
+        "alim_ssgrp_code": "0000",
+        "alim_ssssgrp_code": "000000"
+      },
+      "classification": null,
+      "classificationStatus": "not_listed_in_group_file",
+      "preparationStructured": null,
+      "preparationNote": "Preparation/variant is embedded in the original names. No separate preparation field was supplied.",
+      "portugueseName": null,
+      "publicationStatus": "research_only"
+    }
+  ]
+}

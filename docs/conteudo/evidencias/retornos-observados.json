@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 1,
+  "scope": "Observed research calls; no network; raw data remains local where excluded from Git.",
+  "httpHeaders": "Configured request headers are retained where recorded; otherwise see collector version and integration dossier. Not a network packet capture.",
+  "records": [
+    {
+      "evidenceFile": "docs/planejamento/evidencias/free-exercise-db.json",
+      "artifactSha256": "f57e73a42362126fd07d8145f69c2750239736ae58e4735d01c5ee5537ad4536",
+      "request": {
+        "method": "GET",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:38Z",
+      "httpStatus": 200,
+      "responseBytes": 1005327,
+      "originalResponseSha256": "5bb747e3fc658f095a60dcbf6d53c96627acdcc6ffb6fffde86f7e26995d40bf",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "array",
+      "observedItems": 876,
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/free-exercise-db.sandbox-denied.json",
+      "artifactSha256": "78944bc7728c150da6f647c76fe69c11bfe297844ae0efe5b183d0c303c48555",
+      "request": {
+        "method": "GET",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:42Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/free-exercise-revision.json",
+      "artifactSha256": "ca0a4f9177eac21fded433c7ae13b695a3749ba1587c5ea4d0dfee968c0307ee",
+      "request": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/yuhonas/free-exercise-db/commits?path=dist/exercises.json&per_page=1",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:28:02Z",
+      "httpStatus": 200,
+      "responseBytes": 4535,
+      "originalResponseSha256": "4aa182c628015fae3d0ebc5bc401f04e09c019a61f5f301fdbd663d736cd2942",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "array",
+      "observedItems": 1,
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/off-portugal-20.json",
+      "artifactSha256": "cec097bc6f1c0760bf58834fbaffc19ad41c49961e1e2e88b8f58e755a8cc518",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/search?countries_tags=en%3Aportugal&page_size=20&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang&sort_by=unique_scans_n",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:38Z",
+      "httpStatus": 503,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "Service Temporarily Unavailable"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/off-portugal-20.sandbox-denied.json",
+      "artifactSha256": "d81dc19172734693b5658edbaee71bb75ad47ee970377e6599c99450a4dafaf6",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/search?countries_tags=en%3Aportugal&page_size=20&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang&sort_by=unique_scans_n",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:42Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/off-portugal-v2-20.json",
+      "artifactSha256": "6f5fcdffde07a2efa62f14c8173245b9907c871177243ea79f6db202d58654ac",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&page_size=20&fields=code,product_name,product_name_pt,brands,nutriments,serving_size,nutrition_data_per,countries_tags,last_modified_t,lang&sort_by=unique_scans_n",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:25:48Z",
+      "httpStatus": 503,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "Service Temporarily Unavailable"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-egg-detail.json",
+      "artifactSha256": "0f7ab03f46157007aedf3a37b9f9fc987e763d95d361b3ac5869e6d0dd405f2d",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/food/748967?api_key=DEMO_KEY",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:28:00Z",
+      "httpStatus": 200,
+      "responseBytes": 845124,
+      "originalResponseSha256": "995637effcc61827fe5b59046b0ba2073f27614c9d02170d9958d08a4ebef24b",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "fdcId",
+        "description",
+        "publicationDate",
+        "foodNutrients",
+        "foodPortions",
+        "dataType",
+        "foodClass",
+        "inputFoods",
+        "foodComponents",
+        "foodAttributes",
+        "nutrientConversionFactors",
+        "ndbNumber",
+        "isHistoricalReference",
+        "foodCategory"
+      ],
+      "observedArraySizes": {
+        "foodPortions": 2
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-egg.json",
+      "artifactSha256": "063339937a12a52021e7d18e9913365634ffffb83f832b458e85637242064c17",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=egg&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:43Z",
+      "httpStatus": 200,
+      "responseBytes": 114588,
+      "originalResponseSha256": "cbd82104b90f62e60e0aa3d45c4bbee1cb5231d8a424c176bff284fba728d125",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "totalHits",
+        "currentPage",
+        "totalPages",
+        "pageList",
+        "foodSearchCriteria",
+        "foods",
+        "aggregations"
+      ],
+      "observedArraySizes": {
+        "foods": 5
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-egg.sandbox-denied.json",
+      "artifactSha256": "60143c07284600355bace96a22650e2fb093b68561d918895136faa1bf4a51f3",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=egg&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:43Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-milk.json",
+      "artifactSha256": "bca90bb78a2a3da05fd1b82b6e9e3eb8a020a6fbdf68826f0a3c5a1028f634f1",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=milk&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:41Z",
+      "httpStatus": 200,
+      "responseBytes": 149485,
+      "originalResponseSha256": "960b492dcd4f6f94098ea44b71e68c2ddba213dc93929389528ce92b777cde85",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "totalHits",
+        "currentPage",
+        "totalPages",
+        "pageList",
+        "foodSearchCriteria",
+        "foods",
+        "aggregations"
+      ],
+      "observedArraySizes": {
+        "foods": 5
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-milk.sandbox-denied.json",
+      "artifactSha256": "8cd5456c775803be5dad24188533c11e7d9e6c324c138de257a82ba6ebe339cd",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=milk&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:43Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-rice.json",
+      "artifactSha256": "ff6024e4872c7ef4d2627bd1eb86b679055b4d7582634f356c6c14fc04dd2e70",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=rice&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:40Z",
+      "httpStatus": 200,
+      "responseBytes": 85384,
+      "originalResponseSha256": "e6108f7ed9dc050d8e00e2074d74ad617fbb73f4179af70b90017dbcc4c7a17a",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "totalHits",
+        "currentPage",
+        "totalPages",
+        "pageList",
+        "foodSearchCriteria",
+        "foods",
+        "aggregations"
+      ],
+      "observedArraySizes": {
+        "foods": 5
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/usda-rice.sandbox-denied.json",
+      "artifactSha256": "31825b3889b9805dad98bf5ed4015885d95d4a9dae743dfacc8e65863a640ffc",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=rice&pageSize=5&dataType=Foundation%2CSR+Legacy",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:42Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/wger-25.json",
+      "artifactSha256": "5d7e89c6bcd44fbaf68cfe6ecdb7ebe3fb1e81e0c4aae1bf6bbc0f7a35a4e033",
+      "request": {
+        "method": "GET",
+        "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:24:38Z",
+      "httpStatus": 200,
+      "responseBytes": 197784,
+      "originalResponseSha256": "9cccaca2e6eb0fbbe2cfb87198cc9e45a19b86cf1a9e377a3f541bef8cdf9f17",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "count",
+        "next",
+        "previous",
+        "results"
+      ],
+      "observedArraySizes": {
+        "results": 25
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/wger-25.sandbox-denied.json",
+      "artifactSha256": "58db6f6b4b908276beada83baadf04b3d13a2f5f9dfcfc9ac61f98c701ac1d87",
+      "request": {
+        "method": "GET",
+        "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:23:42Z",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/planejamento/evidencias/wger-languages.json",
+      "artifactSha256": "59b760d2466e56edae0570b8338470ba2726ede2aa5b4a506b7bbc1ce227f0c0",
+      "request": {
+        "method": "GET",
+        "url": "https://wger.de/api/v2/language/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-22T03:25:47Z",
+      "httpStatus": 200,
+      "responseBytes": 1659,
+      "originalResponseSha256": "ee94d043b0bee9f48653cca368f385d04a0ddb3500758dec47bd4da65a6c0541",
+      "bodyStorage": "data property of evidenceFile; this wrapper was created by the research collector",
+      "bodyKind": "object",
+      "observedRootKeys": [
+        "count",
+        "next",
+        "previous",
+        "results"
+      ],
+      "observedArraySizes": {
+        "results": 20
+      },
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/n01-alimentos/ciqual-alimentos.evidencia.json",
+      "artifactSha256": "c2fde9aeb8de20406860271708798f306777c23c932bd00db120f0c51a95f170",
+      "request": {
+        "method": "GET",
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666252",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/xml,text/xml",
+          "User-Agent": "TrainForgeResearch/0.4 (food identity research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-26T14:28:11.6552787Z",
+      "httpStatus": 200,
+      "responseBytes": 1581031,
+      "originalResponseSha256": "e0b1de25b3039028205e9d54a96892e403e1b313c2efeb41180fabe132627478",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/n01-alimentos/raw/ciqual-alimentos.xml",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/n01-alimentos/ciqual-grupos.evidencia.json",
+      "artifactSha256": "3ddb4937713cf4031cfe474d10c8bf303f80952a86df0bb1579dcd18aeb4dcdc",
+      "request": {
+        "method": "GET",
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666250",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/xml,text/xml",
+          "User-Agent": "TrainForgeResearch/0.4 (food identity research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-26T14:28:15.2137036Z",
+      "httpStatus": 200,
+      "responseBytes": 80421,
+      "originalResponseSha256": "e216928be1001aed15ba1b120405b70a98145da2a1a76026d6e33542bd5e39dc",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/n01-alimentos/raw/ciqual-grupos.xml",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhlbi-walking.evidencia.json",
+      "artifactSha256": "a3847d546db3c25a465d4551694dccf409daf7f37d76b0f4c74e2bcc444fec49",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/healthdisp/pdf/tipsheets/Sample-Walking-Program.pdf",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:42.145739+00:00",
+      "httpStatus": 404,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhs-c25k-table.evidencia.json",
+      "artifactSha256": "12d8f30866a6684099c583ace0eb9fba2b9932abddd60637cefc9ab33c1fc664",
+      "request": {
+        "method": "GET",
+        "url": "https://digitalcampaignsstorage.blob.core.windows.net/campaigns-cms-prod/documents/c25k_printable_plan.pdf",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+      "httpStatus": 200,
+      "responseBytes": 157157,
+      "originalResponseSha256": "c7dffd6cf49949eb1874b6989a33c66c9ce73dcd0dd1948512b33a2886da7957",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/network/raw/nhs-c25k-table.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhs-c25k.evidencia.json",
+      "artifactSha256": "8e5fbe43dc8c3280d2d0715d72c3bee1123c99765042bd7bb597728cfa4d9f7d",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+      "httpStatus": 200,
+      "responseBytes": 124552,
+      "originalResponseSha256": "79562655a75dfd914ff99aea3bf2e1ba16d345bf1468264ee42d235ccabc9760",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/network/raw/nhs-c25k.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhs-exclusions.evidencia.json",
+      "artifactSha256": "03a929e022980c32fbc539b8b88ecb8fe6c1610189576533ce6fc6da2c1ac3df",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:41.452274+00:00",
+      "httpStatus": 200,
+      "responseBytes": 22278,
+      "originalResponseSha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/network/raw/nhs-exclusions.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhs-strength.evidencia.json",
+      "artifactSha256": "5cc14b83cda515a0af4e60a6bd6f2a4c64ba7c767d8dd90e4a79a2c72d35d288",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+      "httpStatus": 200,
+      "responseBytes": 49557,
+      "originalResponseSha256": "e67e95807890620cf46b93cf98912f823bf592f21be7cbf16ef90413ed01d8ba",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/network/raw/nhs-strength.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/nhs-terms.evidencia.json",
+      "artifactSha256": "ca4e2b108a6da56b0312e7f55270867b7af0bcc83e6a1d693ec3680b8cda6963",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:41.216446+00:00",
+      "httpStatus": 200,
+      "responseBytes": 64164,
+      "originalResponseSha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-26/network/raw/nhs-terms.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/network/off-portugal-30.evidencia.json",
+      "artifactSha256": "ce0a6b6373b75b6f717944427a4181ca7c900bfc068c66137d21179cb7e367b1",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&page_size=30&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cserving_quantity%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang%2Cimage_front_url%2Cimage_nutrition_url%2Cingredients_text%2Callergens_tags&sort_by=unique_scans_n",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:41.712712+00:00",
+      "httpStatus": 503,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhlbi-walking.evidencia.json",
+      "artifactSha256": "38891e1e5d9bdc3b41da7862021198041b7c038f798bf377535e31fa7976b078",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/healthdisp/pdf/tipsheets/Sample-Walking-Program.pdf",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.667502+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhs-c25k-table.evidencia.json",
+      "artifactSha256": "86e94560d99aa9c375b6edc9fba8940dd86a8bf603d9eec76e5df1d6d02c7faa",
+      "request": {
+        "method": "GET",
+        "url": "https://digitalcampaignsstorage.blob.core.windows.net/campaigns-cms-prod/documents/c25k_printable_plan.pdf",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.568080+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhs-c25k.evidencia.json",
+      "artifactSha256": "2f4b19258630685e1e3f3a5dee8466f8a7df2e5d312d7f9ecbfef6a79cbdee63",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.568080+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhs-exclusions.evidencia.json",
+      "artifactSha256": "83cfed2495a2eeef8ea1c4177f961c2e75a4f9e1515aec16582b4661a098ce87",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.650809+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhs-strength.evidencia.json",
+      "artifactSha256": "d7ecc2782188e1d7ecca09a66cb7ab45802bafe263410f3d53ee0b51413b5e08",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.574726+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/nhs-terms.evidencia.json",
+      "artifactSha256": "cf37d687b56d729abb09bfcba06d54fae504ce3c8d5ec3555c6b6e9fe5aae4e9",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.650809+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-26/off-portugal-30.evidencia.json",
+      "artifactSha256": "8fd48dbcef9b5273456bc23fe5a0101fce9ecadc873d4d4316ec9b51493f8551",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&page_size=30&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cserving_quantity%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang%2Cimage_front_url%2Cimage_nutrition_url%2Cingredients_text%2Callergens_tags&sort_by=unique_scans_n",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-26T03:16:02.650809+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/ciqual-2025-metadata.evidencia.json",
+      "artifactSha256": "0e17991b1051f990885c6cda4bc773cfff8f24126cee7c09558ce34c8c6b214d",
+      "request": {
+        "method": "GET",
+        "url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/RDMHWY",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+      "httpStatus": 200,
+      "responseBytes": 17726,
+      "originalResponseSha256": "1ed52f01d544bd7f6be360c71110afdb5b2422d5d4638bff775649d057ccd66b",
+      "bodyFile": "docs/conteudo/evidencias/ciqual-2025-metadata.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/ciqual-2025-windows.evidencia.json",
+      "artifactSha256": "682b132aa64c0ac6a85e6d50c577454205a26170703b19a485f2d5adb4267c53",
+      "request": {
+        "method": "GET",
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666260",
+        "methodBasis": "Invoke-WebRequest GET client record"
+      },
+      "collectedAtUtc": "2026-09-23T11:24:32.6681836Z",
+      "httpStatus": 200,
+      "responseBytes": 1541998,
+      "originalResponseSha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0",
+      "bodyFile": "docs/conteudo/evidencias/ciqual-2025.xlsx",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/ciqual-2025.evidencia.json",
+      "artifactSha256": "76a33f7328038911c5c2b5df47f30d871900dd970edae1f545477ae041e32409",
+      "request": {
+        "method": "GET",
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666260",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:21:17.178645+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/cofid-2021.evidencia.json",
+      "artifactSha256": "fabc19492cb65ed666c2f43e6ad6b5e6eba518647d60f7d44c4e768ccd63562c",
+      "request": {
+        "method": "GET",
+        "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+      "httpStatus": 200,
+      "responseBytes": 4629542,
+      "originalResponseSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "bodyFile": "docs/conteudo/evidencias/cofid-2021.xlsx",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/compendium-bicycling.evidencia.json",
+      "artifactSha256": "3649dfeffea1d45ec0877082ea314aaebf9260b6db63df4167bf420c4819d0ad",
+      "request": {
+        "method": "GET",
+        "url": "https://pacompendium.com/bicycling/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.890538+00:00",
+      "httpStatus": 200,
+      "responseBytes": 66912,
+      "originalResponseSha256": "1199bdb682ac75311bc9d6a1ade18d7e1b45dcd8fa0f36c2246184c8550efb9b",
+      "bodyStorage": "HTML was reduced by the collector; original HTML is not saved",
+      "observedItems": 4,
+      "locallyExtractedFields": [
+        "activityCode",
+        "metOriginal",
+        "descriptionOriginal"
+      ],
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/compendium-conditioning.evidencia.json",
+      "artifactSha256": "e8ef661ac64cdcbc3a6ab40fe7779073e1666d5dc1abd019fb89f77e2edca38f",
+      "request": {
+        "method": "GET",
+        "url": "https://pacompendium.com/conditioning-exercise/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.957820+00:00",
+      "httpStatus": 200,
+      "responseBytes": 71026,
+      "originalResponseSha256": "4ec2a6b985be73dec3fe246dbec33fa9a7da7014961c46b23c43e4cc15aef00f",
+      "bodyStorage": "HTML was reduced by the collector; original HTML is not saved",
+      "observedItems": 4,
+      "locallyExtractedFields": [
+        "activityCode",
+        "metOriginal",
+        "descriptionOriginal"
+      ],
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/compendium-running.evidencia.json",
+      "artifactSha256": "c68bdc8896d01ea2831e2c29ca142c4e0c339fd4ba90e1f1bf466c26cb872469",
+      "request": {
+        "method": "GET",
+        "url": "https://pacompendium.com/running/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.658780+00:00",
+      "httpStatus": 200,
+      "responseBytes": 68593,
+      "originalResponseSha256": "8872bee0dddd098abf3ba67ded6a528a27f3a85df893227a757b5b21ae164bcb",
+      "bodyStorage": "HTML was reduced by the collector; original HTML is not saved",
+      "observedItems": 4,
+      "locallyExtractedFields": [
+        "activityCode",
+        "metOriginal",
+        "descriptionOriginal"
+      ],
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/compendium-walking.evidencia.json",
+      "artifactSha256": "543e77460366086d13125aec310ade7545416055bfe286a42035bbf38ce45d79",
+      "request": {
+        "method": "GET",
+        "url": "https://pacompendium.com/walking/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.791769+00:00",
+      "httpStatus": 200,
+      "responseBytes": 71601,
+      "originalResponseSha256": "722aee8d10ffea2fabb8b2e25196a7ddda4f8684b5220a0662c303781efbdb7c",
+      "bodyStorage": "HTML was reduced by the collector; original HTML is not saved",
+      "observedItems": 4,
+      "locallyExtractedFields": [
+        "activityCode",
+        "metOriginal",
+        "descriptionOriginal"
+      ],
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/compendium-water.evidencia.json",
+      "artifactSha256": "52b5b91a9f94f0e9c6155d5213c10e38eca92cf04856c94b39549f887fb38e3f",
+      "request": {
+        "method": "GET",
+        "url": "https://pacompendium.com/water-activities/",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:19.050541+00:00",
+      "httpStatus": 200,
+      "responseBytes": 70369,
+      "originalResponseSha256": "555e221034216d302912a4e27a9ae985f07ba3abfce5a4d85bb65782a6e2419d",
+      "bodyStorage": "HTML was reduced by the collector; original HTML is not saved",
+      "observedItems": 4,
+      "locallyExtractedFields": [
+        "activityCode",
+        "metOriginal",
+        "descriptionOriginal"
+      ],
+      "originalBodyHashRecheckable": false
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/fineli-food-11060.evidencia.json",
+      "artifactSha256": "f4a80600084ee4cda4c528b002e5e0f4259bda151698ff5412dc2bba44a02d26",
+      "request": {
+        "method": "GET",
+        "url": "https://fineli.fi/fineli/api/v1/foods/11060",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:18.527990+00:00",
+      "httpStatus": 403,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/wger-offset-300.evidencia.json",
+      "artifactSha256": "4ea94180a3d9dbe00dce9bededa494dcf510f82f67c4d3613e3beeffb892ea5e",
+      "request": {
+        "method": "GET",
+        "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:19.134235+00:00",
+      "httpStatus": 200,
+      "responseBytes": 151447,
+      "originalResponseSha256": "1724b934691e7ea0aec2f9bd9ce21b281489618edaa2c9bfa704962f7390ec01",
+      "bodyFile": "docs/conteudo/evidencias/wger-offset-300.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/wger-offset-600.evidencia.json",
+      "artifactSha256": "6767c0e8dd0667ff101b453461581b0ea0342129e280a18b7b8aa633552ee3b0",
+      "request": {
+        "method": "GET",
+        "url": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "methodBasis": "record"
+      },
+      "collectedAtUtc": "2026-09-23T11:20:19.956999+00:00",
+      "httpStatus": 200,
+      "responseBytes": 140943,
+      "originalResponseSha256": "9260581c43804fb80fbd08a56407ac48b624e2ab95ae7ce7f7705df072d903ff",
+      "bodyFile": "docs/conteudo/evidencias/wger-offset-600.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    }
+  ]
+}

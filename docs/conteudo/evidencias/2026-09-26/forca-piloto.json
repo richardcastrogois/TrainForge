@@ -1,0 +1,114 @@
+{
+  "kind": "existing_human_introductory_strength_routine_research_pilot",
+  "sourceId": "PR05",
+  "source": {
+    "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+    "collectedAtUtc": "2026-09-26T03:16:40.289212+00:00",
+    "sha256": "e67e95807890620cf46b93cf98912f823bf592f21be7cbf16ef90413ed01d8ba"
+  },
+  "method": "Published sequence and quantities transcribed and guarded against cached page text; original instructions retained in local HTML. Missing sets/rest/duration remain null.",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+  "releaseStatus": "research_only_not_release_approved",
+  "minimumDaysPerWeek": 2,
+  "programWeeks": null,
+  "sessionMinutes": null,
+  "exercises": [
+    {
+      "sourceOrder": 1,
+      "sourceName": "Sit-to-stand",
+      "ptDraftKey": "sentar_e_levantar",
+      "sets": null,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": null,
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "f282fdcfaf2f4a018feeee959e311ef3a33456b9e993e2c7dce0466e4997866c"
+    },
+    {
+      "sourceOrder": 2,
+      "sourceName": "Mini-squats",
+      "ptDraftKey": "mini_agachamentos",
+      "sets": null,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": null,
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "5b7f37352af3d6c13573208a112080dc2078fec80dd9f0c86cf11557ee80b32b"
+    },
+    {
+      "sourceOrder": 3,
+      "sourceName": "Calf raises",
+      "ptDraftKey": "elevacao_dos_calcanhares",
+      "sets": null,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": null,
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 2,
+      "sourceTextSha256": "6101f77f1edb868e77b579df90be0484ad8069bae6582cbcc1d7013f2cbf6e69"
+    },
+    {
+      "sourceOrder": 4,
+      "sourceName": "Sideways leg lift",
+      "ptDraftKey": "elevacao_lateral_da_perna",
+      "sets": null,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": "each_leg",
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "ffeadfc53b97b9e234073d20eca1da00b99fcbe7b803f859deb6b8fce6e31f05"
+    },
+    {
+      "sourceOrder": 5,
+      "sourceName": "Leg extension",
+      "ptDraftKey": "extensao_da_perna",
+      "sets": null,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": "each_leg",
+      "holdSecondsMaximum": 5,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "4ecead6c36c698e841279565b63edfbabaad75c665ff528e36feba956fc657fa"
+    },
+    {
+      "sourceOrder": 6,
+      "sourceName": "Wall press-up",
+      "ptDraftKey": "flexao_na_parede",
+      "sets": 3,
+      "repetitionsMin": 5,
+      "repetitionsMax": 10,
+      "perSide": null,
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "82b2815c92256ef52e6df2acd9820985f69221d192dddba19c8c458f726b1372"
+    },
+    {
+      "sourceOrder": 7,
+      "sourceName": "Biceps curls",
+      "ptDraftKey": "flexao_dos_cotovelos",
+      "sets": 3,
+      "repetitionsMin": 5,
+      "repetitionsMax": 5,
+      "perSide": "each_arm",
+      "holdSecondsMaximum": null,
+      "restSeconds": null,
+      "instructionStepsInSource": 3,
+      "sourceTextSha256": "a35a0bdbb08b8d247550bee7e728d7a66fa50bc68e15b2f4e54441f229128001"
+    }
+  ],
+  "publicationGaps": [
+    "Portuguese instruction and applicability review",
+    "No periodized gym program or diagnosis-based selection established",
+    "No photo or video rights released",
+    "App integration and use tests"
+  ]
+}

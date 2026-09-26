@@ -1,8 +1,98 @@
 # Etapa 01 — Conteúdo, fontes e viabilidade
 
-**Atualizado em 24/09/2026. Etapa aberta.** As rodadas de 22–23/09 estão concluídas como pesquisa, mas não homologaram a oferta integral. A revisão atual compara a evidência com a [visão completa R01–R18](README.md): orientação do iniciante ao experiente, múltiplas práticas, alimentação integrada, registos manuais/conectados/por imagem e acompanhamento didático.
+**Atualizado em 26/09/2026. Etapa aberta, com pilotos conferidos.** As rodadas de pesquisa não homologaram a oferta integral. A revisão atual compara a evidência com a [visão completa R01–R18](README.md): orientação do iniciante ao experiente, múltiplas práticas, alimentação integrada, registos manuais/conectados/por imagem e acompanhamento didático.
 
 Este documento concentra o balanço da etapa; não cria outra base paralela. **No fim há a matriz “o que temos e o que falta”.** Figma, contratos e banco não foram alterados. O envio ao GitHub foi solicitado posteriormente e concluído em 24/09, como publicação da base existente, sem transformar pesquisa em implementação. O check-in está no plano de execução.
+
+**Inventário concreto — 25/09:** a [matriz de cobertura existente](../conteudo/cobertura-e-prioridades.md) agora detalha três listas: entregas do aplicativo; informações esperadas de programas, exercícios, alimentos, receitas, capturas e conexões; material/código disponível, origem, localização e lacunas com motivo. Inclui treino em praça/parque e separa programa de exercício, quantidade consumida de porção da fonte e responsabilidade do app de retorno externo. Conferência local das evidências guardadas e do código; nenhuma nova coleta de fornecedor ou homologação neste incremento.
+
+## Avanço verificável — 26/09/2026
+
+**Direção posterior do autor, 26/09:** continuar na etapa 01, agora **um nicho de cada vez**. Isso substitui a pergunta anterior sobre avançar ao design com dependências condicionais; não há aceite para iniciar a etapa 02. O [dossiê de chamadas/retornos](../conteudo/evidencias-para-integracao.md) reúne as evidências para a implementação futura. O quadro a seguir é a fila de trabalho; consultar somente as fontes do nicho ativo.
+
+### Fila da etapa 01 por nicho
+
+Cada nicho responde uma pergunta, tem uma entrega verificável e fecha como **concluído para pesquisa**, **parcial** ou **bloqueado com motivo**. “Concluído para pesquisa” comprova o recorte declarado; não aprova o catálogo integral nem publica funcionalidade. Nunca marcar todos os nichos pelo sucesso de uma fonte. Manter no máximo **um nicho em execução**; registrar evidência/limite antes de passar ao próximo. Nichos com piloto anterior podem reaproveitá-lo, sem repetir a coleta.
+
+| ID | Pergunta específica | Evidência exigida / situação inicial |
+|---|---|---|
+| N01 | Que alimentos genéricos podemos listar e identificar? | **[x] Concluído para pesquisa em 26/09**, no recorte Ciqual 2025: 3.484 IDs, nomes FR/EN, classificação e preparo no nome conferidos; 30 exemplos. Tradução pt-PT, marcas e publicação continuam fora deste recorte |
+| N02 | Quais calorias, macro e micronutrientes recebemos para cada alimento? | **Próximo; não iniciado neste incremento.** Mapear IDs de N01 para valores, unidades, método, base de 100 g/ml e desconhecidos; há amostras, falta fechar escolha de campos |
+| N03 | Como converter gramas, ml, unidade, porção e cru/cozido? | Na fila, com piloto parcial. Exigir medidas/peso com origem; não converter volume/massa ou preparo sem dado |
+| N04 | Quais produtos de Portugal existem por marca/código? | Na fila, acesso ainda bloqueado. Amostra real de produtos e cobertura; OFF 503 preservado, sem nova tentativa repetitiva |
+| N05 | De onde vêm ingredientes, alergénios e restrições alimentares? | Na fila. Retorno observado e proveniência; distinguir ausente de “não contém”, sem inferir adequação clínica |
+| N06 | Onde obter fotos de alimentos e pratos? | Na fila. Imagem por item, licença comercial, crédito, disponibilidade e correspondência visual |
+| N07 | Como ensinar a ler uma embalagem? | Na fila. Guia humano/visual em contexto europeu: 100 g/ml, porção, ingredientes e unidades; exemplos próprios/licenciados |
+| N08 | Quais receitas humanas podemos importar? | Na fila. Ingredientes, quantidades, rendimento, passos, nutrientes, direitos de adaptação; NHLBI parcial |
+| N09 | Que guias humanos ensinam alimentação para ganhar peso? | Na fila. Público, fundamento, exemplos e limites; não classificar isoladamente “alimento que engorda” como prescrição |
+| N10 | Que guias humanos ensinam alimentação para perder peso? | Na fila. Critérios, exemplos, sustentabilidade, fonte e limites; evitar meta individual não validada |
+| N11 | Que guias cobrem manutenção, hábitos e qualidade alimentar? | Na fila. Conteúdo utilizável, escolhas e substituições explicadas com direitos claros |
+| N12 | Que orientação liga alimentação a massa muscular/desempenho? | Na fila. Conteúdo humano, público e condições; não inventar sincronização automática com gasto estimado |
+| N13 | Há planos alimentares completos, humanos e reutilizáveis? | Na fila. Dias/refeições/porções, público, autoria/revisão e licença; receita isolada não fecha este nicho |
+| N14 | Como organizar e personalizar a rotina alimentar? | Na fila. Distinguir planeado/consumido, repetição, substituições, favoritos e alteração pessoal; depende de N01–N03/N08/N13 |
+| N15 | Que programas prontos existem para casa sem equipamento? | Na fila, rotina NHS parcial. Exigir sequência, agenda, dose, progressão e público; não confundir sete movimentos com catálogo completo |
+| N16 | Que programas existem para casa com material disponível? | Na fila. Programas por conjunto de equipamento, tempo, experiência e progressão; substituições previstas pela fonte |
+| N17 | Como mostrar a execução dos treinos em casa? | Na fila. Texto, imagem/animação/vídeo por movimento; correspondência e licença por ativo |
+| N18 | Que programas humanos ajudam a começar na academia? | Na fila. Programa inteiro, autoria, dose, recuperação, progressão, adequação e direitos; principal lacuna conhecida |
+| N19 | Que programas de academia atendem outras experiências/metas? | Na fila. Percursos específicos, não três níveis universais; dias/equipamento/tempo e condições reais da fonte |
+| N20 | Como ensinar visualmente os exercícios de academia? | Na fila. Catálogo de movimentos/instruções/mídia; auditar traduções e ativos wger sem repetir as 75 amostras |
+| N21 | Que programas existem para praça/parque/calisthenics? | Na fila. Equipamento real, espaço, progressão e instruções; não apenas renomear treino de casa |
+| N22 | Que percursos humanos orientam caminhada? | Na fila. Sessões e progressão completas; PDF NHLBI 404 não conta como programa disponível |
+| N23 | Que percursos humanos orientam corrida e retorno gradual? | Na fila, piloto de 27 sessões existente. Completar instrução/adequação pt-PT e limites antes de ampliar distâncias/metas |
+| N24 | Que programas orientam ciclismo? | Na fila. Intensidade/duração/segurança, equipamento e progressão com direitos demonstrados |
+| N25 | Que programas orientam natação? | Na fila. Distância, estilo, descanso, capacidade prévia e instruções; referência Swim England ainda não libera importação |
+| N26 | Que sequências de yoga podemos oferecer? | Na fila. Sequência humana, público, instrução de posturas/transições e direitos |
+| N27 | Que sequências de Pilates podemos oferecer? | Na fila. Solo/equipamentos, experiência, instruções e autoria; não tratar como sinónimo de yoga |
+| N28 | Que rotinas cobrem mobilidade e flexibilidade? | Na fila. Objetivo, dose, sequência e limites; rotina geral não equivale a tratamento |
+| N29 | Que rotinas cobrem equilíbrio e condicionamento gradual? | Na fila. Público, apoio/equipamento, progressão e adequação; fonte e direitos |
+| N30 | Que programas cobrem circuito/funcional/HIIT? | Na fila. Trabalho/pausa, intensidade, experiência e progressão humana; nomenclatura comercial não substitui programa |
+| N31 | Que outras modalidades desportivas serão cobertas? | Na fila. Antes de pesquisar, escolher **um esporte** e abrir subnicho; nunca declarar “todos os esportes” resolvidos por uma fonte |
+| N32 | Como informar sobre dor, limitações e quando procurar ajuda? | Na fila. Educação humana e localização para Portugal, sem diagnóstico/prescrição a partir de filtros |
+| N33 | Há programas de fortalecimento/retorno para contextos clínicos? | Na fila. Abrir um subnicho por condição/população/fase; autoria, supervisão, direitos e elegibilidade. Não generalizar pré para pós-operatório |
+| N34 | Que dados sustentam dias, metas, experiência e progressão? | Na fila. Campos presentes em programas; seleções e alterações justificadas, sem inventar doses para preencher lacunas |
+| N35 | Como fundamentar métricas de atividade e gasto estimado? | Na fila, 20 registros MET existentes. Contexto, duração, peso e método; separar medição, estimativa e meta |
+| N36 | O que GPS e mapa devem fornecer? | Na fila. Sessão/pausas/percurso/precisão versus mapa-base; licença, cotas, perda de sinal e privacidade |
+| N37 | O que conseguimos importar no Android? | Na fila. Health Connect/sensores: tipos, origem, tempos, permissões, disponibilidade e duplicados; teste real pendente |
+| N38 | O que conseguimos importar no ecossistema Apple? | Na fila. HealthKit/iPhone/Watch, tipos, permissões e disponibilidade; não inferir equivalência automática ao Android |
+| N39 | Como identificar alimentos numa fotografia? | Na fila. Modelo, classes, confiança, licença, custo e correção; classificador genérico não fecha o nicho |
+| N40 | Como estimar quantidade/gramas numa fotografia? | Na fila, separado de N39. Dados necessários, erro e confirmação; reconhecer “arroz” não mede porção |
+| N41 | Como extrair texto de rótulo ou visor? | Na fila. OCR local, unidades/decimais, campos presentes, erro e confirmação; sem dados pessoais enviados |
+| N42 | Como ler o código de barras? | Na fila. Scanner, código detectado, formato e confirmação; retornar produto depende de N04 |
+| N43 | Como reconhecer/registar atividade por imagem ou vídeo? | Na fila. Distinguir classe/pose/repetição/tempo e gasto; só prometer o que tiver fonte/modelo e teste |
+| N44 | Como transformar registos num acompanhamento útil? | Na fila. Métricas pessoais, origem, dados incompletos e ligação de treino/alimentação; dashboard empresarial não é referência funcional |
+| N45 | Como localizar e ensinar de forma simples ou técnica? | Na fila. pt-PT, glossário, exemplos, leitura acessível e mídia; nomes traduzidos não provam compreensão/adequação |
+| N46 | Como manter os conteúdos e a operação com custo controlado? | Na fila, triagem de hosts já existente. Cache/lotes/licenças/retirada, orçamento, dados privados e anúncios; nenhuma contratação pressuposta |
+
+**Primeiro ataque: N01 — identidade de alimentos.** Critério desta pesquisa: demonstrar uma fonte obtida e versionada com IDs/nome/grupo, conferir integridade/unicidade/referências, verificar exemplos que separem cru/cozido e alimento/receita, documentar idioma e dados ausentes. A localização final, cobertura de marcas portuguesas, nutrientes, fotos e guias são explicitamente outros nichos. A seleção deste recorte não reduz a visão do produto.
+
+**Check-in N01 — concluído para pesquisa em 26/09:** dois XMLs Ciqual obtidos com hash e checksum do depósito; 3.484 identidades únicas, nomes FR/EN para todas, 720 nomes científicos e 138 linhas de classificação. IDs/campos de identidade conferem com a planilha da mesma edição. Nove pares de preparo e um prato composto verificados; 30 registros selecionados. O alimento genérico `24999` não tem grupo correspondente e permanece como desconhecido. Preparo está no nome, não em campo estruturado; nenhum nome português foi fornecido. [Retorno exato, chamada e regras](../conteudo/evidencias-para-integracao.md#n01--retorno-xml-de-identidade-alimentar), [resumo](../conteudo/evidencias/2026-09-26/n01-alimentos/resumo-identidades.json). Dietas, fotos e programas de treino não foram pesquisados neste ataque.
+
+O pedido foi conferir o encerramento e só depois iniciar a etapa 02. A conferência encontrou critérios ainda abertos; por isso o trabalho continuou **na etapa 01**, com importação experimental local e verificação, sem alterar Figma, aplicativo ou banco. [Resumo reproduzível dos pilotos](../conteudo/evidencias/2026-09-26/pilotos-resumo.json).
+
+| Piloto | O que foi obtido e conferido | Alcance e limite |
+|---|---|---|
+| **Corrida — NHS Couch to 5K, PR06** | Programa humano de nove semanas: **27 sessões e 12 padrões de intervalos** extraídos do HTML oficial. As 27 somas de duração conferem; cada intervalo foi comparado com a transcrição numérica das duas páginas do PDF oficial, também inspecionadas visualmente. URLs/data/hash preservados. [Amostra estruturada](../conteudo/evidencias/2026-09-26/corrida-piloto.json). | Demonstra obtenção e estruturação de um programa existente, sem inventar a progressão. Aquecimento/desaceleração, dias de descanso e instruções originais estão na fonte; falta preparar/conferir a versão pt-PT e sua utilização no app. O destino temporal é correr 30 minutos, **não uma garantia de percorrer 5 km**. Alongamentos não têm duração definida no piloto. |
+| **Força introdutória — NHS, PR05** | Sete exercícios, **20 passos de instrução na página**, sequência e quantidades conferidas. [Amostra estruturada](../conteudo/evidencias/2026-09-26/forca-piloto.json). | Rotina introdutória existente, sem periodização completa de academia. Séries/descansos/duração não declarados ficam nulos; não foram preenchidos por regra ou IA. Nenhuma fotografia/vídeo foi aprovado. |
+| **Alimentação — CoFID, AL05** | Doze alimentos da amostra anterior, com preparo/ID preservados e cálculo por massa. [Amostra estruturada](../conteudo/evidencias/2026-09-26/alimentacao-piloto.json). Confere arroz cru/cozido e semântica de traço, zero, desconhecido e limite superior. | Demonstra a base de um diário por gramas, não dieta ou recomendação de porção. As massas dos testes são entradas fictícias. Não valida equivalência a alimentos portugueses nem cobertura de marcas. |
+| **Produtos portugueses — OFF, AL02** | Uma nova consulta limitada a 30 produtos devolveu **HTTP 503; zero produtos recebidos**. [Registro](../conteudo/evidencias/2026-09-26/network/off-portugal-30.evidencia.json). | Amostra de 30 códigos reais continua pendente. Não concluir que a base está vazia, substituir por produtos inventados ou continuar repetindo a chamada. |
+
+Fontes: [plano NHS completo](https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/), [tabela oficial](https://digitalcampaignsstorage.blob.core.windows.net/campaigns-cms-prod/documents/c25k_printable_plan.pdf), [força NHS](https://www.nhs.uk/live-well/exercise/strength-exercises/), [CoFID](https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid). Os números não significam conteúdos integrados ou aprovados para publicação.
+
+**Direitos que mudam a decisão:** os termos NHS permitem reutilizar texto elegível comercialmente, com condições próprias para tradução, atribuição, data/atualização e exceções. O piloto não inclui app, áudio, marca ou mídia. Já *Growing Stronger*, encontrado no CDC, apresenta “Public Domain” nos metadados, mas o próprio PDF tem copyright Tufts, créditos de terceiros e pede distribuição sem alteração: **não liberado para adaptação em pt-PT por essa evidência**. [Termos NHS](https://www.nhs.uk/our-policies/terms-and-conditions/), [PDF CDC/Tufts, página impressa ii](https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf). O catálogo registra a divergência para evitar redescobri-la.
+
+Uma verificação adicional de academia encontrou [Competitive Edge, 2024](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1439431/full), com licença CC BY, mas aplicado com supervisão e sem sequência integral importável obtida nesta pesquisa. É referência, não substitui o programa geral ainda em falta. O PDF de caminhada NHLBI tentado retornou 404; também não foi contado como programa adquirido. Resultados negativos delimitam as fontes, não demonstram inexistência de alternativas na internet.
+
+### Alimentação guiada: a decisão que os dados permitem
+
+Há três entregas distintas a desenhar: **(1) diário e organização pessoal**, com alimento/preparo, quantidade escolhida, cálculo e correção; **(2) aprendizagem e modelos humanos**, com rótulo, receitas, plano de refeições e fonte; **(3) metas e orientação individual**, que precisam de método, público e revisão específicos. O piloto comprova parte de (1); não comprova (2) integral nem (3). Receitas NHLBI continuam condicionais à política de adaptação/publicidade; [uma receita real](https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks) traz ingredientes, preparo, quatro porções e nutrientes, mas não é um plano alimentar diário personalizado.
+
+Para ligar treino e alimentação, preservar origem e unidade, separar planeado/consumido e energia ativa/total, evitar duplicados e não aumentar automaticamente a meta alimentar por uma estimativa de exercício. A decisão sobre método de metas permanece em aberto; o app não deve transformar uma conta aritmética correta numa recomendação individual sem fundamento.
+
+### Proposta anterior de sequência — substituída pelo trabalho por nichos
+
+**Proposta para revisão do autor:** conservar toda a visão R01–R18 no design futuro, mas distinguir funções com fonte demonstrada de funções condicionais. A etapa 02 pode mapear estas últimas com estados explícitos de indisponibilidade, configuração e confirmação; não deve apresentá-las como oferta já garantida. Programas de academia continuam sendo requisito central, não substituído por o utilizador criar o próprio treino. Os pilotos de corrida/força introdutória tampouco cobrem yoga, Pilates, natação, ciclismo e todas as progressões.
+
+**O autor determinou continuar na etapa 01, um nicho de cada vez.** A pergunta sobre avançar ao design está resolvida por essa instrução; não voltar a pedi-la neste incremento. A proposta acima fica como histórico. Os critérios de encerramento integral e publicação permanecem válidos; o quadro de nichos orienta a continuação, começando pela identificação alimentar e depois composição/calorias.
 
 ## Correções de escopo
 
@@ -60,10 +150,11 @@ Para R13, o utilizador deve poder corrigir alimento, preparo, ingredientes conhe
 - [x] Visão integral organizada e conectada à pesquisa — 24/09.
 - [x] Evidências anteriores preservadas; lacunas adicionais explicitadas — 24/09.
 - [ ] Escolher o catálogo/cobertura de lançamento sem descartar silenciosamente os requisitos da visão.
-- [ ] Demonstrar obtenção e importação conferida de programas humanos completos para os percursos selecionados, com instruções e direitos comerciais.
+- [x] Demonstrar estruturação experimental de um programa humano completo: corrida NHS, 27 sessões, HTML/PDF conferidos — 26/09. Instruções originais preservadas; publicação pt-PT ainda não homologada.
+- [ ] Demonstrar obtenção e importação conferida de programas humanos completos para os demais percursos selecionados, com instruções e direitos comerciais; academia continua em falta.
 - [ ] Demonstrar dados/conteúdo para alimentação guiada e sua relação com os objetivos; declarar o que será organização pessoal, modelo ou orientação individual.
 - [ ] Validar amostras portuguesas, incluindo alimentos/preparos, 30 códigos reais de produtos como proposta atual, tradução e unidades.
-- [ ] Definir caminho técnico e económico para cada captura prometida; capacidades ainda não demonstradas ficam explicitamente condicionais.
+- [x] Definir caminho técnico/económico de investigação por captura e registrar dependências, retorno e limites — [matriz de 26/09](viabilidade-operacional.md#capturas-e-retornos--triagem-de-26092026). Reconhecimento especializado e custo operacional real continuam condicionais, sem SDK/modelo testado no app.
 - [ ] Resolver os direitos dos itens usados, público, manutenção e adequação. Não é necessário homologar as 43 fontes, mas sim o conjunto que sustenta as promessas.
 - [ ] Autor revisar a cobertura fundamentada e aceitar a sequência de entrega. Só então fechar campos/fluxos definitivos da etapa 02.
 
@@ -183,16 +274,18 @@ Graphify consultado no início e atualizado incrementalmente no fim: **0 alterad
 
 **Temos uma base de pesquisa e um app inicial, não a oferta final pronta.** O Figma v0.4 representa parte dos percursos com dados demonstrativos. Os itens “temos” abaixo descrevem evidência ou base de trabalho; não significam funcionalidade publicada.
 
+Para ver os nomes dos campos, contagens conferidas e caminhos de cada evidência, consultar o [inventário detalhado do que temos e falta](../conteudo/cobertura-e-prioridades.md#3-o-que-temos-exatamente-onde-está-e-o-que-falta). O balanço R01–R18 abaixo permanece a referência de encerramento da etapa.
+
 | Requisito | O que temos hoje | O que falta demonstrar/concluir |
 |---|---|---|
-| R01 — Iniciante e experiente | Visão dos dois modos e esboços de planos/montagem | Programa pronto que permita começar sem plano próprio, ajuda guiada e montagem livre completas |
+| R01 — Iniciante e experiente | Visão dos dois modos e esboços; piloto humano de corrida completo na pesquisa | Oferta guiada em pt-PT, programas de academia/demais percursos e montagem livre completos no produto |
 | R02 — Múltiplas práticas | [Matriz de modalidades](../conteudo/cobertura-e-prioridades.md) e fontes de referência | Conteúdo humano, instrução e percurso completo por modalidade/contexto selecionado; yoga/Pilates/circuitos ainda sem lote homologado |
-| R03 — Programas humanos | Fontes candidatas, direitos comparados e caminho de importação proposto | Catálogo efetivamente autorizado, conferido e versionado; piloto sem parceiros/produção manual um a um |
-| R04 — Contexto e progressão | Critérios multidimensionais documentados | Dados de programas que sustentem dias, tempo, equipamento, objetivos e progressões; regras de seleção/alteração revistas |
+| R03 — Programas humanos | 27 sessões de corrida importadas experimentalmente/conferidas; sete movimentos de força introdutória; direitos dos textos NHS analisados | Homologação pt-PT/público/apresentação e catálogo nos demais percursos. Pesquisa não é lote aprovado no app |
+| R04 — Contexto e progressão | Critérios multidimensionais e progressão de nove semanas de corrida conferida | Dados de programas que sustentem dias, tempo, equipamento, objetivos e progressões; regras de seleção/alteração revistas |
 | R05 — Como executar | Amostras de descrição/mídia e falhas conhecidas | Texto/visual coerentes, licenciados e acessíveis em pt-PT; progressões e alternativas realmente previstas pela fonte |
 | R06 — Saúde e retorno | Limites da pesquisa e exemplos ampliados além de joelho/coluna | Cobertura por situação/população, direitos, adequação e enquadramento; nenhum algoritmo de diagnóstico/tratamento validado |
 | R07 — Planos alimentares/dietas | Fontes de composição, candidatos de receita e requisitos de planeamento | Modelos humanos, métodos, direitos e revisão para ajuda guiada; prescrição individual não resolvida |
-| R08 — Quantidade/rótulo | CoFID, Ciqual, USDA amostrados; pauta de ensino e fonte europeia | Bateria portuguesa, produtos OFF, porções/preparo, exemplos visuais e informação de ingredientes/alergénios adequados |
+| R08 — Quantidade/rótulo | CoFID, Ciqual, USDA amostrados; 12 conversões de massa/preparo conferidas; pauta de ensino e fonte europeia | Bateria portuguesa, produtos OFF, porções/preparo, exemplos visuais e informação de ingredientes/alergénios adequados |
 | R09 — Alimentação + treino | Relações e limites conceituais definidos | Método de metas/estimativas, tratamento de calorias ativas/totais, duplicados e provas de consistência dos resumos |
 | R10 — Manual/lista/customização | Código inicial de treino e formulários Figma demonstrativos | Fluxos completos por modalidade/refeição, edição, histórico, autoria de adaptações, offline e validação |
 | R11 — Celular/dispositivos | Triagem oficial Health Connect/HealthKit e pesquisa de mapa | SDK/compatibilidade, sensores/GPS reais, permissões, bateria, background, importação/exportação e deduplicação |
@@ -206,4 +299,4 @@ Graphify consultado no início e atualizado incrementalmente no fim: **0 alterad
 
 **Lacunas que mais mudam o produto:** programas completos por modalidade; planeamento alimentar guiado; conteúdo visual/didático em Portugal; reconhecimento e conexões com confirmação/origem; regras que unem tudo num acompanhamento útil. Situações clínicas continuam pendentes em trilha própria e não devem absorver a identidade inteira do app.
 
-**Próximo trabalho da etapa 01:** investigar essas lacunas usando o catálogo existente, obter pilotos conferidos e registrar a evidência faltante. Esta revisão documental está concluída; **a etapa 01 ainda não pode receber o check de conclusão integral**.
+**O que falta agora:** executar a fila por nichos, começando por **N02 — calorias e composição nutricional**; N01 está concluído no recorte descrito no início deste documento. Programas humanos de academia/demais percursos, modelos alimentares guiados, instrução/adequação pt-PT e amostra de produtos têm nichos próprios. Reconhecimento especializado segue condicionado. **A etapa 01 ainda não recebe o check integral nem autoriza a etapa 02 automaticamente**. Cada pesquisa deve encerrar o seu recorte com evidência, limites e próximo foco, sem repetir a coleta já preservada.

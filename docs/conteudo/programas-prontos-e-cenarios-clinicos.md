@@ -1,5 +1,7 @@
 # Programas prontos e cenários clínicos
 
+**Atualização de 26/09/2026:** o [piloto de corrida NHS](evidencias/2026-09-26/corrida-piloto.json) já contém 27 sessões conferidas contra HTML/PDF; a [rotina de força](evidencias/2026-09-26/forca-piloto.json) contém sete movimentos/20 passos na fonte, sem periodização completa. Não há indicação clínica automática nem publicação homologada. CDC/Tufts trouxe conflito de direitos (PR11); Competitive Edge permanece referência supervisionada sem programa integral obtido (PR12). [Balanço atual e decisão de sequência](../planejamento/etapa-01-pesquisa.md). O restante preserva a análise datada de 23/09.
+
 **Enquadramento de 24/09/2026:** esta análise cobre uma dimensão do [produto integrado](../planejamento/README.md), não sua identidade principal. Programas gerais de múltiplas modalidades, alimentação e didática também precisam de pesquisa. Joelho/coluna eram exemplos, não limites da cobertura desejada.
 
 Investigar também contextos de ombro/pescoço, cotovelo/punho, quadril, tornozelo/pé, tendões, região abdominal/pélvica e outros retornos após operações, imobilização ou pausa. São exemplos de pesquisa, não indicação de exercício nem afirmação de que todas essas situações se tratam na academia. Diferenciar dor sem causa conhecida, limitação diagnosticada, retorno autorizado e plano assistencial existente; procedimentos semelhantes podem ter restrições distintas.

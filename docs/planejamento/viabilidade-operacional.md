@@ -5,6 +5,23 @@
 
 Pesquisa em 22/09/2026. Sem criação de contas, chaves privadas, deploy, assinatura ou cobrança. Limites são um retrato da documentação, não garantia permanente. A recomendação é para piloto, sujeita às provas técnicas das etapas 5–7.
 
+## Capturas e retornos — triagem de 26/09/2026
+
+Esta matriz fecha o **caminho de investigação**, não uma integração de produção. A leitura oficial complementar de 26/09 cobriu OCR, rotulagem de imagem, termos ML Kit e tipos Health Connect. As comparações de preço/host de 22/09 abaixo mantêm sua data; não foram medidas no app neste incremento. Processamento local reduz chamadas externas, mas ainda exige implementar, validar desempenho, conferir licença do modelo e manter o recurso.
+
+| Entrada pretendida | Caminho técnico e retorno esperado | Custo/dependência e limite explícito |
+|---|---|---|
+| Digitar/escolher alimento, treino ou atividade | Catálogo local versionado + quantidade/sessão informada; retorna seleção confirmada, origem e cálculo com unidades | Sem inferência paga necessária; há custo de curadoria, armazenamento e sincronização. Pilotos de conteúdo não são integração. |
+| Ler código de produto | Leitor no aparelho → código → consulta OFF/cache → produto/nutrientes → quantidade confirmada | Não precisa de LLM. Leitura não assegura presença no catálogo; OFF retornou 503. Prever não encontrado, erro e digitação. Cotas/cache/licença permanecem sob as regras da fonte. |
+| Fotografar rótulo ou ecrã de equipamento | [ML Kit OCR](https://developers.google.com/ml-kit/vision/text-recognition/v2), candidato local; retorna texto, posição e confiança quando disponível; parser identifica campos e unidades; pessoa confirma | Não é identificação nutricional por foto. Modelo pode exigir download inicial; testar vírgula decimal, porção versus 100 g, kcal/kJ, reflexo e recorte. Termos do SDK não equivalem a licença de dados de terceiros. |
+| Fotografar prato/alimento | Detector/classificador especializado candidato no aparelho → lista de hipóteses/confiança → alimento da base → quantidade informada/confirmada | [Rotulagem genérica](https://developers.google.com/ml-kit/vision/image-labeling) não comprova reconhecimento de receitas, ingredientes ocultos ou gramas. Não selecionamos modelo alimentar com licença, desempenho e custo demonstrados. A função permanece condicional; cloud paga não é pressuposta. |
+| Fotografar atividade | Classificação visual candidata + dados efetivos da sessão; fotografia de visor pode usar OCR | Foto isolada não demonstra duração, repetições, carga ou gasto. Não inventar esses retornos. Modelo específico e avaliação ausentes; perguntar/confirmar o que não veio de sensor ou registro. |
+| Movimento durante atividade | Sensores/GPS do aparelho; sessão com instante inicial/final, pausas, amostras e origem | Não há token de IA necessário; exige aparelho, permissões, background/bateria e persistência testados. Mapa-base tem fornecedor/cota próprios; ausência de mapa não pode apagar a sessão. |
+| Importar atividade, nutrição ou métricas | [Health Connect](https://developer.android.com/health-and-fitness/health-connect/data-types) / [HealthKit](https://developer.apple.com/documentation/healthkit/hkworkout); retornar tipos disponíveis, origem, IDs, tempos e unidades | Não são sensores nem garantia de dados de todos os relógios. Conferir compatibilidade, permissões/revogação, duplicados e eventuais requisitos de loja. Integração Flutter e custo total Apple ainda não comprovados. |
+| Imagem privada como complemento | Câmera/galeria → armazenamento local; sincronização privada opcional quando escolhida | Não enviar automaticamente a bases públicas nem considerar análise já feita. Compressão, EXIF, retenção/exclusão, acesso e armazenamento têm custo próprio; R2 é apenas candidato abaixo. |
+
+[Termos e privacidade ML Kit](https://developers.google.com/ml-kit/terms) precisam acompanhar a seleção da API/modelo. Modelos de reconhecimento, se usados, são distintos de gerar treinos por IA; a prescrição por IA continua fora da proposta. Nenhum modelo, foto pessoal, chave ou SDK foi instalado/enviado nesta pesquisa.
+
 ## Mapas
 
 | Opção | Constatação | Uso recomendado |

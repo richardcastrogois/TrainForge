@@ -1,0 +1,10 @@
+{
+  "id": "off-portugal-30",
+  "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&page_size=30&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cnutriments%2Cserving_size%2Cserving_quantity%2Cnutrition_data_per%2Ccountries_tags%2Clast_modified_t%2Clang%2Cimage_front_url%2Cimage_nutrition_url%2Cingredients_text%2Callergens_tags&sort_by=unique_scans_n",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-26T03:16:02.650809+00:00",
+  "status": null,
+  "use": "local_research_not_production",
+  "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>",
+  "elapsedSeconds": 0.016
+}

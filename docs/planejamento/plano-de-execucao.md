@@ -4,10 +4,10 @@ Data: 17/09/2026. Proposta; a aprovação de uma etapa não aprova automaticamen
 
 ## Check-in das etapas
 
-Atualizado em 24/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
+Atualizado em 26/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
 
 - [x] **Etapa 0 — Base confiável:** inventário/preservação em 22/09; alinhamento documental R01–R18 em 24/09. [Evidência e limites](etapa-00-base.md). Nova conferência visual fica para a próxima intervenção no Figma.
-- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** Rodadas 22–23/09 entregues; balanço ampliado em 24/09. Faltam programas humanos por modalidade, alimentação guiada, ensino visual, captura por imagem/dispositivos e integração demonstrada. Consultar a [matriz final do que temos/falta](etapa-01-pesquisa.md). Não avançar automaticamente para a etapa 02.
+- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** Pilotos e N01 entregues até 26/09. O autor escolheu pesquisar um nicho por vez; **N02 — calorias e composição** é o próximo na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Faltam programas completos para demais percursos, alimentação guiada, validação pt-PT e decisão do conteúdo de lançamento. Capturas especializadas permanecem condicionais. Não avançar automaticamente para a etapa 02.
 - [ ] Etapa 2 — Fluxos e conteúdo.
 - [ ] Etapa 3 — Sistema visual.
 - [ ] Etapa 4 — Protótipo completo.
@@ -35,6 +35,40 @@ Atualizado em 24/09/2026. Marcar `[x]` somente após executar e registrar evidê
 - [x] Corrigir recortes de musculação exclusiva, parceria pressuposta e foto somente como anexo.
 - [ ] Resolver as evidências abertas da etapa 01; a revisão documental não conclui essa etapa.
 - [x] **Publicação inicial — 24/09/2026:** README e base revisados, 322 arquivos no primeiro commit [`16565d5`](https://github.com/richardcastrogois/TrainForge/commit/16565d5e882e89d094150e79e2a2c0934af758af), push de `main` concluído. Código Flutter, documentação, design próprio e índices publicados; API externa, segredos, caches e evidências brutas excluídos.
+
+### Check-in do inventário de funções e dados — 25/09/2026
+
+- [x] Detalhar o que o app deve fazer e devolver, incluindo academia, casa, praça/parque, demais modalidades, alimentação, capturas, conexões e acompanhamento.
+- [x] Listar dados esperados de programas/sessões/exercícios, mídia, alimentos/porções, receitas, atividades/mapas, reconhecimento e dispositivos; distinguir dados externos de responsabilidades do app.
+- [x] Confrontar os campos e contagens com evidências locais de 22–23/09 e modelos/builder atuais; registrar origem, localização, disponibilidade parcial e motivo de cada lacuna na [matriz existente](../conteudo/cobertura-e-prioridades.md).
+- [ ] Homologar/importar os conteúdos e demonstrar os percursos pendentes. Este inventário não conclui a etapa 01 nem implementa integrações.
+
+**Validação:** sete documentos passaram na verificação de erros/links locais; contagens confrontadas com os JSONs preservados, tabelas e ligação interna conferidas. `git diff --check` sem erros. Graphify incremental concluído: **0 alterados, 42 inalterados, 0 removidos**; corpus e saídas preservados. Houve somente alteração documental, sem nova coleta externa nem teste funcional do aplicativo.
+
+### Check-in dos pilotos e da viabilidade — 26/09/2026
+
+- [x] Conferir que a etapa 01 estava aberta e continuar nela; consultar Graphify/evidências locais antes da nova coleta.
+- [x] Obter HTML/PDF e termos NHS; estruturar **27 sessões / 12 padrões de corrida**; conferir os 27 totais e todos os intervalos contra as duas páginas do PDF.
+- [x] Conferir rotina humana de força: sete movimentos / 20 passos na fonte; parâmetros ausentes continuam nulos.
+- [x] Validar cálculo por massa de 12 alimentos CoFID, preservando cru/cozido, traço, nulo e limite superior; entradas são testes, não dieta.
+- [x] Registrar OFF 503, PDF NHLBI 404, conflito de direitos CDC/Tufts e limites do programa supervisionado Competitive Edge. Catálogo atual: **45 fontes/famílias**, com datas individuais.
+- [x] Definir caminhos de investigação por captura e fronteira entre diário, modelos humanos/educação e orientação individual. [Resultados e proposta](etapa-01-pesquisa.md), [scripts/evidências](../conteudo/evidencias/README.md).
+- [x] Atualizar Graphify de `lib/`: **0 alterados, 42 inalterados, 0 removidos**; sem extração semântica da pesquisa.
+- [x] Validação documental: 13 arquivos sem erros/links locais quebrados detectados; três scripts com sintaxe válida, 20 JSONs novos legíveis e 45 IDs de fontes únicos. Avisos de placeholder correspondem a palavras portuguesas. Os testes dos pilotos verificam estrutura/aritmética, não qualidade clínica ou publicação.
+- [x] Autor decidiu continuar na etapa 01 por nichos, um de cada vez — instrução posterior em 26/09. A pergunta anterior de sequência foi resolvida; não há autorização para iniciar a etapa 02.
+- [ ] Encerramento integral da etapa 01: não assinalado; pilotos não fecham todas as promessas. Figma/código de produto/banco sem mudanças; etapa 02 não iniciada neste check-in.
+
+### Check-in do dossiê e do nicho N01 — 26/09/2026
+
+- [x] Consolidar [evidências para implementação](../conteudo/evidencias-para-integracao.md): chamada, autenticação/headers, formato real, campos, exemplos, origem, hash, disponibilidade e limites; separar retorno externo de normalização local.
+- [x] Criar índice local de 44 registros de chamadas, 25 respostas HTTP 200 e 12 corpos com hash conferido; inclui falhas preservadas e não representa 44 fornecedores.
+- [x] Atualizar Graphify após o dossiê, antes de iniciar o ataque por nicho: 0 alterados, 42 inalterados, 0 removidos em `lib/`.
+- [x] Dividir a etapa 01 em [46 nichos com pergunta/entrega](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), mantendo apenas um foco de execução.
+- [x] **N01 concluído para pesquisa**, no recorte de identificação Ciqual: dois XMLs, 3.484 alimentos únicos, nomes FR/EN, 138 linhas de classificação e cruzamento integral com XLSX. Nove pares de preparo e 30 exemplos; um alimento sem grupo correspondente. [Resultado e limites](../conteudo/evidencias/2026-09-26/n01-alimentos/resumo-identidades.json).
+- [x] Atualizar Graphify novamente ao fechar N01: **0 alterados, 42 inalterados, 0 removidos**. Grafo de `lib/` preservado; pesquisa consultável pelo dossiê/índices locais, sem extração semântica.
+- [x] Validar o incremento: dez documentos sem erros/links locais quebrados detectados; duas âncoras de retomada conferidas; dois scripts Python e um PowerShell com sintaxe válida; índice de 44 chamadas, fila N01–N46 e 30 IDs da amostra consistentes. Corpos integrais excluídos do Git; `git diff --check` passou. Avisos de placeholder revistos: palavras portuguesas e explicação histórica do próprio aviso. Essas verificações não homologam conteúdo clínico nem testam funcionalidades do app.
+- [ ] **N02 — próxima pesquisa:** calorias/composição por alimento, método, unidade, valores especiais e campos necessários; reaproveitar entradas locais de N01.
+- [ ] Etapa 01 integral permanece aberta. N01 não homologa pt-PT, marcas, receitas, dietas, imagens, integração ou publicação.
 
 ## Entregas e critérios
 
@@ -76,8 +110,8 @@ O [diagnóstico](../diagnostico.md) identifica logs sensíveis, refresh/logout i
 ## Próximas cinco ações
 
 1. Autor revisar [visão central](README.md), [pitch](pitch-e-decisoes.md) e balanço da etapa 01, sem presumir lançamento só de musculação.
-2. Investigar/importar pilotos de **programas humanos existentes** em modalidades/contextos representativos, comprovando direitos, instruções e progressão sem parceria pressuposta.
-3. Aprofundar alimentação guiada, cobertura portuguesa e ensino visual; investigar reconhecimento e conexões por caso de uso, custo, privacidade e limitações.
+2. Executar **N02 — calorias e composição**, reaproveitando arquivos locais, com unidades, métodos, campos ausentes e exemplos verificáveis; atualizar o dossiê e marcar o check do nicho quando cumprir o critério.
+3. Seguir a [fila N03–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: porções, produtos, ensino alimentar, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
 4. Consolidar capacidade → fonte/método → prova → limite → alternativa; escolher explicitamente lançamento e expansões. Encerrar etapa 01 apenas após os critérios.
 5. Retomar Figma Desktop comparando a base viva, aplicar F01–F12 em incrementos e seguir contratos/modelo conceitual, banco e implementação.
 

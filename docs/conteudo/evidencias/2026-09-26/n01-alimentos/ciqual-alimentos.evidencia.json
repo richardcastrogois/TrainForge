@@ -1,0 +1,19 @@
+{
+  "id": "ciqual-alimentos",
+  "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666252",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-26T14:28:11.6552787Z",
+  "client": "Invoke-WebRequest; default TLS certificate validation",
+  "requestHeaders": {
+    "Accept": "application/xml,text/xml",
+    "User-Agent": "TrainForgeResearch/0.4 (food identity research)"
+  },
+  "status": 200,
+  "use": "research_only_not_release_approved",
+  "bytes": 1581031,
+  "bodyFile": "raw/ciqual-alimentos.xml",
+  "sha256": "e0b1de25b3039028205e9d54a96892e403e1b313c2efeb41180fabe132627478",
+  "md5": "8e1171d63cee4b6010cfce25dd29243d",
+  "metadataMd5": "8e1171d63cee4b6010cfce25dd29243d",
+  "metadataChecksumMatches": true
+}
