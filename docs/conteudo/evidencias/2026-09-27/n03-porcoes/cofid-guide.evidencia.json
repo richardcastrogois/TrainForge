@@ -1,0 +1,16 @@
+{
+  "id": "cofid-guide",
+  "url": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-27T14:51:47.0111689Z",
+  "requestHeaders": {
+    "Accept": "application/json,application/pdf,text/html",
+    "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+  },
+  "client": "Invoke-WebRequest; default TLS verification",
+  "status": 200,
+  "use": "research_only",
+  "bytes": 777103,
+  "bodyFile": "../raw/cofid-guide.pdf",
+  "sha256": "cbac83af403531f1db260a15de058ceca1c1bae6707a8748ee3788fee7f945ec"
+}

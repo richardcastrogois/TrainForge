@@ -18,7 +18,7 @@ Uma consulta OFF limitada a 30 produtos portugueses voltou a retornar 503, sem p
 | Fonte | Operação | Resultado | Implicação |
 |---|---|---|---|
 | wger | Mais duas páginas de 25, offsets 300 e 600; combinadas com offset 0 anterior | 75 IDs únicos; 6 com português, 37 com imagens, 8 com vídeo; 4 imagens assinaladas como IA | Cobertura irregular; verificar idioma e ativo individualmente |
-| CoFID 2021 | Download oficial e leitura da folha `1.3 Proximates` | 2.760 alimentos; 16 buscas por prefixos; 14 encontraram correspondência; 27 linhas selecionadas | Bom material para curadoria local; correspondência de nome é problema real |
+| CoFID 2021 | Download oficial e leitura da folha `1.3 Proximates` | 2.760 linhas alimentares (N03: 2.759 IDs, um duplicado); 16 buscas por prefixos; 14 encontraram correspondência; 27 linhas selecionadas | Bom material para curadoria local; correspondência de nome é problema real |
 | Ciqual 2025 | Metadados do depósito oficial e Excel | 3.484 alimentos; 16 buscas; 15 com correspondência; 29 linhas selecionadas | Alternativa europeia concreta com licença no depósito, não apenas link de divulgação |
 | Compêndio 2024 | Cinco tabelas: corrida, caminhada, ciclismo, condicionamento e água | 20 registros preservados, quatro por categoria; na água selecionados itens de natação | Base pequena verificável para modelar atividades, sem gerar plano de treino |
 | Fineli | Endpoint público de exemplo `foods/11060` | HTTP 403 | Permissão de reutilização documentada não garante acesso por este cliente |

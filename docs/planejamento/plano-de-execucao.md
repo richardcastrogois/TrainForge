@@ -4,10 +4,10 @@ Data: 17/09/2026. Proposta; a aprovação de uma etapa não aprova automaticamen
 
 ## Check-in das etapas
 
-Atualizado em 26/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
+Atualizado em 27/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
 
 - [x] **Etapa 0 — Base confiável:** inventário/preservação em 22/09; alinhamento documental R01–R18 em 24/09. [Evidência e limites](etapa-00-base.md). Nova conferência visual fica para a próxima intervenção no Figma.
-- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** Pilotos e N01 entregues até 26/09. O autor escolheu pesquisar um nicho por vez; **N02 — calorias e composição** é o próximo na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Faltam programas completos para demais percursos, alimentação guiada, validação pt-PT e decisão do conteúdo de lançamento. Capturas especializadas permanecem condicionais. Não avançar automaticamente para a etapa 02.
+- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** Pilotos e N01–N03 entregues para pesquisa até 27/09. O autor escolheu pesquisar um nicho por vez; **N04 — produtos portugueses por marca/código** está em andamento na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Faltam programas completos para demais percursos, alimentação guiada, validação pt-PT e decisão do conteúdo de lançamento. Capturas especializadas permanecem condicionais. Não avançar automaticamente para a etapa 02.
 - [ ] Etapa 2 — Fluxos e conteúdo.
 - [ ] Etapa 3 — Sistema visual.
 - [ ] Etapa 4 — Protótipo completo.
@@ -20,7 +20,7 @@ Atualizado em 26/09/2026. Marcar `[x]` somente após executar e registrar evidê
 ### Check-in da pesquisa ampliada — 23/09/2026
 
 - [x] Comparar **43 fontes/famílias** de exercícios, programas, ciência, métricas, alimentos, receitas e mídia, com links primários, direitos, limites e próxima ação por fonte. [Catálogo](../conteudo/catalogo-fontes.md).
-- [x] Ampliar amostras: 75 exercícios wger únicos; arquivos CoFID e Ciqual com 2.760 e 3.484 alimentos lidos, respectivamente; 20 registros de atividade. Preservar seleção, resultados, falhas e hashes. [Evidências](../conteudo/amostras-e-achados.md).
+- [x] Ampliar amostras: 75 exercícios wger únicos; arquivos CoFID e Ciqual com 2.760 e 3.484 linhas alimentares lidas, respectivamente (correção N03: CoFID contém 2.759 IDs distintos); 20 registros de atividade. Preservar seleção, resultados, falhas e hashes. [Evidências](../conteudo/amostras-e-achados.md).
 - [x] Propor cobertura portuguesa, lotes editoriais, requisitos de revisão e perguntas de autorização. [Prioridades](../conteudo/cobertura-e-prioridades.md), [curadoria](../conteudo/qualidade-e-curadoria.md), [direitos](../conteudo/direitos-e-acordos.md).
 - [ ] Autor aceitar o público, conteúdo mínimo e caminho para programas completos; as quantidades sugeridas ainda são metas, não conteúdo produzido.
 - [ ] Para as fontes escolhidas, resolver os direitos específicos e demonstrar adequação ao público com amostra revista. Não é necessário homologar todos os 43 candidatos; é necessário ter um caminho viável para cada promessa do lançamento.
@@ -67,8 +67,38 @@ Atualizado em 26/09/2026. Marcar `[x]` somente após executar e registrar evidê
 - [x] **N01 concluído para pesquisa**, no recorte de identificação Ciqual: dois XMLs, 3.484 alimentos únicos, nomes FR/EN, 138 linhas de classificação e cruzamento integral com XLSX. Nove pares de preparo e 30 exemplos; um alimento sem grupo correspondente. [Resultado e limites](../conteudo/evidencias/2026-09-26/n01-alimentos/resumo-identidades.json).
 - [x] Atualizar Graphify novamente ao fechar N01: **0 alterados, 42 inalterados, 0 removidos**. Grafo de `lib/` preservado; pesquisa consultável pelo dossiê/índices locais, sem extração semântica.
 - [x] Validar o incremento: dez documentos sem erros/links locais quebrados detectados; duas âncoras de retomada conferidas; dois scripts Python e um PowerShell com sintaxe válida; índice de 44 chamadas, fila N01–N46 e 30 IDs da amostra consistentes. Corpos integrais excluídos do Git; `git diff --check` passou. Avisos de placeholder revistos: palavras portuguesas e explicação histórica do próprio aviso. Essas verificações não homologam conteúdo clínico nem testam funcionalidades do app.
-- [ ] **N02 — próxima pesquisa:** calorias/composição por alimento, método, unidade, valores especiais e campos necessários; reaproveitar entradas locais de N01.
+- [x] **N02 concluído — 26/09:** ver check-in e evidências abaixo.
 - [ ] Etapa 01 integral permanece aberta. N01 não homologa pt-PT, marcas, receitas, dietas, imagens, integração ou publicação.
+
+### Check-in N02 — 26/09/2026
+
+- [x] Commit anterior até N01 publicado e conferido no GitHub: `7dc6531066894a777c1f9ad1ad42814d4e9a7112` em `main`. A pesquisa N02 permanece local.
+- [x] N02 concluído para pesquisa: 3.484 alimentos, 74 campos, 257.816 células e 30 exemplos. 3.006 alimentos com energia/macros numéricos; 2.205 com os dez campos propostos completos.
+- [x] Unidade, base, método, estados e contratos Ciqual/USDA/CoFID conferidos; hash, contagens, sintaxe e links locais do dossiê validados. [Evidência](../conteudo/evidencias-para-integracao.md#n02--composição-nutricional-e-campos-utilizáveis).
+- [x] Graphify atualizado: 0 alterados, 42 inalterados, 0 removidos. Uma execução no sandbox expirou em 40 s; a execução pontual fora dele funcionou, sem reindexação semântica.
+- [x] N03 iniciado após concluir N02; encerramento de pesquisa registrado abaixo.
+
+### Check-in N03 — 27/09/2026
+
+- [x] Retomar o piloto interrompido por cota e concluir **26 verificações** de massa, volume na base nativa, porção da fonte, ausência, traço, limites e arredondamento. [Dossiê](../conteudo/evidencias-para-integracao.md#n03--quantidades-porções-volume-e-preparo) e [validação](../conteudo/evidencias/2026-09-27/n03-porcoes/validacao-porcoes.json).
+- [x] Obter três respostas HTTP 200 limitadas: detalhe USDA 171942, guia CoFID 2021 e documentação USDA Foundation. Preservar URL, data, tamanho, hash, corpo local e chamada reproduzível; reaproveitar dados anteriores.
+- [x] Auditar as abas CoFID: 2.760 linhas, 2.759 IDs distintos; código 13-669 duplicado excluído do piloto. **2.758 vínculos únicos**; 2.724 proporções comestíveis e 54 densidades relativas numéricas. Três registros reais de porção USDA auditados. [Resumo](../conteudo/evidencias/2026-09-27/n03-porcoes/resumo-porcoes.json).
+- [x] Explicitar o que falta: medidas domésticas pt-PT homologadas, condições de densidade para conversão livre e tabela geral de rendimento/retenção cru/cozido. Não aplicar perdas de novo em alimento já expresso com desperdício; dados ausentes não viram zero. Isso fecha o recorte de pesquisa, não essas lacunas de produção.
+- [x] Atualizar os índices/documentos existentes e o inventário acumulado: 47 chamadas, 28 HTTP 200, 15 corpos locais com hash conferido. N02/N03 permanecem locais; GitHub já contém o commit anterior até N01.
+- [x] Verificação final: onze documentos sem erros ou links locais quebrados; avisos de placeholder conferidos como palavras portuguesas ou explicação do validador. Quatro scripts Python e o coletor PowerShell com sintaxe válida; 45 IDs de fontes únicos e caminhos existentes; 26 verificações N03, 47 chamadas/28 HTTP 200/15 hashes e fila N01–N46 consistentes. Três corpos novos ignorados pelo Git; `git diff --check` passou.
+- [x] Graphify atualizado ao encerrar: **0 alterados, 42 inalterados, 0 removidos** em `lib/`, saídas preservadas. O corpus não inclui documentação; retomar pelo dossiê/índices sem repetir requisições. Sem testes ou alterações funcionais no aplicativo.
+- [x] N04 iniciado após nova reprodução do N03; check-in seguinte registra o avanço posterior. Figma, app e banco permanecem sem alterações.
+
+### Check-in N04 — primeiro incremento · 27/09/2026
+
+- [x] Reproduzir N03 sem rede: 26 verificações aprovadas; limites mantidos. Isso confirma o recorte de pesquisa, não integração ou homologação integral.
+- [x] Consultar apenas documentação oficial OFF e coletar até dez produtos de Portugal; quatro GETs concluídos, todos HTTP 200, incluindo um detalhe de código observado. Corpos/hashes preservados; sem retries.
+- [x] Auditar dez códigos únicos, marcação de país em dez, seis nomes PT não vazios e nove marcas; identidade do detalhe confere. [Resumo](../conteudo/evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json).
+- [x] Registrar divergência: busca v2 contém nutrientes; detalhe v3.6 retorna `nutriments: {}`. A contagem 22.688 é informada pelo fornecedor, não catálogo auditado. Dossiê/índice atualizados: 51 chamadas, 32 HTTP 200, 19 hashes locais.
+- [ ] Fechar N04: resolver schema/projeção nutricional, cobertura por marcas/categorias e estados sem resultado; registrar decisões de atribuição antes de publicação. Próxima ação permanece N04, sem iniciar N05.
+- [x] Verificação final: dez documentos validados sem erros/links locais quebrados; sintaxe Python/PowerShell conferida; 45 IDs únicos de fontes e caminhos existentes; índice de 51 chamadas/32 HTTP 200/19 hashes consistente; quatro corpos brutos novos ignorados pelo Git; `git diff --check` passou. Avisos de placeholder vêm da regra ampla do validador já documentada, não de campos novos por preencher. Graphify: **0 alterados, 42 inalterados, 0 removidos**, corpus `lib/`.
+- [x] Retomar a validação pelo mesmo fluxo de aprovação após o limite de uso: a primeira tentativa não executou por falha da revisão automática; na retomada, passou. Nenhuma nova consulta ao fornecedor foi necessária. N04 continua aberto, sem confundir entrega deste incremento com encerramento do nicho.
+
 
 ## Entregas e critérios
 
@@ -110,8 +140,8 @@ O [diagnóstico](../diagnostico.md) identifica logs sensíveis, refresh/logout i
 ## Próximas cinco ações
 
 1. Autor revisar [visão central](README.md), [pitch](pitch-e-decisoes.md) e balanço da etapa 01, sem presumir lançamento só de musculação.
-2. Executar **N02 — calorias e composição**, reaproveitando arquivos locais, com unidades, métodos, campos ausentes e exemplos verificáveis; atualizar o dossiê e marcar o check do nicho quando cumprir o critério.
-3. Seguir a [fila N03–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: porções, produtos, ensino alimentar, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
+2. Continuar **N04** pela comparação de schema/fields v2/v3.6 já guardada; só depois fazer outra chamada pontual. Definir amostra de marcas/categorias e estados sem resultado para fechar o nicho.
+3. Após encerrar N04 com evidência e limites, seguir a [fila N05–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: porções, produtos, ensino alimentar, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
 4. Consolidar capacidade → fonte/método → prova → limite → alternativa; escolher explicitamente lançamento e expansões. Encerrar etapa 01 apenas após os critérios.
 5. Retomar Figma Desktop comparando a base viva, aplicar F01–F12 em incrementos e seguir contratos/modelo conceitual, banco e implementação.
 

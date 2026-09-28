@@ -1,5 +1,26 @@
 # Evidências da expansão de conteúdo
 
+**Estado atual — 27/09:** N01–N03 concluídos nos recortes de pesquisa; N03 reproduzido novamente com 26 verificações aprovadas. **N04 em andamento:** primeira amostra OFF de 10 produtos com marcação Portugal e um detalhe por código recebidos; divergência nutricional v2/v3.6 ainda por esclarecer. Resumo: `docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json`. Etapa 01 aberta; N05 não iniciado. Commit `7dc6531` publicou até N01; N02–N04 locais. Graphify: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Validação documental/local do primeiro incremento N04 concluída após a retomada.
+
+## N04 — primeira amostra portuguesa · 27/09/2026
+
+[Resumo](2026-09-27/n04-produtos-portugal/resumo-produtos.json), [dez produtos](2026-09-27/n04-produtos-portugal/amostra-produtos.json) e [comparação v2/v3.6](2026-09-27/n04-produtos-portugal/comparacao-v2-v3.json). Quatro GETs, todos HTTP 200; quatro corpos/hashes preservados. Raw permanece local em `2026-09-27/raw/`, ignorado pelo Git. Índice acumulado: **51 chamadas, 32 HTTP 200, 19 corpos com hash conferido**.
+
+[Coletor](coletar-produtos-portugal.ps1): cache de sucesso/falha, 25 s e 1 MiB por resposta, sem retries. Obteve documentação, licença, busca de até dez produtos e um detalhe cujo código veio da busca. Não repetir para recuperar contexto. [Analisador sem rede](analisar-produtos-portugal.py), só biblioteca padrão: `python docs/conteudo/evidencias/analisar-produtos-portugal.py`, a partir da raiz do repositório, requerendo os corpos locais. O nicho permanece aberto: identidade confirmada, nutrientes divergentes entre versões e representatividade não medida. [Dossiê](../evidencias-para-integracao.md#n04--produtos-vendidos-em-portugal).
+
+## N03 — porções, quantidades e preparo · 27/09/2026
+
+[Resumo](2026-09-27/n03-porcoes/resumo-porcoes.json), [casos reais](2026-09-27/n03-porcoes/casos-porcoes.json), [26 verificações](2026-09-27/n03-porcoes/validacao-porcoes.json) e [duplicidade CoFID](2026-09-27/n03-porcoes/duplicidades-cofid.json). Três chamadas novas, todas 200, com URL/status/data/hash nos arquivos `*.evidencia.json` dessa pasta. Corpos em `2026-09-27/raw/` são locais e ignorados. Índice acumulado: **47 chamadas, 28 HTTP 200, 15 corpos com hash conferido**.
+
+O [analisador N03](analisar-porcoes.py) reutiliza Ciqual/CoFID/USDA já guardados, confere hashes e usa `pypdf` para validar as páginas do guia CoFID. O runtime Python fornecido pelo Codex nesta máquina já dispõe dessa biblioteca; o ambiente do Graphify não é pressuposto para esse script. Não há rede na análise:
+
+```powershell
+& 'C:/Users/richa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 docs/conteudo/evidencias/analisar-porcoes.py
+& 'C:/Users/richa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 docs/conteudo/evidencias/inventariar-retornos.py
+```
+
+Executar a partir de `C:/dev/TrainForge/trainforge`. Em clone limpo, repor legitimamente as entradas identificadas nos metadados; os corpos brutos e datasets completos não são publicados. O [coletor limitado N03](coletar-porcoes.ps1) registra sucessos/falhas e reutiliza ambos; não executar para recuperar contexto já preservado. O [piloto inicial](2026-09-27/n03-porcoes/piloto-inicial.json) é histórico e foi ampliado pelo analisador final. [Método, chamadas e limites](../evidencias-para-integracao.md#n03--quantidades-porções-volume-e-preparo).
+
 **N01 — identidade alimentar, 26/09/2026:** [resumo](2026-09-26/n01-alimentos/resumo-identidades.json) e [30 exemplos](2026-09-26/n01-alimentos/amostra-identidades.json). Dois XMLs Ciqual recebidos, 3.484 IDs/nomes/grupos cruzados com a planilha; francês/inglês presentes, português ausente e uma classificação desconhecida preservada. [Coletor](coletar-identidades.ps1), [analisador sem rede](analisar-identidades.py) e [retorno exato](../evidencias-para-integracao.md#n01--retorno-xml-de-identidade-alimentar). XMLs/normalizado integral em `2026-09-26/n01-alimentos/raw/` ficam locais. N02 não foi iniciado neste ataque.
 
 **Entrada técnica:** [dossiê de retornos para implementação](../evidencias-para-integracao.md) e [índice de chamadas](retornos-observados.json), gerado localmente por [inventariar-retornos.py](inventariar-retornos.py). Separa o corpo externo dos campos criados pelos coletores/analisadores. A disponibilidade do corpo integral em disco e a possibilidade de conferir seu hash estão explícitas por registro.

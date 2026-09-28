@@ -1,0 +1,96 @@
+{
+  "niche": "N03",
+  "researchDate": "2026-09-27",
+  "researchStatus": "in_progress",
+  "releaseApproved": false,
+  "inputQuantitiesAreTestFixturesNotRecommendations": true,
+  "ciqual": {
+    "foodId": "9104",
+    "inputMassG": "150",
+    "basisMassG": "100",
+    "inputWorkbookSha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0",
+    "calculatedBySourceColumn": {
+      "K": {
+        "status": "numeric",
+        "valueDecimal": "232.5",
+        "limitDecimal": null
+      },
+      "P": {
+        "status": "numeric",
+        "valueDecimal": "4.965",
+        "limitDecimal": null
+      },
+      "Q": {
+        "status": "numeric",
+        "valueDecimal": "49.8",
+        "limitDecimal": null
+      },
+      "R": {
+        "status": "numeric",
+        "valueDecimal": "1.05",
+        "limitDecimal": null
+      },
+      "S": {
+        "status": "trace",
+        "valueDecimal": null,
+        "limitDecimal": null
+      },
+      "T": {
+        "status": "below_limit",
+        "valueDecimal": null,
+        "limitDecimal": "0.12"
+      }
+    }
+  },
+  "usda": {
+    "foodId": 748967,
+    "artifactSha256": "0f7ab03f46157007aedf3a37b9f9fc987e763d95d361b3ac5869e6d0dd405f2d",
+    "artifactHashIsOriginalHttpBodyHash": false,
+    "portionAsReceived": {
+      "id": 193781,
+      "dataPoints": 526,
+      "gramWeight": 50.3,
+      "sequenceNumber": 1,
+      "amount": 1.0,
+      "modifier": "whole without shell",
+      "minDateAcquired": "5/14/2019",
+      "measureUnit": {
+        "id": 1099,
+        "name": "egg",
+        "abbreviation": "egg"
+      },
+      "minYearAcquired": 2019
+    },
+    "inputCount": "2",
+    "calculatedMassG": "100.6",
+    "otherPortionsAsReceived": [
+      {
+        "id": 312625,
+        "dataPoints": 0,
+        "gramWeight": 50.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "measureUnit": {
+          "id": 1121,
+          "name": "RACC",
+          "abbreviation": "RACC"
+        }
+      }
+    ]
+  },
+  "passed": [
+    "150 g scales known values",
+    "trace is not zero",
+    "exclusive bound stays a bound",
+    "count uses amount and gramWeight of the selected food-specific portion"
+  ],
+  "remaining": [
+    "Reject invalid or unsupported quantities/units",
+    "ml requires food-specific density or a volume basis",
+    "Household measures need source/food/preparation-specific mass",
+    "Edible portion and preparation yields",
+    "Aggregation and missing values",
+    "Rounding/display rules",
+    "Coverage beyond these two cases"
+  ]
+}

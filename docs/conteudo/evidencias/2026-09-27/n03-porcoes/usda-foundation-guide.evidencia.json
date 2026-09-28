@@ -1,0 +1,16 @@
+{
+  "id": "usda-foundation-guide",
+  "url": "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-27T14:51:48.9655375Z",
+  "requestHeaders": {
+    "Accept": "application/json,application/pdf,text/html",
+    "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+  },
+  "client": "Invoke-WebRequest; default TLS verification",
+  "status": 200,
+  "use": "research_only",
+  "bytes": 162792,
+  "bodyFile": "../raw/usda-foundation-guide.html",
+  "sha256": "4d35804e1b2e32f5441a6708087585f1fe4571e34e3f02dd9e8318c5ed8bd1af"
+}

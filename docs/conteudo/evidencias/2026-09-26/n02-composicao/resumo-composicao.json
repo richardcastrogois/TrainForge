@@ -1,0 +1,107 @@
+{
+  "niche": "N02",
+  "researchStatus": "completed_with_explicit_scope_limits",
+  "releaseApproved": false,
+  "foods": 3484,
+  "matchedN01Ids": 3484,
+  "compositionFields": 74,
+  "cells": 257816,
+  "cellStates": {
+    "numeric": 151981,
+    "unknown": 83246,
+    "trace": 2514,
+    "below_limit": 20075
+  },
+  "numericZeroCells": 30870,
+  "completeNumericEnergyAndMacros": 3006,
+  "completeNumericTenProposedFields": 2205,
+  "coreFieldCoverage": {
+    "energyKjEu": {
+      "numeric": 3339,
+      "unknown": 143,
+      "trace": 2,
+      "below_limit": 0,
+      "zeroNumericSubset": 58
+    },
+    "energyKcalEu": {
+      "numeric": 3339,
+      "unknown": 143,
+      "trace": 2,
+      "below_limit": 0,
+      "zeroNumericSubset": 58
+    },
+    "proteinNx625G": {
+      "numeric": 3451,
+      "unknown": 29,
+      "trace": 4,
+      "below_limit": 0,
+      "zeroNumericSubset": 164
+    },
+    "carbohydrateG": {
+      "numeric": 3272,
+      "unknown": 70,
+      "trace": 134,
+      "below_limit": 8,
+      "zeroNumericSubset": 372
+    },
+    "fatG": {
+      "numeric": 3283,
+      "unknown": 20,
+      "trace": 15,
+      "below_limit": 166,
+      "zeroNumericSubset": 170
+    },
+    "sugarsG": {
+      "numeric": 2996,
+      "unknown": 223,
+      "trace": 205,
+      "below_limit": 60,
+      "zeroNumericSubset": 566
+    },
+    "fibreG": {
+      "numeric": 3239,
+      "unknown": 70,
+      "trace": 45,
+      "below_limit": 130,
+      "zeroNumericSubset": 1046
+    },
+    "saturatedFatG": {
+      "numeric": 3093,
+      "unknown": 248,
+      "trace": 8,
+      "below_limit": 135,
+      "zeroNumericSubset": 199
+    },
+    "saltG": {
+      "numeric": 3141,
+      "unknown": 190,
+      "trace": 2,
+      "below_limit": 151,
+      "zeroNumericSubset": 42
+    },
+    "sodiumMg": {
+      "numeric": 2929,
+      "unknown": 402,
+      "trace": 4,
+      "below_limit": 149,
+      "zeroNumericSubset": 45
+    }
+  },
+  "checks": {
+    "inputWorkbookHashVerified": true,
+    "sameFoodIdsAsN01": true,
+    "sampleIds": 30,
+    "allCellsParsedWithoutFallback": true,
+    "statusFixtures": 5,
+    "invalidFixturesRejected": 5,
+    "rawAndCookedRiceAndDistinctEnergyMethods": true
+  },
+  "limits": [
+    "No per-food nutrient bibliography from composition XML",
+    "No silent nutrient completion from another food/source",
+    "Measured/estimated provenance not available per cell in this workbook",
+    "No serving or millilitre conversion in N02",
+    "Food names not localized to Portuguese; no individual nutrition targets",
+    "No app or database integration"
+  ]
+}

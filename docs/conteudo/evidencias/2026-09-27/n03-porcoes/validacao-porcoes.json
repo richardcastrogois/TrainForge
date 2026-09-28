@@ -1,0 +1,32 @@
+{
+  "passed": 26,
+  "cases": [
+    "grams",
+    "kilograms",
+    "native_ml",
+    "litres",
+    "explicit_zero",
+    "trace",
+    "unknown",
+    "upper_exclusive",
+    "invalid_quantity_0",
+    "invalid_quantity_-1",
+    "invalid_quantity_NaN",
+    "invalid_quantity_Infinity",
+    "invalid_quantity_abc",
+    "invalid_quantity_1,2,3",
+    "invalid_quantity_True",
+    "ml_to_g_without_density",
+    "g_to_ml_without_density",
+    "generic_cup",
+    "wrong_food_portion",
+    "portion_zero_denominator",
+    "complete_subtotal",
+    "incomplete_subtotal",
+    "trace_no_fake_upper",
+    "bounded_subtotal",
+    "round_only_display",
+    "bound_round_outwards"
+  ],
+  "testScope": "research data/semantics, not application integration"
+}

@@ -1,0 +1,79 @@
+{
+  "scope": "Observed local records, not automatic cross-source food or nutrient equivalence",
+  "ciqual": {
+    "format": "XLSX",
+    "idPath": "column G",
+    "valuePathExample": "column K",
+    "basis": "100 g as declared in nutrient headers",
+    "decimalSeparator": ",",
+    "nutrientIdsInWorkbook": false
+  },
+  "usda": {
+    "format": "JSON originally nested by our collector under data",
+    "artifactSha256": "0f7ab03f46157007aedf3a37b9f9fc987e763d95d361b3ac5869e6d0dd405f2d",
+    "artifactHashIsOriginalHttpBodyHash": false,
+    "foodId": 748967,
+    "dataType": "Foundation",
+    "nutrientPath": "foodNutrients[].nutrient.id",
+    "valuePath": "foodNutrients[].amount",
+    "rows": 101,
+    "groupLabelRows": 6,
+    "nonLabelRowsWithoutAmount": 0,
+    "samples": [
+      {
+        "nutrientId": 1008,
+        "name": "Energy",
+        "unitOriginal": "kcal",
+        "amount": 148.0,
+        "derivationCode": "NC"
+      },
+      {
+        "nutrientId": 1003,
+        "name": "Protein",
+        "unitOriginal": "g",
+        "amount": 12.4,
+        "derivationCode": "NC"
+      },
+      {
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "unitOriginal": "g",
+        "amount": 9.96,
+        "derivationCode": "A"
+      },
+      {
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "unitOriginal": "g",
+        "amount": 0.96,
+        "derivationCode": "NC"
+      },
+      {
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "unitOriginal": "g",
+        "amount": 0.0,
+        "derivationCode": "A"
+      },
+      {
+        "nutrientId": 1093,
+        "name": "Sodium, Na",
+        "unitOriginal": "mg",
+        "amount": 129.0,
+        "derivationCode": "A"
+      }
+    ],
+    "warning": "Carbohydrate by difference and available carbohydrate are not equivalent labels"
+  },
+  "cofid": {
+    "format": "XLSX",
+    "sampleArtifactSha256": "36f13accfe09f19b3a5fc9ecb298526ed8e764938cc2d2fe1c8bf78041b93634",
+    "quantityBasisRecorded": "Per 100 g except alcoholic drinks per 100 ml; certain FA sheets per 100 g fatty acids. These exceptions must be kept when importing.",
+    "specialValuesRecorded": {
+      "Tr": "trace, not zero",
+      "N": "present but reliable quantity unavailable, not zero",
+      "blank": "not supplied, not zero"
+    },
+    "warning": "Do not apply the Ciqual comma/sentinel parser or assume all workbook sheets use the same basis"
+  }
+}

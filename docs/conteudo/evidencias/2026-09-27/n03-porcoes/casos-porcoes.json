@@ -1,0 +1,138 @@
+{
+  "inputsAreArithmeticFixturesNotServingRecommendations": true,
+  "ciqualSampleArtifactSha256": "bf3999af1bfb0879267bb28bd6da1a76e62d6a192297c7d7bb1159ee20ac36c0",
+  "ciqualWorkbookSha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0",
+  "ciqualRice": {
+    "sourceKey": "ciqual:2025:9104",
+    "nameOriginal": "Riz blanc, cuit, sans sel ajouté",
+    "valuesBySourceColumn": {
+      "K": {
+        "raw": "155",
+        "status": "numeric",
+        "valueDecimal": "155",
+        "limitDecimal": null
+      },
+      "S": {
+        "raw": "traces",
+        "status": "trace",
+        "valueDecimal": null,
+        "limitDecimal": null
+      },
+      "T": {
+        "raw": "< 0,08",
+        "status": "below_limit",
+        "valueDecimal": null,
+        "limitDecimal": "0.08"
+      }
+    }
+  },
+  "cofidWorkbookSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+  "cofidExamples": [
+    {
+      "foodId": "14-898",
+      "name": "Almonds, weighed with shells",
+      "description": "Calculated from 14-896",
+      "edibleProportion": "0.37",
+      "specificGravity": null,
+      "energyKcalAsPublished": "205"
+    },
+    {
+      "foodId": "14-896",
+      "name": "Almonds, whole kernels",
+      "description": "Literature sources, Prunus dulcis",
+      "edibleProportion": "1",
+      "specificGravity": null,
+      "energyKcalAsPublished": "554"
+    },
+    {
+      "foodId": "17-506",
+      "name": "Beer, bitter, average (<4% ABV)",
+      "description": "<4% ABV. 5 samples from different brewers; canned, draught and bottled, including Boddingtons, John Smith, Greene King IPA, Tetley's and Caffrey's",
+      "edibleProportion": "1.00",
+      "specificGravity": null,
+      "energyKcalAsPublished": "30"
+    },
+    {
+      "foodId": "12-313",
+      "name": "Milk, semi-skimmed, pasteurised, average",
+      "description": "Average of summer/autumn and winter/spring milk. Samples from 11 areas, in glass bottles (50%), plastic containers (30%) and cartons (20%)",
+      "edibleProportion": "1.00",
+      "specificGravity": "1.03",
+      "energyKcalAsPublished": "46"
+    }
+  ],
+  "usdaDrink": {
+    "foodId": 171942,
+    "dataType": "SR Legacy",
+    "portionAsReceived": {
+      "id": 89598,
+      "dataPoints": 3,
+      "gramWeight": 240.0,
+      "sequenceNumber": 1,
+      "amount": 8.0,
+      "modifier": "fl oz (approximate weight, 1 serving)",
+      "measureUnit": {
+        "id": 9999,
+        "name": "undetermined",
+        "abbreviation": "undetermined"
+      }
+    }
+  },
+  "usdaEgg": {
+    "foodId": 748967,
+    "dataType": "Foundation",
+    "portionsAsReceived": [
+      {
+        "id": 193781,
+        "dataPoints": 526,
+        "gramWeight": 50.3,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "whole without shell",
+        "minDateAcquired": "5/14/2019",
+        "measureUnit": {
+          "id": 1099,
+          "name": "egg",
+          "abbreviation": "egg"
+        },
+        "minYearAcquired": 2019
+      },
+      {
+        "id": 312625,
+        "dataPoints": 0,
+        "gramWeight": 50.0,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "measureUnit": {
+          "id": 1121,
+          "name": "RACC",
+          "abbreviation": "RACC"
+        }
+      }
+    ]
+  },
+  "eggArtifactSha256": "0f7ab03f46157007aedf3a37b9f9fc987e763d95d361b3ac5869e6d0dd405f2d",
+  "eggArtifactIsNotOriginalBody": true,
+  "cases": {
+    "rice150g": {
+      "status": "numeric",
+      "value": "232.5"
+    },
+    "beer250ml": {
+      "status": "numeric",
+      "value": "75.0"
+    },
+    "twoEggsMassG": "100.6",
+    "drinkSourceUnits4MassG": "120.00",
+    "drinkSourceUnits4Kcal": {
+      "status": "numeric",
+      "value": "56.400"
+    },
+    "almonds100gWithShellKcal": "205",
+    "almondsDoubleAppliedFactorWrongKcal": "75.85"
+  },
+  "methodReferences": [
+    "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+    "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/"
+  ]
+}

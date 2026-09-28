@@ -6,8 +6,8 @@ Os campos abaixo foram observados em amostras. Presença na amostra não é gara
 
 ## Como recuperar sem fazer outra chamada
 
-- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **44 registros de chamadas preservadas**, incluindo tentativas sem rede e falhas; 25 respostas HTTP 200. Não são 44 APIs ou 25 fontes diferentes. Inclui as duas leituras XML do nicho N01.
-- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 12 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
+- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **51 registros de chamadas preservadas**, incluindo tentativas sem rede e falhas; 32 respostas HTTP 200. Não são 51 APIs ou 32 fontes diferentes. Inclui N01/N03 e os quatro GETs do primeiro incremento N04.
+- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 19 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
 - [Pilotos conferidos](evidencias/2026-09-26/pilotos-resumo.json): resultados dos analisadores, separados do retorno original.
 - Respostas integrais e planilhas indicadas como **locais** não acompanham o clone Git. Metadados, scripts e resumos permitem localizar/reproduzir legitimamente a coleta. O clone sozinho não contém todos os insumos.
 
@@ -220,9 +220,176 @@ python docs/conteudo/evidencias/analisar-identidades.py
 & ./docs/conteudo/evidencias/coletar-identidades.ps1
 ```
 
-**Resultado N01:** identidade alimentar demonstrada neste recorte. **Próximo: N02**, composição/calorias com método/unidade/ausentes. Tradução pt-PT, medidas, fotos e guias mantêm seus nichos, sem check automático.
+**Resultado N01:** identidade alimentar demonstrada neste recorte. N02 amplia a composição abaixo. Tradução pt-PT, medidas, fotos e guias mantêm seus nichos, sem check automático.
 
-## AL02 / AL06 — produtos e fontes sem resposta de negócio
+### N02 — composição nutricional e campos utilizáveis
+
+Reanálise local em 26/09/2026 da **mesma planilha Ciqual 2025 recebida em 23/09**, com SHA-256 conferido. Nenhum alimento foi novamente transferido. A chamada XLSX e seus metadados estão na seção AL04 acima. O [analisador N02](evidencias/analisar-composicao.py) cruza os IDs com N01, lê todos os valores e produz:
+
+- [Dicionário dos 74 campos](evidencias/2026-09-26/n02-composicao/dicionario-composicao.json): cabeçalho literal, coluna, unidade, base, método, contagens e chave sugerida quando definida.
+- [Resumo de cobertura](evidencias/2026-09-26/n02-composicao/resumo-composicao.json): resultado integral e limites.
+- [30 exemplos](evidencias/2026-09-26/n02-composicao/amostra-composicao.json): mesmos IDs selecionados em N01, com valores e qualificadores.
+- [Comparação Ciqual/USDA/CoFID](evidencias/2026-09-26/n02-composicao/comparacao-contratos.json): diferenças efetivamente observadas nos arquivos locais.
+
+O normalizado integral fica em `docs/conteudo/evidencias/2026-09-26/raw/n02-composicao-normalizada.json`, excluído do Git. É material de pesquisa, não seed do app.
+
+**Retorno comprovado:** 3.484 IDs de alimentos × 74 campos = **257.816 células**. São 151.981 valores numéricos, 83.246 desconhecidos, 2.514 traços e 20.075 limites superiores exclusivos. Entre os numéricos há **30.870 zeros expressos pela fonte**; não são valores preenchidos pelo analisador. O fator de Jones, coluna CF, fica separado dos 74 campos nutricionais.
+
+| Campo sugerido do app | Coluna real | Unidade/base | Numéricos / ausentes / traço / limite |
+|---|---|---|---|
+| `energyKcalEu` | K | kcal / 100 g | 3.339 / 143 / 2 / 0 |
+| `energyKjEu` | J | kJ / 100 g | 3.339 / 143 / 2 / 0 |
+| `proteinNx625G` | P | g / 100 g | 3.451 / 29 / 4 / 0 |
+| `carbohydrateG` | Q | g / 100 g | 3.272 / 70 / 134 / 8 |
+| `fatG` | R | g / 100 g | 3.283 / 20 / 15 / 166 |
+| `sugarsG` | S | g / 100 g | 2.996 / 223 / 205 / 60 |
+| `fibreG` | AA | g / 100 g | 3.239 / 70 / 45 / 130 |
+| `saturatedFatG` | AF | g / 100 g | 3.093 / 248 / 8 / 135 |
+| `saltG` | AX | g / 100 g | 3.141 / 190 / 2 / 151 |
+| `sodiumMg` | BI | mg / 100 g | 2.929 / 402 / 4 / 149 |
+
+**Seleção para implementação futura:** usar esse conjunto de dez campos como base da ficha nutricional, com energia K/J e proteína P identificadas pelo método. Guardar também os 74 campos originais para detalhe técnico, incluindo minerais, vitaminas, ácidos gordos e formas específicas de folato/vitamina D. Não somar variantes de um mesmo nutriente nem tratar µg, mg e g como a mesma unidade. Não escolher uma coluna pela posição depois de uma atualização sem conferir o cabeçalho e a edição.
+
+Há **3.006 alimentos com K/P/Q/R numéricos simultaneamente** e **2.205 com os dez campos numéricos**. A disponibilidade de um nome em N01 não garante calorias ou micronutrientes completos. Esses números medem preenchimento do arquivo, não qualidade clínica, adequação individual ou cobertura portuguesa.
+
+**Métodos conferidos:** a [documentação oficial Ciqual 2025, seção 3.3.6](https://ciqual.anses.fr/cms/sites/default/files/inline-files/Table%20Ciqual%202025%20doc%20FR_2025_11_19.pdf) distingue a energia calculada com proteína N×6,25 da calculada com fatores de Jones. Fibra, álcool, polióis e ácidos orgânicos também entram no método da fonte; não substituir a energia publicada por uma conta simplificada de três macros. Algumas estimativas internas usadas pelo fornecedor não são publicadas como valores dos nutrientes. Portanto, energia conhecida não autoriza preencher os campos ausentes com zero. A consulta documental foi via web; não houve novo corpo HTTP dessa documentação arquivado no índice então com 44 chamadas; a expansão N03 não inclui uma nova cópia desse PDF Ciqual.
+
+Exemplo real: arroz branco cru `9100` tem **350 kcal** na coluna K e **348 kcal** na M; são métodos diferentes. O arroz branco cozido `9104` tem **155 kcal**, proteína P **3,31 g**, hidratos Q **33,2 g**, gordura R **0,7 g**, açúcares S em **traços** e frutose T **< 0,08 g**, por 100 g. Não trocar o registro cru pelo cozido nem arredondar o limite para zero.
+
+Formato **criado pelo analisador**, não resposta de uma API Ciqual:
+
+```json
+{
+  "sourceFoodId": "9104",
+  "valuesBySourceColumn": {
+    "K": {"raw": "155", "status": "numeric", "valueDecimal": "155", "limitDecimal": null},
+    "S": {"raw": "traces", "status": "trace", "valueDecimal": null, "limitDecimal": null},
+    "T": {"raw": "< 0,08", "status": "below_limit", "valueDecimal": null, "limitDecimal": "0.08"}
+  }
+}
+```
+
+O dicionário fornece unidade/base/método para cada coluna. A planilha não fornece IDs de constituintes: `sourceNutrientId` fica nulo; K é uma coordenada desta edição, não um ID de nutriente inventado. `valueDecimal` e `limitDecimal` são strings decimais exatas; o valor original é preservado. Os estados são: `numeric` (inclui zero), `unknown`, `trace` e `below_limit`. Valores desconhecidos não recebem zero nem são copiados de um alimento parecido. O importador falha diante de um formato não reconhecido.
+
+**Diferenças que a implementação deve respeitar:** USDA usa IDs de nutrientes e `foodNutrients[].amount`; as linhas de agrupamento podem não ter `amount` e não são nutrientes zerados. A busca tem outro formato. CoFID usa outras colunas, convenções e bases: a evidência registra exceções de 100 ml para bebidas alcoólicas e folhas de ácidos gordos. Não reutilizar cegamente o parser Ciqual. “Hidratos por diferença” e “hidratos disponíveis” não são equivalências automáticas. Não combinar nutrientes de duas fontes pelo nome traduzido do alimento.
+
+```powershell
+# Reconstrução local; sem chamada externa e sem alterar app/banco.
+python docs/conteudo/evidencias/analisar-composicao.py
+```
+
+**Fechamento N02:** composição, campos, métodos, unidades, cobertura e semântica de ausentes demonstrados neste recorte. Falta homologação editorial/pt-PT, integração e proveniência bibliográfica por célula, que o XLSX não entrega. Nada disso foi marcado como implementado. **N03**, concluído abaixo em 27/09, tratou quantidades consumidas, unidades, porções e limites de conversão; metas pessoais e dietas pertencem a outros nichos.
+
+### N03 — quantidades, porções, volume e preparo
+
+**Pesquisa concluída no recorte abaixo em 27/09/2026**, após validação do N02. O piloto preparado em 26/09 não tinha sido executado: a revisão automática falhou por esgotamento de cota. Na retomada, passou e foi ampliado. Esta conclusão define regras demonstradas e limites de conversão; não disponibiliza uma tabela universal de medidas nem implementa o diário no app.
+
+**Artefatos para implementação futura:** [resumo](evidencias/2026-09-27/n03-porcoes/resumo-porcoes.json), [casos com valores reais](evidencias/2026-09-27/n03-porcoes/casos-porcoes.json), [26 verificações](evidencias/2026-09-27/n03-porcoes/validacao-porcoes.json), [duplicidade CoFID](evidencias/2026-09-27/n03-porcoes/duplicidades-cofid.json), [analisador](evidencias/analisar-porcoes.py). O [piloto inicial](evidencias/2026-09-27/n03-porcoes/piloto-inicial.json) é preservado como passo anterior, não como estado final.
+
+#### Chamadas novas e formato recebido
+
+Foram três GETs em 27/09, todos HTTP 200. O [coletor](evidencias/coletar-porcoes.ps1) usa TLS padrão, `User-Agent: TrainForgeResearch/0.5 (portion research)` e `Accept: application/json,application/pdf,text/html`; guarda sucessos/falhas e não repete automaticamente. A autenticação da API usa apenas a chave pública de demonstração. Os corpos integrais ficam em `docs/conteudo/evidencias/2026-09-27/raw/`, ignorados pelo Git.
+
+| Origem/chamada | Retorno observado | Registro com data, headers e SHA-256 |
+|---|---|---|
+| `GET https://api.nal.usda.gov/fdc/v1/food/171942?api_key=DEMO_KEY` | JSON, 33.327 bytes; bebida de arroz sem açúcar, `SR Legacy`. ID já encontrado na busca local anterior | [USDA 171942](evidencias/2026-09-27/n03-porcoes/usda-rice-drink.evidencia.json) |
+| [Guia CoFID 2021](https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf) | PDF, 777.103 bytes; páginas 7 e 9 conferidas para bases e fatores | [Guia CoFID](evidencias/2026-09-27/n03-porcoes/cofid-guide.evidencia.json) |
+| [USDA Foundation Foods Documentation](https://fdc.nal.usda.gov/Foundation_Foods_Documentation/) | HTML, 162.792 bytes; seções Weights e Limits of Quantification | [Guia USDA](evidencias/2026-09-27/n03-porcoes/usda-foundation-guide.evidencia.json) |
+
+A primeira URL antiga do guia CoFID, ainda indexada pela pesquisa web, não abriu nessa ferramenta. O link atual foi obtido na [publicação oficial](https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid) e funcionou. Não repetir o endereço antigo.
+
+`foodPortions[0]` do alimento USDA `171942` trouxe **`id: 89598`, `amount: 8`, `gramWeight: 240`, `dataPoints: 3`**, `measureUnit.id: 9999`, `measureUnit.name: "undetermined"` e `modifier: "fl oz (approximate weight, 1 serving)"`. Os 240 g correspondem às oito unidades descritas pela fonte. Quatro dessas unidades correspondem a 120 g; metade da porção não pesa 240 g. O peso é aproximado e a descrição original deve acompanhar a seleção. Não substituir silenciosamente por “copo de 250 ml” ou “chávena portuguesa”.
+
+A chamada antiga USDA `748967`, reaproveitada sem rede, tem duas porções distintas: `193781` para ovo inteiro sem casca, 1 unidade/50,3 g, e `312625` para RACC, 1/50 g. A segunda é uma referência regulatória, não outro peso intercambiável de um ovo.
+
+#### Fatores que já estavam na planilha CoFID
+
+A aba `1.2 Factors` corresponde a `xl/worksheets/sheet3.xml`; a composição a `sheet4.xml`. A coluna A é o código, B o nome, C a descrição, **H a proporção comestível e I a densidade relativa**. A planilha de 23/09 foi reutilizada e seu hash reconferido.
+
+**Correção da contagem anterior:** cada aba tem 2.760 linhas alimentares e 2.759 IDs distintos. O código **`13-669` aparece duas vezes em ambas**, associado a berinjela assada em óleo e a agrião cru; os nomes/valores originais estão no artefato de duplicidade. O piloto registra as duas linhas e exclui esse ID, sem escolher uma arbitrariamente. Restam **2.758 IDs com correspondência única** entre as abas. Nesse conjunto, 2.724 proporções comestíveis são numéricas e 34 desconhecidas; apenas 54 densidades relativas são numéricas, contra 2.704 desconhecidas. A contagem antiga “2.760 alimentos” media linhas, não identidade única validada.
+
+O guia CoFID define a proporção comestível como a fração restante após descarte e a densidade relativa como uma razão em relação à água. Ela é adimensional: **1,03 não é, por si só, uma medição documentada de 1,03 g/ml**. Sem condições/densidade de referência ou outra relação massa-volume comprovada, esta pesquisa não habilita conversão automática de ml para g. A própria planilha diferencia bases por 100 g, bebidas alcoólicas por 100 ml e certas folhas por 100 g de ácidos gordos; esses denominadores não podem ser misturados. [Fonte: guia CoFID, páginas 7 e 9](https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf).
+
+Exemplo de dupla aplicação a evitar: `14-898`, amêndoas pesadas com casca, já traz **205 kcal por 100 g nessa condição** e informa origem calculada de `14-896`, miolo, com 554 kcal/100 g. O fator comestível é 0,37. A relação 554 × 0,37 = 204,98 explica o valor publicado arredondado. Aplicar 0,37 novamente sobre 205 daria 75,85 kcal e estaria errado para esse registro.
+
+#### Regras demonstradas e retorno esperado
+
+As quantidades a seguir são entradas fictícias de verificação aritmética, não porções recomendadas.
+
+| Entrada e origem | Resultado esperado | Condição |
+|---|---|---|
+| 150 g do arroz cozido Ciqual `9104`, 155 kcal/100 g | 232,5 kcal | Usar a ficha do alimento/preparo efetivamente pesado |
+| 0,15 kg do mesmo alimento | Mesmo resultado | Converter apenas dentro da dimensão massa |
+| 250 ml da cerveja CoFID `17-506`, 30 kcal/100 ml | 75 kcal | Exemplo para verificar base volumétrica nativa, não sugestão de consumo |
+| 2 ovos da porção USDA `193781` | 100,6 g | Preservar alimento, porção e descrição “sem casca” |
+| 4 unidades da medida descrita na porção USDA `89598` | 120 g e 56,4 kcal | `massa = quantidade / amount × gramWeight`; peso aproximado; energia da mesma ficha |
+| Frutose `< 0,08 g/100 g`, massa de 150 g | `< 0,12 g` | O limite permanece exclusivo, não vira uma quantidade exata |
+| Açúcar em traços ou nutriente desconhecido | Estado preservado | Não converter para zero |
+| 100 g de amêndoas já pesadas com casca `14-898` | 205 kcal | Não reaplicar o fator comestível |
+
+Para uma base de 100 g, o método usa valor × massa/100; os pesos de porção Foundation Foods se referem à parte comestível, e as porções pertencem ao tipo de dado/alimento. A documentação USDA também informa que limites de quantificação podem ser guardados num campo próprio com valor do componente igual a zero: um futuro adaptador deve conferir esse qualificador antes de interpretar zero. [Fonte: USDA, Weights e Limits of Quantification](https://fdc.nal.usda.gov/Foundation_Foods_Documentation/).
+
+Campos que o aplicativo precisará preservar: `sourceId`, versão, `foodId`, preparo/condição, nutriente/método/unidade, quantidade e unidade da base, quantidade/unidade consumida, `portionId`, `amount`, `gramWeight`, descrição da medida, aproximação e origem da conversão. Esses nomes são proposta de contrato interno, não campos já existentes no backend.
+
+Resultados sem conversão devem ser explícitos: `needs_source_conversion` para dimensões diferentes ou medida genérica; `portion_food_mismatch` para porção de outro alimento; `invalid_quantity` para zero/negativo/não finito/entrada inválida. São resultados do protótipo de pesquisa; a interface futura deverá permitir corrigir, pesar ou escolher outra medida válida.
+
+Para somas, manter **subtotal conhecido** e estado `incomplete` quando houver ausentes/traços/limites. Um limite superior só é calculável no recorte testado quando todos os termos forem numéricos ou limites conhecidos, com a mesma unidade e definição de nutriente. Não somar energia ou nutrientes de métodos incompatíveis automaticamente. Conservar decimais durante o cálculo e arredondar apenas na apresentação; arredondar limites para fora, sem transformar `< 0,004` em `< 0,00`.
+
+**O que temos:** cálculo por massa e volume nativo, duas fichas USDA com três registros de porção auditados, fatores CoFID com cobertura medida, tratamento de parte comestível, erros, estados e arredondamento demonstrados em 26 verificações. **O que falta:** tabela ampla de medidas caseiras em Portugal, condições de densidade suficientes para conversões gerais, rendimentos/retenção por preparo e validação editorial das medidas apresentadas. Não deduzir rendimento cru→cozido pela razão entre calorias de duas fichas; preferir a ficha e o peso do preparo consumido. Esses limites continuam registrados para implementação/expansão.
+
+```powershell
+# Pesquisa reproduzível, sem rede; requer os insumos locais documentados.
+python docs/conteudo/evidencias/analisar-porcoes.py
+# Somente para obter os três insumos se ausentes; falhas também ficam em cache.
+powershell -File docs/conteudo/evidencias/coletar-porcoes.ps1
+```
+
+## N04 — produtos vendidos em Portugal
+
+**Em andamento — 27/09/2026.** A pedido do autor, N03 foi reproduzido novamente: 26 verificações passaram. N04 começou com uma amostra pequena para respeitar a cota restante. Não foi encerrado nem iniciamos N05. [Resumo](evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json), [amostra](evidencias/2026-09-27/n04-produtos-portugal/amostra-produtos.json), [comparação das versões](evidencias/2026-09-27/n04-produtos-portugal/comparacao-v2-v3.json).
+
+### Chamadas, retorno e prova
+
+O [coletor N04](evidencias/coletar-produtos-portugal.ps1) executou **quatro GETs; todos HTTP 200**. Guarda sucessos/falhas, tem timeout de 25 s e limite de buffer de 1 MiB; não usa credenciais nem repete falhas. Headers: `Accept: application/json,text/html` e `User-Agent: TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)`. Corpos em `2026-09-27/raw/` são locais e ignorados pelo Git.
+
+| GET | Resultado | Evidência |
+|---|---|---|
+| `https://openfoodfacts.github.io/openfoodfacts-server/api/` | Documentação HTML, 67.582 bytes | [Data/hash/chamada](evidencias/2026-09-27/n04-produtos-portugal/off-api-guide.evidencia.json) |
+| `https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/` | Guia de licenças HTML, 43.523 bytes | [Data/hash/chamada](evidencias/2026-09-27/n04-produtos-portugal/off-license-guide.evidencia.json) |
+| `https://world.openfoodfacts.org/api/v2/search` com parâmetros abaixo | JSON, 28.667 bytes; dez produtos | [URL completa, data e hash](evidencias/2026-09-27/n04-produtos-portugal/off-portugal-10.evidencia.json) |
+| `https://world.openfoodfacts.org/api/v3.6/product/5449000054227` com os mesmos `fields` | JSON, 978 bytes; produto encontrado | [URL completa, data e hash](evidencias/2026-09-27/n04-produtos-portugal/off-product-observed.evidencia.json) |
+
+Busca: `countries_tags=en:portugal`, `page_size=10`, `page=1`, `sort_by=unique_scans_n`. Projeção `fields`: `code,product_name,product_name_pt,brands,countries_tags,lang,quantity,product_quantity,product_quantity_unit,serving_size,serving_quantity,serving_quantity_unit,nutrition_data_per,nutriments,last_modified_t`. O código do detalhe foi escolhido da primeira linha recebida, sem inventar um código de exemplo.
+
+**Correção do histórico:** a documentação consultada distingue busca estruturada v2 de leitura de produto v3.6. A chamada antiga `/api/v3.6/search` não demonstra um endpoint de busca válido. As tentativas v2 anteriores também responderam 503 e continuam preservadas; a causa exata da falha não foi determinada. A documentação cita limites globais que podem produzir 503; isso não prova bloqueio desta conta/IP. Limites documentados nesta consulta: 10 buscas e 15 leituras de produto por minuto/IP; não usar busca a cada tecla. [Documentação primária](https://openfoodfacts.github.io/openfoodfacts-server/api/).
+
+### O que efetivamente recebemos
+
+- Envelope v2: `count: 22688`, `page: 1`, `page_count: 10`, `page_size: 10`, `skip: 0` e `products`. **22.688 é a contagem informada pela busca nesse momento**, não itens que auditamos nem prova de cobertura integral do mercado português.
+- Dez códigos distintos, preservados como strings; dez verificações aritméticas de dígito de controlo passaram. Isso não verifica titularidade da marca ou autenticidade do produto.
+- Todos os dez têm a marcação `en:portugal`; seis têm `product_name_pt` não vazio, nove têm marca e nove têm quantidade de porção. Nome em português não comprova revisão pt-PT. Filtro de país não comprova fabricação portuguesa nem disponibilidade atual numa loja.
+- Todos trazem energia numérica na busca. É uma primeira página ordenada por popularidade de leituras, com marcas internacionais; não amostra representativa por marca/categoria.
+
+| Código original | Campo/nome recebido | Exemplo de limitação |
+|---|---|---|
+| `5449000054227` | Coca-Cola Original Taste; `product_name_pt: Sabor Original`; embalagem 1 L, porção 250 ml | Busca tem `energy-kcal_100g: 42` e `energy-kcal_serving: 105`; detalhe v3.6 tem `nutriments: {}` |
+| `20724696` | Amandes décortiquées; `product_name_pt: Amêndoas natural` | `brands` vazio; não inventar marca pela descrição |
+| `8000500426494` | Nutella Plant-Based; Ferrero, Nutella | Nome português não recebido |
+| `3045140105502` | Chocolat au lait; Milka | Nome português vazio e porção não recebida |
+
+O detalhe retornou `status: success`, `result.id: product_found`, `errors: []`, `warnings: []` e `product`; código, marca e nome conferem com a busca. Porém **`nutriments` veio vazio**, com a mesma projeção solicitada. Ainda não foi demonstrado se a diferença vem do schema, de `fields`, da versão ou de outro comportamento. Não completar com zero nem substituir silenciosamente o valor de outra versão. O retorno usa `nutrition_data_per: 100g` mesmo no exemplo de embalagem em ml; também não inferir densidade por essa combinação.
+
+### O que temos e o que falta
+
+**Temos:** primeira amostra real de produtos marcados para Portugal, rastreabilidade completa, disponibilidade/ausência dos campos medida e identidade de um código confirmada por detalhe. O [analisador](evidencias/analisar-produtos-portugal.py) reconfere os quatro hashes, contagens, unicidade, país, dígitos e resposta de negócio, sem rede.
+
+**Falta para fechar N04:** conferir o schema nutricional e a projeção do detalhe antes de nova chamada pontual; definir uma amostra justificada que cubra marcas/categorias relevantes em Portugal; documentar produto não encontrado, busca vazia e falhas para o futuro adaptador. Não ampliar para fotografias/alergénios/receitas de outros nichos neste incremento.
+
+**Direitos:** o guia oficial aponta ODbL para a base, DbCL para conteúdos individuais e CC BY-SA para imagens, com possíveis direitos de terceiros. Atribuição e tratamento de base derivada continuam decisões de publicação; não foram homologados nesta coleta. Nenhuma imagem foi solicitada e não houve contato, cadastro ou publicação externa. [Guia primário de licenças](https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/).
+
+Reprodução local: `python docs/conteudo/evidencias/analisar-produtos-portugal.py`. Não executar o coletor para reler contexto: os quatro resultados e as falhas antigas já estão preservados.
+
+## AL02 / AL06 — histórico de respostas sem negócio
 
 | Tentativa | Resposta efetivamente recebida | O que NÃO temos |
 |---|---|---|
@@ -232,7 +399,7 @@ python docs/conteudo/evidencias/analisar-identidades.py
 
 A consulta OFF de 26/09 usou `countries_tags=en:portugal`, `page_size=30`, `sort_by=unique_scans_n` e pediu `code,product_name,product_name_pt,brands,nutriments,serving_size,serving_quantity,nutrition_data_per,countries_tags,last_modified_t,lang,image_front_url,image_nutrition_url,ingredients_text,allergens_tags`. **Essa é a seleção enviada; não uma resposta observada.** Sua URL codificada integral está no índice. [Coletor usado](evidencias/coletar-pilotos.py).
 
-PortFIR, BLS, Frida e outras fontes apenas documentais não possuem corpo amostrado aqui. Não produzir exemplo JSON fictício e apresentá-lo como retorno real. Cada uma mantém estado/data/próxima ação em [fontes.json](fontes.json).
+Para AL02, a primeira amostra válida está no N04 acima; os registros anteriores permanecem históricos. PortFIR, BLS, Frida e outras fontes apenas documentais não possuem corpo amostrado aqui. Não produzir exemplo JSON fictício e apresentá-lo como retorno real. Cada uma mantém estado/data/próxima ação em [fontes.json](fontes.json).
 
 ## CI06 — Compêndio: HTML reduzido a código, descrição e MET
 

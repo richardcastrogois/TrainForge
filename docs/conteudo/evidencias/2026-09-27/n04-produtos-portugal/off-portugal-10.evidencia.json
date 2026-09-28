@@ -1,0 +1,18 @@
+{
+    "id":  "off-portugal-10",
+    "url":  "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal\u0026page_size=10\u0026page=1\u0026sort_by=unique_scans_n\u0026fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Ccountries_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-27T16:45:54.5100113Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  28667,
+    "bodyFile":  "../raw/off-portugal-10.json",
+    "sha256":  "38bf12c9e5315fdef9c866bb08f595d508795045b4ea674869476a8f78aeb3cc",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  ""
+}

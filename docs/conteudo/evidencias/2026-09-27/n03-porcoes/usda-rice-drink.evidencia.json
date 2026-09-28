@@ -1,0 +1,16 @@
+{
+  "id": "usda-rice-drink",
+  "url": "https://api.nal.usda.gov/fdc/v1/food/171942?api_key=DEMO_KEY",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-27T14:51:45.7168579Z",
+  "requestHeaders": {
+    "Accept": "application/json,application/pdf,text/html",
+    "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+  },
+  "client": "Invoke-WebRequest; default TLS verification",
+  "status": 200,
+  "use": "research_only",
+  "bytes": 33327,
+  "bodyFile": "../raw/usda-rice-drink.json",
+  "sha256": "599a33339e77affe256cd5ab0072f64329883e0a7c6f9c03326ac092ee2d7777"
+}

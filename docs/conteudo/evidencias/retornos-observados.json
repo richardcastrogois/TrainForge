@@ -572,6 +572,153 @@
       "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
     },
     {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/cofid-guide.evidencia.json",
+      "artifactSha256": "dd034598198d5d443a3c46907703a36957658db08997bee0570fdba177f4e33d",
+      "request": {
+        "method": "GET",
+        "url": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,application/pdf,text/html",
+          "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T14:51:47.0111689Z",
+      "httpStatus": 200,
+      "responseBytes": 777103,
+      "originalResponseSha256": "cbac83af403531f1db260a15de058ceca1c1bae6707a8748ee3788fee7f945ec",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/../raw/cofid-guide.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/usda-foundation-guide.evidencia.json",
+      "artifactSha256": "f7f228d3e33e56a9f3e8ed1057e480bdfaa338ed4531796ece0c4167229efe54",
+      "request": {
+        "method": "GET",
+        "url": "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,application/pdf,text/html",
+          "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T14:51:48.9655375Z",
+      "httpStatus": 200,
+      "responseBytes": 162792,
+      "originalResponseSha256": "4d35804e1b2e32f5441a6708087585f1fe4571e34e3f02dd9e8318c5ed8bd1af",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/../raw/usda-foundation-guide.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/usda-rice-drink.evidencia.json",
+      "artifactSha256": "99585b273e60236a96ad1c89b4c1db8f5a0e7a22811da0f029b7089bb1c8be27",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nal.usda.gov/fdc/v1/food/171942?api_key=DEMO_KEY",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,application/pdf,text/html",
+          "User-Agent": "TrainForgeResearch/0.5 (portion research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T14:51:45.7168579Z",
+      "httpStatus": 200,
+      "responseBytes": 33327,
+      "originalResponseSha256": "599a33339e77affe256cd5ab0072f64329883e0a7c6f9c03326ac092ee2d7777",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n03-porcoes/../raw/usda-rice-drink.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/off-api-guide.evidencia.json",
+      "artifactSha256": "214f0edeb5dcbf1c9c41f43e629c22958468c0fb5dc777c1c154d658ae691485",
+      "request": {
+        "method": "GET",
+        "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T16:45:53.9874672Z",
+      "httpStatus": 200,
+      "responseBytes": 67582,
+      "originalResponseSha256": "73df9ef71b333e22533d693be5d19c68e914fc1ee79625b1aa6dc1e9812ff0f9",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/../raw/off-api-guide.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/off-license-guide.evidencia.json",
+      "artifactSha256": "fee34dda84c4f72bba90fb206382aba50959f54fb2f99c8965278e643e5e8e74",
+      "request": {
+        "method": "GET",
+        "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T16:45:54.3334129Z",
+      "httpStatus": 200,
+      "responseBytes": 43523,
+      "originalResponseSha256": "59abf2a490824761162f65eacb05700fcbdfe85313f78c71b55310ec480f38a9",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/../raw/off-license-guide.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/off-portugal-10.evidencia.json",
+      "artifactSha256": "6120dbc920a9c02d4b74384e17f5b0faf62742b1f20dd75aa0d39412d9cdb42a",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&page_size=10&page=1&sort_by=unique_scans_n&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Ccountries_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T16:45:54.5100113Z",
+      "httpStatus": 200,
+      "responseBytes": 28667,
+      "originalResponseSha256": "38bf12c9e5315fdef9c866bb08f595d508795045b4ea674869476a8f78aeb3cc",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/../raw/off-portugal-10.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/off-product-observed.evidencia.json",
+      "artifactSha256": "0a6f6e27f5a6fc656168ff5c36b61f75ffa2352d6f007eb33e0c4093915204ec",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5449000054227?fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Ccountries_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-27T16:45:55.8583678Z",
+      "httpStatus": 200,
+      "responseBytes": 978,
+      "originalResponseSha256": "6c5753459a19fc0f075504996fc3bad7484f9c0d3d98fbbcff0032a79faaa09d",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/../raw/off-product-observed.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
       "evidenceFile": "docs/conteudo/evidencias/ciqual-2025-metadata.evidencia.json",
       "artifactSha256": "0e17991b1051f990885c6cda4bc773cfff8f24126cee7c09558ce34c8c6b214d",
       "request": {

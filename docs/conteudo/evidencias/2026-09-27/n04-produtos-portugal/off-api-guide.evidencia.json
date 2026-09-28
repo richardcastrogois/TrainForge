@@ -1,0 +1,18 @@
+{
+    "id":  "off-api-guide",
+    "url":  "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-27T16:45:53.9874672Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  67582,
+    "bodyFile":  "../raw/off-api-guide.html",
+    "sha256":  "73df9ef71b333e22533d693be5d19c68e914fc1ee79625b1aa6dc1e9812ff0f9",
+    "contentType":  "text/html; charset=utf-8",
+    "retryAfter":  ""
+}

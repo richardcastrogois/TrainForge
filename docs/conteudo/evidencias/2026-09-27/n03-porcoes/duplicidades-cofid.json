@@ -1,0 +1,45 @@
+{
+  "sourceId": "AL05",
+  "workbookSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+  "policy": "Exclude repeated IDs in this pilot; do not silently choose the first/last row",
+  "proximates": [
+    {
+      "A": "13-669",
+      "B": "Aubergine, flesh and skin, roasted in rapeseed oil",
+      "C": "11 samples, UK and imported, roasted in a small amount of rapeseed oil for 20-30 minutes",
+      "D": "DG",
+      "J": "2.1",
+      "K": "3.8",
+      "L": "5.2",
+      "M": "62"
+    },
+    {
+      "A": "13-669",
+      "B": "Watercress, raw",
+      "C": "11 samples, UK and imported",
+      "D": "DG",
+      "J": "1.9",
+      "K": "0.3",
+      "L": "Tr",
+      "M": "10"
+    }
+  ],
+  "factors": [
+    {
+      "A": "13-669",
+      "B": "Aubergine, flesh and skin, roasted in rapeseed oil",
+      "C": "11 samples, UK and imported, roasted in a small amount of rapeseed oil for 20-30 minutes",
+      "D": "DG",
+      "H": "1",
+      "I": null
+    },
+    {
+      "A": "13-669",
+      "B": "Watercress, raw",
+      "C": "11 samples, UK and imported",
+      "D": "DG",
+      "H": "1",
+      "I": null
+    }
+  ]
+}

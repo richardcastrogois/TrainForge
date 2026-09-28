@@ -1,0 +1,18 @@
+{
+    "id":  "off-product-observed",
+    "url":  "https://world.openfoodfacts.org/api/v3.6/product/5449000054227?fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Ccountries_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-27T16:45:55.8583678Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  978,
+    "bodyFile":  "../raw/off-product-observed.json",
+    "sha256":  "6c5753459a19fc0f075504996fc3bad7484f9c0d3d98fbbcff0032a79faaa09d",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  ""
+}

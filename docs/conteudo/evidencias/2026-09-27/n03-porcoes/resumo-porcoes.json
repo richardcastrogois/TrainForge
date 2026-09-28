@@ -1,0 +1,40 @@
+{
+  "niche": "N03",
+  "researchDate": "2026-09-27",
+  "researchStatus": "completed_with_explicit_scope_limits",
+  "releaseApproved": false,
+  "cofidFoodIdsMatched": 2758,
+  "cofidFoodRows": 2760,
+  "cofidFoodUniqueIds": 2759,
+  "duplicateFoodIdsExcluded": [
+    "13-669"
+  ],
+  "duplicateFactorIdsExcluded": [
+    "13-669"
+  ],
+  "cofidFactorRows": 2758,
+  "foodsWithoutFactors": [],
+  "factorsWithoutFoods": [],
+  "factorCoverage": {
+    "edibleProportion": {
+      "unknown": 34,
+      "numeric": 2724
+    },
+    "specificGravity": {
+      "unknown": 2704,
+      "numeric": 54
+    }
+  },
+  "providerPortionRecordsAudited": 3,
+  "httpBodiesVerified": 3,
+  "cofidWorkbookHashVerified": true,
+  "checksPassed": 26,
+  "limits": [
+    "No universal household-measure catalogue approved for Portugal",
+    "No matching across provider food IDs",
+    "Specific gravity is dimensionless, not measured density in g/ml; no automatic conversion without reference conditions",
+    "No general raw/cooked yield or nutrient-retention table obtained; use the actual preparation entry",
+    "No portion suggestions or personal nutrition targets",
+    "No app/bank integration; local research only"
+  ]
+}

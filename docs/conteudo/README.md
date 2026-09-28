@@ -1,10 +1,12 @@
 # Base de conteúdo do TrainForge
 
-**Foco atual por decisão do autor — 26/09/2026:** continuar a etapa 01 em **46 nichos**, um de cada vez. [Fila e critérios](../planejamento/etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). **N01 concluído para pesquisa:** 3.484 identidades alimentares Ciqual, nomes FR/EN e grupos conferidos; preparo no nome, português ainda ausente. [Evidência e chamadas](evidencias-para-integracao.md#n01--retorno-xml-de-identidade-alimentar). Próximo: **N02 — calorias e composição por alimento**. Integração/publicação continuam pendentes.
+**Estado atual — 27/09:** N01–N03 concluídos nos recortes de pesquisa; N03 reproduzido novamente com 26 verificações aprovadas. **N04 em andamento:** primeira amostra OFF de 10 produtos com marcação Portugal e um detalhe por código recebidos; divergência nutricional v2/v3.6 ainda por esclarecer. Resumo: `docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json`. Etapa 01 aberta; N05 não iniciado. Commit `7dc6531` publicou até N01; N02–N04 locais. Graphify: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Validação documental/local do primeiro incremento N04 concluída após a retomada.
+
+**Foco por decisão do autor:** continuar a etapa 01 em [46 nichos](../planejamento/etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um de cada vez. N01 demonstrou identidades Ciqual; N02, composição; N03, quantidades/porções e limites de conversão. [Fechamento N03](evidencias-para-integracao.md#n03--quantidades-porções-volume-e-preparo). **N04 iniciado:** dez produtos recebidos; validar a diferença de retorno v2/v3.6 antes de fechar o nicho. Integração/publicação continuam pendentes.
 
 **Para implementar a partir das evidências:** [retornos, origens e chamadas observadas](evidencias-para-integracao.md). O documento distingue corpo original, envelope do coletor e campos normalizados; liga os exemplos aos arquivos/hashes. O [índice de chamadas](evidencias/retornos-observados.json) permite recuperar a evidência sem consultar novamente os fornecedores.
 
-**Pilotos anteriores do mesmo dia, 26/09/2026:** [resultados conferidos](evidencias/2026-09-26/pilotos-resumo.json) com 27 sessões de corrida NHS, sete movimentos de força e cálculo por massa de 12 alimentos CoFID. Catálogo atual: **45 fontes/famílias**; apenas as fichas datadas de 26/09 foram reconferidas/ampliadas. OFF voltou a responder 503. O autor decidiu continuar a [etapa 01](../planejamento/etapa-01-pesquisa.md) por nichos antes de retomar o design. Os pilotos não são conteúdo homologado no app.
+**Pilotos anteriores, 26/09/2026:** [resultados conferidos](evidencias/2026-09-26/pilotos-resumo.json) com 27 sessões de corrida NHS, sete movimentos de força e cálculo por massa de 12 alimentos CoFID. Catálogo atual: **45 fontes/famílias**; apenas as fichas datadas de 26/09 foram reconferidas/ampliadas. OFF voltou a responder 503. O autor decidiu continuar a [etapa 01](../planejamento/etapa-01-pesquisa.md) por nichos antes de retomar o design. Os pilotos não são conteúdo homologado no app.
 
 **Visão revista em 24/09/2026; pesquisa ampliada entregue em 23/09/2026.** Reabre e aprofunda o estudo de 22/09 a pedido do autor. Esta pasta é a entrada atual para decidir conteúdo; a [primeira rodada](../planejamento/etapa-01-pesquisa.md) e suas amostras continuam preservadas. O produto, o Figma e o banco não foram alterados.
 
@@ -24,7 +26,7 @@ A recomendação agora é avaliar uma **base própria, selecionada e versionada*
 | Programas humanos completos | Priorizar programas humanos existentes elegíveis, importação conferida em lote e direitos específicos; NHS é caminho parcial, não solução universal | A pesquisa ainda não comprovou catálogo completo por modalidade em pt-PT, com revisão humana adequada e direitos comerciais claros |
 | Alimentos genéricos | **Ciqual como candidato europeu prioritário**, USDA/CoFID como complementos; comparar antes de escolher | Cobertura e correspondências portuguesas precisam de teste; não juntar bases indiscriminadamente |
 | Alimentos portugueses | PortFIR como prioridade de autorização e adequação local | Licença comercial de incorporação ainda não confirmada |
-| Produtos embalados | Open Food Facts, condicionado à amostra portuguesa e cumprimento da ODbL | Consultas de 22/09 e a consulta limitada de 26/09 retornaram 503; cobertura não foi medida |
+| Produtos embalados | Open Food Facts, condicionado à amostra portuguesa e cumprimento da ODbL | Em 27/09, N04 recebeu dez produtos após as falhas 503 anteriores; amostra enviesada e divergência v2/v3.6 impedem homologação ampla |
 | Receitas | Pequeno lote textual NHLBI condicionado à política de adaptação; DGS/PNPAS como referência e possível acordo | Fotos, tradução, publicidade e revisão culinária/nutricional precisam de tratamento próprio |
 | Educação e hábitos | Textos elegíveis NIA/NHS; revisão apoiada em ACSM, DGS, OMS e EFSA | Separar permissão para reutilizar texto de validade da recomendação para cada população |
 | Corrida, caminhada e outras atividades | Compêndio 2024 para valores de referência e classificação | Não transformar estimativa de gasto em medição individual ou autorização de treino |
@@ -39,7 +41,7 @@ As permissões, evidências e fontes primárias de cada linha estão no [catálo
 4. [Qualidade e curadoria](qualidade-e-curadoria.md): requisitos para aprovar um item, corrigir erros e preservar autoria.
 5. [Direitos e acordos pendentes](direitos-e-acordos.md): condições por tipo de licença e perguntas concretas aos titulares, ainda não enviadas.
 
-Para agentes: consultar [fontes.json](fontes.json) por ID/tema em vez de reler toda a pesquisa. [Evidências locais](evidencias/README.md) incluem os datasets elegíveis recebidos, subconjuntos, hashes e scripts sem dependências externas.
+Para agentes: consultar [fontes.json](fontes.json) por ID/tema em vez de reler toda a pesquisa. [Evidências locais](evidencias/README.md) incluem os datasets elegíveis recebidos, subconjuntos, hashes e scripts; o analisador N03 usa `pypdf` para conferir o guia local.
 
 ## O que já existe nesta base
 

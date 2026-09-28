@@ -1,0 +1,1493 @@
+{
+  "sourceId": "AL04",
+  "sourceVersion": "Ciqual 2025; DOI 10.57745/RDMHWY V1",
+  "inputSha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0",
+  "license": {
+    "name": "etalab 2.0",
+    "uri": "https://spdx.org/licenses/etalab-2.0.html",
+    "iconUri": "https://entrepot.recherche.data.gouv.fr/assets/licence-ouverte.png"
+  },
+  "scope": "research_only; column coordinates are not provider nutrient IDs",
+  "definitions": [
+    {
+      "sourceColumn": "J",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Energie,\nRèglement\nUE N°\n1169\n2011 (kJ\n100 g)",
+      "nameOriginal": "Energie, Règlement UE N° 1169 2011 (kJ 100 g)",
+      "unit": "kJ",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "EU1169_Nx6.25",
+      "proposedAppKey": "energyKjEu",
+      "coverage": {
+        "numeric": 3339,
+        "unknown": 143,
+        "trace": 2,
+        "below_limit": 0,
+        "zeroNumericSubset": 58
+      }
+    },
+    {
+      "sourceColumn": "K",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Energie,\nRèglement\nUE N°\n1169\n2011 (kcal\n100 g)",
+      "nameOriginal": "Energie, Règlement UE N° 1169 2011 (kcal 100 g)",
+      "unit": "kcal",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "EU1169_Nx6.25",
+      "proposedAppKey": "energyKcalEu",
+      "coverage": {
+        "numeric": 3339,
+        "unknown": 143,
+        "trace": 2,
+        "below_limit": 0,
+        "zeroNumericSubset": 58
+      }
+    },
+    {
+      "sourceColumn": "L",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Energie, N x\nfacteur\nJones, avec\nfibres (kJ\n100 g)",
+      "nameOriginal": "Energie, N x facteur Jones, avec fibres (kJ 100 g)",
+      "unit": "kJ",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "Jones_with_fibre",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 3339,
+        "unknown": 143,
+        "trace": 2,
+        "below_limit": 0,
+        "zeroNumericSubset": 58
+      }
+    },
+    {
+      "sourceColumn": "M",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Energie, N x\nfacteur\nJones, avec\nfibres (kcal\n100 g)",
+      "nameOriginal": "Energie, N x facteur Jones, avec fibres (kcal 100 g)",
+      "unit": "kcal",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "Jones_with_fibre",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 3339,
+        "unknown": 143,
+        "trace": 2,
+        "below_limit": 0,
+        "zeroNumericSubset": 58
+      }
+    },
+    {
+      "sourceColumn": "N",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Eau\n(g\n100\ng)",
+      "nameOriginal": "Eau (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2934,
+        "unknown": 545,
+        "trace": 1,
+        "below_limit": 4,
+        "zeroNumericSubset": 27
+      }
+    },
+    {
+      "sourceColumn": "O",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Protéines,\nN x\nfacteur de\nJones (g\n100 g)",
+      "nameOriginal": "Protéines, N x facteur de Jones (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "nitrogen_times_Jones",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 3451,
+        "unknown": 29,
+        "trace": 4,
+        "below_limit": 0,
+        "zeroNumericSubset": 164
+      }
+    },
+    {
+      "sourceColumn": "P",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Protéines,\nN x 6.25\n(g\n100 g)",
+      "nameOriginal": "Protéines, N x 6.25 (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "nitrogen_times_6.25",
+      "proposedAppKey": "proteinNx625G",
+      "coverage": {
+        "numeric": 3451,
+        "unknown": 29,
+        "trace": 4,
+        "below_limit": 0,
+        "zeroNumericSubset": 164
+      }
+    },
+    {
+      "sourceColumn": "Q",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Glucides\n(g\n100 g)",
+      "nameOriginal": "Glucides (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "carbohydrateG",
+      "coverage": {
+        "numeric": 3272,
+        "unknown": 70,
+        "trace": 134,
+        "below_limit": 8,
+        "zeroNumericSubset": 372
+      }
+    },
+    {
+      "sourceColumn": "R",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Lipides\n(g\n100 g)",
+      "nameOriginal": "Lipides (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "fatG",
+      "coverage": {
+        "numeric": 3283,
+        "unknown": 20,
+        "trace": 15,
+        "below_limit": 166,
+        "zeroNumericSubset": 170
+      }
+    },
+    {
+      "sourceColumn": "S",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Sucres\n(g\n100 g)",
+      "nameOriginal": "Sucres (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "sugarsG",
+      "coverage": {
+        "numeric": 2996,
+        "unknown": 223,
+        "trace": 205,
+        "below_limit": 60,
+        "zeroNumericSubset": 566
+      }
+    },
+    {
+      "sourceColumn": "T",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Fructose\n(g\n100 g)",
+      "nameOriginal": "Fructose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1249,
+        "unknown": 1647,
+        "trace": 1,
+        "below_limit": 587,
+        "zeroNumericSubset": 182
+      }
+    },
+    {
+      "sourceColumn": "U",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Galactose\n(g\n100 g)",
+      "nameOriginal": "Galactose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 306,
+        "unknown": 2741,
+        "trace": 1,
+        "below_limit": 436,
+        "zeroNumericSubset": 191
+      }
+    },
+    {
+      "sourceColumn": "V",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Glucose\n(g\n100 g)",
+      "nameOriginal": "Glucose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1415,
+        "unknown": 1606,
+        "trace": 3,
+        "below_limit": 460,
+        "zeroNumericSubset": 170
+      }
+    },
+    {
+      "sourceColumn": "W",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Lactose\n(g\n100 g)",
+      "nameOriginal": "Lactose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 788,
+        "unknown": 1804,
+        "trace": 2,
+        "below_limit": 890,
+        "zeroNumericSubset": 324
+      }
+    },
+    {
+      "sourceColumn": "X",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Maltose\n(g\n100 g)",
+      "nameOriginal": "Maltose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 896,
+        "unknown": 1659,
+        "trace": 1,
+        "below_limit": 928,
+        "zeroNumericSubset": 271
+      }
+    },
+    {
+      "sourceColumn": "Y",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Saccharose\n(g\n100 g)",
+      "nameOriginal": "Saccharose (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1330,
+        "unknown": 1589,
+        "trace": 0,
+        "below_limit": 565,
+        "zeroNumericSubset": 197
+      }
+    },
+    {
+      "sourceColumn": "Z",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Amidon\n(g\n100 g)",
+      "nameOriginal": "Amidon (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2094,
+        "unknown": 1131,
+        "trace": 12,
+        "below_limit": 247,
+        "zeroNumericSubset": 1073
+      }
+    },
+    {
+      "sourceColumn": "AA",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Fibres\nalimentaires\n(g\n100 g)",
+      "nameOriginal": "Fibres alimentaires (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "fibreG",
+      "coverage": {
+        "numeric": 3239,
+        "unknown": 70,
+        "trace": 45,
+        "below_limit": 130,
+        "zeroNumericSubset": 1046
+      }
+    },
+    {
+      "sourceColumn": "AB",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Polyols\ntotaux\n(g\n100 g)",
+      "nameOriginal": "Polyols totaux (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2402,
+        "unknown": 448,
+        "trace": 463,
+        "below_limit": 171,
+        "zeroNumericSubset": 2220
+      }
+    },
+    {
+      "sourceColumn": "AC",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Cendres\n(g\n100 g)",
+      "nameOriginal": "Cendres (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 3338,
+        "unknown": 102,
+        "trace": 4,
+        "below_limit": 40,
+        "zeroNumericSubset": 20
+      }
+    },
+    {
+      "sourceColumn": "AD",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Alcool\n(éthanol)\n(g\n100 g)",
+      "nameOriginal": "Alcool (éthanol) (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 3466,
+        "unknown": 4,
+        "trace": 13,
+        "below_limit": 1,
+        "zeroNumericSubset": 3382
+      }
+    },
+    {
+      "sourceColumn": "AE",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Acides\norganiques\n(g\n100 g)",
+      "nameOriginal": "Acides organiques (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2220,
+        "unknown": 790,
+        "trace": 474,
+        "below_limit": 0,
+        "zeroNumericSubset": 1312
+      }
+    },
+    {
+      "sourceColumn": "AF",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG\nsaturés\n(g\n100 g)",
+      "nameOriginal": "AG saturés (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "saturatedFatG",
+      "coverage": {
+        "numeric": 3093,
+        "unknown": 248,
+        "trace": 8,
+        "below_limit": 135,
+        "zeroNumericSubset": 199
+      }
+    },
+    {
+      "sourceColumn": "AG",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG\nmonoinsaturés\n(g\n100 g)",
+      "nameOriginal": "AG monoinsaturés (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2567,
+        "unknown": 764,
+        "trace": 9,
+        "below_limit": 144,
+        "zeroNumericSubset": 237
+      }
+    },
+    {
+      "sourceColumn": "AH",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG\npolyinsaturés\n(g\n100 g)",
+      "nameOriginal": "AG polyinsaturés (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2554,
+        "unknown": 774,
+        "trace": 9,
+        "below_limit": 147,
+        "zeroNumericSubset": 249
+      }
+    },
+    {
+      "sourceColumn": "AI",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 4:0,\nbutyrique\n(g\n100 g)",
+      "nameOriginal": "AG 4:0, butyrique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1403,
+        "unknown": 1283,
+        "trace": 54,
+        "below_limit": 744,
+        "zeroNumericSubset": 814
+      }
+    },
+    {
+      "sourceColumn": "AJ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 6:0,\ncaproïque\n(g\n100 g)",
+      "nameOriginal": "AG 6:0, caproïque (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1403,
+        "unknown": 1315,
+        "trace": 53,
+        "below_limit": 713,
+        "zeroNumericSubset": 808
+      }
+    },
+    {
+      "sourceColumn": "AK",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 8:0,\ncaprylique\n(g\n100 g)",
+      "nameOriginal": "AG 8:0, caprylique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1522,
+        "unknown": 1352,
+        "trace": 51,
+        "below_limit": 559,
+        "zeroNumericSubset": 723
+      }
+    },
+    {
+      "sourceColumn": "AL",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 10:0,\ncaprique\n(g\n100 g)",
+      "nameOriginal": "AG 10:0, caprique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1509,
+        "unknown": 1341,
+        "trace": 43,
+        "below_limit": 591,
+        "zeroNumericSubset": 607
+      }
+    },
+    {
+      "sourceColumn": "AM",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG\n12:0,\nlaurique\n(g\n100 g)",
+      "nameOriginal": "AG 12:0, laurique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1772,
+        "unknown": 1236,
+        "trace": 33,
+        "below_limit": 443,
+        "zeroNumericSubset": 496
+      }
+    },
+    {
+      "sourceColumn": "AN",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 14:0,\nmyristique\n(g\n100 g)",
+      "nameOriginal": "AG 14:0, myristique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2030,
+        "unknown": 1159,
+        "trace": 4,
+        "below_limit": 291,
+        "zeroNumericSubset": 313
+      }
+    },
+    {
+      "sourceColumn": "AO",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 16:0,\npalmitique\n(g\n100 g)",
+      "nameOriginal": "AG 16:0, palmitique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2189,
+        "unknown": 1144,
+        "trace": 2,
+        "below_limit": 149,
+        "zeroNumericSubset": 158
+      }
+    },
+    {
+      "sourceColumn": "AP",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 18:0,\nstéarique\n(g\n100 g)",
+      "nameOriginal": "AG 18:0, stéarique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2179,
+        "unknown": 1148,
+        "trace": 4,
+        "below_limit": 153,
+        "zeroNumericSubset": 183
+      }
+    },
+    {
+      "sourceColumn": "AQ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 18:1\n9c (n-9),\noléique\n(g\n100 g)",
+      "nameOriginal": "AG 18:1 9c (n-9), oléique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1812,
+        "unknown": 1521,
+        "trace": 0,
+        "below_limit": 151,
+        "zeroNumericSubset": 169
+      }
+    },
+    {
+      "sourceColumn": "AR",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 18:2\n9c,12c\n(n-6),\nlinoléique\n(g\n100 g)",
+      "nameOriginal": "AG 18:2 9c,12c (n-6), linoléique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1898,
+        "unknown": 1433,
+        "trace": 0,
+        "below_limit": 153,
+        "zeroNumericSubset": 171
+      }
+    },
+    {
+      "sourceColumn": "AS",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 18:3\nc9,c12,c15 (n-3),\nalpha-linolénique\n(g\n100 g)",
+      "nameOriginal": "AG 18:3 c9,c12,c15 (n-3), alpha-linolénique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1892,
+        "unknown": 1377,
+        "trace": 3,
+        "below_limit": 212,
+        "zeroNumericSubset": 190
+      }
+    },
+    {
+      "sourceColumn": "AT",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 20:4\n5c,8c,11c,14c\n(n-6),\narachidonique\n(g\n100 g)",
+      "nameOriginal": "AG 20:4 5c,8c,11c,14c (n-6), arachidonique (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 976,
+        "unknown": 1824,
+        "trace": 1,
+        "below_limit": 683,
+        "zeroNumericSubset": 306
+      }
+    },
+    {
+      "sourceColumn": "AU",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 20:5\n5c,8c,11c,14c,17c\n(n-3) EPA (g\n100 g)",
+      "nameOriginal": "AG 20:5 5c,8c,11c,14c,17c (n-3) EPA (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1636,
+        "unknown": 936,
+        "trace": 2,
+        "below_limit": 910,
+        "zeroNumericSubset": 1139
+      }
+    },
+    {
+      "sourceColumn": "AV",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "AG 22:6\n4c,7c,10c,13c,16c,19c\n(n-3) DHA (g\n100 g)",
+      "nameOriginal": "AG 22:6 4c,7c,10c,13c,16c,19c (n-3) DHA (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1560,
+        "unknown": 959,
+        "trace": 10,
+        "below_limit": 955,
+        "zeroNumericSubset": 1070
+      }
+    },
+    {
+      "sourceColumn": "AW",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Cholestérol\n(mg\n100 g)",
+      "nameOriginal": "Cholestérol (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2430,
+        "unknown": 924,
+        "trace": 3,
+        "below_limit": 127,
+        "zeroNumericSubset": 1073
+      }
+    },
+    {
+      "sourceColumn": "AX",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Sel\nchlorure\nde\nsodium\n(g\n100 g)",
+      "nameOriginal": "Sel chlorure de sodium (g 100 g)",
+      "unit": "g",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "saltG",
+      "coverage": {
+        "numeric": 3141,
+        "unknown": 190,
+        "trace": 2,
+        "below_limit": 151,
+        "zeroNumericSubset": 42
+      }
+    },
+    {
+      "sourceColumn": "AY",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Calcium\n(mg\n100 g)",
+      "nameOriginal": "Calcium (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2676,
+        "unknown": 784,
+        "trace": 1,
+        "below_limit": 23,
+        "zeroNumericSubset": 43
+      }
+    },
+    {
+      "sourceColumn": "AZ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Chlorure\n(mg\n100 g)",
+      "nameOriginal": "Chlorure (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1389,
+        "unknown": 1939,
+        "trace": 1,
+        "below_limit": 155,
+        "zeroNumericSubset": 15
+      }
+    },
+    {
+      "sourceColumn": "BA",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Cuivre\n(mg\n100 g)",
+      "nameOriginal": "Cuivre (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2130,
+        "unknown": 1018,
+        "trace": 4,
+        "below_limit": 332,
+        "zeroNumericSubset": 53
+      }
+    },
+    {
+      "sourceColumn": "BB",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Fer (mg\n100 g)",
+      "nameOriginal": "Fer (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2459,
+        "unknown": 831,
+        "trace": 6,
+        "below_limit": 188,
+        "zeroNumericSubset": 51
+      }
+    },
+    {
+      "sourceColumn": "BC",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Iode\n(µg\n100 g)",
+      "nameOriginal": "Iode (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1291,
+        "unknown": 1376,
+        "trace": 0,
+        "below_limit": 817,
+        "zeroNumericSubset": 85
+      }
+    },
+    {
+      "sourceColumn": "BD",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Magnésium\n(mg\n100 g)",
+      "nameOriginal": "Magnésium (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2566,
+        "unknown": 899,
+        "trace": 0,
+        "below_limit": 19,
+        "zeroNumericSubset": 50
+      }
+    },
+    {
+      "sourceColumn": "BE",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Manganèse\n(mg\n100 g)",
+      "nameOriginal": "Manganèse (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2071,
+        "unknown": 1086,
+        "trace": 15,
+        "below_limit": 312,
+        "zeroNumericSubset": 39
+      }
+    },
+    {
+      "sourceColumn": "BF",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Phosphore\n(mg\n100 g)",
+      "nameOriginal": "Phosphore (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2488,
+        "unknown": 942,
+        "trace": 2,
+        "below_limit": 52,
+        "zeroNumericSubset": 74
+      }
+    },
+    {
+      "sourceColumn": "BG",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Potassium\n(mg\n100 g)",
+      "nameOriginal": "Potassium (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2604,
+        "unknown": 867,
+        "trace": 0,
+        "below_limit": 13,
+        "zeroNumericSubset": 39
+      }
+    },
+    {
+      "sourceColumn": "BH",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Sélénium\n(µg\n100 g)",
+      "nameOriginal": "Sélénium (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1131,
+        "unknown": 1383,
+        "trace": 8,
+        "below_limit": 962,
+        "zeroNumericSubset": 38
+      }
+    },
+    {
+      "sourceColumn": "BI",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Sodium\n(mg\n100 g)",
+      "nameOriginal": "Sodium (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": "sodiumMg",
+      "coverage": {
+        "numeric": 2929,
+        "unknown": 402,
+        "trace": 4,
+        "below_limit": 149,
+        "zeroNumericSubset": 45
+      }
+    },
+    {
+      "sourceColumn": "BJ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Zinc\n(mg\n100 g)",
+      "nameOriginal": "Zinc (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2361,
+        "unknown": 897,
+        "trace": 16,
+        "below_limit": 210,
+        "zeroNumericSubset": 46
+      }
+    },
+    {
+      "sourceColumn": "BK",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Activité\nvitaminique\nA,\néquivalents\nrétinol (µg\n100 g)",
+      "nameOriginal": "Activité vitaminique A, équivalents rétinol (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1922,
+        "unknown": 1562,
+        "trace": 0,
+        "below_limit": 0,
+        "zeroNumericSubset": 296
+      }
+    },
+    {
+      "sourceColumn": "BL",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Rétinol\n(µg\n100 g)",
+      "nameOriginal": "Rétinol (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2223,
+        "unknown": 900,
+        "trace": 14,
+        "below_limit": 347,
+        "zeroNumericSubset": 1343
+      }
+    },
+    {
+      "sourceColumn": "BM",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Beta-Carotène\n(µg\n100 g)",
+      "nameOriginal": "Beta-Carotène (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1641,
+        "unknown": 1434,
+        "trace": 14,
+        "below_limit": 395,
+        "zeroNumericSubset": 530
+      }
+    },
+    {
+      "sourceColumn": "BN",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nD (µg\n100 g)",
+      "nameOriginal": "Vitamine D (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1437,
+        "unknown": 1310,
+        "trace": 133,
+        "below_limit": 604,
+        "zeroNumericSubset": 736
+      }
+    },
+    {
+      "sourceColumn": "BO",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine D2\n(ergocalciférol)\n(µg\n100 g)",
+      "nameOriginal": "Vitamine D2 (ergocalciférol) (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 899,
+        "unknown": 1942,
+        "trace": 322,
+        "below_limit": 321,
+        "zeroNumericSubset": 878
+      }
+    },
+    {
+      "sourceColumn": "BP",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine D3\n(cholécalciférol)\n(µg\n100 g)",
+      "nameOriginal": "Vitamine D3 (cholécalciférol) (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1483,
+        "unknown": 1379,
+        "trace": 162,
+        "below_limit": 460,
+        "zeroNumericSubset": 1335
+      }
+    },
+    {
+      "sourceColumn": "BQ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Alpha-tocophérol\n(vitamine E) (mg\n100 g)",
+      "nameOriginal": "Alpha-tocophérol (vitamine E) (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1563,
+        "unknown": 1750,
+        "trace": 3,
+        "below_limit": 168,
+        "zeroNumericSubset": 72
+      }
+    },
+    {
+      "sourceColumn": "BR",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nE (mg\n100 g)",
+      "nameOriginal": "Vitamine E (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 587,
+        "unknown": 2889,
+        "trace": 5,
+        "below_limit": 3,
+        "zeroNumericSubset": 122
+      }
+    },
+    {
+      "sourceColumn": "BS",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nK1 (µg\n100 g)",
+      "nameOriginal": "Vitamine K1 (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1296,
+        "unknown": 1910,
+        "trace": 0,
+        "below_limit": 278,
+        "zeroNumericSubset": 234
+      }
+    },
+    {
+      "sourceColumn": "BT",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nK2 (µg\n100 g)",
+      "nameOriginal": "Vitamine K2 (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 102,
+        "unknown": 3309,
+        "trace": 51,
+        "below_limit": 22,
+        "zeroNumericSubset": 4
+      }
+    },
+    {
+      "sourceColumn": "BU",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nC (mg\n100 g)",
+      "nameOriginal": "Vitamine C (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1803,
+        "unknown": 1086,
+        "trace": 27,
+        "below_limit": 568,
+        "zeroNumericSubset": 510
+      }
+    },
+    {
+      "sourceColumn": "BV",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB1 ou\nThiamine\n(mg\n100 g)",
+      "nameOriginal": "Vitamine B1 ou Thiamine (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2203,
+        "unknown": 980,
+        "trace": 5,
+        "below_limit": 296,
+        "zeroNumericSubset": 160
+      }
+    },
+    {
+      "sourceColumn": "BW",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB2 ou\nRiboflavine\n(mg\n100 g)",
+      "nameOriginal": "Vitamine B2 ou Riboflavine (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2133,
+        "unknown": 997,
+        "trace": 3,
+        "below_limit": 351,
+        "zeroNumericSubset": 150
+      }
+    },
+    {
+      "sourceColumn": "BX",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB3 ou PP\nou\nNiacine\n(mg\n100 g)",
+      "nameOriginal": "Vitamine B3 ou PP ou Niacine (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2203,
+        "unknown": 956,
+        "trace": 1,
+        "below_limit": 324,
+        "zeroNumericSubset": 154
+      }
+    },
+    {
+      "sourceColumn": "BY",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine B5\nou Acide\npantothénique\n(mg\n100 g)",
+      "nameOriginal": "Vitamine B5 ou Acide pantothénique (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2280,
+        "unknown": 1159,
+        "trace": 4,
+        "below_limit": 41,
+        "zeroNumericSubset": 157
+      }
+    },
+    {
+      "sourceColumn": "BZ",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB6 (mg\n100 g)",
+      "nameOriginal": "Vitamine B6 (mg 100 g)",
+      "unit": "mg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2357,
+        "unknown": 947,
+        "trace": 1,
+        "below_limit": 179,
+        "zeroNumericSubset": 169
+      }
+    },
+    {
+      "sourceColumn": "CA",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine B9 ou\nFolates totaux,\néquivalents folates\nalimentaires, DFE (µg\n100 g)",
+      "nameOriginal": "Vitamine B9 ou Folates totaux, équivalents folates alimentaires, DFE (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 908,
+        "unknown": 2576,
+        "trace": 0,
+        "below_limit": 0,
+        "zeroNumericSubset": 107
+      }
+    },
+    {
+      "sourceColumn": "CB",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB9 ou\nFolates\ntotaux (µg\n100 g)",
+      "nameOriginal": "Vitamine B9 ou Folates totaux (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1433,
+        "unknown": 1959,
+        "trace": 2,
+        "below_limit": 90,
+        "zeroNumericSubset": 80
+      }
+    },
+    {
+      "sourceColumn": "CC",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Folates\nintrinsèques\n(µg\n100 g)",
+      "nameOriginal": "Folates intrinsèques (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 874,
+        "unknown": 2572,
+        "trace": 21,
+        "below_limit": 17,
+        "zeroNumericSubset": 106
+      }
+    },
+    {
+      "sourceColumn": "CD",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Acide folique\n(enrichissement)\n(µg\n100 g)",
+      "nameOriginal": "Acide folique (enrichissement) (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 1457,
+        "unknown": 1870,
+        "trace": 0,
+        "below_limit": 157,
+        "zeroNumericSubset": 1403
+      }
+    },
+    {
+      "sourceColumn": "CE",
+      "sourceNutrientId": null,
+      "sourceHeaderRaw": "Vitamine\nB12 (µg\n100 g)",
+      "nameOriginal": "Vitamine B12 (µg 100 g)",
+      "unit": "µg",
+      "basis": {
+        "quantity": "100",
+        "unit": "g"
+      },
+      "method": "as_described_by_source_header",
+      "proposedAppKey": null,
+      "coverage": {
+        "numeric": 2030,
+        "unknown": 1328,
+        "trace": 8,
+        "below_limit": 118,
+        "zeroNumericSubset": 716
+      }
+    }
+  ]
+}

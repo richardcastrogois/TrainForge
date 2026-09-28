@@ -1,0 +1,27 @@
+{
+  "niche": "N04",
+  "date": "2026-09-27",
+  "researchStatus": "in_progress",
+  "releaseApproved": false,
+  "httpCalls": 4,
+  "http200": 4,
+  "bodyHashesVerified": 4,
+  "productsSampled": 10,
+  "providerReportedMatchingCount": 22688,
+  "uniqueCodes": 10,
+  "allCountryFilterMatches": true,
+  "gtinChecksumsValid": 10,
+  "nonemptyPortugueseNames": 6,
+  "nonemptyBrands": 9,
+  "withServingQuantity": 9,
+  "sampleNumericEnergyKcal100g": 10,
+  "detailIdentityVerified": true,
+  "detailNutritionCompatible": false,
+  "openItems": [
+    "Explain and verify v2 search/v3.6 detail nutrition difference",
+    "Measure brand/category coverage with a justified Portuguese sample; first page is biased",
+    "Validate missing code, empty results and provider errors in a future adapter",
+    "Decide attribution/share-alike treatment before production; no rights approval from this sample"
+  ],
+  "nextNicheStarted": false
+}

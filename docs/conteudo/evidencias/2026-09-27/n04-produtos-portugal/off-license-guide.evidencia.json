@@ -1,0 +1,18 @@
+{
+    "id":  "off-license-guide",
+    "url":  "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-27T16:45:54.3334129Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.6 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  43523,
+    "bodyFile":  "../raw/off-license-guide.html",
+    "sha256":  "59abf2a490824761162f65eacb05700fcbdfe85313f78c71b55310ec480f38a9",
+    "contentType":  "text/html; charset=utf-8",
+    "retryAfter":  ""
+}
