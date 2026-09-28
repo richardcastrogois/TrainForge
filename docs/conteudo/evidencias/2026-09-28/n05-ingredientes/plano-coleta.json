@@ -1,0 +1,37 @@
+{
+  "niche": "N05",
+  "scope": "Five purposive product profiles; source fields, missing/empty/claims, no prevalence inference",
+  "requests": [
+    {
+      "id": "n05-milk",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+      "purpose": "Observed N04 barcode; inspect ingredients, allergen and traces provenance and diet claims; no individual clinical suitability assessment"
+    },
+    {
+      "id": "n05-lactose-free",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5603722505607?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+      "purpose": "Observed N04 barcode; inspect ingredients, allergen and traces provenance and diet claims; no individual clinical suitability assessment"
+    },
+    {
+      "id": "n05-muesli",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5607047006795?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+      "purpose": "Observed N04 barcode; inspect ingredients, allergen and traces provenance and diet claims; no individual clinical suitability assessment"
+    },
+    {
+      "id": "n05-nectar",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+      "purpose": "Observed N04 barcode; inspect ingredients, allergen and traces provenance and diet claims; no individual clinical suitability assessment"
+    },
+    {
+      "id": "n05-plant-based",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+      "purpose": "Observed N04 barcode; inspect ingredients, allergen and traces provenance and diet claims; no individual clinical suitability assessment"
+    },
+    {
+      "id": "n05-eu-1169-pt",
+      "url": "https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=CELEX:32011R1169",
+      "extension": "html",
+      "purpose": "Primary regulation: Annex II, ingredient/allergen information and exceptions; record original versus consolidated status"
+    }
+  ]
+}

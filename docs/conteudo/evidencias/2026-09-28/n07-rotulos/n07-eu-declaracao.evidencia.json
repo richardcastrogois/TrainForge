@@ -1,0 +1,16 @@
+{
+  "id": "n07-eu-declaracao",
+  "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/nutrition-declaration/index_en.htm",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:59:02.250320+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Tabela nutricional, unidades e apresentacao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

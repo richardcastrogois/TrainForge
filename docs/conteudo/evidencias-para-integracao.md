@@ -1,13 +1,13 @@
 # Evidências de retorno para a implementação
 
-Registro de **26/09/2026**, baseado nas chamadas e arquivos preservados de 22–26/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
+Registro iniciado em **26/09/2026 e atualizado em 28/09/2026**, baseado nas chamadas e arquivos preservados de 22–28/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
 
 Os campos abaixo foram observados em amostras. Presença na amostra não é garantia de obrigatoriedade ou disponibilidade futura do fornecedor. As permissões e limitações continuam no [catálogo por fonte](fontes.json) e em [direitos](direitos-e-acordos.md).
 
 ## Como recuperar sem fazer outra chamada
 
-- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **51 registros de chamadas preservadas**, incluindo tentativas sem rede e falhas; 32 respostas HTTP 200. Não são 51 APIs ou 32 fontes diferentes. Inclui N01/N03 e os quatro GETs do primeiro incremento N04.
-- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 19 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
+- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **106 registros de chamadas preservadas, 78 respostas HTTP 200**, incluindo tentativas sem rede, falhas, dois casos negativos 404 e EUR-Lex 202 sem texto legal utilizável. Não são 106 APIs nem 78 fontes distintas. N06/N07 acrescentaram 29 chamadas preservadas nesta rodada.
+- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 72 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
 - [Pilotos conferidos](evidencias/2026-09-26/pilotos-resumo.json): resultados dos analisadores, separados do retorno original.
 - Respostas integrais e planilhas indicadas como **locais** não acompanham o clone Git. Metadados, scripts e resumos permitem localizar/reproduzir legitimamente a coleta. O clone sozinho não contém todos os insumos.
 
@@ -346,6 +346,73 @@ powershell -File docs/conteudo/evidencias/coletar-porcoes.ps1
 
 ## N04 — produtos vendidos em Portugal
 
+**[x] Pesquisa N04 concluída em 28/09/2026, com limites explícitos.** A amostra acumulada tem **24 produtos únicos**. Os quatro recortes de marca foram observados: Pingo Doce (5), Continente (3), Mimosa (3) e Compal (3), além dos dez produtos iniciais. Esses recortes são de conveniência; não medem cobertura de mercado nem validam rótulos atuais. [Resumo](evidencias/2026-09-28/n04-fechamento/resumo-fechamento.json), [amostra e proveniência](evidencias/2026-09-28/n04-fechamento/amostra-complementar.json), [35 verificações](evidencias/2026-09-28/n04-fechamento/validacao-fechamento.json).
+
+As buscas menores de Continente/Mimosa responderam 200; Compal continuou 503 na v2. A alternativa oficial **Search-a-licious** trouxe três Compal com país/marca conferidos; a leitura direta v3.6 de `5601151964804` confirmou o produto. Foram oito novas chamadas: sete 200, um 503 preservado, oito hashes. O contrato nutricional anterior foi reproduzido: 27 verificações passaram. Índice acumulado após N04: 68 chamadas / 43 HTTP 200 / 36 hashes.
+
+### Chamadas complementares e interpretação
+
+- `GET https://world.openfoodfacts.org/api/v2/search`: `countries_tags=en:portugal`, `brands_tags=continente` ou `mimosa`, `page_size=3` e projeção curta, sem ordenar. Campos exatos, URL codificada e headers em [requisicoes.json](evidencias/2026-09-28/n04-fechamento/requisicoes.json) e metadados correspondentes. Retorno `products[]`; marcas são texto em `brands`.
+- `GET https://search.openfoodfacts.org/search`: `q=brands:"compal" AND countries_tags:"en:portugal"`, `langs=pt,en`, `page_size=3`, `fields` explícitos. Contrato descoberto em `/openapi.json`; retorno `hits[]`, não `products[]`, e `brands` é lista. `count=96` é do índice do fornecedor, não uma auditoria de 96 produtos. [Chamada](evidencias/2026-09-28/n04-fechamento/n04-compal-searchalicious.evidencia.json), [OpenAPI preservado](evidencias/2026-09-28/n04-fechamento/n04-search-openapi.evidencia.json).
+- `GET https://world.openfoodfacts.org/api/v3.6/product/5601151964804`: o detalhe tem `last_modified_t=1774951185`, enquanto a busca tinha `1712929968`. **Revalidar o detalhe ao selecionar um resultado**; não tratar o índice como revisão atual. A v3.6 devolveu `brands_tags=["xx:compal"]` e `tags_sources.brands.packaging.tags=["xx:Compal"]`; a busca devolveu `compal`. Preservar namespace, versão e origem, sem comparar tags brutas entre versões como se fossem idênticas. [Detalhe](evidencias/2026-09-28/n04-fechamento/n04-compal-product.evidencia.json).
+- Contagens informadas, não auditadas integralmente: Continente 2.357, Mimosa 177, Compal 96 no índice alternativo; Pingo Doce 1.778 no incremento anterior. Não somar essas contagens como cobertura portuguesa.
+
+### Decisão de reutilização para implementação futura
+
+O uso comercial está previsto na [ODbL, seção 3.1](https://opendatacommons.org/licenses/odbl/1-0/), condicionado às obrigações da licença. A base é ODbL 1.0; conteúdo individual DbCL 1.0; imagens têm termos separados. Atribuição deve acompanhar os dados exibidos, com links para fonte/licença. Um catálogo público derivado deverá cumprir compartilhamento e acesso legível por máquina conforme as seções 4.4–4.6. Não incorporar diários privados à base derivada. A separação de tabelas por si só não prova independência jurídica. [Decisão e requisitos](evidencias/2026-09-28/n04-fechamento/decisao-reutilizacao.json), [termos oficiais preservados](evidencias/2026-09-28/n04-fechamento/n04-off-reuse-terms.evidencia.json).
+
+Escolha de pesquisa: **OFF é candidato demonstrado para consulta de produto embalado, com confirmação, atribuição e estados de ausência/falha**. Não há homologação de mercado, SLA, aprovação editorial ou integração Flutter/API/banco. Registro manual deve continuar possível. Direitos das fotografias foram investigados no N06 abaixo; sem liberação integral. O problema operacional da busca Compal permanece registrado; a alternativa foi demonstrada, não apagou a falha.
+
+Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-fechamento-n04.py`. Coleta limitada: [coletar-nichos-off.py](evidencias/coletar-nichos-off.py), manifestos [principal](evidencias/2026-09-28/n04-fechamento/requisicoes.json) e [alternativa](evidencias/2026-09-28/n04-fechamento/alternativa.json). Cache guarda falhas e sucessos; não executar para recuperar contexto. Corpos integrais permanecem locais e ignorados pelo Git.
+
+### Histórico do contrato — antes do fechamento
+
+**Snapshot intermediário de 28/09, superado pelo fechamento N04 acima:** o contrato nutricional foi esclarecido e o demonstrador local validado. N04 permanece **em andamento** pela cobertura incompleta dos filtros de marca. O primeiro incremento de 27/09 está publicado no commit [`104a3bb`](https://github.com/richardcastrogois/TrainForge/commit/104a3bb69403e76a16e8f655549d010779466a40); o avanço abaixo é posterior e local. A coleta antiga mais abaixo é histórica.
+
+### Resolução do contrato e estados — 28/09
+
+O [changelog oficial](https://openfoodfacts.github.io/openfoodfacts-server/api/ref-api-and-product-schema-change-log/) registra mudança da estrutura nutricional a partir da API 3.5/schema 1003 e a evolução para schema 1004 na 3.6. O título de data da entrada 3.5 contém uma grafia inválida na fonte; não a corrigimos ou usamos como data confiável. A leitura real da 3.6, com **`nutrition` na projeção**, confirmou os dados do produto já observado. [Corpo/metadados do changelog](evidencias/2026-09-28/n04-contrato-off/off-schema-changelog.evidencia.json).
+
+**Chamada corrigida:** `GET https://world.openfoodfacts.org/api/v3.6/product/5449000054227`, parâmetro `fields=code,product_name,brands,countries_tags,nutrition,nutriments,schema_version,quantity,product_quantity,product_quantity_unit,serving_quantity,serving_quantity_unit,no_nutrition_data`. HTTP 200, 4.612 bytes. [URL completa/data/hash](evidencias/2026-09-28/n04-contrato-off/off-product-nutrition-v36.evidencia.json). `User-Agent: TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)`; `Accept: application/json,text/html`. Mesmo limite de 25 s/1 MiB, TLS padrão e cache de falhas/sucessos.
+
+| Caminho realmente recebido | Valor observado / uso futuro |
+|---|---|
+| `product.schema_version` | `1004`; o demonstrador rejeita schema desconhecido |
+| `product.nutriments` | `{}`; não é prova de que o produto carece de nutrientes |
+| `product.nutrition.aggregated_set.per` / `preparation` | `100g` / `as_sold`; conservar a base e a condição |
+| `...aggregated_set.nutrients.energy-kcal` | `value: 42`, `value_computed: 42.4`, `unit: kcal`, `source: packaging`, `source_index: 0`, `source_per: 100g` |
+| `product.nutrition.input_sets[0]` | Origem `packaging`, base explícita `per_quantity: 100`, `per_unit: g`; valores e `value_string` recebidos |
+| `product.nutrition.input_sets[1]` | Origem `packaging`, `per: serving`, `per_quantity: 250`, `per_unit: ml`; energia informada 105 kcal e hidratos 27 g |
+| `product.nutrition.input_sets[2]` | Origem `estimate`; açúcares adicionados 11,1 g, `modifier: ~`; não substituir pelo valor agregado 0 da embalagem nem ocultar que é estimativa |
+
+A busca v2 trazia 42 kcal na base `_100g` e 26,5 g de hidratos na porção calculada. O novo `input_sets[1]` traz **27 g informados**, que o demonstrador preserva. Não sobrescrever valores de origens/métodos distintos. A embalagem é 1 L, mas isso não transforma a base agregada de 100 g em 100 ml; para a porção em ml, usar somente a base explícita do conjunto correspondente. Esta pesquisa não habilita conversão livre massa/volume.
+
+**Outro cuidado observado:** `nova-group` apareceu como 1,6 no agregado e 4 no conjunto de porção. Não é grandeza nutricional a ser escalada. O demonstrador inclui apenas nutrientes explicitamente previstos, exclui esse campo e preserva os originais no corpo auditável; não corrige silenciosamente a classificação nem a apresenta como validada.
+
+Implementação de pesquisa: [analisar-contrato-off.py](evidencias/analisar-contrato-off.py). Saída [contrato-nutricional.json](evidencias/2026-09-28/n04-contrato-off/contrato-nutricional.json), com origem, caminhos externos, valores decimais, informado/calculado, unidade, base, condição, índices de origem e qualificador. Não é o contrato já implementado no backend. **27 verificações passaram**, usando os retornos preservados e casos locais sintéticos para valores inválidos, projeção ausente e schema desconhecido. [Validação](evidencias/2026-09-28/n04-contrato-off/validacao-contrato.json).
+
+### Cobertura dirigida e falhas preservadas
+
+Antes da coleta, foram escolhidos quatro filtros de conveniência: duas marcas de supermercado (Continente/Pingo Doce) e duas marcas alimentares (Mimosa/Compal), sempre com país Portugal. Isso busca diversidade, não constitui amostragem estatística. Endpoint `GET /api/v2/search`, com `countries_tags=en:portugal`, `brands_tags=<filtro>`, `page_size=5`, `page=1`, `sort_by=unique_scans_n`. A projeção adiciona `brands_tags` e `categories_tags` aos campos anteriores; os metadados guardam a URL literal.
+
+| Filtro / caso | Retorno real | Evidência |
+|---|---|---|
+| `brands_tags=pingo-doce` | 200; cinco códigos únicos, todos com país/marca esperados; `count: 1778` informado pelo fornecedor | [Chamada](evidencias/2026-09-28/n04-contrato-off/off-brand-pingo-doce.evidencia.json), [amostra](evidencias/2026-09-28/n04-contrato-off/amostra-dirigida.json) |
+| `brands_tags=continente` | 503; cobertura desse filtro não medida | [Falha](evidencias/2026-09-28/n04-contrato-off/off-brand-continente.evidencia.json) |
+| `brands_tags=mimosa` | 503; cobertura desse filtro não medida | [Falha](evidencias/2026-09-28/n04-contrato-off/off-brand-mimosa.evidencia.json) |
+| `brands_tags=compal` | 503; cobertura desse filtro não medida | [Falha](evidencias/2026-09-28/n04-contrato-off/off-brand-compal.evidencia.json) |
+| Marca sintética `trainforge-validation-absent-20260928`, `page_size=1` | 200, `count: 0`, lista vazia: estado `empty` | [Chamada](evidencias/2026-09-28/n04-contrato-off/off-empty-search-fixture.evidencia.json) |
+| Código sintético `0000000000000` | 404; normalizado pela fonte para `00000000`, com `invalid_code`, `product_not_found` e aviso de normalização; priorizar correção do código | [Chamada](evidencias/2026-09-28/n04-contrato-off/off-missing-product-fixture.evidencia.json) |
+| Código sintético `9500000001232`, dígito de controlo válido | 404, produto não encontrado: estado `not_found`. Não se presume que o código esteja atribuído | [Chamada](evidencias/2026-09-28/n04-contrato-off/off-missing-valid-gtin-fixture.evidencia.json) |
+
+Os cinco itens novos cobrem muesli, tortitas de grão-de-bico, granola, bolachas e cereais; são **15 códigos únicos acumulados** com a amostra anterior, não 15 marcas nem cobertura nacional completa. Categorias/nome não foram corrigidos ou traduzidos. As três falhas 503 são indisponibilidade, não evidência de ausência dessas marcas. Casos sintéticos não entram nas contagens de cobertura.
+
+[Estados observados](evidencias/2026-09-28/n04-contrato-off/estados-observados.json): `found`, `search_results`, `empty`, `invalid_code`, `not_found`, `provider_unavailable`; entradas inválidas/429 também têm verificação local, identificada como sintética. Não confundir HTTP 200 com produto encontrado ou HTTP 404 composto com código válido inexistente.
+
+**Fechamento deste incremento:** nove novas chamadas, quatro HTTP 200, três 503 e dois 404 esperados; nove corpos/hashes preservados. Contrato resolvido para o produto observado, normalização e estados demonstrados, amostra ampliada. **N04 não recebe check de conclusão:** falta obter/avaliar os três filtros indisponíveis ou uma alternativa oficial de cobertura, além de decisões de atribuição/base derivada e revisão editorial antes da publicação. Não repetir falhas para recuperar contexto. [Resumo de retomada](evidencias/2026-09-28/n04-contrato-off/resumo-contrato.json).
+
+### Primeiro incremento — 27/09 (histórico)
+
 **Em andamento — 27/09/2026.** A pedido do autor, N03 foi reproduzido novamente: 26 verificações passaram. N04 começou com uma amostra pequena para respeitar a cota restante. Não foi encerrado nem iniciamos N05. [Resumo](evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json), [amostra](evidencias/2026-09-27/n04-produtos-portugal/amostra-produtos.json), [comparação das versões](evidencias/2026-09-27/n04-produtos-portugal/comparacao-v2-v3.json).
 
 ### Chamadas, retorno e prova
@@ -377,17 +444,148 @@ Busca: `countries_tags=en:portugal`, `page_size=10`, `page=1`, `sort_by=unique_s
 | `8000500426494` | Nutella Plant-Based; Ferrero, Nutella | Nome português não recebido |
 | `3045140105502` | Chocolat au lait; Milka | Nome português vazio e porção não recebida |
 
-O detalhe retornou `status: success`, `result.id: product_found`, `errors: []`, `warnings: []` e `product`; código, marca e nome conferem com a busca. Porém **`nutriments` veio vazio**, com a mesma projeção solicitada. Ainda não foi demonstrado se a diferença vem do schema, de `fields`, da versão ou de outro comportamento. Não completar com zero nem substituir silenciosamente o valor de outra versão. O retorno usa `nutrition_data_per: 100g` mesmo no exemplo de embalagem em ml; também não inferir densidade por essa combinação.
+O detalhe retornou `status: success`, `result.id: product_found`, `errors: []`, `warnings: []` e `product`; código, marca e nome conferem com a busca. Porém **`nutriments` veio vazio**, com a mesma projeção solicitada. Na coleta de 27/09, a causa ainda não estava demonstrada; a resolução de 28/09 acima confirmou o campo `nutrition` da nova estrutura. Não completar com zero nem substituir silenciosamente o valor de outra versão. O retorno usa `nutrition_data_per: 100g` mesmo no exemplo de embalagem em ml; também não inferir densidade por essa combinação.
 
 ### O que temos e o que falta
 
 **Temos:** primeira amostra real de produtos marcados para Portugal, rastreabilidade completa, disponibilidade/ausência dos campos medida e identidade de um código confirmada por detalhe. O [analisador](evidencias/analisar-produtos-portugal.py) reconfere os quatro hashes, contagens, unicidade, país, dígitos e resposta de negócio, sem rede.
 
-**Falta para fechar N04:** conferir o schema nutricional e a projeção do detalhe antes de nova chamada pontual; definir uma amostra justificada que cubra marcas/categorias relevantes em Portugal; documentar produto não encontrado, busca vazia e falhas para o futuro adaptador. Não ampliar para fotografias/alergénios/receitas de outros nichos neste incremento.
+**Pendências registradas em 27/09:** schema/projeção, amostra por marcas/categorias e estados sem resultado. Em 28/09, contrato e estados foram demonstrados; cobertura segue parcial pelos três filtros 503, conforme o resumo atual acima. Não ampliar para fotografias/alergénios/receitas de outros nichos neste incremento.
 
 **Direitos:** o guia oficial aponta ODbL para a base, DbCL para conteúdos individuais e CC BY-SA para imagens, com possíveis direitos de terceiros. Atribuição e tratamento de base derivada continuam decisões de publicação; não foram homologados nesta coleta. Nenhuma imagem foi solicitada e não houve contato, cadastro ou publicação externa. [Guia primário de licenças](https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/license-be-on-the-legal-side/).
 
 Reprodução local: `python docs/conteudo/evidencias/analisar-produtos-portugal.py`. Não executar o coletor para reler contexto: os quatro resultados e as falhas antigas já estão preservados.
+
+## N05 — ingredientes, alergénios e restrições alimentares
+
+**[x] Pesquisa concluída em 28/09/2026, com limites explícitos.** Cinco fichas reais, escolhidas por contrastes úteis, foram observadas; a taxonomia do fornecedor tem 27 entradas, incluindo os 14 grupos europeus e a sentinela `en:none`. **66 verificações locais passaram**, separando corpos reais de casos sintéticos de ausência, conflito e formato inválido. [Resumo](evidencias/2026-09-28/n05-ingredientes/resumo-ingredientes.json), [amostras exatas e interpretação separadas](evidencias/2026-09-28/n05-ingredientes/amostra-ingredientes.json), [verificações](evidencias/2026-09-28/n05-ingredientes/validacao-ingredientes.json).
+
+### Origem e chamada reproduzível
+
+Fonte de produtos: **Open Food Facts e colaboradores, AL02**. Foram usados códigos já observados no N04, sem pesquisa de produtos novos. `GET https://world.openfoodfacts.org/api/v3.6/product/{code}`, sem credencial ou dados pessoais, com projeção explícita. Exemplo real: `5603722505607` — Leite Sem Lactose Meio-Gordo. [Manifesto completo](evidencias/2026-09-28/n05-ingredientes/plano-coleta.json) e [metadados desse exemplo](evidencias/2026-09-28/n05-ingredientes/n05-lactose-free.evidencia.json) guardam a URL codificada, os headers, status, data, bytes e SHA-256.
+
+Campos solicitados: `code`, `product_name`, `product_name_pt`, `lang`, `ingredients_text`, `ingredients_text_pt`, `ingredients`, `ingredients_tags`, `ingredients_analysis_tags`, `allergens`, `allergens_tags`, `allergens_from_ingredients`, `allergens_from_user`, `traces`, `traces_tags`, `labels`, `labels_tags`, `tags_sources`, `ingredients_n`, `unknown_ingredients_n`, `ingredients_percent_analysis`, `ingredients_with_specified_percent_n`, `additives_tags`, `schema_version`, `last_modified_t`, `states_tags`, `data_quality_warnings_tags`, `data_quality_errors_tags`.
+
+Headers: `User-Agent: TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)`, `Accept: application/json,text/html,text/plain`, `Accept-Encoding: identity`. Coletor com TLS padrão, timeout de 25 s, limite de 2 MiB e cache de falhas/sucessos, sem retry. Intervalo de 7 s entre consultas ao servidor principal. Nove chamadas novas: **oito HTTP 200 e uma HTTP 202**; nove corpos/hashes preservados. A chamada EUR-Lex 202 não forneceu texto legal utilizável e não foi tratada como sucesso de conteúdo. O guia oficial da Comissão Europeia de fevereiro de 2026 foi obtido; a validação jurídica consolidada de exceções permanece para antes de alegações regulatórias no produto.
+
+### O que cada campo permite devolver no app
+
+| Retorno observado | Uso pretendido | Regra de interpretação |
+|---|---|---|
+| `ingredients_text`, `ingredients_text_pt` e `lang` | Mostrar a lista recebida e sua língua declarada | Transcrição não verificada, potencialmente comunitária/OCR. Renderizar como texto escapado; não executar HTML nem assegurar que `_pt` seja português correto |
+| `ingredients[]`, inclusive sublistas | Explicar ingredientes e subingredientes, preservando ordem e caminhos | Árvore analisada automaticamente pelo fornecedor. `is_in_taxonomy=0` e termos não reconhecidos exigem revisão; árvore não é uma receita validada |
+| `percent`, `percent_estimate`, `quantity_estimate`, `percent_min/max` | Diferenciar quantidade informada de estimativa | Nunca substituir `percent` pelo estimado ou usar estimativas para reconstruir receitas, doses ou quantidades de alergénio |
+| `allergens_tags` | Sinalizar presença reportada | Pode reunir declarações e análise automática. Não é laudo nem prova de ausência dos demais alergénios |
+| `traces_tags` | Exibir aviso de possível presença | Guardar separado dos ingredientes/alergénios reportados; não apagar por uma alegação vegana ou sem lactose |
+| `tags_sources.{allergens,traces,labels}.{source}` | Explicar origem por campo e revisão | Preservar `packaging`, `ingredients` e fontes futuras, seus `tags` e `last_updated_t`. `packaging` é a origem atribuída pela base, não uma auditoria do fabricante |
+| `labels_tags` | Mostrar alegações recebidas, como sem lactose/sem glúten | Distinguir etiqueta reportada de certificação verificada; tags agregadas podem incluir ancestrais de taxonomia |
+| `ingredients_analysis_tags` | Explicar classificação automática e incerteza | Vegano, não vegano, talvez e desconhecido são estados diferentes. Essa classificação não equivale a aprovação para alergia |
+| `unknown_ingredients_n`, `data_quality_*`, `states_tags` | Expor dados incompletos e necessidade de confirmação | Zero ingredientes desconhecidos não prova completude, correção do rótulo ou ausência de contaminação |
+| `code`, `schema_version`, `last_modified_t` e data da coleta | Rastrear produto, versão e atualização | Preservar código como texto e revalidar detalhes; alteração de composição pode manter o código |
+
+Nas cinco respostas v3.6, `allergens` e `traces` antigos **não vieram**, embora as listas `*_tags` tenham vindo. Não interpretar ausência do campo antigo como ausência de alergénio. Um campo pode estar ausente, nulo, vazio ou preenchido: o demonstrador conserva essa diferença. Não há garantia de que todas as próximas fichas tenham esses campos.
+
+### Casos reais que mudam a implementação
+
+| Produto observado | Evidência recebida | Consequência para a interface futura |
+|---|---|---|
+| Mimosa Leite Meio-Gordo `5601049132995` | Campo `ingredients_text_pt` contém `Milk`; um ingrediente desconhecido no analisador | Indicar idioma declarado e dado não revisto. Não apresentar a etiqueta `_pt` como tradução validada |
+| Mimosa Sem Lactose `5603722505607` | `en:no-lactose` em labels; `en:milk` em alergénios; texto informa leite e lactase | Manter a alegação sem lactose e o aviso de leite simultaneamente; não criar selo de adequação para alergia a leite |
+| Pingo Doce Muesli `5607047006795` | Glúten/frutos de casca rija reportados; vestígios de leite, mostarda, amendoim e soja; cinco ingredientes não reconhecidos | Exibir presença e possíveis vestígios separadamente. Preservar `pt:Frutos secos` para revisão, sem descartar por não estar no mapa |
+| Compal Pêssego `5601151964804` | `allergens_tags=[]`, `traces_tags=["en:none"]`, um ingrediente não reconhecido | Resultado de alergénios fica **desconhecido**, com a declaração da fonte sobre vestígios visível; não devolver “seguro para todos” |
+| Nutella Plant-Based `8000500426494` | Análise `en:vegan`; alergénios frutos de casca rija/soja; vestígios de leite; texto em inglês | Mostrar preferência alimentar e advertências em blocos distintos; classificação vegana não apaga vestígios |
+
+Outro contraste observado: a aveia do muesli tem `percent=45` e `percent_estimate=45.5`. Na ficha sem lactose, `percent_estimate=25` para lactase é uma estimativa do analisador; **não há `percent` declarado para esse ingrediente**. Não transformar esses números em gramas reais, composição comprovada ou informação para decisão clínica. As amostras preservam o corpo relevante e a interpretação em propriedades separadas.
+
+### Taxonomia, restrições e linguagem
+
+O [guia da Comissão Europeia](https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en) identifica 14 grupos de declaração: cereais com glúten, crustáceos, ovos, peixe, amendoim, soja, leite, frutos de casca rija, aipo, mostarda, sésamo, dióxido de enxofre/sulfitos, tremoço e moluscos. O [mapa local](evidencias/2026-09-28/n05-ingredientes/grupos-alergenios.json) confronta esses grupos com a [taxonomia OFF preservada](evidencias/2026-09-28/n05-ingredientes/n05-off-allergens-taxonomy.evidencia.json).
+
+Os 14 IDs têm nome português na taxonomia, mas a qualidade não é uniforme: `en:nuts` vem como **“nozes”**, mais estreito que o grupo. A proposta de UI usa “Frutos de casca rija”, mantendo o termo original e a necessidade de revisão editorial. Há 12 outras entradas e `en:none`; o vocabulário não deve ser confundido com lista universal de alergias. Não foram encontrados relacionamentos `parents` nessa taxonomia baixada: não inventar uma hierarquia executável.
+
+Separar no modelo futuro: **alergia declarada pelo utilizador**, **intolerância/restrição declarada**, **preferência alimentar** e **orientação clínica externa**. Não converter diagnóstico em restrição automática. Sem lactose não resolve alergia a leite; alegações sem glúten, veganas ou religiosas exigem o seu próprio contexto e confirmação. Não foram amostradas certificações halal/kosher nem critérios terapêuticos, de FODMAP, doença renal ou metas alimentares. Esses estados permanecem desconhecidos, não aprovados por esta pesquisa. Planos/dietas e educação possuem nichos próprios.
+
+### Estados e limites do demonstrador
+
+O [analisador local](evidencias/analisar-ingredientes.py) mantém:
+
+- `reported_presence`: sinal positivo de alergénio, com origem; `possible_presence_reported`: aviso de vestígio separado.
+- `unknown`: campo ausente/nulo/vazio sem informação positiva. Não oferece um estado automático “alimento seguro”.
+- `source_claim_none`: `en:none` preservado como alegação da fonte, com `clinicalAbsenceConfirmed=false`.
+- Contradição entre `en:none` e tags positivas: conservar ambos, destacar revisão, sem eliminar o sinal positivo.
+- Alegações de preferência, análise automática e revisão humana como conceitos separados; `clinicalSuitability=not_assessed`.
+
+Os 66 checks incluem hashes, cinco contratos reais, os 14 IDs, diferenças de percentagens, subingredientes, origem e idioma, além de casos sintéticos identificados: campo ausente/nulo/vazio, conflito, tags fora do mapa, código divergente, schema desconhecido, tipos inválidos e texto com marcação. São verificações do contrato de pesquisa; não testes de precisão clínica, de produto, de interface ou da população portuguesa.
+
+Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-ingredientes.py`. Corpos integrais ficam em `2026-09-28/raw/`, local/ignorado; metadados e subconjuntos com atribuição permitem retomada. Restrições de reutilização são as do N04. O [guia técnico OFF](https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/get-ingredient-related-analysis/) reconhece limitações de análise por idioma e exige revisão do OCR; não tratar as classificações automáticas como informação integralmente humana.
+
+**O que temos:** uma fonte gratuita demonstrada, chamadas/retornos reais, origem por campo, vocabulário inicial, estados e recusas reproduzíveis. **O que falta para publicar:** revisão de rótulos/fabricantes e pt-PT, atualização de fichas, implementação de confirmação e privacidade, tratamentos de receitas/alimentos sem embalagem, análise de exceções legais e qualquer adequação individual. O nicho fecha a pesquisa de dados; não libera prescrição, certificação ou app. **Sequência realizada: N06 está concluído para pesquisa na secção abaixo.**
+
+## N06 — fotografias de alimentos, produtos e pratos
+
+**[x] Concluído para pesquisa em 28/09/2026 no recorte abaixo.** [Resumo](evidencias/2026-09-28/n06-imagens/resumo-imagens.json), [11 candidatos e créditos](evidencias/2026-09-28/n06-imagens/amostra-imagens.json), [revisão visual](evidencias/2026-09-28/n06-imagens/revisao-visual.json) e [validação](evidencias/2026-09-28/n06-imagens/validacao-imagens.json). São três produtos OFF, sete ficheiros Commons, oito imagens inspecionadas, 22 chamadas preservadas/200/hashes e 23 verificações funcionais locais. Duas imagens só têm metadados; o catálogo de sementes foi rejeitado antes de baixar a imagem. Fotografias brutas ficam locais; a amostra versionada contém metadados e créditos.
+
+### Como foi chamado e o que chegou
+
+Os quatro `plano-*.json` da pasta N06 guardam URLs completas, projeções, finalidade e escopo; cada `*.evidencia.json` conserva método GET, cabeçalhos, data UTC, resposta, tamanho e SHA-256. O [coletor existente](evidencias/coletar-nichos-off.py) reutiliza cache, limita resposta/tempo e não repete falhas. Leituras públicas sem chave. A consulta do Commons pede só um ou dois resultados por busca, pois `extmetadata` é dispendioso. [Contrato oficial Imageinfo](https://www.mediawiki.org/wiki/API:Imageinfo).
+
+| Fonte / chamada | Campos observados | Utilização e limite |
+|---|---|---|
+| OFF `GET /api/v3.6/product/{code}.json?fields=...` | `selected_images.{front,ingredients,nutrition,packaging}.{display,small,thumb}.{idioma}`; `images.selected.{papel}.{idioma}.{imgid,rev,sizes}`; `images.uploaded.{imgid}.{uploader,uploaded_t}`; schema 1004 | URL por papel/idioma; revisão e dimensão; conta que enviou a imagem. Uploader não prova autoria; o papel packaging é informação da embalagem, não sinónimo de fotografia frontal |
+| Commons `GET /w/api.php?action=query&generator=search&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url|size|mime|sha1|extmetadata|timestamp|user&iiurlwidth=480&format=json&formatversion=2` | `query.pages[].{pageid,title,imageinfo[]}` com URL, miniatura, página de descrição, dimensões, MIME, SHA-1 do original, timestamp, uploader e `extmetadata` | Crédito vem de `Artist`/`Credit`, não do bot que fez upload. Licença e restrições são por ficheiro; HTML recebido vira texto escapado na interface |
+| GET da URL devolvida da miniatura | Oito respostas JPEG/200, bytes e SHA-256 locais | Decodificação e inspeção confirmadas nesta data. SHA-1 de original Commons não deve ser comparado com SHA-256 da miniatura. Disponibilidade futura não garantida; quatro miniaturas Commons pedidas a 480 px vieram com 500 px reais, enquanto o prato pequeno ficou em 240 px |
+
+Preferir URLs explícitas do fornecedor. `selected_images` continua presente, mas os metadados v3.6 estão em `images.selected` e `images.uploaded`, diferentes de exemplos antigos. O demonstrador confere revisão/URL para **este** schema e recusa mudança desconhecida. Nunca inventar revisão. Falta de imagem → ícone próprio com descrição; indisponibilidade → manter dados textuais. O [guia OFF](https://openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images/) recomenda tamanho adequado, poucas transferências sequenciais e dataset específico para volume maior. Não baixar imagens completas na navegação normal; cache/expiração por revisão e alternativa sem rede ficam para implementação.
+
+### Correspondência comprovada e problemas reais
+
+- **Leite Mimosa `5601049132995`:** frente PT, revisão 85, uploader `macrofactor`; foto verde/branca coincide com variante meio-gordo. Ingredientes só EN na projeção; fallback precisa ser explícito e identificado.
+- **Compal `5601151964804`:** frente PT, revisão 5; foto identifica néctar de pêssego. Não representa um copo medido.
+- **Nutella Plant-Based `8000500426494`:** URL simples de ingredientes aponta EN, embora a seleção tenha PT, revisão 147/imgid 20. O bloco PT aparece na foto com ingredientes e aviso de possível leite; não foi executado OCR. A frente não tem PT. Não substituir uma foto de ingredientes por capa.
+- **Banana `22552194`:** autor Wilfredor, CC BY-SA 3.0, cachos com casca. **Arroz `43976882`:** Douglas Perkins, CC0, tigela de arroz cozido. Nenhuma foto prova massa, preparação exata ou ligação a um ID Ciqual.
+- **Arroz `158198806`:** CC BY-SA 4.0; título diz brown rice, mas a composição visível precisa revisão antes de vincular a um alimento integral específico.
+- **Bacalhau à Brás `4010846`:** autor Adriao, CC BY-SA 3.0, visual coerente com o prato nomeado; original de apenas 240 × 117 px. Aceitável como referência de miniatura, insuficiente para detalhe amplo. Não recebemos receita, rendimento nem nutrientes com a fotografia.
+- Busca genérica por refeição portuguesa com peixe trouxe **carne com batatas/cerveja** e **catálogo de sementes**. Rejeitados para o uso procurado. A busca dirigida por título resolveu a identidade do prato. Nenhuma busca deve publicar associações automaticamente.
+
+### Direitos e decisão de uso
+
+OFF declara fotografias CC BY-SA 3.0, separadas da base ODbL e conteúdo DbCL; o [termo preservado no N04](evidencias/2026-09-28/n04-fechamento/n04-off-reuse-terms.evidencia.json) ressalva marcas e outros direitos. Commons exige conferir cada ficheiro; uploader pode não ser o criador. [Política de reutilização](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia).
+
+CC0 permite reutilização comercial sem atribuição exigida pela dedicação, mas mantemos origem. CC BY exige crédito/licença; CC BY-SA também impõe condições à adaptação partilhada. Não concluir que todo o app tem a licença da fotografia. Créditos incluem título, criador, página original, licença/versão e alterações; não sugerir apoio do autor. Os quatro resumos oficiais foram preservados: [CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). `releaseApproved=false` em todos os candidatos: não houve homologação independente de titularidade, direitos de terceiros ou catálogo completo.
+
+**O que temos:** caminho gratuito demonstrado para embalagem, alimento genérico e prato, variantes por idioma/tamanho, atribuição e rejeição de resultados incoerentes. **O que falta:** seleção por alimento do catálogo de lançamento, ligação editorial aos IDs nutricionais, fotografias melhores onde necessário, revisão de direitos/idioma, cache e interface de créditos. Não temos reconhecimento de alimento, gramas ou calorias por fotografia. N07 pode começar; N06 não aprova essas capacidades futuras.
+
+Reproduzir sem rede: `python docs/conteudo/evidencias/analisar-imagens.py` (Python com Pillow, disponível no runtime local; requer raw local). As verificações incluem idioma ausente, fallback, tipo de foto, revisões conflitantes, schema desconhecido, URL não confiável, crédito HTML, autor distinto do uploader, exclusão por correspondência, hashes e decodificação. Casos de falha sintéticos estão identificados no script.
+
+## N07 — ensinar a ler uma embalagem
+
+**[x] Concluído para pesquisa em 28/09/2026.** [Resumo](evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json), [12 lições com fontes](evidencias/2026-09-28/n07-rotulos/conteudo-didatico.json), [referência visual própria](evidencias/2026-09-28/n07-rotulos/guia-rotulos.html), [31 verificações](evidencias/2026-09-28/n07-rotulos/validacao-rotulos.json) e [conferência de apresentação](evidencias/2026-09-28/n07-rotulos/validacao-visual.json). Não é implementação do aplicativo nem alteração do Figma.
+
+### Origem e retorno efetivamente obtido
+
+| Fonte / chamada GET pública | O que retornou e sustenta | Limite |
+|---|---|---|
+| [Comissão Europeia — declaração nutricional](https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en), `n07-eu-nutricao` | HTML/200 preservado; valores por 100 g/ml, porção adicional e nutrientes da tabela | Usada a secção de declaração; cronogramas políticos antigos de 2020 não tratados como novidade de 2026 |
+| [Comissão Europeia — rótulos, campanha 2026](https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en), `n07-eu-guia` | HTML/200; identificação, ingredientes, alergénios, quantidade e instruções | Guia geral; exceções legais e legislação consolidada completa não foram homologadas |
+| [EFSA — datas](https://www.efsa.europa.eu/en/safe2eat/food-date-labelling), `n07-efsa-datas` | HTML/200; distinguir segurança e qualidade, respeitando conservação | Não fornece validade específica por lote nem autoriza consumo automático após data |
+| [NHS — rótulos](https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/), `n07-nhs-rotulos` | HTML/200; porção indicada pode diferir da consumida | Apoio didático britânico; seus semáforos não foram adotados como norma portuguesa |
+| [British Nutrition Foundation — interpretação](https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/), `n07-bnf-rotulos` | HTML/200; subconjuntos nutricionais e referência geral distinta de meta individual | Sem copiar imagens/guia integral, endosso ou prescrição individual |
+
+[Manifesto inicial](evidencias/2026-09-28/n07-rotulos/plano-coleta.json) e [complemento](evidencias/2026-09-28/n07-rotulos/plano-complemento.json) especificam como chamar. Metadados `*.evidencia.json` guardam URL, cabeçalhos, UTC, status/erro e hash. Sete chamadas preservadas: cinco 200/corpos/hashes e duas falhas de certificado em Your Europe (`status=null`). Não desativámos TLS, não repetimos as falhas e não as tratámos como páginas vazias. Leitura auxiliar via web não foi contada como resposta HTTP preservada. Uma URL antiga de referência NHS devolveu 404 na exploração web; não sustenta conteúdo.
+
+**Estas fontes devolvem HTML editorial, não JSON com dieta ou cálculos personalizados.** `conteudo-didatico.json` é organização proposta pelo TrainForge, distinguida dos retornos originais: `sources` identifica instituição/chamada/secção/limite; `lessons` contém título, linguagem simples, detalhe opcional, IDs de fonte e necessidade visual; `examples` separa base, unidade, estado, pacote, porção e consumo. Todos os exemplos são fictícios e `releaseApproved=false`. As fontes são humanas; a síntese pt-PT é rascunho assistido por agente, ainda sem revisão profissional independente.
+
+### O que o app poderá ensinar e apresentar
+
+As 12 lições cobrem localizar a tabela; comparar bases iguais; calcular quantidade consumida; separar pacote/porção; entender unidades; evitar dupla contagem; ler ingredientes; preservar avisos; distinguir referências de metas; datas; preparação; informação ausente. Cada lição tem sua fonte e a distinção entre fato editorial e regra proposta pelo projeto.
+
+O exemplo A separa pacote de 300 g, porção de 30 g e consumo de 45 g: com 200 kcal/100 g, são respectivamente 600, 60 e 90 kcal. O exemplo B usa 42 kcal/100 ml e 250 ml: 105 kcal. São exercícios aritméticos, sem produto real ou recomendação de quantidade. A lista fictícia de ingredientes é outro recorte didático, não uma receita correspondente aos números. O material inclui unidades junto dos valores, detalhe expansível, destaque textual e alternativa a valores não informados. A tabela pode deslocar horizontalmente em ecrãs pequenos, também pelo teclado.
+
+Para implementação futura, usar a base, estado e quantidade exatos do N03/N04, a proveniência/ausências do N05 e as imagens/créditos do N06. Não somar subconjuntos de nutrientes; não transformar dados ausentes em zero; não converter g/ml ou cru/cozido sem prova. O app deve guardar fonte e revisão da lição, confirmação do rótulo pelo utilizador e correções próprias separadas. Essas são decisões de contrato futuro, não campos que uma API educativa devolveu prontos.
+
+**O que temos:** cinco guias institucionais acessíveis, lições rastreáveis, exemplos próprios conferidos matematicamente e visualmente, tratamento de unidades e desconhecidos. **O que falta:** revisão editorial independente de pt-PT, regras/exceções completas se quisermos alegações jurídicas, conteúdo para crianças/situações clínicas, OCR e sincronização dessas lições com o produto. Nenhuma dieta, classificação clínica ou receita completa foi aprovada. **N08 — receitas humanas** é a próxima pesquisa.
+
+Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-rotulos.py`. Os 31 checks cobrem quantidades/base/preparo, valores negativos/não finitos/desconhecidos, subconjuntos, arredondamento, fontes reais e falhas preservadas; cinco hashes conferidos separadamente. A [verificação visual](evidencias/2026-09-28/n07-rotulos/validar-guia.cjs) usou Comet instalado em modo headless, perfil temporário, duas dimensões e zero erros de script; não usou a sessão pessoal nem fez instalações. Não é teste de acessibilidade completo ou teste do aplicativo.
 
 ## AL02 / AL06 — histórico de respostas sem negócio
 

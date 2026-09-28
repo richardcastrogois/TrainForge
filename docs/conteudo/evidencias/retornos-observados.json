@@ -719,6 +719,1208 @@
       "originalBodyHashMatches": true
     },
     {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-brand-compal.evidencia.json",
+      "artifactSha256": "f57bbb4dbb90fd643cfd5c1fdb9ca96531d1b67c63ec337029f330e2f3a2e924",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=compal&page_size=5&page=1&sort_by=unique_scans_n&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:30.5837233Z",
+      "httpStatus": 503,
+      "responseBytes": 25281,
+      "originalResponseSha256": "fa13f8614fb6b695b3de3ac03227804dfc6ab25b6fee4ca3eced0c5c79c63c1b",
+      "error": "HTTP 503 Service Temporarily Unavailable",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-brand-compal.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-brand-continente.evidencia.json",
+      "artifactSha256": "a850c61705cc3b78db2eac9041c7f91ef11a4c5e1635cea37563534b37032488",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=continente&page_size=5&page=1&sort_by=unique_scans_n&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:28.8581125Z",
+      "httpStatus": 503,
+      "responseBytes": 25281,
+      "originalResponseSha256": "fa13f8614fb6b695b3de3ac03227804dfc6ab25b6fee4ca3eced0c5c79c63c1b",
+      "error": "HTTP 503 Service Temporarily Unavailable",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-brand-continente.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-brand-mimosa.evidencia.json",
+      "artifactSha256": "c89a8e7afc804db5ca03958d7b5bb808ebc3049c975aa591ed05e2fbb0d63fde",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=mimosa&page_size=5&page=1&sort_by=unique_scans_n&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:30.3702629Z",
+      "httpStatus": 503,
+      "responseBytes": 25281,
+      "originalResponseSha256": "fa13f8614fb6b695b3de3ac03227804dfc6ab25b6fee4ca3eced0c5c79c63c1b",
+      "error": "HTTP 503 Service Temporarily Unavailable",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-brand-mimosa.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-brand-pingo-doce.evidencia.json",
+      "artifactSha256": "61a3b8cbe78ec465334c138edd2f427594a270545e285bc3c55df7617e006dc4",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=pingo-doce&page_size=5&page=1&sort_by=unique_scans_n&fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:29.8592635Z",
+      "httpStatus": 200,
+      "responseBytes": 10223,
+      "originalResponseSha256": "33a06efecf1dfdd674045dcc3dabdce8db52ec223e65c007ead0767e2d7043a0",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-brand-pingo-doce.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-empty-search-fixture.evidencia.json",
+      "artifactSha256": "25fbcd7699d3d6e43f03b5bbd021c8bd5cce9796ba7a431a1ad2252f047bf2d9",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=trainforge-validation-absent-20260928&page_size=1&fields=code",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:30.8099713Z",
+      "httpStatus": 200,
+      "responseBytes": 72,
+      "originalResponseSha256": "e5dc1724629916e51f4679b5f6bcbba81e17f06ba5514f6f7d65d2de68796e59",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-empty-search-fixture.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-missing-product-fixture.evidencia.json",
+      "artifactSha256": "ed6b41ba48ff09ac91e53154737a72c7862e30fd00523df39d48a7c2df321d75",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/0000000000000?fields=code,product_name,nutrition",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:35:31.0858182Z",
+      "httpStatus": 404,
+      "responseBytes": 684,
+      "originalResponseSha256": "fa670700bece6e2de8a06b5451102a9cb0f513d4f6f11ea5818bbc094ad82d18",
+      "error": "HTTP 404 Not Found",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-missing-product-fixture.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-missing-valid-gtin-fixture.evidencia.json",
+      "artifactSha256": "c2d67b524ab245a3ef7106c7020bac17c734f71260af07e6378a992fe6a1a737",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/9500000001232?fields=code,product_name,nutrition",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:36:59.2889690Z",
+      "httpStatus": 404,
+      "responseBytes": 332,
+      "originalResponseSha256": "510d22e72e50565e36902a18e823d918858be97047bc52b3cabd53a06d9ba987",
+      "error": "HTTP 404 Not Found",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-missing-valid-gtin-fixture.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-product-nutrition-v36.evidencia.json",
+      "artifactSha256": "af282cdea837fe15a404267c4a6683c7dadc0207bd9ddf86e3440b821fff9960",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5449000054227?fields=code%2Cproduct_name%2Cbrands%2Ccountries_tags%2Cnutrition%2Cnutriments%2Cschema_version%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_quantity%2Cserving_quantity_unit%2Cno_nutrition_data",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:33:50.4423768Z",
+      "httpStatus": 200,
+      "responseBytes": 4612,
+      "originalResponseSha256": "e0f888a0a6335a21d4208a2829b84ba37f26066ab9a40bdc9af53b1c62046b91",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-product-nutrition-v36.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/off-schema-changelog.evidencia.json",
+      "artifactSha256": "63fda6fc3c7c5c05c1ba07960c33d304eb36c18c499bc73dbe6c06cb0cdda352",
+      "request": {
+        "method": "GET",
+        "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/ref-api-and-product-schema-change-log/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "Accept": "application/json,text/html",
+          "User-Agent": "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T11:33:50.0874416Z",
+      "httpStatus": 200,
+      "responseBytes": 60272,
+      "originalResponseSha256": "a5ffadbfc4f7b77596f21126ffcf42c280a5e9ec838b09978f170708d0728041",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-contrato-off/../raw/off-schema-changelog.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-compal-final.evidencia.json",
+      "artifactSha256": "210e622e756eebce1f42312157db907baf9afdffcb49e936ac16f3bca248b125",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=compal&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:21:08.027686+00:00",
+      "httpStatus": 503,
+      "responseBytes": 25281,
+      "originalResponseSha256": "fa13f8614fb6b695b3de3ac03227804dfc6ab25b6fee4ca3eced0c5c79c63c1b",
+      "error": "HTTP 503",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-compal-final.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-compal-product.evidencia.json",
+      "artifactSha256": "6d2bba5b0f2dc9544d152ff9b9639fa6c4480b95c201075a9b5611a4752d93b8",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804?fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Clast_modified_t%2Cschema_version%2Ctags_sources",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:23:25.166570+00:00",
+      "httpStatus": 200,
+      "responseBytes": 1016,
+      "originalResponseSha256": "1f9aff2bd56b08676569271341b4525831d0bd6ed4263ac94e98b88aac5c0afe",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-compal-product.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-compal-searchalicious.evidencia.json",
+      "artifactSha256": "a0e4d25c79f2bebb8eca4b000474826cc4f25a403357c2f9834f19655dd49d9e",
+      "request": {
+        "method": "GET",
+        "url": "https://search.openfoodfacts.org/search?q=brands%3A%22compal%22+AND+countries_tags%3A%22en%3Aportugal%22&langs=pt%2Cen&page_size=3&fields=code%2Cproduct_name%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:22:57.192846+00:00",
+      "httpStatus": 200,
+      "responseBytes": 1472,
+      "originalResponseSha256": "0917d94541fc58e32f51c13c4b90bce0244ff147a1867c2f98aea1b2a884fdb1",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-compal-searchalicious.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-continente-final.evidencia.json",
+      "artifactSha256": "83067e9a7be207be1c3c5c9df904abcc254f945b26cb1002b1f2a4a75033133a",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=continente&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:20:52.136157+00:00",
+      "httpStatus": 200,
+      "responseBytes": 1410,
+      "originalResponseSha256": "066e272b77fbce425a6b06135644a6f19481eaace3069b65934b157ab6e50e25",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-continente-final.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-mimosa-final.evidencia.json",
+      "artifactSha256": "5644f7ec71b26b2fded8476c6ee504bf3afb743390534fa2b05f851ce9a755ac",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=mimosa&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:21:00.259860+00:00",
+      "httpStatus": 200,
+      "responseBytes": 1317,
+      "originalResponseSha256": "b9db8261089dcc67459fa0c994b8e6b39e10dd87f59c0ff2eb05af67ab842887",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-mimosa-final.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-odbl-official.evidencia.json",
+      "artifactSha256": "80c3954826ba206b918855d41ca2111e1b468f80598bb6f3cee7f6515d71d6f6",
+      "request": {
+        "method": "GET",
+        "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:21:15.875755+00:00",
+      "httpStatus": 200,
+      "responseBytes": 51543,
+      "originalResponseSha256": "cdcbc6bd08f482e515b6a4ceabbfd40e33522144ac315a1cb80cfb14a0ebbce5",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-odbl-official.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "artifactSha256": "c9f4ee6a4dda81eaf1f810be717779d36200dc31213c0b01bf91a39868c1b268",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/terms-of-use",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:21:16.120075+00:00",
+      "httpStatus": 200,
+      "responseBytes": 39370,
+      "originalResponseSha256": "a6df0415e7cbfc13c560ff7ade8e979bc286a817eed7a44c6a143f4a49b6df7e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-off-reuse-terms.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/n04-search-openapi.evidencia.json",
+      "artifactSha256": "a974143f2411a4e9d55f9e593540bf82cb6645e6952605d71cdf03ba619853ce",
+      "request": {
+        "method": "GET",
+        "url": "https://search.openfoodfacts.org/openapi.json",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:22:36.300769+00:00",
+      "httpStatus": 200,
+      "responseBytes": 19441,
+      "originalResponseSha256": "56f60359eeac43c214cf861abf278903c30018ee0aef6e1e453778c479d32535",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n04-fechamento/../raw/n04-search-openapi.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-eu-1169-pt.evidencia.json",
+      "artifactSha256": "c9b3bccdf679eb83ca1edba2b69bcbde1c0893a76ce81e8229cd5e2f8293987e",
+      "request": {
+        "method": "GET",
+        "url": "https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=CELEX:32011R1169",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:42.356302+00:00",
+      "httpStatus": 202,
+      "responseBytes": 2035,
+      "originalResponseSha256": "13baab932b6aa139cc9d27f47b21b4be996fe7797771e52201850dac84b2a494",
+      "error": "HTTP 202",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-eu-1169-pt.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-eu-allergens-guide.evidencia.json",
+      "artifactSha256": "a78e782ddfdfd4fe63e650fdbfdb60a4c18485322266667e909a713deb103bf6",
+      "request": {
+        "method": "GET",
+        "url": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:47.361150+00:00",
+      "httpStatus": 200,
+      "responseBytes": 94085,
+      "originalResponseSha256": "0ac2cf8a0ba4a986efd3c622f5967faf50db002d7f4aa8dedc704e5377207906",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-eu-allergens-guide.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-lactose-free.evidencia.json",
+      "artifactSha256": "f6a704981796f4f5b67203549a02776288bbcb837210ec8c8cac74c44f6d49a6",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5603722505607?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:11.754236+00:00",
+      "httpStatus": 200,
+      "responseBytes": 2937,
+      "originalResponseSha256": "2eafa272e42478b5b87fed9583b75d6d694628324e077b500b45fd9c47d76f85",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-lactose-free.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-milk.evidencia.json",
+      "artifactSha256": "caaec2051e25c29d3051a24d4e06daa2a422f06a659d0eb1bfff85f201f3e1e1",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:03.863768+00:00",
+      "httpStatus": 200,
+      "responseBytes": 2772,
+      "originalResponseSha256": "b7ccb2b1df3d3251e44fa5cf581af4a6f7ebf2a5b56440eaf656a8aa067e17d6",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-milk.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-muesli.evidencia.json",
+      "artifactSha256": "5ffb0e40a9ae723a363b79303502de6b91e4ac3f3f5dc617899062b5dfeee922",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5607047006795?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:19.421869+00:00",
+      "httpStatus": 200,
+      "responseBytes": 9890,
+      "originalResponseSha256": "044e3ce14e09d8797e0bc62f2b2f293c8f159e86880abefacef4f375c154d8a3",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-muesli.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-nectar.evidencia.json",
+      "artifactSha256": "54c286358a264e1d916b71439303b14cf5ae5eb5aa2ef1ea3c03a4d360ad1c53",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:27.076792+00:00",
+      "httpStatus": 200,
+      "responseBytes": 3773,
+      "originalResponseSha256": "35f0a4ea3cc35616de75472ad6e5d7c9386fc0a041f4b8e87e00026815386bbc",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-nectar.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-off-allergens-taxonomy.evidencia.json",
+      "artifactSha256": "15096a02640dee21890d625fe63fba76e6ed89d5e9c07369dd30889eeecbd0d7",
+      "request": {
+        "method": "GET",
+        "url": "https://static.openfoodfacts.org/data/taxonomies/allergens.json",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:48.108630+00:00",
+      "httpStatus": 200,
+      "responseBytes": 10168,
+      "originalResponseSha256": "5f3b2baadc84b35cb0183adca727fa34ea374e254bdbb715d020c59f9952a933",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-off-allergens-taxonomy.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-off-ingredients-guide.evidencia.json",
+      "artifactSha256": "1b704d2581e94472da8b94d41b8e3440709e3449d7057d76c59cc60428b36cdb",
+      "request": {
+        "method": "GET",
+        "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/get-ingredient-related-analysis/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:47.096234+00:00",
+      "httpStatus": 200,
+      "responseBytes": 62235,
+      "originalResponseSha256": "6fead286eff2463a140522af086bef022d418c9823987eabbbb4aa411743d1c3",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-off-ingredients-guide.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/n05-plant-based.evidencia.json",
+      "artifactSha256": "2130aa1917cc0691f1f0b59938dea3446f35514d6bf4dca12c071a77bf33db11",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cingredients_text%2Cingredients_text_pt%2Cingredients%2Cingredients_tags%2Cingredients_analysis_tags%2Callergens%2Callergens_tags%2Callergens_from_ingredients%2Callergens_from_user%2Ctraces%2Ctraces_tags%2Clabels%2Clabels_tags%2Ctags_sources%2Cingredients_n%2Cunknown_ingredients_n%2Cingredients_percent_analysis%2Cingredients_with_specified_percent_n%2Cadditives_tags%2Cschema_version%2Clast_modified_t%2Cstates_tags%2Cdata_quality_warnings_tags%2Cdata_quality_errors_tags",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T18:26:34.722455+00:00",
+      "httpStatus": 200,
+      "responseBytes": 5144,
+      "originalResponseSha256": "bbbc8986d9b613512be059eb439000c66a25f67ebb0dba27bd75dbc8147eafc6",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n05-ingredientes/../raw/n05-plant-based.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-cc-by-2.evidencia.json",
+      "artifactSha256": "d1f0721d3508308a51772f63d1bc5e1de5f942c4233b27926bc2ea12b12ccb74",
+      "request": {
+        "method": "GET",
+        "url": "https://creativecommons.org/licenses/by/2.0/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:54:07.153989+00:00",
+      "httpStatus": 200,
+      "responseBytes": 32050,
+      "originalResponseSha256": "30b0fd9759bb31c507b3e01fc78321eb621b2aa6cb96d68dbd15d5ea64737ae6",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-cc-by-2.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-cc-by-sa-3.evidencia.json",
+      "artifactSha256": "6c5df221e0b671faaa9a34623177313ef245225e2ad9022c8b3c8559950bdcbb",
+      "request": {
+        "method": "GET",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:54:06.996218+00:00",
+      "httpStatus": 200,
+      "responseBytes": 35645,
+      "originalResponseSha256": "5d66bca8d914a4e7ce5ac18292ec69abc018f911578f685b7d86dac27607f535",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-cc-by-sa-3.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-cc-by-sa-4.evidencia.json",
+      "artifactSha256": "656e61a2dab6a6e940e4b55db516afa46b1af8f218ce48e4d86ec76b0b9ad9e6",
+      "request": {
+        "method": "GET",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:54:07.071994+00:00",
+      "httpStatus": 200,
+      "responseBytes": 35744,
+      "originalResponseSha256": "17de6b7071e8f4816b103fb45aff75f71c94821f303534fc3e21cb68bd0f7148",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-cc-by-sa-4.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-cc0.evidencia.json",
+      "artifactSha256": "8c9ac24ed71d20a0fef3a8a89f276a4d61f2de2b97dd1524034737ce6c24c71c",
+      "request": {
+        "method": "GET",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:54:06.896504+00:00",
+      "httpStatus": 200,
+      "responseBytes": 30476,
+      "originalResponseSha256": "4ceb8ae6835f2f5263caa0e39c9e1adca9469686c267475049b33521dabbe339",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-cc0.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-commons-arroz.evidencia.json",
+      "artifactSha256": "2c8b93e34134c67356efc88337bdeb1f50f87df0035dd733b09ea56f10ff001a",
+      "request": {
+        "method": "GET",
+        "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cooked+rice+bowl+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:17.825510+00:00",
+      "httpStatus": 200,
+      "responseBytes": 4999,
+      "originalResponseSha256": "ed50f4b1e2824b5cb6a51f0b78f492710418f30a548ee3884676a1135e5a3113",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-commons-arroz.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-commons-bacalhau.evidencia.json",
+      "artifactSha256": "6963c19625d41e99ebdfaff14da8391477235a8eaa8e3d31a89ea36dc9bcda7c",
+      "request": {
+        "method": "GET",
+        "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3A%22Bacalhau+%C3%A0+Br%C3%A1s%22+filetype%3Abitmap&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:53:37.484418+00:00",
+      "httpStatus": 200,
+      "responseBytes": 2088,
+      "originalResponseSha256": "7bd3e613f4a52938138669861133508b6c0acd8a6715176606861aa672da5fbc",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-commons-bacalhau.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-commons-banana.evidencia.json",
+      "artifactSha256": "1cae91e630fae9de856557300f13d4f1c5e7fc2d2d055c04f52fd77a2a3729c4",
+      "request": {
+        "method": "GET",
+        "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=banana+fruit+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:17.038359+00:00",
+      "httpStatus": 200,
+      "responseBytes": 5214,
+      "originalResponseSha256": "2853d22cafc316182e3d9f149f56bbc66295c94d8a758809cc7b12aa1e030165",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-commons-banana.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-commons-prato.evidencia.json",
+      "artifactSha256": "d1cb961d8a81b8ef535e92d7a3cad6945a3e353c1bec5f93f891e2ec3e6cdc9b",
+      "request": {
+        "method": "GET",
+        "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Portuguese+meal+fish+potatoes+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:18.567809+00:00",
+      "httpStatus": 200,
+      "responseBytes": 11874,
+      "originalResponseSha256": "dbe502d05c7cd2e4627b88ad628d234ff3587130c184be93e9d765a233e72e9e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-commons-prato.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-commons-reuso.evidencia.json",
+      "artifactSha256": "6388897b6cae9cf6fc1a45949c6e93826fe82413d2b4e00423d1e1baca0090ab",
+      "request": {
+        "method": "GET",
+        "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:19.514511+00:00",
+      "httpStatus": 200,
+      "responseBytes": 130017,
+      "originalResponseSha256": "7809a0583a2aa3499bc7e1a03a2dfb3dc2525b4c844a9a395c3d702e8d3de2f2",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-commons-reuso.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-commons-158198806.evidencia.json",
+      "artifactSha256": "1ef413ae893cb0621fbb8148385d4de5ad94fb503970ad7364f3117b0810e724",
+      "request": {
+        "method": "GET",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Bowl_of_Cooked_Brown_Rice.jpg/500px-Bowl_of_Cooked_Brown_Rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:48.331119+00:00",
+      "httpStatus": 200,
+      "responseBytes": 55012,
+      "originalResponseSha256": "66236fc63971ac98795e996d74b4444addd77f000a41e6935c41c00d0990e52c",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-commons-158198806.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-commons-22552194.evidencia.json",
+      "artifactSha256": "156c7864bd141f2416613713711884f33233f2e172864b83b229accc329a6eb5",
+      "request": {
+        "method": "GET",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cavendish_banana_from_Maracaibo.jpg/500px-Cavendish_banana_from_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:47.700960+00:00",
+      "httpStatus": 200,
+      "responseBytes": 52231,
+      "originalResponseSha256": "93e16c75e0abad6626ad1099677d5df969dd89bcb2ba0fa154dacb1bbaf8996f",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-commons-22552194.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-commons-25804985.evidencia.json",
+      "artifactSha256": "dad67b8751870e026eaa79a5eabf26a50ab9ec56025cae7090be34054f59ab82",
+      "request": {
+        "method": "GET",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Beef_dinner_%283905632241%29.jpg/500px-Beef_dinner_%283905632241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:48.844379+00:00",
+      "httpStatus": 200,
+      "responseBytes": 56383,
+      "originalResponseSha256": "b51f6c55c5dff9b32a9ea2526507a0cceb2110c07514f96d3cfa8466bd2f730f",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-commons-25804985.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-commons-4010846.evidencia.json",
+      "artifactSha256": "8d37e048d8359b1670b2708a6c1adf3f872d58df27ff074a3adce0faac0b8e7f",
+      "request": {
+        "method": "GET",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bacalhau_%C3%A0_br%C3%A1s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:54:06.547999+00:00",
+      "httpStatus": 200,
+      "responseBytes": 15345,
+      "originalResponseSha256": "1e132fe6d4f4bb4ef5c6365d65b07492dd560657be58e227e46027492564297c",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-commons-4010846.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-commons-43976882.evidencia.json",
+      "artifactSha256": "9c31da79baea999d9a6d83f2847dac9878d395016b990351084c9f2234e32374",
+      "request": {
+        "method": "GET",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_bowl_of_rice.jpg/500px-A_bowl_of_rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:48.092987+00:00",
+      "httpStatus": 200,
+      "responseBytes": 37858,
+      "originalResponseSha256": "8b1df3c9c6ecaa07c09af57a7bf9b73a61c9d9a18167074166735b5cce8c2dae",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-commons-43976882.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-off-leite.evidencia.json",
+      "artifactSha256": "76ab77a8c9db52b9dafd98abf72d08de4e3f2a2bd4fcb253ea127f7c0e452a80",
+      "request": {
+        "method": "GET",
+        "url": "https://images.openfoodfacts.org/images/products/560/104/913/2995/front_pt.85.400.jpg",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:44.025926+00:00",
+      "httpStatus": 200,
+      "responseBytes": 13729,
+      "originalResponseSha256": "474cbf561f168d7fa874b84c369112edbef04458e0f4cbfefc25dd0066b98fd1",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-off-leite.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-off-nectar.evidencia.json",
+      "artifactSha256": "2a767d06479b7f092a6d14209b106a6131a52763d97a7c2a197d2da8eaf0136b",
+      "request": {
+        "method": "GET",
+        "url": "https://images.openfoodfacts.org/images/products/560/115/196/4804/front_pt.5.400.jpg",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:45.254632+00:00",
+      "httpStatus": 200,
+      "responseBytes": 19073,
+      "originalResponseSha256": "1796922f841a7fccd89a9bfd2a8b865449edab49acaa9d225ba72de62caec1df",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-off-nectar.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-foto-off-vegetal.evidencia.json",
+      "artifactSha256": "13c28da6cf064a1f24db7ac162bded030a3b6f19fab52fbe14462eb84a29d2f1",
+      "request": {
+        "method": "GET",
+        "url": "https://images.openfoodfacts.org/images/products/800/050/042/6494/ingredients_pt.147.400.jpg",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:52:46.316080+00:00",
+      "httpStatus": 200,
+      "responseBytes": 30940,
+      "originalResponseSha256": "fa47c46b9cf7842e406c59628847b500a1846e106c034c9012426ca7a3afb065",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-foto-off-vegetal.jpg",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-imageinfo.evidencia.json",
+      "artifactSha256": "82af236bdf8d5d0ec19d3d9851586ae679cdc4b3f05bcc79071b002835626ba8",
+      "request": {
+        "method": "GET",
+        "url": "https://www.mediawiki.org/wiki/API:Imageinfo",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:19.596039+00:00",
+      "httpStatus": 200,
+      "responseBytes": 123003,
+      "originalResponseSha256": "19fb669eb28379a1c33dd803f375dedd44f0e3954df24150b63a6628864c0f62",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-imageinfo.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-off-guia.evidencia.json",
+      "artifactSha256": "fd2431d9aa9036f0045689eef588f27ff3e3e9080e12934796f9abd43b112834",
+      "request": {
+        "method": "GET",
+        "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:19.284310+00:00",
+      "httpStatus": 200,
+      "responseBytes": 63296,
+      "originalResponseSha256": "03604bfedd48ac592aec6dc2ae061f3aa6d01261cc7e4ce58fde0b3b3bb5381f",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-off-guia.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-off-leite.evidencia.json",
+      "artifactSha256": "b3c444aff0a19b57c8670cc139fe695652cd5f7dc5061aaf43e31f52eaaabb7a",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:50:53.625602+00:00",
+      "httpStatus": 200,
+      "responseBytes": 5665,
+      "originalResponseSha256": "b3b45efb7f56d3748dd1eacaaf7d9564a6d711da51257fd65f36a7fa465881c7",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-off-leite.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-off-nectar.evidencia.json",
+      "artifactSha256": "99ba30d069b7b9a3f2d1a322d49de3d53a7c75ef96a5f25279547c37e94f040f",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:01.539097+00:00",
+      "httpStatus": 200,
+      "responseBytes": 2761,
+      "originalResponseSha256": "fd562d35788f991b8c7a5101cb28626c907ffe9ccc69cde2afe5985a2a05dc50",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-off-nectar.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/n06-off-vegetal.evidencia.json",
+      "artifactSha256": "fac8e9154e237e3a47d4a9e16e99df5ec223b90e0c1f4ce034a3ef3430590edd",
+      "request": {
+        "method": "GET",
+        "url": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:51:09.178674+00:00",
+      "httpStatus": 200,
+      "responseBytes": 11574,
+      "originalResponseSha256": "bfe056639609fdb65f3971bbebfe0b4ca005c0f785480cde563d1060295d0d7e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n06-imagens/../raw/n06-off-vegetal.json",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-bnf-rotulos.evidencia.json",
+      "artifactSha256": "282351c822c1b49057335c167cf9959177bbf590e42f858ff29bfe9584b0da93",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T23:00:15.873769+00:00",
+      "httpStatus": 200,
+      "responseBytes": 101030,
+      "originalResponseSha256": "e40759ee8895dee03ec5a12ec3549b70600da0f0e3958fb332975c6b16609cf2",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/../raw/n07-bnf-rotulos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-efsa-datas.evidencia.json",
+      "artifactSha256": "c35cba770b18048c4f6b394637be4d4eaa0031320504fe8adbdf4fd71a0d4b4a",
+      "request": {
+        "method": "GET",
+        "url": "https://www.efsa.europa.eu/en/safe2eat/food-date-labelling",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:59:03.368188+00:00",
+      "httpStatus": 200,
+      "responseBytes": 95893,
+      "originalResponseSha256": "ac65cfba85bed2da0c77eff107d5009b41f4019e9c1946d794d198e215f492f8",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/../raw/n07-efsa-datas.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-eu-declaracao.evidencia.json",
+      "artifactSha256": "1fb2d9d5747e52f3f75131c91830d71d0f5064d70929e0a6bf8b0b487168f6d8",
+      "request": {
+        "method": "GET",
+        "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/nutrition-declaration/index_en.htm",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:59:02.250320+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-eu-guia.evidencia.json",
+      "artifactSha256": "4e88525373b01b73d319ce9c991fadf6f9a86e3ee7046d439e42ad880b797ba5",
+      "request": {
+        "method": "GET",
+        "url": "https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T23:00:14.007307+00:00",
+      "httpStatus": 200,
+      "responseBytes": 93822,
+      "originalResponseSha256": "22e4c8ffd1f61b27c3e15f557748e0f201be3f3a0674d9c97335e05068539969",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/../raw/n07-eu-guia.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-eu-nutricao.evidencia.json",
+      "artifactSha256": "a4d8c0f69a2bbd00459779c70f41ae95ab6328f2327c4802a1773b2696e50818",
+      "request": {
+        "method": "GET",
+        "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:59:01.410692+00:00",
+      "httpStatus": 200,
+      "responseBytes": 106557,
+      "originalResponseSha256": "8e7c6f88af0665d302749a6aa44c55886ea596b6ee77f70a6a3dab3144629ea8",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/../raw/n07-eu-nutricao.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-eu-rotulagem.evidencia.json",
+      "artifactSha256": "4dbe0e9bdbb481900fcc804f9dfc4183f0c0905c04a444d74dec4592abbc8516",
+      "request": {
+        "method": "GET",
+        "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/labelling-rules/index_en.htm",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T22:59:02.936255+00:00",
+      "httpStatus": null,
+      "responseBytes": null,
+      "originalResponseSha256": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/n07-nhs-rotulos.evidencia.json",
+      "artifactSha256": "4d955d6b46b1c872847cf5d4d1823b4c3dd2a0a81d80a8059e62924eabf125bc",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-28T23:00:15.018777+00:00",
+      "httpStatus": 200,
+      "responseBytes": 31558,
+      "originalResponseSha256": "c4303ed5c20204cf816ff63535d3359f9fab43b54fb57d21f91faab91f2ca14d",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-28/n07-rotulos/../raw/n07-nhs-rotulos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
       "evidenceFile": "docs/conteudo/evidencias/ciqual-2025-metadata.evidencia.json",
       "artifactSha256": "0e17991b1051f990885c6cda4bc773cfff8f24126cee7c09558ce34c8c6b214d",
       "request": {

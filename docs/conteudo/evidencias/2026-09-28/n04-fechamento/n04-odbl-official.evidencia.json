@@ -1,0 +1,21 @@
+{
+  "id": "n04-odbl-official",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:21:15.875755+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primary license conditions",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 51543,
+  "bodyFile": "../raw/n04-odbl-official.html",
+  "sha256": "cdcbc6bd08f482e515b6a4ceabbfd40e33522144ac315a1cb80cfb14a0ebbce5"
+}

@@ -1,0 +1,48 @@
+{
+  "niche": "N06",
+  "scope": "Sete miniaturas para auditoria de disponibilidade e correspondencia; sem imagens completas ou catalogo em massa",
+  "requests": [
+    {
+      "id": "n06-foto-off-leite",
+      "url": "https://images.openfoodfacts.org/images/products/560/104/913/2995/front_pt.85.400.jpg",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem front pt; sem distribuir no Git"
+    },
+    {
+      "id": "n06-foto-off-nectar",
+      "url": "https://images.openfoodfacts.org/images/products/560/115/196/4804/front_pt.5.400.jpg",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem front pt; sem distribuir no Git"
+    },
+    {
+      "id": "n06-foto-off-vegetal",
+      "url": "https://images.openfoodfacts.org/images/products/800/050/042/6494/ingredients_pt.147.400.jpg",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem ingredients pt; sem distribuir no Git"
+    },
+    {
+      "id": "n06-foto-commons-22552194",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cavendish_banana_from_Maracaibo.jpg/500px-Cavendish_banana_from_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: disponibilidade e correspondencia visual com alimento/estado, preservando licenca e creditos no catalogo da amostra"
+    },
+    {
+      "id": "n06-foto-commons-43976882",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_bowl_of_rice.jpg/500px-A_bowl_of_rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: disponibilidade e correspondencia visual com alimento/estado, preservando licenca e creditos no catalogo da amostra"
+    },
+    {
+      "id": "n06-foto-commons-158198806",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Bowl_of_Cooked_Brown_Rice.jpg/500px-Bowl_of_Cooked_Brown_Rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: disponibilidade e correspondencia visual com alimento/estado, preservando licenca e creditos no catalogo da amostra"
+    },
+    {
+      "id": "n06-foto-commons-25804985",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Beef_dinner_%283905632241%29.jpg/500px-Beef_dinner_%283905632241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "extension": "jpg",
+      "purpose": "Fixture de pesquisa: disponibilidade e correspondencia visual com alimento/estado, preservando licenca e creditos no catalogo da amostra"
+    }
+  ]
+}

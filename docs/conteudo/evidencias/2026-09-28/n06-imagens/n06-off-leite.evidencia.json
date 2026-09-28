@@ -1,0 +1,21 @@
+{
+  "id": "n06-off-leite",
+  "url": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:50:53.625602+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 5601049132995",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5665,
+  "bodyFile": "../raw/n06-off-leite.json",
+  "sha256": "b3b45efb7f56d3748dd1eacaaf7d9564a6d711da51257fd65f36a7fa465881c7"
+}

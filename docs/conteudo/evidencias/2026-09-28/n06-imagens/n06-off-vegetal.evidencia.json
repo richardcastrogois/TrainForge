@@ -1,0 +1,21 @@
+{
+  "id": "n06-off-vegetal",
+  "url": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:09.178674+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 8000500426494",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 11574,
+  "bodyFile": "../raw/n06-off-vegetal.json",
+  "sha256": "bfe056639609fdb65f3971bbebfe0b4ca005c0f785480cde563d1060295d0d7e"
+}

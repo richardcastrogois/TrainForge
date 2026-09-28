@@ -1,0 +1,21 @@
+{
+  "id": "n06-commons-prato",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Portuguese+meal+fish+potatoes+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:18.567809+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Amostra limitada de fotografias de prato com direitos por ficheiro e miniaturas",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Portuguese+meal+fish+potatoes+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 11874,
+  "bodyFile": "../raw/n06-commons-prato.json",
+  "sha256": "dbe502d05c7cd2e4627b88ad628d234ff3587130c184be93e9d765a233e72e9e"
+}

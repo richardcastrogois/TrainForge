@@ -1,0 +1,21 @@
+{
+  "id": "n06-off-guia",
+  "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:19.284310+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 63296,
+  "bodyFile": "../raw/n06-off-guia.html",
+  "sha256": "03604bfedd48ac592aec6dc2ae061f3aa6d01261cc7e4ce58fde0b3b3bb5381f"
+}

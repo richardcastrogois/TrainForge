@@ -1,0 +1,337 @@
+{
+  "checksPassed": 66,
+  "checks": [
+    {
+      "name": "SHA256 n05-eu-1169-pt",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-eu-allergens-guide",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-lactose-free",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-milk",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-muesli",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-nectar",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-off-allergens-taxonomy",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-off-ingredients-guide",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "SHA256 n05-plant-based",
+      "passed": true,
+      "basis": "integrity"
+    },
+    {
+      "name": "milk found/schema/identity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "milk no safety promise",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "lactose-free found/schema/identity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "lactose-free no safety promise",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "muesli found/schema/identity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "muesli no safety promise",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "nectar found/schema/identity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "nectar no safety promise",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "plant-based found/schema/identity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "plant-based no safety promise",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Lactose-free claim coexists with reported milk",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Milk traces none never cancels reported milk",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Vegan classification coexists with milk trace",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Milk trace does not become declared milk ingredient",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Empty allergen list remains unknown",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Muesli declared allergens and traces separated",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Unnormalized tag retained for review",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Automatic unknown ingredient counts retained",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "PT field is not proof of Portuguese content",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Missing Portuguese text preserved",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Reported and computed percentages kept separate",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Estimated lactase is not a label quantity",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Nested ingredients carry exact source paths",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Packaging and parsed allergen provenance separate",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Top-level legacy fields absent in v3.6",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:gluten",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:crustaceans",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:eggs",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:fish",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:peanuts",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:soybeans",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:milk",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:nuts",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:celery",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:mustard",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:sesame-seeds",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:sulphur-dioxide-and-sulphites",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:lupin",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "EU group in taxonomy en:molluscs",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Taxonomy not equivalent to EU list",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Broad nuts group must not be narrowed to walnuts",
+      "passed": true,
+      "basis": "observed source"
+    },
+    {
+      "name": "Missing/allergen absent",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Missing/allergen null",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Missing/allergen empty",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Contradictory none plus positive preserved",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Positive provenance cannot disappear behind empty aggregate",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Other personal allergens retained",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Untrusted text requires plain text rendering",
+      "passed": true,
+      "basis": "synthetic; no UI execution"
+    },
+    {
+      "name": "Reject unsupported schema",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject code mismatch",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject malformed tags",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject malformed provenance",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject malformed tree",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject invalid text",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "Reject null tag element",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "No ingredients text/tree never implies no allergens",
+      "passed": true,
+      "basis": "synthetic"
+    },
+    {
+      "name": "EU original did not yield usable legal text",
+      "passed": true,
+      "basis": "observed HTTP response; not interpreted as law"
+    }
+  ],
+  "networkDuringAnalysis": false,
+  "testScope": "Data semantics and refusal states; not UI, clinical accuracy, prevalence or certification"
+}

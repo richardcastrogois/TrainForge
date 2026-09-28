@@ -1,0 +1,21 @@
+{
+  "id": "n06-foto-off-vegetal",
+  "url": "https://images.openfoodfacts.org/images/products/800/050/042/6494/ingredients_pt.147.400.jpg",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:52:46.316080+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem ingredients pt; sem distribuir no Git",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://images.openfoodfacts.org/images/products/800/050/042/6494/ingredients_pt.147.400.jpg",
+  "contentType": "image/jpeg",
+  "retryAfter": null,
+  "bytes": 30940,
+  "bodyFile": "../raw/n06-foto-off-vegetal.jpg",
+  "sha256": "fa47c46b9cf7842e406c59628847b500a1846e106c034c9012426ca7a3afb065"
+}

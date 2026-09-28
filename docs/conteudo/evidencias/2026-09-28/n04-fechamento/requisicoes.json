@@ -1,0 +1,33 @@
+{
+  "niche": "N04",
+  "scope": "One bounded simplified query per unavailable brand; no retry; close declared research criteria",
+  "requests": [
+    {
+      "purpose": "One smaller unsorted query for previously unavailable brand continente",
+      "id": "n04-continente-final",
+      "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=continente&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t"
+    },
+    {
+      "purpose": "One smaller unsorted query for previously unavailable brand mimosa",
+      "id": "n04-mimosa-final",
+      "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=mimosa&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t"
+    },
+    {
+      "purpose": "One smaller unsorted query for previously unavailable brand compal",
+      "id": "n04-compal-final",
+      "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=compal&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t"
+    },
+    {
+      "extension": "html",
+      "purpose": "Primary license conditions",
+      "id": "n04-odbl-official",
+      "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "extension": "html",
+      "purpose": "Provider terms of reuse",
+      "id": "n04-off-reuse-terms",
+      "url": "https://world.openfoodfacts.org/terms-of-use"
+    }
+  ]
+}

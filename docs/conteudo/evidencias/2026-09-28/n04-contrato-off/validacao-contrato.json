@@ -1,0 +1,33 @@
+{
+  "passed": 27,
+  "checks": [
+    "legacy_empty_new_nutrition_present",
+    "identity_same_as_search",
+    "energy_matches_v2",
+    "reported_vs_computed",
+    "explicit_zero_preserved",
+    "serving_has_explicit_volume",
+    "serving_energy_as_received",
+    "serving_reported_carbs_not_recomputed",
+    "estimate_is_distinct",
+    "classification_not_scaled_as_nutrient",
+    "computed_only_not_reported",
+    "unknown_not_zero",
+    "invalid_number_True",
+    "invalid_number_-1",
+    "invalid_number_NaN",
+    "invalid_number_Infinity",
+    "invalid_number_unknown",
+    "missing_projection_rejected",
+    "unknown_schema_rejected",
+    "pingo_sample_country_and_brand",
+    "pingo_gtins_valid",
+    "empty_search_observed",
+    "invalid_code_precedes_not_found",
+    "checksum_valid_missing",
+    "three_unavailable_not_absent_brands",
+    "malformed_not_success",
+    "rate_limit_not_missing"
+  ],
+  "scope": "Observed API research and synthetic local edge cases; not app integration"
+}

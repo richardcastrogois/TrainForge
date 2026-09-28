@@ -1,0 +1,21 @@
+{
+  "id": "n04-mimosa-final",
+  "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=mimosa&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:21:00.259860+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "One smaller unsorted query for previously unavailable brand mimosa",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=mimosa&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1317,
+  "bodyFile": "../raw/n04-mimosa-final.json",
+  "sha256": "b9db8261089dcc67459fa0c994b8e6b39e10dd87f59c0ff2eb05af67ab842887"
+}

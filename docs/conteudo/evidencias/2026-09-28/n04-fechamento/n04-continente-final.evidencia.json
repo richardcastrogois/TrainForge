@@ -1,0 +1,21 @@
+{
+  "id": "n04-continente-final",
+  "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=continente&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:20:52.136157+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "One smaller unsorted query for previously unavailable brand continente",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=continente&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1410,
+  "bodyFile": "../raw/n04-continente-final.json",
+  "sha256": "066e272b77fbce425a6b06135644a6f19481eaace3069b65934b157ab6e50e25"
+}

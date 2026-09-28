@@ -1,0 +1,29 @@
+{
+  "niche": "N04",
+  "researchDate": "2026-09-28",
+  "researchStatus": "completed_with_explicit_scope_limits",
+  "releaseApproved": false,
+  "newCalls": 8,
+  "http200": 7,
+  "http503": 1,
+  "bodyHashesVerified": 8,
+  "newProducts": 9,
+  "combinedUniqueProductCodes": 24,
+  "plannedBrandsObserved": [
+    "continente",
+    "pingo-doce",
+    "mimosa",
+    "compal"
+  ],
+  "checksPassed": 35,
+  "previousNutritionChecks": 27,
+  "searchIndexStalenessObserved": true,
+  "operationalLimit": "Compal v2 search still 503; official Search-a-licious alternative and direct v3.6 product demonstrated",
+  "remainingReleaseWork": [
+    "Market representativeness not measured; brand counts are provider-reported only",
+    "Portuguese editorial/label review and data refresh strategy",
+    "Implement attribution and derived catalogue distribution obligations",
+    "Flutter/API/database integration and operational testing not done"
+  ],
+  "nextNiche": "N05"
+}

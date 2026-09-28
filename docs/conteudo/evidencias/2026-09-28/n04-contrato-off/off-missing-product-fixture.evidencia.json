@@ -1,0 +1,19 @@
+{
+    "id":  "off-missing-product-fixture",
+    "url":  "https://world.openfoodfacts.org/api/v3.6/product/0000000000000?fields=code,product_name,nutrition",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:35:31.0858182Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  404,
+    "use":  "research_only",
+    "bytes":  684,
+    "bodyFile":  "../raw/off-missing-product-fixture.json",
+    "sha256":  "fa670700bece6e2de8a06b5451102a9cb0f513d4f6f11ea5818bbc094ad82d18",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  "",
+    "error":  "HTTP 404 Not Found"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n06-commons-arroz",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cooked+rice+bowl+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:17.825510+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Amostra limitada de fotografias de arroz com direitos por ficheiro e miniaturas",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cooked+rice+bowl+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4999,
+  "bodyFile": "../raw/n06-commons-arroz.json",
+  "sha256": "ed50f4b1e2824b5cb6a51f0b78f492710418f30a548ee3884676a1135e5a3113"
+}

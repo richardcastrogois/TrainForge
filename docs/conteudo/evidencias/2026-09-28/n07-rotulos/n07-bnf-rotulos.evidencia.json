@@ -1,0 +1,21 @@
+{
+  "id": "n07-bnf-rotulos",
+  "url": "https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T23:00:15.873769+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia institucional de nutrição: açúcares como subconjunto, referência de energia não individual; apoio pedagógico não lei portuguesa",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 101030,
+  "bodyFile": "../raw/n07-bnf-rotulos.html",
+  "sha256": "e40759ee8895dee03ec5a12ec3549b70600da0f0e3958fb332975c6b16609cf2"
+}

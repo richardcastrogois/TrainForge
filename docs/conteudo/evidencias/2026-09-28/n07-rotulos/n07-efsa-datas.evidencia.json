@@ -1,0 +1,21 @@
+{
+  "id": "n07-efsa-datas",
+  "url": "https://www.efsa.europa.eu/en/safe2eat/food-date-labelling",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:59:03.368188+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Distinguir data de seguranca e de qualidade; guardar contexto de armazenamento",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.efsa.europa.eu/en/safe2eat/food-date-labelling",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 95893,
+  "bodyFile": "../raw/n07-efsa-datas.html",
+  "sha256": "ac65cfba85bed2da0c77eff107d5009b41f4019e9c1946d794d198e215f492f8"
+}

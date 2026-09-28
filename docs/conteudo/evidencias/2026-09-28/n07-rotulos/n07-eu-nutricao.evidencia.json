@@ -1,0 +1,21 @@
+{
+  "id": "n07-eu-nutricao",
+  "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:59:01.410692+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Base de 100 g/ml e opcao de porcao; nao extrair politica futura de secoes historicas de 2020",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 106557,
+  "bodyFile": "../raw/n07-eu-nutricao.html",
+  "sha256": "8e7c6f88af0665d302749a6aa44c55886ea596b6ee77f70a6a3dab3144629ea8"
+}

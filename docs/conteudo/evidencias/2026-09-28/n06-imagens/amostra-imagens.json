@@ -1,0 +1,574 @@
+{
+  "scope": "Amostra de pesquisa; fotografias raw locais, nenhuma liberação automática de uso",
+  "assets": [
+    {
+      "provider": "AL02",
+      "code": "5601049132995",
+      "role": "front",
+      "requestedLanguage": "pt",
+      "sourceLanguage": "pt",
+      "languageFallback": false,
+      "url": "https://images.openfoodfacts.org/images/products/560/104/913/2995/front_pt.85.400.jpg",
+      "imageId": "18",
+      "revision": "85",
+      "sourceSize": "display",
+      "sourceDimensions": {
+        "h": 400,
+        "w": 168
+      },
+      "uploader": "macrofactor",
+      "uploadedAtSource": 1718305480,
+      "authorIndependentlyVerified": false,
+      "sourcePath": "product.selected_images.front.display.pt",
+      "sourceMetadataPath": "product.images.selected.front.pt",
+      "productPage": "https://world.openfoodfacts.org/product/5601049132995",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "licenseEvidence": "../n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "releaseApproved": false,
+      "evidenceFile": "n06-off-leite.evidencia.json",
+      "assetId": "off-leite-front",
+      "review": {
+        "decision": "candidate",
+        "finding": "Frente Mimosa Leite Meio-Gordo legível, embalagem verde/branca. Associa à variante; não demonstra volume consumido.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Contribuidor OFF: macrofactor",
+        "title": "off-leite-front",
+        "source": "https://world.openfoodfacts.org/product/5601049132995",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "provider": "AL02",
+      "code": "5601049132995",
+      "role": "ingredients",
+      "requestedLanguage": "pt",
+      "sourceLanguage": "en",
+      "languageFallback": true,
+      "url": "https://images.openfoodfacts.org/images/products/560/104/913/2995/ingredients_en.108.400.jpg",
+      "imageId": "22",
+      "revision": "108",
+      "sourceSize": "display",
+      "sourceDimensions": {
+        "h": 400,
+        "w": 300
+      },
+      "uploader": "duartecosta",
+      "uploadedAtSource": 1769308588,
+      "authorIndependentlyVerified": false,
+      "sourcePath": "product.selected_images.ingredients.display.en",
+      "sourceMetadataPath": "product.images.selected.ingredients.en",
+      "productPage": "https://world.openfoodfacts.org/product/5601049132995",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "licenseEvidence": "../n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "releaseApproved": false,
+      "evidenceFile": "n06-off-leite.evidencia.json",
+      "assetId": "off-leite-ingredients",
+      "review": {
+        "decision": "pending_visual",
+        "finding": "Só metadados EN: não inspeccionada; não apresentar como rótulo em português.",
+        "visuallyInspected": false,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Contribuidor OFF: duartecosta",
+        "title": "off-leite-ingredients",
+        "source": "https://world.openfoodfacts.org/product/5601049132995",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "provider": "AL02",
+      "code": "5601151964804",
+      "role": "front",
+      "requestedLanguage": "pt",
+      "sourceLanguage": "pt",
+      "languageFallback": false,
+      "url": "https://images.openfoodfacts.org/images/products/560/115/196/4804/front_pt.5.400.jpg",
+      "imageId": "1",
+      "revision": "5",
+      "sourceSize": "display",
+      "sourceDimensions": {
+        "h": 400,
+        "w": 157
+      },
+      "uploader": "foodless",
+      "uploadedAtSource": 1710172026,
+      "authorIndependentlyVerified": false,
+      "sourcePath": "product.selected_images.front.display.pt",
+      "sourceMetadataPath": "product.images.selected.front.pt",
+      "productPage": "https://world.openfoodfacts.org/product/5601151964804",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "licenseEvidence": "../n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "releaseApproved": false,
+      "evidenceFile": "n06-off-nectar.evidencia.json",
+      "assetId": "off-nectar-front",
+      "review": {
+        "decision": "candidate",
+        "finding": "Frente Compal Clássico Pêssego Néctar coincide com nome; marca e pêssego visíveis. Fundo de prateleira; não é foto de copo/porção.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Contribuidor OFF: foodless",
+        "title": "off-nectar-front",
+        "source": "https://world.openfoodfacts.org/product/5601151964804",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "provider": "AL02",
+      "code": "8000500426494",
+      "role": "ingredients",
+      "requestedLanguage": "pt",
+      "sourceLanguage": "pt",
+      "languageFallback": false,
+      "url": "https://images.openfoodfacts.org/images/products/800/050/042/6494/ingredients_pt.147.400.jpg",
+      "imageId": "20",
+      "revision": "147",
+      "sourceSize": "display",
+      "sourceDimensions": {
+        "h": 236,
+        "w": 400
+      },
+      "uploader": "ebarros",
+      "uploadedAtSource": 1789234869,
+      "authorIndependentlyVerified": false,
+      "sourcePath": "product.selected_images.ingredients.display.pt",
+      "sourceMetadataPath": "product.images.selected.ingredients.pt",
+      "productPage": "https://world.openfoodfacts.org/product/8000500426494",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "licenseEvidence": "../n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "releaseApproved": false,
+      "evidenceFile": "n06-off-vegetal.evidencia.json",
+      "assetId": "off-vegetal-ingredients",
+      "review": {
+        "decision": "candidate_detail",
+        "finding": "Bloco PT visível junto de ES; grão de bico, soja e aviso de possível leite. Recorte de rótulo, não capa; para leitura confortável precisa detalhe maior. Não equivale a OCR validado.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Contribuidor OFF: ebarros",
+        "title": "off-vegetal-ingredients",
+        "source": "https://world.openfoodfacts.org/product/8000500426494",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-22552194",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-banana.evidencia.json",
+      "pageId": 22552194,
+      "title": "File:Cavendish banana from Maracaibo.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cavendish_banana_from_Maracaibo.jpg/500px-Cavendish_banana_from_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cavendish_banana_from_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cavendish_banana_from_Maracaibo.jpg",
+      "sourceDimensions": {
+        "w": 3620,
+        "h": 2527
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 335
+      },
+      "sourceSha1Original": "f5f5696f34914c255abaee5a965515a359801c1e",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2012-11-05T00:37:18Z",
+      "uploader": "Wilfredor",
+      "artist": "Wilfredor",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "candidate",
+        "finding": "Cachos de bananas com casca, fundo com outras bananas. Ilustra fruta; não 100 g de parte comestível.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Wilfredor",
+        "title": "File:Cavendish banana from Maracaibo.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Cavendish_banana_from_Maracaibo.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-113972132",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-banana.evidencia.json",
+      "pageId": 113972132,
+      "title": "File:Bananas on black background 02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Bananas_on_black_background_02.jpg/500px-Bananas_on_black_background_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bananas_on_black_background_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bananas_on_black_background_02.jpg",
+      "sourceDimensions": {
+        "w": 4890,
+        "h": 3122
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 306
+      },
+      "sourceSha1Original": "f24a863bea1c0cb7e9c9523d93012d7f458178af",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2022-01-04T06:05:11Z",
+      "uploader": "Tournasol7",
+      "artist": "Krzysztof Golik",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "pending_visual",
+        "finding": "Metadados apenas; foto não inspecionada nesta amostra.",
+        "visuallyInspected": false,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Krzysztof Golik",
+        "title": "File:Bananas on black background 02.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bananas_on_black_background_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-43976882",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-arroz.evidencia.json",
+      "pageId": 43976882,
+      "title": "File:A bowl of rice.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_bowl_of_rice.jpg/500px-A_bowl_of_rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/A_bowl_of_rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_bowl_of_rice.jpg",
+      "sourceDimensions": {
+        "w": 1944,
+        "h": 1716
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 424
+      },
+      "sourceSha1Original": "d401178467470b76317babbd41c95d2379e24c8d",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2015-10-04T14:09:07Z",
+      "uploader": "Douglaspperkins",
+      "artist": "Douglas Perkins",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attributionRequiredRaw": "false",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "candidate",
+        "finding": "Tigela de arroz branco cozido; corresponde ao estado servido. Não inferir variedade, adição de gordura ou massa.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Douglas Perkins",
+        "title": "File:A bowl of rice.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:A_bowl_of_rice.jpg",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-158198806",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-arroz.evidencia.json",
+      "pageId": 158198806,
+      "title": "File:Bowl of Cooked Brown Rice.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Bowl_of_Cooked_Brown_Rice.jpg/500px-Bowl_of_Cooked_Brown_Rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Bowl_of_Cooked_Brown_Rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bowl_of_Cooked_Brown_Rice.jpg",
+      "sourceDimensions": {
+        "w": 4000,
+        "h": 3000
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 360
+      },
+      "sourceSha1Original": "96a98e160323ef16ac43242eea28f31e492787e2",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2025-01-19T08:48:41Z",
+      "uploader": "Ceeseven",
+      "artist": "Ceeseven",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "review_variant",
+        "finding": "Arroz servido com grãos claros e avermelhados; título diz brown rice, composição/variedade exata não comprovada visualmente. Não ligar automaticamente a um ID nutricional integral.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Ceeseven",
+        "title": "File:Bowl of Cooked Brown Rice.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bowl_of_Cooked_Brown_Rice.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-25804985",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-prato.evidencia.json",
+      "pageId": 25804985,
+      "title": "File:Beef dinner (3905632241).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Beef_dinner_%283905632241%29.jpg/500px-Beef_dinner_%283905632241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Beef_dinner_%283905632241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Beef_dinner_(3905632241).jpg",
+      "sourceDimensions": {
+        "w": 3648,
+        "h": 2736
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 360
+      },
+      "sourceSha1Original": "95beade44e01964ff382ab03962e28a5cb9e5099",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2013-04-28T21:12:03Z",
+      "uploader": "File Upload Bot (Magnus Manske)",
+      "artist": "Bernt Rostad from Oslo, Norway",
+      "credit": "Beef dinner Uploaded by tm",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "reject_for_requested_fish",
+        "finding": "Prato de carne com batatas, pão e bebida identificada como cerveja. Busca por peixe não corresponde. Não usar como exemplo de dieta ou receita de peixe.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Bernt Rostad from Oslo, Norway",
+        "title": "File:Beef dinner (3905632241).jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Beef_dinner_(3905632241).jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-42627978",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-prato.evidencia.json",
+      "pageId": 42627978,
+      "title": "File:Manns' superior seeds (15767656904).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Manns%27_superior_seeds_%2815767656904%29.jpg/500px-Manns%27_superior_seeds_%2815767656904%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Manns%27_superior_seeds_%2815767656904%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Manns%27_superior_seeds_(15767656904).jpg",
+      "sourceDimensions": {
+        "w": 1257,
+        "h": 1756
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 671
+      },
+      "sourceSha1Original": "8134b561470e06caf6676eb4afbf4f28877d9876",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2015-08-25T03:16:29Z",
+      "uploader": "Fæ",
+      "artist": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection.; J. Manns & Co.",
+      "credit": "https://www.flickr.com/photos/biodivlibrary/15767656904",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "reject",
+        "finding": "Título e descrição identificam catálogo de sementes/fertilizantes. Rejeitado por metadados; não baixar como fotografia alimentar.",
+        "visuallyInspected": false,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection.; J. Manns & Co.",
+        "title": "File:Manns' superior seeds (15767656904).jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Manns%27_superior_seeds_(15767656904).jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    },
+    {
+      "assetId": "commons-4010846",
+      "provider": "MI01",
+      "evidenceFile": "n06-commons-bacalhau.evidencia.json",
+      "pageId": 4010846,
+      "title": "File:Bacalhau à brás.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bacalhau_%C3%A0_br%C3%A1s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bacalhau_%C3%A0_br%C3%A1s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_br%C3%A1s.jpg",
+      "sourceDimensions": {
+        "w": 240,
+        "h": 117
+      },
+      "reportedThumbDimensions": {
+        "w": 480,
+        "h": 234
+      },
+      "sourceSha1Original": "70139528acc07fa630da06cf72d060096cac5664",
+      "mime": "image/jpeg",
+      "sourceTimestamp": "2008-05-08T00:46:41Z",
+      "uploader": "Adriao",
+      "artist": "Adriao",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attributionRequiredRaw": "true",
+      "restrictionsRaw": "",
+      "releaseApproved": false,
+      "authorIndependentlyVerified": false,
+      "review": {
+        "decision": "candidate_thumbnail",
+        "finding": "Prato apresentado como bacalhau à Brás com azeitonas e ervas; visual coerente com título, mas original tem apenas 240 × 117 px. Serve miniatura pequena; não comprova receita/rendimento.",
+        "visuallyInspected": true,
+        "providesMeasuredPortion": false,
+        "nutritionalRecordLinked": false
+      },
+      "attributionDraft": {
+        "creator": "Adriao",
+        "title": "File:Bacalhau à brás.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_br%C3%A1s.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Miniatura/seleção existente do fornecedor; nenhuma edição adicional neste estudo. Confirmar histórico antes da publicação."
+      }
+    }
+  ],
+  "availability": [
+    {
+      "evidence": "n06-foto-commons-158198806.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 375
+      },
+      "format": "JPEG",
+      "bytes": 55012,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-22552194.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 349
+      },
+      "format": "JPEG",
+      "bytes": 52231,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-25804985.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 375
+      },
+      "format": "JPEG",
+      "bytes": 56383,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-4010846.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 240,
+        "h": 117
+      },
+      "format": "JPEG",
+      "bytes": 15345,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-43976882.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 441
+      },
+      "format": "JPEG",
+      "bytes": 37858,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-leite.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 168,
+        "h": 400
+      },
+      "format": "JPEG",
+      "bytes": 13729,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-nectar.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 157,
+        "h": 400
+      },
+      "format": "JPEG",
+      "bytes": 19073,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-vegetal.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 400,
+        "h": 236
+      },
+      "format": "JPEG",
+      "bytes": 30940,
+      "status": 200
+    }
+  ]
+}

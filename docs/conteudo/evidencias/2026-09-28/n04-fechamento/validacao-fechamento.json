@@ -1,0 +1,182 @@
+{
+  "checksPassed": 35,
+  "checks": [
+    {
+      "name": "SHA256 n04-compal-final",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-compal-product",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-compal-searchalicious",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-continente-final",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-mimosa-final",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-odbl-official",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-off-reuse-terms",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "SHA256 n04-search-openapi",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "Compal v2 failure retained",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente returns three distinct barcodes",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente identity 5601312070320",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente country/brand 5601312070320",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente identity 5601312108849",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente country/brand 5601312108849",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente identity 5601312079293",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "continente country/brand 5601312079293",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa returns three distinct barcodes",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa identity 5601049612336",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa country/brand 5601049612336",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa identity 5601049132995",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa country/brand 5601049132995",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa identity 5603722505607",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "mimosa country/brand 5603722505607",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal returns three distinct barcodes",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal identity 5601151973592",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal country/brand 5601151973592",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal identity 5601151122204",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal country/brand 5601151122204",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal identity 5601151964804",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "compal country/brand 5601151964804",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "Pingo Doce earlier stratum retained",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "Direct Compal identity matches observed search code",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "v3 namespaced brand tags preserved",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "Search revision older than direct product",
+      "passed": true,
+      "basis": "preserved source response"
+    },
+    {
+      "name": "Prior nutrition contract checks passed",
+      "passed": true,
+      "basis": "preserved source response"
+    }
+  ],
+  "previousNutritionChecks": 27,
+  "networkDuringAnalysis": false
+}

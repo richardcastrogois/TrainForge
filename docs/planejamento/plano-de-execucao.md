@@ -2,12 +2,50 @@
 
 Data: 17/09/2026. Proposta; a aprovação de uma etapa não aprova automaticamente decisões das próximas. O foco imediato continua sendo definir o produto e o Figma, não programar o aplicativo.
 
+## Check-in N07 — 28/09/2026
+
+- [x] Obter cinco guias institucionais com corpo/hash; duas falhas TLS preservadas sem desativar validação de certificados.
+- [x] Registrar 12 lições pt-PT, fontes por lição, dados necessários, limites e dois exemplos didáticos próprios.
+- [x] Passar 31 verificações de cálculo, unidades, estados, desconhecidos e fontes. [Resumo](../conteudo/evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json).
+- [x] Conferir a referência visual no Comet headless em 1280 × 1000 e 390 × 844; 12 lições, nove linhas nutricionais, detalhes expansíveis, sem excesso de largura da página ou erros de script.
+- [x] Graphify final: 0 alterados, 42 inalterados, 0 removidos; índice da pesquisa 106 chamadas / 78 HTTP 200 / 72 hashes e 50 fontes/famílias.
+- [x] Revisão de fechamento para versionamento: 182 verificações de N04–N07 reproduzidas sem rede; dez documentos sem erros/links locais quebrados; 88 JSONs, sete scripts Python e coletor PowerShell com sintaxe válida. Avisos de placeholder são palavras portuguesas e notas históricas, não campos por preencher. Fotografias/raw/caches excluídos; checagem de padrões de credenciais sem ocorrências.
+- [ ] Revisão editorial independente de pt-PT, legislação integral/exceções e publicação não homologadas. N08 é o próximo; não iniciado neste pedido. Etapa 01 continua aberta.
+
+Os check-ins N04–N06 abaixo preservam o estado de cada entrega. A fila atual está no check-in geral das etapas.
+
+## Check-in N06 — 28/09/2026
+
+- [x] Verificar imagens de três produtos e sete ficheiros Commons; oito fotografias inspecionadas, 22 chamadas preservadas/200/hashes.
+- [x] Registrar idioma, revisão, tamanho, atribuição, direitos por imagem e resultados rejeitados por falta de correspondência.
+- [x] Passar 23 verificações funcionais, conferir hashes e decodificar os oito JPEGs. [Resumo](../conteudo/evidencias/2026-09-28/n06-imagens/resumo-imagens.json).
+- [x] Graphify incremental: 0 alterados, 42 inalterados, 0 removidos; saídas preservadas.
+- [ ] Catálogo integral, reconhecimento por foto, direitos de terceiros e integração não foram homologados. Pesquisa N06 concluída no recorte; N07 autorizado na sequência.
+
+## Check-in N05 — 28/09/2026
+
+- [x] Obter cinco fichas reais, documentação do fornecedor, guia europeu e taxonomia; nove chamadas, oito 200 e um EUR-Lex 202 sem conteúdo legal utilizável.
+- [x] Documentar ingredientes, subingredientes, declarações, análise automática, vestígios, percentagens estimadas e revisão por idioma.
+- [x] Mapear 14 grupos; preservar 12 entradas adicionais e sentinela sem tratá-la como segurança.
+- [x] Passar 66 verificações locais; casos reais e sintéticos identificados. [Resumo e limites](../conteudo/evidencias/2026-09-28/n05-ingredientes/resumo-ingredientes.json).
+- [x] Atualização final Graphify: 0 alterados, 42 inalterados, 0 removidos. Índice acumulado 77 chamadas / 51 HTTP 200 / 45 hashes; catálogo 46 fontes.
+- [x] Verificação documental: dez arquivos, sem erros ou links locais quebrados detectados; três scripts Python com sintaxe válida, fila N01–N46 consistente e checks N01–N05 presentes.
+- [ ] Revisão de rótulos/pt-PT, exceções legais, integração e adequação individual não foram homologadas. N06 é o próximo, não iniciado.
+
+## Check-in N04 — 28/09/2026
+
+- [x] Concluir pesquisa de produtos por país/marca/código: 24 produtos únicos; quatro marcas; Compal pela alternativa oficial e detalhe v3.6 confirmado.
+- [x] Documentar revisão desatualizada na busca, namespace de tags, atribuição e base derivada.
+- [x] Passar 35 verificações do fechamento, reproduzir 27 do contrato e conferir oito novos hashes.
+- [x] Graphify incremental: 0 alterados, 42 inalterados, 0 removidos em `lib/`.
+- [ ] Homologação de catálogo, integração e publicação: fora do fechamento da pesquisa. N05 pode começar; etapa 01 continua aberta.
+
 ## Check-in das etapas
 
-Atualizado em 27/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
+Atualizado em 28/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
 
 - [x] **Etapa 0 — Base confiável:** inventário/preservação em 22/09; alinhamento documental R01–R18 em 24/09. [Evidência e limites](etapa-00-base.md). Nova conferência visual fica para a próxima intervenção no Figma.
-- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** Pilotos e N01–N03 entregues para pesquisa até 27/09. O autor escolheu pesquisar um nicho por vez; **N04 — produtos portugueses por marca/código** está em andamento na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Faltam programas completos para demais percursos, alimentação guiada, validação pt-PT e decisão do conteúdo de lançamento. Capturas especializadas permanecem condicionais. Não avançar automaticamente para a etapa 02.
+- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** N01–N07 concluídos para pesquisa até 28/09. Próximo: **N08 — receitas humanas**, na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Permanecem programas completos, alimentação guiada, revisão pt-PT e escopo de lançamento. Não avançar automaticamente para etapa 02.
 - [ ] Etapa 2 — Fluxos e conteúdo.
 - [ ] Etapa 3 — Sistema visual.
 - [ ] Etapa 4 — Protótipo completo.
@@ -100,6 +138,16 @@ Atualizado em 27/09/2026. Marcar `[x]` somente após executar e registrar evidê
 - [x] Retomar a validação pelo mesmo fluxo de aprovação após o limite de uso: a primeira tentativa não executou por falha da revisão automática; na retomada, passou. Nenhuma nova consulta ao fornecedor foi necessária. N04 continua aberto, sem confundir entrega deste incremento com encerramento do nicho.
 
 
+### Check-in N04 — contrato e ampliação · 28/09/2026
+
+- [x] Publicar alterações anteriores: commit [`104a3bb`](https://github.com/richardcastrogois/TrainForge/commit/104a3bb69403e76a16e8f655549d010779466a40), 40 arquivos, em `main`; SHA local e remoto conferidos, sem force push. Inclui N02/N03 e primeiro incremento N04; brutos excluídos.
+- [x] Resolver o retorno nutricional do código observado: API v3.6/schema 1004, campo `nutrition`; valores informados/calculados, origens e bases preservados. [Contrato](../conteudo/evidencias/2026-09-28/n04-contrato-off/contrato-nutricional.json).
+- [x] Implementar demonstrador local de normalização/classificação e validar **27 verificações**. Não é integração no aplicativo. [Resultados](../conteudo/evidencias/2026-09-28/n04-contrato-off/validacao-contrato.json).
+- [x] Ampliar com cinco produtos Pingo Doce (15 códigos acumulados) e confirmar busca vazia/código inválido/não encontrado. Nove GETs preservados: quatro 200, três 503, dois 404 de casos sintéticos. Falhas sem retry; 60 chamadas/36 HTTP 200/28 hashes no índice acumulado.
+- [x] **Resolvido no fechamento posterior de 28/09:** Continente/Mimosa por busca menor; Compal por Search-a-licious e detalhe v3.6. N04 concluído para pesquisa. A revisão editorial/cobertura de mercado e implementação dos requisitos ODbL seguem para publicação.
+- [x] Validação final: dez documentos sem erros/links locais quebrados; sintaxe dos scripts Python/PowerShell válida; 45 fontes únicas e caminhos de evidência existentes; 60 chamadas/36 HTTP 200/28 hashes conferidos; nove corpos brutos novos ignorados; fila N01–N46 consistente; `git diff --check` passou. Avisos de placeholder correspondem à regra ampla já documentada (palavras como todo/método), sem novo marcador por preencher. Graphify final: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Nenhuma integração ou teste funcional do app foi alegado.
+
+
 ## Entregas e critérios
 
 **Complemento da etapa 1 — 23/09/2026:** [x] análise do cenário sem parceiros/produção manual registrada em [programas prontos e cenários clínicos](../conteudo/programas-prontos-e-cenarios-clinicos.md). O autor quer oferecer programas existentes com instruções, inclusive para casos de saúde. A obtenção de conteúdo humano foi distinguida de indicação clínica automática; essa cobertura não foi validada nem implementada. [ ] Decisão sobre o modo de uso clínico e importação piloto de um programa geral permanecem abertas. A etapa 1 não está encerrada.
@@ -140,8 +188,8 @@ O [diagnóstico](../diagnostico.md) identifica logs sensíveis, refresh/logout i
 ## Próximas cinco ações
 
 1. Autor revisar [visão central](README.md), [pitch](pitch-e-decisoes.md) e balanço da etapa 01, sem presumir lançamento só de musculação.
-2. Continuar **N04** pela comparação de schema/fields v2/v3.6 já guardada; só depois fazer outra chamada pontual. Definir amostra de marcas/categorias e estados sem resultado para fechar o nicho.
-3. Após encerrar N04 com evidência e limites, seguir a [fila N05–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: porções, produtos, ensino alimentar, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
+2. Iniciar **N08 — receitas humanas**: ingredientes e quantidades, rendimento, passos, fonte/autoria, nutrientes quando demonstrados e direitos de reutilização/adaptação. Reaproveitar evidências anteriores antes de nova coleta.
+3. Seguir a [fila N08–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: receitas, alimentação por objetivos, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
 4. Consolidar capacidade → fonte/método → prova → limite → alternativa; escolher explicitamente lançamento e expansões. Encerrar etapa 01 apenas após os critérios.
 5. Retomar Figma Desktop comparando a base viva, aplicar F01–F12 em incrementos e seguir contratos/modelo conceitual, banco e implementação.
 

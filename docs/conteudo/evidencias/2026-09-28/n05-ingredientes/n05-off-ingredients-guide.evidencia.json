@@ -1,0 +1,21 @@
+{
+  "id": "n05-off-ingredients-guide",
+  "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/get-ingredient-related-analysis/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:26:47.096234+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Source documentation distinguishes parsed/inferred ingredients, uncertainty and OCR review",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/get-ingredient-related-analysis/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 62235,
+  "bodyFile": "../raw/n05-off-ingredients-guide.html",
+  "sha256": "6fead286eff2463a140522af086bef022d418c9823987eabbbb4aa411743d1c3"
+}

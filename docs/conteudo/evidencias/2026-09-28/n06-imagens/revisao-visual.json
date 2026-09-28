@@ -1,0 +1,83 @@
+{
+  "reviewMethod": "Inspeção visual das oito imagens locais através de view_image; triagem adicional por metadados. Não é revisão profissional/certificação de origem.",
+  "reviewDate": "2026-09-28",
+  "assets": {
+    "off-leite-front": {
+      "decision": "candidate",
+      "finding": "Frente Mimosa Leite Meio-Gordo legível, embalagem verde/branca. Associa à variante; não demonstra volume consumido.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "off-leite-ingredients": {
+      "decision": "pending_visual",
+      "finding": "Só metadados EN: não inspeccionada; não apresentar como rótulo em português.",
+      "visuallyInspected": false,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "off-nectar-front": {
+      "decision": "candidate",
+      "finding": "Frente Compal Clássico Pêssego Néctar coincide com nome; marca e pêssego visíveis. Fundo de prateleira; não é foto de copo/porção.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "off-vegetal-ingredients": {
+      "decision": "candidate_detail",
+      "finding": "Bloco PT visível junto de ES; grão de bico, soja e aviso de possível leite. Recorte de rótulo, não capa; para leitura confortável precisa detalhe maior. Não equivale a OCR validado.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-22552194": {
+      "decision": "candidate",
+      "finding": "Cachos de bananas com casca, fundo com outras bananas. Ilustra fruta; não 100 g de parte comestível.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-113972132": {
+      "decision": "pending_visual",
+      "finding": "Metadados apenas; foto não inspecionada nesta amostra.",
+      "visuallyInspected": false,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-43976882": {
+      "decision": "candidate",
+      "finding": "Tigela de arroz branco cozido; corresponde ao estado servido. Não inferir variedade, adição de gordura ou massa.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-158198806": {
+      "decision": "review_variant",
+      "finding": "Arroz servido com grãos claros e avermelhados; título diz brown rice, composição/variedade exata não comprovada visualmente. Não ligar automaticamente a um ID nutricional integral.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-25804985": {
+      "decision": "reject_for_requested_fish",
+      "finding": "Prato de carne com batatas, pão e bebida identificada como cerveja. Busca por peixe não corresponde. Não usar como exemplo de dieta ou receita de peixe.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-42627978": {
+      "decision": "reject",
+      "finding": "Título e descrição identificam catálogo de sementes/fertilizantes. Rejeitado por metadados; não baixar como fotografia alimentar.",
+      "visuallyInspected": false,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    },
+    "commons-4010846": {
+      "decision": "candidate_thumbnail",
+      "finding": "Prato apresentado como bacalhau à Brás com azeitonas e ervas; visual coerente com título, mas original tem apenas 240 × 117 px. Serve miniatura pequena; não comprova receita/rendimento.",
+      "visuallyInspected": true,
+      "providesMeasuredPortion": false,
+      "nutritionalRecordLinked": false
+    }
+  }
+}

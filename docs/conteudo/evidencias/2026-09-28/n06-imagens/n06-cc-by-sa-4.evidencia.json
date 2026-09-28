@@ -1,0 +1,21 @@
+{
+  "id": "n06-cc-by-sa-4",
+  "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:54:07.071994+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Preservar resumo oficial da licenca explicitamente presente nas imagens amostradas; nao substitui analise de direitos de terceiros",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 35744,
+  "bodyFile": "../raw/n06-cc-by-sa-4.html",
+  "sha256": "17de6b7071e8f4816b103fb45aff75f71c94821f303534fc3e21cb68bd0f7148"
+}

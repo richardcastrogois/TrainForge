@@ -1,0 +1,21 @@
+{
+  "id": "n06-commons-reuso",
+  "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:19.514511+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 130017,
+  "bodyFile": "../raw/n06-commons-reuso.html",
+  "sha256": "7809a0583a2aa3499bc7e1a03a2dfb3dc2525b4c844a9a395c3d702e8d3de2f2"
+}

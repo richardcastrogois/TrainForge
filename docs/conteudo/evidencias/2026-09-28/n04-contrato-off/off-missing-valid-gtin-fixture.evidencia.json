@@ -1,0 +1,19 @@
+{
+    "id":  "off-missing-valid-gtin-fixture",
+    "url":  "https://world.openfoodfacts.org/api/v3.6/product/9500000001232?fields=code,product_name,nutrition",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:36:59.2889690Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  404,
+    "use":  "research_only",
+    "bytes":  332,
+    "bodyFile":  "../raw/off-missing-valid-gtin-fixture.json",
+    "sha256":  "510d22e72e50565e36902a18e823d918858be97047bc52b3cabd53a06d9ba987",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  "",
+    "error":  "HTTP 404 Not Found"
+}

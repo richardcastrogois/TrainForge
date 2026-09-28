@@ -1,0 +1,3227 @@
+{
+  "sourceId": "AL02",
+  "attribution": "Open Food Facts and contributors",
+  "databaseLicense": "ODbL-1.0",
+  "individualContentsLicense": "DbCL-1.0",
+  "scope": "Five purposive profiles; research, not package verification",
+  "records": [
+    {
+      "sampleProfile": "milk",
+      "sourceEvidence": "n05-milk.evidencia.json",
+      "observed": {
+        "additives_tags": [],
+        "allergens_from_user": "(pt) ",
+        "allergens_tags": [
+          "en:milk"
+        ],
+        "code": "5601049132995",
+        "data_quality_errors_tags": [],
+        "data_quality_warnings_tags": [
+          "en:ingredients-unknown-score-above-0",
+          "en:ingredients-100-percent-unknown",
+          "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+          "en:environmental-score-packaging-unspecified-material",
+          "en:environmental-score-production-system-no-label"
+        ],
+        "ingredients": [
+          {
+            "id": "pt:Milk",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 100,
+            "quantity_estimate": 100,
+            "text": "Milk"
+          }
+        ],
+        "ingredients_analysis_tags": [
+          "en:palm-oil-content-unknown",
+          "en:vegan-status-unknown",
+          "en:vegetarian-status-unknown"
+        ],
+        "ingredients_n": 1,
+        "ingredients_tags": [
+          "pt:Milk"
+        ],
+        "ingredients_text": "Milk",
+        "ingredients_text_pt": "Milk",
+        "ingredients_with_specified_percent_n": 0,
+        "labels_tags": [
+          "en:carbon-trust",
+          "en:carbon-trust-reducing-co2",
+          "en:fsc",
+          "en:fsc-mix",
+          "en:green-dot",
+          "en:Bonsucro",
+          "pt:Ecoponto amarelo"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1789481148,
+        "product_name": "Leite Meio-Gordo",
+        "product_name_pt": "Leite Meio-Gordo",
+        "schema_version": 1004,
+        "states_tags": [
+          "en:to-be-completed",
+          "en:nutrition-facts-completed",
+          "en:ingredients-completed",
+          "en:expiration-date-completed",
+          "en:packaging-code-to-be-completed",
+          "en:characteristics-to-be-completed",
+          "en:origins-to-be-completed",
+          "en:categories-completed",
+          "en:brands-completed",
+          "en:packaging-completed",
+          "en:quantity-completed",
+          "en:product-name-completed",
+          "en:photos-to-be-validated",
+          "en:packaging-photo-selected",
+          "en:nutrition-photo-selected",
+          "en:ingredients-photo-to-be-selected",
+          "en:front-photo-selected",
+          "en:photos-uploaded"
+        ],
+        "tags_sources": {
+          "allergens": {
+            "ingredients": {
+              "last_updated_t": 1789481148,
+              "tags": [
+                "en:milk"
+              ]
+            },
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:milk"
+              ]
+            }
+          },
+          "brands": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "xx:MIMOSA"
+              ]
+            }
+          },
+          "categories": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:semi-skimmed-milks",
+                "en:uht-milks"
+              ]
+            }
+          },
+          "countries": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:portugal"
+              ]
+            }
+          },
+          "emb_codes": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "PT DLT 1 CE",
+                "FSC C014047"
+              ]
+            }
+          },
+          "labels": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:carbon-trust-reducing-co2",
+                "en:fsc-mix",
+                "en:green-dot",
+                "en:Bonsucro",
+                "pt:Ecoponto amarelo"
+              ]
+            }
+          },
+          "manufacturing_places": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "purchase_places": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "traces": {
+            "ingredients": {
+              "last_updated_t": 1789481148,
+              "tags": []
+            },
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:none"
+              ]
+            }
+          }
+        },
+        "traces_tags": [
+          "en:none"
+        ],
+        "unknown_ingredients_n": 1
+      },
+      "researchInterpretation": {
+        "sourceId": "AL02",
+        "code": "5601049132995",
+        "apiVersion": "3.6",
+        "schemaVersion": 1004,
+        "nameOriginal": "Leite Meio-Gordo",
+        "lastModifiedAtSource": 1789481148,
+        "fieldPresence": {
+          "ingredients_text": "present",
+          "ingredients_text_pt": "present",
+          "ingredients": "present",
+          "ingredients_tags": "present",
+          "ingredients_analysis_tags": "present",
+          "allergens": "absent",
+          "allergens_tags": "present",
+          "allergens_from_ingredients": "absent",
+          "allergens_from_user": "present",
+          "traces": "absent",
+          "traces_tags": "present",
+          "labels": "absent",
+          "labels_tags": "present",
+          "tags_sources": "present",
+          "ingredients_n": "present",
+          "unknown_ingredients_n": "present",
+          "ingredients_percent_analysis": "absent",
+          "ingredients_with_specified_percent_n": "present",
+          "additives_tags": "empty",
+          "data_quality_warnings_tags": "present",
+          "data_quality_errors_tags": "empty"
+        },
+        "ingredientText": {
+          "text": "Milk",
+          "sourcePath": "product.ingredients_text_pt",
+          "languageDeclared": "pt",
+          "languageIndependentlyVerified": false,
+          "state": "reported_text_unverified",
+          "renderAsPlainText": true
+        },
+        "ingredientTree": [
+          {
+            "id": "pt:Milk",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 100,
+            "quantity_estimate": 100,
+            "text": "Milk"
+          }
+        ],
+        "ingredientNodes": [
+          {
+            "sourcePath": "product.ingredients[0]",
+            "id": "pt:Milk",
+            "text": "Milk",
+            "isInTaxonomy": 0,
+            "reportedPercent": null,
+            "estimatedPercent": 100,
+            "estimatedQuantity": 100,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          }
+        ],
+        "allergens": {
+          "state": "reported_presence",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:milk"
+          ],
+          "positiveTags": [
+            "en:milk"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.allergens.ingredients",
+              "tags": [
+                "en:milk"
+              ],
+              "lastUpdatedAtSource": 1789481148,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.allergens.packaging",
+              "tags": [
+                "en:milk"
+              ],
+              "lastUpdatedAtSource": 1774947535,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "traces": {
+          "state": "source_claim_none",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:none"
+          ],
+          "positiveTags": [],
+          "sourceNoneClaim": true,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.traces.ingredients",
+              "tags": [],
+              "lastUpdatedAtSource": 1789481148,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.traces.packaging",
+              "tags": [
+                "en:none"
+              ],
+              "lastUpdatedAtSource": 1774947535,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "dietLabels": {
+          "flatTags": [
+            "en:carbon-trust",
+            "en:carbon-trust-reducing-co2",
+            "en:fsc",
+            "en:fsc-mix",
+            "en:green-dot",
+            "en:Bonsucro",
+            "pt:Ecoponto amarelo"
+          ],
+          "sourcePaths": {
+            "packaging": {
+              "last_updated_t": 1774947535,
+              "tags": [
+                "en:carbon-trust-reducing-co2",
+                "en:fsc-mix",
+                "en:green-dot",
+                "en:Bonsucro",
+                "pt:Ecoponto amarelo"
+              ]
+            }
+          },
+          "isClinicalCertification": false
+        },
+        "computedDietAnalysis": {
+          "sourcePath": "product.ingredients_analysis_tags",
+          "tags": [
+            "en:palm-oil-content-unknown",
+            "en:vegan-status-unknown",
+            "en:vegetarian-status-unknown"
+          ],
+          "method": "provider automated ingredient analysis; not label certification"
+        },
+        "quality": {
+          "unrecognizedIngredientCount": 1,
+          "warnings": [
+            "en:ingredients-unknown-score-above-0",
+            "en:ingredients-100-percent-unknown",
+            "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+            "en:environmental-score-packaging-unspecified-material",
+            "en:environmental-score-production-system-no-label"
+          ],
+          "errors": []
+        },
+        "clinicalSuitability": "not_assessed",
+        "canAutomaticallyDeclareSafe": false
+      }
+    },
+    {
+      "sampleProfile": "lactose-free",
+      "sourceEvidence": "n05-lactose-free.evidencia.json",
+      "observed": {
+        "additives_tags": [],
+        "allergens_from_ingredients": "en:milk",
+        "allergens_from_user": "(pt) en:milk",
+        "allergens_tags": [
+          "en:milk"
+        ],
+        "code": "5603722505607",
+        "data_quality_errors_tags": [],
+        "data_quality_warnings_tags": [
+          "en:environmental-score-production-system-no-label"
+        ],
+        "ingredients": [
+          {
+            "ciqual_proxy_food_code": "19041",
+            "ecobalyse_code": "8f3863e7-f981-4367-90a2-e1aaa096a6e0",
+            "id": "en:semi-skimmed-milk",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 75,
+            "percent_max": 100,
+            "percent_min": 50,
+            "text": "Leite meio-gordo",
+            "vegan": "no",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:lactase",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 25,
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "lactase",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredients_analysis_tags": [
+          "en:palm-oil-free",
+          "en:non-vegan",
+          "en:maybe-vegetarian"
+        ],
+        "ingredients_n": 2,
+        "ingredients_percent_analysis": 1,
+        "ingredients_tags": [
+          "en:semi-skimmed-milk",
+          "en:dairy",
+          "en:milk",
+          "en:lactase",
+          "en:enzyme"
+        ],
+        "ingredients_text": "Leite meio-gordo e lactase.",
+        "ingredients_text_pt": "Leite meio-gordo e lactase.",
+        "ingredients_with_specified_percent_n": 0,
+        "labels_tags": [
+          "en:fsc",
+          "en:fsc-mix",
+          "en:green-dot",
+          "en:no-lactose",
+          "pt:Ecoponto amarelo"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1774946725,
+        "product_name": "Leite Sem Lactose Meio-Gordo",
+        "product_name_pt": "Leite Sem Lactose Meio-Gordo",
+        "schema_version": 1004,
+        "states_tags": [
+          "en:to-be-checked",
+          "en:complete",
+          "en:nutrition-facts-completed",
+          "en:ingredients-completed",
+          "en:expiration-date-to-be-completed",
+          "en:packaging-code-completed",
+          "en:characteristics-completed",
+          "en:origins-completed",
+          "en:categories-completed",
+          "en:brands-completed",
+          "en:packaging-completed",
+          "en:quantity-completed",
+          "en:product-name-completed",
+          "en:photos-validated",
+          "en:packaging-photo-selected",
+          "en:nutrition-photo-selected",
+          "en:ingredients-photo-selected",
+          "en:front-photo-selected",
+          "en:photos-uploaded"
+        ],
+        "tags_sources": {
+          "allergens": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:milk"
+              ]
+            }
+          },
+          "brands": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "xx:Mimosa"
+              ]
+            }
+          },
+          "categories": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:semi-skimmed-milks",
+                "en:uht-milks",
+                "en:lactose-free-milk"
+              ]
+            }
+          },
+          "countries": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:portugal"
+              ]
+            }
+          },
+          "emb_codes": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "PT BLT 10 CE",
+                "FSC C014047"
+              ]
+            }
+          },
+          "labels": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:fsc-mix",
+                "en:green-dot",
+                "en:no-lactose",
+                "pt:Ecoponto amarelo"
+              ]
+            }
+          },
+          "manufacturing_places": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "origins": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:portugal"
+              ]
+            }
+          },
+          "purchase_places": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "traces": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:none"
+              ]
+            }
+          }
+        },
+        "traces_tags": [
+          "en:none"
+        ],
+        "unknown_ingredients_n": 0
+      },
+      "researchInterpretation": {
+        "sourceId": "AL02",
+        "code": "5603722505607",
+        "apiVersion": "3.6",
+        "schemaVersion": 1004,
+        "nameOriginal": "Leite Sem Lactose Meio-Gordo",
+        "lastModifiedAtSource": 1774946725,
+        "fieldPresence": {
+          "ingredients_text": "present",
+          "ingredients_text_pt": "present",
+          "ingredients": "present",
+          "ingredients_tags": "present",
+          "ingredients_analysis_tags": "present",
+          "allergens": "absent",
+          "allergens_tags": "present",
+          "allergens_from_ingredients": "present",
+          "allergens_from_user": "present",
+          "traces": "absent",
+          "traces_tags": "present",
+          "labels": "absent",
+          "labels_tags": "present",
+          "tags_sources": "present",
+          "ingredients_n": "present",
+          "unknown_ingredients_n": "present",
+          "ingredients_percent_analysis": "present",
+          "ingredients_with_specified_percent_n": "present",
+          "additives_tags": "empty",
+          "data_quality_warnings_tags": "present",
+          "data_quality_errors_tags": "empty"
+        },
+        "ingredientText": {
+          "text": "Leite meio-gordo e lactase.",
+          "sourcePath": "product.ingredients_text_pt",
+          "languageDeclared": "pt",
+          "languageIndependentlyVerified": false,
+          "state": "reported_text_unverified",
+          "renderAsPlainText": true
+        },
+        "ingredientTree": [
+          {
+            "ciqual_proxy_food_code": "19041",
+            "ecobalyse_code": "8f3863e7-f981-4367-90a2-e1aaa096a6e0",
+            "id": "en:semi-skimmed-milk",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 75,
+            "percent_max": 100,
+            "percent_min": 50,
+            "text": "Leite meio-gordo",
+            "vegan": "no",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:lactase",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 25,
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "lactase",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredientNodes": [
+          {
+            "sourcePath": "product.ingredients[0]",
+            "id": "en:semi-skimmed-milk",
+            "text": "Leite meio-gordo",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 75,
+            "estimatedQuantity": null,
+            "percentMin": 50,
+            "percentMax": 100,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[1]",
+            "id": "en:lactase",
+            "text": "lactase",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 25,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 50,
+            "estimatedValuesAreLabelMeasurements": false
+          }
+        ],
+        "allergens": {
+          "state": "reported_presence",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:milk"
+          ],
+          "positiveTags": [
+            "en:milk"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.allergens.packaging",
+              "tags": [
+                "en:milk"
+              ],
+              "lastUpdatedAtSource": 1774946725,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "traces": {
+          "state": "source_claim_none",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:none"
+          ],
+          "positiveTags": [],
+          "sourceNoneClaim": true,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.traces.packaging",
+              "tags": [
+                "en:none"
+              ],
+              "lastUpdatedAtSource": 1774946725,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "dietLabels": {
+          "flatTags": [
+            "en:fsc",
+            "en:fsc-mix",
+            "en:green-dot",
+            "en:no-lactose",
+            "pt:Ecoponto amarelo"
+          ],
+          "sourcePaths": {
+            "packaging": {
+              "last_updated_t": 1774946725,
+              "tags": [
+                "en:fsc-mix",
+                "en:green-dot",
+                "en:no-lactose",
+                "pt:Ecoponto amarelo"
+              ]
+            }
+          },
+          "isClinicalCertification": false
+        },
+        "computedDietAnalysis": {
+          "sourcePath": "product.ingredients_analysis_tags",
+          "tags": [
+            "en:palm-oil-free",
+            "en:non-vegan",
+            "en:maybe-vegetarian"
+          ],
+          "method": "provider automated ingredient analysis; not label certification"
+        },
+        "quality": {
+          "unrecognizedIngredientCount": 0,
+          "warnings": [
+            "en:environmental-score-production-system-no-label"
+          ],
+          "errors": []
+        },
+        "clinicalSuitability": "not_assessed",
+        "canAutomaticallyDeclareSafe": false
+      }
+    },
+    {
+      "sampleProfile": "muesli",
+      "sourceEvidence": "n05-muesli.evidencia.json",
+      "observed": {
+        "additives_tags": [
+          "en:e306"
+        ],
+        "allergens_from_user": "(pt) en:gluten,en:nuts,pt:Frutos secos",
+        "allergens_tags": [
+          "en:gluten",
+          "en:nuts",
+          "pt:Frutos secos"
+        ],
+        "code": "5607047006795",
+        "data_quality_errors_tags": [],
+        "data_quality_warnings_tags": [
+          "en:nutri-score-grade-from-label-does-not-match-calculated-grade",
+          "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+          "en:environmental-score-packaging-packaging-data-missing",
+          "en:environmental-score-production-system-no-label"
+        ],
+        "ingredients": [
+          {
+            "ciqual_food_code": "9311",
+            "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
+            "percent": 45,
+            "percent_estimate": 45.5,
+            "quantity_estimate": 50.61,
+            "text": "Flocos de aveia integral",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "31016",
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 14.03,
+            "quantity_estimate": 14.03,
+            "text": "açúcar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "pt:frutos secos em proporções variáveis",
+            "ingredients": [
+              {
+                "ciqual_food_code": "15041",
+                "id": "en:almond",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "amêndoas",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15004",
+                "ecobalyse_code": "hazelnut-unshelled-non-eu",
+                "id": "en:hazelnut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "avelãs",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15026",
+                "id": "en:pecan-nut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "nozes pécan",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15008",
+                "id": "en:brazil-nut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "castanhas do Brasil",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 0,
+            "percent": 12,
+            "percent_estimate": 12.5,
+            "quantity_estimate": 13.11,
+            "text": "frutos secos em proporções variáveis"
+          },
+          {
+            "id": "pt:óleo de girassol alto oleico",
+            "is_in_taxonomy": 0,
+            "percent": 9,
+            "percent_estimate": 8.5,
+            "quantity_estimate": 8.5,
+            "text": "óleo de girassol alto oleico"
+          },
+          {
+            "ciqual_food_code": "9200",
+            "id": "en:corn-flakes",
+            "ingredients": [
+              {
+                "ciqual_food_code": "9200",
+                "id": "en:corn",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.59,
+                "quantity_estimate": 3.59,
+                "text": "milho",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "31016",
+                "ciqual_proxy_food_code": "31016",
+                "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+                "id": "en:sugar",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.05,
+                "quantity_estimate": 3.05,
+                "text": "açúcar",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "11058",
+                "id": "en:salt",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "sal",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e306",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "extracto rico em tocoferóis",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamins",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitaminas",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e375",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B3",
+                "vegan": "maybe",
+                "vegetarian": "maybe"
+              },
+              {
+                "id": "en:pantothenic-acid",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B5",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamin-b8",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B8",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "pt:vitamin B1",
+                "is_in_taxonomy": 0,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B1"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e101",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B2",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamin-b6",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B6",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "pt:vitamin B9",
+                "is_in_taxonomy": 0,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B9"
+              },
+              {
+                "id": "en:iron",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "ferro",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent": 7,
+            "percent_estimate": 6.57,
+            "quantity_estimate": 6.64,
+            "text": "flocos de milho",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "9410",
+            "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "a2e25aca-1f42-4bc8-bc0e-4d7c751775aa",
+            "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
+            "percent": 6,
+            "percent_estimate": 5.5,
+            "quantity_estimate": 5.5,
+            "text": "farinha de trigo",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_proxy_food_code": "9100",
+            "id": "en:rice",
+            "ingredients": [
+              {
+                "ciqual_food_code": "9100",
+                "ciqual_proxy_food_code": "9100",
+                "id": "en:rice",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "arroz",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "31016",
+                "ciqual_proxy_food_code": "31016",
+                "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+                "id": "en:sugar",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "açúcar",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:barley-malt-extract",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "extrato de malte de cevada",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "11058",
+                "id": "en:salt",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0.46,
+                "quantity_estimate": 0.46,
+                "text": "sal",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent": 5,
+            "percent_estimate": 4.5,
+            "processing": "en:flakes,en:toasted",
+            "quantity_estimate": 4.5,
+            "text": "arroz",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "pt:fibra de aveia xarope de melaço de cana",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "fibra de aveia xarope de melaço de cana"
+          },
+          {
+            "ciqual_food_code": "11058",
+            "id": "en:salt",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "sal",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:flavouring",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "aroma",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredients_analysis_tags": [
+          "en:palm-oil-free",
+          "en:vegan-status-unknown",
+          "en:vegetarian-status-unknown"
+        ],
+        "ingredients_n": 31,
+        "ingredients_tags": [
+          "en:whole-grain-oat-flakes",
+          "en:cereal",
+          "en:oat",
+          "en:oat-flakes",
+          "en:wholemeal-oat",
+          "en:sugar",
+          "en:added-sugar",
+          "en:disaccharide",
+          "pt:frutos secos em proporções variáveis",
+          "pt:óleo de girassol alto oleico",
+          "en:corn-flakes",
+          "en:corn",
+          "en:wheat-flour",
+          "en:flour",
+          "en:wheat",
+          "en:cereal-flour",
+          "en:rice",
+          "pt:fibra de aveia xarope de melaço de cana",
+          "en:salt",
+          "en:flavouring",
+          "en:almond",
+          "en:nut",
+          "en:tree-nut",
+          "en:hazelnut",
+          "en:pecan-nut",
+          "en:brazil-nut",
+          "en:e306",
+          "en:vitamins",
+          "en:e375",
+          "en:pantothenic-acid",
+          "en:vitamin-b8",
+          "en:biotin",
+          "pt:vitamin B1",
+          "en:e101",
+          "en:vitamin-b6",
+          "pt:vitamin B9",
+          "en:iron",
+          "en:minerals",
+          "en:barley-malt-extract",
+          "en:malt",
+          "en:malted-barley"
+        ],
+        "ingredients_text": "Flocos de aveia integral (45%) açúcar, frutos secos em proporções variáveis (12%) (amêndoas, avelãs, nozes pécan, castanhas do Brasil), óleo de girassol alto oleico (9%), flocos de milho (7%) (milho, açúcar, sal, antioxidante (extracto rico em tocoferóis), vitaminas (B3, B5, B8, B1, B2, B6, B12, B9), ferro), farinha de trigo (6%), flocos de arroz torrados (5%) (arroz, açúcar, extrato de malte de cevada, sal), fibra de aveia xarope de melaço de cana, sal, aroma.",
+        "ingredients_text_pt": "Flocos de aveia integral (45%) açúcar, frutos secos em proporções variáveis (12%) (amêndoas, avelãs, nozes pécan, castanhas do Brasil), óleo de girassol alto oleico (9%), flocos de milho (7%) (milho, açúcar, sal, antioxidante (extracto rico em tocoferóis), vitaminas (B3, B5, B8, B1, B2, B6, B12, B9), ferro), farinha de trigo (6%), flocos de arroz torrados (5%) (arroz, açúcar, extrato de malte de cevada, sal), fibra de aveia xarope de melaço de cana, sal, aroma.",
+        "ingredients_with_specified_percent_n": 3,
+        "labels_tags": [
+          "en:source-of-fibre",
+          "en:nutriscore",
+          "en:nutriscore-grade-b",
+          "en:phosphore-source",
+          "en:vitamin-b12-source",
+          "pt:Ecoponto amarelo",
+          "pt:Fonte de cobre"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1786262772,
+        "product_name": "Muesli Crunchy Frutos Secos",
+        "product_name_pt": "Muesli Crunchy Frutos Secos",
+        "schema_version": 1004,
+        "states_tags": [
+          "en:to-be-completed",
+          "en:nutrition-facts-completed",
+          "en:ingredients-completed",
+          "en:expiration-date-completed",
+          "en:packaging-code-to-be-completed",
+          "en:characteristics-to-be-completed",
+          "en:origins-to-be-completed",
+          "en:categories-completed",
+          "en:brands-completed",
+          "en:packaging-to-be-completed",
+          "en:quantity-completed",
+          "en:product-name-completed",
+          "en:photos-validated",
+          "en:packaging-photo-selected",
+          "en:nutrition-photo-selected",
+          "en:ingredients-photo-selected",
+          "en:front-photo-selected",
+          "en:photos-uploaded"
+        ],
+        "tags_sources": {
+          "allergens": {
+            "ingredients": {
+              "last_updated_t": 1786262771,
+              "tags": [
+                "en:gluten",
+                "en:nuts"
+              ]
+            },
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:gluten",
+                "en:nuts",
+                "pt:Frutos secos"
+              ]
+            }
+          },
+          "brands": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "xx:Pingo Doce"
+              ]
+            }
+          },
+          "categories": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:mueslis"
+              ]
+            }
+          },
+          "countries": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:portugal"
+              ]
+            }
+          },
+          "labels": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:source-of-fibre",
+                "en:nutriscore-grade-b",
+                "en:phosphore-source",
+                "en:vitamin-b12-source",
+                "pt:Ecoponto amarelo",
+                "pt:Fonte de cobre"
+              ]
+            }
+          },
+          "purchase_places": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "stores": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "Pingo Doce"
+              ]
+            }
+          },
+          "traces": {
+            "ingredients": {
+              "last_updated_t": 1786262771,
+              "tags": []
+            },
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:milk",
+                "en:mustard",
+                "en:peanuts",
+                "en:soybeans"
+              ]
+            }
+          }
+        },
+        "traces_tags": [
+          "en:milk",
+          "en:mustard",
+          "en:peanuts",
+          "en:soybeans"
+        ],
+        "unknown_ingredients_n": 5
+      },
+      "researchInterpretation": {
+        "sourceId": "AL02",
+        "code": "5607047006795",
+        "apiVersion": "3.6",
+        "schemaVersion": 1004,
+        "nameOriginal": "Muesli Crunchy Frutos Secos",
+        "lastModifiedAtSource": 1786262772,
+        "fieldPresence": {
+          "ingredients_text": "present",
+          "ingredients_text_pt": "present",
+          "ingredients": "present",
+          "ingredients_tags": "present",
+          "ingredients_analysis_tags": "present",
+          "allergens": "absent",
+          "allergens_tags": "present",
+          "allergens_from_ingredients": "absent",
+          "allergens_from_user": "present",
+          "traces": "absent",
+          "traces_tags": "present",
+          "labels": "absent",
+          "labels_tags": "present",
+          "tags_sources": "present",
+          "ingredients_n": "present",
+          "unknown_ingredients_n": "present",
+          "ingredients_percent_analysis": "absent",
+          "ingredients_with_specified_percent_n": "present",
+          "additives_tags": "present",
+          "data_quality_warnings_tags": "present",
+          "data_quality_errors_tags": "empty"
+        },
+        "ingredientText": {
+          "text": "Flocos de aveia integral (45%) açúcar, frutos secos em proporções variáveis (12%) (amêndoas, avelãs, nozes pécan, castanhas do Brasil), óleo de girassol alto oleico (9%), flocos de milho (7%) (milho, açúcar, sal, antioxidante (extracto rico em tocoferóis), vitaminas (B3, B5, B8, B1, B2, B6, B12, B9), ferro), farinha de trigo (6%), flocos de arroz torrados (5%) (arroz, açúcar, extrato de malte de cevada, sal), fibra de aveia xarope de melaço de cana, sal, aroma.",
+          "sourcePath": "product.ingredients_text_pt",
+          "languageDeclared": "pt",
+          "languageIndependentlyVerified": false,
+          "state": "reported_text_unverified",
+          "renderAsPlainText": true
+        },
+        "ingredientTree": [
+          {
+            "ciqual_food_code": "9311",
+            "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
+            "percent": 45,
+            "percent_estimate": 45.5,
+            "quantity_estimate": 50.61,
+            "text": "Flocos de aveia integral",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "31016",
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 14.03,
+            "quantity_estimate": 14.03,
+            "text": "açúcar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "pt:frutos secos em proporções variáveis",
+            "ingredients": [
+              {
+                "ciqual_food_code": "15041",
+                "id": "en:almond",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "amêndoas",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15004",
+                "ecobalyse_code": "hazelnut-unshelled-non-eu",
+                "id": "en:hazelnut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "avelãs",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15026",
+                "id": "en:pecan-nut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "nozes pécan",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "15008",
+                "id": "en:brazil-nut",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.28,
+                "quantity_estimate": 3.28,
+                "text": "castanhas do Brasil",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 0,
+            "percent": 12,
+            "percent_estimate": 12.5,
+            "quantity_estimate": 13.11,
+            "text": "frutos secos em proporções variáveis"
+          },
+          {
+            "id": "pt:óleo de girassol alto oleico",
+            "is_in_taxonomy": 0,
+            "percent": 9,
+            "percent_estimate": 8.5,
+            "quantity_estimate": 8.5,
+            "text": "óleo de girassol alto oleico"
+          },
+          {
+            "ciqual_food_code": "9200",
+            "id": "en:corn-flakes",
+            "ingredients": [
+              {
+                "ciqual_food_code": "9200",
+                "id": "en:corn",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.59,
+                "quantity_estimate": 3.59,
+                "text": "milho",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "31016",
+                "ciqual_proxy_food_code": "31016",
+                "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+                "id": "en:sugar",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 3.05,
+                "quantity_estimate": 3.05,
+                "text": "açúcar",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "11058",
+                "id": "en:salt",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "sal",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e306",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "extracto rico em tocoferóis",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamins",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitaminas",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e375",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B3",
+                "vegan": "maybe",
+                "vegetarian": "maybe"
+              },
+              {
+                "id": "en:pantothenic-acid",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B5",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamin-b8",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B8",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "pt:vitamin B1",
+                "is_in_taxonomy": 0,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B1"
+              },
+              {
+                "additive_class": "en:antioxidant",
+                "id": "en:e101",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B2",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:vitamin-b6",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B6",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "pt:vitamin B9",
+                "is_in_taxonomy": 0,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "vitamin B9"
+              },
+              {
+                "id": "en:iron",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0,
+                "quantity_estimate": 0,
+                "text": "ferro",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent": 7,
+            "percent_estimate": 6.57,
+            "quantity_estimate": 6.64,
+            "text": "flocos de milho",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "9410",
+            "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "a2e25aca-1f42-4bc8-bc0e-4d7c751775aa",
+            "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
+            "percent": 6,
+            "percent_estimate": 5.5,
+            "quantity_estimate": 5.5,
+            "text": "farinha de trigo",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_proxy_food_code": "9100",
+            "id": "en:rice",
+            "ingredients": [
+              {
+                "ciqual_food_code": "9100",
+                "ciqual_proxy_food_code": "9100",
+                "id": "en:rice",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "arroz",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "31016",
+                "ciqual_proxy_food_code": "31016",
+                "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+                "id": "en:sugar",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "açúcar",
+                "vegan": "maybe",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:barley-malt-extract",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 1.35,
+                "quantity_estimate": 1.35,
+                "text": "extrato de malte de cevada",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "ciqual_food_code": "11058",
+                "id": "en:salt",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 0.46,
+                "quantity_estimate": 0.46,
+                "text": "sal",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent": 5,
+            "percent_estimate": 4.5,
+            "processing": "en:flakes,en:toasted",
+            "quantity_estimate": 4.5,
+            "text": "arroz",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "pt:fibra de aveia xarope de melaço de cana",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "fibra de aveia xarope de melaço de cana"
+          },
+          {
+            "ciqual_food_code": "11058",
+            "id": "en:salt",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "sal",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:flavouring",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "aroma",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredientNodes": [
+          {
+            "sourcePath": "product.ingredients[0]",
+            "id": "en:whole-grain-oat-flakes",
+            "text": "Flocos de aveia integral",
+            "isInTaxonomy": 1,
+            "reportedPercent": 45,
+            "estimatedPercent": 45.5,
+            "estimatedQuantity": 50.61,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[1]",
+            "id": "en:sugar",
+            "text": "açúcar",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 14.03,
+            "estimatedQuantity": 14.03,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2]",
+            "id": "pt:frutos secos em proporções variáveis",
+            "text": "frutos secos em proporções variáveis",
+            "isInTaxonomy": 0,
+            "reportedPercent": 12,
+            "estimatedPercent": 12.5,
+            "estimatedQuantity": 13.11,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2].ingredients[0]",
+            "id": "en:almond",
+            "text": "amêndoas",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.28,
+            "estimatedQuantity": 3.28,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2].ingredients[1]",
+            "id": "en:hazelnut",
+            "text": "avelãs",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.28,
+            "estimatedQuantity": 3.28,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2].ingredients[2]",
+            "id": "en:pecan-nut",
+            "text": "nozes pécan",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.28,
+            "estimatedQuantity": 3.28,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2].ingredients[3]",
+            "id": "en:brazil-nut",
+            "text": "castanhas do Brasil",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.28,
+            "estimatedQuantity": 3.28,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[3]",
+            "id": "pt:óleo de girassol alto oleico",
+            "text": "óleo de girassol alto oleico",
+            "isInTaxonomy": 0,
+            "reportedPercent": 9,
+            "estimatedPercent": 8.5,
+            "estimatedQuantity": 8.5,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4]",
+            "id": "en:corn-flakes",
+            "text": "flocos de milho",
+            "isInTaxonomy": 1,
+            "reportedPercent": 7,
+            "estimatedPercent": 6.57,
+            "estimatedQuantity": 6.64,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[0]",
+            "id": "en:corn",
+            "text": "milho",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.59,
+            "estimatedQuantity": 3.59,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[1]",
+            "id": "en:sugar",
+            "text": "açúcar",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 3.05,
+            "estimatedQuantity": 3.05,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[2]",
+            "id": "en:salt",
+            "text": "sal",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[3]",
+            "id": "en:e306",
+            "text": "extracto rico em tocoferóis",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[4]",
+            "id": "en:vitamins",
+            "text": "vitaminas",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[5]",
+            "id": "en:e375",
+            "text": "vitamin B3",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[6]",
+            "id": "en:pantothenic-acid",
+            "text": "vitamin B5",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[7]",
+            "id": "en:vitamin-b8",
+            "text": "vitamin B8",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[8]",
+            "id": "pt:vitamin B1",
+            "text": "vitamin B1",
+            "isInTaxonomy": 0,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[9]",
+            "id": "en:e101",
+            "text": "vitamin B2",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[10]",
+            "id": "en:vitamin-b6",
+            "text": "vitamin B6",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[11]",
+            "id": "pt:vitamin B9",
+            "text": "vitamin B9",
+            "isInTaxonomy": 0,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[12]",
+            "id": "en:iron",
+            "text": "ferro",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[5]",
+            "id": "en:wheat-flour",
+            "text": "farinha de trigo",
+            "isInTaxonomy": 1,
+            "reportedPercent": 6,
+            "estimatedPercent": 5.5,
+            "estimatedQuantity": 5.5,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6]",
+            "id": "en:rice",
+            "text": "arroz",
+            "isInTaxonomy": 1,
+            "reportedPercent": 5,
+            "estimatedPercent": 4.5,
+            "estimatedQuantity": 4.5,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6].ingredients[0]",
+            "id": "en:rice",
+            "text": "arroz",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 1.35,
+            "estimatedQuantity": 1.35,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6].ingredients[1]",
+            "id": "en:sugar",
+            "text": "açúcar",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 1.35,
+            "estimatedQuantity": 1.35,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6].ingredients[2]",
+            "id": "en:barley-malt-extract",
+            "text": "extrato de malte de cevada",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 1.35,
+            "estimatedQuantity": 1.35,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6].ingredients[3]",
+            "id": "en:salt",
+            "text": "sal",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0.46,
+            "estimatedQuantity": 0.46,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[7]",
+            "id": "pt:fibra de aveia xarope de melaço de cana",
+            "text": "fibra de aveia xarope de melaço de cana",
+            "isInTaxonomy": 0,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[8]",
+            "id": "en:salt",
+            "text": "sal",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[9]",
+            "id": "en:flavouring",
+            "text": "aroma",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          }
+        ],
+        "allergens": {
+          "state": "reported_presence",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:gluten",
+            "en:nuts",
+            "pt:Frutos secos"
+          ],
+          "positiveTags": [
+            "en:gluten",
+            "en:nuts",
+            "pt:Frutos secos"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.allergens.ingredients",
+              "tags": [
+                "en:gluten",
+                "en:nuts"
+              ],
+              "lastUpdatedAtSource": 1786262771,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.allergens.packaging",
+              "tags": [
+                "en:gluten",
+                "en:nuts",
+                "pt:Frutos secos"
+              ],
+              "lastUpdatedAtSource": 1774949307,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [
+            "pt:Frutos secos"
+          ],
+          "clinicalAbsenceConfirmed": false
+        },
+        "traces": {
+          "state": "possible_presence_reported",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:milk",
+            "en:mustard",
+            "en:peanuts",
+            "en:soybeans"
+          ],
+          "positiveTags": [
+            "en:milk",
+            "en:mustard",
+            "en:peanuts",
+            "en:soybeans"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.traces.ingredients",
+              "tags": [],
+              "lastUpdatedAtSource": 1786262771,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.traces.packaging",
+              "tags": [
+                "en:milk",
+                "en:mustard",
+                "en:peanuts",
+                "en:soybeans"
+              ],
+              "lastUpdatedAtSource": 1774949307,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "dietLabels": {
+          "flatTags": [
+            "en:source-of-fibre",
+            "en:nutriscore",
+            "en:nutriscore-grade-b",
+            "en:phosphore-source",
+            "en:vitamin-b12-source",
+            "pt:Ecoponto amarelo",
+            "pt:Fonte de cobre"
+          ],
+          "sourcePaths": {
+            "packaging": {
+              "last_updated_t": 1774949307,
+              "tags": [
+                "en:source-of-fibre",
+                "en:nutriscore-grade-b",
+                "en:phosphore-source",
+                "en:vitamin-b12-source",
+                "pt:Ecoponto amarelo",
+                "pt:Fonte de cobre"
+              ]
+            }
+          },
+          "isClinicalCertification": false
+        },
+        "computedDietAnalysis": {
+          "sourcePath": "product.ingredients_analysis_tags",
+          "tags": [
+            "en:palm-oil-free",
+            "en:vegan-status-unknown",
+            "en:vegetarian-status-unknown"
+          ],
+          "method": "provider automated ingredient analysis; not label certification"
+        },
+        "quality": {
+          "unrecognizedIngredientCount": 5,
+          "warnings": [
+            "en:nutri-score-grade-from-label-does-not-match-calculated-grade",
+            "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+            "en:environmental-score-packaging-packaging-data-missing",
+            "en:environmental-score-production-system-no-label"
+          ],
+          "errors": []
+        },
+        "clinicalSuitability": "not_assessed",
+        "canAutomaticallyDeclareSafe": false
+      }
+    },
+    {
+      "sampleProfile": "nectar",
+      "sourceEvidence": "n05-nectar.evidencia.json",
+      "observed": {
+        "additives_tags": [
+          "en:e300",
+          "en:e330"
+        ],
+        "allergens_from_ingredients": "",
+        "allergens_from_user": "(pt) ",
+        "allergens_tags": [],
+        "code": "5601151964804",
+        "data_quality_errors_tags": [],
+        "data_quality_warnings_tags": [
+          "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+          "en:environmental-score-packaging-packaging-data-missing",
+          "en:environmental-score-production-system-no-label"
+        ],
+        "ingredients": [
+          {
+            "id": "en:juice",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 60,
+            "percent_max": 100,
+            "percent_min": 20,
+            "text": "Sumo",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          },
+          {
+            "id": "pt:polpa-de-pessego",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 20,
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "polpa de pêssego"
+          },
+          {
+            "ciqual_food_code": "18066",
+            "ecobalyse_code": "36b3ffec-51e7-4e26-b1b5-7d52554e0aa6",
+            "id": "en:water",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
+            "text": "água",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 10.5,
+            "percent_min": 0,
+            "text": "açúcar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:acidity-regulator",
+            "ingredients": [
+              {
+                "id": "en:e330",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 2.5,
+                "percent_max": 10.5,
+                "percent_min": 0,
+                "text": "ácido cítrico",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:e300",
+                "ingredients": [
+                  {
+                    "id": "en:vitamin-c",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.5,
+                    "percent_max": 5.25,
+                    "percent_min": 0,
+                    "text": "vitamina C",
+                    "vegan": "yes",
+                    "vegetarian": "yes"
+                  }
+                ],
+                "is_in_taxonomy": 1,
+                "percent_estimate": 2.5,
+                "percent_max": 5.25,
+                "percent_min": 0,
+                "text": "ácido ascórbico",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 10.5,
+            "percent_min": 0,
+            "text": "regulador de acidez"
+          }
+        ],
+        "ingredients_analysis_tags": [
+          "en:palm-oil-free",
+          "en:vegan-status-unknown",
+          "en:vegetarian-status-unknown"
+        ],
+        "ingredients_n": 8,
+        "ingredients_percent_analysis": 1,
+        "ingredients_tags": [
+          "en:juice",
+          "pt:polpa-de-pessego",
+          "en:water",
+          "en:sugar",
+          "en:added-sugar",
+          "en:disaccharide",
+          "en:acidity-regulator",
+          "en:e330",
+          "en:e300",
+          "en:vitamin-c",
+          "en:vitamins"
+        ],
+        "ingredients_text": "Sumo e polpa de pêssego, água, açúcar, regulador de acidez: ácido cítrico e ácido ascórbico (vitamina C).",
+        "ingredients_text_pt": "Sumo e polpa de pêssego, água, açúcar, regulador de acidez: ácido cítrico e ácido ascórbico (vitamina C).",
+        "ingredients_with_specified_percent_n": 0,
+        "labels_tags": [],
+        "lang": "pt",
+        "last_modified_t": 1774951185,
+        "product_name": "Clássico Pêssego Néctar",
+        "product_name_pt": "Clássico Pêssego Néctar",
+        "schema_version": 1004,
+        "states_tags": [
+          "en:to-be-completed",
+          "en:nutrition-facts-completed",
+          "en:ingredients-completed",
+          "en:expiration-date-to-be-completed",
+          "en:packaging-code-to-be-completed",
+          "en:characteristics-to-be-completed",
+          "en:origins-to-be-completed",
+          "en:categories-completed",
+          "en:brands-completed",
+          "en:packaging-to-be-completed",
+          "en:quantity-completed",
+          "en:product-name-completed",
+          "en:photos-to-be-validated",
+          "en:packaging-photo-to-be-selected",
+          "en:nutrition-photo-selected",
+          "en:ingredients-photo-selected",
+          "en:front-photo-selected",
+          "en:photos-uploaded"
+        ],
+        "tags_sources": {
+          "brands": {
+            "packaging": {
+              "last_updated_t": 1774951185,
+              "tags": [
+                "xx:Compal"
+              ]
+            }
+          },
+          "categories": {
+            "packaging": {
+              "last_updated_t": 1774951185,
+              "tags": [
+                "en:juices-and-nectars"
+              ]
+            }
+          },
+          "countries": {
+            "packaging": {
+              "last_updated_t": 1774951185,
+              "tags": [
+                "en:portugal"
+              ]
+            }
+          },
+          "purchase_places": {
+            "packaging": {
+              "last_updated_t": 1774951185,
+              "tags": [
+                "Portugal"
+              ]
+            }
+          },
+          "traces": {
+            "packaging": {
+              "last_updated_t": 1774951185,
+              "tags": [
+                "en:none"
+              ]
+            }
+          }
+        },
+        "traces_tags": [
+          "en:none"
+        ],
+        "unknown_ingredients_n": 1
+      },
+      "researchInterpretation": {
+        "sourceId": "AL02",
+        "code": "5601151964804",
+        "apiVersion": "3.6",
+        "schemaVersion": 1004,
+        "nameOriginal": "Clássico Pêssego Néctar",
+        "lastModifiedAtSource": 1774951185,
+        "fieldPresence": {
+          "ingredients_text": "present",
+          "ingredients_text_pt": "present",
+          "ingredients": "present",
+          "ingredients_tags": "present",
+          "ingredients_analysis_tags": "present",
+          "allergens": "absent",
+          "allergens_tags": "empty",
+          "allergens_from_ingredients": "empty",
+          "allergens_from_user": "present",
+          "traces": "absent",
+          "traces_tags": "present",
+          "labels": "absent",
+          "labels_tags": "empty",
+          "tags_sources": "present",
+          "ingredients_n": "present",
+          "unknown_ingredients_n": "present",
+          "ingredients_percent_analysis": "present",
+          "ingredients_with_specified_percent_n": "present",
+          "additives_tags": "present",
+          "data_quality_warnings_tags": "present",
+          "data_quality_errors_tags": "empty"
+        },
+        "ingredientText": {
+          "text": "Sumo e polpa de pêssego, água, açúcar, regulador de acidez: ácido cítrico e ácido ascórbico (vitamina C).",
+          "sourcePath": "product.ingredients_text_pt",
+          "languageDeclared": "pt",
+          "languageIndependentlyVerified": false,
+          "state": "reported_text_unverified",
+          "renderAsPlainText": true
+        },
+        "ingredientTree": [
+          {
+            "id": "en:juice",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 60,
+            "percent_max": 100,
+            "percent_min": 20,
+            "text": "Sumo",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          },
+          {
+            "id": "pt:polpa-de-pessego",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 20,
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "polpa de pêssego"
+          },
+          {
+            "ciqual_food_code": "18066",
+            "ecobalyse_code": "36b3ffec-51e7-4e26-b1b5-7d52554e0aa6",
+            "id": "en:water",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
+            "text": "água",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "8f075c25-9ebf-430c-b41d-51d165c6e0d8",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 10.5,
+            "percent_min": 0,
+            "text": "açúcar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:acidity-regulator",
+            "ingredients": [
+              {
+                "id": "en:e330",
+                "is_in_taxonomy": 1,
+                "percent_estimate": 2.5,
+                "percent_max": 10.5,
+                "percent_min": 0,
+                "text": "ácido cítrico",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              },
+              {
+                "id": "en:e300",
+                "ingredients": [
+                  {
+                    "id": "en:vitamin-c",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.5,
+                    "percent_max": 5.25,
+                    "percent_min": 0,
+                    "text": "vitamina C",
+                    "vegan": "yes",
+                    "vegetarian": "yes"
+                  }
+                ],
+                "is_in_taxonomy": 1,
+                "percent_estimate": 2.5,
+                "percent_max": 5.25,
+                "percent_min": 0,
+                "text": "ácido ascórbico",
+                "vegan": "yes",
+                "vegetarian": "yes"
+              }
+            ],
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 10.5,
+            "percent_min": 0,
+            "text": "regulador de acidez"
+          }
+        ],
+        "ingredientNodes": [
+          {
+            "sourcePath": "product.ingredients[0]",
+            "id": "en:juice",
+            "text": "Sumo",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 60,
+            "estimatedQuantity": null,
+            "percentMin": 20,
+            "percentMax": 100,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[1]",
+            "id": "pt:polpa-de-pessego",
+            "text": "polpa de pêssego",
+            "isInTaxonomy": 0,
+            "reportedPercent": null,
+            "estimatedPercent": 20,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 50,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2]",
+            "id": "en:water",
+            "text": "água",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 10,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 33.3333333333333,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[3]",
+            "id": "en:sugar",
+            "text": "açúcar",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 5,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 10.5,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4]",
+            "id": "en:acidity-regulator",
+            "text": "regulador de acidez",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 5,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 10.5,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[0]",
+            "id": "en:e330",
+            "text": "ácido cítrico",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 2.5,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 10.5,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[1]",
+            "id": "en:e300",
+            "text": "ácido ascórbico",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 2.5,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 5.25,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4].ingredients[1].ingredients[0]",
+            "id": "en:vitamin-c",
+            "text": "vitamina C",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 2.5,
+            "estimatedQuantity": null,
+            "percentMin": 0,
+            "percentMax": 5.25,
+            "estimatedValuesAreLabelMeasurements": false
+          }
+        ],
+        "allergens": {
+          "state": "unknown",
+          "flatFieldPresence": "empty",
+          "flatTags": [],
+          "positiveTags": [],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "traces": {
+          "state": "source_claim_none",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:none"
+          ],
+          "positiveTags": [],
+          "sourceNoneClaim": true,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.traces.packaging",
+              "tags": [
+                "en:none"
+              ],
+              "lastUpdatedAtSource": 1774951185,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "dietLabels": {
+          "flatTags": [],
+          "sourcePaths": {},
+          "isClinicalCertification": false
+        },
+        "computedDietAnalysis": {
+          "sourcePath": "product.ingredients_analysis_tags",
+          "tags": [
+            "en:palm-oil-free",
+            "en:vegan-status-unknown",
+            "en:vegetarian-status-unknown"
+          ],
+          "method": "provider automated ingredient analysis; not label certification"
+        },
+        "quality": {
+          "unrecognizedIngredientCount": 1,
+          "warnings": [
+            "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+            "en:environmental-score-packaging-packaging-data-missing",
+            "en:environmental-score-production-system-no-label"
+          ],
+          "errors": []
+        },
+        "clinicalSuitability": "not_assessed",
+        "canAutomaticallyDeclareSafe": false
+      }
+    },
+    {
+      "sampleProfile": "plant-based",
+      "sourceEvidence": "n05-plant-based.evidencia.json",
+      "observed": {
+        "additives_tags": [
+          "en:e322"
+        ],
+        "allergens_from_user": "(de) Schalenfrüchte,Soja",
+        "allergens_tags": [
+          "en:nuts",
+          "en:soybeans"
+        ],
+        "code": "8000500426494",
+        "data_quality_errors_tags": [],
+        "data_quality_warnings_tags": [
+          "en:ingredients-en-ending-comma",
+          "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+          "en:environmental-score-packaging-unscored-shape",
+          "en:environmental-score-production-system-no-label"
+        ],
+        "ingredients": [
+          {
+            "ciqual_food_code": "31016",
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "5fc8032f-ca1c-4497-844b-f9213075eab3",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 45.12,
+            "quantity_estimate": 45.12,
+            "text": "sugar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "16129",
+            "ecobalyse_code": "45658c32-66d9-4305-a34b-21d6a4cef89c",
+            "from_palm_oil": "yes",
+            "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 19.6,
+            "quantity_estimate": 19.6,
+            "text": "palm oil",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
+            "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
+            "percent": 13,
+            "percent_estimate": 13.5,
+            "quantity_estimate": 14.56,
+            "text": "hazelnuts",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "20532",
+            "ecobalyse_code": "chickpea-fr",
+            "id": "en:chickpea",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.5,
+            "quantity_estimate": 13.5,
+            "text": "chickpeas",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "18100",
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
+            "percent": 7.4,
+            "percent_estimate": 7.65,
+            "quantity_estimate": 7.93,
+            "text": "fat-reduced cocoa powder",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:rice-syrup",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
+            "processing": "en:powder",
+            "quantity_estimate": 0.25,
+            "text": "rice syrup",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:e322",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "lecithins",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          },
+          {
+            "ciqual_food_code": "11058",
+            "id": "en:salt",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "salt",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:flavouring",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "flavourings",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredients_analysis_tags": [
+          "en:palm-oil",
+          "en:vegan",
+          "en:vegetarian"
+        ],
+        "ingredients_n": 9,
+        "ingredients_tags": [
+          "en:sugar",
+          "en:disaccharide",
+          "en:added-sugar",
+          "en:palm-oil",
+          "en:palm-oil-and-fat",
+          "en:vegetable-oil-and-fat",
+          "en:oil-and-fat",
+          "en:hazelnut",
+          "en:tree-nut",
+          "en:nut",
+          "en:chickpea",
+          "en:legume",
+          "en:pod-and-seed-vegetable",
+          "en:vegetable",
+          "en:fat-reduced-cocoa-powder",
+          "en:cocoa-powder",
+          "en:fat-reduced-cocoa",
+          "en:cocoa",
+          "en:plant",
+          "en:rice-syrup",
+          "en:syrup",
+          "en:e322",
+          "en:salt",
+          "en:flavouring"
+        ],
+        "ingredients_text": "sugar, palm oil, hazelnuts 13%, chickpeas, fat-reduced cocoa powder 7,4%, rice syrup powder, lecithins [soya], salt, flavourings,",
+        "ingredients_with_specified_percent_n": 2,
+        "labels_tags": [
+          "en:vegetarian",
+          "en:no-gluten",
+          "en:vegan",
+          "en:vegetarian-society-approved",
+          "en:vegetarian-society-approved-vegan"
+        ],
+        "lang": "en",
+        "last_modified_t": 1789711232,
+        "product_name": "Nutella Plant-Based",
+        "schema_version": 1004,
+        "states_tags": [
+          "en:to-be-completed",
+          "en:nutrition-facts-completed",
+          "en:ingredients-completed",
+          "en:expiration-date-to-be-completed",
+          "en:packaging-code-to-be-completed",
+          "en:characteristics-to-be-completed",
+          "en:origins-to-be-completed",
+          "en:categories-completed",
+          "en:brands-completed",
+          "en:packaging-to-be-completed",
+          "en:quantity-completed",
+          "en:product-name-completed",
+          "en:photos-to-be-validated",
+          "en:packaging-photo-to-be-selected",
+          "en:nutrition-photo-selected",
+          "en:ingredients-photo-selected",
+          "en:front-photo-selected",
+          "en:photos-uploaded"
+        ],
+        "tags_sources": {
+          "allergens": {
+            "ingredients": {
+              "last_updated_t": 1789728006,
+              "tags": [
+                "en:soybeans",
+                "en:nuts"
+              ]
+            },
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:nuts",
+                "en:soybeans"
+              ]
+            }
+          },
+          "brands": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "xx:Ferrero",
+                "xx:Nutella"
+              ]
+            }
+          },
+          "categories": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:cocoa-and-hazelnuts-spreads"
+              ]
+            }
+          },
+          "countries": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:belgium",
+                "en:czech-republic",
+                "en:france",
+                "en:germany",
+                "en:italy",
+                "en:netherlands",
+                "en:portugal",
+                "en:reunion",
+                "en:romania",
+                "en:switzerland",
+                "en:united-kingdom"
+              ]
+            }
+          },
+          "emb_codes": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": []
+            }
+          },
+          "labels": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:no-gluten",
+                "en:vegetarian-society-approved-vegan"
+              ]
+            }
+          },
+          "manufacturing_places": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": []
+            }
+          },
+          "origins": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": []
+            }
+          },
+          "purchase_places": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": []
+            }
+          },
+          "stores": {
+            "packaging": {
+              "last_updated_t": 1787253369,
+              "tags": [
+                "Aldi",
+                "Conad",
+                "E.Leclerc",
+                "Edeka",
+                "Kaufland",
+                "Lidl",
+                "Magasins U",
+                "Netto MD",
+                "Rewe",
+                "Tesco",
+                "rohlik.cz",
+                "Carrefour"
+              ]
+            }
+          },
+          "traces": {
+            "ingredients": {
+              "last_updated_t": 1789728006,
+              "tags": []
+            },
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:milk"
+              ]
+            }
+          }
+        },
+        "traces_tags": [
+          "en:milk"
+        ],
+        "unknown_ingredients_n": 0
+      },
+      "researchInterpretation": {
+        "sourceId": "AL02",
+        "code": "8000500426494",
+        "apiVersion": "3.6",
+        "schemaVersion": 1004,
+        "nameOriginal": "Nutella Plant-Based",
+        "lastModifiedAtSource": 1789711232,
+        "fieldPresence": {
+          "ingredients_text": "present",
+          "ingredients_text_pt": "absent",
+          "ingredients": "present",
+          "ingredients_tags": "present",
+          "ingredients_analysis_tags": "present",
+          "allergens": "absent",
+          "allergens_tags": "present",
+          "allergens_from_ingredients": "absent",
+          "allergens_from_user": "present",
+          "traces": "absent",
+          "traces_tags": "present",
+          "labels": "absent",
+          "labels_tags": "present",
+          "tags_sources": "present",
+          "ingredients_n": "present",
+          "unknown_ingredients_n": "present",
+          "ingredients_percent_analysis": "absent",
+          "ingredients_with_specified_percent_n": "present",
+          "additives_tags": "present",
+          "data_quality_warnings_tags": "present",
+          "data_quality_errors_tags": "empty"
+        },
+        "ingredientText": {
+          "text": "sugar, palm oil, hazelnuts 13%, chickpeas, fat-reduced cocoa powder 7,4%, rice syrup powder, lecithins [soya], salt, flavourings,",
+          "sourcePath": "product.ingredients_text",
+          "languageDeclared": "en",
+          "languageIndependentlyVerified": false,
+          "state": "reported_text_unverified",
+          "renderAsPlainText": true
+        },
+        "ingredientTree": [
+          {
+            "ciqual_food_code": "31016",
+            "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "5fc8032f-ca1c-4497-844b-f9213075eab3",
+            "id": "en:sugar",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 45.12,
+            "quantity_estimate": 45.12,
+            "text": "sugar",
+            "vegan": "maybe",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "16129",
+            "ecobalyse_code": "45658c32-66d9-4305-a34b-21d6a4cef89c",
+            "from_palm_oil": "yes",
+            "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 19.6,
+            "quantity_estimate": 19.6,
+            "text": "palm oil",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
+            "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
+            "percent": 13,
+            "percent_estimate": 13.5,
+            "quantity_estimate": 14.56,
+            "text": "hazelnuts",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "20532",
+            "ecobalyse_code": "chickpea-fr",
+            "id": "en:chickpea",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.5,
+            "quantity_estimate": 13.5,
+            "text": "chickpeas",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "ciqual_food_code": "18100",
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
+            "percent": 7.4,
+            "percent_estimate": 7.65,
+            "quantity_estimate": 7.93,
+            "text": "fat-reduced cocoa powder",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:rice-syrup",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
+            "processing": "en:powder",
+            "quantity_estimate": 0.25,
+            "text": "rice syrup",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:e322",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "lecithins",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          },
+          {
+            "ciqual_food_code": "11058",
+            "id": "en:salt",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "salt",
+            "vegan": "yes",
+            "vegetarian": "yes"
+          },
+          {
+            "id": "en:flavouring",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0,
+            "quantity_estimate": 0,
+            "text": "flavourings",
+            "vegan": "maybe",
+            "vegetarian": "maybe"
+          }
+        ],
+        "ingredientNodes": [
+          {
+            "sourcePath": "product.ingredients[0]",
+            "id": "en:sugar",
+            "text": "sugar",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 45.12,
+            "estimatedQuantity": 45.12,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[1]",
+            "id": "en:palm-oil",
+            "text": "palm oil",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 19.6,
+            "estimatedQuantity": 19.6,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[2]",
+            "id": "en:hazelnut",
+            "text": "hazelnuts",
+            "isInTaxonomy": 1,
+            "reportedPercent": 13,
+            "estimatedPercent": 13.5,
+            "estimatedQuantity": 14.56,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[3]",
+            "id": "en:chickpea",
+            "text": "chickpeas",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 13.5,
+            "estimatedQuantity": 13.5,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[4]",
+            "id": "en:fat-reduced-cocoa-powder",
+            "text": "fat-reduced cocoa powder",
+            "isInTaxonomy": 1,
+            "reportedPercent": 7.4,
+            "estimatedPercent": 7.65,
+            "estimatedQuantity": 7.93,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[5]",
+            "id": "en:rice-syrup",
+            "text": "rice syrup",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0.25,
+            "estimatedQuantity": 0.25,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[6]",
+            "id": "en:e322",
+            "text": "lecithins",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[7]",
+            "id": "en:salt",
+            "text": "salt",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          },
+          {
+            "sourcePath": "product.ingredients[8]",
+            "id": "en:flavouring",
+            "text": "flavourings",
+            "isInTaxonomy": 1,
+            "reportedPercent": null,
+            "estimatedPercent": 0,
+            "estimatedQuantity": 0,
+            "percentMin": null,
+            "percentMax": null,
+            "estimatedValuesAreLabelMeasurements": false
+          }
+        ],
+        "allergens": {
+          "state": "reported_presence",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:nuts",
+            "en:soybeans"
+          ],
+          "positiveTags": [
+            "en:nuts",
+            "en:soybeans"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.allergens.ingredients",
+              "tags": [
+                "en:soybeans",
+                "en:nuts"
+              ],
+              "lastUpdatedAtSource": 1789728006,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.allergens.packaging",
+              "tags": [
+                "en:nuts",
+                "en:soybeans"
+              ],
+              "lastUpdatedAtSource": 1781631554,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "traces": {
+          "state": "possible_presence_reported",
+          "flatFieldPresence": "present",
+          "flatTags": [
+            "en:milk"
+          ],
+          "positiveTags": [
+            "en:milk"
+          ],
+          "sourceNoneClaim": false,
+          "conflictingNoneAndPresence": false,
+          "provenance": [
+            {
+              "providerSource": "ingredients",
+              "sourcePath": "product.tags_sources.traces.ingredients",
+              "tags": [],
+              "lastUpdatedAtSource": 1789728006,
+              "independentlyVerified": false
+            },
+            {
+              "providerSource": "packaging",
+              "sourcePath": "product.tags_sources.traces.packaging",
+              "tags": [
+                "en:milk"
+              ],
+              "lastUpdatedAtSource": 1781631554,
+              "independentlyVerified": false
+            }
+          ],
+          "unknownOrNonEU14Tags": [],
+          "clinicalAbsenceConfirmed": false
+        },
+        "dietLabels": {
+          "flatTags": [
+            "en:vegetarian",
+            "en:no-gluten",
+            "en:vegan",
+            "en:vegetarian-society-approved",
+            "en:vegetarian-society-approved-vegan"
+          ],
+          "sourcePaths": {
+            "packaging": {
+              "last_updated_t": 1781631554,
+              "tags": [
+                "en:no-gluten",
+                "en:vegetarian-society-approved-vegan"
+              ]
+            }
+          },
+          "isClinicalCertification": false
+        },
+        "computedDietAnalysis": {
+          "sourcePath": "product.ingredients_analysis_tags",
+          "tags": [
+            "en:palm-oil",
+            "en:vegan",
+            "en:vegetarian"
+          ],
+          "method": "provider automated ingredient analysis; not label certification"
+        },
+        "quality": {
+          "unrecognizedIngredientCount": 0,
+          "warnings": [
+            "en:ingredients-en-ending-comma",
+            "en:environmental-score-origins-of-ingredients-origins-are-100-percent-unknown",
+            "en:environmental-score-packaging-unscored-shape",
+            "en:environmental-score-production-system-no-label"
+          ],
+          "errors": []
+        },
+        "clinicalSuitability": "not_assessed",
+        "canAutomaticallyDeclareSafe": false
+      }
+    }
+  ]
+}

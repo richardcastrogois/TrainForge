@@ -1,0 +1,11 @@
+{
+  "niche": "N06",
+  "scope": "Uma busca dirigida para resolver a falta de correspondencia do termo generico de refeicao portuguesa",
+  "requests": [
+    {
+      "id": "n06-commons-bacalhau",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3A%22Bacalhau+%C3%A0+Br%C3%A1s%22+filetype%3Abitmap&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+      "purpose": "Verificar fotografia de prato portugues com identidade explicita, sem inferir receita ou nutrientes"
+    }
+  ]
+}

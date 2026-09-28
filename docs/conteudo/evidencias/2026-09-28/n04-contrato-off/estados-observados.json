@@ -1,0 +1,45 @@
+{
+  "states": [
+    {
+      "evidenceId": "off-brand-compal",
+      "httpStatus": 503,
+      "state": "provider_unavailable"
+    },
+    {
+      "evidenceId": "off-brand-continente",
+      "httpStatus": 503,
+      "state": "provider_unavailable"
+    },
+    {
+      "evidenceId": "off-brand-mimosa",
+      "httpStatus": 503,
+      "state": "provider_unavailable"
+    },
+    {
+      "evidenceId": "off-brand-pingo-doce",
+      "httpStatus": 200,
+      "state": "search_results"
+    },
+    {
+      "evidenceId": "off-empty-search-fixture",
+      "httpStatus": 200,
+      "state": "empty"
+    },
+    {
+      "evidenceId": "off-missing-product-fixture",
+      "httpStatus": 404,
+      "state": "invalid_code"
+    },
+    {
+      "evidenceId": "off-missing-valid-gtin-fixture",
+      "httpStatus": 404,
+      "state": "not_found"
+    },
+    {
+      "evidenceId": "off-product-nutrition-v36",
+      "httpStatus": 200,
+      "state": "found"
+    }
+  ],
+  "syntheticFixturesAreNotMarketCoverage": true
+}

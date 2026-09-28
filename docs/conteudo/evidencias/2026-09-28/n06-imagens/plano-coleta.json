@@ -1,0 +1,54 @@
+{
+  "niche": "N06",
+  "scope": "3 embalagens, 3 buscas de 2 fotografias, documentos primarios. Sem catalogo completo nem homologacao.",
+  "requests": [
+    {
+      "id": "n06-off-leite",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5601049132995.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+      "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 5601049132995"
+    },
+    {
+      "id": "n06-off-nectar",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+      "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 5601151964804"
+    },
+    {
+      "id": "n06-off-vegetal",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/8000500426494.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+      "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 8000500426494"
+    },
+    {
+      "id": "n06-commons-banana",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=banana+fruit+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+      "purpose": "Amostra limitada de fotografias de banana com direitos por ficheiro e miniaturas"
+    },
+    {
+      "id": "n06-commons-arroz",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cooked+rice+bowl+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+      "purpose": "Amostra limitada de fotografias de arroz com direitos por ficheiro e miniaturas"
+    },
+    {
+      "id": "n06-commons-prato",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Portuguese+meal+fish+potatoes+filetype%3Abitmap&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+      "purpose": "Amostra limitada de fotografias de prato com direitos por ficheiro e miniaturas"
+    },
+    {
+      "id": "n06-off-guia",
+      "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/how-to-download-images/",
+      "extension": "html",
+      "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao"
+    },
+    {
+      "id": "n06-commons-reuso",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "extension": "html",
+      "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao"
+    },
+    {
+      "id": "n06-imageinfo",
+      "url": "https://www.mediawiki.org/wiki/API:Imageinfo",
+      "extension": "html",
+      "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao"
+    }
+  ]
+}

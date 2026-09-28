@@ -1,0 +1,18 @@
+{
+    "id":  "off-empty-search-fixture",
+    "url":  "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal\u0026brands_tags=trainforge-validation-absent-20260928\u0026page_size=1\u0026fields=code",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:35:30.8099713Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  72,
+    "bodyFile":  "../raw/off-empty-search-fixture.json",
+    "sha256":  "e5dc1724629916e51f4679b5f6bcbba81e17f06ba5514f6f7d65d2de68796e59",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  ""
+}

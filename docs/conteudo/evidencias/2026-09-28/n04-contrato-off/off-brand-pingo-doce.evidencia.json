@@ -1,0 +1,18 @@
+{
+    "id":  "off-brand-pingo-doce",
+    "url":  "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal\u0026brands_tags=pingo-doce\u0026page_size=5\u0026page=1\u0026sort_by=unique_scans_n\u0026fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_size%2Cserving_quantity%2Cserving_quantity_unit%2Cnutrition_data_per%2Cnutriments%2Clast_modified_t",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:35:29.8592635Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  10223,
+    "bodyFile":  "../raw/off-brand-pingo-doce.json",
+    "sha256":  "33a06efecf1dfdd674045dcc3dabdce8db52ec223e65c007ead0767e2d7043a0",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  ""
+}

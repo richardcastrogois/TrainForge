@@ -1,0 +1,21 @@
+{
+  "id": "n07-nhs-rotulos",
+  "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T23:00:15.018777+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia humano pedagógico: porção do fabricante pode diferir da consumida; contexto Reino Unido, não normativa portuguesa",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 31558,
+  "bodyFile": "../raw/n07-nhs-rotulos.html",
+  "sha256": "c4303ed5c20204cf816ff63535d3359f9fab43b54fb57d21f91faab91f2ca14d"
+}

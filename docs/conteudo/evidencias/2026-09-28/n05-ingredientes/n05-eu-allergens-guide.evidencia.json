@@ -1,0 +1,21 @@
+{
+  "id": "n05-eu-allergens-guide",
+  "url": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:26:47.361150+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Current European Commission 2026 guide listing 14 allergen groups and label presentation",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 94085,
+  "bodyFile": "../raw/n05-eu-allergens-guide.html",
+  "sha256": "0ac2cf8a0ba4a986efd3c622f5967faf50db002d7f4aa8dedc704e5377207906"
+}

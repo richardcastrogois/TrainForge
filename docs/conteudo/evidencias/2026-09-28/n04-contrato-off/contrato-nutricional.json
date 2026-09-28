@@ -1,0 +1,413 @@
+{
+  "sourceId": "AL02",
+  "apiVersion": "3.6",
+  "schemaVersion": 1004,
+  "code": "5449000054227",
+  "nameOriginal": "Coca-Cola Original Taste",
+  "inputSets": [
+    {
+      "sourceIndex": 0,
+      "source": "packaging",
+      "sourceDescription": null,
+      "preparation": "as_sold",
+      "per": "100g",
+      "basisQuantity": "100",
+      "basisUnit": "g",
+      "nutrients": {
+        "added-sugars": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.added-sugars"
+        },
+        "carbohydrates": {
+          "value": "10.6",
+          "valueComputed": null,
+          "valueString": "10.6",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.carbohydrates"
+        },
+        "energy-kcal": {
+          "value": "42",
+          "valueComputed": "42.4",
+          "valueString": "42",
+          "unit": "kcal",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.energy-kcal"
+        },
+        "energy-kj": {
+          "value": "180",
+          "valueComputed": "180.2",
+          "valueString": "180",
+          "unit": "kJ",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.energy-kj"
+        },
+        "fat": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.fat"
+        },
+        "fiber": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.fiber"
+        },
+        "proteins": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.proteins"
+        },
+        "salt": {
+          "value": "0",
+          "valueComputed": "0",
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.salt"
+        },
+        "saturated-fat": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.saturated-fat"
+        },
+        "sodium": {
+          "value": "0",
+          "valueComputed": "0",
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.sodium"
+        },
+        "sugars": {
+          "value": "10.6",
+          "valueComputed": null,
+          "valueString": "10.6",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[0].nutrients.sugars"
+        }
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "source": "packaging",
+      "sourceDescription": null,
+      "preparation": "as_sold",
+      "per": "serving",
+      "basisQuantity": "250",
+      "basisUnit": "ml",
+      "nutrients": {
+        "added-sugars": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.added-sugars"
+        },
+        "carbohydrates": {
+          "value": "27",
+          "valueComputed": null,
+          "valueString": "27",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.carbohydrates"
+        },
+        "energy-kcal": {
+          "value": "105",
+          "valueComputed": "108",
+          "valueString": "105",
+          "unit": "kcal",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.energy-kcal"
+        },
+        "energy-kj": {
+          "value": "450",
+          "valueComputed": "459",
+          "valueString": "450",
+          "unit": "kJ",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.energy-kj"
+        },
+        "fat": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.fat"
+        },
+        "fiber": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.fiber"
+        },
+        "proteins": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.proteins"
+        },
+        "salt": {
+          "value": "0",
+          "valueComputed": "0",
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.salt"
+        },
+        "saturated-fat": {
+          "value": "0",
+          "valueComputed": null,
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.saturated-fat"
+        },
+        "sodium": {
+          "value": "0",
+          "valueComputed": "0",
+          "valueString": "0",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.sodium"
+        },
+        "sugars": {
+          "value": "27",
+          "valueComputed": null,
+          "valueString": "27",
+          "unit": "g",
+          "modifier": null,
+          "kind": "numeric",
+          "source": "packaging",
+          "sourcePath": "product.nutrition.input_sets[1].nutrients.sugars"
+        }
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "source": "estimate",
+      "sourceDescription": "Estimate from ingredients",
+      "preparation": "as_sold",
+      "per": "100g",
+      "basisQuantity": "100",
+      "basisUnit": "g",
+      "nutrients": {
+        "added-sugars": {
+          "value": "11.1",
+          "valueComputed": null,
+          "valueString": "11.1",
+          "unit": "g",
+          "modifier": "~",
+          "kind": "estimated",
+          "source": "estimate",
+          "sourcePath": "product.nutrition.input_sets[2].nutrients.added-sugars"
+        }
+      }
+    }
+  ],
+  "aggregatedSet": {
+    "per": "100g",
+    "preparation": "as_sold",
+    "nutrients": {
+      "added-sugars": {
+        "value": "0",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.added-sugars",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "carbohydrates": {
+        "value": "10.6",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.carbohydrates",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "energy-kcal": {
+        "value": "42",
+        "valueComputed": "42.4",
+        "valueString": null,
+        "unit": "kcal",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.energy-kcal",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "energy-kj": {
+        "value": "180",
+        "valueComputed": "180.2",
+        "valueString": null,
+        "unit": "kJ",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.energy-kj",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "fat": {
+        "value": "0",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.fat",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "fiber": {
+        "value": "0",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.fiber",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "proteins": {
+        "value": "0",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.proteins",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "salt": {
+        "value": "0",
+        "valueComputed": "0",
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.salt",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "saturated-fat": {
+        "value": "0",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.saturated-fat",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "sodium": {
+        "value": "0",
+        "valueComputed": "0",
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.sodium",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      },
+      "sugars": {
+        "value": "10.6",
+        "valueComputed": null,
+        "valueString": null,
+        "unit": "g",
+        "modifier": null,
+        "kind": "numeric",
+        "source": "packaging",
+        "sourcePath": "product.nutrition.aggregated_set.nutrients.sugars",
+        "sourceIndex": 0,
+        "sourcePer": "100g"
+      }
+    }
+  },
+  "quantityIsNotNutritionBasis": true,
+  "automaticMassVolumeConversion": false,
+  "scope": "Research demonstrator only; not a production adapter or approved food record"
+}

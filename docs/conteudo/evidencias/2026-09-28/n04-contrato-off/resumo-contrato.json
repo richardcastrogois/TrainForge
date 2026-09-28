@@ -1,0 +1,29 @@
+{
+  "niche": "N04",
+  "researchDate": "2026-09-28",
+  "researchStatus": "in_progress",
+  "releaseApproved": false,
+  "nutritionContractResolvedForObservedProduct": true,
+  "schemaVersion": 1004,
+  "apiVersion": "3.6",
+  "httpCalls": 9,
+  "http200": 4,
+  "http503": 3,
+  "http404NegativeFixtures": 2,
+  "bodyHashesVerified": 9,
+  "newProducts": 5,
+  "combinedUniqueProductCodes": 15,
+  "pingoDoceCountReportedByProvider": 1778,
+  "unavailableBrandQueries": [
+    "continente",
+    "mimosa",
+    "compal"
+  ],
+  "checksPassed": 27,
+  "openItems": [
+    "Three brand strata unavailable: no measured coverage for them",
+    "Convenience samples do not establish Portuguese market coverage",
+    "Publication attribution/derived-database decisions and editorial checks remain pending",
+    "Demonstrator not integrated into Flutter/API/database; no N05 started"
+  ]
+}

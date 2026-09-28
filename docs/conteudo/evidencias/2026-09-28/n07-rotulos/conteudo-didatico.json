@@ -1,0 +1,323 @@
+{
+  "niche": "N07",
+  "date": "2026-09-28",
+  "language": "pt-PT",
+  "audience": "Educação geral de adultos; linguagem simples com detalhe opcional",
+  "editorialStatus": "Rascunho próprio TrainForge assistido por agente, baseado nos guias humanos citados; sem assinatura ou revisão clínica profissional",
+  "releaseApproved": false,
+  "sources": [
+    {
+      "id": "n07-eu-nutricao",
+      "publisher": "Comissão Europeia / DG SANTE",
+      "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+      "evidenceFile": "n07-eu-nutricao.evidencia.json",
+      "sectionUsed": "Which nutrition information is mandatory on food labels? Apenas esta secção; cronograma político antigo excluído.",
+      "jurisdiction": "UE",
+      "responseType": "HTML editorial; não é API de alimentos ou plano alimentar",
+      "use": "Referência factual para texto/diagrama próprio; não importar fotos ou copiar o guia integral",
+      "catalogueSourceId": "NU10"
+    },
+    {
+      "id": "n07-eu-guia",
+      "publisher": "Comissão Europeia / DG SANTE",
+      "url": "https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en",
+      "evidenceFile": "n07-eu-guia.evidencia.json",
+      "sectionUsed": "Mandatory information on food labels; campanha 2026",
+      "jurisdiction": "UE",
+      "responseType": "HTML editorial; não é API de alimentos ou plano alimentar",
+      "use": "Referência factual para texto/diagrama próprio; não importar fotos ou copiar o guia integral",
+      "catalogueSourceId": "NU10"
+    },
+    {
+      "id": "n07-efsa-datas",
+      "publisher": "EFSA",
+      "url": "https://www.efsa.europa.eu/en/safe2eat/food-date-labelling",
+      "evidenceFile": "n07-efsa-datas.evidencia.json",
+      "sectionUsed": "Use by e best before; revisto em 03/04/2025",
+      "jurisdiction": "UE",
+      "responseType": "HTML editorial; não é API de alimentos ou plano alimentar",
+      "use": "Referência factual para texto/diagrama próprio; não importar fotos ou copiar o guia integral",
+      "catalogueSourceId": "NU11"
+    },
+    {
+      "id": "n07-nhs-rotulos",
+      "publisher": "NHS",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/",
+      "evidenceFile": "n07-nhs-rotulos.evidencia.json",
+      "sectionUsed": "Manufacturer portion may differ from yours; revisto em 30/06/2026",
+      "jurisdiction": "Reino Unido; apoio didático, não norma portuguesa",
+      "responseType": "HTML editorial; não é API de alimentos ou plano alimentar",
+      "use": "Referência factual para texto/diagrama próprio; não importar fotos ou copiar o guia integral",
+      "catalogueSourceId": "NU12"
+    },
+    {
+      "id": "n07-bnf-rotulos",
+      "publisher": "British Nutrition Foundation",
+      "url": "https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/",
+      "evidenceFile": "n07-bnf-rotulos.evidencia.json",
+      "sectionUsed": "Nutrition labelling terms explained; What are reference intakes?",
+      "jurisdiction": "Reino Unido; apoio didático, não norma portuguesa",
+      "responseType": "HTML editorial; não é API de alimentos ou plano alimentar",
+      "use": "Referência factual para texto/diagrama próprio; não importar fotos ou copiar o guia integral",
+      "catalogueSourceId": "NU13"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L01",
+      "title": "Encontra a tabela",
+      "simpleText": "Vira a embalagem e procura a tabela nutricional. Confirma primeiro qual é o produto e a variante.",
+      "technicalNote": "Mostrar foto do rótulo com origem e data; ausência de foto não elimina os valores textuais. Informação geral de pré-embalados, sem motor de exceções legais.",
+      "sourceIds": [
+        "n07-eu-nutricao"
+      ],
+      "visualRequirement": "foto do verso + texto alternativo",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L02",
+      "title": "Compara na mesma base",
+      "simpleText": "Compara produtos semelhantes por 100 g ou por 100 ml. A porção de uma marca pode ter outro tamanho.",
+      "technicalNote": "Conservar basisQuantity, basisUnit e estado do alimento; não comparar gramas com mililitros sem uma conversão demonstrada.",
+      "sourceIds": [
+        "n07-eu-nutricao",
+        "n07-nhs-rotulos"
+      ],
+      "visualRequirement": "realçar cabeçalho 100 g / 100 ml",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L03",
+      "title": "Regista o que consumiste",
+      "simpleText": "Se o exemplo tem 200 kcal por 100 g e comeste 45 g, regista 90 kcal. A porção de 30 g da embalagem teria 60 kcal.",
+      "technicalNote": "Cálculo próprio: valor por base × quantidade consumida / base; nesta lição, mesma unidade e estado. Quantidade consumida vem do utilizador, não da fotografia.",
+      "sourceIds": [
+        "n07-nhs-rotulos"
+      ],
+      "visualRequirement": "exemplo original A, com fórmula e três quantidades",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L04",
+      "title": "Não confundas embalagem e porção",
+      "simpleText": "O pacote do exemplo tem 300 g. Isso não significa que comeste 300 g. Indica só a quantidade que consumiste.",
+      "technicalNote": "Separar netQuantity, servingQuantity e consumedQuantity. Para escorridos ou preparados confirmar explicitamente a base nutricional; não aplicar rendimento universal.",
+      "sourceIds": [
+        "n07-eu-guia"
+      ],
+      "visualRequirement": "pacote 300 g / porção 30 g / consumo 45 g",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L05",
+      "title": "Lê as unidades",
+      "simpleText": "kcal e kJ são unidades de energia. g, mg e ml medem outras coisas. Não somes kcal com kJ.",
+      "technicalNote": "Conservar unidade original e valor declarado. Converter g em mg só no mesmo nutriente; não confundir sal com sódio.",
+      "sourceIds": [
+        "n07-eu-nutricao"
+      ],
+      "visualRequirement": "exemplos A e B, unidades sempre junto do número",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L06",
+      "title": "Evita contar duas vezes",
+      "simpleText": "Os açúcares já fazem parte dos hidratos de carbono. Os saturados já fazem parte das gorduras.",
+      "technicalNote": "No exemplo: 22 g de hidratos, dos quais 4 g açúcares; não 26 g. Gordura 8 g, dos quais 1,5 g saturados; não 9,5 g.",
+      "sourceIds": [
+        "n07-bnf-rotulos"
+      ],
+      "visualRequirement": "recuo textual e rótulo dos quais, sem depender da cor",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L07",
+      "title": "Consulta os ingredientes",
+      "simpleText": "A lista ajuda a perceber a composição e a ordem dos ingredientes. Procura também os que estão destacados.",
+      "technicalNote": "Ordem em geral por peso na formulação; não deduzir percentagens exatas da posição. Percent_estimate OFF continua estimativa, não medição do rótulo.",
+      "sourceIds": [
+        "n07-eu-guia"
+      ],
+      "visualRequirement": "recorte próprio com AVEIA em destaque",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L08",
+      "title": "Mantém os avisos separados",
+      "simpleText": "Ingrediente declarado e aviso de possível presença são informações diferentes. Confirma sempre o rótulo do produto que tens.",
+      "technicalNote": "Reaproveitar N05: possível leite não desaparece por classificação vegan/sem lactose; lista vazia não comprova ausência. Nenhum resultado significa aptidão clínica individual.",
+      "sourceIds": [
+        "n07-eu-guia"
+      ],
+      "visualRequirement": "exemplo fictício: AVEIA nos ingredientes; pode conter LEITE em outra linha",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L09",
+      "title": "Entende a referência do rótulo",
+      "simpleText": "Uma referência de 2.000 kcal é uma base de comparação do rótulo. Não define a tua meta diária.",
+      "technicalNote": "Separar referenceIntake de userGoal. Total de açúcares inclui naturais e adicionados; o total sozinho não revela quanto foi adicionado.",
+      "sourceIds": [
+        "n07-bnf-rotulos"
+      ],
+      "visualRequirement": "referência geral visualmente separada de metas pessoais",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L10",
+      "title": "Distingue as datas",
+      "simpleText": "Consumir até está ligado à segurança: não consumir após essa data. Consumir de preferência antes de refere-se à qualidade.",
+      "technicalNote": "Seguir conservação e instruções após abertura. Aparência ou cheiro não anulam a data de segurança. Não gerar autorização automática para consumir alimento vencido.",
+      "sourceIds": [
+        "n07-efsa-datas"
+      ],
+      "visualRequirement": "dois cartões de texto com significados diferentes",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L11",
+      "title": "Confirma a preparação",
+      "simpleText": "A ficha pode descrever o alimento como vendido ou preparado. Confirma qual se aplica ao que vais registar.",
+      "technicalNote": "Regra do projeto herdada de N03: não converter cru/cozido, seco/hidratado ou g/ml sem factor/rendimento/densidade sustentados. Campo ausente permanece desconhecido.",
+      "sourceIds": [
+        "n07-eu-nutricao"
+      ],
+      "visualRequirement": "seletor de estado apenas quando a fonte o informa",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    },
+    {
+      "id": "L12",
+      "title": "Quando a informação falta",
+      "simpleText": "Se não conseguires ler ou encontrar um valor, deixa-o como não informado. Podes confirmar no rótulo ou registar manualmente.",
+      "technicalNote": "Guardar proveniência, revisão e correção do utilizador separada da fonte. Não preencher com zero, estimativa de ingredientes nem foto ilustrativa. Semáforos britânicos não viram regra portuguesa automática.",
+      "sourceIds": [
+        "n07-nhs-rotulos"
+      ],
+      "visualRequirement": "estado sem foto / sem valor / rótulo divergente",
+      "projectDecisions": "Cálculos e tratamento de dados são propostas do TrainForge; citações não aprovam o produto."
+    }
+  ],
+  "examples": [
+    {
+      "id": "A",
+      "fictional": true,
+      "name": "Alimento A",
+      "notice": "Valores inventados apenas para exercício de leitura; não é alimento real, receita ou recomendação de porção. Recorte didático, não modelo completo de embalagem legal.",
+      "basis": {
+        "quantity": "100",
+        "unit": "g",
+        "state": "como vendido"
+      },
+      "package": {
+        "quantity": "300",
+        "unit": "g"
+      },
+      "serving": {
+        "quantity": "30",
+        "unit": "g"
+      },
+      "consumed": {
+        "quantity": "45",
+        "unit": "g"
+      },
+      "nutrients": [
+        {
+          "id": "energy-kj",
+          "label": "Energia",
+          "value": "838",
+          "unit": "kJ",
+          "partOf": null
+        },
+        {
+          "id": "energy-kcal",
+          "label": "Energia",
+          "value": "200",
+          "unit": "kcal",
+          "partOf": null
+        },
+        {
+          "id": "fat",
+          "label": "Lípidos",
+          "value": "8",
+          "unit": "g",
+          "partOf": null
+        },
+        {
+          "id": "saturates",
+          "label": "dos quais saturados",
+          "value": "1.5",
+          "unit": "g",
+          "partOf": "fat"
+        },
+        {
+          "id": "carbohydrate",
+          "label": "Hidratos de carbono",
+          "value": "22",
+          "unit": "g",
+          "partOf": null
+        },
+        {
+          "id": "sugars",
+          "label": "dos quais açúcares",
+          "value": "4",
+          "unit": "g",
+          "partOf": "carbohydrate"
+        },
+        {
+          "id": "fibre",
+          "label": "Fibra",
+          "value": "4",
+          "unit": "g",
+          "partOf": null
+        },
+        {
+          "id": "protein",
+          "label": "Proteínas",
+          "value": "8",
+          "unit": "g",
+          "partOf": null
+        },
+        {
+          "id": "salt",
+          "label": "Sal",
+          "value": "0.4",
+          "unit": "g",
+          "partOf": null
+        }
+      ],
+      "exampleIngredients": "Água, flocos de AVEIA, óleo vegetal, açúcar, sal. Pode conter LEITE. Lista fictícia para ler destaque e aviso; não é a receita dos valores nutricionais do exercício."
+    },
+    {
+      "id": "B",
+      "fictional": true,
+      "name": "Bebida B",
+      "notice": "Valores fictícios, apenas aritmética por volume; não sugerem consumo ou receita.",
+      "basis": {
+        "quantity": "100",
+        "unit": "ml",
+        "state": "como vendido"
+      },
+      "consumed": {
+        "quantity": "250",
+        "unit": "ml"
+      },
+      "nutrients": [
+        {
+          "id": "energy-kcal",
+          "label": "Energia",
+          "value": "42",
+          "unit": "kcal",
+          "partOf": null
+        }
+      ]
+    }
+  ],
+  "notValidated": [
+    "Legislação consolidada integral e exceções por produto",
+    "Tradução/revisão editorial independente de pt-PT",
+    "OCR, adequação individual e classificação de alimento por objetivo",
+    "Direito a copiar fotografias, tabelas completas e ilustrações das fontes",
+    "Implantação das lições no Figma ou aplicativo"
+  ],
+  "collectionLimits": "Duas falhas de certificado do coletor em Your Europe preservadas, sem desativar TLS nem repetir. Páginas puderam ser lidas via web; as lições se apoiam nas cinco fontes com corpo local. Consulta exploratória NHS reference-intakes-explained retornou 404 via web, sem evidência de conteúdo; não usada."
+}

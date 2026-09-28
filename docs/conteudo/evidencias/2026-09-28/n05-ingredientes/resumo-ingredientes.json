@@ -1,0 +1,30 @@
+{
+  "niche": "N05",
+  "researchDate": "2026-09-28",
+  "researchStatus": "completed_with_explicit_scope_limits",
+  "releaseApproved": false,
+  "httpCalls": 9,
+  "http200": 8,
+  "http202": 1,
+  "bodyHashesVerified": 9,
+  "productProfiles": 5,
+  "providerTaxonomyEntries": 27,
+  "euAllergenGroupsMapped": 14,
+  "checksPassed": 66,
+  "keyFindings": [
+    "Lactose-free claim with milk allergen",
+    "Vegan analysis and milk trace coexist",
+    "Empty allergen list and en:none are not clinical absence",
+    "PT field contains English Milk and parser marks it unknown",
+    "Reported oats 45 percent differs from estimate 45.5; lactase 25 percent is estimated only",
+    "Provider Portuguese nuts translation is narrower than EU group"
+  ],
+  "remainingReleaseWork": [
+    "Manufacturer/package verification and pt-PT editorial review",
+    "Recipes and unpackaged/home/restaurant meals need their own ingredient provenance",
+    "No automatic clinical suitability, dose threshold, contamination clearance or therapeutic diet",
+    "Implement confirmation, privacy preferences, UI, API and database later",
+    "Consolidated legal exceptions must be validated before regulatory claims"
+  ],
+  "nextNiche": "N06"
+}

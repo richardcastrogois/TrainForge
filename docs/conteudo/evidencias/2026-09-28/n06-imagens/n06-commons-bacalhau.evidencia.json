@@ -1,0 +1,21 @@
+{
+  "id": "n06-commons-bacalhau",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3A%22Bacalhau+%C3%A0+Br%C3%A1s%22+filetype%3Abitmap&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:53:37.484418+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar fotografia de prato portugues com identidade explicita, sem inferir receita ou nutrientes",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3A%22Bacalhau+%C3%A0+Br%C3%A1s%22+filetype%3Abitmap&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CImageDescription%7CRestrictions&format=json&formatversion=2",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2088,
+  "bodyFile": "../raw/n06-commons-bacalhau.json",
+  "sha256": "7bd3e613f4a52938138669861133508b6c0acd8a6715176606861aa672da5fbc"
+}

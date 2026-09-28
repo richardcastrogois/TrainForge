@@ -1,0 +1,33 @@
+{
+  "tool": "Playwright local headless; runtime existente; sem perfil do utilizador",
+  "date": "2026-09-28",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "bodyWidth": 1280,
+      "viewportWidth": 1280,
+      "lessons": 12,
+      "tableRows": 9,
+      "notice": "Exemplos fictícios. Valores e desenhos próprios apenas para aprender. Não representam produtos reais, dietas ou recomendações de porção. Este material de pesquisa ainda precisa de revisão editorial.",
+      "detailToggleWorks": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "lessons": 12,
+      "tableRows": 9,
+      "notice": "Exemplos fictícios. Valores e desenhos próprios apenas para aprender. Não representam produtos reais, dietas ou recomendações de porção. Este material de pesquisa ainda precisa de revisão editorial.",
+      "detailToggleWorks": true
+    }
+  ],
+  "pageErrors": [],
+  "screenCaptures": "../raw/n07-guia-{1280,390}.png; locais, não versionadas",
+  "scope": "Referência HTML; não Figma nem app. Acesso somente à página local; não testa links externos."
+}

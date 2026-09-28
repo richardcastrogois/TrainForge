@@ -1,0 +1,21 @@
+{
+  "id": "n06-imageinfo",
+  "url": "https://www.mediawiki.org/wiki/API:Imageinfo",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:19.596039+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentacao primaria de imagens, contrato e condicoes de reutilizacao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mediawiki.org/wiki/API:Imageinfo",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 123003,
+  "bodyFile": "../raw/n06-imageinfo.html",
+  "sha256": "19fb669eb28379a1c33dd803f375dedd44f0e3954df24150b63a6628864c0f62"
+}

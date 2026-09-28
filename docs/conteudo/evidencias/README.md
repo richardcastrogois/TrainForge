@@ -1,6 +1,29 @@
 # Evidências da expansão de conteúdo
 
-**Estado atual — 27/09:** N01–N03 concluídos nos recortes de pesquisa; N03 reproduzido novamente com 26 verificações aprovadas. **N04 em andamento:** primeira amostra OFF de 10 produtos com marcação Portugal e um detalhe por código recebidos; divergência nutricional v2/v3.6 ainda por esclarecer. Resumo: `docs/conteudo/evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json`. Etapa 01 aberta; N05 não iniciado. Commit `7dc6531` publicou até N01; N02–N04 locais. Graphify: **0 alterados, 42 inalterados, 0 removidos** em `lib/`. Validação documental/local do primeiro incremento N04 concluída após a retomada.
+**Estado atual — 28/09:** N01–N07 concluídos para pesquisa nos recortes documentados. N06: três produtos OFF, sete ficheiros Commons, oito imagens inspecionadas, 22 chamadas preservadas/200/hashes e 23 verificações. N07: cinco guias institucionais, 12 lições, dois exemplos visuais próprios e 31 verificações; duas falhas TLS preservadas. Índice acumulado: 106 chamadas / 78 HTTP 200 / 72 hashes; catálogo: 50 fontes/famílias. Próximo: **N08 — receitas humanas**, não iniciado. Etapa 01 continua aberta; pesquisa não aprova catálogo integral, integração ou publicação. Retomar pelos resumos `docs/conteudo/evidencias/2026-09-28/n06-imagens/resumo-imagens.json` e `docs/conteudo/evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json`; versão deste fechamento identificada no histórico Git.
+
+## Fechamentos N06 e N07 — 28/09/2026
+
+- [N06: resumo](2026-09-28/n06-imagens/resumo-imagens.json), [imagens/créditos](2026-09-28/n06-imagens/amostra-imagens.json), [revisão visual](2026-09-28/n06-imagens/revisao-visual.json), [23 verificações e 22 hashes](2026-09-28/n06-imagens/validacao-imagens.json).
+- [N07: resumo](2026-09-28/n07-rotulos/resumo-rotulos.json), [12 lições e fontes](2026-09-28/n07-rotulos/conteudo-didatico.json), [guia visual próprio](2026-09-28/n07-rotulos/guia-rotulos.html), [31 verificações](2026-09-28/n07-rotulos/validacao-rotulos.json), [conferência desktop/celular](2026-09-28/n07-rotulos/validacao-visual.json).
+- Sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-imagens.py` (requer Pillow e raw local) e `python -X utf8 docs/conteudo/evidencias/analisar-rotulos.py` (biblioteca padrão e raw local). O segundo também regenera a referência HTML própria; preservar mudanças manuais antes de executar.
+- Os manifestos `plano-*.json` guardam requisições exatas; o coletor preserva cache/falhas. O índice atual tem **106 chamadas, 78 HTTP 200 e 72 corpos com hash conferido**. Raw/fotografias/capturas permanecem locais e ignorados; não são redistribuídos no Git. Num clone novo, os resumos e amostras bastam para recuperar o resultado; análises de hash requerem os corpos locais, não executar coletor automaticamente.
+- Visual N07 verificado por Playwright com **Comet headless e perfil temporário**, sem acessar dados do navegador pessoal. `validar-guia.cjs` usa `TRAINFORGE_PLAYWRIGHT_PATH`, `TRAINFORGE_BROWSER_PATH` e opcional `TRAINFORGE_GUIDE_URL`; requer runtime/navegador instalados e servidor local apontando apenas à pasta N07. Neste host, o navegador interno não respondeu e o browser empacotado não estava instalado; nenhum download foi feito. Duas vistas, detalhes expansíveis, tabela com deslocação e zero erros de página.
+
+Os check-ins seguintes mantêm contagens históricas de cada incremento.
+
+## Fechamentos N04 e N05 — 28/09/2026
+
+- [N04: resumo](2026-09-28/n04-fechamento/resumo-fechamento.json), [35 verificações](2026-09-28/n04-fechamento/validacao-fechamento.json), [analisador local](analisar-fechamento-n04.py). 24 produtos, quatro marcas; contrato anterior reproduzido em 27 verificações.
+- [N05: resumo](2026-09-28/n05-ingredientes/resumo-ingredientes.json), [amostras](2026-09-28/n05-ingredientes/amostra-ingredientes.json), [66 verificações](2026-09-28/n05-ingredientes/validacao-ingredientes.json), [analisador local](analisar-ingredientes.py). Cinco perfis e 14 grupos; ausência e declaração não equivalem a segurança.
+- Ambos os analisadores usam apenas a biblioteca padrão Python e corpos locais com hash. Execute da raiz com `python -X utf8 docs/conteudo/evidencias/analisar-fechamento-n04.py` ou `python -X utf8 docs/conteudo/evidencias/analisar-ingredientes.py`.
+- [Coletor limitado](coletar-nichos-off.py): manifesto por nicho, cache, nenhum retry. Não executar para recuperar contexto. Índice acumulado: 77 chamadas / 51 HTTP 200 / 45 hashes conferidos.
+
+## N04 — contrato nutricional e amostra dirigida · 28/09/2026
+
+[Resumo](2026-09-28/n04-contrato-off/resumo-contrato.json), [contrato normalizado](2026-09-28/n04-contrato-off/contrato-nutricional.json), [cinco novos produtos](2026-09-28/n04-contrato-off/amostra-dirigida.json), [estados observados](2026-09-28/n04-contrato-off/estados-observados.json) e [27 verificações](2026-09-28/n04-contrato-off/validacao-contrato.json). O [analisador](analisar-contrato-off.py) é um demonstrador local, não componente do app: executar `python docs/conteudo/evidencias/analisar-contrato-off.py` com os insumos locais preservados.
+
+O [coletor](coletar-contrato-off.ps1) fez nove GETs: quatro 200, três 503 e dois 404 esperados em casos negativos sintéticos. Não repetiu os resultados anteriores. O código de produto real veio da amostra de 27/09; os casos negativos estão identificados separadamente e não contam como cobertura. Corpos em `2026-09-28/raw/` ignorados pelo Git, nove hashes conferidos. Índice acumulado: **60 chamadas, 36 HTTP 200, 28 corpos com hash conferido**. [Interpretação e campos exatos](../evidencias-para-integracao.md#n04--produtos-vendidos-em-portugal). A documentação anterior abaixo preserva a sequência de descoberta.
 
 ## N04 — primeira amostra portuguesa · 27/09/2026
 

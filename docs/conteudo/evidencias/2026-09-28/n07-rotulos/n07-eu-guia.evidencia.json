@@ -1,0 +1,21 @@
+{
+  "id": "n07-eu-guia",
+  "url": "https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T23:00:14.007307+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia europeu 2026: lista de ingredientes, destaque de alergénios e quantidade; alternativa institucional às duas falhas TLS preservadas",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 93822,
+  "bodyFile": "../raw/n07-eu-guia.html",
+  "sha256": "22e4c8ffd1f61b27c3e15f557748e0f201be3f3a0674d9c97335e05068539969"
+}

@@ -1,0 +1,21 @@
+{
+  "niche": "N04",
+  "scope": "Official alternative search service documented by provider; discover public OpenAPI before calling",
+  "requests": [
+    {
+      "id": "n04-search-openapi",
+      "url": "https://search.openfoodfacts.org/openapi.json",
+      "purpose": "Inspect official alternative search contract and limits"
+    },
+    {
+      "id": "n04-compal-searchalicious",
+      "url": "https://search.openfoodfacts.org/search?q=brands%3A%22compal%22+AND+countries_tags%3A%22en%3Aportugal%22&langs=pt%2Cen&page_size=3&fields=code%2Cproduct_name%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Clast_modified_t",
+      "purpose": "One read-only query through provider alternative search; verify returned tags before accepting stratum"
+    },
+    {
+      "id": "n04-compal-product",
+      "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804?fields=code%2Cproduct_name%2Cproduct_name_pt%2Cbrands%2Cbrands_tags%2Ccountries_tags%2Ccategories_tags%2Clang%2Cquantity%2Clast_modified_t%2Cschema_version%2Ctags_sources",
+      "purpose": "Confirm current product identity from observed alternative-search barcode; do not assume search index freshness"
+    }
+  ]
+}

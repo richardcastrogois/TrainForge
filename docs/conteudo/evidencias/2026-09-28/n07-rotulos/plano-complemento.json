@@ -1,0 +1,24 @@
+{
+  "niche": "N07",
+  "scope": "Complementos humanos, sem refazer falhas TLS, sem reutilizar imagens dos guias",
+  "requests": [
+    {
+      "id": "n07-eu-guia",
+      "url": "https://food.ec.europa.eu/food-safety/campaign-2026/labelling_en",
+      "purpose": "Guia europeu 2026: lista de ingredientes, destaque de alergénios e quantidade; alternativa institucional às duas falhas TLS preservadas",
+      "extension": "html"
+    },
+    {
+      "id": "n07-nhs-rotulos",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/how-to-read-food-labels/",
+      "purpose": "Guia humano pedagógico: porção do fabricante pode diferir da consumida; contexto Reino Unido, não normativa portuguesa",
+      "extension": "html"
+    },
+    {
+      "id": "n07-bnf-rotulos",
+      "url": "https://www.nutrition.org.uk/creating-a-healthy-diet/food-labelling/",
+      "purpose": "Guia institucional de nutrição: açúcares como subconjunto, referência de energia não individual; apoio pedagógico não lei portuguesa",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source": "Open Food Facts and contributors",
+  "sourceId": "AL02",
+  "databaseLicense": "ODbL-1.0",
+  "individualContentsLicense": "DbCL-1.0",
+  "images": "Separate CC BY-SA terms and third-party rights; N06 not evaluated",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "termsUrl": "https://world.openfoodfacts.org/terms-of-use",
+  "researchDecision": "Candidate for product lookup with attribution, provenance, freshness and unknown-data states; not approved for release",
+  "attributionExample": "Dados: Open Food Facts e colaboradores. Base sob ODbL 1.0; incluir links para a fonte, produto e licença.",
+  "implementationRequirements": [
+    "Keep source ID, barcode string, response/API/schema version, retrieval and modification dates, field provenance and license with each record.",
+    "Treat a public normalized OFF-derived catalogue as ODbL; provide the required machine-readable derived database or alterations with license notices.",
+    "Keep private user diaries/health data and other provider datasets independently modeled. Physical table separation alone does not settle the legal classification.",
+    "Do not copy brand logos or packaging images as app branding; assess image rights in N06.",
+    "Before release, verify attribution in screens/export and the actual database derivation/distribution. No publication approval implied."
+  ]
+}

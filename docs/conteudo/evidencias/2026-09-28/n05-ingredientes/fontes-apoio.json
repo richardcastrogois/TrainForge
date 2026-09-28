@@ -1,0 +1,22 @@
+{
+  "niche": "N05",
+  "requests": [
+    {
+      "id": "n05-off-ingredients-guide",
+      "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorials/get-ingredient-related-analysis/",
+      "extension": "html",
+      "purpose": "Source documentation distinguishes parsed/inferred ingredients, uncertainty and OCR review"
+    },
+    {
+      "id": "n05-eu-allergens-guide",
+      "url": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en",
+      "extension": "html",
+      "purpose": "Current European Commission 2026 guide listing 14 allergen groups and label presentation"
+    },
+    {
+      "id": "n05-off-allergens-taxonomy",
+      "url": "https://static.openfoodfacts.org/data/taxonomies/allergens.json",
+      "purpose": "Inspect canonical allergen IDs, translations and parent relationships from provider taxonomy"
+    }
+  ]
+}

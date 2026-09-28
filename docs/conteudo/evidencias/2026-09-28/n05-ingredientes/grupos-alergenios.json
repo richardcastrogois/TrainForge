@@ -1,0 +1,126 @@
+{
+  "scope": "EU 14 group mapping plus provider taxonomy; not all possible allergies or executable legal exceptions",
+  "source": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en",
+  "providerTaxonomyEvidence": "n05-off-allergens-taxonomy.evidencia.json",
+  "taxonomyEntryCount": 27,
+  "sentinel": "en:none is a source claim, not medical confirmation",
+  "groups": [
+    {
+      "canonicalId": "en:gluten",
+      "namePtProvider": "glúten",
+      "displayLabelPtProposed": "Cereais que contêm glúten",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:crustaceans",
+      "namePtProvider": "crustáceos",
+      "displayLabelPtProposed": "Crustáceos",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:eggs",
+      "namePtProvider": "ovos",
+      "displayLabelPtProposed": "Ovos",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:fish",
+      "namePtProvider": "peixe",
+      "displayLabelPtProposed": "Peixe",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:peanuts",
+      "namePtProvider": "amendoins",
+      "displayLabelPtProposed": "Amendoins",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:soybeans",
+      "namePtProvider": "soja",
+      "displayLabelPtProposed": "Soja",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:milk",
+      "namePtProvider": "leite",
+      "displayLabelPtProposed": "Leite",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:nuts",
+      "namePtProvider": "nozes",
+      "displayLabelPtProposed": "Frutos de casca rija",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:celery",
+      "namePtProvider": "aipo",
+      "displayLabelPtProposed": "Aipo",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:mustard",
+      "namePtProvider": "mostarda",
+      "displayLabelPtProposed": "Mostarda",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:sesame-seeds",
+      "namePtProvider": "sementes de sésamo",
+      "displayLabelPtProposed": "Sementes de sésamo",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:sulphur-dioxide-and-sulphites",
+      "namePtProvider": "dióxido de enxofre e sulfitos",
+      "displayLabelPtProposed": "Dióxido de enxofre e sulfitos",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:lupin",
+      "namePtProvider": "tremoço",
+      "displayLabelPtProposed": "Tremoço",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    },
+    {
+      "canonicalId": "en:molluscs",
+      "namePtProvider": "moluscos",
+      "displayLabelPtProposed": "Moluscos",
+      "editorialStatus": "proposed; requires Portuguese review",
+      "groupScopeSource": "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en"
+    }
+  ],
+  "unmappedProviderIds": [
+    "en:apple",
+    "en:banana",
+    "en:beef",
+    "en:chicken",
+    "en:gelatin",
+    "en:kiwi",
+    "en:matsutake",
+    "en:orange",
+    "en:peach",
+    "en:pork",
+    "en:red-caviar",
+    "en:yamaimo"
+  ],
+  "notes": [
+    "Do not infer wheat allergy equivalence from gluten claims; granular cases need label verification.",
+    "Sulphites thresholds/exceptions and ingredient derivatives are not encoded by this demonstrator.",
+    "No claim that an unchanged complete consolidated regulation was fetched; original EUR-Lex returned HTTP 202."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n06-off-nectar",
+  "url": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:51:01.539097+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Observar fotografias selecionadas, idiomas, revisoes e proveniencia do produto 5601151964804",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v3.6/product/5601151964804.json?fields=code%2Cproduct_name%2Cproduct_name_pt%2Clang%2Cschema_version%2Cimages%2Cselected_images%2Cimage_front_url%2Cimage_ingredients_url%2Cimage_nutrition_url%2Clast_modified_t",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2761,
+  "bodyFile": "../raw/n06-off-nectar.json",
+  "sha256": "fd562d35788f991b8c7a5101cb28626c907ffe9ccc69cde2afe5985a2a05dc50"
+}

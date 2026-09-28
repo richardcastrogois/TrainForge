@@ -1,0 +1,291 @@
+{
+  "networkCallsDuringAnalysis": 0,
+  "functionalChecks": [
+    {
+      "name": "PT supera URL legada EN no rótulo vegetal",
+      "passed": true
+    },
+    {
+      "name": "Leite sem ingredientes PT permanece ausente sem fallback explícito",
+      "passed": true
+    },
+    {
+      "name": "Fallback conserva idioma EN e aviso",
+      "passed": true
+    },
+    {
+      "name": "Front vegetal PT ausente sem inventar fotografia",
+      "passed": true
+    },
+    {
+      "name": "Miniatura usa URL 100 já declarada",
+      "passed": true
+    },
+    {
+      "name": "Revisão, imgid e uploader resolvidos com tipos int/string",
+      "passed": true
+    },
+    {
+      "name": "Papel nutrition não é substituído por front",
+      "passed": true
+    },
+    {
+      "name": "Ausência de imagens: None",
+      "passed": true
+    },
+    {
+      "name": "Ausência de imagens: {}",
+      "passed": true
+    },
+    {
+      "name": "Schema desconhecido exige revisão",
+      "passed": true
+    },
+    {
+      "name": "Falha de fornecedor não é catálogo vazio",
+      "passed": true
+    },
+    {
+      "name": "URL rejeitada javascript:alert(1)",
+      "passed": true
+    },
+    {
+      "name": "URL rejeitada https://images.openfoodfacts.org.evil.test/a.jpg",
+      "passed": true
+    },
+    {
+      "name": "URL rejeitada http://images.openfoodfacts.org/a.jpg",
+      "passed": true
+    },
+    {
+      "name": "URL rejeitada https://x@images.openfoodfacts.org/a.jpg",
+      "passed": true
+    },
+    {
+      "name": "URL e revisão em conflito",
+      "passed": true
+    },
+    {
+      "name": "Sem imgid não atribuir uploader por engano",
+      "passed": true
+    },
+    {
+      "name": "HTML de crédito vira texto; script não executável",
+      "passed": true
+    },
+    {
+      "name": "Sete itens Commons conservam licença individual",
+      "passed": true
+    },
+    {
+      "name": "Uploader não substitui autor no prato de carne",
+      "passed": true
+    },
+    {
+      "name": "Catálogo de sementes não vira alimento por resultado de busca",
+      "passed": true
+    },
+    {
+      "name": "Fotografia não estima massa/nutrientes",
+      "passed": true
+    },
+    {
+      "name": "Oito fotografias recebidas 200 e decodificáveis",
+      "passed": true
+    }
+  ],
+  "hashChecks": [
+    {
+      "evidence": "n06-cc-by-2.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-cc-by-sa-3.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-cc-by-sa-4.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-cc0.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-commons-arroz.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-commons-bacalhau.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-commons-banana.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-commons-prato.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-commons-reuso.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-commons-158198806.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-commons-22552194.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-commons-25804985.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-commons-4010846.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-commons-43976882.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-off-leite.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-off-nectar.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-foto-off-vegetal.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-imageinfo.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-off-guia.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-off-leite.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-off-nectar.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "evidence": "n06-off-vegetal.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    }
+  ],
+  "decodedImages": [
+    {
+      "evidence": "n06-foto-commons-158198806.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 375
+      },
+      "format": "JPEG",
+      "bytes": 55012,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-22552194.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 349
+      },
+      "format": "JPEG",
+      "bytes": 52231,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-25804985.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 375
+      },
+      "format": "JPEG",
+      "bytes": 56383,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-4010846.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 240,
+        "h": 117
+      },
+      "format": "JPEG",
+      "bytes": 15345,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-commons-43976882.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 500,
+        "h": 441
+      },
+      "format": "JPEG",
+      "bytes": 37858,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-leite.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 168,
+        "h": 400
+      },
+      "format": "JPEG",
+      "bytes": 13729,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-nectar.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 157,
+        "h": 400
+      },
+      "format": "JPEG",
+      "bytes": 19073,
+      "status": 200
+    },
+    {
+      "evidence": "n06-foto-off-vegetal.evidencia.json",
+      "dimensionsDecoded": {
+        "w": 400,
+        "h": 236
+      },
+      "format": "JPEG",
+      "bytes": 30940,
+      "status": 200
+    }
+  ]
+}

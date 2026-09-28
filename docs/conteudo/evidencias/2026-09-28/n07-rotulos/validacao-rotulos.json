@@ -1,0 +1,180 @@
+{
+  "networkCallsDuringAnalysis": 0,
+  "functionalChecks": [
+    {
+      "name": "45 g",
+      "passed": true
+    },
+    {
+      "name": "porção 30 g",
+      "passed": true
+    },
+    {
+      "name": "pacote 300 g",
+      "passed": true
+    },
+    {
+      "name": "bebida 250 ml",
+      "passed": true
+    },
+    {
+      "name": "kJ não é kcal",
+      "passed": true
+    },
+    {
+      "name": "sal em g",
+      "passed": true
+    },
+    {
+      "name": "consumo zero explícito",
+      "passed": true
+    },
+    {
+      "name": "nutriente zero explícito",
+      "passed": true
+    },
+    {
+      "name": "quantidade fracionária",
+      "passed": true
+    },
+    {
+      "name": "Ausente permanece desconhecido",
+      "passed": true
+    },
+    {
+      "name": "Vírgula decimal no texto",
+      "passed": true
+    },
+    {
+      "name": "Arredondamento somente na apresentação",
+      "passed": true
+    },
+    {
+      "name": "Sal 0,18 g corresponde a 180 mg, não 0,18 mg",
+      "passed": true
+    },
+    {
+      "name": "g não vira ml sem densidade",
+      "passed": true
+    },
+    {
+      "name": "unidade sem massa não vira gramas",
+      "passed": true
+    },
+    {
+      "name": "cozido não usa ficha crua automaticamente",
+      "passed": true
+    },
+    {
+      "name": "base zero recusada",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida -1",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida NaN",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida Infinity",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida <0.1",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida tr",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida True",
+      "passed": true
+    },
+    {
+      "name": "Quantidade inválida None",
+      "passed": true
+    },
+    {
+      "name": "Açúcares pertencem a hidratos; não somar 22+4",
+      "passed": true
+    },
+    {
+      "name": "Saturados pertencem a lípidos; não somar 8+1,5",
+      "passed": true
+    },
+    {
+      "name": "Recortes didáticos explicitamente fictícios",
+      "passed": true
+    },
+    {
+      "name": "Pacote, porção e consumo distintos",
+      "passed": true
+    },
+    {
+      "name": "Todas as lições rastreáveis a fontes preservadas",
+      "passed": true
+    },
+    {
+      "name": "Cinco fontes principais são HTTP 200 com corpo/hash",
+      "passed": true
+    },
+    {
+      "name": "Duas falhas TLS preservadas, não tratadas como dados",
+      "passed": true
+    }
+  ],
+  "hashChecks": [
+    {
+      "file": "n07-bnf-rotulos.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "file": "n07-efsa-datas.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "file": "n07-eu-guia.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "file": "n07-eu-nutricao.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    },
+    {
+      "file": "n07-nhs-rotulos.evidencia.json",
+      "status": 200,
+      "sha256Matches": true
+    }
+  ],
+  "preservedFailures": [
+    {
+      "file": "n07-eu-declaracao.evidencia.json",
+      "status": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "file": "n07-eu-rotulagem.evidencia.json",
+      "status": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    }
+  ],
+  "fictionalExampleResults": {
+    "A": {
+      "servingKcal": "60",
+      "consumedKcal": "90",
+      "packageKcal": "600",
+      "consumedKj": "377.1",
+      "consumedSaltG": "0.18"
+    },
+    "B": {
+      "consumedKcal": "105"
+    }
+  }
+}

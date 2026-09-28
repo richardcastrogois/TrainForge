@@ -1,0 +1,21 @@
+{
+  "id": "n05-off-allergens-taxonomy",
+  "url": "https://static.openfoodfacts.org/data/taxonomies/allergens.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:26:48.108630+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Inspect canonical allergen IDs, translations and parent relationships from provider taxonomy",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://static.openfoodfacts.org/data/taxonomies/allergens.json",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 10168,
+  "bodyFile": "../raw/n05-off-allergens-taxonomy.json",
+  "sha256": "5f3b2baadc84b35cb0183adca727fa34ea374e254bdbb715d020c59f9952a933"
+}

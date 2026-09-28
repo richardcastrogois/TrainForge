@@ -1,0 +1,21 @@
+{
+  "id": "n06-foto-off-nectar",
+  "url": "https://images.openfoodfacts.org/images/products/560/115/196/4804/front_pt.5.400.jpg",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:52:45.254632+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem front pt; sem distribuir no Git",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://images.openfoodfacts.org/images/products/560/115/196/4804/front_pt.5.400.jpg",
+  "contentType": "image/jpeg",
+  "retryAfter": null,
+  "bytes": 19073,
+  "bodyFile": "../raw/n06-foto-off-nectar.jpg",
+  "sha256": "1796922f841a7fccd89a9bfd2a8b865449edab49acaa9d225ba72de62caec1df"
+}

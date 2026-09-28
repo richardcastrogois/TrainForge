@@ -1,0 +1,18 @@
+{
+    "id":  "off-schema-changelog",
+    "url":  "https://openfoodfacts.github.io/openfoodfacts-server/api/ref-api-and-product-schema-change-log/",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:33:50.0874416Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  60272,
+    "bodyFile":  "../raw/off-schema-changelog.html",
+    "sha256":  "a5ffadbfc4f7b77596f21126ffcf42c280a5e9ec838b09978f170708d0728041",
+    "contentType":  "text/html; charset=utf-8",
+    "retryAfter":  ""
+}

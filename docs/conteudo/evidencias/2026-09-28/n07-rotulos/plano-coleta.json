@@ -1,0 +1,30 @@
+{
+  "niche": "N07",
+  "scope": "Guias institucionais humanos para ensino de rotulos, nao dietas individuais ou motor juridico completo",
+  "requests": [
+    {
+      "id": "n07-eu-nutricao",
+      "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+      "purpose": "Base de 100 g/ml e opcao de porcao; nao extrair politica futura de secoes historicas de 2020",
+      "extension": "html"
+    },
+    {
+      "id": "n07-eu-declaracao",
+      "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/nutrition-declaration/index_en.htm",
+      "purpose": "Tabela nutricional, unidades e apresentacao",
+      "extension": "html"
+    },
+    {
+      "id": "n07-eu-rotulagem",
+      "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/labelling-rules/index_en.htm",
+      "purpose": "Ingredientes, alergénios, quantidade liquida e informacoes da embalagem",
+      "extension": "html"
+    },
+    {
+      "id": "n07-efsa-datas",
+      "url": "https://www.efsa.europa.eu/en/safe2eat/food-date-labelling",
+      "purpose": "Distinguir data de seguranca e de qualidade; guardar contexto de armazenamento",
+      "extension": "html"
+    }
+  ]
+}

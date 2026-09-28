@@ -1,0 +1,352 @@
+{
+  "sourceId": "AL02",
+  "attribution": "Open Food Facts and contributors",
+  "databaseLicense": "ODbL-1.0",
+  "individualContentsLicense": "DbCL-1.0",
+  "scope": "Convenience sample, not Portuguese market coverage",
+  "records": [
+    {
+      "sourceEvidence": "n04-continente-final.evidencia.json",
+      "sourcePath": "products[code=5601312070320]",
+      "observed": {
+        "brands": "Continente, Continente Equilíbrio, SONAE",
+        "brands_tags": [
+          "continente",
+          "continente-equilibrio",
+          "SONAE"
+        ],
+        "categories_tags": [
+          "en:plant-based-foods-and-beverages",
+          "en:plant-based-foods",
+          "en:cereals-and-potatoes",
+          "en:cereals-and-their-products",
+          "en:puffed-cereal-cakes",
+          "en:puffed-corn-cakes"
+        ],
+        "code": "5601312070320",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1774948285,
+        "product_name": "Tortitas de Milho",
+        "product_name_pt": "Tortitas de Milho",
+        "quantity": "130 g"
+      }
+    },
+    {
+      "sourceEvidence": "n04-continente-final.evidencia.json",
+      "sourcePath": "products[code=5601312108849]",
+      "observed": {
+        "brands": "Continente",
+        "brands_tags": [
+          "continente"
+        ],
+        "categories_tags": [
+          "en:plant-based-foods-and-beverages",
+          "en:plant-based-foods",
+          "en:cereals-and-potatoes",
+          "en:cereals-and-their-products",
+          "en:breads",
+          "en:toasts"
+        ],
+        "code": "5601312108849",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1789494275,
+        "product_name": "Marinheiras Chia",
+        "product_name_pt": "Marinheiras Chia",
+        "quantity": "180 g"
+      }
+    },
+    {
+      "sourceEvidence": "n04-continente-final.evidencia.json",
+      "sourcePath": "products[code=5601312079293]",
+      "observed": {
+        "brands": "Continente",
+        "brands_tags": [
+          "continente"
+        ],
+        "categories_tags": [
+          "en:plant-based-foods-and-beverages",
+          "en:plant-based-foods",
+          "en:breakfasts",
+          "en:cereals-and-potatoes",
+          "en:cereals-and-their-products",
+          "en:breakfast-cereals"
+        ],
+        "code": "5601312079293",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1788364006,
+        "product_name": "Flocos de Aveia Integral Finos",
+        "product_name_pt": "Flocos de Aveia Integral Finos",
+        "quantity": "1Kg"
+      }
+    },
+    {
+      "sourceEvidence": "n04-mimosa-final.evidencia.json",
+      "sourcePath": "products[code=5601049612336]",
+      "observed": {
+        "brands": "Mimosa",
+        "brands_tags": [
+          "mimosa"
+        ],
+        "categories_tags": [
+          "en:dairies",
+          "en:spreads",
+          "en:fats",
+          "en:spreadable-fats",
+          "en:animal-fats",
+          "en:dairy-spreads",
+          "en:milkfat",
+          "en:butters",
+          "en:salted-butters"
+        ],
+        "code": "5601049612336",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1774947316,
+        "product_name": "Manteiga Tradicional Com Sal",
+        "product_name_pt": "Manteiga Tradicional Com Sal",
+        "quantity": "250 g"
+      }
+    },
+    {
+      "sourceEvidence": "n04-mimosa-final.evidencia.json",
+      "sourcePath": "products[code=5601049132995]",
+      "observed": {
+        "brands": "Mimosa",
+        "brands_tags": [
+          "mimosa"
+        ],
+        "categories_tags": [
+          "en:dairies",
+          "en:milks-liquid-and-powder",
+          "en:milks",
+          "en:homogenized-milks",
+          "en:pasteurised-products",
+          "en:semi-skimmed-milks",
+          "en:uht-milks"
+        ],
+        "code": "5601049132995",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1789481148,
+        "product_name": "Leite Meio-Gordo",
+        "product_name_pt": "Leite Meio-Gordo",
+        "quantity": "1 l"
+      }
+    },
+    {
+      "sourceEvidence": "n04-mimosa-final.evidencia.json",
+      "sourcePath": "products[code=5603722505607]",
+      "observed": {
+        "brands": "Mimosa",
+        "brands_tags": [
+          "mimosa"
+        ],
+        "categories_tags": [
+          "en:dairies",
+          "en:milks-liquid-and-powder",
+          "en:milks",
+          "en:homogenized-milks",
+          "en:pasteurised-products",
+          "en:semi-skimmed-milks",
+          "en:uht-milks",
+          "en:lactose-free-milk"
+        ],
+        "code": "5603722505607",
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "lang": "pt",
+        "last_modified_t": 1774946725,
+        "product_name": "Leite Sem Lactose Meio-Gordo",
+        "product_name_pt": "Leite Sem Lactose Meio-Gordo",
+        "quantity": "1 l"
+      }
+    },
+    {
+      "sourceEvidence": "n04-compal-searchalicious.evidencia.json",
+      "sourcePath": "hits[code=5601151973592]",
+      "observed": {
+        "code": "5601151973592",
+        "brands": [
+          "Compal"
+        ],
+        "brands_tags": [
+          "compal"
+        ],
+        "lang": "fr",
+        "categories_tags": [
+          "en:plant-based-foods-and-beverages",
+          "en:beverages",
+          "en:plant-based-beverages",
+          "en:fruit-based-beverages",
+          "en:juices-and-nectars",
+          "en:fruit-juices"
+        ],
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "last_modified_t": 1612390916,
+        "product_name": "Vital equilibrio tangerino agua de coco"
+      }
+    },
+    {
+      "sourceEvidence": "n04-compal-searchalicious.evidencia.json",
+      "sourcePath": "hits[code=5601151122204]",
+      "observed": {
+        "code": "5601151122204",
+        "brands": [
+          "Compal"
+        ],
+        "brands_tags": [
+          "compal"
+        ],
+        "lang": "pt",
+        "categories_tags": [
+          "en:plant-based-foods-and-beverages",
+          "en:beverages",
+          "en:plant-based-beverages",
+          "en:fruit-based-beverages",
+          "en:juices-and-nectars",
+          "en:fruit-nectars"
+        ],
+        "countries_tags": [
+          "en:france",
+          "en:portugal"
+        ],
+        "last_modified_t": 1611052816,
+        "product_name": "Compal Clássico Néctar Laranja"
+      }
+    },
+    {
+      "sourceEvidence": "n04-compal-searchalicious.evidencia.json",
+      "sourcePath": "hits[code=5601151964804]",
+      "observed": {
+        "code": "5601151964804",
+        "brands": [
+          "Compal"
+        ],
+        "brands_tags": [
+          "compal"
+        ],
+        "lang": "pt",
+        "quantity": "30 cl",
+        "categories_tags": [
+          "en:beverages-and-beverages-preparations",
+          "en:plant-based-foods-and-beverages",
+          "en:beverages",
+          "en:plant-based-beverages",
+          "en:juices-and-nectars"
+        ],
+        "countries_tags": [
+          "en:portugal"
+        ],
+        "last_modified_t": 1712929968,
+        "product_name": "Clássico Pêssego Néctar"
+      }
+    }
+  ],
+  "directProduct": {
+    "sourceEvidence": "n04-compal-product.evidencia.json",
+    "observed": {
+      "brands": "Compal",
+      "brands_tags": [
+        "xx:compal"
+      ],
+      "categories_tags": [
+        "en:beverages-and-beverages-preparations",
+        "en:plant-based-foods-and-beverages",
+        "en:beverages",
+        "en:plant-based-beverages",
+        "en:juices-and-nectars"
+      ],
+      "code": "5601151964804",
+      "countries_tags": [
+        "en:portugal"
+      ],
+      "lang": "pt",
+      "last_modified_t": 1774951185,
+      "product_name": "Clássico Pêssego Néctar",
+      "product_name_pt": "Clássico Pêssego Néctar",
+      "quantity": "30 cl",
+      "schema_version": 1004,
+      "tags_sources": {
+        "brands": {
+          "packaging": {
+            "last_updated_t": 1774951185,
+            "tags": [
+              "xx:Compal"
+            ]
+          }
+        },
+        "categories": {
+          "packaging": {
+            "last_updated_t": 1774951185,
+            "tags": [
+              "en:juices-and-nectars"
+            ]
+          }
+        },
+        "countries": {
+          "packaging": {
+            "last_updated_t": 1774951185,
+            "tags": [
+              "en:portugal"
+            ]
+          }
+        },
+        "purchase_places": {
+          "packaging": {
+            "last_updated_t": 1774951185,
+            "tags": [
+              "Portugal"
+            ]
+          }
+        },
+        "traces": {
+          "packaging": {
+            "last_updated_t": 1774951185,
+            "tags": [
+              "en:none"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "strata": [
+    {
+      "brand": "continente",
+      "sampleSize": 3,
+      "providerReportedMatchingCount": 2357,
+      "responseItemsKey": "products",
+      "representativeMarketSample": false
+    },
+    {
+      "brand": "mimosa",
+      "sampleSize": 3,
+      "providerReportedMatchingCount": 177,
+      "responseItemsKey": "products",
+      "representativeMarketSample": false
+    },
+    {
+      "brand": "compal",
+      "sampleSize": 3,
+      "providerReportedMatchingCount": 96,
+      "responseItemsKey": "hits",
+      "representativeMarketSample": false
+    }
+  ]
+}

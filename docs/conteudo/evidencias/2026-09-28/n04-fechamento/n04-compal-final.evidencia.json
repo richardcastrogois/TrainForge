@@ -1,0 +1,22 @@
+{
+  "id": "n04-compal-final",
+  "url": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=compal&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T18:21:08.027686+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 503,
+  "use": "research_only",
+  "purpose": "One smaller unsorted query for previously unavailable brand compal",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://world.openfoodfacts.org/api/v2/search?countries_tags=en%3Aportugal&brands_tags=compal&page_size=3&fields=code,product_name,product_name_pt,brands,brands_tags,countries_tags,categories_tags,quantity,lang,last_modified_t",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 25281,
+  "bodyFile": "../raw/n04-compal-final.json",
+  "sha256": "fa13f8614fb6b695b3de3ac03227804dfc6ab25b6fee4ca3eced0c5c79c63c1b",
+  "error": "HTTP 503"
+}

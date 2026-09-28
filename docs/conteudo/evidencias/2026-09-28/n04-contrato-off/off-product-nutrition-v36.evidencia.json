@@ -1,0 +1,18 @@
+{
+    "id":  "off-product-nutrition-v36",
+    "url":  "https://world.openfoodfacts.org/api/v3.6/product/5449000054227?fields=code%2Cproduct_name%2Cbrands%2Ccountries_tags%2Cnutrition%2Cnutriments%2Cschema_version%2Cquantity%2Cproduct_quantity%2Cproduct_quantity_unit%2Cserving_quantity%2Cserving_quantity_unit%2Cno_nutrition_data",
+    "method":  "GET",
+    "collectedAtUtc":  "2026-09-28T11:33:50.4423768Z",
+    "requestHeaders":  {
+                           "Accept":  "application/json,text/html",
+                           "User-Agent":  "TrainForgeResearch/0.7 (+https://github.com/richardcastrogois/TrainForge; N04 research)"
+                       },
+    "client":  "HttpClient; default TLS validation; 25 s timeout; 1 MiB response buffer limit",
+    "status":  200,
+    "use":  "research_only",
+    "bytes":  4612,
+    "bodyFile":  "../raw/off-product-nutrition-v36.json",
+    "sha256":  "e0f888a0a6335a21d4208a2829b84ba37f26066ab9a40bdc9af53b1c62046b91",
+    "contentType":  "application/json; charset=utf-8",
+    "retryAfter":  ""
+}

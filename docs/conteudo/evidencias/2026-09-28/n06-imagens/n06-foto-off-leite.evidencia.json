@@ -1,0 +1,21 @@
+{
+  "id": "n06-foto-off-leite",
+  "url": "https://images.openfoodfacts.org/images/products/560/104/913/2995/front_pt.85.400.jpg",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-28T22:52:44.025926+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fixture de pesquisa: validar disponibilidade, formato e correspondencia visual da imagem front pt; sem distribuir no Git",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://images.openfoodfacts.org/images/products/560/104/913/2995/front_pt.85.400.jpg",
+  "contentType": "image/jpeg",
+  "retryAfter": null,
+  "bytes": 13729,
+  "bodyFile": "../raw/n06-foto-off-leite.jpg",
+  "sha256": "474cbf561f168d7fa874b84c369112edbef04458e0f4cbfefc25dd0066b98fd1"
+}
