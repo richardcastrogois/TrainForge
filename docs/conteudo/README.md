@@ -1,8 +1,8 @@
 # Base de conteúdo do TrainForge
 
-**Estado atual — 28/09:** N01–N07 concluídos para pesquisa nos recortes documentados. N06: três produtos OFF, sete ficheiros Commons, oito imagens inspecionadas, 22 chamadas preservadas/200/hashes e 23 verificações. N07: cinco guias institucionais, 12 lições, dois exemplos visuais próprios e 31 verificações; duas falhas TLS preservadas. Índice acumulado: 106 chamadas / 78 HTTP 200 / 72 hashes; catálogo: 50 fontes/famílias. Próximo: **N08 — receitas humanas**, não iniciado. Etapa 01 continua aberta; pesquisa não aprova catálogo integral, integração ou publicação. Retomar pelos resumos `docs/conteudo/evidencias/2026-09-28/n06-imagens/resumo-imagens.json` e `docs/conteudo/evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json`; versão deste fechamento identificada no histórico Git.
+**Estado atual — 30/09:** N01–N10 concluídos para pesquisa nos recortes documentados; etapa 01 permanece aberta. N08: oito receitas distintas; N09: cinco guias, 14 exemplos de refeições e seis batidos; N10: quatro guias, oito rascunhos de lições e diário demonstrativo de 13 itens. Verificações: 61 / 59 / 49. Índice acumulado: 147 chamadas / 114 HTTP 200 / 113 hashes; catálogo: 61 fontes/famílias. **Correção: PR06 (Couch to 5K) agora é condicional**, pois os termos específicos Better Health não permitem presumir importação comercial pela OGL geral. Próximo da fila: N11; não iniciado. Retomar pelo dossiê e resumos, sem repetir coletas. Pesquisa não homologa publicação, integração ou adequação individual.
 
-**Foco por decisão do autor:** continuar a etapa 01 em [46 nichos](../planejamento/etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um de cada vez. N01: identidades; N02: composição; N03: quantidades/porções; N04: produtos por marca/código; N05: ingredientes/alergénios/proveniência; N06: fotografias e direitos; N07: leitura de rótulos. [Retornos, chamadas e limites](evidencias-para-integracao.md). N08 é o próximo. Integração/publicação continuam pendentes.
+**Foco por decisão do autor:** continuar a etapa 01 em [46 nichos](../planejamento/etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um de cada vez. N01: identidades; N02: composição; N03: quantidades/porções; N04: produtos por marca/código; N05: ingredientes/alergénios/proveniência; N06: fotografias e direitos; N07: leitura de rótulos. [Retornos, chamadas e limites](evidencias-para-integracao.md). N08/N09/N10 concluídos para pesquisa; N11 é o próximo da fila. Integração/publicação continuam pendentes.
 
 **Para implementar a partir das evidências:** [retornos, origens e chamadas observadas](evidencias-para-integracao.md). O documento distingue corpo original, envelope do coletor e campos normalizados; liga os exemplos aos arquivos/hashes. O [índice de chamadas](evidencias/retornos-observados.json) permite recuperar a evidência sem consultar novamente os fornecedores.
 
@@ -27,7 +27,7 @@ A recomendação agora é avaliar uma **base própria, selecionada e versionada*
 | Alimentos genéricos | **Ciqual como candidato europeu prioritário**, USDA/CoFID como complementos; comparar antes de escolher | Cobertura e correspondências portuguesas precisam de teste; não juntar bases indiscriminadamente |
 | Alimentos portugueses | PortFIR como prioridade de autorização e adequação local | Licença comercial de incorporação ainda não confirmada |
 | Produtos embalados | Open Food Facts, condicionado à amostra portuguesa e cumprimento da ODbL | N04 fechado com 24 produtos e quatro marcas; N05 com cinco perfis e 66 verificações. Cobertura ampla, revisão de rótulos e integração ainda pendentes |
-| Receitas | Pequeno lote textual NHLBI condicionado à política de adaptação; DGS/PNPAS como referência e possível acordo | Fotos, tradução, publicidade e revisão culinária/nutricional precisam de tratamento próprio |
+| Receitas | N08: oito receitas distintas; MedlinePlus candidato textual, NHLBI condicional; Healthier Families exige licença comercial | Fotos, tradução, publicidade, porções e revisão nutricional precisam de tratamento próprio |
 | Educação e hábitos | Textos elegíveis NIA/NHS; revisão apoiada em ACSM, DGS, OMS e EFSA | Separar permissão para reutilizar texto de validade da recomendação para cada população |
 | Corrida, caminhada e outras atividades | Compêndio 2024 para valores de referência e classificação | Não transformar estimativa de gasto em medição individual ou autorização de treino |
 
@@ -45,11 +45,12 @@ Para agentes: consultar [fontes.json](fontes.json) por ID/tema em vez de reler t
 
 ## O que já existe nesta base
 
-- Catálogo estruturado de **46 fontes/famílias** em 28/09: 11 candidatos, 10 condicionais, 8 incompatíveis com o caminho gratuito comercial e 17 referências; com instituição/autoria, data, acesso, licença, limites, evidência e próximo passo. Eram 43 em 23/09 e 45 em 26/09. São fontes; a fila de 46 nichos é outro inventário.
-- Programa de corrida estruturado como pesquisa (27 sessões) e rotina introdutória de força (sete movimentos), sem publicação aprovada. Programa geral completo de academia continua em falta.
+- Catálogo estruturado de **61 fontes/famílias** em 30/09: 15 candidatos, 12 condicionais, 10 incompatíveis com o caminho gratuito comercial e 24 referências. Contém instituição, data, acesso, licença, limites, evidência e próximo passo. São fontes; a fila de 46 nichos é outro inventário.
+- Programa de corrida estruturado como pesquisa (27 sessões) e rotina introdutória de força (sete movimentos), sem publicação aprovada. PR06 agora tem direitos condicionais por termos Better Health; programa geral completo de academia continua em falta.
 - Dados CoFID 2021 e Ciqual 2025 preservados para avaliação; 27 e 29 registros selecionados por regras explícitas. São amostras, não um seed de produção aprovado.
 - Amostra wger ampliada de 25 para 75 exercícios únicos, incluindo um problema semântico concreto.
 - Vinte registros originais do Compêndio, distribuídos por cinco categorias; códigos e valores preservados.
+- N08–N10: receitas e guias para ganhar/perder peso, exemplos com origem e políticas específicas; sem prescrição individual ou lote comercial aprovado.
 - Matriz de conteúdo, critérios de aceite, bateria de avaliação portuguesa e processo editorial proposto.
 
 Não há nesta entrega traduções profissionais aprovadas, contratos assinados, vídeos licenciados para todo o catálogo, prescrição clínica, catálogo de receitas homologado ou autores parceiros contratados. Essa distinção evita apresentar pesquisa como conteúdo publicado.

@@ -1,0 +1,24 @@
+{
+  "niche": "N08",
+  "scope": "Alternativa de receitas com politica explicita para a secao, mantendo imagens separadas",
+  "requests": [
+    {
+      "id": "n08-medline-direitos",
+      "url": "https://medlineplus.gov/about/using/usingcontent/",
+      "purpose": "Politica que inclui explicitamente Healthy recipes em conteudo de dominio publico",
+      "extension": "html"
+    },
+    {
+      "id": "n08-medline-lentilhas",
+      "url": "https://medlineplus.gov/recipes/lentil-confetti-salad/",
+      "purpose": "Receita e credito humano, ingredientes, rendimento, instrucoes, nutrientes e eventuais excecoes",
+      "extension": "html"
+    },
+    {
+      "id": "n08-medline-catalogo",
+      "url": "https://medlineplus.gov/recipes/",
+      "purpose": "Colecao de receitas e categorias; sem importar todas",
+      "extension": "html"
+    }
+  ]
+}

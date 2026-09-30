@@ -1,0 +1,21 @@
+{
+  "id": "n09-va-direitos",
+  "url": "https://department.va.gov/copyright-policy/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:03:52.006767+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica de conteudo publico, autoria federal e excecoes",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://department.va.gov/copyright-policy/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1144847,
+  "bodyFile": "../raw/n09-va-direitos.html",
+  "sha256": "9fdfecce26fb96c3f4448883cd89711e13cb91e5b21b397cad3ded30545d604e"
+}

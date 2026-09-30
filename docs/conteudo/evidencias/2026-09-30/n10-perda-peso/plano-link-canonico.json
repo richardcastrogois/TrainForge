@@ -1,0 +1,12 @@
+{
+  "niche": "N10",
+  "scope": "Corrigir apenas URL obtida no link primario; preservar o 404 original",
+  "requests": [
+    {
+      "id": "n10-niddk-porcoes-canonico",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+      "purpose": "Link real observado no guia NIDDK de selecao de programas e conferido via web; ensino de porcoes",
+      "extension": "html"
+    }
+  ]
+}

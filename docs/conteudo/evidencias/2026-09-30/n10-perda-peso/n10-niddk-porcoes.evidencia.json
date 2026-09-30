@@ -1,0 +1,22 @@
+{
+  "id": "n10-niddk-porcoes",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/food-portions",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:04.684392+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Ensino pratico da diferenca entre porcao da fonte e quantidade consumida",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/food-portions",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 29064,
+  "bodyFile": "../raw/n10-niddk-porcoes.html",
+  "sha256": "de134233c4049e79802ec000d529e9ecf0381c7987ae840901370d7eac16972f",
+  "error": "HTTP 404"
+}

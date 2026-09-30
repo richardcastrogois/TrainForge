@@ -2,6 +2,33 @@
 
 Data: 17/09/2026. Proposta; a aprovação de uma etapa não aprova automaticamente decisões das próximas. O foco imediato continua sendo definir o produto e o Figma, não programar o aplicativo.
 
+## Check-in N10 — 30/09/2026
+
+- [x] Obter quatro guias humanos, oito rascunhos editoriais e exemplos de porção/diário; separar orientação geral de meta e dieta individual.
+- [x] Preservar 10 chamadas / nove HTTP 200 / um 404; conferir dez hashes e quatro evidências anteriores. **49 verificações**; tabela de 13 itens soma 2.916 kcal como exemplo, não meta. [Resumo](../conteudo/evidencias/2026-09-30/n10-perda-peso/resumo-perda-peso.json).
+- [x] Conferir políticas específicas: NIDDK/NHS geral candidatos, CDC condicional para adaptação, Better Health sem licença comercial gratuita demonstrada.
+- [x] Corrigir PR06 no catálogo, gerador e piloto derivado: OGL geral não basta perante termos específicos Better Health. Preservar os dados técnicos e as evidências originais.
+- [x] Atualizar índices: 147 chamadas / 114 HTTP 200 / 113 hashes; 61 fontes/famílias. N01–N10 concluídos nos recortes de pesquisa. Graphify: **0 alterados, 42 inalterados, 0 removidos**; saídas preservadas.
+- [x] Revisão final: 15 documentos sem erros/links locais quebrados; JSON e sintaxe dos cinco scripts válidos; vínculos de fontes/guias resolvidos e `git diff --check` sem problemas. 61/59/49 verificações reproduzidas sem rede. Avisos heurísticos de placeholder correspondem a palavras portuguesas/registros históricos, não campos novos por preencher. A apresentação `C:/dev/TrainForge/apresentacao-senas` está fora do repositório e foi preservada.
+- [ ] Publicação, revisão profissional pt-PT, metas e programas completos continuam pendentes. N11 é o próximo da fila; etapa 01 permanece aberta.
+
+## Check-in N09 — 30/09/2026
+
+- [x] Conferir cinco guias de NHS, VA, BDA/ICUsteps e NICE; distinguir ganho geral, recuperação clínica e hipertrofia.
+- [x] Preservar 10 chamadas (oito HTTP 200, dois 406), verificar 10 hashes e reutilizar três políticas já guardadas; 59 verificações locais. [Resumo](../conteudo/evidencias/2026-09-30/n09-ganho-peso/resumo-ganho-peso.json).
+- [x] Inspecionar as quatro páginas PDF; mapear 14 exemplos com valores da fonte, seis batidos sem nutrientes e nove lições editoriais ainda não aprovadas.
+- [x] Registrar o ajuste de negociação HTTP para PDF: `Accept: application/pdf`; não repetir os 406 originais nem tratar o HTML de erro como PDF.
+- [x] Atualizar índice: 137 chamadas / 105 HTTP 200 / 103 hashes; catálogo: 57 fontes/famílias. Graphify incremental: **0 alterados, 42 inalterados, 0 removidos**; saídas preservadas.
+- [ ] Tradução/revisão pt-PT, equivalência das porções, metas individuais, conteúdo de lançamento e integração continuam pendentes. N10 é o próximo autorizado; etapa 01 aberta.
+
+## Check-in N08 — 29/09/2026
+
+- [x] Conferir oito receitas humanas distintas em nove páginas, ingredientes/quantidades, passos, rendimento, nutrientes presentes/ausentes e políticas específicas.
+- [x] Preservar 21 chamadas, 19 HTTP 200 e dois 403; verificar 21 hashes e passar 61 verificações locais. [Resumo](../conteudo/evidencias/2026-09-29/n08-receitas/resumo-receitas.json).
+- [x] Identificar MedlinePlus como candidato textual e impedir aplicação indevida da licença geral NHS às receitas da campanha; texto, adaptação e mídia separados.
+- [x] Graphify incremental: 0 alterados, 42 inalterados, 0 removidos. Índice: 127 chamadas / 97 HTTP 200 / 93 hashes; catálogo: 53 fontes/famílias.
+- [ ] Lote comercial, tradução/revisão nutricional pt-PT, fotografias, integração e dietas não homologados. N09 é o próximo; etapa 01 permanece aberta.
+
 ## Check-in N07 — 28/09/2026
 
 - [x] Obter cinco guias institucionais com corpo/hash; duas falhas TLS preservadas sem desativar validação de certificados.
@@ -45,7 +72,7 @@ Os check-ins N04–N06 abaixo preservam o estado de cada entrega. A fila atual e
 Atualizado em 28/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
 
 - [x] **Etapa 0 — Base confiável:** inventário/preservação em 22/09; alinhamento documental R01–R18 em 24/09. [Evidência e limites](etapa-00-base.md). Nova conferência visual fica para a próxima intervenção no Figma.
-- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** N01–N07 concluídos para pesquisa até 28/09. Próximo: **N08 — receitas humanas**, na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Permanecem programas completos, alimentação guiada, revisão pt-PT e escopo de lançamento. Não avançar automaticamente para etapa 02.
+- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** N01–N08 concluídos para pesquisa até 29/09. Próximo: **N09 — alimentação para ganhar peso**, na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Permanecem programas completos, alimentação guiada, revisão pt-PT e escopo de lançamento. Não avançar automaticamente para etapa 02.
 - [ ] Etapa 2 — Fluxos e conteúdo.
 - [ ] Etapa 3 — Sistema visual.
 - [ ] Etapa 4 — Protótipo completo.
@@ -188,8 +215,8 @@ O [diagnóstico](../diagnostico.md) identifica logs sensíveis, refresh/logout i
 ## Próximas cinco ações
 
 1. Autor revisar [visão central](README.md), [pitch](pitch-e-decisoes.md) e balanço da etapa 01, sem presumir lançamento só de musculação.
-2. Iniciar **N08 — receitas humanas**: ingredientes e quantidades, rendimento, passos, fonte/autoria, nutrientes quando demonstrados e direitos de reutilização/adaptação. Reaproveitar evidências anteriores antes de nova coleta.
-3. Seguir a [fila N08–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: receitas, alimentação por objetivos, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
+2. Próximo foco **N11 — manutenção, hábitos e qualidade alimentar**, após a entrega N08–N10. Manter as pendências de lançamento e a correção de licença PR06 visíveis.
+3. Seguir a [fila N11–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: receitas, alimentação por objetivos, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
 4. Consolidar capacidade → fonte/método → prova → limite → alternativa; escolher explicitamente lançamento e expansões. Encerrar etapa 01 apenas após os critérios.
 5. Retomar Figma Desktop comparando a base viva, aplicar F01–F12 em incrementos e seguir contratos/modelo conceitual, banco e implementação.
 

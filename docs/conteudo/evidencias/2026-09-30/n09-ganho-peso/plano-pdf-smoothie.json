@@ -1,0 +1,13 @@
+{
+  "niche": "N09",
+  "scope": "Gate PDF passou (200 e assinatura PDF). Aplicar Accept adequado ao segundo documento, sem retries.",
+  "requests": [
+    {
+      "id": "n09-va-smoothie-pdf",
+      "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+      "purpose": "Modelo humano de montagem por grupos com exemplos; verificar rendimento/nutrientes ausentes",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

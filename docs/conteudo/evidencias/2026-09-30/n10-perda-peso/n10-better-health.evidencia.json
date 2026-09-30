@@ -1,0 +1,21 @@
+{
+  "id": "n10-better-health",
+  "url": "https://www.nhs.uk/better-health/lose-weight/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:05.005587+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar oferta de 12 semanas sem presumir licenca de importacao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/better-health/lose-weight/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 64499,
+  "bodyFile": "../raw/n10-better-health.html",
+  "sha256": "fc5d9dc177dc91cd5fd510c4a3aea1daa242d8f68fe6daa790e3beee6b1209d0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhlbi-catalogo",
+  "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:05.173494+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Catalogo: campos, total e links; sem coleta integral",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 76725,
+  "bodyFile": "../raw/n08-nhlbi-catalogo.html",
+  "sha256": "99dc2820e5166221a22dbca9075c14c1b0c65db8a49b85e3e8c7e7c7ffbee050"
+}

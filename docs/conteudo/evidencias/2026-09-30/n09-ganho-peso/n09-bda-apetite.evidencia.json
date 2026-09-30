@@ -1,0 +1,21 @@
+{
+  "id": "n09-bda-apetite",
+  "url": "https://www.bda.uk.com/resource/dont-feel-hungry-feel-full-when-eating.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:02:28.556854+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Contexto clinico de recuperacao apos doenca critica; nao generalizar para hipertrofia",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.bda.uk.com/resource/dont-feel-hungry-feel-full-when-eating.html",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 136628,
+  "bodyFile": "../raw/n09-bda-apetite.html",
+  "sha256": "d31976ab3f789f4702716bed666f6cb237562d155280f2707988650d2b3658ca"
+}

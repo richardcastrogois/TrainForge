@@ -1,5 +1,7 @@
 # Programas prontos e cenários clínicos
 
+**Correção de direitos — 30/09/2026:** PR06 (Couch to 5K) passa a condicional após conferir os termos específicos Better Health ligados no HTML original. As 27 sessões continuam verificadas tecnicamente, mas a OGL geral não basta para aprovar importação comercial. [Evidência e limites atuais](evidencias-para-integracao.md#n10--alimentação-para-perder-peso). Os registros anteriores abaixo são históricos.
+
 **Atualização de 26/09/2026:** o [piloto de corrida NHS](evidencias/2026-09-26/corrida-piloto.json) já contém 27 sessões conferidas contra HTML/PDF; a [rotina de força](evidencias/2026-09-26/forca-piloto.json) contém sete movimentos/20 passos na fonte, sem periodização completa. Não há indicação clínica automática nem publicação homologada. CDC/Tufts trouxe conflito de direitos (PR11); Competitive Edge permanece referência supervisionada sem programa integral obtido (PR12). [Balanço atual e decisão de sequência](../planejamento/etapa-01-pesquisa.md). O restante preserva a análise datada de 23/09.
 
 **Enquadramento de 24/09/2026:** esta análise cobre uma dimensão do [produto integrado](../planejamento/README.md), não sua identidade principal. Programas gerais de múltiplas modalidades, alimentação e didática também precisam de pesquisa. Joelho/coluna eram exemplos, não limites da cobertura desejada.

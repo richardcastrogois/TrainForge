@@ -1,0 +1,18 @@
+{
+  "niche": "N08",
+  "scope": "Conferir os termos especificos antes de atribuir OGL ao subsite",
+  "requests": [
+    {
+      "id": "n08-nhs-excecoes",
+      "url": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+      "purpose": "Exclusoes de subsite e imagens; licenca geral nao e suficiente",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhs-campanha-termos",
+      "url": "https://www.nhs.uk/healthier-families/terms-and-conditions/",
+      "purpose": "Termos vinculados no rodape das receitas; prevalecem para campanha",
+      "extension": "html"
+    }
+  ]
+}

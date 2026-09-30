@@ -1,0 +1,262 @@
+{
+  "niche": "N09",
+  "date": "2026-09-30",
+  "researchStatus": "concluido_no_recorte",
+  "guides": 5,
+  "lessons": 9,
+  "mealExamples": 14,
+  "smoothieExamples": 6,
+  "calls": 10,
+  "http200": 8,
+  "bodyHashesVerified": 10,
+  "reusedPolicyHashes": 3,
+  "checksPassed": 59,
+  "checks": [
+    {
+      "check": "n09-bda-apetite: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-bda-direitos: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-nhs-ganho: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-nice-refeeding: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-calorias-pdf: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-calorias: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-direitos: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-ganho: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-smoothie-pdf: hash",
+      "passed": true
+    },
+    {
+      "check": "n09-va-smoothie: hash",
+      "passed": true
+    },
+    {
+      "check": "HTTP failures retained separately",
+      "passed": true
+    },
+    {
+      "check": "n09-va-calorias: 406 explained by MIME negotiation",
+      "passed": true
+    },
+    {
+      "check": "n09-va-calorias-pdf: corrected Accept and PDF signature",
+      "passed": true
+    },
+    {
+      "check": "n09-va-smoothie: 406 explained by MIME negotiation",
+      "passed": true
+    },
+    {
+      "check": "n09-va-smoothie-pdf: corrected Accept and PDF signature",
+      "passed": true
+    },
+    {
+      "check": "NHS: adult reference range",
+      "passed": true
+    },
+    {
+      "check": "NHS: unexpected loss needs GP",
+      "passed": true
+    },
+    {
+      "check": "NHS: no sugar-only strategy",
+      "passed": true
+    },
+    {
+      "check": "BDA: critical illness audience",
+      "passed": true
+    },
+    {
+      "check": "BDA: clinical conditions need advice",
+      "passed": true
+    },
+    {
+      "check": "NICE: skilled care for refeeding risk",
+      "passed": true
+    },
+    {
+      "check": "VA: four pages preserved",
+      "passed": true
+    },
+    {
+      "check": "VA: dated July 2026",
+      "passed": true
+    },
+    {
+      "check": "VA: individual calorie/protein fields left blank",
+      "passed": true
+    },
+    {
+      "check": "VA: 14 meal examples, not daily plans",
+      "passed": true
+    },
+    {
+      "check": "VA table row 1: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 2: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 3: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 4: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 5: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 6: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 7: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 8: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 9: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 10: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 11: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 12: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 13: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "VA table row 14: kcal and protein visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "Smoothie: six named examples",
+      "passed": true
+    },
+    {
+      "check": "Smoothie: no energy table promised",
+      "passed": true
+    },
+    {
+      "check": "Smoothie: optional commercial nutrition product is not mandatory",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-termos: hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-excecoes: hash",
+      "passed": true
+    },
+    {
+      "check": "n08-ogl-v3: hash",
+      "passed": true
+    },
+    {
+      "check": "NHS: translation is an adaptation",
+      "passed": true
+    },
+    {
+      "check": "NHS: adaptations lose automatic clinical approval",
+      "passed": true
+    },
+    {
+      "check": "BDA: no commercial redistribution permission",
+      "passed": true
+    },
+    {
+      "check": "VA: federal authorship condition retained",
+      "passed": true
+    },
+    {
+      "check": "adult_general: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "muscle_gain: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "unexpected_loss: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "post_critical_illness: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "minimal_intake: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "minor: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "pregnancy: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "unknown: never silently prescribe",
+      "passed": true
+    },
+    {
+      "check": "Guide identity and lesson references resolved",
+      "passed": true
+    },
+    {
+      "check": "No guide generates individual target",
+      "passed": true
+    }
+  ],
+  "pdfPagesVisuallyInspected": 4,
+  "releaseApproved": false,
+  "remaining": [
+    "Traducao/revisao profissional pt-PT e localizacao de servicos",
+    "Metas individuais e grupos clinicos nao validados",
+    "Valores VA nao conferidos por ingredientes/marcas; nao usar como tabela universal",
+    "Sem plano alimentar completo ou regras de hipertrofia; N12/N13",
+    "Sem Figma, integracao, dados pessoais ou banco alterados"
+  ],
+  "next": "N10"
+}

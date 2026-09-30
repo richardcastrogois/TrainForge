@@ -1,0 +1,21 @@
+{
+  "id": "n09-nhs-ganho",
+  "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:02:25.998447+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia geral de ganho de peso em adultos; publico, exemplos, encaminhamentos e limites",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 32218,
+  "bodyFile": "../raw/n09-nhs-ganho.html",
+  "sha256": "49eb58941b685f2740660909b44c5aa53903937357a33edc5f1ddaf321cd777f"
+}

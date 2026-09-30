@@ -1,5 +1,7 @@
 # Amostras e achados da pesquisa ampliada
 
+**Correção de direitos — 30/09/2026:** PR06 (Couch to 5K) passa a condicional após conferir os termos específicos Better Health ligados no HTML original. As 27 sessões continuam verificadas tecnicamente, mas a OGL geral não basta para aprovar importação comercial. [Evidência e limites atuais](evidencias-para-integracao.md#n10--alimentação-para-perder-peso). Os registros anteriores abaixo são históricos.
+
 **Publicação inicial — 24/09/2026:** scripts, resumos, inventário e manifestos de pesquisa podem ser consultados no repositório. Planilhas, respostas integrais de fornecedores e subconjuntos indicados como “apenas local” permanecem preservados nesta máquina e excluídos do Git; sua redistribuição não foi aprovada neste incremento. Os manifestos descrevem o conjunto local original, não uma garantia de que cada arquivo está no clone. Para reproduzir os analisadores, primeiro obter legitimamente as entradas documentadas; não esperar que funcionem com todos os dados em um clone limpo.
 
 

@@ -1,0 +1,21 @@
+{
+  "id": "n09-va-smoothie-pdf",
+  "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:05:28.665397+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Modelo humano de montagem por grupos com exemplos; verificar rendimento/nutrientes ausentes",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 147208,
+  "bodyFile": "../raw/n09-va-smoothie-pdf.pdf",
+  "sha256": "0489068b05a4a400f05efc9deb5f5681b9d74d8a268feb59f13c32a7b46a36f4"
+}

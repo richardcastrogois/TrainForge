@@ -1,0 +1,22 @@
+{
+  "id": "n09-va-smoothie",
+  "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:03:51.338068+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Guia humano de montagem por grupos e quantidades, sem total nutricional inventado",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 1346,
+  "bodyFile": "../raw/n09-va-smoothie.pdf",
+  "sha256": "2416fed1f11e00beab950c013307f6d6ab2ece9a6845c8423f3da35464f02096",
+  "error": "HTTP 406"
+}

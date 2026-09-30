@@ -1,0 +1,220 @@
+{
+  "niche": "N10",
+  "date": "2026-09-30",
+  "researchStatus": "concluido_no_recorte",
+  "guides": 4,
+  "lessons": 8,
+  "sourceDiaryRows": 13,
+  "calls": 10,
+  "http200": 9,
+  "bodyHashesVerified": 10,
+  "reusedEvidenceHashes": 4,
+  "checksPassed": 49,
+  "checks": [
+    {
+      "check": "n10-better-health-app-termos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-better-health-termos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-better-health: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-cdc-direitos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-cdc-passos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-nhs-perda: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-direitos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-porcoes-canonico: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-porcoes: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-programa: original body hash",
+      "passed": true
+    },
+    {
+      "check": "10 independent attempts retained",
+      "passed": true
+    },
+    {
+      "check": "nine HTTP 200 and one original 404",
+      "passed": true
+    },
+    {
+      "check": "canonical portion URL actually linked by source",
+      "passed": true
+    },
+    {
+      "check": "n10-nhs-perda: usable HTML guide, not failed request",
+      "passed": true
+    },
+    {
+      "check": "n10-cdc-passos: usable HTML guide, not failed request",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-programa: usable HTML guide, not failed request",
+      "passed": true
+    },
+    {
+      "check": "n10-niddk-porcoes-canonico: usable HTML guide, not failed request",
+      "passed": true
+    },
+    {
+      "check": "NHS: published weekly range is general context",
+      "passed": true
+    },
+    {
+      "check": "NHS: displayed review dates preserved",
+      "passed": true
+    },
+    {
+      "check": "CDC: exactly five numbered steps in order",
+      "passed": true
+    },
+    {
+      "check": "CDC: attainable behaviors plus setback support",
+      "passed": true
+    },
+    {
+      "check": "CDC: date and broader context retained",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: support and maintenance part of real programs",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: regional-loss claim rejected",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: institutional review and named acknowledgement",
+      "passed": true
+    },
+    {
+      "check": "NIDDK portions: source serving is not individual recommendation",
+      "passed": true
+    },
+    {
+      "check": "NIDDK portions: older version and named acknowledgement",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: illustrative 280 times two equals 560",
+      "passed": true
+    },
+    {
+      "check": "Diary: 13 food rows and six real columns",
+      "passed": true
+    },
+    {
+      "check": "Diary: extracted calories sum to source total 2916",
+      "passed": true
+    },
+    {
+      "check": "Diary: empty sandwich amount retained",
+      "passed": true
+    },
+    {
+      "check": "Diary: rowspan time and place resolved for breakfast",
+      "passed": true
+    },
+    {
+      "check": "Diary: zero calorie water not confused with missing data",
+      "passed": true
+    },
+    {
+      "check": "Diary: restaurant context spans five rows",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-termos: original body hash",
+      "passed": true
+    },
+    {
+      "check": "NHS: general OGL terms retained with adaptation conditions",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-excecoes: original body hash",
+      "passed": true
+    },
+    {
+      "check": "n08-ogl-v3: original body hash",
+      "passed": true
+    },
+    {
+      "check": "Better Health: commercial licence explicitly required",
+      "passed": true
+    },
+    {
+      "check": "Better Health: personal download does not allow alteration",
+      "passed": true
+    },
+    {
+      "check": "Better Health app: separate personal-purpose licence",
+      "passed": true
+    },
+    {
+      "check": "Better Health: advertised 12 weeks is not actual imported program",
+      "passed": true
+    },
+    {
+      "check": "Better Health: specific clinical context retained",
+      "passed": true
+    },
+    {
+      "check": "CDC: public-domain text has substantive-change restriction",
+      "passed": true
+    },
+    {
+      "check": "CDC: credit, no endorsement, free origin and jurisdiction limits",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: free reproduction but third-party exception",
+      "passed": true
+    },
+    {
+      "check": "NIDDK: edited content no logos/endorsement or medical recommendation",
+      "passed": true
+    },
+    {
+      "check": "PR06: prior running body hash",
+      "passed": true
+    },
+    {
+      "check": "PR06: original page links specific Better Health terms",
+      "passed": true
+    }
+  ],
+  "releaseApproved": false,
+  "criticalCorrection": "PR06: direitos comerciais condicionais; termos Better Health especificos substituem a conclusao anterior baseada so na OGL",
+  "remaining": [
+    "revisao editorial/nutricional pt-PT",
+    "direitos por ativo e condicoes de adaptacao",
+    "programa alimentar completo e apoio individual nao entregues neste recorte",
+    "sem app, Figma, contrato interno ou banco alterado"
+  ],
+  "next": "N11"
+}

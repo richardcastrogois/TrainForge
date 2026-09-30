@@ -1,0 +1,54 @@
+{
+  "niche": "N08",
+  "scope": "Tres receitas humanas completas e direitos por camada; alternativas portuguesas e API comercial; pesquisa sem integracao/publicacao",
+  "requests": [
+    {
+      "id": "n08-nhlbi-catalogo",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes",
+      "purpose": "Catalogo: campos, total e links; sem coleta integral",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhlbi-bacalhau",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks",
+      "purpose": "Receita humana: ingredientes, unidades, preparo, rendimento e nutrientes por porcao",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhlbi-lentilhas",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/lentil-soup",
+      "purpose": "Receita de leguminosas: medidas, rendimento e base nutricional",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhlbi-maca",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/apple-coffee-cake",
+      "purpose": "Receita de forno: fracoes, porcao, ingredientes e nutrientes",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhlbi-direitos",
+      "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+      "purpose": "Politica de reutilizacao, alteracao, imagens e publicidade",
+      "extension": "html"
+    },
+    {
+      "id": "n08-dgs-bacalhau",
+      "url": "https://alimentacaosaudavel.dgs.pt/receitas/canelone-de-bacalhau/",
+      "purpose": "Receita portuguesa candidata; verificar conteudo real ou bloqueio",
+      "extension": "html"
+    },
+    {
+      "id": "n08-fns-receitas",
+      "url": "https://www.fns.usda.gov/tn/recipes",
+      "purpose": "Alternativa USDA e disponibilidade; nao confundir acesso com licenca",
+      "extension": "html"
+    },
+    {
+      "id": "n08-themealdb-termos",
+      "url": "https://www.themealdb.com/terms_of_use.php",
+      "purpose": "Condicoes para publicacao comercial mobile gratuita",
+      "extension": "html"
+    }
+  ]
+}

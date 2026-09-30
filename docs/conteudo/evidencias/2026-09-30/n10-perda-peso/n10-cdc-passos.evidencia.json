@@ -1,0 +1,21 @@
+{
+  "id": "n10-cdc-passos",
+  "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:03.186155+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Cinco passos humanos para organizar escolhas e acompanhar progresso",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 61991,
+  "bodyFile": "../raw/n10-cdc-passos.html",
+  "sha256": "56700111ea1a4fc818bef3a55aab32f635b481da9f4820c3e8bc8aa07a71a680"
+}

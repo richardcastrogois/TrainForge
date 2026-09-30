@@ -1,0 +1,42 @@
+{
+  "niche": "N08",
+  "scope": "Alternativa NHS com licenca para texto, tres receitas e limites de adaptacao",
+  "requests": [
+    {
+      "id": "n08-nhs-catalogo",
+      "url": "https://www.nhs.uk/healthier-families/recipes/",
+      "purpose": "Catalogo de receitas desenvolvidas com nutricionistas; contagem e filtros",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhs-aveia",
+      "url": "https://www.nhs.uk/healthier-families/recipes/easy-overnight-oats/",
+      "purpose": "Pequeno almoco: passos, nutrientes, espera e unidades mistas",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhs-salmao",
+      "url": "https://www.nhs.uk/healthier-families/recipes/salmon-and-broccoli-pasta/",
+      "purpose": "Refeicao de peixe: ingredientes, unidades e nutrientes por porcao",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhs-chilli",
+      "url": "https://www.nhs.uk/healthier-families/recipes/tasty-vegetarian-chilli/",
+      "purpose": "Opcao de leguminosas, rendimento e dados nutricionais",
+      "extension": "html"
+    },
+    {
+      "id": "n08-nhs-termos",
+      "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+      "purpose": "OGL, excecoes, traducao, atualizacao e atribuicao",
+      "extension": "html"
+    },
+    {
+      "id": "n08-ogl-v3",
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "purpose": "Licenca original; nao inferir direitos de imagem a partir de texto",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "niche": "N10",
+  "date": "2026-09-30",
+  "guides": [
+    {
+      "id": "G10-01",
+      "sourceId": "NU21",
+      "title": "Tips to help you lose weight",
+      "publisher": "NHS",
+      "sourceUrl": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/",
+      "evidence": "n10-nhs-perda.evidencia.json",
+      "sha256": "27a7185bd6321ba34e078ede8bafdae4935b427dcf9ff311b7f0928f5dca831a",
+      "format": "HTML institucional; nao API de dieta",
+      "sourceDate": "2023-03-17",
+      "audience": "adultos; orientacao geral, nao meta individual",
+      "reuseDecision": "Texto geral candidato OGL + termos; traducao revisada, sem campanhas/calculadora/imagens",
+      "individualEnergyTargetKcal": null,
+      "individualWeightLossTargetKg": null,
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-02",
+      "sourceId": "NU22",
+      "title": "Steps for Losing Weight",
+      "publisher": "CDC / NCCDPHP",
+      "sourceUrl": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+      "evidence": "n10-cdc-passos.evidencia.json",
+      "sha256": "56700111ea1a4fc818bef3a55aab32f635b481da9f4820c3e8bc8aa07a71a680",
+      "format": "HTML institucional; nao API de dieta",
+      "sourceDate": "2025-01-17",
+      "audience": "educacao geral para adultos; fatores individuais interferem",
+      "reuseDecision": "Condicional para versao adaptada pt-PT: nao alterar conteudo substantivo; credito, nao endosso, origem gratuita e direitos territoriais",
+      "individualEnergyTargetKcal": null,
+      "individualWeightLossTargetKg": null,
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-03",
+      "sourceId": "NU23",
+      "title": "Choosing a Safe & Successful Weight-loss Program",
+      "publisher": "NIDDK",
+      "sourceUrl": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+      "evidence": "n10-niddk-programa.evidencia.json",
+      "sha256": "fdfde2c7316542b484239cdbd09c93b71d9e7cceb7b278208919ad54ad4dc725",
+      "format": "HTML institucional; nao API de dieta",
+      "sourceDate": "2024-02",
+      "audience": "adultos avaliando programas e apoio; nao prova eficacia do TrainForge",
+      "reuseDecision": "Texto candidato segundo politica; excluir imagens/terceiros e nao usar como aconselhamento medico especifico",
+      "individualEnergyTargetKcal": null,
+      "individualWeightLossTargetKg": null,
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-04",
+      "sourceId": "NU23",
+      "title": "Food Portions: Choosing Just Enough for You",
+      "publisher": "NIDDK",
+      "sourceUrl": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+      "evidence": "n10-niddk-porcoes-canonico.evidencia.json",
+      "sha256": "572f70fe59a824e4c1ae7607c38b8a7ab8366e564372a6e5a6e702089057eaf6",
+      "format": "HTML institucional; nao API de dieta",
+      "sourceDate": "2021-07",
+      "audience": "educacao sobre quantidades e contexto; diario ilustrativo nao e dieta",
+      "reuseDecision": "Texto candidato; exemplos EUA exigem revisao pt-PT e fiscalizacao das referencias antigas",
+      "individualEnergyTargetKcal": null,
+      "individualWeightLossTargetKg": null,
+      "releaseApproved": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "G10-L01",
+      "title": "Escolher um percurso adequado",
+      "draftPtPT": "O objetivo declarado nao determina sozinho a necessidade de perder peso.",
+      "guideIds": [
+        "G10-01",
+        "G10-03"
+      ],
+      "futureFields": [
+        "goalIntent",
+        "supportContextOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L02",
+      "title": "Observar a rotina com contexto",
+      "draftPtPT": "Alimentos, quantidades e contexto do registo ajudam a identificar escolhas a rever.",
+      "guideIds": [
+        "G10-02",
+        "G10-04"
+      ],
+      "futureFields": [
+        "mealItems",
+        "amount",
+        "unit",
+        "time",
+        "contextOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L03",
+      "title": "Distinguir rotulo e consumo",
+      "draftPtPT": "Duas porcoes consumidas exigem duas vezes os valores por porcao; o rotulo nao prescreve a quantidade.",
+      "guideIds": [
+        "G10-04"
+      ],
+      "futureFields": [
+        "nutritionBasis",
+        "servingCount",
+        "actualIntake"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L04",
+      "title": "Comparar escolhas simples",
+      "draftPtPT": "O guia geral permite explicar trocas de bebidas e leitura de rotulos, com quantidades confirmadas.",
+      "guideIds": [
+        "G10-01"
+      ],
+      "futureFields": [
+        "foodId",
+        "quantity",
+        "labelEvidence"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L05",
+      "title": "Escolher pequenas acoes praticaveis",
+      "draftPtPT": "Definir comportamentos claros e rever dificuldades; a balanca nao e o unico registo util.",
+      "guideIds": [
+        "G10-02"
+      ],
+      "futureFields": [
+        "userChosenAction",
+        "frequency",
+        "barriersOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L06",
+      "title": "Reconhecer promessas sem fundamento",
+      "draftPtPT": "Avaliar provas, custos e apoio de um programa antes de confiar em resultados anunciados.",
+      "guideIds": [
+        "G10-03"
+      ],
+      "futureFields": [
+        "programEvidence",
+        "provider",
+        "cost",
+        "support"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L07",
+      "title": "Pensar no contexto da refeicao",
+      "draftPtPT": "Porcoes em casa e fora e compras com orcamento limitado pedem exemplos locais, sem culpa.",
+      "guideIds": [
+        "G10-04"
+      ],
+      "futureFields": [
+        "mealContext",
+        "budgetOptional",
+        "localExampleReview"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G10-L08",
+      "title": "Rever e sustentar a rotina",
+      "draftPtPT": "Acompanhamento e apoio fazem parte do percurso; nao inventar metas ou prometer eficacia clinica do app.",
+      "guideIds": [
+        "G10-02",
+        "G10-03"
+      ],
+      "futureFields": [
+        "voluntaryReview",
+        "supportSource",
+        "targetProvenance"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas",
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    }
+  ],
+  "sourceDiaryProjection": {
+    "guideId": "G10-04",
+    "sourceTableColumns": [
+      "Time",
+      "Food",
+      "Amount",
+      "Estimated Calories",
+      "Place",
+      "Hunger/Reason"
+    ],
+    "foodRows": 13,
+    "sourceDeclaredCalories": 2916,
+    "sumOfRowCalories": 2916,
+    "oneRowMissingAmount": true,
+    "role": "exemplo didatico de registo e contexto, nunca dieta ou meta de 2916 kcal",
+    "rowProjection": [
+      {
+        "sourceRow": 1,
+        "sourceFood": "Coffee, Black",
+        "amountAsPublished": "6 fl. oz.",
+        "sourceEstimatedKcal": 2,
+        "inheritsContextViaRowspan": false
+      },
+      {
+        "sourceRow": 2,
+        "sourceFood": "Banana",
+        "amountAsPublished": "1 medium",
+        "sourceEstimatedKcal": 105,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 3,
+        "sourceFood": "Low-fat yogurt",
+        "amountAsPublished": "1 cup",
+        "sourceEstimatedKcal": 250,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 4,
+        "sourceFood": "Grilled cheese sandwich",
+        "amountAsPublished": null,
+        "sourceEstimatedKcal": 281,
+        "inheritsContextViaRowspan": false
+      },
+      {
+        "sourceRow": 5,
+        "sourceFood": "Apple",
+        "amountAsPublished": "1 medium",
+        "sourceEstimatedKcal": 72,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 6,
+        "sourceFood": "Potato chips",
+        "amountAsPublished": "Single-serving bag, 1 ounce",
+        "sourceEstimatedKcal": 152,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 7,
+        "sourceFood": "Water",
+        "amountAsPublished": "16 fl. oz.",
+        "sourceEstimatedKcal": 0,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 8,
+        "sourceFood": "Chocolate-chip cookies",
+        "amountAsPublished": "5 medium-sized",
+        "sourceEstimatedKcal": 345,
+        "inheritsContextViaRowspan": false
+      },
+      {
+        "sourceRow": 9,
+        "sourceFood": "Mini chicken drumsticks with hot pepper sauce",
+        "amountAsPublished": "4",
+        "sourceEstimatedKcal": 312,
+        "inheritsContextViaRowspan": false
+      },
+      {
+        "sourceRow": 10,
+        "sourceFood": "Taco salad",
+        "amountAsPublished": "3 cups in fried flour tortilla with beans and cheese",
+        "sourceEstimatedKcal": 586,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 11,
+        "sourceFood": "Chocolate cheesecake",
+        "amountAsPublished": "1 piece, 1/12 of 9-inch cake",
+        "sourceEstimatedKcal": 479,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 12,
+        "sourceFood": "Soft drink",
+        "amountAsPublished": "12 fl. oz.",
+        "sourceEstimatedKcal": 136,
+        "inheritsContextViaRowspan": true
+      },
+      {
+        "sourceRow": 13,
+        "sourceFood": "Latte",
+        "amountAsPublished": "Espresso coffee with whole milk, 16 ounces",
+        "sourceEstimatedKcal": 196,
+        "inheritsContextViaRowspan": true
+      }
+    ]
+  },
+  "portionMathExample": {
+    "guideId": "G10-04",
+    "sourceKcalPerServing": 280,
+    "consumedServings": 2,
+    "resultKcal": 560,
+    "gramsPerServing": null,
+    "role": "aritmetica da fonte, sem conversao inventada de cup para gramas"
+  },
+  "sourceReferenceRangesNotTargets": [
+    {
+      "guideId": "G10-01",
+      "quantity": [
+        0.5,
+        1
+      ],
+      "unit": "kg/week",
+      "applyAutomatically": false
+    },
+    {
+      "guideId": "G10-02",
+      "quantity": [
+        1,
+        2
+      ],
+      "unit": "lb/week",
+      "applyAutomatically": false
+    },
+    {
+      "guideId": "G10-03",
+      "quantity": [
+        5,
+        10
+      ],
+      "unit": "percent_start_weight_within_6_months",
+      "applyAutomatically": false
+    }
+  ],
+  "excludedImport": {
+    "sourceId": "NU24",
+    "scope": "Better Health / Weight Loss Plan app",
+    "observedOfferWeeks": 12,
+    "actualWeeklyContentImported": 0,
+    "commercialReuseApproved": false,
+    "reason": "termos especificos exigem licenca comercial; app/documentos para uso pessoal"
+  },
+  "previousFindingCorrection": {
+    "sourceId": "PR06",
+    "oldStatus": "candidato",
+    "newStatus": "condicional",
+    "technicalPilotStillValid": true,
+    "commercialImportApproved": false,
+    "basis": "pagina original de 26/09 aponta termos Better Health especificos recebidos em 30/09; OGL geral nao basta",
+    "remaining": "demonstrar permissao especifica/excecao para texto e PDF exatos antes de importar"
+  },
+  "editorialBoundaries": [
+    "sem alvo calorico ou prazo individual automatico",
+    "sem percurso adulto aplicado silenciosamente a menores, gravidez ou contexto desconhecido",
+    "condicoes medicas/dietas especiais/transtornos alimentares pedem contexto profissional apropriado",
+    "sem classificacao moral dos alimentos, punicao ou incentivo a restricao extrema",
+    "educacao e diario nao equivalem a programa clinico com apoio humano",
+    "localizar servicos, unidades, rotulos e exemplos em Portugal antes de publicar"
+  ],
+  "reusedEvidence": [
+    {
+      "file": "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json",
+      "sha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929",
+      "status": 200
+    },
+    {
+      "file": "2026-09-29/n08-receitas/n08-nhs-excecoes.evidencia.json",
+      "sha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e",
+      "status": 200
+    },
+    {
+      "file": "2026-09-29/n08-receitas/n08-ogl-v3.evidencia.json",
+      "sha256": "f5b2b9f2af63647cde889fa6c3508f5705925295b74912c68caa28dd37e64aa5",
+      "status": 200
+    },
+    {
+      "file": "2026-09-26/network/nhs-c25k.evidencia.json",
+      "sha256": "79562655a75dfd914ff99aea3bf2e1ba16d345bf1468264ee42d235ccabc9760",
+      "status": 200
+    }
+  ],
+  "releaseApproved": false
+}

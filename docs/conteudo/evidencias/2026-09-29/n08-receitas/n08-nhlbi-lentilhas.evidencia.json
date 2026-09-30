@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhlbi-lentilhas",
+  "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/lentil-soup",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:06.739497+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receita de leguminosas: medidas, rendimento e base nutricional",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/lentil-soup",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 56474,
+  "bodyFile": "../raw/n08-nhlbi-lentilhas.html",
+  "sha256": "fb646516a0998a5fe2ca5d49e01821d3b6ef0ec2895205aed9edfa85fcd6af93"
+}

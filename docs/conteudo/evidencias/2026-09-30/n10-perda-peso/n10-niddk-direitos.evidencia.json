@@ -1,0 +1,21 @@
+{
+  "id": "n10-niddk-direitos",
+  "url": "https://www.niddk.nih.gov/copyright",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:07.907349+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Direitos, adaptacao, logos e terceiros nas paginas NIDDK",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/copyright",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 31550,
+  "bodyFile": "../raw/n10-niddk-direitos.html",
+  "sha256": "c11dd24f95f04af9eaf3c54513f61d8c2b995b682b7550750e8f5e82127bf1b5"
+}

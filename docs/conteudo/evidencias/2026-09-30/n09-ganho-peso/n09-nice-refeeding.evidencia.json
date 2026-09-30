@@ -1,0 +1,21 @@
+{
+  "id": "n09-nice-refeeding",
+  "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:02:29.766007+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Base para limite de automacao em desnutricao e realimentacao; nao extrair prescricao clinica",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 108976,
+  "bodyFile": "../raw/n09-nice-refeeding.html",
+  "sha256": "c803505044a62df75abda167c3a8a572744ad9b1eb72f5d04b99f8f532a9c987"
+}

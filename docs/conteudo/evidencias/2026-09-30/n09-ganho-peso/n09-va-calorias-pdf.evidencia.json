@@ -1,0 +1,21 @@
+{
+  "id": "n09-va-calorias-pdf",
+  "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:04:56.130564+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Correcao explicita de Accept apos 406; preservar evidencia anterior",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 141563,
+  "bodyFile": "../raw/n09-va-calorias-pdf.pdf",
+  "sha256": "e5d2550b02f89bd86ad11fc5d03b0c0a3d3db417ab39fbe3cd45d58fa3e7caa0"
+}

@@ -1,5 +1,18 @@
 # Evidências da expansão de conteúdo
 
+## N10 — alimentação para perder peso, 30/09/2026
+
+[Resumo](2026-09-30/n10-perda-peso/resumo-perda-peso.json) e [guias, lições e exemplos](2026-09-30/n10-perda-peso/conteudo-guiado.json): quatro guias, oito rascunhos e diário ilustrativo com 13 itens. 49 verificações, 10 chamadas / nove HTTP 200 / dez hashes e quatro evidências anteriores reutilizadas. Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-perda-peso.py` (biblioteca padrão e raw local). Índice acumulado: **147 / 114 / 113**. **Correção atual PR06:** termos Better Health específicos tornam condicionais os direitos de importação da corrida; piloto técnico preservado, não usar a antiga conclusão OGL isoladamente. N01–N10 concluídos para pesquisa; próximos blocos são históricos.
+
+## N09 — alimentação para ganhar peso, 30/09/2026
+
+[Resumo](2026-09-30/n09-ganho-peso/resumo-ganho-peso.json) e [guias, exemplos e lições](2026-09-30/n09-ganho-peso/conteudo-guiado.json): cinco guias, 14 exemplos VA com energia/proteína declaradas, seis batidos sem tabela nutricional e nove rascunhos editoriais. 59 verificações; 10 chamadas / oito HTTP 200 / 10 hashes, mais três políticas reutilizadas. Quatro páginas PDF inspecionadas. Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-ganho-peso.py` (pypdf/pdfplumber e corpos locais). Índice acumulado: 137 / 105 / 103. PDFs VA requerem `Accept: application/pdf`; os dois 406 originais permanecem separados. Pesquisa concluída, publicação pendente. Os blocos seguintes são históricos.
+
+## N08 — receitas humanas, 29/09/2026
+
+[Resumo](2026-09-29/n08-receitas/resumo-receitas.json) e [retornos por receita](2026-09-29/n08-receitas/amostra-receitas.json): oito receitas distintas, nove páginas, 21 chamadas / 19 HTTP 200, 21 hashes e 61 verificações. Textos completos extraídos apenas no raw ignorado; projeções e políticas no dossiê. Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-receitas.py` (requer corpos locais). Índice acumulado: 127 / 97 / 93. Os blocos seguintes são históricos.
+
+
 **Estado atual — 28/09:** N01–N07 concluídos para pesquisa nos recortes documentados. N06: três produtos OFF, sete ficheiros Commons, oito imagens inspecionadas, 22 chamadas preservadas/200/hashes e 23 verificações. N07: cinco guias institucionais, 12 lições, dois exemplos visuais próprios e 31 verificações; duas falhas TLS preservadas. Índice acumulado: 106 chamadas / 78 HTTP 200 / 72 hashes; catálogo: 50 fontes/famílias. Próximo: **N08 — receitas humanas**, não iniciado. Etapa 01 continua aberta; pesquisa não aprova catálogo integral, integração ou publicação. Retomar pelos resumos `docs/conteudo/evidencias/2026-09-28/n06-imagens/resumo-imagens.json` e `docs/conteudo/evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json`; versão deste fechamento identificada no histórico Git.
 
 ## Fechamentos N06 e N07 — 28/09/2026

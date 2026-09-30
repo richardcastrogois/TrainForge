@@ -1,0 +1,30 @@
+{
+  "niche": "N09",
+  "scope": "Dois guias humanos reais e politicas; NHS/OGL reutilizados de N08 sem novas chamadas",
+  "requests": [
+    {
+      "id": "n09-va-calorias",
+      "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+      "purpose": "Folheto julho 2026: sugestoes humanas e contexto para adicionar energia",
+      "extension": "pdf"
+    },
+    {
+      "id": "n09-va-smoothie",
+      "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+      "purpose": "Guia humano de montagem por grupos e quantidades, sem total nutricional inventado",
+      "extension": "pdf"
+    },
+    {
+      "id": "n09-va-direitos",
+      "url": "https://department.va.gov/copyright-policy/",
+      "purpose": "Politica de conteudo publico, autoria federal e excecoes",
+      "extension": "html"
+    },
+    {
+      "id": "n09-bda-direitos",
+      "url": "https://www.bda.uk.com/about-us/website/copyright.html",
+      "purpose": "Direitos editoriais do guia BDA; separar acesso gratuito de redistribuicao",
+      "extension": "html"
+    }
+  ]
+}

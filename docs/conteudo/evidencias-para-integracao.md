@@ -1,13 +1,13 @@
 # Evidências de retorno para a implementação
 
-Registro iniciado em **26/09/2026 e atualizado em 28/09/2026**, baseado nas chamadas e arquivos preservados de 22–28/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
+Registro iniciado em **26/09/2026 e atualizado em 30/09/2026**, baseado nas chamadas e arquivos preservados de 22–30/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
 
 Os campos abaixo foram observados em amostras. Presença na amostra não é garantia de obrigatoriedade ou disponibilidade futura do fornecedor. As permissões e limitações continuam no [catálogo por fonte](fontes.json) e em [direitos](direitos-e-acordos.md).
 
 ## Como recuperar sem fazer outra chamada
 
-- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **106 registros de chamadas preservadas, 78 respostas HTTP 200**, incluindo tentativas sem rede, falhas, dois casos negativos 404 e EUR-Lex 202 sem texto legal utilizável. Não são 106 APIs nem 78 fontes distintas. N06/N07 acrescentaram 29 chamadas preservadas nesta rodada.
-- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 72 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
+- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **147 registros de chamadas preservadas, 114 respostas HTTP 200**, incluindo tentativas sem rede, falhas, dois casos negativos 404 e EUR-Lex 202 sem texto legal utilizável. Não são 147 APIs nem 114 fontes distintas. N10 acrescentou 10 tentativas, incluindo uma URL 404 corrigida pelo link oficial; reutilizou três políticas e uma página anterior.
+- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 113 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
 - [Pilotos conferidos](evidencias/2026-09-26/pilotos-resumo.json): resultados dos analisadores, separados do retorno original.
 - Respostas integrais e planilhas indicadas como **locais** não acompanham o clone Git. Metadados, scripts e resumos permitem localizar/reproduzir legitimamente a coleta. O clone sozinho não contém todos os insumos.
 
@@ -583,9 +583,133 @@ O exemplo A separa pacote de 300 g, porção de 30 g e consumo de 45 g: com 200 
 
 Para implementação futura, usar a base, estado e quantidade exatos do N03/N04, a proveniência/ausências do N05 e as imagens/créditos do N06. Não somar subconjuntos de nutrientes; não transformar dados ausentes em zero; não converter g/ml ou cru/cozido sem prova. O app deve guardar fonte e revisão da lição, confirmação do rótulo pelo utilizador e correções próprias separadas. Essas são decisões de contrato futuro, não campos que uma API educativa devolveu prontos.
 
-**O que temos:** cinco guias institucionais acessíveis, lições rastreáveis, exemplos próprios conferidos matematicamente e visualmente, tratamento de unidades e desconhecidos. **O que falta:** revisão editorial independente de pt-PT, regras/exceções completas se quisermos alegações jurídicas, conteúdo para crianças/situações clínicas, OCR e sincronização dessas lições com o produto. Nenhuma dieta, classificação clínica ou receita completa foi aprovada. **N08 — receitas humanas** é a próxima pesquisa.
+**O que temos:** cinco guias institucionais acessíveis, lições rastreáveis, exemplos próprios conferidos matematicamente e visualmente, tratamento de unidades e desconhecidos. **O que falta:** revisão editorial independente de pt-PT, regras/exceções completas se quisermos alegações jurídicas, conteúdo para crianças/situações clínicas, OCR e sincronização dessas lições com o produto. Nenhuma dieta, classificação clínica ou receita completa foi aprovada. A pesquisa N08 foi concluída em 29/09 na secção seguinte.
 
 Reproduzir sem rede: `python -X utf8 docs/conteudo/evidencias/analisar-rotulos.py`. Os 31 checks cobrem quantidades/base/preparo, valores negativos/não finitos/desconhecidos, subconjuntos, arredondamento, fontes reais e falhas preservadas; cinco hashes conferidos separadamente. A [verificação visual](evidencias/2026-09-28/n07-rotulos/validar-guia.cjs) usou Comet instalado em modo headless, perfil temporário, duas dimensões e zero erros de script; não usou a sessão pessoal nem fez instalações. Não é teste de acessibilidade completo ou teste do aplicativo.
+
+## N08 — Receitas humanas: dados, origem e reutilização
+
+**Concluído para pesquisa em 29/09/2026**, no recorte de oito receitas distintas, nove páginas de receita (uma comparação entre versões), políticas e alternativas. Foram **21 chamadas preservadas, 19 HTTP 200, dois HTTP 403 e 21 corpos com hash conferido**; 61 verificações locais passaram. Não se trata de oito receitas liberadas para lançamento. [Resumo](evidencias/2026-09-29/n08-receitas/resumo-receitas.json), [campos/amostras](evidencias/2026-09-29/n08-receitas/amostra-receitas.json), [analisador](evidencias/analisar-receitas.py).
+
+**Resposta à pergunta do nicho:** há um candidato gratuito demonstrado para **texto de receitas humanas via MedlinePlus**, cuja política inclui expressamente Healthy recipes no conteúdo de domínio público. A amostra ainda exige conferência nutricional, localização e direitos por ativo. NHLBI continua condicional; DGS é referência portuguesa; receitas Healthier Families e TheMealDB não têm autorização automática para o uso comercial gratuito pretendido. Não foi encontrada/validada nesta rodada uma API que resolva todas as camadas.
+
+### Como foi chamado e o que veio
+
+Os quatro manifestos complementares e o plano inicial na pasta N08 guardam URLs, objetivo e extensão. Todos os pedidos são **GET HTTPS sem chave/autenticação**, pelo coletor `coletar-nichos-off.py`: timeout 25 s, limite 2 MiB, cache de sucesso/falha e nenhum retry. Corpos HTML em `../raw/`, ignorados no Git; as projeções versionadas são nossas. A fonte não devolveu os nossos campos `sourceId`, `releaseApproved` ou `clinicalSuitability`.
+
+| Fonte / conteúdo observado | Retorno concreto | Utilidade e limite |
+|---|---|---|
+| NHLBI, Braised Cod With Leeks | 9 ingredientes, 4 passos; 4 porções; 15 min preparo + 25 min cocção; 158 kcal por porção, proteína 17 g | HTML `h2`, `ul/ol`, tabelas `th/td`; origem editorial Deliciously Healthy Dinners. Oz, C e unidades inteiras não são automaticamente gramas |
+| NHLBI, Lentil Soup | 12 ingredientes, 5 passos; 11 porções de 1 C; 151 kcal, proteína 9 g por porção | Caldo, legumes e lentilhas; preservar medida/unidade original e base por porção |
+| NHLBI, Apple Coffee Cake | 10 ingredientes, 5 passos; 20 porções; 188 kcal | Ficha não informa proteína/carboidratos/fibra. O preparo inclui repouso; não somar só dois campos e prometer tempo total |
+| DGS, Canelone de bacalhau | 15 ingredientes, orientações, 4 pessoas, 30 min; HTML + JSON-LD Article | Já em português. Não há tabela nutricional do prato: **164 kcal/100 g refere-se ao grão-de-bico**, não ao canelone. JSON-LD autor “Programa” não prova revisão nominal |
+| NHS Healthier Families, aveia / massa com salmão / chilli | 8/11/12 ingredientes, 3/6/3 passos, quatro porções cada; 294/465/400 kcal por porção | `script[type=application/ld+json]`, `@type=Recipe`; útil como comparação técnica, bloqueado para importação comercial sem licença específica |
+| MedlinePlus, Lentil Confetti Salad | 11 ingredientes, 7 passos; 6 porções; 2/3 cup (140 g); 160 kcal, gordura 6 g, hidratos 22 g, proteína publicada 1 g, fibra 5 g por porção | HTML, autoria institucional e Food Hero creditados; política explícita favorece piloto textual. Preservar 1 g e pedir conferência, não “corrigir” por palpite |
+| Food Hero, mesma salada | 4 cups de rendimento; 8 passos visíveis; `Recipe` JSON-LD com ingredientes concatenados e instruções quebradas por vírgulas | Comparação de versão, **não uma nona receita distinta**. Não usar JSON-LD só porque existe; validar estrutura contra HTML |
+
+A ficha NHS contém `name`, `publisher`, `datePublished`, `recipeCategory`, `recipeIngredient[]`, `recipeInstructions` (string), `recipeYield`, `prepTime`, `cookTime`, `totalTime`, `nutrition`, `suitableForDiet` e `image`. Na amostra, `nutrition` inclui `calories`, `proteinContent`, `carbohydrateContent`, `sugarContent`, `fatContent`, `saturatedFatContent`; **fibra, sal, kJ e a declaração da base estão no HTML**, ausentes desse objeto. A aveia declara `cookTime: null` e `totalTime: PT10M`, embora exija uma noite no frigorífico. Rótulo de dieta não é certificação de ausência de alergénios.
+
+### Decisão de direitos por camada
+
+- **NU15 / MedlinePlus:** a [política da NLM](https://medlineplus.gov/about/using/usingcontent/) lista receitas saudáveis como domínio público. Guardar autoria/proveniência, URL, versão e crédito institucional; validar cada ativo e jurisdição de lançamento. Essa política não é uma licença para extrair todas as fotos nem todos os textos do Food Hero. Fotos/logos não foram importados. Catálogo classificado **candidato**, não aprovado.
+- **NU03 / NHLBI:** [política própria](https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo) favorece informação de domínio público, mas pede preservar produtos formatados e evitar publicidade/endosso. A tradução, a apresentação com anúncios e a mídia continuam condicionais. Não afirmar que a existência da receita homologa um plano diário.
+- **NU14 / Healthier Families:** os [termos específicos](https://www.nhs.uk/healthier-families/terms-and-conditions/) exigem licença para fins comerciais, restringem modificações e links além da página inicial. A exclusão Change4Life resolve hoje para Healthier Families; **não aplicar OGL do NHS geral a esse catálogo**. URLs de receita ficam neste dossiê como evidência da pesquisa, não como estratégia de distribuição no produto.
+- **NU01 / DGS:** receita recebida pelo coletor, mas licença comercial aberta não demonstrada. A página web de pesquisa apresentou desafio de verificação; o GET local recebeu a receita real. Acesso não é autorização.
+- **NU06 / TheMealDB:** [termos](https://www.themealdb.com/terms_of_use.php) continuam exigindo assinatura para publicar app em loja. Nenhuma chave foi adquirida e nenhuma receita da API foi importada.
+- **NU07 / USDA:** alternativa Team Nutrition retornou 403; MyPlate não acessível pelo navegador de pesquisa. Não contar catálogo nem supor encerramento do serviço com base em espelhos de terceiros. **NU16 / Food Hero:** a página de critérios também retornou 403; registrar o limite, sem retry ou inferência de critérios não lidos.
+
+### Contrato necessário para a implementação futura
+
+| Grupo | Guardar / devolver | Recusa ou estado explícito |
+|---|---|---|
+| Identidade e revisão | ID interno, URL original, instituição/autor declarado, título/idioma, data da coleta/hash e versão | Instituição ≠ profissional identificado que reviu a tradução; atualização da fonte não substitui versão guardada |
+| Ingredientes | Texto original; quantidade/unidade; fração/intervalo/opcional; estado cru/cozido/escorrido; ID alimentar **só com correspondência validada** | “Uma unidade”, chávena/colher e alimentos sem preparo identificado não recebem massa inventada. Gramas/ml não se somam |
+| Preparo | Passos na ordem humana, notas separadas, segurança/armazenamento e equipamentos quando presentes | String plana/array fragmentado não vira passo a passo sem verificar HTML; temperatura/tempo de segurança não pode desaparecer na tradução |
+| Rendimento e registo | Número de porções da receita, descrição/massa da porção quando informada, quantidade que o utilizador consumiu separada | Massa final desconhecida impede nutrientes por 100 g. Multiplicar nutrientes pela fração só quando a base e a versão corresponderem |
+| Nutrientes | Valor, unidade, base, origem e ausente/desconhecido; conservar valor declarado e cálculo derivado separados | Troca de ingrediente, versão ou quantidade invalida assumir os mesmos nutrientes. Soma de macros não substitui energia publicada |
+| Tempo | Preparo ativo, cocção, espera e total informado, com ressalva quando não cobre a espera | Não dizer “pronto em 10 min” para receita noturna |
+| Direitos e mídia | Decisão por texto/tradução/foto/vídeo; crédito e atualização | Falta de foto não bloqueia receita textual elegível; presença de URL não autoriza reuso/hotlink |
+| Adequação | Preferências declaradas, fonte e limites; instrução para conferir ingredientes/rótulos | Sem classificar receita como tratamento, isenta de alergénios ou adequada a todos. Nome “saudável” não é prova para condição individual |
+
+**O que temos:** amostras completas, retorno exato por campo, política de um candidato textual gratuito, alternativas comparadas, erros e divergências reproduzíveis. **O que falta:** lote de lançamento, tradução pt-PT revista, nutrientes conferidos, cobertura cultural portuguesa, direitos de fotos e política de atualização/adaptação. Os ingredientes ainda não estão associados aos IDs Ciqual/OFF; receitas não se tornaram dietas nem recomendações automáticas. **Próximo: N09**, guias humanos para ganhar peso. N13 tratará planos alimentares completos.
+
+## N09 — Alimentação para ganhar peso
+
+**Concluído para pesquisa em 30/09/2026**, no recorte de educação geral e limites de contexto. Cinco guias efetivamente recebidos; 10 chamadas preservadas, oito HTTP 200, dois 406 explicados, 10 hashes e três políticas anteriores verificadas. [Resumo e 59 verificações](evidencias/2026-09-30/n09-ganho-peso/resumo-ganho-peso.json), [guias, 14 exemplos, seis batidos e nove rascunhos de lições](evidencias/2026-09-30/n09-ganho-peso/conteudo-guiado.json). Os guias são institucionais humanos; as lições pt-PT são **síntese editorial assistida por agente, sem revisão profissional**, e não novas dietas ou receitas geradas.
+
+### Origem e retorno observado
+
+| Fonte e chamada | O que efetivamente veio | Aplicação possível / limite |
+| --- | --- | --- |
+| NU17 — [NHS, Healthy ways to gain weight](https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/) | HTML, público adulto, listas de orientações, encaminhamentos, revisão 28/03/2023 e prazo 28/03/2026; referência geral de 300–500 kcal adicionais/dia | Educação sobre variedade, distribuição de refeições e contexto. A faixa não determina a necessidade individual; prazo de revisão exibido passou e requer conferência editorial |
+| NU18 — [VA, Healthy Ways to Add Calories](https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf) | PDF de duas páginas, julho/2026; nove grupos de opções, 14 exemplos com energia/proteína, campos pessoais de meta **em branco** | Biblioteca de exemplos humanos; valores atribuídos à fonte, não tabela universal nem prescrição diária |
+| NU18 — [VA, Create Your Own Smoothie](https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf) | PDF de duas páginas, junho/2024; grupos de ingredientes e seis exemplos nomeados | Ensinar organização e registo; não retorna nutrientes, massa final ou rendimento completo de cada bebida. Suplementos/marcas citados não são obrigatórios nem recomendados pelo TrainForge |
+| NU19 — [BDA/ICUsteps, pouco apetite](https://www.bda.uk.com/resource/dont-feel-hungry-feel-full-when-eating.html) | HTML de 15/06/2020; experiência de pessoas após cuidados intensivos e orientação dietética | Referência de recuperação após doença crítica, **não guia geral** de ganho muscular; não misturar conselhos de fortificação deste contexto com recomendações gerais |
+| NU20 — [NICE CG32](https://www.nice.org.uk/guidance/cg32/chapter/Recommendations) | Guideline profissional em HTML; recomendações 1.4.5–1.4.8 delimitam risco de realimentação e necessidade de profissionais treinados | Referência de limites; nenhuma dose, equação clínica ou protocolo transferido para motor do app |
+
+Os dois PDFs foram conferidos visualmente nas quatro páginas, incluindo alinhamento de kcal/proteína nas 14 linhas e metas individuais em branco. O JSON guarda a descrição original de cada exemplo VA, página/linha e valores da fonte: por exemplo, iogurte com granola/caju **416 kcal / 29 g**, sanduíche de ovo **512 / 18,6 g** e pasta com pesto/frango **535 / 30 g**. Não houve recálculo independente por marca/ingrediente; quantidades caseiras incompletas impedem assumir precisão nutricional para a versão portuguesa. Alterar ingredientes requer nova composição, não reutilizar o total.
+
+### Como chamou e como reproduzir
+
+- Manifestos na pasta `evidencias/2026-09-30/n09-ganho-peso/`: `plano-coleta.json`, `plano-complemento.json`, `plano-pdf-gate.json` e `plano-pdf-smoothie.json`. Cada item registra URL e finalidade; metadados `.evidencia.json` contêm método, cabeçalhos, status, URL final, SHA-256, tamanho e caminho do corpo.
+- GET público, sem credencial. HTML usa `Accept: application/json,text/html,text/plain`; PDF usa **`Accept: application/pdf`**. O servidor VA respondeu 406 ao cabeçalho anterior; o corpo indicou MIME incompatível. Uma chamada isolada com o cabeçalho correto demonstrou a solução, aplicada ao segundo PDF. IDs e respostas originais foram preservados, sem sobrescrever falhas ou repetir tentativas cegamente.
+- O coletor passou a aceitar apenas esse override explícito de MIME. A extensão `.pdf` dos arquivos de erro não prova formato: o analisador exige status 200, cabeçalho e assinatura `%PDF` antes de extrair.
+- `python -X utf8 docs/conteudo/evidencias/analisar-ganho-peso.py`: sem rede, requer `pypdf`, `pdfplumber` e raw local; valida hashes, negociação, tabelas e vínculos de fontes. A inspeção visual não é refeita por esse comando. O clone contém os resultados e scripts; não contém os textos integrais/captura local.
+
+### Direitos, contexto e campos futuros
+
+A [licença geral NHS](https://www.nhs.uk/our-policies/terms-and-conditions/) e as [exclusões](https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/) foram reutilizadas de N08, junto da OGL v3. O texto geral NU17 é candidato sob essas condições. Tradução é adaptação e não herda aprovação clínica do NHS; atribuição e versão precisam acompanhar o conteúdo, sem alegar endosso. Calculadoras, imagens/logos e campanhas vinculadas continuam separados; o link para Healthier Families não concede licença às receitas da campanha.
+
+A [política VA](https://department.va.gov/copyright-policy/) permite distinguir obra produzida por funcionário federal de material com direitos cedidos/terceiros. Textos institucionais desses folhetos são candidatos para revisão por ativo, sem redistribuir logos/fotos ou promover marcas. A [política BDA](https://www.bda.uk.com/about-us/website/copyright.html) não autoriza incorporar o guia em produto comercial; NU19 fica como referência. NU20 também fica como referência, sem licença comercial demonstrada nesta rodada.
+
+Proposta para implementação futura, **não contrato de API já existente**: `sourceId`, `guideId`, versão, URL/hash, público, fundamento, estado da tradução/revisão, lições vinculadas à fonte, porções/ingredientes confirmados, proveniência de eventual meta informada e campos opcionais do diário. `dailyKcalTarget` continua `null`; objetivo “ganhar peso” não permite inventá-lo. A ingestão declarada pelo utilizador deve ser calculada com os contratos N02/N03/N05, e não por uma afirmação isolada de que certo alimento faz ganhar peso.
+
+O conjunto diferencia oito cenários editoriais: adulto geral, ganho muscular, perda involuntária, recuperação após doença crítica, ingestão mínima/prolongadamente reduzida, menor de idade, gravidez e contexto desconhecido. **Não é instrumento de triagem clínica validado.** Contextos especiais não recebem automaticamente um plano de adulto; a localização dos encaminhamentos para Portugal ainda exige revisão.
+
+**Temos:** caminho de conteúdo humano gratuito para revisão (NHS geral e texto VA), exemplos rastreáveis, estrutura de lições e limites explícitos. **Falta:** revisão nutricional/pt-PT e direitos por ativo selecionado, equivalência de ingredientes/medidas locais, metas individuais fundamentadas, programas alimentares completos (N13), ganho muscular/performance (N12), integração e aprovação de lançamento. N09 está concluído no recorte de pesquisa; **N10 é o próximo**, sem encerrar a etapa 01.
+
+## N10 — Alimentação para perder peso
+
+**Concluído para pesquisa em 30/09/2026:** quatro guias institucionais recebidos, oito rascunhos de lições e exemplos rastreáveis. Dez chamadas, nove HTTP 200, um 404 preservado, dez hashes e quatro evidências anteriores conferidas; **49 verificações**. [Resumo](evidencias/2026-09-30/n10-perda-peso/resumo-perda-peso.json) e [retornos/projeções/limites](evidencias/2026-09-30/n10-perda-peso/conteudo-guiado.json). Não fornece dieta individual, meta automática ou programa clínico pronto; as lições são síntese editorial assistida por agente, ainda sem revisão profissional pt-PT.
+
+### Fontes, fundamento humano e dados observados
+
+| Fonte e chamada GET | Retorno efetivo | Utilidade e limite |
+| --- | --- | --- |
+| NU21 — [NHS, orientações gerais](https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/) | HTML com escolhas, listas e datas; última revisão 17/03/2023, prazo 17/03/2026 | Educação sobre bebidas, rótulos e hábitos. A faixa semanal apresentada é referência geral, nunca padrão individual; o prazo de revisão exibido já passou |
+| NU22 — [CDC, Steps for Losing Weight](https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html) | HTML de 17/01/2025, cinco etapas, exemplos de objetivos comportamentais e acompanhamento | Integra alimentação, movimento, sono e contexto. Não comprova eficácia clínica do TrainForge; adaptação textual condicionada aos direitos |
+| NU23 — [NIDDK, escolha de programa](https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program) | HTML revisto em fevereiro/2024; critérios de prova, adequação, apoio e manutenção; referências bibliográficas | Ajuda a avaliar a qualidade de um programa. A página informa revisão por cientistas/especialistas e agradece a Samuel Klein; isso não é revisão da nossa adaptação |
+| NU23 — [NIDDK, porções](https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions) | HTML revisto em julho/2021; exemplos de quantidade, tabela de diário, contextos doméstico/externo e orçamento; agradece a Carla Miller | Conteúdo textual candidato para ensino. Usa rótulos/unidades dos EUA e referências de 2020–2025: localizar e rever atualidade, sem copiar fotos nem pressupor equivalência europeia |
+| NU24 — [Better Health, oferta de plano](https://www.nhs.uk/better-health/lose-weight/) | Página anuncia app de 12 semanas; **zero semanas internas importadas** | Evidência comparativa de oferta, não um programa disponível no TrainForge; licença comercial específica exigida |
+
+**Exemplo concreto da fonte NIDDK:** 280 kcal por porção declarada, duas porções consumidas, total aritmético **560 kcal**. Não há massa em gramas demonstrada para converter livremente o “cup”. O diário ilustrativo tem **13 itens**, seis colunas (hora, alimento, quantidade, calorias estimadas, local e contexto de fome/motivo) e soma **2.916 kcal**, conferida contra o total publicado. Uma quantidade de sanduíche está ausente e permanece nula; água tem zero kcal explícito, não ausência. Esse dia exemplifica registo e contexto: **não é uma dieta indicada nem uma meta de 2.916 kcal**. Valores por item não viram composição universal por 100 g.
+
+A extração resolveu as células `rowspan` da própria tabela; caso contrário, horário/local/calorias mudariam de coluna nas linhas seguintes. O JSON guarda índice da linha, alimento, quantidade publicada e energia da fonte, sem inventar pesos ou plano alimentar. O cálculo de consumo real continuará dependente de N02/N03 e de ingredientes/quantidades confirmados.
+
+### Chamada e reprodução
+
+- Manifestos: `evidencias/2026-09-30/n10-perda-peso/plano-coleta.json` e `plano-link-canonico.json`. GET público, sem chave, com `Accept: application/json,text/html,text/plain`, TLS padrão, 25 s, até 2 MiB e sem retry automático.
+- A URL curta inicialmente tentada para porções retornou **404**; o link existente no guia NIDDK indicou `/just-enough-food-portions`, que respondeu 200. A falha permanece registrada sob outro ID; não significa indisponibilidade do NIDDK nem foi sobrescrita.
+- `.evidencia.json` registra URL inicial/final, método, cabeçalhos, status, data UTC, tamanho, SHA-256 e corpo local. São páginas e tabelas HTML, **não APIs JSON de dietas**. `conteudo-guiado.json` é projeção nossa, não retorno original.
+- Reproduzir: `python -X utf8 docs/conteudo/evidencias/analisar-perda-peso.py`, biblioteca padrão e raw local, sem rede. Confere hashes, títulos, datas, cinco etapas CDC, tabela/total, políticas e vínculo antigo do PR06. Texto integral de terceiros fica apenas em raw ignorado.
+
+### Direitos e correção da conclusão anterior
+
+NHS geral (NU21) usa a política OGL já guardada em N08, com exclusões e condições de adaptação/atribuição. A [política NIDDK](https://www.niddk.nih.gov/copyright) permite reproduzir a maioria do texto, excluindo certos materiais conjuntos/gráficos; versões editadas precisam remover logos e não sugerir endosso ou aconselhamento médico específico. Esses textos são candidatos, não conteúdo aprovado para todas as pessoas.
+
+A [política CDC](https://www.cdc.gov/other/agencymaterials.html) exige crédito, ausência de endosso, informação de que a origem é gratuita e preservação do conteúdo substantivo, além de ressalvas de terceiros e jurisdição. **NU22 fica condicional para a adaptação pt-PT.** Não equiparar domínio público federal dos EUA a licença irrestrita de qualquer foto, tradução ou uso em Portugal.
+
+Os [termos Better Health](https://www.nhs.uk/better-health/terms-and-conditions/) exigem licença comercial; a [EULA do app](https://www.nhs.uk/better-health/apps-terms-and-conditions/) restringe app/documentos ao uso pessoal e limita tradução/adaptação. **NU24 é incompatível com o caminho comercial gratuito demonstrado**, mesmo quando o app é gratuito ao consumidor.
+
+Isso também corrige **PR06 — Couch to 5K**: o HTML recebido em 26/09 aponta, no próprio rodapé, os termos Better Health agora guardados. A conclusão anterior baseada apenas na OGL geral foi retirada; catálogo, gerador do piloto e resumo derivado passam a indicar **direitos condicionais**, aguardando permissão específica/exceção para texto e PDF exatos. Os 27 registos e suas verificações técnicas permanecem válidos como pesquisa; nenhuma autorização comercial foi obtida. Os corpos originais e check-ins históricos ficam preservados, acompanhados desta correção atual.
+
+### O que a futura experiência pode receber e o que falta
+
+A estrutura proposta organiza `guideId/sourceId`, instituição, público, versão/data, hash/URL, base editorial, direitos por ativo, rascunho/revisão pt-PT e lições relacionadas. O diário receberá alimento, quantidade/unidade, horário e contexto opcional, respeitando os contratos nutricionais anteriores. Retorno útil: explicar uma comparação, calcular consumo confirmado e mostrar evolução de ações escolhidas; não converter objetivo declarado em dieta, prazo garantido ou diagnóstico.
+
+`individualEnergyTargetKcal` e `individualWeightLossTargetKg` ficam nulos. As faixas gerais das fontes permanecem identificadas como referências, com `applyAutomatically: false`. Contextos de menoridade, gravidez, condições médicas, dietas especiais, transtornos alimentares ou dados desconhecidos não podem receber silenciosamente o percurso de adulto geral; essas fronteiras são propostas editoriais, não triagem clínica validada. Texto gratuito também não substitui o apoio profissional descrito por um programa estruturado.
+
+**Temos:** guias humanos e conteúdo candidato, critérios de avaliação, exemplos aritméticos e de diário, campos de proveniência e direitos específicos. **Falta:** revisão/localização nutricional pt-PT, aprovação por ativo, programa alimentar completo com apoio apropriado, metas individualizadas fundamentadas, integração e validação do produto. **Próximo da fila: N11 — manutenção, hábitos e qualidade alimentar**; não iniciado neste incremento. A etapa 01 continua aberta.
 
 ## AL02 / AL06 — histórico de respostas sem negócio
 
@@ -610,6 +734,8 @@ Esses campos podem fundamentar classificação e estimativas posteriores; não m
 Evidência local `docs/conteudo/evidencias/compendium-*.evidencia.json`, resumo [resumo-expansao.json](evidencias/resumo-expansao.json). O SHA-256 registrado é do HTML original; só restou o recorte da tabela, portanto não pode ser recalculado a partir dele. Uso comercial e atribuição documentados no catálogo da fonte.
 
 ## PR06 — programa de corrida NHS
+
+**Correção em 30/09 (N10): direitos comerciais condicionais.** O rodapé do HTML original liga aos termos específicos Better Health, que exigem licença comercial; a conclusão OGL anterior não libera a importação. Ver [evidência e correção](#n10--alimentação-para-perder-peso). Piloto e contagens técnicas preservados; sem publicação aprovada.
 
 ```http
 GET https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/

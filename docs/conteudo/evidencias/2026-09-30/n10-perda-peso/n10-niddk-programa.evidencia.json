@@ -1,0 +1,21 @@
+{
+  "id": "n10-niddk-programa",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:04.157257+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Criterios, evidencias e promessas inadequadas de programas de perda de peso",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 68848,
+  "bodyFile": "../raw/n10-niddk-programa.html",
+  "sha256": "fdfde2c7316542b484239cdbd09c93b71d9e7cceb7b278208919ad54ad4dc725"
+}

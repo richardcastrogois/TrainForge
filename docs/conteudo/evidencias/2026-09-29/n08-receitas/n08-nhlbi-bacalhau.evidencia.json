@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhlbi-bacalhau",
+  "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:06.217247+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receita humana: ingredientes, unidades, preparo, rendimento e nutrientes por porcao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 58157,
+  "bodyFile": "../raw/n08-nhlbi-bacalhau.html",
+  "sha256": "e670d4ffa80082d95ad4076f99152aeb7968fe1dbbfa3e28c2c882cbed3259ec"
+}

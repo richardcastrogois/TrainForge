@@ -1,0 +1,21 @@
+{
+  "id": "n08-dgs-bacalhau",
+  "url": "https://alimentacaosaudavel.dgs.pt/receitas/canelone-de-bacalhau/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:08.199113+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receita portuguesa candidata; verificar conteudo real ou bloqueio",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://alimentacaosaudavel.dgs.pt/receitas/canelone-de-bacalhau/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 53723,
+  "bodyFile": "../raw/n08-dgs-bacalhau.html",
+  "sha256": "a1cb95e75c4d9a70dab259f62d58637c3a414381c385d554c5742bdc3f43fb6c"
+}

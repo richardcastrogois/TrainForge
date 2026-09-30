@@ -1,0 +1,478 @@
+{
+  "niche": "N09",
+  "date": "2026-09-30",
+  "scope": "Educacao e rastreabilidade de guias humanos, nao dieta pessoal nem equivalencia calorica universal",
+  "guides": [
+    {
+      "id": "G09-01",
+      "sourceId": "NU17",
+      "evidence": "n09-nhs-ganho.evidencia.json",
+      "publisher": "NHS",
+      "audience": "adultos; orientacao geral",
+      "basis": "Guia institucional de educacao em saude, nao ensaio de cada refeicao nem plano individual",
+      "observedFormat": "HTML; titulo, listas Do/Dont, encaminhamentos e datas",
+      "sourceLastReview": "2023-03-28",
+      "sourceNextReviewDue": "2026-03-28",
+      "reviewFlag": "Prazo de revisao exibido ja passou; nao significa sozinho conteudo falso, mas requer verificacao editorial antes de publicar",
+      "referenceEnergyAdditionKcal": [
+        300,
+        500
+      ],
+      "dailyKcalTarget": null,
+      "reuse": "OGL + termos NHS gerais; excluir calculadora, imagens e campanhas; traducao e adaptacao"
+    },
+    {
+      "id": "G09-02",
+      "sourceId": "NU18",
+      "evidence": "n09-va-calorias-pdf.evidencia.json",
+      "publisher": "VA Nutrition and Food Services",
+      "audience": "pessoas que precisam adicionar energia; contexto de educacao com dietista VA",
+      "basis": "Folheto institucional julho 2026; valores declarados por exemplo, nao recalculados",
+      "observedFormat": "PDF 2 paginas; nove grupos/ideias e 14 exemplos com kcal/proteina; alvos pessoais em branco",
+      "sourceVersion": "07/2026",
+      "dailyKcalTarget": null,
+      "reuse": "Texto de autoria federal candidato segundo politica VA; conferir terceiros, marcas e traducao"
+    },
+    {
+      "id": "G09-03",
+      "sourceId": "NU18",
+      "evidence": "n09-va-smoothie-pdf.evidencia.json",
+      "publisher": "VA Nutrition and Food Services",
+      "audience": "educacao culinaria e adaptacoes de textura/sabor com escolhas pessoais",
+      "basis": "Folheto institucional junho 2024 com grupos e seis combinacoes exemplificadas",
+      "observedFormat": "PDF 2 paginas, tabelas de opcoes e exemplos; sem nutrientes ou rendimento total por bebida",
+      "sourceVersion": "06/2024",
+      "dailyKcalTarget": null,
+      "reuse": "Mesmo criterio VA; mencoes de suplementos/marcas nao sao endosso ou necessidade do app"
+    },
+    {
+      "id": "G09-04",
+      "sourceId": "NU19",
+      "evidence": "n09-bda-apetite.evidencia.json",
+      "publisher": "British Dietetic Association / ICUsteps",
+      "audience": "recuperacao apos doenca critica, pouco apetite/saciedade precoce",
+      "basis": "Guia baseado em experiencia de antigos pacientes de cuidados intensivos e orientacao dietetica; nao generalizar",
+      "observedFormat": "HTML com contexto, listas de ideias e ressalvas",
+      "sourceVersion": "2020-06-15",
+      "dailyKcalTarget": null,
+      "reuse": "Referencia; copyright nao autoriza incorporacao comercial gratuita"
+    },
+    {
+      "id": "G09-05",
+      "sourceId": "NU20",
+      "evidence": "n09-nice-refeeding.evidencia.json",
+      "publisher": "NICE",
+      "audience": "profissionais que prestam suporte nutricional a adultos",
+      "basis": "CG32, recomendacoes 1.4.5 a 1.4.8 sobre risco de realimentacao e necessidade de equipa treinada",
+      "observedFormat": "HTML de guideline clinica, nao API nem questionario validado do TrainForge",
+      "dailyKcalTarget": null,
+      "reuse": "Referencia de limites; nenhum protocolo/dose clinica copiado para motor do app"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "G09-L01",
+      "title": "Entender o objetivo",
+      "draftPtPT": "Ganhar peso, recuperar de uma doenca e ganhar massa muscular precisam de percursos distintos.",
+      "basisGuideIds": [
+        "G09-01",
+        "G09-04"
+      ],
+      "futureFields": [
+        "goalIntent",
+        "contextKnown"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L02",
+      "title": "Distribuir oportunidades para comer",
+      "draftPtPT": "O guia geral apresenta refeicoes menores e lanches quando grandes volumes dificultam a rotina.",
+      "basisGuideIds": [
+        "G09-01"
+      ],
+      "futureFields": [
+        "mealTimes",
+        "appetiteOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L03",
+      "title": "Adicionar energia com variedade",
+      "draftPtPT": "Comparar opcoes e quantidades na refeicao, em vez de rotular um alimento como garantia de engordar.",
+      "basisGuideIds": [
+        "G09-01",
+        "G09-02"
+      ],
+      "futureFields": [
+        "foodId",
+        "amount",
+        "unit",
+        "preparationState"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L04",
+      "title": "Saber o que os exemplos significam",
+      "draftPtPT": "Os 14 exemplos VA descrevem combinacoes e valores da fonte; mudancas de ingredientes ou marcas pedem nova composicao.",
+      "basisGuideIds": [
+        "G09-02"
+      ],
+      "futureFields": [
+        "sourceVersion",
+        "exampleId",
+        "ingredientMappingStatus"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L05",
+      "title": "Montar e registar uma bebida",
+      "draftPtPT": "O guia VA organiza bases, fruta/horticolas e complementos. O utilizador ainda precisa confirmar ingredientes e quantidades.",
+      "basisGuideIds": [
+        "G09-03"
+      ],
+      "futureFields": [
+        "ingredients",
+        "quantities",
+        "allergenConfirmation"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L06",
+      "title": "Preservar o contexto clinico",
+      "draftPtPT": "Conselhos de enriquecimento apos cuidados intensivos nao sao uma dieta geral para todos.",
+      "basisGuideIds": [
+        "G09-04"
+      ],
+      "futureFields": [
+        "clinicalContextOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L07",
+      "title": "Reconhecer quando pedir ajuda",
+      "draftPtPT": "Perda involuntaria ou muito rapida e dificuldade prolongada em comer exigem orientacao apropriada antes de sugerir aumentos automaticos.",
+      "basisGuideIds": [
+        "G09-01",
+        "G09-05"
+      ],
+      "futureFields": [
+        "unintentionalLossOptional",
+        "intakeConcernOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L08",
+      "title": "Guardar metas sem inventa-las",
+      "draftPtPT": "A faixa geral do NHS e os campos em branco VA nao fornecem a meta individual. Registar origem e revisao se a pessoa ja tem orientacao.",
+      "basisGuideIds": [
+        "G09-01",
+        "G09-02"
+      ],
+      "futureFields": [
+        "targetProvenance",
+        "targetOptional"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    },
+    {
+      "id": "G09-L09",
+      "title": "Acompanhar com contexto",
+      "draftPtPT": "Organizar diario e historico voluntarios; nao inferir massa muscular a partir da variacao da balanca. Ganho muscular sera pesquisado em N12.",
+      "basisGuideIds": [
+        "G09-01"
+      ],
+      "futureFields": [
+        "optionalWeightHistory",
+        "mealLog",
+        "trainingGoal"
+      ],
+      "textAuthorship": "sintese editorial assistida por agente a partir das fontes humanas, nao validacao profissional",
+      "releaseApproved": false
+    }
+  ],
+  "mealExamplesFromVa": [
+    {
+      "id": "VA-GAIN-01",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 1,
+      "descriptionOriginal": "1 cup Greek yogurt with 1 oz. granola and 1 oz cashews",
+      "energyKcalDeclared": 416.0,
+      "proteinGDeclared": 29.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-02",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 2,
+      "descriptionOriginal": "Smoothie made with ½ cup whole milk Greek yogurt, 1 banana small, 1 cup whole milk, 1 scoop (28g) whey protein, and 1 Tbsp. natural peanut butter",
+      "energyKcalDeclared": 573.0,
+      "proteinGDeclared": 46.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-03",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 3,
+      "descriptionOriginal": "Bagel with 2 Tbsp. cream cheese and 1 Tbsp. jelly",
+      "energyKcalDeclared": 623.0,
+      "proteinGDeclared": 13.2,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-04",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 4,
+      "descriptionOriginal": "1 cup cooked oatmeal made with 1 cup whole milk, 2 tsp. honey, 1 banana and ½ cup dried cranberries",
+      "energyKcalDeclared": 836.0,
+      "proteinGDeclared": 19.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-05",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 5,
+      "descriptionOriginal": "Egg salad sandwich made with 2 hardboiled eggs, 2 Tbsp mayonnaise on wheat bread",
+      "energyKcalDeclared": 512.0,
+      "proteinGDeclared": 18.6,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-06",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 6,
+      "descriptionOriginal": "2 pieces wheat bread, 2 tbsp natural peanut butter, 1 small banana",
+      "energyKcalDeclared": 456.0,
+      "proteinGDeclared": 14.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-07",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 7,
+      "descriptionOriginal": "Turkey sandwich (3oz meat) with ½ cup avocado and 1 Tbsp mayonnaise",
+      "energyKcalDeclared": 298.0,
+      "proteinGDeclared": 17.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-08",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 8,
+      "descriptionOriginal": "1 cup 2% cottage cheese with ¼ cup dried fruit (cranberries, raisins, or apricots), ¼ cup nuts",
+      "energyKcalDeclared": 513.0,
+      "proteinGDeclared": 35.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-09",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 9,
+      "descriptionOriginal": "Trail mix: 1 oz. almonds and walnuts, ¼ cup raisins, and 1/2 cup granola",
+      "energyKcalDeclared": 771.0,
+      "proteinGDeclared": 21.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-10",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 10,
+      "descriptionOriginal": "1 cup pasta, ¼ cup pesto, 3 oz grilled chicken",
+      "energyKcalDeclared": 535.0,
+      "proteinGDeclared": 30.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-11",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 11,
+      "descriptionOriginal": "1 cup turkey chili with beans over a baked potato with 1 oz shredded cheddar cheese, 2 tbsp sour cream",
+      "energyKcalDeclared": 389.0,
+      "proteinGDeclared": 24.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-12",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 12,
+      "descriptionOriginal": "1 cup creamy tomato soup, ½ cup croutons, 1 oz cheddar cheese",
+      "energyKcalDeclared": 324.0,
+      "proteinGDeclared": 13.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-13",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 13,
+      "descriptionOriginal": "2 graham cracker squares with 2 Tbsp. natural peanut butter and 1 cup whole milk",
+      "energyKcalDeclared": 415.0,
+      "proteinGDeclared": 16.0,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    },
+    {
+      "id": "VA-GAIN-14",
+      "sourceEvidence": "n09-va-calorias-pdf.evidencia.json",
+      "page": 2,
+      "row": 14,
+      "descriptionOriginal": "1 oz dark chocolate, 1 cup strawberries, 1 oz cashews",
+      "energyKcalDeclared": 373.0,
+      "proteinGDeclared": 8.4,
+      "basis": "example_as_described_not_per_100g",
+      "fullNutrientsAvailable": false,
+      "dailyRecommendation": false,
+      "ptPTReviewed": false
+    }
+  ],
+  "smoothieExampleNames": [
+    "Green Pineapple Crush",
+    "Green Smoothie",
+    "Peach & Greens",
+    "Tropical Green Smoothie",
+    "Triple Berry Green Smoothie",
+    "Beet & Berry"
+  ],
+  "editorialScenarios": [
+    {
+      "id": "adult_general",
+      "context": "adulto, procura educacao geral",
+      "expected": "mostrar ensino e registo; nao gerar meta",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "muscle_gain",
+      "context": "quer hipertrofia/desempenho",
+      "expected": "separar N12; nao assumir que todo peso ganho e musculo",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "unexpected_loss",
+      "context": "relata perda involuntaria ou subita",
+      "expected": "orientar procura de profissional; nao ativar superavit automatico",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "post_critical_illness",
+      "context": "recuperacao apos doenca critica",
+      "expected": "material contextual; plano individual com equipa assistente",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "minimal_intake",
+      "context": "relata alimentacao muito reduzida por varios dias",
+      "expected": "nao fornecer protocolo de realimentacao; orientacao profissional",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "minor",
+      "context": "menor de 18 anos",
+      "expected": "fora do recorte adulto, sem metas de adulto",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "pregnancy",
+      "context": "gravidez ou amamentacao",
+      "expected": "percurso especifico nao validado neste nicho",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    },
+    {
+      "id": "unknown",
+      "context": "contexto nao informado",
+      "expected": "permitir consulta geral; nao presumir adequacao ou calcular alvo",
+      "basis": "politica editorial proposta com limites das fontes; nao instrumento clinico validado",
+      "automaticCalorieTarget": null,
+      "publicationApproved": false
+    }
+  ],
+  "rightsEvidenceReused": [
+    "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json",
+    "2026-09-29/n08-receitas/n08-nhs-excecoes.evidencia.json",
+    "2026-09-29/n08-receitas/n08-ogl-v3.evidencia.json"
+  ],
+  "visualInspection": {
+    "pages": 4,
+    "artifactLocal": "../raw/n09-pdfs-conferencia.png",
+    "finding": "Cabeçalhos, linhas de kcal/proteina, campos pessoais vazios e grupos dos smoothies conferidos visualmente em 30/09."
+  },
+  "releaseApproved": false,
+  "rightsPathBase": "docs/conteudo/evidencias/"
+}

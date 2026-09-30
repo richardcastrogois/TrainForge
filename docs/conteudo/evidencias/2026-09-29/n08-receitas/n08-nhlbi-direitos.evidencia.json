@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhlbi-direitos",
+  "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:07.840948+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica de reutilizacao, alteracao, imagens e publicidade",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 63211,
+  "bodyFile": "../raw/n08-nhlbi-direitos.html",
+  "sha256": "45644df8d01d224ec2de1644ce913d490eb37b1fd23f82c6fbaf91b16d646af1"
+}

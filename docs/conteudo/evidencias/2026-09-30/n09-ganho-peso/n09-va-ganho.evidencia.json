@@ -1,0 +1,21 @@
+{
+  "id": "n09-va-ganho",
+  "url": "https://www.nutrition.va.gov/NUTRITION/Weight_Management_If_you_need_to_gain_weight.asp",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:02:26.848659+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Catalogo institucional de orientacoes para ganho de peso; localizar guia humano real",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nutrition.va.gov/NUTRITION/Weight_Management_If_you_need_to_gain_weight.asp",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 69227,
+  "bodyFile": "../raw/n09-va-ganho.html",
+  "sha256": "cb8c7ec6b2f1aaab5ea66dea9135cf512fd7e5b183f8352038343ab15bf363c8"
+}

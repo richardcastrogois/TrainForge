@@ -27,7 +27,7 @@ Dores, limitações e retornos após pausa ou cirurgia fazem parte da investiga�
 | Aplicativo | Base Flutter existente, com autenticação e fluxos iniciais de treino; interface final ainda por implementar |
 | Backend | API Fastify/TypeScript/Prisma/PostgreSQL mantida separadamente em `bootcamp-treinos-api`; não está incluída neste repositório |
 | Design | Figma v0.4 inventariado em setembro de 2026; próximos ajustes especificados, ainda não aplicados |
-| Conteúdo | 43 fontes/famílias investigadas; amostras e limites documentados. Não equivale a catálogo homologado |
+| Conteúdo | 61 fontes/famílias; N01–N10 concluídos para pesquisa em 30/09/2026, com retornos, direitos e limites documentados. Não equivale a catálogo homologado |
 | Planeamento | Etapa 0 inventariada; etapa 01 aberta para fechar conteúdo, direitos, métodos e viabilidade da visão integral |
 | Publicação | [Primeiro commit da base](https://github.com/richardcastrogois/TrainForge/commit/16565d5e882e89d094150e79e2a2c0934af758af) em 24/09/2026; sem deploy ou lançamento nas lojas |
 

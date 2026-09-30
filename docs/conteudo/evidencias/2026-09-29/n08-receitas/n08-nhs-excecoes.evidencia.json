@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhs-excecoes",
+  "url": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:52:29.424944+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Exclusoes de subsite e imagens; licenca geral nao e suficiente",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 22278,
+  "bodyFile": "../raw/n08-nhs-excecoes.html",
+  "sha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e"
+}

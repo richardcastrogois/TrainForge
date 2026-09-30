@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhlbi-maca",
+  "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/apple-coffee-cake",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:07.235083+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receita de forno: fracoes, porcao, ingredientes e nutrientes",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/apple-coffee-cake",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 56204,
+  "bodyFile": "../raw/n08-nhlbi-maca.html",
+  "sha256": "4c4e6b16c275b77a2a8c9fd42b7bb5eb5a865413c7d6afd0c4b1d9b928373ec0"
+}

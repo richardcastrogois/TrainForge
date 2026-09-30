@@ -1,0 +1,13 @@
+{
+  "niche": "N09",
+  "scope": "Diagnostico isolado de 406: servidor declarou que Accept nao incluia MIME PDF. Uma chamada corrigida; sem retry automatico.",
+  "requests": [
+    {
+      "id": "n09-va-calorias-pdf",
+      "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+      "purpose": "Correcao explicita de Accept apos 406; preservar evidencia anterior",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

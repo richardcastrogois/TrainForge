@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "scope": "Oito receitas distintas, nove paginas de receita; amostra de conveniencia, nao catalogo aprovado",
+  "notice": "Campos normalizados pela pesquisa. Textos completos preservados somente no raw local; nenhum corpus comercial importado.",
+  "recipes": [
+    {
+      "id": "n08-nhlbi-bacalhau",
+      "sourceId": "NU03",
+      "name": "Braised Cod With Leeks",
+      "sourceUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks",
+      "evidenceFile": "n08-nhlbi-bacalhau.evidencia.json",
+      "originalResponseSha256": "e670d4ffa80082d95ad4076f99152aeb7968fe1dbbfa3e28c2c882cbed3259ec",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "condicional: politica institucional, adaptacao/publicidade e midia separadas",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML h2 + ul/ol + th/td; sem Recipe JSON-LD",
+      "ingredientCount": 9,
+      "instructionCount": 4,
+      "ingredientExample": "1 Tbsp butter",
+      "declaredValues": {
+        "Prep Time": "15 minutes",
+        "Cook Time": "25 minutes",
+        "Yields": "4 servings",
+        "Serving Size": "3 oz cod, 1½ C broth and vegetables",
+        "Calories": "158",
+        "Total Fat": "4 g",
+        "Saturated Fat": "2 g",
+        "Cholesterol": "42 mg",
+        "Sodium": "437 mg",
+        "Total Fiber": "3 g",
+        "Protein": "17 g",
+        "Carbohydrates": "13 g",
+        "Potassium": "476 mg"
+      },
+      "recipeSource": "Deliciously Healthy Dinners",
+      "missing": [
+        "individual_author",
+        "allergen_declaration",
+        "food_ids",
+        "full_micronutrients",
+        "cooked_batch_mass"
+      ]
+    },
+    {
+      "id": "n08-nhlbi-lentilhas",
+      "sourceId": "NU03",
+      "name": "Lentil Soup",
+      "sourceUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/lentil-soup",
+      "evidenceFile": "n08-nhlbi-lentilhas.evidencia.json",
+      "originalResponseSha256": "fb646516a0998a5fe2ca5d49e01821d3b6ef0ec2895205aed9edfa85fcd6af93",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "condicional: politica institucional, adaptacao/publicidade e midia separadas",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML h2 + ul/ol + th/td; sem Recipe JSON-LD",
+      "ingredientCount": 12,
+      "instructionCount": 5,
+      "ingredientExample": "2 Tbsp olive oil",
+      "declaredValues": {
+        "Prep Time": "15 minutes",
+        "Cook Time": "1 hour 30 minutes",
+        "Yields": "11 servings",
+        "Serving Size": "1 C",
+        "Calories": "151",
+        "Total Fat": "3 g",
+        "Saturated Fat": "0 g",
+        "Cholesterol": "0 mg",
+        "Sodium": "248 mg",
+        "Total Fiber": "7 g",
+        "Protein": "9 g",
+        "Carbohydrates": "24 g",
+        "Potassium": "503 mg"
+      },
+      "recipeSource": "Delicious Heart Healthy Latino Recipes",
+      "missing": [
+        "individual_author",
+        "allergen_declaration",
+        "food_ids",
+        "full_micronutrients",
+        "cooked_batch_mass"
+      ]
+    },
+    {
+      "id": "n08-nhlbi-maca",
+      "sourceId": "NU03",
+      "name": "Apple Coffee Cake",
+      "sourceUrl": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/apple-coffee-cake",
+      "evidenceFile": "n08-nhlbi-maca.evidencia.json",
+      "originalResponseSha256": "4c4e6b16c275b77a2a8c9fd42b7bb5eb5a865413c7d6afd0c4b1d9b928373ec0",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "condicional: politica institucional, adaptacao/publicidade e midia separadas",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML h2 + ul/ol + th/td; sem Recipe JSON-LD",
+      "ingredientCount": 10,
+      "instructionCount": 5,
+      "ingredientExample": "5 C tart apples, cored, peeled, and chopped",
+      "declaredValues": {
+        "Prep Time": "10 minutes",
+        "Cook Time": "40 minutes",
+        "Yields": "20 servings",
+        "Serving Size": "3½-inch × 2½-inch piece",
+        "Calories": "188",
+        "Total Fat": "5 g",
+        "Saturated Fat": "1 g",
+        "Cholesterol": "11 mg",
+        "Sodium": "68 mg"
+      },
+      "recipeSource": "Stay Young At Heart",
+      "missing": [
+        "individual_author",
+        "allergen_declaration",
+        "food_ids",
+        "full_micronutrients",
+        "cooked_batch_mass"
+      ]
+    },
+    {
+      "id": "n08-nhs-aveia",
+      "sourceId": "NU14",
+      "name": "Easy overnight oats recipe",
+      "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/easy-overnight-oats/",
+      "evidenceFile": "n08-nhs-aveia.evidencia.json",
+      "originalResponseSha256": "bc9c11495355cb4ceccb1d720042c57efe556bb43cf2230bca1351a30776aca4",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "incompativel_zero: termos especificos exigem licenca comercial",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML + script application/ld+json @type Recipe",
+      "observedJsonKeys": [
+        "@context",
+        "@type",
+        "cookTime",
+        "datePublished",
+        "description",
+        "image",
+        "name",
+        "nutrition",
+        "prepTime",
+        "publisher",
+        "recipeCategory",
+        "recipeIngredient",
+        "recipeInstructions",
+        "recipeYield",
+        "suitableForDiet",
+        "totalTime"
+      ],
+      "ingredientCount": 8,
+      "instructionCount": 3,
+      "ingredientExample": "150g high-fibre porridge oats",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NHS Better Health - Healthier Families"
+      },
+      "declaredValues": {
+        "recipeYield": "serves 4",
+        "prepTime": "PT10M",
+        "cookTime": null,
+        "totalTime": "PT10M",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "294kcal",
+          "carbohydrateContent": "58g",
+          "fatContent": "4g",
+          "proteinContent": "10g",
+          "saturatedFatContent": "4g",
+          "sugarContent": "29g"
+        },
+        "suitableForDiet": [
+          "https://schema.org/GlutenFreeDiet",
+          "https://schema.org/VegetarianDiet"
+        ]
+      },
+      "visibleNutrition": [
+        "1,230 kJ / 294kcal",
+        "10g protein",
+        "58g carbohydrate, of which 29g sugars",
+        "4g fat, of which 4g saturates",
+        "8g fibre",
+        "0.2g salt"
+      ],
+      "missing": [
+        "food_ids",
+        "ingredient_grams_for_each_unit",
+        "cooked_batch_mass",
+        "individual_author",
+        "allergen_verification"
+      ]
+    },
+    {
+      "id": "n08-nhs-salmao",
+      "sourceId": "NU14",
+      "name": "Salmon and broccoli pasta recipe",
+      "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/salmon-and-broccoli-pasta/",
+      "evidenceFile": "n08-nhs-salmao.evidencia.json",
+      "originalResponseSha256": "4ad924836743496dcca60e5afe4f297dd3efe1d2b1b8e60977305d611323125b",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "incompativel_zero: termos especificos exigem licenca comercial",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML + script application/ld+json @type Recipe",
+      "observedJsonKeys": [
+        "@context",
+        "@type",
+        "cookTime",
+        "datePublished",
+        "description",
+        "image",
+        "name",
+        "nutrition",
+        "prepTime",
+        "publisher",
+        "recipeCategory",
+        "recipeIngredient",
+        "recipeInstructions",
+        "recipeYield",
+        "suitableForDiet",
+        "totalTime"
+      ],
+      "ingredientCount": 11,
+      "instructionCount": 6,
+      "ingredientExample": "2 salmon fillets",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NHS Better Health - Healthier Families"
+      },
+      "declaredValues": {
+        "recipeYield": "serves 4",
+        "prepTime": "PT15M",
+        "cookTime": "PT15M",
+        "totalTime": "PT30M",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "465kcal",
+          "carbohydrateContent": "45.9g",
+          "fatContent": "13.8g",
+          "proteinContent": "34.2g",
+          "saturatedFatContent": "3.6g",
+          "sugarContent": "7.1g"
+        },
+        "suitableForDiet": []
+      },
+      "visibleNutrition": [
+        "1955kJ / 465kcal",
+        "34.2g protein",
+        "13.8g fat, of which 3.6g saturates",
+        "45.9g carbohydrate, of which 7.1g sugars",
+        "10.6g fibre",
+        "0.5g salt"
+      ],
+      "missing": [
+        "food_ids",
+        "ingredient_grams_for_each_unit",
+        "cooked_batch_mass",
+        "individual_author",
+        "allergen_verification"
+      ]
+    },
+    {
+      "id": "n08-nhs-chilli",
+      "sourceId": "NU14",
+      "name": "Tasty vegetarian chilli recipe",
+      "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/tasty-vegetarian-chilli/",
+      "evidenceFile": "n08-nhs-chilli.evidencia.json",
+      "originalResponseSha256": "d632add46eb47487c7eba31cc6bdbfa573804169e3241befdff84a99740e7052",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "incompativel_zero: termos especificos exigem licenca comercial",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML + script application/ld+json @type Recipe",
+      "observedJsonKeys": [
+        "@context",
+        "@type",
+        "cookTime",
+        "datePublished",
+        "description",
+        "image",
+        "name",
+        "nutrition",
+        "prepTime",
+        "publisher",
+        "recipeCategory",
+        "recipeIngredient",
+        "recipeInstructions",
+        "recipeYield",
+        "suitableForDiet",
+        "totalTime"
+      ],
+      "ingredientCount": 12,
+      "instructionCount": 3,
+      "ingredientExample": "2 teaspoons vegetable oil",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NHS Better Health - Healthier Families"
+      },
+      "declaredValues": {
+        "recipeYield": "serves 4",
+        "prepTime": "PT10M",
+        "cookTime": "PT30M",
+        "totalTime": "PT40M",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "400kcal",
+          "carbohydrateContent": "70g",
+          "fatContent": "5g",
+          "proteinContent": "21.5g",
+          "saturatedFatContent": "1g",
+          "sugarContent": "16.5g"
+        },
+        "suitableForDiet": [
+          "https://schema.org/GlutenFreeDiet",
+          "https://schema.org/VegetarianDiet"
+        ]
+      },
+      "visibleNutrition": [
+        "1,674kJ / 400kcal",
+        "21.5g protein",
+        "70g carbohydrate, of which 16.5g sugars",
+        "5g fat, of which 1g saturates",
+        "12g fibre",
+        "0.9g salt"
+      ],
+      "missing": [
+        "food_ids",
+        "ingredient_grams_for_each_unit",
+        "cooked_batch_mass",
+        "individual_author",
+        "allergen_verification"
+      ]
+    },
+    {
+      "id": "n08-dgs-bacalhau",
+      "sourceId": "NU01",
+      "name": "Canelone de bacalhau",
+      "sourceUrl": "https://alimentacaosaudavel.dgs.pt/receitas/canelone-de-bacalhau/",
+      "evidenceFile": "n08-dgs-bacalhau.evidencia.json",
+      "originalResponseSha256": "a1cb95e75c4d9a70dab259f62d58637c3a414381c385d554c5742bdc3f43fb6c",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "referencia: licenca comercial aberta nao demonstrada",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML de receita; JSON-LD Article, nao Recipe",
+      "ingredientCount": 15,
+      "instructionCount": 10,
+      "ingredientExample": "500g Grão-de-bico",
+      "declaredValues": {
+        "servings": 4,
+        "timeMinutes": 30,
+        "dateModified": "2020-01-30",
+        "recipeEnergyKcal": null
+      },
+      "missing": [
+        "recipe_nutrients",
+        "reviewer_named",
+        "reuse_permission",
+        "cooked_batch_mass"
+      ]
+    },
+    {
+      "id": "n08-medline-lentilhas",
+      "sourceId": "NU15",
+      "name": "Lentil Confetti Salad",
+      "sourceUrl": "https://medlineplus.gov/recipes/lentil-confetti-salad/",
+      "evidenceFile": "n08-medline-lentilhas.evidencia.json",
+      "originalResponseSha256": "2dd3253db2df6eba6f5b92a23e14699185efeaa15715401e1cfeb2d1f71b2e10",
+      "access": "GET HTML publico; nao e API REST de receitas",
+      "rightsDecision": "candidato texto: Healthy recipes explicitamente em dominio publico na politica MedlinePlus; imagens separadas",
+      "releaseApproved": false,
+      "clinicalSuitability": null,
+      "photoReuseApproved": false,
+      "finalCookedBatchMassG": null,
+      "ptPTReviewed": false,
+      "format": "HTML h3 + ul/ol e .mp-nutrition; sem Recipe JSON-LD",
+      "ingredientCount": 11,
+      "instructionCount": 7,
+      "ingredientExample": "1/2 cup dry lentils",
+      "publisher": "MedlinePlus / National Library of Medicine",
+      "creditedProvider": "Food Hero / Oregon State University",
+      "declaredValues": {
+        "servings": 6,
+        "servingSize": "2/3 cup (140g)",
+        "energyKcal": 160,
+        "proteinG": 1,
+        "carbohydrateG": 22,
+        "fatG": 6,
+        "saturatedFatG": 0.5,
+        "fiberG": 5,
+        "sugarsG": 4,
+        "addedSugarsG": 0,
+        "sodiumMg": 400,
+        "potassiumMg": 289,
+        "prepMinutes": 15,
+        "cookMinutes": 20,
+        "totalMinutes": 35
+      },
+      "missing": [
+        "individual_reviewer",
+        "cooked_batch_mass",
+        "allergen_verification",
+        "pt_PT_localisation"
+      ],
+      "reviewFlags": [
+        "Protein 1g e o retorno literal: conferir composicao antes de usar em metas; nao corrigir por palpite.",
+        "Direcoes na pagina do autor sao outra versao, com oito passos; nao fundir silenciosamente."
+      ]
+    }
+  ],
+  "sourceVersionComparison": {
+    "evidenceFile": "n08-foodhero-lentilhas.evidencia.json",
+    "authorDeclared": {
+      "@type": "Organization",
+      "@id": "foodhero.org",
+      "name": "Food Hero",
+      "url": "https://foodhero.org/"
+    },
+    "sameDishAs": "n08-medline-lentilhas",
+    "distinctRecipeCountIncrement": 0,
+    "yieldDeclared": "4 cups",
+    "jsonLdIngredientType": "string_concatenada",
+    "jsonLdInstructionCount": 6,
+    "visibleInstructionCount": 8,
+    "nutritionJsonLd": {
+      "@type": "NutritionInformation",
+      "servingSize": "2/3 cup"
+    },
+    "decision": "Nao usar array fragmentado como sequencia; comparar HTML. Direitos do MedlinePlus nao se transferem automaticamente ao site Food Hero."
+  }
+}

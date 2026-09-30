@@ -1,0 +1,21 @@
+{
+  "id": "n09-bda-direitos",
+  "url": "https://www.bda.uk.com/about-us/website/copyright.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T03:03:54.958007+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Direitos editoriais do guia BDA; separar acesso gratuito de redistribuicao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.bda.uk.com/about-us/website/copyright.html",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 111902,
+  "bodyFile": "../raw/n09-bda-direitos.html",
+  "sha256": "bd9048a831469c21f2454519aa25d28d56a1c6d916461cb114b7d588ac31f99c"
+}

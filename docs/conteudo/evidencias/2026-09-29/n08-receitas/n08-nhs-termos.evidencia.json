@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhs-termos",
+  "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:51:37.543669+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "OGL, excecoes, traducao, atualizacao e atribuicao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 64164,
+  "bodyFile": "../raw/n08-nhs-termos.html",
+  "sha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929"
+}

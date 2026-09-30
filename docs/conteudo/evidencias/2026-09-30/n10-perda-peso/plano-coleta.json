@@ -1,0 +1,60 @@
+{
+  "niche": "N10",
+  "scope": "Pesquisa de guias humanos para alimentacao/perda de peso; sem dieta ou meta individual e sem integracao",
+  "requests": [
+    {
+      "id": "n10-nhs-perda",
+      "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/",
+      "purpose": "Guia geral: escolhas, ritmo apenas de referencia, datas e limites",
+      "extension": "html"
+    },
+    {
+      "id": "n10-cdc-passos",
+      "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+      "purpose": "Cinco passos humanos para organizar escolhas e acompanhar progresso",
+      "extension": "html"
+    },
+    {
+      "id": "n10-niddk-programa",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+      "purpose": "Criterios, evidencias e promessas inadequadas de programas de perda de peso",
+      "extension": "html"
+    },
+    {
+      "id": "n10-niddk-porcoes",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/food-portions",
+      "purpose": "Ensino pratico da diferenca entre porcao da fonte e quantidade consumida",
+      "extension": "html"
+    },
+    {
+      "id": "n10-better-health",
+      "url": "https://www.nhs.uk/better-health/lose-weight/",
+      "purpose": "Verificar oferta de 12 semanas sem presumir licenca de importacao",
+      "extension": "html"
+    },
+    {
+      "id": "n10-better-health-termos",
+      "url": "https://www.nhs.uk/better-health/terms-and-conditions/",
+      "purpose": "Termos especificos da campanha, direitos comerciais e limites dieteticos",
+      "extension": "html"
+    },
+    {
+      "id": "n10-better-health-app-termos",
+      "url": "https://www.nhs.uk/better-health/apps-terms-and-conditions/",
+      "purpose": "Licenca pessoal dos apps e documentos; nao confundir com licenca de redistribuicao",
+      "extension": "html"
+    },
+    {
+      "id": "n10-cdc-direitos",
+      "url": "https://www.cdc.gov/other/agencymaterials.html",
+      "purpose": "Direitos textuais, atribuicao, traducao, nao endosso e excecoes por ativo/jurisdicao",
+      "extension": "html"
+    },
+    {
+      "id": "n10-niddk-direitos",
+      "url": "https://www.niddk.nih.gov/copyright",
+      "purpose": "Direitos, adaptacao, logos e terceiros nas paginas NIDDK",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n08-foodhero-lentilhas",
+  "url": "https://foodhero.org/recipes/lentil-confetti-salad",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:54:34.609319+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Confrontar versao do autor com MedlinePlus, sem assumir igualdade de nutrientes ou licenca",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://foodhero.org/recipes/lentil-confetti-salad",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 53433,
+  "bodyFile": "../raw/n08-foodhero-lentilhas.html",
+  "sha256": "6a9c33211c4920411c31687a3bc397b751f3c95d74df560709afdf3c7c9b3251"
+}

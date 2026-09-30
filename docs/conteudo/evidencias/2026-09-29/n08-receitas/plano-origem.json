@@ -1,0 +1,18 @@
+{
+  "niche": "N08",
+  "scope": "Checagem pontual da procedencia e versao do candidato MedlinePlus",
+  "requests": [
+    {
+      "id": "n08-foodhero-lentilhas",
+      "url": "https://foodhero.org/recipes/lentil-confetti-salad",
+      "purpose": "Confrontar versao do autor com MedlinePlus, sem assumir igualdade de nutrientes ou licenca",
+      "extension": "html"
+    },
+    {
+      "id": "n08-foodhero-criterios",
+      "url": "https://foodhero.org/recipe-criteria",
+      "purpose": "Criterios editoriais humanos vinculados na receita; preservar falha se houver",
+      "extension": "html"
+    }
+  ]
+}

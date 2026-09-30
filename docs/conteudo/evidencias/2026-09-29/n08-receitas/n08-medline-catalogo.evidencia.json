@@ -1,0 +1,21 @@
+{
+  "id": "n08-medline-catalogo",
+  "url": "https://medlineplus.gov/recipes/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:53:43.112288+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Colecao de receitas e categorias; sem importar todas",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://medlineplus.gov/recipes/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 27933,
+  "bodyFile": "../raw/n08-medline-catalogo.html",
+  "sha256": "8bbd66a8d549249159faede135316abe1b5931c302cf15f2509944f26331f02b"
+}

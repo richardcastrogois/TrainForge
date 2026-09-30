@@ -1,0 +1,21 @@
+{
+  "id": "n10-niddk-porcoes-canonico",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:56:22.284674+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Link real observado no guia NIDDK de selecao de programas e conferido via web; ensino de porcoes",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 73121,
+  "bodyFile": "../raw/n10-niddk-porcoes-canonico.html",
+  "sha256": "572f70fe59a824e4c1ae7607c38b8a7ab8366e564372a6e5a6e702089057eaf6"
+}

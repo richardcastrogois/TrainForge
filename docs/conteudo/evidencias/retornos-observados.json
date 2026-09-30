@@ -1921,6 +1921,913 @@
       "originalBodyHashMatches": true
     },
     {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-dgs-bacalhau.evidencia.json",
+      "artifactSha256": "7991c889899bd823e91fdd59a69e54b8686fd7dadf95149fb4402215017bf612",
+      "request": {
+        "method": "GET",
+        "url": "https://alimentacaosaudavel.dgs.pt/receitas/canelone-de-bacalhau/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:08.199113+00:00",
+      "httpStatus": 200,
+      "responseBytes": 53723,
+      "originalResponseSha256": "a1cb95e75c4d9a70dab259f62d58637c3a414381c385d554c5742bdc3f43fb6c",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-dgs-bacalhau.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-fns-receitas.evidencia.json",
+      "artifactSha256": "ef2b0077b2676c1ee3e5c17e382ced545c9a4289941c9a2b60c983f5e0b66022",
+      "request": {
+        "method": "GET",
+        "url": "https://www.fns.usda.gov/tn/recipes",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:10.859996+00:00",
+      "httpStatus": 403,
+      "responseBytes": 386,
+      "originalResponseSha256": "a6953b88b23467124cfc9349bcb2a833aa839be1f4aa241a2d8fe9951a9dfb41",
+      "error": "HTTP 403",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-fns-receitas.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-foodhero-criterios.evidencia.json",
+      "artifactSha256": "707ca86bb84af15be7f775b03f09258d778cd45bc25fd66b0f3be665b7495397",
+      "request": {
+        "method": "GET",
+        "url": "https://foodhero.org/recipe-criteria",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:54:36.321986+00:00",
+      "httpStatus": 403,
+      "responseBytes": 24659,
+      "originalResponseSha256": "89ec0404ab781bcaf703dfcae416e4a380cca69a215c5d5ccd4a5f94c9915037",
+      "error": "HTTP 403",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-foodhero-criterios.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-foodhero-lentilhas.evidencia.json",
+      "artifactSha256": "82684808c902423d18bdbadc2cc4f39e50bedc2637685fa72cbcc9edfacf958c",
+      "request": {
+        "method": "GET",
+        "url": "https://foodhero.org/recipes/lentil-confetti-salad",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:54:34.609319+00:00",
+      "httpStatus": 200,
+      "responseBytes": 53433,
+      "originalResponseSha256": "6a9c33211c4920411c31687a3bc397b751f3c95d74df560709afdf3c7c9b3251",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-foodhero-lentilhas.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-medline-catalogo.evidencia.json",
+      "artifactSha256": "b6c9a7437dab56c7afcba3091122c55e74d14b4d62f3cd6c2d8fdd1527bae4af",
+      "request": {
+        "method": "GET",
+        "url": "https://medlineplus.gov/recipes/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:53:43.112288+00:00",
+      "httpStatus": 200,
+      "responseBytes": 27933,
+      "originalResponseSha256": "8bbd66a8d549249159faede135316abe1b5931c302cf15f2509944f26331f02b",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-medline-catalogo.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-medline-direitos.evidencia.json",
+      "artifactSha256": "36c00f73e86dc83a60044d00de6e7032efb1377746201a05558e745ed76cd94b",
+      "request": {
+        "method": "GET",
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:53:41.844808+00:00",
+      "httpStatus": 200,
+      "responseBytes": 25583,
+      "originalResponseSha256": "1adc89f3956cc987655bb4321e4383d69349373500d8885760e0271e033314d0",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-medline-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-medline-lentilhas.evidencia.json",
+      "artifactSha256": "b2f96a2da34b85e7cf5951109756095ba2cd562e2f1a7d94f7ed2bf89dfebcdb",
+      "request": {
+        "method": "GET",
+        "url": "https://medlineplus.gov/recipes/lentil-confetti-salad/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:53:42.556444+00:00",
+      "httpStatus": 200,
+      "responseBytes": 26699,
+      "originalResponseSha256": "2dd3253db2df6eba6f5b92a23e14699185efeaa15715401e1cfeb2d1f71b2e10",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-medline-lentilhas.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhlbi-bacalhau.evidencia.json",
+      "artifactSha256": "ed809a3aa2a7ca9362d67e038b6bb11a3d05b328ca423953d1117c4a542893fa",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/braised-cod-leeks",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:06.217247+00:00",
+      "httpStatus": 200,
+      "responseBytes": 58157,
+      "originalResponseSha256": "e670d4ffa80082d95ad4076f99152aeb7968fe1dbbfa3e28c2c882cbed3259ec",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhlbi-bacalhau.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhlbi-catalogo.evidencia.json",
+      "artifactSha256": "9cb4786e44b598a359156628ecd232f7f4513d8e8a713d64cb2d54dcb12c72f4",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:05.173494+00:00",
+      "httpStatus": 200,
+      "responseBytes": 76725,
+      "originalResponseSha256": "99dc2820e5166221a22dbca9075c14c1b0c65db8a49b85e3e8c7e7c7ffbee050",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhlbi-catalogo.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhlbi-direitos.evidencia.json",
+      "artifactSha256": "58833dd6f32edede1de4c64dda76f43ba9ddae9b8de30b77099ecf4b7e2a0638",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:07.840948+00:00",
+      "httpStatus": 200,
+      "responseBytes": 63211,
+      "originalResponseSha256": "45644df8d01d224ec2de1644ce913d490eb37b1fd23f82c6fbaf91b16d646af1",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhlbi-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhlbi-lentilhas.evidencia.json",
+      "artifactSha256": "b77aeb0e709abdb71919c56ee61a280ee7e077dc6161258404bc00e56c014b00",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/lentil-soup",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:06.739497+00:00",
+      "httpStatus": 200,
+      "responseBytes": 56474,
+      "originalResponseSha256": "fb646516a0998a5fe2ca5d49e01821d3b6ef0ec2895205aed9edfa85fcd6af93",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhlbi-lentilhas.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhlbi-maca.evidencia.json",
+      "artifactSha256": "3897ed2638f439a5449b7d4afea7dcc97f580f7ef80b541bc5b9abb351f2efae",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods/healthy-eating-recipes/apple-coffee-cake",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:07.235083+00:00",
+      "httpStatus": 200,
+      "responseBytes": 56204,
+      "originalResponseSha256": "4c4e6b16c275b77a2a8c9fd42b7bb5eb5a865413c7d6afd0c4b1d9b928373ec0",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhlbi-maca.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-aveia.evidencia.json",
+      "artifactSha256": "ab0bcf0cf23929a6d90b2826e4a5f4dba795cd658e183a43884bdfa25636d6c7",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/healthier-families/recipes/easy-overnight-oats/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:33.960084+00:00",
+      "httpStatus": 200,
+      "responseBytes": 31858,
+      "originalResponseSha256": "bc9c11495355cb4ceccb1d720042c57efe556bb43cf2230bca1351a30776aca4",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-aveia.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-campanha-termos.evidencia.json",
+      "artifactSha256": "8c23d1a86fee10db6f40ca5a3acfd4852ebe721f1b8f77feb365732c0d222edd",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/healthier-families/terms-and-conditions/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:52:30.260203+00:00",
+      "httpStatus": 200,
+      "responseBytes": 50345,
+      "originalResponseSha256": "a11cd49a491a1d5812635712350a40a4d7fd281d4ea5135561245a1625ac2dc9",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-campanha-termos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-catalogo.evidencia.json",
+      "artifactSha256": "62277a059f6da1118cd5c8ef6d841e3e10ab7ac065a591f0bab7d412ea027a1a",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/healthier-families/recipes/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:32.699092+00:00",
+      "httpStatus": 200,
+      "responseBytes": 192346,
+      "originalResponseSha256": "30a186f9d8846836bf91cd83d4d452b5aeedd893f3a19136afe4ed639a4a2347",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-catalogo.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-chilli.evidencia.json",
+      "artifactSha256": "07ec4b0451efa9f9ed599c88e674813c7cd194abf2b2f3c2938fb94e3d42f719",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/healthier-families/recipes/tasty-vegetarian-chilli/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:36.369713+00:00",
+      "httpStatus": 200,
+      "responseBytes": 35233,
+      "originalResponseSha256": "d632add46eb47487c7eba31cc6bdbfa573804169e3241befdff84a99740e7052",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-chilli.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-excecoes.evidencia.json",
+      "artifactSha256": "63901feb6509df070f5f5f22eed78264b6f93f134119a5585b43c9957a6001af",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:52:29.424944+00:00",
+      "httpStatus": 200,
+      "responseBytes": 22278,
+      "originalResponseSha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-excecoes.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-salmao.evidencia.json",
+      "artifactSha256": "d6cb32a5b3bdf608014ca74a8d605e4d7b8f70463a3aa51bc88665d938c4628f",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/healthier-families/recipes/salmon-and-broccoli-pasta/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:35.106809+00:00",
+      "httpStatus": 200,
+      "responseBytes": 36605,
+      "originalResponseSha256": "4ad924836743496dcca60e5afe4f297dd3efe1d2b1b8e60977305d611323125b",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-salmao.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json",
+      "artifactSha256": "3f7811c4c5d008bffc3c864106dd1833298b5451a16e4499fc16af6510186e98",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:37.543669+00:00",
+      "httpStatus": 200,
+      "responseBytes": 64164,
+      "originalResponseSha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-nhs-termos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-ogl-v3.evidencia.json",
+      "artifactSha256": "1b48f775f6a07e2206e7d085d365baf8bb9129afdaabbb63e0d4567d490a36c8",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:51:38.497555+00:00",
+      "httpStatus": 200,
+      "responseBytes": 10450,
+      "originalResponseSha256": "f5b2b9f2af63647cde889fa6c3508f5705925295b74912c68caa28dd37e64aa5",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-ogl-v3.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/n08-themealdb-termos.evidencia.json",
+      "artifactSha256": "213d6ac150416a80f47dab6c2d3687c76b9a5716ef1e9f58891a9d27c19a420f",
+      "request": {
+        "method": "GET",
+        "url": "https://www.themealdb.com/terms_of_use.php",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T02:50:10.958505+00:00",
+      "httpStatus": 200,
+      "responseBytes": 9322,
+      "originalResponseSha256": "5a28c1f8dac04c0c69ec9e6273c17c4254f59f047b72a683a702d4769202de16",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-29/n08-receitas/../raw/n08-themealdb-termos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-bda-apetite.evidencia.json",
+      "artifactSha256": "f2bb96a26e28745600ee3f2eca676e5eaeb6ad277dda9162908491ce849f61da",
+      "request": {
+        "method": "GET",
+        "url": "https://www.bda.uk.com/resource/dont-feel-hungry-feel-full-when-eating.html",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:02:28.556854+00:00",
+      "httpStatus": 200,
+      "responseBytes": 136628,
+      "originalResponseSha256": "d31976ab3f789f4702716bed666f6cb237562d155280f2707988650d2b3658ca",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-bda-apetite.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-bda-direitos.evidencia.json",
+      "artifactSha256": "2553eb548f8dc85d6756c6ccd763f86e2eafcc64a216325ef5e5b60bb9d1ef48",
+      "request": {
+        "method": "GET",
+        "url": "https://www.bda.uk.com/about-us/website/copyright.html",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:03:54.958007+00:00",
+      "httpStatus": 200,
+      "responseBytes": 111902,
+      "originalResponseSha256": "bd9048a831469c21f2454519aa25d28d56a1c6d916461cb114b7d588ac31f99c",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-bda-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-nhs-ganho.evidencia.json",
+      "artifactSha256": "3edd63d18230a467ea3b40b1337c495be467f7111c04bc583d1fd5870f64f713",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:02:25.998447+00:00",
+      "httpStatus": 200,
+      "responseBytes": 32218,
+      "originalResponseSha256": "49eb58941b685f2740660909b44c5aa53903937357a33edc5f1ddaf321cd777f",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-nhs-ganho.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-nice-refeeding.evidencia.json",
+      "artifactSha256": "0d8db857b638332ffd9aa02b750f7a35c80397d5b783f2dd05781c5b9c7713d9",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:02:29.766007+00:00",
+      "httpStatus": 200,
+      "responseBytes": 108976,
+      "originalResponseSha256": "c803505044a62df75abda167c3a8a572744ad9b1eb72f5d04b99f8f532a9c987",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-nice-refeeding.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-calorias-pdf.evidencia.json",
+      "artifactSha256": "5a3548594fd6ebaacd5806a98a6387053c2de3c921de7878b4fc5c14a09641dd",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/pdf",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:04:56.130564+00:00",
+      "httpStatus": 200,
+      "responseBytes": 141563,
+      "originalResponseSha256": "e5d2550b02f89bd86ad11fc5d03b0c0a3d3db417ab39fbe3cd45d58fa3e7caa0",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-calorias-pdf.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-calorias.evidencia.json",
+      "artifactSha256": "d4f9d58316e3840438129f1bc5a3fa1c83c162668c46beb10fb1c3d8246edc29",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/HealthyWaystoAddCaloriesJul2026.pdf",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:03:50.477236+00:00",
+      "httpStatus": 406,
+      "responseBytes": 1346,
+      "originalResponseSha256": "2416fed1f11e00beab950c013307f6d6ab2ece9a6845c8423f3da35464f02096",
+      "error": "HTTP 406",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-calorias.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-direitos.evidencia.json",
+      "artifactSha256": "04345aac4db60d779fece68edc29d750d38f206b5f58e3027732e739ed33d158",
+      "request": {
+        "method": "GET",
+        "url": "https://department.va.gov/copyright-policy/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:03:52.006767+00:00",
+      "httpStatus": 200,
+      "responseBytes": 1144847,
+      "originalResponseSha256": "9fdfecce26fb96c3f4448883cd89711e13cb91e5b21b397cad3ded30545d604e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-ganho.evidencia.json",
+      "artifactSha256": "221f2fa3ec444841c8c13b0d04f2011d10eadabd32ed67db356ec8842a5a2d92",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.va.gov/NUTRITION/Weight_Management_If_you_need_to_gain_weight.asp",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:02:26.848659+00:00",
+      "httpStatus": 200,
+      "responseBytes": 69227,
+      "originalResponseSha256": "cb8c7ec6b2f1aaab5ea66dea9135cf512fd7e5b183f8352038343ab15bf363c8",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-ganho.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-smoothie-pdf.evidencia.json",
+      "artifactSha256": "a7ba27a4ed9c0fe795e2e56612f5943077f619509d56e002f8aee011211a4f82",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/pdf",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:05:28.665397+00:00",
+      "httpStatus": 200,
+      "responseBytes": 147208,
+      "originalResponseSha256": "0489068b05a4a400f05efc9deb5f5681b9d74d8a268feb59f13c32a7b46a36f4",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-smoothie-pdf.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/n09-va-smoothie.evidencia.json",
+      "artifactSha256": "f2514147eeb8cfbb0fe214cd5ead08ae984e7f2a3ad4d28da9191f0cf6d747f9",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nutrition.va.gov/NUTRITION/docs/UpdatedPatientEd/CreateYourOwnSmoothieJun2024.pdf",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T03:03:51.338068+00:00",
+      "httpStatus": 406,
+      "responseBytes": 1346,
+      "originalResponseSha256": "2416fed1f11e00beab950c013307f6d6ab2ece9a6845c8423f3da35464f02096",
+      "error": "HTTP 406",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n09-ganho-peso/../raw/n09-va-smoothie.pdf",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-better-health-app-termos.evidencia.json",
+      "artifactSha256": "7f161bc281bddfee505315f760154c108dad3768532bf5fef4ad765f05f0280b",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/better-health/apps-terms-and-conditions/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:06.781700+00:00",
+      "httpStatus": 200,
+      "responseBytes": 56709,
+      "originalResponseSha256": "951bcfebe3e786d7a759239a3bc5793aa330ab07e1cb9f10e808060f5e3879e5",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-better-health-app-termos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-better-health-termos.evidencia.json",
+      "artifactSha256": "282100156ba7d25611ed4f48001911353b8c7043218d86576abe55ee455d0e30",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/better-health/terms-and-conditions/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:05.902805+00:00",
+      "httpStatus": 200,
+      "responseBytes": 44368,
+      "originalResponseSha256": "186fbbd36f5667ef59a4971daac9791d5f1c3757f72dfa6fcfeac3d9d576fe9b",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-better-health-termos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-better-health.evidencia.json",
+      "artifactSha256": "43b545e2bfff254b2c5e8fd9164df25657e990fe1f6059e3f2ee31ac128e93d5",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/better-health/lose-weight/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:05.005587+00:00",
+      "httpStatus": 200,
+      "responseBytes": 64499,
+      "originalResponseSha256": "fc5d9dc177dc91cd5fd510c4a3aea1daa242d8f68fe6daa790e3beee6b1209d0",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-better-health.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-cdc-direitos.evidencia.json",
+      "artifactSha256": "1ae6f7f5b7f0797140265edc388c54c945cebd36ae16a3306eecd206c3ed4246",
+      "request": {
+        "method": "GET",
+        "url": "https://www.cdc.gov/other/agencymaterials.html",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:07.686771+00:00",
+      "httpStatus": 200,
+      "responseBytes": 80260,
+      "originalResponseSha256": "aa9c107b28a3161f2802eb7d054c5c110cebca3de49853c6f8a79ad2b81d9b5e",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-cdc-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-cdc-passos.evidencia.json",
+      "artifactSha256": "82694cf13adf3e88343d6e9b41c8b60ff83c68b9c55b64420d48e92ed1c97b4f",
+      "request": {
+        "method": "GET",
+        "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:03.186155+00:00",
+      "httpStatus": 200,
+      "responseBytes": 61991,
+      "originalResponseSha256": "56700111ea1a4fc818bef3a55aab32f635b481da9f4820c3e8bc8aa07a71a680",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-cdc-passos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-nhs-perda.evidencia.json",
+      "artifactSha256": "b592ec6f681c6e0c003839f45a2e3f1724a4f5e74740c600327c256c79fb9450",
+      "request": {
+        "method": "GET",
+        "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:02.278999+00:00",
+      "httpStatus": 200,
+      "responseBytes": 32971,
+      "originalResponseSha256": "27a7185bd6321ba34e078ede8bafdae4935b427dcf9ff311b7f0928f5dca831a",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-nhs-perda.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-niddk-direitos.evidencia.json",
+      "artifactSha256": "3e1266a7917d6edff6e92658bde332e9c38d225358e858244f2ece830c703ab3",
+      "request": {
+        "method": "GET",
+        "url": "https://www.niddk.nih.gov/copyright",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:07.907349+00:00",
+      "httpStatus": 200,
+      "responseBytes": 31550,
+      "originalResponseSha256": "c11dd24f95f04af9eaf3c54513f61d8c2b995b682b7550750e8f5e82127bf1b5",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-niddk-direitos.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-niddk-porcoes-canonico.evidencia.json",
+      "artifactSha256": "88728e2afb24644c6715acdd3b4876c3807b7b06637ddf57a64588c38ec86968",
+      "request": {
+        "method": "GET",
+        "url": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:56:22.284674+00:00",
+      "httpStatus": 200,
+      "responseBytes": 73121,
+      "originalResponseSha256": "572f70fe59a824e4c1ae7607c38b8a7ab8366e564372a6e5a6e702089057eaf6",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-niddk-porcoes-canonico.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-niddk-porcoes.evidencia.json",
+      "artifactSha256": "a9f9aaab7734356bc6dd48507ad7ef09e1dbb8cb23916df94492ce05238cb30c",
+      "request": {
+        "method": "GET",
+        "url": "https://www.niddk.nih.gov/health-information/weight-management/food-portions",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:04.684392+00:00",
+      "httpStatus": 404,
+      "responseBytes": 29064,
+      "originalResponseSha256": "de134233c4049e79802ec000d529e9ecf0381c7987ae840901370d7eac16972f",
+      "error": "HTTP 404",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-niddk-porcoes.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
+      "evidenceFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-niddk-programa.evidencia.json",
+      "artifactSha256": "13b1303e27324ccde27a5afbd9bdb707527da5e1085affddf6550693b47e1338",
+      "request": {
+        "method": "GET",
+        "url": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+        "methodBasis": "record",
+        "configuredHeaders": {
+          "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+          "Accept": "application/json,text/html,text/plain",
+          "Accept-Encoding": "identity"
+        }
+      },
+      "collectedAtUtc": "2026-09-30T11:55:04.157257+00:00",
+      "httpStatus": 200,
+      "responseBytes": 68848,
+      "originalResponseSha256": "fdfde2c7316542b484239cdbd09c93b71d9e7cceb7b278208919ad54ad4dc725",
+      "bodyFile": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/../raw/n10-niddk-programa.html",
+      "bodyAvailableLocally": true,
+      "originalBodyHashRecheckable": true,
+      "originalBodyHashMatches": true
+    },
+    {
       "evidenceFile": "docs/conteudo/evidencias/ciqual-2025-metadata.evidencia.json",
       "artifactSha256": "0e17991b1051f990885c6cda4bc773cfff8f24126cee7c09558ce34c8c6b214d",
       "request": {

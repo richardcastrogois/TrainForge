@@ -1,0 +1,21 @@
+{
+  "id": "n08-ogl-v3",
+  "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:51:38.497555+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Licenca original; nao inferir direitos de imagem a partir de texto",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 10450,
+  "bodyFile": "../raw/n08-ogl-v3.html",
+  "sha256": "f5b2b9f2af63647cde889fa6c3508f5705925295b74912c68caa28dd37e64aa5"
+}

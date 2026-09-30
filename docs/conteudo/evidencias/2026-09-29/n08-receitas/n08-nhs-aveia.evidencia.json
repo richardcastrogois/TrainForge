@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhs-aveia",
+  "url": "https://www.nhs.uk/healthier-families/recipes/easy-overnight-oats/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:51:33.960084+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pequeno almoco: passos, nutrientes, espera e unidades mistas",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/healthier-families/recipes/easy-overnight-oats/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 31858,
+  "bodyFile": "../raw/n08-nhs-aveia.html",
+  "sha256": "bc9c11495355cb4ceccb1d720042c57efe556bb43cf2230bca1351a30776aca4"
+}

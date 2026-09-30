@@ -34,7 +34,9 @@ def collect(plan_path):
             assert prior['url'] == url, 'Cached URL differs; preserve the original'
             print(json.dumps({'id': ident, 'cached': True, 'status': prior['status']}), flush=True)
             continue
-        headers = {'User-Agent': UA, 'Accept': 'application/json,text/html,text/plain', 'Accept-Encoding': 'identity'}
+        accept = item.get('accept', 'application/json,text/html,text/plain')
+        assert accept in ('application/json,text/html,text/plain', 'application/pdf'), 'Unsupported Accept override'
+        headers = {'User-Agent': UA, 'Accept': accept, 'Accept-Encoding': 'identity'}
         result = {'id': ident, 'url': url, 'method': 'GET',
                   'collectedAtUtc': datetime.now(timezone.utc).isoformat(),
                   'requestHeaders': headers, 'status': None, 'use': 'research_only',

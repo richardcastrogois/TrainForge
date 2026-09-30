@@ -1,0 +1,21 @@
+{
+  "id": "n08-nhs-catalogo",
+  "url": "https://www.nhs.uk/healthier-families/recipes/",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:51:32.699092+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Catalogo de receitas desenvolvidas com nutricionistas; contagem e filtros",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/healthier-families/recipes/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 192346,
+  "bodyFile": "../raw/n08-nhs-catalogo.html",
+  "sha256": "30a186f9d8846836bf91cd83d4d452b5aeedd893f3a19136afe4ed639a4a2347"
+}

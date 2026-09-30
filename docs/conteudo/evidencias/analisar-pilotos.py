@@ -110,18 +110,20 @@ def running():
         "kind": "existing_human_running_program_research_pilot", "sourceId": "PR06",
         "source": provenance, "crossCheckSource": pdf_provenance,
         "method": "27 HTML session tables parsed; duration sums checked; every interval compared to numeric transcription visually checked against both PDF pages on 2026-09-26.",
-        "rights": "Eligible NHS text: OGL v3.0 subject to NHS terms and exclusions. No audio, app, logos, photos or video included.",
-        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+        "rights": "Correction 2026-09-30: conditional. The original Better Health page links campaign terms requiring a commercial licence; generic NHS OGL terms alone do not clear this text/PDF. No audio, app, logos, photos or video included.",
+        "rightsReviewedAt": "2026-09-30",
+        "rightsEvidence": "docs/conteudo/evidencias/2026-09-30/n10-perda-peso/n10-better-health-termos.evidencia.json",
+        "attribution": "NHS / Better Health; research reference. Commercial reuse licence not demonstrated.",
         "releaseStatus": "research_only_not_release_approved",
         "weeks": 9, "sessionsPerWeek": 3, "restDaysBetweenRunsMinimum": 1,
         "endTarget": {"runningMinutes": 30, "guaranteedDistanceKm": None},
         "stretchDurationSeconds": None,
-        "publicationGaps": ["Reviewed Portuguese instructions, warm-up/cool-down guidance and applicability", "Exact dated-copy or refresh/attribution workflow under NHS terms", "App integration, recovery states and on-device tests"],
+        "publicationGaps": ["Reviewed Portuguese instructions, warm-up/cool-down guidance and applicability", "Demonstrate specific permission or exception for exact Better Health text/PDF before commercial adaptation", "App integration, recovery states and on-device tests"],
         "patterns": [{"id": i + 1, "blocks": blocks} for i, blocks in enumerate(patterns)],
         "sessions": sessions,
     }
     dump(OUT / "corrida-piloto.json", result)
-    return {"sessions": len(sessions), "weeks": 9, "uniqueIntervalPatterns": len(patterns), "durationChecksPassed": 27, "pdfIntervalChecksPassed": 27, "releaseApproved": False}
+    return {"sessions": len(sessions), "weeks": 9, "uniqueIntervalPatterns": len(patterns), "durationChecksPassed": 27, "pdfIntervalChecksPassed": 27, "releaseApproved": False, "commercialReuseStatus": "conditional_review_2026_09_30"}
 
 
 def strength():

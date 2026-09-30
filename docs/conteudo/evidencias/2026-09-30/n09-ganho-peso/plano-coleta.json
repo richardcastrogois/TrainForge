@@ -1,0 +1,30 @@
+{
+  "niche": "N09",
+  "scope": "Guias humanos para ganhar peso; separar ensino geral de recuperacao clinica e hipertrofia",
+  "requests": [
+    {
+      "id": "n09-nhs-ganho",
+      "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+      "purpose": "Guia geral de ganho de peso em adultos; publico, exemplos, encaminhamentos e limites",
+      "extension": "html"
+    },
+    {
+      "id": "n09-va-ganho",
+      "url": "https://www.nutrition.va.gov/NUTRITION/Weight_Management_If_you_need_to_gain_weight.asp",
+      "purpose": "Catalogo institucional de orientacoes para ganho de peso; localizar guia humano real",
+      "extension": "html"
+    },
+    {
+      "id": "n09-bda-apetite",
+      "url": "https://www.bda.uk.com/resource/dont-feel-hungry-feel-full-when-eating.html",
+      "purpose": "Contexto clinico de recuperacao apos doenca critica; nao generalizar para hipertrofia",
+      "extension": "html"
+    },
+    {
+      "id": "n09-nice-refeeding",
+      "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+      "purpose": "Base para limite de automacao em desnutricao e realimentacao; nao extrair prescricao clinica",
+      "extension": "html"
+    }
+  ]
+}

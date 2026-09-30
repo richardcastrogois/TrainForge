@@ -1,0 +1,21 @@
+{
+  "id": "n10-cdc-direitos",
+  "url": "https://www.cdc.gov/other/agencymaterials.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T11:55:07.686771+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Direitos textuais, atribuicao, traducao, nao endosso e excecoes por ativo/jurisdicao",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cdc.gov/other/agencymaterials.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 80260,
+  "bodyFile": "../raw/n10-cdc-direitos.html",
+  "sha256": "aa9c107b28a3161f2802eb7d054c5c110cebca3de49853c6f8a79ad2b81d9b5e"
+}

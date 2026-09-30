@@ -1,0 +1,21 @@
+{
+  "id": "n08-themealdb-termos",
+  "url": "https://www.themealdb.com/terms_of_use.php",
+  "method": "GET",
+  "collectedAtUtc": "2026-09-30T02:50:10.958505+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Condicoes para publicacao comercial mobile gratuita",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.themealdb.com/terms_of_use.php",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 9322,
+  "bodyFile": "../raw/n08-themealdb-termos.html",
+  "sha256": "5a28c1f8dac04c0c69ec9e6273c17c4254f59f047b72a683a702d4769202de16"
+}

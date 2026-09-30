@@ -1,0 +1,269 @@
+{
+  "niche": "N08",
+  "date": "2026-09-29",
+  "researchStatus": "concluido_no_recorte",
+  "releaseApproved": false,
+  "distinctRecipes": 8,
+  "recipePages": 9,
+  "calls": 21,
+  "http200": 19,
+  "bodyHashesVerified": 21,
+  "checksPassed": 61,
+  "checks": [
+    {
+      "check": "n08-nhlbi-bacalhau: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-bacalhau: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-bacalhau: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-bacalhau: instructions present",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-bacalhau: yield",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-lentilhas: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-lentilhas: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-lentilhas: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-lentilhas: instructions present",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-lentilhas: yield",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-maca: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-maca: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-maca: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-maca: instructions present",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-maca: yield",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-aveia: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-aveia: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-aveia: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-aveia: directions count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-aveia: per serving explicitly present",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-salmao: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-salmao: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-salmao: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-salmao: directions count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-salmao: per serving explicitly present",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-chilli: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-chilli: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-chilli: ingredient count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-chilli: directions count",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-chilli: per serving explicitly present",
+      "passed": true
+    },
+    {
+      "check": "n08-dgs-bacalhau: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-dgs-bacalhau: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "DGS: 15 ingredients despite malformed li",
+      "passed": true
+    },
+    {
+      "check": "DGS: instructions present",
+      "passed": true
+    },
+    {
+      "check": "DGS: 164 kcal belongs to chickpeas, not recipe",
+      "passed": true
+    },
+    {
+      "check": "n08-medline-lentilhas: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-medline-lentilhas: HTTP and HTML",
+      "passed": true
+    },
+    {
+      "check": "Medline: complete human recipe",
+      "passed": true
+    },
+    {
+      "check": "Medline: serving mass and calories observed",
+      "passed": true
+    },
+    {
+      "check": "Medline: preserve protein as published, no correction guessed",
+      "passed": true
+    },
+    {
+      "check": "n08-foodhero-lentilhas: original response hash",
+      "passed": true
+    },
+    {
+      "check": "Food Hero: JSON-LD ingredients is a concatenated string, not array",
+      "passed": true
+    },
+    {
+      "check": "Food Hero: JSON-LD instructions fragmented on commas",
+      "passed": true
+    },
+    {
+      "check": "Apple cake: absent protein remains absent",
+      "passed": true
+    },
+    {
+      "check": "NHS: JSON-LD omits fibre although HTML contains it",
+      "passed": true
+    },
+    {
+      "check": "NHS: totalTime 10 minutes does not cover overnight wait",
+      "passed": true
+    },
+    {
+      "check": "Recipe amount != consumed serving count",
+      "passed": true
+    },
+    {
+      "check": "No source declaration is clinical approval",
+      "passed": true
+    },
+    {
+      "check": "n08-nhlbi-direitos: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-termos: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-campanha-termos: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-nhs-excecoes: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-medline-direitos: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-themealdb-termos: original response hash",
+      "passed": true
+    },
+    {
+      "check": "n08-ogl-v3: original response hash",
+      "passed": true
+    },
+    {
+      "check": "NHS subsite requires commercial licence",
+      "passed": true
+    },
+    {
+      "check": "NHS general OGL cannot override exception",
+      "passed": true
+    },
+    {
+      "check": "Medline explicitly includes healthy recipes in public domain block",
+      "passed": true
+    },
+    {
+      "check": "NHLBI asks no alterations to formatted publications",
+      "passed": true
+    },
+    {
+      "check": "TheMealDB app store paid condition",
+      "passed": true
+    },
+    {
+      "check": "Two failure responses never counted as recipe data",
+      "passed": true
+    }
+  ],
+  "candidateForTextPilot": "MedlinePlus Healthy recipes; uma receita completa demonstrada, sem aprovacao de traducao/nutrientes individuais",
+  "remaining": [
+    "Lote de lancamento e localizacao pt-PT revisados",
+    "Validacao nutricional e alergénios por ingrediente/versao",
+    "Direitos das fotografias",
+    "Politica de adaptacao/monetizacao por fornecedor",
+    "Nenhuma API de receitas homologada; dados foram obtidos em HTML",
+    "Planos alimentares completos pertencem a N13"
+  ],
+  "sourceFields": "amostra-receitas.json",
+  "next": "N09"
+}
