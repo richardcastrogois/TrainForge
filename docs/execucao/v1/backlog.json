@@ -1,0 +1,2588 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-21",
+  "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
+  "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
+  "next": "V1-001",
+  "sizeLegend": {
+    "S": "uma fatia curta",
+    "M": "uma fatia com integração",
+    "L": "dividir em incrementos antes de implementar; não é estimativa de dias"
+  },
+  "epics": [
+    {
+      "id": "EP01",
+      "title": "Recorte verificável e governança",
+      "outcome": "Transformar a pesquisa concluída em um lote candidato real e uma execução rastreável, sem presumir liberação dos materiais.",
+      "stories": [
+        {
+          "id": "V1-001",
+          "title": "Fixar o lote candidato e a jornada do primeiro teste",
+          "userStory": "Como responsável pelo produto, quero escolher conteúdo pesquisado e uma jornada pequena para ver o app com dados reais.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R06",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Manifesto enumera IDs PR/N/componentes, versões e público para casa, praça, academia, idosos e cuidadores, mantendo os recortes distintos",
+            "Esposa testa usabilidade; idade, elegibilidade e eventual apoio não são inferidos",
+            "Cada material tem estado consulta/prática/bloqueado e motivo; zero conteúdo inventado"
+          ],
+          "tasks": [
+            {
+              "id": "V1-001-T01",
+              "title": "Selecionar candidatos existentes",
+              "subtasks": [
+                "Ler consolidacao-n01-n46 e seleção N15 de 21/10",
+                "Listar autoria, dose, idioma, mídia disponível e lacunas sem nova coleta sem pista"
+              ]
+            },
+            {
+              "id": "V1-001-T02",
+              "title": "Delimitar o piloto",
+              "subtasks": [
+                "Descrever login → biblioteca → detalhe → registro → histórico e alimentação",
+                "Separar teste de interface de prática e registrar campos realmente necessários"
+              ]
+            }
+          ],
+          "validation": [
+            "Revisão do manifesto contra evidências locais",
+            "Conferir que componentes isolados não aparecem como programa integral"
+          ],
+          "deliverables": [
+            "content/manifests/pilot-candidates.json (futuro)",
+            "Critérios de elegibilidade e estados de conteúdo"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-002",
+          "title": "Aceitar a decisão Go e definir a fronteira de migração",
+          "userStory": "Como mantenedor, quero um serviço com responsabilidade clara para evitar duas APIs escrevendo nos mesmos domínios.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-001"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Registrar decisão de implementar Go ou manter Fastify com custos, compatibilidade e motivação",
+            "Novo serviço proposto em services/api; legado preservado e um único escritor por domínio",
+            "Nenhuma migration de produção é executada nesta história"
+          ],
+          "tasks": [
+            {
+              "id": "V1-002-T01",
+              "title": "Fechar ADR",
+              "subtasks": [
+                "Comparar prazo do Fastify com migração Go e objetivo de aprendizagem",
+                "Escolher versão Go suportada e gerenciador de migrations na data da execução"
+              ]
+            },
+            {
+              "id": "V1-002-T02",
+              "title": "Congelar fronteira",
+              "subtasks": [
+                "Inventariar rotas e invariantes úteis do legado",
+                "Definir banco de teste isolado, estratégia de importação e rollback"
+              ]
+            }
+          ],
+          "validation": [
+            "Revisão do inventário de contratos",
+            "Checar ausência de dual write e de dependência obrigatória de Gemini"
+          ],
+          "deliverables": [
+            "ADR final",
+            "Mapa de compatibilidade e fronteiras"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-003",
+          "title": "Manter mapa, backlog e evidências na rotina de entrega",
+          "userStory": "Como autor, quero acompanhar o projeto num lugar único e distinguir plano, código e runtime.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Painel abre localmente, distingue detectado/planejado e mostra ausência do backend externo",
+            "CI/local valida IDs, dependências, backlog gerado e contratos que passarem a ser oficiais",
+            "Tarefa só é marcada done com evidência; mudança de código não inventa conclusão"
+          ],
+          "tasks": [
+            {
+              "id": "V1-003-T01",
+              "title": "Formalizar atualização",
+              "subtasks": [
+                "Usar tools/painel_projeto.py --snapshot --check",
+                "Ligar a validação ao futuro pipeline sem exigir Graphify com IA"
+              ]
+            },
+            {
+              "id": "V1-003-T02",
+              "title": "Acrescentar cobertura conforme a implementação",
+              "subtasks": [
+                "Ensinar scanner a ler rotas Go e contrato OpenAPI quando existirem",
+                "Registrar lacunas e validar mudança real no mapa com teste de regressão"
+              ]
+            }
+          ],
+          "validation": [
+            "Teste do watcher sem reiniciar a página",
+            "Teste de API ausente e dependência cíclica"
+          ],
+          "deliverables": [
+            "Painel e inventário mantidos",
+            "Job documental da CI"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP02",
+      "title": "Conteúdo, autoria e direitos",
+      "outcome": "Um catálogo importável com proveniência, versões e uso permitido por ativo; pesquisa fechada não vira publicação automaticamente.",
+      "stories": [
+        {
+          "id": "V1-004",
+          "title": "Criar contrato editorial dos quatro tipos de conteúdo",
+          "userStory": "Como curador, quero separar movimentos, instruções, mídia e programas completos para não atribuir ao conjunto direitos de uma única peça.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R02",
+            "R03",
+            "R05",
+            "R06",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-001"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Source, autoria/contribuição, licença por ativo, evidência, versão, idioma, população, ambiente e apoio definidos",
+            "Dosagem suporta tempo, repetições, distância, lado e pausas sem zeros fictícios",
+            "Composição preserva origem de cada peça e não herda eficácia do programa original"
+          ],
+          "tasks": [
+            {
+              "id": "V1-004-T01",
+              "title": "Especificar manifesto",
+              "subtasks": [
+                "Definir schemas versionados para movement/instruction/media/program",
+                "Representar ausência, incompatibilidade de variante e revisão pendente"
+              ]
+            },
+            {
+              "id": "V1-004-T02",
+              "title": "Criar regras de publicação",
+              "subtasks": [
+                "Definir allowlist e motivos de bloqueio por operação",
+                "Distinguir referência externa, incorporação e redistribuição comercial"
+              ]
+            }
+          ],
+          "validation": [
+            "Validar manifesto com 11 componentes N15 e pacote ES2019 separados",
+            "Rejeitar componente sem proveniência ou unidade válida"
+          ],
+          "deliverables": [
+            "Schema JSON editorial",
+            "Matriz de direitos por ativo"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-005",
+          "title": "Revisar o lote real para o uso do piloto",
+          "userStory": "Como usuário, quero ver apenas o uso que o material realmente permite.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R03",
+            "R05",
+            "R06",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-004"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Cada item tem evidência de direitos e fidelidade do que será exibido, sem copiar PDF/foto indevidamente",
+            "Revisão editorial e de segurança tem responsável real e resultado, ou item continua bloqueado",
+            "Apoio profissional exigido só habilita execução se de fato existir; sem parceiro presumido"
+          ],
+          "tasks": [
+            {
+              "id": "V1-005-T01",
+              "title": "Conferir o lote",
+              "subtasks": [
+                "Reutilizar fonte, autoria e recibo guardado; consultar rede só com pista nova",
+                "Verificar localização e material específico, não só licença do site"
+              ]
+            },
+            {
+              "id": "V1-005-T02",
+              "title": "Classificar uso",
+              "subtasks": [
+                "Registrar consulta ou prática permitida e revisor",
+                "Retirar do manifesto de publicação itens sem cobertura; manter lacuna visível"
+              ]
+            }
+          ],
+          "validation": [
+            "Revisão linha a linha da allowlist",
+            "Tentar publicar item bloqueado e comprovar rejeição"
+          ],
+          "deliverables": [
+            "content/manifests/pilot-approved.json (futuro)",
+            "Registro de revisão e pendências reais"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-006",
+          "title": "Importar conteúdo de forma idempotente e auditável",
+          "userStory": "Como operador, quero carregar o lote aprovado no PostgreSQL sem pesquisa em runtime nem duplicações.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R03",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-005",
+            "V1-010"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Dry run informa contagens/erros e não escreve; importação usa versão/hash e transação",
+            "Reimportação não duplica, versão publicada permanece imutável e retirada deixa motivo",
+            "Zero seed de usuários, progresso, plano IA ou instrução completada artificialmente"
+          ],
+          "tasks": [
+            {
+              "id": "V1-006-T01",
+              "title": "Construir importador Go",
+              "subtasks": [
+                "Ler apenas manifesto revisado e arquivos autorizados",
+                "Validar referências, hash, versão, unidade e direitos antes da transação"
+              ]
+            },
+            {
+              "id": "V1-006-T02",
+              "title": "Ensaiar atualização",
+              "subtasks": [
+                "Carregar lote real em DB isolado e comparar IDs/contagens",
+                "Reimportar, criar versão e retirar item preservando referências históricas"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração PostgreSQL com manifesto real permitido",
+            "Dry run inválido não escreve e reimportação é estável"
+          ],
+          "deliverables": [
+            "cmd/import-content",
+            "Relatório de importação e rollback editorial"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP03",
+      "title": "Fundação Go, contratos e banco",
+      "outcome": "Uma API pequena com configurações, migrations e domínio próprios; preservar as boas invariantes do legado.",
+      "stories": [
+        {
+          "id": "V1-007",
+          "title": "Criar o esqueleto do monólito modular Go",
+          "userStory": "Como desenvolvedor, quero iniciar API e testes de forma previsível com módulos explícitos.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-002"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/arquitetura-alvo.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "services/api contém cmd/api e internal/{auth,catalog,activity,nutrition,platform}",
+            "Configuração por ambiente validada sem segredo em logs; sem chave IA obrigatória",
+            "Servidor tem timeout, limite de corpo, request ID, shutdown e health/readiness com semântica diferente"
+          ],
+          "tasks": [
+            {
+              "id": "V1-007-T01",
+              "title": "Inicializar módulo",
+              "subtasks": [
+                "Usar net/http e escolher somente dependências justificadas (pgx e biblioteca de migrations)",
+                "Criar config tipada, roteador versionado e erros comuns"
+              ]
+            },
+            {
+              "id": "V1-007-T02",
+              "title": "Operar localmente",
+              "subtasks": [
+                "Criar .env.example sem valores reais e comando único de desenvolvimento",
+                "Adicionar health live e ready dependente de banco com timeout"
+              ]
+            }
+          ],
+          "validation": [
+            "go test ./...",
+            "go vet ./... e processo inicia/finaliza sem conexão vazada"
+          ],
+          "deliverables": [
+            "services/api/go.mod",
+            "Servidor local e instruções reproduzíveis"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-008",
+          "title": "Publicar contrato OpenAPI v1 antes do cliente",
+          "userStory": "Como integrador, quero contratos verificáveis para Flutter e Go evoluírem sem adivinhação.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R10",
+            "R14",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-004",
+            "V1-007"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/arquitetura-alvo.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Rotas planejadas de contratos-v1.md tornam-se OpenAPI revisado com schemas, erros e autorização",
+            "null é diferente de zero; cursor, datas UTC, fuso IANA e Idempotency-Key definidos",
+            "Rotas legado não mudam silenciosamente; compatibilidade e descontinuação explícitas"
+          ],
+          "tasks": [
+            {
+              "id": "V1-008-T01",
+              "title": "Definir contrato",
+              "subtasks": [
+                "Especificar requests, responses e exemplos somente identificados como contrato/teste",
+                "Fixar enum, paginação, validação e formato problem+json com requestId"
+              ]
+            },
+            {
+              "id": "V1-008-T02",
+              "title": "Conectar geração",
+              "subtasks": [
+                "Escolher ferramenta de cliente Dart depois de teste mínimo",
+                "Conferir diffs do contrato gerado na CI"
+              ]
+            }
+          ],
+          "validation": [
+            "Lint de OpenAPI",
+            "Testes de contrato handler/DTO/cliente contra schemas"
+          ],
+          "deliverables": [
+            "contracts/openapi-v1.yaml",
+            "Política de compatibilidade"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-009",
+          "title": "Modelar conteúdo versionado, adesão e ocorrências",
+          "userStory": "Como usuário, quero repetir uma atividade em outra data sem perder histórico ou mudar a fonte original.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R02",
+            "R03",
+            "R06",
+            "R10",
+            "R14",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-004",
+            "V1-007"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/arquitetura-alvo.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Programa/versão/sessão prescrita separados de enrollment/ocorrência/registro real",
+            "Movimentos e instruções têm proveniência própria; cuidador praticante separado de pessoa assistida",
+            "Sessão usa ocorrência e estado explícito; fonte alterada não reescreve histórico"
+          ],
+          "tasks": [
+            {
+              "id": "V1-009-T01",
+              "title": "Desenhar modelo",
+              "subtasks": [
+                "Revisar entidades e relações de dominio-e-banco.md",
+                "Definir timezone, unidades, estados, exclusão e retenção"
+              ]
+            },
+            {
+              "id": "V1-009-T02",
+              "title": "Definir invariantes",
+              "subtasks": [
+                "Unicidade de idempotência por usuário/operação e sessão aberta por ocorrência",
+                "Planejar índices por consulta; não restaurar índice de um refresh por usuário indiscriminadamente"
+              ]
+            }
+          ],
+          "validation": [
+            "Revisão ER/contratos com N15 e prática por tempo",
+            "Casos semana repetida, plano inativo e autoria preservada"
+          ],
+          "deliverables": [
+            "Modelo lógico revisado",
+            "Decisão de invariantes e consultas"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-010",
+          "title": "Criar migrations e testar backup/restauração",
+          "userStory": "Como operador, quero evoluir o banco sem perder pesquisa ou registros pessoais.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-009"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/arquitetura-alvo.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Banco isolado sobe do zero por migrations Go; Prisma não migra o mesmo schema simultaneamente",
+            "Backup restaurado em outra base é conferido por contagens e referências",
+            "Banco real existente é inventariado com acesso autorizado; se não existe dado, registrar sem inventar migração"
+          ],
+          "tasks": [
+            {
+              "id": "V1-010-T01",
+              "title": "Preparar base isolada",
+              "subtasks": [
+                "Escolher versão Postgres suportada na execução e porta sem conflito",
+                "Aplicar constraints, índices e usuário runtime de menor privilégio"
+              ]
+            },
+            {
+              "id": "V1-010-T02",
+              "title": "Ensaiar restauração e evolução",
+              "subtasks": [
+                "Criar backup antes de mudança e restaurar em base separada",
+                "Testar migration forward e estratégia de recuperação sem down destrutivo automático"
+              ]
+            }
+          ],
+          "validation": [
+            "Migrations do zero e upgrade em DB de teste",
+            "Restore conferido; nunca docker compose down -v como rotina"
+          ],
+          "deliverables": [
+            "services/api/migrations",
+            "Runbook de backup/restore com resultado"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP04",
+      "title": "Identidade, privacidade e acesso",
+      "outcome": "Autenticação real, sessões revogáveis e isolamento de dados por usuário, inclusive sob concorrência.",
+      "stories": [
+        {
+          "id": "V1-011",
+          "title": "Autenticar Google no novo serviço",
+          "userStory": "Como testador, quero entrar com minha conta real e usar a mesma identidade nas duas plataformas.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-008",
+            "V1-010"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "ID token validado por assinatura/iss/aud/exp e identidade vinculada a issuer+sub",
+            "E-mail não é chave única de associação automática entre provedores",
+            "Android debug/release têm OAuth correto; IDs públicos separados de segredos; HTTPS fora do desenvolvimento"
+          ],
+          "tasks": [
+            {
+              "id": "V1-011-T01",
+              "title": "Implementar troca",
+              "subtasks": [
+                "Preservar validações úteis do legado e testar audience incorreta",
+                "Criar usuário apenas a partir de autenticação real consentida"
+              ]
+            },
+            {
+              "id": "V1-011-T02",
+              "title": "Configurar ambientes",
+              "subtasks": [
+                "Documentar fingerprint do certificado debug/release e client ID de servidor",
+                "Preparar configuração iOS futura sem declarar teste feito"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração com login real no Android",
+            "Testes de token inválido/expirado e identidade duplicada"
+          ],
+          "deliverables": [
+            "Auth Go e contrato de sessão",
+            "Guia OAuth por ambiente"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-012",
+          "title": "Rotacionar e revogar refresh tokens",
+          "userStory": "Como usuário, quero continuar conectado e encerrar acesso de forma confiável.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-011"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Refresh hash armazenado, rotação atômica single use e detecção de reuso por família",
+            "Logout revoga sessão no servidor; outro dispositivo não é revogado sem intenção",
+            "Flutter serializa refresh concorrente; rede indisponível não apaga sessão válida"
+          ],
+          "tasks": [
+            {
+              "id": "V1-012-T01",
+              "title": "Implementar ciclo servidor",
+              "subtasks": [
+                "Definir família de sessão, expiração, revogação e transação concorrente",
+                "Testar dois refresh simultâneos e resposta sem token nos logs"
+              ]
+            },
+            {
+              "id": "V1-012-T02",
+              "title": "Integrar cliente",
+              "subtasks": [
+                "Guardar tokens em secure storage; retry único após 401 e refresh coordenado",
+                "Separar 401 confirmado de timeout/offline e revogar no logout"
+              ]
+            }
+          ],
+          "validation": [
+            "Teste PostgreSQL concorrente",
+            "Login, expiração, refresh e logout reais em emulador"
+          ],
+          "deliverables": [
+            "Ciclo de sessão Go/Flutter",
+            "Política de reuso e dispositivos"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-013",
+          "title": "Aplicar autorização, limites e ciclo dos dados",
+          "userStory": "Como titular, quero que só eu acesse meus registros e que exclusão seja verificável.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R06",
+            "R10",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-011",
+            "V1-009"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Todas as consultas/mutações privadas filtram ownership, inclusive IDs trocados",
+            "Proxy confiável explicitamente configurado; rate limit não confia em X-Forwarded-For arbitrário",
+            "Exportação/exclusão e retenção cobrem DB, fotos futuras, caches e backups com limites explicados"
+          ],
+          "tasks": [
+            {
+              "id": "V1-013-T01",
+              "title": "Cobrir autorização",
+              "subtasks": [
+                "Criar matriz rota × usuário/terceiro/anônimo",
+                "Manter uso próprio e acompanhamento de terceiro como permissões distintas"
+              ]
+            },
+            {
+              "id": "V1-013-T02",
+              "title": "Controlar dados e recursos",
+              "subtasks": [
+                "Definir limites de corpo/paginação/tempo e regras proxy",
+                "Implementar minimização, exportação e exclusão confirmada; registrar política de backups"
+              ]
+            }
+          ],
+          "validation": [
+            "Testes BOLA em todos os recursos privados",
+            "Teste de spoof de forwarded header, corpo grande e exclusão de conta de teste"
+          ],
+          "deliverables": [
+            "Matriz de acesso",
+            "Política de privacidade do piloto e operações de dados"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP05",
+      "title": "Biblioteca humana e API de catálogo",
+      "outcome": "Consumir conteúdo pesquisado com origem e disponibilidade reais, sem gerar programas de fallback.",
+      "stories": [
+        {
+          "id": "V1-014",
+          "title": "Servir catálogo, versão e requisitos de uso",
+          "userStory": "Como praticante, quero comparar opções reais por público, local e apoio.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R05",
+            "R06"
+          ],
+          "dependsOn": [
+            "V1-006",
+            "V1-008"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "GET catalog/programs e detalhe retornam somente conteúdo permitido ao modo de consulta/prática",
+            "Filtros representam ambiente, modalidade, público e equipamento reais; cursor estável",
+            "Fonte, contribuição, versão, direitos, unidades e razões de bloqueio chegam ao Flutter"
+          ],
+          "tasks": [
+            {
+              "id": "V1-014-T01",
+              "title": "Implementar leitura",
+              "subtasks": [
+                "Consultar tabelas versionadas com projeção explícita",
+                "Expor paginação e ETag por versão sem baixar vídeo nem consultar fornecedor a cada toque"
+              ]
+            },
+            {
+              "id": "V1-014-T02",
+              "title": "Cobrir falta de conteúdo",
+              "subtasks": [
+                "Retornar indisponibilidade e alternativas pesquisadas sem completar texto/dose",
+                "Distinguir peça modular de programa completo no contrato"
+              ]
+            }
+          ],
+          "validation": [
+            "Contrato e DB com lote real",
+            "Filtro e item retirado não vazam conteúdo não autorizado"
+          ],
+          "deliverables": [
+            "Handlers e queries de catálogo",
+            "Respostas verificadas do lote"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-015",
+          "title": "Criar adesão sem geração de treino",
+          "userStory": "Como usuário, quero selecionar uma versão existente e uma agenda permitida pelo autor.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R01",
+            "R03",
+            "R04",
+            "R06"
+          ],
+          "dependsOn": [
+            "V1-014",
+            "V1-013"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Adesão aponta para versão imutável e valida os requisitos necessários",
+            "Composição personalizada mantém autoria de componentes e perde rótulo de programa original se alterado",
+            "Rotas IA/manual-generator não participam da V1 e Gemini deixa de ser requisito"
+          ],
+          "tasks": [
+            {
+              "id": "V1-015-T01",
+              "title": "Implementar adesão",
+              "subtasks": [
+                "Validar versão publicada, consentimentos e apoio exigido",
+                "Aceitar apenas opções de agenda previstas pela fonte, sem inventar progressão"
+              ]
+            },
+            {
+              "id": "V1-015-T02",
+              "title": "Tratar troca e arquivamento",
+              "subtasks": [
+                "Preservar adesão e sessões antigas ao escolher outra versão",
+                "Retornar motivo concreto de incompatibilidade sem prescrição automática"
+              ]
+            }
+          ],
+          "validation": [
+            "Selecionar lote real no banco e consultar adesão",
+            "Rejeitar variante, público ou modo incompatível"
+          ],
+          "deliverables": [
+            "API de enrollments",
+            "Fluxo de seleção humano"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-016",
+          "title": "Expor instrução acessível e mídia com direitos",
+          "userStory": "Como usuário, quero aprender o material disponível e saber quem o escreveu.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R05",
+            "R15",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-014"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/conteudo/README.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Texto fiel revisado, idioma, atribuição e versão aparecem juntos",
+            "Mídia ausente fica indisponível; nenhuma foto/vídeo de placeholder ou extração BeFit",
+            "Se existir mídia autorizada, entrega não expõe bucket nem exige download irrestrito"
+          ],
+          "tasks": [
+            {
+              "id": "V1-016-T01",
+              "title": "Servir material permitido",
+              "subtasks": [
+                "Separar referência externa de ativo redistribuível",
+                "Expor autoria, legenda/transcrição quando autorizada e texto alternativo"
+              ]
+            },
+            {
+              "id": "V1-016-T02",
+              "title": "Controlar retirada",
+              "subtasks": [
+                "Revogar entrega de ativo sem apagar proveniência de sessões passadas",
+                "Aplicar cache versionado e custo/quota de mídia se necessária"
+              ]
+            }
+          ],
+          "validation": [
+            "Inspeção visual e acessibilidade do material real",
+            "Link indisponível, versão retirada e ausência de vídeo sem fallback fictício"
+          ],
+          "deliverables": [
+            "Contrato de instruction/media",
+            "Lista de ativos efetivamente liberados"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP06",
+      "title": "Atividade e alimentação registradas de verdade",
+      "outcome": "Persistir ações reais, unidades corretas e histórico sem criar desempenho, dieta ou medição fictícios.",
+      "stories": [
+        {
+          "id": "V1-017",
+          "title": "Executar ocorrências idempotentes de atividade",
+          "userStory": "Como usuário, quero iniciar e terminar uma sessão uma vez, mesmo com reenvio da rede.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R10",
+            "R11",
+            "R14"
+          ],
+          "dependsOn": [
+            "V1-015",
+            "V1-012"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Planejado, iniciado, pausado, parcial, concluído, não feito e descanso têm semântica explícita",
+            "Idempotency-Key e constraints evitam duas sessões para a mesma ocorrência",
+            "Conclusão de uma semana não bloqueia outra; duração observada separada da dose prescrita"
+          ],
+          "tasks": [
+            {
+              "id": "V1-017-T01",
+              "title": "Implementar máquina de estados",
+              "subtasks": [
+                "Validar transições, timestamps UTC e data no fuso escolhido",
+                "Registrar exercício/tempo/repetições reais sem tratar prescrição como realizado"
+              ]
+            },
+            {
+              "id": "V1-017-T02",
+              "title": "Testar concorrência",
+              "subtasks": [
+                "Repetir POST com mesma chave e payload diferente",
+                "Testar corrida, pausa, falha de rede e retomada"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração PostgreSQL concorrente",
+            "Sessões reais em duas datas e estado parcial preservado"
+          ],
+          "deliverables": [
+            "API sessions e session-events",
+            "Invariantes documentadas e testes"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-018",
+          "title": "Consultar histórico e resumo com origem das métricas",
+          "userStory": "Como usuário, quero saber o que registrei, sem números de demonstração.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R09",
+            "R14"
+          ],
+          "dependsOn": [
+            "V1-017"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Home, histórico e estatísticas vêm de registros persistidos e respeitam fuso e autoria",
+            "Sem dado mostra ausência, não valor medido zero; estimativas identificam fórmula/fonte",
+            "Histórico não depende apenas do plano ativo e usa cursor/intervalo limitado"
+          ],
+          "tasks": [
+            {
+              "id": "V1-018-T01",
+              "title": "Criar consultas",
+              "subtasks": [
+                "Definir resumo diário e tendência com datas/fusos",
+                "Projetar índices e paginação para não carregar todas as sessões"
+              ]
+            },
+            {
+              "id": "V1-018-T02",
+              "title": "Garantir semântica",
+              "subtasks": [
+                "Separar estimado/medido/planejado e evitar dupla contagem",
+                "Testar atividade sem calorias e novo usuário sem histórico"
+              ]
+            }
+          ],
+          "validation": [
+            "Conferir resumo contra linhas reais do DB",
+            "Casos fronteira de dia, troca de plano e registro editado"
+          ],
+          "deliverables": [
+            "API summary/history",
+            "Dicionário de métricas"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-019",
+          "title": "Validar e importar o lote alimentar",
+          "userStory": "Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-004",
+            "V1-010"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Selecionar lote real das fontes alimentares pesquisadas com direitos de uso e cobertura PT conferidos",
+            "Alimento/preparo, base 100g/100ml, porção e nutrientes ausentes mantidos distintos",
+            "Não gerar receita, alergênico seguro, dieta ou medida caseira sem origem"
+          ],
+          "tasks": [
+            {
+              "id": "V1-019-T01",
+              "title": "Selecionar e revisar fonte",
+              "subtasks": [
+                "Conferir catálogos N de alimentação e termos por dataset",
+                "Escolher itens úteis ao piloto sem presumir que todos têm direitos iguais"
+              ]
+            },
+            {
+              "id": "V1-019-T02",
+              "title": "Importar versão",
+              "subtasks": [
+                "Validar nutrientes/unidades e identificador de origem",
+                "Criar importador idempotente e relatório sem payload de terceiro no Git sem licença"
+              ]
+            }
+          ],
+          "validation": [
+            "Comparar amostra importada à fonte autorizada",
+            "Rejeitar mistura entre alimento cru/cozido e null=0"
+          ],
+          "deliverables": [
+            "Manifesto alimentar aprovado",
+            "Lote alimentar versionado no DB"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-020",
+          "title": "Pesquisar alimento e registrar consumo",
+          "userStory": "Como usuário, quero registrar uma quantidade real e consultar o que consumi.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R09",
+            "R10"
+          ],
+          "dependsOn": [
+            "V1-019",
+            "V1-013",
+            "V1-008"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Busca paginada de alimentos reais e POST de registro com quantidade, unidade, preparo e versão",
+            "Nutrientes derivados usam base/fator declarado; quantidade não confirmada não vira medida",
+            "Sem dietas prescritas, história pré-populada ou compensação automática de calorias do treino"
+          ],
+          "tasks": [
+            {
+              "id": "V1-020-T01",
+              "title": "Criar contratos e handlers",
+              "subtasks": [
+                "Implementar foods e food-entries com ownership e idempotência",
+                "Definir edição/exclusão sem perder rastreio da origem do cálculo"
+              ]
+            },
+            {
+              "id": "V1-020-T02",
+              "title": "Integrar totais",
+              "subtasks": [
+                "Somar apenas registros confirmados com regras de null",
+                "Testar divergência de porção e registro em outro fuso"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração DB/API com alimento pesquisado",
+            "Conferir cálculo contra base conhecida e histórico vazio"
+          ],
+          "deliverables": [
+            "API nutrition v1",
+            "Registro de consumo real"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP07",
+      "title": "Flutter e experiência da V1",
+      "outcome": "Evoluir a lib existente por feature, com contratos reais, estado consistente e suporte às duas plataformas.",
+      "stories": [
+        {
+          "id": "V1-021",
+          "title": "Organizar configuração, composição e estado",
+          "userStory": "Como desenvolvedor, quero telas pequenas e dependências substituíveis sem reescrever a lib inteira.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R16",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-008",
+            "V1-012"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Feature-first preservado; UI usa controller/viewmodel e repository injetado",
+            "Dio central com base URL por flavor/dart-define, timeouts e sessão coordenada",
+            "Logging por allowlist remove tokens/dados físicos; domínio não importa widgets ou Dio"
+          ],
+          "tasks": [
+            {
+              "id": "V1-021-T01",
+              "title": "Preparar núcleo",
+              "subtasks": [
+                "Separar config dev/staging e futura produção",
+                "Definir composition root simples e ViewModels com APIs Flutter existentes antes de nova lib"
+              ]
+            },
+            {
+              "id": "V1-021-T02",
+              "title": "Migrar uma fatia",
+              "subtasks": [
+                "Converter auth/bootstrap e uma tela com loading/error/empty/data",
+                "Reutilizar bootstrap e preservar abas/rascunhos sem cache eterno"
+              ]
+            }
+          ],
+          "validation": [
+            "flutter analyze e testes de estados relevantes",
+            "Inspecionar logs de login real sem segredos e sem logout por timeout"
+          ],
+          "deliverables": [
+            "lib/core revisada",
+            "Padrão de feature exemplificado"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-022",
+          "title": "Implementar entrada e biblioteca com conteúdo real",
+          "userStory": "Como iniciante, quero escolher uma opção humana e entender por que ela está disponível.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R15",
+            "R16",
+            "R17"
+          ],
+          "dependsOn": [
+            "V1-014",
+            "V1-015",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Login → contexto mínimo → biblioteca → detalhe → adesão sem AI/manual generator",
+            "Filtros casa/praça/academia e públicos preservam restrições; origem e versão legíveis",
+            "Ausência, incompatibilidade, carregamento e erro usam dados reais e ação útil"
+          ],
+          "tasks": [
+            {
+              "id": "V1-022-T01",
+              "title": "Desenhar a fatia com o material",
+              "subtasks": [
+                "Comparar Figma vigente com campos reais do contrato",
+                "Reutilizar componentes/tokens e justificar novos fluxos sem copiar BeFit"
+              ]
+            },
+            {
+              "id": "V1-022-T02",
+              "title": "Implementar telas e navegação",
+              "subtasks": [
+                "Criar catálogo/detalhe/requisitos e vínculo real",
+                "Persistir seleção e tratar botão voltar, leitor de tela e texto ampliado"
+              ]
+            }
+          ],
+          "validation": [
+            "Teste widget de erro/vazio/seleção",
+            "Emulador com API/DB e manifesto real aprovado"
+          ],
+          "deliverables": [
+            "Telas library/detail/enrollment",
+            "Mapa de fluxo atualizado"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-023",
+          "title": "Implementar sessão e recuperação de interrupção",
+          "userStory": "Como praticante, quero acompanhar o material e registrar o que fiz sem perder a sessão ao trocar de aba.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R05",
+            "R10",
+            "R11",
+            "R15",
+            "R17"
+          ],
+          "dependsOn": [
+            "V1-016",
+            "V1-017",
+            "V1-022"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Player/instrução usa modalidade/unidade real; prática bloqueada quando requisito não atendido",
+            "Pausar/retomar/encerrar/parcial funcionam com estado persistido e idempotência",
+            "Matar processo e reabrir recupera registro real; sem duração/reps fictícias"
+          ],
+          "tasks": [
+            {
+              "id": "V1-023-T01",
+              "title": "Criar controller de sessão",
+              "subtasks": [
+                "Carregar prescrição e execução separadas",
+                "Persistir ocorrência e chave de reenvio, sincronizar confirmação servidor"
+              ]
+            },
+            {
+              "id": "V1-023-T02",
+              "title": "Construir experiência",
+              "subtasks": [
+                "Mostrar instrução, fonte, dose disponível e entrada do realizado",
+                "Implementar pausa, saída segura e retomada sem simular vídeo"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração Android com reinício e duplo toque",
+            "Repetir em data futura sem bloqueio da sessão passada"
+          ],
+          "deliverables": [
+            "Fluxo de sessão real",
+            "Evidência de recuperação"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-024",
+          "title": "Implementar Hoje, histórico e perfil",
+          "userStory": "Como usuário, quero enxergar meus próprios registros e gerenciar minha conta.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R09",
+            "R14",
+            "R16",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-018",
+            "V1-021",
+            "V1-013"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Abas mantêm estado e exibem resumo real sem nova busca redundante a cada toque",
+            "Histórico lista versões/ocorrências antigas e ausência honesta; perfil permite campos opcionais",
+            "Exportação, logout/revogação e exclusão têm confirmação e resultado verificável"
+          ],
+          "tasks": [
+            {
+              "id": "V1-024-T01",
+              "title": "Migrar as abas existentes",
+              "subtasks": [
+                "Ligar ViewModels às APIs e paginação com cache limitado",
+                "Separar tendência calculada de medição e limpar cache ao trocar conta"
+              ]
+            },
+            {
+              "id": "V1-024-T02",
+              "title": "Concluir perfil",
+              "subtasks": [
+                "Minimizar dados físicos e explicar finalidade",
+                "Implementar operações privadas e estados de erro sem mostrar dados de outro usuário"
+              ]
+            }
+          ],
+          "validation": [
+            "Emulador com duas contas reais de teste autorizadas ou contas isoladas de integração",
+            "Conferir resumo com DB e logout/exclusão"
+          ],
+          "deliverables": [
+            "Hoje/history/profile",
+            "Estado de conta e privacidade"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-025",
+          "title": "Implementar busca e registro alimentar no Flutter",
+          "userStory": "Como usuário, quero consumir o lote alimentar real em uma refeição registrada por mim.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R09",
+            "R10",
+            "R15",
+            "R17"
+          ],
+          "dependsOn": [
+            "V1-020",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Tela procura alimento/preparo, confirma quantidade e registra por API",
+            "Total, base por100 e campos desconhecidos são claros; sem dieta ou foto reconhecida fictícia",
+            "Integração visual com Hoje mantém alimentação distinta de gasto da atividade"
+          ],
+          "tasks": [
+            {
+              "id": "V1-025-T01",
+              "title": "Criar feature nutrition",
+              "subtasks": [
+                "Reusar cliente e estado, adicionar busca com debounce/cancelamento",
+                "Construir detalhe, unidade e confirmação sem inferir peso por fotografia"
+              ]
+            },
+            {
+              "id": "V1-025-T02",
+              "title": "Ligar histórico",
+              "subtasks": [
+                "Editar/excluir registro próprio e atualizar resumo",
+                "Oferecer vazio real quando lote/quantidade não disponível"
+              ]
+            }
+          ],
+          "validation": [
+            "Flutter analyze e widgets de unidades/ausência",
+            "Registro ponta a ponta com fonte alimentar real"
+          ],
+          "deliverables": [
+            "Feature nutrition",
+            "Refeição persistida e exibida"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-026",
+          "title": "Tratar offline e sincronização sem fingir sucesso",
+          "userStory": "Como usuário, quero ler material já autorizado e saber quando um registro ainda não foi enviado.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R10",
+            "R11",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-023",
+            "V1-025"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Cache tem versão, validade, direitos e isolamento por conta; sem cache de conteúdo bloqueado",
+            "Fila guarda somente ações reais do usuário, idempotentes, com pendente/enviado/conflito",
+            "Retirada de conteúdo e logout invalidam acesso; UI não mostra sucesso antes da confirmação adequada"
+          ],
+          "tasks": [
+            {
+              "id": "V1-026-T01",
+              "title": "Definir limites offline",
+              "subtasks": [
+                "Escolher armazenamento local mínimo e política de validade",
+                "Definir material consultável offline e prática que exige apoio/rede"
+              ]
+            },
+            {
+              "id": "V1-026-T02",
+              "title": "Implementar sincronização",
+              "subtasks": [
+                "Enfileirar registros reais e reenviar com chaves estáveis",
+                "Resolver conflito explicitamente e testar troca de conta"
+              ]
+            }
+          ],
+          "validation": [
+            "Modo avião, interrupção, expiração e reconexão",
+            "Nenhum registro duplicado nem vazamento entre contas"
+          ],
+          "deliverables": [
+            "Política de cache e fila",
+            "Recuperação verificada"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-027",
+          "title": "Validar acessibilidade e paridade de contratos Android/iOS",
+          "userStory": "Como usuário de qualquer plataforma, quero uma experiência compreensível e compatível com minhas necessidades.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R06",
+            "R15",
+            "R16",
+            "R17"
+          ],
+          "dependsOn": [
+            "V1-022",
+            "V1-024",
+            "V1-025"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/fluxos.md"
+          ],
+          "acceptance": [
+            "Texto ampliado, semântica, contraste, alvos de toque e movimento reduzido conferidos",
+            "Pessoas idosas e cuidadores mantêm requisitos específicos sem seleção automática por idade",
+            "Abstrações isolam permissões, OAuth e armazenamento; iOS não declarado testado no Windows"
+          ],
+          "tasks": [
+            {
+              "id": "V1-027-T01",
+              "title": "Verificar Android",
+              "subtasks": [
+                "Testar TalkBack, tamanhos de fonte e fluxo com pouco conhecimento digital",
+                "Conferir casa/praça e cuidador praticante versus pessoa assistida"
+              ]
+            },
+            {
+              "id": "V1-027-T02",
+              "title": "Preparar matriz de plataformas",
+              "subtasks": [
+                "Listar comportamento comum e diferenças nativas de cada integração",
+                "Manter ios/ e contrato neutro sem exigir o mesmo visual de sistema"
+              ]
+            }
+          ],
+          "validation": [
+            "Roteiro de acessibilidade em Android",
+            "Checklist iOS pendente até macOS/dispositivo real"
+          ],
+          "deliverables": [
+            "Relatório de acessibilidade",
+            "Matriz Android/iOS por funcionalidade"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP08",
+      "title": "Segurança, desempenho e observabilidade",
+      "outcome": "Medir e verificar o caminho real antes da distribuição, com dados sensíveis protegidos e custos controlados.",
+      "stories": [
+        {
+          "id": "V1-028",
+          "title": "Auditar dependências, segredos e superfície de ataque",
+          "userStory": "Como mantenedor, quero um release com riscos conhecidos em vez de um gráfico de auditoria inventado.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-013",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Inventário e análise de Go/Flutter/Android com resultados e versões reais",
+            "govulncheck, análise estática e busca de segredos registram escopo/data e exceções",
+            "Nenhum token, dados físicos ou mídia privada em log/artefato de build; nenhuma contagem fictícia de falhas"
+          ],
+          "tasks": [
+            {
+              "id": "V1-028-T01",
+              "title": "Executar verificação",
+              "subtasks": [
+                "Rodar ferramentas suportadas e revisar reachability/impacto de achados",
+                "Conferir dependências nativas Android e configuração release"
+              ]
+            },
+            {
+              "id": "V1-028-T02",
+              "title": "Corrigir e registrar",
+              "subtasks": [
+                "Priorizar falhas que expõem dados/autenticação e validar regressão",
+                "Tratar permissões mínimas, backup Android e armazenamento seguro"
+              ]
+            }
+          ],
+          "validation": [
+            "Relatórios reais de scanners e testes de autorização",
+            "Revisão dos logs e artefato Android"
+          ],
+          "deliverables": [
+            "Relatório de segurança versionado sem segredos",
+            "Riscos residuais e correções"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-029",
+          "title": "Instrumentar requisições, consultas e falhas",
+          "userStory": "Como operador, quero descobrir onde uma jornada falhou sem registrar conteúdo pessoal.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-007",
+            "V1-018"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "RequestId correlaciona Flutter/API; logs estruturados com redação e cardinalidade limitada",
+            "Métricas de latência/erro/pool e traces opcionais mostram chamadas reais; health não vaza detalhes",
+            "Alertas/retention/custo definidos; OpenTelemetry não exige Kubernetes ou Elastic para o piloto"
+          ],
+          "tasks": [
+            {
+              "id": "V1-029-T01",
+              "title": "Implementar instrumentação mínima",
+              "subtasks": [
+                "Medir duração, status, tamanho e pool sem corpo/token",
+                "Definir propagação e amostragem; redigir identificadores e nunca nome como label"
+              ]
+            },
+            {
+              "id": "V1-029-T02",
+              "title": "Preparar diagnóstico",
+              "subtasks": [
+                "Criar roteiro usuário→HTTP→caso de uso→DB→resposta com requestId",
+                "Definir alertas acionáveis de erro, indisponibilidade e falha de backup"
+              ]
+            }
+          ],
+          "validation": [
+            "Provocar erro controlado em staging e seguir correlação",
+            "Conferir ausência de PII e excesso de cardinalidade"
+          ],
+          "deliverables": [
+            "Runbook e painel de métricas reais",
+            "Evidência de uma jornada rastreada"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-030",
+          "title": "Medir consultas e carga representativa",
+          "userStory": "Como responsável técnico, quero limites medidos e um plano de escala gradual.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R14",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-014",
+            "V1-018",
+            "V1-020",
+            "V1-029"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Baseline registra hardware, versão, volume, cenário, p50/p95/p99, erros e saturação",
+            "Meta inicial proposta p95 leitura abaixo de500ms e escrita abaixo de1s em staging aquecido é revista com medição",
+            "Nenhuma alegação de milhões sem teste; otimizar paginação/índices/pool antes de dividir serviços"
+          ],
+          "tasks": [
+            {
+              "id": "V1-030-T01",
+              "title": "Ensaiar carga",
+              "subtasks": [
+                "Definir mistura de catálogo, resumo, login e registros com dados de teste isolados",
+                "Separar carga sintética de usuários reais e não gravá-la na V1 entregue"
+              ]
+            },
+            {
+              "id": "V1-030-T02",
+              "title": "Corrigir gargalos",
+              "subtasks": [
+                "Inspecionar planos de consulta e N+1 com EXPLAIN apropriado em teste",
+                "Medir cache/ETag e limites por instância; repetir apenas após mudança relevante"
+              ]
+            }
+          ],
+          "validation": [
+            "Relatório reproduzível de carga em ambiente autorizado",
+            "Teste de limite e recuperação após saturação"
+          ],
+          "deliverables": [
+            "Baseline e orçamento de capacidade",
+            "Plano de escala condicionado a métricas"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP09",
+      "title": "Infraestrutura, CI e implantação",
+      "outcome": "Subir API e banco com HTTPS, backup e rollback, após decisão concreta de fornecedor e custos.",
+      "stories": [
+        {
+          "id": "V1-031",
+          "title": "Escolher hospedagem e orçamento do piloto",
+          "userStory": "Como dono, quero aprovar uma opção concreta antes de criar recursos ou fornecer cartão.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-007",
+            "V1-010"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "Comparar container Go + Postgres gerenciado com VPS, região/latência, backup, sleep, quotas e custo atual oficial",
+            "Reutilizar conta/recurso existente se funcionar, sem prometer gratuidade permanente",
+            "Registrar fornecedor, teto mensal, forma de cobrança, domínio e aprovação antes de provisionar"
+          ],
+          "tasks": [
+            {
+              "id": "V1-031-T01",
+              "title": "Levantar o que existe",
+              "subtasks": [
+                "Listar recursos autorizados sem imprimir credenciais",
+                "Medir necessidades e consultar preços/limites nas páginas oficiais na data"
+              ]
+            },
+            {
+              "id": "V1-031-T02",
+              "title": "Apresentar proposta concreta",
+              "subtasks": [
+                "Definir API, DB, TLS/DNS e logs com caminhos e efeitos",
+                "Fixar orçamento e plano de parada/exportação; aguardar aprovação para gasto/criação"
+              ]
+            }
+          ],
+          "validation": [
+            "Conferir preços e limites atuais com fontes oficiais",
+            "Revisar plano de desligamento e restauração"
+          ],
+          "deliverables": [
+            "Decisão de provedor e custos aprovada",
+            "Mapa de ambientes e região"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-032",
+          "title": "Construir pipeline e artefatos reproduzíveis",
+          "userStory": "Como mantenedor, quero testar a mesma versão de API, contrato e app que será distribuída.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-008",
+            "V1-028"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "CI roda análise/testes de Go e Flutter, migrations em DB isolado e validação documental",
+            "Imagem não root e artefatos identificados por commit, versão e digest",
+            "Segredos de assinatura/deploy fora do Git e não disponíveis em PR não confiável"
+          ],
+          "tasks": [
+            {
+              "id": "V1-032-T01",
+              "title": "Criar jobs",
+              "subtasks": [
+                "Separar testes, contrato, import dry run e build",
+                "Fixar versões suportadas e cache sem credenciais"
+              ]
+            },
+            {
+              "id": "V1-032-T02",
+              "title": "Versionar entrega",
+              "subtasks": [
+                "Associar commit, manifestos e schema à imagem e APK",
+                "Definir aprovação de deploy e retenção de artefatos"
+              ]
+            }
+          ],
+          "validation": [
+            "Pipeline completo no repositório autorizado",
+            "Rebuild e conferência de versão/digest"
+          ],
+          "deliverables": [
+            "Workflow CI",
+            "Imagem da API e metadados de release"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-033",
+          "title": "Implantar staging e conferir restauração",
+          "userStory": "Como testador, quero acessar a API do celular fora da rede do notebook.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-031",
+            "V1-032",
+            "V1-006",
+            "V1-020",
+            "V1-029"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "API pública por HTTPS com DB privado, segredo gerenciado, CORS/proxy corretos e readiness",
+            "Migrations e importação revisadas executadas uma vez com backup; smoke testa leitura e escrita reais",
+            "Rollback de imagem e restauração ensaiados; apagar recursos somente após deixar de usar e preservar dados necessários"
+          ],
+          "tasks": [
+            {
+              "id": "V1-033-T01",
+              "title": "Provisionar após aprovação",
+              "subtasks": [
+                "Criar ambiente com orçamento, região e acesso mínimo definidos",
+                "Aplicar migrations por job controlado e importar lote revisado"
+              ]
+            },
+            {
+              "id": "V1-033-T02",
+              "title": "Validar fora do notebook",
+              "subtasks": [
+                "Conferir login/refresh/catálogo/registro/consulta com conta real autorizada",
+                "Ensaiar restore e registrar endpoint, versão, custos e desligamento"
+              ]
+            }
+          ],
+          "validation": [
+            "Smoke HTTPS de ponta a ponta",
+            "Restore em base separada e rollback de imagem"
+          ],
+          "deliverables": [
+            "URL staging e runbook",
+            "Evidência de implantação e recuperação"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP10",
+      "title": "APK e primeiro teste acompanhado",
+      "outcome": "Entregar um arquivo instalável legítimo, rastreável e útil para feedback real da esposa.",
+      "stories": [
+        {
+          "id": "V1-034",
+          "title": "Preparar identidade e assinatura Android",
+          "userStory": "Como desenvolvedor, quero que o APK de teste possa ser atualizado sem perder a instalação.",
+          "status": "todo",
+          "release": "V1",
+          "size": "M",
+          "requirements": [
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-021",
+            "V1-032"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro",
+            "Manifest INTERNET e network config conferidos; release usa HTTPS e assinatura própria, sem debug key",
+            "OAuth release fingerprint configurado; segredo não entra no repo/log"
+          ],
+          "tasks": [
+            {
+              "id": "V1-034-T01",
+              "title": "Definir identidade",
+              "subtasks": [
+                "Escolher applicationId estável e política de versão",
+                "Gerar chave fora do Git com senha segura e backup recuperável"
+              ]
+            },
+            {
+              "id": "V1-034-T02",
+              "title": "Validar release",
+              "subtasks": [
+                "Configurar Gradle sem segredo hardcoded e revisar permissões",
+                "Conferir certificado do APK, endpoint e flags debug"
+              ]
+            }
+          ],
+          "validation": [
+            "Verificar APK com ferramenta de assinatura do SDK",
+            "Instalar e atualizar build assinada mantendo dados"
+          ],
+          "deliverables": [
+            "Configuração de release",
+            "Procedimento de guarda/recuperação de chave"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-035",
+          "title": "Validar a jornada completa da V1",
+          "userStory": "Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e conteúdo reais.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R01",
+            "R03",
+            "R05",
+            "R07",
+            "R10",
+            "R14",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-023",
+            "V1-024",
+            "V1-025",
+            "V1-026",
+            "V1-027",
+            "V1-030",
+            "V1-033",
+            "V1-034"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "Login real → lote aprovado → fonte/versão → registro real → resumo → relançamento → logout verificados",
+            "Erro/offline/duplo toque/ausência de conteúdo e troca de data cobertos sem mocks no runtime",
+            "Lote bloqueado não executa; feedback não é apresentado como comprovação clínica"
+          ],
+          "tasks": [
+            {
+              "id": "V1-035-T01",
+              "title": "Executar roteiro release",
+              "subtasks": [
+                "Usar o APK assinado e API staging, não apenas flutter run",
+                "Conferir respostas e linhas do DB sem publicar dados pessoais"
+              ]
+            },
+            {
+              "id": "V1-035-T02",
+              "title": "Fechar critérios",
+              "subtasks": [
+                "Registrar resultados por passo, versão, dispositivo e limitações",
+                "Corrigir bloqueadores e repetir somente trechos afetados"
+              ]
+            }
+          ],
+          "validation": [
+            "E2E real em Android/emulador e aparelho quando disponível",
+            "Verificação de contrato, assinatura e ausência de fixtures na distribuição"
+          ],
+          "deliverables": [
+            "Relatório de aceite V1",
+            "Lista de problemas e limitações"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-036",
+          "title": "Gerar e disponibilizar APK à esposa",
+          "userStory": "Como testadora, quero receber o arquivo e instruções claras para instalar, testar e reportar problemas.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-035"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "APK release versionado, checksum, notas e link privado autorizado; sem envio de mensagem sem pedido explícito",
+            "Guia explica instalação da origem usada, permissão temporária, atualização, login e roteiro",
+            "Testadora concorda com uso dos dados; conta/log/arquivo temporários têm regra de limpeza após uso"
+          ],
+          "tasks": [
+            {
+              "id": "V1-036-T01",
+              "title": "Empacotar",
+              "subtasks": [
+                "Build release com URL staging e manifesto aprovados",
+                "Gerar SHA256, verificar certificado e escrever release notes com limites"
+              ]
+            },
+            {
+              "id": "V1-036-T02",
+              "title": "Preparar entrega e feedback",
+              "subtasks": [
+                "Disponibilizar arquivo/link no local aprovado e roteiro simples",
+                "Separar feedback de usabilidade de sintoma/prática; registrar erro/requestId sem PII"
+              ]
+            }
+          ],
+          "validation": [
+            "Download e hash coincidem; instalação real confirmada pela testadora",
+            "Registrar feedback real, sem inventar aceitação"
+          ],
+          "deliverables": [
+            "APK instalável e checksum",
+            "Guia para esposa e registro de feedback"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-037",
+          "title": "Encerrar piloto e priorizar correções",
+          "userStory": "Como dono, quero aprender com o uso e retirar o que não for mais necessário.",
+          "status": "todo",
+          "release": "V1",
+          "size": "S",
+          "requirements": [
+            "R14",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-036"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "Consolidar problemas realmente observados por impacto e reprodução",
+            "Excluir temporários/contas de teste e recursos dispensados somente após confirmar que não são mais usados",
+            "Conteúdo e evidências de autoria preservados; histórico pessoal tratado conforme consentimento"
+          ],
+          "tasks": [
+            {
+              "id": "V1-037-T01",
+              "title": "Avaliar feedback",
+              "subtasks": [
+                "Comparar roteiro com uso real sem gerar métricas de adesão falsas",
+                "Criar bugs com evidência e próximo incremento revisável"
+              ]
+            },
+            {
+              "id": "V1-037-T02",
+              "title": "Fazer limpeza",
+              "subtasks": [
+                "Inventariar APKs/logs/recursos/contas ainda necessários",
+                "Apagar apenas alvos definidos, conferir ausência e guardar recibo sem segredos"
+              ]
+            }
+          ],
+          "validation": [
+            "Conferir correções com reexecução afetada",
+            "Recibo de limpeza e custo final"
+          ],
+          "deliverables": [
+            "Balanço do piloto",
+            "Backlog repriorizado e limpeza documentada"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP11",
+      "title": "iOS e distribuição nas lojas",
+      "outcome": "O mesmo produto terá iOS; execução e publicação nativa ficam depois da primeira validação Android.",
+      "stories": [
+        {
+          "id": "V1-038",
+          "title": "Compilar e testar no ecossistema iOS",
+          "userStory": "Como usuário de iPhone, quero acesso aos mesmos contratos e conteúdo permitido.",
+          "status": "todo",
+          "release": "V1.1",
+          "size": "L",
+          "requirements": [
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-027",
+            "V1-035"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "Ambiente macOS/Xcode e dispositivo/simulador reais disponíveis e documentados",
+            "Bundle ID, OAuth, keychain, rede, permissões e lifecycle testados separadamente",
+            "Nenhum APK convertido em IPA; mesma API/dados, adaptações nativas explícitas"
+          ],
+          "tasks": [
+            {
+              "id": "V1-038-T01",
+              "title": "Preparar ambiente",
+              "subtasks": [
+                "Verificar acesso existente a Mac e compatibilidade Flutter/Xcode antes de instalação",
+                "Configurar assinatura/BundleID/OAuth sem expor certificados"
+              ]
+            },
+            {
+              "id": "V1-038-T02",
+              "title": "Validar paridade",
+              "subtasks": [
+                "Rodar jornada real, interrupção, secure storage e acessibilidade",
+                "Registrar diferenças e corrigir sem forçar aparência Android"
+              ]
+            }
+          ],
+          "validation": [
+            "Build iOS e testes em ambiente Apple",
+            "E2E na API staging e relatório de diferenças"
+          ],
+          "deliverables": [
+            "Build iOS validada",
+            "Matriz de paridade atualizada"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-039",
+          "title": "Preparar TestFlight, Play e políticas de publicação",
+          "userStory": "Como responsável, quero distribuir nas lojas quando houver aceite, privacidade e custos definidos.",
+          "status": "todo",
+          "release": "V1.1",
+          "size": "L",
+          "requirements": [
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-038",
+            "V1-037"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/implantacao-e-apk.md"
+          ],
+          "acceptance": [
+            "Contas de desenvolvedor, taxas atuais, regras de saúde/dados e revisão verificadas em fontes oficiais",
+            "Assinatura, formulários de privacidade, screenshots reais e política de suporte coerentes",
+            "Publicação somente após autorização; teste interno Android não exige loja agora"
+          ],
+          "tasks": [
+            {
+              "id": "V1-039-T01",
+              "title": "Revisar requisitos atuais",
+              "subtasks": [
+                "Conferir Apple/Google no momento da publicação",
+                "Aprovar custos, identidade legal e política de dados"
+              ]
+            },
+            {
+              "id": "V1-039-T02",
+              "title": "Distribuir por fases",
+              "subtasks": [
+                "Configurar testes internos/TestFlight e coletar feedback",
+                "Preparar rollback/retirada e submissão com versão rastreável"
+              ]
+            }
+          ],
+          "validation": [
+            "Checklist oficial preenchido e testes de loja reais",
+            "Sem afirmação de aprovação antes do retorno da plataforma"
+          ],
+          "deliverables": [
+            "Pacotes/metadata de loja",
+            "Relatório de submissão e decisões"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    },
+    {
+      "id": "EP12",
+      "title": "Visão integral após o primeiro piloto",
+      "outcome": "Preservar os requisitos ainda não implementados, sem enchê-los de simulações na V1.",
+      "stories": [
+        {
+          "id": "V1-040",
+          "title": "Ampliar modalidades, programas e personalização humana",
+          "userStory": "Como usuário experiente ou iniciante, quero ampliar a biblioteca sem perder autoria nem chamar composição de programa original.",
+          "status": "todo",
+          "release": "Posterior",
+          "size": "L",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R10"
+          ],
+          "dependsOn": [
+            "V1-037"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Expandir pelos lotes N pesquisados, mantendo direitos/apoio/variante e ambiente",
+            "Montar/importar treino próprio é complementar e registra quem alterou e a origem das peças",
+            "Cada modalidade usa unidades e progressão reais; sem dose criada pela IA"
+          ],
+          "tasks": [
+            {
+              "id": "V1-040-T01",
+              "title": "Priorizar lotes",
+              "subtasks": [
+                "Usar lacunas observadas no piloto e mapa N01–N46",
+                "Selecionar programas/componentes de casa, praça e academia com cobertura real"
+              ]
+            },
+            {
+              "id": "V1-040-T02",
+              "title": "Implementar composição",
+              "subtasks": [
+                "Modelar alterações e atribuição por componente",
+                "Revisar material/instruções e liberar somente uso sustentado"
+              ]
+            }
+          ],
+          "validation": [
+            "Revisão dos lotes e testes de unidade/ordem",
+            "Fluxo de composição com atribuição preservada"
+          ],
+          "deliverables": [
+            "Lotes adicionais",
+            "Editor/importador com limites"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-041",
+          "title": "Adicionar sensores, GPS e integrações",
+          "userStory": "Como usuário, quero importar medidas reais com permissão e origem, evitando registros duplicados.",
+          "status": "todo",
+          "release": "Posterior",
+          "size": "L",
+          "requirements": [
+            "R09",
+            "R11",
+            "R14",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-037",
+            "V1-038"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Plataformas/provedores são escolhidos por pesquisa e capacidade real do aparelho",
+            "Permissões graduais, revogação, identificação da origem e deduplicação testadas",
+            "Sem frequência cardíaca/distância/calorias inventadas quando sensor não existir"
+          ],
+          "tasks": [
+            {
+              "id": "V1-041-T01",
+              "title": "Definir integração prioritária",
+              "subtasks": [
+                "Comparar capacidades Android/iOS, termos e custo atuais",
+                "Desenhar permissionamento, consentimento e regra de conflitos"
+              ]
+            },
+            {
+              "id": "V1-041-T02",
+              "title": "Implementar captura real",
+              "subtasks": [
+                "Iniciar/pausar/retomar e tratar perda de sinal/background",
+                "Validar unidade, precisão declarada e duplicidade com registro manual"
+              ]
+            }
+          ],
+          "validation": [
+            "Testes em dispositivos reais compatíveis",
+            "Negação/revogação de permissão e ausência de sensor"
+          ],
+          "deliverables": [
+            "Integração real documentada",
+            "Matriz de disponibilidade"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-042",
+          "title": "Investigar imagem, OCR e confirmação humana",
+          "userStory": "Como usuário, quero apoio para registrar uma foto sem tratar estimativa visual como medição confirmada.",
+          "status": "todo",
+          "release": "Posterior",
+          "size": "L",
+          "requirements": [
+            "R12",
+            "R13",
+            "R15",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-037"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Foto de prato, rótulo/barcode, painel de treino e gesto são problemas separados",
+            "Modelo/API, licença, custo, privacidade e precisão medidos antes de adoção",
+            "Candidatos exigem confirmação de alimento/preparo/quantidade/atividade; nenhum treino prescrito por IA"
+          ],
+          "tasks": [
+            {
+              "id": "V1-042-T01",
+              "title": "Executar prova delimitada",
+              "subtasks": [
+                "Reutilizar evidências N correspondentes antes de nova pesquisa",
+                "Definir dataset autorizado e métricas de erro sem dados pessoais por padrão"
+              ]
+            },
+            {
+              "id": "V1-042-T02",
+              "title": "Decidir produto",
+              "subtasks": [
+                "Comparar captura local/remota e fallback manual",
+                "Implementar somente resultado aprovado, com edição e exclusão da foto"
+              ]
+            }
+          ],
+          "validation": [
+            "Ensaio com material autorizado e resultados reais",
+            "Testes de erro, baixa confiança e privacidade"
+          ],
+          "deliverables": [
+            "Decisão por tipo de captura",
+            "Fluxo confirmado pelo usuário"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        },
+        {
+          "id": "V1-043",
+          "title": "Desenvolver acompanhamento e alimentação avançados",
+          "userStory": "Como cuidador ou usuário, quero ferramentas próprias com consentimento e limites claros.",
+          "status": "todo",
+          "release": "Posterior",
+          "size": "L",
+          "requirements": [
+            "R06",
+            "R07",
+            "R09",
+            "R10",
+            "R14",
+            "R15",
+            "R16",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-037",
+            "V1-013"
+          ],
+          "inputs": [
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/diagnostico-atual.md",
+            "docs/conteudo/evidencias-para-integracao.md",
+            "docs/execucao/v1/handoff.md"
+          ],
+          "acceptance": [
+            "Pessoa assistida tem vínculo e permissões explícitos; registros distinguem autor e titular",
+            "Modelos humanos de alimentação dependem de conteúdo/direitos e responsabilidade real, não cardápio gerado",
+            "Reconhecimento, recomendações e contextos clínicos continuam condicionados à evidência apropriada"
+          ],
+          "tasks": [
+            {
+              "id": "V1-043-T01",
+              "title": "Especificar jornadas",
+              "subtasks": [
+                "Separar saúde do cuidador de acompanhamento de outra pessoa",
+                "Investigar consentimento, acesso, acessibilidade e revogação em cenários reais"
+              ]
+            },
+            {
+              "id": "V1-043-T02",
+              "title": "Implementar por fatia",
+              "subtasks": [
+                "Priorizar registro compartilhado e organizador alimentar conforme feedback",
+                "Adicionar modelo humano somente após cumprir os mesmos gates do catálogo"
+              ]
+            }
+          ],
+          "validation": [
+            "Teste de permissões entre titulares e cuidadores",
+            "Revisão da origem dos modelos e ausência de prescrição automática"
+          ],
+          "deliverables": [
+            "Jornadas de acompanhamento",
+            "Expansão alimentar com origem"
+          ],
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": []
+        }
+      ]
+    }
+  ]
+}

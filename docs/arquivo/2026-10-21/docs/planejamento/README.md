@@ -1,0 +1,101 @@
+> ARQUIVO HISTÓRICO. Snapshot anterior à reorganização de 21/10/2026. Não define a próxima ação. Estado vigente: [índice](../../../../README.md).
+
+# TrainForge — visão do produto e base de execução
+
+**Estado vigente - 21/10/2026:** N15 concluiu a pesquisa no recorte modular autorizado: onze componentes para cuidadores, separados dos cinco movimentos domesticos para idosos ja conferidos. N01-N46: 40 pesquisas concluidas nos recortes e seis reusos documentados; nenhuma N ativa ou pausada. Nao sao cinco programas originais de cuidadores completos nem conteudo/pratica/publicacao aprovados. Benson/START/Pilates e variantes nao selecionadas preservam suas lacunas. Fonte, autoria, dose, publico, apoio e direitos por componente; sem ciclo novo ou eficacia herdada. Indice: 840 tentativas GET, 694 HTTP200, 780 hashes conferidos, 331 familias. Sem app/Figma/banco, novos contatos, commit ou push. [Entrega, selecao e limites](../../../../conteudo/evidencias/2026-10-21/n15c-composicao/relatorio.md). Registros datados anteriores abaixo sao historicos e nao substituem esta selecao.
+
+**Registro historico — 16/10/2026:** N18–N21 fecharam a pesquisa nos recortes documentados: biblioteca de9componentes de academia, percursos humanos comparados e9componentes específicos de praça. N01–N46:39pesquisas concluídas nosrecortes,6reusos documentados e **N15 pausada/aberta**; nenhumaNativa. Isso não representa45programas integrais executáveis nem aprovação de prática, conteúdo ou funções automáticas. Autoria, dose, apoio, variante, direitos e lacunas das réplicas integrais preservados; sem treino prescrito porIA. Índice833GETs/689HTTP200/775hashes conferidos,328famílias. Temporários de ensaios/leitura excluídos após uso:2.665.357.099bytes/9recibos, ausência verificada; fontes primárias e recibos preservados. Sem app/Figma/banco/publicação/contatos/commit/push. [Resultados, limites e retomada](../../../../conteudo/evidencias/2026-10-15/continuacao-n39-n46.md) Registros datados abaixo são históricos e não substituem este estado.
+
+
+**Estado verificado - continuacao 05/10/2026:** N18-I ativo/parcial; N15-C, N19-I e N20-I pendentes/parciais. N15-I/N17-I fechados somente para cinco movimentos domesticos ES2019-DOM-01. Fila: seis reusos, dez Ns fechadas, tres pendentes e uma ativa; onze complementos fechados, N15 pai aberto pelo cuidador. N21 nao iniciada. Indice: 320 chamadas / 268 HTTP 200 / 281 hashes, incluindo erros/barreiras; 124 familias. Cartilha ELA integral recebida com CC BY-ND4.0, dose/gesto divergentes e acompanhamento; AGUEDA A5real47paginas lido,10paginas visualizadas, mas instrucoes/dose/licenca externa nao fechados; IST-CIEX clinico especifico nao selecionado. Sem novo pacote operacional aprovado. Suite documental:24testes passaram,15fichas conferidas e pacote domestico com hash preservado. Nao testes clinicos ou do aplicativo. Sem app, Figma, API, banco, commit ou push. Detalhes em `docs/conteudo/complementos-2026-10-04.md`; blocos seguintes preservam snapshots historicos.
+
+**Snapshot de execução — 03/10/2026:** primeiro fechar os [complementos anteriores N01–N20](../../../../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json), um foco por vez; **N21 retida**. N15-C ativo/parcial: [pesquisa própria do cuidador em casa](../../../../conteudo/idosos-e-cuidadores.md), sem programa autónomo completo/licenciado selecionado. Idosos em casa/praça/academia e cuidadores praticantes continuam distintos do acompanhamento de terceiros. A auditoria inicial e os complementos anteriores são snapshots preservados; [dossiê](../../../../conteudo/evidencias-para-integracao.md). Etapa 02 não iniciada.
+
+Atualizado em **24/09/2026**, a partir do esclarecimento do autor. Este é o documento central da visão esperada; substitui os recortes anteriores que davam prioridade exclusiva à musculação, tratavam alimentação como simples complemento ou fotografia apenas como anexo. Define intenção de produto, **não funcionalidades já implementadas nem promessa de que tudo cabe no primeiro lançamento**.
+
+## O produto que queremos construir
+
+Um guia pessoal de treino, movimento e alimentação que ajuda a pessoa a **saber por onde começar, entender o que está a fazer, organizar uma rotina, registar de diferentes formas e acompanhar a evolução**. Deve servir tanto quem precisa de orientação desde o início como quem já sabe montar o seu próprio plano.
+
+Treino, alimentação, objetivos e rotina precisam conversar entre si. O resultado esperado não é uma coleção de ferramentas isoladas: a pessoa entende o que planeou, o que fez, o que comeu, o que mudou e qual é a próxima ação útil. A linguagem começa simples e pode revelar detalhes técnicos por escolha do utilizador.
+
+O conteúdo de treino deve vir de **programas humanos existentes, com origem, fundamento e direitos demonstráveis**. Não gerar a prescrição por IA. O autor não dispõe de parceiros, orçamento para comprar conteúdo ou tempo para escrever cada programa. Importação e organização em lote são caminhos a investigar; não eliminam a conferência do conteúdo. Trazer o próprio treino é complementar e não satisfaz sozinho a necessidade de quem não sabe começar.
+
+## Pessoas e situações que a experiência precisa atender
+
+| Situação | Resultado que a pessoa deve conseguir |
+|---|---|
+| Não sabe nada e quer cuidar da saúde | Entender as opções, escolher uma atividade acessível, receber um percurso humano completo e aprender a executá-lo |
+| Sabe o objetivo, mas não montar o plano | Comparar programas adequados ao seu contexto e perceber requisitos, frequência e progressão |
+| Já tem experiência | Montar, importar e ajustar treino/rotina alimentar, escolher métricas e consultar detalhe técnico sem tutoriais obrigatórios |
+| Treina em casa, na academia ou ao ar livre | Encontrar opções compatíveis com espaço, equipamento real, tempo e modalidade; uma máquina específica não pode ser pressuposta |
+| Pessoa idosa autónoma, iniciante ou experiente | Encontrar programa humano cujo público/apoios estejam demonstrados, sem decidir intensidade ou treino sentado apenas pela idade |
+| Pessoa idosa que precisa de apoio digital ou físico | Distinguir ajuda para usar o app de assistência à execução; programa e instruções devem cobrir o contexto real, sem substituir profissional exigido |
+| Cuidador informal/familiar ou profissional | Acompanhar/registar para pessoa legitimamente autorizada, separando autoria/origem, autonomia, partilha e dados da pessoa assistida dos seus próprios |
+| Alterna atividades e tem semana variável | Combinar força, caminhada, corrida e outras práticas sem perder histórico nem duplicar registos |
+| Está a regressar após pausa ou tem uma limitação | Explicar o contexto e encontrar conteúdo cujo público e limites estejam identificados; quando não houver cobertura, receber um limite claro |
+| Quer ganhar massa, perder gordura, mudar/manter peso ou melhorar capacidade | Organizar objetivos e acompanhar medidas pertinentes, sem transformar toda evolução em quilos ou calorias |
+| Precisa de ajuda com alimentação | Aprender a escolher, pesar, ler rótulos, montar refeições e registar; receber orientação compatível com a cobertura efetivamente validada |
+
+Dores, cirurgias, condições diagnosticadas e recuperação fazem parte dos contextos de uso. **Não são o foco principal nem se restringem a joelho ou coluna.** Idosos e cuidadores passam a públicos prioritários explícitos de pesquisa por solicitação de 03/10; não ficam escondidos em “casa” ou “reabilitação”. Cobertura e faixa etária de lançamento ainda exigem evidência; “para todos” não é garantia universal. Cuidador também pode ter percurso próprio de saúde, separado da pessoa assistida. Potencial de mercado permanece hipótese a validar.
+
+## Requisitos de referência
+
+Os IDs abaixo ligam esta visão à pesquisa, ao desenho futuro e aos critérios de qualidade. Não são tabelas de banco ou nomes de endpoints. **Recorte transversal idosos/cuidadores:** R01/R03/R04 consideram público, capacidade, apoios e supervisão da fonte; R05/R15/R17 exigem instrução e acessibilidade verificadas; R07–R10 distinguem consumido/observado e pessoa assistida/autor; R11/R14/R18 distinguem dispositivos, partilha legítima, autonomia e privacidade. Implementação e testes com esse público pendentes.
+
+| ID | O que o autor espera | Como reconhecer o resultado esperado |
+|---|---|---|
+| R01 — Orientação e autonomia | Entrada guiada para iniciantes e ferramentas de montagem/customização para experientes | A pessoa consegue começar sem trazer um plano; quem já sabe pode escolher diretamente sem refazer todo o onboarding |
+| R02 — Diversidade de práticas | Musculação, força em casa/peso corporal/elásticos, caminhada, corrida, yoga, Pilates, treino funcional/circuitos/cross training e outras atividades de saúde corporal | Cada modalidade tem conteúdo, unidades e execução próprios; ciclismo, natação, dança, mobilidade, equilíbrio e desportos ampliam a matriz sem virar apenas etiquetas |
+| R03 — Programas humanos prontos | Programas reais obtidos de fontes existentes, sem IA a inventar treinos e sem pressupor parceria | Fonte, autoria, versão, público, direitos, sessões e progressão conferidos; biblioteca de exercícios isolados não conta como programa completo |
+| R04 — Objetivos e progressão | Dias/semana, duração disponível, ambiente, equipamento, experiência por modalidade, retorno após pausa e objetivos de saúde/composição/desempenho | Seleção multidimensional; não reduzir pessoas a três níveis. Peso, massa muscular e gordura não são a mesma medida; metas não prometem resultado ou prazo garantido |
+| R05 — Aprender a executar | Explicação visual de cada exercício/prática e de como ler um treino | Posição, sequência, respiração quando prevista pela fonte, dose, descanso, erros comuns e alternativas aprovadas; imagem/animação/vídeo com direitos e alternativa acessível |
+| R06 — Contextos de saúde e retorno | Considerar dores comuns, limitações, diagnósticos, operações e regresso à prática, além dos exemplos iniciais | Conteúdo por população/contexto e limites explícitos; não indicar tratamento individual apenas pela localização da dor ou nome da cirurgia |
+| R07 — Planeamento alimentar | Montar e customizar refeições, dietas/planos alimentares e rotinas para objetivos diferentes, com ajuda para quem não sabe | Distinguir organizador pessoal, modelos humanos autorizados e orientação nutricional individual; esta última exige viabilidade própria, ainda pendente |
+| R08 — Alimentos, quantidades e rótulos | Calorias, gramas, porções, medidas caseiras, nutrientes, ingredientes, restrições e aprendizagem de embalagem | Pesquisa/lista útil em Portugal; alimento/preparo correto; leitura visual de 100 g/100 ml versus porção, ingredientes e alergénios; desconhecido não equivale a zero ou seguro |
+| R09 — Integração alimentação e atividade | Relacionar o que a pessoa quer alcançar, planeia, pratica e consome | Visão conjunta com origem e limites das estimativas; não somar calorias duplicadas nem alterar metas alimentares automaticamente a cada atividade |
+| R10 — Registo e personalização manual | Digitar, escolher da lista, usar favoritos/recentes, trazer plano e corrigir registos | Treino, atividade e refeição editáveis; planeado separado do realizado; rascunho, parcial, completo, não feito e descanso diferenciados |
+| R11 — Celular e dispositivos | Registar durante a atividade, usar sensores/GPS e conectar fontes compatíveis | Iniciar/pausar/retomar/terminar; origem, permissões, disponibilidade de cada métrica, importação e duplicados tratados. Não pressupor relógio nem integração universal |
+| R12 — Imagem de atividade | Usar fotografia/imagem para ajudar a identificar ou importar o que foi feito | Investigar foto de exercício, foto de painel/resumo e eventual sequência/vídeo como problemas distintos; tempo e gasto não ficam comprovados por uma foto isolada |
+| R13 — Imagem de alimento | Fotografar alimento para identificação assistida e registo | Reconhecimento desejado permanece no plano: mostrar candidatos, confirmar alimento/preparo e quantidade, corrigir ou usar entrada manual; separar foto do prato, OCR de rótulo e código de barras |
+| R14 — Acompanhamento pessoal | Dashboard intuitivo, visual e útil para o quotidiano | Hoje, semana e tendências mostram ações, consistência, progresso e contexto; detalhes explicáveis, comparação consigo mesmo e escolha de métricas, sem aparência de painel empresarial |
+| R15 — Ensino e linguagem | Exemplos visuais e orientação contextual, do básico ao técnico | Versões simples/detalhadas consistentes; glossário e ajuda no momento da tarefa, sem obrigar o utilizador a ler uma aula antes de cada registo |
+| R16 — Rotina e configuração progressiva | Explicar por que pedir informações, permitir adiar módulos e voltar só ao que falta | Campos obrigatórios por função, metas e agenda ajustáveis, lembretes e descanso; alimentação não configurada abre o seu próprio percurso de configuração |
+| R17 — Experiência e plataformas | Rapidez, estado preservado, formulários/teclado, acessibilidade, transições e animações; Android inicial e variante iOS 26/Liquid Glass | Componentes e dados disponíveis aparecem sem recarga total; sessões/rascunhos sobrevivem à interrupção; movimento reduzido e diferenças de plataforma especificados |
+| R18 — Sustentação e confiança | Conteúdo relevante, seguro no escopo demonstrado e gratuito para o utilizador, custo controlado, Portugal, privacidade e monetização futura | Direitos comerciais por conteúdo, manutenção, quotas e custos conhecidos; dados de saúde/fotos/percurso protegidos; anúncios sem comprometer confiança ou prática |
+
+Exemplos de experiência: sem familiaridade; aprendizagem da técnica; prática regular; prática estruturada; experiência específica; retorno após interrupção. São descritores de contexto a validar com o conteúdo, **não seis níveis clínicos ou uma classificação definitiva**. Uma pessoa experiente em força pode ser iniciante em corrida. Intensidade do treino também não é sinónimo de experiência.
+
+## Integração sem falsas certezas
+
+O modo guiado deve ensinar a escolher e organizar conteúdo humano aprovado; o modo livre permite montar e ajustar. Se uma alteração modificar dose, sequência ou progressão fora das opções do autor, mostrar que é uma versão personalizada, sem conservar uma aprovação que já não se aplica.
+
+A visão inclui reconhecimento por imagem. A restrição “sem treino por IA” refere-se à geração de prescrição; não decide automaticamente se visão computacional será local ou remota. Modelo, licença, precisão, confirmação humana, privacidade e custo precisam de pesquisa. Não remover reconhecimento da visão por ser difícil, nem apresentá-lo como resolvido por uma API genérica de imagem.
+
+Alimentação e atividade partilham objetivos e histórico. O app deve distinguir ingestão registada, gasto estimado, métricas do dispositivo e metas escolhidas/justificadas. Não tratar calorias de exercício como perda de gordura medida, nem inferir massa muscular a partir de peso isolado. Recomendações de dieta individual, tratamento e progressões para populações específicas permanecem condicionadas à validação apropriada.
+
+## Onde estamos
+
+- **Código:** Flutter já existe; a API ativa continua em `C:\dev\bootcamp-treinos-api`. O Next.js antigo é referência. A descrição factual permanece na [documentação técnica](../../../../../documentacao-tecnica.md).
+- **Figma:** base v0.4 preservada e inventariada em 22/09: 105 telas/estados e 372 reações das telas. Não foi conferida visualmente nem editada neste incremento. Quantidade de telas não demonstra cobertura desta nova visão.
+- **Etapa 0:** inventário histórico concluído; alinhamento documental da visão feito em 24/09. Conferência do Figma contra estes requisitos fica para a próxima intervenção visual.
+- **Etapa 01:** N01–N14 gerais concluídos; N15–N20 parciais. Cinco rodadas idosos/cuidadores documentadas, N14-C fechado no recorte e quatro parciais; próximo N21. A [fila](../../../../planejamento/etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho) preserva um foco por vez; não confundir pesquisa com conteúdo homologado.
+- **Este incremento:** ajusta documentação e especifica alterações futuras de design. Não implementa funcionalidades, integra fontes, altera Figma/banco ou publica o app.
+
+## Leitura e responsabilidade de cada documento
+
+| Documento | Para que serve |
+|---|---|
+| [Pitch e decisões](../../../../planejamento/pitch-e-decisoes.md) | Explicar a proposta, diferenciação, restrições e o que ainda depende de decisão |
+| [Plano de execução](../../../../planejamento/plano-de-execucao.md) | Ordem, check-ins, dependências e critérios de conclusão das etapas |
+| [Etapa 0](../../../../planejamento/etapa-00-base.md) | Evidências da base preservada e limites do inventário |
+| [Etapa 01](../../../../planejamento/etapa-01-pesquisa.md) | Síntese da viabilidade, histórico de pesquisa e balanço final do que temos/falta |
+| [Cobertura do conteúdo](../../../../conteudo/cobertura-e-prioridades.md) | Inventário de 25/09: o que o app deve entregar, retornos esperados de fontes/APIs, o que existe com evidência e o que falta; modalidades e lotes a avaliar |
+| [Base de fontes](../../../../conteudo/README.md) | Catálogo, amostras, direitos e processo de curadoria existentes |
+| [Ajustes futuros do Figma](../../../../design/ajustes-visao-integrada.md) | Único novo documento deste incremento: especificação detalhada para desenhar depois |
+| [Experiência e Figma](../../../../planejamento/experiencia-e-figma.md) | Regras transversais de interação, teclado, movimento e persistência |
+| [Arquitetura e contratos](../../../../planejamento/arquitetura-e-contratos.md) | Hipóteses técnicas futuras e relação entre ações/dados; não descreve implementação pronta |
+| [Fontes, custos e hospedagem](../../../../planejamento/fontes-custos-e-hospedagem.md) | Sustentação, restrições financeiras e pesquisas operacionais pendentes |
+| [Qualidade e lançamento](../../../../planejamento/qualidade-e-lancamento.md) | Critérios e cenários que comprovarão os percursos do produto |
+
+Ordem mantida: **viabilidade → fluxos/conteúdo → sistema visual e protótipo → provas técnicas/aprovação → arquitetura/contratos → banco → implementação e testes → lançamento**. Pesquisa técnica pontual pode antecipar uma inviabilidade; não autoriza antecipar a implementação. Definir uma primeira entrega é uma decisão posterior e explícita, preservando esta visão como destino.

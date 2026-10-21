@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Fontes candidatas — triagem preparatória
 
 **Pesquisa histórica:** a síntese vigente está em [etapa 01](planejamento/etapa-01-pesquisa.md), com a visão ampliada de 24/09 e o balanço do que temos/falta; fontes detalhadas em [conteúdo](conteudo/README.md). As recomendações abaixo não são seleção final ou conteúdo homologado.

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "mode": "incremental code-only no-cluster; existing installation",
+  "results": [
+    {
+      "corpus": "lib/",
+      "exitCode": 0,
+      "changed": 0,
+      "unchanged": 42,
+      "deleted": 0,
+      "nodes": 470,
+      "edges": 607
+    },
+    {
+      "corpus": "C:/dev/bootcamp-treinos-api/src (exclude generated)",
+      "exitCode": 0,
+      "changed": 0,
+      "unchanged": 33,
+      "deleted": 0,
+      "nodes": 193,
+      "edges": 495
+    }
+  ],
+  "output": "no incremental changes detected (--no-cluster); outputs left untouched.",
+  "webReference": "295 nodes /422 edges /53 files; not reindexed because unchanged reference",
+  "limits": [
+    "structural code only",
+    "no runtime validation",
+    "research docs and new tools not semantically indexed"
+  ]
+}

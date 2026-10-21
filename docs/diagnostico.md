@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Diagnóstico e decisões a rever
 
 **Leitura em 24/09/2026:** diagnóstico do código histórico, não definição do escopo futuro. A [visão integrada](planejamento/README.md) e o [balanço da etapa 01](planejamento/etapa-01-pesquisa.md) prevalecem para decisões de produto. Os problemas técnicos abaixo não foram corrigidos por atualizar documentação.

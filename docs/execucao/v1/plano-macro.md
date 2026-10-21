@@ -1,0 +1,33 @@
+# Caminho da pesquisa ao APK
+
+Plano executável de21/10/2026. Esta entrega organiza e prepara; não iniciou backend Go, migrations, alteração funcional Flutter, provisionamento cloud ou geração do APK V1.
+
+**Próxima ação: V1-001.** Todas as43 histórias do [backlog](backlog.md) estão não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
+
+| Ordem / marco | Histórias | Resultado verificável | Condição de saída |
+|---|---|---|---|
+| M0 — recorte e decisão |001–005,002 em sequência própria,003 transversal | Lote candidato, decisão Go/fronteira e contrato editorial; revisão dos usos | Fontes/limites reais; decisões não confundidas com implementação |
+| M1 — fundação e dados |007–010 e006 após revisão | API local Go, OpenAPI, banco isolado migrado e lote real importado | Dry run/reimportação, restore e contrato verificados |
+| M2 — primeira fatia vertical |011–016,021–022 | Login Android real → API Go → catálogo no DB → detalhe/autoria/seleção | Sessão segura e conteúdo permitido, sem generator fallback |
+| M3 — uso e alimentação |017–020,023–027 | Registrar atividade, consultar histórico, buscar alimento e registrar consumo; recuperação | UI/API/DB coerentes com unidades, ausência e idempotência |
+| M4 — confiabilidade e infraestrutura |028–033 | Segurança, baseline de carga, telemetria, pipeline e staging HTTPS | Custos/provedor aprovados; deploy e restauração reais |
+| M5 — arquivo para teste |034–037 | APK assinado, jornada release validada, instalação e feedback | Roteiro real, checksum e limpeza após uso |
+| M6 — iOS e expansão |038–043 | macOS/Xcode e paridade, lojas e funcionalidades posteriores | Cada capacidade tem evidência de uso/direitos/custo próprios |
+
+As dependências exatas estão em `backlog.json`; intervalos da tabela são orientação macro e não autorização para pular dependência. É possível investigar hospedagem/contratos independentemente de um material bloqueado; não fingir que bloqueio editorial fechou.
+
+## Incrementos que o agente deve executar
+
+1. Ler índice, AGENTS e história pronta pelas dependências. Registrar escopo e limites da rodada.
+2. Implementar uma fatia concreta, com contrato e dados reais quando for o fluxo integrado. Evitar migrar toda a lib/backend de uma vez.
+3. Rodar verificações relevantes. Relatar o que foi executado, qual resultado e qual limitação. Não usar teste documental como comprovação clínica ou teste do app.
+4. Atualizar fonte canônica: backlog, OpenAPI/modelo quando existir, achados e intenção do mapa. Gerar snapshot e conferir painel. `done` exige evidência.
+5. Fazer commit local da unidade autorizada; push/deploy/publicação conforme o pedido e a aprovação aplicáveis. Deixar handoff com próxima ação, sem nova varredura de pesquisa sem pista.
+
+## Critério para revisitar Go
+
+`V1-002` registra a decisão. Se a primeira fatia exigir prazo incompatível com o objetivo do teste, apresentar o impacto e comparar com adaptar Fastify; não manter dois backends gravando o mesmo domínio para “acelerar”. A recomendação continua Go modular, mas sem alegar que Fastify é incapaz de escalar ou que mudar a linguagem resolve o domínio.
+
+## Cobertura da visão
+
+R01–R06 e R15–R17: catálogo, requisitos, sessão, acessibilidade e evolução multiplataforma. R07–R10/R14: fatia alimentar, registro, histórico e origem das métricas. R11: sessão/recuperação agora, sensores/GPS na041. R12/R13: imagem/OCR na042. Acompanhamento legítimo de outra pessoa e alimentação avançada na043. R18 é transversal a conteúdo, segurança, custo e operação. A matriz exata de IDs está em cada história.
