@@ -10,7 +10,8 @@ Atualizado em **21/10/2026**. Este índice define a leitura atual; datas dentro 
 | O caminho até o primeiro APK | [Plano macro da V1](execucao/v1/plano-macro.md) |
 | O que entra na V1 e o que fica depois | [Escopo e critérios](execucao/v1/escopo.md) |
 | O que cada agente deve executar | [Backlog](execucao/v1/backlog.md) e [handoff](execucao/v1/handoff.md) |
-| Quem chama quem, passando e recebendo o quê | [Painel interativo](painel/README.md), [contratos](arquitetura/contratos-v1.md) e [fluxos](arquitetura/fluxos.md) |
+| Quem chama quem, passando e recebendo o quê | [Arquitetura dinâmica](arquitetura/README.md), [contratos](arquitetura/contratos-v1.md) e [fluxos](arquitetura/fluxos.md) |
+| Como serão camadas e Swagger Go | [Camadas](arquitetura/camadas-go.md) e [Swagger por comentários](arquitetura/swagger-go.md) |
 | Banco, unidades, versões e histórico | [Domínio e banco](arquitetura/dominio-e-banco.md) |
 | Segurança, observabilidade e escala | [Plano de qualidade](arquitetura/seguranca-operacao.md) |
 | Implantação e entrega à esposa | [Roteiro de distribuição](execucao/v1/implantacao-e-apk.md) |
@@ -23,9 +24,9 @@ Atualizado em **21/10/2026**. Este índice define a leitura atual; datas dentro 
 
 ## Como a pasta foi organizada
 
-- `arquitetura/`: fatos atuais, propostas, contratos e inventário gerado.
+- `arquitetura/`: entrada navegável sem servidor, fatos atuais, propostas, Swagger por comentários, referências portáteis e mapas gerados.
 - `execucao/v1/`: recorte, sequência, backlog, entrega e retomada para agentes.
-- `painel/`: visualização local; o servidor observa código e registros de planejamento.
+- `.github/workflows/documentacao.yml`: geração/verificação dos documentos e atualização dos derivados na branch principal, após publicação da configuração e respeitando regras do remoto.
 - `conteudo/`: autoria, fontes, direitos e evidências da pesquisa, com caminhos preservados.
 - `planejamento/`: visão R01–R18 e referências de produto; a execução atual está na V1.
 - `design/`: protótipos e inventários datados; simulações do Figma não são dados do app.

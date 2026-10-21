@@ -1,6 +1,8 @@
 # Contratos da V1 — proposta para implementação
 
-**Estas rotas ainda não existem na API Go.** O painel lista separadamente as rotas Fastify e os literais HTTP do Flutter atual, com arquivo/linha e tipos detectados. O documento abaixo alimentará `contracts/openapi-v1.yaml` em `V1-008`; não é um contrato gerado e validado de serviço já executado.
+**Estas rotas ainda não existem na API Go.** A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
+
+Decisão vigente: [Swagger por comentários e tipos Go](swagger-go.md). Os futuros `contracts/generated/swagger-v1.json` e `.yaml` são derivados do gerador fixado, não um YAML editado em paralelo. A versão inicial proposta usa Swagger2.0; não apresentá-la como OpenAPI3.
 
 Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, fuso IANA quando necessário. Bearer access token nas rotas privadas. `X-Request-Id` para correlação; `Idempotency-Key` nas criações/eventos. Nenhum token ou dado físico em log. Erro padrão `application/problem+json` com type/title/status/code/requestId; erro de campo sem ecoar segredo.
 
@@ -27,7 +29,7 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 | Nutrition API: `GET/PATCH/DELETE /food-entries/{id}` | alteração confirmada ou exclusão |200/204, somente titular; edição recalcula usando versão e fatores declarados |
 | Operação: `GET /health/live` e `/health/ready` | Sem dados pessoais |200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno |
 
-Os campos completos, limites e códigos serão fechados no OpenAPI antes da implementação do cliente; não gerar Dart a partir desta tabela. Exemplos de schema/teste nunca serão seed ou fallback do app entregue.
+Os campos completos, limites e códigos serão revisados nos DTOs/comentários e no Swagger gerado antes da implementação do cliente; não gerar Dart a partir desta tabela. Exemplos de schema/teste nunca serão seed ou fallback do app entregue.
 
 ## Compatibilidade com o legado
 

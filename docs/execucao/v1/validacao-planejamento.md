@@ -1,39 +1,39 @@
-# Validação da preparação — 21/10/2026
+# Validação da documentação arquitetural — 21/10/2026
 
-Esta entrega é documentação, inventário e ferramenta local. **Não houve execução do novo app Go/Flutter, deploy, migration, benchmark ou geração do APK V1.** As verificações abaixo não autorizam prática nem redistribuição de conteúdo.
+Entrega revisada a pedido do autor: painel/servidor removidos; documentação Markdown/Mermaid no repositório; Swagger preparado para geração por comentários e DTOs Go.
 
-| Verificação executada | Resultado |
+| Conferência | Resultado efetivo |
 |---|---|
-| Fechamento documental N15 (`conferir-fechamento.py`) |67 passaram, 0 falharam; 11 componentes cuidadores e 5 movimentos idosos separados |
-| Continuação/consolidação N39–N46 (`conferir-continuacao-n39-n46.py`) |260 passaram, 0 falharam; 331 famílias/840 GETs tentados/694 HTTP200/780 hashes conferidos |
-| Testes do catálogo de cuidadores |5 testes passaram |
-| `tools/painel_projeto.py --snapshot --check` |Inventário e backlog gerados; IDs, dependências, cobertura R01–R18, entradas, critérios/tarefas e arestas válidos |
-| Testes da ferramenta (`test_painel_projeto.py`) |8 testes passaram: path/HTTP, chamada dinâmica não inferida, inventário real, backend ausente, ciclo e conclusão sem evidência, geração, watcher e fronteira HTTP |
-| `node --check docs/painel/painel.js` |Sintaxe válida |
-| Graphify Flutter e backend |Incremental exit0;42 e33 arquivos inalterados respectivamente; grafos preservados, sem novos nós inventados |
-| Lançador PowerShell |Serviço iniciado, reconhecido e parado pelo PID próprio; reiniciado e health conferido em8787 |
-| Navegador real (Codex IAB) |Página conectada, layout estreito sem quebra, alternância atual/planejado, clique em nó com detalhes, tabelas HTTP, busca V1-034 e expansão de aceite/tarefas/subtarefas verificados |
-| Atualização real no navegador |Revisão e horário do inventário mudaram automaticamente após alterar apenas mtime do backlog; sem recarregar nem mudar o conteúdo/status |
+| Geração/check | Derivados reproduzíveis; valida IDs/dependências, critérios, entradas R01–R18 e links locais |
+| Testes documentais |13 testes: portabilidade, relocação, mtime sem deriva, mudança real, paths dinâmicos não inferidos, evidências Go separadas, Swagger ausente/sem ferramenta/sem fonte, dependência cíclica, links e diagramas |
+| Mermaid |20 diagramas aceitos pelo parser Mermaid 11.12.0 com JSDOM 26.1.0; verificação de sintaxe, não matriz visual de navegadores |
+| Clone/cópia limpa | Exportação limpa do índice Git passou pelo --check e pelos13testes, sem checkout externo, servidor de leitura ou dados ignorados; resultado em verificacao-links.json |
+| Swagger atual | PENDENTE V1-008: serviço Go ausente; nenhuma ferramenta instalada para simular backend/contrato real |
+| Fluxo Swagger futuro |Wrapper exige Swaggo v1.16.6, gera os3 derivados em temporário e compara no check; integração real com Go/recarga pertence à V1-008 |
+| Painel removido |Processo encerrado pelo lançador próprio;7 arquivos específicos removidos; logs/runtime apagados |
+| Código do aplicativo e dados |Sem alteração funcional em lib/android/ios, backend externo ou banco; pesquisa/dossiês preservados |
+| CI GitHub |YAML parseado; eventos, permissões separadas e ações com referências fixadas/verificadas; não executado no remoto porque não houve push |
 
-Cobertura estática:42Dart,33TS (sem generated),29rotas em `src/routes`,14chamadas Flutter e14correspondências método/path,9modelos Prisma. Rotas de plugins/Swagger/health raiz e caminhos dinâmicos não são toda a superfície desta contagem. Correspondência não prova compatibilidade completa do DTO ou execução de rede.
+O inventário atual tem 42 Dart,14 chamadas Flutter e14 correspondências na referência Fastify (29 rotas/33TS/9 modelos), commit 523f6d9609be capturado em 21/10/2026. Não lê automaticamente outro checkout ou rede. Go tem0 arquivos de aplicação neste clone. Esses números são de análise estática; não são testes de autenticação, runtime, capacidade, segurança ou clínica.
 
-O clique em nós e a acessibilidade do SVG foram corrigidos durante o teste. O painel limpa detalhes de uma visão ao alternar a seleção para evitar exibir um contrato atual como planejado. Conteúdo injetado no mapa é apresentado como texto, não HTML executável. Backend inexistente tem indicação explícita e zero correspondências.
-
-O histórico da pesquisa foi salvo em commit local `57f623a`; a organização/painel/planejamento será a unidade de commit seguinte. Não foi solicitado push. Mudanças funcionais do aplicativo, backend externo e banco não fazem parte desta entrega.
-
-## Reproduzir
+## Reproduzir sem iniciar serviço
 
 ```powershell
-python tools/painel_projeto.py --snapshot --check
-python -m unittest discover -s tools -p test_painel_projeto.py
-node --check docs/painel/painel.js
-python docs/conteudo/evidencias/2026-10-21/n15c-composicao/conferir-fechamento.py
-python docs/conteudo/evidencias/2026-10-15/conferir-continuacao-n39-n46.py
-python -m unittest discover -s docs/conteudo/evidencias -p test_catalogo_cuidadores.py
+python tools/gerar_documentacao.py --write --check
+python -m unittest discover -s tools -p test_documentacao.py
+python tools/gerar_swagger.py --check
 ```
 
-Conferidos 139 links locais em30documentos atuais, sem destino ausente; registro em [verificacao-links.json](verificacao-links.json). `git diff --check` passou. A conferência não testa URLs externas nem âncoras internas. A busca de padrões de credenciais no conjunto versionado não encontrou os padrões verificados; é uma heurística, não uma auditoria completa de segredos ou segurança.
+As dependências temporárias usadas para análise Mermaid são dispensáveis para leitura e geração dos mapas. A ferramenta é `tools/validar_mermaid.mjs`; a CI prepara seu ambiente isolado. O repositório não precisa de Node para ser consultado.
 
-## Limites pendentes
+## Limites
 
-Browser conferido na largura atual da aba do Codex; não foi uma matriz completa de navegadores/dispositivos. Novas linguagens/rotas dinâmicas exigem ampliar o scanner (história003). O painel observa código e JSON enquanto seu serviço está aberto; Markdown, achados resolvidos, intenção e direitos exigem atualização revisada pelo agente. iOS, carga, OAuth release e instalação no celular real pertencem às histórias futuras, sem aprovação antecipada.
+- Não foi implantada API Go, aplicada migration, gerado APK ou medido desempenho.
+- Swagger sem fonte Go não é apresentado como válido. O gerador não implementa segurança descrita nas anotações.
+- Arquitetura planejada e status/direitos exigem revisão humana, não inferência automática.
+- A atualização no GitHub começa após publicação autorizada e depende das políticas/permissões do remoto. Não se contorna branch protection; falha de push do bot permanece explícita com artefato disponível.
+- A conferência de links locais não consulta URLs externas nem prova disponibilidade futura dos links de fonte.
+
+Resultados históricos dos verificadores de pesquisa permanecem nos seus dossiês e no commit anterior; não foram substituídos por testes do gerador. O painel antigo é recuperável pelo histórico Git, sem manter servidor ou código desse recurso na árvore atual.
+
+Após a verificação, os pacotes temporários de Mermaid/JSDOM/YAML e a cópia limpa foram removidos. Nenhum serviço permanece escutando na porta8787.

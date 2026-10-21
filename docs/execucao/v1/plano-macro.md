@@ -2,12 +2,12 @@
 
 Plano executável de21/10/2026. Esta entrega organiza e prepara; não iniciou backend Go, migrations, alteração funcional Flutter, provisionamento cloud ou geração do APK V1.
 
-**Próxima ação: V1-001.** Todas as43 histórias do [backlog](backlog.md) estão não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
+**Próxima ação: V1-001.** O [backlog](backlog.md) tem43histórias; V1-003 está em andamento para a documentação/CI, demais implementações ainda não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|
 | M0 — recorte e decisão |001–005,002 em sequência própria,003 transversal | Lote candidato, decisão Go/fronteira e contrato editorial; revisão dos usos | Fontes/limites reais; decisões não confundidas com implementação |
-| M1 — fundação e dados |007–010 e006 após revisão | API local Go, OpenAPI, banco isolado migrado e lote real importado | Dry run/reimportação, restore e contrato verificados |
+| M1 — fundação e dados |007–010 e006 após revisão | API local Go, Swagger gerado por comentários, banco isolado migrado e lote real importado | Dry run/reimportação, restore e contrato verificados |
 | M2 — primeira fatia vertical |011–016,021–022 | Login Android real → API Go → catálogo no DB → detalhe/autoria/seleção | Sessão segura e conteúdo permitido, sem generator fallback |
 | M3 — uso e alimentação |017–020,023–027 | Registrar atividade, consultar histórico, buscar alimento e registrar consumo; recuperação | UI/API/DB coerentes com unidades, ausência e idempotência |
 | M4 — confiabilidade e infraestrutura |028–033 | Segurança, baseline de carga, telemetria, pipeline e staging HTTPS | Custos/provedor aprovados; deploy e restauração reais |
@@ -21,7 +21,7 @@ As dependências exatas estão em `backlog.json`; intervalos da tabela são orie
 1. Ler índice, AGENTS e história pronta pelas dependências. Registrar escopo e limites da rodada.
 2. Implementar uma fatia concreta, com contrato e dados reais quando for o fluxo integrado. Evitar migrar toda a lib/backend de uma vez.
 3. Rodar verificações relevantes. Relatar o que foi executado, qual resultado e qual limitação. Não usar teste documental como comprovação clínica ou teste do app.
-4. Atualizar fonte canônica: backlog, OpenAPI/modelo quando existir, achados e intenção do mapa. Gerar snapshot e conferir painel. `done` exige evidência.
+4. Atualizar fonte canônica: backlog, OpenAPI/modelo quando existir, achados e intenção do mapa. Regenerar a documentação versionada e conferir os mapas. `done` exige evidência.
 5. Fazer commit local da unidade autorizada; push/deploy/publicação conforme o pedido e a aprovação aplicáveis. Deixar handoff com próxima ação, sem nova varredura de pesquisa sem pista.
 
 ## Critério para revisitar Go

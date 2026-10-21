@@ -8,7 +8,7 @@ Estado vigente: **21/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 - Próxima história **V1-001** em `docs/execucao/v1/backlog.json`. 12 épicos/43 histórias; implantação do app ainda não iniciada neste planejamento.
 - Produto **Android e iOS**; desenvolvimento e primeiro teste da esposa em Android. Não presumir iOS testado por haver pasta nativa.
 - API atual Fastify/Prisma/PostgreSQL em `C:/dev/bootcamp-treinos-api`; Next.js antigo é referência. Go modular é recomendação planejada, não migração entregue.
-- Pedido atual autorizou organizar docs, criar plano/painel, atualizar Graphify e fazer commits locais. Não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
+- Pedido vigente: remover o painel local, manter documentação arquitetural dinâmica no repositório e gerar Swagger por comentários/tipos Go. Organização, ferramentas documentais e commits locais autorizados; não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
 
 ## Conteúdo e pesquisa
 
@@ -25,8 +25,9 @@ Estado vigente: **21/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 - Incrementos pequenos por história/dependências; ler código antes de alterar. Não fazer rewrite completo, instalar ferramentas ou migrar produção por inferência de roadmap.
 - Backend e frontend com contratos reais; um único escritor/migrador por domínio/schema. Backup só validado após restore conferido. Não apagar volumes para corrigir ambiente.
 - Atualizar backlog JSON, contratos/achados/mapa afetados e diário ao concluir; `done` exige completionEvidence. Gerar backlog Markdown, não mantê-lo à mão.
-- `python tools/painel_projeto.py --snapshot --check` e `python -m unittest discover -s tools -p "test_painel_projeto.py"` verificam documentação/painel, não clínica nem funcionamento do app.
-- [Painel](docs/painel/README.md) atualiza código/JSON local; detecção estática é diferente de execução observada. Intenção/fechamento exigem registro humano.
+- Leitura sem servidor: [arquitetura dinâmica](docs/arquitetura/README.md). Manutenção: `python tools/gerar_documentacao.py --write --check` e `python -m unittest discover -s tools -p test_documentacao.py`. Validação documental não é teste clínico ou do app.
+- [Automação documental](docs/arquitetura/documentacao-dinamica.md): geração determinística na CI; captura do backend externo é explícita/versionada e não depende de caminhos locais. Intenção/fechamento exigem registro humano. Não recriar painel/servidor de leitura.
+- [Swagger Go](docs/arquitetura/swagger-go.md): comentários/DTOs são fonte, JSON/YAML gerados não editados à mão. `python tools/gerar_swagger.py --check` informa pendência enquanto não existe serviço Go; não chamar isso de Swagger real validado.
 - [Graphify](docs/graphify.md): query primeiro em grafos existentes; update incremental code-only, corpora separados. Não indexar todo `docs/` semanticamente sem escopo/custo autorizados.
 - No Git usar por comando `git -c safe.directory=C:/dev/TrainForge/trainforge ...` se houver erro de propriedade. Não alterar confiança global. Commit/push/publicação conforme autorização do usuário.
 - Credenciais, chaves de assinatura, .env, caches e corpos/renders de terceiros fora do Git. Ao descartar temporários após uso, verificar alvos, apagar somente o que não é mais necessário e registrar resultado quando pertinente.

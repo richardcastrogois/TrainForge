@@ -1,818 +1,586 @@
 {
-  "generatedAt": "2026-10-21T15:22:14.490125+00:00",
-  "project": "TrainForge",
-  "coverage": {
-    "flutterRoot": "C:\\dev\\TrainForge\\trainforge",
-    "apiRoot": "C:\\dev\\bootcamp-treinos-api",
-    "apiAvailable": true,
-    "dartFiles": 42,
-    "tsFiles": 33,
-    "routes": 29,
-    "httpCalls": 14,
-    "matchedCalls": 14,
-    "models": 9
+  "schemaVersion": 2,
+  "inputRevision": "8b80b92605ef47734091ec957c50d886899fef9a2004fbaeb7225e5111f85024",
+  "inputs": {
+    "lib/app.dart": "fbb5cec7f1f6f20f29b4caa878164b51484acdd2ee5e9006046559292193d34f",
+    "lib/core/config/app_config.dart": "4d1030b8f0f3f29d2f605a805d50de2c8002fbb4e51f6ab58af07458133e9bf3",
+    "lib/core/http/app_dio.dart": "8837311bafc22ef536c98b7f11859184b3673fd399356872165e596add6e7578",
+    "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
+    "lib/features/auth/data/auth_api.dart": "c8d7118304c6670835269cbe9ed19fbe83a2ee989eb7e6b2868730417137906f",
+    "lib/features/auth/data/auth_repository.dart": "c885124b90f0aaefe54644a003c7b44998e136c35ab1de278b478c130d79629a",
+    "lib/features/auth/data/auth_storage.dart": "d2d6e88a676775228f82b275184c84cd7c3b94564a72ebcc90355d308e28895d",
+    "lib/features/auth/domain/auth_user.dart": "2b1952ea3918580a0334e626358345f8a07f5637c7e98b32bd0837883a4c5bd3",
+    "lib/features/auth/presentation/pages/auth_page.dart": "5b9c8b88f2376f55896cf3840357fb9b1f7e24704be3af5da4e548066d607ffe",
+    "lib/features/bootstrap/data/bootstrap_api.dart": "4505633f5c0d752c59a0459944f757c9f6388bdf0818a8f699b5570bfb8096a7",
+    "lib/features/bootstrap/data/bootstrap_repository.dart": "96dc3f3e64695688209b08b33e22b2b970154a3ce12ed85133bbfb9b82f562a0",
+    "lib/features/bootstrap/domain/bootstrap_data.dart": "94c54cad4a2ee887f2f38c429909149de9c11c0e66c9e60155cc5989f055d57f",
+    "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
+    "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
+    "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
+    "lib/features/home/presentation/pages/home_page.dart": "8cf0518112fa0d1f46960a2bd77d9b9392929be15c235574051f4e56fa300bd5",
+    "lib/features/onboarding/data/onboarding_api.dart": "f45f2870fe242224e9d1743d24569c0849546e25394e36d1294ae394736c1256",
+    "lib/features/onboarding/data/onboarding_repository.dart": "ded7943c9a323d70f8c92a9e0227a5dfb019f07bd18e71d903bb2b6f8b764449",
+    "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart": "f40390c4253ba85dd2dace3b11ed7e509da26ac05d3a59b4529037dda993b595",
+    "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart": "99fbfa1215cecda42caa9c7ea1b3b8b63e275618eec96dfd55fac8f2d10bd122",
+    "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart": "b4c63717a20b9588ed16e87d0816c227c8d9081d48d8b2cacc78bdfc05b47e13",
+    "lib/features/profile/data/profile_api.dart": "6acd968c17539a107a0c6556caa86c63db9e3179333ecf88dda568c1a62876a8",
+    "lib/features/profile/data/profile_repository.dart": "8e16e09c535990df9f1e7629dd2885fd49f4d4cd682003b2bf7ec808634cbadc",
+    "lib/features/profile/domain/profile_data.dart": "c3187b408c8a102bfe5d188ac173986e7136ba140c6c3a114c23290034167570",
+    "lib/features/profile/presentation/pages/profile_page.dart": "8fc313d97c21a4c3986e15de9d2ac7c6c8423bdc5ee05fd072f8ed7b8e0ecd66",
+    "lib/features/stats/data/stats_api.dart": "af24fb9a3bd26ae8e3cfc868601779cbed24616ebef4e46d8461c2faf6b1fdfa",
+    "lib/features/stats/data/stats_repository.dart": "75137632bc25f3d58f40d9c921364eef141a38a10a41ec0d873d0e4a52dfb320",
+    "lib/features/stats/domain/stats_data.dart": "8090df5502a73d4e34eaa57eb939c3317a5e7e6e26b16315d3936f601709c228",
+    "lib/features/stats/presentation/pages/stats_page.dart": "c1a5077328ebc2f200a55630b3d186a9ab4511d4b3befeff557acd5559d783b3",
+    "lib/features/workouts/data/workouts_api.dart": "fc3e13e4c3ab382c6e177a5aec9a9263836455b6469348ee86b579045e53b96f",
+    "lib/features/workouts/data/workouts_repository.dart": "20ef770d8a1ab077f1970ce9bce1c5abe62ba6469c300e26ff67bee65faf63f5",
+    "lib/features/workouts/domain/workout_day_detail.dart": "d14b28aa39b2d745f41a3300294c02027fe3aad620a3b118d3698e4d7c0b2e67",
+    "lib/features/workouts/domain/workout_plan_detail.dart": "aefbdedf96677b109d9bf70a582fab94fb817b7db6d1509ae886e2b4cf467bc0",
+    "lib/features/workouts/domain/workout_plan_item.dart": "dc7324f59a1b4de3484aea7dfa6f0450a1a3867094e279e56a1391183d35e948",
+    "lib/features/workouts/domain/workout_session_action.dart": "6f0f6c344e1365f94bdd13edd0d8c6a9d85f8926faf1b2829b1097e3bdfde92d",
+    "lib/features/workouts/presentation/pages/workout_day_page.dart": "404b0b9a1cc1058da7b92fc7bd2e8ca3b260336a9a1bbb7d2f9ca3ceb26b03aa",
+    "lib/features/workouts/presentation/pages/workout_plan_page.dart": "1094bef3cc0c4d4553ffc30eded6a3cf6c093202468e7c25e8e56de1007e8f30",
+    "lib/features/workouts/presentation/pages/workouts_page.dart": "e3e72e390f4925e929a13b3aa66e0e70add6bf2a4c3844c770c323ac548cb73e",
+    "lib/main.dart": "fafc6705f129b245c3fe6e58b856cd6b0d61155893350b53870cc028fcc1d0f2",
+    "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
+    "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
+    "lib/shared/widgets/auth_gate.dart": "0acbff74cdbe6e4050dfc447d216abe20b141a3bb3db8d1ed75ba1dc9358d2bd",
+    "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
+    "docs/arquitetura/plano.json": "fa611bcf2febf062ed2de35c8ccc3bbca7522bfcd5912bb897058f49fd035e0f",
+    "docs/execucao/v1/backlog.json": "ddad5b65ea7fccf74b9b40c4cda320a51451da7d841d14a90364efc1d26ac3ab",
+    "docs/arquitetura/achados.json": "dd8724b68bc1da4a96d14685de501f690f547d00b544e5af7247dc49c94bbebd",
+    "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
+    "tools/documentacao_inventario.py": "6babe4936a6f03d36e25bc3d9f2d2d0ecde382c22f8c77fc6aeae7aabc714b0f",
+    "tools/gerar_documentacao.py": "47b755d4a0ed8f0ea6807934896d286134ec15bce1d79f10870908f12b374126",
+    "tools/gerar_swagger.py": "84d06022c093adc48309622b8ccaab617d026a269f0c532b62a3d69523838191",
+    "tools/test_documentacao.py": "00d9af2e06d9907ddf56e72f4b634177a903f2633b58456e561b404b69753b1f",
+    "tools/validar_mermaid.mjs": "e8ad6a610b13cfee280be81f7a15ebe52ffc06de7e842e7dd654e9219e0ba14b"
   },
-  "limitations": [
-    "Análise por padrões estáticos, sem executar app/API/banco.",
-    "Paths dinâmicos, plugins e navegação condicional podem ficar fora do mapa.",
-    "Prefixos e schemas inline não resolvidos permanecem explícitos; não são inventados.",
-    "Achados e intenção arquitetural exigem revisão humana; alteração de arquivo não fecha tarefa."
-  ],
-  "nodes": [
+  "coverage": {
+    "dartFiles": 42,
+    "backendMode": "versioned-reference",
+    "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
+    "backendTsFiles": 33,
+    "legacyRoutes": 29,
+    "httpCalls": 14,
+    "legacyMatches": 14,
+    "goFiles": 0,
+    "goRegistrations": 0,
+    "modelsInReference": 9
+  },
+  "groups": [
     {
       "id": "ui",
-      "label": "Telas Flutter",
-      "layer": "Interface",
+      "label": "Telas e widgets",
       "files": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/presentation/pages/auth_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/presentation/pages/auth_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/presentation/pages/profile_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/presentation/pages/stats_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_bottom_nav.dart",
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/app_bottom_nav.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/app_shell.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/auth_gate.dart",
           "line": 1
         }
-      ],
-      "evidence": "arquivos presentes; análise estática"
+      ]
     },
     {
       "id": "repositories",
-      "label": "Repositories",
-      "layer": "Flutter",
+      "label": "Repositories Flutter",
       "files": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/data/home_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/data/onboarding_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/data/profile_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/data/stats_repository.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 1
         }
-      ],
-      "evidence": "arquivos presentes; análise estática"
+      ]
     },
     {
       "id": "http",
-      "label": "APIs / Dio",
-      "layer": "HTTP",
+      "label": "HTTP Dio",
       "files": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/core/http/app_dio.dart",
+          "repository": "trainforge",
+          "path": "lib/core/http/app_dio.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/data/bootstrap_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/data/home_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/data/onboarding_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/data/profile_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/data/stats_api.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_api.dart",
           "line": 1
         }
-      ],
-      "evidence": "arquivos presentes; análise estática"
+      ]
     },
     {
       "id": "models",
       "label": "Modelos Dart",
-      "layer": "Flutter",
       "files": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/domain/auth_user.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/domain/auth_user.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/domain/bootstrap_data.dart",
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/domain/bootstrap_data.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/domain/home_summary.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/domain/home_summary.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/domain/profile_data.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/domain/profile_data.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/domain/stats_data.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/domain/stats_data.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/domain/workout_day_detail.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/domain/workout_day_detail.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/domain/workout_plan_detail.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/domain/workout_plan_detail.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/domain/workout_plan_item.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/domain/workout_plan_item.dart",
           "line": 1
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/domain/workout_session_action.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/domain/workout_session_action.dart",
           "line": 1
         }
-      ],
-      "evidence": "arquivos presentes; análise estática"
-    },
-    {
-      "id": "routes",
-      "label": "Rotas Fastify",
-      "layer": "Backend",
-      "files": [
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/bootstrap.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/home.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/me.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-bootstrap.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-home.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-stats.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/stats.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 1
-        }
-      ],
-      "evidence": "arquivos presentes; análise estática"
-    },
-    {
-      "id": "usecases",
-      "label": "Casos de uso TS",
-      "layer": "Backend",
-      "files": [
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/CreateWorkoutPlan.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetHomeData.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetStats.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetUserTrainData.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetWorkoutDay.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetWorkoutPlan.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/ListWorkoutPlans.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/StartWorkoutSession.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/UpdateWorkoutSession.ts",
-          "line": 1
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/UpsertUserTrainData.ts",
-          "line": 1
-        }
-      ],
-      "evidence": "arquivos presentes; análise estática"
-    },
-    {
-      "id": "dbaccess",
-      "label": "Prisma / conexão",
-      "layer": "Persistência",
-      "files": [
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/lib/db.ts",
-          "line": 1
-        }
-      ],
-      "evidence": "arquivos presentes; análise estática"
+      ]
     }
   ],
-  "edges": [
+  "imports": [
     {
       "from": "http",
       "to": "models",
-      "label": "import estático",
       "sources": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_api.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/data/bootstrap_api.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/data/home_api.dart",
           "line": 5
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/data/profile_api.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/data/stats_api.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_api.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_api.dart",
           "line": 5
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_api.dart",
           "line": 6
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_api.dart",
           "line": 7
-        }
-      ]
-    },
-    {
-      "from": "repositories",
-      "to": "models",
-      "label": "import estático",
-      "sources": [
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_repository.dart",
-          "line": 5
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_repository.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_repository.dart",
-          "line": 2
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_repository.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_repository.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
-          "line": 5
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
-          "line": 6
-        }
-      ]
-    },
-    {
-      "from": "ui",
-      "to": "repositories",
-      "label": "import estático",
-      "sources": [
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/presentation/pages/auth_page.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-          "line": 3
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
-          "line": 7
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 6
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 7
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
-          "line": 4
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
-          "line": 6
         }
       ]
     },
     {
       "from": "repositories",
       "to": "http",
-      "label": "import estático",
       "sources": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_repository.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
           "line": 2
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/data/home_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/data/onboarding_repository.dart",
           "line": 2
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/data/profile_repository.dart",
           "line": 2
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/data/stats_repository.dart",
           "line": 2
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_repository.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 2
+        }
+      ]
+    },
+    {
+      "from": "repositories",
+      "to": "models",
+      "sources": [
+        {
+          "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_repository.dart",
+          "line": 5
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/home/data/home_repository.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/profile/data/profile_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/stats/data/stats_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
+          "line": 4
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
+          "line": 5
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/workouts/data/workouts_repository.dart",
+          "line": 6
         }
       ]
     },
     {
       "from": "ui",
       "to": "models",
-      "label": "import estático",
       "sources": [
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/profile/presentation/pages/profile_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/stats/presentation/pages/stats_page.dart",
           "line": 8
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
           "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
           "line": 8
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/auth_gate.dart",
           "line": 7
         }
       ]
     },
     {
-      "from": "routes",
-      "to": "usecases",
-      "label": "import estático",
+      "from": "ui",
+      "to": "repositories",
       "sources": [
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-          "line": 17
+          "repository": "trainforge",
+          "path": "lib/features/auth/presentation/pages/auth_page.dart",
+          "line": 3
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-          "line": 18
+          "repository": "trainforge",
+          "path": "lib/features/home/presentation/pages/home_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-          "line": 19
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-          "line": 20
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/bootstrap.ts",
-          "line": 10
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/bootstrap.ts",
-          "line": 11
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/home.ts",
-          "line": 10
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/me.ts",
-          "line": 14
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/me.ts",
-          "line": 15
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-bootstrap.ts",
-          "line": 9
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-bootstrap.ts",
-          "line": 10
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-home.ts",
-          "line": 9
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
-          "line": 20
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
-          "line": 21
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
-          "line": 14
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
-          "line": 15
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-stats.ts",
-          "line": 12
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 27
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 28
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 29
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 30
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 31
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-          "line": 32
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/stats.ts",
-          "line": 13
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 28
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 29
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 30
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 31
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 32
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-          "line": 33
-        }
-      ]
-    },
-    {
-      "from": "routes",
-      "to": "dbaccess",
-      "label": "import estático",
-      "sources": [
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-          "line": 8
-        }
-      ]
-    },
-    {
-      "from": "usecases",
-      "to": "dbaccess",
-      "label": "import estático",
-      "sources": [
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/CreateWorkoutPlan.ts",
-          "line": 5
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetHomeData.ts",
-          "line": 7
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetStats.ts",
+          "repository": "trainforge",
+          "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 6
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetUserTrainData.ts",
-          "line": 2
-        },
-        {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetWorkoutDay.ts",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/GetWorkoutPlan.ts",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
           "line": 4
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/ListWorkoutPlans.ts",
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
           "line": 3
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/StartWorkoutSession.ts",
-          "line": 9
+          "repository": "trainforge",
+          "path": "lib/features/profile/presentation/pages/profile_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/UpdateWorkoutSession.ts",
-          "line": 8
+          "repository": "trainforge",
+          "path": "lib/features/profile/presentation/pages/profile_page.dart",
+          "line": 6
         },
         {
-          "path": "C:/dev/bootcamp-treinos-api/src/usecases/UpsertUserTrainData.ts",
-          "line": 3
-        }
-      ]
-    },
-    {
-      "from": "http",
-      "to": "routes",
-      "label": "HTTP: literais compatíveis",
-      "sources": [
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
-          "line": 10
+          "repository": "trainforge",
+          "path": "lib/features/stats/presentation/pages/stats_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
-          "line": 19
+          "repository": "trainforge",
+          "path": "lib/features/stats/presentation/pages/stats_page.dart",
+          "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_api.dart",
-          "line": 10
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_api.dart",
-          "line": 11
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+          "line": 6
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_api.dart",
-          "line": 19
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_api.dart",
-          "line": 50
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
+          "line": 6
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
-          "line": 10
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
-          "line": 20
+          "repository": "trainforge",
+          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
+          "line": 7
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_api.dart",
-          "line": 13
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/auth_gate.dart",
+          "line": 4
         },
         {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
-          "line": 13
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
-          "line": 26
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
-          "line": 34
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
-          "line": 45
-        },
-        {
-          "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
-          "line": 59
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/auth_gate.dart",
+          "line": 6
         }
       ]
     }
@@ -820,1013 +588,350 @@
   "screens": [
     {
       "id": "AuthPage",
-      "label": "AuthPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
+        "line": 6
+      }
     },
     {
       "id": "HomePage",
-      "label": "HomePage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/home/presentation/pages/home_page.dart",
+        "line": 10
+      }
     },
     {
       "id": "AiOnboardingPage",
-      "label": "AiOnboardingPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+        "line": 10
+      }
     },
     {
       "id": "ManualOnboardingPage",
-      "label": "ManualOnboardingPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+        "line": 10
+      }
     },
     {
       "id": "OnboardingEntryPage",
-      "label": "OnboardingEntryPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+        "line": 9
+      }
     },
     {
       "id": "ProfilePage",
-      "label": "ProfilePage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/profile/presentation/pages/profile_page.dart",
+        "line": 9
+      }
     },
     {
       "id": "StatsPage",
-      "label": "StatsPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/stats/presentation/pages/stats_page.dart",
+        "line": 10
+      }
     },
     {
       "id": "WorkoutDayPage",
-      "label": "WorkoutDayPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+        "line": 9
+      }
     },
     {
       "id": "WorkoutPlanPage",
-      "label": "WorkoutPlanPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
+        "line": 10
+      }
     },
     {
       "id": "WorkoutsPage",
-      "label": "WorkoutsPage",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
+        "line": 11
+      }
     },
     {
       "id": "AppShell",
-      "label": "AppShell",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/app_shell.dart",
+        "line": 9
+      }
     },
     {
       "id": "AuthGate",
-      "label": "AuthGate",
-      "layer": "Flutter",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
-        "line": 1
-      },
-      "kind": "tela/widget"
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 11
+      }
     }
   ],
-  "screenEdges": [
+  "navigation": [
     {
       "from": "AuthPage",
       "to": "AuthGate",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/auth/presentation/pages/auth_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
         "line": 31
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "HomePage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/home/presentation/pages/home_page.dart",
         "line": 57
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "HomePage",
       "to": "WorkoutDayPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/home/presentation/pages/home_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/home/presentation/pages/home_page.dart",
         "line": 91
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AiOnboardingPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
         "line": 65
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AiOnboardingPage",
       "to": "AuthGate",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
         "line": 74
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "ManualOnboardingPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
         "line": 65
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "ManualOnboardingPage",
       "to": "AuthGate",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
         "line": 74
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "OnboardingEntryPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
         "line": 21
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "OnboardingEntryPage",
       "to": "AiOnboardingPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
         "line": 83
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "OnboardingEntryPage",
       "to": "ManualOnboardingPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
         "line": 123
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "ProfilePage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/profile/presentation/pages/profile_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/profile/presentation/pages/profile_page.dart",
         "line": 80
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "StatsPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/stats/presentation/pages/stats_page.dart",
         "line": 65
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "StatsPage",
       "to": "OnboardingEntryPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/stats/presentation/pages/stats_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/stats/presentation/pages/stats_page.dart",
         "line": 127
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutDayPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_day_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
         "line": 97
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutPlanPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
         "line": 65
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutPlanPage",
       "to": "WorkoutDayPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workout_plan_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
         "line": 149
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutsPage",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
         "line": 62
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutsPage",
       "to": "OnboardingEntryPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
         "line": 87
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "WorkoutsPage",
       "to": "WorkoutPlanPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/presentation/pages/workouts_page.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
         "line": 189
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AppShell",
       "to": "HomePage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/app_shell.dart",
         "line": 20
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AppShell",
       "to": "ProfilePage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/app_shell.dart",
         "line": 23
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AppShell",
       "to": "StatsPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/app_shell.dart",
         "line": 22
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AppShell",
       "to": "WorkoutsPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/app_shell.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/app_shell.dart",
         "line": 21
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AuthGate",
       "to": "AuthPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
         "line": 46
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AuthGate",
       "to": "OnboardingEntryPage",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
         "line": 58
-      },
-      "evidence": "estático; condição e interação não executadas"
+      }
     },
     {
       "from": "AuthGate",
       "to": "AppShell",
-      "label": "referência de widget/navegação",
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/shared/widgets/auth_gate.dart",
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
         "line": 59
-      },
-      "evidence": "estático; condição e interação não executadas"
-    }
-  ],
-  "routes": [
-    {
-      "method": "POST",
-      "path": "/ai",
-      "group": "ai",
-      "requestType": null,
-      "queryType": null,
-      "responses": {},
-      "usecases": [
-        "CreateWorkoutPlan",
-        "GetUserTrainData",
-        "ListWorkoutPlans",
-        "UpsertUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/ai.ts",
-        "line": 80
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/bootstrap",
-      "group": "bootstrap",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "BootstrapSchema",
-        "401": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetHomeData",
-        "GetUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/bootstrap.ts",
-        "line": 17
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/home/:date",
-      "group": "home",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "HomeDataSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetHomeData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/home.ts",
-        "line": 14
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/me",
-      "group": "me",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "UserTrainDataSchema.nullable",
-        "401": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/me.ts",
-        "line": 19
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "PUT",
-      "path": "/me",
-      "group": "me",
-      "requestType": "UpsertUserTrainDataBodySchema",
-      "queryType": null,
-      "responses": {
-        "200": "UpsertUserTrainDataSchema",
-        "401": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "UpsertUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/me.ts",
-        "line": 62
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile-auth/google",
-      "group": "mobile-auth",
-      "requestType": "z.object",
-      "queryType": null,
-      "responses": {
-        "200": "AuthSuccessSchema",
-        "401": "z.object",
-        "500": "z.object"
-      },
-      "usecases": [],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-        "line": 50
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile-auth/refresh",
-      "group": "mobile-auth",
-      "requestType": "RefreshBodySchema",
-      "queryType": null,
-      "responses": {
-        "200": "AuthSuccessSchema",
-        "401": "z.object",
-        "500": "z.object"
-      },
-      "usecases": [
-        "Date"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-        "line": 169
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile-auth/logout",
-      "group": "mobile-auth",
-      "requestType": "RefreshBodySchema",
-      "queryType": null,
-      "responses": {
-        "204": "z.null",
-        "500": "z.object"
-      },
-      "usecases": [
-        "Date"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-        "line": 274
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile-auth/me",
-      "group": "mobile-auth",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "z.object",
-        "401": "z.object"
-      },
-      "usecases": [],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
-        "line": 323
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/bootstrap",
-      "group": "mobile-bootstrap",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "z.object",
-        "401": "z.object",
-        "500": "z.object"
-      },
-      "usecases": [
-        "GetHomeData",
-        "GetUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-bootstrap.ts",
-        "line": 16
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/home/:date",
-      "group": "mobile-home",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "HomeDataSchema",
-        "401": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetHomeData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-home.ts",
-        "line": 13
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/onboarding/manual-plan",
-      "group": "mobile-onboarding",
-      "requestType": "CreatePlanRequestSchema",
-      "queryType": null,
-      "responses": {
-        "201": "CreatedWorkoutPlanResponseSchema",
-        "401": "z.object",
-        "409": "ConflictResponseSchema",
-        "422": "z.object",
-        "500": "z.object"
-      },
-      "usecases": [
-        "CreateWorkoutPlan",
-        "UpsertUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
-        "line": 152
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/onboarding/ai-plan",
-      "group": "mobile-onboarding",
-      "requestType": "CreatePlanRequestSchema",
-      "queryType": null,
-      "responses": {
-        "201": "CreatedWorkoutPlanResponseSchema",
-        "401": "z.object",
-        "409": "ConflictResponseSchema",
-        "422": "z.object",
-        "504": "z.object",
-        "500": "z.object"
-      },
-      "usecases": [
-        "CreateWorkoutPlan",
-        "Error",
-        "UpsertUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
-        "line": 258
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/profile",
-      "group": "mobile-profile",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "z.object",
-        "401": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
-        "line": 19
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "PUT",
-      "path": "/mobile/profile/train-data",
-      "group": "mobile-profile",
-      "requestType": "UpsertUserTrainDataBodySchema",
-      "queryType": null,
-      "responses": {
-        "200": "UpsertUserTrainDataSchema",
-        "401": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "UpsertUserTrainData"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
-        "line": 77
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/stats",
-      "group": "mobile-stats",
-      "requestType": null,
-      "queryType": "StatsQuerySchema",
-      "responses": {
-        "200": "StatsSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetStats"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-stats.ts",
-        "line": 16
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans",
-      "group": "mobile-workout-plans",
-      "requestType": null,
-      "queryType": "ListWorkoutPlansQuerySchema",
-      "responses": {
-        "200": "ListWorkoutPlansSchema",
-        "401": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "ListWorkoutPlans"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 36
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/workout-plans",
-      "group": "mobile-workout-plans",
-      "requestType": "WorkoutPlanSchema.omit",
-      "queryType": null,
-      "responses": {
-        "201": "WorkoutPlanSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "CreateWorkoutPlan"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 80
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans/:workoutPlanId",
-      "group": "mobile-workout-plans",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "GetWorkoutPlanSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetWorkoutPlan"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 141
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId",
-      "group": "mobile-workout-plans",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "GetWorkoutDaySchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetWorkoutDay"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 195
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
-      "group": "mobile-workout-plans",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "201": "StartWorkoutSessionSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "409": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "StartWorkoutSession"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 251
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "PATCH",
-      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
-      "group": "mobile-workout-plans",
-      "requestType": "UpdateWorkoutSessionBodySchema",
-      "queryType": null,
-      "responses": {
-        "200": "UpdateWorkoutSessionSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "409": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "UpdateWorkoutSession"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
-        "line": 330
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/stats",
-      "group": "stats",
-      "requestType": null,
-      "queryType": "StatsQuerySchema",
-      "responses": {
-        "200": "StatsSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetStats"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/stats.ts",
-        "line": 17
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/workout-plans",
-      "group": "workout-plan",
-      "requestType": null,
-      "queryType": "ListWorkoutPlansQuerySchema",
-      "responses": {
-        "200": "ListWorkoutPlansSchema",
-        "401": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "ListWorkoutPlans"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 37
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/workout-plans",
-      "group": "workout-plan",
-      "requestType": "WorkoutPlanSchema.omit",
-      "queryType": null,
-      "responses": {
-        "201": "WorkoutPlanSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "CreateWorkoutPlan"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 82
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/workout-plans/:workoutPlanId",
-      "group": "workout-plan",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "GetWorkoutPlanSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetWorkoutPlan"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 144
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "GET",
-      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId",
-      "group": "workout-plan",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "200": "GetWorkoutDaySchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "GetWorkoutDay"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 199
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "POST",
-      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
-      "group": "workout-plan",
-      "requestType": null,
-      "queryType": null,
-      "responses": {
-        "201": "StartWorkoutSessionSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "409": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "StartWorkoutSession"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 256
-      },
-      "evidence": "declaração estática; execução não testada"
-    },
-    {
-      "method": "PATCH",
-      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
-      "group": "workout-plan",
-      "requestType": "UpdateWorkoutSessionBodySchema",
-      "queryType": null,
-      "responses": {
-        "200": "UpdateWorkoutSessionSchema",
-        "401": "ErrorSchema",
-        "404": "ErrorSchema",
-        "409": "ErrorSchema",
-        "422": "ErrorSchema",
-        "500": "ErrorSchema"
-      },
-      "usecases": [
-        "UpdateWorkoutSession"
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/routes/workout-plan.ts",
-        "line": 336
-      },
-      "evidence": "declaração estática; execução não testada"
+      }
     }
   ],
   "calls": [
     {
       "method": "POST",
       "path": "/mobile-auth/google",
-      "bodyKeys": [
+      "keys": [
         "idToken"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/auth/data/auth_api.dart",
         "line": 10
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "POST",
           "path": "/mobile-auth/google",
@@ -1840,23 +945,24 @@
           },
           "usecases": [],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-auth.ts",
             "line": 50
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile-auth/me",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/auth/data/auth_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/auth/data/auth_api.dart",
         "line": 19
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile-auth/me",
@@ -1869,23 +975,24 @@
           },
           "usecases": [],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-auth.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-auth.ts",
             "line": 323
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/bootstrap",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/bootstrap/data/bootstrap_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/bootstrap/data/bootstrap_api.dart",
         "line": 10
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/bootstrap",
@@ -1902,23 +1009,24 @@
             "GetUserTrainData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-bootstrap.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-bootstrap.ts",
             "line": 16
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/home/$date",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/home/data/home_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/home/data/home_api.dart",
         "line": 11
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/home/:date",
@@ -1935,18 +1043,18 @@
             "GetHomeData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-home.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-home.ts",
             "line": 13
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "POST",
       "path": "/mobile/onboarding/manual-plan",
-      "bodyKeys": [
+      "keys": [
         "age",
         "bodyFatPercentage",
         "daysPerWeek",
@@ -1960,10 +1068,11 @@
         "weightInGrams"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/data/onboarding_api.dart",
         "line": 19
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "POST",
           "path": "/mobile/onboarding/manual-plan",
@@ -1982,18 +1091,18 @@
             "UpsertUserTrainData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-onboarding.ts",
             "line": 152
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "POST",
       "path": "/mobile/onboarding/ai-plan",
-      "bodyKeys": [
+      "keys": [
         "age",
         "bodyFatPercentage",
         "daysPerWeek",
@@ -2007,10 +1116,11 @@
         "weightInGrams"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/onboarding/data/onboarding_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/data/onboarding_api.dart",
         "line": 50
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "POST",
           "path": "/mobile/onboarding/ai-plan",
@@ -2031,23 +1141,24 @@
             "UpsertUserTrainData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-onboarding.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-onboarding.ts",
             "line": 258
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/profile",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/profile/data/profile_api.dart",
         "line": 10
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/profile",
@@ -2063,28 +1174,29 @@
             "GetUserTrainData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-profile.ts",
             "line": 19
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "PUT",
       "path": "/mobile/profile/train-data",
-      "bodyKeys": [
+      "keys": [
         "age",
         "bodyFatPercentage",
         "heightInCentimeters",
         "weightInGrams"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/profile/data/profile_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/profile/data/profile_api.dart",
         "line": 20
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "PUT",
           "path": "/mobile/profile/train-data",
@@ -2101,26 +1213,27 @@
             "UpsertUserTrainData"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-profile.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-profile.ts",
             "line": 77
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/stats",
-      "bodyKeys": [
+      "keys": [
         "from",
         "to"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/stats/data/stats_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/stats/data/stats_api.dart",
         "line": 13
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/stats",
@@ -2138,25 +1251,26 @@
             "GetStats"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-stats.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-stats.ts",
             "line": 16
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/workout-plans",
-      "bodyKeys": [
+      "keys": [
         "active"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/data/workouts_api.dart",
         "line": 13
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/workout-plans",
@@ -2172,23 +1286,24 @@
             "ListWorkoutPlans"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-workout-plans.ts",
             "line": 36
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/workout-plans/$workoutPlanId",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/data/workouts_api.dart",
         "line": 26
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/workout-plans/:workoutPlanId",
@@ -2205,23 +1320,24 @@
             "GetWorkoutPlan"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-workout-plans.ts",
             "line": 141
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "GET",
       "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/data/workouts_api.dart",
         "line": 34
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "GET",
           "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId",
@@ -2238,23 +1354,24 @@
             "GetWorkoutDay"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-workout-plans.ts",
             "line": 195
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "POST",
       "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions",
-      "bodyKeys": [],
+      "keys": [],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/data/workouts_api.dart",
         "line": 45
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "POST",
           "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
@@ -2273,25 +1390,26 @@
             "StartWorkoutSession"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-workout-plans.ts",
             "line": 251
-          },
-          "evidence": "declaração estática; execução não testada"
+          }
         }
       ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
+      "goMatches": []
     },
     {
       "method": "PATCH",
       "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions/$sessionId",
-      "bodyKeys": [
+      "keys": [
         "completedAt"
       ],
       "source": {
-        "path": "C:/dev/TrainForge/trainforge/lib/features/workouts/data/workouts_api.dart",
+        "repository": "trainforge",
+        "path": "lib/features/workouts/data/workouts_api.dart",
         "line": 59
       },
-      "matches": [
+      "legacyMatches": [
         {
           "method": "PATCH",
           "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
@@ -2310,789 +1428,1240 @@
             "UpdateWorkoutSession"
           ],
           "source": {
-            "path": "C:/dev/bootcamp-treinos-api/src/routes/mobile-workout-plans.ts",
+            "repository": "backend-reference",
+            "path": "src/routes/mobile-workout-plans.ts",
             "line": 330
+          }
+        }
+      ],
+      "goMatches": []
+    }
+  ],
+  "backend": {
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/ai",
+        "group": "ai",
+        "requestType": null,
+        "queryType": null,
+        "responses": {},
+        "usecases": [
+          "CreateWorkoutPlan",
+          "GetUserTrainData",
+          "ListWorkoutPlans",
+          "UpsertUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/ai.ts",
+          "line": 80
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/bootstrap",
+        "group": "bootstrap",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "BootstrapSchema",
+          "401": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetHomeData",
+          "GetUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/bootstrap.ts",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/home/:date",
+        "group": "home",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "HomeDataSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetHomeData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/home.ts",
+          "line": 14
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/me",
+        "group": "me",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "UserTrainDataSchema.nullable",
+          "401": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/me.ts",
+          "line": 19
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/me",
+        "group": "me",
+        "requestType": "UpsertUserTrainDataBodySchema",
+        "queryType": null,
+        "responses": {
+          "200": "UpsertUserTrainDataSchema",
+          "401": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "UpsertUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/me.ts",
+          "line": 62
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile-auth/google",
+        "group": "mobile-auth",
+        "requestType": "z.object",
+        "queryType": null,
+        "responses": {
+          "200": "AuthSuccessSchema",
+          "401": "z.object",
+          "500": "z.object"
+        },
+        "usecases": [],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-auth.ts",
+          "line": 50
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile-auth/refresh",
+        "group": "mobile-auth",
+        "requestType": "RefreshBodySchema",
+        "queryType": null,
+        "responses": {
+          "200": "AuthSuccessSchema",
+          "401": "z.object",
+          "500": "z.object"
+        },
+        "usecases": [
+          "Date"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-auth.ts",
+          "line": 169
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile-auth/logout",
+        "group": "mobile-auth",
+        "requestType": "RefreshBodySchema",
+        "queryType": null,
+        "responses": {
+          "204": "z.null",
+          "500": "z.object"
+        },
+        "usecases": [
+          "Date"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-auth.ts",
+          "line": 274
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile-auth/me",
+        "group": "mobile-auth",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "z.object",
+          "401": "z.object"
+        },
+        "usecases": [],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-auth.ts",
+          "line": 323
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/bootstrap",
+        "group": "mobile-bootstrap",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "z.object",
+          "401": "z.object",
+          "500": "z.object"
+        },
+        "usecases": [
+          "GetHomeData",
+          "GetUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-bootstrap.ts",
+          "line": 16
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/home/:date",
+        "group": "mobile-home",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "HomeDataSchema",
+          "401": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetHomeData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-home.ts",
+          "line": 13
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile/onboarding/manual-plan",
+        "group": "mobile-onboarding",
+        "requestType": "CreatePlanRequestSchema",
+        "queryType": null,
+        "responses": {
+          "201": "CreatedWorkoutPlanResponseSchema",
+          "401": "z.object",
+          "409": "ConflictResponseSchema",
+          "422": "z.object",
+          "500": "z.object"
+        },
+        "usecases": [
+          "CreateWorkoutPlan",
+          "UpsertUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-onboarding.ts",
+          "line": 152
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile/onboarding/ai-plan",
+        "group": "mobile-onboarding",
+        "requestType": "CreatePlanRequestSchema",
+        "queryType": null,
+        "responses": {
+          "201": "CreatedWorkoutPlanResponseSchema",
+          "401": "z.object",
+          "409": "ConflictResponseSchema",
+          "422": "z.object",
+          "504": "z.object",
+          "500": "z.object"
+        },
+        "usecases": [
+          "CreateWorkoutPlan",
+          "Error",
+          "UpsertUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-onboarding.ts",
+          "line": 258
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/profile",
+        "group": "mobile-profile",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "z.object",
+          "401": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-profile.ts",
+          "line": 19
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/mobile/profile/train-data",
+        "group": "mobile-profile",
+        "requestType": "UpsertUserTrainDataBodySchema",
+        "queryType": null,
+        "responses": {
+          "200": "UpsertUserTrainDataSchema",
+          "401": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "UpsertUserTrainData"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-profile.ts",
+          "line": 77
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/stats",
+        "group": "mobile-stats",
+        "requestType": null,
+        "queryType": "StatsQuerySchema",
+        "responses": {
+          "200": "StatsSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetStats"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-stats.ts",
+          "line": 16
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/workout-plans",
+        "group": "mobile-workout-plans",
+        "requestType": null,
+        "queryType": "ListWorkoutPlansQuerySchema",
+        "responses": {
+          "200": "ListWorkoutPlansSchema",
+          "401": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "ListWorkoutPlans"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 36
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile/workout-plans",
+        "group": "mobile-workout-plans",
+        "requestType": "WorkoutPlanSchema.omit",
+        "queryType": null,
+        "responses": {
+          "201": "WorkoutPlanSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "CreateWorkoutPlan"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 80
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/workout-plans/:workoutPlanId",
+        "group": "mobile-workout-plans",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "GetWorkoutPlanSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetWorkoutPlan"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 141
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId",
+        "group": "mobile-workout-plans",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "GetWorkoutDaySchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetWorkoutDay"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 195
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
+        "group": "mobile-workout-plans",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "201": "StartWorkoutSessionSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "409": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "StartWorkoutSession"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 251
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
+        "group": "mobile-workout-plans",
+        "requestType": "UpdateWorkoutSessionBodySchema",
+        "queryType": null,
+        "responses": {
+          "200": "UpdateWorkoutSessionSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "409": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "UpdateWorkoutSession"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/mobile-workout-plans.ts",
+          "line": 330
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/stats",
+        "group": "stats",
+        "requestType": null,
+        "queryType": "StatsQuerySchema",
+        "responses": {
+          "200": "StatsSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetStats"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/stats.ts",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/workout-plans",
+        "group": "workout-plan",
+        "requestType": null,
+        "queryType": "ListWorkoutPlansQuerySchema",
+        "responses": {
+          "200": "ListWorkoutPlansSchema",
+          "401": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "ListWorkoutPlans"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 37
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/workout-plans",
+        "group": "workout-plan",
+        "requestType": "WorkoutPlanSchema.omit",
+        "queryType": null,
+        "responses": {
+          "201": "WorkoutPlanSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "CreateWorkoutPlan"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 82
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/workout-plans/:workoutPlanId",
+        "group": "workout-plan",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "GetWorkoutPlanSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetWorkoutPlan"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 144
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/workout-plans/:workoutPlanId/days/:workoutDayId",
+        "group": "workout-plan",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "200": "GetWorkoutDaySchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "GetWorkoutDay"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 199
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
+        "group": "workout-plan",
+        "requestType": null,
+        "queryType": null,
+        "responses": {
+          "201": "StartWorkoutSessionSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "409": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "StartWorkoutSession"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 256
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
+        "group": "workout-plan",
+        "requestType": "UpdateWorkoutSessionBodySchema",
+        "queryType": null,
+        "responses": {
+          "200": "UpdateWorkoutSessionSchema",
+          "401": "ErrorSchema",
+          "404": "ErrorSchema",
+          "409": "ErrorSchema",
+          "422": "ErrorSchema",
+          "500": "ErrorSchema"
+        },
+        "usecases": [
+          "UpdateWorkoutSession"
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "src/routes/workout-plan.ts",
+          "line": 336
+        }
+      }
+    ],
+    "models": [
+      {
+        "name": "User",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
           },
-          "evidence": "declaração estática; execução não testada"
+          {
+            "name": "workoutPlans",
+            "type": "WorkoutPlan[]",
+            "relation": true
+          },
+          {
+            "name": "name",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "email",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "emailVerified",
+            "type": "Boolean",
+            "relation": false
+          },
+          {
+            "name": "image",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "sessions",
+            "type": "Session[]",
+            "relation": true
+          },
+          {
+            "name": "accounts",
+            "type": "Account[]",
+            "relation": true
+          },
+          {
+            "name": "mobileRefreshTokens",
+            "type": "MobileRefreshToken[]",
+            "relation": true
+          },
+          {
+            "name": "weightInGrams",
+            "type": "Int?",
+            "relation": false
+          },
+          {
+            "name": "heightInCentimeters",
+            "type": "Int?",
+            "relation": false
+          },
+          {
+            "name": "age",
+            "type": "Int?",
+            "relation": false
+          },
+          {
+            "name": "bodyFatPercentage",
+            "type": "Int?",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 12
         }
-      ],
-      "evidence": "literal HTTP e correspondência por método/path; não prova resposta em runtime"
-    }
-  ],
-  "models": [
-    {
-      "name": "User",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutPlans",
-          "type": "WorkoutPlan[]",
-          "relation": true
-        },
-        {
-          "name": "name",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "email",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "emailVerified",
-          "type": "Boolean",
-          "relation": false
-        },
-        {
-          "name": "image",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "sessions",
-          "type": "Session[]",
-          "relation": true
-        },
-        {
-          "name": "accounts",
-          "type": "Account[]",
-          "relation": true
-        },
-        {
-          "name": "mobileRefreshTokens",
-          "type": "MobileRefreshToken[]",
-          "relation": true
-        },
-        {
-          "name": "weightInGrams",
-          "type": "Int?",
-          "relation": false
-        },
-        {
-          "name": "heightInCentimeters",
-          "type": "Int?",
-          "relation": false
-        },
-        {
-          "name": "age",
-          "type": "Int?",
-          "relation": false
-        },
-        {
-          "name": "bodyFatPercentage",
-          "type": "Int?",
-          "relation": false
+      },
+      {
+        "name": "WorkoutPlan",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "name",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "userId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "user",
+            "type": "User",
+            "relation": true
+          },
+          {
+            "name": "workoutDays",
+            "type": "WorkoutDay[]",
+            "relation": true
+          },
+          {
+            "name": "isActive",
+            "type": "Boolean",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 33
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 12
-      }
-    },
-    {
-      "name": "WorkoutPlan",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "name",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "userId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "user",
-          "type": "User",
-          "relation": true
-        },
-        {
-          "name": "workoutDays",
-          "type": "WorkoutDay[]",
-          "relation": true
-        },
-        {
-          "name": "isActive",
-          "type": "Boolean",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
+      },
+      {
+        "name": "WorkoutDay",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "name",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "workoutPlanId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "workoutPlan",
+            "type": "WorkoutPlan",
+            "relation": true
+          },
+          {
+            "name": "isRest",
+            "type": "Boolean",
+            "relation": false
+          },
+          {
+            "name": "weekDay",
+            "type": "WeekDay",
+            "relation": false
+          },
+          {
+            "name": "exercises",
+            "type": "WorkoutExercise[]",
+            "relation": true
+          },
+          {
+            "name": "estimatedDurationInSeconds",
+            "type": "Int",
+            "relation": false
+          },
+          {
+            "name": "coverImageUrl",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "sessions",
+            "type": "WorkoutSession[]",
+            "relation": true
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 56
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 33
-      }
-    },
-    {
-      "name": "WorkoutDay",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "name",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutPlanId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutPlan",
-          "type": "WorkoutPlan",
-          "relation": true
-        },
-        {
-          "name": "isRest",
-          "type": "Boolean",
-          "relation": false
-        },
-        {
-          "name": "weekDay",
-          "type": "WeekDay",
-          "relation": false
-        },
-        {
-          "name": "exercises",
-          "type": "WorkoutExercise[]",
-          "relation": true
-        },
-        {
-          "name": "estimatedDurationInSeconds",
-          "type": "Int",
-          "relation": false
-        },
-        {
-          "name": "coverImageUrl",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "sessions",
-          "type": "WorkoutSession[]",
-          "relation": true
+      },
+      {
+        "name": "WorkoutExercise",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "name",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "order",
+            "type": "Int",
+            "relation": false
+          },
+          {
+            "name": "workoutDayId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "workoutDay",
+            "type": "WorkoutDay",
+            "relation": true
+          },
+          {
+            "name": "sets",
+            "type": "Int",
+            "relation": false
+          },
+          {
+            "name": "reps",
+            "type": "Int",
+            "relation": false
+          },
+          {
+            "name": "restTimeInSeconds",
+            "type": "Int",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 74
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 56
-      }
-    },
-    {
-      "name": "WorkoutExercise",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "name",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "order",
-          "type": "Int",
-          "relation": false
-        },
-        {
-          "name": "workoutDayId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutDay",
-          "type": "WorkoutDay",
-          "relation": true
-        },
-        {
-          "name": "sets",
-          "type": "Int",
-          "relation": false
-        },
-        {
-          "name": "reps",
-          "type": "Int",
-          "relation": false
-        },
-        {
-          "name": "restTimeInSeconds",
-          "type": "Int",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
+      },
+      {
+        "name": "WorkoutSession",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "workoutDayId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "workoutDay",
+            "type": "WorkoutDay",
+            "relation": true
+          },
+          {
+            "name": "startedAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "completeAt",
+            "type": "DateTime?",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 90
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 74
-      }
-    },
-    {
-      "name": "WorkoutSession",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutDayId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "workoutDay",
-          "type": "WorkoutDay",
-          "relation": true
-        },
-        {
-          "name": "startedAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "completeAt",
-          "type": "DateTime?",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
+      },
+      {
+        "name": "MobileRefreshToken",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "tokenHash",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "userId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "user",
+            "type": "User",
+            "relation": true
+          },
+          {
+            "name": "expiresAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "revokedAt",
+            "type": "DateTime?",
+            "relation": false
+          },
+          {
+            "name": "userAgent",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "ipAddress",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 103
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 90
-      }
-    },
-    {
-      "name": "MobileRefreshToken",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "tokenHash",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "userId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "user",
-          "type": "User",
-          "relation": true
-        },
-        {
-          "name": "expiresAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "revokedAt",
-          "type": "DateTime?",
-          "relation": false
-        },
-        {
-          "name": "userAgent",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "ipAddress",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
+      },
+      {
+        "name": "Session",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "expiresAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "token",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "ipAddress",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "userAgent",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "userId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "user",
+            "type": "User",
+            "relation": true
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 121
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 103
-      }
-    },
-    {
-      "name": "Session",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "expiresAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "token",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "ipAddress",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "userAgent",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "userId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "user",
-          "type": "User",
-          "relation": true
+      },
+      {
+        "name": "Account",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "accountId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "providerId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "userId",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "user",
+            "type": "User",
+            "relation": true
+          },
+          {
+            "name": "accessToken",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "refreshToken",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "idToken",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "accessTokenExpiresAt",
+            "type": "DateTime?",
+            "relation": false
+          },
+          {
+            "name": "refreshTokenExpiresAt",
+            "type": "DateTime?",
+            "relation": false
+          },
+          {
+            "name": "scope",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "password",
+            "type": "String?",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 137
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 121
-      }
-    },
-    {
-      "name": "Account",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "accountId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "providerId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "userId",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "user",
-          "type": "User",
-          "relation": true
-        },
-        {
-          "name": "accessToken",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "refreshToken",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "idToken",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "accessTokenExpiresAt",
-          "type": "DateTime?",
-          "relation": false
-        },
-        {
-          "name": "refreshTokenExpiresAt",
-          "type": "DateTime?",
-          "relation": false
-        },
-        {
-          "name": "scope",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "password",
-          "type": "String?",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
+      },
+      {
+        "name": "Verification",
+        "fields": [
+          {
+            "name": "id",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "identifier",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "value",
+            "type": "String",
+            "relation": false
+          },
+          {
+            "name": "expiresAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "createdAt",
+            "type": "DateTime",
+            "relation": false
+          },
+          {
+            "name": "updatedAt",
+            "type": "DateTime",
+            "relation": false
+          }
+        ],
+        "source": {
+          "repository": "backend-reference",
+          "path": "prisma/schema.prisma",
+          "line": 157
         }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 137
       }
+    ],
+    "unresolved": [],
+    "files": {
+      "src/errors/index.ts": "20c4d9631418392f76114aec0e4bf2f44f25c41ce688e669d2fa025c4d783007",
+      "src/index.ts": "2ee053bbe583f7b3b09315ce402f3186f7b9ca1388d40af30c134fec552c387f",
+      "src/lib/auth.ts": "1dfff6f3ea2e3616d3ba056b450616d2e0dece11d333fce4b89705360471e692",
+      "src/lib/db.ts": "1cd94d7ec3a65b82199370a83ab7c4456e5a2a959c7a78fe84a8dac54279091e",
+      "src/lib/env.ts": "ca18f9a2d07b16fa2b6396118a05e2837ef54fa5ac79147e3e3ca0cd5e6292f5",
+      "src/lib/get-mobile-user.ts": "f0d710b388111e86ceb86a89c0f167b1e5655bd89277ef6a27feed2126f6685a",
+      "src/lib/manual-plan-builder.ts": "4cb82f5e3ee71d2d8425eaa8300f05ea6a7d8bf0df6378a5db086c2832ff25c1",
+      "src/lib/mobile-auth.ts": "4185e9c72dd689dc8f52c7ef0d9363d23b04cb62a01bd8fc6f8aa487064f33a5",
+      "src/lib/workout-streak.ts": "7012a288c03fd75805aaba544340e11f709a29cf68f8efef792ae58518e481db",
+      "src/routes/ai.ts": "8213d98b8cf848b9487098c64c39163d7a5f4b221c201adf1c656b470867b09d",
+      "src/routes/bootstrap.ts": "2d8e5992b53550f1817e99e1e2de6acab612d4ff35c35b0ebe8cf1022f28629f",
+      "src/routes/home.ts": "4c2364da90a9c25bdd2f8edd2d06d3be7c4245e8ee27aa8e3e9bd41722e9dbfe",
+      "src/routes/me.ts": "3a92db85ffcc72767a5decfac99acde6c8a60b3794e7ae0563bd1325935d161a",
+      "src/routes/mobile-auth.ts": "3767f687470184ae6008d75f1c0b597382d1cf9eb1ca16a48fefc0a59fd425fd",
+      "src/routes/mobile-bootstrap.ts": "4ceff4878d272dfe02283bc2480e55c5dfd212ab598e95c70ac4dd1be6ae86c6",
+      "src/routes/mobile-home.ts": "d4d1ecec16f4cbd41dfcbde9a3a7473e1e3f74d39b3647b35fa922718c109aae",
+      "src/routes/mobile-onboarding.ts": "8199178edc5da7accb859414733441c9660f34257356f8bc0ef8cb6b53de8d31",
+      "src/routes/mobile-profile.ts": "f141fbfb5bdc1a57db6d745d6a818cf85fdc27a26df878e94e2db4e4e0db762b",
+      "src/routes/mobile-stats.ts": "b0b151bfdc079d5dd7ca12b43a8bab5bcc3fa6e9b1a35be7d348e7ca8828b682",
+      "src/routes/mobile-workout-plans.ts": "759b096ea21f39882cf9688e1422fe35f3c7034b7bab39b6d3365b4b0f0f14d8",
+      "src/routes/stats.ts": "8869f2a4535c6a1c055452d2f660b4429d277904c92b1136bb00d9efd9b651a5",
+      "src/routes/workout-plan.ts": "2d19f04122e5ca71e0ba2a83b75d7efe29a4346a8e070490f675a61226c9cf3f",
+      "src/schemas/index.ts": "be714e8df6534f141daf3956ad57d76bc7b4806826ff34f594bace0164c57641",
+      "src/usecases/CreateWorkoutPlan.ts": "3d7d782812edb258ea3094a1b57fc1932c4bfa53d894f47475a625a55cbc727a",
+      "src/usecases/GetHomeData.ts": "da5db17669a655c75fa954bcbc78aa548290045bcaa0e0392482acf68e3181d1",
+      "src/usecases/GetStats.ts": "92ee5bfe0d0f9325643a4d2a484f98cbc6adbfcff810246b16384b2a683ed09f",
+      "src/usecases/GetUserTrainData.ts": "4f89ab0b8795117037cbdb28980d8f4b363446583553d95e98983fbcdd5aaeda",
+      "src/usecases/GetWorkoutDay.ts": "838ab5a88d47e9ad1444992fb5af1339ccaa73c4f83476629b7c810ea6fd1c42",
+      "src/usecases/GetWorkoutPlan.ts": "52a615586283135a0abb9647a9ca8b2d49cbc7d5f8e6dd389f2196b844d54c20",
+      "src/usecases/ListWorkoutPlans.ts": "70782747a9adb97e1bce44e69e86bc41beae1f4e00ff72e15a553ac7b2aec059",
+      "src/usecases/StartWorkoutSession.ts": "c42153307fe2b13f89a4c42471dbbe4ec58bba26fe047070a6c397ba09938725",
+      "src/usecases/UpdateWorkoutSession.ts": "0945884993dea30b15e8c407e43ff63a20423c074033a4f5177a95c166ad46ad",
+      "src/usecases/UpsertUserTrainData.ts": "05ffcd94d1b0118eb960f7df4257561b892bd96cf6cb1fa702d0d9eb091283e8",
+      "prisma/schema.prisma": "30e571b81f75b6a8a14db68dae086aa9f97caab22bcdfa4d372df7f4503db0ed"
     },
-    {
-      "name": "Verification",
-      "fields": [
-        {
-          "name": "id",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "identifier",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "value",
-          "type": "String",
-          "relation": false
-        },
-        {
-          "name": "expiresAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "createdAt",
-          "type": "DateTime",
-          "relation": false
-        },
-        {
-          "name": "updatedAt",
-          "type": "DateTime",
-          "relation": false
-        }
-      ],
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/prisma/schema.prisma",
-        "line": 157
-      }
-    }
-  ],
-  "schemas": [
-    {
-      "name": "ErrorSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 121
-      }
-    },
-    {
-      "name": "StartWorkoutSessionSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 126
-      }
-    },
-    {
-      "name": "UpdateWorkoutSessionBodySchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 130
-      }
-    },
-    {
-      "name": "UpdateWorkoutSessionSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 134
-      }
-    },
-    {
-      "name": "StatsQuerySchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 140
-      }
-    },
-    {
-      "name": "StatsSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 150
-      }
-    },
-    {
-      "name": "HomeDataSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 164
-      }
-    },
-    {
-      "name": "GetWorkoutDaySchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 188
-      }
-    },
-    {
-      "name": "GetWorkoutPlanSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 216
-      }
-    },
-    {
-      "name": "ListWorkoutPlansQuerySchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 232
-      }
-    },
-    {
-      "name": "ListWorkoutPlansSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 239
-      }
-    },
-    {
-      "name": "UpsertUserTrainDataBodySchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 267
-      }
-    },
-    {
-      "name": "UserTrainDataSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 274
-      }
-    },
-    {
-      "name": "UpsertUserTrainDataSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 283
-      }
-    },
-    {
-      "name": "WorkoutPlanSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 291
-      }
-    },
-    {
-      "name": "BootstrapSchema",
-      "source": {
-        "path": "C:/dev/bootcamp-treinos-api/src/schemas/index.ts",
-        "line": 297
-      }
-    }
-  ],
-  "unresolved": [],
-  "findings": [
-    {
-      "id": "A01",
-      "priority": "Alta",
-      "title": "Corpos completos em logs Flutter",
-      "evidence": "lib/core/http/app_dio.dart",
-      "line": 49,
-      "detail": "Tokens e dados físicos podem passar por logs; não houve teste de exploração.",
-      "story": "V1-021",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A02",
-      "priority": "Alta",
-      "title": "Geradores IA e manual não são catálogo humano",
-      "evidence": "backend:src/routes/mobile-onboarding.ts",
-      "line": 152,
-      "detail": "O builder manual também escolhe treino/dose; retirar do caminho V1.",
-      "story": "V1-015",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A03",
-      "priority": "Alta",
-      "title": "Dose de academia obrigatória no contrato",
-      "evidence": "lib/features/workouts/domain/workout_day_detail.dart",
-      "line": 2,
-      "detail": "sets/reps/rest não representam todos os componentes pesquisados.",
-      "story": "V1-004",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A04",
-      "priority": "Alta",
-      "title": "Migration final remove três índices parciais",
-      "evidence": "backend:prisma/migrations/20260321144259_partialunique/migration.sql",
-      "line": 1,
-      "detail": "Rever invariantes e concorrência; não restaurar um refresh por usuário sem desenho multidevice.",
-      "story": "V1-010",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A05",
-      "priority": "Alta",
-      "title": "Refresh e revogação incompletos no Flutter",
-      "evidence": "lib/features/auth/data/auth_repository.dart",
-      "line": 42,
-      "detail": "API fornece refresh, mas cliente guarda acesso e encerra sessão localmente.",
-      "story": "V1-012",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A06",
-      "priority": "Alta",
-      "title": "Identidade e assinatura Android de desenvolvimento",
-      "evidence": "android/app/build.gradle.kts",
-      "line": 9,
-      "detail": "com.example e signing debug em release não bastam para a entrega.",
-      "story": "V1-034",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A07",
-      "priority": "Média",
-      "title": "Loopback fixo e portas divergentes",
-      "evidence": "lib/core/config/app_config.dart",
-      "line": 3,
-      "detail": "App usa 127.0.0.1:8081; backend padrão8080; URL emulador/staging deve ser configurável.",
-      "story": "V1-021",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A08",
-      "priority": "Alta",
-      "title": "Rotação refresh precisa de teste concorrente",
-      "evidence": "backend:src/routes/mobile-auth.ts",
-      "line": 210,
-      "detail": "Leitura de validade antes da transação e update sem condição de revokedAt: avaliar double use, sem afirmar exploração observada.",
-      "story": "V1-012",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A09",
-      "priority": "Média",
-      "title": "Identidade móvel vinculada por e-mail",
-      "evidence": "backend:src/routes/mobile-auth.ts",
-      "line": 91,
-      "detail": "Rever issuer+sub e regras explícitas de associação de contas.",
-      "story": "V1-011",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A10",
-      "priority": "Alta",
-      "title": "Chave do rate limit usa forwarded header",
-      "evidence": "backend:src/index.ts",
-      "line": 133,
-      "detail": "Confiar apenas em proxy configurado e testar spoof; nenhuma implantação foi atacada.",
-      "story": "V1-013",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    },
-    {
-      "id": "A11",
-      "priority": "Média",
-      "title": "Resumo e histórico exigem semântica por ocorrência",
-      "evidence": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-      "line": 1,
-      "detail": "Conclusão antiga e histórico do plano não devem bloquear próxima data; rever UI e API.",
-      "story": "V1-017",
-      "status": "aberto — inspeção estática",
-      "exists": true
-    }
+    "tsFiles": 33,
+    "limitations": [
+      "Snapshot de código externo, sem validação runtime.",
+      "Rotas de plugins, Swagger e health raiz não são extraídas.",
+      "Schemas inline conservam o nome detectado, sem inventar seu conteúdo."
+    ],
+    "repository": "https://github.com/richardcastrogois/bootcamp-treinos-api",
+    "commit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
+    "capturedOn": "2026-10-21",
+    "dirty": false,
+    "kind": "versioned-external-source-reference"
+  },
+  "go": {
+    "files": [],
+    "annotations": [],
+    "registrations": [],
+    "specificationOperations": [],
+    "limitations": [
+      "Anotação não prova registro de rota, autorização ou execução.",
+      "Registro Go detecta literais net/http com método; routers dinâmicos podem ficar fora."
+    ]
+  },
+  "limitations": [
+    "Somente análise estática dos padrões suportados; não executa app/API/DB.",
+    "Backend externo é retrato explícito versionado, não código recebido no clone.",
+    "Comentários Go, rotas e especificação são evidências diferentes; não confundem com runtime.",
+    "Intenção arquitetural, direitos, revisão e conclusão de tarefa não são inferidos."
   ]
 }

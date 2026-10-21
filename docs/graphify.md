@@ -32,8 +32,8 @@ Em perguntas sobre arquitetura, consultar primeiro a vizinhança pertinente no g
 
 Usar a raiz do corpus/grafo correto. Não enviar todo graph.json como contexto. Atualização estrutural code-only não confirma comportamento de rede nem analisa semanticamente todo o conteúdo pesquisado; arestas INFERRED continuam inferências.
 
-## Painel vivo e Graphify
+## Documentação dinâmica e Graphify
 
-O [painel local](painel/README.md) conecta inventário de HTTP, telas, schema e backlog com evidência estática, e atualiza arquivos observados automaticamente enquanto roda. Graphify permanece um mapa estrutural separado. Intenção Go, direitos, aceite e execução real não são inferidos por nenhum dos dois. Código novo em tools/ não foi acrescentado ao corpus Flutter `lib/`; ampliar cobertura deve ser decisão explícita.
+O [mapa versionado do repositório](arquitetura/README.md) conecta HTTP, telas, schema de referência e backlog em Markdown/Mermaid. Não exige serviço para leitura; a [CI documental](arquitetura/documentacao-dinamica.md) gera/verifica seus derivados. Graphify permanece um mapa estrutural separado. Intenção Go, direitos, aceite e execução real não são inferidos por nenhum dos dois. Código novo em tools/ não foi acrescentado ao corpus Flutter `lib/`; ampliar cobertura deve ser decisão explícita.
 
 Histórico anterior em [arquivo](arquivo/2026-10-21/docs/graphify.md).
