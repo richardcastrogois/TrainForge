@@ -1,0 +1,23 @@
+{
+  "id": "n43-vitpose-api",
+  "url": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:54:00.000687+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados de modelo específico dekeypoints: licença/revisão/arquivos e formato. Separar pose de classe/repetição/tempo/gasto. Não baixar pesos nesta coleta.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1191,
+  "bodyFile": "../raw/n43-vitpose-api.json",
+  "sha256": "c6c0f7381732dcdfdbcc3d7832f75c73f5cf37dac658a9e20b78e7bb6a4eda32"
+}

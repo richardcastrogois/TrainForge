@@ -1,0 +1,22 @@
+{
+  "id": "i18-agueda-guia-a5-pdf",
+  "url": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/English/File%20A5.%20Resistance%20exercise%20program%20of%20the%20AGUEDA%20trial%20Paper%20guide.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:42:49.146945+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PrimeiroGET do guia integral publicado pelos autores, indicado na referenciaCERT. Guia de videos emPDF nao significa videos recebidos/licenciados; verificar fonte por ativo.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/English/File%20A5.%20Resistance%20exercise%20program%20of%20the%20AGUEDA%20trial%20Paper%20guide.pdf",
+  "contentType": "application/octet-stream",
+  "retryAfter": null,
+  "bytes": 3381080,
+  "bodyFile": "../raw/i18-agueda-guia-a5-pdf.pdf",
+  "sha256": "b777c4aa52d2c9cca5b517d597a203d33d8521a0c9b75f0bcaeaea0213468c6a"
+}

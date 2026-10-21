@@ -1,0 +1,54 @@
+﻿{
+    "date":  "2026-10-15",
+    "engine":  "Preinstalled Windows.Media.Ocr",
+    "language":  "pt-BR",
+    "host":  "Windows PowerShell 5.1",
+    "newPackagesInstalled":  false,
+    "fixtures":  "Own synthetic printed text; no real nutrition label or exercise machine",
+    "results":  [
+                    {
+                        "file":  "ambiguo.png",
+                        "text":  "8.0 OO II SEM UNIDADE",
+                        "milliseconds":  9,
+                        "lines":  [
+                                      "8.0",
+                                      "OO II",
+                                      "SEM UNIDADE"
+                                  ],
+                        "sourceSha256":  "D7635F321D879D80BF77F904FF96694C1E7586F307CFA8C0C571BFF02B7214AB",
+                        "width":  1300,
+                        "height":  360
+                    },
+                    {
+                        "file":  "rotulo.png",
+                        "text":  "POR 100 g Energia 840 kJ / 200 kcal Gordura 10,5 g PORCAO 30 g",
+                        "milliseconds":  6,
+                        "lines":  [
+                                      "POR 100 g",
+                                      "Energia 840 kJ / 200 kcal",
+                                      "Gordura 10,5 g",
+                                      "PORCAO 30 g"
+                                  ],
+                        "sourceSha256":  "187FF294E84C50677CA5A08899FC8D9B00E82CA1C4240EF859FA6FC00AD477A7",
+                        "width":  1300,
+                        "height":  360
+                    },
+                    {
+                        "file":  "visor.png",
+                        "text":  "DISTANCIA 1,25 km TEMPO CARGA kg VELOCIDADE km/h",
+                        "milliseconds":  7,
+                        "lines":  [
+                                      "DISTANCIA 1,25 km",
+                                      "TEMPO",
+                                      "CARGA kg",
+                                      "VELOCIDADE km/h"
+                                  ],
+                        "sourceSha256":  "83C62D288B2B60C1B0B592A6DEF574ECE8A36E4417DE80098ED07FB989B42F50",
+                        "width":  1300,
+                        "height":  360
+                    }
+                ],
+    "androidMLKitTested":  false,
+    "appTested":  false,
+    "clinicalValidation":  false
+}

@@ -1,0 +1,18 @@
+{
+  "id": "n15m-benson-oncologia2022",
+  "url": "https://ejnhs.journals.ekb.eg/article_227789_a45b3b6bc282405dfc99ab63d17fed6a.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:52:46.460436+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Nova pista: material profissional Benson com abertura dos olhos antes do repouso. Cotejar instrucao e direitos, sem importar dose de vinte minutos ou populacao oncologica para cuidadores.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [Errno 11002] getaddrinfo failed>"
+}

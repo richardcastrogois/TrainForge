@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-11","scope":"Somente N15-C. Publicacao2020 distinta e metadados2023, primeira coleta. XML2023falhou500nao repetir. SuplementoDOC5.1MB acima limite2MB, nao coletar sem autorizacao propria ou operar app/contas.",
+  "requests":[
+    {"id":"c15-gogrow2020-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7605491/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Antecedente GoGrow2020/guia emsuplemento, verificar se guia de app/comportamento ou roteiro de exercicio profissional. Nao inferir licenca ou resultadoRCT2023 para2020."},
+    {"id":"c15-gogrow2023-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36916022%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"Metadados/resumo original2023, corpoXML500vazio nao recebido. PilotRCT76/6semanas social vsnaosocial nao comparadorsemexercicio ou efeito porgesto."}
+  ]
+}

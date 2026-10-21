@@ -1,0 +1,18 @@
+{
+  "date":"2026-10-08","niche":"N15-C","researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "localEvidence":"leitura-fontes.json","integrityEvidence":"inventario.json",
+  "mapping":[
+    {"apkField":"sourceId","from":"families[].sourceId ou followupReViEEW.sourceId","rule":"PR68 seguimento/protocolo/resultados sao mesma familia; PR88 tronco secundario nao ensaio independente."},
+    {"apkField":"sourceCitation","from":"titulo/autores/DOI/ano/URL do recibo","rule":"Manter versao e endpoint; permitir abrir fonte original e informar tipo de evidencia recebido."},
+    {"apkField":"sourceLocator","from":"families[].locators ou locator e receipt","rule":"HTML/secao/tabela/JATS/JSONpointer ou paginaPDF; numeracaoPDF distinta da impressa."},
+    {"apkField":"sourceSnapshot","from":"receipt -> url/collectedAtUtc/status/bytes/sha256/bodyFile","rule":"Reauditar hash; guardar caminho relativo dos corpos locais, nao tratá-los como ativos licenciados para embutir noAPK."},
+    {"apkField":"audience","from":"population.practitioner/criterios da fonte","rule":"Cuidador familiar, enfermeiro hospitalar e trabalhador de cuidado a idosos nao equivalentes; criterios de pesquisa nao lista universal de contraindicação."},
+    {"apkField":"feasibility","from":"ambiente/material/preparo/tempo/fadiga/suporte fonte e decisao produto","rule":"Separar solo/dupla, apoio para substituir cuidado e acesso. Nao alterar dose clinica porque tempo menor."},
+    {"apkField":"professionalSupport","from":"professionalDelivery/delivery/programme","rule":"Preservar ensino inicial, checagem, instrutor ao vivo, cointervencoes e seguimento; texto/videoAPK nao substitui suporte obrigatório."},
+    {"apkField":"exerciseInstructionsDose","from":"somente programa original completo selecionado","rule":"Nenhum novo registro desta rodada aprovado. Null nao vira valor automatico; tipsVA nao13exercicios, tabelaPMR nao transcricaoCD."},
+    {"apkField":"evidenceClaim","from":"results e finding com desenho/endpoint","rule":"Distinguir resultado favoravel, negativo, nulo, educativo e protocolo; PR68 um ano sem melhora significativa da dor media. NCTCOMPLETED nao eficácia."},
+    {"apkField":"assetLicense","from":"licenca por texto/tabela/foto/audio/video","rule":"CCBY artigo nao garante CD/cartaz; tabelaNC de terceiros, fotosVA e teseNCND permanecem bloqueadas."},
+    {"apkField":"availability","from":"importAllowed/releaseApproved/closureDecision","rule":"Todos novos itens bloqueados como rotina; referências podem alimentar revisao editorial documentada, sem prescrição automática."}
+  ],
+  "runtimeImportCreated":false,"aiGeneratedRoutine":false,"n21Started":false
+}

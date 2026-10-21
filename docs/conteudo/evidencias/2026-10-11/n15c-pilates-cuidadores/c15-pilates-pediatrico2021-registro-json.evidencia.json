@@ -1,0 +1,23 @@
+{
+  "id": "c15-pilates-pediatrico2021-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT03729466",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:00:45.274686+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeiro GET registro ClinicalPilates pais/cuidadores de criancas com deficiencia, documentos e autoria profissional.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT03729466",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 7121,
+  "bodyFile": "../raw/c15-pilates-pediatrico2021-registro-json.json",
+  "sha256": "2e5f7b2a9cbecf79ae1f0857a9ed30318729f99eeedef7d4d4e9419c89ad5892"
+}

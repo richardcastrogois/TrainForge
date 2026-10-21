@@ -1,0 +1,126 @@
+{
+  "id": "N24-ERG50-PRO-01",
+  "date": "2026-10-15",
+  "niche": "N24",
+  "status": "candidato_factual_para_revisao_profissional",
+  "kind": "Modelo de uma sessão humana, não calendário novo",
+  "sourceIds": [
+    "PR160",
+    "PR165",
+    "CI05"
+  ],
+  "authorship": {
+    "doseAndOriginalIntervention": "Jenna B. Gillen, Brian J. Martin, Martin J. MacInnis, Lauren E. Skelly, Mark A. Tarnopolsky e Martin J. Gibala (2016). JBG/MJG conceberam o experimento.",
+    "qualifiedDoseAuthor": "Martin J. Gibala: Professor de Kinesiology, PhD, perfil primário McMaster recebido.",
+    "setupAndTeachingFacts": "Renato André Sousa da Silva e Hildeamo Bonifácio Oliveira (2002), Educação Física/formação e CREF históricos declarados no PDF1. Metadados da revista usam Souza; crédito do PDF usa Sousa. Não foi verificado registro profissional atual.",
+    "symptomEducation": "National Institute on Aging, guia2018 e painel profissional creditado no PDF121.",
+    "newEditorialComposition": "TrainForge: seleção e redação editorial de fatos de preparação/segurança com o modelo MICT. A mistura não é um novo programa criado/testado pelos autores originais."
+  },
+  "selectedScope": "Adulto homem sedentário, clinicamente elegível e familiarizado, em cicloergômetro com controle de potência e monitor de FC, em percurso com orientação profissional. Não oferta autônoma para público indiscriminado. A idade média do ensaio 27±8 não é limite rígido de inclusão inventado.",
+  "evidenceBasis": "Intervenção humana estudada por12semanas em homens sedentários; o lote conserva apenas uma sessão MICT. Resultados do ciclo de estudo não são eficácia demonstrada de uma sessão isolada ou da composição editorial.",
+  "delivery": {
+    "sourceFamiliarization": "Antes da fase de treinamento: aproximadamente20min no ergômetro com monitor de FC para estabelecer carga de64–76% da FCmax medida. Não somar esses20min à sessão diária nem converter em aquecimento de toda sessão.",
+    "sourceAssessment": "FCmax obtida no teste incremental do estudo; não substituir automaticamente por220−idade. Carga relativa ajustada ao treinamento.",
+    "proposedOfferCondition": "Percurso com profissional responsável pela avaliação, ensino de ajuste/uso dos comandos e acompanhamento da resposta ao esforço. Esse percurso é condição de produto proposta para preservar a preparação, não alegação de frequência de supervisão não relatada em Gillen.",
+    "mustDemonstrateBeforeStarting": [
+      "Regulagem e uso dos comandos/frenagem/liberação dos pés no modelo real de ergômetro",
+      "Compreensão da intensidade alvo e do monitor de FC",
+      "Capacidade de executar o gesto e encerrar com o equipamento parado conforme ensino profissional"
+    ],
+    "actualServiceContracted": false,
+    "availabilityIsPublicationGateNotMissingResearchSource": true
+  },
+  "preparationFacts": [
+    {
+      "instruction": "O profissional e o praticante conferem a adequação individual do selim e do guiador e o uso seguro do equipamento; o praticante aprende e demonstra a regulagem. Não há coeficiente de altura universal neste lote.",
+      "sourceId": "PR165",
+      "locator": "PDF4/6/8 (impressos10/12/14)",
+      "use": "Método/fato, redação nova; não tradução do artigo nem importação do manual de marca."
+    },
+    {
+      "instruction": "O profissional verifica postura e apoios durante o movimento e corrige desconfortos e posicionamentos inadequados; não introduzir apoio de antebraços, halteres, pedalada para trás ou técnicas em pé deste outro programa.",
+      "sourceId": "PR165",
+      "locator": "PDF6/8",
+      "use": "Informação factual selecionada; demais técnicas/doses do artigo não escolhidas."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "warm",
+      "phase": "aquecimento",
+      "durationSeconds": 120,
+      "powerW": 50,
+      "instruction": "Pedalar no cicloergômetro durante2min a50W, conforme orientação e configuração prévias.",
+      "sourceId": "PR160",
+      "locator": "Methods / 12-week training intervention"
+    },
+    {
+      "id": "main",
+      "phase": "continuo",
+      "durationSeconds": 2700,
+      "target": "aproximadamente70% da FCmax medida",
+      "instruction": "Pedalar continuamente por45min na carga individual estabelecida para a intensidade alvo; os ajustes seguem o acompanhamento profissional.",
+      "sourceId": "PR160",
+      "locator": "Methods / 12-week training intervention"
+    },
+    {
+      "id": "cool",
+      "phase": "encerramento",
+      "durationSeconds": 180,
+      "powerW": 50,
+      "instruction": "Completar3min de pedalada a50W para encerramento; concluir e sair conforme o uso seguro do equipamento aprendido na familiarização.",
+      "sourceId": "PR160",
+      "locator": "Methods / 12-week training intervention"
+    }
+  ],
+  "totalSeconds": 3000,
+  "totalMinutes": 50,
+  "noArtificialRecoveryIntervals": true,
+  "cadenceRpm": null,
+  "cadenceNote": "Gillen não publica uma cadência universal para MICT. Não importar60–110RPM, posições ou música do protocolo cardiológico Gloc nem o limite antigo90RPM do texto2002.",
+  "monitoring": "Fonte: FC registrada a cada5s. Nas sessões1/15/30 do ensaio, RPE Borg6–20 aos15/30/45min. RPE13 e110W observados não são metas universais. Não transformar avaliação do ensaio em regra nova de todas as sessões.",
+  "frequencySource": "Ensaio: uma sessão semana1, duas semana2, três depois, com exceção de duas substituições por avaliações na semana7. Calendário individual não selecionado: relação entre frequência narrada e média MICT32±2 preservada, não preenchida por IA.",
+  "symptomsAndReturn": {
+    "instructions": "Se houver dor/pressão torácica, tontura, falta de ar desproporcional, palpitações ou mal-estar, interromper e procurar avaliação; sintomas não esclarecidos suspendem o exercício até diagnóstico e tratamento. Retorno após doença ou novos sintomas é discutido com o médico. Não usar o encerramento cronometrado para insistir durante sintomas.",
+    "sourceId": "CI05",
+    "locators": [
+      "PDF23–24",
+      "PDF40",
+      "PDF30 para retorno"
+    ],
+    "scope": "Educação geral baseada no guia; não diagnóstico, limiar de emergência ou liberação individual. Informação editorial de interrupção não muda a dose original para pessoa sintomática."
+  },
+  "compatibility": {
+    "unchangedFromPR160": [
+      "Modalidade cicloergômetro",
+      "Aquecimento2min50W, bloco contínuo45min em intensidade relativa e encerramento3min50W",
+      "Avaliação/familiarização e monitorização prévias; sem calorias, FCmax por idade, RPM ou carga110W universal"
+    ],
+    "auxiliaryFactsOnly": "Preparação individual, ensino e postura selecionados do artigo2002; questões/sintomas e retorno do NIA. Não foram importados seus alongamentos, warmup3–15min, fórmulas de FC, progressão, técnicas avançadas ou público idoso para o percurso principal.",
+    "incompatibleCandidatesNotMerged": [
+      "LeMond85.5% do estudo Yum2021: configuração experimental em outra população, não ajuste universal",
+      "Gloc2021: reabilitação pós-infarto e técnicas/cadências próprias, não população/dose do lote",
+      "BHF planos externos e CyclingUK distâncias: não equivalência com ergômetro",
+      "Livro UGA: páginas de ajuste bloqueadas, não usadas para preencher comandos"
+    ],
+    "documentaryCompatibilityNotIndependentClinicalValidation": true,
+    "clinicallyValidatedNewComposition": false
+  },
+  "rights": {
+    "mainDoseText": "PR160 artigo CC BY4.0: crédito, licença e indicação de alterações; sem importar imagens externas.",
+    "auxiliaryPR165": "Somente fatos/métodos operacionais e metadados de autoria, em redação própria. O texto, as ilustrações e a estrutura protegida RBCM não foram licenciados; não copiar, traduzir ou fazer uma paráfrase próxima. Não dizer que o artigo é CC.",
+    "auxiliaryNIA": "Fatos de educação geral e fonte institucional; fotos/layout não escolhidos. Política NIA já registrada emCI05, com exceções.",
+    "legalBasisResearch": "CDADC/Portugal art1(2) diferencia métodos/conceitos da expressão; arts2/3/9 preservam texto, obras derivadas e direitos. Base documental, não grant geral, não exceção para extrair bibliotecas/ignorar termos. A redação final precisa de conferência de originalidade e direitos antes de publicar.",
+    "noProtectedSourceAssetSelected": true
+  },
+  "beforeRelease": [
+    "Revisão profissional da apresentação final, elegibilidade e compatibilidade",
+    "Validação humana do texto pt-PT, compreensão e sequência de execução",
+    "Conferência de originalidade/direitos do texto final e atribuições",
+    "Apoio/equipamento reais disponíveis e testes da implementação"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "mediaImported": false,
+  "creditText": "Dose: Gillen JB et al. (2016), PLOS ONE11:e0154075, CC BY4.0, https://doi.org/10.1371/journal.pone.0154075. Preparação/ensino (referência factual): Silva RAS e Oliveira HB (2002), RBCM10(4):7–18, https://doi.org/10.18511/rbcm.v10i4.465. Segurança educativa: NIA/NIH18-AG-4258 (2018). Composição/redação proposta TrainForge; não testada como conjunto."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-baduanjin-download-helper",
+  "url": "https://www.zglyyx.com/develop/static/common/js/download_cn.js",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:11:38.585053+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Determinar a rota publicada de lsdy1(PDF,7307) no HTMLrecebido. Codigo guardado como texto, sem execucao; interromper se exigir permissao/autenticacao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.zglyyx.com/develop/static/common/js/download_cn.js",
+  "contentType": "application/x-javascript;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 14001,
+  "bodyFile": "../raw/c15-baduanjin-download-helper.txt",
+  "sha256": "53fabe422ab3a8388a1de6f13814ebb413835ca125dd336b750dec3c31c3264f"
+}

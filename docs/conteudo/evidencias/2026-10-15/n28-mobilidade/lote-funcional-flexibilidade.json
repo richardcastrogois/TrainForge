@@ -1,0 +1,193 @@
+{
+  "id": "N28-FUNC-FLEX-06-01",
+  "date": "2026-10-15",
+  "niche": "N28",
+  "kind": "Seis fichas funcionais/de flexibilidade, composição editorial documental de fontes humanas institucionais; não novo programa validado",
+  "sourceIds": [
+    "PR05",
+    "CI05",
+    "PR166"
+  ],
+  "authorship": {
+    "PR05": "NHS website, autor individual não identificado; coleção institucional, não alegar certificação pessoal.",
+    "CI05": "National Institute on Aging/NIH, Workout to Go, reimpressão março 2015; não transferir painel autoral do guia de 2018."
+  },
+  "population": "Adultos capazes das variantes e dos apoios, com condições individuais verificadas. Idade, ser cuidador ou ambiente doméstico não asseguram elegibilidade.",
+  "preparation": {
+    "NHS": "Roupa confortável e espaço livre; cadeira estável para força, degrau com corrimão/parede para apoio. Construção gradual expressa pela fonte; incremento numérico não definido.",
+    "NIA": "Conferir saúde, cadeira resistente com braços e apoios individuais. Movimentos lentos, sem impulsos/solavancos, respiração mantida; parar em dor. PDF7 sugere cerca de 5min de aquecimento e opções humanas, não impõe nova dose de escadas.",
+    "frequency": "Páginas NHS propõem pelo menos duas vezes por semana à própria série. Frequência do novo conjunto misto não definida.",
+    "sourceLocators": [
+      "NHS intro Strength/Balance/Flexibility",
+      "NIA PDF4–7"
+    ]
+  },
+  "components": [
+    {
+      "id": "sit-to-stand",
+      "sourceId": "PR05",
+      "sourceSection": "Strength exercises — Sit-to-stand",
+      "position": "Sentado na borda de cadeira firme, pés à largura da bacia.",
+      "methodFacts": "Inclinar o tronco ligeiramente à frente, levantar lentamente usando as pernas, olhar em frente. Estender-se em pé e sentar de novo devagar, usando os braços para orientar quando possível.",
+      "dose": {
+        "aimRepetitions": 5,
+        "tempoSeconds": null,
+        "holdSeconds": null,
+        "sets": null
+      },
+      "support": "Fonte pede levantar usando pernas, sem empurrar com braços. Necessidade de assistência para levantar exige outra variante avaliada, não inventar cuidador como suporte.",
+      "end": "Sentado novamente após a repetição, sem novo bloco cronometrado."
+    },
+    {
+      "id": "step-up",
+      "sourceId": "PR05",
+      "sourceSection": "Balance exercises — Step-up",
+      "position": "Frente a degrau, preferencialmente com corrimão ou junto à parede para apoio.",
+      "methodFacts": "Subir começando com uma perna, juntar a outra no degrau, descer e regressar ao início. Repetir iniciando com a outra perna, lentamente e com controle.",
+      "dose": {
+        "maxRepetitionsStartingWithEachLeg": 5,
+        "stepHeightCm": null,
+        "tempoSeconds": null,
+        "sets": null
+      },
+      "support": "Apoio sólido presente; altura do degrau, necessidade de supervisão e capacidade de subir/descer devem ser verificadas, não substituir por banco ou aparelho de praça.",
+      "end": "Ambos os pés de volta à posição inicial em segurança."
+    },
+    {
+      "id": "neck-rotation",
+      "sourceId": "PR05",
+      "sourceSection": "Flexibility exercises — Neck rotation",
+      "position": "Sentado ereto, ombros baixos e olhar à frente.",
+      "methodFacts": "Rodar lentamente a cabeça para o lado dentro da amplitude confortável, sustentar e regressar ao centro; repetir para o outro lado.",
+      "dose": {
+        "repetitionsPerSide": 3,
+        "sides": 2,
+        "holdSeconds": 5,
+        "knownHoldOnlySeconds": 30,
+        "movementTimeSeconds": null
+      },
+      "end": "Regresso à posição inicial previsto no comando, sem rotação forçada ou tempo total inventado."
+    },
+    {
+      "id": "ankles",
+      "sourceId": "CI05",
+      "locator": "Workout to Go PDF18, página impressa15",
+      "position": "Sentado com segurança na parte anterior de cadeira firme, pernas estendidas e calcanhares no chão.",
+      "methodFacts": "Levar pontas dos pés em direção ao corpo e sustentar; depois afastá-las e sustentar. Repetir o par de direções conforme a faixa da fonte.",
+      "dose": {
+        "holdSeconds": [
+          10,
+          30
+        ],
+        "cycles": [
+          3,
+          5
+        ],
+        "directions": 2,
+        "knownHoldOnlySeconds": [
+          60,
+          300
+        ]
+      },
+      "end": "O último par termina na segunda direção. A fonte não fornece transição cronometrada entre cadeiras/atividades."
+    },
+    {
+      "id": "back",
+      "sourceId": "CI05",
+      "locator": "Workout to Go PDF19, página impressa16",
+      "position": "À frente de cadeira com braços, pés apoiados à largura dos ombros, tronco ereto.",
+      "methodFacts": "Rodar lentamente tronco e cabeça para um lado mantendo a bacia imóvel; mão desse lado no braço da cadeira e outra na face externa da coxa. Sustentar e regressar devagar para a frente; inverter lados e posições das mãos.",
+      "dose": {
+        "holdSeconds": [
+          10,
+          30
+        ],
+        "repetitionsPerSide": [
+          3,
+          5
+        ],
+        "sides": 2,
+        "knownHoldOnlySeconds": [
+          60,
+          300
+        ]
+      },
+      "caution": "Cirurgia de anca ou costas: consultar médico antes de tentar, como pede a fonte. Variante com braço atrás da cadeira não selecionada.",
+      "end": "Voltar a olhar para a frente após cada sustentação."
+    },
+    {
+      "id": "thigh",
+      "sourceId": "CI05",
+      "locator": "Workout to Go PDF20, página impressa17",
+      "position": "Em pé atrás de cadeira firme, pés à largura dos ombros, joelhos estendidos sem bloquear; uma mão segura a cadeira.",
+      "methodFacts": "Dobrar o joelho oposto para trás, segurar o pé com a outra mão mantendo joelho apontado para o chão e tracionar suavemente até sentir alongamento da coxa. Fonte permite faixa/cinto/toalha em torno do pé quando não alcança o tornozelo; repetir de ambos os lados.",
+      "dose": {
+        "holdSeconds": [
+          10,
+          30
+        ],
+        "repetitionsPerSide": [
+          3,
+          5
+        ],
+        "sides": 2,
+        "knownHoldOnlySeconds": [
+          60,
+          300
+        ]
+      },
+      "caution": "Cirurgia de anca ou costas exige consulta prévia. Capacidade de segurar apoio e usar acessório verificada individualmente, sem forçar amplitude.",
+      "end": "Alternância implica devolver o pé ao apoio antes de mudar de lado; não há procedimento especializado de recuperação de equilíbrio ou pausa cronometrada na ficha."
+    }
+  ],
+  "compatibility": "Fichas independentes com variante, instrução e dose próprias. A cadeira com braços atende os componentes NIA; degrau exige apoio distinto. Não transformar a ordem do catálogo numa sessão clínica testada, não somar automaticamente volume nem importar três séries de força para alongamentos. Alongamento de coxa em pé não é equivalente a alternativa sentada.",
+  "doseAccounting": {
+    "NIAThreeStretchHoldOnlySeconds": [
+      180,
+      900
+    ],
+    "NHSNeckHoldOnlySeconds": 30,
+    "allStretchHoldOnlySeconds": [
+      210,
+      930
+    ],
+    "totalSessionSeconds": null,
+    "note": "3min30s–15min30s apenas de sustentações dos quatro alongamentos, se usados todos nos extremos; exclui movimentos/transições/pausas/funcionais/aquecimento. Não sessão fixa de5min."
+  },
+  "frequencyPerWeek": null,
+  "programmeWeeks": null,
+  "automaticProgression": null,
+  "caregiverInterruptions": "Pausas pessoais são viabilidade de contexto, não nova dose estudada. A fonte não define tempo de pausa/reinício após interrupção; não oferecer cronômetro de recuperação inventado ou cuidado simultâneo.",
+  "contexts": {
+    "idoso_casa": {
+      "status": "aplicavel_com_limites",
+      "reason": "NIA dirige-se a idosos e NHS admite casa. Cadeira com braços e degrau apoiado precisam existir; elegibilidade, sintomas e capacidade individual verificadas. Nenhuma elegibilidade por idade apenas."
+    },
+    "idoso_academia_praca": {
+      "status": "pendente",
+      "reason": "Sem evidência para trocar cadeira/apoio/degrau por aparelho de praça. Só avaliar espaço e apoios equivalentes, piso e capacidade; não copiar prescrição para banco de jardim."
+    },
+    "idoso_academia": {
+      "status": "aplicavel_com_limites",
+      "reason": "Componentes fora de máquinas podem ter cadeira/degrau/parede compatíveis, com avaliação do material e suporte; não treino de aparelhos."
+    },
+    "cuidador_casa_proprio": {
+      "status": "aplicavel_com_limites",
+      "reason": "Adulto treinando para si, caso elegível; não há efeito específico demonstrado em cuidadores ou instrução de assistência física. Interrupções não tiveram dose validada. N15 segue pausada."
+    }
+  },
+  "notSelected": [
+    "Shoulder and upper arm NIA: sustentação não quantificada",
+    "Calf stretch NHS: repetições publicadas, sustentação não definida",
+    "Progressões sem apoio/olhos fechados e braços atrás da cadeira",
+    "Calendário periodizado, treino de marcha em escadas completas ou aparelho de praça"
+  ],
+  "rightsFile": "direitos-e-autoria.json",
+  "beforePublication": [
+    "Revisar variantes e compatibilidade do conjunto, elegibilidade e apoio reais",
+    "Revisar redação pt-PT/acessibilidade/compreensão e direitos/atribuição do ativo final",
+    "Testar a implementação em etapa autorizada"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

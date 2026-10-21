@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "testType": "Integridade e consistencia documental, nao clinica, direito homologado ou APK.",
+  "documentaryUnitTests": {"ran": 41, "passed": 41, "finalRunExitCode": 0},
+  "n15cCumulativeReceiptValidation": {"evidenceBodies": 41, "dependencies": 17, "exitCode": 0},
+  "queue": {"nichesChecked": 20, "activeComplement": "N15-C", "n21Allowed": false, "exitCode": 0},
+  "cumulativeIndex": {"calls": 350, "http200": 291, "verifiedBodiesIncludingErrors": 308},
+  "sourceCatalogue": {"families": 136, "candidato": 24, "condicional": 45, "incompativel_zero": 16, "referencia": 51},
+  "priorPackage": {
+    "id": "ES2019-DOM-01",
+    "sha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee",
+    "unchanged": true,
+    "caregiverProgramme": false
+  },
+  "graphify": {"changed": 0, "unchanged": 42, "deleted": 0, "outputsPreserved": true, "semanticResearchIndexed": false},
+  "manualInspection": {"renderedPages": 22, "actuallyVisuallyInspectedPages": 14},
+  "gitDiffCheckExitCode": 0,
+  "documentationFilesChecked": 6,
+  "documentationLinkErrors": 0,
+  "newRoundJsonFilesParsed": 17,
+  "rawIgnoredByGit": true,
+  "appPathsChanged": false,
+  "clinicalValidationPerformed": false,
+  "appTestsRun": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "pending": ["C15-G03", "C15-G04", "decisao explicita do autor sobre programa geral/especifico"],
+  "recordedBy": "agente apos executar comandos locais; nao saida bruta de todos os comandos",
+  "limits": "Contagens cumulativas incluem erros/desafios. Hash/ancora/testes nao aprovam treino. Nenhum outro complemento pesquisado nesta rodada."
+}

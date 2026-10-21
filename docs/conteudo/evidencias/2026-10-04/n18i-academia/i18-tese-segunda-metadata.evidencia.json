@@ -1,0 +1,22 @@
+{
+  "id": "i18-tese-segunda-metadata",
+  "url": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/f61bcad8-cc1c-4f04-9e64-1f307d23a63e",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:49:11.791070+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Identificar tese primaria e tamanho do documento que menciona manual MoveStrong, sem unir programa remoto e de academia.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/f61bcad8-cc1c-4f04-9e64-1f307d23a63e",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1641,
+  "bodyFile": "../raw/i18-tese-segunda-metadata.json",
+  "sha256": "67cf81abd1cd88d273e3fb08ae6b627c3f9ba60a18cd25a4ccb8087c4ea778b4"
+}

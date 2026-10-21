@@ -1,0 +1,25 @@
+{
+  "id": "cg03-ucl-stretch-transcricao-docx",
+  "url": "https://mediacentral.ucl.ac.uk/assoc_files/DBDidc8I.docx?token=BaBjcH6E",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T18:14:07.323387+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Transcricao publica doStretching linked byUCL: comparar gesto/respiracao/encerramento eprecaucoes comleader2014. Semmaterialaudio, nao interpretar nome igual como mesma edicao oulicenca comercial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://mediacentral.ucl.ac.uk/assoc_files/DBDidc8I.docx?token=BaBjcH6E",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 63,
+  "bodyFile": "../raw/cg03-ucl-stretch-transcricao-docx.docx",
+  "sha256": "1c13c97380ffbb36c6289aeec2ca37519bf846d77c0039ab6c6d1f679487e6ed",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "n18r-army-fm2012-manual",
+  "url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/pdf/web/ARN7938_FM%207-22%20INC%20C1%20Final.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:01:25.021855+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Edição histórica distintaFM2012/C1citada na cadeia profissional2013, não espelho doATP2020queexpirou. Conferir capítulo de máquinas e atribuições/terceiros; não importar dose militar.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/pdf/web/ARN7938_FM%207-22%20INC%20C1%20Final.pdf",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1226,
+  "bodyFile": "../raw/n18r-army-fm2012-manual.pdf",
+  "sha256": "614bc559df02bc0926e45ed8d9a5ee3512b44a28d32ece3996ddfb6a5462da43",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

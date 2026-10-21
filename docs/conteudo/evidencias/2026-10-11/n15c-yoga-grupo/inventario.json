@@ -1,0 +1,134 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 2,
+  "http200": 2,
+  "hashedBodies": 2,
+  "usableBodies": 2,
+  "receipts": [
+    {
+      "id": "c15-yoga-grupo2018-xml",
+      "record": "2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/fullTextXML",
+      "status": 200,
+      "bytes": 83694,
+      "sha256": "fa802117027748631dc23bece377ec047722bbcf10ae09e6626151775392d532",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "section1-1534735418795301",
+          "title": "Introduction"
+        },
+        {
+          "id": "section2-1534735418795301",
+          "title": "Methods"
+        },
+        {
+          "id": "section3-1534735418795301",
+          "title": "Intervention"
+        },
+        {
+          "id": "section4-1534735418795301",
+          "title": "Statistics"
+        },
+        {
+          "id": "section5-1534735418795301",
+          "title": "Results"
+        },
+        {
+          "id": "section6-1534735418795301",
+          "title": "Demographics"
+        },
+        {
+          "id": "section7-1534735418795301",
+          "title": "Baseline Symptoms"
+        },
+        {
+          "id": "section8-1534735418795301",
+          "title": "Group Class Effects on Symptom Change: Patient Versus Caregiver"
+        },
+        {
+          "id": "section9-1534735418795301",
+          "title": "Group Class Differences: YLow Versus YHigh"
+        },
+        {
+          "id": "section10-1534735418795301",
+          "title": "Predictors of Continued Attendance"
+        },
+        {
+          "id": "section11-1534735418795301",
+          "title": "Discussion"
+        },
+        {
+          "id": "section12-1534735418795301",
+          "title": "Supplemental Material"
+        }
+      ],
+      "tables": [
+        "table1-1534735418795301",
+        "table2-1534735418795301",
+        "table3-1534735418795301",
+        "table4-1534735418795301"
+      ]
+    },
+    {
+      "id": "c15-yoga-grupo2018-suplementos-zip",
+      "record": "2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-suplementos-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/supplementaryFiles",
+      "status": 200,
+      "bytes": 548716,
+      "sha256": "3bacb2e95264cb273a5f00c765b0d9757eadd4e64c806afe50f146662ea22ab9",
+      "usableForReading": true,
+      "members": [
+        {
+          "name": "10.1177_1534735418795301-table2.gif",
+          "bytes": 14144
+        },
+        {
+          "name": "10.1177_1534735418795301-table3.jpg",
+          "bytes": 360954
+        },
+        {
+          "name": "10.1177_1534735418795301-table4.gif",
+          "bytes": 15324
+        },
+        {
+          "name": "10.1177_1534735418795301-table4.jpg",
+          "bytes": 326997
+        },
+        {
+          "name": "10.1177_1534735418795301-table1.jpg",
+          "bytes": 313598
+        },
+        {
+          "name": "10.1177_1534735418795301-fig1.gif",
+          "bytes": 14981
+        },
+        {
+          "name": "Supplemental_Material_1_Yoga_class_curricula.docx",
+          "bytes": 19943
+        },
+        {
+          "name": "10.1177_1534735418795301-fig1.jpg",
+          "bytes": 292405
+        },
+        {
+          "name": "10.1177_1534735418795301-table2.jpg",
+          "bytes": 321014
+        },
+        {
+          "name": "10.1177_1534735418795301-table3.gif",
+          "bytes": 15766
+        },
+        {
+          "name": "10.1177_1534735418795301-table1.gif",
+          "bytes": 11856
+        }
+      ]
+    }
+  ],
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

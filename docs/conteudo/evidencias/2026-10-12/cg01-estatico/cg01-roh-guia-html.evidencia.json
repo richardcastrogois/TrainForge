@@ -1,0 +1,23 @@
+{
+  "id": "cg01-roh-guia-html",
+  "url": "https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-hip",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T13:49:13.823590+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia hospital ortopedico: comparar postura no degrau/precaucoes.20-30s5reps/osteoartrite nao dose/publicoAtac. Return to starting position pertence bridge, nao transferir ao hamstring.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-hip",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 66510,
+  "bodyFile": "../raw/cg01-roh-guia-html.html",
+  "sha256": "5f887983548a7a963e3e502b54e51396830b4b6d3e8c690339659444e55514a4"
+}

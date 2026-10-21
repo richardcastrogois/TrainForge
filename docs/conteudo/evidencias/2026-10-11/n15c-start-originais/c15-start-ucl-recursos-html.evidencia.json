@@ -1,0 +1,24 @@
+{
+  "id": "c15-start-ucl-recursos-html",
+  "url": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-resources",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:35:42.603620+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Origem institucional atual, recursos e requisitos de acesso. Nao preencherformulario/contactar nem presumir gratis significa reusocomercial ou instrucoesCD recebidas.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-resources",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5978,
+  "bodyFile": "../raw/c15-start-ucl-recursos-html.html",
+  "sha256": "29ea2a0169d80881754691cff2c77228b50524da6fee3fa818d2238e7a1f9224",
+  "error": "HTTP 403"
+}

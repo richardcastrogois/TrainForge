@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-07",
+  "scope":"N15-C: candidatos dirigidos ao proprio cuidador, novas familias somente apos leitura. EuropePMC deposito publico independente, nao retry/circunvencao de recaptchaPMC; VAmanual referencia profissional, nao combinar com outro estudo para criar rotina.",
+  "requests":[
+    {"id":"c15-pmr-paliativo2025-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML","accept":"application/xml","extension":"xml","purpose":"PrimeiroJATS ensaioPMR28sessoes/4semanas cuidador paliativo, verificar resultados/instrucoes/qualificacao/licenca/ativos essenciais e localizar suplementos originais."},
+    {"id":"c15-hives2021-aerobico-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7880222/fullTextXML","accept":"application/xml","extension":"xml","purpose":"PrimeiroJATS analise clinica exercicio aerobico de familiares cuidadores: dose real, progressao/ensino/seguranca e dependencia de manual."},
+    {"id":"c15-va-walking-facilitator-pdf","url":"https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf","accept":"application/pdf","extension":"pdf","purpose":"ManualVA39paginas publicado; modulo CaregiverWalking, autoria/condicoes/limites de evidencia e direitos por ativo, nao programa clinico universal presumido."},
+    {"id":"c15-va-walking-pagina","url":"https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp","extension":"html","purpose":"URLinstitucional explicitamente publicada PDF: localizar materiais do participante/cuidador, origem/versao2023 e direitos, sem contato com autores."}
+  ]
+}

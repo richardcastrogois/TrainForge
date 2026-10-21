@@ -1,0 +1,24 @@
+{
+  "id": "c15-nagamatsu2012-antecedente-pdf",
+  "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/110/0/110_1/_pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:49:38.468382+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Antecedente2012 citado pelo artigo2015: verificar identidade explicita de sequencia/cadencia; oito mulheres nao cuidadores nem novo ensaio comprovatorio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/110/0/110_1/_pdf",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1001943,
+  "bodyFile": "../raw/c15-nagamatsu2012-antecedente-pdf.pdf",
+  "sha256": "8b8adfeacc036806a92d933c3730ea44980160e5a5751f040122d4593e504e6e",
+  "bodyFormatMatchesRequest": true
+}

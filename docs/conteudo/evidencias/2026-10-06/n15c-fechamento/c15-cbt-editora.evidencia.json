@@ -1,0 +1,23 @@
+{
+  "id": "c15-cbt-editora",
+  "url": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-06T03:27:40.482850+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Editora primaria: autoria, DOI, licenca e errata do manual2024; nao confundir psicoterapia profissional com treino autonomo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 42740,
+  "bodyFile": "../raw/c15-cbt-editora.html",
+  "sha256": "76da9c4f12c91c38b9377870e52eda83433921891f129e06edacce7ea91f8c63"
+}

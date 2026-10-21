@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-04", "niche": "N15-I",
+  "requests": [
+    {"id": "i15-snacking-2019-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Deposito original identificado por DOI no JSON publico; verificar programa domestico autonomo de 2019, licenca e suplemento sem misturar 2026."},
+    {"id": "i15-snacking-2019-zip", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/supplementaryFiles", "extension": "zip", "accept": "application/zip", "purpose": "Suplementos da edicao 2019, referencia HAS_SUPPL no deposito identificado; primeiro GET desta representacao publica, teto 2 MiB."},
+    {"id": "i15-yoga-online-zip", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/supplementaryFiles", "extension": "zip", "accept": "application/zip", "purpose": "Appendix 1 Summary of online yoga sessions observado no XML; conferir se resumo oferece instrucao/dose ou so calendario."},
+    {"id": "i15-academia-instabilidade-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7018952/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Triagem de instrucao original de musculacao para idosos recebida por busca publica, com supervisao e familia de estudo distintas de app aprovado."},
+    {"id": "i15-academia-marcha-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6400996/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Conferir protocolo e anexos do mesmo ensaio de academia, sem contar artigo associado como novo programa independente."}
+  ]
+}

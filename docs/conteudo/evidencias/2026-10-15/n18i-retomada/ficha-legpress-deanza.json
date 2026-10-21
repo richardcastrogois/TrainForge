@@ -1,0 +1,73 @@
+{
+  "id": "N18-DEANZA-LEG-PRESS",
+  "date": "2026-10-16",
+  "sourceId": "PR244",
+  "researchFactSheetOnly": true,
+  "prescribedRoutine": false,
+  "sourceReceipt": "n18r-deanza-lab42.evidencia.json",
+  "authorEvidenceReceipt": "n18r-deanza-authors-book.evidencia.json",
+  "locators": [
+    "Lower Body Strength: Leg Press / Preparation",
+    "Caution",
+    "Copyright/licence footer",
+    "About the Authors / Danielle Altman"
+  ],
+  "authorship": {
+    "names": [
+      "Danielle Altman",
+      "Rusty Johnson",
+      "Cheryl Owiesny"
+    ],
+    "qualifiedCoauthor": "Danielle Altman — mestradoEducationandKinesiology,docênciaEducaçãoFísica; conforme biografia do livro recebida200.",
+    "individualCommandAuthorNotSeparated": true
+  },
+  "variant": "Leg press em máquina com assento/encosto, plataforma e apoios. Fonte admite sentado ou deitado; não é instrução de segurança de todo modelo45°/pneumático/praça.",
+  "preparationFacts": [
+    "Ajustar apoio para cabeça, costas e nádegas; alcançar as pegas.",
+    "Pés apoiados na plataforma à largura dos ombros, joelhos confortavelmente flexionados e alinhados aos pés."
+  ],
+  "executionFacts": [
+    "Estender pernas sem travar os joelhos; retornar devagar e com controle.",
+    "Manter cabeça e costas estáveis; fonte indica4–5s por repetição."
+  ],
+  "trainingPrescription": {
+    "sets": null,
+    "repetitions": null,
+    "interSetSeconds": null,
+    "weeklyFrequency": null,
+    "load": null,
+    "progression": null
+  },
+  "notImported": "Uma série leve de10repetições é preparação do laboratório de teste, não rotina principal; teste1RM, incrementos, equação e classificações não adotados para iniciantes. O próprio laboratório desaconselha1RMsem experiência.",
+  "compatibilityWithWalker": {
+    "source": "../../2026-10-04/n18i-academia/amostra-walker-tabela.json",
+    "candidateRow": "I18-W001",
+    "sourceDose": "3séries14–16,40–60%1RM,2:2,60s; fase1–2doestudo, com observação constante de instrutores.",
+    "relationship": "Só possibilidade de composição; não combinação aprovada nem continuação do ciclo porIA. Walker não informa modelo/regulagem; nomeigual e duração4s não comprovam equivalência. Falha momentânea incentivada no programa não foi apagada.",
+    "instructionSourceIsOlderTrial": false,
+    "compositionApproved": false
+  },
+  "rights": {
+    "text": "CCBY4.0 declarado na página; citar nomes/obra/licença e alterações numa futura adaptação revisada.",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "excluded": [
+      "Tabela5CCBY-NC4.0",
+      "fotos/imagens de terceiros",
+      "testes e fórmula",
+      "logo/identidade do livro"
+    ],
+    "commercialPathIdentifiedForText": true,
+    "finalAdaptationApproved": false
+  },
+  "contexts": {
+    "olderGym": "Candidato de instrução técnica geral; seleção/compatibilidade idoso iniciante ainda não concluída.",
+    "olderHome": "Não assumido que possua máquina/apoio.",
+    "olderPark": "Não é aparelho de praça.",
+    "caregiverOwnHome": "Não é programa específico para o cuidador, nem treino do assistido."
+  },
+  "remaining": [
+    "Selecionar variante e fonte de dose com compatibilidade demonstrável.",
+    "Rever instrução/adaptação e apoio profissional antes de prática; nenhum serviço foi contratado."
+  ],
+  "releaseApproved": false
+}

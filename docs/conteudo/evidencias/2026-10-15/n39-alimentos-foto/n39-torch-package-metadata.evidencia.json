@@ -1,0 +1,23 @@
+{
+  "id": "n39-torch-package-metadata",
+  "url": "https://pypi.org/pypi/torch/2.13.0/json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:04:06.825747+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados oficiais da versão atualmente listada na documentação PyTorch; somente consulta de compatibilidade/tamanho/licença para o plano, sem pip install.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pypi.org/pypi/torch/2.13.0/json",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 58732,
+  "bodyFile": "../raw/n39-torch-package-metadata.json",
+  "sha256": "fc66187fd0528fef3b42b03f59936fa28c9116b7ebc37069bce4af225008781a"
+}

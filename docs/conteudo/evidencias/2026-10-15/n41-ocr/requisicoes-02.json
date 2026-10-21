@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n41-domyos-run100",
+      "url": "https://support.decathlon.co.uk/run100",
+      "purpose": "Suporte primário de equipamento específico: conferir unidadeMI/KM selecionável, dados acumulados e de treino distintos. Não copiar programa integrado/mídia nem executar mudança na esteira.",
+      "extension": "html"
+    },
+    {
+      "id": "n41-lifefitness-level-power",
+      "url": "https://support.lifefitness.com/hc/en-us/articles/42862424978583-Life-Fitness-Atmos-Bike-How-to-Use-Constant-or-Adaptive-Power-Workouts-on-Your-SE4-Console",
+      "purpose": "Exemplo primário de modelo/console: level/resistência e alvo de potência em watts distintos; peso digitado do usuário não é carga emkg. Leitura factual, sem imagens, programas ou máquina real.",
+      "extension": "html"
+    }
+  ]
+}

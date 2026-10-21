@@ -1,0 +1,24 @@
+{
+  "id": "n23-gronorun2-pdf",
+  "url": "https://pure.rug.nl/ws/files/2585046/Bredeweg_2010_BMC_Musculoskel_Dis.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:43:31.746927+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF original2010para cotejo visual deTable2 e dados do percurso independente",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://pure.rug.nl/ws/files/2585046/Bredeweg_2010_BMC_Musculoskel_Dis.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 712105,
+  "bodyFile": "../raw/n23-gronorun2-pdf.pdf",
+  "sha256": "36abcd254d3fb9174bc1cc37e36a29c75bccd277a567f13915ac6a4560644d1e",
+  "bodyFormatMatchesRequest": true
+}

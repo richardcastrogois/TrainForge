@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "id": "n39-nutrilens-accuracy",
+      "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/ACCURACY_REPORT.md",
+      "purpose": "Relatório ligado explicitamente no README MIT: conferir classificação fora de Food101, amostra, calibração e erros; avaliação publicada do autor, não execução nossa nem do nateraw.",
+      "extension": "md"
+    },
+    {
+      "id": "n39-nutrilens-performance",
+      "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/PERFORMANCE_REPORT.md",
+      "purpose": "Relatório primário de latência/memória ligado pelo README; não transferir medições ao computador Windows atual.",
+      "extension": "md"
+    },
+    {
+      "id": "n39-nutrilens-vision-truth",
+      "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/vision-truth.json",
+      "purpose": "Anotações textuais apontadas pelo relatório para conferir o que significa aceitação por faixa. Não obter fotos de usuário nem reproduzir sua imagem; rótulos humanos não provam massa pesada.",
+      "extension": "json"
+    }
+  ]
+}

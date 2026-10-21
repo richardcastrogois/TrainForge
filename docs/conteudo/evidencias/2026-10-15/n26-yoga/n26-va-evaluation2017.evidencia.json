@@ -1,0 +1,23 @@
+{
+  "id": "n26-va-evaluation2017",
+  "url": "https://link.springer.com/article/10.1186/s12906-017-1705-4",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:05:03.970099+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Autoria/formação/supervisão e limites da avaliação64veteranos; não ensaio da pausa10min",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s12906-017-1705-4?error=cookies_not_supported&code=efa11680-b5f9-410f-a34d-08385710ff6c",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 397527,
+  "bodyFile": "../raw/n26-va-evaluation2017.html",
+  "sha256": "329d2895f742e4bfab41fc20eeb8ee22efd054b03803c3b65130c4c48f066d55"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "n25-gromisz-faculty",
+  "url": "https://www.awf-bp.edu.pl/uczelnia/wydzial-wfiz/kadra-wfiz/zaklad-plywania/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:41:06.798230+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Perfil institucional primario do coautor e chefia do departamento de natacao; timeout web preservado, nao supor ausencia de qualificacao",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>"
+}

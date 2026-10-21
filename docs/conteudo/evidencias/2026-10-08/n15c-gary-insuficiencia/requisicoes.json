@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C. Primeiras consultas a servicos publicos de artigo/registro, nao retry da paginaPMC que apresentou desafio no leitorweb. Sem captcha bypass, contato ou execucao. Conferir o treino do cuidador, nao o paciente com insuficiencia cardiaca.",
+  "requests":[
+    {"id":"c15-gary-artigo-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6026574/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Interface publica EuropePMC de texto integral; verificar programa original, movimentos, progressao, suporte e direitos. Falha nao vira corpo clinico."},
+    {"id":"c15-gary-erratum-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29708007%20AND%20SRC:MED&format=json&resultType=core","extension":"json","purpose":"Correcao primaria PMID29708007/DOI0733464818775576, financiamento ou alteracao operacional; nao aplicar erratum presumido."},
+    {"id":"c15-gary-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT01188070","extension":"json","purpose":"Registro do estudo maior e documentos publicados; separar amostra127 de insuficiencia cardiaca dos cuidadores de demencia, sem duplicar ensaios ou cointervencoes."}
+  ]
+}

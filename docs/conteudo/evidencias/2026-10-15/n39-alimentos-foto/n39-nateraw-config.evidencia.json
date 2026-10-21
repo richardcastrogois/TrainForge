@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-config",
+  "url": "https://huggingface.co/nateraw/food/resolve/main/config.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:33:22.715745+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Configuração/taxonomia pública soblicença declarada Apache2.0para conferir101classes/arquitetura, não inferência ou licença deimagens doFood101.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/nateraw/food/8991abd49ea01ebf502aeda51d4f12a59c603e01/config.json?%2Fnateraw%2Ffood%2Fresolve%2Fmain%2Fconfig.json=&etag=%22a3ecb2d6476d33e5f994f6457bd005eee95ca37e%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5582,
+  "bodyFile": "../raw/n39-nateraw-config.json",
+  "sha256": "cd32772fee89687d2408c6c98e2b3b61508e2272df4e22c723e7c9ec97380c51"
+}

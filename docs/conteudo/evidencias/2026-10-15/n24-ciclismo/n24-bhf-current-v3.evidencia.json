@@ -1,0 +1,24 @@
+{
+  "id": "n24-bhf-current-v3",
+  "url": "https://www.bhf.org.uk/-/media/files/get-involved/events/london-to-brighton/l2b-training-guide-v3.pdf?hash=E6A6B01B8844015582C457FE038975CA&rev=b5c80c4672cd4ee1aa6eef52d614976e",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:53:45.997511+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Versaov3ligada napaginaprimaria atual;naomesmoPDF25p2026,comparar objetivo/autoria",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.bhf.org.uk/-/media/files/get-involved/events/london-to-brighton/l2b-training-guide-v3.pdf?hash=E6A6B01B8844015582C457FE038975CA&rev=b5c80c4672cd4ee1aa6eef52d614976e",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 4114656,
+  "bodyFile": "../raw/n24-bhf-current-v3.pdf",
+  "sha256": "6e1f07ccde5ba8ceb81e0dca848ea520f1ae7ddf52a6da8eda2a75611d3bebf0",
+  "bodyFormatMatchesRequest": true
+}

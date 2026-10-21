@@ -1,0 +1,23 @@
+{
+  "id": "c15-dpm2024-correcao-html",
+  "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-08-01-213",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T18:04:36.202577+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "DOI10.21926/obm.neurobiol.2401213: correcao de afiliacao, resumo e Tables4-7, amostra30/30 em vez de75/75 inserida por engano. Verificar resultados do cuidador e calendario sem copiar tabelas antigas para outra edicao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.lidsen.com/journals/neurobiology/neurobiology-08-01-213",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 119558,
+  "bodyFile": "../raw/c15-dpm2024-correcao-html.html",
+  "sha256": "a417e1c82f18ae92d2363b8cb0bfbe391ad3ff71bf1ba9aefa445d47953fa120"
+}

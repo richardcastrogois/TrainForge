@@ -1,0 +1,24 @@
+{
+  "id": "c15-sun2025-artigo-pdf",
+  "url": "https://link.springer.com/content/pdf/10.1186/s12912-025-03881-5.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:17:00.314929+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF original com tabelas1-4/fluxograma e direitos. Link observado no artigo recebido, nao outro protocolo ou manual inferido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s12912-025-03881-5.pdf?error=cookies_not_supported&code=c446794b-e636-490c-aa0c-94f89cfa7b08",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1808426,
+  "bodyFile": "../raw/c15-sun2025-artigo-pdf.pdf",
+  "sha256": "60457d0431d164207c8ea361f4ebef4c392f6c9b12c5d9d31f6b61843a091dcc",
+  "bodyFormatMatchesRequest": true
+}

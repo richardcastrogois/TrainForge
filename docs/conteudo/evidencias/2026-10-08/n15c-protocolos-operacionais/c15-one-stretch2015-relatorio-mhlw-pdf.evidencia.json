@@ -1,0 +1,24 @@
+{
+  "id": "c15-one-stretch2015-relatorio-mhlw-pdf",
+  "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai/hojokin/dl/28_14020301-01_So.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:04:56.311730+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Relatorio ministerial com reimpressao do original de 2015: localizar Fig1, dose, cautelas e ensino profissional. A hospedagem governamental nao transfere direitos de terceiros.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai/hojokin/dl/28_14020301-01_So.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 40895897,
+  "bodyFile": "../raw/c15-one-stretch2015-relatorio-mhlw-pdf.pdf",
+  "sha256": "32da315cbf00dd3d8acfa167622ea786313bbd084e4aecf4da5aaa0b6bbcd540",
+  "bodyFormatMatchesRequest": true
+}

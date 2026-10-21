@@ -1,0 +1,25 @@
+{
+  "id": "n22-leslie-plan",
+  "url": "https://walkathome.com/wp-content/uploads/2020/03/FC070110WALKI.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:18:41.212144+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Programa publicado pela criadora; dose/autoria/creditos, nao copiar fotos ou rotinas protegidas",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.walkathome.com/wp-content/uploads/2020/03/FC070110WALKI.pdf",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2663,
+  "bodyFile": "../raw/n22-leslie-plan.pdf",
+  "sha256": "754ea2e73ab8160b79d14b8ef289b0f7743b96d65bf459e6aaf929f609003aa9",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

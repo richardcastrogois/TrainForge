@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-15",
+  "niche": "N29",
+  "receipts": [
+    {
+      "originalEvidenceReceipt": "2026-10-15/n28-mobilidade/n28-nhs-balance.evidencia.json",
+      "originalBodySha256": "ed0feac48c2c9543429fa342e503cc4e89bdcc18cc6f0f86146447859a462849",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-09-26/network/nhs-terms.evidencia.json",
+      "originalBodySha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-09-26/network/nhs-exclusions.evidencia.json",
+      "originalBodySha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "originalBodySha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434",
+      "rechecked": true,
+      "newNetworkCall": false
+    }
+  ],
+  "newNetworkCalls": 0,
+  "newVisualPdfPages": 0,
+  "NHSReviewDate": "2023-11-07",
+  "NHSNextReviewDue": "2026-11-07",
+  "authorship": "NHS institucional, sem profissional individual informado. Otago: A John Campbell MD FRACP e M Clare Robertson PhD, prefácio PDF3, edição ACC2007; qualificações históricas publicadas.",
+  "Otago": {
+    "manual": "IC06,72p, julho2007 conforme registro/edição; não inferir ano pelo timestamp interno2008.",
+    "pagesTextReadThisNiche": [
+      3,
+      5,
+      6,
+      8,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      32,
+      33
+    ],
+    "priorVisualReview": "2026-10-04/n17i-instrucao/leitura-visual-otago.json:36p do apêndice vistas na data anterior, não contadas novamente como vistas nesta N. Tabelas em2026-10-04/n16i-apoios/leitura-licenca-tabelas.json.",
+    "selection": "Referência de programa profissional individualizado, não completar fichas NHS com dose Otago.",
+    "assessment": "História clínica/segurança e testes de força/equilíbrio na visita inicial, demonstração/explicação/observação próxima; selecionar exercício e nível por capacidade, não todo idoso começa no nívelA ou faz todos.",
+    "support": "PDF33: não apoiar em objeto que se mova, como cadeira; usar estrutura estável, salvo instrução específica. Isso é diferente de cadeira para sentar/levantar e do conselho geral NHS.",
+    "graduation": "PDF18 exige observar versão com apoio e confirmar recuperação do equilíbrio por membros inferiores antes de retirar apoio. Não gatilho automático por tempo/idade.",
+    "dose": "Programa integral aproximadamente30min três vezes/semana com dias de descanso e caminhada segura até30min pelo menos2vezes/semana. Cinco minutos de flexibilidade inicial e progressão individual não foram transferidos ao NHS.",
+    "visits": "Texto4–5visitas; semanas1/2/4/8 e6meses, tabela3.1 também12meses. Ligações entre visitas e profissional treinado mantidos; não serviço contratado.",
+    "interruptions": "PDF32 permite dividir exercícios e3oumais respirações profundas entre séries dentro do programa individual prescrito. PDF20/33 pede instrutor antes de retomar após doença. Não dose universal de pausa para NHS ou cuidador.",
+    "eligibility": "Idoso na comunidade que compreende/segue instruções e consegue praticar com segurança sozinho entre visitas, após avaliação. Sem equivalência com institucionalizados frágeis ou pessoas que exigem assistência física.",
+    "rights": "Registro primário lido04/10 liga versão de registro ACC2007/arquivo a CC BY4; HTML local2328B é shell e não é prova da licença. Não estender a versões LLT/Otago-Plus/ativos externos.",
+    "unresolved": "Texto/desenho em pé/sentado em aquecimento, auxiliares B não ilustrados e doses individuais em branco permanecem, conforme auditoria anterior. Este lote não resolve essas lacunas nem reabre N15.",
+    "effect": "Redução35% relatada pelo manual é resultado do programa integral nos ensaios, não benefício das cinco fichas NHS, do app ou de mistura nova."
+  },
+  "NHSRights": "../n28-mobilidade/direitos-e-autoria.json",
+  "releaseApproved": false
+}

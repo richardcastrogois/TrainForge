@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-food101-loader",
+  "url": "https://huggingface.co/datasets/nateraw/food101/resolve/66550ec/food101.py",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:08:06.130020+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Script Apache 2.0 na revisão mostrada pelo blob primário; somente leitura estática. Comparar ordem de classes 16/17 com config sem presumir que a versão atual foi usada no treinamento antigo. Não executar loader nem baixar fotos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/datasets/nateraw/food101/66550ec68d504f095f2abc5efcc81f159b997ba3/food101.py?%2Fdatasets%2Fnateraw%2Ffood101%2Fresolve%2F66550ec%2Ffood101.py=&etag=%22e5c278dad19c4f82f5350995afc482ba583103e4%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5204,
+  "bodyFile": "../raw/n39-nateraw-food101-loader.txt",
+  "sha256": "4777fcdcc0f4824ff5cd16aa2977b1bd155b5c8c0ebf63e47e09852d152d620c"
+}

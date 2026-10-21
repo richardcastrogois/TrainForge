@@ -1,0 +1,198 @@
+{
+  "id": "N19-PERCURSOS-SELECAO-01",
+  "date": "2026-10-16",
+  "niche": "N19-I",
+  "sourceReusedNoNewGet": true,
+  "basis": "../n18i-retomada/pacote-modular-academia.json",
+  "humanProgrammeAlternatives": [
+    {
+      "id": "N19-R01",
+      "source": "CI05/NIH18-AG-4258/PDF43-45/106",
+      "goal": "Forca progressiva e funcao cotidiana em idosos, com inicio leve.",
+      "experience": "Parte de capacidade atual; nao e progressao automatica apos concluirN18.",
+      "publishedOrganization": "PDF106admite exercicios de todos os grupos em dias alternados. PDF43meta2oumais dias porsemana, sem repetir mesmo grupo emdiasconsecutivos.",
+      "sourceDuration": "Sem ciclo fechado de semanas.30min e meta geral do guia, nao tempo dos9componentes juntos.",
+      "components": "N18M01-M09com autoria e contribuicoes separadas, sem impor todos no mesmo dia.",
+      "operationalSelection": "Biblioteca modular selecionada para futura montagem humana/profissional; nao um novo programa clinicamente ensaiado.",
+      "progression": "NIA: aumentar peso na proxima sessao quando2series10-15foremfaceis; magnitude nao publicada; nenhum percentual/kg preenchido.",
+      "support": "NIA recomenda considerar treinador se iniciante; para esta composicao, caminho profissional proposto e conservador, sem fingir que o guia exige supervisao permanente. SpotterUSUpara supino mantido.",
+      "status": "selecionado_pesquisa_modular"
+    },
+    {
+      "id": "N19-R02",
+      "source": "CI05/NIH18-AG-4258/PDF106",
+      "goal": "Mesmo objetivo de forca, com divisao humana superior/inferior para organizacao semanal.",
+      "publishedOrganization": "Exemplo da fonte:superior segunda/quarta/sexta e inferior terca/quinta/sabado. E alternativa, nao seisdias obrigatorios para todoidoso.",
+      "components": "Mesma biblioteca modular; fonte de organizacao e NIA, nao criacao de split porIA.",
+      "progression": "Mesma regra geralNIA; a divisao nao manda aumentar volume ou intensidade.",
+      "status": "alternativa_publicada_documentada_sem_selecao_pessoal"
+    },
+    {
+      "id": "N19-R03",
+      "source": "PR25/Walker2019; leitura-programas.json e tabela112linhas preservadas",
+      "goal": "Resistencia muscular, hipertrofia, forca maxima e potencia, em14semanas.",
+      "population": "66-73previamente sedentarios, avaliacao medica/instrutores continuamente;13completaram/11analise, uma lesao de treino.",
+      "programmeRecord": {
+        "id": "I18-P22",
+        "sourceId": "PR25",
+        "authors": "Walker et al.",
+        "year": 2019,
+        "volumeYear": 2018,
+        "doi": "10.3389/fphys.2018.01933",
+        "record": "i18-walker-forca.evidencia.json",
+        "licenseObserved": "CC BY no proprio artigo editorial",
+        "audience": "16 idosos 66-73 recrutados, antes sedentarios; exame medico, sem condicoes neurologicas/diabetes, medicacao neurotropica ou lesao/incapacidade dos membros inferiores conforme estudo.",
+        "noviceTrainingHistoryExplicit": "Sedentarismo explicitado; nao se afirma nunca ter treinado.",
+        "completedOlderParticipants": 13,
+        "olderAnalyticParticipants": 11,
+        "olderTrainingInjuryReported": true,
+        "setting": "Academia universitaria, instrucao e tecnica constantemente observadas por instrutores qualificados.",
+        "cycleWeeks": 14,
+        "sessionsPerWeek": 2,
+        "sessionsOnNonConsecutiveDays": true,
+        "phaseWeekLabels": [
+          "1-2",
+          "3-5",
+          "6-7",
+          "8-9",
+          "10-12",
+          "13-14"
+        ],
+        "tableProjection": "amostra-walker-tabela.json",
+        "sessionTemplateCount": 12,
+        "movementRowCount": 112,
+        "uniqueMovementCount": 28,
+        "tableCheck": "Toda tabela lida com parser estrutural e conferida por fases/sessoes. Contexto editorial de grupo nao preenche automaticamente celulas de dose vazias.",
+        "phasePath": [
+          "resistencia muscular",
+          "hipertrofia",
+          "hipertrofia",
+          "forca maxima",
+          "forca maxima/potencia",
+          "potencia"
+        ],
+        "initialLegPress": {
+          "sets": 3,
+          "reps": "14-16",
+          "percent1RM": "40-60%",
+          "tempoConcentricEccentricSeconds": "2:2",
+          "interSetRestSeconds": 60
+        },
+        "lateChanges": "Fases posteriores incluem Smith, pesos livres, saltos e exercicios de potencia. Nao recortar primeiras semanas nem remover saltos e apresentar como programa humano alternativo.",
+        "programmeSessionMinutes": null,
+        "completeWarmupInstructions": null,
+        "machineModels": null,
+        "completeExerciseInstructionManual": null,
+        "protocolDistinction": "Dinamometro/EMG/contracoes isometricas de avaliacao nao sao os exercicios do programa e nao requerem ser reproduzidos no app.",
+        "decision": "Candidato humano para idosos antes sedentarios em academia supervisionada. Ciclo/tabela recebidos; instrucao tecnica/ativos/modelos essenciais ainda pendentes. Nao certificar seguranca universal, nao omitir lesao."
+      },
+      "status": "referencia_comparada_nao_selecionada_para_execucao_integral",
+      "reason": "Instrucoes/modelos/warmup de todo ciclo ainda insuficientes; nova biblioteca nao vira replica. Nao herdar falha, saltos, percentuais ou efeitos."
+    },
+    {
+      "id": "N19-R04",
+      "source": "PR24/Jofre-Saldia2023; leitura-programas.json preservada",
+      "goal": "Programa multicomponente de27semanas/funcao/equilibrio/marcha/forca, fases e blocos distintos.",
+      "programmeRecord": {
+        "id": "I18-P21",
+        "sourceId": "PR24",
+        "authors": "Jofre-Saldia et al.",
+        "year": 2023,
+        "doi": "10.3390/ijerph20032755",
+        "record": "i18-mptp-artigo.evidencia.json",
+        "pdfPhysicalPages": 25,
+        "articlePages": 24,
+        "licenseObserved": "CC BY 4.0 no PDF editorial primario",
+        "thirdPartyRepositoryLicenseDiffers": "USS indica CC BY-NC; nao usado como prova de licenca do PDF editorial.",
+        "audience": "60-80 anos, residentes na comunidade, deslocamento sem assistencia pessoal/tecnica e exclusoes clinicas declaradas.",
+        "noviceTrainingHistoryExplicit": false,
+        "autonomousDeliveryDemonstrated": false,
+        "setting": "Centro de intervencao equipado com maquinas; caminhada interna em sala 20 x 10 m. Nao aparelhos de praca.",
+        "cycleWeeks": 27,
+        "sessionsPerWeek": 2,
+        "sessionsOnNonConsecutiveDays": true,
+        "groupSize": "10-15",
+        "phaseWeeks": [
+          [
+            1,
+            9
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            19,
+            27
+          ]
+        ],
+        "blockWeeks": 3,
+        "blocksPerPhase": 3,
+        "phaseSessionMinutesApprox": [
+          45,
+          50,
+          60
+        ],
+        "warmupMinutesEach": 10,
+        "cooldownMinutesEach": 10,
+        "strengthReassessment": "Teste 10RM por exercicio a cada seis sessoes; cargas individualizadas, nao serie ate falha.",
+        "equipment": [
+          "chest press",
+          "leg extension",
+          "rowing",
+          "leg press",
+          "triceps pull",
+          "faixa elastica",
+          "cadeira",
+          "bosu",
+          "minitramp",
+          "balao",
+          "cones/linha demarcada"
+        ],
+        "phasePath": [
+          "adaptacao neuromuscular",
+          "potencia",
+          "resistencia muscular",
+          "marcha estatica",
+          "marcha dinamica",
+          "marcha multidirecional",
+          "equilibrio/flexibilidade estaticos",
+          "equilibrio/flexibilidade dinamicos",
+          "dupla tarefa"
+        ],
+        "tableReview": "Tabela 2, fisicas 7/8, extraida e inspecionada visualmente. Na continuacao reaparece cabecalho Phase 1 antes de Phase 3; nao criar quarta fase ou reiniciar ciclo.",
+        "notationIssues": [
+          "Tabela I:75%MR, texto 70-75%1RM e avaliacao 10RM; preservar notacoes, nao converter em kg sem autor/profissional.",
+          "R:6(10),5(10),10(12),4(10),7(10) ficam literais; nao decidir significado de parenteses por palpite.",
+          "S:4/R:15 segundos no bloco de equilibrio nao vira 15 repeticoes.",
+          "Borg/RPE 6-8 sem escala operacional claramente delimitada nao vira zona individual.",
+          "Aquecimento/desaceleracao nao trazem instrucoes completas de todos os movimentos.",
+          "Historia de treino inicial nao explicita iniciante completo; titulo nao basta."
+        ],
+        "studyIssues": [
+          "102 sujeitos inicialmente e 55 ao final; nao afirmar apenas 55 recrutados.",
+          "Titulo apresenta randomized clinical trial e discussao descreve quasi-experimental; divergencia preservada.",
+          "Autonomia sem auxiliar e exclusoes da amostra nao equivalem a criterio diagnostico universal do app."
+        ],
+        "decision": "Referencia humana de percurso funcional com equipamento; nao programa iniciante operacional selecionado enquanto instrucao/notacoes/elegibilidade nao fechadas."
+      },
+      "status": "referencia_comparada_nao_selecionada_para_execucao_integral",
+      "reason": "Notacoes e comandos ainda incompletos; sem resolver parentesesporpalpite ou importar a falhaWalker."
+    }
+  ],
+  "selectionRules": [
+    "Objetivo, capacidade, experiencia, material e apoio pertencem a propria pessoa; idade isolada ou rotina concluida nao escolhe outro percurso.",
+    "Uma alternativa semanal NIA nao e um segundo ensaio nem programa de hipertrofia. G01compara objetivos humanosWalker/MPTP; a oferta documental selecionada agora e a rotaNIAmodular.",
+    "RotasR03/R04continuam com lacunas explicitadas, fora do lote selecionado; o fechamento nao afirma obtencao de todas as periodizacoes existentes.",
+    "O autor dispensa programa integral; o gate do percurso selecionado resolve-se pelo conjuntoN18econtribuicoesNIA, sem reconstruir artigos nem doseporIA.",
+    "Nao assumir recursos/academia para casa ou praca. Cuidador exerce para si apenas no proprio recorte; N15permanecepausada."
+  ],
+  "researchClosed": true,
+  "newAiPeriodizationCreated": false,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "releaseGates": [
+    "Revisao profissional humana da futura sessao/composicao e localizacao; verificar elegibilidade, equipamento e acompanhamento reais.",
+    "Nenhum segundo de descanso/incremento de carga/custo de profissional preenchido porIA; caminho gratuito refere-se ao conteudo textual."
+  ]
+}

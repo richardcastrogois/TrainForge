@@ -1,0 +1,23 @@
+{
+  "id": "n37-hc-read-data",
+  "url": "https://developer.android.com/health-and-fitness/health-connect/read-data",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:25:32.815484+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentação técnica pública HealthConnect. ContentLicense consultada permite reuso sobApache2.0salvoexceções, marcas/externos separados. Preservar versão/instruções para pesquisa, semcopiarcódigo/instalarSDK/aplicativo ou coletardadosde saúde.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developer.android.com/health-and-fitness/health-connect/read-data",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 345750,
+  "bodyFile": "../raw/n37-hc-read-data.html",
+  "sha256": "02628892b75ee23c76e006b2e9ab03531224d9b67afa812dfe7638eb19108835"
+}

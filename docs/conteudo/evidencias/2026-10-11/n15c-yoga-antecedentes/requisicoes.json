@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-11","scope":"Somente N15-C, primeiros GETs apos deduplicacao de recibos. Antecedentes independentes, nao fundir programa2012/2013/2020. EuropePMC API publica distinta; nenhum desafio PMC resolvido/retry/login/contato ou copia privada.",
+  "requests":[
+    {"id":"c15-jagannathan2012-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3276932/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Original de desenvolvimento/viabilidade necessidades cuidador, verificar tabela operacional e direitos, nao eficacia por titulo."},
+    {"id":"c15-varambally2013-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23466111%20AND%20SRC:MED&format=json&resultType=core","accept":"application/json,text/html,text/plain","extension":"json","purpose":"Registro primario com abstract/acesso/links, nao texto completo ou manual presumido. Distinguir treino supervisionado do selfhelp2020."}
+  ]
+}

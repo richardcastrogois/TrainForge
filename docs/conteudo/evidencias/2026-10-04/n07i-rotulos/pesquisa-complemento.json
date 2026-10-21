@@ -1,0 +1,62 @@
+{
+  "niche": "N07-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Complemento didatico de leitura acessivel de rotulos por idosos e cuidadores. Reaproveita 12 licoes gerais e exemplos ficticios, sem OCR, metas individuais ou copiar rotulo americano para Portugal.",
+  "next": "N08-I; N21 permanece retida pelos demais complementos.",
+  "evidence": [
+    {"record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json", "anchors": ["Serving size is not a recommendation", "% Daily Value"], "role": "Guia humano dirigido a adultos mais velhos; contexto americano explicitamente separado."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a06-wai-imagens.evidencia.json", "anchors": ["text alternatives"], "role": "Texto verificavel acompanha imagem informativa."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a06-wcag22.evidencia.json", "anchors": ["Resize Text", "Use of Color", "Labels or Instructions"], "role": "Requisitos para futura apresentacao e entrada, nao conformidade testada."},
+    {"record": "2026-09-28/n07-rotulos/n07-eu-nutricao.evidencia.json", "anchors": ["100"], "role": "Base europeia anteriormente recebida; nao substituida por %DV americano."}
+  ],
+  "dependencies": [
+    "2026-09-28/n07-rotulos/conteudo-didatico.json",
+    "2026-09-28/n07-rotulos/validacao-rotulos.json",
+    "2026-09-28/n07-rotulos/resumo-rotulos.json",
+    "2026-10-04/n06i-imagens/pesquisa-complemento.json",
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json"
+  ],
+  "sourceFacts": [
+    "A FDA ensina adultos mais velhos a distinguir porcao da embalagem de quantidade recomendada e a comparar na mesma base.",
+    "A referencia energetica e %DV do guia americano nao sao metas individuais nem convencoes legais automaticamente aplicaveis em Portugal.",
+    "A amostra anterior europeia e o texto proprio das 12 licoes continuam a base do percurso pt-PT."
+  ],
+  "operations": [
+    {"id": "I07-O01", "lessonIds": ["L01", "L12"], "decision": "Nome/variante/base legiveis em texto real; foto pode ampliar mas ausencia nao autoriza preenchimento. Indicar origem e idioma."},
+    {"id": "I07-O02", "lessonIds": ["L02", "L05", "L11"], "decision": "Conservar 100 g/100 ml, unidade e estado em cada comparacao; nao converter massa/volume ou cru/cozido sem evidencia."},
+    {"id": "I07-O03", "lessonIds": ["L03", "L04"], "decision": "Mostrar etapas da aritmetica e distinguir embalagem, porcao declarada, servido e consumido; registo por pessoa/origem."},
+    {"id": "I07-O04", "lessonIds": ["L06", "L07", "L08"], "decision": "Hierarquia textual para 'dos quais' e avisos separados; nunca depender apenas de cor, negrito ou foto para alergenios."},
+    {"id": "I07-O05", "lessonIds": ["L09"], "decision": "Referencia do rotulo nao cria meta de calorias, proteina, sodio ou suplemento por idade; %DV americano nao vira referencia portuguesa."},
+    {"id": "I07-O06", "lessonIds": ["L10"], "decision": "Conservar significado de datas e armazenamento do percurso anterior; acompanhante nao ganha permissao automatica para alimentos vencidos."},
+    {"id": "I07-O07", "lessonIds": [], "decision": "Ritmo escolhido pela pessoa, exemplos em passos curtos, sem tempo obrigatorio; fala/screen reader deverao preservar numero, unidade e pessoa."}
+  ],
+  "didacticExamples": [
+    {"id": "I07-E01", "fictional": true, "previousExampleId": "A", "basis": "200 kcal por 100 g", "packageG": 300, "labelServingG": 30, "knownConsumedG": 45, "resultKcal": 90, "decision": "Exercicio aritmetico original, nao alimento real ou porcao aconselhada para idosos."},
+    {"id": "I07-E02", "fictional": true, "previousExampleId": "A", "servedG": 45, "knownConsumedG": null, "resultKcal": null, "decision": "Cuidador serviu, nao observou consumo: nao atribuir 90 kcal a pessoa assistida."},
+    {"id": "I07-E03", "fictional": true, "previousExampleId": "B", "basis": "42 kcal por 100 ml", "knownConsumedMl": 250, "resultKcal": 105, "decision": "Volume informado, nao inferido da foto; nao prescreve ingestao de liquidos."}
+  ],
+  "rightsDecision": "Referencias factuais com redacao/exemplos proprios; nao copiar fotos, arte de rotulo FDA, tabelas integrais, marcas ou afirmar endosso. Creditos de fotos eventualmente escolhidas continuam por ativo N06.",
+  "researchClosureCriteria": [
+    {"id": "I07-G01", "met": true, "criterion": "Guia institucional humano dirigido a idosos recebido e distinguido de norma portuguesa."},
+    {"id": "I07-G02", "met": true, "criterion": "As 12 licoes existentes mapeadas para requisitos acessiveis e identidade/papel do registo."},
+    {"id": "I07-G03", "met": true, "criterion": "Exemplos com base/unidade/quantidade e consumo desconhecido documentados sem inventar porcao individual."},
+    {"id": "I07-G04", "met": true, "criterion": "Uso factual e exemplos proprios sem importar novos ativos/licenca presumida."},
+    {"id": "I07-G05", "met": true, "criterion": "Limites clinicos, legais, editoriais e testes reais separados do fechamento do recorte didatico."}
+  ],
+  "scenarios": [
+    {"id": "I07-S01", "fictional": true, "case": "Cuidador e assistido compartilham produto", "expected": "Consumo e preferencias registrados separadamente, sem duplicacao."},
+    {"id": "I07-S02", "fictional": true, "case": "Pessoa usa ampliacao ou leitor de tela", "expected": "Texto preserva produto, numero, unidade e base; ainda exige teste real futuro."},
+    {"id": "I07-S03", "fictional": true, "case": "Guia FDA informa %DV e 2.000 kcal", "expected": "Nao converter em meta individual nem substituir convencoes UE/PT."},
+    {"id": "I07-S04", "fictional": true, "case": "Rotulo e fonte digital divergem", "expected": "Conservar fonte/correcao e conflito; nao confirmar adequacao clinica automaticamente."}
+  ],
+  "limits": [
+    "Sem dieta, classificacao por objetivo, OCR validado, recomendacao de porcao, inferencia de interacao com medicamentos ou dosagem.",
+    "Sem revisao independente pt-PT, verificacao integral das excecoes legais por produto ou teste com usuarios.",
+    "Rascunho editorial proprio assistido por agente, baseado em guias humanos; nao novo guia assinado por profissional.",
+    "WCAG nao certifica a interface Flutter ausente; medicao de contraste/alvos/leitor de tela e compreensao continuam gates futuros."
+  ]
+}

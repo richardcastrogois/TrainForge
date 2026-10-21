@@ -1,0 +1,21 @@
+{
+  "id": "n16-growing-stronger",
+  "url": "https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:27:32.710295+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Preservar localmente manual humano de casa com pesos, fases e progressao; direitos Tufts/CDC ja condicionais.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 512773,
+  "bodyFile": "../raw/n16-growing-stronger.pdf",
+  "sha256": "83c1bd5cb8eadb58bc8617bca0fd57572664c94956207679fc85f3c051e2ca43"
+}

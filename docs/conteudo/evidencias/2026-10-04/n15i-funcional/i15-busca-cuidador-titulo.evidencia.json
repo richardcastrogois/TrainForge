@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-cuidador-titulo",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20exercise%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=12",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:51:02.124046+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Refinar a consulta publica por titulo para treino proprio de cuidadores, nao apoio ao treino do assistido. Doze resultados, classificar desenho, licenca e material disponivel antes de selecionar.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20exercise%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=12",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 88655,
+  "bodyFile": "../raw/i15-busca-cuidador-titulo.json",
+  "sha256": "6d9c6bc9699425152964e97fd599762be3ffabadb2af6a8224b8d103653bdcc6"
+}

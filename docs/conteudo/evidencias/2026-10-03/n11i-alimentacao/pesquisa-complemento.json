@@ -1,0 +1,155 @@
+{
+  "niche": "N11-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Educacao alimentar humana no envelhecimento com apoio organizacional do cuidador; nao dieta, textura, suplemento ou meta individual.",
+  "next": "N18",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "anchors": [
+        "Health Tips for Older Adults",
+        "Plan meals and snacks ahead",
+        "chew or swallow",
+        "food diary"
+      ],
+      "role": "Guia humano de educacao e limites; nao roteiro para demencia/disfagia nem dieta individual"
+    },
+    {
+      "record": "2026-10-02/n11-manutencao-habitos/n11-niddk-copyright.evidencia.json",
+      "anchors": [
+        "copyright free",
+        "third party",
+        "endorsement",
+        "May 2024"
+      ],
+      "role": "Politica recebida; texto candidato, excecoes graficas/logos e vedacao de endosso preservadas"
+    },
+    {
+      "record": "2026-10-03/revisao-idosos-cuidadores/ic-cdc-caregivers.evidencia.json",
+      "anchors": [
+        "current physical ability",
+        "caregivers"
+      ],
+      "role": "Distinguir papel do cuidador e profissional"
+    }
+  ],
+  "dependencies": [
+    "2026-10-02/n11-manutencao-habitos/conteudo-guiado.json",
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json"
+  ],
+  "sourceFacts": [
+    "O guia aborda variedade, planeamento de refeicoes, orcamento e companhia.",
+    "Quantidades dependem de contexto individual; o guia nao fornece dieta de pessoa assistida.",
+    "Diario alimentar pode apoiar conversa com profissional.",
+    "Dificuldade de mastigar/engolir e efeitos percebidos de medicamentos sao assuntos para profissional.",
+    "Suplementacao nao e autorizada automaticamente pelo envelhecimento."
+  ],
+  "operations": [
+    {
+      "id": "I11-O01",
+      "name": "variedade_e_preferencias",
+      "decision": "Rascunho editorial: organizar escolhas declaradas, acesso/preparo e alergias conhecidas; nao classificar adequacao clinica.",
+      "sourceSection": "Healthy Eating"
+    },
+    {
+      "id": "I11-O02",
+      "name": "planeamento_com_autonomia",
+      "decision": "Apoio do cuidador a compras/preparo conforme preferencias e ambito legitimo; lista nao equivale a consumo.",
+      "sourceSection": "How can I follow a healthy eating plan?"
+    },
+    {
+      "id": "I11-O03",
+      "name": "liquidos_sem_meta_padrao",
+      "decision": "Registar oferta e consumo conhecido; nao emitir volume universal, lembrete que contrarie restricao profissional ou punicao por nao cumprir.",
+      "sourceSection": "Health tips"
+    },
+    {
+      "id": "I11-O04",
+      "name": "barreiras_sem_diagnostico",
+      "decision": "Documentar relato/origem para consulta; nao inferir disfagia, demencia ou causa farmacologica, nem ensinar espesamento/tecnica de alimentacao.",
+      "sourceSection": "Talk to your health care professional if you have health concerns"
+    },
+    {
+      "id": "I11-O05",
+      "name": "sem_suplemento_automatico",
+      "decision": "Nao transformar mencao de vitaminas ou fonte de proteina em dose/suplemento prescrito.",
+      "sourceSection": "Vitamins and minerals for older adults"
+    },
+    {
+      "id": "I11-O06",
+      "name": "diario_acompanhado",
+      "decision": "Separar planeado/servido/consumido/ausente e pessoa/autor, conforme N14-C; compartilhar somente por ambito e legitimidade a validar.",
+      "sourceSection": "Keeping track of your eating habits"
+    },
+    {
+      "id": "I11-O07",
+      "name": "percurso_do_cuidador",
+      "decision": "Necessidades/rotina alimentar do cuidador sao pessoais; nao duplicar consumo ou metas na pessoa assistida.",
+      "sourceSection": null,
+      "origin": "Requisito do produto, nao regra extraida do guia"
+    }
+  ],
+  "individualTargets": {
+    "energyKcal": null,
+    "proteinG": null,
+    "waterMl": null,
+    "weightLossGoal": null,
+    "supplements": null,
+    "foodTexture": null
+  },
+  "scenarios": [
+    {
+      "id": "I11-S01",
+      "fictional": true,
+      "case": "Cuidador serviu mas nao observou",
+      "expected": "Consumo desconhecido; nao completar calorias."
+    },
+    {
+      "id": "I11-S02",
+      "fictional": true,
+      "case": "Idoso tem restricao profissional de liquidos",
+      "expected": "Nao aplicar lembrete/meta generica do app."
+    },
+    {
+      "id": "I11-S03",
+      "fictional": true,
+      "case": "Pessoa relata dificuldade de engolir",
+      "expected": "Nao escolher consistencia ou espesante; percurso profissional especifico pendente."
+    },
+    {
+      "id": "I11-S04",
+      "fictional": true,
+      "case": "Objetivo de emagrecimento escolhido pelo cuidador",
+      "expected": "Nao impor objetivo a pessoa; legitimidade e adequacao individual pendentes."
+    },
+    {
+      "id": "I11-S05",
+      "fictional": true,
+      "case": "Guia menciona vitaminas",
+      "expected": "Nao prescrever suplemento ou dose."
+    },
+    {
+      "id": "I11-S06",
+      "fictional": true,
+      "case": "Cuidador come a mesma receita",
+      "expected": "Refeicao e consumo de cada pessoa separados."
+    },
+    {
+      "id": "I11-S07",
+      "fictional": true,
+      "case": "Dois registos diferem",
+      "expected": "Preservar origem/correcao e conflito, nao escolher silenciosamente o ultimo."
+    }
+  ],
+  "limits": [
+    "Guia geral nao cobre alimentacao fisicamente assistida, disfagia, demencia ou desnutricao como programas completos.",
+    "Localizacao nutricional/pt-PT e politica de encaminhamento portuguesas pendentes.",
+    "Nenhuma meta BMI/calorias/sodio/agua do guia foi aplicada como regra automatica do produto.",
+    "Politica NIDDK nao aprova fotos/logos/terceiros nem endosso comercial.",
+    "Paginas NIA com barreira/falha web nao foram contornadas ou contadas como evidencias locais.",
+    "Rascunhos e cenarios ficticios nao sao testes de app, pessoas ou eficacia."
+  ]
+}

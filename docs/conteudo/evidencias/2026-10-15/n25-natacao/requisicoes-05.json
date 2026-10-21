@@ -1,0 +1,10 @@
+{
+  "requests": [
+    {
+      "id": "n25-eisenhardt-epmc-metadata",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40891015%20AND%20SRC:MED&format=json&resultType=core",
+      "purpose": "Registro primário de indexação por PubMedID explicitado pela universidade; verificar se existe distribuição aberta independente e suplemento, sem repetir403 do editor/repositório",
+      "extension": "json"
+    }
+  ]
+}

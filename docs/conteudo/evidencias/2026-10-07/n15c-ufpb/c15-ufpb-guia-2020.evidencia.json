@@ -1,0 +1,25 @@
+{
+  "id": "c15-ufpb-guia-2020",
+  "url": "https://www.ufpb.br/ipe/contents/menu/produtos-do-mestrado-em-gerontologia/guia-para-a-promocao-da-saude-dos-cuidadores-de-idosos.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:25:41.022728+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Guia profissional40p, instrucao/dose/contexto/direitos da edicao2020, sem transferir licenca da dissertacao2018.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.ufpb.br/ipe/contents/menu/produtos-do-mestrado-em-gerontologia/guia-para-a-promocao-da-saude-dos-cuidadores-de-idosos.pdf",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 137078,
+  "bodyFile": "../raw/c15-ufpb-guia-2020.pdf",
+  "sha256": "cc5941f3fbcf6e2fc7e214bb789e46822e08b50f5292a8a79237888eacb2fa6e",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

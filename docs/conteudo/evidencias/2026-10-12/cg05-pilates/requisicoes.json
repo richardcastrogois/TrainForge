@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-12",
+  "scope": "SomenteCG05/PR136. Primeiros GETs de representacoes publicas independentes: metadados de DOI para descobrir URL editorial publicada semrepetir DOI falho; resumo primario da publicacao psicossomatica da mesma equipe para verificar identidade/coorte, nao nova replicacao ou guia criado porIA. Semcontato/login/compra/formularios/bypass/media.",
+  "requests": [
+    {"id":"cg05-cer-crossref-json","url":"https://api.crossref.org/works/10.2217/cer-2020-0108","extension":"json","purpose":"Metadados deidentidade/editora/links oficiais deprimeira representacao editorial; nao prova clinica, licenca presumida ou retryDOI."},
+    {"id":"cg05-bmr2021-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33935055%20AND%20SRC:MED&format=json&resultType=core","extension":"json","purpose":"Resumo bibliografico primario DOI10.3233/BMR-191649/PMID33935055. Confrontar55cuidadores/fadiga/8semanas/registro e origem; nao assumir novaRCT ou material integral."},
+    {"id":"cg05-cer2021-editor-html","url":"https://becarispublishing.com/doi/10.2217/cer-2020-0108","extension":"html","purpose":"Primeiro GET da representacao editorial primariaURL recebida emCrossref message.resource.primary.URL. Confrontar corpo integral exibido pela busca: preparo2dias,1set10reps/progressoes3/6 e versao do calendario. Nao retry daURLdoi.org anteriormente falha, nao grant comercial presumido peloFreeAccess."},
+    {"id":"cg05-cer2021-editor-pdf","url":"https://becarispublishing.com/doi/pdf/10.2217/cer-2020-0108","extension":"pdf","accept":"application/pdf","purpose":"Primeiro GET normalHTTPS do PDF version-of-record publicado emCrossref message.link[0].URL, representacao distinta doHTML403. Pagina primariaweb mostraFreeAccess; intended-application similarity-checking dosmetadados nao licenca comercial. Semheaders falsificados/TLS bypass/autenticacao/retry; falha nao sera contornada ou tratada como artigo recebido."}
+  ]
+}

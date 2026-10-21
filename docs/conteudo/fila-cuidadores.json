@@ -1,0 +1,214 @@
+{
+  "id": "N15-C-SEQUENCE-01",
+  "date": "2026-10-21",
+  "latestAcquisition": {
+    "date": "2026-10-21",
+    "file": "evidencias/2026-10-21/n15c-composicao/leitura-fontes.json",
+    "collectorAttempts": 7,
+    "http200Bodies": 5,
+    "newSourceFamilies": 3,
+    "cg04InstructionReviewCompleteForSelectedEightVariants": true,
+    "cg04All27VariantsOrAutonomousCourseApproved": false,
+    "newMessagesSent": 0,
+    "priorRequestRepliesObserved": false,
+    "newReuseGrantsReceived": false
+  },
+  "niche": "N15-C",
+  "requestedByUser": true,
+  "focusedUserRequest": "Concluir selecao modular N15 no mesmo criterio das outras Ns, conforme autorizacao21/10; nao exigir todos os cinco programas originais completos.",
+  "currentPhase": "selecao_modular_concluida",
+  "factualSequenceCompletedAt": "2026-10-12",
+  "activeItemFieldsScope": "Fichas factuais historicas preservadas; selecao atual em currentModularSelection.",
+  "orderingUnit": "componente_humano_da_biblioteca_selecionada",
+  "activeItem": null,
+  "activeComponent": null,
+  "nextItem": null,
+  "currentUserFocusCompleted": true,
+  "executionSequence": {
+    "audit": "evidencias/2026-10-21/n15c-composicao/auditoria-fechamento.json",
+    "activeItem": null,
+    "activeQuestion": null,
+    "reviewedOriginalItems": [
+      "CG-01",
+      "CG-02",
+      "CG-03",
+      "CG-04",
+      "CG-05"
+    ],
+    "selectedGroups": [
+      "CG01",
+      "CG04",
+      "CG06"
+    ],
+    "selectedComponents": 11,
+    "closedItemsMeaning": "Recortes escolhidos, nao cinco programas originais executaveis",
+    "remainingSelectedItems": [],
+    "pendingSelectedSourceQuestions": 0,
+    "originalWholePathQuestionsDeclaredAllResolved": false,
+    "allFiveExecutableResearchClosed": false,
+    "selectedLibraryResearchClosed": true,
+    "status": "concluida_pesquisa_modular",
+    "advanceOnlyAfterBothResearchGatesMet": true,
+    "providerAvailabilityAndApkImplementationAreResearchGaps": false,
+    "currentIncrement": "evidencias/2026-10-21/n15c-composicao/estado.json",
+    "next": null
+  },
+  "advanceOnlyAfterPreviousItemClosed": true,
+  "documentationOrTestsAloneCountAsItemClosure": false,
+  "skipIncompleteItemWithoutUserDecision": false,
+  "splitProgrammeIntoIndependentlyProvenTherapies": false,
+  "automaticClosure": false,
+  "items": [
+    {
+      "id": "CG-01",
+      "componentIds": [
+        "CG-01-STATIC"
+      ],
+      "status": "fechado_para_pesquisa_recorte_profissional",
+      "researchItemClosed": true,
+      "closureScope": "Publico original e orientacao profissional, sem autonomia/publicacao",
+      "validation": "6 testes focados passaram; corpos originais e auxiliares selecionados conferidos offline",
+      "releaseApproved": false,
+      "evidence": "evidencias/2026-10-12/cg01-estatico/pacote-factual.json"
+    },
+    {
+      "id": "CG-02",
+      "componentIds": [
+        "CG-02-BENSON"
+      ],
+      "status": "fechado_para_pesquisa_metodo_com_ensino_e_apoio",
+      "researchItemClosed": true,
+      "closureScope": "Ficha factual inteira, publico original/ensino/reforco; nao replica de arquivos nem aprovacao de nova entrega",
+      "releaseApproved": false,
+      "evidence": "evidencias/2026-10-12/cg02-benson/pacote-factual.json",
+      "actualRemaining": null,
+      "publicationRemaining": "Material didatico legal/fiel revisado e ensino/reforco/preparo reais. Nao obtidos arquivosCD/folheto, nao aprovado substituto ou entregaAPK-only."
+    },
+    {
+      "id": "CG-03",
+      "componentIds": [
+        "CG-03-MEADOW",
+        "CG-03-MEDITATION",
+        "CG-03-OCEAN",
+        "CG-03-MOUNTAIN",
+        "CG-03-SIGNAL",
+        "CG-03-FOCUSED",
+        "CG-03-GROUNDING",
+        "CG-03-STRETCH"
+      ],
+      "status": "fechado_para_pesquisa_componentes_vinculados_ao_START",
+      "researchItemClosed": true,
+      "releaseApproved": false,
+      "scope": "Componentes integrantesSTART, nao oito terapias autonomas com eficacia isolada",
+      "closureScope": "Ficha factual dos oito componentes originais com preparo/apoio/contexto e fontes; nao curso integral ou materiais futuros aprovados",
+      "evidence": "evidencias/2026-10-12/cg03-start/pacote-factual.json",
+      "actualRemaining": null,
+      "publicationRemaining": "Materiais legais/fieis e localizacao revisados, lider treinado e supervisao real, preparo conferido antes deuso; manuais/audio nao dispensados. Semresultado clinico isolado."
+    },
+    {
+      "id": "CG-04",
+      "componentIds": [
+        "CG-04-SQUAT",
+        "CG-04-GLUTE_BRIDGE",
+        "CG-04-REVERSE_LUNGE",
+        "CG-04-ARM_RAISE",
+        "CG-04-PULL_APART",
+        "CG-04-BICEPS_CURL",
+        "CG-04-DEAD_BUG",
+        "CG-04-BIRD_DOG",
+        "CG-04-LATERAL_PLANK"
+      ],
+      "status": "fechado_para_pesquisa_programa_profissional_supervisionado",
+      "researchItemClosed": true,
+      "releaseApproved": false,
+      "scope": "Movimentos do programaReViEEW, nao dose/efeito isolados",
+      "closureScope": "Ficha factual do programa profissional ao vivo; nao guia autonomo completo/manutencao emvideo",
+      "evidence": "evidencias/2026-10-12/cg04-revieew/pacote-factual.json",
+      "actualRemaining": null,
+      "publicationRemaining": "Orientacao clara/fiel e aquecimento/retorno revisados porprofissional, supervisao bidirecional real, elegibilidade/material/espaco/seguranca/direitos conferidos. Guia autonomo completo nao recebido, nao preenchido porIA."
+    },
+    {
+      "id": "CG-05",
+      "componentIds": [
+        "CG-05-PHASE1",
+        "CG-05-PHASE2",
+        "CG-05-PHASE3"
+      ],
+      "status": "fechado_para_pesquisa_ficha_profissional_discrepancias_preservadas",
+      "researchItemClosed": true,
+      "releaseApproved": false,
+      "scope": "Fases dePilates, nao exercicios executaveis aprovados",
+      "closureScope": "Ficha profissional factual, nao guia autonomo integral ou calendarioautomatico",
+      "evidence": "evidencias/2026-10-12/cg05-pilates/pacote-factual.json",
+      "actualRemaining": null,
+      "publicationRemaining": "Guia claro/fiel revisado, versao/transicoes de calendario conferidas porprofissional, fisioterapeutaClinicalPilates real e direitos/materiais/seguranca/localizacao. Discrepancias e comandos nao publicados nao preenchidos porIA."
+    }
+  ],
+  "pendingPreference": {
+    "component": "CG-01-STATIC",
+    "questionSent": true,
+    "answerReceived": true,
+    "answer": "Sim, desde que a compatibilidade seja demonstrada e as fontes fiquem separadas.",
+    "subject": "Precaucoes profissionais gerais de outra fonte, separadas do protocoloAtac",
+    "answerAloneAutomaticallyClosesItem": false,
+    "noResponseIsApproval": false,
+    "unaffectedWorkContinues": true
+  },
+  "next": "Pesquisa N15 concluida no recorte modular; entregar consolidado. Sem iniciar app/Figma/banco/publicacao/novos contatos.",
+  "n21Started": false,
+  "appImplemented": false,
+  "status": "concluida_pesquisa_modular",
+  "currentContactPolicy": "Sem novos contatos: pedido posterior do autor. Solicitações já enviadas são registro histórico, não autorização de follow-up.",
+  "resumedAt": "2026-10-21",
+  "executionSequenceBeforeModularReselection": {
+    "audit": "evidencias/2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+    "activeItem": "CG-02",
+    "activeQuestion": "CG02-MATERIAL",
+    "reviewedItems": [
+      "CG-01",
+      "CG-02",
+      "CG-03",
+      "CG-04",
+      "CG-05"
+    ],
+    "closedItems": [
+      "CG-01"
+    ],
+    "remainingItems": [
+      "CG-02",
+      "CG-03",
+      "CG-04",
+      "CG-05"
+    ],
+    "pendingSourceQuestions": 8,
+    "advanceOnlyAfterBothResearchGatesMet": true,
+    "crossCheckingPreviouslyReceivedSourcesIsAdvancingToAnotherNiche": false,
+    "allFiveExecutableResearchClosed": false,
+    "providerAvailabilityAndApkImplementationAreResearchGaps": false,
+    "next": "CG02: material didatico legal/fiel, mantendo seis passos, ensino e reforco; depois manual/audio CG03, guias/partes de sessao CG04, variantes/versao/ativos CG05. Nao repetir autoria/dose ja conferidas.",
+    "status": "em_andamento",
+    "resumePointer": {
+      "item": "CG-02",
+      "question": "CG02-MATERIAL"
+    },
+    "currentIncrement": "evidencias/2026-10-21/n15c-composicao/estado.json"
+  },
+  "currentModularSelection": "evidencias/2026-10-21/n15c-composicao/biblioteca-cuidadores.json",
+  "selectionDecision": "evidencias/2026-10-21/n15c-composicao/decisao-de-recorte.json",
+  "researchClosed": true,
+  "pauseHistory": {
+    "pausedAt": "2026-10-15",
+    "reason": "Autor pediu pausar N15 e comecar N22; nao fechado.",
+    "resumedAt": "2026-10-21"
+  },
+  "acquisitionHistoryBefore20261021": {
+    "file": "evidencias/2026-10-14/n15c-acesso-autorizado/relatorio.md",
+    "cg04PdfReceived": true,
+    "cg04InstructionReviewComplete": false,
+    "contactsAuthorized": true,
+    "gmailSenderDisclosureAuthorized": true,
+    "requestsSent": 3,
+    "responsesOrGrantsReceived": false,
+    "doesNotCloseExecutableItems": true
+  }
+}

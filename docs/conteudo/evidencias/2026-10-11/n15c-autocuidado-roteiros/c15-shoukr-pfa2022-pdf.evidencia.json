@@ -1,0 +1,24 @@
+{
+  "id": "c15-shoukr-pfa2022-pdf",
+  "url": "https://bmcnurs.biomedcentral.com/counter/pdf/10.1186/s12912-022-01049-z.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:41:44.194104+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original publicado publicamente; conferir Table1/rotinas se detalhes raster ausentes do HTML, PDFsem teto autorizado, TLS padrao/semretry.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s12912-022-01049-z.pdf?error=cookies_not_supported&code=83c7c686-1075-40b8-a1ca-56b638968a52",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1535764,
+  "bodyFile": "../raw/c15-shoukr-pfa2022-pdf.pdf",
+  "sha256": "aa5631bbb7a845ada0364a19f12e700f392f25378095a74cfdffecccf720d2dc",
+  "bodyFormatMatchesRequest": true
+}

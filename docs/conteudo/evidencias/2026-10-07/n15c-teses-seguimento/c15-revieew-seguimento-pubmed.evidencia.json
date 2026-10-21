@@ -1,0 +1,24 @@
+{
+  "id": "c15-revieew-seguimento-pubmed",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40561221/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:46:35.891700+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 203,
+  "use": "research_only",
+  "purpose": "Registro primario de seguimento2025 DOI10.1097/JOM.0000000000003474: identificar resultado/ativos da fase autonoma sem considerar resumo como manual integral.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pubmed.ncbi.nlm.nih.gov/40561221/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5590,
+  "bodyFile": "../raw/c15-revieew-seguimento-pubmed.html",
+  "sha256": "2c0e0794b940250849242874cbd5185db0ea2c977267e829f7bdb95e71014a29",
+  "error": "HTTP 203"
+}

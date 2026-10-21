@@ -1,0 +1,24 @@
+{
+  "id": "c15-va-walking-caregiver-pdf",
+  "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:56:53.844307+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia cuidador anunciado: confirmar quem pratica, suporte do cuidado e tempo/condicoes escolhidos pelos autores, nao paciente assistido renomeado como treino proprio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 5620475,
+  "bodyFile": "../raw/c15-va-walking-caregiver-pdf.pdf",
+  "sha256": "87f4fd4692732acd7646150b745a355779c78c0c3b0a80e2df228f76ebe1f4ae",
+  "bodyFormatMatchesRequest": true
+}

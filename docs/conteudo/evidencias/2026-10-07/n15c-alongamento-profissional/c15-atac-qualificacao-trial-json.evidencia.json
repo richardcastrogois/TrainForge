@@ -1,0 +1,23 @@
+{
+  "id": "c15-atac-qualificacao-trial-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:40:43.801938+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario de estudo distinto que atribui explicitamente qualificacaoMScPhysiotherapist a AmineAtac; serve somente credencial, nao acrescentar protocoloCOPD a cuidadores.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 15307,
+  "bodyFile": "../raw/c15-atac-qualificacao-trial-json.json",
+  "sha256": "8010523b681b9c27a10775d4c16a357da6aa069bbf432003601a67e605a40872"
+}

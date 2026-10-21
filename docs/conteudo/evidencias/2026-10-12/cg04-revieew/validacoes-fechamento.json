@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-12",
+  "item": "CG-04",
+  "primarySourceId": "PR68",
+  "researchItemClosed": true,
+  "closureScope": "Ficha factual do programa profissional supervisionado; nao guia autonomo completo de27variantes, manutencao emvideo ou nova entregaAPK",
+  "completeAutonomousExerciseGuidesReceived": false,
+  "researchClosureApprovesPublicationOrNewClinicalDelivery": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "apkTestsRun": false,
+  "clinicalEditorialOrLegalValidationPerformed": false,
+  "focusedTests": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_cg04_revieew.py",
+    "tests": 10,
+    "elapsedSeconds": 0.550,
+    "exitCode": 0,
+    "result": "OK",
+    "runAfterFinalEligibilityClarification": true
+  },
+  "fullDocumentarySuite": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_*.py",
+    "tests": 311,
+    "elapsedSeconds": 68.830,
+    "exitCode": 0,
+    "result": "OK",
+    "followedByFinalFocusedTestsAndMasterRevalidation": true,
+    "fixtureCollectorPrintedCountsAreLiveCg04NetworkCalls": false,
+    "warnings": "Objetos/encodingsPDF antigos e PDF invalido de teste; nenhum teste falhou"
+  },
+  "catalogue": {
+    "command": "python -X utf8 docs/conteudo/consultar-cuidadores.py --write-audit",
+    "exitCode": 0,
+    "items": 5,
+    "mappedFields": 90,
+    "readingFiles": 13,
+    "verifiedPrimaryReceipts": 26,
+    "researchClosedItems": 4,
+    "exerciseOrTechniqueComponentsIndexed": 19,
+    "programmePhasesIndexed": 3,
+    "publishedItems": 0,
+    "networkCalls": 0,
+    "sha256": "7d3c14393553d6194bcb22a3d805e5fc8f12c1cff1166fdd05ae0b9374ba1be0"
+  },
+  "cg04Integrity": {
+    "originalBodiesRevalidated": 10,
+    "receiptBodiesHashed": 11,
+    "newCollectorCalls": 1,
+    "newUsableBodies": 1,
+    "preflightFailureBeforeNetworkCalls": 0,
+    "preflightIncident": "Acceptapplication/json sozinho falhou antes darede; corrigido para valor suportado, uma unica chamadaHTTP real",
+    "offlineAnalysisNetworkCalls": 0,
+    "packageSha256": "2cf13035a250bc0f248c84261cfe3f4449da6a6d800bc30e88401e8950c7b075",
+    "inventorySha256": "a488a964d9e036fcef6490fcfcf7cac1a6242d77a9b3b53252ffac9b52addd5f",
+    "newRegistry": {
+      "id": "NCT05050526",
+      "receipt": "cg04-revieew-registro-json.evidencia.json",
+      "status": 200,
+      "bytes": 16475,
+      "collectedAtUtc": "2026-10-12T21:56:28.757405+00:00",
+      "sha256": "607fc23cf10d434bebb03565fbb1fbdd791bc147b7e1967d52b23c5660ea8b39",
+      "hasResults": false,
+      "hasDocumentSection": false,
+      "newExecutionScriptsReceived": false
+    }
+  },
+  "n15Master": {
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json",
+    "exitCode": 0,
+    "verifiedEvidenceBodies": 248,
+    "verifiedDependencies": 142,
+    "status": "parcial",
+    "sha256": "6f057e10755be759755df21ee2b20a06d303a26232231efe4dafa6dbc2670386",
+    "revalidatedAfterFinalEligibilityClarification": true,
+    "globalNicheClosed": false
+  },
+  "n01N20Queue": {
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-fila-complementos.py",
+    "exitCode": 0,
+    "nichesChecked": 20,
+    "activeComplement": "N15-C",
+    "n21Allowed": false,
+    "sha256": "2b8dd433beb41d97640a0accfaca590377eb9f8319b5f0b45be49aa927d2942d"
+  },
+  "caregiverSerialQueue": {
+    "closedItems": ["CG-01","CG-02","CG-03","CG-04"],
+    "activeItem": null,
+    "nextItem": "CG-05",
+    "nextItemStarted": false,
+    "sha256": "8ecf27f10c95afb4481445f3c74a94511255d68b78f20fae42d40657478d64f8"
+  },
+  "graphify": {
+    "finalCheck": "graphify.detect.detect_incremental(Path('lib')) using root manifest",
+    "exitCode": 0,
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "researchSemanticallyIndexed": false,
+    "rootOutputsPreserved": true,
+    "rootGraphSha256": "93758d7223f13ac06c70ea9abc866b5e16df15131bdf087a55c53bd676fd670d",
+    "rootReportSha256": "67b4b843e2c9b8ae1f28f1268e00dd8554e791b097d8b66ac8f6a8cee6827a34"
+  },
+  "appTrackedDiff": {
+    "command": "git diff -- lib pubspec.yaml pubspec.lock android ios web test",
+    "exitCode": 0,
+    "outputEmpty": true,
+    "newApkContent": false
+  },
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "whitespaceErrors": false,
+    "warnings": "LF/CRLF emarquivos preexistentes/modificados; nenhuma alteracao local revertida"
+  },
+  "limitationsPreserved": [
+    "Ficha do programa profissional fechada, nao guia autonomo completo ou publicacao",
+    "Guias escritos/videos privados e movimentos exatos de aquecimento/retorno nao recebidos",
+    "Nenhum passo faltante preenchido porIA; orientacao clara/fiel precisa deverificacao profissional antes deuso",
+    "Fisioterapeuta experiente/feedback bidirecional/ajustes reais mantidos, nao fornecidos automaticamente peloAPK",
+    "Labels27variantes SI2 nao equivalem a narracao completa nemordem de circuito",
+    "Tempo nominal/intervalos/CR10/naofalha/progressao/rotacao/lados preservados; testes e aderencia nao viram dose",
+    "Efeito do programa12semanas com contexto de prevencao laboral; nao beneficio individual/universal ou manutencao autonoma demonstrada",
+    "CCBY4 de figuras publicadas nao licencia videos privados, implica endosso ou elimina revisao de direitos/creditos/localizacao",
+    "Novo registro semresultados/documentSection nao recuperou roteiro; falhas e secundariasweb nao contadas comomaterial clinico",
+    "N15-Cglobal aberta;CG05 eN21 nao iniciados"
+  ],
+  "next": "CG04 concluido para pesquisa no recorte profissional. CG05 proximo nao iniciado;0publicados/N15-Cglobal aberta/N21retida."
+}

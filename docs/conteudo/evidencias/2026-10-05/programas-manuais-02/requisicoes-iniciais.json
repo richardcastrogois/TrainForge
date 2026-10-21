@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-05",
+  "scope": ["N15-C", "N18-I", "N19-I", "N20-I"],
+  "requests": [
+    {
+      "id": "c15-myten-artigo",
+      "url": "https://link.springer.com/article/10.1186/s12904-026-02309-4",
+      "extension": "html",
+      "purpose": "Primeira captura primaria My Ten: autoria, versao in press, direitos e URLs publicados dos seis suplementos; cuidador pratica para si."
+    },
+    {
+      "id": "c15-myten-pdf",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12904-026-02309-4_reference.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Texto integral publicado do My Ten (22 paginas no leitor web): metodos, TIDieR, individualizacao e limites; nao pressupor rotina fixa de dez minutos."
+    },
+    {
+      "id": "c15-impacct-nari",
+      "url": "https://www.nari.net.au/impacct",
+      "extension": "html",
+      "purpose": "Primeira captura oficial IMPACCT para localizar protocolo/manual Otago Plus; nao contato com autores nem extrapolacao do Otago original."
+    },
+    {
+      "id": "i18-react-nihr-protocolo",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2025815",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Primeira captura de protocolo publico NIHR do REACT: versao planejada e Appendix 2, documento distinto do suplemento 2023 bloqueado; conferir instrucao, supervisao e direitos sem misturar versoes."
+    }
+  ]
+}

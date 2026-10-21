@@ -1,0 +1,23 @@
+{
+  "id": "n22-harris-qualification",
+  "url": "https://profiles.sgul.ac.uk/tess-harris",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:25:07.207404+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Formacao em Medicina e autoria/investigadora PACE-UP, evidencia primaria",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://profiles.sgul.ac.uk/tess-harris",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 77174,
+  "bodyFile": "../raw/n22-harris-qualification.html",
+  "sha256": "a405f5457109a2eac85fbcdf8b5127b0e4ace2f3088c04cf35648c6501e8bdb0"
+}

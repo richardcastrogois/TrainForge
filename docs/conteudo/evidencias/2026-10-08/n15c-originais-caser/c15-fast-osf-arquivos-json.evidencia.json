@@ -1,0 +1,23 @@
+{
+  "id": "c15-fast-osf-arquivos-json",
+  "url": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:12:31.156743+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Listagem raiz do armazenamento publico FAST: buscar roteiro original sem afirmar ausencia em todo reposititorio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1885,
+  "bodyFile": "../raw/c15-fast-osf-arquivos-json.json",
+  "sha256": "4ab0a2bd0c122a9850e7b29ae0fc432a208e625183416a635f53ae34a3843ae4"
+}

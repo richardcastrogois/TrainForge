@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "scope": "N18-I ativo: aprofundar LifeAge e REACT; N15-C: localizar programas do proprio cuidador. N19-I/N20-I reutilizam somente evidencias semanticamente correspondentes. Sem N21 ou publicacao.",
+  "requests": [
+    {"id": "i18-lifeage-metadata", "url": "https://zenodo.org/api/records/4395762", "extension": "json", "purpose": "Primeira coleta local dos metadados LifeAge: conferir licenca por edicao e tamanho/URL antes de qualquer PDF. Falha do leitorweb nao e arquivo local anterior."},
+    {"id": "i18-react-2023-artigo", "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/full", "extension": "html", "purpose": "Artigo original posterior ao protocoloREACT2018: fonte do suplementoS1, estrutura52semanas, supervisao e direitos. Nao confundir com REACTcoronario ou manual domestico2020."},
+    {"id": "c15-fast-2021-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9382956/fullTextXML", "accept": "application/xml", "extension": "xml", "purpose": "FAST, analise secundaria2021: conferir programa do proprio cuidador50-75, escolhas/suporte e licenca. Nao transformar dose geral em rotina fixa."},
+    {"id": "c15-remoto-2019-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6891121/fullTextXML", "accept": "application/xml", "extension": "xml", "purpose": "Viabilidade remota em dupla: confirmar cuidador praticante, sessoes orientadas e se scripts operacionais foram publicados."},
+    {"id": "c15-remoto-2026-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13330425/fullTextXML", "accept": "application/xml", "extension": "xml", "purpose": "Ensaio remoto2026 posterior: verificar dose, progressao, manual/anexos e licenca exata sem herdar dados do piloto2019."}
+  ]
+}

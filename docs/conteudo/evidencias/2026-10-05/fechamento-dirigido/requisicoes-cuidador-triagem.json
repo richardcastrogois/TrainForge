@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-05",
+  "scope": "N15-C: revisao apenas para localizar primarios, nunca como programa operacional. Fonte atual primária da editora, sem repetir endpointsEuropePMC500.",
+  "requests": [
+    {"id": "c15-revisao-burden-2025-xml", "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1474913/xml", "accept": "application/xml", "extension": "xml", "purpose": "Localizar ensaios de exercicio proprio do cuidador no domicilio, especialmente rotinas publicadas integrais. Revisao nao preenche dose/instrucao de primarios."}
+  ]
+}

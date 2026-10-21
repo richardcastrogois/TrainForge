@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "niche": "N35",
+  "researchClosed": true,
+  "scope": "Fonte e método de métricas/estimativas por população, com99linhas60+, fórmulas oficiais conferidas, quatrocontextos e ausências explícitas. Não medição individual nemcalibradoruniversaldeaparelhos.",
+  "selectedContent": "criterios-metricas.json",
+  "sourceEvidence": "fontes-e-metodo.json",
+  "criteria": [
+    {
+      "criterion": "População/método conferidos",
+      "met": true,
+      "evidence": "Tabelaoficial99códigos; base2.7MET60+e3.5adultodistintas, autoria/métodosPubMed, calculadoraoficialcomlocalizadores e8cálculosindependentescoincidentes."
+    },
+    {
+      "criterion": "Praça versus academia/casa",
+      "met": true,
+      "evidence": "Semcarga/varianterealnãoequivalência; caminhada depende depiso/ritmocorrespondentes. Nãoimportar FCcomoMET."
+    },
+    {
+      "criterion": "Cuidador/pessoaassistida",
+      "met": true,
+      "evidence": "Identidade/papéis e referênciaetáriaseparados; tarefasprópriasnão treino/medidadoassistido."
+    },
+    {
+      "criterion": "Direitos/custos/pendências",
+      "met": true,
+      "evidence": "Declaraçãoatualdeusocomercialgratuitorecebida; preservar valores/códigos, semmídia/CCinventada. SemSLA/calibração/integração ou precisãoindividualalegados."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão de adequação/método/expressão final ecompreensão",
+    "Correspondênciadaatividade einputsreais antesdeestimativa",
+    "Teste/calibração/integração quando essaoferta forautorizada"
+  ],
+  "nextNiche": "N36",
+  "releaseApproved": false,
+  "appImplemented": false
+}

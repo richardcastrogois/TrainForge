@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n39-mobileclip-models-license",
+      "url": "https://raw.githubusercontent.com/apple/ml-mobileclip/main/LICENSE_MODELS",
+      "purpose": "Arquivo primário explicitamente apontado pela licença MIT do software: conferir concessões e restrições específicas dos pesos, sem presumir proibição comercial só pelo nome research. Não obter modelos.",
+      "extension": "txt"
+    },
+    {
+      "id": "n39-mobileclip-data-license",
+      "url": "https://raw.githubusercontent.com/apple/ml-mobileclip/main/LICENSE_DATA",
+      "purpose": "Direitos de dados separados do software e dos pesos, referenciados no LICENSE primário. Somente leitura de licença.",
+      "extension": "txt"
+    }
+  ]
+}

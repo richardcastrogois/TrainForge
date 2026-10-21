@@ -1,0 +1,25 @@
+{
+  "id": "n15dir-cg04-nhs-ombro-pdf",
+  "url": "https://bridgewater.nhs.uk/wp-content/uploads/2020/12/Shoulder-strengthening-exercises-Patient-advice-sheet.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T04:12:59.236182+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Guia primario Musculoskeletal Physiotherapy OCATS, particularmenteBandedPullApart. Cotejar configuracao/entrada/retorno comSI2, identificar divergencias3s/6-10reps4sets/direitos e itens realmente compativeis. Nao transferir eficacia/dose ou declarar guiaReViEEW integral.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://northcheshireandmersey.nhs.uk/wp-content/uploads/2020/12/Shoulder-strengthening-exercises-Patient-advice-sheet.pdf",
+  "contentType": null,
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/n15dir-cg04-nhs-ombro-pdf.pdf",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

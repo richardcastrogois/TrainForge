@@ -1,0 +1,22 @@
+{
+  "id": "i15-phe-domestico",
+  "url": "https://www.darlington.gov.uk/media/3dylbscx/phe-active-at-home-booklet.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:46:15.859414+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Rotina humana PHE/SHU/NCSEM para idosos em casa, sentada e em pe: verificar instrucao, dose, progressao, apoios e termos por ativo. Material pandemico nao sera tratado como diretriz atual.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://www.darlington.gov.uk/media/3dylbscx/phe-active-at-home-booklet.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 4022505,
+  "bodyFile": "../raw/i15-phe-domestico.pdf",
+  "sha256": "fe6b3bbc7a3537c0b769a542b53bcb7458507f9b8352813fb2aa5d19002501eb"
+}

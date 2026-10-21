@@ -1,0 +1,24 @@
+{
+  "id": "n22-nhlbi-session3",
+  "url": "https://www.nhlbi.nih.gov/sites/default/files/media/docs/Session3-508.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:18:37.061522+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir preparo, dose, intensidade, encerramento e publico do material",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/sites/default/files/media/docs/Session3-508.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 995659,
+  "bodyFile": "../raw/n22-nhlbi-session3.pdf",
+  "sha256": "4f8d14ec16413629b711cbbf11b384c4983b51a5660e3fa4168696a4cb2387f3",
+  "bodyFormatMatchesRequest": true
+}

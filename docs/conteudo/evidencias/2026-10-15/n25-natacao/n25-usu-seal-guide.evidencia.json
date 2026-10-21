@@ -1,0 +1,24 @@
+{
+  "id": "n25-usu-seal-guide",
+  "url": "https://champ.usuhs.edu/sites/default/files/2020-03/navysealfitnessguide.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:35:47.192792+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia institucional USU/CHAMP, autoria profissional, capitulo natacao/doses/instrucao/direitos; publico militar nao e qualquer iniciante",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://champ.usuhs.edu/sites/default/files/2020-03/navysealfitnessguide.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 5353932,
+  "bodyFile": "../raw/n25-usu-seal-guide.pdf",
+  "sha256": "f80847e912d53f07d5480a080d4348fc07cac2aedbd75095177e00fdac12ca40",
+  "bodyFormatMatchesRequest": true
+}

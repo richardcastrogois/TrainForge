@@ -1,0 +1,23 @@
+{
+  "id": "n40-gofood-metadata",
+  "url": "https://api.crossref.org/works/10.3390/nu15173835",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:40:31.138757+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir autoria/licença bibliográfica do estudo goFOOD2023, não pesos, imagens, app ou contrato comercial. Não reproduzir corpo desafiado/limitado pelo editor.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.crossref.org/works/10.3390/nu15173835",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 19917,
+  "bodyFile": "../raw/n40-gofood-metadata.json",
+  "sha256": "dd38701c3c035ddb6e5ffa60302e0531e7d5d21baac2197b09f93c217f135f50"
+}

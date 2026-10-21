@@ -1,0 +1,143 @@
+{
+  "id": "APK-EXERCICIOS-01",
+  "date": "2026-10-07",
+  "status": "decisao_do_autor_documentada",
+  "scope": "todos_os_exercicios_e_programas_do_apk",
+  "appliesToPreviousResearch": true,
+  "appliesToFutureResearch": true,
+  "userDecision": {
+    "caregiverAnswer": "pode ter as duas opcoes, nao precisa ser regra desde que o exercicio seja guiado de forma clara no apk e que seja comprovado ser valido para o cuidador e criado por um profissional",
+    "globalAnswer": "ok essa vale para todos os exercicios do apk",
+    "acceptedDeliveryPaths": [
+      "autonomo",
+      "com_orientacao_profissional"
+    ],
+    "allExercisesRequireSupervision": false,
+    "allExercisesMayStartWithoutSupervision": false
+  },
+  "caseSpecificAuxiliaryDecision": {
+    "date": "2026-10-12",
+    "scope": "CG-01-STATIC",
+    "answer": "Sim, desde que a compatibilidade seja demonstrada e as fontes fiquem separadas.",
+    "package": "evidencias/2026-10-12/cg01-estatico/pacote-factual.json",
+    "conditions": "Precaucoes profissionais separadas; preservar exercicio/dose/publico e nao afirmar que a combinacao foi testada.",
+    "compatibilityIsDocumentaryNotIndependentClinicalValidation": true,
+    "approvesOtherItemsOrPublicationAutomatically": false
+  },
+  "requiredEvidence": [
+    "autoria_profissional_verificavel",
+    "fundamento_adequado_ao_publico_praticante_ambiente_finalidade",
+    "instrucao_clara_preparacao_execucao_termino",
+    "dose_unidades_descanso_progressao_limites_conforme_programa",
+    "elegibilidade_precaucoes_interrupcao_e_retorno_da_fonte",
+    "entrega_e_acompanhamento_exigidos_pela_fonte",
+    "proveniencia_versao_localizador_e_corpo_hash_quando_recebido",
+    "direitos_comerciais_e_adaptacao_por_ativo",
+    "revisao_humana_da_localizacao_e_adaptacao_antes_de_publicar"
+  ],
+  "professionalAuthorship": {
+    "authorAndQualificationMustBeLinkedToSource": true,
+    "institutionalTeamAllowedWhenResponsibleProfessionalTraceable": true,
+    "journalPublicationAloneProvesProfessionalQualification": false,
+    "humanAuthorshipAloneSufficient": false,
+    "laterReviewDoesNotRewriteOriginalAuthorship": true,
+    "qualificationMissingBlocksApproval": true
+  },
+  "evidenceScope": {
+    "preservePopulationSettingPurposeAndStudyDesign": true,
+    "programmeEvidenceProvesEachMovementInIsolation": false,
+    "randomizedTrialRequiredForEveryIsolatedMovement": false,
+    "sameMovementNameProvesEquivalentVariant": false,
+    "sourceLicenceProvesClinicalValidity": false,
+    "userDecisionApprovesExistingContent": false,
+    "noUniversalSafetyOrEfficacyClaim": true
+  },
+  "caregiverSettingClarification": {
+    "date": "2026-10-07",
+    "decision": "evidencias/2026-10-07/n15c-ambiente-compativel/decisao.json",
+    "studyStrictlyAtHomeRequired": false,
+    "unchangedExerciseInCompatibleSpaceMayBeConsidered": true,
+    "checkSpaceEquipmentTimeFatigueEligibilityAndDelivery": true,
+    "practicalFeasibilityProvesHomeEfficacy": false,
+    "reduceOrModifyPrescriptionToFitAvailableTimeOrFatigue": false,
+    "otherAudienceAutomaticallyEligible": false,
+    "appliesToPriorAndFutureCaregiverScreening": true
+  },
+  "executionSettingClarification": {
+    "date": "2026-10-07",
+    "scope": "todos_os_exercicios_do_apk_anteriores_e_futuros",
+    "decision": "evidencias/2026-10-07/n15c-ambiente-compativel/decisao.json",
+    "literalHomeOrParkLabelIsMandatory": false,
+    "preserveClinicallyStudiedExerciseVariantDoseAndEligiblePractitioner": true,
+    "checkActualSpaceMaterialTimePreparationFatigueAndRequiredSupport": true,
+    "documentSourceClaimVersusTransferFeasibilityVersusUnprovenTransfer": true,
+    "allPriorItemsReevaluated": false,
+    "reevaluationSequence": "N15-C primeiro; demais itens anteriores depois, antes da21."
+  },
+  "delivery": {
+    "autonomous": {
+      "sourceMustSupportAutonomousUseForTargetContext": true,
+      "priorTrainingRequiredWhenSourceRequiresIt": true,
+      "eligibilityMustBeDocumented": true
+    },
+    "professional": {
+      "preserveRoleModalityFrequencyAndPhaseOfSupport": true,
+      "assessmentInitialTeachingAndLiveSupervisionAreDifferent": true,
+      "requiredProfessionalServiceAssumedAvailable": false,
+      "launchPathNeedsActualSupportWhenRequired": true
+    },
+    "apkInstructionsReplaceRequiredLiveSupervision": false,
+    "userSelectsPathRegardlessOfSource": false,
+    "clearInstructionsRequiredForBothPaths": true
+  },
+  "prohibitions": {
+    "aiFillsMissingPrescription": false,
+    "mixSourcesAndAttributeNewSessionToOriginalAuthor": false,
+    "transferRightsToUnreceivedExternalMedia": false,
+    "renameGenericProgrammeAsPopulationSpecific": false
+  },
+  "proposedHandoffFields": [
+    "sourceId",
+    "sourceVersion",
+    "sourceLocator",
+    "receipt",
+    "sha256",
+    "author",
+    "professionalQualificationEvidence",
+    "targetPopulation",
+    "practitioner",
+    "setting",
+    "proposedExecutionSetting",
+    "settingCompatibilityEvidence",
+    "purpose",
+    "evidenceBasis",
+    "evidenceLimits",
+    "sourceInstructions",
+    "sourceDose",
+    "sourceProgression",
+    "eligibility",
+    "deliveryRequirements",
+    "assetRights",
+    "adaptationReview",
+    "approvalState"
+  ],
+  "handoffIsProposedContractNotImplementedSchema": true,
+  "publicationGate": "Todos os requisitos aplicaveis demonstrados para o item/versao selecionado; ausente nao e aprovado. Evidencia adequada nao e garantia universal nem exige ensaio isolado de cada gesto.",
+  "existingContentAutomaticallyApproved": false,
+  "allPriorItemsAuditedAgainstPolicy": false,
+  "researchClosureAutomaticallyChanged": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "multiSourceCompositionDecision": {
+    "date": "2026-10-15",
+    "scope": "niches_atuais_e_futuros",
+    "authority": "pedido_direto_do_autor",
+    "fullOriginalProgrammeIsMandatory": false,
+    "compositionFromMultipleHumanSourcesAllowed": true,
+    "perComponentCreditAndContributionRequired": true,
+    "mustPreserveCompatibilityPopulationDoseSupportAndRights": true,
+    "newCompositionIsAnOriginalAuthorProgramme": false,
+    "newCompositionInheritsTrialEffects": false,
+    "evidence": "evidencias/2026-10-15/n22-caminhada/decisao-e-criterios.json"
+  }
+}

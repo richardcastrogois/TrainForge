@@ -1,0 +1,21 @@
+{
+  "id": "n12-medline-athletic",
+  "url": "https://medlineplus.gov/ency/article/002458.htm",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T21:55:04.390912+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia humano de nutrição/desempenho; conteúdo A.D.A.M., direitos separados.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://medlineplus.gov/ency/article/002458.htm",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 35197,
+  "bodyFile": "../raw/n12-medline-athletic.html",
+  "sha256": "6b96b637afd98f2df2a8f1be32f09a34727237872e2ee97d980c5223a99b831d"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "N44-CONTRATO-01",
+  "kind": "Proposta editorial própria; não instrumento clínico validado ou aplicativo",
+  "sourceBasis": [
+    {
+      "file": "../n30-circuito-hiit/lote-funcional-snacking.json",
+      "fields": [
+        "identity",
+        "delivery.logbook",
+        "dose",
+        "outcomesBoundary.adherenceReported"
+      ],
+      "contribution": "Rotina humana de Perkin, McGuigan e Stokes2019/PR28, calendário e diário no seu recorte; não criar nova prescrição."
+    },
+    {
+      "file": "../n22-caminhada/percursos.json",
+      "record": "WK-PACEUP-12",
+      "contribution": "Incrementos relativos ao basal, diário e manutenção; não meta universal3000passos."
+    },
+    {
+      "file": "../n34-selecao-progressao/mapa-selecao-progressao.json",
+      "contribution": "Pessoa/papel/contexto/dose/progressão/interrupção/direitos separados."
+    },
+    {
+      "files": [
+        "../n39-alimentos-foto/contrato-classificacao.json",
+        "../n40-quantidade-foto/contrato-quantidade.json",
+        "../n41-ocr/contrato-ocr.json",
+        "../n42-barcode/contrato-barcode.json",
+        "../n43-atividade-imagem/contrato-atividade.json"
+      ],
+      "contribution": "Observação/candidato não equivale a execução, ingestão, quantidade, técnica ou gasto confirmado."
+    }
+  ],
+  "fields": [
+    "eventId",
+    "subjectId",
+    "reporterId",
+    "observerId",
+    "role",
+    "venue",
+    "sourceFamily",
+    "programmeId",
+    "programmeVersion",
+    "plannedDoseAsPublished",
+    "performedComponents",
+    "status",
+    "reasonIfVolunteered",
+    "measurementOrigin",
+    "unit",
+    "intervalStart",
+    "intervalEnd",
+    "confirmation",
+    "sharingPermission",
+    "correctionHistory"
+  ],
+  "statuses": [
+    "planned",
+    "completed_reported",
+    "partly_completed_reported",
+    "paused_reported",
+    "not_done_reported",
+    "unknown",
+    "declined_to_report"
+  ],
+  "rules": [
+    "Ausência de registo não é não execução. Não inferir motivo ou estado clínico.",
+    "Distinguir cobertura de registo de adesão ao protocolo. Não calcular adesão clínica com desconhecidos.",
+    "Concluído relatado não comprova qualidade, elegibilidade ou efeito.",
+    "Não dobrar dose, retirar repouso ou progredir por calendário.",
+    "Correção mantém histórico e origem; duplicatas importadas/manuais exigem conciliação, não soma silenciosa.",
+    "Passos acumulados, distância, minutos ativos/decorridos, energia ativa/bruta e dose de exercício são medidas distintas.",
+    "Refeição/gramas desconhecidos não zero nem balanço energético calculável.",
+    "Acesso de terceiro explícito por pessoa/escopo; permitir revogar e registar por si sem GPS/foto/conta externa obrigatórios."
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "contrato_documental_com_validacao_real_pendente",
+      "finding": "Diário de ES2019/PR28: repetições de sentar/levantar e eventos adversos pertencem ao protocolo e à população triada. Não generalizar os98% relatados como meta individual. Uso doméstico não dispensa ensino/condições pessoais."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "contrato_documental_com_validacao_real_pendente",
+      "finding": "Guardar variante/modelo/ajuste/carga/unidade e informante. Acompanhamento de NEMEX exige o caminho profissional da fonte; registo digital não o substitui."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "contrato_documental_com_validacao_real_pendente",
+      "finding": "Ambiente exterior, aparelho e deslocação separados. Contador acumulado do aparelho não mede automaticamente a sessão/pessoa. A inexistência de percurso N21 continua visível."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "contrato_documental_com_validacao_real_pendente",
+      "finding": "Tempo e esforço do cuidador são seus; assistência ao idoso não é treino prescrito. Interrupção por cuidado é pausa relatada, sem compensação automática ou atribuição de baixa adesão."
+    }
+  ],
+  "rights": "Preservar autoria e licença do componente original; a proposta de registo não licencia instruções ou mídia. Não há nova mídia copiada.",
+  "remaining": [
+    "Implementação e testes ponta a ponta",
+    "Compreensão/consentimento e uso com pessoas diversas em cada contexto",
+    "Revisão clínica/editorial das interpretações pretendidas",
+    "Política real de acesso/retenção e segurança"
+  ],
+  "releaseApproved": false
+}

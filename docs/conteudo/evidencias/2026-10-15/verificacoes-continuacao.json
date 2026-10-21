@@ -1,0 +1,5525 @@
+{
+  "date": "2026-10-15",
+  "scope": "Document integrity/sequence/source hashes, not app/clinical/runtime validation",
+  "checks": [
+    {
+      "check": "JSON n24-ciclismo\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\componentes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\contextos.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\direitos-componentes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\leitura-seguimento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\lote-ergometro-profissional.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-bhf-current-v3.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-bhf-current-v3.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-bhf-plan.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-bhf-plan.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-cyclinguk-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-cyclinguk-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-cyclinguk-joebeer2010.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-cyclinguk-joebeer2010.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-cyclinguk-plan.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-cyclinguk-plan.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-fullpotential-coaching.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-fullpotential-coaching.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-fullpotential-team.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-fullpotential-team.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-gibala-professional.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-gibala-professional.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-gillen2016.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-gillen2016.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-gloc2021-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-gloc2021-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-pt-cdadc.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-pt-cdadc.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-silva2002-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-silva2002-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-silva2002-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-silva2002-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-sofa-saddle.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-sofa-saddle.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-trainerday-api.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-trainerday-api.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-trainerday-terms.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-trainerday-terms.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-ucb-rights.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-ucb-rights.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-uga-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-uga-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-uga-lingo.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-uga-lingo.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-uga-tips.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-uga-tips.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\n24-yum2021-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n24-yum2021-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\paginas-renderizadas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\paginas-seguimento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-03.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-04.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-05.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-06.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes-07.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\reuso-nia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\triagem-web.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\validacoes-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n24-ciclismo\\validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\barreiras-e-pistas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\contextos.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\direitos-componentes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\lote-nado-resistencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-cdc-water-safety.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-cdc-water-safety.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-delayed2023-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-delayed2023-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-eisenhardt-epmc-metadata.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-eisenhardt-epmc-metadata.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-gromisz-faculty.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-hprc-policy.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-hprc-policy.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-tools2026-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-tools2026-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-toubekis-profile.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-toubekis-profile.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-uga-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-uga-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-usu-legal.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-usu-legal.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-usu-seal-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-usu-seal-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-women2019-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-women2019-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\n25-women2019-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n25-women2019-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\paginas-renderizadas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-03.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-04.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-05.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-06.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-07.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes-08.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n25-natacao\\validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\contextos.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\lote-yoga-cadeira.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\n26-nccih-safety.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n26-nccih-safety.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\n26-va-chair-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n26-va-chair-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\n26-va-copyright.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n26-va-copyright.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\n26-va-evaluation2017.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n26-va-evaluation2017.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\n26-va-program-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n26-va-program-index.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\paginas-renderizadas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n26-yoga\\validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\componentes-parciais.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\lote-pilates-solo.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-acta2022-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-acta2022-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-home2023-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-home2023-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-kalyani-faculty.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-kalyani-faculty.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-lucy-home-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-lucy-home-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-lucy-profile.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-lucy-profile.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-nhs-core-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-nhs-core-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-oldermen2024-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-oldermen2024-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\n27-pereira2024-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n27-pereira2024-jats.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\paginas-core.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\paginas-renderizadas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\requisicoes-03.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\requisicoes-04.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n27-pilates\\validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\direitos-e-autoria.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\lote-funcional-flexibilidade.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\n28-nhs-balance.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n28-nhs-balance.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\n28-nhs-flexibility.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n28-nhs-flexibility.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n28-mobilidade\\reuso-e-leitura.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n29-equilibrio\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n29-equilibrio\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n29-equilibrio\\lote-equilibrio.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n29-equilibrio\\reuso-e-cotejo.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\lote-downloads-nao-executado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\lote-funcional-snacking.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-archila-editor.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-archila-editor.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-archila-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-archila-pdf.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-archila-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-archila-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-archila-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-archila-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-ballesta-2019-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-ballesta-2019-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-ballesta-2020-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-ballesta-2020-xml-accept.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-bonete-2019-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-bonete-2019-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-bonete-2020-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-bonete-2020-xml.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\n30-poon-html.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n30-poon-html.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\requisicoes-03.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\requisicoes-04.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n30-circuito-hiit\\reuso-snacking.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n31-remo\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n31-remo\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n31-remo\\leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n31-remo\\lote-remo-intervalado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n31-remo\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n32-dor-limitacoes\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n32-dor-limitacoes\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n32-dor-limitacoes\\fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n32-dor-limitacoes\\mapa-relato-ajuda.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\componentes-profissionais.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\n33-nemex-artigo.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n33-nemex-artigo.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\n33-nemex-suplemento.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n33-nemex-suplemento.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n33-artrose-preoperatoria\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n34-selecao-progressao\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n34-selecao-progressao\\dependencias-locais.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n34-selecao-progressao\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n34-selecao-progressao\\mapa-selecao-progressao.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\auditoria-calculadora.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\criterios-metricas.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\fontes-e-metodo.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\n35-compendium-calculator.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n35-compendium-calculator.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\n35-compendium-older.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n35-compendium-older.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\n35-compendium-units.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n35-compendium-units.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\n35-compendium-use.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n35-compendium-use.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\requisicoes-03.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n35-metricas-gasto\\tabela60mais.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n36-gps-mapa\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n36-gps-mapa\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n36-gps-mapa\\fontes-e-limites.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n36-gps-mapa\\requisitos-percurso-proprio.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\contrato-importacao.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-android-license.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-android-license.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-hc-aggregate-data.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-hc-aggregate-data.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-hc-availability.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-hc-availability.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-hc-data-types.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-hc-data-types.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-hc-metadata.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-hc-metadata.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\n37-hc-read-data.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n37-hc-read-data.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n37-android\\sondagem-ambiente.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n38-apple\\auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n38-apple\\contrato-importacao.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n38-apple\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n38-apple\\fontes-e-limites.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\criterios-e-pendencias.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\estado.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\fontes-e-comparacao.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-nateraw-api.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-nateraw-api.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-nateraw-card.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-nateraw-card.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-nateraw-config.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-nateraw-config.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-nateraw-preprocessor.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-nateraw-preprocessor.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-nutrition5k-readme.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-nutrition5k-readme.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\n39-vit-base-card.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "SHA256 n39-vit-base-card.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\requisicoes-02.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "JSON n39-alimentos-foto\\taxonomia-conferida.json",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN24",
+      "passed": true
+    },
+    {
+      "check": "N24 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN25",
+      "passed": true
+    },
+    {
+      "check": "N25 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN26",
+      "passed": true
+    },
+    {
+      "check": "N26 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN27",
+      "passed": true
+    },
+    {
+      "check": "N27 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN28",
+      "passed": true
+    },
+    {
+      "check": "N28 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN29",
+      "passed": true
+    },
+    {
+      "check": "N29 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN30",
+      "passed": true
+    },
+    {
+      "check": "N30 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN31",
+      "passed": true
+    },
+    {
+      "check": "N31 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN32",
+      "passed": true
+    },
+    {
+      "check": "N32 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N32 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN33",
+      "passed": true
+    },
+    {
+      "check": "N33 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N33 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN34",
+      "passed": true
+    },
+    {
+      "check": "N34 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N34 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN35",
+      "passed": true
+    },
+    {
+      "check": "N35 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N35 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN36",
+      "passed": true
+    },
+    {
+      "check": "N36 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N36 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN37",
+      "passed": true
+    },
+    {
+      "check": "N37 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N37 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "OnefolderN38",
+      "passed": true
+    },
+    {
+      "check": "N38 researchclosed only",
+      "passed": true
+    },
+    {
+      "check": "N38 selectedContent exists",
+      "passed": true
+    },
+    {
+      "check": "N39 OPEN",
+      "passed": true
+    },
+    {
+      "check": "N40 not started",
+      "passed": true
+    },
+    {
+      "check": "N33 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N34 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N35 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N36 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N37 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N38 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N39 follows prior closure",
+      "passed": true
+    },
+    {
+      "check": "N39 no fabricated closure fontes-e-comparacao.json",
+      "passed": true
+    },
+    {
+      "check": "N39 no fabricated closure criterios-e-pendencias.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n22-caminhada/percursos.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n23-corrida/gronorun2-lote.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n24-ciclismo/lote-ergometro-profissional.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n25-natacao/lote-nado-resistencia.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n26-yoga/lote-yoga-cadeira.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n27-pilates/lote-pilates-solo.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n28-mobilidade/lote-funcional-flexibilidade.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n29-equilibrio/lote-equilibrio.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n30-circuito-hiit/lote-funcional-snacking.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n31-remo/lote-remo-intervalado.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n32-dor-limitacoes/mapa-relato-ajuda.json",
+      "passed": true
+    },
+    {
+      "check": "N34dependency ../n33-artrose-preoperatoria/componentes-profissionais.json",
+      "passed": true
+    },
+    {
+      "check": "n33-artrose-preoperatoria fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n33-artrose-preoperatoria notreleased",
+      "passed": true
+    },
+    {
+      "check": "n34-selecao-progressao fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n34-selecao-progressao notreleased",
+      "passed": true
+    },
+    {
+      "check": "n35-metricas-gasto fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n35-metricas-gasto notreleased",
+      "passed": true
+    },
+    {
+      "check": "n36-gps-mapa fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n36-gps-mapa notreleased",
+      "passed": true
+    },
+    {
+      "check": "n37-android fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n37-android notreleased",
+      "passed": true
+    },
+    {
+      "check": "n38-apple fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n38-apple notreleased",
+      "passed": true
+    },
+    {
+      "check": "n39-alimentos-foto fourcontexts",
+      "passed": true
+    },
+    {
+      "check": "n39-alimentos-foto notreleased",
+      "passed": true
+    },
+    {
+      "check": "N33population76not63",
+      "passed": true
+    },
+    {
+      "check": "N33notwholeautonomoussession",
+      "passed": true
+    },
+    {
+      "check": "N35 99unique7digitcodes",
+      "passed": true
+    },
+    {
+      "check": "N35eightindependentarithmeticchecks",
+      "passed": true
+    },
+    {
+      "check": "N39 101labelsverified",
+      "passed": true
+    },
+    {
+      "check": "N39sixmetadatahashes,nolearning",
+      "passed": true
+    },
+    {
+      "check": "284unique source families",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence EX01",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence EX02",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR05",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR06",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR07",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence CI05",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence CI06",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence AL01",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence AL02",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence AL04",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence AL05",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence AL06",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU01",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU03",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU06",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU07",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence MI01",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR11",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU09",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU10",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU11",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU12",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU13",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU14",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU15",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU16",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU17",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU18",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU19",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU20",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU21",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU22",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU23",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU24",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU25",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU26",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU27",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU28",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU29",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU30",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU31",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU32",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR13",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence MI02",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC01",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC02",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC03",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC04",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC05",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC06",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC07",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence IC08",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR14",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR15",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR16",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR17",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR18",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR19",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR20",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR21",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU33",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU34",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence NU35",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR22",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence CI08",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR23",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR24",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR25",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR26",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR27",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR28",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR29",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR30",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR31",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR32",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR33",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR34",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR35",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR36",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR37",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR38",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR39",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR40",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR41",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR42",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR43",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR44",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR45",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR46",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR47",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR48",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR49",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR50",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR51",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR52",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR53",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR54",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR55",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR56",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR57",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR58",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR59",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR60",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR61",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR62",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR63",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR64",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR65",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR66",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR67",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR68",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR69",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR70",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR71",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR72",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR73",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR74",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR75",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR76",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR77",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR78",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR79",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR80",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR81",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR82",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR83",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR84",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR85",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR86",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR87",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR88",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR89",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR90",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR91",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR92",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR93",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR94",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR95",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR96",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR97",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR98",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR99",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR100",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR101",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR102",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR103",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR104",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR105",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR106",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR107",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR108",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR109",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR110",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR111",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR112",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR113",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR114",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR115",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR116",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR117",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR118",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR119",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR120",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR121",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR122",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR123",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR124",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR125",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR126",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR127",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR128",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR129",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR130",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR131",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR132",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR133",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR134",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR135",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR136",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR137",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR138",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR139",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR140",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR141",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR142",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR143",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR144",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR145",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR146",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR147",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR148",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR149",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR150",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR151",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR152",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR153",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR154",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR155",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR156",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR157",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR158",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR159",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR160",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR161",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR162",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR163",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR164",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR165",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR166",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR167",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR168",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR169",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR170",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR171",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR172",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR173",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR174",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR175",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR176",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR177",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR178",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR179",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR180",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR181",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR182",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR183",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR184",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR185",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR186",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR187",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR188",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR189",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR190",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR191",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR192",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR193",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR194",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR195",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR196",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR197",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR198",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR199",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR200",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR201",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR202",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR203",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR204",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR205",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR206",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR207",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR208",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR209",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR210",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR211",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR212",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR213",
+      "passed": true
+    },
+    {
+      "check": "Catalogueevidence PR214",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> continuacao-n24-n28.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n24-ciclismo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n24-ciclismo/lote-ergometro-profissional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n24-ciclismo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n25-natacao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n25-natacao/lote-nado-resistencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n25-natacao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n26-yoga/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n26-yoga/lote-yoga-cadeira.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n26-yoga/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n27-pilates/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n27-pilates/componentes-parciais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n27-pilates/auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n24-ciclismo/contextos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n25-natacao/contextos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> n26-yoga/contextos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n27.md -> verificacoes-continuacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> continuacao-n24-n33.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n24-ciclismo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n24-ciclismo/lote-ergometro-profissional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n24-ciclismo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n25-natacao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n25-natacao/lote-nado-resistencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n25-natacao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n26-yoga/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n26-yoga/lote-yoga-cadeira.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n26-yoga/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n27-pilates/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n27-pilates/lote-pilates-solo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n27-pilates/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n28-mobilidade/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n28-mobilidade/reuso-e-leitura.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> n28-mobilidade/auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n28.md -> verificacoes-continuacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n24-ciclismo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n24-ciclismo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n25-natacao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n25-natacao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n26-yoga/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n26-yoga/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n27-pilates/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n27-pilates/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n28-mobilidade/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n28-mobilidade/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n29-equilibrio/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n29-equilibrio/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n30-circuito-hiit/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n30-circuito-hiit/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n31-remo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n31-remo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n32-dor-limitacoes/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n32-dor-limitacoes/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n33-artrose-preoperatoria/estado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> n33-artrose-preoperatoria/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n33.md -> verificacoes-continuacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n24-ciclismo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n24-ciclismo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n25-natacao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n25-natacao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n26-yoga/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n26-yoga/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n27-pilates/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n27-pilates/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n28-mobilidade/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n28-mobilidade/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n29-equilibrio/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n29-equilibrio/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n30-circuito-hiit/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n30-circuito-hiit/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n31-remo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n31-remo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n32-dor-limitacoes/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n32-dor-limitacoes/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n33-artrose-preoperatoria/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n33-artrose-preoperatoria/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n34-selecao-progressao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n34-selecao-progressao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n35-metricas-gasto/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n35-metricas-gasto/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n36-gps-mapa/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n36-gps-mapa/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n37-android/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n37-android/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n38-apple/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n38-apple/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n39-alimentos-foto/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n39-alimentos-foto/criterios-e-pendencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> verificacoes-continuacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n39-alimentos-foto/criterios-e-pendencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md -> n39-alimentos-foto/taxonomia-conferida.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> lote-ergometro-profissional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> reuso-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> direitos-componentes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> leitura-seguimento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> contextos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n24-ciclismo\\relatorio.md -> validacoes-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> lote-nado-resistencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> direitos-componentes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n25-natacao\\relatorio.md -> barreiras-e-pistas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n26-yoga\\relatorio.md -> lote-yoga-cadeira.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n26-yoga\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n26-yoga\\relatorio.md -> leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n26-yoga\\relatorio.md -> contextos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n26-yoga\\relatorio.md -> validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> lote-pilates-solo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> auditoria-parcial.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> componentes-parciais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n27-pilates\\relatorio.md -> validacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n28-mobilidade\\relatorio.md -> lote-funcional-flexibilidade.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n28-mobilidade\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n28-mobilidade\\relatorio.md -> direitos-e-autoria.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n29-equilibrio\\relatorio.md -> lote-equilibrio.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n29-equilibrio\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n29-equilibrio\\relatorio.md -> reuso-e-cotejo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n30-circuito-hiit\\relatorio.md -> lote-funcional-snacking.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n30-circuito-hiit\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n30-circuito-hiit\\relatorio.md -> reuso-snacking.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n30-circuito-hiit\\relatorio.md -> leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n30-circuito-hiit\\relatorio.md -> lote-downloads-nao-executado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n31-remo\\relatorio.md -> lote-remo-intervalado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n31-remo\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n31-remo\\relatorio.md -> leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n32-dor-limitacoes\\relatorio.md -> mapa-relato-ajuda.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n32-dor-limitacoes\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n32-dor-limitacoes\\relatorio.md -> fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n33-artrose-preoperatoria\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n33-artrose-preoperatoria\\relatorio.md -> componentes-profissionais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n33-artrose-preoperatoria\\relatorio.md -> fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n34-selecao-progressao\\relatorio.md -> mapa-selecao-progressao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n34-selecao-progressao\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n34-selecao-progressao\\relatorio.md -> dependencias-locais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n35-metricas-gasto\\relatorio.md -> tabela60mais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n35-metricas-gasto\\relatorio.md -> fontes-e-metodo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n35-metricas-gasto\\relatorio.md -> auditoria-calculadora.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n35-metricas-gasto\\relatorio.md -> criterios-metricas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n35-metricas-gasto\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n36-gps-mapa\\relatorio.md -> fontes-e-limites.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n36-gps-mapa\\relatorio.md -> requisitos-percurso-proprio.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n36-gps-mapa\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n37-android\\relatorio.md -> contrato-importacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n37-android\\relatorio.md -> fontes-e-evidencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n37-android\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n37-android\\relatorio.md -> sondagem-ambiente.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n38-apple\\relatorio.md -> contrato-importacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n38-apple\\relatorio.md -> fontes-e-limites.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n38-apple\\relatorio.md -> auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md -> fontes-e-comparacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md -> taxonomia-conferida.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md -> criterios-e-pendencias.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink AGENTS.md -> docs/conteudo/criterios-exercicios-apk.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/conteudo/evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/conteudo/catalogo-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/planejamento/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/planejamento/pitch-e-decisoes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/planejamento/plano-de-execucao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> guia-do-projeto.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> documentacao-tecnica.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/diagnostico.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink README.md -> docs/graphify.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-15/n22-caminhada/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-15/n23-corrida/estado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-13/n15c-lacunas-dirigidas/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-13/n15c-lacunas-dirigidas/inventario-lacunas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> fila-cuidadores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> catalogo-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> catalogo-cuidadores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-12/n15c-catalogo-modular/verificacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-08/n15c-originais-caser/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-08/n15c-originais-caser/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-08/n15c-originais-caser/verificacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-08/n15c-pediatrico/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-teses-seguimento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-teses-seguimento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-teses-seguimento/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-revieew-suplementos/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ambiente-compativel/decisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ambiente-compativel/revalidacao-n15.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ambiente-compativel/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-dancecare/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ambiente-compativel/leitura-montero.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-mcm/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-mcm/leitura-manual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-mcm/triagem-web.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ufpb/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-10-07/n15c-ufpb/leitura-guia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> criterios-exercicios-apk.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/retornos-observados.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> qualidade-e-curadoria.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> direitos-e-acordos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> evidencias/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/plano-de-execucao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\README.md -> ../planejamento/plano-de-execucao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../planejamento/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/wger-amostra-ampliada.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../planejamento/evidencias/resumo-amostras.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-27/n03-porcoes/duplicidades-cofid.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-26/n01-alimentos/resumo-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/ciqual-amostra.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../planejamento/evidencias/resumo-amostras.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> programas-prontos-e-cenarios-clinicos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../planejamento/fontes-custos-e-hospedagem.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../planejamento/viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> evidencias/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../../documentacao-tecnica.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../../lib/features/auth/data/auth_repository.dart",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../../lib/features/onboarding/data/onboarding_api.dart",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../../lib/features/workouts/domain/workout_plan_item.dart",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../../lib/features/stats/domain/stats_data.dart",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> programas-prontos-e-cenarios-clinicos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\cobertura-e-prioridades.md -> ../design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-08/n15c-originais-caser/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-08/n15c-originais-caser/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-08/n15c-originais-caser/verificacoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-teses-seguimento/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-teses-seguimento/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-teses-seguimento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ambiente-compativel/decisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ambiente-compativel/revalidacao-n15.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-dancecare/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ambiente-compativel/leitura-montero.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-revieew-suplementos/leitura-anexos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-fisico-relaxamento/triagem-web.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-mcm/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-mcm/leitura-manual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-mcm/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-mcm/triagem-web.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ufpb/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ufpb/leitura-guia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ufpb/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-ufpb/triagem-web.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> criterios-exercicios-apk.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> criterios-exercicios-apk.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-programa/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-conteudo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-07/n15c-conteudo/conteudo-documentado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-06/n15c-fechamento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-06/n15c-fechamento/leitura-manuais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-06/n15c-fechamento/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-05/programas-manuais-02/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-05/programas-manuais-02/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-br.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/revisao-publicos-ambientes/resumo-revisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> direitos-e-acordos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/retornos-observados.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/inventariar-retornos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n11i-alimentacao/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-nichos-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/test_coletar_nichos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n19-academia-percursos/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n20-instrucao-academia/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-academia-instrucao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14c-cuidador/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14c-cuidador/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/validar-complementos-idosos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/revisao-idosos-cuidadores/resumo-revisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-02/n11-manutencao-habitos/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-02/n11-manutencao-habitos/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-manutencao-habitos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n12-desempenho/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n12-desempenho/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-desempenho.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n13-planos-alimentares/amostra-planos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-planos-alimentares.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14-rotina-alimentar/rotina-proposta.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-rotina-alimentar.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n14-rotina-alimentar/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n17-casa-instrucao/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n17-casa-instrucao/amostra-midia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-casa-instrucao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n16-casa-material/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n16-casa-material/amostra-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n16-casa-material/resumo-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-casa-material.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15-casa-sem-equipamento/amostra-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-casa-sem-equipamento.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/wger-amostra-ampliada.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> ../planejamento/evidencias/coletar-amostras.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-expansao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> ../planejamento/evidencias/resumo-amostras.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> ../planejamento/evidencias/coletar-amostras.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/cofid-2021.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-expansao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/alimentacao-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/ciqual-2025-windows.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/ciqual-2025-metadata.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-expansao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-expansao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-identidades.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n01-alimentos/ciqual-alimentos.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n01-alimentos/ciqual-grupos.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n01-alimentos/resumo-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n01-alimentos/amostra-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-identidades.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-composicao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n02-composicao/dicionario-composicao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n02-composicao/resumo-composicao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n02-composicao/amostra-composicao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/n02-composicao/comparacao-contratos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/casos-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/validacao-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/duplicidades-cofid.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-porcoes.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/piloto-inicial.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-porcoes.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/usda-rice-drink.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/cofid-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n03-porcoes/usda-foundation-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/amostra-complementar.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/validacao-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/n04-compal-searchalicious.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/n04-search-openapi.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/n04-compal-product.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/decisao-reutilizacao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-nichos-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/alternativa.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-schema-changelog.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-product-nutrition-v36.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-contrato-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/contrato-nutricional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/validacao-contrato.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-brand-pingo-doce.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/amostra-dirigida.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-brand-continente.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-brand-mimosa.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-brand-compal.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-empty-search-fixture.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-missing-product-fixture.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/off-missing-valid-gtin-fixture.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/estados-observados.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-contrato-off/resumo-contrato.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/amostra-produtos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/comparacao-v2-v3.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-produtos-portugal.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/off-api-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/off-license-guide.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/off-portugal-10.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-27/n04-produtos-portugal/off-product-observed.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-produtos-portugal.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/amostra-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/validacao-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/plano-coleta.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/n05-lactose-free.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/grupos-alergenios.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n05-ingredientes/n05-off-allergens-taxonomy.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-ingredientes.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n06-imagens/resumo-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n06-imagens/amostra-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n06-imagens/revisao-visual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n06-imagens/validacao-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-nichos-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n04-fechamento/n04-off-reuse-terms.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/conteudo-didatico.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/guia-rotulos.html",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/validacao-rotulos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/validacao-visual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/plano-coleta.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/plano-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-28/n07-rotulos/validar-guia.cjs",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-29/n08-receitas/resumo-receitas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-29/n08-receitas/amostra-receitas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-receitas.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-30/n09-ganho-peso/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-30/n10-perda-peso/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/network/off-portugal-30.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/fineli-food-11060.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-pilotos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> fontes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/resumo-expansao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/coletar-pilotos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/analisar-pilotos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/corrida-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> evidencias/2026-09-26/forca-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> ../planejamento/viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias-para-integracao.md -> ../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-06/n15c-fechamento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-06/n15c-fechamento/inventario.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-06/n15c-fechamento/leitura-manuais.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-06/n15c-fechamento/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-06/n15c-fechamento/validacao-final.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-05/programas-manuais-02/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-05/programas-manuais-02/mapa-apk-campos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/requisicoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/requisicoes-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-publicos-ambientes/resumo-fila-complementos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> validar-fila-complementos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/requisicoes-br.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n15c-cuidador-casa/n15c-unijui-manual-pagina.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-publicos-ambientes/resumo-revisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-publicos-ambientes.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/revisao-idosos-cuidadores/resumo-revisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n19-academia-percursos/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n20-instrucao-academia/amostra-instrucao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> validar-complementos-idosos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> test_coletar_nichos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n14-rotina-alimentar/rotina-proposta.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-rotina-alimentar.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-desempenho.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n13-planos-alimentares/amostra-planos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-planos-alimentares.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-10-02/n11-manutencao-habitos/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-30/n10-perda-peso/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-30/n09-ganho-peso/conteudo-guiado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-29/n08-receitas/resumo-receitas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-29/n08-receitas/amostra-receitas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n06-imagens/resumo-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n06-imagens/amostra-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n06-imagens/revisao-visual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n06-imagens/validacao-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n07-rotulos/conteudo-didatico.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n07-rotulos/guia-rotulos.html",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n07-rotulos/validacao-rotulos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n07-rotulos/validacao-visual.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-fechamento/validacao-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-fechamento-n04.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n05-ingredientes/amostra-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n05-ingredientes/validacao-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-ingredientes.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-nichos-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-contrato-off/resumo-contrato.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-contrato-off/contrato-nutricional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-contrato-off/amostra-dirigida.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-contrato-off/estados-observados.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-28/n04-contrato-off/validacao-contrato.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-contrato-off.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-contrato-off.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n04-produtos-portugal/resumo-produtos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n04-produtos-portugal/amostra-produtos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n04-produtos-portugal/comparacao-v2-v3.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-produtos-portugal.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-produtos-portugal.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n03-porcoes/casos-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n03-porcoes/validacao-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n03-porcoes/duplicidades-cofid.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-porcoes.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-porcoes.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-27/n03-porcoes/piloto-inicial.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/n01-alimentos/resumo-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/n01-alimentos/amostra-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-identidades.ps1",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-identidades.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> retornos-observados.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> inventariar-retornos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> analisar-pilotos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/corrida-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/forca-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/alimentacao-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-pilotos.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> 2026-09-26/network/coleta-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../../planejamento/etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> resumo-expansao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ../../planejamento/evidencias/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> wger-amostra-ampliada.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> manifesto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> coletar-expansao.py",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\conteudo\\evidencias\\README.md -> ciqual-2025-windows.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../../documentacao-tecnica.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> pitch-e-decisoes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> plano-de-execucao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> etapa-00-base.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../conteudo/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> ../design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> experiencia-e-figma.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> arquitetura-e-contratos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> fontes-custos-e-hospedagem.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\README.md -> qualidade-e-lancamento.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/n19-academia-percursos/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/n20-instrucao-academia/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n22-caminhada/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n23-corrida/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n24-ciclismo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n25-natacao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n26-yoga/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n27-pilates/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n28-mobilidade/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n29-equilibrio/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n30-circuito-hiit/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n31-remo/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n32-dor-limitacoes/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n33-artrose-preoperatoria/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n34-selecao-progressao/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n35-metricas-gasto/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n36-gps-mapa/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n37-android/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n38-apple/auditoria-fechamento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-15/n39-alimentos-foto/estado.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/n01-alimentos/resumo-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/pilotos-resumo.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/corrida-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/forca-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/alimentacao-piloto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-09-26/network/off-portugal-30.evidencia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/programas-prontos-e-cenarios-clinicos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> evidencias/resumo-amostras.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> evidencias/manifesto.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/complementos-2026-10-04.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\etapa-01-pesquisa.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n24-ciclismo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n25-natacao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n26-yoga/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n27-pilates/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n28-mobilidade/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n29-equilibrio/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n30-circuito-hiit/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n31-remo/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n32-dor-limitacoes/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n33-artrose-preoperatoria/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n34-selecao-progressao/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n35-metricas-gasto/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n36-gps-mapa/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n37-android/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n38-apple/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/n39-alimentos-foto/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-15/continuacao-n24-n39.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-06/n15c-fechamento/relatorio.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/complementos-2026-10-04.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-br.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n20-instrucao-academia/amostra-instrucao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n20-instrucao-academia/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n20-instrucao-academia/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n19-academia-percursos/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n19-academia-percursos/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n18-academia-iniciante/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n14c-cuidador/resumo-complemento.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/idosos-e-cuidadores.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/revisao-idosos-cuidadores/resumo-revisao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n16-casa-material/resumo-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-29/n08-receitas/resumo-receitas.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-28/n06-imagens/resumo-imagens.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> etapa-00-base.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/catalogo-fontes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/amostras-e-achados.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/qualidade-e-curadoria.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/direitos-e-acordos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> viabilidade-operacional.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/cobertura-e-prioridades.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-26/n01-alimentos/resumo-identidades.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias-para-integracao.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-27/n03-porcoes/validacao-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-27/n04-produtos-portugal/resumo-produtos.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-28/n04-contrato-off/contrato-nutricional.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/evidencias/2026-09-28/n04-contrato-off/validacao-contrato.json",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../conteudo/programas-prontos-e-cenarios-clinicos.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../design/ajustes-visao-integrada.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> ../diagnostico.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> README.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> pitch-e-decisoes.md",
+      "passed": true
+    },
+    {
+      "check": "LocalLink docs\\planejamento\\plano-de-execucao.md -> etapa-01-pesquisa.md",
+      "passed": true
+    },
+    {
+      "check": "Index744calls612HTTP690hashes",
+      "passed": true
+    },
+    {
+      "check": "QueuecurrentN39",
+      "passed": true
+    }
+  ],
+  "passed": 1358,
+  "failed": 0,
+  "localLinksChecked": 739,
+  "catalogueFamilies": 284,
+  "catalogueStatuses": {
+    "candidato": 29,
+    "condicional": 126,
+    "incompativel_zero": 26,
+    "referencia": 103
+  },
+  "index": {
+    "calls": 744,
+    "success200": 612,
+    "bodyHashesVerified": 690
+  },
+  "currentActiveNiche": "N39",
+  "closedThisContinuation": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "n39ResearchClosed": false,
+  "n40Started": false,
+  "n15PausedAndOpen": true,
+  "n21Started": false,
+  "gitChecks": {
+    "diffCheckPassed": true,
+    "lineEndingWarningsOnly": [
+      ".gitignore",
+      "docs/conteudo/evidencias/coletar-nichos-off.py",
+      "docs/conteudo/evidencias/inventariar-retornos.py",
+      "docs/conteudo/qualidade-e-curadoria.md"
+    ],
+    "appPathsStatusPorcelainEmpty": true,
+    "scope": [
+      "lib",
+      "android",
+      "ios",
+      "web",
+      "windows",
+      "linux",
+      "macos",
+      "test",
+      "pubspec.yaml",
+      "pubspec.lock"
+    ],
+    "newRawSamplesIgnored": true,
+    "stagingCommitPushPerformed": false
+  },
+  "collectionCounts": {
+    "baselineEarlierSnapshot": {
+      "gets": 54,
+      "http200": 44,
+      "usefulBodies": 43,
+      "hashes": 54,
+      "visualPages": 61
+    },
+    "continuationIncrement": {
+      "gets": 60,
+      "http200": 49,
+      "usefulBodies": 48,
+      "hashes": 59,
+      "visualPages": 64
+    },
+    "dateN22to39": {
+      "gets": 114,
+      "http200": 93,
+      "usefulBodies": 91,
+      "hashes": 113,
+      "visualPages": 125
+    }
+  },
+  "computerEffects": [
+    "ServidorADBjáinstalado iniciadoemTCP5037para inventário; listadedispositivosvazia. NenhumAVDbootadoouHealthConnectAPIexecutadonestafragmento."
+  ]
+}

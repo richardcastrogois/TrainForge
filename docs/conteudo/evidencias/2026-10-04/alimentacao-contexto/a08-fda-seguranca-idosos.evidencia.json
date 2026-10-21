@@ -1,0 +1,22 @@
+{
+  "id": "a08-fda-seguranca-idosos",
+  "url": "https://www.fda.gov/food/people-risk-foodborne-illness/food-safety-older-adults-and-people-cancer-diabetes-hivaids-organ-transplants-and-autoimmune",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:06:17.825728+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Contexto de seguranca alimentar em idosos e necessidades especiais; nao manual completo, receita terapeutica ou temperaturas inventadas.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fda.gov/food/people-risk-foodborne-illness/food-safety-older-adults-and-people-cancer-diabetes-hivaids-organ-transplants-and-autoimmune",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 38967,
+  "bodyFile": "../raw/a08-fda-seguranca-idosos.html",
+  "sha256": "10bb8b9bb73a5978aa24ef1eeaadf274483c796a3c6f298e53a68aae81ff07d7"
+}

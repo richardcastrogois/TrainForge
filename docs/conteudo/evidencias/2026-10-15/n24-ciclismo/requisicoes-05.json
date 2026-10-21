@@ -1,0 +1,18 @@
+{
+  "requests": [
+    {
+      "id": "n24-yum2021-jats",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8675512/fullTextXML",
+      "purpose": "Estudo aberto de ajuste/cinematica; conferir limites antes de usar como instrucao auxiliar",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n24-gloc2021-pdf",
+      "url": "https://bmcsportsscimedrehabil.biomedcentral.com/counter/pdf/10.1186/s13102-021-00379-w",
+      "purpose": "Protocolo detalhado ciclismo acompanhado, autoria, preparo e fases; nao generalizar a saude/casa",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

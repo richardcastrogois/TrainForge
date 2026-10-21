@@ -1,0 +1,23 @@
+{
+  "id": "n22-niddk-start",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/tips-get-active/tips-starting-physical-activity",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:18:42.732934+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir situacao atual e se corpo instrucional ainda disponivel",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/tips-get-active/tips-starting-physical-activity",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 49352,
+  "bodyFile": "../raw/n22-niddk-start.html",
+  "sha256": "696aca759f106e725e89513fb2c7e178f5dbb93bf8550f7ddad1f17f3e3b5241"
+}

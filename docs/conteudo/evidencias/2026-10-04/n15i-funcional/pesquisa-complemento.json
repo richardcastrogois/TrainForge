@@ -1,0 +1,241 @@
+{
+  "niche": "N15-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Rotina humana funcional domestica de cinco movimentos ES2019-DOM-01, para idosos saudaveis do recorte estudado. Nao escadas/alongamento/corpo inteiro, cuidador para si ou app autonomo validado.",
+  "next": "Fechamento restrito do lote domestico original preservado. N18-I ativo; C15/N19-I/N20-I pendentes ate completar instrucao/direitos correspondentes. N21 nao liberada; sem homologacao/app.",
+  "evidence": [
+    {
+      "record": "2026-10-04/n15i-funcional/i15-phe-domestico.evidencia.json",
+      "anchors": [
+        "older people",
+        "3 sets of 8-10",
+        "jointly prepared",
+        "health professional"
+      ],
+      "role": "Rotina domestica humana com oito movimentos principais e dois percursos; instrucao/dose/suporte recebidos, nao licenca aberta observada."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-cmo-2026.evidencia.json",
+      "anchors": [
+        "Updated 10 July 2026",
+        "age alone does not determine",
+        "initially supervised",
+        "Open Government Licence"
+      ],
+      "role": "Enquadramento atualizado de funcao/autonomia e licenca do proprio texto de diretrizes, nao do livro PHE."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-sfhe-artigo.evidencia.json",
+      "anchors": [
+        "Creative Commons",
+        "5 h training",
+        "fortnightly telephone",
+        "care support worker manual"
+      ],
+      "role": "Programa assistido explicitamente distinto de treino pessoal do cuidador; manual suplementar retornou 403."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-phe-direitos-shura.evidencia.json",
+      "anchors": [
+        "All rights reserved",
+        "Restricted to Repository staff only",
+        "Published Version"
+      ],
+      "role": "Prova primaria de direitos da publicacao conjunta, nao permissao presumida por hospedagem governamental."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-hope-protocolo.evidencia.json",
+      "anchors": [
+        "12 week progressive exercise",
+        "trained community-based physiotherapists",
+        "Appendix 1. HOPE programme exercises",
+        "Creative Commons Attribution License"
+      ],
+      "role": "Protocolo de 2011 e limites do apendice; resultados de 2026 lidos via fonte primaria web, GET 403 nao e artigo recebido."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-hope-suplemento.evidencia.json",
+      "anchors": [],
+      "role": "Apendice 1 recebido em DOC legado com assinatura CFB e hash conferidos. Texto/tabelas/fotografias ainda nao lidos nem inspecionados; sem parser/conversor local compativel. Integridade do recipiente nao fecha instrucao ou manual completo."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+      "anchors": [
+        "13 exercises",
+        "Reprinted March 2015",
+        "older adults",
+        "eyes closed"
+      ],
+      "role": "Rotina NIA reaproveitada no contexto idoso em casa; nao programa proprio de cuidador, ciclo periodizado ou direitos de fotografias resolvidos."
+    },
+    {
+      "record": "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+      "anchors": [
+        "juntendo-kinkatsu.com",
+        "two to three repetitions",
+        "prerecorded warm-up video",
+        "seven-week SDE"
+      ],
+      "role": "Releitura OEC e SDE: aulas supervisionadas distintas de pratica livre posterior, teste CS-30 distinto de treino; direitos/materiais externos nao cobertos pelo artigo."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2026.evidencia.json",
+      "anchors": [
+        "23 January 2026",
+        "another person was present",
+        "Supplementary file A",
+        "plantar fasciitis",
+        "Creative Commons Attribution License"
+      ],
+      "role": "Artigo 2026 recebido, suplemento agora recebido separadamente por API OA. Fotos divergentes e entrega monitorizada nao selecionadas; nao confundir autonomia 2019."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+      "anchors": [
+        "Creative Commons Attribution License",
+        "once in the morning and once in the evening",
+        "no external load above body weight"
+      ],
+      "role": "Origem/dose/populacao/licenca da edicao 2019 selecionada, cointervencao preservada."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+      "anchors": [],
+      "role": "Suplemento original: membro PDF, hash/vinculo auditados, duas paginas/cinco figuras inspecionadas."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-xml-accept.evidencia.json",
+      "anchors": [
+        "Creative Commons Attribution",
+        "another person"
+      ],
+      "role": "XML 2026 para direitos e entrega; nao selecionado."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-zip-accept.evidencia.json",
+      "anchors": [],
+      "role": "DOCX 2026 recebido, contradicoes registradas, nao selecionado."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n15i-funcional/leitura-snacking.json",
+    "2026-10-04/n15i-funcional/leitura-oec-retomada.json",
+    "2026-10-04/n15i-funcional/triagem-programas-externos.json",
+    "2026-10-04/n15i-funcional/triagem-manual-recente.json",
+    "2026-10-04/n15i-funcional/leitura-nia-funcional.json",
+    "2026-10-04/n13i-planos/leitura-web.json",
+    "2026-10-04/n15i-funcional/leitura-hope-hero.json",
+    "2026-10-04/n15i-funcional/leitura-direitos-candidatos.json",
+    "2026-10-04/n15i-funcional/leitura-sfhe.json",
+    "2026-10-04/n15i-funcional/amostra-phe.json",
+    "2026-10-04/n15i-funcional/criterios-atuais.json",
+    "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+    "2026-10-04/n15c-retomada/pesquisa-complemento.json",
+    "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+    "2026-10-04/n15i-funcional/resumo-pacote-apk.json",
+    "2026-10-04/n15i-funcional/leitura-snacking-suplemento-2026.json"
+  ],
+  "programmes": [
+    {
+      "id": "I15-PHE01",
+      "sourceId": "PR22",
+      "audienceExplicit": true,
+      "environment": "casa",
+      "actor": "idoso_praticando_para_si",
+      "manualObtained": true,
+      "commercialRightsVerified": false,
+      "physicalCaregiverAssistanceDemonstrated": false,
+      "decision": "Excluido da selecao comercial gratuita atual: All rights reserved no repositorio coautor. Manter como referencia, nao traduzir ou importar por OGL presumida."
+    }
+  ],
+  "accessLimits": [
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019.evidencia.json",
+      "status": 403,
+      "contentUsable": false,
+      "reason": "Corpo local nao recebido; leitura primaria web separada sem afirmar hash de artigo."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-suplemento.evidencia.json",
+      "status": 200,
+      "contentUsable": false,
+      "reason": "Link publico PMC trouxe 21372 bytes text/html de reCAPTCHA; is_zipfile false. Extensao docx e status HTTP nao provam suplemento recebido; nao usar como evidencia instrucional."
+    }
+  ],
+  "operations": [
+    {
+      "id": "I15-O21",
+      "decision": "Levantar/subir/alongar sao funcoes diferentes. Exemplo de atividade e emergencia nao viram exercicio dosado; preservados ausencia e fonte."
+    },
+    {
+      "id": "I15-O22",
+      "decision": "Autonomia da fonte e ajuda digital do cuidador nao autorizam sustentacao, transferencia ou progressao automatica."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I15-G01",
+      "met": true,
+      "criterion": "Rotina humana expressamente domestica/idosos, nao somente movimentos genericos, recebida e conferida visualmente."
+    },
+    {
+      "id": "I15-G02",
+      "met": true,
+      "criterion": "Dose/progressao/ausentes e modos sentado/em pe identificados sem criar novo programa; fontes anteriores preservadas."
+    },
+    {
+      "id": "I15-G03",
+      "met": true,
+      "criterion": "Direitos comerciais gratuitos de texto/traducao/instrucao visual essencial do candidato selecionado ES2019-DOM-01 demonstrados por declaracao CC BY e suplemento original vinculado, sem divergencia de kit/variante. PHE/2026 nao selecionados; limites preservados."
+    },
+    {
+      "id": "I15-G04",
+      "met": true,
+      "criterion": "Publico, supervisao, funcao e limites confrontados com referencia atual; nao alegar elegibilidade universal ou assistencia fisica validada."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I15-S21",
+      "fictional": true,
+      "case": "Figura mostra faixa mas texto nao informa resistencia",
+      "expected": "Nao inventar carga/material ou associar automaticamente variante wger."
+    },
+    {
+      "id": "I15-S22",
+      "fictional": true,
+      "case": "Cuidador quer fazer treino para si",
+      "expected": "Identidade/capacidade proprias; nao selecionar rotina do assistido por papel."
+    },
+    {
+      "id": "I15-S23",
+      "fictional": true,
+      "case": "Idoso quer treinar em academia",
+      "expected": "N18-I a N20-I especificos; programa domestico nao equivale a maquinas."
+    },
+    {
+      "id": "I15-S24",
+      "fictional": true,
+      "case": "Livro ensina levantar apos queda",
+      "expected": "Nao converter em repeticoes de treino nem protocolo de cuidador erguendo assistido."
+    }
+  ],
+  "limits": [
+    "Sem autorizacao comercial da publicacao conjunta, nenhum autor contatado ou custo contratado.",
+    "Tempo de ciclo e repouso ausentes nao completados; nenhuma dose recomendada a pessoa real.",
+    "Nenhum programa publicado, imagem/video reutilizado no app, triagem ou teste com utilizador.",
+    "N15-C permanece parcial independentemente do progresso N15-I; N15 pai nao pode ser encerrada com apenas um complemento.",
+    "Fechamento restrito a pesquisa ES2019-DOM-01; nao publicacao, homologacao de triagem, alongamento ou escada.",
+    "2019 nao demonstra beneficio de cuidador por papel; cointervencao alimentar preservada no relato, sem prescrever alimento."
+  ],
+  "closureSelection": {
+    "package": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+    "validation": "2026-10-04/n15i-funcional/resumo-pacote-apk.json",
+    "reason": "Artigo/suplemento 2019 integral recebidos, cinco instrucoes/figuras/dose e CC BY conferidos. Pratica domestica sem supervisao nao elimina triagem/familiarizacao. Selecao alternativa nao corrige PHE/Otago/2026 por inferencia."
+  },
+  "updatedAt": "2026-10-05"
+}

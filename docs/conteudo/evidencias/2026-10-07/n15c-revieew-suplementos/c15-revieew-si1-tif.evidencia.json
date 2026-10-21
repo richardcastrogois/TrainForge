@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-si1-tif",
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM1_ESM.tif",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T23:04:32.623679+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "FiguraSI1 cientifica de configuracao da supervisao remota; fotografia e contexto, nao video, abaixo teto2MiB. Verificar formato/pixels antes da leitura.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM1_ESM.tif",
+  "contentType": "image/tiff",
+  "retryAfter": null,
+  "bytes": 1776088,
+  "bodyFile": "../raw/c15-revieew-si1-tif.tif",
+  "sha256": "81ee30a23b19551a618fe9c1a5616b9e62f264825dd3bd411ea0196d3cb29ee4"
+}

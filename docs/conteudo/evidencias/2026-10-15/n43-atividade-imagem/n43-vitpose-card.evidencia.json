@@ -1,0 +1,23 @@
+{
+  "id": "n43-vitpose-card",
+  "url": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:54:00.206519+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Modelcard primário com autoria, modelo/caminho de entrada e limitações. Não presumir17pontos como classificador de exercícios.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/usyd-community/vitpose-plus-small/0c30b6534bb621af0162b481176742577264e36e/README.md?%2Fusyd-community%2Fvitpose-plus-small%2Fresolve%2Fmain%2FREADME.md=&etag=%2273c7fd3dbea85410628aa363103fa7f85750ee70%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 11656,
+  "bodyFile": "../raw/n43-vitpose-card.md",
+  "sha256": "0f83999d99d35f74969ff14d33c29fe9657888d92f532baff8339ba1a486f834"
+}

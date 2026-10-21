@@ -1,0 +1,23 @@
+{
+  "id": "c15-atac-perfil-institucional-html",
+  "url": "https://abis.gedik.edu.tr/amine-atac",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:40:44.008149+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Perfil institucional da mesma coautora do artigo/cuidador; vinculo area/docencia, sem contatos, dados pessoais ou presumir registro clinico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://abis.gedik.edu.tr/amine-atac",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 18914,
+  "bodyFile": "../raw/c15-atac-perfil-institucional-html.html",
+  "sha256": "02d70b1997c5081860851aad7f57d42919050682a9cf2bf0949e304ea4cd3527"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n30-archila-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8136567/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:45:13.000614+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Métodos de rotina11min dos autores McMaster/5BX, dose/variante/direitos por fonte primária; não repetir CAPTCHA PMC",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8136567/fullTextXML",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 280,
+  "bodyFile": "../raw/n30-archila-xml.xml",
+  "sha256": "9d00e068cdbf244001d1945587b91f718c4d96a48982101219478a01ddd28115",
+  "error": "HTTP 406"
+}

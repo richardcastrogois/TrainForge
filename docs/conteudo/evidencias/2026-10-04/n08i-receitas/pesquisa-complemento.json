@@ -1,0 +1,37 @@
+{
+  "niche": "N08-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Receitas humanas gerais como candidatos de texto e contexto de preparo por idosos/cuidadores, sem dieta terapeutica, textura prescrita, homologacao nutricional ou lote final de publicacao.",
+  "next": "N09-I; N21 retida pelos complementos ainda abertos.",
+  "evidence": [
+    {"record": "2026-10-04/alimentacao-contexto/a08-fda-cuidador.evidencia.json", "anchors": ["Preparing food safely", "preparing and storing"], "role": "Guia institucional de cuidado/preparo; necessidades particulares sao profissionais, nao inferidas da receita."},
+    {"record": "2026-10-04/alimentacao-contexto/a08-fda-seguranca-idosos.evidencia.json", "anchors": ["special health needs", "People 65"], "role": "Contexto de risco alimentar; nao manual integral nem equivalencia a toda condicao clinica."},
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["Plan meals and snacks ahead", "Cook ahead and freeze"], "role": "Planeamento/preparo e barreiras no envelhecimento, nao dose de alimento."},
+    {"record": "2026-09-29/n08-receitas/n08-medline-lentilhas.evidencia.json", "anchors": ["Lentil Confetti Salad", "140"], "role": "Receita humana integral da amostra anterior; manter versao Medline distinta de Food Hero."},
+    {"record": "2026-09-29/n08-receitas/n08-medline-direitos.evidencia.json", "anchors": ["Healthy recipes", "public domain"], "role": "Politica da secao textual; nao transfere direitos a fotografia/site externo."}
+  ],
+  "dependencies": ["2026-09-29/n08-receitas/amostra-receitas.json", "2026-09-29/n08-receitas/resumo-receitas.json", "2026-10-04/n06i-imagens/pesquisa-complemento.json", "2026-10-03/n14c-cuidador/pesquisa-complemento.json"],
+  "sourceFacts": ["FDA destaca preparo e armazenamento seguro pelo cuidador e consulta profissional sobre necessidades particulares.", "NIDDK apresenta planeamento, preparo antecipado/congelamento e dificuldades de mastigacao/degluticao como contextos distintos.", "Medline oferece receita humana de lentilhas com ingredientes, passos, rendimento e porcao; a amostra anterior preserva os ausentes e divergencias."],
+  "candidateReview": {"recipeId": "n08-medline-lentilhas", "sourceVersion": "MedlinePlus / Food Hero creditado", "ingredientCount": 11, "instructionCount": 7, "declaredServings": 6, "declaredServingSize": "2/3 cup (140g)", "declaredProteinG": 1, "proteinReviewFlag": "Valor literal suspeito preservado; nao corrigir por palpite nem usar em metas individuais.", "textRights": "Candidato de texto: secao Healthy recipes explicitamente em dominio publico na politica recebida.", "photoReuseApproved": false, "olderAdultClinicalSuitability": null, "caregiverClinicalSuitability": null, "texturePrescription": null, "releaseApproved": false},
+  "operations": [
+    {"id": "I08-O01", "decision": "Preservar ingredientes, passos humanos, versao, autoria institucional, idioma, rendimento e porcao declarada; nao reescrever como receita clinica para idosos."},
+    {"id": "I08-O02", "decision": "Idoso pode cozinhar para si; cuidador pode cozinhar para si e para outra pessoa. Separar quem preparou, pessoa destino e consumo conhecido."},
+    {"id": "I08-O03", "decision": "Distinguir preparo ativo, espera, cozimento e armazenamento conforme fonte; nao encurtar espera ou inventar duracao/temperatura de conservacao."},
+    {"id": "I08-O04", "decision": "Preferencia ou baixo apetite nao autoriza diagnostico, espesamento, liquidificacao terapeutica ou suplemento. Necessidades particulares seguem orientacao profissional."},
+    {"id": "I08-O05", "decision": "Porcao publicada e rendimento nao provam massa total cozida ou quantidade consumida. Nao dividir automaticamente entre pessoas."},
+    {"id": "I08-O06", "decision": "Mostrar etapas legiveis, alternativas e possibilidade de retomar preparo interrompido; nunca registrar como concluido por tempo decorrido."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I08-G01", "met": true, "criterion": "Contexto idoso/cuidador/preparo respaldado por guias humanos recebidos."},
+    {"id": "I08-G02", "met": true, "criterion": "Receita humana candidata integral rastreavel, com autoria, porcao/rendimento e texto de direitos observado."},
+    {"id": "I08-G03", "met": true, "criterion": "Ausentes, nutrientes sob revisao, versoes e direitos de fotos mantidos separados."},
+    {"id": "I08-G04", "met": true, "criterion": "Papel, preparo e consumo separados; acessibilidade e limites clinicos definidos sem fabricar receita terapeutica."},
+    {"id": "I08-G05", "met": true, "criterion": "Recorte de pesquisa encerrado sem liberar nutrientes/ativos/texto final, traducao ou seguranca individual."}
+  ],
+  "scenarios": [
+    {"id": "I08-S01", "fictional": true, "case": "Idoso relata dificuldade de engolir", "expected": "Nao transformar receita em pure/espessado ou escolher consistencia; encaminhamento profissional."},
+    {"id": "I08-S02", "fictional": true, "case": "Cuidador interrompe preparo", "expected": "Conservar etapa e origem; seguranca/armazenamento conforme instrucoes, sem presumir refeicao pronta."},
+    {"id": "I08-S03", "fictional": true, "case": "Receita serve seis, mas so dois comeram", "expected": "Nao imputar todas as porcoes a assistido/cuidador ou multiplicar consumo sem declaracao."}
+  ],
+  "limits": ["O candidato e receita geral, nao comprovadamente adequada a todos os idosos ou cuidadores.", "Alergenios, composicao, textura clinica, traducao e fotos do lote final exigem revisao separada.", "Fonte FDA americana nao substitui regras/servicos portugueses; nao importa suas imagens ou tabelas.", "Sem programa alimentar completo, app, testes humanos ou homologacao profissional."]
+}

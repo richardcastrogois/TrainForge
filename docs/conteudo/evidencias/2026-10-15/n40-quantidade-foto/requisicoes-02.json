@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n40-gocarb-metadata",
+      "url": "https://api.crossref.org/works/10.3390/nu10060741",
+      "purpose": "Metadados bibliográficos primários registrados pelo editor: conferir autores/DOI/licença, sem obter corpo do editor após429 ou passar pelo desafio PMC. Conteúdo metodológico disponível apenas em excertos indexados primários.",
+      "extension": "json"
+    },
+    {
+      "id": "n40-gofood-metadata",
+      "url": "https://api.crossref.org/works/10.3390/nu15173835",
+      "purpose": "Conferir autoria/licença bibliográfica do estudo goFOOD2023, não pesos, imagens, app ou contrato comercial. Não reproduzir corpo desafiado/limitado pelo editor.",
+      "extension": "json"
+    }
+  ]
+}

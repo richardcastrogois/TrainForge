@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C, primeiro GET de material publicado por NIVA, URL observada na busca exata do nome do cartaz citado em PR88. Nao repetir404Jobogkrop ou presumir identidade de versao/termos/dose. Nao baixar videoMP4.",
+  "requests":[
+    {"id":"c15-niva-faixas-pagina","url":"https://niva.org/exercises-with-elastic-band/","extension":"html","purpose":"Origem institucional da publicacao14/06/2016 e link ao folheto4exercicios; nao eficacia isolada para cuidador."},
+    {"id":"c15-niva-faixas-cartaz-pdf","url":"https://niva.org/app/uploads/Exercises-with-elasticband.pdf","accept":"application/pdf","extension":"pdf","purpose":"Folheto profissional de4exercicios com instrucoes/progressao/seguranca; verificar credito,dose,versao/direitos e compatibilidade com programaPR88 sem alterar protocolo."}
+  ]
+}

@@ -1,13 +1,56 @@
 # Evidências de retorno para a implementação
 
-Registro iniciado em **26/09/2026 e atualizado em 30/09/2026**, baseado nas chamadas e arquivos preservados de 22–30/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
+**Estado vigente - 21/10/2026:** N15 concluiu a pesquisa no recorte modular autorizado: onze componentes para cuidadores, separados dos cinco movimentos domesticos para idosos ja conferidos. N01-N46: 40 pesquisas concluidas nos recortes e seis reusos documentados; nenhuma N ativa ou pausada. Nao sao cinco programas originais de cuidadores completos nem conteudo/pratica/publicacao aprovados. Benson/START/Pilates e variantes nao selecionadas preservam suas lacunas. Fonte, autoria, dose, publico, apoio e direitos por componente; sem ciclo novo ou eficacia herdada. Indice: 840 tentativas GET, 694 HTTP200, 780 hashes conferidos, 331 familias. Sem app/Figma/banco, novos contatos, commit ou push. [Entrega, selecao e limites](evidencias/2026-10-21/n15c-composicao/relatorio.md). Registros datados anteriores abaixo sao historicos e nao substituem esta selecao.
+
+**Registro historico — 16/10/2026:** N18–N21 fecharam a pesquisa nos recortes documentados: biblioteca de9componentes de academia, percursos humanos comparados e9componentes específicos de praça. N01–N46:39pesquisas concluídas nosrecortes,6reusos documentados e **N15 pausada/aberta**; nenhumaNativa. Isso não representa45programas integrais executáveis nem aprovação de prática, conteúdo ou funções automáticas. Autoria, dose, apoio, variante, direitos e lacunas das réplicas integrais preservados; sem treino prescrito porIA. Índice833GETs/689HTTP200/775hashes conferidos,328famílias. Temporários de ensaios/leitura excluídos após uso:2.665.357.099bytes/9recibos, ausência verificada; fontes primárias e recibos preservados. Sem app/Figma/banco/publicação/contatos/commit/push. [Resultados, limites e retomada](evidencias/2026-10-15/continuacao-n39-n46.md) Registros datados abaixo são históricos e não substituem este estado.
+
+
+**Originais N15-C 08/10:** [relatorio](evidencias/2026-10-08/n15c-originais-caser/relatorio.md), [18 campos](evidencias/2026-10-08/n15c-originais-caser/mapa-apk-campos.json) e [verificacoes](evidencias/2026-10-08/n15c-originais-caser/verificacoes.json). Recuperacao: `PR42/PR68/PR85/PR92-100 -> leitura/locator -> receipt -> URL/collectedAtUtc/status/bytes/sha256/bodyFile`. Preservar versoes/doses/populacoes e faltas reais; PR100 nao17roteiros por citar17posturas, antes/depois naoRCT, CC primaria naoNC secundario. Hash do vazio nao artigo.32 coletas/26 corpos utilizaveis/32 hashes;185 testes documentais/134 corpos/71 dependencias, indice473/388/425 e170 familias. G03/G04falsos: **sem importador, publicacao, novo programa aprovado ou N15-C fechada**. Campos ausentes null; ambiente compativel nao muda gesto/dose/preparo/suporte. OutrasNs/N21 retidas; blocos seguintes historicos.
+
+**Conferencia final08/10:** [leitura](evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json) acrescenta `nivaPosterLinkedToPR88.records[] -> PDF1 -> receipt/hash`:quatro gestos documentados, nao nova familia ou prova da versao/dose estudada.30chamadas novas/18corpos200utilizaveis/26hashes incluindo erros,135testes documentais/108corpos/55dependencias, indice441/362/393 e161familias. N15-C continua parcial/sem runtimeimport ouAPK, N21retida. Snapshot28chamadas/134testes abaixo e intermediario desta rodada.
+
+**Retomada08/10 - N15-C:** [leitura](evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json), [inventario de28chamadas](evidencias/2026-10-07/n15c-teses-seguimento/inventario.json), [mapaAPK](evidencias/2026-10-07/n15c-teses-seguimento/mapa-apk-campos.json) e [relatorio](evidencias/2026-10-07/n15c-teses-seguimento/relatorio.md). `sourceId -> localEvidence/families[] ou followup/adherencePR68 -> locator/receipt -> inventario -> url/data/hash/bodyFile` recupera origem semGET novo. Cada estudo tem publico/endpoint/suporte/licenca e ausentes separados; resultado negativo/nulo/protocolo/educativo nao beneficio comprovado. GrauFisioterapia2018 PR68 declarado institucionalmente, nao registro independente; artigo1ano somente resumo. Analise aderencia105pessoas nao coorte randomizada nova ou mudanca de dose/medicacao.16corpos200utilizaveis/24hashes incluindo erros;VA90paginas/novevisuais.134testes documentais/106corpos/55dependencias, indice439/360/391 e161familias. PesquisaN15-C nao fechadaG03/G04, nenhum runtimeimport/APK/rotina nova, outrasNs/N21retidas. Atualizacoes abaixo historicas.
+
+**Estado atual07/10 - rastreabilidade e ambiente:** [decisao](evidencias/2026-10-07/n15c-ambiente-compativel/decisao.json), [revalidacao N15](evidencias/2026-10-07/n15c-ambiente-compativel/revalidacao-n15.json), [leitura Atac](evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json), [DanceCARE](evidencias/2026-10-07/n15c-dancecare/leitura-fontes.json) e [Montero](evidencias/2026-10-07/n15c-ambiente-compativel/leitura-montero.json). `sourceId -> leitura.recordDefaults + records -> locator/secao/pagina/versao -> inventario.sources[].record -> recibo.bodyFile/sha256` recupera fonte e corpo; Montero e referencia de programa sem movimentos individuais publicados recebidos. A cadeia nao e importador implementado. Credenciais/resultado clinico/direitos/condicoes devem acompanhar conteudo, nao selo universal comprovado. Dose ausente permanece `null`; local compativel nao autoriza reduzi-la, trocar material ou dispensar ensino/supervisao.
+
+**Conferencia atual:**124testes documentais/90corpos/51dependencias;411coletas/343HTTP200/367hashes e155familias. [Anexos PR68](evidencias/2026-10-07/n15c-revieew-suplementos/leitura-anexos.json) ligam SI2/linha/coluna aos TIFFs/hash, SI3 a dose semanal e SI4 apenas a resultados. Corrigida omissao de pausa3s do squat3; PNG de leitura com transparencia sobre branco nao substitui originalTIFF. Coletas incluem duas recapturas indevidasAtac mesmoURL/hash: auditadas, nao novas versoes/familias. Seis familias N15 revistas, nao todas as Ns. Pacote anterior/hash inalterado, G03/G04 falsos, nenhum treino/ativo liberado ou APK alterado. Proximas revisoes das Ns anteriores somente aposN15; N21 retida. Historico abaixo nao reintroduz exigencia literal de casa.
+
+**Retomada N15-C07/10 - fisico/relaxamento:** [relatorio](evidencias/2026-10-07/n15c-fisico-relaxamento/relatorio.md), [leitura e registros](evidencias/2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json), [inventario/hash](evidencias/2026-10-07/n15c-fisico-relaxamento/inventario.json), [triagem](evidencias/2026-10-07/n15c-fisico-relaxamento/triagem-web.json). `exerciseRecords[].sourceId/locator -> sources[].receipts -> inventario.sources[].sha256 -> recibo.bodyFile` recupera os originais; complementoPR17 usa `existingFamilySupplement`.41registros de pesquisa, nao cards publicaveis; dose ausente `null`, licenca do artigo nao cobre ativos externos.11coletas/oito corpos utilizaveis/novehashes inclui erro500; CardosoTLS semcorpo/hash. Ficha58corpos/31dependencias,76testes documentais, nenhum pacote novo aprovado. Proximo alvo: livro original Cuidate cuidador e direitos da versao; AnexoIV instrucional parcial nao testing manual nem programa inteiro. N15-C parcial, G03/G04 falsos, outras Ns/implementacao retidas; ambos caminhos conforme acompanhamento da fonte. Historico abaixo preservado.
+
+**Retomada N15-C07/10 - MCM:** [relatorio atual](evidencias/2026-10-07/n15c-mcm/relatorio.md), [leitura e mapa de recuperacao](evidencias/2026-10-07/n15c-mcm/leitura-manual.json), [inventario/hash](evidencias/2026-10-07/n15c-mcm/inventario.json), [triagem sem hashes locais](evidencias/2026-10-07/n15c-mcm/triagem-web.json). PR70 HTML/PDF13p/six paginas visuais;31ensaios citados nao ensaio deste manual, indices de conteudo nao eficacia. ManualD anunciado mas nao recebido; pagina recebida flagfalse/secao vazia nao prova inexistencia global. Topicos relaxamento/respiracao/alongamento nao instrucoes; `null` preservado. `curriculumTopics[].locator -> sourceBodies[].receipt/sha256 -> recibo.bodyFile` recupera o original, nao libera importacao. Direitos de audios/manual/ilustracoes nao herdados. C15-G03/G04 falsos,50corpos/28dependencias e65testes documentais conferidos; nenhum APK/novo treino/contato ou outra N. Proximo artefato: manualD e ativos/licencas, alternativa material domestico ReViEEW completo. Historico abaixo preservado.
+
+**Retomada N15-C07/10 - UFPB e EHU:** [relatorio atual](evidencias/2026-10-07/n15c-ufpb/relatorio.md), [leitura/12grupos](evidencias/2026-10-07/n15c-ufpb/leitura-guia.json), [inventario/recibos](evidencias/2026-10-07/n15c-ufpb/inventario.json), [triagem web](evidencias/2026-10-07/n15c-ufpb/triagem-web.json). Guia2018 recebido dentro da dissertacao108p,16paginas do guia visualizadas; autoria fisioterapeuta explicita, validacao de conteudo/semantica nao eficacia clinica. Direitos BY-ND3Brasil do objeto2018 nao NC e nao transferidos a2020; corpo2020 GET404 nao e PDF. Duas fontes EHU vinculam criacao ReViEEW a area/docencia em Fisioterapia; nao diploma/registro individual. Recuperacao: `records[].locator/sourceDose -> sourceBodies[].receipt/sha256 -> recibo.bodyFile`, com contexto/direitos da mesma versao. Dose ausente e `null`, contagem10 nao10segundos. N15-C nao fechada, C15-G03/G04 falsos; nenhum importador/APK/novo treino, demais Ns retidas. Estados abaixo preservam historico.
+
+**Decisao global07/10 - todos os exercicios:** [criterios do APK](criterios-exercicios-apk.md) e [contrato documental](criterios-exercicios-apk.json). Autoria profissional verificavel, fundamento adequado ao publico/praticante/ambiente/finalidade, instrucao clara e direitos por ativo. Dois caminhos aceitos: autonomo e com orientacao profissional conforme fonte; video nao substitui supervisao ao vivo exigida. Vale para pesquisas anteriores e futuras, nao aprovacao retroativa nem auditoria integral realizada. [ReViEEW/N15-C](evidencias/2026-10-07/n15c-programa/relatorio.md): dois PDFs primarios com hash, programa/efeitos/entrega distintos; pacote domestico ainda nao aprovado. Fila mantida: N15-C ativo e N21 retida. Atualizacoes seguintes sao anteriores a esta decisao.
+
+**Atualizacao07/10 - conteudo especifico N15-C:** [relatorio](evidencias/2026-10-07/n15c-conteudo/relatorio.md) e [11registros/3conjuntos originais](evidencias/2026-10-07/n15c-conteudo/conteudo-documentado.json). Secao Cuidadores para si em casa, nao apenas analise de tempo/necessidades ou treino generico renomeado. Cada registro vincula fonte humana, autoria, pagina/figura, dose/ausentes, contexto e direitos. Contrato para outras secoes: publico x praticante x ambiente x finalidade, com conteudo demonstrado para cada cruzamento; nao herdar aprovacao para jovem/idoso/praca/academia. Nenhum programa novo aprovado/importado; C15-G03/G04 falsos, N15-C unico foco. Ponte corrigida: contagem5 nao5segundos. Uma coleta nova, dois corpos reutilizados/hash; indice351/292/309,137familias.47testes documentais, ficha42corpos/20dependencias e fila validados; nao testes clinicos/APK. Pergunta geral/especifico abaixo ja respondida: especifico. Snapshots anteriores preservados.
+
+**Atualizacao06/10 - somente N15-C:** [relatorio](evidencias/2026-10-06/n15c-fechamento/relatorio.md), [leitura de manuais](evidencias/2026-10-06/n15c-fechamento/leitura-manuais.json) e [mapa de campos APK](evidencias/2026-10-06/n15c-fechamento/mapa-apk-campos.json). PR62-66, livroCBT366p/moduloVA54p/PMR9p recebidos; dose, ausentes, supervisao e direitos por ativo separados. C15-G03/G04 ainda falsos, nenhum programa novo aprovado. N15-C unico foco ativo, N18-I/N19-I/N20-I pendentes, N21 retida. Indice350/291/308,136familias,41testes documentais passaram. Pergunta de escopo geral/especifico pendente; nao criar rotina misturando fontes. Snapshots abaixo sao anteriores.
+
+**Atualizacao mais recente05/10:** [relatorio programas/manuais02](evidencias/2026-10-05/programas-manuais-02/relatorio.md) e [mapa de campos/proveniencia do APK](evidencias/2026-10-05/programas-manuais-02/mapa-apk-campos.json).13novos corpos com hash, My Ten/seisDOCX, IMPACCT protocolo e REACT2018 instrucao funcional. Formularios/exemplos nao prescricao; versoes/licencas/ativos ausentes nao intercambiaveis. Indice342/286/302 inclui falhas/barreiras;131familias. Nenhum pacote novo aprovado, quatro complementos parciais, N21 retida.35testes documentais/15fichas conferidos. `sourceId -> localEvidence -> recibo/hash -> versao/localizador -> direitos por ativo`; nao gerar rotina preenchendo ausentes. Blocos abaixo sao snapshots anteriores.
+
+## Retomada Atual - N13-I, 04/10/2026
+
+**Estado verificado - continuacao 05/10/2026:** N18-I ativo/parcial; N15-C, N19-I e N20-I pendentes/parciais. N15-I/N17-I fechados somente para cinco movimentos domesticos ES2019-DOM-01. Fila: seis reusos, dez Ns fechadas, tres pendentes e uma ativa; onze complementos fechados, N15 pai aberto pelo cuidador. N21 nao iniciada. Indice: 320 chamadas / 268 HTTP 200 / 281 hashes, incluindo erros/barreiras; 124 familias. Cartilha ELA integral recebida com CC BY-ND4.0, dose/gesto divergentes e acompanhamento; AGUEDA A5real47paginas lido,10paginas visualizadas, mas instrucoes/dose/licenca externa nao fechados; IST-CIEX clinico especifico nao selecionado. Sem novo pacote operacional aprovado. Suite documental:24testes passaram,15fichas conferidas e pacote domestico com hash preservado. Nao testes clinicos ou do aplicativo. Sem app, Figma, API, banco, commit ou push. Detalhes em `docs/conteudo/complementos-2026-10-04.md`; blocos seguintes preservam snapshots historicos.
+
+## Snapshot N15-C - Antes da Rodada Sequencial
+
+[Direção vigente/fila](evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json): fechar os complementos anteriores antes de N21. [N15-C, parcial](evidencias/2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json), [sete coletas originais](evidencias/2026-10-03/n15c-cuidador-casa/requisicoes.json), [três coletas NIA/NIH](evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-nia.json), [resumo de proveniência](evidencias/2026-10-03/n15c-cuidador-casa/resumo-complemento.json). Consolidação 04/10: sete páginas e dois PDFs 200/hash, uma política NIH 403 preservada. Exercício próprio do cuidador documentado; [rotina amostral NIA](evidencias/2026-10-03/n15c-cuidador-casa/amostra-nia.json) melhora instrução/dose, não resolve calendário/variantes/direitos do conjunto. PR17–PR20 classificados e CI05 atualizado sem duplicar família; zero vídeo/suplemento ou teste de pessoas. Total atual: **189 registros / 150 HTTP 200 / 154 corpos verificados; 86 fontes/famílias**. As contagens e “próximo N21” nos snapshots seguintes descrevem o estado anterior, não autorização vigente.
+
+**Tentativa adicional em português:** [manifesto brasileiro](evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-br.json); falha TLS antes de receber corpo preservada, sem retry ou desativar verificação. Artigo identificado no resultado primário, manual/condições operacionais/licença não obtidos. Onze tentativas N15-C: nove 200, um 403, uma falha TLS. Não confundir falha sem corpo com fonte aproveitável.
+
+## Revisão Atual N01–N20 — Públicos e Ambientes
+
+[Revisão documental](idosos-e-cuidadores.md), [matriz de quatro contextos](evidencias/2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json), [resumo verificável](evidencias/2026-10-03/revisao-publicos-ambientes/resumo-revisao.json). Vinte resumos e cinco complementos relidos; 80 avaliações de contexto e 26 critérios futuros N21–N46. Idosos em casa/praça/academia separados; cuidador treinando para si em casa distinto de acompanhamento. Apenas N15/N16 têm evidência de exercício específico parcial no contexto doméstico. Os demais programas deste público/ambiente não foram demonstrados; bases alimentares não provam percursos de treino. Sem nova chamada externa; hashes desta revisão são dos JSONs locais, não nova validação de corpos HTTP. Fechamentos e licenças anteriores preservados. Próximo N21, aparelhos de praça distintos de barras/calisthenics; não iniciado por esta revisão.
+
+Registro iniciado em **26/09/2026 e atualizado em 03/10/2026**, baseado nas chamadas e arquivos preservados desde 22/09. Este documento responde **de onde veio, como foi chamado, o que retornou, onde está e o que pode alimentar no app**. Não define os futuros endpoints internos do TrainForge nem afirma que as integrações existem.
 
 Os campos abaixo foram observados em amostras. Presença na amostra não é garantia de obrigatoriedade ou disponibilidade futura do fornecedor. As permissões e limitações continuam no [catálogo por fonte](fontes.json) e em [direitos](direitos-e-acordos.md).
 
 ## Como recuperar sem fazer outra chamada
 
-- [Índice de chamadas e hashes](evidencias/retornos-observados.json): **147 registros de chamadas preservadas, 114 respostas HTTP 200**, incluindo tentativas sem rede, falhas, dois casos negativos 404 e EUR-Lex 202 sem texto legal utilizável. Não são 147 APIs nem 114 fontes distintas. N10 acrescentou 10 tentativas, incluindo uma URL 404 corrigida pelo link oficial; reutilizou três políticas e uma página anterior.
-- [Inventariador local](evidencias/inventariar-retornos.py): gera o índice sem rede; conferiu 113 corpos mantidos como arquivos contra o SHA-256 original. Não confundir o hash de um corpo HTTP com o de um JSON reformatado pelo coletor.
+- [Indice de chamadas e hashes](evidencias/retornos-observados.json): **221 registros preservados / 174 HTTP 200**. Inclui falhas, desafios e corpos sem conteudo utilizavel; nao sao fontes/APIs distintas ou programas aprovados.
+- [Inventariador local](evidencias/inventariar-retornos.py): conferiu **185 corpos** contra SHA-256 da resposta, incluindo erros/barreiras; JSON reformatado e hash de artefato sao separados.
 - [Pilotos conferidos](evidencias/2026-09-26/pilotos-resumo.json): resultados dos analisadores, separados do retorno original.
 - Respostas integrais e planilhas indicadas como **locais** não acompanham o clone Git. Metadados, scripts e resumos permitem localizar/reproduzir legitimamente a coleta. O clone sozinho não contém todos os insumos.
 
@@ -19,6 +62,39 @@ python docs/conteudo/evidencias/analisar-pilotos.py
 ```
 
 No host atual há Python em `C:\Users\richa\AppData\Roaming\uv\tools\graphifyy\Scripts\python.exe`; os scripts usam biblioteca padrão. `analisar-pilotos.py` exige os corpos locais, enquanto `consultar-fontes.py` apenas consulta o índice. As chamadas dos coletores são explícitas; não executá-los só para consultar contexto.
+
+## Complementos idosos/cuidadores — cinco rodadas
+
+[Progresso e critérios](idosos-e-cuidadores.md). N14-C fechado para pesquisa nos requisitos; quatro rodadas parciais. 36 cenários fictícios no bloco, não testes com pessoas/app. Oito novas coletas 200/hash; sem homologação clínica/jurídica/editorial.
+
+| Recorte / ficha | Retorno novo | O que falta |
+|---|---|---|
+| [N15-I](evidencias/2026-10-03/n15i-idosos-casa/pesquisa-complemento.json) | NHS sentado, 43.424 bytes; cinco grupos. OEC/política anteriores reutilizados | Programa fisicamente assistido, elegibilidade/localização e direitos por ativo |
+| [N16-I](evidencias/2026-10-03/n16i-apoios/pesquisa-complemento.json) | Otago PDF 2.897.430 bytes/72 páginas; registro HTML 2.328 bytes é shell, não metadados completos | Atualidade, tradução/terceiros e cobertura de apoio físico; profissional exigido não equivale a cuidador |
+| [N17-I](evidencias/2026-10-03/n17i-instrucao/pesquisa-complemento.json) | W3C idosos 46.678 bytes/mídia 43.349 bytes; referências, não mídia nova | Texto/voz/legendas revistos, licença/playback por ativo e compreensão com público |
+| [N11-I](evidencias/2026-10-03/n11i-alimentacao/pesquisa-complemento.json) | Guia NIDDK idosos 71.585 bytes; política anterior reutilizada | Revisão nutricional/pt-PT; assistência alimentar e contextos clínicos específicos |
+
+Otago: o registro institucional consultado na web declara CC BY 4.0; o aviso © ACC 2007 no PDF não contradiz por si essa licença. A coleta local do registro não trouxe a declaração; vínculo comprovável ao ativo, exceções e revisão de tradução continuam pendentes. Não chamar de conflito jurídico resolvido ou impedir CC só por haver copyright.
+
+O [coletor](evidencias/coletar-nichos-off.py) mantém timeout 25 s, TLS padrão e cache de sucesso/falha sem retry. Padrão 2 MiB; limite explícito de 4 MiB permitido somente para PDF com Accept/extensão compatíveis. [Quatro testes isolados](evidencias/test_coletar_nichos.py) aprovados antes do PDF maior. Nenhuma alteração nos corpos antigos.
+
+## N18–N20 — academia e instrução
+
+- [N18, parcial](evidencias/2026-10-03/n18-academia-iniciante/pesquisa-recorte.json): duas páginas antigas 200/hash reutilizadas, rotina A/B e progressão; licença/instrução/adequação não demonstradas. Iniciação com barra não é indicação geriátrica universal.
+- [N19, parcial](evidencias/2026-10-03/n19-academia-percursos/pesquisa-recorte.json): BBB/Monolith originais vistos no leitor web; coletor retornou dois 404/22 bytes, com hashes de erros, sem retry. Não contar como corpos locais completos ou importar dieta/medicamentos citados.
+- [N20, parcial](evidencias/2026-10-03/n20-instrucao-academia/pesquisa-recorte.json): [analisador sem rede](evidencias/analisar-academia-instrucao.py) reconta 75 registros wger; 6 com português, 37 com imagem, 8 com vídeo, 4 imagens sinalizadas IA. Busca lexical por seis movimentos N18 retorna 7/3/3/2/0/3 candidatos, não equivalência semântica. Zero overhead por substring não comprova ausência no catálogo. Zero mídia/match aprovado; ID 1022 permanece bloqueado.
+
+Próximo N21. Pendências são preservadas; pesquisa não autoriza publicação, Figma/app/API/banco ou etapa 02.
+
+## N14-C — Rotina e registos com cuidador
+
+**Concluído para pesquisa, recorte documental — 03/10.** [Manifesto](evidencias/2026-10-03/n14c-cuidador/requisicoes.json), [nove operações/dez cenários](evidencias/2026-10-03/n14c-cuidador/pesquisa-complemento.json), [resumo](evidencias/2026-10-03/n14c-cuidador/resumo-complemento.json). Duas novas chamadas: CNPD 200/24.994 bytes, gov.pt 200/243.172 bytes; hashes conferidos. Fonte CDC e dependências N14/auditoria reutilizadas. [Validador documental](evidencias/validar-complementos-idosos.py), sem rede.
+
+Proposta separa pessoa assistida/autor, acesso por âmbito, consumo observado/relatado versus servido, correção com origem, dispositivo do cuidador e percurso pessoal. Retirada de acesso não implica apagar todo histórico ou exportações; retenção/representação e base aplicável exigem revisão. Consentimento de cuidado clínico não equivale a consentimento RGPD ou autorização de uso do app. Referências portuguesas, não licença de republicação ou homologação jurídica. Nenhum acesso, API, banco ou fluxo implementado/testado. Próximo N15-I.
+
+## Revisão idosos e cuidadores — snapshot inicial, 03/10
+
+[Auditoria N01–N17](idosos-e-cuidadores.md), [matriz](evidencias/2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json) e [resumo](evidencias/2026-10-03/revisao-idosos-cuidadores/resumo-revisao.json). Duas páginas institucionais OMS/CDC recebidas com 200/hash, uma política CDC reutilizada; 17 referências e sete cenários fictícios conferidos. Casa é ambiente, não público; N15/N16 têm evidência específica parcial para adultos mais velhos, não fluxo de cuidador ou adequação universal. N01–N14 fechados no recorte geral não aprovam este público. Complementos N14-C/N15-I/N16-I/N17-I/N11-I pendentes; próximos nichos também devem distinguir pessoa assistida, autor/origem, capacidade/apoios e privacidade. Sem implementação ou validação clínica. N18: duas páginas 200/hash obtidas; análise interrompida pela revisão posterior do autor.
 
 ## Convenções que evitam implementar o formato errado
 
@@ -33,6 +109,94 @@ No host atual há Python em `C:\Users\richa\AppData\Roaming\uv\tools\graphifyy\S
 Os coletores 0.1 e 0.2 configuram `User-Agent: TrainForgeResearch/0.1 (public data feasibility study)` / `TrainForgeResearch/0.2 (public source feasibility research)` e `Accept: application/json` / `*/*`, respectivamente. O coletor 0.3 usa `TrainForgeResearch/0.3 (content feasibility; local research)` e `Accept: application/json,text/html,application/pdf;q=0.9,*/*;q=0.5`. São configurações dos scripts, não captura de tráfego de cada pedido. A transferência Ciqual por `Invoke-WebRequest` registra o cliente, mas não preserva os headers enviados.
 
 Todos os pedidos inventariados são GET. Apenas USDA usou `api_key=DEMO_KEY`, a chave pública de demonstração; nenhuma chave privada está documentada aqui. Um futuro adaptador deve validar HTTP, tipo de conteúdo, tamanho, identidade, unidade, licença e origem antes de aceitar dados. Nunca converter erro HTTP em catálogo vazio válido.
+
+## N11 — Manutenção, hábitos e qualidade alimentar
+
+**Concluído para pesquisa em 02/10; registros consolidados em 03/10.** Quatro guias humanos, duas políticas de direitos e seis rascunhos de lições. As seis chamadas devolveram HTTP 200 e corpos com SHA-256. [Conteúdo e proveniência](evidencias/2026-10-02/n11-manutencao-habitos/conteudo-guiado.json), [resumo](evidencias/2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json), [manifesto](evidencias/2026-10-02/n11-manutencao-habitos/requisicoes.json) e [verificador local](evidencias/analisar-manutencao-habitos.py).
+
+| Fonte | Entrega observada | Uso e limite |
+|---|---|---|
+| NU25 — NIDDK | Dois guias de adultos: hábitos, manutenção, variedade e diário/contexto | Texto candidato; política e exceções preservadas. Exemplos dos EUA precisam de localização e revisão |
+| NU26 — CDC | Grupos alimentares, variedade e escolhas práticas | Condicional para adaptação; crédito/não endosso e restrições de alteração substantiva |
+| NU27 — DGS/PNPAS | PDF português dos 10 passos | Referência local; licença comercial aberta não demonstrada |
+
+Campos futuros: objetivo de hábito, contexto/hora da refeição, variedade, lista de compras e revisão da tradução. Lições são rascunhos, não conteúdo publicado. Este recorte não fornece dieta individual, tratamento clínico ou plano alimentar completo. Corpos integrais ficam no `raw/` local ignorado; o clone contém metadados e resumos.
+
+## N12 — Alimentação, massa muscular e desempenho
+
+**Concluído para pesquisa em 03/10.** Três fontes humanas avaliadas, quatro chamadas locais: duas HTTP 200 e duas HTTP 403; quatro corpos com hash, dos quais os dois 403 são erros, não guias. [Fichas e limites](evidencias/2026-10-03/n12-desempenho/conteudo-guiado.json), [resumo](evidencias/2026-10-03/n12-desempenho/resumo-desempenho.json), [coleta](evidencias/2026-10-03/n12-desempenho/requisicoes.json) e [verificador](evidencias/analisar-desempenho.py).
+
+| Fonte | Resultado | Decisão |
+|---|---|---|
+| NU28 — [ISSN, 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/) | Artigo integral com autoria, público e CC BY 4.0 | Candidato textual; revisar atualidade e adaptação pt-PT |
+| NU29 — [NIH/ODS](https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/) | Guia e política acessíveis na leitura web; coletor devolveu 403, preservados sem retry | Condicional; a [política](https://ods.od.nih.gov/About/Site_Policies.aspx) condiciona reprodução à ausência de alterações |
+| NU30 — [MedlinePlus/A.D.A.M.](https://medlineplus.gov/ency/article/002458.htm) | HTML obtido, revisão e equipe nominal | Referência protegida pela [política específica](https://medlineplus.gov/about/using/usingcontent/); direitos de receitas não se aplicam à enciclopédia |
+
+ISSN liga proteína e treino resistido para pessoas saudáveis que se exercitam. A faixa da fonte permanece identificada como populacional. Três rascunhos tratam contexto de treino, faixa publicada versus meta pessoal e origem/data da orientação. Faltam revisão atualizada, texto final pt-PT e plano individual; nenhum método de compensação automática do gasto foi demonstrado. **Próximo: N13.**
+
+## N13 — Planos alimentares completos, humanos e reutilizáveis
+
+**Concluído para pesquisa em 03/10, com reutilização condicional.** Um menu humano completo obtido: [A Week With the DASH Eating Plan, NHLBI](https://www.nhlbi.nih.gov/resources/week-dash-eating-plan), de abril/2019. PDF de oito páginas, sete dias, 28 grupos de refeições e 175 linhas com sódio. Duas chamadas HTTP 200, dois hashes e política N08 reutilizada. [Projeção](evidencias/2026-10-03/n13-planos-alimentares/amostra-planos.json), [resumo](evidencias/2026-10-03/n13-planos-alimentares/resumo-planos.json) e [analisador](evidencias/analisar-planos-alimentares.py). Texto integral derivado permanece no raw local.
+
+Autoria institucional está nos metadados; ficha declara público geral/pacientes. É exemplo DASH cardiovascular com base de 2.000 kcal, sem avaliação individual. A modificação do PDF em 2023 não demonstra revisão clínica. As oito páginas foram renderizadas e inspecionadas, incluindo quantidades, coluna de sódio e sugestões laterais.
+
+| Dia | Energia declarada (kcal) | Proteína declarada (g) | Sódio declarado (mg) | Soma das linhas impressas (mg) |
+|---|---:|---:|---:|---:|
+| 1 | 2062 | 114 | 2101 | 2100 |
+| 2 | 2027 | 99 | 2035 | 2038 |
+| 3 | 1997 | 103 | 2114 | 2114 |
+| 4 | 2024 | 110 | 2312 | 2310 |
+| 5 | 1976 | 111 | 2373 | 2374 |
+| 6 | 1939 | 105 | 1671 | 1670 |
+| 7 | 1993 | 93 | 2069 | 2070 |
+
+Seis somas diferem 1–3 mg do total: causa não comprovada, valores preservados sem correção. Dias 4/5 ultrapassam o cabeçalho de 2.300 mg; `chicken and Spanish rice`, jantar do dia 4, não declara quantidade. Copos/colheres/unidades e frações de receita dependem da N03 e de vínculo à receita, sem equivalência automática a gramas.
+
+A [política NHLBI](https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo) pede publicações formatadas sem alterações, sem publicidade/endosso e direitos separados para logos/terceiros. **Temos menu completo humano demonstrado; falta permissão concreta de adaptação comercial pt-PT, revisão e publicação.** Não escalar porções para criar dietas individuais. Próximo N14.
+
+## N14 — Organizar e personalizar a rotina alimentar
+
+**Concluído para pesquisa em 03/10.** [Proposta rastreável](evidencias/2026-10-03/n14-rotina-alimentar/rotina-proposta.json), [resumo](evidencias/2026-10-03/n14-rotina-alimentar/resumo-rotina.json) e [verificador documental](evidencias/analisar-rotina-alimentar.py). Uma nova chamada HTTP 200 com hash, seis dependências reutilizadas e três acessos web MyPlate 403 registrados no [manifesto](evidencias/2026-10-03/n14-rotina-alimentar/requisicoes.json), sem repetir ou contar como guias obtidos.
+
+A [fonte NHLBI](https://www.nhlbi.nih.gov/health/dash/living-with-dash) oferece planeamento, escolhas/substituições, pequenos objetivos e diário contextual; os direitos continuam condicionais pela política preservada. Repetição, favoritos e histórico são propostas funcionais do TrainForge, identificadas separadamente da orientação clínica.
+
+| Operação proposta | Informação / regra necessária |
+|---|---|
+| Planejar refeição | Data, refeição, referência/versão, quantidade e unidade planeadas |
+| Registrar consumo | Hora e quantidade/unidade efetivas; vínculo opcional ao planeado |
+| Repetir | Ocorrências independentes e alcance explícito da edição; histórico confirmado preservado |
+| Substituir | Referências antes/depois, quantidade, completude nutricional; sem equivalência ou adequação a alergias presumidas |
+| Favoritar | Preferência pessoal por ID/versão, origem e disponibilidade |
+| Alterar pessoalmente | Cópia com linhagem, autor/alterações e revisão própria; catálogo humano permanece preservado |
+| Lista de compras | Planeado, rendimento e unidades demonstradas; quantidades sem conversão ficam separadas |
+
+Seis cenários fictícios ilustram planeado/consumido, repetição, cópia pessoal, porção sem massa, nutriente ausente e troca sem equivalência. A validação confere origem, hash e arquivos dependentes; **não é teste de fluxo do app nem arquitetura/API/banco implementados**. N01/N02/N03/N08/N11/N13 fornecem os dados e limites; personalização clínica/metas automáticas continuam pendentes. Próximo N15.
+
+## N17 — Instrução visual dos treinos em casa
+
+**Rodada 03/10 encerrada; N17 parcial.** [Manifesto](evidencias/2026-10-03/n17-casa-instrucao/requisicoes.json), [metadados por ativo](evidencias/2026-10-03/n17-casa-instrucao/amostra-midia.json), [resumo](evidencias/2026-10-03/n17-casa-instrucao/resumo-instrucao.json), [analisador](evidencias/analisar-casa-instrucao.py). Uma chamada HTML 200, 71.534 bytes/hash; política NHS anterior conferida sem nova coleta.
+
+[Página institucional NHS](https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/): 15 seções, 15 IDs Brightcove distintos, título/variante, conta/player e revisão abril/maio 2025 com prazo 2028; página revista agosto 2026. São metadados recebidos, não vídeos reproduzidos, duração medida, legendas testadas ou ficheiros obtidos. O conjunto inclui preparação, força e alongamentos; não equivaler a 15 programas.
+
+[Termos NHS](https://www.nhs.uk/our-policies/terms-and-conditions/), seção 3.5: pessoas identificáveis em vídeo/áudio e direitos de terceiros não entram na licença geral. Zero ativos de mídia aprovados. Texto elegível segue condições de atribuição/adaptação e revisão própria; tradução não herda aprovação clínica. Figuras N16 também têm autoria/limites próprios. Nomes semelhantes de vídeos e exercícios N15/N16 não demonstram a mesma variante, equipamento ou instrução; vínculo definitivo pendente. Não transportar o serviço britânico 111 para Portugal. Seguir N18, sem simular integração.
+
+## N16 — Casa com material disponível
+
+**Rodada 03/10/2026 encerrada; N16 parcial.** [Manifesto](evidencias/2026-10-03/n16-casa-material/requisicoes.json), [projeção factual](evidencias/2026-10-03/n16-casa-material/amostra-programas.json), [resumo](evidencias/2026-10-03/n16-casa-material/resumo-programas.json), [analisador](evidencias/analisar-casa-material.py). Uma chamada PDF, HTTP 200, 512.773 bytes e SHA-256 conferido. Corpo local ignorado: `2026-10-03/raw/n16-growing-stronger.pdf`.
+
+Fonte humana PR11, [Growing Stronger — Tufts/CDC](https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf): adultos mais velhos; 126 páginas no arquivo, copyright 2002. Não usar data de modificação do PDF como revisão clínica. Fases semanas 1–2, 3–6 e 7 em diante; 2–3 sessões por semana, aquecimento de cinco minutos, duração global ausente. Doze movimentos; `Finger marching` tem sequência/posições, não a dose 2×10 dos demais. Equipamento real inclui cadeira, parede, degrau/corrimão, halteres e caneleiras; não cobre todos os kits domésticos.
+
+Páginas PDF 44 e 64 apresentam critérios diferentes de passagem à parte III; ambos preservados, sem transição automática. Progressão depende de forma/esforço e contexto, não meta individual gerada. Seis páginas renderizadas e inspecionadas, incluindo direitos e figuras; ilustrações e PAR-Q têm terceiros. Página 4 pede crédito e distribuição sem alterações: metadado CDC de domínio público não demonstra direito de tradução comercial. Fonte permanece condicional, sem publicação ou adequação individual aprovada.
+
+A alternativa sobre sarcopenia encontrou reCAPTCHA no PMC e 429 no editor; apenas limite de acesso, não programa/tabela/licença obtidos. Sem tentativa de contornar. Próximo N17, preservando a lacuna de programa geral por kit/tempo/experiência.
+
+## N15 — Programas para casa sem equipamento
+
+**Parcial; rodada de pesquisa encerrada em 03/10 para seguir N16.** [Programa estruturado](evidencias/2026-10-03/n15-casa-sem-equipamento/amostra-programas.json), [resumo](evidencias/2026-10-03/n15-casa-sem-equipamento/resumo-programas.json), [analisador](evidencias/analisar-casa-sem-equipamento.py). Duas respostas 200 com hash, apenas uma contendo programa. O antigo URL NHS de cinco semanas redireciona ao índice de exercícios: sucesso HTTP não significa programa adquirido.
+
+[PR13 — estudo OEC/SBRT](https://pmc.ncbi.nlm.nih.gov/articles/PMC12692657/): tabela humana de 12 aulas (3–14), quatro movimentos, doses/descansos e progressão. Sete semanas, duas aulas semanais; primeiras duas de introdução. Artigo CC BY 4.0, com crédito/licença/alterações. Público de adultos mais velhos, seleção médica e supervisão online no estudo; cadeira de cerca de 40 cm e dispositivo para supervisão. Sem equipamentos especiais de resistência, mas com objeto doméstico.
+
+Faltam instrução integral de aquecimento/desaceleração e vídeos, revisão pt-PT e adequação ao percurso geral autónomo. O artigo não valida o produto nem um filtro de elegibilidade do TrainForge. O piloto NHS anterior inclui pesos e não fecha este nicho. **Manter N15 parcial; não declarar catálogo geral sem equipamento homologado.**
 
 ## EX01 — wger: movimentos e instruções
 

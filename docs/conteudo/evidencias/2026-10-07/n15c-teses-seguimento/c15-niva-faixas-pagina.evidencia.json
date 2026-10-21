@@ -1,0 +1,23 @@
+{
+  "id": "c15-niva-faixas-pagina",
+  "url": "https://niva.org/exercises-with-elastic-band/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:36:22.155663+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Origem institucional da publicacao14/06/2016 e link ao folheto4exercicios; nao eficacia isolada para cuidador.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://niva.org/exercises-with-elastic-band/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 60105,
+  "bodyFile": "../raw/c15-niva-faixas-pagina.html",
+  "sha256": "a25bedb4fd2b176c6fd6e34592240b3e533614324aec5df554e7c6c64e4115fc"
+}

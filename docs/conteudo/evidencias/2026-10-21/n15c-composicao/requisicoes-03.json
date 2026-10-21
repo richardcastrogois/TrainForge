@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {
+      "id": "n15m-va-politica-direitos",
+      "url": "https://department.va.gov/copyright-policy/",
+      "purpose": "Conferir a regra institucional para obras produzidas pelo governo; nao estender a fotos de terceiros, obras transferidas ou a qualquer PDF apenas hospedado no VA.",
+      "extension": "html"
+    },
+    {
+      "id": "n15m-first-credencial-newsletter2022",
+      "url": "https://www.durham.hsrd.research.va.gov/FunctionQUERI/FQ_Newsletter_Jan2022.pdf",
+      "purpose": "Documento institucional que identifica Josh Dadolf MSW LICSW e seu papel no Caregivers FIRST; qualificacao profissional, nao novo ensaio ou permissao sobre terceiros.",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

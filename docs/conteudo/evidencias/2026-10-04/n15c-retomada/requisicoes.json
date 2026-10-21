@@ -1,0 +1,24 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-04",
+  "requests": [
+    {
+      "id": "c15-carefit-prototipo",
+      "url": "https://formative.jmir.org/2021/10/e27358",
+      "extension": "html",
+      "purpose": "Verificar programa proprio domiciliar de cuidadores, autoria humana, instrucao/progressao e direitos, sem copiar marca/app ou aprovar videos por licenca do artigo."
+    },
+    {
+      "id": "c15-carefit-viabilidade",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9565999/",
+      "extension": "html",
+      "purpose": "Verificar viabilidade e limites de exercicio proprio em casa e interrupcoes de cuidadores; nao eficacia clinica ou manual completo presumidos."
+    },
+    {
+      "id": "c15-unijui-canonica",
+      "url": "https://revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753",
+      "extension": "html",
+      "purpose": "Consultar origem primaria canonica sem www observada em nova busca. Preservar falha anterior da outra origem; TLS padrao e nenhum contorno, retry da URL anterior ou permissao inferida."
+    }
+  ]
+}

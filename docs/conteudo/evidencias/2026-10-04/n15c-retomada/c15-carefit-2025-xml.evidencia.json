@@ -1,0 +1,22 @@
+{
+  "id": "c15-carefit-2025-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12432464/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:18:15.323844+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar edicao mais recente de CareFit identificada na busca, anexos e licenca dos videos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12432464/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 204788,
+  "bodyFile": "../raw/c15-carefit-2025-xml.xml",
+  "sha256": "e62dc0820aa68bae5060e3de785d8a888cb70eebf760165e6ed1535b6a27c61d"
+}

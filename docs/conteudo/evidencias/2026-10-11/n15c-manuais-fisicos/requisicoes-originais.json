@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-11",
+  "scope":"Primeiro GET de documentos publicos distintos. UFBA anuncia tese embargada ate22/05/2028: apenas pagina publica de metadados, sem baixar bitstream/texto derivado, solicitar copia ou tentar contornar restricao. ReBEC e registro, nao resultado ou manual. PDF Sun sem teto autorizado de pesquisa.",
+  "requests":[
+    {"id":"c15-sun2025-artigo-pdf","url":"https://link.springer.com/content/pdf/10.1186/s12912-025-03881-5.pdf","extension":"pdf","accept":"application/pdf","purpose":"PDF original com tabelas1-4/fluxograma e direitos. Link observado no artigo recebido, nao outro protocolo ou manual inferido."},
+    {"id":"c15-gomes2022-ufba-metadata","url":"https://repositorio.ufba.br/handle/ri/36416","extension":"html","purpose":"Metadados publicos da tese2022 e embargo, comparando amostra/entrega com resumo do artigo2026. Nao obter arquivo embargado."},
+    {"id":"c15-gomes2021-rebec","url":"https://ensaiosclinicos.gov.br/rg/RBR-4fvfn2p","extension":"html","purpose":"Registro prospectivo de Gomes: populacao, dose planejada e desenho. Manter divergencias do plano230/um mes e piloto45/dois meses, sem fundir ou presumir manual acessivel."}
+  ]
+}

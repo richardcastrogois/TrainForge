@@ -1,0 +1,24 @@
+{
+  "id": "c15-caser2018-pdf",
+  "url": "https://www.fundacioncaser.org/sites/default/files/adjuntos/2206.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:48:56.485404+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Texto integral original24p: conferir autoria profissional, programa, instrucoes, cohort/dose, apoio/seguranca e direitos para a lacuna N15-C sem alterar intervencao.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.fundacioncaser.org/sites/default/files/adjuntos/2206.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 295015,
+  "bodyFile": "../raw/c15-caser2018-pdf.pdf",
+  "sha256": "8ddf2d4733d49d2030faaabf6fb85996a77e448a95bd3475a00cff67c377c0b2",
+  "bodyFormatMatchesRequest": true
+}

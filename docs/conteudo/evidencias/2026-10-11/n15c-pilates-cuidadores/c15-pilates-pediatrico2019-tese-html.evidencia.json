@@ -1,0 +1,23 @@
+{
+  "id": "c15-pilates-pediatrico2019-tese-html",
+  "url": "https://i-rep.emu.edu.tr/xmlui/handle/11129/5008",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:02:13.636610+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro institucional da tese, versao/autoria/arquivo publico/direitos e eventual licencia explicita sem inferir livre comercio por download.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://i-rep.emu.edu.tr/items/2736ad23-26de-4244-8564-143df8c135e9",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 513537,
+  "bodyFile": "../raw/c15-pilates-pediatrico2019-tese-html.html",
+  "sha256": "e2c4397266e921c2b9bd7d69836cee13f791d94a8db74f5b0fe4696db57e9336"
+}

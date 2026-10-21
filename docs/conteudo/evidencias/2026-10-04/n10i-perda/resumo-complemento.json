@@ -1,0 +1,59 @@
+{
+  "niche": "N10-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 4,
+  "verifiedDependencies": 5,
+  "proposedOperations": 6,
+  "fictionalScenarios": 3,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/alimentacao-contexto/a09-nhs-perda-involuntaria.evidencia.json",
+      "url": "https://www.nhs.uk/symptoms/unintentional-weight-loss/",
+      "sha256": "b9246b316b853b3553c66a17c82d16e499aa16463b9f3bbe8594f42d03c2f3d6"
+    },
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    },
+    {
+      "record": "2026-09-30/n10-perda-peso/n10-niddk-programa.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program",
+      "sha256": "fdfde2c7316542b484239cdbd09c93b71d9e7cceb7b278208919ad54ad4dc725"
+    },
+    {
+      "record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults",
+      "sha256": "b4a433b9d02c3a3f68c540c17a11726e6ccd107a1d8909ab852b78cc17b38e7b"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-09-30/n10-perda-peso/conteudo-guiado.json",
+      "artifactSha256": "a7574e75da36e25e229842c9d63f510671aa1c5949390ecddaab1f8c5ba6116e"
+    },
+    {
+      "file": "2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "artifactSha256": "e4f8e86a3be9967321a772f9a391b46ffd95e7a63639f766ef66d187235ff2ac"
+    },
+    {
+      "file": "2026-10-04/n09i-ganho/pesquisa-complemento.json",
+      "artifactSha256": "4bbefcb1875298fe926f398e55db11b02d716af9819051026dea47d19149a59e"
+    },
+    {
+      "file": "2026-10-04/geriatria-nutricao/leitura-web.json",
+      "artifactSha256": "abcf7a5624912d01f87bf9baf562ee12a9af860e5ea11b88121f02d65baf6528"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    }
+  ],
+  "next": "N11-I; N21 retida pelos complementos ainda abertos."
+}

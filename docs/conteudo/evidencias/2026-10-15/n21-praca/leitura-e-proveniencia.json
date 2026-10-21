@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-16",
+  "selectiveReading": {
+    "Barbosa2024": "HTMLmétodos/resultados/limitações/CCBY/contribuições",
+    "Barbosa2022": {
+      "pdfPages": 8,
+      "textPages": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "visuallySeen": [
+        1,
+        2,
+        3
+      ]
+    },
+    "Chow2021": {
+      "pdfPages": 16,
+      "textPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "visuallySeen": [
+        1,
+        4,
+        5
+      ]
+    },
+    "Pereira2017": {
+      "pdfPages": 90,
+      "textPages": [
+        1,
+        2,
+        3,
+        5,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "visuallySeen": [
+        5,
+        47,
+        50,
+        58,
+        60
+      ]
+    },
+    "MarcosPardo2024": {
+      "pdfPages": 17,
+      "textPages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visuallySeen": [
+        1,
+        5,
+        6,
+        14
+      ]
+    }
+  },
+  "professionalEvidence": [
+    {
+      "person": "HsuehWenChow",
+      "primaryPage": "https://pe-acad.ncku.edu.tw/p/404-1045-110526.php?Lang=en",
+      "observed": "Busca primária institucional: assocprof/PhDPennState/leisurehealthpromotion; PDF3instrutorcertificadoidosos. Não fisioterapeuta/registro inferido."
+    },
+    {
+      "person": "DaniloSalesBocalini",
+      "primaryPage": "https://residenciamultiprofissional.ufes.br/residencia-multiprofissional-em-saude-do-adulto-obesidade-e-doencas-associadas",
+      "observed": "Índicewebinstitucional professorEducaçãoFísica/doutorado; GETlocalTLSfalhou, sem corpo/hash e sem desativarTLS."
+    },
+    {
+      "person": "Pereira/Ribeiro",
+      "observed": "Qualificação/CREF do texto primárioPDF47; direitos sóestudo/pesquisaPDF5."
+    },
+    {
+      "person": "EquipeMarcos2024",
+      "observed": "Qualificação/responsabilidade funcional nosPDF6/14, não sóafiliação."
+    }
+  ],
+  "failedSources": [
+    {
+      "receipt": "n21-chow2019-pdf.evidencia.json",
+      "httpStatus": 403,
+      "bodyFile": "../raw/n21-chow2019-pdf.pdf",
+      "sha256": "85190a7e1ebdc87620c9ebb80dab48708ce073483a3fc4e63f0622ff8e4afd90",
+      "bytes": 409,
+      "hashVerified": true
+    },
+    {
+      "receipt": "n21-bocalini-profissional-ufes.evidencia.json",
+      "httpStatus": null,
+      "bodyFile": null,
+      "sha256": null,
+      "bytes": null,
+      "hashVerified": false
+    },
+    {
+      "receipt": "n21-marcos2023-protocolo.evidencia.json",
+      "httpStatus": 403,
+      "bodyFile": "../raw/n21-marcos2023-protocolo.pdf",
+      "sha256": "f37c7b96654c264fb02f0e72311ccc714107044be07e0f75b780fc6d44fc9785",
+      "bytes": 5719,
+      "hashVerified": true
+    }
+  ],
+  "noFailedSourceReattemptOrMirror": true,
+  "webOnlyLeadsNotSelected": [
+    {
+      "label": "ToowoombaBlackGully/CityAdelaide",
+      "primaryPage": "https://www.tr.qld.gov.au/change",
+      "finding": "Biblioteca municipal de vídeos/QR existe em índiceprimário; nenhuma mídiaassistida/baixada ougrantdoYouTubeconfirmadopelofornecedor; não selecionada como instrução validada.",
+      "secondaryLicenceNotAccepted": "WikimediaCCnão substituiu confirmação primária; não nova evidência de execução."
+    }
+  ],
+  "researchProcessCorrections": [
+    "Duas invocações iniciais do coletor manual2017 com sintaxe/caminho incorretos falharam antes deGET. A invocação corrigida obteve um únicoGET200.",
+    "URLNature digitadacomfinal5incorreto retornoucachemiss; pesquisa identificoufinal1correto. Não contado como corpo recebido."
+  ],
+  "cleanupReceipts": [
+    "limpeza-barbosa.json",
+    "limpeza-leitura.json"
+  ],
+  "newMediaSelected": 0,
+  "clinicalOrAppTest": false
+}

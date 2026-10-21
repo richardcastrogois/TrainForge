@@ -1,0 +1,394 @@
+{
+  "niche": "N20",
+  "date": "2026-10-03",
+  "method": "Convenience sample; lexical candidates only",
+  "counts": {
+    "records": 75,
+    "portuguese": 6,
+    "withImages": 37,
+    "withVideos": 8,
+    "imagesFlaggedAi": 4
+  },
+  "artifactProvenance": [
+    {
+      "file": "planejamento/evidencias/wger-25.json",
+      "artifactSha256": "5d7e89c6bcd44fbaf68cfe6ecdb7ebe3fb1e81e0c4aae1bf6bbc0f7a35a4e033",
+      "hashScope": "Local stored artifact; not necessarily original HTTP byte stream"
+    },
+    {
+      "file": "conteudo/evidencias/wger-offset-300.json",
+      "artifactSha256": "1724b934691e7ea0aec2f9bd9ce21b281489618edaa2c9bfa704962f7390ec01",
+      "hashScope": "Local stored artifact; not necessarily original HTTP byte stream"
+    },
+    {
+      "file": "conteudo/evidencias/wger-offset-600.json",
+      "artifactSha256": "9260581c43804fb80fbd08a56407ac48b624e2ab95ae7ce7f7705df072d903ff",
+      "hashScope": "Local stored artifact; not necessarily original HTTP byte stream"
+    }
+  ],
+  "candidates": {
+    "row": [
+      {
+        "exerciseId": 76,
+        "englishNames": [
+          "Bench Press Narrow Grip"
+        ],
+        "equipment": [
+          "Barbell",
+          "Bench"
+        ],
+        "license": {
+          "id": 1,
+          "full_name": " Creative Commons Attribution Share Alike 3",
+          "short_name": "CC-BY-SA 3",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        },
+        "licenseAuthor": "wger.de",
+        "images": 3,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 81,
+        "englishNames": [
+          "Bent Over Dumbbell Rows (Single Arm)"
+        ],
+        "equipment": [
+          "Bench",
+          "Dumbbell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "sebk",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 83,
+        "englishNames": [
+          "Bent Over Rowing"
+        ],
+        "equipment": [
+          "Barbell"
+        ],
+        "license": {
+          "id": 1,
+          "full_name": " Creative Commons Attribution Share Alike 3",
+          "short_name": "CC-BY-SA 3",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        },
+        "licenseAuthor": "wger.de",
+        "images": 2,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 84,
+        "englishNames": [
+          "Bent Over Rowing Reverse"
+        ],
+        "equipment": [
+          "Barbell"
+        ],
+        "license": {
+          "id": 1,
+          "full_name": " Creative Commons Attribution Share Alike 3",
+          "short_name": "CC-BY-SA 3",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        },
+        "licenseAuthor": "wger.de",
+        "images": 2,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1022,
+        "englishNames": [
+          "Single Arm Plank to Row"
+        ],
+        "equipment": [
+          "Kettlebell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "",
+        "images": 2,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1082,
+        "englishNames": [
+          "Bent over row to external rotation"
+        ],
+        "equipment": [],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "tinman",
+        "images": 0,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1093,
+        "englishNames": [
+          "Rowing Machine"
+        ],
+        "equipment": [
+          "none (bodyweight exercise)"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "Boertie",
+        "images": 0,
+        "videos": 0,
+        "variantApproved": false
+      }
+    ],
+    "benchPress": [
+      {
+        "exerciseId": 73,
+        "englishNames": [
+          "Bench Press"
+        ],
+        "equipment": [
+          "Barbell",
+          "Bench"
+        ],
+        "license": {
+          "id": 1,
+          "full_name": " Creative Commons Attribution Share Alike 3",
+          "short_name": "CC-BY-SA 3",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        },
+        "licenseAuthor": "sistab2",
+        "images": 2,
+        "videos": 3,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 76,
+        "englishNames": [
+          "Bench Press Narrow Grip"
+        ],
+        "equipment": [
+          "Barbell",
+          "Bench"
+        ],
+        "license": {
+          "id": 1,
+          "full_name": " Creative Commons Attribution Share Alike 3",
+          "short_name": "CC-BY-SA 3",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        },
+        "licenseAuthor": "wger.de",
+        "images": 3,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1094,
+        "englishNames": [
+          "Seated Bench Press"
+        ],
+        "equipment": [
+          "Bench"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "colundrum",
+        "images": 0,
+        "videos": 0,
+        "variantApproved": false
+      }
+    ],
+    "squat": [
+      {
+        "exerciseId": 43,
+        "englishNames": [
+          "Barbell Hack Squats"
+        ],
+        "equipment": [
+          "Barbell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "BePieToday",
+        "images": 0,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1640,
+        "englishNames": [
+          "Dumbbell Front Squat"
+        ],
+        "equipment": [
+          "Dumbbell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "AlucardEvil40",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1653,
+        "englishNames": [
+          "Dumbbell Side Squat"
+        ],
+        "equipment": [],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "AlucardEvil40",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      }
+    ],
+    "chinup": [
+      {
+        "exerciseId": 1093,
+        "englishNames": [
+          "Rowing Machine"
+        ],
+        "equipment": [
+          "none (bodyweight exercise)"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "Boertie",
+        "images": 0,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1654,
+        "englishNames": [
+          "Machine Lateral Raise"
+        ],
+        "equipment": [
+          "Gym mat"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "roneydya",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      }
+    ],
+    "overheadPress": [],
+    "deadlift": [
+      {
+        "exerciseId": 1088,
+        "englishNames": [
+          "Dumbbell sumo deadlift"
+        ],
+        "equipment": [
+          "Dumbbell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "philip",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1641,
+        "englishNames": [
+          "Kettlebell One Legged Deadlift"
+        ],
+        "equipment": [
+          "Dumbbell",
+          "Kettlebell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "AlucardEvil40",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      },
+      {
+        "exerciseId": 1652,
+        "englishNames": [
+          "Dumbbell Romanian Deadlift"
+        ],
+        "equipment": [
+          "Dumbbell"
+        ],
+        "license": {
+          "id": 2,
+          "full_name": "Creative Commons Attribution Share Alike 4",
+          "short_name": "CC-BY-SA 4",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        "licenseAuthor": "AlucardEvil40",
+        "images": 1,
+        "videos": 0,
+        "variantApproved": false
+      }
+    ]
+  },
+  "semanticHoldExerciseIds": [
+    1022
+  ],
+  "mediaInspectedThisRound": 0,
+  "approvedMappings": 0,
+  "approvedAssets": 0,
+  "releaseApproved": false,
+  "olderSpecificSuitabilityVerified": false,
+  "appTestsRun": false
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "niche": "N37",
+  "status": "concluida_para_pesquisa_no_recorte",
+  "researchClosed": true,
+  "criterion": "Dono do dispositivo, pessoa medida, autor, permissao e origem nos quatro contextos. Relogio do cuidador nao mede o assistido; teste real e duplicados permanecem pendentes.",
+  "startedAfterN36ResearchClosure": true,
+  "n36Audit": "../n36-gps-mapa/auditoria-fechamento.json",
+  "n38Started": true,
+  "n15Paused": true,
+  "n21Started": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closureAudit": "auditoria-fechamento.json",
+  "nextNiche": "N38"
+}

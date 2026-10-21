@@ -1,0 +1,23 @@
+{
+  "id": "c15-estabilizacao2022-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9140401/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:25:04.931102+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ensaio24cuidadoras: meditacao35min+estabilizacao25min; controle urbano. Verificar variante, dose, autoria, supervisao e limites, sem exigir literalidade casa.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9140401/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 203332,
+  "bodyFile": "../raw/c15-estabilizacao2022-xml.xml",
+  "sha256": "9fb629efe2386ddfe827c2057e1dd126019b040598dc167e8c9ce01cb2ac5079"
+}

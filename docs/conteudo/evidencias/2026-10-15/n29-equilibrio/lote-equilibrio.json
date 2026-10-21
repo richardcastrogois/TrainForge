@@ -1,0 +1,117 @@
+{
+  "id": "N29-NHS-EQUILIBRIO-05-01",
+  "date": "2026-10-15",
+  "niche": "N29",
+  "sourceId": "PR05",
+  "kind": "Coleção humana institucional de cinco exercícios leves, ordem e doses da página; progressão qualitativa, não periodização numérica",
+  "authorship": "NHS website, sem autor profissional individual nomeado. Procedência interna de pesquisa, não crédito automático do texto adaptado no produto.",
+  "sourceUrl": "https://www.nhs.uk/live-well/exercise/balance-exercises/",
+  "preparation": "Roupa confortável, espaço livre e parede/estrutura estável disponível. A fonte aconselha proximidade a parede/cadeira estável em caso de perda de equilíbrio; seleção do produto conserva parede/corrimão adequado e não promete segurança com mera proximidade.",
+  "eligibility": {
+    "source": "Página educacional geral para prática leve em casa, inclusive quem esteve inativo, sem triagem clínica individual fornecida.",
+    "limit": "Não é programa autônomo para risco elevado de queda, incapacidade de recuperar equilíbrio, dor/sintomas, limitação cognitiva ou necessidade de assistência física. Avaliação/apoio adequados são condições da futura oferta, não seleção individual feita pelo agente.",
+    "sourceSupervision": "NHS não exige instrutor nessas instruções gerais; não atribuir ao NHS o modelo de visitas Otago.",
+    "higherRisk": "Otago é caminho distinto avaliado/ensinado por profissional; não basta trocar por cuidador ou acrescentar profissional hipotético sem conteúdo."
+  },
+  "components": [
+    {
+      "id": "sideways-walking",
+      "sourceSection": "Sideways walking",
+      "methodFacts": "Começar com pés juntos e joelhos ligeiramente fletidos. Deslocar lentamente um pé para o lado e aproximar o outro; manter a bacia sem ceder durante os passos.",
+      "dose": {
+        "stepsEachDirection": 10,
+        "alternative": "Ir de um lado ao outro do cômodo, distância não publicada; não converter em metros."
+      },
+      "support": "Orientação geral de proximidade à parede/apoio estável; contato manual obrigatório não aparece nesse comando, não afirmar que existe.",
+      "end": "Concluir a direção e depois a direção oposta; não adicionar retorno rápido ou manobra sem instrução."
+    },
+    {
+      "id": "grapevine",
+      "sourceSection": "Simple grapevine",
+      "methodFacts": "Cruzar o pé direito à frente do esquerdo e aproximar o esquerdo, progredindo lateralmente; inverter direção para o outro lado.",
+      "dose": {
+        "aimCrossStepsEachSide": 5
+      },
+      "support": "Se necessário, dedos na parede para estabilidade; menor passo aumenta desafio segundo a fonte. Alteração do tamanho não tem incremento ou calendário definido.",
+      "end": "Terminar os passos para o lado oposto com pés reunidos; sem misturar com marcha tandem."
+    },
+    {
+      "id": "heel-to-toe-walk",
+      "sourceSection": "Heel-to-toe walk",
+      "methodFacts": "Em pé ereto, colocar calcanhar direito imediatamente à frente dos dedos do esquerdo, repetir invertendo os pés. Manter olhar em frente.",
+      "dose": {
+        "aimMinimumSteps": 5,
+        "stepCountEachLeg": null
+      },
+      "support": "Dedos na parede se necessário. A fonte sugere afastar da parede ao progredir; retirada de apoio não selecionada como regra automática da oferta.",
+      "end": "Não há meia-volta ou tempo de estabilização prescritos; não preencher um trajeto em oito a partir do Otago."
+    },
+    {
+      "id": "one-leg-stand",
+      "sourceSection": "One-leg stand",
+      "methodFacts": "De frente para parede, braços estendidos e pontas dos dedos na parede. Elevar uma perna mantendo bacia nivelada e ligeira flexão da perna que suporta. Recolocar suavemente o pé no chão. Repetir dos dois lados.",
+      "dose": {
+        "repetitionsPerSide": 3,
+        "sides": 2,
+        "holdSeconds": [
+          5,
+          10
+        ],
+        "knownHoldOnlySeconds": [
+          30,
+          60
+        ]
+      },
+      "support": "Parede explícita, não vídeo sem apoio. Não olhos fechados ou exercício em base instável.",
+      "end": "Pé apoiado no chão antes de trocar de lado ou terminar."
+    },
+    {
+      "id": "step-up",
+      "sourceSection": "Step-up",
+      "methodFacts": "Subir um degrau com a perna direita e juntar a esquerda; descer e retornar ao início. Repetir começando com cada perna devagar e com controle.",
+      "dose": {
+        "maximumStepsStartingWithEachLeg": 5,
+        "stepHeightCm": null
+      },
+      "support": "Degrau preferencialmente com corrimão ou perto de parede para apoio. Sem equivalência com banco/aparelho de praça.",
+      "end": "Voltar à posição inicial, ambos os pés no piso; não treino de escada contínua."
+    }
+  ],
+  "frequencyPerWeekMinimum": 2,
+  "progression": "Construir aos poucos e aumentar repetições gradualmente conforme a fonte; sem número de incremento, intervalo de semanas, teste de aprovação ou ordem de dificuldade publicada. Parede não é retirada automaticamente.",
+  "programmeWeeks": null,
+  "totalSessionSeconds": null,
+  "warmupSeconds": null,
+  "cooldownSeconds": null,
+  "restsSeconds": null,
+  "termination": "Cada componente termina pelo retorno/passo explicitado. Não há sessão cronometrada ou encerramento cardiorrespiratório fornecido; não inventar tempos nem importar rotina de outro programa.",
+  "compatibility": "Cinco exercícios da mesma página mantidos com doses próprias. Ordem documental da página não é demonstração de progressão clínica validada; proximidade/contacto de apoio varia por componente. NHS2vezes/semana não Otago3vezes.",
+  "caregiverInterruptions": "Página NHS não estudou interrupções. Otago admite dividir seu programa individualizado e respirações entre séries, sem transferir essa regra para NHS. A prática é do cuidador para si, sem cuidado simultâneo presumido.",
+  "contexts": {
+    "idoso_casa": {
+      "status": "aplicavel_com_limites",
+      "reason": "Rotina doméstica institucional; preservar parede/corrimão, avaliação individual e capacidade, sem prometer prevenção de quedas. Para necessidade clínica, caminho distinto profissional."
+    },
+    "idoso_academia_praca": {
+      "status": "pendente",
+      "reason": "Ambiente externo/aparelhos não avaliados pela página; piso, apoio fixo, espaço e degrau precisam equivalência real. Não transformar cadeira/banco em sustentação confiável por nome."
+    },
+    "idoso_academia": {
+      "status": "aplicavel_com_limites",
+      "reason": "Possíveis apoios/área compatíveis, com verificação individual. Não aplicar em aparelho ou plataforma instável."
+    },
+    "cuidador_casa_proprio": {
+      "status": "aplicavel_com_limites",
+      "reason": "Adulto elegível praticando para si, sem efeito específico em cuidadores demonstrado ou função de assistência ao idoso. Pausas/reinício não dosados pela fonte."
+    }
+  },
+  "rights": "Texto sob OGL e condições NHS 3.6/3.10/3.11; tradução/adaptação usa atribuição OGL genérica conforme termos, sem crédito NHS específico da versão adaptada no produto. Procedência de pesquisa preservada. Fotos/pessoas/logos/vídeos não selecionados.",
+  "rightsFile": "../n28-mobilidade/direitos-e-autoria.json",
+  "beforePublication": [
+    "Revisão profissional de elegibilidade, variante, recuperação do equilíbrio e apoio reais",
+    "Revisão da versão pt-PT, compreensão/acessibilidade e atribuição/direitos finais",
+    "Implementação/testes em etapa autorizada"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

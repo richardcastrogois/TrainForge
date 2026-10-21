@@ -1,0 +1,23 @@
+{
+  "id": "c15-mit-espanhol2023-suplementos-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:42:36.459769+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "DataSheet1PDF anunciado e requerido para screening/satisfacao, conferir se traz instrucoes em vezde assumir pelo nome.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 217599,
+  "bodyFile": "../raw/c15-mit-espanhol2023-suplementos-zip.zip",
+  "sha256": "af0fc58d4b5afb96d8d517481c19845c09794a10031c049f6723eee5c3c9b4da"
+}

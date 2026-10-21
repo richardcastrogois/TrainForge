@@ -1,0 +1,43 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 2,
+  "usableBodies": 2,
+  "receipts": [
+    {
+      "id": "c15-jcdr-licenca-html",
+      "url": "https://www.jcdr.net/aboutus.asp",
+      "status": 200,
+      "bytes": 56000,
+      "sha256": "c12961b1c5a55e0d560ba1da4514b8ee14ae34e0781105f4a7c3248a6c37e6ee",
+      "record": "2026-10-11/n15c-respiracao-oncologia/c15-jcdr-licenca-html.evidencia.json",
+      "verifiedAnchors": [
+        "NonCommercial",
+        "NoDerivatives"
+      ],
+      "textEncoding": "cp1252",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-respiracao-oncologia2026-html",
+      "url": "https://www.jcdr.net/article_fulltext.asp?id=23750&issn=0973-709x&issue=7&page=VC01&volume=20&year=2026",
+      "status": 200,
+      "bytes": 90750,
+      "sha256": "2229a85fc57723ef9ca9673e22516289f1ebf6e63acaef800abdaac440d1cf10",
+      "record": "2026-10-11/n15c-respiracao-oncologia/c15-respiracao-oncologia2026-html.evidencia.json",
+      "verifiedAnchors": [
+        "diaphragmatic",
+        "pursed lip",
+        "25 minutes",
+        "77 participants"
+      ],
+      "textEncoding": "cp1252",
+      "usableForReading": true
+    }
+  ],
+  "networkCallsDuringAnalysis": 0,
+  "pdfReceived": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

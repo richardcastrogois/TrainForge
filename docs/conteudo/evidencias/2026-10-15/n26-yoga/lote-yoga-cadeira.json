@@ -1,0 +1,130 @@
+{
+  "id": "N26-CADEIRA-03-PRO-01",
+  "date": "2026-10-15",
+  "niche": "N26",
+  "status": "rascunho_factual_para_revisao",
+  "kind": "Subsequência de3posturas com preparação e encerramento; não os sete exercícios nem aula10min original",
+  "sourceIds": [
+    "PR180",
+    "PR182",
+    "PR166"
+  ],
+  "authorship": {
+    "movementsAndDose": "Louise Mahoney, MS, RYT, crédito explícito noPDF1; vinculadaWRIISC/VA na página e artigo2017. RYT é credencial histórica declarada, não registro atual verificado.",
+    "safety": "NCCIH/NIH, publicação revisada em2023 por Inna BelferMDPhD e DavidShurtleffPhD.",
+    "selection": "TrainForge seleciona módulos já escritos; não novo treino criado ou validado pelos autores."
+  },
+  "scope": "Adulto avaliado como capaz de sentar/realizar esses gestos, com ensino e orientação qualificados antes da oferta. Não tratar cadeira como elegibilidade automática, aula clínica remotaVA ou prescrição por diagnóstico.",
+  "support": {
+    "instructionSource": "NCCIH recomenda instrutor qualificado e atenção/modificação individual; não ofertar como aprendizagem autônoma indiscriminada.",
+    "actualSupportContracted": false,
+    "separateFromMissingCommands": "Os comandos, lados, ciclos e transições escolhidos estão nas páginas indicadas. Orientação não foi usada para inventar holds dos quatro exercícios omitidos."
+  },
+  "modules": [
+    {
+      "id": "prepare",
+      "sourceId": "PR180",
+      "pdfPage": 9,
+      "kind": "preparação",
+      "methodFacts": "Sentar com pés apoiados, afastados aproximadamente à largura da bacia; mãos nas coxas e cabeça/tronco alinhados.",
+      "breathingCountsPerInhale": 5,
+      "breathingCountsPerExhale": 5,
+      "breathingCycles": 2,
+      "countSeconds": null,
+      "note": "Contagens não segundos; não obter cronômetro10min pela soma dessas contagens."
+    },
+    {
+      "id": "mountain",
+      "sourceId": "PR180",
+      "pdfPage": 10,
+      "kind": "postura1",
+      "name": "Seated Mountain Pose",
+      "methodFacts": "Elevar os braços pelos lados ao inspirar, palmas voltadas para cima; baixar ao expirar, palmas para baixo.",
+      "repetitions": 4,
+      "countsInhale": 4,
+      "countsExhale": 4,
+      "countSeconds": null
+    },
+    {
+      "id": "side",
+      "sourceId": "PR180",
+      "pdfPage": 11,
+      "kind": "postura2",
+      "name": "Seated Side Stretch",
+      "methodFacts": "Com braços elevados, mão direita segura punho esquerdo; inclinar para a direita ao expirar. Voltar ao centro na inspiração, trocar os punhos e realizar à esquerda; voltar ao centro e baixar braços ao terminar.",
+      "breathsInEachSide": 2,
+      "sides": [
+        "direita",
+        "esquerda"
+      ],
+      "holdSeconds": null
+    },
+    {
+      "id": "catcow",
+      "sourceId": "PR180",
+      "pdfPage": 13,
+      "kind": "postura3",
+      "name": "Seated Cat/Cow",
+      "methodFacts": "Mãos sobre joelhos; inspirar elevando o peito/arqueando o tronco; expirar arredondando coluna com pelve para trás. Manter cabeça alinhada, sem deixá-la cair.",
+      "cyclesTotal": 4,
+      "interpretation": "Um ciclo descrito e repetir mais3; não3no total.",
+      "cadenceSeconds": null
+    },
+    {
+      "id": "closing",
+      "sourceId": "PR180",
+      "pdfPage": 17,
+      "kind": "encerramento",
+      "methodFacts": "Retomar alinhamento sentado e joelhos à largura da bacia. Fazer dois ciclos respiratórios elevando/baixando braços; no terceiro reunir palmas junto ao peito. A fonte termina com olhos fechados e respiração normal por alguns segundos.",
+      "armBreathingCycles": 2,
+      "thirdBreathPalmsTogether": true,
+      "additionalRestSeconds": null,
+      "restSource": "few seconds, não número fixo",
+      "note": "Seleção factual não exige um ritual verbal, nem promete relaxamento. Modificação de olhos/posição por necessidade individual deve ser revista e identificada, não atribuída silenciosamente à autora."
+    }
+  ],
+  "totalDurationSeconds": null,
+  "schedule": null,
+  "breathingPolicy": "Sem apneia/retenção nova; contagens mantidas como contagens, ciclos como ciclos. O Ujjayi/PDF8 existe na fonte, mas não é selecionado como técnica obrigatória: tratar a exclusão como recorte novo, não réplica da aula.",
+  "compatibility": "Posturas sentadas da mesma sequência conservadas na ordem original com início/término explícitos. Omitir outros gestos é seleção editorial; não demonstrou benefício nem equivalência à pausa10min ou às aulas1horaVA. Revisar combinação antes da publicação.",
+  "notSelected": [
+    {
+      "pdfPage": 12,
+      "movement": "Shoulder rolls and stretch",
+      "reason": "Hold do alongamento final não quantificado; não criar dose."
+    },
+    {
+      "pdfPage": 14,
+      "movement": "Seated Forward Bend",
+      "reason": "Duração não definida e cabeça abaixo do coração; não generalizar glaucoma/hipertensão/coluna."
+    },
+    {
+      "pdfPage": 15,
+      "movement": "Seated Spinal Twist",
+      "reason": "45graus, olhos ehold exigem recorte/avaliação próprios; não selecionar por imagem."
+    },
+    {
+      "pdfPage": 16,
+      "movement": "Seated Triangle",
+      "reason": "Gestos laterais/descida e apoios pedem avaliação específica; fora da subsequência."
+    }
+  ],
+  "safety": {
+    "sourceId": "PR182",
+    "facts": "Ensino por instrutor qualificado; saúde/lesões/equilíbrio/glaucoma/pressão grave/gravidez/idade avançada podem exigir avaliação e modificações. Não extremos ou respiração forçada de iniciante; não adiar cuidado médico.",
+    "selectionNote": "Nenhuma contraindicacão virou diagnóstico ou fila clínica automática. Nenhum benefício de dor/ansiedade/sono herdado de revisão geral."
+  },
+  "contexts": {
+    "home": "Viabilidade material com cadeira apropriada/espaço/apoio; não ensaio doméstico demonstrado. Verificar cadeira estável/apoio dos pés e capacidade antes de oferta.",
+    "park": "Não é programa de aparelho de praça nem banco público garantidamente compatível.",
+    "olderAdults": "FonteNCCIH pede cautela e necessidades individuais; não liberar por idade ou rótulo sentado.",
+    "caregivers": "Prática para si com condições individuais, não assistência física de dependente. N15 continua pausada/aberta."
+  },
+  "rights": {
+    "PR180": "PolíticaVA aplica domínio público a material produzido pelo governo, não a todo documento hospedado. Não foi comprovado vínculo empregatício/função de produção de cada foto ou do deck inteiro; não declarar licença geral. Somente dados/métodos selecionados em redação independente com autoria/localizador; enquadramentoCDADC PR166. Não copiar/traduzir expressão, fotos, layout ou áudio.",
+    "PR182": "Declaração própria de domínio público/duplicação incentivada no corpo recebido; seleção apenas de fatos educativos, sem imagens.",
+    "beforePublication": "Conferir originalidade/limites do ativo final e atribuição; se desejar expressão/mídia do deck, direitos continuam ausentes."
+  },
+  "releaseApproved": false,
+  "appImplemented": false
+}

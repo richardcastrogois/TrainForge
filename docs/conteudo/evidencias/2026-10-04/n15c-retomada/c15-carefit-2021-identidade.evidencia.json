@@ -1,0 +1,22 @@
+{
+  "id": "c15-carefit-2021-identidade",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.2196%2F27358&format=json&resultType=core&pageSize=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:22:03.804730+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Identificar deposito OA legitimo do prototipo CareFit por DOI observado na fonte recebida; preservar AWS WAF anterior, sem contorno daquele desafio.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.2196%2F27358&format=json&resultType=core&pageSize=1",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 7606,
+  "bodyFile": "../raw/c15-carefit-2021-identidade.json",
+  "sha256": "1e40e25f92df7a80afbbe71b448bd0d1ed09a58c02ae2e26e30f4c74c5a3e256"
+}

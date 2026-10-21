@@ -1,0 +1,23 @@
+{
+  "id": "c15-benson2022-original-html",
+  "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819/20815783",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T02:20:37.109409+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PrimeiroGET do corpo editorial integral indicado na pagina antiga ja recebida; autores profissionais, roteiro completo, dose, apoio e resultados/falhas. Nao copiar script/CD/folheto paraAPK.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://revistas.udea.edu.co/public/journals/recursos_html/iee-Html/iee-v40n3/2216-0280-iee-40-03-e06.html",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 124841,
+  "bodyFile": "../raw/c15-benson2022-original-html.html",
+  "sha256": "432df1e016323afff438481bb1922554d3257adb2b7cc513df56b037137fd494"
+}

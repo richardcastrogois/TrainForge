@@ -1,0 +1,24 @@
+{
+  "id": "c15-dbe2026-editora-html",
+  "url": "https://www.tandfonline.com/doi/abs/10.1080/01942638.2026.2628830",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:17:50.450040+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Pagina primaria de autoria profissional/direitos e links exatos, uma coleta normal; se403 nao repetir/contornar.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.tandfonline.com/doi/abs/10.1080/01942638.2026.2628830",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5798,
+  "bodyFile": "../raw/c15-dbe2026-editora-html.json",
+  "sha256": "620c8825da65c835a848b2549c7ad108c297c29406d3a69f4d5ea56af4299fb2",
+  "error": "HTTP 403"
+}

@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C: verificar anexos operacionais do ensaio original de cuidadores de pessoas apos AVC. Primeiras coletas, sem retries ou contato. Separar exercicio do cuidador de reabilitacao do paciente; pesquisa nao e autorizacao de adaptacao dos ativos NC-ND.",
+  "requests":[
+    {"id":"c15-moreira-granada-handle","url":"https://digibug.ugr.es/handle/10481/54876","extension":"html","purpose":"Registro institucional original, identidade, data de defesa/edicao e licenca da tese; link PDF observado no registro."},
+    {"id":"c15-moreira-granada-pdf","url":"https://digibug.ugr.es/bitstream/handle/10481/54876/81256.pdf?isAllowed=y&sequence=4","accept":"application/pdf","extension":"pdf","purpose":"Conferir no original se o roteiro de higiene postural/cinesiterapia do cuidador esta completo, sua dose, autoria, entrega, resultados e anexos; nao transferir programa do paciente ao cuidador ou republicar ativos."}
+  ]
+}

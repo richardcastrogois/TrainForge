@@ -1,0 +1,23 @@
+{
+  "id": "n22-wah-home",
+  "url": "https://www.walkathome.com/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:22:31.524844+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registrar oferta publica/app, sem iniciar trial ou baixar midia",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.walkathome.com/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 33086,
+  "bodyFile": "../raw/n22-wah-home.html",
+  "sha256": "daf6ceab252ce13d48440e301a4815d5b44f74cc96cb4e97b67dfe12fb421d8b"
+}

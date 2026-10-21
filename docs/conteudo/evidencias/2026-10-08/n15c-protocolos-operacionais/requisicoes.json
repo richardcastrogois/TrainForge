@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C. Primeiras coletas de protocolos instrucionais profissionais; distinguir planejamento de eficacia publicada e preservar supervisao. Nenhum pacote aprovado ou outra N iniciada.",
+  "requests":[
+    {"id":"c15-crea2026-artigo-html","url":"https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full","extension":"html","purpose":"Artigo original de protocolo, descricoes TIDieR e links publicados para suplementos; autoria, apoio e licenca por objeto."},
+    {"id":"c15-crea2026-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT07388186","extension":"json","purpose":"Registro primario do ensaio de forca e relaxamento para cuidadores: status, resultados, documentos e divergencias com protocolo publicado."},
+    {"id":"c15-dogan2025-artigo-html","url":"https://dergipark.org.tr/tr/pub/erusaglik/article/1764171","extension":"html","purpose":"Origem primaria do ensaio de pranayama para fadiga do cuidador de pessoa com cancer, links e metadados. Nao dose universal pelo resumo."},
+    {"id":"c15-dogan2025-artigo-pdf","url":"https://dergipark.org.tr/tr/download/article-file/5150323","extension":"pdf","accept":"application/pdf","purpose":"Texto integral de13paginas publicado no link da editora; conferir identidade real do documento, tecnica, autoria, resultados e instrucao/termino. PDF sem teto autorizado, nao executar conteudo."},
+    {"id":"c15-dogan2025-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05988320","extension":"json","purpose":"Registro primario pranayama/fadiga: tecnica, treino inicial, criterios de exclusao e suporte, comparacao com artigo sem combinar versoes."}
+  ]
+}

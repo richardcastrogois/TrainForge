@@ -1,0 +1,22 @@
+{
+  "id": "i15-snacking-xml-accept",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:54:02.260070+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Unica correcao de Accept XML apos 406 tecnico, endpoint publico OA. Preservar i15-snacking-xml-repositorio; ler licenca e vinculo do suplemento por parser XML, sem executar conteudo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 120066,
+  "bodyFile": "../raw/i15-snacking-xml-accept.xml",
+  "sha256": "a521183a99ca073ba3498c52603c8e55713e118e4638428da048b528ea563e0b"
+}

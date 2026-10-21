@@ -1,0 +1,21 @@
+{
+  "id": "n18-basic-beginner",
+  "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:40:50.319950+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir programa humano A/B, público iniciante, dose, recuperação e progressão.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 37277,
+  "bodyFile": "../raw/n18-basic-beginner.html",
+  "sha256": "51d6392078d31104812138810185e123f1588479b5c3bb3bf6b4895faf1a1814"
+}

@@ -63,8 +63,16 @@ __pycache__/
 
 # Graphify reusable outputs are versioned; extraction caches remain local
 **/graphify-out/cache/
+**/graphify-out/.graphify_python
 
 # Raw third-party research payloads: retain locally pending distribution review
+/docs/conteudo/evidencias/**/raw/
+/docs/conteudo/evidencias/**/raw-render/
+/docs/conteudo/evidencias/**/paginas/
+/docs/conteudo/evidencias/**/*.png
+/docs/conteudo/evidencias/**/*.jpg
+/docs/conteudo/evidencias/**/*.jpeg
+/.research-runtime/
 /docs/conteudo/evidencias/2026-09-26/raw/
 /docs/conteudo/evidencias/2026-09-27/raw/
 /docs/conteudo/evidencias/2026-09-26/network/raw/
@@ -83,3 +91,14 @@ __pycache__/
 /docs/conteudo/evidencias/2026-09-28/raw/
 /docs/conteudo/evidencias/2026-09-29/raw/
 /docs/conteudo/evidencias/2026-09-30/raw/
+/docs/conteudo/evidencias/2026-10-02/raw/
+/docs/conteudo/evidencias/2026-10-03/raw/
+/docs/conteudo/evidencias/2026-10-04/raw/
+/docs/conteudo/evidencias/2026-10-05/raw/
+/docs/conteudo/evidencias/2026-10-06/raw/
+/docs/conteudo/evidencias/2026-10-07/raw/
+/docs/conteudo/evidencias/2026-10-08/raw/
+/docs/conteudo/evidencias/2026-10-14/raw/
+/docs/conteudo/evidencias/2026-10-06/raw/
+/docs/conteudo/evidencias/2026-10-15/raw/
+/docs/conteudo/evidencias/2026-10-21/raw/

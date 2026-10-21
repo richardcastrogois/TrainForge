@@ -1,0 +1,24 @@
+{
+  "id": "n18r-apex2020-manual",
+  "url": "https://www.uwindsor.ca/kinesiology/sites/uwindsor.ca.kinesiology/files/apex_manual_oct_2020_-_edition_1.0.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:53:41.354447+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Manual APEX universitário: verificar comandos, responsabilidade, público e direitos; não transferência automática a idosos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.uwindsor.ca/kinesiology/sites/uwindsor.ca.kinesiology/files/apex_manual_oct_2020_-_edition_1.0.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 34600374,
+  "bodyFile": "../raw/n18r-apex2020-manual.pdf",
+  "sha256": "b89764660e3ec6758e54c02f19e2ebd70a4f14c1839463a9a48d60cfaee17635",
+  "bodyFormatMatchesRequest": true
+}

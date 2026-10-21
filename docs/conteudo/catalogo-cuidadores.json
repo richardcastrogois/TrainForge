@@ -1,0 +1,940 @@
+{
+  "id": "N15-C-CATALOG-01",
+  "date": "2026-10-21",
+  "niche": "N15-C",
+  "version": 1,
+  "status": "catalogo_documental_consolidado_nao_publicado",
+  "scope": "Cinco fichas factuais historicas com90campos e auditoria original preservada; nao cinco programas originais executaveis. Selecao atual e fechamento modular separados em currentSelection.",
+  "policy": "criterios-exercicios-apk.json",
+  "researchConsolidationComplete": true,
+  "researchClosureApproved": false,
+  "executionContentAudit": "evidencias/2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "compositionRules": {
+    "sameProgrammeDocumentsMayComplement": true,
+    "cg01GeneralPrecautionsAcceptedWhenCompatibleAndSeparatelyAttributed": true,
+    "generalGuideSafetyIsNewTrialProof": false,
+    "matchingMovementNameIsInsufficient": true,
+    "combineComponentsIntoNewStudiedSession": false,
+    "preservePopulationDosePreparationDelivery": true,
+    "isolatedRctRequiredForEveryMovement": false,
+    "programmeEvidenceIsIsolatedMovementEvidence": false,
+    "missingFiguresOrVideosNotSelectedAreAutomaticRightsBlock": false,
+    "sourceRequiresExternalTeachingAssetsCanBeSilentlyRemoved": false,
+    "publishEachItemIndependentlyOnlyAfterApplicableGates": true
+  },
+  "rightsScope": {
+    "factsDistinctFromExpression": true,
+    "sourceLicenceCopiedToExternalAssets": false,
+    "newExpressiveApkInstructionsCreated": false,
+    "thirdPartyMediaImported": [],
+    "legalOpinion": false,
+    "licenceReferences": [
+      "https://creativecommons.org/licenses/by/4.0/",
+      "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "lawEvidence": "evidencias/2026-10-08/n15c-benson-reavaliacao/c15-direito-cientifico-lei9610-html.evidencia.json"
+  },
+  "itemPublicationRequirements": [
+    "instrucao/preparo/encerramento e precaucoes aplicaveis realmente demonstrados",
+    "dose/variante/contexto sem conflitos materiais nao resolvidos",
+    "modalidade/apoio original preservados",
+    "direitos dos ativos efetivamente escolhidos e localizacao revisada"
+  ],
+  "items": [
+    {
+      "id": "CG-01",
+      "focusedComponentReview": "evidencias/2026-10-12/cg01-estatico/leitura-complementar.json",
+      "researchItemClosed": true,
+      "researchClosureScope": "Ramo estatico original, publico restrito e orientacao profissional; nao autonomia ou publicacao.",
+      "serialQueue": "fila-cuidadores.json",
+      "sourceId": "PR42",
+      "title": "Alongamento estatico de isquiotibiais",
+      "kind": "sessao_aguda",
+      "priority": 1,
+      "intendedAudience": "Profissionais de reabilitacao que cuidam de criancas com atrasos do desenvolvimento;18-40anos e criterios do estudo.",
+      "purpose": "Mobilidade posterior aguda; nao prevencao comprovada de lesao, fadiga ou dor ocupacional.",
+      "sources": {
+        "focal": {
+          "file": "evidencias/2026-10-12/cg01-estatico/pacote-factual.json",
+          "sourceIdPointer": "/primarySourceId",
+          "role": "fechamento_factual_com_fontes_auxiliares_separadas"
+        },
+        "static": {
+          "file": "evidencias/2026-10-08/n15c-originais-caser/revalidacao-estatico.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "revalidacao_do_ramo_estatico"
+        },
+        "article": {
+          "file": "evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "autoria_elegibilidade_registro_correcao"
+        }
+      },
+      "fields": {
+        "practitioner": [
+          "article#/population"
+        ],
+        "citationAndVersion": [
+          "article#/doi",
+          "article#/correction"
+        ],
+        "professionalAuthorship": [
+          "article#/professionalAuthorship"
+        ],
+        "eligibility": [
+          "article#/eligibility"
+        ],
+        "careWorkloadAndFatigue": [
+          "static#/environmentDecision/fatigueOrShortTimeAuthorisesDoseReduction"
+        ],
+        "compatibleSetting": [
+          "static#/environmentDecision"
+        ],
+        "initialPreparation": [
+          "focal#/delivery"
+        ],
+        "materials": [
+          "static#/selectedBranch/posture"
+        ],
+        "dose": [
+          "static#/selectedBranch/dose"
+        ],
+        "sequence": [
+          "static#/selectedBranch"
+        ],
+        "progression": [
+          "static#/selectedBranch/acuteSessionOnly"
+        ],
+        "ending": [
+          "focal#/sessionCompletion"
+        ],
+        "instructions": [
+          "focal#/instructions"
+        ],
+        "stopAndReturn": [
+          "focal#/safety",
+          "focal#/sessionCompletion/resumeOrCatchup"
+        ],
+        "clinicalClaim": [
+          "static#/evidenceLimits"
+        ],
+        "visualAssets": [
+          "static#/selectedBranch/sourceStandaloneVisualInstruction"
+        ],
+        "rightsPerAsset": [
+          "focal#/assetsAndRights"
+        ],
+        "publicationState": [
+          "focal#/publicationPrerequisites"
+        ]
+      },
+      "components": [
+        {
+          "id": "CG-01-STATIC",
+          "type": "exercise_or_technique",
+          "name": "Autoalongamento estatico isquiotibial",
+          "sourceRefs": [
+            "article#/records/0",
+            "static#/selectedBranch"
+          ],
+          "standaloneClaimApproved": false
+        }
+      ],
+      "coverage": {
+        "postureReceived": true,
+        "doseReceived": true,
+        "endingReceived": true,
+        "stopReturnReceived": true,
+        "exactOriginalExitSequenceReceived": false,
+        "auxiliaryPrecautionsSeparatelyIdentified": true,
+        "autonomousStartDemonstrated": false,
+        "professionalQualificationReceived": true,
+        "commercialArticleReuseBasisReceived": true
+      },
+      "knownDose": "30s x8 por perna;4min ativos/perna e8min ambas. Sessao aguda, sem frequencia semanal publicada; transicoes/repousos nao incluidos automaticamente.",
+      "delivery": "Caminho escolhido exige orientacao profissional, inclusive entrada/saida, sem inicio autonomo noAPK. Restricao conservadora do produto, nao supervisao estatica explicitamente comprovada pelo ensaio; ver ficha focal.",
+      "clinicalLimit": "RCT cruzado agudo30participantes sem grupo semalongamento; resultados tabelados positivos em medidas especificas, nao todas; conflito narrativo PAT preservado.",
+      "assetPlan": "Priorizar fatos/texto do artigoCCBY4; nenhum video externo ou figura PNF transferido. Ausencia de altura numerica universal de degrau nao bloqueio automatico.",
+      "blockingReasons": [
+        "Antes de publicar: revisao humana de localizacao e apresentacao",
+        "Implementar controles da modalidade profissional sem presumir disponibilidade do profissional",
+        "Manter publico restrito, atribuicoes/licenca e precaucoes auxiliares separadas da evidencia clinica"
+      ],
+      "receipts": [
+        "evidencias/2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+        "evidencias/2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json",
+        "evidencias/2026-10-07/n15c-alongamento-profissional/c15-atac-qualificacao-trial-json.evidencia.json",
+        "evidencias/2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json",
+        "evidencias/2026-10-12/cg01-estatico/cg01-worcs2025-pdf.evidencia.json",
+        "evidencias/2026-10-12/cg01-estatico/cg01-csp-seguranca-html.evidencia.json"
+      ],
+      "documentationState": "pesquisa_fechada_no_recorte_profissional",
+      "publicationState": "pendente",
+      "releaseApproved": false,
+      "appImplemented": false,
+      "syntheticProgrammeCreated": false,
+      "clinicalClaimForIsolatedComponentsApproved": false,
+      "automaticDoseChangeForTimeOrFatigue": false
+    },
+    {
+      "id": "CG-02",
+      "focusedComponentReview": "evidencias/2026-10-12/cg02-benson/leitura-complementar.json",
+      "researchItemClosed": true,
+      "researchClosureScope": "Metodo inteiro publicado, publico original, ensino conferido/reforco; nao replica de arquivos doensaio, aprovacao dematerial substituto ou entregaAPK-only.",
+      "sourceId": "PR61",
+      "title": "Relaxamento Benson para cuidador familiar",
+      "kind": "rotina_com_ensino_e_apoio",
+      "priority": 2,
+      "intendedAudience": "Cuidador familiar de pessoa em hemodialise;18-60anos, alfabetizado e criterios do estudo.",
+      "purpose": "Sobrecarga percebida do cuidador; nao forca, dor ou fadiga fisica medida.",
+      "sources": {
+        "focal": {
+          "file": "evidencias/2026-10-12/cg02-benson/pacote-factual.json",
+          "sourceIdPointer": "/primarySourceId",
+          "role": "fechamento_do_metodo_factual_e_gates_da_entrega_antes_depublicar"
+        },
+        "review": {
+          "file": "evidencias/2026-10-12/cg02-benson/leitura-complementar.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "conferencia_de_entrega_pdf_videoeditorial_e_precaucoes_auxiliares_candidatas"
+        },
+        "original": {
+          "file": "evidencias/2026-10-08/n15c-benson-reavaliacao/leitura-fontes.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "artigo_integral_com_autoria_dose_seis_passos_resultados_direitos"
+        }
+      },
+      "fields": {
+        "practitioner": [
+          "original#/population"
+        ],
+        "citationAndVersion": [
+          "original#/doi",
+          "original#/version"
+        ],
+        "professionalAuthorship": [
+          "original#/authorship"
+        ],
+        "eligibility": [
+          "original#/population/requirements",
+          "original#/population/sourceExclusions"
+        ],
+        "careWorkloadAndFatigue": [
+          "focal#/environmentAndWorkload"
+        ],
+        "compatibleSetting": [
+          "original#/delivery/locationTransferCondition"
+        ],
+        "initialPreparation": [
+          "focal#/delivery"
+        ],
+        "materials": [
+          "focal#/materialsDecision",
+          "review#/publisherVideoReview"
+        ],
+        "dose": [
+          "original#/dose"
+        ],
+        "sequence": [
+          "original#/instructionRecords"
+        ],
+        "progression": [
+          "original#/dose/weeklyProgressionRequiredBySource"
+        ],
+        "ending": [
+          "original#/instructionRecords/4"
+        ],
+        "instructions": [
+          "focal#/instructionRecords"
+        ],
+        "stopAndReturn": [
+          "focal#/endingAndInterruption",
+          "focal#/auxiliarySafety"
+        ],
+        "clinicalClaim": [
+          "original#/clinicalEvidence"
+        ],
+        "visualAssets": [
+          "original#/delivery/externalVideoCdPamphletReceived"
+        ],
+        "rightsPerAsset": [
+          "focal#/rightsAndAssets"
+        ],
+        "publicationState": [
+          "focal#/publicationPrerequisites"
+        ]
+      },
+      "components": [
+        {
+          "id": "CG-02-BENSON",
+          "type": "exercise_or_technique",
+          "name": "Rotina Benson de seis etapas",
+          "sourceRefs": [
+            "original#/instructionRecords",
+            "original#/dose"
+          ],
+          "standaloneClaimApproved": false
+        }
+      ],
+      "coverage": {
+        "stepsReceived": true,
+        "endingReceived": true,
+        "doseReceived": true,
+        "stopReturnReceived": true,
+        "sourceSpecificClinicalResumeAlgorithmReceived": false,
+        "documentedLearningMediaRoleReceived": true,
+        "substituteLearningMaterialCompatibilityApproved": false,
+        "professionalQualificationReceived": true,
+        "externalTeachingAssetsReceived": false
+      },
+      "knownDose": "15min,2vezes/dia,1mes; encerramento com alguns minutos sem levantar, sem inventar cronometro desse repouso.",
+      "delivery": "Ensino/demonstracao pratica conferida + reforco presencial/telefone/SMS; pratica independente apos ensino, nao inicio autonomo sem preparo.",
+      "clinicalLimit": "60randomizados,52analisados24/28; resultado favoravel de sobrecarga no pacote. Divergencia resumo24/24 documentada; nao eficacia isolada de respiracao.",
+      "assetPlan": "Catalogar fatos/metodos e localizadores. Nao copiar/traduzir roteiroNC-SA ou CD/folheto/video nao recebidos como material comercial aprovado.",
+      "blockingReasons": [
+        "Antes depublicar: verificar material didatico fiel/legal/localizacao; CD/folheto doensaio nao recebidos e nenhumsubstituto aprovado",
+        "Garantir ensino comdemonstracao conferida e reforco humano, sempresumir servico fornecido peloAPK",
+        "Bloquear inicio se apoio/material/preparo da entrega nao verificados; nao afirmar eficacia de nova entrega ou replica integral dosarquivos"
+      ],
+      "receipts": [
+        "evidencias/2026-10-08/n15c-benson-reavaliacao/c15-benson2022-original-html.evidencia.json",
+        "evidencias/2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json",
+        "evidencias/2026-10-12/cg02-benson/cg02-nccih-relaxamento-html.evidencia.json",
+        "evidencias/2026-10-12/cg02-benson/cg02-benson-artigo-pdf.evidencia.json"
+      ],
+      "documentationState": "pesquisa_do_metodo_fechada_ensino_e_apoio",
+      "publicationState": "pendente",
+      "releaseApproved": false,
+      "appImplemented": false,
+      "syntheticProgrammeCreated": false,
+      "clinicalClaimForIsolatedComponentsApproved": false,
+      "automaticDoseChangeForTimeOrFatigue": false
+    },
+    {
+      "id": "CG-03",
+      "researchItemClosed": true,
+      "researchClosureScope": "Ficha factual dos oito componentes originais vinculados ao START; nao oito terapias independentes nem curso integral aprovado para publicacao.",
+      "focusedComponentReview": "evidencias/2026-10-12/cg03-start/pacote-factual.json",
+      "serialQueue": "fila-cuidadores.json",
+      "sourceId": "PR115",
+      "title": "Tecnicas de autocuidado do programa START",
+      "kind": "componentes_de_programa_psicologico",
+      "priority": 3,
+      "intendedAudience": "Cuidador familiar principal de pessoa com demencia, nas condicoes do ensaio; nao todo cuidador remunerado.",
+      "purpose": "Saude emocional do cuidador; oito tecnicas integrantes do programa, nao oito tratamentos isolados comprovados.",
+      "sources": {
+        "focal": {
+          "file": "evidencias/2026-10-12/cg03-start/pacote-factual.json",
+          "sourceIdPointer": "/primarySourceId",
+          "role": "fechamento_factual_componentes_vinculados_ao_programa_original"
+        },
+        "manual": {
+          "file": "evidencias/2026-10-11/n15c-start-originais/leitura-fontes.json",
+          "sourceIdPointer": "/sources/0/sourceId",
+          "role": "resultados2013_relatorioNIHR2014_Appendix3"
+        }
+      },
+      "fields": {
+        "practitioner": [
+          "manual#/sources/0/population"
+        ],
+        "citationAndVersion": [
+          "manual#/sources/0/identifiers",
+          "manual#/sources/0/versions"
+        ],
+        "professionalAuthorship": [
+          "manual#/sources/0/professionalAuthorship"
+        ],
+        "eligibility": [
+          "manual#/sources/0/population",
+          "focal#/populationAndEligibility"
+        ],
+        "careWorkloadAndFatigue": [
+          "focal#/environmentAndWorkload"
+        ],
+        "compatibleSetting": [
+          "manual#/sources/0/delivery/location",
+          "focal#/environmentAndWorkload"
+        ],
+        "initialPreparation": [
+          "manual#/sources/0/delivery/support",
+          "focal#/delivery",
+          "focal#/populationAndEligibility/beforeUse"
+        ],
+        "materials": [
+          "manual#/sources/0/delivery/participantOwnManualProvided",
+          "manual#/sources/0/delivery/compactDiscProvidedInTrial",
+          "focal#/materialsAndRights"
+        ],
+        "dose": [
+          "manual#/sources/0/delivery",
+          "focal#/programmeBoundary",
+          "focal#/componentsInSourceSessionOrder"
+        ],
+        "sequence": [
+          "focal#/componentsInSourceSessionOrder"
+        ],
+        "progression": [
+          "manual#/sources/0/instructionRecords/3/maintenanceScheduleInvented"
+        ],
+        "ending": [
+          "manual#/sources/0/instructionRecords"
+        ],
+        "instructions": [
+          "manual#/sources/0/instructionRecords",
+          "focal#/componentsInSourceSessionOrder"
+        ],
+        "stopAndReturn": [
+          "manual#/sources/0/safety",
+          "manual#/sources/0/instructionRecords/7/safety",
+          "focal#/safetyAndInterruption"
+        ],
+        "clinicalClaim": [
+          "manual#/sources/0/results",
+          "manual#/sources/0/design",
+          "focal#/clinicalEvidence"
+        ],
+        "visualAssets": [
+          "manual#/visualInspection"
+        ],
+        "rightsPerAsset": [
+          "manual#/sources/0/rights",
+          "focal#/materialsAndRights"
+        ],
+        "publicationState": [
+          "manual#/releaseApproved",
+          "focal#/publicationPrerequisites"
+        ]
+      },
+      "components": [
+        {
+          "id": "CG-03-MEADOW",
+          "type": "exercise_or_technique",
+          "name": "Imaginacao guiada de campo/riacho",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/0"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-MEDITATION",
+          "type": "exercise_or_technique",
+          "name": "Meditacao",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/1"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-OCEAN",
+          "type": "exercise_or_technique",
+          "name": "Imaginacao guiada oceanica",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/2"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-MOUNTAIN",
+          "type": "exercise_or_technique",
+          "name": "Imaginacao guiada de montanha",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/3"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-SIGNAL",
+          "type": "exercise_or_technique",
+          "name": "Respiracao-sinal",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/4"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-FOCUSED",
+          "type": "exercise_or_technique",
+          "name": "Respiracao focada",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/5"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-GROUNDING",
+          "type": "exercise_or_technique",
+          "name": "Ancoragem ao ambiente",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/6"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-03-STRETCH",
+          "type": "exercise_or_technique",
+          "name": "Alongamento de bracos e ombros",
+          "sourceRefs": [
+            "manual#/sources/0/instructionRecords/7"
+          ],
+          "standaloneClaimApproved": false
+        }
+      ],
+      "coverage": {
+        "scriptsReceived": 8,
+        "scriptsVisuallyReviewed": 8,
+        "endingReceived": true,
+        "stretchStopCriterionReceived": true,
+        "professionalQualificationReceived": true,
+        "participantCdReceived": false,
+        "fullTherapeuticProgrammeAudited": false,
+        "factualComponentReviewClosed": true,
+        "originalSessionOrderReceived": true,
+        "audioFormatOptionsAreContentLicence": false
+      },
+      "knownDose": "Programa8encontros/8-14semanas; tecnicas com ao menos1pratica/dia na semana indicada. Sem criar duracao total numerica para roteiros com pausas livres.",
+      "delivery": "Lideres treinados ate competencia e supervisionados por psicologa clinica; ensino, revisao de barreiras e componentes terapeuticos mantidos.",
+      "clinicalLimit": "RCT260/173vs87; HADS-total favoravel ao programa no curto e longo prazo. Nao prova individual de cada tecnica ou ganho de forca/fadiga.",
+      "assetPlan": "Indexar os oito roteiros ja recebidos, sem traduzir/copiar comercialmente manualNIHR/CD sob direitos presumidos.",
+      "blockingReasons": [
+        "Uso isolado nao pode herdar eficacia e prescricao do programa terapeutico completo",
+        "Manter preparo do lider/apoio/supervisao e revisar componentes completos para entregaSTART",
+        "Reproducao comercial de manual/audio nao concedida; rota factual nao autoriza copia expressiva"
+      ],
+      "receipts": [
+        "evidencias/2026-10-11/n15c-start-originais/c15-start2013-rct-xml.evidencia.json",
+        "evidencias/2026-10-11/n15c-start-originais/c15-start2014-nihr-relatorio-pdf.evidencia.json",
+        "evidencias/2026-10-11/n15c-start-originais/c15-start2014-nihr-resumo-pdf.evidencia.json"
+      ],
+      "documentationState": "fechado_para_pesquisa_componentes_vinculados_ao_START",
+      "publicationState": "pendente",
+      "releaseApproved": false,
+      "appImplemented": false,
+      "syntheticProgrammeCreated": false,
+      "clinicalClaimForIsolatedComponentsApproved": false,
+      "automaticDoseChangeForTimeOrFatigue": false
+    },
+    {
+      "id": "CG-04",
+      "researchItemClosed": true,
+      "researchClosureScope": "Ficha factual do programa original com fisioterapeuta ao vivo; nao guia autonomo completo de27variantes ou manutencao emvideo.",
+      "focusedComponentReview": "evidencias/2026-10-12/cg04-revieew/pacote-factual.json",
+      "serialQueue": "fila-cuidadores.json",
+      "sourceId": "PR68",
+      "title": "Fortalecimento ReViEEW de trabalhadores do cuidado",
+      "kind": "programa_fisico_supervisionado",
+      "priority": 4,
+      "intendedAudience": "Trabalhadores formais do cuidado a idosos em atividade,18+,experiencia na profissao>=3meses e elegibilidade do ensaio.",
+      "purpose": "Condicionamento/forca e dor lombar no contexto laboral; nao programa autonomo universal de cuidador.",
+      "sources": {
+        "focal": {
+          "file": "evidencias/2026-10-12/cg04-revieew/pacote-factual.json",
+          "sourceIdPointer": "/primarySourceId",
+          "role": "fechamento_factual_do_programa_supervisionado_nao_guia_autonomo"
+        },
+        "context": {
+          "file": "evidencias/2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+          "sourceIdPointer": "/followupReViEEW/sourceId",
+          "role": "seguimento_resumo_e_analise_aderencia_mesma_familia_nao_novoRCT"
+        },
+        "protocol": {
+          "file": "evidencias/2026-10-07/n15c-programa/leitura-programa.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "protocolo2023_resultados2024_mesmoRCT"
+        },
+        "supplement": {
+          "file": "evidencias/2026-10-07/n15c-revieew-suplementos/leitura-anexos.json",
+          "sourceIdPointer": "/sourceId",
+          "role": "SI2variantes_SI3progressao_mesmoRCT"
+        }
+      },
+      "fields": {
+        "practitioner": [
+          "protocol#/population",
+          "focal#/population"
+        ],
+        "citationAndVersion": [
+          "protocol#/sourceBodies",
+          "protocol#/trial"
+        ],
+        "professionalAuthorship": [
+          "protocol#/professionalCreatorEvidence"
+        ],
+        "eligibility": [
+          "protocol#/population",
+          "focal#/population"
+        ],
+        "careWorkloadAndFatigue": [
+          "protocol#/settingReevaluation/timeOrFatigueAuthorisesUnspecifiedDoseChange",
+          "focal#/materialsAndEnvironment/timeAndFatigue",
+          "context#/adherenceReViEEW2026"
+        ],
+        "compatibleSetting": [
+          "protocol#/settingReevaluation",
+          "focal#/materialsAndEnvironment"
+        ],
+        "initialPreparation": [
+          "protocol#/delivery",
+          "focal#/delivery"
+        ],
+        "materials": [
+          "protocol#/sourceProgrammeDose/bandKgValues",
+          "protocol#/settingReevaluation/sameMaterialsRequired",
+          "focal#/materialsAndEnvironment"
+        ],
+        "dose": [
+          "protocol#/sourceProgrammeDose",
+          "focal#/programmeDose"
+        ],
+        "sequence": [
+          "protocol#/originalExamples",
+          "protocol#/settingReevaluation/sourceRotationRule",
+          "focal#/sequence"
+        ],
+        "progression": [
+          "protocol#/sourceWeeklyWorkRestSeconds",
+          "focal#/progression"
+        ],
+        "ending": [
+          "protocol#/sourceProgrammeDose/exactWarmupAndCooldownMovementsReceived",
+          "focal#/programmeDose/cooldown"
+        ],
+        "instructions": [
+          "protocol#/movementPool",
+          "supplement#/figures/1",
+          "focal#/instructionEvidence"
+        ],
+        "stopAndReturn": [
+          "protocol#/sourceProgrammeDose/sourcePainAdjustmentIsProfessionalNotApkAlgorithm",
+          "supplement#/clinicalReevaluation",
+          "focal#/safetyAndInterruption"
+        ],
+        "clinicalClaim": [
+          "protocol#/resultsScope",
+          "protocol#/followupEvidence",
+          "focal#/clinicalEvidence",
+          "context#/followupReViEEW"
+        ],
+        "visualAssets": [
+          "supplement#/visualAudit"
+        ],
+        "rightsPerAsset": [
+          "protocol#/assetRights",
+          "supplement#/rights",
+          "focal#/materialsAndRights"
+        ],
+        "publicationState": [
+          "protocol#/releaseApproved",
+          "focal#/publicationPrerequisites"
+        ]
+      },
+      "components": [
+        {
+          "id": "CG-04-SQUAT",
+          "type": "exercise_or_technique",
+          "name": "squat",
+          "sourceRefs": [
+            "protocol#/movementPool/0"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-GLUTE_BRIDGE",
+          "type": "exercise_or_technique",
+          "name": "glute_bridge",
+          "sourceRefs": [
+            "protocol#/movementPool/1"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-REVERSE_LUNGE",
+          "type": "exercise_or_technique",
+          "name": "reverse_lunge",
+          "sourceRefs": [
+            "protocol#/movementPool/2"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-ARM_RAISE",
+          "type": "exercise_or_technique",
+          "name": "arm_raise",
+          "sourceRefs": [
+            "protocol#/movementPool/3"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-PULL_APART",
+          "type": "exercise_or_technique",
+          "name": "pull_apart",
+          "sourceRefs": [
+            "protocol#/movementPool/4"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-BICEPS_CURL",
+          "type": "exercise_or_technique",
+          "name": "biceps_curl",
+          "sourceRefs": [
+            "protocol#/movementPool/5"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-DEAD_BUG",
+          "type": "exercise_or_technique",
+          "name": "dead_bug",
+          "sourceRefs": [
+            "protocol#/movementPool/6"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-BIRD_DOG",
+          "type": "exercise_or_technique",
+          "name": "bird_dog",
+          "sourceRefs": [
+            "protocol#/movementPool/7"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-04-LATERAL_PLANK",
+          "type": "exercise_or_technique",
+          "name": "lateral_plank",
+          "sourceRefs": [
+            "protocol#/movementPool/8"
+          ],
+          "standaloneClaimApproved": false
+        }
+      ],
+      "coverage": {
+        "movementsIndexed": 9,
+        "variantsIndexed": 27,
+        "publishedProgressionReceived": true,
+        "photosReceived": true,
+        "fullExecutionScriptsReceived": false,
+        "exactWarmCoolReceived": false,
+        "professionalQualificationReceived": true,
+        "commercialPublishedFigureReuseBasisReceived": true
+      },
+      "knownDose": "12semanas,2sessoes/semana45min,>=48h entre sessoes; progressao/trabalho-repouso e BorgCR10 3-5 documentados. Dois exemplos publicados de semana7 nao calendario novo.",
+      "delivery": "Fisioterapeuta ao vivo, bidirecional, ajustes humanos. Treinamento de manejo manual do cuidado tambem presente; nao remover cointervencao.",
+      "clinicalLimit": "RCT130,resultado dor lombar medio favoravel aos12semanasP.034;1anoP.140nao significativo. Resultado de programa nao de squat isolado.",
+      "assetPlan": "Texto/figuras originaisCCBY4 sao candidatos com creditos/condicoes; videos de manutencao externos nao recebidos nem necessarios para catalogar fatos da fase supervisionada.",
+      "blockingReasons": [
+        "Guia autonomo completo de cada variante/aquecimento/retorno nao recebido; antes deuso exigir orientacao profissional clara e fiel, nao completar porIA",
+        "Entrega ao vivo/ajustes profissional nao oferecidos atualmente pelo app",
+        "Nao preencher calendario/exercicio a partir das fotos; manutencao autonoma nao comprovada pelo resultado1ano"
+      ],
+      "receipts": [
+        "evidencias/2026-10-07/n15c-programa/c15-revieew-protocolo-pdf.evidencia.json",
+        "evidencias/2026-10-07/n15c-programa/c15-revieew-resultados-pdf.evidencia.json",
+        "evidencias/2026-10-07/n15c-revieew-suplementos/c15-revieew-si2-tif.evidencia.json",
+        "evidencias/2026-10-07/n15c-revieew-suplementos/c15-revieew-si3-tif.evidencia.json",
+        "evidencias/2026-10-07/n15c-ufpb/c15-revieew-professor-ehu.evidencia.json",
+        "evidencias/2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-europepmc.evidencia.json",
+        "evidencias/2026-10-07/n15c-teses-seguimento/c15-revieew-aderencia2026-html.evidencia.json",
+        "evidencias/2026-10-12/cg04-revieew/cg04-revieew-registro-json.evidencia.json"
+      ],
+      "documentationState": "fechado_para_pesquisa_ficha_profissional_supervisionada",
+      "autonomousResearchReady": false,
+      "publicationState": "pendente",
+      "releaseApproved": false,
+      "appImplemented": false,
+      "syntheticProgrammeCreated": false,
+      "clinicalClaimForIsolatedComponentsApproved": false,
+      "automaticDoseChangeForTimeOrFatigue": false
+    },
+    {
+      "id": "CG-05",
+      "researchItemClosed": true,
+      "researchClosureScope": "Ficha factual do programa com fisioterapeutaClinicalPilates, versoes e discrepancias preservadas; nao guia autonomo integral ou calendario automatico aprovado.",
+      "focusedComponentReview": "evidencias/2026-10-12/cg05-pilates/pacote-factual.json",
+      "serialQueue": "fila-cuidadores.json",
+      "sourceId": "PR136",
+      "title": "Pilates clinico para cuidadores de criancas com deficiencia",
+      "kind": "programa_fisico_supervisionado",
+      "priority": 5,
+      "intendedAudience": "Cuidador principal18-55anos,crianca>3anos,cuidado>=6meses e criterios da tese.",
+      "purpose": "Aptidao/flexibilidade/resistencia e fadiga propria no programa; nao beneficio demonstrado de qualquer pose isolada.",
+      "sources": {
+        "thesis": {
+          "file": "evidencias/2026-10-11/n15c-pilates-cuidadores/leitura-fontes.json",
+          "sourceIdPointer": "/sources/1/sourceId",
+          "role": "tese2019_registro_planejado_CV_licenca_deposito"
+        },
+        "focal": {
+          "file": "evidencias/2026-10-12/cg05-pilates/pacote-factual.json",
+          "sourceIdPointer": "/primarySourceId",
+          "role": "ficha_profissional_com_limites_de_guia_calendario_ativos_e_leituraweb"
+        }
+      },
+      "fields": {
+        "practitioner": [
+          "thesis#/sources/1/population",
+          "focal#/population"
+        ],
+        "citationAndVersion": [
+          "thesis#/sources/1/original",
+          "thesis#/sources/1/nctId",
+          "focal#/source"
+        ],
+        "professionalAuthorship": [
+          "thesis#/sources/1/authorship"
+        ],
+        "eligibility": [
+          "thesis#/sources/1/population",
+          "focal#/population"
+        ],
+        "careWorkloadAndFatigue": [
+          "thesis#/sources/1/dose/preparedConsideringSedentaryAndLackOfTime",
+          "thesis#/sources/1/dose/shorterSessionForFatigueValidated",
+          "focal#/materialsAndEnvironment/caregiverBurdenContext"
+        ],
+        "compatibleSetting": [
+          "thesis#/sources/1/materials",
+          "focal#/materialsAndEnvironment"
+        ],
+        "initialPreparation": [
+          "thesis#/sources/1/dose/initialTeachingAndFiveKeyElementsRepeatedEachSession",
+          "focal#/delivery"
+        ],
+        "materials": [
+          "thesis#/sources/1/materials",
+          "focal#/materialsAndEnvironment"
+        ],
+        "dose": [
+          "thesis#/sources/1/dose",
+          "focal#/dose"
+        ],
+        "sequence": [
+          "thesis#/sources/1/programme",
+          "focal#/programme"
+        ],
+        "progression": [
+          "thesis#/sources/1/programme/progressionNarrativeWeeks",
+          "thesis#/sources/1/programme/tablePhaseWeekRanges",
+          "focal#/progressionVersionDecision"
+        ],
+        "ending": [
+          "thesis#/sources/1/programme/cooldownOrder",
+          "focal#/instructionEvidence"
+        ],
+        "instructions": [
+          "thesis#/sources/1/programme/fullStepCommandsAllTableMovementsReceived",
+          "focal#/instructionEvidence"
+        ],
+        "stopAndReturn": [
+          "thesis#/sources/1/dose/individualizationByPhysiotherapistWhenStrainOrMusculoskeletalProblem",
+          "focal#/safetyAndReturn"
+        ],
+        "clinicalClaim": [
+          "thesis#/sources/1/clinical",
+          "thesis#/sources/1/design",
+          "focal#/clinicalEvidence"
+        ],
+        "visualAssets": [
+          "thesis#/sources/1/programme/photoFigureGroups",
+          "thesis#/sources/1/original/visualPages"
+        ],
+        "rightsPerAsset": [
+          "thesis#/sources/1/rights",
+          "focal#/materialsAndRights"
+        ],
+        "publicationState": [
+          "thesis#/releaseApproved",
+          "focal#/publicationPrerequisites"
+        ]
+      },
+      "components": [
+        {
+          "id": "CG-05-PHASE1",
+          "type": "programme_phase_not_executable_exercise",
+          "name": "Fase1 do programa original",
+          "sourceRefs": [
+            "thesis#/sources/1/programme/phase1RedBand"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-05-PHASE2",
+          "type": "programme_phase_not_executable_exercise",
+          "name": "Fase2 do programa original",
+          "sourceRefs": [
+            "thesis#/sources/1/programme/phase2GreenBand"
+          ],
+          "standaloneClaimApproved": false
+        },
+        {
+          "id": "CG-05-PHASE3",
+          "type": "programme_phase_not_executable_exercise",
+          "name": "Fase3 do programa original",
+          "sourceRefs": [
+            "thesis#/sources/1/programme/phase3BlueBand"
+          ],
+          "standaloneClaimApproved": false
+        }
+      ],
+      "coverage": {
+        "programmeDoseReceived": true,
+        "warmCoolNamesReceived": true,
+        "fullStepCommandsReceived": false,
+        "progressionConflictUnresolved": true,
+        "professionalQualificationReceived": true,
+        "itemSpecificCommercialMediaGrantReceived": false,
+        "bibliographicVersionDecisionRecorded": true,
+        "automaticExecutionCalendarApproved": false,
+        "publisherFullArticleLocallyReceived": false
+      },
+      "knownDose": "8semanas,2sessoes/semana45-60min;5min aquecimento/35-50min principal/5min retorno;1serie10repeticoes no registro/concordante comCERlido web. Tese narrativa nao explicita1serie; nao converterdois dias de familiarizacao em intervalo de todas aulas.",
+      "delivery": "Fisioterapeuta com formacao ClinicalPilates,ensino dos cinco elementos/checagem repetida/ajustes individuais e grupo<=10.",
+      "clinicalLimit": "55randomizados28/27,resultado proprio de fadiga/flexibilidade/resistencia; caminhada6min e copingNS. Contradicoes de tabela/narrativa preservadas.",
+      "assetPlan": "Usar fatos de tese2019. OpenAccess e licenca de depositoEMU nao concessao comercial de fotos/traducao; artigo2021 integral nao recebido e nao preenche lacunas.",
+      "blockingReasons": [
+        "Guia autonomo integral ausente; orientacao clara/fiel revisada porprofissional antes deuso, nao passos criados de nomes/fotos",
+        "Marcos narrativos3/6 concordam comCERweb, masTable1tese difere; calendario de execucao/transicoes nao aprovado automaticamente",
+        "Manter suporte profissional e resolver ativos/versao escolhidos; nao usar dados2021como se guia integral recebido"
+      ],
+      "receipts": [
+        "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-pdf.evidencia.json",
+        "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-html.evidencia.json",
+        "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2021-registro-json.evidencia.json",
+        "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-kirmizigil-bio-pdf.evidencia.json",
+        "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-licenca-txt.evidencia.json",
+        "evidencias/2026-10-11/n15c-pilates-2021/c15-pilates-pediatrico2021-core-json.evidencia.json",
+        "evidencias/2026-10-12/cg05-pilates/cg05-cer-crossref-json.evidencia.json"
+      ],
+      "documentationState": "fechado_para_pesquisa_ficha_profissional_discrepancias_preservadas",
+      "autonomousResearchReady": false,
+      "publicationState": "pendente",
+      "releaseApproved": false,
+      "appImplemented": false,
+      "syntheticProgrammeCreated": false,
+      "clinicalClaimForIsolatedComponentsApproved": false,
+      "automaticDoseChangeForTimeOrFatigue": false
+    }
+  ],
+  "researchOnlyReferencesNotAddedAsExercises": [
+    "PR135: brochura ausente/conflitos elegibilidade e comparador",
+    "PR137: ensino respiratorio nao dosehome/roteiro",
+    "PR138: pacote educativo antesdepois, sem exemplos fisicos publicados",
+    "PR139: manual nao recebido/eficaciaRCT inconclusiva"
+  ],
+  "next": "Concluir pendencias por item a partir desta shortlist, sem acumular resumos. Nenhuma dependencia de fechar os cinco ao mesmo tempo para futuramente publicar um item elegivel. N15-C nao fechada por este catalogo; N21 nao iniciada.",
+  "currentSelection": {
+    "date": "2026-10-21",
+    "file": "evidencias/2026-10-21/n15c-composicao/biblioteca-cuidadores.json",
+    "audit": "evidencias/2026-10-21/n15c-composicao/auditoria-fechamento.json",
+    "decision": "evidencias/2026-10-21/n15c-composicao/decisao-de-recorte.json",
+    "researchClosed": true,
+    "selectedComponents": 11,
+    "allFiveOriginalProgrammesExecutable": false,
+    "releaseApproved": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-16",
+  "niche": "N20-I",
+  "articleSourceId": "PR236",
+  "sourceReceipts": [
+    "../n18i-retomada/n18r-sousa-2025.evidencia.json",
+    "n20r-sousa2025-pdf.evidencia.json"
+  ],
+  "pdfPages": 13,
+  "pdfTextPagesReviewed": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    10
+  ],
+  "pagesActuallyViewed": [
+    1,
+    3,
+    4
+  ],
+  "pdfSha256": "2aaab4a80884db3968b7488e9907a4dcbb7a7b77f28868e15e082a1884298b83",
+  "modelFacts": {
+    "model": "BH Fitness L050, conforme artigo2025; naoL050Bporpresuncao",
+    "locator": "PDF3/Methods ePDF4/Fig1C-D",
+    "geometry": "Legpresssentado/apoiado, pes na plataforma a largura dos ombros, joelhos flexionados90graus no inicio concentric-only. Figura confirma encosto, apoio do quadril e pegas laterais; nao legpressverticalsupinoUSU290.",
+    "compositionRelation": "Fonte usada somente para identificar modelo/geometria e distinguir partida/apoiadores; preparo e retorno continuam DeAnza e dose geralNIA. Nao afirmar que a biblioteca foi executada ou validada noL050.",
+    "startingExecutionNotTransferred": "Artigo diferencia inicio joelhos90graus de inicio180graus com ajuda de pesquisadores, maxima velocidade concentricacom2seccentric/0.5pausa e apoio continuo dedois treinadores. Essesprocedimentos e suas cargas de teste NAOforam incorporados a dosagemNIA.",
+    "populationNotTransferred": "18idosos79+-10, com pelo menos6meses emLP/CP; nao fonte de treino iniciante.",
+    "notDemonstrated": "Travas/pinos/posicoes numeradas do assento, revisao especifica de hardware, aparelho efetivo do futuro usuario ou aula autonoma. Nao redigir comandos de painel nao publicados.",
+    "rights": "ArtigoCCBY4conferidoPDF1; selecao de fatos, sem fotos/figura de participante ou materialdo fabricante."
+  },
+  "bhRejected": {
+    "sourceId": "PR250",
+    "sourceUrl": "https://bh.fitness/en/equipment/tr-series/strength/beinpresse-l050/",
+    "termsUrl": "https://bh.fitness/en/terms-of-use/",
+    "manualLink": "https://bh.fitness/download/6191",
+    "webOnly": true,
+    "newGet": false,
+    "observation": "ProdutoalternatituloL050/L050B; nao presumir equivalencia de edicoes. Linkmanualredireciona404a paginaalheiaSC700, naoPDF. TermossecoesIntellectualpropertyuso pessoal semfinscomerciais e sem transformacao. Nenhum PDF, tutorialSmartFocus/RFID, painel ou software obtido/reutilizado.",
+    "effect": "Fonte do fabricante rejeitada para incorporacao; nao transfere restricao nem grant a obra cientificaCCBY independente e ja recebida."
+  },
+  "searchInterrupted": "Busca de curriculo/coautores nao retornou e a orquestracao foi encerrada antes de iniciar GET. Ausencia de resultados nao e ausencia de qualificacao; nenhum titulo novo inferido. Credenciais profissionais dos componentes permanecem NIA/DeAnza/USU, nao credencial presumida pelo artigo.",
+  "temporaryRendersDeleted": "limpeza-sousa.json"
+}

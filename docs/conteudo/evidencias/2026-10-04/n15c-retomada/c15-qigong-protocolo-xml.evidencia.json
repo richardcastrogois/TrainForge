@@ -1,0 +1,22 @@
+{
+  "id": "c15-qigong-protocolo-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7976717/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:17:57.278508+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo qigong para o proprio cuidador de paciente oncologico, identificado por busca OA; verificar instrucao, domiciliaridade, ativos e direitos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7976717/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 129195,
+  "bodyFile": "../raw/c15-qigong-protocolo-xml.xml",
+  "sha256": "8afe676cf8d609d89c805072877db901f9689f6d3a39a291beb44b59c1ebd605"
+}

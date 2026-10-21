@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "niche": "N31",
+  "subniche": "remo_em_ergometro",
+  "researchClosed": true,
+  "scope": "Um bloco humano de20minparaadulto já treinado/familiarizado; técnica factual auxiliar documentada. Não curso de iniciação, sessão inteira com warm/cool ou cobertura de outras modalidades.",
+  "selectedLot": "lote-remo-intervalado.json",
+  "criteria": [
+    {
+      "criterion": "Um esporte/subnicho declarado",
+      "met": true,
+      "evidence": "Somente ergômetro, adulto já treinado; não todo esporte/curso para iniciantes."
+    },
+    {
+      "criterion": "Origem humana/dose/instrução/apoio",
+      "met": true,
+      "evidence": "Autoria Deuster confirmadaPDF7; Table3-7vista, bloco20min. Técnica auxiliar de Donovan emtexto web, qualificação publicada; limitações de preparação/modelo e sessão inteira explícitas."
+    },
+    {
+      "criterion": "Direitos e barreiras honestos",
+      "met": true,
+      "evidence": "Seleção factual independente com crédito, sem expressões/mídia licenciadas presumidas. Concept2 rejeitado por termos; UKSCA leituraweb, armazenamento local não executado. USU reuso comhash."
+    },
+    {
+      "criterion": "Contextos individualizados",
+      "met": true,
+      "evidence": "Todosquatrocontextos avaliados, pendentes ou não aplicável commotivo; não impor mesmo bloco àpopulação idosa/cuidador."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão profissional da composição, elegibilidade, técnica/ensino e equipamento reais",
+    "Revisão de atualidade das fontes históricas, redação pt-PT/originalidade/direitos finais e compreensão",
+    "Completar sessão/programa se essa for a oferta desejada, com outras fontes humanas compatíveis; não gerar dose porIA",
+    "Implementação/testes em etapa própria"
+  ],
+  "notClosedFor": [
+    "Sessão integral, calendário, aprendizagem inicial e ajustes particulares de máquina",
+    "Fontes comerciais restritas ou curso emágua",
+    "Dose para idosos/cuidadores ou aparelhos de praça"
+  ],
+  "nextNiche": "N32",
+  "releaseApproved": false,
+  "appImplemented": false
+}

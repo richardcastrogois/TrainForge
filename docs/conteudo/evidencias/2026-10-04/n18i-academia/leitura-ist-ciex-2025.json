@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-05",
+  "niche": "N18-I",
+  "family": "PR54",
+  "status": "referencia_nao_selecionada",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "selected": false,
+  "doi": "10.3390/healthcare13131573",
+  "record": "i18-ist-ciex-2025-xml.evidencia.json",
+  "readingExtent": "JATS: metodos, elegibilidade, Tabelas1-3, seguranca, responsabilidades/direitos; nao leitura critica de todas as referencias. Figura1JPEG real inspecionada. SuplementoPDF11paginas: leitura dirigida do consentimento e checklistSPIRIT; nao homologacao do consentimento.",
+  "license": "CC BY4.0 explicita do artigo, nao licenca de fabricar equipamento patenteado, do software/hardware, de marcas ou liberacao de personalidade da pessoa fotografada.",
+  "study": "ProtocoloVersion2.0 de29/05/2025, unico grupo antes/depois,18participantes planejados>=70com sarcopenia diagnosticada; nao18participantes ja treinados nem eficacia demonstrada.",
+  "environment": "Centros/collaboradores especificos com maquinaCIEX SYSTEM, sensoresChronojump e goniometroHALO. Nao academia generica, casa ou praca.",
+  "delivery": "Sessoes individuais supervisionadas por personal trainer qualificado e investigador; avaliacao geriatrica/medica e angulos individualizados. Artigo informa patente do primeiro autor. APK nao fornece essa entrega ou infraestrutura por existir protocolo aberto.",
+  "dose": "16semanas2/semana30min,>=72hentre sessoes (consentimento).8grupos musculares, uma contracao isometrica continua por grupo com3fases sem descanso entre elas e1minentre exercicios.45/60/75/90s conforme blocos de4semanas; cada fase15/20/25/30s. Fases1/2 20-26%/40-46%MVIC em incrementos2pontos a cada4semanas;fase3 100%esforcomaximo, nao100%MVICmedida automaticamente. Sem inventar aquecimento/retorno nao numerado.",
+  "progression": "A fonte proibe modificacoes individuais da progressao; incapacidade persistente gera avaliacao de interrupcao/retirada. Angulo individualizado nao e liberdade de alterar o calendario de carga. Extensaoate4semanasporfaltas descrita no protocolo, nao regra universal de compensacao.",
+  "operationalFinding": "Tabela3traz postura, apoios, direcao de forca sem movimento, respiracao e monitorizacao para8exercicios. Angulo final depende de profissional e medicao. Nao equivale a instrucao de aparelhos dinamicos ou modelosWalker/MPTP/CALM.",
+  "semanticContradictions": [
+    "Tabela3HipAbduction instrui empurrar apoios para dentro, enquantoHipAdduction instrui empurrar para fora. Rotulos/direcoes potencialmente invertidos; preservar fonte e bloquear equivalencia. Nao trocar nomes por conhecimento anatomico.",
+    "Texto/metodos/consentimento variam sarcopenia/dynapenia e EWGSOP/EWGSOP2; criterios numericos recebidos pertencem ao protocolo, nao diagnostico ou triagem clinica do aplicativo."
+  ],
+  "supplement": {
+    "record": "i18-ist-ciex-2025-anexos.evidencia.json",
+    "bytes": 553086,
+    "nestedMember": "healthcare-13-01573-s001.zip/healthcare-3619820-supplementary.pdf",
+    "memberBytes": 423459,
+    "pages": 11,
+    "finding": "Consentimento-modelo e checklistSPIRIT; contem placeholders de duracao/local e pagina8dizFigura1/Tabela3aacrescentar, embora presentes no XML recebido. Nao manual de regulagem do fabricante nem permissao do participante fotografado. Nenhum formulario preenchido ou executado."
+  },
+  "figure": {
+    "member": "healthcare-13-01573-g001.jpg",
+    "bytes": 141784,
+    "panelsVisuallyInspected": ["a", "b", "c", "d", "e", "f", "g", "h"],
+    "finding": "Fotos reais de uma pessoa identificavel no aparelho. Fonte permite estudar a figura do artigo, mas nao aprova endosso, personalidade ou adaptacao comercial do lote final.",
+    "selectedForApp": false
+  },
+  "accessLimits": "Leitorweb da paginaMDPI retornou429, sem retry. DepositoEuropePMC primario recebeu XML/anexos com hash em primeirasGETs, sem login ou contorno de desafio.",
+  "decision": "Referencia clinica especifica, nao candidato operacional selecionado para academia iniciante/autonomia/custozero. Nao associar isometriaCIEX a legpress/dinamico nem resolverI18-G03/I19-G03/I20-G02/G03 com essas fotos.",
+  "newApprovedMappings": 0,
+  "newApprovedAssets": 0,
+  "videoOrAudioPlayedOrDownloaded": 0
+}

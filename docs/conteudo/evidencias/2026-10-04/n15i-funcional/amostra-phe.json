@@ -1,0 +1,29 @@
+{
+  "niche": "N15-I", "date": "2026-10-04", "use": "research_only", "sourceId": "PR22",
+  "title": "Active at Home", "authors": "PHE / SHU / NCSEM", "sourceRecord": "2026-10-04/n15i-funcional/i15-phe-domestico.evidencia.json",
+  "sourceSha256": "fe6b3bbc7a3537c0b769a542b53bcb7458507f9b8352813fb2aa5d19002501eb",
+  "pdfPages": 19, "context": "Idosos em casa; material pandemico.", "clinicalReviewDate": null,
+  "pdfCreationDate": "2021-02-19", "metadataIsClinicalReview": false,
+  "weeks": null, "sessionMinutes": null, "setRestSeconds": null,
+  "sourceDoseNotPrescription": {"daysPerWeek": [2,3], "initialMainRepetitions": 3, "initialSets": null, "laterRepetitions": [8,10], "laterSetsMaximum": 3, "progressionByCalendar": false, "progressionCondition": "Quando mais facil; gradual, nao automatica."},
+  "blocks": [
+    {"id": "PHE-SW", "type": "aquecimento_sentado", "page": 7, "movements": [{"name": "Heel lifts", "seconds": 30}, {"name": "Chair marching", "seconds": 30}], "preparationBreaths": [2,3]},
+    {"id": "PHE-SM", "type": "principal_sentado", "page": 8, "movements": [{"name": "Arm raises", "repetitions": 3, "perSide": false, "harderHoldSeconds": 1}, {"name": "Alternate leg extensions", "repetitions": 3, "perSide": true}, {"name": "Arm curls", "repetitions": 3, "perSide": true}]},
+    {"id": "PHE-SC", "type": "retorno_sentado", "page": 9, "stretchSecondsEach": 20, "stretchNames": ["Hamstring stretch", "Chest opening"], "breaths": 3},
+    {"id": "PHE-WW", "type": "aquecimento_em_pe", "page": 9, "movements": [{"name": "Marching", "seconds": 30}, {"name": "Shoulder rolls", "repetitionsEachDirection": 3}]},
+    {"id": "PHE-WM", "type": "principal_em_pe", "pages": [10,11], "movements": [{"name": "Mini squats", "repetitions": 3, "perSide": false}, {"name": "Small lunges", "repetitions": 3, "perSide": true}, {"name": "Wall press up", "repetitions": 3, "perSide": false}, {"name": "Heel/toe raises", "repetitions": 3, "perSide": false}, {"name": "Sideways leg lift", "repetitions": 3, "perSide": true}]},
+    {"id": "PHE-WC", "type": "retorno_em_pe", "page": 11, "stretchSecondsEach": 20, "stretchNames": ["Hamstring stretch", "Chest opening"], "breaths": 3}
+  ],
+  "visualChecks": {"pages": [7,8,9,10,11], "method": "Poppler PNG e inspecao visual, pypdf para todas as 19 paginas", "mainMovementCount": 8, "allSourceMovementInstructionsPresent": true, "sourceImagesUsedOnlyForResearch": true},
+  "reviewFlags": [
+    "Nao juntar opcoes sentada/em pe como circuito novo de oito movimentos nem calendarizar progressao.",
+    "Sideways leg lift ilustra faixa resistiva ausente na instrucao escrita; nao inferir carga/kit obrigatorio ou substituir variante.",
+    "Heel/toe raises tem titulo abrangente mas desenho/texto mostram elevacao dos calcanhares; nao inventar segundo movimento de dorsiflexao.",
+    "Seguranca e consulta profissional preservadas; fonte nao e protocolo de assistencia fisica pelo cuidador.",
+    "Subir escadas e exemplo cotidiano, nao step-up com dose; levantar depois de queda nao e exercicio sit-to-stand para treino.",
+    "Orientacoes pandemicas, suplementos, hidratacao e emergencias locais nao serao transpostas ao produto.",
+    "Publicacao conjunta nao traz licenca aberta especifica observada; hospedar em dominio governamental nao demonstra permissao de traducao/media."
+  ],
+  "programmeCompleteness": "Dois percursos domesticos autorais com instrucao e progressao publicadas; duracao de ciclo, pausas e selecao individual ausentes preservadas.",
+  "rightsResolved": false, "sourceCopyApproved": false, "releaseApproved": false, "appImplemented": false
+}

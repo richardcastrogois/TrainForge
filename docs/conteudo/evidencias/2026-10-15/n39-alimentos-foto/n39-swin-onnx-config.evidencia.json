@@ -1,0 +1,23 @@
+{
+  "id": "n39-swin-onnx-config",
+  "url": "https://huggingface.co/onnx-community/swin-finetuned-food101-ONNX/resolve/e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8/config.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:45.537466+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Taxonomia e contrato do modelo alimentar ONNX em revisão fixada; arquivo pequeno Apache 2.0 declarado. Não instalação.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/onnx-community/swin-finetuned-food101-ONNX/e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8/config.json?%2Fonnx-community%2Fswin-finetuned-food101-ONNX%2Fresolve%2Fe5e50bfc6425aa546f3b4421ca8bd79d0dd610b8%2Fconfig.json=&etag=%221de897dd3f5eb53edce61f5a95d0f7b5da7626d2%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 6001,
+  "bodyFile": "../raw/n39-swin-onnx-config.json",
+  "sha256": "6a5aca5f46b61c07e36521af58fd67ec6c4c7318b319db3c2e01fa7908fa7d26"
+}

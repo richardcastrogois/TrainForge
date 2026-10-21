@@ -1,0 +1,76 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 9,
+  "verifiedDependencies": 3,
+  "proposedOperations": 0,
+  "fictionalScenarios": 7,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-prieto-cuidadores.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9367957/",
+      "sha256": "ae9f9d77fb6c9a921239164890333da120facb415aa7ea4524f5ec1c6bbf39d0"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-li-cuidadores.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12465894/",
+      "sha256": "7b16265d8744a9246eb607b4ebe7e557a86fe82c1fd2b53ad66b84e29e661e6b"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-videos.evidencia.json",
+      "url": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/",
+      "sha256": "1875f17dbe2af32389453488d656baa10d78cb5af2bce7d5d187eea4ff662da6"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-sessoes.evidencia.json",
+      "url": "https://www.carersuk.org/scotland/help-and-advice/your-health-and-wellbeing/carers-active-hub/carers-active-online-sessions/",
+      "sha256": "5fb174f5f0799633030da1fe28d0cd97c90c681fa3760d25a39e84c9bf64ed83"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-termos.evidencia.json",
+      "url": "https://www.carersuk.org/terms-and-conditions/",
+      "sha256": "52a0e8aacde96b60a3a7ab33d98ab2a7fea982a9f4048f86ad3f3befe10eea6c"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-longos.evidencia.json",
+      "url": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/longer-workout-videos/",
+      "sha256": "385e04e013f30f47a68c7c1e75c323e0776c568cef0c201d9b80353b8a1982e9"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-sono-protocolo.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13008454/",
+      "sha256": "535c4003adc379b89ac56253c4dc213f8696cd25b9da112700ce00173dc47965"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20-PURL-gpo62941/pdf/GOVPUB-HE20-PURL-gpo62941.pdf",
+      "sha256": "2a883215b69723d8c5fa96480fe7e076880668961e3676d6d26e622c9550e56f"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-cuidador.evidencia.json",
+      "url": "https://igec.uiowa.edu/sites/igec.uiowa.edu/files/2023-01/Caregivers%20And%20Exercise%20Take%20Time%20For%20Yourself%20Handout%20%281%29.pdf",
+      "sha256": "e9dd403d7711a81c3e3e216225e0f3e2ba190f8df92abccccf97b136b3f8b117"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+      "artifactSha256": "bd64331febb0868e19be54dc699b68fc09503baebc4f1ef5458264ff93e8cd83"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    },
+    {
+      "file": "2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "artifactSha256": "d92314d156be4a98ce6dc7731848f8a1ef322e3c5331cc70e6da1184e6b41233"
+    }
+  ],
+  "next": "Continuar N15-C; N21 retida ate fechamento dos complementos anteriores."
+}

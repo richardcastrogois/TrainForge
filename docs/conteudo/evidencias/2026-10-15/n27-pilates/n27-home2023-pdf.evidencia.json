@@ -1,0 +1,24 @@
+{
+  "id": "n27-home2023-pdf",
+  "url": "https://journals.aiac.org.au/index.php/IJKSS/article/download/7959/5217",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:12:12.054261+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primário CC BY: programa humano doméstico, dose/tabela/comandos/preparo/suporte e limites, não efeito garantido do estudo piloto",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://journals.aiac.org.au/index.php/IJKSS/article/download/7959/5217",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 611221,
+  "bodyFile": "../raw/n27-home2023-pdf.pdf",
+  "sha256": "b93c3ed29cd12d0c9f9f1d58f28aae5ef4b9498a8c8d0e1833dbcb0f970e9081",
+  "bodyFormatMatchesRequest": true
+}

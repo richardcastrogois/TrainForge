@@ -1,0 +1,24 @@
+{
+  "id": "c15-va-walking-facilitator-pdf",
+  "url": "https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:51:57.080639+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "ManualVA39paginas publicado; modulo CaregiverWalking, autoria/condicoes/limites de evidencia e direitos por ativo, nao programa clinico universal presumido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1515090,
+  "bodyFile": "../raw/c15-va-walking-facilitator-pdf.pdf",
+  "sha256": "ce67fb0b103cd2ea10ff99596167c222f6cf907bce0c23e29594cc9d346bca3c",
+  "bodyFormatMatchesRequest": true
+}

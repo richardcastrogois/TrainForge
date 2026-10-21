@@ -1,0 +1,95 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 7,
+  "http200": 6,
+  "hashedBodies": 7,
+  "usableBodies": 6,
+  "receipts": [
+    {
+      "id": "c15-most2025-original-html",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-most2025-original-html.evidencia.json",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2831650",
+      "status": 403,
+      "bytes": 5794,
+      "sha256": "182cc32cf313c4c2a0c127b5ea2780f5c9da7996c05cddb4b48451576c798ec7",
+      "usableForReading": false,
+      "role": "blocked_response_not_article"
+    },
+    {
+      "id": "c15-most2023-protocolo-html",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-most2023-protocolo-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/s13063-023-07801-3",
+      "status": 200,
+      "bytes": 501960,
+      "sha256": "1bf97fbf790ad2b361cdbd84482097adf615b0cbaeb38f00b4d1dc41945c32df",
+      "usableForReading": true,
+      "role": "original"
+    },
+    {
+      "id": "c15-most2023-suplemento-doc",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-most2023-suplemento-doc.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13063-023-07801-3/MediaObjects/13063_2023_7801_MOESM1_ESM.doc",
+      "status": 200,
+      "bytes": 129024,
+      "sha256": "f8561badae575d64410cc37ce3c1575c26228568450a5523bf5e0dd100ca6969",
+      "usableForReading": true,
+      "role": "spirit_reporting_checklist_not_exercise_instruction_manual"
+    },
+    {
+      "id": "c15-benson-autismo2025-pdf",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-benson-autismo2025-pdf.evidencia.json",
+      "url": "https://jccnc.iums.ac.ir/article-1-617-en.pdf",
+      "status": 200,
+      "bytes": 786579,
+      "sha256": "42482dc7adf06c097b7596bbd4cb36496a88ae8fed888cfa3d14fa00fc42bb6a",
+      "usableForReading": true,
+      "role": "original"
+    },
+    {
+      "id": "c15-tan20-caregivers-core-json",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-tan20-caregivers-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31854193%20AND%20SRC%3AMED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 8263,
+      "sha256": "c20f298da4dd06fbd20da28459a5ca7740960627b7ad73ff5918617aa42aca99",
+      "usableForReading": true,
+      "role": "indexed_primary_abstract_not_instruction_manual"
+    },
+    {
+      "id": "c15-tan5-misto-core-json",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-tan5-misto-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25632044%20AND%20SRC%3AMED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 6978,
+      "sha256": "6b84c35eb60e759c04ff850e84d66a14fe8e80997010e765e3c91e6a70c47470",
+      "usableForReading": true,
+      "role": "indexed_primary_abstract_not_instruction_manual"
+    },
+    {
+      "id": "c15-yildirim-breath-music-core-json",
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-yildirim-breath-music-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39158927%20AND%20SRC%3AMED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 6078,
+      "sha256": "7f2e96c116171d2fa475cb1071081223295c53077bea3741a2733c3f5404a656",
+      "usableForReading": true,
+      "role": "indexed_primary_abstract_not_instruction_manual"
+    }
+  ],
+  "supplementLinksObserved": [
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13063-023-07801-3/MediaObjects/13063_2023_7801_MOESM1_ESM.doc"
+  ],
+  "pdfPages": 10,
+  "unparsedBinaryDocCount": 0,
+  "spiritReportingChecklistCount": 1,
+  "blockedOriginalCount": 1,
+  "abstractCount": 3,
+  "pdfInconsistentBreathingNotRepaired": true,
+  "professionalDeliveryNotRemoved": true,
+  "visualInspectionNotDeterminedByScript": true,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

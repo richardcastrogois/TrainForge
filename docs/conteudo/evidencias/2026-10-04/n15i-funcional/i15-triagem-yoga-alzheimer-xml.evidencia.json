@@ -1,0 +1,22 @@
+{
+  "id": "i15-triagem-yoga-alzheimer-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11968721/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:03:21.004378+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir ator cuidador, ambiente, instrucao integral e licenca; artigo nao e rotina aprovada.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11968721/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 124636,
+  "bodyFile": "../raw/i15-triagem-yoga-alzheimer-xml.xml",
+  "sha256": "b3d8af6318253453c163d8c5ed0eda58b3ad473aa785d4512c1f0aba814b6963"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-vit-legacy-preprocessor",
+  "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.8.1/src/transformers/models/vit/feature_extraction_vit.py",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T23:59:35.323628+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Inspeção estática do pré-processador oficial Apache 2.0 da versão declarada no config do modelo; não instalar/executar código. Esclarecer resize, rescale e canais da entrada.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/huggingface/transformers/v4.8.1/src/transformers/models/vit/feature_extraction_vit.py",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 6646,
+  "bodyFile": "../raw/n39-vit-legacy-preprocessor.txt",
+  "sha256": "face5cc0c6211f2a2ff4b5c8875e39248c96c625a518799a509fb9b8803bbc62"
+}

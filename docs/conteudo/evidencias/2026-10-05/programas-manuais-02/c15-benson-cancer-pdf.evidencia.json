@@ -1,0 +1,24 @@
+{
+  "id": "c15-benson-cancer-pdf",
+  "url": "https://brieflands.com/journals/ijcm/articles/131622.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:11:19.745860+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonte primaria citada B35 na revisao2025; conferir tecnica propria do cuidador, dose, acompanhamento, audio e licenca antes de selecionar.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://brieflands.com/journals/ijcm/articles/131622.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 126878,
+  "bodyFile": "../raw/c15-benson-cancer-pdf.pdf",
+  "sha256": "f1300daf89d10bc86774db1118314e9fcf17b5dd37ef9d0d023b7ab57f954cb6",
+  "bodyFormatMatchesRequest": true
+}

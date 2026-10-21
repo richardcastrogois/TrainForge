@@ -1,0 +1,25 @@
+{
+  "id": "c15-va-workbook-integral",
+  "url": "https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-06T03:30:52.850235+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Workbook VA/Easter Seals integral: declaracao primaria de dominio publico mundial/comercial, ressalvas terceiros e rotina de autocuidado do cuidador; nao prescricao universal.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 59629,
+  "bodyFile": "../raw/c15-va-workbook-integral.pdf",
+  "sha256": "5f23895f862ca09c6ee25bd3a528dba09954aac1a20854cd61bbe520b472ea91",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

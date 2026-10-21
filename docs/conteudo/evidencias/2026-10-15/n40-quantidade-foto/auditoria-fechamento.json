@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "niche": "N40",
+  "researchClosed": true,
+  "scope": "Análise de viabilidade, requisitos e contrato de registro por foto com quantidade confirmada; nenhum estimador visual automático pronto validado.",
+  "criteria": [
+    {
+      "criterion": "Entradas e erro identificados, sem label -> gramas",
+      "met": true,
+      "evidence": "Nutrition5k massa/RGB-D e MAE com denominador; GoCARB/goFOOD possuem referências/assunções distintas. Nenhum estimador genérico pronto validado alegado."
+    },
+    {
+      "criterion": "Servido/consumido/desconhecido e pessoa",
+      "met": true,
+      "evidence": "contrato-quantidade.json e17casos sintéticos incluem restos ausentes, transferências, prato coletivo, zero e inconsistência."
+    },
+    {
+      "criterion": "Contextos e correção acessível",
+      "met": true,
+      "evidence": "Quatro contextos explícitos, sem misturar cuidador/assistido. Campos e alternativas documentados; UI/compreensão continuam gates de implementação."
+    },
+    {
+      "criterion": "Fontes, autoria/direitos/custo/limites",
+      "met": true,
+      "evidence": "4GET200/hash, autoresCrossref, licença de artigo diferente de modelo. Sem nova instalação, conta, contato, pesagem de pessoa ou download de dataset."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Estimador visual automático não obtido ou executado: feature permanece experimental/indisponível neste caminho.",
+    "Implementação e teste acessível com pessoas reais, massa de referência independente e erro por caso/contexto.",
+    "Densidades/fatores de preparo e ativos finais com direitos conferidos; sem cálculo clínico."
+  ],
+  "automaticMassModelTested": false,
+  "contractChecksPassed": 17,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N41"
+}

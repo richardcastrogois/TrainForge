@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-08",
+  "scope":"SomenteN15-C, PR61 ja catalogada. Reavaliacao de dados cientificos versus copia de ativos; nao trocar licencaNC pela declaracaoBYgenerica de outro formato.",
+  "requests":[
+    {"id":"c15-benson2022-original-html","url":"https://revistas.udea.edu.co/index.php/iee/article/view/351819/20815783","extension":"html","accept":"application/json,text/html,text/plain","purpose":"PrimeiroGET do corpo editorial integral indicado na pagina antiga ja recebida; autores profissionais, roteiro completo, dose, apoio e resultados/falhas. Nao copiar script/CD/folheto paraAPK."},
+    {"id":"c15-direito-cientifico-lei9610-html","url":"https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html","extension":"html","accept":"application/json,text/html,text/plain","purpose":"Fonte legal oficial atualizada: distinguir conteudo cientifico/metodos como tais de forma literaria/traducao/ativos protegidos. Nao parecer juridico ou grant editorial."}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-15",
+  "niche": "N32",
+  "researchClosed": true,
+  "scope": "Conteúdo educativo e mapa documental de relato/limitações/ajuda, localizado paraPortugal. Não diagnóstico, triagem validada, prescrição ou programa clínico.",
+  "selectedContent": "mapa-relato-ajuda.json",
+  "criteria": [
+    {
+      "criterion": "Pessoa idosa nos três ambientes",
+      "met": true,
+      "evidence": "Casa/praça/academia registrados por contexto, origem do relato mantida e apoios/limites explícitos. Ambiente não determina diagnóstico ou treino."
+    },
+    {
+      "criterion": "Cuidador próprio versus observação sobre assistido",
+      "met": true,
+      "evidence": "Sujeito/informante/tipo separados; desconhecido não0. NIAAlzheimer/NICE1.8.3sustentam distinção observação/autorrelato, sem importar instrumento clínico."
+    },
+    {
+      "criterion": "Fonte humana/localização/ajuda",
+      "met": true,
+      "evidence": "NIAperguntas descritivas eNICEparticipação; DGS/gov.ptconfirmam serviçosPT. Autoria institucional/datas/métodoswebindexados versuscorpo integral honestos."
+    },
+    {
+      "criterion": "Sem diagnóstico/prescrição por filtros",
+      "met": true,
+      "evidence": "Mapa documental, nenhuma regra que converta nota/lugar/demência emdiagnóstico, liberação ou dose. Direitos de fatos versusexpressão/escala explicitados."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão clínica/editorial do texto e dos limites do serviço; não alegar questionário/triagem validada",
+    "Revalidar contatos por país, acessibilidade, compreensão e eventual fluxo de ajuda",
+    "Definir representação/consentimento/visibilidade e proteção de dados em etapa própria, sem coletar saúde real agora",
+    "Conferir versão/licenças/atribuição do ativo final e finalidade do produto antes deimplementação"
+  ],
+  "notClosedFor": [
+    "Algoritmo de triagem médica, tratamento ou liberação automática para exercício",
+    "Programa terapêutico de dor ou protocolo de transferência física por cuidador",
+    "Fluxo de dados de saúde/representação implementado ou clinicamente validado"
+  ],
+  "nextNiche": "N33",
+  "releaseApproved": false,
+  "appImplemented": false
+}

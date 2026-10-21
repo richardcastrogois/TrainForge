@@ -1,0 +1,18 @@
+{
+  "id": "c15-gomes2022-ufba-metadata",
+  "url": "https://repositorio.ufba.br/handle/ri/36416",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:17:03.960947+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Metadados publicos da tese2022 e embargo, comparando amostra/entrega com resumo do artigo2026. Nao obter arquivo embargado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

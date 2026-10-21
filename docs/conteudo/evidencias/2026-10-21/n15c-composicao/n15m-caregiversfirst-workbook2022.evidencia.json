@@ -1,0 +1,24 @@
+{
+  "id": "n15m-caregiversfirst-workbook2022",
+  "url": "https://www.va.gov/files/2022-09/SOCW220314_Caregivers_Participant_Workbook-P-V2%20RE-LINKED.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:39:10.258779+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Obra distinta do workbookVA antigo404: nova pista institucional de material educativo de relaxamento/autocuidado com instruções ao próprio cuidador e direitos a conferir. Não mirror de arquivo falho.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.va.gov/files/2022-09/SOCW220314_Caregivers_Participant_Workbook-P-V2%20RE-LINKED.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 8215318,
+  "bodyFile": "../raw/n15m-caregiversfirst-workbook2022.pdf",
+  "sha256": "6d6bb7d229a382b9986c2769c8f53f91e15e9c92f527f97babb2a886d5452ee3",
+  "bodyFormatMatchesRequest": true
+}

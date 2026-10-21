@@ -1,0 +1,23 @@
+{
+  "id": "c15-teleyoga2024-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38545336%20AND%20SRC:MED&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T18:09:22.190203+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados/resumo primarios da teleyoga, comparar titulo/identificadores/edicao nao substituir protocolo completo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38545336%20AND%20SRC:MED&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 8128,
+  "bodyFile": "../raw/c15-teleyoga2024-core-json.json",
+  "sha256": "f5cfdd39ead7b7ed1bf82571e53fc6ba72a4f871bcec10ac896049c4591c1a28"
+}

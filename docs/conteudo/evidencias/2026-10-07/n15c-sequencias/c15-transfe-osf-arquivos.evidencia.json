@@ -1,0 +1,23 @@
+{
+  "id": "c15-transfe-osf-arquivos",
+  "url": "https://api.osf.io/v2/nodes/k7wte/files/osfstorage/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:36:39.165459+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Listagem publica de arquivos do registro, nao download de11.1MB inteiro; distinguir slide/checklist/manual de artigo/dados privados.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/k7wte/files/osfstorage/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2256,
+  "bodyFile": "../raw/c15-transfe-osf-arquivos.json",
+  "sha256": "afcf3d785b6758e82f77cd926e696be118a73c237359cdd0cf78ccce02396010"
+}

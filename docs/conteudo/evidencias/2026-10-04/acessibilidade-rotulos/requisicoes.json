@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-04",
+  "niche": "N06-I_N07-I",
+  "collectionScope": "Fontes compartilhadas coletadas uma vez; analises dos complementos sequenciais, sem implementacao.",
+  "requests": [
+    {"id": "a06-wai-idosos", "url": "https://www.w3.org/WAI/older-users/", "extension": "html", "purpose": "Necessidades de acessibilidade de pessoas idosas; nao pressupor incapacidade por idade."},
+    {"id": "a06-wai-imagens", "url": "https://www.w3.org/WAI/tutorials/images/", "extension": "html", "purpose": "Alternativas de imagens segundo finalidade; sem inferir porcao/composicao ou copiar ilustracoes."},
+    {"id": "a06-wcag22", "url": "https://www.w3.org/TR/WCAG22/", "extension": "html", "purpose": "Referencia vigente WCAG 2.2 para requisitos futuros; nao certificacao de app Flutter ou testes de usuarios."},
+    {"id": "a07-fda-idosos", "url": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults", "extension": "html", "purpose": "Educacao de rotulos dirigida a idosos; separar jurisdicao americana de UE/PT, sem importar metas ou imagens."}
+  ]
+}

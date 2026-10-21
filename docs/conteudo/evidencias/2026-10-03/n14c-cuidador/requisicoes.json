@@ -1,0 +1,9 @@
+{
+  "niche": "N14-C", "date": "2026-10-03",
+  "requests": [
+    {"id": "n14c-cnpd-consentimento", "url": "https://www.cnpd.pt/organizacoes/areas-tematicas/consentimento/", "purpose": "Conferir consentimento, finalidades e revogacao; nao presumir unica base legal ou legitimidade do app.", "extension": "html"},
+    {"id": "n14c-gov-cuidador", "url": "https://www.gov.pt/guias/cuidador-informal-perguntas-frequentes", "purpose": "Conferir autonomia/confidencialidade e acompanhamento delimitado em Portugal; nao habilitar automaticamente acesso ou cuidado clinico.", "extension": "html"}
+  ],
+  "reused": ["2026-10-03/revisao-idosos-cuidadores/ic-cdc-caregivers.evidencia.json", "2026-10-03/n14-rotina-alimentar/rotina-proposta.json"],
+  "scope": "Pesquisa de requisitos e cenarios ficticios. Sem dados pessoais, partilha implementada, validacao juridica do produto ou prescricao."
+}

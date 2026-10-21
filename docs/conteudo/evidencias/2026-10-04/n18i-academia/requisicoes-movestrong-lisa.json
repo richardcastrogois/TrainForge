@@ -1,0 +1,6 @@
+{
+ "date":"2026-10-04", "niche":"N18-I", "requests":[
+  {"id":"i18-movestrong-2021-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8462677/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ler programa funcional de forca/equilibrio humano com manual citado; preservar pre-fragilidade, orientacao e cointervencao nutricional."},
+  {"id":"i18-busca-lisa-identidade","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22Live%20active%20Successful%20Ageing%22%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=30","extension":"json","purpose":"Refinar nome extenso do estudo porque sigla LISA recuperou temas alheios; nao tomar busca anterior como literatura relevante."}
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n24-cyclinguk-index",
+  "url": "https://www.cyclinguk.org/tags/training-and-skills",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:51:52.009611+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Colecao tecnica e plano100km;mapearconteudo e quemassina sem baixarvideos",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cyclinguk.org/tags/training-and-skills",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 142073,
+  "bodyFile": "../raw/n24-cyclinguk-index.html",
+  "sha256": "834e06caf520172acc5c9f09883ecc86fd4e8e65af85756b23eb6a56926d1a4c"
+}

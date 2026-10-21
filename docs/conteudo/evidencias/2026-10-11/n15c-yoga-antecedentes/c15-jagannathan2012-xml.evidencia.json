@@ -1,0 +1,23 @@
+{
+  "id": "c15-jagannathan2012-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3276932/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:52:12.496694+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original de desenvolvimento/viabilidade necessidades cuidador, verificar tabela operacional e direitos, nao eficacia por titulo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3276932/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 46042,
+  "bodyFile": "../raw/c15-jagannathan2012-xml.xml",
+  "sha256": "f4e2bb0fdb37f64bb386473d0aa7a349d59914cfdd3604e24118db471c3ac04a"
+}

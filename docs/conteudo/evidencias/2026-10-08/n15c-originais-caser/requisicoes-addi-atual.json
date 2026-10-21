@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: resolver identificador persistente da tese no dominio institucional ADDI .eus verificado no diretorio primario REBIUN, URL-base https://addi.ehu.eus/. Caminho /handle/10810/68569 construido a partir do handle publicado, ainda nao confirmado neste dominio. Nao retry do .es404, varredura ou bypass de restricao.",
+  "requests":[
+    {"id":"c15-revieew-tese-handle-eus","url":"https://addi.ehu.eus/handle/10810/68569","extension":"html","purpose":"Conferir se o mesmo identificador existe no dominio .eus institucional; inferencia de resolucao nao prova de PDF ou mudanca do programa. Ler somente resposta publica, preservar TLS/limites/hash."}
+  ]
+}

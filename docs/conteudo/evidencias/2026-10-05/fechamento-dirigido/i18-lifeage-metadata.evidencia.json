@@ -1,0 +1,22 @@
+{
+  "id": "i18-lifeage-metadata",
+  "url": "https://zenodo.org/api/records/4395762",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T11:11:10.312574+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira coleta local dos metadados LifeAge: conferir licenca por edicao e tamanho/URL antes de qualquer PDF. Falha do leitorweb nao e arquivo local anterior.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://zenodo.org/api/records/4395762",
+  "contentType": "application/json",
+  "retryAfter": "60",
+  "bytes": 6180,
+  "bodyFile": "../raw/i18-lifeage-metadata.json",
+  "sha256": "35c0ec950b94035048daddc5556572f3cc36838fcfbe3e61df6f82ef140e77d7"
+}

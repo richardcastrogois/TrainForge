@@ -1,0 +1,22 @@
+{
+  "id": "i18-busca-lisa-manuais",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22LISA%22%20AND%20%28%22resistance%22%20OR%20%22strength%22%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=30",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:33:04.224046+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Localizar protocolo original e manual do estudo LISA, sem assumir licenca comercial de resultados posteriores.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22LISA%22%20AND%20%28%22resistance%22%20OR%20%22strength%22%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=30",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 204896,
+  "bodyFile": "../raw/i18-busca-lisa-manuais.json",
+  "sha256": "8e179862f9904b40a988d2a27d08aec14f0915197b6df40561befbd0c1519ccd"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n41-domyos-run100",
+  "url": "https://support.decathlon.co.uk/run100",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:45:52.197286+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Suporte primário de equipamento específico: conferir unidadeMI/KM selecionável, dados acumulados e de treino distintos. Não copiar programa integrado/mídia nem executar mudança na esteira.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://support.decathlon.co.uk/run100",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 634559,
+  "bodyFile": "../raw/n41-domyos-run100.html",
+  "sha256": "7f163a35162e5263afb81de8a2b1e71fcc3159e384d7efdb3f97ddd0d326048a"
+}

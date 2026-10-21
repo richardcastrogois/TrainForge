@@ -1,0 +1,109 @@
+{
+  "id": "N25-NADO-500-PRO-01",
+  "date": "2026-10-15",
+  "niche": "N25",
+  "kind": "Composição documental de componentes humanos; não calendário nem curso de aprendizagem",
+  "status": "candidato_para_revisao_profissional",
+  "sourceIds": [
+    "PR167",
+    "PR170"
+  ],
+  "authorship": {
+    "workoutComponents": "CAPT John S. Hughes, MD, autor declarado de Swimming for Fitness, no guia editado por Patricia A. Deuster, PhD, MPH, USU, agosto1997.",
+    "professionalEvidence": "PDF5 do guia: médico, University of Colorado; Navy Reserve Undersea Medical Officer e Board Certified Occupational Medicine declarados historicamente. Não verificação atual de registro.",
+    "safety": "CDC, National Center for Injury Prevention and Control,29/09/2025.",
+    "composition": "Seleção editorial TrainForge a partir de partes diferentes do mesmo capítulo e segurança CDC. Os autores não criaram/testaram esta nova composição."
+  },
+  "scope": "Nadador experiente, com crawl e respiração já dominados, preparo e capacidade avaliados, em piscina com apoio profissional. O guia original é militar/SEAL; esta seleção mantém a exigência de competência e não é demonstração de eficácia em novos públicos. Não iniciante sem habilidade aquática.",
+  "preparation": {
+    "mustBeVerified": [
+      "Capacidade de nadar crawl, respirar e chegar/repousar na borda com segurança; não aprender por este lote",
+      "Ritmo de1000m já conhecido sob orientação, sem mandar fazer teste máximo por conta própria",
+      "Condições individuais, entrada/saída, profundidade, regras da piscina e disponibilidade de ajuda verificadas no local",
+      "Relógio visível e distância real da piscina conhecidos"
+    ],
+    "supportSource": "USU PDF95 orienta guarda/companheiro mesmo na piscina; PDF100 destaca ensino técnico. CDC exige companhia e recomenda local com guarda-vidas.",
+    "productCondition": "Orientação profissional e vigilância aquática reais são condições da futura oferta; não há serviço contratado/implantado agora. Não são substitutos de comandos ausentes.",
+    "actualSupportAvailable": false
+  },
+  "blocks": [
+    {
+      "id": "warm",
+      "phase": "aquecimento",
+      "instruction": "Nadar por5–10min em ritmo lento a moderado, preservando a técnica já aprendida.",
+      "durationSecondsRange": [
+        300,
+        600
+      ],
+      "distanceMeters": null,
+      "sourceId": "PR167",
+      "locator": "PDF105, impresso81, Basic Principles of Interval Training",
+      "note": "É o aquecimento por tempo publicado nos princípios de intervalos. A seção anterior PDF104 menciona ao menos400m e educativos; não declarar400m equivalente a5–10min nem copiar seu conjunto inteiro."
+    },
+    {
+      "id": "main",
+      "phase": "resistencia",
+      "instruction": "Completar10repetições de50m em crawl, tomando como referência o ritmo de1000m já estabelecido. Entre repetições, repousar5s. Encerrar a série se não conseguir manter o ritmo prescrito.",
+      "repetitions": 10,
+      "distancePerRepetitionMeters": 50,
+      "distanceMeters": 500,
+      "recoverySecondsBetweenRepetitions": 5,
+      "recoveryCount": 9,
+      "recoveryTotalSeconds": 45,
+      "sourceId": "PR167",
+      "locator": "PDF105–106, impressos81–82; Interval Sets–Endurance",
+      "note": "A fonte usa5s entre cada nado e busca ritmo de1000m; não é sprint, apneia ou prova máxima. Não acrescentar uma10a pausa ao total entre repetições."
+    },
+    {
+      "id": "cool",
+      "phase": "encerramento",
+      "instruction": "Completar400m de nado de encerramento, sem meta nova de tempo ou frequência cardíaca.",
+      "distanceMeters": 400,
+      "durationSeconds": null,
+      "intensityExact": null,
+      "sourceId": "PR167",
+      "locator": "PDF109, impresso85, Figure5-3, final da amostra aeróbia",
+      "note": "Componente extraído da sessão aeróbia5000m e combinado por proposta editorial. A fonte não especifica estilo/FC/tempo desse bloco: não preencher por IA nem tratar como protocolo de recuperação validado para a série500m."
+    }
+  ],
+  "total": {
+    "knownDistanceMeters": 900,
+    "additionalWarmupDistanceMeters": null,
+    "totalDistanceMeters": null,
+    "durationSeconds": null,
+    "explanation": "900m conhecidos mais a distância efetivamente nadada no aquecimento por tempo. Não chamar a sessão de900m/1300m nem fixar duração total sem observar o praticante."
+  },
+  "calendar": null,
+  "compatibility": "Mesmo capítulo/modalidade em piscina e praticante tecnicamente competente; aquecimento por tempo, série de resistência e encerramento com doses humanas explícitas. Combinação nova não ensaiada; volume/retorno devem ser revistos antes da oferta, sem herdar benefícios militares, de5000m, de12semanas ou de ensaios de terceiros. Não foi incorporado treino em terra, IM, nadadeiras ou educativos indefinidos do estudo2023.",
+  "safety": {
+    "sourceId": "PR170",
+    "url": "https://www.cdc.gov/drowning/prevention/index.html",
+    "facts": [
+      "Nadar com companhia e preferir instalações com guarda-vidas; instrutor e guarda-vidas têm papéis distintos",
+      "Aprender habilidades aquáticas em aulas formais; aplicativo não substitui aula ou vigilância",
+      "Evitar álcool e considerar medicamentos/condições que afetem segurança; avaliação apropriada quando necessária",
+      "Não hiperventilar nem realizar apneia prolongada; prancha/boia de treino não é equipamento de salvamento"
+    ],
+    "interruption": "Não continuar séries diante de incapacidade de manter ritmo/técnica ou dificuldade aquática. Regras locais de auxílio/emergência devem estar ensinadas e disponíveis; sem algoritmo de diagnóstico ou resgate autônomo."
+  },
+  "rights": {
+    "PR167": "Aviso USU recebido via link legal indicado pela HPRC/CHAMP permite distribuir/copiar informação salvo aviso e solicita crédito. Seleção apenas de dados/metodologia de treino do guia1997, sem aviso contrário localizado nos trechos; não mídia/logos/diagrama/layout, edições comerciais ou terceiro.",
+    "PR170": "Fatos educativos CDC em redação independente com crédito e link; nenhuma fotografia ou outro ativo recebido para uso.",
+    "scope": "Não atribuição como licença; fonte/aviso e limites separados em direitos-componentes.json. Revisar ativo final antes de publicação."
+  },
+  "notCovered": [
+    "Aprender a nadar sem instrutor",
+    "Idoso frágil, reabilitação ou cuidador enquanto vigia/dependente na água",
+    "Casa sem piscina, aparelho de praça ou água aberta",
+    "Programa completo/36sessões, progressão automática, promessa de emagrecimento",
+    "Apneia, treinamento submerso, frio, surf ou técnicas de combate"
+  ],
+  "remainingBeforePublication": [
+    "Revisão profissional de compatibilidade, intensidade de encerramento e volume final, sem alterar silenciosamente autoria/dose",
+    "Entrega real com apoio/vigilância aquática, avaliação e regras locais",
+    "Revisão editorial pt-PT, acessibilidade/compreensão, créditos e direitos do ativo final",
+    "Implementação e validação do produto em etapa própria"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

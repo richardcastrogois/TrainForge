@@ -1,0 +1,24 @@
+{
+  "id": "c15-revieew-si4-docx",
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM4_ESM.docx",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T23:04:34.189333+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "TabelaSI1 de tamanhos de efeito, nao roteiro; leitura XML com limites/membros externos/OLE/macros nao executados, teto2MiB mantido.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM4_ESM.docx",
+  "contentType": "application/octet-stream",
+  "retryAfter": null,
+  "bytes": 17924,
+  "bodyFile": "../raw/c15-revieew-si4-docx.docx",
+  "sha256": "1c53b922aa0863df0ea0c275b53ee5b44ab90cf2c9c613741d771cc2750fdc1c",
+  "bodyFormatMatchesRequest": true
+}

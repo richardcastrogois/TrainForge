@@ -1,0 +1,24 @@
+{
+  "id": "n26-va-chair-pdf",
+  "url": "https://www.warrelatedillness.va.gov/WARRELATEDILLNESS/clinical/integrative-health/ca/chair-yoga-handout.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:04:59.701656+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Sequência humana de Louise MahoneyMSRYT, comandos/dose/partes, imagens/direitos separados; não transferir resultados do programa clínico",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.warrelatedillness.va.gov/WARRELATEDILLNESS/clinical/integrative-health/ca/chair-yoga-handout.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 722838,
+  "bodyFile": "../raw/n26-va-chair-pdf.pdf",
+  "sha256": "1aa8726559d8305031ddf33c056f7f9aaf280154192b388a6c56d6f8290a3976",
+  "bodyFormatMatchesRequest": true
+}

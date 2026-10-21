@@ -1,0 +1,23 @@
+{
+  "id": "c15-caser2018-pagina",
+  "url": "https://www.fundacioncaser.org/publicaciones-y-estudios/actas-de-coordinacion-sociosanitaria/historico/actas-de-coordinacion-sociosanitaria-n-22",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:48:51.094051+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Origem editorial, data e link exato do artigo de Montero; nao manual ou concessao comercial presumida.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fundacioncaser.org/publicaciones-y-estudios/actas-de-coordinacion-sociosanitaria/historico/actas-de-coordinacion-sociosanitaria-n-22",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 141875,
+  "bodyFile": "../raw/c15-caser2018-pagina.html",
+  "sha256": "2c4f0dd5821facd1c867c8700517b736cb4f638218c618bc2ae295f36f2989c7"
+}

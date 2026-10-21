@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "networkReceiptCount": 8,
+  "http200": 5,
+  "usableBodies": 5,
+  "verifiedBodyHashes": 8,
+  "visuallyReviewedPdfPages": 9,
+  "receipts": [
+    {
+      "receipt": "n27-acta2022-pdf.evidencia.json",
+      "status": 200,
+      "hashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n27-home2023-pdf.evidencia.json",
+      "status": 200,
+      "hashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n27-kalyani-faculty.evidencia.json",
+      "status": 200,
+      "hashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n27-lucy-home-pdf.evidencia.json",
+      "status": 404,
+      "hashValid": true,
+      "usable": false
+    },
+    {
+      "receipt": "n27-lucy-profile.evidencia.json",
+      "status": 403,
+      "hashValid": true,
+      "usable": false
+    },
+    {
+      "receipt": "n27-oldermen2024-pdf.evidencia.json",
+      "status": 403,
+      "hashValid": true,
+      "usable": false
+    },
+    {
+      "receipt": "n27-pereira2024-jats.evidencia.json",
+      "status": 200,
+      "hashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n27-nhs-core-pdf.evidencia.json",
+      "status": 200,
+      "hashValid": true,
+      "usable": true
+    }
+  ],
+  "passed": true,
+  "notClinicalOrExecutionValidation": true
+}

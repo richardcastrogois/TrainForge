@@ -1,0 +1,24 @@
+{
+  "id": "n24-sofa-saddle",
+  "url": "https://www.britishcycling.org.uk/sofatosaddle",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:51:55.761607+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Ofertaoficialappiniciante2026;nao testarconta/extrairplanos",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.britishcycling.org.uk/sofatosaddle",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5675,
+  "bodyFile": "../raw/n24-sofa-saddle.html",
+  "sha256": "4df2b7d31c5367f283307cee562d502796820b98544a64c88f96bdd4fafc9e42",
+  "error": "HTTP 403"
+}

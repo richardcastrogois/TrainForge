@@ -1,0 +1,23 @@
+{
+  "id": "n40-nutrition5k-paper",
+  "url": "https://arxiv.org/html/2103.03375v1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:39:24.777592+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Texto primário de Nutrition5k: separar massa/volume, aquisição/splits, definição de MAE e divergência entre tabela e parágrafo. Sem imagens/pesos/dataset; leitura de pesquisa, não licença de republicação de figuras.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://arxiv.org/html/2103.03375v1",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 144748,
+  "bodyFile": "../raw/n40-nutrition5k-paper.html",
+  "sha256": "7cc9d9045571e875a8d6a4ae41b9087fa72369e3cfa6dbee198d5509c585355b"
+}

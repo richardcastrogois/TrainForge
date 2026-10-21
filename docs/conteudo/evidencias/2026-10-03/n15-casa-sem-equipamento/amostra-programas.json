@@ -1,0 +1,215 @@
+{
+  "niche": "N15",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "program": {
+    "sourceId": "PR13",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12692657/",
+    "sha256": "5f5c45e05220bf9fa4ce61671a985e6bf45e6ba254fc86979893b72ffb6c69d4",
+    "publicationDate": "2025-11-27",
+    "journal": "Healthcare (Basel)",
+    "doi": "10.3390/healthcare13233091",
+    "author": "Zhenyue Liu e colaboradores",
+    "license": "CC BY 4.0",
+    "audience": "adultos mais velhos residentes na comunidade; oito participantes analisados",
+    "eligibility": "residentes na comunidade, sem historico cardiovascular, fratura nos ultimos seis meses ou disturbio de movimento; sem treino regular de resistencia ha pelo menos um ano; aprovacao medica",
+    "eligibilityIsValidatedAppScreening": false,
+    "caregiverWorkflowDemonstrated": false,
+    "setting": "casa; aulas online supervisionadas",
+    "equipment": [
+      "cadeira aproximadamente 40 cm",
+      "dispositivo com camera/audio para supervisao"
+    ],
+    "specialResistanceEquipment": false,
+    "weeks": 7,
+    "lessonsPerWeek": 2,
+    "introductoryLessons": [
+      1,
+      2
+    ],
+    "trainingLessons": [
+      {
+        "lesson": 3,
+        "exerciseCodes": [
+          "SQ"
+        ],
+        "repetitions": 8,
+        "sets": 2,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 60
+      },
+      {
+        "lesson": 4,
+        "exerciseCodes": [
+          "SQ",
+          "SP"
+        ],
+        "repetitions": 8,
+        "sets": 2,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 60
+      },
+      {
+        "lesson": 5,
+        "exerciseCodes": [
+          "SQ",
+          "SP"
+        ],
+        "repetitions": 10,
+        "sets": 2,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 60
+      },
+      {
+        "lesson": 6,
+        "exerciseCodes": [
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 10,
+        "sets": 2,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 60
+      },
+      {
+        "lesson": 7,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 10,
+        "sets": 2,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 45
+      },
+      {
+        "lesson": 8,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 10,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 45
+      },
+      {
+        "lesson": 9,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 10,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 45
+      },
+      {
+        "lesson": 10,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 15,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 45
+      },
+      {
+        "lesson": 11,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 15,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 45
+      },
+      {
+        "lesson": 12,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 15,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 30
+      },
+      {
+        "lesson": 13,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 15,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 30
+      },
+      {
+        "lesson": 14,
+        "exerciseCodes": [
+          "SSQ",
+          "SQ",
+          "SP",
+          "CSAC"
+        ],
+        "repetitions": 15,
+        "sets": 3,
+        "concentricSeconds": 3,
+        "eccentricSeconds": 3,
+        "restSeconds": 30
+      }
+    ],
+    "exerciseNames": {
+      "SQ": "squat",
+      "SSQ": "split squat, por lado",
+      "SP": "shoulder press",
+      "CSAC": "chair-seated abdominal curl"
+    },
+    "releaseApproved": false
+  },
+  "nhsAvailability": {
+    "requestedUrl": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan/",
+    "resolvedUrl": "https://www.nhs.uk/live-well/exercise/",
+    "httpStatus": 200,
+    "fullFiveWeekPlanObtained": false
+  },
+  "limits": [
+    "Publico e supervisao nao equivalem a programa geral autonomo",
+    "Primeiras duas aulas sem dose formal na tabela",
+    "Aquecimento/desaceleracao e videos completos nao obtidos",
+    "Cadeira e equipamento domestico; nao chamar literalmente de zero objetos",
+    "NHS piloto inclui pesos e nao preenche este programa completo",
+    "Revisao pt-PT, ativos e adequacao pendentes"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date":"2026-10-07",
+  "scope":"N15-C: cuidado profissional hospitalar, nao ampliar automaticamente para cuidador familiar/idoso. Protocolo e resultados do mesmo ensaio distinguidos; cartazes externos nao herdam licenca editorial. Enderecos publicadosHTTP solicitadosHTTPS; nenhuma segunda tentativa se falharem.",
+  "requests":[
+    {"id":"c15-jakobsen2014-protocolo-html","url":"https://link.springer.com/article/10.1186/1471-2474-15-119","extension":"html","purpose":"Protocolo original10semanas/5x10min WORKsupervisionado/HOMEfaixas, materiais/instrucoes/qualificacao/desenho e direitos; figuras/cartazes nao presumidos recebidos."},
+    {"id":"c15-jakobsen2015-resultados-html","url":"https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1","extension":"html","purpose":"Artigo integral primarioCCBY4 resultadosdor/adesao e diferencas WORKvsHOME; nao equivalencia domiciliar dos efeitos, verificar cartazes e divergencias."},
+    {"id":"c15-jakobsen2015-tronco-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Publicacao do mesmo ensaio sobre perturbacao tronco, nao nova amostra/familia independente. Correlacionar fonte primaria com cartazes HOME/instrucoes e resultados sem extrapolar."},
+    {"id":"c15-jobogkrop-cartaz-clinico-pdf","url":"https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/Shop/PDF/Plakat-med-elastikoevelser-til-klinisk-personale.pdf","accept":"application/pdf","extension":"pdf","purpose":"Primeira coleta do cartaz clinico exatamente publicado no resultado/protocolo, usandoHTTPS; tentar uma vez, nao procurar copia nao autorizada se indisponivel."},
+    {"id":"c15-jobogkrop-cartaz-costas-pdf","url":"https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf","accept":"application/pdf","extension":"pdf","purpose":"Primeira coleta cartaz costas publicado, verificar identidade e nomenclatura conflitanteposter2/3 antes de importar."},
+    {"id":"c15-jobogkrop-cartaz-faixas-pdf","url":"https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/PDF/Exercises-with-elastic-band.pdf","accept":"application/pdf","extension":"pdf","purpose":"Primeira coleta cartaz faixas publicado; verificar execucao/dose e licenca propria, sem colar instrucoes de outros programas."}
+  ]
+}

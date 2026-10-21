@@ -1,0 +1,24 @@
+{
+  "id": "n21-barbosa2022-pdf",
+  "url": "https://www.scielo.br/j/motriz/a/hsft7gL7PfCYFVz7Mk4wJNG/?format=pdf&lang=en",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:30:55.891290+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Referencia16doartigo2024: conferir dose por aparelho, definicao de ciclo/cadencia, figura dos quatro equipamentos e licenca; sem preencher instrucao a partir do nome.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.scielo.br/j/motriz/a/hsft7gL7PfCYFVz7Mk4wJNG/?format=pdf&lang=en",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 900426,
+  "bodyFile": "../raw/n21-barbosa2022-pdf.pdf",
+  "sha256": "1534a44ca7aef3ec14def3e0d65bd0695609baef086e9bea084e01dcb0bac7bf",
+  "bodyFormatMatchesRequest": true
+}

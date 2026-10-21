@@ -1,0 +1,24 @@
+{
+  "id": "cg02-ilm-bhi2009-pdf",
+  "url": "https://www.instituteoflifestylemedicine.org/ilm/wp-content/uploads/2015/04/ElicitingTheRelaxationResponse.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T17:15:56.355430+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia2009doILM que atribui tecnica generica aoBHI: comparar nove passos/10-20min/retorno sentado/horarios com seis passosPR61. Nao importar dose/gestos/copia deexpressao nem identificarcomoCD doensaio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.instituteoflifestylemedicine.org/ilm/wp-content/uploads/2015/04/ElicitingTheRelaxationResponse.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 106534,
+  "bodyFile": "../raw/cg02-ilm-bhi2009-pdf.pdf",
+  "sha256": "0dd2aaa803ea254ecff9a339690ef0796be412fb74875b14efe3c0975fe43827",
+  "bodyFormatMatchesRequest": true
+}

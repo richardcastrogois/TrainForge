@@ -1,0 +1,25 @@
+{
+  "id": "c15-hives2021-ucsf-pdf",
+  "url": "https://escholarship.org/content/qt8jp673mh/qt8jp673mh.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:57:00.247250+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Deposito institucionalUCSF independente publicado no indice: primeiroPDF do ensaio cuidador aerobico, nao retry doXML500; verificar identidade/direitos/progressao real.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://escholarship.org/content/qt8jp673mh/qt8jp673mh.pdf",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/c15-hives2021-ucsf-pdf.pdf",
+  "sha256": "380f2b86db44ed35d8b37b9ea4e8bed73850b8721ffee59911ede0c5fd020573",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-08",
+  "niche": "N15-C",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "inspection": {
+    "textExtractedPdfPages": 653,
+    "duplicatePdfPagesIncluded": 236,
+    "renderedPages": 46,
+    "visuallyInspectedPageCount": 46,
+    "visuallyInspectedPdfPagesOneBased": {
+      "c15-montero2017-tese-canonica-pdf": [1,133,136,138,139,140,141,142,143,144,145,332,333,338,342,345,346,347,349,350,351,352,353,354,355,356,357,358,359,360,361,362],
+      "c15-salamanca2025-tfg-pdf": [1,9,10,12,17,18,19,28,29,38,39,44,45,46]
+    },
+    "method": "Extracao pypdf de todos os PDFs; paginas especificadas renderizadas e efetivamente vistas. FEDEMA nao recontado como nova leitura visual ou nova familia."
+  },
+  "sources": [
+    {
+      "sourceId": "PR85",
+      "version": "tese_2017",
+      "author": "Federico Montero Cuadrado",
+      "doi": "10.14201/gredos.137103",
+      "sourceReceipts": ["c15-montero2017-tese-canonica-pdf.evidencia.json"],
+      "sha256": "70109a7e8cf572a189297e50ce5cdc6986faa8d5b2449a2e9bb31b4b982f659f",
+      "pdfPages": 362,
+      "canonicalBodyReceived": true,
+      "fullAnnexReceived": true,
+      "all36SessionTablesVisuallyInspected": true,
+      "rasterSessionPdfPages": [351,352,353,354,355,356,357,358,359,360,361,362],
+      "sessionTablePrintedPages": [329,330,331,332,333,334,335,336,337,338,339,340],
+      "movementInstructionPdfPages": [332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350],
+      "methodsPdfPages": [133,134,136,137,138,139,140,141,142,143,144],
+      "design": {
+        "recruitment": "outubro-dezembro2014, Circular/Pilarica",
+        "randomised": 68,
+        "initialIntervention": 36,
+        "initialControl": 32,
+        "analysed": 62,
+        "analysedIntervention": 32,
+        "analysedControl": 30,
+        "interventionStart": "2015-02-16",
+        "interventionEnd": "2015-05-08",
+        "bothArmsUsualCare": "4 encontros:3x90min e1x60min; enfermagem, servico social e fisioterapia. Nao atribuir efeito combinado a gesto isolado.",
+        "later2018And2020AreNotNewIndependentTrialsByDefault": true,
+        "populationAgeOrEligibilityMergedAcrossVersions": false,
+        "locators": "PDF133-138/pp111-116; comparar leituras2018 e2020 separadas"
+      },
+      "authorshipAndDelivery": {
+        "professionallyDesignedExplicit": true,
+        "designTeam": "fisioterapeutas, medico esportivo e graduados em ciencias da atividade fisica/esporte; PDF138",
+        "sessionSupervision": "2 fisioterapeutas; PDF332. Direcao por graduados em fisioterapia explicitadaPDF138.",
+        "individualClinicalScreening": "Historia clinica e CAAF antes do programa; necessidade de revisao medica quando risco; PDF134.",
+        "professionallyIndividualisedDose": true,
+        "apkInstructionsReplaceProfessional": false,
+        "independentHomeUseTested": false
+      },
+      "programmeAsPublished": {
+        "weeks": 12,
+        "sessions": 36,
+        "sessionsPerWeek": 3,
+        "scheduledDays": ["segunda", "quarta", "sexta"],
+        "nominalMinutesPerSession": 60,
+        "warmupMinutesInitialRange": [10,15],
+        "mainMinutesInitialRange": [35,40],
+        "cooldownMinutesInitial": 10,
+        "warmupMinutesSession18AndLaterFridaysRange": [5,10],
+        "cooldownMinutesLaterFridaysRange": [10,15],
+        "sessionRangesAreIndependentFixedTimers": false,
+        "materials": ["cadeiras", "parede", "colchonetes", "Theraband", "halteres", "lastros", "bolas", "aros", "rampa", "escadas", "step", "bastoes"],
+        "partnersAndGroupRequiredForSomeItems": true,
+        "roomAreaM2": null,
+        "setting": "sala_fisioterapia_atencao_primaria",
+        "compatibleSettingDoesNotMeanRemovingPartnersOrSupervision": true,
+        "clinicalOutcomesPerGestureProven": false
+      },
+      "doseLocators": [
+        {"pdfPage":143,"printedPage":121,"field":"forca","initialSets":1,"initialRepsRange":[10,12],"targetSets":2,"targetReps":15,"targetRepSeconds":3,"initialBetweenSetsRestSeconds":60,"lastMicrocycleRestSeconds":45,"dumbbellKgRange":[1,3],"progression":"individual porfisioterapeutas, primeiras3semanas isometria semresistencia; nao inventar calendario entre extremos","muscleFailurePermitted":false},
+        {"pdfPage":333,"printedPage":311,"field":"mobilidadeA2","holdSecondsRange":[6,10],"repsPerSideOrMovement":5,"safety":"sem dor, tontura ou vertigem; postura e respiracao; sentado/depe/emmarcha sao variantes distintas"},
+        {"pdfPage":342,"printedPage":320,"sourceCode":"B2.26","field":"elevacao_da_cadeira_pelos_bracos","sets":2,"repsPerSetRange":[8,15],"restSeconds":null,"doNotRenameAsLegSitToStand":true},
+        {"pdfPage":344,"printedPage":322,"sourceCode":"B2.42","field":"sentar_levantar_pernas","distinctFromB226":true,"standaloneDoseExplicit":false},
+        {"pdfPage":345,"printedPage":323,"sourceCode":"B2.44","field":"extensao_quadril_faixa","holdSeconds":1,"holdDoesNotTransferToB245Abduction":true},
+        {"pdfPage":349,"printedPage":327,"sourceCode":"C1.17","field":"alongamento_global_parede","holdSeconds":30,"restSeconds":30,"repeats":3,"restPosition":"bracos descem mas restante do corpo mantem posicao; nao pausa livre"},
+        {"pdfPage":349,"printedPage":327,"sourcePrintedCode":"C18","field":"alongamento_global_supino_parede","holdSeconds":30,"restSeconds":30,"repeats":3,"sourceCodeNormalisationIsLocatorOnly":true},
+        {"pdfPage":350,"printedPage":328,"sourceCodes":["C2.1","C2.2","C2.3"],"field":"respiracao","cyclesRange":[5,7],"cyclesAreNotMinutes":true,"C21ContainsApneaAsPublished":true,"C24AndC25AreDescriptionsNotFullScripts":true}
+      ],
+      "safety": {
+        "locators": "PDF134,139-144,332-333,337-338,347",
+        "bloodPressureChecks": true,
+        "borgScale": "RPE6-20, inicialmente11-13, fasesfinais15-16; naoCR10",
+        "talkTestAndOccasionalHrMonitors": true,
+        "painDizzinessVertigoAndParesthesiaAvoided": true,
+        "fallProtectionAndSupportRequired": true,
+        "fatigueTimeIndividualisation": "Condicoes fisicas/psiquicas, hidratacao, ritmo individual e horarios de grupo; nao reduzir automaticamente dose devido ao cansaco.",
+        "missedSessionsRule": "Apos maisde3sessoesconsecutivas ausentes, telefonema para verificar causas/facilitar retorno. Corte25sessoes e criterio do estudo, nao compensar faltas automaticamente.",
+        "noAccidentOrInjuryRecordedDuringProgramme": true,
+        "zeroRiskProven": false,
+        "automaticStopResumeAlgorithmPublished": false
+      },
+      "conflicts": [
+        {"field":"aerobicIntensity","methodsPdfPage":144,"methodsHrmaxFirst4WeeksRange":[60,65],"methodsHrmaxFinalRange":[70,80],"annexPdfPage":346,"annexPrintedRange":"55-64 ate94%FCmax","resolved":false,"action":"Nao autorizar timer/carga automatica; nao trocar94por80 porIA. Fonte tem conflitointerno, nao mera diferenca2017/2020."},
+        {"field":"analyticStretchRepetitions","methodsPdfPage":144,"methodsReps":3,"annexPdfPage":347,"annexRepsRange":[3,4],"resolved":false,"action":"Registrar ambas as prescricoes; nao transferir faixa para alongamentos globais com dose propriaC1.17/C18."},
+        {"field":"balanceAndCoordination","pdfPages":[336,337,338],"issue":"B1.2/B1.3 sao grupos/exemplos individualizados, nao roteiro identico fechado para todas. A propria fonte explica que nao estabelece equilibrio especifico para cada sessao.","professionalDecisionRequired":true,"isReasonToExcludeCompatibleVenue":false},
+        {"field":"gamesAndRelaxation","pdfPages":[346,347,350],"issue":"Parte dos jogos so nomeada; Jacobson/Schultz sem roteiro muscular integral. Nao gerar variantes ou trocar por outro audio."}
+      ],
+      "rights": {
+        "primaryRegistryUrl":"https://gredos.usal.es/handle/10366/137103",
+        "registryObservedWithWebTool":"2026-10-08",
+        "registryLocalBodyReceived":false,
+        "previousTimeoutReceipt":"2026-10-07/n15c-teses-seguimento/c15-montero-tese-registro.evidencia.json",
+        "licenceAsPrimaryRegistryDeclares":"CC BY-NC-ND4.0, salvo indicacao contraria",
+        "commercialAssetGrantVerified":false,
+        "laterArticleCcByAutomaticallyLicensesThesis":false,
+        "factsAndCitationsBanned":false,
+        "copyTranslateFiguresScriptsOrVideosApproved":false
+      },
+      "selection": {
+        "status":"condicional",
+        "previousMissingOriginalResolved":true,
+        "fullSourceReceivedIsFullyExecutableApkProgramme":false,
+        "remaining":"Conflitos internos, grupos dependentes de individualizacao profissional e direitos dos ativos; evidencia do programa preservada. Nao falta autorizacao do usuario para centro/supervisao.",
+        "selectedAsExecutableProgramme":false
+      }
+    },
+    {
+      "sourceId":"PR108",
+      "version":"TFG2025",
+      "author":"Ismael Lopez Gil, estudante de Fisioterapia",
+      "tutor":"Carlos Martin Sanchez",
+      "sourceReceipts":["c15-salamanca2025-tfg-pdf.evidencia.json","c15-salamanca2025-registro-html.evidencia.json","c15-salamanca-tutor-perfil-html.evidencia.json","c15-salamanca-video-listagem-html.evidencia.json"],
+      "pdfPages":55,
+      "tutorEvidence":"Perfil institucional: ProfessorAyudanteDoctor/areaPhysiotherapy/doutorado2016. Nao presume coautoria porgesto, diploma ou registro do estudante.",
+      "clinicallyDemonstratedEfficacy":false,
+      "design":{"initialParticipants":5,"analysed":4,"controlGroup":false,"randomised":false,"inferentialTestsReported":false,"withdrawal":"incompatibilidadehoraria","population":"Pais/maes familiares deprimeirograu cuidando adultos comPC, ASPACESalamanca; sedentarios nos3meses anteriores","locators":"PDF9-10 e17-19"},
+      "programme":{"weeks":8,"weeklyGroupMinutes":50,"homeDaysPerWeek":4,"homeMinutesPerDayAsText":20,"studiedSetting":"CentroActivaSalud+domicilio","homeGuidePdfPages":[45,46],"homeVideoLinkPdfPage":44,"homeGuidePrintedPages":[47,48],"twoAlternatingSequences":true,"itemsPerSequence":6,"sets":2,"workSeconds":60,"restSeconds":40,"additionalWalkMinutesPerDayRecommendation":30,"recommendationIsIsolatedWalkingTrial":false,"initialTeachingAndSupervisedWeeklyContactPreserved":true,"allHomeVisitsOrSessionsObjectivelyVerified":false},
+      "homeGuide": {
+        "day1And3Items":["levantamento_cadeira_sem_maos","avanco_lateral_apoio_parede","elevacao_calcanhares_apoio","rotacao_tronco_sentado_cotovelo_joelho_contrario","abertura_bracos_resistencia","flexao_bracos_parede"],
+        "day2And4Items":["agachamento_funcional_alcance","passo_frente_empurre_parede","deslocamento_lateral_toque_chao","crunch_abdominal","ponte_gluteos_empurre_bracos","press_ombro_com_pontilhas"],
+        "sourceInstructionAndImagesExist":true,
+        "imagesCopiedIntoApk":false,
+        "workRestDoseAppliedToNewThirdPartyVariants":false,
+        "conflict":"Dia2item1 texto indica joelhos estendidos, foto mostra flexao. Preservar, nao corrigir porIA ou considerar variante resolvida.",
+        "movementEndRulesNotCompleteForEveryItem":true,
+        "automaticFatigueOrInterruptionAlgorithmPublished":false
+      },
+      "outcomeBoundaries":{"allCompletersFssLower":true,"hadsDepressionIds2And5WorseFrom3To4":true,"hadsDepressionId3Unchanged":true,"sf12PhysicalId3From49_90To37_59":true,"sf12MentalIds1And5Lower":true,"sppbId3Unchanged":true,"zaritId5From21To26Worse":true,"narrativeAllPhysicalImprovedConflictsWithTableAndNextSentence":true,"fallBeforePostForId3Reported":true,"individualChangesProveCausality":false,"locators":"PDF17-19/Table9A-C"},
+      "videoAvailability":{"publicListingReceived":true,"listedFiles":[{"name":"Video DIAS 1 Y 3.mov","displayedSize":"18,2 MB","modifiedDisplay":"3 de mai. de 2025"},{"name":"Video DIAS 2 Y 4.mov","displayedSize":"30,1 MB","modifiedDisplay":"3 de mai. de 2025"}],"mediaDownloaded":false,"watched":false,"instructionsInsideVerified":false,"publicListingIsReuseLicence":false},
+      "rights":{"registryLicence":"CC BY-NC-ND4.0","commercialAssetGrantVerified":false,"videoGrantSeparateAndUnknown":true,"factualCitationAllowedToBeConsidered":true},
+      "selection":{"status":"referencia","selectedAsExecutableProgramme":false,"reason":"Guia real e dados de pequenos casos, nao eficacia clinica demonstrada nem autoria profissional do estudante verificada. Acrescenta conteudo documental sem preencher por si G03/G04."}
+    },
+    {
+      "sourceId":"PR71",
+      "sourceReceipts":["c15-fedema2022-manual-pdf.evidencia.json","c15-fedema2022-pagina-html.evidencia.json"],
+      "sha256":"4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b",
+      "byteIdenticalToReceipt":"2026-10-07/n15c-fisico-relaxamento/c15-fedema-manual-2022.evidencia.json",
+      "newClinicalFamily":false,
+      "newExerciseContent":false,
+      "disposition":"Duplicata preservada e ligada a leitura anterior dos37registros. Nao soma familia, nao ensaio clinico e nao novo grant; nao coletar novamente."
+    }
+  ],
+  "next":"Continuar exclusivamenteN15-C: localizar programa operacional sem conflitos essenciais e ativos comerciais gratuitos verificados; PR85original recuperado nao voltar a tratar como ausente. PR108video listado nao assistido; nao baixar midia para contornar exibicao."
+}

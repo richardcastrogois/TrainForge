@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "requests": [
+    {
+      "id": "c15-educapes-cuidador-metadados",
+      "url": "https://educapes.capes.gov.br/handle/capes/922438?mode=full",
+      "extension": "html",
+      "purpose": "Primeira captura eduCAPES: autoria, serie propria de alongamentos do cuidador e CC BY-SA3.0 Brasil. MP4 nao baixado sem autorizacao especifica de tamanho."
+    },
+    {
+      "id": "c15-va-workbook-integral",
+      "url": "https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Workbook VA/Easter Seals integral: declaracao primaria de dominio publico mundial/comercial, ressalvas terceiros e rotina de autocuidado do cuidador; nao prescricao universal."
+    },
+    {
+      "id": "c15-va-workbook-modulo1",
+      "url": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Modulo1 V3 oficial54p: ler rotina muscular inteira e recomendacao de caminhada com progressao, confirmar versos e limites sem aplicar outras partes do workbook."
+    },
+    {
+      "id": "c15-pilates-ufba-metadados",
+      "url": "https://repositorio.ufba.br/handle/ri/40795",
+      "extension": "html",
+      "purpose": "Registro primario UFBA de Pilates solo para cuidadores, cartilha citada e acesso/embargo; nao acessar PDF restrito ou extrapolar metadados."
+    }
+  ]
+}

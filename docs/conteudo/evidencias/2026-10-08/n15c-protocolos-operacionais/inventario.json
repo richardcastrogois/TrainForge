@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-08",
+  "niche": "N15-C",
+  "collectorCalls": 38,
+  "usableBodies": 27,
+  "hashedBodies": 36,
+  "sources": [
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-crea2026-s1-pdf.evidencia.json",
+      "url": "https://public-pages-files-2025.frontiersin.org/articles/1944170/data-sheet/1",
+      "status": 404,
+      "sha256": "ca5ba471cec16efa3a2a57d7ecc344207cc8c1ae0711ab90b11dc8b01c923ae5",
+      "bytes": 294,
+      "error": "HTTP 404",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-edicao-html.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/pub/erusaglik/issue/99921",
+      "status": 200,
+      "sha256": "d3b2a5f1ef2c29e3c558cd100ffb1d55b989e8bdbd43119aac69e699ec4fa9a5",
+      "bytes": 172332,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-institucional-html.evidencia.json",
+      "url": "https://www.my-zaidan.or.jp/tai-ken/introduce/detail.php?id=a8afeb72428deddeb49c19f86edf7209&tmp=1524036185",
+      "status": 200,
+      "sha256": "ad85ae0f5b3401938b0e73d3677026ed515dd9aa16f6e07ca8798fc84d721898",
+      "bytes": 28083,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-direitos-html.evidencia.json",
+      "url": "https://www.my-zaidan.or.jp/sitepolicy/",
+      "status": 200,
+      "sha256": "323de85254e813d0adbddd1fa6d5a22f2e9168e205ad57a845fb189d4a20983b",
+      "bytes": 32734,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-pdf.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/PDF/10.13517/j.cnki.ccm.2023.08.001?token=cc315fcb5b8b4610a8eb515997c040c6",
+      "status": 200,
+      "sha256": "d27577756ab71fd33b5d331b17ea7f83fe78aad691a267d99447e7b8303a9dd5",
+      "bytes": 1482170,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-mhlw-termos-html.evidencia.json",
+      "url": "https://www.mhlw.go.jp/chosakuken/index.html",
+      "status": 200,
+      "sha256": "91a43756ebd1ae3fa274af08fca01ee3919c6c49d3c648c643631f1d51926700",
+      "bytes": 51555,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-download-helper.evidencia.json",
+      "url": "https://www.zglyyx.com/develop/static/common/js/download_cn.js",
+      "status": 200,
+      "sha256": "53fabe422ab3a8388a1de6f13814ebb413835ca125dd336b750dec3c31c3264f",
+      "bytes": 14001,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-pdf.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/pdf/yjmt-23-205.pdf",
+      "status": 200,
+      "sha256": "d0142a58f1883f5afa1f5d8c7a58dd28f01bff3417bff084999bf99dc926e54a",
+      "bytes": 1817,
+      "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-pmc-app1-docx.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app1.docx",
+      "status": 200,
+      "sha256": "6b5d71b1f1f32bec860088a9dd1ebd03707210bd18bc37f92e0242ea13a8b83d",
+      "bytes": 1817,
+      "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-pmc-app3-docx.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app3.docx",
+      "status": 200,
+      "sha256": "1f11bdc60d673c3afda0f90d61042815a0696e5fc2c42ed44b6ff9080970cc7f",
+      "bytes": 1817,
+      "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-pmc-html.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/",
+      "status": 200,
+      "sha256": "28eef54ef3465a022fefe8b1a456fbebb08d542189fb1d3d31d62fe6ea8170b5",
+      "bytes": 146246,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&resultType=core&format=json",
+      "status": 200,
+      "sha256": "83d8928c0f420449b926bc0006028fb1b917df226efefcf665ad5a86467f36e9",
+      "bytes": 10496,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-app1-docx.evidencia.json",
+      "url": "https://formative.jmir.org/2023/1/e42861/extfile/formative_v7i1e42861_app1.docx",
+      "status": 202,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "error": "HTTP 202",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-app3-docx.evidencia.json",
+      "url": "https://formative.jmir.org/2023/1/e42861/extfile/formative_v7i1e42861_app3.docx",
+      "status": 202,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "error": "HTTP 202",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-gyyb-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/48/NCT03853148/Prot_000.pdf",
+      "status": 200,
+      "sha256": "5cad493aa78ec4a91d499c5ed1040a306533c69b3031a2dea5cef8398916e892",
+      "bytes": 683971,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4727733/fullTextXML",
+      "status": 500,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "error": "HTTP 500",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-resumo-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&format=json",
+      "status": 200,
+      "sha256": "f680a1ffc5be0069dee7cba8f959e59e6fc922430013cd8577b3aa68b951442a",
+      "bytes": 1195,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-politica-html.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/column/column11.shtml",
+      "status": 200,
+      "sha256": "53d6da49790546a4f086b41ca3371318b6549bea381424da66dc9820eabc3c2a",
+      "bytes": 15684,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-estabilizacao2022-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9140401/fullTextXML",
+      "status": 200,
+      "sha256": "9fb629efe2386ddfe827c2057e1dd126019b040598dc167e8c9ce01cb2ac5079",
+      "bytes": 203332,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-relatorio-mhlw-pdf.evidencia.json",
+      "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai/hojokin/dl/28_14020301-01_So.pdf",
+      "status": 200,
+      "sha256": "32da315cbf00dd3d8acfa167622ea786313bbd084e4aecf4da5aaa0b6bbcd540",
+      "bytes": 40895897,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9989915/fullTextXML",
+      "status": 200,
+      "sha256": "d5dfabcec1e2c9f8d243c358c03ea71f2652bc0b1aead9303fea93a31f5f0ec7",
+      "bytes": 168545,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-gyyb2024-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12874544/fullTextXML",
+      "status": 500,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "error": "HTTP 500",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-gyyb-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03853148",
+      "status": 200,
+      "sha256": "e7fd87e029e1479a0689a680b8050631daefe5bc33cf4f1a1c1915e928d5f774",
+      "bytes": 191799,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-cn-html.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/10.13517/j.cnki.ccm.2023.08.001",
+      "status": 200,
+      "sha256": "1b77baea10a92d370f36cf03dc303a9316db2096b95b3b3ced50c2febf5169b9",
+      "bytes": 108925,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-alonso2020-repositorio-pdf.evidencia.json",
+      "url": "https://buleria.unileon.es/bitstream/10612/19575/1/Physiotherapeutic_Intervetion_Promote_Self_Care.pdf",
+      "status": null,
+      "sha256": null,
+      "bytes": null,
+      "error": "<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-vr2025-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452558/fullTextXML",
+      "status": 200,
+      "sha256": "9971630f47acb814c18797c9b2c4128f576b29b2e6eeb5740e6b4974e2418968",
+      "bytes": 154416,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-qigong-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04019301",
+      "status": 200,
+      "sha256": "9b426bd838382c76ec873a6bb407c12b63e941248469693019e9a443eaa8a275",
+      "bytes": 54840,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-qigong-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/01/NCT04019301/Prot_SAP_000.pdf",
+      "status": 200,
+      "sha256": "f0a6c2b7a0b360b7f4a9b318873cce511957eeaf4cd0fb04651e760b82f19e01",
+      "bytes": 447618,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan-preprint-html.evidencia.json",
+      "url": "https://www.researchsquare.com/article/rs-3758822/v1",
+      "status": 200,
+      "sha256": "9f5efdfbcfb85f0e0cff28d6d87a4d5fadece17cc10698fb1de1d4e08d385236",
+      "bytes": 295120,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan-sanko-curriculo-pdf.evidencia.json",
+      "url": "https://www.sanko.edu.tr/wp-content/uploads/2019/05/Ek-3-Zeynep-DO%C4%9EAN.pdf",
+      "status": null,
+      "sha256": null,
+      "bytes": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-artigo-html.evidencia.json",
+      "url": "https://formative.jmir.org/2023/1/e42861/",
+      "status": 202,
+      "sha256": "a5990bcf5abaa5e7a0f7e3cd9b497d3c31de270d77b81c564fcd3c67146aa77a",
+      "bytes": 2121,
+      "error": "HTTP 202",
+      "bodyUsable": false
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu2012-antecedente-pdf.evidencia.json",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/110/0/110_1/_pdf",
+      "status": 200,
+      "sha256": "8b8adfeacc036806a92d933c3730ea44980160e5a5751f040122d4593e504e6e",
+      "bytes": 1001943,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-crea2026-artigo-html.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+      "status": 200,
+      "sha256": "86bca8231ca39ab1a5311cd9d826665cb64ba94340b123304e57b44bf0d65efc",
+      "bytes": 698643,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-crea2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07388186",
+      "status": 200,
+      "sha256": "77d5f5ec1f80a11a3a6b15981d959207368b5652e7553a100ecebcc96815b279",
+      "bytes": 12673,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-html.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/pub/erusaglik/article/1764171",
+      "status": 200,
+      "sha256": "194afc1e928fdb3561fe0642982f6fc09ff0d95addc8ce5e50f6865caa924404",
+      "bytes": 89427,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-pdf.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/download/article-file/5150323",
+      "status": 200,
+      "sha256": "4237e921bff53abc515b9acd6f5aa247fcc25cc508865ad41392b157d9e7a93d",
+      "bytes": 371752,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05988320",
+      "status": 200,
+      "sha256": "12f6edc45c0a1fe51b9ff54e8e7e4775602825378647e948cd8e2d1112d57e8f",
+      "bytes": 9337,
+      "error": null,
+      "bodyUsable": true
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-acesso-pdf.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/article/showArticleFile.do",
+      "status": 200,
+      "sha256": "de6d5c433bc6ecdb870e91a6383fd60f79dd48f0d7cb6715eb25a7f6b892983d",
+      "bytes": 470,
+      "error": null,
+      "bodyUsable": true
+    }
+  ],
+  "pdfs": [
+    {
+      "id": "c15-dogan2025-artigo-pdf",
+      "pages": 13,
+      "allPagesTextExtracted": true
+    },
+    {
+      "id": "c15-nagamatsu2012-antecedente-pdf",
+      "pages": 7,
+      "allPagesTextExtracted": true
+    },
+    {
+      "id": "c15-gyyb-protocolo-pdf",
+      "pages": 34,
+      "allPagesTextExtracted": true
+    },
+    {
+      "id": "c15-one-stretch2015-relatorio-mhlw-pdf",
+      "pages": 802,
+      "allPagesTextExtracted": true
+    },
+    {
+      "id": "c15-qigong-protocolo-pdf",
+      "pages": 26,
+      "allPagesTextExtracted": true
+    },
+    {
+      "id": "c15-baduanjin-avc2023-pdf",
+      "pages": 6,
+      "allPagesTextExtracted": true
+    }
+  ],
+  "pdfPages": 888,
+  "suiPublishedSupplements": [
+    {
+      "id": "app1",
+      "title": "Multimedia Appendix 1 The intervention group session content.",
+      "files": [
+        "formative_v7i1e42861_app1.docx"
+      ]
+    },
+    {
+      "id": "app2",
+      "title": "Multimedia Appendix 2 The control group education session content.",
+      "files": [
+        "formative_v7i1e42861_app2.docx"
+      ]
+    },
+    {
+      "id": "app3",
+      "title": "Multimedia Appendix 3 Key areas of feasibility, fidelity, and possible outcomes.",
+      "files": [
+        "formative_v7i1e42861_app3.docx"
+      ]
+    },
+    {
+      "id": "app4",
+      "title": "Multimedia Appendix 4 Semistructured interview guide.",
+      "files": [
+        "formative_v7i1e42861_app4.docx"
+      ]
+    },
+    {
+      "id": "app5",
+      "title": "Multimedia Appendix 5 CONSORT e-HEALTH checklist (V 1.6.1).",
+      "files": [
+        "formative_v7i1e42861_app5.pdf"
+      ]
+    }
+  ],
+  "baduanjinMetadataParsedNotTemplateOnly": true,
+  "publicPdfAvailabilityConfirmed": true,
+  "oneStretchPdfLinks": [
+    "pdf/yjmt-23-205.pdf",
+    "pdf/yjmt-23-205.pdf"
+  ],
+  "renderedPages": [],
+  "visualInspectionNotDeterminedByScript": true,
+  "researchClosureApproved": false,
+  "releaseApproved": false
+}

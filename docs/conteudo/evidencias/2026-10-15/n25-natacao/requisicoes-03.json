@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {
+      "id": "n25-women2019-pdf",
+      "url": "https://europepmc.org/articles/PMC6388213?pdf=render",
+      "purpose": "Distribuicao publica oficial do artigo CC BY4; ler Figura1 de sessao cuja imagem nao retornou na ferramenta web. Sem nova chamada ao MDPI429",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n25-gromisz-faculty",
+      "url": "https://www.awf-bp.edu.pl/uczelnia/wydzial-wfiz/kadra-wfiz/zaklad-plywania/",
+      "purpose": "Perfil institucional primario do coautor e chefia do departamento de natacao; timeout web preservado, nao supor ausencia de qualificacao",
+      "extension": "html"
+    }
+  ]
+}

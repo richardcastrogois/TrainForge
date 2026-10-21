@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-11",
+  "scope":"SomenteN15-C. Originais depositados publicamente emEuropePMC, endpoint independente sem repetir desafioPMC/webSAGE. Suplemento anunciado no indice primario epublicacao2018. ZIP limitado2MiB; nao extrair/abrir conteudoativo ou macros, nao contato/APK/contas.",
+  "requests":[
+    {"id":"c15-yoga-grupo2018-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Lopez2018DOI1534735418795301: autoria terapeuta/fisioterapeuta, resultados proprioscuidador/antesdepois semcontrole e curriculo exatoYLow/YHigh."},
+    {"id":"c15-yoga-grupo2018-suplementos-zip","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/supplementaryFiles","extension":"zip","accept":"application/zip","purpose":"Curriculo suplementarDOCX19.5KB explicitamente anunciado, primeira coleta APIpublica. Verificar pacote/limites/hash de cada membro e OOXML semexecutar conteudo; nao assumir manual completo pelo nome."}
+  ]
+}

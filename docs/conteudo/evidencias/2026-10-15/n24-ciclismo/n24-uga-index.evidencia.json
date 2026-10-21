@@ -1,0 +1,24 @@
+{
+  "id": "n24-uga-index",
+  "url": "https://open.online.uga.edu/cycling/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T11:04:10.331089+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Livro aberto de ciclismo indoor; autoria institucional e CC BY 4.0",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://open.online.uga.edu/cycling/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/n24-uga-index.html",
+  "sha256": "ab2e09a4f5e8fabaac6f3d2c1abdb7d27d782ae34f05f0774df29d2c5c822ab6",
+  "error": "HTTP 403"
+}

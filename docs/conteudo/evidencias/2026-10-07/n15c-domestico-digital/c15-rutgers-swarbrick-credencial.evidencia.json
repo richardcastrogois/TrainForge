@@ -1,0 +1,24 @@
+{
+  "id": "c15-rutgers-swarbrick-credencial",
+  "url": "https://newbrunswick.rutgers.edu/people/peggy-swarbrick-phd",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:03:18.905199+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Perfil institucional da coautora Margaret Peggy Swarbrick, OTR/FAOTA; nao assumir atualizacao de registro independente ou licenca do manual.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://newbrunswick.rutgers.edu/people/peggy-swarbrick-phd",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5791,
+  "bodyFile": "../raw/c15-rutgers-swarbrick-credencial.html",
+  "sha256": "af149821664a5cea5556f0968a079cd07b30c6ba116e61c887980dee578a60cb",
+  "error": "HTTP 403"
+}

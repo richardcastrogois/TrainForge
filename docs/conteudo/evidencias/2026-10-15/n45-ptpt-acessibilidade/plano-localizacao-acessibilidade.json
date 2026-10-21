@@ -1,0 +1,173 @@
+{
+  "niche": "N45",
+  "kind": "Requisitos e protocolo de avaliação propostos, não telas ou instruções clínicas novas",
+  "sources": [
+    "https://www.w3.org/TR/WCAG22/",
+    "https://www.w3.org/WAI/older-users/",
+    "https://selo.usabilidade.gov.pt/requisitos/10aspetosaplicacoesmoveis/"
+  ],
+  "criteria": [
+    {
+      "criterion": "1.1.1",
+      "level": "A",
+      "application": "Alternativas textuais informativas; descrição de movimento não pode inventar comandos ausentes da fonte."
+    },
+    {
+      "criterion": "1.2.2/1.2.5",
+      "level": "A/AA",
+      "application": "Legendas/audiodescrição conforme o caso; somente mídia com direitos e conteúdo integral conferidos."
+    },
+    {
+      "criterion": "1.4.3",
+      "level": "AA",
+      "application": "Contraste de texto4,5:1; texto grande3:1 e exceções da norma. Não medida das telas atuais."
+    },
+    {
+      "criterion": "1.4.4",
+      "level": "AA",
+      "application": "Texto ampliável até200% sem perda, conforme escopo e exceções; testar escala nativa e leitor no Flutter separadamente."
+    },
+    {
+      "criterion": "1.4.10",
+      "level": "AA",
+      "application": "Reflow equivalente320CSSpx vertical/256CSSpx horizontal com exceções; não converterCSSpx emdp automaticamente."
+    },
+    {
+      "criterion": "1.4.11",
+      "level": "AA",
+      "application": "Controles/informação gráfica essenciais com contraste3:1 conforme exceções; não só cor."
+    },
+    {
+      "criterion": "2.1.1",
+      "level": "A",
+      "application": "Operação por teclado/tecnologias de apoio conforme aplicabilidade; teste real pendente."
+    },
+    {
+      "criterion": "2.2.1",
+      "level": "A",
+      "application": "Ajuste de limite de tempo conforme exceções; tempo de tarefa digital é diferente da dose/pausa de exercício."
+    },
+    {
+      "criterion": "2.5.7",
+      "level": "AA",
+      "application": "Alternativa a arrastar quando aplicável."
+    },
+    {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "application": "Alvos24×24CSSpx ou exceções documentadas. Não alegar44pxcomo obrigaçãoAA."
+    },
+    {
+      "criterion": "2.5.5",
+      "level": "AAA",
+      "application": "Alvos44×44CSSpx com exceções; pode orientar conforto, sem afirmar conformidade integralAAA."
+    },
+    {
+      "criterion": "3.1.1",
+      "level": "A",
+      "application": "Idioma identificado programaticamente; pt-PT não mera aparência do texto."
+    },
+    {
+      "criterion": "3.3.1/3.3.2",
+      "level": "A",
+      "application": "Erros e instruções compreensíveis; desconhecido não erro0, unidades e pessoa explícitas."
+    },
+    {
+      "criterion": "4.1.2/4.1.3",
+      "level": "A/AA",
+      "application": "Nome/papel/valor e mensagens de estado acessíveis; confirmar leitura real, não presumir pela presença de label."
+    }
+  ],
+  "terminology": [
+    {
+      "concept": "interaction",
+      "proposedPtPT": "ecrã / guardar / registo",
+      "status": "proposta_editorial_nao_validada",
+      "preserve": "Não alterar nomes próprios de programas ou fonte original."
+    },
+    {
+      "concept": "chair_support",
+      "proposedPtPT": "cadeira estável / apoio físico",
+      "status": "revisao_semantica_pendente",
+      "preserve": "Não confundir apoio material com ajuda digital ou supervisão."
+    },
+    {
+      "concept": "dose",
+      "proposedPtPT": "repetições / segundos / por lado / alternadas",
+      "status": "preservar_valor_original",
+      "preserve": "Localização não muda unidade, lado, frequência, intensidade ou regra de interrupção."
+    },
+    {
+      "concept": "identity",
+      "proposedPtPT": "Estou a registar para mim / para outra pessoa",
+      "status": "texto_proposto_para_teste",
+      "preserve": "A opção de cuidador praticante não pode ficar escondida na de representante."
+    },
+    {
+      "concept": "unknown",
+      "proposedPtPT": "Não sei / Prefiro não indicar / Sem registo",
+      "status": "estados_distintos",
+      "preserve": "Não converter em0, não feito ou diagnóstico."
+    }
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "researchStatus": "requisitos_documentados",
+      "actualComprehension": "pendente_sem_participantes",
+      "focus": "Distinguir instrução da aplicação de ajuda física; ler apoio/lado/dose/pausa com visão/audição/destreza diversas. Não exigir familiar ou áudio como único caminho."
+    },
+    {
+      "context": "idoso_academia",
+      "researchStatus": "requisitos_documentados",
+      "actualComprehension": "pendente_sem_participantes",
+      "focus": "Nomes/modelos/ajuste/unidades e consulta em ambiente ruidoso; acesso ao aparelho não demonstra compreensão do movimento."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "researchStatus": "requisitos_documentados",
+      "actualComprehension": "pendente_sem_participantes",
+      "focus": "Sol/reflexos/conectividade/apoios reais; informação offline essencial e alternativa de registo sem câmera/GPS. N21 não concluída."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "researchStatus": "requisitos_documentados",
+      "actualComprehension": "pendente_sem_participantes",
+      "focus": "Cuidador como praticante, com interrupções próprias. Não escrever tudo como se estivesse apenas a operar pelo assistido; consentimento e pessoas separados."
+    }
+  ],
+  "translationRecordFields": [
+    "originalSource",
+    "version",
+    "author",
+    "sourceLanguage",
+    "originalInstruction",
+    "translator",
+    "reviewer",
+    "changedAt",
+    "rightsToTranslate",
+    "doseAndSidePreserved",
+    "status"
+  ],
+  "realEvaluationProtocol": {
+    "participants": "Pessoas idosas com experiências/necessidades diversas e cuidadores praticando para si; recrutamento e consentimento não realizados. Sem número amostral inventado ou participantes disponíveis pressupostos.",
+    "tasks": [
+      "Identificar praticante e ambiente",
+      "Explicar por palavras próprias início/movimento/retorno/lado/dose e apoio de uma instrução legalmente selecionada",
+      "Distinguir ajuda digital, apoio físico e supervisão",
+      "Pausar/registar parcial/corrigir erro e distinguir desconhecido",
+      "Ler com ampliação/leitor de ecrã, localizar confirmação e cancelar partilha"
+    ],
+    "observe": [
+      "Compreensão real e erros, sem executar exercício inseguro para testar interface",
+      "Tipo de ajuda e quem a prestou",
+      "Barreiras por ambiente e tecnologia assistiva",
+      "Tempo/abandono como observação, não déficit cognitivo inferido"
+    ],
+    "clinicalSupervision": "Avaliação de interface não autoriza executar exercício ou retirar profissional exigido pela fonte.",
+    "executed": false
+  },
+  "conformanceClaim": false,
+  "sealObtained": false,
+  "releaseApproved": false
+}

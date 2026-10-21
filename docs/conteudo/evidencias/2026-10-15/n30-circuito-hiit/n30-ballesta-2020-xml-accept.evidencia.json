@@ -1,0 +1,23 @@
+{
+  "id": "n30-ballesta-2020-xml-accept",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7084372/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:51:01.733373+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Correção identificada: primeiroGET406 solicitava HTML/JSON emrotaXML; agora Accept application/xml. Não desafio/captcha/paywall ou PDF de terceiro. Preservar erro e comparar licença/métodos primários.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7084372/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 164273,
+  "bodyFile": "../raw/n30-ballesta-2020-xml-accept.xml",
+  "sha256": "c63b9692a421a0f3f6045de9bf2de2234eccab8b75b321be7428d90440f61baf"
+}

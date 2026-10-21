@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-12",
+  "scope": "SomenteCG03/PR115. PrimeirosGETs aposdeduplicacao de pagina oficial deexercicios e documentos publicamente vinculados pelo parametro src doOfficeviewer. WrapperOffice falhou naleituraweb, nao repetido; alvoDOCX publicado e representacao independente. Nao retry de recursosUCL403/suplemento404 ouSharePoint/formulario. Nao audio/video, conta, contato ou execucao deconteudo. DOCX limitado2MiB, extracaoXML limitada e semgravar membrosZIP.",
+  "requests": [
+    {"id":"cg03-ucl-exercicios-html","url":"https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-relaxation-exercises","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Pagina oficial atual: sete tecnicas/transcricoes, audioSharePointmedianteformulario. Nao incorporar versaoatual aoensaio2014 ou assumir reusocomercial."},
+    {"id":"cg03-ucl-signal-transcricao-docx","url":"https://mediacentral.ucl.ac.uk/assoc_files/Ab5j59J6.docx?token=DdGHibfe","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","extension":"docx","purpose":"Transcricao publica doSignalBreath linked byUCL: comparar contagens/tensao/retencao/pausa/encerramento eversao comAppendix3NIHR. Parametro opaco publicado pelo proprioUCL, nao credencial dousuario ouacessoSharePoint. Naoaudio/CDoriginal comprovado/licenca deapp."},
+    {"id":"cg03-ucl-stretch-transcricao-docx","url":"https://mediacentral.ucl.ac.uk/assoc_files/DBDidc8I.docx?token=BaBjcH6E","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","extension":"docx","purpose":"Transcricao publica doStretching linked byUCL: comparar gesto/respiracao/encerramento eprecaucoes comleader2014. Semmaterialaudio, nao interpretar nome igual como mesma edicao oulicenca comercial."}
+  ]
+}

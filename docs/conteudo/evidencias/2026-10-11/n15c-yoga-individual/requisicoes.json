@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C. Primeira coleta de originais publicos Milbury2023; cuidador praticante, individual ou em dupla, mesmo em hospital/Zoom. Nao repetir PR37HACER, falhas, desafios ou barreiras; nao contato, APK, contas ou outras Ns.",
+  "requests":[
+    {"id":"c15-yoga-individual2023-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10067051/fullTextXML","extension":"xml","accept":"application/xml","purpose":"DOI10.1002/cam4.5514: instrucoes/apoio/seguranca/dose e resultados proprios do cuidador, nao apenas efeito paciente. Identificar suplemento original sem adivinhar caminho."},
+    {"id":"c15-yoga-individual2023-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36468605%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"Metadados primarios, comparar identificadores/edicao, nao novo estudo ou manual."},
+    {"id":"c15-yoga-individual2023-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT02481349","extension":"json","purpose":"Registro citado no artigo para localizar documentos publicos/protocolo; preservar diferencas de versao sem substituir resultados publicados por status do registro."}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-jacobson-hemodialise2024-pdf",
+  "url": "https://d-nb.info/1324365749/34",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T13:01:27.964133+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito bibliografico publico do artigo CC BY4 DOI10.1186/s40001-024-01641-w; verificar se publica sequencia muscular, dose e entrega profissional, nao contornar PMC.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://d-nb.info/1324365749/34",
+  "contentType": "application/pdf;charset=base64",
+  "retryAfter": null,
+  "bytes": 1150119,
+  "bodyFile": "../raw/c15-jacobson-hemodialise2024-pdf.pdf",
+  "sha256": "86afda4f982cedab127623bffa2b10231e1ace53d2df71fd8820f3168bacf749",
+  "bodyFormatMatchesRequest": true
+}

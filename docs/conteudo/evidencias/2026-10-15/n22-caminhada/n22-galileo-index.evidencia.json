@@ -1,0 +1,23 @@
+{
+  "id": "n22-galileo-index",
+  "url": "https://oer.galileo.usg.edu/health-textbooks/3/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:22:30.184133+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Manual aberto GeorgiaHighlands: autores e licenca antes de selecionar conteudo",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://oer.galileo.usg.edu/health-textbooks/3/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 43870,
+  "bodyFile": "../raw/n22-galileo-index.html",
+  "sha256": "da396c30c14d8dac579d82b1a41d6ed98e083a9f23afe4620001b5abb8e9920c"
+}

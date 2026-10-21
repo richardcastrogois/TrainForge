@@ -1,0 +1,24 @@
+{
+  "id": "n27-acta2022-pdf",
+  "url": "https://gymnica.upol.cz/pdfs/gym/2022/01/08.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:16:18.830485+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Referência direta deHBPE2023: programa12semanas e tabela, autoria/apoio/variantes/cuidado com testes de apneia separados de treino",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://gymnica.upol.cz/pdfs/gym/2022/01/08.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2016921,
+  "bodyFile": "../raw/n27-acta2022-pdf.pdf",
+  "sha256": "8ec646bc3dccdd2af0f791ab58d05e86e056d25d30a90909ccc7d49fac638a6b",
+  "bodyFormatMatchesRequest": true
+}

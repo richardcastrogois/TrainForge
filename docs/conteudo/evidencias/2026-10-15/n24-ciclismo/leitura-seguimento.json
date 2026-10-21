@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "sources": [
+    {
+      "id": "PR163",
+      "name": "Yum et al.2021 — cinemática de ciclismo em adultos saudáveis",
+      "publisher": "BMC Musculoskeletal Disorders / autores / Europe PMC",
+      "status": "referencia",
+      "author": "Haeun Yum, Hyang Kim, Taeyong Lee, Moon Seok Park, Seung Yeol Lee",
+      "access": "JATS completo recebido/hash; métodos lidos na web e texto.",
+      "rights": "Artigo CC BY4.0; sem mídia selecionada.",
+      "finding": "31 adultos saudáveis, ajuste experimental a85.5% do entrepernas em contexto asiático e10–12km/h. Não é receita universal de ajuste ou dose, nem prova de transferência do protocolo MICT para idosos.",
+      "receipts": [
+        "n24-yum2021-jats"
+      ],
+      "next": "Referência que impede generalizar coeficiente de ajuste; não escolhido como comando universal.",
+      "urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8675512/fullTextXML"
+      ]
+    },
+    {
+      "id": "PR164",
+      "name": "Gloc et al.2021 — ciclismo em reabilitação pós-infarto",
+      "publisher": "BMC Sports Science Medicine and Rehabilitation",
+      "status": "condicional",
+      "author": "Dagmara Gloc, Zbigniew Nowak, Agata Nowak-Lis, Tomasz Gabrys e equipe",
+      "access": "PDF10p recebido/hash; cinco páginas vistas, incluindo método, tabelas e contribuição.",
+      "rights": "CC BY4.0 no PDF1; não transfere direitos das referências ou das músicas.",
+      "finding": "Programa clínico com fisioterapeuta e cardiologista, triagem e24dias/22unidades descritas; IC30min+5alongamento. Tabela detalha posições/cadências. Limite Borg14 naTabela1 versus15 no texto; idade média geral não coincide com médias dos dois grupos iguais. Não corrigir ou aplicar em casa. Sua bibliografia conduziu ao artigo técnico de2002.",
+      "receipts": [
+        "n24-gloc2021-pdf"
+      ],
+      "next": "Referência separada; nenhuma rotina cardiológica foi selecionada ou transformada em programa geral.",
+      "urls": [
+        "https://bmcsportsscimedrehabil.biomedcentral.com/counter/pdf/10.1186/s13102-021-00379-w"
+      ]
+    },
+    {
+      "id": "PR165",
+      "name": "Silva e Oliveira2002 — método de ensino/ajuste e cuidados no ciclismo indoor",
+      "publisher": "Revista Brasileira de Ciência e Movimento / UCB",
+      "status": "referencia",
+      "author": "PDF: Renato André Sousa da Silva; Hildeamo Bonifácio Oliveira. Índice usa Souza.",
+      "professionalEvidence": "PDF1 declara Educação Física/UCB, certificação JohnnyG e CREF01114-G/DF para Silva; mestrado Educação Física e Saúde/UCB, especialização Treinamento Desportivo/UnB, licenciatura e CREF0159-G/DF para Oliveira. Evidência de qualificação declarada na publicação; não estado atual dos registros.",
+      "access": "Índice e PDF12p recebidos/hash; quatro páginas vistas para créditos, ensino e condutas. Política de direitos lida web, GET local302/vazio.",
+      "rights": "RBCM reserva reprodução. Não licenciado para copiar/traduzir texto, ilustrações ou tabela. Somente referência factual limitada a ajuste/ensino no lote, com redação independente; base CDADC distinguida de grant.",
+      "finding": "Professor ensina e confere ajustes, execução e preparação; não importar warmup3–15min, limites antigos90RPM, alongamentos, fórmulas/diagnósticos ou técnicas avançadas para o modelo MICT.",
+      "receipts": [
+        "n24-silva2002-index",
+        "n24-silva2002-pdf",
+        "n24-ucb-rights"
+      ],
+      "next": "Redação final precisa de conferência de originalidade; fontes e fatos preservados, sem solicitação de permissão/contato.",
+      "urls": [
+        "https://portalrevistas.ucb.br/index.php/RBCM/article/view/465",
+        "https://portalrevistas.ucb.br/index.php/rbcm/article/download/465/491/1665",
+        "https://portalrevistas.ucb.br/index.php/rbcm/en/about/submissions"
+      ]
+    },
+    {
+      "id": "PR166",
+      "name": "Portugal — CDADC, distinção entre métodos e expressão protegida",
+      "publisher": "Diário da República",
+      "status": "referencia",
+      "author": "Legislação portuguesa consolidada",
+      "access": "Artigos1/2/3/9 lidos na ferramenta web; GET200 local é shell HTML sem texto normativo, explicitamente não útil.",
+      "rights": "Base de enquadramento: métodos/conceitos em si versus texto, derivados e direitos exclusivos. Não é licença de conteúdo de treino nem autorização de extração de app.",
+      "finding": "Caminho de pesquisa permite distinguir algoritmo/fatos da cópia do material protegido; atribuição não concede reprodução. Conferência do ativo final permanece antes da publicação.",
+      "receipts": [
+        "n24-pt-cdadc"
+      ],
+      "next": "Conferir expressão e ativos finais; não alegar que todos os treinos estão em domínio público.",
+      "urls": [
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1985-34475475"
+      ]
+    }
+  ],
+  "reusedSource": "CI05 — reuso-nia.json",
+  "selectedLot": "lote-ergometro-profissional.json",
+  "newHttpCalls": 6,
+  "newUsableBodies": 4,
+  "newBodyHashes": 6,
+  "pdfPagesVisuallyReviewedThisIncrement": 13,
+  "includesFourReusedNiaPages": true,
+  "webOnlyBarriers": [
+    {
+      "url": "https://www.mdpi.com/1648-9144/60/3/498",
+      "result": "429, não repetido nem corpo local recebido"
+    },
+    {
+      "domain": "awf.katowice.pl",
+      "result": "robots não repetido; nenhuma qualificação inferida deste acesso"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "niche": "N13-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Modelos alimentares humanos completos: conferir aplicabilidade ao envelhecimento e a rotina pessoal do cuidador, origem/dados/direitos. Nao transformar menu exemplo em dieta individual.",
+  "next": "N15-C, depois N15-I a N20-I. Fechamento limitado a catalogacao educativa de menus humanos; N21 retida ate fechar todos os complementos anteriores.",
+  "evidence": [
+    {"record": "2026-10-04/n13i-planos/a13-nia-menu-2018.evidencia.json", "anchors": ["Reprinted June 2018", "SAMPLE MENU #4", "2010", "special needs"], "role": "Quatro menus humanos completos de um dia em publicacao dirigida ao envelhecimento; referencia historica, nao dieta atual prescrita."},
+    {"record": "2026-10-04/n13i-planos/a13-govinfo-metadata.evidencia.json", "role": "Arquivo governamental e autoria NIA; nao confundir data tecnica de modificacao com revisao clinica."},
+    {"record": "2026-10-03/n13-planos-alimentares/n13-dash-week.evidencia.json", "role": "Menu humano completo recebido anteriormente; nao especificamente homologado para todo idoso/cuidador."},
+    {"record": "2026-09-29/n08-receitas/n08-nhlbi-direitos.evidencia.json", "role": "Politica com restricoes de alteracao de publicacao formatada e publicidade; nao transferencia irrestrita de ativos."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json", "anchors": ["Serving size is not a recommendation"], "role": "Porcao/referencia nao definem consumo ou meta individual."},
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["Plan meals and snacks ahead"], "role": "Planeamento educativo e limites, nao novo menu integral geriatrico."}
+  ],
+  "dependencies": ["2026-10-04/n13i-planos/amostra-menus-nia.json", "2026-10-04/n13i-planos/leitura-web.json", "2026-10-03/n13-planos-alimentares/amostra-planos.json", "2026-10-03/n13-planos-alimentares/resumo-planos.json", "2026-10-04/n12i-desempenho/pesquisa-complemento.json", "2026-10-04/n08i-receitas/pesquisa-complemento.json", "2026-10-03/n14c-cuidador/pesquisa-complemento.json"],
+  "programmes": [
+    {"id": "I13-P02", "sourceId": "CI05", "title": "What's on Your Plate? Appendix 2", "publisher": "NIA / NIH", "edition": "2018-06 reprint", "modelCount": 4, "daysPerModel": 1, "mealGroupsPerModel": 4, "sequenceOfFourDays": false, "energyBasisKcal": 2000, "individualTarget": false, "explicitAgingAudience": true, "caregiverSpecificDiet": false, "dataProjection": "2026-10-04/n13i-planos/amostra-menus-nia.json", "rightsStatus": "Texto: politica primaria admite reutilizacao/adaptacao/traducao com credito e sem logo; media excluida e lote final nao liberado.", "decision": "Selecionado como modelo humano educativo/historico para catalogacao. Nao prescrever, escalar porcoes, atualizar metas ou retirar ressalvas; quatro dias completos independentes, nao novo plano montado pelo agente.", "releaseApproved": false},
+    {"id": "I13-P01", "sourceId": "NU31", "title": "A Week With the DASH Eating Plan", "publisher": "NHLBI", "publicationDate": "2019-04", "days": 7, "mealGroups": 28, "foodRows": 175, "energyBasisKcal": 2000, "individualTarget": false, "olderAdultEligibilityVerified": false, "caregiverOwnDietPlanVerified": false, "rightsStatus": "condicional", "releaseApproved": false, "decision": "Preservar como candidato/referencia; modelo cardiovascular geral nao vira dieta individual de idosos ou cuidadores por filtro de idade/papel."}
+  ],
+  "operations": [
+    {"id": "I13-O01", "decision": "Manter horario/porcoes da fonte separados do plano pessoal, ofertas e consumo conhecido; cuidador e assistido precisam identidades distintas."},
+    {"id": "I13-O02", "decision": "Nao escalar sete dias/porcoes linearmente para atingir kcal, proteina ou sodio individual. Base de 2.000 kcal nao autoriza meta geral."},
+    {"id": "I13-O03", "decision": "Seis diferencas nas somas de sodio, quantidade ausente no dia 4 e totais acima do cabecalho nos dias 4/5 preservados; nao corrigir por palpite."},
+    {"id": "I13-O04", "decision": "Preferencias, acesso/preparo/apoio, restricoes profissionais e elegibilidade nao sao deduzidos do titulo DASH; ausencia de condicao clinica nao prova adequacao."},
+    {"id": "I13-O05", "decision": "Receita geral candidatada N08 nao completa um menu nem transforma o cuidador em prescritor nutricional."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I13-G01", "met": true, "criterion": "Modelo humano completo anterior e seus dados/diferencas revisados no novo contexto."},
+    {"id": "I13-G02", "met": true, "criterion": "Quatro menus completos de um dia explicitamente destinados ao envelhecimento, com porcoes conferidas visualmente e uso educativo/historico delimitado; cuidador nao recebe dieta do assistido por papel."},
+    {"id": "I13-G03", "met": true, "criterion": "Caminho gratuito de reutilizacao de texto identificado em politica primaria NIA, com creditos de adaptacao/traducao e exclusao de fotos/ilustracoes/logo/fac-simile. Nao declarar permissao de todo PDF ou validacao juridica do lote."},
+    {"id": "I13-G04", "met": true, "criterion": "Requisitos de papel/origem/consumo e limites clinicos/individualizacao documentados; sem publicacao/app."}
+  ],
+  "scenarios": [
+    {"id": "I13-S01", "fictional": true, "case": "Cuidador seleciona menu 2.000 kcal para assistido", "expected": "Nao virar dieta pessoal/metas impostas; adequacao e legitimidade nao demonstradas."},
+    {"id": "I13-S02", "fictional": true, "case": "Idoso usa menu como referencia", "expected": "Identificar contexto, autoria e limites; nao afirmar indicacao clinica ou habilitar publicacao de ativos."},
+    {"id": "I13-S03", "fictional": true, "case": "Aplicativo precisa traduzir PDF formatado", "expected": "Nao tratar politica condicional como autorizacao de adaptacao; resolver termos antes de incorporar."}
+  ],
+  "closureRationale": "O recorte selecionado e texto de menus educativos existentes, nao publicacao integral formatada nem dieta individual. Portanto nao e necessario presumir direitos das fotos ou liberar todo ativo para fechar pesquisa; estes ficam explicitamente excluidos. DASH permanece candidato condicional. A politica NIA foi lida no indice web primario, sem corpo local utilizavel, limitacao preservada.",
+  "limits": ["Base clinica do livro e 2010; reimpressao 2018 e metadado tecnico 2026 nao sao atualizacao nutricional. Nao recomendar como dieta atual universal.", "Receitas completas e macros por refeicao nao estao todos nesses menus; ausencia nao pode ser preenchida por palpite.", "Sem dieta terapeutica, textura/suplemento prescrito ou recalculo de composicao por marcas portuguesas.", "Revisao clinica/editorial, direitos do lote final, testes humanos e implementacao continuam gates separados.", "Nenhum autor contatado, custo contratado, parceria ou conteudo do app alterado."]
+}

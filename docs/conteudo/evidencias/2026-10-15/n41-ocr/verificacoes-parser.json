@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-15",
+  "niche": "N41",
+  "kind": "Conservative candidate parsing over actual Windows OCR output",
+  "checks": [
+    {
+      "check": "Rótulo preserva base100g e porção30g separadas",
+      "passed": true
+    },
+    {
+      "check": "840kJ não200kcal",
+      "passed": true
+    },
+    {
+      "check": "Vírgula decimal preservada",
+      "passed": true
+    },
+    {
+      "check": "Distância efetivamente lida",
+      "passed": true
+    },
+    {
+      "check": "Carga omitida não vira8ou0kg",
+      "passed": true
+    },
+    {
+      "check": "Velocidade omitida não vira5km/h",
+      "passed": true
+    },
+    {
+      "check": "Não usar km de km/h como distância",
+      "passed": true
+    },
+    {
+      "check": "Número sem unidade permanece desconhecido",
+      "passed": true
+    },
+    {
+      "check": "Não substituir O por0silenciosamente",
+      "passed": true
+    },
+    {
+      "check": "Resistência em level não ékg",
+      "passed": true
+    },
+    {
+      "check": "Pausa/sem visor não fornece calorias",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "observedErrors": [
+    "O0 l1 became OO II in the ambiguous synthetic fixture",
+    "Time, load and speed numbers were omitted on synthetic display; preserved as unknown"
+  ],
+  "realEquipmentPhotographed": false,
+  "androidMLKitTested": false,
+  "appImplemented": false,
+  "automaticRegistrationAllowed": false,
+  "releaseApproved": false
+}

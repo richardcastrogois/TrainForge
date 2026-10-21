@@ -1,0 +1,279 @@
+{
+  "niche": "N18-I",
+  "date": "2026-10-04",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Programa humano de iniciacao em academia para idosos, com maquinas/capacidade/experiencia e supervisao distintas de casa/praca.",
+  "next": "N18-I ativo/parcial: REACT protocolo1.7/2018 PDF161p recebido, Appendix4 com instrucao funcional, nao manual de maquinas nem suplemento2023. Direitos do protocolo/imagens e ambiguidades nao resolvidos; I18-G03 falso. Reusar leitura-react-protocolo2018/hash; nao substituir academia por cadeira para fechar escopo. N21 retida.",
+  "evidence": [
+    {"record":"2026-10-05/programas-manuais-02/i18-react-nihr-protocolo.evidencia.json","anchors":["Version 1.7 May 2018","Appendix 4 Sample physical activity sessions"],"role":"Protocolo oficial anterior, instrucao funcional recebida; nao maquina, direitos/ambiguidade pendentes e nao equivalente ao suplemento2023."},
+    {
+      "record": "2026-10-05/fechamento-dirigido/i18-react-2023-xml.evidencia.json",
+      "anchors": ["REACT", "therabands", "supervised"],
+      "role": "Artigo primario funcional supervisionado, sem maquinas; suplemento nao recebido, sem instrucao/ativo novo aprovado."
+    },
+    {
+      "record": "2026-10-05/fechamento-dirigido/i18-lifeage-metadata.evidencia.json",
+      "anchors": [],
+      "role": "Licenca CC BY4.0 declarada em metadados oficiais, nao livro recebido ou lido."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-mptp-artigo.evidencia.json",
+      "anchors": [
+        "Creative Commons",
+        "27-week",
+        "variable resistance machines",
+        "10 RM"
+      ],
+      "role": "Ciclo funcional humano com maquinas; iniciante explicito/instrucao e notacoes ainda condicionais."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-walker-forca.evidencia.json",
+      "anchors": [
+        "University gym",
+        "qualified instructors",
+        "one older man suffered injury",
+        "Copyright",
+        "Creative Commons Attribution License"
+      ],
+      "role": "Ciclo humano 14 semanas, idosos antes sedentarios, tabela completa; instrucao qualificada e lesao nao omitidas."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-instabilidade-xml.evidencia.json",
+      "anchors": [
+        "two skilled instructors"
+      ],
+      "role": "Mesmo ensaio de 68 idosos; tres rotas supervisionadas, dataset nao manual."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-marcha-xml.evidencia.json",
+      "anchors": [
+        "placing the barbell at the hip"
+      ],
+      "role": "Smith barra na anca nao ombros; variante nao correspondente a video generico."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-velocidade-xml.evidencia.json",
+      "anchors": [
+        "fitness instructors and physiotherapists"
+      ],
+      "role": "Quatro movimentos com colete/tornozeleira em centros/instituicao, nao programa generico de maquinas."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-masters-xml.evidencia.json",
+      "anchors": [
+        "supervised by trained personnel"
+      ],
+      "role": "Protocolo supervisionado com duas familias de aparelhos, cointervencao medicacao nao transferida ao APK."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-mhealth-forca-2026-xml.evidencia.json",
+      "anchors": [
+        "Creative Commons"
+      ],
+      "role": "Codesign, nao ciclo operacional."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-coelho-anexos-2021.evidencia.json",
+      "anchors": [],
+      "role": "ZIP: Table_1.DOCX e avaliacao."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-calm-protocolo-2016-xml.evidencia.json",
+      "anchors": [
+        "Table 2",
+        "TechnoGym"
+      ],
+      "role": "Modelos HRTW, instrucao domestica nao intercambiavel."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-baixo-volume-2025-xml.evidencia.json",
+      "anchors": [
+        "caregivers",
+        "12 weeks"
+      ],
+      "role": "Centro de dia, videos ausentes; cuidador supervisor."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pact-treino-2021-xml.evidencia.json",
+      "anchors": [
+        "HUR"
+      ],
+      "role": "PASSWORD supervisionado/casa separados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-password-plano-pdf.evidencia.json",
+      "anchors": [
+        "senior gyms",
+        "HUR"
+      ],
+      "role": "Plano S2 e tabela visual p7, nao manual."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-movestrong-2021-xml.evidencia.json",
+      "anchors": [
+        "FRAIL",
+        "manual"
+      ],
+      "role": "Manual referido nao recebido integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-movestrong-anexos.evidencia.json",
+      "anchors": [],
+      "role": "Protocolo p20 com colunas de variacoes visualmente vazias."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-tese-wang-pdf.evidencia.json",
+      "anchors": [
+        "Ellen Wang",
+        "Instructor Manual"
+      ],
+      "role": "Tese lista manual sem anexos incorporados/direitos comerciais."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-tese-rodrigues-pdf.evidencia.json",
+      "anchors": [
+        "Isabel",
+        "MoveStrong"
+      ],
+      "role": "Tese nao confirma manual integral/comercial."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-eckardt-2016-xml.evidencia.json",
+      "anchors": [
+        "hip level",
+        "skilled instructors"
+      ],
+      "role": "Outra amostra/ciclo: nao ensaio de68, Smith na anca."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-bestform-2022-xml.evidencia.json",
+      "anchors": [
+        "Non-commercial",
+        "pneumatic"
+      ],
+      "role": "Restricao comercial e ajuste profissional."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-2024-xml.evidencia.json",
+      "anchors": [
+        "arms crossed",
+        "weighted vest"
+      ],
+      "role": "Duas rotas supervisionadas, figura nao manual integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-pdf.evidencia.json",
+      "anchors": [
+        "schematic overview"
+      ],
+      "role": "Figura1 p3, nao manual de ajustes."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-2023-xml.evidencia.json",
+      "anchors": [
+        "CC BY",
+        "24 weeks"
+      ],
+      "role": "AGUEDA2023: sala fitness supervisionada, bandas; licenca do artigo nao resolve ativos externos."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a5-pdf.evidencia.json",
+      "anchors": [
+        "Training session",
+        "Starting position"
+      ],
+      "role": "Guia real47paginas: instrucao recebida, faltas/divergencias e direito externo nao demonstrado; fotos nao aprovadas."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a6-pdf.evidencia.json",
+      "anchors": [
+        "https://"
+      ],
+      "role": "Indice18links, nao videos recebidos ou licenciados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a8-pdf.evidencia.json",
+      "anchors": [],
+      "role": "Participacao remota ao vivo, nao programa autonomo."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-suplemento-cert.evidencia.json",
+      "anchors": [],
+      "role": "CERT/tabelasOOXML, nao manualA5 incorporado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-repositorio-metadata.evidencia.json",
+      "anchors": [
+        "English",
+        "Spanish"
+      ],
+      "role": "Inventario oficial recebido, sem licenca de ativos localizada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-readme.evidencia.json",
+      "anchors": [
+        "File A5"
+      ],
+      "role": "Descricao dos recursos; licenca dos PDFs/fotos nao demonstrada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-xml.evidencia.json",
+      "anchors": [
+        "CIEX",
+        "Table 3"
+      ],
+      "role": "Protocolo especifico>=70sarcopenia, maquinaisometrica/sensores/profissional; sentidosadducao/abducao contraditorios, nao selecionado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-anexos.evidencia.json",
+      "anchors": [],
+      "role": "Consentimento/checklistSPIRIT11p, nao manual de ajuste CIEX; figura1recebida com fotos."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n18i-academia/leitura-programas.json",
+    "2026-10-04/n18i-academia/amostra-walker-tabela.json",
+    "2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+    "2026-10-04/n15i-funcional/criterios-atuais.json",
+    "2026-10-04/n18i-academia/triagem-novos-programas.json",
+    "2026-10-04/n18i-academia/leitura-manuais-dirigida.json",
+    "2026-10-04/n18i-academia/leitura-agueda-manuais.json",
+    "2026-10-04/n18i-academia/leitura-ist-ciex-2025.json",
+    "2026-10-05/fechamento-dirigido/leitura-lifeage-react.json",
+    "2026-10-05/programas-manuais-02/leitura-react-protocolo2018.json",
+    "2026-10-05/programas-manuais-02/inventario-manuais.json",
+    "2026-10-05/programas-manuais-02/mapa-apk-campos.json"
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I18-G01",
+      "met": true,
+      "criterion": "Programa humano explicito para idosos iniciantes ou experiencia inicial demonstrada; ambiente academia, nao generico adaptado por idade."
+    },
+    {
+      "id": "I18-G02",
+      "met": true,
+      "criterion": "Ciclo completo/dose/progressao/ausentes, equipamento e supervisao obtidos sem reconstruir rotina; Walker 14 semanas/112 linhas preservadas, nao autoriza execucao autonoma."
+    },
+    {
+      "id": "I18-G03",
+      "met": false,
+      "criterion": "Instrucao operacional e caminho comercial gratuito dos elementos essenciais identificados; direito de artigo nao presume videos/manuais externos."
+    },
+    {
+      "id": "I18-G04",
+      "met": true,
+      "criterion": "Criterios de funcao/experiencia/aplicabilidade e seguranca delimitados; nenhuma elegibilidade universal."
+    }
+  ],
+  "limits": [
+    "r/Fitness anterior nao e evidencia de programa idoso nem licenca comercial uniforme.",
+    "N21 exclusivamente academia de praca continua bloqueada.",
+    "AGUEDA e sala de academia com bandas/peso corporal, nao demonstra regulagem de maquinas nem treino de praca; artigoCCBY4nao cobre por presuncaoA5/fotos/videos.",
+    "IST-CIEX2025nao substitui variantes dinamicas ou instrucao de academia comum; protocolo experimental e infraestruturas/profissionais nao oferecidos peloAPK."
+  ],
+  "updatedAt": "2026-10-05"
+}

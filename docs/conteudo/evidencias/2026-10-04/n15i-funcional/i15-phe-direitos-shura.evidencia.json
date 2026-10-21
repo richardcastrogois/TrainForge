@@ -1,0 +1,22 @@
+{
+  "id": "i15-phe-direitos-shura",
+  "url": "https://shura.shu.ac.uk/28137/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T19:31:24.587323+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario da universidade coautora: autoria, versao publicada e aviso All rights reserved, sem tentar o arquivo restrito.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://shura.shu.ac.uk/28137/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 47260,
+  "bodyFile": "../raw/i15-phe-direitos-shura.html",
+  "sha256": "2d4bce93ff0ce9944fa1926cdff7ea4ecf55fd30f343c26910335f02542029dd"
+}

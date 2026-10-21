@@ -1,0 +1,22 @@
+{
+  "id": "c15-atac-alongamento-2024-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:24:01.678524+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir programa pessoal de alongamentos em cuidadores, todos os movimentos/doses e direitos, sem inferir generalizacao clinica.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 167187,
+  "bodyFile": "../raw/c15-atac-alongamento-2024-xml.xml",
+  "sha256": "8c00c573ab0d11e1ba901a1c02ddeefaa1705338780d6c40e27f1d9109960ce4"
+}

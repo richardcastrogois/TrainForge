@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "id": "n42-mlkit-barcode",
+      "url": "https://developers.google.com/ml-kit/vision/barcode-scanning/android",
+      "purpose": "Contrato primário de scanner específico: formatos, rawValue, modelo disponível, requisitosAndroid e diferença entre código detectado e decodificado. Não instalarSDK nem usar câmera/conta.",
+      "extension": "html"
+    },
+    {
+      "id": "n42-gs1-check-digit",
+      "url": "https://www.gs1.org/services/how-calculate-check-digit-manually",
+      "purpose": "Padrão primário de cálculo do dígito verificador GTIN, validação textual independente da captura óptica e do cadastro/lookup de produto. Sem obter catálogoGS1ou abrir barcodeURL.",
+      "extension": "html"
+    },
+    {
+      "id": "n42-gs1-gtin-format",
+      "url": "https://support.gs1.org/support/solutions/articles/43000734355-what-is-the-required-format-of-gtin-in-gs1-edi-standards-",
+      "purpose": "Preservação de zeros e distinção do formato numéricoEANCOM versus string14emXML. Não alterar códigosoriginaisOFF ou inferir país/fabricante/nutrição.",
+      "extension": "html"
+    }
+  ]
+}

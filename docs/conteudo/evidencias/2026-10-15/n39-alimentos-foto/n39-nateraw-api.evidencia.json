@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-api",
+  "url": "https://huggingface.co/api/models/nateraw/food",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:33:22.517818+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados públicos do repositório de modelo alimentar específico com licençaApache2.0declarada; conferir revisão/arquivos/taxonomia sem baixar pesos, executar código remoto ou criar conta.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/models/nateraw/food",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 6095,
+  "bodyFile": "../raw/n39-nateraw-api.json",
+  "sha256": "e751d986bdde6edf06d37947e11d39f4c7f589b2f0ce07d0fdf409b03d5f925b"
+}

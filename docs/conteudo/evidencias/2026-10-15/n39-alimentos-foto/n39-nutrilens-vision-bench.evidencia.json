@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrilens-vision-bench",
+  "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/VISION_BENCH.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:44.914959+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Relatório ligado pelo próprio README; conferir método, casos e resultados, não presumir reprodutibilidade ou desempenho português. Documentação sob MIT, imagens/pesos excluídos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/VISION_BENCH.md",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 28355,
+  "bodyFile": "../raw/n39-nutrilens-vision-bench.md",
+  "sha256": "c51659fab80b4a1271d44915545e43ad4209bfe6e6dcf5c1b7b29a7563164875"
+}

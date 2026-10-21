@@ -1,0 +1,22 @@
+{
+  "id": "c15-tpa4you-protocolo",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860786/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:44:34.500920+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira captura local de protocolo 2026 para atividade propria de cuidadores idosos; conferir pacote, supervisao, licenca e ausencia de resultados. Desafio nao sera tratado como artigo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860786/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 21312,
+  "bodyFile": "../raw/c15-tpa4you-protocolo.html",
+  "sha256": "a68bf856cc32911de97f83fc69e5f3bf633b9a44a4b4018d50a724b8365bf7a6"
+}

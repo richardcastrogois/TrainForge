@@ -1,0 +1,23 @@
+{
+  "id": "n39-torch-cpu-index",
+  "url": "https://download.pytorch.org/whl/cpu/torch/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:04:07.173591+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Índice oficial CPU para selecionar wheel Windows cp312 e hash publicado antes de qualquer instalação. Leitura de catálogo, não download de wheel.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://download.pytorch.org/whl/cpu/torch/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 414325,
+  "bodyFile": "../raw/n39-torch-cpu-index.html",
+  "sha256": "38212988b55e5c3d4990f310c0be2e0c7951cc84487ba463004f865ad77ecafa"
+}

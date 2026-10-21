@@ -1,0 +1,77 @@
+{
+  "niche": "N13-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 6,
+  "verifiedDependencies": 7,
+  "proposedOperations": 5,
+  "fictionalScenarios": 3,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/n13i-planos/a13-nia-menu-2018.evidencia.json",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo115563/pdf/GOVPUB-HE20_3850-PURL-gpo115563.pdf",
+      "sha256": "0e09adc15333a19de58112f00bdf65852b7213ebf6aba289fe92fd4dd5ed5fc6"
+    },
+    {
+      "record": "2026-10-04/n13i-planos/a13-govinfo-metadata.evidencia.json",
+      "url": "https://www.govinfo.gov/app/details/GOVPUB-HE20_3850-PURL-gpo115563",
+      "sha256": "b6ab0be4f6844dfeb5247b6ac6a99b0f5f95848770a6becbf4dddf06d1d0d449"
+    },
+    {
+      "record": "2026-10-03/n13-planos-alimentares/n13-dash-week.evidencia.json",
+      "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/WeekOnDASH.pdf",
+      "sha256": "9853d66dbaae3a105be7f25985b66dfd101ff84a193c147e2eda344e97e8bf3b"
+    },
+    {
+      "record": "2026-09-29/n08-receitas/n08-nhlbi-direitos.evidencia.json",
+      "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+      "sha256": "45644df8d01d224ec2de1644ce913d490eb37b1fd23f82c6fbaf91b16d646af1"
+    },
+    {
+      "record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults",
+      "sha256": "b4a433b9d02c3a3f68c540c17a11726e6ccd107a1d8909ab852b78cc17b38e7b"
+    },
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-04/n13i-planos/amostra-menus-nia.json",
+      "artifactSha256": "5dd9f9497e31817d93eff38310b4e8327733763ee5b44f001a79c82e21c9cbdd"
+    },
+    {
+      "file": "2026-10-04/n13i-planos/leitura-web.json",
+      "artifactSha256": "eb8a603fd32fc30b81d61c35e812787ae40cfed487c9b2fbe430102268758e2a"
+    },
+    {
+      "file": "2026-10-03/n13-planos-alimentares/amostra-planos.json",
+      "artifactSha256": "56f882fc014f27e51bf4b8fbe761acc6a9e31880acac949882b9c4d1d0ce4295"
+    },
+    {
+      "file": "2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "artifactSha256": "529dd4394fb361c2777eab1e3828d8ef97a47a45174619119f35e08ebb42ccda"
+    },
+    {
+      "file": "2026-10-04/n12i-desempenho/pesquisa-complemento.json",
+      "artifactSha256": "2094dec6e1acded7435583ac6a33f2932c10cafc8cb5200d91cdd311af9da3f6"
+    },
+    {
+      "file": "2026-10-04/n08i-receitas/pesquisa-complemento.json",
+      "artifactSha256": "2a121b2448936ed4d58759cb95c7333bae701d719c5222b20684ebb68f342b9a"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    }
+  ],
+  "next": "N15-C, depois N15-I a N20-I. Fechamento limitado a catalogacao educativa de menus humanos; N21 retida ate fechar todos os complementos anteriores."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "n27-oldermen2024-pdf",
+  "url": "https://www.balticsportscience.com/cgi/viewcontent.cgi?article=1829&context=journal",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:12:17.826458+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Original com idosos homens eAppendixA; confirmarCCBYNCND e não selecionar expressão/tabela para uso comercial",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.balticsportscience.com/cgi/viewcontent.cgi?article=1829&context=journal",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5878,
+  "bodyFile": "../raw/n27-oldermen2024-pdf.pdf",
+  "sha256": "75046b2704df029530b6d1e1e56ebb02ec837bac34f788db4fa308f298fbd563",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

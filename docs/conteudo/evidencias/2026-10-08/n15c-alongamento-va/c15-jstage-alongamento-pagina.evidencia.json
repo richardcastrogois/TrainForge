@@ -1,0 +1,23 @@
+{
+  "id": "c15-jstage-alongamento-pagina",
+  "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:09:33.303356+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Origem primaria do ensaio2015, metadados, PDF e direitos; acesso gratis nao licenca comercial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 79800,
+  "bodyFile": "../raw/c15-jstage-alongamento-pagina.html",
+  "sha256": "b5d93d3e8071da0d564fa5198cebda596dbb6f1470c25e5bed9db3c15a16a403"
+}

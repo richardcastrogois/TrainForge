@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "type": "analise_de_recorte_e_decisao_do_autor",
+  "userDecision": {
+    "status": "respondida",
+    "selection": "programa_especifico_para_o_proprio_cuidador_em_casa",
+    "genericHomeProgrammeAsSubstituteAccepted": false,
+    "basis": "Pedido direto do autor: quero especifico para cuidadores, porque tambem quero especifico em casa; diferencas nao so de tempo.",
+    "scopeChangeToGenericApproved": false
+  },
+  "definition": {
+    "audience": "cuidador",
+    "actor": "cuidador_praticando_para_si",
+    "environment": "casa",
+    "programmeOrigin": "Programa explicitamente concebido, adaptado pelos autores ou avaliado para atividade propria de cuidadores, com recorte/populacao e entrega documentados.",
+    "uniqueMovementsRequired": false,
+    "caregiverRoleImpliesOnePhysicalProfile": false,
+    "allCaregiversAreOlderAdults": false,
+    "allCaregiversHavePainOrNeedLowIntensity": false,
+    "genericShortRoutineWithCaregiverLabelQualifies": false,
+    "coDesignOrContentValidationEqualsClinicalEfficacy": false
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "catalogueId": "PR21",
+      "authors": ["Kieren J Egan", "William Hodgson", "Mark D Dunlop", "Gennaro Imperatore", "Alison Kirk", "Roma Maguire"],
+      "year": 2021,
+      "doi": "10.2196/27358",
+      "url": "https://formative.jmir.org/2021/10/e27358",
+      "primaryLocators": ["Results / Co-design Meeting1 and Design Sprint1", "Textbox1 / Barriers and enablers"],
+      "evidence": "Codesign identifica barreiras de motivacao, seguranca, reconhecimento, apoio, impacto fisico, recursos e culpa/ausencia de respiro, nao apenas tempo.",
+      "limits": "Estudo pequeno de desenvolvimento/codesign, nao ensaio de eficacia clinica ou programa operacional completo recebido.",
+      "existingReceipt": "2026-10-04/n15c-retomada/c15-carefit-2021-xml.evidencia.json",
+      "existingBodySha256": "ce3f92b918565f2f15fc29aef7f5b42c218deb1bc586a078014d54d580083ce9",
+      "newLocalBodyCollectedThisTurn": false,
+      "livePrimaryWebChecked": true
+    },
+    {
+      "id": "S2",
+      "publisher": "National Institute on Aging / NIH",
+      "title": "Taking Care of Yourself: Tips for Caregivers",
+      "url": "https://www.nia.nih.gov/health/caregiving/taking-care-yourself-tips-caregivers",
+      "primaryLocator": "How do you know if you need help? / What else can a caregiver do if they are feeling overwhelmed?",
+      "evidence": "Orientacao institucional distingue exaustao, estresse, sono, autocuidado e apoio/respiro; tempo e apenas uma das necessidades.",
+      "limits": "Orientacao educativa, nao treino integral ou avaliacao individual. Conteudo retornado pela indexacao primaria; abertura direta do leitor foi reduzida.",
+      "newLocalBodyCollectedThisTurn": false,
+      "localBodySha256": null,
+      "livePrimaryWebChecked": true
+    },
+    {
+      "id": "S3",
+      "authors": ["Cristine Cogo Lopes", "Gabriela Almeida de Oliveira", "Felipe de Souza Stigger", "Adriana Torres de Lemos"],
+      "year": 2020,
+      "doi": "10.1590/1414-462X202028010184",
+      "url": "https://www.scielo.br/j/cadsc/a/8qDfwTKH3zKFGfzC9CJbJdy/?lang=pt",
+      "primaryLocators": ["Resumo / Resultados e Conclusao", "Discussao / limitacoes e dominos de sobrecarga"],
+      "evidence": "Estudo transversal de14pares familiares encontrou associacao entre dependencia do assistido e sobrecarga. Nao encontrou associacao de dor com sobrecarga/dependencia.",
+      "limits": "Amostra pequena de uma regiao, observacional; nao prova causalidade, eficacia de exercicio ou perfil universal de cuidador.",
+      "newLocalBodyCollectedThisTurn": false,
+      "localBodySha256": null,
+      "livePrimaryWebChecked": true
+    }
+  ],
+  "analysisDimensions": [
+    {
+      "id": "C15-A01",
+      "dimension": "disponibilidade_e_interrupcoes",
+      "evidenceSources": ["S1"],
+      "productInference": "Distinguir tempo livre total de janela realmente disponivel. Permitir pausar/retomar/reagendar sem registrar automaticamente a dose como realizada.",
+      "sourceProgrammeBoundary": "So fracionar/cortar sessao se o programa humano admitir; nao criar microtreino reduzindo dose por IA."
+    },
+    {
+      "id": "C15-A02",
+      "dimension": "demandas_fisicas_e_saude_propria",
+      "evidenceSources": ["S1", "S3"],
+      "productInference": "Registrar se o cuidador presta assistencia fisica, suas limitacoes e os criterios da fonte. Nao igualar todos os cuidadores a pessoas com dor ou baixo condicionamento.",
+      "sourceProgrammeBoundary": "Rotina de transferencia/ergonomia da pessoa assistida nao equivale a exercicio proprio. Nao prometer tratar dor ou tornar levantamento de pessoas seguro."
+    },
+    {
+      "id": "C15-A03",
+      "dimension": "fadiga_sono_estresse_e_recuperacao",
+      "evidenceSources": ["S2"],
+      "productInference": "Avaliar adequacao do programa e necessidade de orientacao, nao apenas preencher minutos no calendario.",
+      "sourceProgrammeBoundary": "Nao diagnosticar sobrecarga nem calcular nova dose por horas de sono. Relaxamento, condicionamento e tratamento clinico sao entregas diferentes."
+    },
+    {
+      "id": "C15-A04",
+      "dimension": "apoio_respiro_e_adesao",
+      "evidenceSources": ["S1", "S2"],
+      "productInference": "Considerar se ha outra pessoa para cobrir o cuidado e barreiras emocionais/recursos. Propor ausencia de punicao ou compensacao automatica por sessao interrompida.",
+      "sourceProgrammeBoundary": "Interface nao cria disponibilidade real nem autoriza deixar pessoa dependente sem suporte."
+    },
+    {
+      "id": "C15-A05",
+      "dimension": "ambiente_e_forma_de_entrega",
+      "evidenceSources": ["S1"],
+      "productInference": "Casa e ambiente, cuidador e publico: filtros distintos. Conferir espaco/equipamentos/instrucao e supervisao que o programa de origem exige.",
+      "sourceProgrammeBoundary": "Estar em casa nao significa autonomia. Nao remover teleatendimento/profissional nem inserir acompanhamento inexistente."
+    },
+    {
+      "id": "C15-A06",
+      "dimension": "perfil_e_representatividade",
+      "evidenceSources": ["S1", "S3"],
+      "productInference": "Separar familiar/informal de profissional/remunerado, idade e saude do cuidador e tipo de atividade de cuidado.",
+      "sourceProgrammeBoundary": "Estudo de familiares de pessoas com uma condicao nao cobre automaticamente cuidadores formais, todas as doencas ou todas as idades."
+    }
+  ],
+  "selectionChecks": [
+    "A fonte identifica o cuidador como praticante para si, nao apenas supervisor do paciente?",
+    "Programa foi concebido/adaptado/avaliado para cuidadores e tem recorte explicito?",
+    "A pratica em casa e realmente parte da entrega documentada?",
+    "Quais necessidades de cuidadores sao abordadas, alem da duracao?",
+    "Instrucoes, dose, frequencia e progressao/manutencao sao documentadas sem preencher ausentes?",
+    "Supervisao, elegibilidade e direitos dos ativos essenciais sao compativeis com a oferta possivel?",
+    "Claims preservam a diferenca entre codesign/validacao editorial, viabilidade e eficacia?"
+  ],
+  "requirementsNotPrescriptions": true,
+  "newCollectorCalls": 0,
+  "newWorkoutProgrammeMappingsApproved": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "next": "Continuar exclusivamente N15-C no recorte especifico confirmado. Decisao de publico resolvida, C15-G03/G04 continuam pendentes; nao retomar outras Ns."
+}

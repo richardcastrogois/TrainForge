@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: URLs exatas observadas nos links da paginaPMC publica; API CORE para resumo completo, nao repetir query LITE esperando texto ausente.",
+  "requests":[
+    {"id":"c15-sui2023-pmc-app1-docx","url":"https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app1.docx","extension":"docx","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","purpose":"Link107publicado emPMC; anexo da sessao, primeira coleta na origem depositaria. Sem executar arquivo."},
+    {"id":"c15-sui2023-pmc-app3-docx","url":"https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app3.docx","extension":"docx","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","purpose":"Link109publicado emPMC; fidelidade, primeira coleta na origem depositaria. Sem executar arquivo."},
+    {"id":"c15-one-stretch2015-pmc-html","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/","extension":"html","purpose":"Pagina publica primariamente legivel no navegador de pesquisa; artigo/manuais/ortopedista/direitos. XML500retido, sem repetir ou superar desafio."},
+    {"id":"c15-one-stretch2019-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"APIresultTypeCOREexplicito apos verificar que LITE so tem metadados, nao resumo; preservar tecnica/guia ausentes e identidade enfermeiros versus cuidadores2015."}
+  ]
+}

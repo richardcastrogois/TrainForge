@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "id": "n41-mlkit-android",
+      "url": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+      "purpose": "Conferir contrato atual específico Android: minSDK23 no corpo contra21 no resumo automático, bundled/unbundled e modelos. Documento público, sem instalação de SDK/modelo ou foto enviada. Nova pista é divergência de pré-requisito relevante à seleção.",
+      "extension": "html"
+    },
+    {
+      "id": "n41-mlkit-terms",
+      "url": "https://developers.google.com/ml-kit/terms",
+      "purpose": "Termos públicos atuais: processamento on-device e métricas distintas, nenhuma permissão de extrair modelo/SDK. Revalidar seleção específica N41, sem aceitar contrato/usar SDK.",
+      "extension": "html"
+    },
+    {
+      "id": "n41-windows-ocr-doc",
+      "url": "https://learn.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine?view=winrt-26100",
+      "purpose": "Documentação primária da API já existente usada em ensaio sintético Windows; não prova Android ou visor real. Sem instalação.",
+      "extension": "html"
+    }
+  ]
+}

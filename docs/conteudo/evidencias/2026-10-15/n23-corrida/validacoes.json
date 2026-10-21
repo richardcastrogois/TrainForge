@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-15",
+  "httpCalls": 14,
+  "usableBodies": 11,
+  "allHashesVerified": true,
+  "receipts": [
+    {
+      "id": "n23-berkshire-pdf",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-berkshire-return",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-bredeweg-professional",
+      "status": 403,
+      "usable": false,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-bupa-5k",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-bupa-method",
+      "status": 403,
+      "usable": false,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-decathlon-beginner",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun-jats",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun-pdf",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun-result-abstract",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun-result",
+      "status": 403,
+      "usable": false,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun2-jats",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-gronorun2-pdf",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-nike-plans",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    },
+    {
+      "id": "n23-ohio-return",
+      "status": 200,
+      "usable": true,
+      "hashVerified": true
+    }
+  ],
+  "selectedSessionsDurationSumsVerified": 25,
+  "selectedWeeklyRunWalkSumsVerified": 9,
+  "fourSource2007DiscrepancyRowsPreserved": true,
+  "source2010NotUsedToCorrect2007": true,
+  "oldNhsPilotNotRedownloaded": true,
+  "pdfPagesVisuallyReviewed": 12,
+  "medicalOrAppTesting": false
+}

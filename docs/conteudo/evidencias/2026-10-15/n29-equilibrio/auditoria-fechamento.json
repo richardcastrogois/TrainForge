@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-15",
+  "niche": "N29",
+  "researchClosed": true,
+  "scope": "Cinco exercícios da coleção institucional NHS com dose, apoio e progressão qualitativa; caminho profissional Otago cotejado separadamente, sem promessa de prevenção de quedas.",
+  "selectedLot": "lote-equilibrio.json",
+  "criteria": [
+    {
+      "criterion": "Comandos/dose/preparo/retorno humanos",
+      "met": true,
+      "evidence": "Cinco seções no HTML200/hash do NHS, primeira e última posição/direção, reps/holds documentados; parâmetros ausentes nulos."
+    },
+    {
+      "criterion": "Apoios/elegibilidade/supervisão real da fonte",
+      "met": true,
+      "evidence": "Parede/corrimão por variante; NHS educacional geral e Otago individualizado não confundidos. ManualIC06 explicita instrutor/visitas/avaliação antes de níveis sem apoio, não cuidador."
+    },
+    {
+      "criterion": "Graduação sem automatismo/evidência de benefício",
+      "met": true,
+      "evidence": "Construção gradual qualitativa da página; sem calendário criado, retirada de apoio automática ou benefício de ensaio Otago transferido."
+    },
+    {
+      "criterion": "Direitos/contextos",
+      "met": true,
+      "evidence": "OGL+termos/exceções rechecados, sem mídia, autores institucionais honestos. Quatro contextos com limites/pendências e cuidador para si."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão profissional de elegibilidade, variante, recuperação do equilíbrio e apoio reais",
+    "Revisão da versão pt-PT, compreensão/acessibilidade e atribuição/direitos finais",
+    "Implementação/testes em etapa autorizada"
+  ],
+  "notClosedFor": [
+    "Prescrição individual Otago integral e suas lacunas históricas",
+    "Prática sem apoio para alto risco de quedas",
+    "Treino de aparelhos de praça ou assistência física por cuidador"
+  ],
+  "nextNiche": "N30",
+  "releaseApproved": false,
+  "appImplemented": false
+}

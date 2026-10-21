@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "id": "PR221",
+      "name": "ML Kit Text Recognition v2 — Android",
+      "topic": "atividades",
+      "status": "condicional",
+      "publisher": "Google",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_documentation_received_and_explicit_test_limits",
+      "access": "Documentos primários recebidos. OCRWindowsreal emfiguras sintéticas, SDKAndroid/equipamentosnão executados.",
+      "rights": "DocumentaçãoCCBY4/code samplesApache2salvoexceções; SDK/modelo sob termos Google, com restrição de extração/engenharia reversa. Entrada/saída local, métricas de uso enviadas; não confundir com licença de rótulos.",
+      "finding": "API específica deOCRlocal com opções bundled/unbundled e retorno de texto/regiões. Requisito23no corpo difere de21no resumo. Não extrai nutrientes/carga por si só; Android não executado.",
+      "next": "Implementação/privacidade/dispositivo real, visor e unidade do modelo efetivo e compreensão acessível antes de oferta.",
+      "urls": [
+        "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+        "https://developers.google.com/ml-kit/terms"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n41-ocr/contrato-ocr.json"
+    },
+    {
+      "id": "PR222",
+      "name": "Windows.Media.Ocr — API existente e ensaio",
+      "topic": "atividades",
+      "status": "referencia",
+      "publisher": "Microsoft",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_documentation_received_and_explicit_test_limits",
+      "access": "Documentos primários recebidos. OCRWindowsreal emfiguras sintéticas, SDKAndroid/equipamentosnão executados.",
+      "rights": "Componente Windows pré-existente preservado; não redistribuir motor ou inferir licença universal. Figuras próprias apagadas após teste, resultados/hashes retidos.",
+      "finding": "OCRexistente testado em3figuras próprias compt-BR: texto nutricional lido; números de visor omitidos e confusãoO0l1. Não demonstra Android, pt-PT ou7segmentos.",
+      "next": "Implementação/privacidade/dispositivo real, visor e unidade do modelo efetivo e compreensão acessível antes de oferta.",
+      "urls": [
+        "https://learn.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine?view=winrt-26100"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n41-ocr/contrato-ocr.json"
+    },
+    {
+      "id": "PR223",
+      "name": "Domyos RUN100 — unidade e visor específicos",
+      "topic": "atividades",
+      "status": "referencia",
+      "publisher": "Decathlon/Domyos",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_documentation_received_and_explicit_test_limits",
+      "access": "Documentos primários recebidos. OCRWindowsreal emfiguras sintéticas, SDKAndroid/equipamentosnão executados.",
+      "rights": "Somente fatos técnicos em redação própria; não copiar programas integrados, vídeos, fotos, manual ou identidade visual. Grant de mídia não selecionado.",
+      "finding": "Suporte mostra unidadeMI/KMselecionável e contadores acumulados; não assumir unidade pelo país ou modo de manutenção como treino. Leitura de suporte, sem máquina/foto real.",
+      "next": "Implementação/privacidade/dispositivo real, visor e unidade do modelo efetivo e compreensão acessível antes de oferta.",
+      "urls": [
+        "https://support.decathlon.co.uk/run100"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n41-ocr/contrato-ocr.json"
+    },
+    {
+      "id": "PR224",
+      "name": "Life Fitness Atmos Bike/SE4 — level e potência",
+      "topic": "atividades",
+      "status": "referencia",
+      "publisher": "Life Fitness / artigo de Shawn French",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_documentation_received_and_explicit_test_limits",
+      "access": "Documentos primários recebidos. OCRWindowsreal emfiguras sintéticas, SDKAndroid/equipamentosnão executados.",
+      "rights": "Fatos e distinções de unidade, sem copiar conteúdo de treino, interface ou mídias. Não generalizar marketing de medição a precisão clínica.",
+      "finding": "Console distingue alvo de potência emW e resistência/level; peso do usuário em configuração não vira carga emkg. Não medimos ou operamos equipamento.",
+      "next": "Implementação/privacidade/dispositivo real, visor e unidade do modelo efetivo e compreensão acessível antes de oferta.",
+      "urls": [
+        "https://support.lifefitness.com/hc/en-us/articles/42862424978583-Life-Fitness-Atmos-Bike-How-to-Use-Constant-or-Adaptive-Power-Workouts-on-Your-SE4-Console"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n41-ocr/contrato-ocr.json"
+    }
+  ],
+  "receipts": [
+    {
+      "receipt": "n41-domyos-run100.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n41-lifefitness-level-power.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n41-mlkit-android.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n41-mlkit-terms.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n41-windows-ocr-doc.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    }
+  ],
+  "rightsAndCosts": "Nenhum pacote/idioma/SDK comprado ou instalado. Sem fotos pessoais, serviços externos de imagem ou dados do equipamento. Recursos Windows existentes preservados.",
+  "testLimit": "O uso de execução de script no PowerShell5.1 foi local; não houve alteração permanente de política/configuração global.",
+  "priorBodyRecheckReason": "Documentos revistos para seleção específica atual e discrepância de minSDK, não repetição de consultas sem pista."
+}

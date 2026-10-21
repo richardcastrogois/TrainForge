@@ -1,0 +1,25 @@
+{
+  "id": "n25-women2019-pdf",
+  "url": "https://europepmc.org/articles/PMC6388213?pdf=render",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:41:06.704676+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Distribuicao publica oficial do artigo CC BY4; ler Figura1 de sessao cuja imagem nao retornou na ferramenta web. Sem nova chamada ao MDPI429",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://europepmc.org/articles/PMC6388213?pdf=render",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5754,
+  "bodyFile": "../raw/n25-women2019-pdf.pdf",
+  "sha256": "2f756bdebaa88f57d3a95c79e054c25d509332cbf9f21ff5a793a33b894f0875",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

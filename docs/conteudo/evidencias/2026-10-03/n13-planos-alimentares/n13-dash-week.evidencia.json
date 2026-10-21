@@ -1,0 +1,21 @@
+{
+  "id": "n13-dash-week",
+  "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/WeekOnDASH.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:05:29.361498+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documento humano com sete dias, refeicoes e porcoes; verificar paginas e totais.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/sites/default/files/publications/WeekOnDASH.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 826543,
+  "bodyFile": "../raw/n13-dash-week.pdf",
+  "sha256": "9853d66dbaae3a105be7f25985b66dfd101ff84a193c147e2eda344e97e8bf3b"
+}

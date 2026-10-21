@@ -1,0 +1,23 @@
+{
+  "id": "n30-poon-html",
+  "url": "https://jssm.org/jssm-22-532.xml-Fulltext",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:45:14.128788+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Métodos do circuito12estações eHIIT ergômetro, kit real e duração/limites do estudo agudo",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://jssm.org/jssm-22-532.xml-Fulltext",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 128557,
+  "bodyFile": "../raw/n30-poon-html.html",
+  "sha256": "edf68a1959487d527584743aaf95799a9ff6404a93f82fed79828d1e5badff30"
+}

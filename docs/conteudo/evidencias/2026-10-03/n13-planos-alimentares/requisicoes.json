@@ -1,0 +1,10 @@
+{
+  "niche": "N13",
+  "date": "2026-10-03",
+  "requests": [
+    {"id": "n13-dash-week", "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/WeekOnDASH.pdf", "purpose": "Documento humano com sete dias, refeicoes e porcoes; verificar paginas e totais.", "accept": "application/pdf", "extension": "pdf"},
+    {"id": "n13-dash-resource", "url": "https://www.nhlbi.nih.gov/resources/week-dash-eating-plan", "purpose": "Publico, edicao e origem oficial do menu semanal.", "extension": "html"}
+  ],
+  "rightsUrl": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+  "rightsStrategy": "Reutilizar evidencia N08 da mesma politica; leitura web em 03/10 confirma restricoes de alteracao/endosso."
+}

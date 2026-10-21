@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-11",
+  "scope":"SomenteN15-C. Retomar lead remoto2026 ja triado05/10, nao duplicar ensaio/familia nem repetirXML500PMC13330425. Primeira coleta do protocolo27p link observado no indice primarioClinicalTrials, registro oficialAPI e resumoCORE. Plano2022 e resultado2026 separados; nenhum contato/login/captcha/ativo externo.",
+  "requests":[
+    {"id":"c15-remoto2026-protocolo-pdf","url":"https://cdn.clinicaltrials.gov/large-docs/14/NCT04102514/Prot_SAP_000.pdf","extension":"pdf","accept":"application/pdf","purpose":"Protocolo/SAP27p versao09/05/2022 publicado para NCT04102514: conferir se contem roteiro operacional completo ou apenas nomes, doses de contatos/aulas, preparo/cansaco, eventos e autoria/ativos."},
+    {"id":"c15-remoto2026-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT04102514","extension":"json","purpose":"Registro original com documentos/versoes/resultados. Distinguir99duplas de198pessoas e de meta100duplas,6meses publicados de18meses planejados."},
+    {"id":"c15-remoto2026-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41774485%20AND%20SRC%3AMED&resultType=core&format=json","extension":"json","purpose":"Resumo primario PMID41774485/DOI10.1249/MSS.0000000000003974: confirmar ganhos proprios do cuidador versusMVPA primaria nula. Nao retry deXML500 nem texto integral recebido por suposicao."}
+  ]
+}

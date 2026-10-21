@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-card",
+  "url": "https://huggingface.co/nateraw/food/resolve/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:33:23.041660+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Modelcard público Apache2.0, métricasauto-relatadas eausências/versões. Nãoequiparar estatísticadevalidação àprecisãonoTrainForge.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/nateraw/food/8991abd49ea01ebf502aeda51d4f12a59c603e01/README.md?%2Fnateraw%2Ffood%2Fresolve%2Fmain%2FREADME.md=&etag=%224007c3aaef6fb60b9e7423f255a579baa9107101%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1957,
+  "bodyFile": "../raw/n39-nateraw-card.md",
+  "sha256": "823de76756742d00f98cc2d001199cf3187c2fedb61835154d05ddf088241d95"
+}

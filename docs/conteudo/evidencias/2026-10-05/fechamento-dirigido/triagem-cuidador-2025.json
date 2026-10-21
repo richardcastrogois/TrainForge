@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-05",
+  "scope": "N15-C: exercicio do cuidador para si, em casa; nao assistencia fisica do idoso.",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "review": {
+    "sourceId": "PR57",
+    "title": "Effects of physical exercise in reducing caregivers burden: a systematic review",
+    "authors": ["Carla Cardoso", "Maria Jose Lumini", "Teresa Martins"],
+    "year": 2025,
+    "doi": "10.3389/fpubh.2025.1474913",
+    "record": "2026-10-05/fechamento-dirigido/c15-revisao-burden-2025-xml.evidencia.json",
+    "sha256": "de669093d43d58f159dd87c5effaae8c1afd841b8a230d4f419434c1c17d59b6",
+    "license": {"id": "CC-BY-4.0", "locator": "permissions/license/@xlink:href", "url": "http://creativecommons.org/licenses/by/4.0/"},
+    "locators": ["Tables 4-6", "ref-list/B24-B36"],
+    "role": "Indice para localizar estudos primarios, nao programa operacional. Licenca da revisao nao abrange automaticamente as fontes citadas.",
+    "primaryLeads": [
+      {"ref": "B24", "authorYear": "Wang 2021", "doi": "10.1097/MD.0000000000024154", "next": "Verificar rotina de relaxamento, material, acompanhamento e direitos."},
+      {"ref": "B25", "authorYear": "Chan 2020", "pmid": "33229611", "next": "Reusar familia PR33; Tai Chi sentado, confirmar manual e percurso proprio do cuidador."},
+      {"ref": "B26", "authorYear": "Alonso-Cortes 2020", "doi": "10.1093/heapro/daz045", "next": "Associacao, nao demonstracao de autonomia em casa."},
+      {"ref": "B27", "authorYear": "Yilmaz 2019", "doi": "10.1111/jjns.12234", "next": "Verificar treinamento inicial, audio/DVD e direitos de relaxamento muscular."},
+      {"ref": "B28", "authorYear": "Madruga 2021", "doi": "10.1017/S104161022000157X", "next": "Em casa com treinador; comparar identidade com familia Prieto antes de duplicar."},
+      {"ref": "B29/B30", "authorYear": "Montero Cuadrado 2023/2020", "dois": ["10.3390/ijerph20010185", "10.3390/ijerph17207359"], "next": "Associacao/atencao primaria, nao presumir ambiente domestico."},
+      {"ref": "B31", "authorYear": "Hives 2021", "doi": "10.1093/abm/kaaa031", "next": "Mesmo ensaio FAST; nao contar como programa independente."},
+      {"ref": "B32", "authorYear": "Baykal Bilgic 2024", "doi": "10.1016/j.gerinurse.2024.07.035", "next": "Confirmar ambiente e desenho primario, nao inferir rotina completa da tabela."},
+      {"ref": "B33", "authorYear": "Loi 2024 / IMPACCT", "doi": "10.1002/gps.6058", "next": "Prioridade: obter manual Otago Plus e direitos, incluindo individualizacao e contexto do cuidador."},
+      {"ref": "B34", "authorYear": "Capaci 2022", "doi": "10.1016/j.eujim.2022.102114", "next": "Rotina de relaxamento e ativos nao recebidos."},
+      {"ref": "B35", "authorYear": "Barghbani 2023", "doi": "10.5812/ijcm-131622", "next": "Benson: verificar rotina e licenca primaria, sem presumir permissao comercial."},
+      {"ref": "B36", "authorYear": "Imanian/Ramezanli 2022", "doi": "10.17533/udea.iee.v40n3e06", "next": "Benson: verificar rotina, elegibilidade e licenca primaria."}
+    ],
+    "primaryBodiesReceivedFromTheseLeadsThisRound": 0
+  },
+  "webOnlyTriage": [
+    {
+      "title": "Effects of Aerobic Exercise Training on Daily Psychological Processes in Family Caregivers: Secondary Analyses of a Randomized Controlled Trial",
+      "authors": "Caplin et al.",
+      "year": 2021,
+      "doi": "10.1007/s42761-020-00026-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9382956/",
+      "readExtent": "Metodos lidos na pagina primaria pelo navegador de pesquisa; XML local retornou 500 vazio.",
+      "finding": "FAST: 24 semanas, cuidador familiar de 50-75 anos; teste cardiopulmonar, liberacao medica, treinador e mensalidade de academia fornecida. Frequencia/duracao/intensidade individualizadas; nao pacote autonomo domiciliar gratuito.",
+      "rights": "Copyright Society for Affective Science 2021 na pagina; nenhuma licenca comercial confirmada nesta rodada."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6891121/",
+      "year": 2019,
+      "readExtent": "Trechos de metodos no indice web; abertura posterior bloqueada, nao leitura integral.",
+      "finding": "Aulas remotas em duplas, especialista/health coach e recursos fornecidos. Cuidador pode praticar, mas scripts de cada sessao nao recebidos."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13330425/",
+      "year": 2026,
+      "readExtent": "Trechos de metodos no indice web; XML local 500 vazio; DOI/licenca nao conferidos.",
+      "finding": "Intervencao de seis meses com aulas remotas e orientacao. Nao retirar coach/equipamentos para declarar autonomia."
+    }
+  ],
+  "failedLocalCalls": [
+    "2026-10-05/fechamento-dirigido/c15-fast-2021-xml.evidencia.json",
+    "2026-10-05/fechamento-dirigido/c15-remoto-2019-xml.evidencia.json",
+    "2026-10-05/fechamento-dirigido/c15-remoto-2026-xml.evidencia.json"
+  ],
+  "failureInterpretation": "Tres HTTP 500 consecutivos, corpos vazios com hash de vazio. Nao sao artigos recebidos; sem retry ou fechamento apoiado neles.",
+  "apkDecision": {"newOperationalPackages": 0, "unmetCriteria": ["C15-G03", "C15-G04"], "rule": "Nao combinar dose da revisao com movimentos de outra fonte; a rotina primaria integral e seus direitos continuam requisitos."}
+}

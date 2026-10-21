@@ -1,0 +1,37 @@
+{
+  "niche": "N18",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 2,
+  "verifiedDependencies": 2,
+  "proposedOperations": 0,
+  "fictionalScenarios": 5,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n18-academia-iniciante/n18-basic-beginner.evidencia.json",
+      "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/",
+      "sha256": "51d6392078d31104812138810185e123f1588479b5c3bb3bf6b4895faf1a1814"
+    },
+    {
+      "record": "2026-10-03/n18-academia-iniciante/n18-wiki-origin.evidencia.json",
+      "url": "https://thefitness.wiki/",
+      "sha256": "2d4ff6402a18a751a1f3fac15b12010c6a334f77d8f83af5690a70529442847f"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    },
+    {
+      "file": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "artifactSha256": "6a9aafc65d6edfe2a7d1b90549b41b9df97a45d78568b50f4782bcee768102ab"
+    }
+  ],
+  "next": "N19"
+}

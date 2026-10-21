@@ -1,0 +1,24 @@
+{
+  "id": "c15-cbt-livro",
+  "url": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-06T03:27:42.260316+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Livro integral no site do coautor: capitulo de cuidadores e roteiros, dosagem, progressao, supervisao e exclusoes da licenca. PDF sem teto autorizado, TLS padrao, sem retries.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 12262747,
+  "bodyFile": "../raw/c15-cbt-livro.pdf",
+  "sha256": "49ebe9d5c36074b009257d1498d0ddd4646a8fc7359fd3df905c36bdb0cd959e",
+  "bodyFormatMatchesRequest": true
+}

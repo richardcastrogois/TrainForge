@@ -1,0 +1,23 @@
+{
+  "id": "c15-mbi-hibrido2025-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:40:37.014343+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "RCTMBIhibrido2025 distinto brevefrailidadePR130, conferir roteiro/apoio profissional/exercicio especifico cuidador/dose/efeito contrastes/licenca/suplementos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 161391,
+  "bodyFile": "../raw/c15-mbi-hibrido2025-xml.xml",
+  "sha256": "f611fe0547876b1f50c8affcb7dd053d36345c216f5e3f0f54cc4c05e98e19d4"
+}

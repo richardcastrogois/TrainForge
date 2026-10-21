@@ -1,0 +1,236 @@
+{
+  "id": "CG-01-STATIC-v1",
+  "date": "2026-10-12",
+  "primarySourceId": "PR42",
+  "status": "fechado_para_pesquisa_no_recorte_com_orientacao_profissional",
+  "researchItemClosed": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closingIsClinicalOrEditorialValidation": false,
+  "userDecision": {
+    "received": true,
+    "answer": "Sim, desde que a compatibilidade seja demonstrada e as fontes fiquem separadas.",
+    "subject": "Precaucoes profissionais auxiliares sem alterar exercicio e sem declarar combinado testado",
+    "decisionApprovesClinicalValidityOrPublication": false
+  },
+  "primaryProtocol": {
+    "authors": [
+      "Amine Atac",
+      "Ebrar Atak"
+    ],
+    "doi": "10.3390/ijerph21101361",
+    "correctionDoi": "10.3390/ijerph23040510",
+    "trial": "NCT06466239",
+    "professionalQualification": "Amine Atac: MSc Physiotherapist declarada no registro primario NCT05222295; qualificacao apenas, nao transferencia de protocolo COPD.",
+    "eligibilityReading": "evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json#/eligibility",
+    "population": "Profissional de reabilitacao que cuida de criancas com atrasos do desenvolvimento;18-40anos e elegibilidade original.",
+    "posture": "Em pe; membro inferior apoiado num degrau, joelho estendido, costas retas; mao em direcao aos dedos do pe conforme postura do artigo.",
+    "dose": {
+      "holdSeconds": 30,
+      "repetitionsPerLeg": 8,
+      "legs": 2,
+      "activeHoldSeconds": 480,
+      "restSeconds": null,
+      "transitionSeconds": null,
+      "weeklyFrequency": null,
+      "programmeWeeks": null,
+      "sourceLegOrder": null
+    },
+    "definition": "Apenas o ramo estatico; nao contrair calcanhar, aplicar intensidade65%, repousos/cicloPNF ou criar programa longitudinal.",
+    "receipt": "evidencias/2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+    "instructionLocator": "2.3 Procedures, paragrafo static stretching/postura compartilhada",
+    "coreExerciseCreatedByPublishedProfessionals": true,
+    "aiCreatedNewMovementOrDose": false
+  },
+  "delivery": {
+    "selectedPath": "com_orientacao_profissional_sem_inicio_autonomo_no_APK",
+    "initialEligibilityAssessment": "Fisioterapeuta verifica os criterios aplicaveis, incluido encurtamento isquiotibial por teste publicado; o app nao diagnostica nem converte teste em treino.",
+    "initialInstruction": "Orientacao profissional da postura original, manutencao e transicoes de entrada/saida antes de executar; sem substituir ensino por timer/texto.",
+    "supportDuringApplicationRequiredByThisSelectedPath": true,
+    "supportRuleIsConservativeApkRestrictionNotObservedAtacStaticRequirement": true,
+    "atacStaticTeachingOrLiveSupervisionExplicitlyPublished": false,
+    "pnfTeachingWasNotTransferred": true,
+    "firstUseWithoutProfessionalSupported": false,
+    "professionalAvailabilityAssumed": false,
+    "appProvidesProfessionalService": false,
+    "independentAfterTeachingHomeEfficacyClaimed": false,
+    "basis": [
+      "Original: elegibilidade/testes/postura e autoaplicacao no centro",
+      "CSP: aconselhamento de profissional antes de novo regime de exercicios",
+      "Politica do projeto: escolher caminho com orientacao e nao presumir autonomia quando a fonte nao a demonstra"
+    ],
+    "restrictionDoesNotChangeActiveMovementOrDose": true
+  },
+  "environmentAndWorkload": {
+    "studyVenue": "centros de reabilitacao",
+    "proposedVenues": "Centro/casa/academia/outro espaco somente se mesma postura, degrau, tempo, elegibilidade e apoio forem viaveis.",
+    "homeTrialProven": false,
+    "stepNumericHeight": null,
+    "minimumAreaM2": null,
+    "stepAndSpaceSuitabilityCheckedByProfessional": true,
+    "exactTotalElapsedMinutes": null,
+    "minimumActiveMinutes": 8,
+    "fatigueThresholdValidated": null,
+    "automaticShorterDose": false,
+    "cannotFitOrMaintainPosture": "Nao oferecer variante/dose menor como se fosse a estudada; verificar viabilidade com o profissional.",
+    "trialCaregiverOccupationIsNotProofAllCaregiversEligible": true
+  },
+  "instructions": [
+    {
+      "id": "CG01-I01",
+      "layer": "primary_protocol",
+      "action": "Preparar a postura em pe com o membro inferior no degrau, joelho estendido e costas retas, conforme orientacao profissional da postura descrita pelo artigo.",
+      "source": "Atac2.3"
+    },
+    {
+      "id": "CG01-I02",
+      "layer": "primary_protocol",
+      "action": "Levar a mao em direcao aos dedos do pe e sustentar o alongamento estatico30s; nao incluir contracaoPNF.",
+      "source": "Atac2.3"
+    },
+    {
+      "id": "CG01-I03",
+      "layer": "primary_protocol",
+      "action": "Completar oito sustentacoes por perna, ambas as pernas. Ordem das pernas e intervalos nao foram especificados; nao criar ordem/timer de repouso clinico.",
+      "source": "Atac2.3/registroStaticStretching"
+    },
+    {
+      "id": "CG01-I04",
+      "layer": "auxiliary_professional_precaution",
+      "action": "Fazer movimentos e transicoes lentos e suaves, sem aplicar forca excessiva. A orientacao pratica de entrada/saida e dada pelo fisioterapeuta no caminho selecionado.",
+      "source": "WorcestershirePDF2 orientacao geral aplicavel tambem ao Exercise15PDF9",
+      "exactFootRemovalSequenceInvented": false
+    },
+    {
+      "id": "CG01-I05",
+      "layer": "auxiliary_professional_precaution",
+      "action": "Se o exercicio agravar a dor, interromper e buscar orientacao medica com urgencia; nao seguir apenas para completar a contagem.",
+      "source": "CSP introducao/general advice",
+      "numericalPainThresholdInvented": false
+    }
+  ],
+  "sessionCompletion": {
+    "normalEndpoint": "Oito sustentacoes30s para cada perna; nenhum gesto extra/aquecimento/desaceleracao foi prescrito neste item agudo.",
+    "transitionPrinciple": "Lento e suave, na forma orientada pelo fisioterapeuta, fonte auxiliarWorc. Nao uma sequencia de retirada do pe descrita peloRCT.",
+    "originalExactExitSequence": null,
+    "notAutonomousStepByStepExitClaim": true,
+    "ifInterrupted": "Registrar sessao interrompida e repetições efetivamente feitas; nao classificar como dose completa.",
+    "resumeOrCatchup": "O app nao decide quando retomar, repetir a sessao ou compensar; reavaliacao/orientacao humana no caminho selecionado.",
+    "resumeRuleIsSoftwareRestrictionNotClinicallyStudiedAlgorithm": true
+  },
+  "safety": {
+    "sourceSpecificEligibility": "Preservar criterios originais, separar criterios de pesquisa de contraindicações universais; avaliacao profissional exigida neste recorte.",
+    "priorAdviceSource": "CSP intro before Hamstring stretch",
+    "slowSmoothNoExcessForceSource": "WorcPDF2, regra geral de stretching; Exercise15PDF9 em pe/degrau/joelho reto/costas retas",
+    "worseningPainEscalationSource": "CSP intro",
+    "noOaPainAllowanceBorrowed": true,
+    "noOaRpe5to7Borrowed": true,
+    "noPnf65PercentBorrowed": true,
+    "noAutomaticClinicalResume": true,
+    "generalPrecautionsNotClaimedAsTrialTested": true,
+    "foreignEmergencyNumbersCopied": false,
+    "zeroRiskClaim": false
+  },
+  "compatibilityReview": [
+    {
+      "id": "CG01-C01",
+      "auxiliary": "Worc",
+      "selectedPart": "Movimentos/transicoes lentos e suaves, nao aplicar forca excessiva",
+      "whyCompatible": "Regra geral de alongamento no proprio guia inclui Exercise15, mesma configuracao principal em pe/apoio elevado/joelho estendido/costas retas. Atua na seguranca, nao troca gesto ativo ou dose.",
+      "notTransferred": [
+        "3repeticoes",
+        "flexao tornozelo/pressao calcanhar",
+        "maos na coxa da figura",
+        "outros exercicios"
+      ],
+      "scope": "Norma geral profissional, nao guiaAtac identico"
+    },
+    {
+      "id": "CG01-C02",
+      "auxiliary": "CSP",
+      "selectedPart": "Orientacao profissional previa a novo regime e buscar conselho medico urgente se exercicio agrava dor",
+      "whyCompatible": "Conselho profissional geral previo e de agravamento, sem depender de repetições/tempo ou da variante sentada do video. Complementa a selecao conservadora guiada; nao confirma como oRCT entregou o ramo estatico.",
+      "notTransferred": [
+        "variante sentada",
+        "dorsiflexao apos extensaojoelho",
+        "videosPhysiotec",
+        "retorno sentado"
+      ],
+      "scope": "Camada de seguranca separada, nao comprovacao de eficacia ou protocolo de repeticoes"
+    },
+    {
+      "id": "CG01-C03",
+      "auxiliary": "ROH",
+      "selectedPart": null,
+      "whyNotSelected": "Programa deosteoartrite20-30s x5/3vezesdia e instrucoes de flareup; retorno de ponte nao do hamstring. Nenhum dado preenche protocoloAtac."
+    },
+    {
+      "id": "CG01-C04",
+      "auxiliary": "DynamicHealth",
+      "selectedPart": null,
+      "whyNotSelected": "Retorno lento explicito pertence a variante semdegrau e outro programaOA; nao transferir RPE/dose/forma de saida como seRCT."
+    }
+  ],
+  "clinicalClaim": {
+    "allowed": "Estudo aplicou esse autoalongamento em30profissionais cuidadores. Foram observadas alteracoes agudas emmedidas especificas de mobilidade, com limites do desenho e conflito narrativoPAT documentados.",
+    "design": "RCT cruzado agudo, comparador outro alongamento ativo, semcontrole semalongamento/placebo.",
+    "staticWithinMethodP": {
+      "rightPoplitealAngle": 0.001,
+      "leftPoplitealAngle": "<0.001",
+      "schober": "<0.001",
+      "fingerToFloor": 0.634
+    },
+    "notClaimed": [
+      "prevencao de lesao ocupacional",
+      "reducao de fadiga/dor medida",
+      "melhora de todas medidas",
+      "melhora pulmonar",
+      "superioridade estatica sobrePNF",
+      "beneficio longitudinal ou domiciliar demonstrado",
+      "eficacia de novo programa combinado",
+      "todos cuidadores/idosos elegiveis"
+    ],
+    "publishedStatisticalAndAbstractConflictsNotSilentlyRepaired": true
+  },
+  "assetsAndRights": {
+    "selectedForFuturePublication": [
+      "Texto/metadados tecnicos do ramo estatico do artigoAtac,CCBY4, com atribuicao/link/licenca/indicacao de traducao ou alteracoes editoriais"
+    ],
+    "sourceFactReferences": [
+      "Worc principios gerais eCSPorientacao, separados e citados como referencias"
+    ],
+    "nhsCspExpressiveAssetsSelected": [],
+    "photosVideosFiguresImported": [],
+    "articleLicenceGrantsExternalMedia": false,
+    "copyOrTranslateWholeNhsCspGuidesApproved": false,
+    "factsMethodsSeparateFromProtectedExpression": true,
+    "humanLocalizationReviewStillRequiredBeforePublication": true,
+    "noPaidPermissionOrAuthorContactNeededForSelectedAtacTextUnderCcByConditions": true,
+    "notLegalOpinion": true,
+    "licence": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "closureEvidence": {
+    "primaryReadings": [
+      "evidencias/2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+      "evidencias/2026-10-08/n15c-originais-caser/revalidacao-estatico.json"
+    ],
+    "selectedAuxiliaryReceipts": [
+      "evidencias/2026-10-12/cg01-estatico/cg01-worcs2025-pdf.evidencia.json",
+      "evidencias/2026-10-12/cg01-estatico/cg01-csp-seguranca-html.evidencia.json"
+    ],
+    "auxiliaryHashes": {
+      "worcs": "ef96b5038f375cc3a0392f6618e38c3c57bb0078c0ed8aa4c3a1e720f32b4547",
+      "csp": "73e0e023402000eb8ddf3db7d661934a7c05b8dd9f258e457d7a621674390e18"
+    },
+    "sourceLayersKeptSeparate": true,
+    "wholeNewCombinationTrialTested": false,
+    "sourceQualifiedHumanExerciseNotNewAiWorkout": true,
+    "closureScope": "Pesquisa/ficha factual do ramo estatico, publico restrito e caminho profissional. Nao publicacao/autonomia/validacao clinica independente."
+  },
+  "publicationPrerequisites": [
+    "Revisao humana de localizacao e apresentacao antes de publicar, sem alterar prescricaooriginal",
+    "Implementar controles que preservem caminho profissional e nao presumam profissional disponivel",
+    "Manter atribuicao/licenca do textoAtac e separar referencias auxiliares das alegacoes do ensaio"
+  ],
+  "next": "Apos validar esta ficha e sua integridade, CG02/Benson e o proximo permitido. Nenhum outro componente emparalelo; N15-Cglobal/N21 permanecem conformefila."
+}

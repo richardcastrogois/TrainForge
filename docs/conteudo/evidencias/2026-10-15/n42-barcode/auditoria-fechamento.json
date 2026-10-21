@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-15",
+  "niche": "N42",
+  "researchClosed": true,
+  "scope": "Contrato de captura/validação textual/lookup e confirmação, sem scanner óptico integrado.",
+  "criteria": [
+    {
+      "criterion": "Scanner/formato/payload e limites",
+      "met": true,
+      "evidence": "API específica e formatos documentados; óptica não testada e não prometida como pronta. SDKnãoinstalado."
+    },
+    {
+      "criterion": "Código/produtoN04distintos",
+      "met": true,
+      "evidence": "9verificações textuais/2códigos existentes; checksum não comprova produto/nutriente. FalhasOFFnão repetidas."
+    },
+    {
+      "criterion": "Identidade/consumo/contextos",
+      "met": true,
+      "evidence": "Quatro contextos e confirmação explícitos; cuidador escanear/compra não atribui consumo ao assistido."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Teste real com código legível/parcial/reflexo, formato e payload; acessibilidade do enquadramento e confirmação.",
+    "Disponibilidade/download do modelo e termos/telemetria da versão escolhida.",
+    "LookupN04/direitos/atualidade e estados erro/ausente com fonte; não é integração pronta."
+  ],
+  "opticalDecodeTested": false,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "nextNiche": "N43"
+}

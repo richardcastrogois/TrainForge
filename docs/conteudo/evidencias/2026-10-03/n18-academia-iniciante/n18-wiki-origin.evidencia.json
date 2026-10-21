@@ -1,0 +1,21 @@
+{
+  "id": "n18-wiki-origin",
+  "url": "https://thefitness.wiki/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:40:50.466374+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir curadoria/autoria institucional e eventual política de reutilização.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://thefitness.wiki/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 22847,
+  "bodyFile": "../raw/n18-wiki-origin.html",
+  "sha256": "2d4ff6402a18a751a1f3fac15b12010c6a334f77d8f83af5690a70529442847f"
+}

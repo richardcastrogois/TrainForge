@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-I",
+  "sourceFamily": "PR13",
+  "record": "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+  "bodySha256": "5f5c45e05220bf9fa4ce61671a985e6bf45e6ba254fc86979893b72ffb6c69d4",
+  "doi": "10.3390/healthcare13233091",
+  "readMethod": "Releitura local de Methods 2.1, 2.3 e 2.4 via HTMLParser; site externo e pagina About lidos publicamente via web. Nenhuma recaptura local, video reproduzido/baixado, login ou conta criados.",
+  "articleLicense": "CC BY 4.0",
+  "actor": "idoso_praticando_para_si",
+  "environment": "casa",
+  "phases": [
+    {"id": "I15-OEC01", "name": "OEC", "weeks": 7, "classesPerWeek": 2, "classes": 14, "supervision": "Instrutor profissional ao vivo, camera mostrando corpo inteiro, pratica de duas a tres repeticoes antes do item e correcoes de postura/ritmo.", "cameraViews": "Frente no primeiro conjunto, lado no segundo e direcao preferida no terceiro quando aplicavel; nao acrescentar terceiro conjunto a aulas com apenas dois.", "warmup": "Video pregravado partilhado no Zoom, sem instrucao integral no artigo.", "cooldown": "Mesmo modo de video do aquecimento, sem instrucao integral no artigo."},
+    {"id": "I15-OEC02", "name": "SDE", "weeks": 7, "participants": 8, "classesPerWeek": null, "exerciseMandatory": false, "supervision": "Pratica livre posterior as aulas, com materiais em site e contato regular telefonico/email; nao teste de programa sem instrucao inicial ou acompanhamento.", "exerciseLogging": "Folhas em papel enviadas e devolvidas por correio.", "decision": "Nao replicar a tabela das 14 aulas como prescricao de mais sete semanas; frequencia observada e resultado, nao dose obrigatoria."}
+  ],
+  "externalMaterials": {
+    "url": "https://juntendo-kinkatsu.com/",
+    "aboutUrl": "https://juntendo-kinkatsu.com/about/",
+    "articleWebsiteAccessDate": "2025-03-15",
+    "websiteReviewed": "2026-10-04",
+    "readViaWebOnly": true,
+    "localBodyStored": false,
+    "bodySha256": null,
+    "copyrightNotice": "Copyright 2020 All Rights Reserved",
+    "publicVideosListed": true,
+    "memberSectionListed": true,
+    "memberPageFetch": "Cache miss no leitor web; nao afirmar formulario de login inspecionado, custo ou inexistencia de materiais publicos.",
+    "currentVideoMatches2025Study": null,
+    "videoLicense": null,
+    "decision": "Videos publicos listados e area de membros nao demonstram pacote completo ou permissao comercial. CC BY do artigo nao foi estendida ao site, videos, marca ou guia externo. Nao registrar conta, contatar autores ou assumir parceiro para resolver."
+  },
+  "functionalBoundary": "CS-30, levantar da cadeira de 40 cm durante 30 segundos, e avaliacao no estudo; nao novo exercicio/dose de treino. SQ/SSQ/SP/CSAC da tabela sao preservados sem substituir agachamento por levantar-sentar.",
+  "evidenceLimits": ["Oito participantes analisados, selecao com aprovacao medica, estudo de grupo unico sem controle; nao comprova elegibilidade universal, eficacia comparativa ou fluxo de cuidador.", "Quatorze semanas de observacao nao sao quatorze semanas de dose identica.", "Corpo do artigo e amostra anterior preservados; zero novos corpos locais ou fontes/familias por esta releitura."],
+  "selectedAsCompleteProgramme": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false
+}

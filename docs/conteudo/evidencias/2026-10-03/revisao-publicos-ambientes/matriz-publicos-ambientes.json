@@ -1,0 +1,1053 @@
+{
+  "scope": "revisao_N01_N20_publicos_ambientes",
+  "date": "2026-10-03",
+  "requestedByUser": true,
+  "method": "Releitura documental local de 20 resumos e cinco complementos; sem nova coleta, prescricao, teste com pessoas ou mudanca de fechamentos gerais.",
+  "generalResearchStatusPreserved": true,
+  "newCalls": 0,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "clinicalValidationPerformed": false,
+  "userTestsPerformed": false,
+  "contexts": [
+    {
+      "id": "idoso_casa",
+      "label": "Idoso em casa",
+      "focus": "Pesquisar levantar/sentar, subir degrau, mobilidade/alongamento e outras atividades segundo fonte e capacidade; nao lista obrigatoria pela idade.",
+      "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+    },
+    {
+      "id": "idoso_academia_praca",
+      "label": "Idoso na academia de praca",
+      "focus": "Aparelhos de academia publica ao ar livre; separar de barras/calisthenics, caminhada e treino domestico.",
+      "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+    },
+    {
+      "id": "idoso_academia",
+      "label": "Idoso na academia",
+      "focus": "Maquinas, halteres e barras por experiencia, equipamento e elegibilidade; nao limitar idosos a iniciante ou sentado.",
+      "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+    },
+    {
+      "id": "cuidador_casa_proprio",
+      "label": "Cuidador treinando para si em casa",
+      "focus": "Treino pessoal domestico, disponibilidade e interrupcoes compativeis com o cuidado; pessoa exercitada distinta da assistida.",
+      "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+    }
+  ],
+  "statusDefinitions": {
+    "base_generica": "Base tecnica/editorial reutilizavel; nao comprova percurso de treino deste publico/ambiente.",
+    "parcial_especifica": "Fonte explicita para idosos em casa no recorte delimitado; nao homologada ou universal.",
+    "nao_demonstrado": "Evidencia anterior nao demonstra programa/instrucao para este publico neste ambiente."
+  },
+  "niches": [
+    {
+      "niche": "N01",
+      "title": "Identidade de alimentos",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-26/n01-alimentos/resumo-identidades.json",
+      "finding": "IDs/nome/preparo reutilizaveis; nao dieta geriatrica ou plano do cuidador.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N02",
+      "title": "Composicao nutricional",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-26/n02-composicao/resumo-composicao.json",
+      "finding": "Composicao e unidades nao definem metas individuais de energia, agua ou proteina.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N03",
+      "title": "Porcoes e preparo",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "finding": "Porcoes/preparo nao demonstram textura adaptada, degluticao ou quantidade efetivamente consumida.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N04",
+      "title": "Produtos portugueses",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "finding": "Produto identificado nao comprova indicacao de suplemento ou adequacao individual.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N05",
+      "title": "Ingredientes e alergenios",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "finding": "Ingredientes/alergenios nao demonstram interacoes farmacologicas ou adequacao clinica.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N06",
+      "title": "Fotos de alimentos",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-28/n06-imagens/resumo-imagens.json",
+      "finding": "Fotos e direitos amostrados; compreensao visual com estes publicos nao testada.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N07",
+      "title": "Leitura de rotulos",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "finding": "Licoes gerais; leitura e compreensao acessiveis por estes publicos nao testadas.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N08",
+      "title": "Receitas humanas",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-29/n08-receitas/resumo-receitas.json",
+      "finding": "Receitas existentes nao demonstram preparo assistido, textura ou adequacao individual.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N09",
+      "title": "Ganho de peso",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "finding": "Guias gerais/clinicos delimitados nao equivalem a programa geriatrico de desnutricao.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N10",
+      "title": "Perda de peso",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "finding": "Guias gerais nao autorizam emagrecimento ou deficit automaticos para idosos.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N11",
+      "title": "Habitos alimentares",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "finding": "N11-I acrescenta educacao sobre envelhecimento; nao dieta nem programa de exercicio do cuidador.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N12",
+      "title": "Nutricao e desempenho",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "finding": "Orientacao de desempenho nao define meta proteica individual geriatrica.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N13",
+      "title": "Planos alimentares",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "finding": "Menu DASH de exemplo nao e dieta individual; direitos e divergencias permanecem.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N14",
+      "title": "Organizacao alimentar",
+      "generalStatus": "concluido_no_recorte_geral",
+      "evidence": "2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "finding": "N14-C define requisitos de registo acompanhado; nao programa de treino proprio do cuidador.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "base_generica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "base_generica",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "base_generica",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N15",
+      "title": "Casa sem equipamento",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "finding": "PR13: estudo domiciliar com publico restrito e supervisao. N15-I parcial; nao universal ou fisicamente assistido.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "parcial_especifica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N16",
+      "title": "Casa com material",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n16-casa-material/resumo-programas.json",
+      "finding": "PR11 e N16-I/Otago: contexto domestico, kit/apoio/supervisao delimitados; direitos, atualidade e transicoes pendentes.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "parcial_especifica",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N17",
+      "title": "Instrucao em casa",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "finding": "Quinze IDs NHS e criterios N17-I; sem playback, midia aprovada ou teste com pessoas.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "nao_demonstrado",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N18",
+      "title": "Academia iniciante",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n18-academia-iniciante/resumo-complemento.json",
+      "finding": "Rotina comunitaria com barra; elegibilidade especifica de idosos e direitos comerciais nao demonstrados.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "nao_demonstrado",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N19",
+      "title": "Percursos de academia",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n19-academia-percursos/resumo-complemento.json",
+      "finding": "Dois 404 locais preservados; zero corpo local de programa obtido nesta rodada e nenhuma cobertura geriatrica demonstrada.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "nao_demonstrado",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "niche": "N20",
+      "title": "Instrucao de academia",
+      "generalStatus": "parcial",
+      "evidence": "2026-10-03/n20-instrucao-academia/resumo-complemento.json",
+      "finding": "75 metadados wger; candidatos lexicais, sem equivalencia de variante/gesto nem midia homologada.",
+      "contexts": [
+        {
+          "id": "idoso_casa",
+          "status": "nao_demonstrado",
+          "gap": "Programa e instrucao domiciliares por elegibilidade, apoios, kit e supervisao ainda nao homologados."
+        },
+        {
+          "id": "idoso_academia_praca",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico por aparelho de praca e publico idoso demonstrado nas Ns anteriores."
+        },
+        {
+          "id": "idoso_academia",
+          "status": "nao_demonstrado",
+          "gap": "N18-N20 nao demonstram programa/instrucao de academia especificamente aplicavel a idosos."
+        },
+        {
+          "id": "cuidador_casa_proprio",
+          "status": "nao_demonstrado",
+          "gap": "Nenhum programa especifico de treino proprio do cuidador em casa demonstrado; acompanhamento de terceiros nao preenche este recorte."
+        }
+      ],
+      "releaseApproved": false
+    }
+  ],
+  "supplements": [
+    {
+      "id": "N14-C",
+      "status": "concluido_para_pesquisa",
+      "evidence": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "finding": "Requisitos de registos acompanhados; treino proprio do cuidador apenas mencionado, nao pesquisado.",
+      "caregiverOwnHomeProgrammeDemonstrated": false
+    },
+    {
+      "id": "N15-I",
+      "status": "parcial",
+      "evidence": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "finding": "Evidencia domestica parcial; nao transferir para aparelhos de praca, academia ou cuidador.",
+      "caregiverOwnHomeProgrammeDemonstrated": false
+    },
+    {
+      "id": "N16-I",
+      "status": "parcial",
+      "evidence": "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "finding": "Kit/apoios Otago e PR11; nao transferir supervisao ou apoio fisico ao cuidador.",
+      "caregiverOwnHomeProgrammeDemonstrated": false
+    },
+    {
+      "id": "N17-I",
+      "status": "parcial",
+      "evidence": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "finding": "Criterios editoriais/acessibilidade reutilizaveis; sem demonstracao de gestos, playback ou testes reais.",
+      "caregiverOwnHomeProgrammeDemonstrated": false
+    },
+    {
+      "id": "N11-I",
+      "status": "parcial",
+      "evidence": "2026-10-03/n11i-alimentacao/pesquisa-complemento.json",
+      "finding": "Educacao alimentar sobre envelhecimento; nao demonstracao de treino em qualquer ambiente.",
+      "caregiverOwnHomeProgrammeDemonstrated": false
+    }
+  ],
+  "nextNiches": [
+    {
+      "niche": "N21",
+      "title": "Praca/parque/calisthenics",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Separar aparelhos de academia de praca, barras/calisthenics e outras atividades; documentar aparelho, apoios, ajustes, publico e programa humano completo. Nenhuma equivalencia automatica ao treino de casa/academia.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N22",
+      "title": "Caminhada",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Separar percurso exterior/parque de espaco domestico; acesso, pausas, fonte e progressao para publico declarado. Disponibilidade do cuidador para caminhar fora nao e presumida.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N23",
+      "title": "Corrida/retorno",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Elegibilidade e experiencia por modalidade, nao idade isolada. PR06 continua condicional; nao converter caminhada em corrida nem selecionar C25K automaticamente para idosos/cuidadores.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N24",
+      "title": "Ciclismo",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Distinguir bicicleta exterior e estacionaria em casa/academia; acesso, equipamento, fonte e progressao. Estacionaria de praca nao equivale automaticamente a qualquer bicicleta.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N25",
+      "title": "Natacao",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Piscina, acesso, capacidade e supervisao do programa; indicar explicitamente que nao cobre cuidador em casa nem todos os equipamentos de praca.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N26",
+      "title": "Yoga",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Comparar variantes com cadeira/em pe/chao, transicoes, apoios e contexto da fonte em casa/academia/exterior; treino proprio do cuidador nao e exercicio assistido da outra pessoa.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N27",
+      "title": "Pilates",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Separar solo/aparelhos e kit real, transicoes e supervisao por fonte; nao prometer preparo fisico para levantar a pessoa assistida.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N28",
+      "title": "Mobilidade/flexibilidade",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Priorizar pesquisa funcional domestica: levantar/sentar, subir degrau, mobilidade e alongamento, sem prescricao universal. Conferir variante/apoios para cada ambiente e pausas pessoais do cuidador.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N29",
+      "title": "Equilibrio gradual",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Apoios fixos, elegibilidade e supervisao efetivamente previstos pela fonte; cuidador nao substitui profissional. Nao prometer prevencao de quedas ou extrapolar casa para aparelhos de praca.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N30",
+      "title": "Circuito/funcional/HIIT",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Dose, intensidade e progressao por fonte/populacao/kit. Pesquisar rotinas compativeis com interrupcoes do cuidador sem encurtar arbitrariamente a dose nem pressupor cuidado simultaneo seguro.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N31",
+      "title": "Outras modalidades",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Escolher um esporte/subnicho de cada vez e declarar publico/ambiente; marcar contextos nao aplicaveis com motivo em vez de afirmar cobertura total.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N32",
+      "title": "Dor/limitacoes/ajuda",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Separar relato da pessoa idosa nos tres ambientes, queixa propria do cuidador e observacao sobre assistido; orientacao localizada, nao diagnostico ou prescricao por filtros.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N33",
+      "title": "Contextos clinicos",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Uma condicao/populacao/fase por subnicho; fonte, ambiente, supervisao e direitos. Nao transferir programa de idosos autonomos para dependentes ou para cuidador com queixa propria.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N34",
+      "title": "Selecao/progressao",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Publico, ambiente, equipamento, experiencia, apoios e elegibilidade independentes. Treino proprio do cuidador separado de acompanhamento; interrupcao nao permite inventar compensacao de dose.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N35",
+      "title": "Metricas/gasto",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Conferir populacao e metodo; MET 19-59 nao se aplica silenciosamente a idosos. Aparelho de praca nao herda carga/gasto de maquina interna; cuidado quotidiano nao vira treino da pessoa assistida.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N36",
+      "title": "GPS/mapa",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Uso exterior/praca/caminhada com precisao e pausas; GPS nao obrigatorio em casa/academia. Localizacao propria do cuidador distinta de vigilancia/partilha sobre a pessoa assistida.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N37",
+      "title": "Android",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Dono do dispositivo, pessoa medida, autor, permissao e origem nos quatro contextos. Relogio do cuidador nao mede o assistido; teste real e duplicados permanecem pendentes.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N38",
+      "title": "Apple",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Mesma separacao de pessoas/contextos, com tipos/permissoes reais Apple; nao presumir equivalencia Android ou metricas de aparelho de praca.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N39",
+      "title": "Alimentos por foto",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Confirmacao de alimento e pessoa da refeicao; foto nao define objetivo nutricional por idade nem atribui automaticamente refeicao ao assistido.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N40",
+      "title": "Quantidade por foto",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Separar servido/consumido/desconhecido e pessoa medida; reconhecer alimento nao mede massa. Confirmacao acessivel sem mistura entre consumo do cuidador e assistido.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N41",
+      "title": "OCR rotulo/visor",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Visor e unidade reais por equipamento; aparelho de praca pode nao ter visor/dados. Nao inventar carga/calorias/repeticoes; erro/confirmacao acessiveis e privacidade.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N42",
+      "title": "Codigo de barras",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Produto e codigo dependem N04; leitura acessivel e atribuicao correta da refeicao/compra. Cuidador escanear nao transfere consumo automaticamente ao assistido.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N43",
+      "title": "Atividade por imagem/video",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Distinguir variante, aparelho de praca, maquina interna e corpo livre; gesto de cuidar nao e dose de treino. Consentimento e pessoas em imagem separados; nome/pose nao aprova tecnica.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N44",
+      "title": "Acompanhamento",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Idoso exercitando-se nos tres ambientes e cuidador treinando para si em casa separados do acompanhamento de terceiro; pausas/ausencias nao sao zero, baixa adesao ou score clinico.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N45",
+      "title": "pt-PT/acessibilidade",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Instrucao e compreensao com idosos diversos nos tres ambientes e cuidadores como praticantes, nao apenas operadores; sem infantilizar ou confundir ajuda digital e fisica.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N46",
+      "title": "Manutencao/custo/oportunidade",
+      "status": "na_fila",
+      "contextsToAssess": [
+        "idoso_casa",
+        "idoso_academia_praca",
+        "idoso_academia",
+        "cuidador_casa_proprio"
+      ],
+      "criterion": "Curadoria/direitos/atualidade/custo separados por publico e ambiente, incluindo treino proprio do cuidador. Potencial de mercado e cobertura sao hipoteses a validar, nao resultados medidos.",
+      "closureRule": "Registrar por contexto: evidencia aplicavel e limites, pendente ou nao aplicavel com motivo; nao exigir mesmo programa para todos.",
+      "releaseApproved": false
+    }
+  ],
+  "next": "N21",
+  "caregiverRolePolicy": "Cuidador treinando para si e pessoa praticante; acompanhar/registar exercicio ou alimentacao do assistido e outro papel, com legitimidade propria. N14-C nao cobre treino proprio.",
+  "sourceTransferPolicy": "Reutilizar somente dados/instrucoes compativeis com variante, publico, equipamento, apoio e supervisao da fonte; nao copiar treino interno para aparelho de praca ou casa.",
+  "remainingResearchPolicy": "Nao iniciar todos os subnichos em paralelo; manter um foco ativo. Esta auditoria nao inicia N21.",
+  "initialSnapshotPreserved": "2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json"
+}

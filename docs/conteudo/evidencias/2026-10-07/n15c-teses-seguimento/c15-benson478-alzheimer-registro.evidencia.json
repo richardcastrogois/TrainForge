@@ -1,0 +1,23 @@
+{
+  "id": "c15-benson478-alzheimer-registro",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT06997523",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:13:45.365320+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario atual: protocolo versus resultados publicados, sem receita respiratoria criada.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06997523",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 15885,
+  "bodyFile": "../raw/c15-benson478-alzheimer-registro.json",
+  "sha256": "c50b0bc62164a3e6c7dbdf5fc335a06868e31d8b7cbd2be1a8baa0000d350b7a"
+}

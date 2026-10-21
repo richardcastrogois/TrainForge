@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-12",
+  "scope": "CG02_ficha_factual_do_metodo_com_ensino_e_apoio",
+  "request": "Continue ate fechar a02",
+  "researchItemClosed": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closureIsOriginalTrialMediaRecoveredOrNewDeliveryApproved": false,
+  "package": "pacote-factual.json",
+  "packageSha256": "b72bce959ccce4047d61ade09c3e8d6e888159e807348e8c44d34f43c7b283d6",
+  "serialQueueSha256": "e0f366fa71bc7cee3231bbaadeaa65cf296683d4e38176a24dc4fe9408f805cb",
+  "catalogueSha256": "3728100b50bd07ba7105a864c1592991be1f20641184c64fcc48bbf94bb70257",
+  "collection": {
+    "newCollectorCallsThisClosureIncrement": 1,
+    "collectorCallsCg02FolderCumulative": 3,
+    "newUsableBodiesThisIncrement": 1,
+    "newPdfPagesExtracted": 2,
+    "newPdfPagesActuallyViewed": [1,2],
+    "newPdfSha256": "0dd2aaa803ea254ecff9a339690ef0796be412fb74875b14efe3c0975fe43827",
+    "newPdfUsedAsPr61ProtocolOrTrialCd": false,
+    "newCaregiverClinicalStudies": 0,
+    "originalCdOrPamphletRecovered": false,
+    "mediaDownloadedOrContactLoginTlsBypass": false,
+    "failedBhiWebPageRetried": false
+  },
+  "documentaryTests": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_*.py",
+    "exitCode": 0,
+    "tests": 293,
+    "seconds": 65.846,
+    "cg02FocusedTests": 7,
+    "clinicalOrAppTests": false,
+    "fixtureCollectorCountsAreNewRealDownloads": false,
+    "warnings": "pypdf warnings in olderJapanese encodings/pointingobjects and intentionally malformedPDF fixtures; not proof perfecttext extraction ornewdownload errors"
+  },
+  "catalogueValidation": {
+    "exitCode": 0,
+    "items": 5,
+    "mappedFields": 90,
+    "readingFiles": 10,
+    "verifiedPrimaryReceipts": 23,
+    "researchClosedItems": 2,
+    "publishedItems": 0,
+    "networkCalls": 0
+  },
+  "activeN15Validation": {
+    "status": "passed_documentary_validation",
+    "exitCode": 0,
+    "verifiedEvidenceBodies": 247,
+    "verifiedDependencies": 136,
+    "nicheStatus": "parcial",
+    "legalOrClinicalValidationPerformed": false,
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json"
+  },
+  "queueValidation": {
+    "exitCode": 0,
+    "nichesChecked": 20,
+    "activeComplement": "N15-C",
+    "n21Allowed": false,
+    "activeEvidenceArtifactSha256": "2acc73e6c9e1362f9b2d29f95932fca908d0035e9e6d1d505082128e7c58a0fd",
+    "queueArtifactSha256": "ebcab276176529bd9771b185d3ad10e381c62af7c074dd3e1e2b77dd9eb7d4f5"
+  },
+  "graphify": {
+    "exitCode": 0,
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "outputsLeftUntouched": true,
+    "researchSemanticallyIndexed": false
+  },
+  "appTrackedDiff": {
+    "exitCode": 0,
+    "outputEmpty": true,
+    "appImplemented": false
+  },
+  "next": "SolicitacaoCG02 concluida no recorte factual;CG03 proximo nao iniciado. N15-C global aberta/N21retida.",
+  "limitationsPreserved": [
+    "CD/folheto originais nao recebidos; nao declarar replica integral dos arquivos",
+    "Compatibilidade de material substituto/entregaAPK ainda nao aprovada",
+    "Metodo/dose/ensino/reforco epublico originais mantidos; efeitos pertencem ao programa doensaio",
+    "Publicacao/inicio requerem material fiel/legal/localizacao revisados eensino/apoio reais",
+    "Fechamento factual nao e revisao clinica/juridica ou promessa deeficaciaAPK"
+  ]
+}

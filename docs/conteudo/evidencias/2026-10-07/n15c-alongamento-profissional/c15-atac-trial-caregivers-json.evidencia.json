@@ -1,0 +1,23 @@
+{
+  "id": "c15-atac-trial-caregivers-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:40:43.576062+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario do ensaio citado no artigo, conferir variante/dose/entrega sem substituir divergencias silenciosamente.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 9574,
+  "bodyFile": "../raw/c15-atac-trial-caregivers-json.json",
+  "sha256": "cf36ae034b81393000c86b950534c83bd8b348ca75deddbc0797380c00b42250"
+}

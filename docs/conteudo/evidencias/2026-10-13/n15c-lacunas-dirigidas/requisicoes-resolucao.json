@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-13",
+  "scope":"Primeira leitura do registro Handle em JSON por API publica documentada em https://www.handle.net/proxy_servlet.html. Somente metadados do identificador10810/68569, sem buscar novamente URL404, contornar acesso ou presumir texto de tese. GET normal/TLS padrao, nenhum parametro auth/cert/admin ou credencial. Nao executar PUT/DELETE nem criar/alterar identificador.",
+  "requests":[
+    {"id":"n15dir-cg04-handle-api-json","url":"https://hdl.handle.net/api/handles/10810/68569","accept":"application/json,text/html,text/plain","extension":"json","purpose":"Resolver URL publicada do registro persistente sem seguir automaticamente ao PDF conhecido404; respostaJSON pode confirmar novo endereco ou apenas destino antigo. Metadados nao comandos de exercicio."}
+  ]
+}

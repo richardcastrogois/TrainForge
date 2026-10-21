@@ -1,0 +1,23 @@
+{
+  "id": "c15-benson-hemodialise-direitos",
+  "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:11:16.985627+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonte editorial primaria para resolver direitos do estudo Benson 2022/versao 2023; nao usar licenca de indice secundario nem assumir direitos do audio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://revistas.udea.edu.co/index.php/iee/article/view/351819",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 83558,
+  "bodyFile": "../raw/c15-benson-hemodialise-direitos.html",
+  "sha256": "5cdbf9281c93b9c3850243a46b3506507e681f457fde814ecb7706a2ceec8272"
+}

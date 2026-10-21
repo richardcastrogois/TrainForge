@@ -1,0 +1,22 @@
+{
+  "id": "i18-react-2023-artigo",
+  "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T11:11:11.175704+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo original posterior ao protocoloREACT2018: fonte do suplementoS1, estrutura52semanas, supervisao e direitos. Nao confundir com REACTcoronario ou manual domestico2020.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1126499,
+  "bodyFile": "../raw/i18-react-2023-artigo.html",
+  "sha256": "a4ab1b654d435c47e3cab5ec2669f0386ad54a55c9f95df524c7a75a77b61b29"
+}

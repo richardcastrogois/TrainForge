@@ -1,0 +1,33 @@
+{
+  "macaulayS1": {
+    "receipt": "n18r-macaulay-s1-docx.evidencia.json",
+    "format": "DOCXzipvalidado",
+    "bytes": 140239,
+    "expandedBytes": 1088893,
+    "readOnly": true,
+    "contentExecuted": false,
+    "qualificationLocator": "Primeira páginaPI; seção1.3 e9.3",
+    "trainingLocator": "7.1 e9.3",
+    "instructionFinding": "Diz ensinar postura/técnica/respiração, não escreve esses comandos por máquina. Smithseatedshoulderpress noS1; seatedshoulderpress noartigo não equivalência formal aprovada.",
+    "derivedFullTextStorage": "../raw/n18r-macaulay-s1-extracted.txt",
+    "fullTextInTrackedReport": false
+  },
+  "bestformS1": {
+    "receipt": "n18r-bestform-s1-zip.evidencia.json",
+    "bytes": 26121,
+    "entries": [
+      {
+        "name": "Falls_CRF.docx",
+        "bytes": 14419
+      },
+      {
+        "name": "Physical Activity CRF.docx",
+        "bytes": 16887
+      }
+    ],
+    "readOnly": true,
+    "containsMachineInstructionManual": false,
+    "clinicalScoresOrMETValuesAdopted": false
+  },
+  "newApprovedAssets": 0
+}

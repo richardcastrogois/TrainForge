@@ -1,0 +1,73 @@
+{
+  "id": "N27-SOLO-03-PRO-01",
+  "date": "2026-10-15",
+  "sourceIds": [
+    "PR192",
+    "PR166"
+  ],
+  "kind": "Três fichas humanas dePilates solo com preparação e retorno explícitos; seleção editorial, não calendário ou curso completo",
+  "authorship": "Becky Scott, Kim Burnett e Tracey Paul, Senior Physiotherapists creditadas emtodasaspáginas. Qualificação publicada, não registro profissional atual verificado.",
+  "scope": "Adulto avaliado/ensinado porfisioterapeuta comformaçãoPilates, capaz de deitar/levantar do chão e realizar essasvariantes. Não prescriçãoautônoma poridade/diagnóstico.",
+  "sourceTeaching": "PDF1 declara cartilha comfisioterapeutaPilates para ensinar e depois praticar emcasa. Apoio real deve ser verificado antesdaoferta, semafirmarcontratado.",
+  "equipment": [
+    "tapete e espaço seguro no chão"
+  ],
+  "preparation": {
+    "locator": "PDF1–2",
+    "methodFacts": "Decúbito dorsal, joelhos fletidos, pés à largura da bacia e braços ao lado. Explorar inclinação pélvica anterior/posterior e localizar a posição intermédia neutra. Expirar e ativar suavemente musculatura abdominal inferior mantendo respiração normal. Conferir alinhamento de tronco, cintura escapular, cabeça/pescoço comoprofissional.",
+    "doseOrHoldSeconds": null,
+    "note": "Não copiar analogias/imagens e não criarhold de10s. Transferência aochão é capacidade/pré-condição avaliada, não ensinada porumrótulo."
+  },
+  "components": [
+    {
+      "id": "heel-slide-1",
+      "name": "Single leg stretch — Level1",
+      "locator": "PDF4",
+      "methodFacts": "Na posição neutra comcentro ativado, inspirar parapreparar; aoexpirar deslizar umcalcanhar para longedasnádegas mantendoapoio nochão. Inspirar paratrazê-lo à posição inicial. Alternarpernas, semarquear/achatarcoluna ou tensionartronco.",
+      "repetitions": 10,
+      "alternating": true,
+      "repsPerLeg": null,
+      "note": "Afonte diz10reps alternando pernas, não10porperna; Level2 ficaexcluído."
+    },
+    {
+      "id": "hip-twist-1",
+      "name": "Hip twist — Level1",
+      "locator": "PDF6",
+      "methodFacts": "Começar emneutro, inspirarparapreparar; aoexpirar abrirlentamente umjoelho paralateral. Inspirar pararecentrá-lo, mantendo pelve/coluna e outraperna estáveis. Alternarpernas.",
+      "repetitions": 10,
+      "alternating": true,
+      "repsPerLeg": null,
+      "note": "Não Level2 comdoisjoelhos e rotação opostadacabeça; mesmosnomes não são mesmasvariantes."
+    },
+    {
+      "id": "bridge-1",
+      "name": "Shoulder bridge — Level1",
+      "locator": "PDF7",
+      "methodFacts": "Aproximar ligeiramente calcanhares, estabelecerneutro/centro e inspirarparapreparar. Expirar para enrolar apelve, elevarnádegas e articular acolunaaté oapoio escapular ou amplitudeconseguida. Inspirar na manutenção; expirar parabaixar acoluna segmentadamentedotopoparabaixo atéretornar aotapete.",
+      "repetitions": 10,
+      "hold": "Uma inspiração na posição, não segundos definidos",
+      "holdSeconds": null,
+      "cautions": "Não apoiar peso empescoço/cabeça nem sobrecarregar posteriores dacoxa. Level2/3 comperna/heelunilateral excluídos."
+    }
+  ],
+  "termination": "O últimociclo termina comdescida segmentada aotapete e retorno àposição inicial. Nãofoi criado umcooldown cronometrado ou plano delevantar do chão; estaé uma seleção deexercícios, não aula cardiorrespiratória50–60min.",
+  "sourceFrequency": "PDF3 recomenda prática diária e iniciarLevel1; esse é o conselho dafonte paraoseuprograma.",
+  "selectedFrequency": null,
+  "progression": null,
+  "durationSeconds": null,
+  "compatibility": "Preparação/variantes1 deumaúnicacartilha, emsupino e semalternância deaparelhos. Ordemsegueaspáginasoriginais comexclusões declaradas; seleção deve serrevisada antesdeoferta. NãoimportaBorg, calendário9sem ou benefíciosHBPE. Nãoatribuir mistura/eficácia nova àsautoras.",
+  "rights": "Dados/métodos emredação independente comautoria/localizadores. Não licençaaberta ou domíniopúblico presumido dePDF/fotografia/textoexpressivo; enquadramentoPR166 e conferênciadeoriginalidade antesdepublicar. Semtradução do manual/ativos selecionados.",
+  "contexts": {
+    "idoso_casa": "Pendente deavaliaçãoindividual, capacidade/transiçãoaochão/apoio. Casa materialmentecompatível não elegibilidadeautomática.",
+    "idoso_academia_praca": "Não é programa deaparelhos depraça; soloeambiente sósecondiçõescompatíveis verificadas.",
+    "idoso_academia": "Pendente decapacidade/ensino e área/kit adequados; nãoreformer.",
+    "cuidador_casa_proprio": "Exercício parasi secondições individuaiscompatíveis, não técnicaparalevantar pessoaassistida; N15pausada."
+  },
+  "beforePublication": [
+    "Revisão profissionaldo recorte, elegibilidade, ensino/apoio e transferência reais",
+    "Expressãooriginal/atribuição/direitos doativo final, pt-PT/acessibilidade/compreensão",
+    "Implementação/testes emetapaprópria"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

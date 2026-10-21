@@ -1,0 +1,16 @@
+{
+  "niche": "N15-I",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n15i-nhs-sentado",
+      "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "extension": "html",
+      "purpose": "Conferir rotina sentada domiciliar e limites; nao presumir indicacao geriatrica universal."
+    }
+  ],
+  "reused": [
+    "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+    "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json"
+  ]
+}

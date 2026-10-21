@@ -1,0 +1,23 @@
+{
+  "id": "c15-crea2026-suplementos-pagina",
+  "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:48:01.472177+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeiro HTML editorial local para URLs publicadas dos quatro suplementos conhecidos noJATS; protocolo nao resultado clinico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 698642,
+  "bodyFile": "../raw/c15-crea2026-suplementos-pagina.html",
+  "sha256": "7dd2be3b456ae722dcdb602d104edca24f397f557f22da599675d66dd9dd99f3"
+}

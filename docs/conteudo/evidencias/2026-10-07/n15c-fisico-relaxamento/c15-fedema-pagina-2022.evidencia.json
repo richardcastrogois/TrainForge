@@ -1,0 +1,23 @@
+{
+  "id": "c15-fedema-pagina-2022",
+  "url": "https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:51:33.805636+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Vincular PDF a edicao2022 publicada e identificar links primarios de direitos, nao publicidade de medicamento ou licenca de outra edicao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 101630,
+  "bodyFile": "../raw/c15-fedema-pagina-2022.html",
+  "sha256": "f6ae79a12eb277e774cbf0adcbeb9d67000c5b158437089e5370c4f85e8f20e3"
+}

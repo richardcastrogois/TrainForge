@@ -1,0 +1,59 @@
+{
+  "niche": "N07-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 4,
+  "verifiedDependencies": 5,
+  "proposedOperations": 7,
+  "fictionalScenarios": 4,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults",
+      "sha256": "b4a433b9d02c3a3f68c540c17a11726e6ccd107a1d8909ab852b78cc17b38e7b"
+    },
+    {
+      "record": "2026-10-04/acessibilidade-rotulos/a06-wai-imagens.evidencia.json",
+      "url": "https://www.w3.org/WAI/tutorials/images/",
+      "sha256": "9978c776e9afb185bc0e40a6bcb7d625e1620e6e31f29efe095d7146a092e715"
+    },
+    {
+      "record": "2026-10-04/acessibilidade-rotulos/a06-wcag22.evidencia.json",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "sha256": "6e3c5fe397257cae509a2fb4752b73062cf8cbeb92c2cec618989b17e4cf7057"
+    },
+    {
+      "record": "2026-09-28/n07-rotulos/n07-eu-nutricao.evidencia.json",
+      "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en",
+      "sha256": "8e7c6f88af0665d302749a6aa44c55886ea596b6ee77f70a6a3dab3144629ea8"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-09-28/n07-rotulos/conteudo-didatico.json",
+      "artifactSha256": "7b1f66b7e473b315d3f0a71a3dae4a9f7ce852ac3163dae4cb78ceee5a4e4126"
+    },
+    {
+      "file": "2026-09-28/n07-rotulos/validacao-rotulos.json",
+      "artifactSha256": "463200911e4b0874c96186fd35358514690201b6d6c74ffade7cd45642c4ec4f"
+    },
+    {
+      "file": "2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "artifactSha256": "761d5cebc14ab0dd65d37ac7e05b0dc7adac0ad605206a2919edd8fc75f27c29"
+    },
+    {
+      "file": "2026-10-04/n06i-imagens/pesquisa-complemento.json",
+      "artifactSha256": "c97f485560c11826537737113b66f338874729ed26aac418273b902698d63765"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    }
+  ],
+  "next": "N08-I; N21 permanece retida pelos demais complementos."
+}

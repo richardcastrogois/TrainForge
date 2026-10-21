@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-yoga-cuidador",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20yoga%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:57:09.359060+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Triagem de alternativa humana com instrucao suplementar integral para cuidador praticando para si em casa. Dez resultados, sem promessa clinica ou programa montado pelo agente.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20yoga%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 56216,
+  "bodyFile": "../raw/i15-busca-yoga-cuidador.json",
+  "sha256": "1f14445cfa38531c8074e671a3a4096e2f3eda6068117896f70dd322ff417ab3"
+}

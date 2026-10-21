@@ -1,0 +1,134 @@
+{
+  "id": "N37-HC-CONTRATO-DOCUMENTAL-01",
+  "date": "2026-10-15",
+  "niche": "N37",
+  "kind": "Pesquisa de contratos técnicos e requisitos; não integração real nem fornecedor de treinos.",
+  "sourceFamily": "PR209",
+  "availability": {
+    "base": "Dispositivo móvelAndroid9/API28+comGooglePlayservices segundoavailability;Android14+integradonosistema,Android13inferiorappPlay. Não equivale aqualqueremulador/relógio/tablet/WearOS.",
+    "workProfile": "Documento informa perfil detrabalho não suportado; nãoforçarpermissões para contornar.",
+    "checksBeforeUse": [
+      "Statusda plataforma emruntime",
+      "Featureflags/SDKextensions de cadarecurso",
+      "Permissões atuais por tipo/operação",
+      "Origeme dadosdisponíveis no período",
+      "Cliente/ponteFluttercompatível escolhido emetapa de implementação"
+    ]
+  },
+  "records": [
+    {
+      "type": "StepsRecord",
+      "shape": "Intervalo,count,startTime,endTime,metadata",
+      "readPermission": "READ_STEPS",
+      "aggregate": "COUNT_TOTAL",
+      "meaning": "Passos dafonte correspondente; aggregatepreferido paraevitar soma deorigenssobrepostas. Não passosdoassistidoporrelógiodocuidador."
+    },
+    {
+      "type": "DistanceRecord",
+      "shape": "Intervalo,distance:Length,startTime,endTime,metadata",
+      "readPermission": "READ_DISTANCE",
+      "aggregate": "DISTANCE_TOTAL",
+      "meaning": "Comprimento informado pelaorigem; nãogaranteGPSreal neminclinaçãocalibrada. Unidade deve ser explícita/normalizada."
+    },
+    {
+      "type": "HeartRateRecord",
+      "shape": "Série,samples,startTime,endTime,metadata",
+      "readPermission": "READ_HEART_RATE",
+      "aggregate": "BPM_AVG/BPM_MIN/BPM_MAX/MEASUREMENTS_COUNT",
+      "meaning": "Amostras cominstante/bpm; nãopreencherlacunas nem usarcomo diagnóstico/liberaçãodetreino."
+    },
+    {
+      "type": "ActiveCaloriesBurnedRecord",
+      "shape": "Intervalo,energy:Energy,startTime,endTime,metadata",
+      "readPermission": "READ_ACTIVE_CALORIES_BURNED",
+      "aggregate": "ACTIVE_CALORIES_TOTAL",
+      "meaning": "Energia ativa estimada, excluiBMR. NãomesmoconceitodocustobrutoMETN35."
+    },
+    {
+      "type": "TotalCaloriesBurnedRecord",
+      "shape": "Intervalo,energy:Energy,startTime,endTime,metadata",
+      "readPermission": "READ_TOTAL_CALORIES_BURNED",
+      "aggregate": "ENERGY_TOTAL",
+      "meaning": "Energia total, nãosomar novamenteàativa/separadarepousoporumaparelhodesconhecido."
+    },
+    {
+      "type": "ExerciseSessionRecord",
+      "shape": "Intervalo,exerciseType,startTime,endTime,metadata; laps/segments e detalhes conformecontrato",
+      "readPermission": "READ_EXERCISE",
+      "aggregate": null,
+      "meaning": "Sessão/atividade registrada, não currículo deexercícios, comandos, autoria deprograma ou prova de execução correta. Métricas associadas sãooutrosregistros, não inferidas da duração."
+    },
+    {
+      "type": "ExerciseRoute",
+      "shape": "Parte deExerciseSessionRecord, não registroindependente; locais/tempo/precisão conformecontrato",
+      "readPermission": "READ_EXERCISE_ROUTE efluxo/permissões adicionais a verificar antesdeuso",
+      "aggregate": null,
+      "meaning": "Rota tempermissões/privacidadepróprias; READ_EXERCISEnão tratado aqui comoliberaçãodetoda rota, nenhumacaptura."
+    }
+  ],
+  "identityAndMetadata": {
+    "independentFields": [
+      "Praticante/pessoa medida",
+      "Dono/portador do dispositivo",
+      "Autor/informante noTrainForge",
+      "DataOrigin/appescritor",
+      "Tipo/modelo/fabricantedodispositivo quandodisponível",
+      "Recordingmethod manual/automático/ativo/desconhecido",
+      "Recordid eclientRecordId/clientRecordVersion quandoexistentes",
+      "Instantes,início/fim,zoneoffset,unidade e intervalo consultado",
+      "Permissões/versão/fonte/método de agregação"
+    ],
+    "sourceVsPerson": "DataOriginidentifica aplicativo/origem e SPN, não paciente ou familiar. Device.type/model/fabricante não prova quem o usava. CamadadeidentidadedoTrainForgeéproposta própria, não campo garantido pelaAPI.",
+    "recordingMethod": "Automático eativamentegravadoexigemtipode dispositivo no contrato atual. Entradamanual/desconhecida não convertida emmedição desensor.",
+    "june2026": "Passosdotelefone passaramdeandroidparaSPN específicododispositivo eescopado porapp;histórico mantémandroid. Nãohardcodepackage, não usarSPNparaidentidade entreapps/pessoas."
+  },
+  "permissions": {
+    "policy": "Declarar epedir apenas leitura/escrita necessárias por tipo; não pedir7permissões por existirumarecordlist. Negação/parcial/revogação nãozero nemconcessãoinferida porpermissão antiga.",
+    "readVsWrite": "Registrar/digitarumtreino nãoautorizaescrever todosostipos. Sem alterações deprivilégios noemulador/usuárionestelote.",
+    "history": "Defaultaté30diasantesdaprimeiraconcessão;permhistoryparaexpandirconforme recurso. Android14+leituradosprópriosdados temexceção. Reinstalação/reconcessão mudamjanela; falta dehistórico nãoperda dedados comprovada.",
+    "background": "Permissãodistinta READ_HEALTH_DATA_IN_BACKGROUND mais disponibilidade; semgrantcompletomantémfunções possíveis."
+  },
+  "deduplication": {
+    "source": "aggregate-data, user-selectedpriorities; read-datarecomendaaggregateparacumulativos.",
+    "rule": "Não somarcrusdepassos deduasfontes sobrepostas. Aggregateconsideraprioridades definidaspelousuário paraActivity/Sleep; nãoprometerdeduplicação univeraldetodotipo. FiltroDataOriginmudao conjuntoincluído.",
+    "otherData": "Paraoutrostipos agregação pode combinar dadosdetodasorigens; nenhumresolvedordeFC/caloriasuniversal escolhido.",
+    "syncProposal": "Preservarorigem/id/versão/estado eperíodoparaplanejarsyncidempotente/atualizações/exclusões. Regras deescrita/mudanças/dedupTrainForgea testar, nãovalidadas pelodesenhodoJSON.",
+    "rawVsAggregate": "Detalhepororigem e total agregado sãoapresentações diferentes. Não somá-los/contar ambosnovamente."
+  },
+  "missingVsZero": "Resultadoausente,null,permissãonegada,origemvazia,janela/limite,erro/cota e0válido distintos. Exemplos SDKcom?:0não serão usadoscomoevidência de queausênciaézero.",
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "candidato_condicional",
+      "reason": "Dados próprios desensor/appcompatível compermissão, preservando ausências. Semobrigatoriedade derelógio/GPS oupassosparasessãosentada; não prova autônoma deaquecimento/dose."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "candidato_condicional",
+      "reason": "Dispositivopróprio podefornecerpassos/FC/percursoautorizado, masnão equipamento/cargadapraça porinferência. Rotas eprecisão seguemN36."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "candidato_condicional",
+      "reason": "Máquina sófornecedado sefonte/conexãoreais;HealthConnectnãotransformaqualquerergômetroemsensor. Sessão/medidas/caloriasorigem separadas."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "candidato_condicional",
+      "reason": "Importar medida da própriapessoa/portadordispositivo. Metadata/DataOriginnão é identidade deoutropaciente. Gestão/partilha doassistidoprecisaoutrofluxodeidentidade/permissão, não reatribuição automática pormenu."
+    }
+  ],
+  "testPlanNotExecuted": [
+    "Negar/revogar/autorizarparcial e confirmar funçãosemimportação/semzero",
+    "Inserir fixtures de2fontescomtempossobrepostos ecompararcru/aggregate/prioridade/filtragem; não dadosreais",
+    "Reimportar/atualizar/excluirmesmoregistroe não duplicar; testar paginaçãotokenvazio/null",
+    "Distinguirativa/total/METbruto e unidade/timestamp/fuso",
+    "VerificarfeatureSDK/SPNantes/depoisjunho2026semhardcode",
+    "Validarfornecimento de sensor/dispositivoreal emetapafutura; fixture/emuladornão medefisiologia"
+  ],
+  "actualChecks": "sondagem-ambiente.json:ADBservidoriniciado,listavazia,nãochamadaAPIHealthConnect.",
+  "runtimeHealthConnectValidated": false,
+  "duplicatesActuallyTested": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

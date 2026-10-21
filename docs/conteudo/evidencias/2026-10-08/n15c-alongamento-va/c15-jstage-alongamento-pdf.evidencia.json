@@ -1,0 +1,24 @@
+{
+  "id": "c15-jstage-alongamento-pdf",
+  "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:09:36.186343+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original8p japones: conferir movimentos/doses/apoio e resultados por sexo, sem prometer efeito universal ou analgesia a partir do resumo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1155854,
+  "bodyFile": "../raw/c15-jstage-alongamento-pdf.pdf",
+  "sha256": "202ab083e66d5b6c17b4b708c47a4735143176d713d56accd6e8ee19e4843310",
+  "bodyFormatMatchesRequest": true
+}

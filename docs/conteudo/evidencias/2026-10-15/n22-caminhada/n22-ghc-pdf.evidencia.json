@@ -1,0 +1,25 @@
+{
+  "id": "n22-ghc-pdf",
+  "url": "https://oer.galileo.usg.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=health-textbooks&type=additional",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:24:37.181745+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "PDF publico indicado pelo repositorio; instrucao/dose e ressalva NC",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://oer.galileo.usg.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=health-textbooks&type=additional",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 6031,
+  "bodyFile": "../raw/n22-ghc-pdf.pdf",
+  "sha256": "46c802aafc03c5b3b7af31312656abd9e8f8d86a45f8be6a32b5df4b5ec37d1c",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

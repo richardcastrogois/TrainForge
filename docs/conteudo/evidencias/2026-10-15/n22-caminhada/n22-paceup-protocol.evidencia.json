@@ -1,0 +1,26 @@
+{
+  "id": "n22-paceup-protocol",
+  "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371%2Fjournal.pmed.1002210.s001&type=supplementary",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:26:40.946864+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo original vinculado S1: calendario factual e seguranca; complemento autorizado publicado",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pmed.1002210/1/pmed.1002210.s001.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 971885,
+  "bodyFile": "../raw/n22-paceup-protocol.pdf",
+  "sha256": "4c00b54bc7e51a8495050d1ac19679b10233aa0249b5d74f1eb4deb7c72cad22",
+  "bodyFormatMatchesRequest": true,
+  "temporarySignedQueryOmitted": true,
+  "queryOmissionReason": "URL temporaria do distribuidor omitida; URL publica estavel, corpo e hash preservados."
+}

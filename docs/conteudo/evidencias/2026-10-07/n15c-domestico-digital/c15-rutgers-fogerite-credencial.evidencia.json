@@ -1,0 +1,23 @@
+{
+  "id": "c15-rutgers-fogerite-credencial",
+  "url": "https://shp.rutgers.edu/blog/2020/12/05/retirements-2020/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:03:16.868152+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Credencial institucional de coautora do guia: PhD/MT/CYT e professora certificada na tradicao Himalayan; nao transforma todos os coautores em fisioterapeutas.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://shp.rutgers.edu/blog/2020/12/05/retirements-2020/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1558253,
+  "bodyFile": "../raw/c15-rutgers-fogerite-credencial.html",
+  "sha256": "27f865b5aa3153609e07f34be82d28f0d0e3cfa925fd448168709cca55e63e90"
+}

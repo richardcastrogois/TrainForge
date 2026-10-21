@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "sources": [
+    {
+      "id": "c15-atac2024-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+      "collectedAtUtc": "2026-10-07T22:31:51.213997+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 167187,
+      "sha256": "8c00c573ab0d11e1ba901a1c02ddeefaa1705338780d6c40e27f1d9109960ce4",
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac2024-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-atac2026-correcao-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML",
+      "collectedAtUtc": "2026-10-07T22:31:53.266495+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 10116,
+      "sha256": "053e07b538ef703496389b9b8f0643321d9e2d148bd95b30c04bbbabb6e0014b",
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac2026-correcao-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-atac-trial-caregivers-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+      "collectedAtUtc": "2026-10-07T22:40:43.576062+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 9574,
+      "sha256": "cf36ae034b81393000c86b950534c83bd8b348ca75deddbc0797380c00b42250",
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-atac-qualificacao-trial-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+      "collectedAtUtc": "2026-10-07T22:40:43.801938+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 15307,
+      "sha256": "8010523b681b9c27a10775d4c16a357da6aa069bbf432003601a67e605a40872",
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-qualificacao-trial-json.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-atac-perfil-institucional-html",
+      "url": "https://abis.gedik.edu.tr/amine-atac",
+      "resolvedUrl": "https://abis.gedik.edu.tr/amine-atac",
+      "collectedAtUtc": "2026-10-07T22:40:44.008149+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 18914,
+      "sha256": "02d70b1997c5081860851aad7f57d42919050682a9cf2bf0949e304ea4cd3527",
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-perfil-institucional-html.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    }
+  ],
+  "newCollectorCalls": 5,
+  "http200Bodies": 5,
+  "usableBodies": 5,
+  "hashedBodies": 5,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "visualInspectionConfirmedByScript": false,
+  "originalProcedure": {
+    "locator": "sec2dot3-ijerph-21-01361",
+    "text": "2.3. Procedures In the PNF stretching application, the hold\u2013relax technique for each muscle was applied to the caregiver as self-stretching with the concept of direct treatment. While the muscle to be stretched was in the standing position for the caregiver (the antagonist muscle for the pattern\u2014the muscle causing limitation), it was first brought to the position where it could extend and at that point, the stretched muscle was contracted to a submaximal level (65% of the intensity determined according to the Stretch Intensity Scale) for 5 s (sec) as a way to initiate isometric contraction. Then, five relax commands were given to the caregiver for the tensed muscle. Then, the stretched muscle was stretched to the point it could reach and the muscle to be stretched was passively stretched for 20 s (one set) [ 23 ]. After a 5 s rest interval [ 21 ], the method was repeated and eight sets (4 min duration) were performed in one muscle [ 23 ]. For the hamstring muscle, the person positioned their lower extremity on a step with their knee straight, i.e., in extension, and leaned as far as they could with their hand on the toe of the foot with their back straight. Then, in this position, the isometric contraction of the hamsting muscle was made for 5 s by pressing the heel against the step. Then, after relaxing the muscle and waiting for 5 s, they extended their hand in the direction of the fingertip and waited for 20 s at the last point where the muscle could extend. In the static stretching application, the classical static stretching application was performed on the hamstring muscle for 30 s each, eight repetitions, 4 min for one leg, and 8 min for both legs in the posture position in PNF stretching."
+  },
+  "correctionBodyParagraphs": [
+    "In the original first publication [ 1 ], the general information language in the second and third paragraphs of the Introduction section was revised and the expressions in the paragraphs were rearranged because of the coincidental similarity with the publication in the newly added Reference [17]. With this correction, the order of some references has been adjusted accordingly. The revised paragraphs and the newly added reference are shown below.",
+    "Adequate hamstring extensibility plays a critical role in enabling functional movement patterns required in everyday life. However, reduced hamstring length is frequently observed in the general population, which may be explained by the muscle\u2019s involvement in sustained postural control and its tendency to remain in a shortened state during prolonged static positions [9,10]. Shortening of the hamstring muscle can alter pelvic alignment by promoting posterior pelvic tilt, which subsequently affects spinal curvatures and pathologies, including a reduction in lumbar lordosis and an increase in thoracic kyphosis. These postural alterations may restrict thoracic mobility, influence diaphragmatic mechanics, and negatively impact respiratory efficiency. Furthermore, hamstring tightness may contribute to dysfunction not only locally but also across anatomically distant segments within the posterior kinetic chain [9,11\u201314]. The posterior kinetic chain comprises multiple muscle groups, including the spinal extensors, gluteus maximus, hamstring muscles, calf musculature such as the gastrocnemius and soleus, as well as intrinsic muscles of the foot [15]. Muscles forming the posterior chain function collectively to maintain upright posture against gravitational forces. Increased tension in any component of this chain, such as the hamstring muscle, may be transmitted to other interconnected structures. This phenomenon is consistent with the biological tensegrity model, which proposes that bodily tissues operate as an integrated system balancing tensile and compressive forces throughout the body [16\u201318]. Increased stiffness and reduced flexibility in the hamstring muscles are frequently accompanied by compensatory tension in proximal regions, particularly within the lumbar and shoulder musculature [14].",
+    "In the literature, there are studies explaining the relationship between hamstring muscles and respiratory parameters with the myofascial theory [9,16]. According to this theory, the human body is composed of fascia, a single tissue that functions as interconnected chains. Tension in one point of the fascia, which shows integrity, can result in tension or restriction in another part of the body [18]. Previous research has explored the association between hamstring muscle characteristics and respiratory parameters within the framework of myofascial continuity. According to this perspective, fascia functions as a unified connective network, allowing mechanical tension generated in one region to influence distant anatomical areas. In this context, alterations in diaphragmatic mobility or tension may contribute to functional limitations observed during the assessment of hamstring flexibility [15\u201317].",
+    "The authors state that the scientific conclusions are unaffected. This correction was approved by the Academic Editor. The original publication has also been updated."
+  ],
+  "permissionStatements": [
+    "\u00a9 2024 by the authors. 2024 https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ).",
+    "\u00a9 2026 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ."
+  ]
+}

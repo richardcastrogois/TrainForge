@@ -1,0 +1,135 @@
+{
+  "scope": "revisao_N01_N20_publicos_ambientes",
+  "date": "2026-10-03",
+  "auditCompleted": true,
+  "nichesReviewed": 20,
+  "supplementsReviewed": 5,
+  "contexts": [
+    "idoso_casa",
+    "idoso_academia_praca",
+    "idoso_academia",
+    "cuidador_casa_proprio"
+  ],
+  "contextAssessments": 80,
+  "coverageCounts": {
+    "base_generica": 56,
+    "parcial_especifica": 2,
+    "nao_demonstrado": 22
+  },
+  "nextNichesWithCriteria": 26,
+  "newCalls": 0,
+  "hashType": "Local JSON artifact snapshots, not freshly verified HTTP bodies",
+  "appImplemented": false,
+  "appTestsRun": false,
+  "userTestsPerformed": false,
+  "clinicalValidationPerformed": false,
+  "releaseApproved": false,
+  "evidenceSnapshots": [
+    {
+      "file": "2026-09-26/n01-alimentos/resumo-identidades.json",
+      "artifactSha256": "0c2655185a92bcd31ef91be8bc7c4e680931b3af43eaeaae923d24d8ed7d787d"
+    },
+    {
+      "file": "2026-09-26/n02-composicao/resumo-composicao.json",
+      "artifactSha256": "cb71c619a787bd373c96d0b00241eaa9809db9c5b0fa3fe1e0a2a21044a14a00"
+    },
+    {
+      "file": "2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "artifactSha256": "7d84b5a1ab411d2773f0359718e7ec271e22d2c22e6333b0b7c6dd648a84a746"
+    },
+    {
+      "file": "2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "artifactSha256": "5a2246892f737dcfd964d473bcac65dd85cba54dc2fe31b1f0e8dcc5d2b549b7"
+    },
+    {
+      "file": "2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "artifactSha256": "14d09903160a3a9b2226cfaa8c03f5d7d6185f3930e755c92942e8aaa66b05ed"
+    },
+    {
+      "file": "2026-09-28/n06-imagens/resumo-imagens.json",
+      "artifactSha256": "00972201839cdeb9c004ba1d067f82f49985ecc725b6d866697a3bfc8d20e76e"
+    },
+    {
+      "file": "2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "artifactSha256": "761d5cebc14ab0dd65d37ac7e05b0dc7adac0ad605206a2919edd8fc75f27c29"
+    },
+    {
+      "file": "2026-09-29/n08-receitas/resumo-receitas.json",
+      "artifactSha256": "a93457804a8331cfaafbcd22568d47aa700dd39ea29bb722b673d376fe3bd190"
+    },
+    {
+      "file": "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "artifactSha256": "7b4209a10b324d4f1c72e882c5c89bfd2e6c8fcc7e91deda60ea7c8d6102733f"
+    },
+    {
+      "file": "2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "artifactSha256": "e4f8e86a3be9967321a772f9a391b46ffd95e7a63639f766ef66d187235ff2ac"
+    },
+    {
+      "file": "2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "artifactSha256": "aa4626a16870a98537e496cb915c1cd570acc97491cdc01b1bc811602126fba3"
+    },
+    {
+      "file": "2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "artifactSha256": "b81f390dc7d33d155de202645c4a293aefd7d677a03a19b6b003d8d392dcfa59"
+    },
+    {
+      "file": "2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "artifactSha256": "529dd4394fb361c2777eab1e3828d8ef97a47a45174619119f35e08ebb42ccda"
+    },
+    {
+      "file": "2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "artifactSha256": "14d00dcccc23a32f8bd9b7e08598473feb92a273009dff5fe78c5e71d52112f7"
+    },
+    {
+      "file": "2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "artifactSha256": "7835e52ee28858a462de15a1b366ba365b05aabde60d4b62643fd23374c59ea1"
+    },
+    {
+      "file": "2026-10-03/n16-casa-material/resumo-programas.json",
+      "artifactSha256": "b067f8226ac9454b478cf5f61da378988bc7513d0f939fcfe09c258007a447cc"
+    },
+    {
+      "file": "2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "artifactSha256": "6c7d76ccf4dc5feb00522fecf859cc52c34eb98ef6306660766b86774f6f8a04"
+    },
+    {
+      "file": "2026-10-03/n18-academia-iniciante/resumo-complemento.json",
+      "artifactSha256": "4a19be35afa14c72ada4e116059ca9bed7e41e66a24c987722a5e71ab3ab7e32"
+    },
+    {
+      "file": "2026-10-03/n19-academia-percursos/resumo-complemento.json",
+      "artifactSha256": "e302c61bfdae8c9d1ed57022b3a879d9ecb4920bb89562efdcd5cf2888865546"
+    },
+    {
+      "file": "2026-10-03/n20-instrucao-academia/resumo-complemento.json",
+      "artifactSha256": "f4e83031cd5b765a1581c94ebd2665475c9cce04f583f84073a7e47844ebc332"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    },
+    {
+      "file": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "artifactSha256": "c30f0e4bcb011c0d22819b7199a2743446be5870216464056979e002dca46a49"
+    },
+    {
+      "file": "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "artifactSha256": "1b444294860185b9dcea31e1f39e23a4fdaa8a384e18065eb76e9ba056cab00f"
+    },
+    {
+      "file": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "artifactSha256": "6a9aafc65d6edfe2a7d1b90549b41b9df97a45d78568b50f4782bcee768102ab"
+    },
+    {
+      "file": "2026-10-03/n11i-alimentacao/pesquisa-complemento.json",
+      "artifactSha256": "290c9b53912f64a82f1caeeabd117e67d87820cbb45b97e1b3d186ba4f7f513b"
+    },
+    {
+      "file": "2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json",
+      "artifactSha256": "fb575cb359791b648a59aa23e0a8120b396c99fced30d98e16381df559760a96"
+    }
+  ],
+  "next": "N21",
+  "matrixArtifactSha256": "bd64331febb0868e19be54dc699b68fc09503baebc4f1ef5458264ff93e8cd83"
+}

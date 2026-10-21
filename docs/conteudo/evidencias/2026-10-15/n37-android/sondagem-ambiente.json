@@ -1,0 +1,19 @@
+{
+  "recordedAtUtc": "2026-10-15T22:28:16.018790+00:00",
+  "kind": "ConsultaCLIreal de inventário, não teste de HealthConnect",
+  "adbPath": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+  "command": "adb devices -l; consultaGet-Processdeemulator/qemu",
+  "observedOutput": "* daemon not running; starting now at tcp:5037\n* daemon started successfully\nList of devices attached\n\n",
+  "combinedCommandExitCode": 1,
+  "interpretation": "ADBexecutoueiniciouservidor; lista vazia. Get-Process comnomesemulator/qemusemprocesso retornado; oexit1doconjunto não éfalha comprovadadoADB. Nenhumserialassumido.",
+  "effects": [
+    "ServidorADBlocal iniciado emtcp5037; ferramentasjáinstaladasreusadas."
+  ],
+  "avdBootedNow": false,
+  "phoneConnected": false,
+  "healthConnectApiCalled": false,
+  "permissionsGrantedNow": false,
+  "toolboxInstalledNow": false,
+  "trainforgeChanged": false,
+  "whyNoApiTest": "Nãoháalvoconectado nemclienteTrainForgeHealthConnect nesta etapa. Teste de integração exige incremento autorizado de implementação/fixture, não instalar simplesmente uma skill. Nenhum dado real desaúde acessado."
+}

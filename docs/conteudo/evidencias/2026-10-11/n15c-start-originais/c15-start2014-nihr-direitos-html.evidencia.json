@@ -1,0 +1,23 @@
+{
+  "id": "c15-start2014-nihr-direitos-html",
+  "url": "https://www.ncbi.nlm.nih.gov/books/NBK262905/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:35:42.431026+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina primaria doAppendix3NIHR: versao e termos exatos de reproducaoNC/governo; nao substituir porCCgenerica da plataforma.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ncbi.nlm.nih.gov/books/NBK262905/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 21294,
+  "bodyFile": "../raw/c15-start2014-nihr-direitos-html.html",
+  "sha256": "86abfc462b773d4e8550b7aa74759820bddb5067107a3adf5e703082c2dbec15"
+}

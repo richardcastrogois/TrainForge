@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-05",
+  "scope": ["N18-I","N19-I","N20-I"],
+  "sourceId": "PR56",
+  "title": "REACT: REtirement in ACTion - Study Protocol",
+  "chiefInvestigator": "Afroditi Stathi",
+  "sponsor": "University of Birmingham",
+  "version": "1.7, 16 May 2018",
+  "trialId": "ISRCTN45627165",
+  "record": "2026-10-05/programas-manuais-02/i18-react-nihr-protocolo.evidencia.json",
+  "inventory": "2026-10-05/programas-manuais-02/inventario-manuais.json",
+  "previousVersionEvidence": "2026-10-05/fechamento-dirigido/leitura-lifeage-react.json",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "relationship": "Protocolo oficial distinto do artigo/suplemento2023; nao tentativa alternativa de receber DOCX bloqueado, nao manual final equivalente presumido.",
+  "readExtent": {"pdfPages":161,"textExtractionPages":161,"sectionsRead":"Capa, entrega/supervisao, Appendix4 pp63-84, pesquisa textual de direitos/versao no documento inteiro","visuallyInspectedPages":[1,63,65,66,70,71,72,73,74,75,76,77,78,79],"visualMethod":"pypdfium2 selecao em mosaico; fotos/diagramas e disposicao, nao validacao clinica ou leitura visual de161paginas","docx2023Received":false},
+  "fieldProvenance": [
+    {"fields":["instructionLocation"],"locator":"PDF p63 / Appendix 4 Sample physical activity sessions","value":"Appendix4, nao Appendix2. Amostra de sessao, nao entrega de manual completo final."},
+    {"fields":["setting","equipment","supervision"],"locator":"PDF pp16,63-65","value":"Profissionais qualificados; cadeira/toalha/tornozeleiras, caminhada e opcao bicicleta quando caminhada contraindicada. Nao regulagem de maquinas de musculacao."},
+    {"fields":["strengthDose","progressionAuthority"],"locator":"PDF pp65-66 / Intensity and progression","value":"Amostra2x10, descanso1min; RPE local Borg6-20 reavaliado com profissional. Progressao semanas1-4 pode ser prolongada pelo instrutor; nao algoritmo automatico por idade."},
+    {"fields":["posture","support","execution"],"locator":"PDF pp66-73 / Sample strength exercises","value":"Instrucao real de variantes funcionais recebida. Nomes repetem Exercise2/3/4/5 e lista contem alternativas; nao contar rotulos como dez estacoes obrigatorias."},
+    {"fields":["flexibilityDose","balanceProgression"],"locator":"PDF pp73-84","value":"Alongamentos com sustentacao20-30s; equilibrio3niveis com apoios e demonstracao ao intervencionista antes de mudar. Nao liberar retirada de apoio automaticamente."}
+  ],
+  "semanticGaps": [
+    {"locator":"PDF p66 / Wide Leg Squat","issue":"Passo manda baixar ate sentado, nota ao intervencionista manda nao sentar completamente; nao corrigir por inferencia."},
+    {"locator":"PDF pp64-73","issue":"Cinco grupos principais, nomes/variantes e rotulos repetidos; nao inferir ordem, selecao ou equivalencia com continuum funcional2023."},
+    {"locator":"PDF p78 / Balance training overview","issue":"Criterio de demonstracao oito em dez ou tres em cinco sem vinculo inequivoco a cada teste; nao converter em limiar universal."}
+  ],
+  "rights": {"explicitCommercialGrantLocated":false,"searchExtent":"Texto extraido161paginas por copyright/Creative Commons/license/licence e paginas selecionadas; sem aviso de licenca aplicavel identificado","imagesPresent":true,"unknownIsNotProhibited":true,"article2023LicenseTransferred":false,"rule":"Deposito oficial/publico e CC BY4 do artigo2023 nao comprovam direitos deste protocolo2018 ou de fotos/desenhos de terceiros."},
+  "criterionImpact": {"I18-G03":false,"I19-G03":false,"I20-G02":false,"I20-G03":false,"why":"Ha instrucao parcial recebida, mas nao para todas variantes/maquinas do percurso selecionado, com divergencias semanticas e direitos operacionais nao demonstrados."},
+  "apkDecision": {"newApprovedInstructionMappings":0,"newApprovedVisualAssets":0,"eligibleForAutomaticSelection":false,"n21Allowed":false},
+  "next": "Usar esta versao somente como evidencia rastreavel. Procurar manual/licenca das variantes do percurso de academia efetivamente selecionado; nao substituir maquinas por cadeira para declarar cobertura, nem repetir desafio PMC."
+}

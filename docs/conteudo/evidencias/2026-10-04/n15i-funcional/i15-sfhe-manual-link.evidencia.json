@@ -1,0 +1,23 @@
+{
+  "id": "i15-sfhe-manual-link",
+  "url": "https://www.mdpi.com/article/10.3390/healthcare12020166/s1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:58:16.074391+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Primeira captura local do suplemento explicitamente ligado pelo artigo; descobrir arquivo sem adivinhar caminho ou contornar barreira.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mdpi.com/article/10.3390/healthcare12020166/s1",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 419,
+  "bodyFile": "../raw/i15-sfhe-manual-link.html",
+  "sha256": "88b2cea734ba57d8e420409d65e73d294680d83cfcdabfc11f963c611a504b75",
+  "error": "HTTP 403"
+}

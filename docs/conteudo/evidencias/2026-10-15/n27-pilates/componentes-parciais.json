@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "sourceId": "PR185",
+  "locator": "PDF4–5 / intervenção eTable1",
+  "publicationLicence": "CC BY4",
+  "selectedForApp": false,
+  "programme": {
+    "weeks": 9,
+    "sessionsPerWeek": 3,
+    "sessionMinutes": [
+      50,
+      60
+    ],
+    "phasesMinutes": {
+      "warm": 10,
+      "main": [
+        30,
+        40
+      ],
+      "cool": 10
+    },
+    "phaseI": "Semanas2–5 após orientação1; CR10 2–3",
+    "phaseII": "Semanas6–9;2orientações+1domiciliar na6a conformefigura; CR10 4–6",
+    "chartsReceived": false,
+    "support": "3sessões ensinadas na1asem e2na6a, relato após cada treino e canal de video-call opcional; preservar avaliação médica da amostra.",
+    "calendarCreated": false
+  },
+  "examples": [
+    {
+      "name": "Wall push-ups",
+      "dose": "8–10reps, PI&PII",
+      "instructionMissing": true
+    },
+    {
+      "name": "Shoulder bridge/spine curls",
+      "dose": "10reps, PI&PII",
+      "instructionMissing": true
+    },
+    {
+      "name": "Mermaid",
+      "dose": "5reps porlado, PI&PII",
+      "instructionMissing": true
+    },
+    {
+      "name": "Half-roll back",
+      "dose": "5–8reps, PI&PII",
+      "instructionMissing": true
+    },
+    {
+      "name": "Single leg stretching",
+      "dose": "5reps porperna, PI&PII",
+      "instructionMissing": true
+    }
+  ],
+  "compatibilityNotEstablished": "Não equiparar nomes com versõesNHS/máquinas/fotos de teste; não preencher comandos/sets/descansos porIA."
+}

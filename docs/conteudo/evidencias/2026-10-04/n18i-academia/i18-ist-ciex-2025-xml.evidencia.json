@@ -1,0 +1,22 @@
+{
+  "id": "i18-ist-ciex-2025-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:59:48.118260+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir Tabela3posturas/apoios/isometria/direitos/contradicoes no depositoOAprimario. Nao repetir paginaeditoraHTTP429 nem contornar bloqueio; nao selecionar maquinas genericas.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 229248,
+  "bodyFile": "../raw/i18-ist-ciex-2025-xml.xml",
+  "sha256": "9f33068f627f9e748e9e9abae80570915cf9f8723bcf195350e0af4bccbf4c5c"
+}

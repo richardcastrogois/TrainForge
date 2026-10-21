@@ -1,0 +1,23 @@
+{
+  "id": "n43-vitpose-config",
+  "url": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/0c30b6534bb621af0162b481176742577264e36e/config.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:55:45.776947+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Config dekeypoints/modelo e dataset_index emrevisãofixada, não exercício ou calorias.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/usyd-community/vitpose-plus-small/0c30b6534bb621af0162b481176742577264e36e/config.json?%2Fusyd-community%2Fvitpose-plus-small%2Fresolve%2F0c30b6534bb621af0162b481176742577264e36e%2Fconfig.json=&etag=%221cea550888dc5c41af97ad98b07ef0d013e2e306%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1846,
+  "bodyFile": "../raw/n43-vitpose-config.json",
+  "sha256": "9a81cb593c0af3c5a7e07bb4ffb4643d6a8163f73b4373d294b4a4997c8abe81"
+}

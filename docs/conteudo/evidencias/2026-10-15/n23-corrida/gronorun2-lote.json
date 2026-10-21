@@ -1,0 +1,1892 @@
+{
+  "date": "2026-10-15",
+  "id": "GRONO2-CON-RUN9-01",
+  "sourceId": "PR150",
+  "doi": "10.1186/1471-2474-11-196",
+  "sourceReceipt": "n23-gronorun2-jats.evidencia.json",
+  "pdfReceipt": "n23-gronorun2-pdf.evidencia.json",
+  "sourceLocator": "Tabela2JATS/PDF8;instrucaoPDF5;licencaPDF2;contribuicoesPDF8",
+  "author": "Steef W. Bredeweg; Sjouke Zijlstra; Ida Buist",
+  "responsibleProfessional": "SteefWBredeweg; medicoesportivo/Medicina confirmado na fonteinstitucional UMCGweb; contribSWBdesenvolveuintervencao noartigo2010",
+  "licence": "CCBY2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "population": "18-65anos saudaveis semcorridaregular12meses e semlesaoMEI/lombar3meses;semcontraindicacaoexerciciovigoroso",
+  "training": "Individual,semtrainercontinuo,rotapropria;triageminicial e instrucoesgeraisescritas/orais do estudo preservadas",
+  "spacing": "Tres vezes por semana, sugeridasSeg/Qua/Sab ouTer/Qui/Dom; ultima semana uma sessao e evento sem duracao prescrita.",
+  "intensity": "Confortavel,consegueconversar semficarsemfolego;naopacefixo/FCuniversal",
+  "recoveryInterpretation": "Table2definecaminhadaENTREosblocosdecorrida; nblocosdecorrida, n-1recuperacoes. Essa leitura fecha todas9somassemanais. Nao aplicar retroativamente as tabelas2007.",
+  "sourceDoesNotPrescribeStretching": "Originalorienta naoalongarantes/durante/depois, conformeobjetivodoestudo; nao converter em proibicaoclinicauniversal.",
+  "preconditioningNotSelected": "Selecionadaapenas corrida9sem comum aosgrupos, caminhoCONsemPRECON4sem; naoimportarsaltos/video daareaindividual. Nao declarar eficacia preventivanos resultados2012.",
+  "event": "4MilhasGroningen; duracao individual nao especificada. Evento nao convertidoemtempofixo/treinoprescrito.",
+  "weeks": [
+    {
+      "week": 1,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 30.0,
+        "walk": 27.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 30.0,
+        "walk": 27.0
+      }
+    },
+    {
+      "week": 2,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 36.0,
+        "walk": 15.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 36.0,
+        "walk": 15.0
+      }
+    },
+    {
+      "week": 3,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 40.0,
+        "walk": 14.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 40.0,
+        "walk": 14.0
+      }
+    },
+    {
+      "week": 4,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 51.0,
+        "walk": 12.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 51.0,
+        "walk": 12.0
+      }
+    },
+    {
+      "week": 5,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 54.0,
+        "walk": 10.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 54.0,
+        "walk": 10.0
+      }
+    },
+    {
+      "week": 6,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 69.0,
+        "walk": 9.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 69.0,
+        "walk": 9.0
+      }
+    },
+    {
+      "week": 7,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 70.0,
+        "walk": 9.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 70.0,
+        "walk": 9.0
+      }
+    },
+    {
+      "week": 8,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 90.0,
+        "walk": 5.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 90.0,
+        "walk": 5.0
+      }
+    },
+    {
+      "week": 9,
+      "sourceTotalsExcludingWarmCool": {
+        "run": 30.0,
+        "walk": 0.0
+      },
+      "calculatedTotalsExcludingWarmCool": {
+        "run": 30.0,
+        "walk": 0.0
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "id": "GRONO2-W01-S1",
+      "week": 1,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "1",
+        "1",
+        "(10)"
+      ],
+      "runSecondsPerBout": 60,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 10,
+      "walkRecoveryCount": 9,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 10.0,
+      "walkRecoveryMinutes": 9.0,
+      "totalMinutesIncludingWarmCool": 29.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W01-S2",
+      "week": 1,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "1",
+        "1",
+        "(10)"
+      ],
+      "runSecondsPerBout": 60,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 10,
+      "walkRecoveryCount": 9,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 10.0,
+      "walkRecoveryMinutes": 9.0,
+      "totalMinutesIncludingWarmCool": 29.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W01-S3",
+      "week": 1,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "1",
+        "1",
+        "(10)"
+      ],
+      "runSecondsPerBout": 60,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 10,
+      "walkRecoveryCount": 9,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 60,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 10.0,
+      "walkRecoveryMinutes": 9.0,
+      "totalMinutesIncludingWarmCool": 29.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W02-S1",
+      "week": 2,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "2",
+        "1",
+        "(6)"
+      ],
+      "runSecondsPerBout": 120,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 6,
+      "walkRecoveryCount": 5,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 12.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 27.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W02-S2",
+      "week": 2,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "2",
+        "1",
+        "(6)"
+      ],
+      "runSecondsPerBout": 120,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 6,
+      "walkRecoveryCount": 5,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 12.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 27.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W02-S3",
+      "week": 2,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "2",
+        "1",
+        "(6)"
+      ],
+      "runSecondsPerBout": 120,
+      "walkRecoverySeconds": 60,
+      "runBoutCount": 6,
+      "walkRecoveryCount": 5,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 60
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 120,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 12.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 27.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W03-S1",
+      "week": 3,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "4",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 240,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 12.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 26.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W03-S2",
+      "week": 3,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "4",
+        "2",
+        "(4)"
+      ],
+      "runSecondsPerBout": 240,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 4,
+      "walkRecoveryCount": 3,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 16.0,
+      "walkRecoveryMinutes": 6.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W03-S3",
+      "week": 3,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "4",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 240,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 240,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 12.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 26.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W04-S1",
+      "week": 4,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "6",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 360,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 18.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W04-S2",
+      "week": 4,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "5",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 300,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 300,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 15.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 29.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W04-S3",
+      "week": 4,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "6",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 360,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 18.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W05-S1",
+      "week": 5,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "6",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 360,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 18.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W05-S2",
+      "week": 5,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "9",
+        "2",
+        "(2)"
+      ],
+      "runSecondsPerBout": 540,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 540,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 540,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 18.0,
+      "walkRecoveryMinutes": 2.0,
+      "totalMinutesIncludingWarmCool": 30.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W05-S3",
+      "week": 5,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "6",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 360,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 360,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 18.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W06-S1",
+      "week": 6,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "8",
+        "2",
+        "(3)"
+      ],
+      "runSecondsPerBout": 480,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 3,
+      "walkRecoveryCount": 2,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 480,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 24.0,
+      "walkRecoveryMinutes": 4.0,
+      "totalMinutesIncludingWarmCool": 38.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W06-S2",
+      "week": 6,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "15",
+        "0",
+        "(1)"
+      ],
+      "runSecondsPerBout": 900,
+      "walkRecoverySeconds": 0,
+      "runBoutCount": 1,
+      "walkRecoveryCount": 0,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 15.0,
+      "walkRecoveryMinutes": 0.0,
+      "totalMinutesIncludingWarmCool": 25.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W06-S3",
+      "week": 6,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "15",
+        "5",
+        "(2)"
+      ],
+      "runSecondsPerBout": 900,
+      "walkRecoverySeconds": 300,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 45.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W07-S1",
+      "week": 7,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "10",
+        "2",
+        "(2)"
+      ],
+      "runSecondsPerBout": 600,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 20.0,
+      "walkRecoveryMinutes": 2.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W07-S2",
+      "week": 7,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "15",
+        "5",
+        "(2)"
+      ],
+      "runSecondsPerBout": 900,
+      "walkRecoverySeconds": 300,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 45.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W07-S3",
+      "week": 7,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "10",
+        "2",
+        "(2)"
+      ],
+      "runSecondsPerBout": 600,
+      "walkRecoverySeconds": 120,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 120
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 600,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 20.0,
+      "walkRecoveryMinutes": 2.0,
+      "totalMinutesIncludingWarmCool": 32.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W08-S1",
+      "week": 8,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "30",
+        "0",
+        "(1)"
+      ],
+      "runSecondsPerBout": 1800,
+      "walkRecoverySeconds": 0,
+      "runBoutCount": 1,
+      "walkRecoveryCount": 0,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1800,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 0.0,
+      "totalMinutesIncludingWarmCool": 40.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W08-S2",
+      "week": 8,
+      "sessionInWeek": 2,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "15",
+        "5",
+        "(2)"
+      ],
+      "runSecondsPerBout": 900,
+      "walkRecoverySeconds": 300,
+      "runBoutCount": 2,
+      "walkRecoveryCount": 1,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "recovery",
+          "activity": "walk",
+          "seconds": 300
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 900,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 5.0,
+      "totalMinutesIncludingWarmCool": 45.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W08-S3",
+      "week": 8,
+      "sessionInWeek": 3,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "30",
+        "0",
+        "(1)"
+      ],
+      "runSecondsPerBout": 1800,
+      "walkRecoverySeconds": 0,
+      "runBoutCount": 1,
+      "walkRecoveryCount": 0,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1800,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 0.0,
+      "totalMinutesIncludingWarmCool": 40.0,
+      "releaseApproved": false
+    },
+    {
+      "id": "GRONO2-W09-S1",
+      "week": 9,
+      "sessionInWeek": 1,
+      "authorCredit": "BredewegSW,ZijlstraS,BuistI.(2010)",
+      "sourceTable": "T2",
+      "sourceId": "PR150",
+      "sourceCells": [
+        "30",
+        "0",
+        "(1)"
+      ],
+      "runSecondsPerBout": 1800,
+      "walkRecoverySeconds": 0,
+      "runBoutCount": 1,
+      "walkRecoveryCount": 0,
+      "blocks": [
+        {
+          "phase": "warm_up",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "brisk"
+        },
+        {
+          "phase": "main",
+          "activity": "run",
+          "seconds": 1800,
+          "intensity": "comfortable_conversational_pace"
+        },
+        {
+          "phase": "cool_down",
+          "activity": "walk",
+          "seconds": 300,
+          "sourceIntensity": "Not specified independently; source says walk briskly for5min aswarmup and5mincooldown. Review final wording; do not importslowpace fromanotherprogram silently."
+        }
+      ],
+      "runMinutes": 30.0,
+      "walkRecoveryMinutes": 0.0,
+      "totalMinutesIncludingWarmCool": 40.0,
+      "releaseApproved": false
+    }
+  ],
+  "sessionCount": 25,
+  "weeklyTotalDiscrepancies": [],
+  "humanLocalisationReviewBeforeRelease": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "creditText": "Baseado na Tabela2 e nas orientacoes de BredewegSW,ZijlstraS,BuistI.TheGRONORUN2study.BMCMusculoskeletalDisorders2010;11:196.https://doi.org/10.1186/1471-2474-11-196.CCBY2.0.Organizacao/rotulospt e calculos de duracao:TrainForge;naoavaliacaoclinica nemreplica doensaio."
+}

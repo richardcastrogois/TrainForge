@@ -1,0 +1,57 @@
+{
+  "niche":"N15-C",
+  "date":"2026-10-11",
+  "researchClosureApproved":false,
+  "releaseApproved":false,
+  "appImplemented":false,
+  "sources":[
+    {
+      "sourceId":"PR116",
+      "name":"Gomes2022/2026 - tecnologia educativa e autocuidado do cuidador de idosos",
+      "identifiers":{"doi":"10.21527/2176-7114.2026.51.16753","registry":"RBR-4fvfn2p","thesisHandle":"ri/36416"},
+      "publicationDate":"2026-10-01",
+      "receipts":["c15-gomes2021-rebec.evidencia.json"],
+      "unavailableReceipts":["c15-gomes2026-artigo-html.evidencia.json","c15-gomes2022-ufba-metadata.evidencia.json"],
+      "localArticleReceived":false,
+      "localThesisReceived":false,
+      "webMetadata":{"url":"https://repositorio.ufba.br/handle/ri/36416","readVia":"web reader of primary UFBA metadata, not local successful GET","publicAbstractOnly":true,"embargoUntil":"2028-05-22","thesisBytesReportedByMetadata":5191036,"reportedBytesAreNotReceivedBytes":true,"thesisHashCalculated":false,"copyRequested":false,"bitstreamOrDerivedTextAccessAttempted":false},
+      "professionalAuthorship":{"author":"Nildete Pereira Gomes","supervisor":"Larissa Chaves Pedreira","clinicalReviewerOrDeveloperNamedByReceivedRegistry":null,"professionalQualificationVerifiedInThisRound":false,"note":"Doutorado em Enfermagem/metadados e afiliacao UFBA nao bastam para comprovar autoria profissional de cada gesto. Nao inferir diploma de todos pela afiliacao ou perfil secundario."},
+      "population":"ReBEC: cuidadores familiares ou nao, >=18anos, >=12meses no cuidado, vinculados a instituicao e com internet. Piloto domiciliar de cuidadores de idosos, nao apenas paciente.",
+      "versions":[
+        {"kind":"planned registry2021","targetTotal":230,"plannedIntervention":115,"plannedControl":115,"weeksOrMonths":"um mes","activity":"manual/video de alongamento, exercicio, massagem e postura adequada no cuidado; realizacao diaria e contato semanal","resultReceived":false,"designConflict":"Intervencao descreve dois grupos; campos de desenho dizem Single-group/1/Single-arm-study. Nao corrigir o registro por inferencia."},
+        {"kind":"public thesis abstract2022","randomised":45,"intervention":22,"control":23,"completed":32,"completedIntervention":12,"completedControl":20,"intervention":"ensino de manual autocuidado + video postural no cuidado, contatos2vezes/semana durante2meses; reavaliacao15dias apos fim","wholeMinutesOrIndividualGestureDoseReceived":null,"publicAbstractOnly":true},
+        {"kind":"indexed journal abstract2026","randomised":45,"intervention":22,"control":23,"intervention":"ensino de manual + postura no cuidado + acompanhamento semanal2meses","localFullTextReceived":false}
+      ],
+      "results":{"publicThesisAbstract":"91.66% das12concluintesGI, cervical/joelho p.030; quadril intensidade p.025. Atribuicao ao pacote educativo, nao cada exercicio.","journalAbstract":"91.6% citado sem denominador no resumo; nao91.6% de22randomizados por inferencia.","completeTablesLocallyVerified":false,"highDifferentialAttritionNotIgnored":true,"isolatedStretchBenefitClaimed":false},
+      "instructionRecords":[],
+      "support":"Nao remover treinamento ou contatos; semanal no resumo2026 versus2/semana na tese2022 versus plano1mes do registro. Preservar edicoes sem escolher dose porIA.",
+      "rights":{"originalArticleGrantLocallyReceived":false,"primaryRepositorySaysAllRightsReservedUnlessOtherwiseIndicated":true,"embargoRespected":true,"factsBlanketProhibited":false,"manualFiguresVideoCommercialApproved":false},
+      "decision":"Condicional como lead clinico brasileiro especifico. Registro recebido nao manual; originais operacionais e autoria porgesto nao demonstrados. Nao descartado por literalidade de casa nem aprovado por resumo; arquivos embargados nao serao contornados."
+    },
+    {
+      "sourceId":"PR117",
+      "name":"Sun2025 - programa multidisciplinar para cuidadores familiares de pacientes musculoesqueleticos",
+      "identifiers":{"doi":"10.1186/s12912-025-03881-5","registry":"ChiCTR2500105602"},
+      "publicationDate":"2025-09-26",
+      "receipts":["c15-sun2025-artigo-html.evidencia.json","c15-sun2025-artigo-pdf.evidencia.json"],
+      "originalPdfPages":13,
+      "population":"Familiares responsaveis por cuidado domiciliar de pessoas comMSK cronico/estavel em comunidade mineiraShandong, idade media43.63; nao todo cuidador profissional. Paciente deve ser capaz deADLsbasicas, nao presumir amostra de dependencia extrema.",
+      "professionalAuthorship":{"teamRoles":["general practitioner","rehabilitation doctor","psychologist","fitness coach","general nurse","social worker","social worker"],"appropriateQualificationsDeclared":true,"individualCredentialDocumentsReceived":false,"exercisePlansAdjustedBy":"rehabilitation doctor","apkMayReplaceTeam":false,"locators":["PDF5/Intervention","PDF6/personalized exercise plans","Table1/PDF5"]},
+      "design":{"screened":107,"excludedBeforeRandomisation":11,"randomised":96,"randomisedIntervention":48,"randomisedControl":48,"analysed":92,"analysedPerGroup":46,"analysisPopulationConflict":"Narrativa Table2 dita baseline46/46, fluxograma baseline47/47 apos1perda cada; distinguir randomizados/concluintes. Taxa3.7%=4/107 usa rastreados, nao4/96randomizados; nao ajustar artigo silenciosamente.","retrospectiveRegistration":"2025-07-07","groupTimeCodingExplained":false,"sameStudyNotTwoFamilies":true},
+      "delivery":{"weeks":8,"weeklyContactMinutes":[90,60,60,90,60,60,90,90],"minutesAreNotDailyExerciseDose":true,"activityNames":["walking","stretching","yoga","light strength training"],"individualGestureStepsReceived":false,"individualGestureDoseReceived":false,"individualGestureEndingReceived":false,"materialProvided":["yoga mats","resistance bands","dumbbells"],"weightsResistanceValuesReceived":false,"dailyExerciseMentioned":true,"individualPlan":"Medico revisa frequencia/intensidade segundo condicao/feedback, para prevenir fadiga/lesao; nao algoritmo numerico publicado.","socialDigitalComponents":"Plataforma monitoramento/feedback/incentivos, WeChat, grupos com assistentes sociais/psicologo.","postInterventionSupport":"lembretesmensais, contatos trimestrais opcionais e grupo moderado; nao novo seguimento clinico medido."},
+      "results":{"locators":["Table3/PDF9","Table4/PDF10"],"endPointBetweenGroups":[
+        {"outcome":"ZBI","difference":-4.33,"p":0.032,"d":0.45},
+        {"outcome":"PCS","difference":2.03,"p":0.019,"d":0.50},
+        {"outcome":"MCS","difference":3.73,"p":"<0.001","d":1.01},
+        {"outcome":"CarerQoL7D","difference":13.42,"p":"<0.001","d":0.72}
+      ],"withinGroupPValuesNotBetweenGroupEvidence":true,"interactionCoefficientsAsPrinted":{"ZBI":5.087,"PCS":-2.232,"MCS":-3.550,"CarerQoL7D":-13.235},"signsNotReinterpretedWithoutReferenceCoding":true,"baselineTableVsNarrativePConflict":{"PCS":[0.794,0.913],"MCS":[0.684,0.897]},"baselinePcsSdInterventionAsPrinted":13.674,"abstractTreatmentComparisonPIsActuallyWithinGroupForPcs":true,"effectSizesCalculatedFromRawDataByAgent":false,"isolatedExerciseEfficacyClaimed":false,"longTermBenefitMeasured":false,"directFatigueScaleReceived":false},
+      "safety":{"dedicatedMedicalTeamAssessedInjuryOrDistress":true,"noAdverseEventsReported":true,"noEventsIsNotZeroRisk":true,"exactAutonomousStopReturnAlgorithmReceived":false,"materialTimePreparationAndLiveSupportNotRemoved":true},
+      "instructionRecords":[],
+      "rights":{"pdfPage":1,"license":"CC BY-NC-ND4.0","commercialTranslationOrCopyApproved":false,"factsBlanketProhibited":false,"separateExerciseMediaGrantReceived":false},
+      "decision":"Referencia clinica/operacional, nao pacote liberado: intervencao adequada ao cuidador com ajuste real de fadiga/condicao, mas apenas nomes de atividades e contatos60/90min; passos/dose/fim individuais ausentes e inconsistencias estatisticas/fluxo preservadas. Nao converter ajuste medico em geracao de treino porIA."
+    }
+  ],
+  "visualInspection":{"sunPagesActuallyViewed":[1,5,8,9,10],"wholeSunPdfVisuallyReviewed":false,"embargoedThesisViewed":false},
+  "recoveryForApk":{"chain":"PR116/PR117 -> DOI/edicao/registro -> recibo -> corpo quando recebido/bytes/SHA256 -> localizador/achado ou lacuna -> selecao factual/ativos/revisao profissional -> futuro pacote aprovado","missingBodyHasNoInventedHash":true,"importedAssets":[],"researchIsNotPublicationApproval":true},
+  "next":"SomenteN15-C. Nao retry deSSL/bypass deembargo/contato. Buscar original operacional de outra rota propria do cuidador; instrucoes nao completar porIA. Nenhuma outra N/N21."
+}

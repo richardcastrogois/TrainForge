@@ -1,0 +1,23 @@
+{
+  "id": "n35-compendium-calculator",
+  "url": "https://pacompendium.com/wp-content/uploads/2024/04/2024-compendium-calculators_examples-1.xlsx",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:17:55.204578+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Arquivo Excel oficialmente linkado emCompendiumCalculatorwithExamples, abrangido pelo uso gratuito doscompêndios e pesquisa. Conferir apenas fórmulas/exemplos dosautores, sem alterar workbook ou executar macros/links. Leitorweb declarou formato não suportado, não proibição deacesso. Coletor não aceita overrideXLSX; tentativa02parou emassert antes deGET. UsarAcceptpadrão e verificar conteúdoZIP/XLSX da resposta, sem alterar coletor.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pacompendium.com/wp-content/uploads/2024/04/2024-compendium-calculators_examples-1.xlsx",
+  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml",
+  "retryAfter": null,
+  "bytes": 26107,
+  "bodyFile": "../raw/n35-compendium-calculator.xlsx",
+  "sha256": "a9a0581eddb8763384aa1dbe70cab4cc977fbabff5c914df2f65d2f14499cf86"
+}

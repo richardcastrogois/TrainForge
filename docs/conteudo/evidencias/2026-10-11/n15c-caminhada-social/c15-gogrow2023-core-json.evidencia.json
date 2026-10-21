@@ -1,0 +1,23 @@
+{
+  "id": "c15-gogrow2023-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36916022%20AND%20SRC:MED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T21:55:40.964445+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados/resumo original2023, corpoXML500vazio nao recebido. PilotRCT76/6semanas social vsnaosocial nao comparadorsemexercicio ou efeito porgesto.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36916022%20AND%20SRC:MED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 7276,
+  "bodyFile": "../raw/c15-gogrow2023-core-json.json",
+  "sha256": "1a2b1979d87c7ba309248a5b0b6db5d9f941f8465dba89824bd273f6b6019500"
+}

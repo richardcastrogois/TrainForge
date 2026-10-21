@@ -1,0 +1,22 @@
+{
+  "id": "i18-tese-rodrigues-pdf",
+  "url": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/f61bcad8-cc1c-4f04-9e64-1f307d23a63e/content",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:50:01.668913+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receber tese de Isabel Rodrigues (metadados 1717424 bytes) para localizar manual da intervencao original e direitos distintos dos artigos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/f61bcad8-cc1c-4f04-9e64-1f307d23a63e/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1717424,
+  "bodyFile": "../raw/i18-tese-rodrigues-pdf.pdf",
+  "sha256": "020913d66f3d7e987d6a2e0bf74808310cc8658df7787614c7e9ee61ec4e4934"
+}

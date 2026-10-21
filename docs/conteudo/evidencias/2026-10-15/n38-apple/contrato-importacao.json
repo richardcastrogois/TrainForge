@@ -1,0 +1,83 @@
+{
+  "id": "N38-HK-CONTRATO-DOCUMENTAL-01",
+  "date": "2026-10-15",
+  "niche": "N38",
+  "kind": "Pesquisa de contratos Apple/HealthKit, semimplementação/teste Apple.",
+  "sourceFamily": "PR210",
+  "fieldsToAssess": [
+    {
+      "concept": "passos",
+      "appleIdentifier": "HKQuantityTypeIdentifier.stepCount",
+      "limit": "Amostra de quantidade própria, não StepsRecordAndroid; unidade/intervalo/fonte preservedos."
+    },
+    {
+      "concept": "distância",
+      "appleIdentifier": "distanceWalkingRunning / distanceCycling / distanceSwimming",
+      "limit": "Tipos específicos por atividade; não herdar watts/carga oudistância deaparelho exterior."
+    },
+    {
+      "concept": "FC",
+      "appleIdentifier": "heartRate",
+      "limit": "Amostras dequantidadecomtempos/unidades; não sérieAndroidigual ou diagnóstico clínico."
+    },
+    {
+      "concept": "energia",
+      "appleIdentifier": "activeEnergyBurned / basalEnergyBurned",
+      "limit": "Ativaerepouso separados; não igualar aMETbruto ougerartotal porsoma semcoerência/intervalo."
+    },
+    {
+      "concept": "sessão",
+      "appleIdentifier": "HKWorkout",
+      "limit": "Atividade/desempenho registrado e amostras associadas; não rotina humana/instruções ou todas as métricas garantidas."
+    },
+    {
+      "concept": "rota",
+      "appleIdentifier": "HKWorkoutRoute",
+      "limit": "Acesso/associação/finalidade a verificar separadamente; não GPSobrigatório oulocalização doassistido."
+    }
+  ],
+  "identity": "Separarportador/praticante/informante,UUIDdoregistro,sourceRevision(app/versão),devicequandopresente,manualidade/metadata,tempo/unidade/permissão. UUIDnãoéidentidadedepessoa; origeminformaquemgravou, nãoquemvestiasensor.",
+  "authorization": "Granularporleitura/escrita e tipo. Sucessodepedido,nomeemSources ouauthorizationStatusdeescrita não confirmamleitura. Nãoperguntarseconsentiucomofornecessárioaespeculardadosnegados; manter resultadosindisponíveis eopções manuais.",
+  "availability": "isHealthDataAvailableéchecagemreal;frameworkoucapabilitynãoasseguramdados. iPhone/Watch/tipos/SO eponteFlutter terãode serconferidos. SemequivalênciaHealthConnect.",
+  "dedup": "PrioridadesnoHealth, consultaestatística, samplescrus e syncid/versãotêmfunçõesdistintas. Não somar múltiplasorigens cegamente oucontarraw+agregado. Testesdeimportação/atualização/exclusões/duplicados pendentes.",
+  "timeAndMissing": "Instantes,início/fim e unidade reais; fusoquandodisponível. Dadosausentes/restritos/negados podem serindistinguíveis noHealthKitporprivacidade. Não alegarqueoappdeteta cadaausênciacomo fazoutraplataforma. Zero só quandodado ocontextoválidos.",
+  "platformDifferences": [
+    "HealthConnect/DataOrigin/clientRecordIdnão sãoHKSourceRevision/UUID/SyncIdentifier",
+    "HealthKitnãorevelanegaçãodeleituraporstatusdeescrita; não mapeargrantAndroiddiretamente",
+    "Tipos/dimensões, energiae métricasd eworkoutnãosãogarantidos iguais",
+    "Novaautorização temporal detectadaemíndicesrequerconferência deSDK/availability antesdeAPIselecionada"
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "candidato_condicional",
+      "reason": "Importação própriaopcional epermissaopordado; semWatch/GPSobrigatório. Dadoausente não significa0/idosoinativo ou falhadetreino sentado."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "candidato_condicional",
+      "reason": "iPhone/Watchpodem fornecer medidas quando disponíveis/autorizadas; aparelho de praça não ganhacarga/quilometragempor nomedomovimento. Rotas/navegação/precisãoseguemlimitesN36."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "candidato_condicional",
+      "reason": "Sensor/modelo/conexãoreais, não pareamentouniversal. Dado deappqueescreveu e dispositivo/portadorsãodistintos. Máquina interna não GPS."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "candidato_condicional",
+      "reason": "Relógio/telefonedocuidadormedemseuportador. Importarprópriosregistros,nãoreatribuirsaúdeaoassistido porpapeldecuidador. Representação/partilha exigemtratamento próprio, não capabilitygenérica."
+    }
+  ],
+  "beforeUse": [
+    "AmbienteApple/SDKalvo eponte/capability comdisponibilidade/assinaturasevalidadas emetapa autorizada",
+    "Permissõespor tipo ecompr e ensão,semtesteclínicopresumido",
+    "Amostrassintéticas de2fontes, syncid/versão,UUID/atualização/exclusão ecomparação dequerycrua/estatística",
+    "Energiaativa/repouso/unidades/fuso/semregistro/leituranegada eparcial",
+    "Privacidade/identidade/partilha e teste dedispositivoreal;simuladornãoprova sensorfisiológico"
+  ],
+  "runtimeHealthKitValidated": false,
+  "duplicatesActuallyTested": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

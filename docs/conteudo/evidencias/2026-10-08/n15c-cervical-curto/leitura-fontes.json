@@ -1,0 +1,63 @@
+{
+  "date":"2026-10-08",
+  "niche":"N15-C",
+  "status":"parcial",
+  "researchClosureApproved":false,
+  "releaseApproved":false,
+  "appImplemented":false,
+  "sources":[
+    {
+      "sourceId":"PR109",
+      "title":"Workplace-Based Physiotherapy of Elderly Care Workers With Nonspecific Chronic Neck Pain: A Randomized Controlled Trial",
+      "authors":["Maria de Los Angeles Cardero Duran","Luis Espejo Antunez","Carlos Fernandez Morales","Manuel Albornoz Cabello","Juan Rodriguez Mansilla"],
+      "doi":"10.1097/JOM.0000000000003566",
+      "pubmedId":"41042388",
+      "registryId":"NCT06346249",
+      "publication":{"online":"2025-10-03","issue":"2026-02-01","volume":"68","issueNumber":"2","pages":"e172-e181"},
+      "webPrimaryAbstractUrl":"https://pubmed.ncbi.nlm.nih.gov/41042388/",
+      "webPrimaryAbstractRead":true,
+      "localAbstractBodyReceived":false,
+      "localPubmedReceipt":"c15-cervical2026-pubmed-html.evidencia.json",
+      "localPubmedIsOriginalArticle":false,
+      "fullArticleLocallyReceived":false,
+      "registryReceipt":"c15-cervical2026-registro-json.evidencia.json",
+      "registrySha256":"1d3a4cd7bddf948060b497def9e04ce0f57c0b9efcf412f38ea704fa1ab54e13",
+      "supplementReceipt":"c15-cervical2026-suplemento-pdf.evidencia.json",
+      "supplementSha256":"9a8d2839a14b8f16d7bbe6dc474e950578f559d6a6d41f0fd1f0c7884814a419",
+      "supplement":{"received":true,"actualFormat":"DOCX","requestedFormat":"PDF","receiptErrorPreserved":true,"offlineRecoveryWithoutSecondGet":true,"byteSize":1042170,"members":26,"uncompressedBytes":1249604,"extractBoundBytes":20000000,"macrosOrEmbeddedObjectsExecuted":false,"externalReferencesFetched":false,"imagesVisuallyInspected":false},
+      "population":{"actor":"trabalhador_do_cuidado_em_tratamento_proprio","registryAgeRange":[18,60],"registryEmploymentYearsMinimum":1,"registryCondition":"cervicalgia inespecificaI/IIQuebec","professionCategoriesAreAllDirectCaregiversConfirmed":false,"informalCaregiverHomeGeneralisationEstablished":false},
+      "registry":{"overallStatus":"COMPLETED","enrollment":50,"hasResults":false,"lastUpdatePosted":"2025-05-01","masking":"PARTICIPANT conforme registro; nao presumir mesmo mascaramento no artigo","fullExerciseManualAttached":false,"onlyLargeDoc":"ICF_000.pdf:consentimento, nao protocolo de movimentos"},
+      "clinicalEvidence":{"design":"ensaio randomizado paralelo segundo registro/resumo primario","armsInitialReported":[25,25],"programmeWeeks":5,"followupWeeks":4,"abstractClaim":"Resumo relata resultados favoraveis do pacote e efeitosgrandes aposseguimento; artigo integral/tabelas nao recebidos, nao reanalisar ou afirmar eficacia de cada gesto.","primaryAbstractTypo":"controle rotuladoIG tambem; nao corrigir corpo original","evidenceForIsolatedSelfStretching":false},
+      "delivery":{"sessions":10,"sessionsPerWeek":2,"tensMinutesPerSession":30,"professionalManualTherapyRequired":true,"sameDeviceAndSettingsRequired":true,"educationPnePresentInSupplement":true,"registryTherapeuticExercise":"controle do movimento cervical e alongamento,10sessoes; sem gestos/repeticoes/dose especifica","physiotherapistMentionedExplicitlyInSupplement":true,"homeVenueLiteralRequirement":false,"apkGuidanceReplacesPhysiotherapist":false},
+      "supplementLocators":[
+        {"locator":"word/document.xml: S1 Appendix","field":"eletroterapia","summary":"Eletrodos e dispositivoP82 porfisioterapeuta;30min/80Hz/150microsec. Nao exercicio para executar por conta ou prescricao deTENS noAPK."},
+        {"locator":"word/document.xml: S2 Appendix","field":"terapia_manual","summary":"Tecnicas aplicadas porprofissional, compressao de pontos e alongamentos posisometricos. Nao transformar compressao aplicada em automassagem."},
+        {"locator":"word/document.xml: S2, texto versus captions","field":"conflito_locador","summary":"Sequencia textualA-G diverge das legendasA-H/F deslize versus F alongamento/G trapezio/H SCM. Seminspecao deimagens nao resolver porIA."},
+        {"locator":"word/document.xml: S3 Appendix","field":"educacaoPNE","summary":"Topicos/etapas semana1-3 e material educativo externo; nao roteiro completo do exercicio. Enumeracao1/2/3/5 preservada."}
+      ],
+      "rights":{"articleCopyright":"Copyright2025AmericanCollegeofOccupationalandEnvironmentalMedicine segundoPubMed primario","supplementCommercialGrantVerified":false,"publicDownloadAutomaticallyLicensesAsset":false,"factsAndCitationsBanned":false,"thirdPartyImagesApproved":false},
+      "selection":{"status":"referencia","reason":"Estudo especifico e relevante, mas pacote clinico multimodal, guia do exercicio proprio semdose e ativos nao licenciados; nao isolar beneficio nem excluir somente porlocal/trabalho.","researchClosureApproved":false,"n21Started":false}
+    },
+    {
+      "title":"Kamioka2011: oito alongamentos de cuidadoras em instituicoes",
+      "doi":"10.1007/s12199-010-0170-1",
+      "primaryWebUrl":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3047664/",
+      "webOriginalRead":true,
+      "localXmlReceipt":"c15-kamioka2011-xml.evidencia.json",
+      "xmlReceived":false,
+      "error":"HTTP500vazio; hash de corpo vazio nao artigo",
+      "population":"88mulheres cuidadoras em4instituicoes, alocacao porinstituicao",
+      "analysedGroups":[38,21],
+      "dropouts":29,
+      "dose":"aproximadamente6min diarios/30s por8elementos; ensino30minortopedista+60mintreinadores;12semanas",
+      "clinicalResult":"Nenhuma diferenca significativa entre grupos nosdesfechos; subgrupo adesao tendenciaP.068 nao eficacia comprovada.",
+      "adherenceSourceConflict":"2.3+-1.3noresumo versus2.7+-1.3resultados; nao normalizar",
+      "leafletAndDvdReceived":false,
+      "classification":"triagem_negativa_nao_programa_eficaz",
+      "commercialRightsVerified":false,
+      "researchClosureApproved":false
+    }
+  ],
+  "apkRecovery":{"sourceId":"PR109","chain":"sourceId -> versao -> locator -> receipt -> bodyFile -> SHA256","actualDocxMustBeReadAsDocx":true,"receiptAndPdfExtensionDoNotMakeItPdf":true,"noFullTextRedistribution":true,"noNewExerciseOrDoseCreated":true,"programmeImportApproved":false},
+  "next":"SomenteN15-C: continuar nas pendencias de roteiro/apoio/ativos dos candidatos viaveis; nao usar tratamento manual/TENS como exercicio proprio isolado. Novos negativos registrados, nao parar por coleta/testes."
+}

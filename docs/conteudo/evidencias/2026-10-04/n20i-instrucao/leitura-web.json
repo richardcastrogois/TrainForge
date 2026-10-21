@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-04", "method": "primary_source_screening", "newLocalHttpCalls": 0,
+  "sources": [
+    {"url":"https://isp.technogym.com/isp/resources/WW_Leg%20Press-M851_Exploded-drawing-30.pdf", "method":"primary_source_search_index", "finding":"Desenho de pecas/assento M851; nao instrucao de movimento, programa para idosos ou direito comercial gratuito.", "selected":false, "sourceSha256":null},
+    {"url":"https://www.bodytone.eu/wp-content/uploads/2022/09/FB59-ES-Owner_s-manual.pdf", "method":"primary_source_web_reader", "webStatus":404, "finding":"Manual identificado na busca do fabricante, mas URL direta retornou 404; nao obtido, nao repetir nem substituir modelo do ensaio.", "selected":false, "sourceSha256":null}
+  ],
+  "decisions": ["Resultados Manualzz/Manualslib/blogs/Reddit nao usados como prova tecnica ou de licenca.", "Manuais de manutencao/pecas nao viram tutoriais de treino; nenhum modelo da busca e confirmado como o usado no estudo.", "Modelo, ajuste, instrucao, semantica e direitos continuam pesquisa pendente N20-I; nenhuma nova fonte selecionada no catalogo."]
+}

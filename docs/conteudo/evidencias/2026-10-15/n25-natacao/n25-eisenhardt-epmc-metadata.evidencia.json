@@ -1,0 +1,23 @@
+{
+  "id": "n25-eisenhardt-epmc-metadata",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40891015%20AND%20SRC:MED&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:51:46.260014+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primário de indexação por PubMedID explicitado pela universidade; verificar se existe distribuição aberta independente e suplemento, sem repetir403 do editor/repositório",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40891015%20AND%20SRC:MED&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 6642,
+  "bodyFile": "../raw/n25-eisenhardt-epmc-metadata.json",
+  "sha256": "8b8dff349e354ab2a7c6fb0c3d2bcc8a47b7bca1a035fb73b4cfa77776893204"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-remoto2026-protocolo-pdf",
+  "url": "https://cdn.clinicaltrials.gov/large-docs/14/NCT04102514/Prot_SAP_000.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:27:00.391659+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo/SAP27p versao09/05/2022 publicado para NCT04102514: conferir se contem roteiro operacional completo ou apenas nomes, doses de contatos/aulas, preparo/cansaco, eventos e autoria/ativos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/14/NCT04102514/Prot_SAP_000.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 287354,
+  "bodyFile": "../raw/c15-remoto2026-protocolo-pdf.pdf",
+  "sha256": "47c9d4ab351d1a426fa387f2a0546dcfc86ca113feffb840ca993216d3dec237",
+  "bodyFormatMatchesRequest": true
+}

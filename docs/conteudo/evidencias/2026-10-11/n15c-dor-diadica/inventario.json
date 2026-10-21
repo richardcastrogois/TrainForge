@@ -1,0 +1,100 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 9,
+  "http200": 9,
+  "hashedBodies": 9,
+  "usableBodies": 9,
+  "pdfPages": 29,
+  "receipts": [
+    {
+      "id": "c15-dpmp2020-pdf",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2020-pdf.evidencia.json",
+      "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/88101/1/Li_Dyadic_Pain_Management.pdf",
+      "status": 200,
+      "bytes": 1323368,
+      "sha256": "2715ee39e7dcea0ed221decfd6c827e6ae53a23e09db33d8cdb59f3f036233f5",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp2022-protocolo-pdf",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2022-protocolo-pdf.evidencia.json",
+      "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-19-12186/article_deploy/ijerph-19-12186.pdf",
+      "status": 200,
+      "bytes": 274582,
+      "sha256": "359e482cb42b71f411f7255492a1d33c44ac45f9036eaba15ccf9cb5d7af0df1",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp2026-core-json",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41754066%20AND%20SRC%3AMED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 7303,
+      "sha256": "c0e1354adacec54fa8cea06a8e1906b11ca032ab3685bed8af2416943f8400cb",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp2026-xml",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12940603/fullTextXML",
+      "status": 200,
+      "bytes": 150010,
+      "sha256": "7d6173b1921b81133558dba5b9af211ec986381ece4974c15d3b6bc0d929eb4d",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp2026-registro-json",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05056623",
+      "status": 200,
+      "bytes": 12908,
+      "sha256": "55b7968f807027ddb151fe72a749e083c39c4c71d8c8455665fdbbe4560da200",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp-ng-credencial-html",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp-ng-credencial-html.evidencia.json",
+      "url": "https://www.polyu.edu.hk/rs/people/academic-staff/prof-ng-shamay/",
+      "status": 200,
+      "bytes": 104346,
+      "sha256": "e8ca2689e24d36819222bd64d2ddb4510ccce64cc11b55494c3ef7e9fd9d2fdd",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpm2023-antecedente-html",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpm2023-antecedente-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-07-03-183",
+      "status": 200,
+      "bytes": 194321,
+      "sha256": "c33e6d758f799603dc22bd63a36000f0e650afdb41e9574c5a0bab0ce332bb9c",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpmp2020-registro-json",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2020-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04106271",
+      "status": 200,
+      "bytes": 16622,
+      "sha256": "502fd78a67bda1e83dd55a6190064d3cb917b36d35d6cd381a3a1a8be16f3839",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-dpm2024-correcao-html",
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpm2024-correcao-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-08-01-213",
+      "status": 200,
+      "bytes": 119558,
+      "sha256": "a417e1c82f18ae92d2363b8cb0bfbe391ad3ff71bf1ba9aefa445d47953fa120",
+      "usableForReading": true
+    }
+  ],
+  "renderedPages": {},
+  "renderingIsVisualInspection": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "correctionReceived": true,
+  "oldTablesAreNotCurrentResults": true,
+  "releaseApproved": false,
+  "appImplemented": false
+}

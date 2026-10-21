@@ -1,0 +1,28 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n15c-nia-workout",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20-PURL-gpo62941/pdf/GOVPUB-HE20-PURL-gpo62941.pdf",
+      "accept": "application/pdf",
+      "extension": "pdf",
+      "maxBytes": 4194304,
+      "purpose": "Verificar rotina institucional completa, dose, progressao, publico e direitos; amostra nao equivale a ciclo clinico individualizado."
+    },
+    {
+      "id": "n15c-nia-cuidador",
+      "url": "https://igec.uiowa.edu/sites/igec.uiowa.edu/files/2023-01/Caregivers%20And%20Exercise%20Take%20Time%20For%20Yourself%20Handout%20%281%29.pdf",
+      "accept": "application/pdf",
+      "extension": "pdf",
+      "maxBytes": 4194304,
+      "purpose": "Conferir orientacao NIA ao cuidador praticante em deposito institucional; nao presumir rotina especifica ou direitos de imagens."
+    },
+    {
+      "id": "n15c-nih-direitos",
+      "url": "https://www.nih.gov/about-nih/frequently-asked-questions",
+      "extension": "html",
+      "purpose": "Verificar politica original NIH e excecoes para imagens, marcas, endosso e conteudo de terceiros; nao parecer juridico."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "i15-hope-protocolo",
+  "url": "https://link.springer.com/article/10.1186/1745-6215-12-143",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T19:35:37.985418+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo primario HOPE 2011, funcao domestica, autoria, supervisao inicial e limite do apendice; nao resultados.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/1745-6215-12-143?error=cookies_not_supported&code=d3ff6f25-72b5-41fd-bdb5-624bdd512288",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 364927,
+  "bodyFile": "../raw/i15-hope-protocolo.html",
+  "sha256": "9cb60c9c824084d33541a9dc0ef99ae55903fdf53795c70534a3f1415149971b"
+}

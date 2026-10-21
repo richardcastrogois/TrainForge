@@ -1,0 +1,23 @@
+{
+  "id": "c15-jcdr-licenca-html",
+  "url": "https://www.jcdr.net/aboutus.asp",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:33:36.499564+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica editorial CC BY-NC-ND4 declarada; separar fatos/metodos da expressao/roteiros/videos, sem grant comercial presumido.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.jcdr.net/aboutus.asp",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 56000,
+  "bodyFile": "../raw/c15-jcdr-licenca-html.html",
+  "sha256": "c12961b1c5a55e0d560ba1da4514b8ee14ae34e0781105f4a7c3248a6c37e6ee"
+}

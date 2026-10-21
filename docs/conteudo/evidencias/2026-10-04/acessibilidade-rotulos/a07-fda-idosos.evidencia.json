@@ -1,0 +1,22 @@
+{
+  "id": "a07-fda-idosos",
+  "url": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T14:59:55.145242+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Educacao de rotulos dirigida a idosos; separar jurisdicao americana de UE/PT, sem importar metas ou imagens.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fda.gov/food/nutrition-facts-label/using-nutrition-facts-label-older-adults",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 49490,
+  "bodyFile": "../raw/a07-fda-idosos.html",
+  "sha256": "b4a433b9d02c3a3f68c540c17a11726e6ccd107a1d8909ab852b78cc17b38e7b"
+}

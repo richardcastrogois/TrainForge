@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-12","scope":"consolidacao_documental_modular_N15-C",
+  "catalogueAudit":"verificacoes.json",
+  "catalogueValidation":{"exitCode":0,"items":5,"mappedFields":90,"readingFiles":7,"verifiedPrimaryReceipts":19,"exerciseOrTechniqueComponentsIndexed":19,"programmePhasesIndexed":3,"publishedItems":0,"networkCalls":0},
+  "focusedTests":{"command":"python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_catalogo_cuidadores.py -v","exitCode":0,"tests":5,"seconds":0.062,"fullDocumentarySuiteRun":false,"clinicalOrAppTests":false},
+  "activeN15Validation":{"command":"python -X utf8 docs/conteudo/evidencias/validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json","exitCode":0,"verifiedEvidenceBodies":240,"verifiedDependencies":128,"status":"parcial","releaseApproved":false,"appImplemented":false,"legalOrClinicalValidationPerformed":false,"parserWarningsObserved":["pypdf: Advanced encoding /90ms-RKSJ-H e /90ms-RKSJ-V not implemented yet","pypdf: Ignoring wrong pointing object em PDFs anteriores"],"warningDoesNotProveAllPdfTextExtractedCorrectly":true},
+  "queueValidation":{"exitCode":0,"nichesChecked":20,"activeComplement":"N15-C","n21Allowed":false,"allPreviousComplementsResearchClosed":false,"activeEvidenceArtifactSha256":"558520b4520ba0a218ff16ffa6c0bf0688aa89f86216efd41f59f452541adc28","queueArtifactSha256":"7b1eb70ea33262cc328bdbf2daaba8f7132d1da6540cf9fe8ff2c6a2672d473d"},
+  "graphify":{"command":"graphify extract C:/dev/TrainForge/trainforge/lib --update --code-only --no-cluster --out C:/dev/TrainForge/trainforge","exitCode":0,"changed":0,"unchanged":42,"deleted":0,"outputsLeftUntouched":true,"researchSemanticallyIndexed":false},
+  "appTrackedDiff":{"command":"git -c safe.directory=C:/dev/TrainForge/trainforge diff --stat -- lib pubspec.yaml android ios web test","exitCode":0,"outputEmpty":true,"apkImplemented":false},
+  "limits":["Consolidacao nao publica prescricao nem fechaN15-C automaticamente","Sem novos GETs primarios, contato, copia de video, treino sintetico, commit ou push","Checagem de integridade/localizadores nao substitui revisao clinica ou juridica","Ultimos antecedentes de yoga recebidos11/10 permanecem fora da shortlist, sem promocao a exercicios"]
+}

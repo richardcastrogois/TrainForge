@@ -1,0 +1,23 @@
+{
+  "id": "cg01-csp-seguranca-html",
+  "url": "https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T13:49:18.055771+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Associacao profissional CSP: conselho previo/agravamento e materialPhysiotec. Variante sentado diferente; apenas referencia profissional geral, nenhumvideo/CD recebido ou licenciado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 217449,
+  "bodyFile": "../raw/cg01-csp-seguranca-html.html",
+  "sha256": "73e0e023402000eb8ddf3db7d661934a7c05b8dd9f258e457d7a621674390e18"
+}

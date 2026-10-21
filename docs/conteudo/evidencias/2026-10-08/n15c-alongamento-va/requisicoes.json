@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-08",
+  "scope": "Somente N15-C. Primeiras coletas de originais de alongamento dos cuidadores profissionais e VA CARES. Procurar instrucao operacional, nao apenas resultado; manter apoio e distinguir paciente/cuidador. PDFs de pesquisa sem teto autorizado; nenhuma execucao de conteudo, contato ou retry.",
+  "requests": [
+    {"id":"c15-jstage-alongamento-pagina","url":"https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en","extension":"html","purpose":"Origem primaria do ensaio2015, metadados, PDF e direitos; acesso gratis nao licenca comercial."},
+    {"id":"c15-jstage-alongamento-pdf","url":"https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja","accept":"application/pdf","extension":"pdf","purpose":"Original8p japones: conferir movimentos/doses/apoio e resultados por sexo, sem prometer efeito universal ou analgesia a partir do resumo."},
+    {"id":"c15-va-cares-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT02106065","extension":"json","purpose":"Registro primario, resultados, documentos e populacao do cuidador familiar; nao usar resultado secundario do agregador."},
+    {"id":"c15-va-cares-protocolo-pdf","url":"https://cdn.clinicaltrials.gov/large-docs/65/NCT02106065/Prot_SAP_000.pdf","accept":"application/pdf","extension":"pdf","purpose":"Protocolo publicado20p com referencias a Appendix4. Verificar se anexo instrucional esta realmente no corpo; relaxamento para cuidador nao exercicio do paciente."}
+  ]
+}

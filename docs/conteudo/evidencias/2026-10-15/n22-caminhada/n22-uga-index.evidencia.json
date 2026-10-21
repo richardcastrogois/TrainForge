@@ -1,0 +1,24 @@
+{
+  "id": "n22-uga-index",
+  "url": "https://open.online.uga.edu/walking/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:22:28.877329+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Exploracao de colecao didatica universitaria aberta caminhada; licenca CC BY4 e componentes",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://open.online.uga.edu/walking/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/n22-uga-index.html",
+  "sha256": "752cb38551ea31cd2944d5350d7a81dfa5c6f6a55b29a0c2ef158676f1c0acfb",
+  "error": "HTTP 403"
+}

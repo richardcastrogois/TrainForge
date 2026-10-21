@@ -1,0 +1,23 @@
+{
+  "id": "n18r-deanza-authors-book",
+  "url": "https://med.libretexts.org/Courses/De_Anza_College/Fit_Happens%3A_Essential_Principles_of_Fitness_Wellness_and_Health/00%3A_Front_Matter/10%3A_About_the_Authors",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:58:55.955205+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Biografias publicadas no próprio livro: confirmar formação dos coautores, sem repetir diretório403.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://med.libretexts.org/Courses/De_Anza_College/Fit_Happens%3A_Essential_Principles_of_Fitness_Wellness_and_Health/00%3A_Front_Matter/10%3A_About_the_Authors",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 134558,
+  "bodyFile": "../raw/n18r-deanza-authors-book.html",
+  "sha256": "9421c3500c58acfaf708ee8a5875078e53b4769539cf935884ab684f8387b2dd"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-mbi-fragil2025-protocolo-pdf",
+  "url": "https://cdn.clinicaltrials.gov/large-docs/10/NCT04861610/Prot_SAP_000.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:26:45.240577+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo originalpublicoNCT04861610/Appendix2procedimentos, verificar se alem de nomes contem scriptsdoses/passos/fim/apoio/safety. Nao misturarplano comresultado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/10/NCT04861610/Prot_SAP_000.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 502145,
+  "bodyFile": "../raw/c15-mbi-fragil2025-protocolo-pdf.pdf",
+  "sha256": "6fe52a725fd23e79b641d0a0baa589d0c24d85450d8d3f315685c8bfd2b88a4a"
+}

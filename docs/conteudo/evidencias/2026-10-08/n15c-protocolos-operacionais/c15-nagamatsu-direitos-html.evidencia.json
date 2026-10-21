@@ -1,0 +1,23 @@
+{
+  "id": "c15-nagamatsu-direitos-html",
+  "url": "https://www.my-zaidan.or.jp/sitepolicy/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:43:55.139824+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Termos institucionais originais sobre reproducao/adaptacao/comercio dos ativos; leitura de pesquisa com hash, nao parecer juridico ou autorizacao de republicacao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.my-zaidan.or.jp/sitepolicy/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 32734,
+  "bodyFile": "../raw/c15-nagamatsu-direitos-html.html",
+  "sha256": "323de85254e813d0adbddd1fa6d5a22f2e9168e205ad57a845fb189d4a20983b"
+}

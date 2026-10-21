@@ -1,0 +1,23 @@
+{
+  "id": "c15-dpmp-ng-credencial-html",
+  "url": "https://www.polyu.edu.hk/rs/people/academic-staff/prof-ng-shamay/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:49:40.933449+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Credencial institucional primaria registeredphysiotherapist/coautoraNg, nao diploma presumido porafiliacao nem prova de autoria de cada gesto.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.polyu.edu.hk/rs/people/academic-staff/prof-ng-shamay/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 104346,
+  "bodyFile": "../raw/c15-dpmp-ng-credencial-html.html",
+  "sha256": "e8ca2689e24d36819222bd64d2ddb4510ccce64cc11b55494c3ef7e9fd9d2fdd"
+}

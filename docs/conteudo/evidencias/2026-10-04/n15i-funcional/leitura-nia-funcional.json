@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-04",
+  "sourceFamily": "CI05",
+  "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+  "bodySha256": "2a883215b69723d8c5fa96480fe7e076880668961e3676d6d26e622c9550e56f",
+  "readMethod": "Texto de todas as 24 paginas relido via pypdf; inspecao visual previa paginas 5/17/21/22 preservada. Nao declarar toda a instrucao visual conferida neste reaproveitamento.",
+  "title": "Workout to Go",
+  "author": "National Institute on Aging, NIH",
+  "edition": "Reprinted March 2015",
+  "olderAdultContextExplicit": true,
+  "actor": "idoso_praticando_para_si",
+  "homeCompatible": true,
+  "restrictedExclusivelyToHome": false,
+  "specificCaregiverProgramme": false,
+  "blocks": {"strength": 6, "balance": 3, "flexibility": 4, "warmupApproxMinutes": 5, "cooldownApproxMinutes": 5},
+  "movements": [
+    {"id": "I15-NIA01", "name": "Hand Grip", "pdfPage": 8, "repetitions": [10, 15], "holdSeconds": [3, 5], "material": "duas bolas de tenis"},
+    {"id": "I15-NIA02", "name": "Wall Push-Up", "pdfPage": 9, "repetitions": [10, 15], "holdSeconds": 1, "material": "parede"},
+    {"id": "I15-NIA03", "name": "Overhead Arm Raise", "pdfPage": 10, "repetitions": [10, 15], "holdSeconds": 1, "positions": ["sentada", "em_pe"], "material": "dois pesos iguais"},
+    {"id": "I15-NIA04", "name": "Back Leg Raise", "pdfPage": 11, "repetitionsPerLeg": [10, 15], "holdSeconds": 1, "support": "cadeira estavel"},
+    {"id": "I15-NIA05", "name": "Side Leg Raise", "pdfPage": 12, "repetitionsPerLeg": [10, 15], "holdSeconds": 1, "support": "cadeira estavel"},
+    {"id": "I15-NIA06", "name": "Toe Stand", "pdfPage": 13, "repetitions": [10, 15], "holdSeconds": 1, "support": "cadeira estavel", "unilateralProgressionNotAutomatic": true},
+    {"id": "I15-NIA07", "name": "Stand on One Foot", "pdfPage": 14, "repetitionsPerLeg": [10, 15], "holdSeconds": 10, "support": "cadeira estavel"},
+    {"id": "I15-NIA08", "name": "Heel-to-Toe Walk", "pdfPage": 15, "steps": 20, "supportIfUnsteady": "parede"},
+    {"id": "I15-NIA09", "name": "Balance Walk", "pdfPage": 16, "steps": 20, "pauseSeconds": 1, "headTurnProgressionNotAutomatic": true},
+    {"id": "I15-NIA10", "name": "Ankles", "pdfPage": 18, "repetitions": [3, 5], "holdSecondsPerDirection": [10, 30], "position": "sentada"},
+    {"id": "I15-NIA11", "name": "Back", "pdfPage": 19, "repetitionsPerSide": [3, 5], "holdSeconds": [10, 30], "position": "sentada"},
+    {"id": "I15-NIA12", "name": "Thigh", "pdfPage": 20, "repetitionsPerLeg": [3, 5], "holdSeconds": [10, 30], "support": "cadeira estavel"},
+    {"id": "I15-NIA13", "name": "Shoulder and Upper Arm", "pdfPage": 21, "repetitionsPerSide": [3, 5], "holdSeconds": null, "material": "toalha"}
+  ],
+  "functionalPriorities": [
+    {"function": "levantar_sentar", "specificSitToStandMovementPresent": false, "decision": "Uso de cadeira como apoio nao comprova treino de levantar/sentar; nao atribuir sit-to-stand a esse programa."},
+    {"function": "subir_descer", "warmupExamplePresent": true, "dosedStairExercisePresent": false, "decision": "Escadas sao exemplo de aquecimento com quantidade qualitativa, nao exercicio com altura/repeticoes/corrimao completamente definidos."},
+    {"function": "mobilidade_alongamento", "sourcePresent": true, "decision": "Quatro exercicios de flexibilidade; tempo de sustentacao do ombro ausente permanece null."},
+    {"function": "equilibrio", "sourcePresent": true, "decision": "Tres exercicios e desafios qualitativos. Retirar apoio, fechar olhos ou virar cabeca nao vira regra automatica por idade/desempenho."}
+  ],
+  "programmeAbsences": {"weeklyFrequency": null, "cycleWeeks": null, "sessionMinutesExact": null, "betweenSetRestSeconds": null, "individualRegressions": null, "physicalAssistanceProtocol": null},
+  "rights": {"textPolicyProof": "2026-10-04/n13i-planos/leitura-web.json", "textCandidate": true, "wholePdfOrPhotographsApproved": false, "logoOrEndorsementApproved": false},
+  "decision": "Reuso pertinente para idoso em casa, com dose e instrucoes textuais mais detalhadas; nao selecionar como pacote integral fechado. Sem frequencia/ciclo/regressoes publicados ou direitos de todas as fotografias; nao preencher com outra rotina, nem reclassificar como programa especifico de cuidador.",
+  "releaseApproved": false,
+  "researchClosureApproved": false
+}

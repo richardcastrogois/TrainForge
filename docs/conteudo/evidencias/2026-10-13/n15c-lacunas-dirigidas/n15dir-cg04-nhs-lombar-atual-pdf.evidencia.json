@@ -1,0 +1,24 @@
+{
+  "id": "n15dir-cg04-nhs-lombar-atual-pdf",
+  "url": "https://northcheshireandmersey.nhs.uk/media/jbdbvtp0/lower-back-strengthening-exercises-patient-advice-sheet.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T04:25:41.981489+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir preparo/acao/retorno emPDF3-5 e limites2/10; nao transferir sustentacoes1-2s/2s,10x4/4-6x4,chair/deadlift ouregra generica de progressao/dor. Variantes isoladas/alteracoes nao herdam efeito ReViEEW.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://northcheshireandmersey.nhs.uk/media/jbdbvtp0/lower-back-strengthening-exercises-patient-advice-sheet.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1941971,
+  "bodyFile": "../raw/n15dir-cg04-nhs-lombar-atual-pdf.pdf",
+  "sha256": "60f6cc2e30df4db6e64a6512422e8b48bca5005d5dabf12ed7637c6a99170158",
+  "bodyFormatMatchesRequest": true
+}

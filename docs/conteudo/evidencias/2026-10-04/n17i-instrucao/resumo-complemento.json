@@ -1,0 +1,58 @@
+{
+  "niche": "N17-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 6,
+  "proposedOperations": 0,
+  "fictionalScenarios": 0,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+      "sha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/fullTextXML",
+      "sha256": "ffb23dbd1b670f00148f83f17c2dd7af4438552c1c8dabf8c43aabbbca09a084"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/supplementaryFiles",
+      "sha256": "b935a55d72d2bf801ede5db207dbb7bd62ada0ea447307b64fbd9818dcb1a662"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-04/n17i-instrucao/leitura-visual-otago.json",
+      "artifactSha256": "092265c2796dc3ab7409d7a40f3ab6e397886c59c8a65b3b45e2212f2fdb217e"
+    },
+    {
+      "file": "2026-10-04/n16i-apoios/pesquisa-complemento.json",
+      "artifactSha256": "3c8525d2a678ebe709a5c666df74debc5498c726a5d499820039a580d4fbf35d"
+    },
+    {
+      "file": "2026-10-04/n16i-apoios/leitura-licenca-tabelas.json",
+      "artifactSha256": "fe28b5b2d3117db5d8bac8a54fe9289813e1f94d078c9dbde9fee799c1f678cc"
+    },
+    {
+      "file": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "artifactSha256": "6a9aafc65d6edfe2a7d1b90549b41b9df97a45d78568b50f4782bcee768102ab"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+      "artifactSha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/resumo-pacote-apk.json",
+      "artifactSha256": "1d462d1b96944fea803a86bdb5b183722eec47a812cbb7214e4d04e0b04fb547"
+    }
+  ],
+  "next": "N17-I fechado para cinco instrucoes/figuras 2019; Otago nao homologado. N15-C/N18-I/N19-I/N20-I abertos; N21 retida."
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "niche": "N26",
+  "researchClosed": true,
+  "scope": "Subsequência documental sentada com3posturas, preparação e encerramento para avaliação/ensino qualificados; não sete exercícios integrais, aula10min ou prescrição para todos.",
+  "selectedLot": "lote-yoga-cadeira.json",
+  "criteria": [
+    {
+      "criterion": "Autoria/formação",
+      "met": true,
+      "evidence": "MSRYT noPDF1 e vínculoWRIISC/VA; artigo descreve instrutoresYogaAlliance, não atribuir200h de formação aoRYT individual por inferência."
+    },
+    {
+      "criterion": "Comandos/dose/transições",
+      "met": true,
+      "evidence": "PDF9/10/11/13/17: pés/mãos/coluna, elevação e retorno, lados, ciclos e saída. Quatro exercícios não selecionados e Ujjayi fora do recorte; não preencher holds."
+    },
+    {
+      "criterion": "Direitos do selecionado",
+      "met": true,
+      "evidence": "Dados/métodos em redação independente, comfontes/locators e basePR166; nenhum grant geral do deck/fotos presumido. TextoNCCIH declara domínio público. Conferir ativo final antesdepublicar."
+    },
+    {
+      "criterion": "Compatibilidade/apoio/contextos",
+      "met": true,
+      "evidence": "Mesma sequência sentada, ordem conservada e recorte novo explícito. Contextos/variantes chão-em pé separados. Avaliação/ensino/suporte reais requeridos antesdeoferta; não eficácia de aula1h transferida."
+    },
+    {
+      "criterion": "Evidências",
+      "met": true,
+      "evidence": "5GETs/5corpos200/5hashes,12p vistas,5novasfamílias e inventário14preexistentes semreabrirN15."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão profissional de composição, elegibilidade e ensino",
+    "Suporte/assento/condições reais",
+    "Expressão final original, créditos/direitos/acessibilidade/pt-PT",
+    "Implementação/testes próprios"
+  ],
+  "notApproved": [
+    "Mídia e expressão do deck",
+    "Eficácia/segurança universal ou clínica",
+    "Curso de cuidadores/N15, programas de praça/N21",
+    "Adaptação silenciosa de doses, olhos, apoios ou posturas"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N27"
+}

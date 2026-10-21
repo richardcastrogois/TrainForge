@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "kind": "Seleção prévia de arquivos, não benchmark executado",
+  "sourceFamily": "MI01",
+  "metadataReceipt": "n39-fixture-image-metadata.evidencia.json",
+  "cases": [
+    {
+      "fileTitle": "File:Bacalhau à brás.jpg",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_br%C3%A1s.jpg",
+      "author": "Adriao",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalSha1Advertised": "70139528acc07fa630da06cf72d060096cac5664",
+      "originalBytes": 15345,
+      "originalWidth": 240,
+      "originalHeight": 117,
+      "proposedDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bacalhau_%C3%A0_br%C3%A1s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "proposedVariantDimensions": [
+        640,
+        312
+      ],
+      "expectedClassProposal": null,
+      "purpose": "prato português sem classe explícita, baixa resolução",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    },
+    {
+      "fileTitle": "File:Caldo Verde.jpg",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Caldo_Verde.jpg",
+      "author": "Michael",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "originalSha1Advertised": "b4e7cdd68a2437eb3fdbe4cfe17febd1f915d0a2",
+      "originalBytes": 3744967,
+      "originalWidth": 3024,
+      "originalHeight": 3024,
+      "proposedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Caldo_Verde.jpg/960px-Caldo_Verde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "proposedVariantDimensions": [
+        640,
+        640
+      ],
+      "expectedClassProposal": null,
+      "purpose": "prato português sem classe explícita",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    },
+    {
+      "fileTitle": "File:Chair.JPG",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Chair.JPG",
+      "author": "Antonio Borrillo",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "originalSha1Advertised": "f131416b5f2757d57b5a6fdb8b049c7bad87872b",
+      "originalBytes": 2508211,
+      "originalWidth": 2848,
+      "originalHeight": 4272,
+      "proposedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Chair.JPG/960px-Chair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "proposedVariantDimensions": [
+        640,
+        960
+      ],
+      "expectedClassProposal": null,
+      "purpose": "controle sem alimento",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    },
+    {
+      "fileTitle": "File:Cheese plate (498052801).jpg",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Cheese_plate_(498052801).jpg",
+      "author": "Rich Moffitt from Boston, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "originalSha1Advertised": "51c2ff4d87eff36b78c3b51494f0d88206dd8ffc",
+      "originalBytes": 1199686,
+      "originalWidth": 2000,
+      "originalHeight": 3008,
+      "proposedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Cheese_plate_%28498052801%29.jpg/960px-Cheese_plate_%28498052801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "proposedVariantDimensions": [
+        640,
+        963
+      ],
+      "expectedClassProposal": "cheese_plate",
+      "purpose": "conferir ordem 16/17 e imagem desfocada",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    },
+    {
+      "fileTitle": "File:Japanese Cheesecake.jpg",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Japanese_Cheesecake.jpg",
+      "author": "No machine-readable author provided. Marubatsu assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "Ver declaração PD-self na página de descrição",
+      "originalSha1Advertised": "f021a131d00096af3e159af7e37501a80cacf5b3",
+      "originalBytes": 205795,
+      "originalWidth": 800,
+      "originalHeight": 600,
+      "proposedDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Japanese_Cheesecake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "proposedVariantDimensions": [
+        640,
+        480
+      ],
+      "expectedClassProposal": "cheesecake",
+      "purpose": "conferir ordem 16/17",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    },
+    {
+      "fileTitle": "File:PizzaMargherita.jpg",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:PizzaMargherita.jpg",
+      "author": "SIG SG 510",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "originalSha1Advertised": "590bafd1b65efe74bb9949c07329e9dde1c26420",
+      "originalBytes": 773296,
+      "originalWidth": 1536,
+      "originalHeight": 1625,
+      "proposedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/PizzaMargherita.jpg/960px-PizzaMargherita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "proposedVariantDimensions": [
+        640,
+        677
+      ],
+      "expectedClassProposal": "pizza",
+      "purpose": "classe coberta",
+      "imageDownloaded": false,
+      "visuallyInspected": false,
+      "annotationStatus": "Proposta baseada em metadados; conferir visualmente antes de aceitar como rótulo de ensaio",
+      "rightsCaveat": "Atribuição e licença da imagem; não é grant de receitas/nutrientes. SHA-1 do original não confere miniatura derivada. Gerar SHA-256 do arquivo que for efetivamente recebido."
+    }
+  ],
+  "syntheticControls": [
+    "imagem RGB preta própria",
+    "imagem RGB branca própria"
+  ],
+  "syntheticMeaning": "Controles de entrada/normalização, não alimento real ou demonstração de reconhecimento",
+  "samplePurpose": "Encontrar erros concretos e testar confirmação/correção e ausência de classe; não estimar precisão de população ou de culinária portuguesa",
+  "downloadPolicy": "Só arquivos selecionados, limite 2 MiB por resposta no coletor e 12 MiB para o lote; conferir tipo/dimensões/hash/direitos e não usar imagem pessoal. Não baixar originais grandes quando a miniatura estiver selecionada. Nenhum download de mídia executado.",
+  "inferencePerformed": false,
+  "researchClosed": false,
+  "releaseApproved": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrilens-readme",
+  "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:44.652699+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentação primária MIT com exclusões explícitas de modelos e datasets. Seguir pistas de avaliações publicadas sem copiar interface, conteúdo ou executar o app.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/README.md",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 19208,
+  "bodyFile": "../raw/n39-nutrilens-readme.md",
+  "sha256": "c8c5890b5af019651cd61b1378b5fbaf48ff72b21a73c968633dfd73b34459c3"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:25:43.890106+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario ReViEEW: procurar documentSection e originais operacionais/videos, registrar versao/dose/apoio; completed nao prova resultado e ausencia de documento nao ausencia global.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 16475,
+  "bodyFile": "../raw/c15-revieew-registro-json.json",
+  "sha256": "9d095f4f83cfb8e380d0b5ea61d65ee774fa9ed701ce5f5fc07058e5b161dda1"
+}

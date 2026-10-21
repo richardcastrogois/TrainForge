@@ -1,0 +1,22 @@
+{
+  "id": "n15c-prieto-cuidadores",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9367957/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T00:22:53.330245+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar treino proprio domiciliar de cuidadoras, dose, supervisao, completude e licenca do artigo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9367957/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 287822,
+  "bodyFile": "../raw/n15c-prieto-cuidadores.html",
+  "sha256": "ae9f9d77fb6c9a921239164890333da120facb415aa7ea4524f5ec1c6bbf39d0"
+}

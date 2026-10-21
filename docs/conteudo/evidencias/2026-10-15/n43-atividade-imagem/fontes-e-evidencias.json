@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "id": "PR227",
+      "name": "ViTPose++ small — observação de pose",
+      "topic": "atividades",
+      "status": "condicional",
+      "publisher": "Yufei Xu, Jing Zhang, Qiming Zhang, Dacheng Tao; conversão Transformers Sangbum Choi/Niels Rogge; usyd-community",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_model_metadata_and_documentation_with_test_limits",
+      "access": "Documentos recebidos; apenasPR227executado. Foto de teste e ambiente removidos após uso; resultado textual/hashes retidos.",
+      "rights": "Apache2.0declarada para o modelo. Card dizCOCOCCBY4mas não concede fotos individuais de terceiros; nenhuma imagemCOCOfoi recebida ou adotada.",
+      "finding": "Modelo de17keypoints executado com caixa manual; não é classificador de treino. AP81.1do texto geral não foi atribuído ao small ou ao público alvo. Pesos132.619.932bytes conferidos e apagados.",
+      "next": "Ver contrato: nenhuma classificação automática de exercício, dose ou técnica pronta.",
+      "urls": [
+        "https://huggingface.co/usyd-community/vitpose-plus-small"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n43-atividade-imagem/contrato-atividade.json"
+    },
+    {
+      "id": "PR228",
+      "name": "VideoMAE/Kinetics400 — classificação temporal",
+      "topic": "atividades",
+      "status": "referencia",
+      "publisher": "Tong e colaboradores / MCG-NJU",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_model_metadata_and_documentation_with_test_limits",
+      "access": "Documentos recebidos; apenasPR227executado. Foto de teste e ambiente removidos após uso; resultado textual/hashes retidos.",
+      "rights": "ModelcardCCBYNC4.0; licença de modelo não é licença de vídeosYouTube. Nenhum peso/dataset/mídia recebidos.",
+      "finding": "Classificador de400ações, diferente de pose. PesosCCBYNCdeclarados, não selecionados para produto; não foram baixados/executados.",
+      "next": "Ver contrato: nenhuma classificação automática de exercício, dose ou técnica pronta.",
+      "urls": [
+        "https://huggingface.co/MCG-NJU/videomae-base-finetuned-kinetics"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n43-atividade-imagem/contrato-atividade.json"
+    },
+    {
+      "id": "PR229",
+      "name": "MediaPipe Pose Landmarker — alternativa de33pontos",
+      "topic": "atividades",
+      "status": "condicional",
+      "publisher": "Google AI Edge/MediaPipe",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_model_metadata_and_documentation_with_test_limits",
+      "access": "Documentos recebidos; apenasPR227executado. Foto de teste e ambiente removidos após uso; resultado textual/hashes retidos.",
+      "rights": "Documentação e modelos têm termos próprios; não presumir licença da página para qualquer treino/mídia. Apenas referência técnica recebida.",
+      "finding": "Documentação33landmarks, imagem/vídeo e parâmetros. Não reconhecimento de exercício, repetições, gasto ou técnica; SDK/modelonãoinstalados.",
+      "next": "Ver contrato: nenhuma classificação automática de exercício, dose ou técnica pronta.",
+      "urls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n43-atividade-imagem/contrato-atividade.json"
+    },
+    {
+      "id": "PR230",
+      "name": "NASA — exemplo factual de treino em T2 e diretrizes de mídia",
+      "topic": "atividades",
+      "status": "referencia",
+      "publisher": "NASA / página editada por Robert E. Lewis, fotógrafo individual não indicado",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_model_metadata_and_documentation_with_test_limits",
+      "access": "Documentos recebidos; apenasPR227executado. Foto de teste e ambiente removidos após uso; resultado textual/hashes retidos.",
+      "rights": "Diretrizes permitem uso factual sem endosso e ressalvam terceiros/pessoas/marcas/comercial. Não chamar toda mídiaNASAdepublicdomain, publicar foto no app ou atribuir endosso.",
+      "finding": "Foto de esteira com arnês foi usada apenas em ensaio factual não promocional e apagada. Microgravidade não é ambiente doméstico/academia/praça nem evidência de dose para idosos.",
+      "next": "Ver contrato: nenhuma classificação automática de exercício, dose ou técnica pronta.",
+      "urls": [
+        "https://www.nasa.gov/image-article/exercising-t2-treadmill/",
+        "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n43-atividade-imagem/contrato-atividade.json"
+    }
+  ],
+  "metadataReceipts": [
+    {
+      "receipt": "n43-mediapipe-pose-doc.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-nasa-example-page.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-nasa-media-policy.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-videomae-card.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-vitpose-api.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-vitpose-card.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-vitpose-config.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-vitpose-files.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n43-vitpose-preprocessor.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true
+    }
+  ],
+  "temporaryDownloads": "aquisicao-temporaria.json",
+  "testedComponent": "PR227pose only; single photo/black control, not video/classification or clinicalvalidation",
+  "runtime": "Same26approvedcomponents plus necessarySciPy isolated under5GB, pipcheckpassed, all removed; noCUDA/cloud/account",
+  "cost": "No paid service. Development/mobile integration and validation not measured."
+}

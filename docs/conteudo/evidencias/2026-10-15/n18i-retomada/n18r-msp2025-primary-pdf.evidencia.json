@@ -1,0 +1,25 @@
+{
+  "id": "n18r-msp2025-primary-pdf",
+  "url": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4134&context=ijes",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:05:54.323104+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Novo encadeamento por relato de técnica de quatro movimentos em mulheres idosas sem RT recente; verificar no original comandos, dose, elegibilidade e licença, sem adotar por título.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4134&context=ijes",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5844,
+  "bodyFile": "../raw/n18r-msp2025-primary-pdf.pdf",
+  "sha256": "aad874a4e6b9ee763ab78d006b042a244acf5585571c66302e81ee08dcd7c9c3",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

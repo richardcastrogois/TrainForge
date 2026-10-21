@@ -1,0 +1,22 @@
+{
+  "id": "c15-carefit-site-autores",
+  "url": "https://personal.cis.strath.ac.uk/mark.dunlop/carefit/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:48:55.231042+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar se pagina oficial oferece manual ou videos e respectivas permissoes; acesso ao app nao implica reutilizacao comercial.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://personal.cis.strath.ac.uk/mark.dunlop/carefit/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 6976,
+  "bodyFile": "../raw/c15-carefit-site-autores.html",
+  "sha256": "65a0fa4f27e69c09a4af77578c416ead6e2db2b04e61910d0df0eaea39bd4dde"
+}

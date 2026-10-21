@@ -1,0 +1,23 @@
+{
+  "id": "n18r-caa-book-catalogue",
+  "url": "https://katalog.snk.sk/vufind/Record/1044655?sid=6747083",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:19:19.751260+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primário da biblioteca nacional: autoria/ISBN/versão; não é conteúdo do manual ou autorização de uso.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://katalog.snk.sk/vufind/Record/1044655?sid=6747083",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 46928,
+  "bodyFile": "../raw/n18r-caa-book-catalogue.html",
+  "sha256": "d917186dddbea91526263718b16354c591b6a95fede5bd7ce4dd49d178b52241"
+}

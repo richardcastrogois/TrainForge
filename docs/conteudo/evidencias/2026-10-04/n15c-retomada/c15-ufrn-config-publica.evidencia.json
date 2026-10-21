@@ -1,0 +1,22 @@
+{
+  "id": "c15-ufrn-config-publica",
+  "url": "https://repositorio.ufrn.br/assets/config.863cca712c4a1f26d734c65c303bfb07.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:25:12.291602+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Configuracao publica observada no HTML DSpace recebido no antigo link da tese; localizar servidor REST atual, sem scripts, credenciais ou contorno.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufrn.br/assets/config.863cca712c4a1f26d734c65c303bfb07.json",
+  "contentType": "application/json; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 12610,
+  "bodyFile": "../raw/c15-ufrn-config-publica.json",
+  "sha256": "b9948368be263ebd1885d62a3fa28dfda891b6e5145f3f19ef0463a2a9ad115b"
+}

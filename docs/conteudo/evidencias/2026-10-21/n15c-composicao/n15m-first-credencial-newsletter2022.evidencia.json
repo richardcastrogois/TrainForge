@@ -1,0 +1,24 @@
+{
+  "id": "n15m-first-credencial-newsletter2022",
+  "url": "https://www.durham.hsrd.research.va.gov/FunctionQUERI/FQ_Newsletter_Jan2022.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:49:49.157007+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documento institucional que identifica Josh Dadolf MSW LICSW e seu papel no Caregivers FIRST; qualificacao profissional, nao novo ensaio ou permissao sobre terceiros.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.durham.hsrd.research.va.gov/FunctionQUERI/FQ_Newsletter_Jan2022.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 13121569,
+  "bodyFile": "../raw/n15m-first-credencial-newsletter2022.pdf",
+  "sha256": "f7a7d2cc708ba5dec2c076b15a9af590dd566e64894b3c5f90d656833b2b3f95",
+  "bodyFormatMatchesRequest": true
+}

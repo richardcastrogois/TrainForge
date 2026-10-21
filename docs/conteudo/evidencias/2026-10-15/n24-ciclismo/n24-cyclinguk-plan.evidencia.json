@@ -1,0 +1,23 @@
+{
+  "id": "n24-cyclinguk-plan",
+  "url": "https://www.cyclinguk.org/article/10-week-training-plan-100km-ride",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:53:45.124704+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Programaexterno10semanas;autoria institucional/doseintensidade e licenca",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cyclinguk.org/article/10-week-training-plan-100km-ride",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 183264,
+  "bodyFile": "../raw/n24-cyclinguk-plan.html",
+  "sha256": "51a29aba5ed525fe550ad3811974aaa3662aca56561bd3814dda930a3a64249e"
+}

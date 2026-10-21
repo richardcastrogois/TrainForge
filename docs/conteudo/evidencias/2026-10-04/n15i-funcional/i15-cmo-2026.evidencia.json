@@ -1,0 +1,22 @@
+{
+  "id": "i15-cmo-2026",
+  "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:46:19.213804+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Diretriz primaria atualizada 10/07/2026: autonomia/funcao, atividade acumulada, sedentarismo e supervisao em determinados grupos. Nao usar totais populacionais para inventar programa ou alvo individual.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 317416,
+  "bodyFile": "../raw/i15-cmo-2026.html",
+  "sha256": "5171683399a43dfb643a71bbcff0606c9475f0cf37ca073a176871e8a68d8ffa"
+}

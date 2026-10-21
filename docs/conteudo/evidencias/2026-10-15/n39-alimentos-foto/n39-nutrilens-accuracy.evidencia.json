@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrilens-accuracy",
+  "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/ACCURACY_REPORT.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:03:27.045964+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Relatório ligado explicitamente no README MIT: conferir classificação fora de Food101, amostra, calibração e erros; avaliação publicada do autor, não execução nossa nem do nateraw.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/results/ACCURACY_REPORT.md",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4430,
+  "bodyFile": "../raw/n39-nutrilens-accuracy.md",
+  "sha256": "43d0a5af10022c35731153cf2f70a957804555b65d44da19cf11fc85c6f8f11c"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-gary-artigo-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6026574/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:19:02.850816+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 500,
+  "use": "research_only",
+  "purpose": "Interface publica EuropePMC de texto integral; verificar programa original, movimentos, progressao, suporte e direitos. Falha nao vira corpo clinico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6026574/fullTextXML",
+  "contentType": null,
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/c15-gary-artigo-xml.xml",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": "HTTP 500"
+}

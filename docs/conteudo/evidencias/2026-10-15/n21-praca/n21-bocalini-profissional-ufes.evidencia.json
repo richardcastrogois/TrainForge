@@ -1,0 +1,18 @@
+{
+  "id": "n21-bocalini-profissional-ufes",
+  "url": "https://residenciamultiprofissional.ufes.br/residencia-multiprofissional-em-saude-do-adulto-obesidade-e-doencas-associadas",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:32:25.068140+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Vinculo institucional primario de DaniloSalesBocalini, professor de EducacaoFisica com doutorado, coautor responsavel pelo metodo2024; nao presumir qualificacao apenas pela revista.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+}

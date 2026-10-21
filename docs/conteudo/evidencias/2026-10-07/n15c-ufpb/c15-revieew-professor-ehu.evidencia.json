@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-professor-ehu",
+  "url": "https://www.ehu.eus/es/web/graduak/grado-fisioterapia/profesorado?p_idp=762388&p_redirect=fichaPDI",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:25:45.545689+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ficha institucional Ander Espin, area Fisioterapia, faculdade e identidade. Nao alegar registro profissional legal nao publicado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ehu.eus/es/web/graduak/grado-fisioterapia/profesorado?p_idp=762388&p_redirect=fichaPDI",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 74249,
+  "bodyFile": "../raw/c15-revieew-professor-ehu.html",
+  "sha256": "e4752977b15260092c09209d73c1802a5a5d333148448b07532e870a7ab316ed"
+}

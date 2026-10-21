@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-15",
+  "niche": "N38",
+  "sourceFamily": "PR210",
+  "authors": "Apple/AppleDeveloperDocumentation/AppleSupport, autoria institucional de contratos técnicos; não fornecedor humano detreinos nem vínculoBeFit.",
+  "sources": [
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/setting-up-healthkit",
+      "method": "Texto primário indexado na pesquisa; aberturacanônica devolveu shellJS7linhas, não corpo completo.",
+      "facts": "CapabilityHealthKit, availability runtime, store eautorização por tipo. Leitura/escrita com mensagensNSHealthShareUsageDescription/NSHealthUpdateUsageDescription. Não copiar configuraçãodeClinicalHealthRecords se não utilizado."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data",
+      "method": "Textos primários indexados, versões distintas; shellJSnaabertura direta, semGETlocal.",
+      "facts": "Autorizações por tipo e operação. Não se sabe se leitura foi negada; acesso limitado/noaccess podemocultar dados. Varianteindexadarecentedescrevejanela temporal/getEarliestAuthorizedSampleDate; versão/SDKmínimos não confirmados e nenhum método novo selecionado paraimplementação."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hkhealthstore/authorizationstatus(for:)",
+      "method": "Referência primária indexada; URLcanônica daAPIrepresentada, referência indexada tinhaescapamento deparênteses.",
+      "facts": "authorizationStatusé paragravar/compartilharnoHealthKit,não detetarestado positivo deleitura. Semleitura, outrossamplespodem parecer ausentes, preservando privacidade."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hkhealthstore/ishealthdataavailable()",
+      "method": "Referência primária indexada, semchamadaAPI.",
+      "facts": "Disponibilidadeefetiva antesdeoutrosmétodos. DadosdisponíveisporpadrãoemiOS/watchOS/visionOS;iPadOS17+;frameworkemmacOSou iPadOSantigo não implica leitura/escritadedados. Não foi avaliada combinação deSO/SDKreal."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hkobject",
+      "method": "Texto primário indexado.",
+      "facts": "Objetos possuemUUID,metadata,deviceopcional,sourceRevision. HKSampleassocia início/fim; classeabstratanãoéprogramadeexercício ou identidade depaciente."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hksourcerevision",
+      "method": "Texto primário indexado.",
+      "facts": "Representafonte eversão/SO/produtode appou dispositivo; preenchida peloHealthKitao salvar e disponívelao recuperar. Não identifica automaticamente portadornem treinador. sourceantigodeprecado, nãousar comocampo único."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/metadata-keys",
+      "method": "Texto primário indexado.",
+      "facts": "WasUserEntered,TimeZone,ExternalUUIDeSyncIdentifier/SyncVersionsão chaves existentes; disponibilidadede uma chave não implica presença no registro ou calibração clínica. Dados não serão acessados ou usados como prova de quem foi medido."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hkmetadatakeysyncidentifier",
+      "method": "Texto primário indexado; umaabertura comnomeMixedCasefalhou, preservada; não repetida para mascarar falha.",
+      "facts": "Identificador desincronização exige tambémSyncVersion. Ao salvarcomidentificadorcorrespondente eversãomaior, objetosmatchingpodem ser substituídos segundo contrato; não deduplicação universal detelefone/relógio."
+    },
+    {
+      "primaryUrl": "https://developer.apple.com/documentation/healthkit/hkmetadatakeysyncversion",
+      "method": "Texto primário indexado; aberturacomMixedCaseInternalError.",
+      "facts": "Versão numérica usada paraatualizaçãodomesmodado matchingSyncIdentifier. Não assumir equivalência deUUID ouescritaentre fontes."
+    },
+    {
+      "primaryUrl": "https://support.apple.com/en-us/108779",
+      "method": "Corpoprimárioretornado napesquisa,indexado; não testedeUI.",
+      "facts": "Pessoa podecontrolarapps/fontes, registrosmanuais eprioridade noHealth. Fontenotopo temprioridade quando mesmotipo; não prova que qualquer consulta crua deduplica automaticamente."
+    }
+  ],
+  "newLocalGets": 0,
+  "newPrimaryBodyHashes": 0,
+  "newVisualPages": 0,
+  "runtimeHealthKitCalls": 0,
+  "rights": "Nenhumgrantdeexpressão/mídia inferido do acesso público; somente nomesdeAPI, fatos e referências breves emredação própria. Nãocopiardocumentação/código/fotos ou marca. SDK/capability, dadospessoais e distribuição têmcondições próprias, não aprovadas porpesquisa.",
+  "costs": "Pesquisa públicanãocobrou/solicitouconta. TestenativorequerambienteApplecompatível e alvo; custosdehardware/serviço/assinatura/programadedesenvolvimento não apurados oucontratados. Nãocriadaalternativacloudpaga ouprometidodesenvolvimentoApplegratuitonesteWindows.",
+  "limitations": "Predomina texto indexadopelo buscador primário; JavaScriptshellnão equivale apágina integral recebida. Metadadosde versão/OSnovos a validar emSDKalvo antesdeescolha deAPI."
+}

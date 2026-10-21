@@ -1,0 +1,25 @@
+{
+  "requests": [
+    {
+      "id": "n30-poon-pdf",
+      "url": "https://jssm.org/22-3-532.p_d_f",
+      "purpose": "PDF primário linkado noHTML já recebido, conferir licença conflitante e protocolo",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n30-ballesta-2020-pdf",
+      "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-17-01805/article_deploy/ijerph-17-01805.pdf",
+      "purpose": "Arquivo editorial explicitamente indexado: circuito estudado em mulheres mais velhas, protocolo/limites/eventos; sem repetirMDPIHTML429",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n30-klika-pdf",
+      "url": "https://motricidadehumana.org/wp-content/uploads/2016/08/high_intensity_circuit_training_using_body_weight_-5-1.pdf",
+      "purpose": "Cópia do artigo primário2013 publicada no sítio científico MotricidadeHumana. Conferir circuito/autor/dose, sem afirmar licença de reprodução ou copiar figuras",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

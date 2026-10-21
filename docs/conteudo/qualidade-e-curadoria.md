@@ -1,5 +1,7 @@
 # Qualidade, autoria e curadoria
 
+**Decisao obrigatoria07/10/2026:** [criterios para todos os exercicios do APK](criterios-exercicios-apk.md), com [contrato documental](criterios-exercicios-apk.json). Exigir autoria profissional verificavel, fundamento adequado ao publico/contexto e instrucao clara. Aceitar uso autonomo ou com orientacao conforme evidencia; preservar supervisao obrigatoria da fonte. Aplicar aos itens anteriores e futuros antes da publicacao, sem afirmar que todos ja foram auditados. Publicacao cientifica nao comprova qualificacao por si, nem revisao posterior altera a autoria original. O processo proposto abaixo continua aplicavel.
+
 Proposta de processo editorial em 23/09/2026. A pesquisa identifica fontes; **a aprovação de conteúdo específico é uma etapa separada**. Um programa criado por uma pessoa pode estar errado, desatualizado ou ser inadequado à população. O diferencial defensável é autoria identificável, revisão, limites e correção contínua, além de não gerar treinos por IA.
 
 ## Cobertura da visão de 24/09/2026

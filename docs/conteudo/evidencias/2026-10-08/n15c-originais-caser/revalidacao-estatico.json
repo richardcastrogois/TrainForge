@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-08",
+  "niche": "N15-C",
+  "sourceId": "PR42",
+  "method": "releitura_offline_JATS_canonico_e_registro_ja_recebidos",
+  "networkCallsAdded": 0,
+  "sourceReading": "../../2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+  "canonicalReceipts": [
+    "../../2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+    "../../2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json"
+  ],
+  "primaryUrl": "https://doi.org/10.3390/ijerph21101361",
+  "locators": {
+    "populationAndEligibility": "sec2dot1-ijerph-21-01361",
+    "instructionAndDose": "sec2dot3-ijerph-21-01361",
+    "mobilityResults": "Table2",
+    "thoracicResults": "Table3",
+    "betweenMethods": "Table4",
+    "limitations": "Discussion: Implications, Limitations, and Future Perspectives"
+  },
+  "selectedBranch": {
+    "id": "ATAC-S01",
+    "type": "estatico_isquiotibial",
+    "samePostureAsPnfExplicitlyStatedInSource": true,
+    "posture": "Em pe, membro inferior em degrau, joelho estendido e costas retas; alcance da mao na direcao dos dedos do pe, como descrito pela fonte.",
+    "dose": {
+      "secondsPerRepetition": 30,
+      "repetitionsPerLeg": 8,
+      "activeMinutesPerLeg": 4,
+      "activeMinutesBothLegs": 8,
+      "additionalTransitionOrRestSeconds": null,
+      "weeklyFrequency": null,
+      "programmeWeeks": null
+    },
+    "acuteSessionOnly": true,
+    "longitudinalProgrammeCreated": false,
+    "pnfContractionOrIntensityTransferred": false,
+    "sourceEndingInstruction": null,
+    "sourceStopOrReturnCriteria": null,
+    "sourceStandaloneVisualInstruction": null
+  },
+  "evidenceLimits": {
+    "analysed": 30,
+    "population": "profissionais_de_reabilitacao_que_cuidam_de_criancas_com_atraso_do_desenvolvimento",
+    "eligibilityAges": [18, 40],
+    "observedAges": [21, 40],
+    "design": "randomizado_cruzado_agudo_ambos_metodos_mesmas_pessoas",
+    "noStretchOrPlaceboComparator": false,
+    "staticWithinMethodPValues": {
+      "rightPoplitealAngle": 0.001,
+      "leftPoplitealAngle": "<0.001",
+      "schober": "<0.001",
+      "fingerToFloor": 0.634,
+      "epigastricMaximumExpirationCircumference": 0.001
+    },
+    "staticImprovesAllMobilityMeasures": false,
+    "betweenMethodsSuperiorityDemonstrated": false,
+    "pulmonaryFunctionImprovementDemonstrated": false,
+    "occupationalInjuryPreventionDemonstrated": false,
+    "longTermHomeBenefitDemonstrated": false,
+    "abstractPatConflictResolved": false,
+    "table4Caution": "Comparacao publicada com Mann-Whitney U apesar do desenho cruzado com mesmas pessoas; nao reanalisar sem dados nem afirmar que resultados sao definitivos."
+  },
+  "environmentDecision": {
+    "centreIsAutomaticExclusion": false,
+    "missingNumericStepHeightIsAutomaticExclusion": false,
+    "missingNumericFloorAreaIsAutomaticExclusion": false,
+    "compatibleSpacePossible": true,
+    "actualHomeMaterialSuitabilityAssessed": false,
+    "fatigueOrShortTimeAuthorisesDoseReduction": false,
+    "requiresSamePostureMaterialPopulationPreparationAndSupport": true
+  },
+  "professionalAndRights": {
+    "qualificationDeclaredInLinkedPrimarySource": "Amine Atac: MSc Physiotherapist; NCT05222295, ensaio distinto usado somente para credencial",
+    "independentProfessionalRegistrationChecked": false,
+    "publishedArticleLicense": "CC BY 4.0",
+    "publishedTextCommercialAdaptationPotential": true,
+    "unreceivedThirdPartyAssetsLicensed": false,
+    "initialAutonomyWithoutInstructionEstablished": false
+  },
+  "decision": {
+    "status": "condicional",
+    "staticDoseConflict": false,
+    "pnfDoseConflictStillPresentButDoesNotInvalidateStaticDose": true,
+    "researchClosureApproved": false,
+    "releaseApproved": false,
+    "remaining": [
+      "Instrucoes profissionais suficientes para encerramento, interrupcao/retomada e preparo do item selecionado, sem inventar essas condutas.",
+      "Revisao clinica e de traducao das instrucoes contraditorias/narrativa versus tabelas e aplicabilidade ao publico selecionado.",
+      "Demonstrar modalidade de entrega e direitos dos ativos efetivamente selecionados; nao exigir videos externos se nao forem usados."
+    ],
+    "notRequiredArtificially": [
+      "Programa de varias semanas para um estudo de aplicacao aguda.",
+      "Altura numerica universal de degrau ou metragem nao declarada pela fonte.",
+      "Resolver o ciclo PNF para reproduzir a dose estatica independente."
+    ],
+    "n21Started": false,
+    "appImplemented": false
+  }
+}

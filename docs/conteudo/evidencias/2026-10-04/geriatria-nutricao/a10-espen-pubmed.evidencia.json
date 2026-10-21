@@ -1,0 +1,23 @@
+{
+  "id": "a10-espen-pubmed",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/35306388/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:10:04.187107+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 203,
+  "use": "research_only",
+  "purpose": "Resumo bibliografico publico da diretriz original, nao substitui manual integral. PDF institucional 403 preservado sem contorno ou retry; nenhum detalhe alem do resumo usado como evidencia local.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://pubmed.ncbi.nlm.nih.gov/35306388/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5590,
+  "bodyFile": "../raw/a10-espen-pubmed.html",
+  "sha256": "bc30948f64bd6e564f0ccefb8b63dcd25d068ab45290ecffc936ac0def0a9eb9",
+  "error": "HTTP 203"
+}

@@ -1,0 +1,309 @@
+{
+  "niche": "N20-I",
+  "date": "2026-10-04",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Instrucao operacional e ativos das variantes de academia em programas humanos para idosos, nao associacao lexical wger nem adaptação por idade.",
+  "next": "Parcial: REACT2018 tem instrucoes reais Appendix4,14paginas selecionadas visualizadas; postura/agachamento contraditorio, licenca de fotos/desenhos/protocolo nao demonstrada e nao cobre maquinas do percurso. I20-G02/G03 falsos, zero novos mapas/ativos aprovados. N21 retida; preservar ES2019-DOM-01 sem ampliar variantes.",
+  "evidence": [
+    {"record":"2026-10-05/programas-manuais-02/i18-react-nihr-protocolo.evidencia.json","anchors":["SAMPLE STRENGTH EXERCISES","Starting position"],"role":"Instrucao funcional2018 real recebida; leitura dirigida/visual documentada, divergencias e direitos impedem selecionar."},
+    {
+      "record": "2026-10-04/n18i-academia/i18-walker-forca.evidencia.json",
+      "anchors": [
+        "qualified instructors",
+        "Isometric knee extension experimental setup",
+        "Smith-machine squat",
+        "Lunge jumps"
+      ],
+      "role": "Fonte demonstra instrucao por profissional e variantes diferentes; figuras de teste nao sao tutoriais dos 28 movimentos."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-mptp-artigo.evidencia.json",
+      "anchors": [
+        "variable resistance machines",
+        "Stand up and sit down from the chair in semitandem",
+        "10 RM"
+      ],
+      "role": "Maquinas e tarefas funcionais distintas; nao fornece ajuste tecnico de todos os modelos."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-instabilidade-xml.evidencia.json",
+      "anchors": [
+        "two skilled instructors"
+      ],
+      "role": "Mesmo ensaio de 68 idosos; tres rotas supervisionadas, dataset nao manual."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-marcha-xml.evidencia.json",
+      "anchors": [
+        "placing the barbell at the hip"
+      ],
+      "role": "Smith barra na anca nao ombros; variante nao correspondente a video generico."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-velocidade-xml.evidencia.json",
+      "anchors": [
+        "fitness instructors and physiotherapists"
+      ],
+      "role": "Quatro movimentos com colete/tornozeleira em centros/instituicao, nao programa generico de maquinas."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-masters-xml.evidencia.json",
+      "anchors": [
+        "supervised by trained personnel"
+      ],
+      "role": "Protocolo supervisionado com duas familias de aparelhos, cointervencao medicacao nao transferida ao APK."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-calm-protocolo-2016-xml.evidencia.json",
+      "anchors": [
+        "Table 2",
+        "TechnoGym"
+      ],
+      "role": "Modelos HRTW, instrucao domestica nao intercambiavel."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pact-treino-2021-xml.evidencia.json",
+      "anchors": [
+        "HUR"
+      ],
+      "role": "PASSWORD supervisionado/casa separados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-password-plano-pdf.evidencia.json",
+      "anchors": [
+        "senior gyms",
+        "HUR"
+      ],
+      "role": "Plano S2 e tabela visual p7, nao manual."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-movestrong-2021-xml.evidencia.json",
+      "anchors": [
+        "FRAIL",
+        "manual"
+      ],
+      "role": "Manual referido nao recebido integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-eckardt-2016-xml.evidencia.json",
+      "anchors": [
+        "hip level",
+        "skilled instructors"
+      ],
+      "role": "Outra amostra/ciclo: nao ensaio de68, Smith na anca."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-bestform-2022-xml.evidencia.json",
+      "anchors": [
+        "Non-commercial",
+        "pneumatic"
+      ],
+      "role": "Restricao comercial e ajuste profissional."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-2024-xml.evidencia.json",
+      "anchors": [
+        "arms crossed",
+        "weighted vest"
+      ],
+      "role": "Duas rotas supervisionadas, figura nao manual integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-pdf.evidencia.json",
+      "anchors": [
+        "schematic overview"
+      ],
+      "role": "Figura1 p3, nao manual de ajustes."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-2023-xml.evidencia.json",
+      "anchors": [
+        "CC BY",
+        "24 weeks"
+      ],
+      "role": "AGUEDA2023: sala fitness supervisionada, bandas; licenca do artigo nao resolve ativos externos."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a5-pdf.evidencia.json",
+      "anchors": [
+        "Training session",
+        "Starting position"
+      ],
+      "role": "Guia real47paginas: instrucao recebida, faltas/divergencias e direito externo nao demonstrado; fotos nao aprovadas."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a6-pdf.evidencia.json",
+      "anchors": [
+        "https://"
+      ],
+      "role": "Indice18links, nao videos recebidos ou licenciados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a8-pdf.evidencia.json",
+      "anchors": [],
+      "role": "Participacao remota ao vivo, nao programa autonomo."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-suplemento-cert.evidencia.json",
+      "anchors": [],
+      "role": "CERT/tabelasOOXML, nao manualA5 incorporado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-repositorio-metadata.evidencia.json",
+      "anchors": [
+        "English",
+        "Spanish"
+      ],
+      "role": "Inventario oficial recebido, sem licenca de ativos localizada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-readme.evidencia.json",
+      "anchors": [
+        "File A5"
+      ],
+      "role": "Descricao dos recursos; licenca dos PDFs/fotos nao demonstrada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-xml.evidencia.json",
+      "anchors": [
+        "CIEX",
+        "Table 3"
+      ],
+      "role": "Protocolo especifico>=70sarcopenia, maquinaisometrica/sensores/profissional; sentidosadducao/abducao contraditorios, nao selecionado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-anexos.evidencia.json",
+      "anchors": [],
+      "role": "Consentimento/checklistSPIRIT11p, nao manual de ajuste CIEX; figura1recebida com fotos."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n20i-instrucao/leitura-web.json",
+    "2026-10-04/n18i-academia/leitura-programas.json",
+    "2026-10-04/n18i-academia/amostra-walker-tabela.json",
+    "2026-10-04/n19i-percursos/pesquisa-complemento.json",
+    "2026-10-03/n20-instrucao-academia/pesquisa-recorte.json",
+    "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+    "2026-10-04/n18i-academia/triagem-novos-programas.json",
+    "2026-10-04/n18i-academia/leitura-manuais-dirigida.json",
+    "2026-10-04/n20i-instrucao/auditoria-instrucao-dirigida.json",
+    "2026-10-04/n18i-academia/leitura-agueda-manuais.json",
+    "2026-10-04/n18i-academia/leitura-ist-ciex-2025.json",
+    "2026-10-05/fechamento-dirigido/leitura-lifeage-react.json",
+    "2026-10-05/programas-manuais-02/leitura-react-protocolo2018.json",
+    "2026-10-05/programas-manuais-02/inventario-manuais.json",
+    "2026-10-05/programas-manuais-02/mapa-apk-campos.json"
+  ],
+  "operations": [
+    {
+      "id": "I20-O21",
+      "decision": "Chest press de maquina nao se associa automaticamente a bench press livre; apoio de costas, assento, trajeto e carga precisam corresponder."
+    },
+    {
+      "id": "I20-O22",
+      "decision": "Leg press sem modelo/inclinacao/ajustes especificados continua instrucao pendente; ilustracao generica nao preenche o dado."
+    },
+    {
+      "id": "I20-O23",
+      "decision": "Smith squat e squat livre sao variantes diferentes; faixas e cargas nao transferidas automaticamente."
+    },
+    {
+      "id": "I20-O24",
+      "decision": "Calcanhar em pe, sentado, saltos da panturrilha e marcha nas pontas sao gestos distintos, mesmo com nome ou musculo comum."
+    },
+    {
+      "id": "I20-O25",
+      "decision": "Lunge e lunge jumps exigem correspondencias distintas; nao remover salto ou substituir por variante domestica mantendo autoria original."
+    },
+    {
+      "id": "I20-O26",
+      "decision": "Sentar/levantar MPTP em semitandem nao e variante Otago com duas maos por padrao; guardar fonte/postura/apoio por registro."
+    },
+    {
+      "id": "I20-O27",
+      "decision": "Dinamometro/EMG das figuras Walker representam avaliacao laboratorial; nao selecionar como imagem do leg press de treino."
+    },
+    {
+      "id": "I20-O28",
+      "decision": "Instrucao qualificada no ensaio nao e manual obtido nem profissional disponibilizado pelo app; preservar pendencia de ensino e supervisao."
+    },
+    {
+      "id": "I20-O29",
+      "decision": "Licenca CC BY dos artigos permite caminho textual com atribuicao; nao licencia ativos externos ausentes ou nomes/marcas em qualquer contexto."
+    },
+    {
+      "id": "I20-O30",
+      "decision": "Dose/fase/demonstracao e permissao sao validacoes separadas; nao executar HTML externo, gerar anatomia ou certificar elegibilidade etaria."
+    },
+    {
+      "id": "I20-O31",
+      "decision": "AGUEDATabela1adducao versusA5p44abducao; faltam rotacoes de ombro iniciais/intermedias; triceps p42dose por perna e variantepushupjoelhos p33 nao corrigidos por nomes ou plausibilidade. Nenhum mapeamento aprovado."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I20-G01",
+      "met": true,
+      "criterion": "Programas humanos para idosos e variantes concretas identificados, criterios de correspondencia separados de ID/nome/musculo."
+    },
+    {
+      "id": "I20-G02",
+      "met": false,
+      "criterion": "Instrucao completa de postura/ajuste/apoios/execucao das variantes essenciais obtida e semanticamente conferida."
+    },
+    {
+      "id": "I20-G03",
+      "met": false,
+      "criterion": "Conjunto essencial de ativos correspondente e caminho comercial gratuito demonstrados, sem extrapolar licenca do artigo para manual ou video externo."
+    },
+    {
+      "id": "I20-G04",
+      "met": true,
+      "criterion": "Criterios acessibilidade/papeis/profissional e limites atuais aplicados; dados e imagens experimentais nao usados como tutorial."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I20-S21",
+      "fictional": true,
+      "case": "Figura contem joelho estendendo",
+      "expected": "Avaliacao isometrica nao vira maquina de leg extension nem tutorial."
+    },
+    {
+      "id": "I20-S22",
+      "fictional": true,
+      "case": "Modelo da maquina ausente",
+      "expected": "Nao inventar regulagem de assento ou amplitude; manter instrucao pendente."
+    },
+    {
+      "id": "I20-S23",
+      "fictional": true,
+      "case": "Somente imagem de agachamento livre disponivel",
+      "expected": "Nao associar a Smith ou bosu pelo nome do exercicio."
+    },
+    {
+      "id": "I20-S24",
+      "fictional": true,
+      "case": "Video CC desconhecido, artigo CC BY",
+      "expected": "Nao baixar/republicar video ou declarar direito do lote."
+    }
+  ],
+  "observed": {
+    "publishedWalkerMovementNames": 28,
+    "movementDoseRowsReceived": 112,
+    "newApprovedMappings": 0,
+    "newApprovedAssets": 0,
+    "newWgerCalls": 0,
+    "videoOrAudioPlayedOrDownloaded": 0
+  },
+  "limits": [
+    "Nao repetir amostra wger como se fosse consulta atual ou biblioteca representativa.",
+    "Instrucao/ativos ausentes sao pendencias de pesquisa, nao foram empurrados para homologacao.",
+    "Nenhum ensaio, tutorial gerado, video reproduzido ou treino real executado; cenarios documentais ficticios.",
+    "IST-CIEX2025nao substitui variantes dinamicas ou instrucao de academia comum; protocolo experimental e infraestruturas/profissionais nao oferecidos peloAPK."
+  ],
+  "updatedAt": "2026-10-05"
+}

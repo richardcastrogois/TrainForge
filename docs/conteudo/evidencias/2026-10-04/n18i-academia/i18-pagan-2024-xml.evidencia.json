@@ -1,0 +1,22 @@
+{
+  "id": "i18-pagan-2024-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11091347/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:54:33.584542+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar instrucao publicada de duas rotas para idosos sem treino previo de membros inferiores, contexto UCF/supervisao/cointervencao e direitos; figuras de avaliacao nao presumidas tutoriais.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11091347/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 155130,
+  "bodyFile": "../raw/i18-pagan-2024-xml.xml",
+  "sha256": "b37510ccac469864b562da22de238e6a30b75574126c285e2a97184582a6ae71"
+}

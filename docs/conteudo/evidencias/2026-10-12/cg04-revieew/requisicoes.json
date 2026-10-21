@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-12",
+  "scope": "SomenteCG04/PR68. Primeira coleta do registro publico estruturado NCT05050526 para conferir desenho/criterios/descricao e documentos disponibilizados. Nao repetir artigo/suplementos/URL404 da tese, nao transpor outros programas, semcontato/login/formularios/media/TLS bypass.",
+  "requests": [
+    {"id":"cg04-revieew-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05050526","extension":"json","accept":"application/json,text/html,text/plain","purpose":"Snapshot primario do registro prospectivo; procurar documentos ligados publicamente e separar planejamento do programa executado/artigos. Nao afirmar resultado do registro nem completar comando faltante porIA."}
+  ]
+}

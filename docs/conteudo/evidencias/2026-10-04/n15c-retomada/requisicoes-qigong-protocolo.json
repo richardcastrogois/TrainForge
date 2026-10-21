@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-04", "niche": "N15-C",
+  "requests": [
+    {"id": "c15-qigong-protocolo-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7976717/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Protocolo qigong para o proprio cuidador de paciente oncologico, identificado por busca OA; verificar instrucao, domiciliaridade, ativos e direitos."},
+    {"id": "c15-cuidador-protocolo-2016-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5031263/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Protocolo humano de treino pessoal do cuidador em casa, origem 2016; conferir instrucao/dose e entrega em vez de transpor testes do estudo posterior."}
+  ]
+}

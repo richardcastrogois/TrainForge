@@ -1,0 +1,23 @@
+{
+  "id": "c15-fast-osf-pasta-json",
+  "url": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/5fff97d8ba010905008908ab/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:13:06.117765+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Nomes/tipos de arquivos na unica pasta listada, verificar se e manual operacional ou dados/sintaxe; nenhum download dos datasets.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/5fff97d8ba010905008908ab/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4501,
+  "bodyFile": "../raw/c15-fast-osf-pasta-json.json",
+  "sha256": "ad607a4d7a716e5637d78d92c88f5ccc5f8fdf0f7f4935fab1a9c7b9205ffc5b"
+}

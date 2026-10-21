@@ -1,0 +1,18 @@
+{
+  "requests": [
+    {
+      "id": "n25-delayed2023-jats",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10366873/fullTextXML",
+      "purpose": "Sessão aquática humana4500m em atletas, direitos/contribuições/carga e cointervenção; não converter em programa iniciante ou benefício isolado",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n25-tools2026-pdf",
+      "url": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2026.1788570/pdf",
+      "purpose": "Artigo aberto do próprio editor: curso feminino12semanas, apoio/limites/SwimtoFly separado; não usar app/vídeos sem direitos",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

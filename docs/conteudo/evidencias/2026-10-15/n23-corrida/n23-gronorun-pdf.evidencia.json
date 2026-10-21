@@ -1,0 +1,24 @@
+{
+  "id": "n23-gronorun-pdf",
+  "url": "https://pure.rug.nl/ws/portalfiles/portal/6704255/Buist_2007_BMC_Muskuloskeletal_Dis.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:40:19.152907+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF publicado no repositorioinstitucional para cotejo visual das tabelasJATS, nao repetirPDFresultado403",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://pure.rug.nl/ws/portalfiles/portal/6704255/Buist_2007_BMC_Muskuloskeletal_Dis.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 459903,
+  "bodyFile": "../raw/n23-gronorun-pdf.pdf",
+  "sha256": "b2fcf8aeb152db767749297f8331ebef8c376bb81c2c40e9ac08f9f113ed66fe",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-15",
+  "kind": "Inspeção estática, somente leitura, doXLSXoriginal dosautores; nenhum workbook exportado/editado.",
+  "receipt": "n35-compendium-calculator.evidencia.json",
+  "sheet": "Older Adults (60+ years)",
+  "sheetXML": "xl/worksheets/sheet2.xml",
+  "sourceCells": {
+    "D11": {
+      "formula": null,
+      "formulaAttributes": {},
+      "storedValue": "65"
+    },
+    "E11": {
+      "formula": null,
+      "formulaAttributes": {},
+      "storedValue": "2.7"
+    },
+    "F11": {
+      "formula": null,
+      "formulaAttributes": {},
+      "storedValue": "1"
+    },
+    "G6": {
+      "formula": "((F6*E6)*D6)/200",
+      "formulaAttributes": {
+        "t": "shared",
+        "ref": "G6",
+        "si": "0"
+      },
+      "storedValue": "0"
+    },
+    "I6": {
+      "formula": "G6*H6",
+      "formulaAttributes": {},
+      "storedValue": "0"
+    },
+    "G11": {
+      "formula": "((F11*E11)*D11)/200",
+      "formulaAttributes": {
+        "t": "shared",
+        "ref": "G11:G17",
+        "si": "1"
+      },
+      "storedValue": "0.87749999999999995"
+    },
+    "I11": {
+      "formula": "G11*H11",
+      "formulaAttributes": {},
+      "storedValue": "157.94999999999999"
+    },
+    "G12": {
+      "formula": null,
+      "formulaAttributes": {
+        "t": "shared",
+        "si": "1"
+      },
+      "storedValue": "1.3162500000000004"
+    },
+    "I17": {
+      "formula": null,
+      "formulaAttributes": {
+        "t": "shared",
+        "si": "2"
+      },
+      "storedValue": "837.13499999999988"
+    },
+    "L12": {
+      "formula": null,
+      "formulaAttributes": {},
+      "storedValue": "1"
+    },
+    "M12": {
+      "formula": "(L12*3.5)/2.7",
+      "formulaAttributes": {},
+      "storedValue": "1.2962962962962963"
+    },
+    "M13": {
+      "formula": "(L13*3.5)/2.7",
+      "formulaAttributes": {
+        "t": "shared",
+        "ref": "M13:M22",
+        "si": "3"
+      },
+      "storedValue": "1.9444444444444444"
+    }
+  },
+  "method": "XMLZIP e aritmética independente comPythonbundled. Não execução deExcel, atualização deconexões ou recalculação nativa; valores guardados foram distinguidos de fórmulas e comparados a cálculos independentes.",
+  "formulaPerMinute": "MET60plus * 2.7 * bodyMassKg / 200",
+  "formulaTotal": "kcalPerMinute * activityMinutes",
+  "grossNotActiveOnly": "Fórmula contém todo o custo estimado do período; não subtrai repouso e não produz calorias ativas líquidas.",
+  "adultConversion": "M12–M22estimam MET60+deMETadulto×3.5/2.7. É mudança de referência/estimativa, não observação da atividade emidosos ou substituto da tabela60+medida. Não selecionado como preenchimento automático de atividade ausente.",
+  "caution": "PáginaUnitConversions mostra3.5noMETpadrão. Não aplicar esse fator aMET60+sem trocar a base. AbaAdults diz18–59, websiteAdult diz19–59: manter website19–59como âmbito, não ampliar para18silenciosamente. AbaAdultCorrectedMETs não foi validada como calculadora individual, e seus caches incluemDIV/0ementradas vazias; não importar suas fórmulas/zeros como resultados.",
+  "checks": [
+    {
+      "cell": "I11",
+      "formulaRecomputedInPython": 157.95,
+      "originalStoredValue": 157.95,
+      "matches": true
+    },
+    {
+      "cell": "I12",
+      "formulaRecomputedInPython": 236.92500000000007,
+      "originalStoredValue": 236.92500000000007,
+      "matches": true
+    },
+    {
+      "cell": "I13",
+      "formulaRecomputedInPython": 315.9,
+      "originalStoredValue": 315.9,
+      "matches": true
+    },
+    {
+      "cell": "I14",
+      "formulaRecomputedInPython": 394.875,
+      "originalStoredValue": 394.875,
+      "matches": true
+    },
+    {
+      "cell": "I15",
+      "formulaRecomputedInPython": 473.85000000000014,
+      "originalStoredValue": 473.85000000000014,
+      "matches": true
+    },
+    {
+      "cell": "I16",
+      "formulaRecomputedInPython": 631.8,
+      "originalStoredValue": 631.8,
+      "matches": true
+    },
+    {
+      "cell": "I17",
+      "formulaRecomputedInPython": 837.1349999999999,
+      "originalStoredValue": 837.1349999999999,
+      "matches": true
+    },
+    {
+      "cell": "M12",
+      "computedFromAdultMET": 1.2962962962962963,
+      "originalStoredValue": 1.2962962962962963,
+      "matches": true
+    }
+  ],
+  "nativeWorkbookRecalculated": false,
+  "workbookModified": false,
+  "visualReviewPerformed": false
+}

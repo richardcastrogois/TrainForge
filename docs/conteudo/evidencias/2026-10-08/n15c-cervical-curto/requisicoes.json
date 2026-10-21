@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C. Primeira coleta de originais publicos dirigidos; nao executa conteudo, nao autentica, nao repete falhas.",
+  "requests":[
+    {"id":"c15-kamioka2011-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Original do ensaio de oito alongamentos para cuidadoras: conferir ausencia de beneficio, instrucoes e direitos, sem confundir programa curto com eficaz."},
+    {"id":"c15-cervical2026-pubmed-html","url":"https://pubmed.ncbi.nlm.nih.gov/41042388/","extension":"html","accept":"application/json,text/html,text/plain","purpose":"Resumo primario e identidade de ensaio de cuidadores profissionais, DOI/data e limitacoes; nao artigo integral."},
+    {"id":"c15-cervical2026-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT06346249","extension":"json","accept":"application/json,text/html,text/plain","purpose":"Cadastro original, modalidade de entrega e cointervencoes; sem assumir resultados postados ou roteiro recebido."},
+    {"id":"c15-cervical2026-suplemento-pdf","url":"https://links.lww.com/JOM/C123","extension":"pdf","accept":"application/pdf","purpose":"Suplemento editorial anunciado, verificar corpo/formato e autoria/doses se recebido. Nao extrapolar exercicio isolado a partir de pacote multimodal."}
+  ]
+}

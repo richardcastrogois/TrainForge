@@ -1,0 +1,22 @@
+{
+  "id": "i15-snacking-zip-accept",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:54:04.099203+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Unica correcao de Accept ZIP apos 406 tecnico, endpoint publico OA, teto original 2 MiB. Preservar i15-snacking-suplementos-repositorio; listar arquivo e verificar caminhos/tamanho antes de leitura OOXML. Sem macros ou contorno de desafio.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 675646,
+  "bodyFile": "../raw/i15-snacking-zip-accept.zip",
+  "sha256": "bf84b537e8500bf5fe99c554c708c8902d9506c303768a271f58bddbb4a3c36e"
+}

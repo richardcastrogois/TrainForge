@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-04", "researchOnly": true,
+  "programmes": [
+    {
+      "id": "I18-P21", "sourceId": "PR24", "authors": "Jofre-Saldia et al.", "year": 2023, "doi": "10.3390/ijerph20032755",
+      "record": "i18-mptp-artigo.evidencia.json", "pdfPhysicalPages": 25, "articlePages": 24,
+      "licenseObserved": "CC BY 4.0 no PDF editorial primario", "thirdPartyRepositoryLicenseDiffers": "USS indica CC BY-NC; nao usado como prova de licenca do PDF editorial.",
+      "audience": "60-80 anos, residentes na comunidade, deslocamento sem assistencia pessoal/tecnica e exclusoes clinicas declaradas.",
+      "noviceTrainingHistoryExplicit": false, "autonomousDeliveryDemonstrated": false,
+      "setting": "Centro de intervencao equipado com maquinas; caminhada interna em sala 20 x 10 m. Nao aparelhos de praca.",
+      "cycleWeeks": 27, "sessionsPerWeek": 2, "sessionsOnNonConsecutiveDays": true, "groupSize": "10-15",
+      "phaseWeeks": [[1,9],[10,18],[19,27]], "blockWeeks": 3, "blocksPerPhase": 3,
+      "phaseSessionMinutesApprox": [45,50,60], "warmupMinutesEach": 10, "cooldownMinutesEach": 10,
+      "strengthReassessment": "Teste 10RM por exercicio a cada seis sessoes; cargas individualizadas, nao serie ate falha.",
+      "equipment": ["chest press", "leg extension", "rowing", "leg press", "triceps pull", "faixa elastica", "cadeira", "bosu", "minitramp", "balao", "cones/linha demarcada"],
+      "phasePath": ["adaptacao neuromuscular", "potencia", "resistencia muscular", "marcha estatica", "marcha dinamica", "marcha multidirecional", "equilibrio/flexibilidade estaticos", "equilibrio/flexibilidade dinamicos", "dupla tarefa"],
+      "tableReview": "Tabela 2, fisicas 7/8, extraida e inspecionada visualmente. Na continuacao reaparece cabecalho Phase 1 antes de Phase 3; nao criar quarta fase ou reiniciar ciclo.",
+      "notationIssues": ["Tabela I:75%MR, texto 70-75%1RM e avaliacao 10RM; preservar notacoes, nao converter em kg sem autor/profissional.", "R:6(10),5(10),10(12),4(10),7(10) ficam literais; nao decidir significado de parenteses por palpite.", "S:4/R:15 segundos no bloco de equilibrio nao vira 15 repeticoes.", "Borg/RPE 6-8 sem escala operacional claramente delimitada nao vira zona individual.", "Aquecimento/desaceleracao nao trazem instrucoes completas de todos os movimentos.", "Historia de treino inicial nao explicita iniciante completo; titulo nao basta."],
+      "studyIssues": ["102 sujeitos inicialmente e 55 ao final; nao afirmar apenas 55 recrutados.", "Titulo apresenta randomized clinical trial e discussao descreve quasi-experimental; divergencia preservada.", "Autonomia sem auxiliar e exclusoes da amostra nao equivalem a criterio diagnostico universal do app."],
+      "decision": "Referencia humana de percurso funcional com equipamento; nao programa iniciante operacional selecionado enquanto instrucao/notacoes/elegibilidade nao fechadas."
+    },
+    {
+      "id": "I18-P22", "sourceId": "PR25", "authors": "Walker et al.", "year": 2019, "volumeYear": 2018, "doi": "10.3389/fphys.2018.01933",
+      "record": "i18-walker-forca.evidencia.json", "licenseObserved": "CC BY no proprio artigo editorial",
+      "audience": "16 idosos 66-73 recrutados, antes sedentarios; exame medico, sem condicoes neurologicas/diabetes, medicacao neurotropica ou lesao/incapacidade dos membros inferiores conforme estudo.",
+      "noviceTrainingHistoryExplicit": "Sedentarismo explicitado; nao se afirma nunca ter treinado.",
+      "completedOlderParticipants": 13, "olderAnalyticParticipants": 11, "olderTrainingInjuryReported": true,
+      "setting": "Academia universitaria, instrucao e tecnica constantemente observadas por instrutores qualificados.",
+      "cycleWeeks": 14, "sessionsPerWeek": 2, "sessionsOnNonConsecutiveDays": true,
+      "phaseWeekLabels": ["1-2","3-5","6-7","8-9","10-12","13-14"],
+      "tableProjection": "amostra-walker-tabela.json", "sessionTemplateCount": 12, "movementRowCount": 112, "uniqueMovementCount": 28,
+      "tableCheck": "Toda tabela lida com parser estrutural e conferida por fases/sessoes. Contexto editorial de grupo nao preenche automaticamente celulas de dose vazias.",
+      "phasePath": ["resistencia muscular", "hipertrofia", "hipertrofia", "forca maxima", "forca maxima/potencia", "potencia"],
+      "initialLegPress": {"sets": 3,"reps": "14-16", "percent1RM": "40-60%", "tempoConcentricEccentricSeconds": "2:2", "interSetRestSeconds": 60},
+      "lateChanges": "Fases posteriores incluem Smith, pesos livres, saltos e exercicios de potencia. Nao recortar primeiras semanas nem remover saltos e apresentar como programa humano alternativo.",
+      "programmeSessionMinutes": null, "completeWarmupInstructions": null, "machineModels": null, "completeExerciseInstructionManual": null,
+      "protocolDistinction": "Dinamometro/EMG/contracoes isometricas de avaliacao nao sao os exercicios do programa e nao requerem ser reproduzidos no app.",
+      "decision": "Candidato humano para idosos antes sedentarios em academia supervisionada. Ciclo/tabela recebidos; instrucao tecnica/ativos/modelos essenciais ainda pendentes. Nao certificar seguranca universal, nao omitir lesao."
+    }
+  ],
+  "criteriaApplied": ["Experiencia, idade e capacidade sao dimensoes diferentes.", "Material externo/lote final nao herda permissao automaticamente da licenca de artigo.", "Sem parceiro ou custo de profissional assumidos.", "Nenhum percentual foi aplicado a pessoa real, nenhum 1RM calculado ou novo treino gerado."]
+}

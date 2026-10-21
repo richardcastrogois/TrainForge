@@ -1,0 +1,23 @@
+{
+  "id": "c15-roshid2024-protocolo-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10993085/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:51:51.135070+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito OA publico do protocolo DOI10.7759/cureus.55520. Conferir roteiro Benson/licenca/entrega/casa/cointervencao, nao resultados pelo texto de intencao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10993085/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 68350,
+  "bodyFile": "../raw/c15-roshid2024-protocolo-xml.xml",
+  "sha256": "1aa0ca5229552c23bbc2200659766b31082e7fc298bf87179fd63d382fb4cd79"
+}

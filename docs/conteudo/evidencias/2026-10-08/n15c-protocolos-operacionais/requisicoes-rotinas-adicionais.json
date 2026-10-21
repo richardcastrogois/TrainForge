@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: fontes adicionais de pratica propria, nao treino do paciente; conferir instrucao e entrega sem importar videos de outros programas.",
+  "requests":[
+    {"id":"c15-baduanjin-avc2023-cn-html","url":"https://www.zglyyx.com/CN/10.13517/j.cnki.ccm.2023.08.001","extension":"html","purpose":"Original chines, cuidadores de AVC; verificar campos publicados e linkPDF real, autoria/rotina/direitos."},
+    {"id":"c15-alonso2020-repositorio-pdf","url":"https://buleria.unileon.es/bitstream/10612/19575/1/Physiotherapeutic_Intervetion_Promote_Self_Care.pdf","extension":"pdf","accept":"application/pdf","purpose":"Deposito primario da universidade, fisioterapia/autocuidado de cuidadores; descobrir se inclui os dez roteiros e CDs efetivamente usados."},
+    {"id":"c15-vr2025-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452558/fullTextXML","extension":"xml","accept":"application/xml","purpose":"JATS da pratica propria de cuidador com K-HERO; nao eliminar hardware/supervisao nem tratar melhora exploratoria como prova universal."},
+    {"id":"c15-qigong-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT04019301","extension":"json","purpose":"Revalidar PR32 ja catalogada: existencia de resultados/documentos e identidade das doses; nao nova familia pelo registro."},
+    {"id":"c15-qigong-protocolo-pdf","url":"https://cdn.clinicaltrials.gov/large-docs/01/NCT04019301/Prot_SAP_000.pdf","extension":"pdf","accept":"application/pdf","purpose":"Protocolo21p identificado por linkprimario: pacote operacional/cointervencao/elegibilidade/resultados/versoes. Nao manual do controle automaticamente licenciado."}
+  ]
+}

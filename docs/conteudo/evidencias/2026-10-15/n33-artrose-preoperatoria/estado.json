@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-15",
+  "niche": "N33",
+  "subniche": "artrose_grave_joelho_anca_fase_pre_artroplastia_NEMEX_TJR",
+  "status": "concluida_para_pesquisa_no_recorte",
+  "researchClosed": true,
+  "startedAfterN32ResearchClosure": true,
+  "n32Audit": "../n32-dor-limitacoes/auditoria-fechamento.json",
+  "n34Started": true,
+  "n15Paused": true,
+  "n21Started": false,
+  "criterion": "Uma condicao/populacao/fase por subnicho; fonte, ambiente, supervisao e direitos. Nao transferir programa de idosos autonomos para dependentes ou para cuidador com queixa propria.",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closureAudit": "auditoria-fechamento.json",
+  "selectedContent": "componentes-profissionais.json",
+  "nextNiche": "N34"
+}

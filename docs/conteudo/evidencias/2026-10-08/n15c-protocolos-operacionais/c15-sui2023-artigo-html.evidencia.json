@@ -1,0 +1,24 @@
+{
+  "id": "c15-sui2023-artigo-html",
+  "url": "https://formative.jmir.org/2023/1/e42861/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:49:37.993887+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 202,
+  "use": "research_only",
+  "purpose": "Artigo e URLs publicadas de suplementos; pacote combinado acupressao/meditacao nao redefinir silenciosamente como exercicio fisico de cuidador.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://formative.jmir.org/2023/1/e42861/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 2121,
+  "bodyFile": "../raw/c15-sui2023-artigo-html.html",
+  "sha256": "a5990bcf5abaa5e7a0f7e3cd9b497d3c31de270d77b81c564fcd3c67146aa77a",
+  "error": "HTTP 202"
+}

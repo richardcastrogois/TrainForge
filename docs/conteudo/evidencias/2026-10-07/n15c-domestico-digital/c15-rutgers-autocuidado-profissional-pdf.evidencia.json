@@ -1,0 +1,24 @@
+{
+  "id": "c15-rutgers-autocuidado-profissional-pdf",
+  "url": "https://care2caregivers.com/wp-content/uploads/2019/12/Professional-Self-Care-Booklet-English.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:54:35.002497+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Versao especifica profissionais/paraprofissionais indicada pela instituicao; comparar instrucao/uso domiciliar/direitos sem herdar elegibilidade do familiar.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://care2caregivers.com/wp-content/uploads/2019/12/Professional-Self-Care-Booklet-English.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 12409802,
+  "bodyFile": "../raw/c15-rutgers-autocuidado-profissional-pdf.pdf",
+  "sha256": "1f3b9ff2204699fe68b6764ac27f0e6a22cfdac6fd7e186af00d374853f6e36c",
+  "bodyFormatMatchesRequest": true
+}

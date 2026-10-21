@@ -1,0 +1,24 @@
+{
+  "id": "c15-ufpb-dissertacao-2018",
+  "url": "https://repositorio.ufpb.br/jspui/bitstream/123456789/14210/1/Arquivototal.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:25:41.561384+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Dissertacao108p, profissional/validacao e guia na versao original; anexo/manual nao vira automaticamente edicao2020.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://repositorio.ufpb.br/jspui/bitstream/123456789/14210/1/Arquivototal.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 3906881,
+  "bodyFile": "../raw/c15-ufpb-dissertacao-2018.pdf",
+  "sha256": "6ab2b24ed9657ebd2083a922b97d429ae396bef4c39d0ba767d2165b04fa6d06",
+  "bodyFormatMatchesRequest": true
+}

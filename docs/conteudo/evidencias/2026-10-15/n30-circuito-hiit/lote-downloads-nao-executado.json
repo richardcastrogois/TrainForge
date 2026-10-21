@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-15",
+  "manifest": "requisicoes-03.json",
+  "executed": false,
+  "autoApprovalRejected": true,
+  "reason": "Lote incluía PDF de terceiro sem licença verificada, potencial conteúdo restrito. Nenhuma das três requisições desse lote foi executada.",
+  "notRetried": [
+    "MotricidadeHumana cópia Klika2013",
+    "PDF Poon cuja licençaHTML tem textoNCND e linkBY conflitantes",
+    "PDFBallesta desse lote"
+  ],
+  "saferAlternative": "Textos primários já recebidos e rotas JATS com AcceptXML correto para confirmar licença/métodos. Não é execução indireta do lote rejeitado e não solicita cópia de terceiro."
+}

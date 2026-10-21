@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-15",
+  "authority": "pedido direto do autor neste chat",
+  "activeNiche": "N22",
+  "pausedNiches": [
+    "N15"
+  ],
+  "n15Closed": false,
+  "n21Started": false,
+  "sequence": "N22 e seguintes, uma N por vez; somente avancar apos fechamento real; se limite da rodada chegar antes, permanecer na mesma N",
+  "compositionAllowed": true,
+  "compositionPolicy": "Podemos compor a partir de varias fontes humanas; registrar autoria, contribuicao e fonte por componente; conferir compatibilidade, dose, materiais, publico, apoio e direitos. Nao atribuir a composicao a um autor original nem herdar eficacia do programa completo.",
+  "searchPolicy": "Explorar colecoes, autores, referencias, manuais e programas de apps; buscas por palavras-chave sao uma via, nao a unica. Nao repetir coleta falha sem nova pista.",
+  "eventualGoal": "Preparar conteudo para experimentar no TrainForge e identificar lacunas; conclusao de pesquisa nao publica automaticamente conteudo nem inicia outra etapa."
+}

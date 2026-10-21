@@ -1,0 +1,23 @@
+{
+  "id": "n45-wai-older",
+  "url": "https://www.w3.org/WAI/older-users/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T01:07:55.681654+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Necessidades diversas de pessoas idosas e participação na avaliação; não apenas tamanho de letra.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.w3.org/WAI/older-users/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 46678,
+  "bodyFile": "../raw/n45-wai-older.html",
+  "sha256": "da4d6a898003683dfdc1c08fff06b90077d0544a9d30219d823ede350c5093c4"
+}

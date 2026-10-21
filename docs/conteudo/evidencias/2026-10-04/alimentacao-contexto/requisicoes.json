@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-04",
+  "niche": "N08-I_N09-I_N10-I_N11-I",
+  "requests": [
+    {"id": "a08-fda-cuidador", "url": "https://www.fda.gov/consumers/womens-health-topics/caring-others-resources-help-you", "extension": "html", "purpose": "Orientacao primaria de preparo/armazenamento pelo cuidador e limites profissionais, sem importar imagens ou restringir cuidadores a mulheres."},
+    {"id": "a08-fda-seguranca-idosos", "url": "https://www.fda.gov/food/people-risk-foodborne-illness/food-safety-older-adults-and-people-cancer-diabetes-hivaids-organ-transplants-and-autoimmune", "extension": "html", "purpose": "Contexto de seguranca alimentar em idosos e necessidades especiais; nao manual completo, receita terapeutica ou temperaturas inventadas."},
+    {"id": "a09-nhs-perda-involuntaria", "url": "https://www.nhs.uk/symptoms/unintentional-weight-loss/", "extension": "html", "purpose": "Distinguir perda involuntaria de objetivo de peso e necessidade de avaliacao; nao diagnosticar, prescrever suplemento ou criar limiar proprio."}
+  ]
+}

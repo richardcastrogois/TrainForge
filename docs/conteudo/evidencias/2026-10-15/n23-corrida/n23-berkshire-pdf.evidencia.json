@@ -1,0 +1,24 @@
+{
+  "id": "n23-berkshire-pdf",
+  "url": "https://www.berkshirehealthcare.nhs.uk/media/2jmpfnad/return-to-running-bh1165q-feb-2026.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:39:07.722035+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF2p vigente retorno2026; autoria/versao/ambiguidade e apoio",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.berkshirehealthcare.nhs.uk/media/2jmpfnad/return-to-running-bh1165q-feb-2026.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 204313,
+  "bodyFile": "../raw/n23-berkshire-pdf.pdf",
+  "sha256": "24a6990aadbf428f96f9c3cad8e8aba4fb7efc2dcbfd16dc85e5359bef38963b",
+  "bodyFormatMatchesRequest": true
+}

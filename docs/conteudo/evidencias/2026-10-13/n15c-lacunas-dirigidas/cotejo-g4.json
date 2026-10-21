@@ -1,0 +1,27 @@
+{
+  "date":"2026-10-13","sourceId":"PR68","item":"CG-04",
+  "status":"cotejo_tecnico_parcial_nao_guia_aprovado",
+  "primaryPackage":"../../2026-10-12/cg04-revieew/pacote-factual.json",
+  "primaryFigureReceipt":"../../2026-10-07/n15c-revieew-suplementos/c15-revieew-si2-tif.evidencia.json",
+  "auxiliarySources":[
+    {"id":"NHS-OCATS-SHOULDER","receipt":"n15dir-cg04-nhs-ombro-atual-pdf.evidencia.json","pages":16,"sha256":"2a0eb1d6518ff93a36b2ef191224771e69b016a1538ebb3a24f1b730c62d6469","textPagesRead":[2,13,16],"pagesActuallyVisuallyViewed":[2,13,16],"exactEditionNumberObserved":null},
+    {"id":"NHS-OCATS-LOWBACK","receipt":"n15dir-cg04-nhs-lombar-atual-pdf.evidencia.json","pages":10,"sha256":"60f6cc2e30df4db6e64a6512422e8b48bca5005d5dabf12ed7637c6a99170158","textPagesRead":[2,3,4,5,10],"pagesActuallyVisuallyViewed":[2,3,4,5,10],"exactEditionNumberObserved":null}
+  ],
+  "professionalContext":{"institution":"North Cheshire and Mersey NHS Foundation Trust, Musculoskeletal Physiotherapy OCATS/Health Services at Wolves","primaryServiceUrl":"https://northcheshireandmersey.nhs.uk/our-services/orthopaedic-clinical-assessment-and-treatment-ocats-warrington/","serviceRole":"Pagina institucional identifica equipe experiente de fisioterapeutas MSK; PDFs indicam instrucao previa pelo fisioterapeutaOCATS.","sourceIsCaregiverSpecificClinicalTrial":false,"individualAuthorOrRegistrationIndependentlyVerified":false},
+  "configurationCandidates":[
+    {"id":"CG04-AUX-PULLAPART","primaryVariants":["CG-04-PULL_APART-level1","CG-04-PULL_APART-level2","CG-04-PULL_APART-level3"],"primaryLocator":"SI2row2,col1-3","auxiliarySource":"NHS-OCATS-SHOULDER","auxiliaryLocator":"PDF13","commonFeatures":"Em pe, faixa entre as duas maos a frente, bracos estendidos e abertura lateral. Fonte auxiliar explicita retorno a posicao inicial.","factualPreparationAndReturnCandidateReceived":true,"notTransferred":["sustentacao3s","6-10repeticoes x4series","resistencia moderada semkg","instrucao adicional de escapulas nao explicitada peloReViEEW"],"fullVariantGuideApproved":false},
+    {"id":"CG04-AUX-BRIDGE-BILATERAL","primaryVariants":["CG-04-GLUTE_BRIDGE-level1"],"primaryLocator":"SI2row5,col1","auxiliarySource":"NHS-OCATS-LOWBACK","auxiliaryLocator":"PDF3","commonFeatures":"Deitado de costas, joelhos dobrados/pes apoiados, elevacao da pelve. Fonte auxiliar explicita retorno descendo a pelve.","factualPreparationAndReturnCandidateReceived":true,"notTransferred":["sustentacao1-2s","10repeticoes x4series","cama como novo apoio","pe tao perto quanto possivel ou nova largura numerica"],"fullVariantGuideApproved":false},
+    {"id":"CG04-AUX-BIRDDOG-REGULAR","primaryVariants":["CG-04-BIRD_DOG-level2"],"primaryLocator":"SI2row8,col2","auxiliarySource":"NHS-OCATS-LOWBACK","auxiliaryLocator":"PDF5, titulo e foto","commonFeatures":"Quatro apoios, elevacao de braco/perna opostos, base regular. Retorno explicitado no guia.","factualPreparationAndReturnCandidateReceived":true,"bodyTextTypo":"Right arm / Leg leg; titulo/foto indicam membros opostos, typo preservado, nao corrigir fonte ou converter em nova lateralidade porIA.","notTransferred":["4-6repeticoes por lado x4series","tempo novo de respiracao/contracao","narrowstance ou variante legs-only nao descritas noauxiliar"],"fullVariantGuideApproved":false}
+  ],
+  "rejectedOrUnprovenMatches":[
+    {"primary":"GluteBridge short/longlever","auxiliaryLocator":"NHS-OCATS-LOWBACK PDF4","reason":"Guia ilustra bracos apoiados ao lado; SI2shortlever demonstra maos junto ao joelho elevado. Nao demonstrada identidade dos apoios/alcavancas, e longlever nao e mesma geometria. Nenhuma variante unilateral aprovada por nome semelhante."},
+    {"primary":"Squat levels1-3","auxiliaryLocator":"NHS-OCATS-LOWBACK PDF6-7","reason":"Sit-to-stand com cadeira/toque/pausa1-2s nao agachamento originalsemcadeira ouhold3s efaixa. Nao substituir."},
+    {"primary":"ArmRaise levels1-3","auxiliaryLocator":"NHS-OCATS-SHOULDER PDF7-8","reason":"Halter/garrafa e orientacao de entrar na faixa dolorosa nao mesma faixa2m e ajustes doReViEEW; nada transferido."},
+    {"primary":"ClinicalPilatesPR136 ShoulderBridge/nomes semelhantes","reason":"Outra familia; nomes/partes comuns nao demonstram variante especifica doPilates2019/2021. Nenhuma ponte/birdDog/pullapart vira instrucaoCG05."}
+  ],
+  "prescriptionController":{"doseAndProgressionSource":"PR68 original eSI3, naoNHS","bandsKgSource":[1.7,2.1,2.6],"nhsHoldsRepetitionsSetsOrPainProgressionImported":false,"newWarmupCooldownOrCalendarCreated":false,"originalMovementScriptsNowAllReceived":false},
+  "rights":{"commercialNhsPhotosOrFullLeafletGrantReceived":false,"nhsPhotosCopiedIntoApk":false,"selectedLayer":"Fatos de cotejo e referencias, nao copia de expressao/figuras NHS","originalSi2LicenceCopiedToNhs":false,"generalMethodFactDistinctionIsAutomaticAssetApproval":false,"legalOpinionProvided":false},
+  "verificationLimits":{"primarySI2ActuallyReViewed":true,"nhsPagesActuallyViewed":8,"pilatesThesisPages52to54ActuallyReViewedForDifference":true,"configurationCandidates":5,"fullOriginalVariantGuidesClosed":0,"independentClinicalCompatibilityReviewPerformed":false,"wholeNhsLeafletsVisuallyReviewed":false},
+  "next":"Cotejar partes factuais com profissional responsavel e recuperar instrucoes originais/compativeis restantes. Nao liberar5variantes ou marcarCG04 fechado pelo cotejo. Tese original requer acesso humano ao CAPTCHA; arquivo ainda nao recebido.",
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false
+}

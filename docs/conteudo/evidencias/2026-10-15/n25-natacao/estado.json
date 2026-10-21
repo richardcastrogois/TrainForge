@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "niche": "N25",
+  "status": "concluido_para_pesquisa_no_escopo_declarado",
+  "researchClosed": true,
+  "startedAfterN24ResearchClosure": true,
+  "n24Audit": "../n24-ciclismo/auditoria-fechamento.json",
+  "selectedLot": "lote-nado-resistencia.json",
+  "audit": "auditoria-fechamento.json",
+  "counts": {
+    "networkReceiptCount": 12,
+    "http200": 9,
+    "usableBodies": 9,
+    "verifiedBodyHashes": 11,
+    "visuallyReviewedPdfPages": 8
+  },
+  "n26Started": true,
+  "snapshotNote": "Consolidado nesta continuação; auditoria preserva escopo do fechamento.",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextEvidence": "../n26-yoga/estado.json"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n13-dash-resource",
+  "url": "https://www.nhlbi.nih.gov/resources/week-dash-eating-plan",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:05:31.396795+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Publico, edicao e origem oficial do menu semanal.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/resources/week-dash-eating-plan",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 77447,
+  "bodyFile": "../raw/n13-dash-resource.html",
+  "sha256": "b1046a034348745501579d5e9a5178ff6891c87c49b82252389cde1186b8bb7a"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-dpm2023-antecedente-html",
+  "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-07-03-183",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:58:30.366005+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "ArtigoDOI10.21926/obm.neurobiol.2303183 atualizado12/03/2024:60duplas30/30no texto versus75/75nas tabelas; burden0-16com26.4, escala esubcategoriasiguaisao2026. Livro/manual e identidade daamostra nao inferir. Nao copiar doses/valores para resolver outra edicao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.lidsen.com/journals/neurobiology/neurobiology-07-03-183",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 194321,
+  "bodyFile": "../raw/c15-dpm2023-antecedente-html.html",
+  "sha256": "c33e6d758f799603dc22bd63a36000f0e650afdb41e9574c5a0bab0ce332bb9c"
+}

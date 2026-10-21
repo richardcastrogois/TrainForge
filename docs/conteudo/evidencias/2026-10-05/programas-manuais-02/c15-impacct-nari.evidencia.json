@@ -1,0 +1,23 @@
+{
+  "id": "c15-impacct-nari",
+  "url": "https://www.nari.net.au/impacct",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:06:13.722451+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira captura oficial IMPACCT para localizar protocolo/manual Otago Plus; nao contato com autores nem extrapolacao do Otago original.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nari.net.au/impacct",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 67425,
+  "bodyFile": "../raw/c15-impacct-nari.html",
+  "sha256": "e715dd4d40c30edb3fef79d5d40d50f7ff4013f57142bbd76abcb2f56c67023a"
+}

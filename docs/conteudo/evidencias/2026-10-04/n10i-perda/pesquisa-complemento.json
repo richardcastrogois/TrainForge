@@ -1,0 +1,46 @@
+{
+  "niche": "N10-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Delimitacao educativa de objetivos de perda de peso para idosos e cuidadores; nao deficit automatico, tratamento de obesidade/desnutricao ou programa individual.",
+  "next": "N11-I; N21 retida pelos complementos ainda abertos.",
+  "evidence": [
+    {"record": "2026-10-04/alimentacao-contexto/a09-nhs-perda-involuntaria.evidencia.json", "anchors": ["without changing", "See a GP"], "role": "Perda involuntaria nao representa sucesso de emagrecimento."},
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["muscles", "health care professional"], "role": "Peso/forca/contexto individual no envelhecimento; numeros antigos explicitamente excluidos."},
+    {"record": "2026-09-30/n10-perda-peso/n10-niddk-programa.evidencia.json", "anchors": ["health care professional"], "role": "Guia humano geral de escolha de programa, nao prescricao por idade."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a07-fda-idosos.evidencia.json", "anchors": ["Serving size is not a recommendation"], "role": "Porcao do rotulo nao cria reducao ou meta pessoal."}
+  ],
+  "dependencies": ["2026-09-30/n10-perda-peso/conteudo-guiado.json", "2026-09-30/n10-perda-peso/resumo-perda-peso.json", "2026-10-04/n09i-ganho/pesquisa-complemento.json", "2026-10-04/geriatria-nutricao/leitura-web.json", "2026-10-03/n14c-cuidador/pesquisa-complemento.json"],
+  "sourceFacts": ["O resumo ESPEN lido na web situa intervencoes redutoras no contexto clinico individualizado, obesidade/problemas relacionados e atividade; nao autoriza regra geral para idosos.", "NHS diferencia perda involuntaria de objetivo deliberado.", "Guias gerais de N10 e suas faixas nao foram validados como programa especifico para todo idoso/cuidador."],
+  "operations": [
+    {"id": "I10-O01", "decision": "Rever as oito licoes gerais: ensinar registo/contexto/apoio sem ativar plano ou deficit pelo ano de nascimento ou BMI isolado."},
+    {"id": "I10-O02", "decision": "Objetivo pessoal do cuidador nao se transfere ao assistido; identidade, vontade e origem mantidas separadas."},
+    {"id": "I10-O03", "decision": "Perda involuntaria ou fragilidade relatada nao recebem reforco positivo, sequencia de metas ou compensacao automatica; orientar avaliacao profissional."},
+    {"id": "I10-O04", "decision": "Registos de peso/forca/atividade sao observacoes, nao prova de melhora clinica, ganho muscular ou gasto a descontar de refeicoes."},
+    {"id": "I10-O05", "decision": "Diario humano de exemplo nao e dieta; linhas/calorias da fonte nao criam limite pessoal. Unknown nao e zero."},
+    {"id": "I10-O06", "decision": "Direitos anteriores preservados: Better Health nao importado gratuitamente para uso comercial; referencias factuais com redacao propria, sem app/arte FDA/NHS copiados."}
+  ],
+  "lessonReview": [
+    {"id": "G10-L01", "decision": "Objetivo nao prova indicacao clinica, especialmente no envelhecimento; nenhum deficit por idade/BMI isolado."},
+    {"id": "G10-L02", "decision": "Rotina observada e consumida separadas por pessoa; nao inferir refeicao do assistido a partir do cuidador."},
+    {"id": "G10-L03", "decision": "Porcao de rotulo nao prescreve ingestao; numero de porcoes consumidas precisa ser conhecido."},
+    {"id": "G10-L04", "decision": "Troca de bebida/alimento nao garante adequacao a restricoes, medicamentos ou degluticao."},
+    {"id": "G10-L05", "decision": "Acao escolhida e barreira funcional declarada, sem meta obrigatoria de peso ou julgamento da balanca."},
+    {"id": "G10-L06", "decision": "Provas/custo/apoio e populacao da fonte precisam corresponder; programa geral nao vira geriatrico pelo filtro de idade."},
+    {"id": "G10-L07", "decision": "Contexto/orcamento de cada pessoa; cuidador pode apoiar compras sem impor seu objetivo ao assistido."},
+    {"id": "G10-L08", "decision": "Apoio e revisao voluntarios; perda involuntaria nao e resultado positivo nem cumprimento da meta."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I10-G01", "met": true, "criterion": "Educacao e decisao clinica de emagrecimento delimitadas para idosos/cuidadores."},
+    {"id": "I10-G02", "met": true, "criterion": "Perda involuntaria/objetivo e dados das pessoas separados em fontes e exemplos."},
+    {"id": "I10-G03", "met": true, "criterion": "Licoes/diario humanos existentes revistos com faixas gerais excluidas das regras individuais."},
+    {"id": "I10-G04", "met": true, "criterion": "Uso factual/direitos e limites do resumo ESPEN registrados; nao exige corpo integral para copiar programa, pois nenhum sera copiado."},
+    {"id": "I10-G05", "met": true, "criterion": "Recorte educativo fechado sem homologacao clinica, dieta, implementacao ou testes humanos."}
+  ],
+  "scenarios": [
+    {"id": "I10-S01", "fictional": true, "case": "Pessoa idosa seleciona perder peso", "expected": "Nao impor deficit, ritmo de kg/semana ou dieta por idade; educacao nao equivale a indicacao individual."},
+    {"id": "I10-S02", "fictional": true, "case": "Peso caiu sem objetivo voluntario", "expected": "Nao celebrar como progresso; conservar relato e orientar avaliacao."},
+    {"id": "I10-S03", "fictional": true, "case": "Cuidador informa refeicao servida", "expected": "Nao presumir consumo nem excluir calorias para atingir seu proprio objetivo."}
+  ],
+  "individualTargets": {"energyDeficitKcal": null, "weightLossKgPerWeek": null, "targetBMI": null, "exerciseCompensationKcal": null},
+  "limits": ["Resumo web ESPEN nao e manual integral recebido/licenciado; falhas locais preservadas.", "Sem recomendacao pessoal, ferramenta clinica validada ou revisao nutricional/editorial independente.", "Revisao de atualidade por lote final e politica profissional/portuguesa de encaminhamento continuam gates de publicacao."]
+}

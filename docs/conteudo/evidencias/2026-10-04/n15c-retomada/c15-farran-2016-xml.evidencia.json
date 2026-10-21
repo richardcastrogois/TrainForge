@@ -1,0 +1,22 @@
+{
+  "id": "c15-farran-2016-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5526207/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:19:42.649521+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Estudo primario identificado em revisao com publico cuidador pessoal; verificar instrucao integral e licenca original.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5526207/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 143736,
+  "bodyFile": "../raw/c15-farran-2016-xml.xml",
+  "sha256": "95ee8276365d76026abb6faca504770a92f44de0441dbb6d16a58d0131bb9e8b"
+}

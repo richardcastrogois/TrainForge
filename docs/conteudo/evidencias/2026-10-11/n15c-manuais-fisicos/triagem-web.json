@@ -1,0 +1,18 @@
+{
+  "date":"2026-10-11",
+  "niche":"N15-C",
+  "collectorReceipt":false,
+  "webOnlyHasNoLocalBodyHash":true,
+  "globalExhaustivenessClaimed":false,
+  "leads":[
+    {"id":"PR116","url":"https://repositorio.ufba.br/handle/ri/36416","decision":"Metadados primarios consultados no leitor web: tese embargada ate22/05/2028, nao coletar bitstream/texto derivado nem solicitar copia.45randomizados/32concluintes, pacote educativo nao gesto isolado. GET local TLSfalhou, sem corpo/hash."},
+    {"id":"PR116","url":"https://revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753","decision":"Artigo01/10/2026 DOI10.21527/2176-7114.2026.51.16753: resumo indexado, nao PDF/manual recebido. GET TLSfalhou, nao repetir ou desativarTLS."},
+    {"id":"PR117","url":"https://link.springer.com/article/10.1186/s12912-025-03881-5","decision":"HTML/PDF originais recebidos: medico ajusta atividade/fadiga; encontros60/90min nao dose individual, apenas nomes de atividades. Conflitos preservados emleitura-fontes."},
+    {"id":"remote-existing-lead","url":"https://clinicaltrials.gov/study/NCT04102514","decision":"Retomar pista existente05/10; protocolo27p09/05/2022 e registroAPI/resultados sao novos originais publicos distintos deXML500 anterior. Nao retryPMC13330425/PMC6891121/captcha, nao criar familia duplicada com piloto2019."},
+    {"id":"PR93","url":"https://doi.org/10.1016/j.psyneuen.2018.08.007","decision":"FAST/Puterman-Hives-Caplin ja familia catalogada; nao novoRCT nem plano operacional obtido porresumo. Checar recibos antes de qualquer novo original. TelomeraseNS/nao alegar antienvelhecimento."},
+    {"id":"King2002-existing-triage","url":"https://academic.oup.com/biomedgerontology/article-pdf/57/1/M26/9732782/M26.pdf","decision":"Observado redirecionamento para pagina AvailableforPurchase OUP/Silverchair. Nao compra/bypass/espelho nao primario. Caminhada prescrita com telefone nao marchar parado porinferir; HRR naoHRmax."},
+    {"id":"Choi2020","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7762537/","decision":"Pista de pacote misto de relaxamento emcuidadores, nomes Schultz/Jacobson/Trager nao roteiro recebido nem efeito isolado. Nao coletado nesta rodada."},
+    {"id":"prospective-only","url":"https://ensaiosclinicos.gov.br/rg/RBR-8nb3nmh","decision":"Registro prospectivo2026/yoga nao resultado clinico comprovado. Nao aprovar por plano futuro."}
+  ],
+  "next":"Continuar originais operacionais remotos na pasta n15c-remoto-operacional. Nenhuma outraN/N21, sem app."
+}

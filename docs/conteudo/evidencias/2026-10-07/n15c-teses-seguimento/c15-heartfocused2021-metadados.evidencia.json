@@ -1,0 +1,23 @@
+{
+  "id": "c15-heartfocused2021-metadados",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:13:44.463130+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo primario piloto respiracao cuidadores: resultados e eventual carga adicional.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 4536,
+  "bodyFile": "../raw/c15-heartfocused2021-metadados.json",
+  "sha256": "6fed5b306fa37efa312d4b8e3202b80697a63821f6b489be79be0650a885f7d9"
+}

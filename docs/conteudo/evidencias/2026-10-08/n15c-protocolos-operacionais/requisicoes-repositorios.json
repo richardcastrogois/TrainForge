@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C. Repositorio publico independente de artigos e registro primario. Nao contornar sessao, captcha, TLS ou repetir rotas falhas.",
+  "requests":[
+    {"id":"c15-sui2023-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9989915/fullTextXML","extension":"xml","accept":"application/xml","purpose":"JATS publico de artigo OA; URLs reais dos suplementos e conflito de dose do pacote combinado, sem inferir licenca de audios externos."},
+    {"id":"c15-gyyb2024-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12874544/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Manuscrito primario depositado: 20 cuidadores, fracionamento explicitamente permitido e limites de viabilidade; buscar videos sem baixa-los."},
+    {"id":"c15-gyyb-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT03853148","extension":"json","purpose":"Registro compartilha estudo principal de idosos e suplemento de cuidadores; manter identidade/idades/amostras distintas e arquivos efetivamente publicados."}
+  ]
+}

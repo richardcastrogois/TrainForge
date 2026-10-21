@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-12","scope":"SomenteCG01-STATIC/PR42, primeirosGETs de guias profissionais publicos apos deduplicacao. Fontes auxiliares nao sao protocoloAtac, ensaio de cuidadores ou autorizacao de misturar doses. Nenhumvideo/imagem externa/login/contato/retry. PDFsem teto autorizado; TLS padrao.",
+  "requests":[
+    {"id":"cg01-worcs2025-pdf","url":"https://www.worcsacute.nhs.uk/documents/documents/patient-information-leaflets-a-z/3051-stretching-exercises-physiotherapy/","accept":"application/pdf","extension":"pdf","purpose":"Guia departamentoFisioterapia12p, versao2.1/2025, postura Exercise15/preparo geral e limites; dose3reps diferente deAtac8. Nao copiar figuras/completar protocolo."},
+    {"id":"cg01-roh-guia-html","url":"https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-hip","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Guia hospital ortopedico: comparar postura no degrau/precaucoes.20-30s5reps/osteoartrite nao dose/publicoAtac. Return to starting position pertence bridge, nao transferir ao hamstring."},
+    {"id":"cg01-dynamic-guia-html","url":"https://dynamichealth.nhs.uk/help-and-advice/osteoarthritis-oa/","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Guia fisioterapia NHS: retorno lento no hamstring, mas variante semdegrau e dose20-30s/OA. Nao equivalencia por nome nem limitesRPE5-7 transferidos ao estatico."},
+    {"id":"cg01-csp-seguranca-html","url":"https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Associacao profissional CSP: conselho previo/agravamento e materialPhysiotec. Variante sentado diferente; apenas referencia profissional geral, nenhumvideo/CD recebido ou licenciado."}
+  ]
+}

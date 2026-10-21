@@ -1,0 +1,10 @@
+{
+  "requests": [
+    {
+      "id": "n39-fixture-image-metadata",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3APizzaMargherita.jpg%7CFile%3AJapanese+Cheesecake.jpg%7CFile%3ACheese+plate+%28498052801%29.jpg%7CFile%3ABacalhau+%C3%A0+br%C3%A1s.jpg%7CFile%3ACaldo+Verde.jpg%7CFile%3AChair.JPG",
+      "purpose": "Metadados públicos de seis arquivos específicos observados no Commons: licença, autoria, URL de miniatura, tamanho e SHA-1. Não baixar fotografias nem extrair coordenadas/EXIF pessoais; campos de atribuição apenas para proposta de ensaio.",
+      "extension": "json"
+    }
+  ]
+}

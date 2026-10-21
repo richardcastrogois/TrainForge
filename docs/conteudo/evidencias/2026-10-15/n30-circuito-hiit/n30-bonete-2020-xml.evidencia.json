@@ -1,0 +1,24 @@
+{
+  "id": "n30-bonete-2020-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7084372/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:46:25.253217+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Estudo associado18semanas, verificar amostra/programa e eventos adversos sem contar como protocolo independente por título",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7084372/fullTextXML",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 280,
+  "bodyFile": "../raw/n30-bonete-2020-xml.xml",
+  "sha256": "a7de1f03c5f439409685fa1ae3e0e975265dfa8fc719520a4b85063486180397",
+  "error": "HTTP 406"
+}

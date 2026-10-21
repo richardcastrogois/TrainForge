@@ -1,0 +1,167 @@
+{
+  "niche": "N15-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Programa em casa por elegibilidade e autonomia declaradas, sem prescricao ou triagem clinica implementada.",
+  "next": "N16-I",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n15i-idosos-casa/n15i-nhs-sentado.evidencia.json",
+      "anchors": [
+        "solid, stable chair",
+        "5 to 10 seconds",
+        "2 sets of 5",
+        "3 rotations",
+        "18 January 2024"
+      ],
+      "role": "Rotina sentada generica, nao programa geriatrico completo"
+    },
+    {
+      "record": "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+      "anchors": [
+        "Healthcare",
+        "2025 Nov 27",
+        "physician"
+      ],
+      "role": "Programa estudado em populacao idosa delimitada; amostra anterior preservada"
+    },
+    {
+      "record": "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json",
+      "anchors": [
+        "3.5",
+        "identifiable people"
+      ],
+      "role": "Limites de reutilizacao NHS por ativo"
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/n15-casa-sem-equipamento/amostra-programas.json"
+  ],
+  "programmes": [
+    {
+      "id": "I15-P01",
+      "sourceId": "PR13",
+      "evidenceProjection": "2026-10-03/n15-casa-sem-equipamento/amostra-programas.json",
+      "decision": "Candidato apenas no publico e na supervisao estudados. Nao copiar para qualquer idoso/dependente. Cuidador nao substitui profissional nem aprovacao medica.",
+      "physicalCaregiverAssistanceDemonstrated": false
+    },
+    {
+      "id": "I15-P02",
+      "sourceId": "IC05",
+      "sourceTitle": "NHS Sitting exercises",
+      "sourceLastReviewed": "2024-01-18",
+      "explicitOlderAdultEligibility": false,
+      "chair": "Estavel, sem rodas; pes assentes e joelhos a angulo reto; evitar bracos que limitem movimento.",
+      "weeklyFrequencyMinimum": 2,
+      "sessionMinutes": null,
+      "weeks": null,
+      "progression": "Aumento gradual de repeticoes, sem fases quantificadas.",
+      "movements": [
+        {
+          "id": "I15-M01",
+          "name": "Chest stretch",
+          "holdSeconds": [
+            5,
+            10
+          ],
+          "repetitions": 5,
+          "sets": null,
+          "perSide": false
+        },
+        {
+          "id": "I15-M02",
+          "name": "Upper-body twist",
+          "holdSeconds": 5,
+          "repetitions": 5,
+          "sets": null,
+          "perSide": true
+        },
+        {
+          "id": "I15-M03",
+          "name": "Hip marching",
+          "holdSeconds": null,
+          "repetitions": 5,
+          "sets": null,
+          "perSide": true
+        },
+        {
+          "id": "I15-M04",
+          "name": "Ankle stretch",
+          "holdSeconds": null,
+          "repetitions": 5,
+          "sets": 2,
+          "perSide": true
+        },
+        {
+          "id": "I15-M05",
+          "name": "Neck rotation",
+          "holdSeconds": 5,
+          "repetitions": 3,
+          "sets": null,
+          "perSide": true
+        }
+      ],
+      "restSeconds": null,
+      "rights": "Texto candidato condicionado aos termos NHS; imagens e traducao pt-PT nao homologadas.",
+      "physicalCaregiverAssistanceDemonstrated": false
+    }
+  ],
+  "criteria": [
+    {
+      "id": "I15-C01",
+      "decision": "Idade, experiencia por modalidade e capacidade funcional sao dimensoes separadas."
+    },
+    {
+      "id": "I15-C02",
+      "decision": "Ajuda a usar o app nao indica necessidade ou autorizacao de ajuda fisica."
+    },
+    {
+      "id": "I15-C03",
+      "decision": "Sem elegibilidade/supervisao contempladas pela fonte, nao disponibilizar prescricao automatica."
+    },
+    {
+      "id": "I15-C04",
+      "decision": "Dose ausente permanece null; nao completar a rotina com valores de outra fonte."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I15-S01",
+      "fictional": true,
+      "case": "Idoso experiente e autonomo",
+      "expected": "Nao selecionar automaticamente rotina sentada por idade."
+    },
+    {
+      "id": "I15-S02",
+      "fictional": true,
+      "case": "Pessoa usa cadeira com rodas",
+      "expected": "Nao tratar como equivalente ao apoio estavel descrito."
+    },
+    {
+      "id": "I15-S03",
+      "fictional": true,
+      "case": "Cuidador pede exercicio para pessoa com ajuda fisica",
+      "expected": "Nao generalizar OEC ou rotina NHS; recorte assistido nao demonstrado."
+    },
+    {
+      "id": "I15-S04",
+      "fictional": true,
+      "case": "Cuidador ajuda apenas a ler",
+      "expected": "Manter elegibilidade da pessoa e legitimidade de acesso separadas da ajuda digital."
+    },
+    {
+      "id": "I15-S05",
+      "fictional": true,
+      "case": "Origem nao informa duracao",
+      "expected": "Nao inventar minutos, sets, repouso ou fases."
+    }
+  ],
+  "limits": [
+    "Programa domiciliar para idosos dependentes/fisicamente assistidos nao obtido.",
+    "Revisao profissional portuguesa, traducao, direitos por imagem e testes com idosos/cuidadores pendentes.",
+    "NHS sentado nao e prescricao geriatrica por diagnostico; cinco grupos, nao sete.",
+    "Sem baixar imagens/videos nem apresentar beneficios clinicos como garantia TrainForge."
+  ]
+}

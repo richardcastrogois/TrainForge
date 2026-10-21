@@ -1,0 +1,29 @@
+{
+  "niche": "N13-I", "date": "2026-10-04", "use": "research_only",
+  "sourceId": "CI05", "publisher": "National Institute on Aging / NIH", "governmentArchive": "GovInfo",
+  "title": "What's on Your Plate? Smart Food Choices for Healthy Aging",
+  "edition": "Reprinted June 2018", "clinicalBasisInBook": "Dietary Guidelines for Americans, 2010",
+  "sourceRecord": "2026-10-04/n13i-planos/a13-nia-menu-2018.evidencia.json",
+  "sourceSha256": "0e09adc15333a19de58112f00bdf65852b7213ebf6aba289fe92fd4dd5ed5fc6",
+  "pdfPages": 84, "pdfModifiedDateIsClinicalReview": false,
+  "audience": "Envelhecimento e adultos mais velhos; livro educativo dirigido ao publico e familiares, nao prescricao geriatrica individual.",
+  "useContext": "Planejamento de refeicoes domesticas; quatro exemplos de um dia, nao sequencia inventada de quatro ou sete dias.",
+  "caregiverOwnPlan": "Pode estudar organizacao/preparo, mas o papel de cuidador nao demonstra necessidade energetica nem elegibilidade para o menu do assistido.",
+  "menus": [
+    {"id": "I13-NIA01", "printedPage": 72, "physicalPdfPage": 74, "days": 1, "mealGroups": ["Breakfast", "Snack", "Lunch", "Dinner"], "menuTextPresent": true, "portionsVisuallyReviewed": true, "recipesFullySpecified": false},
+    {"id": "I13-NIA02", "printedPage": 73, "physicalPdfPage": 75, "days": 1, "mealGroups": ["Breakfast", "Snack", "Lunch", "Dinner"], "menuTextPresent": true, "portionsVisuallyReviewed": true, "recipesFullySpecified": false},
+    {"id": "I13-NIA03", "printedPage": 74, "physicalPdfPage": 76, "days": 1, "mealGroups": ["Breakfast", "Snack", "Lunch", "Dinner"], "menuTextPresent": true, "portionsVisuallyReviewed": true, "recipesFullySpecified": false},
+    {"id": "I13-NIA04", "printedPage": 75, "physicalPdfPage": 77, "days": 1, "mealGroups": ["Breakfast", "Snack", "Lunch", "Dinner"], "menuTextPresent": true, "portionsVisuallyReviewed": true, "recipesFullySpecified": false}
+  ],
+  "sourceEnergyBasisKcal": 2000, "energyRecalculated": false, "individualTarget": false,
+  "visualExtractionChecks": [
+    {"page": 74, "quantities": {"black beans": "1/3 cup", "mushrooms": "1/4 cup", "beet greens": "1/3 cup", "quinoa": "1/2 cup", "almonds": "1/2 ounce"}},
+    {"page": 75, "quantities": {"egg": "2/3 egg", "each of three beans": "1/4 cup each", "tomato sauce": "1/2 cup", "onion": "1/4 cup", "cheese sauce": "1/4 cup", "pineapple": "1/4 cup", "mushrooms": "1/4 cup"}},
+    {"page": 76, "quantities": {"sliced banana": "1/2 cup", "milk in cereal": "1/2 cup", "shredded lettuce": "1/2 cup", "succotash": "1/2 cup"}},
+    {"page": 77, "quantities": {"uncooked oatmeal": "1/2 cup", "kidney beans": "1/2 cup", "cheddar": "1/2 ounce", "lettuce": "1/2 cup", "avocado": "1/2 cup", "cooked spinach": "1/2 cup", "ricotta": "1/2 cup", "tomato sauce": "1/2 cup"}}
+  ],
+  "extractionDecision": "pypdf perdeu denominadores em muitas fracoes; valores visuais conferidos nas quatro paginas. Nao publicar extracao bruta, estimar gramas por xicara ou confundir fracao perdida com erro do autor.",
+  "safetyReview": ["Introducao e capitulo de barreiras preservam individualizacao e apoio profissional em necessidades especiais.", "Menus contem leite, ovo, trigo, peixe, nozes e grapefruit; nao intercambiar alimentos/restricoes ou ignorar interacoes com medicamentos.", "Nao transportar orientacao historica para disfagia, suplementacao, perda de peso ou metas atuais; essas indicacoes nao foram homologadas.", "Titulo de envelhecimento nao cobre automaticamente fragilidade, dependencia ou todos os cuidadores."],
+  "rightsScope": "Somente texto dos menus para estudo/adaptacao futura com credito; fotos, ilustracoes, logotipos e fac-simile excluidos. Politica primaria lida pela web e registrada separadamente; lote final ainda exige auditoria.",
+  "releaseApproved": false, "appImplemented": false
+}

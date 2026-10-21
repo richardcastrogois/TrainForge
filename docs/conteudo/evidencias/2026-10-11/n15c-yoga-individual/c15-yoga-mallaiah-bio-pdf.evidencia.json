@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga-mallaiah-bio-pdf",
+  "url": "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/care-centers-and-clinics/Integrative%20Medicine%20Center/Bio%20Mallaiah.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:07:50.086398+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Bio institucional MSc/C-IAYT/mestrado em yoga therapy, desenvolvimento e ensino de intervencoes para cuidadores; nao presumir diplomacao de outros autores ou autoria de cada gesto.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/care-centers-and-clinics/Integrative%20Medicine%20Center/Bio%20Mallaiah.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1343795,
+  "bodyFile": "../raw/c15-yoga-mallaiah-bio-pdf.pdf",
+  "sha256": "79c186a8ca30779dfe8bd3db34665c54add2795c553a7d6b957d0e2648de69e6"
+}

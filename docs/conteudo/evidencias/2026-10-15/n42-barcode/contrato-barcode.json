@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-15",
+  "niche": "N42",
+  "researchClosed": true,
+  "scope": "Contrato de captura/validação textual/lookup e confirmação, sem scanner óptico integrado.",
+  "candidate": "ML Kit BarcodeScanningAndroid: bundled17.3.0 ouPlayServices18.3.1, minSDK23 na documentação recebida. FormatosEAN8/EAN13/UPCA entre outros; wrapper/modelo≈200KB/2.4MB segundo a página, não tamanho medido do TrainForge.",
+  "stages": [
+    "Detectar região potencial não é decodificar payload.",
+    "Guardar formato e rawValue como string, sem retirar zeros. Sem payload decodificado, não consultar produto.",
+    "ParaGTINsuportado, conferir comprimento/dígitos/checksum; chave14padded pode coexistir com original. UPC-E requer expansão especificada, não mero zfill; não implementada.",
+    "Consultar fonte de produtoN04 com código original e conferir código retornado, variante/preparo, data e base por100g/porção. Não inventar produto por prefixo.",
+    "Confirmar produto/pessoa/quantidade e motivo compra/refeição; escanear não confirma consumo.",
+    "Produto ausente/APIindisponível: estado explícito e manual; não repetir503semnova pista, não preencher nutrientes com0."
+  ],
+  "notProvedByChecksum": [
+    "produto existe ou é autêntico",
+    "cadastro GS1 ou titularidade",
+    "correspondência nutricional atual",
+    "quem consumiu",
+    "quantidade/alergénios/objetivo pessoal"
+  ],
+  "lookupEvidence": "../../2026-09-28/n04-fechamento/resumo-fechamento.json",
+  "termsEvidence": "../n41-ocr/n41-mlkit-terms.evidencia.json",
+  "privacy": "Scannerlocal candidato sujeito a termos/métricasMLKit. Barcode/QRpode não ser produto; não abrirURLautomaticamente ou registrar payload pessoal inteiro. Confirmar entrada numérica de produto e pessoa.",
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "aplicavel_com_limites",
+      "finding": "Escanear embalagem e confirmar produto/variante/base. Produto localizado não prova quantidade comida; alternativa de digitar código e busca manual."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "aplicavel_com_limites",
+      "finding": "Código de suplemento/garrafa não é prescrição pós-treino. Mistura/preparo e volume ingerido precisam confirmação independente."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "aplicavel_com_limites",
+      "finding": "Alimento fresco/refeição sem embalagem pode não ter código. Oferecer registro manual, sem forçar equivalente ou GPS."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "aplicavel_com_limites",
+      "finding": "Pessoa que escaneia/compra e pessoa que come são papéis distintos. Registro próprio do cuidador não vira refeição do assistido; confirmar destino do relato."
+    }
+  ],
+  "runtimeInventory": "Pythonbundledsemcv2/pyzbar/zxingcpp e três localizações NodeZXing pesquisadas ausentes. Não é inventário exaustivo; ReportLab gera mas não decodifica e não foi tratado como scanner. Nenhum pacote instalado.",
+  "actualVerification": "verificacoes-gtin.json:9verificações textuais, incluindo2códigos/recibosN04existentes e exemploGS1publicado. Nenhuma câmera, imagem de barcode, SDKAndroid ou nova consulta de produto.",
+  "implementationPending": [
+    "Teste real com código legível/parcial/reflexo, formato e payload; acessibilidade do enquadramento e confirmação.",
+    "Disponibilidade/download do modelo e termos/telemetria da versão escolhida.",
+    "LookupN04/direitos/atualidade e estados erro/ausente com fonte; não é integração pronta."
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "opticalDecodeTested": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n25-tools2026-pdf",
+  "url": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2026.1788570/pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:54:09.993091+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo aberto do próprio editor: curso feminino12semanas, apoio/limites/SwimtoFly separado; não usar app/vídeos sem direitos",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2026.1788570/pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 322002,
+  "bodyFile": "../raw/n25-tools2026-pdf.pdf",
+  "sha256": "80d9db256a603f1bd8cd59d6f1bde33ecb8b3209a6887fdb261f030fff6d5f5c",
+  "bodyFormatMatchesRequest": true
+}

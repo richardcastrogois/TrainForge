@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: URLpublica indexada distinta da rota comtimeout anterior, nao proxy/desafio/URLprivada. Uma coleta inicial por URL, preservar corpo e licenca por versao; nenhum contato ou midia baixada.",
+  "requests":[
+    {"id":"c15-montero2017-tese-canonica-pdf","url":"https://gredos.usal.es/bitstream/10366/137103/1/DME_MonteroCuadradoF_Efectividad.pdf","extension":"pdf","accept":"application/pdf","purpose":"URLprimaria legada realmente indexada; PDF10.32MB acima limite do leitorweb, limitePDF local removido peloautor. Rota anteriorhandletimeout permanece, nao alterarTLS/headers ou repetirURL. Buscar pacoteoriginalPR85, nao nova coorte."},
+    {"id":"c15-salamanca-tutor-perfil-html","url":"https://produccioncientifica.usal.es/investigadores/57750/detalle","extension":"html","purpose":"Perfil primario do tutor ligado aoTFG, distinguir profissional/autor estudante; nao transferir instrucao do estudo do tutor com pacientesEM."},
+    {"id":"c15-salamanca-video-listagem-html","url":"https://drive.google.com/drive/folders/14nXEVvGXRNWbU6l6tvvm_fotiJoABCS7?usp=sharing","extension":"html","purpose":"LinkexatoPDF44/Anexo4: consultar listagempublica, nao baixar/executar midia, entrar emconta ou contornar se restrito. Disponibilidade nao concessao deuso."}
+  ]
+}

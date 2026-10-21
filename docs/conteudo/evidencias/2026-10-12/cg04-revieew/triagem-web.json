@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-12",
+  "item": "CG-04",
+  "sourceId": "PR68",
+  "scope": "Busca dirigida dentro da familiaReViEEW, semnova familia generica ou comandos transferidos por nome parecido.",
+  "directedSearchQueries": [
+    "ReViEEW Espin exercise program instructions videos warm up cooldown",
+    "\"ReViEEW\" \"exercise\" manual",
+    "\"10.1186/s12891-023-06584-7\" supplementary",
+    "\"ReViEEW\" ejercicios videos",
+    "\"Ander Espin\" ejercicios calentamiento videos",
+    "\"10810/68569\" Espin",
+    "\"ReViEEW\" manual instrucciones",
+    "\"Min lunbarra\" \"pdf\"",
+    "\"68569\" \"ESPIN\" pdf",
+    "site:addi.ehu.es \"ESPIN\" \"TESIS\"",
+    "\"ReViEEW\" \"video\" -site:revieew.music -site:amazon.com.mx -site:vlex.co.uk",
+    "\"addi.ehu.es\" \"oai\" \"GetRecord\"",
+    "\"68569\" \"Espin Elorza\"",
+    "\"ReViEEW\" \"calentamiento\"",
+    "\"ReViEEW\" \"instructions\" videos",
+    "\"10.1016/j.msksp.2025.103465\" supplementary",
+    "\"ReViEEW\" \"materials\" exercises",
+    "\"ReViEEW\" \"YouTube\"",
+    "\"Ander Espin\" \"exercise\" \"written instructions\""
+  ],
+  "primaryResultsCompared": [
+    {"url":"https://link.springer.com/article/10.1186/s12891-023-06584-7","role":"Protocolo original; PDF ja recebido, nao repetirGET para contexto"},
+    {"url":"https://link.springer.com/article/10.1007/s10926-024-10182-2","role":"Resultados originais; PDF e suplementos recebidos, nao nove guias autonomos"},
+    {"url":"https://link.springer.com/article/10.1007/s10926-026-10449-w","role":"Analise exploratoria deaderencia ja recebida, nao manual novo; preservar outras ondas/preparo e nao criar algoritmo"},
+    {"url":"https://www.ehu.eus/en/web/ageingon/","role":"Pesquisa institucional e videos gerais deidosos2021; nao materialReViEEW identificado, nenhum video generico transplantado"},
+    {"url":"https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab","role":"Portal institucional da tese ja recebido, mesmohandle; nenhum PDF original localizado nosresultados novos"},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10243003/","role":"Representacao deprotocolo identificada peloresultado primario; texto nao recapturado para somarfonte"}
+  ],
+  "secondaryLeadsNotClinicalEvidence": [
+    {"url":"https://catalogo.sanchoelsabio.eus/Record/addi-10810-68569/Details?print=1","role":"Metadados agregados de tese275p, so lead; nao original/manual/direitos recebidos"},
+    {"role":"JoVE Visualize/openAlex/espelhos e guias genericos de aquecimento encontrados nao selecionados como instrucoesReViEEW"}
+  ],
+  "failedWebAccesses": [
+    {"url":"https://addi.ehu.es/oai/request?verb=Identify","finding":"Nao acessivel na ferramentaweb; nenhumXML recebido, semretry local"},
+    {"url":"https://addi.ehu.es/","finding":"Verificacao de seguranca; nao resolver desafio ou tentar APIalternativa para contornar"},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10236573/","finding":"Primeira abertura comID nao confirmado mostrou browserchallenge; identidadeReViEEW nao estabelecida, descartado como fonte/semretry. IDcorreto identificado depois por resultado, nao equivalencia presumida."}
+  ],
+  "oldFailedHandleNotRetried":"https://addi.ehu.es/handle/10810/68569",
+  "newReceipt":"cg04-revieew-registro-json.evidencia.json",
+  "newCollectorCalls":1,
+  "newUsableBodies":1,
+  "preflightFailureBeforeNetwork":"Acceptapplication/json sozinho nao aceito pelocoletor. Corrigido para seu valor suportado antes do primeiroGET;0chamadas nessa falha, nao retryHTTP.",
+  "registryFindings":{"study":"NCT05050526","bytes":16475,"hasResults":false,"documentSectionPresent":false,"privateExecutionMaterialReceived":false},
+  "newOriginalExecutionScriptLocated":false,
+  "absenceEverywhereProven":false,
+  "noContactLoginPurchaseFormsMediaDownloadOrTlsBypass":true,
+  "noSourceGapFilledByAi":true,
+  "n21Started":false,
+  "appImplemented":false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-dancecare-protocolo-html",
+  "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1770820/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:34:36.079522+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo primario2026; publico/contexto/instrucao/direitos e estudo planejado vs resultados do handbook, sem licenca herdada a videos/musicas externos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1770820/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1045152,
+  "bodyFile": "../raw/c15-dancecare-protocolo-html.html",
+  "sha256": "6a56e3afb8f36f63f18a62a7837fa4e79893e91cea4c7d855096a9c47313f9da"
+}

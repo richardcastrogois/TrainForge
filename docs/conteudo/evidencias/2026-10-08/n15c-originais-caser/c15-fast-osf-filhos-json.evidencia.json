@@ -1,0 +1,23 @@
+{
+  "id": "c15-fast-osf-filhos-json",
+  "url": "https://api.osf.io/v2/nodes/gc9qa/children/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:13:06.699694+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados dos componentes filhos publicos listados por API, nao busca global nem concessao de direitos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/gc9qa/children/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 128,
+  "bodyFile": "../raw/c15-fast-osf-filhos-json.json",
+  "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a"
+}

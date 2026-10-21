@@ -1,0 +1,18 @@
+{
+  "id": "n18r-army-atp-machine-manual",
+  "url": "https://www.benning.army.mil/tenant/wtc/content/PDF/ARN45013-ATP_7-22.02-001-WEB-4.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:00:16.142948+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Capítulo15 de comandos de máquinas, fonte federal primária: conferir variante, edição, direitos e autoria; não transferir dose militar a idosos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>"
+}

@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-05",
+  "niche": "N15-C",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "primaryProtocol": {
+    "doi": "10.3389/fpsyg.2023.1164370",
+    "record": "c15-ela-autocuidado-2023-xml.evidencia.json",
+    "license": "CC BY, versao nao declarada no corpo",
+    "design": "Protocolo de26 cuidadores planejados,6 semanas; nao relato de resultado.",
+    "delivery": "Visita inicial de fisioterapeuta em ambos; EG encontros sincronos semanais40+ate20min com equipe3profissoes; CG contatos semanas2a6.",
+    "eligibility": "Cuidadores informais>=18 de pessoa com ELA, alfabetizados, MMSE>=25; exclusoes clinicas, primeiro trimestre gravidez e medicacao psiquiatrica sao do estudo, nao recomendacao de parar medicacao."
+  },
+  "thesis": {
+    "record": "c15-ufrn-tese-original-pdf.evidencia.json",
+    "pages": 181,
+    "bytes": 12131216,
+    "author": "Emilia Marcia Gomes de Souza e Silva",
+    "handle": "123456789/53566",
+    "metadataRecord": "c15-ufrn-handle53566.evidencia.json",
+    "metadataRights": "Acesso Aberto, nao licenca comercial da tese inteira",
+    "bookletPdfPages": [
+      115,
+      179
+    ],
+    "bookletIsActuallyReceived": true,
+    "isbn": "978-65-5569-154-2",
+    "edition": "SEDIS-UFRN2021, incorporada no Appendix B da tese2023",
+    "illustrator": "Anderson Gomes do Nascimento",
+    "bookletLicensePdfPage": 117,
+    "bookletLicense": "CC BY-ND4.0: permite compartilhar inalterado mesmo comercial; nao distribuir adaptacao/traducao/recorte como cartoes aprovados. Licenca aberta do artigo nao substitui esta licenca especifica.",
+    "pilot": "17 participantes9EG/8CG,4nao continuaram; sem diferenca intergrupos significativa. Nao afirmar beneficio proprio de exercicio isolado ou universal.",
+    "editionDifferences": [
+      "CG tese contatos semanas2e6, artigo2023semanas2a6; preservar duas edicoes.",
+      "Registro teseRBR-643zqt5, artigoNCT05884034; nao fundir como unico registro sem correspondencia demonstrada.",
+      "Tese inclusion idade superior18; protocolo>=18. Nao apagar diferenca."
+    ]
+  },
+  "readingExtent": {
+    "text": "Extracao/indexacao das181paginas para localizar secoes; leitura dirigida de metodos/resultados/direitos e das secoes de exercicios enumeradas nas paginas115-179 da cartilha. Nao leitura integral de toda tese/cartilha nem visual das181paginas.",
+    "visuallyInspectedPdfPages": [
+      117,
+      129,
+      130,
+      133,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      165,
+      166,
+      167,
+      168,
+      169
+    ],
+    "visualKind": "Ilustracoes humanas, nao fotos de participantes identificaveis; nao demonstracao clinica nem liberacao por ativo.",
+    "otherVisualPagesNotYetInspected": [
+      131,
+      132,
+      134,
+      136,
+      137,
+      138,
+      139,
+      164
+    ]
+  },
+  "instructionInventory": [
+    {
+      "section": "Alongamentos semana2",
+      "pdfPages": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "figures": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dose": "2vezes/dia>=30s geral; figuras detalham lados e repeticoes, nao completar ausentes."
+    },
+    {
+      "section": "Mobilidade de aquecimento",
+      "pdfPages": [
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "figures": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "dose": "10repeticoes por movimento; figuras8a10pedem segunda rodada. Intervalo so qualitativo quando assim publicado."
+    },
+    {
+      "section": "Agachamento ou sentar/levantar",
+      "pdfPages": [
+        141,
+        142
+      ],
+      "figures": [
+        11,
+        12
+      ],
+      "dose": "Texto principal3x8/1min; legendas repetir serie por3vezes depois da primeira, potencialambiguidade. Nao escolher automaticamente3vs4.",
+      "alternative": "Cadeira encostada na parede quando nao consegue livre; sem apoio dos bracos."
+    },
+    {
+      "section": "Bastao",
+      "pdfPages": [
+        143
+      ],
+      "figures": [
+        13
+      ],
+      "dose": "3x10/1min, frente/lados/tras, nenhuma carga individual publicada."
+    },
+    {
+      "section": "Ponte",
+      "pdfPages": [
+        144
+      ],
+      "figures": [
+        14
+      ],
+      "dose": "3x10, contar ate5 (nao segundos definidos),1minentre series.",
+      "auditCorrection": "07/10/2026: PDF144/fig14 conferido; correcao da sintese anterior, fonte/hash inalterados."
+    },
+    {
+      "section": "Elevacao de perna supina e lateral",
+      "pdfPages": [
+        145,
+        146
+      ],
+      "figures": [
+        15,
+        16
+      ],
+      "dose": "Supina3x10/1min; lateral3x8porperna/1min. Nao somar duplicadamente figura16que continua15."
+    },
+    {
+      "section": "Prancha",
+      "pdfPages": [
+        147
+      ],
+      "figures": [
+        17
+      ],
+      "dose": "3x30s/1min. Desenho correto e incorreto; postura proxima ao chao, nao desenho autorizando idoso fragil universal."
+    },
+    {
+      "section": "Relaxamento semana6",
+      "pdfPages": [
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169
+      ],
+      "figures": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "dose": "Vis.mental~10min; abertura16520s3vezes, fig2630s, fig2730s2vezes, fig2830s10vezes/lado. Nao resolver conflito por plausibilidade."
+    }
+  ],
+  "unresolved": [
+    "Agenda semanal em branco nao e ciclo de exercicios prescrito diaadia.",
+    "Frequencia>=3vezes/semana de atividade a escolha, dose30min/dia orientada por fisioterapeuta na semana5; nao afirmar equivalente a todas as series da semana2.",
+    "Progressao de carga/volume nao declarada; recomendacao reduzir repeticoes se dolorido nao progressao operacional nem regra clinica aprovada.",
+    "Figura25chamada movimentacao livre/texto movimentos repetidos, mas desenho mostra puxar cabeca com maos; nao mapear como mesmo gesto.",
+    "BY-ND impede caminho de adaptacao integrado proposto; distribucao intacta/e-book e caminho diferente, nao autorizado/implementado.",
+    "Acompanhamento/tratamento individual nao entregue pelo app nem parceria/orcamento pressupostos."
+  ],
+  "captures": {
+    "oldPdfLink": "HTTP2001107bytes HTMLSPA, nao PDF; metadadosREST seguiram links observados para achar arquivo atual.",
+    "zip": "HTTP200 acima2MiB, corpo nao recebido e nao repetido.",
+    "individualPublisherPdf": "HTTP404162bytes, nao recebido e sem retry.",
+    "newPdf": "PrimeiroGET da URL atual,12131216bytes de metadados recebidos confirmados; teto16MiB so com verificacao de tamanho/URL/hash dos metadados.",
+    "pmcWeb": "Busca web mostrou reCAPTCHA; sem contorno/retry. XMLpublicoEuropePMC e editora independentes."
+  },
+  "decision": "Nao selecionar como pacote operacional nem fechar C15-G03/G04. Fonte melhora instrucao especifica, mas ND, dose/gesto, ciclo e entrega continuam nao resolvidos. N18-I ativo, N15-C pendente, N21 retida."
+}

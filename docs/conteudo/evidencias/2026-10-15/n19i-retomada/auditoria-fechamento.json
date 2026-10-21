@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16",
+  "niche": "N19-I",
+  "researchClosed": true,
+  "priorAudit": "../../2026-10-04/n19i-percursos/pesquisa-complemento.json",
+  "userOverride": "Composicao humana multifuente permitida15/10; nao exigir programaoriginalinteiro. N18fechou antes desta retomada.",
+  "criteria": [
+    {
+      "id": "I19-G01",
+      "met": true,
+      "evidence": "Rotas humanasWalkerforca/potencia eMPTPfuncional comparadas com publico, historico, objetivos e limites; acrescentada orientacaoNIA/2alternativas semanais, que nao fingem ter objetivos ou ensaios diferentes."
+    },
+    {
+      "id": "I19-G02",
+      "met": true,
+      "evidence": "Periodizacoes, falha/naofalha, notacoes e ausencias preservadas. NIAincrementoquando2seriesfaceis nao se mistura aos ciclosWalker/MPTP."
+    },
+    {
+      "id": "I19-G03",
+      "met": true,
+      "evidence": "Percurso selecionadoNIAmodular usa9componentesN18 com instrucoes/dose/autoria/direitos e alteracoes declaradas. Semantica do percurso escolhida diretamente doNIA106; nenhuma sessao nova/seqfixa. R03/R04fora da oferta e nao falsamente declarados operacionais."
+    },
+    {
+      "id": "I19-G04",
+      "met": true,
+      "evidence": "Politicas/licencas textuais, experiencia/apoio/ambiente e direitos separados; sem promessa de autonomia ou eficazcianova. Familia/custo do cuidador nao herdados."
+    }
+  ],
+  "scope": "Comparacao e caminho modular inicial de forca em academia para idosos; nao fechamento de todas as variantes/periodizacoes ou programa avancado universal.",
+  "evidence": "percursos-e-contribuicoes.json",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "next": "N20-I; somente apos seu fechamento seguirN21. N15pausada."
+}

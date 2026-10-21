@@ -1,0 +1,24 @@
+{
+  "id": "c15-myten-pdf",
+  "url": "https://link.springer.com/content/pdf/10.1186/s12904-026-02309-4_reference.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:06:09.295412+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Texto integral publicado do My Ten (22 paginas no leitor web): metodos, TIDieR, individualizacao e limites; nao pressupor rotina fixa de dez minutos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s12904-026-02309-4_reference.pdf?error=cookies_not_supported&code=b8f744da-ab92-4349-af4f-bf0697c40ad9",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1303847,
+  "bodyFile": "../raw/c15-myten-pdf.pdf",
+  "sha256": "3672ff1a639191ec4b9d943b6ca7345aa57210728eaf4d53f6adb5efc02503ae",
+  "bodyFormatMatchesRequest": true
+}

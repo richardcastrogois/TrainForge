@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-05",
+  "scope": "N18-I: conferir outra fonte primaria de instrucao detalhada de academia para idosos. Protocolo especifico, nao eficacia/autonomia nem N21.",
+  "requests": [
+    {
+      "id": "i18-ist-ciex-2025-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/fullTextXML",
+      "accept": "application/xml",
+      "extension": "xml",
+      "purpose": "Conferir Tabela3posturas/apoios/isometria/direitos/contradicoes no depositoOAprimario. Nao repetir paginaeditoraHTTP429 nem contornar bloqueio; nao selecionar maquinas genericas."
+    },
+    {
+      "id": "i18-ist-ciex-2025-anexos",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/supplementaryFiles",
+      "accept": "application/zip",
+      "extension": "zip",
+      "purpose": "Conferir se suplemento contem manual/instrucao ou instrumentos de avaliacao; limite2MiB,semretry ou ativos do fabricante presumidos."
+    }
+  ]
+}

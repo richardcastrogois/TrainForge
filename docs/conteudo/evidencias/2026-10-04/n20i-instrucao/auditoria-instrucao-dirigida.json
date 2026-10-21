@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-04",
+  "updatedAt": "2026-10-05",
+  "niche": "N20-I",
+  "researchClosureApproved": false,
+  "dependencies": [
+    "2026-10-04/n18i-academia/leitura-manuais-dirigida.json",
+    "2026-10-04/n18i-academia/leitura-agueda-manuais.json",
+    "2026-10-04/n18i-academia/leitura-ist-ciex-2025.json"
+  ],
+  "checks": [
+    {
+      "source": "Coelho2021",
+      "finding": "Table_1.DOCX e avaliacao, nao treino; cinco levantamentos e handgrip nao instrucoes prescritas. Nao selecionar TIFF nao vistos."
+    },
+    {
+      "source": "CALM2016",
+      "finding": "Instrucao do ramo domestico com banda nao cobre os cinco modelos de maquinas do ramo HRTW. Identidade de aparelho ajuda, mas nao fornece ajuste completo."
+    },
+    {
+      "source": "MoveStrong2021",
+      "finding": "Tabela de variacoes p20 inspecionada e vazia, manual somente citado. Contradicoes de duracao/razao/proteina de edicoes conservadas."
+    },
+    {
+      "source": "TesesWaterloo2021",
+      "finding": "Manuais listados nao incorporados; copyright/publicidade da tese nao concede direitos de manual ausente. Remoto AtHome nao substitui grupo presencial."
+    },
+    {
+      "source": "PASSWORD2021",
+      "finding": "Tabela p7 e visualmente preenchida apesar da extracao textual incompleta: nunca inferir ausencia apenas pelo parser. Define periodos, nao tecnicas das maquinas HUR."
+    },
+    {
+      "source": "Eckardt2016",
+      "finding": "Tabela/figuras de resultados nao tutorial de Smith barra na anca ou leg press com instabilidade. Nao usar squat barra nos ombros."
+    },
+    {
+      "source": "Bestform2022",
+      "finding": "Direitos BY-NC e ajustes personalizados pelo treinador; nao selecionar manual/imagem como reutilizavel comercialmente."
+    },
+    {
+      "source": "Pagan2024",
+      "finding": "Figura1 p3 mostra esquemas, nao todos os ajustes. Bracos a frente na cadeira versus cruzados na instrucao do teste: bloqueia equivalencia sem resolucao primaria. Nao transformar teste de isometria/5RM em dose nem gerar figura para preencher a lacuna."
+    },
+    {
+      "source": "AGUEDA2023/A5",
+      "finding": "Arquivo47paginas recebido, texto integral lido e10paginas visualizadas: fotos/instrucoes reais, mas rotacoes de ombro niveis1/2 nao localizadas, adducao no artigo versus abducao p44, triceps por perna p42, intensidade4-5sem supervisao diferente7-8ensaio. CC BY4doartigo nao demonstra licenca doA5/videos. Nada selecionado."
+    },
+    {
+      "source": "IST-CIEX2025",
+      "finding": "Tabela3instrucao detalhada recebida e figura1fotos inspecionada, mas aparelhosensores especificos, angulosmedidos/profissionais e adducao/abducaosentidoscontraditorios impedem selecao. Suplemento11pconsentimento/checklist, nao manual de regulagem. Sem mapeamento por nomes."
+    }
+  ],
+  "observed": {
+    "newApprovedMappings": 0,
+    "newApprovedAssets": 0,
+    "newWgerCalls": 0,
+    "clinicalValidationPerformed": false,
+    "appImplemented": false,
+    "videoOrAudioPlayedOrDownloaded": 0
+  },
+  "next": "ManualAGUEDA recebido nao e fechamento: resolver correspondencia essencial e direitos externos ou selecionar outra fonte completa/coerente/licenciavel. Sem recapturas nem N21."
+}

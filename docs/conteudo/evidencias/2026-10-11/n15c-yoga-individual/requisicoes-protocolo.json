@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C. Antecedentes publicados citados por NCT02481349 e artigo2023. Nao retry do suplementoPMC emcache miss; sem solicitar dados privados.",
+  "requests":[
+    {"id":"c15-yoga-individual2019-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:31367462%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"Identificar protocolo2019 citado no registro comPMCID/links recebidos, nao adivinhar manuscrito ou treino."},
+    {"id":"c15-yoga-teleclinico2021-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8161853/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Relato clinico da entrega remota/Snyder2021PMID34036820: preparo/apoio/seguranca e autoria do programa; nao considerar relato clinico como novo ensaio de eficacia."}
+  ]
+}

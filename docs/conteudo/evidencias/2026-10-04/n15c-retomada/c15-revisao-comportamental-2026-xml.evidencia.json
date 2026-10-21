@@ -1,0 +1,22 @@
+{
+  "id": "c15-revisao-comportamental-2026-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13600195/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:18:18.958771+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Localizar estudos primarios pessoais do cuidador a partir de referencias da revisao; nao usar revisao como instrucao ou prova primaria.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13600195/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 215354,
+  "bodyFile": "../raw/c15-revisao-comportamental-2026-xml.xml",
+  "sha256": "9c30f2f810981855acc930def898dfb422a3f5398da6c3b8b4f59d11427e1182"
+}

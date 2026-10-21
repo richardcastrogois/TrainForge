@@ -1,0 +1,24 @@
+{
+  "id": "c15-most2025-original-html",
+  "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2831650",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:18:53.174764+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Original integral, credenciais profissionais, resultados fatoriais, direitos e links publicados dos suplementos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2831650",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5794,
+  "bodyFile": "../raw/c15-most2025-original-html.html",
+  "sha256": "182cc32cf313c4c2a0c127b5ea2780f5c9da7996c05cddb4b48451576c798ec7",
+  "error": "HTTP 403"
+}

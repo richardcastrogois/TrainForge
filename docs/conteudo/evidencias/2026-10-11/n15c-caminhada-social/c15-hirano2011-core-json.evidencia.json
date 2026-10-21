@@ -1,0 +1,23 @@
+{
+  "id": "c15-hirano2011-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:20850878%20AND%20SRC:MED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T21:54:22.489902+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo/identificadores da caminhada cuidador2011. Beneficiosintragrupo nao eficacia entregrupos ou manual. Primeiro endpoint publico distinto, semretry PubMedchallenge.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:20850878%20AND%20SRC:MED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5103,
+  "bodyFile": "../raw/c15-hirano2011-core-json.json",
+  "sha256": "773a61dd33c175d64583463778e1861c5b3795e52193e7ebbaf1b4503dc3402c"
+}

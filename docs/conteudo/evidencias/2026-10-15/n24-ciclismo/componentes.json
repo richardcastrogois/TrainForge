@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "status": "inventario_factual_parcial_sem_lote_aprovado",
+  "fullProgrammeRequired": false,
+  "compositionPolicy": "Podem ser combinados componentes de autores humanos, com autoria/contribuição por componente, compatibilidade demonstrada e sem atribuir a composição ao autor original ou herdar os resultados de um ensaio.",
+  "components": [
+    {
+      "id": "N24-BHF-25P",
+      "sourceId": "PR156",
+      "receipt": "n24-bhf-plan.evidencia.json",
+      "locator": "PDF 19–20: calendário; PDF 7–8: tipo e ajuste; PDF 11: bicicleta de ginásio; PDF 16–17: intensidade",
+      "version": "Sofa to Saddle Beginners Guide, 25 páginas; o caminho l2b26 não comprova data de publicação",
+      "weeks": 16,
+      "firstWeekExample": {
+        "bikeMinutes": [
+          30,
+          30,
+          45
+        ],
+        "otherTrainingMinutes": 30,
+        "note": "Não são quatro sessões de bicicleta. Não calculado total de distância a partir de duração."
+      },
+      "intensity": "Escala própria easy 6–6.5, long 6.5–7 e steady 7–8 de 10; não converter em Borg CR10, FTP ou zonas universais.",
+      "ambiguity": "Texto PDF 16 menciona meta de 20.5 milhas; calendário termina em London to Brighton. Preservar a divergência sem corrigir para distância de outra versão.",
+      "selectedForImport": false,
+      "pending": [
+        "Autoria profissional nominal ligada a esta versão",
+        "Direitos da adaptação escolhida",
+        "Delimitar público, preparação e objetivo sem misturar versões"
+      ]
+    },
+    {
+      "id": "N24-BHF-V3-13P",
+      "sourceId": "PR156",
+      "receipt": "n24-bhf-current-v3.evidencia.json",
+      "locator": "PDF 7–8 calendário; PDF 9 condicionamento não selecionado",
+      "version": "London to Brighton Training Plan V3, 13 páginas, ligado na página atual BHF com parceria Full Potential",
+      "weeks": 16,
+      "firstWeekExample": {
+        "Monday": "Força 30 min",
+        "Tuesday": "Bicicleta 30 min",
+        "Wednesday": "Descanso",
+        "Thursday": "Bicicleta 45 min",
+        "Friday": "Descanso",
+        "Saturday": "Longa 60 min",
+        "Sunday": "Easy 45 min"
+      },
+      "longRideLater": "Calendário contém progressões para várias horas; não é rotina breve para qualquer cuidador.",
+      "selectedForImport": false,
+      "notTransferred": [
+        "Crédito Full Potential para o outro PDF de 25 páginas",
+        "Fotos e exercícios de condicionamento para N15",
+        "Dose para bicicleta fixa de praça"
+      ]
+    },
+    {
+      "id": "N24-CUK-10W",
+      "sourceId": "PR157",
+      "receipt": "n24-cyclinguk-plan.evidencia.json",
+      "locator": "Weekly training breakdown e condições anteriores",
+      "weeks": 10,
+      "goalKm": 100,
+      "firstWeekExample": "Três pedaladas: terça/quinta 30 minutos leves; sábado 15–25 km leves; demais dias descanso. Não converter quilômetros em minutos sem dados.",
+      "warmCool": "Orientação geral: início leve aproximadamente 5 minutos; encerramento mais lento 5–10 minutos. A inclusão nesses totais não foi normalizada automaticamente.",
+      "executionSupport": "Artigo pede avaliação médica, bicicleta em condição/ajuste adequado, rotas e retorno após liberação em caso de lesão/doença. Não é intervenção estudada do TrainForge.",
+      "selectedForImport": false,
+      "pending": [
+        "Responsável profissional verificável pelo plano",
+        "Licença do componente final",
+        "Detalhe dos intervalos e inclusão do preparo nos totais"
+      ]
+    },
+    {
+      "id": "N24-MICT-50",
+      "sourceId": "PR160",
+      "receipt": "n24-gillen2016.evidencia.json",
+      "locator": "Methods: Baseline testing and exercise familiarization; 12-week training intervention; Author Contributions",
+      "type": "Estrutura factual de sessão, não novo programa doméstico",
+      "blocks": [
+        {
+          "phase": "warmup",
+          "minutes": 2,
+          "powerW": 50
+        },
+        {
+          "phase": "main",
+          "minutes": 45,
+          "intensity": "aproximadamente 70% da FC máxima medida no teste do estudo; carga ajustada para manter intensidade relativa"
+        },
+        {
+          "phase": "cooldown",
+          "minutes": 3,
+          "powerW": 50
+        }
+      ],
+      "totalMinutes": 50,
+      "population": "27 homens sedentários recrutados; 25 completaram nos três grupos; idade média reportada 27 ± 8 anos, não um intervalo universal de elegibilidade.",
+      "familiarization": "MICT: cerca de 20 minutos com monitor de FC para estabelecer carga que provocava 64–76% da FC máxima. Ergometria/testes laboratoriais fazem parte do contexto de avaliação.",
+      "frequency": "Semana 1: uma sessão; semana 2: duas; depois três por semana, exceto semana 7 em que duas sessões foram substituídas por avaliações. Dias exatos não publicados.",
+      "calendarCaution": "A leitura literal da frequência sugere 31 sessões, mas o resultado reporta média MICT 32 ± 2; não ajustar a fonte nem gerar 31/32/36 sessões individuais sem resolver o calendário. A sessão de 50 minutos permanece factual.",
+      "monitoring": "FC gravada a cada 5 segundos. RPE Borg 6–20 aos 15, 30 e 45 minutos nas sessões 1, 15 e 30. RPE médio observado 13 não é prescrição individual fixa.",
+      "notPrescribed": "110 W é média aproximada observada, não potência fixa para todos. Não transportar para rua, idoso frágil ou equipamento sem controle equivalente.",
+      "notAppRequirements": [
+        "Biópsia muscular",
+        "Infusão intravenosa de glicose",
+        "Procedimentos de coleta do estudo"
+      ],
+      "selectedForImport": false,
+      "missing": [
+        "Preparação/ajuste/montagem/desmontagem e instrução do praticante completas",
+        "Elegibilidade e interrupção operacional para a oferta pretendida",
+        "Apoio e equipamento realmente disponíveis; papel/frequência do apoio não podem ser presumidos",
+        "Compatibilidade de eventual componente auxiliar de outro autor"
+      ],
+      "rights": "Texto/artigo CC BY 4.0, com crédito, vínculo e alterações.",
+      "releaseApproved": false
+    },
+    {
+      "id": "N24-CUK-JB-2010",
+      "sourceId": "PR157",
+      "receipt": "n24-cyclinguk-joebeer2010.evidencia.json",
+      "locator": "PDF 2: crédito Coach Joe Beer; PDF 3–4: preparação e fases até evento; impressos 51/53/54",
+      "author": "Joe Beer",
+      "photographerNotProgrammeAuthor": "Steve Fleming",
+      "population": "Ciclista regular e razoavelmente apto preparando evento de 100 milhas, não pessoa sedentária começando a pedalar.",
+      "obtained": "Orientações por fases para preparação do evento, equipamento e prática de grupo; não calendário diário padronizado.",
+      "selectedForImport": false,
+      "pending": [
+        "Licença de importação/adaptação comercial",
+        "População/ambiente e instrução operacional do componente final"
+      ],
+      "notClaimed": "Não atribuir a este autor o plano Cycling UK de 10 semanas nem inferir validação clínica do método."
+    }
+  ],
+  "noNewSyntheticCalendar": true,
+  "noSourceMediaImported": true,
+  "researchClosed": false,
+  "appImplemented": false,
+  "inventoryTimeScope": "Snapshot da triagem; decisão posterior em lote-ergometro-profissional.json/auditoria-fechamento.json. Pendências de alternativas não selecionadas preservadas.",
+  "selectedLot": "lote-ergometro-profissional.json"
+}

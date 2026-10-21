@@ -1,0 +1,22 @@
+{
+  "id": "c15-busca-academia-original",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22older%20adults%22%20AND%20%22resistance%20training%22%20AND%20%28protocol%20OR%20instruction%20OR%20manual%29%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY%20AND%20FIRST_PDATE%3A%5B2000-01-01%20TO%202024-12-31%5D%20NOT%20TITLE%3A%28review%20OR%20meta-analysis%29&format=json&resultType=core&pageSize=20",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:23:19.942417+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Triagem de ensaios originais e protocolos de academia anteriores, excluindo revisoes no titulo; nao repetir busca recente nem importar nomes como instrucoes.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22older%20adults%22%20AND%20%22resistance%20training%22%20AND%20%28protocol%20OR%20instruction%20OR%20manual%29%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY%20AND%20FIRST_PDATE%3A%5B2000-01-01%20TO%202024-12-31%5D%20NOT%20TITLE%3A%28review%20OR%20meta-analysis%29&format=json&resultType=core&pageSize=20",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 144422,
+  "bodyFile": "../raw/c15-busca-academia-original.json",
+  "sha256": "2b31117dd000593236d21301e80822562cd6f45ec89f2d78c1d12591a2527d1b"
+}

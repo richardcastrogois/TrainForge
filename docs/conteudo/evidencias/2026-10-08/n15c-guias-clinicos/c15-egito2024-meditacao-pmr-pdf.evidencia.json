@@ -1,0 +1,18 @@
+{
+  "id": "c15-egito2024-meditacao-pmr-pdf",
+  "url": "https://ejhc.journals.ekb.eg/article_380127_2e4e8b1b1d3744dbf050a9906562c864.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:58:48.000353+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Originaleditorial indexado, verificar identidade/publico/autoria/procedimentos antes de catalogar ou afirmar eficacia. Uma coleta sem retry/bypass, limitePDF removido peloautor.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [Errno 11002] getaddrinfo failed>"
+}

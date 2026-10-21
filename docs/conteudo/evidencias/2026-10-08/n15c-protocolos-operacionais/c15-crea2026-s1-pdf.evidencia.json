@@ -1,0 +1,25 @@
+{
+  "id": "c15-crea2026-s1-pdf",
+  "url": "https://public-pages-files-2025.frontiersin.org/articles/1944170/data-sheet/1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:43:50.321443+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Primeira resolucao publica do arquivoDataSheet1 com identificador declarado pela editora; conferir resultado/assinaturaPDF antes de qualquer alegacao de manual recebido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://public-pages-files-2025.frontiersin.org/articles/1944170/data-sheet/1",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 294,
+  "bodyFile": "../raw/c15-crea2026-s1-pdf.pdf",
+  "sha256": "ca5ba471cec16efa3a2a57d7ecc344207cc8c1ae0711ab90b11dc8b01c923ae5",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

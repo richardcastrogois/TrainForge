@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-05",
+  "scope": "N18-I: pistas posteriores a AGUEDA/IST, vistas apenas no leitorweb. Nao chamadas do coletor, nao arquivos locais recebidos, nao novas familias aptas ou pesquisa exaustiva.",
+  "queries": [
+    "REACT exercise manual Stathi Withall Greaves manual download Bristol",
+    "REACT intervention manual NIHR exercise older adults",
+    "older adults gym manual CC-BY",
+    "resistance training older people manual Zenodo"
+  ],
+  "findings": [
+    {
+      "name": "REACT RCT, metodos2022/protocolo2018",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK588027/?report=reader",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5905123/",
+        "https://research-information.bris.ac.uk/ws/files/160546674/A_community_based_physical_activity_intervention_to_prevent_mobility_related_disability_for_retired_older_people_.pdf"
+      ],
+      "observed": "Fonte primaria indexada descreve lideresREPSLevel3ouequivalente, experiencia com idosos e treinamento2dias com manual. Manual foi referido, nao recebido por essa consulta. Licenca de artigo/relatorio nao demonstra arquivo instrucional externo.",
+      "limits": "Pagina principalBookshelfNBK588021retornouCheckingYourBrowser/reCAPTCHA no leitorweb, sem retry/contorno. Nao contar leitura integral, manual recebido ou corpo/hash local."
+    },
+    {
+      "name": "REACT Staying fit at home2020",
+      "url": "https://www.bath.ac.uk/publications/staying-fit-at-home/",
+      "observed": "Pagina primaria identifica recurso para>=60 em casa durante isolamento, PDFonlineexerciseguide06.04.2020. Nao mesmo manual da intervencao em grupo12meses, nem manual de aparelhos de academia.",
+      "limits": "PDF nao solicitado/lido, sem licenca ou dose verificadas. Nao transferir contexto ou marcar selecao."
+    },
+    {
+      "name": "Exercise Prescription for Healthy Active Ageing: LifeAge Guide",
+      "url": "https://zenodo.org/records/4395762",
+      "doi": "10.5281/zenodo.4395762",
+      "observed": "Registro primario lido: livroUCAMv1de27/12/2020,ISBN9791220242363, imprint1-147,PDF13,2MB. CampoLicense aparece sem valor no texto fornecido pelo leitor; nao prova de ausencia de licenca em todos os formatos. FinanciamentoErasmus+nao define direitos comerciais.",
+      "limits": "API/publicoPDF nao acessiveis no leitorweb dessa consulta, nenhum corpo local/hash e nenhuma paginaPDFinspecionada. Nao afirmar manual completo, licencaNC ou CCcomercial."
+    }
+  ],
+  "selected": false,
+  "newApprovedMappings": 0,
+  "newApprovedAssets": 0,
+  "n21Started": false,
+  "next": "Nao repetir desafios ou confundir manual referido com recebido. Se LifeAge for aprofundado, conferir metadados/licenca por edicao antes de decidir primeira coleta de PDF identificado; nenhum teto foi ampliado para essa pista. Politica de fechamento negativo permanece sem resposta, criterios atuais preservados."
+}

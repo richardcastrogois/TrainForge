@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-15",
+  "allEvidenceHashesVerified": true,
+  "receipts": [
+    {
+      "id": "n22-ace-michele",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-ace-toolkit",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-brasil-guide",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-galileo-index",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-ghc-pdf",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n22-harris-qualification",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-leslie-plan",
+      "status": 404,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n22-nhlbi-filipino",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhlbi-guide",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhlbi-rights",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhlbi-sample8",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhlbi-session3",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhs-active10",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-nhs-walking",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-niddk-start",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-pacer-about",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-paceup-article",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-paceup-handbook",
+      "status": 200,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n22-paceup-moving2025",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-paceup-nihr",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-paceup-protocol",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-uga-index",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n22-uga-professional",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-wah-home",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n22-wah-terms",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    }
+  ],
+  "httpCalls": 25,
+  "http200": 22,
+  "usableBodies": 21,
+  "errorsIncludingMisleading200": 4,
+  "tableWeeksVerified": 20,
+  "selectedPdfPagesVisuallyReviewed": 33,
+  "issues": [],
+  "meaning": "Integridade e correspondencia documental, nao teste clinico ou aplicativo."
+}

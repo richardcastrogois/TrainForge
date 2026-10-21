@@ -1,0 +1,23 @@
+{
+  "id": "c15-myten-artigo",
+  "url": "https://link.springer.com/article/10.1186/s12904-026-02309-4",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:06:06.814924+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira captura primaria My Ten: autoria, versao in press, direitos e URLs publicados dos seis suplementos; cuidador pratica para si.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s12904-026-02309-4?error=cookies_not_supported&code=0d2c60d5-ae39-4495-885b-d6051ede34f2",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 613366,
+  "bodyFile": "../raw/c15-myten-artigo.html",
+  "sha256": "bb2f4ffec858eceae4195181a4312777a0bf7cd6123f6d1f5eece46e5df5057c"
+}

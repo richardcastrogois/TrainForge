@@ -1,0 +1,81 @@
+{
+  "niche": "N15-C",
+  "consolidatedAt": "2026-10-04",
+  "sourceId": "CI05",
+  "status": "candidato_parcial",
+  "researchOnly": true,
+  "releaseApproved": false,
+  "sourceFiles": [
+    "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+    "2026-10-03/n15c-cuidador-casa/n15c-nia-cuidador.evidencia.json"
+  ],
+  "workout": {
+    "title": "Workout to Go: A Sample Exercise Routine from the National Institute on Aging at NIH",
+    "author": "National Institute on Aging, NIH",
+    "publicationNumber": "11-4258",
+    "editionPrinted": "Reprinted March 2015",
+    "pdfPages": 24,
+    "numberedContentPages": 20,
+    "pdfMetadataModificationIsNotClinicalReview": true,
+    "population": "Adultos mais velhos; nao amostra especifica de cuidadores nem rotina universal para todas as idades/capacidades.",
+    "instructionType": "Rotina amostral ilustrada e dirigida ao leitor; nao ciclo periodizado ou ensaio de eficacia.",
+    "exerciseCount": 13,
+    "blocks": ["aquecimento", "forca", "equilibrio", "retorno_calma_flexibilidade"],
+    "sourceDoseFactsNotPrescription": {
+      "warmUpApproxMinutes": 5,
+      "coolDownApproxMinutes": 5,
+      "generalStrengthRepetitions": [10, 15],
+      "generalSetsSuggested": 3,
+      "walkingBalanceSteps": 20,
+      "flexibilityRepetitions": [3, 5],
+      "weeklyFrequency": null,
+      "cycleWeeks": null,
+      "totalSessionMinutes": null,
+      "betweenSetRestSeconds": null,
+      "shoulderStretchHoldSeconds": null,
+      "doNotOverrideExerciseSpecificDoseWithGeneralParagraph": true
+    },
+    "materials": ["duas_bolas_tenis", "cadeira_estavel_com_bracos", "toalha", "dois_objetos_de_peso_igual"],
+    "publishedProgression": "Qualitativa: aumentar carga gradualmente quando ficar mais facil, variar apoio no equilibrio e alcance no alongamento. Nao fornece incremento numerico/calendarizado universal.",
+    "criticalReviewFlags": [
+      "Pagina PDF 17 inclui retirada de apoio e olhos fechados; nao automatizar progressao nem apresentar como segura para todo idoso/cuidador.",
+      "Paginas PDF 19-21 preservam avisos sobre cirurgias de anca/coluna e problemas no ombro; condicoes clinicas nao homologadas.",
+      "Pagina PDF 21 nao publica tempo de sustentacao do alongamento do ombro. Nao copiar tempo de outro exercicio.",
+      "Elegibilidade funcional, interrupcoes do cuidado e regressao individual nao resolvidas por este material.",
+      "Nao juntar o conselho de pausas da folha do cuidador a esta rotina como se fosse protocolo unico publicado."
+    ]
+  },
+  "caregiverHandout": {
+    "title": "Caregivers and Exercise - Take Time for Yourself",
+    "authorPrinted": "National Institute on Aging at NIH / Go4Life",
+    "host": "University of Iowa, Iowa Geriatric Education Center",
+    "pdfPages": 1,
+    "publicationDatePrinted": null,
+    "executor": "cuidador_para_si_com_opcao_conjunta_se_possivel",
+    "homeContext": "Sugere pedir ajuda em casa para poder exercitar-se.",
+    "breaksExplicitlyMentioned": true,
+    "completeExerciseRoutine": false,
+    "doesNotIdentifyWorkoutToGoAsItsSpecificRoutine": true
+  },
+  "visualInspection": {
+    "workoutPdfPages": [5, 17, 21, 22],
+    "caregiverPdfPages": [1],
+    "method": "Poppler PNG e inspecao visual; texto de todas as paginas extraido com pypdf.",
+    "photographsObserved": true,
+    "mediaApprovedForCommercialReuse": 0,
+    "videosPlayed": 0
+  },
+  "rights": {
+    "policyUrl": "https://www.nih.gov/about-nih/frequently-asked-questions",
+    "localPolicyStatus": 403,
+    "localPolicyEvidence": "2026-10-03/n15c-cuidador-casa/n15c-nih-direitos.evidencia.json",
+    "policyObservedInWebToolOnly": true,
+    "policyScope": "NIH descreve maioria do conteudo como dominio publico, com excecoes para terceiros/imagens e marcas/endosso. Nao e autorizacao especifica para cada ativo dos PDFs arquivados.",
+    "wholeAssetSetRightsResolved": false,
+    "textCandidateNotEntirePdfApproved": true,
+    "internationalCommercialPublicationApproved": false,
+    "copyrightNoticeAbsenceIsNotPermission": true,
+    "noPermissionContactMade": true
+  },
+  "decision": "Avanco documental para o subgrupo de cuidadores mais velhos; nao selecionar como programa completo/licenciado de toda N15-C nem fechar a pesquisa."
+}

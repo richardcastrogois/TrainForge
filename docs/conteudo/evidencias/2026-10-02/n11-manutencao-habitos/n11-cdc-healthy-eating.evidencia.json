@@ -1,0 +1,21 @@
+{
+  "id": "n11-cdc-healthy-eating",
+  "url": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T02:29:06.081520+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia CDC de alimentação saudável para peso saudável, variedade e grupos alimentares.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 53152,
+  "bodyFile": "../raw/n11-cdc-healthy-eating.html",
+  "sha256": "cc46028a518f7181f3b8cf3b76c7151a2e68a6c2e6fd9dadbadf0cddc6a2209c"
+}

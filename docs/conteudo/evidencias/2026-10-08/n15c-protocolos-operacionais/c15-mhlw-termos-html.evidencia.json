@@ -1,0 +1,23 @@
+{
+  "id": "c15-mhlw-termos-html",
+  "url": "https://www.mhlw.go.jp/chosakuken/index.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:07:41.715103+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDL1.0, credito e excecoes/terceiros. Nao permissao automatica Maney ou Niigata.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mhlw.go.jp/chosakuken/index.html",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 51555,
+  "bodyFile": "../raw/c15-mhlw-termos-html.html",
+  "sha256": "91a43756ebd1ae3fa274af08fca01ee3919c6c49d3c648c643631f1d51926700"
+}

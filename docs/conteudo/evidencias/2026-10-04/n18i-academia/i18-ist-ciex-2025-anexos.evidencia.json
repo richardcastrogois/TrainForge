@@ -1,0 +1,22 @@
+{
+  "id": "i18-ist-ciex-2025-anexos",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:59:50.163861+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir se suplemento contem manual/instrucao ou instrumentos de avaliacao; limite2MiB,semretry ou ativos do fabricante presumidos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12250102/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 553086,
+  "bodyFile": "../raw/i18-ist-ciex-2025-anexos.zip",
+  "sha256": "2c65cdd722b64682abca2c7c9cc359d57582a64dd08831d509cfdf6ec2b22dfb"
+}

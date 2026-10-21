@@ -1,0 +1,90 @@
+{
+  "collectionCount": 8,
+  "hashedBodies": 7,
+  "usefulBodies": 7,
+  "pdfPages": 653,
+  "duplicateOriginal": {
+    "sourceId": "PR71",
+    "sha256": "4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b",
+    "newClinicalFamily": false
+  },
+  "receipts": [
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-egito2024-meditacao-pmr-pdf.evidencia.json",
+      "id": "c15-egito2024-meditacao-pmr-pdf",
+      "sha256": null,
+      "bytes": null,
+      "status": null,
+      "error": "<urlopen error [Errno 11002] getaddrinfo failed>",
+      "usable": false
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-montero2017-tese-canonica-pdf.evidencia.json",
+      "id": "c15-montero2017-tese-canonica-pdf",
+      "sha256": "70109a7e8cf572a189297e50ce5cdc6986faa8d5b2449a2e9bb31b4b982f659f",
+      "bytes": 10821424,
+      "status": 200,
+      "error": null,
+      "usable": true,
+      "pdfPages": 362
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca-tutor-perfil-html.evidencia.json",
+      "id": "c15-salamanca-tutor-perfil-html",
+      "sha256": "d8efa007f63d3a14cdb7ebb0f8734bec37f482696bccf19c27b012235d85e2fe",
+      "bytes": 47139,
+      "status": 200,
+      "error": null,
+      "usable": true
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca-video-listagem-html.evidencia.json",
+      "id": "c15-salamanca-video-listagem-html",
+      "sha256": "95b7b926c1e3edd62e61eed57fe626ddd6dffd8c9dc5cee0a24ba1b53f8fab0d",
+      "bytes": 318629,
+      "status": 200,
+      "error": null,
+      "usable": true
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca2025-tfg-pdf.evidencia.json",
+      "id": "c15-salamanca2025-tfg-pdf",
+      "sha256": "6e5d6c0252d21c6587003ddb6e7da1d3a49efbe70d312637b1e003f2b7924c5d",
+      "bytes": 3371992,
+      "status": 200,
+      "error": null,
+      "usable": true,
+      "pdfPages": 55
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca2025-registro-html.evidencia.json",
+      "id": "c15-salamanca2025-registro-html",
+      "sha256": "138d4af408f525d58050b50777ffdda07e92366392d94b8996a4fe2c3dc53025",
+      "bytes": 549182,
+      "status": 200,
+      "error": null,
+      "usable": true
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-fedema2022-pagina-html.evidencia.json",
+      "id": "c15-fedema2022-pagina-html",
+      "sha256": "e3da6080e652f10c713977267015848f9f3cd45dc98f21dbf4d0cc246d860e9a",
+      "bytes": 101678,
+      "status": 200,
+      "error": null,
+      "usable": true
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-fedema2022-manual-pdf.evidencia.json",
+      "id": "c15-fedema2022-manual-pdf",
+      "sha256": "4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b",
+      "bytes": 5583692,
+      "status": 200,
+      "error": null,
+      "usable": true,
+      "pdfPages": 236
+    }
+  ],
+  "renderedPages": [],
+  "researchClosureApproved": false
+}

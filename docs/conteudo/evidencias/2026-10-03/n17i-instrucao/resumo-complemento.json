@@ -1,0 +1,46 @@
+{
+  "niche": "N17-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 3,
+  "proposedOperations": 1,
+  "fictionalScenarios": 8,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n17i-instrucao/n17i-wai-idosos.evidencia.json",
+      "url": "https://www.w3.org/WAI/older-users/",
+      "sha256": "f68d518e050d8e1775ee3affcb7aefab9e8e8a418e3a75aac4d5b964de0e883f"
+    },
+    {
+      "record": "2026-10-03/n17i-instrucao/n17i-wai-midia.evidencia.json",
+      "url": "https://www.w3.org/WAI/media/av/",
+      "sha256": "92a8aba47383aa2e926ee4dff2da85e8297df67e4678c4845b5fdf2716ef0926"
+    },
+    {
+      "record": "2026-10-03/n17-casa-instrucao/n17-nhs-videos.evidencia.json",
+      "url": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/",
+      "sha256": "e31830169566da358d1165d0065cf6c7dcc8c5a5be23a5eb343acc86373e171c"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n17-casa-instrucao/amostra-midia.json",
+      "artifactSha256": "73778c7e041ea57299a478b32f2d97697d9b088d557601a7f9f84a9d8909fd07"
+    },
+    {
+      "file": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "artifactSha256": "c30f0e4bcb011c0d22819b7199a2743446be5870216464056979e002dca46a49"
+    },
+    {
+      "file": "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "artifactSha256": "1b444294860185b9dcea31e1f39e23a4fdaa8a384e18065eb76e9ba056cab00f"
+    }
+  ],
+  "next": "N11-I"
+}

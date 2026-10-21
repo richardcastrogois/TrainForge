@@ -1,0 +1,22 @@
+{
+  "id": "c15-yoga-artigo",
+  "url": "https://link.springer.com/article/10.1007/s10433-023-00792-9",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T19:25:59.799344+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo original: oito encontros online, participantes, autoria, supervisao e licenca; nao confundir com exercicio do paciente.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1007/s10433-023-00792-9?error=cookies_not_supported&code=77ede2a7-09a5-4d1a-81d0-a45bc6de6b8d",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 392504,
+  "bodyFile": "../raw/c15-yoga-artigo.html",
+  "sha256": "cf6ade7d9f63509adbce7466506d5439902b5fbc4e94c40a883c884481b5db47"
+}

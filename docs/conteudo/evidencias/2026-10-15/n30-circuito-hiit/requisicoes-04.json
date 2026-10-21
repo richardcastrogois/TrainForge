@@ -1,0 +1,25 @@
+{
+  "requests": [
+    {
+      "id": "n30-archila-xml-accept",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8136567/fullTextXML",
+      "purpose": "Correção identificada: primeiroGET406 solicitava HTML/JSON emrotaXML; agora Accept application/xml. Não desafio/captcha/paywall ou PDF de terceiro. Preservar erro e comparar licença/métodos primários.",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n30-ballesta-2019-xml-accept",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6862704/fullTextXML",
+      "purpose": "Correção identificada: primeiroGET406 solicitava HTML/JSON emrotaXML; agora Accept application/xml. Não desafio/captcha/paywall ou PDF de terceiro. Preservar erro e comparar licença/métodos primários.",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n30-ballesta-2020-xml-accept",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7084372/fullTextXML",
+      "purpose": "Correção identificada: primeiroGET406 solicitava HTML/JSON emrotaXML; agora Accept application/xml. Não desafio/captcha/paywall ou PDF de terceiro. Preservar erro e comparar licença/métodos primários.",
+      "extension": "xml",
+      "accept": "application/xml"
+    }
+  ]
+}

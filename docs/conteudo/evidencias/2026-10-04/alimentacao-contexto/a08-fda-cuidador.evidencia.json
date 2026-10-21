@@ -1,0 +1,22 @@
+{
+  "id": "a08-fda-cuidador",
+  "url": "https://www.fda.gov/consumers/womens-health-topics/caring-others-resources-help-you",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:06:17.490706+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Orientacao primaria de preparo/armazenamento pelo cuidador e limites profissionais, sem importar imagens ou restringir cuidadores a mulheres.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fda.gov/consumers/womens-health-topics/caring-others-resources-help-you",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 54919,
+  "bodyFile": "../raw/a08-fda-cuidador.html",
+  "sha256": "34b39d0ce4c0c3414329f73880b4b9108844a5d1cec41391f09251ea3e02c125"
+}

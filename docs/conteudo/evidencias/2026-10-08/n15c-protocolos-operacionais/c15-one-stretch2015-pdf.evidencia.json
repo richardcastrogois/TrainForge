@@ -1,0 +1,25 @@
+{
+  "id": "c15-one-stretch2015-pdf",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/pdf/yjmt-23-205.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:58:07.883026+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "LinkPDF real do artigoHTML, primeira coleta para inspecao daFig1; ensino/dose/cautelas e direitos do proprio objeto, nao licenca pelo acesso gratuito.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/pdf/yjmt-23-205.pdf",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1817,
+  "bodyFile": "../raw/c15-one-stretch2015-pdf.pdf",
+  "sha256": "d0142a58f1883f5afa1f5d8c7a58dd28f01bff3417bff084999bf99dc926e54a",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

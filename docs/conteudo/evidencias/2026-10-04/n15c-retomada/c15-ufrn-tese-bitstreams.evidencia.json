@@ -1,0 +1,22 @@
+{
+  "id": "c15-ufrn-tese-bitstreams",
+  "url": "https://repositorio.ufrn.br/server/api/core/bundles/7850a2a8-eb40-49a9-81c4-0715f1da9f38/bitstreams",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:27:11.471943+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Seguir bitstreams observado no unico bundle ORIGINAL da tese; sem licenca presumida.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufrn.br/server/api/core/bundles/7850a2a8-eb40-49a9-81c4-0715f1da9f38/bitstreams",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1946,
+  "bodyFile": "../raw/c15-ufrn-tese-bitstreams.json",
+  "sha256": "72d6ca3473eded33f8ef9f702895a63c8d41c8977f5b5da2dec2d13ba6cf5b4d"
+}

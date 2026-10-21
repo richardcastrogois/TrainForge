@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-07",
+  "scope":"Deposito cientificoEuropePMC independente, nao repetirHTML/JATS nem superar limite doJSeditorial. Quatro anexosPDF conhecidos noJATS, arquivoZIP continua teto2MiB com limites de leitura/expansao, nao executar conteudo.",
+  "requests":[
+    {"id":"c15-crea2026-suplementos-zip","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/supplementaryFiles","accept":"application/zip","extension":"zip","purpose":"Primeira coleta do endpointpublico suplementarEuropePMC, buscar4PDFs instrucionais anunciados noJATS sem executar arquivos ou herdar resultados clinicos inexistentes do protocolo."}
+  ]
+}

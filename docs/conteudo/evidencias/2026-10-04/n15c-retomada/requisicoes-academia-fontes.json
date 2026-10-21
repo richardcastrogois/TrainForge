@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-04", "niche": "N15-C",
+  "requests": [
+    {"id": "c15-triagem-academia-velocidade-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8350041/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Conferir suplemento de instrucoes em ensaio original de forca/potencia para idosos; sem transformar fragilidade em recomendacao automatica."},
+    {"id": "c15-triagem-academia-masters-xml", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5405504/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Conferir eventual manual integral de resistencia para idosos no protocolo MASTERS; medicacao/cointervencao nao sera transferida ao APK e protocolo nao e resultado."}
+  ]
+}

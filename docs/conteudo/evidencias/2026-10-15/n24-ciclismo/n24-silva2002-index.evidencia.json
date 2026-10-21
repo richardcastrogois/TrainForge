@@ -1,0 +1,23 @@
+{
+  "id": "n24-silva2002-index",
+  "url": "https://portalrevistas.ucb.br/index.php/RBCM/article/view/465",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:19:26.513641+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Referencia direta do artigo Gloc; autoria profissional declarada e licenca do objeto antigo",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://portalrevistas.ucb.br/index.php/RBCM/pt_BR/article/view/465",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 25093,
+  "bodyFile": "../raw/n24-silva2002-index.html",
+  "sha256": "e5565795ea75f724528d4cb93f4d7651518a99abbd7fc62d9c9d3d37769257e8"
+}

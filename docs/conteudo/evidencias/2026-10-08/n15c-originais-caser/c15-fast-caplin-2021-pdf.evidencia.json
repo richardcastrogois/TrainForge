@@ -1,0 +1,25 @@
+{
+  "id": "c15-fast-caplin-2021-pdf",
+  "url": "https://escholarship.org/content/qt496057rq/qt496057rq_noSplash_f4ce2554d55e4846229b0a310888ec1b.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:10:29.777510+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "FAST: conferir protocolo individualizado, suporte, equipamentos, resultados secundarios e direitos no PDF original; nao converter dose personalizada em treino fixo nem contar nova analise como novo ensaio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://escholarship.org/content/qt496057rq/qt496057rq_noSplash_f4ce2554d55e4846229b0a310888ec1b.pdf",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/c15-fast-caplin-2021-pdf.pdf",
+  "sha256": "5a088cd2fe44f983737604db702afb182e5827ac7770d4e54c1db6f74e19ae55",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

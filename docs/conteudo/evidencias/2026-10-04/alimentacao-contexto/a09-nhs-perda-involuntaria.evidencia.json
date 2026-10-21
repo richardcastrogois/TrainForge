@@ -1,0 +1,22 @@
+{
+  "id": "a09-nhs-perda-involuntaria",
+  "url": "https://www.nhs.uk/symptoms/unintentional-weight-loss/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:06:18.038186+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Distinguir perda involuntaria de objetivo de peso e necessidade de avaliacao; nao diagnosticar, prescrever suplemento ou criar limiar proprio.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/symptoms/unintentional-weight-loss/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 27435,
+  "bodyFile": "../raw/a09-nhs-perda-involuntaria.html",
+  "sha256": "b9246b316b853b3553c66a17c82d16e499aa16463b9f3bbe8594f42d03c2f3d6"
+}

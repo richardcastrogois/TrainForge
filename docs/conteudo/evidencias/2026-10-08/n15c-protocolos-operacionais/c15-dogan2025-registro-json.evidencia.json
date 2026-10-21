@@ -1,0 +1,23 @@
+{
+  "id": "c15-dogan2025-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT05988320",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:40:42.570656+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario pranayama/fadiga: tecnica, treino inicial, criterios de exclusao e suporte, comparacao com artigo sem combinar versoes.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05988320",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 9337,
+  "bodyFile": "../raw/c15-dogan2025-registro-json.json",
+  "sha256": "12f6edc45c0a1fe51b9ff54e8e7e4775602825378647e948cd8e2d1112d57e8f"
+}

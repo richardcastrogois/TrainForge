@@ -1,0 +1,332 @@
+{
+  "id": "N34-MAPA-DOCUMENTAL-01",
+  "date": "2026-10-15",
+  "niche": "N34",
+  "kind": "Especificação editorial própria derivada de fontes humanas já registradas; não novo treino humano, instrumento validado, triagem ou algoritmo clínico executado.",
+  "sourceOfRules": "Regras de separação/procedência da pesquisa e do pedido do usuário. Fatos e doses provêm dos lotes explicitados; o encadeamento editorial não é atribuído aos autores como validado por eles.",
+  "rules": [
+    {
+      "dimension": "pessoa",
+      "rule": "Quem pratica, quem relata, quem observa e quem ajuda são papéis separados. Cuidador treinando para si não usa automaticamente indicação/medida do assistido.",
+      "evidence": "N32 mapa-relato-ajuda; N33 contexts"
+    },
+    {
+      "dimension": "populacao",
+      "rule": "Guardar público e exclusões da fonte, condição/fase e incerteza de adequação. Ter a mesma idade ou nome de doença não é elegibilidade clínica.",
+      "evidence": "N30 population; N33 population"
+    },
+    {
+      "dimension": "ambiente",
+      "rule": "Casa, academia interna e praça são campos próprios. Compatibilidade material possível é diferente de execução estudada naquele ambiente.",
+      "evidence": "N28/N29/N31 contexts"
+    },
+    {
+      "dimension": "equipamento",
+      "rule": "Confirmar modelo/função, apoios, carga/medida e ajuste. Remo de praça não é ergômetro, degrau não tem altura padrão, bola não é chão.",
+      "evidence": "N24 blocks/monitoring; N31 equipment; N33 notSelectedCore"
+    },
+    {
+      "dimension": "experiencia",
+      "rule": "Aprendizagem, competência anterior e familiarização são independentes do acesso ao aparelho. Nado/remo selecionados não ensinam iniciantes.",
+      "evidence": "N25 lote-nado-resistencia; N31 population/preparation"
+    },
+    {
+      "dimension": "apoio",
+      "rule": "Registrar apoio físico estável, ensino, supervisão e assistência humana como campos distintos, com exigência da fonte versus restrição editorial identificadas. Não afirmar serviço contratado.",
+      "evidence": "N26 support; N27 sourceTeaching; N29 eligibility; N33 originalDelivery"
+    },
+    {
+      "dimension": "integridade",
+      "rule": "Preservar variante, lado, começo/movimento/retorno, repetições versus tempo, dose e partes da sessão; ausências permanecem desconhecidas. Ficha/bloco não se torna sessão integral.",
+      "evidence": "N27 components; N30 dose; N31 scope; N33 selectedProfessionalComponents"
+    },
+    {
+      "dimension": "progressao",
+      "rule": "Distinguir tabela publicada, aumento qualitativo, decisão profissional e ausência de regra. Não transformar calendário cumprido ou sensor em autorização automática.",
+      "evidence": "N22 programmes; N29 progression; N30 progression; N33 progression"
+    },
+    {
+      "dimension": "interrupcao",
+      "rule": "Registrar realizado, não realizado e desconhecido. Não compensar automaticamente, dobrar sessão, retirar repouso, presumir retomada ou contar tempo de cuidado como treino.",
+      "evidence": "N30 interruptions/dose; N31 interruptions; N29 caregiverInterruptions"
+    },
+    {
+      "dimension": "sintomas",
+      "rule": "Relato é informação da pessoa, não diagnóstico nem prova de segurança. Modelo de dor do NEMEX pertence ao seu contexto profissional e não pode liberar outros treinos.",
+      "evidence": "N32 scope; N33 progression"
+    },
+    {
+      "dimension": "direitos",
+      "rule": "Autoria/contribuição e direitos por componente/versão; mídia separada. Conteúdo recebido, acesso gratuito, crédito e autorização de adaptação são estados diferentes.",
+      "evidence": "N24 rights; N29 rightsFile; N30 rights; N33 fontes-e-evidencias"
+    },
+    {
+      "dimension": "estado",
+      "rule": "Resultado editorial pode ser potencialmente compatível com pendências, não aplicável ao recorte ou informação insuficiente. Nenhum significa liberação clínica/publicação.",
+      "evidence": "Auditorias N22–N33 e releaseApproved:false"
+    }
+  ],
+  "fields": [
+    "Praticante",
+    "Informante/origem",
+    "Público/fase da fonte",
+    "Ambiente real",
+    "Kit/modelo/ajuste",
+    "Experiência/ensino",
+    "Apoio físico",
+    "Supervisão/serviço real",
+    "Elegibilidade e quem a avaliou",
+    "Variante/dose e lacunas",
+    "Progressão e decisor",
+    "Interrupções/realizado/desconhecido",
+    "Direitos por componente/ativo/versão",
+    "Estado editorial e pendências"
+  ],
+  "progressionByLot": [
+    {
+      "niche": "N22",
+      "document": "../n22-caminhada/percursos.json",
+      "record": "WK-PACEUP-12",
+      "type": "fases_publicadas_relativas",
+      "facts": "7dias de basal; semanas1–2+1500passos em≥3dias;3–4+1500em≥5dias;5–6+3000em≥3dias;7–12+3000em≥5dias. Incrementos sobre habitual, não alvo total universal.",
+      "notAllowed": "Acelerar/forçar fase, transformar3mil emmeta total ou trocar dispositivo mantendo equivalência métrica presumida. Não herdar outra tabelaNHLBI."
+    },
+    {
+      "niche": "N23",
+      "document": "../n23-corrida/gronorun2-lote.json",
+      "record": "GRONO2-CON-RUN9-01",
+      "type": "sequencia_especifica_27sessoes",
+      "facts": "Tabela e intervalos do protocolo preservados no lote; não converter caminhada em corrida por idade/objetivo nem misturar com C25K.",
+      "notAllowed": "Substituir doses por aumento genérico10% ou confundir recuperação andando com descanso cronometrado de outra fonte."
+    },
+    {
+      "niche": "N24",
+      "document": "../n24-ciclismo/lote-ergometro-profissional.json",
+      "record": "N24-ERG50-PRO-01",
+      "type": "sessao_isolada_sem_calendario_selecionado",
+      "facts": "SessãoMICT50min; calendário do ensaio tem exceções, não36sessões inferidas.",
+      "notAllowed": "Prescrever novo calendário/FCpor220−idade ou usar praça sem controle equivalente."
+    },
+    {
+      "niche": "N25",
+      "document": "../n25-natacao/lote-nado-resistencia.json",
+      "record": "N25-NADO-500-PRO-01",
+      "type": "componentes_para_nadador_competente",
+      "facts": "Componentes com referência de ritmo própria e parada se não sustenta; fechamento separado não estabelece eficácia da mistura.",
+      "notAllowed": "Ensinar a nadar por esse bloco, criar frequência/calendário ou supor cuidador disponível para piscina."
+    },
+    {
+      "niche": "N26",
+      "document": "../n26-yoga/lote-yoga-cadeira.json",
+      "record": "N26-CADEIRA-03-PRO-01",
+      "type": "sem_calendario",
+      "facts": "Contagens/ciclos e lados próprios; total em segundos e progressão não publicados/selecionados.",
+      "notAllowed": "Converter cada contagem emsegundo ou avançar para chão por completar rotina sentada."
+    },
+    {
+      "niche": "N27",
+      "document": "../n27-pilates/lote-pilates-solo.json",
+      "record": "N27-SOLO-03-PRO-01",
+      "type": "nivel1_sem_progressao_selecionada",
+      "facts": "Fonte aconselha inícioL1 e prática diária do seu programa, mas seleção de três fichas não herdou frequência/progressão do manual inteiro.",
+      "notAllowed": "AbrirL2por agenda ou gerar10repetições por lado quando são10alternadas."
+    },
+    {
+      "niche": "N28",
+      "document": "../n28-mobilidade/lote-funcional-flexibilidade.json",
+      "record": "N28-FUNC-FLEX-06-01",
+      "type": "doses_por_componente",
+      "facts": "Mistura documental de movimentos e alongamentos com doses próprias, sem duração total/frequência/progressão combinada criada.",
+      "notAllowed": "Tratar soma de holds como tempo total da sessão ou transformar seis fichas emperiodização validada."
+    },
+    {
+      "niche": "N29",
+      "document": "../n29-equilibrio/lote-equilibrio.json",
+      "record": "N29-NHS-EQUILIBRIO-05-01",
+      "type": "qualitativa_sem_incremento_numerico",
+      "facts": "Frequência mínima2/semana e aumento gradual qualitativo; contato/proximidade de apoio varia por exercício.",
+      "notAllowed": "Retirar parede automaticamente, inserir superfície instável ou herdar3/semana e divisão de sessão doOtago."
+    },
+    {
+      "niche": "N30",
+      "document": "../n30-circuito-hiit/lote-funcional-snacking.json",
+      "record": "N30-FUNC-ES2019-01",
+      "type": "dose_fixa_sem_progressao_semanal",
+      "facts": "Edição2019:28dias,2sessões por dia,5movimentos de60s e4intervalos de60s. Sem compensação por sessão perdida ou carga extra prescritas.",
+      "notAllowed": "Fundir com HIIT11min, contar5descansos para chamar10min ou compensar noite com dose dupla."
+    },
+    {
+      "niche": "N31",
+      "document": "../n31-remo/lote-remo-intervalado.json",
+      "record": "N31-REMO-FARTLEK-20-PRO-01",
+      "type": "bloco_sem_progressao",
+      "facts": "10ciclos de1min forte+1minleve para adulto treinado. Frequência/semanas/progressão/warmcool não selecionados.",
+      "notAllowed": "Completar sessão ou calendário por IA, equiparar forte a percentual deFC ou média24–30spm a cada intervalo."
+    },
+    {
+      "niche": "N32",
+      "document": "../n32-dor-limitacoes/mapa-relato-ajuda.json",
+      "record": "N32-RELATO-AJUDA-PT-01",
+      "type": "nao_e_treino",
+      "facts": "Relato/observação/ajuda educativa localizada. Desconhecido não0; não serve de filtro diagnóstico/alta para outro lote.",
+      "notAllowed": "Selecionar treino pela intensidade da dor ou usar observação do cuidador como autorrelato."
+    },
+    {
+      "niche": "N33",
+      "document": "../n33-artrose-preoperatoria/componentes-profissionais.json",
+      "record": "N33-NEMEX-TJR-COMP-PRO-01",
+      "type": "decisao_profissional_no_protocolo",
+      "facts": "Qualidade/controle observados pelo fisioterapeuta e percebidos pela pessoa; níveis específicos e resposta à dor no contextoNEMEX. Até cirurgia, não11semanas fixas.",
+      "notAllowed": "AutomaticamenteL2na semana2, liberar porVAS≤5, aplicar figura de rotação deanca aojoelho ou chamar subconjunto de sessão60min."
+    }
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "requiredEvidence": [
+        "Capacidade e condições pessoais",
+        "Variante/espaço/kit/apoios reais",
+        "Ensino/entrega exigidos pela fonte"
+      ],
+      "outcome": "Pode haver candidato doméstico limitado, comoES2019 para população triada. Estar emcasa/ter65anos não basta. Chão, degrau e equilíbrio conservam gates específicos."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "requiredEvidence": [
+        "Aparelho/função/curso/carga identificados",
+        "Piso/tempo/apoio fixo",
+        "Fonte adequada à modalidade exterior"
+      ],
+      "outcome": "Praça continua pendente para lotes sem equivalência demonstrada. Falta de aplicação não elimina o contexto do produto; precisa de fonte própria, sem equipamento fictício."
+    },
+    {
+      "context": "idoso_academia",
+      "requiredEvidence": [
+        "Ajuste/modelo e experiência",
+        "Apoios/área",
+        "Elegibilidade/serviço profissional quando exigido"
+      ],
+      "outcome": "Ter máquina não valida indicação. NEMEX exige caminho clínico específico; remo selecionado exige treino prévio e não cobre idoso iniciante."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "requiredEvidence": [
+        "Praticante e observador separados",
+        "Condição pessoal e tempo disponível sem cuidado simultâneo presumido",
+        "Dose/retomada documentadas"
+      ],
+      "outcome": "Sem protocolo de interrupções não se oferece compensação automática. Não atribuir carga de levantar assistido a exercício nem prometer preparo para transferência."
+    }
+  ],
+  "workedDocumentaryCases": [
+    {
+      "id": "A",
+      "scenario": "65anos, saudável triado, casa, cadeira, fonteES2019",
+      "documentaryDecision": "Candidato documental limitado; ainda pendem revisões/condições reais. Não liberação clínica pelo mapa.",
+      "basis": "N30 population/dose",
+      "liveUserTest": false
+    },
+    {
+      "id": "B",
+      "scenario": "Mesma pessoa sem triagem ou com elegibilidade desconhecida",
+      "documentaryDecision": "Informação insuficiente; não presumir saudável pelo autorrelato de idade.",
+      "basis": "N30 population",
+      "liveUserTest": false
+    },
+    {
+      "id": "C",
+      "scenario": "Artrose com cirurgia agendada, academia sem fisioterapeuta",
+      "documentaryDecision": "Condições de entrega NEMEX não satisfeitas. Máquina/sala não substitui monitorização.",
+      "basis": "N33 originalDelivery",
+      "liveUserTest": false
+    },
+    {
+      "id": "D",
+      "scenario": "Joelho com artrose, pessoa escolhe mobilidade da fig.16NEMEX",
+      "documentaryDecision": "Não selecionar: essa figura foi excluída para joelho no protocolo.",
+      "basis": "N33 originalProgrammeParts/cooldown",
+      "liveUserTest": false
+    },
+    {
+      "id": "E",
+      "scenario": "Dependente com demência, cuidador observa pouca dor",
+      "documentaryDecision": "NEMEX não aplicável por extrapolação. Observação não prova capacidade nemVAS0.",
+      "basis": "N32;N33 population",
+      "liveUserTest": false
+    },
+    {
+      "id": "F",
+      "scenario": "Cuidador interrompe ES2019 após dois movimentos",
+      "documentaryDecision": "Registrar parte realizada; não dobrar próxima sessão ou marcar inteiro concluído. Retomada não prescrita.",
+      "basis": "N30 interruptions/dose",
+      "liveUserTest": false
+    },
+    {
+      "id": "G",
+      "scenario": "Cuidador mede seus passos enquanto assiste ao idoso",
+      "documentaryDecision": "São dados do cuidador. Não atribuir passos/treino ao assistido.",
+      "basis": "N32 distinção de pessoas; N22 baseline",
+      "liveUserTest": false
+    },
+    {
+      "id": "H",
+      "scenario": "Banco e aparelho de remo de praça disponíveis",
+      "documentaryDecision": "Não equivalem automaticamente ao apoio estávelNHS ou ergômetroN31. Praça permanece pendente.",
+      "basis": "N29 support; N31 contexts",
+      "liveUserTest": false
+    },
+    {
+      "id": "I",
+      "scenario": "Yoga em cadeira ficou fácil, usuário pede chão",
+      "documentaryDecision": "Não há progressão selecionada para chão. Exige outra variante humana compatível, sem migração por nome.",
+      "basis": "N26 scope/schedule",
+      "liveUserTest": false
+    },
+    {
+      "id": "J",
+      "scenario": "PACEUP basal4500, fase+1500passos",
+      "documentaryDecision": "Meta documental relativa seria6000nos dias-alvo, cálculo de exemplo não avaliação pessoal ou alvo universal. Não3000/10000fixos.",
+      "basis": "N22 WK-PACEUP-12",
+      "liveUserTest": false
+    },
+    {
+      "id": "K",
+      "scenario": "Duas sessões de remo20min concluídas",
+      "documentaryDecision": "Sem calendário/progressão selecionados: não criar terceira mais longa ou chamar sessão completa.",
+      "basis": "N31 progression",
+      "liveUserTest": false
+    },
+    {
+      "id": "L",
+      "scenario": "Foto mostra perna na bola e nomeponte emduasfontes",
+      "documentaryDecision": "Variantes diferentes: não importar ponte do chão como gestoNEMEX; fonte e nível devem acompanhar o item.",
+      "basis": "N27;N33 notSelectedCore",
+      "liveUserTest": false
+    },
+    {
+      "id": "M",
+      "scenario": "Fonte com licença, mas gestos de encerramento ausentes",
+      "documentaryDecision": "Direitos não completam comandos. Não marcar rotina integral nem inserir gesto gerado.",
+      "basis": "N33 originalProgrammeParts",
+      "liveUserTest": false
+    },
+    {
+      "id": "N",
+      "scenario": "Instruções presentes, mas mídia/direitos de produto não conferidos",
+      "documentaryDecision": "Conteúdo pesquisado não publicado. Crédito não basta para selecionar imagem.",
+      "basis": "N24–N33 rights/releaseApproved",
+      "liveUserTest": false
+    }
+  ],
+  "noGlobalProgression": true,
+  "clinicalClearanceAlgorithm": false,
+  "actualPersonalHealthDataCollected": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "beforeOffer": [
+    "Revisão clínica/editorial dos critérios e da finalidade; não vender este mapa como validação médica",
+    "Material humano fiel, direitos/atribuição e suporte reais para a oferta selecionada",
+    "Compreensão, acessibilidade e casos reais em etapa autorizada; nenhuma simulação substitui validação",
+    "Se implementar: persistir origem/versão, desconhecidos e autorizações separadamente, com privacidade definida em etapa própria"
+  ]
+}

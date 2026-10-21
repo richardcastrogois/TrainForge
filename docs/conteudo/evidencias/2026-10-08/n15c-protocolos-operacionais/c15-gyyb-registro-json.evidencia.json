@@ -1,0 +1,23 @@
+{
+  "id": "c15-gyyb-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT03853148",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:51:42.039856+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro compartilha estudo principal de idosos e suplemento de cuidadores; manter identidade/idades/amostras distintas e arquivos efetivamente publicados.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT03853148",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 191799,
+  "bodyFile": "../raw/c15-gyyb-registro-json.json",
+  "sha256": "e7fd87e029e1479a0689a680b8050631daefe5bc33cf4f1a1c1915e928d5f774"
+}

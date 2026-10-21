@@ -1,0 +1,155 @@
+{
+  "date":"2026-10-07","continuedAt":"2026-10-08","niche":"N15-C",
+  "provenance":"Cada receipt resolve URL/data/status/bytes/SHA256/bodyFile; inventario.json revalida corpos locais. Ausencias significam nao recebido nesta pesquisa, nao inexistencia global.",
+  "newCalls":30,"usableBodies":18,"hashedBodiesIncludingErrors":26,
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "followupReViEEW":{
+    "sourceId":"PR68","receipt":"c15-revieew-seguimento-europepmc.evidencia.json",
+    "doi":"10.1097/JOM.0000000000003474","pmid":"40561221",
+    "firstPublicationDate":"2025-06-02","issue":"2025-10;67(10):e720-e728",
+    "bodyScope":"metadados_e_resumo_primarios","fullArticleReceived":false,
+    "randomized":130,"dropouts":11,"endpoint":"um_ano",
+    "primaryFinding":"Intencao de tratar: interacao grupo-tempo nao significativa para intensidade media de dor lombar, P=0.140.",
+    "secondaryFinding":"Resumo relata resultados favoraveis em interferencia laboral por dor e consumo de medicamentos especificos; resultado negativo para realizacao pessoal no trabalho. Analise por protocolo nao substitui desfecho primario.",
+    "invalidatesInitialTwelveWeekResults":false,"longTermAveragePainBenefitEstablished":false,
+    "autonomousHomeMaintenanceProven":false,"fullTextNeededForDetailedAppraisal":true,
+    "locator":"resultList.result[0].abstractText; indicacao isOpenAccess=N/inEPMC=N/hasPDF=N/hasSuppl=N",
+    "apkUse":"Vincular ao mesmo PR68; mostrar duracao e desfecho de cada publicacao, sem promessa de beneficio persistente ou nova familia independente."
+  },
+  "adherenceReViEEW2026":{
+    "sourceId":"PR68","receipt":"c15-revieew-aderencia2026-html.evidencia.json",
+    "doi":"10.1007/s10926-026-10449-w","published":"2026-09-07","articleLicense":"CC BY4.0",
+    "design":"analise_secundaria_observacional_exploratoria","participants":105,
+    "includesOriginalAndLaterWaitlistExerciseWaves":true,"independentNewRandomizedTrial":false,
+    "meanAdherencePercent":64,"adherenceSd":27,"modelR2":0.226,"adjustedR2":0.187,
+    "findings":"Aderencia associada positivamente a atividade fisica previa, experiencia em forca e realizacao pessoal; negativamente a turnos rotativos e uso de hipnoticos/ansioliticos. Associacoes exploratorias, nao causas, triagem automatica ou aconselhamento para mudar medicamentos.",
+    "adherenceDefinition":"Presenca+completar pelo menos50% dos exercicios prescritos+CR10entre3e5; registro ao fim de cada sessao. Percentual de sessoes que cumprem criterios dentre24planejadas, nao autorizacao para cortar dose pela metade.",
+    "deliveryScope":"Coorte inclui segunda onda da lista de espera; descreve fisioterapeuta OU graduado ciencias do esporte experiente. Nao apagar fonte original que declara mesmo fisioterapeuta para primeira intervencao.",
+    "homeCareWorkersWereExercisingAtIndividualHomes":false,
+    "individualHomeCareWorkersExerciseLocation":"sala equipada nos escritorios da organizacao",
+    "causalRelationshipsEstablished":false,"independentPredictionValidationReceived":false,
+    "positivePriorResistanceAssociationPValue":0.050,"borderlinePValueIsDefinitiveSelectionRule":false,
+    "newDetailedWarmupCooldownOrVideosReceived":false,
+    "locators":"HTML Method/StudyDesign/Intervention/Adherence; Results/MultivariableAnalysis; Limitations; RightsAndPermissions",
+    "apkUse":"Avaliar turnos/apoio/experiencia/carga psicossocial como viabilidade com consentimento e escopo adequado; nao excluir automaticamente quem usa medicacao, mudar terapia ou gerar dose pelo modelo."
+  },
+  "reViEEWDegreeCorrection":{
+    "sourceId":"PR68","previousReceipt":"2026-10-07/n15c-ufpb/c15-revieew-professor-ehu.evidencia.json",
+    "newNetworkCall":false,"author":"Ander Espin","institutionDeclaredDegree":"Graduado en Fisioterapia (2018)",
+    "institutionDeclaredMaster":"Envejecimiento saludable y calidad de vida (2019)",
+    "individualProfessionalQualificationExplicit":true,"independentDiplomaOrLegalRegistrationVerified":false,
+    "locator":"Ficha institucional EHU, biografia curricular; corpo/hash ja recebidos e relidos.",
+    "earlierAreaOnlyDescriptionIsIncomplete":true
+  },
+  "theses":{
+    "PR68":{"recordReceipt":"c15-revieew-tese-portal.evidencia.json","publishedHandle":"https://hdl.handle.net/10810/68569","downloadReceipt":"c15-revieew-tese-registro.evidencia.json","downloadStatus":404,"thesisPdfReceived":false,"rightsOfWholeThesisEstablished":false,"finding":"Portal institucional recebido; somente vinculo ao handle, sem URL de PDF original encontrada no corpo. Nao fabricar caminho de bitstream."},
+    "PR85":{"doi":"10.14201/gredos.137103","recordReceipt":"c15-montero-tese-registro.evidencia.json","pdfReceipt":"c15-montero-tese-pdf.evidencia.json","bothCallsTimedOut":true,"thesisPdfReceived":false,"webPrimaryMetadataOnly":"Tese2017; CC BY-NC-ND4 observada no registro primario web, nao corpo PDF recebido.","trialIdentityWithArticle2020Confirmed":false,"articleCCBYTransfersToThesis":false}
+  },
+  "nivaPosterLinkedToPR88":{
+    "sourceId":"PR88","receipts":["c15-niva-faixas-pagina.evidencia.json","c15-niva-faixas-cartaz-pdf.evidencia.json"],
+    "pdfPages":1,"visualPages":[1],"institutionalPublicationDate":"2016-06-14",
+    "credit":"Professor Lars L. Andersen; Danish Working Environment Information Centre, campanha Job and Body",
+    "sameFourMovementNamesAsProtocolList":true,"identicalToTrial2014PosterVersionProven":false,
+    "records":[
+      {"id":"NIVA01","originalName":"Raise","summary":"Elevar bracos ate ombros, ligeiramente a frente, cotovelos levemente flexionados."},
+      {"id":"NIVA02","originalName":"Squeeze","summary":"Encurtar faixa, bracos a frente; abrir e aproximar escapulas, cotovelos levemente flexionados."},
+      {"id":"NIVA03","originalName":"Rotate","summary":"Prender uma ponta, rotacionar braco mantendo cotovelo junto ao corpo e flexionado."},
+      {"id":"NIVA04","originalName":"Lift","summary":"Pisar numa ponta; punho livre da borda da mesa, elevar/baixar punho."}
+    ],
+    "sourceDose":"3vezes/semana ou diariamente; exemplo5min antes almoco, tantas repeticoes quanto conseguir,1min descanso entreexercicios; aumentar resistencia ao conseguir20seguidas.",
+    "sourceSafety":"Se desconforto/piora da dor, reduzir resistencia e pedir checagem de execucao; caso contrario omitir.",
+    "doseEquivalentToTrialFiveTimesTenMinutes":false,"posterOfficeAudienceAloneProvesCaregiverEfficacy":false,
+    "rights":{"commercialAdaptationGrantReceived":false,"articleCCBYInherited":false,"photographsApproved":false},
+    "locator":"PDF1, blocos numerados1-4/TrainingTips/rodape; HTML data/linkPDF",
+    "requiredOtherTwoPostersReceived":false,"videoDownloadedOrViewed":false,"importAllowed":false
+  },
+  "families":[
+    {
+      "sourceId":"PR86","title":"Turan, Ozer e Demir2025 - PMR para familiares de pacientes paliativos",
+      "doi":"10.1002/nop2.70149","pmcid":"PMC11829250","receipt":"c15-pmr-paliativo2025-xml.evidencia.json",
+      "status":"incompativel_zero","articleLicense":"CC BY-NC-ND4.0","commercialAdaptationApproved":false,
+      "population":{"practitioner":"cuidador_informal_para_si","randomized":66,"perArm":33,"minimumAgeExclusive":18,"minimumCareWeeks":4,"physicianApprovalRequired":true,"whatsappCapablePhoneRequired":true,"meanInterventionAge":36.73,"meanInterventionAgeSd":8.30,"locators":"Methods/Population; resultados demograficos"},
+      "delivery":{"qualifiedSourceRole":"researcher nurse","initialDemonstrationAndReturnPractice":true,"correctnessCheckedAndExplainedAgain":true,"weeklyCalls":true,"audioRequired":true,"apkTextReplacesSourceAudioAndTraining":false},
+      "dose":{"weeks":4,"sessions":28,"minutes":30,"frequency":"diaria_de_manha","reminderTime":"08:00","reminderTimeIsExactExerciseStart":false},
+      "results":"Ensaio relata ansiedade e estilos de enfrentamento favoraveis apos4semanas; nao atribuir beneficio a cada contracao isolada ou a todos os cuidadores.",
+      "assets":{"required":"Relaxation CD da Turkish Psychologists Association, segmento30min e voz/sons convertidoWhatsApp","originalReceived":false,"externalRightsEstablished":false,"announcedDocxAreReceived":false},
+      "gaps":["sequencia real das contracoes/relaxamentos no CD nao recebida","direitos NC-ND do artigo e direitos proprios do audio"],
+      "locators":"JATS Methods/Intervention e permissions; inventario.jats",
+      "homeCompatibility":"Possivel apenas preservando material, preparo, aprovacao e ensino; local hospitalar nao exclusao automatica, eficacia domiciliar independente nao demonstrada.",
+      "importAllowed":false
+    },
+    {
+      "sourceId":"PR87","title":"VA Walking to Wellness, segunda edicao2023, modulo Caregiver Walking Together",
+      "status":"referencia","authors":["Patricia Dubbert PhD","Ashley McDaniel MA","Barbara Stetson PhD"],
+      "individualProfessionalClinicalCredentialVerified":false,
+      "originals":[
+        {"receipt":"c15-va-walking-facilitator-pdf.evidencia.json","pdfPages":39,"visualPages":[27,30]},
+        {"receipt":"c15-va-walking-workbook-pdf.evidencia.json","pdfPages":32,"visualPages":[14,23]},
+        {"receipt":"c15-va-walking-mindful-pdf.evidencia.json","pdfPages":9,"visualPages":[6,8]},
+        {"receipt":"c15-va-walking-caregiver-pdf.evidencia.json","pdfPages":10,"visualPages":[3,8,9]},
+        {"receipt":"c15-va-walking-pagina.evidencia.json","role":"origem oficial e links publicados"}
+      ],
+      "allNinetyPagesTextExtracted":true,"wholeManualsVisuallyReviewed":false,
+      "specificCaregiverConstraints":{"caregiverOwnTimeRequiresReliefSupport":true,"sharedWalkingAlternativeIfRespiteUnavailable":true,"physicalAndMentalConditionLimitsApplyToBoth":true,"general150MinutesIsNotMandatoryCaregiverDose":true,"availableTimeAuthorisesShorterSourceApprovedEducationalGoalOnly":true,"reducesDoseOfOtherTrials":false,"locators":"Facilitator PDF26-30, impresso22-26; Caregiver PDF3-9, impresso1-7"},
+      "records":[
+        {"id":"caregiver_walking_together","practitioner":"cuidador_e_pessoa_cuidada_com_comprometimento_cognitivo_ou_demencia","locator":"Caregiver PDF8-9","numberedTips":13,"thirteenTipsAreThirteenIndependentExercises":false,"preparation":"Calcado/conforto/protecao solar/hidratacao/banheiro; nao apressar; trajeto seguro e limitacoes individuais.","execution":"Ritmo confortavel para a pessoa cuidada, comunicacao simples/positiva; observar capacidade de caminhar e conversar sem pressupor que cognicao permite dupla tarefa.","durationMinutes":null,"sessionsPerWeek":null,"sourceFrequency":"maioria_dos_dias_se_possivel","fixedCaregiverProgression":null,"clinicalTrialOfThisSpecificModuleReceived":false},
+        {"id":"mindful_walking","locator":"Mindful PDF6-8","preparation":"Movimentos e respiracao lentos, foco nas sensacoes sem julgamento.","execution":"Caminhada mais lenta que ritmo habitual, perceber pernas/pes/ambiente, retornar atencao quando distrair.","ending":"Parar e notar corpo/sensacoes em pe, sem julgamento; tip11 PDF8.","durationMinutes":null,"specificCaregiverClinicalEfficacyDemonstrated":false}
+      ],
+      "generalWorkbookNotCaregiverTrialDose":{"locator":"Workbook PDF13-14 e23","before":"Texto cita exemplos de5ou10min em casa para disponibilidade/cansaco; nao dose clinica validada do modulo.","during":"Aquecimento poucos minutos sem gestos nomeados, progressao gradual, conforto e fala preservados; sessoes curtas permitidas pela propria fonte educativa.","after":"Reduzir ritmo, alongamento facil nao nomeado e diario de sentimentos; escala-5a+5 nao desfecho de ensaio do APK."},
+      "rights":{"freePublicDownloadIsCommercialPermission":false,"allAssetsAutomaticallyPublicDomain":false,"sourceEmployeesStatusVerified":false,"photographReuseApproved":false,"thirdPartyMaterial":"Facilitator PDF30 inclui quadro POLITE atribuido a livro de McCurry/Drossel; titular/licenca nao transferidos.","commercialAdaptationGrantReceived":false},
+      "apkUse":"Referencia para viabilidade, apoio de substituicao, fadiga/tempo/seguranca e separacao solo/dupla; nao atribuir resultados Hives ou outros ensaios a este modulo. Conteudo nao importavel automaticamente.",
+      "importAllowed":false
+    },
+    {
+      "sourceId":"PR88","title":"Jakobsen2014/2015 - treinamento breve para trabalhadoras hospitalares que manejam pacientes",
+      "status":"condicional","protocolDoi":"10.1186/1471-2474-15-119","primaryResultDoi":"10.5271/sjweh.3479","secondaryTrunkDoi":"10.1155/2015/902896",
+      "receipts":["c15-jakobsen2014-protocolo-html.evidencia.json","c15-jakobsen2015-resultados-html.evidencia.json","c15-jakobsen2015-tronco-xml.evidencia.json"],
+      "secondaryStudyIsNewIndependentProgramme":false,"articleLicence":"CC BY4.0 no protocolo/resultado principal; atribuição CC no JATS secundario, versao nao presumida.",
+      "population":{"practitioner":"trabalhadora_formal_hospitalar_para_si","femaleOnly":true,"randomized":200,"workArm":111,"homeArm":89,"departments":18,"hospitals":3,"ageEligibility":[18,67],"appliesToAllInformalCaregivers":false},
+      "programme":{"weeks":10,"plannedSessionsPerWeek":5,"minutesPerSession":10,"workSupervised":true,"homeUnsupervisedButDifferentExerciseSet":true,"instructors":"estudantes de fisiologia do exercicio","individualProfessionalCredentialVerified":false,"commonCointervention":"treino ergonomico/manejo e auxilios de elevacao","workMovements":["kettlebell_deadlift","kettlebell_swing","elastic_squeeze","lateral_raise","golf_swing","woodchopper","swiss_ball_ab_crunch","back_extension","squat","elastic_lunge"],"selection":"instrutor seleciona4-6, dois circuitos, transicoes rapidas/pouco ou nenhum descanso","progression":"20RM para8RM, referencias especificas de4movimentos; nao impor a todo gesto","coachingOffered":{"sessions":5,"minutesRange":[30,45]},"operationalMovementInstructionsComplete":false},
+      "results":{"betweenGroupPainDifference":-0.7,"confidenceInterval":[-1.0,-0.3],"cohenD":0.31,"sourceFinding":"WORK superior HOME para dor/forca/desfechos especificos, nao prova equivalencia domiciliar.","achievedMeanSessionsPerWeek":{"work":2.2,"home":1.0},"achievedDoseEqualsPlannedFive":false},
+      "externalPosters":{"received":false,"allThreeHttpStatus":404,"twoThreeAssignmentConflict":"Protocol labels2/3 e nomes dos arquivos citados nao alinham claramente; nao corrigir sem documento original."},
+      "compatibleSetting":"Outro espaco somente com mesmo material, movimentos, preparo e instrutor/cointervencao do braco selecionado; nao trocar WORK por HOME ou afirmar mesmo beneficio.",
+      "locators":"HTML protocolo: Intervention/Table1/References; resultado: Methods/Results/Table2; JATS secundarioMethods/permissions",
+      "gaps":["cartazes externos/instrucoes e direitos por ativo nao recebidos","credencial individual e entrega operacional integral a demonstrar"],"importAllowed":false
+    },
+    {
+      "sourceId":"PR89","title":"Ganjeali, Farsi, Sajadi e Zarea2022 - PMR demonstrado a enfermeiros COVID19",
+      "doi":"10.1186/s12888-022-04456-3","pmcid":"PMC9751506","receipt":"c15-pmr-enfermeiros2022-xml.evidencia.json",
+      "status":"condicional","articleLicence":"CC BY4.0 com ressalva de terceiros",
+      "population":{"practitioner":"enfermeiro_cuidando_de_pacientes_COVID19_para_si","randomized":46,"perArm":23,"noLossReported":true,"observedAgeRange":[20,50],"minimumNursingDegree":"bacharelado","minimumExperienceMonths":6,"noAnxiolyticPsychoactiveMedicationOrPriorPmrTraining":true,"familyCaregiversEfficacyDemonstrated":false},
+      "professionalDelivery":{"role":"mestranda de enfermagem militar,10anos de experiencia clinica","pmrTrainingByCertifiedPsychiatristsAndClinicalPsychologists":true,"approvalCertificateReported":true,"certificateOrLegalRegistrationIndependentlyReceived":false,"sourceGroupSize":6,"initialTeachingSessions":2,"initialSessionMinutes":60,"everyOtherDay":true,"dailyPhoneEncouragement":true},
+      "dose":{"ownPracticeWeeks":2,"minutesPerSession":20,"sessionsPerDay":1,"contractionSeconds":null,"relaxationSeconds":null,"repetitionsPerMuscle":null},
+      "preparation":"Ambiente tranquilo, posicao confortavel, roupa solta se possivel/acessorios retirados; ensino/demonstracao e consolidacao iniciais; musica e audio na pratica.",
+      "table1":{"muscleGroups":13,"tableTransferredFrom":"CR27: Toqan2022, DOI10.1177/00469580221097425","gesturesSummary":["fechar_mao","elevar_sobrancelhas","elevar_antebraco_direito_flexionar_biceps","abrir_boca_confortavelmente","fechar_olhos","retrair_ombros","elevar_ombros","olhar_para_cima_com_cautela","inspiracao_profunda","contrair_gluteos","flexionar_coxas","puxar_pontas_dos_pes_gentilmente","dobrar_dedos_dos_pes"],"isOriginalTwentyMinuteAudioTranscript":false,"gaps":"Tempos/repeticoes por grupo, bilateralidade de antebraco, transicoes e retorno final nao publicados; tabela orienta ficar em pe no pescoco versus descricao geral sentar/deitar. Nao reconciliar por plausibilidade."},
+      "results":{"stressCohenD":1.47,"anxietyCohenD":1.61,"endpointWeeks":2,"sourceNoHarmReported":true,"noHarmMeansZeroRisk":false,"interpretation":"Resultado favoravel no programa demonstrado/apoiado; apenas dois hospitais, hospital sorteado por grupo, amostra conveniencia e seguimento curto, nao eficacia de gesto isolado."},
+      "externalAssets":{"videoCdAndAudioReceived":false,"thirdPartyTableLicencePrimaryWeb":"SAGE declara CC BY-NC4.0 na obra Toqan2022. Tabela creditada expressamente a ela; nao pressupor sublicenciamento CCBY pelo artigo-alvo.","thirdPartyLicenceBodyLocallyReceived":false,"commercialReuseOfTableEstablished":false},
+      "locators":"JATS Methods/Intervention/Table1/CR27/Results/Table5/permissions",
+      "gaps":["instrucao/dose muscular/retorno e audio/CD exatos","direitos da tabela de terceiros e midia","preservar ensino inicial e apoio em outro local"],"importAllowed":false
+    },
+    {
+      "sourceId":"PR90","title":"James, James e Larkey2021 - respiracao e sobrecarga de cuidadores Alzheimer",
+      "doi":"10.1016/j.gerinurse.2021.02.006","receipt":"c15-heartfocused2021-metadados.evidencia.json",
+      "status":"referencia","fullArticleOrProtocolReceived":false,
+      "design":"piloto_randomizado","caregivers":10,"perArm":5,"weeks":2,"minutesDaily":10,
+      "finding":"Resumo relata piora de sobrecarga e ansiedade na intervencao versus espera; autores sugerem estresse pela nova tarefa diaria. Amostra pequena, nao demonstra que toda respiracao piora todo cuidador.",
+      "clinicalPositiveEfficacyEstablished":false,"originalHeartMathAudioOrManualReceived":false,"commercialRightsEstablished":false,
+      "apkUse":"Justifica avaliar carga adicional e aceitabilidade, nao recomendar mais uma tarefa so porque tem10min; nao copiar protocolo protegido ou criar receita.","locator":"resultList.result[0].abstractText","importAllowed":false
+    },
+    {
+      "sourceId":"PR91","title":"NCT06997523 - Benson e respiracao4-7-8 para cuidadores Alzheimer",
+      "receipt":"c15-benson478-alzheimer-registro.evidencia.json","status":"condicional",
+      "registryStatus":"COMPLETED","registeredActualEnrollment":80,"resultsPosted":false,"linkedPublicationsInReceivedRegistry":false,
+      "studyStart":"2025-02-19","completion":"2025-05-07","firstPosted":"2025-05-30","registeredAfterStart":true,
+      "population":{"ageRange":[18,65],"minimumCareMonths":6,"familyOrPaidContinuousCaregivers":true,"researchExclusionsNotUniversalContraindicationList":true},
+      "programme":{"weeks":6,"sessionsPerWeek":2,"maximumGroupSize":10,"delivery":"mesmo pesquisador presencial","individualProfessionalCredentialVerified":false,"breathingMinutes":10,"cycles":30,"inhaleSeconds":4,"holdSeconds":7,"exhaleSeconds":8,"bensonMinutes":null,"bensonEndingMinutes":null,"warmupOrProgressionInvented":false},
+      "operationalContent":"Registro descreve mascara ocular/postura/lingua/exalar e sequencia4-7-8; Benson palavra repetida ao exalar/relaxar pes-cabeca/atitude passiva/reorientacao. Nao preencher duracoes ausentes nem eliminar suporte.",
+      "resultsNotPublishedIsTrialDidNotFinish":false,"completedMeansClinicallyEffective":false,
+      "clinicalEfficacyResultsReceived":false,"rightsOfOriginalAssetsEstablished":false,
+      "locator":"protocolSection.descriptionModule/statusModule/designModule/eligibilityModule; hasResults=false, sem resultsSection/referencesModule",
+      "gaps":["resultados quantitativos publicados para afirmacao clinica","dose/retorno Benson completos, qualificacao e direitos dos ativos"],"importAllowed":false
+    }
+  ],
+  "retainedFailures":{"recordsCount":12,"includes":"2timeouts tese,404tese,203captchaPubMed,403Haryati,500JATSvazio,3cartazes404,403UCSF,JS200acima2MiBsemcorpo,timeoutZIPCREA","failureBodyIsScientificEvidence":false,"scriptWasExecuted":false,"browserInspectionAvailable":false,"browserFailure":"kernel/setup refresh falhou em duas inicializacoes; nao inspecao visual do site","collectorManifestIncident":"Accept application/json nao suportado: primeira coleta JATS concluiu; dois GETs nao enviados retomados em manifesto separado sem duplicar JATS.","pdfRenderIncident":"PdfPage sem context manager; fechamento explicito corrigido, sem novas chamadas de rede."},
+  "closureDecision":{"G01":true,"G02":true,"G03":false,"G04":false,"selectedReadyProgramme":null,"noEvidenceGapFilledByAi":true,"next":"PrioridadePR68: instrucao/aquecimento/retorno originais e entrega/licencas do pacote selecionado; ensaios novos nao substituem ativos ausentes. N15 somente, N21 nao iniciada."}
+}

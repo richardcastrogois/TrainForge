@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-11","scope":"SomenteN15-C: registro citado pelo artigoJATS e credencial primaria de coautora. Nenhum contato/copia do livro privado ou retry.",
+  "requests":[
+    {"id":"c15-dpmp2026-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05056623","extension":"json","purpose":"Registro oficial citado noJATS: confirmar data real de registro/periodos/documentos/results sem tomar protocolo2022 como resultado2026."},
+    {"id":"c15-dpmp-ng-credencial-html","url":"https://www.polyu.edu.hk/rs/people/academic-staff/prof-ng-shamay/","extension":"html","accept":"application/json,text/html,text/plain","purpose":"Credencial institucional primaria registeredphysiotherapist/coautoraNg, nao diploma presumido porafiliacao nem prova de autoria de cada gesto."}
+  ]
+}

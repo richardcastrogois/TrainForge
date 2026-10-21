@@ -1,0 +1,38 @@
+{
+  "niche": "N15-C",
+  "auditedAt": "2026-10-11",
+  "collectionCount": 2,
+  "usefulBodies": 2,
+  "bodiesWithVerifiedHashes": 2,
+  "receipts": [
+    {
+      "id": "c15-benson2022-original-html",
+      "record": "2026-10-08/n15c-benson-reavaliacao/c15-benson2022-original-html.evidencia.json",
+      "sha256": "432df1e016323afff438481bb1922554d3257adb2b7cc513df56b037137fd494",
+      "bytes": 124841,
+      "status": 200,
+      "usable": true,
+      "resolvedUrl": "https://revistas.udea.edu.co/public/journals/recursos_html/iee-Html/iee-v40n3/2216-0280-iee-40-03-e06.html"
+    },
+    {
+      "id": "c15-direito-cientifico-lei9610-html",
+      "record": "2026-10-08/n15c-benson-reavaliacao/c15-direito-cientifico-lei9610-html.evidencia.json",
+      "sha256": "8c5ce400de169f6578ebc579eaed3a497fe89205b8f4c4b81c3ae20a45a9eb69",
+      "bytes": 162721,
+      "status": 200,
+      "usable": true,
+      "resolvedUrl": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+    }
+  ],
+  "priorLicenseReceipt": "2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json",
+  "priorLicenseSha256": "5cdbf9281c93b9c3850243a46b3506507e681f457fde814ecb7706a2ceec8272",
+  "publisherAssetLicense": "CC BY-NC-SA 4.0",
+  "licenseReplacedByGenericBy": false,
+  "scientificFactsBlanketProhibited": false,
+  "assetCopyApproved": false,
+  "legalReviewPerformed": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "networkCallsDuringAnalysis": 0
+}

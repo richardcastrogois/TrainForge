@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-13",
+  "itemsChecked": 5,
+  "sourceQuestionsStillPending": 8,
+  "bothResearchGatesMetItems": [
+    "CG-01"
+  ],
+  "factualResearchClosedItems": 5,
+  "catalogueFieldsChecked": 90,
+  "previousSelectedPrimaryBodiesRevalidated": 28,
+  "newCollectorCalls": 9,
+  "newUsableGeneralRightsBodies": 2,
+  "newUsableMetadataBodies": 1,
+  "newUsableAuxiliaryTechniqueBodies": 2,
+  "newOriginalCaregiverInstructionBodies": 0,
+  "newFailedBodies": 4,
+  "receiptBodiesHashed": 37,
+  "nonEmptyNewBodiesHashed": 8,
+  "networkCallsDuringAnalysis": 0,
+  "mechanicalChecksAreClinicalOrLegalApproval": false,
+  "n15GlobalClosed": false,
+  "n21Allowed": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "auditSha256": "eec1213f82546e119cb8e26cd0641a24377251626cd91467995e81e2f5650bef",
+  "catalogueSha256": "ae76ce79a2d5307b80d3412e00130a8f2ff19497ea9689ea3efc7f2848d79abc",
+  "packages": [
+    {
+      "id": "CG-01",
+      "file": "2026-10-12/cg01-estatico/pacote-factual.json",
+      "sha256": "3b61fa79b8c735c385a59a3e26a6b7e527ad753da494871aa8b96ae492a03fd2",
+      "sourcePointersChecked": 6,
+      "pendingSourceQuestions": 0
+    },
+    {
+      "id": "CG-02",
+      "file": "2026-10-12/cg02-benson/pacote-factual.json",
+      "sha256": "b72bce959ccce4047d61ade09c3e8d6e888159e807348e8c44d34f43c7b283d6",
+      "sourcePointersChecked": 6,
+      "pendingSourceQuestions": 1
+    },
+    {
+      "id": "CG-03",
+      "file": "2026-10-12/cg03-start/pacote-factual.json",
+      "sha256": "bac71ada4b1a36af83ba2c4277b888be82dc5f48846a85fd01f685b1e1e1f54e",
+      "sourcePointersChecked": 5,
+      "pendingSourceQuestions": 2
+    },
+    {
+      "id": "CG-04",
+      "file": "2026-10-12/cg04-revieew/pacote-factual.json",
+      "sha256": "2cf13035a250bc0f248c84261cfe3f4449da6a6d800bc30e88401e8950c7b075",
+      "sourcePointersChecked": 7,
+      "pendingSourceQuestions": 2
+    },
+    {
+      "id": "CG-05",
+      "file": "2026-10-12/cg05-pilates/pacote-factual.json",
+      "sha256": "5b19a5c9a0c99a627384f2d1bae8c84f19ce41d977466dabfb0de67c577ffc46",
+      "sourcePointersChecked": 5,
+      "pendingSourceQuestions": 3
+    }
+  ],
+  "newReceipts": [
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cc-faq-html.evidencia.json",
+      "id": "n15dir-cc-faq-html",
+      "url": "https://creativecommons.org/faq/index.html",
+      "resolvedUrl": "https://creativecommons.org/faq/index.html",
+      "collectedAtUtc": "2026-10-13T03:33:17.586273+00:00",
+      "status": 200,
+      "bytes": 231234,
+      "sha256": "d4ffb015ad13ce12eb060979abf835caa5c2ce2ef5d928e6af1885845db99c02",
+      "usableBody": true,
+      "originalCaregiverExerciseInstructions": false
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-handle-api-json.evidencia.json",
+      "id": "n15dir-cg04-handle-api-json",
+      "url": "https://hdl.handle.net/api/handles/10810/68569",
+      "resolvedUrl": "https://hdl.handle.net/api/handles/10810/68569",
+      "collectedAtUtc": "2026-10-13T03:58:55.049917+00:00",
+      "status": 200,
+      "bytes": 222,
+      "sha256": "58817f99f3a84e3d0697570facc5754eb6ad6d51654f59196b114bb289ae3cb8",
+      "usableBody": true,
+      "originalCaregiverExerciseInstructions": false,
+      "publishedUrls": [
+        "https://addi.ehu.eus/handle/10810/68569"
+      ],
+      "role": "identifier_metadata_not_thesis"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-lombar-atual-pdf.evidencia.json",
+      "id": "n15dir-cg04-nhs-lombar-atual-pdf",
+      "url": "https://northcheshireandmersey.nhs.uk/media/jbdbvtp0/lower-back-strengthening-exercises-patient-advice-sheet.pdf",
+      "resolvedUrl": "https://northcheshireandmersey.nhs.uk/media/jbdbvtp0/lower-back-strengthening-exercises-patient-advice-sheet.pdf",
+      "collectedAtUtc": "2026-10-13T04:25:41.981489+00:00",
+      "status": 200,
+      "bytes": 1941971,
+      "sha256": "60f6cc2e30df4db6e64a6512422e8b48bca5005d5dabf12ed7637c6a99170158",
+      "usableBody": true,
+      "originalCaregiverExerciseInstructions": false,
+      "pages": 10,
+      "textPagesChecked": [
+        {
+          "page": 2,
+          "textSha256": "f3426eb050b64e9d2450d5c837d16829fbf39cd9629021cf777e7733ca9dc660"
+        },
+        {
+          "page": 3,
+          "textSha256": "cb271c87c79a891de50907c44cc0152d2073f079ab169a8890e54ece69dd1892"
+        },
+        {
+          "page": 4,
+          "textSha256": "c42cfc81cddc6ce057f90d22cafb0b144f48c8a30611ff0cddbe545bc9917471"
+        },
+        {
+          "page": 5,
+          "textSha256": "6796c5f69b8b2de5dc1800f8a8cab848712018854b759a748c6ad6b0367b3ba9"
+        },
+        {
+          "page": 10,
+          "textSha256": "fa29c731eb10d2caf46a35856a41ea90e2ce0d5b9abaa9516d2ea61f72a51cf6"
+        }
+      ],
+      "role": "auxiliary_technique_comparison_not_original_caregiver_protocol"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-ombro-atual-pdf.evidencia.json",
+      "id": "n15dir-cg04-nhs-ombro-atual-pdf",
+      "url": "https://northcheshireandmersey.nhs.uk/media/3aaixkhv/shoulder-strengthening-exercises-patient-advice-sheet.pdf",
+      "resolvedUrl": "https://northcheshireandmersey.nhs.uk/media/3aaixkhv/shoulder-strengthening-exercises-patient-advice-sheet.pdf",
+      "collectedAtUtc": "2026-10-13T04:17:59.830507+00:00",
+      "status": 200,
+      "bytes": 1373100,
+      "sha256": "2a0eb1d6518ff93a36b2ef191224771e69b016a1538ebb3a24f1b730c62d6469",
+      "usableBody": true,
+      "originalCaregiverExerciseInstructions": false,
+      "pages": 16,
+      "textPagesChecked": [
+        {
+          "page": 2,
+          "textSha256": "bbd6052ad2d58189087382f817625bbd6603f54c0b735263e410019a612f2a68"
+        },
+        {
+          "page": 7,
+          "textSha256": "0bb9501059946f6803242730c48dd15a76b15818e2224f2a031c8d3c6b5c67ee"
+        },
+        {
+          "page": 8,
+          "textSha256": "56a64d5fc36e4ef5e75eba824c9f12772446193610b024c96185facc5551d7f9"
+        },
+        {
+          "page": 13,
+          "textSha256": "bdb3ce7b3143682ba3636f35fc29255b31304c40661e57bd4e52745658c52985"
+        },
+        {
+          "page": 16,
+          "textSha256": "b6ca5eb5b92a5bb0b88c1e84b09efe48aa38004ccbb4d3cb190654d557c63ea2"
+        }
+      ],
+      "role": "auxiliary_technique_comparison_not_original_caregiver_protocol"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-ombro-pdf.evidencia.json",
+      "id": "n15dir-cg04-nhs-ombro-pdf",
+      "url": "https://bridgewater.nhs.uk/wp-content/uploads/2020/12/Shoulder-strengthening-exercises-Patient-advice-sheet.pdf",
+      "resolvedUrl": "https://northcheshireandmersey.nhs.uk/wp-content/uploads/2020/12/Shoulder-strengthening-exercises-Patient-advice-sheet.pdf",
+      "collectedAtUtc": "2026-10-13T04:12:59.236182+00:00",
+      "status": 404,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "usableBody": false,
+      "originalCaregiverExerciseInstructions": false
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-tese-canonica-html.evidencia.json",
+      "id": "n15dir-cg04-tese-canonica-html",
+      "url": "https://addi.ehu.eus/handle/10810/68569",
+      "resolvedUrl": "https://addi.ehu.eus/handle/10810/68569",
+      "collectedAtUtc": "2026-10-13T04:01:20.290827+00:00",
+      "status": 404,
+      "bytes": 1551,
+      "sha256": "370ad249c0d59bffda3ead83846219a224cc5555f063a91f0cf98785449c1ff7",
+      "usableBody": false,
+      "originalCaregiverExerciseInstructions": false,
+      "securityChallengeReceived": true,
+      "role": "security_challenge_not_pdf_or_metadata"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-pilates-bmr-abstract-html.evidencia.json",
+      "id": "n15dir-pilates-bmr-abstract-html",
+      "url": "https://journals.sagepub.com/doi/abs/10.3233/BMR-191649",
+      "resolvedUrl": "https://journals.sagepub.com/doi/abs/10.3233/BMR-191649",
+      "collectedAtUtc": "2026-10-13T03:33:18.667975+00:00",
+      "status": 403,
+      "bytes": 5734,
+      "sha256": "b2f74d6135785d888baccd2b669fedd97aa12626537622af5d03bcbfbadf27f2",
+      "usableBody": false,
+      "originalCaregiverExerciseInstructions": false
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-ucl-start-raiz-html.evidencia.json",
+      "id": "n15dir-ucl-start-raiz-html",
+      "url": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start",
+      "resolvedUrl": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start",
+      "collectedAtUtc": "2026-10-13T03:33:18.384724+00:00",
+      "status": 403,
+      "bytes": 5898,
+      "sha256": "90bbaf1fdfddc98a98a8a4b677dc432b930839263a46e970bfe862ad645bb0e9",
+      "usableBody": false,
+      "originalCaregiverExerciseInstructions": false
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-wipo-metodo-html.evidencia.json",
+      "id": "n15dir-wipo-metodo-html",
+      "url": "https://www.wipo.int/en/web/copyright/protection",
+      "resolvedUrl": "https://www.wipo.int/en/web/copyright/protection",
+      "collectedAtUtc": "2026-10-13T03:33:16.185618+00:00",
+      "status": 200,
+      "bytes": 122258,
+      "sha256": "37850d47266a028b6cc1f11397aa297802ad8ca92f4d789a47ae9d49a323c913",
+      "usableBody": true,
+      "originalCaregiverExerciseInstructions": false
+    }
+  ],
+  "comparisonSha256": "aa2105ef362ad928e952e6cf340e8f4ecadc6155339a8a325ecc833dc5c89780"
+}

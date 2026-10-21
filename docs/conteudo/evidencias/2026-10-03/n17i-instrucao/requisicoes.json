@@ -1,0 +1,22 @@
+{
+  "niche": "N17-I",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n17i-wai-idosos",
+      "url": "https://www.w3.org/WAI/older-users/",
+      "extension": "html",
+      "purpose": "Conferir necessidades de utilizadores idosos e principios de acessibilidade, sem assumir deficiencia por idade."
+    },
+    {
+      "id": "n17i-wai-midia",
+      "url": "https://www.w3.org/WAI/media/av/",
+      "extension": "html",
+      "purpose": "Conferir criterios de legendas, descricao visual, transcricao e player; nao copiar videos."
+    }
+  ],
+  "reused": [
+    "2026-10-03/n17-casa-instrucao/amostra-midia.json",
+    "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json"
+  ]
+}

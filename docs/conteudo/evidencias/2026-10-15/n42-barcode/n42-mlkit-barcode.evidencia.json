@@ -1,0 +1,23 @@
+{
+  "id": "n42-mlkit-barcode",
+  "url": "https://developers.google.com/ml-kit/vision/barcode-scanning/android",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:49:47.943368+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Contrato primário de scanner específico: formatos, rawValue, modelo disponível, requisitosAndroid e diferença entre código detectado e decodificado. Não instalarSDK nem usar câmera/conta.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developers.google.com/ml-kit/vision/barcode-scanning/android",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 245294,
+  "bodyFile": "../raw/n42-mlkit-barcode.html",
+  "sha256": "15203beab0b2ca6e7f3f78f52f7464226d4f8b5e143b4c9736b52bcb7ba01a1c"
+}

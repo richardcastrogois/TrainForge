@@ -1,0 +1,23 @@
+{
+  "id": "c15-tcqg-grupo2020-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:40:29.986480+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original TCQG2020cuidador praticante emcentro, nao excluir porlocal; verificardosegestosprofissional/Tablecaregiver/seguranca/licenca e suplementos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 86944,
+  "bodyFile": "../raw/c15-tcqg-grupo2020-xml.xml",
+  "sha256": "db3ceb65c675d347bcc029d5593a22ae32340d0e122dff02c9e459d711441f3a"
+}

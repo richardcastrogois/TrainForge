@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-07",
+  "scope":"Registros primarios independentes de URLs que falharam; sem retry, proxies, CAPTCHA, TLS desativado ou contatos.",
+  "requests":[
+    {"id":"c15-revieew-tese-portal","url":"https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab","extension":"html","purpose":"Portal institucional da tese: identidade/links publicados, nao corpo original obtido por indexador secundario."},
+    {"id":"c15-revieew-seguimento-europepmc","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core","extension":"json","purpose":"Metadados/resumo primario indexado porEuropePMC do seguimento; investigar deposito publico independente e distinguindo resumo/corpo integral."},
+    {"id":"c15-crea2026-suplementos-pagina","url":"https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full","extension":"html","purpose":"Primeiro HTML editorial local para URLs publicadas dos quatro suplementos conhecidos noJATS; protocolo nao resultado clinico."}
+  ]
+}

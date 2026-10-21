@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-academia-instrucao",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28older%20AND%20resistance%20AND%20machine%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY&format=json&resultType=core&pageSize=8",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:57:10.653395+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Triagem de manuais/instrucoes integrais de aparelhos em estudo humano com idosos. Oito resultados. Academia interna nao e academia de praca; nao selecionar apenas tabela de carga ou figuras de avaliacao.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28older%20AND%20resistance%20AND%20machine%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY&format=json&resultType=core&pageSize=8",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 61118,
+  "bodyFile": "../raw/i15-busca-academia-instrucao.json",
+  "sha256": "92b722a3af00744a779974b4a3c704099f519994b39c5eb85a5a0b9f890fd2dd"
+}

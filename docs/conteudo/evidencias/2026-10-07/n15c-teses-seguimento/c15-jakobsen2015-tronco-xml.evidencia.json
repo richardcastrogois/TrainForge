@@ -1,0 +1,23 @@
+{
+  "id": "c15-jakobsen2015-tronco-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:55:31.446258+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Publicacao do mesmo ensaio sobre perturbacao tronco, nao nova amostra/familia independente. Correlacionar fonte primaria com cartazes HOME/instrucoes e resultados sem extrapolar.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 100293,
+  "bodyFile": "../raw/c15-jakobsen2015-tronco-xml.xml",
+  "sha256": "8d76bbb1491e1536161724798d24fc1a1178ae7f712e1ff22a2433e5ecd82287"
+}

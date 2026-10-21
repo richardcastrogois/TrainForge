@@ -58,7 +58,8 @@ def inspect(path, record):
         item["bodyFile"] = body_path.relative_to(REPO).as_posix()
         item["bodyAvailableLocally"] = body_path.is_file()
         if body_path.is_file():
-            measured = hashlib.sha256(body_path.read_bytes()).hexdigest()
+            with body_path.open('rb') as body:
+                measured = hashlib.file_digest(body, 'sha256').hexdigest()
             item["originalBodyHashRecheckable"] = True
             item["originalBodyHashMatches"] = measured == record["sha256"]
             if not item["originalBodyHashMatches"]:

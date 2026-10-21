@@ -1,0 +1,23 @@
+{
+  "id": "c15-va-walking-pagina",
+  "url": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:51:59.961258+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "URLinstitucional explicitamente publicada PDF: localizar materiais do participante/cuidador, origem/versao2023 e direitos, sem contato com autores.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 111086,
+  "bodyFile": "../raw/c15-va-walking-pagina.html",
+  "sha256": "f614d4c0cd8a564a18d18b3be27e84f4e7a4d0a3714ac3249efef78051239f13"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n18r-macaulay-2021",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255018",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:03:28.763281+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Novo programa de máquinas em idosos semRTpesado recente, suplementos e instrução; ensaio não randomizado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255018",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 244212,
+  "bodyFile": "../raw/n18r-macaulay-2021.html",
+  "sha256": "5b21aedff248d588fb7ba9f6a862a3cf8dda8a8bba94f7a306fc4bca05f3aef0"
+}

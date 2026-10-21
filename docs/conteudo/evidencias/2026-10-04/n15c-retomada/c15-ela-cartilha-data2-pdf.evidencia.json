@@ -1,0 +1,23 @@
+{
+  "id": "c15-ela-cartilha-data2-pdf",
+  "url": "https://www.frontiersin.org/api/v4/articles/1164370/file/Data_Sheet_2.pdf/1164370_supplementary-materials_datasheets_2_pdf/1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:23:36.330345+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Primeiro GET local do PDF individual Data_Sheet_2.pdf identificado no XML/HTML da editora, via padrao publico de arquivo Frontiers; ZIP acima de2MiB nao repetido. Conferir cartilha ou registrar falha.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://public-pages-files-2025.frontiersin.org/articles/1164370/file/data_sheet_2.pdf/1164370_supplementary-materials_datasheets_2_pdf/1",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 162,
+  "bodyFile": "../raw/c15-ela-cartilha-data2-pdf.pdf",
+  "sha256": "1857ac3f45c67dbc9d873848d894ff91d6af84c6bd061dfccd5912b791234b36",
+  "error": "HTTP 404"
+}

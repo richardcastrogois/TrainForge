@@ -1,0 +1,15 @@
+{
+  "niche": "N13-I", "date": "2026-10-04", "use": "research_only",
+  "readings": [
+    {"url": "https://www.nia.nih.gov/about/policies", "method": "primary_source_search_index", "pageLastUpdated": "2026-07-17", "localBodyObtained": false, "sourceSha256": null, "finding": "Texto NIA e dominio publico salvo excecao indicada. Adaptacao deve creditar a origem e nao usar logo; traducao deve identificar tradutor e fonte. Fotografias/ilustracoes podem ser de terceiros. Pesquisa de direitos nao libera lote final.", "quotationUsed": false},
+    {"url": "https://www.nia.nih.gov/newsroom/media-frequently-asked-questions", "method": "primary_source_search_index", "localBodyObtained": false, "sourceSha256": null, "finding": "FAQ distingue publicacoes NIA de fotos stock restritas. A coleta local retornou 405 e a abertura web mostrou desafio; esses corpos nao demonstram direitos.", "quotationUsed": false}
+  ],
+  "screenedAlternatives": [
+    {"url": "https://www2.gov.bc.ca/assets/gov/people/seniors/about-seniorsbc/pdf/hefs_english.pdf", "decision": "Indice primario indica plano semanal para idosos. Abertura web 502; livro completo e direitos nao verificados, nao selecionado nem contabilizado como evidencia local."},
+    {"url": "https://www.gov.wales/food-and-nutrition-care-homes-older-people-standards-guidelines-and-menu-planning", "decision": "Alimentacao institucional em care homes, nao rotina pessoal do cuidador. Landing informa PDF de 5 MB; nao coletar apenas para exceder limite de 4 MiB. Nao selecionado como menu domestico."},
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4506625/", "decision": "MedLey tem individualizacao/apoio de nutricionista. Programa estudado nao equivale a menu autonomo obtido; nao selecionado nesta rodada."},
+    {"url": "https://www.nia.nih.gov/health/healthy-eating-nutrition-and-diet/healthy-meal-planning-tips-older-adults", "decision": "Opcoes de refeicao indexadas nao sao sequencia completa autoral. Abertura web falhou; nao montar novo plano para preencher lacuna."}
+  ],
+  "accessLimits": [{"record": "2026-10-04/n13i-planos/a13-nia-text-rights.evidencia.json", "status": 405, "usablePolicyBody": false, "retried": false}],
+  "noAuthorContact": true, "noPaidLicense": true, "releaseApproved": false
+}

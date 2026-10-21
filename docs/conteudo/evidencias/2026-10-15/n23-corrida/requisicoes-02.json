@@ -1,0 +1,25 @@
+{
+  "requests": [
+    {
+      "id": "n23-berkshire-pdf",
+      "url": "https://www.berkshirehealthcare.nhs.uk/media/2jmpfnad/return-to-running-bh1165q-feb-2026.pdf",
+      "purpose": "PDF2p vigente retorno2026; autoria/versao/ambiguidade e apoio",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n23-gronorun-jats",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1821023/fullTextXML",
+      "purpose": "Protocolo abertoGRONORUN2007: programas8/13semanas, autoria e licenca; nao concluir eficacia pelo protocolo",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n23-gronorun-result",
+      "url": "https://research.rug.nl/files/2727628/Buist_2008_Am_J_Sports_Med.pdf",
+      "purpose": "Resultado original2008: comparar incidenciade lesoes e vinculo dosprogramas, nao licenca do AJSM transferida",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

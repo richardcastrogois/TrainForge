@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-15",
+  "niche": "N32",
+  "countryScope": "PT conformeR18do planejamento, não inferido da localização do notebook",
+  "sources": [
+    {
+      "id": "CI05",
+      "url": "https://www.nia.nih.gov/health/pain/pain-you-can-get-help",
+      "publisher": "NIH/National Institute on Aging",
+      "humanAuthorship": "Autoria institucional, conteúdo revisto por cientistas NIA e especialistas; revisores individuais não nomeados.",
+      "method": "primary_source_search_index_full_text",
+      "localBodyObtained": false,
+      "localSha256": null,
+      "reviewDate": "2020-04-10",
+      "sourceContent": "Descrição da experiência de dor para comunicação clínica: lugar, início/evolução, qualidade, sintomas associados, horários, agravantes/alívio e o que foi tentado; impacto em atividades/sono/alimentação. Intensidade autorrelatada pode ser numérica0–10ou verbal. Observações de comportamento em pessoa com Alzheimer justificam contactar médico, não diagnóstico de dor por imagem.",
+      "rights": "Política NIA primária anteriormente indexada: texto livre salvo aviso/identificar adaptação; fotos e terceiros não selecionados. Campos factuais em redação própria, sem copiar escala de faces ou instrumentoproprietário.",
+      "clinicalLimit": "Não importar recomendações de medicamento,doses ou serviços/telefones dosEUA. Revisão2020não é atualização clínica2026."
+    },
+    {
+      "id": "CI05",
+      "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/exercising-chronic-conditions",
+      "publisher": "NIH/NIA",
+      "method": "primary_source_search_index",
+      "localBodyObtained": false,
+      "localSha256": null,
+      "sourceContent": "Atividade com condição/dor exige orientação individual; não transformar diagnóstico/queixa em dose automática.",
+      "barrier": "Aberturaweb mostrou página curta de verificação, sem corpo integral. Não repetir/contornar nem substituir por leitura doPDF2024desafiado.",
+      "rights": "Mesma limitação NIA; nenhum texto integral adaptado."
+    },
+    {
+      "id": "PR201",
+      "url": "https://www.dgs.pt/em-destaque/dgs-spms-e-inem-lancam-campanha-para-sensibilizar-para-a-correta-utilizacao-do-sns24-e-do-inem.aspx",
+      "publisher": "DGS/SPMS/INEM",
+      "method": "primary_source_web_reader",
+      "localBodyObtained": false,
+      "localSha256": null,
+      "locator": "Corpo da campanha, parágrafos3–4, não menus doportal.",
+      "sourceContent": "Distingue pedido de orientação não emergente peloSNS24de situações potencialmente graves dirigidas ao112, incluindo dor no peito, dificuldade respiratória, alteração deconsciência e suspeita deAVC. Lista de exemplos não é teste completo de exclusão de emergência.",
+      "rights": "RodapéDGSdireitosreservados. LinkNotasLegais observado redireciona paraf=99/informaçãoindisponível, não licença. Somente fatos de serviço/encaminhamento e referência emredação independente, sem copiar campanha/cartaz/foto/logotipo."
+    },
+    {
+      "id": "PR202",
+      "url": "https://www.nice.org.uk/guidance/ng97/chapter/Recommendations",
+      "publisher": "NICE",
+      "method": "primary_source_search_index_full_text",
+      "localBodyObtained": false,
+      "localSha256": null,
+      "publicationDate": "2018-06-20",
+      "locators": [
+        "1.1.1–1.1.2",
+        "1.8.3",
+        "1.8.5",
+        "1.13.5"
+      ],
+      "sourceContent": "Preservar participação e comunicação da pessoa. Na demência, observação estruturada complementa avaliação clínica e autorrelato quando possível; não o substitui por nota inferida pelo app. Reavaliar sehá sinais/alterações ou após intervenção. Confidencialidade e acesso do cuidador exigem distinção depapéis.",
+      "rights": "Referência clínica com paráfrase factual breve; não escala/instrumento/diretriz inteira copiada ou traduzida. Grantcomercial de expressão não verificado; nenhum instrumentoPAINAD/escala de faces importado.",
+      "barrier": "AberturaURLlowercase retornouInternalError. Busca restrita a nice.org.uk encontrou aURLcanônicaindexada comRecommendations e teor1.8.3; sem fingirGETlocal/atualização clínica recente."
+    },
+    {
+      "id": "PR203",
+      "url": "https://www.gov.pt/guias/a-minha-saude",
+      "publisher": "República Portuguesa/gov.pt",
+      "method": "primary_source_web_reader",
+      "localBodyObtained": false,
+      "localSha256": null,
+      "pageUpdatedAt": "2026-10-09",
+      "sourceContent": "ConfirmaSNS24 808242424para orientação e112emergência; médico/centro de saúde fazem seguimento. Não é serviço prestado peloTrainForge.",
+      "rights": "Só dados factuais de serviços e link de procedência; não conteúdo visual ou cópia do guia.",
+      "costs": "Consulta pública sem conta. Custo de ligaçãoSNS24econdições/taxas de atendimento não auditados; não declarar tudo gratuito. Nenhuma ligação/consulta/conta criada."
+    }
+  ],
+  "newLocalNetworkCalls": 0,
+  "newLocalBodyHashes": 0,
+  "newVisualPages": 0,
+  "barriers": [
+    {
+      "url": "https://order.nia.nih.gov/sites/default/files/2024-01/pain-older-adults-booklet.pdf",
+      "method": "web_reader",
+      "result": "página de verificação, nãoPDF recebido",
+      "retried": false
+    },
+    {
+      "url": "https://www.dgs.pt/em-destaque/site/notas-legais.aspx",
+      "result": "Linkrelativo gerou rota indisponívelf=99; semdireitos específicos recebidos",
+      "retried": false
+    }
+  ],
+  "noCopyOfRestrictedMaterials": true,
+  "releaseApproved": false
+}

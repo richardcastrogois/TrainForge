@@ -1,0 +1,68 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 5,
+  "http200": 3,
+  "hashedBodies": 3,
+  "usableBodies": 3,
+  "pdfPages": 13,
+  "receipts": [
+    {
+      "id": "c15-gomes2026-artigo-html",
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-gomes2026-artigo-html.evidencia.json",
+      "url": "https://revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "usableForReading": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "c15-sun2025-artigo-html",
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/s12912-025-03881-5",
+      "status": 200,
+      "bytes": 453401,
+      "sha256": "f6b11c90e10f1cd0b1ab7fb75e42ed65788fc34b7ad9f014d416efabca2f0887",
+      "usableForReading": true,
+      "error": null
+    },
+    {
+      "id": "c15-sun2025-artigo-pdf",
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-pdf.evidencia.json",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12912-025-03881-5.pdf",
+      "status": 200,
+      "bytes": 1808426,
+      "sha256": "60457d0431d164207c8ea361f4ebef4c392f6c9b12c5d9d31f6b61843a091dcc",
+      "usableForReading": true,
+      "error": null
+    },
+    {
+      "id": "c15-gomes2022-ufba-metadata",
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-gomes2022-ufba-metadata.evidencia.json",
+      "url": "https://repositorio.ufba.br/handle/ri/36416",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "usableForReading": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "c15-gomes2021-rebec",
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-gomes2021-rebec.evidencia.json",
+      "url": "https://ensaiosclinicos.gov.br/rg/RBR-4fvfn2p",
+      "status": 200,
+      "bytes": 119026,
+      "sha256": "f0980796c6a760fb6292df60d478874aa30f28e252e45fee3cab44853be031e3",
+      "usableForReading": true,
+      "error": null
+    }
+  ],
+  "renderedPages": [],
+  "renderingIsVisualInspection": false,
+  "embargoedThesisDownloaded": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

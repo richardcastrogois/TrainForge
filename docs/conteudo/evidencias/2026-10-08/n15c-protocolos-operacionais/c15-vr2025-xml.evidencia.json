@@ -1,0 +1,23 @@
+{
+  "id": "c15-vr2025-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452558/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:10:20.598920+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "JATS da pratica propria de cuidador com K-HERO; nao eliminar hardware/supervisao nem tratar melhora exploratoria como prova universal.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452558/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 154416,
+  "bodyFile": "../raw/c15-vr2025-xml.xml",
+  "sha256": "9971630f47acb814c18797c9b2c4128f576b29b2e6eeb5740e6b4974e2418968"
+}

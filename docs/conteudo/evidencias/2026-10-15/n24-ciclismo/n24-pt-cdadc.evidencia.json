@@ -1,0 +1,25 @@
+{
+  "id": "n24-pt-cdadc",
+  "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1985-34475475",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:25:55.857040+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonte oficial atual: art1(2) metodos versus arts2/3/9 expressao e adaptacao; nao grant generico de treinos",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1985-34475475",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2346,
+  "bodyFile": "../raw/n24-pt-cdadc.html",
+  "sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+  "usableAsSourceBody": false,
+  "contentValidationNote": "HTTP200 devolveu somente shell HTML de 2346 bytes; texto legal lido na ferramenta web, não recebido neste corpo local."
+}

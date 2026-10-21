@@ -1,0 +1,22 @@
+{
+  "id": "n16i-otago-manual",
+  "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:21:06.991790+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Inspecionar manual de exercicio para idosos com profissional; PDF indicado no registo publico, 2.76 MB; limite controlado sem retries.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://s3.ap-southeast-1.amazonaws.com/ap-st01.ext.exlibrisgroup.com/64OTAGO_INST/storage/alma/B7/FF/BB/55/43/22/E9/29/07/36/04/EF/70/BD/E8/E0/acc1162-otago-exercise-manual.pdf?response-content-disposition=attachment%3B%20filename%3D%22acc1162-otago-exercise-manual.pdf%22%3B%20filename%2A%3DUTF-8%27%27acc1162-otago-exercise-manual.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261003T232140Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIASFZ3TTVRIW3HGO5P%2F20261003%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Expires=119&X-Amz-Signature=5588c5f0da6faae055af571f9727fcdc97a5bca69ee08078da2ef2025dfcdab6",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2897430,
+  "bodyFile": "../raw/n16i-otago-manual.pdf",
+  "sha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+}

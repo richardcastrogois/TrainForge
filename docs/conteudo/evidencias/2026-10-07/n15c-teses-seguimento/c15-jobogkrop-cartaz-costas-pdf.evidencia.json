@@ -1,0 +1,25 @@
+{
+  "id": "c15-jobogkrop-cartaz-costas-pdf",
+  "url": "https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:55:35.594556+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Primeira coleta cartaz costas publicado, verificar identidade e nomenclatura conflitanteposter2/3 antes de importar.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 56897,
+  "bodyFile": "../raw/c15-jobogkrop-cartaz-costas-pdf.pdf",
+  "sha256": "4b3ec856013e39513fa64b6c3676deb976a81cc1a8d37dae955639154d80c36e",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

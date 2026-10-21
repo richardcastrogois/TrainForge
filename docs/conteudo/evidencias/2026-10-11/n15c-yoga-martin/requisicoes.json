@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-11",
+  "scope":"N15-C, primeira coleta de previa editorial explicitamente publica eCOREprimario. Nao comprar, solicitarcopia, acessarconta, repetirbarreiras ou confundirpreviewcomintegral.",
+  "requests":[
+    {"id":"c15-martin2014-preview-pdf","url":"https://www.ons.org/pubs/article/16086/preview-download","extension":"pdf","purpose":"Previa publicada do DOI10.1188/14.ONF.257-264, verificar quantas paginas/conteudo real/qualificacao/dose/roteiro. Nao pressupor artigo completo ou usar artigo para paciente comoexercicio docuidador."},
+    {"id":"c15-martin2014-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:24769590%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"Resumo primario para diferenciar 12cuidadores/piloto antesdepois6semanas deensaio controlado/instrucao clinica integral; localizaroriginaispublicos declarados semadivinhar downloads."}
+  ]
+}

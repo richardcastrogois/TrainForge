@@ -1,0 +1,22 @@
+{
+  "id": "c15-ufrn-handle53566",
+  "url": "https://repositorio.ufrn.br/server/api/pid/find?id=123456789%2F53566",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:25:54.479918+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resolver somente o identificador persistente observado da tese via REST publico DSpace7 no servidor declarado, sem varrer IDs.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufrn.br/server/api/core/items/28c14acf-4ae5-4aeb-9cc8-06c48581e79b",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 16672,
+  "bodyFile": "../raw/c15-ufrn-handle53566.json",
+  "sha256": "6f8cdc9af761a6436dce83693793a38fe928df17ba3d8bd458218a58f495e16e"
+}

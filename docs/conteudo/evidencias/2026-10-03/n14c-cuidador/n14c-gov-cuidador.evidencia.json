@@ -1,0 +1,21 @@
+{
+  "id": "n14c-gov-cuidador",
+  "url": "https://www.gov.pt/guias/cuidador-informal-perguntas-frequentes",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:08:37.260479+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir autonomia/confidencialidade e acompanhamento delimitado em Portugal; nao habilitar automaticamente acesso ou cuidado clinico.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.gov.pt/guias/cuidador-informal-perguntas-frequentes",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 243172,
+  "bodyFile": "../raw/n14c-gov-cuidador.html",
+  "sha256": "f0c4a4d53c5b8cc192eb5831c9c2cbd0e919582bedf5bb0f92f69c3564631837"
+}

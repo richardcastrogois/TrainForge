@@ -1,0 +1,24 @@
+{
+  "id": "n30-archila-pdf",
+  "url": "https://intjexersci.com/files/ijes/vol14/iss3/2.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:46:21.342642+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF editorial primário linkado na página recebida: variante/roteiro11min e licença",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://intjexersci.com/files/ijes/vol14/iss3/2.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 424473,
+  "bodyFile": "../raw/n30-archila-pdf.pdf",
+  "sha256": "5b216748035f1c4a87bdf98776411c18f85f1caca68551f96187818a4047ca69",
+  "bodyFormatMatchesRequest": true
+}

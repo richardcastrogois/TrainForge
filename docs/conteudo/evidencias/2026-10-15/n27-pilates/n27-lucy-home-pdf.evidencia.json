@@ -1,0 +1,25 @@
+{
+  "id": "n27-lucy-home-pdf",
+  "url": "https://mskpractitioner.com/wp-content/uploads/2020/10/pilates-home-exercise-sheet.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:14:05.801283+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Artefato primário assinado por LucyPurrier/Poole em espelhoMSK, instrução por variante; origem de hospedagem secundária explícita, copyrightPoole não grant comercial",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mskpractitioner.com/index.php?dynamic_asset=%2Fwp-content%2Fuploads%2F2020%2F10%2Fpilates-home-exercise-sheet.pdf",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 54589,
+  "bodyFile": "../raw/n27-lucy-home-pdf.pdf",
+  "sha256": "42354369c042e9dd6dba2e3c53d3455cfc9723c0ecf4433e0dcd62eb7330d9df",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

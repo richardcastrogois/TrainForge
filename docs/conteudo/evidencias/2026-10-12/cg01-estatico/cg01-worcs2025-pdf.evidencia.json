@@ -1,0 +1,24 @@
+{
+  "id": "cg01-worcs2025-pdf",
+  "url": "https://www.worcsacute.nhs.uk/documents/documents/patient-information-leaflets-a-z/3051-stretching-exercises-physiotherapy/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T13:49:12.522985+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia departamentoFisioterapia12p, versao2.1/2025, postura Exercise15/preparo geral e limites; dose3reps diferente deAtac8. Nao copiar figuras/completar protocolo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.worcsacute.nhs.uk/~documents/documents/patient-information-leaflets-a-z/stretching-exercises-physiotherapy//?layout=file",
+  "contentType": "application/pdf;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 793456,
+  "bodyFile": "../raw/cg01-worcs2025-pdf.pdf",
+  "sha256": "ef96b5038f375cc3a0392f6618e38c3c57bb0078c0ed8aa4c3a1e720f32b4547",
+  "bodyFormatMatchesRequest": true
+}

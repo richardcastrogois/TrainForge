@@ -1,0 +1,23 @@
+{
+  "id": "n39-fixture-image-metadata",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3APizzaMargherita.jpg%7CFile%3AJapanese+Cheesecake.jpg%7CFile%3ACheese+plate+%28498052801%29.jpg%7CFile%3ABacalhau+%C3%A0+br%C3%A1s.jpg%7CFile%3ACaldo+Verde.jpg%7CFile%3AChair.JPG",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:11:03.801497+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados públicos de seis arquivos específicos observados no Commons: licença, autoria, URL de miniatura, tamanho e SHA-1. Não baixar fotografias nem extrair coordenadas/EXIF pessoais; campos de atribuição apenas para proposta de ensaio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3APizzaMargherita.jpg%7CFile%3AJapanese+Cheesecake.jpg%7CFile%3ACheese+plate+%28498052801%29.jpg%7CFile%3ABacalhau+%C3%A0+br%C3%A1s.jpg%7CFile%3ACaldo+Verde.jpg%7CFile%3AChair.JPG",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 18010,
+  "bodyFile": "../raw/n39-fixture-image-metadata.json",
+  "sha256": "12a08692963cc44f23b8cbe8bffdc212561b45f64bde5750170a08b4725d50fc"
+}

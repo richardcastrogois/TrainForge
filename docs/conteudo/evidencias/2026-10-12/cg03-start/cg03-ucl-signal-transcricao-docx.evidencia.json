@@ -1,0 +1,25 @@
+{
+  "id": "cg03-ucl-signal-transcricao-docx",
+  "url": "https://mediacentral.ucl.ac.uk/assoc_files/Ab5j59J6.docx?token=DdGHibfe",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T18:14:06.394082+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Transcricao publica doSignalBreath linked byUCL: comparar contagens/tensao/retencao/pausa/encerramento eversao comAppendix3NIHR. Parametro opaco publicado pelo proprioUCL, nao credencial dousuario ouacessoSharePoint. Naoaudio/CDoriginal comprovado/licenca deapp.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://mediacentral.ucl.ac.uk/assoc_files/Ab5j59J6.docx?token=DdGHibfe",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 63,
+  "bodyFile": "../raw/cg03-ucl-signal-transcricao-docx.docx",
+  "sha256": "b143b071100d63c1740bf4bf5490572ad48177bf27756a13bd5d25cdf6e67e91",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

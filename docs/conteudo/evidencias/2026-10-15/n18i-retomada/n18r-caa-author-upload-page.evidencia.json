@@ -1,0 +1,24 @@
+{
+  "id": "n18r-caa-author-upload-page",
+  "url": "https://www.researchgate.net/publication/377974476_POHYBOVA_AKTIVITA_A_VYZIVA_SENIOROV_Manual_pre_specialistov_poskytujucich_sluzby_starostlivosti_pre_seniorov",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:09:32.612687+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Página pública do upload pelo coautor: verificar href real doPDF após cliqueweblevarapathpublication/profile404. Não login/cookie/bypass/repetição doURLPDFfalho.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.researchgate.net/publication/377974476_POHYBOVA_AKTIVITA_A_VYZIVA_SENIOROV_Manual_pre_specialistov_poskytujucich_sluzby_starostlivosti_pre_seniorov",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 21116,
+  "bodyFile": "../raw/n18r-caa-author-upload-page.html",
+  "sha256": "84cd77beea65b026496aae33f66729c28b8a3bb39ab8507b7d116d51ba39100a",
+  "error": "HTTP 403"
+}

@@ -1,0 +1,58 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 4,
+  "http200": 4,
+  "hashedBodies": 4,
+  "usableBodies": 4,
+  "pdfPages": 151,
+  "pdfs": {
+    "c15-remoto2026-protocolo-pdf": 27,
+    "c15-nia2017-guia-pdf": 124
+  },
+  "receipts": [
+    {
+      "id": "c15-remoto2026-protocolo-pdf",
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/14/NCT04102514/Prot_SAP_000.pdf",
+      "status": 200,
+      "bytes": 287354,
+      "sha256": "47c9d4ab351d1a426fa387f2a0546dcfc86ca113feffb840ca993216d3dec237",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-remoto2026-registro-json",
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04102514",
+      "status": 200,
+      "bytes": 93653,
+      "sha256": "d7be7ef34282fcde104c1a6775dac96dd0542920426a586d647a19750bdffbd4",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-remoto2026-core-json",
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41774485%20AND%20SRC%3AMED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 9745,
+      "sha256": "19b9bfcbf532ccba21723b6c68f1d3c3b87b99a060f13cd956c2c74f96b023df",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-nia2017-guia-pdf",
+      "record": "2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+      "status": 200,
+      "bytes": 23833139,
+      "sha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+      "usableForReading": true
+    }
+  ],
+  "renderedProtocolPages": [],
+  "renderedGuidePages": [],
+  "renderingIsVisualInspection": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

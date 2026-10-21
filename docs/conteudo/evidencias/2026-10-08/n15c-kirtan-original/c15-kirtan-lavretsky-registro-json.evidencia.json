@@ -1,0 +1,23 @@
+{
+  "id": "c15-kirtan-lavretsky-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT01537679",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:38:48.300211+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario: ensino e supervisao inicial pela medica Helen Lavretsky, elegibilidade, dose, materiais ou resultados postados; diferencas com o artigo preservadas.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT01537679",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 7590,
+  "bodyFile": "../raw/c15-kirtan-lavretsky-registro-json.json",
+  "sha256": "433dd24fb4b50445f30ed2767fb2272c976cd50a83c6d02aa3cbc4296bafbf13"
+}

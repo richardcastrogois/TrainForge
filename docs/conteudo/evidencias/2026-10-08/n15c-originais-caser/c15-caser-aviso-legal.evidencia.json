@@ -1,0 +1,23 @@
+{
+  "id": "c15-caser-aviso-legal",
+  "url": "https://www.fundacioncaser.org/aviso-legal",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:57:25.243030+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Distinguir download publico, permissao de citacao e reutilizacao comercial de textos/figuras do artigo2018; nao herdar CC BY do artigo2020 nem presumir direitos sobre exercicios como fatos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fundacioncaser.org/aviso-legal",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 132685,
+  "bodyFile": "../raw/c15-caser-aviso-legal.html",
+  "sha256": "f44926a5289a7601e2673b35a89b77aac50be2d0f9ddc5434a6440b843441166"
+}

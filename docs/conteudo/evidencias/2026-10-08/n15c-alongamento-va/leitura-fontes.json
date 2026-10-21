@@ -1,0 +1,48 @@
+{
+  "date":"2026-10-08", "niche":"N15-C", "actor":"cuidador_praticando_para_si",
+  "inventory":"inventario.json", "collectorCalls":4, "usableBodies":4, "hashedBodies":4,
+  "researchClosureApproved":false, "releaseApproved":false, "appImplemented":false,
+  "inspection":{
+    "allPdfPagesTextExtracted":28,
+    "visuallyInspectedPdfPagesOneBased":{"c15-jstage-alongamento-pdf":[2,3,4,6,7],"c15-va-cares-protocolo-pdf":[5,12,13,20]},
+    "visuallyInspectedPageCount":9,
+    "wholePdfsVisuallyInspected":false,
+    "languageLimit":"Texto japones lido junto da figura e resumo ingles; descricao PT e leitura de pesquisa, nao traducao clinica homologada. Nenhum passo/timing criado a partir da pose fotografada."
+  },
+  "sources":[
+    {
+      "sourceId":"PR97", "title":"Effect of a stretch exercise training program on stress in caregivers",
+      "authors":["Toshiya Nagamatsu","Yuichi Nakahara-Gondoh","Kenji Tsunoda","Yuko Kai"],
+      "year":2015, "doi":"10.20793/tairyokukenkyu.113.0_1",
+      "bodyReceipt":"c15-jstage-alongamento-pdf.evidencia.json", "metadataReceipt":"c15-jstage-alongamento-pagina.evidencia.json",
+      "locators":{"populationAndRationale":2,"initialProfessionalTeachingAndMonitoring":3,"sequenceFigure2":4,"outcomesTable2":6,"limitations":7},
+      "design":{"randomized":true,"sample":40,"arms":[20,20],"sexStratifiedResults":true,"womenArms":[14,15],"menArms":[6,5]},
+      "population":"Trabalhadores de duas instituicoes de idosos no Japao, incluindo enfermagem e funcoes de apoio; nao todos os cuidadores familiares. Sem contraindicacao medica a exercicio leve ou tratamento com hipnoticos/psicotropicos.",
+      "caregiverSpecificRationale":"Aproximadamente10min, baixa intensidade escolhida para nao agravar fadiga laboral; extensao/rotacao lombar/tronco e pratica antes de dormir. Nao simples programa geral renomeado.",
+      "professionalOrigin":{"researchInstituteNamed":true,"exerciseTeachingQualificationExplicit":"Instrutor de exercicio para saude (termo japones no PDF3).","individualInstructorName":null,"individualLicenceIndependentlyVerified":false},
+      "programme":{"weeks":4,"sessionsPerDay":1,"minutesApproximate":10,"timing":"Imediatamente antes de dormir, em casa.","initialTeachingMinutesPerPerson":30,"weeklyHealthSessionsDuringIntervention":4,"individualWeeklyInterviewMinutesApproximate":10},
+      "figure":{"pdfPage":4,"number":2,"panels":8,"includesFinalRelaxation":true,"arrowsIndicateSequence":true,"writtenPoseInstructions":false,"poseHoldSeconds":null,"poseRepeats":null,"rightLeftTiming":null,"finalRelaxationMinutes":null},
+      "results":{"womenFlexibilityInteractionP":0.002,"womenCortisolInteractionP":0.038,"womenLowBackPainInteractionP":0.964,"womenSleepInteractionP":0.114,"menSignificantInteractions":false,"isolatedPoseEffectEstablished":false,"notClaims":["analgesia lombar comprovada","melhora do sono comprovada","reducao comprovada de depressao","beneficio universal para cuidadores de ambos os sexos"]},
+      "rights":{"copyrightHolder":"Meiji Yasuda Life Foundation of Health and Welfare","freeAccess":true,"commercialAssetGrantIdentified":false,"figureReuseApproved":false,"factsAndCitationNotBlanketProhibited":true},
+      "missingForSelectedApkPackage":["Instrucao original das posicoes com a cadencia efetivamente ensinada, nao inferida das fotografias.","Condicoes de reutilizacao dos ativos selecionados; gratuito para ler nao grant comercial.","Entrega e acompanhamento preservados; nao tornar autonomo sem o ensino original."],
+      "selectedAsExecutableProgramme":false,
+      "doesNotRequireInventedProgressionOrNumericRoomSize":true
+    },
+    {
+      "sourceId":"PR98", "title":"VA Cultivating Access to Resources, Education, and Skills for Dementia Caregivers",
+      "nctId":"NCT02106065", "registryReceipt":"c15-va-cares-registro-json.evidencia.json", "protocolReceipt":"c15-va-cares-protocolo-pdf.evidencia.json",
+      "protocolVersion":"2020-06-03;20paginas PDF, folhas impressas17-36, plano de pesquisa sem os anexos citados.",
+      "locators":{"professionalTeam":5,"coreDose":10,"breathingAndAudioDependency":12,"muscleRelaxationAndSupport":13,"actualFileEndingWithoutAppendices":20},
+      "professionalOrigin":"Equipe publicada inclui psiquiatra MD, psicologia/neuropsicologia e enfermeira RN; sessoes conduzidas por DrScanlon. Registro/diplomas independentes nao auditados.",
+      "population":"Familiares18+ de veteranos com demencia, sofrimento relacionado ao cuidado e triagem clinica/cognitiva. Nao so cuidadores profissionais ou idosos praticantes.",
+      "programme":{"coreSessions":4,"sessionMinutes":90,"coreWeeksRange":[4,6],"groupMaximum":10,"boosterMonths":[3,9],"delivery":"Presencial ou telehealth em unidades VA, com pratica em casa incentivada; nao prova de substituicao por APK autonomo.","components":["educacao e habilidades de cuidado","apoio/sono/atividades prazerosas","imaginacao guiada","respiracao profunda","relaxamento muscular progressivo"]},
+      "operationalMaterial":{"appendix4Cited":true,"appendix4IncludedInReceivedPdf":false,"onlyOneRegistryDocument":true,"externalAudioFormats":["MP3","CD","cassete"],"audioReceived":false,"breathingTeachingBlockMinutesApproximate":15,"pmrTeachingBlockMinutesApproximate":20,"homeBreathingRhythmSeconds":null,"homePmrMuscleSequence":null,"teachingBlockIsNotHomeDose":true},
+      "results":{"hasPostedResults":true,"enrollmentActual":32,"armsStarted":[6,11,15],"armsCompletingSixMonths":[3,8,5],"primaryZaritChangeMeans":[2.0,-0.4,1.6],"primaryZaritChangeSd":[2.6,5.0,3.0],"primaryComparisonP":null,"primaryAnalysesPublished":false,"isolatedRelaxationEffectEstablished":false,"claimOfSignificantBurdenReductionApproved":false,"careRecipientLtcDataNotCollected":true},
+      "adverseEvents":{"reportedDeathsAcrossEventGroups":[2,0,0],"reportedSeriousEventsAcrossGroups":[0,0,0],"otherEventInControl":"Uma lesao musculoesqueletica; avaliacao nao sistematica.","deathAttributionToInterventionEstablished":false,"zeroSeriousEventsNotZeroRisk":true},
+      "rights":{"federalSponsorDoesNotLicenseEveryAsset":true,"commercialGrantForMissingAppendixAndAudio":null,"downloadAccessDoesNotClearThirdPartyAssets":true},
+      "missingForSelectedApkPackage":["Appendix4 original e seus materiais/audio efetivamente utilizados.","Direitos dos ativos e entrega profissional preservada.","Nao atribuir eficacia clinica comprovada ao relaxamento isolado a partir de medias sem teste comparativo publicado."],
+      "selectedAsExecutableProgramme":false
+    }
+  ],
+  "closureDecision":{"G01":true,"G02":true,"G03":false,"G04":false,"newProgrammesApproved":0,"n21Started":false,"reason":"Novos originais acrescentam populacao, sequencia visual e resultados reais. Nao resolvem roteiro/dose dos materiais externos ou direitos do pacote escolhido; nao exigir progressao inexistente ou ambiente literal."}
+}

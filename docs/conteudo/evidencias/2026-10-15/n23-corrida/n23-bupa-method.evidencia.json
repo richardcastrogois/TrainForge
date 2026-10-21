@@ -1,0 +1,24 @@
+{
+  "id": "n23-bupa-method",
+  "url": "https://www.bupa.co.uk/newsroom/ourviews/how-running-plans-work",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:38:05.973480+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Instrucao humana autorJohnFairhurstfisioterapeuta2026; nao herdarautoriadoPDFsemvinculo",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.bupa.co.uk/newsroom/ourviews/how-running-plans-work",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5748,
+  "bodyFile": "../raw/n23-bupa-method.html",
+  "sha256": "a0b6b391001dab522e74a63e938499f0a2e56f50b981f401545bacb7d5236f98",
+  "error": "HTTP 403"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-dailyfood-paper",
+  "url": "https://arxiv.org/html/2403.07403v1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:06.695521+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primário em HTML: conferir experiência de transferência para refeições cotidianas e distinguir estudo de outro modelo do candidato nateraw. Sem mídias ou download de datasets.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://arxiv.org/html/2403.07403v1",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 196323,
+  "bodyFile": "../raw/n39-dailyfood-paper.html",
+  "sha256": "9856dbb6298286548d941cc8b878ceea176d5e2dc6520e6ca5be6129386859a2"
+}

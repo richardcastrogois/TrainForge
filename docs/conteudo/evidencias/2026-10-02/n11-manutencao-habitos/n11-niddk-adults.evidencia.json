@@ -1,0 +1,21 @@
+{
+  "id": "n11-niddk-adults",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T02:29:59.245356+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia NIDDK com hábitos práticos, contexto alimentar e diário de comida/bebida.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 76670,
+  "bodyFile": "../raw/n11-niddk-adults.html",
+  "sha256": "83b3b811b1a468e98db74cd195f09751cdb9ad1e56dc2b2dd34b0755854f0e1b"
+}

@@ -1,0 +1,173 @@
+{
+  "niche": "N18",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Amostra humana de academia iniciante com estrutura, dose e direitos delimitados; nao programa idoso/cuidador universal ou app homologado.",
+  "next": "N19",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n18-academia-iniciante/n18-basic-beginner.evidencia.json",
+      "anchors": [
+        "complete beginner",
+        "maximum of three months",
+        "3×5+",
+        "one full day of rest",
+        "15 total reps",
+        "10%"
+      ],
+      "role": "Programa de iniciacao com barra; estrutura conferida manualmente; nao ensaio clinico geriatrico"
+    },
+    {
+      "record": "2026-10-03/n18-academia-iniciante/n18-wiki-origin.evidencia.json",
+      "anchors": [
+        "official wiki",
+        "r/Fitness",
+        "r/weightroom"
+      ],
+      "role": "Curadoria comunitaria humana declarada, nao licenca de reutilizacao"
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+    "2026-10-03/n17i-instrucao/pesquisa-complemento.json"
+  ],
+  "programmes": [
+    {
+      "id": "N18-P01",
+      "sourceId": "PR14",
+      "name": "r/Fitness Basic Beginner Routine",
+      "audience": "Iniciante completo em forca com barra.",
+      "weeks": null,
+      "maximumMonths": 3,
+      "sessionsPerWeekTypical": 3,
+      "restDaysBetweenLiftingMinimum": 1,
+      "schedule": "Alternar A/B.",
+      "workouts": [
+        {
+          "id": "A",
+          "movementNames": [
+            "Barbell Rows",
+            "Bench Press",
+            "Squats"
+          ],
+          "sets": 3,
+          "baseRepetitions": 5,
+          "lastSet": "AMRAP, preservando uma/duas repeticoes e tecnica."
+        },
+        {
+          "id": "B",
+          "movementNames": [
+            "Chinups",
+            "Overhead Press",
+            "Deadlifts"
+          ],
+          "sets": 3,
+          "baseRepetitions": 5,
+          "lastSet": "AMRAP, sem falha absoluta."
+        }
+      ],
+      "setRestSecondsRange": [
+        120,
+        180
+      ],
+      "betweenExercisesRestSecondsMaximum": 300,
+      "progressionLb": {
+        "upperBody": 2.5,
+        "lowerBody": 5,
+        "ifLastSetAbove10Reps": {
+          "upperBody": 5,
+          "lowerBody": 10
+        },
+        "loadAppliesTo": "Carga total, nao por lado.",
+        "deloadIfTotalRepsBelow": 15,
+        "deloadPercent": 10
+      },
+      "conditioning": {
+        "daysPerWeekMinimum": 2,
+        "lowerIntensityMinutes": [
+          15,
+          30
+        ],
+        "higherIntensityMinutes": [
+          10,
+          15
+        ]
+      },
+      "sessionDurationMinutes": null,
+      "requiredEquipment": [
+        "Barra e discos",
+        "Banco",
+        "Estrutura apropriada para agachamento",
+        "Barra de chin-up ou variante explicitamente escolhida"
+      ],
+      "rights": "Licenca comercial gratuita nao demonstrada; referencia, nao copiar texto/midia ou publicar rotina.",
+      "sourceFactsNotPrescription": true,
+      "olderSpecificEligibilityDemonstrated": false,
+      "caregiverPhysicalAssistanceDemonstrated": false,
+      "sourceClinicalReviewDate": null
+    }
+  ],
+  "criteria": [
+    {
+      "id": "N18-C01",
+      "decision": "Experiencia em outras modalidades/idade nao equivale a experiencia com barra; selecao precisa do contexto da fonte."
+    },
+    {
+      "id": "N18-C02",
+      "decision": "Equipamento completo e instrucao adequada devem ser demonstrados; N20 trata movimento/midia, nao licenca automatica deste programa."
+    },
+    {
+      "id": "N18-C03",
+      "decision": "Nao recomendar AMRAP/condicionamento intenso a todo idoso ou transferir progressao linear sem adequacao profissional."
+    },
+    {
+      "id": "N18-C04",
+      "decision": "Conversao kg e incrementos de discos reais exigem regra revisada; nao arredondar a carga para cima silenciosamente."
+    },
+    {
+      "id": "N18-C05",
+      "decision": "Fim de tres meses nao seleciona automaticamente outro programa; fonte humana seguinte e elegibilidade precisam de revisao."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "N18-S01",
+      "fictional": true,
+      "case": "Idoso nunca treinou com barra",
+      "expected": "Nao concluir adequacao geriatrica apenas pelo rotulo iniciante."
+    },
+    {
+      "id": "N18-S02",
+      "fictional": true,
+      "case": "Academia tem somente maquinas",
+      "expected": "Nao renomear a rotina de barra como rotina de maquinas."
+    },
+    {
+      "id": "N18-S03",
+      "fictional": true,
+      "case": "Nao consegue chin-up",
+      "expected": "Variante depende de instrucao/condicao; nao improvisar assistencia do cuidador."
+    },
+    {
+      "id": "N18-S04",
+      "fictional": true,
+      "case": "Somente discos grandes disponiveis",
+      "expected": "Nao impor incremento maior por arredondamento."
+    },
+    {
+      "id": "N18-S05",
+      "fictional": true,
+      "case": "Concluiu tres meses",
+      "expected": "Nao migrar automaticamente para intermediario."
+    }
+  ],
+  "limits": [
+    "Duas paginas anteriores reutilizadas, zero nova coleta N18.",
+    "Fonte comunitaria nao e validacao clinica ou autorizacao comercial.",
+    "Direitos, instrucao/midia, localizacao pt-PT e adequacao individual pendentes.",
+    "Sessao total e dose clinica por idade nao inventadas.",
+    "Nenhuma carga pessoal, programa automatizado ou teste com utilizador realizado."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n22-pacer-about",
+  "url": "https://www.mypacer.com/about",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:20:38.112893+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Catalogo publico oficial de outro app; autoria/dose nao presumidas",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mypacer.com/about",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 67232,
+  "bodyFile": "../raw/n22-pacer-about.html",
+  "sha256": "d06113153737afb33728c93e8965c191211c3764b8c90a01e58499d11fd60e1e"
+}

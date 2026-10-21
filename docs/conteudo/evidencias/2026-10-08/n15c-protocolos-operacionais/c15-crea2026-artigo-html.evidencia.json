@@ -1,0 +1,23 @@
+{
+  "id": "c15-crea2026-artigo-html",
+  "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:40:36.165772+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo original de protocolo, descricoes TIDieR e links publicados para suplementos; autoria, apoio e licenca por objeto.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 698643,
+  "bodyFile": "../raw/c15-crea2026-artigo-html.html",
+  "sha256": "86bca8231ca39ab1a5311cd9d826665cb64ba94340b123304e57b44bf0d65efc"
+}

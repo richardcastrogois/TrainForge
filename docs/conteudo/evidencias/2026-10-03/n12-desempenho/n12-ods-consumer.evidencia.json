@@ -1,0 +1,22 @@
+{
+  "id": "n12-ods-consumer",
+  "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T21:55:03.173215+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Ficha para consumidores: desempenho, alimentação e limites de suplementos.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5856,
+  "bodyFile": "../raw/n12-ods-consumer.html",
+  "sha256": "3b04a1ca1e1d5a9a6d8a283674fb7901004358731bdd618ae1b7b6a20ce459e1",
+  "error": "HTTP 403"
+}

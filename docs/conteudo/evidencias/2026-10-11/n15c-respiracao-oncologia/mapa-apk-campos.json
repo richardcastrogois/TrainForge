@@ -1,0 +1,24 @@
+{
+  "date":"2026-10-11","niche":"N15-C","sourceId":"PR137","reading":"leitura-fontes.json","inventory":"inventario.json","releaseApproved":false,"appImplemented":false,
+  "retrieval":"fontes.json PR137 -> localEvidence -> original.record -> URL/data/sha256/bodyFile -> secao Material and Methods/Interventions/Results. PR136 artigo2021 metadataCORE complemento separado; nenhum novo ensaio ou manual.",
+  "fields":[
+    {"apkField":"caregiverIsPractitioner","from":"population.practitioner","rule":"Exercicio do cuidador familiar, nao respiracao do paciente nem instrucao para transferencias."},
+    {"apkField":"sourceCitationAndVersion","from":"original/design.trial","rule":"DOI2026/estudo2023-24/CTRI2022 distintos, um pacote quasi-experimental."},
+    {"apkField":"professionalAuthorship","from":"professionalAuthorship","rule":"Departamentos/treinamento em aconselhamento recebidos; identidade/qualificacao criador respiracao nao preenchida por supor autor."},
+    {"apkField":"audienceEligibility","from":"population","rule":"Nao estender a cuidadores pagos excluidos; separar condicao paciente/cuidador e divergencia18-65 vs limites exclusivos."},
+    {"apkField":"careWorkloadAndFatigue","from":"population/clinical","rule":"Contexto de demandas cuidado registrado; nao medida objetiva fadiga/forca nem prescricao conforme cansaco."},
+    {"apkField":"compatibleVenue","from":"compatibleSetting","rule":"Hospital nao exclui casa; sem roteiro/dose conhecidos nao declarar comprovacao em casa/praca."},
+    {"apkField":"initialPreparation","from":"intervention.initialDemonstrationRequired","rule":"Ensino/demonstracao/perguntas reais, nao substituidos por telaAPK."},
+    {"apkField":"requiredEquipment","from":"intervention.prerecordedVideoReceived","rule":"Video existia no ensaio, nao recebido; nenhum equipamento/postura inventado."},
+    {"apkField":"programmeDose","from":"intervention","rule":"10minensino+15minaconselhamento nao dose diaria25minexercicio. Minutos/frequencia domiciliarios nulos."},
+    {"apkField":"programmeSequence","from":"intervention.visitWeeks/firstInterventionWeek","rule":"Intervencao na segunda visita/semana3; manter reforco/telefone/diario, nao programa gerado de12semanas."},
+    {"apkField":"progression","from":"intervention.reinforcementWeeks","rule":"Reforco semanas6/9 nao aumento automatico ciclos/intensidade."},
+    {"apkField":"warmupAndCooldown","from":"intervention.ending","rule":"Ausentes no corpo; nao importar encerramento Benson de outra fonte."},
+    {"apkField":"exerciseInstructions","from":"intervention.muscleOrBreathingStepInstructions","rule":"Lista vazia; tres nomes respiratorios nao tres instrucoes operacionais nem variantes comprovadamente iguais."},
+    {"apkField":"stopReturnOrIndividualAdjustment","from":"intervention.stopOrReturnCriteria","rule":"Nao existe limiar publicado recebido; scoresKCSS nao criterios de interromper exercicio."},
+    {"apkField":"clinicalClaim","from":"clinical/design","rule":"Resultados pacote conjunto; entregrupos versus tempo separados. Nao atribuir beneficio a respiracao isolada."},
+    {"apkField":"visualAsset","from":"original.pdfReceived/clinical.tablesVisuallyInspected","rule":"NenhumPDF/video/tableimg visualmente inspecionado ou licenciado paraAPK; HTMLfonte recebido."},
+    {"apkField":"rightsPerAsset","from":"rights/policyReceipt","rule":"PoliticaNCND/fatos/roteiro externo separados; artigo nao licencia automaticamente video."},
+    {"apkField":"publicationState","from":"researchClosureApproved/releaseApproved/appImplemented","rule":"Todosfalsos, G03/G04falsos; N15-C continua foco e N21 retida."}
+  ]
+}

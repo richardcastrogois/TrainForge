@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga2007-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2176147/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T18:09:23.092619+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "VanPuymbroeck2007/DOInem075: verificar AppendixA e workbook/poses/dose/profissional/efeito proprio. PMCwebchallenge nao contornado ou repetido, APIpublica distinta.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2176147/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 107946,
+  "bodyFile": "../raw/c15-yoga2007-xml.xml",
+  "sha256": "678886f71df2712fa036e9bb51af3d34d2441549ac7cdc1877823f534e9ce279"
+}

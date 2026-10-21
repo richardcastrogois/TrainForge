@@ -1,0 +1,21 @@
+{
+  "id": "c15-crea-editorial-script-text",
+  "url": "https://www.frontiersin.org/ap-2024/_nuxt/CVwIsJ6C.js",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:57:00.629562+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Asset publico explicitamente vinculado noHTMLeditorial recebido, somente leitura textual da construcao de links dos quatro suplementos; nao executarJS, nao acessar tokens/sessao, teto2MiB.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/ap-2024/_nuxt/CVwIsJ6C.js",
+  "contentType": "text/javascript; charset=utf-8",
+  "retryAfter": null,
+  "error": "Response exceeds 2 MiB: body not stored, no retry"
+}

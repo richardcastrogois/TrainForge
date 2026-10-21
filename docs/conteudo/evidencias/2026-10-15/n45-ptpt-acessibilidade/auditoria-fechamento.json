@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-15",
+  "niche": "N45",
+  "researchClosed": true,
+  "scope": "Pesquisa de requisitos pt-PT/acessibilidade e protocolo de validação por contexto; compreensão com pessoas não demonstrada.",
+  "criteria": [
+    {
+      "criterion": "Instrução e compreensão por público/contexto",
+      "met": true,
+      "evidence": "Quatro pareceres com testes reais expressamente pendentes; não confundir tradução lexical com adequação."
+    },
+    {
+      "criterion": "Ajuda digital/física e cuidador praticante",
+      "met": true,
+      "evidence": "Pessoas/papéis distintos e tarefas propostas sem infantilização."
+    },
+    {
+      "criterion": "Referências e níveis corretos",
+      "met": true,
+      "evidence": "Três documentos primários recebidos/hash;24AAe44AAAcom exceções."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Tradução/revisão humana e direitos do lote final",
+    "Teste de compreensão com pessoas e tecnologias assistivas",
+    "Implementação e avaliação de conformidade na plataforma real"
+  ],
+  "actualParticipants": 0,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "nextNiche": "N46"
+}

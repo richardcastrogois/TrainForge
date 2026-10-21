@@ -1,0 +1,23 @@
+{
+  "id": "c15-pediatrico-uem-pagina",
+  "url": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/view/24358",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:49:58.758869+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina original do artigo2015, biografias profissionais, DOI, linkPDF e declaracao de direitos por objeto.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/view/24358",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 54348,
+  "bodyFile": "../raw/c15-pediatrico-uem-pagina.html",
+  "sha256": "6717210c97b21216a3e9dff34fa6ce39c6ae45978e13acf55900a0d7debec620"
+}

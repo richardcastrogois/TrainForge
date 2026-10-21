@@ -1,0 +1,22 @@
+{
+  "id": "n15c-carers-longos",
+  "url": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/longer-workout-videos/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T00:30:57.404755+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir pagina de sessoes mais longas observada no indice, sem baixar midia ou presumir direitos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/longer-workout-videos/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 125457,
+  "bodyFile": "../raw/n15c-carers-longos.html",
+  "sha256": "385e04e013f30f47a68c7c1e75c323e0776c568cef0c201d9b80353b8a1982e9"
+}

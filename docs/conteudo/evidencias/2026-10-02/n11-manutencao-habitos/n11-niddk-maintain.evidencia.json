@@ -1,0 +1,21 @@
+{
+  "id": "n11-niddk-maintain",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T02:28:40.497469+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia NIDDK sobre alimentação, atividade física, hábitos e manutenção de peso.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 48028,
+  "bodyFile": "../raw/n11-niddk-maintain.html",
+  "sha256": "f44979938747b8e23ad33c7aa408127b5603aea44f3fd8f6d3f30a895f2e2f95"
+}

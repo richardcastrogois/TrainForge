@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-04", "sourceId": "IC06",
+  "rightsProof": {
+    "url": "https://ourarchive.otago.ac.nz/esploro/outputs/book/Otago-Exercise-Programme-to-prevent-falls/9926555676301891",
+    "method": "primary_source_web_reader", "localBodyObtained": false, "sourceSha256": null,
+    "recordIdentifier": "9926555676301891", "publisher": "ACC", "year": 2007,
+    "linkedFileName": "acc1162-otago-exercise-manual", "linkedFileSizeLabel": "2.76 MB",
+    "license": "CC BY 4.0", "scopeObserved": "Version of record e copyright do proprio trabalho no registro institucional.",
+    "decision": "Caminho comercial gratuito identificado para o trabalho depositado, com autoria/fonte/licenca/alteracoes declaradas. Nao equivale a lote final homologado, uso de marcas/endosso ou permissao sobre versoes Later Life Training. O shell local anterior nao foi convertido em prova de licenca.",
+    "localPdfRecord": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+    "localPdfSha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+  },
+  "tableReview": {
+    "method": "poppler_render_and_visual_review", "physicalPdfPages": [21, 22], "printedPages": [18, 19],
+    "automaticExtractionUsable": false, "automaticDoseImportApproved": false,
+    "strengthMovementCount": 5, "balanceMovementCount": 12,
+    "resistance": "Tornozeleira nas tres primeiras familias de forca; quantidade individual definida pelo instrutor. Elevar calcanhares/pontas distingue apoio nos niveis C/D.",
+    "strengthFamilies": ["extensao de joelho", "flexao de joelho", "abducao de quadril", "flexao plantar", "dorsiflexao"],
+    "balanceFamilies": ["flexao dos joelhos", "andar para tras", "andar e virar", "andar lateralmente", "postura tandem", "marcha tandem", "apoio unipodal", "andar nos calcanhares", "andar nas pontas", "marcha tandem para tras", "sentar e levantar", "escadas"],
+    "supportFamilies": ["apoio ambiental fixo", "auxiliar habitual de marcha quando indicado", "cadeira para sentar/levantar, distinta de apoio de equilibrio", "escada e apoio conforme instrutor"],
+    "sitToStand": {"A": "5, duas maos", "B": "5, uma mao OU 10, duas maos", "C": "10, sem apoio OU 10, uma mao e repetir", "D": "10, sem apoio e repetir"},
+    "stairs": "Como instruido; D acrescenta repetir. Sem altura de degrau, carga ou numero de degraus inferidos.",
+    "emptyCells": "Ausencia na tabela e nao aplicabilidade daquele nivel, nao zero repeticoes nem permissao para inventar variante.",
+    "scheduleDifference": "Tabela 3.1 mostra visitas em semanas 1/2/4/8, seis e doze meses. Texto operacional inicial admite quatro/cinco visitas. Preservar a visita de doze meses da tabela; nao inventar pacote de servico ou prometer profissional pelo app.",
+    "restAndProgression": "Dias de descanso na forca e selecao/reavaliacao pelo instrutor; retirar apoio ou aumentar resistencia nao e automatismo por idade ou calendario."
+  },
+  "productDecisions": ["Kit, apoio, auxiliar de marcha, comunicacao e pessoa supervisora sao campos distintos.", "Sem apoio prescrito, fonte incompativel, nao substituir por cadeira movel ou escada improvisada.", "Criterios atuais CMO 2026 complementam contexto funcional, nao atualizam clinicamente o manual de 2007.", "Instrucao de cada variante e o lote final sao N17-I/publicacao; nao declarar concluida a instrucao pelo nome da familia.", "Growing Stronger permanece candidato excluido da selecao deste recorte enquanto transicao/direitos conflitarem."]
+}

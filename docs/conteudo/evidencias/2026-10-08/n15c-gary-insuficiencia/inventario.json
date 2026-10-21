@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-08",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "collectorCalls": 3,
+  "usableBodies": 2,
+  "hashedBodies": 3,
+  "sources": [
+    {
+      "id": "c15-gary-artigo-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6026574/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6026574/fullTextXML",
+      "collectedAtUtc": "2026-10-08T10:19:02.850816+00:00",
+      "status": 500,
+      "error": "HTTP 500",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": "2026-10-08/n15c-gary-insuficiencia/c15-gary-artigo-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-gary-erratum-json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29708007%20AND%20SRC:MED&format=json&resultType=core",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29708007%20AND%20SRC:MED&format=json&resultType=core",
+      "collectedAtUtc": "2026-10-08T10:19:08.611222+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 3199,
+      "sha256": "efe25714e09d7d2573b203a74202d3622852730b9e5154803b59997d2da517ea",
+      "record": "2026-10-08/n15c-gary-insuficiencia/c15-gary-erratum-json.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-gary-registro-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01188070",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT01188070",
+      "collectedAtUtc": "2026-10-08T10:19:09.520016+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 10744,
+      "sha256": "900dec6e58495c0018bc979db6d52a8b40df0744e3ba0e97552896df2c8a5bde",
+      "record": "2026-10-08/n15c-gary-insuficiencia/c15-gary-registro-json.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    }
+  ],
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "fullTextReceived": false,
+  "erratum": {
+    "pmid": "29708007",
+    "doi": "10.1177/0733464818775576",
+    "subject": "Financiamento omitido, corrigido; nao alteracao clinica/dose declarada.",
+    "abstractReceived": true,
+    "publisherFullTextReceived": false
+  },
+  "registry": {
+    "nctId": "NCT01188070",
+    "enrollmentActual": 354,
+    "hasResults": false,
+    "documentSectionPresent": false,
+    "twoCaregiverPopulations": "More and more family members are providing care to their loved ones with prolonged and progressive illnesses. Chronic intense caregiving represents a situation of chronic stress, which takes a toll on one's mental and physical health including an increased risk for the development or worsening of heart disease. Identification of effective self-care interventions for family caregivers is warranted to improve their emotional wellbeing and minimize the harmful effects of chronic stress on the heart. This Program Project Grant aims to promote health and reduce cardiovascular risk in family caregivers (FCG) of persons with chronic illness. In two studies the investigators will test two interventions, psycho-education(ED) and physical exercise(EX), individually and in combination. The first study will target FCG of African American dementia patients; the second will focus on FCG of heart failure patients. Parallel designs, interventions and measures will create synergy as will integration of all data management and analyses within a Bio-behavioral Science and Measures Core. This Core will also provide high level guidance and interpretation of model testing resulting from analysis of the common data set. The combined de-identified data set will allow for elucidating the biological mechanisms of stress-induced cardiovascular risk, further developing the model, and stimulating future research, while the shared core support will provide substantial efficiency; neither could be achieved outside of a Program Project approach. These collective efforts will generate important data whereby future care can significantly enhance the lives of FCG and minimize their risk of cardiovascular disease, the number one cause of disability and death in the United States.\n\nWe hypothesize that FCGs who receive the combined PSYCHED+EX intervention will have better psychological functioning (lower levels of depressive symptoms, anxiety, and caregiver burden and higher levels of flourishing), behavioral outcomes (improved sleep quality and greater physical function), cardiovascular risk measures (improved resting heart rate, blood pressure, heart rate recovery, oxygen consumption, lipids, glucose, and inflammatory markers), neuroendocrine function (salivary cortisol) and overall health outcomes (improved function, muscle strength, and endurance) compared to psycho-education and usual care-attention control from baseline to six months later mediated by improvements in process outcomes (lower perceived stress and higher self-efficacy).",
+    "interventions": [
+      {
+        "type": "BEHAVIORAL",
+        "name": "Usual Care",
+        "description": "Educational materials",
+        "armGroupLabels": [
+          "Usual Care Attention Control"
+        ]
+      },
+      {
+        "type": "BEHAVIORAL",
+        "name": "Psycho-education",
+        "description": "Educational group sessions",
+        "armGroupLabels": [
+          "Psychoeducation"
+        ]
+      },
+      {
+        "type": "BEHAVIORAL",
+        "name": "Psycho-education plus physical exercise",
+        "description": "Psychoeducation intervention plus an individualized exercise program",
+        "armGroupLabels": [
+          "Psychoeducation plus exercise"
+        ]
+      }
+    ],
+    "eligibility": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Family caregiver defined as a spouse, partner or other adult family member living in the same house or in contact with a HF patient or dementia patient in a caregiver relationship at least 4 times/week for at least one hour or more.\n* willing to participate\n* English fluency\n* ambulatory and physically able to engage in a structured low impact walking and upper body strength training program.\n* self identify as African American for the Alzheimer FCG study\n\nExclusion Criteria:\n\n* non sedentary (defined as engaging in \\> 30 minutes of moderately strenuous exercise 3 times or more a week)\n* medical or physical condition that would preclude participation in the exercise component of the study (e.g., severe arthritis or mobility problems, uncontrolled hypertension or diabetes, renal insufficiency, or a history of angina with activity)\n* current psychiatric comorbidity (alcohol or drug abuse/dependence, bipolar or psychotic disorder, suicidal ideation detected on the MINI screening tool)\n* current smoker\n* cognitive problems (BLESSED screen)\n* ischemic changes or inappropriate BP changes on BL exercise (modified Balke) treadmill test\n* on corticosteroids\n* experiencing an acute inflammation at time of baseline or follow-up testing (this will result in rescheduling of testing if no other exclusion criteria apply)",
+      "healthyVolunteers": true,
+      "sex": "ALL",
+      "minimumAge": "21 Years",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-niva-faixas-cartaz-pdf",
+  "url": "https://niva.org/app/uploads/Exercises-with-elasticband.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:36:23.856949+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Folheto profissional de4exercicios com instrucoes/progressao/seguranca; verificar credito,dose,versao/direitos e compatibilidade com programaPR88 sem alterar protocolo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://niva.org/app/uploads/Exercises-with-elasticband.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 355214,
+  "bodyFile": "../raw/c15-niva-faixas-cartaz-pdf.pdf",
+  "sha256": "cb184279597a592f5a43acc68f93263292896203f8888540a60ddd38d9161297",
+  "bodyFormatMatchesRequest": true
+}

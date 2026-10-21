@@ -1,0 +1,23 @@
+{
+  "id": "n39-cheesecake-supplement-metadata",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3ACheesecake+slice+%28Los+Angeles%29+July+2023.jpg",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:33:14.018792+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Arquivo suplementar distinto e CC0 para verificar a segunda classe 16/17 após duas respostas 429 do lote inicial. Não repetir nem obter por rota alternativa os dois arquivos bloqueados; registrar lote inicial incompleto. Somente metadados deste novo arquivo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3ACheesecake+slice+%28Los+Angeles%29+July+2023.jpg",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4011,
+  "bodyFile": "../raw/n39-cheesecake-supplement-metadata.json",
+  "sha256": "c19320c6be78c5fa18598008b2e3b635f64582c2f8b4bda3017ea515868a4317"
+}

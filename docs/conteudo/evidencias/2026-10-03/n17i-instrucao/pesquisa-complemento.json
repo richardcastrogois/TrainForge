@@ -1,0 +1,160 @@
+{
+  "niche": "N17-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Criterios editoriais e de acessibilidade para instrucao de idosos/cuidadores, nao player, midia ou interface homologados.",
+  "next": "N11-I",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n17i-instrucao/n17i-wai-idosos.evidencia.json",
+      "anchors": [
+        "20 November 2025",
+        "Involving Users",
+        "Web Content Accessibility Guidelines"
+      ],
+      "role": "Referencia W3C para necessidades diversas e avaliacao com utilizadores; nao diagnostico por idade"
+    },
+    {
+      "record": "2026-10-03/n17i-instrucao/n17i-wai-midia.evidencia.json",
+      "anchors": [
+        "17 September 2024",
+        "descriptive transcript",
+        "Media Players"
+      ],
+      "role": "Referencia de legenda, descricao visual, transcricao e player acessivel"
+    },
+    {
+      "record": "2026-10-03/n17-casa-instrucao/n17-nhs-videos.evidencia.json",
+      "anchors": [
+        "sit to stand",
+        "Strength and Flex"
+      ],
+      "role": "Metadados de candidatos, nao prova de reproducao/licenca/acessibilidade"
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/n17-casa-instrucao/amostra-midia.json",
+    "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+    "2026-10-03/n16i-apoios/pesquisa-complemento.json"
+  ],
+  "criteria": [
+    {
+      "id": "I17-C01",
+      "decision": "Ficha por variante e fonte/versao: pessoa executora, elegibilidade, apoio, kit, postura e dose validada. Nome parecido nao demonstra equivalencia."
+    },
+    {
+      "id": "I17-C02",
+      "decision": "Texto original pt-PT a rever por profissional: frases curtas, termos compreensiveis e lateralidade explicita; sem infantilizar a pessoa."
+    },
+    {
+      "id": "I17-C03",
+      "decision": "Nao depender de cor, audio, desenho ou video isoladamente; oferecer texto semanticamente estruturado e descricao de apoio/gesto."
+    },
+    {
+      "id": "I17-C04",
+      "decision": "Se houver video autorizado, legenda revista e sincronizada inclui fala e sons relevantes; informacao visual essencial precisa de descricao adequada."
+    },
+    {
+      "id": "I17-C05",
+      "decision": "Texto redimensionavel, contraste, foco, alvos, leitor de ecra e controles devem ser medidos no artefato futuro; este documento nao declara conformidade WCAG."
+    },
+    {
+      "id": "I17-C06",
+      "decision": "Pausa/repeticao e ajuste de reproducao sob controle do utilizador; nao autoavancar exercicio nem transformar falta de resposta em falha clinica."
+    },
+    {
+      "id": "I17-C07",
+      "decision": "Voz opcional somente de texto aprovado, pronunciacao pt-PT revista; nao usar voz como unico canal ou gerar novas doses."
+    },
+    {
+      "id": "I17-C08",
+      "decision": "Cuidador pode ajudar a ler/acionar; ficha precisa dizer quando supervisao profissional e exigida. Narracao nao deve ensinar sustentacao/transferencia sem protocolo."
+    },
+    {
+      "id": "I17-C09",
+      "decision": "Fallback sem rede preserva instrucao textual autorizada e limites; nao implica autorizacao para cache de video externo."
+    },
+    {
+      "id": "I17-C10",
+      "decision": "Validar com idosos diversos e cuidadores reais, separando apoio digital/fisico; documentar entendimento de dose, apoio e limites antes de publicar."
+    }
+  ],
+  "operations": [
+    {
+      "id": "I17-O01",
+      "name": "ficha_instrucao_futura",
+      "fields": [
+        "sourceRef",
+        "variantRef",
+        "audienceAndEligibility",
+        "supportAndEquipment",
+        "stepsReviewedPtPT",
+        "sourceDose",
+        "supervisionRequired",
+        "limitsAndEscalationReviewed",
+        "rightsPerAsset",
+        "accessibilityReview",
+        "userComprehensionReview"
+      ],
+      "decision": "Especificacao editorial futura, nao modelo de API ou componente implementado."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I17-S01",
+      "fictional": true,
+      "case": "Pessoa nao ouve o video",
+      "expected": "Instrucao essencial e limites nao dependem de audio."
+    },
+    {
+      "id": "I17-S02",
+      "fictional": true,
+      "case": "Pessoa aumenta o texto",
+      "expected": "Texto, dose e comandos devem continuar legiveis e operaveis; testar posteriormente."
+    },
+    {
+      "id": "I17-S03",
+      "fictional": true,
+      "case": "Pessoa usa leitor de ecra",
+      "expected": "Ordem logica, nomes e estados corretos; nao inferir isto de screenshots."
+    },
+    {
+      "id": "I17-S04",
+      "fictional": true,
+      "case": "Cuidador pausa para explicar",
+      "expected": "Nao autoavancar nem marcar sessao concluida."
+    },
+    {
+      "id": "I17-S05",
+      "fictional": true,
+      "case": "Video NHS tem mesmo nome",
+      "expected": "Nao associar a PR13/PR11 sem gesto, variante e dose conferidos."
+    },
+    {
+      "id": "I17-S06",
+      "fictional": true,
+      "case": "Legendas automaticas erram esquerda/direita",
+      "expected": "Bloquear homologacao ate revisao humana."
+    },
+    {
+      "id": "I17-S07",
+      "fictional": true,
+      "case": "Ligacao de rede indisponivel",
+      "expected": "Somente fallback autorizado; nao prometer video offline."
+    },
+    {
+      "id": "I17-S08",
+      "fictional": true,
+      "case": "Pessoa precisa de apoio fisico",
+      "expected": "Nao tratar o leitor/cuidador como supervisor clinico."
+    }
+  ],
+  "limits": [
+    "Nenhum video reproduzido/baixado/embutido nesta rodada; playback, duracao, legendas e direitos individuais continuam pendentes.",
+    "Criterios propostos e cenarios ficticios nao sao testes de app ou utilizador.",
+    "Referencias W3C usadas como enquadramento; nao republicacao integral ou selo de conformidade.",
+    "Texto/voz/demonstracao pt-PT profissionais e testes reais nao realizados."
+  ]
+}

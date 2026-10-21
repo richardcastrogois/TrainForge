@@ -1,0 +1,23 @@
+{
+  "id": "c15-martin2014-preview-pdf",
+  "url": "https://www.ons.org/pubs/article/16086/preview-download",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:23:18.321642+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Previa publicada do DOI10.1188/14.ONF.257-264, verificar quantas paginas/conteudo real/qualificacao/dose/roteiro. Nao pressupor artigo completo ou usar artigo para paciente comoexercicio docuidador.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ons.org/pubs/article/16086/preview-download",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 82415,
+  "bodyFile": "../raw/c15-martin2014-preview-pdf.pdf",
+  "sha256": "7d2694c00f38a81474c2e52b511dde92d1095f7d64d87f630762de8d8d205f4b"
+}

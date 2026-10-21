@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-15",
+  "niche": "N30",
+  "scope": "Descoberta ampliada por coleções acadêmicas, referências do7min, autores e instituição de saúde; selecionar apenas componente com instrução humana efetivamente recebida.",
+  "newSourceFamilies": [
+    {
+      "id": "PR193",
+      "name": "Archila et al.2021 — BWT11min/5BX contemporâneo",
+      "evidence": [
+        "n30-archila-editor.evidencia.json",
+        "n30-archila-pdf.evidencia.json"
+      ],
+      "primaryUrl": "https://intjexersci.com/ijes/vol14/iss3/2/",
+      "localPdfPages": 8,
+      "visualPdfPages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "findings": "PDF3 especifica11blocos1min: jumpingjacks/burpee sempushup/marcha/highknees/marcha/splitsquatjumps/marcha/highknees/marcha/squatjumps/marcha. São11min incluindo warm/cool, não11mais2min.18sessões/6semanas/3sem; familiarização antes e todas supervisionadas porinvestigador. Ritmo desafiador autorregulado;82%FCmáx eRPE14±3 são respostas observadas, não alvos.",
+      "population": "22recrutados,19final:9BWT20±1anos e10controle19±0, saudáveis/inativos. Não idosos ou cuidadores inferidos.",
+      "rights": "Texto aberto recebido no editor; não há grant explícito noPDF/landing recebido. Página Policies lidaweb é editorial/APCs, não licença doartigo; ausência não convertida emCCBY.",
+      "gaps": "Variantes técnicas completas dos saltos/burpee não descritas além de nomes; familiarização presencial não é material instrucional recebido. Não preencher porIA.",
+      "barriers": "GETXML406 comAcceptinadequado corrigido após pista concreta; segundoGETapplication/xml500semcorpo. Ambos preservados, não nova tentativa."
+    },
+    {
+      "id": "PR194",
+      "name": "Poon et al.2023 — WB-HIIT/ergômetro/MICT agudos",
+      "evidence": [
+        "n30-poon-html.evidencia.json"
+      ],
+      "primaryUrl": "https://jssm.org/jssm-22-532.xml-Fulltext",
+      "findings": "14adultosinativos7M7F28.4±6.5, semdoençascrônicas/articulares/gravidez, PARQ/laboratório. WB12exercícios30s+10s após cada, sideplank15spor lado, cadeira18pol~45.72cm, máximo dereps. Todosprotocolos têm5mina20%PPOwarm+3mina15%PPOcool emergômetro, cadência70rpm. Não sessão doméstica semkit.",
+      "timingConflict": "12×(30+10)=480s8min (ou470sseúltimorestexcluído), mas texto chama7min. Não decidir cronômetro.",
+      "ergometer": "12×30sa70%PPO/10sa20%PPO e warm/coolpróprios. Não aplicar watts absolutos ou FCcalculada poridade.",
+      "rights": "HTML ligaCCBY4 nohref mas texto literal dizCCBY-NC-ND4, junto de copyright restritivo. Grantcomercial de expressão não confirmado; não ocultar conflito, semPDF baixado.",
+      "gaps": "Sem roteiro de todososgestos, sem programa longitudinal/progressão. Estudo agudo nãoeficácia doapp/6semanas."
+    },
+    {
+      "id": "PR195",
+      "name": "Ballesta-García et al.2019/2020 — circuitoHIICT/MICT emmulheres maisvelhas",
+      "evidence": [
+        "n30-ballesta-2019-xml-accept.evidencia.json",
+        "n30-ballesta-2020-xml-accept.evidencia.json"
+      ],
+      "primaryUrls": [
+        "https://doi.org/10.3390/ijerph16214205",
+        "https://doi.org/10.3390/ijerph17051805"
+      ],
+      "findings": "MesmointervaloJan–Mai2018,mesmoprotocolo18semanas/2×1h,2semanasfamiliarização+4mesociclos4semanas;2020remete2019, não contar doisprogramas independentes.54alocadas/41avaliadas17HIICT12MICT12controle. Mulheres55–85independentes/avaliaçãomédica, perfillimitado. Instrutoracreditado/exercícioterapêutico2019;graduadoCiênciasAtividadeFísicaDesporto2020.",
+      "progression": "Table1 trazfaixasBorg6–20 porfase, densidade/duração/6–12intervalos;Table2 exemplos grapevine/squat/step-touch/mambo/chasse/joelhoalto/cargas/saltos, não roteirocompleto.",
+      "differences": "TextoMICTcomeça6–7versusTable1fase1 9–12; HIICT texto12–14/16–18 versusTable1rest7–8/9–10/10–11, não reconciliarautomaticamente. Table1MICTfase2Volume32–40versusWork32–42. Kit/cargas exatas e comandos/aquecimento/encerramento completos ausentes.",
+      "events": "Cincoeventosadversos relatados no2020, não afirmar semrisco. Ler localização/causalidade antes de atribuir àintervenção.",
+      "rights": "AmbosJATSprimáriosconfirmamCCBY4 naspermissions; direitosexpressos não preenchem conteúdoausente.",
+      "barriers": "PrimeirosGET406porAcceptinadequado; novosAcceptXML200, pista concreta documentada. MDPIHTMLweb429não repetido; PDFCDN não baixado."
+    },
+    {
+      "id": "PR196",
+      "name": "Klika e Jordan2013 — referência doHICT12estações",
+      "primaryUrl": "https://doi.org/10.1249/FIT.0b013e31828cb1e8",
+      "findings": "Artigo primário identificado por citação noPoon; semcorpo primário recebido nesta etapa. Não selecionar circuito pela réplica deoutrosapps ou alegar21min equivalentes/eficácia a partir donome científico.",
+      "rights": "Cópia MotricidadeHumana bloqueada pela revisão automática, não recebida; lote todo não executado. Nenhum grant copiado dopaper/figuras/app."
+    },
+    {
+      "id": "PR197",
+      "name": "Phil Goulding/Nuffield — explicaçãoHIIT e exemplos",
+      "primaryUrl": "https://www.nuffieldhealth.com/article/what-is-hiit-training",
+      "findings": "Autor nomeadoSeniorPersonalTrainer na página primária lidaweb. Bike2minwarm+5×(60shard+90srecover)+3mincool=17.5min, não20. Home lista45swork/30smarcha×3por5blocos ewarm/cool, mas somente nomes de vários movimentos; não importada.",
+      "rights": "Nuffield com copyright/restrição comercial verificados anteriormente emPR176; nenhum texto/mídia adaptado selecionado.",
+      "gaps": "90%esforço versusFCmáx não equivalentes, 220−idade não meta automática. Semgestos completos/cronograma validado de pausas decuidado."
+    }
+  ],
+  "barriersFile": "lote-downloads-nao-executado.json",
+  "newLocalCalls": 9,
+  "http200": 5,
+  "usefulBodies": 5,
+  "hashesIncludingErrors": 9,
+  "visualPagesThisNiche": 6,
+  "visualNote": "4pArchila novas e2pS1–S5 de reuso efetivamente vistas. Erros406HTML/500vazio não sãoXML recebido.",
+  "releaseApproved": false
+}

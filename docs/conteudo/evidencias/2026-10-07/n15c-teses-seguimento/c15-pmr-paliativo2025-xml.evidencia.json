@@ -1,0 +1,23 @@
+{
+  "id": "c15-pmr-paliativo2025-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:51:52.967966+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PrimeiroJATS ensaioPMR28sessoes/4semanas cuidador paliativo, verificar resultados/instrucoes/qualificacao/licenca/ativos essenciais e localizar suplementos originais.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 113401,
+  "bodyFile": "../raw/c15-pmr-paliativo2025-xml.xml",
+  "sha256": "60f5a6ab2fe1c497e84b82e3d1215b65a1ccbaeb958f2e7a027c21a81a05e27a"
+}

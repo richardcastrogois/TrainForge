@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-15",
+  "niche": "N37",
+  "sourceFamily": "PR209",
+  "authors": "Google/AndroidDevelopers, autoria institucional doscontratos técnicos. Não autoria de treino, fornecimento de exercícios ou vínculo BeFit.",
+  "localReceipts": [
+    {
+      "receipt": "n37-android-license.evidencia.json",
+      "bytes": 251895,
+      "sha256": "401ed61708026583a0eed7156fe1ae5933307c90080fa5688f550265f0adf880",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n37-hc-aggregate-data.evidencia.json",
+      "bytes": 334782,
+      "sha256": "ed7cc169d9417f52ed42bb90b2b21d3c50b5edf5684492919bca8de96b5d91ae",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n37-hc-availability.evidencia.json",
+      "bytes": 273521,
+      "sha256": "1e4c224e0e5bc1f0d6c91de34b4e9cacd872c75455be68c78c237a8aaf5b5454",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n37-hc-data-types.evidencia.json",
+      "bytes": 383456,
+      "sha256": "ae010caf59339d4c3872114cdb6e23ef6eee24b8402301a68b8cebcb4613f133",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n37-hc-metadata.evidencia.json",
+      "bytes": 305492,
+      "sha256": "e9923fb0783c7de438e10d5e8cdf3004497a182a3c29a9ff06726a0879b234fa",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n37-hc-read-data.evidencia.json",
+      "bytes": 345750,
+      "sha256": "02628892b75ee23c76e006b2e9ab03531224d9b67afa812dfe7638eb19108835",
+      "hashMatches": true,
+      "httpStatus": 200
+    }
+  ],
+  "newLocalGets": 6,
+  "usefulBodies": 6,
+  "hashesVerified": 6,
+  "newVisualPages": 0,
+  "urls": [
+    "https://developer.android.com/health-and-fitness/health-connect/availability",
+    "https://developer.android.com/health-and-fitness/health-connect/data-types",
+    "https://developer.android.com/health-and-fitness/health-connect/metadata",
+    "https://developer.android.com/health-and-fitness/health-connect/read-data",
+    "https://developer.android.com/health-and-fitness/health-connect/aggregate-data",
+    "https://developer.android.com/license"
+  ],
+  "rights": "ContentLicenseprimário recebido: documentação/códigoApache2.0salvoexceções; outrosconteúdosCCBY2.5; marcas e links externos excluídos. Não aplicarCCBY4automaticamente. Somente fatos técnicos/nomes deAPI selecionados emredação própria; nenhuma imagem/códigoamostral importado. Licença de documentação não é autorização dedadosdesaúde ou aprovaçãoPlay.",
+  "sourceDates": {
+    "readData": "2026-10-09UTC",
+    "availability": "2026-01-19UTC"
+  },
+  "sourceDrift": {
+    "finding": "Índices comqueryauthuserretornaramvarianteantigaSDKextension11paragetCurrentDeviceDataSource; corpo canônico recebidooutubro9mostra22. Nãoimplementar11porcopiarcache.",
+    "currentDocumentedRequirement": "Passos nativos:Android14/API34+Uextension20; consultaDataSourceporExecutor/OutcomeReceiver:Uextension22/framework, ainda não Jetpack conformeguia. Verificarfeatures/SdkExtensions reais antesdechamar; não realizado aqui.",
+    "paginationCaveat": "Guiaavisa tokenfinalpodeserstringvazia e recomenda isNullOrEmpty; exemploposterioraindaverifica apenas!=null. Não copiar código doexemplo como teste de correção.",
+    "exampleCaveat": "Guiaintroduz exemplodestepsmasprimeiroReadRecordsRequestusaHeartRateRecord; tipo realdeve ser explícito. Outrosexemploscoalescemnullpara0, inadequado àregraeditorialdedadosausentes doTrainForge."
+  },
+  "toolboxReference": {
+    "primaryUrl": "https://developer.android.com/health-and-fitness/health-connect/test/health-connect-toolbox",
+    "basis": "Texto primário indexado na pesquisa, semAPKbaixado ou ferramenta instalada.",
+    "role": "Gera/lêregistrosdeteste egestãodepermissões. Registro sintético prova caminho técnico,não sensor/pessoareal oueficácia/precisão."
+  },
+  "costs": "Documentaçãopúblicasemconta/pagamento; integração/dispositivo/WearOS/saúdepermissões/configuraçãodepublicação eeventuais serviçosde terceiros nãoestãocontratados nemcusteadosporesta pesquisa. SDKnão dáacessoa relógio/nuvem arbitrários."
+}

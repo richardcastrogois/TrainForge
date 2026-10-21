@@ -1,0 +1,26 @@
+{
+  "id": "n24-ucb-rights",
+  "url": "https://portalrevistas.ucb.br/index.php/rbcm/en/about/submissions",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:25:53.213241+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 302,
+  "use": "research_only",
+  "purpose": "Direitos autorais explicitos RBCM: nao importar texto protegido; distinguir metodos de expressao",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://portalrevistas.ucb.br/index.php/rbcm/en/about/submissions",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/n24-ucb-rights.html",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": "HTTP 302",
+  "usableAsSourceBody": false,
+  "contentValidationNote": "HTTP302/vazio local; política textual completa lida na ferramenta web. Não repetir requisição."
+}

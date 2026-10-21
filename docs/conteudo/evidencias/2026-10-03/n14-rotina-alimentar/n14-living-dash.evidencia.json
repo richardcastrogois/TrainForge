@@ -1,0 +1,21 @@
+{
+  "id": "n14-living-dash",
+  "url": "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:16:19.720001+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Planeamento, substituicoes e diario contextual; distinguir orientacao de requisito funcional proposto.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 75265,
+  "bodyFile": "../raw/n14-living-dash.html",
+  "sha256": "41c61100168396331c217bbe07dcab5d11a85e02dce098b51108600f905b2217"
+}

@@ -1,0 +1,39 @@
+{
+  "contexts": [
+    {
+      "id": "adulto_iniciante_ou_retorno_pos_inatividade",
+      "selected": "PR150GRONO2semPRECON,18-65anos,semlesao3meses/contraindicacao",
+      "state": "candidato_condicional_antesdepublicar",
+      "environment": "Cursoexternoescolhido/ambulatorio;naofaznecessariousoesteira"
+    },
+    {
+      "id": "retorno_pos_lesao_cirurgia_dor",
+      "selected": null,
+      "references": [
+        "PR152",
+        "PR153"
+      ],
+      "state": "nao_liberado",
+      "reason": "Exigeavaliacaoprofissional/tecidual;calendarioN23geralnaoaltafisioterapeutica. Condicoes/fases especificas emN33,nao iniciada."
+    },
+    {
+      "id": "idoso",
+      "selected": null,
+      "state": "parcial",
+      "reason": "GRONO2incluiate65,naotodosidosos oufragilidade;idadeisoladanaobasta,capacidade/apoio e elegebilidadeespecificaspendentes."
+    },
+    {
+      "id": "cuidador_proprio_em_casa",
+      "selected": null,
+      "state": "parcial",
+      "reason": "Nao presumesairdelado dopaciente;corridaambientedomestico/tempo/apoiosnaodemonstrados. N15pausadaeaberta."
+    },
+    {
+      "id": "praca",
+      "selected": "Mesmo cursoexternocompativelsecriteriosatendidos",
+      "state": "condicional",
+      "reason": "Percursodesimpedido;naousodeaparelhosp ublicosN21"
+    }
+  ],
+  "releaseApproved": false
+}

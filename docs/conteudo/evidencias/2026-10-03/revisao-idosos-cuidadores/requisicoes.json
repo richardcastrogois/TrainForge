@@ -1,0 +1,10 @@
+{
+  "scope": "Auditoria transversal N01–N17, por solicitação posterior do autor; não é N47 nem implementação.",
+  "date": "2026-10-03",
+  "requests": [
+    {"id": "ic-who-later-adulthood", "url": "https://www.who.int/tools/your-life-your-health/life-phase/later-adulthood/being-active-in-later-adulthood", "purpose": "Conferir público mais velho, variedade de práticas e adaptação; guia geral não é programa pronto.", "extension": "html"},
+    {"id": "ic-cdc-caregivers", "url": "https://www.cdc.gov/still-going-strong/caregivers/index.html", "purpose": "Conferir recurso explicitamente dirigido a cuidadores, limites de segurança e apoio; não protocolo clínico do app.", "extension": "html"}
+  ],
+  "reused": ["N01–N17 resumos e dossiê", "N15 corpo/critério de elegibilidade", "N16 PDF e direitos", "2026-09-30/n10-perda-peso/n10-cdc-direitos.evidencia.json"],
+  "limits": "Sem novos alvos de dose, diagnóstico, exercícios assistidos, teste com idosos/cuidadores, dados pessoais ou licença de publicação. Potencial de mercado é hipótese do autor, não validado nesta auditoria."
+}

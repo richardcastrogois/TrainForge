@@ -1,0 +1,24 @@
+{
+  "id": "c15-dpmp2022-protocolo-pdf",
+  "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-19-12186/article_deploy/ijerph-19-12186.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:46:53.885518+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original11p DOI10.3390/ijerph191912186; elegibilidade caregiver comdor/preparo/livro30min3semana/videos/fidelidade, sem usar plano como beneficio observado.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://mdpi-res.com/d_attachment/ijerph/ijerph-19-12186/article_deploy/ijerph-19-12186.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 274582,
+  "bodyFile": "../raw/c15-dpmp2022-protocolo-pdf.pdf",
+  "sha256": "359e482cb42b71f411f7255492a1d33c44ac45f9036eaba15ccf9cb5d7af0df1",
+  "bodyFormatMatchesRequest": true
+}

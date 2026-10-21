@@ -1,0 +1,22 @@
+{
+  "id": "c15-triagem-academia-masters-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5405504/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:24:28.372596+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir eventual manual integral de resistencia para idosos no protocolo MASTERS; medicacao/cointervencao nao sera transferida ao APK e protocolo nao e resultado.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5405504/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 121825,
+  "bodyFile": "../raw/c15-triagem-academia-masters-xml.xml",
+  "sha256": "5f0790c55aa91a69050dc8be68ecc7802d86dd4625e6f2df0fa09c7267cf7e77"
+}

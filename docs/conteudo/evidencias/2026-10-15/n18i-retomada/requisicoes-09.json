@@ -1,0 +1,23 @@
+{
+  "requests": [
+    {
+      "id": "n18r-army-atp-machine-manual",
+      "url": "https://www.benning.army.mil/tenant/wtc/content/PDF/ARN45013-ATP_7-22.02-001-WEB-4.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Capítulo15 de comandos de máquinas, fonte federal primária: conferir variante, edição, direitos e autoria; não transferir dose militar a idosos."
+    },
+    {
+      "id": "n18r-army-copyright-terms",
+      "url": "https://www.army.mil/terms/",
+      "extension": "html",
+      "purpose": "Política primária de copyright e terceiros; distribuição pública não é licença uniforme de fotos/logos."
+    },
+    {
+      "id": "n18r-army-faq",
+      "url": "https://www.army.mil/faq/",
+      "extension": "html",
+      "purpose": "Verificar termos de reutilização e domínio público sem inferir liberação de marcas ou retratos."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n24-silva2002-pdf",
+  "url": "https://portalrevistas.ucb.br/index.php/rbcm/article/download/465/491/1665",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:19:28.446733+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Instrucoes de ajuste, pedalar sentado, condicoes de ensino e qualificacao dos autores; nao importar ilustracoes externas",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://portalrevistas.ucb.br/index.php/rbcm/pt_BR/article/download/465/491/1665",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 152546,
+  "bodyFile": "../raw/n24-silva2002-pdf.pdf",
+  "sha256": "bdfc6a52e083b68b49c0f0d7f39df6eb75f44ac6f318bc0a70da7f93caa0335f",
+  "bodyFormatMatchesRequest": true
+}

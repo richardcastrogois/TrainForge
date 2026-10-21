@@ -1,0 +1,20 @@
+{
+  "id": "c15-ela-autocuidado-anexos",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:21:36.526856+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receber uma vez os dois Data Sheets ligados no XML; verificar se Appendix 1 e a cartilha de exercicios, sem pressupor licenca dos ativos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "error": "Response exceeds 2 MiB: body not stored, no retry"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "n17i-wai-idosos",
+  "url": "https://www.w3.org/WAI/older-users/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:24:01.628240+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir necessidades de utilizadores idosos e principios de acessibilidade, sem assumir deficiencia por idade.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.w3.org/WAI/older-users/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 46678,
+  "bodyFile": "../raw/n17i-wai-idosos.html",
+  "sha256": "f68d518e050d8e1775ee3affcb7aefab9e8e8a418e3a75aac4d5b964de0e883f"
+}

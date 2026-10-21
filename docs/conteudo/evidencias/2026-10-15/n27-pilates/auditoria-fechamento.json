@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-15",
+  "niche": "N27",
+  "researchClosed": true,
+  "scope": "Três fichas devariantes1 desolo, com preparação, comandos/dose/retorno efisioterapeuta exigido. Não programa integral/calendário e não curso autônomo para todos.",
+  "selectedLot": "lote-pilates-solo.json",
+  "previousPartialAudit": "auditoria-parcial.json",
+  "whatResolved": "Novo artefato primário assinadoPR192 recebido. Temconteúdo instrucional explícito e doseprópria paraasvariantesselecionadas; nãofoi usado instrutor hipotético para preencherChartsHBPE. Seleção de métodos/fatos comcrédito/limites, semreprodução deexpressão/mídia.",
+  "criteria": [
+    {
+      "criterion": "Autoria profissional",
+      "met": true,
+      "evidence": "TrêsSeniorPhysiotherapists identificadasnoPDF; papel deensinoPilates explícito."
+    },
+    {
+      "criterion": "Preparo/instrução/dose/retorno",
+      "met": true,
+      "evidence": "PDF1/2/4/6/7vistos; variantes1 e10reps, alternância/respiração e descidapublicadas. Holds/tempo/calendárioausentes não preenchidos."
+    },
+    {
+      "criterion": "Direitos selecionados",
+      "met": true,
+      "evidence": "Fatos/métodos emredação própria, PR166; nenhum grant deexpressão/foto alegado. Revisãodoativofinal anterioràpublicação."
+    },
+    {
+      "criterion": "Compatibilidade/apoio/contextos",
+      "met": true,
+      "evidence": "Mesmacartilha/solo/supino, ensinoerealidadefísica preservados; não genética deaparelhos nem doseHBPE. Quatrocontextospendentes/limitados, semgarantia clínica."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisão profissionaldo recorte, elegibilidade, ensino/apoio e transferência reais",
+    "Expressãooriginal/atribuição/direitos doativo final, pt-PT/acessibilidade/compreensão",
+    "Implementação/testes emetapaprópria"
+  ],
+  "notClosedFor": [
+    "Charts1–2HBPE/guia integral9semanas",
+    "ProtocoloStandingMachine/Pereira",
+    "Treinoautônomo/clínico universal, idososfrágeis/cuidadores enquantoassistentes",
+    "Direitosdemídia/expressão do manual"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N28"
+}

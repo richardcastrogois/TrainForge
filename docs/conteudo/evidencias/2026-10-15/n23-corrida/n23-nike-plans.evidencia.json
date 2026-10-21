@@ -1,0 +1,23 @@
+{
+  "id": "n23-nike-plans",
+  "url": "https://www.nike.com/running/training-plans/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:38:09.556195+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Catalogo publico de outroapp: planos/coaches/ativos sem extracao restrita",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nike.com/running/training-plans/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 675732,
+  "bodyFile": "../raw/n23-nike-plans.html",
+  "sha256": "3850892aadfa0a65010ec2b6609f02647b4bb19d11db569a5a321ecf24a950f4"
+}

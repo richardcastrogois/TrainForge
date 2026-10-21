@@ -1,0 +1,22 @@
+{
+  "id": "i15-sfhe-artigo",
+  "url": "https://mdpi-res.com/d_attachment/healthcare/healthcare-12-00166/article_deploy/healthcare-12-00166.pdf?version=1704872103",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:58:15.608083+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira captura do PDF editorial primario, licenca e requisitos do programa assistido; nao treino pessoal do cuidador.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://mdpi-res.com/d_attachment/healthcare/healthcare-12-00166/article_deploy/healthcare-12-00166.pdf?version=1704872103",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1913211,
+  "bodyFile": "../raw/i15-sfhe-artigo.pdf",
+  "sha256": "461b2ada305e61b720ec5cb87f658be534f40febe461a56854d5ed7dd0fd40f0"
+}

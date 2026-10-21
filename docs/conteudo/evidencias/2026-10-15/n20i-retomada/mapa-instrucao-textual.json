@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-16",
+  "niche": "N20-I",
+  "scope": "Nove fichas textuais do conjunto modular selecionadoN18/N19, com correspondencia de variante/postura/apoios/retorno. Nao todas as28variantesWalker nem manual de operacao autonoma de todas as marcas.",
+  "maps": [
+    {
+      "component": "N18-M01",
+      "name": "Leg press apoiado",
+      "instructionSource": "PR244",
+      "locator": "Lower Body Strength / Preparation",
+      "preparation": "Assento e encosto ajustados para apoiar cabeca, costas e nadegas; pegas acessiveis; pes na plataforma na largura dos ombros, joelhos alinhados aos pes.",
+      "executionAndReturn": "Empurrar com os pes apoiados, estendendo sem travar joelhos; retornar com controle a flexao inicial confortavel e manter apoio do tronco.",
+      "exactVariant": "Maquina com assento/encosto/plataforma; nao pressupor orientacao45graus, pneumática ou equipamento de praca.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "TextoCCBY4; Tabela5NC, formulas, testes e fotos excluidos.",
+      "modelBridge": "L050 historico doartigoPR236 + geometriaDeAnza, somente referencia documental; naooperacao de painel/modeloB.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M02",
+      "name": "Extensao de joelhos sentada em maquina",
+      "instructionSource": "PR167",
+      "locator": "Leg Extensions",
+      "preparation": "Sentar no aparelho, colocar os pes sob o apoio e segurar as pegas laterais para estabilizar.",
+      "executionAndReturn": "Com os pes fletidos, elevar ate as pernas ficarem paralelas ao chao; pausar e baixar sob controle. Expirar ao elevar e inspirar no retorno.",
+      "exactVariant": "Extensora sentada com apoio nos pes; nao extensao isometrica CIEX, cadeira simples ou extensora unilateral por presuncao.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M03",
+      "name": "Flexao de joelhos deitada em maquina",
+      "instructionSource": "PR167",
+      "locator": "Leg Curls",
+      "preparation": "Variante deitada de barriga para baixo, conforme a pagina vista; apoio atras dos calcanhares, nao sobre as panturrilhas, e pes fletidos.",
+      "executionAndReturn": "Dobrar os joelhos com movimento continuo e controlado; pausar e retornar. Manter quadril apoiado e evitar arquear as costas. Expirar ao flexionar e inspirar ao estender.",
+      "exactVariant": "Mesa flexora em decubito ventral; nao cadeira flexora sentada. A capacidade de deitar/levantar e sustentar a posicao precisa ser confirmada.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M04",
+      "name": "Elevacao de panturrilhas sentada em maquina",
+      "instructionSource": "PR167",
+      "locator": "Seated Calf Raises",
+      "preparation": "Apoiar a parte anterior dos pes no apoio do aparelho e posicionar as almofadas sobre os joelhos.",
+      "executionAndReturn": "Elevar os calcanhares, sustentar a posicao superior e baixar com controle, permitindo a descida dos calcanhares na amplitude do aparelho. Expirar na elevacao e inspirar na descida.",
+      "exactVariant": "Aparelho sentado com apoio nos joelhos e na parte anterior dos pes; nao usar a dose como carga kg de aparelhos de praca.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M05",
+      "name": "Puxada frontal em polia com pegada neutra",
+      "instructionSource": "PR167",
+      "locator": "Lat Pulldowns",
+      "preparation": "Sentado, segurar pegas com as palmas voltadas uma para a outra e iniciar com os bracos estendidos.",
+      "executionAndReturn": "Trazer os cotovelos para os lados do tronco ate a pega chegar a parte superior do peito; pausar e retornar de modo controlado, sem balancar a lombar. Expirar na puxada e inspirar no retorno.",
+      "exactVariant": "Pegada neutra e puxada pela frente; nao pegada pronada aberta, supinada CurlGrip ou puxada atras da nuca.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M06",
+      "name": "Remada sentada em polia na altura do peito",
+      "instructionSource": "PR167",
+      "locator": "Seated Rows",
+      "preparation": "Pes contra apoio fixo, joelhos levemente dobrados, tronco alinhado e bracos estendidos segurando a pega na altura do peito.",
+      "executionAndReturn": "Puxar a pega ao meio do peito mantendo antebracos paralelos ao chao; pausar e retornar, sem embalar o tronco. Expirar ao puxar e inspirar ao estender.",
+      "exactVariant": "Polia na altura do peito com apoio fixo dos pes; nao remada baixa ate o quadril, banda sob os pes ou maquina com apoio de peito.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M07",
+      "name": "Supino inclinado com halteres a20graus",
+      "instructionSource": "PR167",
+      "locator": "Incline Dumbbell Press",
+      "preparation": "Deitar em banco inclinado20graus, pes apoiados no chao, halteres diante dos ombros.",
+      "executionAndReturn": "Elevar os halteres deixando pequena flexao nos cotovelos e mantendo lombar apoiada; pausar e retornar ao alto do peito, sem arquear as costas. Expirar ao elevar e inspirar ao baixar.",
+      "exactVariant": "Banco20graus e halteres; nao chestpress sentado ou supino com barra. Preservar ajudante/spotter para pesoslivres conforme USU127.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M08",
+      "name": "Elevacao dos bracos acima da cabeca com pesos, em pe",
+      "instructionSource": "CI05",
+      "locator": "Overhead Arm Raise",
+      "preparation": "Pes no chao na largura dos ombros, pesos ao lado dos ombros, palmas para a frente. Variante em pe admitida no texto.",
+      "executionAndReturn": "Expirar ao elevar acima da cabeca com cotovelos levemente fletidos; sustentar1s e inspirar ao baixar ao inicio.",
+      "exactVariant": "Nao usar fotografia sentada como demonstracao em pe; nao BehindTheNeckPress.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "TextoNIA com credito e adaptacao/traducao declaradas; fotos/logo excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    },
+    {
+      "component": "N18-M09",
+      "name": "Flexao de cotovelos com pesos em pe",
+      "instructionSource": "CI05",
+      "locator": "Arm Curl",
+      "preparation": "Pes na largura dos ombros; pesos ao lado do corpo com palmas voltadas para a frente.",
+      "executionAndReturn": "Expirar ao dobrar os cotovelos e trazer os pesos ao peito sem afastar cotovelos do tronco; sustentar1s e inspirar ao retornar.",
+      "exactVariant": "Bracos ao lado e palmas a frente; nao rosca no banco inclinado, com rotacao ou em polia.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "representation": "ficha textual factual em redacao documental independente",
+      "mediaOrExternalIdMapped": false,
+      "photosVideosOrIllustrationsSelected": false,
+      "rights": "TextoNIA com credito e adaptacao/traducao declaradas; fotos/logo excluidos.",
+      "modelBridge": "Variante delimitada pelo metodo/postura/apoio da fonte; nao biblioteca de todos os fabricantes.",
+      "delivery": "Caminho profissional do loteN18. Ajuste corporal/apoios esta descrito; operacao do hardware real exige conferenciadoprofissional antes de pratica. Nao se finge ter manual de manutencao ou painel de cada modelo.",
+      "researchMapping": "correspondencia_documental_textual_selecionada",
+      "actualEquipmentTested": false,
+      "releaseApproved": false
+    }
+  ],
+  "negativeCorrespondences": [
+    {
+      "candidate": "Chest press sentadoL070",
+      "decision": "Nao e supino inclinado20grausM07; rejeitar."
+    },
+    {
+      "candidate": "LegpressverticalUSU290/45graus/pneumatico/praca",
+      "decision": "Nao corresponde ao exemplo sentadoL050/DeAnza; rejeitar ligacao por nome."
+    },
+    {
+      "candidate": "Flexora sentada",
+      "decision": "Nao corresponde a mesa flexora em decubito ventralM03."
+    },
+    {
+      "candidate": "Puxada supinada CurlGrip ou atras da nuca",
+      "decision": "Nao corresponde a pegada neutra frontalM05."
+    },
+    {
+      "candidate": "Remada baixa ate o quadril/faixa sob pes",
+      "decision": "Nao corresponde a polia na altura do peitoM06."
+    },
+    {
+      "candidate": "Elevacao sentado em fotografia",
+      "decision": "Nao demonstracao da variante em peM08; nenhuma fotografia publicada."
+    },
+    {
+      "candidate": "TricepsPressdowncotovelos travadosUSU297",
+      "decision": "Conflita com NIA; fora da selecao, nao corrigido porIA."
+    },
+    {
+      "candidate": "FigurasEMG/dinamometroWalker",
+      "decision": "Avaliacao experimental, nao tutorial das9fichas."
+    }
+  ],
+  "accessibility": "Texto separado deimagem; oferecer preparo, movimento, retorno, respiração e apoio, sem depender de foto/musculo/nome. Nenhum ensaio de compreensao por usuario realizado.",
+  "rightsEvidence": [
+    "../n18i-retomada/leitura-usu-e-nia.json",
+    "leitura-modelo-e-exclusoes.json"
+  ],
+  "newTextualResearchMappings": 9,
+  "visualAssetsSelected": 0,
+  "externalWgerIdsMapped": 0,
+  "automaticEquipmentOperationApproved": false,
+  "researchClosed": true,
+  "releaseApproved": false
+}

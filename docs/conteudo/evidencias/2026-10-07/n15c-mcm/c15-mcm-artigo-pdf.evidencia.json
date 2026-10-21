@@ -1,0 +1,24 @@
+{
+  "id": "c15-mcm-artigo-pdf",
+  "url": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:05:22.645932+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Versao de registro PDF para localizadores/figuras/licenca e limites; nao manual proprio presumido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 721840,
+  "bodyFile": "../raw/c15-mcm-artigo-pdf.pdf",
+  "sha256": "462e9a3201c4de6427bb30a468af62c4ecb6d4e57227496e3fbb84517ffc274c",
+  "bodyFormatMatchesRequest": true
+}

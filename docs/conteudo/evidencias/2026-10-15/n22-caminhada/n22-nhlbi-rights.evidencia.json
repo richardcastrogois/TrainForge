@@ -1,0 +1,23 @@
+{
+  "id": "n22-nhlbi-rights",
+  "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:20:33.924149+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica primaria de reutilizacao/ativos/excecoes/sem endosso",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 63211,
+  "bodyFile": "../raw/n22-nhlbi-rights.html",
+  "sha256": "6db26625a9b74bdd9e1c6d3c2a603106609718ebc7a4da47dcbdc9578ef47aa8"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "c15-educapes-cuidador-metadados",
+  "url": "https://educapes.capes.gov.br/handle/capes/922438?mode=full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-06T03:30:52.718266+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Primeira captura eduCAPES: autoria, serie propria de alongamentos do cuidador e CC BY-SA3.0 Brasil. MP4 nao baixado sem autorizacao especifica de tamanho.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-carefit-prototipo",
+  "url": "https://formative.jmir.org/2021/10/e27358",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T14:52:25.983042+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 202,
+  "use": "research_only",
+  "purpose": "Verificar programa proprio domiciliar de cuidadores, autoria humana, instrucao/progressao e direitos, sem copiar marca/app ou aprovar videos por licenca do artigo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://formative.jmir.org/2021/10/e27358",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 2121,
+  "bodyFile": "../raw/c15-carefit-prototipo.html",
+  "sha256": "9a5490a4cd044a443658c522044971f8dbcc4526fd3c471dc3086cb09a114324",
+  "error": "HTTP 202"
+}

@@ -1,0 +1,76 @@
+{
+  "date":"2026-10-07",
+  "niche":"N15-C",
+  "sourceId":"PR70",
+  "title":"Development and content evaluation of a multidimensional coping model-based health education manual for dementia care support",
+  "doi":"10.3389/fpubh.2026.1750034",
+  "published":"2026-03-16",
+  "authors":["Jie Wu","Dandan Zhang","Ling Feng","Qinghua Zhao","Mingzhao Xiao","Jun Wang"],
+  "sourceBodies":[
+    {"role":"article_html_and_published_supplement_metadata","receipt":"2026-10-07/n15c-mcm/c15-mcm-artigo-html.evidencia.json","sha256":"242dbc8095d40b5eb25349783d7ce6758c0b27b0287a4653e3a29e68aea20aea"},
+    {"role":"article_pdf_not_final_manual","receipt":"2026-10-07/n15c-mcm/c15-mcm-artigo-pdf.evidencia.json","sha256":"462e9a3201c4de6427bb30a468af62c4ecb6d4e57227496e3fbb84517ffc274c","pdfPages":13}
+  ],
+  "population":{"practitioner":"cuidador_familiar_para_si","recipient":"pessoa_com_demencia","homeCompatibilityClaimed":true,"completeDomesticExerciseDeliveryReceived":false,"allCaregiverConditionsCovered":false},
+  "professionalAuthorship":{
+    "institutions":["First Affiliated Hospital of Chongqing Medical University - Nursing Department","Qinggang Senior Care Center"],
+    "creationTeamReported":["geriatricians","geriatric nurses","mental health specialists","social workers","psychologists","dementia care professionals"],
+    "locator":"PDF5 sec3.4 equipe multidisciplinar; PDF1 afiliacoes; PDF11 contribuicoes",
+    "humanProfessionalTeamCreationReported":true,
+    "individualProfessionalCredentialsIndependentlyChecked":false,
+    "manuscriptNoGenerativeAiDeclaration":"PDF11: autores declaram nao usar IA generativa na criacao do manuscrito.",
+    "declarationProvesAllExternalAssetsNeverUsedAi":false
+  },
+  "evidenceBasis":{
+    "design":"desenvolvimento_de_manual_e_avaliacao_de_conteudo",
+    "priorRandomizedTrialsSynthesized":31,
+    "caregiverInterviewParticipants":8,
+    "caregiverInterviewAgeRange":[49,72],
+    "expertContentValidators":11,
+    "globalCviImportance":0.97,
+    "globalCviUnderstandability":0.92,
+    "stretchingAndBreathingCvi":[0.91,0.91],
+    "clinicalPilotOfThisManualPerformed":false,
+    "randomizedTrialOfThisManualPerformed":false,
+    "individualExerciseClinicalEfficacyProven":false,
+    "locator":"PDF3-5 metodo; PDF8 Table3; PDF9 limitacoes; PDF10 Table6",
+    "allowedClaim":"Manual desenvolvido por equipe multidisciplinar, informado por literatura/entrevistas e avaliado por especialistas; nao efeito clinico demonstrado deste manual."
+  },
+  "curriculumTopics":[
+    {"id":"MCM-C01","name":"Learn how to relax","locator":"PDF8 Table3 sec2.1.2","completeInstructions":null,"sourceDose":null},
+    {"id":"MCM-C02","name":"Mindful breathing","locator":"PDF8 Table3 sec2.2.2","completeInstructions":null,"sourceDose":null},
+    {"id":"MCM-C03","name":"Mindfulness stretching","locator":"PDF8 Table3 sec2.2.3","completeInstructions":null,"sourceDose":null}
+  ],
+  "manualAvailability":{
+    "articlePromisesFinalManual":"PDF5 sec3.4: versao final e feedback de especialistas em Supplementary material D.",
+    "finalManualReceived":false,
+    "receivedPageHasSupplementalDataFlags":[false],
+    "receivedSupplementarySectionNodeCounts":[0],
+    "publishedSupplementDownloadLinks":[],
+    "absenceOnReceivedPageProvesGlobalNonexistence":false,
+    "promisedButUnreceivedAssets":["manual final D","ilustracoes de pratica","audios vinculados por QR","logs","publicacoes WeChat"],
+    "weChatMaterialActuallyReceived":false,
+    "paperOrWeChatNameIsExecutableApkProgramme":false
+  },
+  "rights":{
+    "articleLicence":"CC BY 4.0 com creditos e ressalvas de terceiros",
+    "articleLicenceUrl":"https://creativecommons.org/licenses/by/4.0/",
+    "manualLicenceVerified":false,
+    "externalAudioAndImageLicencesVerified":false,
+    "articleLicenceTransferredToAbsentAssets":false,
+    "releaseRightsApproved":false
+  },
+  "apkTraceability":{
+    "researchPath":"curriculumTopics[].locator -> sourceBodies[].receipt/sha256 -> recibo.bodyFile",
+    "topicNamesAreExerciseInstructions":false,
+    "missingFieldsRemainNull":true,
+    "instructionOrDoseCreatedByAgent":false,
+    "importAllowed":false,
+    "nextRequiredArtifact":"Manual final D original, seguido de leitura das instrucoes/entrega e direitos dos ativos efetivos; nao mais um resumo de resultados."
+  },
+  "audit":{"anchorCheckedPdfPages":[1,5,8,9,10,11],"renderedPdfPages":[1,5,8,9,10,11],"visuallyInspectedPdfPages":[1,5,8,9,10,11],"scriptAloneConfirmsVisualInspection":false},
+  "newProgrammesApproved":0,
+  "researchClosureApproved":false,
+  "releaseApproved":false,
+  "appImplemented":false,
+  "contactWithAuthors":false
+}

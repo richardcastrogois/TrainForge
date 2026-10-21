@@ -1,0 +1,23 @@
+{
+  "id": "n33-nemex-artigo",
+  "url": "https://link.springer.com/article/10.1186/1471-2474-11-126",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:02:34.490178+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primárioNEMEX-TJR2010 com CC BY2 confirmado emRights and permissions, preservar métodos/população/individualização e vínculo do suplemento, sem publicação noapp",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/1471-2474-11-126?error=cookies_not_supported&code=693bd8b4-0398-4880-8825-1968b63b8537",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 381059,
+  "bodyFile": "../raw/n33-nemex-artigo.html",
+  "sha256": "bee633355d3b9db02aae3638411dcd858d0e547d42ed8ad3003b6b20915c65c3"
+}

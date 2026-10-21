@@ -1,0 +1,17 @@
+{
+  "id": "n15c-unijui-manual-pagina",
+  "url": "https://www.revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T04:57:12.332548+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Verificar artigo primario em portugues sobre manual proprio de cuidadores domiciliares de idosos, acesso ao manual, treino, supervisao e direitos. Busca web anterior foi cache miss, nao coleta local.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

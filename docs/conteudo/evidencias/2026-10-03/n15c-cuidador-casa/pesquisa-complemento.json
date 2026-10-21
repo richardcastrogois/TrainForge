@@ -1,0 +1,392 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-03",
+  "consolidatedAt": "2026-10-04",
+  "status": "parcial",
+  "researchScope": "Treino proprio do cuidador em casa; fontes humanas, dose e supervisao, completude operacional e compatibilidade de direitos. Nao treino da pessoa assistida.",
+  "next": "Continuar N15-C; N21 retida ate fechamento dos complementos anteriores.",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchClosureApproved": false,
+  "standaloneCaregiverHomeProgrammeComplete": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-prieto-cuidadores.evidencia.json",
+      "anchors": [
+        "female primary informal caregiver",
+        "9-month-long",
+        "twice a week",
+        "1-h session",
+        "face-to-face exercise sessions",
+        "CC BY"
+      ],
+      "role": "Estudo do exercicio da propria cuidadora; artigo completo recebido, nao manual operacional completo."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-li-cuidadores.evidencia.json",
+      "anchors": [
+        "family caregivers",
+        "eight intervention sessions",
+        "Attribution-NonCommercial-NoDerivatives"
+      ],
+      "role": "Sun et al., 2025; id local li preservado pois Li e coautora. Calendario de intervencao, nao fichas completas de exercicios; direitos restritivos."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-videos.evidencia.json",
+      "anchors": [
+        "Physical activity and wellbeing videos"
+      ],
+      "role": "Indice de recursos original; disponibilidade de HTML nao aprova cada video."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-sessoes.evidencia.json",
+      "anchors": [
+        "12-minute",
+        "Take breaks",
+        "Mr Motivator"
+      ],
+      "role": "Sessao anunciada e pausas previstas pela propria fonte; sem verificacao de reproducao/dose por gesto."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-termos.evidencia.json",
+      "anchors": [
+        "personal, non-commercial",
+        "must not change",
+        "written consent"
+      ],
+      "role": "Limites observados de republicacao e adaptacao; sem permissao comercial solicitada ou presumida."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-carers-longos.evidencia.json",
+      "anchors": [
+        "Seated exercise",
+        "Pilates",
+        "15 minute"
+      ],
+      "role": "Pagina original de sessoes mais longas; corpo recebido, videos nao reproduzidos ou aprovados."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-sono-protocolo.evidencia.json",
+      "anchors": [
+        "CC BY-NC-ND",
+        "eight-week",
+        "their caregivers",
+        "telehealth"
+      ],
+      "role": "Martin et al., 2024, protocolo e nao resultados; modo supervisionado/individualizado e licenca restritiva."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+      "anchors": ["Workout to Go", "13 exercises", "PROGRESSING"],
+      "role": "Rotina amostral humana, ilustrada; texto extraido de 24 paginas e cinco paginas criticas dos dois PDFs inspecionadas. Nao pacote completo de toda a categoria."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-cuidador.evidencia.json",
+      "anchors": ["as a caregiver", "Ask for help at home"],
+      "role": "Folha NIA especifica para autocuidado fisico do cuidador, depositada pelo IGEC/Iowa; nao manual de exercicios."
+    }
+  ],
+  "accessLimits": [
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nih-direitos.evidencia.json",
+      "status": 403,
+      "retry": false,
+      "decision": "Politica observada pelo leitor web, nao corpo HTTP 200 local; nao presumir direitos por ativo."
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-unijui-manual-pagina.evidencia.json",
+      "status": null,
+      "retry": false,
+      "decision": "TLS CERTIFICATE_VERIFY_FAILED antes de receber corpo. Verificacao mantida, sem retry, permissao presumida ou manual considerado obtido."
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+    "2026-10-03/n15c-cuidador-casa/amostra-nia.json"
+  ],
+  "programmes": [
+    {
+      "id": "C15-P01",
+      "sourceId": "PR17",
+      "title": "Prieto-Prieto et al., 2022",
+      "doi": "10.3390/ijerph19159319",
+      "executor": "cuidadora_para_si",
+      "setting": "casa",
+      "sourceFactsNotPrescription": {
+        "population": "Cuidadoras informais de familiar com demencia, >=50 anos, conviventes, >=20 horas de cuidado/semana; demais criterios na secao 2.1.",
+        "screeningRequired": true,
+        "months": 9,
+        "sessionsPerWeek": 2,
+        "sessionMinutes": 60,
+        "sessionBlocksMinutes": [
+          10,
+          10,
+          20,
+          10,
+          10
+        ],
+        "blockTypes": [
+          "aquecimento",
+          "aerobico",
+          "mobilidade_forca",
+          "aerobico",
+          "retorno_calma"
+        ],
+        "aerobicPercentHRmax": [
+          60,
+          65
+        ],
+        "supervision": "Treinador qualificado presencial.",
+        "additionalMaterials": [
+          "pesos",
+          "halteres",
+          "elasticos"
+        ]
+      },
+      "exerciseListFullyPublished": false,
+      "setsRepetitionsByExercise": null,
+      "individualProgressionAlgorithm": null,
+      "instructionMediaCollected": false,
+      "rights": "Artigo CC BY 4.0; nao licencia manual ou videos ausentes.",
+      "decision": "Evidencia especifica parcial; nao remover supervisao nem completar rotina por IA.",
+      "sourceLastClinicalReview": null
+    },
+    {
+      "id": "C15-P02",
+      "sourceId": "PR18",
+      "title": "Sun et al., 2025",
+      "doi": "10.1186/s12912-025-03881-5",
+      "executor": "cuidador_para_si",
+      "setting": "casa",
+      "sourceFactsNotPrescription": {
+        "population": "Cuidadores familiares de pessoas com problemas musculoesqueleticos numa comunidade chinesa.",
+        "interventionWeeks": 8,
+        "scheduledSupportSessions": 8
+      },
+      "publishedTableIs": "Calendario tematico com educacao, apoio e atividades; nao dose completa por exercicio.",
+      "setsRepetitionsByExercise": null,
+      "individualProgressionAlgorithm": null,
+      "rights": "CC BY-NC-ND 4.0; reutilizacao comercial/traducao para o produto nao autorizadas por esta licenca.",
+      "decision": "Referencia; incompativel com caminho gratuito de incorporacao comercial observado."
+    },
+    {
+      "id": "C15-P03",
+      "sourceId": "PR19",
+      "title": "Carers UK / Carers Active",
+      "executor": "cuidador_para_si_com_opcoes_acompanhadas_distintas",
+      "setting": "casa",
+      "sourceFactsNotPrescription": {
+        "sessionName": "Mr Motivator",
+        "advertisedWorkoutMinutes": 12,
+        "allowBreaks": true,
+        "weekCount": null,
+        "weeklyFrequency": null,
+        "progression": null
+      },
+      "mediaPlaybackVerified": false,
+      "assetsApproved": 0,
+      "rights": "Termos limitam reproducao a uso pessoal nao comercial e sem alteracao; exigem consentimento para uso noutros sites.",
+      "decision": "Pode orientar pesquisa; nao copiar, traduzir, recortar ou incorporar os ativos no TrainForge por acesso gratuito."
+    },
+    {
+      "id": "C15-P04",
+      "sourceId": "PR20",
+      "title": "Martin et al., 2024",
+      "doi": "10.1016/j.jsampl.2024.100059",
+      "publicationType": "protocolo_de_estudo_sem_resultados_neste_artigo",
+      "executor": "sobreviventes_e_cuidadores_praticantes",
+      "setting": "casa_com_telehealth",
+      "sourceFactsNotPrescription": {
+        "interventionWeeks": 8,
+        "supervisedSessionsPerWeek": 2,
+        "unsupervisedPrescribedSessionsPerWeek": 2,
+        "supervisedSessionMinutes": [
+          45,
+          60
+        ],
+        "unsupervisedSessionMinutes": [
+          15,
+          30
+        ],
+        "individualizationRequired": true
+      },
+      "completeStandaloneExerciseManualCollected": false,
+      "supplementUrlObserved": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13008454/bin/mmc1.docx",
+      "supplementCollected": false,
+      "rights": "CC BY-NC-ND 4.0; nao autorizacao comercial/traducao do conjunto.",
+      "decision": "Referencia especifica adicional; nao protocolo autonomo universal, nem demonstracao de eficacia. Suplemento nao baixado: licenca/modo nao resolvem a oferta pretendida."
+    }
+  ],
+  "screenedNotSelected": [
+    {
+      "url": "https://www.revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753",
+      "doi": "10.21527/2176-7114.2026.51.16753",
+      "firstAuthor": "Nildete Pereira Gomes",
+      "title": "Manual educativo para reducao de dor musculoesqueletica em cuidadores domiciliares de pessoas idosas: estudo piloto de ensaio clinico randomizado",
+      "localBodyCollected": false,
+      "localAttemptRecord": "2026-10-03/n15c-cuidador-casa/n15c-unijui-manual-pagina.evidencia.json",
+      "observedInPrimarySearchResultOnly": true,
+      "reason": "Referencia diretamente relacionada ao cuidador praticante. Resumo da pagina indexada menciona autocuidado, orientacao postural e acompanhamento semanal por dois meses; nao prova manual obtido, instrucao completa, autonomia ou direitos. Coleta TLS falhou; sem contorno ou contacto a autores. Nao confundir treino postural para cuidar com rotina progressiva de condicionamento."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8762867/",
+      "localBodyCollected": false,
+      "reason": "Armed4Stroke: cuidador como treinador do assistido apos AVC; nao exercicio proprio. Triagem no leitor web, nao homologacao do artigo."
+    },
+    {
+      "url": "https://www.mdpi.com/2227-9032/12/2/166",
+      "localBodyCollected": false,
+      "reason": "Safe Functional Home Exercise: supervisao de pessoas com demencia pelos cuidadores; nao treino proprio destes."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11839872/",
+      "localBodyCollected": false,
+      "reason": "ReViEEW: cuidadores profissionais praticantes, mas intervencao supervisionada no contexto ocupacional; nao provar oferta domestica autonoma."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151160/",
+      "localBodyCollected": false,
+      "reason": "Madruga 2020: protocolo relacionado a PR17; leitor web apresentou verificacao de navegador. Nao contornar, nao repetir coleta nem alegar manual obtido."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6891121/",
+      "localBodyCollected": false,
+      "reason": "Sessao conjunta admite cuidador sozinho, mas exige health coach e usa roteiros diarios nao obtidos; referencia de triagem, nao programa completo selecionado."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13104-015-1523-z",
+      "localBodyCollected": false,
+      "reason": "Intervencao vinculada a doenca avancada/paliativa e cuidador convidado a participar; manual citado nao obtido, nao rotina universal do cuidador."
+    }
+  ],
+  "additionalCandidates": [
+    {
+      "id": "C15-P05",
+      "sourceId": "CI05",
+      "projection": "2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "decision": "Rotina amostral NIA melhora instrucao/dose e fornece progressao qualitativa para adultos mais velhos. Frequencia, ciclo, campo ausente e direitos dos ativos impedem selecao como pacote completo de N15-C. Nao misturar com dose das intervencoes PR17-PR20."
+    }
+  ],
+  "criteria": [
+    {
+      "id": "C15-C01",
+      "decision": "Cuidador e pessoa praticante; dados do assistido nao descrevem o seu treino."
+    },
+    {
+      "id": "C15-C02",
+      "decision": "Corpo do artigo completo nao e programa operacional completo; preservar dose e ausentes."
+    },
+    {
+      "id": "C15-C03",
+      "decision": "Retirar treinador, alterar publico ou encurtar sessao exige evidencia propria; nao e mera traducao."
+    },
+    {
+      "id": "C15-C04",
+      "decision": "Permissao de pausas vale no contexto da fonte; nao transplantar para outro estudo."
+    },
+    {
+      "id": "C15-C05",
+      "decision": "Acesso gratis nao autoriza uso comercial, traducao ou videos; separar licenca do artigo e de ativos."
+    },
+    {
+      "id": "C15-C06",
+      "decision": "Procurar uma alternativa com manual/sessoes completos e direitos compativeis; nao contornar restricoes ou contactar autores sem autorizacao."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "C15-S01",
+      "fictional": true,
+      "case": "Cuidador quer exercitar-se, nao orientar o assistido",
+      "expected": "Selecionar percurso pessoal; N14-C nao substitui programa."
+    },
+    {
+      "id": "C15-S02",
+      "fictional": true,
+      "case": "Aplicativo quer retirar treinador do estudo",
+      "expected": "Nao afirmar equivalencia autonoma do protocolo."
+    },
+    {
+      "id": "C15-S03",
+      "fictional": true,
+      "case": "Sessao interrompida apos poucos minutos",
+      "expected": "Preservar realizado/pausa; nao marcar dose completa nem inventar compensacao."
+    },
+    {
+      "id": "C15-S04",
+      "fictional": true,
+      "case": "Pagina anuncia 12 minutos",
+      "expected": "Nao afirmar duracao real, gestos ou legendas verificados sem playback."
+    },
+    {
+      "id": "C15-S05",
+      "fictional": true,
+      "case": "Video publico disponivel",
+      "expected": "Nao tratar como ativo comercial aprovado."
+    },
+    {
+      "id": "C15-S06",
+      "fictional": true,
+      "case": "Artigo tem calendario de oito semanas",
+      "expected": "Nao completar repeticoes e exercicios ausentes usando outro programa."
+    },
+    {
+      "id": "C15-S07",
+      "fictional": true,
+      "case": "Cuidador tambem e idoso",
+      "expected": "Conferir publico/elegibilidade e contexto sem prescricao por idade isolada."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "C15-G01",
+      "criterion": "Pessoa praticante explicitamente cuidador para si",
+      "met": true
+    },
+    {
+      "id": "C15-G02",
+      "criterion": "Ambiente domestico demonstrado",
+      "met": true
+    },
+    {
+      "id": "C15-G03",
+      "criterion": "Autoria, fonte e elegibilidade preservadas",
+      "met": true
+    },
+    {
+      "id": "C15-G04",
+      "criterion": "Dose de pelo menos uma intervencao publicada",
+      "met": true
+    },
+    {
+      "id": "C15-G05",
+      "criterion": "Programa operacional completo com instrucao por exercicio",
+      "met": false
+    },
+    {
+      "id": "C15-G06",
+      "criterion": "Progressao executavel publicada, sem completar ausentes",
+      "met": false
+    },
+    {
+      "id": "C15-G07",
+      "criterion": "Modo autonomo ou supervisao disponivel compativeis com oferta proposta",
+      "met": false
+    },
+    {
+      "id": "C15-G08",
+      "criterion": "Direitos do conjunto selecionado compativeis com incorporacao comercial gratuita",
+      "met": false
+    }
+  ],
+  "limits": [
+    "Onze coletas nesta rodada: sete paginas e dois PDFs HTTP 200, uma politica HTTP 403 e uma falha TLS sem corpo preservadas. Videos/suplementos nao recebidos ou reproduzidos.",
+    "Rotina amostral NIA com 13 exercicios e progressao qualitativa; nao calendario semanal/ciclo nem pacote de ativos licenciado para toda a categoria de cuidadores.",
+    "Nenhum programa autonomo completo/licenciado selecionado nesta rodada; N15-C continua aberto.",
+    "Exercicio da pessoa assistida e treino proprio nao sao equivalentes; HOMeCARE nao foi contado como treino fisico proprio do cuidador.",
+    "Sem testes de pessoas/app, traducao final pt-PT, prescricao, dados privados, contacto externo, parceria, custos ou implementacao.",
+    "Artigos humanos nao demonstram seguranca ou eficacia do TrainForge. Nenhum beneficio clinico foi atribuido ao aplicativo.",
+    "A falha 403 do leitor web no ScienceDirect foi respeitada; foi consultado o deposito publico licito do artigo no PMC, sem pagamento, login ou contorno de protecao."
+  ]
+}

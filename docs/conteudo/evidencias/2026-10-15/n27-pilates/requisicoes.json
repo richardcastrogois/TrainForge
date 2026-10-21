@@ -1,0 +1,25 @@
+{
+  "requests": [
+    {
+      "id": "n27-home2023-pdf",
+      "url": "https://journals.aiac.org.au/index.php/IJKSS/article/download/7959/5217",
+      "purpose": "Artigo primário CC BY: programa humano doméstico, dose/tabela/comandos/preparo/suporte e limites, não efeito garantido do estudo piloto",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n27-pereira2024-jats",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10815589/fullTextXML",
+      "purpose": "Protocolo português de Pilates/aparelhos POLESTAR e tabelas; fonte pública EPMC, não acessar desafioPMC; protocolo não resultados",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n27-oldermen2024-pdf",
+      "url": "https://www.balticsportscience.com/cgi/viewcontent.cgi?article=1829&context=journal",
+      "purpose": "Original com idosos homens eAppendixA; confirmarCCBYNCND e não selecionar expressão/tabela para uso comercial",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

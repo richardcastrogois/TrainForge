@@ -1,0 +1,24 @@
+{
+  "id": "c15-teleyoga2024-protocolo-pdf",
+  "url": "https://cdn.clinicaltrials.gov/large-docs/40/NCT04512040/Prot_SAP_ICF_000.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T21:47:34.951450+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo/SAP/consentimento publicado02/02/2023 e upload11/04/2023,335271bytes anunciados. Conferir edicao, roteiro/apoio/seguranca, nao usar consentimento como licenca do workbook ou video.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/40/NCT04512040/Prot_SAP_ICF_000.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 335271,
+  "bodyFile": "../raw/c15-teleyoga2024-protocolo-pdf.pdf",
+  "sha256": "23e2047075e4f17b3ec5817582c97e6dafaf7ea902f6c34a8f4548cb45545cb1",
+  "bodyFormatMatchesRequest": true
+}

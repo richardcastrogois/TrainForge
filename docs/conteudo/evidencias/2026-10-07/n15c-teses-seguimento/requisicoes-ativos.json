@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-07",
+  "scope":"Materiais anunciados nas fontes primarias recebidas e depositoUCSFpublico independente. JSeditorial lido como texto de transporte, nunca executado, nao evidencia clinica ou dependencia doAPK. Sem videos, contatos ou retries.",
+  "requests":[
+    {"id":"c15-va-walking-workbook-pdf","url":"https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf","accept":"application/pdf","extension":"pdf","purpose":"Workbook do participante publicado na pagina oficial, obter execucao/preparo/limites e conferir separado do modulo cuidador, nao eficacia emprestada de outro ensaio."},
+    {"id":"c15-va-walking-mindful-pdf","url":"https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf","accept":"application/pdf","extension":"pdf","purpose":"Guia complementar explicitamente anunciado: distinguir sugestoes profissionais de ensaio do pacote; direitos/terceiros e instrucoes source-bound."},
+    {"id":"c15-va-walking-caregiver-pdf","url":"https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf","accept":"application/pdf","extension":"pdf","purpose":"Guia cuidador anunciado: confirmar quem pratica, suporte do cuidado e tempo/condicoes escolhidos pelos autores, nao paciente assistido renomeado como treino proprio."},
+    {"id":"c15-hives2021-ucsf-pdf","url":"https://escholarship.org/content/qt8jp673mh/qt8jp673mh.pdf","accept":"application/pdf","extension":"pdf","purpose":"Deposito institucionalUCSF independente publicado no indice: primeiroPDF do ensaio cuidador aerobico, nao retry doXML500; verificar identidade/direitos/progressao real."},
+    {"id":"c15-crea-editorial-script-text","url":"https://www.frontiersin.org/ap-2024/_nuxt/CVwIsJ6C.js","extension":"txt","purpose":"Asset publico explicitamente vinculado noHTMLeditorial recebido, somente leitura textual da construcao de links dos quatro suplementos; nao executarJS, nao acessar tokens/sessao, teto2MiB."}
+  ]
+}

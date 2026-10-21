@@ -1,0 +1,24 @@
+{
+  "id": "c15-qigong-protocolo-pdf",
+  "url": "https://cdn.clinicaltrials.gov/large-docs/01/NCT04019301/Prot_SAP_000.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:10:23.405196+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo21p identificado por linkprimario: pacote operacional/cointervencao/elegibilidade/resultados/versoes. Nao manual do controle automaticamente licenciado.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/01/NCT04019301/Prot_SAP_000.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 447618,
+  "bodyFile": "../raw/c15-qigong-protocolo-pdf.pdf",
+  "sha256": "f0a6c2b7a0b360b7f4a9b318873cce511957eeaf4cd0fb04651e760b82f19e01",
+  "bodyFormatMatchesRequest": true
+}

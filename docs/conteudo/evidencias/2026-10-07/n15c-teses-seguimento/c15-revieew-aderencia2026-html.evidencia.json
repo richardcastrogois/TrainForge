@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-aderencia2026-html",
+  "url": "https://link.springer.com/article/10.1007/s10926-026-10449-w",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:29:36.034073+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Analise de aderencia do cuidador formal: turnos, recursos psicossociais e experiencia previa; verificar se publica material operacional adicional e direitos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1007/s10926-026-10449-w?error=cookies_not_supported&code=5e1b46ca-3cfa-4255-96d0-7e30dfcee835",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 460509,
+  "bodyFile": "../raw/c15-revieew-aderencia2026-html.html",
+  "sha256": "f160c6e2ad89cace12847c2c76d324a50a1dd94f9ba2b951dd67f16a51da0c07"
+}

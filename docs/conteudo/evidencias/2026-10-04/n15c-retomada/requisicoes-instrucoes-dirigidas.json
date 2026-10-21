@@ -1,0 +1,9 @@
+{
+ "date":"2026-10-04", "niche":"N15-C",
+ "requests":[
+  {"id":"c15-prieto-protocolo-deposito","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7151160/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Deposito OA legitimo do protocolo referenciado por Prieto; nao repetir desafio da origem PMC."},
+  {"id":"c15-dupla-cancer-anexo","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/supplementaryFiles","accept":"application/zip","extension":"zip","purpose":"Inspecionar anexo observado no XML da dupla de cancer; confirmar se instrucao ou somente dados."},
+  {"id":"c15-busca-pessoal-titulo","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Acaregiver%20OR%20TITLE_ABS%3Acarers%29%20AND%20%28TITLE_ABS%3Aexercise%20OR%20TITLE_ABS%3A%22physical%20activity%22%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=100","extension":"json","purpose":"Busca com publico e exercicio no titulo/resumo e data limitada; evitar milhares de referencias em texto completo."},
+  {"id":"c15-busca-caminhada-titulo","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Acaregiver%20OR%20TITLE_ABS%3Acarer%29%20AND%20%28TITLE_ABS%3Awalking%20OR%20TITLE_ABS%3A%22home-based%22%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=100","extension":"json","purpose":"Procurar rotinas pessoais de caminhada ou treino domiciliar; nao presumir ambiente domestico ou eficacia por cuidador no titulo."}
+ ]
+}

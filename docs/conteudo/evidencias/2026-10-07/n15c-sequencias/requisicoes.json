@@ -1,0 +1,14 @@
+{
+  "date":"2026-10-07",
+  "scope":"Somente N15-C; sequencias originais de relaxamento/yoga do proprio cuidador, entrega, contexto e licenca.",
+  "requests":[
+    {"id":"c15-pouraboli2019-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6982664/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Deposito publico original licenciado CC BY3, ligado ao PubMed31653133: verificar sequencia Benson, autoria profissional, ensino, local da pratica e materiais externos; nao chamar folheto/CD de recebido nem generalizar a todos os cuidadores."},
+    {"id":"c15-umadevi2013-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3768217/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Deposito publico independente EuropePMC ligado ao PubMed24049204; verificar Appendix1 do modulo45min, credencial explicitada e direitos reais, sem automatizar desafio PMC ou executar conteudo."},
+    {"id":"c15-transfe2024-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11270366/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Deposito original do TRANSFE DOI10.3390/nursrep14030118; separar autoalongamento do cuidador de transferencias do paciente, verificar autoria, anexos/checklist publicados e desenho antes-depois; nao inferir rotina pelo titulo."},
+    {"id":"c15-transfe-osf-metadados","url":"https://api.osf.io/v2/nodes/k7wte/","extension":"json","purpose":"API publica do registro OSF explicitamente citado no artigo; identidade/licenca do projeto, sem login, alteracao ou dados privados."},
+    {"id":"c15-transfe-osf-arquivos","url":"https://api.osf.io/v2/nodes/k7wte/files/osfstorage/","extension":"json","purpose":"Listagem publica de arquivos do registro, nao download de11.1MB inteiro; distinguir slide/checklist/manual de artigo/dados privados."},
+    {"id":"c15-transfe-tese-metadados","url":"https://repositori.uji.es/items/59073f7b-751e-4037-8ee9-7d49a7f5b14d","extension":"html","purpose":"Registro institucional original da tese TRANSFE2019 observada em busca, verificar links publicados e direitos; nao corpo recebido por resumo indexado."},
+    {"id":"c15-usc-cuidate-capitulo-metadados","url":"https://libros.usc.edu.co/index.php/usc/en/catalog/book/201/chapter/811","extension":"html","purpose":"Capitulo profissional Cuidando al cuidador2020, pagina primaria indexa CC BY4; verificar PDF publicado e se instrucao domiciliar pertinente realmente existe, sem trocar pelo livro ISBN espanhol."},
+    {"id":"c15-transfe-osf-protocolo-pdf","url":"https://osf.io/download/4efka/","accept":"application/pdf","extension":"pdf","expectedBytes":11057370,"purpose":"Protocolo-2.pdf, unico arquivo publico listado pela API OSF, versao1 publicada2024-06-20. PDF sem teto de bytes autorizado; conferir hash anunciado e conteudo/anexos/licenca proprios. node_license null nao concessao BY4 herdada do artigo."}
+  ]
+}

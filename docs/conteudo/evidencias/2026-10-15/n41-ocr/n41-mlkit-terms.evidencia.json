@@ -1,0 +1,23 @@
+{
+  "id": "n41-mlkit-terms",
+  "url": "https://developers.google.com/ml-kit/terms",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:44:51.702937+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Termos públicos atuais: processamento on-device e métricas distintas, nenhuma permissão de extrair modelo/SDK. Revalidar seleção específica N41, sem aceitar contrato/usar SDK.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developers.google.com/ml-kit/terms",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 87053,
+  "bodyFile": "../raw/n41-mlkit-terms.html",
+  "sha256": "dac21a8ebce61718e8838a3dead68eea18d420e3c4c09c5794c979a7d568c14e"
+}

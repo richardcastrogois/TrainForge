@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "requests": [
+    {
+      "id": "c15-cbt-editora",
+      "url": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+      "extension": "html",
+      "purpose": "Editora primaria: autoria, DOI, licenca e errata do manual2024; nao confundir psicoterapia profissional com treino autonomo."
+    },
+    {
+      "id": "c15-cbt-livro",
+      "url": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Livro integral no site do coautor: capitulo de cuidadores e roteiros, dosagem, progressao, supervisao e exclusoes da licenca. PDF sem teto autorizado, TLS padrao, sem retries."
+    }
+  ]
+}

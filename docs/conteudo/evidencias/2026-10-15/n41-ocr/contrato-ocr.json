@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-15",
+  "niche": "N41",
+  "scope": "OCR como transcrição candidata e campos/unidades confirmados, não medida física ou registro automático.",
+  "candidateAndroid": "ML Kit Text Recognition v2, Latin, bundled16.0.1 ou PlayServices19.0.1 na página recebida; corpo exige minSDK23 contra21 no resumo automático, usar corpo/revalidar versão da implementação.",
+  "androidStatus": "Não instalado/executado. Cerca4MB por script/arquitetura bundled ou260KB wrapper unbundled e download inicial; não são medições do TrainForge.",
+  "privacy": "Página Terms de14/05/2025 informa processamento de entrada/saída no dispositivo e envio de métricas de uso/desempenho/atualizações. On-device não significa ausência de contatos de rede. Termos do SDK não licenciam conteúdo de terceiros nem extração do modelo.",
+  "actualTest": "Windows.Media.Ocr pré-instalado, idioma pt-BR; PowerShell7não resolve projeção WinRT, PowerShell5.1 existente funcionou sem instalar nada. Três imagens sintéticas próprias, não rótulos/visores reais nem validação pt-PT.",
+  "recordFields": [
+    "rawRecognizedText",
+    "textRegionIfAvailable",
+    "engineVersion",
+    "equipmentManufacturerModelConsoleIfApplicable",
+    "fieldName",
+    "rawValue",
+    "parsedCandidateOrUnknown",
+    "unitExplicit",
+    "basisPer100gOrPortion",
+    "mealOrTrainingPersonId",
+    "reporterId",
+    "confirmationOrCorrection",
+    "originTimeAndSessionOrCumulative"
+  ],
+  "rules": [
+    "Sem valor/unidade/campo, manter desconhecido; não corrigir O/0/1/l, unidade ou número automaticamente.",
+    "Valor não lido não é0. Nunca estimar carga/calorias/repetições porque o aparelho é parecido.",
+    "Quilómetro e milha são selecionáveis no RUN100; não assumir a unidade por país. Dados de manutenção/acumulados não são automaticamente a sessão.",
+    "LifeFitnessAtmosSE4 diferencia resistência level e alvo de potência. Campo weight de configuração refere-se ao usuário, não carga levantada.",
+    "OCR de rótulo não prova alimento realmente consumido ou composição por idade;100g e porção ficam separados.",
+    "Imagem de visor pode conter reflexos, sete segmentos, movimento e modo alternado; nenhum desses casos foi validado pelo ensaio de texto impresso.",
+    "Confirmação acessível e alternativa manual antecedem registro; confiança do motor não é calibração do parser."
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "aplicavel_com_limites",
+      "finding": "Rótulo/visor opcional; base100g e porção separadas, vírgula e kcal/kJ preservados. Ajudar a usar câmera não é assistência física ou validação nutricional."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "aplicavel_com_limites",
+      "finding": "Identificar fabricante/modelo/console/unidade e campo. Peso digitado do usuário, resistência level ekg de carga são conceitos diferentes; contador acumulado não é esta sessão."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "condicional",
+      "finding": "Equipamento pode não ter visor ou dados. Sem visor não se aplicaOCRàmáquina; registro manual/desconhecido, sem inventar carga/calorias/repetições. Não concluir que todos os equipamentos de praça são iguais."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "aplicavel_com_limites",
+      "finding": "Rótulo ou visor do próprio cuidador mantém pessoa explícita. Ao registrar para assistido, separar autor/observado; não extrair terceiros, fotos inteiras ou dados pessoais desnecessários."
+    }
+  ],
+  "actualWindowsTest": "resultado-windows-ocr.json",
+  "parserTest": "verificacoes-parser.json",
+  "cleanup": "limpeza-ensaio.json",
+  "appImplemented": false,
+  "androidTested": false,
+  "releaseApproved": false
+}

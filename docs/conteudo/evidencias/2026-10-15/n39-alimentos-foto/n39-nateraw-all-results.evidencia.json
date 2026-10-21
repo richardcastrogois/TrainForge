@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-all-results",
+  "url": "https://huggingface.co/nateraw/food/resolve/8991abd49ea01ebf502aeda51d4f12a59c603e01/all_results.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T23:59:34.803943+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir se há tamanho de amostra, perda e velocidade publicados. Resultado do autor não é validação independente ou portuguesa.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/nateraw/food/8991abd49ea01ebf502aeda51d4f12a59c603e01/all_results.json?%2Fnateraw%2Ffood%2Fresolve%2F8991abd49ea01ebf502aeda51d4f12a59c603e01%2Fall_results.json=&etag=%22121ed7c7725e17db966d3148509a2bcc293f819e%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 353,
+  "bodyFile": "../raw/n39-nateraw-all-results.json",
+  "sha256": "f50af4b97d626fe8bf639e6d374bea790fff5deb19bb3f6359dcf6dddd30c930"
+}

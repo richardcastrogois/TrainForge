@@ -1,0 +1,23 @@
+{
+  "id": "c15-tcqg-grupo2020-suplementos-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:40:31.625415+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Curriculo originalpublicamente anunciado SupplementA TaiChiPDF155.5KB, conferir archive limites/hashmember/conteudo sem executar ou imagens presumidas vistas.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 626785,
+  "bodyFile": "../raw/c15-tcqg-grupo2020-suplementos-zip.zip",
+  "sha256": "8ef03e08cf05bf9e71c7a4d158f07196de186c61ba8f589586f7f3356ce4a2ca"
+}

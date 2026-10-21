@@ -1,0 +1,23 @@
+{
+  "id": "c15-transfe-tese-metadados",
+  "url": "https://repositori.uji.es/items/59073f7b-751e-4037-8ee9-7d49a7f5b14d",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:36:39.464512+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro institucional original da tese TRANSFE2019 observada em busca, verificar links publicados e direitos; nao corpo recebido por resumo indexado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositori.uji.es/items/59073f7b-751e-4037-8ee9-7d49a7f5b14d",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 724,
+  "bodyFile": "../raw/c15-transfe-tese-metadados.html",
+  "sha256": "94a620485bdf2d5816997839fadb8d979cce35d251770334d60e064c29dc50c3"
+}

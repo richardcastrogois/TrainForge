@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-12",
+  "component": "CG-02-BENSON",
+  "scope": "Leads de pesquisa e leituras web separados dos recibos HTTP e dos corpos clinicos ja recebidos. Nenhum lead vira material de treino por titulo ou snippet.",
+  "searches": [
+    {
+      "query": "Benson Henry Institute relaxation response elicitation instructions comfortable feet face one under breath PDF",
+      "selectedForComparisonReceipt": "cg02-ilm-bhi2009-pdf.evidencia.json",
+      "notSelectedForApkProtocol": true,
+      "reason": "Guia generico9etapas/dose/encerramento diferentes; nenhum comando transferido aoPR61"
+    },
+    {
+      "query": "Imanian Ramezanli Benson pamphlet supplementary",
+      "originalTeachingAssetIdentifiedInReturnedResults": false,
+      "absenceEverywhereProven": false,
+      "knownCaregiverArticleNotRecaptured": true
+    },
+    {
+      "query": "site.nccih.nih.gov relaxation techniques anxiety trauma safety",
+      "primaryLeads": [
+        "https://www.nccih.nih.gov/health/providers/digest/mind-and-body-approaches-for-stress-science",
+        "https://www.nccih.nih.gov/health/stress",
+        "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+      ],
+      "selectedReceipt": "cg02-nccih-relaxamento-html.evidencia.json",
+      "role": "Precaucoes gerais, nao Benson especifico/cuidadorRCT/CD"
+    },
+    {
+      "query": "site.massgeneral.org Benson relaxation response instruction practice safety",
+      "primaryLeads": [
+        "https://www.massgeneral.org/assets/MGH/pdf/community-health/cchi/stay-in-shape/sis-curriculum-2019-2020.pdf",
+        "https://www.massgeneral.org/assets/mgh/pdf/orthopaedics/patient-guides/orthopaedics-pain-guide.pdf"
+      ],
+      "selected": false,
+      "reason": "Outros programas, nao material originalPR61; nenhumGET local ou transferencia de tecnica/dose."
+    },
+    {
+      "query": "\"10.17533/udea.iee.v40n3e06\" \"supplement\"",
+      "originalTeachingAssetIdentifiedInReturnedResults": false,
+      "absenceEverywhereProven": false
+    },
+    {
+      "query": "\"Imanian\" \"Ramezanli\" \"Benson\" \"CD\" pamphlet",
+      "primaryResult": "https://revistas.udea.edu.co/public/journals/recursos_html/iee-Html/iee-v40n3/2216-0280-iee-40-03-e06.html",
+      "alreadyReceivedHtmlNotRecaptured": true,
+      "trialCdOrPamphletLocated": false,
+      "secondaryThesisLead": "https://comum.rcaap.pt/bitstreams/66b43c63-8813-4ebb-82d0-25409ea870ba/download",
+      "secondaryLeadNotCollectedOrUsedAsOriginalMaterial": true
+    },
+    {
+      "query": "\"Effect of Benson Relaxation Response on Stress\" \"Elali\" 2012",
+      "primaryArticleReference": "PR61 bibliography23, Elali2012 hemodialysisPATIENTS22(91):61-68",
+      "indexedSecondaryResults": "Scispace/Magiran/EBSCO, not primary full body",
+      "clinicalResultTransferredFromPatientToCaregiver": false,
+      "originalCaregiverTeachingAssetsReceived": false
+    }
+  ],
+  "publisherLinkedRepresentations": [
+    {
+      "url": "https://bensonhenryinstitute.org/guided-relaxation-exercises/",
+      "webObservation": "Timeout fetching, nenhum corpo local ouretry",
+      "indexedLeadIsOriginalPr61TeachingCd": false,
+      "countsAsUsablePrimaryBody": false
+    },
+    {
+      "url": "https://www.instituteoflifestylemedicine.org/ilm/wp-content/uploads/2015/04/ElicitingTheRelaxationResponse.pdf",
+      "newReceipt": "cg02-ilm-bhi2009-pdf.evidencia.json",
+      "role": "Comparacao profissional generica, nao fonte dospassos/dosePR61",
+      "pdfPagesActuallyViewed": [1,2]
+    },
+    {
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819/20812292",
+      "labelInExistingPublisherBody": "Video",
+      "resolvedObserved": "https://www.youtube.com/watch?v=MDEM7dwXvqw",
+      "browserRecord": "leitura-complementar.json#/publisherVideoReview",
+      "nativeTranscriptAudit": "inventario.json#/browserTranscript",
+      "trialCdIdentityVerified": false
+    },
+    {
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819/20812293",
+      "labelInExistingPublisherBody": "PMC",
+      "webObservation": "Failed cache miss; no body/retry",
+      "countsAsUsablePrimaryBody": false
+    },
+    {
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+      "discoveredFrom": "citation_pdf_url in publisher body already received05/10",
+      "newReceipt": "cg02-benson-artigo-pdf.evidencia.json",
+      "purpose": "Conferir entrega/anexos, nao repetirHTML para contexto"
+    }
+  ],
+  "noSecondaryBlogProxySocialCopyAsEvidence": true,
+  "noContactLoginPurchaseMediaDownloadOrTlsBypass": true,
+  "allInternetVisitsCountedAsCollectorCalls": false,
+  "collectorCallsThisComponentFolder": 3,
+  "newCollectorCallsThisClosureIncrement": 1,
+  "n21Started": false
+}

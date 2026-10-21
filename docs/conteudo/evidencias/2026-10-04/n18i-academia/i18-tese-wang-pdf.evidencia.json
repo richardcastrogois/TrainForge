@@ -1,0 +1,22 @@
+{
+  "id": "i18-tese-wang-pdf",
+  "url": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/7aa30a66-f2dc-4bb5-8304-85473d1c18a4/content",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:49:59.398694+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receber tese de Ellen Wang (metadados 1452353 bytes) e examinar se manuais listados sao anexos incorporados; preservar autoria/licenca e variante remota.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/7aa30a66-f2dc-4bb5-8304-85473d1c18a4/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1452353,
+  "bodyFile": "../raw/i18-tese-wang-pdf.pdf",
+  "sha256": "2c88e6d09a24c5c41c5bd81fabaacc881373855e6018049490fd284898ac3193"
+}

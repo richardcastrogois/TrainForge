@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-14",
+  "timezone": "America/Sao_Paulo",
+  "evidenceKind": "sanitized_summary_of_current_tool_outputs_not_original_download_receipts",
+  "windows": {"caption": "Microsoft Windows 11 Home Single Language", "build": "26200", "architecture": "64-bit"},
+  "cpu": {"model": "13th Gen Intel(R) Core(TM) i7-13650HX", "cores": 14, "logicalProcessors": 20},
+  "ramGiB": {"total": 31.7, "availableAtCimRead": 7.7},
+  "storage": {"drive": "C:", "freeGiBAtCimRead": 2.6, "freeGiBAtLaterRead": 2.35, "avdCreationBlockedBySpace": true, "proposedConservativeFreeGiBGate": 12},
+  "virtualization": {"hypervisorPresent": true, "cimCpuFlags": false, "emulatorAccelCheckCode": 0, "emulatorAccelCheckMessage": "WHPX(10.0.26200) is installed and usable.", "windowsOptionalFeatureQuery": "administrative elevation required; no state returned", "changesApplied": false},
+  "activeRuntime": {"node": "24.14.0", "npm": "11.5.2", "nodePath": "C:/nvm4w/nodejs/node.exe", "java": "23.0.2", "javac": "23.0.2", "jdkPath": "C:/Program Files/Java/jdk-23", "jdkCompilerModuleConfirmed": false},
+  "android": {
+    "sdk": "C:/Users/richa/AppData/Local/Android/Sdk",
+    "adbPath": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+    "adb": "1.0.41",
+    "platformTools": "35.0.2-12147458",
+    "emulatorPath": "C:/Users/richa/AppData/Local/Android/Sdk/emulator/emulator.exe",
+    "emulator": "35.3.11.0",
+    "commandLineToolsFound": false,
+    "avdsEnumerated": [],
+    "systemImages": [
+      {"api": 33, "tag": "google_apis_playstore", "abi": "x86_64", "revision": 9},
+      {"api": 34, "tag": "google_apis_playstore", "abi": "x86_64", "revision": 14},
+      {"api": 35, "tag": "google_apis_playstore", "abi": "x86_64", "revision": 9}
+    ],
+    "systemImagePresenceOnly": true,
+    "devicesQueried": false,
+    "bootTested": false,
+    "screenObserved": false
+  },
+  "rea": {
+    "agentClient": "codex",
+    "toolsExposedInThisSession": 0,
+    "registrationFoundInConfigChecked": false,
+    "skillFoundInCandidatePersonalRoots": false,
+    "publishedVersion": "6.5.0",
+    "nodeEngines": "^22.19.0 || ^24.11.0 || >=26.0.0",
+    "mainPackageUnpackedBytes": 25564765,
+    "optionalFridaDependency": "17.23.2",
+    "proposedOmitOptionalDependencies": true,
+    "downloadExecuted": false,
+    "setupDryRunExecuted": false,
+    "doctorExecuted": false,
+    "liveMcpValidated": false
+  },
+  "befit": {"package": "app.befit", "officialDistribution": "https://play.google.com/store/apps/details?id=app.befit", "apkReceived": false, "appExecuted": false, "externalContentProviderConfirmed": false, "videosReceived": 0, "completeProgramsReceived": 0, "contactSent": false},
+  "preservedResearch": {"N15C": "partial", "N21": "retained", "activeItem": "CG-02", "pendingSourceQuestions": 8},
+  "mutationsThisStage": ["new documentation report", "new sanitized environment summary"],
+  "installationApproval": "pending"
+}

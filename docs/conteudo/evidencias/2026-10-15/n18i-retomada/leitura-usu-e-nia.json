@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-16",
+  "niche": "N18-I",
+  "sourceIds": [
+    "PR167",
+    "CI05",
+    "PR244"
+  ],
+  "researchMethod": "Leitura de corpos primarios e cotejo por campo; nao novo treino escrito por IA nem aprovacao de exercicio pessoal.",
+  "usu": {
+    "receipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+    "sameBodyReceiptThisRound": "n18r-usu-seal1997-manual.evidencia.json",
+    "sha256": "f80847e912d53f07d5480a080d4348fc07cac2aedbd75095177e00fdac12ca40",
+    "pages": 306,
+    "edition": "August1997",
+    "pagesTextReviewed": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      118,
+      120,
+      121,
+      122,
+      127,
+      128,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306
+    ],
+    "pagesActuallyViewed": [
+      2,
+      7,
+      8,
+      290,
+      291,
+      292,
+      293,
+      294,
+      297,
+      298
+    ],
+    "readingLimit": "Leitura seletiva; nao todas as306paginas. Figuras vistas para distinguir variantes; nenhuma selecionada para copia.",
+    "authorship": {
+      "institution": "Uniformed Services University of the Health Sciences / Department of Military and Emergency Medicine",
+      "strengthChapterAuthor": "Patricia A. Deuster, PhD, MPH; MA em Physical Education; autora expressamente vinculada a Strength Training e editora (PDF7).",
+      "appendixAuthor": "Denise E. Becker, USNR; BS Occupational Education; mestrado em Exercise Physiology ainda em curso em1997, nao titulo concluido (PDF8).",
+      "accountability": "Equipe institucional com fisiologia/medicina e editora profissional vinculada; nao atribuir a Deuster autoria individual do AppendixA."
+    },
+    "rightsReceipt": "../n25-natacao/n25-usu-legal.evidencia.json",
+    "rights": "Aviso institucional permite distribuir/copiar informacao salvo aviso, com credito. Caminho para selecao factual textual independente; nao grant de toda expressao/ativo de terceiros.",
+    "thirdPartyException": "PDF298/impressa274: desenhos adaptados de Strength Training for Sports, Applied Futuristics1994, mediante permissao de FredKoch. Excluidos todos os desenhos, layout, fotos, logos e edicoes comerciais.",
+    "excludedTechnicalItems": [
+      {
+        "item": "Triceps Pressdown/PDF297",
+        "reason": "Exige cotovelos travados; conflita com NIA44. Excluido, nao corrigido silenciosamente."
+      },
+      {
+        "item": "Behind the Neck Press/PDF294",
+        "reason": "Titulo, desenho e instrucoes nao delimitam uma unica variante; nao selecionar para idosos."
+      },
+      {
+        "item": "Leg Press/PDF290",
+        "reason": "Desenho supino/vertical; nao assumir sentado/horizontal/45graus nem usar como imagem DeAnza."
+      },
+      {
+        "item": "Stiff Legged Dead Lift/PDF290",
+        "reason": "Inconsistencias floor/bench/return e posicao do tronco; nao selecionar."
+      }
+    ],
+    "militaryDoseAdopted": false,
+    "militaryEligibilityTransferredToOlderAdults": false
+  },
+  "nia": {
+    "receipt": "../../2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json",
+    "sha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+    "edition": "NIH18-AG-4258/March2018",
+    "additionalTextPagesReviewed": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      32,
+      35,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      106,
+      108,
+      121,
+      124
+    ],
+    "keyCorrection": "PDF43/impressa41 admite expressamente equipamento de musculacao de fitness center/gym e inicio com peso leve; nao e uma fonte exclusivamente domiciliar. PDF106 oferece opcoes humanas de divisao superior/inferior ou corpo inteiro em dias alternados, sem sessao fixa obrigatoria.",
+    "professionalTeamEvidence": "PDF121, painel NIA de gerontologia, medicina, cinesiologia e ciencias do exercicio; mesmas pessoas/edicao ja verificadas, sem atribuir frases individuais.",
+    "policyUrl": "https://www.nia.nih.gov/about/policies",
+    "policyEvidence": "Fonte primaria indexada relida16/10, secao Reuse of NIA Information; nao novo GET/corpo/hash local. Texto reutilizavel salvo excecao; credito, identificar adaptacao/traducao, sem logo. Fotos/ilustracoes/videos excluidos.",
+    "bookCopyrightNoticeLocated": false
+  },
+  "duplicates": {
+    "unnecessaryGetAcknowledged": true,
+    "receipt": "n18r-usu-seal1997-manual.evidencia.json",
+    "originalReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+    "sameUrlAndSha256": true,
+    "newSourceFamily": false,
+    "reason": "O encadeamento identificou o AppendixA; o PDF ja estava recebido naN25. Foi recolhido antes de reconhecer a duplicata. Mantidos os recibos reais, sem contabilizar nova familia ou nova obra. Reusar original daqui em diante."
+  },
+  "webScreenedNotSelected": [
+    {
+      "source": "GUTFIT2026/PLOS10.1371/journal.pone.0343294",
+      "result": "Protocolo19+comT2DM, sem comandos completos das maquinas; nao resultado clinico nem rotina geriatrica geral."
+    },
+    {
+      "source": "JMIR2023/10.2196/41421",
+      "result": "Protocolo para pessoasmaisvelhascomHIV, dose e apoio presentes; sem guia integral de comandos ou suplemento instrucional localizado."
+    },
+    {
+      "source": "Sports2026/14/10/421",
+      "result": "Leitorweb429; sem GET adicional, outra rota ou adocao."
+    },
+    {
+      "source": "VBRT2026/PMC13222945",
+      "result": "LeitorwebreCAPTCHA; sem GET, mirror ou contorno. Indexacao nao manual recebido."
+    },
+    {
+      "source": "MIlkMAN2019/BMJOpene031048",
+      "result": "Leitorweb403; sem GET/rota alternativa/registro ou contato."
+    },
+    {
+      "source": "UNEB2025manualforcamuscular",
+      "result": "Indice primario declara venda proibida e distribuicao gratuita, alvo inclusive domiciliar; nao prova direito de adaptacao comercial ou resolve maquinas. Nao coletado."
+    }
+  ],
+  "newGetReceipts": [
+    "n18r-msp2025-primary-pdf.evidencia.json",
+    "n18r-usu-seal1997-manual.evidencia.json"
+  ],
+  "temporaryRendersDeleted": "limpeza-usu.json"
+}

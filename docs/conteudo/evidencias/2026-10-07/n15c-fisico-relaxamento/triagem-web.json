@@ -1,0 +1,31 @@
+{
+  "date":"2026-10-07",
+  "scope":"Somente N15-C",
+  "method":"Busca dirigida por artigos primarios, manuais profissionais, depositos institucionais e termos; nao revisao sistematica exaustiva.",
+  "webVisitsAreNotCollectorCalls":true,
+  "decisions":[
+    {"source":"Yoga2023/PR26, Qigong2021/PR32 e TaiChi2016/PR33","finding":"Novas buscas reencontraram originais ja registrados. Reutilizar leitura-yoga.json/leitura-novos-programas.json de04/10, nao coletar novamente. SuplementoPR26 recebido, mas contradicao/ativos/entrega permanecem; anexosPR32 de controle nao manualQigong; PR33 manual/video ausentes."},
+    {"source":"Madruga2021/PR17","url":"https://dehesa.unex.es/bitstream/10662/12329/4/TDUEX_2021_Madruga_Vicente.pdf","finding":"Tese221p agora recebida/hash, AnexoIV nao testing manual. Publica sessao e doses parciais; nomes de forca/fases incompletos, direitos da tese nao herdados do artigo. Livro especifico Cuidate cuidador referenciado; registroUSAL recebido, nao livro."},
+    {"source":"Madruga2023 tele-exercicio","url":"https://recyt.fecyt.es/index.php/JSHR/article/view/86294","finding":"Protocolo de supervisao sincrona via internet; pagina primaria CC BY-NC-SA4.0. Nao coletado local, nao grant comercial nem resultado clinico do protocolo."},
+    {"source":"USAL2025 infografia Schultz","url":"https://gredos.usal.es/handle/10366/166150","finding":"Registro primario explicita BY-NC-ND4, nao selecionado comercialmente. Infografia de autoria distinta do livro2016; sem coleta local/PDF ou licenca herdada."},
+    {"source":"LopezGil2025","url":"https://gredos.usal.es/bitstream/10366/166663/1/TFG_L%C3%B3pezGilI_Cu%C3%ADdateMientrasCuidas.pdf","finding":"Programa hibrido para cuidador de pessoa com paralisia cerebral identificado em indexacao primaria; leitor web falhou robots. Sem PDF local/analise/contorno, registro nao prova manual/licenca recebido."},
+    {"source":"IMAS Cuidate","url":"https://www.imasmallorca.net/wp-content/uploads/2023/12/cuidateProgramaFamiliaresCuidadores.pdf","finding":"Manual134p identificado no leitor web; concessao comercial nao estabelecida, nao original local/selecionado. Nao alegar ausencia de copyright por busca textual sem resultado."},
+    {"source":"FEDEMA2022","url":"https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/","finding":"Original236p e avisos legais recebidos. Programa proprio separado de paciente/transferencias; proibicao de reproducao/alteracao sem consentimento escrito, nao selecionado comercialmente."},
+    {"source":"AlzOC","url":"https://www.alzoc.org/4-relaxation-tips-for-caregivers-and-families-affected-by-alzheimers/","finding":"Link publicado ao PDF2p recebido. Termos web lidos, GET local500 preservado; disclaimer nao grant/licenca. Autor qualificado e ciclos ausentes."},
+    {"source":"Innes2012","url":"https://doi.org/10.1155/2012/927509","finding":"JATS integral por deposito publico EuropePMC recebido. PMC exibiu desafio no leitor web: nao tentado contorno; deposito normal distinto identificado por artigo original."},
+    {"source":"Sajadi2024","url":"https://link.springer.com/article/10.1186/s40001-024-01641-w","finding":"Corpo editorial web e deposito DNB PDF8p recebido. Roteiro muscular nao publicado; Figura1 fluxo do estudo, nao demonstracao de PMR."},
+    {"source":"Cardoso2024","url":"https://comum.rcaap.pt/entities/publication/2c46b872-94aa-442f-84c2-87c69987cc81","finding":"Registro e PDF119p lidos em texto web; ambos GET locais falharam TLS, screenshots web falharam. CC BY4 link primario, proposta ainda a avaliar, nao corpo local/hash nem ensaio desta combinacao."},
+    {"source":"VA workbook completo","url":"https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf","finding":"Busca primaria ainda indexa renuncia mundial/comercial do livro integral, mas URL previamente404. Nao repetir coleta, transferir declaracao ao moduloV3 ou usar espelhoScribd como original verificado."},
+    {"source":"CareFit","url":"https://pureportal.strath.ac.uk/en/publications/a-mobile-app-carefit-supporting-physical-activity-for-informal-ca/","finding":"Metadados institucionais e artigos ja corpusPR21. Nenhum video/manual operacional/licenca adicional encontrado nesta busca; nao recapturar artigos para inflar evidencia."},
+    {"source":"ReViEEW tese","url":"https://catalogo.sanchoelsabio.eus/Record/addi-10810-68569/Details?print=1","finding":"Metadados275p copyright2024, nao concessao comercial ou novos videos de casa; nao tentar URLPDF adivinhada novamente."},
+    {"source":"Pouraboli2019","url":"https://doi.org/10.31557/APJCP.2019.20.10.2903","finding":"Metodo primario indexado: ensino/checagem presenciais,20min2/dia4semanas; CD/folheto externos nao recebidos, nao sequencia PMR integral. Nao coletado localmente nem incorporado."},
+    {"source":"DREAM2026","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12897328/","finding":"Texto primario indexado anuncia manual/guias/videos e temas semanais, nao ativos instrucionais recebidos. Codesenvolvimento nao prova clinica de todo programa; nao selecionado."},
+    {"source":"Montero-Cuadrado2020","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7601365/","finding":"Metodo primario indexado situa programa de36sessoes em sala de fisioterapia de centros de saude, nao casa. Instrucoes detalhadas em documento externo; nao realocar para domicílio ou fabricar por tabela de fases."},
+    {"source":"INTENT Care","url":"http://pope.esenf.pt/intentcare/","finding":"Link publicado na tese; leitor web falhou. Nenhum corpo/manual/video recebido, nenhuma licenca ou autenticacao presumida."},
+    {"source":"WHO/OpenLearn/Chile/folhetos genericos e materiais para paciente","finding":"Nao selecionados por publicos/atores distintos, direitos nao comerciais, ou ausencia de pacote instrucional especifico; nao renomear rotina geral nem treino do paciente como exercicio pessoal do cuidador."}
+  ],
+  "globalNonexistenceOfEligibleProgrammeProven":false,
+  "authorContactOrCopyRequestMade":false,
+  "barriersBypassed":false,
+  "nextConcreteTargets":["roteiro domestico original com dose/seguranca/direitos completos, nao outro resumo","manualD MCM e seus ativos publicados","midias domesticas ReViEEW com licenca propria ou fonte substituta integral","versao final avaliada de Cuidar com movimento, nao preencher a proposta"]
+}

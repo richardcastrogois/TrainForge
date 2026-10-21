@@ -1,0 +1,23 @@
+{
+  "id": "n27-pereira2024-jats",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10815589/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:12:16.223952+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo português de Pilates/aparelhos POLESTAR e tabelas; fonte pública EPMC, não acessar desafioPMC; protocolo não resultados",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10815589/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 156148,
+  "bodyFile": "../raw/n27-pereira2024-jats.xml",
+  "sha256": "72e381310e2e452989340d0738187580c9e617197a1b9455c080a0e962e5cff4"
+}

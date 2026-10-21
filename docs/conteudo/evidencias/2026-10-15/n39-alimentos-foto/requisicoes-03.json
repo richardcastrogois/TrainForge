@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "n39-nateraw-eval-results",
+      "url": "https://huggingface.co/nateraw/food/resolve/8991abd49ea01ebf502aeda51d4f12a59c603e01/eval_results.json",
+      "purpose": "Resultados de avaliação publicados pelo mantenedor, na revisão já observada. Metadados públicos pequenos; não executar nem baixar pesos ou fotografias. Conferir tamanho de avaliação e métricas sem inferir confiança calibrada.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-nateraw-all-results",
+      "url": "https://huggingface.co/nateraw/food/resolve/8991abd49ea01ebf502aeda51d4f12a59c603e01/all_results.json",
+      "purpose": "Conferir se há tamanho de amostra, perda e velocidade publicados. Resultado do autor não é validação independente ou portuguesa.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-vit-legacy-preprocessor",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.8.1/src/transformers/models/vit/feature_extraction_vit.py",
+      "purpose": "Inspeção estática do pré-processador oficial Apache 2.0 da versão declarada no config do modelo; não instalar/executar código. Esclarecer resize, rescale e canais da entrada.",
+      "extension": "txt"
+    },
+    {
+      "id": "n39-transformers-image-utils",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.8.1/src/transformers/image_utils.py",
+      "purpose": "Dependência direta do pré-processador ViT, somente leitura estática para defaults de normalização e rescale. Código oficial Apache 2.0.",
+      "extension": "txt"
+    }
+  ]
+}

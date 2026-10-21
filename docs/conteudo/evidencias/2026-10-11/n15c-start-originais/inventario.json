@@ -1,0 +1,83 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 6,
+  "http200": 4,
+  "hashedBodies": 6,
+  "usableBodies": 3,
+  "receipts": [
+    {
+      "id": "c15-start2014-suplemento-ucl-pdf",
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-suplemento-ucl-pdf.evidencia.json",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/1458340/3/Supp.Appendix.pdf",
+      "status": 404,
+      "bytes": 18945,
+      "sha256": "c3611e4806cc1540a0338d393b6c27ab34a7e63c30af2380cad5ad7c335d1916",
+      "usableForReading": false,
+      "role": "http_error_not_article_or_manual"
+    },
+    {
+      "id": "c15-start2013-rct-xml",
+      "record": "2026-10-11/n15c-start-originais/c15-start2013-rct-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3808082/fullTextXML",
+      "status": 200,
+      "bytes": 118850,
+      "sha256": "de4b32455362ff20f2e5f9e6d1540ee6f1f64e47f9ecbfc0f01426fd0f8b9424",
+      "usableForReading": true,
+      "role": "original"
+    },
+    {
+      "id": "c15-start2014-nihr-direitos-html",
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-nihr-direitos-html.evidencia.json",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK262905/",
+      "status": 200,
+      "bytes": 21294,
+      "sha256": "86abfc462b773d4e8550b7aa74759820bddb5067107a3adf5e703082c2dbec15",
+      "usableForReading": false,
+      "role": "browser_challenge_not_rights_page"
+    },
+    {
+      "id": "c15-start-ucl-recursos-html",
+      "record": "2026-10-11/n15c-start-originais/c15-start-ucl-recursos-html.evidencia.json",
+      "url": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-resources",
+      "status": 403,
+      "bytes": 5978,
+      "sha256": "29ea2a0169d80881754691cff2c77228b50524da6fee3fa818d2238e7a1f9224",
+      "usableForReading": false,
+      "role": "http_error_not_article_or_manual"
+    },
+    {
+      "id": "c15-start2014-nihr-relatorio-pdf",
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-nihr-relatorio-pdf.evidencia.json",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+      "status": 200,
+      "bytes": 30102858,
+      "sha256": "0fd474c41671e4d26e89f25335a44ab7a80f9c4035dfd91deea2eb9ce0158e2b",
+      "usableForReading": true,
+      "role": "original"
+    },
+    {
+      "id": "c15-start2014-nihr-resumo-pdf",
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-nihr-resumo-pdf.evidencia.json",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002673",
+      "status": 200,
+      "bytes": 132124,
+      "sha256": "256e73410597a592b8a99b0fb96a024190deb89bd746c6591b67ca8a0274402b",
+      "usableForReading": true,
+      "role": "original"
+    }
+  ],
+  "pdfPages": 282,
+  "manualIncludedInReport": true,
+  "manualIsRaster": true,
+  "originalBmjSupplementIdentifiers": [
+    "livg009049.ww1_default.pdf",
+    "livg009049.ww2_default.pdf"
+  ],
+  "renderedPages": [],
+  "renderingIsVisualInspection": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

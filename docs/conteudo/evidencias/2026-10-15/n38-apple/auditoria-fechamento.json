@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-15",
+  "niche": "N38",
+  "researchClosed": true,
+  "scope": "Pesquisa de contrato Apple/HealthKit e comparação explícita de disponibilidade/pessoas/permissões/origem/contextos; semintegração nativaouequivalênciaAndroid.",
+  "selectedContent": "contrato-importacao.json",
+  "sourceEvidence": "fontes-e-limites.json",
+  "criteria": [
+    {
+      "criterion": "Tipos/permissões Apple",
+      "met": true,
+      "evidence": "Tipos/conceitos específicos,availability,grantdeescritanãoleitura eausênciaspreservados; textoindexadoe shellJSidentificados."
+    },
+    {
+      "criterion": "Pessoas/contextos",
+      "met": true,
+      "evidence": "Quatrocontextos eidentidadedosportadores; relógiodocuidadornãomedeassistido."
+    },
+    {
+      "criterion": "Sem equivalência automática ou métricas praça",
+      "met": true,
+      "evidence": "Comparaçãoexp lícita decontratos;semcarga/qu ilometragemporequipamentoparecido."
+    },
+    {
+      "criterion": "Limites/testes/direitos",
+      "met": true,
+      "evidence": "Leituratécnicapúblicanãoruntime; nenhumdispositivo/dadospessoaisacessados e nenhumgrantcopiademídia alegado."
+    }
+  ],
+  "remainingBeforePublication": [
+    "AmbienteApple/SDKalvo eponte/capability comdisponibilidade/assinaturasevalidadas emetapa autorizada",
+    "Permissõespor tipo ecompr e ensão,semtesteclínicopresumido",
+    "Amostrassintéticas de2fontes, syncid/versão,UUID/atualização/exclusão ecomparação dequerycrua/estatística",
+    "Energiaativa/repouso/unidades/fuso/semregistro/leituranegada eparcial",
+    "Privacidade/identidade/partilha e teste dedispositivoreal;simuladornãoprova sensorfisiológico"
+  ],
+  "nextNiche": "N39",
+  "releaseApproved": false,
+  "appImplemented": false
+}

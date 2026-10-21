@@ -1,0 +1,1101 @@
+{
+  "date": "2026-10-15",
+  "stage": "05-onboarding-gratuito",
+  "authorization": {
+    "termsAcceptedByUser": true,
+    "fictionalProfileAuthorized": true,
+    "contactBeFit": false,
+    "paymentAuthorized": false,
+    "trialAuthorized": false
+  },
+  "profile": {
+    "fictional": true,
+    "gender": "male",
+    "goal": "improve fitness",
+    "experience": "beginner",
+    "regularity": "inconsistent",
+    "setting": "bodyweight, no equipment",
+    "injuries": "none, fictitious",
+    "focus": "full body",
+    "age": 30,
+    "heightCm": 170,
+    "weightKg": 70,
+    "targetKg": 65,
+    "duration": "up to20min",
+    "creation": "own plan",
+    "renewal": "fixed",
+    "daysPerWeek": "summary displayed3, not explicitly chosen"
+  },
+  "rawEvidence": "../raw/rea-befit-05/rea-evidencias.json",
+  "freeAccessReached": true,
+  "accountCreated": false,
+  "paymentOrTrialStarted": false,
+  "workoutSaved": false,
+  "trainingSessionCompleted": false,
+  "appCodeChanged": false,
+  "figmaChanged": false,
+  "databaseChanged": false,
+  "externalContentProviderConfirmed": false,
+  "captures": [
+    {
+      "step": "01-current",
+      "evidenceId": "ev_39096dd03d83a56a7b4e91ec4dbbad1a5cf31bb4b58d2d0a30f374b3643696d2",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-01-current\\screen.png",
+      "bytes": 107882,
+      "sha256": "fff452e867679b2df3c93592736a2fc2390f963193a3c81a07ddf76e947c8d86",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "02-gender",
+      "action": "Male ficticio",
+      "evidenceId": "ev_ccef2e658aea2e6cbd24236218078528b94e22c29bdeaf68bdf8406f6cf4dfc0",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-02-gender\\screen.png",
+      "bytes": 596099,
+      "sha256": "f290d872906387c3769405ba09b512c4893a850828c1043d6bf976c6885d2de4",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "03-goal",
+      "action": "Improve Fitness",
+      "evidenceId": "ev_a96b43f595275eb77570556683bddb93d6a99e19eddd015a05e4ac51e063b7e8",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-03-goal\\screen.png",
+      "bytes": 135395,
+      "sha256": "632054bd7d96e4d5e500387ffc564bc2bf36f203cbe7d725bda3b09006f070d5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "04-experience",
+      "action": "Beginner",
+      "evidenceId": "ev_fec40ab665009593601c7d13299a5204834160968a08866bf1f18be7ec4d15bb",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-04-experience\\screen.png",
+      "bytes": 124990,
+      "sha256": "ccb4f7101f64d919d4eb51d1eb500d494c3bbdb077172ce76312b326e9f19d13",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "05-frequency",
+      "action": "Inconsistently",
+      "evidenceId": "ev_5f77ab95a5d23b60643eeec81188ba1fbfd73aef27332edf05d0221a8df15271",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-05-frequency\\screen.png",
+      "bytes": 152548,
+      "sha256": "ed6a905d67288f8dbf26d42ece2f0f49defb9e7d9b2aabf9deeb88b564f02455",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "06-setting",
+      "action": "Bodyweight, no equipment",
+      "evidenceId": "ev_82915d0d7d39583d543d882bf4bd98c2d24bba4fb38ab227f3ae6082049898a1",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-06-setting\\screen.png",
+      "bytes": 129919,
+      "sha256": "ab62e4c8ffc44e0136fb08acb445f9bc6d7635f770de2388557b455e40c12401",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "07-next",
+      "action": "Next",
+      "evidenceId": "ev_216d70d74bbbdead308b6f29c3893eda631906c1d9baf9b64d692466e215bb73",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-07-next\\screen.png",
+      "bytes": 133047,
+      "sha256": "b027049f02f7d43759919de4ecd85d57c5c4e4a9dcafb6cf4b45fe5e46780bb6",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "08-injuries",
+      "action": "No active injuries ficticio",
+      "evidenceId": "ev_4c159908c043afe03b4d7ef9281c17a40ef71777e5a6588f6c535f41152a7cbf",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-08-injuries\\screen.png",
+      "bytes": 209721,
+      "sha256": "8aec0dfe8a22cdbfb398f29771358d0d7babe533cca18b6bf9c989774fc0d459",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "09-focus",
+      "action": "Full Body; Next",
+      "evidenceId": "ev_0ed2653db13aacc7c6d8018fa67f9b1cc03adb751a31a1a4433cd0ebb6383a83",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-09-focus\\screen.png",
+      "bytes": 1381398,
+      "sha256": "5ad9989469d9c4c3f9ab5d79b0954e805c8a5a26f0629b0afef9e90976af8bf3",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "10-settled",
+      "evidenceId": "ev_fd87c058fefd2d338104615b07c58da95a33c015ccc490734ec460129e6e40dc",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-10-settled\\screen.png",
+      "bytes": 813750,
+      "sha256": "b938854be44beab1cff2a19c78954f8c5df2b6eed8a4e0b0bf375e062a26d2a4",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "11-testimonial",
+      "action": "Next",
+      "evidenceId": "ev_a7abde6a32c48700d4812ab0234824a557f7a80acacd508d493e192c27976637",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-11-testimonial\\screen.png",
+      "bytes": 84729,
+      "sha256": "c969202f10b29a7fffc4369883c9a69974a8d28c4d7b7af325d13e1934c735d7",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "12-age",
+      "action": "30 years ficticio(default)",
+      "evidenceId": "ev_9cee24e4cc25ef3477f2326e25cf39875d50c9cf2f30263d84b77d0f3b8a5e0d",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-12-age\\screen.png",
+      "bytes": 74240,
+      "sha256": "4ae603b5b0c3fff153659ccdc40d1763ecbfba21797054cba8511a9aacfb2ec3",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "13-height",
+      "action": "170cm ficticio(default)",
+      "evidenceId": "ev_f59d39f55d87ecf2f4be488512bd9c45fba3119005b9f634511c6f7ba4e01c89",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-13-height\\screen.png",
+      "bytes": 107810,
+      "sha256": "337eeed72da8664693be9f5e300348d8cbe333983d1c1ad922c2a4cf629f0389",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "14-weight",
+      "action": "70kg ficticio(default)",
+      "evidenceId": "ev_14a0211386418a402e9bc6bb79201328ec106e9e170c690d96d022e0f8f31e3f",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-14-weight\\screen.png",
+      "bytes": 114389,
+      "sha256": "0fa15a7e74d81f1414625639379572334645e11debc244fa961948293d9f6359",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "15-target-weight",
+      "action": "65kg ficticio(default)",
+      "evidenceId": "ev_4393fa466e4fa8dad391690fa53f5676036a8c3b5bf04baaee3bf6c8b572d5ce",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-15-target-weight\\screen.png",
+      "bytes": 193845,
+      "sha256": "8faed6a025889b22e8059fe71fa6391288d09217cf7f1f44d5d3a93bc67b0aaf",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "16-projection",
+      "action": "Next; previsao promocional nao validada",
+      "evidenceId": "ev_54f7e90328856c4f958546c3c887c59749ce15dbbdf3378abd68a86820127045",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-16-projection\\screen.png",
+      "bytes": 343676,
+      "sha256": "56ff06faa3f2053952c79d02155a288df15377ff0630d9f1dea2ae99476d8e6b",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "17-motivation",
+      "action": "Next",
+      "evidenceId": "ev_2bb4278b74c3f5254ea9212acac11d904a144aec14a6ec45c0bba799cdedb092",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-17-motivation\\screen.png",
+      "bytes": 132925,
+      "sha256": "b31f30749637cf522868a2bfbd8339e90cda0e269aece840144780be60e200e3",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "18-duration",
+      "action": "Quick up to20min",
+      "evidenceId": "ev_d1875e92b530dcabfd22dcec2a237c3af4276e9d7f19331e9243ef29408bb01c",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-18-duration\\screen.png",
+      "bytes": 151221,
+      "sha256": "e77ad40e1b39420cffed26647618dc47373166413c91b1fc510ef075e3d97170",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "19-own-plan",
+      "action": "Your Own Plan",
+      "evidenceId": "ev_48fbe0ce28db65a081fa2660d3122a6bdeba7020918d218bf10ff27824aa6960",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-19-own-plan\\screen.png",
+      "bytes": 168493,
+      "sha256": "93b727f0c6859e7356f30db65895e8e523054b863dcfa8dc132eb355061950d3",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "20-renewal",
+      "action": "Fixed",
+      "evidenceId": "ev_5b02e7e6cd21798630db701136d95649cd6d8680733247559ae8fba6e8b188d2",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-20-renewal\\screen.png",
+      "bytes": 574118,
+      "sha256": "533e9f7ba49da0fa32b7feca0ace7de792759364f76fad483455f2e63f856f47",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "21-promo",
+      "action": "Next",
+      "evidenceId": "ev_09165e1ca586c9e34eecd5dda1a19ae5b3b2b5c3c3d9955e51f6423588ac05e3",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-21-promo\\screen.png",
+      "bytes": 938205,
+      "sha256": "ef949ddfc40e45b8ea86beede30e5318baa8ad221ac07047bced98bdd6af7f2f",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "22-next",
+      "action": "Next",
+      "evidenceId": "ev_486077a0cc2e76455c23b0cef6bab254db89cdb20598c38026b0e871761e71f0",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-22-next\\screen.png",
+      "bytes": 1044489,
+      "sha256": "e4df3ae96211f8cbeb1f2cababdb4c9d97197164c09f73d66a24394059d0b6e0",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "23-next",
+      "action": "Next",
+      "evidenceId": "ev_6f390c9d7bce5d19163c670c8a9295b2072f2902abc63a7bc2c744110c390d5d",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-23-next\\screen.png",
+      "bytes": 916225,
+      "sha256": "16936cc6884d68861caa8cf033634c10048e5e7c4a46320825ffdd5a718e996a",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "24-next",
+      "action": "Next",
+      "evidenceId": "ev_769df5bbdda54c313ee6fe1ab9b99a0951fb3d75ea07e62152fe3b2a524b9afd",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-24-next\\screen.png",
+      "bytes": 219515,
+      "sha256": "1e1f3642a3379baf60962e8643b781655aca492104982b2ce2e48b4321740778",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "25-notifications",
+      "action": "Don't allow na tela apresentada",
+      "evidenceId": "ev_87ce5b98c7abcbc8aa10c88560a1c8872efa689a99c5ed39e8c22e8eff044a5f",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-25-notifications\\screen.png",
+      "bytes": 347163,
+      "sha256": "0d44cff18429fac35b5bddb1401cbd5da473efeee8c36d743140739b24104fa0",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "26-perks",
+      "action": "Next; parceiros comerciais nao fontes de treinos",
+      "evidenceId": "ev_395ba15359f02aa205250e33c962de64650a6d861c5038a765635fd9d4fb4de7",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-26-perks\\screen.png",
+      "bytes": 393142,
+      "sha256": "9103e3d8a1f2e4d2d7317afa3b1e26d404b410e3c57729fc48e60e340b9736d7",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "27-summary",
+      "action": "scroll resumo antes de Create My Plan",
+      "evidenceId": "ev_8f973abda844005fa5f965b13c74957809c640ec96888b5a31bb6d24816f84ee",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-27-summary\\screen.png",
+      "bytes": 384060,
+      "sha256": "3647c928e45cac7ebfb5531bd1d85140221d1bca7400141932c11cfec5bf0c3e",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "28-create",
+      "action": "Create My Plan sem preco/trial na tela anterior",
+      "evidenceId": "ev_c85ea9b5d99c279656e0b652de628b1060e586c0d064c53b62ead3ed78ff8a3a",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-28-create\\screen.png",
+      "bytes": 685452,
+      "sha256": "0583621f0413342c397c6e1c0b09adea32760b9cd43ad8a995eaff5dc731ce74",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "29-create-settled",
+      "evidenceId": "ev_39c5b214a769ae6428c02a458f32f9c9fff545491665eadd3698040f2fd02334",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-29-create-settled\\screen.png",
+      "bytes": 488640,
+      "sha256": "3d61fc2ded36f5aea5c5af42a24787674cd80b183c9ceac3518b93d5b77e998b",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "30-continue",
+      "action": "Continue da previa, sem contratacao",
+      "evidenceId": "ev_c2d51167e704b14ae53be95dfd4df10cbaabf1d5f929ae8b2b57129ec549dd92",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-30-continue\\screen.png",
+      "bytes": 780324,
+      "sha256": "c6466c2aa01090e285344399bb0efbc7c7ff4439dce08e9ed9d8daf7cc9262e1",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "31-close-offer",
+      "action": "X visivel da oferta; nao Continue/compra",
+      "evidenceId": "ev_7af59d5fdb8cc475dacf2074e6ce997436d2ef4f6d0e84ffb8a4ebf329e76789",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-31-close-offer\\screen.png",
+      "bytes": 1467214,
+      "sha256": "ad19ea24e812842d263eb48ca55771f825eb16ae1f1a0fbd0176797fde4618d0",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "32-close-discount",
+      "action": "X visivel da segunda oferta",
+      "evidenceId": "ev_6d814e7018f0ec32615d81edcd876516c89287a5befc7b667f755f63ff3dfb85",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-32-close-discount\\screen.png",
+      "bytes": 973720,
+      "sha256": "0d6ba4220829f9d9dc6b9b30a795d323eda7f02f911e96f5fa59f5007554adc7",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "33-free",
+      "action": "Continue for Free explicito; versao com anuncios",
+      "evidenceId": "ev_1bad676250fc6ec8b09d23585929eff05ede9964cc1553f6f47cd40c058bb770",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-33-free\\screen.png",
+      "bytes": 470980,
+      "sha256": "cc1b8a0078b3c049ded9e434285577ebfd5bba7b6ffc00ca901849594b62cb65",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "34-ad",
+      "action": "Got it do aviso Android de tela cheia; sem tocar anuncio",
+      "evidenceId": "ev_3504f31722e7c770d8fc5274bd8eb934de1b70804b8dfeb6dca7037fc3b0d92f",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-34-ad\\screen.png",
+      "bytes": 859402,
+      "sha256": "70b611da45bb13683a2e44821b7b84243c89067edb5915c8018786b9f8cd4161",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "35-ad-close",
+      "action": "X visivel do anuncio",
+      "evidenceId": "ev_d798f6d0da9b0de72f845248d07d2071ae943587b2b4b65d7fa2174757970f74",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-35-ad-close\\screen.png",
+      "bytes": 437823,
+      "sha256": "84c86078c09e8e4a4a915678a827f85fffba09723c43072050f692c1d2d80384",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "36-close-login",
+      "action": "X visivel do convite login, sem conta nova",
+      "evidenceId": "ev_ef797202ae37ff589965a4c418244004e2d745a8dadc5004053f2b150ef65567",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-36-close-login\\screen.png",
+      "bytes": 312024,
+      "sha256": "62e99019e8b7ec6944d414766e73f4038f0a4012a3c41bb23e46fd5ac39da9b5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "37-home",
+      "evidenceId": "ev_cda06b983a6e9592766f98b463d6501a0cdbb604c3004a08300a52dbf26f96b3",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-37-home\\screen.png",
+      "bytes": 237335,
+      "sha256": "6cab95b7028bc9c5787920b9131dd8d23680af9d86cc8cf4ec0629d7351bd9dd",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "38-skip-tour",
+      "action": "Skip Tutorial",
+      "evidenceId": "ev_30049399116f631798705871f2a5fb33a03c5f16bc648af60496ea123a81e86c",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-38-skip-tour\\screen.png",
+      "bytes": 174335,
+      "sha256": "dbaecd00423a4993c68590948f298d4a7aa070612ec997a597bb72b14443b78b",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "39-rating-dismiss",
+      "action": "Not Now, nenhuma avaliacao enviada",
+      "evidenceId": "ev_a984131713469b970be9729b74b97e6455fe9c674f68fc5e40d5aac31266cda9",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-39-rating-dismiss\\screen.png",
+      "bytes": 353090,
+      "sha256": "953e7715baf67876424d296f9757dd99187700490886d6fc6078c3b9a2240da5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "40-profile",
+      "action": "Profile",
+      "evidenceId": "ev_3f037834aa9c8ba34d98ebe31bcd47422d1067a6d7e8bbf46c5ea3218a207ee6",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-40-profile\\screen.png",
+      "bytes": 364677,
+      "sha256": "2b62cae58469d505288c0f4f975697ab1ac25e809cbf59f3f1ca8423aae9a956",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "41-profile-more",
+      "action": "scroll Profile para creditos/sobre",
+      "evidenceId": "ev_b8278fadc9cb7861b9dc6ece87b6cca889195a96b0d894cf66bba92e813a4b8e",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-41-profile-more\\screen.png",
+      "bytes": 255049,
+      "sha256": "3da5610ea03d58c81a0103e4f512fe6d8b92e4b4a30f94c1b8ea38af81822db5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "42-help",
+      "action": "Toque em370,1180 pretendendo Help; abriu Workout reminders (nao Help). Nenhum switch alterado.",
+      "evidenceId": "ev_154846807bf736d1a0ccecfc303a3eaceb41a86e78d811b352b690c1e334d486",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-42-help\\screen.png",
+      "bytes": 96156,
+      "sha256": "dbc3b42ff51b27ef66738f84f06a3b3b2423fed72821e2ad2d1bd89741cbf92a",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "43-profile-rest",
+      "action": "Back do lembrete, sem mudanca de configuracao",
+      "evidenceId": "ev_a9e8b6b8a545133b72fac758c6767e7588f9879a3ec2172dc318b1cf1f063c36",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-43-profile-rest\\screen.png",
+      "bytes": 278756,
+      "sha256": "46a14de938363d3c3921b72636f322f34858f98bce79d6d8567df9c7610bc206",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "44-profile-top",
+      "action": "scroll retorno e espera da animacao",
+      "evidenceId": "ev_576b4da615ea287ac942b0b42022b4caab5587091d23ff643c768010c15b8ebe",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-44-profile-top\\screen.png",
+      "bytes": 790889,
+      "sha256": "bad4a110c091cf74da37737b89f8e1cf7dcc919a1c8c5a0a0b255ca47380d385",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "45-navigation",
+      "action": "icone flutuante Profile para expor navegacao",
+      "evidenceId": "ev_658ea7d9c8a94dcb5abbd354407e190ad2827a8a16c547f995ed11477c7623a7",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-45-navigation\\screen.png",
+      "bytes": 810695,
+      "sha256": "b5c43917fc6a0d8917980c695e81b9465f5b7554f29f6d62ccd13dfebf726625",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "46-exercises",
+      "action": "Exercises",
+      "evidenceId": "ev_4c426200382bc54dead38f07908de7e0f2c1d9d80904424206e1fb36ff35c1ee",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-46-exercises\\screen.png",
+      "bytes": 323511,
+      "sha256": "e390bdb6c9de2ff9050de903034737c222c045980e1dd87a3b5660b5e3ef71a5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "47-equipment",
+      "action": "Equipments",
+      "evidenceId": "ev_316536722653c288c2a59b64a03e1f5613538a47aca437036a5ab1e207ddbe63",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-47-equipment\\screen.png",
+      "bytes": 349158,
+      "sha256": "de3d4522a6a3a2b8dd0a03ebf84c51a1954ef196762ba4857704db10d65929ca",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "48-search",
+      "action": "lupa de Exercises",
+      "evidenceId": "ev_dc348da1e8bf3f01637b6431fb0cf4e6db30211204a3a7161e81b9284185945c",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-48-search\\screen.png",
+      "bytes": 203532,
+      "sha256": "5537b8a11dff7de9ddec5f2092d6f7626186a09f9d1603dcb7621f63b52735b6",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "49-search-result",
+      "action": "Tentativa de buscar Squat e Back; retornou Equipments. Resultado de busca nao validado.",
+      "evidenceId": "ev_c2712e305a83c645cd8653920918c75cda7c86783cccecd629e07fbd0644031f",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-49-search-result\\screen.png",
+      "bytes": 356334,
+      "sha256": "f69308c9631aa408e3d0f6ab901eb77b5ef2175a3d3111e4999e63ecc901b617",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "50-search-rest",
+      "action": "Abrir Search e aguardar",
+      "evidenceId": "ev_34611ea722f3628c69cdf773048bbb2c00b4b930c0d2ef6eacbff0f5f4d2fbb5",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-50-search-rest\\screen.png",
+      "bytes": 382420,
+      "sha256": "3521e3427c725bedc2a3162c266c236b5d82201477847dbe79f4df1c3e7ee6bc",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "51-squat-result",
+      "action": "Digitar Squat no campo focado; sem Back",
+      "evidenceId": "ev_2bd897f83087bf381650010c5c3b24f75e8ea1249b750de31eea94083fdd5c80",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-51-squat-result\\screen.png",
+      "bytes": 432260,
+      "sha256": "450e204772792681bf006e397aaffe76f9ecb7677eb00647278d804006771935",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "52-exercise-detail",
+      "action": "Abrir um resultado da busca (Barbell squat)",
+      "evidenceId": "ev_726ca1edbbc6ab52d95c4407b79147294593d967217b36bace6f0b833b37cc39",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-52-exercise-detail\\screen.png",
+      "bytes": 215364,
+      "sha256": "4cf152a181e096f5eae4c8889964cf9bce16ea43fab322d7591439f78ed506ed",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "54-plan",
+      "action": "Sair do detalhe e voltar My Plan; nao obter instrucoes",
+      "evidenceId": "ev_ddaea7bfe65612a2dc30b084ef95a05886b7390fb7c55fa87868f93234b07795",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-54-plan\\screen.png",
+      "bytes": 381130,
+      "sha256": "3dc003d6614c024e4fc976c4f95777185cbbc1e76487c18d009c581dfdc997cd",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "55-new-workout",
+      "action": "New Workout para observar formulario, sem treino de fonte externa",
+      "evidenceId": "ev_05909c5da02c093c0c980737947479e027cf9205381a554bdf580a88707d7673",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-55-new-workout\\screen.png",
+      "bytes": 91554,
+      "sha256": "47af988b639daae167dfaa29e8c105af88ba932faf0d2a41a485fab794ba14be",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "56-workout-options",
+      "action": "More Options de formulario vazio",
+      "evidenceId": "ev_de2ee7129ed031b7b3b7bb9c5aa4ff5864d89365b877493bb25021668f13bdbb",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-56-workout-options\\screen.png",
+      "bytes": 94759,
+      "sha256": "1b4e43d2657dd187f7f04b1924b9c0b12d3767348aa1681f335192555ae302ef",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "57-workouts",
+      "action": "Sair sem salvar e abrir Workouts",
+      "evidenceId": "ev_43e5278530e7fe5b504cf2f03885f3b263348f7f01f197c1e90527538305694b",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-57-workouts\\screen.png",
+      "bytes": 252893,
+      "sha256": "257ed91adbb0ef8d81e572f7635c5f717de13e333617ebfe098231ca242acc41",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "58-workouts-rest",
+      "action": "Uma observacao apos carregamento da aba",
+      "evidenceId": "ev_756e8fe452b76da228ee5fdf3d702ff7f32107589685e5433d86aa35e31705f4",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-58-workouts-rest\\screen.png",
+      "bytes": 252424,
+      "sha256": "496c440df9d3488ed05c3c328808d166104aa83c027b1c71a5ef5a60228b037e",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "59-workouts-seeall",
+      "action": "See all da secao de sessoes rapidas",
+      "evidenceId": "ev_c91f0da97af00f68ce7d8bc30a42be3d88242a3a5ab944b5b315c98656ad64a6",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-59-workouts-seeall\\screen.png",
+      "bytes": 97294,
+      "sha256": "bc847a449161668ddb7a894c8b5f5e906a885a379bffef2dc27271a902283354",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "60-category-filter",
+      "action": "Filtro categoria apos vazio Bodyweight",
+      "evidenceId": "ev_194d432530e10fea42bb9f23d20c5491a614a2129ad2e6ea9927dc523819fe53",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-60-category-filter\\screen.png",
+      "bytes": 83276,
+      "sha256": "374616af46b704bcd209e55eb53df2b8ee425bc5c09f243773ff4441dc0029e5",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "61-progress",
+      "action": "Voltar sem alterar filtro e abrir Progress",
+      "evidenceId": "ev_149c8bb4c978883d44af2d5efdba9b33f27aca508ac4b934960a781fdd637ddf",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-61-progress\\screen.png",
+      "bytes": 820400,
+      "sha256": "36821f7f6dd09e5cb696dd1717a9d11729141f77746ac2358aa79eae7675717d",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "62-progress-ad-rest",
+      "evidenceId": "ev_acb6bf01852f3c152827ae89c5c953402d122b70c009aecdd2c1b74681b29413",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-62-progress-ad-rest\\screen.png",
+      "bytes": 1027714,
+      "sha256": "6860ca2531f38c421b9d4ff6593d2c3ce569c1bc066f3d8c58ac001bad450c3d",
+      "width": 1080,
+      "height": 2340
+    },
+    {
+      "step": "63-progress-rest",
+      "action": "X do anuncio exibido ao navegar; observar resultado",
+      "evidenceId": "ev_8e9393c3160c2c86ef8477f4415362308809b107bb52362e8f0884014c8479d9",
+      "client": {
+        "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+        "path_source": "environment",
+        "version": "35.0.2-12147458",
+        "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5554",
+      "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope05-63-progress-rest\\screen.png",
+      "bytes": 424092,
+      "sha256": "19edd5d062e49db420c7374528d96cd1b0f41fba8c6570d6a19835dd517193a9",
+      "width": 1080,
+      "height": 2340
+    }
+  ],
+  "rejectedCaptureSteps": [
+    "53-instructions",
+    "53b-instructions"
+  ],
+  "instructionTextCaptured": false,
+  "limitations": [
+    "Sem captura ou extracao das instrucoes",
+    "Sem validacao de sessao completa/persistencia/offline",
+    "Sem teste de algoritmo IA ou integracoes",
+    "Vazio de treinos rapidos somente para Beginner+Bodyweight"
+  ]
+}

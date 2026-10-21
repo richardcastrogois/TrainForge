@@ -1,0 +1,23 @@
+{
+  "id": "cg05-bmr2021-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33935055%20AND%20SRC:MED&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T00:53:04.324042+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo bibliografico primario DOI10.3233/BMR-191649/PMID33935055. Confrontar55cuidadores/fadiga/8semanas/registro e origem; nao assumir novaRCT ou material integral.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33935055%20AND%20SRC:MED&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 4238,
+  "bodyFile": "../raw/cg05-bmr2021-core-json.json",
+  "sha256": "9883e9687eae19f1c2d8c32935843c13aef68d1ff14b286568b853a6a113fd5d"
+}

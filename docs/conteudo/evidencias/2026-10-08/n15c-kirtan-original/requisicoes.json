@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C exclusivamente. Conferir ensaio controlado Kirtan Kriya de Lavretsky, distinto do piloto Innes2012 PR73, e folha operacional da fundacao citada pelo ensaio. Nao transferir automaticamente a variante11min/112sessoes, versao atual da folha ou direitos dos CDs. Primeiras coletas sem retry ou contorno.",
+  "requests":[
+    {"id":"c15-kirtan-lavretsky-html","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3423469/","extension":"html","purpose":"Artigo original integral: verificar ensaio, elegibilidade, ensino profissional, dose, cointervencao, resultados e limite da descricao de11+1min."},
+    {"id":"c15-kirtan-arpf-instrucoes-pdf","url":"https://alzheimersprevention.org/wp-content/uploads/2025/11/Kirtan-Kriya-Instructions.pdf","accept":"application/pdf","extension":"pdf","purpose":"Folha original observada no dominio da fundacao: conferir postura, dedos, tempos, encerramento e direitos reservados. Nao afirmar que versao2018/URL2025 e exatamente o material2011/CD utilizado no ensaio."},
+    {"id":"c15-kirtan-lavretsky-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT01537679","extension":"json","purpose":"Registro primario: ensino e supervisao inicial pela medica Helen Lavretsky, elegibilidade, dose, materiais ou resultados postados; diferencas com o artigo preservadas."}
+  ]
+}

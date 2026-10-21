@@ -1,0 +1,24 @@
+{
+  "id": "n22-paceup-moving2025",
+  "url": "https://movingmedicine.ac.uk/wp-content/uploads/2025/09/PACE-up-MM-edit-2025.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:28:03.353281+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Versao publica atual9p MovingMedicine: instrucao/diario/seguranca; nao mesma licenca nem versao do protocolo2013",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://movingmedicine.ac.uk/wp-content/uploads/2025/09/PACE-up-MM-edit-2025.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 155004,
+  "bodyFile": "../raw/n22-paceup-moving2025.pdf",
+  "sha256": "b11085b1ee79744d6e7c9708f295708ddaad36852975fdf0e40ae1c679eccca5",
+  "bodyFormatMatchesRequest": true
+}

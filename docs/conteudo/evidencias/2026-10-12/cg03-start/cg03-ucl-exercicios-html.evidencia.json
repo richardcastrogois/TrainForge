@@ -1,0 +1,24 @@
+{
+  "id": "cg03-ucl-exercicios-html",
+  "url": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-relaxation-exercises",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T18:14:06.248616+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Pagina oficial atual: sete tecnicas/transcricoes, audioSharePointmedianteformulario. Nao incorporar versaoatual aoensaio2014 ou assumir reusocomercial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-relaxation-exercises",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 6022,
+  "bodyFile": "../raw/cg03-ucl-exercicios-html.html",
+  "sha256": "6b96765902045d0c57964199ba78431d168c5759743b0941a13439a750d15a8a",
+  "error": "HTTP 403"
+}

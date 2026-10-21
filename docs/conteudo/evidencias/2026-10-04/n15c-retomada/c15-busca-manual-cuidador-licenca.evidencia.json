@@ -1,0 +1,22 @@
+{
+  "id": "c15-busca-manual-cuidador-licenca",
+  "url": "https://www.bing.com/search?q=caregiver+home+exercise+manual+%22creative+commons%22",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:25:12.015062+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Buscar manuais originais fora de artigos; nao contornar desafio nem assumir ausencia de literatura se mecanismo falhar.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.bing.com/search?q=caregiver+home+exercise+manual+%22creative+commons%22",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 127074,
+  "bodyFile": "../raw/c15-busca-manual-cuidador-licenca.html",
+  "sha256": "9845b75dab150016ccc5d6922cb15cf3ec636a767084c13b9e2ce896a3408c14"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n18r-deanza-author",
+  "url": "https://www.deanza.edu/directory/user.html?u=altmandanielle",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:57:24.548496+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Qualificação primária da coautora do guia De Anza; não transferir credenciais de publicação sem evidência.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.deanza.edu/directory/user.html?u=altmandanielle",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5730,
+  "bodyFile": "../raw/n18r-deanza-author.html",
+  "sha256": "11680e928681bc72c709802aba6a97852bbbf6bb55608e43cb2c98920daed5e6",
+  "error": "HTTP 403"
+}

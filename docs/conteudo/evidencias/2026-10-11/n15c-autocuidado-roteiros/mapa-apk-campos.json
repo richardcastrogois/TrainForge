@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-11",
+  "niche": "N15-C",
+  "sourceIds": [
+    "PR138",
+    "PR139"
+  ],
+  "reading": "leitura-fontes.json",
+  "inventory": "inventario.json",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "retrieval": "fontes.json -> localEvidence -> sourceId/doi/record -> recibo URL/data/sha256/bodyFile -> inventory.sections/tables/pdfText e localizador leitura -> campo APK. Nulos nao sao defaults.",
+  "fields": [
+    {
+      "apkField": "caregiverIsPractitioner",
+      "from": "population.practitioner",
+      "rule": "Distinguir autocuidado de treino para cuidar do paciente."
+    },
+    {
+      "apkField": "sourceCitationAndVersion",
+      "from": "doi/originals/record",
+      "rule": "PR138 ePR139 programas distintos; PDF/JATS do mesmo artigo nao dois ensaios."
+    },
+    {
+      "apkField": "professionalAuthorship",
+      "from": "professionalAuthorship",
+      "rule": "Equipe e terapeuta descritos; nao converter departamento em credencial pessoal."
+    },
+    {
+      "apkField": "audienceEligibility",
+      "from": "population",
+      "rule": "Separar criterios cuidador/assistido e nao universalizar para cuidadores remunerados."
+    },
+    {
+      "apkField": "careWorkloadAndFatigue",
+      "from": "caregiverSpecificity/clinical",
+      "rule": "Barreiras trabalho/respiro/deslocamento; sem dose gerada por cansaco."
+    },
+    {
+      "apkField": "compatibleVenue",
+      "from": "selection.settingNotLiteralHomeExclusion",
+      "rule": "Nao excluir centro ou hospital por nome; manter a mesma pratica e apoio."
+    },
+    {
+      "apkField": "initialPreparation",
+      "from": "intervention",
+      "rule": "Preservar terapeuta inicial/ensino e avaliacao, nao substituir por APK."
+    },
+    {
+      "apkField": "requiredEquipment",
+      "from": "intervention",
+      "rule": "ManualDVD e tecnologia utilizados; ativos externos nao recebidos."
+    },
+    {
+      "apkField": "programmeDose",
+      "from": "intervention",
+      "rule": "60min aula PFA nao exercicio;15min meditacao nao PMR;20dias observados nao prescricao."
+    },
+    {
+      "apkField": "programmeSequence",
+      "from": "intervention",
+      "rule": "Pacote e fases originais separados; nao juntar movimentos de2012 e dose2020."
+    },
+    {
+      "apkField": "progression",
+      "from": "intervention.calendarConflictUnresolved",
+      "rule": "Nao escolher3ou5meses para resolver conflito nem criar progressao onde nao existe."
+    },
+    {
+      "apkField": "warmupAndCooldown",
+      "from": "intervention.physicalEnding",
+      "rule": "Roteiros nao recebidos, encerramento fisico nulo, sem importacao entre programas."
+    },
+    {
+      "apkField": "exerciseInstructions",
+      "from": "intervention.physicalCommands/physicalStepInstructions",
+      "rule": "Listas vazias; exemplos e manual existem segundo texto mas nao recebidos."
+    },
+    {
+      "apkField": "stopReturnOrIndividualAdjustment",
+      "from": "intervention.physicalSafetyCriteria/physicalStopReturn",
+      "rule": "Nao inferir criterio clinico de escala de estresse ou faltas."
+    },
+    {
+      "apkField": "clinicalClaim",
+      "from": "clinical/design",
+      "rule": "PFA antes-depois do pacote; yogaRCT NS/inconclusivo nao equivalencia."
+    },
+    {
+      "apkField": "visualAsset",
+      "from": "visualReview",
+      "rule": "Cinco paginas PDF PFA vistas; figuras yoga/video/manual nao vistos."
+    },
+    {
+      "apkField": "rightsPerAsset",
+      "from": "rights",
+      "rule": "CCBY PFA /NC-SA yoga; licenca artigo nao externos, fatos separados de expressao."
+    },
+    {
+      "apkField": "publicationState",
+      "from": "researchClosureApproved/releaseApproved/appImplemented",
+      "rule": "Falsos, semAPK; N15-Ccontinua, N21retida."
+    }
+  ]
+}

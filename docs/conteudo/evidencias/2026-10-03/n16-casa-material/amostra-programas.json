@@ -1,0 +1,328 @@
+{
+  "niche": "N16",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "sourceId": "PR11",
+  "sourceUrl": "https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf",
+  "sha256": "83c1bd5cb8eadb58bc8617bca0fd57572664c94956207679fc85f3c051e2ca43",
+  "title": "Growing Stronger: Strength Training for Older Adults",
+  "author": "Rebecca A. Seguin e colaboradores; Tufts University",
+  "copyrightYear": 2002,
+  "clinicalReviewDate": null,
+  "pdfPageCount": 126,
+  "audience": "adultos mais velhos; nao equivaler a todos os adultos ou todas as condicoes clinicas",
+  "sessionsPerWeekRange": [
+    2,
+    3
+  ],
+  "sessionDurationMinutes": null,
+  "phases": [
+    {
+      "phase": 1,
+      "startWeek": 1,
+      "endWeek": 2,
+      "exerciseNumbers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "phase": 2,
+      "startWeek": 3,
+      "endWeek": 6,
+      "exerciseNumbers": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "phase": 3,
+      "startWeek": 7,
+      "endWeek": null,
+      "exerciseNumbers": [
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "phaseTransitionConflict": {
+    "pdfPage44": "duas semanas parte I e quatro semanas parte II",
+    "pdfPage64": "partes I e II pelo menos quatro semanas; criterio difere",
+    "automaticTransitionApproved": false
+  },
+  "warmupMinutes": 5,
+  "warmupMode": "walking or source alternatives",
+  "movements": [
+    {
+      "exerciseNumber": 1,
+      "sourceName": "Squats",
+      "pdfPages": [
+        47,
+        48
+      ],
+      "equipment": [
+        "chair"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 2,
+      "sourceName": "Wall push-ups",
+      "pdfPages": [
+        49,
+        50
+      ],
+      "equipment": [
+        "wall"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 3,
+      "sourceName": "Toe stands",
+      "pdfPages": [
+        51,
+        52
+      ],
+      "equipment": [
+        "chair_or_counter"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 4,
+      "sourceName": "Finger marching",
+      "pdfPages": [
+        53,
+        54
+      ],
+      "equipment": [
+        "chair_optional"
+      ],
+      "sets": null,
+      "repetitionsPerSet": null,
+      "perSide": false,
+      "restSecondsRange": null,
+      "specialDose": {
+        "sequenceRepeats": 3,
+        "holdSecondsApprox": 10,
+        "positions": 3
+      },
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 5,
+      "sourceName": "Biceps curl",
+      "pdfPages": [
+        57,
+        58
+      ],
+      "equipment": [
+        "dumbbells",
+        "chair_optional"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 6,
+      "sourceName": "Step-ups",
+      "pdfPages": [
+        59,
+        60
+      ],
+      "equipment": [
+        "stairs_with_handrail"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": true,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 7,
+      "sourceName": "Overhead press",
+      "pdfPages": [
+        61,
+        62
+      ],
+      "equipment": [
+        "dumbbells",
+        "chair_optional"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 8,
+      "sourceName": "Side hip raise",
+      "pdfPages": [
+        63,
+        64
+      ],
+      "equipment": [
+        "chair",
+        "ankle_weights_optional"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": true,
+      "restSecondsRange": [
+        60,
+        60
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 9,
+      "sourceName": "Knee extension",
+      "pdfPages": [
+        65,
+        66
+      ],
+      "equipment": [
+        "chair",
+        "ankle_weights"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": true,
+      "restSecondsRange": [
+        60,
+        120
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 10,
+      "sourceName": "Knee curl",
+      "pdfPages": [
+        67,
+        68
+      ],
+      "equipment": [
+        "chair",
+        "ankle_weights"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": true,
+      "restSecondsRange": [
+        60,
+        120
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 11,
+      "sourceName": "Pelvic tilt",
+      "pdfPages": [
+        69,
+        70
+      ],
+      "equipment": [
+        "floor_or_firm_mattress"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": false,
+      "restSecondsRange": [
+        60,
+        120
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    },
+    {
+      "exerciseNumber": 12,
+      "sourceName": "Floor back extension",
+      "pdfPages": [
+        71
+      ],
+      "equipment": [
+        "floor"
+      ],
+      "sets": 2,
+      "repetitionsPerSet": 10,
+      "perSide": true,
+      "restSecondsRange": [
+        60,
+        120
+      ],
+      "specialDose": null,
+      "doseIsSourceFactNotPrescription": true
+    }
+  ],
+  "progressionEvidencePages": [
+    57,
+    82,
+    83,
+    84
+  ],
+  "progression": "avaliar execucao e esforco antes de aumentar; nao aumentar doente, lesionado ou muito dolorido",
+  "weightUnit": "lb",
+  "automaticWeightTargetApproved": false,
+  "substitutions": "somente alternativas expressas pela fonte; nao gerar equivalencias livres",
+  "rights": "distribuicao gratuita creditada sem alterar; ilustracoes e PAR-Q de terceiros; adaptacao pt-PT nao demonstrada",
+  "releaseApproved": false,
+  "limits": [
+    "Kit cadeira/parede/degrau/halteres/caneleiras; nao cobre bandas/kettlebell universalmente",
+    "Manual historico; revisao de atualidade, linguagem e seguranca pendente",
+    "Nao importar afirmacoes terapeuticas como garantia",
+    "Videos e revisao pt-PT pendentes; N17 separado",
+    "Artigo alternativo teve reCAPTCHA e 429; nao contornar ou repetir"
+  ]
+}

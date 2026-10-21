@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-15",
+  "niche": "N25",
+  "researchClosed": true,
+  "scope": "Ficha documental de componentes de resistência em piscina para nadador tecnicamente competente no caminho com orientação profissional. Não curso integral de aprendizagem, programa universal ou prática homologada.",
+  "selectedLot": "lote-nado-resistencia.json",
+  "criteria": [
+    {
+      "id": "N25-1",
+      "met": true,
+      "criterion": "autoria",
+      "evidence": "HughesMD e papel no capítulo demonstrados noPDF5; ediçãoDeuster separada; CDC institucional. Qualificação histórica não matrícula atual."
+    },
+    {
+      "id": "N25-2",
+      "met": true,
+      "criterion": "conteudo",
+      "evidence": "5–10min de aquecimento/10x50m+5s entre/400m encerramento localizados. Escopo exige nadador já competente, não aprender gestos por rótulo; não usar profissional hipotético para fingir curso integral recebido."
+    },
+    {
+      "id": "N25-3",
+      "met": true,
+      "criterion": "dose",
+      "evidence": "500m principal/9pausas45s/900m conhecidos+warm variável. Total/estilo/FC deencerramento e calendário ausentes não preenchidos; revisão final antesdeuso."
+    },
+    {
+      "id": "N25-4",
+      "met": true,
+      "criterion": "direitos",
+      "evidence": "AvisoUSU recebido e vínculoHPRC/CHAMP explícito, dados/métodos apenas comcréditos. Não mídia/edição comercial; fontes restritas excluídas."
+    },
+    {
+      "id": "N25-5",
+      "met": true,
+      "criterion": "compatibilidade",
+      "evidence": "Composição editorial do mesmo capítulo para piscina e nadador competente, ainda não ensaiada. Suporte/vigilância e revisão reais antesdaoferta; não eficácia extrapolada, idoso/casa/praça/águaaberta."
+    },
+    {
+      "id": "N25-6",
+      "met": true,
+      "criterion": "amplitude",
+      "evidence": "Coleções/autores/perfis/bibliografia/artigos/apps/termos examinados;13novasfamílias+PR07 reclassificada.12recibos, falhas preservadas,8p vistas."
+    }
+  ],
+  "whatClosed": "Fonte humana e qualificação, partes/doses factuais, crédito/direitos de seleção e limites foram documentados. O autor aceita composição e não exige um curso completo único. Implementação/contratação não são gates de pesquisa.",
+  "whatDidNotClose": [
+    "Oferta autônoma para quem não sabe nadar",
+    "Dose individual/FC/retorno clinicamente homologados para idoso frágil ou condição médica",
+    "Treino do cuidador como assistente físico de outra pessoa",
+    "Calendário novo ou novos benefícios de mistura",
+    "Cobertura comercial dos catálogos restritos, mídia ou instrução por vídeos"
+  ],
+  "beforePublication": [
+    "Revisão profissional/editorial/direitos do lote final e adequação individual",
+    "Verificar suporte e vigilância reais, habilidade, equipamentos/regras locais",
+    "Definir apresentação do encerramento sem inventar atribuição ou dose original",
+    "Implementação/testes em etapa própria"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N26"
+}

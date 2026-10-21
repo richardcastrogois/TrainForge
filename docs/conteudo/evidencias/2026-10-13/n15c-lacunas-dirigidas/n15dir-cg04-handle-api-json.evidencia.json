@@ -1,0 +1,23 @@
+{
+  "id": "n15dir-cg04-handle-api-json",
+  "url": "https://hdl.handle.net/api/handles/10810/68569",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T03:58:55.049917+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resolver URL publicada do registro persistente sem seguir automaticamente ao PDF conhecido404; respostaJSON pode confirmar novo endereco ou apenas destino antigo. Metadados nao comandos de exercicio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://hdl.handle.net/api/handles/10810/68569",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 222,
+  "bodyFile": "../raw/n15dir-cg04-handle-api-json.json",
+  "sha256": "58817f99f3a84e3d0697570facc5754eb6ad6d51654f59196b114bb289ae3cb8"
+}

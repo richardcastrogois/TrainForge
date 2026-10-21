@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-15",
+  "requests": [
+    {
+      "id": "n22-nhlbi-sample8",
+      "url": "https://www.nhlbi.nih.gov/files/docs/resources/heart/filipino-health-manual/session-3/samplewalk.pdf",
+      "purpose": "Conferir tabela de caminhada oito semanas e contexto do manual",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-nhlbi-session3",
+      "url": "https://www.nhlbi.nih.gov/sites/default/files/media/docs/Session3-508.pdf",
+      "purpose": "Conferir preparo, dose, intensidade, encerramento e publico do material",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-ace-toolkit",
+      "url": "https://contentcdn.eacefitness.com/assets/about-ace/advocacy/Walking_Toolkit_Pro.pdf",
+      "purpose": "Colecao profissional: autoria, tecnica, montagem de sessoes, exemplos e direitos",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-nhs-walking",
+      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+      "purpose": "Orientacao de caminhada, limites e links oficiais Active10",
+      "extension": "html"
+    },
+    {
+      "id": "n22-nhs-active10",
+      "url": "https://www.nhs.uk/better-health/get-active/",
+      "purpose": "Mapear app oficial sem extrair conteudo privado ou instalar",
+      "extension": "html"
+    },
+    {
+      "id": "n22-leslie-plan",
+      "url": "https://walkathome.com/wp-content/uploads/2020/03/FC070110WALKI.pdf",
+      "purpose": "Programa publicado pela criadora; dose/autoria/creditos, nao copiar fotos ou rotinas protegidas",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-niddk-start",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/tips-get-active/tips-starting-physical-activity",
+      "purpose": "Conferir situacao atual e se corpo instrucional ainda disponivel",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n45-pt-mobile",
+  "url": "https://selo.usabilidade.gov.pt/requisitos/10aspetosaplicacoesmoveis/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T01:07:55.762026+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Lista oficial portuguesa para aplicações móveis; idioma codificado e leitores de ecrã. Referência, não selo obtido.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://selo.usabilidade.gov.pt/requisitos/10aspetosaplicacoesmoveis/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 137917,
+  "bodyFile": "../raw/n45-pt-mobile.html",
+  "sha256": "7d81444ed4264b2abf0a89ba2e7c469af0ae9f2bf3151bb956ca60d27d316860"
+}

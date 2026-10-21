@@ -1,0 +1,25 @@
+{
+  "id": "n21-chow2019-pdf",
+  "url": "https://www.mdpi.com/1660-4601/16/3/391/pdf?version=1548847759",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:32:24.938632+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Nova pista especifica: AppendixA e painel de especialistas com comportamentos indicados/naoindicados e comandos de aparelho de praca; verificar sem importar movimentos incorretos observados.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mdpi.com/1660-4601/16/3/391/pdf?version=1548847759",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 409,
+  "bodyFile": "../raw/n21-chow2019-pdf.pdf",
+  "sha256": "85190a7e1ebdc87620c9ebb80dab48708ce073483a3fc4e63f0622ff8e4afd90",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

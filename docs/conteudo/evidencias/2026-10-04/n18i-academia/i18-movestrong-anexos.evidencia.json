@@ -1,0 +1,22 @@
+{
+  "id": "i18-movestrong-anexos",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8462677/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:35:37.425962+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receber MoveStrong protocol explicitamente ligado ao artigo para verificar manual/instrucoes/licenca; sem presumir que o nome protocol contem cartilha.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8462677/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 1133571,
+  "bodyFile": "../raw/i18-movestrong-anexos.zip",
+  "sha256": "d1405e437ed3c911d739aea8d494a1e959d88d7eba10fd6c6043ae56d61b7e16"
+}

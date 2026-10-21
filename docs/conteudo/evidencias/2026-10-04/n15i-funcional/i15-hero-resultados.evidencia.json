@@ -1,0 +1,23 @@
+{
+  "id": "i15-hero-resultados",
+  "url": "https://www.journalslibrary.nihr.ac.uk/hta/published-articles/GJAC1602",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T19:35:39.965188+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Resultados originais publicados janeiro 2026: HOPE estendido 24 semanas, comparador, limites, conclusao e licenca; confrontar promessa de beneficio do protocolo antigo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.journalslibrary.nihr.ac.uk/hta/published-articles/GJAC1602",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/i15-hero-resultados.html",
+  "sha256": "49ddb706c7e57584106eab954f9fc8b51b832c38c0db12b2537f86f03dd8aacf",
+  "error": "HTTP 403"
+}

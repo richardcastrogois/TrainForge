@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-11",
+  "scope":"Continua manifesto original apos validacao de Accept interromper antes de qualquer GET do registro. PDF ja recebido nao repetido. Usar Accept JSON/HTML/texto suportado pelo coletor, sem alterar limites ou executar conteudo.",
+  "requests":[
+    {"id":"c15-ms-pilates2024-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05896995","accept":"application/json,text/html,text/plain","extension":"json","purpose":"Primeiro GET registro MS, procurar protocolo/folheto publico e preservar diferencas da publicacao."},
+    {"id":"c15-pilates-pediatrico2021-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT03729466","accept":"application/json,text/html,text/plain","extension":"json","purpose":"Primeiro GET registro ClinicalPilates pais/cuidadores de criancas com deficiencia, documentos e autoria profissional."}
+  ]
+}

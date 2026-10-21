@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "niche": "N36",
+  "researchClosed": true,
+  "scope": "Pesquisa/especificação de percurso próprio opcional, limites das fontes, precisão/pausas/permissões/mapa e quatrocontextos. Não rastreamento implementado, rota acessível validada ou precisão de campo comprovada.",
+  "selectedContent": "requisitos-percurso-proprio.json",
+  "sourceEvidence": "fontes-e-limites.json",
+  "criteria": [
+    {
+      "criterion": "Exterior/praça, precisão e pausas",
+      "met": true,
+      "evidence": "FontesW3C/Android, tempoqualidade/cachedados, pausaselacunas separadas; filtros/limiares não inventados. Casosdocumentais nãotestesreais."
+    },
+    {
+      "criterion": "Casa/academia semGPSobrigatório",
+      "met": true,
+      "evidence": "Contextosexplícitos,métodosinternos distintos; não caloria/carga porGPS."
+    },
+    {
+      "criterion": "Cuidadorpróprio versus acompanhamento",
+      "met": true,
+      "evidence": "Portador/praticante/informante e permissão/partilha/retencãodistintos. Não vigilância doassistido."
+    },
+    {
+      "criterion": "Fontes/direitos/custos",
+      "met": true,
+      "evidence": "W3C2026CR,nãofinal; Androidatual;OSModata/dados/licença e tiles/SLAseparados. Nenhuma conta/chave/contrato presumido."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Testesde campo/permissões/bateria,seleção do serviço eprivacidade/compreensão",
+    "Implementação emetapa autorizada; nenhumteste realoumapa publicado nesta pesquisa"
+  ],
+  "nextNiche": "N37",
+  "releaseApproved": false,
+  "appImplemented": false
+}

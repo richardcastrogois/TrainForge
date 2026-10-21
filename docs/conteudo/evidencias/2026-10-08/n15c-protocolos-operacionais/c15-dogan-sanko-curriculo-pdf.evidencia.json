@@ -1,0 +1,18 @@
+{
+  "id": "c15-dogan-sanko-curriculo-pdf",
+  "url": "https://www.sanko.edu.tr/wp-content/uploads/2019/05/Ek-3-Zeynep-DO%C4%9EAN.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:49:35.907002+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Curriculo primario da autora: formacao e tese para verificar profissao, nao conceder direitos ou identidade de protocolo de pacientes.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

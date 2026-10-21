@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-11",
+  "scope": "Somente N15-C. Primeira coleta de originais publicos distintos para cuidadores praticantes; sem retry, contato, conta ou alteracao do APK. PDF com autorizacao de pesquisa sem teto de bytes, streaming/TLS/timeout preservados.",
+  "requests": [
+    {"id":"c15-ms-pilates2024-pdf","url":"https://dergipark.org.tr/tr/download/article-file/3852613","accept":"application/pdf","extension":"pdf","purpose":"Artigo completo fisioterapeutas Karakaya/Genc: programa de seis semanas proprio cuidador MS com lombalgia, verificar roteiro/brochura, apoio, resultados, conflitos e licenca."},
+    {"id":"c15-ms-pilates2024-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05896995","accept":"application/json","extension":"json","purpose":"Registro primario do estudo MS, identificar protocolo/folheto publico, variantes e suporte sem substituir versao publicada."},
+    {"id":"c15-pilates-pediatrico2021-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT03729466","accept":"application/json","extension":"json","purpose":"Registro primario de ClinicalPilates para pais/cuidadores de criancas com deficiencia; localizar programa profissional operacional e documento publico. DOI web indisponivel nao repetido."}
+  ]
+}

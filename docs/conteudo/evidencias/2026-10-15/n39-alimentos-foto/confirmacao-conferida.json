@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "kind": "Research contract simulator over actual model outputs",
+  "checks": [
+    {
+      "case": "1",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "case": "2",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "case": "3",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "case": "5",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "case": "synthetic-black",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "case": "synthetic-white",
+      "check": "Sem ação explícita, não confirmar nem atribuir pessoa",
+      "passed": true
+    },
+    {
+      "context": "idoso_casa",
+      "check": "Relato próprio explícito, sem quantidade ou objetivo inferidos",
+      "passed": true
+    },
+    {
+      "context": "idoso_academia",
+      "check": "Relato próprio explícito, sem quantidade ou objetivo inferidos",
+      "passed": true
+    },
+    {
+      "context": "idoso_praca",
+      "check": "Relato próprio explícito, sem quantidade ou objetivo inferidos",
+      "passed": true
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "check": "Relato próprio explícito, sem quantidade ou objetivo inferidos",
+      "passed": true
+    },
+    {
+      "check": "Corrigir ramen observado para alimento manual, com assistido/autor separados",
+      "passed": true
+    },
+    {
+      "check": "Nenhuma destas na foto sem comida, sem forçar gnocchi",
+      "passed": true
+    },
+    {
+      "check": "Ausência de pessoa ou autor não é preenchida pelo modelo",
+      "passed": true
+    },
+    {
+      "check": "Ausência de pessoa ou autor não é preenchida pelo modelo",
+      "passed": true
+    }
+  ],
+  "passed": 14,
+  "failed": 0,
+  "correctedExample": {
+    "status": "confirmed_by_reporter",
+    "food": "caldo_verde",
+    "person": "test-person-A",
+    "reporter": "test-person-B",
+    "modelSuggestion": [
+      {
+        "id": 81,
+        "label": "ramen",
+        "score": 0.716420590877533
+      },
+      {
+        "id": 67,
+        "label": "omelette",
+        "score": 0.038437310606241226
+      },
+      {
+        "id": 89,
+        "label": "shrimp_and_grits",
+        "score": 0.0307649876922369
+      },
+      {
+        "id": 18,
+        "label": "chicken_curry",
+        "score": 0.0174686461687088
+      },
+      {
+        "id": 24,
+        "label": "clam_chowder",
+        "score": 0.016445325687527657
+      }
+    ],
+    "quantity": null,
+    "nutritionTarget": null,
+    "correctionApplied": true
+  },
+  "actualUserInteractionTested": false,
+  "appImplemented": false,
+  "caregiverIdentityInferred": false,
+  "sourceImageUploaded": false,
+  "nutritionPrescribed": false,
+  "releaseApproved": false
+}

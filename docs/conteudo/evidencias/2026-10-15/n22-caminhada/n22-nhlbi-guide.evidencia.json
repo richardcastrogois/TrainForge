@@ -1,0 +1,24 @@
+{
+  "id": "n22-nhlbi-guide",
+  "url": "https://www.nhlbi.nih.gov/files/docs/public/heart/phy_active.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:20:27.878860+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia original2006 com tabela caminhada12semanas, nao antigo URL404; avaliar autoria e cautelas",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/files/docs/public/heart/phy_active.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1355473,
+  "bodyFile": "../raw/n22-nhlbi-guide.pdf",
+  "sha256": "d64f8619094e14935fe8f59f24efbd28592f1c2d0a88684d21edf61df9b0019c",
+  "bodyFormatMatchesRequest": true
+}

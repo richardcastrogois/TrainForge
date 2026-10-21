@@ -1,0 +1,23 @@
+{
+  "id": "c15-tan5-misto-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25632044%20AND%20SRC%3AMED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:21:26.709921+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados/resumo indexado do estudo misto pacientes/familiares, nao20cuidadores ou roteiro completo. Nao contornarSAGE.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25632044%20AND%20SRC%3AMED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 6978,
+  "bodyFile": "../raw/c15-tan5-misto-core-json.json",
+  "sha256": "6b84c35eb60e759c04ff850e84d66a14fe8e80997010e765e3c91e6a70c47470"
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "purpose": "Contrato documental de proveniencia para futura importacao; nao implementacao nem treino aprovado.",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "lookup": {
+    "sourceCatalogue": "../../../fontes.json",
+    "sourceIds": ["PR62", "PR63", "PR64", "PR65", "PR66"],
+    "manualReview": "leitura-manuais.json",
+    "receiptIndex": "inventario.json",
+    "bodyPathRule": "Resolver bodyFile relativo ao recibo; exigir confinamento, bytes e SHA256. Falhas/metadados nao substituem corpo.",
+    "sourceLookupCommand": "python docs/conteudo/consultar-fontes.py --id PR62",
+    "offlineReproductionCommand": "python docs/conteudo/evidencias/analisar-n15c-manuais.py --render",
+    "networkRequiredForReproduction": false
+  },
+  "requiredProvenancePerImportedClaim": [
+    "sourceId", "title", "authors", "version", "url", "resolvedUrl",
+    "collectedAtUtc", "receipt", "sha256", "bytes",
+    "pdfPageOneBasedOrPrimarySection", "printedPageIfPresent",
+    "sourceActor", "sourcePopulation", "sourceEnvironment",
+    "sourceDeliveryAndSupervision", "publishedDoseAndUnit",
+    "missingFields", "licensePerAsset", "adaptationHistory", "approvalState"
+  ],
+  "evidenceExamplesNotApprovedForExecution": [
+    {
+      "id": "C15-TRACE-CBT-01",
+      "sourceId": "PR62",
+      "receipt": "c15-cbt-livro.evidencia.json",
+      "sha256FromVerifiedInventory": true,
+      "locator": {"pdfPageOneBased": 198, "printedPage": 179},
+      "sourceActor": "cuidador_praticando_para_si",
+      "sourceEnvironment": "casa_apos_aprendizagem_com_profissional",
+      "field": "frequencia_do_relaxamento",
+      "publishedValue": "20min aproximados; preferencialmente diario, no minimo2-3vezes/semana",
+      "blocked": ["autonomia_universal", "dose_muscular_em_segundos", "licenca_Tausch", "erratum_aplicado"]
+    },
+    {
+      "id": "C15-TRACE-VA-01",
+      "sourceId": "PR63",
+      "receipt": "c15-va-workbook-modulo1.evidencia.json",
+      "sha256FromVerifiedInventory": true,
+      "locator": {"pdfPageOneBased": 23, "printedPage": 33},
+      "sourceActor": "cuidador_praticando_para_si",
+      "field": "contracao_muscular",
+      "publishedValue": "10segundos em11grupos enumerados, relaxar depois",
+      "blocked": ["duracao_relaxamento", "repeticoes", "frequencia_semanal", "progressao_calendario", "fotos_liberadas"]
+    },
+    {
+      "id": "C15-TRACE-PMR-01",
+      "sourceId": "PR66",
+      "receipt": "c15-pmr-indonesia-pdf.evidencia.json",
+      "sha256FromVerifiedInventory": true,
+      "locator": {"pdfPageOneBased": 5, "printedPage": 5481},
+      "sourceActor": "cuidador_praticando_para_si",
+      "field": "sequencia_a_l",
+      "publishedValue": "12itens; descricao anterior menciona14grupos",
+      "blocked": ["resolver_divergencia_por_IA", "09_11_como_dose2horas", "repeticao_por_movimento_presumida", "ciclo_domestico_inventado"]
+    }
+  ],
+  "metadataOnlySources": [
+    {"sourceId": "PR64", "programmeBodyAvailable": false, "executableImportAllowed": false},
+    {"sourceId": "PR65", "programmeBodyAvailable": false, "executableImportAllowed": false}
+  ],
+  "approvedExecutableProgrammeMappings": [],
+  "nonAiWorkoutClaim": {
+    "preservedHumanAuthorshipEvidence": true,
+    "finishedCaregiverWorkoutPackageDemonstrated": false,
+    "rule": "Programa humano existente pode ser transcrito/traduzido com direitos e revisao, mas citacao isolada nao comprova treino inteiro. Nao escolher exercicios/doses faltantes nem combinar fontes para criar um programa e rotular como original.",
+    "futureUserVisibleSourceDetails": "Titulo, autores, versao, fonte/DOI, localizador e adaptacoes; nao apenas link generico ou nome da IA."
+  },
+  "pauseAndCareBoundary": "Necessidade do produto: permitir interrupcao do treino proprio sem compensar automaticamente dose ou contar como concluido. Nao prescricao destes manuais.",
+  "nextGate": "Selecao de um unico pacote compativel com escopo aprovado e criterios C15-G03/G04, depois gates editoriais/clinicos/ativos/implementacao separados."
+}

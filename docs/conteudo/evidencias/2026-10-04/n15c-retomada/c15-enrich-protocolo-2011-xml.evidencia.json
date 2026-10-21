@@ -1,0 +1,22 @@
+{
+  "id": "c15-enrich-protocolo-2011-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3101179/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:19:44.384646+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ler programa ENRICH identificado na busca e verificar possibilidade domestica propria, supervisao e instrucao completa.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3101179/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 84045,
+  "bodyFile": "../raw/c15-enrich-protocolo-2011-xml.xml",
+  "sha256": "9f5ef3be8c563d654d920e38a75acf3f2ef15f27e7880fdc90cd8349973ac47c"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n21-pereira2017-manual",
+  "url": "https://repositorio.pgsscogna.com.br/bitstream/123456789/2815/1/MANUAL%20DE%20ORIENTA%C3%87%C3%83O%20PARA%20IDOSOS%20NA%20UTILIZA%C3%87%C3%83O%20DE%20ACADEMIAS%20DA%20TERCEIRA%20IDADE.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:36:43.235657+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Manual universitario humano identificado em busca primaria, verificar instrucoes reais por aparelho, autoria profissional, dose e direitos; primeira tentativa sem mirrors.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://repositorio.pgsscogna.com.br/bitstream/123456789/2815/1/MANUAL%20DE%20ORIENTA%C3%87%C3%83O%20PARA%20IDOSOS%20NA%20UTILIZA%C3%87%C3%83O%20DE%20ACADEMIAS%20DA%20TERCEIRA%20IDADE.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1487677,
+  "bodyFile": "../raw/n21-pereira2017-manual.pdf",
+  "sha256": "de7ed58de58924aaaa828453cf2f4279bd8203c025f42ef998b86cc5b0dac67a",
+  "bodyFormatMatchesRequest": true
+}

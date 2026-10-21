@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-15",
+  "niche": "N35",
+  "sourceId": "CI06",
+  "newLocalGets": 4,
+  "usefulBodies": 4,
+  "hashesVerified": 4,
+  "newVisualPages": 0,
+  "localReceipts": [
+    {
+      "receipt": "n35-compendium-calculator.evidencia.json",
+      "bytes": 26107,
+      "sha256": "a9a0581eddb8763384aa1dbe70cab4cc977fbabff5c914df2f65d2f14499cf86",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n35-compendium-older.evidencia.json",
+      "bytes": 101198,
+      "sha256": "be83d2286fd28a801363ffd2ee1588959c211bc2145b91d434deb6a070d4a810",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n35-compendium-units.evidencia.json",
+      "bytes": 70745,
+      "sha256": "7bd98f2d2b2edd6394a574d342f0b4cd0a6d7ea52bbbf51b249f164db7e35f2e",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n35-compendium-use.evidencia.json",
+      "bytes": 137641,
+      "sha256": "ca1b147d61eaa5b4d83a28bc91036fcf0399dc6140b879e3cf118a88df6f3ab5",
+      "hashMatches": true,
+      "httpStatus": 200
+    }
+  ],
+  "authors": "Willis EA, Herrmann SD, Hastert M, Kracht CL, Barreira TV, Schuna JM Jr, Cai Z, Quan M, Conger SA, Brown WJ, Ainsworth BE. Older Adult Compendium, J Sport Health Sci2024;13(1):13–17. DOI10.1016/j.jshs.2023.10.007. EquipeCompendiumliderada porBarbaraE.AinsworthPhDMPH; não atribuir todo código a um autor individual.",
+  "methodEvidence": {
+    "primaryUrl": "https://pubmed.ncbi.nlm.nih.gov/38242593/",
+    "basis": "Resumo primário indexadoPubMed, não artigo integral recebido.",
+    "finding": "Revisão:68artigos,427atividades,99códigos únicos; VO2daatividade dividido por2.7ml/kg/min paraMET60+. Não usar acontagem como número de treinos."
+  },
+  "rights": {
+    "primaryUrl": "https://pacompendium.com/",
+    "localReceipt": "n35-compendium-use.evidencia.json",
+    "finding": "Using theCompendium permite download de pesquisa e uso comercial gratuito das tabelasadulto/idoso/cadeira de rodas, com citação; não modificarMET ou combinar atividades deMETdistintos. Não declara licençaCC, exclusividade ou grantgeral sobre artigos/fotos/logotipos.",
+    "attribution": "Compendium of Physical Activities2024, Older Adult Compendium; Willis etal2024, doi10.1016/j.jshs.2023.10.007; https://pacompendium.com/. Preservar código/descrição/valor e distinguir apresentação própria."
+  },
+  "webBarriers": [
+    {
+      "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818108/",
+      "result": "recaptcha/verificação noleitorweb; não artigo recebido. Nenhum clique/desafio contornado ou cópia poroutrarota doartigo."
+    },
+    {
+      "primaryUrl": "https://pacompendium.com/wp-content/uploads/2024/04/2024-compendium-calculators_examples-1.xlsx",
+      "result": "LeitorwebUnsupportedcontenttype; arquivo oficial depois recebido pelo coletor autorizado, sem bloqueio depermissão. Não executadas macros."
+    },
+    {
+      "manifest": "requisicoes-02.json",
+      "result": "AssertUnsupportedAcceptoverrideantes deGET; lote não executado. requisicoes-03usaAcceptpadrão suportado e recebeu uma única respostaXLSX. Não repetir como nova tentativaHTTP."
+    }
+  ],
+  "costs": "Acesso/uso das tabelas gratuito conforme declaração; não existem SLA, API garantida, precisão individual, calibração de aparelho ou integração contratados. Revisão/produção/manutenção e dispositivos não têm custo apurado."
+}

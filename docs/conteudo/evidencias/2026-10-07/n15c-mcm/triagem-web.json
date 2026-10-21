@@ -1,0 +1,22 @@
+{
+  "date":"2026-10-07",
+  "niche":"N15-C",
+  "method":"pesquisa_dirigida_exploratoria_e_referencias_cruzadas; nao revisao sistematica exaustiva",
+  "webReadsAreAdditionalCollectorCalls":false,
+  "webOnlyBodiesHaveLocalHash":false,
+  "sources":[
+    {"title":"START resources UCL","url":"https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-resources","access":"pagina primaria indexada sem coleta local","decision":"Manuais para cuidador/facilitador e audios anunciados; acesso por formulario/link enviado. Nenhum formulario submetido ou email enviado. Acesso gratuito nao concessao comercial."},
+    {"title":"START session8 carer manual UCL","url":"https://www.ucl.ac.uk/brain-sciences/sites/brain_sciences/files/start_layout_session_8_carer_final_100325.pdf","access":"PDF primario indexado, nao recebido integralmente/localmente","decision":"Aviso copyright Gill Livingston/Penny Rapaport e contato para permissoes; origem adaptada de material Stanford com permissao. Nao inferir licenca comercial gratuita do ensaio clinico."},
+    {"title":"START ensaio2013","url":"https://discovery.ucl.ac.uk/1412690/1/livingstone_barber_clinical_effectiveness_2013.pdf","doi":"10.1136/bmj.f6276","access":"PDF primario indexado, nao recebido integralmente/localmente","decision":"Pista de intervencao guiada de coping com relaxamento para cuidadores. Artigo nao licencia manual/CD; nao extrair dose a partir de resumo."},
+    {"title":"Programa de apoyo al automanejo - Trabajando juntos en colaboracion2025","url":"https://comunicacion-cientifica.com/wp-content/uploads/2025/09/303.-PDF-Programa-de-apoyo-al-automanejo.pdf","doi":"10.52501/cc.303","access":"PDF primario225p; paginas iniciais lidas no leitor web, sem coleta local","decision":"Aviso exige permissao escrita da Red de Automanejo en Enfermedades Cronicas para implementacao; formacao previa de facilitadores16h e materiais externos. Sem permissao/formacao presumidas, nao pacote gratuito comercial aprovado. Exercicio do cuidador e manejo do paciente devem ser separados."},
+    {"title":"Figueiredo et al - exercicios multifuncionais e cuidadores2018","url":"https://periodicos.utfpr.edu.br/rbqv/article/download/7651/5181","access":"PDF primario15p lido web, sem coleta local","decision":"Quase-experimento pequeno,12semanas2vezes/semana; nenhum efeito significativo de qualidade de vida. Sete individuos finais com uma pessoa em ambos os grupos em momentos distintos; nao RCT nem oito individuos independentes. CC BY4 do artigo nao cria instrucoes domesticas ausentes."},
+    {"title":"Lopez Gil - Cuidate mientras cuidas USAL","url":"https://gredos.usal.es/bitstream/10366/166663/1/TFG_L%C3%B3pezGilI_Cu%C3%ADdateMientrasCuidas.pdf","access":"indice primario; abertura bloqueada por robots, sem GET local/retry/contorno","decision":"Pista de intervencao de fisioterapia e pratica em casa para cuidadores de pessoas com paralisia cerebral; nenhum manual, resultado ou direito operacional confirmado pelo corpo."},
+    {"title":"UDC - intervencao fisioterapeutica para cuidadores2015","url":"https://portalinvestigacion.udc.gal/documentos/5e3413ac29995259cf6b5f73","access":"resumo institucional primario web, sem coleta local","decision":"36participantes, educacao e relaxamento/automassagem/alongamento supervisionados. Nao manual completo nem entrega domestica ou licenca recebidos."},
+    {"title":"Xie et al - supportive program internet2024","url":"https://aging.jmir.org/2024/1/e50847/","doi":"10.2196/50847","access":"desafio JS/verificacao na primeira abertura web; sem GET local/retry/contorno","decision":"Referencia do artigo MCM, mas corpo e suplementos nao recebidos; nao considerar programa revisado nem resultados demonstrados nesta rodada."},
+    {"title":"MCM deposito PMC13033505","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC13033505/","access":"recaptcha na abertura web; sem GET local/retry/contorno","decision":"Nao recuperou manual D. Artigo da editora recebido por caminhos publicados normais; ausencia de anexo na pagina recebida nao prova inexistencia global."}
+  ],
+  "newProgrammeSelected":false,
+  "contactWithAuthors":false,
+  "researchClosureApproved":false,
+  "releaseApproved":false
+}

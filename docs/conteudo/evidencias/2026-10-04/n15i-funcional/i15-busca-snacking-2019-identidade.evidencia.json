@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-snacking-2019-identidade",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1155%2F2019%2F7516939&format=json&resultType=core&pageSize=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:03:26.959245+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Identificar deposito OA original de 2019 por DOI, sem inventar URL de suplemento nem repetir 403 do editor.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1155%2F2019%2F7516939&format=json&resultType=core&pageSize=1",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5025,
+  "bodyFile": "../raw/i15-busca-snacking-2019-identidade.json",
+  "sha256": "cb09709bcb2f1671923208a2fdf7b62cad365db0d6035ec953c8737bf9a3780c"
+}

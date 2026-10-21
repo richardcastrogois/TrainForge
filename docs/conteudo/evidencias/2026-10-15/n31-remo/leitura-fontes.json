@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-15",
+  "niche": "N31",
+  "subniche": "remo_em_ergometro",
+  "receiptsReused": [
+    {
+      "originalEvidenceReceipt": "2026-10-15/n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "originalBodySha256": "f80847e912d53f07d5480a080d4348fc07cac2aedbd75095177e00fdac12ca40",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-10-15/n25-natacao/n25-usu-legal.evidencia.json",
+      "originalBodySha256": "dc943d758c5fd1ef139f603a273d776910fb3b21126b794d7d4ba1830be65af7",
+      "rechecked": true,
+      "newNetworkCall": false
+    }
+  ],
+  "newLocalNetworkCalls": 0,
+  "newLocalBodies": 0,
+  "sourceIds": [
+    "PR167",
+    "PR198",
+    "PR199",
+    "PR200",
+    "PR166"
+  ],
+  "primaryWebRead": [
+    {
+      "id": "PR198",
+      "publisher": "Concept2",
+      "url": "https://www.concept2.com/website-terms-and-conditions",
+      "decision": "incompativel_zero",
+      "basis": "Termos de05/10/2022 limitam a pessoal/não comercial, vedam automação/acesso/cópia e modificações sem autorização. Parada após descoberta. Não GET local, plano importado, vídeo baixado, conta ou contato.",
+      "otherPagesObservedBeforeTerms": "Técnica, treino inicial, plano e formação foram lidos antes de conhecer restrição. Não converter em lote de conteúdo. ManualIRF foi aberto na mesma chamada dos termos, sem armazenamento local; não retomado após descoberta.",
+      "factsNotSelected": "Não transcrever rotinas do fabricante como alternativa própria nem buscar cópia emoutrodomínio."
+    },
+    {
+      "id": "PR199",
+      "publisher": "World Rowing",
+      "url": "https://worldrowing.com/document/learn-to-row-handbook/",
+      "pdfUrl": "https://d2cx26qpfwuhvu.cloudfront.net/worldrowing/wp-content/uploads/2020/12/04183535/1313_LearnToRowWithShadows_English.pdf",
+      "webPdfPages": 44,
+      "authorship": "Crédito do conteúdo a SallieMalt; orientação de RosieMayglothling e conselho técnico AxelMüller. Fotos com créditos próprios.",
+      "findings": "Iniciação com instrutor e planos de sessões; seção ergômetro identifica partes/monitor e remete a manuais externos. Seção técnica refere também lâmina/entrada naágua, não tutorial integral de máquina automaticamente.",
+      "rights": "Sem licença de adaptação/comercial identificada nesta leitura; não copiar fotos/esquemas ou transpor curso naágua para máquina. Somente referência, semGETlocal."
+    },
+    {
+      "id": "PR200",
+      "publisher": "UKSCA",
+      "url": "https://cdn.uksca.org.uk/assets/pdfs/UkscaIqPdfs/uksca_news_may08.pdf",
+      "article": "Using the Rowing Machine,31–35,ProfessionalStrengthandConditioning10,2008",
+      "authorship": "Tim Donovan, BSc(Hons),PGCHE,ASCC,PhD; doutorado em fisiologia do remo e trabalho de desenvolvimento de treinadores descritos na biografia histórica da página31. Não registro atual.",
+      "readMethod": "Leitura web do texto nas páginas31–35, não PDF local/hash. Tentativas de screenshot das páginas31–33 retornaram Cache miss, zero páginas visualmente verificadas desta fonte.",
+      "rights": "Sem grant de expressão/fotos confirmado; download local nãoexecutado por rejeição automática. Só métodos/fatos em redação independente com autoria/localizador, PR166, sem copiar expressão ou figuras.",
+      "sourceFactsLocator": "PDF31biografia;32–33método drive/recovery;34–35ajuste/erros, não dados individuais homologados."
+    }
+  ],
+  "USU1997": {
+    "authorship": "PDF7 confirma Patricia A.Deuster,PhD,MPH como autora deCardiorespiratoryConditioning, não apenas editora. Qualificação histórica.",
+    "rowingLocators": [
+      67,
+      68
+    ],
+    "actuallyVisuallyReviewedPdfPages": [
+      7,
+      67,
+      68
+    ],
+    "preview": "../raw/n31-usu-painel.png",
+    "rights": "Aviso USU2: informação pode ser copiada/distribuída salvo indicação; crédito solicitado. Sem afirmar todoPDF de domíniopúblico/imagens livres. Seleção factual, sem tabela/foto reproduzida.",
+    "population": "Guia militar paraSEALs e atletas treinados, não iniciantes idosos poridade.",
+    "methodsAvailable": "Table3-7tem seis tipos de bloco de remo, não foram importados todos. Selecionado somente um bloco20mincom alternância1minforte/1minleve.",
+    "missing": "Treino não define watts/FC individual, frequência semanal/progressão numericamente nem warm/cool próprio desse bloco. Não preencher deN24 ou outra máquina."
+  },
+  "additionalLeadsNotSelected": [
+    {
+      "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/rowing-preventing-injury",
+      "reason": "Ficha de prevenção2014principalmente remo emágua, não bloco dosado/técnica de ergômetro; não importar conduta antiga para lesão."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12289236/",
+      "reason": "Metadados de cinemática2025em13remadoraselites/assentos diferentes, não aula; licençaIJESND declarada ali não prova retroativamente grant específico doartigoArchila2021."
+    }
+  ],
+  "rejectedLocalDownload": {
+    "manifest": "requisicoes.json",
+    "executed": false,
+    "reason": "Armazenamento integralUKSCA sem licença de reuso confirmada. Revisão automática indicou usar leituraweb/metadados ou fonte licenciada.",
+    "alternative": "Leituraweb e fontesUSU já recebidas, sem reexecutar download por outra rota."
+  },
+  "releaseApproved": false
+}

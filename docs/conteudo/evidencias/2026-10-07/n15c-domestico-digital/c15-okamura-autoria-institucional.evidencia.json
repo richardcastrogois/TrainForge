@@ -1,0 +1,23 @@
+{
+  "id": "c15-okamura-autoria-institucional",
+  "url": "https://psrlab.hiroshima-u.ac.jp/okamura.htm",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:51:52.781750+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina institucional de coautor, credencial e vinculo profissional publicados; nao presumir identidade do enfermeiro/fisioterapeuta instrutor por coautoria.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://psrlab.hiroshima-u.ac.jp/okamura.htm",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 211513,
+  "bodyFile": "../raw/c15-okamura-autoria-institucional.html",
+  "sha256": "5098c31c7fcb7dd04497642725048009b12655fe16504359e08619498a970bb9"
+}

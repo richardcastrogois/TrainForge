@@ -1,0 +1,23 @@
+{
+  "id": "n25-toubekis-profile",
+  "url": "https://en.phed.uoa.gr/staff/academic_staff/staff/argyris_toubekis/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:57:19.724560+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Qualificação primária e didática de natação do coautor responsável por metodologia/supervisão do estudo2023",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://en.phed.uoa.gr/staff/academic_staff/staff/argyris_toubekis/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 77154,
+  "bodyFile": "../raw/n25-toubekis-profile.html",
+  "sha256": "da54560ab9a395bcd5ae5f15bd5e71588e62fdcd1cea89e73c5d951115b7e8d5"
+}

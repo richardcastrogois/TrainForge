@@ -1,0 +1,60 @@
+{
+  "niche": "N08-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 5,
+  "verifiedDependencies": 4,
+  "proposedOperations": 6,
+  "fictionalScenarios": 3,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/alimentacao-contexto/a08-fda-cuidador.evidencia.json",
+      "url": "https://www.fda.gov/consumers/womens-health-topics/caring-others-resources-help-you",
+      "sha256": "34b39d0ce4c0c3414329f73880b4b9108844a5d1cec41391f09251ea3e02c125"
+    },
+    {
+      "record": "2026-10-04/alimentacao-contexto/a08-fda-seguranca-idosos.evidencia.json",
+      "url": "https://www.fda.gov/food/people-risk-foodborne-illness/food-safety-older-adults-and-people-cancer-diabetes-hivaids-organ-transplants-and-autoimmune",
+      "sha256": "10bb8b9bb73a5978aa24ef1eeaadf274483c796a3c6f298e53a68aae81ff07d7"
+    },
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    },
+    {
+      "record": "2026-09-29/n08-receitas/n08-medline-lentilhas.evidencia.json",
+      "url": "https://medlineplus.gov/recipes/lentil-confetti-salad/",
+      "sha256": "2dd3253db2df6eba6f5b92a23e14699185efeaa15715401e1cfeb2d1f71b2e10"
+    },
+    {
+      "record": "2026-09-29/n08-receitas/n08-medline-direitos.evidencia.json",
+      "url": "https://medlineplus.gov/about/using/usingcontent/",
+      "sha256": "1adc89f3956cc987655bb4321e4383d69349373500d8885760e0271e033314d0"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-09-29/n08-receitas/amostra-receitas.json",
+      "artifactSha256": "0e7d35e83dd2c7266cdca090f8668613645deb4eed06de8fb9e5ccc815c98572"
+    },
+    {
+      "file": "2026-09-29/n08-receitas/resumo-receitas.json",
+      "artifactSha256": "a93457804a8331cfaafbcd22568d47aa700dd39ea29bb722b673d376fe3bd190"
+    },
+    {
+      "file": "2026-10-04/n06i-imagens/pesquisa-complemento.json",
+      "artifactSha256": "c97f485560c11826537737113b66f338874729ed26aac418273b902698d63765"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    }
+  ],
+  "next": "N09-I; N21 retida pelos complementos ainda abertos."
+}

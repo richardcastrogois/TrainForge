@@ -1,0 +1,24 @@
+{
+  "id": "c15-alzoc-termos",
+  "url": "https://www.alzoc.org/terms-of-use/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:51:38.046086+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 500,
+  "use": "research_only",
+  "purpose": "Termos primarios da mesma entidade: nao tratar acesso livre ou disclaimer como licenca de adaptacao comercial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.alzoc.org/terms-of-use/",
+  "contentType": "application/json; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 125,
+  "bodyFile": "../raw/c15-alzoc-termos.html",
+  "sha256": "ddb641e8f1a44865b5eef90b99282a89bdcef2c445240c39a186961948216e2b",
+  "error": "HTTP 500"
+}

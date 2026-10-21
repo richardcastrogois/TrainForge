@@ -1,0 +1,23 @@
+{
+  "id": "n19-wendler-bbb",
+  "url": "https://www.jimwendler.com/blogs/jimwendler-com/101077382-boring-but-big",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:32:28.124815+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Conferir fonte original BBB, variantes, carga relativa e dependencia do sistema 5/3/1; nao comprar livro.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.jimwendler.com/blogs/jimwendler-com/101077382-boring-but-big",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 22,
+  "bodyFile": "../raw/n19-wendler-bbb.html",
+  "sha256": "aca34a237cc49ea34c2c42a5fad3363cf426e9ff67c81f68cb73d4c69ff9e0ff",
+  "error": "HTTP 404"
+}

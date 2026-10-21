@@ -1,0 +1,23 @@
+{
+  "id": "c15-jakobsen2014-protocolo-html",
+  "url": "https://link.springer.com/article/10.1186/1471-2474-15-119",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:55:25.817870+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo original10semanas/5x10min WORKsupervisionado/HOMEfaixas, materiais/instrucoes/qualificacao/desenho e direitos; figuras/cartazes nao presumidos recebidos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/1471-2474-15-119?error=cookies_not_supported&code=df956e84-d9d3-4816-b0d6-75b852cc75f9",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 412490,
+  "bodyFile": "../raw/c15-jakobsen2014-protocolo-html.html",
+  "sha256": "5f415067734000bc872b55377d1fcf4cfec7a087e1a27477f68ab6249366f57a"
+}

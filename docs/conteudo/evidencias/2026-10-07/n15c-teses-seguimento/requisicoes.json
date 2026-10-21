@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "scope": "N15-C somente: primeiras coletas locais de teses/registro de seguimento; nao repetir PDFs anteriores nem contornar barreiras. PDF de pesquisa sem teto autorizado; outros formatos2MiB.",
+  "requests": [
+    {"id":"c15-montero-tese-registro","url":"https://gredos.usal.es/handle/10366/137103","extension":"html","purpose":"Registro institucional da tese2017, identidade/metadados e licenca propria; nao herdar CC BY do artigo2020."},
+    {"id":"c15-montero-tese-pdf","url":"https://gredos.usal.es/bitstream/handle/10366/137103/DME_MonteroCuadradoF_Efectividad.pdf?isAllowed=y&sequence=1","accept":"application/pdf","extension":"pdf","purpose":"Primeiro PDF tese2017 publicado no registro: buscar anexo de movimentos e correspondencia do ensaio; pesquisa apenas, NC-ND institucional nao permite importar comercialmente."},
+    {"id":"c15-revieew-tese-registro","url":"https://addi.ehu.es/handle/10810/68569","extension":"html","purpose":"Registro primario da tese2024 de AnderEspin; obter URL publicada do PDF e direitos especificos, sem supor que artigo licencia tese inteira."},
+    {"id":"c15-revieew-seguimento-pubmed","url":"https://pubmed.ncbi.nlm.nih.gov/40561221/","extension":"html","purpose":"Registro primario de seguimento2025 DOI10.1097/JOM.0000000000003474: identificar resultado/ativos da fase autonoma sem considerar resumo como manual integral."},
+    {"id":"c15-haryati2018-editorial","url":"https://ajouronline.com/index.php/AJAS/article/view/5560","extension":"html","purpose":"Pista primaria PMR/respiracao cuidador paliativo2018, verificar resultados, anexos e licenca sem usar sintese secundaria como evidencia."}
+  ]
+}

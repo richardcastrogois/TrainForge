@@ -1,0 +1,10 @@
+{
+  "requests": [
+    {
+      "id": "n39-nateraw-food101-loader",
+      "url": "https://huggingface.co/datasets/nateraw/food101/resolve/66550ec/food101.py",
+      "purpose": "Script Apache 2.0 na revisão mostrada pelo blob primário; somente leitura estática. Comparar ordem de classes 16/17 com config sem presumir que a versão atual foi usada no treinamento antigo. Não executar loader nem baixar fotos.",
+      "extension": "txt"
+    }
+  ]
+}

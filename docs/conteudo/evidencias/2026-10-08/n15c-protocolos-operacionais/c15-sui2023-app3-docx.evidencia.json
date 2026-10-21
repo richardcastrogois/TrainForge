@@ -1,0 +1,25 @@
+{
+  "id": "c15-sui2023-app3-docx",
+  "url": "https://formative.jmir.org/2023/1/e42861/extfile/formative_v7i1e42861_app3.docx",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:52:59.215878+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 202,
+  "use": "research_only",
+  "purpose": "Arquivo18KB nomeado no JATS app3; lista de fidelidade e dosagem, sem supor que contenha roteiro.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://formative.jmir.org/2023/1/e42861",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/c15-sui2023-app3-docx.docx",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 202"
+}

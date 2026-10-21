@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-15",
+  "niche": "N40",
+  "kind": "Synthetic contract/arithmetic verification, no image estimator",
+  "checks": [
+    {
+      "check": "300 servidos, 100 restantes, mesma base",
+      "result": {
+        "status": "derived_from_confirmed_masses",
+        "grams": "200"
+      },
+      "passed": true
+    },
+    {
+      "check": "Restante desconhecido não é zero",
+      "result": {
+        "status": "unknown",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Servido desconhecido",
+      "result": {
+        "status": "unknown",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Prato compartilhado",
+      "result": {
+        "status": "unknown",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Transferências não registradas",
+      "result": {
+        "status": "unknown",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Comidas diferentes",
+      "result": {
+        "status": "unknown",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Não clamp de restos maiores",
+      "result": {
+        "status": "inconsistent",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Valor negativo",
+      "result": {
+        "status": "inconsistent",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "Zero explicitamente confirmado",
+      "result": {
+        "status": "derived_from_confirmed_masses",
+        "grams": "0"
+      },
+      "passed": true
+    },
+    {
+      "check": "Decimal conservado",
+      "result": {
+        "status": "derived_from_confirmed_masses",
+        "grams": "130.3"
+      },
+      "passed": true
+    },
+    {
+      "check": "NaN recusado",
+      "result": {
+        "status": "inconsistent",
+        "grams": null
+      },
+      "passed": true
+    },
+    {
+      "check": "MAE normalizado pela média não é MAPE individual",
+      "passed": true
+    },
+    {
+      "check": "Mesmo tamanho projetado com volume 8x em exemplo geométrico",
+      "passed": true
+    },
+    {
+      "context": "idoso_casa",
+      "check": "Foto/label sozinhos não fornecem massa consumida",
+      "passed": true
+    },
+    {
+      "context": "idoso_academia",
+      "check": "Foto/label sozinhos não fornecem massa consumida",
+      "passed": true
+    },
+    {
+      "context": "idoso_praca",
+      "check": "Foto/label sozinhos não fornecem massa consumida",
+      "passed": true
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "check": "Foto/label sozinhos não fornecem massa consumida",
+      "passed": true
+    }
+  ],
+  "passed": 17,
+  "failed": 0,
+  "maeExample": {
+    "truth": [
+      100,
+      400
+    ],
+    "prediction": [
+      200,
+      400
+    ],
+    "maeGrams": 50,
+    "maePercentOfMean": 20.0,
+    "mapePercent": 50.0
+  },
+  "notAClaim": "O exemplo geométrico não infere massa real. Subtração exige massas com base/identidade confirmadas. Não há estimador visual instalado/testado.",
+  "appTested": false,
+  "visualMassModelTested": false,
+  "clinicalValidation": false,
+  "releaseApproved": false
+}

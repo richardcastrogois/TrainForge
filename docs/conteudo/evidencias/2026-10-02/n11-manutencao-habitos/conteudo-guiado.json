@@ -1,0 +1,144 @@
+{
+  "niche": "N11",
+  "date": "2026-10-02",
+  "status": "concluido_para_pesquisa",
+  "scope": "Manutencao, habitos sustentaveis e qualidade alimentar geral. Nao e dieta individual, plano alimentar completo, tratamento clinico ou programa de lancamento homologado.",
+  "guides": [
+    {
+      "id": "G11-01",
+      "sourceId": "NU25",
+      "title": "Eating & Physical Activity to Lose or Maintain Weight",
+      "publisher": "NIDDK",
+      "sourceUrl": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "evidence": "n11-niddk-maintain.evidencia.json",
+      "sha256": "f44979938747b8e23ad33c7aa408127b5603aea44f3fd8f6d3f30a895f2e2f95",
+      "format": "HTML institucional; nao API de dieta",
+      "sourceDate": "2023-05",
+      "audience": "adultos; orientacao geral de habitos e manutencao",
+      "reuseDecision": "Texto candidato segundo politica NIDDK; remover logos, nao implicar endosso e conferir graficos/terceiros.",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-02",
+      "sourceId": "NU25",
+      "title": "Health Tips for Adults",
+      "publisher": "NIDDK",
+      "sourceUrl": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+      "evidence": "n11-niddk-adults.evidencia.json",
+      "sha256": "83b3b811b1a468e98db74cd195f09751cdb9ad1e56dc2b2dd34b0755854f0e1b",
+      "format": "HTML institucional com diario alimentar ilustrativo",
+      "sourceDate": "2023-07",
+      "audience": "adultos; educacao geral e autocuidado",
+      "reuseDecision": "Texto candidato segundo politica NIDDK; exemplos dos EUA exigem localizacao pt-PT e revisao editorial.",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-03",
+      "sourceId": "NU26",
+      "title": "Tips for Healthy Eating for a Healthy Weight",
+      "publisher": "CDC / NCCDPHP",
+      "sourceUrl": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html",
+      "evidence": "n11-cdc-healthy-eating.evidencia.json",
+      "sha256": "cc46028a518f7181f3b8cf3b76c7151a2e68a6c2e6fd9dadbadf0cddc6a2209c",
+      "format": "HTML institucional; grupos alimentares e exemplos praticos",
+      "sourceDate": "2026-04-29",
+      "audience": "publico geral; alimentacao saudavel para gestao de peso",
+      "reuseDecision": "Condicional para adaptacao: credito, nao endosso, conteudo substantivo sem alteracao e revisao de atualidade.",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-04",
+      "sourceId": "NU27",
+      "title": "Guia para o Aconselhamento Breve: 10 passos para a promocao da alimentacao saudavel",
+      "publisher": "PNPAS / DGS",
+      "sourceUrl": "https://alimentacaosaudavel.dgs.pt/biblioteca-pnpas/doc/Guia_10Passos_Info_Geral_Utente-1",
+      "evidence": "n11-dgs-10-passos.evidencia.json",
+      "sha256": "c9ef1f72e092b64b812d9cfa45d343beecf566da4e087f89812da90080ecc8da",
+      "format": "PDF oficial portugues; cinco paginas",
+      "sourceDate": "sem data de revisao extraida nesta coleta",
+      "audience": "utentes em Portugal; aconselhamento breve de alimentacao saudavel",
+      "reuseDecision": "Referencia local forte, mas licenca comercial aberta nao demonstrada; nao copiar/adaptar no app sem autorizacao ou regra clara.",
+      "releaseApproved": false
+    }
+  ],
+  "rightsRecords": [
+    {
+      "id": "R11-01",
+      "sourceId": "NU25",
+      "evidence": "n11-niddk-copyright.evidencia.json",
+      "sha256": "c11dd24f95f04af9eaf3c54513f61d8c2b995b682b7550750e8f5e82127bf1b5",
+      "finding": "A maioria das informacoes NIDDK e livre para reproduzir, com excecoes para documentos de terceiros, logos e alguns graficos; edicoes nao podem sugerir endosso ou aconselhamento medico especifico."
+    },
+    {
+      "id": "R11-02",
+      "sourceId": "NU26",
+      "evidence": "n11-cdc-rights.evidencia.json",
+      "sha256": "aa9c107b28a3161f2802eb7d054c5c110cebca3de49853c6f8a79ad2b81d9b5e",
+      "finding": "Materiais CDC geralmente sao dominio publico, mas exigem credito, nao endosso, disponibilidade gratuita, cuidado com alteracoes substantivas e exclusoes para imagens/terceiros."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "G11-L01",
+      "title": "Manter escolhas, nao perseguir uma dieta perfeita",
+      "draftPtPT": "A manutencao depende de escolhas repetiveis, apoio e retorno apos deslizes; o app deve ajudar a recomecar sem transformar cada desvio em falha.",
+      "guideIds": ["G11-01", "G11-02"],
+      "futureFields": ["habitGoal", "setbackNote", "restartAction"],
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-L02",
+      "title": "Comer com variedade e base clara",
+      "draftPtPT": "Fruta, horticolas, cereais integrais, proteinas, lacteos/alternativas e gorduras escolhidas precisam aparecer como padrao alimentar, nao como lista rigida.",
+      "guideIds": ["G11-01", "G11-03", "G11-04"],
+      "futureFields": ["foodGroupCoverage", "weeklyVariety", "localExample"],
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-L03",
+      "title": "Criar ambiente favoravel",
+      "draftPtPT": "Lista de compras, snacks preparados e refeicoes sem distracao podem ser acoes registaveis; nao exigem prescrever calorias individuais.",
+      "guideIds": ["G11-02"],
+      "futureFields": ["shoppingList", "snackPlan", "mealContext"],
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-L04",
+      "title": "Usar o diario como observacao",
+      "draftPtPT": "Registar hora, alimento, contexto e melhoria possivel serve para aprender padroes; nao e prova de culpa nem plano nutricional.",
+      "guideIds": ["G11-02"],
+      "futureFields": ["mealTime", "foodItems", "feelingOptional", "possibleImprovement"],
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-L05",
+      "title": "Localizar para Portugal sem copiar automaticamente",
+      "draftPtPT": "O guia portugues ajuda a linguagem, exemplos e prioridades locais, mas os direitos ainda precisam de autorizacao antes de virar conteudo distribuido.",
+      "guideIds": ["G11-04"],
+      "futureFields": ["ptPTText", "rightsStatus", "sourceAttribution"],
+      "reviewStatus": "pendente_direitos_editorial",
+      "releaseApproved": false
+    },
+    {
+      "id": "G11-L06",
+      "title": "Separar manutencao de tratamento",
+      "draftPtPT": "O app pode apoiar rotina e qualidade alimentar; condicoes clinicas, medicamentos, gravidez ou necessidades especiais exigem profissional e nao devem ser resolvidas por regra automatica.",
+      "guideIds": ["G11-01", "G11-02"],
+      "futureFields": ["healthCaveat", "professionalSupportPrompt"],
+      "reviewStatus": "pendente_editorial_nutricional_ptPT",
+      "releaseApproved": false
+    }
+  ],
+  "checks": {
+    "guides": 4,
+    "rightsRecords": 2,
+    "lessons": 6,
+    "http200Evidence": 6,
+    "allBodiesHashed": true,
+    "releaseApproved": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-kirmizigil-bio-pdf",
+  "url": "https://www.emu.edu.tr/stafffile/WHFQEKX.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:02:19.832632+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Credencial primaria institucional da orientadora BerkiyeKirmizigil e vinculo com tese; nao registrar ou divulgar dados pessoais desnecessarios do CV.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.emu.edu.tr/stafffile/WHFQEKX.pdf",
+  "contentType": "application/pdf; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 760593,
+  "bodyFile": "../raw/c15-kirmizigil-bio-pdf.pdf",
+  "sha256": "76c29e5ff21e8f4aa62047da361cc0ef4fbe1298babbed9f244c0af6b917f789",
+  "bodyFormatMatchesRequest": true
+}

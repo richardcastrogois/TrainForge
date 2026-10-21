@@ -1,0 +1,23 @@
+{
+  "id": "c15-mbi-fragil2025-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT04861610",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:26:45.914186+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro citado noartigo para confirmarversao/elegibilidade/documentos/results, semtransformarstatus em resultado oupresumir ensaioequivalente pornome.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT04861610",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 8648,
+  "bodyFile": "../raw/c15-mbi-fragil2025-registro-json.json",
+  "sha256": "4d15e1653b99c1ac7f98156c2bdf6e1ccbfe3950868960e31cd6ce034d0495a4"
+}

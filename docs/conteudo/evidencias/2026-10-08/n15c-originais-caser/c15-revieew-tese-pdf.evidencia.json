@@ -1,0 +1,25 @@
+{
+  "id": "c15-revieew-tese-pdf",
+  "url": "https://addi.ehu.es/bitstream/handle/10810/68569/TESIS_ESPIN_ELORZA_ANDER.pdf?isAllowed=y&sequence=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:50:43.125392+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Tese original de Espin2024: procurar anexos/instrucoes/aquecimento/retorno, autoria e direitos sem confundir PDF com videos ou manual externo recebido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://addi.ehu.es/bitstream/handle/10810/68569/TESIS_ESPIN_ELORZA_ANDER.pdf?isAllowed=y&sequence=1",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1551,
+  "bodyFile": "../raw/c15-revieew-tese-pdf.pdf",
+  "sha256": "370ad249c0d59bffda3ead83846219a224cc5555f063a91f0cf98785449c1ff7",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

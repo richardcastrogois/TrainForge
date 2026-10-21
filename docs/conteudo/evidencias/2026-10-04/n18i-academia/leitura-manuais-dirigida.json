@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-04",
+  "updatedAt": "2026-10-05",
+  "niche": "N18-I",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "scope": "Busca dirigida de instrucao operacional para academia de idosos. Nao pesquisa N21. Pastas/manifesta preservam data de inicio; recebimentos guardam horario UTC real.",
+  "readMethod": "JATS primarios, metodos/licenca/anexos; OOXML w:t do Table_1.DOCX Coelho; texto PDF dos planos/teses e inspecao visual somente MoveStrong p20, Pagan p3 e PASSWORD p7. Nao leitura visual integral de PDFs/DOCX nem reproducao de videos.",
+  "sources": [
+    {
+      "record": "i18-mhealth-forca-2026-xml.evidencia.json",
+      "doi": "10.2196/87332",
+      "finding": "Codesign de tecnologia de forca, nao ciclo integral de exercicios selecionado. Anexos declarados: duas listas de perguntas, apresentacao de codesign de 14123 KB e citacoes. Apresentacao nao recebida; nao prova de tutorial, software funcional ou licenca de ativos.",
+      "selected": false
+    },
+    {
+      "family": "PR34",
+      "record": "i18-coelho-anexos-2021.evidencia.json",
+      "doi": "10.3389/fmed.2021.702436",
+      "member": "Table_1.DOCX",
+      "bytes": 691692,
+      "sha256": "f6303ec3c13ba66288b49cb96bab6d1712185ca9e8ef763f656cf26be50cf722",
+      "finding": "Texto de todas as celulas OOXML lido: procedimentos de avaliacao fisica/cognitiva, nao manual de treino. Contracao de handgrip e cinco levantamentos rapidos sao testes, nao novas doses. Dois TIFF do ZIP nao inspecionados; nao afirmar que demonstram movimentos. Atualiza recebimento sem apagar triagem anterior.",
+      "selected": false
+    },
+    {
+      "record": "i18-calm-protocolo-2016-xml.evidencia.json",
+      "doi": "10.1186/s13063-016-1512-0",
+      "license": "CC BY 4.0",
+      "studyType": "protocolo, nao resultados",
+      "population": "Maiores de 65 anos independentes, exclusoes clinicas/cognitivas/medicacao da tabela 1; mais de 1 h semanal de forca pesada excluido. Nao impor teto de 80 anos nao demonstrado no corpo.",
+      "branches": [
+        {
+          "id": "CALM-LITW",
+          "environment": "casa",
+          "delivery": "instrucao semanal no primeiro mes, depois mensal e visitas domiciliares",
+          "dose": "Sequencia semanal 3/4/5/4 sessoes; cinco movimentos descritos em texto, series cronometradas e bandas. Carga/progressao por execucao e profissional.",
+          "notForGymInstruction": "Extensao de joelho, levantar/sentar, flexao de joelho, puxada com banda na porta, flexao na parede/chao nao ensinam os aparelhos HRTW."
+        },
+        {
+          "id": "CALM-HRTW",
+          "environment": "academia",
+          "dose": "3 sessoes/semana por 1 ano. Ciclos de 3 meses: inferiores 3x12 a 12RM ate 5x6 a 6RM; superiores 3x12 ate 4x10; ~2 min de repouso; ultimas duas semanas de cada ciclo taper/teste. Carga aumenta na proxima sessao quando ultima serie permite mais repeticoes.",
+          "machines": [
+            "TechnoGym Super Executive Line: extensao de joelho/leg press",
+            "TechnoGym MED Line: leg curl",
+            "TR Equipment 9014: pulldown",
+            "TR Equipment 9025: arm stretch/push"
+          ],
+          "instructionGap": "Coluna de academia informa modelo/dose, nao regulagem/postura/apoios/execucao integral."
+        }
+      ],
+      "cointervention": "Dois suplementos diarios, cada um com 10 g sacarose e 20 g de whey nos ramos de exercicio. Nao suplemento alimentar recomendado pelo APK nem efeito independente demonstrado.",
+      "selected": false
+    },
+    {
+      "record": "i18-baixo-volume-2025-xml.evidencia.json",
+      "doi": "10.3389/fspor.2025.1542188",
+      "environment": "centro de dia portugues, bandas, nao maquinas de academia",
+      "dose": "12 semanas, 3 vezes/semana, >=48 h; 2 series, 6-10 repeticoes, 90 s descanso; tres movimentos por sessao. Desenho <=15 min; relato <=10 min, nao fundir duracoes.",
+      "finding": "Tres movimentos primarios e seis secundarios sem distribuicao integral de todas as sessoes. Videos de forma correta projetados em tela nao recebidos/licenciados. Funcionarios/cuidadores treinados em duas sessoes supervisionam grupos <=8; cuidador e supervisor, nao exercitante para si. Sem fisiologista em cada sessao nao significa sem supervisao.",
+      "selected": false
+    },
+    {
+      "record": "i18-pact-treino-2021-xml.evidencia.json",
+      "doi": "10.1371/journal.pone.0258559",
+      "license": "CC BY",
+      "population": "70-85, caminhar 500 m sem assistencia, MMSE >=24, sem resistencia regular/<150 min moderados semanais; exclusoes clinicas/comunicacao da fonte.",
+      "delivery": "Duas sessoes supervisionadas 45-60 min: caminhada/equilibrio e maquinas HUR/equilibrio, mais pratica domestica e aconselhamento aerobico. Media observada 51 semanas/46 sessoes de resistencia/36 caminhadas; nao 52 modelos identicos.",
+      "supplement": {
+        "record": "i18-password-plano-pdf.evidencia.json",
+        "bytes": 2374367,
+        "pages": 13,
+        "physicalPagesTextExamined": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "physicalPagesVisuallyExamined": [
+          7
+        ],
+        "finding": "Plano de pesquisa, nao manual dos aparelhos. Tabela p7 e visivel apesar de ausente do texto extraido: meses 1/2-4/5-7/8-10/11-12; academia 1/semana, caminhada nordica supervisionada introduzida desde mes 2 com 20/30/30/40 min. Caminhada domestica distribuida na semana 60/60-80/80-100/120/110-120 min; ultimo bloco nao corrigido para progressao monotona. Texto p8 identifica duas academias municipais HUR SmartCard, nao tutorial dos modelos."
+      },
+      "accessLimit": "ZIP OA anterior HTTP200 acima de 2 MiB, sem corpo/hash; nao repetido. PDF S2 individual recebido pela primeira vez com limite explicito 4 MiB, outro recurso. Nao contorno de acesso.",
+      "selected": false
+    },
+    {
+      "record": "i18-movestrong-2021-xml.evidencia.json",
+      "doi": "10.1371/journal.pone.0257742",
+      "license": "CC BY",
+      "population": ">=60, FRAIL >=1 e >=1 condicao cronica diagnosticada; exclusoes de treino similar, paliacao, atividades diarias/cognicao e contraindicacoes. Amigo/cuidador so participa se elegivel tambem.",
+      "delivery": "YMCA/clinica/residencias, 1:1 inicial por fisiologista, grupos <=6, 8 semanas 2/semana, nutricao com profissional. Nao rotina autonoma universal.",
+      "dose": "Primeiras duas semanas tecnica; volume ate 3 series de 8, alvo <8RM e progressao quando >8 repeticoes; sete categorias de movimento. Nao preencher variacoes individualizadas.",
+      "supplement": {
+        "record": "i18-movestrong-anexos.evidencia.json",
+        "member": "pone.0257742.s002.pdf",
+        "bytes": 226113,
+        "sha256": "b68e95792b8e31ccf7a12c0fee541593976db280bbb623c84aa0f0846ed18270",
+        "pages": 26,
+        "physicalPagesVisuallyExamined": [
+          20
+        ],
+        "finding": "Tabela 2 p20 tem categorias, mas as quatro colunas de variacoes estao visualmente vazias; nao mera falha de extracao. Manual entregue aos participantes/instrutores e citado, nao contido nesse quadro."
+      },
+      "editionDifferences": [
+        "Protocolo: aquecimento 5-7 min e discussao 10 min; artigo: aquecimento 5/retorno-discussao 5, tabela TIDieR sessao 60-90 min.",
+        "Protocolo razao 1:5 versus artigo grupos <=6.",
+        "Alvo proteico >1.5 g/kg protocolo versus 1.2 g/kg artigo; nao unir nem prescrever alimento pelo APK."
+      ],
+      "selected": false
+    },
+    {
+      "records": [
+        "i18-tese-wang-metadata.evidencia.json",
+        "i18-tese-wang-pdf.evidencia.json",
+        "i18-tese-segunda-metadata.evidencia.json",
+        "i18-tese-rodrigues-pdf.evidencia.json"
+      ],
+      "finding": "Metadados primarios e PDFs recebidos: Ellen Wang 1452353 bytes/121 paginas, Isabel Braganca Rodrigues 1717424 bytes/181 paginas. Ambos declaram copyright das autoras 2021 e disponibilidade publica, nao autorizacao comercial. Nenhum arquivo incorporado em PdfReader.attachments nem anotacao FileAttachment observada. Wang p121 lista Participant Program Instructions/Instructor Manual_v4 mas nao os entrega como anexos. Variante At Home usa Physitrack e sessoes individuais remotas; nao manual equivalente ao estudo original em grupo. Rodrigues inclui artigo original, nao manual integral descoberto.",
+      "selected": false
+    },
+    {
+      "record": "i18-eckardt-2016-xml.evidencia.json",
+      "doi": "10.1186/s12877-016-0366-3",
+      "license": "CC BY 4.0",
+      "finding": "Ensaio de 75, diferente do de 68 de 2019/2020: tres ramos 10 semanas, 2/semana/60 min; semana inicial +3 blocos de3, 1-2x10 baixo peso/2x12 50%/3x12 60%/4x12 60%. Smith barra na anca tambem explicito; instabilidade exige instrutores/apoios. Supervisao permanente 5:1 primeiras duas semanas, depois10:1. Tabela angular e equipamentos nao instrucao integral; figuras fluxo/desfechos, nao demonstracoes. Exclusao FAB-D <18 contradiz medias basais ~16 e texto menciona40-60% versus tabela50-60%; conservar, nao corrigir.",
+      "selected": false
+    },
+    {
+      "record": "i18-bestform-2022-xml.evidencia.json",
+      "doi": "10.2147/CIA.S367858",
+      "license": "CC BY-NC 3.0",
+      "finding": "6 meses em academias de residencias, >=2/semana/45min. 8 semanas2series15-20 depois2-3series12; HUR/pneumaticos/plataforma/ergometros, ajustes pelo profissional e supervisao ainda ao final. Nao postura/modelos integrais nem caminho comercial gratuito. Media85.6, faixa74-103; nao transformar ausencia de eventos relacionados em risco zero.",
+      "selected": false
+    },
+    {
+      "record": "i18-pagan-2024-xml.evidencia.json",
+      "doi": "10.3389/fragi.2024.1335534",
+      "license": "CC BY; versao nao declarada no texto local",
+      "population": "Sem resistencia de membros inferiores por6meses, amostra final30/media71. Exclusoes neuromusculares/metabolicas/cancer, cirurgia/infarto recente, auxiliares de marcha, contraindicoes/medicacao; intolerancia lactose excluida por cointervencao.",
+      "delivery": "UCF, familiarizacao e todas12sessoes com investigadores como spotters; 6semanas2/semana>=48h. Nao academia de praca nem pratica domestica independente.",
+      "branches": [
+        {
+          "id": "PAGAN-TRAD",
+          "dose": "Trap-bar deadlift/leg press/leg extension/leg curl em ordem, 3series85%1RMestimado/falha, 3min descanso, concentricamente rapido. Ajuste serie-a-serie: 2reps reduz,10reps aumenta; alvo3-9, nao regra arbitraria de progressao por idade.",
+          "gap": "Figura esquematica nao regula maquinas nem explica todas as posturas/travas/apoios."
+        },
+        {
+          "id": "PAGAN-FUNC",
+          "dose": "Coletete: levantar da cadeira/TUG/calcanhares/marcha4m, 3x5 e <=1min descanso, rapido; carga inicial2kg mulheres/5kg homens, incremento2ou5kg condicionado pelo desempenho/recuperacao avaliado pela equipe.",
+          "gap": "Figura levantar/sentar com bracos a frente versus teste com bracos cruzados; nao equivalencia de teste e treino ou tutorial integral confirmado."
+        }
+      ],
+      "cointervention": "30 g proteina antes e30depois de cada sessao, ambos grupos; nao prescrita pelo APK nem efeito independente prometido.",
+      "visual": {
+        "record": "i18-pagan-pdf.evidencia.json",
+        "bytes": 2727540,
+        "pages": 18,
+        "physicalPagesVisuallyExamined": [
+          3
+        ],
+        "figure": "1",
+        "finding": "Esquemas de oito movimentos, nao pessoas identificaveis. Nao conjunto completo de regulagens nem sequencias de execucao. Outras figuras sao desfechos/fluxo, nao selecionadas."
+      },
+      "accessLimit": "WebP figura1 HTTP406/1346bytes preservado; URL nao repetida. Edicao PDF distinta recebida200 com limite4MiB para inspecao.",
+      "selected": false
+    }
+  ],
+  "decisions": [
+    "N18-I permanece parcial: G03 de instrucao/elementos essenciais continua falso. Nenhum modelo de maquina foi substituido por nome ou musculo.",
+    "N19 deve reutilizar estas comparacoes sem recapturar corpos; objetivos/periodizacao e cointervencoes permanecem ligados a cada fonte.",
+    "N20 deve reutilizar auditoria de figuras e manuais, com zero mapeamentos novos aprovados.",
+    "Nao foram contratados instrutores, acesso a academia, kits ou parceiros; requisitos de entrega do estudo nao recursos oferecidos pelo app.",
+    "Resultados de busca com sigla LISA misturavam assuntos; busca por nome completo identificou protocolo original BY-NC e seguimentos BY-NC/ND, nao novos candidatos comerciais.",
+    "Divergencias essenciais/manuais nao recebidos continuam lacunas de pesquisa, nao transferidos silenciosamente para homologacao. N21 nao iniciada."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "niche": "N20",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 0,
+  "verifiedDependencies": 4,
+  "proposedOperations": 0,
+  "fictionalScenarios": 6,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [],
+  "dependencyEvidence": [
+    {
+      "file": "wger-amostra-ampliada.json",
+      "artifactSha256": "4836d4dd798d55e1b2b45b1a0338c786c11a8dc54c3dad17b55fe18cc4a89fbc"
+    },
+    {
+      "file": "2026-10-03/n20-instrucao-academia/amostra-instrucao.json",
+      "artifactSha256": "7f7f9e4f266e296cb6a0d09561d44f17c239b3b26b69a6b2cfbf178357e59e70"
+    },
+    {
+      "file": "2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "artifactSha256": "87d56c468d989a200031f97a0f2694c2bfc2bdb2333c5d28c127d3f1472d844d"
+    },
+    {
+      "file": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "artifactSha256": "6a9aafc65d6edfe2a7d1b90549b41b9df97a45d78568b50f4782bcee768102ab"
+    }
+  ],
+  "next": "N21"
+}

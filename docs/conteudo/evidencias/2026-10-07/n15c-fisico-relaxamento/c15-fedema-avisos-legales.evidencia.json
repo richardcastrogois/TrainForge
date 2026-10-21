@@ -1,0 +1,23 @@
+{
+  "id": "c15-fedema-avisos-legales",
+  "url": "https://fedema.es/2020/08/05/avisos-legales/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T13:01:25.898157+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Link de direitos efetivamente publicado no rodape FEDEMA; nao presumir concessao comercial do manual por acesso gratuito.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://fedema.es/2020/08/05/avisos-legales/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 75374,
+  "bodyFile": "../raw/c15-fedema-avisos-legales.html",
+  "sha256": "6767b3e63a78ccff2210cbe6b52abf98fdf57dfa2cc96ba1f6c57a4a9915c2e3"
+}

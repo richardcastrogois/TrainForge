@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "n43-vitpose-api",
+      "url": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small",
+      "purpose": "Metadados de modelo específico dekeypoints: licença/revisão/arquivos e formato. Separar pose de classe/repetição/tempo/gasto. Não baixar pesos nesta coleta.",
+      "extension": "json"
+    },
+    {
+      "id": "n43-vitpose-card",
+      "url": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/main/README.md",
+      "purpose": "Modelcard primário com autoria, modelo/caminho de entrada e limitações. Não presumir17pontos como classificador de exercícios.",
+      "extension": "md"
+    },
+    {
+      "id": "n43-videomae-card",
+      "url": "https://huggingface.co/MCG-NJU/videomae-base-finetuned-kinetics/resolve/main/README.md",
+      "purpose": "Alternativa específica de classificação de vídeoKinetics400, metadadosCCBYNCdeclarados. Não obter pesos sob condição incompatível com caminho de produto ou copiar vídeosYouTube.",
+      "extension": "md"
+    },
+    {
+      "id": "n43-mediapipe-pose-doc",
+      "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker",
+      "purpose": "Referência técnica primária de33landmarks/pose; não classe de exercício, calorias, aprovação de técnica ou detecção de identidade. Sem instalar SDK/modelo.",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "niche": "N17-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Instrucao domestica das cinco variantes originais ES2019-DOM-01 para idosos do recorte de 2019. Otago preservado como referencia com divergencias/prescricoes por profissional; nao escadas/alongamento universal ou assistencia fisica.",
+  "next": "N17-I fechado para cinco instrucoes/figuras 2019; Otago nao homologado. N15-C/N18-I/N19-I/N20-I abertos; N21 retida.",
+  "evidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "anchors": [
+        "trained instructor",
+        "Never exercise holding on to an object which may move"
+      ],
+      "role": "Manual completo disponivel, grande parte da instrucao em imagens; conferencias desta rodada ainda abertas."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+      "anchors": [
+        "Creative Commons Attribution License",
+        "hold onto a chair",
+        "no external load above body weight"
+      ],
+      "role": "Origem/dose/apoios do programa selecionado."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+      "anchors": [],
+      "role": "Cinco figuras em duas paginas, sem pessoas identificaveis; correspondencia registrada por movimento no pacote."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n17i-instrucao/leitura-visual-otago.json",
+    "2026-10-04/n16i-apoios/pesquisa-complemento.json",
+    "2026-10-04/n16i-apoios/leitura-licenca-tabelas.json",
+    "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+    "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+    "2026-10-04/n15i-funcional/resumo-pacote-apk.json"
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I17-G01",
+      "met": true,
+      "criterion": "Manual humano especifico idosos em casa com origem/edicao e caminho de direitos identificado."
+    },
+    {
+      "id": "I17-G02",
+      "met": true,
+      "criterion": "Cinco instrucoes e figuras S1-S5 integralmente conferidas em duas paginas, dose/apoio/gesto e ausencia de escada/alongamento registrados. Auditoria Otago 36 paginas preservada, nao usada para completar 2019."
+    },
+    {
+      "id": "I17-G03",
+      "met": true,
+      "criterion": "Recorte textual/visual essencial e semantica de apoios ES2019-DOM-01 explicitos por figura/pagina. Figura S4 sem apoio nao demonstra variante com cadeira descrita na legenda; sem mapeamento por nome/ID."
+    },
+    {
+      "id": "I17-G04",
+      "met": true,
+      "criterion": "Criterios de acessibilidade/papeis existentes preservados; testes reais/pt-PT/homologacao continuam separados."
+    }
+  ],
+  "limits": [
+    "Fichas anteriores e videos externos preservados como parciais, sem herdar licenca do manual ACC.",
+    "Nao contato/contratacao, video baixado, teste de pessoa ou app alterado.",
+    "Troca explicita de candidato, nao reducao de exigencia de instrucao/licenca. Otago nao selecionado neste lote; pt-PT/ativos finais nao publicados."
+  ],
+  "selectionChange": {
+    "previous": "Otago 2007",
+    "selected": "ES2019-DOM-01",
+    "reason": "Fonte alternativa completa com instrucao/dose/licenca/desenhos correspondentes; nao preencher Otago por inferencia ou reduzir exigencia de instrucao."
+  }
+}

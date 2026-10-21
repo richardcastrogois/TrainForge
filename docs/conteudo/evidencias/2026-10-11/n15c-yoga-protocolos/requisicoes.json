@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C, cuidador praticante mesmo em dupla. Primeiras coletas de originais publicos EuropePMC/registro; nenhum retry de PMC challenge/ASCO403. Nao executar material, acessar contas, contatar ou importar APK.",
+  "requests":[
+    {"id":"c15-teleyoga2024-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10966998/fullTextXML","extension":"xml","accept":"application/xml","purpose":"TeleyogaAllende2024/PMID38545336/DOI27536130241240405: verificar Appendix1, passos/dose/suporte/seguranca e desfechos separados de cuidador, singlearm nao RCT."},
+    {"id":"c15-teleyoga2024-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38545336%20AND%20SRC:MED&format=json&resultType=core","extension":"json","purpose":"Metadados/resumo primarios da teleyoga, comparar titulo/identificadores/edicao nao substituir protocolo completo."},
+    {"id":"c15-yoga2007-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2176147/fullTextXML","extension":"xml","accept":"application/xml","purpose":"VanPuymbroeck2007/DOInem075: verificar AppendixA e workbook/poses/dose/profissional/efeito proprio. PMCwebchallenge nao contornado ou repetido, APIpublica distinta."},
+    {"id":"c15-yoga-trt2026-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT03948100","extension":"json","purpose":"YogaTRT2026/DOIOP-25-01079: registro publico citado emartigo. Examinar LargeDocs sem adivinhar URL/retentar ASCO403. Dupla nao exclusao por cuidador nao sozinho; efeito publicado de cuidador a verificar."}
+  ]
+}

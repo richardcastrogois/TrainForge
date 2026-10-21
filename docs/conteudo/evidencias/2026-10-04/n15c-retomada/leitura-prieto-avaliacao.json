@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "sourceFamily": "PR17",
+  "bodyReused": "2026-10-03/n15c-cuidador-casa/n15c-prieto-cuidadores.evidencia.json",
+  "sourceBodySha256": "ae9f9d77fb6c9a921239164890333da120facb415aa7ea4524f5ec1c6bbf39d0",
+  "sourceBodyBytes": 287822,
+  "newLocalCalls": 0,
+  "readMethod": "Hash reconferido e texto do HTML recebido relido, com foco nas secoes Intervention, Measures e Limitations. Sem nova coleta ou inspecao visual.",
+  "programme": {
+    "actor": "cuidador_praticando_para_si",
+    "environment": "casa",
+    "weeks": null,
+    "months": 9,
+    "sessionsOfferedReported": 72,
+    "sessionsPerWeek": 2,
+    "minutesPerSession": 60,
+    "faceToFacePersonalTrainerRequired": true,
+    "trainerPreparationWorkshops": 2,
+    "heartRateMonitorUsed": true,
+    "completeInstructionManualReceived": false,
+    "restOrExerciseSpecificLoad": null,
+    "decision": "Nao converter meses em semanas ou estimar novo calendario, nem retirar personal trainer, monitor ou individualizacao para oferta autonoma sem evidencia. Manual descrito na secao de medidas e de avaliacao, nao de treino."
+  },
+  "assessmentNotTraining": [
+    {"item": "testing manual", "context": "Procedimentos de avaliacao inicial/final por examinadores treinados", "exerciseManual": false, "assessmentWorkshops": 3, "decision": "Nao confundir tres oficinas de avaliadores com duas oficinas dos treinadores ou com manual instrucional completo."},
+    {"item": "chair-stand test", "chairHeightCm": 43.0, "repetitionsInTest": 10, "testTrials": 2, "decision": "Teste cronometrado de extremidades inferiores; nao acrescentar dez repeticoes de levantar/sentar como dose do programa."},
+    {"item": "Canadian Aerobic Fitness Test", "doubleStepHeightCm": 40.6, "specificTestWarmupMinutes": 3, "testStages": 3, "minutesPerTestStage": 3, "decision": "Teste submaximo com cadencia e limites de frequencia cardiaca de avaliacao; nao treinamento domestico de escadas ou altura universal de degrau."},
+    {"item": "Trunk endurance tests", "maximumTestSeconds": 120, "decision": "Sustentacao maxima de avaliacao nao e dose de treino ou alongamento; nao extrapolar para cuidador com dor ou dificuldade de transferencia."}
+  ],
+  "newPrimaryLead": {
+    "authors": "Madruga, Prieto, Rohlfs e Gusi",
+    "doi": "10.3390/healthcare8010054",
+    "published": "2020-03-06",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151160/",
+    "discoveredVia": "Referencia 63 do artigo original ja recebido",
+    "fullTextReceived": false,
+    "sourceBodySha256": null,
+    "webAccess": "Link primario retornou pagina de reCAPTCHA no leitor web. Indexacao primaria identifica protocolo, mas nao prova manual completo recebido. Sem retry, click de desafio, GET local, contato ou contorno.",
+    "decision": "Lead para consulta legitima futura se surgir material novo acessivel; nao substitui instrucao faltante nem resultados humanos de 2022."
+  },
+  "searchDeduplication": [
+    {"sourceFamily": "PR17", "decision": "Prieto 2022 ja recebido, relido localmente, sem fonte duplicada."},
+    {"sourceFamily": "PR18", "decision": "Sun 2025 ja recebido e NC-ND; nao recapturado nem convertido em adaptacao comercial."},
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10559724/", "decision": "HOMeCARE ja triado: resistencia/equilibrio do assistido e mindfulness do cuidador nao fecham treino proprio do cuidador."}
+  ],
+  "productDecisions": [
+    "Exercicio em casa pode continuar a requerer profissional presente. Casa nao significa autonomia nem ausencia de custo.",
+    "Artigo aponta custo de implementacao possivelmente elevado e variavel; nao presumir recurso gratuito, equipe do app ou parceiro contratado.",
+    "Beneficios observados para cuidadoras familiares delimitadas nao validam cuidador remunerado, todo idoso, prescricao universal ou produto.",
+    "N15-C continua parcial; nenhuma instrucao, imagem ou programa foi publicado no app."
+  ]
+}

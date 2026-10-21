@@ -1,0 +1,24 @@
+{
+  "id": "cg02-benson-artigo-pdf",
+  "url": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T14:55:34.974182+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "RepresentacaoPDF primaria: verificar Procedures, material audiovisual/folheto e eventual anexoinstrucional. Nao autoriza copia comercial NC-SA nem identifica videoeditorial comoCD original.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 912284,
+  "bodyFile": "../raw/cg02-benson-artigo-pdf.pdf",
+  "sha256": "e2a8abd5334cde76aaab290ca18959059e94de3622a14caebe9136dafc74aa22",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "kind": "Small controlled local CPU experiment",
+  "model": "nateraw/food",
+  "revision": "8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "weightSha256": "33d6b7d44c0bb524fbb6f6d3b7d1f7c8d7c703b58882bf2a845355d9411f566d",
+  "weightsOnlyLoad": true,
+  "strictStateLoad": true,
+  "missingKeys": [],
+  "unexpectedKeys": [],
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.13.0+cpu",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0"
+  },
+  "device": "cpu",
+  "cudaBuild": null,
+  "threads": 4,
+  "networkAudit": {
+    "connectionsPreventedByAuditHook": true,
+    "attempts": []
+  },
+  "cases": [
+    {
+      "id": "0",
+      "fileTitle": "File:Bacalhau à brás.jpg",
+      "purpose": "prato português sem classe explícita, baixa resolução",
+      "expectedClassProposal": null,
+      "author": "Adriao",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_br%C3%A1s.jpg",
+      "error": "Temporary fixture not received"
+    },
+    {
+      "id": "1",
+      "fileTitle": "File:Caldo Verde.jpg",
+      "purpose": "prato português sem classe explícita",
+      "expectedClassProposal": null,
+      "author": "Michael",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Caldo_Verde.jpg",
+      "sourceFileDimensions": [
+        960,
+        960
+      ],
+      "inputMode": "RGB",
+      "inputDimensions": [
+        960,
+        960
+      ],
+      "sha256": "993dc5212f43dce49d9eeb64dbacd2da0d20b7aa38feb2f955f715a6ddbe42ec",
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.10147429999778979,
+      "top5": [
+        {
+          "id": 81,
+          "label": "ramen",
+          "score": 0.716420590877533
+        },
+        {
+          "id": 67,
+          "label": "omelette",
+          "score": 0.038437310606241226
+        },
+        {
+          "id": 89,
+          "label": "shrimp_and_grits",
+          "score": 0.0307649876922369
+        },
+        {
+          "id": 18,
+          "label": "chicken_curry",
+          "score": 0.0174686461687088
+        },
+        {
+          "id": 24,
+          "label": "clam_chowder",
+          "score": 0.016445325687527657
+        }
+      ],
+      "score16CheesePlateInConfig": 0.0003795362135861069,
+      "score17CheesecakeInConfig": 0.0007464076625183225,
+      "matchesProposedLabelTop1": null,
+      "matchesProposedLabelTop5": null,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false,
+      "visualInspectionByAgent": {
+        "performed": true,
+        "observation": "Panela de sopa com folhas e rodelas visíveis, coerente com título caldo verde; receita/ingredientes ocultos não identificados por imagem.",
+        "independentHumanGroundTruth": false
+      }
+    },
+    {
+      "id": "2",
+      "fileTitle": "File:Chair.JPG",
+      "purpose": "controle sem alimento",
+      "expectedClassProposal": null,
+      "author": "Antonio Borrillo",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Chair.JPG",
+      "sourceFileDimensions": [
+        960,
+        1440
+      ],
+      "inputMode": "RGB",
+      "inputDimensions": [
+        960,
+        1440
+      ],
+      "sha256": "b7fd907f4ca6e303f02ee1a7df71cc031087422250525b72cbf33b0f6a91473f",
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.12696080000023358,
+      "top5": [
+        {
+          "id": 47,
+          "label": "gnocchi",
+          "score": 0.03857589140534401
+        },
+        {
+          "id": 82,
+          "label": "ravioli",
+          "score": 0.034952275454998016
+        },
+        {
+          "id": 63,
+          "label": "macarons",
+          "score": 0.03327731043100357
+        },
+        {
+          "id": 89,
+          "label": "shrimp_and_grits",
+          "score": 0.02937626652419567
+        },
+        {
+          "id": 98,
+          "label": "tiramisu",
+          "score": 0.028912318870425224
+        }
+      ],
+      "score16CheesePlateInConfig": 0.006345757748931646,
+      "score17CheesecakeInConfig": 0.013308343477547169,
+      "matchesProposedLabelTop1": null,
+      "matchesProposedLabelTop5": null,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false,
+      "visualInspectionByAgent": {
+        "performed": true,
+        "observation": "Cadeira sem alimento visível.",
+        "independentHumanGroundTruth": false
+      }
+    },
+    {
+      "id": "3",
+      "fileTitle": "File:Cheese plate (498052801).jpg",
+      "purpose": "conferir ordem 16/17 e imagem desfocada",
+      "expectedClassProposal": "cheese_plate",
+      "author": "Rich Moffitt from Boston, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Cheese_plate_(498052801).jpg",
+      "sourceFileDimensions": [
+        960,
+        1444
+      ],
+      "inputMode": "RGB",
+      "inputDimensions": [
+        960,
+        1444
+      ],
+      "sha256": "744b67eb0e773f05ff310cd5a14c0935f11bd829170cef2b2824b07f333d23d1",
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.09399230001145042,
+      "top5": [
+        {
+          "id": 16,
+          "label": "cheese_plate",
+          "score": 0.987470805644989
+        },
+        {
+          "id": 39,
+          "label": "foie_gras",
+          "score": 0.0008699439931660891
+        },
+        {
+          "id": 74,
+          "label": "peking_duck",
+          "score": 0.0007748314528726041
+        },
+        {
+          "id": 5,
+          "label": "beet_salad",
+          "score": 0.0007185074500739574
+        },
+        {
+          "id": 95,
+          "label": "sushi",
+          "score": 0.0006555984728038311
+        }
+      ],
+      "score16CheesePlateInConfig": 0.987470805644989,
+      "score17CheesecakeInConfig": 9.344611316919327e-05,
+      "matchesProposedLabelTop1": true,
+      "matchesProposedLabelTop5": true,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false,
+      "visualInspectionByAgent": {
+        "performed": true,
+        "observation": "Prato de queijos com frutas; rótulo do autor cheese plate confirmado visualmente como classe dominante, sem exclusividade de ingredientes.",
+        "independentHumanGroundTruth": false
+      }
+    },
+    {
+      "id": "4",
+      "fileTitle": "File:Japanese Cheesecake.jpg",
+      "purpose": "conferir ordem 16/17",
+      "expectedClassProposal": "cheesecake",
+      "author": "No machine-readable author provided. Marubatsu assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "Ver declaração PD-self na página de descrição",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Japanese_Cheesecake.jpg",
+      "error": "Temporary fixture not received"
+    },
+    {
+      "id": "5",
+      "fileTitle": "File:PizzaMargherita.jpg",
+      "purpose": "classe coberta",
+      "expectedClassProposal": "pizza",
+      "author": "SIG SG 510",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:PizzaMargherita.jpg",
+      "sourceFileDimensions": [
+        960,
+        1016
+      ],
+      "inputMode": "RGB",
+      "inputDimensions": [
+        960,
+        1016
+      ],
+      "sha256": "4cf1bd75fed0edd9b91b6c6eb112f1c3f4a6bf586d9311aa3c2e1553225feeff",
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.12351659999694675,
+      "top5": [
+        {
+          "id": 76,
+          "label": "pizza",
+          "score": 0.9970544576644897
+        },
+        {
+          "id": 46,
+          "label": "garlic_bread",
+          "score": 0.00012049053475493565
+        },
+        {
+          "id": 10,
+          "label": "bruschetta",
+          "score": 0.0001136056671384722
+        },
+        {
+          "id": 67,
+          "label": "omelette",
+          "score": 0.00010440702317282557
+        },
+        {
+          "id": 3,
+          "label": "beef_carpaccio",
+          "score": 8.149136556312442e-05
+        }
+      ],
+      "score16CheesePlateInConfig": 3.590528649510816e-05,
+      "score17CheesecakeInConfig": 4.650501432479359e-05,
+      "matchesProposedLabelTop1": true,
+      "matchesProposedLabelTop5": true,
+      "sameInputRepeatedMaxLogitDifference": 0.0,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false,
+      "visualInspectionByAgent": {
+        "performed": true,
+        "observation": "Pizza inteira em prato; título pizza coerente, sem determinar receita ou fração comida.",
+        "independentHumanGroundTruth": false
+      }
+    },
+    {
+      "id": "synthetic-black",
+      "fileTitle": "synthetic-black",
+      "purpose": "Synthetic non-food control; not a photograph",
+      "expectedClassProposal": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "descriptionPage": null,
+      "synthetic": true,
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.15406220000295434,
+      "top5": [
+        {
+          "id": 9,
+          "label": "breakfast_burrito",
+          "score": 0.7450165152549744
+        },
+        {
+          "id": 56,
+          "label": "huevos_rancheros",
+          "score": 0.01562649942934513
+        },
+        {
+          "id": 12,
+          "label": "cannoli",
+          "score": 0.014477535150945187
+        },
+        {
+          "id": 14,
+          "label": "carrot_cake",
+          "score": 0.009852837771177292
+        },
+        {
+          "id": 19,
+          "label": "chicken_quesadilla",
+          "score": 0.009351794607937336
+        }
+      ],
+      "score16CheesePlateInConfig": 0.0021723746322095394,
+      "score17CheesecakeInConfig": 0.004235630389302969,
+      "matchesProposedLabelTop1": null,
+      "matchesProposedLabelTop5": null,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false
+    },
+    {
+      "id": "synthetic-white",
+      "fileTitle": "synthetic-white",
+      "purpose": "Synthetic non-food control; not a photograph",
+      "expectedClassProposal": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "descriptionPage": null,
+      "synthetic": true,
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.09715929999947548,
+      "top5": [
+        {
+          "id": 9,
+          "label": "breakfast_burrito",
+          "score": 0.02953134849667549
+        },
+        {
+          "id": 85,
+          "label": "samosa",
+          "score": 0.024805549532175064
+        },
+        {
+          "id": 96,
+          "label": "tacos",
+          "score": 0.021427130326628685
+        },
+        {
+          "id": 63,
+          "label": "macarons",
+          "score": 0.020042244344949722
+        },
+        {
+          "id": 36,
+          "label": "falafel",
+          "score": 0.015237592160701752
+        }
+      ],
+      "score16CheesePlateInConfig": 0.008370250463485718,
+      "score17CheesecakeInConfig": 0.010442178696393967,
+      "matchesProposedLabelTop1": null,
+      "matchesProposedLabelTop5": null,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false
+    }
+  ],
+  "inferencePerformed": true,
+  "appTested": false,
+  "clinicalValidation": false,
+  "populationAccuracyEstimated": false,
+  "confidenceCalibrated": false,
+  "automaticNonfoodRejectionImplemented": false,
+  "mealIdentityUIImplemented": false,
+  "rights": "Apache 2.0 declared for model; each image has its own recorded license. No Food101 photograph downloaded.",
+  "limitations": [
+    "Six preselected public images and two synthetic controls are not population validation.",
+    "Config/loader label order 16/17 needs source and empirical interpretation.",
+    "A softmax score is not calibrated confidence and closed-set classifier has no unknown class.",
+    "No food, quantity, meal person or nutrition target written to the app.",
+    "Cinco fotografias inspecionadas visualmente pelo agente com rótulos do autor; não anotação independente por nutricionista ou validação química. Duas fotos planejadas retornaram HTTP 429 e não foram reobtidas."
+  ],
+  "temporaryEnvironmentMustBeDeleted": true,
+  "releaseApproved": false
+}

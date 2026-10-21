@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-04", "niche": "N15-C",
+  "requests": [
+    {"id": "c15-busca-qigong", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20%28qigong%20OR%20baduanjin%20OR%20%22tai%20chi%22%29%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10", "extension": "json", "purpose": "Buscar programa original para exercicio do proprio cuidador, nao treinamento para auxiliar paciente; triagem de licenca, ambiente e instrucoes."},
+    {"id": "c15-busca-caminhada", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20walking%20AND%20%28home-based%20OR%20home%29%20AND%20intervention%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10", "extension": "json", "purpose": "Conferir alternativas humanas de atividade propria domiciliar; caminhada externa ou indicacao generica nao fecha rotina dentro de casa."}
+  ]
+}

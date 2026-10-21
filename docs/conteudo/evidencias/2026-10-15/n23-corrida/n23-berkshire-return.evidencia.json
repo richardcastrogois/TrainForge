@@ -1,0 +1,23 @@
+{
+  "id": "n23-berkshire-return",
+  "url": "https://www.berkshirehealthcare.nhs.uk/advice/return-to-running-programme",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:38:06.066059+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Retorno clinico com fisioterapia; diferenciar iniciante e condicoes/margensambiguidade",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.berkshirehealthcare.nhs.uk/advice/return-to-running-programme",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 200500,
+  "bodyFile": "../raw/n23-berkshire-return.html",
+  "sha256": "7df36c823ebf002bf262048f6ac526f96baa1d066ccf4957f7bafed26750a988"
+}

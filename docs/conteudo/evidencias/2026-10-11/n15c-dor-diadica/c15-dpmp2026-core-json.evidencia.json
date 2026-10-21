@@ -1,0 +1,23 @@
+{
+  "id": "c15-dpmp2026-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41754066%20AND%20SRC%3AMED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:46:54.428458+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo primario2026 PMID41754066/DOI10.3390/healthcare14040553; separar desfechos propios do cuidador de dor do idoso e rastrear suplementos publicos, sem XMLretry.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41754066%20AND%20SRC%3AMED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 7303,
+  "bodyFile": "../raw/c15-dpmp2026-core-json.json",
+  "sha256": "c0e1354adacec54fa8cea06a8e1906b11ca032ab3685bed8af2416943f8400cb"
+}

@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-16",
+  "selectedComponentLibrary": "pacote-modular-praca.json",
+  "wholeProgrammeSelected": false,
+  "programmes": [
+    {
+      "sourceId": "PR251",
+      "work": "Barbosa2024",
+      "receipt": {
+        "receipt": "n21-barbosa2024-artigo.evidencia.json",
+        "httpStatus": 200,
+        "bodyFile": "../raw/n21-barbosa2024-artigo.html",
+        "sha256": "305bbcac8e5a1e7a4c6a7b4a8d5b8750e3e17aeb1ae23da66e82ea917860d81f",
+        "bytes": 953108,
+        "hashVerified": true
+      },
+      "protocol": "12semanas/3vezes30min/diasnão consecutivos; ST com treinador experiente1:1 e familiarização.5mincaminhada60%HRmax/CR105–6;20blocos30s e30spassivos;1movimentocompleto2s;5min40%/CR104–5. UT espontâneo não mesma dose.",
+      "gaps": [
+        "Nome airskier/rambler/surf difere; não equivalência por palavra.",
+        "Convite>65 e critério>=60 preservados.",
+        "20blocos não autorizam inventar5por estação.",
+        "Resultados não transferidos a outras máquinas;90minsemanais não garantem recomendações integrais.",
+        "Limitações dizem amostra masculina; não ampliar para todos.",
+        "Pares de FC/CR10 e sinal de p do resumo não corrigidos silenciosamente."
+      ],
+      "rights": "CC BY no rodapé HTML recebido; sem mídia selecionada."
+    },
+    {
+      "sourceId": "PR252",
+      "work": "Barbosa2022",
+      "receipt": {
+        "receipt": "n21-barbosa2022-pdf.evidencia.json",
+        "httpStatus": 200,
+        "bodyFile": "../raw/n21-barbosa2022-pdf.pdf",
+        "sha256": "1534a44ca7aef3ec14def3e0d65bd0695609baef086e9bea084e01dcb0bac7bf",
+        "bytes": 900426,
+        "hashVerified": true
+      },
+      "protocol": "15homens>=60/68±2;3sessõesagudas randomizadas30min, completo ciclo concêntrico+excêntrico a4/2/1s,30sativo30sdescanso.",
+      "gaps": [
+        "PDF2:5min/5blocos; não completar distribuição por4estações sem explicitação.",
+        "Figura1 é foto de postura, não todas as ordens de entrar/parar.",
+        "Estudo agudo não curso longitudinal ou prova universal de segurança."
+      ],
+      "rights": "PDF8 declara Creative CommonsVersion4.0 sem subtipo no texto extraído; subtipo não presumido nem ativos selecionados."
+    },
+    {
+      "sourceId": "PR253",
+      "work": "Chow2021",
+      "receipt": {
+        "receipt": "n21-chow2021-pdf.evidencia.json",
+        "httpStatus": 200,
+        "bodyFile": "../raw/n21-chow2021-pdf.pdf",
+        "sha256": "347eb1ca4c4c2e6f39582850c780c559dfedabe09cab2fef4fb3dc1b1ea82c39",
+        "bytes": 3975522,
+        "hashVerified": true
+      },
+      "protocol": "Duas intervenções12semanas; cardio5dias/semana2x20min60passos/min+5minpreparo+3minintervalo+5minretorno; outra2dias/semanacom5aparelhos. Força3x8semanas1–6 e3x12semanas7–12;90sentre séries. Flex unilateral30s,5minporaparelho;roda60bpm.",
+      "population": ">=60,PARQ+,liberação médico pessoal e instrutor certificado para idosos presencial demonstrando, cronometrando e verificando;20primeirafase,29segunda,93%járegularesexercícios; não RCT comcontrole nem populaçãofrágil.",
+      "conflicts": [
+        "Tabela1PDF5 semanas5–8 soma10minbipodal+2unipodal apesar total10; prosaPDF7 total10.",
+        "Tabela põe semanas6–12últimabloco; prosa9–12. Não escolher porinferência e não automatizar unipodal.",
+        "Figuras aparelho/Polar/escalas não grants externos independentes; não mídia selecionada.",
+        "Resultados força/flex/equilíbrio inconclusivos, não eficácia para todasmodalidades."
+      ],
+      "rights": "CC BY4.0 PDF1 visto."
+    },
+    {
+      "sourceId": "PR255",
+      "work": "Pereira2017",
+      "receipt": {
+        "receipt": "n21-pereira2017-manual.evidencia.json",
+        "httpStatus": 200,
+        "bodyFile": "../raw/n21-pereira2017-manual.pdf",
+        "sha256": "de7ed58de58924aaaa828453cf2f4279bd8203c025f42ef998b86cc5b0dac67a",
+        "bytes": 1487677,
+        "hashVerified": true
+      },
+      "pages": 90,
+      "claimedBibliographicPages": [
+        91,
+        136
+      ],
+      "authorQualification": "PDF47: EducadorFísicoProfMeLuizCarlosPereira,CREF012280G/PR, comDrAlexSilvaRibeiro; não validação atual do registro profissional.",
+      "available": "13exercícios PDF48–60 com comandos/posições/repouso; português, manual didático real; p48consulta médica, p55/58/59dorinterromper.",
+      "rights": "PDF5 autoriza estudo/pesquisa com atribuição; sem grant comercial/adaptação para app. Rejeitado para incorporação, sem contato.",
+      "notImported": [
+        "Dose2x15/1min do manual não misturada à doseMarcos/Chow.",
+        "Progressão10até50min caminhada não importada.",
+        "Fotos/roteiros não copiados para catálogo de app."
+      ]
+    },
+    {
+      "sourceId": "PR256",
+      "work": "MarcosPardo2024",
+      "receipt": {
+        "receipt": "n21-marcos2024-pdf.evidencia.json",
+        "httpStatus": 200,
+        "bodyFile": "../raw/n21-marcos2024-pdf.pdf",
+        "sha256": "5dcebe53ef065601f8397a65a7fe973ffd85704ea2dbe941cddcade6002968b7",
+        "bytes": 2305920,
+        "hashVerified": true
+      },
+      "table2": [
+        {
+          "week": 1,
+          "sets": 1,
+          "workSeconds": 30,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 1,
+          "stationRestSeconds": 45,
+          "roundRestMinutes": null,
+          "sourceMainSessionMinutes": 13.75,
+          "sourceTotalReps": 165
+        },
+        {
+          "week": 2,
+          "sets": 2,
+          "workSeconds": 30,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 1,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 2,
+          "sourceMainSessionMinutes": 27,
+          "sourceTotalReps": 330
+        },
+        {
+          "week": 3,
+          "sets": 3,
+          "workSeconds": 30,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 1,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 43,
+          "sourceTotalReps": 495
+        },
+        {
+          "week": 4,
+          "sets": 3,
+          "workSeconds": 30,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 1,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 43,
+          "sourceTotalReps": 495
+        },
+        {
+          "week": 5,
+          "sets": 3,
+          "workSeconds": 45,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 2,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 51.25,
+          "sourceTotalReps": 495
+        },
+        {
+          "week": 6,
+          "sets": 3,
+          "workSeconds": 45,
+          "reps": 15,
+          "concentricSeconds": 1,
+          "eccentricSeconds": 2,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 51.25,
+          "sourceTotalReps": 495
+        },
+        {
+          "week": 7,
+          "sets": 3,
+          "workSeconds": 45,
+          "reps": 11,
+          "concentricSeconds": 2,
+          "eccentricSeconds": 2,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 51.25,
+          "sourceTotalReps": 371
+        },
+        {
+          "week": 8,
+          "sets": 3,
+          "workSeconds": 45,
+          "reps": 11,
+          "concentricSeconds": 2,
+          "eccentricSeconds": 2,
+          "stationRestSeconds": 30,
+          "roundRestMinutes": 4,
+          "sourceMainSessionMinutes": 51.25,
+          "sourceTotalReps": 371
+        }
+      ],
+      "ambiguities": [
+        "Semanas7–8:11exercícios×11reps×3=363, fonte imprime371;45s/(2+2)=11.25, fonte diz11. Conservar literal, não arredondar nem timer automático.",
+        "Tempo principal tabela varia13.75–51.25min; nominal1h não prova tempo fixo de aquecimento/retorno.",
+        "Fotos não instruem montagem/travas/abordagem/desmontagem; ensino profissional mantido.",
+        "Alguns métodos incluem pausa isométrica breve sem tempo;2não selecionados.",
+        "149aleatorizados no resumo,128final; diferenças sexuaisTG/CG entre obras2024e2025 não fundir."
+      ],
+      "rights": "CC BY4.0 PDF1 visto. Sem transplante de patente de hardware ou garantias de aptidão individual."
+    },
+    {
+      "sourceId": "PR257",
+      "work": "ProtocoloMarcosPardo2023",
+      "receipt": {
+        "receipt": "n21-marcos2023-protocolo.evidencia.json",
+        "httpStatus": 403,
+        "bodyFile": "../raw/n21-marcos2023-protocolo.pdf",
+        "sha256": "f37c7b96654c264fb02f0e72311ccc714107044be07e0f75b780fc6d44fc9785",
+        "bytes": 5719,
+        "hashVerified": true
+      },
+      "available": "PDF403; resumo primário/registro bibliográfico disponíveis.",
+      "notSelected": true,
+      "noAlternateRoute": true
+    },
+    {
+      "sourceId": "PR258",
+      "work": "MarcosPardo2025spine",
+      "primaryPage": "https://www.nature.com/articles/s41598-025-99061-1",
+      "available": "Leitura web primária de métodos, referência52e direitos; semGET local.",
+      "rights": "CC BY-NC-ND4.0, não copiar/adaptar para app comercial.",
+      "contribution": "Pista bibliográfica para estudo distinto2024CCBY, não espelho2025 nem licençaherdada.",
+      "notSelected": true
+    }
+  ],
+  "outcomesNotInherited": true,
+  "noNewAIProtocol": true
+}

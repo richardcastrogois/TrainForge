@@ -1,0 +1,23 @@
+{
+  "id": "c15-mit-espanhol2023-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:40:28.466387+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original distinto MIT2023espanhol12cuidadores, verificar movimentos/guias/suplementos/apoio/efeito proprio/autoria e nao alegar ensaio controlado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 75676,
+  "bodyFile": "../raw/c15-mit-espanhol2023-xml.xml",
+  "sha256": "faab96dc88a30c61672212c66bcb3529b076ad6011e59e070a2b06f82ffcc472"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "c15-prieto-protocolo-deposito",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7151160/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:15:47.151088+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito OA legitimo do protocolo referenciado por Prieto; nao repetir desafio da origem PMC.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7151160/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 153748,
+  "bodyFile": "../raw/c15-prieto-protocolo-deposito.xml",
+  "sha256": "74a3b41e0873c0c46f13a38d08954c5d18e96a88aea343003ef452e182002d3b"
+}

@@ -1,0 +1,511 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "researchClosed": false,
+  "scope": "Auditoria documental e ensaio sintético de entrada; nenhuma inferência",
+  "checks": [
+    {
+      "check": "Corpo original: n39-dailyfood-paper.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-dailyfood-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-fixture-image-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-food101-historical-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-mobileclip-data-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-mobileclip-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-mobileclip-models-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-all-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-eval-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-files-pinned.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-food101-loader.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nateraw-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-accuracy.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-performance.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-vision-bench.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrilens-vision-truth.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-nutrition5k-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-swin-onnx-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-swin-onnx-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-swin-onnx-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-swin-onnx-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-torch-cpu-index.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-torch-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-transformers-image-utils.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-transformers-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-vit-base-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Corpo original: n39-vit-legacy-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "101 IDs contíguos",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Mapa inverso após normalizar IDs textuais",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Cabeça alimentar e entrada RGB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Revisão preservada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Resultados repetidos concordam",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Loader contém os mesmos 101 nomes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Pré-processador publicado",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Formato NCHW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Tipo float32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Preto -> -1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Branco -> +1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ordem RGB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Escala cinzenta não aceita silenciosamente",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Alternativa: 101 classes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Alternativa: mesmos nomes, sem pressupor IDs iguais",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Não transferir média do ViT ao Swin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Bins do relatório somam 2523",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ECE arredondado compatível com 0.015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "39 linhas e 39 anotações",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Mesmos identificadores nas anotações",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 52,
+  "failed": 0,
+  "receipts": [
+    {
+      "receipt": "n39-dailyfood-paper.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 196323,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-dailyfood-readme.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 229,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-fixture-image-metadata.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 18010,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-food101-historical-license.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 6208,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-mobileclip-data-license.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 19126,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-mobileclip-license.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 1540,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-mobileclip-models-license.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 5816,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-all-results.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 353,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-api.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 6095,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-card.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 1957,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-config.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 5582,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-eval-results.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 204,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-files-pinned.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 1507,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-food101-loader.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 5204,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nateraw-preprocessor.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 228,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-accuracy.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 4430,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-license.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 1436,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-performance.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 1120,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-readme.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 19208,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-vision-bench.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 28355,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrilens-vision-truth.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 27399,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-nutrition5k-readme.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 7400,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-swin-onnx-api.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 4394,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-swin-onnx-card.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 3698,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-swin-onnx-config.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 6001,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-swin-onnx-preprocessor.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 365,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-torch-cpu-index.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 414325,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-torch-package-metadata.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 58732,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-transformers-image-utils.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 8871,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-transformers-package-metadata.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 52973,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-vit-base-card.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 5392,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n39-vit-legacy-preprocessor.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 6646,
+      "hashMatches": true
+    }
+  ],
+  "naterawPublishedEvaluation": {
+    "epoch": 5.0,
+    "eval_accuracy": 0.8912871287128713,
+    "eval_loss": 0.45006364583969116,
+    "eval_runtime": 107.735,
+    "eval_samples_per_second": 234.371,
+    "eval_steps_per_second": 1.838
+  },
+  "naterawEvaluationLimit": "Não publica contagem explícita, predições individuais, matriz de confusão, calibração, abstenção ou teste português. Não inferir n exato da velocidade arredondada.",
+  "datasetLoaderOrderDifferences": [
+    {
+      "id": 16,
+      "loaderLabel": "cheesecake",
+      "modelLabel": "cheese_plate"
+    },
+    {
+      "id": 17,
+      "loaderLabel": "cheese_plate",
+      "modelLabel": "cheesecake"
+    }
+  ],
+  "datasetLoaderOrderLimit": "Config e loader publicado usam ordem diferente em dois nomes. O loader atual não comprova a revisão usada no treino; preservar ambas as ordens e conferir os dois casos antes de decidir a decodificação. Não corrigir pesos ou taxonomia silenciosamente.",
+  "nutrilensPublishedEvaluationAudit": {
+    "source": "n39-nutrilens-accuracy.evidencia.json",
+    "inferenceRerun": false,
+    "food101ReportedSamples": 2523,
+    "nominal25Times101": 2525,
+    "sampleDifferenceNeedsExplanation": 2,
+    "calibrationCount": 2523,
+    "eceFromRoundedBins": 0.015323424494649233,
+    "calibrationAppliesTo": "Fusão com melhores parâmetros; não transferir ao Swin isolado, nateraw, parâmetros padrão ou culinária portuguesa.",
+    "nonfoodCaveat": "Falso não-alimento em fotos de comida não mede a aceitação de fotos sem comida. Não há especificidade não-alimento demonstrada nesta tabela.",
+    "visionRows": 39,
+    "matchedCountFromTable": 53,
+    "expectedCountFromTable": 66,
+    "microRecallFromDisplayedRows": 0.803030303030303,
+    "headerRecallPercent": 80.6,
+    "discrepancy": "Linhas exibidas dão 53/66 = 80,303%, não 80,6%. Agregação ou versão deve ser conferida antes de adotar a manchete; não se sabe a causa só pela tabela.",
+    "truthLimit": "Faixas e porções estimadas visualmente, não pesagens independentes ou validação clínica. Fotos não obtidas."
+  },
+  "modelInferencePerformed": false,
+  "runtimeInstalled": false,
+  "syntheticInputAdapterOnly": true,
+  "clinicalValidation": false,
+  "releaseApproved": false,
+  "snapshotBeforeAuthorizedRuntimeExperiment": true,
+  "currentRuntimeAudit": "auditoria-fechamento.json"
+}

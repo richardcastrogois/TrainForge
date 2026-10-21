@@ -1,0 +1,23 @@
+{
+  "id": "n15dir-wipo-metodo-html",
+  "url": "https://www.wipo.int/en/web/copyright/protection",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T03:33:16.185618+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Distinguir metodo/fatos de expressao: instrucoes escritas e figuras podem ser protegidas. Nao autorizar automaticamente traducao, material comercial ou equivalencia clinica.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.wipo.int/en/web/copyright/protection",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 122258,
+  "bodyFile": "../raw/n15dir-wipo-metodo-html.html",
+  "sha256": "37850d47266a028b6cc1f11397aa297802ad8ca92f4d789a47ae9d49a323c913"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n26-nccih-safety",
+  "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:05:55.621347+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Orientação qualificada, riscos/necessidade de modificação, idosos/glaucoma/lesões/hipertensão; direito público explícito sem dose nova",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 653707,
+  "bodyFile": "../raw/n26-nccih-safety.html",
+  "sha256": "dd76c51ecb5c3024088490aa1b7cb84cd7a64992e8909e398676471be9eb45d1"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n18r-sayers-profile",
+  "url": "https://healthsciences.missouri.edu/directory/personnel/stephen-sayers/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:00:22.151165+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Formação/autoria profissional verificável no perfil institucional do autor.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://healthsciences.missouri.edu/directory/personnel/stephen-sayers/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 91628,
+  "bodyFile": "../raw/n18r-sayers-profile.html",
+  "sha256": "310b5538ba529f6e7f36b03449cd77b5168d3b82fd7175b6d33f4f893e7463a3"
+}

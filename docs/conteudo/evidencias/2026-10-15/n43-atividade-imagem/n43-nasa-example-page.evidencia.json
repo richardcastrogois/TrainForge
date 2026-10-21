@@ -1,0 +1,23 @@
+{
+  "id": "n43-nasa-example-page",
+  "url": "https://www.nasa.gov/image-article/exercising-t2-treadmill/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:55:46.700500+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Página factual pública de exemplo de movimento com arnês. Conferir autoria/direitos e fonte primária; não importar programa, diagnosticar pessoa ou publicar imagem no app.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nasa.gov/image-article/exercising-t2-treadmill/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 275916,
+  "bodyFile": "../raw/n43-nasa-example-page.html",
+  "sha256": "b13b42b62cf55cc9da446f6ed4fe314ec4828a11095f429ac8b97eb0e1e381d1"
+}

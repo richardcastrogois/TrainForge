@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-15",
+  "checks": [
+    {
+      "check": "NASA-public-factual-photo tem17heatmaps e12pontos retidos semface",
+      "passed": true
+    },
+    {
+      "check": "NASA-public-factual-photo não vira exercício/repetições/dose",
+      "passed": true
+    },
+    {
+      "check": "synthetic-black-no-person tem17heatmaps e12pontos retidos semface",
+      "passed": true
+    },
+    {
+      "check": "synthetic-black-no-person não vira exercício/repetições/dose",
+      "passed": true
+    },
+    {
+      "check": "Modelo carregado estritamente e sem rede",
+      "passed": true
+    },
+    {
+      "check": "Ambiente removido",
+      "passed": true
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "scope": "Formato/ausências/execução/limpeza, não acurácia anatômica ou técnica",
+  "appTested": false
+}

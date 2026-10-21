@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-15",
+  "networkReceiptCount": 12,
+  "http200": 9,
+  "usableBodies": 9,
+  "verifiedBodyHashes": 11,
+  "bodiesAbsent": 1,
+  "visuallyReviewedPdfPages": 8,
+  "scope": "Recibos de GET local; consultas da ferramenta web separadas, não somadas como downloads locais.",
+  "receipts": [
+    {
+      "receipt": "n25-cdc-water-safety.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-delayed2023-jats.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-eisenhardt-epmc-metadata.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-gromisz-faculty.evidencia.json",
+      "status": null,
+      "bodyHashValid": null,
+      "usable": false
+    },
+    {
+      "receipt": "n25-hprc-policy.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-tools2026-pdf.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-toubekis-profile.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-uga-index.evidencia.json",
+      "status": 403,
+      "bodyHashValid": true,
+      "usable": false
+    },
+    {
+      "receipt": "n25-usu-legal.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-usu-seal-guide.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-women2019-jats.evidencia.json",
+      "status": 200,
+      "bodyHashValid": true,
+      "usable": true
+    },
+    {
+      "receipt": "n25-women2019-pdf.evidencia.json",
+      "status": 403,
+      "bodyHashValid": true,
+      "usable": false
+    }
+  ],
+  "lotMath": {
+    "mainMeters": 500,
+    "knownDistanceMeters": 900,
+    "recoveryGaps": 9,
+    "recoverySeconds": 45,
+    "warmupSeconds": [
+      300,
+      600
+    ],
+    "totalDistanceAndTimeNull": true
+  },
+  "passed": true
+}

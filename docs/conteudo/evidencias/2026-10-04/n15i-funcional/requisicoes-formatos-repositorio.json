@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-I",
+  "protocolCorrection": "As duas solicitacoes anteriores enviaram Accept que exclui XML/ZIP e receberam 406 Not Acceptable. Esta e uma unica correcao manual de negociacao, explicitamente registrada e testada; nao retry de transporte, acesso restrito, 403, 429, teto, TLS ou desafio. Preservar ambos os 406. Sem novas tentativas destas representacoes apos esta correcao.",
+  "requests": [
+    {"id": "i15-snacking-xml-accept", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML", "extension": "xml", "accept": "application/xml", "purpose": "Unica correcao de Accept XML apos 406 tecnico, endpoint publico OA. Preservar i15-snacking-xml-repositorio; ler licenca e vinculo do suplemento por parser XML, sem executar conteudo."},
+    {"id": "i15-snacking-zip-accept", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles", "extension": "zip", "accept": "application/zip", "purpose": "Unica correcao de Accept ZIP apos 406 tecnico, endpoint publico OA, teto original 2 MiB. Preservar i15-snacking-suplementos-repositorio; listar arquivo e verificar caminhos/tamanho antes de leitura OOXML. Sem macros ou contorno de desafio."}
+  ]
+}

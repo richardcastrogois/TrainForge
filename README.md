@@ -1,10 +1,17 @@
 # TrainForge
 
+**Estado vigente - 21/10/2026:** N15 concluiu a pesquisa no recorte modular autorizado: onze componentes para cuidadores, separados dos cinco movimentos domesticos para idosos ja conferidos. N01-N46: 40 pesquisas concluidas nos recortes e seis reusos documentados; nenhuma N ativa ou pausada. Nao sao cinco programas originais de cuidadores completos nem conteudo/pratica/publicacao aprovados. Benson/START/Pilates e variantes nao selecionadas preservam suas lacunas. Fonte, autoria, dose, publico, apoio e direitos por componente; sem ciclo novo ou eficacia herdada. Indice: 840 tentativas GET, 694 HTTP200, 780 hashes conferidos, 331 familias. Sem app/Figma/banco, novos contatos, commit ou push. [Entrega, selecao e limites](docs/conteudo/evidencias/2026-10-21/n15c-composicao/relatorio.md). Registros datados anteriores abaixo sao historicos e nao substituem esta selecao.
+
 **Treinar. Aprender. Cuidar da rotina.**
 
 TrainForge é um aplicativo em desenvolvimento para integrar **treino, movimento, alimentação e acompanhamento pessoal**. A proposta é ajudar tanto quem não sabe por onde começar como quem já tem experiência e quer montar ou personalizar os seus planos.
 
 O conteúdo de treino pretendido vem de programas criados por humanos, com origem, autoria e direitos verificáveis. O projeto não pretende gerar prescrição de treino por IA.
+
+**Registro historico — 16/10/2026:** N18–N21 fecharam a pesquisa nos recortes documentados: biblioteca de9componentes de academia, percursos humanos comparados e9componentes específicos de praça. N01–N46:39pesquisas concluídas nosrecortes,6reusos documentados e **N15 pausada/aberta**; nenhumaNativa. Isso não representa45programas integrais executáveis nem aprovação de prática, conteúdo ou funções automáticas. Autoria, dose, apoio, variante, direitos e lacunas das réplicas integrais preservados; sem treino prescrito porIA. Índice833GETs/689HTTP200/775hashes conferidos,328famílias. Temporários de ensaios/leitura excluídos após uso:2.665.357.099bytes/9recibos, ausência verificada; fontes primárias e recibos preservados. Sem app/Figma/banco/publicação/contatos/commit/push. [Resultados, limites e retomada](docs/conteudo/evidencias/2026-10-15/continuacao-n39-n46.md) Registros datados abaixo são históricos e não substituem este estado.
+
+
+Pesquisa de cuidadores em 12/10: [catálogo documental](docs/conteudo/catalogo-cuidadores.md), cinco fichas fechadas para pesquisa nos recortes declarados, nenhum item publicado. CG-05 documenta Pilates com fisioterapeuta, dose, preparo e três etapas; não um guia autônomo integral. Divergências de calendário, comandos não publicados e direitos permanecem registrados, sem preenchimento por IA. Orientação, versão/transições e apoio real precisam ser verificados antes de uso. N15-C global continua aberta, N21 retida; nenhum conteúdo novo no APK.
 
 ## O produto que estamos a construir
 
@@ -27,7 +34,7 @@ Dores, limitações e retornos após pausa ou cirurgia fazem parte da investiga�
 | Aplicativo | Base Flutter existente, com autenticação e fluxos iniciais de treino; interface final ainda por implementar |
 | Backend | API Fastify/TypeScript/Prisma/PostgreSQL mantida separadamente em `bootcamp-treinos-api`; não está incluída neste repositório |
 | Design | Figma v0.4 inventariado em setembro de 2026; próximos ajustes especificados, ainda não aplicados |
-| Conteúdo | 61 fontes/famílias; N01–N10 concluídos para pesquisa em 30/09/2026, com retornos, direitos e limites documentados. Não equivale a catálogo homologado |
+| Conteúdo | 232 fontes/famílias catalogadas em 15/10/2026; N22/N23 com lotes de pesquisa documentados, N24 ativa/incompleta. Fontes incluem referências, condicionais e incompatíveis; não são 232 fornecedores aprovados |
 | Planeamento | Etapa 0 inventariada; etapa 01 aberta para fechar conteúdo, direitos, métodos e viabilidade da visão integral |
 | Publicação | [Primeiro commit da base](https://github.com/richardcastrogois/TrainForge/commit/16565d5e882e89d094150e79e2a2c0934af758af) em 24/09/2026; sem deploy ou lançamento nas lojas |
 

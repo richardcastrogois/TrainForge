@@ -1,0 +1,22 @@
+{
+  "id": "i18-eckardt-2016-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5122203/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:51:43.725201+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar ensaio diferente de 2019/2020, descricoes e figuras das variantes de maquinas, experiencia inicial e ciclo; nao transferir a barra na anca do outro ensaio.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5122203/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 176415,
+  "bodyFile": "../raw/i18-eckardt-2016-xml.xml",
+  "sha256": "ddf84d91c1a639ee9c1fe0aa0ea8e44992204ce71fba2da464fb29381ef13c1a"
+}

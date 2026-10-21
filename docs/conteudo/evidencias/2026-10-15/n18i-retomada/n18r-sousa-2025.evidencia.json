@@ -1,0 +1,23 @@
+{
+  "id": "n18r-sousa-2025",
+  "url": "https://bmcsportsscimedrehabil.biomedcentral.com/articles/10.1186/s13102-025-01326-9",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:03:23.075852+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Novo corpo com comandos/modelos efetivos; verificar seis meses prévios de treino e não classificar como iniciante.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s13102-025-01326-9?error=cookies_not_supported&code=7d3748c4-efd0-4cf1-a6c0-663aaa742500",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 484766,
+  "bodyFile": "../raw/n18r-sousa-2025.html",
+  "sha256": "3e9ff495738cbdbdd3d1319028be3b61c758d91cc4af5c575f30216e0f1f30b7"
+}

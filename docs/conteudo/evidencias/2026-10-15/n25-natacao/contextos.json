@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "niche": "N25",
+  "criterionSource": "../../2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "nao_aplicavel_sem_piscina",
+      "reason": "Requer piscina, capacidade de nado e apoio/vigilância; rótulo casa/praça/academia não prova acesso nem elegibilidade. Se houver piscina compatível, avaliar modalidade/capacidade e suporte, sem excluir somente pelo local."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "nao_aplicavel_sem_piscina",
+      "reason": "Requer piscina, capacidade de nado e apoio/vigilância; rótulo casa/praça/academia não prova acesso nem elegibilidade. Se houver piscina compatível, avaliar modalidade/capacidade e suporte, sem excluir somente pelo local."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "pendente",
+      "reason": "Requer piscina, capacidade de nado e apoio/vigilância; rótulo casa/praça/academia não prova acesso nem elegibilidade. Se houver piscina compatível, avaliar modalidade/capacidade e suporte, sem excluir somente pelo local."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "nao_aplicavel_sem_piscina",
+      "reason": "Requer piscina, capacidade de nado e apoio/vigilância; rótulo casa/praça/academia não prova acesso nem elegibilidade. Se houver piscina compatível, avaliar modalidade/capacidade e suporte, sem excluir somente pelo local."
+    }
+  ],
+  "doesNotReopenN15": true,
+  "doesNotStartN21": true,
+  "releaseApproved": false
+}

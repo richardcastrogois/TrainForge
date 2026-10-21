@@ -1,0 +1,23 @@
+{
+  "id": "n18r-army-faq",
+  "url": "https://www.army.mil/faq/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:00:38.856495+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar termos de reutilização e domínio público sem inferir liberação de marcas ou retratos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.army.mil/faq/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 47883,
+  "bodyFile": "../raw/n18r-army-faq.html",
+  "sha256": "a1991b9b59742173dbcd8ae13249c45488fa4d84142da079e73977277b46ee19"
+}

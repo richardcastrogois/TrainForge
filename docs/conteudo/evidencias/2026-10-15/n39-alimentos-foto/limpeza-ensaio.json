@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-15",
+  "authorizedBy": "User required deletion immediately after no longer needed",
+  "exactPath": "C:\\dev\\TrainForge\\.research-runtime\\n39",
+  "resolvedPathChecked": true,
+  "reparsePointsFound": 0,
+  "activeRuntimeProcesses": 0,
+  "deletedBytes": 1348849875.0,
+  "directoryAbsentVerified": true,
+  "deleted": [
+    "venv and 26 installed dependency distributions",
+    "model weights",
+    "pip cache and temporary downloads",
+    "five photo fixtures",
+    "temporary installation logs"
+  ],
+  "preserved": [
+    "source metadata and licenses",
+    "dependency versions and advertised hashes",
+    "download receipts and model/photo hashes",
+    "research scripts and inference results"
+  ],
+  "appChanged": false
+}
