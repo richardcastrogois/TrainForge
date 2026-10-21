@@ -1,0 +1,23 @@
+{
+  "id": "c15-sun2025-artigo-html",
+  "url": "https://link.springer.com/article/10.1186/s12912-025-03881-5",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:15:20.383512+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original completo de programa multidisciplinar domiciliar para familiares de pacientes musculoesqueleticos. Conferir tabela operacional, profissionais, populacao, inconsistencias de amostra e direitos; nomes de exercicios nao bastam.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s12912-025-03881-5?error=cookies_not_supported&code=0e443626-333f-4e5e-9828-575057c4aa0c",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 453401,
+  "bodyFile": "../raw/c15-sun2025-artigo-html.html",
+  "sha256": "f6b11c90e10f1cd0b1ab7fb75e42ed65788fc34b7ad9f014d416efabca2f0887"
+}

@@ -1,0 +1,42 @@
+{
+  "niche": "N14-C",
+  "date": "2026-10-03",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 2,
+  "proposedOperations": 9,
+  "fictionalScenarios": 10,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n14c-cuidador/n14c-cnpd-consentimento.evidencia.json",
+      "url": "https://www.cnpd.pt/organizacoes/areas-tematicas/consentimento/",
+      "sha256": "bda6ce307e8881561abbbabea10a91dd930e471d3635048d6be4d933f1bee57c"
+    },
+    {
+      "record": "2026-10-03/n14c-cuidador/n14c-gov-cuidador.evidencia.json",
+      "url": "https://www.gov.pt/guias/cuidador-informal-perguntas-frequentes",
+      "sha256": "f0c4a4d53c5b8cc192eb5831c9c2cbd0e919582bedf5bb0f92f69c3564631837"
+    },
+    {
+      "record": "2026-10-03/revisao-idosos-cuidadores/ic-cdc-caregivers.evidencia.json",
+      "url": "https://www.cdc.gov/still-going-strong/caregivers/index.html",
+      "sha256": "d0f5a24e8a9ea46f53f58c1277f77fcb058b0e2dd68cc0680ecf42bf3a8d1d21"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n14-rotina-alimentar/rotina-proposta.json",
+      "artifactSha256": "1f4e4cdfbe757242351fefd8ffe5b1320d7e64f4e99593070b9ffa9fcdc3ba5c"
+    },
+    {
+      "file": "2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json",
+      "artifactSha256": "fb575cb359791b648a59aa23e0a8120b396c99fced30d98e16381df559760a96"
+    }
+  ],
+  "next": "N15-I"
+}

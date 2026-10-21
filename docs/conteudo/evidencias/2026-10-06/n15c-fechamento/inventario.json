@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-06",
+  "scope": [
+    "N15-C"
+  ],
+  "networkPerformedByThisScript": false,
+  "collectorCalls": 8,
+  "usableBodies": 5,
+  "verifiedBodiesIncludingErrors": 6,
+  "entries": [
+    {
+      "id": "c15-cbt-editora",
+      "url": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+      "resolvedUrl": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+      "collectedAtUtc": "2026-10-06T03:27:40.482850+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 42740,
+      "sha256": "76da9c4f12c91c38b9377870e52eda83433921891f129e06edacce7ea91f8c63",
+      "record": "2026-10-06/n15c-fechamento/c15-cbt-editora.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-cbt-livro",
+      "url": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+      "resolvedUrl": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+      "collectedAtUtc": "2026-10-06T03:27:42.260316+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 12262747,
+      "sha256": "49ebe9d5c36074b009257d1498d0ddd4646a8fc7359fd3df905c36bdb0cd959e",
+      "record": "2026-10-06/n15c-fechamento/c15-cbt-livro.evidencia.json",
+      "bodyVerified": true,
+      "usable": true,
+      "pdfPages": 366,
+      "anchorCheckedPdfPages": [
+        5,
+        12,
+        187,
+        198,
+        199,
+        359,
+        360,
+        362
+      ]
+    },
+    {
+      "id": "c15-educapes-cuidador-metadados",
+      "url": "https://educapes.capes.gov.br/handle/capes/922438?mode=full",
+      "resolvedUrl": null,
+      "collectedAtUtc": "2026-10-06T03:30:52.718266+00:00",
+      "status": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-06/n15c-fechamento/c15-educapes-cuidador-metadados.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-pilates-ufba-metadados",
+      "url": "https://repositorio.ufba.br/handle/ri/40795",
+      "resolvedUrl": null,
+      "collectedAtUtc": "2026-10-06T03:31:04.916042+00:00",
+      "status": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-06/n15c-fechamento/c15-pilates-ufba-metadados.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-pmr-indonesia-artigo",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/view/12524",
+      "resolvedUrl": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/view/12524",
+      "collectedAtUtc": "2026-10-06T03:33:05.625163+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 30168,
+      "sha256": "2b5013ead49af33f07307a80ce53a4f078a2602521c7ab7c353d8959a91a49c6",
+      "record": "2026-10-06/n15c-fechamento/c15-pmr-indonesia-artigo.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-pmr-indonesia-pdf",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/download/12524/Download%20Artikel",
+      "resolvedUrl": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/download/12524/Download%20Artikel",
+      "collectedAtUtc": "2026-10-06T03:33:06.966997+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 349191,
+      "sha256": "ce2ec1eee7b8b8eca11b4fa823f60c312d9eea350cbdf453b2306d8204d3b28f",
+      "record": "2026-10-06/n15c-fechamento/c15-pmr-indonesia-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true,
+      "pdfPages": 9,
+      "anchorCheckedPdfPages": [
+        1,
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "id": "c15-va-workbook-integral",
+      "url": "https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf",
+      "resolvedUrl": "https://www.dementia.cindrr.research.va.gov/docs/va_caregiver_workbook.pdf",
+      "collectedAtUtc": "2026-10-06T03:30:52.850235+00:00",
+      "status": 404,
+      "error": "HTTP 404",
+      "bytes": 59629,
+      "sha256": "5f23895f862ca09c6ee25bd3a528dba09954aac1a20854cd61bbe520b472ea91",
+      "record": "2026-10-06/n15c-fechamento/c15-va-workbook-integral.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-va-workbook-modulo1",
+      "url": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+      "resolvedUrl": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+      "collectedAtUtc": "2026-10-06T03:30:54.075788+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 7796540,
+      "sha256": "30b856ebb5846fc0ee7d4e5c08acedd132d5991cffdd1c3f5a62e25ecb0f7b77",
+      "record": "2026-10-06/n15c-fechamento/c15-va-workbook-modulo1.evidencia.json",
+      "bodyVerified": true,
+      "usable": true,
+      "pdfPages": 54,
+      "anchorCheckedPdfPages": [
+        1,
+        9,
+        21,
+        23
+      ]
+    }
+  ],
+  "limits": "Hash e ancora nao validam clinica/direitos nem convertem artigo em programa."
+}

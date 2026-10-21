@@ -1,0 +1,23 @@
+{
+  "id": "i15-snacking-2019",
+  "url": "https://onlinelibrary.wiley.com/doi/10.1155/2019/7516939",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T20:17:23.189769+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Artigo humano original de pratica domestica sem supervisao: conferir cinco movimentos, dose de quatro semanas, elegibilidade e suplemento indicado no editor. Nao misturar com videos/supervisao do estudo 2026 nem converter teste de leg press em treino.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://onlinelibrary.wiley.com/doi/10.1155/2019/7516939",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5742,
+  "bodyFile": "../raw/i15-snacking-2019.html",
+  "sha256": "b564aea99b2ad7cdf05149eceafa83ed126bd7aaed9cb9f2abd8f4367b18fc5b",
+  "error": "HTTP 403"
+}

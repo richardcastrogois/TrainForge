@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-I",
+  "requests": [
+    {"id": "i15-busca-europepmc", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20exercise%20AND%20home%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=8", "extension": "json", "purpose": "Consulta publica delimitada de repositorio de artigos, oito resultados, para treino proprio do cuidador em casa. Nao e download de manual nem autorizacao por acesso aberto. Buscar fonte humana e suplemento original sem contornar desafios, auth ou pagar; uma tentativa, teto 2 MiB e TLS padrao."}
+  ]
+}

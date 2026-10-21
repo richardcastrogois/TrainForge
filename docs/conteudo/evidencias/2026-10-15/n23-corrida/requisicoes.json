@@ -1,0 +1,42 @@
+{
+  "requests": [
+    {
+      "id": "n23-bupa-5k",
+      "url": "https://www.bupa.co.uk/~/media/images/healthmanagement/pdfs/5k-beginner.pdf",
+      "purpose": "Plano5km completo8semanas; dose/descanso/instrucao e direitos, nao pressuporautoria pela marca",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n23-bupa-method",
+      "url": "https://www.bupa.co.uk/newsroom/ourviews/how-running-plans-work",
+      "purpose": "Instrucao humana autorJohnFairhurstfisioterapeuta2026; nao herdarautoriadoPDFsemvinculo",
+      "extension": "html"
+    },
+    {
+      "id": "n23-berkshire-return",
+      "url": "https://www.berkshirehealthcare.nhs.uk/advice/return-to-running-programme",
+      "purpose": "Retorno clinico com fisioterapia; diferenciar iniciante e condicoes/margensambiguidade",
+      "extension": "html"
+    },
+    {
+      "id": "n23-decathlon-beginner",
+      "url": "https://conseilsport.decathlon.fr/course-a-pied-programme-running-debutant",
+      "purpose": "Colecao/app DecathlonCoach: autoria, pre-requisito20min e plano4semanas",
+      "extension": "html"
+    },
+    {
+      "id": "n23-nike-plans",
+      "url": "https://www.nike.com/running/training-plans/",
+      "purpose": "Catalogo publico de outroapp: planos/coaches/ativos sem extracao restrita",
+      "extension": "html"
+    },
+    {
+      "id": "n23-ohio-return",
+      "url": "https://wexnermedical.osu.edu/-/media/files/wexnermedical/patient-care/healthcare-services/sports-medicine/education/medical-professionals/other/basic-return-to-running-guideline.pdf",
+      "purpose": "Triagem clinica/criterios, verificar restricao usoOSUWMC antes de tratar como disponivel",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "i18-pact-plano-anexo",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8513828/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:33:01.575645+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Obter Research plan observado no artigo para verificar instrucao integral; preservar eventual limite de 2 MiB sem retry.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8513828/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "error": "Response exceeds 2 MiB: body not stored, no retry"
+}

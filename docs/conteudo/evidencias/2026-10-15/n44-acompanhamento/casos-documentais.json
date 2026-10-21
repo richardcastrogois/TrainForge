@@ -1,0 +1,96 @@
+{
+  "synthetic": true,
+  "actualParticipants": 0,
+  "events": [
+    {
+      "id": "H1",
+      "subject": "pessoa_A",
+      "reporter": "pessoa_A",
+      "venue": "casa",
+      "status": "completed_reported",
+      "planned": true
+    },
+    {
+      "id": "H2",
+      "subject": "pessoa_A",
+      "reporter": "pessoa_A",
+      "venue": "casa",
+      "status": "completed_reported",
+      "planned": true
+    },
+    {
+      "id": "H3",
+      "subject": "pessoa_A",
+      "reporter": null,
+      "venue": "casa",
+      "status": "unknown",
+      "planned": true
+    },
+    {
+      "id": "H4",
+      "subject": "pessoa_A",
+      "reporter": null,
+      "venue": "casa",
+      "status": "unknown",
+      "planned": true
+    },
+    {
+      "id": "C1",
+      "subject": "cuidador_B",
+      "reporter": "cuidador_B",
+      "venue": "casa",
+      "status": "paused_reported",
+      "planned": true,
+      "reason": "cuidado"
+    },
+    {
+      "id": "A1",
+      "subject": "assistido_C",
+      "reporter": "cuidador_B",
+      "venue": "casa",
+      "status": "unknown",
+      "planned": false
+    }
+  ],
+  "expected": {
+    "pessoa_A": {
+      "planned": 4,
+      "completedReported": 2,
+      "unknown": 2,
+      "loggingCoverage": 0.5,
+      "clinicalAdherence": null
+    },
+    "cuidador_B": {
+      "paused": 1,
+      "completed": 0,
+      "clinicalAdherence": null
+    },
+    "assistido_C": {
+      "completed": 0,
+      "unknown": 1,
+      "clinicalAdherence": null
+    }
+  },
+  "otherCases": [
+    {
+      "case": "Importação e entrada manual da mesma sessão",
+      "decision": "Possível duplicata; não somar até conciliar origem/intervalo/pessoa."
+    },
+    {
+      "case": "Sem registo alimentar no dia",
+      "decision": "Ingestão desconhecida, não0kcal."
+    },
+    {
+      "case": "Observador diz que idoso não teve dor",
+      "decision": "Observação, não autorrelato/diagnóstico ou segurança."
+    },
+    {
+      "case": "Aparelho de praça mostra12km cumulativos",
+      "decision": "Não atribuir12km a esta pessoa/sessão."
+    },
+    {
+      "case": "N30 interrompido após2componentes",
+      "decision": "Parcial; não marcar5componentes nem criar regra de retomada."
+    }
+  ]
+}

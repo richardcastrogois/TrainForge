@@ -1,0 +1,23 @@
+{
+  "id": "n24-yum2021-jats",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8675512/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:18:12.199679+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Estudo aberto de ajuste/cinematica; conferir limites antes de usar como instrucao auxiliar",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8675512/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 78491,
+  "bodyFile": "../raw/n24-yum2021-jats.xml",
+  "sha256": "d42506c30e5fa4c2a0b06a1b403af6536390be1a1720176c17e2e1bb5a952b78"
+}

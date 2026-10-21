@@ -1,0 +1,38 @@
+{
+  "niche": "N15-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 1,
+  "proposedOperations": 0,
+  "fictionalScenarios": 5,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n15i-idosos-casa/n15i-nhs-sentado.evidencia.json",
+      "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "sha256": "34635bd9aff76a9f05011b6630d5764ddcfeb2499cbb090ab5b700c18f651e03"
+    },
+    {
+      "record": "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12692657/",
+      "sha256": "5f5c45e05220bf9fa4ce61671a985e6bf45e6ba254fc86979893b72ffb6c69d4"
+    },
+    {
+      "record": "2026-09-29/n08-receitas/n08-nhs-termos.evidencia.json",
+      "url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+      "sha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n15-casa-sem-equipamento/amostra-programas.json",
+      "artifactSha256": "4d55bab382ee39fd9f8d19b09aa34787d6e0c1d4ea286a0f72cbb8ebc00142d7"
+    }
+  ],
+  "next": "N16-I"
+}

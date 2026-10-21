@@ -1,0 +1,24 @@
+{
+  "id": "n15dir-pilates-bmr-abstract-html",
+  "url": "https://journals.sagepub.com/doi/abs/10.3233/BMR-191649",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T03:33:18.667975+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Representacao editorial publica do resumo e direitos, nao texto integral: confirmar acesso por assinatura/compra e all rights reserved sem executar essas opcoes. Nao buscar caminhos pagos ou importar comandos de outro programa.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.sagepub.com/doi/abs/10.3233/BMR-191649",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5734,
+  "bodyFile": "../raw/n15dir-pilates-bmr-abstract-html.html",
+  "sha256": "b2f74d6135785d888baccd2b669fedd97aa12626537622af5d03bcbfbadf27f2",
+  "error": "HTTP 403"
+}

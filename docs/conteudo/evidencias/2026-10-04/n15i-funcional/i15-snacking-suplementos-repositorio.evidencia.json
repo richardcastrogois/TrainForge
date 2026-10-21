@@ -1,0 +1,23 @@
+{
+  "id": "i15-snacking-suplementos-repositorio",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:51:04.495336+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Endpoint publico de suplementos open-access Europe PMC, uma tentativa com teto 2 MiB. Verificar tipo, assinatura e listagem ZIP antes de ler; nao executar macros, arquivos ativos ou caminhos externos. Endpoint legitimo independente, nao contorno/retry de pagina de desafio ou arquivo privado.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 280,
+  "bodyFile": "../raw/i15-snacking-suplementos-repositorio.zip",
+  "sha256": "3074bc29829b37109592c3fd636ea3d2cedc887485be25d878f562d87d263754",
+  "error": "HTTP 406"
+}

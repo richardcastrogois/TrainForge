@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-16",
+  "niche": "N18-I",
+  "researchClosed": true,
+  "priorAudit": "../../2026-10-04/n18i-academia/pesquisa-complemento.json",
+  "policyUpdate": "Aplicada a composicao permitida15/10: nao exigir toda a rotinaWalker ou28variantes. Elegibilidade/dose geral doNIAadmitem academia; tecnica/materiais/alteracoes/direitos de cada item separados. Revisao de uma futura sessao pessoal/publicacao nao substitui comandos ausentes: os9jaestao documentados.",
+  "criteria": [
+    {
+      "id": "I18-G01",
+      "met": true,
+      "evidence": "NIA2018/PDF19,22,25,42-45e106: orientacao humana explicita para inicio de forca de idosos, incluindo maquinas de academia e pesoslivres; painel profissionalPDF121. Walker preservado como ensaio distinto, nao autor do novo lote."
+    },
+    {
+      "id": "I18-G02",
+      "met": true,
+      "evidence": "Dose e progressao humanasNIA43-45: inicio leve, objetivo10-15reps/2series,3:1:3, dias sem repetir mesmo grupo consecutivamente, aumento quando2seriesfacéis. Segundos de descanso/incremento kg ausentes mantidos nulos; alternativas humanas de organizacao semanalPDF106, sem ciclo ou sessao inventados."
+    },
+    {
+      "id": "I18-G03",
+      "met": true,
+      "evidence": "Nove componentes com preparo, direcao/retorno, variante/materiais, autoria/contribuicao e caminho textual comercial gratuito. USU291-294+politicaoriginal200, DeAnzaCCBY4eautoria, NIA/politicaprimaria. Geometria das fontes tecnicas separada da doseNIA; tempos militares/testes nao fundidos. Desenhos FredKoch/fotos/videos/logo/testes1RM e quatro instrucoes conflitantes excluidos."
+    },
+    {
+      "id": "I18-G04",
+      "met": true,
+      "evidence": "Recorte idoso de inicio gradual, sintomas/encaminhamento/interrupcao/retorno NIA22-25,32,35,44-45; proposta profissional conservadora para composicao, preservando spotterUSUpara supino. Casa/praca/cuidador proprio com limites; nenhum serviço presumido."
+    }
+  ],
+  "contexts": [
+    {
+      "context": "idoso_academia",
+      "status": "pesquisa_modular_fechada",
+      "reason": "Nove componentes selecionados/documentados; composicao futura e equipamento real exigem revisao/apoio antes de oferta. Nao liberacao universal."
+    },
+    {
+      "context": "idoso_casa",
+      "status": "nao_aplicavel_aos_lotes_de_maquinas_selecionados",
+      "reason": "Não substituir academia por cadeira para fecharN18; usar os lotes domésticos existentes nos seus escopos."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "fora_do_lote_N18_tratado_em_N21",
+      "reason": "Aparelhos de interior não viram praça; apósN18/N19/N20, N21fechou nove componentes específicos. Ver ../n21-praca/auditoria-fechamento.json; não herda dose/varianteN18."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "nao_demonstrado",
+      "reason": "Sem kit/modelo/apoio e elegibilidade da própria pessoa; não herda programa do assistido."
+    }
+  ],
+  "next": "N18-I pesquisa modular fechada; seguirN19-I, depoisN20-I/N21 apenas apos o fechamento real de cada uma. N15pausada.",
+  "n15Paused": true,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "additionalContent": "fichas-pesos-livres-nia2018.json",
+  "newIndependentFreeWeightFactSheets": 3,
+  "sourceReusedNoGet": true,
+  "additionalEvidence": "leitura-maquinas-2026-10-16.json",
+  "additionalMachineFactSheet": "ficha-legpress-deanza.json",
+  "newIndependentMachineInstructionFactSheets": 1,
+  "closureScope": "Biblioteca modular inicial de9componentes humanos para idoso em academia,6maquinas/polias e3pesoslivres; nao cicloWalker integral, banco universal ou liberacao autonoma.",
+  "closureEvidence": "pacote-modular-academia.json",
+  "readingEvidence": "leitura-usu-e-nia.json",
+  "verification": "verificacoes-pacote.json",
+  "sourceReusedNoGetScope": "NIA original reutilizado semGET; USUteve uma chamada duplicada reconhecida em leitura-usu-e-nia.json, não nova família."
+}

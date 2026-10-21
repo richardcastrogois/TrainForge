@@ -1,0 +1,22 @@
+{
+  "id": "a06-wai-imagens",
+  "url": "https://www.w3.org/WAI/tutorials/images/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T14:59:54.952301+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Alternativas de imagens segundo finalidade; sem inferir porcao/composicao ou copiar ilustracoes.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.w3.org/WAI/tutorials/images/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 43536,
+  "bodyFile": "../raw/a06-wai-imagens.html",
+  "sha256": "9978c776e9afb185bc0e40a6bcb7d625e1620e6e31f29efe095d7146a092e715"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n37-hc-availability",
+  "url": "https://developer.android.com/health-and-fitness/health-connect/availability",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:25:35.493691+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentação técnica pública HealthConnect. ContentLicense consultada permite reuso sobApache2.0salvoexceções, marcas/externos separados. Preservar versão/instruções para pesquisa, semcopiarcódigo/instalarSDK/aplicativo ou coletardadosde saúde.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developer.android.com/health-and-fitness/health-connect/availability",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 273521,
+  "bodyFile": "../raw/n37-hc-availability.html",
+  "sha256": "1e4c224e0e5bc1f0d6c91de34b4e9cacd872c75455be68c78c237a8aaf5b5454"
+}

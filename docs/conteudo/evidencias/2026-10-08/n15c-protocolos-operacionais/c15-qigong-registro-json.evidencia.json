@@ -1,0 +1,23 @@
+{
+  "id": "c15-qigong-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT04019301",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:10:23.138125+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Revalidar PR32 ja catalogada: existencia de resultados/documentos e identidade das doses; nao nova familia pelo registro.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT04019301",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 54840,
+  "bodyFile": "../raw/c15-qigong-registro-json.json",
+  "sha256": "9b426bd838382c76ec873a6bb407c12b63e941248469693019e9a443eaa8a275"
+}

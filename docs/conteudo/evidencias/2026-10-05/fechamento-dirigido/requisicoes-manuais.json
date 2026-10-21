@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-05",
+  "scope": "Primeiras coletas de arquivos publicados: PDFLifeAge com URL/tamanho dos metadados recebidos e suplementoREACT a localizar no XML. Sem ampliar ZIP, repetir falhas ou importar para APK.",
+  "requests": [
+    {"id": "i18-lifeage-guia-pdf", "url": "https://zenodo.org/api/records/4395762/files/LifeAge%20Guide%20Book%20ISBN%209791220242363.pdf/content", "extension": "pdf", "accept": "application/pdf", "maxBytes": 16777216, "expectedBytes": 13230964, "sizeEvidence": "2026-10-05/fechamento-dirigido/i18-lifeage-metadata.evidencia.json", "sizeMetadataFormat": "zenodo_record", "purpose": "PrimeiroPDF integral edicao2020CCBY4declarada nos metadados. Conferir avisos internos, ciclo/instrucoes/ambiente; checksumMD5deorigem independente do nossoSHA256."},
+    {"id": "i18-react-2023-xml", "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/xml", "extension": "xml", "accept": "application/xml", "purpose": "XML oferecido na pagina original recebida: localizar membroS1 real e licenca, sem inferirURL pelo titulo."}
+  ]
+}

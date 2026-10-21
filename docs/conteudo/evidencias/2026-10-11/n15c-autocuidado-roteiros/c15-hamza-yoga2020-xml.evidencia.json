@@ -1,0 +1,23 @@
+{
+  "id": "c15-hamza-yoga2020-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6937882/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:41:49.168252+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "OriginalRCT cuidador esquizofrenia/selfhelpmanual, conferir resultados nulos/attrition/roteiroanexo/apoio/direitos, nao eficacia assumida por titulo manual.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6937882/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 69330,
+  "bodyFile": "../raw/c15-hamza-yoga2020-xml.xml",
+  "sha256": "0aeafe3312cad99be937ce06c65a07f863b653ddfd157c4a0e57ae4ee6540820"
+}

@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n39-nateraw-preprocessor",
+      "url": "https://huggingface.co/nateraw/food/resolve/8991abd49ea01ebf502aeda51d4f12a59c603e01/preprocessor_config.json",
+      "purpose": "Arquivo pequeno da revisão pública observada naAPI, metadados Apache2.0, sempesos. Leitorwebnãoconseguiurenderizarblob; rotaoficialresolvedownloadusadaparaJSON/card, não login/challenge oupermissaonegada. Conferirpré-processamento, não executar modelo.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-vit-base-card",
+      "url": "https://huggingface.co/google/vit-base-patch16-224-in21k/resolve/main/README.md",
+      "purpose": "Cartão domodelobase linkado nateraw:Apache2.0verificado em páginaoficial. Não éclassificadoralimentar nemlicençadefotosImageNet. Conferirproveniência/limitações e distinguir basemodeldofinetune.",
+      "extension": "md"
+    }
+  ]
+}

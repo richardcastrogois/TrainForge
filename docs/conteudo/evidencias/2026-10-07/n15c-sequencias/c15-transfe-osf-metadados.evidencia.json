@@ -1,0 +1,23 @@
+{
+  "id": "c15-transfe-osf-metadados",
+  "url": "https://api.osf.io/v2/nodes/k7wte/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:36:38.750012+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "API publica do registro OSF explicitamente citado no artigo; identidade/licenca do projeto, sem login, alteracao ou dados privados.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/k7wte/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4332,
+  "bodyFile": "../raw/c15-transfe-osf-metadados.json",
+  "sha256": "4c6b35ef4a8c02c7e27207fe3c74cb6464a0b630c13a4527524f1bb18cae01ac"
+}

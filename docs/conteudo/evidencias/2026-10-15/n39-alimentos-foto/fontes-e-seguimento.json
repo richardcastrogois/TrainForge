@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "researchClosed": false,
+  "newFamilies": [
+    {
+      "id": "PR215",
+      "name": "DailyFood-172/16 — generalização para refeições cotidianas",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "Guoshan Liu, Yang Jiao, Jingjing Chen, Bin Zhu e Yu-Gang Jiang; Fudan University/Singapore Management University",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_paper_html_and_author_readme_received",
+      "access": "Artigo HTML e README dos autores recebidos; somente documentos, sem Google Drive ou fotografias.",
+      "rights": "Artigo sob licença não exclusiva arXiv, não grant de mídia de terceiros. README recebido só aponta duas pastas Drive e não declara licença de fotos/modelos. Nenhum conjunto baixado.",
+      "finding": "Estudo de transferência para pratos cotidianos; classes chinesas, não avaliação portuguesa ou nateraw. A diferença de domínio é uma questão demonstrada pelos autores, sem transferir suas métricas a outro modelo.",
+      "next": "Referência metodológica para avaliação de domínio; não candidato de conteúdo ou pesos livres.",
+      "urls": [
+        "https://arxiv.org/abs/2403.07403",
+        "https://arxiv.org/html/2403.07403v1",
+        "https://github.com/SLKAlgs/DailyFood-172"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n39-alimentos-foto/fontes-e-seguimento.json"
+    },
+    {
+      "id": "PR216",
+      "name": "Swin-Food101 — conversão ONNX pela onnx-community",
+      "topic": "alimentos",
+      "status": "condicional",
+      "publisher": "aspis (ajuste alimentar), Microsoft (base Swin), onnx-community/Felladrin (conversão)",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "pinned_api_card_config_preprocessor_received",
+      "access": "API/card/config/pré-processador públicos recebidos, revisão e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8. Nenhum peso ou runtime obtido.",
+      "rights": "Apache 2.0 declarada para o modelo convertido. Não licencia fotos Food101 ou toda combinação de modelos de uma aplicação que o utiliza.",
+      "finding": "Classificador alimentar específico, 101 nomes iguais ao nateraw, normalização e resize diferentes. Card traz 0.92103 e 0.91358 em entradas auto-relatadas distintas, ambas verified:false; não assumir mesmo protocolo nem equivalência da quantização.",
+      "next": "Candidato alternativo para ensaio separado; identidade da revisão/quantização e desempenho real ainda pendentes. Não substitui avaliação portuguesa, detecção de não-alimentos ou confirmação humana.",
+      "urls": [
+        "https://huggingface.co/onnx-community/swin-finetuned-food101-ONNX",
+        "https://huggingface.co/aspis/swin-finetuned-food101"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n39-alimentos-foto/fontes-e-seguimento.json"
+    },
+    {
+      "id": "PR217",
+      "name": "NutriLens — aplicação aberta e relatórios de reconhecimento",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "Thejus Dutt, mantenedor do repositório thejusdutt/nutrilens",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_license_readme_and_published_evaluation_received",
+      "access": "Licença, README, dois relatórios de métricas, benchmark por foto e anotações textuais recebidos. Não clonado, instalado, executado ou ligado ao TrainForge.",
+      "rights": "MIT para software/documentação, com exclusão expressa de pesos/datasets. A fusão inclui MobileCLIP com licença separada que exclui desenvolvimento de produto; MIT da aplicação não supera essa restrição. Fotos de usuários do benchmark não obtidas.",
+      "finding": "Relatórios do autor distinguem Food101, culinárias e casos mistos, mas não validam nosso app. Conferência local recompõe ECE aproximado 0.01532 e identifica 53/66 acertos de pratos nas 39 linhas, diferente da manchete 80.6%; as faixas nutricionais são estimadas visualmente, não pesagens.",
+      "next": "Usar apenas evidência de falhas, método e limites; não copiar arquitetura, conteúdo, interface ou alegar precisão transferida. Não adotar a fusão como caminho liberado.",
+      "urls": [
+        "https://github.com/thejusdutt/nutrilens",
+        "https://github.com/thejusdutt/nutrilens/blob/main/eval/results/ACCURACY_REPORT.md",
+        "https://github.com/thejusdutt/nutrilens/blob/main/eval/results/VISION_BENCH.md"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n39-alimentos-foto/avaliacao-publicada.json"
+    },
+    {
+      "id": "PR218",
+      "name": "Apple MobileCLIP — licenças separadas de software/modelo/dados",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "Apple Inc./apple-aiml-research",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "three_primary_license_bodies_received",
+      "access": "LICENSE, LICENSE_MODELS e LICENSE_DATA primários recebidos, sem pesos/dados/instalação.",
+      "rights": "Software MIT; arquivo LICENSE_MODELS concede exclusivamente pesquisa científica não comercial e exclui desenvolvimento de produto/uso comercial. Dados têm condições próprias. Descrição literal, sem concluir sobre outros modelos Apple ou concessões não recebidas.",
+      "finding": "Embedding genérico usado como parte da fusão de outro app não é classificador alimentar selecionado e não atende sozinho N39. Direitos da combinação não herdam a MIT do app.",
+      "next": "Não selecionar estes pesos para produto TrainForge neste caminho. Continuar por modelo específico com licença própria compatível e ensaio documentado.",
+      "urls": [
+        "https://github.com/apple-aiml-research/ml-mobileclip/blob/main/LICENSE",
+        "https://github.com/apple-aiml-research/ml-mobileclip/blob/main/LICENSE_MODELS",
+        "https://github.com/apple-aiml-research/ml-mobileclip/blob/main/LICENSE_DATA"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n39-alimentos-foto/fontes-e-seguimento.json"
+    }
+  ],
+  "reusedFamily": "MI01",
+  "receiptsInN39": 32,
+  "newReceiptsThisTurn": 26,
+  "newHttp200": 26,
+  "newBodyHashes": 26,
+  "sourceTraversal": [
+    "Food101 -> versão do modelo -> resultados e código legado -> ordem do loader",
+    "Estudo DailyFood -> repositório dos autores -> ausência de grant explícito nas pastas apontadas",
+    "Aplicação NutriLens -> relatórios publicados e MIT -> pesos excluídos -> licenças oficiais Apple",
+    "Modelo da aplicação -> conversão ONNX -> card/config/preprocessador fixados",
+    "Commons MI01 já existente -> seis arquivos específicos -> metadados de direitos individuais"
+  ],
+  "notPerformed": [
+    "inferência de modelo",
+    "download de peso",
+    "download de fotografia",
+    "instalação de runtime",
+    "upload de foto",
+    "uso de conta ou API paga",
+    "novo contato",
+    "alteração do app/Figma/banco"
+  ],
+  "noBefitSupplierAttribution": true
+}

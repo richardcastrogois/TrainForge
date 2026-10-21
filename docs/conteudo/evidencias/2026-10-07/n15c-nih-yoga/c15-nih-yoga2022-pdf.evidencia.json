@@ -1,0 +1,24 @@
+{
+  "id": "c15-nih-yoga2022-pdf",
+  "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0277009&type=printable",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:11:11.792682+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF original para conferencia de metodos/CC0/instrutor/limites; artigo nao automaticamente roteiro audio ou pamphlet.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0277009&type=printable",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 831229,
+  "bodyFile": "../raw/c15-nih-yoga2022-pdf.pdf",
+  "sha256": "5bb19b3f6fdabd12b7bcc0c78f1c2030a956b3f1cab50595d278fb236684c59d",
+  "bodyFormatMatchesRequest": true
+}

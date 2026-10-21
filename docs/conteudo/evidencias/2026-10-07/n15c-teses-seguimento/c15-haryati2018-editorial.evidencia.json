@@ -1,0 +1,24 @@
+{
+  "id": "c15-haryati2018-editorial",
+  "url": "https://ajouronline.com/index.php/AJAS/article/view/5560",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:46:36.122824+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Pista primaria PMR/respiracao cuidador paliativo2018, verificar resultados, anexos e licenca sem usar sintese secundaria como evidencia.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://ajouronline.com/index.php/AJAS/article/view/5560",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 2053,
+  "bodyFile": "../raw/c15-haryati2018-editorial.html",
+  "sha256": "ad4201d67a3c330a80e88e22302fd77e094577126a698f48ec849322e6aa1200",
+  "error": "HTTP 403"
+}

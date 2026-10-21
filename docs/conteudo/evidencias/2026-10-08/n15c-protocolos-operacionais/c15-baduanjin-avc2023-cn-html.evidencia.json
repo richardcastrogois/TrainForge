@@ -1,0 +1,23 @@
+{
+  "id": "c15-baduanjin-avc2023-cn-html",
+  "url": "https://www.zglyyx.com/CN/10.13517/j.cnki.ccm.2023.08.001",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:10:11.491003+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original chines, cuidadores de AVC; verificar campos publicados e linkPDF real, autoria/rotina/direitos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.zglyyx.com/CN/10.13517/j.cnki.ccm.2023.08.001",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 108925,
+  "bodyFile": "../raw/c15-baduanjin-avc2023-cn-html.html",
+  "sha256": "1b77baea10a92d370f36cf03dc303a9316db2096b95b3b3ced50c2febf5169b9"
+}

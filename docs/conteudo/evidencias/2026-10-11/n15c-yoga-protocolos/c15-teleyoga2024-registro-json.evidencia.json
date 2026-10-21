@@ -1,0 +1,23 @@
+{
+  "id": "c15-teleyoga2024-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT04512040",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T21:46:45.157907+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro observado no XMLPMC10966998. Verificar entrega/documentos anexos/publico/resultado sem tratar protocolo prospectivo como eficacia ou dose de outra coorte.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT04512040",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 17327,
+  "bodyFile": "../raw/c15-teleyoga2024-registro-json.json",
+  "sha256": "a1affbc1b5d6a731bb845462664b29a912b91e1b3158f9df23cd335fca6bc362"
+}

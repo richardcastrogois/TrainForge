@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-15",
+  "model": "nateraw/food",
+  "observedRepositoryRevision": "8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "observedLastModified": "2022-05-17T17:44:24.000Z",
+  "configurationReceipt": "n39-nateraw-config.evidencia.json",
+  "architecture": [
+    "ViTForImageClassification"
+  ],
+  "imageSizePixels": 224,
+  "numChannels": 3,
+  "numClasses": 101,
+  "labelIdsContiguous0To100": true,
+  "mappingInverseVerified": true,
+  "labels": [
+    {
+      "id": 0,
+      "label": "apple_pie"
+    },
+    {
+      "id": 1,
+      "label": "baby_back_ribs"
+    },
+    {
+      "id": 2,
+      "label": "baklava"
+    },
+    {
+      "id": 3,
+      "label": "beef_carpaccio"
+    },
+    {
+      "id": 4,
+      "label": "beef_tartare"
+    },
+    {
+      "id": 5,
+      "label": "beet_salad"
+    },
+    {
+      "id": 6,
+      "label": "beignets"
+    },
+    {
+      "id": 7,
+      "label": "bibimbap"
+    },
+    {
+      "id": 8,
+      "label": "bread_pudding"
+    },
+    {
+      "id": 9,
+      "label": "breakfast_burrito"
+    },
+    {
+      "id": 10,
+      "label": "bruschetta"
+    },
+    {
+      "id": 11,
+      "label": "caesar_salad"
+    },
+    {
+      "id": 12,
+      "label": "cannoli"
+    },
+    {
+      "id": 13,
+      "label": "caprese_salad"
+    },
+    {
+      "id": 14,
+      "label": "carrot_cake"
+    },
+    {
+      "id": 15,
+      "label": "ceviche"
+    },
+    {
+      "id": 16,
+      "label": "cheese_plate"
+    },
+    {
+      "id": 17,
+      "label": "cheesecake"
+    },
+    {
+      "id": 18,
+      "label": "chicken_curry"
+    },
+    {
+      "id": 19,
+      "label": "chicken_quesadilla"
+    },
+    {
+      "id": 20,
+      "label": "chicken_wings"
+    },
+    {
+      "id": 21,
+      "label": "chocolate_cake"
+    },
+    {
+      "id": 22,
+      "label": "chocolate_mousse"
+    },
+    {
+      "id": 23,
+      "label": "churros"
+    },
+    {
+      "id": 24,
+      "label": "clam_chowder"
+    },
+    {
+      "id": 25,
+      "label": "club_sandwich"
+    },
+    {
+      "id": 26,
+      "label": "crab_cakes"
+    },
+    {
+      "id": 27,
+      "label": "creme_brulee"
+    },
+    {
+      "id": 28,
+      "label": "croque_madame"
+    },
+    {
+      "id": 29,
+      "label": "cup_cakes"
+    },
+    {
+      "id": 30,
+      "label": "deviled_eggs"
+    },
+    {
+      "id": 31,
+      "label": "donuts"
+    },
+    {
+      "id": 32,
+      "label": "dumplings"
+    },
+    {
+      "id": 33,
+      "label": "edamame"
+    },
+    {
+      "id": 34,
+      "label": "eggs_benedict"
+    },
+    {
+      "id": 35,
+      "label": "escargots"
+    },
+    {
+      "id": 36,
+      "label": "falafel"
+    },
+    {
+      "id": 37,
+      "label": "filet_mignon"
+    },
+    {
+      "id": 38,
+      "label": "fish_and_chips"
+    },
+    {
+      "id": 39,
+      "label": "foie_gras"
+    },
+    {
+      "id": 40,
+      "label": "french_fries"
+    },
+    {
+      "id": 41,
+      "label": "french_onion_soup"
+    },
+    {
+      "id": 42,
+      "label": "french_toast"
+    },
+    {
+      "id": 43,
+      "label": "fried_calamari"
+    },
+    {
+      "id": 44,
+      "label": "fried_rice"
+    },
+    {
+      "id": 45,
+      "label": "frozen_yogurt"
+    },
+    {
+      "id": 46,
+      "label": "garlic_bread"
+    },
+    {
+      "id": 47,
+      "label": "gnocchi"
+    },
+    {
+      "id": 48,
+      "label": "greek_salad"
+    },
+    {
+      "id": 49,
+      "label": "grilled_cheese_sandwich"
+    },
+    {
+      "id": 50,
+      "label": "grilled_salmon"
+    },
+    {
+      "id": 51,
+      "label": "guacamole"
+    },
+    {
+      "id": 52,
+      "label": "gyoza"
+    },
+    {
+      "id": 53,
+      "label": "hamburger"
+    },
+    {
+      "id": 54,
+      "label": "hot_and_sour_soup"
+    },
+    {
+      "id": 55,
+      "label": "hot_dog"
+    },
+    {
+      "id": 56,
+      "label": "huevos_rancheros"
+    },
+    {
+      "id": 57,
+      "label": "hummus"
+    },
+    {
+      "id": 58,
+      "label": "ice_cream"
+    },
+    {
+      "id": 59,
+      "label": "lasagna"
+    },
+    {
+      "id": 60,
+      "label": "lobster_bisque"
+    },
+    {
+      "id": 61,
+      "label": "lobster_roll_sandwich"
+    },
+    {
+      "id": 62,
+      "label": "macaroni_and_cheese"
+    },
+    {
+      "id": 63,
+      "label": "macarons"
+    },
+    {
+      "id": 64,
+      "label": "miso_soup"
+    },
+    {
+      "id": 65,
+      "label": "mussels"
+    },
+    {
+      "id": 66,
+      "label": "nachos"
+    },
+    {
+      "id": 67,
+      "label": "omelette"
+    },
+    {
+      "id": 68,
+      "label": "onion_rings"
+    },
+    {
+      "id": 69,
+      "label": "oysters"
+    },
+    {
+      "id": 70,
+      "label": "pad_thai"
+    },
+    {
+      "id": 71,
+      "label": "paella"
+    },
+    {
+      "id": 72,
+      "label": "pancakes"
+    },
+    {
+      "id": 73,
+      "label": "panna_cotta"
+    },
+    {
+      "id": 74,
+      "label": "peking_duck"
+    },
+    {
+      "id": 75,
+      "label": "pho"
+    },
+    {
+      "id": 76,
+      "label": "pizza"
+    },
+    {
+      "id": 77,
+      "label": "pork_chop"
+    },
+    {
+      "id": 78,
+      "label": "poutine"
+    },
+    {
+      "id": 79,
+      "label": "prime_rib"
+    },
+    {
+      "id": 80,
+      "label": "pulled_pork_sandwich"
+    },
+    {
+      "id": 81,
+      "label": "ramen"
+    },
+    {
+      "id": 82,
+      "label": "ravioli"
+    },
+    {
+      "id": 83,
+      "label": "red_velvet_cake"
+    },
+    {
+      "id": 84,
+      "label": "risotto"
+    },
+    {
+      "id": 85,
+      "label": "samosa"
+    },
+    {
+      "id": 86,
+      "label": "sashimi"
+    },
+    {
+      "id": 87,
+      "label": "scallops"
+    },
+    {
+      "id": 88,
+      "label": "seaweed_salad"
+    },
+    {
+      "id": 89,
+      "label": "shrimp_and_grits"
+    },
+    {
+      "id": 90,
+      "label": "spaghetti_bolognese"
+    },
+    {
+      "id": 91,
+      "label": "spaghetti_carbonara"
+    },
+    {
+      "id": 92,
+      "label": "spring_rolls"
+    },
+    {
+      "id": 93,
+      "label": "steak"
+    },
+    {
+      "id": 94,
+      "label": "strawberry_shortcake"
+    },
+    {
+      "id": 95,
+      "label": "sushi"
+    },
+    {
+      "id": 96,
+      "label": "tacos"
+    },
+    {
+      "id": 97,
+      "label": "takoyaki"
+    },
+    {
+      "id": 98,
+      "label": "tiramisu"
+    },
+    {
+      "id": 99,
+      "label": "tuna_tartare"
+    },
+    {
+      "id": 100,
+      "label": "waffles"
+    }
+  ],
+  "inputPreprocessing": "Flags/224/mean/std0.5/resample2conferidos. Arquivo legadoViTFeatureExtractor não especificarescalefator/crop explícitos; precisa reproduzir defaultsdocumentados daversãoparacontrato/recurso final. Não foi executado ouconvertido paraAndroid.",
+  "labelIndexCaution": "Guardar osIDsda configuração do modelo e comparar porstringaqualquerdataset/alimentobase; não supor números iguaisentreversões/taxonomias. Isto não émapa nutricionalptPT.",
+  "outputLimit": "CabeçoteViT101classes éproblemafechado,semclasse explícitanão-alimento/desconhecidonosIDsobservados. Tratamentodeimagemfora dodomínio/multiplospratos/confiançapendentes deensaio e/ououtromodelo.",
+  "preprocessorReceipt": "n39-nateraw-preprocessor.evidencia.json",
+  "preprocessorConfig": {
+    "do_normalize": true,
+    "do_resize": true,
+    "feature_extractor_type": "ViTFeatureExtractor",
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "resample": 2,
+    "size": 224
+  },
+  "resampleEnumInBundledPillow": "BILINEAR",
+  "mappingInverseVerificationNote": "IDs label2id são strings no JSON; comparação inversa normaliza para inteiro. Isso não confere ordem contra qualquer dataset.",
+  "publishedLoaderOrderIssue": "avaliacao-publicada.json: dois nomes 16/17 têm ordem diferente no loader publicado; revisão de treino e decodificação efetiva ainda pendentes."
+}

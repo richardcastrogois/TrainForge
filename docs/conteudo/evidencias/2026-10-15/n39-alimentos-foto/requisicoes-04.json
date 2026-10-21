@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "n39-dailyfood-paper",
+      "url": "https://arxiv.org/html/2403.07403v1",
+      "purpose": "Artigo primário em HTML: conferir experiência de transferência para refeições cotidianas e distinguir estudo de outro modelo do candidato nateraw. Sem mídias ou download de datasets.",
+      "extension": "html"
+    },
+    {
+      "id": "n39-dailyfood-readme",
+      "url": "https://raw.githubusercontent.com/SLKAlgs/DailyFood-172/main/README.md",
+      "purpose": "README ligado pelo artigo dos autores; conferir acesso, licença e artefatos existentes. Não baixar fotos nem pressupor grant de fotos de terceiros.",
+      "extension": "md"
+    },
+    {
+      "id": "n39-nutrilens-license",
+      "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/LICENSE",
+      "purpose": "Licença primária do projeto citado pelo mantenedor. Verificar antes de obter relatórios textuais de avaliação; código/mídias/modelos não importados.",
+      "extension": "txt"
+    },
+    {
+      "id": "n39-swin-onnx-api",
+      "url": "https://huggingface.co/api/models/onnx-community/swin-finetuned-food101-ONNX",
+      "purpose": "Metadados de alternativa alimentar ONNX ligada por aplicação com avaliação publicada. Somente inventário de arquivos e revisão, não download de pesos nem instalação.",
+      "extension": "json"
+    }
+  ]
+}

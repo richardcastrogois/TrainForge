@@ -1,0 +1,24 @@
+{
+  "id": "n42-gs1-check-digit",
+  "url": "https://www.gs1.org/services/how-calculate-check-digit-manually",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:49:48.830995+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Padrão primário de cálculo do dígito verificador GTIN, validação textual independente da captura óptica e do cadastro/lookup de produto. Sem obter catálogoGS1ou abrir barcodeURL.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.gs1.org/services/how-calculate-check-digit-manually",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 1484,
+  "bodyFile": "../raw/n42-gs1-check-digit.html",
+  "sha256": "141bcd85547d86ad5c364c2000af8d9bd2ea90a80edf9bddad324cbc57fc7418",
+  "error": "HTTP 403"
+}

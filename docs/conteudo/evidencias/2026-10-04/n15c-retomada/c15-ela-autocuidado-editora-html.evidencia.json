@@ -1,0 +1,22 @@
+{
+  "id": "c15-ela-autocuidado-editora-html",
+  "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1164370/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:22:22.825672+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina publica da editora: conferir links individuais dos suplementos, pois ZIP excedeu limite e nao sera repetido.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1164370/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1066712,
+  "bodyFile": "../raw/c15-ela-autocuidado-editora-html.html",
+  "sha256": "fa64a696064c74d275fadf8cf04f2d20cfbe017cb35cd483340879b0bc7530a7"
+}

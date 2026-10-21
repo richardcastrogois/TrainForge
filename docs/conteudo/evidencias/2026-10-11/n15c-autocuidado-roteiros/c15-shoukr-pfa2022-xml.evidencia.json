@@ -1,0 +1,23 @@
+{
+  "id": "c15-shoukr-pfa2022-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9551605/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:41:42.543215+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original PFA de100cuidadoresAD, buscar passos efetivos Table1, cointervencao, autoria/dose/direitos e nao converter60minensino emdoseexercicio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9551605/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 137677,
+  "bodyFile": "../raw/c15-shoukr-pfa2022-xml.xml",
+  "sha256": "213c984ff45a20595012cf56d1785c4b87cade3d4aa28d7bf1c8094fe7db31cb"
+}

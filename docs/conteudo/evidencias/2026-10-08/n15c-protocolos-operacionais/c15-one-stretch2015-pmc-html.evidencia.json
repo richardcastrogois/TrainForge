@@ -1,0 +1,23 @@
+{
+  "id": "c15-one-stretch2015-pmc-html",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:56:08.536413+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina publica primariamente legivel no navegador de pesquisa; artigo/manuais/ortopedista/direitos. XML500retido, sem repetir ou superar desafio.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 146246,
+  "bodyFile": "../raw/c15-one-stretch2015-pmc-html.html",
+  "sha256": "28eef54ef3465a022fefe8b1a456fbebb08d542189fb1d3d31d62fe6ea8170b5"
+}

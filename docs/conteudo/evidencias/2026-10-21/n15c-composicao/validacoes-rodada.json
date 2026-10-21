@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "purpose": "Resultados documentais, nao homologacao clinica/juridica ou testes em pessoas",
+  "n15Verifier": "conferir-fechamento.py",
+  "consolidatedVerifier": "../../2026-10-15/conferir-continuacao-n39-n46.py",
+  "existingCatalogueTests": {
+    "command": "python -m unittest discover -s docs/conteudo/evidencias -p test_catalogo_cuidadores.py",
+    "passed": 5,
+    "exitCode": 0
+  },
+  "consolidatedChecks": {
+    "passed": 260,
+    "failed": 0,
+    "result": "../../2026-10-15/verificacoes-continuacao-n39-n46.json"
+  },
+  "offlineLibraryQuery": {
+    "command": "python docs/conteudo/consultar-cuidadores.py --biblioteca",
+    "exitCode": 0,
+    "selectedComponents": 11,
+    "allFiveOriginalProgrammesExecutable": false,
+    "releaseApproved": false
+  },
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "warnings": "Avisos LF/CRLF de arquivos existentes; sem erro de whitespace"
+  },
+  "graphify": "graphify-resultado.json",
+  "verifierDevelopmentCorrections": [
+    "Dois nomes de campos corrigidos conforme schema primario; nenhuma evidencia clinica alterada",
+    "Autorrefencia do arquivo de verificacao passou a ser conferida apos sua geracao"
+  ],
+  "newCollectionRetries": 0,
+  "releaseApproved": false,
+  "entrypointCurrentLinksVerified": 11,
+  "n15SpecificChecks": {
+    "passed": 67,
+    "failed": 0,
+    "result": "verificacoes.json"
+  }
+}

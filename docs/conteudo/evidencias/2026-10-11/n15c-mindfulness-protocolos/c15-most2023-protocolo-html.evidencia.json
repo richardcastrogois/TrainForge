@@ -1,0 +1,23 @@
+{
+  "id": "c15-most2023-protocolo-html",
+  "url": "https://link.springer.com/article/10.1186/s13063-023-07801-3",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:18:53.333608+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo original, dose, apoio profissional, interrupcao e roteiro das sessoes; verificar se e manual executavel ou somente descricao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s13063-023-07801-3?error=cookies_not_supported&code=54d24add-15ee-4fcd-a581-82f4301190be",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 501960,
+  "bodyFile": "../raw/c15-most2023-protocolo-html.html",
+  "sha256": "1bf97fbf790ad2b361cdbd84482097adf615b0cbaeb38f00b4d1dc41945c32df"
+}

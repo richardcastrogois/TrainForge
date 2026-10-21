@@ -1,0 +1,22 @@
+{
+  "id": "i18-agueda-suplemento-cert",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:42:50.525299+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Suplemento artigo702KBnominal: verificar CERT e tabelas/manual/aviso de direitos sem presumir que cobre arquivosGithubexternos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 1050066,
+  "bodyFile": "../raw/i18-agueda-suplemento-cert.zip",
+  "sha256": "4b25a18080283ce896111da1e4db57968b1115132be16524451cc6317f4a01cc"
+}

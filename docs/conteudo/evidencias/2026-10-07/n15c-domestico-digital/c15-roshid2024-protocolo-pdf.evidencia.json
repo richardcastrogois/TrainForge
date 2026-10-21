@@ -1,0 +1,24 @@
+{
+  "id": "c15-roshid2024-protocolo-pdf",
+  "url": "https://assets.cureus.com/uploads/original_article/pdf/231006/20240404-25493-1h8mct4.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:51:52.552551+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF editorial original observado no resultado primario; conferir visualmente metodo/figuras/CC BY4, nao confundir com resultado2026/licenca externa.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://assets.cureus.com/uploads/original_article/pdf/231006/20240404-25493-1h8mct4.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 225741,
+  "bodyFile": "../raw/c15-roshid2024-protocolo-pdf.pdf",
+  "sha256": "1cb7ae0124f36ec06178f78cc2f62aa1b3842f5d0b27599ed8d51d05298431d1",
+  "bodyFormatMatchesRequest": true
+}

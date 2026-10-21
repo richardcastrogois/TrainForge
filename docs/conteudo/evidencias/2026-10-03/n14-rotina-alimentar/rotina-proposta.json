@@ -1,0 +1,42 @@
+{
+  "niche": "N14",
+  "date": "2026-10-03",
+  "status": "concluido_para_pesquisa",
+  "scope": "Requisitos propostos de organizacao pessoal; nao sao API, banco ou funcionalidade implementados.",
+  "source": {
+    "sourceId": "NU32",
+    "url": "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+    "evidence": "n14-living-dash.evidencia.json",
+    "sha256": "41c61100168396331c217bbe07dcab5d11a85e02dce098b51108600f905b2217",
+    "sourceDate": "2026-02-25",
+    "finding": "Menu planeado, escolhas/substituicoes e diario do alimento/contexto sao ferramentas distintas; pequenas mudancas e retorno gradual fazem parte da orientacao.",
+    "rights": "Politica NHLBI N08 reutilizada; traducao/midia/publicidade permanecem condicionais."
+  },
+  "dependencies": [
+    {"niche": "N01", "role": "Identidade de alimento e preparo", "evidence": "../../2026-09-26/n01-alimentos/resumo-identidades.json"},
+    {"niche": "N02", "role": "Nutrientes, unidades e ausentes", "evidence": "../../2026-09-26/n02-composicao/resumo-composicao.json"},
+    {"niche": "N03", "role": "Massa/volume/porcao sem conversao inventada", "evidence": "../../2026-09-27/n03-porcoes/resumo-porcoes.json"},
+    {"niche": "N08", "role": "Receita humana e versao de origem", "evidence": "../../2026-09-29/n08-receitas/amostra-receitas.json"},
+    {"niche": "N11", "role": "Diario/contexto e habitos", "evidence": "../../2026-10-02/n11-manutencao-habitos/conteudo-guiado.json"},
+    {"niche": "N13", "role": "Exemplo de menu completo e limites", "evidence": "../n13-planos-alimentares/amostra-planos.json"}
+  ],
+  "operations": [
+    {"id": "O14-01", "operation": "plan_meal", "proposal": "Data/refeicao, referencia versionada e quantidade planeada; consumo permanece vazio ate confirmacao.", "basis": "N13 + requisito do autor", "fields": ["plannedDate", "mealSlot", "referenceVersion", "plannedQuantity", "plannedUnit"]},
+    {"id": "O14-02", "operation": "record_consumption", "proposal": "Guardar quantidade/unidade efetivamente consumida e hora, separadas do plano; vinculo ao plano e opcional.", "basis": "N11 + diario NHLBI + requisito do autor", "fields": ["consumedAt", "consumedQuantity", "consumedUnit", "plannedOccurrenceId", "entryOrigin"]},
+    {"id": "O14-03", "operation": "repeat_meal", "proposal": "Criar ocorrencias independentes; distinguir mudar so esta ocorrencia de futuras ocorrencias. Historico confirmado nao e reescrito.", "basis": "Requisito funcional proposto; nao regra clinica da fonte", "fields": ["repeatSchedule", "editScope", "occurrenceId"]},
+    {"id": "O14-04", "operation": "replace_item", "proposal": "Guardar alimento anterior/novo, porcao e motivo opcional; recalcular apenas nutrientes conhecidos. Troca pessoal nao implica equivalencia nutricional ou adequacao a alergia.", "basis": "N01/N02/N03/N05 + requisito do autor", "fields": ["replacedReference", "replacementReference", "replacementQuantity", "replacementReason", "nutrientCompleteness"]},
+    {"id": "O14-05", "operation": "save_favorite", "proposal": "Favorito e preferencia pessoal ligada a ID/versao; verificar disponibilidade/direitos da origem quando reutilizar.", "basis": "Requisito funcional proposto", "fields": ["favoriteReference", "referenceVersion", "availabilityStatus"]},
+    {"id": "O14-06", "operation": "personalize_copy", "proposal": "Copiar plano/receita para versao pessoal com origem e alteracoes; nao modificar o catalogo humano nem herdar sua revisao profissional.", "basis": "N08/N13 + requisito do autor", "fields": ["parentReference", "personalVersion", "changeAuthor", "changedFields", "reviewStatus"]},
+    {"id": "O14-07", "operation": "shopping_list", "proposal": "Derivar compras do planeado, respeitando rendimento e unidades conhecidas; consumo passado nao gera compras automaticamente. Quantidades sem conversao continuam separadas.", "basis": "Proposta funcional dependente de N03/N08/N13", "fields": ["ingredientReference", "plannedServings", "sourceYield", "quantityUnit", "conversionStatus"]}
+  ],
+  "scenarios": [
+    {"id": "C14-01", "fictional": true, "case": "planeado nao e consumido", "plannedQuantityG": 150, "consumedQuantityG": 180, "expected": "Manter ambas as quantidades; diario usa 180 g, plano continua 150 g."},
+    {"id": "C14-02", "fictional": true, "case": "repeticao e edicao", "occurrences": ["segunda", "terca"], "editScope": "segunda", "expected": "Terca e historico confirmado permanecem iguais."},
+    {"id": "C14-03", "fictional": true, "case": "alteracao pessoal", "catalogVersion": "fonte-v1", "personalVersion": "pessoal-v2", "expected": "Origem permanece fonte-v1; adaptacao pessoal nao herda aprovacao."},
+    {"id": "C14-04", "fictional": true, "case": "porcao sem massa", "inputUnit": "cup", "massG": null, "expected": "Nao converter em gramas sem equivalencia demonstrada."},
+    {"id": "C14-05", "fictional": true, "case": "nutriente ausente", "nutrientValue": null, "expected": "Continuar desconhecido; nunca substituir por zero ou afirmar total completo."},
+    {"id": "C14-06", "fictional": true, "case": "substituicao pessoal", "nutritionalEquivalenceProven": false, "expected": "Mostrar alteracao e revisar nutrientes/alergenios disponiveis; sem garantia de equivalencia."}
+  ],
+  "limits": ["Cenarios sao ficticios para avaliar semantica, nao dieta de pessoa real", "Nenhum fluxo foi implementado ou testado no app", "Favoritos e repeticao sao propostas do produto, nao instrucoes clinicas publicadas", "Personalizacao clinica/metas automaticas nao demonstradas", "Revisao pt-PT e direitos pendentes"],
+  "releaseApproved": false
+}

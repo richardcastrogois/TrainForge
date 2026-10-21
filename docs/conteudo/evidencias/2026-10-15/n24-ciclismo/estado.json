@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "status": "concluido_para_pesquisa_no_escopo_declarado",
+  "researchClosed": true,
+  "selectedLot": "lote-ergometro-profissional.json",
+  "closureAudit": "auditoria-fechamento.json",
+  "scope": "Modelo factual de sessão de cicloergômetro50min com orientação profissional, fontes auxiliares separadas e direitos por ativo. Não toda população/ambiente ou calendário novo.",
+  "sourceFamilies": 11,
+  "reusedFamily": "CI05",
+  "publishedProgrammes": 0,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "n15PausedOpen": true,
+  "n21Started": false,
+  "n25Started": true,
+  "stateTimeScope": "Snapshot do fechamento, antes de iniciar N25.",
+  "next": "N25 natação, seguindo mesma regra sequencial.",
+  "nextEvidence": "../n25-natacao/estado.json",
+  "snapshotNote": "Consolidado nesta continuação; auditoria preserva escopo do fechamento."
+}

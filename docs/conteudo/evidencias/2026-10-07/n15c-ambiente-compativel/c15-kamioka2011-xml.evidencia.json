@@ -1,0 +1,24 @@
+{
+  "id": "c15-kamioka2011-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:50:45.855355+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 500,
+  "use": "research_only",
+  "purpose": "Ensaio original de alongamento proprio de cuidadoras profissionais em instituicoes: conferir dose real, desenho, resultados, figuras, DVD e direitos sem excluir so pelo local.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML",
+  "contentType": null,
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/c15-kamioka2011-xml.xml",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": "HTTP 500"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n22-nhs-walking",
+  "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:18:39.415585+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Orientacao de caminhada, limites e links oficiais Active10",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 38516,
+  "bodyFile": "../raw/n22-nhs-walking.html",
+  "sha256": "22e35e1d349794c970f89a16f874b0a9658bc29bc94c9dc262eb7794b6148a95"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-fast-2021-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9382956/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T11:11:12.314729+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 500,
+  "use": "research_only",
+  "purpose": "FAST, analise secundaria2021: conferir programa do proprio cuidador50-75, escolhas/suporte e licenca. Nao transformar dose geral em rotina fixa.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9382956/fullTextXML",
+  "contentType": null,
+  "retryAfter": null,
+  "bytes": 0,
+  "bodyFile": "../raw/c15-fast-2021-xml.xml",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": "HTTP 500"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "i15-snacking-xml-repositorio",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:51:03.560040+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Servico publico de artigos open-access Europe PMC para original humano 2026, endpoint fullTextXML. Conferir licenca e vinculo real de suplemento. Nao repetir GET PMC bloqueado, automatizar desafio, falsificar autenticacao ou supor acesso ao suplemento.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 280,
+  "bodyFile": "../raw/i15-snacking-xml-repositorio.xml",
+  "sha256": "1f6b2ddcd8046cf5589ad8991f95134650d88f0308b225af81bb991347e2ea10",
+  "error": "HTTP 406"
+}

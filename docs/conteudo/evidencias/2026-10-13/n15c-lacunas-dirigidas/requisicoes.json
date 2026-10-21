@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-13",
+  "scope": "Somente N15-C/CG01-05, lacunas de instrucao e condicoes de uso. Primeiros GETs destas representacoes apos deduplicacao de recibos. Nao repetir PDF de tese EHU404, UCLresources403, transcricoesDOCX404/403 ou HTML/PDF CER403. Pagina START raiz e distinta das duas rotas403; nenhum formulario, SharePoint, conta, contato, compra ou media. Fontes de direitos sao referencias gerais, nao parecer legal ou aprovacao clinica.",
+  "requests": [
+    {"id":"n15dir-wipo-metodo-html","url":"https://www.wipo.int/en/web/copyright/protection","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Distinguir metodo/fatos de expressao: instrucoes escritas e figuras podem ser protegidas. Nao autorizar automaticamente traducao, material comercial ou equivalencia clinica."},
+    {"id":"n15dir-cc-faq-html","url":"https://creativecommons.org/faq/index.html","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Alcance de CC, elementos nao sujeitos a copyright, restricoes NC e traducao/adaptacao. Nao transferir licenca a audios/manuais externos."},
+    {"id":"n15dir-ucl-start-raiz-html","url":"https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Pagina raiz atual: manuais/MP3 sob formulario e SharePoint, publico e ensino profissional; permissao explicita de embed do video introdutorio nao permissao sobre exercicios/audio. Sem envio de formulario ou downloads de media."},
+    {"id":"n15dir-pilates-bmr-abstract-html","url":"https://journals.sagepub.com/doi/abs/10.3233/BMR-191649","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Representacao editorial publica do resumo e direitos, nao texto integral: confirmar acesso por assinatura/compra e all rights reserved sem executar essas opcoes. Nao buscar caminhos pagos ou importar comandos de outro programa."}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n18r-promuscle-about",
+  "url": "https://promuscle.nl/over-promuscle/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:54:02.641478+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Cadeia institucional de autoria e acesso ao programa/manual; não inscrição ou contato.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://promuscle.nl/over-promuscle/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 29534,
+  "bodyFile": "../raw/n18r-promuscle-about.html",
+  "sha256": "83d478aae6ae06c895fa3162a6194cea1011c8a292ba8b5aff1c53792182efe2"
+}

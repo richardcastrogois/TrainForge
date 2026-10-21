@@ -1,0 +1,17 @@
+{
+  "id": "c15-unijui-canonica",
+  "url": "https://revistas.unijui.edu.br/contextoesaude/pt_BR/article/view/16753",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T14:52:27.363846+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Consultar origem primaria canonica sem www observada em nova busca. Preservar falha anterior da outra origem; TLS padrao e nenhum contorno, retry da URL anterior ou permissao inferida.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

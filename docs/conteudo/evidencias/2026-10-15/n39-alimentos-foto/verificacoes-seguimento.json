@@ -1,0 +1,1068 @@
+{
+  "date": "2026-10-15",
+  "scope": "Integridade documental e sequência. Não teste de ML, clínico, Android ou app.",
+  "checks": [
+    {
+      "check": "JSON avaliacao-publicada.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON contrato-classificacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON criterios-e-pendencias.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON estado.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON fontes-e-comparacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON fontes-e-seguimento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON lote-ensaio-proposto.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-dailyfood-paper.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-dailyfood-paper.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-dailyfood-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-dailyfood-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-fixture-image-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-fixture-image-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-food101-historical-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-food101-historical-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-mobileclip-data-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-mobileclip-data-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-mobileclip-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-mobileclip-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-mobileclip-models-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-mobileclip-models-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-all-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-all-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-eval-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-eval-results.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-files-pinned.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-files-pinned.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-food101-loader.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-food101-loader.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nateraw-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nateraw-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-accuracy.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-accuracy.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-license.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-performance.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-performance.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-vision-bench.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-vision-bench.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrilens-vision-truth.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrilens-vision-truth.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-nutrition5k-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-nutrition5k-readme.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-swin-onnx-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-swin-onnx-api.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-swin-onnx-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-swin-onnx-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-swin-onnx-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-swin-onnx-config.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-swin-onnx-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-swin-onnx-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-torch-cpu-index.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-torch-cpu-index.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-torch-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-torch-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-transformers-image-utils.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-transformers-image-utils.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-transformers-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-transformers-package-metadata.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-vit-base-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-vit-base-card.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON n39-vit-legacy-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SHA256 n39-vit-legacy-preprocessor.evidencia.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-02.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-03.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-04.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-05.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-06.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-07.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-08.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-09.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-10.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-11.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes-12.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON requisicoes.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "JSON taxonomia-conferida.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N39 aberta e N40 não iniciada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N15 preservada pausada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Inferência não alegada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Auditoria offline 52/0, não inferência",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "32 recibos N39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "26 GETs novos",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "IDs únicos do catálogo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "288 famílias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Evidência local PR215",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Evidência local PR216",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Evidência local PR217",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Evidência local PR218",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ponteiros atuais alinhados",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Complementos antigos não apagados",
+      "passed": true,
+      "detail": "Coleção real niches; N18-I/N19-I/N20-I seguem pendentes."
+    },
+    {
+      "check": "770 chamadas históricas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "638 HTTP 200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "716 hashes originais",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Seis propostas sem imagem ou inferência",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "App/plataformas/testes/pubspec sem alteração",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "git diff --check",
+      "passed": true,
+      "detail": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/conteudo/evidencias/coletar-nichos-off.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/conteudo/evidencias/inventariar-retornos.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/conteudo/qualidade-e-curadoria.md', LF will be replaced by CRLF the next time Git touches it"
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: contrato-classificacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: avaliacao-publicada.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: analisar-n39.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: fontes-e-seguimento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: fontes-e-comparacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: ambiente-plano.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: lote-ensaio-proposto.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: contrato-classificacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: criterios-e-pendencias.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: ambiente-plano.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md: verificacoes-seguimento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n24-ciclismo/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n24-ciclismo/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n25-natacao/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n25-natacao/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n26-yoga/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n26-yoga/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n27-pilates/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n27-pilates/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n28-mobilidade/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n28-mobilidade/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n29-equilibrio/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n29-equilibrio/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n30-circuito-hiit/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n30-circuito-hiit/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n31-remo/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n31-remo/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n32-dor-limitacoes/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n32-dor-limitacoes/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n33-artrose-preoperatoria/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n33-artrose-preoperatoria/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n34-selecao-progressao/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n34-selecao-progressao/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n35-metricas-gasto/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n35-metricas-gasto/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n36-gps-mapa/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n36-gps-mapa/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n37-android/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n37-android/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n38-apple/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n38-apple/auditoria-fechamento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/criterios-e-pendencias.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/verificacoes-seguimento.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: verificacoes-continuacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/criterios-e-pendencias.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/taxonomia-conferida.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/relatorio.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/contrato-classificacao.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/avaliacao-publicada.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Link docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md: n39-alimentos-foto/ambiente-plano.md",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 155,
+  "failed": 0,
+  "localMarkdownLinks": [
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "contrato-classificacao.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "avaliacao-publicada.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "analisar-n39.py",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "fontes-e-seguimento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "fontes-e-comparacao.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "ambiente-plano.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "lote-ensaio-proposto.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "contrato-classificacao.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "criterios-e-pendencias.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "ambiente-plano.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\n39-alimentos-foto\\relatorio.md",
+      "target": "verificacoes-seguimento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n24-ciclismo/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n24-ciclismo/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n25-natacao/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n25-natacao/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n26-yoga/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n26-yoga/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n27-pilates/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n27-pilates/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n28-mobilidade/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n28-mobilidade/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n29-equilibrio/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n29-equilibrio/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n30-circuito-hiit/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n30-circuito-hiit/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n31-remo/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n31-remo/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n32-dor-limitacoes/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n32-dor-limitacoes/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n33-artrose-preoperatoria/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n33-artrose-preoperatoria/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n34-selecao-progressao/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n34-selecao-progressao/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n35-metricas-gasto/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n35-metricas-gasto/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n36-gps-mapa/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n36-gps-mapa/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n37-android/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n37-android/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n38-apple/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n38-apple/auditoria-fechamento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/criterios-e-pendencias.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/verificacoes-seguimento.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "verificacoes-continuacao.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/criterios-e-pendencias.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/taxonomia-conferida.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/relatorio.md",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/contrato-classificacao.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/avaliacao-publicada.json",
+      "exists": true
+    },
+    {
+      "from": "docs\\conteudo\\evidencias\\2026-10-15\\continuacao-n24-n39.md",
+      "target": "n39-alimentos-foto/ambiente-plano.md",
+      "exists": true
+    }
+  ],
+  "catalogueFamilies": 288,
+  "catalogueStatusCounts": {
+    "candidato": 29,
+    "condicional": 127,
+    "incompativel_zero": 26,
+    "referencia": 106
+  },
+  "globalCalls": 770,
+  "globalHttp200": 638,
+  "globalOriginalHashesVerified": 716,
+  "newCallsThisTurn": 26,
+  "n39TotalCalls": 32,
+  "modelInferencePerformed": false,
+  "runtimeInstalled": false,
+  "researchClosed": false,
+  "n40Started": false,
+  "releaseApproved": false,
+  "graphify": {
+    "method": "Existing graphify CLI, extract lib --update --code-only --no-cluster",
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "outputsPreserved": true,
+    "researchSemanticallyIndexed": false
+  },
+  "validationRepairs": "Primeira conferência encontrou seletor items incorreto (coleção real niches) e link ao próprio relatório ainda não gravado. Corrigido seletor e rechecados caminhos existentes após gravação; fontes e estados não foram alterados para passar.",
+  "snapshotBeforeAuthorizedRuntimeExperiment": true,
+  "currentRuntimeAudit": "auditoria-fechamento.json"
+}

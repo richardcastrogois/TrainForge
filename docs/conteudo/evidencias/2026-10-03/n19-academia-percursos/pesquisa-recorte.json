@@ -1,0 +1,125 @@
+{
+  "niche": "N19",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Comparacao delimitada de percursos humanos por metas/equipamento; falhas locais nao viram programa completo.",
+  "next": "N20",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [],
+  "dependencies": [
+    "2026-10-03/n19-academia-percursos/n19-wendler-bbb.evidencia.json",
+    "2026-10-03/n19-academia-percursos/n19-wendler-monolith.evidencia.json",
+    "2026-10-03/n18-academia-iniciante/pesquisa-recorte.json"
+  ],
+  "webOnlyEvidence": [
+    {
+      "sourceId": "PR15",
+      "url": "https://www.jimwendler.com/blogs/jimwendler-com/101077382-boring-but-big",
+      "observed": "Leitor web exibe BBB do autor, dois exemplos de quatro dias e notas que admitem tres/quatro dias; trabalho suplementar 5x10. Base 5/3/1 referenciada, nao obtida integralmente nesta coleta."
+    },
+    {
+      "sourceId": "PR16",
+      "url": "https://www.jimwendler.com/blogs/jimwendler-com/101078918-building-the-monolith-5-3-1-for-size",
+      "observed": "Leitor web exibe template seis semanas, tres dias de forca/semana e condicionamento tres/quatro vezes; primeira parte exigida distinta de acessorios opcionais. Nao homologar sugestoes alimentares ou medicamentosas."
+    }
+  ],
+  "programmes": [
+    {
+      "id": "N19-P01",
+      "sourceId": "PR15",
+      "title": "Boring But Big",
+      "goal": "Forca e tamanho muscular.",
+      "sessionsPerWeekRange": [
+        3,
+        4
+      ],
+      "baseProgramFullyCollected": false,
+      "sessionDurationMinutes": null,
+      "localBodyContainsProgramme": false,
+      "permissionCommercialFreeDemonstrated": false,
+      "olderSpecificCoverageDemonstrated": false
+    },
+    {
+      "id": "N19-P02",
+      "sourceId": "PR16",
+      "title": "Building the Monolith",
+      "goal": "Tamanho muscular no contexto 5/3/1.",
+      "weeks": 6,
+      "liftingDaysPerWeek": 3,
+      "conditioningDaysPerWeekRange": [
+        3,
+        4
+      ],
+      "sessionDurationMinutes": null,
+      "localBodyContainsProgramme": false,
+      "permissionCommercialFreeDemonstrated": false,
+      "olderSpecificCoverageDemonstrated": false
+    }
+  ],
+  "criteria": [
+    {
+      "id": "N19-C01",
+      "decision": "Classificar metas, dominio tecnico, carga/volume e disponibilidade reais, nao idade ou etiqueta intermediario/avancado isolada."
+    },
+    {
+      "id": "N19-C02",
+      "decision": "Base/variante/ciclo/edicao devem permanecer identificados; nao combinar percentual/progressao de fontes diferentes."
+    },
+    {
+      "id": "N19-C03",
+      "decision": "Lista indexada ou pagina web nao equivale a corpo local completo/direito de incorporacao."
+    },
+    {
+      "id": "N19-C04",
+      "decision": "Programa de treino nao autoriza copiar dieta, grande consumo de alimentos ou recomendacao de medicamento para sono."
+    },
+    {
+      "id": "N19-C05",
+      "decision": "Nao migrar idoso/cuidador de N18 para volume maior automaticamente; publico e supervisao precisam de fonte/revisao propria."
+    },
+    {
+      "id": "N19-C06",
+      "decision": "Programas de maquina/halteres e metas/populacoes adicionais continuam nao cobertos por estes dois exemplos."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "N19-S01",
+      "fictional": true,
+      "case": "Pessoa concluiu rotina de iniciacao",
+      "expected": "Nao selecionar BBB/Monolith automaticamente."
+    },
+    {
+      "id": "N19-S02",
+      "fictional": true,
+      "case": "Pagina aponta livro para fundamentos",
+      "expected": "Nao inventar a base nao obtida ou copiar versao pirata."
+    },
+    {
+      "id": "N19-S03",
+      "fictional": true,
+      "case": "Texto mistura treino e dieta",
+      "expected": "Nao transformar sugestao de autor em dieta do app."
+    },
+    {
+      "id": "N19-S04",
+      "fictional": true,
+      "case": "Idoso tem experiencia de caminhada",
+      "expected": "Nao equiparar a dominio tecnico/recuperacao em treino de barra."
+    },
+    {
+      "id": "N19-S05",
+      "fictional": true,
+      "case": "Leitor web funciona e coletor retorna 404",
+      "expected": "Preservar ambos estados; nao repetir falha nem declarar corpo completo."
+    }
+  ],
+  "limits": [
+    "Duas novas chamadas, ambas HTTP 404, 22 bytes cada; hashes de erro, nao corpos de programas.",
+    "Consulta web distinta de evidencia local; nao transcrever integralmente programas ou livros.",
+    "Direitos comerciais, base completa, instrucao, revisao pt-PT e adequacao especifica pendentes.",
+    "Fonte do autor humano nao e guideline clinica ou demonstracao de cobertura geriatrica.",
+    "N19 parcial; zero programa desta rodada homologado."
+  ]
+}

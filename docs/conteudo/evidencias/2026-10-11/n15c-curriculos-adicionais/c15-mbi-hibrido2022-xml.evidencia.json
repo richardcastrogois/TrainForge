@@ -1,0 +1,23 @@
+{
+  "id": "c15-mbi-hibrido2022-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9295093/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:43:26.416450+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo integral doMBDCP para conferirhomeworkdose/curriculo/treinamento/videos/fim/seguranca e versao, nao resultado2025 ou PR130.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9295093/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 111723,
+  "bodyFile": "../raw/c15-mbi-hibrido2022-xml.xml",
+  "sha256": "20ac2f460aa9b10c9ed5dd7b0c15f4596d7135ebcf60da91756f979f405073e1"
+}

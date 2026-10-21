@@ -1,0 +1,22 @@
+{
+  "id": "i18-pagan-pdf",
+  "url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2024.1335534/pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:55:10.325798+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Receber edicao PDF primaria para leitura visual da figura 1; preservar 406 da imagem WebP sem repetir a URL.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2024.1335534/pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2727540,
+  "bodyFile": "../raw/i18-pagan-pdf.pdf",
+  "sha256": "a67620a55c8c3378e0951d57e186072a6b078bb2d5f49ad9cbc6d10f3305609e"
+}

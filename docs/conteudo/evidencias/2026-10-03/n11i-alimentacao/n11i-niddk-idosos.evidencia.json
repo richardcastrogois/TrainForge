@@ -1,0 +1,22 @@
+{
+  "id": "n11i-niddk-idosos",
+  "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:26:56.687106+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir educacao alimentar humana para envelhecimento e limites de encaminhamento; sem criar metas individuais.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 71585,
+  "bodyFile": "../raw/n11i-niddk-idosos.html",
+  "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+}

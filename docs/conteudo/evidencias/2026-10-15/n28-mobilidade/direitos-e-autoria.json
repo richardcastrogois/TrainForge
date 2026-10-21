@@ -1,0 +1,25 @@
+{
+  "sourceIds": [
+    "PR05",
+    "CI05",
+    "PR166"
+  ],
+  "selectedAssets": "Dados de método/dose e instrução documental em redação independente; nenhum arquivo de mídia selecionado. Texto adaptado NHS somente conforme OGL e termos específicos.",
+  "NHS": {
+    "basis": "Termos primários 3.3–3.6, 3.10–3.11 e exclusões recebidos em 26/09, hashes rechecados; sem novo GET de termos.",
+    "researchProvenance": "Autor institucional NHS website identificado internamente, URLs, datas e componentes preservados; autor individual não informado.",
+    "adaptationAttribution": "3.6(b): atribuição padrão Contains public sector information licensed under the Open Government Licence v3.0. com link OGL. Não atribuir conteúdo adaptado/atualizado/não atualizado especificamente ao NHS no produto; tradução é adaptação.",
+    "unchangedAttribution": "3.6(a) distingue cópia sem adaptação com data ou atualização exigida e atribuição NHS específica por ocorrência. Não confundir os dois caminhos.",
+    "caveat": "O corpo recebido tem lista introdutória aparentemente incompleta em 3.6(b); condições expressas restantes foram mantidas, sem preencher a omissão. Revisar o ativo e os termos vigentes antes da publicação.",
+    "commercial": "Uso comercial possível sob condições; 3.10 impede cobrança específica pelo acesso ao conteúdo NHS. Não afirmar que um paywall de conteúdo importado está autorizado.",
+    "excluded": "Fotos/pessoas, logos, vídeos, identidade visual e terceiros não selecionados; crédito fotográfico não é licença.",
+    "clinical": "Adaptação não herda aprovação clínica formal e não sugere endosso NHS."
+  },
+  "NIA": {
+    "authorship": "National Institute on Aging, NIH, Go4Life, publicação 11-4258 reimpressa março 2015.",
+    "rightsEvidence": "Política primária NIA indexada em leitura-web de 04/10: texto livre salvo aviso, crédito e identificação de adaptação; sem corpo local da política. FAQ405 não é licença.",
+    "selectedPath": "Somente dados/métodos factuais em redação independente e proveniência, sem reproduzir texto expressivo ou fotografia. PR166 como distinção documental; ativo final exige conferência de originalidade/direitos.",
+    "excluded": "Não copiar fotos, logo ou DVD. Sandy Magrath nomeada no DVD não é autora presumida do caderno; médico em depoimento também não."
+  },
+  "releaseApproved": false
+}

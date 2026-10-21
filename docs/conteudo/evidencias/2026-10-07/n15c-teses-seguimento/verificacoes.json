@@ -1,0 +1,22 @@
+{
+  "date":"2026-10-08","niche":"N15-C","testType":"integridade_e_consistencia_documental_nao_clinica_legal_ou_APK",
+  "commands":[
+    {"command":"analisar-n15c-teses-seguimento.py --render","exitCode":0,"newCollectorCalls":30,"http200Responses":19,"http200Bodies":18,"usableBodies":18,"hashedBodies":26},
+    {"command":"python -m unittest discover -s docs/conteudo/evidencias -p test_*.py","exitCode":0,"tests":135,"failures":0,"newTestsInThisRound":11,"collectorNetworkInTests":"mockado, nao chamadas reais"},
+    {"command":"validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json","exitCode":0,"verifiedEvidenceBodies":108,"verifiedDependencies":55,"status":"parcial","researchClosureApproved":false},
+    {"command":"validar-fila-complementos.py","exitCode":0,"nichesChecked":20,"activeComplement":"N15-C","n21Allowed":false},
+    {"command":"inventariar-retornos.py","exitCode":0,"calls":441,"success200":362,"bodyHashesVerified":393},
+    {"command":"consultar-fontes.py --gerar-indice","exitCode":0,"families":161,"states":{"candidato":24,"condicional":62,"incompativel_zero":20,"referencia":55}},
+    {"command":"validar-pacote-domestico.py","exitCode":0,"package":"ES2019-DOM-01","sha256":"39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee","unchanged":true},
+    {"command":"graphify extract lib --update --code-only --no-cluster --out checkout","exitCode":0,"changed":0,"unchanged":42,"deleted":0,"semanticResearchIndexingPerformed":false},
+    {"command":"git diff --check","exitCode":0,"whitespaceErrors":0},
+    {"command":"git diff --name-only -- lib test android ios","exitCode":0,"trackedAppDiffPresent":false},
+    {"command":"git check-ignore raw PDF NIVA e workbookVA","exitCode":0,"localBodiesStillIgnored":true}
+  ],
+  "visualInspection":{"vaPdfPages":[{"document":"facilitator","pages":[27,30]},{"document":"workbook","pages":[14,23]},{"document":"mindful","pages":[6,8]},{"document":"caregiver","pages":[3,8,9]}],"nivaPdfPages":[1],"actualPagesViewed":10,"renderingAloneCountsAsViewing":false,"wholeVaManualsViewed":false},
+  "warnings":["Pypdf avisos de offsets em documento historico preservado; validacao de ancoras/hash completou, original nao alterado.","Suite inclui testes de HTML invalido comoPDF, avisos esperados nao novas capturas/falhas clinicas.","Git informa conversaoLF/CRLF futura; sem mudanca de configuracao.","Coletor interrompido porAccept nao suportado antes do segundoGET; dois pedidos restantes enviados uma vez em manifesto separado.","PdfPage sem context manager corrigido por fechamento explicito, sem novas chamadas de rede."],
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "clinicalOrLegalValidationPerformed":false,"appTestsRun":false,
+  "newProgrammesApproved":0,"runtimeImporterCreated":false,"n21Started":false,
+  "authorContact":false,"commitOrPush":false
+}

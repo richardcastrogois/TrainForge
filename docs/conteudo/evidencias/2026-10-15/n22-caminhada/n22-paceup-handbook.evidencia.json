@@ -1,0 +1,25 @@
+{
+  "id": "n22-paceup-handbook",
+  "url": "https://www.sgul.ac.uk/about/our-institutes/population-health/projects/pace-up/docs/patient-handbook-V1.5-final.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:24:37.495823+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Manual original PACE-UP12semanas para adultos45-75, dose/instrucao e direitos",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.citystgeorges.ac.uk/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 633669,
+  "bodyFile": "../raw/n22-paceup-handbook.pdf",
+  "sha256": "fdacd3f2679ed2e8940d0407d6477f0ec7289e523cf9070882b1d3db4807ef04",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

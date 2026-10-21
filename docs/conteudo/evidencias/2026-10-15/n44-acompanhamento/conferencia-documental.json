@@ -1,0 +1,19 @@
+{
+  "kind": "Conferência de contagem/identidade em seis eventos fictícios; não teste de aplicação ou pessoas",
+  "checks": [
+    {
+      "id": "pessoa_A",
+      "passed": true
+    },
+    {
+      "id": "cuidador_B",
+      "passed": true
+    },
+    {
+      "id": "assistido_C",
+      "passed": true
+    }
+  ],
+  "passed": 3,
+  "clinicalAdherenceCalculated": false
+}

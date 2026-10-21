@@ -1,0 +1,18 @@
+{
+  "id": "c15-crea2026-suplementos-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:58:52.030663+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Primeira coleta do endpointpublico suplementarEuropePMC, buscar4PDFs instrucionais anunciados noJATS sem executar arquivos ou herdar resultados clinicos inexistentes do protocolo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "The read operation timed out"
+}

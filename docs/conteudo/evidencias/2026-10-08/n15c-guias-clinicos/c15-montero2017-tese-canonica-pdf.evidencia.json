@@ -1,0 +1,24 @@
+{
+  "id": "c15-montero2017-tese-canonica-pdf",
+  "url": "https://gredos.usal.es/bitstream/10366/137103/1/DME_MonteroCuadradoF_Efectividad.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:37:58.923312+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "URLprimaria legada realmente indexada; PDF10.32MB acima limite do leitorweb, limitePDF local removido peloautor. Rota anteriorhandletimeout permanece, nao alterarTLS/headers ou repetirURL. Buscar pacoteoriginalPR85, nao nova coorte.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://gredos.usal.es/server/api/core/bitstreams/5cdcc1aa-bade-41c3-8124-153a2c534253/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 10821424,
+  "bodyFile": "../raw/c15-montero2017-tese-canonica-pdf.pdf",
+  "sha256": "70109a7e8cf572a189297e50ce5cdc6986faa8d5b2449a2e9bb31b4b982f659f",
+  "bodyFormatMatchesRequest": true
+}

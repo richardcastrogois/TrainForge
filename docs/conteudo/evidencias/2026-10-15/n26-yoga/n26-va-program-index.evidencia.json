@@ -1,0 +1,23 @@
+{
+  "id": "n26-va-program-index",
+  "url": "https://www.warrelatedillness.va.gov/WARRELATEDILLNESS/clinical/integrative-health/ca/index.asp",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:05:02.474552+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Relação institucional da cartilha/programa e exigência de encaminhamento/apoio; sem inscrição/contato",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.warrelatedillness.va.gov/WARRELATEDILLNESS/clinical/integrative-health/ca/index.asp",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 90545,
+  "bodyFile": "../raw/n26-va-program-index.html",
+  "sha256": "0fc433b2ebdb7178e67893d6e97951d38babc74f677384491a0547b7ad0a2baf"
+}

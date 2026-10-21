@@ -1,0 +1,23 @@
+{
+  "id": "n18r-macaulay-s1-docx",
+  "url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0255018.s006&type=supplementary",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:03:50.743097+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "S1 File publicado: conferir se contém instruções/protocolo ou somente tabelas; sem execução de conteúdo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0255018/1/pone.0255018.s006.docx?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20261016%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261016T030445Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=6eb519c4b57a386c309d68fc6757f5b762acd8d39913f90fa883bba5c029934bcfd665136603df78e8583cf2930f27992566927c4b466a5c059d2a465bf08a74fbc34be1604a63425462d4505bbb7ac250134444a271180a0f55d8b1a8fbaf77c0a383b731ae389dd67ac85247f80bd9a7822c5e2ef5069aa615e71f553b08eaa1e349736d5a7a27e9f9ad799d4a6b9b0e694ce0faa28e506ef7c98177dc8b1a1b26fcebfd8ae678c310b45aa34310058c00bfeb01fda23758f1b2a28b05794f93a37693e5156fb3a384cee95f404c07e33d6466891a5c796a9ac4d8bd277d7c62d3d30ad94adc8ff309d493ac9e8683fcbbda600324f2d3d9a8d0bc501847dd",
+  "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "retryAfter": null,
+  "bytes": 140239,
+  "bodyFile": "../raw/n18r-macaulay-s1-docx.docx",
+  "sha256": "f522b05cc85425805fc6d5568e7313abd158a576d40b7662e63310af9d8f84e0"
+}

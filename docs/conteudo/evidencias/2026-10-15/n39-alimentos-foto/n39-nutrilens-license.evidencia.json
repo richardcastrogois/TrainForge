@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrilens-license",
+  "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/LICENSE",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:07.189746+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Licença primária do projeto citado pelo mantenedor. Verificar antes de obter relatórios textuais de avaliação; código/mídias/modelos não importados.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/LICENSE",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1436,
+  "bodyFile": "../raw/n39-nutrilens-license.txt",
+  "sha256": "998bf6c805f9c3a87f8e170612c885e3175999ef136204f0aee31a9e973dbf2d"
+}

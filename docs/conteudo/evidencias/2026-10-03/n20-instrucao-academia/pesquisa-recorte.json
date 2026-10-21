@@ -1,0 +1,113 @@
+{
+  "niche": "N20",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Auditoria de metadados e correspondencia candidata para instrucao de academia; nao aprovar midia por existencia ou por nome.",
+  "next": "N21",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [],
+  "dependencies": [
+    "wger-amostra-ampliada.json",
+    "2026-10-03/n20-instrucao-academia/amostra-instrucao.json",
+    "2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+    "2026-10-03/n17i-instrucao/pesquisa-complemento.json"
+  ],
+  "observed": {
+    "localRecords": 75,
+    "withPortugueseMetadata": 6,
+    "withImageMetadata": 37,
+    "withVideoMetadata": 8,
+    "imagesFlaggedAi": 4,
+    "lexicalCandidatesByN18Movement": {
+      "row": 7,
+      "benchPress": 3,
+      "squat": 3,
+      "chinup": 2,
+      "overheadPress": 0,
+      "deadlift": 3
+    },
+    "lexicalSearchNotSemanticEquivalence": true,
+    "zeroCandidatesDoesNotMeanAbsentFromFullCatalogue": true,
+    "semanticHoldExerciseIds": [
+      1022
+    ],
+    "mediaInspectedThisRound": 0,
+    "approvedMappings": 0,
+    "approvedAssets": 0
+  },
+  "criteria": [
+    {
+      "id": "N20-C01",
+      "decision": "Conferir variante/gesto/postura/equipamento/apoios antes de ligar ativo a programa; substring de nome nao aprova correspondencia."
+    },
+    {
+      "id": "N20-C02",
+      "decision": "Rever instrucao pt-PT por profissional e registrar fonte/versao; lingua 7 nao certifica variante portuguesa."
+    },
+    {
+      "id": "N20-C03",
+      "decision": "Licenca/autoria da traducao e de cada imagem/video separadas da licenca do exercicio e do software."
+    },
+    {
+      "id": "N20-C04",
+      "decision": "Preservar atribuicao, URL, alteracoes e condicoes ShareAlike onde aplicaveis; compatibilidade comercial/redistribuicao a verificar para o conjunto exato."
+    },
+    {
+      "id": "N20-C05",
+      "decision": "Bloqueio semantico ID 1022 mantido; conteudo sinalizado IA precisa de revisao propria e nao valida anatomia/tecnica."
+    },
+    {
+      "id": "N20-C06",
+      "decision": "HTML de descricao e referencias externas exigem sanitizacao futura; nenhum HTML externo executado no app nesta pesquisa."
+    },
+    {
+      "id": "N20-C07",
+      "decision": "Aplicar criterios N17-I a instrucao de academia, incluindo apoio digital distinto de assistencia fisica e supervisao."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "N20-S01",
+      "fictional": true,
+      "case": "Nome contem squat mas variante usa kit diferente",
+      "expected": "Nao associar automaticamente ao programa N18."
+    },
+    {
+      "id": "N20-S02",
+      "fictional": true,
+      "case": "Imagem existe no objeto",
+      "expected": "Nao chamar inspecionada ou homologada."
+    },
+    {
+      "id": "N20-S03",
+      "fictional": true,
+      "case": "Portugues sem localizacao/revisao",
+      "expected": "Nao chamar pt-PT aprovado."
+    },
+    {
+      "id": "N20-S04",
+      "fictional": true,
+      "case": "Traducao de ID 1022",
+      "expected": "Suspender selecao ate revisao semantica."
+    },
+    {
+      "id": "N20-S05",
+      "fictional": true,
+      "case": "Pessoa idosa precisa de apoio especifico",
+      "expected": "Nao deduzir adequacao pelo musculo/equipamento informado na API."
+    },
+    {
+      "id": "N20-S06",
+      "fictional": true,
+      "case": "Nenhum candidato lexical para overhead press",
+      "expected": "Lacuna da amostra/metodo, nao ausencia comprovada no catalogo inteiro."
+    }
+  ],
+  "limits": [
+    "Amostra de conveniencia de setembro, nao snapshot atual completo, distribuicao representativa ou consulta live de 75 registros.",
+    "Zero nova chamada e zero midia baixada/reproduzida nesta rodada.",
+    "Hashes de artefatos locais nao sao automaticamente hashes recomputados do corpo HTTP original.",
+    "N20 parcial: gestos, ativos, acessibilidade com publico, direitos selecionados e correspondencia definitiva pendentes."
+  ]
+}

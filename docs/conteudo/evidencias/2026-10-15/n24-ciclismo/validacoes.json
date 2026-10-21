@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-15",
+  "httpCalls": 15,
+  "http200": 11,
+  "usableBodies": 11,
+  "receipts": [
+    {
+      "id": "n24-bhf-current-v3",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-bhf-plan",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-cyclinguk-index",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-cyclinguk-plan",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-fullpotential-coaching",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-fullpotential-team",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-gibala-professional",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-gillen2016",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-sofa-saddle",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n24-trainerday-api",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-trainerday-terms",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    },
+    {
+      "id": "n24-uga-index",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n24-uga-lingo",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n24-uga-tips",
+      "status": 403,
+      "hashVerified": true,
+      "usable": false
+    },
+    {
+      "id": "n24-cyclinguk-joebeer2010",
+      "status": 200,
+      "hashVerified": true,
+      "usable": true
+    }
+  ],
+  "allHashesVerified": true,
+  "pdfPagesVisuallyReviewed": 16,
+  "twoBHFVersionsKeptSeparate": true,
+  "mictBlockSumMinutes": 50,
+  "mictSourceFrequencyNotForcedIntoCalendar": true,
+  "webReadingIsNotLocalBodyReceipt": true,
+  "apiDocumentationIsNotOperationalConnection": true,
+  "noPracticeOrAppTestClaim": true,
+  "historicalSupersededBy": "validacoes-fechamento.json"
+}

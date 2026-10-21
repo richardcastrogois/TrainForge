@@ -1,0 +1,23 @@
+{
+  "id": "n27-kalyani-faculty",
+  "url": "https://klyuniv.ac.in/academic/faculties/faculty-of-education/department-of-physical-education/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:16:28.286535+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Papel profissional primário da autoraBandyopadhyay emEducaçãoFísica; não presumir certificaçãoPilates individual",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://klyuniv.ac.in/academic/faculties/faculty-of-education/department-of-physical-education/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 227707,
+  "bodyFile": "../raw/n27-kalyani-faculty.html",
+  "sha256": "b9beb7b425a9ec413571d03d4c2019342286d8deeeb3809dfa29bcf2184fc901"
+}

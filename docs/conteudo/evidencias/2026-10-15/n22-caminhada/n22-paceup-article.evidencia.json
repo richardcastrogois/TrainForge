@@ -1,0 +1,23 @@
+{
+  "id": "n22-paceup-article",
+  "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002210",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:25:03.628781+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primarioCCBY PACE-UP: autoria/populacao/algoritmo/direitos/anexos",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002210",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 228282,
+  "bodyFile": "../raw/n22-paceup-article.html",
+  "sha256": "411b689a016fc8efcd2d09eebf711d8f4cc1251dee64642c07ea8e9da6acadfa"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "n30-bonete-2019-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6862704/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:46:24.163483+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 406,
+  "use": "research_only",
+  "purpose": "Circuito funcional estudado em mulheres55–85; quadro de fases/intensidade/apoio e diferenças de resultado/cardiorrespiratório",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6862704/fullTextXML",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 280,
+  "bodyFile": "../raw/n30-bonete-2019-xml.xml",
+  "sha256": "87cd0e8c3b1ce770706a479c125e9930a0346c1095dcd76f871d0737b2035fc1",
+  "error": "HTTP 406"
+}

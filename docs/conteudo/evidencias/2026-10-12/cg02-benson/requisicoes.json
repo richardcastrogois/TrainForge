@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-12",
+  "scope": "CG02 somente apos fechamento factual validado deCG01. PrimeiroGET apos deduplicacao para precaucoes gerais de relaxamento. Nao fonte de dose/gestoBenson, ensaio cuidador ou substituicao de ensino/CD. Semlogin, contato, imagens ou retries.",
+  "requests": [
+    {
+      "id": "cg02-nccih-relaxamento-html",
+      "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+      "accept": "application/json,text/html,text/plain",
+      "extension": "html",
+      "purpose": "NIH/NCCIH: efeitos adversos ocasionais e busca de profissional se sintomas graves/persistentes; referencia de seguranca separada. Nao importar PMR com tensao muscular, respiracao profunda, dose ou beneficios de outras populacoes."
+    }
+  ]
+}

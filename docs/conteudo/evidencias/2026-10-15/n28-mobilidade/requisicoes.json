@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n28-nhs-balance",
+      "url": "https://www.nhs.uk/live-well/exercise/balance-exercises/",
+      "purpose": "Conferir degrau e apoio no contexto funcional N28, por link da mesma coleção NHS PR05, não treino de praça",
+      "extension": "html"
+    },
+    {
+      "id": "n28-nhs-flexibility",
+      "url": "https://www.nhs.uk/live-well/exercise/flexibility-exercises/",
+      "purpose": "Conferir coleção PR05 de flexibilidade e distinguir sustentações definidas e ausentes",
+      "extension": "html"
+    }
+  ]
+}

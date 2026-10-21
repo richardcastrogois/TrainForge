@@ -1,0 +1,40 @@
+{
+  "niche": "N16-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 1,
+  "verifiedDependencies": 4,
+  "proposedOperations": 3,
+  "fictionalScenarios": 4,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+      "sha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-04/n16i-apoios/leitura-licenca-tabelas.json",
+      "artifactSha256": "fe28b5b2d3117db5d8bac8a54fe9289813e1f94d078c9dbde9fee799c1f678cc"
+    },
+    {
+      "file": "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "artifactSha256": "1b444294860185b9dcea31e1f39e23a4fdaa8a384e18065eb76e9ba056cab00f"
+    },
+    {
+      "file": "2026-10-03/n16-casa-material/amostra-programas.json",
+      "artifactSha256": "de0bb4a968ba003ff08ef39972103ca327bf4b32d55bbb950aa19008369d3997"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/criterios-atuais.json",
+      "artifactSha256": "30140b65146af84b35e717eca9b7f79c3b7ed15e35d9633ab0524ba812f4b37d"
+    }
+  ],
+  "next": "Fechamento de kit/apoios Otago2007 preservado, sem homologacao instrucional desse lote. N15-I/N17-I fechados apenas ES2019-DOM-01. N18-I ativo e C15/N19-I/N20-I pendentes; nenhuma liberacaoN21/app."
+}

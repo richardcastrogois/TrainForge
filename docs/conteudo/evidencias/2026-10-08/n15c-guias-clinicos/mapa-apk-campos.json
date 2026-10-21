@@ -1,0 +1,16 @@
+{
+  "date":"2026-10-08",
+  "niche":"N15-C",
+  "appImplemented":false,
+  "releaseApproved":false,
+  "researchClosureApproved":false,
+  "recoveryContract":["fontes.json/sourceId","localEvidence + latestGuideReading","leitura-fontes.json/sources/version + locator","sourceReceipts -> receipt/bodyFile","verificar SHA256 e bytes antes de ler corpo","consultar texto ou renderizar a pagina PDF com a versao escolhida","preservar suporte, direitos, conflitos e limites de evidencia"],
+  "sources":[
+    {"sourceId":"PR85","version":"tese2017","fields":{"professionalAuthorship":"PDF138/332","caregiverPopulationAndScreening":"PDF133-134","durationAndUsualCare":"PDF136-138","fullSessionTables":"PDF351-362/pp329-340,3sessoesporpagina","instructions":"PDF332-350/AnexoV","strengthDose":"PDF143; doses especificas quando presentes, exB2.26PDF342","warmupMainCooldown":"PDF141-144+351-362","safetyFatiguePreparation":"PDF134,139-144,332-333,337-338,347","breathingEnd":"PDF350/C2.1-3","copyright":"registroGredos primario lido web; recibo anteriorlocaltimeout, nao hash inventado"},"unresolved":["intensidade80%metodosvs94%anexo","3vs3-4alongamentosanaliticos","B1individualizacao e jogos/relaxamento apenasdescritivos","licencaNCND da tese nao grantcomercial"],"cardImportApproved":false},
+    {"sourceId":"PR108","version":"TFG2025","fields":{"authorStudentAndTutor":"PDF1 + perfilinstitucional","populationAndExclusions":"PDF9-10","clinicalResults":"PDF17-19/Table9A-C","groupHomeSchedule":"PDF12","actualHomeCards":"PDF45-46/pp47-48, nao texto extraido automaticamente","exactVideoReference":"PDF44/pp46 + listagemGoogleDriveHTML","reuseRights":"registroGredos/hrefCCBYNCND4, videosseparados"},"unresolved":["n4semcontrole/semcausalidade","profissao do autornaoverificada","texto/fotojoelhosdivergem","semlicencacomercial/naovideoassistido"],"cardImportApproved":false},
+    {"sourceId":"PR71","version":"manual2022","reusePreviousReading":"evidencias/2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json","newReceiptIsDuplicate":true,"cardImportApproved":false}
+  ],
+  "noAiDoseOrConflictResolution":true,
+  "sourceExerciseNotChangedForAvailableTime":true,
+  "compatibleSettingIsNotLiteralHomeFilter":true
+}

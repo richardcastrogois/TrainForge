@@ -1,0 +1,12 @@
+{
+  "niche": "N15-C", "date": "2026-10-04", "use": "research_only",
+  "candidate": {"title": "Digital health physical activity coaching for older family caregivers of persons with heart failure - TPA4You: Protocol for a pilot randomized controlled trial", "doi": "10.1016/j.conctc.2026.101604", "year": 2026, "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860786/", "actor": "cuidador_praticando_para_si", "method": "primary_source_search_index; abertura web e captura local mostraram desafio", "localBodyObtained": false, "sourceSha256": null, "findings": "Protocolo de 12 semanas com 24 sessoes de coaching individual, videochamada e wearable. Nao e resultado de eficacia ou pacote autonomo. Prescricao ajustada pelo profissional; nao substituir por automatismo.", "fullMovementInstructionsObtained": false, "commercialContentRightsVerified": false},
+  "access": {"record": "2026-10-04/n15c-retomada/c15-tpa4you-protocolo.evidencia.json", "status": 200, "contentUsable": false, "reason": "HTML recaptcha/challengepage em vez de artigo", "retried": false},
+  "screening": [
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10559724/", "decision": "HOMeCARE: mindfulness para cuidador e resistencia/equilibrio para assistido; nao prova programa de exercicio proprio do cuidador. Nao coletado como substituto."},
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9367957/", "decision": "Prieto ja recebido em 03/10, nao recapturado: atendimento presencial de personal trainer permanece parte do modelo, nao custo/servico presumidos pelo app."},
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12465894/", "decision": "Sun/Li ja recebido em 03/10, nao recapturado: equipe e individualizacao nao removidas, artigo NC-ND nao vira adaptacao comercial gratuita."}
+  ],
+  "decision": "N15-C segue parcial. Protocolo reforca pertinencia da lacuna, nao resolve programa/direitos. Trabalhar N15-I sem encerrar N15-C nem liberar N21.",
+  "releaseApproved": false, "appImplemented": false
+}

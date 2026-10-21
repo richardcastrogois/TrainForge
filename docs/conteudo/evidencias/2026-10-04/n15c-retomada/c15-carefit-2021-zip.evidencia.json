@@ -1,0 +1,22 @@
+{
+  "id": "c15-carefit-2021-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:23:16.066233+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir anexos originais do prototipo identificado para rotina/instrucao/ativos; membro vazio ou desafio nao sera tratado como recebido.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 359506,
+  "bodyFile": "../raw/c15-carefit-2021-zip.zip",
+  "sha256": "443e7a2e84310b580eaff087d66fb69bbad3a6f3cb692c38c0f7d5703a59d178"
+}

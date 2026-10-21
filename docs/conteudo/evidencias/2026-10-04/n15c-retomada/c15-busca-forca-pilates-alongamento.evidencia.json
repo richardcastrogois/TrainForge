@@ -1,0 +1,22 @@
+{
+  "id": "c15-busca-forca-pilates-alongamento",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Acaregiver%2A%20OR%20TITLE_ABS%3Acarer%2A%29%20AND%20%28TITLE_ABS%3Apilates%20OR%20TITLE_ABS%3Astretching%20OR%20TITLE_ABS%3A%22strength%20training%22%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=100",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:23:10.849630+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Incluir plurais do publico na busca dirigida a movimentos pessoais de forca/alongamento/Pilates, nao meditacao ou terapia da pessoa assistida.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Acaregiver%2A%20OR%20TITLE_ABS%3Acarer%2A%29%20AND%20%28TITLE_ABS%3Apilates%20OR%20TITLE_ABS%3Astretching%20OR%20TITLE_ABS%3A%22strength%20training%22%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=100",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 294258,
+  "bodyFile": "../raw/c15-busca-forca-pilates-alongamento.json",
+  "sha256": "424621f0b28656de8259c678bf2975385a19f93ee6d93e4eadcec6c1c978f349"
+}

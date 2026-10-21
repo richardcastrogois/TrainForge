@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: anexos reais de programa terapeutico de cuidadores e capitulo explicitamente escrito para autocuidado. Distinguir estudo descritivo pequeno, guia profissional e eficacia; nao exercicios do paciente.",
+  "requests":[
+    {"id":"c15-salamanca2025-tfg-pdf","url":"https://gredos.usal.es/bitstream/handle/10366/166663/TFG_L%C3%B3pezGilI_Cu%C3%ADdateMientrasCuidas.pdf?sequence=1","extension":"pdf","accept":"application/pdf","purpose":"TFG55p comAnexo4programa domiciliar/7tabelas de sessoes. Verificar dose/cadencia/apoio/resultados/autoria, nao confirmar eficacia por ser tese."},
+    {"id":"c15-salamanca2025-registro-html","url":"https://gredos.usal.es/handle/10366/166663","extension":"html","purpose":"Registro primario ligado aoPDF; autoria/tutoria/licenca/versao, nao assumir licenciatura concluida ou grant de videos."},
+    {"id":"c15-fedema2022-pagina-html","url":"https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/","extension":"html","purpose":"Origem e linkrealPDF doManual2022, distinguir autocuidado e fisioterapia de pacienteEM."},
+    {"id":"c15-fedema2022-manual-pdf","url":"https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf","extension":"pdf","accept":"application/pdf","purpose":"Manual236p, capituloCuidarnos para cuidarlesPDF131-149: profissionais, preparo/dose/retorno, limites e direitos. Guia naoRCTautomaticamente."}
+  ]
+}

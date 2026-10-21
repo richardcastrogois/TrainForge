@@ -1,0 +1,23 @@
+{
+  "id": "c15-baduanjin-politica-html",
+  "url": "https://www.zglyyx.com/CN/column/column11.shtml",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:24:39.004476+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica de2026 distingue artigos anteriores e CC BY-NC-ND. Nao inferir grant comercial por acesso publico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.zglyyx.com/CN/column/column11.shtml",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 15684,
+  "bodyFile": "../raw/c15-baduanjin-politica-html.html",
+  "sha256": "53d6da49790546a4f086b41ca3371318b6549bea381424da66dc9820eabc3c2a"
+}

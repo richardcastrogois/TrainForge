@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-05",
+  "scope": ["N18-I", "N19-I", "N20-I"],
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "lifeAge": {
+    "sourceId": "PR55",
+    "title": "Exercise Prescription for Healthy Active Ageing: LifeAge Guide",
+    "doi": "10.5281/zenodo.4395762",
+    "isbn": "9791220242363",
+    "authors": ["Pablo Jorge Marcos Pardo", "David Jimenez Pavon", "Emanuele Isidori", "Noelia Gonzalez-Galvez", "Raquel Vaquero Cristobal"],
+    "publicationDate": "2020-12-27",
+    "metadataRecord": "2026-10-05/fechamento-dirigido/i18-lifeage-metadata.evidencia.json",
+    "metadataSha256": "35c0ec950b94035048daddc5556572f3cc36838fcfbe3e61df6f82ef140e77d7",
+    "license": {"id": "cc-by-4.0", "locator": "metadata.license.id", "scope": "Licenca declarada no deposito; creditos/excecoes internos de imagens e outros ativos ainda nao lidos."},
+    "pdfLocator": "files[0].links.self",
+    "declaredPdfBytes": 13230964,
+    "declaredPdfMd5": "56d696fa50a482429b49f00f367002fe",
+    "pdfAttemptRecord": "2026-10-05/fechamento-dirigido/i18-lifeage-guia-pdf.evidencia.json",
+    "pdfAttemptStatus": 406,
+    "pdfBodyReceived": false,
+    "pagesRead": 0,
+    "limitation": "Resposta recusada pelo servidor. O coletor anterior descartou corpo divergente; sem hash do livro. A autorizacao posterior remove o teto PDF, mas nao transforma 406 em arquivo recebido nem autoriza repetir barreiras."
+  },
+  "react": {
+    "sourceId": "PR56",
+    "title": "The REtirement in ACTion exercise programme and its effects on elements of long term functionality in older adults",
+    "authors": "Peter Ladlow et al.",
+    "year": 2023,
+    "doi": "10.3389/fpubh.2023.1151035",
+    "pmcid": "PMC10420051",
+    "articleRecord": "2026-10-05/fechamento-dirigido/i18-react-2023-xml.evidencia.json",
+    "articleSha256": "66bfb2e7c09fa85bb564e787db3b261d6a18e6a7c8eb8911f29b1a410ab0b84a",
+    "htmlRecord": "2026-10-05/fechamento-dirigido/i18-react-2023-artigo.evidencia.json",
+    "license": {"id": "CC-BY-4.0", "locator": "front/article-meta/permissions/license/@xlink:href", "url": "http://creativecommons.org/licenses/by/4.0/", "scope": "Artigo recebido; verificar suplemento e ativos de terceiros antes de incorporacao."},
+    "readExtent": "XML recebido; metodos, tabelas de elegibilidade/intervencao, seguranca e consideracoes de implementacao. Nenhuma imagem ou pagina do suplemento inspecionada.",
+    "fieldProvenance": [
+      {"fields": ["minimumAge", "sppbRange", "communityDwelling"], "locator": "sec9 / Participants / Table 1", "value": "65 anos ou mais; SPPB 4-9; residentes na comunidade, com exclusoes publicadas; nao todos os idosos."},
+      {"fields": ["duration", "sessionFrequency", "supervision"], "locator": "sec12 / Table 3", "value": "52 semanas; 64 sessoes supervisionadas de 1 hora; 2/semana nas primeiras 12, depois 1/semana. Instrutor qualificado, nao execucao autonoma."},
+      {"fields": ["functionalLevels", "progressionConstraints"], "locator": "sec5 / Figures 1-4 (legendas e texto, nao imagens)", "value": "Cinco categorias funcionais e progressao individualizada. Sem explosivos nas semanas 1-8; capacidade demonstrada antes de introduzir depois. Nao algoritmo automatico por idade."},
+      {"fields": ["environment", "equipment"], "locator": "sec8 / Study design", "value": "Espaco comunitario/estudio; cadeiras, bandas e tornozeleiras, sem maquinas de resistencia/cardio ou pesos livres. Nao manual de regulagem de academia ou praca."},
+      {"fields": ["adverseEvents"], "locator": "sec18 / Safety of the exercise intervention", "value": "Fratura da anca por cadeira defeituosa; evento isquemico transitorio possivelmente relacionado, fora de sessao. Nao inferir seguranca universal."}
+    ],
+    "supplement": {
+      "xmlLocator": "supplementary-material[@id='SM1']/@xlink:href",
+      "fileName": "Table_1.DOCX",
+      "publishedLinkPage": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10420051/",
+      "record": "2026-10-05/fechamento-dirigido/i18-react-suplemento-docx.evidencia.json",
+      "authorized": true,
+      "authorizedMaxBytes": 16777216,
+      "httpStatus": 200,
+      "receivedBytes": 1814,
+      "receivedBodySha256": "4a8b4bbfa45c18b66c03dc29158849a52ff0a8f51f60009ad2ae07717ea50f9e",
+      "actualFormat": "HTML",
+      "challengeMarker": "POW_CHALLENGE / cloudpmc-viewer-pow",
+      "docxReceived": false,
+      "extractionPerformed": false,
+      "noRetry": true,
+      "limitation": "Pagina de verificacao do PMC, nao suplemento. Nao executar desafio nem contornar; hash preserva a barreira, nao comprova o DOCX."
+    }
+  },
+  "apkDecision": {
+    "newApprovedInstructionMappings": 0,
+    "newApprovedVisualAssets": 0,
+    "unmetCriteria": ["I18-G03", "I19-G03", "I20-G02", "I20-G03"],
+    "rule": "Referenciar cada campo pelo identificador da fonte, recibo/hash e localizador. Sem variante, dose e direito demonstrados, nao importar para treinos; a ausencia permanece explicita."
+  }
+}

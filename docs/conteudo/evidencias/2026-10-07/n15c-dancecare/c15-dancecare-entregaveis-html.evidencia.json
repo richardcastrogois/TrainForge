@@ -1,0 +1,23 @@
+{
+  "id": "c15-dancecare-entregaveis-html",
+  "url": "https://dancecare-project.eu/public-deliverables/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:34:25.554174+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina oficial com links observados ao handbook e guidelines, nao presumir licenca pelo financiamento Erasmus.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://dancecare-project.eu/public-deliverables/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 132037,
+  "bodyFile": "../raw/c15-dancecare-entregaveis-html.html",
+  "sha256": "bfea692ffcf08c5d0d6f7cdca50c53305217f89b48cb1c903ee58503c00722de"
+}

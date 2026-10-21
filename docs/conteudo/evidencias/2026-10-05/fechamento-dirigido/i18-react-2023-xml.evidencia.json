@@ -1,0 +1,22 @@
+{
+  "id": "i18-react-2023-xml",
+  "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/xml",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T11:13:35.432611+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "XML oferecido na pagina original recebida: localizar membroS1 real e licenca, sem inferirURL pelo titulo.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1151035/xml",
+  "contentType": "text/xml",
+  "retryAfter": null,
+  "bytes": 149833,
+  "bodyFile": "../raw/i18-react-2023-xml.xml",
+  "sha256": "66bfb2e7c09fa85bb564e787db3b261d6a18e6a7c8eb8911f29b1a410ab0b84a"
+}

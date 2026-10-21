@@ -1,0 +1,23 @@
+{
+  "id": "n43-vitpose-files",
+  "url": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small/tree/0c30b6534bb621af0162b481176742577264e36e",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:55:46.470194+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Tamanhos e hashes anunciados deweights; só metadados para planejar teste sob5GB e limpeza imediata.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small/tree/0c30b6534bb621af0162b481176742577264e36e",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 709,
+  "bodyFile": "../raw/n43-vitpose-files.json",
+  "sha256": "328cb683da0d25c65fe742e8b97b9e80ca91bd938d5afbea987dcd54e20918fb"
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "evidenceLevel": "leitura_indexada_de_fontes_primarias_sem_corpo_local_hash",
+  "collectorCallsRepresentedHere": 0,
+  "items": [
+    {
+      "name": "TRANSFE2024",
+      "doi": "10.3390/nursrep14030118",
+      "url": "https://osf.io/k7wte/",
+      "finding": "Intervencao ergonomica profissional em casa, transferencias e exercicios basicos; nao manual integral independente de autocuidado recebido.",
+      "limits": "Pagina editorial indisponivel/leitura PMC com desafio; sem contorno. OSF observado, nao arquivo/manual coletado."
+    },
+    {
+      "name": "Cuidando de quem cuida2021",
+      "doi": "10.1590/0034-7167-2020-0215",
+      "url": "https://www.scielo.br/j/reben/a/WrrjjNgZ5MYLx9Y6Y7q85kx/?lang=pt",
+      "finding": "Cartilha35paginas descrita e validada quanto a conteudo/aparencia; artigo com paginas selecionadas nao cartilha integral.",
+      "limits": "Validacao editorial com especialistas/cuidadores nao ensaio de eficacia. Nao inferir rotina integral ou elegibilidade de cuidador formal."
+    },
+    {
+      "name": "Walking to Wellness VA2023",
+      "url": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+      "finding": "Caminhada e apoio de facilitador, inclusive com paciente/respiro; nao substitui programa do proprio cuidador somente em casa.",
+      "limits": "Pagina/manual indexados como pista; corpo nao recebido nesta rodada, sem direitos por ativo ou selecao."
+    },
+    {
+      "name": "Pilates cuidadores UFBA2024",
+      "url": "https://repositorio.ufba.br/handle/ri/40795",
+      "primaryLocator": "dc.rights e Files in This Item",
+      "finding": "Fonte primaria declara Acesso Restrito/Embargado e texto completo ate2026-12-30. Resumo confirma cartilha/videos do estudo, nao os entrega.",
+      "limits": "Leitura web indexada distinta da falha TLS local preservada. Sem tentativa de baixar texto completo restrito."
+    }
+  ],
+  "selectedExecutableProgrammes": [],
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n35-compendium-units",
+  "url": "https://pacompendium.com/unite-conversions/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:16:59.153220+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Métodos/unidades oficiais para cotejo deMET padrão versusMET60+, não calibração individual. Download de pesquisa permitido pelo site.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pacompendium.com/unite-conversions/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 70745,
+  "bodyFile": "../raw/n35-compendium-units.html",
+  "sha256": "7bd98f2d2b2edd6394a574d342f0b4cd0a6d7ea52bbbf51b249f164db7e35f2e"
+}

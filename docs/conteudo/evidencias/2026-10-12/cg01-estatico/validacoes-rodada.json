@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-12",
+  "scope": "CG01_fechamento_factual_profissional_seguido_deCG02_unico_ativo",
+  "userDecision": "Sim, desde que a compatibilidade seja demonstrada e as fontes fiquem separadas.",
+  "itemStates": {
+    "CG-01": "fechado_para_pesquisa_publico_original_e_orientacao_profissional",
+    "CG-02": "parcial_entrega_instrucional_original_nao_resolvida",
+    "CG-03-05": "aguardando_anterior",
+    "publishedItems": 0,
+    "n15NicheClosed": false,
+    "n21Started": false,
+    "appImplemented": false
+  },
+  "collection": {
+    "newCollectorCalls": 6,
+    "http200UsableBodies": 6,
+    "newProgrammeFamilies": 0,
+    "pdfs": 2,
+    "pdfTextPages": 26,
+    "pdfPagesActuallyViewed": 9,
+    "cg01ViewedPdfPages": [1, 2, 9, 11, 12],
+    "cg02ViewedPdfPages": [1, 6, 7, 14],
+    "mediaDownloaded": false,
+    "nativeAutomaticVideoTranscriptExported": true,
+    "videoTranscriptIsTrialCdOrClinicalInstructions": false,
+    "webPmcLeadFailureCountsAsPrimaryBody": false,
+    "repeatFailedGetOrTlsBypass": false
+  },
+  "catalogueValidation": {
+    "command": "python -X utf8 docs/conteudo/consultar-cuidadores.py --write-audit",
+    "exitCode": 0,
+    "items": 5,
+    "mappedFields": 90,
+    "readingFiles": 9,
+    "verifiedPrimaryReceipts": 23,
+    "researchClosedItems": 1,
+    "publishedItems": 0,
+    "networkCalls": 0
+  },
+  "documentaryTests": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_*.py",
+    "exitCode": 0,
+    "tests": 290,
+    "seconds": 68.525,
+    "cg01FocusedTests": 6,
+    "cg02FocusedTests": 4,
+    "catalogueFocusedTests": 5,
+    "policyTestsAfterDecisionRecordUpdate": 6,
+    "policyTestsExitCode": 0,
+    "clinicalOrAppTests": false,
+    "fixtureCollectorCountsAreNewRealDownloads": false,
+    "warnings": "pypdf warnings on older Japanese encodings/pointing objects; malformedPDF test fixture warnings. Do not infer all oldPDF text perfectly extracted."
+  },
+  "activeN15Validation": {
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json",
+    "status": "passed_documentary_validation",
+    "exitCode": 0,
+    "verifiedEvidenceBodies": 246,
+    "verifiedDependencies": 134,
+    "nicheStatus": "parcial",
+    "clinicalOrAppValidation": false
+  },
+  "queueValidation": {
+    "exitCode": 0,
+    "nichesChecked": 20,
+    "activeComplement": "N15-C",
+    "n21Allowed": false,
+    "activeEvidenceArtifactSha256": "7e16a66b463ae596fc2650b1da7218159c7f7c7f189e1c486ed115246a32e4dc",
+    "queueArtifactSha256": "dc057cc36137950cf11fd8edc0e3a52df623d1e0cc266493d61ce6a138023e5e"
+  },
+  "graphify": {
+    "command": "graphify extract C:/dev/TrainForge/trainforge/lib --update --code-only --no-cluster --out C:/dev/TrainForge/trainforge",
+    "exitCode": 0,
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "outputsLeftUntouched": true,
+    "researchSemanticallyIndexed": false
+  },
+  "appTrackedDiff": {
+    "exitCode": 0,
+    "outputEmpty": true,
+    "apkImplemented": false
+  },
+  "finalChecks": {
+    "gitDiffCheckExitCode": 0,
+    "gitDiffCheckWhitespaceErrors": false,
+    "gitLineEndingWarningsObserved": true,
+    "finalAuditQueueCatalogueAndWebTriageJsonParsed": true,
+    "noRequiredExecutionSessionsLeftRunning": true
+  },
+  "limits": [
+    "CG01 closure is factual and scoped, not approval of autonomous start or publication",
+    "Professional support forCG01 is conservative product restriction, not statictrial supervision observed",
+    "Auxiliary compatibility is documented inference, not independent clinical validation or combinationRCT",
+    "CG02 delivery/material gap not silently removed; CG03-05 remain held",
+    "Human localisation review and controls/attribution remain before publication",
+    "No paid permission, author contact, login, prescription creation, app integration, commit or push"
+  ]
+}

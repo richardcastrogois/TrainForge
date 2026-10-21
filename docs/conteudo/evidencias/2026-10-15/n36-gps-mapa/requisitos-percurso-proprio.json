@@ -1,0 +1,129 @@
+{
+  "id": "N36-PERCURSO-PROPRIO-01",
+  "date": "2026-10-15",
+  "niche": "N36",
+  "kind": "Pesquisa técnica e especificação documental própria, sem integração ou comportamento observado doTrainForge.",
+  "sourceFamilies": [
+    "PR206",
+    "PR207",
+    "PR208"
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "topic": "Funções distintas",
+      "record": "Localizar dispositivo, desenhar mapa, guardar percurso próprio, sugerir rota e partilhar com terceiro são funções separadas. Este lote seleciona especificação de percurso próprio voluntário; não navegação/rota acessível garantida ou serviço de vigilância."
+    },
+    {
+      "id": "R02",
+      "topic": "Identidade",
+      "record": "Dono/portador do dispositivo, praticante e informante separados. Telefone parado ou carregado porcuidador não prova deslocamento doassistido."
+    },
+    {
+      "id": "R03",
+      "topic": "Permissão/alternativa",
+      "record": "Pedido contextual só quando necessário; manter modo manual/semmapa. Negada, aproximada, revogada, timeout ou indisponível são estados distintos, não0km válido."
+    },
+    {
+      "id": "R04",
+      "topic": "Qualidade/tempo",
+      "record": "Guardar fonte/API, instante deaquisição/recepção, precisão/unidade/base estatística quandoinformadas e flags disponíveis/mock. Não converter68%em95%ou precisão horizontal emincerteza da distância acumulada. Cache antigo não ponto novo."
+    },
+    {
+      "id": "R05",
+      "topic": "Distância/ritmo",
+      "record": "Distância de pontos pode ser estimada com método explícito, mas jitter pode acumular parado. Lacunas não linhas de deslocamento comprovado; velocidade desconhecida não0. Limiares/filtro e taxa deamostragem carecem validação e não foram inventados."
+    },
+    {
+      "id": "R06",
+      "topic": "Pausas",
+      "record": "Proposta editorial: iniciar/pausar/retomar/terminar explícitos; separar tempo decorrido e tempo registrado ativo. Marcar lacuna de localização distinta de pausa solicitada. Autopause/compensação/interpolação não validadas; semmétodoprescrito dedose peloGPS."
+    },
+    {
+      "id": "R07",
+      "topic": "Estado doapp",
+      "record": "Webwatchnão garantecoleta embackground;Androidforegroundserviceé modelo diferente. Semafirmarexecutar emsegundoplano/telaapagada até teste real e requisitos deversão. Nenhum serviço oupermissaomudado agora."
+    },
+    {
+      "id": "R08",
+      "topic": "Privacidade",
+      "record": "Recolher só para finalidade declarada, retenção/acesso/exclusão/partilha explicitados e proteção adequada. Proposta local/pessoa própria sempartilha padrão; decisão jurídica/políticadeproduto não implementada. Origem/fim depercursopodemrevelarcasa."
+    },
+    {
+      "id": "R09",
+      "topic": "Mapa/serviço",
+      "record": "ODbL/atribuição e condições de tiles distintas. Não pré-carregar offline do servidorpúblico; planejarfonteswitch/cache correto e indisponibilidade. Provedoroffline/produção ainda não selecionado, não prometer serviço gratuitoirrestrito."
+    },
+    {
+      "id": "R10",
+      "topic": "Evidência",
+      "record": "GPSnão mede gasto/caloria, técnica, carga, capacidade ousegurança clínica. Emulador/simulação confirma interface/parsing, não precisãoGNSSreal. Nenhumteste de campo ouimplementação doTrainForge realizado."
+    }
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "classification": "GPS_nao_obrigatorio",
+      "reason": "Treino doméstico pode registrar dose/tempo próprios semcoordenada; erro indoor não distânciaválida oupessoa parada. SemrotadeGPSestimada da pessoa assistida."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "classification": "aplicavel_com_limites",
+      "reason": "Exterior/caminhada podemsebeneficiar demapa epercurso voluntário;sentar emaparelho não requerGPSnemmede carga. Piso/acessibilidade/segurança depercursos não confirmados por uma linha nomapa."
+    },
+    {
+      "context": "idoso_academia",
+      "classification": "GPS_nao_obrigatorio",
+      "reason": "Bicicleta/remo/esteira internos não ganham distânciaválida doGPS;dadosdevisor/manual/sensor têmfontespróprias. Permissão negada não bloqueiatreino internosemnecessidade."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "classification": "GPS_opcional_da_pessoa_que_pratica",
+      "reason": "Seeventualmente caminharfora,localizaçãoédele/dispositivo. Não vigiar/partilhar assistido por sercuidador. Permissãodosistema não autorização geralderetenção/partilha. Casa/rotina própria preservadas."
+    }
+  ],
+  "documentaryCases": [
+    {
+      "scenario": "Treino emcasa compermissãoGPSnegada",
+      "expected": "Treino elegível semGPScontinua pelo modo semcoordenadas; não localizaçãofictícia ou0km medido."
+    },
+    {
+      "scenario": "Caminhada interrompida paraassistiroutrapessoa",
+      "expected": "Marcar pausaexplicitamente se solicitada e separarjanela/trecho; nãomedirassistido nemcompensardose."
+    },
+    {
+      "scenario": "Apprecebe pontodecache antigo apósretomada",
+      "expected": "Usarinstante deaquisição/idade doponto paraidentificar estado; nãoinventarnovopercurso. Limiarespendentes deteste."
+    },
+    {
+      "scenario": "Sinal muda50m enquanto pessoaestáparada",
+      "expected": "Incerteza/jitter não caminhada50mcomprovada. Semregraautomática dedesconto/caloria."
+    },
+    {
+      "scenario": "GPSaponta caminho comdegraus/semcorrimão",
+      "expected": "Mapa/rota não garantia deacessibilidade ousegurança; não recomendar poridade ouaparência."
+    },
+    {
+      "scenario": "Androidaccuracy10m ewebaccuracy10m",
+      "expected": "Valoressemânticasestatísticasdiferentes, nãoprecisãoigualgarantida."
+    },
+    {
+      "scenario": "Servidor públicodetilesindisponível",
+      "expected": "Não apagarregistropessoal/impedir modalidadessemmapa. SemSLA/prefetchparacontornar."
+    },
+    {
+      "scenario": "Emulador percorrecoordenadassintéticas",
+      "expected": "Teste simulado não prova quilometragem/GNSS/consentimento deusuário real."
+    }
+  ],
+  "runtimeTestsPerformed": [],
+  "fieldTestsPerformed": [],
+  "pendingValidation": [
+    "Escolha de implementação/plataforma/provedor e custos/SLA/atribuição/cache",
+    "Privacidade, finalidade, retenção, proteção e partilha/representação comusuário emetapaprópria",
+    "Medida realdeprecisão/distância/ritmo/bateria e testesdelacunas/cache/pausas/telaapagada/permissões porversão",
+    "Compreensão/acessibilidade comidosos/cuidadorestreinandoparasi; mapanão é requisito universal"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

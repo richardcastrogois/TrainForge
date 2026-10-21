@@ -1,0 +1,23 @@
+{
+  "id": "c15-kirtan-lavretsky-html",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3423469/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:38:46.729069+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo original integral: verificar ensaio, elegibilidade, ensino profissional, dose, cointervencao, resultados e limite da descricao de11+1min.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3423469/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 186935,
+  "bodyFile": "../raw/c15-kirtan-lavretsky-html.html",
+  "sha256": "78269c8b57670481fa589c72e5fcb3bc44e8b74c3c29df96e97f6bbf3df8e4d3"
+}

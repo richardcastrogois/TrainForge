@@ -1,0 +1,22 @@
+{
+  "id": "c15-carefit-2021-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:23:14.212156+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo do prototipo CareFit no deposito OA identificado por DOI; primeira coleta XML publica, nao contorno de AWS WAF.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 130326,
+  "bodyFile": "../raw/c15-carefit-2021-xml.xml",
+  "sha256": "ce3f92b918565f2f15fc29aef7f5b42c218deb1bc586a078014d54d580083ce9"
+}

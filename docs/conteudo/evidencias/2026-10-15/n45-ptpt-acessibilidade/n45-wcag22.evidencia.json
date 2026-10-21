@@ -1,0 +1,23 @@
+{
+  "id": "n45-wcag22",
+  "url": "https://www.w3.org/TR/WCAG22/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T01:07:55.507763+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "WCAG2.2 primária:critérios e níveis; não certificação do app.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.w3.org/TR/WCAG22/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 512457,
+  "bodyFile": "../raw/n45-wcag22.html",
+  "sha256": "6e3c5fe397257cae509a2fb4752b73062cf8cbeb92c2cec618989b17e4cf7057"
+}

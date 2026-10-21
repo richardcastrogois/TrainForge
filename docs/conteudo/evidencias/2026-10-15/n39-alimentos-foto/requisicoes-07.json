@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "n39-torch-package-metadata",
+      "url": "https://pypi.org/pypi/torch/2.13.0/json",
+      "purpose": "Metadados oficiais da versão atualmente listada na documentação PyTorch; somente consulta de compatibilidade/tamanho/licença para o plano, sem pip install.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-transformers-package-metadata",
+      "url": "https://pypi.org/pypi/transformers/4.57.6/json",
+      "purpose": "Verificar existência, requisitos Python e licença de versão 4.x candidata para reproduzir ViT legado sem CUDA; não instalar.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-torch-cpu-index",
+      "url": "https://download.pytorch.org/whl/cpu/torch/",
+      "purpose": "Índice oficial CPU para selecionar wheel Windows cp312 e hash publicado antes de qualquer instalação. Leitura de catálogo, não download de wheel.",
+      "extension": "html"
+    },
+    {
+      "id": "n39-mobileclip-license",
+      "url": "https://raw.githubusercontent.com/apple/ml-mobileclip/main/LICENSE",
+      "purpose": "Licença primária Apple para conferir se o nome research implica restrição comercial. Não herdar MIT do app NutriLens para modelos externos nem obter pesos.",
+      "extension": "txt"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "niche": "N16-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchScope": "Materiais, apoios, progressao e supervisao de fontes para idosos; nao prescricao automatica ou instrucao fisicamente assistida homologada.",
+  "next": "N17-I",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "anchors": [
+        "Printed July 2007",
+        "trained instructor",
+        "three times",
+        "progressions in follow-up visits",
+        "Never exercise holding on to an object which may move"
+      ],
+      "role": "Manual completo local; tabelas 3/3.1/4 sao imagens, inspecionadas visualmente, nao transcritas pelo extrator"
+    },
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-registo.evidencia.json",
+      "anchors": [
+        "Research Portal"
+      ],
+      "role": "Somente shell HTML local, sem prova local da licenca; nao equiparar HTTP 200 a conteudo completo"
+    },
+    {
+      "record": "2026-10-03/n16-casa-material/n16-growing-stronger.evidencia.json",
+      "anchors": [
+        "Growing Stronger",
+        "Tufts"
+      ],
+      "role": "Programa e kit anteriores; conflito de transicao e direitos preservados"
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/n16-casa-material/amostra-programas.json",
+    "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json"
+  ],
+  "programmes": [
+    {
+      "id": "I16-P01",
+      "sourceId": "IC06",
+      "title": "Otago Exercise Programme",
+      "pdfPages": 72,
+      "publisher": "ACC",
+      "printYear": 2007,
+      "forewordYear": 2003,
+      "clinicalReviewDate": null,
+      "sourceFactsNotPrescription": {
+        "audience": "Idosos residentes em casa; selecao individual por profissional treinado.",
+        "strengthBalanceMinutesApprox": 30,
+        "strengthBalanceDaysPerWeek": 3,
+        "walkingDaysPerWeekMinimum": 2,
+        "walkingMinutesMaximum": 30,
+        "walkingCondition": "Somente se seguro.",
+        "homeVisits": "Quatro/cinco, semanas 1/2/4/8 e seis meses; calendario conforme fonte.",
+        "supports": "Pesos de tornozelo e apoio fixo; nao usar objeto movel como apoio.",
+        "progression": "Carga e apoio ajustados pelo instrutor; nao passagem automatica por semana."
+      },
+      "pdfPageRefs": {
+        "schedule": 16,
+        "individualPrescription": 18,
+        "resourcesAndProgression": 19,
+        "tables": [
+          21,
+          22
+        ],
+        "instructorSupervision": 24,
+        "safety": 33,
+        "copyright": 72
+      },
+      "tableExtraction": {
+        "machineReadable": false,
+        "visualReviewPerformed": true,
+        "automaticDoseImportApproved": false
+      },
+      "rights": {
+        "repositoryUrl": "https://ourarchive.otago.ac.nz/esploro/outputs/book/Otago-Exercise-Programme-to-prevent-falls/9926555676301891",
+        "webMetadataChecked": true,
+        "repositoryLabel": "CC BY 4.0",
+        "localMetadataContainsLicense": false,
+        "pdfCopyright": "ACC 2007",
+        "licenseFoundInPdf": false,
+        "decision": "Candidato condicional: preservar declaracao do repositorio; confirmar permissao/escopo para texto, ilustracoes e traducao; sem homologacao comercial."
+      },
+      "professionalDeliveryRequired": true,
+      "caregiverPhysicalAssistanceProtocolVerified": false
+    },
+    {
+      "id": "I16-P02",
+      "sourceId": "PR11",
+      "projection": "2026-10-03/n16-casa-material/amostra-programas.json",
+      "decision": "Preservar kit por movimento e transicao conflitante. Nao copiar regra de Otago para Growing Stronger."
+    }
+  ],
+  "criteria": [
+    {
+      "id": "I16-C01",
+      "decision": "Separar material resistivo, apoio ambiental estavel, recurso de comunicacao e pessoa supervisora."
+    },
+    {
+      "id": "I16-C02",
+      "decision": "Disponibilidade de cadeira nao comprova apoio seguro ou capacidade de sair/voltar ao chao."
+    },
+    {
+      "id": "I16-C03",
+      "decision": "Sem kit/apoio exigidos, indicar incompatibilidade da fonte; nao substituir automaticamente escada por banco ou peso improvisado."
+    },
+    {
+      "id": "I16-C04",
+      "decision": "Ajuda fisica do cuidador requer protocolo proprio e treino demonstrados; nao desenhar sustentacao/transferencia a partir destas fontes."
+    },
+    {
+      "id": "I16-C05",
+      "decision": "Nao reduzir apoio ou aumentar carga automaticamente por idade, calendario, score ou sessao marcada concluida."
+    },
+    {
+      "id": "I16-C06",
+      "decision": "Divergencias de edicao/transicao sao impedimento explicito; nao escolher silenciosamente uma versao."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I16-S01",
+      "fictional": true,
+      "case": "Pessoa tem cadeira movel",
+      "expected": "Nao contar como apoio fixo Otago."
+    },
+    {
+      "id": "I16-S02",
+      "fictional": true,
+      "case": "Nao consegue ir ao chao",
+      "expected": "Nao recomendar automaticamente a fase com chao do PR11."
+    },
+    {
+      "id": "I16-S03",
+      "fictional": true,
+      "case": "Cuidador pretende sustentar a pessoa",
+      "expected": "Nao inferir protocolo seguro de assistencia fisica."
+    },
+    {
+      "id": "I16-S04",
+      "fictional": true,
+      "case": "Fase marcada concluida",
+      "expected": "Nao aumentar carga ou retirar apoio sem criterio da fonte e revisao exigida."
+    },
+    {
+      "id": "I16-S05",
+      "fictional": true,
+      "case": "Pessoa retorna depois de doenca",
+      "expected": "Nao retomar progressao automaticamente; instrucoes exigem contactar instrutor."
+    },
+    {
+      "id": "I16-S06",
+      "fictional": true,
+      "case": "Catalogo recebe HTTP 200 do registo",
+      "expected": "Nao afirmar que a licenca foi obtida no HTML local."
+    }
+  ],
+  "limits": [
+    "Traducao pt-PT, adequacao atual e direitos por ativo pendentes.",
+    "Fonte de 2007 com prefacio de 2003, nao diretriz revisada em 2026.",
+    "Nao atribuir resultados de ensaios ao app ou prometer prevencao de quedas.",
+    "Seis paginas renderizadas localmente; nao revisao clinica ou transcricao integral das tabelas.",
+    "N16-I parcial: apoio fisico por cuidador e transicoes/direitos plenamente resolvidos nao demonstrados."
+  ]
+}

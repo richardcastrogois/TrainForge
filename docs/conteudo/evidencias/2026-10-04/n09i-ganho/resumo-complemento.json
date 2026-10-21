@@ -1,0 +1,50 @@
+{
+  "niche": "N09-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 4,
+  "proposedOperations": 6,
+  "fictionalScenarios": 3,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/alimentacao-contexto/a09-nhs-perda-involuntaria.evidencia.json",
+      "url": "https://www.nhs.uk/symptoms/unintentional-weight-loss/",
+      "sha256": "b9246b316b853b3553c66a17c82d16e499aa16463b9f3bbe8594f42d03c2f3d6"
+    },
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    },
+    {
+      "record": "2026-09-30/n09-ganho-peso/n09-nhs-ganho.evidencia.json",
+      "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+      "sha256": "49eb58941b685f2740660909b44c5aa53903937357a33edc5f1ddaf321cd777f"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-09-30/n09-ganho-peso/conteudo-guiado.json",
+      "artifactSha256": "ed89d35c9f4a3529ec4c31cfe13436de96d5ec5aee47a47a6dbe43855c736d32"
+    },
+    {
+      "file": "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "artifactSha256": "7b4209a10b324d4f1c72e882c5c89bfd2e6c8fcc7e91deda60ea7c8d6102733f"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    },
+    {
+      "file": "2026-10-04/geriatria-nutricao/leitura-web.json",
+      "artifactSha256": "abcf7a5624912d01f87bf9baf562ee12a9af860e5ea11b88121f02d65baf6528"
+    }
+  ],
+  "next": "N10-I; N21 retida pelos complementos ainda abertos."
+}

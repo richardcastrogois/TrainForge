@@ -1,0 +1,590 @@
+{
+  "date": "2026-10-08",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "collectorCalls": 4,
+  "usableBodies": 4,
+  "hashedBodies": 4,
+  "sources": [
+    {
+      "id": "c15-jstage-alongamento-pagina",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en",
+      "resolvedUrl": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en",
+      "collectedAtUtc": "2026-10-08T10:09:33.303356+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 79800,
+      "sha256": "b5d93d3e8071da0d564fa5198cebda596dbb6f1470c25e5bed9db3c15a16a403",
+      "record": "2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pagina.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-jstage-alongamento-pdf",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja",
+      "resolvedUrl": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja",
+      "collectedAtUtc": "2026-10-08T10:09:36.186343+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 1155854,
+      "sha256": "202ab083e66d5b6c17b4b708c47a4735143176d713d56accd6e8ee19e4843310",
+      "record": "2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-cares-protocolo-pdf",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/65/NCT02106065/Prot_SAP_000.pdf",
+      "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/65/NCT02106065/Prot_SAP_000.pdf",
+      "collectedAtUtc": "2026-10-08T10:09:45.090754+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 400911,
+      "sha256": "a2b4f81c4b5684a1fa3b8a47c554e43db5ee738a93bd285f24806e51ee4fed9a",
+      "record": "2026-10-08/n15c-alongamento-va/c15-va-cares-protocolo-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-cares-registro-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02106065",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT02106065",
+      "collectedAtUtc": "2026-10-08T10:09:44.864324+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 25672,
+      "sha256": "503ce347b4328219abdcdffd76eb853a36c53eb2051b981d714807a24c1cf4ab",
+      "record": "2026-10-08/n15c-alongamento-va/c15-va-cares-registro-json.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    }
+  ],
+  "pdfs": {
+    "c15-jstage-alongamento-pdf": {
+      "pages": 8,
+      "allPagesTextExtracted": true,
+      "pageTextLengths": [
+        2459,
+        1773,
+        1373,
+        831,
+        1919,
+        2232,
+        2022,
+        3881
+      ],
+      "anchorChecks": {
+        "1": [
+          "Toshiya Nagamatsu",
+          "Forty subjects",
+          "weekly seminar"
+        ],
+        "3": [
+          "Intervention group, n = 20",
+          "Control group, n = 20"
+        ],
+        "4": [
+          "Figure 2",
+          "Relax"
+        ],
+        "6": [
+          "Interaction",
+          "0.038",
+          "0.964",
+          "0.002"
+        ]
+      },
+      "renderedPages": []
+    },
+    "c15-va-cares-protocolo-pdf": {
+      "pages": 20,
+      "allPagesTextExtracted": true,
+      "pageTextLengths": [
+        246,
+        3754,
+        4550,
+        4777,
+        3421,
+        4415,
+        4056,
+        3397,
+        4962,
+        4428,
+        4161,
+        4443,
+        3942,
+        4381,
+        3774,
+        2526,
+        4790,
+        4974,
+        3267,
+        1043
+      ],
+      "anchorChecks": {
+        "1": [
+          "NCT02106065",
+          "06.03.20"
+        ],
+        "5": [
+          "Yesavage, MD",
+          "Kinoshita, PhD"
+        ],
+        "10": [
+          "90-minute",
+          "3 and 9 months"
+        ],
+        "12": [
+          "Appendix 4",
+          "MP3 download",
+          "deep breathing",
+          "20 minutes"
+        ],
+        "13": [
+          "progressive muscle relaxation",
+          "Dr. Scanlon"
+        ],
+        "20": [
+          "Recruitment",
+          "Potential"
+        ]
+      },
+      "renderedPages": []
+    }
+  },
+  "registry": {
+    "nctId": "NCT02106065",
+    "hasResults": true,
+    "enrollment": 32,
+    "flow": {
+      "groups": [
+        {
+          "id": "FG000",
+          "title": "ESBR-i",
+          "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+        },
+        {
+          "id": "FG001",
+          "title": "ESBR-v",
+          "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+        },
+        {
+          "id": "FG002",
+          "title": "Usual Care",
+          "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia."
+        }
+      ],
+      "periods": [
+        {
+          "title": "Overall Study",
+          "milestones": [
+            {
+              "type": "STARTED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "6"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "11"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "15"
+                }
+              ]
+            },
+            {
+              "type": "6 Month Completion",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "5"
+                }
+              ]
+            },
+            {
+              "type": "COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "5"
+                }
+              ]
+            },
+            {
+              "type": "NOT COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "outcomes": [
+      {
+        "type": "PRIMARY",
+        "title": "Zarit Burden Inventory",
+        "description": "The Zarit Burden Inventory is a self-report measure of caregiver burden. Higher scores on this assessment indicate greater levels of caregiver burden. Potential scores range from 0-88 with higher scores indicating more severe burden.",
+        "reportingStatus": "POSTED",
+        "paramType": "MEAN",
+        "dispersionType": "Standard Deviation",
+        "unitOfMeasure": "score on a scale",
+        "timeFrame": "change from baseline at 6-months post intervention",
+        "groups": [
+          {
+            "id": "OG000",
+            "title": "ESBR-i",
+            "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG001",
+            "title": "ESBR-v",
+            "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG002",
+            "title": "Usual Care",
+            "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia."
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "OG000",
+                "value": "3"
+              },
+              {
+                "groupId": "OG001",
+                "value": "8"
+              },
+              {
+                "groupId": "OG002",
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "classes": [
+          {
+            "categories": [
+              {
+                "measurements": [
+                  {
+                    "groupId": "OG000",
+                    "value": "2.0",
+                    "spread": "2.6"
+                  },
+                  {
+                    "groupId": "OG001",
+                    "value": "-0.4",
+                    "spread": "5.0"
+                  },
+                  {
+                    "groupId": "OG002",
+                    "value": "1.6",
+                    "spread": "3.0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECONDARY",
+        "title": "Center for Epidemiological Studies-Depression",
+        "description": "change in caregiver depressive symptoms as measured by the Center for Epidemiological Studies-Depression (CES-D). Scores on the CES-D can range from 0-60 with higher scores suggesting greater depressive symptomatology.",
+        "reportingStatus": "POSTED",
+        "paramType": "MEAN",
+        "dispersionType": "Standard Deviation",
+        "unitOfMeasure": "score on a scale",
+        "timeFrame": "change from baseline at 6-months",
+        "groups": [
+          {
+            "id": "OG000",
+            "title": "ESBR-i",
+            "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG001",
+            "title": "ESBR-v",
+            "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG002",
+            "title": "Usual Care",
+            "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia."
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "OG000",
+                "value": "3"
+              },
+              {
+                "groupId": "OG001",
+                "value": "8"
+              },
+              {
+                "groupId": "OG002",
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "classes": [
+          {
+            "categories": [
+              {
+                "measurements": [
+                  {
+                    "groupId": "OG000",
+                    "value": "2.0",
+                    "spread": "6.9"
+                  },
+                  {
+                    "groupId": "OG001",
+                    "value": "0.1",
+                    "spread": "3.3"
+                  },
+                  {
+                    "groupId": "OG002",
+                    "value": "-0.2",
+                    "spread": "5.3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECONDARY",
+        "title": "Long-term Care Placement Status (Care Recipient)",
+        "description": "Based on caregiver interview, permanent placement of the care recipient in LTC will be ascertained",
+        "populationDescription": "This data was not collected thus is not reported here.",
+        "reportingStatus": "POSTED",
+        "timeFrame": "6-months post intervention",
+        "groups": [
+          {
+            "id": "OG000",
+            "title": "ESBR-i",
+            "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG001",
+            "title": "ESBR-v",
+            "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG002",
+            "title": "Usual Care",
+            "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia."
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "OG000",
+                "value": "0"
+              },
+              {
+                "groupId": "OG001",
+                "value": "0"
+              },
+              {
+                "groupId": "OG002",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECONDARY",
+        "title": "Change in All-cause Mortality Status (Care Recipient)",
+        "description": "Based on caregiver interview, care recipient mortality status will be ascertained",
+        "reportingStatus": "POSTED",
+        "paramType": "COUNT_OF_PARTICIPANTS",
+        "unitOfMeasure": "Participants",
+        "timeFrame": "6-months post intervention",
+        "groups": [
+          {
+            "id": "OG000",
+            "title": "ESBR-i",
+            "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG001",
+            "title": "ESBR-v",
+            "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS."
+          },
+          {
+            "id": "OG002",
+            "title": "Usual Care",
+            "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia."
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "OG000",
+                "value": "3"
+              },
+              {
+                "groupId": "OG001",
+                "value": "8"
+              },
+              {
+                "groupId": "OG002",
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "classes": [
+          {
+            "categories": [
+              {
+                "measurements": [
+                  {
+                    "groupId": "OG000",
+                    "value": "1"
+                  },
+                  {
+                    "groupId": "OG001",
+                    "value": "0"
+                  },
+                  {
+                    "groupId": "OG002",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "adverseEvents": {
+      "frequencyThreshold": "0",
+      "timeFrame": "24 Months",
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "title": "ESBR-i",
+          "description": "Education and Skill-Building Rehabilitation (in-clinic)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS.",
+          "deathsNumAffected": 2,
+          "deathsNumAtRisk": 6,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 6,
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 6
+        },
+        {
+          "id": "EG001",
+          "title": "ESBR-v",
+          "description": "Education and Skill-Building Rehabilitation (over video telehealth)\n\nEducation and Skill-Building Rehabilitation (ESBR): ESBR intervention consists of four, 90-minute sessions over a 4-6 week period. These four sessions are supplemented with booster sessions at 3 and 9 months post-intervention. Each group session (10 or fewer participants) is attended either in-clinic or via video telehealth technology within the VAPAHCS.",
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 11,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 11,
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 11
+        },
+        {
+          "id": "EG002",
+          "title": "Usual Care",
+          "description": "Usual Care plus supplemental paper education materials\n\nSupplemental Education Materials: Participants randomized to the Usual Care (UC) group will receive supplemental educational materials related to aging and dementia.",
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 15,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 15,
+          "otherNumAffected": 1,
+          "otherNumAtRisk": 15
+        }
+      ],
+      "otherEvents": [
+        {
+          "term": "Musculoskeletal injury",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 6
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 11
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 15
+            }
+          ]
+        }
+      ]
+    },
+    "documents": [
+      {
+        "typeAbbrev": "Prot_SAP",
+        "hasProtocol": true,
+        "hasSap": true,
+        "hasIcf": false,
+        "label": "Study Protocol and Statistical Analysis Plan",
+        "date": "2020-06-03",
+        "uploadDate": "2020-06-03T15:16",
+        "filename": "Prot_SAP_000.pdf",
+        "size": 400911
+      }
+    ],
+    "pValueForPrimaryOutcomePublished": false,
+    "isolatedRelaxationEffectEstablished": false
+  },
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "visualInspectionNotDeterminedByScript": true
+}

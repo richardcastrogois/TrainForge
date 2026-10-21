@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrition5k-readme",
+  "url": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:33:23.408783+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "READMEprimário, datasetCCBY4explicitamentepublicado parausocomercial. Conferirlicença/conteúdo/limites eautoria. Não baixar181GBdevídeo/dataset ou códigoexecutável.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/README.md",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 7400,
+  "bodyFile": "../raw/n39-nutrition5k-readme.md",
+  "sha256": "4c77ceab6dfcaf7b23019fae6c323f237f93ecd4213ebe44b36b8f8583c84ae0"
+}

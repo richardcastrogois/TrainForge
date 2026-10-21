@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C, recuperacao dos objetos publicados. Frontiers: primeira resolucao do fileServerId1944170/data-sheet/1 encontrado no JSON publico da propria pagina, sob base publica de arquivos ja documentada. Rota derivada explicitamente, nao link observado nem arquivo presumido recebido. Sem retry apos falha. Demais paginas: direitos e resumo institucional, nao novos ensaios.",
+  "requests":[
+    {"id":"c15-crea2026-s1-pdf","url":"https://public-pages-files-2025.frontiersin.org/articles/1944170/data-sheet/1","extension":"pdf","accept":"application/pdf","purpose":"Primeira resolucao publica do arquivoDataSheet1 com identificador declarado pela editora; conferir resultado/assinaturaPDF antes de qualquer alegacao de manual recebido."},
+    {"id":"c15-dogan2025-edicao-html","url":"https://dergipark.org.tr/tr/pub/erusaglik/issue/99921","extension":"html","purpose":"Pagina da edicao original2025 que inclui este artigo: texto publicado de licenciamento e regras, preservar divergencia de avisos/editorial e nao transferir politica2026 automaticamente."},
+    {"id":"c15-nagamatsu-institucional-html","url":"https://www.my-zaidan.or.jp/tai-ken/introduce/detail.php?id=a8afeb72428deddeb49c19f86edf7209&tmp=1524036185","extension":"html","purpose":"Link da lista institucional recebido no leitor web: descricao do mesmo ensaio2015 de40cuidadores; verificar instrucao e links efetivamente publicados, nao substituir por alongamento generico."},
+    {"id":"c15-nagamatsu-direitos-html","url":"https://www.my-zaidan.or.jp/sitepolicy/","extension":"html","purpose":"Termos institucionais originais sobre reproducao/adaptacao/comercio dos ativos; leitura de pesquisa com hash, nao parecer juridico ou autorizacao de republicacao."}
+  ]
+}

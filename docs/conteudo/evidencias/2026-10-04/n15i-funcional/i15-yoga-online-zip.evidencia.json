@@ -1,0 +1,22 @@
+{
+  "id": "i15-yoga-online-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:05:02.192320+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Appendix 1 Summary of online yoga sessions observado no XML; conferir se resumo oferece instrucao/dose ou so calendario.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 176,
+  "bodyFile": "../raw/i15-yoga-online-zip.zip",
+  "sha256": "6ef66a12184185aab5bb9597046da8677ee61f875595adf90479028d31d7195b"
+}

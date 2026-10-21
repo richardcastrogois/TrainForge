@@ -1,0 +1,24 @@
+{
+  "id": "c15-nih-yoga2022-s2-docx",
+  "url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0277009.s002&type=supplementary",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:11:12.811565+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Suplemento S1File protocolo original observado no artigo, conferir sequencia real/posicoes/doses/precaucoes e licenca por ativo; DOCX ate2MiB, extracao limitada sem executar conteudo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0277009/1/pone.0277009.s002.docx?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20261007%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261007T221148Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=2762cf2f2657ace80914f1dbfaa1ce345c0f9f93f0a9aea3ce95bea58b0a20c854ca6265e245e70044694b41aa60a75fa76a3fb0af25cab6f97c3e90575eab91ceabe0ce8829181b0c2134f7f9b38b7108edb4cf75b5cdfc77481eb608e996466d8863ae804f03148693bd1854d240e05f62b1f26d3aef16328ea2184b23e9cfce0448bfa7988fba0cd4d275e5239e65afed047a9b47882e03df9ac48787296edb6cbfcd6aaeefd38647e9d38cb1c14bd481a847eb5fc106514cf8eedfe834fda8e42f8496373b6f94fc845e036aed3efc0ae7a9dc1a5088bb59a76961f4268f1447f70bfa1d0eda0b45af8990552025f20276b5f7a6ef4b5f163ae8cc1927cd",
+  "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "retryAfter": null,
+  "bytes": 651720,
+  "bodyFile": "../raw/c15-nih-yoga2022-s2-docx.docx",
+  "sha256": "5e5ac190013ff838f4cf4e6b8c855a86b658f7652bdd4d735c50249438a135fc",
+  "bodyFormatMatchesRequest": true
+}

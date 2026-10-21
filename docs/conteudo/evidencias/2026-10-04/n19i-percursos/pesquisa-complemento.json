@@ -1,0 +1,269 @@
+{
+  "niche": "N19-I",
+  "date": "2026-10-04",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Percursos humanos de academia para idosos por objetivo/experiencia/capacidade; comparar programas publicados, nao criar periodizacao ou aumentar volume por idade.",
+  "next": "Parcial: REACT2018 Appendix4 instrucao/dose funcional recebida, versao nao equivalente ao continuum2023; profissional escolhe/progride. Direitos e semantica nao resolvidos, sem roteiro completo de maquinas selecionado; I19-G03 falso. Reusar leitura-react-protocolo2018, nao montar percurso combinando artigos. N21 retida.",
+  "evidence": [
+    {"record":"2026-10-05/programas-manuais-02/i18-react-nihr-protocolo.evidencia.json","anchors":["Appendix 4 Sample physical activity sessions"],"role":"Versao/progressao preservadas, nenhuma selecao automatica ou correspondencia2018/2023 inferida."},
+    {
+      "record": "2026-10-04/n18i-academia/i18-mptp-artigo.evidencia.json",
+      "anchors": [
+        "27-week",
+        "progressive phases",
+        "individualized",
+        "muscular failure"
+      ],
+      "role": "Percurso funcional/equilibrio/capacidade, nao atalho para hipertrofia."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-walker-forca.evidencia.json",
+      "anchors": [
+        "14 weeks",
+        "linearly periodized",
+        "momentary failure",
+        "qualified instructors"
+      ],
+      "role": "Percurso de forca/potencia, selecionado no estudo e supervisionado; distinto de MPTP."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-instabilidade-xml.evidencia.json",
+      "anchors": [
+        "two skilled instructors"
+      ],
+      "role": "Mesmo ensaio de 68 idosos; tres rotas supervisionadas, dataset nao manual."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-academia-marcha-xml.evidencia.json",
+      "anchors": [
+        "placing the barbell at the hip"
+      ],
+      "role": "Smith barra na anca nao ombros; variante nao correspondente a video generico."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-velocidade-xml.evidencia.json",
+      "anchors": [
+        "fitness instructors and physiotherapists"
+      ],
+      "role": "Quatro movimentos com colete/tornozeleira em centros/instituicao, nao programa generico de maquinas."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-triagem-academia-masters-xml.evidencia.json",
+      "anchors": [
+        "supervised by trained personnel"
+      ],
+      "role": "Protocolo supervisionado com duas familias de aparelhos, cointervencao medicacao nao transferida ao APK."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-calm-protocolo-2016-xml.evidencia.json",
+      "anchors": [
+        "Table 2",
+        "TechnoGym"
+      ],
+      "role": "Modelos HRTW, instrucao domestica nao intercambiavel."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pact-treino-2021-xml.evidencia.json",
+      "anchors": [
+        "HUR"
+      ],
+      "role": "PASSWORD supervisionado/casa separados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-password-plano-pdf.evidencia.json",
+      "anchors": [
+        "senior gyms",
+        "HUR"
+      ],
+      "role": "Plano S2 e tabela visual p7, nao manual."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-movestrong-2021-xml.evidencia.json",
+      "anchors": [
+        "FRAIL",
+        "manual"
+      ],
+      "role": "Manual referido nao recebido integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-eckardt-2016-xml.evidencia.json",
+      "anchors": [
+        "hip level",
+        "skilled instructors"
+      ],
+      "role": "Outra amostra/ciclo: nao ensaio de68, Smith na anca."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-bestform-2022-xml.evidencia.json",
+      "anchors": [
+        "Non-commercial",
+        "pneumatic"
+      ],
+      "role": "Restricao comercial e ajuste profissional."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-2024-xml.evidencia.json",
+      "anchors": [
+        "arms crossed",
+        "weighted vest"
+      ],
+      "role": "Duas rotas supervisionadas, figura nao manual integral."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-pagan-pdf.evidencia.json",
+      "anchors": [
+        "schematic overview"
+      ],
+      "role": "Figura1 p3, nao manual de ajustes."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-2023-xml.evidencia.json",
+      "anchors": [
+        "CC BY",
+        "24 weeks"
+      ],
+      "role": "AGUEDA2023: sala fitness supervisionada, bandas; licenca do artigo nao resolve ativos externos."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a5-pdf.evidencia.json",
+      "anchors": [
+        "Training session",
+        "Starting position"
+      ],
+      "role": "Guia real47paginas: instrucao recebida, faltas/divergencias e direito externo nao demonstrado; fotos nao aprovadas."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a6-pdf.evidencia.json",
+      "anchors": [
+        "https://"
+      ],
+      "role": "Indice18links, nao videos recebidos ou licenciados."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-guia-a8-pdf.evidencia.json",
+      "anchors": [],
+      "role": "Participacao remota ao vivo, nao programa autonomo."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-suplemento-cert.evidencia.json",
+      "anchors": [],
+      "role": "CERT/tabelasOOXML, nao manualA5 incorporado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-repositorio-metadata.evidencia.json",
+      "anchors": [
+        "English",
+        "Spanish"
+      ],
+      "role": "Inventario oficial recebido, sem licenca de ativos localizada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-agueda-readme.evidencia.json",
+      "anchors": [
+        "File A5"
+      ],
+      "role": "Descricao dos recursos; licenca dos PDFs/fotos nao demonstrada."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-xml.evidencia.json",
+      "anchors": [
+        "CIEX",
+        "Table 3"
+      ],
+      "role": "Protocolo especifico>=70sarcopenia, maquinaisometrica/sensores/profissional; sentidosadducao/abducao contraditorios, nao selecionado."
+    },
+    {
+      "record": "2026-10-04/n18i-academia/i18-ist-ciex-2025-anexos.evidencia.json",
+      "anchors": [],
+      "role": "Consentimento/checklistSPIRIT11p, nao manual de ajuste CIEX; figura1recebida com fotos."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n18i-academia/leitura-programas.json",
+    "2026-10-04/n18i-academia/amostra-walker-tabela.json",
+    "2026-10-04/n18i-academia/pesquisa-complemento.json",
+    "2026-10-03/n19-academia-percursos/pesquisa-recorte.json",
+    "2026-10-04/n18i-academia/triagem-novos-programas.json",
+    "2026-10-04/n18i-academia/leitura-manuais-dirigida.json",
+    "2026-10-04/n18i-academia/leitura-agueda-manuais.json",
+    "2026-10-04/n18i-academia/leitura-ist-ciex-2025.json",
+    "2026-10-05/fechamento-dirigido/leitura-lifeage-react.json",
+    "2026-10-05/programas-manuais-02/leitura-react-protocolo2018.json",
+    "2026-10-05/programas-manuais-02/inventario-manuais.json",
+    "2026-10-05/programas-manuais-02/mapa-apk-campos.json"
+  ],
+  "operations": [
+    {
+      "id": "I19-O21",
+      "decision": "Separar funcao/equilibrio e forca/potencia como objetivos de fontes diferentes, nao como menu gerador."
+    },
+    {
+      "id": "I19-O22",
+      "decision": "Semanais/percentuais/falha/instrutor conservam autoria e programa; nao misturar criterio sem falha MPTP com falha momentanea Walker."
+    },
+    {
+      "id": "I19-O23",
+      "decision": "Conclusao ou desempenho no registo nao equivale a autorizacao para retirar apoio, iniciar saltos ou subir carga."
+    },
+    {
+      "id": "I19-O24",
+      "decision": "Cuidador praticante conserva capacidade/experiencia proprias; nao herda programa do assistido nem disponibilidade de academia pelo papel."
+    },
+    {
+      "id": "I19-O25",
+      "decision": "Ciclo completo preservado; recortar primeiras semanas ou substituir maquinas demanda nova autoria/revisao, nao adaptacao automatica."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I19-G01",
+      "met": true,
+      "criterion": "Dois percursos humanos especificos para idosos, objetivos/duracao/equipamento/populacoes distintos documentados."
+    },
+    {
+      "id": "I19-G02",
+      "met": true,
+      "criterion": "Regras de progressao, exclusoes e divergencias preservadas sem novos percursos gerados."
+    },
+    {
+      "id": "I19-G03",
+      "met": false,
+      "criterion": "Instrucao/semantica/direitos operacionais do percurso selecionado fechados; resolver campos ambiguos e componentes essenciais ausentes."
+    },
+    {
+      "id": "I19-G04",
+      "met": true,
+      "criterion": "Licencas primarias dos artigos observadas e historia/academia/papeis separados de elegibilidade universal ou app autonomo."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I19-S21",
+      "fictional": true,
+      "case": "Objetivo passa de funcao a hipertrofia",
+      "expected": "Nao trocar autoria/periodizacao ou liberar outro percurso automaticamente."
+    },
+    {
+      "id": "I19-S22",
+      "fictional": true,
+      "case": "Pessoa conclui seis sessoes",
+      "expected": "Reavaliacao 10RM MPTP e atividade profissional, nao autoaumento numerico."
+    },
+    {
+      "id": "I19-S23",
+      "fictional": true,
+      "case": "Treino anterior sedentario e idade maior",
+      "expected": "Nao assumir experiencia zero ou elegibilidade clinica apenas por esses dois atributos."
+    }
+  ],
+  "limits": [
+    "Sem captura exclusiva da N19: reuso de corpos recebidos em N18, nao ausencia de coleta geral.",
+    "Instrucao incompleta em N18/20 impede fechamento operacional, nao apenas falta de teste futuro.",
+    "Nenhum profissional, instalacao ou custo contratado; nenhum programa implementado.",
+    "IST-CIEX2025nao substitui variantes dinamicas ou instrucao de academia comum; protocolo experimental e infraestruturas/profissionais nao oferecidos peloAPK."
+  ],
+  "updatedAt": "2026-10-05"
+}

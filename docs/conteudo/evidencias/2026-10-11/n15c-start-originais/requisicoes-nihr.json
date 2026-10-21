@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-11",
+  "scope": "Somente N15-C. Primeiro GET de duas publicacoes distintas do financiador original NIHR, com links observados na pagina oficial do estudo. Nao repetir UCL 404, BMJ/UCL 403 ou Bookshelf CAPTCHA; nao enviar formularios, executar arquivos ou contactar autores.",
+  "requests": [
+    {"id": "c15-start2014-nihr-relatorio-pdf", "url": "https://njl-admin.nihr.ac.uk/document/download/2002560", "extension": "pdf", "accept": "application/pdf", "purpose": "Relatorio completo START HTA18(61), DOI10.3310/hta18610. Conferir versao, instrucao e localizadores de anexos, autoria, resultados24meses e direitos proprios. Nao pressupor que o manual esteja embutido."},
+    {"id": "c15-start2014-nihr-resumo-pdf", "url": "https://njl-admin.nihr.ac.uk/document/download/2002673", "extension": "pdf", "accept": "application/pdf", "purpose": "Resumo cientifico separado de10paginas: confirmar resultados e permissao textual do financiador, distinguindo resumo do manual e de licenca generica."}
+  ]
+}

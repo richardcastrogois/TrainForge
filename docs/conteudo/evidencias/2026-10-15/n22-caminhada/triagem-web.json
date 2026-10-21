@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-15",
+  "method": "Pesquisa dirigida exploratoria, nao revisao sistematica nem exaustao da oferta mundial. Navegacao pelas colecoes NHLBI/ACE/UGA/Galileo e referenciasPACE-UP/NIHR/PLOS, alem de busca; paginas oficiais de apps, sem APK ou videos.",
+  "webOnly": [
+    {
+      "url": "https://open.online.uga.edu/walking/chapter/warmupcooldown/",
+      "observed": "Texto e CC BY4 lidos; videosKaltura/YouTube e alegacoes amplas nao selecionados",
+      "localGet": "Nao repetirGETindice403para recuperar contexto"
+    },
+    {
+      "url": "https://open.online.uga.edu/walking/chapter/intensity/",
+      "observed": "TalkTest emtexto e CC BY4 lidos;65-85%FC e escalaBorg nao transferidos para idosos"
+    },
+    {
+      "url": "https://open.online.uga.edu/walking/chapter/tips/",
+      "observed": "Ambientes e vestuario, textoCCBY4; percentuaisalimentares/hidratacaofixa nao selecionados"
+    },
+    {
+      "url": "https://open.online.uga.edu/walking/chapter/applicationassignments/",
+      "observed": "Atividadesdidaticas de criarpercurso/andarcomgrupo; nao sessoesclinicassustentadas"
+    },
+    {
+      "url": "https://open.online.uga.edu/walking/chapter/basics/",
+      "observed": "403 web, nao obtido; nao criar conteudo presumido"
+    },
+    {
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/walking-step-right-direction",
+      "observed": "Redirecionou indiceWeightManagement; nao corpo do antigo guia"
+    },
+    {
+      "url": "https://www.nhs.uk/better-health/privacy-policy/privacy-policy-for-the-nhs-active-10-app/",
+      "observed": "Politica publica app opcionalconta/movimento; somente mapa de fornecedor, sem dados pessoais"
+    },
+    {
+      "url": "https://jamorparatodos.ipdj.gov.pt/experience/details.php?id=21",
+      "observed": "Busca oficial confirma iniciativaIPDJ/FPA/FADEUP; open502, material operacional nao recebido"
+    },
+    {
+      "url": "https://www.marchaecorrida.pt/uploads/5a0c6b4da430c_1510763341.pdf",
+      "observed": "Pista oficialdeprograma; open500, nao calendario recebido"
+    },
+    {
+      "url": "https://www.dgs.pt/programa-nacional-para-a-promocao-da-atvidade-fisica/materiais-de-divulgacao/guias-para-avaliacao-e-aconselhamento-breve.aspx",
+      "observed": "Colecao de aconselhamento a profissionais; nao confundir com plano completo de caminhada"
+    },
+    {
+      "url": "https://www.programme-via.com/",
+      "observed": "Programa de seguranca no transito para jovens, descartado como treino; nao confundir titulo caminhada comexercicio"
+    },
+    {
+      "url": "https://www.aarp.org/health/healthy-living/fitness-plan-weight-loss/",
+      "observed": "Pista de MicheleStanten, openfalhou; nao recebido/integrado"
+    },
+    {
+      "url": "https://www.southtees.nhs.uk/resources/cardiac-rehabilitation-home-programme/",
+      "observed": "Reabilitacao cardiaca comapoio, nao genericocaminhada"
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/healthdisp/pdf/tipsheets/Sample-Walking-Program.pdf",
+      "observed": "Falha404de26/09reutilizada; nao repetida. NovosURLs2026distintos obtidos."
+    }
+  ],
+  "collectionStops": [
+    "403/404/redirecionamento/materiarestrita preservados; sem repetirURLsfalhas",
+    "Nenhum trialpremium/contato/midia/copiasdeplanosprivados",
+    "Pagina/marketingdeapp nao observacao runtime"
+  ],
+  "actualNewDownloadManifestCount": 7
+}

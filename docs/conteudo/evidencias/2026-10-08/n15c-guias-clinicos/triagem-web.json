@@ -1,0 +1,23 @@
+{
+  "date":"2026-10-08",
+  "scope":"somenteN15-C",
+  "method":"Busca dirigida de originais/guias, nao revisao sistematica exaustiva; conferir catalogo antes de criar familia.",
+  "leads":[
+    {"sourceId":"PR85","primaryUrl":"https://gredos.usal.es/handle/10366/137103","doi":"10.14201/gredos.137103","webPrimaryRegistryObserved":true,"licence":"CC BY-NC-ND4.0","localRegistryBodyReceived":false,"firstLegacyPdfUrl":"https://gredos.usal.es/bitstream/10366/137103/1/DME_MonteroCuadradoF_Efectividad.pdf","pdfReceived":true,"pdfPages":362,"disposition":"AnexoV e36sessoes recuperados, mesmafamilia2018/2020. Rota anteriorhandle timeout preservada; sem retry/desafio/TLSinseguro."},
+    {"sourceId":"PR108","primaryUrl":"https://gredos.usal.es/handle/10366/166663","pdfReceived":true,"pdfPages":55,"disposition":"TFG2025estudante+tutor, casos5/4semcontrole. Guia real nosrasters45-46, licencaNCND. Nao eficaciaRCT/autoria profissional presumida."},
+    {"sourceId":"PR108","primaryUrl":"https://produccioncientifica.usal.es/investigadores/57750/detalle","bodyReceived":true,"disposition":"AreaFisioterapia/doutorado2016 do tutor; nao transfere ensaio de pacientesEM ao cuidador nem confirma diploma do estudante."},
+    {"sourceId":"PR108","primaryUrl":"https://drive.google.com/drive/folders/14nXEVvGXRNWbU6l6tvvm_fotiJoABCS7?usp=sharing","publicListingReceived":true,"disposition":"DoisMOVlistados, sem download/login/executarJS. Listar arquivo nao assistir ou licenciar video."},
+    {"sourceId":"PR71","primaryUrl":"https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf","bodyReceived":true,"disposition":"Duplicatabyteidentica da coleta07/10; nao nova fonte/ensaio/exercicio. Preservar hash/recibos e nao repetir."},
+    {"primaryUrl":"https://ejhc.journals.ekb.eg/article_380127_2e4e8b1b1d3744dbf050a9906562c864.pdf","receipt":"c15-egito2024-meditacao-pmr-pdf.evidencia.json","bodyReceived":false,"disposition":"Indice de meditacao/PMR; primeiroGET falhouDNS. Identidade/autoria/resultado/licenca nao confirmados pelo corpo. Sem hash, retry ou nova familia."},
+    {"primaryUrl":"https://media.path.org/documents/Nursing_Instructions_to_Educate_Caregivers_in_Palliative_Care.pdf","webPdfPages":80,"localBodyReceived":false,"disposition":"Manual educativoINEN/PATH. PMR no modulo de sintomas do paciente, nao assumir pratica propria do cuidador; restricao educativa nao comercial. Nao ensaio de eficacia."},
+    {"primaryUrl":"https://acikerisim.aksaray.edu.tr/bitstreams/ada927e2-4cd2-40ef-80c1-de99d3101b7a/download","doi":"10.1111/jjns.12234","webPdfPages":10,"localBodyReceived":false,"disposition":"EnsaioPMR cuidadoresAVC2019:23/21completos, sem diferenca entre grupos emsobrecarga/depressao. CDexterno2015 e ensino60min/ligacoes; nao usar resultado positivo do ensaio2022 como se fosse o mesmo."},
+    {"primaryUrl":"https://www.sciencedirect.com/science/article/pii/S1876382022000166","doi":"10.1016/j.eujim.2022.102114","localBodyReceived":false,"disposition":"EnsaioPMR2022distinto, metadados/resumo nao guia integral nem prova de identidade da versaoCD2015."},
+    {"primaryUrl":"https://www.mdpi.com/2227-9032/12/2/166","doi":"10.3390/healthcare12020166","localBodyReceived":false,"disposition":"Exercicio funcional aplicado ao cliente comdemencia. Profissionalcuidador aprende a orientar o paciente; nao atividade propriaN15-C. Nao descarte por local literal."},
+    {"primaryUrl":"https://onlinelibrary.wiley.com/doi/10.1111/j.1471-6712.2011.00895.x","localBodyReceived":false,"disposition":"PacienteAlzheimer pratica, cuidador supervisiona; nao pratica propriaN15-C."},
+    {"sourceId":"PR65","primaryUrl":"https://www.repositorio.ufba.br/bitstream/ri/40795/1/Disserta%C3%A7%C3%A3o.finalizada.Elementos%20pr%C3%A9-textuais.pdf","webPdfPages":15,"localBodyReceived":false,"disposition":"Arquivo publico observado e somente pre-textuais, nao disser tacao107/108folhas ou cartilha.13cuidadoras/12semanas3x50min antes-depois; resultado dorgeralNS. Sem ensaio controlado/manual recebido/direitos porativo."},
+    {"primaryUrl":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3047664/","doi":"10.1007/s12199-010-0170-1","webOriginalRead":true,"localXmlReceipt":"../n15c-cervical-curto/c15-kamioka2011-xml.evidencia.json","localBodyReceived":false,"disposition":"88cuidadoras em4instituicoes, clusterpiloto,38/21completos. Nenhum beneficio significativo entre grupos;8alongamentos/~6min diarios com ensinoortopedista30min+treinadores60min. Folheto/DVD externos ausentes. Adesao2.3 noresumo vs2.7 nosresultados, nao normalizar. XML500vazio, nao documento recebido."}
+  ],
+  "allPublicAlternativesExhausted":false,
+  "contactWithAuthors":false,
+  "n21Started":false
+}

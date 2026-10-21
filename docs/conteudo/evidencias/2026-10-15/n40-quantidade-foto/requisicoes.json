@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n40-nutrition5k-paper",
+      "url": "https://arxiv.org/html/2103.03375v1",
+      "purpose": "Texto primário de Nutrition5k: separar massa/volume, aquisição/splits, definição de MAE e divergência entre tabela e parágrafo. Sem imagens/pesos/dataset; leitura de pesquisa, não licença de republicação de figuras.",
+      "extension": "html"
+    },
+    {
+      "id": "n40-nutrition5k-evaluation-script",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/scripts/compute_eval_statistics.py",
+      "purpose": "Script apontado no README PR212 já recebido, somente leitura do cálculo de MAE/denominador e formato de entrada. Não executar código baixado nem importar modelos/dataset.",
+      "extension": "txt"
+    }
+  ]
+}

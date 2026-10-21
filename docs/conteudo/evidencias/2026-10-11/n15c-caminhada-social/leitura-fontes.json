@@ -1,0 +1,28 @@
+{
+  "niche":"N15-C","date":"2026-10-11","researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "sources":[
+    {"sourceId":"PR125","name":"Hirano2011/2020 caminhada do cuidador","publications":[{"doi":"10.1016/j.archger.2010.08.004","pmid":"20850878","receipt":"c15-hirano2011-core-json.evidencia.json","fullArticleReceived":false},{"doi":"10.21926/obm.geriatr.2001108","receipt":"c15-hirano2020-html.evidencia.json","fullArticleReceived":true}],
+      "cohortIndependenceConfirmed":false,"bothReport31Caregivers":true,"countAsTwoIndependentReplications":false,
+      "population2020":"Cuidador idoso coabitante de pessoaAD, condicoescronicas controladas emseguimento aceitas; historiaAVC/infarto/doencahepatica/exerciciohabitual excluida. Faixa65-80 redacaoSubjects se refere a pacientes, nao filtro cuidador automaticamente.",
+      "dose2020":{"minutes":30,"sessionsPerWeek":3,"weeks":12,"mets":3,"normalWalkingSpeedNotBriskOrRunning":true,"stepsObservedNotPrescribedGoal":9204,"pedometerAndComplianceRecordRequired":true,"locator":"Methods2.1.2"},
+      "results2020":{"locator":"Results/Tables2-3","dDimerWithinP":0.05,"articleCallsWithinResultNonSignificant":true,"dDimerBetweenChangeP":0.377,"caregiverFatigueOrSleepResultFrom2011NotBorrowed":true,"patientMmseNotCaregiverOutcome":true},
+      "results2011":"Resumo declara reducoes de ZBI/fadiga e sono intragrupoP<.05, nao testecomparativo confirmado. 3MET3vezes12semanas; resumo nao publica30min, nao transplantar2020 como instrucao2011 semoriginal.",
+      "professionalAuthorship":"Afiliacoes enfermagem/geriatria/medicinadeclaradas2020; quem prescreveu a caminhada e preparou instrucoes nao nominalmente confirmado. Afiliacao nao diploma presumido.",
+      "operational":{"exactPreparationWarmupCoolDownStopResumeReceived":false,"instructionRecords":[],"independenceNoSupportConfirmed":false,"fatigueShorteningAlgorithmInvented":false},
+      "rights":"2020CCBY declarado, original2011SubscriptionRequired na API; fatos/metodos separados de expressao. Nao comprar/solicitar copia privada.",
+      "decision":"Referencia: dose geral recebida/ambiente compativel, beneficio comparativo e operacional completo nao confirmados. Nao declarar caminhada proibida ou eficaz contra trombose/fadiga por este artigo."},
+    {"sourceId":"PR126","name":"GoGrow2020/2023 atividade e sociabilidade do cuidador","doi2023":"10.1093/geront/gnad028","pmid2023":"36916022","receipt2023":"c15-gogrow2023-core-json.evidencia.json",
+      "fullBodiesReceived":{"2023":false,"2020":false},"failedReceipts":["c15-gogrow2023-xml.evidencia.json","c15-gogrow2020-xml.evidencia.json"],"empty500HashNotArticleHash":true,
+      "design2023":{"randomizedPilot":true,"participants":76,"weeks":6,"control":"GoGrow semrecursos sociais, nao semexercicio","isolatedExerciseClinicalTrial":false},
+      "interpretation":"Resumo relata bemestar/apoiosocial; nao programa de gestos/dose/fim profissional recebido nem beneficio de cada movimento. Protocolo clinico nao recuperado por login/instalarapp.",
+      "supplement2020":{"source":"IndicePMC7605491","format":"DOC","advertisedMiB":5.1,"collected":false,"allowedLimitMiB":2,"pdfSizeAuthorizationDoesNotCoverDoc":true,"contentOrLicenseConfirmed":false},
+      "decision":"Referencia de incentivo/viabilidade, nao treino proprio do cuidador pronto. Publicacao2020 diferente deRCT2023, erro500 nao fonte ou ausencia global."}
+  ],
+  "triage":[
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8805142/","finding":"Reabilitacao perioperatoria piloto, caregiver como coach; nao efeito de exercicio proprio confirmado pelo indice. Nao excluir apenas pelo local."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11312238/","finding":"Protocolo Sun2024 lungcancer/FCG walkingbuddy eautoatividade prevista, nao resultadosclinicos proprios nem instrucao recebida."},
+    {"url":"https://onlinelibrary.wiley.com/doi/abs/10.1002/gps.6058","finding":"IMPACCT jaPR59, nao nova familia por resultado. Preservar principaisdepressaoNS."}
+  ],
+  "recoveryForApk":"PR125/126 -> DOI/publicacao -> recibo/body/bytes/hash -> Methods/Results/Table ouCOREabstract -> achado/limite.500corpozero tem hash do erro vazio, nunca hash de artigo. Nenhum treino importado.",
+  "next":"Continuar N15-C nos originais operacionais exatos, sem completar caminhada ou jogos como programa profissional por IA. Semretry500/barreiras/contato/APK/outrasNs/N21."
+}

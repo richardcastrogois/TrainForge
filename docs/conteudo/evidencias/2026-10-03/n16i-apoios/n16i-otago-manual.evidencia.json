@@ -1,0 +1,22 @@
+{
+  "id": "n16i-otago-manual",
+  "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:21:06.991790+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Inspecionar manual de exercicio para idosos com profissional; PDF indicado no registo publico, 2.76 MB; limite controlado sem retries.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://s3.ap-southeast-1.amazonaws.com/ap-st01.ext.exlibrisgroup.com/64OTAGO_INST/storage/alma/B7/FF/BB/55/43/22/E9/29/07/36/04/EF/70/BD/E8/E0/acc1162-otago-exercise-manual.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2897430,
+  "bodyFile": "../raw/n16i-otago-manual.pdf",
+  "sha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+}

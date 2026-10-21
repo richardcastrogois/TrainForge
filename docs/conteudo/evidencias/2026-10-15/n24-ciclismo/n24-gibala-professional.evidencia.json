@@ -1,0 +1,23 @@
+{
+  "id": "n24-gibala-professional",
+  "url": "https://experts.mcmaster.ca/people/gibalam",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:53:49.924676+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Perfilinstitucional KinesiologyPhD doresponsavelcientifico",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://experts.mcmaster.ca/people/gibalam",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 111535,
+  "bodyFile": "../raw/n24-gibala-professional.html",
+  "sha256": "22341670997edf18479090e7e651029db2776a75fd50c043b58ab77bd10f6152"
+}

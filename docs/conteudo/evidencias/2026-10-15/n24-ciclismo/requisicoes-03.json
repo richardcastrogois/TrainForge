@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "id": "n24-uga-index",
+      "url": "https://open.online.uga.edu/cycling/",
+      "purpose": "Livro aberto de ciclismo indoor; autoria institucional e CC BY 4.0",
+      "extension": "html"
+    },
+    {
+      "id": "n24-uga-tips",
+      "url": "https://open.online.uga.edu/cycling/chapter/tipstricks/",
+      "purpose": "Orientacoes escritas acessiveis; nao recolher paginas que ja retornaram 403 na web",
+      "extension": "html"
+    },
+    {
+      "id": "n24-uga-lingo",
+      "url": "https://open.online.uga.edu/cycling/chapter/lingo/",
+      "purpose": "Variantes escritas; videos externos nao recolhidos nem licenciados automaticamente",
+      "extension": "html"
+    },
+    {
+      "id": "n24-fullpotential-team",
+      "url": "https://www.fullpotential.co.uk/team",
+      "purpose": "Autoria profissional: equipe atual e qualificacoes sem atribuir plano ciclista a membro nao identificado",
+      "extension": "html"
+    },
+    {
+      "id": "n24-fullpotential-coaching",
+      "url": "https://www.fullpotential.co.uk/coaching",
+      "purpose": "Confirmar servico de ciclismo versus qualificacao UK Athletics dos membros; sem contato ou contratacao",
+      "extension": "html"
+    }
+  ]
+}

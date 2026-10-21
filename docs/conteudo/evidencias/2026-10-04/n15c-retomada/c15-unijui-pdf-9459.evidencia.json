@@ -1,0 +1,17 @@
+{
+  "id": "c15-unijui-pdf-9459",
+  "url": "https://www.revistas.unijui.edu.br/contextoesaude/article/download/16753/9459",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:19:42.492145+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Primeiro GET do segundo PDF explicitamente publicado nos metadados Crossref; nao repetir URLs anteriores, nao desativar TLS. Confirmar se manual esta integral no artigo.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

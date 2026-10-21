@@ -1,0 +1,22 @@
+{
+  "id": "c15-ufrn-tese-bundles",
+  "url": "https://repositorio.ufrn.br/server/api/core/items/28c14acf-4ae5-4aeb-9cc8-06c48581e79b/bundles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:26:36.468524+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Seguir o link bundles observado no JSON da tese para localizar o arquivo ORIGINAL e eventual LICENCE sem interpretar Acesso Aberto como CC BY.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufrn.br/server/api/core/items/28c14acf-4ae5-4aeb-9cc8-06c48581e79b/bundles",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1281,
+  "bodyFile": "../raw/c15-ufrn-tese-bundles.json",
+  "sha256": "b82c7ba680a21030cc835e8ed02593686a1466e608a1394aff8788b5e95538da"
+}

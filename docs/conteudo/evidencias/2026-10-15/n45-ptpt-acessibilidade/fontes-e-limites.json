@@ -1,0 +1,29 @@
+{
+  "receivedDocuments": 3,
+  "primarySources": [
+    {
+      "id": "PR231",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "author": "W3C Accessibility Guidelines Working Group",
+      "contribution": "Requisitos de referência WCAG2.2 com níveis/exceções; sem alegação de conformidade de app nativo."
+    },
+    {
+      "id": "PR232",
+      "url": "https://www.w3.org/WAI/older-users/",
+      "author": "WAI/EOWG; editoraShawn Lawton Henry; contribuiçõesAndrew Arch,Shadi Abou-Zahra,Vicki Menezes Miller",
+      "contribution": "Diversidade de necessidades e inclusão de pessoas na avaliação, não idosos como grupo homogêneo."
+    },
+    {
+      "id": "PR233",
+      "url": "https://selo.usabilidade.gov.pt/requisitos/10aspetosaplicacoesmoveis/",
+      "author": "Programa oficial português Selo de Usabilidade e Acessibilidade; autoria individual não indicada",
+      "contribution": "Procedimentos móveis e idioma explícito; páginaatualizada02/05/2025. Não certificação ou tradução dos treinos."
+    }
+  ],
+  "rights": "Referências e resumo próprio. As condições de cada documento/terceiro permanecem próprias; referências de acessibilidade não concedem direitos sobre traduções de exercícios, fotos ou vídeos.",
+  "sourceGetReceipts": [
+    "n45-wcag22.evidencia.json",
+    "n45-wai-older.evidencia.json",
+    "n45-pt-mobile.evidencia.json"
+  ]
+}

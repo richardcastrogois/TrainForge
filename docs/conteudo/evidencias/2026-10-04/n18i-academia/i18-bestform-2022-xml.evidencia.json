@@ -1,0 +1,22 @@
+{
+  "id": "i18-bestform-2022-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9286070/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:51:45.475994+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar se protocolo de maquinas para residentes idosos publica instrucoes operacionais, sem assumir academia comercial ou recursos ja disponiveis.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9286070/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 84328,
+  "bodyFile": "../raw/i18-bestform-2022-xml.xml",
+  "sha256": "7d95f5a7a1bf838ad93f3998f3f0422fa63cbdefcd76b9a95445946a6532ce43"
+}

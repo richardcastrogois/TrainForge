@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "researchClosed": true,
+  "scope": "Um modelo de sessão humana em cicloergômetro (MICT50min) para adulto homem sedentário clinicamente elegível e familiarizado, no caminho com orientação profissional; preparação/segurança auxiliares factualizadas e creditadas. Programas externos/idosos/clinicos ficam como cobertura condicional, sem homologação.",
+  "selectedLot": "lote-ergometro-profissional.json",
+  "previousPartialAudit": "auditoria-parcial.json",
+  "criteria": [
+    {
+      "id": "N24-A",
+      "met": true,
+      "criterion": "Autoria profissional por componente",
+      "evidence": "PR160: concepção e perfil Gibala/McMaster. PR165: Educação Física/mestrado e CREF históricos PDF1. CI05: painel MD/Kinesiology ligado à redação no PDF121."
+    },
+    {
+      "id": "N24-B",
+      "met": true,
+      "criterion": "Preparação/execução/término claros no caminho selecionado",
+      "evidence": "Lote preserva avaliação/familiarização20min anterior à fase, ensino de uso/ajuste com profissional e três blocos2/45/3min. Não foi declarado guia autônomo nem dado botão/ângulo/RPM universal ausente. Instruções de sintomas e retorno têm fonte; comandos do equipamento são ensinados no modelo real antes da sessão."
+    },
+    {
+      "id": "N24-C",
+      "met": true,
+      "criterion": "Dose e limites sem preenchimento por IA",
+      "evidence": "3000s somados; FC alvo relativa medida,50W apenas nas pontas. Não gerar36sessões ou corrigir média32±2/frequência. Sem importar doses/posições/cadências do outro programa."
+    },
+    {
+      "id": "N24-D",
+      "met": true,
+      "criterion": "Direitos por ativo selecionado",
+      "evidence": "Dose principal CC BY4.0; fatos/métodos auxiliares em redação independente, não copiar/adaptar expressão RBCM, tabelas, mídia ou layout. CDADC1(2) versus2/3/9 lidos em fonte oficial; não atribuição como permissão nem domínio público geral. Conferir expressão final antes de publicar."
+    },
+    {
+      "id": "N24-E",
+      "met": true,
+      "criterion": "Compatibilidade e públicos/ambientes delimitados",
+      "evidence": "Mesmo gesto/modalidade/dose com ensino/segurança auxiliares, sem transplantar75+ ou doença clínica. Não aplicar coeficienteLeMond85.5%, bikepraça/rua ou reabilitação cardíaca. Mistura não foi ensaiada; não herda eficácia."
+    },
+    {
+      "id": "N24-F",
+      "met": true,
+      "criterion": "Pesquisa ampliada e evidência verificável",
+      "evidence": "Onze famílias N24 novasPR156–166 +reusoCI05, coleções/livros/bibliografia/apps/API,21recibos/15corposúteis/21hashes e29páginas vistas. Barreiras preservadas sem repetição."
+    }
+  ],
+  "whatActuallyResolved": "Fontes humanas para ensino/ajuste e segurança foram obtidas e localizadas. Seleção limitada ao percurso com orientação, que o autor aceita; não foi exigido material autônomo nem um programa integral único. Disponibilidade/contratação do apoio é requisito da oferta futura, conforme regra existente, sem afirmar disponível agora.",
+  "remainingBeforePublication": [
+    "Revisão profissional da composição/condições finais",
+    "Conferência de redação independente, direitos e créditos do ativo final",
+    "Revisão pt-PT/acessibilidade/compreensão",
+    "Equipamento/apoio reais e implementação/testes"
+  ],
+  "notClosedFor": [
+    "Guia autônomo universal de bicicleta em casa",
+    "Ciclismo de rua e plano de evento de longa distância para todos",
+    "Idoso frágil/cuidador confinado ou bicicleta de praça",
+    "Reabilitação cardíaca/ortopédica como nova oferta",
+    "Calendário12semanas corrigido/inventado ou mídia pronta"
+  ],
+  "zeroNewExternalContacts": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N25"
+}

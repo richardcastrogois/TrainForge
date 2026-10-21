@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "webOnlyFailures": [
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/02640414.2025.2540661",
+      "result": "403"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/02640414.2025.2540661",
+      "result": "403"
+    },
+    {
+      "url": "https://vbn.aau.dk/files/820552165/Compliance_to_prescribed_training_among_recreational_swimmers_using_augmented-reality_swim_goggles_A_randomised_controlled_trial.pdf",
+      "result": "403; link público explícitoCCBY, não recebido"
+    },
+    {
+      "url": "https://www.mdpi.com/1660-4601/16/3/346",
+      "result": "429; sem nova tentativa"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230038/",
+      "result": "recaptcha; não resolvido/contornado"
+    },
+    {
+      "url": "https://open.online.uga.edu/swimming/chapter/fundamentals/",
+      "result": "403"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6388213/bin/ijerph-16-00346-g001.jpg",
+      "result": "não acessível pela ferramenta; imagem não vista"
+    }
+  ],
+  "repeatedAttemptDisclosure": "Perfil Gromisz teve timeout web e uma tentativa GET local posterior, também timeout. Não afirmar que todas as falhas desta rodada tiveram uma única chamada; não repetir agora.",
+  "publicSourcesUsedInstead": "Frontiers recebeu PDF próprio público de2026; EPMC recebeu XML do artigo2023. Distribuições oficiais independentes, sem cookies, credenciais, alteraçõesTLS ou acesso à rota recaptcha.",
+  "notAcquired": [
+    "Coleção/conta SwimEngland",
+    "CalendárioTredict",
+    "BibliotecaUSMS/Swim.com",
+    "VídeosSwimtoFly/Speedo/YouTube/Kaltura",
+    "PDF/suplemento35workoutsEisenhardt"
+  ],
+  "additionalUnselectedLeads": [
+    "Mohr2014/10.1155/2014/728289: hipertensão e treino intenso, somente pista, sem nova seleção de rotina clínica",
+    "PMC4625655: quadro por fases sem comando/dose de cada exercício, não preencher",
+    "MastersSwimmingQLD51–60: material avançado com apneia/submerso em parte; não selecionado"
+  ],
+  "noContacts": true,
+  "noBeFitSupplierLinkEstablished": true
+}

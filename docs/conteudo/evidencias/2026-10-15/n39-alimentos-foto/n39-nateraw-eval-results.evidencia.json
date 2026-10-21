@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-eval-results",
+  "url": "https://huggingface.co/nateraw/food/resolve/8991abd49ea01ebf502aeda51d4f12a59c603e01/eval_results.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T23:59:34.393688+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resultados de avaliação publicados pelo mantenedor, na revisão já observada. Metadados públicos pequenos; não executar nem baixar pesos ou fotografias. Conferir tamanho de avaliação e métricas sem inferir confiança calibrada.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/nateraw/food/8991abd49ea01ebf502aeda51d4f12a59c603e01/eval_results.json?%2Fnateraw%2Ffood%2Fresolve%2F8991abd49ea01ebf502aeda51d4f12a59c603e01%2Feval_results.json=&etag=%22b12731bcb4484f22b6fe89869aac910a6b4f43d7%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 204,
+  "bodyFile": "../raw/n39-nateraw-eval-results.json",
+  "sha256": "7f2087e433f6840ddfb759ffcddd305eea896d861f94e845d2f7144a071785d8"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-suplementos-pagina",
+  "url": "https://link.springer.com/article/10.1007/s10926-024-10182-2",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T23:04:30.284423+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeiro corpoHTML editorial local para lista de quatro suplementos e direitos; PDFs anteriores preservados, sem nova versao independente presumida.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1007/s10926-024-10182-2?error=cookies_not_supported&code=694be013-ba32-4f04-85dc-4a487aba0cc7",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 430980,
+  "bodyFile": "../raw/c15-revieew-suplementos-pagina.html",
+  "sha256": "e080451b600ecfe267a893f7293808bb7a980188dbb400e821ca6a5569670249"
+}

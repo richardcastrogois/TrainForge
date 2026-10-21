@@ -1,0 +1,23 @@
+{
+  "id": "c15-martin2014-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:24769590%20AND%20SRC:MED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:23:19.261289+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo primario para diferenciar 12cuidadores/piloto antesdepois6semanas deensaio controlado/instrucao clinica integral; localizaroriginaispublicos declarados semadivinhar downloads.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:24769590%20AND%20SRC:MED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5359,
+  "bodyFile": "../raw/c15-martin2014-core-json.json",
+  "sha256": "66276e059509cca261881bb4bf428bbd1f6773830ace63121de0a6bdbc67663d"
+}

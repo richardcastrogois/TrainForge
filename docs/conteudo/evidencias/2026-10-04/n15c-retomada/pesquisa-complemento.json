@@ -1,0 +1,810 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-04",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "modularConsolidation":{"date":"2026-10-12","catalogue":"../../../catalogo-cuidadores.json","guide":"../../../catalogo-cuidadores.md","audit":"2026-10-12/n15c-catalogo-modular/verificacoes.json","items":5,"itemDocumentationConsolidated":true,"publishedItems":0,"programmeSynthesisApproved":false,"publicationCanProceedPerEligibleItem":true,"doesNotCloseNiche":true},
+  "researchScope": "Atividade propria especifica de cuidadores, inclusive casa/centro/outro espaco compativel; estudo estritamente domiciliar nao obrigatorio apos esclarecimento07/10. Preservar movimento/variante/dose/material/publico/preparo/suporte/direitos. Artigo/protocolo/manual/ativos/resultados distinguidos; viabilidade material nao eficacia no novo local nem validacao educativa ensaio clinico. Registros historicos preservados, nao programa generico renomeado.",
+  "next": "Foco atual: instrucao executavel e condicoes de uso de todasCG01-05. SomenteCG01 atende ambos gates no caminho documentado,0publicados;CG02-05 conservam8perguntas de fonte/entrega. Nao encerrar por cincofichas factuais nem exigir implementacaoAPK/contratacao nesta pesquisa. N15-Cpartial/N21retida.",
+  "executionContentAudit": {"date":"2026-10-13","file":"2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json","report":"2026-10-13/n15c-lacunas-dirigidas/relatorio.md","itemsChecked":5,"factualResearchClosedItems":5,"bothResearchGatesMetItems":["CG-01"],"pendingSourceQuestions":8,"allFiveExecutableResearchClosed":false,"releaseApproved":false,"appImplemented":false,"scope":"Caminhos profissionais e componentes vinculados declarados, nao cinco guias autonomos ou programa sintetizado"},
+  "sequentialItemClosure": {"date":"2026-10-12","queue":"../../../fila-cuidadores.json","closedItems":["CG-01","CG-02","CG-03","CG-04","CG-05"],"scope":"Recortes factuais documentados, nao autonomia inicial/publicacao/replica integral;CG03 vinculadoSTART,CG04/05 caminhos profissionais eguia autonomo incompleto;CG05 calendario nao aprovado paraexecucao","packages":["2026-10-12/cg01-estatico/pacote-factual.json","2026-10-12/cg02-benson/pacote-factual.json","2026-10-12/cg03-start/pacote-factual.json","2026-10-12/cg04-revieew/pacote-factual.json","2026-10-12/cg05-pilates/pacote-factual.json"],"activeItem":null,"nextItem":null,"doesNotCloseNiche":true},
+  "settingDecision": {"date":"2026-10-07","evidence":"2026-10-07/n15c-ambiente-compativel/decisao.json","studyStrictlyAtHomeRequired":false,"sourceExerciseMustRemainUnchanged":true,"sameMaterialsPreparationAndSupportRequired":true,"allPriorItemsReevaluated":false},
+  "latestSupplementRound":"2026-10-08/n15c-originais-caser/leitura-fontes.json",
+  "latestAdditionalRound":"2026-10-08/n15c-gary-insuficiencia/leitura-fontes.json",
+  "latestOfflineRevalidation":"2026-10-08/n15c-originais-caser/revalidacao-estatico.json",
+  "latestOriginalReading":"2026-10-08/n15c-pediatrico/leitura-fontes.json",
+  "latestOperationalReading":"2026-10-08/n15c-protocolos-operacionais/leitura-fontes.json",
+  "latestGuideReading":"2026-10-08/n15c-guias-clinicos/leitura-fontes.json",
+  "latestCervicalReading":"2026-10-08/n15c-cervical-curto/leitura-fontes.json",
+  "latestBensonReading":"2026-10-08/n15c-benson-reavaliacao/leitura-fontes.json",
+  "latestMindfulnessReading":"2026-10-11/n15c-mindfulness-protocolos/leitura-fontes.json",
+  "latestStartReading":"2026-10-11/n15c-start-originais/leitura-fontes.json",
+  "latestPhysicalManualReading":"2026-10-11/n15c-manuais-fisicos/leitura-fontes.json",
+  "latestRemoteReading":"2026-10-11/n15c-remoto-operacional/leitura-fontes.json",
+  "latestDyadicPainReading":"2026-10-11/n15c-dor-diadica/leitura-fontes.json",
+  "latestDyadicCorrectionReading":"2026-10-11/n15c-dor-diadica/leitura-antecedentes.json",
+  "latestYogaReading":"2026-10-11/n15c-yoga-protocolos/leitura-fontes.json",
+  "latestWalkingSocialReading":"2026-10-11/n15c-caminhada-social/leitura-fontes.json",
+  "latestIndividualYogaReading":"2026-10-11/n15c-yoga-individual/leitura-fontes.json",
+  "latestGroupYogaReading":"2026-10-11/n15c-yoga-grupo/leitura-fontes.json",
+  "latestMartinYogaReading":"2026-10-11/n15c-yoga-martin/leitura-fontes.json",
+  "latestFrailtyMbiReading":"2026-10-11/n15c-mbi-fragilidade/leitura-fontes.json",
+  "latestAdditionalCurriculaReading":"2026-10-11/n15c-curriculos-adicionais/leitura-fontes.json",
+  "latestCaregiverPilatesReading":"2026-10-11/n15c-pilates-cuidadores/leitura-fontes.json",
+  "latestPilates2021AccessReading":"2026-10-11/n15c-pilates-2021/leitura-fontes.json",
+  "latestBreathingCounsellingReading":"2026-10-11/n15c-respiracao-oncologia/leitura-fontes.json",
+  "latestSelfCareScriptReading":"2026-10-11/n15c-autocuidado-roteiros/leitura-fontes.json",
+  "continuationAfterGroupYoga":"HistoricoPR128curriculoDOCX recebido/hashOOXML, nao passos. PR129preview ePR130originais ja recebidos/lidos depois, nao coletas pendentes.",
+  "currentContinuation":"Auditoria13/10 revisouCG01-05/90campos/28recibos primarios e distinguiu5fichas factuais de1pesquisa executavel fechada(CG01 no recorte profissional). Contexto dos oito componentesCG03 resolvido, nao curso integral.9GETs novos:2referencias gerais de direitos,1metadadoHandle,2guias tecnicos auxiliaresNHS;4falhas preservadas. DoisPDFs16/10p,8paginas vistas,5configuracoes candidatas parciais paraCG04,nenhum novo guia integral original. Holds/dose/dor/ponte unilateral nao transferidos. Handle aponta.eus mas404canonico eCAPTCHA,nao ausencia de tese;arquivo solicitado ao usuario. CG02-05 ainda8perguntas. N15-Cglobal parcial/N21retida/APKnaoalterado.",
+  "nextAdditionalOriginals":"CG02 material educativo legal/fiel;CG03 manual participante/audio/identidade e direitos;CG04 instrucoes/partes de sessao e tese acessivel com acao humana;CG05 variantes/transicoes de versao/ativos. Falha de acesso nao inexistencia. Nao preencher porIA, repetir URLs falhas, usar instrutor hipotetico como evidencia ou iniciar outrasNs.",
+  "deliveryDecision": {
+    "date": "2026-10-07",
+    "status": "respondida",
+    "acceptedPaths": ["autonomo", "com_orientacao_profissional"],
+    "apkInstructionsReplaceRequiredSupervision": false,
+    "professionalAuthorshipRequired": true,
+    "appliesToAllApkExercises": true,
+    "policy": "../../../criterios-exercicios-apk.json",
+    "doesNotApproveProgramme": true
+  },
+  "audienceDecision": {
+    "date": "2026-10-07",
+    "status": "respondida",
+    "selection": "especifico_para_cuidadores_em_casa",
+    "genericProgrammeAsSubstituteAccepted": false,
+    "evidence": "2026-10-07/n15c-recorte/analise.json"
+  },
+  "evidence": [
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-wipo-metodo-html.evidencia.json","anchors":["copyright"],"role":"Referencia geral primaria de direitos/metodo versus expressao, nao liberacao de ativo doAPK ou protocolo clinico."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cc-faq-html.evidencia.json","anchors":["NonCommercial"],"role":"FAQprimaria de licencas/direitos protegidos e adaptacao, nao grant deCD/manual/audio ausente."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-handle-api-json.evidencia.json","anchors":["68569"],"role":"Metadado primario identificador10810/68569 resolveURL.eus;nao tese/PDF/dose/licenca. PrimeiroGETcanonico404 comCAPTCHA preservado separado."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-ombro-atual-pdf.evidencia.json","anchors":["Banded Pull Apart"],"role":"Guia profissional auxiliarNHS16p, cotejo de configuracao/retorno pullapart,nao ensaio cuidador/variante integral liberada.3s/6-10reps4series e regras de dor nao transferidos;CCBYSI2 nao licencia fotosNHS."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-lombar-atual-pdf.evidencia.json","anchors":["Double Leg Bridge","Superman"],"role":"Guia profissional auxiliarNHS10p, ponte bilateral/birdDog candidatos parciais;apoio unilateral difereSI2. Holds/dose/progressao/fotos nao transferidos;nao novo protocolo cuidador."},
+    {"record":"2026-10-12/cg05-pilates/cg05-cer-crossref-json.evidencia.json","anchors":["cer-2020-0108","Becaris Publishing Limited"],"role":"Metadados primarios editora/links oficiais,licence ausente;nao texto clinico/licenca comercial. DOI integral conferido por parser JSON no analisadorCG05; ancora textual evita barra escapada. Leitura editorialweb separada dos corpos locais403."},
+    {"record":"2026-10-12/cg05-pilates/cg05-bmr2021-core-json.evidencia.json","anchors":["33935055"],"role":"Resumo primario de publicacao complementar candidata; mesmosautores55cuidadores,sem NCTdireto noCORE,nao replicacao independente/guia integral nem efeito transferido."},
+    {"record":"2026-10-12/cg04-revieew/cg04-revieew-registro-json.evidencia.json","anchors":["NCT05050526","ReViEEW"],"role":"Snapshot primarioNCT/130ACTUAL/semresults/documentSection; descricao/dose/elegibilidade, nao guia completo ouresultado. ControleNO_INTERVENTION nao substitui prevencao laboral descrita noartigo executado."},
+    {"record":"2026-10-12/cg02-benson/cg02-ilm-bhi2009-pdf.evidencia.json","anchors":["Benson-Henry Institute"],"role":"Guia generico institucional2009/2paginas vistas,9etapas/dose/encerramento diferentes; nao receitaPR61 nemCD original. Comparacao nao selecionada paraAPK."},
+    {"record":"2026-10-12/cg01-estatico/cg01-worcs2025-pdf.evidencia.json","anchors":[],"role":"GuiaFisioterapia12p/5paginas vistas; somente regra geral de movimento lento/suave/semforca excessiva. Nao variante/dose3reps ou ensaioAtac."},
+    {"record":"2026-10-12/cg01-estatico/cg01-roh-guia-html.evidencia.json","anchors":["Hamstring Stretch"],"role":"Comparacao nao selecionada: OA20-30s x5 e3vezesdia; retorno da ponte nao hamstring."},
+    {"record":"2026-10-12/cg01-estatico/cg01-dynamic-guia-html.evidencia.json","anchors":["Hamstring stretch"],"role":"Comparacao nao selecionada: variante semdegrau, RPE/doseOA nao transferidos."},
+    {"record":"2026-10-12/cg01-estatico/cg01-csp-seguranca-html.evidencia.json","anchors":["Hamstring stretch"],"role":"Somente conselho profissional previo/agravamento; variante sentada e videosPhysiotec nao transferidos."},
+    {"record":"2026-10-12/cg02-benson/cg02-nccih-relaxamento-html.evidencia.json","anchors":["More To Consider"],"role":"Precaucoes gerais de relaxamento separadas, nao dose/gestoBenson ouCD original."},
+    {"record":"2026-10-12/cg02-benson/cg02-benson-artigo-pdf.evidencia.json","anchors":["educational pamphlet"],"role":"RepresentacaoPDF14p/4paginas vistas; autoriaMSc/NC-SA/seis passos/ensino/CD/folheto/reforco, nao anexoCD."},
+    {"record":"2026-10-11/n15c-autocuidado-roteiros/c15-shoukr-pfa2022-pdf.evidencia.json","anchors":["60 min","15 min a day"],"role":"PR138PDF14p, Table1 paginas6/7 vistas: aula nao treino/exemplos sem comandos, apoio preservado."},
+    {"record":"2026-10-11/n15c-autocuidado-roteiros/c15-shoukr-pfa2022-xml.evidencia.json","anchors":["01049-z","27.50","18.92"],"role":"PR138JATS completo: antesdepois100pacote nao beneficio gesto isolado; CCBY4 nao videos."},
+    {"record":"2026-10-11/n15c-autocuidado-roteiros/c15-hamza-yoga2020-xml.evidencia.json","anchors":["IJOY_70_18","0.88","on request"],"role":"PR139RCT48/altaattrition/NS nao equivalencia, manual nao recebido eapoio inicial preservado."},
+    {"record":"2026-10-11/n15c-pilates-2021/c15-pilates-pediatrico2021-core-json.evidencia.json","anchors":["33709771","cer-2020-0108"],"role":"PR136complementoCORE metadata/acesso, nao texto2021/guia operacional ou nova replicacao."},
+    {"record":"2026-10-11/n15c-respiracao-oncologia/c15-respiracao-oncologia2026-html.evidencia.json","textEncoding":"cp1252","anchors":["pursed lip","25 minutes","77 participants"],"role":"PR137original completo pacote respiracao+aconselhamento, dose ensino nao pratica diaria."},
+    {"record":"2026-10-11/n15c-respiracao-oncologia/c15-jcdr-licenca-html.evidencia.json","textEncoding":"cp1252","anchors":["NonCommercial","NoDerivatives"],"role":"Politica editorialNCND, nao grant externo de video; fatos/expressoes separados."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-ms-pilates2024-pdf.evidencia.json","anchors":["NCT05896995","brochures","30 seconds rest"],"role":"PR135programa fisico cuidadorMS/dose/fases/apoio/resultados proprios, nao brochura recebida."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-ms-pilates2024-registro-json.evidencia.json","anchors":["NCT05896995","2023-07-19"],"role":"PR135registro2023 nao mesma variante/comparador/elegibilidade deartigo2024."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-pdf.evidencia.json","anchors":["Tablo 1:","65","Pilates"],"role":"PR136tese152p/fotos eTable1raster efetivamente vistos/apoiofisioterapeuta/dose/resultados proprios, nao todoscomandos."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-html.evidencia.json","anchors":[],"role":"PR136HTMLregistro institucional, dc.rights deitem eLICENSEobjeto lidos emscriptJSONpublico, nao herdarfooterNCND/site."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2021-registro-json.evidencia.json","anchors":["NCT03729466","10 repetitions","45-60"],"role":"PR136dose planejada1set/10reps e70estimados, semLargeDocs/results, nao55replicados."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-kirmizigil-bio-pdf.evidencia.json","anchors":["2004","2019"],"role":"Credencial primaria institucional da orientadora, nao copiarcontatos/nascimento paraAPK."},
+    {"record":"2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-licenca-txt.evidencia.json","anchors":[],"role":"PR136licenca deposito1958B universidade, naoCCBYgrantcomercial terceiros."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-xml.evidencia.json","anchors":["961835","chair"],"role":"PR131originalpiloto antesdepois/manualcloudexterno, nao efeito gesto isolado."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-suplementos-zip.evidencia.json","anchors":[],"role":"PR131DataSheet3p/hashmembro nasdependencias, triagem/traducao/questionario nao workbook."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-xml.evidencia.json","anchors":["0941605","3 to 8"],"role":"PR132cuidador120/semcontrole/apoio/dose/clinicalTable3, nao paciente como cuidador."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-suplementos-zip.evidencia.json","anchors":[],"role":"PR132dois curriculosPDF/hashmembro cada1p vista, nao steps/end completos."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-xml.evidencia.json","anchors":["gnaf281","127","0.295"],"role":"PR134RCTcuidador/contrastes separados/efeitoTime nao interacao, roteiro externo."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-suplementos-zip.evidencia.json","anchors":[],"role":"PR134ZIPdentroZIPPDF5p/hashchain nasdependencias, CONSORT/sensibilidade nao manual."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-registro-json.evidencia.json","anchors":["NCT05242614","2022-02-16"],"role":"PR134snapshotregistro290planejados/semresults; escalas divergentes, nao invalidar artigo2025."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-core-json.evidencia.json","anchors":["35854347","PMC9295093"],"role":"MetadataprimarioprotocoloPR134 localizado porDOI, nao nova familia."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-xml.evidencia.json","anchors":["00876-8","45-min body scan","21-h training"],"role":"PR134planoTab1dosehomeporsemana/formacaofacilitador/monitoramento, nao manual/video."},
+    {"record":"2026-10-11/n15c-yoga-martin/c15-martin2014-preview-pdf.evidencia.json","anchors":["257","2014"],"role":"PR129 previaPDF1pagina vista, nao8paginas ou manual completo."},
+    {"record":"2026-10-11/n15c-yoga-martin/c15-martin2014-core-json.evidencia.json","anchors":["24769590"],"role":"PR129resumo, percepcoes nao ganhos fisicos objetivos."},
+    {"record":"2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-artigo-pdf.evidencia.json","anchors":["02594-9","Time × group","0.972"],"role":"PR130RCT93cuidador/Formacao/Table1temas/Table3efeitos; naoTimecomoInteracao oumanual recebido."},
+    {"record":"2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-protocolo-pdf.evidencia.json","anchors":["April 22, 2021","bi-weekly"],"role":"PR130plano2021/8p, Appendices1/2raster vistos nao passos publicados."},
+    {"record":"2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-registro-json.evidencia.json","anchors":["NCT04861610","Prot_SAP_000.pdf"],"role":"PR130registro2024UNKNOWN/240planejados/semresults, nao invalida resultado2025."},
+    {"record":"2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-xml.evidencia.json","anchors":["1534735418795301","physical therapist",".0541"],"role":"PR128JATSautoria/45minpratica/Table3cuidador antesdepois eTable4mistoNS, nao gesto isolado."},
+    {"record":"2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-suplementos-zip.evidencia.json","anchors":[],"role":"PR128ZIPoriginal/hash11membros; curriculoDOCX/hashmembro/OOXML nasdependencias, nao nomegenerico tornadoinstrucao."},
+    {"record":"2026-10-11/n15c-caminhada-social/c15-hirano2020-html.evidencia.json","anchors":["2001108","9204"],"role":"PR125original2020 dose caminhada/resultado comparativoNS, nao beneficofadiga2011 transplantado."},
+    {"record":"2026-10-11/n15c-caminhada-social/c15-hirano2011-core-json.evidencia.json","anchors":["20850878"],"role":"PR125resumo2011, nao fullarticle/segunda replicacao confirmada."},
+    {"record":"2026-10-11/n15c-caminhada-social/c15-gogrow2023-core-json.evidencia.json","anchors":["36916022","gnad028"],"role":"PR126CORE, fullXML500vazio nao artigo; incentivo nao treino profissional recebido."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-xml.evidencia.json","anchors":["cam4.5514","p = 0.13"],"role":"PR127resultado piloto67duplas/CYvsDYvsUC; mentalQolNS, scriptnao recebido."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-core-json.evidencia.json","anchors":["36468605","PMC10067051"],"role":"PR127metadados nao novoestudo."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-registro-json.evidencia.json","anchors":["NCT02481349","2026-10-06"],"role":"PR127registro216actual/semresults/semLargeDocs; dosebracos nao substituir artigo2023."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-core-json.evidencia.json","anchors":["31367462","PMC6657047"],"role":"PR127metadadosprotocolo, nao nova replicacao."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-xml.evidencia.json","anchors":["0479-5","scripts and scenarios"],"role":"PR127protocolo75planejados/45-60conflito/autoriaSM emanualexterno, nao resultado."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-teleclinico2021-xml.evidencia.json","anchors":["11019111","Location and Setting"],"role":"Relatodecasos2021/apoio/espaco/conexao, nao ensaio independente ou mesma doseCY2023."},
+    {"record":"2026-10-11/n15c-yoga-individual/c15-yoga-mallaiah-bio-pdf.evidencia.json","anchors":["MSc, C-IAYT","master"],"role":"PR127credencialMallaiahinstitucionalPDF1vista, nao grantfoto/logo ou diploma detodos."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpm2023-antecedente-html.evidencia.json","anchors":["2303183","60 dyads"],"role":"PR121original preservado/Tables4-7substituidas, nao resultadosatuais."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpm2024-correcao-html.evidencia.json","anchors":["2401213","mistakenly inputted","30 samples in each group, not 75 samples"],"role":"PR121correcao oficial/With novosresultados, nao replicacao presumida."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2020-registro-json.evidencia.json","anchors":["NCT04106271","DPMCP"],"role":"PR119registro4semanas nao unir artigo8semanas/PR120."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-xml.evidencia.json","anchors":["27536130241240405","Weekly Class Themes","energy/fatigue"],"role":"PR122JATS/App1tecnicas nao manual/singlearm nao efeito causal."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-core-json.evidencia.json","anchors":["38545336","PMC10966998"],"role":"PR122metadados nao novoestudo."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-registro-json.evidencia.json","anchors":["NCT04512040","Prot_SAP_ICF_000.pdf"],"role":"PR122registrocomresults/15duplas,14fimtratamento/13desfechos nao mesmo denominador."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-protocolo-pdf.evidencia.json","anchors":["04512040","homework manual"],"role":"PR122protocolo15p/7vistas/liberacaomedica eao vivo; nao workbook/consentimentolicenca."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-yoga2007-xml.evidencia.json","anchors":["nem075","Jennifer Cameron","Appendix A"],"role":"PR123propriedades/autoria, finaisentregruposNS/passosnao recebidos."},
+    {"record":"2026-10-11/n15c-yoga-protocolos/c15-yoga-trt2026-registro-json.evidencia.json","anchors":["NCT03948100","2026-10-06"],"role":"PR124registro400estimados/recrutando difereartigoindexado222/fim2024."},
+    {"record":"2026-10-11/n15c-remoto-operacional/c15-remoto2026-protocolo-pdf.evidencia.json","anchors":["NCT04102514","physical therapist","3-5 METs"],"role":"PR118protocolo27p/8vistas, criterios/suporte/progressao nao resultado ou manual porgesto."},
+    {"record":"2026-10-11/n15c-remoto-operacional/c15-remoto2026-registro-json.evidencia.json","anchors":["NCT04102514","Caregiver Functional Fitness"],"role":"PR118registro hasResults true,198pessoas/99duplas/18m/eventos; nao artigo6m."},
+    {"record":"2026-10-11/n15c-remoto-operacional/c15-remoto2026-core-json.evidencia.json","anchors":["41774485","3974"],"role":"Resumo artigo2026/6m/beneficio aptidaocuidador eMVPANS, nao integral recebido."},
+    {"record":"2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json","anchors":["18-AG-4258","March 2018"],"role":"CI05guia auxiliar124p/6instrucoes/13vistas, edicao impressa2018, semequivalenciadoseRCT/ativos presumidos."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2020-pdf.evidencia.json","anchors":["17144966","Figure 3"],"role":"PR119piloto18p/Fig3indice recebido, nao librointeiro ouRCTbeneficiodocuidador."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2022-protocolo-pdf.evidencia.json","anchors":["12186","Caregivers"],"role":"PR120protocolo11p/cuidadorescomdor/30min3semana/ensino/livro/video previstos."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2026-core-json.evidencia.json","anchors":["41754066","14040553"],"role":"Resumo primario PR120, conferir comJATS nao substituir."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2026-xml.evidencia.json","anchors":["healthcare14040553","Caregiver Burden","0.137"],"role":"PR120JATSresultadoCCBY integral, Table4cuidador/T1NS/T2positivo distintoTable3idoso e conflitos preservados."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp2026-registro-json.evidencia.json","anchors":["NCT05056623","2021-09-24"],"role":"PR120registro2024semresults/postagem nao data submission; artigo2026resultado nao negado."},
+    {"record":"2026-10-11/n15c-dor-diadica/c15-dpmp-ng-credencial-html.evidencia.json","anchors":["registered physiotherapist","Shamay"],"role":"PR120credencial primariaNg/qualificacao nao autoria de cadagesto presumida."},
+    {"record":"2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-html.evidencia.json","anchors":["03881-5","rehabilitation doctor"],"role":"PR117 original HTML, ajuste medico/fadiga/apoio; passos individuais ausentes."},
+    {"record":"2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-pdf.evidencia.json","anchors":["03881-5","Table 3","0.032"],"role":"PR117 PDF13p/cinco vistas, Table1-4/fluxo/direitos, pintergrupos e conflitos preservados."},
+    {"record":"2026-10-11/n15c-manuais-fisicos/c15-gomes2021-rebec.evidencia.json","anchors":["4fvfn2p","115","230"],"role":"PR116 registro planejado230/1mes; nao resultado/roteiro/tese recebido."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start2013-rct-xml.evidencia.json","anchors":["10.1136/bmj.f6276","CC BY-NC 3.0"],"role":"PR115RCT integral com populacao/apoio/resultado de pacote e identificadores de suplementos."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start2014-nihr-relatorio-pdf.evidencia.json","anchors":["10.3310/hta18610","The START manual"],"role":"PR115 relatorio272p/manualLeaderAppendix3 recebido,58paginas vistas. Oito roteiros de relaxamento com fim/dose publicada; terapia nao integralmente revisada, versoes nao fundidas."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start2014-nihr-resumo-pdf.evidencia.json","anchors":["Scientific summary"],"role":"Resumo10p separado de relatorio/manual, nao nova familia."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-most2023-protocolo-html.evidencia.json","anchors":["seven 2-h group sessions","mindfulness practitioner"],"role":"PR110protocolo integral; DOCSPIRIT lido via auditJSON dependente, nao manual. Resultado2025web403local separado."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-benson-autismo2025-pdf.evidencia.json","anchors":["mouth or stomach","52.76"],"role":"PR111original10p/6vistas/Table1oito passos; erro respiracao/conflitoANCOVA mantidos."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-tan20-caregivers-core-json.evidencia.json","anchors":["31854193"],"role":"PR112resumo primario40cuidadores20min, nao guia/livro recebido."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-tan5-misto-core-json.evidencia.json","anchors":["25632044"],"role":"PR113resumo misto, nao efeito separado cuidador ou roteiro5min aprovado."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-yildirim-breath-music-core-json.evidencia.json","anchors":["39158927"],"role":"PR114resumo pacote100familiares,3sessoes/semana;30mincontrole nao dose da intervencao."},
+    {"record":"2026-10-08/n15c-benson-reavaliacao/c15-benson2022-original-html.evidencia.json","anchors":["Nurse Instructor, M.Sc.","28 in the control group","do not get up for a few minutes"],"role":"PR61 original integral, profissionais explicitas/roteiro6passos/dose15min2dia1mes/ensino+apoio. Nao substitui CD/folheto ou direito dos ativos."},
+    {"record":"2026-10-08/n15c-benson-reavaliacao/c15-direito-cientifico-lei9610-html.evidencia.json","anchors":["conteúdo científico ou técnico","tradução"],"role":"Lei9.610/1998oficial atualizada: distinguir fatos/metodos de copia/expressao/ativos, nao parecer juridico ou permissao comercial de traducao."},
+    {"record":"2026-10-08/n15c-cervical-curto/c15-cervical2026-registro-json.evidencia.json","anchors":["NCT06346249","therapeutic exercise"],"role":"PR109cadastro original,10sessoes/pacoteTENS+manual+exercicio,COMPLETED/hasResultsfalse. DOCXeditorial ligado pela dependencia verificavel, nao guia autoalongamento."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-montero2017-tese-canonica-pdf.evidencia.json","anchors":["36","ANEXOS"],"role":"PR85original362p recuperado; AnexoV instrucoes/doses e36tabelas raster vistas, nao nova familia. Conflitos/supervisao/NCND e locadores preservados."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-salamanca2025-tfg-pdf.evidencia.json","anchors":["Ismael","cuidador"],"role":"PR108TFG55p, folheto domiciliar2sequencias6gestos/doses presentePDF45-46raster;5/4casossemcontrole, autoriaestudante/tutor e limites mantidos."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-salamanca2025-registro-html.evidencia.json","anchors":["2025","López"],"role":"Registroprimario da edicao2025/hrefCCBYNCND4 verificado porparser, nao grantvideo/comercial."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-salamanca-tutor-perfil-html.evidencia.json","anchors":["Physiotherapy","2016"],"role":"Perfilinstitucional do tutor, nao diploma/habilitacao profissional do estudante ou coautoria de cada exercicio."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-salamanca-video-listagem-html.evidencia.json","anchors":["Video DIAS 1 Y 3.mov","Video DIAS 2 Y 4.mov"],"role":"Listagempublica efetiva de2MOV, somenteHTML; nenhum video baixado/assistido/licenciado."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-fedema2022-manual-pdf.evidencia.json","anchors":["Fisioterapeutas"],"role":"DuplicataexataPR71/236p/hash; nao nova familia ou ensaio/conteudo/ativo aprovado."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-fedema2022-pagina-html.evidencia.json","anchors":["2022"],"role":"PaginaoriginalFEDEMA2022, nova captura ligada aPR71existente; preservar historico."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-pdf.evidencia.json","anchors":["0.091","0.075"],"role":"Original6p/todas visuais:73iniciais70analisados, ensino/videos/manual, dose/continuidadeemcasa, sono inicialmenteNS apesarresumo. DOI comespacos noPDF, metadados conferidos."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-politica-html.evidencia.json","anchors":["2026","CC BY-NC-ND"],"role":"Politica primaria:OA somente2026+, anteriores direitos reservados. Nao transferir grant ao artigo2023 ou aos videos/manuais."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-estabilizacao2022-xml.evidencia.json","anchors":["10.3390/ijerph19106025"],"role":"24cuidadoras, mesmo programa meditacao+estabilizacao emmar/centro urbano; nao cada gesto isolado nem substituicao do contexto/hospedagem. Nomes5gestos nao roteiro completo."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-crea2026-artigo-html.evidencia.json","anchors":["1944170"],"role":"PR38 existente; protocolo2026, nao resultados. Suplementos declarados nao recebidos."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-crea2026-registro-json.evidencia.json","anchors":["NCT07388186"],"role":"Registro sem resultados, estado e datas antigos/estimados nao execucao confirmada."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-html.evidencia.json","anchors":["Cancer Patient Caregivers"],"role":"Origem primaria da versao editorial2025; sem DOI declarado, identificadorIZ separado do preprint."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-pdf.evidencia.json","anchors":["Cancer Patient Caregivers"],"role":"13p/7visuais; resultados, perdas substituidas, dose diaria nos metodos versus3/semana no resumo. Guia externo nao publicado."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-registro-json.evidencia.json","anchors":["NCT05988320"],"role":"Cadastro truncado, sabado versus domingo; nao reparar ciclo respiratorio porIA ou confundir apoio com pratica."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-edicao-html.evidencia.json","anchors":["2025"],"role":"Licenca da edicao12(2)2025 exata viahref/analisador estruturado, nao transferida do preprintCCBY4."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan-preprint-html.evidencia.json","anchors":["CC BY 4.0","practice guide"],"role":"Versao1CCBY4, mesma familia; guia citado nao anexado, dose diaria e apoio3/semana preservados."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-institucional-html.evidencia.json","anchors":[],"role":"Resumo institucional nao acrescenta cadencia ou licenca da figura2015."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-direitos-html.evidencia.json","anchors":[],"role":"Politica de direitos primaria; acesso gratuito nao grantcomercial de ilustracao/manual."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu2012-antecedente-pdf.evidencia.json","anchors":["Eight women"],"role":"7p/3visuais, seis fases em nao cuidadores versus oito posicoes2015; mesma autoria/10min nao mesmo protocolo."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-xml.evidencia.json","anchors":["10.2196/42861"],"role":"JATS valido: pacote meditar+acupressao, nao efeito isolado ou ampliacao silenciosa do escopo. Cinco suplementos anunciados, nao recebidos."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-gyyb-registro-json.evidencia.json","anchors":["NCT03853148"],"role":"Resultados postados sim; total50 inclui20cuidadores, naoRCT de50cuidadores. Versoes60vs30min preservadas."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-gyyb-protocolo-pdf.evidencia.json","anchors":["Supplemental ARM 4"],"role":"34p/7visuais, RN e braco4; folheto/video externos nao inclusos, regras de estudo nao dose de exercicio."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-pmc-html.evidencia.json","anchors":["30-minute seminar"],"role":"Original cuidadores profissionais, nao randomizado, manual em ambos os grupos. Ortopedista e apoio preservados."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-resumo-json.evidencia.json","anchors":["30130991"],"role":"RespostaLITE de metadados, nao resumo clinico; CORE separado."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-core-json.evidencia.json","anchors":["abstractText"],"role":"ResumoCORE original com totais divergentes; nao substituir metodo integral."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-relatorio-mhlw-pdf.evidencia.json","anchors":["10.1179/2042618614Y.0000000100"],"role":"Relatorio802p extraido; somente7paginas visuais. Fig1PDF237 confirma3s/1-2repeticoes, nao1-2sessoes/dia. Reimpressao nao novo ensaio ou grantcomercial."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-mhlw-termos-html.evidencia.json","anchors":["PDL1.0"],"role":"Termos primarios do depositante, nao licenca automaticaManey/Niigata."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-cn-html.evidencia.json","anchors":["10.13517/j.cnki.ccm.2023.08.001"],"role":"HTMLcomJSONpublico: resumo ingles/chines e autores recebidos por parser, nao apenas template.70cuidadores/12semanas sem dose porgesto no resumo."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-download-helper.evidencia.json","anchors":["function lsdy1"],"role":"Helperpublico lido como texto, nao executado; identifica consulta de disponibilidade do botaoPDF."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-acesso-pdf.evidencia.json","anchors":["pdfUrl"],"role":"ConsultaPOSTpublicada sem conta: disponibilidade status1, nao pagamento ou licenca. Recibo distinguePOST dosGET."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-vr2025-xml.evidencia.json","anchors":["10.3390/jfmk10030353"],"role":"Coorte10cuidadores/6sessoes, profissional e hardwareK-HERO inseparaveis; estresse/dorNS, limites de IC/p e relato de perdas divergente."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-qigong-registro-json.evidencia.json","anchors":["NCT04019301"],"role":"PR32 existente, cadastroUNKNOWN semresultados; datas2022estimadas nao completado comprovado."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-qigong-protocolo-pdf.evidencia.json","anchors":["Eight Brocade"],"role":"PDFreal26p apesarcabecalho21; tabela60min versus75min, apoio1:1 e material/video nao manual completo."},
+    {"record":"2026-10-08/n15c-pediatrico/c15-pediatrico-uem-pagina.evidencia.json","anchors":["24358","Fisioterapeuta","Creative Commons Attribution 4.0"],"role":"Pagina original: autoria profissional e CC BY4 explicitas, nao NC de indice secundario."},
+    {"record":"2026-10-08/n15c-pediatrico/c15-pediatrico-uem-pdf.evidencia.json","anchors":["17","30 seconds","63","Creative Commons Attribution License"],"role":"Original5p integralmente visualizado. Mudanca aguda antes/depois semcontrole;17posturas citadas, nao roteiro ou imagens. BancoWells avalia, nao exercicio; horario compativel com cuidado, nao exclusao porhospital."},
+    {"record":"2026-10-08/n15c-gary-insuficiencia/c15-gary-erratum-json.evidencia.json","anchors":["29708007","funding statement was missing"],"role":"Resumo da correcao primaria recebido: financiamento, nao nova dose clinica ou artigo operacional corrigido local."},
+    {"record":"2026-10-08/n15c-gary-insuficiencia/c15-gary-registro-json.evidencia.json","anchors":["NCT01188070","354","individually-prescribed"],"role":"Registro maior duaspopulacoes semdocumento/resultados;354 nao127HF, manter avaliacao/plano individual/psicoeducacao e nao importar criterio exclusivo demencia paraHF."},
+    {"record":"2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pagina.evidencia.json","anchors":["10.20793/tairyokukenkyu.113.0_1","2015"],"role":"Origem J-STAGE e acesso gratis, nao grantcomercial ou manual adicional."},
+    {"record":"2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pdf.evidencia.json","anchors":["Forty subjects","Figure 2","0.964"],"role":"Original8p com oito posicoes e ensino profissional;10min globais nao dose porpose, resultados porsexo/negativos mantidos."},
+    {"record":"2026-10-08/n15c-alongamento-va/c15-va-cares-registro-json.evidencia.json","anchors":["NCT02106065","Zarit Burden Inventory"],"role":"Resultados primarios recebidos32inscritos16concluintes; semtestecomparativo nao beneficio significativo, eventos nao zero risco."},
+    {"record":"2026-10-08/n15c-alongamento-va/c15-va-cares-protocolo-pdf.evidencia.json","anchors":["Appendix 4","progressive muscle relaxation","90-minute"],"role":"Plano20p sem anexo operacional citado;15/20min de ensino nao dose em casa. Apoio/profissional e cointervencoes mantidos."},
+    {"record":"2026-10-08/n15c-moreira-cuidadores/c15-moreira-granada-handle.evidencia.json","anchors":["54876","NoComercial-SinDerivadas"],"role":"Registro tese original, defesa2018/edicao2019 eNCND3ES; nao liberar adaptacao dos ativos ou duplicar ensaio do artigo2018."},
+    {"record":"2026-10-08/n15c-moreira-cuidadores/c15-moreira-granada-pdf.evidencia.json","anchors":["tres fisioterapeutas","33 cuidadores","60 minutos"],"role":"Tese134p, sete paginas visuais inclconsentimento raster/manualexterno; cinesiterapia cuidador60min separada paciente45min, estresse/lombar sem prova de melhora."},
+    {"record":"2026-10-08/n15c-kirtan-original/c15-kirtan-lavretsky-html.evidencia.json","anchors":["gps.3790","Helen Lavretsky, MD, MS","11 minutes"],"role":"Ensaio piloto original:45randomizados39concluintes, clinica/psicoeducacao/CD e apoio mantidos; respostaHAMDfavoravel distinta de mudanca mediaP0.06, sem promessa antiaging."},
+    {"record":"2026-10-08/n15c-kirtan-original/c15-kirtan-arpf-instrucoes-pdf.evidencia.json","anchors":["all rights reserved","To end","four minutes"],"role":"Folha original1p/visualmente inspecionada: postura/dedos/fases/encerramento publicados;12min de canto antes retorno, identidade comCD2011/11+1min do ensaio nao confirmada."},
+    {"record":"2026-10-08/n15c-kirtan-original/c15-kirtan-lavretsky-registro-json.evidencia.json","anchors":["NCT01537679","Helen Lavretsky","12 minutes"],"role":"Registro ensino/supervisao inicial por medica, sem documento/resultados;40inscritos/HAMD6-15 versus45randomizados/HAMD5-17 artigo preservados sem fusao."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-revieew-registro-json.evidencia.json","anchors":["NCT05050526","real-time videoconference"],"role":"Registro primario PR68 confirma apoio/dose/populacao, semdocumento/video; links de artigos ja recebidos nao manual novo. Co intervencao do resultado publicado preservada apesar de descricao resumida do controle."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-dbe2026-resumo-json.evidencia.json","anchors":["41704158","2628830"],"role":"Resumo primario39maes cuidadoras: resultados intragrupo vsVNSativo, HRV/dor nao significativos; nao artigo integral ou efeito comprovado vsinatividade."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-dbe2026-registro-json.evidencia.json","anchors":["NCT06970769","semi-sitting"],"role":"Registroensino/respiracao emcasa para maes18-50; sem minutos/ritmo/documento completo, registro retrospectivo. NaoVNSautonomo ou rotina de todoscuidadores."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-caplin-2021-html.evidencia.json","anchors":["NCT01993082","heart rate reserve","Society for Affective Science"],"role":"FAST corpo recebido/revalidado: academia nao exclui; CPET/apoio/plano individual, extremos de progressao nao tabela completa. Analise secundaria, direitos ausentes."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-registro-json.evidencia.json","anchors":["NCT01993082","fitness coach"],"role":"Registro primario sem documento/resultados; diferencas com artigo IMC/tabaco/quimioterapia preservadas, nao apagar resultados recebidos do artigo."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-osf-projeto-json.evidencia.json","anchors":["FAST Study -EMA project","node_license"],"role":"Projeto de dados EMA, licenca null nao comercial presumida."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-osf-arquivos-json.evidencia.json","anchors":["Data and syntax for main analyses"],"role":"Listagem raiz uma pasta, URL real consultada sem download de dados individuais."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-osf-pasta-json.evidencia.json","anchors":["Syntax for OSF.docx","Data for main analyses for paper.xlsx"],"role":"Listagem completa da pasta: dois arquivos de analise, nao manual encontrado; dados/sintaxe nao baixados ou executados."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-fast-osf-filhos-json.evidencia.json","anchors":[],"role":"Zero componentes filhos publicados na listagem recebida; nao ausencia global em outros repositorios."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-caser2018-pagina.evidencia.json","anchors":["09/07/2018","Ejercicio físico como estrategia terapéutica"],"role":"Origem editorial/versao/linkPDF conferido separadamente no inventario de hrefs, nao roteiro ou permissao comercial."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-caser2018-pdf.evidencia.json","anchors":["Doctor en Fisioterapia","36 sesiones","62 cuidadoras"],"role":"24paginas/4visuais; autoria clinica e resultados, fases/idade distintos de2020; nao movimentos completos ou ensaio independente."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-usc-cuidate-capitulo-pdf.evidencia.json","anchors":["Attribution 4.0","cualitativo","60 personas"],"role":"38paginas/3visuais; capitulo originalCCBY4, relatos/apoio nao protocolo respiratorio publicado ou eficacia clinica controlada."},
+    {"record":"2026-10-08/n15c-originais-caser/c15-caser-aviso-legal.evidencia.json","anchors":["Condiciones de Uso","Privacidad"],"role":"Termos primarios recebidos; grant comercial do artigo nao identificado, nao inventar proibicao expressa ou impedir referencia a fatos."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-niva-faixas-pagina.evidencia.json","anchors":["2016","Flyer"],"role":"PaginaNIVA publica linkfolheto; nao licenca comercial ou identidade de versao do ensaio2014."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-niva-faixas-cartaz-pdf.evidencia.json","anchors":[],"role":"Folheto1p/hash/visualmente inspecionado: quatro gestos/instrucoes, nao substituir doseWORK/HOME ou garantir versao/direitos dos cartazes citados."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-revieew-aderencia2026-html.evidencia.json","anchors":["10449","105 eldercare"],"role":"Analise exploratoria da mesma familia: turnos/apoio/experiencia e criterio de aderencia, nao corte automatico de dose ou contraindicacao por medicacao."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-revieew-tese-portal.evidencia.json","anchors":["68569"],"role":"Registro institucional da tese, nao PDF original recebido ou concedido."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-europepmc.evidencia.json","anchors":["40561221","P = 0.140"],"role":"Resumo/metadados primarios1ano, nao artigo integral; efeito nulo dor media e secundario negativo documentados."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-crea2026-suplementos-pagina.evidencia.json","anchors":["1944170"],"role":"HTML eJSONNuxt publicado como dados; quatro suplementos listados nao PDFs recebidos."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-pmr-paliativo2025-xml.evidencia.json","anchors":["Relaxation CD","28 sessions"],"role":"PMR28sessoes para proprio cuidador, entrega por enfermeira; NCND/audio externos nao licenciados."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-va-walking-facilitator-pdf.evidencia.json","anchors":[],"role":"Manual39p/hash/duas paginas visuais: cuidador/apoio e terceiros, nao ensaio do modulo."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-va-walking-pagina.evidencia.json","anchors":["Walking"],"role":"Origem institucional e links reais aos quatroPDFs; acesso nao concedido comercial."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-va-walking-workbook-pdf.evidencia.json","anchors":[],"role":"Workbook32p/hash/duas paginas visuais; preparo/durante/retorno gerais, nao dose cuidador clinica."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-va-walking-mindful-pdf.evidencia.json","anchors":[],"role":"Guia9p/hash/duas paginas visuais; passos/retorno caminhada consciente sem eficacia cuidador especifica demonstrada."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-va-walking-caregiver-pdf.evidencia.json","anchors":[],"role":"Guia10p/hash/tres paginas visuais;13tips nao13exercicios, dupla/apoio/tempo/cognicao preservados."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-jakobsen2014-protocolo-html.evidencia.json","anchors":["1471-2474-15-119"],"role":"Protocolo trabalhadoras hospitalares, WORK/HOME distintos;3cartazes externos404."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-resultados-html.evidencia.json","anchors":["3479"],"role":"Resultado: trabalho supervisionado superior casa; aderencia distinta da dose planejada."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-tronco-xml.evidencia.json","anchors":["902896"],"role":"Analise secundaria da mesma familia, nao ensaio independente ou cartaz recebido."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-pmr-enfermeiros2022-xml.evidencia.json","anchors":["compact disc","Master"],"role":"PMR46enfermeiros, entrega qualificada;13grupos sem dose individual, tabela terceiroNC/audioCD ausentes."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-heartfocused2021-metadados.evidencia.json","anchors":["33639543","worsened"],"role":"Resumo piloto negativo: sobrecarga/ansiedade, nao rotina original."},
+    {"record":"2026-10-07/n15c-teses-seguimento/c15-benson478-alzheimer-registro.evidencia.json","anchors":["NCT06997523","COMPLETED"],"role":"Registro80inscritos concluido sem resultados no corpo; instrucao parcial nao eficacia."},
+    {"record":"2026-10-07/n15c-revieew-suplementos/c15-revieew-suplementos-pagina.evidencia.json","anchors":["Supplementary Information","One single physical therapist"],"role":"Lista editorial de quatro anexos e direitos/autoria da entrega, nao videos prometidos."},
+    {"record":"2026-10-07/n15c-revieew-suplementos/c15-revieew-si1-tif.evidencia.json","anchors":[],"role":"TIFF cientifico verificado/inspecionado: configuracao de supervisao, nao video."},
+    {"record":"2026-10-07/n15c-revieew-suplementos/c15-revieew-si2-tif.evidencia.json","anchors":[],"role":"TIFF cientifico nove movimentos/tres variantes, inspecionado; squat3 conserva pausa3s+faixa2.6kg, omissao anterior corrigida."},
+    {"record":"2026-10-07/n15c-revieew-suplementos/c15-revieew-si3-tif.evidencia.json","anchors":[],"role":"TIFF cientifico progressao12semanas inspecionado, confirmaFig4/dose previamente registrada."},
+    {"record":"2026-10-07/n15c-revieew-suplementos/c15-revieew-si4-docx.evidencia.json","anchors":[],"role":"Tabela de tamanhos de efeito lida por celulas em OOXML limitado, nao roteiro ou tabela visualmente renderizada; erro de legenda preservado."},
+    {"record":"2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json","anchors":["NCT06466239","specialist physiotherapist"],"role":"Registro primario ensaio: dose estatico, ensinoPNF e divergencias de datas/texto preservadas."},
+    {"record":"2026-10-07/n15c-alongamento-profissional/c15-atac-qualificacao-trial-json.evidencia.json","anchors":["MSc Physiotherapist"],"role":"Titulo profissional explicito de AmineAtac em ensaio distinto; somente credencial, nao protocoloCOPD do cuidador."},
+    {"record":"2026-10-07/n15c-alongamento-profissional/c15-atac-perfil-institucional-html.evidencia.json","anchors":["Fizyoterapi"],"role":"Perfil institucional vincula identidade/area da autora, sem registro clinico/diploma presumidos."},
+    {"record":"2026-10-07/n15c-dancecare/c15-dancecare-entregaveis-html.evidencia.json","anchors":["handbook"],"role":"Entregaveis oficiais recebidos, nao concessao comercial dos manuais/videos."},
+    {"record":"2026-10-07/n15c-dancecare/c15-dancecare-handbook-pdf.evidencia.json","anchors":[],"role":"Manual66p recebido/hash, dez paginas visuais; sessao1 e autoria registrados, relatos nao resultado clinico controlado."},
+    {"record":"2026-10-07/n15c-dancecare/c15-dancecare-guidelines-pdf.evidencia.json","anchors":[],"role":"Guidelines36p/hash/tres paginas visuais, versao2025 separada do manual2026; direitos pendentes."},
+    {"record":"2026-10-07/n15c-dancecare/c15-dancecare-profissionais-html.evidencia.json","anchors":["Flavia"],"role":"Equipe oficial atribui qualificacao psicologia/DMT a colaboradora do manual, nao diploma/registro verificados."},
+    {"record":"2026-10-07/n15c-dancecare/c15-dancecare-protocolo-html.evidencia.json","anchors":["1770820","study protocol"],"role":"Protocolo/planejamento e continuidade em casa, nao resultados clinicos ou direitos de ativos externos."},
+    {"record":"2026-10-07/n15c-ambiente-compativel/c15-montero2020-xml.evidencia.json","anchors":["physiotherapy room","Further details"],"role":"JATS integral recebido: centro deixa de excluir, resultados do programa nao roteiro individual; documento operacional externo ausente."},
+    {"record":"2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-html.evidencia.json","anchors":["0277009","CC0"],"role":"Artigo primario recebido; vinculos aos suplementos publicados, nao gravacao/cartilha recebidas."},
+    {"record":"2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-pdf.evidencia.json","anchors":["return demonstrate","John Schumacher"],"role":"PDF14p/cinco paginas visuais, autoria e ensaio50cuidadores; sem diferenca estresse/depressao/ansiedade, biomarcadores exploratorios sem promessa universal."},
+    {"record":"2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-s2-docx.evidencia.json","anchors":[],"role":"S1File protocolo2018 lido OOXML seguro, sem OLE; AppendixA oito entradas/sete praticas, preparacao/execucao/dose e ausentes documentados, nao gravacao20min/cartilha."},
+    {"record":"2026-10-07/n15c-nih-yoga/c15-plos-licencas-politica.evidencia.json","anchors":["commercial purposes","CC0"],"role":"Politica editorial recebida cobre obras publicadas e reuso comercial; nao transfere direitos a audio/folheto ausentes."},
+    {"record":"2026-10-07/n15c-nih-yoga/c15-caremetoo2020-xml.evidencia.json","anchors":["licenses/by/4.0","At-Home Testing Interview Guide"],"role":"JATS independente recebido; familiares/profissionais e usabilidade, nao dose/exercicio validado nem videos publicados licenciados."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-roshid2024-protocolo-xml.evidencia.json","anchors":["licenses/by/4.0","trained nurse"],"role":"Protocolo JATS recebido; ensino/suporte/poblacao e direitos do artigo, nao gravacoes ou resultados2026."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-roshid2024-protocolo-pdf.evidencia.json","anchors":["TABLE 1","physiotherapist"],"role":"PDF8p quatro paginas visuais; seis meses/modulos mensais, sem passos reais/dose individual das gravacoes."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-okamura-autoria-institucional.evidencia.json","textEncoding":"cp932","anchors":["Hitoshi Okamura, MD"],"role":"Coautor MD/PhD explicito; fonte declara XML/meta Shift_JIS e leituraWindows cp932 conferida sem ignorar erros; nao identidade do instrutor ou registro independente."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-familiar-pdf.evidencia.json","anchors":["8 gentle stretches","Himalayan Yoga"],"role":"Guia36p proprio cuidador familiar; nove paginas visuais, oito registros3-5repeticoes/~10minserie e cuidados; direitos terceiros nao transferidos."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-profissional-pdf.evidencia.json","anchors":["Professional Caregivers","Himalayan Yoga"],"role":"Guia36p proprio cuidador profissional; nove paginas visuais, mesma sequencia com diferencas de contexto/aconselhamento, nao evidencia de ensaio domiciliar universal."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-pagina.evidencia.json","anchors":["Self-Care Videos"],"role":"Pagina institucional recebida, PDFs/videos observados; gratuito nao permissao de adaptacao comercial, nenhum video baixado."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-rutgers-fogerite-credencial.evidencia.json","anchors":["certified teacher","Himalayan Tradition"],"role":"Credencial institucional de coautora PhD/MT/CYT confirmada; nao presumir fisioterapeuta ou direitos do manual."},
+    {"record":"2026-10-07/n15c-sequencias/c15-pouraboli2019-xml.evidencia.json","anchors":["20 minutes","educational pamphlet"],"role":"JATS120pais cuidadores, CC BY3 e entrega; CD/folheto/passos ausentes e ambiente domiciliar da pratica nao explicito."},
+    {"record":"2026-10-07/n15c-sequencias/c15-umadevi2013-xml.evidencia.json","anchors":["psychiatric nursing","licenses/by-nc-sa/3.0"],"role":"JATS com instrutora qualificada e43concluintes; NC-SA impede caminho comercial gratuito, Appendix1imagem nao recebida/inspecionada."},
+    {"record":"2026-10-07/n15c-sequencias/c15-transfe2024-xml.evidencia.json","anchors":["single study group","caregivers’ homes"],"role":"JATS TRANSFE antes-depois e entrega profissional em casa; multicomponente, nao efeito isolado de autoalongamento."},
+    {"record":"2026-10-07/n15c-sequencias/c15-transfe-osf-metadados.evidencia.json","anchors":["node_license"],"role":"API OSF publica e licenca null; acesso publico nao concessao comercial do protocolo."},
+    {"record":"2026-10-07/n15c-sequencias/c15-transfe-osf-arquivos.evidencia.json","anchors":["Protocolo-2.pdf"],"role":"Listagem completa somente armazenamento raiz, um arquivo/versao1/bytes/hash; nao busca completa em todos os projetos filhos."},
+    {"record":"2026-10-07/n15c-sequencias/c15-transfe-osf-protocolo-pdf.evidencia.json","anchors":["auto-estiramiento"],"role":"Protocolo73p recebido, hash/tamanho OSF conferem;15paginas visuais, oito grupos de slides nao20cartoes ou dose completa, livro externo/direitos e divergencias preservados."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-fedema-manual-2022.evidencia.json","anchors":["Fisioterapeutas","30-45"],"role":"Manual236p; capitulo do proprio cuidador,37registros e ambiguidades/doses ausentes; transferencia do paciente excluida."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-fedema-pagina-2022.evidencia.json","anchors":["2022"],"role":"Publicacao institucional da versao do manual, nao concessao comercial."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-fedema-avisos-legales.evidencia.json","anchors":["consentimiento expreso y por escrito"],"role":"Avisos efetivamente recebidos restringem reproducao e alteracao; nao licenca gratuita presumida."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-alzoc-respiracao-pdf.evidencia.json","anchors":["Breathing"],"role":"Folheto2p com quatro tecnicas, unidades distintas e requisitos ausentes; erro500 dos termos nao licencia."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-kirtan2012-xml.evidencia.json","anchors":["11-minute","meditation CD"],"role":"JATS integral piloto cinco duplas;11min/112sessoes, ensino inicial/CD semanal preservados; CD/folha nao recebidos."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-jacobson-hemodialise2024-pdf.evidencia.json","anchors":["Jacobson","Creative Commons"],"role":"Ensaio8p, resultado de fadiga e entrega profissional; nao publica passos/doses musculares efetivamente ensinados."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-madruga-tese-2021.evidencia.json","anchors":["ANEXO IV","entre 8 y 15"],"role":"Tese221p e AnexoIV recebidos: sessao/dose parcial, nao instructions individuais/fases completas9meses ou direitos transferidos de PR17."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-cuidate-manual-metadados.evidencia.json","anchors":["978-84-941710-1-7"],"role":"Registro institucional do livro profissional especifico; nao livro recebido nem permissao comercial."},
+    {"record":"2026-10-07/n15c-mcm/c15-mcm-artigo-html.evidencia.json","anchors":["1750034"],"role":"Artigo primario e metadados publicados recebidos; anuncio do manual D nao corresponde a um download encontrado, nao prova inexistencia global."},
+    {"record":"2026-10-07/n15c-mcm/c15-mcm-artigo-pdf.evidencia.json","anchors":["Mindfulness stretching","Supplementary material D"],"role":"Artigo13p e seis paginas visuais; topicos de exercicio nao instrucoes, validacao de conteudo nao ensaio clinico do manual."},
+    {"record":"2026-10-07/n15c-ufpb/c15-ufpb-dissertacao-2018.evidencia.json","anchors":["cuidadores"],"role":"Dissertacao108p com guia raster PDF68-83 visualizado integralmente; autoria profissional PDF70, conteudo/semantica nao eficacia clinica,12grupos de autocuidado documentados."},
+    {"record":"2026-10-07/n15c-ufpb/c15-ufpb-metadados-2018.evidencia.json","anchors":["creativecommons.org/licenses/by-nd/3.0/br/"],"role":"CC BY-ND3Brasil vinculada ao objeto2018, nao NC nem concessao de adaptacao/edicao2020."},
+    {"record":"2026-10-07/n15c-ufpb/c15-revieew-autoria-ehu.evidencia.json","anchors":["Fisioterapia"],"role":"Fonte institucional liga equipe criadora ReViEEW a docencia em Fisioterapia; nao credencial clinica individual ou uso domestico."},
+    {"record":"2026-10-07/n15c-ufpb/c15-revieew-professor-ehu.evidencia.json","anchors":["Graduado en Fisioterapia"],"role":"Releitura08/10 confirma graduacaoFisioterapia2018 declarada pela universidade, nao apenas area; diploma/registro independente nao verificados."},
+    {"record":"2026-10-07/n15c-programa/c15-revieew-protocolo-pdf.evidencia.json","anchors":["ReViEEW","unsupervised"],"role":"Protocolo11p recebido: Fig3 nove movimentos/tres niveis, Fig4 dose e Table1 somente dois exemplos semana7; fase laboral supervisionada e manutencao posterior separadas."},
+    {"record":"2026-10-07/n15c-programa/c15-revieew-resultados-pdf.evidencia.json","anchors":["130","Creative Commons"],"role":"Resultados12p recebidos: ensaio12semanas e cointervencao de manejo manual; CC BY4 do corpo nao licencia materiais externos ausentes nem prova autonomia domiciliar."},
+    {"record":"2026-10-07/n15c-conteudo/c15-guia-ms-2008.evidencia.json","anchors":["fim comercial","Dicas de exerc"],"role":"Guia64p: secao7.1 do proprio cuidador distinta da secao16 da pessoa cuidada; cinco grupos sem dose/ciclo completos e restricao comercial expressa."},
+    {"record":"2026-10-06/n15c-fechamento/c15-cbt-editora.evidencia.json","anchors":["10.25972/WUP-978-3-95826-227-0","Erratum"],"role":"Editora confirma livro/autores/licenca e erratum; nao corpo do erratum."},
+    {"record":"2026-10-06/n15c-fechamento/c15-cbt-livro.evidencia.json","anchors":["only by appropriately qualified","Tausch, 1993","20 minutes"],"role":"Livro integral366p, paginas/ancoras e8paginas visuais na leitura; entrega profissional e excecoes de terceiros mantidas."},
+    {"record":"2026-10-06/n15c-fechamento/c15-va-workbook-modulo1.evidencia.json","anchors":["Family Caregiver","10 seconds"],"role":"ModuloV3 recebido54p, nao workbook integral; dose pontual nao ciclo completo, fotos sem direitos demonstrados."},
+    {"record":"2026-10-06/n15c-fechamento/c15-pmr-indonesia-artigo.evidencia.json","anchors":["Attribution-ShareAlike"],"role":"Pagina editorial recebida com CC BY-SA4; nao modulo externo citado."},
+    {"record":"2026-10-06/n15c-fechamento/c15-pmr-indonesia-pdf.evidencia.json","anchors":["Ramadia","3-6"],"role":"Artigo9p com procedimento proprio do cuidador; sequencia12/14 e repeticao/ciclo nao resolvidos."},
+    {"record":"2026-10-05/programas-manuais-02/c15-myten-pdf.evidencia.json","anchors":["My Ten","Creative Commons Attribution 4.0"],"role":"Texto integral in press; Table1 individualizacao/suporte humano, nao programa por movimento."},
+    {"record":"2026-10-05/programas-manuais-02/c15-myten-s3.evidencia.json","anchors":[],"role":"Log primario OOXML lido; metas em branco e caminhada exemplo nao prescricao."},
+    {"record":"2026-10-05/programas-manuais-02/c15-myten-s4.evidencia.json","anchors":[],"role":"Formulario primario cita manual/worksheet nao publicados nos seis DOCX; inventario verifica todos."},
+    {"record":"2026-10-05/programas-manuais-02/c15-impacct-protocolo.evidencia.json","anchors":["Otago-Plus","Visual Health Information","illustrated booklet"],"role":"Protocolo humano17p, cartilha individual externa ausente; nao equivalente ao Otago base."},
+    {"record":"2026-10-05/programas-manuais-02/c15-benson-cancer-pdf.evidencia.json","anchors":["Attribution-NonCommercial"],"role":"Direitos NC explicitos no PDF, CD domiciliar nao recebido; nao selecionado."},
+    {"record":"2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json","anchors":["Attribution-NonCommercial-ShareAlike 4.0"],"role":"Direitos primarios NC-SA; nao licenca CC BY de indice secundario."},
+    {
+      "record": "2026-10-05/fechamento-dirigido/c15-revisao-burden-2025-xml.evidencia.json",
+      "anchors": ["Effects of physical exercise in reducing caregivers burden", "Creative Commons Attribution License"],
+      "role": "Revisao humana como indice de estudos primarios, nao programa operacional para o APK."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-viabilidade.evidencia.json",
+      "anchors": [
+        "three weeks",
+        "27 caregivers",
+        "Creative Commons Attribution (CC BY)",
+        "low intensity"
+      ],
+      "role": "Estudo humano de viabilidade/usabilidade/aceitabilidade CareFit; nao manual de exercicios ou ensaio de eficacia."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-yoga-artigo.evidencia.json",
+      "anchors": [
+        "eight weekly meetings",
+        "Exclusion criteria",
+        "Supplementary file1",
+        "Creative Commons Attribution 4.0 International License"
+      ],
+      "role": "Estudo brasileiro original e licenca; preserva supervisao e limitacoes dos resultados."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-yoga-suplemento.evidencia.json",
+      "anchors": [],
+      "role": "DOCX original: hash/bytes verificados e leitura OOXML integral documentada em leitura-yoga.json; nao tratado como HTML ou validacao visual."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2021-xml.evidencia.json",
+      "anchors": [
+        "Creative Commons Attribution License",
+        "videos hosted on YouTube"
+      ],
+      "role": "CareFit prototipo integral OA recebido; artigo de codesign, nao manual integral. AWS WAF anterior preservado."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2021-zip.evidencia.json",
+      "anchors": [],
+      "role": "Questionario de codesign e figuras, nao videos ou dose por movimento."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-qigong-protocolo-xml.evidencia.json",
+      "anchors": [
+        "one-to-one video call",
+        "Eight Brocades"
+      ],
+      "role": "Protocolo do proprio cuidador, videos/live/seguimento obrigatorios preservados; nao resultados."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-qigong-zip.evidencia.json",
+      "anchors": [],
+      "role": "ZIP real com tabela grafica e DOCX de EMFs; duas imagens do manual de autocuidado do controle inspecionadas, nao manual qigong."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-cuidador-protocolo-2016-xml.evidencia.json",
+      "anchors": [
+        "12 steps",
+        "Tai Chi teacher"
+      ],
+      "role": "Dupla praticante em casa com professor/assistente; manual e video citados mas nao recebidos."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-dor-xml.evidencia.json",
+      "anchors": [
+        "no longer introduced floor postures"
+      ],
+      "role": "MY-Skills presencial/online nao intercambiaveis; professor/assistente mantidos."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-online-xml.evidencia.json",
+      "anchors": [
+        "Creative Commons Attribution License"
+      ],
+      "role": "MY-Skills qualitativo de aceitabilidade, nao programa autonomo completo."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-yoga-online-zip.evidencia.json",
+      "anchors": [],
+      "role": "ZIP real, membro DOCX com zero bytes; nao manual utilizavel, corpo preservado sem retry."
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-alzheimer-xml.evidencia.json",
+      "anchors": [
+        "trained yoga therapist"
+      ],
+      "role": "Yoga do paciente com AD/MCI; nao prova programa proprio do cuidador pelo titulo."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-dupla-cancer-2026-xml.evidencia.json",
+      "anchors": [
+        "Qualified Exercise Professional"
+      ],
+      "role": "Dupla praticante com profissional; dose geral nao instrucao por movimento."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-dupla-cancer-anexo.evidencia.json",
+      "anchors": [],
+      "role": "ZIP aninhado com PDF estatistico de duas paginas, nao instrucao."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-hacer-2026-xml.evidencia.json",
+      "anchors": [
+        "private YouTube link"
+      ],
+      "role": "HACER remoto com instrutor, dupla e gravacoes privadas; nao autonomia."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-prieto-protocolo-deposito.evidencia.json",
+      "anchors": [
+        "physical trainer"
+      ],
+      "role": "Protocolo domestico original agora recebido em deposito OA, sem manual por movimento."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2025-xml.evidencia.json",
+      "anchors": [
+        "COREQ"
+      ],
+      "role": "CareFit atualizado; 8 semanas de estudo nao ciclo de treino, anexos nao videos."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-forca-relaxamento-2026-xml.evidencia.json",
+      "anchors": [
+        "CREA facilities"
+      ],
+      "role": "Forca presencial em centro; nao programa domestico. Protocolo sem resultados."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-revisao-comportamental-2026-xml.evidencia.json",
+      "anchors": [
+        "narrative review"
+      ],
+      "role": "Revisao para localizar primarios, nao instrucoes."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-farran-2016-xml.evidencia.json",
+      "anchors": [
+        "individually tailored"
+      ],
+      "role": "EPAI com intervencionista e escolhas individuais, nao rotina integral."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-enrich-protocolo-2011-xml.evidencia.json",
+      "anchors": [
+        "Gymstick"
+      ],
+      "role": "Aulas profissionais e kit especifico; manual citado nao publicado."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+      "anchors": [
+        "18 and 40"
+      ],
+      "role": "Aplicacao aguda em profissionais de reabilitacao jovens; nao rotina domestica/idosa universal."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json",
+      "anchors": [
+        "original publication has also been updated"
+      ],
+      "role": "Correcao de introducao e referencias, nao dose ou entrega."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-doenca-avancada-2015-xml.evidencia.json",
+      "anchors": [
+        "No patient completed",
+        "exercise manual",
+        "caregiver"
+      ],
+      "role": "Programa planejado nao completado, manual nao publicado."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-site-autores.evidencia.json",
+      "anchors": [
+        "CareFit",
+        "University of Strathclyde"
+      ],
+      "role": "Pagina oficial nao entrega direitos/manual dos videos."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ela-autocuidado-2023-xml.evidencia.json",
+      "anchors": [
+        "informative booklet",
+        "physiotherapist"
+      ],
+      "role": "Protocolo especifico cuidadores ELA, nao resultados nem licenca dos ativos por presuncao."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-tese-original-pdf.evidencia.json",
+      "anchors": [
+        "CC BY-ND 4.0",
+        "AGACHAMENTO",
+        "cuidadores"
+      ],
+      "role": "Cartilha efetivamente recebida Appendix B, doses/desenhos e ND especifica; nao pacote aprovado."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-handle53566.evidencia.json",
+      "anchors": [
+        "Acesso Aberto"
+      ],
+      "role": "Metadados do repositório, nao licenca comercial da tese inteira."
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-tese-bitstreams.evidencia.json",
+      "anchors": [
+        "12131216"
+      ],
+      "role": "Tamanho/URL confirmados antes do primeiro PDF atual."
+    }
+  ],
+  "dependencies": [
+    "2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+    "2026-10-13/n15c-lacunas-dirigidas/triagem-web.json",
+    "2026-10-13/n15c-lacunas-dirigidas/cotejo-g4.json",
+    "2026-10-13/n15c-lacunas-dirigidas/inventario-lacunas.json",
+    "2026-10-12/cg05-pilates/pacote-factual.json",
+    "2026-10-12/cg05-pilates/inventario.json",
+    "2026-10-12/cg05-pilates/triagem-web.json",
+    "2026-10-12/cg04-revieew/pacote-factual.json",
+    "2026-10-12/cg04-revieew/inventario.json",
+    "2026-10-12/cg04-revieew/triagem-web.json",
+    "2026-10-12/cg03-start/pacote-factual.json",
+    "2026-10-12/cg03-start/inventario.json",
+    "2026-10-12/cg03-start/triagem-web.json",
+    "2026-10-12/cg02-benson/pacote-factual.json",
+    "2026-10-12/cg02-benson/triagem-web.json",
+    "2026-10-12/cg01-estatico/pacote-factual.json",
+    "2026-10-12/cg01-estatico/leitura-complementar.json",
+    "2026-10-12/cg01-estatico/inventario.json",
+    "2026-10-12/cg01-estatico/triagem-web.json",
+    "2026-10-12/cg02-benson/leitura-complementar.json",
+    "2026-10-12/cg02-benson/inventario.json",
+    "2026-10-12/n15c-catalogo-modular/verificacoes.json",
+    "2026-10-11/n15c-autocuidado-roteiros/leitura-fontes.json",
+    "2026-10-11/n15c-autocuidado-roteiros/inventario.json",
+    "2026-10-11/n15c-autocuidado-roteiros/mapa-apk-campos.json",
+    "2026-10-11/n15c-autocuidado-roteiros/triagem-web.json",
+    "2026-10-11/n15c-pilates-2021/leitura-fontes.json",
+    "2026-10-11/n15c-respiracao-oncologia/leitura-fontes.json",
+    "2026-10-11/n15c-respiracao-oncologia/inventario.json",
+    "2026-10-11/n15c-respiracao-oncologia/mapa-apk-campos.json",
+    "2026-10-11/n15c-respiracao-oncologia/triagem-web.json",
+    "2026-10-11/n15c-pilates-cuidadores/leitura-fontes.json",
+    "2026-10-11/n15c-pilates-cuidadores/inventario.json",
+    "2026-10-11/n15c-pilates-cuidadores/mapa-apk-campos.json",
+    "2026-10-11/n15c-curriculos-adicionais/leitura-fontes.json",
+    "2026-10-11/n15c-curriculos-adicionais/inventario.json",
+    "2026-10-11/n15c-curriculos-adicionais/leitura-suplementos.json",
+    "2026-10-11/n15c-yoga-martin/leitura-fontes.json",
+    "2026-10-11/n15c-mbi-fragilidade/leitura-fontes.json",
+    "2026-10-11/n15c-mbi-fragilidade/inventario.json",
+    "2026-10-11/n15c-yoga-grupo/leitura-fontes.json",
+    "2026-10-11/n15c-yoga-grupo/leitura-suplemento.json",
+    "2026-10-11/n15c-yoga-grupo/inventario.json",
+    "2026-10-11/n15c-caminhada-social/leitura-fontes.json",
+    "2026-10-11/n15c-caminhada-social/inventario.json",
+    "2026-10-11/n15c-yoga-individual/leitura-fontes.json",
+    "2026-10-11/n15c-yoga-individual/inventario.json",
+    "2026-10-11/n15c-dor-diadica/leitura-antecedentes.json",
+    "2026-10-11/n15c-yoga-protocolos/leitura-fontes.json",
+    "2026-10-11/n15c-yoga-protocolos/triagem-web.json",
+    "2026-10-11/n15c-yoga-protocolos/inventario.json",
+    "2026-10-11/n15c-dor-diadica/leitura-fontes.json",
+    "2026-10-11/n15c-dor-diadica/inventario.json",
+    "2026-10-11/n15c-remoto-operacional/leitura-fontes.json",
+    "2026-10-11/n15c-remoto-operacional/leitura-guia-nia.json",
+    "2026-10-11/n15c-remoto-operacional/inventario.json",
+    "2026-10-11/n15c-manuais-fisicos/triagem-web.json",
+    "2026-10-11/n15c-manuais-fisicos/leitura-fontes.json",
+    "2026-10-11/n15c-manuais-fisicos/inventario.json",
+    "2026-10-11/n15c-mindfulness-protocolos/triagem-web.json",
+    "2026-10-11/n15c-start-originais/leitura-fontes.json",
+    "2026-10-11/n15c-start-originais/inventario.json",
+    "2026-10-11/n15c-mindfulness-protocolos/leitura-fontes.json",
+    "2026-10-11/n15c-mindfulness-protocolos/inventario.json",
+    "2026-10-11/n15c-mindfulness-protocolos/leitura-doc.json",
+    "2026-10-08/n15c-benson-reavaliacao/leitura-fontes.json",
+    "2026-10-08/n15c-benson-reavaliacao/inventario.json",
+    "2026-10-08/n15c-cervical-curto/leitura-fontes.json",
+    "2026-10-08/n15c-cervical-curto/inventario.json",
+    "2026-10-08/n15c-guias-clinicos/leitura-fontes.json",
+    "2026-10-08/n15c-guias-clinicos/inventario.json",
+    "2026-10-08/n15c-guias-clinicos/indice-anexo-montero.json",
+    "2026-10-08/n15c-guias-clinicos/mapa-apk-campos.json",
+    "2026-10-08/n15c-guias-clinicos/triagem-web.json",
+    "2026-10-08/n15c-protocolos-operacionais/leitura-fontes.json",
+    "2026-10-08/n15c-protocolos-operacionais/inventario.json",
+    "2026-10-08/n15c-protocolos-operacionais/mapa-apk-campos.json",
+    "2026-10-08/n15c-protocolos-operacionais/triagem-web.json",
+    "2026-10-08/n15c-pediatrico/leitura-fontes.json",
+    "2026-10-08/n15c-pediatrico/inventario.json",
+    "2026-10-08/n15c-mentalizing/leitura-fontes.json",
+    "2026-10-08/n15c-originais-caser/revalidacao-estatico.json",
+    "2026-10-08/n15c-gary-insuficiencia/leitura-fontes.json",
+    "2026-10-08/n15c-gary-insuficiencia/inventario.json",
+    "2026-10-08/n15c-alongamento-va/leitura-fontes.json",
+    "2026-10-08/n15c-alongamento-va/inventario.json",
+    "2026-10-08/n15c-moreira-cuidadores/leitura-fontes.json",
+    "2026-10-08/n15c-moreira-cuidadores/inventario.json",
+    "2026-10-08/n15c-kirtan-original/leitura-fontes.json",
+    "2026-10-08/n15c-kirtan-original/inventario.json",
+    "2026-10-08/n15c-originais-caser/leitura-fontes.json",
+    "2026-10-08/n15c-originais-caser/inventario.json",
+    "2026-10-08/n15c-originais-caser/mapa-apk-campos.json",
+    "2026-10-08/n15c-originais-caser/triagem-web.json",
+    "2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+    "2026-10-07/n15c-teses-seguimento/inventario.json",
+    "2026-10-07/n15c-teses-seguimento/mapa-apk-campos.json",
+    "2026-10-07/n15c-teses-seguimento/triagem-web.json",
+    "2026-10-07/n15c-revieew-suplementos/leitura-anexos.json",
+    "2026-10-07/n15c-revieew-suplementos/inventario.json",
+    "2026-10-07/n15c-ambiente-compativel/decisao.json",
+    "2026-10-07/n15c-ambiente-compativel/revalidacao-n15.json",
+    "2026-10-07/n15c-ambiente-compativel/leitura-montero.json",
+    "2026-10-07/n15c-ambiente-compativel/triagem-web.json",
+    "2026-10-07/n15c-ambiente-compativel/inventario.json",
+    "2026-10-07/n15c-alongamento-profissional/inventario.json",
+    "2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+    "2026-10-07/n15c-dancecare/inventario.json",
+    "2026-10-07/n15c-dancecare/leitura-fontes.json",
+    "2026-10-07/n15c-nih-yoga/inventario.json",
+    "2026-10-07/n15c-nih-yoga/leitura-fontes.json",
+    "2026-10-07/n15c-nih-yoga/triagem-web.json",
+    "2026-10-07/n15c-domestico-digital/inventario.json",
+    "2026-10-07/n15c-domestico-digital/leitura-fontes.json",
+    "2026-10-07/n15c-domestico-digital/triagem-web.json",
+    "2026-10-07/n15c-sequencias/inventario.json",
+    "2026-10-07/n15c-sequencias/leitura-fontes.json",
+    "2026-10-07/n15c-sequencias/triagem-web.json",
+    "2026-10-07/n15c-fisico-relaxamento/inventario.json",
+    "2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json",
+    "2026-10-07/n15c-fisico-relaxamento/triagem-web.json",
+    "2026-10-07/n15c-mcm/inventario.json",
+    "2026-10-07/n15c-mcm/leitura-manual.json",
+    "2026-10-07/n15c-mcm/triagem-web.json",
+    "2026-10-07/n15c-ufpb/inventario.json",
+    "2026-10-07/n15c-ufpb/leitura-guia.json",
+    "2026-10-07/n15c-ufpb/triagem-web.json",
+    "2026-10-07/n15c-programa/inventario.json",
+    "2026-10-07/n15c-programa/leitura-programa.json",
+    "2026-10-07/n15c-conteudo/inventario.json",
+    "2026-10-07/n15c-conteudo/conteudo-documentado.json",
+    "2026-10-07/n15c-recorte/analise.json",
+    "2026-10-06/n15c-fechamento/inventario.json",
+    "2026-10-06/n15c-fechamento/verificacoes.json",
+    "2026-10-06/n15c-fechamento/leitura-manuais.json",
+    "2026-10-06/n15c-fechamento/mapa-apk-campos.json",
+    "2026-10-06/n15c-fechamento/triagem-web.json",
+    "2026-10-04/n15c-retomada/leitura-prieto-avaliacao.json",
+    "2026-10-04/n15c-retomada/leitura-yoga.json",
+    "2026-10-04/n15c-retomada/leitura-protocolo-2026.json",
+    "2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+    "2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+    "2026-10-04/n15c-retomada/leitura-novos-programas.json",
+    "2026-10-04/n15c-retomada/leitura-fechamento-dirigido.json",
+    "2026-10-04/n15c-retomada/leitura-cartilha-ela.json",
+    "2026-10-05/fechamento-dirigido/triagem-cuidador-2025.json",
+    "2026-10-05/programas-manuais-02/leitura-myten-impacct.json",
+    "2026-10-05/programas-manuais-02/inventario-manuais.json",
+    "2026-10-05/programas-manuais-02/mapa-apk-campos.json"
+  ],
+  "programmes": [
+    {
+      "id": "I15-CareFit",
+      "authors": "Egan et al.",
+      "year": 2022,
+      "doi": "10.3390/ijerph191912506",
+      "studyParticipants": 27,
+      "studyDurationWeeks": 3,
+      "programmeDurationWeeks": null,
+      "actor": "cuidador_praticando_para_si",
+      "environment": "casa",
+      "finding": "Viabilidade/usabilidade/aceitabilidade, componentes educativos, planeamento, cardio, forca/equilibrio e interrupcao do sedentarismo; videos feitos por colaboradores da University of Strathclyde.",
+      "articleLicense": "CC BY 4.0",
+      "videoLicense": null,
+      "manualObtained": false,
+      "exactExerciseDose": null,
+      "executableProgression": null,
+      "releaseApproved": false
+    }
+  ],
+  "operations": [
+    {
+      "id": "C15-O01",
+      "decision": "Requisito de sessoes pessoais compativeis com interrupcoes de cuidado; pausar/reagendar sem registrar como realizado. Decisao do produto, nao dose prescrita pelo artigo."
+    },
+    {
+      "id": "C15-O02",
+      "decision": "Tarefa habitual de cuidar pode ser autorregistrada como atividade, mas nao equivale a dose validada de treino ou cumprimento de programa."
+    },
+    {
+      "id": "C15-O03",
+      "decision": "Artigo aberto permite citacao/adaptacao com credito nos termos aplicaveis; nao aprova videos, app, marca ou manual ausente."
+    },
+    {
+      "id": "C15-O04",
+      "decision": "Manual de avaliacao, altura de cadeira/degrau de teste e sustentacao maxima de endurance nao preenchem instrucao ou dose faltantes de treino. Releitura Prieto com hash, sem recaptura."
+    }
+  ],
+  "accessLimits": [
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-ucl-start-raiz-html.evidencia.json","status":403,"contentUsable":false,"reason":"Corpo de erro/hash preservados, nao recursosSTART recebidos. Leituraweb primaria separada; nenhum formulario/SharePoint/login/audio."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-pilates-bmr-abstract-html.evidencia.json","status":403,"contentUsable":false,"reason":"Erro local/hash, nao artigoBMR. Resumo/direitos apenasweb; sem compra/login ou roteiro recebido."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-tese-canonica-html.evidencia.json","status":404,"contentUsable":false,"reason":"Pagina de verificacao de seguranca1551bytes comg-recaptcha, nao metadados/PDF e nao prova de inexistencia. URL.eus publicada pela APIHandle; usuario solicitado a obterPDFmanual, semresolver/contornar desafio."},
+    {"record":"2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-ombro-pdf.evidencia.json","status":404,"contentUsable":false,"reason":"URLlegada redireciona aoTrustnovo e404/0bytes/hashvazio, nao PDF. Rota/media nova realmente publicada recebida separadamente;nao retry da rota wp-content."},
+    {"record":"2026-10-12/cg05-pilates/cg05-cer2021-editor-html.evidencia.json","status":403,"contentUsable":false,"reason":"5732bytes erro/hash preservado;leitura editorial via pesquisaweb nao corpo localHTML;semretry/bypass."},
+    {"record":"2026-10-12/cg05-pilates/cg05-cer2021-editor-pdf.evidencia.json","status":403,"contentUsable":false,"reason":"5765bytes erro/hash preservado naoPDF;primeira representacao oficial distinta,nenhum corpo integral/media recebido;semretry/bypass."},
+    {"record":"2026-10-12/cg03-start/cg03-ucl-exercicios-html.evidencia.json","status":403,"contentUsable":false,"reason":"Erro403/6022bytes hash preservado, nao pagina local; leitura web primaria separada, semretry/formulario/SharePoint."},
+    {"record":"2026-10-12/cg03-start/cg03-ucl-signal-transcricao-docx.evidencia.json","status":200,"contentUsable":false,"reason":"HTTP200/63bytes naoDOCX, hash de retorno invalido nao transcricao. Semretry/extracaoOOXML."},
+    {"record":"2026-10-12/cg03-start/cg03-ucl-stretch-transcricao-docx.evidencia.json","status":200,"contentUsable":false,"reason":"HTTP200/63bytes naoDOCX, hash de retorno invalido nao transcricao. Semretry/extracaoOOXML."},
+    {"record":"2026-10-11/n15c-curriculos-adicionais/c15-yoga-hnc2024-xml.evidencia.json","status":500,"contentUsable":false,"reason":"PR1330bytes/hashvazio nao artigo. Semretry/bypass/contato; leadwebnao confirma beneficio proprio oumanual."},
+    {"record":"2026-10-11/n15c-manuais-fisicos/c15-gomes2026-artigo-html.evidencia.json","status":null,"contentUsable":false,"reason":"TLS verificado falhou, semcorpo/hash; nao retry/desativacaoTLS. Resumo primario indexado separado nao artigo integral."},
+    {"record":"2026-10-11/n15c-manuais-fisicos/c15-gomes2022-ufba-metadata.evidencia.json","status":null,"contentUsable":false,"reason":"TLS verificado falhou semcorpo/hash. Metadados primariosweb anunciam embargo22/05/2028; nao baixar bitstream/textoderivado/solicitarcopia/bypass."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start2014-suplemento-ucl-pdf.evidencia.json","status":404,"contentUsable":false,"reason":"404nao suplemento206p recebido. RelatorioNIHR independente com manual recebido, nao retry ou hashUCLinventado."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start2014-nihr-direitos-html.evidencia.json","status":200,"contentUsable":false,"reason":"CAPTCHA/Checking browser nao direitos. Permissao lida no proprioPDFNIHR sem contorno."},
+    {"record":"2026-10-11/n15c-start-originais/c15-start-ucl-recursos-html.evidencia.json","status":403,"contentUsable":false,"reason":"403nao recursos, sem retry/formularioMS/SharePoint/login/contato."},
+    {"record":"2026-10-11/n15c-mindfulness-protocolos/c15-most2025-original-html.evidencia.json","status":403,"contentUsable":false,"reason":"403/hash de erro nao resultadoJAMA recebido. Leitura primariaweb distinta nao hash inventado do artigo."},
+    {"record":"2026-10-08/n15c-guias-clinicos/c15-egito2024-meditacao-pmr-pdf.evidencia.json","status":null,"contentUsable":false,"reason":"DNSfalhouantesdecorpo/hash. Identidade clinica/guia nao confirmados; semretry."},
+    {"record":"2026-10-08/n15c-cervical-curto/c15-kamioka2011-xml.evidencia.json","status":500,"contentUsable":false,"reason":"XML500vazio nao artigo. Originalweb teve resultado negativo preservado; semretry."},
+    {"record":"2026-10-08/n15c-cervical-curto/c15-cervical2026-pubmed-html.evidencia.json","status":203,"contentUsable":false,"reason":"Resposta203local nao resumo original. Resumo primario apenasweb separado; nenhum desafio resolvido."},
+    {"record":"2026-10-08/n15c-cervical-curto/c15-cervical2026-suplemento-pdf.evidencia.json","status":200,"contentUsable":false,"offlineDocxRecoveryVerified":true,"reason":"PedidoPDF recebidoDOCX1042170B. Erro original do coletor preservado; arquivo efetivo verificadooffline boundedOOXML/analisador/inventario semnovaGET. Nao PDF nem guia completo deexercicio."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-crea2026-s1-pdf.evidencia.json","status":404,"contentUsable":false,"reason":"Rota derivada nao linkdownload integral publicado;404 nao prova de suplemento inexistente. Nao retry."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-dogan-sanko-curriculo-pdf.evidencia.json","status":null,"contentUsable":false,"reason":"TLS padrao falhou semcorpo/hash; credencial PDF primario apenas web distinguida. SemTLSinseguro."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-artigo-html.evidencia.json","status":202,"contentUsable":false,"reason":"202 nao artigo. JATS publico distinto recebido, nao corpo202 validado ou desafio contornado."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-app1-docx.evidencia.json","status":202,"contentUsable":false,"reason":"Rotaextfile derivada redirecionou artigo/202/vazio, naoDOCX ou ausencia global de suplemento."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-app3-docx.evidencia.json","status":202,"contentUsable":false,"reason":"Rotaextfile derivada redirecionou artigo/202/vazio, naoDOCX; nao repetir."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-pmc-app1-docx.evidencia.json","status":200,"contentUsable":false,"reason":"Linkpublicado retornaHTML1817bytes, naoDOCX; erroformato/hash preservados."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-sui2023-pmc-app3-docx.evidencia.json","status":200,"contentUsable":false,"reason":"Linkpublicado retornaHTML1817bytes, naoDOCX; semexecucao/contorno/retry."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-gyyb2024-xml.evidencia.json","status":500,"contentUsable":false,"reason":"500/vazio nao corpoartigo; leituraweb e plano34p separados. Registro temresults, nao negar resultados postados."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-xml.evidencia.json","status":500,"contentUsable":false,"reason":"500/vazio nao artigo; HTML publico distinto e reimpressaooficial recebidos, semretry."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-pdf.evidencia.json","status":200,"contentUsable":false,"reason":"HTML1817bytes naoPDF; figuraobtida de relatorio governamental publicado distinto, erro antigo preservado."},
+    {"record":"2026-10-08/n15c-protocolos-operacionais/c15-alonso2020-repositorio-pdf.evidencia.json","status":null,"contentUsable":false,"reason":"Conexao recusadaWinError10061 semcorpo/hash; artigo/thesis apenasweb e nenhum roteiroCD recebido. Nao prova de inexistencia definitiva."},
+    {"record":"2026-10-08/n15c-mentalizing/c15-mit-artigo-xml.evidencia.json","status":500,"contentUsable":false,"reason":"Primeira interface publica retornou500/vazio/hash do vazio. Resumo e politica de direitos da editora lidos somente web, sem suplemento operacional, contorno ou retry."},
+    {"record":"2026-10-08/n15c-gary-insuficiencia/c15-gary-artigo-xml.evidencia.json","status":500,"contentUsable":false,"reason":"Servico publicoEuropePMC500/corpo vazio/hash do vazio, nao artigo recebido. PMC leitorweb comdesafio separado, nao retry/bypass."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-wandsworth-exercicio-pagina.evidencia.json","status":403,"contentUsable":false,"reason":"Erro403/hash preservado; fonte resumida somente pela leitura web primaria, nenhum video/licenca recebidos, sem retry."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-roshid2026-resultados-html.evidencia.json","status":403,"contentUsable":false,"reason":"Erro403/hash nao artigo; resultados2026 e direitos lidos web separadamente, nao CDN alternativo para contornar."},
+    {"record":"2026-10-07/n15c-domestico-digital/c15-rutgers-swarbrick-credencial.evidencia.json","status":403,"contentUsable":false,"reason":"Erro403/hash nao perfil recebido; credencial web institucional distinta marcada como web-only, sem registro independente presumido."},
+    {"record":"2026-10-07/n15c-sequencias/c15-transfe-tese-metadados.evidencia.json","status":200,"contentUsable":false,"reason":"HTML724bytes/hash apenas shellAngular, nao tese/metadados recebidos."},
+    {"record":"2026-10-07/n15c-sequencias/c15-usc-cuidate-capitulo-metadados.evidencia.json","status":302,"contentUsable":false,"reason":"Erro302corpo vazio/hash, nao capitulo/manual. Sem contorno ou retry."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-alzoc-termos.evidencia.json","status":500,"contentUsable":false,"reason":"Corpo125bytes/hash e erro500 recebidos, nao termos/licenca; leitura web primaria separada."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-cardoso2024-metadados.evidencia.json","status":null,"contentUsable":false,"reason":"FalhaTLS sem corpo/hash; registro lido no web separado, sem retry/bypass."},
+    {"record":"2026-10-07/n15c-fisico-relaxamento/c15-cardoso2024-tese-pdf.evidencia.json","status":null,"contentUsable":false,"reason":"FalhaTLS sem PDF local/hash; texto web119p nao coleta local ou inspecao visual. Proposta ainda a avaliar, nao programa validado."},
+    {"record":"2026-10-07/n15c-ufpb/c15-ufpb-guia-2020.evidencia.json","status":404,"contentUsable":false,"reason":"HTML137078bytes/hash preservado, nao PDF40p. Versao editorial vista somente no leitor web, nao confundir com guia2018 efetivamente recebido."},
+    {"record":"2026-10-06/n15c-fechamento/c15-va-workbook-integral.evidencia.json","status":404,"contentUsable":false,"reason":"Corpo de erro59629bytes/hash preservado; nao workbook integral. ModuloV3 distinto recebido."},
+    {"record":"2026-10-06/n15c-fechamento/c15-educapes-cuidador-metadados.evidencia.json","status":null,"contentUsable":false,"reason":"TLS padrao falhou sem corpo. Metadados primarios indexados separados, nenhum video recebido/assistido; sem retry/bypass."},
+    {"record":"2026-10-06/n15c-fechamento/c15-pilates-ufba-metadados.evidencia.json","status":null,"contentUsable":false,"reason":"TLS padrao falhou sem corpo; registro primario indexado confirma texto completo embargado ate2026-12-30. Sem contorno/solicitacao de copia."},
+    {
+      "record": "c15-tpa4you-protocolo.evidencia.json",
+      "status": 200,
+      "contentUsable": false,
+      "reason": "Primeira captura local retornou recaptcha, nao artigo; leitura indexada primaria preservada sem hash de artigo, sem retry."
+    },
+    {
+      "record": "c15-carefit-prototipo.evidencia.json",
+      "status": 202,
+      "contentUsable": false,
+      "reason": "Resposta com desafio AWS WAF, nao texto do artigo; sem contorno ou retry."
+    },
+    {
+      "record": "c15-unijui-canonica.evidencia.json",
+      "status": null,
+      "contentUsable": false,
+      "reason": "TLS padrao falhou na origem canonica sem www; sem desativar verificacao ou retry. Falha anterior www preservada."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "C15-G01",
+      "met": true,
+      "criterion": "Atividade propria especifica de cuidadores identificada em fonte primaria humana; casa/centro/outro ambiente compativel, nao exigir estudo estritamente em casa."
+    },
+    {
+      "id": "C15-G02",
+      "met": true,
+      "criterion": "Corpo, autoria, licenca do artigo e limites do desenho recebidos/documentados."
+    },
+    {
+      "id": "C15-G03",
+      "met": false,
+      "criterion": "Item, rotina ou modulo selecionado com instrucao/dose/seguranca aplicaveis e progressao quando prevista pela fonte; complementar documentos compativeis sem criar programa novo. Nao exigir programa integral unico ou progressao semanal inexistente para gesto agudo/respiratorio."
+    },
+    {
+      "id": "C15-G04",
+      "met": false,
+      "criterion": "Autonomia ou supervisao compativel e direitos aplicaveis dos ativos efetivamente escolhidos demonstrados. Nao confundir fatos/metodos com expressao protegida, exigir ativos nao usados ou retirar material/apoio essencial da entrega estudada."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "C15-S01",
+      "fictional": true,
+      "case": "Cuidador interrompe treino para cuidar",
+      "expected": "Nao presumir duracao completa, repetir series ou compensar carga automaticamente."
+    },
+    {
+      "id": "C15-S02",
+      "fictional": true,
+      "case": "Pesquisa de tres semanas",
+      "expected": "Nao transformar duracao do estudo em programa operacional de tres semanas."
+    },
+    {
+      "id": "C15-S03",
+      "fictional": true,
+      "case": "Cuidadora remunerada quer seguir o yoga sem instrutor",
+      "expected": "O estudo excluiu cuidadores remunerados e teve aula orientada. Nao afirmar equivalencia autonoma ou elegibilidade por papel profissional."
+    },
+    {
+      "id": "C15-S04",
+      "fictional": true,
+      "case": "Traducao da torcao sentada contraditoria",
+      "expected": "Suspender o passo ate resolucao primaria; nao substituir mao por joelho por plausibilidade."
+    }
+  ],
+  "limits": [
+    "Nenhum contato com autores, parceria, video baixado ou app implementado.",
+    "Nao extrapolar 27 participantes para todos os cuidadores/idosos ou eficacia clinica.",
+    "Pendencias anteriores permanecem; uma nova fonte nao fecha pacote operacional.",
+    "Artigos CareFit e protocolos novos recebidos nao resolvem videos/manuais essenciais; licenca do artigo nao cobre automaticamente livro de terceiros.",
+    "Nenhuma rotina foi montada combinando dose de um estudo e posturas de outro.",
+    "Cartilha ELA da tese2023/edicao2021 tem CC BY-ND4.0 especifica: nao trocar pela CC BY generica do artigo nem distribuir tese inteira com direitos presumidos."
+  ],
+  "updatedAt": "2026-10-13"
+}

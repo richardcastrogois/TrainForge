@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-15",
+  "niche": "N30",
+  "sourceId": "PR28",
+  "originalPackage": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+  "originalPackageSha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee",
+  "receipts": [
+    {
+      "originalEvidenceReceipt": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+      "originalBodySha256": "ffb23dbd1b670f00148f83f17c2dd7af4438552c1c8dabf8c43aabbbca09a084",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+      "originalBodySha256": "b935a55d72d2bf801ede5db207dbb7bd62ada0ea447307b64fbd9818dcb1a662",
+      "rechecked": true,
+      "newNetworkCall": false
+    }
+  ],
+  "exactSupplementMember": "7516939.f1.pdf",
+  "exactSupplementMemberSha256": "afe85956860dc9adcc108b3b54eecfea96316bb3a32075bab84a4f696783d1ed",
+  "memberRechecked": true,
+  "sourceTextRead": [
+    "artigo sec2.1,sec3.5 epermissions",
+    "suplementoS1–S5/duas páginas"
+  ],
+  "visualReviewThisNiche": {
+    "pages": [
+      1,
+      2
+    ],
+    "figures": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "previewsReusedFrom": "2026-10-04/raw/i15-snacking-2019-revisao-1.png e2.png",
+    "actuallyViewed": true
+  },
+  "n15PausedAndOpen": true,
+  "n15FilesChanged": false,
+  "releaseApproved": false
+}

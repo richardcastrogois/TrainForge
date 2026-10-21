@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-05",
+  "scope": "N15-C: cuidador praticando para si em casa; nao assistencia fisica ao paciente",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "inventory": "2026-10-05/programas-manuais-02/inventario-manuais.json",
+  "myTen": {
+    "sourceId": "PR58",
+    "title": "Acceptability of My Ten: a physical activity intervention for family caregivers of people with advanced cancer",
+    "authors": ["Jamie L. Penner", "Sylvie Lambert", "S. Robin Cohen"],
+    "doi": "10.1186/s12904-026-02309-4",
+    "publicationDate": "2026-09-14",
+    "version": "Article in Press, PDF recebido de 22 paginas; nao versao final editada presumida",
+    "articleRecord": "2026-10-05/programas-manuais-02/c15-myten-artigo.evidencia.json",
+    "pdfRecord": "2026-10-05/programas-manuais-02/c15-myten-pdf.evidencia.json",
+    "articleLicense": {"id":"CC-BY-4.0","locator":"PDF p18 / Open Access; HTML Rights and permissions","thirdPartyExceptions":true},
+    "fieldProvenance": [
+      {"fields":["actor","setting","studyDesign"],"locator":"PDF pp3-7 / Methods, Intervention, Table 1","value":"Cuidador familiar de pessoa com cancer avancado, programa concebido domiciliar com atividade autoescolhida; aceitabilidade qualitativa, nao ensaio de eficacia."},
+      {"fields":["plannedWeeks","testedWeeks","provider"],"locator":"PDF pp4-5 / Intervention, Table 1 e nota c","value":"12 semanas planejadas; seis contatos semanais testados; duas visitas basais e intervencionista. Nao rotina fixa de dez minutos."},
+      {"fields":["eligibility"],"locator":"PDF pp3-4; DOCX2 word/document.xml / Eligibility Flow Chart","value":"Artigo >=18, suplemento >18: divergencia no limiar nao resolvida. Ingles, familiar com cancer III/IV, triagem PAR-Q e exclusoes. Nao generalizar a cuidador remunerado ou a todo idoso."},
+      {"fields":["activityLog","goal","implementationActionPlan"],"locator":"DOCX3 word/document.xml / PHYSICAL ACTIVITY LOG, GOAL, PLAN, Example","value":"Campos em branco. Exemplo de caminhada20min moderada nao e prescricao. Log exclui rotina diaria/atividade de cuidado; nao contar cuidados como cumprimento do plano."},
+      {"fields":["exerciseInstructions","perExerciseDose","executableProgression"],"locator":"PDF p5 / Tailoring; DOCX4 word/document.xml / assessment e planejamento","value":null,"missingReason":"FITT individualizado pelo cuidador com profissional. DOCX4 cita Intervention Manual e Intervener PA Work Sheet, ambos nao incorporados nos seis suplementos."}
+    ],
+    "supplements": [
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s1.evidencia.json","content":"Recruitment Procedure; fluxograma com caixas de texto"},
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s2.evidencia.json","content":"Study Eligibility Flow Chart; fluxo/limiares divergentes do artigo, sem renderizacao"},
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s3.evidencia.json","content":"PA Log; metas e plano em branco, exemplo nao prescritivo"},
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s4.evidencia.json","content":"Weekly Data Collection Form; referencia a manual/worksheet ausentes"},
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s5.evidencia.json","content":"Weekly Interview Guide; pesquisa qualitativa"},
+      {"record":"2026-10-05/programas-manuais-02/c15-myten-s6.evidencia.json","content":"Follow-up Interview Guide; pesquisa qualitativa"}
+    ],
+    "readExtent": "Texto/estrutura integral word/document.xml dos seis DOCX, ZIP limitado sem extracao ou execucao. Zero arquivos word/media em cada. S1 tem26caixas de texto; S1/S2 nao renderizados, ausencia de imagem nao e ausencia de diagrama. PDF texto extraido, metodos/Table1/direitos lidos; nao todas paginas visualizadas.",
+    "operationalRights": "Licenca do artigo confirmada; manual e worksheet nao recebidos. Nenhum pacote executavel ou direito de ativos ausentes demonstrado."
+  },
+  "impacct": {
+    "sourceId": "PR59",
+    "authors": ["Briony Dow","Kirsten Moore","Melissa Russell","David Ames","Elizabeth Cyarto","Terry Haines","Keith Hill","Nicola T Lautenschlager","Lynette Mackenzie","Susan Williams","Samantha Loi"],
+    "protocolDoi": "10.1016/S1836-9553(13)70165-6",
+    "protocolYear": 2013,
+    "protocolRecord": "2026-10-05/programas-manuais-02/c15-impacct-protocolo.evidencia.json",
+    "websiteRecord": "2026-10-05/programas-manuais-02/c15-impacct-nari.evidencia.json",
+    "websiteVersion": "Publicado2020, atualizado2022; texto ainda diz resultados em preparacao. Nao retrato atual do artigo2024.",
+    "fieldProvenance": [
+      {"fields":["actor","eligibility"],"locator":"PDF p4 / Participants","value":"Cuidador informal>=55 convivente, GDS15>=5; pessoa assistida>=60 dependente em ADL. Criterios de estudo, nao triagem clinica automatica."},
+      {"fields":["duration","generalFrequency","individualPrescription","supervision"],"locator":"PDF p5 / Intervention","value":"Seis meses, cinco dias/semana,4-8 exercicios20-30min com descansos e caminhada; escolha/ajustes por terapeuta apos avaliacao. Dose por exercicio na cartilha individual, nao neste PDF."},
+      {"fields":["essentialAssets","manualRights"],"locator":"PDF p5 / Otago exercise program e Visual Health Information Exercise Prescription Kits","value":"Otago-Plus combina duas fontes; cartilha ilustrada individual referida mas nao anexada. Otago recebido anteriormente nao cobre kits externos ou escolhas individuais. Licenca comercial do protocolo/cartilha/kits nao demonstrada."}
+    ],
+    "plannedEnrollment": 273,
+    "websiteActualEnrollment": {"carers":121,"careRecipients":91},
+    "sampleInterpretation": "273 e planejamento2013, nao amostra final. n34 da revisao e subgrupo de duplas do braco exercicio, nao o total do ensaio.",
+    "readExtent": "PDF17paginas texto extraido; elegibilidade/intervencao e referencias lidas. Nenhuma cartilha individual recebida ou inspecao visual integral."
+  },
+  "relaxationRights": [
+    {"sourceId":"PR60","doi":"10.5812/ijcm-131622","authors":"Hamid Barghbani, Narjes Heshmatifar, Neda Mahdavifar, Batol Keykhosravi e Mojgan Ansari","year":2023,"record":"2026-10-05/programas-manuais-02/c15-benson-cancer-pdf.evidencia.json","license":"CC-BY-NC-4.0","locator":"PDF p1 rodape; pp2-3 Methods/Intervention","finding":"Cuidador informal18-67, nao profissional.20min2/dia4semanas apos ensino presencial/checagem, CD domiciliar nao recebido e telefonemas. Nao selecionar para incorporacao comercial gratuita; nao usar doses para idosos/cuidadores em geral."},
+    {"sourceId":"PR61","doi":"10.17533/udea.iee.v40n3e06","authors":"Mahsa Imanian e Somayeh Ramezanli","year":2022,"version":"Pagina editorial revisada2023","record":"2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json","license":"CC-BY-NC-SA-4.0","locator":"HTML / License / href creativecommons.org/licenses/by-nc-sa/4.0/","finding":"Licenca primaria nao comercial; indicacao CC BY em indice secundario nao adotada. Corpo integral do estudo/manual/audio nao recebido nesta rodada; nao selecionar pacote comercial."}
+  ],
+  "decision": {"C15-G03":false,"C15-G04":false,"newApprovedOperationalPackages":0,"n21Allowed":false},
+  "next": "Nao repetir estes corpos. My Ten nao fecha rotina; IMPACCT depende da cartilha individual/kits nao publicados no protocolo. Fontes Benson NC ficam fora da selecao comercial. Proxima pesquisa deve mirar manual instrucional primario licenciado, nao mais duracao de estudo como treino."
+}

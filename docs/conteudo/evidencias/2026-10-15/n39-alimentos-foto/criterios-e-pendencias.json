@@ -1,0 +1,85 @@
+{
+  "id": "N39-RECONHECIMENTO-EM-PESQUISA",
+  "date": "2026-10-15",
+  "researchClosed": true,
+  "kind": "Proposta editorial própria para reconhecimento específico; nenhum resultado de inferência ou comportamento do app demonstrado.",
+  "sourceFamilies": [
+    "PR211",
+    "PR212",
+    "PR213",
+    "PR214"
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "condicional",
+      "evidence": "Modelo específico existe, mas cozinha portuguesa e luz doméstica não validadas. Entrada manual e confirmação com texto legível/ajuda digital separada de assistência física.",
+      "remaining": "Ensaio de erros, confirmação e compreensão real antes de ofertar."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "condicional",
+      "evidence": "A mesma pessoa confirma o que efetivamente comeu; embalagem/suplemento/rótulo não viram prato reconhecido nem recomendação pós-treino.",
+      "remaining": "Não há teste neste ambiente. OCR e barcode são Ns próprias, não equivalência."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "condicional",
+      "evidence": "Luz, sombra, conectividade e pessoas ao redor variam. Reconhecimento opcional e alternativa manual; nenhum GPS obrigatório.",
+      "remaining": "Não há teste de campo; não fotografar terceiros nem atribuir refeição por localização."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "condicional",
+      "evidence": "Cuidador como pessoa que come e registra para si; se observar o assistido, pessoa/autor/observação ficam separados.",
+      "remaining": "Conferir troca de pessoa, prato compartilhado e ajuda de uso sem atribuição automática."
+    }
+  ],
+  "flowProposal": [
+    "Escolher explicitamente a pessoa da refeição e manter quem registra como autor distinto.",
+    "Usar foto consentida apenas se houver benefício; manter entrada manual acessível. Não fotografar terceiros.",
+    "Exibir hipóteses do modelo com nome/versão/origem, sem preencher consumo ou quantidade.",
+    "Confirmar ou corrigir o alimento; permitir nenhum destes, preparo diferente e múltiplos itens descritos manualmente.",
+    "Conferir correspondência com alimento/preparo da base N01/N02 antes de associar nutrientes; classe de prato não é receita ou composição exata.",
+    "Quantidade servida, consumida e desconhecida ficam sem inferência desta N; nada de plano nutricional automático por idade ou aparência.",
+    "Guardar correção e proveniência do registro sem usar a fotografia em treinamento nem enviar a terceiros por padrão."
+  ],
+  "independentNextWork": [
+    "N39 encerrada somente para hipótese alimentar confirmada; retomar N40 após conferir critério próprio."
+  ],
+  "currentComputerSnapshot": {
+    "date": "2026-10-15",
+    "freePhysicalMemoryGiB": 16.31,
+    "freeDiskCGiB": 125.56,
+    "cpu": "Intel i7-13650HX / AMD64 / 14 cores / 20 logical processors",
+    "python": "3.12.14 bundled",
+    "basis": "Leitura local de CIM/Get-PSDrive; valores temporários, sem reserva de recursos."
+  },
+  "notAuthorizedByThisResearch": [
+    "Novaassinatura/conta/crédito/APIexterna",
+    "Instalaçãodeframework/pesossemprévia doplano",
+    "Uso defotopessoal/saúdeouuploaddeimagem",
+    "Alterar app/Figma/banco ou atribuirplano/porçãopessoaautomaticamente"
+  ],
+  "n40Started": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "approvalBasis": "Usuário autorizou diretamente e exigiu excluir assim que não fosse mais usado. Teste executado e diretório removido; ver autorizacao-ensaio.json e limpeza-ensaio.json.",
+  "followupEvidence": "fontes-e-seguimento.json",
+  "closureAudit": "auditoria-fechamento.json",
+  "previousGapsBeforeResearchClosure": [
+    "Fixar escolha de modelo/versão/decodificação e direitos compatíveis; licença de pesos não licencia fotos de treino. Fusão MobileCLIP deste caminho excluída para desenvolvimento de produto pela licença primária.",
+    "Conferir na execução o contrato de entrada já documentado e resolver a ordem 16/17 entre loader publicado e config, sem presumir a revisão de treino.",
+    "Executar ensaio controlado relevante ou obter evidência suficiente para a escolha específica: calibração/abstenção/cobertura portuguesa e não-alimento continuam não demonstradas. Relatórios de outro app não substituem isso.",
+    "Ambiente novo exige resposta ao plano apresentado; nenhuma instalação ou download de peso realizado.",
+    "Confirmar alimento/pessoa, correção, alternativa manual e privacidade no recorte selecionado. Proposta documental não é comportamento testado."
+  ],
+  "gapsBeforeResearchClosure": [],
+  "remainingBeforePublication": [
+    "Amostra representativa e direitos do ativo final; cinco fotos não validam 101 classes ou toda culinária.",
+    "Desenho/implementação acessível e testes de confirmação/compreensão com pessoas reais.",
+    "Privacidade/retensão/apagamento em produto, sem identificação automática do assistido.",
+    "Testar e escolher modelo leve no dispositivo alvo; ensaio WindowsCPU não valida Android nem instalação no app.",
+    "Fonte de receita/composição e quantidade independentes; não derivar alergénios/gramas/consumo por este modelo."
+  ]
+}

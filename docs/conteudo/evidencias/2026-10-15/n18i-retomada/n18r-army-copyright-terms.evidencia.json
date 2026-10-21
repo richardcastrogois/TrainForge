@@ -1,0 +1,23 @@
+{
+  "id": "n18r-army-copyright-terms",
+  "url": "https://www.army.mil/terms/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:00:38.620081+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Política primária de copyright e terceiros; distribuição pública não é licença uniforme de fotos/logos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.army.mil/terms/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 6051,
+  "bodyFile": "../raw/n18r-army-copyright-terms.html",
+  "sha256": "08c76f477d156bed3e081eb867b799bf527ebe10906d354b7bbd8c0a4b25422d"
+}

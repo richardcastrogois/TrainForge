@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "kind": "Small controlled local CPU experiment",
+  "model": "nateraw/food",
+  "revision": "8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "weightSha256": "33d6b7d44c0bb524fbb6f6d3b7d1f7c8d7c703b58882bf2a845355d9411f566d",
+  "weightsOnlyLoad": true,
+  "strictStateLoad": true,
+  "missingKeys": [],
+  "unexpectedKeys": [],
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.13.0+cpu",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0"
+  },
+  "device": "cpu",
+  "cudaBuild": null,
+  "threads": 4,
+  "networkAudit": {
+    "connectionsPreventedByAuditHook": true,
+    "attempts": []
+  },
+  "cases": [
+    {
+      "id": "6",
+      "fileTitle": "File:Cheesecake slice (Los Angeles) July 2023.jpg",
+      "purpose": "Suplemento independente para conferir classe 17; lote inicial preservado com duas fotos indisponíveis",
+      "expectedClassProposal": "cheesecake",
+      "author": "Benoît Prieur",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:Cheesecake_slice_(Los_Angeles)_July_2023.jpg",
+      "sourceFileDimensions": [
+        960,
+        1280
+      ],
+      "inputMode": "RGB",
+      "inputDimensions": [
+        960,
+        1280
+      ],
+      "sha256": "4c350e66307bad67d402b455bd50cc7b795d42fc270f2b3dd3c9b087ae9f2b0f",
+      "preprocessingMaxAbsDifference": 0.0,
+      "preprocessingMatchesWithin1eMinus6": true,
+      "inferenceSeconds": 0.1473186000075657,
+      "top5": [
+        {
+          "id": 17,
+          "label": "cheesecake",
+          "score": 0.9874565005302429
+        },
+        {
+          "id": 98,
+          "label": "tiramisu",
+          "score": 0.0028581053484231234
+        },
+        {
+          "id": 27,
+          "label": "creme_brulee",
+          "score": 0.0007778517319820821
+        },
+        {
+          "id": 14,
+          "label": "carrot_cake",
+          "score": 0.0005744589725509286
+        },
+        {
+          "id": 0,
+          "label": "apple_pie",
+          "score": 0.0004922453663311899
+        }
+      ],
+      "score16CheesePlateInConfig": 0.00011747557437047362,
+      "score17CheesecakeInConfig": 0.9874565005302429,
+      "matchesProposedLabelTop1": true,
+      "matchesProposedLabelTop5": true,
+      "confirmedFoodWritten": false,
+      "personAssignedAutomatically": false,
+      "visualInspectionByAgent": {
+        "performed": true,
+        "observation": "Fatia de bolo tipo cheesecake, coerente com descrição do autor; composição exata não verificada.",
+        "independentHumanGroundTruth": false
+      }
+    }
+  ],
+  "inferencePerformed": true,
+  "appTested": false,
+  "clinicalValidation": false,
+  "populationAccuracyEstimated": false,
+  "confidenceCalibrated": false,
+  "automaticNonfoodRejectionImplemented": false,
+  "mealIdentityUIImplemented": false,
+  "rights": "Apache 2.0 declared for model; each image has its own recorded license. No Food101 photograph downloaded.",
+  "limitations": [
+    "Six preselected public images and two synthetic controls are not population validation.",
+    "Config/loader label order 16/17 needs source and empirical interpretation.",
+    "A softmax score is not calibrated confidence and closed-set classifier has no unknown class.",
+    "No food, quantity, meal person or nutrition target written to the app.",
+    "Cinco fotografias inspecionadas visualmente pelo agente com rótulos do autor; não anotação independente por nutricionista ou validação química. Duas fotos planejadas retornaram HTTP 429 e não foram reobtidas."
+  ],
+  "temporaryEnvironmentMustBeDeleted": true,
+  "releaseApproved": false,
+  "supplementalOnly": true
+}

@@ -1,0 +1,17 @@
+{
+  "date":"2026-10-08", "niche":"N15-C", "sourceId":"PR99", "inventory":"inventario.json",
+  "title":"An Intervention to Improve Physical Function and Caregiver Perceptions in Family Caregivers of Persons With Heart Failure",
+  "doi":"10.1177/0733464817746757", "publication":"Online2018; fasciculo2020. Nao dois ensaios.",
+  "articlePrimaryWeb":"https://journals.sagepub.com/doi/10.1177/0733464817746757",
+  "articleFullBodyReceived":false, "xmlReceipt":"c15-gary-artigo-xml.evidencia.json",
+  "webReaderBarrier":"PMC apresentou desafio, nao contornado. Servico publico EuropePMC consultado pela primeira vez retornou500/corpo vazio; nao retry ou manual recebido.",
+  "webOnlyClinicalLead":{"sample":127,"weeks":12,"combinedIntervention":"Psicoeducacao e exercicio aerobico/resistencia do cuidador familiar de pessoa com IC.","notPatientExercise":true,"evidenceNotTransferredToIsolatedMovement":true},
+  "registryReceipt":"c15-gary-registro-json.evidencia.json",
+  "registry":{"nctId":"NCT01188070","enrollmentActual":354,"containsTwoStudies":"Cuidadores de demencia e de insuficiencia cardiaca;354 do projeto nao substituir127 do artigoHF.","hasPostedResults":false,"hasPublishedDocumentSection":false,"delivery":"Exercicio individual prescrito e monitorizado, com psicoeducacao. Triagem medica/cognitiva e teste em esteira, nao rotina autonoma sintetica.","eligibility":"Cuidador familiar21+, ambulante/sedentario; pelo menos4contatos semanais1h. Exigencia autodeclaracao afro-americana e do estudo de demencia, nao transferir automaticamente ao estudoHF.","individualExercisesStepsDose":null},
+  "erratumReceipt":"c15-gary-erratum-json.evidencia.json",
+  "erratum":{"pmid":"29708007","doi":"10.1177/0733464818775576","primaryAbstractReceived":true,"publisherFullTextReceived":false,"subject":"Corrige financiamento omitido e confirmaNCT; nao anuncia mudanca de movimentos/dose.","correctedArticleBodyConfirmedLocally":false},
+  "rights":{"commercialAssetGrantIdentified":false,"nihSupportIsNotPublicDomainGrant":true,"missingManualAndVideoNotLicensedByArticleIndexing":true},
+  "preNetworkManifestError":{"unsupportedAcceptRejected":true,"networkCallsDuringRejectedAttempt":0,"fixedToSupportedApplicationXmlWithoutChangingCollector":true},
+  "missingForSelectedApkPackage":["Texto operacional integral e manual/ativos do exercicio efetivamente realizado.","Direitos dos ativos selecionados, suporte e versao sem fusao entre populacoes."],
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,"newProgrammesApproved":0,"n21Started":false
+}

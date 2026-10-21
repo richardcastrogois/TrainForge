@@ -1,0 +1,26 @@
+{
+  "id": "c15-transfe-osf-protocolo-pdf",
+  "url": "https://osf.io/download/4efka/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:37:16.150526+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo-2.pdf, unico arquivo publico listado pela API OSF, versao1 publicada2024-06-20. PDF sem teto de bytes autorizado; conferir hash anunciado e conteudo/anexos/licenca proprios. node_license null nao concessao BY4 herdada do artigo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://storage.googleapis.com/cos-osf-prod-files-de-1/b7cf10ef79f495413ae182b262d1f46444a464be1b7cdf9d606851877cdcf738?response-content-disposition=attachment%3B%20filename%3D%22Protocolo-2.pdf%22%3B%20filename%2A%3DUTF-8%27%27Protocolo-2.pdf&GoogleAccessId=files-de-1%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791409132&Signature=TePpqPlubqVCKxLTVZ3IF1MftgxvH%2BpGRBIDvLbXWlP9wFQO%2F65osku4uCjIGO6VQGxnX3RdOG0uYalXh6sVAgdCwkyrPaS2ubAUQPp6UQEAy71U7iwxNuJlDihxoGdAqQVLYB9z4ECunjdlRKiwOgqh5xkTCJPEZTNTz2pQJybp5F2LjXe3EGN4ZPsJmk9ZrGWOpVf5e4xjYxtSaLHoSyRS%2BHheILVTmo2j41a4yUmRe0u9jY4bRD3JrLonwdvXlSdIDUuPj0sz%2FOBRS21uJ%2Fcx98R6Lr0VwcKzE9UgTC52xuwxm%2FznbIcLEvg%2BRny%2FvY15Ooyx1nksD21qDDSWkg%3D%3D",
+  "contentType": "application/octet-stream",
+  "retryAfter": null,
+  "bytes": 11057370,
+  "bodyFile": "../raw/c15-transfe-osf-protocolo-pdf.pdf",
+  "sha256": "b7cf10ef79f495413ae182b262d1f46444a464be1b7cdf9d606851877cdcf738",
+  "bodyFormatMatchesRequest": true,
+  "expectedBytes": 11057370,
+  "expectedBytesMatch": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-revieew-protocolo-pdf",
+  "url": "https://link.springer.com/content/pdf/10.1186/s12891-023-06584-7.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:06:07.146875+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo original11p, Fig3 exercicios/progressoes, Fig4 dose e Table1 agenda; distinguir supervisao laboral e manutencao autonoma posterior, nao transferir para casa por plausibilidade.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s12891-023-06584-7.pdf?error=cookies_not_supported&code=34e9c623-6463-4025-8ed5-0816a9f592d1",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1829904,
+  "bodyFile": "../raw/c15-revieew-protocolo-pdf.pdf",
+  "sha256": "470d1afff362415d77ceae7eea3ca050f65ff2e1474a38981acba3b0df7e7f84",
+  "bodyFormatMatchesRequest": true
+}

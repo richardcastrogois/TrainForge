@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C: primeiras coletas de estudos distintos dos originais anteriores; semretry de MIT2022/PMC9064903 ou paginaPMCchallenge. Publicas interfaces estruturadas primarias, semconta/contato/instalacao/executar conteudo. ZIP pequeno comextracao limitada apenas apos inventario, nao media remota.",
+  "requests":[
+    {"id":"c15-mit-espanhol2023-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Original distinto MIT2023espanhol12cuidadores, verificar movimentos/guias/suplementos/apoio/efeito proprio/autoria e nao alegar ensaio controlado."},
+    {"id":"c15-tcqg-grupo2020-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Original TCQG2020cuidador praticante emcentro, nao excluir porlocal; verificardosegestosprofissional/Tablecaregiver/seguranca/licenca e suplementos."},
+    {"id":"c15-tcqg-grupo2020-suplementos-zip","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/supplementaryFiles","accept":"application/zip","extension":"zip","purpose":"Curriculo originalpublicamente anunciado SupplementA TaiChiPDF155.5KB, conferir archive limites/hashmember/conteudo sem executar ou imagens presumidas vistas."},
+    {"id":"c15-yoga-hnc2024-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11349719/fullTextXML","accept":"application/xml","extension":"xml","purpose":"PilotoRCT37duplasHNC distintoCYgliomaPR127/TRTPR124. Conferir beneficio proprio caregiver/variante/dose/preparo/apoio/manualpublico/rights; naotransplantar resultado paciente."},
+    {"id":"c15-mbi-hibrido2025-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/fullTextXML","accept":"application/xml","extension":"xml","purpose":"RCTMBIhibrido2025 distinto brevefrailidadePR130, conferir roteiro/apoio profissional/exercicio especifico cuidador/dose/efeito contrastes/licenca/suplementos."}
+  ]
+}

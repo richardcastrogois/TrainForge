@@ -1,0 +1,32 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "sourceId": "PR110",
+  "sourceReceipt": "c15-most2023-suplemento-doc.evidencia.json",
+  "sourceSha256": "f8561badae575d64410cc37ce3c1575c26228568450a5523bf5e0dd100ca6969",
+  "parser": "word-extractor",
+  "parserVersion": "1.0.4",
+  "parserRepository": "https://github.com/morungos/node-word-extractor",
+  "installScriptsDisabled": true,
+  "officeOrMacrosExecuted": false,
+  "networkCallsDuringParsing": 0,
+  "sourceBytes": 129024,
+  "maxExtractedBytes": 2097152,
+  "extractedTextFile": "../raw/c15-most2023-doc-text.json",
+  "extractedTextSha256": "d915a317392344abed8d27d67544c5f3ac0142e7703eb3fceaa74c70992a9196",
+  "extractedTextBytes": 10694,
+  "partCharacters": {
+    "body": 10235,
+    "footnotes": 0,
+    "endnotes": 0,
+    "headers": 8,
+    "footers": 7,
+    "annotations": 0,
+    "textboxes": 1
+  },
+  "layoutOrVisualInspectionPerformed": false,
+  "textExtractionIsCompleteVisualProof": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

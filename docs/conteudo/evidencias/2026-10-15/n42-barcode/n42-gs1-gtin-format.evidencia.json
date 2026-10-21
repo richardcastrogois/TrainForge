@@ -1,0 +1,23 @@
+{
+  "id": "n42-gs1-gtin-format",
+  "url": "https://support.gs1.org/support/solutions/articles/43000734355-what-is-the-required-format-of-gtin-in-gs1-edi-standards-",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:49:49.250496+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Preservação de zeros e distinção do formato numéricoEANCOM versus string14emXML. Não alterar códigosoriginaisOFF ou inferir país/fabricante/nutrição.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://support.gs1.org/support/solutions/articles/43000734355-what-is-the-required-format-of-gtin-in-gs1-edi-standards-",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 3787,
+  "bodyFile": "../raw/n42-gs1-gtin-format.html",
+  "sha256": "5f1505d0078e8a131486db8bcea9249246c0a1c3029a1aa795500fe8c5fec06e"
+}

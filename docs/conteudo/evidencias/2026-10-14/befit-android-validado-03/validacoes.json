@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-14",
+  "timezone": "America/Sao_Paulo",
+  "scope": "documentation_integrity_not_clinical_or_befit_runtime_validation",
+  "fixtureJsonValid": true,
+  "storeJsonValid": true,
+  "captureHashes": [
+    {
+      "path": "C:\\dev\\rea-tools\\evidence\\screen-firstboot\\screen.png",
+      "sha256": "f4558adb323758c27ac461f1933b023861a22074423224c05a50f9730177790c",
+      "matchesReaEvidence": true
+    },
+    {
+      "path": "C:\\dev\\rea-tools\\evidence\\screen-settings\\screen.png",
+      "sha256": "cdcb2f54fe690502f584ab2ac3063631ecf59aa257c8847e983f95bdc2ad418a",
+      "matchesReaEvidence": true
+    },
+    {
+      "path": "C:\\dev\\rea-tools\\evidence\\screen-play-entry\\screen.png",
+      "sha256": "072f0bf90455822f15b370207c591d1649e5cfe71771302b81cd3ed4ce97b44b",
+      "matchesReaEvidence": true
+    },
+    {
+      "path": "C:\\dev\\rea-tools\\evidence\\screen-befit-store\\screen.png",
+      "sha256": "23e5fe4de63854de9dda4d1305b33726f885589090e1984003350b6f1fde2937",
+      "matchesReaEvidence": true
+    },
+    {
+      "path": "C:\\dev\\rea-tools\\evidence\\screen-befit-install-progress\\screen.png",
+      "sha256": "22e701ae5bee6bb4fe497df5d3d023e61c7595dd25f644cbb640d95da8c7de43",
+      "matchesReaEvidence": true
+    }
+  ],
+  "rawIgnoredByGit": true,
+  "appTrackedDiffEmpty": true,
+  "graphifyIncremental": {
+    "deleted": 0,
+    "newOrChanged": 0,
+    "unchanged": 42,
+    "walkErrors": 0
+  },
+  "befitUiTested": false,
+  "sourceProviderConfirmed": false
+}

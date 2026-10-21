@@ -1,0 +1,45 @@
+{
+  "niche": "N09-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Complemento de educacao e delimitacao de ganho de peso no envelhecimento/cuidado; nao tratamento de desnutricao, plano alimentar individual ou programa de hipertrofia.",
+  "next": "N10-I; N21 retida pelos complementos ainda abertos.",
+  "evidence": [
+    {"record": "2026-10-04/alimentacao-contexto/a09-nhs-perda-involuntaria.evidencia.json", "anchors": ["without changing", "See a GP", "depends on"], "role": "Perda involuntaria exige avaliacao da causa; nao converter em ganho de peso autonomo."},
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["chew or swallow", "appetite"], "role": "Barreiras de alimentacao no envelhecimento e contato profissional."},
+    {"record": "2026-09-30/n09-ganho-peso/n09-nhs-ganho.evidencia.json", "anchors": ["weight"], "role": "Guia geral humano anterior; faixas populacionais nao viram metas de idosos."}
+  ],
+  "dependencies": ["2026-09-30/n09-ganho-peso/conteudo-guiado.json", "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json", "2026-10-03/n14c-cuidador/pesquisa-complemento.json", "2026-10-04/geriatria-nutricao/leitura-web.json"],
+  "sourceFacts": ["NHS distingue emagrecimento sem mudanca voluntaria de dieta/atividade e orienta avaliar causas; tratamento depende delas.", "Guia antigo NIDDK identifica barreiras de mastigacao/degluticao, apetite e medicamentos; seus numeros antigos nao sao metas atuais do produto.", "BDA/VA/NICE da N09 geral nao constituem programa universal para idosos ou cuidadores."],
+  "operations": [
+    {"id": "I09-O01", "previousLessons": ["G09-L01", "G09-L07"], "decision": "Distinguir objetivo voluntario informado, perda involuntaria, pouca ingestao, recuperacao de doenca e desconhecido; nao diagnosticar a partir de peso."},
+    {"id": "I09-O02", "decision": "Cuidador relata observacoes com pessoa/data/origem, mas nao define meta do assistido; seu proprio objetivo permanece separado."},
+    {"id": "I09-O03", "decision": "Exemplos VA e smoothies sao referencias humanas, nao refeicoes obrigatorias, suplemento necessario ou cronograma terapeutico. Nao completar campos individuais em branco."},
+    {"id": "I09-O04", "decision": "Nao importar excedente calorico geral, dose proteica ou alvo BMI por idade. Ganho de massa muscular nao e igual a recuperar peso perdido involuntariamente."},
+    {"id": "I09-O05", "decision": "Sinais relatados de dificuldade de comer, ingestao reduzida ou perda involuntaria nao geram fortificacao/realimentacao automatica; percurso profissional, sem limiar inventado."},
+    {"id": "I09-O06", "decision": "Referencia factual/redacao propria e direitos anteriores por fornecedor preservados; BDA protegida e ativos de terceiros nao incorporados."}
+  ],
+  "lessonReview": [
+    {"id": "G09-L01", "decision": "Manter distincao de objetivo; acrescentar papel/pessoa e intencionalidade conhecida."},
+    {"id": "G09-L02", "decision": "Oportunidades menores sao educacao geral, nao frequencia obrigatoria ou volume prescrito por idade."},
+    {"id": "G09-L03", "decision": "Variedade nao autoriza enriquecimento automatico em pessoa com restricao profissional."},
+    {"id": "G09-L04", "decision": "14 exemplos VA nao sao dieta nem composicao recalculada para marcas portuguesas/idosos."},
+    {"id": "G09-L05", "decision": "Bebida: confirmar ingredientes, quantidades e avisos; nao textura clinica ou suplemento por idade."},
+    {"id": "G09-L06", "decision": "Contexto pos-cuidados-intensivos nao equivale a envelhecimento ou trabalho do cuidador."},
+    {"id": "G09-L07", "decision": "Perda involuntaria/barreiras exigem orientacao, sem criar classificador ou limiar clinico."},
+    {"id": "G09-L08", "decision": "Faixa NHS/campos VA vazios nao sao metas pessoais; conservar origem profissional se informada."},
+    {"id": "G09-L09", "decision": "Historico por pessoa; balanca nao demonstra musculo ou recuperacao nutricional."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I09-G01", "met": true, "criterion": "Ganho voluntario, musculo e perda involuntaria distinguidos por fonte/contexto."},
+    {"id": "I09-G02", "met": true, "criterion": "Guias humanos gerais revistos para nao transferir dose ou tratamento a todo idoso/cuidador."},
+    {"id": "I09-G03", "met": true, "criterion": "Campos/papel e limites de exemplos, suplementos/realimentacao e direitos explicitados."},
+    {"id": "I09-G04", "met": true, "criterion": "Recorte educativo completo; dieta individual/condicoes clinicas/testes/publicacao separados."}
+  ],
+  "scenarios": [
+    {"id": "I09-S01", "fictional": true, "case": "Idoso perdeu peso sem tentar", "expected": "Nao cadastrar automaticamente programa de ganho; orientar avaliacao profissional e preservar relato."},
+    {"id": "I09-S02", "fictional": true, "case": "Cuidador escolhe smoothie para assistido", "expected": "Nao comprovar adequacao, consistencia, consumo ou suplemento pela escolha."},
+    {"id": "I09-S03", "fictional": true, "case": "Cuidador quer ganhar massa para si", "expected": "Objetivo pessoal independente; exemplos de recuperacao clinica nao viram programa de hipertrofia."}
+  ],
+  "individualTargets": {"energySurplusKcal": null, "proteinG": null, "targetWeightKg": null, "supplementDose": null},
+  "limits": ["Sem triagem/diagnostico validado, protocolo terapeutico, meta individual ou regulacao portuguesa integral.", "ESPEN conhecida apenas por leitura web do resumo; retornos locais 403/203 nao sao seu conteudo e nenhum algoritmo copiado.", "Nove licoes gerais preservadas, propostas de apresentacao complementares proprias ainda sem revisao profissional/pt-PT."]
+}

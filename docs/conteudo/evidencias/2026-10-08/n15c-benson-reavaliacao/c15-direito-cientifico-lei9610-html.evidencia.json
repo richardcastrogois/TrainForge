@@ -1,0 +1,23 @@
+{
+  "id": "c15-direito-cientifico-lei9610-html",
+  "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T02:20:38.437228+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonte legal oficial atualizada: distinguir conteudo cientifico/metodos como tais de forma literaria/traducao/ativos protegidos. Nao parecer juridico ou grant editorial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 162721,
+  "bodyFile": "../raw/c15-direito-cientifico-lei9610-html.html",
+  "sha256": "8c5ce400de169f6578ebc579eaed3a497fe89205b8f4c4b81c3ae20a45a9eb69"
+}

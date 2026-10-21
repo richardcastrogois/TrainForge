@@ -1,0 +1,110 @@
+{
+  "scope": "revisao_transversal_N01_N17",
+  "date": "2026-10-03",
+  "auditCompleted": true,
+  "nichesReviewed": 17,
+  "olderSpecificPartialEvidence": [
+    "N15",
+    "N16"
+  ],
+  "caregiverProgrammeDemonstrated": false,
+  "newCalls": 2,
+  "http200": 2,
+  "bodyHashes": 2,
+  "reusedPolicyRecords": 1,
+  "subnichesQueued": 0,
+  "subnichesPartial": 4,
+  "subnichesResearchClosed": 1,
+  "fictionalScenarios": 7,
+  "appTestsRun": false,
+  "clinicalValidationPerformed": false,
+  "releaseApproved": false,
+  "evidenceSnapshots": [
+    {
+      "niche": "N01",
+      "evidence": "2026-09-26/n01-alimentos/resumo-identidades.json",
+      "artifactSha256": "0c2655185a92bcd31ef91be8bc7c4e680931b3af43eaeaae923d24d8ed7d787d"
+    },
+    {
+      "niche": "N02",
+      "evidence": "2026-09-26/n02-composicao/resumo-composicao.json",
+      "artifactSha256": "cb71c619a787bd373c96d0b00241eaa9809db9c5b0fa3fe1e0a2a21044a14a00"
+    },
+    {
+      "niche": "N03",
+      "evidence": "2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "artifactSha256": "7d84b5a1ab411d2773f0359718e7ec271e22d2c22e6333b0b7c6dd648a84a746"
+    },
+    {
+      "niche": "N04",
+      "evidence": "2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "artifactSha256": "5a2246892f737dcfd964d473bcac65dd85cba54dc2fe31b1f0e8dcc5d2b549b7"
+    },
+    {
+      "niche": "N05",
+      "evidence": "2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "artifactSha256": "14d09903160a3a9b2226cfaa8c03f5d7d6185f3930e755c92942e8aaa66b05ed"
+    },
+    {
+      "niche": "N06",
+      "evidence": "2026-09-28/n06-imagens/resumo-imagens.json",
+      "artifactSha256": "00972201839cdeb9c004ba1d067f82f49985ecc725b6d866697a3bfc8d20e76e"
+    },
+    {
+      "niche": "N07",
+      "evidence": "2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "artifactSha256": "761d5cebc14ab0dd65d37ac7e05b0dc7adac0ad605206a2919edd8fc75f27c29"
+    },
+    {
+      "niche": "N08",
+      "evidence": "2026-09-29/n08-receitas/resumo-receitas.json",
+      "artifactSha256": "a93457804a8331cfaafbcd22568d47aa700dd39ea29bb722b673d376fe3bd190"
+    },
+    {
+      "niche": "N09",
+      "evidence": "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "artifactSha256": "7b4209a10b324d4f1c72e882c5c89bfd2e6c8fcc7e91deda60ea7c8d6102733f"
+    },
+    {
+      "niche": "N10",
+      "evidence": "2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "artifactSha256": "e4f8e86a3be9967321a772f9a391b46ffd95e7a63639f766ef66d187235ff2ac"
+    },
+    {
+      "niche": "N11",
+      "evidence": "2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "artifactSha256": "aa4626a16870a98537e496cb915c1cd570acc97491cdc01b1bc811602126fba3"
+    },
+    {
+      "niche": "N12",
+      "evidence": "2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "artifactSha256": "b81f390dc7d33d155de202645c4a293aefd7d677a03a19b6b003d8d392dcfa59"
+    },
+    {
+      "niche": "N13",
+      "evidence": "2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "artifactSha256": "529dd4394fb361c2777eab1e3828d8ef97a47a45174619119f35e08ebb42ccda"
+    },
+    {
+      "niche": "N14",
+      "evidence": "2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "artifactSha256": "14d00dcccc23a32f8bd9b7e08598473feb92a273009dff5fe78c5e71d52112f7"
+    },
+    {
+      "niche": "N15",
+      "evidence": "2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "artifactSha256": "7835e52ee28858a462de15a1b366ba365b05aabde60d4b62643fd23374c59ea1"
+    },
+    {
+      "niche": "N16",
+      "evidence": "2026-10-03/n16-casa-material/resumo-programas.json",
+      "artifactSha256": "b067f8226ac9454b478cf5f61da378988bc7513d0f939fcfe09c258007a447cc"
+    },
+    {
+      "niche": "N17",
+      "evidence": "2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "artifactSha256": "6c7d76ccf4dc5feb00522fecf859cc52c34eb98ef6306660766b86774f6f8a04"
+    }
+  ],
+  "next": "N21; cinco rodadas complementares encerradas, quatro parciais com lacunas preservadas; N18-N20 parciais."
+}

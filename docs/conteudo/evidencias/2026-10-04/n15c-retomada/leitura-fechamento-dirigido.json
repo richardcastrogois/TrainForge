@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-C",
+  "researchClosureApproved": false,
+  "readMethod": "JATS primario recebido e secoes de metodos/licenca/suplementos lidas; PDF estatistico de duas paginas lido por pypdf, sem alegar revisao visual ou manual. Corpos preservados pelo coletor.",
+  "sources": [
+    {
+      "record": "c15-dupla-cancer-2026-xml.evidencia.json",
+      "doi": "10.3390/ijerph23010056",
+      "license": "CC BY 4.0",
+      "actor": "dupla_cuidador_e_assistido_praticantes",
+      "delivery": "laboratorio hospitalar ou remoto, CEP/QEP",
+      "dose": {
+        "weeks": 12,
+        "sessionsPerWeek": 2,
+        "minutesRange": [
+          45,
+          60
+        ],
+        "maxSessions": 24,
+        "extraWeeksForMissedSessions": 2
+      },
+      "finding": "Dose individualizada sem instrucao por exercicio; laboratorio nao oferta domestica autonoma. Numero consentido diverge entre 28 na narrativa inicial e 27 na distribuicao dos modos; nao corrigido. Sobrecarga relacional do cuidador aumentou, nao promessa de reducao universal.",
+      "supplement": {
+        "record": "c15-dupla-cancer-anexo.evidencia.json",
+        "outerMember": "ijerph-23-00056-s001.zip",
+        "innerMember": "ijerph-4024155-supplementary.pdf",
+        "bytes": 195379,
+        "sha256": "7bc0102789259d04201df1b66300041a7bc15765e915a7d43954dd0287c33336",
+        "pages": 2,
+        "content": "Contagens de participantes por medida/tempo, nao exercicios."
+      },
+      "selected": false
+    },
+    {
+      "record": "c15-hacer-2026-xml.evidencia.json",
+      "doi": "10.1002/cam4.71709",
+      "license": "CC BY 4.0",
+      "delivery": "duplas coabitantes, instrutores certificados bilingues, duas aulas Zoom e uma gravacao privada por semana",
+      "dose": {
+        "weeks": 12,
+        "sessionsPerWeek": 3
+      },
+      "finding": "Adaptacao de Exercising Together, sobreviventes de cancer e cuidadores; dose individualizada, bandas/halteres e videos privados nao recebidos/licenciados. Nao separar cuidador da dupla nem assumir programa integral publicado.",
+      "selected": false
+    },
+    {
+      "record": "c15-prieto-protocolo-deposito.evidencia.json",
+      "doi": "10.3390/healthcare8010054",
+      "license": "CC BY 4.0",
+      "dose": {
+        "months": 9,
+        "sessions": 72,
+        "sessionsPerWeek": 2,
+        "minutes": 60
+      },
+      "delivery": "treinador presencial em casa, monitor cardiaco e aconselhamento mensal",
+      "finding": "Blocos 10 min aquecimento, 10 aerobico, 20 mobilidade/forca, 10 aerobico, 10 retorno a calma. Aerobico 60-65% HRmax. Nao publica os movimentos, cargas ou progressao individuais. Deposito OA legitimo, desafio PMC anterior preservado.",
+      "selected": false
+    },
+    {
+      "record": "c15-carefit-2025-xml.evidencia.json",
+      "doi": "10.2196/56739",
+      "license": "CC BY 4.0 com credito bibliografico/JMIR/licenca",
+      "family": "PR21",
+      "finding": "41 recrutados, 21 completaram 8 semanas. Duracao da avaliacao nao e ciclo prescrito. Anexos COREQ/entrevistas/pergunta sedentaria, nao manual/videos. Sem eficacia ou risco zero inferidos; autores nao recomendam ainda prosseguir para RCT.",
+      "selected": false,
+      "videoInventory": {
+        "cardiovascular": 10,
+        "muscleAndBalance": 10,
+        "sedentaryBreaks": 4,
+        "mindfulnessVideos": 2,
+        "mindfulnessAudios": 2,
+        "maxVideoMinutes": 10,
+        "hosting": "canal YouTube hidden, nao conteudo recebido/licenciado"
+      }
+    },
+    {
+      "record": "c15-forca-relaxamento-2026-xml.evidencia.json",
+      "doi": "10.3389/fpsyg.2026.1944170",
+      "license": "CC BY 4.0",
+      "studyType": "protocolo, nao resultados",
+      "dose": {
+        "weeks": 10,
+        "strengthSessionsPerWeek": 1,
+        "relaxationSessionsPerWeek": 1
+      },
+      "delivery": "CREA Salamanca, fisioterapeutas licenciados, presencial em grupo",
+      "finding": "Forca funcional individualizada, 1-3 series de 8-12 em geral. Nao rotina em casa. Quatro suplementos PDF identificados, nao recebidos; nao afirmar que nao contem instrucoes.",
+      "selected": false
+    },
+    {
+      "record": "c15-revisao-comportamental-2026-xml.evidencia.json",
+      "doi": "10.3390/geriatrics11050120",
+      "license": "CC BY 4.0",
+      "finding": "Revisao usada somente para localizar primarios; tabela de 7 ensaios nao manual nem eficacia primaria para o APK.",
+      "selected": false
+    },
+    {
+      "record": "c15-farran-2016-xml.evidencia.json",
+      "doi": "10.4172/2161-0460.1000253",
+      "license": "CC BY 4.0",
+      "dose": {
+        "months": 12,
+        "targetMVPAminutesPerWeek": 150,
+        "maxInterventionContacts": 20
+      },
+      "delivery": "orientacao inicial domiciliar e telefonemas com intervencionista PhD",
+      "finding": "Objetivos/movimentos escolhidos e adaptados em conjunto, instrucao de aquecimento/retorno referida mas nao integral publicada. Minutos-alvo nao receita pronta. Testes step/chair nao dose; tarefas domesticas relatadas nao validam automaticamente treino.",
+      "selected": false
+    },
+    {
+      "record": "c15-enrich-protocolo-2011-xml.evidencia.json",
+      "doi": "10.1186/1471-2458-11-236",
+      "license": "CC BY 2.0",
+      "delivery": "quatro aulas semanais e duas quinzenais, fisiologista e nutricionista; pratica em casa",
+      "finding": "Sobreviventes de cancer e cuidadores, caminhada e resistencia com Gymstick; material escrito citado mas nao publicado no XML. Nao presumir kit, profissional ou instrucoes licenciadas do fabricante.",
+      "selected": false
+    },
+    {
+      "record": "c15-atac-alongamento-2024-xml.evidencia.json",
+      "doi": "10.3390/ijerph21101361",
+      "license": "CC BY 4.0",
+      "population": "30 profissionais de reabilitacao de criancas, 18-40 anos, hamstring curto; nao todos os cuidadores nem idosos",
+      "environment": "centros de reabilitacao; nao ensaio domestico",
+      "finding": "Duas aplicacoes agudas em crossover com washout de um dia. Instrucao textual de autoalongamento com pe num degrau; altura nao relatada. Estatico 30 s x8 por perna, 8 min ambos; PNF contagem/tempo ambiguos. Nao subir degrau como treino. Sem ciclo semanal/progressao nem fotos de movimento; unica figura fluxograma.",
+      "selected": false,
+      "correction": {
+        "record": "c15-atac-correcao-2026-xml.evidencia.json",
+        "doi": "10.3390/ijerph23040510",
+        "finding": "Rearranjo de introducao/referencias por similaridade textual com tese; original atualizado e conclusoes inalteradas segundo autores. Nao corrige dose/ambiente."
+      }
+    },
+    {
+      "record": "c15-doenca-avancada-2015-xml.evidencia.json",
+      "doi": "10.1186/s13104-015-1523-z",
+      "license": "CC BY 4.0",
+      "actor": "cuidador convidado a praticar para si e apoiar adesao",
+      "dose": {
+        "weeks": 12,
+        "strengthMinutes": 35,
+        "strengthSets": 3,
+        "strengthRepetitionsRange": [
+          10,
+          15
+        ],
+        "strengthExercisesDeclared": 5,
+        "balanceEnduranceFlexibilityMinutes": 25,
+        "RPE": [
+          13,
+          14
+        ]
+      },
+      "finding": "Duas aulas hospitalares e chamadas bimonthly planejadas (periodicidade nao normalizada por ambiguidade). Cinco exercicios apenas por exemplos; manual/diario preparados mas nao publicados no JATS. 145 pacientes rastreados, somente uma dupla consentiu e desistiu dois dias depois; nenhum paciente completou. Nao eficacia demonstrada em cuidadores ou programa operacional recebido.",
+      "selected": false
+    },
+    {
+      "record": "c15-carefit-site-autores.evidencia.json",
+      "family": "PR21",
+      "finding": "Pagina da equipe Strathclyde lista publicacoes/pessoas/site; copyright2022-2023. Nao entrega manual completo ou concessao comercial dos videos. Nenhum contato, instalacao ou extracao de app.",
+      "selected": false
+    }
+  ],
+  "accessLimits": [
+    {
+      "record": "c15-unijui-pdf-9459.evidencia.json",
+      "finding": "Primeiro GET do segundo endereco PDF observado no DOI falhou TLS padrao; sem corpo, sem desativar verificacao ou repetir. Metadados anteriores nao substituem manual."
+    },
+    {
+      "records": [
+        "c15-busca-deposito-carefit.evidencia.json",
+        "c15-busca-manual-cuidador-licenca.evidencia.json"
+      ],
+      "finding": "HTTP 200 com resultados alheios ao tema; nao evidencia de ausencia de manual. Nenhum link irrelevante seguido."
+    },
+    {
+      "finding": "Na etapa inicial buscas web nao retornaram resposta e navegador interno expirou; deposito OA seguiu funcional. Depois busca web voltou a responder e permitiu pistas/primarios. Limite temporal preservado, nao impossibilidade geral ou prova de ausencia de literatura."
+    }
+  ],
+  "decisions": [
+    "N15-C segue parcial; G03/G04 nao satisfeitos. N15 pai nao fecha com N15-I sozinho.",
+    "Pergunta de produto apresentada: aceitar programa geral para cuidador que cumpre elegibilidade original, sem alegar estudo especifico? Nao respondida neste registro, nao mudar requisito silenciosamente.",
+    "Prosseguir por N18-I, um foco por vez, sem iniciar N21 ou interpretar pendencia como fechamento.",
+    "Nenhuma dose, traducao instrucional final, video, parceria ou prescricao foi criada."
+  ],
+  "updatedAt": "2026-10-05"
+}

@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-11",
+  "niche": "N15-C",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "inventory": "inventario.json",
+  "visualReview": {
+    "source": "c15-shoukr-pfa2022-pdf",
+    "pdfPages": 14,
+    "actuallyViewedPages": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "table1Pages": [
+      6,
+      7
+    ],
+    "renderIsNotReview": true,
+    "hamzaFiguresViewed": false
+  },
+  "pfa2022": {
+    "sourceId": "PR138",
+    "doi": "10.1186/s12912-022-01049-z",
+    "originals": [
+      {
+        "record": "c15-shoukr-pfa2022-pdf.evidencia.json",
+        "bytes": 1535764,
+        "sha256": "aa5631bbb7a845ada0364a19f12e700f392f25378095a74cfdffecccf720d2dc"
+      },
+      {
+        "record": "c15-shoukr-pfa2022-xml.evidencia.json",
+        "bytes": 137677,
+        "sha256": "213c984ff45a20595012cf56d1785c4b87cade3d4aa28d7bf1c8094fe7db31cb"
+      }
+    ],
+    "professionalAuthorship": {
+      "authors": [
+        "Eman Mahmoud Mohammed Shoukr",
+        "Abeer Abd El Rahman Mohamed",
+        "Ayman Mohamed El Ashry",
+        "Heba Ahmed Mohsen"
+      ],
+      "publishedRoles": "Gerontological / psychiatric-community nursing, Faculty of Nursing Alexandria University",
+      "individualExerciseCreatorCredentialProven": false,
+      "departmentAloneProvesCredential": false
+    },
+    "population": {
+      "practitioner": "cuidador_para_si",
+      "recipient": "pessoa com Alzheimer",
+      "included": "18+; ambos sexos; alfabetizado e com acesso internet/consentimento",
+      "observedAgeRange": [
+        21,
+        57
+      ],
+      "meanAgeReported": "41.57 +/- 2.78",
+      "professionalCaregiverEligibilityProven": false,
+      "pilot20ExcludedFromFinal100": true
+    },
+    "design": {
+      "type": "grupo_unico_antes_depois_sem_controle",
+      "participants": 100,
+      "randomized": false,
+      "dataCollection": "July2020-February2021",
+      "isolatedExerciseTrial": false
+    },
+    "intervention": {
+      "locator": "Methods implementation phase; Tab1; PDF5-7",
+      "classSessions": 10,
+      "classMinutes": 60,
+      "classMinutesAreExerciseMinutes": false,
+      "sessions1To6": "Conhecimento e cuidado do assistido, nao treino fisico proprio",
+      "session7": "Autocuidado/estresse; nomes visualizacao, meditacao, respiracao e PMR",
+      "meditationMinutesPerDay": 15,
+      "meditationDoseAppliesToPmrOrStrength": false,
+      "session8": "Importancia/principios/exemplos de exercicios: exemplos e comandos nao publicados na tabela",
+      "sessions9To10": "Sono/nutricao",
+      "physicalStepInstructions": [],
+      "physicalDose": null,
+      "physicalEnding": null,
+      "physicalStopReturn": null,
+      "initialListeningAssessmentSupportRequired": true,
+      "delivery": "Zoom / WhatsApp / Facebook; grupo RAPID/educacao/apoio/reminders/perguntas",
+      "powerpointsVideosPreparedByResearchers": true,
+      "externalTeachingAssetsReceived": false,
+      "supplementFilesReceived": [],
+      "youtubeChannel": "https://youtube.com/channel/UCDqJUy6l46QBceNpNvscOjg",
+      "youtubeWebAccess": "Internal Error; nao retry, login, video baixado ou bypass",
+      "youtubeFailureProvesGlobalAbsence": false
+    },
+    "clinical": {
+      "locator": "Tab5/Tab6 JATS, Results narrative",
+      "stressMeans": [
+        27.5,
+        18.92
+      ],
+      "stressSD": [
+        9.482,
+        3.569
+      ],
+      "stressPairedT": 8.5,
+      "stressPublishedP": "0.000 arredondado, nao probabilidade zero",
+      "stressNarrativeReportedDifference": 8.5,
+      "stressDerivedDifference": 8.58,
+      "narrativeAndDerivedNotSilentlyRepaired": true,
+      "wellbeingMeans": [
+        35.96,
+        40.71
+      ],
+      "wellbeingSD": [
+        9.143,
+        4.785
+      ],
+      "wellbeingPairedT": -4.763,
+      "wellbeingPublishedP": "0.000 arredondado",
+      "withinGroupPositive": true,
+      "betweenGroupOrCausalExerciseBenefitProven": false,
+      "physicalStrengthFatigueMeasured": false
+    },
+    "rights": {
+      "locator": "JATS permissions",
+      "article": "CC BY 4.0, excecoes de material/creditos de terceiros",
+      "articleAutomaticallyLicensesExternalVideos": false,
+      "externalAssetsCommercialGrantDemonstrated": false,
+      "factsAndMethodsDistinctFromExpression": true
+    },
+    "selection": {
+      "status": "referencia",
+      "reason": "Pacote educativo/apoio com sinal proprio antes-depois, nao exercicio operacional clinicamente isolado nem roteiro recebido",
+      "settingNotLiteralHomeExclusion": true,
+      "fatigueOrTimeAllowsRemoveSupport": false,
+      "missing": [
+        "Exemplos/passos/dose/encerramento fisicos originais",
+        "Autoria profissional vinculada a pratica",
+        "Material original necessario e direitos de ativos efetivamente escolhidos",
+        "Nao atribuir resultado do pacote a PMR, respiracao ou exercicio isolado"
+      ]
+    }
+  },
+  "hamza2020": {
+    "sourceId": "PR139",
+    "doi": "10.4103/ijoy.IJOY_70_18",
+    "publication": "2020 Jan-Apr 13(1):62-69, copyright2019",
+    "record": "c15-hamza-yoga2020-xml.evidencia.json",
+    "bytes": 69330,
+    "sha256": "0aeafe3312cad99be937ce06c65a07f863b653ddfd157c4a0e57ae4ee6540820",
+    "professionalAuthorship": {
+      "authors": [
+        "Ameer Hamza",
+        "Aarti Jagannathan",
+        "Sudarshan Hegde",
+        "Naresh Katla",
+        "Shree Raksha U Bhide",
+        "Jagadisha Thirthalli",
+        "Shivarama Varambally",
+        "H R Nagendra"
+      ],
+      "roles": "NIMHANS psychiatric social work/psychiatry; S-VYASA yoga team; trained yoga therapist delivery/model",
+      "individualCreatorCredentialVerified": false
+    },
+    "population": {
+      "practitioner": "cuidador_familiar_para_si",
+      "caregiverAge": [
+        18,
+        60
+      ],
+      "recipient": "psychosis F20/F25/F29 >=3 months, CGI <=4",
+      "languages": [
+        "English",
+        "Kannada",
+        "Hindi"
+      ],
+      "mentalHealthScreen": "SRQ <=8",
+      "exclusions": "Transtorno psiquiatrico/neurologico grave do cuidador; outro familiar com estas doencas; recaida do assistido; curso certificado de yoga/pratica regular mes anterior/treino S-VYASA",
+      "patientAndCaregiverCriteriaSeparated": true
+    },
+    "design": {
+      "phases": [
+        "Reconstrucao e validacao face/conteudo por7experts",
+        "Viabilidade5cuidadores,4semanas,ultimo encontro de1faltante",
+        "RCT48,23yoga/25cuidados usuais,avaliadorcego"
+      ],
+      "screened": 1040,
+      "target": 60,
+      "randomized": 48,
+      "opaqueSealedEnvelopes": true,
+      "latestFollowupCarriedIntoMissing": true,
+      "imputedDataIsObserved": false
+    },
+    "intervention": {
+      "locator": "Methods Phase2/3; Results PhaseI",
+      "manualExistsAccordingToAuthors": true,
+      "manualActuallyReceived": false,
+      "manualAccess": "Autores on request; nenhum contato/solicitacao feito",
+      "manualSupplementsAttached": [],
+      "privateVendorManualDvd": true,
+      "expertValidatedLanguages": 3,
+      "phase2Teaching": "1h/semana em3partes mais quarta sessao conjunta",
+      "phase3MethodsTeaching": "1h/mensal por3meses",
+      "abstractTeaching": "1h/mensal por5meses",
+      "calendarConflictUnresolved": true,
+      "homePractice": "Seguir manual/praticas ensinadas nos dias restantes",
+      "homeSessionMinutes": null,
+      "physicalCommands": [],
+      "physicalEnding": null,
+      "physicalSafetyCriteria": null,
+      "initialYogaTherapistRequired": true,
+      "selfHelpMeansNoProfessionalPreparation": false,
+      "satsangIncluded": true,
+      "observedAdherenceDaysPerMonth": [
+        14,
+        16
+      ],
+      "observedAdherenceIsPrescription": false
+    },
+    "clinical": {
+      "locator": "T2 interaction RMANOVA; T3 time Friedman; Discussion",
+      "burdenInteractionP": 0.88,
+      "qolInteractionP": 0.15,
+      "stressInteractionP": 0.11,
+      "hadsYogaWithinTimeP": 0.129,
+      "hadsControlWithinTimeP": 0.576,
+      "hadsIsBetweenGroupTest": false,
+      "allReportedPrimaryInteractionNonsignificant": true,
+      "nonsignificantProvesEquivalence": false,
+      "nonsignificantProvesNoPossibleBenefit": false,
+      "phase2FeasibilityNotPhase3Efficacy": true,
+      "attritionDiscussion": "35% primeiro mes,14% demais; figura nao visualizada",
+      "effectivenessNotAscertainedDueToAttrition": true
+    },
+    "caregiverSpecificity": {
+      "barriers": [
+        "distancia/deslocamento",
+        "perda de trabalho",
+        "ausencia de substituto no cuidado",
+        "acesso ao instrutor"
+      ],
+      "literalHomeRequirement": false,
+      "homeManualCannotBeReconstructedFrom2012Names": true,
+      "timeFatigueAllowsShortenOriginal": false
+    },
+    "rights": {
+      "article": "CC BY-NC-SA 4.0, JATS permissions",
+      "manualDvdCommercialLicenceReceived": false,
+      "articleDoesNotAutomaticallyLicenseVendorDvd": true,
+      "factsAndMethodsDistinctFromExpression": true
+    },
+    "selection": {
+      "status": "referencia",
+      "reason": "Manual citado nao recebido e eficacia inconclusiva noRCT; nao liberar gestos por titulo selfhelp",
+      "missing": [
+        "Manual original publico e dose/roteiro/preparo/seguranca realmente usados",
+        "Conciliacao calendario3vs5meses",
+        "Autoria/qualificacao individual vinculada",
+        "Direitos dos ativos escolhidos",
+        "Nao converter piloto viabilidade ou resultadoNS em eficacia/equivalencia"
+      ]
+    }
+  },
+  "next": "SomenteN15-C: conferir antecedentes Jagannathan2012 PMC3276932 e Varambally2013 DOI10.1016/j.ajp.2012.09.017 apos deduplicacao. Nao repetir YouTube/Table1web falhos, solicitar manual privado ou reconstruir porIA. G03/G04falsos; N21retida."
+}

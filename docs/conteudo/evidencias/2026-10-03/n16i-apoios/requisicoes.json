@@ -1,0 +1,23 @@
+{
+  "niche": "N16-I",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n16i-otago-registo",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/book/Otago-Exercise-Programme-to-prevent-falls/9926555676301891",
+      "extension": "html",
+      "purpose": "Conferir metadados, data e licenca declarada pelo repositorio; comparar com PDF."
+    },
+    {
+      "id": "n16i-otago-manual",
+      "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "maxBytes": 4194304,
+      "purpose": "Inspecionar manual de exercicio para idosos com profissional; PDF indicado no registo publico, 2.76 MB; limite controlado sem retries."
+    }
+  ],
+  "reused": [
+    "2026-10-03/n16-casa-material/n16-growing-stronger.evidencia.json"
+  ]
+}

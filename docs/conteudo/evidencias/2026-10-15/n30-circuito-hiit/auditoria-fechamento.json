@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-15",
+  "niche": "N30",
+  "researchClosed": true,
+  "scope": "Conteúdo funcional doméstico da edição2019, no recorte de população/kit e instruções publicados, sem novas doses. OutrosHIITs permanecem candidatos parciais.",
+  "selectedLot": "lote-funcional-snacking.json",
+  "criteria": [
+    {
+      "criterion": "Dose/intensidade/progressão/população/kit",
+      "met": true,
+      "evidence": "PR28 edição2019 tem28dias/2sessõesdiárias,5×60s+4×60sdescanso=9min,esforço publicado/semprogressãosemanal,idosostriados/cadeira. Não transformar emHIIT."
+    },
+    {
+      "criterion": "Instrução humana, apoio e direitos",
+      "met": true,
+      "evidence": "SuplementoS1–S5/membrohash/duaspáginasvistas,gesto/apoio/retorno porvariante. ArtigodizCreativeCommonsAttribution irrestrita comcrédito;versão não especificada não vira4.0."
+    },
+    {
+      "criterion": "Contextos/interrupções",
+      "met": true,
+      "evidence": "Quatrocontextosclassificados; cuidador próprio/pausas são pendências explícitas, não obrigação de criar mesmo programa para todos nemdose reduzida."
+    },
+    {
+      "criterion": "Amplitude e separação de candidatos",
+      "met": true,
+      "evidence": "ArtigosArchila/Poon/Ballesta/autorGoulding e referênciaKlika avaliados,problemas/direitosnãocombinados. Pesquisa fechaofuncionaldocumentado, não todoHIIT ou coberturauniversal."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisao clinica de elegibilidade/intensidade para a oferta pretendida",
+    "Revisao editorial pt-PT dos cinco textos",
+    "Credito e direitos do lote final, incluindo indicacao de alteracoes",
+    "Teste real de compreensao/acessibilidade",
+    "Implementacao/testes tecnicos e triagem, sem simulacao de validacao"
+  ],
+  "notClosedFor": [
+    "Archila2021BWT11min: progressão/gestos/familiarização eexpressão/licença finalpendentes",
+    "Poon2023WB-HIIT:7min declarados versus12×(30+10)=8min, licençaHTML conflitante, comandos específicos ausentes",
+    "Ballesta2019/2020:18semanas/fases/exemplos não roteiros de todasasaulas, intensidades/tabela/texto comdiscordâncias",
+    "Klika/Jordan2013: cópia de terceiro não adquirida após rejeição automática",
+    "Goulding/Nuffield: nomes de movimentos e direitos restritos, soma do ciclo não igual título20min"
+  ],
+  "nextNiche": "N31",
+  "releaseApproved": false,
+  "appImplemented": false
+}

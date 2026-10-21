@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "niche": "N40",
+  "status": "concluido_pesquisa_viabilidade_com_limites",
+  "researchClosed": true,
+  "startedAfterN39ResearchClosure": true,
+  "n39Audit": "../n39-alimentos-foto/auditoria-fechamento.json",
+  "criterion": "Separar servido/consumido/desconhecido e pessoa medida; reconhecer alimento não mede massa. Confirmação acessível sem mistura entre consumo do cuidador e assistido.",
+  "n41Started": true,
+  "n15Paused": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closureAudit": "auditoria-fechamento.json",
+  "automaticMassModelTested": false,
+  "automaticMassCapabilityApproved": false
+}

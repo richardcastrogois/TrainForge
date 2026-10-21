@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-05",
+  "scope": "N18-I: manual humano de programa para idosos publicado pelos autores; sem N21, app, clone ou contato com autores.",
+  "requests": [
+    {
+      "id": "i18-agueda-2023-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/fullTextXML",
+      "accept": "application/xml",
+      "extension": "xml",
+      "purpose": "Conferir protocoloCERT, programa24semanas, instrucoes e licenca do artigo e suplementos; bandas nao maquinas nem praca."
+    },
+    {
+      "id": "i18-agueda-repositorio-metadata",
+      "url": "https://api.github.com/repos/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/contents/",
+      "extension": "json",
+      "purpose": "Inventario publico original dos autores, observado na referencia do artigo; localizar guiaA5/A6/A8 e licencia especifica, sem executar arquivos."
+    },
+    {
+      "id": "i18-agueda-english-metadata",
+      "url": "https://api.github.com/repos/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/contents/English?ref=main",
+      "extension": "json",
+      "purpose": "Seguir link publicado pelos autores para conferir guiaA5/A6/A8 e direitos sem presumir licenca do artigo para repositorio."
+    },
+    {
+      "id": "i18-agueda-spanish-metadata",
+      "url": "https://api.github.com/repos/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/contents/Spanish?ref=main",
+      "extension": "json",
+      "purpose": "Seguir link publicado pelos autores para conferir guiaA5/A6/A8 e direitos sem presumir licenca do artigo para repositorio."
+    },
+    {
+      "id": "i18-agueda-readme",
+      "url": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/README.md",
+      "extension": "md",
+      "purpose": "Seguir link publicado pelos autores para conferir guiaA5/A6/A8 e direitos sem presumir licenca do artigo para repositorio."
+    },
+    {
+      "id": "i18-agueda-guia-a5-pdf",
+      "url": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/English/File%20A5.%20Resistance%20exercise%20program%20of%20the%20AGUEDA%20trial%20Paper%20guide.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "maxBytes": 4194304,
+      "purpose": "PrimeiroGET do guia integral publicado pelos autores, indicado na referenciaCERT. Guia de videos emPDF nao significa videos recebidos/licenciados; verificar fonte por ativo."
+    },
+    {
+      "id": "i18-agueda-guia-a6-pdf",
+      "url": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/English/File%20A6.%20Resistance%20exercise%20program%20of%20the%20AGUEDA%20trial%20Video%20guide.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "maxBytes": 2097152,
+      "purpose": "PrimeiroGET do guia integral publicado pelos autores, indicado na referenciaCERT. Guia de videos emPDF nao significa videos recebidos/licenciados; verificar fonte por ativo."
+    },
+    {
+      "id": "i18-agueda-guia-a8-pdf",
+      "url": "https://raw.githubusercontent.com/aguedaprojectugr/Fernandez_Gamez.B-Resistance-Exercise-Program-in-Cognitively-Normal-Older-Adults/main/English/File%20A8.%20Online%20exercise%20program%20guide.pdf",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "maxBytes": 2097152,
+      "purpose": "PrimeiroGET do guia integral publicado pelos autores, indicado na referenciaCERT. Guia de videos emPDF nao significa videos recebidos/licenciados; verificar fonte por ativo."
+    },
+    {
+      "id": "i18-agueda-suplemento-cert",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/supplementaryFiles",
+      "accept": "application/zip",
+      "extension": "zip",
+      "purpose": "Suplemento artigo702KBnominal: verificar CERT e tabelas/manual/aviso de direitos sem presumir que cobre arquivosGithubexternos."
+    }
+  ]
+}

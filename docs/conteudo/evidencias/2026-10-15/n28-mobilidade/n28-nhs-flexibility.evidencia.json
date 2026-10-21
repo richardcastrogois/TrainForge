@@ -1,0 +1,23 @@
+{
+  "id": "n28-nhs-flexibility",
+  "url": "https://www.nhs.uk/live-well/exercise/flexibility-exercises/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:38:03.704954+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir coleção PR05 de flexibilidade e distinguir sustentações definidas e ausentes",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/exercise/flexibility-exercises/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 40848,
+  "bodyFile": "../raw/n28-nhs-flexibility.html",
+  "sha256": "6fa6ea5626029a13dc2bee893cbeab2277233d54aec4ca851b564bf255d5becb"
+}

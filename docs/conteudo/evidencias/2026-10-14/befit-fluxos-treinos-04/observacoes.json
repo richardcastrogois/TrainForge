@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-14",
+  "noContactAuthorized": true,
+  "serial": "emulator-5554",
+  "package": "app.befit",
+  "interactiveSteps": [
+    {
+      "action": "input tap",
+      "coordinates": [
+        540,
+        1890
+      ],
+      "provider": "ADB CLI",
+      "purpose": "Open Get Started",
+      "result": "gender question and continuing-accepts-terms notice",
+      "profileAnswersSubmitted": false
+    }
+  ],
+  "termsConsentPending": true,
+  "premiumOrTrialStarted": false,
+  "accountCreated": false,
+  "libraryTested": false,
+  "observations": [
+    {
+      "key": "befitScope04Start",
+      "observation": {
+        "evidence_id": "ev_99c591bb366db9a29d7ba33045b62019058b71e4427c14462613550bf86b0fae",
+        "subject": null,
+        "provider": {
+          "id": "adb",
+          "name": "Android Debug Bridge",
+          "version": "35.0.2-12147458"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "start_adb_app",
+        "parameters": {
+          "serial": "emulator-5554",
+          "package": "app.befit"
+        },
+        "raw_result": {
+          "stdout": "Starting: Intent { cmp=app.befit/.MainActivity }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: app.befit/.MainActivity\r\nTotalTime: 3811\r\nWaitTime: 3830\r\nComplete\r\n",
+          "stderr": ""
+        },
+        "normalized_result": {
+          "client": {
+            "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+            "path_source": "environment",
+            "version": "35.0.2-12147458",
+            "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+          },
+          "serial": "emulator-5554",
+          "package_name": "app.befit",
+          "component": "app.befit/.MainActivity",
+          "started_activity": "cmp=app.befit/.MainActivity",
+          "reported_activity": "app.befit/.MainActivity",
+          "reported_status": "ok"
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Artifact identity is unavailable for this observation.",
+          "Starting an activity changes device state; am start -W waits for launch completion but no lifecycle observation is captured"
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    {
+      "key": "befitScope04Entry",
+      "observation": {
+        "evidence_id": "ev_fb3e02bd33a8806b49487277412d6bbdbd0deb6df48dbb1074be8013a5a159b7",
+        "subject": null,
+        "provider": {
+          "id": "adb",
+          "name": "Android Debug Bridge",
+          "version": "35.0.2-12147458"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "capture_adb_screen",
+        "parameters": {
+          "serial": "emulator-5554",
+          "output_directory": "C:/dev/rea-tools/evidence/befit-scope04-entry"
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "client": {
+            "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+            "path_source": "environment",
+            "version": "35.0.2-12147458",
+            "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+          },
+          "serial": "emulator-5554",
+          "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope04-entry\\screen.png",
+          "bytes": 29937,
+          "sha256": "198b359b77e2322651cc3c75bf82911054a454d8c9e5c2b53212e89ac542a8e8",
+          "width": 1080,
+          "height": 2340
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Artifact identity is unavailable for this observation.",
+          "The capture is one frame at read time; no recording or interaction occurred"
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    {
+      "key": "befitScope04Settled",
+      "observation": {
+        "evidence_id": "ev_b9cd357d1d72aa3580046b401fc1cc5f20ad81045251d30881d73b3d1a19405b",
+        "subject": null,
+        "provider": {
+          "id": "adb",
+          "name": "Android Debug Bridge",
+          "version": "35.0.2-12147458"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "capture_adb_screen",
+        "parameters": {
+          "serial": "emulator-5554",
+          "output_directory": "C:/dev/rea-tools/evidence/befit-scope04-settled"
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "client": {
+            "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+            "path_source": "environment",
+            "version": "35.0.2-12147458",
+            "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+          },
+          "serial": "emulator-5554",
+          "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope04-settled\\screen.png",
+          "bytes": 562429,
+          "sha256": "983866b1c1ecb0aae4ca59260a6cdd8a6fc53056afbebd8d9cbbc030d2fa57a6",
+          "width": 1080,
+          "height": 2340
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Artifact identity is unavailable for this observation.",
+          "The capture is one frame at read time; no recording or interaction occurred"
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    {
+      "key": "befitScope04Started",
+      "observation": {
+        "evidence_id": "ev_f1391fc877312390de368f9300a2f8464980e6e5db656abfa419dbd82437f81e",
+        "subject": null,
+        "provider": {
+          "id": "adb",
+          "name": "Android Debug Bridge",
+          "version": "35.0.2-12147458"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "capture_adb_screen",
+        "parameters": {
+          "serial": "emulator-5554",
+          "output_directory": "C:/dev/rea-tools/evidence/befit-scope04-started"
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "client": {
+            "binary_path": "C:/Users/richa/AppData/Local/Android/Sdk/platform-tools/adb.exe",
+            "path_source": "environment",
+            "version": "35.0.2-12147458",
+            "installed_path": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+          },
+          "serial": "emulator-5554",
+          "local_path": "C:\\dev\\rea-tools\\evidence\\befit-scope04-started\\screen.png",
+          "bytes": 105389,
+          "sha256": "97c818077067d8d5c26461921609737ab93fda51799f865b68fb990eedabab00",
+          "width": 1080,
+          "height": 2340
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Artifact identity is unavailable for this observation.",
+          "The capture is one frame at read time; no recording or interaction occurred"
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    }
+  ]
+}

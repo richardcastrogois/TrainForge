@@ -1,0 +1,271 @@
+{
+  "id": "N15-C-REVIEEW-THESIS-REVIEW-04",
+  "date": "2026-10-14",
+  "sourceId": "PR68",
+  "source": {
+    "file": "../raw/TESIS_ESPIN_ELORZA_ANDER.pdf",
+    "sha256": "3a9441ae09ece4926b33204b86df0b4681c48549cee6589921eb9643b80ce90f",
+    "pages": 275,
+    "newDownload": false
+  },
+  "method": {
+    "textPagesRead": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273
+    ],
+    "visualPagesInspected": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272
+    ],
+    "comparisonFigure": "../../2026-10-07/raw/c15-revieew-si2-tif.png",
+    "basqueLocalisationHumanReviewed": false,
+    "wholeThesisRead": false
+  },
+  "recovered": {
+    "original24SessionSchedule": {
+      "page": 261,
+      "appendix": 8
+    },
+    "writtenMaintenanceGuidance": {
+      "pages": [
+        262,
+        263
+      ],
+      "appendix": 9
+    },
+    "nineInstructionSheets": {
+      "pages": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272
+      ],
+      "appendix": 10,
+      "illustratedVariants": 27,
+      "generalMovementCuesAndErrorsPresent": true,
+      "completeIndependentApkScriptsApproved": false
+    },
+    "warmup": {
+      "pages": [
+        83,
+        84,
+        85
+      ],
+      "figures": [
+        13,
+        14
+      ],
+      "mobilityOrderIllustrated": true
+    },
+    "activeRest": {
+      "page": 90,
+      "figure": 18,
+      "examplesNotExhaustiveScript": true
+    },
+    "ending": {
+      "pages": [
+        92,
+        93,
+        94
+      ],
+      "figures": [
+        21,
+        22
+      ],
+      "breathingActivitiesDescribed": 4
+    }
+  },
+  "variantComparison": [
+    {
+      "item": "CG-04-SQUAT",
+      "thesisPdfPage": 264,
+      "labelsSummary": "Regular / pausa isometrica / pausa + faixa",
+      "decision": "SI2 explicita 3 segundos, apendice10 nao repete duracao; preservar SI2",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-GLUTE_BRIDGE",
+      "thesisPdfPage": 265,
+      "labelsSummary": "Bilateral / unilateral alavanca curta / longa",
+      "decision": "Correspondencia de variantes e fotografias; nao transferir dose de guia externo",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-REVERSE_LUNGE",
+      "thesisPdfPage": 266,
+      "labelsSummary": "Estatica / dinamica / dinamica + faixa",
+      "decision": "Apendice10 usa zancada; SI2 e titulo da figura15 situam reverse lunge. Nao presumir passada para frente",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-DEAD_BUG",
+      "thesisPdfPage": 267,
+      "labelsSummary": "Bracos / pernas / membros contralaterais",
+      "decision": "Comando geral e fotos publicados; entrada/saida da apresentacao final ainda precisa cotejo",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-BIRD_DOG",
+      "thesisPdfPage": 268,
+      "labelsSummary": "Pernas / membros contralaterais / apoio estreito",
+      "decision": "Correspondencia com SI2; nao adicionar pausa/tempo respiratorio",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-LATERAL_PLANK",
+      "thesisPdfPage": 269,
+      "labelsSummary": "Alavanca curta / media / longa",
+      "decision": "Correspondencia fotografica; alternancia/lados pertencem ao protocolo geral",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-ARM_RAISE",
+      "thesisPdfPage": 270,
+      "labelsSummary": "Faixa baixa / media / alta",
+      "decision": "Titulo espanhol diz flexion de hombro, figura mostra elevacao lateral como SI2; nao corrigir anatomia automaticamente. SI2 mantem 1.7/2.1/2.6kg",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-PULL_APART",
+      "thesisPdfPage": 271,
+      "labelsSummary": "Faixa baixa / media / alta",
+      "decision": "Correspondencia visual com SI2; manter resistencia SI2, nao converter cor em carga",
+      "commercialTranslatedScriptApproved": false
+    },
+    {
+      "item": "CG-04-BICEPS_CURL",
+      "thesisPdfPage": 272,
+      "labelsSummary": "Faixa baixa / media / alta",
+      "decision": "Correspondencia visual com SI2; manter resistencia SI2, nao converter cor em carga",
+      "commercialTranslatedScriptApproved": false
+    }
+  ],
+  "session1SourceRecord": {
+    "purpose": "Dados documentais para revisao de futura ficha visual; nao prescricao nem pratica liberada",
+    "locator": "PDF261/Appendix8, complementado por PDF83-94 e SI2/SI3",
+    "population": "Cuidadores profissionais de pessoas idosas, elegibilidade original; nao cuidador familiar universal nem treino do paciente",
+    "delivery": "Fase original com fisioterapeuta ao vivo e audio/video bidirecional",
+    "warmupCodes": [
+      "MA",
+      "CJ"
+    ],
+    "mainCodes": [
+      "L1A",
+      "U1A",
+      "T1A",
+      "L2A",
+      "U2A",
+      "T2A"
+    ],
+    "mainNames": [
+      "Squat nivel1",
+      "Arm raise nivel1",
+      "Dead bug nivel1",
+      "Glute bridge nivel1",
+      "Pull-apart nivel1",
+      "Bird dog nivel1"
+    ],
+    "sets": 4,
+    "workRestSeconds": [
+      30,
+      30
+    ],
+    "stretchingCodes": [
+      "KC",
+      "LG"
+    ],
+    "breathingCode": "SM",
+    "programmeWeeks": 12,
+    "sessionsPerWeek": 2,
+    "sessionMinutes": 45,
+    "minimumSpacingHours": 48,
+    "startAllowed": false,
+    "newProgrammeCreated": false
+  },
+  "rights": {
+    "thesisCommercialAdaptationGrantIdentified": false,
+    "publishedSi2Si3SeparateCcBy4BasisPreviouslyReceived": true,
+    "siLicenceInheritedByThesis": false,
+    "videoFolderVisited": false,
+    "videosDownloaded": false,
+    "restrictionLocator": "PDF262/Appendix9 item1: uso pessoal dos participantes, pedido de nao compartilhar",
+    "futurePromiseIsCurrentPermission": false,
+    "newContactSent": false
+  },
+  "gapDecision": {
+    "CG04-PARTES-SESSAO": {
+      "newOriginalMaterialReceived": true,
+      "identificationAndStructureSubgapResolved": true,
+      "fullExecutionAndUseQuestionClosed": false,
+      "remaining": "Cotejo da apresentacao final de mobilidade/repouso/termino e direitos dos ativos escolhidos, preservando apoio; nao repetir busca por nomes agora recebidos"
+    },
+    "CG04-EXECUCAO": {
+      "newOriginalCommandsReceived": true,
+      "fullQuestionClosed": false,
+      "remaining": "Conferir parametros SI2 versus apendices e representacao fiel das variantes/entrada/saida, com ativos legais; nao alegar roteiro integral aprovado"
+    }
+  },
+  "status": {
+    "researchClosureApproved": false,
+    "releaseApproved": false,
+    "n15Closed": false,
+    "n21Started": false,
+    "appChanged": false,
+    "figmaChanged": false,
+    "databaseChanged": false,
+    "canonicalQueueAdvanced": false
+  },
+  "next": "Cotejo dirigido e escolha dos ativos da entrega; nao novos artigos genericos, nao substituir supervisao por video."
+}

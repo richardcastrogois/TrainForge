@@ -1,0 +1,60 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 5,
+  "http200": 3,
+  "hashedBodies": 5,
+  "usableBodies": 3,
+  "receipts": [
+    {
+      "id": "c15-hirano2020-html",
+      "record": "2026-10-11/n15c-caminhada-social/c15-hirano2020-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/geriatrics/geriatrics-04-01-108",
+      "status": 200,
+      "bytes": 167180,
+      "sha256": "f284359cb50c7877655b4bd71e6bc665e44288153712b3dcfd3c7cb509904635",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-hirano2011-core-json",
+      "record": "2026-10-11/n15c-caminhada-social/c15-hirano2011-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:20850878%20AND%20SRC:MED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 5103,
+      "sha256": "773a61dd33c175d64583463778e1861c5b3795e52193e7ebbaf1b4503dc3402c",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-gogrow2023-xml",
+      "record": "2026-10-11/n15c-caminhada-social/c15-gogrow2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10581379/fullTextXML",
+      "status": 500,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "usableForReading": false
+    },
+    {
+      "id": "c15-gogrow2020-xml",
+      "record": "2026-10-11/n15c-caminhada-social/c15-gogrow2020-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7605491/fullTextXML",
+      "status": 500,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "usableForReading": false
+    },
+    {
+      "id": "c15-gogrow2023-core-json",
+      "record": "2026-10-11/n15c-caminhada-social/c15-gogrow2023-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36916022%20AND%20SRC:MED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 7276,
+      "sha256": "1a2b1979d87c7ba309248a5b0b6db5d9f941f8465dba89824bd273f6b6019500",
+      "usableForReading": true
+    }
+  ],
+  "empty500IsClinicalArticle": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C FAST: API publica de projeto OSF explicitamente citado em DataAvailability do HTML recebido e registro NCT explicitamente citado. Endpoints canonicos das APIs, nao links de PDF adivinhados ou contorno de acesso. Primeiras consultas locais; nenhuma credencial ou mutacao.",
+  "requests":[
+    {"id":"c15-fast-osf-projeto-json","url":"https://api.osf.io/v2/nodes/gc9qa/","purpose":"Metadados/identidade/licenca do projeto FAST; publicacao de dados nao assume manual ou grant para video."},
+    {"id":"c15-fast-osf-arquivos-json","url":"https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/","purpose":"Listagem raiz do armazenamento publico FAST: buscar roteiro original sem afirmar ausencia em todo reposititorio."},
+    {"id":"c15-fast-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT01993082","purpose":"Registro original FAST, protocolo/documentos/elegibilidade, nao inferir resultado clinico de status concluido."}
+  ]
+}

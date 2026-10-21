@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "niche": "N46",
+  "researchClosed": true,
+  "scope": "Inventário operacional, direitos por camada/versão, limpeza dos testes, custos desconhecidos e hipóteses de oportunidade por contexto; não plano financeiro validado.",
+  "criteria": [
+    {
+      "criterion": "Curadoria/direitos/atualidade e custos",
+      "met": true,
+      "evidence": "contrato-manutencao ebalanco-operacional; catálogo contado offline, sem estimativas comerciais inventadas."
+    },
+    {
+      "criterion": "Públicos/ambientes e cuidador para si",
+      "met": true,
+      "evidence": "Quatro pareceres separados e validações reais pendentes."
+    },
+    {
+      "criterion": "Oportunidade não resultado medido",
+      "met": true,
+      "evidence": "Demanda, disposição a pagar e benefício do produto não medidos."
+    },
+    {
+      "criterion": "Excluir temporários após testes",
+      "met": true,
+      "evidence": "Três recibos e ausência atual verificada;2.653.381.206bytes em arquivos removidos."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Orçamento/responsáveis e processo operacional reais",
+    "Direitos e revisões do lote final",
+    "Testes reais e implementação",
+    "Resolver N18-I/N19-I/N20-I/N21; N15 permanece pausada"
+  ],
+  "appImplemented": false,
+  "releaseApproved": false,
+  "nextNiche": null,
+  "allAnalysesExceptN15Closed": false
+}

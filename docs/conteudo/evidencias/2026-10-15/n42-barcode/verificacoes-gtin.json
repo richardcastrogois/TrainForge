@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-15",
+  "niche": "N42",
+  "checks": [
+    {
+      "check": "Exemplo publicado GS1: soma57, dígito3",
+      "passed": true
+    },
+    {
+      "check": "Dígito alterado é rejeitado",
+      "passed": true
+    },
+    {
+      "check": "Zeros preservados em string",
+      "passed": true
+    },
+    {
+      "check": "URL não é GTIN",
+      "passed": true
+    },
+    {
+      "check": "Inteiro não remove zeros silenciosamente",
+      "passed": true
+    },
+    {
+      "check": "Dígitos não ASCII não aceitos automaticamente",
+      "passed": true
+    },
+    {
+      "check": "Código incompleto rejeitado",
+      "passed": true
+    },
+    {
+      "check": "Código de produto N04 5449000054227",
+      "passed": true
+    },
+    {
+      "check": "Código de produto N04 5601151964804",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "failed": 0,
+  "reusedProductCodesAndReceipts": {
+    "5449000054227": "2026-09-28\\n04-contrato-off\\off-product-nutrition-v36.evidencia.json",
+    "5601151964804": "2026-09-28\\n04-fechamento\\n04-compal-product.evidencia.json"
+  },
+  "newProductLookups": 0,
+  "opticalDecodeTested": false,
+  "cameraUsed": false,
+  "validChecksumProvesProductAuthenticity": false,
+  "scanningProvesConsumption": false,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "androidBarcodeSDKInstalledByThisNiche": false,
+  "fieldClarification": "Sem instalação deSDKbarcodeMLKit nestaN; não afirma ausência doAndroidSDKpreexistente."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n26-va-copyright",
+  "url": "https://department.va.gov/copyright-policy/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:05:53.142196+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Política primária VA: obra governamental e restrições de terceiros/contratados; não hospedagem como domínio público",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://department.va.gov/copyright-policy/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1144847,
+  "bodyFile": "../raw/n26-va-copyright.html",
+  "sha256": "e1eb1929acedbec3bef98b6d7ffe3e4dccd10023176e712ac5c9f5bce0722f5c"
+}

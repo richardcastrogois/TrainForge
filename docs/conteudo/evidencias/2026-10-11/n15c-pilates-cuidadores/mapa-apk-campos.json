@@ -1,0 +1,24 @@
+{
+  "date":"2026-10-11","niche":"N15-C","reading":"leitura-fontes.json","inventory":"inventario.json","releaseApproved":false,"appImplemented":false,
+  "retrieval":"PR135/136 no catalogo-fontes/fontes.json -> localEvidence -> sourceId -> receipt -> URL/collectedAtUtc/sha256/bodyFile -> original pagina PDF/impressa/Table/figure ou caminho JSON registro. Hash do corpo e nao hash de resumo valida proveniencia.",
+  "fields":[
+    {"apkField":"caregiverIsPractitioner","from":"population/design","rule":"Exercicio do proprio cuidador, nao treinamento do paciente; MS54/EDSS/WeeFim nao transferidos ao cuidador."},
+    {"apkField":"sourceCitationAndVersion","from":"title/doi/nctId/original/receipts","rule":"Tese2019, registro2018 e artigo2021 preservados, nao duas replicacoes. Artigo2024 e registro2023 diferem em comparador/elegibilidade."},
+    {"apkField":"professionalAuthorship","from":"authorship/credentialReceipt/PDF2/50/119/CV1","rule":"Fisioterapeuta nominal e formacao sao fonte, nao titulo PhD generico; nao importar contatos ou nascimento."},
+    {"apkField":"audienceEligibility","from":"population/registry/conflicts","rule":"PR13518-60versusregistro18-65 e dor12semanasvs6meses nao elegibilidade automatica; PR13618-55/cuidadorcrianca>3/6meses."},
+    {"apkField":"careWorkloadAndFatigue","from":"population.fatigueAndTime/dose.preparedConsideringSedentaryAndLackOfTime/clinical.fatigue","rule":"Contexto e resultados reais, nao reducao arbitraria de minutos/repeticoes por cansaco."},
+    {"apkField":"compatibleVenue","from":"materials/programme/dose","rule":"Centro nao exclui casa, mas preservar materiais/espaco adequado/preparo/apoio/movimento/dose, sem afirmar teste clinico em toda praca ou academia."},
+    {"apkField":"initialPreparation","from":"dose.initialTeachingAndFiveKeyElementsRepeatedEachSession/authorship.delivery","rule":"Ensino fisioterapeutico real e cinco elementos mantidos. APK nao substitui instrutor exigido."},
+    {"apkField":"requiredEquipment","from":"materials/Table1PDF51","rule":"PR136minder/bandasred-green-blue/bola65cm; cores nao cargas universais. PR135 nao preencher equipamento desconhecido por analogia."},
+    {"apkField":"programmeDose","from":"dose/PDF4 ouPDF36/49/50/registry","rule":"PR1352sets5-10/rest30s/2vezessem6sem. PR13610reps/2vezessem8sem45-60min; 1set vemregistro, nao afirmado igualmente no texto tese."},
+    {"apkField":"programmeSequence","from":"programme/Table1PDF51","rule":"Nomes/ordem existem, nao roteiro novo nem comprovacao isolada de cada gesto."},
+    {"apkField":"progression","from":"programme.progressionNarrativeWeeks/tablePhaseWeekRanges","rule":"3/6 versus1-3/4-6/7-8 divergente; nao definir transicao automatica sem fonte conciliada."},
+    {"apkField":"warmupAndCooldown","from":"programme.warmupOrder/cooldownOrder/dose","rule":"Recebidos5min cada emPR136; nao dizer ausentes, nem completar com video generico."},
+    {"apkField":"exerciseInstructions","from":"programme.instructionRecords/fullStepCommandsAllTableMovementsReceived","rule":"Lista vazia preservada: fotos e nomes nao todos comandos executaveis, testes de avaliacao nao treino."},
+    {"apkField":"stopReturnOrIndividualAdjustment","from":"dose.individualizationByPhysiotherapistWhenStrainOrMusculoskeletalProblem/programme","rule":"Individualizacao pertence a fisioterapeuta, sem inventar limiar/retomada ou converter exclusao de medicamento em conselho para suspender."},
+    {"apkField":"clinicalClaim","from":"clinical/design/locator","rule":"Comparativo versus antesdepois separados, NS preservados/P0.00arredondado, nao superioridade PR135 ou todos resultados positivos PR136."},
+    {"apkField":"visualAsset","from":"original.visualPages/programme.photoFigureGroups","rule":"Pagina efetivamente vista distinta de renderizada. Foto de participantes nao ativo aprovado por presumir consentimento comercial."},
+    {"apkField":"rightsPerAsset","from":"rights/receiptHTMLscriptDC/licenseTXT/hash","rule":"Acesso aberto e depositoEMU naoCCBY comercial. Fatos/metodos separados de traducao/fotos/audio/musica/folheto."},
+    {"apkField":"publicationState","from":"researchClosureApproved/releaseApproved/appImplemented","rule":"Todos falsos; nenhum programa novo aprovado/importado e outrasNs/N21 retidas."}
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "sources": [
+    {
+      "id": "c15-montero2020-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML",
+      "collectedAtUtc": "2026-10-07T22:50:43.135941+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 239623,
+      "sha256": "48acbc37da1e032ad585285c255c279806f0840125a83ca1a3c98c1a7ce716f8",
+      "record": "2026-10-07/n15c-ambiente-compativel/c15-montero2020-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-kamioka2011-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML",
+      "collectedAtUtc": "2026-10-07T22:50:45.855355+00:00",
+      "status": 500,
+      "error": "HTTP 500",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": "2026-10-07/n15c-ambiente-compativel/c15-kamioka2011-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    }
+  ],
+  "newCollectorCalls": 2,
+  "http200Bodies": 1,
+  "usableBodies": 1,
+  "hashedBodies": 2,
+  "monteroSections": [
+    {
+      "locator": "sec2dot1-ijerph-17-07359",
+      "text": "2.1. Participants FFCs were recruited from the FCCP of the Pilarica and Circular PC centres (Valladolid, Spain). Both nurses and physicians participated in the recruitment process. They received a two-hour training session where they were informed of the study aims and inclusion criteria. All FFCs from the two basic health zones who could potentially participate in the study were identified. October 1 was established as a starting point for participant\u2019s recruitment. From that date, all FFCs who attended a medical consultation received oral and written information about the study aims and were invited to participate in the study. If they agreed to participate, it was then determined whether they met the inclusion criteria. Caregivers were included in this study if they were female, had been included in the FCCP, had a direct relationship with the dependent patient and provided continuous care for at least 6 months, were over 50 years of age, and had no changes in medication for at least 3 months prior to assessment. Exclusion criteria of this study associated pathologies that could prevent caregivers from performing the physical exercise programme (moderate-intensity exercise), participation in another family care programme for caregivers, participation in any regular physical activity programme, and caregivers with support from one or more full-time formal caregivers to care for the dependent relatives. The recruitment process ended when the sample size required by the study was reached."
+    },
+    {
+      "locator": "sec2dot5dot2-ijerph-17-07359",
+      "text": "2.5.2. Physical Therapeutic Exercise Programme for Experimental Group Participants of the EG received, as an additional intervention to the conventional FCCP provided by SACYL, a PTE programme. This was a multi-component, functional and neuromotor PTE programme. It consisted of 36 sessions, lasting around 60 min, with a frequency of three sessions per week (12 weeks\u2014February to May). The PTE programme was always carried out in the same order and included the parts described in Table 2 . Table 2 Session structure of physical therapeutic exercise. Session Structure of Physical Therapeutic Exercise Warm-up phase (10 min) Exercise of aerobic activation and active joint mobilisation. Main part (35\u201340 min) Preventive exercises: Coordination; Balance; Agility exercise. Strength exercises (gym weights, and own body weight). Cardiovascular resistance (aerobic exercise): First four weeks: aerobic exercises at 60\u201365% of maximal heart rate (HRmax); Following weeks: intensity increased to 70\u201380% (HR max), which means about 3 to 6 metabolic equivalents. Cooling-down phase (10\u201315 min) Exercises to reach a state of calm: Breathing work; Stretching; Relaxation. The PTE was designed by an interdisciplinary team with extensive experience in PTE in PC, based on the literature and considering the conditions of the FFCs. Further details of the content of all the previous sessions were written in a document. The basic structure of the PTE sessions was in accordance with the recommendations of the American College of Sports Medicine (ACSM) [ 56 ]. All the sessions were conducted by the same PC physiotherapist, who had extensive experience in applying PTE programmes. The sessions were performed in groups and allowed incorporating aimed tasks, dual tasks, and games. As the programme progressed, the difficulty of the physical and cognitive loads increased for the FFCs. Preserving the safety of FFCs during TPE sessions was an objective. It should be noted that although the sessions were developed through group strategy, the trainer paid special attention to the individual needs of each participant, adapting the exercise to their individual condition. The intensity of the aerobic exercise was controlled through the Borg rating of perceived exertion [ 57 ]. In the initial stage, the intensity of exercise was maintained between 11 and 13, reaching up to 15 or 16 points on the Borg scale in the later phases. Regular blood pressure checks were carried out to prevent cardio-cerebral risk. The TPE programme was conducted in the physiotherapy room of the PC centre, always under the same environmental conditions. For the development of the sessions, the existing material in the physiotherapy unit was used: elastic bands (Theraband \u00ae ), weights, mats, chairs, balls, etc."
+    },
+    {
+      "locator": "sec3dot3-ijerph-17-07359",
+      "text": "3.3. Treatment Adherence First of all, the high retention and participation of FFCs in the research must be highlighted. High retention and participation of FFCs was found. In particular, a retention of 91.17% of the FCCs was reported (62/68). The FFCs of the EG completed 86.97% of the TPE sessions (i.e., an average of 31.31 \u00b1 2.52 sessions, with a range of 25\u201336 sessions). The drop-out rate during follow-up was 11.11%. Half of the dropouts were not voluntary (i.e., deaths of care recipients)."
+    },
+    {
+      "locator": "sec3dot4-ijerph-17-07359",
+      "text": "3.4. Satisfaction Both groups (CG and EG) were satisfied with the intervention received. Satisfaction with treatment was higher in the EG (96.87%) than in the CG (83.33%). In EG, we must highlight the high scores obtained in satisfaction with the help received (96.87%) and programme recommendation (yes, definitely: 100%) No adverse effects were recorded in any of the groups. Therapeutic Success Three versions of therapeutic success were defined based on the improvement of different variables observed after the intervention. These were given by obtaining an increase of more than 2.5 points in the physical summary component (PSC) of the SF-36, a decrease of more than 2.3 points in pain intensity (VAS scale), and a decrease of more than 9 points in the subjective burden (ZBI). For defining therapeutic success, predictive models based on the initial typology of participants were estimated. For each of the three estimated models, scores defined as a linear combination of the explanatory variables with the coefficients shown in Table 6 were created. The transformation of these scores by a function allowed us to obtain estimated probabilities of obtaining success based on explanatory variables. Table 6 Therapeutic success. Physical Health Success (PSC SF\u221236) Pain Intensity Success (VAS) Subjective Burden Success (ZBI) Coef. 1 SE1 p1 Coef. 2 SE2 p2 Coef. 3 SE3 p3 Independent term \u22122.98 1.13 0.008 Independent Term 5.83 2.18 0.007 Independent term \u22128.64 4.5 0.050 Subjective burden (Zarit) 2.08 0.069 0.003 Lower back pain (pain charts) 3.15 1.35 0.020 Physical health (PSC SF\u221236) \u22120.18 0.09 0.051 Balance (one leg stand test) 0.34 0.14 0.011 Coef: Coefficient; SE: standar error; p : p-value. By establishing cut-off points at 0.5, 0.62, and 0.54, prognostic rules of therapeutic success in the physical summary component of HRQL, pain intensity (VAS), and subjective burden (ZBI) were obtained with estimated sensitivity/specificity values of 77.8%/78.6%, 80%/82.2%, and 58.8%/60%, respectively."
+    },
+    {
+      "locator": "app1-ijerph-17-07359",
+      "text": "Appendix A Pragmatic Explanatory Continuum Indicator Summary with PRECIS-2 tool [ 52 ]. Figure A1 Pragmatic Explanatory Continuum Indicator Summary-2 (PRECIS-2) wheel for this pragmatic trial. For each domain, higher scores indicate a more pragmatic approach and lower scores a more explanatory approach."
+    }
+  ],
+  "monteroLicence": "\u00a9 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( http://creativecommons.org/licenses/by/4.0/ ).",
+  "supplementElementsCount": 0,
+  "unlinkedDocumentAbsenceGloballyProven": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false
+}

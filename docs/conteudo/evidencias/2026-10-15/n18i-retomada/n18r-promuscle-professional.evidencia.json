@@ -1,0 +1,23 @@
+{
+  "id": "n18r-promuscle-professional",
+  "url": "https://promuscle.nl/promuscle-voor-zorgprofessionals/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:57:21.842891+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Acesso público ao manual, requisitos de formação e licença: não efetuar registro ou compra.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://promuscle.nl/promuscle-voor-zorgprofessionals/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 35360,
+  "bodyFile": "../raw/n18r-promuscle-professional.html",
+  "sha256": "0a1e52e93d68060e0b96211c8cc2457a5f41d5d6b7dab2219ba5e7e938b3bf8c"
+}

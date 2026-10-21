@@ -1,0 +1,23 @@
+{
+  "id": "n39-swin-onnx-card",
+  "url": "https://huggingface.co/onnx-community/swin-finetuned-food101-ONNX/resolve/e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:45.173463+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Cartão da revisão observada; registrar versões, proveniência aspis/Swin e duas avaliações auto-relatadas distintas. Não pesos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/onnx-community/swin-finetuned-food101-ONNX/e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8/README.md?%2Fonnx-community%2Fswin-finetuned-food101-ONNX%2Fresolve%2Fe5e50bfc6425aa546f3b4421ca8bd79d0dd610b8%2FREADME.md=&etag=%22205547a33617c13fc0ab795e12c6f60af28293eb%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 3698,
+  "bodyFile": "../raw/n39-swin-onnx-card.md",
+  "sha256": "fde4d87972ace23f268a0bcb019a9b8b56c4ce0cfc4df65e2842312a91a30fec"
+}

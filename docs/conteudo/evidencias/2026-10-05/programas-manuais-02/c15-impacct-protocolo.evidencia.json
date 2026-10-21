@@ -1,0 +1,24 @@
+{
+  "id": "c15-impacct-protocolo",
+  "url": "https://www.nari.net.au/Handlers/Download.ashx?IDMF=5fa34cf5-2443-430c-9775-a6524e21b47a",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:11:12.893069+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "PDF do protocolo 2013 conforme href publicado no corpo NARI recebido; conferir se manual Otago Plus foi incorporado e quais direitos constam.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.nari.net.au/Handlers/Download.ashx?IDMF=5fa34cf5-2443-430c-9775-a6524e21b47a",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 523240,
+  "bodyFile": "../raw/c15-impacct-protocolo.pdf",
+  "sha256": "0d95ebca283aae827daf7dcec480e3eda225d966e76ccdf06374e12c7092634a",
+  "bodyFormatMatchesRequest": true
+}

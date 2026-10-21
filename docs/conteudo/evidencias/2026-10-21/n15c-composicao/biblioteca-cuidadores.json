@@ -1,0 +1,194 @@
+{
+  "id": "N15-C-MODULAR-11-v1",
+  "date": "2026-10-21",
+  "kind": "Biblioteca documental de onze componentes humanos; não sessão/ciclo novo nem prescrição liberada",
+  "selectionDecision": "decisao-de-recorte.json",
+  "allFiveOriginalProgrammesExecutable": false,
+  "newNumericalPrescriptionInvented": false,
+  "newCombinationClinicallyValidated": false,
+  "humanReviewOfNewPresentationPerformed": false,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "movementAndMediaCountsAreDifferent": true,
+  "selectedSources": ["PR42", "PR68", "PR261"],
+  "sourceGroups": {
+    "CG01": {
+      "primaryPackage": "../../2026-10-12/cg01-estatico/pacote-factual.json",
+      "sourceId": "PR42",
+      "population": "Profissionais de 18-40 anos que cuidam de crianças com atrasos no desenvolvimento, no recorte do estudo; não toda pessoa cuidadora ou idosa.",
+      "authorAndQualificationPointer": "../../2026-10-12/cg01-estatico/pacote-factual.json#/primaryProtocol",
+      "delivery": "Caminho profissional conservador do projeto, sem início autônomo no app. A exigência não é apresentada como supervisão estática demonstrada pelo RCT.",
+      "rights": "Texto técnico do artigo CC BY4 com atribuição/link/alterações. Sem fotos, vídeos ou expressão de guias auxiliares selecionados.",
+      "careContext": "Cuidado assistido deve permanecer coberto. Conferir disponibilidade de pelo menos oito minutos ativos, mais transições/intervalos não quantificados. Casa ou outro local apenas se o movimento, degrau, espaço e apoio forem compatíveis."
+    },
+    "CG04": {
+      "sourceId": "PR68",
+      "authors": ["Ander Espin", "Jon Irazusta", "Ana Rodriguez-Larrad"],
+      "authorContribution": "AE/JI/ARL desenharam o programa; AE, graduado em Fisioterapia em2018 segundo fonte institucional recebida, coordena a intervenção. Resultados descrevem fisioterapeuta experiente nas sessões.",
+      "primaryPackage": "../../2026-10-12/cg04-revieew/pacote-factual.json",
+      "newInstructionEvidence": "../../2026-10-14/befit-fluxos-treinos-04/revieew-cotejo.json",
+      "thesisSha256": "3a9441ae09ece4926b33204b86df0b4681c48549cee6589921eb9643b80ce90f",
+      "si2Figure": "../../2026-10-07/raw/c15-revieew-si2-tif.png",
+      "selectedLevel": 1,
+      "population": "Trabalhador formal de cuidado a idosos,18+, experiência profissional de pelo menos3meses e critérios originais; contrato até fim do estudo é critério separado. Não herdar benefício para familiar não remunerado.",
+      "teachingAndSupport": "Triagem e ensino/correção por fisioterapeuta; supervisão ao vivo com áudio/vídeo bidirecional. Nenhuma ficha substitui esse apoio. Conexão/apoio indisponíveis bloqueiam a oferta supervisionada.",
+      "physicalContext": "Área apta para ficar de pé, supino, quatro apoios e apoio lateral; tapete, faixas de2m com resistência original identificada emkg a100% de alongamento. Não escolher carga por cor de outra marca.",
+      "sourceDoseContext": {
+        "weeks":12,"sessionsPerWeek":2,"sessionMinutes":45,"minimumSpacingHours":48,
+        "mainCircuitMovements":6,"mainCircuits":4,"slotSecondsIncludingRest":60,
+        "initialWorkRestSeconds":[30,30],"weeklyWorkRestInEachFourWeekBlock":[[30,30],[35,25],[40,20],[45,15]],
+        "activeRestBetweenCircuitsMinutes":2,"effortScale":"Borg CR10","effortRange":[3,5],"failureAllowed":false,
+        "repsPerSlot":null,"fixedConcentricEccentricSeconds":null,
+        "sourceDoseIsUniversalPrescriptionForEachExtractedItem":false,
+        "eightSelectedItemsAreNewEightMovementCircuit":false
+      },
+      "sidesAndProgression": "Unilaterais alternam lado entre circuitos no programa original. Fonte começa nível1; níveis2/3 e critério de pelo menos4sessões no nível anterior permanecem contexto, não progressão automática deste lote de variantes1.",
+      "sessionParts": {
+        "sourceLocators":"TesePDF83-85/90/92-94/261; SI3; não novos downloads",
+        "warmup":"5-10min: mobilidade caudal-cranial em ordem Fig13, cerca20s cada, amplitude progressiva; duas atividades aeróbicas daFig14,1-2min cada, escolhidas pela grade original.",
+        "activeRest":"Cerca2min entre circuitos; alongamento dinâmico e respiração, dois exemplos naFig18; exemplos não lista exaustiva.",
+        "cooldown":"5-10min; duas das oito atividades de alongamento Fig21,1-2min cada, e uma de quatro atividades respiratórias, em regra2min, conforme grade. Contagem até100 é descrita como jogo e tem fim próprio; não unificar todos em um timer inventado.",
+        "completeOriginalScheduleReceived":true,
+        "newWholeSessionOrTranslatedWarmCooldownScriptSelected":false,
+        "partsMayBeOmittedInFuturePractice":false
+      },
+      "painAndInterruption": "Fisioterapeuta aplica a ordem publicada: reduzir carga/nível, velocidade, amplitude e, se necessário, interromper. Substituição por movimento tolerado do mesmo grupo é escolha profissional; não foi criado substituto ou protocolo de retomada porIA.",
+      "rights": {
+        "articleAndPublishedSi2Si3":"CC BY4 explícita nos originais recebidos; atribuição aos autores, fonte/link/licença e alterações. Conferir ativos de terceiros antes da eventual composição final.",
+        "thesis":"Não identificado grant de tradução comercial de suas fichas/fotografias. Seleção atual registra fatos de método e localizadores; não traduz/republica o texto expressivo, analogias, layout ou fotos da tese.",
+        "factualInstructionMapping":"Redação técnica independente dos dados de movimento; distinção método/expressão documentada por WIPO e PR166. Isso não autoriza chamar paráfrase de licença nem aprova expressão final do app.",
+        "privateVideosSelected":false,"copyrightGrantForAllThesisAssetsClaimed":false,
+        "legalOpinion":false
+      }
+    },
+    "CG06": {
+      "sourceId":"PR261",
+      "title":"Caregivers FIRST — Participant Workbook, capa July2022,138p",
+      "receipt":"n15m-caregiversfirst-workbook2022.evidencia.json",
+      "sha256":"6d6bb7d229a382b9986c2769c8f53f91e15e9c92f527f97babb2a886d5452ee3",
+      "authorship":"Josh Dadolf, MSW, autor do currículo naPDF2; newsletter institucional Jan2022 PDF6 identifica MSW,LICSW. Equipe FunctionQUERI/DurhamVA, coordenação CourtneyVanHoutvenPhD. Credencial publicada, não registro profissional atual consultado.",
+      "qualificationReceipt":"n15m-first-credencial-newsletter2022.evidencia.json",
+      "population":"Cuidador familiar/amigo de veterano com problemas físicos/mentais, para autocuidado próprio. Material também aponta recursos para cuidadores de demência/em geral; isso não prova eficácia clínica em todos os cuidadores.",
+      "context":"Componentes das aulas1 e3 de currículo de quatro encontros, prática entre encontros, plano de ação, apoio e revisão no encontro seguinte. Não são duas terapias isoladas com efeito do curso completo.",
+      "homeAndCareWorkload":"Workbook indica prática em casa/rotina e recursos/pessoas para ajudar; não abandonar o assistido. Sem treino de transferir/levantar paciente selecionado. Não importar serviços VA ou orientação jurídica americana para Portugal/Brasil.",
+      "delivery":"Aprendizagem no contexto facilitado e revisão da prática; não declarar que o app fornece o facilitador, diagnóstico ou acompanhamento. Elegibilidade e compreensão da apresentação localizada precisam de revisão profissional antes da oferta.",
+      "auxiliarySafety":"NCCIH2016 PDF5-6, separado do currículo: experiências adversas de relaxamento são possíveis e sintomas graves/persistentes exigem profissional. Não confundir distração comum com sofrimento a ignorar. O produto não cria limiar de sintomas, compensação ou retomada autônoma; registrar interrupção e buscar orientação quando houver experiência negativa. Isso é condição conservadora da apresentação, não protocolo clínico FIRST testado.",
+      "rights": {
+        "institutionalPolicyReceipt":"n15m-va-politica-direitos.evidencia.json",
+        "policyMeaning":"A política VA exclui de copyright materiais produzidos pelo governo; admite obras cujos direitos foram transferidos. Hospedagem/financiamento federal sozinhos não dão licença universal.",
+        "productionEvidence":"PDF2 credita currículo FunctionQUERI e publicação institucional DepartmentofVeteransAffairs/DurhamVA. Base institucional para o texto próprio; não presumir grant sobre fotos, logos, vídeos ou anexos de terceiros.",
+        "selectedRepresentation":"Somente fatos de método, parâmetros e localizadores em fichas independentes. Nenhuma página/figura/foto/logo/narração/vídeo copiada para o app ou selecionada como mídia.",
+        "wholeWorkbookOpenLicenceClaimed":false,
+        "researchArticleCcByTransferredToWorkbook":false,
+        "finalCommercialExpressionApproved":false,
+        "beforePublication":"Conferir originalidade da apresentação, atribuição, direitos de qualquer expressão/mídia acrescentada, localização e revisão profissional."
+      }
+    }
+  },
+  "components": [
+    {
+      "id":"CG01-STATIC","group":"CG01","name":"Alongamento estático em degrau",
+      "locator":"PR42 e pacoteCG01 /instructions e/sessionCompletion",
+      "preparation":"Em pé, membro inferior apoiado em degrau apto, joelho estendido e costas retas, conforme descrição do estudo e caminho profissional já conferido.",
+      "movement":"Levar a mão em direção aos dedos do pé e sustentar o alongamento estático dos isquiotibiais, mantendo a configuração publicada; não variantePNF. Movimentos/transições lentos e suaves, sem força excessiva, vêm da orientação auxiliarWorc, não doRCT. Se agravar dor, interromper e buscar orientação médica, conforme camada auxiliarCSP já documentada.",
+      "dose":{"holdSeconds":30,"repetitionsPerLeg":8,"activeMinutesBothLegs":8,"stepHeightCm":null,"restSeconds":null},
+      "ending":"Concluir a dose por perna; transição/retirada do pé não padronizadas peloRCT e mantidas sob orientação profissional, sem sequência nova criada.",
+      "standaloneClinicalEffectClaimed":false
+    },
+    {
+      "id":"CG04-PULL_APART-1","group":"CG04","name":"Pull-apart — resistência1.7kg a100%",
+      "locator":"SI2 linha2/nível1; tesePDF271/ap10",
+      "preparation":"Em pé, banda nas mãos à frente, braços na altura representada no par inicial/finalSI2.",
+      "movement":"Abertura horizontal dos braços mantendo-os paralelos ao chão; ombros afastados das orelhas, sem elevar acima dos ombros.",
+      "ending":"ParSI2 mostra posição inicial frontal e posição aberta. Retorno ao apoio inicial e fim do intervalo no contexto da série supervisionada; não timer/respiração novos.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-BICEPS_CURL-1","group":"CG04","name":"Flexão de cotovelos — resistência1.7kg a100%",
+      "locator":"SI2 linha3/nível1; tesePDF272/ap10",
+      "preparation":"Em pé sobre a banda conformeSI2, mãos nos extremos; cotovelos junto ao tronco.",
+      "movement":"Flexionar os cotovelos mantendo-os junto às costelas e punhos alinhados, sem encolher ombros ou afastar cotovelos.",
+      "ending":"Posições de cotovelos estendidos/fletidos recebidas no parSI2; retorno controlado à posição inicial no ensino profissional, sem velocidade numérica inventada.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-SQUAT-1","group":"CG04","name":"Agachamento regular",
+      "locator":"SI2 linha4/nível1; tesePDF264/ap10",
+      "preparation":"Em pé, pés à largura dos ombros; posição inicial ilustradaSI2.",
+      "movement":"Deslocar quadris para trás e para baixo; evitar joelhos convergindo ou avançando excessivamente, como descrito na ficha. Não impor ângulo universal de90graus.",
+      "ending":"Retorno à posição em pé do par inicial/final; variante1 não tem pausa isométrica3s ou banda acrescentada.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-GLUTE_BRIDGE-1","group":"CG04","name":"Ponte glútea bilateral",
+      "locator":"SI2 linha5/nível1; tesePDF265/ap10",
+      "preparation":"Supino com joelhos fletidos e os dois pés apoiados, conformeSI2; não afastar excessivamente os pés do corpo.",
+      "movement":"Elevar a pelve contraindo os glúteos, no percurso demonstrado; dois apoios inferiores, sem variantes unilaterais.",
+      "ending":"Retorno ao apoio pélvico inicial ilustrado, sem hold ou respiração cronometrados acrescentados. Transferência para/de chão exige capacidade/apoio verificados antes da oferta.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-REVERSE_LUNGE-1","group":"CG04","name":"Afundo reverso — posição estacionária",
+      "locator":"SI2 linha6/nível1; tesePDF266/ap10",
+      "preparation":"Base afastada à frente/atrás representada noSI2, tronco ereto e olhar à frente.",
+      "movement":"Descer o corpo verticalmente aproximando o joelho de trás do chão sem tocar; evitar inclinar/balançar tronco à frente ou avanço excessivo do joelho. Base estacionária; não adicionar passada à frente.",
+      "ending":"Retornar à posição alta da mesma base representada; lado segue alternância do programa entre circuitos, não trocar lado em cada repetição por suposição.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-DEAD_BUG-1","group":"CG04","name":"Dead bug — somente braços",
+      "locator":"SI2 linha7/nível1; tesePDF267/ap10",
+      "preparation":"Supino com membros na configuração inicialSI2, pernas elevadas/fletidas mantidas; região lombar em contato com o chão.",
+      "movement":"Mover/estender os braços no percurso ilustrado sem tocar o chão e sem arquear a lombar. Nesta variante não mover as pernas como emnível2/3.",
+      "ending":"Retorno dos braços à configuração inicial do parSI2; não criar ângulo de quadril, pausa ou comando de apneia não publicados.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-BIRD_DOG-1","group":"CG04","name":"Bird dog — somente pernas",
+      "locator":"SI2 linha8/nível1; tesePDF268/ap10",
+      "preparation":"Quatro apoios, mãos sob ombros e joelhos sob quadris.",
+      "movement":"Estender/elevar a perna no percursoSI2 mantendo tronco reto/estável, sem arquear ou rodar a coluna. Braços permanecem apoiados na variante1.",
+      "ending":"Retorno ao apoio inicial; lado alternado segundo circuito original e orientação ao vivo. Sem hold novo ou apoio estreito de nível3.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG04-LATERAL_PLANK-1","group":"CG04","name":"Prancha lateral — alavanca curta",
+      "locator":"SI2 linha9/nível1; tesePDF269/ap10",
+      "preparation":"Apoio lateral no antebraço sob o ombro e pernas fletidas na configuração curtaSI2.",
+      "movement":"Elevar a pelve mantendo tronco sem rotação, quadris sem recuar e ombro afastado da orelha.",
+      "ending":"Retorno ao apoio inferior inicial ilustrado sob orientação profissional. Não afirmar isometria durante todo o slot nem segundos de hold não publicados.",
+      "doseRef":"sourceGroups.CG04.sourceDoseContext","individualReps":null
+    },
+    {
+      "id":"CG06-SIGNAL","group":"CG06","name":"Signal Breath — Caregivers FIRST",
+      "locator":"WorkbookPDF11-12/19-21; aula1",
+      "preparation":"Avaliar tensão emescala1-5; sentado com costas retas, escolher uma palavra calmante.",
+      "movement":"Inspirar profundamente com atenção à palavra, reter3ou4segundos; expirar suave/lentamente, relaxando pescoço, ombros e costas.",
+      "dose":{"sourceHoldSecondsOptions":[3,4],"sourceInstructionRepeatSequenceTimesOptions":[2,3],"softwareDeducedTotalCycles":null,"dailySessions":null,"totalMinutes":null},
+      "ending":"Fonte manda repetir a sequência2ou3vezes e o log registra tensão após a prática. Não deduzir um ciclo inicial extra, acrescentar retenção4-7-8, número fixo diário ou compensação.",
+      "support":"Aprender no contexto facilitado; fonte prevê prática própria e revisão no encontro seguinte. Retenção não é automaticamente adequada a toda pessoa; revisão/triagem profissional antes de oferta, sem corte clínico novo porIA.",
+      "isStartSignalBreath":false,"isBenson":false
+    },
+    {
+      "id":"CG06-VISUAL","group":"CG06","name":"Visualização de cena calma — Caregivers FIRST",
+      "locator":"WorkbookPDF45/48-49/70/72-73; aula3",
+      "preparation":"Praticar quando não estiver excessivamente estressado, em posição confortável; avaliar tensão1-5, respirar confortavelmente; fechar olhos é opcional na fonte.",
+      "movement":"Imaginar uma cena calma escolhida pela pessoa e explorar o que percebe pelos cinco sentidos, mantendo respiração confortável. Não roteiro literário START, passeio físico ou cena escolhida porIA.",
+      "dose":{"minutesIfPressedForTime":[3,5],"dailySessions":null,"mandatoryWeekCount":null},
+      "ending":"Concluir o período escolhido conforme opção publicada e voltar à avaliação de tensão após o exercício. Fonte não fornece contagem de abertura dos olhos; não importar final3-2-1 do START.",
+      "support":"Aprendizagem no grupo, plano de ação/prática na rotina e revisão no próximo encontro. Nenhuma declaração de equivalência entre aplicativo isolado e currículo completo.",
+      "isStartMeadowOceanOrMountain":false
+    }
+  ],
+  "notSelected": [
+    {"id":"CG04-ARM_RAISE","reason":"Título/comando espanhol flexão de ombro versus plano lateral da fotoSI2; conservar divergência. Não escolher direção anatômica por correção automática."},
+    {"id":"CG04-LEVEL2-3","reason":"Selecionadas oito variantes1 de27ilustradas. As outras19variantes, incluindo os três níveis da elevação do braço, ficam fora do lote de instrução atual; seus dados originais são preservados."},
+    {"id":"CG06-PMR","reason":"Alternativa escrita real existePDF27, mas não detalha todos grupos, tensão/retorno individuais. Não preencher por outra técnica; referência de disponibilidade, não ficha integral selecionada."},
+    {"id":"CG06-TRIANGLE","reason":"PDF78 manda repetir4vezes, PDF79 descreve um ciclo e mais2repetições. Contagens não fundidas ou corrigidas; não selecionar antes de resolver essa versão."},
+    {"id":"CG02-BENSON","reason":"Decisão explícita em decisao-de-recorte.json; não roteiro comercial/material fiel recebido."},
+    {"id":"CG03-START","reason":"Manual participante/áudio/direitos originais pendentes; Caregivers FIRST identificado como nova fonte, não substituição equivalente."},
+    {"id":"CG05-PILATES","reason":"Variantes/calendário/ativos originais incompletos; cartilhaN27 não prova equivalência. Não necessário completar todos candidatos para biblioteca modular autorizada."}
+  ],
+  "compositionLimits":"Os onze componentes não foram somados numa sessão, não têm uma frequência coletiva e não herdam eficácia isolada ou do novo conjunto. Os dois públicos profissionais e o cuidador familiar têm caminhos separados; nenhuma dose migra entre eles. N15-I mantém seus cinco movimentos e público próprios.",
+  "beforePublication":["Revisão clínica e editorial humana de cada apresentação e elegibilidade/contexto","Disponibilidade real do ensino, apoio, espaço e materiais exigidos","Originalidade, atribuição e direitos dos ativos finais; sem herança de permissões de vídeos/fotos terceiros","Localização/acessibilidade/compreensão e testes em etapa própria","Nenhuma execução automática de ciclo, progressão ou ajuste clínico porIA"]
+}

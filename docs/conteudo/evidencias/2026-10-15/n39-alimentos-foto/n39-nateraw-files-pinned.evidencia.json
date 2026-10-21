@@ -1,0 +1,23 @@
+{
+  "id": "n39-nateraw-files-pinned",
+  "url": "https://huggingface.co/api/models/nateraw/food/tree/8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:05:33.755993+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados públicos dos arquivos da revisão selecionada: tamanho e SHA do peso para tornar o plano verificável, sem baixar o arquivo ou executar inferência.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/models/nateraw/food/tree/8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1507,
+  "bodyFile": "../raw/n39-nateraw-files-pinned.json",
+  "sha256": "ec8a79daa5a8aded11fa425b770211b45fc01a4024734d094f26821c9de1e225"
+}

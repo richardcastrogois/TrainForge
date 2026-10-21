@@ -1,0 +1,23 @@
+{
+  "id": "c15-nih-yoga2022-html",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0277009",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:11:11.048334+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primario especifico cuidador2022, CC0 e autoria/instrutor identificados; verificar entrega, resultados e links publicados de materiais.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0277009",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 220863,
+  "bodyFile": "../raw/c15-nih-yoga2022-html.html",
+  "sha256": "c34ed04cca5ee07abfb917728a9045aae475adcdcd70cbc8842ed0559b324756"
+}

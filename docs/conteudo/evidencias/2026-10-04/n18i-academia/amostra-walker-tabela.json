@@ -1,0 +1,2144 @@
+{
+  "date": "2026-10-04",
+  "sourceId": "PR25",
+  "doi": "10.3389/fphys.2018.01933",
+  "sourceSha256": "e37af62a25e237e2a2dd69d2bc1f0a2bbe57a875e3e3fae50146a40b9cff46ca",
+  "programmeWeeks": 14,
+  "tablePhaseCount": 6,
+  "sessionTemplateCount": 12,
+  "movementRowCount": 112,
+  "uniqueMovementCount": 28,
+  "policy": "Group context identifies the printed phase/session; blank dose cells stay null. No load conversion, new programme, clinical approval or media permission inferred.",
+  "rows": [
+    {
+      "id": "I18-W001",
+      "sourceCells": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W002",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W003",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "2",
+        "reps": "14-16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W004",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Chest press",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W005",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lat pulldown",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W006",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Triceps extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W007",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab curl",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W008",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W009",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W010",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W011",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W012",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Shoulder press",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W013",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated row",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W014",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Biceps curl",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W015",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated calf-raise",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W016",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab curl",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W017",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "40–60%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "1–2",
+        "goal": "Muscular endurance",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W018",
+      "sourceCells": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W019",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W020",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W021",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Chest press",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W022",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lat pulldown",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W023",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Triceps extension",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W024",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W025",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab curl",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "50–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W026",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "50–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W027",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W028",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W029",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W030",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Shoulder press",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W031",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated row",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W032",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Biceps curl",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W033",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated calf-raise",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W034",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab curl",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "50–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W035",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "50–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "3–5",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W036",
+      "sourceCells": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "4",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W037",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W038",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W039",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Chest press",
+        "sets": "4",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W040",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lat pulldown",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W041",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Triceps extension",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W042",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W043",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab curl",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W044",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W045",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Leg press",
+        "sets": "4",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": "60 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W046",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W047",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W048",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Shoulder press",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W049",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated row",
+        "sets": "4",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W050",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Biceps curl",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W051",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated calf-raise",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W052",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Twisting Ab",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W053",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "6–7",
+        "goal": "Hypertrophy",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W054",
+      "sourceCells": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "5–8",
+        "percent1RM": "85–90%",
+        "tempo": "2:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W055",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W056",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W057",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lunge ∗",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W058",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W059",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated calf-raise",
+        "sets": "2",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W060",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Bench press ∗",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W061",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Db shoulder press ∗",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W062",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W063",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W064",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Smith-machine squat",
+        "sets": "3",
+        "reps": "5–8",
+        "percent1RM": "85–90%",
+        "tempo": "2:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W065",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W066",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W067",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Db deadlift ∗",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W068",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "4",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W069",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Bent-over row ∗",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "80–85%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W070",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Assisted pull-up",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "60–70%",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W071",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W072",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "12–14",
+        "percent1RM": "BM",
+        "tempo": null,
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "8–9",
+        "goal": "Maximum strength",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W073",
+      "sourceCells": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W074",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W075",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W076",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "3",
+        "reps": "7–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W077",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Calf jumps ∗",
+        "sets": "1",
+        "reps": "7–8",
+        "percent1RM": "BM",
+        "tempo": "0:0",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W078",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lunge jumps ∗",
+        "sets": "2",
+        "reps": "5",
+        "percent1RM": "BM",
+        "tempo": "0:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W079",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Bench press ∗",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W080",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Db shoulder press ∗",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W081",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W082",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W083",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Smith-machine squat",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W084",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W085",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "6–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W086",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "3",
+        "reps": "7–8",
+        "percent1RM": "85-90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W087",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Calf jumps ∗",
+        "sets": "1",
+        "reps": "7–8",
+        "percent1RM": "BM",
+        "tempo": "0:0",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W088",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "CMJ ∗",
+        "sets": "2",
+        "reps": "5",
+        "percent1RM": "BM",
+        "tempo": "0:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W089",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Bent-over row ∗",
+        "sets": "3",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W090",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Assisted pull-up",
+        "sets": "2",
+        "reps": "10–12",
+        "percent1RM": "70–80%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W091",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W092",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "14–16",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "10–12",
+        "goal": "Maximum strength and power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W093",
+      "sourceCells": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1",
+        "movement": "Leg press",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "50–60%",
+        "tempo": "0:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W094",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W095",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W096",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "1",
+        "reps": "7–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W097",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Calf jumps ∗",
+        "sets": "3",
+        "reps": "7–8",
+        "percent1RM": "BM",
+        "tempo": "0:0",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W098",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Lunge jumps ∗",
+        "sets": "3",
+        "reps": "5",
+        "percent1RM": "BM",
+        "tempo": "0:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W099",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Pec Deck",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W100",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Assisted dips ∗",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W101",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W102",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "1"
+      }
+    },
+    {
+      "id": "I18-W103",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": "2",
+        "movement": "Smith-machine squat",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "50–60%",
+        "tempo": "0:2",
+        "interSetRest": "120 s"
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W104",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee extension",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W105",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Knee flexion",
+        "sets": "3",
+        "reps": "4–6",
+        "percent1RM": "90–95%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W106",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Standing calf-raise",
+        "sets": "1",
+        "reps": "7–8",
+        "percent1RM": "85–90%",
+        "tempo": "1:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W107",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Calf jumps ∗",
+        "sets": "3",
+        "reps": "7–8",
+        "percent1RM": "BM",
+        "tempo": "0:0",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W108",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "CMJ ∗",
+        "sets": "3",
+        "reps": "5",
+        "percent1RM": "BM",
+        "tempo": "0:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W109",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Seated row",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W110",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Upright row ∗",
+        "sets": "3",
+        "reps": "8–10",
+        "percent1RM": "80–85%",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W111",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Ab crunch",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    },
+    {
+      "id": "I18-W112",
+      "sourceCells": {
+        "weeks": null,
+        "goal": null,
+        "session": null,
+        "movement": "Back extension",
+        "sets": "2",
+        "reps": "16–20",
+        "percent1RM": "BM",
+        "tempo": "2:2",
+        "interSetRest": null
+      },
+      "editorialGroupContext": {
+        "weeks": "13–14",
+        "goal": "Power",
+        "session": "2"
+      }
+    }
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

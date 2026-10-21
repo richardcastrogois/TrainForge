@@ -1,0 +1,24 @@
+{
+  "id": "c15-moreira-granada-pdf",
+  "url": "https://digibug.ugr.es/bitstream/handle/10481/54876/81256.pdf?isAllowed=y&sequence=4",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:36:13.084143+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir no original se o roteiro de higiene postural/cinesiterapia do cuidador esta completo, sua dose, autoria, entrega, resultados e anexos; nao transferir programa do paciente ao cuidador ou republicar ativos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://digibug.ugr.es/bitstream/handle/10481/54876/81256.pdf?isAllowed=y&sequence=4",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1649803,
+  "bodyFile": "../raw/c15-moreira-granada-pdf.pdf",
+  "sha256": "850b2b4b544b02161195ffbbff302a5aaa91c4bb0fba0b3a67289715c88f6283",
+  "bodyFormatMatchesRequest": true
+}

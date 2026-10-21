@@ -1,0 +1,82 @@
+{
+  "id": "N31-REMO-FARTLEK-20-PRO-01",
+  "date": "2026-10-15",
+  "niche": "N31",
+  "subniche": "Remo em ergômetro, um subnicho apenas",
+  "scope": "Um bloco humano de20minparaadulto já treinado/familiarizado; técnica factual auxiliar documentada. Não curso de iniciação, sessão inteira com warm/cool ou cobertura de outras modalidades.",
+  "sourceIds": [
+    "PR167",
+    "PR200",
+    "PR166"
+  ],
+  "authorshipContributions": {
+    "PR167": "Patricia A.Deuster,PhD,MPH, autora do capítulo3, USU/NavySEALGuide1997: estrutura/dose do bloco.",
+    "PR200": "Tim Donovan,PhD,ASCC,UKSCA2008: técnica e distinção de ergômetro versus barco; qualificação histórica, leituraweb sem cópia local."
+  },
+  "equipment": "Ergômetro de remo com resistência variável, assento/apoios e monitor adequados; modelo/ajuste/manutenção verificados por pessoa competente com manual legítimo disponível, sem presumir equivalência a aparelhos de praça ou barco.",
+  "population": "Adulto previamente treinado e competente no ergômetro, com capacidade/condições verificadas. Contexto original militar/atlético; não treino de início para qualquer idade/diagnóstico.",
+  "preparation": "Técnica já ensinada e conferida, equipamento corretamente ajustado. O bloco não fornece uma aula de ajuste, aquecimento ou transição para quem ainda não domina a máquina. Avaliação e orientação reais antes da oferta; profissional não preenche comandos ausentes nesta pesquisa.",
+  "techniqueFacts": {
+    "source": "PR200, PDF32–33, texto lido naweb",
+    "facts": "Manter coluna neutra e movimento pelas ancas. Na tração, estender primeiro as pernas, iniciar abertura das ancas a meio da extensão e terminar puxando a pega com os braços quando as pernas estão quase estendidas. No retorno, estender braços, inclinar a bacia e só então fletir as pernas para deslizar. Não abrir o tronco cedo nem procurar o maior alcance a qualquer custo.",
+    "note": "Redação independente de fatos técnicos, sem tradução de artigo/analogias/fotos. Procedimento de entrada/saída e controles do modelo devem ser conhecidos; não inventados."
+  },
+  "mainBlock": {
+    "source": "PR167, PDF68/Table3-7Fartleks",
+    "cycles": 10,
+    "cycle": [
+      {
+        "label": "forte",
+        "seconds": 60
+      },
+      {
+        "label": "leve",
+        "seconds": 60
+      }
+    ],
+    "totalSeconds": 1200,
+    "hardSeconds": 600,
+    "easySeconds": 600,
+    "powerWatts": null,
+    "heartRateTarget": null,
+    "targetRpe": null,
+    "cadencePerSegment": null,
+    "intensityMeaning": "Fonte publica forte/leve, sem converter em zona calculada poridade. Objetivo genérico24–30remadas/minno livro não é nova meta individual porintervalo."
+  },
+  "termination": "O décimo ciclo termina com1minleve previsto no próprio bloco. Não equivale a cooldown completo e não foi criado protocolo para sair da máquina.",
+  "warmupSeconds": null,
+  "cooldownSeconds": null,
+  "totalSessionSeconds": null,
+  "frequencyPerWeek": null,
+  "programmeWeeks": null,
+  "progression": null,
+  "compatibility": "Dose e técnica referem-se a ergômetro; adulto já competente preservado, não troca de gestos de lâmina naágua. Não combinar18–22remadas/mindidáticas deDonovan com24–30genéricasUSU como progressão. Não usar tabelas de calorias como prescrição/resultado ou limite30min histórico como garantia clínica atual.",
+  "rights": "Dados/métodos em redação independente, autores e localizadores mantidos. USU aviso próprio, sem grant geral sobre fotos/expressão; UKSCA sem licença de cópia/adaptação confirmada e download rejeitado não executado. Ativo final precisa revisão de originalidade/direitos, não tradução doartigo/tabela nem mídia ou endosso. Concept2 excluído por seus termos e sem coleta posterior.",
+  "contexts": {
+    "idoso_casa": {
+      "status": "pendente",
+      "reason": "Não aplicável automaticamente pelo guia militar; máquina, competência, elegibilidade e suporte individuais precisariam avaliação. Não idoso iniciante/frágil."
+    },
+    "idoso_academia_praca": {
+      "status": "nao_aplicavel_ao_recorte",
+      "reason": "Aparelho de praça com alavancas não é ergômetro calibrado com mesmo curso/monitor, e remo emágua é outra modalidade."
+    },
+    "idoso_academia": {
+      "status": "pendente",
+      "reason": "Possível ter ergômetro, mas só acesso a equipamento não demonstra adequação da dose militar/atlética. Avaliar experiência/condições sem converter em prescrição poridade."
+    },
+    "cuidador_casa_proprio": {
+      "status": "pendente",
+      "reason": "Sem estudo específico de cuidadores ou interrupções. Prática para si apenas se elegível e com máquina; não cuidado simultâneo ou assistência física."
+    }
+  },
+  "interruptions": "Não há regra de fragmentar os20minou compensar intervalo perdido; não assumir sessão equivalente se interrompida por cuidado.",
+  "beforePublication": [
+    "Revisão profissional da composição, elegibilidade, técnica/ensino e equipamento reais",
+    "Revisão de atualidade das fontes históricas, redação pt-PT/originalidade/direitos finais e compreensão",
+    "Completar sessão/programa se essa for a oferta desejada, com outras fontes humanas compatíveis; não gerar dose porIA",
+    "Implementação/testes em etapa própria"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

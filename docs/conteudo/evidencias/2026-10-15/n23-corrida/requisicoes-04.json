@@ -1,0 +1,18 @@
+{
+  "requests": [
+    {
+      "id": "n23-gronorun2-jats",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2936887/fullTextXML",
+      "purpose": "Seguimento2010 da mesma equipe: outroprograma9semanas, nao corrigir13semanas pelo parentesco",
+      "extension": "xml",
+      "accept": "application/xml"
+    },
+    {
+      "id": "n23-gronorun2-pdf",
+      "url": "https://pure.rug.nl/ws/files/2585046/Bredeweg_2010_BMC_Musculoskel_Dis.pdf",
+      "purpose": "PDF original2010para cotejo visual deTable2 e dados do percurso independente",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "n17-nhs-videos",
+  "url": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:36:37.724941+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir seções, IDs de mídia e revisões da instrução doméstica, sem baixar vídeos nem presumir licença por título.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 71534,
+  "bodyFile": "../raw/n17-nhs-videos.html",
+  "sha256": "e31830169566da358d1165d0065cf6c7dcc8c5a5be23a5eb343acc86373e171c"
+}

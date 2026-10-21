@@ -1,0 +1,15 @@
+{
+  "date":"2026-10-07","niche":"N15-C","scope":"criterio_de_ambiente_para_todos_os_exercicios_do_apk","decisionSource":"Dois esclarecimentos diretos sucessivos do autor nesta conversa: centro de reabilitacao nao exclui N15-C; depois revalidar exercicios anteriores/casa/praca por condicoes reais, com fonte clinica preservada.",
+  "supersedes":"Exigir que a pesquisa tenha sido feita estritamente em casa como condicao necessaria de selecao para cuidadores.",
+  "policy":"../../../criterios-exercicios-apk.json",
+  "caregiverOwnExerciseRequired":true,
+  "studyStrictlyAtHomeRequired":false,
+  "sourceExerciseMustRemainUnchanged":true,
+  "acceptsExecutionAtCareCentreOrOtherCompatibleSpace":true,
+  "homeUseMayBeConditionallyFeasible":true,
+  "compatibilityDimensions":["espaco_e_superficie","equipamentos_apoios","tempo_original_mais_transicoes_nao_cronometradas","cansaco_capacidade_e_elegibilidade","avaliacao_ensino_supervisao_exigidos","licenca_e_ativos"],
+  "separateClaims":["Ambiente em que os autores pesquisaram o exercicio.","Viabilidade material de reproduzir sem alterar exercicio em outro ambiente, como casa.","Eficacia/seguranca testadas no novo ambiente, que nao decorrem automaticamente da viabilidade."],
+  "prohibitions":["Reduzir repeticoes/tempo/intensidade ou trocar apoio so por cansaco/tempo disponivel sem variante do autor.","Transformar estudo com cuidador formal18-40anos em indicacao para todo cuidador familiar/idoso.","Dispensar avaliacao/ensino/supervisao ou inventar dose/regra clinica ausente.","Renomear atividade do paciente como exercicio do cuidador."],
+  "priorResearchReevaluation":{"required":true,"scope":"itens_anteriores_descartados_ou_retidos_por_leitura_literal_do_ambiente","allPriorItemsReevaluated":false,"sequence":"Concluir foco N15-C; depois conferir itens das demais Ns antes de avancar21.","otherNsStarted":false,"historicalReadingsPreserved":true,"firstPriority":["PR42Atac/Atak","PR68ReViEEW","PR17Madruga","PR38SanchezCREA","Montero2014/2020 e Kamioka2011 previamente triados"]},
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,"n21Started":false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-caremetoo2020-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7744258/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:11:14.502850+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito OA independente do artigo2020CareMeToo, verificar instrucao/ativos/licenca. Fonte distinta nao contorno do reCAPTCHA PMC, nao nova captura PMC.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7744258/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 103848,
+  "bodyFile": "../raw/c15-caremetoo2020-xml.xml",
+  "sha256": "483b1b9fa761d00812b1a6b31c8d942e747d1e848cee9b6f788a30ebddd54a8b"
+}

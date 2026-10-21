@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "sources": [
+    {
+      "id": "PR156",
+      "name": "BHF — dois guias de ciclismo de 16 semanas, versões separadas",
+      "publisher": "British Heart Foundation; Full Potential somente no vínculo da versão atual V3",
+      "status": "condicional",
+      "author": "Autoria institucional BHF; página atual credita parceria Full Potential. Responsável nominal por cada plano não demonstrado.",
+      "access": "PDF Sofa to Saddle de 25 páginas e PDF London to Brighton V3 de 13 páginas recebidos; 12 páginas selecionadas visualizadas. Equipe e serviço Full Potential recebidos.",
+      "rights": "Nenhuma licença de adaptação e importação comercial destes PDFs demonstrada. Não selecionar fotos, diagramas, layout ou condicionamento complementar para copiar.",
+      "finding": "Ambos têm 16 semanas, mas calendários diferentes. V3 foi ligado na página atual; não transferir seus créditos ao PDF de 25 páginas. Equipe atual declara qualificações UK Athletics de certos membros, não prova autoria nem qualificação específica do plano ciclista.",
+      "receipts": [
+        "n24-bhf-plan",
+        "n24-bhf-current-v3",
+        "n24-fullpotential-team",
+        "n24-fullpotential-coaching"
+      ],
+      "next": "Conferir o responsável e direitos do componente escolhido, sem contato; manter os dois calendários independentes.",
+      "urls": [
+        "https://www.bhf.org.uk/-/media/files/how-you-can-help/l2b/l2b26/205l2b2026training-guide.pdf?hash=40EF0CD94ED4E0534D060C964D8DB24F&rev=f6abf824e6bd4fc080ffb03240634e96",
+        "https://www.bhf.org.uk/-/media/files/get-involved/events/london-to-brighton/l2b-training-guide-v3.pdf?hash=E6A6B01B8844015582C457FE038975CA&rev=b5c80c4672cd4ee1aa6eef52d614976e",
+        "https://www.fullpotential.co.uk/team",
+        "https://www.fullpotential.co.uk/coaching"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    },
+    {
+      "id": "PR157",
+      "name": "Cycling UK — coleção técnica e plano de 10 semanas para 100 km",
+      "publisher": "Cycling UK",
+      "status": "condicional",
+      "author": "Plano atual: By Cycling UK, responsável nominal ainda não demonstrado. Artigo Big Ride Ready 2010: treinador Joe Beer; Steve Fleming é fotógrafo, não autor do treino.",
+      "access": "Índice Training and Skills e artigo do plano recebidos; corpo textual consultado, sem importar fotografias. Artigo Big Ride Ready de abril/maio de 2010 recebido (4 páginas), todas visualmente conferidas; localizadores impressos 50, 51, 53 e 54, sem criar página 52 ausente do extrato.",
+      "rights": "Sem licença comercial e de adaptação específica demonstrada para o plano.",
+      "finding": "Dose semanal, dias de descanso, aquecimento/retorno e intensidades verbais existem. Autor profissional nominal ligado ao plano ainda não identificado. Distâncias/terreno externo não são automaticamente dose equivalente de bicicleta de praça ou ergômetro. A pista nominal de 2010 foi seguida: há preparação para ciclistas regulares/razoavelmente aptos e evento de 100 milhas, sem calendário diário de iniciante. Não prova que Joe Beer escreveu o plano atual de 10 semanas.",
+      "receipts": [
+        "n24-cyclinguk-index",
+        "n24-cyclinguk-plan",
+        "n24-cyclinguk-joebeer2010"
+      ],
+      "next": "Autoria nominal de 2010 localizada. Não transferir para o plano atual; direitos e componente operacional compatível ainda precisam ser fechados. Não repetir os PDFs recebidos.",
+      "urls": [
+        "https://www.cyclinguk.org/tags/training-and-skills",
+        "https://www.cyclinguk.org/article/10-week-training-plan-100km-ride",
+        "https://www.cyclinguk.org/sites/default/files/document/migrated/publication/201005050.pdf"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados.",
+      "professionalEvidence": "PDF 2 credita Coach Joe Beer; site primário do autor indexado declara qualificação British Triathlon Federation. Qualificação observada em busca web, não corpo local recebido nem prova de serviço contratado.",
+      "professionalUrl": "https://www.coachjoebeer.com/About/about.html"
+    },
+    {
+      "id": "PR158",
+      "name": "TrainerDay — biblioteca e documentação de API, com restrições",
+      "publisher": "TrainerDay",
+      "status": "incompativel_zero",
+      "author": "Conteúdo comunitário de usuários; profissional responsável por cada treino não presumido.",
+      "access": "Termos e interface pública API Explorer recebidos. Nenhum endpoint de treinos, exportação ou conta foi usado.",
+      "rights": "Termos vedam comercialização de material alheio; restringem mineração/extração. Exceção de API para distribuição comunitária gratuita ou permissão escrita não autoriza incorporação comercial no TrainForge.",
+      "finding": "Disponibilidade de biblioteca/API demonstrada; conexão operacional e treino profissional licenciável não validados. Alegação do fornecedor sobre proteção de workouts não foi adotada como conclusão jurídica.",
+      "receipts": [
+        "n24-trainerday-terms",
+        "n24-trainerday-api"
+      ],
+      "next": "Referência de oferta; não extrair biblioteca nem contactar o fornecedor.",
+      "urls": [
+        "https://trainerday.com/terms-and-conditions/",
+        "https://api.trainerday.com/api-explorer/"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    },
+    {
+      "id": "PR159",
+      "name": "British Cycling — app Sofa to Saddle, distinto do guia BHF",
+      "publisher": "British Cycling",
+      "status": "condicional",
+      "author": "Fornecedor declara programa da equipe British Cycling; autoria/qualificação por componente não verificada.",
+      "access": "Página oficial local retornou HTTP 403; busca primária e listagem legítima da Google Play são pistas de disponibilidade, não teste do app.",
+      "rights": "Não demonstrados direitos de extração/importação/adaptação. Nenhuma conta, APK ou mídia coletada.",
+      "finding": "Oferta declarada de percurso gratuito de oito semanas. Nome semelhante não prova que use o manual BHF. Não foi testado no emulador nesta rodada.",
+      "receipts": [
+        "n24-sofa-saddle"
+      ],
+      "next": "Manter referência; não repetir 403 ou contornar acesso. Nenhuma relação com BeFit comprovada.",
+      "urls": [
+        "https://www.britishcycling.org.uk/sofatosaddle"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    },
+    {
+      "id": "PR160",
+      "name": "Gillen et al. 2016 — ciclismo estacionário MICT versus SIT",
+      "publisher": "PLOS ONE / McMaster University",
+      "status": "condicional",
+      "author": "Jenna B. Gillen; Brian J. Martin; Martin J. MacInnis; Lauren E. Skelly; Mark A. Tarnopolsky; Martin J. Gibala. Concepção: JBG/MJG.",
+      "professionalEvidence": "Perfil McMaster recebido: Martin J. Gibala, Professor de Kinesiology, PhD e formação em Human Kinetics; contribuição ligada ao artigo.",
+      "access": "Artigo HTML completo e perfil institucional recebidos. Métodos e contribuições consultados; imagens/suplementos não selecionados.",
+      "rights": "CC BY 4.0 no artigo, com crédito e identificação de alterações; não herdar licença de material externo.",
+      "finding": "MICT tem 2 + 45 + 3 minutos, ergômetro e intensidade relativa à FC máxima medida. Familiarização e monitorização em contexto de laboratório. Não é guia autônomo genérico para casa/praça. Frequência tem exceção na semana sete e médias de sessões realizadas; não fabricar calendário de 36 sessões.",
+      "receipts": [
+        "n24-gillen2016",
+        "n24-gibala-professional"
+      ],
+      "next": "Completar instruções operacionais/condições de execução e demonstrar compatibilidade antes de selecionar uma composição; não escolher os sprints all-out como alternativa doméstica de iniciante.",
+      "urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154075",
+        "https://experts.mcmaster.ca/people/gibalam"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    },
+    {
+      "id": "PR161",
+      "name": "UGA PEDB — Ch.1 Indoor Cycling, livro aberto",
+      "publisher": "University of Georgia / UGA PEDB Program",
+      "status": "condicional",
+      "author": "UGA PEDB Program, autoria institucional declarada; profissional nominal responsável pelo capítulo ciclista ainda não demonstrado.",
+      "access": "Índice, introdução, Tips & Tricks e Lingo lidos pela ferramenta web. GETs locais de índice/tips/lingo retornaram 403; ajuste da bicicleta e intensidade também falharam na web. Não declarar os corpos bloqueados recebidos.",
+      "rights": "Livro declara CC BY 4.0 salvo exceções. Vídeos Kaltura externos não foram abertos nem herdam licença automaticamente.",
+      "finding": "Existem descrições escritas de pedalar sentado e de variantes. Não selecionar jumps/sprints nem frases de segurança ou limite universal de 110 rpm sem revisão. Páginas essenciais de ajuste/intensidade incompletas.",
+      "receipts": [
+        "n24-uga-index",
+        "n24-uga-tips",
+        "n24-uga-lingo"
+      ],
+      "next": "Completar autoria/instrução por fonte primária acessível independente; não contornar os 403.",
+      "urls": [
+        "https://open.online.uga.edu/cycling/",
+        "https://open.online.uga.edu/cycling/chapter/tipstricks/",
+        "https://open.online.uga.edu/cycling/chapter/lingo/"
+      ],
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    },
+    {
+      "id": "PR162",
+      "name": "Keogh, Grigg e Vertullo 2017 — protocolo domiciliar de bicicleta e artrose do joelho",
+      "publisher": "Orthopaedic Journal of Sports Medicine / Bond University",
+      "status": "incompativel_zero",
+      "author": "Justin W. L. Keogh, Josephine Grigg e Christopher J. Vertullo; títulos/formação no artigo. Perfil primário Bond confirma Keogh, PhD em Exercise and Sport Science, ASpSc2 e ASCA Level II.",
+      "access": "Artigo e direitos lidos na ferramenta web; perfil Bond observado em busca primária. Sem corpo local novo e sem resultado clínico afirmado a partir do protocolo.",
+      "rights": "CC BY-NC-ND 3.0; não permite a adaptação comercial gratuita pretendida. Nenhum pedido de permissão foi enviado.",
+      "finding": "Planeja oito semanas, quatro sessões semanais, orientação inicial e diário, pessoas 40–80 com diagnóstico e autorização médica. Não é programa geral para idosos nem prova de eficácia; não transplantar instruções para o ensaio de jovens como se a combinação tivesse sido testada.",
+      "receipts": [],
+      "urls": [
+        "https://journals.sagepub.com/doi/10.1177/2325967117694334",
+        "https://bond.edu.au/profile/justin-keogh"
+      ],
+      "next": "Referência documental de entrega doméstica clínica; não importar, não abrir pesquisa N33.",
+      "cost": "Acesso público de pesquisa sem cobrança nesta rodada; equipamento, atendimento, eventos e serviços não contratados nem orçados."
+    }
+  ],
+  "researchClosed": false,
+  "releaseApproved": false
+}

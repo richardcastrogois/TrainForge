@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-07",
+  "scope":"Somente N15-C: originais DanceCARE, autoria profissional, instrucao/contexto/licenca por ativo. Nao baixar videos ou musicas, executar cursos, cadastrar, contatar ou iniciar outra N.",
+  "requests":[
+    {"id":"c15-dancecare-entregaveis-html","url":"https://dancecare-project.eu/public-deliverables/","extension":"html","purpose":"Pagina oficial com links observados ao handbook e guidelines, nao presumir licenca pelo financiamento Erasmus."},
+    {"id":"c15-dancecare-handbook-pdf","url":"https://dancecare-project.eu/wp-content/uploads/2026/06/DanceCARE-handbook-def.docx-2.pdf","accept":"application/pdf","extension":"pdf","purpose":"Manual original66p; conferir autoria, sete sessoes, instrucao/ambiente e direitos, sem substituir facilitacao terapeutica por APK."},
+    {"id":"c15-dancecare-guidelines-pdf","url":"https://dancecare-project.eu/wp-content/uploads/2026/06/D-2.2.-DanceCARE-Guidelines-for-trainers-and-facilitator-SUPER-FINAL.pdf","accept":"application/pdf","extension":"pdf","purpose":"Guidelines anteriores36p do mesmo projeto, comparar fases, dose/entrega e licenca com handbook sem juntar versoes automaticamente."},
+    {"id":"c15-dancecare-profissionais-html","url":"https://dancecare-project.eu/trainers/","extension":"html","purpose":"Perfis oficiais de equipe/trainers: distinguir criacao qualificada, facilitadores e observadores, sem presumir diploma por afiliacao."},
+    {"id":"c15-dancecare-protocolo-html","url":"https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1770820/full","extension":"html","purpose":"Protocolo primario2026; publico/contexto/instrucao/direitos e estudo planejado vs resultados do handbook, sem licenca herdada a videos/musicas externos."}
+  ]
+}

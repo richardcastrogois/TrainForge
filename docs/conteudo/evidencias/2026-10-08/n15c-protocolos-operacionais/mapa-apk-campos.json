@@ -1,0 +1,24 @@
+{
+  "date":"2026-10-08","niche":"N15-C","status":"contrato_documental_nao_importacao",
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "policy":"../../../criterios-exercicios-apk.json",
+  "reading":"leitura-fontes.json","inventory":"inventario.json",
+  "retrievalChain":["fontes.json/sourceId","localEvidence relativo a docs/conteudo","leitura-fontes.json/chave e localizador da versao","sourceReceipts relativo ao diretorio da leitura","receipt/bodyFile relativo ao diretorio do recibo","conferir bytes e SHA256 antes de ler corpo"],
+  "rawBodiesLocalIgnoredNotEmbeddedInApk":true,
+  "fullArticlesOrProtectedArtworkSelectedForApk":false,
+  "sourceCitationAndFactualParaphraseAreSeparateFromAssetCopy":true,
+  "fields":["sourceId","sourceVersion","sourceLocator","receipt","sha256","professionalQualificationEvidence","targetPopulation","practitioner","purpose","evidenceBasis","evidenceLimits","sourceInstructions","sourceDose","sourceProgression","eligibility","proposedExecutionSetting","settingCompatibilityEvidence","timeFatiguePreparationMaterials","deliveryRequirements","assetRights","adaptationReview","approvalState"],
+  "records":[
+    {"sourceId":"PR38","readingKey":"crea2026","locator":"HTMLMethods/Intervention e NCT07388186","use":"Protocolo nao beneficio clinico demonstrado; novos suplementos anunciados nao recebidos.","selected":false},
+    {"sourceId":"PR32","readingKey":"qigongOriginalProtocol","locator":"PDF1/6/10/12/14","use":"RN/apoio e tabela por fases; dose60vs75min em conflito; nao resultados clinicos.","selected":false},
+    {"sourceId":"PR97","readingKey":"nagamatsuAntecedent","locator":"2012PDF3Fig1 versus2015Fig2","use":"Seis fasesnaocuidadoras nao oito posicoes do ensaio cuidador; nao importar segundos.","selected":false},
+    {"sourceId":"PR101","readingKey":"doganPranayama","locator":"PDF5Methods/8Table2/10Limitations; registro e preprint separados","use":"Dose pratica diaria versus3dias/semana; apoio3dias nao dose. Guia/ciclo incompletos, nao reparar respiracao.","selected":false},
+    {"sourceId":"PR102","readingKey":"suiMindBody","locator":"JATSTable1/3 e supplementary-material","use":"Combinado mindfulness+acupressao com ensino; nao incluir acupressao comoexercicio automaticamente ou efeitoisolado.","selected":false},
+    {"sourceId":"PR103","readingKey":"gyybCaregivers","locator":"ProtocoloV7.1PDF1/3/8/14/29/30; artigo apenasweb","use":"30min/2x15explicitamente permitido no artigo, nao universal; viabilidade semcomparador;20cuidad ores naoRCT50.","selected":false},
+    {"sourceId":"PR104","readingKey":"oneStretch","locator":"MHLWPDF237Fig1/238Fig2/798folheto; CORE2019","use":"Doseorig inal3s/exalar/1-2repeticoes. Apoioortopedista e grupo preservados, figuras nao selecionadas; folheto3variantes nao fundido.","selected":false},
+    {"sourceId":"PR105","readingKey":"vrCaregiver2025","locator":"JATS2.1/2.4/Table2/Results/Limitations","use":"Supervisao/dispositivo/camera/plano clinico; stress/dorNS. Nao substituir por APK solo ou celularsemdepthcam.","selected":false},
+    {"sourceId":"PR106","readingKey":"baduanjinStrokeCaregivers","locator":"PDF2criterios/Table2;PDF3intervencao;PDF4Tables3-4;PDF5Table5;politica2026","use":"Cuidador familiar nao paciente; doseprogressiva e enfermagem/continuidadeemcasa. SonoNS12semana/1mes, guiaexternonaorecebido.","selected":false},
+    {"sourceId":"PR107","readingKey":"stabilizationCaregivers2022","locator":"JATS2.1-2.4/Tables2-6","use":"Controle urbano naoexcluido; cinco gestos5minnaosustentacao continua; bloco8sessoes/hospedagem/apoio nao reduzido.","selected":false}
+  ],
+  "releaseRules":["Nao campos faltantes preenchidos porIA.","Nao atribuir efeitos do pacote ao gesto isolado.","Nao omitir suporte exigido ou pressupor servico disponivel.","Nao tratar hash/download/artigoCC como autorizacao de cadaativo.","Revisao humana de localizacao e adaptacao e gate posterior; nao fabricar credencial ou dose para fechar pesquisa."]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n25-delayed2023-jats",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10366873/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:54:07.998865+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Sessão aquática humana4500m em atletas, direitos/contribuições/carga e cointervenção; não converter em programa iniciante ou benefício isolado",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10366873/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 92537,
+  "bodyFile": "../raw/n25-delayed2023-jats.xml",
+  "sha256": "458645cb0647cd63c41f9576456bfca2c9e17a1561eb4b9b156a4a6498a44e22"
+}

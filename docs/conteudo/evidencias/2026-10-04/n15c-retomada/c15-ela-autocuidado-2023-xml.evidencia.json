@@ -1,0 +1,22 @@
+{
+  "id": "c15-ela-autocuidado-2023-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:20:48.065436+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir cartilha/Appendix 1, elegibilidade, entrega, dose e licenca no protocolo humano de cuidadores para si em casa.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 137115,
+  "bodyFile": "../raw/c15-ela-autocuidado-2023-xml.xml",
+  "sha256": "17a4b5451d38fde16f9d34df3f7ea550f97a4517b0b0208818669ce44498d235"
+}

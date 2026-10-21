@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C; primeira coleta em servicos publicos primarios independentes. Sem retry, captcha, execucao de scripts ou contato. Separar enfermeiros de familiares e resultados de protocolos.",
+  "requests":[
+    {"id":"c15-pmr-enfermeiros2022-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9751506/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ensaio PMR demonstrado a enfermeiros que cuidam de pacientes COVID19: verificar sequencia operacional, resultados, suporte e direitos reais."},
+    {"id":"c15-heartfocused2021-metadados","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core","extension":"json","purpose":"Resumo primario piloto respiracao cuidadores; resultado negativo e possivel carga adicional, nao roteiro HeartMath recebido."},
+    {"id":"c15-benson478-alzheimer-registro","url":"https://clinicaltrials.gov/api/v2/studies/NCT06997523","extension":"json","purpose":"Registro primario atual: distinguir protocolo respiratorio planejado de resultados publicados e de material instrucional/licenca."}
+  ]
+}

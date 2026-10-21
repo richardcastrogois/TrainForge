@@ -1,0 +1,24 @@
+{
+  "id": "c15-alzoc-respiracao-pdf",
+  "url": "https://www.alzoc.org/wp-content/uploads/2022/03/Caregiver-Breathing-Techniques-1.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:51:36.773435+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Quatro tecnicas de respiracao para cuidador: unidades/passo, autor/credenciais e limites ausentes; nao importar sem direitos.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.alzoc.org/wp-content/uploads/2022/03/Caregiver-Breathing-Techniques-1.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 148972,
+  "bodyFile": "../raw/c15-alzoc-respiracao-pdf.pdf",
+  "sha256": "6426e9d9e148f20b66c6ac7121f1524439c5b12118fd736c533540438b346aee",
+  "bodyFormatMatchesRequest": true
+}

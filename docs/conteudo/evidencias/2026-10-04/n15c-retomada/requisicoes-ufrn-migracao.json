@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-05",
+  "requests": [
+    {
+      "id": "c15-ufrn-config-publica",
+      "url": "https://repositorio.ufrn.br/assets/config.863cca712c4a1f26d734c65c303bfb07.json",
+      "extension": "json",
+      "purpose": "Configuracao publica observada no HTML DSpace recebido no antigo link da tese; localizar servidor REST atual, sem scripts, credenciais ou contorno."
+    },
+    {
+      "id": "c15-ufrn-handle53566",
+      "url": "https://repositorio.ufrn.br/server/api/pid/find?id=123456789%2F53566",
+      "extension": "json",
+      "purpose": "Resolver somente o identificador persistente observado da tese via REST publico DSpace7 no servidor declarado, sem varrer IDs."
+    },
+    {
+      "id": "c15-ufrn-tese-bundles",
+      "url": "https://repositorio.ufrn.br/server/api/core/items/28c14acf-4ae5-4aeb-9cc8-06c48581e79b/bundles",
+      "extension": "json",
+      "purpose": "Seguir o link bundles observado no JSON da tese para localizar o arquivo ORIGINAL e eventual LICENCE sem interpretar Acesso Aberto como CC BY."
+    },
+    {
+      "id": "c15-ufrn-tese-bitstreams",
+      "url": "https://repositorio.ufrn.br/server/api/core/bundles/7850a2a8-eb40-49a9-81c4-0715f1da9f38/bitstreams",
+      "extension": "json",
+      "purpose": "Seguir bitstreams observado no unico bundle ORIGINAL da tese; sem licenca presumida."
+    },
+    {
+      "id": "c15-ufrn-tese-original-pdf",
+      "url": "https://repositorio.ufrn.br/server/api/core/bitstreams/4c936b7f-5e35-46bc-ba99-4d2c0d2d8d91/content",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "maxBytes": 16777216,
+      "expectedBytes": 12131216,
+      "sizeEvidence": "2026-10-04/n15c-retomada/c15-ufrn-tese-bitstreams.evidencia.json",
+      "purpose": "Primeiro GET do PDF atual observado nos metadados recebidos; tamanho12131216 conhecido, teto16MiB restrito por URL/tamanho/hash. Ler cartilha Appendix B e direitos; antigo link retornou SPA, nao foi repetido."
+    }
+  ]
+}

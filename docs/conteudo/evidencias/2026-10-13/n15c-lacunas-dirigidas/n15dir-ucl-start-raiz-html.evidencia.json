@@ -1,0 +1,24 @@
+{
+  "id": "n15dir-ucl-start-raiz-html",
+  "url": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T03:33:18.384724+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Pagina raiz atual: manuais/MP3 sob formulario e SharePoint, publico e ensino profissional; permissao explicita de embed do video introdutorio nao permissao sobre exercicios/audio. Sem envio de formulario ou downloads de media.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5898,
+  "bodyFile": "../raw/n15dir-ucl-start-raiz-html.html",
+  "sha256": "90bbaf1fdfddc98a98a8a4b677dc432b930839263a46e970bfe862ad645bb0e9",
+  "error": "HTTP 403"
+}

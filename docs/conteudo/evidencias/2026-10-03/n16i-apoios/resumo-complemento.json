@@ -1,0 +1,42 @@
+{
+  "niche": "N16-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 2,
+  "proposedOperations": 0,
+  "fictionalScenarios": 6,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "url": "https://ourarchive.otago.ac.nz/view/pdfCoverPage?download=true&filePid=13408858270001891&instCode=64OTAGO_INST",
+      "sha256": "6c84f636fb7772a7e91a6a4e79218e54844827213bbb3d58129c811e91c07434"
+    },
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-registo.evidencia.json",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/book/Otago-Exercise-Programme-to-prevent-falls/9926555676301891",
+      "sha256": "af1743206dc653d1e48304d896aa243be2755efd6ca1937752ee5f90cf72a52f"
+    },
+    {
+      "record": "2026-10-03/n16-casa-material/n16-growing-stronger.evidencia.json",
+      "url": "https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf",
+      "sha256": "83c1bd5cb8eadb58bc8617bca0fd57572664c94956207679fc85f3c051e2ca43"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n16-casa-material/amostra-programas.json",
+      "artifactSha256": "de0bb4a968ba003ff08ef39972103ca327bf4b32d55bbb950aa19008369d3997"
+    },
+    {
+      "file": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "artifactSha256": "c30f0e4bcb011c0d22819b7199a2743446be5870216464056979e002dca46a49"
+    }
+  ],
+  "next": "N17-I"
+}

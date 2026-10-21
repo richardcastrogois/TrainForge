@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C, complemento da mesma familia PR136, nao novo ensaio. Primeiro GET metadataCORE porPMID da fonte primaria EuropePMC, buscar localizacao publica legitima do artigo2021 distinto da tese2019; semretryURLdoi indisponivel/contato/conta/pagamento.",
+  "requests":[
+    {"id":"c15-pilates-pediatrico2021-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33709771%20AND%20SRC:MED&format=json&resultType=core","accept":"application/json,text/html,text/plain","extension":"json","purpose":"Confronto fonte primariabibliografica da versao2021 comtese2019 PR136; identificarPMC/localizacaoeditor e licenca declarada, nao inferir manual pelo resumo."}
+  ]
+}

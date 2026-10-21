@@ -1,0 +1,23 @@
+{
+  "id": "n25-cdc-water-safety",
+  "url": "https://www.cdc.gov/drowning/prevention/index.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:49:09.113641+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Segurança aquática atual: habilidade prévia, companhia, medicamentos, álcool e contraindicação de apneia prolongada; não dose",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cdc.gov/drowning/prevention/index.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 63698,
+  "bodyFile": "../raw/n25-cdc-water-safety.html",
+  "sha256": "fa19e73a834d3fc7897d24b2406ca02a6239e401a54c9b40c4719c0153b3485a"
+}

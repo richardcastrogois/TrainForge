@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga-individual2023-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10067051/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:04:14.305522+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "DOI10.1002/cam4.5514: instrucoes/apoio/seguranca/dose e resultados proprios do cuidador, nao apenas efeito paciente. Identificar suplemento original sem adivinhar caminho.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10067051/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 140477,
+  "bodyFile": "../raw/c15-yoga-individual2023-xml.xml",
+  "sha256": "98060256cfce97d7f133cabf0775669978178ff33e1c5426ceb242ede26fa8a5"
+}

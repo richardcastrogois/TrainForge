@@ -1,0 +1,65 @@
+{
+  "collectionCount": 4,
+  "hashedBodies": 4,
+  "usableByCollector": 1,
+  "usefulAfterOfflineRecovery": 2,
+  "newNetworkCallsForRecovery": 0,
+  "receipts": [
+    {
+      "id": "c15-kamioka2011-xml",
+      "record": "2026-10-08/n15c-cervical-curto/c15-kamioka2011-xml.evidencia.json",
+      "status": 500,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "HTTP 500",
+      "usableByCollector": false,
+      "offlineFormatRecovery": false
+    },
+    {
+      "id": "c15-cervical2026-pubmed-html",
+      "record": "2026-10-08/n15c-cervical-curto/c15-cervical2026-pubmed-html.evidencia.json",
+      "status": 203,
+      "bytes": 5590,
+      "sha256": "57f795b7b0164e827bc3205e53f570a732eb404651f36e44f37f1cdcd506f839",
+      "error": "HTTP 203",
+      "usableByCollector": false,
+      "offlineFormatRecovery": false
+    },
+    {
+      "id": "c15-cervical2026-registro-json",
+      "record": "2026-10-08/n15c-cervical-curto/c15-cervical2026-registro-json.evidencia.json",
+      "status": 200,
+      "bytes": 11686,
+      "sha256": "1d3a4cd7bddf948060b497def9e04ce0f57c0b9efcf412f38ea704fa1ab54e13",
+      "error": null,
+      "usableByCollector": true,
+      "offlineFormatRecovery": false
+    },
+    {
+      "id": "c15-cervical2026-suplemento-pdf",
+      "record": "2026-10-08/n15c-cervical-curto/c15-cervical2026-suplemento-pdf.evidencia.json",
+      "status": 200,
+      "bytes": 1042170,
+      "sha256": "9a8d2839a14b8f16d7bbe6dc474e950578f559d6a6d41f0fd1f0c7884814a419",
+      "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry",
+      "usableByCollector": false,
+      "offlineFormatRecovery": true,
+      "verifiedActualFormat": "DOCX_OOXML_not_PDF",
+      "receiptModified": false,
+      "docxLimits": {
+        "members": 26,
+        "uncompressedBytes": 1249604,
+        "embeddedObjectsExecuted": false,
+        "macrosExecuted": false,
+        "externalReferencesFetched": false,
+        "extractedToDisk": false
+      },
+      "tableCount": 0,
+      "fullTextRedistributed": false
+    }
+  ],
+  "registryHasResults": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

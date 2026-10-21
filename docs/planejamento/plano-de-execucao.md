@@ -1,6 +1,140 @@
 # Plano de execução
 
+**Estado vigente - 21/10/2026:** N15 concluiu a pesquisa no recorte modular autorizado: onze componentes para cuidadores, separados dos cinco movimentos domesticos para idosos ja conferidos. N01-N46: 40 pesquisas concluidas nos recortes e seis reusos documentados; nenhuma N ativa ou pausada. Nao sao cinco programas originais de cuidadores completos nem conteudo/pratica/publicacao aprovados. Benson/START/Pilates e variantes nao selecionadas preservam suas lacunas. Fonte, autoria, dose, publico, apoio e direitos por componente; sem ciclo novo ou eficacia herdada. Indice: 840 tentativas GET, 694 HTTP200, 780 hashes conferidos, 331 familias. Sem app/Figma/banco, novos contatos, commit ou push. [Entrega, selecao e limites](../conteudo/evidencias/2026-10-21/n15c-composicao/relatorio.md). Registros datados anteriores abaixo sao historicos e nao substituem esta selecao.
+
+**Registro historico — 16/10/2026:** N18–N21 fecharam a pesquisa nos recortes documentados: biblioteca de9componentes de academia, percursos humanos comparados e9componentes específicos de praça. N01–N46:39pesquisas concluídas nosrecortes,6reusos documentados e **N15 pausada/aberta**; nenhumaNativa. Isso não representa45programas integrais executáveis nem aprovação de prática, conteúdo ou funções automáticas. Autoria, dose, apoio, variante, direitos e lacunas das réplicas integrais preservados; sem treino prescrito porIA. Índice833GETs/689HTTP200/775hashes conferidos,328famílias. Temporários de ensaios/leitura excluídos após uso:2.665.357.099bytes/9recibos, ausência verificada; fontes primárias e recibos preservados. Sem app/Figma/banco/publicação/contatos/commit/push. [Resultados, limites e retomada](../conteudo/evidencias/2026-10-15/continuacao-n39-n46.md) Registros datados abaixo são históricos e não substituem este estado.
+
+## Check-in — 15/10/2026
+
+Continuação N39: [contrato e avaliação](../conteudo/evidencias/2026-10-15/n39-alimentos-foto/relatorio.md), 26 novos documentos/32 recibos no nicho, sem inferência. [Ambiente gratuito](../conteudo/evidencias/2026-10-15/n39-alimentos-foto/ambiente-plano.md) aguarda resposta à confirmação apresentada; não fechar N39 ou iniciar N40. N15 permanece pausada e as pendências N18-I/N19-I/N20-I/N21 não foram apagadas.
+
+- [x] N15 pausada e aberta; N21 não iniciada. N22/N23 preservadas como concluídas para pesquisa.
+- [x] [N24](../conteudo/evidencias/2026-10-15/n24-ciclismo/relatorio.md): sessãoMICT50min e ensino/segurança factual, caminho profissional.
+- [x] [N25](../conteudo/evidencias/2026-10-15/n25-natacao/relatorio.md): componentes de piscina para nadador competente, fontes/qualificação/direitos e limites.
+- [x] [N26](../conteudo/evidencias/2026-10-15/n26-yoga/relatorio.md):3posturas sentadas+preparo/término, autoria/dose/transições factuais.
+- [x] [N27](../conteudo/evidencias/2026-10-15/n27-pilates/relatorio.md): três variantes1 de solo com preparo/comandos/dose/retorno; nova fontePR192, sem fingir fichasHBPE recebidas.
+- [x] [N28](../conteudo/evidencias/2026-10-15/n28-mobilidade/relatorio.md): seis fichas funcionais/de flexibilidade com dose e apoios.
+- [x] [N29](../conteudo/evidencias/2026-10-15/n29-equilibrio/relatorio.md): cinco exercícios da coleção NHS; Otago cotejado separadamente.
+- [x] [N30](../conteudo/evidencias/2026-10-15/n30-circuito-hiit/relatorio.md): rotina funcional ES2019, cinco movimentos/9min calculados. HIITs novos permanecem parciais.
+- [x] [N31](../conteudo/evidencias/2026-10-15/n31-remo/relatorio.md): bloco20min de remo para adulto já treinado, sem curso inicial ou sessão inteira.
+- [x] [N32](../conteudo/evidencias/2026-10-15/n32-dor-limitacoes/relatorio.md): relato/contextos/ajuda educativa em Portugal; sem diagnóstico ou triagem automática.
+- [x] [N33](../conteudo/evidencias/2026-10-15/n33-artrose-preoperatoria/relatorio.md): Componentes profissionais pré-artroplastia; roteiro autônomo integral não obtido.
+- [x] [N34](../conteudo/evidencias/2026-10-15/n34-selecao-progressao/relatorio.md): Mapa documental de seleção/progressão; não algoritmo clínico validado.
+- [x] [N35](../conteudo/evidencias/2026-10-15/n35-metricas-gasto/relatorio.md): Método MET60+, 99 atividades e cálculos conferidos; estimativa, não medição individual.
+- [x] [N36](../conteudo/evidencias/2026-10-15/n36-gps-mapa/relatorio.md): Requisitos de GPS/mapa, pausas e permissões; testes de campo pendentes.
+- [x] [N37](../conteudo/evidencias/2026-10-15/n37-android/relatorio.md): Contratos Health Connect; integração real e duplicados pendentes.
+- [x] [N38](../conteudo/evidencias/2026-10-15/n38-apple/relatorio.md): Contratos HealthKit e diferenças; integração nativa e duplicados pendentes.
+- [ ] [N39](../conteudo/evidencias/2026-10-15/n39-alimentos-foto/relatorio.md) ativa: reconhecimento alimentar específico, avaliação e direitos pendentes; N40 não iniciada.
+
+Os fechamentos são de pesquisa no recorte; publicação, suporte real e implementação não aprovados. [Balanço/verificação/retomada](../conteudo/evidencias/2026-10-15/continuacao-n24-n39.md). Nenhuma alteração deapp/Figma/banco, contato ou contratação. Histórico abaixo preservado.
+
+## Check-in N15-C - 06/10/2026
+
+- [x] [Rodada exclusiva](../conteudo/evidencias/2026-10-06/n15c-fechamento/relatorio.md) recebida/lida/registrada: CBT366p, VA54p e PMR9p, fonte/autoria/versao/hash/localizadores/direitos/ausentes no mapa para APK. Nao treino aprovado.
+- [x] 41testes documentais passaram; fichaN15-C41corpos/17dependencias e fila20Ns conferidos. Indice350/291/308 e136familias. Graphify0/42/0, pacote anterior preservado, sem app/Figma/API/banco/commit/push.
+- [ ] Fechamento N15-C: C15-G03/G04 nao atendidos. Decisao do autor sobre programa humano geral rotulado versus especifico pendente; nao transformar lacuna em dose por IA.
+- [ ] N18-I/N19-I/N20-I pendentes, sem novas pesquisas06/10. N21 retida. Snapshots seguintes sao historicos e nao o foco vigente.
+
+## Check-in Sequencial N01-N20 - 04/10/2026
+
+- [x] [Consolidacao](../conteudo/complementos-2026-10-04.md) revisa todas as Ns com novos criterios; N06-N13 e N16 fechados somente para pesquisa nos recortes declarados. N13: menus diarios educativos historicos; N16: kit/apoios Otago com instrutor, nao publicacao ou prescricao individual.
+**Estado verificado - continuacao 05/10/2026:** N18-I ativo/parcial; N15-C, N19-I e N20-I pendentes/parciais. N15-I/N17-I fechados somente para cinco movimentos domesticos ES2019-DOM-01. Fila: seis reusos, dez Ns fechadas, tres pendentes e uma ativa; onze complementos fechados, N15 pai aberto pelo cuidador. N21 nao iniciada. Indice: 320 chamadas / 268 HTTP 200 / 281 hashes, incluindo erros/barreiras; 124 familias. Cartilha ELA integral recebida com CC BY-ND4.0, dose/gesto divergentes e acompanhamento; AGUEDA A5real47paginas lido,10paginas visualizadas, mas instrucoes/dose/licenca externa nao fechados; IST-CIEX clinico especifico nao selecionado. Sem novo pacote operacional aprovado. Suite documental:24testes passaram,15fichas conferidas e pacote domestico com hash preservado. Nao testes clinicos ou do aplicativo. Sem app, Figma, API, banco, commit ou push. Detalhes em `docs/conteudo/complementos-2026-10-04.md`; blocos seguintes preservam snapshots historicos.
+- [x] Continuacao: 15 chamadas novas, 12 HTTP 200, 15 hashes, 11 corpos utilizaveis. FAQ 405, manual 403, relatorio 403 e 200 com desafio nao sao conteudo recebido. Primeira rodada 14 chamadas/9 corpos utilizaveis permanece snapshot; falhas nao repetidas ou contornadas.
+- [x] Quinze fichas e dependencias/hashes/ancoras conferidos; doze testes locais passaram, incluindo 24 mutacoes invalidas rejeitadas na fila/cobertura. Indice regenerado: 222 chamadas / 175 HTTP 200 / 186 hashes; catalogo 98 familias. Nao sao testes de app, pessoas ou eficacia.
+- [x] Graphify incremental: 0 alterados, 42 inalterados, 0 removidos; grafo de lib/ preservado, pesquisa nao reindexada semanticamente.
+- [x] Onze documentos sem erros de links locais; avisos heurísticos de palavras portuguesas/historico. Diff sem erros (avisos LF/CRLF), corpos novos amostrados ignorados; nenhum diff em lib/test/pubspec. Testes do app nao executados, pois nao houve implementacao.
+- [ ] N15-C/N15-I e N17-I a N20-I ainda nao fechados. Somente depois, N21/aparelhos de praca com novos criterios; nao calisthenics nem academia interna equivalente.
+- [ ] Publicacao, revisoes profissionais/editoriais/direitos do lote final/testes reais e implementacao continuam gates separados. Nenhum app/Figma/API/banco/commit/push.
+
+## Snapshot N15-C - Antes da Rodada Sequencial
+
+- [x] Nova decisão do autor registrada: fechar complementos anteriores antes de N21. [Fila operacional N01–N20](../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json); N15-C é o único foco ativo.
+- [x] [Pesquisa de treino próprio do cuidador](../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json): sete páginas e dois PDFs 200/hash, política NIH 403 preservada, sem retry; três dependências e sete cenários fictícios. Sem vídeos/suplementos ou testes de pessoas.
+- [x] [Amostra NIA](../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/amostra-nia.json): texto de 24 páginas extraído, cinco páginas críticas dos dois PDFs inspecionadas; rotina amostral humana/dose/progressão qualitativa, calendário e direitos dos ativos não resolvidos. Folha de autocuidado não equivale a protocolo único combinado.
+- [x] PR17–PR20 classificados e CI05 reutilizado/atualizado, sem duplicar NIA; três incompatibilidades comerciais observadas, artigo PR17 candidato sem manual completo. Índices regenerados: 189 chamadas/150 HTTP 200/154 hashes; 86 fontes/famílias.
+- [x] Referência primária brasileira sobre manual de autocuidado identificada; [coleta](../conteudo/evidencias/2026-10-03/n15c-cuidador-casa/requisicoes-br.json) falhou no TLS antes de receber corpo. Verificação mantida, sem retry; não contar manual/licença obtidos. Onze tentativas N15-C: nove 200, um 403, uma falha TLS.
+- [ ] **N15-C parcial, não fechado.** Buscar pacote operacional por recorte, calendário/variantes e direitos do conjunto, com modo de entrega demonstrado; não remover supervisão, automatizar progressão arriscada ou inventar doses. Sete alternativas triadas com motivos e limites na ficha. Demais complementos seguem na fila; N21 não iniciada.
+- [ ] Revisões finais/pt-PT, validação clínica quando pertinente, testes reais e publicação permanecem gates próprios; nenhum app/Figma/API/banco/commit/push alterado.
+- [x] Validação documental: nove corpos 200, três dependências e sete cenários fictícios; índice global 189 chamadas/150 HTTP 200/154 hashes. Oito testes locais passaram, incluindo 17 mutações inválidas rejeitadas nos dois verificadores de fila/cobertura. Dez documentos sem erros de links locais; avisos heurísticos `todo` são texto português, não campos pendentes. Raw/PDFs/renderizações ignorados, valor nutricional histórico 188 kcal preservado, `git diff --check` sem erros. Graphify: 0 alterados/42 inalterados/0 removidos. Não são testes do app, de pessoas ou de adequação clínica.
+
+## Check-in da Revisão N01–N20 — Quatro Contextos, 03/10/2026
+
+- [x] Relidos os 20 resumos e cinco complementos; [documento canónico](../conteudo/idosos-e-cuidadores.md) e [matriz atual](../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json), com 80 avaliações documentais e critérios individuais N21–N46.
+- [x] Separados idosos em casa, academia de praça e academia, e cuidador treinando para si em casa. N14-C/acompanhamento não demonstra treino próprio; aparelhos de praça não equivalem a calisthenics ou máquinas internas.
+- [x] Fechamentos gerais e matriz inicial preservados; lacunas por público/ambiente explícitas. Zero nova coleta, nenhuma mudança em app/Figma/API/banco, fonte/licença, commit ou push.
+- [x] Verificador confirmou 20 Ns, cinco complementos, 80 avaliações e 26 critérios futuros; oito mutações inválidas rejeitadas. Nove documentos sem erros/links locais quebrados; avisos heurísticos de palavras portuguesas/histórico conferidos. Graphify incremental: 0 alterados/42 inalterados/0 removidos. Testes são do verificador documental, não do app ou de adequação clínica.
+- [ ] Programas domésticos próprios de cuidadores, programas aplicáveis a idosos em praça/academia, direitos/instruções/revisão e testes reais continuam pendentes. Próximo N21, sem execução iniciada pela auditoria.
+
 Data: 17/09/2026. Proposta; a aprovação de uma etapa não aprova automaticamente decisões das próximas. O foco imediato continua sendo definir o produto e o Figma, não programar o aplicativo.
+
+## Check-in dos cinco complementos — 03/10/2026
+
+- [x] Uma rodada por vez: N14-C fechado para pesquisa no recorte de requisitos; N15-I/N16-I/N17-I/N11-I parciais com limites explícitos, [36 cenários fictícios](../conteudo/idosos-e-cuidadores.md). Não são testes de pessoas/app.
+- [x] Oito novas páginas/corpos 200 e dois 404 posteriores N19 preservados; índice 178 chamadas/141 HTTP 200/144 hashes; catálogo 82 fontes.
+- [x] PDF Otago de 72 páginas e seis páginas visualmente inspecionadas; metadados de licença web distintos do shell local. Coletor: padrão 2 MiB, exceção explícita 4 MiB somente PDF; quatro testes sem rede aprovados.
+- [x] Graphify incremental: 0 alterados/42 inalterados/0 removidos. N18–N20 parciais registrados; próximo N21.
+- [x] Fechamento local: oito fichas/dependências revalidadas, dez documentos sem erros/links locais quebrados, cinco scripts compilados em memória e dois corpos 404/hash conferidos. Avisos de placeholder são heurísticos de palavras portuguesas/histórico; diff sem erros, raw ignorado. Não foram executados testes do app ou de utilizador.
+- [ ] Direitos por ativo, revisão clínica/nutricional/pt-PT, legitimidade de acesso/representação e testes reais continuam pendentes. App/Figma/API/banco não alterados; etapa 02 não iniciada.
+
+## Check-in N20 — 03/10/2026
+
+- [x] Recontar 75 amostras wger preservadas, sem coleta nova; candidatos lexicais 7/3/3/2/0/3, não matches semânticos. [Amostra](../conteudo/evidencias/2026-10-03/n20-instrucao-academia/amostra-instrucao.json), [ficha](../conteudo/evidencias/2026-10-03/n20-instrucao-academia/pesquisa-recorte.json), [resumo](../conteudo/evidencias/2026-10-03/n20-instrucao-academia/resumo-complemento.json).
+- [x] Rodada **parcial**: zero mídias inspecionadas nesta rodada, zero ativo/match aprovado; ID 1022 bloqueado e direitos/pt-PT/acessibilidade pendentes. Próximo N21.
+
+## Check-in N19 — 03/10/2026
+
+- [x] Comparar duas fontes originais no leitor web; preservar dois 404 do coletor, sem retries. [Ficha e limites](../conteudo/evidencias/2026-10-03/n19-academia-percursos/pesquisa-recorte.json), [resumo](../conteudo/evidencias/2026-10-03/n19-academia-percursos/resumo-complemento.json).
+- [x] Rodada **parcial**: zero corpo local de programa completo, direitos/base/instrução e cobertura adicional pendentes. Não copiar dieta ou indicação de medicamento. Próximo N20.
+
+## Check-in N18 — 03/10/2026
+
+- [x] Retomar duas páginas preservadas sem coleta nova: rotina A/B, seis movimentos, dose, progressão e limite de três meses; [ficha](../conteudo/evidencias/2026-10-03/n18-academia-iniciante/pesquisa-recorte.json), [resumo](../conteudo/evidencias/2026-10-03/n18-academia-iniciante/resumo-complemento.json).
+- [x] Rodada encerrada **parcial**: licença comercial gratuita e instrução/adequação pendentes; iniciante com barra não equivale a idoso/dependente. Próximo N19.
+
+## Check-in N14-C — 03/10/2026
+
+- [x] Fechar pesquisa de requisitos do cuidador: nove operações propostas e dez cenários fictícios; duas fontes portuguesas 200/hash, fonte CDC e duas dependências reutilizadas. [Resumo](../conteudo/evidencias/2026-10-03/n14c-cuidador/resumo-complemento.json).
+- [ ] Partilha/autorização real, representação/base jurídica do produto, direitos, segurança e testes com público pendentes. Não autorizar cuidador nem coletar dados de pessoa real. Próximo N15-I.
+
+## Check-in idosos e cuidadores — estado inicial da auditoria, 03/10/2026
+
+- [x] Rever N01–N17 por população, capacidade/apoios e papel do utilizador; preservar os fechamentos gerais. [Auditoria](../conteudo/idosos-e-cuidadores.md) e [resumo](../conteudo/evidencias/2026-10-03/revisao-idosos-cuidadores/resumo-revisao.json).
+- [x] Conferir duas fontes institucionais específicas 200/hash, uma política reutilizada, 17 referências e sete cenários fictícios. Corrigir revista/data e elegibilidade N15 contra artigo local.
+- [x] Explicitar idosos/cuidadores na visão e na categoria casa. Graphify: 0 alterados, 42 inalterados, 0 removidos; índice 168 chamadas/133 HTTP 200/134 hashes, catálogo 73 fontes.
+- [ ] Complementos N14-C/N15-I/N16-I/N17-I/N11-I pendentes; próximo N14-C antes de retomar N18 (duas páginas coletadas, análise interrompida). Sem partilha, programa assistido, teste com público ou publicação aprovados.
+
+## Check-in N17 — 03/10/2026
+
+- [x] Conferir quinze seções NHS e IDs Brightcove únicos, revisões por ativo, SHA e política reutilizada. [Resumo](../conteudo/evidencias/2026-10-03/n17-casa-instrucao/resumo-instrucao.json).
+- [ ] Reprodução e permissões individuais não demonstradas; nenhum vídeo aprovado. Não ligar N15/N16 pelo nome. N17 parcial; próximo N18.
+
+## Check-in N16 — 03/10/2026
+
+- [x] Obter PDF Tufts/CDC de 126 páginas com SHA; conferir três fases, 12 movimentos, dose, material e progressão. Seis páginas de direitos/dose inspecionadas visualmente. [Resumo](../conteudo/evidencias/2026-10-03/n16-casa-material/resumo-programas.json).
+- [ ] N16 parcial: tradução/adaptação não liberada, público específico e critério de transição divergente; não automatizar. Alternativa PMC/MDPI teve reCAPTCHA/429, sem contorno ou repetição. Seguir N17.
+
+## Check-in N15 — 03/10/2026
+
+- [x] Conferir programa humano OEC/SBRT: 12 aulas de dose/progressão e quatro movimentos; duas chamadas HTTP 200/hashes, incluindo redirecionamento NHS sem programa. [Resumo](../conteudo/evidencias/2026-10-03/n15-casa-sem-equipamento/resumo-programas.json).
+- [ ] N15 permanece parcial: público/supervisão específicos, instrução integral e mídia ausentes. Rodada encerrada para seguir N16; preservar lacuna de casa geral.
+
+## Check-in N14 — 03/10/2026
+
+- [x] Conferir nova fonte NHLBI 200/hash e seis dependências N01/N02/N03/N08/N11/N13. [Resumo](../conteudo/evidencias/2026-10-03/n14-rotina-alimentar/resumo-rotina.json).
+- [x] Documentar sete operações propostas e seis cenários fictícios; distinguir planeado/consumido e alteração pessoal de fonte humana revisada.
+- [ ] Fluxos do aplicativo, personalização clínica, revisão pt-PT e direitos permanecem pendentes. Próximo N15.
+
+## Check-in N13 — 03/10/2026
+
+- [x] Obter e conferir menu humano completo NHLBI/DASH: oito páginas, sete dias, 28 refeições e 175 linhas; duas chamadas HTTP 200 e hashes. [Resumo](../conteudo/evidencias/2026-10-03/n13-planos-alimentares/resumo-planos.json).
+- [x] Comparar sete somas de sódio: uma exata e seis diferenças de 1–3 mg, sem corrigir a fonte. Preservar uma quantidade ausente e contexto cardiovascular.
+- [x] Conferir política institucional reutilizada. Direitos de adaptação comercial permanecem condicionais; publicação e revisão pt-PT pendentes. Próximo N14.
+
+## Check-in N11/N12 — 03/10/2026
+
+- [x] Consolidar N11: quatro guias, duas políticas, seis rascunhos e seis chamadas HTTP 200 com hash. [Resumo](../conteudo/evidencias/2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json).
+- [x] Pesquisar N12: ISSN, NIH/ODS e A.D.A.M.; quatro chamadas, duas 200 e duas 403, preservadas. Direitos e transporte separados. [Resumo](../conteudo/evidencias/2026-10-03/n12-desempenho/resumo-desempenho.json).
+- [ ] Homologação editorial pt-PT, metas individuais e integração permanecem pendentes. Próximo nicho N13, na etapa 01, conforme pedido de seguir a fila.
 
 ## Check-in N10 — 30/09/2026
 
@@ -69,10 +203,10 @@ Os check-ins N04–N06 abaixo preservam o estado de cada entrega. A fila atual e
 
 ## Check-in das etapas
 
-Atualizado em 28/09/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
+Atualizado em 03/10/2026. Marcar `[x]` somente após executar e registrar evidências; propostas não contam como execução. Registrar data, resultado e pendências em cada encerramento. O pedido do autor torna este check-in obrigatório nos próximos incrementos.
 
 - [x] **Etapa 0 — Base confiável:** inventário/preservação em 22/09; alinhamento documental R01–R18 em 24/09. [Evidência e limites](etapa-00-base.md). Nova conferência visual fica para a próxima intervenção no Figma.
-- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** N01–N08 concluídos para pesquisa até 29/09. Próximo: **N09 — alimentação para ganhar peso**, na [fila de 46 nichos](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho). Permanecem programas completos, alimentação guiada, revisão pt-PT e escopo de lançamento. Não avançar automaticamente para etapa 02.
+- [ ] **Etapa 01 — Conteúdo e viabilidade: aberta.** N01–N14 gerais preservados; complementos N06-N13 e N16 fechados somente no recorte de pesquisa, N14-C nos requisitos. N15-C/N15-I e N17-I a N20-I parciais. **N15-I ativo; N21 retida até fechar os complementos anteriores**, na [fila operacional](../conteudo/evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json). Sem cobertura integral/homologação ou autorização automática da etapa 02.
 - [ ] Etapa 2 — Fluxos e conteúdo.
 - [ ] Etapa 3 — Sistema visual.
 - [ ] Etapa 4 — Protótipo completo.
@@ -215,8 +349,8 @@ O [diagnóstico](../diagnostico.md) identifica logs sensíveis, refresh/logout i
 ## Próximas cinco ações
 
 1. Autor revisar [visão central](README.md), [pitch](pitch-e-decisoes.md) e balanço da etapa 01, sem presumir lançamento só de musculação.
-2. Próximo foco **N11 — manutenção, hábitos e qualidade alimentar**, após a entrega N08–N10. Manter as pendências de lançamento e a correção de licença PR06 visíveis.
-3. Seguir a [fila N11–N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez: receitas, alimentação por objetivos, programas humanos, instruções visuais, conexões e capturas. Alterar a ordem explicitamente se uma dependência exigir, mantendo o recorte e a visão completa.
+2. Próximo foco **N14-C — organização/registos com cuidador**, seguido de N15-I/N16-I/N17-I/N11-I, priorizados pelo pedido posterior de 03/10. Preservar as lacunas de lançamento e a licença PR06 condicional.
+3. Retomar N18 e seguir a [fila até N46](etapa-01-pesquisa.md#fila-da-etapa-01-por-nicho), um foco por vez e com o recorte idosos/cuidadores explícito; coleta N18 existente não deve ser repetida só para contexto.
 4. Consolidar capacidade → fonte/método → prova → limite → alternativa; escolher explicitamente lançamento e expansões. Encerrar etapa 01 apenas após os critérios.
 5. Retomar Figma Desktop comparando a base viva, aplicar F01–F12 em incrementos e seguir contratos/modelo conceitual, banco e implementação.
 

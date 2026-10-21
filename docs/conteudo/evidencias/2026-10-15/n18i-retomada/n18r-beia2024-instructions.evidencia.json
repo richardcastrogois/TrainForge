@@ -1,0 +1,24 @@
+{
+  "id": "n18r-beia2024-instructions",
+  "url": "https://www.mdpi.com/2075-4663/12/9/233",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:58:56.995860+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Instruções de posicionamento/regulagem para sete exercícios c600: conferir autores, direitos e limites da população treinada; não transferir cargas/fórmulas a iniciantes.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.mdpi.com/2075-4663/12/9/233",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 400,
+  "bodyFile": "../raw/n18r-beia2024-instructions.html",
+  "sha256": "40275f659a2f74a5345d7495bf69ddf443752f893ae18cb61fcb361f4cc88a3b",
+  "error": "HTTP 403"
+}

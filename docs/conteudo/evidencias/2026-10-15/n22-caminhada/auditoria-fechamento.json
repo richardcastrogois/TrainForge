@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-15",
+  "niche": "N22",
+  "researchClosed": true,
+  "closureScope": "Fontes e percurso humano de caminhada ambulatoria para composicao, com tres tabelas de progressao, autoria/contribuicoes verificadas onde selecionadas, instrucoes abertas identificadas e decisao de direitos por ativo. Contextos adicionais classificados sem afirmar cobertura universal.",
+  "selectedAnchor": "WK-PACEUP-12, algoritmo/instrucoes2013CCBY2.0",
+  "supportingModules": "NHLBI2008 preparacao/5minlento/instrucoes/5minlento, registrados como composicao distinta",
+  "notSelected": "TabelaNHLBI2006 referencia comresponsavelprofissionalnominal pendente;ACE/GHC/Brasil/MovingMedicineconteudoprotegido/comercialnaoliberado;videos/diagramas/formularios excluidos",
+  "criteria": [
+    {
+      "id": "N22-A",
+      "criterion": "Fonte humana profissional rastreavel",
+      "met": true,
+      "evidence": "PR141 protocolo2013+perfilHarris+NIHRPDF142/143 co-design; equipeNHLBI2008PDF9/12/14 sem falsaautoriapessoal"
+    },
+    {
+      "id": "N22-B",
+      "criterion": "Preparo, execucao, encerramento e progressao obtidos sem completar dose por IA",
+      "met": true,
+      "evidence": "percursos.json3tabelas;PACEUPprotocolFig2PDF11 e instrucoesPDF9-10; fasesauxiliaresNHLBI2008PDF100/117; novo arranjo explicitado"
+    },
+    {
+      "id": "N22-C",
+      "criterion": "Direitos, custos e ativos decididos por fonte/componente",
+      "met": true,
+      "evidence": "ProtocoloCCBY2.0;NHLBIpoliticapublica comexcecoes;copiasdeexpressaoprotegida/layouts/midiaforam excluidas. Acesso pesquisa gratuito, custo de revisao/provedor/medicao nao contratado."
+    },
+    {
+      "id": "N22-D",
+      "criterion": "Publico, apoio e limites por contexto registrados",
+      "met": true,
+      "evidence": "contextos.json5contextos; fontePACEUP45-75ambulatorio;telefone/compreensao vs3consultasenfermeira; cuidadorconfinado/idosofragil nao aprovados"
+    },
+    {
+      "id": "N22-E",
+      "criterion": "Colecoes, referencias e apps explorados; falhasnaorepetidas",
+      "met": true,
+      "evidence": "9familiasnovas,7manifestos e triagem-web;fontesdeappsdisponibilidadeapenas"
+    },
+    {
+      "id": "N22-F",
+      "criterion": "Lote estruturado com autores e contribuicoes por componente",
+      "met": true,
+      "evidence": "leitura-fontes.json;percursos.json;composicao-para-app.json; hashes nosrecibos"
+    }
+  ],
+  "closureDoesNotApprove": "Nao homologa a composicao clinicamente, nao publica treinos, nao afirma eficacia de cada fase, nao aprova todosidosos/cuidadores/ambientes, nao fechaN15/N21 e nao equivale a app implementado.",
+  "publicationGatesRemain": [
+    "Revisao profissional/humana do lote final, localizacao e acessibilidade",
+    "Apoio real quando exigido",
+    "Conferencia final da expressao/direitos e atribuicoes",
+    "Implementacao e testes no app"
+  ],
+  "pendingResearchLeadsNotSelected": [
+    "Credencial/autoriaespecificaNHLBI2006",
+    "GHCmanual403",
+    "UGABasics403",
+    "DireitosMovingMedicinepara ativosproprios",
+    "Esteira/idosofragil/cuidadorconfinado: nao cobertos pelo candidato selecionado"
+  ],
+  "nextNiche": "N23",
+  "n15Paused": true,
+  "releaseApproved": false,
+  "appImplemented": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "i18-react-nihr-protocolo",
+  "url": "https://njl-admin.nihr.ac.uk/document/download/2025815",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T12:06:14.901793+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira captura de protocolo publico NIHR do REACT: versao planejada e Appendix 2, documento distinto do suplemento 2023 bloqueado; conferir instrucao, supervisao e direitos sem misturar versoes.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://njl-admin.nihr.ac.uk/document/download/2025815",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1909640,
+  "bodyFile": "../raw/i18-react-nihr-protocolo.pdf",
+  "sha256": "44544ec229f5879bbbe8470e005bf7a545c5cfa89606d1db198afd675bb706a3",
+  "bodyFormatMatchesRequest": true
+}

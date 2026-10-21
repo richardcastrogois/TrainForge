@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "id": "n43-vitpose-config",
+      "url": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/0c30b6534bb621af0162b481176742577264e36e/config.json",
+      "purpose": "Config dekeypoints/modelo e dataset_index emrevisãofixada, não exercício ou calorias.",
+      "extension": "json"
+    },
+    {
+      "id": "n43-vitpose-preprocessor",
+      "url": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/0c30b6534bb621af0162b481176742577264e36e/preprocessor_config.json",
+      "purpose": "Contrato específico deentrada do estimador de pose; não copiar normalização do reconhecedor de alimentos.",
+      "extension": "json"
+    },
+    {
+      "id": "n43-vitpose-files",
+      "url": "https://huggingface.co/api/models/usyd-community/vitpose-plus-small/tree/0c30b6534bb621af0162b481176742577264e36e",
+      "purpose": "Tamanhos e hashes anunciados deweights; só metadados para planejar teste sob5GB e limpeza imediata.",
+      "extension": "json"
+    },
+    {
+      "id": "n43-nasa-example-page",
+      "url": "https://www.nasa.gov/image-article/exercising-t2-treadmill/",
+      "purpose": "Página factual pública de exemplo de movimento com arnês. Conferir autoria/direitos e fonte primária; não importar programa, diagnosticar pessoa ou publicar imagem no app.",
+      "extension": "html"
+    },
+    {
+      "id": "n43-nasa-media-policy",
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "purpose": "Diretrizes primárias de uso factual/editorial, exceções de terceiros, pessoas/marcas e ausência de endosso; não assumir publicdomainuniversal.",
+      "extension": "html"
+    }
+  ]
+}

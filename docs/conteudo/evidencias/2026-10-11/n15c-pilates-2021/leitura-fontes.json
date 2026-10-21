@@ -1,0 +1,12 @@
+{
+  "date":"2026-10-11",
+  "niche":"N15-C",
+  "family":"PR136",
+  "status":"complemento_bibliografico_nao_guia_operacional",
+  "source":{"record":"c15-pilates-pediatrico2021-core-json.evidencia.json","sha256":"3fc1aea56fa3dc2ceb1210f1ae6cfb8e411c74b0991ae038034b4386e41f6f03","bytes":4756,"url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33709771%20AND%20SRC:MED&format=json&resultType=core","locator":"resultList.result[PMID33709771]"},
+  "identity":{"PMID":"33709771","doi":"10.2217/cer-2020-0108","journal":"Journal of Comparative Effectiveness Research","volume":"10","issue":"5","pages":"409-422","year":2021,"trial":"NCT03729466","authors":["Yazgi Senturk","Berkiye Kirmizigil","Emine Handan Tuzun"],"sameFamilyAs2019Thesis":true,"independentReplicationProven":false},
+  "access":{"isOpenAccess":"N","inPMC":"N","inEPMC":"N","hasPDF":"N","hasSuppl":"N","fullTextUrlList":"Subscription required (S), DOI da editora","pubmedWebFreeArticleLabel":"Discrepancia de indices, nao prova texto livre/licenca/manual recebido","fullArticleReceived":false,"failedDoiUrlNotRetried":true,"thesisIsLegitimateIndependentInstitutionalOriginal":true,"absenceGloballyProven":false},
+  "clinicalLimits":{"participants":55,"weeks":8,"sessionsPerWeek":2,"abstractSupportsProgrammeNotEachGesture":true,"rightBridgeOnlyInAbstract":"Conservar discrepancia com Table8 da tese, nao reescrever resultado esquerdo nem transferir grupo controle", "fullTableVersionConfrontationPerformed":false},
+  "apkMapping":{"sourceCitation":"PMID/DOI/autores/ano/ensaio", "instructionAsset":null,"rightsGrantForCommercialAssets":null,"canFillMissingThesisCommands":false,"canResolveProgression3_6versusTable1":false,"appImplemented":false},
+  "next":"Original operacional legitimamente publico, com instrucao completa e direitos especificos, sem repetir DOI falho ou presumir CC pela tese openAccess. Continuar apenas N15-C; G03/G04 falsos."
+}

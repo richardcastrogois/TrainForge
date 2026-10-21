@@ -1,0 +1,23 @@
+{
+  "id": "n41-windows-ocr-doc",
+  "url": "https://learn.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine?view=winrt-26100",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:44:52.653308+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documentação primária da API já existente usada em ensaio sintético Windows; não prova Android ou visor real. Sem instalação.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://learn.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine?view=winrt-26100",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 56951,
+  "bodyFile": "../raw/n41-windows-ocr-doc.html",
+  "sha256": "d2bfa45183bb4526caa04450fa464af2ce78833959bfd392641a6a3b2c4c1a4c"
+}

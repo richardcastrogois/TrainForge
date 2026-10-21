@@ -1,0 +1,1890 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-04",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 255,
+  "verifiedDependencies": 149,
+  "proposedOperations": 4,
+  "fictionalScenarios": 4,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-wipo-metodo-html.evidencia.json",
+      "url": "https://www.wipo.int/en/web/copyright/protection",
+      "sha256": "37850d47266a028b6cc1f11397aa297802ad8ca92f4d789a47ae9d49a323c913"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cc-faq-html.evidencia.json",
+      "url": "https://creativecommons.org/faq/index.html",
+      "sha256": "d4ffb015ad13ce12eb060979abf835caa5c2ce2ef5d928e6af1885845db99c02"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-handle-api-json.evidencia.json",
+      "url": "https://hdl.handle.net/api/handles/10810/68569",
+      "sha256": "58817f99f3a84e3d0697570facc5754eb6ad6d51654f59196b114bb289ae3cb8"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-ombro-atual-pdf.evidencia.json",
+      "url": "https://northcheshireandmersey.nhs.uk/media/3aaixkhv/shoulder-strengthening-exercises-patient-advice-sheet.pdf",
+      "sha256": "2a0eb1d6518ff93a36b2ef191224771e69b016a1538ebb3a24f1b730c62d6469"
+    },
+    {
+      "record": "2026-10-13/n15c-lacunas-dirigidas/n15dir-cg04-nhs-lombar-atual-pdf.evidencia.json",
+      "url": "https://northcheshireandmersey.nhs.uk/media/jbdbvtp0/lower-back-strengthening-exercises-patient-advice-sheet.pdf",
+      "sha256": "60f6cc2e30df4db6e64a6512422e8b48bca5005d5dabf12ed7637c6a99170158"
+    },
+    {
+      "record": "2026-10-12/cg05-pilates/cg05-cer-crossref-json.evidencia.json",
+      "url": "https://api.crossref.org/works/10.2217/cer-2020-0108",
+      "sha256": "582145315d44fee8ac20a0026f828793428f8e0211369450ed0b5773e8a7ba40"
+    },
+    {
+      "record": "2026-10-12/cg05-pilates/cg05-bmr2021-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33935055%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "9883e9687eae19f1c2d8c32935843c13aef68d1ff14b286568b853a6a113fd5d"
+    },
+    {
+      "record": "2026-10-12/cg04-revieew/cg04-revieew-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+      "sha256": "607fc23cf10d434bebb03565fbb1fbdd791bc147b7e1967d52b23c5660ea8b39"
+    },
+    {
+      "record": "2026-10-12/cg02-benson/cg02-ilm-bhi2009-pdf.evidencia.json",
+      "url": "https://www.instituteoflifestylemedicine.org/ilm/wp-content/uploads/2015/04/ElicitingTheRelaxationResponse.pdf",
+      "sha256": "0dd2aaa803ea254ecff9a339690ef0796be412fb74875b14efe3c0975fe43827"
+    },
+    {
+      "record": "2026-10-12/cg01-estatico/cg01-worcs2025-pdf.evidencia.json",
+      "url": "https://www.worcsacute.nhs.uk/documents/documents/patient-information-leaflets-a-z/3051-stretching-exercises-physiotherapy/",
+      "sha256": "ef96b5038f375cc3a0392f6618e38c3c57bb0078c0ed8aa4c3a1e720f32b4547"
+    },
+    {
+      "record": "2026-10-12/cg01-estatico/cg01-roh-guia-html.evidencia.json",
+      "url": "https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-hip",
+      "sha256": "5f887983548a7a963e3e502b54e51396830b4b6d3e8c690339659444e55514a4"
+    },
+    {
+      "record": "2026-10-12/cg01-estatico/cg01-dynamic-guia-html.evidencia.json",
+      "url": "https://dynamichealth.nhs.uk/help-and-advice/osteoarthritis-oa/",
+      "sha256": "7191062418409e82f737bce4d03b2d37d73e341a22d6170825fed9cac2e8afbf"
+    },
+    {
+      "record": "2026-10-12/cg01-estatico/cg01-csp-seguranca-html.evidencia.json",
+      "url": "https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain",
+      "sha256": "73e0e023402000eb8ddf3db7d661934a7c05b8dd9f258e457d7a621674390e18"
+    },
+    {
+      "record": "2026-10-12/cg02-benson/cg02-nccih-relaxamento-html.evidencia.json",
+      "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+      "sha256": "ee6c88c3dc4054f55c76482510d7ccb688febb5441094aac6cb48da66043ce49"
+    },
+    {
+      "record": "2026-10-12/cg02-benson/cg02-benson-artigo-pdf.evidencia.json",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+      "sha256": "e2a8abd5334cde76aaab290ca18959059e94de3622a14caebe9136dafc74aa22"
+    },
+    {
+      "record": "2026-10-11/n15c-autocuidado-roteiros/c15-shoukr-pfa2022-pdf.evidencia.json",
+      "url": "https://bmcnurs.biomedcentral.com/counter/pdf/10.1186/s12912-022-01049-z.pdf",
+      "sha256": "aa5631bbb7a845ada0364a19f12e700f392f25378095a74cfdffecccf720d2dc"
+    },
+    {
+      "record": "2026-10-11/n15c-autocuidado-roteiros/c15-shoukr-pfa2022-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9551605/fullTextXML",
+      "sha256": "213c984ff45a20595012cf56d1785c4b87cade3d4aa28d7bf1c8094fe7db31cb"
+    },
+    {
+      "record": "2026-10-11/n15c-autocuidado-roteiros/c15-hamza-yoga2020-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6937882/fullTextXML",
+      "sha256": "0aeafe3312cad99be937ce06c65a07f863b653ddfd157c4a0e57ae4ee6540820"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-2021/c15-pilates-pediatrico2021-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33709771%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "3fc1aea56fa3dc2ceb1210f1ae6cfb8e411c74b0991ae038034b4386e41f6f03"
+    },
+    {
+      "record": "2026-10-11/n15c-respiracao-oncologia/c15-respiracao-oncologia2026-html.evidencia.json",
+      "url": "https://www.jcdr.net/article_fulltext.asp?id=23750&issn=0973-709x&issue=7&page=VC01&volume=20&year=2026",
+      "sha256": "2229a85fc57723ef9ca9673e22516289f1ebf6e63acaef800abdaac440d1cf10"
+    },
+    {
+      "record": "2026-10-11/n15c-respiracao-oncologia/c15-jcdr-licenca-html.evidencia.json",
+      "url": "https://www.jcdr.net/aboutus.asp",
+      "sha256": "c12961b1c5a55e0d560ba1da4514b8ee14ae34e0781105f4a7c3248a6c37e6ee"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-ms-pilates2024-pdf.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/download/article-file/3852613",
+      "sha256": "45295bb103fd30ebfd57d49529e66cc61b1a24920d11905f2af881bc1db3f968"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-ms-pilates2024-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05896995",
+      "sha256": "fa7517864b3bdc061a2e0c1dc04fd6ddc024f4ab943a89f22c01b84f35c0ab64"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-pdf.evidencia.json",
+      "url": "https://i-rep.emu.edu.tr/xmlui/bitstream/handle/11129/5008/Sent%C3%BCrkyazgi.pdf?sequence=1",
+      "sha256": "8dee1ddceb042df29acea795e4f7964505bcc5bb8f9ecb483359b5ae555e74a9"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-html.evidencia.json",
+      "url": "https://i-rep.emu.edu.tr/xmlui/handle/11129/5008",
+      "sha256": "e2c4397266e921c2b9bd7d69836cee13f791d94a8db74f5b0fe4696db57e9336"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2021-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03729466",
+      "sha256": "2e5f7b2a9cbecf79ae1f0857a9ed30318729f99eeedef7d4d4e9419c89ad5892"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-kirmizigil-bio-pdf.evidencia.json",
+      "url": "https://www.emu.edu.tr/stafffile/WHFQEKX.pdf",
+      "sha256": "76c29e5ff21e8f4aa62047da361cc0ef4fbe1298babbed9f244c0af6b917f789"
+    },
+    {
+      "record": "2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-licenca-txt.evidencia.json",
+      "url": "https://i-rep.emu.edu.tr/server/api/core/bitstreams/59e10eae-8351-4dc2-a8cc-c864be6f94c1/content",
+      "sha256": "05a09de9f209e6724e926f52feea94641a83dd86f1f63efd895e5a5021aaa92a"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/fullTextXML",
+      "sha256": "faab96dc88a30c61672212c66bcb3529b076ad6011e59e070a2b06f82ffcc472"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-suplementos-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/supplementaryFiles",
+      "sha256": "af0fc58d4b5afb96d8d517481c19845c09794a10031c049f6723eee5c3c9b4da"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/fullTextXML",
+      "sha256": "db3ceb65c675d347bcc029d5593a22ae32340d0e122dff02c9e459d711441f3a"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-suplementos-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/supplementaryFiles",
+      "sha256": "8ef03e08cf05bf9e71c7a4d158f07196de186c61ba8f589586f7f3356ce4a2ca"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/fullTextXML",
+      "sha256": "f611fe0547876b1f50c8affcb7dd053d36345c216f5e3f0f54cc4c05e98e19d4"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-suplementos-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/supplementaryFiles",
+      "sha256": "b683df88b84e726dd9ea9d3f8b5ecd0b78584acd1cb8415a1ff6a185d1440a83"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05242614",
+      "sha256": "37ef372a0b3108b058546e08400b5b3d635046608a301f037207f1115144344c"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1186/s40359-022-00876-8&format=json&resultType=core",
+      "sha256": "d43d58bafdd5d9e5baf9a9e4ae1a799c6b6c6e22cf36f7c2f93c999004166f15"
+    },
+    {
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9295093/fullTextXML",
+      "sha256": "20ac2f460aa9b10c9ed5dd7b0c15f4596d7135ebcf60da91756f979f405073e1"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-martin/c15-martin2014-preview-pdf.evidencia.json",
+      "url": "https://www.ons.org/pubs/article/16086/preview-download",
+      "sha256": "7d2694c00f38a81474c2e52b511dde92d1095f7d64d87f630762de8d8d205f4b"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-martin/c15-martin2014-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:24769590%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "66276e059509cca261881bb4bf428bbd1f6773830ace63121de0a6bdbc67663d"
+    },
+    {
+      "record": "2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-artigo-pdf.evidencia.json",
+      "url": "https://scholars.cityu.edu.hk/ws/portalfiles/portal/302285887/288151392.pdf",
+      "sha256": "42d9057b88dd6b99350e2c05521ed8ba477a7250335c2d589ad0ec959696b1e9"
+    },
+    {
+      "record": "2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/10/NCT04861610/Prot_SAP_000.pdf",
+      "sha256": "6fe52a725fd23e79b641d0a0baa589d0c24d85450d8d3f315685c8bfd2b88a4a"
+    },
+    {
+      "record": "2026-10-11/n15c-mbi-fragilidade/c15-mbi-fragil2025-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04861610",
+      "sha256": "4d15e1653b99c1ac7f98156c2bdf6e1ccbfe3950868960e31cd6ce034d0495a4"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/fullTextXML",
+      "sha256": "fa802117027748631dc23bece377ec047722bbcf10ae09e6626151775392d532"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-grupo/c15-yoga-grupo2018-suplementos-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/supplementaryFiles",
+      "sha256": "3bacb2e95264cb273a5f00c765b0d9757eadd4e64c806afe50f146662ea22ab9"
+    },
+    {
+      "record": "2026-10-11/n15c-caminhada-social/c15-hirano2020-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/geriatrics/geriatrics-04-01-108",
+      "sha256": "f284359cb50c7877655b4bd71e6bc665e44288153712b3dcfd3c7cb509904635"
+    },
+    {
+      "record": "2026-10-11/n15c-caminhada-social/c15-hirano2011-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:20850878%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "773a61dd33c175d64583463778e1861c5b3795e52193e7ebbaf1b4503dc3402c"
+    },
+    {
+      "record": "2026-10-11/n15c-caminhada-social/c15-gogrow2023-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36916022%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "1a2b1979d87c7ba309248a5b0b6db5d9f941f8465dba89824bd273f6b6019500"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10067051/fullTextXML",
+      "sha256": "98060256cfce97d7f133cabf0775669978178ff33e1c5426ceb242ede26fa8a5"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36468605%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "c5a8a870fd6aea07c2643def850983d087b8309b56a1998e9c1775fcfddcdc3b"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02481349",
+      "sha256": "f555072feb9eee48176b51c268a570bf7632bd1731b5384db9c963b15b14772a"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:31367462%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "3556d0b50c69065573be4843de6d564a3b237ad8313ce2d76c0843b5eaa9cb58"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6657047/fullTextXML",
+      "sha256": "c0d13cb9188f701198ce5d03786d8155f093b0ae6252747c03f02cffdee8827c"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-teleclinico2021-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8161853/fullTextXML",
+      "sha256": "4169a6d1f521733acab3639a2cacfcc0de662f9f2007eb07cfa0689cd5df578a"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-mallaiah-bio-pdf.evidencia.json",
+      "url": "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/care-centers-and-clinics/Integrative%20Medicine%20Center/Bio%20Mallaiah.pdf",
+      "sha256": "79c186a8ca30779dfe8bd3db34665c54add2795c553a7d6b957d0e2648de69e6"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpm2023-antecedente-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-07-03-183",
+      "sha256": "c33e6d758f799603dc22bd63a36000f0e650afdb41e9574c5a0bab0ce332bb9c"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpm2024-correcao-html.evidencia.json",
+      "url": "https://www.lidsen.com/journals/neurobiology/neurobiology-08-01-213",
+      "sha256": "a417e1c82f18ae92d2363b8cb0bfbe391ad3ff71bf1ba9aefa445d47953fa120"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2020-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04106271",
+      "sha256": "502fd78a67bda1e83dd55a6190064d3cb917b36d35d6cd381a3a1a8be16f3839"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10966998/fullTextXML",
+      "sha256": "cde434776aed44287a66dc77aebca390a49939ad0c4b31856ea69592f59941d3"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38545336%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "f5cfdd39ead7b7ed1bf82571e53fc6ba72a4f871bcec10ac896049c4591c1a28"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04512040",
+      "sha256": "a1affbc1b5d6a731bb845462664b29a912b91e1b3158f9df23cd335fca6bc362"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/40/NCT04512040/Prot_SAP_ICF_000.pdf",
+      "sha256": "23e2047075e4f17b3ec5817582c97e6dafaf7ea902f6c34a8f4548cb45545cb1"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-yoga2007-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2176147/fullTextXML",
+      "sha256": "678886f71df2712fa036e9bb51af3d34d2441549ac7cdc1877823f534e9ce279"
+    },
+    {
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-yoga-trt2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03948100",
+      "sha256": "8136cb4ada06f4b64b5c0a02f86645e0962b08559ebef1f2357ef2f3aa6517af"
+    },
+    {
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/14/NCT04102514/Prot_SAP_000.pdf",
+      "sha256": "47c9d4ab351d1a426fa387f2a0546dcfc86ca113feffb840ca993216d3dec237"
+    },
+    {
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04102514",
+      "sha256": "d7be7ef34282fcde104c1a6775dac96dd0542920426a586d647a19750bdffbd4"
+    },
+    {
+      "record": "2026-10-11/n15c-remoto-operacional/c15-remoto2026-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41774485%20AND%20SRC%3AMED&resultType=core&format=json",
+      "sha256": "19b9bfcbf532ccba21723b6c68f1d3c3b87b99a060f13cd956c2c74f96b023df"
+    },
+    {
+      "record": "2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+      "sha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2020-pdf.evidencia.json",
+      "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/88101/1/Li_Dyadic_Pain_Management.pdf",
+      "sha256": "2715ee39e7dcea0ed221decfd6c827e6ae53a23e09db33d8cdb59f3f036233f5"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2022-protocolo-pdf.evidencia.json",
+      "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-19-12186/article_deploy/ijerph-19-12186.pdf",
+      "sha256": "359e482cb42b71f411f7255492a1d33c44ac45f9036eaba15ccf9cb5d7af0df1"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41754066%20AND%20SRC%3AMED&resultType=core&format=json",
+      "sha256": "c0e1354adacec54fa8cea06a8e1906b11ca032ab3685bed8af2416943f8400cb"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12940603/fullTextXML",
+      "sha256": "7d6173b1921b81133558dba5b9af211ec986381ece4974c15d3b6bc0d929eb4d"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05056623",
+      "sha256": "55b7968f807027ddb151fe72a749e083c39c4c71d8c8455665fdbbe4560da200"
+    },
+    {
+      "record": "2026-10-11/n15c-dor-diadica/c15-dpmp-ng-credencial-html.evidencia.json",
+      "url": "https://www.polyu.edu.hk/rs/people/academic-staff/prof-ng-shamay/",
+      "sha256": "e8ca2689e24d36819222bd64d2ddb4510ccce64cc11b55494c3ef7e9fd9d2fdd"
+    },
+    {
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/s12912-025-03881-5",
+      "sha256": "f6b11c90e10f1cd0b1ab7fb75e42ed65788fc34b7ad9f014d416efabca2f0887"
+    },
+    {
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-sun2025-artigo-pdf.evidencia.json",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12912-025-03881-5.pdf",
+      "sha256": "60457d0431d164207c8ea361f4ebef4c392f6c9b12c5d9d31f6b61843a091dcc"
+    },
+    {
+      "record": "2026-10-11/n15c-manuais-fisicos/c15-gomes2021-rebec.evidencia.json",
+      "url": "https://ensaiosclinicos.gov.br/rg/RBR-4fvfn2p",
+      "sha256": "f0980796c6a760fb6292df60d478874aa30f28e252e45fee3cab44853be031e3"
+    },
+    {
+      "record": "2026-10-11/n15c-start-originais/c15-start2013-rct-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3808082/fullTextXML",
+      "sha256": "de4b32455362ff20f2e5f9e6d1540ee6f1f64e47f9ecbfc0f01426fd0f8b9424"
+    },
+    {
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-nihr-relatorio-pdf.evidencia.json",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+      "sha256": "0fd474c41671e4d26e89f25335a44ab7a80f9c4035dfd91deea2eb9ce0158e2b"
+    },
+    {
+      "record": "2026-10-11/n15c-start-originais/c15-start2014-nihr-resumo-pdf.evidencia.json",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002673",
+      "sha256": "256e73410597a592b8a99b0fb96a024190deb89bd746c6591b67ca8a0274402b"
+    },
+    {
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-most2023-protocolo-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/s13063-023-07801-3",
+      "sha256": "1bf97fbf790ad2b361cdbd84482097adf615b0cbaeb38f00b4d1dc41945c32df"
+    },
+    {
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-benson-autismo2025-pdf.evidencia.json",
+      "url": "https://jccnc.iums.ac.ir/article-1-617-en.pdf",
+      "sha256": "42482dc7adf06c097b7596bbd4cb36496a88ae8fed888cfa3d14fa00fc42bb6a"
+    },
+    {
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-tan20-caregivers-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31854193%20AND%20SRC%3AMED&resultType=core&format=json",
+      "sha256": "c20f298da4dd06fbd20da28459a5ca7740960627b7ad73ff5918617aa42aca99"
+    },
+    {
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-tan5-misto-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25632044%20AND%20SRC%3AMED&resultType=core&format=json",
+      "sha256": "6b84c35eb60e759c04ff850e84d66a14fe8e80997010e765e3c91e6a70c47470"
+    },
+    {
+      "record": "2026-10-11/n15c-mindfulness-protocolos/c15-yildirim-breath-music-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39158927%20AND%20SRC%3AMED&resultType=core&format=json",
+      "sha256": "7f2e96c116171d2fa475cb1071081223295c53077bea3741a2733c3f5404a656"
+    },
+    {
+      "record": "2026-10-08/n15c-benson-reavaliacao/c15-benson2022-original-html.evidencia.json",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819/20815783",
+      "sha256": "432df1e016323afff438481bb1922554d3257adb2b7cc513df56b037137fd494"
+    },
+    {
+      "record": "2026-10-08/n15c-benson-reavaliacao/c15-direito-cientifico-lei9610-html.evidencia.json",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html",
+      "sha256": "8c5ce400de169f6578ebc579eaed3a497fe89205b8f4c4b81c3ae20a45a9eb69"
+    },
+    {
+      "record": "2026-10-08/n15c-cervical-curto/c15-cervical2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06346249",
+      "sha256": "1d3a4cd7bddf948060b497def9e04ce0f57c0b9efcf412f38ea704fa1ab54e13"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-montero2017-tese-canonica-pdf.evidencia.json",
+      "url": "https://gredos.usal.es/bitstream/10366/137103/1/DME_MonteroCuadradoF_Efectividad.pdf",
+      "sha256": "70109a7e8cf572a189297e50ce5cdc6986faa8d5b2449a2e9bb31b4b982f659f"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca2025-tfg-pdf.evidencia.json",
+      "url": "https://gredos.usal.es/bitstream/handle/10366/166663/TFG_L%C3%B3pezGilI_Cu%C3%ADdateMientrasCuidas.pdf?sequence=1",
+      "sha256": "6e5d6c0252d21c6587003ddb6e7da1d3a49efbe70d312637b1e003f2b7924c5d"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca2025-registro-html.evidencia.json",
+      "url": "https://gredos.usal.es/handle/10366/166663",
+      "sha256": "138d4af408f525d58050b50777ffdda07e92366392d94b8996a4fe2c3dc53025"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca-tutor-perfil-html.evidencia.json",
+      "url": "https://produccioncientifica.usal.es/investigadores/57750/detalle",
+      "sha256": "d8efa007f63d3a14cdb7ebb0f8734bec37f482696bccf19c27b012235d85e2fe"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-salamanca-video-listagem-html.evidencia.json",
+      "url": "https://drive.google.com/drive/folders/14nXEVvGXRNWbU6l6tvvm_fotiJoABCS7?usp=sharing",
+      "sha256": "95b7b926c1e3edd62e61eed57fe626ddd6dffd8c9dc5cee0a24ba1b53f8fab0d"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-fedema2022-manual-pdf.evidencia.json",
+      "url": "https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf",
+      "sha256": "4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b"
+    },
+    {
+      "record": "2026-10-08/n15c-guias-clinicos/c15-fedema2022-pagina-html.evidencia.json",
+      "url": "https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/",
+      "sha256": "e3da6080e652f10c713977267015848f9f3cd45dc98f21dbf4d0cc246d860e9a"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-pdf.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/PDF/10.13517/j.cnki.ccm.2023.08.001",
+      "sha256": "d27577756ab71fd33b5d331b17ea7f83fe78aad691a267d99447e7b8303a9dd5"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-politica-html.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/column/column11.shtml",
+      "sha256": "53d6da49790546a4f086b41ca3371318b6549bea381424da66dc9820eabc3c2a"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-estabilizacao2022-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9140401/fullTextXML",
+      "sha256": "9fb629efe2386ddfe827c2057e1dd126019b040598dc167e8c9ce01cb2ac5079"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-crea2026-artigo-html.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+      "sha256": "86bca8231ca39ab1a5311cd9d826665cb64ba94340b123304e57b44bf0d65efc"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-crea2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07388186",
+      "sha256": "77d5f5ec1f80a11a3a6b15981d959207368b5652e7553a100ecebcc96815b279"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-html.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/pub/erusaglik/article/1764171",
+      "sha256": "194afc1e928fdb3561fe0642982f6fc09ff0d95addc8ce5e50f6865caa924404"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-artigo-pdf.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/download/article-file/5150323",
+      "sha256": "4237e921bff53abc515b9acd6f5aa247fcc25cc508865ad41392b157d9e7a93d"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05988320",
+      "sha256": "12f6edc45c0a1fe51b9ff54e8e7e4775602825378647e948cd8e2d1112d57e8f"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan2025-edicao-html.evidencia.json",
+      "url": "https://dergipark.org.tr/tr/pub/erusaglik/issue/99921",
+      "sha256": "d3b2a5f1ef2c29e3c558cd100ffb1d55b989e8bdbd43119aac69e699ec4fa9a5"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-dogan-preprint-html.evidencia.json",
+      "url": "https://www.researchsquare.com/article/rs-3758822/v1",
+      "sha256": "9f5efdfbcfb85f0e0cff28d6d87a4d5fadece17cc10698fb1de1d4e08d385236"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-institucional-html.evidencia.json",
+      "url": "https://www.my-zaidan.or.jp/tai-ken/introduce/detail.php?id=a8afeb72428deddeb49c19f86edf7209&tmp=1524036185",
+      "sha256": "ad85ae0f5b3401938b0e73d3677026ed515dd9aa16f6e07ca8798fc84d721898"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu-direitos-html.evidencia.json",
+      "url": "https://www.my-zaidan.or.jp/sitepolicy/",
+      "sha256": "323de85254e813d0adbddd1fa6d5a22f2e9168e205ad57a845fb189d4a20983b"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-nagamatsu2012-antecedente-pdf.evidencia.json",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/110/0/110_1/_pdf",
+      "sha256": "8b8adfeacc036806a92d933c3730ea44980160e5a5751f040122d4593e504e6e"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-sui2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9989915/fullTextXML",
+      "sha256": "d5dfabcec1e2c9f8d243c358c03ea71f2652bc0b1aead9303fea93a31f5f0ec7"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-gyyb-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03853148",
+      "sha256": "e7fd87e029e1479a0689a680b8050631daefe5bc33cf4f1a1c1915e928d5f774"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-gyyb-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/48/NCT03853148/Prot_000.pdf",
+      "sha256": "5cad493aa78ec4a91d499c5ed1040a306533c69b3031a2dea5cef8398916e892"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-pmc-html.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4727733/",
+      "sha256": "28eef54ef3465a022fefe8b1a456fbebb08d542189fb1d3d31d62fe6ea8170b5"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-resumo-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&format=json",
+      "sha256": "f680a1ffc5be0069dee7cba8f959e59e6fc922430013cd8577b3aa68b951442a"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2019-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&resultType=core&format=json",
+      "sha256": "83d8928c0f420449b926bc0006028fb1b917df226efefcf665ad5a86467f36e9"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-one-stretch2015-relatorio-mhlw-pdf.evidencia.json",
+      "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai/hojokin/dl/28_14020301-01_So.pdf",
+      "sha256": "32da315cbf00dd3d8acfa167622ea786313bbd084e4aecf4da5aaa0b6bbcd540"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-mhlw-termos-html.evidencia.json",
+      "url": "https://www.mhlw.go.jp/chosakuken/index.html",
+      "sha256": "91a43756ebd1ae3fa274af08fca01ee3919c6c49d3c648c643631f1d51926700"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-cn-html.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/10.13517/j.cnki.ccm.2023.08.001",
+      "sha256": "1b77baea10a92d370f36cf03dc303a9316db2096b95b3b3ced50c2febf5169b9"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-download-helper.evidencia.json",
+      "url": "https://www.zglyyx.com/develop/static/common/js/download_cn.js",
+      "sha256": "53fabe422ab3a8388a1de6f13814ebb413835ca125dd336b750dec3c31c3264f"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-acesso-pdf.evidencia.json",
+      "url": "https://www.zglyyx.com/CN/article/showArticleFile.do",
+      "sha256": "de6d5c433bc6ecdb870e91a6383fd60f79dd48f0d7cb6715eb25a7f6b892983d"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-vr2025-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452558/fullTextXML",
+      "sha256": "9971630f47acb814c18797c9b2c4128f576b29b2e6eeb5740e6b4974e2418968"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-qigong-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04019301",
+      "sha256": "9b426bd838382c76ec873a6bb407c12b63e941248469693019e9a443eaa8a275"
+    },
+    {
+      "record": "2026-10-08/n15c-protocolos-operacionais/c15-qigong-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/01/NCT04019301/Prot_SAP_000.pdf",
+      "sha256": "f0a6c2b7a0b360b7f4a9b318873cce511957eeaf4cd0fb04651e760b82f19e01"
+    },
+    {
+      "record": "2026-10-08/n15c-pediatrico/c15-pediatrico-uem-pagina.evidencia.json",
+      "url": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/view/24358",
+      "sha256": "6717210c97b21216a3e9dff34fa6ce39c6ae45978e13acf55900a0d7debec620"
+    },
+    {
+      "record": "2026-10-08/n15c-pediatrico/c15-pediatrico-uem-pdf.evidencia.json",
+      "url": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/download/24358/pdf_83/",
+      "sha256": "77aa6c40bafcb668ad3df4953416a49c56458c5d96cd789e25911c9aeb6bc06c"
+    },
+    {
+      "record": "2026-10-08/n15c-gary-insuficiencia/c15-gary-erratum-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29708007%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "efe25714e09d7d2573b203a74202d3622852730b9e5154803b59997d2da517ea"
+    },
+    {
+      "record": "2026-10-08/n15c-gary-insuficiencia/c15-gary-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01188070",
+      "sha256": "900dec6e58495c0018bc979db6d52a8b40df0744e3ba0e97552896df2c8a5bde"
+    },
+    {
+      "record": "2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pagina.evidencia.json",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_article/-char/en",
+      "sha256": "b5d93d3e8071da0d564fa5198cebda596dbb6f1470c25e5bed9db3c15a16a403"
+    },
+    {
+      "record": "2026-10-08/n15c-alongamento-va/c15-jstage-alongamento-pdf.evidencia.json",
+      "url": "https://www.jstage.jst.go.jp/article/tairyokukenkyu/113/0/113_1/_pdf/-char/ja",
+      "sha256": "202ab083e66d5b6c17b4b708c47a4735143176d713d56accd6e8ee19e4843310"
+    },
+    {
+      "record": "2026-10-08/n15c-alongamento-va/c15-va-cares-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02106065",
+      "sha256": "503ce347b4328219abdcdffd76eb853a36c53eb2051b981d714807a24c1cf4ab"
+    },
+    {
+      "record": "2026-10-08/n15c-alongamento-va/c15-va-cares-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/65/NCT02106065/Prot_SAP_000.pdf",
+      "sha256": "a2b4f81c4b5684a1fa3b8a47c554e43db5ee738a93bd285f24806e51ee4fed9a"
+    },
+    {
+      "record": "2026-10-08/n15c-moreira-cuidadores/c15-moreira-granada-handle.evidencia.json",
+      "url": "https://digibug.ugr.es/handle/10481/54876",
+      "sha256": "f5b88b6aeda307d2307609ad8cacf1c947dde54d58ab7fb40e6a2dbf3baee8c5"
+    },
+    {
+      "record": "2026-10-08/n15c-moreira-cuidadores/c15-moreira-granada-pdf.evidencia.json",
+      "url": "https://digibug.ugr.es/bitstream/handle/10481/54876/81256.pdf?isAllowed=y&sequence=4",
+      "sha256": "850b2b4b544b02161195ffbbff302a5aaa91c4bb0fba0b3a67289715c88f6283"
+    },
+    {
+      "record": "2026-10-08/n15c-kirtan-original/c15-kirtan-lavretsky-html.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3423469/",
+      "sha256": "78269c8b57670481fa589c72e5fcb3bc44e8b74c3c29df96e97f6bbf3df8e4d3"
+    },
+    {
+      "record": "2026-10-08/n15c-kirtan-original/c15-kirtan-arpf-instrucoes-pdf.evidencia.json",
+      "url": "https://alzheimersprevention.org/wp-content/uploads/2025/11/Kirtan-Kriya-Instructions.pdf",
+      "sha256": "6e9cece553633191d8d289f153311baeef286f8694b693ed795f4083f0eab6dc"
+    },
+    {
+      "record": "2026-10-08/n15c-kirtan-original/c15-kirtan-lavretsky-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01537679",
+      "sha256": "433dd24fb4b50445f30ed2767fb2272c976cd50a83c6d02aa3cbc4296bafbf13"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-revieew-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+      "sha256": "9d095f4f83cfb8e380d0b5ea61d65ee774fa9ed701ce5f5fc07058e5b161dda1"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-dbe2026-resumo-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41704158%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "6fffc010cd9a125f19bbece3044b9d14976ef1fcfd311a03750319c5704c7164"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-dbe2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06970769",
+      "sha256": "16c1607c39404239a2a6fce360db642203129e8bb71cebae70b40a962a6394c0"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-caplin-2021-html.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9382956/",
+      "sha256": "f57b7a3db5aab48412168651c3833628b0557a575fc729c2b1efdfd0ceb4ee83"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01993082",
+      "sha256": "7b7922d6de8ad18818d36cd33d7a13a3479cc3779a9e4dabdbdc5bec7e6c8ab8"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-osf-projeto-json.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/gc9qa/",
+      "sha256": "4f7f4e35b81dac0fc3d09750e1617c4302f62681ad6c40089d8eb1a8f1d47696"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-osf-arquivos-json.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/",
+      "sha256": "4ab0a2bd0c122a9850e7b29ae0fc432a208e625183416a635f53ae34a3843ae4"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-osf-pasta-json.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/5fff97d8ba010905008908ab/",
+      "sha256": "ad607a4d7a716e5637d78d92c88f5ccc5f8fdf0f7f4935fab1a9c7b9205ffc5b"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-fast-osf-filhos-json.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/gc9qa/children/",
+      "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-caser2018-pagina.evidencia.json",
+      "url": "https://www.fundacioncaser.org/publicaciones-y-estudios/actas-de-coordinacion-sociosanitaria/historico/actas-de-coordinacion-sociosanitaria-n-22",
+      "sha256": "2c4f0dd5821facd1c867c8700517b736cb4f638218c618bc2ae295f36f2989c7"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-caser2018-pdf.evidencia.json",
+      "url": "https://www.fundacioncaser.org/sites/default/files/adjuntos/2206.pdf",
+      "sha256": "8ddf2d4733d49d2030faaabf6fb85996a77e448a95bd3475a00cff67c377c0b2"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-usc-cuidate-capitulo-pdf.evidencia.json",
+      "url": "https://backoffice.books.scielo.org/id/dk8c5/pdf/obando-9786287501621-04.pdf",
+      "sha256": "d5d8d75d48c4b7257ed2da22706f4eed39e14039f660aa4d1d4f6da18f1636c2"
+    },
+    {
+      "record": "2026-10-08/n15c-originais-caser/c15-caser-aviso-legal.evidencia.json",
+      "url": "https://www.fundacioncaser.org/aviso-legal",
+      "sha256": "f44926a5289a7601e2673b35a89b77aac50be2d0f9ddc5434a6440b843441166"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-niva-faixas-pagina.evidencia.json",
+      "url": "https://niva.org/exercises-with-elastic-band/",
+      "sha256": "a25bedb4fd2b176c6fd6e34592240b3e533614324aec5df554e7c6c64e4115fc"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-niva-faixas-cartaz-pdf.evidencia.json",
+      "url": "https://niva.org/app/uploads/Exercises-with-elasticband.pdf",
+      "sha256": "cb184279597a592f5a43acc68f93263292896203f8888540a60ddd38d9161297"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-aderencia2026-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1007/s10926-026-10449-w",
+      "sha256": "f160c6e2ad89cace12847c2c76d324a50a1dd94f9ba2b951dd67f16a51da0c07"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-tese-portal.evidencia.json",
+      "url": "https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab",
+      "sha256": "f3eeb11aa1bfed714a056df79ec5e1b3c32b0324bb2a8ac220fdf6f606c15fa9"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-europepmc.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "cc4be19981269045cf794a6e4c7a3f0836b3823d54d5f5be110103de745a5127"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-crea2026-suplementos-pagina.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+      "sha256": "7dd2be3b456ae722dcdb602d104edca24f397f557f22da599675d66dd9dd99f3"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-pmr-paliativo2025-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML",
+      "sha256": "60f5a6ab2fe1c497e84b82e3d1215b65a1ccbaeb958f2e7a027c21a81a05e27a"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-facilitator-pdf.evidencia.json",
+      "url": "https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+      "sha256": "ce67fb0b103cd2ea10ff99596167c222f6cf907bce0c23e29594cc9d346bca3c"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-pagina.evidencia.json",
+      "url": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+      "sha256": "f614d4c0cd8a564a18d18b3be27e84f4e7a4d0a3714ac3249efef78051239f13"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-workbook-pdf.evidencia.json",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf",
+      "sha256": "df3ce629d043b2c0b4e2c347693cdca8d95b4044e3686152de24c21b182a024e"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-mindful-pdf.evidencia.json",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+      "sha256": "84768176f3c961f0c9b9f39bb473340c4e647081b051e282e0017392bf9adac5"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-caregiver-pdf.evidencia.json",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+      "sha256": "87f4fd4692732acd7646150b745a355779c78c0c3b0a80e2df228f76ebe1f4ae"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2014-protocolo-html.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/1471-2474-15-119",
+      "sha256": "5f415067734000bc872b55377d1fcf4cfec7a087e1a27477f68ab6249366f57a"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-resultados-html.evidencia.json",
+      "url": "https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1",
+      "sha256": "c9345efd9dcb6e77745c3e608fad97fd0da84bb0416f69578ec666c5f73825c5"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-tronco-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML",
+      "sha256": "8d76bbb1491e1536161724798d24fc1a1178ae7f712e1ff22a2433e5ecd82287"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-pmr-enfermeiros2022-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9751506/fullTextXML",
+      "sha256": "34bbc85769e9ac88f1f675b81c9290c4278efd23d00cd79f6891d69da4dc2beb"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-heartfocused2021-metadados.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "6fed5b306fa37efa312d4b8e3202b80697a63821f6b489be79be0650a885f7d9"
+    },
+    {
+      "record": "2026-10-07/n15c-teses-seguimento/c15-benson478-alzheimer-registro.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06997523",
+      "sha256": "c50b0bc62164a3e6c7dbdf5fc335a06868e31d8b7cbd2be1a8baa0000d350b7a"
+    },
+    {
+      "record": "2026-10-07/n15c-revieew-suplementos/c15-revieew-suplementos-pagina.evidencia.json",
+      "url": "https://link.springer.com/article/10.1007/s10926-024-10182-2",
+      "sha256": "e080451b600ecfe267a893f7293808bb7a980188dbb400e821ca6a5569670249"
+    },
+    {
+      "record": "2026-10-07/n15c-revieew-suplementos/c15-revieew-si1-tif.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM1_ESM.tif",
+      "sha256": "81ee30a23b19551a618fe9c1a5616b9e62f264825dd3bd411ea0196d3cb29ee4"
+    },
+    {
+      "record": "2026-10-07/n15c-revieew-suplementos/c15-revieew-si2-tif.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM2_ESM.tif",
+      "sha256": "8e95f9d71f75d192343ece52d617d453ea38cdc529a8de52aa32cc3f9be779a2"
+    },
+    {
+      "record": "2026-10-07/n15c-revieew-suplementos/c15-revieew-si3-tif.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM3_ESM.tif",
+      "sha256": "e73e6051fd8c658c496cbcee646c0a3fb3a4f424214f0af314424f7331b1e690"
+    },
+    {
+      "record": "2026-10-07/n15c-revieew-suplementos/c15-revieew-si4-docx.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM4_ESM.docx",
+      "sha256": "1c53b922aa0863df0ea0c275b53ee5b44ab90cf2c9c613741d771cc2750fdc1c"
+    },
+    {
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+      "sha256": "cf36ae034b81393000c86b950534c83bd8b348ca75deddbc0797380c00b42250"
+    },
+    {
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-qualificacao-trial-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+      "sha256": "8010523b681b9c27a10775d4c16a357da6aa069bbf432003601a67e605a40872"
+    },
+    {
+      "record": "2026-10-07/n15c-alongamento-profissional/c15-atac-perfil-institucional-html.evidencia.json",
+      "url": "https://abis.gedik.edu.tr/amine-atac",
+      "sha256": "02d70b1997c5081860851aad7f57d42919050682a9cf2bf0949e304ea4cd3527"
+    },
+    {
+      "record": "2026-10-07/n15c-dancecare/c15-dancecare-entregaveis-html.evidencia.json",
+      "url": "https://dancecare-project.eu/public-deliverables/",
+      "sha256": "bfea692ffcf08c5d0d6f7cdca50c53305217f89b48cb1c903ee58503c00722de"
+    },
+    {
+      "record": "2026-10-07/n15c-dancecare/c15-dancecare-handbook-pdf.evidencia.json",
+      "url": "https://dancecare-project.eu/wp-content/uploads/2026/06/DanceCARE-handbook-def.docx-2.pdf",
+      "sha256": "704316ca617978d803fce36e323f5f0b7a00153c389597e8fe474a57e6a7533b"
+    },
+    {
+      "record": "2026-10-07/n15c-dancecare/c15-dancecare-guidelines-pdf.evidencia.json",
+      "url": "https://dancecare-project.eu/wp-content/uploads/2026/06/D-2.2.-DanceCARE-Guidelines-for-trainers-and-facilitator-SUPER-FINAL.pdf",
+      "sha256": "efe3896eec69e74d51fed9b0a9edc4e37db54adf2475899b57d798013605d690"
+    },
+    {
+      "record": "2026-10-07/n15c-dancecare/c15-dancecare-profissionais-html.evidencia.json",
+      "url": "https://dancecare-project.eu/trainers/",
+      "sha256": "e7f3b31b1a2826138d94be247eb2d08b071ba553616e8813a4332167b4bb9478"
+    },
+    {
+      "record": "2026-10-07/n15c-dancecare/c15-dancecare-protocolo-html.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1770820/full",
+      "sha256": "6a56e3afb8f36f63f18a62a7837fa4e79893e91cea4c7d855096a9c47313f9da"
+    },
+    {
+      "record": "2026-10-07/n15c-ambiente-compativel/c15-montero2020-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML",
+      "sha256": "48acbc37da1e032ad585285c255c279806f0840125a83ca1a3c98c1a7ce716f8"
+    },
+    {
+      "record": "2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-html.evidencia.json",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0277009",
+      "sha256": "c34ed04cca5ee07abfb917728a9045aae475adcdcd70cbc8842ed0559b324756"
+    },
+    {
+      "record": "2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-pdf.evidencia.json",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0277009&type=printable",
+      "sha256": "5bb19b3f6fdabd12b7bcc0c78f1c2030a956b3f1cab50595d278fb236684c59d"
+    },
+    {
+      "record": "2026-10-07/n15c-nih-yoga/c15-nih-yoga2022-s2-docx.evidencia.json",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0277009.s002&type=supplementary",
+      "sha256": "5e5ac190013ff838f4cf4e6b8c855a86b658f7652bdd4d735c50249438a135fc"
+    },
+    {
+      "record": "2026-10-07/n15c-nih-yoga/c15-plos-licencas-politica.evidencia.json",
+      "url": "https://journals.plos.org/plosone/s/licenses-and-copyright",
+      "sha256": "5a25e54239d46f7db3e1f02a4ff8e902c8901f04c159fe6cbdf394a5b2d9d1df"
+    },
+    {
+      "record": "2026-10-07/n15c-nih-yoga/c15-caremetoo2020-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7744258/fullTextXML",
+      "sha256": "483b1b9fa761d00812b1a6b31c8d942e747d1e848cee9b6f788a30ebddd54a8b"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-roshid2024-protocolo-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10993085/fullTextXML",
+      "sha256": "1aa0ca5229552c23bbc2200659766b31082e7fc298bf87179fd63d382fb4cd79"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-roshid2024-protocolo-pdf.evidencia.json",
+      "url": "https://assets.cureus.com/uploads/original_article/pdf/231006/20240404-25493-1h8mct4.pdf",
+      "sha256": "1cb7ae0124f36ec06178f78cc2f62aa1b3842f5d0b27599ed8d51d05298431d1"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-okamura-autoria-institucional.evidencia.json",
+      "url": "https://psrlab.hiroshima-u.ac.jp/okamura.htm",
+      "sha256": "5098c31c7fcb7dd04497642725048009b12655fe16504359e08619498a970bb9"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-familiar-pdf.evidencia.json",
+      "url": "https://care2caregivers.com/wp-content/uploads/2019/12/Caregiver-Self-Care-Booklet-English.pdf",
+      "sha256": "23c35e049144d397108ab146941242b91b2629ac779ce2f367f76bb6de24e1e6"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-profissional-pdf.evidencia.json",
+      "url": "https://care2caregivers.com/wp-content/uploads/2019/12/Professional-Self-Care-Booklet-English.pdf",
+      "sha256": "1f3b9ff2204699fe68b6764ac27f0e6a22cfdac6fd7e186af00d374853f6e36c"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-rutgers-autocuidado-pagina.evidencia.json",
+      "url": "https://care2caregivers.com/professional-resources/self-care/",
+      "sha256": "519e3622f713b3e7574b3080fadd3f9225c9d3f3dc9424e75663e216231ed4d0"
+    },
+    {
+      "record": "2026-10-07/n15c-domestico-digital/c15-rutgers-fogerite-credencial.evidencia.json",
+      "url": "https://shp.rutgers.edu/blog/2020/12/05/retirements-2020/",
+      "sha256": "27f865b5aa3153609e07f34be82d28f0d0e3cfa925fd448168709cca55e63e90"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-pouraboli2019-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6982664/fullTextXML",
+      "sha256": "785bf8052174183450aefad281278df7484b371fe2d75e58e086ea342d556ffe"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-umadevi2013-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3768217/fullTextXML",
+      "sha256": "2a8ce9e9b6deca930b7118186f5b3eeac822228c1bd23dce849b9b86c4dcfd35"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-transfe2024-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11270366/fullTextXML",
+      "sha256": "69a82f9d5c66a9263cfd3a3990d6917738479b6501047eb1589ae63ffec1841b"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-transfe-osf-metadados.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/k7wte/",
+      "sha256": "4c6b35ef4a8c02c7e27207fe3c74cb6464a0b630c13a4527524f1bb18cae01ac"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-transfe-osf-arquivos.evidencia.json",
+      "url": "https://api.osf.io/v2/nodes/k7wte/files/osfstorage/",
+      "sha256": "afcf3d785b6758e82f77cd926e696be118a73c237359cdd0cf78ccce02396010"
+    },
+    {
+      "record": "2026-10-07/n15c-sequencias/c15-transfe-osf-protocolo-pdf.evidencia.json",
+      "url": "https://osf.io/download/4efka/",
+      "sha256": "b7cf10ef79f495413ae182b262d1f46444a464be1b7cdf9d606851877cdcf738"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-fedema-manual-2022.evidencia.json",
+      "url": "https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf",
+      "sha256": "4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-fedema-pagina-2022.evidencia.json",
+      "url": "https://fedema.es/2022/12/01/manual-de-formacion-para-personas-cuidadoras/",
+      "sha256": "f6ae79a12eb277e774cbf0adcbeb9d67000c5b158437089e5370c4f85e8f20e3"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-fedema-avisos-legales.evidencia.json",
+      "url": "https://fedema.es/2020/08/05/avisos-legales/",
+      "sha256": "6767b3e63a78ccff2210cbe6b52abf98fdf57dfa2cc96ba1f6c57a4a9915c2e3"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-alzoc-respiracao-pdf.evidencia.json",
+      "url": "https://www.alzoc.org/wp-content/uploads/2022/03/Caregiver-Breathing-Techniques-1.pdf",
+      "sha256": "6426e9d9e148f20b66c6ac7121f1524439c5b12118fd736c533540438b346aee"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-kirtan2012-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3292237/fullTextXML",
+      "sha256": "2b5fa594236708c369021311ccd2b40bd9e82af2dd40634086d722fcf10177ac"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-jacobson-hemodialise2024-pdf.evidencia.json",
+      "url": "https://d-nb.info/1324365749/34",
+      "sha256": "86afda4f982cedab127623bffa2b10231e1ace53d2df71fd8820f3168bacf749"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-madruga-tese-2021.evidencia.json",
+      "url": "https://dehesa.unex.es/bitstream/10662/12329/4/TDUEX_2021_Madruga_Vicente.pdf",
+      "sha256": "23dfbe16dce996f1a9ded4d658791f0a40bbbb1bc4fbec131eba57d2cc4b2108"
+    },
+    {
+      "record": "2026-10-07/n15c-fisico-relaxamento/c15-cuidate-manual-metadados.evidencia.json",
+      "url": "https://produccioncientifica.usal.es/documentos/68d1244f487e182b7b98b840",
+      "sha256": "7029751deb065e8583b80cd4d3b0a9adb7bebeedcb8babb5403863b0348d6243"
+    },
+    {
+      "record": "2026-10-07/n15c-mcm/c15-mcm-artigo-html.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/full",
+      "sha256": "242dbc8095d40b5eb25349783d7ce6758c0b27b0287a4653e3a29e68aea20aea"
+    },
+    {
+      "record": "2026-10-07/n15c-mcm/c15-mcm-artigo-pdf.evidencia.json",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/pdf",
+      "sha256": "462e9a3201c4de6427bb30a468af62c4ecb6d4e57227496e3fbb84517ffc274c"
+    },
+    {
+      "record": "2026-10-07/n15c-ufpb/c15-ufpb-dissertacao-2018.evidencia.json",
+      "url": "https://repositorio.ufpb.br/jspui/bitstream/123456789/14210/1/Arquivototal.pdf",
+      "sha256": "6ab2b24ed9657ebd2083a922b97d429ae396bef4c39d0ba767d2165b04fa6d06"
+    },
+    {
+      "record": "2026-10-07/n15c-ufpb/c15-ufpb-metadados-2018.evidencia.json",
+      "url": "https://repositorio.ufpb.br/jspui/handle/123456789/14210",
+      "sha256": "619b61a5a354c622e51873e96b3ff591ef8f6fc3463b11c2040ad63c4f032869"
+    },
+    {
+      "record": "2026-10-07/n15c-ufpb/c15-revieew-autoria-ehu.evidencia.json",
+      "url": "https://www.ehu.eus/es/web/campusa/-/ejercicio-fisico-mejora-bienestar-cuidadores-de-personas-mayores",
+      "sha256": "58180976e057f670c8e8e6fe9e2381e856deefde4fbcff885b8650e10c3c77ce"
+    },
+    {
+      "record": "2026-10-07/n15c-ufpb/c15-revieew-professor-ehu.evidencia.json",
+      "url": "https://www.ehu.eus/es/web/graduak/grado-fisioterapia/profesorado?p_idp=762388&p_redirect=fichaPDI",
+      "sha256": "e4752977b15260092c09209d73c1802a5a5d333148448b07532e870a7ab316ed"
+    },
+    {
+      "record": "2026-10-07/n15c-programa/c15-revieew-protocolo-pdf.evidencia.json",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12891-023-06584-7.pdf",
+      "sha256": "470d1afff362415d77ceae7eea3ca050f65ff2e1474a38981acba3b0df7e7f84"
+    },
+    {
+      "record": "2026-10-07/n15c-programa/c15-revieew-resultados-pdf.evidencia.json",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10926-024-10182-2.pdf",
+      "sha256": "09301ffab7886cefb968b0426dbbbe97ee7243db475b6437dd6912f34a6e5552"
+    },
+    {
+      "record": "2026-10-07/n15c-conteudo/c15-guia-ms-2008.evidencia.json",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_pratico_cuidador.pdf",
+      "sha256": "7fbfa7d93a83bcb528ab59994503e36becb5cbb3a6f918f9bed820e367445d40"
+    },
+    {
+      "record": "2026-10-06/n15c-fechamento/c15-cbt-editora.evidencia.json",
+      "url": "https://www.wup.uni-wuerzburg.de/aktuelles/meldungen/single/news/cognitive-behavioral-therapy-for-people-with-parkinsons-disease-and-caregivers/",
+      "sha256": "76da9c4f12c91c38b9377870e52eda83433921891f129e06edacce7ea91f8c63"
+    },
+    {
+      "record": "2026-10-06/n15c-fechamento/c15-cbt-livro.evidencia.json",
+      "url": "https://www.praxismacht.de/Pasqualini_Macht_Ellgring%202024.pdf",
+      "sha256": "49ebe9d5c36074b009257d1498d0ddd4646a8fc7359fd3df905c36bdb0cd959e"
+    },
+    {
+      "record": "2026-10-06/n15c-fechamento/c15-va-workbook-modulo1.evidencia.json",
+      "url": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+      "sha256": "30b856ebb5846fc0ee7d4e5c08acedd132d5991cffdd1c3f5a62e25ecb0f7b77"
+    },
+    {
+      "record": "2026-10-06/n15c-fechamento/c15-pmr-indonesia-artigo.evidencia.json",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/view/12524",
+      "sha256": "2b5013ead49af33f07307a80ce53a4f078a2602521c7ab7c353d8959a91a49c6"
+    },
+    {
+      "record": "2026-10-06/n15c-fechamento/c15-pmr-indonesia-pdf.evidencia.json",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/download/12524/Download%20Artikel",
+      "sha256": "ce2ec1eee7b8b8eca11b4fa823f60c312d9eea350cbdf453b2306d8204d3b28f"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-myten-pdf.evidencia.json",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12904-026-02309-4_reference.pdf",
+      "sha256": "3672ff1a639191ec4b9d943b6ca7345aa57210728eaf4d53f6adb5efc02503ae"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-myten-s3.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12904-026-02309-4/MediaObjects/12904_2026_2309_MOESM3_ESM.docx",
+      "sha256": "70cfeb06c945833097001767f8a62a9f9018c682816c4e23802f2cc035011e91"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-myten-s4.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12904-026-02309-4/MediaObjects/12904_2026_2309_MOESM4_ESM.docx",
+      "sha256": "cc9505063326e6abe28be754231243e58928470042dd22031eda7e2bb06eceb7"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-impacct-protocolo.evidencia.json",
+      "url": "https://www.nari.net.au/Handlers/Download.ashx?IDMF=5fa34cf5-2443-430c-9775-a6524e21b47a",
+      "sha256": "0d95ebca283aae827daf7dcec480e3eda225d966e76ccdf06374e12c7092634a"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-benson-cancer-pdf.evidencia.json",
+      "url": "https://brieflands.com/journals/ijcm/articles/131622.pdf",
+      "sha256": "f1300daf89d10bc86774db1118314e9fcf17b5dd37ef9d0d023b7ab57f954cb6"
+    },
+    {
+      "record": "2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819",
+      "sha256": "5cdbf9281c93b9c3850243a46b3506507e681f457fde814ecb7706a2ceec8272"
+    },
+    {
+      "record": "2026-10-05/fechamento-dirigido/c15-revisao-burden-2025-xml.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1474913/xml",
+      "sha256": "de669093d43d58f159dd87c5effaae8c1afd841b8a230d4f419434c1c17d59b6"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-viabilidade.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9565999/",
+      "sha256": "a7dab8f327fda614a3a87dc72fc998d69dc9700bacdd2dcd282f04e5f8c11e52"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-yoga-artigo.evidencia.json",
+      "url": "https://link.springer.com/article/10.1007/s10433-023-00792-9",
+      "sha256": "cf6ade7d9f63509adbce7466506d5439902b5fbc4e94c40a883c884481b5db47"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-yoga-suplemento.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10433-023-00792-9/MediaObjects/10433_2023_792_MOESM1_ESM.docx",
+      "sha256": "84860209a74c63d0b01861b08714c29cadac3da7788db22b1bf78943e5c297b5"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2021-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/fullTextXML",
+      "sha256": "ce3f92b918565f2f15fc29aef7f5b42c218deb1bc586a078014d54d580083ce9"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2021-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8489565/supplementaryFiles",
+      "sha256": "443e7a2e84310b580eaff087d66fb69bbad3a6f3cb692c38c0f7d5703a59d178"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-qigong-protocolo-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7976717/fullTextXML",
+      "sha256": "8afe676cf8d609d89c805072877db901f9689f6d3a39a291beb44b59c1ebd605"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-qigong-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7976717/supplementaryFiles",
+      "sha256": "ba64992c910f067ec10a575998ac58d5f4fb28f4bb5d292a9da2cb4de7c5bc2b"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-cuidador-protocolo-2016-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5031263/fullTextXML",
+      "sha256": "5a38b10644d746982fd49c889e1d4122284aa7d91340fc975e673b2c9dc40ae0"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-dor-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11484094/fullTextXML",
+      "sha256": "4020bde9969fb1d3d0bf8071301f057838b2db3c7abfbb9b8cc88e84700cf6a0"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-online-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/fullTextXML",
+      "sha256": "cc48e68567100c4a49c08359451bf7b5748b96a4deab8f94d181155a147eed19"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-yoga-online-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/supplementaryFiles",
+      "sha256": "6ef66a12184185aab5bb9597046da8677ee61f875595adf90479028d31d7195b"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-triagem-yoga-alzheimer-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11968721/fullTextXML",
+      "sha256": "b3d8af6318253453c163d8c5ed0eda58b3ad473aa785d4512c1f0aba814b6963"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-dupla-cancer-2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/fullTextXML",
+      "sha256": "f9566f3401418017d4612cb5f13f0e6fb1cda64a2e78e588086d7993218779ea"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-dupla-cancer-anexo.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/supplementaryFiles",
+      "sha256": "3b5e90417ebb30c9439105ba11fa81f0580b8094432af34d7e8d3b79a7a6544a"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-hacer-2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12967483/fullTextXML",
+      "sha256": "cf75b920cc285162d4f986ba98edcd80a850f334dd949b845372402f0735c49a"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-prieto-protocolo-deposito.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7151160/fullTextXML",
+      "sha256": "74a3b41e0873c0c46f13a38d08954c5d18e96a88aea343003ef452e182002d3b"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-2025-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12432464/fullTextXML",
+      "sha256": "e62dc0820aa68bae5060e3de785d8a888cb70eebf760165e6ed1535b6a27c61d"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-forca-relaxamento-2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/fullTextXML",
+      "sha256": "07b6c241512d11dfe017cad3f652e2bd8c53e22a6c0c551d0cbf75c207704be9"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-revisao-comportamental-2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13600195/fullTextXML",
+      "sha256": "9c30f2f810981855acc930def898dfb422a3f5398da6c3b8b4f59d11427e1182"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-farran-2016-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5526207/fullTextXML",
+      "sha256": "95ee8276365d76026abb6faca504770a92f44de0441dbb6d16a58d0131bb9e8b"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-enrich-protocolo-2011-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3101179/fullTextXML",
+      "sha256": "9f5ef3be8c563d654d920e38a75acf3f2ef15f27e7880fdc90cd8349973ac47c"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+      "sha256": "8c00c573ab0d11e1ba901a1c02ddeefaa1705338780d6c40e27f1d9109960ce4"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML",
+      "sha256": "053e07b538ef703496389b9b8f0643321d9e2d148bd95b30c04bbbabb6e0014b"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-doenca-avancada-2015-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4588256/fullTextXML",
+      "sha256": "1cd663d6fdc000908d5060ce862b485d114d3edada33401afa75c7a7c4105bca"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-carefit-site-autores.evidencia.json",
+      "url": "https://personal.cis.strath.ac.uk/mark.dunlop/carefit/",
+      "sha256": "65a0fa4f27e69c09a4af77578c416ead6e2db2b04e61910d0df0eaea39bd4dde"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ela-autocuidado-2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/fullTextXML",
+      "sha256": "17a4b5451d38fde16f9d34df3f7ea550f97a4517b0b0208818669ce44498d235"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-tese-original-pdf.evidencia.json",
+      "url": "https://repositorio.ufrn.br/server/api/core/bitstreams/4c936b7f-5e35-46bc-ba99-4d2c0d2d8d91/content",
+      "sha256": "e95a0e5586fded9ce9e8ad141c84549aca07fc2539fd0c87d7aa540a6d4c5b01"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-handle53566.evidencia.json",
+      "url": "https://repositorio.ufrn.br/server/api/pid/find?id=123456789%2F53566",
+      "sha256": "6f8cdc9af761a6436dce83693793a38fe928df17ba3d8bd458218a58f495e16e"
+    },
+    {
+      "record": "2026-10-04/n15c-retomada/c15-ufrn-tese-bitstreams.evidencia.json",
+      "url": "https://repositorio.ufrn.br/server/api/core/bundles/7850a2a8-eb40-49a9-81c4-0715f1da9f38/bitstreams",
+      "sha256": "72d6ca3473eded33f8ef9f702895a63c8d41c8977f5b5da2dec2d13ba6cf5b4d"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+      "artifactSha256": "eec1213f82546e119cb8e26cd0641a24377251626cd91467995e81e2f5650bef"
+    },
+    {
+      "file": "2026-10-13/n15c-lacunas-dirigidas/triagem-web.json",
+      "artifactSha256": "a8615eded23f70f60863c88b329e4dbde75f1c557bb2cd2092649f19b8929401"
+    },
+    {
+      "file": "2026-10-13/n15c-lacunas-dirigidas/cotejo-g4.json",
+      "artifactSha256": "aa2105ef362ad928e952e6cf340e8f4ecadc6155339a8a325ecc833dc5c89780"
+    },
+    {
+      "file": "2026-10-13/n15c-lacunas-dirigidas/inventario-lacunas.json",
+      "artifactSha256": "f87cc4dc9dd23e4ad5e08d2ecc07575ccfd12553d43a0bbe1da89aca29d3596f"
+    },
+    {
+      "file": "2026-10-12/cg05-pilates/pacote-factual.json",
+      "artifactSha256": "5b19a5c9a0c99a627384f2d1bae8c84f19ce41d977466dabfb0de67c577ffc46"
+    },
+    {
+      "file": "2026-10-12/cg05-pilates/inventario.json",
+      "artifactSha256": "07c8cd3473c99013627f2aef1fedb5bd99f58c2ab645141567d1482b7cc210d2"
+    },
+    {
+      "file": "2026-10-12/cg05-pilates/triagem-web.json",
+      "artifactSha256": "ec506576be581556d567b618cee8d7ae3fb3db6734e47cea4a59bb4d52700c3a"
+    },
+    {
+      "file": "2026-10-12/cg04-revieew/pacote-factual.json",
+      "artifactSha256": "2cf13035a250bc0f248c84261cfe3f4449da6a6d800bc30e88401e8950c7b075"
+    },
+    {
+      "file": "2026-10-12/cg04-revieew/inventario.json",
+      "artifactSha256": "a488a964d9e036fcef6490fcfcf7cac1a6242d77a9b3b53252ffac9b52addd5f"
+    },
+    {
+      "file": "2026-10-12/cg04-revieew/triagem-web.json",
+      "artifactSha256": "92be217c63ef000b7a66982108048be1e7cb81eea32bff897869ef3662f28648"
+    },
+    {
+      "file": "2026-10-12/cg03-start/pacote-factual.json",
+      "artifactSha256": "bac71ada4b1a36af83ba2c4277b888be82dc5f48846a85fd01f685b1e1e1f54e"
+    },
+    {
+      "file": "2026-10-12/cg03-start/inventario.json",
+      "artifactSha256": "27477b2e085437cdcc02d254dae7cb4399d6b4d143291ecbf0dd5976ce6abcae"
+    },
+    {
+      "file": "2026-10-12/cg03-start/triagem-web.json",
+      "artifactSha256": "dd4061e892687c4b726b396de59a478e8b0226c8b3f3debf294d299fee12136a"
+    },
+    {
+      "file": "2026-10-12/cg02-benson/pacote-factual.json",
+      "artifactSha256": "b72bce959ccce4047d61ade09c3e8d6e888159e807348e8c44d34f43c7b283d6"
+    },
+    {
+      "file": "2026-10-12/cg02-benson/triagem-web.json",
+      "artifactSha256": "ec9a3f2f304e536556463d7433c019c0a26200d34836c24e157ee6be395d6b58"
+    },
+    {
+      "file": "2026-10-12/cg01-estatico/pacote-factual.json",
+      "artifactSha256": "3b61fa79b8c735c385a59a3e26a6b7e527ad753da494871aa8b96ae492a03fd2"
+    },
+    {
+      "file": "2026-10-12/cg01-estatico/leitura-complementar.json",
+      "artifactSha256": "edabdb286bae78f636de8b54dbb5ec4688a5fb56328595134f52955771178568"
+    },
+    {
+      "file": "2026-10-12/cg01-estatico/inventario.json",
+      "artifactSha256": "5da5b23456b3d35aacc025b654395c57e166978c0e095dad61dee81b86d4368a"
+    },
+    {
+      "file": "2026-10-12/cg01-estatico/triagem-web.json",
+      "artifactSha256": "044bd945365206b7bfc7200202bd637cdcd01b6e786d404c0771138e2090b6de"
+    },
+    {
+      "file": "2026-10-12/cg02-benson/leitura-complementar.json",
+      "artifactSha256": "ee9a17135a09c3d692295540cf22ce0c1afa84defbd9a2c1b87349787974a503"
+    },
+    {
+      "file": "2026-10-12/cg02-benson/inventario.json",
+      "artifactSha256": "8b30816f43d7cadd2ecf507cb854cd0636641ca7c7008bd2dcf5f406e7115f8e"
+    },
+    {
+      "file": "2026-10-12/n15c-catalogo-modular/verificacoes.json",
+      "artifactSha256": "467459fb92ad82d7493fd6ea65c1946420187173e3a4f8063ba71838c5bd51f3"
+    },
+    {
+      "file": "2026-10-11/n15c-autocuidado-roteiros/leitura-fontes.json",
+      "artifactSha256": "7d5797ffb9cbfea18b9586193f5794e0fb20ceb7f07d5088cc2cb138a95155bc"
+    },
+    {
+      "file": "2026-10-11/n15c-autocuidado-roteiros/inventario.json",
+      "artifactSha256": "076537973b6eda4888853ac1c1168e19d0c76fe5bcd80d5ba25caa599dc6649b"
+    },
+    {
+      "file": "2026-10-11/n15c-autocuidado-roteiros/mapa-apk-campos.json",
+      "artifactSha256": "0c113a6f3608add0f599027b532da86585cb97f24ce652e064184895e6513ab8"
+    },
+    {
+      "file": "2026-10-11/n15c-autocuidado-roteiros/triagem-web.json",
+      "artifactSha256": "e3f2202b44082a6c6a4c0dc4743a2793f4cf97d577fd37435dd5c049249dfc11"
+    },
+    {
+      "file": "2026-10-11/n15c-pilates-2021/leitura-fontes.json",
+      "artifactSha256": "905e71a6c8f451ef3f200991f9198680e248649036faa8a4eb62c4da27d330e4"
+    },
+    {
+      "file": "2026-10-11/n15c-respiracao-oncologia/leitura-fontes.json",
+      "artifactSha256": "5dd1d26d29e0e8db0c7b738773fbb633059b5221e2fbce0045d061b09f0c2875"
+    },
+    {
+      "file": "2026-10-11/n15c-respiracao-oncologia/inventario.json",
+      "artifactSha256": "f9ed1554f4bf58185e8ab1eb9635291eafa16514669474f1b171cd30a7b9ae2e"
+    },
+    {
+      "file": "2026-10-11/n15c-respiracao-oncologia/mapa-apk-campos.json",
+      "artifactSha256": "7a93736c215de7982d4aa9ef14d2ba3e17950761bc17fceb07422e3656a67725"
+    },
+    {
+      "file": "2026-10-11/n15c-respiracao-oncologia/triagem-web.json",
+      "artifactSha256": "9b7c2142499ef4c93323a618eaf58c3f6161dc6fa52cc4ce8aec430baf014cde"
+    },
+    {
+      "file": "2026-10-11/n15c-pilates-cuidadores/leitura-fontes.json",
+      "artifactSha256": "09ab5acdc263983ac3ddd0b5cf92baf5395e608f7c3778a2de67ffcefae1bf8b"
+    },
+    {
+      "file": "2026-10-11/n15c-pilates-cuidadores/inventario.json",
+      "artifactSha256": "3adcdafdbe2e11504f33f09508e0efa0b3b2b627a58013ceea7d17caac638c31"
+    },
+    {
+      "file": "2026-10-11/n15c-pilates-cuidadores/mapa-apk-campos.json",
+      "artifactSha256": "7639f1cda745c9c6037411a53804e50bcf0397c787525f867230e02774bbfdae"
+    },
+    {
+      "file": "2026-10-11/n15c-curriculos-adicionais/leitura-fontes.json",
+      "artifactSha256": "160c1fb664a1e9dc4ba38ede8a2bf5c4e95829fb81c5c7821ed16e7d17a70477"
+    },
+    {
+      "file": "2026-10-11/n15c-curriculos-adicionais/inventario.json",
+      "artifactSha256": "77d1da0ead5900d07bfd51ceb856797a29b8068be2ee85f0cb3129c56e82f67c"
+    },
+    {
+      "file": "2026-10-11/n15c-curriculos-adicionais/leitura-suplementos.json",
+      "artifactSha256": "909f6b1a2a6a248040455abd304f6bed2ba3bac72929d14f1ade2be302245f5a"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-martin/leitura-fontes.json",
+      "artifactSha256": "e22f093b6ae24f1617a5c8f339f958649e485b3caecffe1365e2d192f885c49a"
+    },
+    {
+      "file": "2026-10-11/n15c-mbi-fragilidade/leitura-fontes.json",
+      "artifactSha256": "c10df633a165fdde5e62b0e3f510800b90ca255fd5a9562a4b64045fe1660f1c"
+    },
+    {
+      "file": "2026-10-11/n15c-mbi-fragilidade/inventario.json",
+      "artifactSha256": "a42995958262054a044a1206e1baf77725db4176a5124a29c65fc686cdf38309"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-grupo/leitura-fontes.json",
+      "artifactSha256": "46a2aa7989b4ce54ff7ca08fb0651487b92fa63232a5db2a91f724380c2b3eff"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-grupo/leitura-suplemento.json",
+      "artifactSha256": "ab4a7ca78a953e0754e7c4e2730cf65ab9e0eb7471f654d9fc89cd97d54aa856"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-grupo/inventario.json",
+      "artifactSha256": "8ae0bbd846b953cb4bb65238313ef290794ff209b163824d0f715773060b0fe4"
+    },
+    {
+      "file": "2026-10-11/n15c-caminhada-social/leitura-fontes.json",
+      "artifactSha256": "02a746bfd8be0eb733eb1c5daae0bc291d77b75ab3de35cc341284332dbc3bfc"
+    },
+    {
+      "file": "2026-10-11/n15c-caminhada-social/inventario.json",
+      "artifactSha256": "35332b0f447b9c3d8d6fd108e5bd835d31e7a0259081e3d0ed2e8b792143f7af"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-individual/leitura-fontes.json",
+      "artifactSha256": "b9df44cdfb76ec0d13e889a7ea6bea33bdad370f40bd84260e98d789bb87d927"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-individual/inventario.json",
+      "artifactSha256": "b0847b176acbeeb3c241e1ef2ec7c3fffa26cc72430dfe76f1b42c8611b7fbf7"
+    },
+    {
+      "file": "2026-10-11/n15c-dor-diadica/leitura-antecedentes.json",
+      "artifactSha256": "4c46722606c44f93368b969341508ab86fb559ad603f0cbde3a9dafcbff5d995"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-protocolos/leitura-fontes.json",
+      "artifactSha256": "087048bfde0de5f48eacae3c27955917ac3c609c5c45c8c3c53fee3966a0faa1"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-protocolos/triagem-web.json",
+      "artifactSha256": "c44b630b774774320e6d794086c09ebc358fe4ab3f56c6afd8fde821b5a7a477"
+    },
+    {
+      "file": "2026-10-11/n15c-yoga-protocolos/inventario.json",
+      "artifactSha256": "ff0fc07b34d63f39e22c414863354eca1a89c6646295565f8f6eb144fe8807ff"
+    },
+    {
+      "file": "2026-10-11/n15c-dor-diadica/leitura-fontes.json",
+      "artifactSha256": "27f8a06aecfd684a8391837292e3b446703cdee748b1bdc5086123b07c7c3a72"
+    },
+    {
+      "file": "2026-10-11/n15c-dor-diadica/inventario.json",
+      "artifactSha256": "df3dc22e09b6396e4954e79ed706f693f04177c72da0d5fe2ad4dd7a3f061041"
+    },
+    {
+      "file": "2026-10-11/n15c-remoto-operacional/leitura-fontes.json",
+      "artifactSha256": "f2ed2744c6cceadf9ed9ac05f344cd4f50df94c5d1a0b468cce1d780a51c0877"
+    },
+    {
+      "file": "2026-10-11/n15c-remoto-operacional/leitura-guia-nia.json",
+      "artifactSha256": "d04ca5d11521e5e0f7bd089ec12e8c53e72619430faa97abad733ca6c1267259"
+    },
+    {
+      "file": "2026-10-11/n15c-remoto-operacional/inventario.json",
+      "artifactSha256": "81a0f37e1e50b275b77d62e1b1fb354de4bd63de8687ffd80043549d9bbc2382"
+    },
+    {
+      "file": "2026-10-11/n15c-manuais-fisicos/triagem-web.json",
+      "artifactSha256": "8f3b3befa0791c08bc68bce550dc6c53dac7eed418ea895d9f7a708911f66ebc"
+    },
+    {
+      "file": "2026-10-11/n15c-manuais-fisicos/leitura-fontes.json",
+      "artifactSha256": "27676218d16231ee315021ee35226e5b19767fda82c8da51f4fc999b7152ebdd"
+    },
+    {
+      "file": "2026-10-11/n15c-manuais-fisicos/inventario.json",
+      "artifactSha256": "1d932a9cbca15273e26f20991cd06b8cc7894c0afba7efc658edc9d0cd89d345"
+    },
+    {
+      "file": "2026-10-11/n15c-mindfulness-protocolos/triagem-web.json",
+      "artifactSha256": "596abf82f0b32652155d5e82c40a596014313f25990c02300d5d2f739e1bd67a"
+    },
+    {
+      "file": "2026-10-11/n15c-start-originais/leitura-fontes.json",
+      "artifactSha256": "171b28dd595c8d12fcee2f630fe27dff72f46e4216832036da2c8dcef06a065c"
+    },
+    {
+      "file": "2026-10-11/n15c-start-originais/inventario.json",
+      "artifactSha256": "7154c9e71711fc44b7db7760410b78fd257340237dea08e4bdece62f2a43f697"
+    },
+    {
+      "file": "2026-10-11/n15c-mindfulness-protocolos/leitura-fontes.json",
+      "artifactSha256": "b51d37274ab3e2f528a9b6c070b429310865e7c49b1b0aee62ef9d99127a5478"
+    },
+    {
+      "file": "2026-10-11/n15c-mindfulness-protocolos/inventario.json",
+      "artifactSha256": "58d40751e8b3128aab95c90a836f7fd9129f6d44a5a1ea2064fe8e713f013779"
+    },
+    {
+      "file": "2026-10-11/n15c-mindfulness-protocolos/leitura-doc.json",
+      "artifactSha256": "2bc0d4d6849e4a7c3492bfad9fa2d8a1cd7a70d66c7a175bddbfd9dd07dbba76"
+    },
+    {
+      "file": "2026-10-08/n15c-benson-reavaliacao/leitura-fontes.json",
+      "artifactSha256": "c788ee95cf729835a59a3fc7c479340020f08472d71c8ac459823ca2e1689c54"
+    },
+    {
+      "file": "2026-10-08/n15c-benson-reavaliacao/inventario.json",
+      "artifactSha256": "415bbeecc17541a87b8aaa2c4479e4ceb2cd834b1263e50c62814f7300f47b36"
+    },
+    {
+      "file": "2026-10-08/n15c-cervical-curto/leitura-fontes.json",
+      "artifactSha256": "f5a6ec1811e8498b30007cdc3acfab9700623998c1982e8750abb032d8c01e26"
+    },
+    {
+      "file": "2026-10-08/n15c-cervical-curto/inventario.json",
+      "artifactSha256": "285b28fb80e954955ae7c90efb056bc96e0a4666466eaa04127b91f032cc71e2"
+    },
+    {
+      "file": "2026-10-08/n15c-guias-clinicos/leitura-fontes.json",
+      "artifactSha256": "50d219f7e89b3887b0a7d0841f5258715baab7888da307bc6a072bdff42af14b"
+    },
+    {
+      "file": "2026-10-08/n15c-guias-clinicos/inventario.json",
+      "artifactSha256": "086067e5d1c4c3761cf675dbe4df4334873294ed15ba45c35c65f5218016f6a3"
+    },
+    {
+      "file": "2026-10-08/n15c-guias-clinicos/indice-anexo-montero.json",
+      "artifactSha256": "e43bb7fc53ac5b0d6670699f59c18b4bcfad4558d600b73a34e66eba6537de02"
+    },
+    {
+      "file": "2026-10-08/n15c-guias-clinicos/mapa-apk-campos.json",
+      "artifactSha256": "2cd49613b86bb33df7d8a2ec65facf9df13532e18b46fbb4370e0486ce5ece02"
+    },
+    {
+      "file": "2026-10-08/n15c-guias-clinicos/triagem-web.json",
+      "artifactSha256": "c6207c25e7114fce17b0384c22a44db45a03347234187bf916b35d77aaa06283"
+    },
+    {
+      "file": "2026-10-08/n15c-protocolos-operacionais/leitura-fontes.json",
+      "artifactSha256": "55bb5ab15704e5bfbfae12fea0d838e47945de3346bcbdfc950995dd0a0850d1"
+    },
+    {
+      "file": "2026-10-08/n15c-protocolos-operacionais/inventario.json",
+      "artifactSha256": "d9ecf2e57db129d31de32482c8f583671670f2bf0a0758d9a1649afc3e06e3ed"
+    },
+    {
+      "file": "2026-10-08/n15c-protocolos-operacionais/mapa-apk-campos.json",
+      "artifactSha256": "395f77cd461660362e6fcde760d951a6331148df13a97ecfbb324fe7fa2d3b23"
+    },
+    {
+      "file": "2026-10-08/n15c-protocolos-operacionais/triagem-web.json",
+      "artifactSha256": "1a117e39f91da96a06e85478c48a6ad2e8a374c6ce75955aaa53f7e0e7ab1c03"
+    },
+    {
+      "file": "2026-10-08/n15c-pediatrico/leitura-fontes.json",
+      "artifactSha256": "ba41d148a378f6aa0c63af4c2548034aa286e70c52b6a15f554098de43684479"
+    },
+    {
+      "file": "2026-10-08/n15c-pediatrico/inventario.json",
+      "artifactSha256": "0fd6f585f58e58435f15eb5e0571df8be936c7b6a2aca107d473588c89f88efc"
+    },
+    {
+      "file": "2026-10-08/n15c-mentalizing/leitura-fontes.json",
+      "artifactSha256": "b4b0e219c884cac410897993504800f3ac67a88d5d85b3385efe4f7d3c38032b"
+    },
+    {
+      "file": "2026-10-08/n15c-originais-caser/revalidacao-estatico.json",
+      "artifactSha256": "406f634f190769b0f5359b3fdbe405a7f4b14913c56c1e1712bb2786e408aadb"
+    },
+    {
+      "file": "2026-10-08/n15c-gary-insuficiencia/leitura-fontes.json",
+      "artifactSha256": "56e4f866187c31b2376d16b7fcd639e613e191bd6cc7f8ef97af6df94ae60da6"
+    },
+    {
+      "file": "2026-10-08/n15c-gary-insuficiencia/inventario.json",
+      "artifactSha256": "be604593a1f92e95ef2c9c5a6e10c0bd267358367dd9bc68fee50803c4bf8018"
+    },
+    {
+      "file": "2026-10-08/n15c-alongamento-va/leitura-fontes.json",
+      "artifactSha256": "d2547ccb66b4688b9e518ba1590f03c910987af1ff2f163c7f0ca541c4128fe4"
+    },
+    {
+      "file": "2026-10-08/n15c-alongamento-va/inventario.json",
+      "artifactSha256": "479e26c6c7c2147a115a5a5bdb0c386757c41520c7f06a13cd06e25526674d24"
+    },
+    {
+      "file": "2026-10-08/n15c-moreira-cuidadores/leitura-fontes.json",
+      "artifactSha256": "d09b5bd7073ebeab6b5e7e9c81645f0a89fd8f5f2538523bb6810aee776c69ab"
+    },
+    {
+      "file": "2026-10-08/n15c-moreira-cuidadores/inventario.json",
+      "artifactSha256": "7ed5ff58d8170e484e507e8017a33405b4407e6577285084c4e88f9433231bb8"
+    },
+    {
+      "file": "2026-10-08/n15c-kirtan-original/leitura-fontes.json",
+      "artifactSha256": "68164894a38fedb9c716852e4b801039a907a7ce34adce40356cf8b74100fa0f"
+    },
+    {
+      "file": "2026-10-08/n15c-kirtan-original/inventario.json",
+      "artifactSha256": "dfcf337a386d167a22b5e50bb2a12482f19fd1874370d3c3850e265c23a95827"
+    },
+    {
+      "file": "2026-10-08/n15c-originais-caser/leitura-fontes.json",
+      "artifactSha256": "e3054dc2ce1ace805d06baeb1587c93ad5c182c2a9268d0ff4549a33ef00c42e"
+    },
+    {
+      "file": "2026-10-08/n15c-originais-caser/inventario.json",
+      "artifactSha256": "621892b0689d3cf962d2f852387c78376cdcb9cba5238b60c485a010e7863629"
+    },
+    {
+      "file": "2026-10-08/n15c-originais-caser/mapa-apk-campos.json",
+      "artifactSha256": "bdb84c844c044948ed0a4350a28b34e5180dcae03ce304536630abdcf7d4c000"
+    },
+    {
+      "file": "2026-10-08/n15c-originais-caser/triagem-web.json",
+      "artifactSha256": "57739cb50aba5efc205fb5b53ec126bd0d37e6e8086e001209c7c2ddb9ddc6bb"
+    },
+    {
+      "file": "2026-10-07/n15c-teses-seguimento/leitura-fontes.json",
+      "artifactSha256": "4b3b728f854bdc460fe8f73a9db7cc5d6b38aa64a75920b3c5c47569b747a52c"
+    },
+    {
+      "file": "2026-10-07/n15c-teses-seguimento/inventario.json",
+      "artifactSha256": "eb177862e6563cf871cfd05bce38fd9e98b22cbe874893fb1959bc446e5f464d"
+    },
+    {
+      "file": "2026-10-07/n15c-teses-seguimento/mapa-apk-campos.json",
+      "artifactSha256": "faeab80b6bf0b9c90a6d77b4997078b1e2fae910b3e4d0ccd6b504aeb9a35659"
+    },
+    {
+      "file": "2026-10-07/n15c-teses-seguimento/triagem-web.json",
+      "artifactSha256": "705efd88507c372f660fa31113c735e785e4f1bf93f7e088ff02c5ed0de944a2"
+    },
+    {
+      "file": "2026-10-07/n15c-revieew-suplementos/leitura-anexos.json",
+      "artifactSha256": "ff6fb62fc5f80360d2f4fb87fe2996027f09e15c59fdb56cd5a9b3b066786001"
+    },
+    {
+      "file": "2026-10-07/n15c-revieew-suplementos/inventario.json",
+      "artifactSha256": "641be94ca15c89d56e6bdda213356cb82cc2baeee988e0e258aec8e06169cbf7"
+    },
+    {
+      "file": "2026-10-07/n15c-ambiente-compativel/decisao.json",
+      "artifactSha256": "9d78c6fa8f2f6df1c703060e89ad80b694d44a4432324da470189b1b4af40d75"
+    },
+    {
+      "file": "2026-10-07/n15c-ambiente-compativel/revalidacao-n15.json",
+      "artifactSha256": "904adebb0221216a437dcd186d0f6e7d0b6f9d197465d782b433fbe7853c7756"
+    },
+    {
+      "file": "2026-10-07/n15c-ambiente-compativel/leitura-montero.json",
+      "artifactSha256": "fa291f5e55e35fc7a2e4b99026e8f45083fa9b78777699a82fe8a0c71b80f60e"
+    },
+    {
+      "file": "2026-10-07/n15c-ambiente-compativel/triagem-web.json",
+      "artifactSha256": "1e98ff96338cb04a34f90366cc3907ffef1d1ba399c5fbbd8f82dc6e99950504"
+    },
+    {
+      "file": "2026-10-07/n15c-ambiente-compativel/inventario.json",
+      "artifactSha256": "8dfc44cf2505c71c37fd243437ac98683df36d30914be82ffd54fe9a7e0885c4"
+    },
+    {
+      "file": "2026-10-07/n15c-alongamento-profissional/inventario.json",
+      "artifactSha256": "6b6746e4c489306c0b9830756a8bc805e07af6c15b4c2b3ae145ec065320ada6"
+    },
+    {
+      "file": "2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+      "artifactSha256": "a0bbee22089aad2b1016fb0c6113ec7cb652c21ec89b601772b6515a898e321b"
+    },
+    {
+      "file": "2026-10-07/n15c-dancecare/inventario.json",
+      "artifactSha256": "458a997ba11638460c47cb44e9cad93b91fd00a592c1cb2d4fa4b92a6a5d02d6"
+    },
+    {
+      "file": "2026-10-07/n15c-dancecare/leitura-fontes.json",
+      "artifactSha256": "e93eb509b725c5b71f0d9b34c897a1bc09041d38c8ddfeb1e4359a412e158232"
+    },
+    {
+      "file": "2026-10-07/n15c-nih-yoga/inventario.json",
+      "artifactSha256": "590a8a6b934edf3c3af7f55a11240369132e1b5877b0abc194f97e9b105a537a"
+    },
+    {
+      "file": "2026-10-07/n15c-nih-yoga/leitura-fontes.json",
+      "artifactSha256": "fa9ac7719fdaa685fe4b89abf4795fbcc0ceb7531f87e3868e718047f833abf6"
+    },
+    {
+      "file": "2026-10-07/n15c-nih-yoga/triagem-web.json",
+      "artifactSha256": "addb49d97dc264797a6b3d9f8e954a376945efb7dff767fb245adf3d4a1c92e0"
+    },
+    {
+      "file": "2026-10-07/n15c-domestico-digital/inventario.json",
+      "artifactSha256": "7bf6a15e68830f59690ca010de89720e5c3ba64afd50ac81b293c80b6d2c89c3"
+    },
+    {
+      "file": "2026-10-07/n15c-domestico-digital/leitura-fontes.json",
+      "artifactSha256": "3fc5d82393639caf5ac82fd7098f08008d108f32da378e8729dcaaa8fa83a5e2"
+    },
+    {
+      "file": "2026-10-07/n15c-domestico-digital/triagem-web.json",
+      "artifactSha256": "5e7361c3de9aa7e81b6a10af7d7df1064c92ff55d7bfe3f73fde9cd77d2883cc"
+    },
+    {
+      "file": "2026-10-07/n15c-sequencias/inventario.json",
+      "artifactSha256": "80a2e4bed2c39a55f7d9269d7738ed01b700f945e19199ff7e336750b0e4fa20"
+    },
+    {
+      "file": "2026-10-07/n15c-sequencias/leitura-fontes.json",
+      "artifactSha256": "3d9c0cf78d45e53edf7e960a68616aee81e5908bd6afde1770355d01de7bd3f2"
+    },
+    {
+      "file": "2026-10-07/n15c-sequencias/triagem-web.json",
+      "artifactSha256": "e993a08ecf173341566bcd6f44aea980ff846767c2d39fad51009ca151d117c8"
+    },
+    {
+      "file": "2026-10-07/n15c-fisico-relaxamento/inventario.json",
+      "artifactSha256": "05ae36c8938300be60d6ba695b735352282a275bea893fc4e14e8bb48e58b1e0"
+    },
+    {
+      "file": "2026-10-07/n15c-fisico-relaxamento/leitura-fontes.json",
+      "artifactSha256": "c13751a635f0472a16b6825c257a220583fa92a7b6c195e2d9cd24cea521f464"
+    },
+    {
+      "file": "2026-10-07/n15c-fisico-relaxamento/triagem-web.json",
+      "artifactSha256": "ce3c138244e33d4e061f591f4b8ff6cb40b8bd6883719cc45df3ebb7bf732ef7"
+    },
+    {
+      "file": "2026-10-07/n15c-mcm/inventario.json",
+      "artifactSha256": "0181efc1cb09359eccd3c69341f543a914590c1e6ca753deda65d69338bd2cf6"
+    },
+    {
+      "file": "2026-10-07/n15c-mcm/leitura-manual.json",
+      "artifactSha256": "71dcd90b160443965da64fd74a239db84608c8cac89aaeeb753c43ba15e48132"
+    },
+    {
+      "file": "2026-10-07/n15c-mcm/triagem-web.json",
+      "artifactSha256": "26b14207c38f1370196e918a0bb8ea6efa2f469c3476092b9c4ac33080af6686"
+    },
+    {
+      "file": "2026-10-07/n15c-ufpb/inventario.json",
+      "artifactSha256": "79a7b4d722c39ed4e84d798949e90a1f2408218ed784880190d49c9e4141d9a1"
+    },
+    {
+      "file": "2026-10-07/n15c-ufpb/leitura-guia.json",
+      "artifactSha256": "6303fc6f15fb30ff2aa0be4653b847ab64ade6e86e1a743eff2831de95df8ff4"
+    },
+    {
+      "file": "2026-10-07/n15c-ufpb/triagem-web.json",
+      "artifactSha256": "6d83f7873e98569723be26b7e256ea7009662c9fbffbb6cdfcb404dd2d986dbf"
+    },
+    {
+      "file": "2026-10-07/n15c-programa/inventario.json",
+      "artifactSha256": "01509e80b4d16e613fe1dea392874bd1947976c6f750006a634ac58745bcf9d8"
+    },
+    {
+      "file": "2026-10-07/n15c-programa/leitura-programa.json",
+      "artifactSha256": "ecea0fe7270f0a13227529e8f44605bf77bcd425115c997d243cf384995c74c3"
+    },
+    {
+      "file": "2026-10-07/n15c-conteudo/inventario.json",
+      "artifactSha256": "74e238ad879b0a885e381ead095324034298f8701382b5bae568cfb14dd6ea58"
+    },
+    {
+      "file": "2026-10-07/n15c-conteudo/conteudo-documentado.json",
+      "artifactSha256": "d7206cc1c9f053d50dc84f4f361c59e7b7c78be6746ac9a9fed2ad65d3144c55"
+    },
+    {
+      "file": "2026-10-07/n15c-recorte/analise.json",
+      "artifactSha256": "234a6c0fb5f30180130633e6df825914b6c9cdb57a6eb0dba840681a05c31db1"
+    },
+    {
+      "file": "2026-10-06/n15c-fechamento/inventario.json",
+      "artifactSha256": "ad95b2ffb99b2051d95d443cc19e39b56051f1f89040d12c8700a7d67946a1c3"
+    },
+    {
+      "file": "2026-10-06/n15c-fechamento/verificacoes.json",
+      "artifactSha256": "c8295d68e835f27517d400c09d5dd2114d25ae64fcf255cb24ebf349351fba07"
+    },
+    {
+      "file": "2026-10-06/n15c-fechamento/leitura-manuais.json",
+      "artifactSha256": "931fe5da196fa084cc9406aebcdf43fae51a60431ce333a1a63b43573618e21b"
+    },
+    {
+      "file": "2026-10-06/n15c-fechamento/mapa-apk-campos.json",
+      "artifactSha256": "11c4b9f19dc60f234c324a5a4b1a1e7ed57ec7bc2858fd0391325c662b12e0a8"
+    },
+    {
+      "file": "2026-10-06/n15c-fechamento/triagem-web.json",
+      "artifactSha256": "b150cac24311e5457ec3e327bb3cd443bce1357c910b4c44ee77fffc07caa94b"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-prieto-avaliacao.json",
+      "artifactSha256": "b817b4ca11f6677f16ac0f4641e4557c27e9af7c8762eaf1812b36deb882859b"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-yoga.json",
+      "artifactSha256": "7a8e6a88afc6ec06f01387cd5a758c27ac025e1f6f539cdc23171c7b8e0cbcdd"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-protocolo-2026.json",
+      "artifactSha256": "41cab83201f6717163948dba97f86e4804ea73d79d627267b39809bc4745d94d"
+    },
+    {
+      "file": "2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+      "artifactSha256": "ca0794f80154be07ce37422ce402eeeb9554df6f753b3780346ca9473f65ffe2"
+    },
+    {
+      "file": "2026-10-03/n15c-cuidador-casa/amostra-nia.json",
+      "artifactSha256": "d92314d156be4a98ce6dc7731848f8a1ef322e3c5331cc70e6da1184e6b41233"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-novos-programas.json",
+      "artifactSha256": "a7f5a6183d94516b4878899249e8b084359914bfcd5ef4f4c6ca22124354eb6d"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-fechamento-dirigido.json",
+      "artifactSha256": "dc7cf5d2fa2bc61744118019be515d7f0984d5dca8b6c5e91bd0f9054cd09d24"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/leitura-cartilha-ela.json",
+      "artifactSha256": "5a5e785eb3fa00c1c296ff64d3afca4aa38c42b0bf26a07aaccab136507599b0"
+    },
+    {
+      "file": "2026-10-05/fechamento-dirigido/triagem-cuidador-2025.json",
+      "artifactSha256": "95aa55cdcc9af4872fd40d9c50b5c87abe8bd754c0ee4f7dda5e00f7e6a064bc"
+    },
+    {
+      "file": "2026-10-05/programas-manuais-02/leitura-myten-impacct.json",
+      "artifactSha256": "3ad9f9a0e4d8cf32b007db1b677aa158591bbd47d05d925a05191a573e3a3eb3"
+    },
+    {
+      "file": "2026-10-05/programas-manuais-02/inventario-manuais.json",
+      "artifactSha256": "b74acfb27a380f5016f01452771b150f7c106ce98813372ca520cc0d5ebb3c80"
+    },
+    {
+      "file": "2026-10-05/programas-manuais-02/mapa-apk-campos.json",
+      "artifactSha256": "223582d9865a5a50db2c8ee09e56f18ad66f51698f989cd995963272ab4870aa"
+    }
+  ],
+  "next": "Foco atual: instrucao executavel e condicoes de uso de todasCG01-05. SomenteCG01 atende ambos gates no caminho documentado,0publicados;CG02-05 conservam8perguntas de fonte/entrega. Nao encerrar por cincofichas factuais nem exigir implementacaoAPK/contratacao nesta pesquisa. N15-Cpartial/N21retida."
+}

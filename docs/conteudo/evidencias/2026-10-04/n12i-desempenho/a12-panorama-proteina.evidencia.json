@@ -1,0 +1,22 @@
+{
+  "id": "a12-panorama-proteina",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12700089/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:20:21.536856+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Panorama de meta-analises em idosos por populacao/exercicio e certeza; nao tratar resultados de subgrupos como beneficio universal ou copiar ativos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12700089/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 21316,
+  "bodyFile": "../raw/a12-panorama-proteina.html",
+  "sha256": "3784f8b4894ca5309180ee45847257e1a9163cb27c62f25a709cc4067211303b"
+}

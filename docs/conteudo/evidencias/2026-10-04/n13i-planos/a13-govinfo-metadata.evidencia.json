@@ -1,0 +1,22 @@
+{
+  "id": "a13-govinfo-metadata",
+  "url": "https://www.govinfo.gov/app/details/GOVPUB-HE20_3850-PURL-gpo115563",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:34:16.227310+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir autoria, edicao preservada e aviso de que arquivo historico pode nao refletir politica atual.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.govinfo.gov/app/details/GOVPUB-HE20_3850-PURL-gpo115563",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 39734,
+  "bodyFile": "../raw/a13-govinfo-metadata.html",
+  "sha256": "b6ab0be4f6844dfeb5247b6ac6a99b0f5f95848770a6becbf4dddf06d1d0d449"
+}

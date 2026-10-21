@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-cuidador-anterior",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20exercise%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202024-12-31%5D&format=json&resultType=core&pageSize=15",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:57:07.621293+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Triagem primaria delimitada de estudos anteriores para exercicio proprio do cuidador; excluir revisoes, treino do assistido e programas fora de casa. Nao presumir licenca operacional por OA.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%28caregiver%2A%20AND%20exercise%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202024-12-31%5D&format=json&resultType=core&pageSize=15",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 87717,
+  "bodyFile": "../raw/i15-busca-cuidador-anterior.json",
+  "sha256": "dbf8039058089438a87dfb7dba00b3e20822c0150e500e855b9e0aaa31c7e2e4"
+}

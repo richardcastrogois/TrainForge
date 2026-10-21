@@ -1,0 +1,23 @@
+{
+  "id": "n39-food101-historical-license",
+  "url": "https://huggingface.co/datasets/ethz/food101/resolve/6981991/food101.py",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:12:17.238231+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "O commit primário e06acf2 mostra a remoção do loader e o pai 6981991. Recuperar apenas o script histórico Apache com aviso específico de direitos de fotografias; distinguir esse aviso da versão nateraw atual sem _LICENSE. Nenhuma foto ou peso, nem execução de loader.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/datasets/ethz/food101/69819918c580f2a01ff94c2bf7dd798824259ea3/food101.py?%2Fdatasets%2Fethz%2Ffood101%2Fresolve%2F6981991%2Ffood101.py=&etag=%2205e13ba36edd62ce75a727804352f60c1263c1c4%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 6208,
+  "bodyFile": "../raw/n39-food101-historical-license.txt",
+  "sha256": "645579032d6db65be70cc20471d1e3d6a3e32f80a7af994a19975590b452e69a"
+}

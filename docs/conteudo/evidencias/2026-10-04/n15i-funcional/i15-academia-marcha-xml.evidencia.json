@@ -1,0 +1,22 @@
+{
+  "id": "i15-academia-marcha-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6400996/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:05:04.743190+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir protocolo e anexos do mesmo ensaio de academia, sem contar artigo associado como novo programa independente.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6400996/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 166259,
+  "bodyFile": "../raw/i15-academia-marcha-xml.xml",
+  "sha256": "28551fd390a7ecd26fd819d0bcc12e75326c2102beb6272fcf4979638719909b"
+}

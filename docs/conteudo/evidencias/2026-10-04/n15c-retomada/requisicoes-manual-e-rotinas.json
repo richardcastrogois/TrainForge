@@ -1,0 +1,7 @@
+{
+ "date":"2026-10-04", "niche":"N15-C", "requests":[
+  {"id":"c15-unijui-pdf-9459","url":"https://www.revistas.unijui.edu.br/contextoesaude/article/download/16753/9459","accept":"application/pdf","extension":"pdf","maxBytes":4194304,"purpose":"Primeiro GET do segundo PDF explicitamente publicado nos metadados Crossref; nao repetir URLs anteriores, nao desativar TLS. Confirmar se manual esta integral no artigo."},
+  {"id":"c15-farran-2016-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5526207/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Estudo primario identificado em revisao com publico cuidador pessoal; verificar instrucao integral e licenca original."},
+  {"id":"c15-enrich-protocolo-2011-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3101179/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ler programa ENRICH identificado na busca e verificar possibilidade domestica propria, supervisao e instrucao completa."}
+ ]
+}

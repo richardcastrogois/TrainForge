@@ -1,0 +1,1578 @@
+{
+  "programmes": [
+    {
+      "sourceTable": "T1",
+      "weeks": [
+        {
+          "week": 1,
+          "sourceWeeklyTotalMinutes": {
+            "run": "30",
+            "walk": "30"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 30.0,
+            "walk": 30.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 2,
+          "sourceWeeklyTotalMinutes": {
+            "run": "46",
+            "walk": "22"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 44.0,
+            "walk": 22.0
+          },
+          "hasDiscrepancy": true
+        },
+        {
+          "week": 3,
+          "sourceWeeklyTotalMinutes": {
+            "run": "60",
+            "walk": "18"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 60.0,
+            "walk": 18.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 4,
+          "sourceWeeklyTotalMinutes": {
+            "run": "50",
+            "walk": "16"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 50.0,
+            "walk": 16.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 5,
+          "sourceWeeklyTotalMinutes": {
+            "run": "74",
+            "walk": "16"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 74.0,
+            "walk": 16.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 6,
+          "sourceWeeklyTotalMinutes": {
+            "run": "90",
+            "walk": "21"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 90.0,
+            "walk": 20.0
+          },
+          "hasDiscrepancy": true
+        },
+        {
+          "week": 7,
+          "sourceWeeklyTotalMinutes": {
+            "run": "95",
+            "walk": "5"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 95.0,
+            "walk": 5.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 8,
+          "sourceWeeklyTotalMinutes": {
+            "run": "",
+            "walk": ""
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 30.0,
+            "walk": 0.0
+          },
+          "hasDiscrepancy": false
+        }
+      ],
+      "sessions": [
+        {
+          "id": "GRONO-T1-W01-S1",
+          "week": 1,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W01-S2",
+          "week": 1,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W01-S3",
+          "week": 1,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W02-S1",
+          "week": 2,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "4",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 16.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W02-S2",
+          "week": 2,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "4",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 16.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W02-S3",
+          "week": 2,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "4",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 28.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W03-S1",
+          "week": 3,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W03-S2",
+          "week": 3,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "12",
+            "3",
+            "(2)"
+          ],
+          "runSeconds": 720,
+          "walkSeconds": 180,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 24.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W03-S3",
+          "week": 3,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W04-S1",
+          "week": 4,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W04-S2",
+          "week": 4,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "7",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 420,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 14.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 28.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W04-S3",
+          "week": 4,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W05-S1",
+          "week": 5,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "10",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 600,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W05-S2",
+          "week": 5,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "17",
+            "4",
+            "(2)"
+          ],
+          "runSeconds": 1020,
+          "walkSeconds": 240,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 34.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 52.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W05-S3",
+          "week": 5,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "10",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 600,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W06-S1",
+          "week": 6,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "15",
+            "5",
+            "(2)"
+          ],
+          "runSeconds": 900,
+          "walkSeconds": 300,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 50.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W06-S2",
+          "week": 6,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "20",
+            "5",
+            "(2)"
+          ],
+          "runSeconds": 1200,
+          "walkSeconds": 300,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 40.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 60.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W06-S3",
+          "week": 6,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "20",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1200,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W07-S1",
+          "week": 7,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "40",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 2400,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 40.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 50.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W07-S2",
+          "week": 7,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "30",
+            "5",
+            "(1)"
+          ],
+          "runSeconds": 1800,
+          "walkSeconds": 300,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 5.0,
+          "totalCalculatedMinutes": 45.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W07-S3",
+          "week": 7,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "25",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1500,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 25.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 35.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T1-W08-S1",
+          "week": 8,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "30",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1800,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T1",
+          "approvalState": "research_only_not_executable_approved"
+        }
+      ],
+      "sourceId": "PR149",
+      "copyright": "2007Buistetal.,CCBY2.0",
+      "lastWeek": "Somente sessao1 publicada; nao preencher2/3 ou duracao de prova porIA."
+    },
+    {
+      "sourceTable": "T2",
+      "weeks": [
+        {
+          "week": 1,
+          "sourceWeeklyTotalMinutes": {
+            "run": "30",
+            "walk": "30"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 30.0,
+            "walk": 30.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 2,
+          "sourceWeeklyTotalMinutes": {
+            "run": "34",
+            "walk": "25,5"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 38.0,
+            "walk": 28.5
+          },
+          "hasDiscrepancy": true
+        },
+        {
+          "week": 3,
+          "sourceWeeklyTotalMinutes": {
+            "run": "36",
+            "walk": "24"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 36.0,
+            "walk": 24.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 4,
+          "sourceWeeklyTotalMinutes": {
+            "run": "40",
+            "walk": "20"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 40.0,
+            "walk": 20.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 5,
+          "sourceWeeklyTotalMinutes": {
+            "run": "44",
+            "walk": "22"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 44.0,
+            "walk": 22.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 6,
+          "sourceWeeklyTotalMinutes": {
+            "run": "48",
+            "walk": "16"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 48.0,
+            "walk": 16.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 7,
+          "sourceWeeklyTotalMinutes": {
+            "run": "54",
+            "walk": "18"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 54.0,
+            "walk": 18.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 8,
+          "sourceWeeklyTotalMinutes": {
+            "run": "56",
+            "walk": "18"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 56.0,
+            "walk": 18.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 9,
+          "sourceWeeklyTotalMinutes": {
+            "run": "64",
+            "walk": "14"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 64.0,
+            "walk": 14.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 10,
+          "sourceWeeklyTotalMinutes": {
+            "run": "72",
+            "walk": "18"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 72.0,
+            "walk": 18.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 11,
+          "sourceWeeklyTotalMinutes": {
+            "run": "80",
+            "walk": "15"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 100.0,
+            "walk": 20.0
+          },
+          "hasDiscrepancy": true
+        },
+        {
+          "week": 12,
+          "sourceWeeklyTotalMinutes": {
+            "run": "90",
+            "walk": "0"
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 90.0,
+            "walk": 0.0
+          },
+          "hasDiscrepancy": false
+        },
+        {
+          "week": 13,
+          "sourceWeeklyTotalMinutes": {
+            "run": "",
+            "walk": ""
+          },
+          "calculatedWeeklyMinutesExcludingWarmCool": {
+            "run": 30.0,
+            "walk": 0.0
+          },
+          "hasDiscrepancy": false
+        }
+      ],
+      "sessions": [
+        {
+          "id": "GRONO-T2-W01-S1",
+          "week": 1,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W01-S2",
+          "week": 1,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W01-S3",
+          "week": 1,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "1",
+            "1",
+            "(10)"
+          ],
+          "runSeconds": 60,
+          "walkSeconds": 60,
+          "repeatCount": 10,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W02-S1",
+          "week": 2,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "2",
+            "1,5",
+            "(5)"
+          ],
+          "runSeconds": 120,
+          "walkSeconds": 90,
+          "repeatCount": 5,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 10.0,
+          "mainCalculatedWalkMinutes": 7.5,
+          "totalCalculatedMinutes": 27.5,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W02-S2",
+          "week": 2,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "2",
+            "1,5",
+            "(7)"
+          ],
+          "runSeconds": 120,
+          "walkSeconds": 90,
+          "repeatCount": 7,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 14.0,
+          "mainCalculatedWalkMinutes": 10.5,
+          "totalCalculatedMinutes": 34.5,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W02-S3",
+          "week": 2,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "2",
+            "1,5",
+            "(7)"
+          ],
+          "runSeconds": 120,
+          "walkSeconds": 90,
+          "repeatCount": 7,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 14.0,
+          "mainCalculatedWalkMinutes": 10.5,
+          "totalCalculatedMinutes": 34.5,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W03-S1",
+          "week": 3,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "3",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 180,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W03-S2",
+          "week": 3,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "3",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 180,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W03-S3",
+          "week": 3,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "3",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 180,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W04-S1",
+          "week": 4,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "4",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 28.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W04-S2",
+          "week": 4,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "4",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 16.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W04-S3",
+          "week": 4,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "4",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 28.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W05-S1",
+          "week": 5,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "4",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 16.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W05-S2",
+          "week": 5,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "4",
+            "2",
+            "(4)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 4,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 16.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W05-S3",
+          "week": 5,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "4",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 240,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 28.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W06-S1",
+          "week": 6,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W06-S2",
+          "week": 6,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W06-S3",
+          "week": 6,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "6",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 26.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W07-S1",
+          "week": 7,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W07-S2",
+          "week": 7,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "9",
+            "3",
+            "(2)"
+          ],
+          "runSeconds": 540,
+          "walkSeconds": 180,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W07-S3",
+          "week": 7,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W08-S1",
+          "week": 8,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W08-S2",
+          "week": 8,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "6",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 360,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 18.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W08-S3",
+          "week": 8,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "10",
+            "3",
+            "(2)"
+          ],
+          "runSeconds": 600,
+          "walkSeconds": 180,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 36.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W09-S1",
+          "week": 9,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "8",
+            "2",
+            "(3)"
+          ],
+          "runSeconds": 480,
+          "walkSeconds": 120,
+          "repeatCount": 3,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 24.0,
+          "mainCalculatedWalkMinutes": 6.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W09-S2",
+          "week": 9,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "12",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 720,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 12.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 22.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W09-S3",
+          "week": 9,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "14",
+            "4",
+            "(2)"
+          ],
+          "runSeconds": 840,
+          "walkSeconds": 240,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 28.0,
+          "mainCalculatedWalkMinutes": 8.0,
+          "totalCalculatedMinutes": 46.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W10-S1",
+          "week": 10,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "10",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 600,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W10-S2",
+          "week": 10,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "16",
+            "5",
+            "(2)"
+          ],
+          "runSeconds": 960,
+          "walkSeconds": 300,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 32.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 52.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W10-S3",
+          "week": 10,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "10",
+            "2",
+            "(2)"
+          ],
+          "runSeconds": 600,
+          "walkSeconds": 120,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 4.0,
+          "totalCalculatedMinutes": 34.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W11-S1",
+          "week": 11,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "15",
+            "5",
+            "(2)"
+          ],
+          "runSeconds": 900,
+          "walkSeconds": 300,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 50.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W11-S2",
+          "week": 11,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "30",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1800,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W11-S3",
+          "week": 11,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "20",
+            "5",
+            "(2)"
+          ],
+          "runSeconds": 1200,
+          "walkSeconds": 300,
+          "repeatCount": 2,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 40.0,
+          "mainCalculatedWalkMinutes": 10.0,
+          "totalCalculatedMinutes": 60.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W12-S1",
+          "week": 12,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "30",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1800,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W12-S2",
+          "week": 12,
+          "sessionInWeek": 2,
+          "sourceCells": [
+            "20",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1200,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 20.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 30.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W12-S3",
+          "week": 12,
+          "sessionInWeek": 3,
+          "sourceCells": [
+            "40",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 2400,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 40.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 50.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        },
+        {
+          "id": "GRONO-T2-W13-S1",
+          "week": 13,
+          "sessionInWeek": 1,
+          "sourceCells": [
+            "30",
+            "0",
+            "(1)"
+          ],
+          "runSeconds": 1800,
+          "walkSeconds": 0,
+          "repeatCount": 1,
+          "warmupBriskWalkSeconds": 300,
+          "cooldownBriskWalkSeconds": 300,
+          "mainCalculatedRunMinutes": 30.0,
+          "mainCalculatedWalkMinutes": 0.0,
+          "totalCalculatedMinutes": 40.0,
+          "calculationIsMechanicalNotClinicalCorrection": true,
+          "sourceTable": "T2",
+          "approvalState": "research_only_not_executable_approved"
+        }
+      ],
+      "sourceId": "PR149",
+      "copyright": "2007Buistetal.,CCBY2.0",
+      "lastWeek": "Somente sessao1 publicada; nao preencher2/3 ou duracao de prova porIA."
+    }
+  ],
+  "discrepancies": [
+    {
+      "table": "T1",
+      "week": 2,
+      "differences": [
+        {
+          "field": "run",
+          "sourceTotal": "46",
+          "sumFromSessionCells": 44.0
+        }
+      ],
+      "action": "Nao corrigir doses para bater comtotais; comparar com materialexecutado antes de selecionarlote."
+    },
+    {
+      "table": "T1",
+      "week": 6,
+      "differences": [
+        {
+          "field": "walk",
+          "sourceTotal": "21",
+          "sumFromSessionCells": 20.0
+        }
+      ],
+      "action": "Nao corrigir doses para bater comtotais; comparar com materialexecutado antes de selecionarlote."
+    },
+    {
+      "table": "T2",
+      "week": 2,
+      "differences": [
+        {
+          "field": "run",
+          "sourceTotal": "34",
+          "sumFromSessionCells": 38.0
+        },
+        {
+          "field": "walk",
+          "sourceTotal": "25,5",
+          "sumFromSessionCells": 28.5
+        }
+      ],
+      "action": "Nao corrigir doses para bater comtotais; comparar com materialexecutado antes de selecionarlote."
+    },
+    {
+      "table": "T2",
+      "week": 11,
+      "differences": [
+        {
+          "field": "run",
+          "sourceTotal": "80",
+          "sumFromSessionCells": 100.0
+        },
+        {
+          "field": "walk",
+          "sourceTotal": "15",
+          "sumFromSessionCells": 20.0
+        }
+      ],
+      "action": "Nao corrigir doses para bater comtotais; comparar com materialexecutado antes de selecionarlote."
+    }
+  ],
+  "sessionCount": 59,
+  "eligiblePopulation": "18-65anos semcorridaregular12meses,semlesaoMEI3meses/contraindicacaoexercicio vigoroso;naoretornoposlesao",
+  "notAReadyRelease": true
+}

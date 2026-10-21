@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-04", "sourceFamily": "PR28", "edition": "2026", "selectedForApkProgramme": false,
+  "articleXmlRecord": "2026-10-04/n15i-funcional/i15-snacking-xml-accept.evidencia.json", "articleXmlSha256": "a521183a99ca073ba3498c52603c8e55713e118e4638428da048b528ea563e0b",
+  "zipRecord": "2026-10-04/n15i-funcional/i15-snacking-zip-accept.evidencia.json", "zipSha256": "bf84b537e8500bf5fe99c554c708c8902d9506c303768a271f58bddbb4a3c36e",
+  "member": "Table_1.DOCX", "memberBytes": 519321, "memberSha256": "83b88fc7d927e6aa8918a299cba6ca0be6c7694524a9d6c6c2aed4319d7974fd",
+  "readMethod": "ZipFile para membro exato, ElementTree w:t para texto e relacionamentos OOXML; nenhum alvo externo ou macro executado. Cinco JPEG extraidos de media e inspecionados separadamente, sem alegar renderizacao de paginas DOCX.",
+  "license": "CC BY 4.0 no artigo XML; suplemento vinculado SM1, nenhum aviso separado observado no texto DOCX.",
+  "instructionsReceived": true, "imagesInspected": 5, "docxPageLayoutRendered": false,
+  "chairText": "Cadeira estavel com bracos, aproximadamente 40 cm, sem rodas ou oscilacao.",
+  "movements": [
+    {"id": "ES26-S1", "name": "levantar_sentar", "text": "Meio da cadeira, pes planos a largura das ancas, pernas inferiores verticais, bracos cruzados ou a frente; subir usando coxas, se dificil apoiar nos bracos/assento, descer lentamente ate contacto das coxas posteriores com assento.", "imageIssue": "Todas as fotos usam cadeira sem bracos, diferente do kit do texto."},
+    {"id": "ES26-S2", "name": "extensao_joelhos_alternada", "text": "Sentado com maos repousadas nas coxas; um pe firme no chao, estender outro joelho ate perna aproximadamente paralela ao chao, ou amplitude confortavel se dificil; voltar e alternar.", "imageIssue": "Fotos mostram maos segurando assento, nao repousadas nas coxas."},
+    {"id": "ES26-S3", "name": "flexao_joelhos_alternada", "text": "Atras da cadeira, uma mao no encosto; um pe no chao, levar calcanhar em direcao a nadega mantendo joelho apontado para baixo, ou amplitude confortavel; voltar e alternar.", "imageIssue": "Cadeira sem bracos continua divergente do kit."},
+    {"id": "ES26-S4", "name": "marcha_no_lugar", "text": "Uma mao no encosto, elevar uma coxa ate aproximadamente paralela ao chao, voltar e alternar.", "imageIssue": "Nao usar para demonstrar variante sem apoio da edicao 2019."},
+    {"id": "ES26-S5", "name": "elevar_calcanhares", "text": "Uma mao no encosto, subir confortavelmente nas pontas dos pes, baixar lentamente os pes ao chao.", "imageIssue": "Fotos mostram ambas as maos no encosto, diferente de uma mao no texto."}
+  ],
+  "imageRightsBoundary": "Modelo masculino identificavel, pessoas ao fundo e sinalizacao; nao demonstrado consentimento especifico para reutilizacao de imagem comercial por terceiros. Nao confundir licenca autoral com direitos de personalidade.",
+  "participantQuotes": "Tabela de depoimentos nao sera importada como instrucao, testemunho publicitario ou prescricao adicional; relato de caibras nao cria exercicio substituto.",
+  "earlierFailurePreserved": "i15-snacking-suplemento.evidencia.json permanece HTML/reCAPTCHA 200, nao DOCX; dois 406 anteriores preservados. API OA distinta retornou membro real apos unica correcao de Accept documentada, sem contorno do desafio.",
+  "decision": "Recebimento fecha lacuna de acesso, nao resolve contradicoes visuais, direitos de imagem ou entrega com pessoa presente/videos/equipe. Edicao 2019 selecionada separadamente; nunca transportar sua autonomia para 2026.",
+  "releaseApproved": false, "appImplemented": false
+}

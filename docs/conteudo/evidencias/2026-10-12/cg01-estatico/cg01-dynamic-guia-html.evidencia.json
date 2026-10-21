@@ -1,0 +1,23 @@
+{
+  "id": "cg01-dynamic-guia-html",
+  "url": "https://dynamichealth.nhs.uk/help-and-advice/osteoarthritis-oa/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T13:49:15.828174+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia fisioterapia NHS: retorno lento no hamstring, mas variante semdegrau e dose20-30s/OA. Nao equivalencia por nome nem limitesRPE5-7 transferidos ao estatico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://dynamichealth.nhs.uk/help-and-advice/osteoarthritis-oa/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 101424,
+  "bodyFile": "../raw/cg01-dynamic-guia-html.html",
+  "sha256": "7191062418409e82f737bce4d03b2d37d73e341a22d6170825fed9cac2e8afbf"
+}

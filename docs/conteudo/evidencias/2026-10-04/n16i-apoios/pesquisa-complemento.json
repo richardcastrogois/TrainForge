@@ -1,0 +1,109 @@
+{
+  "niche": "N16-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Kit e apoios domesticos para idosos, selecionando Otago 2007 como referencia humana com instrutor treinado. Nao programa autonomo universal, assistencia fisica por familiar ou instrucao final N17.",
+  "closureRationale": "Registro institucional primario vincula CC BY 4.0 ao arquivo do manual; tabelas de niveis/apoios relidas visualmente. Sem nova captura do PDF/shell. Pesquisa fecha campos e caminho de direitos; nao remove supervisao nem aprova imagens, traducao ou app finais.",
+  "next": "Fechamento de kit/apoios Otago2007 preservado, sem homologacao instrucional desse lote. N15-I/N17-I fechados apenas ES2019-DOM-01. N18-I ativo e C15/N19-I/N20-I pendentes; nenhuma liberacaoN21/app.",
+  "evidence": [
+    {
+      "record": "2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "anchors": [
+        "Printed July 2007",
+        "trained instructor",
+        "Never exercise holding on to an object which may move"
+      ],
+      "role": "Manual 72 paginas ja recebido; tabelas 3/3.1/4 em imagens conferidas visualmente, direitos ligados por registro primario web."
+    }
+  ],
+  "dependencies": [
+    "2026-10-04/n16i-apoios/leitura-licenca-tabelas.json",
+    "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+    "2026-10-03/n16-casa-material/amostra-programas.json",
+    "2026-10-04/n15i-funcional/criterios-atuais.json"
+  ],
+  "programmes": [
+    {
+      "id": "I16-P21",
+      "sourceId": "IC06",
+      "selectedForResearchScope": true,
+      "actor": "idoso_praticando_para_si",
+      "environment": "casa",
+      "professionalDeliveryRequired": true,
+      "commercialRightsPathIdentified": true,
+      "caregiverPhysicalAssistanceProtocolVerified": false
+    }
+  ],
+  "operations": [
+    {
+      "id": "I16-O21",
+      "decision": "Registrar apoio por variante/nivel e nao por ID generico."
+    },
+    {
+      "id": "I16-O22",
+      "decision": "Registrar ausentes e condicoes de selecao; nenhum substituto automatico de kit."
+    },
+    {
+      "id": "I16-O23",
+      "decision": "Nao mapear apoio de equilibrio a sustentacao fisica por cuidador."
+    }
+  ],
+  "researchClosureCriteria": [
+    {
+      "id": "I16-G01",
+      "met": true,
+      "criterion": "Manual humano especifico para idosos em casa, kit, apoios e instrutor identificados."
+    },
+    {
+      "id": "I16-G02",
+      "met": true,
+      "criterion": "Todas as familias principais nas tabelas identificadas; exemplos sentar/levantar e escadas com niveis/ausentes conferidos visualmente."
+    },
+    {
+      "id": "I16-G03",
+      "met": true,
+      "criterion": "Caminho comercial gratuito do trabalho selecionado demonstrado em registro primario, com vinculo ao arquivo/edicao e exclusao de outras versoes."
+    },
+    {
+      "id": "I16-G04",
+      "met": true,
+      "criterion": "Supervisao, contexto atual, divergencias, fonte excluida e limites N17/publicacao separados sem fabricar protocolo."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "I16-S21",
+      "fictional": true,
+      "case": "Escadas sem dose numerica",
+      "expected": "Manter como instruido pelo profissional, nao gerar step-up dosado."
+    },
+    {
+      "id": "I16-S22",
+      "fictional": true,
+      "case": "Versao LLT encontrada gratuitamente",
+      "expected": "Nao transferir a CC BY do manual ACC para adaptacao de terceiro."
+    },
+    {
+      "id": "I16-S23",
+      "fictional": true,
+      "case": "Cadeira para sentar serve de apoio movel",
+      "expected": "Funcao e estabilidade diferentes; nao substituir apoio fixo."
+    },
+    {
+      "id": "I16-S24",
+      "fictional": true,
+      "case": "Familia quer fazer ajustes de carga",
+      "expected": "Nao substituir instrutor treinado por papel de cuidador."
+    }
+  ],
+  "limits": [
+    "Leitura web primaria da licenca nao recebeu novo corpo/hash local.",
+    "72 paginas disponiveis; esta rodada conferiu duas tabelas, nao todas as instrucoes graficas N17.",
+    "Revisao clinica atual, pt-PT, lote final e testes pessoais nao realizados.",
+    "Nao foi contratado profissional, servico ou licenca; fonte com suporte profissional nao garante produto autonomo de custo zero."
+  ],
+  "updatedAt": "2026-10-05"
+}

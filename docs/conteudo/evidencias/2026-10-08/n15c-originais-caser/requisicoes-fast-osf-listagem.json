@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: completar somente inventario de metadados OSF FAST. URLs related.files e related.children efetivamente recebidas; nao baixar dados individuais, executar sintaxe, autenticar ou alterar projeto.",
+  "requests":[
+    {"id":"c15-fast-osf-pasta-json","url":"https://api.osf.io/v2/nodes/gc9qa/files/osfstorage/5fff97d8ba010905008908ab/","purpose":"Nomes/tipos de arquivos na unica pasta listada, verificar se e manual operacional ou dados/sintaxe; nenhum download dos datasets."},
+    {"id":"c15-fast-osf-filhos-json","url":"https://api.osf.io/v2/nodes/gc9qa/children/","purpose":"Metadados dos componentes filhos publicos listados por API, nao busca global nem concessao de direitos."}
+  ]
+}

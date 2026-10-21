@@ -1,0 +1,23 @@
+{
+  "id": "n35-compendium-older",
+  "url": "https://pacompendium.com/older-adult-compendium/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:16:58.449501+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Tabela oficial60+2024. PáginaUsing theCompendium consultada em15/10 permite download em pesquisa e uso comercial gratuito dos três compêndios, com citação/valores/códigos distintos preservados. Não conta ou contato.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pacompendium.com/older-adult-compendium/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 101198,
+  "bodyFile": "../raw/n35-compendium-older.html",
+  "sha256": "be83d2286fd28a801363ffd2ee1588959c211bc2145b91d434deb6a070d4a810"
+}

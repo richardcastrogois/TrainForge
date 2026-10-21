@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "researchClosed": true,
+  "scope": "Viabilidade de modelo alimentar específico como gerador de hipóteses entre 101 pratos, correção manual obrigatória e pessoa/autor explícitos. Não reconhecimento automático português ou guia nutricional.",
+  "selectedResearchCandidate": "PR213 / nateraw/food, revisão 8991abd49ea01ebf502aeda51d4f12a59c603e01",
+  "criteria": [
+    {
+      "criterion": "Modelo, classes, entrada e custo específicos",
+      "met": true,
+      "evidence": "Modelo ViT alimentar carregado em CPU com peso/hash fixado e strict=True/weights_only=True. 101 classes, entrada legacy e processador atual iguais (delta0) em sete entradas. 26 pacotes temporários, nenhum serviço pago."
+    },
+    {
+      "criterion": "Direitos por componente",
+      "met": true,
+      "evidence": "Apache declarada para modelo; não se importam imagens Food101. Cinco fotografias de ensaio com crédito/licença individual, apagadas após uso. Caminho MobileCLIP excluído para produto por licença específica; LogMeal pago não selecionado."
+    },
+    {
+      "criterion": "Decodificação 16/17",
+      "met": true,
+      "evidence": "decodificacao-16-17.json: config coincide com task_templates do autor e com ensaios das duas classes. Preservar config testado, sem afirmar revisão completa de treino demonstrada."
+    },
+    {
+      "criterion": "Erro, confiança e limites observados",
+      "met": true,
+      "evidence": "Caldo verde -> ramen0.7164; cadeira -> gnocchi0.0386; preto sintético -> breakfast_burrito0.7450. Nenhuma abstenção nativa, limiar calibrado ou cobertura portuguesa alegados. Três fotos de classes cobertas coincidiram, sem inferir acurácia populacional."
+    },
+    {
+      "criterion": "Confirmação/correção, pessoa e contextos",
+      "met": true,
+      "evidence": "Contrato com quatro contextos e simulador documental sobre saídas reais:14 verificações. Corrige caldo, recusa atribuição sem pessoa/autor e não confirma automaticamente hipótese de qualquer score. Simulador não equivale a UI do app ou teste com pessoas."
+    },
+    {
+      "criterion": "Ensaio e limpeza autorizados",
+      "met": true,
+      "evidence": "Importações e pip check passaram, CPU4threads, processo de inferência sem conexões permitidas e0tentativas. Ambiente de1.348.849.875bytes removido e ausência conferida antes de iniciar N40."
+    }
+  ],
+  "missingInitialFixtures": [
+    "Bacalhau à brás e Japanese Cheesecake retornaram HTTP429; não repetidos ou obtidos por outra rota. Cheesecake suplementar é outro arquivo independente, declarado após o lote inicial."
+  ],
+  "remainingBeforePublication": [
+    "Amostra representativa e direitos do ativo final; cinco fotos não validam 101 classes ou toda culinária.",
+    "Desenho/implementação acessível e testes de confirmação/compreensão com pessoas reais.",
+    "Privacidade/retensão/apagamento em produto, sem identificação automática do assistido.",
+    "Testar e escolher modelo leve no dispositivo alvo; ensaio WindowsCPU não valida Android nem instalação no app.",
+    "Fonte de receita/composição e quantidade independentes; não derivar alergénios/gramas/consumo por este modelo."
+  ],
+  "inferencePerformed": true,
+  "photographsTested": 5,
+  "syntheticControlsTested": 2,
+  "appImplemented": false,
+  "appTested": false,
+  "clinicalValidation": false,
+  "runtimeRemoved": true,
+  "releaseApproved": false,
+  "nextNiche": "N40"
+}

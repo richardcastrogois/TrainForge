@@ -1,0 +1,23 @@
+{
+  "id": "c15-respiracao-oncologia2026-html",
+  "url": "https://www.jcdr.net/article_fulltext.asp?id=23750&issn=0973-709x&issue=7&page=VC01&volume=20&year=2026",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:26:46.303349+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original quasi-experimental especifico cuidador familiar posmastectomia, conferir instrucoes/dose/suporte e resultados proprios; nao inferir pratica diaria10min de sessao educativa.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.jcdr.net/article_fulltext.asp?id=23750&issn=0973-709x&issue=7&page=VC01&volume=20&year=2026",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 90750,
+  "bodyFile": "../raw/c15-respiracao-oncologia2026-html.html",
+  "sha256": "2229a85fc57723ef9ca9673e22516289f1ebf6e63acaef800abdaac440d1cf10"
+}

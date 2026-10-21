@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-07",
+  "scope":"Somente N15-C. Primeira coleta local de dois estudos antes retidos por contexto institucional; local nao e exclusao automatica. Deposito independente EuropePMC, sem repetir originais ja recebidos ou superar desafios de outro provedor.",
+  "requests":[
+    {"id":"c15-montero2020-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ensaio original de exercicio proprio de cuidadoras familiares em centro de atencao primaria: verificar instrucoes, materiais, suporte, resultados e documento externo anunciado."},
+    {"id":"c15-kamioka2011-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3047664/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ensaio original de alongamento proprio de cuidadoras profissionais em instituicoes: conferir dose real, desenho, resultados, figuras, DVD e direitos sem excluir so pelo local."}
+  ]
+}

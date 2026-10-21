@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "niche": "N38",
+  "status": "concluida_para_pesquisa_no_recorte",
+  "researchClosed": true,
+  "criterion": "Mesma separacao de pessoas/contextos, com tipos/permissoes reais Apple; nao presumir equivalencia Android ou metricas de aparelho de praca.",
+  "startedAfterN37ResearchClosure": true,
+  "n37Audit": "../n37-android/auditoria-fechamento.json",
+  "n39Started": true,
+  "n15Paused": true,
+  "n21Started": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "closureAudit": "auditoria-fechamento.json",
+  "nextNiche": "N39"
+}

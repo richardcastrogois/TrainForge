@@ -1,0 +1,5 @@
+# Ensaio N43
+
+Reutilizar PyTorchCPU/Transformers/Pillow/NumPy já aprovados, com as mesmas versões/hashes registradas emN39. Ambiente isolado temporário em `C:\dev\TrainForge\.research-runtime\n43`, teto5GB, CPU4threads, semCUDA/serviço/conta/alteração global. Modelo de pose Apache2declarado,132.619.932bytes, menor que o peso alimentar aprovado. SciPy é dependência necessária ao processamento de pose, obtida somente como wheel oficial e registrada antes de instalar.
+
+O consentimento do usuário autorizou os testes e exigiu remoção quando não usados. Aplicar essa mesma autorização ao conjunto técnico já aprovado, conservando o limite e removendo tudo após o ensaio. Preservar somente resultado/versões/hashes/fontes. A foto pública NASAé usada apenas em análise factual e não promocional, nos termos de suas diretrizes; não será publicada ou incorporada ao app e não implica endosso. Não há reconhecimento de identidade, diagnóstico, dado pessoal do usuário ou avaliação clínica. O teste não faz calibração anatômica, contagem de repetições ou medição de gasto.

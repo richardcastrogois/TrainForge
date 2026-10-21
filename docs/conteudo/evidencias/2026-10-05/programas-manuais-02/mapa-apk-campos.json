@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "purpose": "Contrato documental de proveniencia para futura importacao, nao codigo APK nem pacote homologado",
+  "inventory": "2026-10-05/programas-manuais-02/inventario-manuais.json",
+  "sourceHashes": "Cada entry do inventario aponta receipt, URL original/resolvida, bytes e SHA256; recibo ainda guarda data UTC, metodo e headers. Resolver sourceId + documentVersion + receipt + locator, nao apenas DOI da familia.",
+  "requiredFieldsPerImportedClaim": ["sourceId","doiOrOfficialUrl","authors","documentVersion","receipt","bodySha256","locator","originalLanguage","translationOrAdaptationNotice","actor","environment","equipmentVariant","eligibility","supervision","doseAndProgression","licensePerEssentialAsset","missingFields","researchClosureApproved","releaseApproved"],
+  "researchMappings": [
+    {"id":"MYTEN-LOG-01","sourceId":"PR58","receipt":"2026-10-05/programas-manuais-02/c15-myten-s3.evidencia.json","locator":"word/document.xml / PHYSICAL ACTIVITY LOG, GOAL, PLAN, Example","fields":["log.date","log.activity","log.durationMinutes","log.intensityLabel","goal","actionPlan.what","actionPlan.where","actionPlan.when"],"state":"referencia_de_formulario_nao_prescricao","doNotUse":"Exemplo caminhada20min moderada e metas em branco nao viram programa; atividade de cuidado excluida desse log."},
+    {"id":"MYTEN-SUPPORT-01","sourceId":"PR58","receipt":"2026-10-05/programas-manuais-02/c15-myten-pdf.evidencia.json","locator":"PDF p5 Table1","fields":["providerRequired","plannedDurationWeeks","testedDurationWeeks","weeklyContact"],"state":"acompanhamento_humano_essencial","doNotUse":"Nao trocar entrevista individualizada por geracao automatica de treino;12semanas planejadas nao12testadas."},
+    {"id":"IMPACCT-PROTOCOL-01","sourceId":"PR59","receipt":"2026-10-05/programas-manuais-02/c15-impacct-protocolo.evidencia.json","locator":"PDF p5 Intervention","fields":["actor","householdDyad","assessmentRequired","manualRequired","assetDependencies"],"state":"cartilha_individual_ausente","doNotUse":"4-8 exercicios nao lista fixa; nao preencher dose por movimento com Otago ou VHI de outra origem."},
+    {"id":"REACT2018-INSTRUCTION-01","sourceId":"PR56","documentVersion":"1.7 16May2018","receipt":"2026-10-05/programas-manuais-02/i18-react-nihr-protocolo.evidencia.json","locator":"PDF Appendix4 pp63-84","fields":["posture","chairSupport","ankleWeightVariant","instructorProgression","semanticGaps"],"state":"instrucao_recebida_nao_selecionada","doNotUse":"Nao tornar protocolo2018 manual2023; cadeira nao maquina de academia; fotos/diagramas sem direitos demonstrados."}
+  ],
+  "approvedExecutableProgrammeMappings": [],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nonAiClaimLimit": "Rastreabilidade de fonte humana nao basta para alegar que um treino final nao e montado por IA: o programa inteiro selecionado, suas regras e importacao devem ser reproduziveis, sem completar ausentes por inferencia. Nesta rodada nenhum treino final foi criado."
+}

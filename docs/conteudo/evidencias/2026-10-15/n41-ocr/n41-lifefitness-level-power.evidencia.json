@@ -1,0 +1,23 @@
+{
+  "id": "n41-lifefitness-level-power",
+  "url": "https://support.lifefitness.com/hc/en-us/articles/42862424978583-Life-Fitness-Atmos-Bike-How-to-Use-Constant-or-Adaptive-Power-Workouts-on-Your-SE4-Console",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:45:54.191496+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Exemplo primário de modelo/console: level/resistência e alvo de potência em watts distintos; peso digitado do usuário não é carga emkg. Leitura factual, sem imagens, programas ou máquina real.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://support.lifefitness.com/hc/en-us/articles/42862424978583-Life-Fitness-Atmos-Bike-How-to-Use-Constant-or-Adaptive-Power-Workouts-on-Your-SE4-Console",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 68245,
+  "bodyFile": "../raw/n41-lifefitness-level-power.html",
+  "sha256": "0efff9c3d34cf5e05400efec01e2eb52362058337429bf768706c2209b599049"
+}

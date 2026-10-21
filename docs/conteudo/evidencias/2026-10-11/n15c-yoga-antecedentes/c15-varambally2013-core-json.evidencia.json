@@ -1,0 +1,23 @@
+{
+  "id": "c15-varambally2013-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23466111%20AND%20SRC:MED&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:52:13.974652+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario com abstract/acesso/links, nao texto completo ou manual presumido. Distinguir treino supervisionado do selfhelp2020.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23466111%20AND%20SRC:MED&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 6219,
+  "bodyFile": "../raw/c15-varambally2013-core-json.json",
+  "sha256": "fdfddcc6b792577e27490d3be5dcf112b35b5b053fdccca6b1d4cd9f12b4fb66"
+}

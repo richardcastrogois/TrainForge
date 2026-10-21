@@ -1,0 +1,30 @@
+{
+  "niche": "N19",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 0,
+  "verifiedDependencies": 3,
+  "proposedOperations": 0,
+  "fictionalScenarios": 5,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n19-academia-percursos/n19-wendler-bbb.evidencia.json",
+      "artifactSha256": "6548dee61abb77ad9fbf8157383b54bc800341c8cfc7efbdc451085a6eb37f45"
+    },
+    {
+      "file": "2026-10-03/n19-academia-percursos/n19-wendler-monolith.evidencia.json",
+      "artifactSha256": "47438da3d1199ab76cfa0a21fcf4fc731576086bd59e227a31870e17131601bd"
+    },
+    {
+      "file": "2026-10-03/n18-academia-iniciante/pesquisa-recorte.json",
+      "artifactSha256": "87d56c468d989a200031f97a0f2694c2bfc2bdb2333c5d28c127d3f1472d844d"
+    }
+  ],
+  "next": "N20"
+}

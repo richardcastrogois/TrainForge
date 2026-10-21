@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-04", "niche": "N13-I",
+  "requests": [
+    {"id": "a13-nia-menu-2018", "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo115563/pdf/GOVPUB-HE20_3850-PURL-gpo115563.pdf", "extension": "pdf", "accept": "application/pdf", "maxBytes": 4194304, "purpose": "Publicacao humana NIA de 2018 para envelhecimento: verificar menus completos, contexto e avisos sem reproduzir fotos ou prescrever dieta."},
+    {"id": "a13-govinfo-metadata", "url": "https://www.govinfo.gov/app/details/GOVPUB-HE20_3850-PURL-gpo115563", "extension": "html", "purpose": "Conferir autoria, edicao preservada e aviso de que arquivo historico pode nao refletir politica atual."},
+    {"id": "a13-nia-text-rights", "url": "https://www.nia.nih.gov/newsroom/media-frequently-asked-questions", "extension": "html", "purpose": "Primeira captura local deste FAQ: separar texto de publicacoes em dominio publico de fotos stock restritas. Desafio/erro nao serve de evidencia de direitos."}
+  ]
+}

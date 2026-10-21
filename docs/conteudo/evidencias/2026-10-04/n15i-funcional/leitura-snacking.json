@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-I",
+  "sourceFamily": "PR28",
+  "sourceRecord": "2026-10-04/n15i-funcional/i15-snacking-2026.evidencia.json",
+  "bodySha256": "2067ffd7fe9f305cbb02a27d55a9ca532d0cf90f16fe76ff6288d9cc59b0fc22",
+  "readMethod": "Texto integral do artigo 2026 via HTMLParser ignorando scripts/style; estado JSON publico de hidratacao lido com json.loads somente para conferir referencias a suplemento, sem executar script ou endpoint inferido. Estudo 2019 e registro Bath lidos via web, sem corpo local utilizavel.",
+  "title": "Feasibility and acceptability of a remotely delivered, home-based exercise snacking to improve physical function in community-dwelling older adults: a 28-day pilot study",
+  "authors": "Hu, Li, Shi, Huang, Huang e Yuan",
+  "published": "2026-01-23",
+  "doi": "10.3389/fmed.2026.1755508",
+  "articleLicense": "CC BY",
+  "actor": "idoso_praticando_para_si",
+  "environment": "casa",
+  "caregiverOwnProgrammeDemonstrated": false,
+  "population": {
+    "randomized": 36,
+    "interventionAllocated": 18,
+    "interventionFollowup": 16,
+    "ageYears": [
+      65,
+      80
+    ],
+    "eligibility": "Sem treino estruturado regular, nao fumantes, BMI 20-30, sem contraindicacao ou lesao recente, smartphone/internet, SPPB 7-10 sem zero em componente; exclusoes medicas/movimento/adesao expressas.",
+    "eligibilityIsValidatedAppScreening": false
+  },
+  "prescribedDose": {
+    "days": 28,
+    "sessionsPerDay": 2,
+    "daysPerWeek": 7,
+    "sessionsTotal": 56,
+    "movementsPerSession": 5,
+    "secondsPerMovement": 60,
+    "repetitions": null,
+    "effort": "Tantas repeticoes quanto possivel no minuto, conforme protocolo; nao limite seguro individual validado pelo app.",
+    "restSecondsBetweenMovements": 60,
+    "sessionApproxMinutesSource": 9,
+    "warmupMinutes": null,
+    "cooldownMinutes": null,
+    "weeklyProgression": null,
+    "setsAdded": false
+  },
+  "movements": [
+    {
+      "id": "I15-ES01",
+      "name": "Sit-to-stand from a chair",
+      "functionalPriority": "levantar_sentar"
+    },
+    {
+      "id": "I15-ES02",
+      "name": "Seated knee extensions",
+      "alternatingLegs": true
+    },
+    {
+      "id": "I15-ES03",
+      "name": "Standing knee bends",
+      "alternatingLegs": true,
+      "supportIfNeeded": "cadeira"
+    },
+    {
+      "id": "I15-ES04",
+      "name": "Marching in place",
+      "supportIfNeeded": "cadeira"
+    },
+    {
+      "id": "I15-ES05",
+      "name": "Standing calf raises",
+      "supportIfNeeded": "cadeira"
+    }
+  ],
+  "deliveryRequiredInStudy": {
+    "anotherPersonPresent": "Pessoa capaz de pedir ajuda em emergencia; nao equivale a cuidador sustentando o corpo, profissional prescrevendo ou pessoa obrigatoriamente remunerada.",
+    "videoSubmission": "Gravar cada sessao com smartphone ao nivel da cintura e enviar antes das 22h; contato telefonico do pesquisador se video nao recebido.",
+    "adverseEventFollowup": "Equipe contactava participante e decidia ajustes, interromper ou procurar avaliacao medica.",
+    "appTeamOrBudgetAssumed": false,
+    "dataCollectionImplemented": false
+  },
+  "resultsBoundary": {
+    "adherenceDenominator": "49.9 sessoes medias de 56 prescritas entre concluintes, nao todos os 18 alocados.",
+    "adverseEvent": "Um participante de 18 teve fasciite plantar e continuou com ajustes; nao anunciar ausencia de risco.",
+    "minorIncidents": "Quatro incidentes em tres de dezesseis concluintes; denominadores diferentes preservados.",
+    "balanceInteraction": "p=0.62 sem interacao significativa; melhora de levantar/caminhar nao prova melhora de equilibrio ou menos quedas.",
+    "claim": "Piloto pequeno de viabilidade/aceitabilidade e resultados de curto prazo; nao validar programa universal ou prescrever AMRAP a todo idoso."
+  },
+  "earlierStudy": {
+    "authors": "Perkin, McGuigan e Stokes",
+    "published": "2019-10-03",
+    "doi": "10.1155/2019/7516939",
+    "urls": [
+      "https://onlinelibrary.wiley.com/doi/10.1155/2019/7516939",
+      "https://researchportal.bath.ac.uk/en/publications/exercise-snacking-to-improve-muscle-function-in-healthy-older-adu/"
+    ],
+    "readViaPrimaryWebOnly": true,
+    "articleLicenseObservedAtAuthorRepository": "CC BY",
+    "localGetRecord": "2026-10-04/n15i-funcional/i15-snacking-2019.evidencia.json",
+    "localGetStatus": 403,
+    "contentUsable": false,
+    "participants": 20,
+    "exerciseGroup": 10,
+    "ageYears": [
+      65,
+      80
+    ],
+    "sppbMinimum": 8,
+    "homeDelivery": "Duas praticas diarias, manha/noite, 28 dias, sem supervisao nas sessoes de casa. Triagem e familiarizacao de medidas em laboratorio nao removidas.",
+    "dose": "Cinco movimentos de um minuto e descanso de um minuto entre movimentos; nao converter nove minutos calculados em duracao declarada de outra versao.",
+    "support": "Cadeira nas tarefas em pe quando necessario. Figuras S1-S5 citadas no suplemento PDF jare7516939-sup-0001-f1.pdf, 176.2 KB declarados pelo editor; arquivo nao recebido nem inspecionado.",
+    "cointervention": "Ambos os grupos consumiram 150 g de iogurte diariamente; desenho nao estabelece eficacia independente desse componente. Nao prescrever alimento, marca ou proteina individual pelo piloto.",
+    "assessmentNotTraining": "Cadeira de 44 cm e leg press pneumatico pertencem aos testes descritos. Nao importar equipamento, altura ou aquecimento percentual 1RM do laboratorio como dose domiciliar.",
+    "accessLimit": "403 local preservado sem retry. DOI do dataset redirecionou a destino recusado pelo leitor web; nenhum dataset/manual recebido ou link de suplemento adivinhado.",
+    "currentOriginalArticleRecord": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+    "currentSupplementRecord": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+    "completeResearchPackage": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+    "supplementReceivedAndVisuallyInspected": true,
+    "originalLocalAccessFailurePreserved": true
+  },
+  "operations": [
+    {
+      "id": "I15-ESO01",
+      "decision": "Nao misturar autonomia do estudo 2019 com envio de videos/pessoa presente do 2026; incluir edicao/ator/entrega na identidade da rotina."
+    },
+    {
+      "id": "I15-ESO02",
+      "decision": "Uma sessao curta continua compromisso de sessao com descanso; nao contar interrupcao de cuidado como dose completa ou compensar minutos."
+    },
+    {
+      "id": "I15-ESO03",
+      "decision": "AMRAP no ensaio nao e intensidade segura universal; ausencia de progressao e instrucao completa nao e permissao para inventar ou acrescentar alongamento/degrau."
+    }
+  ],
+  "selectedAsCompleteProgramme": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "next": "2019 selecionado separadamente para instrucao humana de cinco movimentos. 2026 nao selecionado, N15-C/academia abertos e N21 retida.",
+  "firstSupplementAttempt": {
+    "nameInText": "Supplementary file A",
+    "nameInPublicXmlState": "Table_1.DOCX",
+    "referenceId": "SM1",
+    "publisherHtmlDownloadLinkObserved": false,
+    "publicArticleStateHasSupplementalData": false,
+    "publicArticleFilesListed": [
+      "EPUB",
+      "PDF",
+      "NLM_XML"
+    ],
+    "primaryPmcArticleReadWebOnly": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12879047/",
+    "primaryPmcDownloadLinkObserved": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12879047/bin/Table_1.DOCX",
+    "sizeReportedByPmc": "507.1 KB",
+    "localGetRecord": "2026-10-04/n15i-funcional/i15-snacking-suplemento.evidencia.json",
+    "localGetStatus": 200,
+    "responseContentType": "text/html; charset=utf-8",
+    "responseBytes": 21372,
+    "responseBodySha256": "686d96b70ff03f685e622f3956842b9a0ab88147ad60e9aeb5f4b5674b8c5fb5",
+    "signatureZipVerified": false,
+    "contentUsable": false,
+    "localSupplementBodyReceived": false,
+    "supplementSha256": null,
+    "decision": "Link publico do deposito PMC identificado sem URL adivinhada; primeira coleta devolveu reCAPTCHA HTML e nao DOCX. Preservar resposta sem retry/contorno. Referencia textual/filename ou HTTP 200 nao sao instrucao recebida. Sem inspecao visual das cinco instrucoes.",
+    "historicalAttemptNotCurrentAvailability": true
+  },
+  "supplement": {
+    "localSupplementBodyReceived": true,
+    "contentUsableForResearch": true,
+    "analysis": "2026-10-04/n15i-funcional/leitura-snacking-suplemento-2026.json",
+    "selectedForApk": false,
+    "decision": "DOCX 2026 recebido via API OA distinta, sem contorno do desafio; contradicoes de fotos/kit e entrega monitorizada preservadas."
+  }
+}

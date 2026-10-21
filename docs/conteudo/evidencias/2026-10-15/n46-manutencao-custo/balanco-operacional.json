@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-15",
+  "catalogueFamilies": 303,
+  "catalogueStatuses": {
+    "candidato": 29,
+    "condicional": 131,
+    "incompativel_zero": 26,
+    "referencia": 117
+  },
+  "countsAreNotApprovedWorkouts": true,
+  "temporaryTests": [
+    {
+      "evidence": "../n39-alimentos-foto/limpeza-ensaio.json",
+      "deletedBytes": 1348849875,
+      "absentNow": true,
+      "path": "C:\\dev\\TrainForge\\.research-runtime\\n39"
+    },
+    {
+      "evidence": "../n41-ocr/limpeza-ensaio.json",
+      "deletedBytes": 57523,
+      "absentNow": true,
+      "path": "C:\\dev\\TrainForge\\.research-runtime\\n41"
+    },
+    {
+      "evidence": "../n43-atividade-imagem/limpeza-ensaio.json",
+      "deletedBytes": 1304473808,
+      "absentNow": true,
+      "path": "C:\\dev\\TrainForge\\.research-runtime\\n43"
+    }
+  ],
+  "totalDeletedFileBytes": 2653381206,
+  "diskBlocksFreedMeasured": false,
+  "temporaryTestsRemoved": true,
+  "preexistingAndroidPythonWindowsPreserved": true,
+  "costs": [
+    {
+      "item": "Ensaios CPU locais N39/N43 e OCRWindowsN41",
+      "subscriptionPurchased": false,
+      "newPaidServiceContracted": false,
+      "cloudInferenceUsed": false,
+      "electricityNetworkAgentCosts": "Não mensurados; gratuito para baixar não significa custo operacional total0.",
+      "runtimeSizeNotApkSize": true
+    },
+    {
+      "item": "Conteúdo/programas",
+      "cost": "Candidatos com licenças identificadas convivem com referências/restrições; edição pt-PT, revisão, mídia e ensino/supervisão ainda não orçados.",
+      "liveProfessionalServiceAvailable": false
+    },
+    {
+      "item": "SDKs/modelos e dados",
+      "cost": "Custos/limites/termos precisam ser reconferidos na revisão escolhida antes de implementar; nenhum plano pago ou assinatura pressupostos.",
+      "licenceLayers": [
+        "software",
+        "pesos",
+        "dados de treino",
+        "imagem individual",
+        "instruções/programa",
+        "tradução",
+        "dados de utilizadores"
+      ]
+    },
+    {
+      "item": "Produto publicado",
+      "cost": "Hospedagem, armazenamento, backups, monitorização, acessibilidade, suporte, lojas e conformidade não dimensionados nem contratados.",
+      "monthlyEstimate": null
+    }
+  ],
+  "market": {
+    "opportunity": "Hipótese: orientar/registar atividade e alimentação com origem verificável para idosos em3ambientes e cuidadores como praticantes.",
+    "measuredDemand": false,
+    "willingnessToPayMeasured": false,
+    "clinicalBenefitOfTrainForgeMeasured": false,
+    "competitorSupplyIsMarketValidation": false,
+    "nextEvidence": "Validar tarefas, necessidade, compreensão, alternativas existentes e custo aceitável com pessoas; não inventar entrevistas ou TAM."
+  },
+  "releaseApproved": false,
+  "snapshotBeforeN18Resumption": true,
+  "currentInventoryAndCleanup": "../continuacao-n39-n46.md"
+}

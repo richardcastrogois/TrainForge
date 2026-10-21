@@ -1,0 +1,22 @@
+{
+  "id": "i15-busca-europepmc",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20exercise%20AND%20home%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=8",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T21:49:50.155118+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Consulta publica delimitada de repositorio de artigos, oito resultados, para treino proprio do cuidador em casa. Nao e download de manual nem autorizacao por acesso aberto. Buscar fonte humana e suplemento original sem contornar desafios, auth ou pagar; uma tentativa, teto 2 MiB e TLS padrao.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20exercise%20AND%20home%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=8",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 66181,
+  "bodyFile": "../raw/i15-busca-europepmc.json",
+  "sha256": "80b68ff7c934faa1ca94f7c84f8730eb8d0de31a3f4f0e715952ef39214ef61e"
+}

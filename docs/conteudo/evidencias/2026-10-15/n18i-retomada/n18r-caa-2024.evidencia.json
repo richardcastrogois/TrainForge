@@ -1,0 +1,23 @@
+{
+  "id": "n18r-caa-2024",
+  "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1386537/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:19:08.306152+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Nova referência a manual doCentreofActiveAgeing; seguir material publicado sem assumir que artigo contém tutorial.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1386537/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1036371,
+  "bodyFile": "../raw/n18r-caa-2024.html",
+  "sha256": "5aafef07d8d09f5760fca85df701f875d7b1b3d3897accaf5c314709a5ef5243"
+}

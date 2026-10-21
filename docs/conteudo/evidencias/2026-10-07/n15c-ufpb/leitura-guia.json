@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "sourceId": "PR69",
+  "title": "Guia para a promocao da saude dos cuidadores de idosos - versao original2018",
+  "sourceBodies": [
+    {"role":"thesis_and_original_guide","receipt":"2026-10-07/n15c-ufpb/c15-ufpb-dissertacao-2018.evidencia.json","sha256":"6ab2b24ed9657ebd2083a922b97d429ae396bef4c39d0ba767d2165b04fa6d06","pdfPages":108,"guidePdfPages":[68,83]},
+    {"role":"version_bound_rights","receipt":"2026-10-07/n15c-ufpb/c15-ufpb-metadados-2018.evidencia.json","sha256":"619b61a5a354c622e51873e96b3ff591ef8f6fc3463b11c2040ad63c4f032869"}
+  ],
+  "professionalAuthorship": {
+    "author":"Anderson Belmont Correia de Oliveira",
+    "sourceQualification":"Fisioterapeuta; mestrando em Gerontologia UFPB",
+    "coauthor":"Edilene Araujo Monteiro",
+    "coauthorQualification":"Enfermeira; professora doutora em Ciencias",
+    "illustrationAndLayout":"William Medeiros",
+    "locator":"PDF70, ficha tecnica do guia; primeira edicao2018 PDF71",
+    "sourceProfessionalQualificationExplicit":true,
+    "legalProfessionalRegistrationChecked":false,
+    "professionalCreatedMaterial":true
+  },
+  "population": {
+    "practitioner":"cuidador_para_si",
+    "setting":"domicilio_para_alongamentos_massagem_relaxamento",
+    "walkSetting":"proximidades_da_residencia_nao_necessariamente_dentro_de_casa",
+    "semanticValidationPopulation":"15cuidadores_informais_de_idosos_em_casa",
+    "semanticValidationAgeRange":[22,71],
+    "allCaregiverConditionsCovered":false,
+    "patientHandlingSectionsAreOwnExercise":false
+  },
+  "evidenceBasis": {
+    "design":"estudo_metodologico_de_validacao_de_conteudo_e_semantica",
+    "physiotherapists":20,
+    "expertJudges":5,
+    "caregivers":15,
+    "globalContentValidityIndex":0.9,
+    "universalApplicabilityItemIndex":0.7,
+    "clinicalEfficacyMeasured":false,
+    "randomizedExerciseTrial":false,
+    "individualMovementsEfficacyProven":false,
+    "locator":"PDF48-64 e85; item1.3 abaixo do corte e impacto na saude nao mensurado",
+    "allowedResearchClaim":"Material profissional de autocuidado validado quanto ao conteudo/compreensao nesta amostra; nao beneficio clinico demonstrado nem indicacao universal."
+  },
+  "records": [
+    {"id":"UF18-C01","name":"Flexao cervical","locator":"PDF77 guia9 Fig17-20","sourceInstructions":"Maos atras da nuca, inclinar suavemente a cabeca para aproximar o queixo do peito.","sourceDose":{"holdSeconds":60,"sets":null,"restSeconds":null}},
+    {"id":"UF18-C02","name":"Inclinar cabeca lateralmente","locator":"PDF77 guia9 Fig21","sourceInstructions":"Com a mao oposta apoiar a lateral da cabeca e aproximar da direcao do ombro; manter ombros parados e repetir do outro lado.","sourceDose":{"holdSecondsPerSide":60,"sets":null,"restSeconds":null}},
+    {"id":"UF18-C03","name":"Movimento circular cervical","locator":"PDF77 guia9 Fig22-23","sourceInstructions":"Texto descreve pequenos circulos nos dois sentidos; desenhos aparentam rotacao para esquerda/direita.","sourceDose":{"secondsPerDirection":60,"sets":null,"restSeconds":null},"instructionConflict":true,"conflictNotResolvedByAi":true},
+    {"id":"UF18-C04","name":"Extensao cervical","locator":"PDF78 guia10 Fig24","sourceInstructions":"Maos unidas apoiam o queixo para elevar a cabeca em direcao ao teto.","sourceDose":{"holdSeconds":60,"sets":null,"restSeconds":null}},
+    {"id":"UF18-C05","name":"Elevar e soltar ombros","locator":"PDF78 guia10 Fig25-26","sourceInstructions":"Elevar ombros ao inspirar e soltar rapidamente ao expirar.","sourceDose":{"repetitions":null,"seconds":null,"sets":null,"restSeconds":null}},
+    {"id":"UF18-C06","name":"Circulos com ombros","locator":"PDF78 guia10 Fig27","sourceInstructions":"Movimentos circulares dos ombros para frente e para tras.","sourceDose":{"repetitions":null,"seconds":null,"sets":null,"restSeconds":null}},
+    {"id":"UF18-C07","name":"Joelhos em direcao ao peito","locator":"PDF79 guia11 Fig28-29","sourceInstructions":"Deitado em cama ou colchonete, levar ambos os joelhos ao peito; o guia tambem mostra um joelho e depois o outro.","variants":["bilateral","unilateral_alternado"],"sourceDose":{"holdSecondsRange":[30,60],"frequencyText":"todos_os_dias_ou_quando_sentir_dor","sets":null,"restSeconds":null},"painTextIsAutomaticApkPrescription":false},
+    {"id":"UF18-C08","name":"Extensao do tronco de brucos","locator":"PDF79 guia11 Fig30","sourceInstructions":"De brucos, apoiar maos e estender os bracos para elevar o tronco.","sourceDose":{"holdSeconds":30,"sets":null,"restSeconds":null},"sourceStop":"Parar imediatamente se surgir desconforto."},
+    {"id":"UF18-C09","name":"Caminhada perto de casa","locator":"PDF79 guia11","sourceInstructions":"Caminhar nas proximidades da residencia.","setting":"proximidades_da_residencia","sourceDose":{"minutesRange":[20,30],"minimumDaysPerWeek":3,"progression":null}},
+    {"id":"UF18-C10","name":"Automassagem da nuca","locator":"PDF80 guia12 Fig31-35","sourceInstructions":"Massagear a nuca com dedos enquanto flexiona, estende e gira a cabeca para os lados.","sourceDose":{"repetitionsPerMovement":3,"seconds":null,"restSeconds":null}},
+    {"id":"UF18-C11","name":"Automassagem das costas","locator":"PDF80 guia12 Fig36","sourceInstructions":"Sentado com pernas semicruzadas, deslizar palmas na lombar para cima/baixo e depois dedos nas laterais.","sourceDose":{"minimumRepetitions":3,"seconds":null,"restSeconds":null}},
+    {"id":"UF18-C12","name":"Relaxamento respiratorio","locator":"PDF80 guia12","sourceInstructions":"Posicao confortavel sentado ou deitado; inspirar contando, reter ar pelo tempo escrito e expirar contando.","sourceDose":{"inhaleCount":10,"holdBreathSeconds":5,"exhaleCount":10,"cyclesRange":[3,5],"inhaleSeconds":null,"exhaleSeconds":null,"frequency":null},"countsConvertedIntoSeconds":false}
+  ],
+  "programmeLimits": {
+    "dailyExerciseIsGeneralSelfCareAdvice":true,
+    "completeOrderedSessionPublished":false,
+    "numericDoseForEveryMovementPublished":false,
+    "completeFrequencyRestProgressionPublished":false,
+    "universalEligibilityAndContraindicationsPublished":false,
+    "professionalEducationSupported":true,
+    "continuousLiveSupervisionStatedForEveryMovement":false,
+    "autonomousSafetyFromDayOneAssumed":false,
+    "newSessionsCreated":0,
+    "missingSecondsFilledFromOtherProgrammes":false,
+    "excluded":"PDF74-76: manejo/transferencia do paciente; PDF81-82: postura, tarefas e sair da cama nao prescricao seriada de treino; PDF73: recomendacoes gerais e terapias nao importadas automaticamente.",
+    "additionalEditorialConflict":"PDF81 itemb repete texto de alcancar objeto alto apesar de figuras de gaveta; edicao2020 diferente nao autoriza corrigir o original por inferencia."
+  },
+  "rights": {
+    "thesis2018":{"licence":"CC BY-ND 3.0 BR","licenceUrl":"https://creativecommons.org/licenses/by-nd/3.0/br/","source":"metadados do objeto123456789/14210","nonCommercialRestriction":false,"unchangedCommercialRedistributionPotential":true,"modifiedDistributionAllowedByThisLicence":false,"thirdPartyAndGuideScopeReviewedForRelease":false,"embeddingUnchangedThesisIsCompleteApkProgramme":false},
+    "guide2020":{"edition":"40paginas/EditoraUFPB2020","rights":"Todos os direitos reservados; reproducao total/parcial vedada no aviso PDF5 visto no leitor web.","localBodyReceived":false,"localReceiptStatus":404,"inherits2018Licence":false},
+    "images":{"creditedCreator":"William Medeiros","separateAdaptationPermissionReceived":false},
+    "noAiPrescriptionsToBypassNoDerivatives":true,
+    "releaseRightsApproved":false,
+    "rightsInterpretationIsResearchNotLegalHomologation":true
+  },
+  "audit":{"renderedPdfPages":[2,4,48,52,53,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,85],"visuallyInspectedPdfPages":[68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83],"guideIsRaster":true,"pdfPageNumbersAreOneBased":true,"thesisTextPagesRead":[2,4,48,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,85]},
+  "missingForClosure":["instrucao_sem_ambiguidade_e_dose_completa_do_pacote_selecionado","elegibilidade_e_entrega_para_uso_domestico_selecionado","direitos_de_adaptacao_e_ativos_do_pacote_sem_transferir_edicoes"],
+  "policy":"../../../criterios-exercicios-apk.json",
+  "researchClosureApproved":false,
+  "releaseApproved":false,
+  "importAllowed":false,
+  "appImplemented":false
+}

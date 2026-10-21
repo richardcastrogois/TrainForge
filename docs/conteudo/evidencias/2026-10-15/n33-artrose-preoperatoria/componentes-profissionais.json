@@ -1,0 +1,266 @@
+{
+  "id": "N33-NEMEX-TJR-COMP-PRO-01",
+  "date": "2026-10-15",
+  "niche": "N33",
+  "scope": "Seis grupos de componentes nível1 nos círculos2–4 de NEMEX-TJR, para pesquisa de um subnicho clínico supervisionado. Não sessão completa ou tratamento autônomo.",
+  "sourceFamily": "PR204",
+  "population": {
+    "ageRangeYears": [
+      60,
+      77
+    ],
+    "originalStudyN": 76,
+    "hipOA": 38,
+    "kneeOA": 38,
+    "phase": "Pré-operatória: artrose primária grave, todos indicados para substituição total de anca/joelho. Não inferir indicação pelo app.",
+    "excluded": "Outras comorbidades que influenciam atividade, artroplastia de anca/joelho nos12meses anteriores, demência, não compreensão de sueco; limitações linguísticas do estudo não são exclusão automática do futuro produto."
+  },
+  "originalDelivery": {
+    "supervision": "Fisioterapeuta experiente em alterações musculoesqueléticas, monitorização individual em grupo de aproximadamente10. Não apoio hipotético usado para completar gesto ausente.",
+    "sessionMinutes": 60,
+    "offeredSessionsPerWeek": 2,
+    "period": "Até a cirurgia, conforme espera; sem número fixo de semanas.",
+    "medianObservedWeeks": 11,
+    "medianObservedSessions": {
+      "hip": 14,
+      "knee": 13
+    },
+    "fixedSessionCalendar": null,
+    "selectedSubsetDurationMinutes": null,
+    "subsetEfficacyEstablished": false
+  },
+  "doseOriginal": {
+    "sets": {
+      "min": 2,
+      "max": 3
+    },
+    "repetitionsPerSet": {
+      "min": 10,
+      "max": 15
+    },
+    "rest": "Intervalo equivalente à duração de uma série, entre séries e exercícios; segundos não publicados.",
+    "bothLegs": "Ambas as pernas, foco na afetada; iniciar o movimento na não afetada conforme princípios do artigo. A alocação de repetições por perna/direção não é explicitada; não dobrar automaticamente.",
+    "tempoSeconds": null,
+    "holdSeconds": null,
+    "source": "Suplemento p.2 e artigo, princípios/método. Intervalos/faixas pertencem ao programa supervisionado, não prescrição isolada universal."
+  },
+  "selectedProfessionalComponents": [
+    {
+      "id": "2A-L1",
+      "name": "Deslize para trás e para a frente",
+      "pages": [
+        3,
+        4
+      ],
+      "sourceCommands": [
+        "Em pé, apoiar o peso numa perna; a outra fica sobre superfície deslizante.",
+        "Mover a perna que desliza para trás e para a frente enquanto o joelho da perna de apoio flete e estende.",
+        "Manter alinhamento da anca, joelho e pé da perna de apoio."
+      ],
+      "equipment": "Superfície deslizante; fig.6 mostra apoio manual numa barra/espaldar. Não converter em avanço sem deslize.",
+      "unpublished": [
+        "Amplitude/velocidade em números",
+        "Dosagem separada por lado",
+        "Método de montagem/transferência para quem depende de ajuda"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    },
+    {
+      "id": "2B-L1",
+      "name": "Deslize lateral",
+      "pages": [
+        3,
+        4
+      ],
+      "sourceCommands": [
+        "Em pé, peso numa perna; a outra sobre superfície deslizante.",
+        "Deslizar a perna lateralmente enquanto o joelho de apoio flete e estende, preservando alinhamento entre as articulações."
+      ],
+      "equipment": "Superfície deslizante. A fig.7 é nível2 com apoio em superfície irregular, não foto do nível1; não importar a almofada para este nível.",
+      "unpublished": [
+        "Distância do deslize",
+        "Comando separado de regresso/posição final em texto",
+        "Apoio manual obrigatório para este nível não especificado textualmente; avaliação profissional preservada"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    },
+    {
+      "id": "3A-L1",
+      "name": "Abdução/adução da anca com banda",
+      "pages": [
+        4,
+        5
+      ],
+      "sourceCommands": [
+        "Em pé sobre uma perna, a outra trabalha com banda elástica.",
+        "Puxar a banda para fora e para dentro, mantendo tensão também na posição de repouso.",
+        "Na perna de apoio, manter alinhamento com o tronco sem deslocar lateralmente a região da bacia."
+      ],
+      "equipment": "Banda com resistência/ancoragem individualizadas. Fig.9 ilustra nível2 e mostra apoio manual; não inventar cor/força de banda do nível1.",
+      "unpublished": [
+        "Resistência quantitativa",
+        "Ângulo/amplitude",
+        "Repetições separadas por abdução/adução e lado"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    },
+    {
+      "id": "3B-L1",
+      "name": "Extensão/flexão do joelho sentado com banda",
+      "pages": [
+        5
+      ],
+      "sourceCommands": [
+        "Sentado, colocar a banda em torno de um pé.",
+        "Puxar a banda para a frente para trabalhar extensores e para trás para flexores.",
+        "Manter tensão na banda também no repouso."
+      ],
+      "equipment": "Cadeira e banda, pontos de ancoragem ajustados profissionalmente. Fig.10–11 são nível2; não copiar resistência ou tratar como flexão em pé.",
+      "unpublished": [
+        "Ângulos e carga",
+        "Repetições distribuídas entre flexão/extensão e lados",
+        "Altura exata da cadeira/ancoragem"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    },
+    {
+      "id": "4A-L1",
+      "name": "Levantar/sentar com pés paralelos",
+      "pages": [
+        6
+      ],
+      "sourceCommands": [
+        "Começar sentado, pés paralelos e carga nas duas pernas.",
+        "Exercício de levantar da cadeira e voltar a sentar, com apoio ligeiro das mãos para equilíbrio."
+      ],
+      "equipment": "Cadeira, apoio ajustado pelo fisioterapeuta. O nome e sequência visual fig.12 esclarecem levantar/sentar, mas fig.12 ilustra nível2 sem apoio; nível1 conserva apoio ligeiro.",
+      "unpublished": [
+        "Altura da cadeira do treino",
+        "Cadência",
+        "Procedimento para assistência física por outra pessoa"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    },
+    {
+      "id": "4B-L1",
+      "name": "Subir e descer plataforma baixa",
+      "pages": [
+        6,
+        7
+      ],
+      "sourceCommands": [
+        "Subir e descer uma plataforma baixa.",
+        "A subida é a fase concêntrica e a descida a excêntrica; apoio ligeiro das mãos pode ser usado para equilíbrio."
+      ],
+      "equipment": "Plataforma baixa, com/sem apoio ligeiro segundo necessidade. Fig.14 é nível3 alto, não prova altura do nível1.",
+      "unpublished": [
+        "Altura em centímetros",
+        "Perna que inicia/ordem de alternância",
+        "Velocidade e transição para dependentes"
+      ],
+      "sourceFamily": "PR204",
+      "doseReference": "doseOriginal",
+      "selectedLevel": 1,
+      "standalonePatientScriptComplete": false,
+      "use": "Componente documentado para seleção/ensino no caminho profissional original; nenhuma prática autônoma liberada."
+    }
+  ],
+  "originalProgrammeParts": {
+    "warmup": {
+      "minutes": 10,
+      "mode": "Bicicleta ergométrica",
+      "load": "Individualizada, pode aumentar durante os10min até esforço percebido somewhat hard, sem converter para RPE/FC/watts/cadência numéricos.",
+      "selectedAsStandaloneCyclingWorkout": false
+    },
+    "main": "Quatro círculos, usualmente dois exercícios por círculo, às vezes um; seleção/nível individualizados. Não fixar oito obrigatórios ou supor40min cronometrados.",
+    "cooldown": {
+      "approximateTotalMinutes": 10,
+      "documented": "Caminhar para a frente e para trás cerca de10m em cada sentido diante do espelho; mobilidade e alongamento de membros inferiores.",
+      "hipOnlyMobility": "Fig.16 rotação da anca sob carga usada para anca e NÃO para joelho, por dor/instabilidade observada. Não exercício selecionado para execução autônoma.",
+      "unresolved": "Gestos/doses dos alongamentos e partição dos10min não publicados. Não inserir NIA/NHS/yoga como se fossem NEMEX original.",
+      "completePatientScript": false
+    }
+  },
+  "notSelectedCore": {
+    "groups": [
+      "1A elevação pélvica",
+      "1B sit-ups"
+    ],
+    "reason": "Há nomes, posições, variantes e fotografias, mas não roteiro integral de movimento/retorno/transferência. A foto de1A-L1 tem pernas sobre bola; não igualar à ponte no chão da N27. Não contar estes dois como fichas autônomas completas.",
+    "levels": "1A: joelhos fletidos/alavanca curta/carga bilateral;2semifletidos/alavanca longa/bilateral;3alternância de carga.1B: pernas sobre bola; braços ao lado/cruzados/mãos atrás do pescoço nos níveis1/2/3."
+  },
+  "otherLevelsIndexed": {
+    "2A/2B": "L2: perna de apoio sobre superfície irregular, mantendo deslize. L3: avanços para a frente/lado com passo amplo e regresso, mão se necessário; não mesmo gesto com mais repetições.",
+    "3A": "L2 mais resistência; L3 superfície irregular.",
+    "3B": "L2 eL3 mais resistência, sem carga em números.",
+    "4A": "L2 sem mãos; L3 um pé à frente do outro, apoio ligeiro opcional; não apoio unilateral obrigatório.",
+    "4B": "L2 degrau médio; L3 alto, com/sem bar bells literal. Centímetros/peso não dados."
+  },
+  "progression": {
+    "decision": "Fisioterapeuta observa controle/qualidade; pessoa percebe controle e esforço mínimo. Alterar movimento/carga/superfície segundo avaliação. Sem calendário automático por semana/idade ou meta de passos.",
+    "painModel": "VAS0–10: até2safe, acima2até5acceptable, acima5high risk são rótulos DESTE protocolo supervisionado, não liberação geral. No dia seguinte regressar à dor habitual anterior e não aumentar ao longo do tempo; se não regressar, nível reduzido no programa. Não prescrever algoritmo automático, medicação ou ignorar sinais clínicos pela nota≤5.",
+    "measurementLimitation": "Subgrupo36 avaliou antes e depois retrospectivamente após sessão; não monitorização contínua de todos76. Escala não transplantada para N32."
+  },
+  "evidenceLimits": {
+    "design": "Coorte de viabilidade2010, não ensaio de eficácia contra controle.",
+    "adverseEvents": "17/76(22%) tiveram dor>5 após uma ou mais sessões; ausência de faltas/abandono por problema específico da articulação não significa ausência de eventos.",
+    "overlappingFollowup": "2013inclui os76anteriores em87analisados, não replicação independente/RCT. Testes funcionais não viram doses/ajustes dos exercícios.",
+    "noClaims": [
+      "Evita cirurgia",
+      "Previne quedas",
+      "Seguro para toda artrose",
+      "Adequado ao dependente ou pós-operatório",
+      "Benefício clínico demonstrado para estas seis fichas isoladas"
+    ]
+  },
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "classification": "pendente",
+      "reason": "Estudo executado em grupo supervisionado numa instalação; discussão sugere uso em casa pela simplicidade do kit, mas não testa entrega autônoma domiciliária, teleatendimento ou ajuda de cuidador. Kit, ensino e segurança reais precisariam de avaliação."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "classification": "nao_aplicavel_ao_recorte_recebido",
+      "reason": "Não foi estudado em praça; máquinas fixas exteriores não substituem banda, superfície deslizante, bola, espelho, degraus e supervisão. Não recomendar deslizes em piso público nem equivalência de carga."
+    },
+    {
+      "context": "idoso_academia",
+      "classification": "aplicavel_com_limites",
+      "reason": "Pessoa60–77 com artrose primária grave indicada para artroplastia e triagem profissional, em instalação equipada com fisioterapeuta experiente. Academia comercial sem esse serviço não satisfaz o contexto; não extrapolar para fragilidade/dependência/demência."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "classification": "pendente",
+      "reason": "Cuidadores com queixa própria não são população estudada. Papel de cuidar não confirma artrose/fase/elegibilidade. Interrupções/cuidado simultâneo não foram testados e não autorizam encurtar dose. Assistido é pessoa diferente."
+    }
+  ],
+  "remainingBeforeOffer": [
+    "Revisão clínica/editorial e de compreensão dos componentes e critérios reais",
+    "Avaliação, ensino, ajustes e supervisão como no caminho descrito; não existe serviço contratado peloTrainForge",
+    "Se pretender sessão inteira/autonomia, resolver gestos de tronco/alongamentos, transições, lados/ancoragem/apoios e conteúdo final fiel antes de oferecer",
+    "Revisão de licença/atribuição dos ativos finais, imagem e finalidade clínica do produto"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

@@ -1,0 +1,33 @@
+{
+  "niche": "N11-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Educacao alimentar geral no envelhecimento e rotina pessoal do cuidador, com apoio organizacional separado; nao meta, textura, dieta, suplemento ou tecnica de alimentacao assistida.",
+  "next": "N12-I; N21 retida pelos complementos ainda abertos.",
+  "evidence": [
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["Plan meals and snacks ahead", "chew or swallow", "food diary"], "role": "Guia humano de habitos para idosos; contexto/data preservados, numeros nao transplantados."},
+    {"record": "2026-10-02/n11-manutencao-habitos/n11-niddk-adults.evidencia.json", "anchors": ["Health Tips for Adults"], "role": "Educacao geral de adultos, tambem referencia pessoal de cuidador adulto sem presumir que seja idoso."},
+    {"record": "2026-10-02/n11-manutencao-habitos/n11-niddk-copyright.evidencia.json", "anchors": ["copyright free", "third party", "endorsement"], "role": "Texto candidato com credito; excecoes graficas/terceiros/logos e vedacao de endosso mantidas."},
+    {"record": "2026-10-04/alimentacao-contexto/a08-fda-cuidador.evidencia.json", "anchors": ["you and your loved ones", "Preparing food safely"], "role": "Considerar saude do cuidador e apoio a outra pessoa sem colapsar papeis ou restringir publico a mulheres."}
+  ],
+  "dependencies": ["2026-10-03/n11i-alimentacao/pesquisa-complemento.json", "2026-10-02/n11-manutencao-habitos/conteudo-guiado.json", "2026-10-03/n14c-cuidador/pesquisa-complemento.json", "2026-10-04/n08i-receitas/pesquisa-complemento.json", "2026-10-04/n07i-rotulos/pesquisa-complemento.json"],
+  "operations": [
+    {"id": "I11R-O01", "decision": "Preservar sete operacoes anteriores: variedade/preferencias, planeamento, liquidos sem meta, barreiras profissionais, sem suplemento automatico, diario acompanhado e percurso pessoal do cuidador."},
+    {"id": "I11R-O02", "decision": "Planeamento/compras/preparo sao apoio organizacional, nao ingestao comprovada; manter pessoa, autor e origem."},
+    {"id": "I11R-O03", "decision": "Cuidador adulto pode usar educacao geral para si; nao lhe atribuir todas as recomendacoes do envelhecimento por cuidar de idoso."},
+    {"id": "I11R-O04", "decision": "Guia NIDDK de 2019 e fonte historica de educacao, nao limiar atual de BMI, sodio, energia ou liquidos nem prescricao de vitaminas."},
+    {"id": "I11R-O05", "decision": "Pessoas com barreiras de compras/preparo ou restricoes profissionais precisam percursos compativeis; nao obrigar mesmo menu/metas para domicilio inteiro."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I11R-G01", "met": true, "criterion": "Guia humano idoso e referencia geral para cuidador adulto identificados e recebidos."},
+    {"id": "I11R-G02", "met": true, "criterion": "Recorte anterior revisado, com papeis/rotina pessoal explicitamente separados."},
+    {"id": "I11R-G03", "met": true, "criterion": "Barreiras, ausencia de metas e limites de textura/suplementacao/assistencia delimitados."},
+    {"id": "I11R-G04", "met": true, "criterion": "Direitos de texto candidatos com credito/excecoes preservados; novos textos sao propostas proprias, sem ativos importados."},
+    {"id": "I11R-G05", "met": true, "criterion": "Politica local/clinica, revisao editorial e testes reais mantidos como gates futuros, nao fechamento de dieta clinica."}
+  ],
+  "scenarios": [
+    {"id": "I11R-S01", "fictional": true, "case": "Cuidador de 35 anos cuida de idoso", "expected": "Educacao e registos pessoais de adulto separados do percurso da pessoa assistida."},
+    {"id": "I11R-S02", "fictional": true, "case": "Cuidador so sabe o que serviu", "expected": "Consumo desconhecido; nao completar calorias da pessoa assistida."},
+    {"id": "I11R-S03", "fictional": true, "case": "Restricao profissional de liquidos", "expected": "Nao impor lembrete/meta universal nem substituir orientacao profissional."}
+  ],
+  "limits": ["Sete cenarios anteriores continuam ficticios, nao validacao com pessoas.", "Sem adaptacao clinica para disfagia/demencia/desnutricao ou tecnica de alimentar outra pessoa.", "Direitos de fotos/logos/terceiros, portugues, atualidade e legitimidade do acompanhamento continuam gates de publicacao.", "Fechamento so deste recorte educativo; nao prova beneficio clinico ou implementacao."]
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "researchClosed": true,
+  "implemented": false,
+  "kind": "Contrato documental proposto para ensaio; não comportamento observado do aplicativo",
+  "selectedForPossibleLocalExperiment": {
+    "source": "PR213",
+    "model": "nateraw/food",
+    "revision": "8991abd49ea01ebf502aeda51d4f12a59c603e01",
+    "weightBytes": 343584369,
+    "weightSha256Advertised": "33d6b7d44c0bb524fbb6f6d3b7d1f7c8d7c703b58882bf2a845355d9411f566d",
+    "weightDownloaded": true,
+    "input": "Uma foto com um prato dominante; PIL RGB explícito de 8 bits no adaptador de ensaio.",
+    "processing": "Resize direto 224×224 BILINEAR (2), sem crop no caminho legado lido; uint8/255, média 0.5 e desvio 0.5 por canal, NCHW float32. Isso descreve o caminho de entrada lido, não prova todas as transformações do treinamento.",
+    "output": "101 logits/classificação de pratos; guardar ID e nome do config da revisão. Scores normalizados, se calculados, não são certeza calibrada de correção.",
+    "taxonomy": "taxonomia-conferida.json",
+    "taxonomyIssue": "Resolvida decisão de decodificação no recorte ensaiado: manter config, compatível com task_templates e com ambas as fotos; não misturar com features. Revisão completa de treino não provada.",
+    "executionGate": "Executado e ambiente removido; limites de oferta em auditoria-fechamento.json.",
+    "weightRetained": false
+  },
+  "alternative": {
+    "source": "PR216",
+    "model": "onnx-community/swin-finetuned-food101-ONNX",
+    "revision": "e5e50bfc6425aa546f3b4421ca8bd79d0dd610b8",
+    "processing": "224×224, BICUBIC (3), rescale 1/255, média 0.485/0.456/0.406 e desvio 0.229/0.224/0.225. Não reutilizar normalização nateraw.",
+    "files": "Há variantes float32/float16/int8/q4, mas não foram baixadas nem medidas nesta máquina.",
+    "notSelectedAsValidated": "Relatório de terceiro não valida pesos/config atuais neste host. Swin isolado e fusão MobileCLIP têm avaliações e direitos diferentes."
+  },
+  "confidencePolicy": {
+    "calibratedForTarget": false,
+    "nonfoodDetectionDemonstrated": false,
+    "automaticUnknownClass": false,
+    "minimumThresholdChosen": null,
+    "rule": "Sempre exigir confirmação/correção humana antes de criar alimento confirmado; pontuação alta não remove esta etapa. Não prometer rejeição automática de não-alimentos, pratos mistos ou culinária não coberta.",
+    "manualFallback": "Outra opção / Nenhuma destas / Introduzir manualmente, sem forçar uma das 101 classes."
+  },
+  "mealIdentity": {
+    "requiredBeforeAttribution": [
+      "mealPersonId",
+      "reporterPersonId",
+      "reporterRole"
+    ],
+    "separateRoles": [
+      "quem fotografa",
+      "quem prepara",
+      "quem serve",
+      "quem consome"
+    ],
+    "automaticAssignment": false,
+    "sharedPlate": "Não inferir participantes, fração ou consumo por haver um prato na imagem.",
+    "caregiver": "Treino e alimentação próprios do cuidador pertencem ao próprio. Fotografar para o assistido requer indicar explicitamente a pessoa e a origem do relato."
+  },
+  "confirmationFlow": [
+    "Escolher explicitamente a pessoa da refeição e manter quem registra como autor distinto.",
+    "Usar foto consentida apenas se houver benefício; manter entrada manual acessível. Não fotografar terceiros.",
+    "Exibir hipóteses do modelo com nome/versão/origem, sem preencher consumo ou quantidade.",
+    "Confirmar ou corrigir o alimento; permitir nenhum destes, preparo diferente e múltiplos itens descritos manualmente.",
+    "Conferir correspondência com alimento/preparo da base N01/N02 antes de associar nutrientes; classe de prato não é receita ou composição exata.",
+    "Quantidade servida, consumida e desconhecida ficam sem inferência desta N; nada de plano nutricional automático por idade ou aparência.",
+    "Guardar correção e proveniência do registro sem usar a fotografia em treinamento nem enviar a terceiros por padrão."
+  ],
+  "privacyProposal": [
+    "No ensaio autorizado, só arquivos públicos com licença explícita ou padrões sintéticos próprios; nenhum dado pessoal do usuário.",
+    "Inferência offline após download, sem API de imagem, contas ou telemetria deliberadamente habilitada.",
+    "Não guardar foto em log, evidência Git ou catálogo do app; recibos e hashes podem registrar o arquivo de ensaio separado.",
+    "Retenção/apagamento e consentimento em produto ainda precisam implementação e teste; proposta não equivale a conformidade verificada."
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "condicional",
+      "evidence": "Modelo específico existe, mas cozinha portuguesa e luz doméstica não validadas. Entrada manual e confirmação com texto legível/ajuda digital separada de assistência física.",
+      "remaining": "Ensaio de erros, confirmação e compreensão real antes de ofertar."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "condicional",
+      "evidence": "A mesma pessoa confirma o que efetivamente comeu; embalagem/suplemento/rótulo não viram prato reconhecido nem recomendação pós-treino.",
+      "remaining": "Não há teste neste ambiente. OCR e barcode são Ns próprias, não equivalência."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "condicional",
+      "evidence": "Luz, sombra, conectividade e pessoas ao redor variam. Reconhecimento opcional e alternativa manual; nenhum GPS obrigatório.",
+      "remaining": "Não há teste de campo; não fotografar terceiros nem atribuir refeição por localização."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "condicional",
+      "evidence": "Cuidador como pessoa que come e registra para si; se observar o assistido, pessoa/autor/observação ficam separados.",
+      "remaining": "Conferir troca de pessoa, prato compartilhado e ajuda de uso sem atribuição automática."
+    }
+  ],
+  "unsupported": [
+    "gramas e volume",
+    "ingredientes ocultos e alergênicos garantidos",
+    "quantidade consumida",
+    "prescrição/objetivo por idade",
+    "diagnóstico por foto",
+    "programa alimentar individual"
+  ],
+  "releaseApproved": false,
+  "localEvaluation": "resultado-ensaio-local.json",
+  "supplementalEvaluation": "resultado-ensaio-suplementar.json",
+  "confirmationContractTest": "confirmacao-conferida.json",
+  "cleanup": "limpeza-ensaio.json"
+}

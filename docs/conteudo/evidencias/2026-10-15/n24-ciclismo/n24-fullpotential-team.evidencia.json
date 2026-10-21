@@ -1,0 +1,23 @@
+{
+  "id": "n24-fullpotential-team",
+  "url": "https://www.fullpotential.co.uk/team",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T11:04:10.795960+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Autoria profissional: equipe atual e qualificacoes sem atribuir plano ciclista a membro nao identificado",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.fullpotential.co.uk/team",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1106747,
+  "bodyFile": "../raw/n24-fullpotential-team.html",
+  "sha256": "9b9cd340cf237a7f0358815167e1bd880d042119bbbf04e69c6eac9971daede8"
+}

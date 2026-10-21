@@ -1,0 +1,24 @@
+{
+  "id": "n15m-nccih2016-publicdomain",
+  "url": "https://files.nccih.nih.gov/s3fs-public/Relaxation_Techniques_05-31-2016.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:37:03.737188+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Publicação federal com domínio público explícito e revisão técnica identificada, para material educativo/precauções; não fonte de receita inédita nem CD do ensaio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://files.nccih.nih.gov/s3fs-public/Relaxation_Techniques_05-31-2016.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 227213,
+  "bodyFile": "../raw/n15m-nccih2016-publicdomain.pdf",
+  "sha256": "d62acdc0b68ee5b03f50128d711f89b71a151e8db89dc42338f17e81329d374e",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-12",
+  "item": "CG-03",
+  "primarySourceId": "PR115",
+  "researchItemClosed": true,
+  "closureScope": "Oito componentes originais vinculados aoSTART, ficha factual; nao tratamentos isolados ou curso integral aprovado",
+  "researchClosureApprovesPublicationOrClinicalDelivery": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "apkTestsRun": false,
+  "clinicalOrLegalValidationPerformed": false,
+  "focusedTests": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_cg03_start.py -v",
+    "tests": 8,
+    "elapsedSeconds": 0.225,
+    "exitCode": 0,
+    "result": "OK"
+  },
+  "fullDocumentarySuite": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_*.py",
+    "tests": 301,
+    "elapsedSeconds": 68.286,
+    "exitCode": 0,
+    "result": "OK",
+    "fixtureCollectorPrintedCountsAreLiveCg03NetworkCalls": false,
+    "warnings": "Avisos de objetos/encodingsPDF antigos e PDF invalido de teste; nenhum teste falhou"
+  },
+  "catalogue": {
+    "command": "python -X utf8 docs/conteudo/consultar-cuidadores.py --write-audit",
+    "exitCode": 0,
+    "items": 5,
+    "mappedFields": 90,
+    "readingFiles": 11,
+    "verifiedPrimaryReceipts": 23,
+    "researchClosedItems": 3,
+    "exerciseOrTechniqueComponentsIndexed": 19,
+    "programmePhasesIndexed": 3,
+    "publishedItems": 0,
+    "networkCalls": 0,
+    "sha256": "496b0027df40d3bf0d0d7eec74c09d458708482faaa2e48b6e93bd8ff2f7ece0"
+  },
+  "cg03Integrity": {
+    "originalBodiesRevalidated": 3,
+    "receiptBodiesHashed": 6,
+    "newCollectorCalls": 3,
+    "newUsableBodies": 0,
+    "offlineAnalyzerNetworkCalls": 0,
+    "packageSha256": "bac71ada4b1a36af83ba2c4277b888be82dc5f48846a85fd01f685b1e1e1f54e",
+    "inventorySha256": "27477b2e085437cdcc02d254dae7cb4399d6b4d143291ecbf0dd5976ce6abcae",
+    "failedNewReturns": [
+      {"id":"cg03-ucl-exercicios-html","status":403,"bytes":6022,"sha256":"6b96765902045d0c57964199ba78431d168c5759743b0941a13439a750d15a8a","usable":false},
+      {"id":"cg03-ucl-signal-transcricao-docx","status":200,"bytes":63,"sha256":"b143b071100d63c1740bf4bf5490572ad48177bf27756a13bd5d25cdf6e67e91","usable":false},
+      {"id":"cg03-ucl-stretch-transcricao-docx","status":200,"bytes":63,"sha256":"1c13c97380ffbb36c6289aeec2ca37519bf846d77c0039ab6c6d1f679487e6ed","usable":false}
+    ]
+  },
+  "n15Master": {
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-complementos-idosos.py 2026-10-04/n15c-retomada/pesquisa-complemento.json",
+    "exitCode": 0,
+    "verifiedEvidenceBodies": 247,
+    "verifiedDependencies": 139,
+    "status": "parcial",
+    "sha256": "a29ec72ea0c9f1889b1116617d4baf5ce32e0bf79beed9abb4b1cadac238044b",
+    "failedNewReturnsAddedOnlyAsAccessLimits": true
+  },
+  "n01N20Queue": {
+    "command": "python -X utf8 docs/conteudo/evidencias/validar-fila-complementos.py",
+    "exitCode": 0,
+    "nichesChecked": 20,
+    "activeComplement": "N15-C",
+    "n21Allowed": false,
+    "sha256": "5e3fb17a3914d09efdc4ea1b2db1bf63d0b932bee182c35b78a8887fac61b879"
+  },
+  "caregiverSerialQueue": {
+    "closedItems": ["CG-01","CG-02","CG-03"],
+    "activeItem": null,
+    "nextItem": "CG-04",
+    "nextItemStarted": false,
+    "sha256": "ef61eb53098ed0a840846aea205012180ad96a03c58ce72f53069301dbf0ac01"
+  },
+  "graphify": {
+    "finalCheck": "graphify.detect.detect_incremental(Path('lib')) using root manifest; no semantic research extraction",
+    "exitCode": 0,
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "researchSemanticallyIndexed": false,
+    "rootGraphSha256": "93758d7223f13ac06c70ea9abc866b5e16df15131bdf087a55c53bd676fd670d",
+    "rootReportSha256": "67b4b843e2c9b8ae1f28f1268e00dd8554e791b097d8b66ac8f6a8cee6827a34",
+    "initialCliObservation": "Installed python -m graphify lib --update --code-only --no-cluster performed a separate extraction inlib/graphify-out, not expected incremental root update. Three newly-created outputs(.graphify_root/graph.json/manifest.json) removed explicitly; existingcache preserved. Root graph/report not replaced. Final incremental API check0/42/0."
+  },
+  "appTrackedDiff": {
+    "command": "git diff -- lib pubspec.yaml pubspec.lock android ios web test",
+    "exitCode": 0,
+    "outputEmpty": true,
+    "newApkContent": false
+  },
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "whitespaceErrors": false,
+    "warnings": "LF/CRLF emarquivos preexistentes/modificados; nenhuma reversao de alteracao local"
+  },
+  "limitationsPreserved": [
+    "Efeito clinico do programa, nao oito tecnicas isoladas",
+    "Duracoes totais das praticas nao inventadas; pausas de roteiro nao sustentacoes musculares genericas",
+    "Manual exato do participante e audio originais nao recebidos; materiais substitutos nao aprovados",
+    "CD/fita/MP3 sao formatos admitidos, nao licenca deconteudo",
+    "Preparo/lider treinado/supervisao e papel dos manuais/audio mantidos",
+    "Revisao humana de materiais/localizacao/apoio/seguranca antes deuso/publicacao",
+    "Registro de interrupcao sem compensacao automatica e regra conservadora documental doproduto, nao conduta clinica testada peloRCT",
+    "Nenhum curso integral/expressao protegida/audio publicado, nenhum APK alterado"
+  ],
+  "next": "SolicitacaoCG03 concluida no recorte factual;CG04 proximo nao iniciado. N15-C global aberta/N21retida."
+}

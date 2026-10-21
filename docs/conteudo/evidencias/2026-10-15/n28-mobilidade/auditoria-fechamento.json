@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "niche": "N28",
+  "researchClosed": true,
+  "scope": "Seis fichas: sentar/levantar, subir/descer degrau, rotação cervical e três alongamentos. Pesquisa funcional documentada, sem prescrição universal, programa periodizado ou mídia.",
+  "selectedLot": "lote-funcional-flexibilidade.json",
+  "criteria": [
+    {
+      "criterion": "Função doméstica e dose/instruções",
+      "met": true,
+      "evidence": "Cinco repetições alvo de cadeira, até cinco de degrau por perna inicial, comandos e apoios do NHS; alongamentos com lados, holds, repetições e cautelas."
+    },
+    {
+      "criterion": "Autoria e direitos por componente",
+      "met": true,
+      "evidence": "Autoria institucional identificada, sem inventar profissional nominal. PR05 OGL com3.6/3.10 e exceções; CI05 somente fatos/métodos em redação independente, política indexada com limite explícito, sem grant de fotografia."
+    },
+    {
+      "criterion": "Compatibilidade e ausências",
+      "met": true,
+      "evidence": "Fichas independentes; comandos/doses da fonte mantidos, duração total/calendário nulos, sem fisioterapia de escadas/assistência extrapolada."
+    },
+    {
+      "criterion": "Quatro contextos e pausas do cuidador",
+      "met": true,
+      "evidence": "Cada contexto classificado com razão; praça/apoios pendentes, pausa/reinício não validados. Não é necessário o mesmo programa para todos."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Revisar variantes e compatibilidade do conjunto, elegibilidade e apoio reais",
+    "Revisar redação pt-PT/acessibilidade/compreensão e direitos/atribuição do ativo final",
+    "Testar a implementação em etapa autorizada"
+  ],
+  "nextNiche": "N29",
+  "releaseApproved": false,
+  "appImplemented": false
+}

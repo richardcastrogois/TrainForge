@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-15",
+  "niche": "N44",
+  "researchClosed": true,
+  "scope": "Fontes existentes e contrato documental de acompanhamento pessoal, terceiros, medidas e ausências. Sem instrumento de adesão/score clínico ou produto validado.",
+  "criteria": [
+    {
+      "criterion": "Quatro contextos e cuidador para si",
+      "met": true,
+      "evidence": "contrato-acompanhamento.json contexts; aplicação real pendente explicitada por contexto"
+    },
+    {
+      "criterion": "Pausas/ausências/pessoas distintas",
+      "met": true,
+      "evidence": "Seis eventos fictícios, três conferências;2/4registos não adesão clínica50%."
+    },
+    {
+      "criterion": "Dose, origem e direitos",
+      "met": true,
+      "evidence": "ReusoPR28/PACEUP eN34; sem novas doses ou mídia."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Teste real de compreensão e uso",
+    "Implementação, acesso/consentimento/retificação",
+    "Revisões específicas do lote selecionado"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "nextNiche": "N45"
+}

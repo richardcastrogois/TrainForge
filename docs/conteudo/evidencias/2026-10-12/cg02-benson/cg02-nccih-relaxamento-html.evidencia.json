@@ -1,0 +1,23 @@
+{
+  "id": "cg02-nccih-relaxamento-html",
+  "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-12T14:47:23.563044+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "NIH/NCCIH: efeitos adversos ocasionais e busca de profissional se sintomas graves/persistentes; referencia de seguranca separada. Nao importar PMR com tensao muscular, respiracao profunda, dose ou beneficios de outras populacoes.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 674922,
+  "bodyFile": "../raw/cg02-nccih-relaxamento-html.html",
+  "sha256": "ee6c88c3dc4054f55c76482510d7ccb688febb5441094aac6cb48da66043ce49"
+}

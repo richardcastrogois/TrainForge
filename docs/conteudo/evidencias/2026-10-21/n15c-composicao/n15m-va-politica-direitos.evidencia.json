@@ -1,0 +1,23 @@
+{
+  "id": "n15m-va-politica-direitos",
+  "url": "https://department.va.gov/copyright-policy/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:49:45.879815+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir a regra institucional para obras produzidas pelo governo; nao estender a fotos de terceiros, obras transferidas ou a qualquer PDF apenas hospedado no VA.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://department.va.gov/copyright-policy/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1150213,
+  "bodyFile": "../raw/n15m-va-politica-direitos.html",
+  "sha256": "cad42f028445a76cf540c3a017e9130b6ce758a833da0095c85612324fd57440"
+}

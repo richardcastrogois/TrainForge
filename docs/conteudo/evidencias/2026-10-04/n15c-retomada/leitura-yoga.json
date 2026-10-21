@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-04",
+  "doi": "10.1007/s10433-023-00792-9",
+  "authors": "de Araujo, Rodrigues, Kozasa e Lacerda",
+  "published": "2023-11-25",
+  "articleRecord": "c15-yoga-artigo.evidencia.json",
+  "supplementRecord": "c15-yoga-suplemento.evidencia.json",
+  "supplementSha256": "84860209a74c63d0b01861b08714c29cadac3da7788db22b1bf78943e5c297b5",
+  "readMethod": "Corpo original HTML e todos os paragrafos do DOCX via ZipFile/ElementTree; nenhum componente executado. DOCX nao renderizado: nenhuma afirmacao de validacao visual.",
+  "supplementReceived": true,
+  "embeddedImages": 0,
+  "actor": "cuidador_praticando_para_si",
+  "environment": "casa_com_aula_online",
+  "population": {"analysed": 49, "yogaGroup": 25, "comparisonGroup": 24, "allFemale": true, "paidCaregiversIncluded": false, "minimumAge": 18, "minimumCareHoursPerDay": 8, "minimumCareMonths": 3, "yogaExperiencedIncluded": false, "limitingSevereChronicDiseaseIncluded": false},
+  "delivery": {"weeks": 8, "meetingsPerWeek": 1, "psychoeducationMinutes": 30, "yogaMinutes": 30, "teacherRequired": true, "videosSentInStudy": true, "videosReceivedLocally": false, "homeRepetitionDaysFixed": null},
+  "groups": [
+    {"classes": [1, 2], "exerciseEntries": 8, "asanaMinutes": 20, "relaxationMinutes": 5, "meditationMinutes": 5, "positions": ["sentada"], "instructionPresent": true},
+    {"classes": [3, 4, 5], "exerciseEntries": 8, "asanaMinutes": 20, "relaxationMinutes": 5, "meditationMinutes": 5, "positions": ["em_pe", "sentada"], "instructionPresent": true, "inheritedEntries": [5, 6, 7, 8]},
+    {"classes": [6, 7, 8], "exerciseEntries": 5, "asanaMinutes": 20, "relaxationMinutes": 10, "meditationMinutes": 0, "positions": ["deitada"], "instructionPresent": true}
+  ],
+  "instructionIssues": [
+    {"id": "C15-Y01", "location": "Grupo aulas 1/2, exercicio 5, torcao sentada; tambem herdado em aulas 3/4/5", "problem": "O texto primeiro posiciona a mao direita sobre a mao esquerda, mas depois a usa para puxar o joelho esquerdo. Nao corrigir para mao no joelho por inferencia nem publicar o passo contraditorio.", "resolved": false},
+    {"id": "C15-Y02", "location": "Varias permanencias e progressao com conforto", "problem": "Alguns valores iniciais existem, mas a fonte nao fixa todos os valores finais, descansos ou progressao por semana; preservar como decisao do instrutor, nao gerar tabela crescente automatica.", "resolved": false},
+    {"id": "C15-Y03", "location": "Pratica entre encontros", "problem": "Videos enviados e autorregistro foram componentes do estudo, nao recebidos aqui. Acesso ao artigo/suplemento nao prova direitos dos videos.", "resolved": false},
+    {"id": "C15-Y04", "location": "Progressao cadeira/em pe/solo", "problem": "Nao ha protocolo completo de transferencia ao solo, assistencia fisica, substituicoes por capacidade ou pausa por tarefa de cuidado. Nao generalizar a progressao a todo idoso/cuidador.", "resolved": false}
+  ],
+  "rights": {"articleLicense": "CC BY 4.0", "supplementSeparateNoticeObserved": false, "supplementAttribution": "Suplemento vinculado ao artigo original; atribuir autores, fonte, licenca e alteracoes, sem presumir permissao para ativos externos.", "videoLicense": null, "programmeReleaseApproved": false},
+  "resultBoundary": "Sem beneficio adicional significativo nos escores totais de sobrecarga, qualidade de vida, mindfulness ou sintomas em comparacao com psicoeducacao. Nao anunciar eficacia geral ou prevencao/tratamento pelo app.",
+  "decision": "Candidato humano mais operacional que CareFit, com suplemento efetivamente recebido. N15-C continua parcial pelas inconsistencias instrucionais, oferta supervisionada e componentes essenciais nao recebidos; nenhum contato, compra ou parceria."
+}

@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-07","scope":"N15-C, PR68: anexos originais observados no artigo recebido e pagina editorial; nao nova familia/programa, nao videos prometidos. Nao repetir PDFs ja recebidos.",
+  "requests":[
+    {"id":"c15-revieew-suplementos-pagina","url":"https://link.springer.com/article/10.1007/s10926-024-10182-2","extension":"html","purpose":"Primeiro corpoHTML editorial local para lista de quatro suplementos e direitos; PDFs anteriores preservados, sem nova versao independente presumida."},
+    {"id":"c15-revieew-si1-tif","url":"https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM1_ESM.tif","extension":"tif","purpose":"FiguraSI1 cientifica de configuracao da supervisao remota; fotografia e contexto, nao video, abaixo teto2MiB. Verificar formato/pixels antes da leitura."},
+    {"id":"c15-revieew-si2-tif","url":"https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM2_ESM.tif","extension":"tif","purpose":"FiguraSI2 cientifica: nove exercicios e variantes, comparar com Fig3 protocolo, direitos/credito e existencia de passos novos; teto2MiB mantido."},
+    {"id":"c15-revieew-si3-tif","url":"https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM3_ESM.tif","extension":"tif","purpose":"FiguraSI3 cientifica de progressao trabalho/repouso, compararFig4 protocolo; teto2MiB mantido."},
+    {"id":"c15-revieew-si4-docx","url":"https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM4_ESM.docx","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","extension":"docx","purpose":"TabelaSI1 de tamanhos de efeito, nao roteiro; leitura XML com limites/membros externos/OLE/macros nao executados, teto2MiB mantido."}
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "date": "2026-10-16",
+  "id": "N21-PRACA-MODULAR-09",
+  "scope": "Biblioteca documental de nove métodos em aparelhos específicos de praça, com origem humana, elegibilidade, parâmetros por componente e direitos. Não réplica do ciclo completo nem validação de uso autônomo.",
+  "researchClosed": true,
+  "sourceId": "PR256",
+  "sourceReceipt": {
+    "receipt": "n21-marcos2024-pdf.evidencia.json",
+    "httpStatus": 200,
+    "bodyFile": "../raw/n21-marcos2024-pdf.pdf",
+    "sha256": "5dcebe53ef065601f8397a65a7fe973ffd85704ea2dbe941cddcade6002968b7",
+    "bytes": 2305920,
+    "hashVerified": true
+  },
+  "authors": [
+    "Pablo J. Marcos-Pardo",
+    "Alejandro Espeso-García",
+    "Raquel Vaquero-Cristóbal",
+    "Tomás Abelleira-Lamela",
+    "Noelia González-Gálvez"
+  ],
+  "humanContribution": {
+    "conceptualization": "P.J.Marcos-Pardo",
+    "methodology": [
+      "P.J.Marcos-Pardo",
+      "R.Vaquero-Cristóbal",
+      "N.González-Gálvez"
+    ],
+    "investigation": [
+      "A.Espeso-García",
+      "T.Abelleira-Lamela",
+      "N.González-Gálvez"
+    ],
+    "supervision": "P.J.Marcos-Pardo",
+    "qualificationEvidence": "PDF6: dois graduados em Ciências do Esporte, com mestrados em Strength and Conditioning Training, Healthy Aging e Physical Activity and Health; feedback individual e contínuo. PDF14 atribui contribuições. Não inferir registro brasileiro ou identidade individual dos dois supervisores além do que o artigo diz."
+  },
+  "population": {
+    "source": "PDF3",
+    "inclusion": [
+      "Acima de50anos",
+      "Fisicamente independente",
+      "Sem treino resistido/exercício sistemático por pelo menos1ano"
+    ],
+    "exclusions": [
+      "Abuso/dependência de substâncias autorrelatado",
+      "Lesão/patologia que impedia medição/treino",
+      "Medicação prescrita que poderia afetar desempenho",
+      "Cirurgia que impedisse ou tornasse arriscado o procedimento"
+    ],
+    "notCovered": [
+      "Idoso frágil ou dependente por presunção",
+      "Cuidador prestando assistência física ao idoso",
+      "Tratamento automático por diagnóstico",
+      "Todo aparelho público brasileiro"
+    ],
+    "sourceRecruitment": 149,
+    "sourceFinalSample": 128,
+    "sourceTrainingGroup": 64,
+    "sourceControlGroup": 64,
+    "analysisExclusionsNotSafetyPrescription": [
+      "Falta ao pós-teste",
+      "Iniciar outro exercício sistemático",
+      "Faltar mais de25% das sessões na intervenção"
+    ]
+  },
+  "setting": "Circuito de8OFE Entorno Urbano S.L. em área privada reservada da UCAM, Murcia; não praça pública livre efetivamente testada neste estudo. Equipamentos gratuitos de praça como categoria não comprovam instalação/modelo local.",
+  "sourceProgramme": {
+    "weeks": 8,
+    "sessionsPerWeek": 2,
+    "daysNonConsecutive": true,
+    "nominalSessionMinutes": 60,
+    "exerciseCount": 11,
+    "equipmentCount": 8,
+    "wholeProgrammeOperationallyReplicated": false,
+    "warmupSource": "PDF6: mobilidade articular, cardiovascular e peso corporal; comandos/ordem/duração exatos não publicados neste artigo. Protocolo2023referido retornou403; sem outra rota.",
+    "cooldownSource": "PDF6: alongamentos estáticos ativos dos grupos envolvidos; lista/tempos exatos ausentes.",
+    "sourceDoseTableRecordedSeparately": true,
+    "wholeProgrammeOrAutomaticCalendarSelected": false
+  },
+  "items": [
+    {
+      "id": "P01",
+      "nameInSource": "Bonny rider",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Bonny rider",
+      "methodFactsInPortuguese": "Pegada supinada com as duas mãos no apoio; puxada por flexão dos cotovelos e extensão dos ombros.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não equiparar à cavalgada de outro fabricante nem ao gesto de remar de N20.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P02",
+      "nameInSource": "Shoulder press",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Gemini, apoios na altura baixa",
+      "methodFactsInPortuguese": "Segurar os apoios baixos; empurrar por extensão dos cotovelos e flexão dos ombros.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Conservar denominação/altura da fonte; não reinterpretar por nome de supino/desenvolvimento de academia.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P03",
+      "nameInSource": "Tricep dips",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Barras paralelas",
+      "methodFactsInPortuguese": "Apoio nas duas mãos, cotovelos inicialmente flexionados; extensão dos cotovelos contra o próprio peso.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Alternativa humana do artigo é apoio lateral/inclinado com pegada pronada; não é troca automática e não tem eficácia isolada.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P04",
+      "nameInSource": "Shoulder wheel",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Flyer wheels, de frente",
+      "methodFactsInPortuguese": "Mãos nas empunhaduras e cotovelos estendidos; circundução pelos ombros.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não equivale ao rotator cuff wheel, nem à rotação diagonal do manual brasileiro.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P05",
+      "nameInSource": "Chest press",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Gemini, apoios na altura média",
+      "methodFactsInPortuguese": "Segurar os apoios médios e empurrar por extensão dos cotovelos e flexão dos ombros.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não trocar pela versão de apoios baixos ou pelo supino inclinado com halteres.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P06",
+      "nameInSource": "Rotator cuff wheel",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Flyer wheels ao lado do corpo",
+      "methodFactsInPortuguese": "Cotovelo apoiado e mão segurando a empunhadura; rotações interna e externa.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não importar circundução de ombro nem manter braço livre sem o apoio descrito.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P07",
+      "nameInSource": "Calf raise",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 5, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Swing",
+      "methodFactsInPortuguese": "Joelhos estendidos, antepé na borda inferior da plataforma; flexão e extensão dos tornozelos.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Modelo/apoio do Swing; não substitui a elevação sentada com almofada da N20.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P08",
+      "nameInSource": "Leg press",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 6, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Swing",
+      "methodFactsInPortuguese": "Sentado, pés nas plataformas; empurrar vencendo a carga por extensão dos joelhos.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não é L050/L050B/leg press vertical de academia ou aparelho de carga regulável.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    },
+    {
+      "id": "P09",
+      "nameInSource": "Row",
+      "sourceId": "PR256",
+      "sourceAuthors": [
+        "Pablo J. Marcos-Pardo",
+        "Alejandro Espeso-García",
+        "Raquel Vaquero-Cristóbal",
+        "Tomás Abelleira-Lamela",
+        "Noelia González-Gálvez"
+      ],
+      "sourceContribution": "Método corporal e parâmetros do exemplo de dose da primeira fase; supervisão e elegibilidade. Não dose inventada ou importada de academia.",
+      "locator": "PDF 6, Table1; PDF6 Table2 e procedimentos; PDF3 população",
+      "equipmentVariant": "Row do circuito Entorno Urbano",
+      "methodFactsInPortuguese": "Sentado e com pés posicionados nos apoios; puxar por flexão dos cotovelos e rotação externa dos ombros; tronco perpendicular ao chão.",
+      "returnEvidence": "Table2/procedimentos estabelecem fase concêntrica E excêntrica controladas por metrônomo e feedback contínuo. Descrição de retorno não foi completada com comando mecânico ou ângulo ausente.",
+      "doseSourceExample": {
+        "context": "Parâmetros por exercício na semana1 do circuito ORIGINAL de11 exercícios, não prescrição de novo circuito de9 nem indicação para todo usuário.",
+        "sets": 1,
+        "reps": 15,
+        "workSeconds": 30,
+        "concentricSeconds": 1,
+        "eccentricSeconds": 1,
+        "restBeforeNextOriginalStationSeconds": 45,
+        "sourceFrequencyDaysPerWeek": 2,
+        "sourceDaysNonConsecutive": true
+      },
+      "supportRequired": "Demonstração/feedback individual contínuo por dois graduados em Ciências do Esporte com mestrados descritos no PDF6. Antes de prática, correspondência real do aparelho, elegibilidade e apoio precisam ser verificados; serviço não existe por presunção.",
+      "limits": "Não trocar por cabo na altura do peito, remo baixo ou remador ergométrico.",
+      "rights": {
+        "article": "CC BY4.0, PDF1, autores2024; atribuição, link à licença e alterações a indicar.",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "selectedRepresentation": "Notas factuais textuais próprias para pesquisa; sem copiar mídia, identidade visual ou material do concorrente.",
+        "mediaSelected": false,
+        "hardwarePatentGrantAssumed": false
+      },
+      "newCombinationClinicallyValidated": false,
+      "automaticDeliveryApproved": false
+    }
+  ],
+  "notSelected": [
+    {
+      "name": "Air Walker",
+      "reason": "Método disponível: apoio na barra e duas plataformas, flexão/extensão de quadril, tronco perpendicular; retenção isométrica breve no fim sem duração. Não forçar encaixe na cadência fixa ou usar como caminhada aeróbia de Chow."
+    },
+    {
+      "name": "Surfboard",
+      "reason": "Método disponível: plataforma/empunhadura, pêndulo frontal a partir da cintura; retenção breve sem duração. Mesmo problema de temporização, não completar por IA."
+    }
+  ],
+  "selectionChanges": [
+    "Dois métodos mantidos como referências, não fichas selecionadas; seleção não herda os efeitos do circuito de11.",
+    "A ordem no JSON é índice bibliográfico, não sequência nova de sessão.",
+    "Parâmetros da semana1 são exemplos factuais por componente; não calendário prescrito para9movimentos.",
+    "Aquecimento/retorno globais e operação mecânica não inventados; para oferecer sessão completa exigir preparação/encerramento humanos compatíveis e apoio reais."
+  ],
+  "compositionAssembledByAgent": true,
+  "numericalPrescriptionInvented": false,
+  "newAiProgrammeCreated": false,
+  "newFixedSessionSequenceCreated": false,
+  "newCompositionReviewedByClinician": false,
+  "newCombinationClinicallyValidated": false,
+  "mediaCopiedToApp": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchClosureBasis": "Regra explícita do usuário permite componentes de várias fontes humanas. Aqui9componentes instrucionais têm método/dose de referência/apoio/população/direitos na própria fonte. Não se exige que o programa integral seja replicável para fechar esta biblioteca; lacunas da réplica integral permanecem declaradas e não são convertidas em autorização de oferta."
+}

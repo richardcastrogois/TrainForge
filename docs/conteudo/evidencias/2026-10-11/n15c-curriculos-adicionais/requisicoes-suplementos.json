@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-11","scope":"SomenteN15-C, primeiras coletas apos identificacao dos suplementos emJATS original recebido; arquivos pequenos/publicos, semretry/bypass/contato. Registro para protocolo legitimamente listado, nao inferir acesso privado.",
+  "requests":[
+    {"id":"c15-mit-espanhol2023-suplementos-zip","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/supplementaryFiles","accept":"application/zip","extension":"zip","purpose":"DataSheet1PDF anunciado e requerido para screening/satisfacao, conferir se traz instrucoes em vezde assumir pelo nome."},
+    {"id":"c15-mbi-hibrido2025-suplementos-zip","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/supplementaryFiles","accept":"application/zip","extension":"zip","purpose":"gnaf281_supplementary_data.zip anunciado paraCONSORT/sensibilidade, inventariar zipaninhado comlimites semexecucao e verificar possivel materialoperacional."},
+    {"id":"c15-mbi-hibrido2025-registro-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05242614","extension":"json","purpose":"Registro explicitamentecitado NCT05242614, conferir protocolo/dose/eligibilidade/edicao/results, semfundir programaPR130."},
+    {"id":"c15-mbi-hibrido2022-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1186/s40359-022-00876-8&format=json&resultType=core","extension":"json","purpose":"Localizar protocolo2022 DOI citado emresultado, metadados primarios para originalpublico distinto DOIwebinacessivel semretry."}
+  ]
+}

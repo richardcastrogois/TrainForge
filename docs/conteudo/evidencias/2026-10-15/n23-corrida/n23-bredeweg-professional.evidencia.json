@@ -1,0 +1,24 @@
+{
+  "id": "n23-bredeweg-professional",
+  "url": "https://nieuws.umcg.nl/w/hardloopschoenen-voorkomen-geen-hardloopblessures",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:40:22.461966+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Fonteinstitucional confere sportarts/Medicina do autor quedesenvolveu intervencao",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://nieuws.umcg.nl/w/hardloopschoenen-voorkomen-geen-hardloopblessures",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5803,
+  "bodyFile": "../raw/n23-bredeweg-professional.html",
+  "sha256": "182dc28ee9f13354381409e6b3cba3bef0ba3cf3c1a195c01d3e41108718e891",
+  "error": "HTTP 403"
+}

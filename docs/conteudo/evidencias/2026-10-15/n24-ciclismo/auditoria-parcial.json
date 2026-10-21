@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "researchClosed": false,
+  "criteria": [
+    {
+      "criterion": "Autoria profissional ligada ao componente",
+      "met": "parcial",
+      "evidence": "PR160: concepção JBG/MJG e perfil Gibala recebidos. PR156/157/161 ainda sem responsável profissional nominal ligado à versão. PR157: autoria/atuação profissional de Joe Beer localizada para artigo de 2010, sem herdar para plano atual."
+    },
+    {
+      "criterion": "Preparação, execução, término, dose e progressão",
+      "met": false,
+      "evidence": "Dose MICT factual e calendários externos recebidos. Instrução operacional/condições da composição escolhida ainda incompletas; não preencher com IA."
+    },
+    {
+      "criterion": "Direitos gratuitos comerciais/adaptação por ativo escolhido",
+      "met": "parcial",
+      "evidence": "PR160 CC BY 4.0; UGA declara CC BY com acesso/autoria/instrução incompletos; BHF/CUK não demonstrados; TrainerDay e Keogh excluídos da importação comercial gratuita."
+    },
+    {
+      "criterion": "Público, ambiente, suporte e limites",
+      "met": "parcial",
+      "evidence": "Contextos delimitados, mas nenhum lote final completo escolhido para entrega doméstica/externa. Lab não é casa/praça e artrose não é todo idoso."
+    },
+    {
+      "criterion": "Busca ampliada e retomada rastreável",
+      "met": true,
+      "evidence": "Sete famílias, duas versões integrais BHF, coleção técnica/universitária, biblioteca/API, artigos/qualificação e pistas registradas; sem coleta repetida/bypass. Pista Joe Beer seguida até PDF e crédito nominal, não deixada como busca sem execução."
+    }
+  ],
+  "reasonNotClosed": "Ainda falta um conjunto de instrução operacional/condições de execução e direitos compatíveis para o componente selecionado. Não é exigência de achar um treino completo único; composição continua autorizada. Não converter esta pendência em simples revisão final de publicação.",
+  "nextNicheStarted": false,
+  "n15Paused": true,
+  "n25Started": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "historicalSupersededBy": "auditoria-fechamento.json"
+}

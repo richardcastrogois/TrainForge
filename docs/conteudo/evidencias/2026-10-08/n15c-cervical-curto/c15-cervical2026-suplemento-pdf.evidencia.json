@@ -1,0 +1,25 @@
+{
+  "id": "c15-cervical2026-suplemento-pdf",
+  "url": "https://links.lww.com/JOM/C123",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T02:07:00.355222+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Suplemento editorial anunciado, verificar corpo/formato e autoria/doses se recebido. Nao extrapolar exercicio isolado a partir de pacote multimodal.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://cdn-links.lww.com/permalink/jom/c/jom_00_00_2025_10_01_antunez_joem-25-11774_sdc2.docx",
+  "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "retryAfter": null,
+  "bytes": 1042170,
+  "bodyFile": "../raw/c15-cervical2026-suplemento-pdf.pdf",
+  "sha256": "9a8d2839a14b8f16d7bbe6dc474e950578f559d6a6d41f0fd1f0c7884814a419",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

@@ -1,0 +1,43 @@
+{
+  "niche": "N11",
+  "date": "2026-10-02",
+  "requests": [
+    {
+      "id": "n11-niddk-maintain",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "purpose": "Guia NIDDK sobre alimentação, atividade física, hábitos e manutenção de peso.",
+      "extension": "html"
+    },
+    {
+      "id": "n11-niddk-adults",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+      "purpose": "Guia NIDDK com hábitos práticos, contexto alimentar e diário de comida/bebida.",
+      "extension": "html"
+    },
+    {
+      "id": "n11-cdc-healthy-eating",
+      "url": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html",
+      "purpose": "Guia CDC de alimentação saudável para peso saudável, variedade e grupos alimentares.",
+      "extension": "html"
+    },
+    {
+      "id": "n11-dgs-10-passos",
+      "url": "https://alimentacaosaudavel.dgs.pt/biblioteca-pnpas/doc/Guia_10Passos_Info_Geral_Utente-1",
+      "purpose": "Guia português PNPAS/DGS dos 10 passos para alimentação saudável; referência local, direitos comerciais não presumidos.",
+      "accept": "application/pdf",
+      "extension": "pdf"
+    },
+    {
+      "id": "n11-niddk-copyright",
+      "url": "https://www.niddk.nih.gov/copyright",
+      "purpose": "Política de direitos NIDDK para reprodução, edição, logos e exceções.",
+      "extension": "html"
+    },
+    {
+      "id": "n11-cdc-rights",
+      "url": "https://www.cdc.gov/other/agencymaterials.html",
+      "purpose": "Política CDC de reutilização, crédito, não endosso, alterações e imagens.",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-va-workbook-modulo1",
+  "url": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-06T03:30:54.075788+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Modulo1 V3 oficial54p: ler rotina muscular inteira e recomendacao de caminhada com progressao, confirmar versos e limites sem aplicar outras partes do workbook.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.caregiver.va.gov/CAREGIVER/pdfs/DailyAttentionDiary/Caregiver_Workbook_V3_Module_1.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 7796540,
+  "bodyFile": "../raw/c15-va-workbook-modulo1.pdf",
+  "sha256": "30b856ebb5846fc0ee7d4e5c08acedd132d5991cffdd1c3f5a62e25ecb0f7b77",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-05",
+  "niche": "N18-I",
+  "family": "PR53",
+  "status": "parcial",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "selected": false,
+  "scope": "Instrucao humana de resistencia para idosos inicialmente inativos em sala de academia. Bandas e peso corporal, nao aparelhos de praca nem manual de maquinas. Reaproveitamento documental em N19-I/N20-I, sem novas coletas dessas Ns.",
+  "article": {
+    "record": "i18-agueda-2023-xml.evidencia.json",
+    "doi": "10.1007/s12603-023-1982-1",
+    "pmcid": "PMC12880457",
+    "publicationYear": 2023,
+    "articleLicense": "CC BY 4.0 explicita no XML; nao presume direitos dos PDFs externos ou das pessoas fotografadas.",
+    "participants": "90 randomizados, 46 exercicio e 44 lista de espera; cognitivamente normais, 65-80 anos, Granada. Nao cuidadores exercitando para si como populacao estudada.",
+    "eligibility": "Inatividade definida na fonte como sem treino de resistencia nos ultimos6meses OU <600MET-min/semana; STICS-m>=26, MMSE>=25/30 e MoCA por faixa etaria. Exclusoes/criterios clinicos nao convertidos em diagnostico ou elegibilidade automatica.",
+    "eligibilityContradiction": "Texto diz sem sintomas depressivos significativos e apresenta GDS>=15. Preservar inconsistencia e nao corrigir sinal por plausibilidade.",
+    "delivery": "Sala fitness IMUDS, grupos4-6, treinadores profissionais graduados em Sport and Exercise Sciences. Familiarizacao inicial2semanas; nao substituida por APK autonomo.",
+    "programme": "24semanas,3sessoes/semana,60min/sessao,72sessoes prescritas;3niveis de8semanas,3sessoes distintas por nivel,8movimentos por sessao. Aquecimento8min, principal45min, retorno7min.",
+    "dose": "3series, AMAP durante40s nas primeiras3semanas de cada nivel,50s nas proximas3 e60s nas semanas7-8;60s entre series. Intervalo entre exercicios ajustado a instrucao/preparacao, nao numero fixo inventado. RPE-alvo7-8 no ensaio supervisionado.",
+    "velocity": "Fonte descreve rapido mas controlado,1s excentrico/1s concentrico; familiarizacao2s/2s. Nao recomendar velocidade universal.",
+    "progression": "Bandas inicialmente leves e resistencia aumentada por julgamento do treinador e participante para atingir RPE; dificuldade motora por niveis. Cores nao convertidas em kg ou carga universal.",
+    "equipment": "Thera-Band1,5m, empunhadura padronizada1m,7resistencias;4ancoragens joelho/cintura/cabeca/acima da cabeca, step, cadeira, tapete e bola de tenis. SuplementoS3 acrescenta area4mx4m/step10cm/cadeira45cm/PolarH10/apps; nao prescricao generica de aparelhos.",
+    "modifications": "Dor/lesao/tontura geram ajustes individualizados por treinador; retorno de lesao sob supervisao e liberacao medica. Exemplos de alternativas nao sao fluxos completos de adaptacao automatica.",
+    "remoteException": "Participacao remota descrita usa GoogleMeet ao vivo, instrutor e monitorizacao. Nao equivale a video gravado ou autonomia demonstrada.",
+    "feasibility": "Custo relatado144,23EUR por participante/24semanas inclui entrega profissional; baixo custo nao custo zero. Uma cirurgia de ombro e motivos de saude sao relatados como externos ao programa, nao prova de risco zero.",
+    "tableCautions": [
+      "CabecalhoTabela1 associa sessoes1/2/3 a semanas1-8/9-16/17-24, mas corpo e linhas descrevem3sessoes por cada nivel8semanas. Guardar fontes sem interpretar como uma unica sessao por nivel.",
+      "Tabela2 AMAP10% N=53 nao e nova amostra de53idosos; nao somar aoN90 ou aoN46."
+    ]
+  },
+  "receivedAssets": [
+    {
+      "record": "i18-agueda-guia-a5-pdf.evidencia.json",
+      "kind": "guia_de_papel_externo",
+      "pages": 47,
+      "bytes": 3381080,
+      "sha256": "b777c4aa52d2c9cca5b517d597a203d33d8521a0c9b75f0bcaeaea0213468c6a",
+      "readingExtent": "Texto extraido das47paginas efetivamente lido, nao apenas indice. Inspecao visual completa somente das10paginas listadas, nao auditoria visual de todas as fotos.",
+      "visuallyInspectedPdfPages": [1, 6, 10, 24, 33, 37, 42, 43, 46, 47],
+      "kindOfVisual": "Fotos de pessoas identificaveis demonstrando exercicios; nao ilustracoes. Nenhuma autorizacao de personalidade/imagem concluida.",
+      "operationalFinding": "Posicao inicial, ancoragem, execucao e pontos-chave presentes para muitas variantes. Recebimento integral do arquivo nao demonstra todas as instrucoes essenciais coerentes/licenciadas.",
+      "guideDose": "P1recomenda sem supervisao RPE4-5,3series/60sdescanso,3treinos/semana,>=48h,24semanas. Nao mesma intensidade7-8 estudada no ensaio.",
+      "articleGuideDivergences": [
+        "Rotacao externa de ombro nivel1 e nivel2 consta da Tabela1, mas nao foi localizada no texto de nenhuma das47paginas. P10e24visualmente comecam em squat e facepull; nao omissao somente do parser dessas paginas. Nao completar com rotacao unilateral avancada da p37.",
+        "Tabela1nivel3sessao3 nomeia standing hip adduction; A5p44 descreve e fotografa standing hip abduction. Gestos opostos, nenhuma equivalencia aprovada.",
+        "A5p42instrucao de triceps unilateral diz30s com cada perna, enquanto descricao/foto mostram braco. Nao trocar automaticamente perna por braco.",
+        "Tempo unilateral A5fixa20s/25s/30s por lado nos niveis1/2/3; artigo muda40/50/60s totais dentro de cada nivel. Nao criar calendario conciliado sem esclarecimento primario.",
+        "A5p33chama Push ups mas instrucoes e fotos mantem apoio dos joelhos; nao associar por nome a flexao com pernas estendidas.",
+        "A5p46-47retorno contempla4massagens com bola, sem dose individual numerica. Artigo permite tambem mobilidade/alongamento; nao inventar essas alternativas ou duracao por movimento."
+      ],
+      "licenseFinding": "Busca textual em47paginas nao localizou licenca/creditos de reutilizacao. Inventario da raiz/README recebido nao declara LICENSE/CC para A5. Isso nao prova inexistencia de autorizacao em qualquer lugar; prova que caminho comercial gratuito nao foi demonstrado no material conferido.",
+      "license": null,
+      "commercialReuseApproved": false
+    },
+    {
+      "record": "i18-agueda-guia-a6-pdf.evidencia.json",
+      "kind": "indice_de_videos",
+      "pages": 2,
+      "bytes": 188748,
+      "finding": "PDF lido,18links YouTube:9ingles/9espanhol. Nenhum video recebido, assistido, baixado ou com licenca verificada. Indice nao demonstra instrucoes audiovisuais nem direitos de cada video.",
+      "license": null,
+      "commercialReuseApproved": false
+    },
+    {
+      "record": "i18-agueda-guia-a8-pdf.evidencia.json",
+      "kind": "guia_de_participacao_remota",
+      "pages": 4,
+      "bytes": 369260,
+      "finding": "Texto lido: participacao ao vivo com instrutor, links/apps e monitorizacao. Nao novo manual de exercicios nem programa autonomo.",
+      "license": null,
+      "commercialReuseApproved": false
+    },
+    {
+      "record": "i18-agueda-suplemento-cert.evidencia.json",
+      "kind": "suplemento_do_artigo",
+      "bytes": 1050066,
+      "member": "mmc1.docx",
+      "memberBytes": 719027,
+      "finding": "Todo textoOOXML w:t extraido e lido: S1CERT16itens/S2indiceA1-A9/S3equipamentos. Sem executar macros. Figuras doDOCX/ZIP nao inspecionadas visualmente nem selecionadas; guiaA5 externo nao incorporado nesse membro.",
+      "commercialReuseApproved": false
+    }
+  ],
+  "repositoryEvidence": [
+    "i18-agueda-repositorio-metadata.evidencia.json",
+    "i18-agueda-english-metadata.evidencia.json",
+    "i18-agueda-spanish-metadata.evidencia.json",
+    "i18-agueda-readme.evidencia.json"
+  ],
+  "repositoryLimits": "Repositorio publico dos autores nao recebeu licenca especifica dos ativos no inventario/README lido. PDFespanholA5de4414117bytes consta dos metadados, mas nao foi solicitado ou lido. Nao clonar, contatar autores ou contornar limites. Fonte externa sem licenca demonstrada nao selecionada pelo simples fato de ser publica.",
+  "closure": {
+    "instructionProgress": "Guia integral real recebido: melhora materialmente a pesquisa, mas faltas/divergencias impedem correspondencia integral sem reconstruir rotinas.",
+    "rightsProgress": "Licenca do artigo identificada; nenhum ativo externo aprovado para distribuicao comercial.",
+    "remaining": "I18-G03 e I20-G02/G03 permanecem falsos; I19-G03 depende de selecao de percurso coerente e licenciavel. N21 nao iniciada.",
+    "newApprovedMappings": 0,
+    "newApprovedAssets": 0,
+    "videoOrAudioPlayedOrDownloaded": 0
+  }
+}

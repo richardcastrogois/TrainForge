@@ -1,0 +1,59 @@
+{
+  "niche": "N11-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 4,
+  "verifiedDependencies": 5,
+  "proposedOperations": 5,
+  "fictionalScenarios": 3,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    },
+    {
+      "record": "2026-10-02/n11-manutencao-habitos/n11-niddk-adults.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+      "sha256": "83b3b811b1a468e98db74cd195f09751cdb9ad1e56dc2b2dd34b0755854f0e1b"
+    },
+    {
+      "record": "2026-10-02/n11-manutencao-habitos/n11-niddk-copyright.evidencia.json",
+      "url": "https://www.niddk.nih.gov/copyright",
+      "sha256": "c11dd24f95f04af9eaf3c54513f61d8c2b995b682b7550750e8f5e82127bf1b5"
+    },
+    {
+      "record": "2026-10-04/alimentacao-contexto/a08-fda-cuidador.evidencia.json",
+      "url": "https://www.fda.gov/consumers/womens-health-topics/caring-others-resources-help-you",
+      "sha256": "34b39d0ce4c0c3414329f73880b4b9108844a5d1cec41391f09251ea3e02c125"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-03/n11i-alimentacao/pesquisa-complemento.json",
+      "artifactSha256": "290c9b53912f64a82f1caeeabd117e67d87820cbb45b97e1b3d186ba4f7f513b"
+    },
+    {
+      "file": "2026-10-02/n11-manutencao-habitos/conteudo-guiado.json",
+      "artifactSha256": "b71e0f0bbe43a96e09469d47f1533014ef48f74c514e19d6c8d03618e43ba221"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    },
+    {
+      "file": "2026-10-04/n08i-receitas/pesquisa-complemento.json",
+      "artifactSha256": "2a121b2448936ed4d58759cb95c7333bae701d719c5222b20684ebb68f342b9a"
+    },
+    {
+      "file": "2026-10-04/n07i-rotulos/pesquisa-complemento.json",
+      "artifactSha256": "7373efb7378e66bbe769c01fcfabfd66ec70e9f7efa29d5ff8b71a5860c5ff9d"
+    }
+  ],
+  "next": "N12-I; N21 retida pelos complementos ainda abertos."
+}

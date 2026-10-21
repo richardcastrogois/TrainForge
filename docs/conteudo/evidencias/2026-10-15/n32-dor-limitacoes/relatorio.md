@@ -1,0 +1,13 @@
+# N32 — dor, limitações e ajuda: pesquisa concluída no recorte educativo
+
+Fechados os critérios documentais de **relato, contexto e acesso a ajuda**, sem programa terapêutico ou triagem automática. [Mapa de conteúdo](mapa-relato-ajuda.json), [auditoria](auditoria-fechamento.json) e [fontes com limites de evidência](fontes-e-evidencias.json). Nenhuma implementação ou publicação aprovada.
+
+O mapa distingue a pessoa sobre quem se fala, quem informa e se há autorrelato, transcrição ou observação. Abrange a pessoa idosa em casa, praça e academia; a queixa própria do cuidador; e observações sobre o assistido como informação separada. Não informado ou incapacidade de responder não viram0/sem dor. Notas subjetivas não foram convertidas emdiagnóstico, aptidão ou regra para selecionar exercício.
+
+A fonteNIAorienta a comunicação clínica por lugar, início/evolução, qualidade, sintomas associados, horários, modificadores, impacto e o que já foi tentado. A leitura é primária indexada, revista em2020; não corpo local ou atualização clínica2026. A organização dos campos é proposta editorial própria, não questionário validado deNIA/NICE. Na demência, as recomendaçõesNICE1.8.3e1.8.5distinguem observação, autorrelato e avaliação clínica. Nenhuma escala de faces ou instrumento de observação foi importado e nenhuma dor foi inferida por câmera.
+
+Portugal é o contexto de produto já definido emR18. A campanhaDGS/SPMS/INEMeoguiaoficialgov.pt, atualizado09/10/2026, confirmaram os contatos de orientação e emergência registrados no mapa. Não são contatos universais, nem houve chamada/encaminhamento. Exemplos de sinais da autoridade não constituem checklist que exclua situações graves ou autorize exercício. Custos de chamada/atendimento não foram presumidos gratuitos.
+
+Direitos e autoria foram registrados por fonte institucional, sem inventar profissional nominal. A políticaNIAindexada tem exceções de terceiros; DGSmantém direitos reservados e seu link de notas legais levou a informação indisponível. Não se copiou cartaz, identidade visual, foto, instrumento clínico ou diretriz integral. Foram selecionados fatos e referências emredação independente; ativo final, crédito, atualização clínica e compreensão ainda exigem revisão.
+
+ZeroGETlocal/corpo/hashnovo e zero páginasPDFvisualizadas nestaN. AberturasNIAmaterial2024/condições crônicas mostraram verificação, semPDF recebido; não repetidas ou contornadas. URLNICEinicialfalhou, mas a busca restrita aoórgão retornou aURLcanônica e o texto pertinente, marcado como índice primário. Fontes recebidas pelaweb não foram declaradas downloads locais. N15 segue pausada e aberta; N33 só pode começar depois desta auditoria. Sem app, Figma, banco, contatos ou dados pessoais de saúde.

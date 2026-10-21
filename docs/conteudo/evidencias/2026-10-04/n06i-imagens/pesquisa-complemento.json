@@ -1,0 +1,65 @@
+{
+  "niche": "N06-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "researchScope": "Complemento de identificacao/instrucao visual alimentar acessivel para idosos e cuidadores: amostra e requisitos documentados, nao homologacao de catalogo, dieta ou reconhecimento por imagem.",
+  "next": "N07-I; N21 continua retida pelos demais complementos.",
+  "evidence": [
+    {"record": "2026-10-04/acessibilidade-rotulos/a06-wai-idosos.evidencia.json", "anchors": ["physical ability", "cognitive ability"], "role": "Necessidades possiveis; nao diagnosticar ou infantilizar por idade."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a06-wai-imagens.evidencia.json", "anchors": ["text alternatives", "Informative Images"], "role": "Alternativa conforme funcao da imagem, nao texto oculto generico."},
+    {"record": "2026-10-04/acessibilidade-rotulos/a06-wcag22.evidencia.json", "anchors": ["Resize Text", "Reflow", "Target Size (Minimum)"], "role": "Referencia de requisitos futuros; sem conformidade declarada do Flutter."}
+  ],
+  "dependencies": [
+    "2026-09-28/n06-imagens/amostra-imagens.json",
+    "2026-09-28/n06-imagens/revisao-visual.json",
+    "2026-09-28/n06-imagens/validacao-imagens.json",
+    "2026-09-28/n06-imagens/resumo-imagens.json",
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json"
+  ],
+  "sourceFacts": [
+    "WAI identifica possiveis necessidades visuais, motoras, auditivas e cognitivas no envelhecimento; nao uma incapacidade comum a toda pessoa idosa.",
+    "O texto alternativo depende da informacao/funcao da imagem; imagens decorativas e informativas nao recebem o mesmo tratamento.",
+    "WCAG 2.2 oferece criterios de contraste, redimensionamento, reorganizacao e alvos; adaptar sua aplicacao e testar o produto permanece futuro."
+  ],
+  "operations": [
+    {"id": "I06-O01", "name": "identidade_textual", "decision": "Manter nome, variante, preparo e origem em texto real; fotografia opcional nao substitui identidade confirmada."},
+    {"id": "I06-O02", "name": "alternativa_por_finalidade", "decision": "Descrever apenas o que a imagem informa na tarefa. Rotulo necessita valores legiveis e origem, nao apenas texto 'foto do alimento'."},
+    {"id": "I06-O03", "name": "ampliacao_sem_perda", "decision": "Prever ampliacao, texto ajustavel e navegacao acessivel. Miniatura ilegivel nao vira instrucao pelo aumento de pixels."},
+    {"id": "I06-O04", "name": "sem_inferencia_nutricional", "decision": "Foto nao informa massa comestivel, densidade, rendimento, calorias ou seguranca clinica; dados ausentes permanecem ausentes."},
+    {"id": "I06-O05", "name": "pessoas_separadas", "decision": "Selecionar explicitamente a pessoa do registo; escolhas e consumo do cuidador nao preenchem a pessoa assistida."},
+    {"id": "I06-O06", "name": "credito_por_ativo", "decision": "Conservar titulo/autor/origem/licenca/alteracoes e direitos de terceiros; escolher candidato nao autoriza todo o Commons ou OFF."},
+    {"id": "I06-O07", "name": "fallback_e_correcao", "decision": "Sem imagem ou variante confirmada, permitir identificacao textual/manual com origem; nao adivinhar pelo aspecto."}
+  ],
+  "assetReview": [
+    {"assetId": "commons-43976882", "decision": "Candidato para identificar arroz branco cozido, com alternativa textual propria. CC0 indicada nos metadados anteriores; nao comprova massa, variedade ou receita.", "originalAlternativeDraft": "Arroz branco cozido numa tigela; porcao nao medida.", "releaseApproved": false},
+    {"assetId": "commons-22552194", "decision": "Candidato para identidade banana, CC BY-SA 3.0 indicada; preservar credito e alteracoes. Casca visivel nao demonstra massa comestivel.", "originalAlternativeDraft": "Bananas com casca; quantidade comestivel nao medida.", "releaseApproved": false},
+    {"assetId": "off-leite-front", "decision": "Candidato de embalagem especifica, nao bebida generica ou volume consumido; alternativa inclui marca/variante verificadas. Credito OFF/CC BY-SA 3.0 preservado.", "releaseApproved": false},
+    {"assetId": "commons-4010846", "decision": "240 x 117 insuficiente para instrucao ampliada; somente referencia/miniatura candidata, sem receita/nutricao inferidas.", "releaseApproved": false},
+    {"assetId": "commons-25804985", "decision": "Rejeitado para o pescado solicitado na revisao anterior; nao reaproveitar por parecer prato preparado.", "releaseApproved": false},
+    {"assetId": "off-leite-ingredients", "decision": "Fallback de idioma e ausencia de revisao visual impedem tratar como instrucao portuguesa legivel.", "releaseApproved": false}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I06-G01", "met": true, "criterion": "Publicos/papeis e finalidade alimentar declarados, sem pressupor incapacidade."},
+    {"id": "I06-G02", "met": true, "criterion": "Fontes primarias de acessibilidade recebidas e amostra anterior rastreavel."},
+    {"id": "I06-G03", "met": true, "criterion": "Candidatos/rejeicoes e limites de resolucao/variante/licenca documentados por ativo."},
+    {"id": "I06-G04", "met": true, "criterion": "Instrucao/fallback e separacao identidade, porcao, nutricao e pessoa especificados."},
+    {"id": "I06-G05", "met": true, "criterion": "Uso nesta pesquisa e referencia factual com redacao propria; sem importar novos ativos ou copiar guias."},
+    {"id": "I06-G06", "met": true, "criterion": "Testes reais, revisao de direitos do lote final e implementacao separados do fechamento de pesquisa."}
+  ],
+  "scenarios": [
+    {"id": "I06-S01", "fictional": true, "case": "Idoso nao consegue distinguir foto", "expected": "Identidade textual e ampliacao disponiveis no requisito; nao inferir diagnostico."},
+    {"id": "I06-S02", "fictional": true, "case": "Cuidador fotografou uma tigela compartilhada", "expected": "Nao dividir consumo ou massa automaticamente entre pessoas."},
+    {"id": "I06-S03", "fictional": true, "case": "Imagem de arroz integral sem composicao confirmada", "expected": "Nao vincular por aspecto a um registo nutricional exato."},
+    {"id": "I06-S04", "fictional": true, "case": "Rotulo fotograficamente ilegivel", "expected": "Indicar ausente/ilegivel; nao completar alergenios, porcao ou calorias."}
+  ],
+  "limits": [
+    "Fechamento limitado a pesquisa de requisitos e amostra, nao todos os alimentos nem direitos independentes de cada foto.",
+    "Alternativas e operacoes sao propostas editoriais proprias assistidas por agente, nao instrucoes aprovadas por W3C ou nutricionista.",
+    "Sem teste com idosos/cuidadores, tecnologia assistiva, dispositivo ou implementacao Flutter.",
+    "Nao importa imagem de pessoas, interface, tabelas completas ou marcas das novas fontes.",
+    "Dados de saude, consentimento/representacao e publicacao seguem gates futuros."
+  ]
+}

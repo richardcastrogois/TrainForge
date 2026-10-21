@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-12",
+  "component": "CG-03-START",
+  "scope": "Fontes primarias e tentativas complementares separadas dos originais2013/2014 ja recebidos. Leads e retornos de erro nao tornam material clinico recebido.",
+  "searches": [
+    {"query":"site.ucl.ac.uk START strategies relatives relaxation exercises copyright manual","role":"Localizar recursos oficiais e termos sem assumir licenca comercial"},
+    {"query":"\"START\" \"f6276\" sessions hour manual","role":"Conferir contexto/tempo de encontros, sem inventar minutos ausentes"}
+  ],
+  "primaryWebReadings": [
+    {
+      "url":"https://www.ucl.ac.uk/brain-sciences/psychiatry/research/mental-health-older-people/projects/start/start-relaxation-exercises",
+      "webObservation":"Pagina primaria lista sete tecnicas/transcricoes e acesso aMP3 por formulario de recursos/SharePoint; conteudo web legivel separado do coletorHTTP403.",
+      "listedTechniques":["signal","focused","grounding","meadow","meditation","ocean","stretch"],
+      "sevenWebEntriesReplaceEightOriginalManualScripts":false,
+      "editionIdentityVerifiedAsSame2014Materials":false,
+      "localUsableBodyReceived":false
+    },
+    {
+      "url":"https://www.ucl.ac.uk/research-innovation/case-studies/2022/apr/ucl-developed-therapy-helps-dementia-carers-mental-wellbeing",
+      "role":"Contexto institucional2022/recursos gratuitos; nao resultado novo extraido deRCT, autorizacao comercial ou script clinico.",
+      "freeResourcesIsCommercialLicence":false,
+      "replacesPrimaryTrialOrManual":false
+    }
+  ],
+  "linkedTranscriptRepresentations": {
+    "publishedOfficeViewerLinksTried":2,
+    "viewerResult":"Cache miss; sem corpo/transcricao recebida e sem retry.",
+    "directDocxUrlsDiscoveredInPublishedViewerSrc":true,
+    "directFirstGetIsViewerRetry":false,
+    "receiptIds":["cg03-ucl-signal-transcricao-docx","cg03-ucl-stretch-transcricao-docx"],
+    "docxReceived":false,
+    "reason":"AmbosHTTP200/63bytes, corpo nao e o binario solicitado; nao extrair comoOOXML nem inferir instrucao."
+  },
+  "collectorReturns": [
+    {"record":"cg03-ucl-exercicios-html.evidencia.json","status":403,"bytes":6022,"contentUsable":false,"role":"Erro de acesso, nao pagina local recebida"},
+    {"record":"cg03-ucl-signal-transcricao-docx.evidencia.json","status":200,"bytes":63,"contentUsable":false,"role":"Corpo invalido paraDOCX, nao transcricao recebida"},
+    {"record":"cg03-ucl-stretch-transcricao-docx.evidencia.json","status":200,"bytes":63,"contentUsable":false,"role":"Corpo invalido paraDOCX, nao transcricao recebida"}
+  ],
+  "collectorCalls":3,
+  "newUsableBodies":0,
+  "originalBodiesRevalidated":3,
+  "originalSourceIds":["PR115"],
+  "noContactLoginFormsSharepointSubmissionPurchaseMediaDownloadOrTlsBypass":true,
+  "noFailedUrlRetry":true,
+  "n21Started":false,
+  "releaseApproved":false
+}

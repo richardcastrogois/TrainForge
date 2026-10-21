@@ -1,0 +1,86 @@
+{
+  "id": "PR204",
+  "authors": [
+    {
+      "name": "Eva Ageberg",
+      "contribution": "Concepção e desenho do estudo, adaptação do programa, coleta, análise/interpretação e manuscrito. Perfil institucional atual confirma Professor, PhD; não foi inferida licença profissional histórica."
+    },
+    {
+      "name": "Anne Link",
+      "contribution": "Desenho/adaptação do programa, coleta e revisão do manuscrito."
+    },
+    {
+      "name": "Ewa M Roos",
+      "contribution": "Concepção/desenho, interpretação e revisão do manuscrito."
+    }
+  ],
+  "article": {
+    "title": "Feasibility of neuromuscular training in patients with severe hip or knee OA: The individualized goal-based NEMEX-TJR training program",
+    "published": "2010-06-17",
+    "doi": "10.1186/1471-2474-11-126",
+    "primaryUrl": "https://link.springer.com/article/10.1186/1471-2474-11-126"
+  },
+  "supplement": {
+    "title": "Additional file 1: NEMEX-TJR training program",
+    "pages": 7,
+    "allPagesVisuallyReviewed": true,
+    "panels": [
+      "../raw/n33-nemex-painel-1.png",
+      "../raw/n33-nemex-painel-2.png",
+      "../raw/n33-nemex-painel-3.png",
+      "../raw/n33-nemex-painel-4.png"
+    ]
+  },
+  "localReceipts": [
+    {
+      "receipt": "n33-nemex-artigo.evidencia.json",
+      "bodyFile": "../raw/n33-nemex-artigo.html",
+      "bytes": 381059,
+      "sha256": "bee633355d3b9db02aae3638411dcd858d0e547d42ed8ad3003b6b20915c65c3",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n33-nemex-suplemento.evidencia.json",
+      "bodyFile": "../raw/n33-nemex-suplemento.pdf",
+      "bytes": 206973,
+      "sha256": "c3126d544eb765f869df583c4d7f395f28ccd38c78e992a95ad120576e19900d",
+      "hashMatches": true,
+      "httpStatus": 200
+    }
+  ],
+  "rights": {
+    "license": "CC BY 2.0",
+    "primaryEvidence": "Artigo, Rights and permissions: link explícito /licenses/by/2.0, uso/distribuição/reprodução com crédito. Suplemento autoral vinculado diretamente; sete páginas sem exceção de copyright de terceiro identificada. Não usar versão 4.0 por padrão.",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "selectedUse": "Fatos e métodos descritos em redação própria com crédito e indicação de adaptação/seleção. Nenhuma foto, desenho, escala gráfica ou logotipo selecionado para o produto.",
+    "thirdPartyCaution": "Fig.2 cita modelo Thomeé1997; não importar o desenho como licença autônoma da escala. Licença de copyright não comprova consentimento/direito de imagem das pessoas fotografadas.",
+    "finalAssetReviewPending": true
+  },
+  "webOnly": [
+    {
+      "primaryUrl": "https://portal.research.lu.se/en/persons/eva-ageberg/",
+      "method": "Leitor web institucional, sem GET/corpo/hash local",
+      "finding": "Perfil atual: Professor, PhD, Sport Sciences. Afiliação/fatos bibliográficos; sem copiar biografia, foto ou contatos. Rodapé reserva direitos inclusive mineração; não coletar o perfil para base."
+    },
+    {
+      "primaryUrl": "https://link.springer.com/article/10.1186/1471-2474-14-232",
+      "method": "Leitor web do editor, sem GET/corpo/hash local",
+      "published": "2013-08-08",
+      "finding": "Estudo antes/depois não randomizado, 87 analisados, 43 referências normativas. Inclui os 76 de 2010: não replicação independente. Remete ao mesmo suplemento e não completa os alongamentos. Teste de sentar/levantar com cadeira45cm não é ajuste prescrito para o treino.",
+      "uncertainty": "Métodos dizem 130 recrutados, mas discriminam51anca+83joelho=134; não resolver a discrepância por inferência nem importar esse total para a coorte2010."
+    },
+    {
+      "id": "PR205",
+      "primaryUrl": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations",
+      "method": "Texto primário indexado na pesquisa; abertura retornou Internal Error. Não corpo local nem leitura integral confirmada por GET.",
+      "published": "2022-10-19",
+      "finding": "1.3.1–1.3.4: exercício ajustado à pessoa; considerar supervisão e educação. Esta orientação geral não valida o subconjunto selecionado nem exige supervisão para toda artrose.",
+      "rights": "Referência/paráfrase factual breve, não diretriz copiada ou grant comercial presumido."
+    }
+  ],
+  "costs": {
+    "researchAccess": "Artigo/suplemento públicos, sem pagamento, conta ou contato nesta coleta.",
+    "delivery": "Fisioterapeuta, instalação, deslocação, kit e eventual licenciamento/produção de mídia têm custo não apurado; não presumir oferta gratuita ou parceria."
+  }
+}

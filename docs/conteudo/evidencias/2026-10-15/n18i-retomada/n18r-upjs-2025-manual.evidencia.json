@@ -1,0 +1,18 @@
+{
+  "id": "n18r-upjs-2025-manual",
+  "url": "https://unibook.upjs.sk/img/cms/2025/pohybove-programy-pre-seniorov.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:19:21.921521+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Manual universitário novo identificado na cadeia bibliográfica; conferir direitos e conteúdo, sem copiar fotos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>"
+}

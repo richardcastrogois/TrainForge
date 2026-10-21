@@ -1,0 +1,25 @@
+{
+  "id": "n21-marcos2023-protocolo",
+  "url": "https://bmjopensem.bmj.com/content/bmjosem/9/4/e001829.full.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:38:27.861697+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Protocolo2023 explicitamente citado no ensaio2024/2025: conferir comandos, preparo, retorno, profissional e direitos; primeira tentativa desta obra.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://bmjopensem.bmj.com/content/bmjosem/9/4/e001829.full.pdf",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5719,
+  "bodyFile": "../raw/n21-marcos2023-protocolo.pdf",
+  "sha256": "f37c7b96654c264fb02f0e72311ccc714107044be07e0f75b780fc6d44fc9785",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 403"
+}

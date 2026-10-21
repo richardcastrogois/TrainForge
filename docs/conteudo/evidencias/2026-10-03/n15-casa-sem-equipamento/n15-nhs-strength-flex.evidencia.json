@@ -1,0 +1,21 @@
+{
+  "id": "n15-nhs-strength-flex",
+  "url": "https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T22:22:49.571465+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar disponibilidade real do antigo programa NHS de cinco semanas; redirecionamento nao e plano obtido.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/exercise/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 26962,
+  "bodyFile": "../raw/n15-nhs-strength-flex.html",
+  "sha256": "e977be6f6a3f31705da52c2342b091c1f709a53e9e54b74c3284abc851f4265d"
+}

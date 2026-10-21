@@ -1,0 +1,615 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 10,
+  "http200": 9,
+  "hashedBodies": 10,
+  "usableBodies": 9,
+  "receipts": [
+    {
+      "id": "c15-mit-espanhol2023-xml",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-xml.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/fullTextXML",
+      "bytes": 75676,
+      "sha256": "faab96dc88a30c61672212c66bcb3529b076ad6011e59e070a2b06f82ffcc472",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "sec1",
+          "title": "Introduction"
+        },
+        {
+          "id": "sec2",
+          "title": "Methods"
+        },
+        {
+          "id": "sec3",
+          "title": "Procedures"
+        },
+        {
+          "id": "sec4",
+          "title": "Participants"
+        },
+        {
+          "id": "sec5",
+          "title": "Mentalizing imagery therapy intervention"
+        },
+        {
+          "id": "sec6",
+          "title": "Measures"
+        },
+        {
+          "id": "sec7",
+          "title": "Statistical analysis"
+        },
+        {
+          "id": "sec8",
+          "title": "Results"
+        },
+        {
+          "id": "sec9",
+          "title": "Phase 1. Cultural adaptation"
+        },
+        {
+          "id": "sec10",
+          "title": "Cultural adaptation of the intervention for Latino SLDCs"
+        },
+        {
+          "id": "sec11",
+          "title": "Phase 2. Feasibility and acceptability assessment"
+        },
+        {
+          "id": "sec12",
+          "title": "Demographics"
+        },
+        {
+          "id": "sec13",
+          "title": "Feasibility and acceptability"
+        },
+        {
+          "id": "sec14",
+          "title": "Depressive symptoms"
+        },
+        {
+          "id": "sec15",
+          "title": "Caregiver burden"
+        },
+        {
+          "id": "sec16",
+          "title": "Mindfulness"
+        },
+        {
+          "id": "sec17",
+          "title": "Well-being"
+        },
+        {
+          "id": "sec18",
+          "title": "Other secondary outcomes"
+        },
+        {
+          "id": "sec19",
+          "title": "Discussion"
+        },
+        {
+          "id": "sec20",
+          "title": "Data availability statement"
+        },
+        {
+          "id": "sec21",
+          "title": "Ethics statement"
+        },
+        {
+          "id": "sec22",
+          "title": "Author contributions"
+        },
+        {
+          "id": "sec23",
+          "title": "Funding"
+        },
+        {
+          "id": "conf1",
+          "title": "Conflict of interest"
+        },
+        {
+          "id": "sec100",
+          "title": "Publisher’s note"
+        },
+        {
+          "id": "ack1",
+          "title": "Acknowledgments"
+        },
+        {
+          "id": "sec25",
+          "title": "Supplementary material"
+        },
+        {
+          "id": "ref-list1",
+          "title": "References"
+        },
+        {
+          "id": "_ad93_",
+          "title": "Associated Data"
+        },
+        {
+          "id": "_adsm93_",
+          "title": "Supplementary Materials"
+        },
+        {
+          "id": "_adda93_",
+          "title": "Data Availability Statement"
+        }
+      ],
+      "supplementFiles": [
+        "Data_Sheet_1.PDF",
+        "Data_Sheet_1.PDF"
+      ]
+    },
+    {
+      "id": "c15-tcqg-grupo2020-xml",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-xml.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/fullTextXML",
+      "bytes": 86944,
+      "sha256": "db3ceb65c675d347bcc029d5593a22ae32340d0e122dff02c9e459d711441f3a",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "section1-1534735420941605",
+          "title": "Introduction"
+        },
+        {
+          "id": "section2-1534735420941605",
+          "title": "Methods"
+        },
+        {
+          "id": "section3-1534735420941605",
+          "title": "Intervention"
+        },
+        {
+          "id": "section4-1534735420941605",
+          "title": "Measures"
+        },
+        {
+          "id": "section5-1534735420941605",
+          "title": "Statistics"
+        },
+        {
+          "id": "section6-1534735420941605",
+          "title": "Results"
+        },
+        {
+          "id": "section7-1534735420941605",
+          "title": "Baseline Expectations and Self-Reported Symptoms: Caregivers Versus\nPatients"
+        },
+        {
+          "id": "section8-1534735420941605",
+          "title": "Baseline Expectations and Self-Reported Symptoms: Tai Chi Versus Qi\nGong"
+        },
+        {
+          "id": "section9-1534735420941605",
+          "title": "Group Class Effects on Self-Reported Symptoms"
+        },
+        {
+          "id": "section10-1534735420941605",
+          "title": "Subgroup Analysis, Moderate to Severe Symptom Burden: Patients Only"
+        },
+        {
+          "id": "section11-1534735420941605",
+          "title": "Discussion"
+        },
+        {
+          "id": "section12-1534735420941605",
+          "title": "Conclusion"
+        },
+        {
+          "id": "section13-1534735420941605",
+          "title": "Supplemental Material"
+        },
+        {
+          "id": "fn-group1",
+          "title": "Footnotes"
+        },
+        {
+          "id": "ref-list1",
+          "title": "References"
+        },
+        {
+          "id": "_ad93_",
+          "title": "Associated Data"
+        },
+        {
+          "id": "_adsm93_",
+          "title": "Supplementary Materials"
+        }
+      ],
+      "supplementFiles": [
+        "Supplement_A_Tai_chi_Curriculum_1.pdf",
+        "Supplement_B_Qi_gong_Curriculum_1.pdf",
+        "Supplement_A_Tai_chi_Curriculum_1.pdf",
+        "Supplement_B_Qi_gong_Curriculum_1.pdf"
+      ]
+    },
+    {
+      "id": "c15-tcqg-grupo2020-suplementos-zip",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-tcqg-grupo2020-suplementos-zip.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7374530/supplementaryFiles",
+      "bytes": 626785,
+      "sha256": "8ef03e08cf05bf9e71c7a4d158f07196de186c61ba8f589586f7f3356ce4a2ca",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga-hnc2024-xml",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-yoga-hnc2024-xml.evidencia.json",
+      "status": 500,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11349719/fullTextXML",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "usableForReading": false
+    },
+    {
+      "id": "c15-mbi-hibrido2025-xml",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-xml.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/fullTextXML",
+      "bytes": 161391,
+      "sha256": "f611fe0547876b1f50c8affcb7dd053d36345c216f5e3f0f54cc4c05e98e19d4",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Background and Objectives"
+        },
+        {
+          "id": "s2",
+          "title": "Research Design and Methods"
+        },
+        {
+          "id": "s3",
+          "title": "Results"
+        },
+        {
+          "id": "s4",
+          "title": "Discussion and Implications"
+        },
+        {
+          "id": "sec5",
+          "title": "Pre-registration"
+        },
+        {
+          "id": "sec6",
+          "title": "Background and objectives"
+        },
+        {
+          "id": "sec7",
+          "title": "Research design and methods"
+        },
+        {
+          "id": "sec8",
+          "title": "Participants"
+        },
+        {
+          "id": "sec9",
+          "title": "Procedures"
+        },
+        {
+          "id": "sec10",
+          "title": "Intervention"
+        },
+        {
+          "id": "sec11",
+          "title": "Mindfulness-Based Dementia Care Program"
+        },
+        {
+          "id": "sec12",
+          "title": "Control group"
+        },
+        {
+          "id": "sec13",
+          "title": "Measures"
+        },
+        {
+          "id": "sec14",
+          "title": "Primary outcome"
+        },
+        {
+          "id": "sec15",
+          "title": "Secondary outcomes"
+        },
+        {
+          "id": "sec16",
+          "title": "Sociodemographic, health, and caregiving-related information"
+        },
+        {
+          "id": "sec17",
+          "title": "Data analyses"
+        },
+        {
+          "id": "sec18",
+          "title": "Results"
+        },
+        {
+          "id": "sec19",
+          "title": "Baseline characteristics and descriptive statistics"
+        },
+        {
+          "id": "sec20",
+          "title": "Effects on stress reduction"
+        },
+        {
+          "id": "sec21",
+          "title": "Effects on secondary outcomes"
+        },
+        {
+          "id": "sec22",
+          "title": "Effects on people with dementia"
+        },
+        {
+          "id": "sec23",
+          "title": "Sensitivity analyses"
+        },
+        {
+          "id": "sec24",
+          "title": "Discussion and implications"
+        },
+        {
+          "id": "sec25",
+          "title": "Implications for practice"
+        },
+        {
+          "id": "sec26",
+          "title": "Limitations"
+        },
+        {
+          "id": "sec27",
+          "title": "Conclusion"
+        },
+        {
+          "id": "sec28",
+          "title": "Supplementary Material"
+        },
+        {
+          "id": "ack1",
+          "title": "Acknowledgments"
+        },
+        {
+          "id": "_ci93_",
+          "title": "Contributor Information"
+        },
+        {
+          "id": "sec29",
+          "title": "Supplementary material"
+        },
+        {
+          "id": "sec30",
+          "title": "Funding"
+        },
+        {
+          "id": "sec31",
+          "title": "Conflict of interest"
+        },
+        {
+          "id": "sec32",
+          "title": "Data availability"
+        },
+        {
+          "id": "sec33",
+          "title": "Author contributions"
+        },
+        {
+          "id": "sec34",
+          "title": "Ethics"
+        },
+        {
+          "id": "ref1",
+          "title": "References"
+        },
+        {
+          "id": "_ad93_",
+          "title": "Associated Data"
+        },
+        {
+          "id": "_adsm93_",
+          "title": "Supplementary Materials"
+        },
+        {
+          "id": "_adda93_",
+          "title": "Data Availability Statement"
+        }
+      ],
+      "supplementFiles": [
+        "gnaf281_supplementary_data.zip",
+        "gnaf281_supplementary_data.zip"
+      ]
+    },
+    {
+      "id": "c15-mit-espanhol2023-suplementos-zip",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mit-espanhol2023-suplementos-zip.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9979537/supplementaryFiles",
+      "bytes": 217599,
+      "sha256": "af0fc58d4b5afb96d8d517481c19845c09794a10031c049f6723eee5c3c9b4da",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-mbi-hibrido2025-suplementos-zip",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-suplementos-zip.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12714390/supplementaryFiles",
+      "bytes": 311779,
+      "sha256": "b683df88b84e726dd9ea9d3f8b5ecd0b78584acd1cb8415a1ff6a185d1440a83",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-mbi-hibrido2025-registro-json",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2025-registro-json.evidencia.json",
+      "status": 200,
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05242614",
+      "bytes": 16664,
+      "sha256": "37ef372a0b3108b058546e08400b5b3d635046608a301f037207f1115144344c",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-mbi-hibrido2022-core-json",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-core-json.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1186/s40359-022-00876-8&format=json&resultType=core",
+      "bytes": 7833,
+      "sha256": "d43d58bafdd5d9e5baf9a9e4ae1a799c6b6c6e22cf36f7c2f93c999004166f15",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-mbi-hibrido2022-xml",
+      "record": "2026-10-11/n15c-curriculos-adicionais/c15-mbi-hibrido2022-xml.evidencia.json",
+      "status": 200,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9295093/fullTextXML",
+      "bytes": 111723,
+      "sha256": "20ac2f460aa9b10c9ed5dd7b0c15f4596d7135ebcf60da91756f979f405073e1",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": null,
+          "title": "Background"
+        },
+        {
+          "id": null,
+          "title": "Methods"
+        },
+        {
+          "id": null,
+          "title": "Discussion"
+        },
+        {
+          "id": "Sec1",
+          "title": "Background"
+        },
+        {
+          "id": "Sec2",
+          "title": "Rationale for using mindfulness and the conceptual framework"
+        },
+        {
+          "id": "Sec3",
+          "title": "Existing challenges of applying the original MBI on family caregivers of PWD"
+        },
+        {
+          "id": "Sec4",
+          "title": "The rationale for using a simplified version of mindfulness programme"
+        },
+        {
+          "id": "Sec5",
+          "title": "The rationale for using a hybrid programme of face-to-face and online delivery"
+        },
+        {
+          "id": "Sec6",
+          "title": "Methods"
+        },
+        {
+          "id": "Sec7",
+          "title": "Objectives"
+        },
+        {
+          "id": "Sec8",
+          "title": "Design"
+        },
+        {
+          "id": "Sec9",
+          "title": "Subjects and settings"
+        },
+        {
+          "id": "Sec10",
+          "title": "Sample size"
+        },
+        {
+          "id": "Sec11",
+          "title": "Interventions"
+        },
+        {
+          "id": "Sec12",
+          "title": "Intervention fidelity control"
+        },
+        {
+          "id": "Sec13",
+          "title": "Control group (Education on dementia care)"
+        },
+        {
+          "id": "Sec14",
+          "title": "Instruments and measures"
+        },
+        {
+          "id": "Sec15",
+          "title": "Primary outcomes measurement"
+        },
+        {
+          "id": "Sec16",
+          "title": "Caregiving stress"
+        },
+        {
+          "id": "Sec17",
+          "title": "Secondary outcome measurements"
+        },
+        {
+          "id": "Sec18",
+          "title": "Depression"
+        },
+        {
+          "id": "Sec19",
+          "title": "Positive aspect of caregiving"
+        },
+        {
+          "id": "Sec20",
+          "title": "Caregiving burden"
+        },
+        {
+          "id": "Sec21",
+          "title": "Dyadic relationship"
+        },
+        {
+          "id": "Sec22",
+          "title": "Neuropsychiatric symptoms of patients and corresponding distress"
+        },
+        {
+          "id": "Sec23",
+          "title": "Heart rate variability"
+        },
+        {
+          "id": "Sec24",
+          "title": "Level of mindfulness"
+        },
+        {
+          "id": "Sec25",
+          "title": "Socio-demographic data"
+        },
+        {
+          "id": "Sec26",
+          "title": "Qualitative arm"
+        },
+        {
+          "id": "Sec27",
+          "title": "Study procedure"
+        },
+        {
+          "id": "Sec28",
+          "title": "Random allocation and allocation concealment"
+        },
+        {
+          "id": "Sec29",
+          "title": "Ethical considerations"
+        },
+        {
+          "id": "Sec30",
+          "title": "Data analysis"
+        },
+        {
+          "id": "Sec31",
+          "title": "Discussion"
+        }
+      ],
+      "supplementFiles": []
+    }
+  ],
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-transformers-package-metadata",
+  "url": "https://pypi.org/pypi/transformers/4.57.6/json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:04:07.090511+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar existência, requisitos Python e licença de versão 4.x candidata para reproduzir ViT legado sem CUDA; não instalar.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pypi.org/pypi/transformers/4.57.6/json",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 52973,
+  "bodyFile": "../raw/n39-transformers-package-metadata.json",
+  "sha256": "ab8151a623b7c76670fb8d0379f5cca957621e5ad6fb721f1b63f5ac4546f078"
+}

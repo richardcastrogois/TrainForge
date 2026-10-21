@@ -1,0 +1,13 @@
+# N40 — quantidade por fotografia
+
+**Análise de viabilidade e contrato concluída; estimativa automática de gramas não validada.** [Contrato](contrato-quantidade.json), [fontes/limites](fontes-e-limites.json), [auditoria](auditoria-fechamento.json) e [17casos sintéticos](verificacoes-quantidade.json). Não houve nova instalação; o ambiente N39 já está removido.
+
+O [Nutrition5k](https://arxiv.org/html/2103.03375v1) mede massa incremental com balança e usa RGB/depth, com splits por prato. Tabela3 registra MAE massa40,4g/18,8%para regressão2D; percentual normalizado pela média da amostra não é erro de cada refeição. A variante por grama usa massa verdadeira ao converter resultados; não demonstra estimativa de porção por foto. Tabela4 e parágrafo divergem no percentual image-only; preservamos a discrepância. O pré-treinoJFT e o dataset licenciado não equivalem a pesos públicos prontos. Não treinamos nem executamos estimador visual de massa.
+
+[GoCARB2018](https://doi.org/10.3390/nu10060741), de Vasiloglou e colaboradores, descreve duas vistas e cartão com dimensões conhecidas; aplicação a CHO/T1D não vira orientação clínica. [goFOOD2023](https://doi.org/10.3390/nu15173835), de Papathanail, AbdurRahman e colaboradores, também usa referência; fallback de porção típica não mede esta foto. Métodos vistos em excertos primários; editor429/PMCchallenge impediram corpo integral e não foram contornados. Crossref conferiu autoria eCCBYdoartigo, não concedeu software/pesos/backend. Não houve conta ou teste destes serviços.
+
+O caminho atualmente fundamentado é foto opcional + alimento confirmado + quantidade manual/medida com origem, ou desconhecida. Isso não será apresentado como estimativa visual automática. N03 foi reutilizada: factors específicos, base comestível, preparo e tara; specific gravity não é densidade medida e não se assume1mL=1g.
+
+Servido e consumido são campos diferentes. Subtrair restos só na mesma pessoa/base/alimento e sem transferências/adicionais desconhecidos. Falta de resto não significa zero. Prato compartilhado não fornece fração individual. Foram conferidos17casos sintéticos de contrato/aritmética, incluindoMAEvsMAPE e ambiguidade geométrica; não testes de pesagem, percepção, modelo ou clínica.
+
+Os quatro contextos preservam casa, academia, praça e cuidador para si, com autor/assistido separados e confirmação acessível ainda a implementar/testar. Nenhuma meta nutricional é inferida por idade. A análise fecha os requisitos e a decisão de disponibilidade; **a capacidade automática continua pendente**, sem contagem como funcionalidade entregue. App/Figma/banco/publicação permanecem inalterados.

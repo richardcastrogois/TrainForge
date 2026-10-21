@@ -1,0 +1,23 @@
+{
+  "id": "a10-espen-geriatria",
+  "url": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T15:09:35.630300+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Conferir contexto geriatrico de objetivos de peso/nutricao/atividade; referencia cientifica, nao importar algoritmo, prescricao, tabelas ou ativos protegidos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 52,
+  "bodyFile": "../raw/a10-espen-geriatria.pdf",
+  "sha256": "889403e5cfbb7981f7a26aced0d7492524e5397d6996f7fccd67562d2a4a71a3",
+  "error": "HTTP 403"
+}

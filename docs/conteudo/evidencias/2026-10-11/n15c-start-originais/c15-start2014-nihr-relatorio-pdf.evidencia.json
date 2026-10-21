@@ -1,0 +1,24 @@
+{
+  "id": "c15-start2014-nihr-relatorio-pdf",
+  "url": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:42:59.881160+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Relatorio completo START HTA18(61), DOI10.3310/hta18610. Conferir versao, instrucao e localizadores de anexos, autoria, resultados24meses e direitos proprios. Nao pressupor que o manual esteja embutido.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 30102858,
+  "bodyFile": "../raw/c15-start2014-nihr-relatorio-pdf.pdf",
+  "sha256": "0fd474c41671e4d26e89f25335a44ab7a80f9c4035dfd91deea2eb9ce0158e2b",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "n15m-talaat-cv",
+  "url": "https://nursing.helwan.edu.eg/images/Cv%20adult/dr%20taghreed%20pdf.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:39:09.426010+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Qualificação profissional primária da coautora do guia Benson, não inferida só da afiliação.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

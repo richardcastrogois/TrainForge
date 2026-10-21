@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "niche": "N34",
+  "researchClosed": true,
+  "scope": "Mapa documental de seleção/progressão,12dimensões,12lotes e14casos discutidos. Não implementação ou triagem clínica.",
+  "selectedContent": "mapa-selecao-progressao.json",
+  "dependencies": "dependencias-locais.json",
+  "criteria": [
+    {
+      "criterion": "Público/ambiente/equipamento/experiência/apoios/elegibilidade independentes",
+      "met": true,
+      "evidence": "Campos e regras separados; exemplos de máquina disponível sem capacidade/indicação ou serviço clínico."
+    },
+    {
+      "criterion": "Quatro contextos, cuidador próprio e acompanhamento",
+      "met": true,
+      "evidence": "Matriz específica e casosB/E/F/G/H, sem equivalência de dados ou assistência."
+    },
+    {
+      "criterion": "Progressão/interrupção fiel à fonte",
+      "met": true,
+      "evidence": "Doze lotes distinguem tabela, incremento qualitativo, decisão profissional, dose fixa, ausências e conteúdo educativo. Sem regra universal ou compensação inventada."
+    },
+    {
+      "criterion": "Autoria/direitos/procedência",
+      "met": true,
+      "evidence": "Dependências com hash local para os12lotes, fonte humana preservada emcadaum; proposta editorial não atribuída aos autores."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Critérios clínicos/finalidade e direitos/ativos/apoio a revisar por oferta",
+    "Implementação, compreensão e validação de fluxos reais não executadas nem autorizadas nesta etapa"
+  ],
+  "nextNiche": "N35",
+  "releaseApproved": false,
+  "appImplemented": false
+}

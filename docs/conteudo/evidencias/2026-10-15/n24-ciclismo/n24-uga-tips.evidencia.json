@@ -1,0 +1,24 @@
+{
+  "id": "n24-uga-tips",
+  "url": "https://open.online.uga.edu/cycling/chapter/tipstricks/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T11:04:10.689307+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Orientacoes escritas acessiveis; nao recolher paginas que ja retornaram 403 na web",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://open.online.uga.edu/cycling/chapter/tipstricks/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 919,
+  "bodyFile": "../raw/n24-uga-tips.html",
+  "sha256": "b920b9c087cc5ff7704fb4182f27e95ebf7fceb49a8338a853d090b172676cf1",
+  "error": "HTTP 403"
+}

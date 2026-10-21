@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-05",
+  "scope": "ComplementosN01-N20: estado utilizavel para analise de integracao, nao dados de producao ou encerramento presumido.",
+  "queue": "2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json",
+  "n21Allowed": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "selectedResearchPackage": {
+    "id": "ES2019-DOM-01",
+    "file": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+    "sha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee",
+    "instructionRecords": 5,
+    "scope": "Idosos saudaveis65-80 elegiveis na fonte,funcional em casa. N15-I/N17-I fechados para pesquisa desse lote, nao aprovacao universal ou oferta propria de cuidador.",
+    "releaseApproved": false
+  },
+  "pendingResearch": [
+    {
+      "niche": "N15-C",
+      "spec": "2026-10-04/n15c-retomada/pesquisa-complemento.json",
+      "unmetCriteria": ["C15-G03", "C15-G04"],
+      "missing": "Selecionar programa proprio domiciliar de cuidador com instrucoes/dose/progressao e entrega compativel, ativos essenciais comercialmente reutilizaveis gratuitos.",
+      "receivedNotSelected": "CartilhaELA2021 no Appendix B da tese2023 efetivamente recebida: CC BY-ND4, ambiguidades de serie/dose/gesto e profissionais. CareFit/yoga/Qigong/duplas preservados com seus limites.",
+      "doNotImport": "Nao adaptar/traduzir/recortar cartilhaND em cartoes nem remover profissionais, associar exercicio do assistido ao cuidador ou reivindicar eficacia geral."
+    },
+    {
+      "niche": "N18-I",
+      "spec": "2026-10-04/n18i-academia/pesquisa-complemento.json",
+      "unmetCriteria": ["I18-G03"],
+      "missing": "Conjunto operacional coerente e licenciavel do programa de academia selecionado. Direito do artigo nao basta para manual/figuras/videos externos.",
+      "receivedNotSelected": "Walker/MPTP e outros ciclos. AGUEDA A5real47paginas com fotos/instrucoes, mas faltas/divergencias e direitos externos nao demonstrados. IST-CIEXespecifico clinico, nao academia generica.",
+      "doNotImport": "Nao misturar descricao de casa com regulagem de maquina, bandas com aparelhos de praca ou trocar movimentos conflitantes por conhecimento proprio."
+    },
+    {
+      "niche": "N19-I",
+      "spec": "2026-10-04/n19i-percursos/pesquisa-complemento.json",
+      "unmetCriteria": ["I19-G03"],
+      "missing": "Selecionar percurso completo cujas instrucoes/semantica/direitos correspondam ao mesmo ciclo e publico.",
+      "receivedNotSelected": "Comparacao de modos/ciclos recebida. Reuso explicito de guias/analisesN18, sem duplicar chamadas ou misturar variantes/fases.",
+      "doNotImport": "Nao combinar falha/semfalha,potencia,isometria,saltos ou cointervencoes entre programas para produzir novo plano."
+    },
+    {
+      "niche": "N20-I",
+      "spec": "2026-10-04/n20i-instrucao/pesquisa-complemento.json",
+      "unmetCriteria": ["I20-G02", "I20-G03"],
+      "missing": "Instrucao completa e semanticamente conferida de postura/ajuste/apoios/execucao, ativos correspondentes com caminho comercial gratuito demonstrado.",
+      "receivedNotSelected": "AuditoriasAGUEDA/IST/Pagan/PASSWORD/MoveStrong/etc por figura,edicao e equipamento. Zero novos mapeamentos ou ativos de academia aprovados.",
+      "doNotImport": "Nao usar dinamometro/testes como tutorial de treino, foto sem direito demonstrado ou correspondencia lexical como equivalencia tecnica."
+    }
+  ],
+  "independentPublicationGates": [
+    "Revisao clinica/editorial atual e pt-PT",
+    "Direitos do lote final, autoria/creditos/terceiros e personalidade",
+    "Acessibilidade/compreensao com pessoas reais",
+    "Oferta legitima de supervisao e equipamento quando exigidos",
+    "Implementacao e testes do APK"
+  ],
+  "next": "N18-I ativo; todas as quatro pesquisas acima permanecem parciais. Perguntas sobre programa geral para cuidador e fechamento negativo foram apresentadas, sem resposta presumida. N21 nao iniciada."
+}

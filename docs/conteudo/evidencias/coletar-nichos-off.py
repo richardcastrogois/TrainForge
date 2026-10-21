@@ -1,4 +1,4 @@
-"""Coleta GET limitada por manifesto; preserva sucessos/falhas, sem retries.
+"""Coleta GET por manifesto; preserva sucessos/falhas, sem retries.
 
 Uso: python coletar-nichos-off.py 2026-09-28/n04-fechamento/requisicoes.json
 Corpos ficam no raw local ignorado; o manifesto deve usar apenas fontes publicas.
@@ -15,6 +15,46 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
 UA = 'TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)'
+DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+REACT_SUPPLEMENT = 'https://pmc.ncbi.nlm.nih.gov/articles/instance/10420051/bin/Table_1.DOCX'
+
+
+def byte_limit(item, accept):
+    # User authorization of 2026-10-05 applies to research PDFs, not archives.
+    if accept == 'application/pdf' and item.get('extension') == 'pdf':
+        return None
+    limit = item.get('maxBytes', 2 * 1024 * 1024)
+    assert type(limit) is int and limit in (2097152, 16777216), 'Unsupported byte limit'
+    if limit > 2097152:
+        assert accept == DOCX and item.get('extension') == 'docx', 'Larger limit only for authorized REACT DOCX'
+        assert item['url'] == REACT_SUPPLEMENT, 'DOCX authorization is source-specific'
+    return limit
+
+
+def store_body(response, target, limit):
+    """Stream to disk without loading an unlimited PDF into memory."""
+    if target.exists():
+        raise ValueError('Body filename already exists: refusing overwrite')
+    partial = target.with_name(target.name + '.part')
+    if partial.exists():
+        raise ValueError('Partial filename already exists: refusing overwrite')
+    digest, size = hashlib.sha256(), 0
+    try:
+        with partial.open('xb') as output:
+            while True:
+                chunk = response.read(1024 * 1024)
+                if not chunk:
+                    break
+                size += len(chunk)
+                if limit is not None and size > limit:
+                    raise ValueError(f'Response exceeds {limit // 1048576} MiB: body not stored, no retry')
+                digest.update(chunk)
+                output.write(chunk)
+        partial.rename(target)
+    except (OSError, ValueError):
+        partial.unlink(missing_ok=True)
+        raise
+    return size, digest.hexdigest()
 
 
 def collect(plan_path):
@@ -35,12 +75,16 @@ def collect(plan_path):
             print(json.dumps({'id': ident, 'cached': True, 'status': prior['status']}), flush=True)
             continue
         accept = item.get('accept', 'application/json,text/html,text/plain')
-        assert accept in ('application/json,text/html,text/plain', 'application/pdf'), 'Unsupported Accept override'
+        assert accept in ('application/json,text/html,text/plain', 'application/pdf', 'application/xml', 'application/zip', DOCX), 'Unsupported Accept override'
+        max_bytes = byte_limit(item, accept)
+        limit_description = 'no byte ceiling for research PDF' if max_bytes is None else f'max {max_bytes // 1048576} MiB'
         headers = {'User-Agent': UA, 'Accept': accept, 'Accept-Encoding': 'identity'}
         result = {'id': ident, 'url': url, 'method': 'GET',
                   'collectedAtUtc': datetime.now(timezone.utc).isoformat(),
                   'requestHeaders': headers, 'status': None, 'use': 'research_only',
-                  'purpose': item['purpose'], 'client': 'urllib; default TLS; timeout 25s; max 2 MiB; no retries'}
+                  'purpose': item['purpose'], 'maxBytes': max_bytes,
+                  'sizePolicy': 'research_pdf_unlimited_2026-10-05' if max_bytes is None else 'bounded_non_pdf',
+                  'client': f'urllib; default TLS; timeout 25s per blocking operation; streaming; {limit_description}; no retries'}
         response = None
         try:
             try:
@@ -51,15 +95,21 @@ def collect(plan_path):
             result['resolvedUrl'] = response.geturl()
             result['contentType'] = response.headers.get('Content-Type')
             result['retryAfter'] = response.headers.get('Retry-After')
-            body = response.read(2 * 1024 * 1024 + 1)
-            if len(body) > 2 * 1024 * 1024:
-                raise ValueError('Response exceeds 2 MiB: body not stored, no retry')
             target = raw / (ident + '.' + item.get('extension', 'json'))
-            if target.exists():
-                raise ValueError('Body filename already exists: refusing overwrite')
-            target.write_bytes(body)
-            result.update(bytes=len(body), bodyFile='../raw/' + target.name,
-                          sha256=hashlib.sha256(body).hexdigest())
+            size, digest = store_body(response, target, max_bytes)
+            result.update(bytes=size, bodyFile='../raw/' + target.name, sha256=digest)
+            if accept in ('application/pdf', DOCX):
+                with target.open('rb') as saved:
+                    prefix = saved.read(512)
+                matches = b'%PDF-' in prefix if accept == 'application/pdf' else prefix.startswith(b'PK\x03\x04')
+                result['bodyFormatMatchesRequest'] = matches
+                if result['status'] == 200 and not matches:
+                    result['error'] = 'HTTP 200 body is not the requested binary format; retained for audit, no retry'
+            if result['status'] == 200 and 'expectedBytes' in item:
+                result['expectedBytes'] = item['expectedBytes']
+                result['expectedBytesMatch'] = size == item['expectedBytes']
+                if not result['expectedBytesMatch']:
+                    result['error'] = 'Body size differs from known metadata; retained for audit, not approved'
             if result['status'] != 200:
                 result['error'] = 'HTTP ' + str(result['status'])
         except (OSError, ValueError) as error:

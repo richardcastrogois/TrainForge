@@ -1,0 +1,301 @@
+{
+  "niche": "N13",
+  "date": "2026-10-03",
+  "status": "concluido_para_pesquisa",
+  "plan": {
+    "id": "P13-01",
+    "sourceId": "NU31",
+    "title": "A Week With the DASH Eating Plan",
+    "sourceUrl": "https://www.nhlbi.nih.gov/sites/default/files/publications/WeekOnDASH.pdf",
+    "sha256": "9853d66dbaae3a105be7f25985b66dfd101ff84a193c147e2eda344e97e8bf3b",
+    "publisher": "National Heart, Lung, and Blood Institute",
+    "publicationDate": "2019-04",
+    "pdfModificationDate": "D:20230516111014-04'00'",
+    "clinicalReviewDate": null,
+    "audience": "publico geral e pacientes; exemplo de alimentacao cardiovascular DASH",
+    "sourceEnergyBasisKcal": 2000,
+    "days": [
+      {
+        "day": 1,
+        "pdfPage": 2,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 6,
+            "sodiumMgSum": 508
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 8,
+            "sodiumMgSum": 905
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 12,
+            "sodiumMgSum": 597
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 3,
+            "sodiumMgSum": 90
+          }
+        ],
+        "declaredEnergyKcal": 2062,
+        "declaredProteinG": 114,
+        "declaredSodiumMg": 2101,
+        "printedRowSodiumMgSum": 2100,
+        "sodiumDifferenceMg": -1,
+        "individualTarget": false
+      },
+      {
+        "day": 2,
+        "pdfPage": 3,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 5,
+            "sodiumMgSum": 327
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 8,
+            "sodiumMgSum": 717
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 9,
+            "sodiumMgSum": 818
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 3,
+            "sodiumMgSum": 176
+          }
+        ],
+        "declaredEnergyKcal": 2027,
+        "declaredProteinG": 99,
+        "declaredSodiumMg": 2035,
+        "printedRowSodiumMgSum": 2038,
+        "sodiumDifferenceMg": 3,
+        "individualTarget": false
+      },
+      {
+        "day": 3,
+        "pdfPage": 4,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 6,
+            "sodiumMgSum": 509
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 8,
+            "sodiumMgSum": 790
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 8,
+            "sodiumMgSum": 405
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 4,
+            "sodiumMgSum": 410
+          }
+        ],
+        "declaredEnergyKcal": 1997,
+        "declaredProteinG": 103,
+        "declaredSodiumMg": 2114,
+        "printedRowSodiumMgSum": 2114,
+        "sodiumDifferenceMg": 0,
+        "individualTarget": false
+      },
+      {
+        "day": 4,
+        "pdfPage": 5,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 5,
+            "sodiumMgSum": 352
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 7,
+            "sodiumMgSum": 1238
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 5,
+            "sodiumMgSum": 589
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 4,
+            "sodiumMgSum": 131
+          }
+        ],
+        "declaredEnergyKcal": 2024,
+        "declaredProteinG": 110,
+        "declaredSodiumMg": 2312,
+        "printedRowSodiumMgSum": 2310,
+        "sodiumDifferenceMg": -2,
+        "individualTarget": false
+      },
+      {
+        "day": 5,
+        "pdfPage": 6,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 6,
+            "sodiumMgSum": 739
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 9,
+            "sodiumMgSum": 921
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 9,
+            "sodiumMgSum": 541
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 2,
+            "sodiumMgSum": 173
+          }
+        ],
+        "declaredEnergyKcal": 1976,
+        "declaredProteinG": 111,
+        "declaredSodiumMg": 2373,
+        "printedRowSodiumMgSum": 2374,
+        "sodiumDifferenceMg": 1,
+        "individualTarget": false
+      },
+      {
+        "day": 6,
+        "pdfPage": 7,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 5,
+            "sodiumMgSum": 280
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 8,
+            "sodiumMgSum": 801
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 9,
+            "sodiumMgSum": 478
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 3,
+            "sodiumMgSum": 111
+          }
+        ],
+        "declaredEnergyKcal": 1939,
+        "declaredProteinG": 105,
+        "declaredSodiumMg": 1671,
+        "printedRowSodiumMgSum": 1670,
+        "sodiumDifferenceMg": -1,
+        "individualTarget": false
+      },
+      {
+        "day": 7,
+        "pdfPage": 8,
+        "mealGroups": [
+          {
+            "meal": "breakfast",
+            "sodiumRowCount": 4,
+            "sodiumMgSum": 554
+          },
+          {
+            "meal": "lunch",
+            "sodiumRowCount": 7,
+            "sodiumMgSum": 550
+          },
+          {
+            "meal": "dinner",
+            "sodiumRowCount": 9,
+            "sodiumMgSum": 797
+          },
+          {
+            "meal": "snacks",
+            "sodiumRowCount": 3,
+            "sodiumMgSum": 169
+          }
+        ],
+        "declaredEnergyKcal": 1993,
+        "declaredProteinG": 93,
+        "declaredSodiumMg": 2069,
+        "printedRowSodiumMgSum": 2070,
+        "sodiumDifferenceMg": 1,
+        "individualTarget": false
+      }
+    ],
+    "rightsEvidence": "../../2026-09-29/n08-receitas/n08-nhlbi-direitos.evidencia.json",
+    "rightsDecision": "condicional: publicacao formatada sem alteracoes; traducao e uso comercial com publicidade nao demonstrados",
+    "releaseApproved": false
+  },
+  "findings": [
+    {
+      "type": "printed_rows_differ_from_declared_total",
+      "days": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "differencesMg": [
+        -1,
+        3,
+        0,
+        -2,
+        1,
+        -1,
+        1
+      ],
+      "cause": "nao demonstrada; arredondamento e uma possibilidade, nao confirmado",
+      "correctionApplied": false
+    },
+    {
+      "type": "missing_quantity",
+      "day": 4,
+      "meal": "dinner",
+      "item": "chicken and Spanish rice",
+      "quantity": null
+    },
+    {
+      "type": "source_total_above_heading",
+      "days": [
+        4,
+        5
+      ],
+      "headingSodiumMg": 2300,
+      "observedSodiumMg": [
+        2312,
+        2373
+      ],
+      "correctionApplied": false
+    },
+    {
+      "type": "portion_not_mass",
+      "finding": "Cup, tsp, Tbsp, oz, unidade e fracao de receita nao fornecem massa universal; depende de N03."
+    }
+  ],
+  "limits": [
+    "Texto integral extraido apenas no raw local",
+    "Receitas e equivalencias de produtos ainda precisam de vinculo",
+    "Sem revisao profissional pt-PT ou meta individual",
+    "Nao escalar porcoes linearmente para prescrever dieta"
+  ]
+}

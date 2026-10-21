@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-13",
+  "scope":"Primeiro GET de guia primario NHS de fisioterapia para cotejo tecnico dirigido de pull-apartCG04 comSI2. Nao nova familia de treino ou evidencia de resultado para cuidadores; nao importar dose/holds/cargas do guia, nao copiar figuras/direitos presumidos. PDF sem teto conforme autorizacao do autor, leitura sem execucao.",
+  "requests":[
+    {"id":"n15dir-cg04-nhs-ombro-pdf","url":"https://bridgewater.nhs.uk/wp-content/uploads/2020/12/Shoulder-strengthening-exercises-Patient-advice-sheet.pdf","accept":"application/pdf","extension":"pdf","purpose":"Guia primario Musculoskeletal Physiotherapy OCATS, particularmenteBandedPullApart. Cotejar configuracao/entrada/retorno comSI2, identificar divergencias3s/6-10reps4sets/direitos e itens realmente compativeis. Nao transferir eficacia/dose ou declarar guiaReViEEW integral."}
+  ]
+}

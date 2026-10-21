@@ -1,0 +1,23 @@
+{
+  "id": "c15-ufpb-metadados-2018",
+  "url": "https://repositorio.ufpb.br/jspui/handle/123456789/14210",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:25:43.246348+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Vinculo da licenca BY-ND3Brasil ao objeto2018 e arquivo integral. Primeira coleta local, sem presumir que licencie2020 ou terceiros.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufpb.br/jspui/handle/123456789/14210",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 50177,
+  "bodyFile": "../raw/c15-ufpb-metadados-2018.html",
+  "sha256": "619b61a5a354c622e51873e96b3ff591ef8f6fc3463b11c2040ad63c4f032869"
+}

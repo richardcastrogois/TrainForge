@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "niche": "N26",
+  "criterionSource": "../../2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "pendente",
+      "reason": "Cadeira não homologa capacidade/condição. A seleção sentada pode ser materialmente viável se assento, apoios, espaço e orientação compatíveis; não validada para idosos frágeis, aparelhos de praça ou cuidador enquanto assiste outra pessoa."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "status": "pendente",
+      "reason": "Cadeira não homologa capacidade/condição. A seleção sentada pode ser materialmente viável se assento, apoios, espaço e orientação compatíveis; não validada para idosos frágeis, aparelhos de praça ou cuidador enquanto assiste outra pessoa."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "pendente",
+      "reason": "Cadeira não homologa capacidade/condição. A seleção sentada pode ser materialmente viável se assento, apoios, espaço e orientação compatíveis; não validada para idosos frágeis, aparelhos de praça ou cuidador enquanto assiste outra pessoa."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "pendente",
+      "reason": "Cadeira não homologa capacidade/condição. A seleção sentada pode ser materialmente viável se assento, apoios, espaço e orientação compatíveis; não validada para idosos frágeis, aparelhos de praça ou cuidador enquanto assiste outra pessoa."
+    }
+  ],
+  "doesNotReopenN15": true,
+  "doesNotStartN21": true,
+  "releaseApproved": false
+}

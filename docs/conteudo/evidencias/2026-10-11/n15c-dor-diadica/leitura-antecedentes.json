@@ -1,0 +1,29 @@
+{
+  "niche":"N15-C","date":"2026-10-11","researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "correctedStudy2023":{
+    "sourceId":"PR121","originalDoi":"10.21926/obm.neurobiol.2303183","correctionDoi":"10.21926/obm.neurobiol.2401213",
+    "originalReceipt":"c15-dpm2023-antecedente-html.evidencia.json","correctionReceipt":"c15-dpm2024-correcao-html.evidencia.json",
+    "published":"2023-09-15","corrected":"2024-03-12","originalHtmlStillShowsSupersededTables":true,
+    "oldTablesEligibleForApk":false,"correctionDeclaredByAuthorsNotAgent":true,
+    "correctedSamplePerArm":30,"oldTableSamplePerArm":75,"correctedStudyDyads":60,
+    "caregiverBurden":{"locator":"Correction/With/Table7, not Replace/Table7","baselineMeans":[4.28,4.81],"week8Means":[3.36,4.82],"week16Means":[2.20,5.11],"betweenWeek8P":0.207,"betweenFinalP":0.011,"withinInterventionFinalP":0.001,"rangePrinted":[0,16],"subrangesSum":18,"subrangeConflictNotRepaired":true},
+    "calendar":{"oldFinalWeek":12,"correctedFinalWeek":16,"articleDataCollection":"August-December2022","correctionReplacesAbstractAndTables4To7":true},
+    "clinicalInference":"Sinal clinico do pacote no cuidador, nao eficacia isolada de cada gesto. Comparacao intragrupo nao substitui entregrupos. Nao usar26.4/13.3/P.034 da tabela substituida.",
+    "independenceFrom2026Confirmed":false,"relationshipTo2026":"Mesma equipe/intervencao; tabelas substituidas compartilhavam valores com artigo2026. Correcao declara erro de insercao, nao identidade/independencia entre coortes. Contar como publicacao corrigida, nao automaticamente segunda replicacao independente dePR120.",
+    "delivery":"4presenciais/4WhatsApp; ensinamento/demonstracao/retorno/30min3vezessemana em dupla. Nomes de movimentos, nao manual de passos recebido.",
+    "safetyPublished":"Roupa/calcado confortaveis, espaco livre de obstaculos, boa luz e demonstracao verificada pela equipe. Nao minimumarea/altura/dose porgesto ou algoritmo de cansaco.",
+    "exerciseBookReceived":false,"professionalProgramRole":"CoautoraNg da reabilitacao, fisioterapeuta registrada conforme recibo institucional compartilhado; autoria tecnica de cada roteiro nao confirmada nem exigida como novo ensaio porgesto.",
+    "rights":"Original/correcao declaramCCBY, fatos/metodos separados de expressao protegida; livro/video externo semgrant recebido.",
+    "locators":["Original/Methods/Table1","Original/DataCollection","Correction/With/Abstract","Correction/With/Tables4-7","Correction/final explanation"],
+    "decision":"Condicional, conservar edicoes. Nao excluir pelo campus nem liberar por tabela corrigida sem operacional completo."
+  },
+  "pilotRegistry":{
+    "sourceId":"PR119","receipt":"c15-dpmp2020-registro-json.evidencia.json","nctId":"NCT04106271","hasResults":false,"status":"UNKNOWN","lastKnownStatus":"RECRUITING","lastPostedUpdate":"2020-07-29",
+    "firstSubmitted":"2019-09-25","firstPosted":"2019-09-27","estimatedPersons":120,"summaryDyads":60,
+    "plannedDelivery":"4encontros semanais60min(10video/discussao+20educacao+20exercicio+10conclusao),seguimento4semanas; livro externo",
+    "publishedPilotDeliveryNotOverwritten":true,"conflict":"Registro4semanas/intervencao, artigo8semanas4presenciais4casa; desfechos planejados paraambos nao substituem os efetivamente publicados paraidosos. Sem resultados/documentooperacional no retorno.",
+    "registryNotMergedWithNct05056623":true
+  },
+  "failedWebLead":{"url":"https://pain-management-program.mailchimpsites.com/","source":"Original2023/introduction link","webResult":"InternalError, sem conteudo util","collectorRequestMade":false,"localBodyOrHashClaimed":false,"retryOrBypassPerformed":false,"manualGloballyAbsentProven":false},
+  "recoveryForApk":"PR121 -> original+correcao+datas -> respectivos recibos/body/SHA256 -> With/Table7 -> achado corrigido/limites; PR119 -> registro separado. Tabela antiga nao exportavel como resultado atual. Nenhum treino importado."
+}

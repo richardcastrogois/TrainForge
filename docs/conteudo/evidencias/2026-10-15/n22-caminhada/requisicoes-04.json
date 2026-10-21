@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "id": "n22-ghc-pdf",
+      "url": "https://oer.galileo.usg.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=health-textbooks&type=additional",
+      "purpose": "PDF publico indicado pelo repositorio; instrucao/dose e ressalva NC",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-paceup-handbook",
+      "url": "https://www.sgul.ac.uk/about/our-institutes/population-health/projects/pace-up/docs/patient-handbook-V1.5-final.pdf",
+      "purpose": "Manual original PACE-UP12semanas para adultos45-75, dose/instrucao e direitos",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-uga-professional",
+      "url": "https://coe.uga.edu/news/2016-04-senior-lecturer-receives-2016-creative-teaching-award/",
+      "purpose": "Responsavel institucional PE/recursosabertos Ilse Mason; nao autora pessoal presumida de cada trecho",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-mobileclip-models-license",
+  "url": "https://raw.githubusercontent.com/apple/ml-mobileclip/main/LICENSE_MODELS",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:04:36.399258+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Arquivo primário explicitamente apontado pela licença MIT do software: conferir concessões e restrições específicas dos pesos, sem presumir proibição comercial só pelo nome research. Não obter modelos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/apple/ml-mobileclip/main/LICENSE_MODELS",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5816,
+  "bodyFile": "../raw/n39-mobileclip-models-license.txt",
+  "sha256": "30c59d255d2b4075ba11b81ce5aa0109c28d28138d66d52f7f5d8cbba814df8b"
+}

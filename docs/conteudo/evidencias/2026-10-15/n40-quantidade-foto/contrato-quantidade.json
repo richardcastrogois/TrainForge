@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-15",
+  "niche": "N40",
+  "researchClosed": true,
+  "scope": "Análise de viabilidade, requisitos e contrato de registro por foto com quantidade confirmada; nenhum estimador visual automático pronto validado.",
+  "photoAloneProvidesMeasuredMass": false,
+  "selectedPathNow": "Foto como evidência opcional + alimento confirmado N39 + quantidade manual/medida proveniente de N03; desconhecido se ausente. Não se apresenta esse caminho como estimativa visual automática.",
+  "recordFields": [
+    "mealPersonId",
+    "reporterPersonId",
+    "foodIdAndPreparation",
+    "servedAmountOrUnknown",
+    "remainingAmountOrUnknown",
+    "consumedAmountOrUnknown",
+    "unit",
+    "method",
+    "basisEdibleOrGross",
+    "tareIfWeighed",
+    "confirmedBy",
+    "sourceAndVersion",
+    "uncertaintyIfSupported"
+  ],
+  "methods": [
+    "weighed",
+    "declared_label_with_amount_confirmed",
+    "household_measure_with_specific_factor",
+    "manual_estimate_explicit",
+    "visual_model_candidate_not_validated",
+    "unknown"
+  ],
+  "rules": [
+    "Classificação alimentar não fornece massa. Área em pixels não se transforma diretamente em gramas.",
+    "Volume exige escala/geometria e densidade apropriada ao alimento/preparo; não adotar1mL=1g ou specific gravity CoFID como densidade medida sem referência.",
+    "Servido não é consumido. Só subtrair restos na mesma base comestível, mesma pessoa/alimento, sem adição/transferência/descarte desconhecido.",
+    "Resto ausente não é zero. Restante maior que servido é inconsistência, não consumo0obtido por clamp.",
+    "Prato compartilhado, refeição de terceiros e pessoa não confirmada mantêm consumo individual desconhecido.",
+    "MAE da amostra não é margem de erro individual nem intervalo clínico. Nunca usar resultado para insulina ou meta nutricional automática.",
+    "Foto sem massa suficiente permanece útil como memória do relato; UI não deve exigir falsa precisão. Confirmação acessível ainda precisa teste com pessoas."
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "aplicavel_com_limites",
+      "finding": "Foto opcional anexa ao registro; pesar/confirmar base comestível e tara se disponível. Sem balança ou referência adequada, quantidade desconhecida ou medida manual identificada; não converter colher/tigela sem fator próprio."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "aplicavel_com_limites",
+      "finding": "Embalagem/porção servida não comprova quantidade ingerida no treino. Rótulo/volume da garrafa e quantidade efetivamente bebida têm estados separados."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "aplicavel_com_limites",
+      "finding": "Piquenique/prato coletivo e itens fora da imagem impedem consumo individual automático. Manter manual/sem quantidade; sem GPS obrigatório ou fotos de terceiros."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "aplicavel_com_limites",
+      "finding": "Cuidador comendo para si é a pessoa medida. Fotografar, servir e comer são papéis diferentes; assistido tem outro registro e autor identificado, nunca fração inferida do prato compartilhado."
+    }
+  ],
+  "quantitativeResearchEvidence": {
+    "source": "PR212 / Nutrition5k / arXiv2103.03375v1",
+    "basis": "Tabela3: regressão2D direta, MAE massa40.4g/18.8% da média verdadeira; não erro de toda foto ou previsão para este usuário. Modelo por grama da mesma tabela usa massa verdadeira ao converter resultados, portanto9.5%de calorias não resolve porção.",
+    "versionCaveat": "Texto e tabela4 divergem no percentual image-only; usar tabela3 identificada, não escolher número mais favorável. Pré-treino JFT300M e pesos prontos não entregues pelo README; datasetCCBYnão concede automaticamente pesos/pretreino.",
+    "modelExecutedHere": false
+  },
+  "measurementFallbackEvidence": "../../2026-09-27/n03-porcoes/resumo-porcoes.json",
+  "tests": "verificacoes-quantidade.json",
+  "automaticMassCapabilityApproved": false,
+  "appImplemented": false,
+  "releaseApproved": false
+}

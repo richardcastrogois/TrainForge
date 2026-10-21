@@ -1,0 +1,22 @@
+{
+  "id": "i15-academia-instabilidade-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7018952/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:05:03.153388+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Triagem de instrucao original de musculacao para idosos recebida por busca publica, com supervisao e familia de estudo distintas de app aprovado.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7018952/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 144554,
+  "bodyFile": "../raw/i15-academia-instabilidade-xml.xml",
+  "sha256": "bd9013db2285036583447b93e4ff6706d0203d453f3ff429b2f9e6ae4973044e"
+}

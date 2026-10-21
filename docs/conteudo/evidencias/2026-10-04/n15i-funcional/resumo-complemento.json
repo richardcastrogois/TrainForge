@@ -1,0 +1,148 @@
+{
+  "niche": "N15-I",
+  "date": "2026-10-04",
+  "status": "concluido_para_pesquisa",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 13,
+  "verifiedDependencies": 16,
+  "proposedOperations": 2,
+  "fictionalScenarios": 4,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-04/n15i-funcional/i15-phe-domestico.evidencia.json",
+      "url": "https://www.darlington.gov.uk/media/3dylbscx/phe-active-at-home-booklet.pdf",
+      "sha256": "fe6b3bbc7a3537c0b769a542b53bcb7458507f9b8352813fb2aa5d19002501eb"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-cmo-2026.evidencia.json",
+      "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines",
+      "sha256": "5171683399a43dfb643a71bbcff0606c9475f0cf37ca073a176871e8a68d8ffa"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-sfhe-artigo.evidencia.json",
+      "url": "https://mdpi-res.com/d_attachment/healthcare/healthcare-12-00166/article_deploy/healthcare-12-00166.pdf?version=1704872103",
+      "sha256": "461b2ada305e61b720ec5cb87f658be534f40febe461a56854d5ed7dd0fd40f0"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-phe-direitos-shura.evidencia.json",
+      "url": "https://shura.shu.ac.uk/28137/",
+      "sha256": "2d4bce93ff0ce9944fa1926cdff7ea4ecf55fd30f343c26910335f02542029dd"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-hope-protocolo.evidencia.json",
+      "url": "https://link.springer.com/article/10.1186/1745-6215-12-143",
+      "sha256": "9cb60c9c824084d33541a9dc0ef99ae55903fdf53795c70534a3f1415149971b"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-hope-suplemento.evidencia.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1745-6215-12-143/MediaObjects/13063_2011_666_MOESM1_ESM.DOC",
+      "sha256": "288ae9b79838229675d673ab0dfd6a42ef6b6a52e0610d1dcebad32401017380"
+    },
+    {
+      "record": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20-PURL-gpo62941/pdf/GOVPUB-HE20-PURL-gpo62941.pdf",
+      "sha256": "2a883215b69723d8c5fa96480fe7e076880668961e3676d6d26e622c9550e56f"
+    },
+    {
+      "record": "2026-10-03/n15-casa-sem-equipamento/n15-oec-bodyweight.evidencia.json",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12692657/",
+      "sha256": "5f5c45e05220bf9fa4ce61671a985e6bf45e6ba254fc86979893b72ffb6c69d4"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2026.evidencia.json",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1755508/full",
+      "sha256": "2067ffd7fe9f305cbb02a27d55a9ca532d0cf90f16fe76ff6288d9cc59b0fc22"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/fullTextXML",
+      "sha256": "ffb23dbd1b670f00148f83f17c2dd7af4438552c1c8dabf8c43aabbbca09a084"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-2019-zip.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6794984/supplementaryFiles",
+      "sha256": "b935a55d72d2bf801ede5db207dbb7bd62ada0ea447307b64fbd9818dcb1a662"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-xml-accept.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/fullTextXML",
+      "sha256": "a521183a99ca073ba3498c52603c8e55713e118e4638428da048b528ea563e0b"
+    },
+    {
+      "record": "2026-10-04/n15i-funcional/i15-snacking-zip-accept.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12879047/supplementaryFiles",
+      "sha256": "bf84b537e8500bf5fe99c554c708c8902d9506c303768a271f58bddbb4a3c36e"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-snacking.json",
+      "artifactSha256": "25114f079763a5f6d13f4034d7fee148fdbf9397a9d45e39b8ae2d97041615d7"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-oec-retomada.json",
+      "artifactSha256": "7f14b99e322fab4432afa37428ed7fec35d78875c9140a9d85acca052c215ab6"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/triagem-programas-externos.json",
+      "artifactSha256": "853a10bbe8c475d1ac3a2ab7c00e5fd11fa8942a4a2ba0246669151bd5b00410"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/triagem-manual-recente.json",
+      "artifactSha256": "b71026b692021eea36442991b0ab71d4663cf939b5a7b0f599feaf2646b01df1"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-nia-funcional.json",
+      "artifactSha256": "32b8d8eaac1de55fb2c9bae8c3d9833068e48279c0c6ec80f698f0f3f6ad0142"
+    },
+    {
+      "file": "2026-10-04/n13i-planos/leitura-web.json",
+      "artifactSha256": "eb8a603fd32fc30b81d61c35e812787ae40cfed487c9b2fbe430102268758e2a"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-hope-hero.json",
+      "artifactSha256": "620b48b29af9dc2c111f59a1afc47f0f56a36c5a6e20d446106b605d39ec910b"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-direitos-candidatos.json",
+      "artifactSha256": "12ac74ae1531c4132484f8ab7727a556a5625fc435b2e0939ebd715ba01d1bfb"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-sfhe.json",
+      "artifactSha256": "0b26a993e9196e3f3fb0a298182c3091eb8582bb8808de9e034d2f7f0bdcda67"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/amostra-phe.json",
+      "artifactSha256": "a89505e73ccbddd148d894e22ca97b79af0d1fabcbd74c12f6ad9bbf6a4a0bf2"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/criterios-atuais.json",
+      "artifactSha256": "30140b65146af84b35e717eca9b7f79c3b7ed15e35d9633ab0524ba812f4b37d"
+    },
+    {
+      "file": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "artifactSha256": "c30f0e4bcb011c0d22819b7199a2743446be5870216464056979e002dca46a49"
+    },
+    {
+      "file": "2026-10-04/n15c-retomada/pesquisa-complemento.json",
+      "artifactSha256": "76a48337daffecfe0e589408b5d0e89a1880fe2f0da7760cc56c87887a2d9a08"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+      "artifactSha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/resumo-pacote-apk.json",
+      "artifactSha256": "1d462d1b96944fea803a86bdb5b183722eec47a812cbb7214e4d04e0b04fb547"
+    },
+    {
+      "file": "2026-10-04/n15i-funcional/leitura-snacking-suplemento-2026.json",
+      "artifactSha256": "353ea57134b0fcc25bc8dde7e6614dabb47e5b8d37d47a52cb0802688db6d0c2"
+    }
+  ],
+  "next": "Fechamento restrito do lote domestico original preservado. N18-I ativo; C15/N19-I/N20-I pendentes ate completar instrucao/direitos correspondentes. N21 nao liberada; sem homologacao/app."
+}

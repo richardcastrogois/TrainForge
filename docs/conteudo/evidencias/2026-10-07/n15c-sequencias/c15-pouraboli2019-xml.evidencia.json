@@ -1,0 +1,23 @@
+{
+  "id": "c15-pouraboli2019-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6982664/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T13:39:35.753294+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito publico original licenciado CC BY3, ligado ao PubMed31653133: verificar sequencia Benson, autoria profissional, ensino, local da pratica e materiais externos; nao chamar folheto/CD de recebido nem generalizar a todos os cuidadores.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6982664/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 62019,
+  "bodyFile": "../raw/c15-pouraboli2019-xml.xml",
+  "sha256": "785bf8052174183450aefad281278df7484b371fe2d75e58e086ea342d556ffe"
+}

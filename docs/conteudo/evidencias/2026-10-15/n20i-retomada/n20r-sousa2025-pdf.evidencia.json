@@ -1,0 +1,24 @@
+{
+  "id": "n20r-sousa2025-pdf",
+  "url": "https://link.springer.com/content/pdf/10.1186/s13102-025-01326-9.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T11:26:49.211979+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "FormatoPDFeditorial ligado no HTMLPR236ja recebido para conferirFigura1/modelo e posicao do legpress; nao nova coorte, nao dose iniciante nem uso de material BHrestrito.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s13102-025-01326-9.pdf?error=cookies_not_supported&code=1a30fd65-2ae2-4a5a-a82e-a6287ad4e3b4",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2117119,
+  "bodyFile": "../raw/n20r-sousa2025-pdf.pdf",
+  "sha256": "2aaab4a80884db3968b7488e9907a4dcbb7a7b77f28868e15e082a1884298b83",
+  "bodyFormatMatchesRequest": true
+}

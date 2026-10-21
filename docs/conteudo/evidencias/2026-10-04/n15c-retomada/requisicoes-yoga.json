@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-04",
+  "niche": "N15-C: yoga para o proprio cuidador em casa",
+  "requests": [
+    {
+      "id": "c15-yoga-artigo",
+      "url": "https://link.springer.com/article/10.1007/s10433-023-00792-9",
+      "extension": "html",
+      "purpose": "Artigo original: oito encontros online, participantes, autoria, supervisao e licenca; nao confundir com exercicio do paciente."
+    },
+    {
+      "id": "c15-yoga-suplemento",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10433-023-00792-9/MediaObjects/10433_2023_792_MOESM1_ESM.docx",
+      "extension": "docx",
+      "purpose": "Suplemento DOCX descoberto no link 113 do editor; conferir instrucoes integrais sem inventar dose ou progressao."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-kirtan2012-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3292237/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:51:38.635151+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Deposito publico JATS do estudo2012 para cuidador e assistido: dose11min versus12min, rotina ensinada, CD/folheto externos, amostra/desenho/licenca; nao contornar desafio PMC.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3292237/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 129006,
+  "bodyFile": "../raw/c15-kirtan2012-xml.xml",
+  "sha256": "2b5fa594236708c369021311ccd2b40bd9e82af2dd40634086d722fcf10177ac"
+}

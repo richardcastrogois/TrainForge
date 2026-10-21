@@ -1,0 +1,24 @@
+{
+  "id": "c15-madruga-tese-2021",
+  "url": "https://dehesa.unex.es/bitstream/10662/12329/4/TDUEX_2021_Madruga_Vicente.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T13:20:04.051455+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Tese primaria221p ligada a familiaPR17: AnexoIV de sessao, autoria e qualificacao da entrega; nao confundir lista de gestos ou primeira fase com programa integral9meses/licenca comercial.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://dehesa.unex.es/server/api/core/bitstreams/154ad4e1-be1b-4f16-b659-ee0f3b0eba00/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 2006612,
+  "bodyFile": "../raw/c15-madruga-tese-2021.pdf",
+  "sha256": "23dfbe16dce996f1a9ded4d658791f0a40bbbb1bc4fbec131eba57d2cc4b2108",
+  "bodyFormatMatchesRequest": true
+}

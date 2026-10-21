@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-16",
+  "niche": "N21",
+  "researchClosed": true,
+  "scope": "Nove componentes textuais humanos em variantes exatas de praça e comparação de percursos; sem exigir curso integral de uma fonte. Dois componentes ambíguos e ciclos não replicados não declarados fechados para execução.",
+  "criteria": [
+    {
+      "id": "N21-fontes",
+      "met": true,
+      "evidence": "Sete obras/programas comparados,9métodosCCBY de fonte primária recebida; autores, contribuições e qualificações explícitas."
+    },
+    {
+      "id": "N21-instrucao",
+      "met": true,
+      "evidence": "Table1/2PDF5–6Marcos2024: corpo/apoios/direção+fase excêntrica, exemplo de dose por componente; caminho profissional contínuo.9fichas, dois métodos com pausa semtempo não selecionados; sem transferir nome/dose da academia."
+    },
+    {
+      "id": "N21-direitos",
+      "met": true,
+      "evidence": "Representação selecionada textual factualCCBY4PDF1; manualestudo/pesquisaeNCNDnãoincorporados, sem fotos/videos/patentes/terceiros selecionados."
+    },
+    {
+      "id": "N21-publico-apoio",
+      "met": true,
+      "evidence": "Idosoindependente/>50/coorteoriginal,duplosupervisorqualificado,reservadoUCAM,exclusões/alterações/semvalidacaoreal deentreganova explícitos."
+    }
+  ],
+  "remainingWholeSourceGaps": [
+    "Réplica integral8/12semanas não fechada; aquecimento/cooldown detalhados do protocolo2023não obtidos.",
+    "Nenhum cronograma automático para ambiguidade de fases/371reps ou unipodalChow."
+  ],
+  "releaseGates": [
+    "Antesdeprática: revisão humana do lote/composição, material instrucional legal/fiel, correspondência real aparelho/local,preparo/retorno/apoio e elegibilidade.",
+    "Nenhuma mídia ou interface/aparelho fisicamente testado; sem entrega autônoma/eficácia nova."
+  ],
+  "package": "pacote-modular-praca.json",
+  "comparison": "comparacao-programas-e-ambiguidades.json",
+  "appImplemented": false,
+  "releaseApproved": false,
+  "next": "ConsolidarN01–N46;N15permanecepausada."
+}

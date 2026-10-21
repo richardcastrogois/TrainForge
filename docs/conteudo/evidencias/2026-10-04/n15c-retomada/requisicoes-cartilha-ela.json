@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-05",
+  "scope": "Fonte primaria nova: autocuidado de cuidadores de pessoas com ELA; sem contato com autores, sem APK e sem N21.",
+  "requests": [
+    {
+      "id": "c15-ela-autocuidado-2023-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/fullTextXML",
+      "accept": "application/xml",
+      "extension": "xml",
+      "purpose": "Conferir cartilha/Appendix 1, elegibilidade, entrega, dose e licenca no protocolo humano de cuidadores para si em casa."
+    },
+    {
+      "id": "c15-ela-autocuidado-anexos",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10472276/supplementaryFiles",
+      "accept": "application/zip",
+      "extension": "zip",
+      "purpose": "Receber uma vez os dois Data Sheets ligados no XML; verificar se Appendix 1 e a cartilha de exercicios, sem pressupor licenca dos ativos."
+    },
+    {
+      "id": "c15-ela-autocuidado-editora-html",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1164370/full",
+      "extension": "html",
+      "purpose": "Pagina publica da editora: conferir links individuais dos suplementos, pois ZIP excedeu limite e nao sera repetido."
+    },
+    {
+      "id": "c15-ela-cartilha-data2-pdf",
+      "url": "https://www.frontiersin.org/api/v4/articles/1164370/file/Data_Sheet_2.pdf/1164370_supplementary-materials_datasheets_2_pdf/1",
+      "accept": "application/pdf",
+      "extension": "pdf",
+      "maxBytes": 4194304,
+      "purpose": "Primeiro GET local do PDF individual Data_Sheet_2.pdf identificado no XML/HTML da editora, via padrao publico de arquivo Frontiers; ZIP acima de2MiB nao repetido. Conferir cartilha ou registrar falha."
+    },
+    {
+      "id": "c15-ela-tese-ufrn-2023-pdf",
+      "url": "https://repositorio.ufrn.br/jspui/bitstream/123456789/53566/1/Efeitostelerreabilitacaocuidadores_Silva_2023.pdf",
+      "accept": "application/pdf",
+      "extension": "pdf",
+      "maxBytes": 4194304,
+      "purpose": "Tese original da autora localizada em busca publica; Appendix B e cartilha, conferir corpo e direitos sem presumir que CC BY do artigo cobre tese."
+    }
+  ]
+}

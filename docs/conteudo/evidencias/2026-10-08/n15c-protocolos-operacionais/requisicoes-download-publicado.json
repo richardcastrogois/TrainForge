@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C: ler texto do helper publico ligado ao botaoPDF do artigo chines; nao executarJavaScript, criar conta ou contornar permissao.",
+  "requests":[
+    {"id":"c15-baduanjin-download-helper","url":"https://www.zglyyx.com/develop/static/common/js/download_cn.js","extension":"txt","purpose":"Determinar a rota publicada de lsdy1(PDF,7307) no HTMLrecebido. Codigo guardado como texto, sem execucao; interromper se exigir permissao/autenticacao."}
+  ]
+}

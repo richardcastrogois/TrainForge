@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "niche": "N43",
+  "researchClosed": true,
+  "scope": "Viabilidade de landmarks de pose como observação auxiliar com confirmação; classificação de exercício/vídeo, repetições, tempo, carga e gasto não demonstrados.",
+  "criteria": [
+    {
+      "criterion": "Fonte/modelo e teste do que é efetivamente afirmado",
+      "met": true,
+      "evidence": "ViTPose17keypoints executado;6conferências formais. Não se promete classificador/contador/gasto. Resultado não é acurácia anatômica."
+    },
+    {
+      "criterion": "Variante/aparelho/corpo livre e cuidador",
+      "met": true,
+      "evidence": "Quatro contextos e campos separados; gesto de cuidar não dose, e T2microgravidade não equivale a máquina terrestre."
+    },
+    {
+      "criterion": "Pessoas/consentimento/técnica/direitos",
+      "met": true,
+      "evidence": "Sem identidade ou clínica inferidas; foto factual removida, nenhum programa/mídia copiados ao produto. Técnica não aprovada por pose."
+    },
+    {
+      "criterion": "Limpeza após teste",
+      "met": true,
+      "evidence": "limpeza-ensaio.json:1.304.473.808bytes removidos e diretório ausente."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Dados autorizados de variantes/pessoas/apoios/contextos e groundtruth independente.",
+    "Classificador temporal, contador e avaliação de erro próprios se forem selecionados; não estão implementados.",
+    "Detecção/consentimento/oclusão e confirmação acessível com pessoas reais.",
+    "Versão móvel/desempenho e direitos de todos os ativos antes de oferta."
+  ],
+  "poseModelTested": true,
+  "exerciseClassifierTested": false,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "nextNiche": "N44"
+}

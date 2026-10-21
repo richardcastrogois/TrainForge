@@ -1,0 +1,23 @@
+{
+  "id": "n39-vit-base-card",
+  "url": "https://huggingface.co/google/vit-base-patch16-224-in21k/resolve/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:38:06.779955+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Cartão domodelobase linkado nateraw:Apache2.0verificado em páginaoficial. Não éclassificadoralimentar nemlicençadefotosImageNet. Conferirproveniência/limitações e distinguir basemodeldofinetune.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224-in21k/b4569560a39a0f1af58e3ddaf17facf20ab919b0/README.md?%2Fgoogle%2Fvit-base-patch16-224-in21k%2Fresolve%2Fmain%2FREADME.md=&etag=%221da3073e504d892b83577e555f6ffdd13b1d821b%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 5392,
+  "bodyFile": "../raw/n39-vit-base-card.md",
+  "sha256": "84af54abe161ae2ad3cd5862bfb47ebc5e502398f3b243470a1681aca4b6c611"
+}

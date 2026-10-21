@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-15",
+  "niche": "N43",
+  "researchClosed": true,
+  "scope": "Viabilidade de landmarks de pose como observação auxiliar com confirmação; classificação de exercício/vídeo, repetições, tempo, carga e gasto não demonstrados.",
+  "selectedResearchModel": {
+    "name": "usyd-community/vitpose-plus-small",
+    "revision": "0c30b6534bb621af0162b481176742577264e36e",
+    "licenseDeclared": "Apache2.0",
+    "input": "RGB com caixa de pessoaCOCO[x,y,width,height] fornecida manualmente;256×192 e normalização do pré-processador da revisão. Não édetector de pessoa.",
+    "output": "17heatmaps/landmarksCOCO. Só12pontos não faciais retidos no ensaio; coordenadas não são aprovação anatômica. Scores de heatmap podem exceder1 e não são probabilidade calibrada.",
+    "test": "resultado-pose-local.json",
+    "runtimeDeleted": "limpeza-ensaio.json"
+  },
+  "separateCapabilities": {
+    "pose": "Componente específico executado em1foto pública factual e1controle sintético, caixa manual; sem goldtruth anatômico independente.",
+    "exerciseClass": "Não testada/selecionada como pronta; rótulos anatômicos não são nomes de exercício. VideoMAECCBYNC não selecionado para caminho de produto.",
+    "variantAndEquipment": "Precisam confirmação da fonte/variante/máquina e suporte; não inferidos de landmarks.",
+    "repetitionCount": "Não testado; exige sequência/identidade/fases/oclusão e referência de contagem, sem duplicar frames ou contar gesto de cuidar.",
+    "duration": "Foto única não demonstra intervalo; timestamps de vídeo/captura não são duração de exercício se há pausas/cortes.",
+    "loadAndEnergy": "Carga não é inferida pela imagem; gasto não vem do nome/pose. N35 continua estimativa condicionada a dados próprios.",
+    "technique": "Sem aprovação de técnica ou avaliação clínica."
+  },
+  "identityAndPrivacy": [
+    "Consentimento para câmera/pessoas deve ser explícito, com alternativa manual.",
+    "Não há reconhecimento de identidade ou associação automática por face/corpo; escolher pessoa/autoria.",
+    "Manter campos de observação distintos de relato/medição e não pontuar capacidade do assistido a partir do cuidador.",
+    "Teste público factual não autoriza publicar pessoas, marcas, cenas ou vídeos no app; imagemNASAapagada, sem endosso."
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "status": "condicional",
+      "finding": "Movimento corporal pode ser parcialmente ocluído por cadeira/apoio/roupa. Pose não determina variante escolhida, carga, técnica segura ou dose; confirmar programa e pessoa. Nenhum idoso testado."
+    },
+    {
+      "context": "idoso_academia",
+      "status": "condicional",
+      "finding": "Corpo e máquina têm identidades separadas; landmarks não reconhecem resistência, regulagem ou console. Foto de pessoa perto de máquina não prova treino executado."
+    },
+    {
+      "context": "idoso_praca",
+      "status": "condicional",
+      "finding": "Aparelho de praça não equivale à máquina interna, nem a corpo livre. Pessoas ao fundo, luz e oclusão requerem consentimento/enquadramento e opção sem câmera; nenhum teste de praça."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "status": "condicional",
+      "finding": "Agachar-se para cuidar de alguém não é automaticamente repetição ou dose de treino. Pessoa que filma, cuidador em treino próprio e assistido são papéis distintos; não inferir atividade do assistido pelo cuidador."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Dados autorizados de variantes/pessoas/apoios/contextos e groundtruth independente.",
+    "Classificador temporal, contador e avaliação de erro próprios se forem selecionados; não estão implementados.",
+    "Detecção/consentimento/oclusão e confirmação acessível com pessoas reais.",
+    "Versão móvel/desempenho e direitos de todos os ativos antes de oferta."
+  ],
+  "appImplemented": false,
+  "exerciseClassifierTested": false,
+  "poseModelTested": true,
+  "releaseApproved": false
+}

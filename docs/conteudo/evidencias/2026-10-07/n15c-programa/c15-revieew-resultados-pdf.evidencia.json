@@ -1,0 +1,24 @@
+{
+  "id": "c15-revieew-resultados-pdf",
+  "url": "https://link.springer.com/content/pdf/10.1007/s10926-024-10182-2.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:06:11.953029+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resultados originais12p, autoria/licenca e diferencas da entrega real versus protocolo; nao inferir beneficio de movimento isolado ou autonomia domiciliar desde inicio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://link.springer.com/content/pdf/10.1007/s10926-024-10182-2.pdf?error=cookies_not_supported&code=2be9f21b-eeb3-46bd-891a-1a7f04d36f14",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 629721,
+  "bodyFile": "../raw/c15-revieew-resultados-pdf.pdf",
+  "sha256": "09301ffab7886cefb968b0426dbbbe97ee7243db475b6437dd6912f34a6e5552",
+  "bodyFormatMatchesRequest": true
+}

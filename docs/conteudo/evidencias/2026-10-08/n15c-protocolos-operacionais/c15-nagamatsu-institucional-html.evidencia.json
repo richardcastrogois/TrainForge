@@ -1,0 +1,23 @@
+{
+  "id": "c15-nagamatsu-institucional-html",
+  "url": "https://www.my-zaidan.or.jp/tai-ken/introduce/detail.php?id=a8afeb72428deddeb49c19f86edf7209&tmp=1524036185",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:43:53.597824+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Link da lista institucional recebido no leitor web: descricao do mesmo ensaio2015 de40cuidadores; verificar instrucao e links efetivamente publicados, nao substituir por alongamento generico.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.my-zaidan.or.jp/tai-ken/introduce/detail.php?id=a8afeb72428deddeb49c19f86edf7209&tmp=1524036185",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 28083,
+  "bodyFile": "../raw/c15-nagamatsu-institucional-html.html",
+  "sha256": "ad85ae0f5b3401938b0e73d3677026ed515dd9aa16f6e07ca8798fc84d721898"
+}

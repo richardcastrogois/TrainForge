@@ -1,0 +1,23 @@
+{
+  "id": "n24-gillen2016",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154075",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:53:49.099001+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonteprimariaaberta deciclismoestacionario;avaliarsupervisao/sexoidade/qualificacao e naoaplicarautom aexterno",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154075",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 233119,
+  "bodyFile": "../raw/n24-gillen2016.html",
+  "sha256": "390845e19f5d547f1d84a6c62da099d0b21662c2943ba279b806854c8cf782cb"
+}

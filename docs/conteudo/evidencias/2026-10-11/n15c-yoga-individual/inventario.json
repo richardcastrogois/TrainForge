@@ -1,0 +1,493 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 7,
+  "http200": 7,
+  "hashedBodies": 7,
+  "usableBodies": 7,
+  "receipts": [
+    {
+      "id": "c15-yoga-individual2023-xml",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10067051/fullTextXML",
+      "status": 200,
+      "bytes": 140477,
+      "sha256": "98060256cfce97d7f133cabf0775669978178ff33e1c5426ceb242ede26fa8a5",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "cam45514-sec-0001",
+          "title": "Background"
+        },
+        {
+          "id": "cam45514-sec-0002",
+          "title": "Methods"
+        },
+        {
+          "id": "cam45514-sec-0003",
+          "title": "Results"
+        },
+        {
+          "id": "cam45514-sec-0004",
+          "title": "Conclusion"
+        },
+        {
+          "id": "cam45514-sec-0005",
+          "title": "INTRODUCTION"
+        },
+        {
+          "id": "cam45514-sec-0006",
+          "title": "METHODS"
+        },
+        {
+          "id": "cam45514-sec-0007",
+          "title": "Participants"
+        },
+        {
+          "id": "cam45514-sec-0008",
+          "title": "Procedures"
+        },
+        {
+          "id": "cam45514-sec-0009",
+          "title": "Randomization"
+        },
+        {
+          "id": "cam45514-sec-0010",
+          "title": "Intervention groups"
+        },
+        {
+          "id": "cam45514-sec-0011",
+          "title": "\nDY intervention"
+        },
+        {
+          "id": "cam45514-sec-0012",
+          "title": "\nCY intervention"
+        },
+        {
+          "id": "cam45514-sec-0013",
+          "title": "Quality control"
+        },
+        {
+          "id": "cam45514-sec-0014",
+          "title": "Control group"
+        },
+        {
+          "id": "cam45514-sec-0015",
+          "title": "Measures"
+        },
+        {
+          "id": "cam45514-sec-0016",
+          "title": "Demographic and medical data"
+        },
+        {
+          "id": "cam45514-sec-0017",
+          "title": "Feasibility data"
+        },
+        {
+          "id": "cam45514-sec-0018",
+          "title": "Intervention outcome measures"
+        },
+        {
+          "id": "cam45514-sec-0019",
+          "title": "Data analysis"
+        },
+        {
+          "id": "cam45514-sec-0020",
+          "title": "RESULTS"
+        },
+        {
+          "id": "cam45514-sec-0021",
+          "title": "Participant characteristics"
+        },
+        {
+          "id": "cam45514-sec-0022",
+          "title": "Feasibility"
+        },
+        {
+          "id": "cam45514-sec-0023",
+          "title": "Recruitment and retention"
+        },
+        {
+          "id": "cam45514-sec-0024",
+          "title": "Session attendance and acceptability"
+        },
+        {
+          "id": "cam45514-sec-0025",
+          "title": "Preliminary efficacy"
+        },
+        {
+          "id": "cam45514-sec-0026",
+          "title": "Depressive symptoms"
+        },
+        {
+          "id": "cam45514-sec-0027",
+          "title": "Mental and physical QOL\n"
+        },
+        {
+          "id": "cam45514-sec-0028",
+          "title": "Caregiver reactions"
+        },
+        {
+          "id": "cam45514-sec-0029",
+          "title": "DISCUSSION"
+        },
+        {
+          "id": "cam45514-sec-0035",
+          "title": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+          "id": "cam45514-sec-0130",
+          "title": "CONFLICT OF INTEREST"
+        },
+        {
+          "id": "cam45514-sec-0031",
+          "title": "ETHICS STATEMENT"
+        },
+        {
+          "id": "cam45514-sec-0032",
+          "title": "TRIAL REGISTRATION"
+        },
+        {
+          "id": null,
+          "title": "Supporting information"
+        },
+        {
+          "id": "cam45514-sec-0034",
+          "title": "DATA AVAILABILITY STATEMENT"
+        }
+      ],
+      "supplementFiles": [
+        "CAM4-12-7567-s001.docx"
+      ]
+    },
+    {
+      "id": "c15-yoga-individual2023-core-json",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:36468605%20AND%20SRC:MED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 8463,
+      "sha256": "c5a8a870fd6aea07c2643def850983d087b8309b56a1998e9c1775fcfddcdc3b",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga-individual2023-registro-json",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2023-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02481349",
+      "status": 200,
+      "bytes": 11284,
+      "sha256": "f555072feb9eee48176b51c268a570bf7632bd1731b5384db9c963b15b14772a",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga-individual2019-core-json",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:31367462%20AND%20SRC:MED&resultType=core&format=json",
+      "status": 200,
+      "bytes": 6938,
+      "sha256": "3556d0b50c69065573be4843de6d564a3b237ad8313ce2d76c0843b5eaa9cb58",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga-teleclinico2021-xml",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-teleclinico2021-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8161853/fullTextXML",
+      "status": 200,
+      "bytes": 47450,
+      "sha256": "4169a6d1f521733acab3639a2cacfcc0de662f9f2007eb07cfa0689cd5df578a",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "section1-15347354211019111",
+          "title": "Background:"
+        },
+        {
+          "id": "section2-15347354211019111",
+          "title": "Method:"
+        },
+        {
+          "id": "section3-15347354211019111",
+          "title": "Results:"
+        },
+        {
+          "id": "section4-15347354211019111",
+          "title": "Conclusion:"
+        },
+        {
+          "id": "section5-15347354211019111",
+          "title": "ClinicalTrials.gov:"
+        },
+        {
+          "id": "section6-15347354211019111",
+          "title": "Background"
+        },
+        {
+          "id": "section7-15347354211019111",
+          "title": "Current Study"
+        },
+        {
+          "id": "section8-15347354211019111",
+          "title": "Methods"
+        },
+        {
+          "id": "section9-15347354211019111",
+          "title": "Participants"
+        },
+        {
+          "id": "section10-15347354211019111",
+          "title": "Interventionists"
+        },
+        {
+          "id": "section11-15347354211019111",
+          "title": "Procedures"
+        },
+        {
+          "id": "section12-15347354211019111",
+          "title": "Interventions"
+        },
+        {
+          "id": "section13-15347354211019111",
+          "title": "Results"
+        },
+        {
+          "id": "section14-15347354211019111",
+          "title": "Case Descriptions"
+        },
+        {
+          "id": "section15-15347354211019111",
+          "title": "Overall Acceptability of Videoconference Delivery"
+        },
+        {
+          "id": "section16-15347354211019111",
+          "title": "Technology-Related Issues"
+        },
+        {
+          "id": "section17-15347354211019111",
+          "title": "Teaching and Safety-Related Issues"
+        },
+        {
+          "id": "section18-15347354211019111",
+          "title": "Location and Setting-Related Issues"
+        },
+        {
+          "id": "section19-15347354211019111",
+          "title": "Discussion and Summary"
+        },
+        {
+          "id": "fn-group1",
+          "title": "Footnotes"
+        },
+        {
+          "id": "ref-list1",
+          "title": "References"
+        }
+      ],
+      "supplementFiles": []
+    },
+    {
+      "id": "c15-yoga-individual2019-xml",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-individual2019-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6657047/fullTextXML",
+      "status": 200,
+      "bytes": 110433,
+      "sha256": "c0d13cb9188f701198ce5d03786d8155f093b0ae6252747c03f02cffdee8827c",
+      "usableForReading": true,
+      "sections": [
+        {
+          "id": "sec1",
+          "title": "Background"
+        },
+        {
+          "id": "sec2",
+          "title": "Methods"
+        },
+        {
+          "id": "sec3",
+          "title": "Conclusion"
+        },
+        {
+          "id": "sec4",
+          "title": "Trial registration"
+        },
+        {
+          "id": "Sec1",
+          "title": "Background and rationale"
+        },
+        {
+          "id": "Sec2",
+          "title": "Objectives"
+        },
+        {
+          "id": "Sec3",
+          "title": "Methods"
+        },
+        {
+          "id": "Sec4",
+          "title": "Design overview and study setting"
+        },
+        {
+          "id": "Sec5",
+          "title": "Eligibility"
+        },
+        {
+          "id": "Sec6",
+          "title": "Inclusion criteria"
+        },
+        {
+          "id": "Sec7",
+          "title": "Exclusion criteria"
+        },
+        {
+          "id": "Sec8",
+          "title": "Interventions"
+        },
+        {
+          "id": "Sec9",
+          "title": "Dose"
+        },
+        {
+          "id": "Sec10",
+          "title": "DY group"
+        },
+        {
+          "id": "Sec11",
+          "title": "CY group"
+        },
+        {
+          "id": "Sec12",
+          "title": "Home practice"
+        },
+        {
+          "id": "Sec13",
+          "title": "WLC group"
+        },
+        {
+          "id": "Sec14",
+          "title": "Interventionist training and quality control"
+        },
+        {
+          "id": "Sec15",
+          "title": "Study measures"
+        },
+        {
+          "id": "Sec16",
+          "title": "Demographic and medical factors"
+        },
+        {
+          "id": "Sec17",
+          "title": "Feasibility"
+        },
+        {
+          "id": "Sec18",
+          "title": "Self-reported measures"
+        },
+        {
+          "id": "Sec19",
+          "title": "Sample size and sample size considerations"
+        },
+        {
+          "id": "Sec20",
+          "title": "Recruitment"
+        },
+        {
+          "id": "Sec21",
+          "title": "Randomization"
+        },
+        {
+          "id": "Sec22",
+          "title": "Blinding"
+        },
+        {
+          "id": "Sec23",
+          "title": "Data collection"
+        },
+        {
+          "id": "Sec24",
+          "title": "Statistical methods"
+        },
+        {
+          "id": "Sec25",
+          "title": "Specific aim 1"
+        },
+        {
+          "id": "Sec26",
+          "title": "Specific aim 2"
+        },
+        {
+          "id": "Sec27",
+          "title": "Exploratory aim"
+        },
+        {
+          "id": "Sec28",
+          "title": "Discussion"
+        },
+        {
+          "id": "Sec29",
+          "title": "Trial status"
+        },
+        {
+          "id": "glossary1",
+          "title": "Abbreviations"
+        },
+        {
+          "id": "notes1",
+          "title": "Authors’ contributions"
+        },
+        {
+          "id": "notes2",
+          "title": "Funding"
+        },
+        {
+          "id": "notes3",
+          "title": "Availability of data and materials"
+        },
+        {
+          "id": "notes4",
+          "title": "Ethics approval and consent to participate"
+        },
+        {
+          "id": "notes5",
+          "title": "Consent for publication"
+        },
+        {
+          "id": "notes6",
+          "title": "Competing interests"
+        },
+        {
+          "id": "fn-group1",
+          "title": "Footnotes"
+        },
+        {
+          "id": "Bib1",
+          "title": "References"
+        },
+        {
+          "id": "_ad93_",
+          "title": "Associated Data"
+        },
+        {
+          "id": "_adda93_",
+          "title": "Data Availability Statement"
+        }
+      ],
+      "supplementFiles": []
+    },
+    {
+      "id": "c15-yoga-mallaiah-bio-pdf",
+      "record": "2026-10-11/n15c-yoga-individual/c15-yoga-mallaiah-bio-pdf.evidencia.json",
+      "url": "https://www.mdanderson.org/content/dam/mdanderson/documents/patients-and-family/diagnosis-and-treatment/care-centers-and-clinics/Integrative%20Medicine%20Center/Bio%20Mallaiah.pdf",
+      "status": 200,
+      "bytes": 1343795,
+      "sha256": "79c186a8ca30779dfe8bd3db34665c54add2795c553a7d6b957d0e2648de69e6",
+      "usableForReading": true,
+      "pdfPages": 1,
+      "pdfText": [
+        " \n \n \n \nSmitha G. Mallaiah, MSc, C-IAYT  \nSenior Mind-Body Intervention Specialist, Integrative Medicine Center  \n \nSmitha is a Senior Mind-Body Intervention Specialist at the University of Texas MD Anderson Cancer \ncenter’s Integrative medicine Program. She has a master’s degree in yoga therapy and is also a \ncertified Yoga therapist. Smitha has been practicing yoga therapy for specific aliments for over 18 \nyears at various hospitals and clinics. She brings rich and diverse experience as a yoga therapist \nworking with different populations. She has spent the last decade at M D Anderson Cancer center \nworking with hundreds of cancer patients. On the clinic side she works alongside with other \nintegrative medicine clinicians using yoga therapy with inpatients and outpatients going through \ncancer, from diagnosis through end of life. On research side, she is involved in developing and \nteaching yoga research interventions for different cancer populations, like breast, lung, brain, and \nhead and neck cancers. She also works with couples/caregivers going through cancer journey using \nyoga therapy. Smitha continues to teach one on one and group classes for our patients and \ncaregivers. She also mentors many yoga therapists. She has co-authored yoga publications and has \npresented her work at national and international conferences on the efficacy of yoga in cancer care.\n "
+      ],
+      "renderedThisRun": false
+    }
+  ],
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

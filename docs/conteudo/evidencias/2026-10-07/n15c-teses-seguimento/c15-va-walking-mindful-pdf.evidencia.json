@@ -1,0 +1,24 @@
+{
+  "id": "c15-va-walking-mindful-pdf",
+  "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:56:49.596750+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia complementar explicitamente anunciado: distinguir sugestoes profissionais de ensaio do pacote; direitos/terceiros e instrucoes source-bound.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 3513367,
+  "bodyFile": "../raw/c15-va-walking-mindful-pdf.pdf",
+  "sha256": "84768176f3c961f0c9b9f39bb473340c4e647081b051e282e0017392bf9adac5",
+  "bodyFormatMatchesRequest": true
+}

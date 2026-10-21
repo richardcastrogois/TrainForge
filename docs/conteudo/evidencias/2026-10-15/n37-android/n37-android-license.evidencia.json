@@ -1,0 +1,23 @@
+{
+  "id": "n37-android-license",
+  "url": "https://developer.android.com/license",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:25:38.197492+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Declaração primária de licença da documentação, exceções/marcas/links separados; evitar atribuirCCBY4automaticamente.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developer.android.com/license",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 251895,
+  "bodyFile": "../raw/n37-android-license.html",
+  "sha256": "401ed61708026583a0eed7156fe1ae5933307c90080fa5688f550265f0adf880"
+}

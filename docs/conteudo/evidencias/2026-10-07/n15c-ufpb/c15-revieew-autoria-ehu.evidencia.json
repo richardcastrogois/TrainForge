@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-autoria-ehu",
+  "url": "https://www.ehu.eus/es/web/campusa/-/ejercicio-fisico-mejora-bienestar-cuidadores-de-personas-mayores",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T11:25:43.679533+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fonte institucional liga equipe ao desenho/programa e docencia em Fisioterapia; distinguir comprovacao de autoria/area de credencial individual.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ehu.eus/es/web/campusa/-/ejercicio-fisico-mejora-bienestar-cuidadores-de-personas-mayores",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 117226,
+  "bodyFile": "../raw/c15-revieew-autoria-ehu.html",
+  "sha256": "58180976e057f670c8e8e6fe9e2381e856deefde4fbcff885b8650e10c3c77ce"
+}

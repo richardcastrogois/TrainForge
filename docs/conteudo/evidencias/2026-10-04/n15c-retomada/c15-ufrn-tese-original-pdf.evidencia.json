@@ -1,0 +1,22 @@
+{
+  "id": "c15-ufrn-tese-original-pdf",
+  "url": "https://repositorio.ufrn.br/server/api/core/bitstreams/4c936b7f-5e35-46bc-ba99-4d2c0d2d8d91/content",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:28:46.390862+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeiro GET do PDF atual observado nos metadados recebidos; tamanho12131216 conhecido, teto16MiB restrito por URL/tamanho/hash. Ler cartilha Appendix B e direitos; antigo link retornou SPA, nao foi repetido.",
+  "maxBytes": 16777216,
+  "client": "urllib; default TLS; timeout 25s; max 16 MiB; no retries",
+  "resolvedUrl": "https://repositorio.ufrn.br/server/api/core/bitstreams/4c936b7f-5e35-46bc-ba99-4d2c0d2d8d91/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 12131216,
+  "bodyFile": "../raw/c15-ufrn-tese-original-pdf.pdf",
+  "sha256": "e95a0e5586fded9ce9e8ad141c84549aca07fc2539fd0c87d7aa540a6d4c5b01"
+}

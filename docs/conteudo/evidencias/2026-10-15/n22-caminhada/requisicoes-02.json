@@ -1,0 +1,37 @@
+{
+  "requests": [
+    {
+      "id": "n22-nhlbi-guide",
+      "url": "https://www.nhlbi.nih.gov/files/docs/public/heart/phy_active.pdf",
+      "purpose": "Guia original2006 com tabela caminhada12semanas, nao antigo URL404; avaliar autoria e cautelas",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-nhlbi-filipino",
+      "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/08-6339.pdf",
+      "purpose": "Contexto completo do folheto8semanas, revisores/autoria e direitos",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-nhlbi-rights",
+      "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+      "purpose": "Politica primaria de reutilizacao/ativos/excecoes/sem endosso",
+      "extension": "html"
+    },
+    {
+      "id": "n22-brasil-guide",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+      "purpose": "Guia em portugues, adultos e idosos, autoria tecnica e licenca",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-pacer-about",
+      "url": "https://www.mypacer.com/about",
+      "purpose": "Catalogo publico oficial de outro app; autoria/dose nao presumidas",
+      "extension": "html"
+    }
+  ]
+}

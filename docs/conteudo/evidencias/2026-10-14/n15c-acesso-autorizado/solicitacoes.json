@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "niche": "N15-C",
+  "userAuthorizedMaterialAndPermissionRequests": true,
+  "authorizationText": "Sim, solicitar material e autorizacao sem custos",
+  "authorizationIncludesPaymentOrPersonalData": false,
+  "gmailSenderDisclosureQuestionAsked": true,
+  "gmailSenderDisclosureApproved": true,
+  "gmailSenderAuthorizationText": "Sim, pode usar meu Gmail",
+  "externalMessagesSent": 3,
+  "sendResults": [
+    {"item":"CG-02","to":"ramezanli1362@gmail.com","status":"send_completed","messageId":"1a13a67f42794bf2","threadId":"1a13a67f42794bf2","attempts":1},
+    {"item":"CG-03","to":"g.livingston@ucl.ac.uk","status":"send_completed","messageId":"1a13a6833e7bc102","threadId":"1a13a6833e7bc102","attempts":1},
+    {"item":"CG-05","to":"berkiye.kirmizigil@emu.edu.tr","status":"send_completed","messageId":"1a13a6a05b607ed2","threadId":"1a13a6a05b607ed2","attempts":2,"firstAttempt":"HTTP403 RATE_LIMIT_EXCEEDED daAPI Gmail, nao falha de direito clinico ou pedido de pagamento","duplicatePrevention":"Busca em enviados ao mesmo destinatario,apos13/10,subjectTrainForge/Pilates retornou zeroIDs comsucesso antes da unica nova tentativa"}
+  ],
+  "repliesOrGrantsReceived": false,
+  "inboundRepliesChecked": false,
+  "replyFlagMeansNoGrantRecordedNotProofInboxHasNoReply": true,
+  "successfulSendProvesRecipientReadOrApproved": false,
+  "draftsFile": "solicitacoes.md",
+  "contacts": [
+    {"item":"CG-02","recipient":"Somayeh Ramezanli","email":"ramezanli1362@gmail.com","role":"Autora correspondente no artigo original","publicSource":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10017129/","localSourceReceipt":"../../2026-10-12/cg02-benson/cg02-benson-artigo-pdf.evidencia.json","localLocator":"PDF1, email quebrado entre gmail. e com; conferido na representacao primaria PMC","sourceDoi":"10.17533/udea.iee.v40n3e06","requested":"CD/video/folheto ou roteiro original correspondente e permissao gratuita de traducao/exibicao/narracao/delivery digital, preservando ensino/dose/reforco"},
+    {"item":"CG-03","recipient":"Prof. Gill Livingston","email":"g.livingston@ucl.ac.uk","role":"Contato institucional UCL para apoio a cuidadores, relacionado ao START","publicSource":"https://www.ucl.ac.uk/brain-sciences/psychiatry/our-research/mental-health-older-people/research-themes/supporting-family-carers","secondaryInstitutionalConfirmation":"https://www.ucl.ac.uk/brain-sciences/psychiatry/people/academic-staff","sourceDoi":"10.3310/hta18610","requested":"Manual do participante/audio e identidade das versoes correspondentes a leader2014; uso gratuito em APK/traducao/narracao e encaminhamento a titular dos direitos quando necessario"},
+    {"item":"CG-05","recipient":"Prof. Berkiye Kirmizigil","email":"berkiye.kirmizigil@emu.edu.tr","role":"Coautora/orientadora, contato institucional de fisioterapia EMU","publicSource":"https://sbf.emu.edu.tr/tr/hakkimizda/personel/personel-detayi?n=berkiye-kirmizigil&sid=76","sourceDoi":"10.2217/cer-2020-0108","requested":"Roteiros/variantes/preparo/entrada/saida das tres etapas e warm/cool, esclarecimento de versao/transicoes3/6, ativos e permissao gratuita aplicavel"}
+  ],
+  "outboundPolicy": {
+    "onlyProjectAndPublicStudyReferences": true,
+    "personalHealthDataOrDocumentsAttached": false,
+    "recipientMustConfirmRightsTheyCanGrant": true,
+    "commercialOrAppStoreReuseNotPresumedFromResearchAccess": true,
+    "translationAndNarrationRequestedSeparatelyFromSimpleCitation": true,
+    "noPaidLicencePurchaseOrFinancialCommitment": true,
+    "noResponseIsPermission": false,
+    "requestOrConsentToContactMeansClinicalOrReuseApproval": false
+  },
+  "next": "Solicitacoes enviadas com Gmail autorizado;aguardar respostas sem presumir recebimento/leitura/material/licenca. Nao repetir envios ou programar followup sem pedido. Em futura conferencia de respostas, verificar ativos/versao/titular/condicoes reais antes deaprovar uso."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "c15-cuidador-protocolo-2016-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5031263/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:18:00.539204+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo humano de treino pessoal do cuidador em casa, origem 2016; conferir instrucao/dose e entrega em vez de transpor testes do estudo posterior.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5031263/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 87856,
+  "bodyFile": "../raw/c15-cuidador-protocolo-2016-xml.xml",
+  "sha256": "5a38b10644d746982fd49c889e1d4122284aa7d91340fc975e673b2c9dc40ae0"
+}

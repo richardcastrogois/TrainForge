@@ -1,0 +1,23 @@
+{
+  "id": "n30-archila-editor",
+  "url": "https://intjexersci.com/ijes/vol14/iss3/2/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:45:19.300947+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Página editorial primária e linkPDF/prova de direitos de Archila2021",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://intjexersci.com/ijes/vol14/iss3/2/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 129348,
+  "bodyFile": "../raw/n30-archila-editor.html",
+  "sha256": "2aec1f5b79915d8b3e95f1a5479b60c009f58f16aae44e1d90b7d73f1562aef1"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-rutgers-autocuidado-familiar-pdf",
+  "url": "https://care2caregivers.com/wp-content/uploads/2019/12/Caregiver-Self-Care-Booklet-English.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:54:31.670267+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia original de autocuidado com exercicios Pause/Breathe/Move e precaucoes do proprio cuidador; verificar autoria/terceiros/direitos e instrucoes, nao declarar livre pela gratuidade.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://care2caregivers.com/wp-content/uploads/2019/12/Caregiver-Self-Care-Booklet-English.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 12165353,
+  "bodyFile": "../raw/c15-rutgers-autocuidado-familiar-pdf.pdf",
+  "sha256": "23c35e049144d397108ab146941242b91b2629ac779ce2f367f76bb6de24e1e6",
+  "bodyFormatMatchesRequest": true
+}

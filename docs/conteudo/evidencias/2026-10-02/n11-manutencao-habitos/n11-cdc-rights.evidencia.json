@@ -1,0 +1,21 @@
+{
+  "id": "n11-cdc-rights",
+  "url": "https://www.cdc.gov/other/agencymaterials.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T02:29:11.241720+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Política CDC de reutilização, crédito, não endosso, alterações e imagens.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.cdc.gov/other/agencymaterials.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 80260,
+  "bodyFile": "../raw/n11-cdc-rights.html",
+  "sha256": "aa9c107b28a3161f2802eb7d054c5c110cebca3de49853c6f8a79ad2b81d9b5e"
+}

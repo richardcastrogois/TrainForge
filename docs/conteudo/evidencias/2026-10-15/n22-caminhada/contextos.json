@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "niche": "N22",
+  "contexts": [
+    {
+      "context": "adulto_ambulante_exterior_parque",
+      "evidence": "PR141PACEUP45-75 +PR140guiasgerais",
+      "assessment": "candidato_condicional",
+      "conditions": "Percurso seguro, capacidadeambulatoria e publico/triagem/apoio descritos; sem aparelho de praca."
+    },
+    {
+      "context": "idoso_exterior_praca",
+      "evidence": "PR141 inclui ate75anos;PR145 capidosos",
+      "assessment": "parcial",
+      "conditions": "Nao estenderautomaticamente a fragilidade,>75,demencia,deficiencia visual ouquedas repetidas. Caminhar em volta da praca nao fecha N21aparelhos."
+    },
+    {
+      "context": "idoso_casa",
+      "evidence": "PR140manual2008PDF99 permitecaminhar dentro;PR145 incluiatividadedomestica",
+      "assessment": "parcial",
+      "conditions": "Espacoreal/curvas/obstaculos/apoios a conferir. PACEUP ensaio exigiaambularfora; marchaestacionaria nao equivalente a passosdeslocados."
+    },
+    {
+      "context": "idoso_academia",
+      "evidence": "Guias gerais nao demonstramajustes deesteira;UGAtips declaraesteira apenas comocenario",
+      "assessment": "pendente",
+      "conditions": "Nao substituir caminhadaexterior por esteira seminstrucoes de partida/parada/corrimao/emergencia ecapacidadeapropriadas."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "evidence": "ReusoPR87WalkingtoWellness2023, leitura07/10n15c-teses-seguimento; nao coleta nova N15",
+      "assessment": "parcial",
+      "conditions": "Nao presumir sair de casa, tempo livreou caminhar segurandopessoaassistida. GuiaVA10p cobreapoio/tempo/dupla, nao aprova dosePACEpara todo cuidador. N15continua pausada."
+    }
+  ],
+  "notAllContextsReleased": true
+}

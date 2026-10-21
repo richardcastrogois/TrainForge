@@ -1,0 +1,31 @@
+{
+  "niche":"N15-C","date":"2026-10-11","researchClosureApproved":false,"releaseApproved":false,"appImplemented":false,
+  "sources":[
+    {"sourceId":"PR122","name":"Allende2024 teleyoga AD/cuidador","doi":"10.1177/27536130241240405","pmid":"38545336","registry":"NCT04512040",
+      "receipts":["c15-teleyoga2024-xml.evidencia.json","c15-teleyoga2024-core-json.evidencia.json","c15-teleyoga2024-registro-json.evidencia.json","c15-teleyoga2024-protocolo-pdf.evidencia.json"],
+      "design":{"randomizedControlledTrial":false,"singleGroup":true,"enrolledDyads":16,"treatedDyads":15,"articleOutcomeDyads":13,"registryTreatmentCompletedDyads":14,"registryCompletionNotSameAsPostAssessment":true,"fiveIndividualThenTenGroup":true,"protocolRefinedAcrossFirstTwoCohorts":true},
+      "authorship":{"developer":"LouiseMahoney, terapeuta yoga certificada e equipe de instrutores","teachersMinimumTrainingHours":200,"allRegisteredYogaTeachers":true,"locator":"JATSsec10"},
+      "delivery":{"weeks":12,"weeklyLiveClassMinutes":75,"homePracticeMinutes":[15,20],"homePracticeNonClassDays":5,"observedPracticeMinutesPerWeek":76,"observedPracticeDaysPerWeek":3.7,"observedAdherenceIsNotPrescribedDose":true,"liveTeacherAndSafetyObserverRequired":true,"caregiverMedicalClearanceRequired":true,"equipment":"internet/camera/tablet, tapete/faixa/blocos/manta/TheraBand/bola; enquadramento adaptado pela equipe","locators":["JATSsec9/10","ProtocolPDF5/7/11/12"]},
+      "caregiverResults":{"locator":"JATStable3-27536130241240405/caregivers","depressionChange":-6.88,"depressionP":0.036,"energyFatigueChange":9.81,"energyFatigueP":0.021,"painP":0.310,"sleepP":0.264,"burdenFrequencyP":0.116,"burdenReactionP":0.102,"prePostNotControlledCausalEfficacy":true,"wholePackageNotIndividualPoseEvidence":true},
+      "operational":{"appendixReceived":true,"appendixLocator":"JATSapp1/table5","appendixIsToolsAndWeeklyThemes":true,"completeStepDoseEndPerGesture":false,"homeworkManualReceived":false,"homeworkVideosReceived":false,"protocolPdfIsNotHomeworkManual":true,"instructionRecords":[]},
+      "safety":{"protocolPage12MovementWithinComfort":true,"modificationsByLiveQualifiedTeacherNotApkAlgorithm":true,"secondInstructorAndResearchAssistantMonitor":true,"locationEmergencyContactsRequiredInTrial":true,"registryReportedEvents":0,"registryPersonsAtRisk":30,"noEventsIsNotZeroRisk":true,"withdrawalFromStudyNotMovementStopResumeRule":true},
+      "conflictsAndLimits":["ArticleDataAnalysis menciona rank-sum, Table3nota signed-rank; nao reparar teste por IA.","Sexo no resumo73%/67% versusTable1 77%/71%; denominadores variaveis do registro, nao igualar semconfirmacao.","Fidelidade alvo95%, observada87%; adequacao nao fingir atingida.","ProtocolPDF7 repete exclusao yoga>=1vez; artigo usa maisde1vez/12meses e outras exclusoes. Edicoes preservadas."],
+      "rights":{"article":"CC BY-NC4.0 empermissionsJATS","commercialExpressionReuseApproved":false,"externalManualVideosLicensed":false,"factsMethodsBlanketBanned":false},
+      "decision":"Condicional: autoria/entrega/desfechos proprios preliminares de cuidador recebidos, nao beneficio causal comprovado nem pacote operacional aprovado. Dupla/ao vivo nao excluem ambiente compativel; nao retirar suporte."},
+    {"sourceId":"PR123","name":"VanPuymbroeck2007 yoga cuidador","doi":"10.1093/ecam/nem075","pmid":"18227920","receipt":"c15-yoga2007-xml.evidencia.json",
+      "design":{"randomized":true,"randomizedYoga":8,"randomizedControl":9,"analysedYoga":6,"analysedControl":7},
+      "authorship":{"developer":"JenniferCameron, instrutora yoga certificada","locator":"JATSsecAPP1/title eacknowledgements"},
+      "dose":{"weeks":8,"classesPerWeek":2,"classMinutes":75,"homeDoseReceived":false,"weeklyInstructorCheckRequired":true},
+      "clinicalResults":{"betweenGroupEndTestsSignificant":false,"lowerBodyStrengthWithinYogaP":"<.05","withinGroupNotBetweenGroupBenefit":true,"caregiverFatiguePoseClaimsAreNotTrialEndpoints":true},
+      "operational":{"appendixReceived":true,"appendixIsPoseNamesAndProposedProperties":true,"movementStepsDoseEndReceived":false,"workbookSequencesPicturesReceived":false,"instructionRecords":[]},
+      "rights":"ArtigoCCBY-NC2.0UK; workbook externo nao licenciado. Fatos/metodos separados de copiar expressao.",
+      "decision":"Referencia: resultado entregrupos NS, anexo nao manual. Nao excluir pelo centro, mas propriedades propostas porpose nao comprovacao clinica de fadiga/dor."},
+    {"sourceId":"PR124","name":"Milbury yoga TRT/cuidador - registro e lead2026","doi":"10.1200/OP-25-01079","registry":"NCT03948100","receipt":"c15-yoga-trt2026-registro-json.evidencia.json",
+      "registry":{"lastUpdate":"2026-10-06","status":"RECRUITING","estimatedPersons":400,"estimatedCompletion":"2027-04-30","hasResults":false,"largeDocsReceived":false},
+      "publishedArticleOnlyWebIndex":{"persons":222,"trialEndPrinted":"2024-11","articleFullBodyReceivedLocally":false,"caregiverBenefitSeparatelyConfirmed":false,"masterYogaTherapistsIayt":true,"sessions":15,"sessionMinutes":60,"sessionsPerWeek":[2,3],"weeks":[5,6],"followupCalls":6,"followupCallMinutes":15},
+      "decision":"Referencia rastreavel: divergencia registro/article nao resolvida, originaloperacional nao recebido. Nao excluir porque cuidador pratica emdupla/campus; efeito paciente nao efeito cuidador, nao programa aprovado."}
+  ],
+  "visualInspection":{"protocolPagesActuallyViewed":[1,5,6,7,11,12,13],"pdfPages":15,"wholePdfVisuallyReviewed":false,"jatsReadingNotPdfViewing":true},
+  "recoveryForApk":"FonteID -> DOI/registro/edicao -> recibo/body/bytes/SHA256 -> JATSsec/app/table ouPDFpagina -> populacao/achado/limite. Nenhum treino importado; sem completar nomes como passos por IA.",
+  "next":"N15-C: buscar homework manual/videos publicos exatos e roteiro; anexos recebidos nao dizer ausentes, mas nao completos. Semretry/bypass/contato/outrasNs/N21/APK. G03/G04 falsos."
+}

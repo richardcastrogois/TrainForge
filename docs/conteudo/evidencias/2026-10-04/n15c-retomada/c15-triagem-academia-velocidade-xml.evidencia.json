@@ -1,0 +1,22 @@
+{
+  "id": "c15-triagem-academia-velocidade-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8350041/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:24:26.325113+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir suplemento de instrucoes em ensaio original de forca/potencia para idosos; sem transformar fragilidade em recomendacao automatica.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8350041/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 278780,
+  "bodyFile": "../raw/c15-triagem-academia-velocidade-xml.xml",
+  "sha256": "313a10ee4bf7b9b82e659759a5126b2df4083316a04f54dc4958568b92fada28"
+}

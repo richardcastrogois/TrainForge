@@ -1,0 +1,81 @@
+{
+  "date":"2026-10-21",
+  "niche":"N15-C",
+  "localBodiesAreResearchEvidenceNotAppAssets":true,
+  "sources":[
+    {
+      "sourceId":"PR259",
+      "title":"Abd-Elraziek, El Awady e Talaat — Benson em idosos com insuficiência renal",
+      "doi":"10.12691/ajnr-5-6-9",
+      "receipt":"n15m-benson-enfermagem2017.evidencia.json",
+      "representation":"HTML integral recebido; métodos, nove passos e licença lidos. Referência editorial2017; metadados2020 divergentes não normalizados.",
+      "professionalEvidence":"Afiliações de enfermagem no HTML. CV primário de Talaat indexado declara PhD/Master/Bachelor em Enfermagem, mas o GET falhouTLS. Não registrar esse CV como recebido nem diploma/registro atual verificados.",
+      "credentialsFailedReceipt":"n15m-talaat-cv.evidencia.json",
+      "population":"Pacientes renais60-80anos, não cuidadores. Quasiexperimento60pessoas, não novo ensaio de cuidador.",
+      "dose":"15min duasvezes/dia; ensino4sessões30-45min e prática hospital/casa. Não importar esse ensino ou regra de refeições paraPR61.",
+      "rights":"CC BY4 explícita no próprio artigo; não grant para material externo não identificado.",
+      "bensonComparison":[
+        {"step":"posição","comparison":"Senta-se confortavelmente; PR61 só exige posição confortável. Não limitar posturaPR61 por este guia."},
+        {"step":"olhos","comparison":"Fechar olhos; PR61 especifica lentamente."},
+        {"step":"relaxamento","comparison":"Pés até topo da cabeça; PR61 termina no rosto. Relaxamento passivo, não contrair grupos comoPMR."},
+        {"step":"respiração","comparison":"Nariz/boca confortavelmente, palavra ou número, exemplo religioso; PR61 usa número1. Não substituir automaticamente por palavra religiosa."},
+        {"step":"tempo/encerramento","comparison":"15min; permanecer com olhos fechados e só depois abrir. PR61 abre lentamente e depois permanece sem levantar. Diferença impede afirmar roteiro integral equivalente."},
+        {"step":"atitude","comparison":"Atitude passiva e distrações comuns; não instrução de ignorar sofrimento/aggravamento."},
+        {"step":"refeições","comparison":"Evitar2h após refeição consta apenas neste guia; não acrescentar ao protocolo do cuidador."}
+      ],
+      "selectedForInitialLibrary":false,
+      "decision":"Referência para futuras escolhas de material; não substituto integral aprovado, não transferência de eficácia/população."
+    },
+    {
+      "sourceId":"PR260",
+      "title":"NCCIH — Relaxation Techniques for Health,2016",
+      "receipt":"n15m-nccih2016-publicdomain.evidencia.json",
+      "pdfPages":8,
+      "textPagesRead":[1,2,3,5,6,8],
+      "visualPagesViewed":[1,5,6,8],
+      "reviewers":"Herbert BensonMD, Jeffery DusekPhD, Janice Kiecolt-GlaserPhD, Kristen HuntleyPhD e David ShurtleffPhD, creditadosPDF8.",
+      "rights":"PDF8 declara conteúdo em domínio público e incentiva duplicação; foto daPDF1 tem créditoThinkstock e fica excluída. Sem licença de logos ou outras obras herdada.",
+      "contribution":"Educação sobre tipos de relaxamento, experiências adversas possíveis e papel dos profissionais; não contém seis etapas de Benson ou roteiro deCD.",
+      "risks":"Ansiedade/pensamentos intrusivos/medo de perder controle ocasionais, raros agravamentos em certas condições/históricos, sintomas graves/persistentes requerem profissional. Isso não é diagnóstico automático ou lista universal de contraindicações.",
+      "dateLimit":"Documento2016; contexto informativo histórico, não atualidade clínica certificada. CamadaNCCIHHTML de12/10 já recebida permanece separada.",
+      "selectedAsTrainingComponent":false,
+      "selectedAsAuxiliaryReference":true
+    },
+    {
+      "sourceId":"PR261",
+      "title":"Caregivers FIRST — Participant Workbook, July2022",
+      "receipt":"n15m-caregiversfirst-workbook2022.evidencia.json",
+      "pdfPages":138,
+      "sha256":"6d6bb7d229a382b9986c2769c8f53f91e15e9c92f527f97babb2a886d5452ee3",
+      "textPagesRead":[1,2,3,4,5,7,11,12,19,20,21,23,25,26,27,40,41,42,43,45,47,48,49,57,58,70,72,73,75,77,78,79,86,87,88,89,90,91,131,132,137,138],
+      "visualPagesViewed":[1,2,12,27,48,49],
+      "wholeBookRead":false,
+      "identityNote":"Capa2022, citação sugerida2020 e referência interna aFacilitatorGuide. Não chamar deSTART nem aplicar licença de outra versão do workbookVA2011 que retornou404.",
+      "authorshipLocator":"PDF2: JoshDadolfMSW autor do currículo; equipeFunctionQUERI/DurhamVA. NewsletterJan2022 PDF6 visualmente conferida identifica MSW,LICSW e papel institucional.",
+      "credentialReceipt":"n15m-first-credencial-newsletter2022.evidencia.json",
+      "credentialRepresentation":"PDF7p sem camada textual útil; contato de páginas inspecionado e página6 vista em detalhe. Não sete páginas lidas integralmente ou OCR inventado.",
+      "governmentPolicyReceipt":"n15m-va-politica-direitos.evidencia.json",
+      "rightsAssessment":"Política VA governa obras produzidas pelo governo, não toda hospedagem ou verba pública. PDF2 identifica currículo/publicação institucionais. Seleção de fatos/parâmetros e localizadores em representação independente; nenhuma cópia comercial do workbook ou de mídia aprovada. Conferência de expressão final antes de publicar.",
+      "selectedComponents":["CG06-SIGNAL","CG06-VISUAL"],
+      "notSelectedComponents":[
+        {"id":"PMR","locator":"PDF26-27","finding":"Alternativa escrita real permite tensar/soltar de pés a cabeça sem computador; não vídeo obrigatório em toda prática. Sem mapa detalhado de cada grupo, não completar tempos/grupos porIA."},
+        {"id":"Triangle","locator":"PDF78-79","finding":"Slide78 quatro repetições versus passos79 uma execução e mais duas. Contagens diferentes; não inventar correção. Contagem4 não foi convertida em4segundos automaticamente."}
+      ],
+      "contextLocators":"PDF5/7/23/45/75 quatro aulas;11-12/19-21 práticaSignal;48-49/70/72-73 visualização;77-79/90-91 revisão e continuidade.",
+      "supportAndEvidenceLimit":"Currículo facilitado com prática própria e revisão. Não ensaio clínico isolado destes componentes ou evidência de eficácia do novo aplicativo. Não transferir obrigações legais/serviços americanos."
+    }
+  ],
+  "reusedPrimaryEvidence":[
+    {"sourceId":"PR42","file":"../../2026-10-12/cg01-estatico/pacote-factual.json","contribution":"Uma ficha física e seus limites/dose/apoio/precauções já conferidos; sem novoGET."},
+    {"sourceId":"PR68","file":"../../2026-10-14/befit-fluxos-treinos-04/revieew-cotejo.json","contribution":"Tese previamente recebida, ap10 e partes/grade; textoPDF83-85/90/92-94/264-272 relido. SI2original vista novamente nesta rodada. Oito variantes iniciais mapeadas, não todas27 aprovadas."},
+    {"sourceId":"PR192","file":"../../2026-10-15/n27-pilates/lote-pilates-solo.json","contribution":"Conferência das três variantes1 e lógica de seleçãoN27. Não selecionadas como réplica das variantesPR136; não dose/efeito de cuidador transferidos."},
+    {"sourceId":"PR166","file":"../../2026-10-15/n24-ciclismo/leitura-seguimento.json","contribution":"Distinção métodos/fatos versus expressão. WIPO primária também relida web21/10; não licença sobre material clínico ou parecer jurídico."}
+  ],
+  "accessFailure":[
+    {"receipt":"n15m-talaat-cv.evidencia.json","result":"Falha de certificadoTLS, sem corpo. Sem desligar verificação, retry ou mirror."},
+    {"receipt":"n15m-benson-oncologia2022.evidencia.json","result":"FalhaDNS, sem corpo. Índice primário mostra20min/encerramento, mas não grant/corpo recebido ou complemento selecionado. Sem retry/rota alternativa."}
+  ],
+  "collection":{"collectorAttempts":7,"http200":5,"retainedBodies":5,"retryAttempts":0,"pdfBodies":3,"pdfPagesTotalReceived":153,"fullPagesVisuallyInspected":11,"credentialContactSheetAlsoInspected":true},
+  "noNewContacts":true,
+  "noAppFigmaDatabaseChanges":true
+}

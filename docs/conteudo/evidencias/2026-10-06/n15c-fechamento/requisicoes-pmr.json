@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-06",
+  "scope": ["N15-C"],
+  "requests": [
+    {
+      "id": "c15-pmr-indonesia-artigo",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/view/12524",
+      "extension": "html",
+      "purpose": "Fonte primaria Ramadia/Ekaputri/Sumandar2023: cuidador para si e licenca CC BY-SA4.0, nao CC BY-SA inferida de indice."
+    },
+    {
+      "id": "c15-pmr-indonesia-pdf",
+      "url": "https://ejurnalmalahayati.ac.id/index.php/kreativitas/article/download/12524/Download%20Artikel",
+      "extension": "pdf",
+      "accept": "application/pdf",
+      "purpose": "Primeira captura integral de intervencao PMR para verificar se instrucoes/dose/progressao sao publicadas, sem completar o modulo citado de terceiros."
+    }
+  ]
+}

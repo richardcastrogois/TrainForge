@@ -1,0 +1,23 @@
+{
+  "id": "c15-jakobsen2015-resultados-html",
+  "url": "https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:55:28.573104+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo integral primarioCCBY4 resultadosdor/adesao e diferencas WORKvsHOME; nao equivalencia domiciliar dos efeitos, verificar cartazes e divergencias.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 115126,
+  "bodyFile": "../raw/c15-jakobsen2015-resultados-html.html",
+  "sha256": "c9345efd9dcb6e77745c3e608fad97fd0da84bb0416f69578ec666c5f73825c5"
+}

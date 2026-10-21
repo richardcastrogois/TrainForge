@@ -1,0 +1,22 @@
+{
+  "id": "c15-revisao-burden-2025-xml",
+  "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1474913/xml",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T11:17:17.535614+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Localizar ensaios de exercicio proprio do cuidador no domicilio, especialmente rotinas publicadas integrais. Revisao nao preenche dose/instrucao de primarios.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1474913/xml",
+  "contentType": "text/xml",
+  "retryAfter": null,
+  "bytes": 109752,
+  "bodyFile": "../raw/c15-revisao-burden-2025-xml.xml",
+  "sha256": "de669093d43d58f159dd87c5effaae8c1afd841b8a230d4f419434c1c17d59b6"
+}

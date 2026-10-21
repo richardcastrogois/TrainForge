@@ -1,0 +1,23 @@
+{
+  "id": "n15m-benson-enfermagem2017",
+  "url": "https://pubs.sciepub.com/ajnr/5/6/9/index.html",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-21T12:37:02.217161+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Nova pista: guia técnico Benson publicado por profissionais de enfermagem comCCBY4; cotejar componente por componente, não transferir elegibilidade de paciente renal para cuidador ou incorporar dose incompatível.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pubs.sciepub.com/ajnr/5/6/9/index.html",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 205560,
+  "bodyFile": "../raw/n15m-benson-enfermagem2017.html",
+  "sha256": "38eeb764e2f5ce06db23e9c047b258fc15ed8f4050ad4224d73af9543d901c21"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n18r-programme-license",
+  "url": "https://programme.app/license",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:57:23.576805+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir alegação free-to-use e exclusão expressa de compilação para serviço concorrente; nenhum vídeo baixado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://programme.app/license",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 15943,
+  "bodyFile": "../raw/n18r-programme-license.html",
+  "sha256": "7eb9e6dfb18463b41db0082de4ed99dcc0e563b61691d9fb3b15a50579bc9988"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-moreira-granada-handle",
+  "url": "https://digibug.ugr.es/handle/10481/54876",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:36:09.801015+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro institucional original, identidade, data de defesa/edicao e licenca da tese; link PDF observado no registro.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://digibug.ugr.es/handle/10481/54876",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 37556,
+  "bodyFile": "../raw/c15-moreira-granada-handle.html",
+  "sha256": "f5b88b6aeda307d2307609ad8cacf1c947dde54d58ab7fb40e6a2dbf3baee8c5"
+}

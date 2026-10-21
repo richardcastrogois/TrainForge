@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "status": "conteudo_documentado_nao_homologado",
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "actor": "cuidador_praticando_para_si",
+  "setting": "casa",
+  "decision": "Secao propria com conteudo humano voltado aos cuidadores; nao treino generico renomeado, nao somente filtro de tempo, nao exercicio da pessoa assistida.",
+  "provenanceInventory": "inventario.json",
+  "contentNature": "Resumos de pesquisa com localizadores; nao textos finais, prescricao, traducao integral, imagens licenciadas ou sessao nova composta por IA.",
+  "sources": [
+    {
+      "id": "PR67",
+      "title": "Guia pratico do cuidador",
+      "authors": ["Ministerio da Saude", "Ana Cristina Fonseca", "Edenice Reis da Silveira"],
+      "edition": "2008, primeira edicao, ISBN978-85-334-1472-3",
+      "population": "Cuidador; orientacao educativa, nao amostra de ensaio nem elegibilidade clinica universal.",
+      "delivery": "Orientacao ilustrada para autocuidado; nao protocolo de treino autonomo com dose/progressao completas.",
+      "rightsLocator": {"pdfPage": 2},
+      "rights": "Reproducao condicionada a citacao e ausencia de venda ou qualquer fim comercial; nao licenca para incorporacao comercial.",
+      "commercialAdaptationApproved": false,
+      "clinicalEvidence": "Manual institucional, nao prova de eficacia de cada movimento.",
+      "bounds": "Usar secao7.1, paginas12-13, para o cuidador. Secao16 tem outro praticante: pessoa cuidada."
+    },
+    {
+      "id": "PR52",
+      "title": "Atividade fisica nos cuidadores de pacientes com Esclerose Lateral Amiotrofica",
+      "authors": ["Emilia Marcia Gomes de Souza e Silva", "Luciana Protasio de Melo", "Mariana Dantas de Carvalho Vilar", "Tatiana Souza Ribeiro", "Ana Raquel Rodrigues Lindquist", "Glauciane Costa Santana"],
+      "edition": "SEDIS-UFRN2021, ISBN978-65-5569-154-2, Appendix B da tese2023 recebida",
+      "population": "Cuidadores informais adultos de pessoas com ELA; criterios do estudo registrados em leitura-cartilha-ela.json. Nao extrapolar para profissionais, todos os idosos ou cuidadores com qualquer condicao.",
+      "delivery": "Programa de autocuidado com visita de fisioterapeuta e acompanhamento da equipe; nao substituir acompanhamento por selecao automatica no app.",
+      "rightsLocator": {"pdfPage": 117},
+      "rights": "CC BY-ND4.0 especifica da cartilha: compartilhamento inalterado e adaptacao em cartoes/traducao sao caminhos distintos. Adaptacao integrada nao aprovada.",
+      "commercialAdaptationApproved": false,
+      "clinicalEvidence": "Protocolo2023 nao e resultado. Piloto da tese17participantes, sem diferenca intergrupos significativa; nao beneficio comprovado por exercicio.",
+      "bounds": "Os quatro registros abaixo sao parte da semana2, nao seu programa completo nem uma nova sequencia de quatro exercicios."
+    },
+    {
+      "id": "PR63",
+      "title": "Caregiver Workbook V3, Module1",
+      "authors": ["U.S. Department of Veterans Affairs, Caregiver Support Program"],
+      "edition": "V3, modulo1 recebido54paginas; data editorial nao demonstrada",
+      "population": "Family Caregiver de veterano, orientacao educativa; nao ensaio de efeito clinico individual.",
+      "delivery": "Tecnicas de relaxamento apresentadas para uso independente ou combinado na fonte; nao programa de forca ou ciclo semanal.",
+      "rightsLocator": {"pdfPages": [21, 22, 23]},
+      "rights": "Direitos de todos os ativos/fotos nao demonstrados; nao presumir dominio publico integral pelo editor institucional.",
+      "commercialAdaptationApproved": false,
+      "clinicalEvidence": "Finalidade educativa de relaxamento; nao promessa de tratar estresse, insonia ou lesao.",
+      "bounds": "Preservar duas tecnicas separadas. Progressivo no nome da tecnica muscular nao significa progressao semanal de carga."
+    }
+  ],
+  "sourceContainers": [
+    {"id":"C15-MS-7.1","sourceId":"PR67","sourceTitle":"Dicas de exercicios para o cuidador","pdfPages":[12,13],"kind":"secao_educativa","originalSourceOrder":["C15-MS-PESCOCO","C15-MS-OMBROS","C15-MS-BRACOS","C15-MS-TRONCO","C15-MS-PERNAS"],"coverage":"Cinco grupos desta secao, nao cinco sessoes completas.","completeExecutableSession":false,"releaseApproved":false,"missing":["dose numerica completa","frequencia","progressao","direitos comerciais"]},
+    {"id":"C15-ELA-S2","sourceId":"PR52","sourceTitle":"Semana2, bem-estar fisico","pdfPages":[128,143,144,146,147],"kind":"parte_de_programa_humano","documentedSubsetInSourceOrder":["C15-ELA-BASTAO","C15-ELA-PONTE","C15-ELA-PERNA-LATERAL","C15-ELA-PRANCHA"],"coverage":"Selecao documental parcial, com outros movimentos entre estes na fonte. Nao instrucao para executa-los juntos.","completeExecutableSession":false,"releaseApproved":false,"missing":["agenda/ciclo executavel","progressao","resolucao de ambiguidades do restante da cartilha","entrega compativel","direitos para adaptacao"]},
+    {"id":"C15-VA-RELAX","sourceId":"PR63","sourceTitle":"Relaxation techniques","pdfPages":[21,22,23],"kind":"duas_tecnicas_distintas","separateRoutines":["C15-VA-RESPIRACAO","C15-VA-RELAX-MUSCULAR"],"coverage":"Duas rotinas descritas na fonte, nao prescricao semanal nem substituto de fortalecimento.","completeExecutableSession":false,"releaseApproved":false,"missing":["criterios de uso/autonomia compativeis com o produto","direitos por ativo","ciclo/programa se anunciado como treino estruturado"]}
+  ],
+  "records": [
+    {"id":"C15-MS-PESCOCO","sourceId":"PR67","containerId":"C15-MS-7.1","name":"Mobilidade do pescoco","locator":{"pdfPage":12,"section":"7.1"},"theme":"mobilidade","instructionSummary":"Flexao/extensao, rotacao e inclinacao lateral.","equipment":[],"sourceDose":{"numeric":null},"missing":["repeticoes","duracao","frequencia","progressao"],"purposeBasis":"Grupo de autocuidado selecionado pelos autores, nao efeito clinico por movimento.","releaseApproved":false},
+    {"id":"C15-MS-OMBROS","sourceId":"PR67","containerId":"C15-MS-7.1","name":"Movimentos dos ombros","locator":{"pdfPage":12,"section":"7.1"},"theme":"mobilidade","instructionSummary":"Elevacao e soltura associadas a respiracao; movimentos circulares.","equipment":[],"sourceDose":{"numeric":null},"missing":["repeticoes","duracao","frequencia","progressao"],"purposeBasis":"Autocuidado na fonte; nao prova isolada de reducao de dor.","releaseApproved":false},
+    {"id":"C15-MS-BRACOS","sourceId":"PR67","containerId":"C15-MS-7.1","name":"Movimentos dos bracos","locator":{"pdfPage":12,"section":"7.1"},"theme":"mobilidade","instructionSummary":"Circulos para frente e para tras com bracos estendidos.","equipment":[],"sourceDose":{"numeric":null},"missing":["repeticoes","duracao","frequencia","progressao"],"purposeBasis":"Autocuidado na fonte, nao treinamento comprovado para transferir pacientes.","releaseApproved":false},
+    {"id":"C15-MS-TRONCO","sourceId":"PR67","containerId":"C15-MS-7.1","name":"Inclinacao lateral do tronco","locator":{"pdfPage":13,"section":"7.1"},"theme":"mobilidade","instructionSummary":"Em pe, apoio de cadeira ou mao na cintura, braco elevado; alternancia de lados.","equipment":["cadeira quando usada como apoio"],"sourceDose":{"numeric":null},"missing":["repeticoes","duracao","frequencia","progressao"],"purposeBasis":"Autocuidado na fonte; nao prevencao de lesao demonstrada.","releaseApproved":false},
+    {"id":"C15-MS-PERNAS","sourceId":"PR67","containerId":"C15-MS-7.1","name":"Joelho ao peito alternado","locator":{"pdfPage":13,"section":"7.1"},"theme":"mobilidade","instructionSummary":"Deitado de costas, aproximacao alternada de joelho ao peito.","equipment":[],"sourceDose":{"holdQualitative":"alguns segundos","holdSeconds":null},"missing":["duracao numerica","repeticoes","frequencia","progressao"],"purposeBasis":"Autocuidado na fonte; imagem nao comprova elegibilidade de idoso fragil.","releaseApproved":false},
+    {"id":"C15-ELA-BASTAO","sourceId":"PR52","containerId":"C15-ELA-S2","name":"Movimentos com bastao","locator":{"pdfPage":143,"printedPage":29,"figure":13},"theme":"exercicio_fisico","instructionSummary":"Movimentos de bracos/ombros com bastao ilustrados em diferentes direcoes.","equipment":["bastao/cabo de vassoura"],"sourceDose":{"sets":3,"repetitions":10,"restSeconds":60},"missing":["carga individual","frequencia deste movimento","progressao"],"purposeBasis":"Componente fisico do programa dos autores para cuidadores de ELA; nao eficacia isolada.","releaseApproved":false},
+    {"id":"C15-ELA-PONTE","sourceId":"PR52","containerId":"C15-ELA-S2","name":"Ponte","locator":{"pdfPage":144,"printedPage":30,"figure":14},"theme":"exercicio_fisico","instructionSummary":"Elevacao do quadril em decubito dorsal com joelhos flexionados.","equipment":[],"sourceDose":{"sets":3,"repetitions":10,"holdCount":5,"holdSeconds":null,"restSeconds":60},"missing":["duracao em segundos da contagem","frequencia deste movimento","progressao"],"purposeBasis":"Componente fisico do programa especifico, nao indicacao automatica para dor lombar.","releaseApproved":false},
+    {"id":"C15-ELA-PERNA-LATERAL","sourceId":"PR52","containerId":"C15-ELA-S2","name":"Elevacao lateral da perna","locator":{"pdfPage":146,"printedPage":32,"figure":16},"theme":"exercicio_fisico","instructionSummary":"Em decubito lateral, elevacao da perna estendida.","equipment":[],"sourceDose":{"sets":3,"repetitionsPerLeg":8,"restSeconds":null},"missing":["intervalo nao explicitado nesta pagina","frequencia deste movimento","progressao"],"purposeBasis":"Componente fisico do programa especifico. Nao herdar intervalo de outro movimento/pagina automaticamente.","releaseApproved":false},
+    {"id":"C15-ELA-PRANCHA","sourceId":"PR52","containerId":"C15-ELA-S2","name":"Prancha","locator":{"pdfPage":147,"printedPage":33,"figure":17},"theme":"exercicio_fisico","instructionSummary":"Sustentacao ilustrada com alinhamento corporal e exemplo de postura inadequada.","equipment":[],"sourceDose":{"sets":3,"holdSeconds":30,"restSeconds":60},"missing":["frequencia deste movimento","progressao","alternativa individual se nao elegivel"],"purposeBasis":"Programa especifico acompanhado; nao prescricao universal para cuidador cansado ou idoso.","releaseApproved":false},
+    {"id":"C15-VA-RESPIRACAO","sourceId":"PR63","containerId":"C15-VA-RELAX","name":"Respiracao profunda","locator":{"pdfPage":22,"printedPage":32,"steps":8},"theme":"relaxamento","instructionSummary":"Tecnica sentada ou deitada, com atencao a respiracao abdominal.","equipment":[],"sourceDose":{"inhaleCount":10,"exhaleCount":10,"inhaleSeconds":null,"exhaleSeconds":null,"durationQualitative":"varios minutos","durationSeconds":null},"missing":["duracao numerica","frequencia","criterios de adaptacao"],"purposeBasis":"Tecnica educativa de relaxamento do proprio cuidador. Contagens nao sao segundos.","releaseApproved":false},
+    {"id":"C15-VA-RELAX-MUSCULAR","sourceId":"PR63","containerId":"C15-VA-RELAX","name":"Relaxamento muscular progressivo","locator":{"pdfPage":23,"printedPage":33,"steps":5,"muscleGroups":11},"theme":"relaxamento","instructionSummary":"Sequencia muscular da cabeca aos pes com contracao e soltura.","equipment":[],"sourceDose":{"initialBreathingApproxSeconds":60,"contractionSeconds":10,"releaseSeconds":null,"repetitions":null},"missing":["duracao da soltura","repeticoes","frequencia","criterios individuais"],"purposeBasis":"Tecnica educativa para relaxamento, nao programa progressivo de sobrecarga nem tratamento comprovado nesta fonte.","releaseApproved":false}
+  ],
+  "apkHandoff": {
+    "implemented": false,
+    "importAllowed": false,
+    "lookup": "record.id -> sourceId -> inventario.sources[sourceId] -> record do recibo -> bodyFile/hash; locator fornece pagina/secao/figura. containerId preserva contexto e ordem original quando publicada.",
+    "fieldProvenance": {"name_instruction_equipment_dose":"Fonte e locator de cada registro; resumos editoriais de pesquisa nao substituem original.","author_edition_population_delivery_rights":"sources[sourceId], completado pelo inventario e leitura-cartilha-ela.json/leitura-manuais.json anteriores.","theme":"Indexacao editorial do projeto, nao alegacao de beneficio clinico.","section_setting":"Requisito do autor: cuidadores para si em casa. Compativel com ambiente nao significa elegibilidade universal."},
+    "publicationGates": ["programa humano completo escolhido sem montar sequencia por IA","publico/ambiente/entrega compativeis","instrucao/dose/progressao demonstradas ou ausencia explicitamente adequada ao tipo de rotina","direitos por texto/imagem/video/adaptacao","revisao editorial e de seguranca","fonte e alteracoes acessiveis em cada sessao publicada"],
+    "claimsForbidden": ["previne lesao ao levantar pacientes","trata lombalgia","reduz sobrecarga em todos os cuidadores","fortalecimento autoriza transferir pessoa sozinho","licenca do artigo cobre cartilha ou fotos externas"]
+  },
+  "sectionContract": {
+    "dimensions": ["publico","praticante","ambiente","finalidade","programa_humano","entrega","elegibilidade","direitos_por_ativo"],
+    "separateExamples": ["cuidadores_para_si_em_casa","idosos_em_casa","jovens_na_praca","idosos_na_praca","idosos_em_academia"],
+    "rule": "Cada secao precisa de conteudo documentado adequado ao cruzamento, nao apenas mudar titulo ou tempo. Um cuidador idoso tem duas caracteristicas, nao duas aprovacoes herdadas.",
+    "otherNichesResearchedThisRound": false,
+    "squareResearchDeferredTo": "N21"
+  },
+  "audit": {
+    "newCollectorCalls": 1,
+    "reusedBodies": 2,
+    "recordCount": 11,
+    "sourceContainerCount": 3,
+    "syntheticSessionsCreated": 0,
+    "approvedExerciseRecords": 0,
+    "renderedPages": 14,
+    "visuallyInspectedPages": {"PR67":[2,12,13],"PR52":[143,144,146,147],"PR63":[22,23]},
+    "correction": "Ponte: contar ate5 nao5segundos; registro historico corrigido mantendo fonte e hash."
+  }
+}

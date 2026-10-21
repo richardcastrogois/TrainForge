@@ -1,0 +1,24 @@
+{
+  "id": "c15-usc-cuidate-capitulo-pdf",
+  "url": "https://backoffice.books.scielo.org/id/dk8c5/pdf/obando-9786287501621-04.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T03:54:08.744893+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Capitulo profissional Cuidando al cuidador, programa Cuidate para cuidar: verificar instrucao, dose, desenho/resultados para o proprio cuidador e CC BY4/terceiros no corpo original, sem sintetizar programa.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://backoffice.books.scielo.org/id/dk8c5/pdf/obando-9786287501621-04.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 475765,
+  "bodyFile": "../raw/c15-usc-cuidate-capitulo-pdf.pdf",
+  "sha256": "d5d8d75d48c4b7257ed2da22706f4eed39e14039f660aa4d1d4f6da18f1636c2",
+  "bodyFormatMatchesRequest": true
+}

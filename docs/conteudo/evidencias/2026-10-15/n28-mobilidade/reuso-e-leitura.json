@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-15",
+  "niche": "N28",
+  "sources": [
+    "CI05",
+    "PR05"
+  ],
+  "receipts": [
+    {
+      "originalEvidenceReceipt": "2026-10-03/n15c-cuidador-casa/n15c-nia-workout.evidencia.json",
+      "originalBodySha256": "2a883215b69723d8c5fa96480fe7e076880668961e3676d6d26e622c9550e56f",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-09-26/network/nhs-strength.evidencia.json",
+      "originalBodySha256": "e67e95807890620cf46b93cf98912f823bf592f21be7cbf16ef90413ed01d8ba",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-09-26/network/nhs-terms.evidencia.json",
+      "originalBodySha256": "c9338c0fa122ce1dba3a14faf5b750e08b13b14d9877efea2459dfb740582929",
+      "rechecked": true,
+      "newNetworkCall": false
+    },
+    {
+      "originalEvidenceReceipt": "2026-09-26/network/nhs-exclusions.evidencia.json",
+      "originalBodySha256": "5fa85780bfabdeb29b4e05bc5025b3423d3c9089e7bfae87576cf62688a4001e",
+      "rechecked": true,
+      "newNetworkCall": false
+    }
+  ],
+  "niaLocators": {
+    "preparation": "PDF4–6",
+    "flexibility": "PDF18–20",
+    "supportAndProvenance": "PDF23–24"
+  },
+  "extractedFacts": [
+    {
+      "movement": "Ankles",
+      "pdfPage": 18,
+      "holdSeconds": [
+        10,
+        30
+      ],
+      "directions": 2,
+      "repetitions": [
+        3,
+        5
+      ],
+      "knownHoldTotalSeconds": [
+        60,
+        300
+      ]
+    },
+    {
+      "movement": "Back",
+      "pdfPage": 19,
+      "holdSeconds": [
+        10,
+        30
+      ],
+      "sides": 2,
+      "repetitionsPerSide": [
+        3,
+        5
+      ],
+      "knownHoldTotalSeconds": [
+        60,
+        300
+      ],
+      "caution": "Cirurgia prévia deanca/costas: falarcomomédico antes."
+    },
+    {
+      "movement": "Thigh",
+      "pdfPage": 20,
+      "holdSeconds": [
+        10,
+        30
+      ],
+      "sides": 2,
+      "repetitionsPerSide": [
+        3,
+        5
+      ],
+      "knownHoldTotalSeconds": [
+        60,
+        300
+      ],
+      "support": "Cadeira estável; alternativa comtoalha/cinto/faixa se necessária, semdobrarjoelhoalémdacapacidade."
+    }
+  ],
+  "doseNote": "Trêsalongamentos somam3–15min sódesustentações nos extremos dosintervalos, antes detransições. O about5min paraquatroexercícios noPDF18 éaproximado, não cronômetro quecomparta automaticamente todasascombinações máximas.",
+  "missingShoulderHold": "PDF21 holdnãoexplicitado, nãoinventar.",
+  "nhsSource": "Sentar/levantar reutilizado de PR05. Novo corpo da mesma coleção Balance exercises confirma degrau dosado. Flexibility exercises confirma rotação cervical e hold; não usar hold ausente do calf stretch.",
+  "authorshipCaution": "NIH/NIA é autoria institucional deWorkoutToGo. SandyMagrath énomeada comopersonaltrainer doDVD não recebido; depoimento deSamarendraDuttaMDPhD nãoautoriadocaderno. Paineldeoutroguia/ediçãonãoatribuídoautomaticamente.",
+  "n15RemainsPaused": true,
+  "releaseApproved": false,
+  "visuallyReviewed": {
+    "source": "CI05 Workout to Go, reimpresso março 2015",
+    "pdfPages": [
+      7,
+      18,
+      19,
+      20,
+      23,
+      24
+    ],
+    "panels": [
+      "../raw/n28-nia-painel-1.png",
+      "../raw/n28-nia-painel-2.png"
+    ],
+    "actuallyViewed": true
+  }
+}

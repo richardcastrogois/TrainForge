@@ -1,0 +1,21 @@
+{
+  "id": "n15i-nhs-sentado",
+  "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T23:18:22.632356+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir rotina sentada domiciliar e limites; nao presumir indicacao geriatrica universal.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 43424,
+  "bodyFile": "../raw/n15i-nhs-sentado.html",
+  "sha256": "34635bd9aff76a9f05011b6630d5764ddcfeb2499cbb090ab5b700c18f651e03"
+}

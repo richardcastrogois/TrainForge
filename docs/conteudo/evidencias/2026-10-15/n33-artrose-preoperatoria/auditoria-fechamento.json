@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-15",
+  "niche": "N33",
+  "researchClosed": true,
+  "scope": "Seis grupos de componentes nível1 nos círculos2–4 de NEMEX-TJR, para pesquisa de um subnicho clínico supervisionado. Não sessão completa ou tratamento autônomo.",
+  "selectedContent": "componentes-profissionais.json",
+  "sourceEvidence": "fontes-e-evidencias.json",
+  "criterion": "Uma condição/população/fase por subnicho; fonte, ambiente, supervisão e direitos; sem transposição de públicos.",
+  "criteria": [
+    {
+      "criterion": "Condição/população/fase explícitas",
+      "met": true,
+      "evidence": "Artrose primária grave pré-artroplastia,60–77anos;76pessoas. Excluídos/pós-operatório/dependência não incluídos por inferência."
+    },
+    {
+      "criterion": "Conteúdo humano documentado, autoria e apoio",
+      "met": true,
+      "evidence": "Seis grupos de componentesL1 com comandos, dose original, equipamento, lacunas e níveis separados. Dois grupos de tronco e alongamentos não são guias autônomos completos. Não declarar sessão completa pronta."
+    },
+    {
+      "criterion": "Quatro contextos e pessoas distintos",
+      "met": true,
+      "evidence": "Instalação com fisioterapeuta limitada; casa/cuidador próprios pendentes; praça não coberta. Sem equivalência de kit ou cuidado simultâneo."
+    },
+    {
+      "criterion": "Direitos, custo e qualidade da evidência",
+      "met": true,
+      "evidence": "CCBY2explícito artigo/suplemento; nenhum ativo de pessoas exportado. Viabilidade/eventos/estudo2013sobreposto registrados; acesso público não significa oferta profissional grátis."
+    }
+  ],
+  "whyClosureIsLimitedButSubstantive": "Fecha pesquisa de componentes de um subnicho com método publicado e contexto profissional real, conforme composição humana autorizada. Não mascara ausências como aprovação: sessão integral autônoma continua não obtida, e os itens sem roteiro foram excluídos da seleção. Não é fechamento de todas as condições clínicas.",
+  "notClosedFor": [
+    "SessãoNEMEXintegral autônoma noapp",
+    "Pacientes pós-artroplastia ou dependentes/demência",
+    "Programa doméstico do cuidador com dor própria",
+    "Eficácia clínica das seis fichas isoladas",
+    "Ofertas ou mídia publicadas"
+  ],
+  "remainingBeforePublication": [
+    "Revisão clínica/editorial e de compreensão dos componentes e critérios reais",
+    "Avaliação, ensino, ajustes e supervisão como no caminho descrito; não existe serviço contratado peloTrainForge",
+    "Se pretender sessão inteira/autonomia, resolver gestos de tronco/alongamentos, transições, lados/ancoragem/apoios e conteúdo final fiel antes de oferecer",
+    "Revisão de licença/atribuição dos ativos finais, imagem e finalidade clínica do produto"
+  ],
+  "nextNiche": "N34",
+  "releaseApproved": false,
+  "appImplemented": false
+}

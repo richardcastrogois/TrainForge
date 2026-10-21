@@ -1,0 +1,25 @@
+{
+  "id": "c15-sui2023-pmc-app1-docx",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app1.docx",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:56:08.104238+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Link107publicado emPMC; anexo da sessao, primeira coleta na origem depositaria. Sem executar arquivo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9989915/bin/formative_v7i1e42861_app1.docx",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1817,
+  "bodyFile": "../raw/c15-sui2023-pmc-app1-docx.docx",
+  "sha256": "6b5d71b1f1f32bec860088a9dd1ebd03707210bd18bc37f92e0242ea13a8b83d",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 200 body is not the requested binary format; retained for audit, no retry"
+}

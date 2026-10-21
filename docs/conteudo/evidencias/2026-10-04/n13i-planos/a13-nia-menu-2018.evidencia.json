@@ -1,0 +1,22 @@
+{
+  "id": "a13-nia-menu-2018",
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo115563/pdf/GOVPUB-HE20_3850-PURL-gpo115563.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:34:11.201124+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Publicacao humana NIA de 2018 para envelhecimento: verificar menus completos, contexto e avisos sem reproduzir fotos ou prescrever dieta.",
+  "maxBytes": 4194304,
+  "client": "urllib; default TLS; timeout 25s; max 4 MiB; no retries",
+  "resolvedUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo115563/pdf/GOVPUB-HE20_3850-PURL-gpo115563.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2339245,
+  "bodyFile": "../raw/a13-nia-menu-2018.pdf",
+  "sha256": "0e09adc15333a19de58112f00bdf65852b7213ebf6aba289fe92fd4dd5ed5fc6"
+}

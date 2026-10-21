@@ -1,0 +1,52 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n15c-prieto-cuidadores",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9367957/",
+      "extension": "html",
+      "purpose": "Verificar treino proprio domiciliar de cuidadoras, dose, supervisao, completude e licenca do artigo."
+    },
+    {
+      "id": "n15c-carers-videos",
+      "url": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/",
+      "extension": "html",
+      "purpose": "Verificar oferta original de sessoes para o proprio cuidador e metadados; nao baixar ou aprovar videos."
+    },
+    {
+      "id": "n15c-carers-sessoes",
+      "url": "https://www.carersuk.org/scotland/help-and-advice/your-health-and-wellbeing/carers-active-hub/carers-active-online-sessions/",
+      "extension": "html",
+      "purpose": "Verificar sessoes domesticas de cuidadores e pausas previstas pela fonte; nao inventar ciclo/progressao."
+    },
+    {
+      "id": "n15c-carers-termos",
+      "url": "https://www.carersuk.org/terms-and-conditions/",
+      "extension": "html",
+      "purpose": "Verificar direitos de texto, traducao, videos, reproducoes comerciais e terceiros."
+    },
+    {
+      "id": "n15c-li-cuidadores",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12465894/",
+      "extension": "html",
+      "purpose": "Verificar ensaio domiciliar para cuidadores e se tabela semanal equivale a programa completo executavel."
+    },
+    {
+      "id": "n15c-carers-longos",
+      "url": "https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/carers-active-hub/physical-activity-and-wellbeing-videos/longer-workout-videos/",
+      "extension": "html",
+      "purpose": "Conferir pagina de sessoes mais longas observada no indice, sem baixar midia ou presumir direitos."
+    },
+    {
+      "id": "n15c-sono-protocolo",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13008454/",
+      "extension": "html",
+      "purpose": "Verificar protocolo humano com treino proprio dos cuidadores e suplemento, antes de considera-lo completo; falha web anterior foi cache miss, nao corpo local recebido."
+    }
+  ],
+  "reused": [
+    "2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+    "2026-10-03/n14c-cuidador/pesquisa-complemento.json"
+  ]
+}

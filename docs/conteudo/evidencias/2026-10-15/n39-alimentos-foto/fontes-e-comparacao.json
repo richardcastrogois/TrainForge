@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "researchClosed": false,
+  "sources": [
+    {
+      "id": "PR211",
+      "name": "Food-101 — Bossard, Guillaumin e Van Gool,2014",
+      "kind": "Dataset/classificação de101pratos, não modelo pronto ou base nutricional",
+      "primaryUrl": "https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/",
+      "otherUrls": [
+        "https://huggingface.co/datasets/nateraw/food101/blob/main/food101.py"
+      ],
+      "authors": "LukasBossard, MatthieuGuillaumin, LucVanGool/ETH, ECCV2014; scriptHuggingFacecomcontribuidores temlicençaprópria.",
+      "evidence": "Leituraprimáriaweb e scriptdo dataset declarado pelomodelo, semdownloadde101milimagens/5GB.",
+      "finding": "101categorias,1000imagensporclasse;750treino não limpo,250testemanualmenteconferido. Nãoé teste dePortugal/pratomisto/idosos.",
+      "rights": "Aviso _LICENSE de imagens Foodspotting recebido no loader histórico ethz/food101 (pai 6981991), não no nateraw atual. Apache do script/modelo não libera fotografias. Ver relatorio.md e n39-food101-historical-license.evidencia.json.",
+      "status": "referencia"
+    },
+    {
+      "id": "PR212",
+      "name": "Google Nutrition5k — dados visuais/ingredientes anotados",
+      "kind": "Datasetmultimodal anotado, nãoAPI/reconhecedor pronto",
+      "primaryUrl": "https://github.com/google-research-datasets/Nutrition5k",
+      "authors": "QuinThames,ArjunKarpur,WadeNorris,FangtingXia,LiviuPanait,TobiasWeyand,JackSim,CVPR2021.",
+      "evidence": "READMEoriginal recebido4GETslote,7.4KB; repo web informa arquivo desde19/04/2026. Não baixar181.4GB, mídias outreinar.",
+      "finding": "5006pratosdecafetariasCalifórnia com4vídeos/RGB-Dquando disponível/ingredientes/massas/nutrientes e splits porprato. Região/equipamentodiferentesdefotoRGBarbitráriaportuguesa.",
+      "rights": "READMEprimárioligaCCBY4.0eexplicitacomercial, compartir/adaptarcomcrédito. Não licençaautomaticade modeloapontadoemoutrosite, nemprova de equivalência dequantidade porRGBúnico.",
+      "cost": "Metadados gratuitos;conjuntointeiro181.4GBnominal,não cabe nos125.79GiBlivresobservados; hádownloadporarquivos/subconjuntos, sempresumirnecessidadedoconjuntointeiro. Armazenamento/processamento/treinamento não orçados.",
+      "status": "condicional"
+    },
+    {
+      "id": "PR213",
+      "name": "nateraw/food — ViT ajustado paraFood-101",
+      "kind": "Modeloespecíficodeclassificação alimentar101classes",
+      "primaryUrl": "https://huggingface.co/nateraw/food",
+      "otherUrls": [
+        "https://huggingface.co/nateraw/food/tree/main"
+      ],
+      "authors": "Contaautoralmantenedoranateraw, ajuste degoogle/vit-base-patch16-224-in21k; nãopresumirqualificaçãonutricionaloulicençaprofissional.",
+      "evidence": "API/card/config recebidos. SHAobservadodomodelrepo8991abd49ea01ebf502aeda51d4f12a59c603e01,mainlastModified2022-05-17.101IDs0–100 e relaçãoid2label/label2idconferidas localmente. Nenhuma inferência oupeso baixado.",
+      "finding": "Acurácia0.8913auto-relatadaemvalidaçãoFood101, verified:falsenaAPI. Não precisãoIndividual89%/confiançacalibrada. Carddeixadescrição/limitações/dados comoMoreinformationneeded. Saídaéclassedeprato; não ingredientesocultos,gramas,alérgenos,consumooumetaindividual.",
+      "rights": "Apache2.0declaradoemmodelcard/APIpara oartefatodemodelo. Não licenciafotosFood101. Origemdoconjunto/imagens/detalhesdetreino e usoalvoprecisamrevisãoantesdedistribuiçãodopesofinal; não declararautomaticamenteilegalouliberado integralmente.",
+      "cost": "Repositório público/ungated, peso344MBnominal e inferêncialocalnãocobraporconsulta,masrequer runtime/hardware/energia e manutenção. RuntimePythonbundledpesquisado não temTorch/Transformers/ONNXRuntime/TensorFlow/Safetensors;nenhuminstrumentonovoinstalado. OutroseventuaisambientesdamáquinanãoinventariadosnestaN.",
+      "status": "condicional"
+    },
+    {
+      "id": "PR214",
+      "name": "LogMeal — reconhecimento alimentar especializado emnuvem",
+      "kind": "APIcomercialespecífica, semconta/teste realizado",
+      "primaryUrl": "https://docs.logmeal.com/docs/guides-getting-started-quickstart",
+      "otherUrls": [
+        "https://logmeal.com/api/pricing/",
+        "https://docs.logmeal.com/docs/guides-features-overview",
+        "https://logmeal.com/solutions/food-ai-engine"
+      ],
+      "authors": "LogMeal, fornecedorempresarial; nenhumvínculoBeFitcomprovado.",
+      "evidence": "Leituraprimáriawebdocs/pricing, nenhumPOST/token/contaoufotografiasenviadas.",
+      "finding": "APIretornacandidatos/regiões eprevêconfirmação/correçãopeloparticipante. Reconhecimento, ingredientesinformados econsulta denutrientes não sãoavaliaçãodemassaconsumida independentementedemétodo.",
+      "rights": "Usodocontrato/serviçodiferentedeextrairbiblioteca/pesos/imagens. Nenhumgrantdecopiademídiainferido. Política deprivacidade/retenção e termos decontrataçãocompletos ainda não auditados.",
+      "cost": "PáginaPricing:trialapenasnovosmembros,limite30diasou200consultase5usuários,semcartãoobrigatório;depoisserviçocontinuasócomplanopago. Overviewdizacessoa todosendpoints duranteotrial,nãoprova chamadasilimitadas. Preçoexatoativo/mensalanualIVA/créditos a conferirantesdecontratar, semprometer144€/mêssemconfirmaralternânciadeplano.",
+      "status": "incompativel_zero"
+    }
+  ],
+  "localReceipts": [
+    {
+      "receipt": "n39-nateraw-api.evidencia.json",
+      "bytes": 6095,
+      "sha256": "e751d986bdde6edf06d37947e11d39f4c7f589b2f0ce07d0fdf409b03d5f925b",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n39-nateraw-card.evidencia.json",
+      "bytes": 1957,
+      "sha256": "823de76756742d00f98cc2d001199cf3187c2fedb61835154d05ddf088241d95",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n39-nateraw-config.evidencia.json",
+      "bytes": 5582,
+      "sha256": "cd32772fee89687d2408c6c98e2b3b61508e2272df4e22c723e7c9ec97380c51",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n39-nutrition5k-readme.evidencia.json",
+      "bytes": 7400,
+      "sha256": "4c77ceab6dfcaf7b23019fae6c323f237f93ecd4213ebe44b36b8f8583c84ae0",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n39-nateraw-preprocessor.evidencia.json",
+      "bytes": 228,
+      "sha256": "af4eb4d79cf61b47010fc0bc9352ee967579c417423b4917188d809b7e048948",
+      "hashMatches": true,
+      "httpStatus": 200
+    },
+    {
+      "receipt": "n39-vit-base-card.evidencia.json",
+      "bytes": 5392,
+      "sha256": "84af54abe161ae2ad3cd5862bfb47ebc5e502398f3b243470a1681aca4b6c611",
+      "hashMatches": true,
+      "httpStatus": 200
+    }
+  ],
+  "newLocalGets": 6,
+  "usefulBodies": 6,
+  "hashesVerified": 6,
+  "weightsDownloaded": false,
+  "imagesDownloaded": false,
+  "imagesSentToExternalService": false,
+  "inferencePerformed": false,
+  "collectionDiscovery": "Partiu dedataset/autores/paper; Nutrition5klevou aoMobileFoodSegmentationmodeloTFHub, que redirecionouparaKagglecom0linhasnoleitor. Não afirmar classes/licença/arquivo dessemodelo recebidos nemcontornarlogin. ModeloHFespecializado eAPIcomercialcomparadosàmatriz,não apenas buscasporpalavra.",
+  "noBefitSupplierAttribution": true,
+  "followup": {
+    "baseModel": "Cardgoogle/vit-base-patch16-224-in21katualdeclaratambémApache2.0; créditosdaconversãoRossWightman/timm ecardredigidopeloHuggingFace. Nãoéclassifierde101pratos e não prova revisãodabaseoriginaldetreino. SemlicençadefotografiasImageNetinferida.",
+    "preprocessing": "Arquivo228bytesdafinetunerevisãopública recebido,do_resize/do_normalize,size224,mean/std0.5,resample2. Processador/transformaçãoefetiva/versãonãoexecutados, defaultsrescale/canais/crop precisamcontratoreprodutível.",
+    "runtimeInventory": "PythoncomandoWindowsAp psexposto éalias, py nãofoiretorno. PackagesNodebundled@huggingface/transformers,@xenova/transformers,onnxruntime-node/webnãoencontrados. Nãoescaneoutodosambientesouinstalouframework."
+  },
+  "latestFollowup": "fontes-e-seguimento.json",
+  "historicalSnapshot": "As contagens de 6 GETs abaixo descrevem o primeiro levantamento N39. A continuação tem novos recibos e corrige a atribuição do aviso de licença Food101."
+}

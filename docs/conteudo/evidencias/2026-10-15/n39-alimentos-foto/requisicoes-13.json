@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "id": "n39-nateraw-dataset-infos",
+      "url": "https://huggingface.co/datasets/nateraw/food101/resolve/66550ec/dataset_infos.json",
+      "purpose": "Nova pista da busca primária: features e task_templates têm ordens diferentes nas classes 16/17. Conferir metadados declarados pelo autor, sem baixar imagens ou executar loader.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-cheesecake-supplement-metadata",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&iiurlwidth=640&titles=File%3ACheesecake+slice+%28Los+Angeles%29+July+2023.jpg",
+      "purpose": "Arquivo suplementar distinto e CC0 para verificar a segunda classe 16/17 após duas respostas 429 do lote inicial. Não repetir nem obter por rota alternativa os dois arquivos bloqueados; registrar lote inicial incompleto. Somente metadados deste novo arquivo.",
+      "extension": "json"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "niche": "N11-I",
+  "date": "2026-10-03",
+  "status": "parcial",
+  "researchRoundComplete": true,
+  "verifiedEvidenceBodies": 3,
+  "verifiedDependencies": 2,
+  "proposedOperations": 7,
+  "fictionalScenarios": 7,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "appTestsRun": false,
+  "legalOrClinicalValidationPerformed": false,
+  "sourceEvidence": [
+    {
+      "record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "sha256": "82455b95b57231a0c840acb384e4796a47e0cfdf157887516ba5b229d9de06c7"
+    },
+    {
+      "record": "2026-10-02/n11-manutencao-habitos/n11-niddk-copyright.evidencia.json",
+      "url": "https://www.niddk.nih.gov/copyright",
+      "sha256": "c11dd24f95f04af9eaf3c54513f61d8c2b995b682b7550750e8f5e82127bf1b5"
+    },
+    {
+      "record": "2026-10-03/revisao-idosos-cuidadores/ic-cdc-caregivers.evidencia.json",
+      "url": "https://www.cdc.gov/still-going-strong/caregivers/index.html",
+      "sha256": "d0f5a24e8a9ea46f53f58c1277f77fcb058b0e2dd68cc0680ecf42bf3a8d1d21"
+    }
+  ],
+  "dependencyEvidence": [
+    {
+      "file": "2026-10-02/n11-manutencao-habitos/conteudo-guiado.json",
+      "artifactSha256": "b71e0f0bbe43a96e09469d47f1533014ef48f74c514e19d6c8d03618e43ba221"
+    },
+    {
+      "file": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "artifactSha256": "1a8fbe166cd073e5ad652cc224d89eaf7916450eb25af543cf4c3238e761fdba"
+    }
+  ],
+  "next": "N18"
+}

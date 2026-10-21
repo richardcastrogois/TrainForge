@@ -1,0 +1,23 @@
+{
+  "id": "n35-compendium-use",
+  "url": "https://pacompendium.com/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T22:16:58.910818+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Preservar declaração atual de uso para conjunto60+ novo, distinguindo tabela comercialmente utilizável de licença do artigo/imagens; não baixar biblioteca restrita.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://pacompendium.com/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 137641,
+  "bodyFile": "../raw/n35-compendium-use.html",
+  "sha256": "ca1b147d61eaa5b4d83a28bc91036fcf0399dc6140b879e3cf118a88df6f3ab5"
+}

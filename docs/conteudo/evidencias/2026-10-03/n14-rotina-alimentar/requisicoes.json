@@ -1,0 +1,14 @@
+{
+  "niche": "N14",
+  "date": "2026-10-03",
+  "requests": [
+    {"id": "n14-living-dash", "url": "https://www.nhlbi.nih.gov/health/dash/living-with-dash", "purpose": "Planeamento, substituicoes e diario contextual; distinguir orientacao de requisito funcional proposto.", "extension": "html"}
+  ],
+  "reused": ["N01 identidades", "N02 nutrientes", "N03 porcoes", "N08 receitas", "N11 diario/contexto", "N13 menus e direitos NHLBI"],
+  "webAccessFailures": [
+    {"url": "https://www.myplate.gov/eathealthy/budget/budget-weekly-meals", "readAt": "2026-10-03", "tool": "web open", "status": 403},
+    {"url": "https://www.myplate.gov/tip-sheet/meal-planning", "readAt": "2026-10-03", "tool": "web open", "status": 403},
+    {"url": "https://www.myplate.gov/sites/default/files/2024-06/TipSheet-24-Meal-Planning.pdf", "readAt": "2026-10-03", "tool": "web open", "status": 403}
+  ],
+  "failurePolicy": "Nao repetir bloqueios nem contar resultados de busca como conteudo recebido."
+}

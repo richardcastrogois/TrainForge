@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-12",
+  "activeComponent": "CG-01-STATIC",
+  "targetSourceId": "PR42",
+  "scope": "Somente primeiro componente. Guias auxiliares comparados, nao prescricoes de outros componentes.",
+  "primaryBaseline": {
+    "readings": [
+      "../../2026-10-07/n15c-alongamento-profissional/leitura-fontes.json",
+      "../../2026-10-08/n15c-originais-caser/revalidacao-estatico.json"
+    ],
+    "canonicalReceipts": [
+      "../../2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json",
+      "../../2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json",
+      "../../2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json"
+    ],
+    "doi": "10.3390/ijerph21101361",
+    "trial": "NCT06466239",
+    "sourceInstructionsLocator": "2.3 Procedures / static stretching paragraph; registry armGroups Static Stretching Group",
+    "posture": "Em pe, membro inferior num degrau, joelho estendido, costas retas, mao em direcao aos dedos do pe conforme postura explicitamente compartilhada comPNF.",
+    "dose": {
+      "holdSeconds": 30,
+      "repetitionsPerLeg": 8,
+      "legs": 2,
+      "activeSeconds": 480,
+      "additionalRestOrTransitionSeconds": null,
+      "weeklyFrequency": null
+    },
+    "samePostureDoesNotTransferPnfContractionRestOr65Percent": true,
+    "professionalQualificationReceived": true,
+    "articleLicence": "CC BY4",
+    "clinicalBasis": "30profissionais cuidadores18-40, crossover agudo semcontrole semalongamento; limitacoes/contrastes originais preservados.",
+    "medicalOrSafetyAlgorithmGenerated": false
+  },
+  "gapRevalidation": {
+    "sessionEndpointDefinedByDose": true,
+    "sessionEndpoint": "Concluir oito repeticoes30s para cada perna; nao adicionar retorno/aquecimento novo.",
+    "exactReturnMovementPublishedInAtac": false,
+    "noSpecialCooldownPublishedIsProofSpecialCooldownRequired": false,
+    "fullAlgorithmForEveryPossibleAdverseEventRequired": false,
+    "numericStepHeightRequired": false,
+    "numericFloorAreaRequired": false,
+    "weeklyProgressionForAcuteRequired": false,
+    "videoNotUsedIsRequired": false,
+    "isolatedRctForEachGeneralInstructionRequired": false,
+    "sourceSpecificApplicableSafetyStillNeeded": true,
+    "staticTeachingExplicitlyPublished": false,
+    "registryProfessionalTeachingExplicitForPnfOnly": true,
+    "pnfTeachingAutomaticallyTransferredToStatic": false,
+    "staticUnsupervisedFromFirstAttemptEstablished": false,
+    "supervisedStaticDeliveryNeverOccurredProven": false,
+    "originalTrialDocumentSection": null,
+    "allHealthWorkersAreTrainedToSelfGuideStretch": false
+  },
+  "visualReview": {
+    "pdfId": "cg01-worcs2025-pdf",
+    "pages": 12,
+    "actuallyViewedPages": [
+      1,
+      2,
+      9,
+      11,
+      12
+    ],
+    "allRenderedPagesActuallyViewed": true,
+    "wholePdfVisuallyReviewed": false
+  },
+  "auxiliarySources": [
+    {
+      "guideId": "CG01-AUX-WORCS",
+      "record": "cg01-worcs2025-pdf.evidencia.json",
+      "sha256": "ef96b5038f375cc3a0392f6618e38c3c57bb0078c0ed8aa4c3a1e720f32b4547",
+      "bytes": 793456,
+      "pages": 12,
+      "version": "WAHT-PI-0651 V2.1,09/09/2025,review09/09/2028",
+      "professionalOrigin": "Physiotherapy Department, Worcestershire Acute Hospitals NHS Trust",
+      "locators": {
+        "movement": "PDF9 Exercise15",
+        "preparation": "PDF2",
+        "professionalAdvice": "PDF11",
+        "worseningSymptoms": "PDF12"
+      },
+      "sameProgrammeAsAtac": false,
+      "comparability": "Mesmo grupo muscular e postura em pe num apoio/joelho estendido/costas retas; acrescimos flexao tornozelo/pressao calcanhar e figura maos sobre coxa, nao mesmo roteiro comprovado.",
+      "publishedDose": ">=30s x3, nao30s x8",
+      "containsAtacExitOrInterruptionProtocol": false,
+      "originalMovementOrDoseReplaced": false,
+      "role": "Orientacao geral candidata: movimento suave/gradual, evitar forcar; duvida ou agravamento exige ajuda profissional. Nao clinicamente testada em cuidadores nesta fonte.",
+      "copyrightGrantForIllustrationsReceived": false,
+      "britishServiceNumbersTransferredToApk": false
+    },
+    {
+      "guideId": "CG01-AUX-ROH",
+      "record": "cg01-roh-guia-html.evidencia.json",
+      "sha256": "5f887983548a7a963e3e502b54e51396830b4b6d3e8c690339659444e55514a4",
+      "bytes": 66510,
+      "professionalOrigin": "Royal Orthopaedic Hospital / patient therapy information",
+      "locators": {
+        "movement": "Hamstring Stretch",
+        "stopAdvice": "Further problems",
+        "preparation": "Opening / Warm up and cool down"
+      },
+      "sameProgrammeAsAtac": false,
+      "population": "osteoartrite de quadril, nao cuidadores selecionados",
+      "publishedDose": "20-30s x5 e programa geral3vezes/dia",
+      "hamstringStandingStepBackStraight": true,
+      "hamstringReturnInstructionPublished": false,
+      "returnToStartingPositionBelongsTo": "Bridge/strengthening, nao hamstring",
+      "role": "Orientacao geral candidata de evitar problema/consultar profissional; nao transferir caminhada3-4min,5reps,3vezesdia ou estrategia reduzir carga em flareup.",
+      "allRightsReservedFooterReceived": true,
+      "factsMethodsDistinctFromExpression": true,
+      "originalMovementOrDoseReplaced": false
+    },
+    {
+      "guideId": "CG01-AUX-DYNAMIC",
+      "record": "cg01-dynamic-guia-html.evidencia.json",
+      "sha256": "7191062418409e82f737bce4d03b2d37d73e341a22d6170825fed9cac2e8afbf",
+      "bytes": 101424,
+      "professionalOrigin": "DynamicHealth / East of England Community Health and Care NHS Trust, musculoskeletal physiotherapy",
+      "locators": {
+        "movement": "SectionG/D Hamstring stretch",
+        "effort": "How much exercise should I do"
+      },
+      "sameProgrammeAsAtac": false,
+      "population": "osteoartrite",
+      "publishedDose": "20-30s; intensidadeRPE5-7 e progressao sao do programaOA",
+      "stance": "Em pe/perna a frente/outra ligeiramente dobrada; semdegrau descrito",
+      "returnSlowlyToStartingPositionPublished": true,
+      "sameAtacVariantVerified": false,
+      "role": "Retorno lento recebido para outra variante; nao preencher automaticamente retorno do pe no degrau, nao transferirRPE/algoritmo/objetivoOA.",
+      "originalMovementOrDoseReplaced": false,
+      "mediaCommercialGrantReceived": false
+    },
+    {
+      "guideId": "CG01-AUX-CSP",
+      "record": "cg01-csp-seguranca-html.evidencia.json",
+      "sha256": "73e0e023402000eb8ddf3db7d661934a7c05b8dd9f258e457d7a621674390e18",
+      "bytes": 217449,
+      "professionalOrigin": "Chartered Society of Physiotherapy",
+      "locators": {
+        "generalAdvice": "Intro before Hamstring stretch",
+        "movement": "Hamstring stretch"
+      },
+      "sameProgrammeAsAtac": false,
+      "stance": "Sentado, maos lombar/estender joelho, nao pe num degrau",
+      "returnInitialPositionPublished": true,
+      "role": "Conselho geral previo de profissional e agravamento da dor; nao fonte do gesto original ou ensaio cuidador.",
+      "videoProvider": "Physiotec",
+      "videoReceived": false,
+      "externalVideoLicenceReceived": false,
+      "originalMovementOrDoseReplaced": false
+    }
+  ],
+  "complementDecision": {
+    "questionSentToUser": true,
+    "answerReceived": true,
+    "answer": "Sim, desde que a compatibilidade seja demonstrada e as fontes fiquem separadas.",
+    "scope": "Aceitacao de precaucoes gerais profissionais separadamente identificadas, sem alterar exercicio ou alegar combinado testado.",
+    "explicitNewApprovalAssumed": false,
+    "genericGuideIsOriginalClinicalProtocol": false,
+    "newRegimenCreated": false
+  },
+  "selection": {
+    "researchItemClosed": true,
+    "closureScope": "Ramo estatico, publico original e caminho com orientacao profissional; nao inicio autonomo nem publicacao.",
+    "closurePackage": "pacote-factual.json",
+    "releaseApproved": false,
+    "nextComponentStarted": false,
+    "documentaryTestsCloseClinicalGaps": false,
+    "actualRemaining": [
+      "Somente pendencias de publicacao no recorte fechado: revisao humana de localizacao, controles da modalidade profissional e atribuicoes separadas. Ver pacote-factual.json."
+    ],
+    "notActualBarriers": [
+      "Altura numerica universal do degrau",
+      "Progresso semanal de estudo agudo",
+      "Ter instrucao num unico documento",
+      "Direitos de todo video possivel que nao sera usado",
+      "Algoritmo exaustivo de todos eventos adversos"
+    ]
+  },
+  "next": "Validar pacote-factual.json e integridade antes de permitir CG02/Benson. Postura/dose originais e camadas auxiliares separadas; N15-C global e N21 nao fechados por esta ficha."
+}

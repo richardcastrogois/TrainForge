@@ -1,0 +1,23 @@
+{
+  "id": "c15-mbi-hibrido2022-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1186/s40359-022-00876-8&format=json&resultType=core",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:42:43.750758+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Localizar protocolo2022 DOI citado emresultado, metadados primarios para originalpublico distinto DOIwebinacessivel semretry.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1186/s40359-022-00876-8&format=json&resultType=core",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 7833,
+  "bodyFile": "../raw/c15-mbi-hibrido2022-core-json.json",
+  "sha256": "d43d58bafdd5d9e5baf9a9e4ae1a799c6b6c6e22cf36f7c2f93c999004166f15"
+}

@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-08",
+  "scope": "Somente N15-C; publicacao primaria Caser2018 ligada a PR85. URLs observadas no editor, sem repetir tese USAL com timeout, sem executar conteudo ou contactar autores. PDF de pesquisa sem teto autorizado; HTML mantem limite do coletor.",
+  "requests": [
+    {"id":"c15-caser2018-pagina","url":"https://www.fundacioncaser.org/publicaciones-y-estudios/actas-de-coordinacion-sociosanitaria/historico/actas-de-coordinacion-sociosanitaria-n-22","extension":"html","purpose":"Origem editorial, data e link exato do artigo de Montero; nao manual ou concessao comercial presumida."},
+    {"id":"c15-caser2018-pdf","url":"https://www.fundacioncaser.org/sites/default/files/adjuntos/2206.pdf","accept":"application/pdf","extension":"pdf","purpose":"Texto integral original24p: conferir autoria profissional, programa, instrucoes, cohort/dose, apoio/seguranca e direitos para a lacuna N15-C sem alterar intervencao."}
+  ]
+}

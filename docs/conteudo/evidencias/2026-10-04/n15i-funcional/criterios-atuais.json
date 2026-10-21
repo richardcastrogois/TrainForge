@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-04", "appliesToComplements": ["N15-C","N15-I","N16-I","N17-I","N18-I","N19-I","N20-I"],
+  "sourceId": "CI08", "sourceRecord": "2026-10-04/n15i-funcional/i15-cmo-2026.evidencia.json", "sourceUpdated": "2026-07-10",
+  "sourceType": "Diretriz populacional, nao programa de treino nem regra de software.",
+  "sourceFindings": ["Idade nao equivale a capacidade; atividade breve pode acumular beneficios.", "Distinguir idosos ativos, em perda de funcao e mais frageis; em determinados quadros, novos exercicios podem precisar de supervisao inicial profissional.", "Atividade sentada nao e necessariamente sedentarismo; a posicao isolada nao define intensidade.", "Recomendacoes populacionais nao sao limiares individuais absolutos nem receita de series/cargas."],
+  "reviewOperations": [
+    {"id": "CTX01", "decision": "Identificar executor e beneficiario separados: cuidador para si, idoso para si, ou assistido supervisionado. Nao atribuir tarefa de cuidado como treino automaticamente."},
+    {"id": "CTX02", "decision": "Conferir capacidade funcional e experiencia na modalidade; nao indicar sempre rotina sentada por idade nem academia avancada por atividade cotidiana."},
+    {"id": "CTX03", "decision": "Manter ambientes e equipamentos distintos: casa sem resistencia especifica, kit domestico, academia interna. Praca continua futuro N21, sem coleta antecipada."},
+    {"id": "CTX04", "decision": "Pausa por cuidado/doenca nao e dose concluida. Sem multiplicacao de carga ou treino compensatorio automaticos."},
+    {"id": "CTX05", "decision": "Diretriz/ensaio nao fornece profissional ao usuario. Fonte que exige demonstracao ou supervisao so pode ser considerada nesse modo declarado, sem presumir parceiro/orcamento."},
+    {"id": "CTX06", "decision": "Texto autorizado e ativos visuais sao gates diferentes; nao remover descricao essencial para esconder falta de direitos de imagens ou completar ausentes com outra fonte."},
+    {"id": "CTX07", "decision": "Rotulos iniciante/intermediario nao provam elegibilidade geriatrica. Nenhuma diretriz atualiza silenciosamente dose de programa antigo."},
+    {"id": "CTX08", "decision": "Edicao, idioma, nome/letra, funcao e entrega identificam a variante. Vivifrail E 2017 e E atual nao sao equivalentes; snacking 2019 e 2026 diferem em supervisao e elegibilidade. Nunca fundir fases por nomes semelhantes."}
+  ],
+  "rights": "OGL v3 observada no texto primario com excecoes de terceiros; sem logos/endosso e sem aprovar fotos/infograficos de terceiros.",
+  "clinicalValidation": false, "researchUseOnly": true, "releaseApproved": false, "appImplemented": false
+}

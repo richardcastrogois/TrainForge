@@ -1,0 +1,23 @@
+{
+  "id": "c15-salamanca-video-listagem-html",
+  "url": "https://drive.google.com/drive/folders/14nXEVvGXRNWbU6l6tvvm_fotiJoABCS7?usp=sharing",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:38:08.437795+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "LinkexatoPDF44/Anexo4: consultar listagempublica, nao baixar/executar midia, entrar emconta ou contornar se restrito. Disponibilidade nao concessao deuso.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://drive.google.com/drive/folders/14nXEVvGXRNWbU6l6tvvm_fotiJoABCS7?usp=sharing",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 318629,
+  "bodyFile": "../raw/c15-salamanca-video-listagem-html.html",
+  "sha256": "95b7b926c1e3edd62e61eed57fe626ddd6dffd8c9dc5cee0a24ba1b53f8fab0d"
+}

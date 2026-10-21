@@ -1,0 +1,24 @@
+{
+  "id": "n22-nhlbi-filipino",
+  "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/08-6339.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:20:28.604898+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Contexto completo do folheto8semanas, revisores/autoria e direitos",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/sites/default/files/publications/08-6339.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 30255439,
+  "bodyFile": "../raw/n22-nhlbi-filipino.pdf",
+  "sha256": "74b3131185ab1e350db8233afa9c8602253012135cc14b1fbdb9f43b6ff3ec20",
+  "bodyFormatMatchesRequest": true
+}

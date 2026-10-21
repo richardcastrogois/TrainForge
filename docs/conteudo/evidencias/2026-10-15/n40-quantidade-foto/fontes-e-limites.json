@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-15",
+  "niche": "N40",
+  "reusedSources": [
+    "PR212 Nutrition5k",
+    "PR217 relatório de porção típica e instabilidade, não adotar",
+    "N03 quantidades e preparo, sem nova coleta"
+  ],
+  "newSources": [
+    {
+      "id": "PR219",
+      "name": "GoCARB vs. Dietitians",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "Maria F. Vasiloglou; Stavroula Mougiakakou; Emilie Aubry; Anika Bokelmann; Rita Fricker; Filomena Gomes; Cathrin Guntermann; Alexa Meyer; Diana Studerus; Zeno Stanga",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_indexed_methods_and_crossref_metadata",
+      "access": "Excertos indexados primários do editor/PMC; aberturas PMC com desafio e editor429, sem contorno ou nova tentativa. Metadados Crossref recebidos para autoria/DOI/licença, não corpo integral dos artigos.",
+      "rights": "Crossref registraCCBY4.0para versão publicada do artigo; não licença de software, pesos, fotos de usuários ou backend. Só fatos/limites em redação própria, sem figuras ou código importados.",
+      "finding": "Duas fotos de ângulos diferentes e cartão8.5×5.5cm; comparação de54refeições/111estimativas. ContextoCHO/T1D e pratos separados não vira porção genérica portuguesa ou consumo; nenhuma indicação clínica selecionada.",
+      "next": "Referência metodológica; não candidato pronto de estimador visual ou dose/nutrição clínica.",
+      "urls": [
+        "https://www.mdpi.com/2072-6643/10/6/741",
+        "https://doi.org/10.3390/nu10060741"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n40-quantidade-foto/fontes-e-limites.json"
+    },
+    {
+      "id": "PR220",
+      "name": "goFOOD — refeições em vida livre",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "Ioannis Papathanail; Lubnaa Abdur Rahman; Lorenzo Brigato; Natalie Bez; Maria Vasiloglou; Klazine van der Horst; Stavroula Mougiakakou",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_indexed_methods_and_crossref_metadata",
+      "access": "Excertos indexados primários do editor/PMC; aberturas PMC com desafio e editor429, sem contorno ou nova tentativa. Metadados Crossref recebidos para autoria/DOI/licença, não corpo integral dos artigos.",
+      "rights": "Crossref registraCCBY4.0para versão publicada do artigo; não licença de software, pesos, fotos de usuários ou backend. Só fatos/limites em redação própria, sem figuras ou código importados.",
+      "finding": "Método monocular publicado ainda requer cartão de referência; retorno a porção típica quando ausente não mede massa desta foto. Não foi obtido modelo pronto, pesos ou contrato de serviço para uso no TrainForge.",
+      "next": "Referência metodológica; não candidato pronto de estimador visual ou dose/nutrição clínica.",
+      "urls": [
+        "https://www.mdpi.com/2072-6643/15/17/3835",
+        "https://doi.org/10.3390/nu15173835"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n40-quantidade-foto/fontes-e-limites.json"
+    }
+  ],
+  "localReceipts": [
+    {
+      "receipt": "n40-gocarb-metadata.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 15320,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n40-gofood-metadata.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 19917,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n40-nutrition5k-evaluation-script.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 2276,
+      "hashMatches": true
+    },
+    {
+      "receipt": "n40-nutrition5k-paper.evidencia.json",
+      "httpStatus": 200,
+      "bytes": 144748,
+      "hashMatches": true
+    }
+  ],
+  "primarySourceLimit": "Arxivv1 e README do release não são a mesma versão nem garantem todos os contextos. Artigos GoCARB/goFOOD só excertos primários e metadata, sem corpos após challenge/429.",
+  "evaluationDefinition": "Script oficial confirma média dos erros absolutos dividida pela média verdadeira. Cabeçalho omite fat na descrição, mas código define seis campos dish_id/calories/mass/fat/carb/protein; não usar cabeçalho textual como schema sem conferência. Script lido, não executado.",
+  "noModelOrDatasetDownloaded": true
+}

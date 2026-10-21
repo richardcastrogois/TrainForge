@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "id": "n45-wcag22",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "purpose": "WCAG2.2 primária:critérios e níveis; não certificação do app.",
+      "extension": "html"
+    },
+    {
+      "id": "n45-wai-older",
+      "url": "https://www.w3.org/WAI/older-users/",
+      "purpose": "Necessidades diversas de pessoas idosas e participação na avaliação; não apenas tamanho de letra.",
+      "extension": "html"
+    },
+    {
+      "id": "n45-pt-mobile",
+      "url": "https://selo.usabilidade.gov.pt/requisitos/10aspetosaplicacoesmoveis/",
+      "purpose": "Lista oficial portuguesa para aplicações móveis; idioma codificado e leitores de ecrã. Referência, não selo obtido.",
+      "extension": "html"
+    }
+  ]
+}

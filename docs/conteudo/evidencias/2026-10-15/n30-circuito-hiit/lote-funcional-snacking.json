@@ -1,0 +1,243 @@
+{
+  "id": "N30-FUNC-ES2019-01",
+  "date": "2026-10-15",
+  "niche": "N30",
+  "sourceFamily": "PR28",
+  "sourcePackage": "2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+  "sourcePackageSha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee",
+  "kind": "Rotina funcional doméstica humana completa de cinco componentes; reuso da edição2019, sem converter emHIIT ou misturar com protocolos novos",
+  "identity": {
+    "title": "Exercise Snacking to Improve Muscle Function in Healthy Older Adults: A Pilot Study",
+    "authors": [
+      "Oliver J. Perkin",
+      "Polly M. McGuigan",
+      "Keith A. Stokes"
+    ],
+    "year": 2019,
+    "doi": "10.1155/2019/7516939",
+    "pmcid": "PMC6794984",
+    "edition": "2019-original",
+    "actor": "idoso_praticando_para_si",
+    "environment": "casa",
+    "caregiverOwnProgrammeDemonstrated": false,
+    "publicSquareProgrammeDemonstrated": false,
+    "indoorGymProgrammeDemonstrated": false
+  },
+  "authorshipQualification": "Perkin, McGuigan e Stokes, Department for Health/University of Bath e Centre for Sport, Exercise and Osteoarthritis Research Versus Arthritis. Autoria acadêmica identificada no artigo; não inventar certificação de personal trainer ou registro profissional vigente.",
+  "population": {
+    "sample": 20,
+    "exerciseGroup": 10,
+    "ageYears": [
+      65,
+      80
+    ],
+    "sourceEligibility": "Idosos comunitarios saudaveis, sem treino estruturado regular, nao fumantes, BMI >=20 e <30, sem contraindicacao ao exercicio ou lesao musculoesqueletica recente, SPPB >=8 sem zero em qualquer teste.",
+    "eligibilityIsValidatedAppScreening": false,
+    "frailOrClinicalProgrammeDemonstrated": false
+  },
+  "delivery": {
+    "homeSessionsSupervised": false,
+    "initialResearchScreeningRequiredInStudy": true,
+    "familiarization": "Duas sessoes de familiarizacao dos testes funcionais, separadas por pelo menos sete dias; segunda pelo menos cinco dias antes da avaliacao inicial. Nao rotular como aulas domiciliares nem retirar triagem por pratica sem supervisao em casa.",
+    "anotherPersonMandatoryInThisEdition": null,
+    "dailyVideoSubmissionMandatoryInThisEdition": false,
+    "researchTeamOrBudgetAssumedForApp": false,
+    "logbook": "Registrar repeticoes de levantar/sentar para adesao e eventos adversos, relacionados ou nao.",
+    "validatedAutonomousAppDelivery": false
+  },
+  "equipment": {
+    "chair": true,
+    "chairSeatHeightForHomeTrainingCm": null,
+    "chairArmrestsRequiredInThisEdition": null,
+    "band": false,
+    "dumbbell": false,
+    "machine": false,
+    "testEquipmentNotTraining": [
+      "Cadeira de 44 cm no teste STS",
+      "Dinamometro leg press pneumatico Keiser A420",
+      "Cargas/aquecimento do teste de leg press"
+    ]
+  },
+  "dose": {
+    "durationDays": 28,
+    "sessionsPerDay": 2,
+    "sessionWindows": [
+      "manha",
+      "noite"
+    ],
+    "sessionsTotal": 56,
+    "secondsPerMovement": 60,
+    "restSecondsBetweenMovements": 60,
+    "minutesPerSessionCalculated": 9,
+    "minutesPerSessionDeclaredBySource": null,
+    "repetitions": null,
+    "effortSource": "Tantas repeticoes quanto possivel no minuto; nao prescricao universal, meta minima ou exigencia de falha momentanea.",
+    "externalLoad": "Somente peso corporal",
+    "warmup": null,
+    "cooldown": null,
+    "weeklyProgression": null,
+    "progressionState": "nao_prescrita_na_fonte",
+    "missedSessionCompensation": null
+  },
+  "movements": [
+    {
+      "id": "ES19-S1",
+      "order": 1,
+      "sourceFigure": "S1",
+      "sourcePage": 1,
+      "labelPtDraft": "Levantar e sentar na cadeira",
+      "instructionPtDraft": "Partir sentado na cadeira com os bracos cruzados sobre o peito; levantar ate a extensao completa das ancas e voltar a sentar para repetir.",
+      "support": "cadeira_como_assento",
+      "alternating": false,
+      "correspondence": "Figura sentada e em pe com bracos cruzados; legenda descreve mesma variante. Retorno sentado e implicito na repeticao STS, nao criar altura de treino pelo teste."
+    },
+    {
+      "id": "ES19-S2",
+      "order": 2,
+      "sourceFigure": "S2",
+      "sourcePage": 1,
+      "labelPtDraft": "Extensao alternada dos joelhos sentado",
+      "instructionPtDraft": "Sentado, estender um joelho procurando a extensao completa no fim do movimento; voltar e alternar a perna em cada repeticao.",
+      "support": "cadeira_como_assento",
+      "alternating": true,
+      "correspondence": "Desenho sentado com seta de extensao; legenda explicita alternancia. Nao importar as maos da fotografia de 2026."
+    },
+    {
+      "id": "ES19-S3",
+      "order": 3,
+      "sourceFigure": "S3",
+      "sourcePage": 1,
+      "labelPtDraft": "Flexao alternada dos joelhos em pe",
+      "instructionPtDraft": "Em pe, dobrar um joelho procurando deixar a parte inferior da perna paralela ao chao, mantendo a coxa vertical; voltar e alternar a perna.",
+      "support": "cadeira_para_estabilidade_se_necessario_conforme_artigo",
+      "alternating": true,
+      "correspondence": "Desenho mostra apoio na cadeira e perna dobrando para tras; nao acrescentar flexao da anca, carga ou sustentar pessoa."
+    },
+    {
+      "id": "ES19-S4",
+      "order": 4,
+      "sourceFigure": "S4",
+      "sourcePage": 2,
+      "labelPtDraft": "Marchar no lugar",
+      "instructionPtDraft": "Marchar no lugar com as maos a altura da cintura, procurando elevar as coxas ate ficarem paralelas ao chao; se necessario para equilibrio, apoiar uma mao na cadeira.",
+      "support": "uma_mao_na_cadeira_se_necessario",
+      "alternating": true,
+      "correspondence": "Figura mostra a variante sem apoio; alternativa com cadeira esta expressamente na legenda. Nao chamar figura sem cadeira de demonstracao do apoio."
+    },
+    {
+      "id": "ES19-S5",
+      "order": 5,
+      "sourceFigure": "S5",
+      "sourcePage": 2,
+      "labelPtDraft": "Elevacao bilateral dos calcanhares",
+      "instructionPtDraft": "Em pe, segurar a cadeira para equilibrio e elevar ambos os calcanhares, procurando subir tanto quanto possivel nas pontas dos pes; voltar os calcanhares ao chao entre repeticoes.",
+      "support": "segurar_cadeira_para_equilibrio",
+      "alternating": false,
+      "correspondence": "Desenho e legenda mostram elevacao bilateral e cadeira; nao reduzir apoio explicito com base na frase geral do artigo."
+    }
+  ],
+  "sessionSequence": [
+    {
+      "movement": "ES19-S1",
+      "workSeconds": 60,
+      "nextRestSeconds": 60
+    },
+    {
+      "movement": "ES19-S2",
+      "workSeconds": 60,
+      "nextRestSeconds": 60
+    },
+    {
+      "movement": "ES19-S3",
+      "workSeconds": 60,
+      "nextRestSeconds": 60
+    },
+    {
+      "movement": "ES19-S4",
+      "workSeconds": 60,
+      "nextRestSeconds": 60
+    },
+    {
+      "movement": "ES19-S5",
+      "workSeconds": 60,
+      "nextRestSeconds": null
+    }
+  ],
+  "timingCheck": {
+    "workSeconds": 300,
+    "betweenMovementRestCount": 4,
+    "betweenMovementRestSeconds": 240,
+    "knownPrescribedSeconds": 540,
+    "minutesCalculated": 9,
+    "finalRestSeconds": null,
+    "note": "Cinco minutos de trabalho e quatro descansos de1min. Não acrescentar quinto descanso para vender10min nem reiniciar após pausa de cuidado por regra inventada."
+  },
+  "preparation": "Triagem de pesquisa e capacidade funcional da população original, cadeira e espaço adequados, movimentos das figuras/legendas. Duas familiarizações referem-se a testes, não aulas domiciliares. Não há aquecimento específico prescrito nessa edição.",
+  "termination": "Depois do último minuto de elevações, retornar calcanhares ao piso conforme S5; fonte não fornece cooldown cronometrado. Ausência não preenchida por outro programa.",
+  "intensity": "Tantas repetições quanto possível no minuto, sem meta mínima ou falha momentânea prescrita. Sem FC/RPE publicada para substituir por alvos doHIIT jovem; não prometer baixa intensidade por ser emcasa.",
+  "progression": "Sem progressão semanal/carga adicional prescrita. Volume diário28dias mantido; não criar progressão com idade ou tornar11min doArchila equivalente.",
+  "rights": {
+    "license": "Creative Commons Attribution",
+    "versionReportedInLocalArticle": null,
+    "licenseUrlReportedInLocalArticle": null,
+    "commercialReuseCandidate": true,
+    "translationCandidate": true,
+    "essentialIllustrationsCandidate": true,
+    "rightsBasis": "Declaracao do artigo permite uso/distribuicao/reproducao irrestritos com citacao. PDF suplementar vinculado diretamente no artigo, sem credito ou exclusao separados observados. Nao atribuir automaticamente CC BY 4.0 quando versao nao consta no corpo recebido.",
+    "attributionDraft": "Adaptado de Perkin OJ, McGuigan PM, Stokes KA (2019), Exercise Snacking to Improve Muscle Function in Healthy Older Adults: A Pilot Study, doi:10.1155/2019/7516939, figuras suplementares S1-S5. Creative Commons Attribution. Traducao portuguesa e apresentacao adaptadas; sem endosso dos autores.",
+    "finalBatchRightsReviewed": false
+  },
+  "compatibility": "Protocolo e instruções da mesma edição com cinco movimentos na ordem publicada; cadeira com função de assento e apoio identificada por variante. Não importar cadeira44cm do teste ou ajuda de cuidador para levantar. S4 mostra versão sem apoio e legenda admite apoio de uma mão, distinção preservada.",
+  "interruptions": "Nenhum esquema de pausa/reinício por cuidado foi testado ou dosado. Separação manhã/noite não autoriza fragmentar qualquer minuto em blocos arbitrários, compensar sessão perdida ou assumir cuidado simultâneo seguro.",
+  "outcomesBoundary": {
+    "adherenceReported": "98%; media de 2 (1) sessoes perdidas de 56",
+    "adverseEventsReported": "Nenhum relatado nos dois grupos durante os 28 dias; amostra pequena nao demonstra ausencia de risco.",
+    "sitToStandImprovement": "31% no grupo de exercicio; tarefa repetida no treino e teste, nao promessa individual.",
+    "legPressPower": "Tendencia p=0.09; nao resultado estatisticamente significativo ou treino de academia.",
+    "fallsPreventionDemonstrated": false,
+    "caregiverBenefitDemonstrated": false
+  },
+  "cointervention": {
+    "present": true,
+    "bothGroups": true,
+    "description": "150 g de iogurte no pequeno-almoco todos os dias, conforme desenho do ensaio; marca/nutrientes pertencem ao estudo.",
+    "nutritionPrescriptionForApp": false,
+    "exerciseOnlyEfficacyDemonstrated": false,
+    "appRoute": "Conteudo instrucional humano de exercicio candidato, nao replicacao clinica integral ou prescricao alimentar. Nao omitir cointervencao ao apresentar resultados."
+  },
+  "contexts": {
+    "idoso_casa": {
+      "status": "aplicavel_com_limites",
+      "evidence": "População comunitária65–80 saudável, triada, SPPB>=8 semzero, cadeira e peso corporal. Sem prescrição universal parafrágeis/doença ou triagem doapp validada."
+    },
+    "idoso_academia_praca": {
+      "status": "pendente",
+      "evidence": "Nenhum programa de aparelhos de praça demonstrado; apoio/cadeira/piso exigem equivalência e avaliação reais. Não usar banco móvel como suporte automático."
+    },
+    "idoso_academia": {
+      "status": "pendente",
+      "evidence": "Possibilidade material fora de máquinas a avaliar, não eficácia de programa emacademia demonstrada ou troca dekit."
+    },
+    "cuidador_casa_proprio": {
+      "status": "pendente",
+      "evidence": "Programa não foi estudo específico de cuidadores e não tem protocolo de interrupção. Pessoa65–80 elegível pode ser avaliada por critérios pessoais, não por papel de cuidador; não assistência física."
+    }
+  },
+  "researchClosedFor": "Conteúdo funcional doméstico da edição2019, no recorte de população/kit e instruções publicados, sem novas doses. OutrosHIITs permanecem candidatos parciais.",
+  "notSelectedAsExecutable": [
+    "Archila2021BWT11min: progressão/gestos/familiarização eexpressão/licença finalpendentes",
+    "Poon2023WB-HIIT:7min declarados versus12×(30+10)=8min, licençaHTML conflitante, comandos específicos ausentes",
+    "Ballesta2019/2020:18semanas/fases/exemplos não roteiros de todasasaulas, intensidades/tabela/texto comdiscordâncias",
+    "Klika/Jordan2013: cópia de terceiro não adquirida após rejeição automática",
+    "Goulding/Nuffield: nomes de movimentos e direitos restritos, soma do ciclo não igual título20min"
+  ],
+  "beforePublication": [
+    "Revisao clinica de elegibilidade/intensidade para a oferta pretendida",
+    "Revisao editorial pt-PT dos cinco textos",
+    "Credito e direitos do lote final, incluindo indicacao de alteracoes",
+    "Teste real de compreensao/acessibilidade",
+    "Implementacao/testes tecnicos e triagem, sem simulacao de validacao"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

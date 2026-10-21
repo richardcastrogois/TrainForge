@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "contexts": [
+    {
+      "context": "Adulto sedentário com ergômetro e serviço qualificado",
+      "source": "PR160",
+      "demonstrated": "Sessão laboratorial de ciclismo contínuo e familiarização com intensidade relativa.",
+      "pending": "Revisão profissional/editorial do lote, apoio/equipamento reais e testes antes de oferecer. Não equivale a guia autônomo universal."
+    },
+    {
+      "context": "Casa e treino próprio de cuidador",
+      "source": "PR160 / PR162, separados",
+      "demonstrated": "PR162 descreve entrega doméstica clínica após ensino e triagem; PR160 não valida transferência doméstica.",
+      "pending": "Espaço/equipamento/tempo/fadiga/disponibilidade de cuidado e suporte; papel de cuidador não muda dose nem comprova elegibilidade. PR162 tem NC-ND e não foi selecionado."
+    },
+    {
+      "context": "Idosos, fragilidade e limitação de equilíbrio",
+      "source": "PR162 apenas público clínico delimitado; outras pistas não selecionadas",
+      "demonstrated": "Idade não basta para elegibilidade. Protocolo de artrose não é evidência para todos os idosos.",
+      "pending": "Montar/desmontar, apoios, condição clínica, tolerância e modalidade de bicicleta precisam de fonte correspondente; não generalizar jovens do PR160."
+    },
+    {
+      "context": "Rua/ciclovia/parque",
+      "source": "PR156 / PR157",
+      "demonstrated": "Há planos de ciclismo externo com distância, terreno e rotas.",
+      "pending": "Autoria/licença do componente escolhido e habilidade/ambiente/segurança viária local; não importar regras britânicas para Portugal sem localização."
+    },
+    {
+      "context": "Aparelho de bicicleta fixo em praça",
+      "source": null,
+      "demonstrated": "Nenhum destes materiais comprova equivalência com aparelho público sem controle de carga.",
+      "pending": "N21 permanece não iniciada; separar aparelho, ajustes, dose e população antes de qualquer equivalência."
+    }
+  ],
+  "practiceApproved": false,
+  "n15Paused": true,
+  "n21Started": false,
+  "n33Started": false,
+  "selectedLot": "lote-ergometro-profissional.json",
+  "researchSelectionResolution": "Selecionado apenas percurso profissional em ergômetro. Outros públicos/ambientes continuam condicionais; contratação/apoio reais são requisito de oferta e não pesquisa inexistente."
+}

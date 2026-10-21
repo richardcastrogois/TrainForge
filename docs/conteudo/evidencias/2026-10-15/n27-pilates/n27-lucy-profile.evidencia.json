@@ -1,0 +1,24 @@
+{
+  "id": "n27-lucy-profile",
+  "url": "https://lucypurrier.com/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T20:14:08.751759+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Perfil profissional próprio: fisioterapia/KCL, APPI2013, MK2021/2025; não contratar, não copiar vídeos ou aceitar marketing clínico como efeito demonstrado",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://lucypurrier.com/",
+  "contentType": "text/html",
+  "retryAfter": null,
+  "bytes": 52,
+  "bodyFile": "../raw/n27-lucy-profile.html",
+  "sha256": "889403e5cfbb7981f7a26aced0d7492524e5397d6996f7fccd67562d2a4a71a3",
+  "error": "HTTP 403"
+}

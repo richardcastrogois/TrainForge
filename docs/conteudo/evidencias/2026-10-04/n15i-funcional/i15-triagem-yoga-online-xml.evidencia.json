@@ -1,0 +1,22 @@
+{
+  "id": "i15-triagem-yoga-online-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:03:24.544223+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir eventual apendice de aulas online para cuidadores, papel de instrutor e direitos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10248766/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 79683,
+  "bodyFile": "../raw/i15-triagem-yoga-online-xml.xml",
+  "sha256": "cc48e68567100c4a49c08359451bf7b5748b96a4deab8f94d181155a147eed19"
+}

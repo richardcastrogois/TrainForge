@@ -1,0 +1,24 @@
+{
+  "id": "c15-fedema2022-manual-pdf",
+  "url": "https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:35:23.374600+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Manual236p, capituloCuidarnos para cuidarlesPDF131-149: profissionais, preparo/dose/retorno, limites e direitos. Guia naoRCTautomaticamente.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://fedema.es/wp-content/uploads/2022/12/Manual-Cuidadores-2022-OK-2.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 5583692,
+  "bodyFile": "../raw/c15-fedema2022-manual-pdf.pdf",
+  "sha256": "4967a2144ae76aebb159710694fc995489b39870a23c4bdfda455261f5bbe64b",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cg05-cer2021-editor-html",
+  "url": "https://becarispublishing.com/doi/10.2217/cer-2020-0108",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T00:54:59.989845+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Primeiro GET da representacao editorial primariaURL recebida emCrossref message.resource.primary.URL. Confrontar corpo integral exibido pela busca: preparo2dias,1set10reps/progressoes3/6 e versao do calendario. Nao retry daURLdoi.org anteriormente falha, nao grant comercial presumido peloFreeAccess.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://becarispublishing.com/doi/10.2217/cer-2020-0108",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5732,
+  "bodyFile": "../raw/cg05-cer2021-editor-html.html",
+  "sha256": "fdd0401db13584adeb769e3d0ea96a094a6708faf6d7b3ab1dc8639a9769fb81",
+  "error": "HTTP 403"
+}

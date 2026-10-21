@@ -1,0 +1,22 @@
+{
+  "id": "c15-dupla-cancer-2026-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:14:16.989013+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ler programa humano de exercicio da dupla e identificar anexo, ambiente e supervisao; sem presumir autonomia.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 241984,
+  "bodyFile": "../raw/c15-dupla-cancer-2026-xml.xml",
+  "sha256": "f9566f3401418017d4612cb5f13f0e6fb1cda64a2e78e588086d7993218779ea"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "i18-pact-treino-2021-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8513828/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:31:27.399283+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir programa humano fisico/cognitivo e anexos instrucionais potencialmente completos identificados na busca.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8513828/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 180880,
+  "bodyFile": "../raw/i18-pact-treino-2021-xml.xml",
+  "sha256": "476688f20882632272eac13df344787f6c056539693ac131de6a3f712450f96c"
+}

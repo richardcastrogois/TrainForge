@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C. Primeiro GET HTML original JCDR2026 ja lido em web. Nao coletar URL PDF que falhou no navegador; nao retry/bypass/contato/conta. Respira+counselling nao prova respira isolada.",
+  "requests":[
+    {"id":"c15-respiracao-oncologia2026-html","url":"https://www.jcdr.net/article_fulltext.asp?id=23750&issn=0973-709x&issue=7&page=VC01&volume=20&year=2026","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Original quasi-experimental especifico cuidador familiar posmastectomia, conferir instrucoes/dose/suporte e resultados proprios; nao inferir pratica diaria10min de sessao educativa."}
+  ]
+}

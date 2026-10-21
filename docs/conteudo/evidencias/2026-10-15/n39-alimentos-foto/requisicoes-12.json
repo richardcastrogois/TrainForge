@@ -1,0 +1,10 @@
+{
+  "requests": [
+    {
+      "id": "n39-food101-historical-license",
+      "url": "https://huggingface.co/datasets/ethz/food101/resolve/6981991/food101.py",
+      "purpose": "O commit primário e06acf2 mostra a remoção do loader e o pai 6981991. Recuperar apenas o script histórico Apache com aviso específico de direitos de fotografias; distinguir esse aviso da versão nateraw atual sem _LICENSE. Nenhuma foto ou peso, nem execução de loader.",
+      "extension": "txt"
+    }
+  ]
+}

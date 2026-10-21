@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-15",
+  "niche": "N24",
+  "method": "Coleções técnicas Cycling UK; manuais BHF e vínculo de autoria Full Potential; biblioteca/API TrainerDay e termos; coleção Open UGA; artigos e contribuições/qualificação primárias; referências clínicas separadas. Buscas por palavras-chave complementaram os percursos.",
+  "webObservations": [
+    {
+      "url": "https://open.online.uga.edu/cycling/",
+      "observed": "Índice, autoria UGA PEDB e CC BY 4.0 lidos na web; GET local 403.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://open.online.uga.edu/cycling/chapter/tipstricks/",
+      "observed": "Orientações escritas sobre travas, posição, resistência e variantes; não selecionadas como regras universais. GET local 403.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://open.online.uga.edu/cycling/chapter/lingo/",
+      "observed": "Descrições de pedalar sentado/variantes e links Kaltura; vídeos não acessados. GET local 403.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://open.online.uga.edu/cycling/chapter/bikesetup/",
+      "observed": "403 na ferramenta web; corpo de ajuste não recebido; não repetir nem contornar.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://open.online.uga.edu/cycling/chapter/intensityandprocedures/",
+      "observed": "403 na ferramenta web; corpo de intensidade não recebido; não repetir nem contornar.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/2325967117694334",
+      "observed": "Protocolo domiciliar de artrose e licença CC BY-NC-ND 3.0 lidos; referência sem importação/adaptação comercial.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://bond.edu.au/profile/justin-keogh",
+      "observed": "Busca primária confirma PhD Exercise and Sport Science, ASpSc2/ASCA II; registro web, sem hash local.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://www.bhf.org.uk/l2b",
+      "observed": "Página oficial atual vincula Full Potential ao plano V3 e evento London to Brighton; não creditar a mesma equipe ao outro PDF por inferência.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?hl=en&id=uk.org.britishcycling.app.s2s",
+      "observed": "Pista legítima de distribuição, não instalação nem observação runtime.",
+      "localBodyReceived": false
+    },
+    {
+      "url": "https://www.coachjoebeer.com/About/about.html",
+      "observed": "Busca primária declara treinador com qualificação British Triathlon Federation; abertura retornou Cache miss, sem hash/corpo local de perfil. PDF primário confirma autoria do artigo de 2010, não do plano atual.",
+      "localBodyReceived": false
+    }
+  ],
+  "unfetchedLeads": [
+    {
+      "url": "https://www.bikeability.org.uk/wp-content/uploads/2022/02/Delivering-Inclusive-Cycle-Training-A-Good-Practice-Guide-for-Disability-Cycle-Training.pdf",
+      "clue": "Guia inclusivo para instrutores: pode esclarecer adaptações e suporte; não é treino geral domiciliar nem dispensa instrutor.",
+      "priority": "Somente se necessário ao componente escolhido; não abrir todas as condições clínicas."
+    }
+  ],
+  "discardedForGeneralHomeSelection": [
+    "Sprints all-out do PR160",
+    "Ciclismo excêntrico para insuficiência cardíaca/sarcopenia: protocolo especializado, não bicicleta comum",
+    "Ciclismo para Parkinson com assistência motorizada/pedalar para trás: variante específica; não transplantar sem fonte correspondente"
+  ],
+  "noWorkoutApiCalls": true,
+  "noAppInstalledOrAccountCreated": true,
+  "noExternalContacts": true,
+  "noBeFitSourceAttribution": true,
+  "noVideosAudiosOrSourceAssetsImported": true,
+  "pdfsWithImagesAreLocalResearchOnly": true
+}

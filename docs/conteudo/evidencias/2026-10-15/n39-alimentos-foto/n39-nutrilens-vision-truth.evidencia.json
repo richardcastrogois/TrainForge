@@ -1,0 +1,23 @@
+{
+  "id": "n39-nutrilens-vision-truth",
+  "url": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/vision-truth.json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:03:27.566676+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Anotações textuais apontadas pelo relatório para conferir o que significa aceitação por faixa. Não obter fotos de usuário nem reproduzir sua imagem; rótulos humanos não provam massa pesada.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/thejusdutt/nutrilens/main/eval/vision-truth.json",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 27399,
+  "bodyFile": "../raw/n39-nutrilens-vision-truth.json",
+  "sha256": "458da348b193460baff3e2bae00fa4c59f9339a55376e531f5620d183f910ef6"
+}

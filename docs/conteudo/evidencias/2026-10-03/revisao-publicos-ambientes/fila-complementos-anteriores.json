@@ -1,0 +1,385 @@
+{
+  "date": "2026-10-03",
+  "consolidatedAt": "2026-10-21",
+  "latestResearchRound": "2026-10-21/n15c-composicao/relatorio.md",
+  "latestAcquisition": {
+    "file": "2026-10-14/n15c-acesso-autorizado/recebimento-tese.json",
+    "cg04ThesisReceived": true,
+    "instructionReviewComplete": false,
+    "contactRequests": "2026-10-14/n15c-acesso-autorizado/solicitacoes.json",
+    "requestsSent": 3,
+    "reuseGrantRecorded": false,
+    "doesNotCloseNiche": true,
+    "instructionReviewCompleteForSelectedEightVariants": true,
+    "wholeOriginalProgrammeInstructionReviewComplete": false
+  },
+  "continuationAfterGroupYoga": "HistoricoPR128curriculo recebido/hashOOXML. PR129preview ePR130originais agora recebidos/lidos/vinculados; nao coletaspendentes.",
+  "currentContinuation": "N15 concluiu selecao modular21/10:11componentes para cuidadores e pacote anterior de5movimentos de idosos. N01-N46 tratados nos recortes, nao todos os cursos originais ou publicacao.",
+  "currentExecutionAudit": {
+    "file": "2026-10-21/n15c-composicao/auditoria-fechamento.json",
+    "researchClosed": true,
+    "unmetSelectedScopeCriteria": [],
+    "allOriginalSourceGapsResolved": false,
+    "releaseApproved": false,
+    "appImplemented": false,
+    "scope": "N15-I5movimentos eN15-C11componentes; nao cinco cursos integrais."
+  },
+  "settingClarification": {
+    "date": "2026-10-07",
+    "evidence": "2026-10-07/n15c-ambiente-compativel/decisao.json",
+    "appliesToPreviousAndFutureExerciseNiches": true,
+    "literalStudyVenueNotMandatory": true,
+    "sourceExerciseDoseMaterialsPopulationAndSupportPreserved": true,
+    "allPriorItemsReevaluated": false,
+    "sequence": "N15-C primeiro; depois revalidar itens anteriores das demais Ns antes21.",
+    "existingClosureStatusesAreNotGlobalReevaluationApproval": true
+  },
+  "exercisePolicy": "../../../criterios-exercicios-apk.json",
+  "exercisePolicyAppliesToPreviousAndFutureNiches": true,
+  "scope": "complementos_das_N01_N20_antes_da_N21",
+  "requestedByUser": true,
+  "activeComplement": null,
+  "n21Allowed": true,
+  "n21Status": "concluida_pesquisa_modular",
+  "allPreviousComplementsResearchClosed": true,
+  "closurePolicy": "Fechar somente pesquisa no recorte explicitado, com fonte/evidencia, dados completos para a entrega e direitos aplicaveis. Pesquisa nao equivale a homologacao clinica/editorial, testes de pessoas ou app.",
+  "publicationGatesSeparate": [
+    "revisao clinica/nutricional quando pertinente",
+    "revisao editorial pt-PT",
+    "direitos por ativo do lote final",
+    "testes de acessibilidade e compreensao com pessoas",
+    "implementacao e testes tecnicos",
+    "legitimidade de acesso e representacao"
+  ],
+  "scopeBoundaries": [
+    "Nao reabrir bases alimentares N01-N05 para fabricar dietas individuais.",
+    "Nao exigir pesquisa de todas as condicoes clinicas antes de N21; condicao/populacao/fase sera N33, sem alegar cobertura agora.",
+    "Falta de teste real nao pode ser resolvida por pesquisa web nem escondida como validacao.",
+    "N21 agora fechada somente para nove componentes específicos de praça; réplicas integrais, modelos não correspondentes, calendário automático e oferta não aprovados."
+  ],
+  "niches": [
+    {
+      "niche": "N01",
+      "title": "Identidade de alimentos",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Dados gerais de identidade reutilizaveis; nao indicar dieta por idade.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N02",
+      "title": "Composicao nutricional",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Composicao/unidades reutilizaveis; nao gerar metas individuais.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N03",
+      "title": "Porcoes/preparo",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Conversoes/ausentes preservados; textura clinica e degluticao nao fazem parte desta conversao.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N04",
+      "title": "Produtos portugueses",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Produtos/rotulos preservados; nao recomendar suplementos automaticamente.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N05",
+      "title": "Ingredientes/alergenios",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Ingredientes/alergenios preservados; nao alegar adequacao clinica ou interacoes farmacologicas.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N06",
+      "title": "Fotos de alimentos",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n06i-imagens/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Pesquisar/rever necessidades de instrucao visual acessivel e limites de ativos para idosos/cuidadores; teste real fica gate de publicacao.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N07",
+      "title": "Licoes de rotulos",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n07i-rotulos/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Complementar ensino de rotulos para estes publicos com exemplos, origem e acessibilidade, sem OCR ou classificacao clinica.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N08",
+      "title": "Receitas humanas",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n08i-receitas/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Obter/rever receitas e contexto de preparo para idosos/cuidadores, direitos e ausentes; nao dieta terapeutica ou textura prescrita.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N09",
+      "title": "Ganho de peso",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n09i-ganho/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Delimitar educacao de ganho de peso nesses publicos; nao importar protocolo de desnutricao como plano universal.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N10",
+      "title": "Perda de peso",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n10i-perda/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Delimitar educacao e limites de objetivos de perda de peso por publico; nao deficit automatico por idade.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N11",
+      "title": "Habitos alimentares",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n11i-habitos/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Completar recorte editorial idosos e necessidades pessoais do cuidador, aproveitando N11-I; nao meta individual.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N12",
+      "title": "Nutricao/desempenho",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n12i-desempenho/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Delimitar ligacao alimentacao/atividade por publico e fonte; metas individuais nao sao entrega deste complemento.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N13",
+      "title": "Planos alimentares",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n13i-planos/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Conferir aplicabilidade e direitos de modelos humanos ao recorte declarado, sem transformar exemplo em dieta individual.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N14",
+      "title": "Rotina alimentar",
+      "complementStatus": "reuso_documentado_sem_nova_coleta",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Requisitos de identidade/papel/origem e rotina pessoal/acompanhada documentados em N14-C e auditoria; implementacao/legitimidade final continuam futuras.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N15",
+      "title": "Programas domesticos",
+      "complementStatus": "concluido_pesquisa_modular",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "N15-I5movimentos domesticos preservados; N15-C11componentes humanos:CG01/8variantes1ReViEEW/2CaregiversFIRST. Publicos eapoios separados, dose/contexto/direitos porfonte. Benson/START/Pilates originais com lacunas preservadas efora da selecao inicial; nao cursos integrais oupublicacao.",
+      "researchApprovedForPublication": false,
+      "researchClosed": true,
+      "resumedAt": "2026-10-21",
+      "newestEvidence": "2026-10-21/n15c-composicao/auditoria-fechamento.json",
+      "pauseHistory": {
+        "pausedSince": "2026-10-15",
+        "resumedAt": "2026-10-21"
+      }
+    },
+    {
+      "niche": "N16",
+      "title": "Kit/apoios em casa",
+      "complementStatus": "concluido_para_pesquisa",
+      "closureEvidence": [
+        "2026-10-04/n16i-apoios/pesquisa-complemento.json"
+      ],
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "N16-I fechado apenas para kit/apoios Otago 2007: tabelas inspecionadas, variantes e instrutor mantidos, CC BY 4.0 vinculada a Version of Record no registro primario. Nao aprovacao instrucional N17, atualidade clinica ou progressao automatica.",
+      "researchApprovedForPublication": false
+    },
+    {
+      "niche": "N17",
+      "title": "Instrucao domestica",
+      "complementStatus": "concluido_para_pesquisa",
+      "newCollectionRequired": true,
+      "findingOrRequiredScope": "Cinco instrucoes ES2019-DOM-01 fechadas para pesquisa, desenhos/dose/apoios/CC BY conferidos. Otago preservado com divergencias, nao selecionado; escadas/alongamento nao cobertos neste lote.",
+      "researchApprovedForPublication": false,
+      "closureEvidence": [
+        "2026-10-04/n17i-instrucao/pesquisa-complemento.json"
+      ]
+    },
+    {
+      "niche": "N18",
+      "title": "Academia iniciante",
+      "complementStatus": "concluido_pesquisa_modular",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "N18-Ifechada para pesquisa modular16/10:9componentes/6maquinas-poliase3pesoslivres. Dose/populoNIA, tecnicaUSU/DeAnza, autoria/direitos/alteracoesporcampo. Sem sessao/ciclo novo gerado, revisao clinica/publicacao/apoio real pendentes antesdeoferta.",
+      "researchApprovedForPublication": false,
+      "newestEvidence": "2026-10-15/n18i-retomada/auditoria-pendencias.json"
+    },
+    {
+      "niche": "N19",
+      "title": "Percursos de academia",
+      "complementStatus": "concluido_pesquisa_modular",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "ComparacaoWalker/MPTPpreservada, caminho selecionadoNIAmodular com9componentesN18e2alternativas semanais humanas. Sem periodizacao nova ou eficacia herdada.",
+      "researchApprovedForPublication": false,
+      "newestEvidence": "2026-10-15/n19i-retomada/auditoria-fechamento.json"
+    },
+    {
+      "niche": "N20",
+      "title": "Instrucao de academia",
+      "complementStatus": "concluido_pesquisa_modular",
+      "newCollectionRequired": false,
+      "findingOrRequiredScope": "Nove fichas textuais e8naocorrespondencias conferidas. L050/geometriadaFigura1PR236distintos devertical/modeloB. Caminho textualcomercial NIA/USU/DeAnza, nenhum video/foto/controledehardware selecionado. Pesquisa restrita, nao operacao autonoma.",
+      "researchApprovedForPublication": false,
+      "newestEvidence": "2026-10-15/n20i-retomada/auditoria-fechamento.json"
+    }
+  ],
+  "researchOrder": [
+    "N06-I",
+    "N07-I",
+    "N08-I",
+    "N09-I",
+    "N10-I",
+    "N11-I",
+    "N12-I",
+    "N13-I",
+    "N15-C",
+    "N15-I",
+    "N16-I",
+    "N17-I",
+    "N18-I",
+    "N19-I",
+    "N20-I"
+  ],
+  "orderRationale": "Historico preservado; retomada21/10 conclui N15 por selecao modular autorizada.",
+  "completedResearchSequence": [
+    "N06-I",
+    "N07-I",
+    "N08-I",
+    "N09-I",
+    "N10-I",
+    "N11-I",
+    "N12-I",
+    "N13-I",
+    "N16-I",
+    "N15-I",
+    "N17-I",
+    "N18-I",
+    "N19-I",
+    "N20-I",
+    "N21",
+    "N15-C"
+  ],
+  "preservedPartialRounds": [
+    "2026-10-03/n15c-cuidador-casa/pesquisa-complemento.json",
+    "2026-10-04/n15c-retomada/pesquisa-complemento.json",
+    "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+    "2026-10-04/n15i-funcional/pesquisa-complemento.json",
+    "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+    "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+    "2026-10-04/n17i-instrucao/pesquisa-complemento.json",
+    "2026-10-04/n18i-academia/pesquisa-complemento.json",
+    "2026-10-04/n19i-percursos/pesquisa-complemento.json",
+    "2026-10-04/n20i-instrucao/pesquisa-complemento.json"
+  ],
+  "activeEvidence": "2026-10-21/n15c-composicao/auditoria-fechamento.json",
+  "auditSnapshotPreserved": "2026-10-03/revisao-publicos-ambientes/matriz-publicos-ambientes.json",
+  "next": "Entregar consolidado; nenhumaN seguinte nem implementacao automatica.",
+  "updatedAt": "2026-10-21",
+  "status": "concluida_pesquisa_n01_n46_nos_recortes",
+  "currentActiveNiche": null,
+  "userPriorityOverride": {
+    "date": "2026-10-21",
+    "authority": "pedido direto do autor neste chat, aprovando fluxo modular proposto",
+    "compositionAllowed": true,
+    "fullOriginalProgrammeIsMandatory": false,
+    "completion": "2026-10-21/n15c-composicao/auditoria-fechamento.json",
+    "noAutomaticImplementation": true
+  },
+  "currentSequentialEvidence": "2026-10-21/n15c-composicao/relatorio.md",
+  "previousContinuationBeforeUserPause": "Conferencia dirigida13/10:5fichas factuais fechadas, somenteCG01 atende instrucao/uso no recorte selecionado,0publicados. ContextoCG03 resolvido;CG02-05 conservam8perguntas.9GETs/5corpos uteis(2direitos,1metadado,2guias auxiliaresNHS),4falhas;nenhum novo guia original cuidador. CotejoCG04 em5configuracoes parciais nao libera variantes/doses;404tese canonica eCAPTCHA,arquivo solicitado ao usuario. N15-Cglobal parcial/N21retida/APKnaoalterado.",
+  "pausedN15ExecutionAudit": {
+    "file": "2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+    "factualResearchClosedItems": 5,
+    "bothResearchGatesMetItems": [
+      "CG-01"
+    ],
+    "pendingSourceQuestions": 8,
+    "allFiveExecutableResearchClosed": false
+  },
+  "pausedNiches": [],
+  "newSequentialResearchClosed": [
+    "N22",
+    "N23",
+    "N24",
+    "N25",
+    "N26",
+    "N27",
+    "N28",
+    "N29",
+    "N30",
+    "N31",
+    "N32",
+    "N33",
+    "N34",
+    "N35",
+    "N36",
+    "N37",
+    "N38",
+    "N39",
+    "N40",
+    "N41",
+    "N42",
+    "N43",
+    "N44",
+    "N45",
+    "N46"
+  ],
+  "latestN18Increment": "2026-10-15/n18i-retomada/pacote-modular-academia.json",
+  "latestUserDirection20261016": "Permanecer em cada N ate fechar realmente ou atingir o limite; autor corrigiu encerramento precoceN18. Seguir a proxima somente apos fechamento; N15pausada.",
+  "allPreviousComplementsExceptPausedN15ResearchClosed": true,
+  "allPreviousComplementsResearchClosedMeaning": "Todos complementos tratados nos recortes selecionados; nao todos candidatos completos, pratica ou publicacao aprovadas.",
+  "allAnalysesExceptPausedN15ResearchClosed": true,
+  "allAnalysesClosed": true,
+  "consolidatedAudit": "2026-10-15/consolidacao-n01-n46.json",
+  "historicalUserPriorityOverride": {
+    "date": "2026-10-15",
+    "authority": "pedido direto do autor neste chat",
+    "activeNiche": "N22",
+    "pausedNiches": [
+      "N15"
+    ],
+    "n15Closed": false,
+    "n21Started": false,
+    "sequence": "N22 e seguintes, uma N por vez; somente avancar apos fechamento real; se limite da rodada chegar antes, permanecer na mesma N",
+    "compositionAllowed": true,
+    "compositionPolicy": "Podemos compor a partir de varias fontes humanas; registrar autoria, contribuicao e fonte por componente; conferir compatibilidade, dose, materiais, publico, apoio e direitos. Nao atribuir a composicao a um autor original nem herdar eficacia do programa completo.",
+    "searchPolicy": "Explorar colecoes, autores, referencias, manuais e programas de apps; buscas por palavras-chave sao uma via, nao a unica. Nao repetir coleta falha sem nova pista.",
+    "eventualGoal": "Preparar conteudo para experimentar no TrainForge e identificar lacunas; conclusao de pesquisa nao publica automaticamente conteudo nem inicia outra etapa."
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "scope": "revisao_transversal_N01_N17",
+  "date": "2026-10-03",
+  "requestedByUser": true,
+  "generalResearchStatusPreserved": true,
+  "olderAdultCatalogueApproved": false,
+  "caregiverProgrammeDemonstrated": false,
+  "appImplemented": false,
+  "marketPotentialValidated": false,
+  "dimensions": [
+    "ambiente",
+    "publico_e_elegibilidade_da_fonte",
+    "capacidade_funcional_e_apoios",
+    "experiencia_por_modalidade",
+    "papel_do_utilizador",
+    "contexto_clinico_separado",
+    "direitos_texto_midia"
+  ],
+  "rolePolicy": {
+    "careRecipient": "pessoa cuja saude e atividade estao registadas",
+    "caregiver": "pessoa distinta que acompanha ou regista quando legitimamente autorizada; nao profissional clinico por defeito",
+    "caregiverOwnWellbeing": "percurso pessoal separado; nao misturar medidas com pessoa assistida",
+    "sharingImplemented": false,
+    "legalBasisAndRepresentationValidated": false
+  },
+  "niches": [
+    {
+      "niche": "N01",
+      "evidence": "2026-09-26/n01-alimentos/resumo-identidades.json",
+      "olderCoverage": "base_reutilizavel",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Identidade de alimentos; nao demonstra dieta por idade nem publico cuidador.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N02",
+      "evidence": "2026-09-26/n02-composicao/resumo-composicao.json",
+      "olderCoverage": "base_reutilizavel",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Composicao/unidades/ausentes; nao metas nutricionais de idosos.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N03",
+      "evidence": "2026-09-27/n03-porcoes/resumo-porcoes.json",
+      "olderCoverage": "base_reutilizavel",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Quantidade/preparo; texturas adaptadas, espessantes e degluticao nao validados.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N04",
+      "evidence": "2026-09-28/n04-fechamento/resumo-fechamento.json",
+      "olderCoverage": "base_reutilizavel",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Produtos portugueses; nao recomendacao de suplementos ou dieta terapeutica.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N05",
+      "evidence": "2026-09-28/n05-ingredientes/resumo-ingredientes.json",
+      "olderCoverage": "base_reutilizavel",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Ingredientes/alergenios; sem interacoes com medicacao ou adequacao geriatrica.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N06",
+      "evidence": "2026-09-28/n06-imagens/resumo-imagens.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Direitos de fotos conferidos no recorte; compreensao visual por idosos nao testada.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N07",
+      "evidence": "2026-09-28/n07-rotulos/resumo-rotulos.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Licoes de rotulos gerais; visao, leitura e uso assistido nao testados.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N08",
+      "evidence": "2026-09-29/n08-receitas/resumo-receitas.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Receitas humanas; adequacao para idosos, preparo assistido e textura nao demonstrados.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N09",
+      "evidence": "2026-09-30/n09-ganho-peso/resumo-ganho-peso.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Guias gerais e contextos clinicos especificos; nao programa geriatrico contra desnutricao.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N10",
+      "evidence": "2026-09-30/n10-perda-peso/resumo-perda-peso.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Guias gerais; nao deficit automatico nem emagrecimento padrao para idosos.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N11",
+      "evidence": "2026-10-02/n11-manutencao-habitos/resumo-manutencao-habitos.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Habitos gerais; acompanhamento alimentar por cuidador nao definido.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N12",
+      "evidence": "2026-10-03/n12-desempenho/resumo-desempenho.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Orientacao de desempenho; nao meta proteica individual geriatrica.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N13",
+      "evidence": "2026-10-03/n13-planos-alimentares/resumo-planos.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Menu humano DASH de exemplo; nao plano individual para idosos/dependentes.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N14",
+      "evidence": "2026-10-03/n14-rotina-alimentar/resumo-rotina.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Organizacao pessoal proposta; pessoa assistida/autor do registo/consentimento nao definidos.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N15",
+      "evidence": "2026-10-03/n15-casa-sem-equipamento/resumo-programas.json",
+      "olderCoverage": "parcial_especifica",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Estudo com idosos da comunidade, criterios restritos e supervisao profissional; nao programa cuidador/dependencia.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N16",
+      "evidence": "2026-10-03/n16-casa-material/resumo-programas.json",
+      "olderCoverage": "parcial_especifica",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Programa historico para adultos mais velhos com kit especifico; direitos/atualidade/transicao pendentes.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    },
+    {
+      "niche": "N17",
+      "evidence": "2026-10-03/n17-casa-instrucao/resumo-instrucao.json",
+      "olderCoverage": "nao_demonstrada",
+      "caregiverCoverage": "nao_demonstrada",
+      "gap": "Quinze metadados de video; nenhum ativo aprovado, reproduzido ou testado com idosos/cuidadores.",
+      "newPopulationScopeStatus": "pendente",
+      "releaseApproved": false
+    }
+  ],
+  "subniches": [
+    {
+      "id": "N14-C",
+      "parent": "N14",
+      "question": "Como cuidador informal/profissional autorizado acompanha planeado/consumido sem misturar pessoas, origens e consentimento?",
+      "status": "concluido_para_pesquisa",
+      "researchRoundComplete": true,
+      "evidence": "2026-10-03/n14c-cuidador/pesquisa-complemento.json",
+      "releaseApproved": false
+    },
+    {
+      "id": "N15-I",
+      "parent": "N15",
+      "question": "Que programa domestico humano e adequado ao publico idoso explicitamente coberto, autonomo ou com apoio definido na fonte?",
+      "status": "parcial",
+      "researchRoundComplete": true,
+      "evidence": "2026-10-03/n15i-idosos-casa/pesquisa-complemento.json",
+      "releaseApproved": false
+    },
+    {
+      "id": "N16-I",
+      "parent": "N16",
+      "question": "Que kit/apoio e progressao o programa exige para idosos; quando precisa de supervisao profissional?",
+      "status": "parcial",
+      "researchRoundComplete": true,
+      "evidence": "2026-10-03/n16i-apoios/pesquisa-complemento.json",
+      "releaseApproved": false
+    },
+    {
+      "id": "N17-I",
+      "parent": "N17",
+      "question": "Que instrucao acessivel e midia licenciada foi conferida com idosos e com uso acompanhado?",
+      "status": "parcial",
+      "researchRoundComplete": true,
+      "evidence": "2026-10-03/n17i-instrucao/pesquisa-complemento.json",
+      "releaseApproved": false
+    },
+    {
+      "id": "N11-I",
+      "parent": "N11",
+      "question": "Que educacao alimentar humana aborda envelhecimento e apoio do cuidador sem transformar guias gerais em dieta individual?",
+      "status": "parcial",
+      "researchRoundComplete": true,
+      "evidence": "2026-10-03/n11i-alimentacao/pesquisa-complemento.json",
+      "releaseApproved": false
+    }
+  ],
+  "fictionalScenarios": [
+    {
+      "id": "IC-S01",
+      "fictional": true,
+      "case": "Pessoa idosa experiente em forca",
+      "requiredOutcome": "Nao selecionar automaticamente treino sentado ou de iniciante apenas pela idade."
+    },
+    {
+      "id": "IC-S02",
+      "fictional": true,
+      "case": "Cuidador regista uma refeicao da pessoa assistida",
+      "requiredOutcome": "Separar pessoa assistida, autor, hora, observacao/relato e quantidade consumida; servido nao equivale a consumido."
+    },
+    {
+      "id": "IC-S03",
+      "fictional": true,
+      "case": "Pessoa precisa de ajuda fisica para levantar",
+      "requiredOutcome": "Nao tratar supervisao remota N15 como protocolo de transferencia ou exercicio assistido por cuidador."
+    },
+    {
+      "id": "IC-S04",
+      "fictional": true,
+      "case": "Queda recente ou limitacao relevante",
+      "requiredOutcome": "Nao gerar exercicio/progressao por filtro; procurar percurso profissional/contexto especifico documentado."
+    },
+    {
+      "id": "IC-S05",
+      "fictional": true,
+      "case": "Cuidador usa o proprio relogio",
+      "requiredOutcome": "Nao atribuir passos/calorias do cuidador a pessoa assistida."
+    },
+    {
+      "id": "IC-S06",
+      "fictional": true,
+      "case": "Pessoa retira autorizacao de partilha",
+      "requiredOutcome": "Fluxo futuro deve cessar acesso correspondente; nenhum acesso partilhado implementado ou juridicamente validado."
+    },
+    {
+      "id": "IC-S07",
+      "fictional": true,
+      "case": "Cuidador quer treino e alimentacao para si",
+      "requiredOutcome": "Manter percurso pessoal separado do acompanhamento da pessoa assistida."
+    }
+  ],
+  "next": "N21; cinco rodadas complementares encerradas, quatro parciais com lacunas preservadas; N18-N20 parciais.",
+  "auditSnapshotNote": "Niches descrevem a auditoria inicial N01-N17; subniches registram progresso posterior sem alterar fechamentos gerais."
+}

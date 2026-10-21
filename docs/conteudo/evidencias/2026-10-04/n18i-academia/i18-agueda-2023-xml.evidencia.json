@@ -1,0 +1,22 @@
+{
+  "id": "i18-agueda-2023-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T03:41:36.986000+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir protocoloCERT, programa24semanas, instrucoes e licenca do artigo e suplementos; bandas nao maquinas nem praca.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12880457/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 121653,
+  "bodyFile": "../raw/i18-agueda-2023-xml.xml",
+  "sha256": "b569e5a39add5bf2596ee80e8e5b193a62d405a45429ef228f53e34a921dfda3"
+}

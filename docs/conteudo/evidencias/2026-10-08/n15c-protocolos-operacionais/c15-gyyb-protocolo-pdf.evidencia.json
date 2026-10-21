@@ -1,0 +1,24 @@
+{
+  "id": "c15-gyyb-protocolo-pdf",
+  "url": "https://cdn.clinicaltrials.gov/large-docs/48/NCT03853148/Prot_000.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:53:00.154199+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Documento34p explicitamente publicado no registro; braço4cuidador separado de tres gruposidosos. V7.1, manual externo citado nao incluso.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://cdn.clinicaltrials.gov/large-docs/48/NCT03853148/Prot_000.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 683971,
+  "bodyFile": "../raw/c15-gyyb-protocolo-pdf.pdf",
+  "sha256": "5cad493aa78ec4a91d499c5ed1040a306533c69b3031a2dea5cef8398916e892",
+  "bodyFormatMatchesRequest": true
+}

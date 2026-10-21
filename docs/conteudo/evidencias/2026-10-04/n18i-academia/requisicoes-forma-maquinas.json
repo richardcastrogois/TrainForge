@@ -1,0 +1,6 @@
+{
+ "date":"2026-10-04", "niche":"N18-I", "requests":[
+  {"id":"i18-eckardt-2016-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5122203/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Verificar ensaio diferente de 2019/2020, descricoes e figuras das variantes de maquinas, experiencia inicial e ciclo; nao transferir a barra na anca do outro ensaio."},
+  {"id":"i18-bestform-2022-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9286070/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Verificar se protocolo de maquinas para residentes idosos publica instrucoes operacionais, sem assumir academia comercial ou recursos ja disponiveis."}
+ ]
+}

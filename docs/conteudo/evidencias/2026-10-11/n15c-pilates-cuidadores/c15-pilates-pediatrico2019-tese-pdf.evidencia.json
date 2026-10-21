@@ -1,0 +1,24 @@
+{
+  "id": "c15-pilates-pediatrico2019-tese-pdf",
+  "url": "https://i-rep.emu.edu.tr/xmlui/bitstream/handle/11129/5008/Sent%C3%BCrkyazgi.pdf?sequence=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:02:06.856950+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Dissertacao original Senturk 2019 fisioterapia cuidadores praticantes: programa/figuras/doses/orientacao e resultados proprios, confrontar com registro e artigo2021.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://i-rep.emu.edu.tr/server/api/core/bitstreams/098905a6-b311-4636-bc4b-6e84eb62efac/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1666818,
+  "bodyFile": "../raw/c15-pilates-pediatrico2019-tese-pdf.pdf",
+  "sha256": "8dee1ddceb042df29acea795e4f7964505bcc5bb8f9ecb483359b5ae555e74a9",
+  "bodyFormatMatchesRequest": true
+}

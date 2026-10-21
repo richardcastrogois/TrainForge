@@ -1,0 +1,12 @@
+{
+  "niche": "N16", "date": "2026-10-03",
+  "requests": [
+    {"id": "n16-growing-stronger", "url": "https://stacks.cdc.gov/view/cdc/11447/cdc_11447_DS1.pdf", "purpose": "Preservar localmente manual humano de casa com pesos, fases e progressao; direitos Tufts/CDC ja condicionais.", "accept": "application/pdf", "extension": "pdf"}
+  ],
+  "reused": ["PR05 piloto NHS de forca", "PR11 conflito de direitos no catalogo"],
+  "webAccessLimits": [
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11314642/", "readAt": "2026-10-03", "result": "pagina de verificacao reCAPTCHA; nao contornar"},
+    {"url": "https://www.mdpi.com/1424-8220/24/15/4788", "readAt": "2026-10-03", "result": "429; nao repetir"}
+  ],
+  "scopeLimit": "Protocolo GYM de sarcopenia apenas indexado; nao contar programa/tabela/licenca como obtidos."
+}

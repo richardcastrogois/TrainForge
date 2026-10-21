@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "downloads": [
+    {
+      "id": "weight",
+      "publicSourceUrl": "https://huggingface.co/usyd-community/vitpose-plus-small/resolve/0c30b6534bb621af0162b481176742577264e36e/model.safetensors",
+      "collectedAtUtc": "2026-10-16T00:58:22.991109+00:00",
+      "temporaryFile": "C:\\dev\\TrainForge\\.research-runtime\\n43\\model\\model.safetensors",
+      "deleteAfterTests": true,
+      "httpStatus": 200,
+      "downloadSucceeded": true,
+      "bytes": 132619932,
+      "sha256": "f7bad8ed09eeeb2a7de6b38faaa8a88d07838e23e9c06a2a782099bca7467cb9",
+      "expectedHashMatches": true
+    },
+    {
+      "id": "photo",
+      "publicSourceUrl": "https://www.nasa.gov/wp-content/uploads/2023/03/iss040e086609.jpg?w=1041",
+      "collectedAtUtc": "2026-10-16T00:58:32.655313+00:00",
+      "temporaryFile": "C:\\dev\\TrainForge\\.research-runtime\\n43\\fixtures\\nasa.jpg",
+      "deleteAfterTests": true,
+      "httpStatus": 200,
+      "downloadSucceeded": true,
+      "bytes": 132055,
+      "sha256": "e65bbb08def86e9777c65c038095db9aa0dbb83385b57e3631fc78ff483b61b9"
+    }
+  ],
+  "notIncludedInHistoricalMetadataGETIndex": true,
+  "deletedAfterUseRequired": true
+}

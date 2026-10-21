@@ -1,0 +1,6 @@
+{
+  "date":"2026-10-08",
+  "collector":"../../consultar-baduanjin-acesso.py",
+  "scope":"Consulta exata do botaoPDF no helperpublico; somente disponibilidade, sem comprar ou executarJS.",
+  "requests":[{"id":"c15-baduanjin-acesso-pdf","url":"https://www.zglyyx.com/CN/article/showArticleFile.do","method":"POST","form":{"attachType":"PDF","id":"7307","json":"true"},"purpose":"Disponibilidade de PDF por interface publicada."}]
+}

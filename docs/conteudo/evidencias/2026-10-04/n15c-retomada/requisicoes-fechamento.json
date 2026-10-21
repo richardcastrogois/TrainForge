@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-04", "niche": "N15-C",
+  "requests": [
+    {"id":"c15-dupla-cancer-2026-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ler programa humano de exercicio da dupla e identificar anexo, ambiente e supervisao; sem presumir autonomia."},
+    {"id":"c15-hacer-2026-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12967483/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Conferir resistencia remota de cuidadores/dupla e disponibilidade integral das instrucoes."},
+    {"id":"c15-busca-manual-apendice","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28caregiver%20OR%20carer%29%20AND%20%28exercise%20OR%20resistance%29%20AND%20%28%22home-based%22%20OR%20%22at%20home%22%29%20AND%20%28appendix%20OR%20manual%20OR%20supplementary%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=40","extension":"json","purpose":"Busca dirigida a instrucoes integrais de exercicio do proprio cuidador em casa; metadados nao equivalem a programa."}
+  ]
+}

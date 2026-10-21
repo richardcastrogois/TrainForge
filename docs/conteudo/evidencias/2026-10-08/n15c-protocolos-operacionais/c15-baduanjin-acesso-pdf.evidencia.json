@@ -1,0 +1,28 @@
+{
+  "id": "c15-baduanjin-acesso-pdf",
+  "url": "https://www.zglyyx.com/CN/article/showArticleFile.do",
+  "method": "POST",
+  "requestForm": {
+    "attachType": "PDF",
+    "id": "7307",
+    "json": "true"
+  },
+  "publishedRequestOrigin": "c15-baduanjin-download-helper.evidencia.json / lsdy1",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Accept-Encoding": "identity"
+  },
+  "collectedAtUtc": "2026-10-09T01:13:11.182306+00:00",
+  "status": 200,
+  "use": "research_only",
+  "maxBytes": 2097152,
+  "purpose": "Consulta publica de disponibilidade do PDF, sem compra/conta/download automatico.",
+  "client": "urllib; TLS padrao; timeout25s;2MiB; sem retries; nao executar o helperJS",
+  "resolvedUrl": "https://www.zglyyx.com/CN/article/showArticleFile.do",
+  "contentType": "text/html;charset=UTF-8",
+  "bytes": 470,
+  "sha256": "de6d5c433bc6ecdb870e91a6383fd60f79dd48f0d7cb6715eb25a7f6b892983d",
+  "bodyFile": "../raw/c15-baduanjin-acesso-pdf.txt"
+}

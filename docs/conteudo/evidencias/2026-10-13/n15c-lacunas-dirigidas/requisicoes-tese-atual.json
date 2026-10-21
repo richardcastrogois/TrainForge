@@ -1,0 +1,7 @@
+{
+  "date":"2026-10-13",
+  "scope":"Primeiro GET da pagina canonica publicada pela resposta API Handle de10810/68569: https://addi.ehu.eus/handle/10810/68569. Dominio .eus confirmado pelo registro, nao substituido por tentativa/erro. URLs .es404 permanecem semretry. Normal TLS/headers, sem autenticacao, contorno ou PDF inventado.",
+  "requests":[
+    {"id":"n15dir-cg04-tese-canonica-html","url":"https://addi.ehu.eus/handle/10810/68569","accept":"application/json,text/html,text/plain","extension":"html","purpose":"Pagina atual da tese: obter link realmente publicado para PDF e condicoes de acesso/reuso. Pagina de metadados nao guia integral ou exercicios recebidos."}
+  ]
+}

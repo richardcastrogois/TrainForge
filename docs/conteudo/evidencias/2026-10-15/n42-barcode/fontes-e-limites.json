@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "id": "PR225",
+      "name": "ML Kit Barcode Scanning — Android",
+      "topic": "alimentos",
+      "status": "condicional",
+      "publisher": "Google",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_android_documentation_received",
+      "access": "Documento recebido200; termosN41reutilizados, sem SDK/câmera/conta.",
+      "rights": "SDK/modelo sob termosMLKit; documentosCCBY4/exemplosApache2salvoexceções não liberam dados de produtos ou extração de modelos.",
+      "finding": "Scannerespecífico; região potencial e payload decodificado distintos. EAN8/13/UPC-A não retornam nutrientes ou consumo automaticamente.",
+      "next": "Capturaóptica e app não testados. Conferir formato/rawValue/modelo disponível/lookupN04 e confirmação.",
+      "urls": [
+        "https://developers.google.com/ml-kit/vision/barcode-scanning/android"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n42-barcode/contrato-barcode.json"
+    },
+    {
+      "id": "PR226",
+      "name": "GS1 — dígito verificador e formato GTIN",
+      "topic": "alimentos",
+      "status": "referencia",
+      "publisher": "GS1 / GS1GO",
+      "checkedAt": "2026-10-15",
+      "evidenceLevel": "primary_indexed_check_digit_and_received_format_document",
+      "access": "Cálculo/exemplo obtidos de índice primário; GETmanual403preservado sem repetição/rota alternativa. DocumentoformatoGTIN200recebido.",
+      "rights": "Só método/fatos em redação própria; sem logotipo/catálogoGS1/código de produto criado. Dígito válido não atribuiGTINou comprova autenticidade.",
+      "finding": "Exemplo6291041500213 tem soma57/dígito3. Representação de armazenamento de14dígitos não equivale ao payloadoriginal ou a regraEANCOMnumérica.",
+      "next": "Preservar código/formato como strings e zeros; UPC-E/GS1DataMatrix exigem parsers próprios se escolhidos, não normalização cega.",
+      "urls": [
+        "https://www.gs1.org/services/how-calculate-check-digit-manually",
+        "https://support.gs1.org/support/solutions/articles/43000734355-what-is-the-required-format-of-gtin-in-gs1-edi-standards-"
+      ],
+      "localEvidence": "evidencias/2026-10-15/n42-barcode/contrato-barcode.json"
+    }
+  ],
+  "receipts": [
+    {
+      "receipt": "n42-gs1-check-digit.evidencia.json",
+      "httpStatus": 403,
+      "hashMatches": true,
+      "usefulBody": false
+    },
+    {
+      "receipt": "n42-gs1-gtin-format.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true,
+      "usefulBody": true
+    },
+    {
+      "receipt": "n42-mlkit-barcode.evidencia.json",
+      "httpStatus": 200,
+      "hashMatches": true,
+      "usefulBody": true
+    }
+  ],
+  "reusedN04": "Sem nova consultaOFF: os503e lacunas originais preservados, dois códigos/recibos200 reutilizados para dígito verificador.",
+  "noTemporaryRuntimeCreated": true,
+  "noOpticalDecodeTested": true
+}

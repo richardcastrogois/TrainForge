@@ -1,0 +1,23 @@
+{
+  "id": "c15-va-cares-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT02106065",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:09:44.864324+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario, resultados, documentos e populacao do cuidador familiar; nao usar resultado secundario do agregador.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT02106065",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 25672,
+  "bodyFile": "../raw/c15-va-cares-registro-json.json",
+  "sha256": "503ce347b4328219abdcdffd76eb853a36c53eb2051b981d714807a24c1cf4ab"
+}

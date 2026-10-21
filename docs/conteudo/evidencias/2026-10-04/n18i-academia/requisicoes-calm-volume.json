@@ -1,0 +1,7 @@
+{
+ "date":"2026-10-04", "niche":"N18-I", "requests":[
+  {"id":"i18-calm-protocolo-2016-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4977774/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ler protocolo CALM e distinguir treino pesado de academia versus leve em casa, com instrucoes, dose e suplementacao preservadas."},
+  {"id":"i18-baixo-volume-2025-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12011755/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Conferir instrucao completa de programa humano de resistencia de baixo volume em idosos fragilizados; nao converter centro de dia em academia autonoma."},
+  {"id":"i18-pact-treino-2021-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8513828/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Conferir programa humano fisico/cognitivo e anexos instrucionais potencialmente completos identificados na busca."}
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n39-swin-onnx-api",
+  "url": "https://huggingface.co/api/models/onnx-community/swin-finetuned-food101-ONNX",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:07.699404+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados de alternativa alimentar ONNX ligada por aplicação com avaliação publicada. Somente inventário de arquivos e revisão, não download de pesos nem instalação.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/models/onnx-community/swin-finetuned-food101-ONNX",
+  "contentType": "application/json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4394,
+  "bodyFile": "../raw/n39-swin-onnx-api.json",
+  "sha256": "45c7b3b19ba4dd79452455646babebdd7a13d5609697bfdbf0241ac7dc0deb27"
+}

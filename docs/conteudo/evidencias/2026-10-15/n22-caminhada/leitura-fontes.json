@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-15",
+  "niche": "N22",
+  "sources": [
+    {
+      "id": "PR140",
+      "name": "NHLBI: percursos de caminhada2006/2008 e manual comunitario",
+      "publisher": "NHLBI/NIH",
+      "status": "condicional",
+      "author": "Equipe institucional NHLBI; nao autor pessoal unico da tabela",
+      "professionalEvidence": "Manual2008 PDF9/12/14 credita revisao/contribuicoes clinicas de Norma CastilloMD, CandiceWongMD/PhD e coordenacao MatildeAlvaradoRN/MSN. Nao comprova que cada uma criou a tabela nem transfere autoria a versao2006.",
+      "access": "Dois guias integrais e folheto recebidos. Fonte8semanas confirmada igual ao manualPDF117;2006tabela12semanasPDF33.",
+      "rights": "Politica NHLBI: informacao em dominio publico salvo excecoes; conservar publicacoes formatadas sem alteracoes, nao endosso/logos/ativos de terceiros. Selecionar fatos e referencias, nao copiar diagramas/fotos. Traducao de produto formatado nao liberada automaticamente.",
+      "dependencies": [
+        {
+          "receipt": "n22-nhlbi-sample8.evidencia.json",
+          "url": "https://www.nhlbi.nih.gov/files/docs/resources/heart/filipino-health-manual/session-3/samplewalk.pdf",
+          "sha256": "7db8372fa6e476199c887f4488eb8efcc8f7099c5eeab05f5f024f511d032d74",
+          "pdfPages": [
+            1
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-nhlbi-filipino.evidencia.json",
+          "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/08-6339.pdf",
+          "sha256": "74b3131185ab1e350db8233afa9c8602253012135cc14b1fbdb9f43b6ff3ec20",
+          "pdfPages": [
+            2,
+            9,
+            12,
+            14,
+            99,
+            100,
+            117
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-nhlbi-guide.evidencia.json",
+          "url": "https://www.nhlbi.nih.gov/files/docs/public/heart/phy_active.pdf",
+          "sha256": "d64f8619094e14935fe8f59f24efbd28592f1c2d0a88684d21edf61df9b0019c",
+          "pdfPages": [
+            3,
+            29,
+            33
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-nhlbi-rights.evidencia.json",
+          "url": "https://www.nhlbi.nih.gov/about/contact/trademark-branding-and-logo",
+          "sha256": "6db26625a9b74bdd9e1c6d3c2a603106609718ebc7a4da47dcbdc9578ef47aa8",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "Materiais2006/2008 historicos; recomendacoes e triagem atuais requerem revisao antes de uso.",
+        "Manual comunitario tem ensino por agente treinado; nao confundir atividade da aula3min+alongamentos com tabela8semanas.",
+        "VersaoSession3-508PDF27 tem semana3/4 nao monotona; excluida da selecao."
+      ]
+    },
+    {
+      "id": "PR141",
+      "name": "PACE-UP: Harris et al.2013/2017, relatorio2018 e guia MovingMedicine2025",
+      "publisher": "Trials/PLOSMedicine/NIHR/MovingMedicine",
+      "status": "candidata",
+      "author": "Tess Harris e equipe PACE-UP; Lee David co-desenhou manual/diario",
+      "professionalEvidence": "Perfil institucional confirma Medicina/GeneralPractice de TessHarris; relatorio2018PDF142/143 declara HarrisGP/co-design e LeeDavidGP/co-design, e SteveIliffeGP/seguranca.",
+      "access": "Protocolo18p, artigoHTML, relatorio309p e guiaMovingMedicine9p recebidos; URLantigaSGUL retorna homeHTML, nao manualPDF.",
+      "rights": "Protocolo2013PDF1CCBY2.0; artigo2017CCBY(link4.0). Relatorio2018 tem restricao comercial geral, com Figura1/tabela especificas creditadasCCBY2.0; guiaMovingMedicine©2020 emURL2025 sem grant de adaptacao comercial confirmado. Nao transferir CC do artigo para guia/diario externos.",
+      "dependencies": [
+        {
+          "receipt": "n22-paceup-protocol.evidencia.json",
+          "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371%2Fjournal.pmed.1002210.s001&type=supplementary",
+          "sha256": "4c00b54bc7e51a8495050d1ac19679b10233aa0249b5d74f1eb4deb7c72cad22",
+          "pdfPages": [
+            1,
+            6,
+            9,
+            10,
+            11
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-paceup-article.evidencia.json",
+          "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002210",
+          "sha256": "411b689a016fc8efcd2d09eebf711d8f4cc1251dee64642c07ea8e9da6acadfa",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-paceup-nihr.evidencia.json",
+          "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/165395115/3014657.pdf",
+          "sha256": "979774e4a186c624d24663e860f62aecf76d273bcac7e6f26e844d81c47c26cb",
+          "pdfPages": [
+            8,
+            42,
+            44,
+            47,
+            142,
+            143
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-harris-qualification.evidencia.json",
+          "url": "https://profiles.sgul.ac.uk/tess-harris",
+          "sha256": "a405f5457109a2eac85fbcdf8b5127b0e4ace2f3088c04cf35648c6501e8bdb0",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-paceup-moving2025.evidencia.json",
+          "url": "https://movingmedicine.ac.uk/wp-content/uploads/2025/09/PACE-up-MM-edit-2025.pdf",
+          "sha256": "b11085b1ee79744d6e7c9708f295708ddaad36852975fdf0e40ae1c679eccca5",
+          "pdfPages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "45-75anos inativos ambulantes fora de casa; nao pacientes confinados/demencia/alto risco de quedas.",
+        "Efeito do conjunto entregue com pedometro, diario e apoio descrito; nao de cada bloco nem de app novo.",
+        "Postagem sem enfermeiro presencial incluiu contato de assistente para equipamento/compreensao; nao APKsemqualquerapoio.",
+        "Algoritmo factual selecionavel pela fonteCCBY2013; nao republicar formulario2025 sobCC sem prova."
+      ]
+    },
+    {
+      "id": "PR142",
+      "name": "ACE WalkTheTalk Toolkit2015 e artigo MicheleStanten",
+      "publisher": "American Council on Exercise",
+      "status": "condicional",
+      "author": "Coletanea ACE; MicheleStanten autora explicita do artigo5348; nao autora unica presumida de todas as paginas",
+      "professionalEvidence": "ToolkitPDF47 e artigo5348 declaram MicheleStanten ACECertifiedGroupFitnessInstructor/walkingcoach; demais profissionais creditados noPDF47.",
+      "access": "Toolkit48p e artigo pessoal recebidos; nove orientacoes tecnicas naPDF42.",
+      "rights": "PDF3: copiar somente sem modificar, com atribuicao; nao vender/explorar. Credito nao autoriza traducao/importacao comercial.",
+      "dependencies": [
+        {
+          "receipt": "n22-ace-toolkit.evidencia.json",
+          "url": "https://contentcdn.eacefitness.com/assets/about-ace/advocacy/Walking_Toolkit_Pro.pdf",
+          "sha256": "7f8fa29fb1133ef5d39013f62341788ef4e959e1cdcd9f83830c71de0a209f1f",
+          "pdfPages": [
+            3,
+            12,
+            41,
+            42,
+            47
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-ace-michele.evidencia.json",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/5348/why-you-should-tell-your-clients-to-walk-more/",
+          "sha256": "ec0f4b7ffc25ce5b153a92620b4c9ff0a96234fa46ab692a5e58c65c85b62a74",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "Tecnica como referencia de pesquisa; sem importar9comandos/fotos.",
+        "Sugestoes avanzadas/colete/andarpara tras e meta10000nao selecionadas para idosos/iniciantes."
+      ]
+    },
+    {
+      "id": "PR143",
+      "name": "UGA PEDB Ch.1 Walking: livro aberto e capitulos",
+      "publisher": "University of Georgia",
+      "status": "condicional",
+      "author": "UGA PEDB Program (autoria coletiva)",
+      "professionalEvidence": "Noticia institucional2016 liga IlseMason, professoraKinesiology/coordenadoraPE, ao desenvolvimento de OERdoPEDB; nao declara autoria pessoal de cada frase deste livro.",
+      "access": "Indicee4capitulos lidos na ferramentaweb; GETlocalindice403 preservado, sem corpo HTMLinstrucional local. Basics403web.",
+      "rights": "CCBY4.0 no livro/capitulos, salvoexcecoes; Kaltura/YouTube/BradWalker nao recebem automaticamente a licenca do texto.",
+      "dependencies": [
+        {
+          "receipt": "n22-uga-index.evidencia.json",
+          "url": "https://open.online.uga.edu/walking/",
+          "sha256": "752cb38551ea31cd2944d5350d7a81dfa5c6f6a55b29a0c2ef158676f1c0acfb",
+          "pdfPages": [],
+          "httpStatus": 403,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-uga-professional.evidencia.json",
+          "url": "https://coe.uga.edu/news/2016-04-senior-lecturer-receives-2016-creative-teaching-award/",
+          "sha256": "858211188d5b8d2d3681964340b821c50aac6ed8adb9f4f62f3c8db381833b94",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "webEvidence": "triagem-web.json",
+      "limits": [
+        "Conteudo para estudantes/curso, nao prova especifica para cuidador/idosofragil.",
+        "Nao selecionar percentuais alimentares, PNF, metasFC65-85%ou videos do capitulo."
+      ]
+    },
+    {
+      "id": "PR144",
+      "name": "GeorgiaHighlands WalkingandJoggingforFitness2018",
+      "publisher": "GeorgiaHighlandsCollege/UniversitySystemGeorgia",
+      "status": "condicional",
+      "author": "ScottFlynn;LisaJellum;JonathanHoward;AltheaMoser;DavidMathis;ChristinCollins;SharryseHenderson;ConnieWatjen",
+      "professionalEvidence": "Autores nominais e cursoPHED1130 publicados; qualificacoes individuais nao conferidas nesta rodada.",
+      "access": "Registro/indice lidos; PDF indicado403preservado. Nao manual integral recebido.",
+      "rights": "RegistroCCBYNCSA4.0; nao grant comercial.",
+      "dependencies": [
+        {
+          "receipt": "n22-galileo-index.evidencia.json",
+          "url": "https://oer.galileo.usg.edu/health-textbooks/3/",
+          "sha256": "da396c30c14d8dac579d82b1a41d6ed98e083a9f23afe4620001b5abb8e9920c",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-ghc-pdf.evidencia.json",
+          "url": "https://oer.galileo.usg.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=health-textbooks&type=additional",
+          "sha256": "46c802aafc03c5b3b7af31312656abd9e8f8d86a45f8be6a32b5df4b5ec37d1c",
+          "pdfPages": [],
+          "httpStatus": 403,
+          "bodyFormatMatchesRequest": false
+        }
+      ],
+      "limits": [
+        "Amostra institucional e lead, nao programa pronto aprovado."
+      ]
+    },
+    {
+      "id": "PR145",
+      "name": "Guia AtividadeFisica PopulacaoBrasileira2021",
+      "publisher": "MinisterioSaude/UFPel",
+      "status": "condicional",
+      "author": "Equipe tecnica nominalPDF4; revisao tecnica geral PedroRodriguesCuriHallal",
+      "professionalEvidence": "Coordenacao e grupos noPDF4; nao atribuir toda a obra somente ao revisor nem ao TrainForge.",
+      "access": "PDF52p; capitulosadultos/idosos e licenca conferidos.",
+      "rights": "CCBYNCSA4.0PDF4; uso/adaptacao comercial nao liberado automaticamente.",
+      "dependencies": [
+        {
+          "receipt": "n22-brasil-guide.evidencia.json",
+          "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+          "sha256": "944f5ece2d1a82857f430c5e846ed0cc1798ce18b20218206b9068fa12e1c90e",
+          "pdfPages": [
+            4,
+            26,
+            29,
+            30,
+            32,
+            33
+          ],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "Orientacao geral/casa/praca e pequenosblocos; nao calendario de treino geriatricofragil nem protocolo proprio de cuidador.",
+        "Nao prescrever insulina, medicamentos ou traducao de contatos SUS paraPortugal."
+      ]
+    },
+    {
+      "id": "PR146",
+      "name": "NHS WalkingforHealth e Active10",
+      "publisher": "NHS/DHSC",
+      "status": "referencia",
+      "author": "Equipe editorialNHS; autoria profissional individual nao conferida para app",
+      "professionalEvidence": "Fonte institucional; nao atribuir doses do app a profissional nao identificado.",
+      "access": "Pagina caminhada e oferta publicaActive10 recebidas; app nao instalado/testado nesta rodada.",
+      "rights": "Nao demonstrada licenca especifica do software/midia/didatica para incorporar aoTrainForge; acesso gratuito nao grant deextracao.",
+      "dependencies": [
+        {
+          "receipt": "n22-nhs-walking.evidencia.json",
+          "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+          "sha256": "22e35e1d349794c970f89a16f874b0a9658bc29bc94c9dc262eb7794b6148a95",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-nhs-active10.evidencia.json",
+          "url": "https://www.nhs.uk/better-health/get-active/",
+          "sha256": "fdf5665cea686f2cc94b577d8ecbae2380fc97b7940b0ad60aba3c82bc3dbe26",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "Active10funcionalidade declarada pelo fornecedor; nao observacao runtime.",
+        "PaginaWalking ultima revisao2022; conferir atualizacao editorial antes depublicar."
+      ]
+    },
+    {
+      "id": "PR147",
+      "name": "Pacer Walking App: oferta publica",
+      "publisher": "Pacer",
+      "status": "referencia",
+      "author": "EquipePacer; nenhumcriador profissional de plano identificado noAbout",
+      "professionalEvidence": "Nao verificada para exercicios; nomes societarios nao qualificacao clinica.",
+      "access": "PaginaAbout recebida; rastreamentoGPS/atividade/comunidade declarados.",
+      "rights": "Nenhuma permissao de importacao de planos/midia demonstrada.",
+      "dependencies": [
+        {
+          "receipt": "n22-pacer-about.evidencia.json",
+          "url": "https://www.mypacer.com/about",
+          "sha256": "d06113153737afb33728c93e8965c191211c3764b8c90a01e58499d11fd60e1e",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        }
+      ],
+      "limits": [
+        "Nao usar dominioPacerFitness (produto nutricional distinto) como fonte deste app.",
+        "Nao baixados APK/videos nem visitado conteudo restrito."
+      ]
+    },
+    {
+      "id": "PR148",
+      "name": "WalkatHome: oferta e termos publicos",
+      "publisher": "WalkProductionsInc.",
+      "status": "referencia",
+      "author": "Marca/equipeWalkatHome; canalpublicoLeslieSansone identificado, semqualificacaoindividual conferida",
+      "professionalEvidence": "Nao validada para selecao; sitepublico e marketingnao bastam.",
+      "access": "HomeeTermos recebidos; catalogo publico soestrutura. PDFFamilyCircleantigo404preservado.",
+      "rights": "Termos5/8/12: acesso pessoal nao comercial, restricoes a coleta/reproducao; biblioteca/videos nao extraidos nem testepremium iniciado.",
+      "dependencies": [
+        {
+          "receipt": "n22-wah-home.evidencia.json",
+          "url": "https://www.walkathome.com/",
+          "sha256": "daf6ceab252ce13d48440e301a4815d5b44f74cc96cb4e97b67dfe12fb421d8b",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-wah-terms.evidencia.json",
+          "url": "https://www.walkathome.com/terms",
+          "sha256": "4bb5b542b33af061d3ffb18002a81f0d4f65009e9524dc9d759430990b256f46",
+          "pdfPages": [],
+          "httpStatus": 200,
+          "bodyFormatMatchesRequest": true
+        },
+        {
+          "receipt": "n22-leslie-plan.evidencia.json",
+          "url": "https://walkathome.com/wp-content/uploads/2020/03/FC070110WALKI.pdf",
+          "sha256": "754ea2e73ab8160b79d14b8ef289b0f7743b96d65bf459e6aaf929f609003aa9",
+          "pdfPages": [],
+          "httpStatus": 404,
+          "bodyFormatMatchesRequest": false
+        }
+      ],
+      "limits": [
+        "Descricao de calendario mensal e biblioteca e declaracao do fornecedor, nao corpus recebido/licenciado."
+      ]
+    }
+  ],
+  "noVideoOrAppBinaryCollected": true
+}

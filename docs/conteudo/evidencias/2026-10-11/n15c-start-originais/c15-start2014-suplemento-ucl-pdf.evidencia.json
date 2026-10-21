@@ -1,0 +1,25 @@
+{
+  "id": "c15-start2014-suplemento-ucl-pdf",
+  "url": "https://discovery.ucl.ac.uk/id/eprint/1458340/3/Supp.Appendix.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T16:35:39.771934+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Suplemento original revisado206p publicado pelo depositanteUCL: protocolo2009/manualleader/passos/seguranca/dose/apoio/direitos. Nao assumir gestos isolados saoRCT nemdar grant atual.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://discovery.ucl.ac.uk/id/eprint/1458340/3/Supp.Appendix.pdf",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 18945,
+  "bodyFile": "../raw/c15-start2014-suplemento-ucl-pdf.pdf",
+  "sha256": "c3611e4806cc1540a0338d393b6c27ab34a7e63c30af2380cad5ad7c335d1916",
+  "bodyFormatMatchesRequest": false,
+  "error": "HTTP 404"
+}

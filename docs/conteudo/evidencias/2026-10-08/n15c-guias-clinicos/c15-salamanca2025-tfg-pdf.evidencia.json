@@ -1,0 +1,24 @@
+{
+  "id": "c15-salamanca2025-tfg-pdf",
+  "url": "https://gredos.usal.es/bitstream/handle/10366/166663/TFG_L%C3%B3pezGilI_Cu%C3%ADdateMientrasCuidas.pdf?sequence=1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:35:09.777414+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "TFG55p comAnexo4programa domiciliar/7tabelas de sessoes. Verificar dose/cadencia/apoio/resultados/autoria, nao confirmar eficacia por ser tese.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://gredos.usal.es/server/api/core/bitstreams/945963a8-742a-4590-a126-414e6a3c6490/content",
+  "contentType": "application/pdf;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 3371992,
+  "bodyFile": "../raw/c15-salamanca2025-tfg-pdf.pdf",
+  "sha256": "6e5d6c0252d21c6587003ddb6e7da1d3a49efbe70d312637b1e003f2b7924c5d",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-15",
+  "niche": "N23",
+  "sources": [
+    {
+      "id": "PR149",
+      "name": "GRONORUN1protocolo2007 e resultado2008",
+      "publisher": "BMC/UMCG/Groningen",
+      "status": "condicional",
+      "author": "IdaBuist;SteefWBredeweg e equipe",
+      "access": "JATS/PDF2007recebidos e tabelas visualmente cotejadas;resultado2008resumo primario recebido,PDF403 preservado.",
+      "rights": "2007CCBY2.0;naotransferir pararesultadoAJSM2008.",
+      "finding": "59sessoes indexadas8/13semanas;4linhassemanais/6camposdiscrepantes nooriginal,semcorrecao inferida.2008P.90/incidencia20.8vs20.3%,semprevencaodemonstrada.",
+      "evidence": "gronorun-tabelas.json",
+      "receipts": [
+        "n23-gronorun-jats",
+        "n23-gronorun-pdf",
+        "n23-gronorun-result-abstract",
+        "n23-gronorun-result"
+      ]
+    },
+    {
+      "id": "PR150",
+      "name": "GRONORUN2 corrida9semanas2010/resultado2012",
+      "publisher": "BMC/UMCG/Groningen",
+      "status": "candidata",
+      "author": "SteefWBredeweg;SjoukeZijlstra;IdaBuist",
+      "access": "JATS/PDF2010recebidos;Tabela2com25sessoes,todos9totaisconferidos;resultado2012apenasresumoweb.",
+      "rights": "2010CCBY2.0;preservarcredito/licenca e marcartraducao/mudancas. Videos externos/areaindividual e artigo2012naoherdamCC.",
+      "finding": "Candidato selecionado somentecorrida9semanas do caminhoCONsemPRECON.18-65saudaveis,semcorridaregular12meses,semlesao3meses.Orientacoesescritas/orais iniciais,individualsemtrainercontinuo. Semprevencaolesoescomprovada.",
+      "evidence": "gronorun2-lote.json",
+      "receipts": [
+        "n23-gronorun2-jats",
+        "n23-gronorun2-pdf",
+        "n23-bredeweg-professional"
+      ]
+    },
+    {
+      "id": "PR151",
+      "name": "Bupa Beginner5km8semanas e orientacaoFairhurst2026",
+      "publisher": "Bupa",
+      "status": "condicional",
+      "author": "PDFmarcaBupa;JohnFairhurstfisioterapeuta somenteartigo demetodo",
+      "access": "PDF1pcalendario8semanas recebido/visto;orientacoes e perfilprimarios lidosnaweb,GETmetodo403.",
+      "rights": "Sem licenca comercial/adaptacao comprovada;naocopiar/editarPDF/fotos/layout.",
+      "finding": "Plano3dias/sem,intercalacorrida/caminhada e distancias;repete semana sepreciso. Nao atribuirPDFaFairhurstsemvinculo.",
+      "evidence": "triagem-web.json",
+      "receipts": [
+        "n23-bupa-5k",
+        "n23-bupa-method"
+      ]
+    },
+    {
+      "id": "PR152",
+      "name": "BerkshireHealthcare retornoacorridaBH1165qv1.0",
+      "publisher": "BerkshireHealthcareNHSFoundationTrust",
+      "status": "condicional",
+      "author": "EquipeMSKPhysiotherapyinstitucional;responsavelnominal naoidentificado",
+      "access": "HTML/PDF2p2026recebidos,vistos;revisaoFev2026/proxima2028.",
+      "rights": "CopyrightNHSlocal;licenca comercial eadaptacaodeste ativo naodemonstradas;OGLgeralNHSEnglandnao herdadapormarca.",
+      "finding": "Retorno com fisioterapeuta/avaliacaoteciduale marcha30min;seisfases,2-3vezes/sem/24hentre. Semana5jog15/walk1semrepeticoes/totalexplicito;nao completar porIA.",
+      "evidence": "triagem-web.json",
+      "receipts": [
+        "n23-berkshire-return",
+        "n23-berkshire-pdf"
+      ]
+    },
+    {
+      "id": "PR153",
+      "name": "OhioState BasicReturntoRunning",
+      "publisher": "OhioStateWexnerMedicalCenter",
+      "status": "referencia",
+      "author": "EquipeOSUWMC;naoselecionada",
+      "access": "PDF4p;primeirapagina vista,titulo/criterios/cabecalhorestricaoconferidos.",
+      "rights": "ForOSUWMCUSEONLY;licenciamentonecessario. Naoimportar/nãocontatar.",
+      "finding": "Reabilitacaofinal,avaliacaoclinica/hop/forca;naoC25Kgeral ouprogramaparaqualquerpessoa comdor.",
+      "evidence": "triagem-web.json",
+      "receipts": [
+        "n23-ohio-return"
+      ]
+    },
+    {
+      "id": "PR154",
+      "name": "DecathlonCoach e colecaoeditorialRunning",
+      "publisher": "Decathlon/Kalenji",
+      "status": "referencia",
+      "author": "PhilippePropage,instrutorsessao15min;outroconteudoeditorial naoatribuido automaticamente",
+      "access": "Artigo publico recebido e sessao15min/termoslidosweb;nenhumappouaudioextraido.",
+      "rights": "CGUpublico2021usoparticular/naoprofissional;naoprosseguircomcoletadesessoes/biblioteca.",
+      "finding": "Fonteindependentedeoutroapp identificaautoria,plano/limiares;gratuito aousuariopessoal naoautorizaadaptacaodoTrainForge. SemvinculoBeFit.",
+      "evidence": "triagem-web.json",
+      "receipts": [
+        "n23-decathlon-beginner"
+      ]
+    },
+    {
+      "id": "PR155",
+      "name": "NikeRunClub planospublicos/corpoeditorial",
+      "publisher": "Nike",
+      "status": "referencia",
+      "author": "EquipeNikeRunning,ChrisBennettGlobalHeadCoachnominal",
+      "access": "Indiceoficial recebido;pagina5k8semanas lidaweb;calendarios/audio/appnaobaixados.",
+      "rights": "Nenhumgrantimportacao/adaptacaocomercial demonstrado;guiasgratis naoAPIpublica deconteudo.",
+      "finding": "Existemplanos5k10k/mei amaratona/maratona e corridasguiadas declaradaspelo fornecedor;naoobservacaoruntime ouorigemBeFitcomprovada.",
+      "evidence": "triagem-web.json",
+      "receipts": [
+        "n23-nike-plans"
+      ]
+    }
+  ],
+  "existingSource": "PR06NHS,27sessoes9semanas/12padroes;direitosBetterHealthcondicionais preservados semGETnovo."
+}

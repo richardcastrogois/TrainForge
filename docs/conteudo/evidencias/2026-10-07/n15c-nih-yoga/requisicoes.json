@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-07","scope":"Somente N15-C, protocolo original NIH Iyengar/roteiro e direitos, e deposito independente Care Me Too; nao audio/video baixado.",
+  "requests":[
+    {"id":"c15-nih-yoga2022-html","url":"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0277009","extension":"html","purpose":"Artigo primario especifico cuidador2022, CC0 e autoria/instrutor identificados; verificar entrega, resultados e links publicados de materiais."},
+    {"id":"c15-nih-yoga2022-pdf","url":"https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0277009&type=printable","accept":"application/pdf","extension":"pdf","purpose":"PDF original para conferencia de metodos/CC0/instrutor/limites; artigo nao automaticamente roteiro audio ou pamphlet."},
+    {"id":"c15-nih-yoga2022-s2-docx","url":"https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0277009.s002&type=supplementary","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","extension":"docx","purpose":"Suplemento S1File protocolo original observado no artigo, conferir sequencia real/posicoes/doses/precaucoes e licenca por ativo; DOCX ate2MiB, extracao limitada sem executar conteudo."},
+    {"id":"c15-plos-licencas-politica","url":"https://journals.plos.org/plosone/s/licenses-and-copyright","extension":"html","purpose":"Politica editorial primaria de obras publicadas/suplementos/terceiros, nao herdar licenca para gravacao nao publicada."},
+    {"id":"c15-caremetoo2020-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7744258/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Deposito OA independente do artigo2020CareMeToo, verificar instrucao/ativos/licenca. Fonte distinta nao contorno do reCAPTCHA PMC, nao nova captura PMC."}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-rutgers-autocuidado-pagina",
+  "url": "https://care2caregivers.com/professional-resources/self-care/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T21:54:37.188802+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina institucional dos guias e videos, contexto e autorias/direitos publicados; nenhum video baixado nem formulario de encomenda preenchido.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://care2caregivers.com/professional-resources/self-care/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 141060,
+  "bodyFile": "../raw/c15-rutgers-autocuidado-pagina.html",
+  "sha256": "519e3622f713b3e7574b3080fadd3f9225c9d3f3dc9424e75663e216231ed4d0"
+}

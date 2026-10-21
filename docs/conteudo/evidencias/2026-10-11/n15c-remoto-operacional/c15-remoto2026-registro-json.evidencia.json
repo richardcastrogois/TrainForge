@@ -1,0 +1,23 @@
+{
+  "id": "c15-remoto2026-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT04102514",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:27:01.091961+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro original com documentos/versoes/resultados. Distinguir99duplas de198pessoas e de meta100duplas,6meses publicados de18meses planejados.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT04102514",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 93653,
+  "bodyFile": "../raw/c15-remoto2026-registro-json.json",
+  "sha256": "d7be7ef34282fcde104c1a6775dac96dd0542920426a586d647a19750bdffbd4"
+}

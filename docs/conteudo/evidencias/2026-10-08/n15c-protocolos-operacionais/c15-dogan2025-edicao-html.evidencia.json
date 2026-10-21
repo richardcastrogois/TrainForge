@@ -1,0 +1,23 @@
+{
+  "id": "c15-dogan2025-edicao-html",
+  "url": "https://dergipark.org.tr/tr/pub/erusaglik/issue/99921",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:43:51.184881+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Pagina da edicao original2025 que inclui este artigo: texto publicado de licenciamento e regras, preservar divergencia de avisos/editorial e nao transferir politica2026 automaticamente.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://dergipark.org.tr/tr/pub/erusaglik/issue/99921",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 172332,
+  "bodyFile": "../raw/c15-dogan2025-edicao-html.html",
+  "sha256": "d3b2a5f1ef2c29e3c558cd100ffb1d55b989e8bdbd43119aac69e699ec4fa9a5"
+}

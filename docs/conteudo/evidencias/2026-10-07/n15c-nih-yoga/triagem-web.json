@@ -1,0 +1,14 @@
+{
+  "date":"2026-10-07","scope":"Somente N15-C; busca dirigida de originais, nao revisao sistematica exaustiva.",
+  "queries":["John Schumacher caregivers audio","site.cc.nih.gov yoga audio","Sequence for Yoga Practice caregivers","02257853 audio","John Schumacher caregiver","site.clinicalcenter.nih.gov yoga","site.cc.nih.gov yoga caregiver","0277009 audio file","John Schumacher caregivers yoga audio NIH","Alyson Ross caregiver yoga audio file","Seated Forward Bend caregivers NIH","site.clinicalcenter.nih.gov wecare yoga caregiver relaxation","site.cc.nih.gov wecare yoga","Feasibility and Preliminary Impact Mind Body caregivers videos","Care Me Too exercise videos"],
+  "primaryWebOnly":[
+    {"url":"https://www.cc.nih.gov/we-care/resources","finding":"Lista recursos institucionais/federais, biblioteca/recreacao e videos gerais. Sem link observado para gravacao padronizada deste ensaio. Nao demonstra ausencia global.","localBodyReceived":false},
+    {"url":"https://www.iayt.org/members/?id=40980525","finding":"Busca primaria publica Ross PhD/RN/CIYT/C-IAYT; abertura leitor falhou. Nao registro independente recebido, nem domicilio/telefone copiados como necessario para programa.","localBodyReceived":false},
+    {"url":"https://pubmed.ncbi.nlm.nih.gov/38655852/","doi":null,"finding":"GYYB2024: coorte20 cuidadores de demencia,15concluintes,16questionarios; criador Sundar Balasubramanian declarado. Dez videos curtos nao recebidos. Fonte nao prova pacote aberto.","localBodyReceived":false},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12874544/","finding":"Busca primaria sugere GYYB em casa. Abrir devolveu reCAPTCHA, nao artigo recebido; nao repetir/contornar. Procurar somente deposito publico independente se pertinente.","localBodyReceived":false},
+    {"url":"https://www.cc.nih.gov/sites/default/files/internet-files/wecare/pdfs/NIH_Pt_Library.pdf","finding":"Bibliografia de biblioteca inclui livros/meditacao comercial; nao identificada como audio Schumacher/Ross do ensaio. Nao coletado por falta de equivalencia.","localBodyReceived":false}
+  ],
+  "notEquivalent":["homonimos John Schumacher sem vinculo com Iyengar","Care Me Too Android/Bluetooth de outro projeto","Yoga Journal caregiver sequence sem permissao comercial aberta demonstrada","pesquisa em paciente com cuidador como avaliador","aulas comerciais ou livros da biblioteca NIH"],
+  "publishedAssetsReceived":["artigo NIH HTML/PDF","S1File protocolo2018-02-14","politica editorial PLOS","Care Me Too JATS em deposito EuropePMC independente"],
+  "allSearchResultsReceived":false,"authorContactMade":false,"barriersBypassed":false,"audioOrVideoDownloaded":false,"n21Started":false
+}

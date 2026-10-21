@@ -1,0 +1,21 @@
+{
+  "id": "n11-dgs-10-passos",
+  "url": "https://alimentacaosaudavel.dgs.pt/biblioteca-pnpas/doc/Guia_10Passos_Info_Geral_Utente-1",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-03T02:29:07.413223+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia português PNPAS/DGS dos 10 passos para alimentação saudável; referência local, direitos comerciais não presumidos.",
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://alimentacaosaudavel.dgs.pt/biblioteca-pnpas/doc/Guia_10Passos_Info_Geral_Utente-1",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 611946,
+  "bodyFile": "../raw/n11-dgs-10-passos.pdf",
+  "sha256": "c9ef1f72e092b64b812d9cfa45d343beecf566da4e087f89812da90080ecc8da"
+}

@@ -1,0 +1,210 @@
+{
+  "niche": "N14-C",
+  "date": "2026-10-03",
+  "status": "concluido_para_pesquisa",
+  "researchScope": "Requisitos de rotina/registos acompanhados e limites de legitimidade; nao validacao juridica ou partilha real.",
+  "next": "N15-I",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "evidence": [
+    {
+      "record": "2026-10-03/n14c-cuidador/n14c-cnpd-consentimento.evidencia.json",
+      "anchors": [
+        "apenas um entre vários",
+        "fácil de retirar"
+      ],
+      "role": "Bases legais, finalidades e retirada quando aplicavel; nao eleger automaticamente a base do produto"
+    },
+    {
+      "record": "2026-10-03/n14c-cuidador/n14c-gov-cuidador.evidencia.json",
+      "anchors": [
+        "Cuidador informal",
+        "12/06/2026",
+        "confidencialidade"
+      ],
+      "role": "Contexto portugues de direitos/autonomia e acompanhamento; consentimento clinico nao equivale a partilha digital"
+    },
+    {
+      "record": "2026-10-03/revisao-idosos-cuidadores/ic-cdc-caregivers.evidencia.json",
+      "anchors": [
+        "current physical ability",
+        "healthcare provider"
+      ],
+      "role": "Limite entre apoio quotidiano e intervencao profissional"
+    }
+  ],
+  "dependencies": [
+    "2026-10-03/n14-rotina-alimentar/rotina-proposta.json",
+    "2026-10-03/revisao-idosos-cuidadores/matriz-cobertura.json"
+  ],
+  "operations": [
+    {
+      "id": "C14-O01",
+      "name": "identificar_pessoas",
+      "decision": "Separar pessoa assistida, pessoa que regista e contexto de acompanhamento; nenhum perfil partilhado automatico.",
+      "fields": [
+        "careRecipientRef",
+        "enteredByRef",
+        "entryOrigin"
+      ]
+    },
+    {
+      "id": "C14-O02",
+      "name": "autorizar_ambito",
+      "decision": "Propor convite/confirmacao de identidade e ambito especifico; legitimidade juridica verificada antes de acesso. Profissao ou parentesco nao bastam.",
+      "fields": [
+        "relationshipRef",
+        "accessScope",
+        "authorisationState",
+        "authorityVerificationRef"
+      ]
+    },
+    {
+      "id": "C14-O03",
+      "name": "representacao_delimitada",
+      "decision": "Caso sem capacidade de autorizar nao e resolvido pela idade/diagnostico/autodeclaracao do cuidador; verificar representacao e limites aplicaveis; pendente.",
+      "fields": [
+        "representationReviewState",
+        "permittedPurposes"
+      ]
+    },
+    {
+      "id": "C14-O04",
+      "name": "separar_refeicao",
+      "decision": "Guardar planeado, servido e consumido separadamente, com quantidade desconhecida admitida e origem observacao/relato; nao estimar consumo pelo servido.",
+      "fields": [
+        "plannedQuantity",
+        "servedQuantity",
+        "consumedQuantity",
+        "observationType",
+        "occurredAt",
+        "recordedAt"
+      ]
+    },
+    {
+      "id": "C14-O05",
+      "name": "registar_atividade",
+      "decision": "Registar o realizado/relatado/observado com ajuda digital ou fisica distinta; nao aprovar progressao clinica por conclusao de sessao.",
+      "fields": [
+        "activityReferenceVersion",
+        "completionState",
+        "assistanceType",
+        "reportedByRef"
+      ]
+    },
+    {
+      "id": "C14-O06",
+      "name": "corrigir_rastreavel",
+      "decision": "Correcao identifica autor, hora e motivo e nao reescreve a fonte/plano ou oculta origem anterior; conflito com pessoa assistida deve ficar visivel.",
+      "fields": [
+        "previousEntryRef",
+        "correctionAuthorRef",
+        "correctionAt",
+        "correctionReason"
+      ]
+    },
+    {
+      "id": "C14-O07",
+      "name": "retirar_acesso",
+      "decision": "Retirada invalida o acesso correspondente nas copias operacionais/sessoes futuras; politica de historico/retencao/exclusao a definir juridicamente. Nao prometer apagar exportacoes ja feitas.",
+      "fields": [
+        "revokedAt",
+        "accessScope",
+        "retentionPolicyReviewState"
+      ]
+    },
+    {
+      "id": "C14-O08",
+      "name": "separar_dispositivos",
+      "decision": "Importacao pertence a pessoa e aparelho identificados; relogio do cuidador nao fornece passos/calorias da pessoa assistida.",
+      "fields": [
+        "deviceOwnerRef",
+        "measurementSubjectRef",
+        "sourceDeviceRef"
+      ]
+    },
+    {
+      "id": "C14-O09",
+      "name": "bem_estar_cuidador",
+      "decision": "Treino/rotina do cuidador pertence a seu proprio percurso, sem duplicar dados na pessoa assistida.",
+      "fields": [
+        "activeSubjectRef",
+        "personalJourneyRef"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "C14-S01",
+      "fictional": true,
+      "case": "Filha pede acesso sem confirmacao",
+      "expected": "Pendente; sem conceder acesso apenas por parentesco."
+    },
+    {
+      "id": "C14-S02",
+      "fictional": true,
+      "case": "Pessoa autoriza apenas diario alimentar",
+      "expected": "Nao conceder acesso a localizacao, diagnosticos ou diario de treino."
+    },
+    {
+      "id": "C14-S03",
+      "fictional": true,
+      "case": "Cuidador serve 200 g e observa consumo de 120 g",
+      "expected": "Guardar ambos com autoria; diario usa somente consumo confirmado e conhecido.",
+      "servedQuantityG": 200,
+      "consumedQuantityG": 120
+    },
+    {
+      "id": "C14-S04",
+      "fictional": true,
+      "case": "Serviu mas nao viu o consumo",
+      "expected": "Consumo desconhecido, nao igualar ao servido.",
+      "servedQuantityG": 200,
+      "consumedQuantityG": null
+    },
+    {
+      "id": "C14-S05",
+      "fictional": true,
+      "case": "Pessoa retira a autorizacao correspondente",
+      "expected": "Cessar acesso desse ambito; retencao/representacao e fundamento juridico exigem verificacao, nao apagar tudo por regra generica."
+    },
+    {
+      "id": "C14-S06",
+      "fictional": true,
+      "case": "Pessoa com dificuldade digital e plena autonomia",
+      "expected": "Ajuda digital nao transfere poder de decidir metas ou tratamento."
+    },
+    {
+      "id": "C14-S07",
+      "fictional": true,
+      "case": "Cuidador diz que a pessoa nao consegue consentir",
+      "expected": "Nao aceitar autodeclaracao como verificacao de representacao; nao diagnosticar capacidade."
+    },
+    {
+      "id": "C14-S08",
+      "fictional": true,
+      "case": "Relogio usado pelo cuidador",
+      "expected": "Nao atribuir atividade a pessoa assistida."
+    },
+    {
+      "id": "C14-S09",
+      "fictional": true,
+      "case": "Registos divergentes de dois cuidadores",
+      "expected": "Manter autoria/origem, indicar conflito e exigir confirmacao; nao sobrescrever silenciosamente."
+    },
+    {
+      "id": "C14-S10",
+      "fictional": true,
+      "case": "Cuidador pede rotina de exercicio para si",
+      "expected": "Abrir percurso pessoal separado, sem mudar rotina da pessoa assistida."
+    }
+  ],
+  "limits": [
+    "Modelo funcional proposto, nao schema/API definitivo ou motor de autorizacao",
+    "Consentimento RGPD e consentimento de cuidados de saude sao distintos",
+    "Revisao juridica da base e representacao, seguranca, offline/revogacao e testes reais pendentes",
+    "Nenhum cuidador autorizado ou dado pessoal coletado",
+    "Direitos de republicacao CNPD/gov.pt nao demonstrados; referencia apenas",
+    "Cuidador nao e fisioterapeuta/supervisor clinico por defeito"
+  ]
+}

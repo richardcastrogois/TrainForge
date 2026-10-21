@@ -1,0 +1,22 @@
+{
+  "id": "i18-busca-lisa-identidade",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22Live%20active%20Successful%20Ageing%22%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=30",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:34:41.084322+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Refinar nome extenso do estudo porque sigla LISA recuperou temas alheios; nao tomar busca anterior como literatura relevante.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22Live%20active%20Successful%20Ageing%22%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=30",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 62171,
+  "bodyFile": "../raw/i18-busca-lisa-identidade.json",
+  "sha256": "111e2f038773f4cebd3df64717be34a08351c81d75770a1c99e7c4b102dee15a"
+}

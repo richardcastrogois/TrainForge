@@ -1,0 +1,17 @@
+{
+  "scope": "complementos_das_N01_N20_antes_da_N21",
+  "date": "2026-10-03",
+  "nichesChecked": 20,
+  "states": {
+    "reuso_documentado_sem_nova_coleta": 6,
+    "concluido_para_pesquisa": 10,
+    "em_andamento": 1,
+    "pendente": 3
+  },
+  "activeComplement": "N15-C",
+  "n21Allowed": false,
+  "allPreviousComplementsResearchClosed": false,
+  "activeEvidenceArtifactSha256": "62a56a04d483b61f309b7cec7dbf524c420264210f757088e8cac2c47f06f173",
+  "testType": "Documentary consistency, not clinical/app validation",
+  "queueArtifactSha256": "bb92317a38d92fe0e763a365ef6a25ffebee24d713a9ff574cc60baadb9dd339"
+}

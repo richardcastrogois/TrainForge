@@ -1,0 +1,24 @@
+{
+  "id": "c15-ms-pilates2024-pdf",
+  "url": "https://dergipark.org.tr/tr/download/article-file/3852613",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:00:04.018185+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo completo fisioterapeutas Karakaya/Genc: programa de seis semanas proprio cuidador MS com lombalgia, verificar roteiro/brochura, apoio, resultados, conflitos e licenca.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://dergipark.org.tr/tr/download/article-file/3852613",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 542472,
+  "bodyFile": "../raw/c15-ms-pilates2024-pdf.pdf",
+  "sha256": "45295bb103fd30ebfd57d49529e66cc61b1a24920d11905f2af881bc1db3f968",
+  "bodyFormatMatchesRequest": true
+}

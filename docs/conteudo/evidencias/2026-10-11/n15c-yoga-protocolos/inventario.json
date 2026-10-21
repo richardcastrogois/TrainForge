@@ -1,0 +1,71 @@
+{
+  "niche": "N15-C",
+  "date": "2026-10-11",
+  "collectorCalls": 6,
+  "http200": 6,
+  "hashedBodies": 6,
+  "usableBodies": 6,
+  "pdfPages": 15,
+  "receipts": [
+    {
+      "id": "c15-teleyoga2024-xml",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10966998/fullTextXML",
+      "status": 200,
+      "bytes": 143516,
+      "sha256": "cde434776aed44287a66dc77aebca390a49939ad0c4b31856ea69592f59941d3",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-teleyoga2024-core-json",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-core-json.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38545336%20AND%20SRC:MED&format=json&resultType=core",
+      "status": 200,
+      "bytes": 8128,
+      "sha256": "f5cfdd39ead7b7ed1bf82571e53fc6ba72a4f871bcec10ac896049c4591c1a28",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga2007-xml",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-yoga2007-xml.evidencia.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2176147/fullTextXML",
+      "status": 200,
+      "bytes": 107946,
+      "sha256": "678886f71df2712fa036e9bb51af3d34d2441549ac7cdc1877823f534e9ce279",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-yoga-trt2026-registro-json",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-yoga-trt2026-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03948100",
+      "status": 200,
+      "bytes": 11721,
+      "sha256": "8136cb4ada06f4b64b5c0a02f86645e0962b08559ebef1f2357ef2f3aa6517af",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-teleyoga2024-registro-json",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-registro-json.evidencia.json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04512040",
+      "status": 200,
+      "bytes": 17327,
+      "sha256": "a1affbc1b5d6a731bb845462664b29a912b91e1b3158f9df23cd335fca6bc362",
+      "usableForReading": true
+    },
+    {
+      "id": "c15-teleyoga2024-protocolo-pdf",
+      "record": "2026-10-11/n15c-yoga-protocolos/c15-teleyoga2024-protocolo-pdf.evidencia.json",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/40/NCT04512040/Prot_SAP_ICF_000.pdf",
+      "status": 200,
+      "bytes": 335271,
+      "sha256": "23e2047075e4f17b3ec5817582c97e6dafaf7ea902f6c34a8f4548cb45545cb1",
+      "usableForReading": true
+    }
+  ],
+  "renderedPages": [],
+  "renderingIsVisualInspection": false,
+  "networkCallsDuringAnalysis": 0,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

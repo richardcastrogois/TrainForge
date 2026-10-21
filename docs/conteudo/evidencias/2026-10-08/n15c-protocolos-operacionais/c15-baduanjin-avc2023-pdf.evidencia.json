@@ -1,0 +1,24 @@
+{
+  "id": "c15-baduanjin-avc2023-pdf",
+  "url": "https://www.zglyyx.com/CN/PDF/10.13517/j.cnki.ccm.2023.08.001",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:13:48.810284+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo original6p, metodo/dose/autoria/seguranca/direitos. URL efemera emitida pela consulta publica sem conta; nao reutilizar apos barreira.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.zglyyx.com/CN/PDF/10.13517/j.cnki.ccm.2023.08.001",
+  "contentType": "application/octet-stream",
+  "retryAfter": null,
+  "bytes": 1482170,
+  "bodyFile": "../raw/c15-baduanjin-avc2023-pdf.pdf",
+  "sha256": "d27577756ab71fd33b5d331b17ea7f83fe78aad691a267d99447e7b8303a9dd5",
+  "bodyFormatMatchesRequest": true
+}

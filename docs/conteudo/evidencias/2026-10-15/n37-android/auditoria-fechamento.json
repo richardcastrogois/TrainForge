@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "niche": "N37",
+  "researchClosed": true,
+  "scope": "Pesquisa do contratoAndroid/HealthConnect:origem/pessoa/permissões/disponibilidade/tipos e quatrocontextos. Critério mantém testesreais e duplicadospendentes, não integraçãofechada.",
+  "selectedContent": "contrato-importacao.json",
+  "sourceEvidence": "fontes-e-evidencias.json",
+  "criteria": [
+    {
+      "criterion": "Dono/pessoa medida/autor/origem distintos",
+      "met": true,
+      "evidence": "Camadadeidentidadeproposta separada deDataOrigin/Device/Recordingmethod; SPNnão é pessoae relógiodocuidadornãomedeassistido."
+    },
+    {
+      "criterion": "Permissões e compatibilidade",
+      "met": true,
+      "evidence": "Contratos oficiaisatuaisrecebidos,7tipos/rotadistintos, features/versão/history/background/negação especificados."
+    },
+    {
+      "criterion": "Quatrocontextos",
+      "met": true,
+      "evidence": "Matrizescondicionaiscomfontesreais/kit/sensoresemcadaambiente, semGPS/relógiouniversal."
+    },
+    {
+      "criterion": "Teste real e duplicados permanecem pendentes",
+      "met": true,
+      "evidence": "ADBreal semalvoconectado; nenhumtesteAPI/integraçãoduplicados alegado. Planodedadossintéticos distinto de sensorreal."
+    }
+  ],
+  "notClosedFor": [
+    "Importação/ponteFlutterimplementada",
+    "APIHealthConnectemAVDvalidada",
+    "Sincronização/deduplicação/emparelhamentodereológio",
+    "Precisãofisiológicaecompreensãodeusuárioreais"
+  ],
+  "remainingBeforePublication": [
+    "Escolhacliente/implementaçãoemfixtureautorizado eHealthConnectcompatível",
+    "Teste realdepermissões/negação/sync/duplicados/unidades/identidade",
+    "Privacidade/políticaedefinalidade/acesso e suporte ao usuário"
+  ],
+  "nextNiche": "N38",
+  "releaseApproved": false,
+  "appImplemented": false
+}

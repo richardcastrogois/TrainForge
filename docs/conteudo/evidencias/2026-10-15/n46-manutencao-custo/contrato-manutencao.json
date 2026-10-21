@@ -1,0 +1,88 @@
+{
+  "niche": "N46",
+  "kind": "Processo editorial proposto, não serviço implantado",
+  "sourceRecord": [
+    "id",
+    "canonicalUrl",
+    "author",
+    "publisher",
+    "versionRevision",
+    "fetchedAt",
+    "bodySha256",
+    "licenceAtVersion",
+    "assetExceptions",
+    "sourcePopulation",
+    "venueAndKit",
+    "deliveryAndSupervision",
+    "doseAndProgression",
+    "translationReviewer",
+    "clinicalEditorialReview",
+    "nextReviewReason",
+    "withdrawalStatus"
+  ],
+  "reviewTriggers": [
+    "Fonte alterada/retirada/licença modificada",
+    "Correção/errata/novo suplemento ou conflito de dose",
+    "Nova população/ambiente/equipamento/variante ou entrega",
+    "Troca de peso/quantização/pré-processador/SDK",
+    "Falha observada, acessibilidade ou direitos questionados"
+  ],
+  "cadence": "Revalidar antes de selecionar/publicar e por mudança relevante. Calendário operacional e responsável ainda precisam de definição; sem agendamento automático criado.",
+  "onChange": [
+    "Guardar versão/histórico e separar erro de rede de remoção comprovada.",
+    "Comparar conteúdo/licença e bloquear apenas o item dependente até revisão; não substituir dose ou autor silenciosamente.",
+    "Propagar correções aos itens derivados; preservar versão que fundamentou registo histórico.",
+    "Se não houver direitos ou conteúdo suficiente, manter pendência e oferecer alternativa legal, sem extrair restrições."
+  ],
+  "retention": {
+    "temporaryTests": "Excluir pesos/fotos/venv/cache assim que acabarem, conforme pedido do usuário. Reinstalar somente mediante necessidade e escopo autorizado.",
+    "researchEvidence": "Preservar scripts, recibos, metadados/fontes, hashes e resultados para auditoria. Hash de binário apagado é recibo, não arquivo revalidável hoje.",
+    "personalData": "Nenhuma coleção de dados pessoais do TrainForge criada. Retenção/purge/acesso/revogação de produto futuros precisam de implementação própria.",
+    "existingTools": "Não apagar Android/SDK/AVD/REA/Python do usuário pela limpeza dos testes sem autorização específica."
+  },
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "maintenanceNeeds": "Conferir espaço/cadeira/apoios, variante e condições de ensino; programa doméstico não herda adequação clínica de fonte antiga.",
+      "status": "requisitos_documentados_validacao_real_pendente"
+    },
+    {
+      "context": "idoso_academia",
+      "maintenanceNeeds": "Modelo/aparelho/carga/ajuste e serviço profissional exigido; catálogo muda sem que o nome do exercício mude.",
+      "status": "requisitos_documentados_validacao_real_pendente"
+    },
+    {
+      "context": "idoso_academia_praca",
+      "maintenanceNeeds": "Identificar aparelho e função reais, conservação/piso/ambiente; não generalizar máquina interna. N21 ainda não pesquisada.",
+      "status": "requisitos_documentados_validacao_real_pendente"
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "maintenanceNeeds": "Papéis/tempo/interrupções pessoais, tradução e mídia próprias; consentimento de terceiro não autoriza usar dados do cuidador como assistido.",
+      "status": "requisitos_documentados_validacao_real_pendente"
+    }
+  ],
+  "rightsExamples": [
+    {
+      "id": "PR28",
+      "finding": "Separar2019e2026, desenhos e fotos, autor e tradução; pesquisa não publicação."
+    },
+    {
+      "id": "PR213",
+      "finding": "Apache2 declarada do modelo não licenciaFood101; peso testado e apagado, confirmação obrigatória."
+    },
+    {
+      "id": "PR218",
+      "finding": "SoftwareMIT não torna pesosMobileCLIPcompatíveis com produto; licença de pesos pesquisa não comercial."
+    },
+    {
+      "id": "PR228",
+      "finding": "ModelcardVideoMAECCBYNC4não atende oferta comercial sem novo grant; não baixado."
+    },
+    {
+      "id": "PR221/PR225",
+      "finding": "Licença de docs/exemplos diferente deSDKGoogle/modelos e dados de rótulos."
+    }
+  ],
+  "releaseApproved": false
+}

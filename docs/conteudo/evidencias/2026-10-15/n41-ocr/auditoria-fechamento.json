@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "niche": "N41",
+  "researchClosed": true,
+  "scope": "OCR como transcrição candidata e campos/unidades confirmados, não medida física ou registro automático.",
+  "criteria": [
+    {
+      "criterion": "Fonte/motor/erro/contrato específicos",
+      "met": true,
+      "evidence": "5documentos200/hash; OCRWindowspré-instalado executado com erros preservados; MLKitAndroidexplicitamente não testado."
+    },
+    {
+      "criterion": "Visor/unidade por modelo",
+      "met": true,
+      "evidence": "RUN100MI/KM eLifeFitnesslevel/potência; não equiparar akg, acumulado ou calorias medidas; fotos reais ainda gate de implantação."
+    },
+    {
+      "criterion": "Quatro contextos, confirmação e privacidade",
+      "met": true,
+      "evidence": "contrato-ocr.json e11checks do parser emsaída real; praça semvisor pode serN/A e semdados não vira0. Sem confundir cuidador/assistido."
+    },
+    {
+      "criterion": "Limpeza",
+      "met": true,
+      "evidence": "57.523bytes de figuras temporárias apagados; nenhum pacote instalado; componenteWindowsoriginal preservado."
+    }
+  ],
+  "remainingBeforePublication": [
+    "Testar oSDKAndroid/configuração escolhida e respectivos modelos/termos/telemetria.",
+    "Fotos autorizadas do visor/rótulo real, incluindo reflexos, dígitos de7segmentos, modo/calibração e unidades.",
+    "Implementar e testar confirmação acessível, identidade e correção com pessoas reais."
+  ],
+  "androidTested": false,
+  "realEquipmentTested": false,
+  "windowsSyntheticOcrTested": true,
+  "appImplemented": false,
+  "releaseApproved": false,
+  "nextNiche": "N42"
+}

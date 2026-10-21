@@ -1,0 +1,25 @@
+{
+  "niche": "N11-I",
+  "date": "2026-10-03",
+  "requests": [
+    {
+      "id": "n11i-niddk-idosos",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-older-adults",
+      "extension": "html",
+      "purpose": "Conferir educacao alimentar humana para envelhecimento e limites de encaminhamento; sem criar metas individuais."
+    }
+  ],
+  "reused": [
+    "2026-10-02/n11-manutencao-habitos/n11-niddk-copyright.evidencia.json"
+  ],
+  "webOnlyNotCollected": [
+    {
+      "url": "https://www.nia.nih.gov/health/healthy-eating-nutrition-and-diet/healthy-meal-planning-tips-older-adults",
+      "observed": "Pagina web exige verificacao antirrobo; sem tentativa por coletor ou contorno."
+    },
+    {
+      "url": "https://www.nia.nih.gov/health/healthy-eating-and-alzheimers-disease",
+      "observed": "Leitor web falhou; snippet nao comprova guia completo nem autoriza dietas para demencia."
+    }
+  ]
+}

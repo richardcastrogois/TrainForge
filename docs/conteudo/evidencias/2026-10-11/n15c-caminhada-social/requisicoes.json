@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-11","scope":"Somente N15-C. Caminhada do proprio cuidador e GoGrow, primeiras coletas originais publicas; nao repetir PubMedchallenge, baixar jogos, acessar contas, contatar ou iniciar APK.",
+  "requests":[
+    {"id":"c15-hirano2020-html","url":"https://www.lidsen.com/journals/geriatrics/geriatrics-04-01-108","extension":"html","accept":"application/json,text/html,text/plain","purpose":"DOI10.21926/obm.geriatr.2001108: caminhada30min3semana12semanas/3MET, profissional/seguranca/resultado coagulatorio e relacao2011semigualar coorte."},
+    {"id":"c15-hirano2011-core-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:20850878%20AND%20SRC:MED&resultType=core&format=json","extension":"json","purpose":"Resumo/identificadores da caminhada cuidador2011. Beneficiosintragrupo nao eficacia entregrupos ou manual. Primeiro endpoint publico distinto, semretry PubMedchallenge."},
+    {"id":"c15-gogrow2023-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10581379/fullTextXML","extension":"xml","accept":"application/xml","purpose":"GoGrow2023DOI10.1093/geront/gnad028: distinguir incentivoatividade/social de treino profissional operacional clinicamente validado. Verificar suplementos, seminstalar app/login/dados participantes."}
+  ]
+}

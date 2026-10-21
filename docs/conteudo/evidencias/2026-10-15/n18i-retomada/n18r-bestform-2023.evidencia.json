@@ -1,0 +1,23 @@
+{
+  "id": "n18r-bestform-2023",
+  "url": "https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-023-04176-7",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:03:25.855952+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Nova versão2023do protocolo bestform, direitos e materiais instrucionais; distinguir pilotoNCeprotocoloCCBY.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://link.springer.com/article/10.1186/s12877-023-04176-7?error=cookies_not_supported&code=fca65c3e-3b02-47e0-857f-da636169dcd3",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 527853,
+  "bodyFile": "../raw/n18r-bestform-2023.html",
+  "sha256": "a210947fc5fc3c993762a676abd513d885ac6e5eb1da7ddfb068b44390e41299"
+}

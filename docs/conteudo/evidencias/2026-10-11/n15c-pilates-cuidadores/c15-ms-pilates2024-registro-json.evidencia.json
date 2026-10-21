@@ -1,0 +1,23 @@
+{
+  "id": "c15-ms-pilates2024-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT05896995",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T23:00:45.035310+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeiro GET registro MS, procurar protocolo/folheto publico e preservar diferencas da publicacao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05896995",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 8638,
+  "bodyFile": "../raw/c15-ms-pilates2024-registro-json.json",
+  "sha256": "fa7517864b3bdc061a2e0c1dc04fd6ddc024f4ab943a89f22c01b84f35c0ab64"
+}

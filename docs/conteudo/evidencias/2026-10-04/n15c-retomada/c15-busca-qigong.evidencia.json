@@ -1,0 +1,22 @@
+{
+  "id": "c15-busca-qigong",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20%28qigong%20OR%20baduanjin%20OR%20%22tai%20chi%22%29%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:16:35.389930+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Buscar programa original para exercicio do proprio cuidador, nao treinamento para auxiliar paciente; triagem de licenca, ambiente e instrucoes.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28caregiver%20AND%20%28qigong%20OR%20baduanjin%20OR%20%22tai%20chi%22%29%29%20AND%20OPEN_ACCESS%3AY&format=json&resultType=core&pageSize=10",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 75991,
+  "bodyFile": "../raw/c15-busca-qigong.json",
+  "sha256": "62cb6d9547ee27f9204f7c92a337b79014e6e7d7097991bbac3f114f975c10f0"
+}

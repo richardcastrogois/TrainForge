@@ -1,0 +1,23 @@
+{
+  "id": "n25-women2019-jats",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6388213/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T19:39:45.560008+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primario aberto: detalhes da sessao e limites de resultados, nao inventar series ou beneficio de emagrecimento",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6388213/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 120674,
+  "bodyFile": "../raw/n25-women2019-jats.xml",
+  "sha256": "642a99fea8ca09e87020ae5841ca730f7273e41d7c9e5ce19b722d2999040da7"
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "niche": "N23",
+  "researchClosed": true,
+  "selectedLot": "gronorun2-lote.json",
+  "scope": "Percurso humano aberto para inicio/retorno aposinatividade de adultos18-65elegiveis,25sessoes9semanas comorientacaoescrita/oral inicial;inventario separado de retorno clinico semliberacao.",
+  "criteria": [
+    {
+      "id": "N23-A",
+      "met": true,
+      "criterion": "Autor profissional ligado ao desenvolvimento",
+      "evidence": "GRONO2contribSWBdesenvolveuintervencao; UMCGweb confirma SteefBredewegMedicina/sportarts, distinto de mera publicacao emrevista."
+    },
+    {
+      "id": "N23-B",
+      "met": true,
+      "criterion": "Preparo, execucao, dose, pausa, progressao e termino obtidos",
+      "evidence": "XML/PDF2010Teaching/Table2:25sessoes/todos9totaisrun/walk;warm/cool5min,paceconversacional,treinoindividual e diasintercalados. CamDaposultimacorridanao repetidacomo recuperacao."
+    },
+    {
+      "id": "N23-C",
+      "met": true,
+      "criterion": "Direitos/custos por ativo",
+      "evidence": "Artigo2010CCBY2.0 permiteadaptar comcredito/licenca/mudancas;naoselecionadovideoexterno/logos/ativosdeapps. Zero custo aquisicaodepesquisa;revisao/apoiossemcontratacaopresumida."
+    },
+    {
+      "id": "N23-D",
+      "met": true,
+      "criterion": "Contextos/apoio/populacao e alegacoes delimitados",
+      "evidence": "contextos.json;naoaplicarautomaticamente aposlesao,65+,fragilidade,cuidadorconfinado/esteira. Resultados2008/2012nulosparaprevencao;naoafirmar garantia."
+    },
+    {
+      "id": "N23-E",
+      "met": true,
+      "criterion": "Composicao e rastreabilidade sem corrigirfontes porIA",
+      "evidence": "Lote2010tem zero divergencias;59linhas2007preservadasquatrosemanasdiscrepantes e nao usadas para corrigirversao. NHS27sessoes/direitosreutilizados semGETnovo;colecoes/appsprofissionais explorados."
+    }
+  ],
+  "nonSelectedPending": [
+    "NHS/Bupa/Decathlon/Nike:direitos deimportacaoNaoDemonstrados",
+    "GRONO2007:4linhassemanaisdiscrepantes",
+    "Berkshire:autorianominal/direitos/semana5semrepeticao;Ohio restrito",
+    "Clinico/idosofragil/cuidadorconfinado:naocobertospeloloteselecionado"
+  ],
+  "publicationGates": [
+    "Revisaoprofissional dascondicoes erevisaoeditorialptPTincluindocooldown",
+    "Triagem/ensino inicial e apoio reais conformepercurso",
+    "Atribuicao/licenca/mudancas por ativo e acessibilidade",
+    "Implementacao/testestecnicos e compreensao"
+  ],
+  "newAppClinicallyValidated": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "n15Paused": true,
+  "nextNiche": "N24"
+}

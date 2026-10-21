@@ -1,0 +1,22 @@
+{
+  "id": "c15-hacer-2026-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12967483/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:14:18.767475+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir resistencia remota de cuidadores/dupla e disponibilidade integral das instrucoes.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12967483/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 168466,
+  "bodyFile": "../raw/c15-hacer-2026-xml.xml",
+  "sha256": "cf75b920cc285162d4f986ba98edcd80a850f334dd949b845372402f0735c49a"
+}

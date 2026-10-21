@@ -1,0 +1,17 @@
+{
+  "date":"2026-10-21",
+  "scope":"Leitura das três conversas de solicitações previamente autorizadas e enviadas14/10; busca dirigida de recebidos por remetentes e assunto após14/10.",
+  "threads":[
+    {"item":"CG-02","threadId":"1a13a67f42794bf2","messagesReturned":1,"onlyPreviouslySentRequest":true,"inboundReplyObserved":false},
+    {"item":"CG-03","threadId":"1a13a6833e7bc102","messagesReturned":1,"onlyPreviouslySentRequest":true,"inboundReplyObserved":false},
+    {"item":"CG-05","threadId":"1a13a6a05b607ed2","messagesReturned":1,"onlyPreviouslySentRequest":true,"inboundReplyObserved":false}
+  ],
+  "targetedInboundSearchResults":0,
+  "searchNextPageToken":null,
+  "isProofNoReplyExistsInEveryMailboxOrFromAnyAddress":false,
+  "newMessagesSent":0,
+  "followupsSent":0,
+  "attachmentsReceived":0,
+  "permissionsOrReuseGrantsReceived":false,
+  "privateMessageBodiesCopiedIntoThisRecord":false
+}

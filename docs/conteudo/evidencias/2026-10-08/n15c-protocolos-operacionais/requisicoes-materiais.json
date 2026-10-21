@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08",
+  "scope":"N15-C; materiais anunciados em JATS/registro publicados. Primeira coleta de cada objeto, sem executar DOCX/PDF ou transferir direitos entre objetos.",
+  "requests":[
+    {"id":"c15-sui2023-app1-docx","url":"https://formative.jmir.org/2023/1/e42861/extfile/formative_v7i1e42861_app1.docx","extension":"docx","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","purpose":"Arquivo32KB nomeado no JATS app1; rota editorial extfile derivada do nome publicado. Conferir sessao e encerramento, nao videos externos."},
+    {"id":"c15-sui2023-app3-docx","url":"https://formative.jmir.org/2023/1/e42861/extfile/formative_v7i1e42861_app3.docx","extension":"docx","accept":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","purpose":"Arquivo18KB nomeado no JATS app3; lista de fidelidade e dosagem, sem supor que contenha roteiro."},
+    {"id":"c15-gyyb-protocolo-pdf","url":"https://cdn.clinicaltrials.gov/large-docs/48/NCT03853148/Prot_000.pdf","extension":"pdf","accept":"application/pdf","purpose":"Documento34p explicitamente publicado no registro; braço4cuidador separado de tres gruposidosos. V7.1, manual externo citado nao incluso."}
+  ]
+}

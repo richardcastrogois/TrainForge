@@ -1,0 +1,23 @@
+{
+  "id": "n18r-army-feltwell-developer",
+  "url": "https://www.army.mil/article-amp/196424/preventing_running_injuries_through_education_at_fort_leonard_wood",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T04:01:27.805189+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Fisioterapeuta CIMT identificado como desenvolvedor da doutrina; não afirmar autoria individual de todo comando/edição2020.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.army.mil/article-amp/196424/preventing_running_injuries_through_education_at_fort_leonard_wood",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 48849,
+  "bodyFile": "../raw/n18r-army-feltwell-developer.html",
+  "sha256": "d00d0e4c44460a21de46f7d417b76aa34ac7a7feb17aa885e88e31d6f887979c"
+}

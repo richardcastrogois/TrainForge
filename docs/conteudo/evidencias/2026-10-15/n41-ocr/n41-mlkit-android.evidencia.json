@@ -1,0 +1,23 @@
+{
+  "id": "n41-mlkit-android",
+  "url": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:44:50.905932+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir contrato atual específico Android: minSDK23 no corpo contra21 no resumo automático, bundled/unbundled e modelos. Documento público, sem instalação de SDK/modelo ou foto enviada. Nova pista é divergência de pré-requisito relevante à seleção.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 207895,
+  "bodyFile": "../raw/n41-mlkit-android.html",
+  "sha256": "74578d2792b55bacc2b814f377c791826f18db8eadf16ce8ec211d879f80ac1e"
+}

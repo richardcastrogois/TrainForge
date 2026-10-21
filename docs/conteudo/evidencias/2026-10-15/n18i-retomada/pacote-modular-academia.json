@@ -1,0 +1,421 @@
+{
+  "id": "N18-ACADEMIA-MODULAR-09",
+  "date": "2026-10-16",
+  "niche": "N18-I",
+  "researchScope": "Componentes humanos para iniciacao de forca de idosos em academia, incluindo seis componentes com maquinas/polias e tres com pesoslivres; nao copiar uma rotina, nao exigir fonteunica ou programaoriginalinteiro.",
+  "sourceBasis": [
+    {
+      "sourceId": "CI05",
+      "role": "Publico idoso, inicio gradual, admissao expressa de academia/maquinas, dose, progressao, precaucoes e alternativas humanas de organizacao semanal; PDF43-45/106/108/121."
+    },
+    {
+      "sourceId": "PR167",
+      "role": "Geometria e comandos de cinco maquinas/polias e um supino com halteres; AppendixA291-294, editora/autora profissional7, autora do apendice8, politicarecebida. Nao treino militar."
+    },
+    {
+      "sourceId": "PR244",
+      "role": "Geometria e comandos de legpress; autoria profissional no livro, textoCCBY4, nao laboratorio1RM ou dose de teste."
+    },
+    {
+      "sourceId": "PR25",
+      "role": "Ensaiocontexto idoso previamente sedentario em academia; ciclo14semanas preservado como referencia separada. Nao fonte de dose da composicao nem garantia de eficacia dos9modulos."
+    }
+  ],
+  "items": [
+    {
+      "id": "N18-M01",
+      "name": "Leg press apoiado",
+      "instructionSource": "PR244",
+      "instructionReceipt": "n18r-deanza-lab42.evidencia.json",
+      "pdfPage": null,
+      "locator": "Lower Body Strength / Preparation",
+      "preparationFacts": "Assento e encosto ajustados para apoiar cabeca, costas e nadegas; pegas acessiveis; pes na plataforma na largura dos ombros, joelhos alinhados aos pes.",
+      "movementAndReturnFacts": "Empurrar com os pes apoiados, estendendo sem travar joelhos; retornar com controle a flexao inicial confortavel e manter apoio do tronco.",
+      "variantAndEquipment": "Maquina com assento/encosto/plataforma; nao pressupor orientacao45graus, pneumática ou equipamento de praca.",
+      "rights": "TextoCCBY4; Tabela5NC, formulas, testes e fotos excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M02",
+      "name": "Extensao de joelhos sentada em maquina",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 291,
+      "locator": "Leg Extensions",
+      "preparationFacts": "Sentar no aparelho, colocar os pes sob o apoio e segurar as pegas laterais para estabilizar.",
+      "movementAndReturnFacts": "Com os pes fletidos, elevar ate as pernas ficarem paralelas ao chao; pausar e baixar sob controle. Expirar ao elevar e inspirar no retorno.",
+      "variantAndEquipment": "Extensora sentada com apoio nos pes; nao extensao isometrica CIEX, cadeira simples ou extensora unilateral por presuncao.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M03",
+      "name": "Flexao de joelhos deitada em maquina",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 291,
+      "locator": "Leg Curls",
+      "preparationFacts": "Variante deitada de barriga para baixo, conforme a pagina vista; apoio atras dos calcanhares, nao sobre as panturrilhas, e pes fletidos.",
+      "movementAndReturnFacts": "Dobrar os joelhos com movimento continuo e controlado; pausar e retornar. Manter quadril apoiado e evitar arquear as costas. Expirar ao flexionar e inspirar ao estender.",
+      "variantAndEquipment": "Mesa flexora em decubito ventral; nao cadeira flexora sentada. A capacidade de deitar/levantar e sustentar a posicao precisa ser confirmada.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M04",
+      "name": "Elevacao de panturrilhas sentada em maquina",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 291,
+      "locator": "Seated Calf Raises",
+      "preparationFacts": "Apoiar a parte anterior dos pes no apoio do aparelho e posicionar as almofadas sobre os joelhos.",
+      "movementAndReturnFacts": "Elevar os calcanhares, sustentar a posicao superior e baixar com controle, permitindo a descida dos calcanhares na amplitude do aparelho. Expirar na elevacao e inspirar na descida.",
+      "variantAndEquipment": "Aparelho sentado com apoio nos joelhos e na parte anterior dos pes; nao usar a dose como carga kg de aparelhos de praca.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M05",
+      "name": "Puxada frontal em polia com pegada neutra",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 292,
+      "locator": "Lat Pulldowns",
+      "preparationFacts": "Sentado, segurar pegas com as palmas voltadas uma para a outra e iniciar com os bracos estendidos.",
+      "movementAndReturnFacts": "Trazer os cotovelos para os lados do tronco ate a pega chegar a parte superior do peito; pausar e retornar de modo controlado, sem balancar a lombar. Expirar na puxada e inspirar no retorno.",
+      "variantAndEquipment": "Pegada neutra e puxada pela frente; nao pegada pronada aberta, supinada CurlGrip ou puxada atras da nuca.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M06",
+      "name": "Remada sentada em polia na altura do peito",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 293,
+      "locator": "Seated Rows",
+      "preparationFacts": "Pes contra apoio fixo, joelhos levemente dobrados, tronco alinhado e bracos estendidos segurando a pega na altura do peito.",
+      "movementAndReturnFacts": "Puxar a pega ao meio do peito mantendo antebracos paralelos ao chao; pausar e retornar, sem embalar o tronco. Expirar ao puxar e inspirar ao estender.",
+      "variantAndEquipment": "Polia na altura do peito com apoio fixo dos pes; nao remada baixa ate o quadril, banda sob os pes ou maquina com apoio de peito.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M07",
+      "name": "Supino inclinado com halteres a20graus",
+      "instructionSource": "PR167",
+      "instructionReceipt": "../n25-natacao/n25-usu-seal-guide.evidencia.json",
+      "pdfPage": 294,
+      "locator": "Incline Dumbbell Press",
+      "preparationFacts": "Deitar em banco inclinado20graus, pes apoiados no chao, halteres diante dos ombros.",
+      "movementAndReturnFacts": "Elevar os halteres deixando pequena flexao nos cotovelos e mantendo lombar apoiada; pausar e retornar ao alto do peito, sem arquear as costas. Expirar ao elevar e inspirar ao baixar.",
+      "variantAndEquipment": "Banco20graus e halteres; nao chestpress sentado ou supino com barra. Preservar ajudante/spotter para pesoslivres conforme USU127.",
+      "rights": "Fatos/texto institucional; desenhos e identidade excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M08",
+      "name": "Elevacao dos bracos acima da cabeca com pesos, em pe",
+      "instructionSource": "CI05",
+      "instructionReceipt": "../../2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json",
+      "pdfPage": 49,
+      "locator": "Overhead Arm Raise",
+      "preparationFacts": "Pes no chao na largura dos ombros, pesos ao lado dos ombros, palmas para a frente. Variante em pe admitida no texto.",
+      "movementAndReturnFacts": "Expirar ao elevar acima da cabeca com cotovelos levemente fletidos; sustentar1s e inspirar ao baixar ao inicio.",
+      "variantAndEquipment": "Nao usar fotografia sentada como demonstracao em pe; nao BehindTheNeckPress.",
+      "rights": "TextoNIA com credito e adaptacao/traducao declaradas; fotos/logo excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    },
+    {
+      "id": "N18-M09",
+      "name": "Flexao de cotovelos com pesos em pe",
+      "instructionSource": "CI05",
+      "instructionReceipt": "../../2026-10-11/n15c-remoto-operacional/c15-nia2017-guia-pdf.evidencia.json",
+      "pdfPage": 52,
+      "locator": "Arm Curl",
+      "preparationFacts": "Pes na largura dos ombros; pesos ao lado do corpo com palmas voltadas para a frente.",
+      "movementAndReturnFacts": "Expirar ao dobrar os cotovelos e trazer os pesos ao peito sem afastar cotovelos do tronco; sustentar1s e inspirar ao retornar.",
+      "variantAndEquipment": "Bracos ao lado e palmas a frente; nao rosca no banco inclinado, com rotacao ou em polia.",
+      "rights": "TextoNIA com credito e adaptacao/traducao declaradas; fotos/logo excluidos.",
+      "doseSource": "CI05/NIH18-AG-4258/PDF43-45",
+      "doseRelation": "Orientacao geral humana para forca de idosos; a fonteNIA admite explicitamente maquinas de academia. Nao dose ensaiada especificamente desta variante ou atribuida ao autor do manual tecnico.",
+      "dose": {
+        "goalRepetitionsPerSet": [
+          10,
+          15
+        ],
+        "goalSets": 2,
+        "start": "Primeira semana com carga leve, inclusive1-2lb ou sem peso conforme capacidade; nao converter esse exemplo em carga inicial obrigatoria de uma maquina.",
+        "tempoSeconds": {
+          "liftOrPush": 3,
+          "hold": 1,
+          "return": 3
+        },
+        "betweenSetRestSeconds": null,
+        "betweenSetRestMeaning": "Descanso qualitativo da fonte; nenhuma duracao numerica inventada ou timerautomatico liberado.",
+        "frequency": "Fortalecer grandes grupos2oumais dias/semana, sem o mesmo grupo em dias consecutivos; nao9exercicios diariamente.",
+        "progression": "Quando2series10-15forem faceis, aumentar peso na sessao seguinte; magnitude nao especificada.",
+        "difficulty": "Entre dificil e muito dificil, sem muito-muito-dificil; se nao conseguir8repeticoes com tecnica, carga excessiva segundo a orientacao geral."
+      },
+      "compositionChanges": "Selecionada somente geometria/execucao da fonte tecnica; tempo/dose de treino provem expressamenteNIA. EmPR244,4-5s e serieleve10sao do laboratorio de teste, nao importados. EmPR167,1-2s por fase e ciclos militares nao importados. Nao afirmar identidade entre protocolos.",
+      "delivery": "Caminho profissional proposto para esta composicao; avaliacao/ensino/ajuste e observacao inicial reais antesdepratica. Restricao conservadora do produto, nao supervisao permanente imposta peloNIA. Spotter USU preservado para M07.",
+      "professionalCompatibilityCheck": "Validacao documental de postura, apoio, direcao, retorno e dose geral de forca em academia. Nao validacao clinica da nova combinacao ou permissao para alterar a variante por conveniencia.",
+      "mediaSelected": false,
+      "researchComponentSelected": true,
+      "releaseApproved": false
+    }
+  ],
+  "moduleCount": 9,
+  "machineOrPulleyModules": [
+    "N18-M01",
+    "N18-M02",
+    "N18-M03",
+    "N18-M04",
+    "N18-M05",
+    "N18-M06"
+  ],
+  "freeWeightModules": [
+    "N18-M07",
+    "N18-M08",
+    "N18-M09"
+  ],
+  "authorshipAndContributionEvidence": "leitura-usu-e-nia.json",
+  "eligibilityAndStop": {
+    "source": "CI05/PDF22-25,32,35,44-45",
+    "facts": "Verificar capacidade e saude atuais. Sintomas novos, tontura/falta de ar, dor/pressao no peito, alteracoes do ritmo cardiaco, trombos, febre/infeccao, perda de peso inexplicada, ferida nao cicatrizada, articulacao inchada, problemas/operacao de retina, hernia ou cirurgia recente de quadril/coluna exigem conversa medica conforme fonte. Adiar exercicio com sintomas inexplicados ate diagnostico/tratamento. Interromper com dor/pressao no peito/pescoco/ombro/braco, tontura/nausea, suorfrio, caibras ou dorarticular intensa. Retorno apos doenca/cirurgia gradual e com orientacao conforme caso; nao algoritmo de triagem automatizado.",
+    "warmup": "Exercicio leve no inicio (NIA35); nao minutos inventados.",
+    "closure": "Retorno controlado e repouso de cada componente; nao construida uma sessao inteira ou bloco de desaquecimento porIA."
+  },
+  "settingCompatibility": {
+    "olderGym": "Recorte selecionado. NIA43explicitamenteinclui equipamentosdeacademia; material e variante exatos de cada modulo mantidos. Maquina cujo ajuste/travas/entrada nao estejam dominados pelo profissional nao pode iniciar. A lista nao substitui manual de manutencao/fabricante.",
+    "olderHome": "Pesoslivres podem ser avaliados com mesmos materiais/apoios/espaco e condicoes; seis maquinas nao presumidas em casa.",
+    "olderPark": "Nao transferido a aparelhos de praca; N21 trata esse contexto.",
+    "caregiverOwnExercise": "Pode ser considerado quando o proprio cuidador for idoso e cumprir a elegibilidade/apoio do recorte; nao ensaio especifico de cuidadores nem treino atribuido ao assistido. N15 permanece pausada."
+  },
+  "researchClosureRationale": "G03 requeria instrucao operacional e caminho comercial gratuito dos elementos essenciais selecionados. Agora9componentes trazem ambos, dose e publico com fonte profissional separada. A decisao15/10permite composicao: nao exigir todas as28variantes doWalker nem um calendario integral para uma biblioteca modular. Nao se fecha por falta de pistas ou pela promessa de um instrutor preencher comandos ausentes. Os comandos ja estao documentados; revisao humana da composicao/localizacao e servico real pertencem a oferta posterior.",
+  "notClaimed": [
+    "Nova composicao clinicamente testada",
+    "Execucao autonoma aprovada",
+    "Curso de corpo inteiro com9movimentos cabendo em30min",
+    "Equivalencia ao cicloWalker ou ao treino militar",
+    "Qualquer modelo de aparelho ou toda biblioteca de maquinas resolvida",
+    "Fotos/videos disponiveis ou licenciados",
+    "Custo zero de academia/profissional"
+  ],
+  "newAiProgrammeCreated": false,
+  "fixedSessionSequenceCreated": false,
+  "wholeSourceProgrammeRequired": false,
+  "researchClosed": true,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "releaseGates": [
+    "Revisao profissional humana de atualidade, compatibilidade da composicao e localizacao antes de selecionar uma sessao pessoal.",
+    "Equipamento/modelo/apoios e entrada/saida reais, ajustes ensinados e acompanhamento contratado/disponivel quando exigido; nao servicehipotetico.",
+    "Preservar ausencia de segundos fixos de descanso/incrementos numericos; nao preencher porIA.",
+    "Creditos/licencas/alteracoes por componente no lote final; nenhuma foto, logo, ilustracao FredKoch ou video herdado."
+  ],
+  "compositionAssembledByAgent": true,
+  "numericalPrescriptionInvented": false,
+  "newCompositionReviewedByClinician": false,
+  "rightsScope": "Selecao de fatos em redacao documental independente com caminho textual identificado; nao copiar expressoes, tabelas, roteiros ilustrados ou midia das fontes. Revisao editorial da apresentacao final continua obrigatoria."
+}

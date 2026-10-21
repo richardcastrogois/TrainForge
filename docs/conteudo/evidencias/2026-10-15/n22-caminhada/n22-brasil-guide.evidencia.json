@@ -1,0 +1,24 @@
+{
+  "id": "n22-brasil-guide",
+  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:20:34.260039+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guia em portugues, adultos e idosos, autoria tecnica e licenca",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 2482449,
+  "bodyFile": "../raw/n22-brasil-guide.pdf",
+  "sha256": "944f5ece2d1a82857f430c5e846ed0cc1798ce18b20218206b9068fa12e1c90e",
+  "bodyFormatMatchesRequest": true
+}

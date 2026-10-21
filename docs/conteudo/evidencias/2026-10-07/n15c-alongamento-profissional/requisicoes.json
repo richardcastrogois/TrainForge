@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "scope": "Somente N15-C. Verificar alongamento do proprio cuidador formal, roteiro original, ambiente e correcao2026. Depositos independentes EuropePMC; nao repetir PMC com reCAPTCHA nem MDPI429.",
+  "requests": [
+    {"id":"c15-atac2024-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Artigo primario2024 de alongamentos para profissionais cuidadores de criancas com deficiencias; verificar dose, execucao, elegibilidade, autoria e ambiente, sem presumir uso domestico."},
+    {"id":"c15-atac2026-correcao-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Correcao original2026 do artigo2024; conferir quais partes foram alteradas antes de atribuir resultados/instrucoes e licenca."},
+    {"id":"c15-atac-trial-caregivers-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT06466239","extension":"json","purpose":"Registro primario do ensaio citado no artigo, conferir variante/dose/entrega sem substituir divergencias silenciosamente."},
+    {"id":"c15-atac-qualificacao-trial-json","url":"https://clinicaltrials.gov/api/v2/studies/NCT05222295","extension":"json","purpose":"Registro primario de estudo distinto que atribui explicitamente qualificacaoMScPhysiotherapist a AmineAtac; serve somente credencial, nao acrescentar protocoloCOPD a cuidadores."},
+    {"id":"c15-atac-perfil-institucional-html","url":"https://abis.gedik.edu.tr/amine-atac","extension":"html","purpose":"Perfil institucional da mesma coautora do artigo/cuidador; vinculo area/docencia, sem contatos, dados pessoais ou presumir registro clinico."}
+  ]
+}

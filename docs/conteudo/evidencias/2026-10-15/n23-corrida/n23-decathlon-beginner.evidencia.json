@@ -1,0 +1,23 @@
+{
+  "id": "n23-decathlon-beginner",
+  "url": "https://conseilsport.decathlon.fr/course-a-pied-programme-running-debutant",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:38:07.722097+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Colecao/app DecathlonCoach: autoria, pre-requisito20min e plano4semanas",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://conseilsport.decathlon.fr/course-a-pied-programme-running-debutant",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 926596,
+  "bodyFile": "../raw/n23-decathlon-beginner.html",
+  "sha256": "e500d03f5b12e6b083ebdd28cfedb2173ce8769f81a9a2396dd2f7a6cc2f3dd1"
+}

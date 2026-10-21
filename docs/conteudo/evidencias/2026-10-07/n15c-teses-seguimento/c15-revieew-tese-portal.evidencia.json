@@ -1,0 +1,23 @@
+{
+  "id": "c15-revieew-tese-portal",
+  "url": "https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:47:58.702576+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Portal institucional da tese: identidade/links publicados, nao corpo original obtido por indexador secundario.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 44617,
+  "bodyFile": "../raw/c15-revieew-tese-portal.html",
+  "sha256": "f3eeb11aa1bfed714a056df79ec5e1b3c32b0324bb2a8ac220fdf6f606c15fa9"
+}

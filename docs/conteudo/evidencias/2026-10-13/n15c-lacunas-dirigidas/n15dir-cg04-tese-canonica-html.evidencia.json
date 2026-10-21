@@ -1,0 +1,24 @@
+{
+  "id": "n15dir-cg04-tese-canonica-html",
+  "url": "https://addi.ehu.eus/handle/10810/68569",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-13T04:01:20.290827+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 404,
+  "use": "research_only",
+  "purpose": "Pagina atual da tese: obter link realmente publicado para PDF e condicoes de acesso/reuso. Pagina de metadados nao guia integral ou exercicios recebidos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://addi.ehu.eus/handle/10810/68569",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 1551,
+  "bodyFile": "../raw/n15dir-cg04-tese-canonica-html.html",
+  "sha256": "370ad249c0d59bffda3ead83846219a224cc5555f063a91f0cf98785449c1ff7",
+  "error": "HTTP 404"
+}

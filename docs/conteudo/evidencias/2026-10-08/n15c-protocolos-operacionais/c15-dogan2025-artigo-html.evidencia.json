@@ -1,0 +1,23 @@
+{
+  "id": "c15-dogan2025-artigo-html",
+  "url": "https://dergipark.org.tr/tr/pub/erusaglik/article/1764171",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T00:40:38.534460+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Origem primaria do ensaio de pranayama para fadiga do cuidador de pessoa com cancer, links e metadados. Nao dose universal pelo resumo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://dergipark.org.tr/tr/pub/erusaglik/article/1764171",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 89427,
+  "bodyFile": "../raw/c15-dogan2025-artigo-html.html",
+  "sha256": "194afc1e928fdb3561fe0642982f6fc09ff0d95addc8ce5e50f6865caa924404"
+}

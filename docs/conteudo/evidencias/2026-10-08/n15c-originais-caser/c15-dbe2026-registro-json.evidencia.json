@@ -1,0 +1,23 @@
+{
+  "id": "c15-dbe2026-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT06970769",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:17:50.208630+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Passos/dose/material/apoio e documentos do braço respiracao, nao copiar parametros deVNS ou resultados de outro estudo.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06970769",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 15952,
+  "bodyFile": "../raw/c15-dbe2026-registro-json.json",
+  "sha256": "16c1607c39404239a2a6fce360db642203129e8bb71cebae70b40a962a6394c0"
+}

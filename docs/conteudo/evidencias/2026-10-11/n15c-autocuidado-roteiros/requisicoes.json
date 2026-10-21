@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-11",
+  "scope":"Somente N15-C. Primeiros GETs originais publicos identificados em indices primarios, apos verificar duplicatas locais. PFA e manualYoga nao equivalentes a exercicio isolado nem resultado positivo garantido. Sem retry do Table1web que falhou, sem videos/contato/conta/pagamento.",
+  "requests":[
+    {"id":"c15-shoukr-pfa2022-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9551605/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Original PFA de100cuidadoresAD, buscar passos efetivos Table1, cointervencao, autoria/dose/direitos e nao converter60minensino emdoseexercicio."},
+    {"id":"c15-shoukr-pfa2022-pdf","url":"https://bmcnurs.biomedcentral.com/counter/pdf/10.1186/s12912-022-01049-z.pdf","accept":"application/pdf","extension":"pdf","purpose":"Original publicado publicamente; conferir Table1/rotinas se detalhes raster ausentes do HTML, PDFsem teto autorizado, TLS padrao/semretry."},
+    {"id":"c15-hamza-yoga2020-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6937882/fullTextXML","accept":"application/xml","extension":"xml","purpose":"OriginalRCT cuidador esquizofrenia/selfhelpmanual, conferir resultados nulos/attrition/roteiroanexo/apoio/direitos, nao eficacia assumida por titulo manual."}
+  ]
+}

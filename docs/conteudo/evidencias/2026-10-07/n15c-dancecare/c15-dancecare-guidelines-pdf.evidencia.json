@@ -1,0 +1,24 @@
+{
+  "id": "c15-dancecare-guidelines-pdf",
+  "url": "https://dancecare-project.eu/wp-content/uploads/2026/06/D-2.2.-DanceCARE-Guidelines-for-trainers-and-facilitator-SUPER-FINAL.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:34:31.720077+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Guidelines anteriores36p do mesmo projeto, comparar fases, dose/entrega e licenca com handbook sem juntar versoes automaticamente.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://dancecare-project.eu/wp-content/uploads/2026/06/D-2.2.-DanceCARE-Guidelines-for-trainers-and-facilitator-SUPER-FINAL.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 4763112,
+  "bodyFile": "../raw/c15-dancecare-guidelines-pdf.pdf",
+  "sha256": "efe3896eec69e74d51fed9b0a9edc4e37db54adf2475899b57d798013605d690",
+  "bodyFormatMatchesRequest": true
+}

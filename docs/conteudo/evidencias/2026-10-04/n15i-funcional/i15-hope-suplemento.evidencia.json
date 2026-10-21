@@ -1,0 +1,22 @@
+{
+  "id": "i15-hope-suplemento",
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1745-6215-12-143/MediaObjects/13063_2011_666_MOESM1_ESM.DOC",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T20:35:10.280807+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Primeira tentativa do link observado na fonte primaria, apendice 1 HOPE 2011. Conferir assinatura/formato antes de interpretar; nao confundir apendice de exercicios com manual completo de cinco secoes, nem versao de 12 semanas com HERO de 24 semanas. Sem macros, retry, contorno de desafio ou instalacao.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1745-6215-12-143/MediaObjects/13063_2011_666_MOESM1_ESM.DOC",
+  "contentType": "application/octet-stream",
+  "retryAfter": null,
+  "bytes": 974848,
+  "bodyFile": "../raw/i15-hope-suplemento.doc",
+  "sha256": "288ae9b79838229675d673ab0dfd6a42ef6b6a52e0610d1dcebad32401017380"
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "niche": "N36",
+  "sources": [
+    {
+      "id": "PR206",
+      "name": "W3C Geolocation",
+      "primaryUrl": "https://www.w3.org/TR/2026/CR-geolocation-20260326/",
+      "latestUrlRead": "https://www.w3.org/TR/geolocation/",
+      "basis": "Leitorweb primário, seções1/3/6/7/9; nãoGET/corpo/hash local.",
+      "version": "CandidateRecommendationSnapshot26March2026; não Recommendationfinal.",
+      "authors": "EditoresMarcosCáceres(Apple) eReillyGrant(Google), W3CDevicesandSensors/WebApplicationsWorkingGroups.",
+      "facts": "APIwebobtém posição do dispositivo com permissão; origempodeGPS/rede/outra,semgarantia de posição verdadeira. Latitude/longitudeWGS84, timestamp e accuracyemmetros comreferência95%. Precisão altaépedido,nãogarantia.",
+      "rights": "Documento indica permissivedocumentlicense; só referência e fatos técnicos emredação própria, sem copiar exemplos/figuras. Não licença automática de dados pessoais."
+    },
+    {
+      "id": "PR207",
+      "name": "Android Developers — localização e permissões",
+      "primaryUrl": "https://developer.android.com/develop/sensors-and-location/location/permissions",
+      "otherUrls": [
+        "https://developer.android.com/reference/android/location/Location#getAccuracy()"
+      ],
+      "basis": "Leitorwebprimário/trechosAPI, semGET/corpo/hash local.",
+      "version": "PáginaPermissionsatualizada2026-10-01UTC. MétodosvariamporAPIlevel.",
+      "authors": "Google/AndroidDevelopers, autoria institucional, não fornecedorGNSScontratado.",
+      "facts": "Permissões distinguem primeiroplano/segundoplano e aproximação/precisão. PedidoFINE não supera escolhado usuário poraproximada. Foregroundservice pode continuar comtela apagada, sujeito aregras/tipo/notificação; não exigirBACKGROUNDindiscriminadamente. Location.getAccuracyé raio68%, não95%doW3C. ElapsedRealtimeé monotônico no mesmoboot, nãoentre dispositivos; hasX/isMockpreservamvalidade/origem.",
+      "rights": "Documentação remeteContentLicense; nenhumcódigo/imagem/importaçãodaSDKselecionado aqui, semgrantcomercialgeral dedados ou aprovaçãoPlaypresumidos."
+    },
+    {
+      "id": "PR208",
+      "name": "OpenStreetMap/OSMF — dados e política de tiles",
+      "primaryUrl": "https://www.openstreetmap.org/copyright",
+      "otherUrls": [
+        "https://operations.osmfoundation.org/policies/tiles/"
+      ],
+      "basis": "LeitorwebprimárioCopyright/TileUsagePolicy, nãoGET/corpo/hashlocal,nemsolicitação detiles.",
+      "authors": "ContribuidoresOpenStreetMap/OSMFoundation, autoria coletiva e créditos visíveis.",
+      "facts": "DadosODbLcomatribuição/obrigações aderivados; documentaçãoCCBY-SA2.0. Servidorpúblicodetiles temcapacidade limitada,best-effort/semSLA. Requer atribuição visível, identificação correta, HTTPS e cache; sembulk/prefetch.",
+      "rights": "Licença dosdados≠serviço ilimitado; atribuição/licença têm deacompanhar mapa. Não concluir queODbLabre código inteiro doapp; avaliar base derivada/obra produzida eativo concreto antesdaoferta. Nenhum mapa copiado, geocodificação ourota consultada.",
+      "costs": "Dadosabertos e possibilidade deconsulta públicacondicionada, não contrato/SLA ou produção gratuítailimitada. Provedorcomercialouauto-hospedagem/custo futuro não escolhido."
+    }
+  ],
+  "newLocalGets": 0,
+  "newPrimaryBodyHashes": 0,
+  "newVisualPages": 0,
+  "actualLocationRequested": false,
+  "accountsOrKeysCreated": false,
+  "thirdPartyCoordinatesSent": false
+}

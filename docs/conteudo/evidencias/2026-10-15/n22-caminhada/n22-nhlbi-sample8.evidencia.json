@@ -1,0 +1,24 @@
+{
+  "id": "n22-nhlbi-sample8",
+  "url": "https://www.nhlbi.nih.gov/files/docs/resources/heart/filipino-health-manual/session-3/samplewalk.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:18:36.348187+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Conferir tabela de caminhada oito semanas e contexto do manual",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.nhlbi.nih.gov/files/docs/resources/heart/filipino-health-manual/session-3/samplewalk.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 275183,
+  "bodyFile": "../raw/n22-nhlbi-sample8.pdf",
+  "sha256": "7db8372fa6e476199c887f4488eb8efcc8f7099c5eeab05f5f024f511d032d74",
+  "bodyFormatMatchesRequest": true
+}

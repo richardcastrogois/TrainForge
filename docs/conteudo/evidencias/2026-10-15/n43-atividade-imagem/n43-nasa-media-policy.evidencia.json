@@ -1,0 +1,23 @@
+{
+  "id": "n43-nasa-media-policy",
+  "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:55:47.521239+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Diretrizes primárias de uso factual/editorial, exceções de terceiros, pessoas/marcas e ausência de endosso; não assumir publicdomainuniversal.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 318754,
+  "bodyFile": "../raw/n43-nasa-media-policy.html",
+  "sha256": "918af44b09de5df5cca57547b0b1467a06c59d2a05a33976a3f9bd1743293536"
+}

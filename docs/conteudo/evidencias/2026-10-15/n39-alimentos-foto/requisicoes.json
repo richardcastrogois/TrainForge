@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "n39-nateraw-api",
+      "url": "https://huggingface.co/api/models/nateraw/food",
+      "purpose": "Metadados públicos do repositório de modelo alimentar específico com licençaApache2.0declarada; conferir revisão/arquivos/taxonomia sem baixar pesos, executar código remoto ou criar conta.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-nateraw-config",
+      "url": "https://huggingface.co/nateraw/food/resolve/main/config.json",
+      "purpose": "Configuração/taxonomia pública soblicença declarada Apache2.0para conferir101classes/arquitetura, não inferência ou licença deimagens doFood101.",
+      "extension": "json"
+    },
+    {
+      "id": "n39-nateraw-card",
+      "url": "https://huggingface.co/nateraw/food/resolve/main/README.md",
+      "purpose": "Modelcard público Apache2.0, métricasauto-relatadas eausências/versões. Nãoequiparar estatísticadevalidação àprecisãonoTrainForge.",
+      "extension": "md"
+    },
+    {
+      "id": "n39-nutrition5k-readme",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/README.md",
+      "purpose": "READMEprimário, datasetCCBY4explicitamentepublicado parausocomercial. Conferirlicença/conteúdo/limites eautoria. Não baixar181GBdevídeo/dataset ou códigoexecutável.",
+      "extension": "md"
+    }
+  ]
+}

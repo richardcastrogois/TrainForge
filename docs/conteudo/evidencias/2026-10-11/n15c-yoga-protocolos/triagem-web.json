@@ -1,0 +1,15 @@
+{
+  "niche":"N15-C","date":"2026-10-11","webReaderResultsNotLocalCollectorBodies":true,
+  "leads":[
+    {"url":"https://ascopubs.org/doi/pdfdirect/10.1200/OP-25-01079","result":"403","retry":false,"localHashClaimed":false,"decision":"Nao repetir/bypassar. Artigo indexado e registro publico distinto examinados; nao prova de efeito proprio cuidador por beneficio do paciente."},
+    {"url":"https://ascopubs.org/doi/abs/10.1200/OP-25-01079","result":"403","retry":false,"localHashClaimed":false,"decision":"Forma HTML publica distinta falhou, nao novo acesso/bypass. Nenhum formulario/contato/compra."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC2176147/","result":"challenge","retry":false,"decision":"XML via API EuropePMC publica distinta recebido, nao challenge contado como artigo."},
+    {"url":"https://journals.sagepub.com/doi/10.1177/27536130241240405","result":"full readable web","decision":"OriginalJATS/registro/PDFprotocolo recebidos separadamente; Appendix1 tecnicas/temas nao homeworkmanual."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11484094/","decision":"MY-Skills jaPR29, nao nova familia automaticamente; localizar protocolo exato/publicacao complementar apenas se nao recebidos."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3276932/","decision":"Yoga necessidade de cuidadores esquizofrenia2012 e antecedente, diferenciarPR77/2013; validade conteudo nao ensaio clinico por gesto."},
+    {"url":"https://www.lidsen.com/journals/geriatrics/geriatrics-04-01-108","decision":"Caminhada cuidador3MET/30min3vezessemana12semanas, coagulatorio nao beneficio clinico sobre fadiga automaticamente. P.05 declarado NS. Original operacional/profissional/seguranca e relacao2011 ainda examinar."},
+    {"url":"https://pubmed.ncbi.nlm.nih.gov/20850878/","result":"challenge","retry":false,"decision":"Indice2011beneficio subjetivo, nao inferir entregrupos ou passos. FonteAPI publica distinta pode ser primeira coleta."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10581379/","decision":"Go&Grow2023jogo social/atividade, verificar se rotina clinica original ou principalmente comportamento. Seminstalarapp/conta/contato."}
+  ],
+  "researchClosureApproved":false,"releaseApproved":false,"appImplemented":false
+}

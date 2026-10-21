@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-21",
+  "niche": "N15-C",
+  "authority": "Pedido do autor: ok, siga nesse fluxo até finalizar a n15; resposta imediatamente anterior propôs concluir a seleção modular, aplicando a regra usada em N18-N21, sem exigir os cinco programas originais completos.",
+  "previousAudit": "../../2026-10-13/n15c-lacunas-dirigidas/auditoria-conteudo.json",
+  "previousAuditOverwritten": false,
+  "policy": "../../../criterios-exercicios-apk.json#/multiSourceCompositionDecision",
+  "decision": "Concluir pesquisa de uma biblioteca inicial com componentes humanos suficientemente documentados. Avaliar os cinco candidatos anteriores, conservar seus limites e selecionar explicitamente outros materiais quando melhor documentados. Não declarar resolvida uma pergunta sobre arquivo original que não foi recebido.",
+  "scopeIsFiveOriginalProgrammesComplete": false,
+  "scopeIsAllCaregiversAndAllOlderAdults": false,
+  "sameStandardAsOtherNiches": "Instruções e parâmetros efetivamente publicados, autoria profissional, público, equipamento, apoio, direitos da representação escolhida e lacunas. Revisão clínica/editorial da nova apresentação e serviço profissional real continuam anteriores à oferta, como em N18-N21/N27.",
+  "originalCandidates": [
+    {
+      "item": "CG-01",
+      "sourceId": "PR42",
+      "selection": "Manter alongamento estático no público e caminho profissional já conferidos.",
+      "priorQuestionMadeFalseByRelabeling": false
+    },
+    {
+      "item": "CG-02",
+      "sourceId": "PR61",
+      "selection": "Referência do método e ensaio; não entra na primeira biblioteca de instrução escolhida.",
+      "reason": "Seis comandos recebidos, mas o novo guia CC BY2017 tem encerramento diferente. O folheto NCCIH não contém a receita. Não usar qualquer deles como CD/folheto fiel comprovado do ensaio.",
+      "originalQuestions": [{"id":"CG02-MATERIAL","answeredForOriginalPath":false,"requiredForSelectedLibrary":false}],
+      "exactTrialCdReceived": false,
+      "newEducationalMaterialClinicallyReviewed": false
+    },
+    {
+      "item": "CG-03",
+      "sourceId": "PR115",
+      "selection": "START permanece referência. Para a biblioteca inicial, escolher dois componentes escritos do Caregivers FIRST, identificados como CG-06, sem atribuí-los ao START.",
+      "reason": "O workbook real recebido define as instruções ao cuidador, prática entre encontros e revisão; não depende de fingir que recebemos a versão do participante ou o áudio START.",
+      "originalQuestions": [
+        {"id":"CG03-MANUAL-PARTICIPANTE","answeredForOriginalPath":false,"requiredForSelectedLibrary":false},
+        {"id":"CG03-AUDIO-DIREITOS","answeredForOriginalPath":false,"requiredForSelectedLibrary":false}
+      ],
+      "firstIsEquivalentToStart": false,
+      "eightOriginalStartComponentsClosedForCommercialNarration": false
+    },
+    {
+      "item": "CG-04",
+      "sourceId": "PR68",
+      "selection": "Oito fichas da variante inicial de força, no caminho com fisioterapeuta ao vivo. Sem calendário novo, sem converter fichas em sessão isolada ou eliminar as demais partes da sessão.",
+      "reason": "Comandos espanhóis do apêndice10 foram cotejados com posições inicial/final e variantes SI2. A tese também contém a grade original e as partes da sessão. Excluir a linha de elevação do braço da seleção textual atual por divergência de plano/título.",
+      "originalQuestions": [
+        {"id":"CG04-EXECUCAO","answeredForSelectedEightInitialVariants":true,"answeredForAll27VariantsAndAutonomousApp":false},
+        {"id":"CG04-PARTES-SESSAO","partsLocated":true,"completeNewSessionPresentationApproved":false,"requiredForComponentLibraryAsWholeNewClass":false}
+      ],
+      "thesisMediaLicenceInheritedFromArticle": false,
+      "maintenanceVideosSelected": false
+    },
+    {
+      "item": "CG-05",
+      "sourceId": "PR136",
+      "selection": "Referência profissional e resultado do programa; não entra na primeira biblioteca de instrução escolhida.",
+      "reason": "Nomes, fases e fotos parciais não definem todas as variantes. PR192/N27 tem instrução adulta de solo, mas não demonstra que seus níveis reproduzem todos os níveis PR136. Não combinar o calendário contraditório com outra cartilha nem transferir sua dose/efeito.",
+      "originalQuestions": [
+        {"id":"CG05-MOVIMENTOS","answeredForOriginalPath":false,"requiredForSelectedLibrary":false},
+        {"id":"CG05-CALENDARIO","answeredForOriginalPath":false,"requiredForSelectedLibrary":false},
+        {"id":"CG05-ATIVOS","answeredForOriginalPath":false,"requiredForSelectedLibrary":false}
+      ],
+      "original16ClassesOperationallyReplicated": false
+    }
+  ],
+  "whyThisIsNotSkippingAnActiveItem": "A instrução do autor autoriza reavaliar a seleção, em vez de manter os cinco candidatos como obrigação de recuperar cinco cursos inteiros. Todos os cinco foram avaliados e têm decisão explícita; os arquivos faltantes continuam faltantes. A biblioteca tem componentes concretos, não apenas fichas factuais reclassificadas.",
+  "reselectionIsPermissionToCopyProtectedExpression": false,
+  "beforeAnyFutureOriginalPathSelection": "Reabrir suas perguntas preservadas; não usar o fechamento do nicho como grant, roteiro recebido ou equivalência clínica.",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "clinicalOrLegalReviewPerformed": false
+}

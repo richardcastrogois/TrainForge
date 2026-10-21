@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16",
+  "niche": "N20-I",
+  "researchClosed": true,
+  "priorAudit": "../../2026-10-04/n20i-instrucao/pesquisa-complemento.json",
+  "scope": "Instrucao textual das9variantes do lote modular escolhido; nao toda periodizacaoWalker, todososmodelos/aplicacao autonoma.",
+  "criteria": [
+    {
+      "id": "I20-G01",
+      "met": true,
+      "evidence": "Fontes profissionaisNIA/USU/DeAnza separadas por contribuicao; variantes corpo/apoios/direcao definidos,9mapas textuais e8naocorrespondencias."
+    },
+    {
+      "id": "I20-G02",
+      "met": true,
+      "evidence": "Preparo corporal/apoio/execucao/retorno dos9selecionadosconferidos. Legpressnaomapeadopelonome: modeloL050egeometria doartigo/figuraPR236recebidos, postura/apoiosDeAnza explicitados. Fonte nao ensina painel/travas; nao se aprova esse tipo de operacao autonoma nem hardware universal. Nenhum comando faltante de controle inventado."
+    },
+    {
+      "id": "I20-G03",
+      "met": true,
+      "evidence": "Representacao essencial escolhida e texto factual, com caminhos institucionais/CCBYporfonte; fotos/videos/diagramasFredKoch/painelBHnao incluidos. Nao exigir video ou importar midia externa por presuncao."
+    },
+    {
+      "id": "I20-G04",
+      "met": true,
+      "evidence": "Instrucao clara textual, apoio real antesdepratica, necessidade de revisao humana, nenhum teste clinico/usuario ou bancadareal. Cuidador propria pessoa e ambiente preservados."
+    }
+  ],
+  "evidence": "mapa-instrucao-textual.json",
+  "reading": "leitura-modelo-e-exclusoes.json",
+  "releaseApproved": false,
+  "appImplemented": false,
+  "next": "N21 agora autorizada pela sequencia; N15pausada."
+}

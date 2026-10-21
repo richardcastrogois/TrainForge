@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga-trt2026-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT03948100",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T18:09:25.216956+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "YogaTRT2026/DOIOP-25-01079: registro publico citado emartigo. Examinar LargeDocs sem adivinhar URL/retentar ASCO403. Dupla nao exclusao por cuidador nao sozinho; efeito publicado de cuidador a verificar.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT03948100",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 11721,
+  "bodyFile": "../raw/c15-yoga-trt2026-registro-json.json",
+  "sha256": "8136cb4ada06f4b64b5c0a02f86645e0962b08559ebef1f2357ef2f3aa6517af"
+}

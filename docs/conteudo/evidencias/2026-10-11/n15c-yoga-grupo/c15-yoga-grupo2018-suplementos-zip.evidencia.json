@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga-grupo2018-suplementos-zip",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:15:19.932607+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Curriculo suplementarDOCX19.5KB explicitamente anunciado, primeira coleta APIpublica. Verificar pacote/limites/hash de cada membro e OOXML semexecutar conteudo; nao assumir manual completo pelo nome.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6247544/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 548716,
+  "bodyFile": "../raw/c15-yoga-grupo2018-suplementos-zip.zip",
+  "sha256": "3bacb2e95264cb273a5f00c765b0d9757eadd4e64c806afe50f146662ea22ab9"
+}

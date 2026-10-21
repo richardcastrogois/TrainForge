@@ -1,0 +1,18 @@
+{
+  "id": "c15-alonso2020-repositorio-pdf",
+  "url": "https://buleria.unileon.es/bitstream/10612/19575/1/Physiotherapeutic_Intervetion_Promote_Self_Care.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:10:15.059307+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Deposito primario da universidade, fisioterapia/autocuidado de cuidadores; descobrir se inclui os dez roteiros e CDs efetivamente usados.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "error": "<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>"
+}

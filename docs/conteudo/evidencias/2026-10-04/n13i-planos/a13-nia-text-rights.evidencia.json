@@ -1,0 +1,23 @@
+{
+  "id": "a13-nia-text-rights",
+  "url": "https://www.nia.nih.gov/newsroom/media-frequently-asked-questions",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T18:34:16.718656+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 405,
+  "use": "research_only",
+  "purpose": "Primeira captura local deste FAQ: separar texto de publicacoes em dominio publico de fotos stock restritas. Desafio/erro nao serve de evidencia de direitos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nia.nih.gov/newsroom/media-frequently-asked-questions",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 2523,
+  "bodyFile": "../raw/a13-nia-text-rights.html",
+  "sha256": "2a7ff8417fd483d0af85190943dbe88a99ae8b8bdb550207ca04651d434e6d39",
+  "error": "HTTP 405"
+}

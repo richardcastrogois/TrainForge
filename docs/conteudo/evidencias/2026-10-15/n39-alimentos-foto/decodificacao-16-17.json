@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-15",
+  "niche": "N39",
+  "configOrder16and17": [
+    "cheese_plate",
+    "cheesecake"
+  ],
+  "publishedFeatures16and17": [
+    "cheesecake",
+    "cheese_plate"
+  ],
+  "publishedTaskTemplate16and17": [
+    "cheese_plate",
+    "cheesecake"
+  ],
+  "empiricalCases": [
+    "resultado-ensaio-local.json: case 3 -> ID16, prato de queijos",
+    "resultado-ensaio-suplementar.json: case 6 -> ID17, cheesecake"
+  ],
+  "decision": "Preservar config da revisão testada e sua ordem 16/17. Não aplicar ordem de features como decodificação de logits. Metadados do próprio dataset já expõem duas ordens distintas.",
+  "trainingRevisionProven": false,
+  "doesNotProve": "Não prova rótulos de todas as fotos do treino, revisão histórica exata ou acurácia populacional.",
+  "sourceReceipt": "n39-nateraw-dataset-infos.evidencia.json"
+}

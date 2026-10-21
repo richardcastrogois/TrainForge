@@ -1,0 +1,23 @@
+{
+  "id": "c15-salamanca2025-registro-html",
+  "url": "https://gredos.usal.es/handle/10366/166663",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-09T01:35:16.296230+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro primario ligado aoPDF; autoria/tutoria/licenca/versao, nao assumir licenciatura concluida ou grant de videos.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://gredos.usal.es/entities/publication/73a4ed1f-f62c-4f9d-98d2-d0d39380dca1",
+  "contentType": "text/html; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 549182,
+  "bodyFile": "../raw/c15-salamanca2025-registro-html.html",
+  "sha256": "138d4af408f525d58050b50777ffdda07e92366392d94b8996a4fe2c3dc53025"
+}

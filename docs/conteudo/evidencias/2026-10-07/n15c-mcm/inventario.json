@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-07",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "sources": [
+    {
+      "id": "c15-mcm-artigo-html",
+      "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/full",
+      "resolvedUrl": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/full",
+      "collectedAtUtc": "2026-10-07T12:05:20.921936+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 1161670,
+      "sha256": "242dbc8095d40b5eb25349783d7ce6758c0b27b0287a4653e3a29e68aea20aea",
+      "record": "2026-10-07/n15c-mcm/c15-mcm-artigo-html.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-mcm-artigo-pdf",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/pdf",
+      "resolvedUrl": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/pdf",
+      "collectedAtUtc": "2026-10-07T12:05:22.645932+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 721840,
+      "sha256": "462e9a3201c4de6427bb30a468af62c4ecb6d4e57227496e3fbb84517ffc274c",
+      "record": "2026-10-07/n15c-mcm/c15-mcm-artigo-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    }
+  ],
+  "newCollectorCalls": 2,
+  "usableBodies": 2,
+  "hashedBodies": 2,
+  "pdfPages": 13,
+  "anchorCheckedPdfPages": [
+    1,
+    5,
+    8,
+    9,
+    10,
+    11
+  ],
+  "renderedPdfPages": [
+    1,
+    5,
+    8,
+    9,
+    10,
+    11
+  ],
+  "supplementMetadata": {
+    "hasSupplementalDataFlags": [
+      false
+    ],
+    "supplementarySectionNodeCounts": [
+      0
+    ],
+    "publishedSupplementDownloadLinks": [],
+    "absenceOnReceivedPageProvesGlobalNonexistence": false
+  },
+  "visualInspectionConfirmedByScript": false,
+  "finalManualReceived": false,
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false
+}

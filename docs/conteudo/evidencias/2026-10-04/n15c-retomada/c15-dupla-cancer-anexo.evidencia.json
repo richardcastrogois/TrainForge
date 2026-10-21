@@ -1,0 +1,22 @@
+{
+  "id": "c15-dupla-cancer-anexo",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/supplementaryFiles",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:15:48.823863+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/zip",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Inspecionar anexo observado no XML da dupla de cancer; confirmar se instrucao ou somente dados.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12840962/supplementaryFiles",
+  "contentType": "application/zip",
+  "retryAfter": null,
+  "bytes": 177920,
+  "bodyFile": "../raw/c15-dupla-cancer-anexo.zip",
+  "sha256": "3b5e90417ebb30c9439105ba11fa81f0580b8094432af34d7e8d3b79a7a6544a"
+}

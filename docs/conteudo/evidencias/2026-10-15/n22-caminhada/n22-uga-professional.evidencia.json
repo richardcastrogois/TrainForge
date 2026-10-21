@@ -1,0 +1,23 @@
+{
+  "id": "n22-uga-professional",
+  "url": "https://coe.uga.edu/news/2016-04-senior-lecturer-receives-2016-creative-teaching-award/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:24:39.512911+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Responsavel institucional PE/recursosabertos Ilse Mason; nao autora pessoal presumida de cada trecho",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://coe.uga.edu/news/2016-04-senior-lecturer-receives-2016-creative-teaching-award/",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 61656,
+  "bodyFile": "../raw/n22-uga-professional.html",
+  "sha256": "858211188d5b8d2d3681964340b821c50aac6ed8adb9f4f62f3c8db381833b94"
+}

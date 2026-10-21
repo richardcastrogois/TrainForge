@@ -1,0 +1,24 @@
+{
+  "id": "c15-nia2017-guia-pdf",
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:35:31.242058+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Exemplar original NIA/GPO: verificar autoria/edicao/passos/seguranca/fim/licenca, como material auxiliar citado no protocolo, sem equiparar a rotina exata de cuidadores doRCT.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 23833139,
+  "bodyFile": "../raw/c15-nia2017-guia-pdf.pdf",
+  "sha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+  "bodyFormatMatchesRequest": true
+}

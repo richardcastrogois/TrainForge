@@ -1,0 +1,23 @@
+{
+  "id": "c15-mcm-artigo-html",
+  "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/full",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T12:05:20.921936+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Artigo primario, metodos/validacao/autoria/direitos e links publicos de suplementos; identificar manualD prometido sem presumir entrega.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1750034/full",
+  "contentType": "text/html;charset=utf-8",
+  "retryAfter": null,
+  "bytes": 1161670,
+  "bodyFile": "../raw/c15-mcm-artigo-html.html",
+  "sha256": "242dbc8095d40b5eb25349783d7ce6758c0b27b0287a4653e3a29e68aea20aea"
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-05",
+  "authorization": "Usuario autorizou o download neste site e removeu o teto de bytes para PDFs durante a pesquisa. DOCX REACT: excecao pontual de 16 MiB, sem executar conteudo.",
+  "sourcePage": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10420051/",
+  "requests": [
+    {
+      "id": "i18-react-suplemento-docx",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10420051/bin/Table_1.DOCX",
+      "extension": "docx",
+      "accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "maxBytes": 16777216,
+      "purpose": "Primeira coleta do suplemento original vinculado na pagina PMC do REACT 2023; verificar hash e inventario do DOCX antes da leitura XML, sem executar macros ou conteudo."
+    }
+  ]
+}

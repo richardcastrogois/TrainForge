@@ -1,0 +1,24 @@
+{
+  "id": "n22-paceup-nihr",
+  "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/165395115/3014657.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-15T10:25:04.570846+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Repositorio institucional do relatorio integral2018 e apendices/manual; alternativa publicada, nao desafio NCBI",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://research-information.bris.ac.uk/ws/portalfiles/portal/165395115/3014657.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 7374691,
+  "bodyFile": "../raw/n22-paceup-nihr.pdf",
+  "sha256": "979774e4a186c624d24663e860f62aecf76d273bcac7e6f26e844d81c47c26cb",
+  "bodyFormatMatchesRequest": true
+}

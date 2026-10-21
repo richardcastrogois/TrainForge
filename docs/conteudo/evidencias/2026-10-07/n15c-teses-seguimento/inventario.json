@@ -1,0 +1,1065 @@
+{
+  "date": "2026-10-07",
+  "continuedAt": "2026-10-08",
+  "niche": "N15-C",
+  "networkPerformed": false,
+  "newCollectorCalls": 30,
+  "http200Responses": 19,
+  "http200Bodies": 18,
+  "usableBodies": 18,
+  "hashedBodies": 26,
+  "sources": [
+    {
+      "id": "c15-benson478-alzheimer-registro",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06997523",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06997523",
+      "collectedAtUtc": "2026-10-08T03:13:45.365320+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 15885,
+      "sha256": "c50b0bc62164a3e6c7dbdf5fc335a06868e31d8b7cbd2be1a8baa0000d350b7a",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-benson478-alzheimer-registro.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-crea-editorial-script-text",
+      "url": "https://www.frontiersin.org/ap-2024/_nuxt/CVwIsJ6C.js",
+      "resolvedUrl": "https://www.frontiersin.org/ap-2024/_nuxt/CVwIsJ6C.js",
+      "collectedAtUtc": "2026-10-08T02:57:00.629562+00:00",
+      "status": 200,
+      "error": "Response exceeds 2 MiB: body not stored, no retry",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-07/n15c-teses-seguimento/c15-crea-editorial-script-text.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-crea2026-suplementos-pagina",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+      "resolvedUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full",
+      "collectedAtUtc": "2026-10-08T02:48:01.472177+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 698642,
+      "sha256": "7dd2be3b456ae722dcdb602d104edca24f397f557f22da599675d66dd9dd99f3",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-crea2026-suplementos-pagina.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-crea2026-suplementos-zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/supplementaryFiles",
+      "resolvedUrl": null,
+      "collectedAtUtc": "2026-10-08T02:58:52.030663+00:00",
+      "status": null,
+      "error": "The read operation timed out",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-07/n15c-teses-seguimento/c15-crea2026-suplementos-zip.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-haryati2018-editorial",
+      "url": "https://ajouronline.com/index.php/AJAS/article/view/5560",
+      "resolvedUrl": "https://ajouronline.com/index.php/AJAS/article/view/5560",
+      "collectedAtUtc": "2026-10-08T02:46:36.122824+00:00",
+      "status": 403,
+      "error": "HTTP 403",
+      "bytes": 2053,
+      "sha256": "ad4201d67a3c330a80e88e22302fd77e094577126a698f48ec849322e6aa1200",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-haryati2018-editorial.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-heartfocused2021-metadados",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33639543%20AND%20SRC:MED&format=json&resultType=core",
+      "collectedAtUtc": "2026-10-08T03:13:44.463130+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 4536,
+      "sha256": "6fed5b306fa37efa312d4b8e3202b80697a63821f6b489be79be0650a885f7d9",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-heartfocused2021-metadados.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-hives2021-aerobico-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7880222/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7880222/fullTextXML",
+      "collectedAtUtc": "2026-10-08T02:51:56.016793+00:00",
+      "status": 500,
+      "error": "HTTP 500",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-hives2021-aerobico-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-hives2021-ucsf-pdf",
+      "url": "https://escholarship.org/content/qt8jp673mh/qt8jp673mh.pdf",
+      "resolvedUrl": "https://escholarship.org/content/qt8jp673mh/qt8jp673mh.pdf",
+      "collectedAtUtc": "2026-10-08T02:57:00.247250+00:00",
+      "status": 403,
+      "error": "HTTP 403",
+      "bytes": 919,
+      "sha256": "380f2b86db44ed35d8b37b9ea4e8bed73850b8721ffee59911ede0c5fd020573",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-hives2021-ucsf-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-jakobsen2014-protocolo-html",
+      "url": "https://link.springer.com/article/10.1186/1471-2474-15-119",
+      "resolvedUrl": "https://link.springer.com/article/10.1186/1471-2474-15-119?error=cookies_not_supported&code=df956e84-d9d3-4816-b0d6-75b852cc75f9",
+      "collectedAtUtc": "2026-10-08T02:55:25.817870+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 412490,
+      "sha256": "5f415067734000bc872b55377d1fcf4cfec7a087e1a27477f68ab6249366f57a",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2014-protocolo-html.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-jakobsen2015-resultados-html",
+      "url": "https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1",
+      "resolvedUrl": "https://www.sjweh.fi/show_abstract.php?abstract_id=3479&fullText=1",
+      "collectedAtUtc": "2026-10-08T02:55:28.573104+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 115126,
+      "sha256": "c9345efd9dcb6e77745c3e608fad97fd0da84bb0416f69578ec666c5f73825c5",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-resultados-html.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-jakobsen2015-tronco-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4637087/fullTextXML",
+      "collectedAtUtc": "2026-10-08T02:55:31.446258+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 100293,
+      "sha256": "8d76bbb1491e1536161724798d24fc1a1178ae7f712e1ff22a2433e5ecd82287",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jakobsen2015-tronco-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-jobogkrop-cartaz-clinico-pdf",
+      "url": "https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/Shop/PDF/Plakat-med-elastikoevelser-til-klinisk-personale.pdf",
+      "resolvedUrl": "https://jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/Shop/PDF/Plakat-med-elastikoevelser-til-klinisk-personale.pdf",
+      "collectedAtUtc": "2026-10-08T02:55:33.166383+00:00",
+      "status": 404,
+      "error": "HTTP 404",
+      "bytes": 56897,
+      "sha256": "4b3ec856013e39513fa64b6c3676deb976a81cc1a8d37dae955639154d80c36e",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jobogkrop-cartaz-clinico-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-jobogkrop-cartaz-costas-pdf",
+      "url": "https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf",
+      "resolvedUrl": "https://jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf",
+      "collectedAtUtc": "2026-10-08T02:55:35.594556+00:00",
+      "status": 404,
+      "error": "HTTP 404",
+      "bytes": 56897,
+      "sha256": "4b3ec856013e39513fa64b6c3676deb976a81cc1a8d37dae955639154d80c36e",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jobogkrop-cartaz-costas-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-jobogkrop-cartaz-faixas-pdf",
+      "url": "https://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/PDF/Exercises-with-elastic-band.pdf",
+      "resolvedUrl": "https://jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/PDF/Exercises-with-elastic-band.pdf",
+      "collectedAtUtc": "2026-10-08T02:55:37.324240+00:00",
+      "status": 404,
+      "error": "HTTP 404",
+      "bytes": 56897,
+      "sha256": "4b3ec856013e39513fa64b6c3676deb976a81cc1a8d37dae955639154d80c36e",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-jobogkrop-cartaz-faixas-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-montero-tese-pdf",
+      "url": "https://gredos.usal.es/bitstream/handle/10366/137103/DME_MonteroCuadradoF_Efectividad.pdf?isAllowed=y&sequence=1",
+      "resolvedUrl": null,
+      "collectedAtUtc": "2026-10-08T02:46:13.888461+00:00",
+      "status": null,
+      "error": "<urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-07/n15c-teses-seguimento/c15-montero-tese-pdf.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-montero-tese-registro",
+      "url": "https://gredos.usal.es/handle/10366/137103",
+      "resolvedUrl": null,
+      "collectedAtUtc": "2026-10-08T02:45:52.790095+00:00",
+      "status": null,
+      "error": "<urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>",
+      "bytes": null,
+      "sha256": null,
+      "record": "2026-10-07/n15c-teses-seguimento/c15-montero-tese-registro.evidencia.json",
+      "bodyVerified": false,
+      "usable": false
+    },
+    {
+      "id": "c15-niva-faixas-cartaz-pdf",
+      "url": "https://niva.org/app/uploads/Exercises-with-elasticband.pdf",
+      "resolvedUrl": "https://niva.org/app/uploads/Exercises-with-elasticband.pdf",
+      "collectedAtUtc": "2026-10-08T03:36:23.856949+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 355214,
+      "sha256": "cb184279597a592f5a43acc68f93263292896203f8888540a60ddd38d9161297",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-niva-faixas-cartaz-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-niva-faixas-pagina",
+      "url": "https://niva.org/exercises-with-elastic-band/",
+      "resolvedUrl": "https://niva.org/exercises-with-elastic-band/",
+      "collectedAtUtc": "2026-10-08T03:36:22.155663+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 60105,
+      "sha256": "a25bedb4fd2b176c6fd6e34592240b3e533614324aec5df554e7c6c64e4115fc",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-niva-faixas-pagina.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-pmr-enfermeiros2022-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9751506/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9751506/fullTextXML",
+      "collectedAtUtc": "2026-10-08T03:13:13.840210+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 95841,
+      "sha256": "34bbc85769e9ac88f1f675b81c9290c4278efd23d00cd79f6891d69da4dc2beb",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-pmr-enfermeiros2022-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-pmr-paliativo2025-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11829250/fullTextXML",
+      "collectedAtUtc": "2026-10-08T02:51:52.967966+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 113401,
+      "sha256": "60f5a6ab2fe1c497e84b82e3d1215b65a1ccbaeb958f2e7a027c21a81a05e27a",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-pmr-paliativo2025-xml.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-revieew-aderencia2026-html",
+      "url": "https://link.springer.com/article/10.1007/s10926-026-10449-w",
+      "resolvedUrl": "https://link.springer.com/article/10.1007/s10926-026-10449-w?error=cookies_not_supported&code=5e1b46ca-3cfa-4255-96d0-7e30dfcee835",
+      "collectedAtUtc": "2026-10-08T03:29:36.034073+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 460509,
+      "sha256": "f160c6e2ad89cace12847c2c76d324a50a1dd94f9ba2b951dd67f16a51da0c07",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-aderencia2026-html.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-revieew-seguimento-europepmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core",
+      "collectedAtUtc": "2026-10-08T02:48:00.506277+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 7063,
+      "sha256": "cc4be19981269045cf794a6e4c7a3f0836b3823d54d5f5be110103de745a5127",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-europepmc.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-revieew-seguimento-pubmed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40561221/",
+      "resolvedUrl": "https://pubmed.ncbi.nlm.nih.gov/40561221/",
+      "collectedAtUtc": "2026-10-08T02:46:35.891700+00:00",
+      "status": 203,
+      "error": "HTTP 203",
+      "bytes": 5590,
+      "sha256": "2c0e0794b940250849242874cbd5185db0ea2c977267e829f7bdb95e71014a29",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-pubmed.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-revieew-tese-portal",
+      "url": "https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab",
+      "resolvedUrl": "https://ekoizpen-zientifikoa.ehu.eus/documentos/6748c206f21b355a807aaeab",
+      "collectedAtUtc": "2026-10-08T02:47:58.702576+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 44617,
+      "sha256": "f3eeb11aa1bfed714a056df79ec5e1b3c32b0324bb2a8ac220fdf6f606c15fa9",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-tese-portal.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-revieew-tese-registro",
+      "url": "https://addi.ehu.es/handle/10810/68569",
+      "resolvedUrl": "https://addi.ehu.es/handle/10810/68569",
+      "collectedAtUtc": "2026-10-08T02:46:34.950831+00:00",
+      "status": 404,
+      "error": "HTTP 404",
+      "bytes": 1551,
+      "sha256": "370ad249c0d59bffda3ead83846219a224cc5555f063a91f0cf98785449c1ff7",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-revieew-tese-registro.evidencia.json",
+      "bodyVerified": true,
+      "usable": false
+    },
+    {
+      "id": "c15-va-walking-caregiver-pdf",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+      "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+      "collectedAtUtc": "2026-10-08T02:56:53.844307+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 5620475,
+      "sha256": "87f4fd4692732acd7646150b745a355779c78c0c3b0a80e2df228f76ebe1f4ae",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-caregiver-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-walking-facilitator-pdf",
+      "url": "https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+      "resolvedUrl": "https://www.mirecc.va.gov/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+      "collectedAtUtc": "2026-10-08T02:51:57.080639+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 1515090,
+      "sha256": "ce67fb0b103cd2ea10ff99596167c222f6cf907bce0c23e29594cc9d346bca3c",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-facilitator-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-walking-mindful-pdf",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+      "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+      "collectedAtUtc": "2026-10-08T02:56:49.596750+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 3513367,
+      "sha256": "84768176f3c961f0c9b9f39bb473340c4e647081b051e282e0017392bf9adac5",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-mindful-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-walking-pagina",
+      "url": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+      "resolvedUrl": "https://www.mirecc.va.gov/visn16/walking-to-wellness-manuals.asp",
+      "collectedAtUtc": "2026-10-08T02:51:59.961258+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 111086,
+      "sha256": "f614d4c0cd8a564a18d18b3be27e84f4e7a4d0a3714ac3249efef78051239f13",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-pagina.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    },
+    {
+      "id": "c15-va-walking-workbook-pdf",
+      "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf",
+      "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf",
+      "collectedAtUtc": "2026-10-08T02:56:34.580291+00:00",
+      "status": 200,
+      "error": null,
+      "bytes": 13784316,
+      "sha256": "df3ce629d043b2c0b4e2c347693cdca8d95b4044e3686152de24c21b182a024e",
+      "record": "2026-10-07/n15c-teses-seguimento/c15-va-walking-workbook-pdf.evidencia.json",
+      "bodyVerified": true,
+      "usable": true
+    }
+  ],
+  "htmlPublicLinks": {
+    "c15-crea2026-suplementos-pagina": [
+      "#supplementary-material"
+    ],
+    "c15-jakobsen2014-protocolo-html": [
+      "/content/pdf/10.1186/1471-2474-15-119.pdf",
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/PDF/Exercises-with-elastic-band.pdf",
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/Shop/PDF/Plakat-med-elastikoevelser-til-klinisk-personale.pdf",
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf"
+    ],
+    "c15-jakobsen2015-resultados-html": [
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/PDF/Exercises-with-elastic-band.pdf",
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-nakke-skulder-og-arm/~/media/Files/MSB/Shop/PDF/Plakat-med-elastikoevelser-til-klinisk-personale.pdf",
+      "http://www.jobogkrop.dk/Ondt-i-muskler-og-led/Ondt-i-ryggen/~/media/Files/MSB/PDF/A2-Rygoevelser-v5-tryk.pdf"
+    ],
+    "c15-niva-faixas-pagina": [
+      "https://niva.org/app/uploads/Exercises-with-elasticband.pdf"
+    ],
+    "c15-revieew-aderencia2026-html": [
+      "/content/pdf/10.1007/s10926-026-10449-w.pdf"
+    ],
+    "c15-revieew-tese-portal": [
+      "https://hdl.handle.net/10810/68569"
+    ],
+    "c15-va-walking-pagina": [
+      "/MIRECC/visn16/docs/Walking-to-Wellness-Caregiver-Walking-Together-Guide.pdf",
+      "/MIRECC/visn16/docs/Walking-to-Wellness-Mindful-Walking-Guide.pdf",
+      "/MIRECC/visn16/docs/Walking_to_Wellness_Facilitator_Manual.pdf",
+      "/MIRECC/visn16/docs/Walking_to_Wellness_Workbook-Fillable.pdf",
+      "/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf"
+    ]
+  },
+  "pdfs": {
+    "c15-niva-faixas-cartaz-pdf": {
+      "pages": 1,
+      "wholePdfVisuallyReviewed": false,
+      "allPagesTextExtracted": true,
+      "textPageLengths": [
+        1693
+      ],
+      "renderedPages": [
+        1
+      ]
+    },
+    "c15-va-walking-caregiver-pdf": {
+      "pages": 10,
+      "wholePdfVisuallyReviewed": false,
+      "allPagesTextExtracted": true,
+      "textPageLengths": [
+        199,
+        1007,
+        1413,
+        1616,
+        1263,
+        1540,
+        901,
+        1749,
+        1555,
+        0
+      ],
+      "renderedPages": [
+        3,
+        8,
+        9
+      ]
+    },
+    "c15-va-walking-facilitator-pdf": {
+      "pages": 39,
+      "wholePdfVisuallyReviewed": false,
+      "allPagesTextExtracted": true,
+      "textPageLengths": [
+        168,
+        1050,
+        1749,
+        286,
+        2773,
+        1813,
+        2863,
+        2802,
+        487,
+        1854,
+        2664,
+        2426,
+        2894,
+        2800,
+        2711,
+        2746,
+        2667,
+        2535,
+        2643,
+        2661,
+        2843,
+        2893,
+        2883,
+        2724,
+        2017,
+        2719,
+        2882,
+        2826,
+        2723,
+        2011,
+        2502,
+        2410,
+        2438,
+        2470,
+        2393,
+        2294,
+        2435,
+        835,
+        0
+      ],
+      "renderedPages": [
+        27,
+        30
+      ]
+    },
+    "c15-va-walking-mindful-pdf": {
+      "pages": 9,
+      "wholePdfVisuallyReviewed": false,
+      "allPagesTextExtracted": true,
+      "textPageLengths": [
+        220,
+        1007,
+        1306,
+        1232,
+        1205,
+        1630,
+        1287,
+        1986,
+        0
+      ],
+      "renderedPages": [
+        6,
+        8
+      ]
+    },
+    "c15-va-walking-workbook-pdf": {
+      "pages": 32,
+      "wholePdfVisuallyReviewed": false,
+      "allPagesTextExtracted": true,
+      "textPageLengths": [
+        169,
+        987,
+        2109,
+        670,
+        1581,
+        1573,
+        807,
+        741,
+        986,
+        1227,
+        1129,
+        1350,
+        1255,
+        1189,
+        1640,
+        1127,
+        1500,
+        1377,
+        1148,
+        396,
+        1643,
+        1561,
+        1096,
+        1141,
+        396,
+        1405,
+        1074,
+        1095,
+        396,
+        2185,
+        937,
+        0
+      ],
+      "renderedPages": [
+        14,
+        23
+      ]
+    }
+  },
+  "jats": {
+    "c15-jakobsen2015-tronco-xml": {
+      "title": "Effect of Workplace- versus Home-Based Physical Exercise on Muscle Response to Sudden Trunk Perturbation among Healthcare Workers: A Cluster Randomized Controlled Trial",
+      "doi": "10.1155/2015/902896",
+      "permissions": "Copyright © 2015 Markus D. Jakobsen et al. This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "supplements": [],
+      "tableLabels": [
+        "Table 1",
+        "Table 2"
+      ]
+    },
+    "c15-pmr-enfermeiros2022-xml": {
+      "title": "The effect of the demonstration-based progressive muscle relaxation technique on stress and anxiety in nurses caring for COVID-19 patients: a randomized clinical trial",
+      "doi": "10.1186/s12888-022-04456-3",
+      "permissions": "© The Author(s) 2022 https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ . The Creative Commons Public Domain Dedication waiver ( http://creativecommons.org/publicdomain/zero/1.0/ ) applies to the data made available in this article, unless otherwise stated in a credit line to the data.",
+      "supplements": [],
+      "tableLabels": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 4",
+        "Table 5"
+      ]
+    },
+    "c15-pmr-paliativo2025-xml": {
+      "title": "The Effect of Progressive Muscle Relaxation Exercises Applied to Caregivers of Palliative Care Patients on Stress Coping Styles and Anxiety Levels: A Randomised Controlled Trial",
+      "doi": "10.1002/nop2.70149",
+      "permissions": "© 2025 The Author(s). Nursing Open published by John Wiley & Sons Ltd. https://creativecommons.org/licenses/by-nc-nd/4.0/ This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc-nd/4.0/ License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.",
+      "supplements": [
+        {
+          "id": "nop270149-supitem-0001",
+          "position": "float",
+          "content-type": "local-data",
+          "orientation": "portrait"
+        },
+        {
+          "id": "nop270149-supitem-0002",
+          "position": "float",
+          "content-type": "local-data",
+          "orientation": "portrait"
+        }
+      ],
+      "tableLabels": [
+        "TABLE 1",
+        "TABLE 2",
+        "TABLE 3"
+      ]
+    }
+  },
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "benson478Registry": {
+    "hasResults": false,
+    "resultsSectionPresent": false,
+    "protocolSection": {
+      "identificationModule": {
+        "nctId": "NCT06997523",
+        "orgStudyIdInfo": {
+          "id": "2024/12-01; 2024/23- 11"
+        },
+        "organization": {
+          "fullName": "Hacettepe University",
+          "class": "OTHER"
+        },
+        "briefTitle": "Effects of Breathing Therapy and Benson Relaxation Technique on Caregivers of Alzheimer's Patients",
+        "officialTitle": "Effect of Breathing Therapy and Benson Relaxation Technique on Caregiver Burden, Perceived Stress and Self-Efficacy Among Alzheimer's Caregivers"
+      },
+      "statusModule": {
+        "statusVerifiedDate": "2025-01",
+        "overallStatus": "COMPLETED",
+        "expandedAccessInfo": {
+          "hasExpandedAccess": false
+        },
+        "startDateStruct": {
+          "date": "2025-02-19",
+          "type": "ACTUAL"
+        },
+        "primaryCompletionDateStruct": {
+          "date": "2025-04-30",
+          "type": "ACTUAL"
+        },
+        "completionDateStruct": {
+          "date": "2025-05-07",
+          "type": "ACTUAL"
+        },
+        "studyFirstSubmitDate": "2025-05-02",
+        "studyFirstSubmitQcDate": "2025-05-21",
+        "studyFirstPostDateStruct": {
+          "date": "2025-05-30",
+          "type": "ACTUAL"
+        },
+        "lastUpdateSubmitDate": "2025-07-11",
+        "lastUpdatePostDateStruct": {
+          "date": "2025-07-16",
+          "type": "ACTUAL"
+        }
+      },
+      "sponsorCollaboratorsModule": {
+        "responsibleParty": {
+          "type": "SPONSOR_INVESTIGATOR",
+          "investigatorFullName": "Hülya Nuray Bayraktar",
+          "investigatorTitle": "Graduate Student",
+          "investigatorAffiliation": "Hacettepe University"
+        },
+        "leadSponsor": {
+          "name": "Hülya Nuray Bayraktar",
+          "class": "OTHER"
+        },
+        "collaborators": [
+          {
+            "name": "Hacettepe University",
+            "class": "OTHER"
+          }
+        ]
+      },
+      "oversightModule": {
+        "oversightHasDmc": false,
+        "isFdaRegulatedDrug": false,
+        "isFdaRegulatedDevice": false
+      },
+      "descriptionModule": {
+        "briefSummary": "This randomized controlled trial aims to investigate the effects of respiratory therapy and the Benson Relaxation Technique on caregiver burden, perceived stress, and self-efficacy among caregivers of individuals with Alzheimer's disease. The study will be conducted at the Geriatrics Outpatient Clinic of Gülhane Training and Research Hospital, University of Health Sciences, between February and May 2025. A total of 80 healthy adult caregivers aged 18 to 65 will be enrolled and randomly assigned to either the intervention group (n=40) or the control group (n=40). The intervention group will participate in a structured 6-week program consisting of face-to-face group sessions with a maximum of 10 participants per group, held twice weekly. Each 30-minute session will include 10 minutes of guided respiratory therapy followed by 20 minutes of the Benson Relaxation Technique. The control group will receive routine care without any additional interventions. The purpose of this study is to evaluate whether the combined application of respiratory therapy and the Benson Relaxation Technique results in significant improvements in caregiver outcomes. Caregivers will be assessed using standardized measures, including the Caregiver Burden Scale for Dementia, the Perceived Stress Scale, and the General Self-Efficacy Scale. Assessments will be conducted at baseline (week 0), week 2, week 4, week 6 (end of intervention), and week 8 (two weeks post-intervention). The study is guided by the following hypotheses: H01: Respiratory therapy and the Benson Relaxation Technique have no effect on caregiver burden. H11: Respiratory therapy and the Benson Relaxation Technique reduce caregiver burden. H02: Respiratory therapy and the Benson Relaxation Technique have no effect on perceived stress. H12: Respiratory therapy and the Benson Relaxation Technique reduce perceived stress. H03: Respiratory therapy and the Benson Relaxation Technique have no effect on self-efficacy. H13: Respiratory therapy and the Benson Relaxation Technique improve self-efficacy.",
+        "detailedDescription": "The intervention in this study consists of two evidence-based non-pharmacological techniques: the 4-7-8 relaxing breathing technique and the Benson Relaxation Technique. These methods were delivered in a structured format over six weeks to support caregivers of individuals diagnosed with Alzheimer's disease. The 4-7-8 breathing technique is a rhythmic breathing practice designed to induce physiological calm by modulating the autonomic nervous system. The specific procedure followed was:\n\n* Participants were seated comfortably with a straight posture and used provided eye masks to minimize visual distractions.\n* The tongue was placed behind the upper front teeth and maintained in this position throughout the exercise.\n* A full exhalation was performed through the mouth while producing a soft whooshing sound.\n* This was followed by a quiet nasal inhalation for 4 seconds, breath-holding for 7 seconds, and a controlled exhalation through the mouth over 8 seconds.\n* This cycle was repeated approximately three times per minute, totaling 30 cycles in a 10-minute session.\n\nThe Benson Relaxation Technique, widely used in mind-body therapy, aims to elicit the relaxation response through passive focus and muscular relaxation. The steps included:\n\n* Selecting a personal word or phrase (e.g., \"peace,\" \"health,\" \"love\") to silently repeat during exhalation.\n* Sitting quietly with eyes closed, participants gradually relaxed all major muscle groups from feet to head.\n* While breathing naturally, they repeated the chosen word silently on each exhalation.\n* A passive attitude was encouraged; distracting thoughts were acknowledged and released without judgment, redirecting attention to the breath and word.\n* Sessions concluded with a quiet reorientation period before standing. Inclusion criteria: Adults aged 18-65 who were the primary caregivers of individuals diagnosed with Alzheimer's disease for at least six months; at least primary school graduates; cognitively and physically able to perform the exercises and complete forms; and provided informed consent.\n\nExclusion criteria: Individuals with psychological disorders (e.g., anxiety, depression), advanced cardiac, pulmonary (e.g., COPD, asthma), or oncological conditions; communication impairments (vision, hearing, or speech); those undergoing hospitalization or surgery during the study period; or those already engaged in other structured relaxation methods such as yoga or meditation.\n\nRationale: Caregivers of Alzheimer's patients frequently experience chronic stress and burden, leading to emotional exhaustion, physical health issues, and reduced quality of life. Breathing-based and meditative interventions offer accessible, cost-effective strategies to counteract these effects and improve psychological resilience.\n\nStudy Design Notes:\n\n* This is a randomized, controlled.\n* Participants were assigned to groups using a computer-based randomization tool.\n* All sessions were held face-to-face in groups of ≤10 participants, and all interventions were delivered by the same researcher to ensure standardization.\n\nThis structured intervention model was designed to provide both physiological relaxation (via controlled breathing) and psychological relief (via cognitive disengagement and passive awareness), aiming to support caregiver well-being through an integrative mind-body approach.\n\nStatistical Analysis: Data were analyzed using SPSS version 23.0. Groups were anonymized as \"A\" and \"B\". Normality was evaluated via Shapiro-Wilk test, skewness-kurtosis values, and Q-Q plots. Parametric tests (Student's t-test, paired samples t-test, ANOVA) were used for normally distributed data, while non-parametric tests (Mann-Whitney U, Friedman) were applied otherwise. Categorical variables were analyzed using chi-square tests. Descriptive statistics included means ± SD or medians (min-max). Cronbach's alpha was calculated for scale reliability. A p-value \\<0.05 was considered statistically significant.\n\nThis study received ethical approval from the Hacettepe University Clinical Research Ethics Committee under approval numbers 2024/12-01 and 2024/23-11, dated June 26, 2024, and December 3, 2024, respectively. Additionally, regulatory approval was obtained from the Turkey Medicines and Medical Devices Agency with decision number E-85521274-000-3587573 dated January 16, 2025. All participants provided written informed consent prior to participation. Confidentiality and data security were strictly maintained throughout the study to protect participant privacy."
+      },
+      "conditionsModule": {
+        "conditions": [
+          "Healthy",
+          "Caregiver Burden",
+          "Caregiver Stress",
+          "Caregiver",
+          "Caregiver Burden of People With Dementia",
+          "Self Efficacy"
+        ],
+        "keywords": [
+          "Alzheimer",
+          "Caregiver",
+          "Self Efficacy",
+          "Stress",
+          "Caregiver Burden"
+        ]
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": [
+          "NA"
+        ],
+        "designInfo": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "PARALLEL",
+          "interventionModelDescription": "randomized controlled trial",
+          "primaryPurpose": "OTHER",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "enrollmentInfo": {
+          "count": 80,
+          "type": "ACTUAL"
+        }
+      },
+      "armsInterventionsModule": {
+        "armGroups": [
+          {
+            "label": "Intervention Group",
+            "type": "EXPERIMENTAL",
+            "description": "The Intervention Group will be given breathing therapy and Benson relaxation technique training for 6 weeks.",
+            "interventionNames": [
+              "Behavioral: Breath Therapy and Benson Relaxation Technique"
+            ]
+          },
+          {
+            "label": "Control Group",
+            "type": "NO_INTERVENTION",
+            "description": "No intervention will be applied to the control group."
+          }
+        ],
+        "interventions": [
+          {
+            "type": "BEHAVIORAL",
+            "name": "Breath Therapy and Benson Relaxation Technique",
+            "description": "Relaxing breathing therapy (4-7-8) and Benson relaxation technique will be applied to the intervention group for 6 weeks. No intervention will be made to the control group.",
+            "armGroupLabels": [
+              "Intervention Group"
+            ]
+          }
+        ]
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {
+            "measure": "Change in caregiver burden as measured by the Caregiver Burden Scale for Dementia",
+            "description": "Caregiver burden will be assessed using the Caregiver Burden Scale for Dementia, which includes four sub-dimensions: physical, social, economic, and psychological. The scale consists of 24 items, each rated on a 5-point Likert scale ranging from 1 (\"Never\") to 5 (\"Always\"). There are no reverse-coded items. The total score ranges from 24 to 120, with higher scores indicating a greater caregiver burden. Subscale scores and total scores will be compared between the intervention and control groups at each assessment point to evaluate changes over time.",
+            "timeFrame": "Assessed at baseline (week 0), week 2, week 4, week 6 (end of intervention)"
+          },
+          {
+            "measure": "Change in Perceived Stress as Measured by the Perceived Stress Scale",
+            "description": "Perceived stress will be assessed using the Perceived Stress Scale for Adults. This scale consists of 14 items designed to measure the degree to which situations in one's life are appraised as stressful. Items are rated on a 5-point Likert scale from 0 (\"Never\") to 4 (\"Very Often\"). Items 4, 5, 6, 7, 9, 10, and 13 are reverse-scored. Total scores range from 0 to 56, with higher scores indicating greater levels of perceived stress. Changes in perceived stress will be evaluated by comparing scores at different time points within and between groups.",
+            "timeFrame": "Assessed at baseline (week 0), week 2, week 4, week 6 (end of intervention)"
+          },
+          {
+            "measure": "Change in Self-Efficacy as Measured by the General Self-Efficacy Scale",
+            "description": "Self-efficacy will be assessed using the General Self-Efficacy Scale, which includes 10 items aimed at measuring an individual's belief in their ability to cope with a variety of difficult demands. Each item is rated on a 4-point Likert scale ranging from 1 (\"Not at all true\") to 4 (\"Exactly true\"). Total scores range from 10 to 40, with higher scores reflecting greater perceived self-efficacy. Group differences and within-group changes over time will be analyzed.",
+            "timeFrame": "Assessed at baseline (week 0), week 2, week 4, week 6 (end of intervention)"
+          }
+        ],
+        "secondaryOutcomes": [
+          {
+            "measure": "Change in Caregiver Burden Two Weeks After the Intervention as Measured by the Caregiver Burden Scale for Dementia",
+            "description": "Caregiver burden will be assessed using the Caregiver Burden Scale for Dementia, which includes four sub-dimensions: physical, social, economic, and psychological. The scale consists of 24 items, each rated on a 5-point Likert scale ranging from 1 (\"Never\") to 5 (\"Always\"). There are no reverse-coded items. The total score ranges from 24 to 120, with higher scores indicating a greater caregiver burden. Subscale scores and total scores will be compared between the intervention and control groups at each assessment point to evaluate changes over time.",
+            "timeFrame": "From week 6 to week 8"
+          },
+          {
+            "measure": "Change in Perceived Stress Two Weeks After the Intervention as Measured by the Perceived Stress Scale",
+            "description": "Perceived stress will be assessed using the Perceived Stress Scale for Adults. This scale consists of 14 items designed to measure the degree to which situations in one's life are appraised as stressful. Items are rated on a 5-point Likert scale from 0 (\"Never\") to 4 (\"Very Often\"). Items 4, 5, 6, 7, 9, 10, and 13 are reverse-scored. Total scores range from 0 to 56, with higher scores indicating greater levels of perceived stress. Changes in perceived stress will be evaluated by comparing scores at different time points within and between groups.",
+            "timeFrame": "From week 6 to week 8"
+          },
+          {
+            "measure": "Change in Self-Efficacy Two Weeks After the Intervention as Measured by the General Self-Efficacy Scale",
+            "description": "Self-efficacy will be assessed using the General Self-Efficacy Scale, which includes 10 items aimed at measuring an individual's belief in their ability to cope with a variety of difficult demands. Each item is rated on a 4-point Likert scale ranging from 1 (\"Not at all true\") to 4 (\"Exactly true\"). Total scores range from 10 to 40, with higher scores reflecting greater perceived self-efficacy. Group differences and within-group changes over time will be analyzed.",
+            "timeFrame": "From week 6 to week 8"
+          }
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion Criteria:\n\n* Between the ages of 18-65\n* At least primary school graduate\n* First degree caregiver of a patient diagnosed with Alzheimer's (continuous caregiver, family member, spouse, etc., or paid continuous caregiver)\n* Caring for an individual diagnosed with Alzheimer's for at least 6 months\n* Cognitively and physically capable of answering data collection forms and implementing the taught exercise with the researcher Caregivers who agree to participate in the study will be included in the sample.\n\nExclusion Criteria:\n\n* Individuals with cognitive and psychological problems (anxiety, panic attacks, depression, etc.)\n* Those diagnosed with advanced heart disease, asthma, COPD, and advanced cancer\n* Those with communication problems (hearing, vision, speech, etc.)\n* Individuals who are hospitalized or undergo surgery, etc. during the study period\n* Individuals who are simultaneously continuing another relaxation exercise (yoga, meditation, visualization, etc.) will not be included in the sample.\n\nIn addition, caregivers who indicate that they want to withdraw from the study during the study and who do not attend the weekly group sessions twice in a row will be excluded from the sample.",
+        "healthyVolunteers": true,
+        "sex": "ALL",
+        "minimumAge": "18 Years",
+        "maximumAge": "65 Years",
+        "stdAges": [
+          "ADULT",
+          "OLDER_ADULT"
+        ]
+      },
+      "contactsLocationsModule": {
+        "overallOfficials": [
+          {
+            "name": "Hulya Nuray Bayraktar, Master's Stu",
+            "role": "PRINCIPAL_INVESTIGATOR"
+          }
+        ],
+        "locations": [
+          {
+            "facility": "Gulhane Training and Education Hospital",
+            "city": "Ankara",
+            "state": "Etlik",
+            "zip": "06010",
+            "country": "Turkey (Türkiye)",
+            "geoPoint": {
+              "lat": 39.91987,
+              "lon": 32.85427
+            }
+          }
+        ]
+      },
+      "ipdSharingStatementModule": {
+        "ipdSharing": "NO"
+      }
+    }
+  },
+  "frontiersJsonInventory": [
+    {
+      "index": 14,
+      "value": "/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full"
+    },
+    {
+      "index": 462,
+      "value": "<p>Frontiers in Psychology is a multidisciplinary journal that publishes advances in psychological research.</p>\n<p>Led by Field Chief Editor Prof. Axel Cleeremans (Université Libre de Bruxelles, Belgium) Frontiers in Psychology is included in PubMed Central (PMC), Scopus, Web of Science (SSCI) and the DOAJ among others, and welcomes research contributions across the field. Topics include, but are not limited to:</p>\n<div> &bull; health and clinical psychology</div>\n<div> &bull; cognitive science</div>\n<div> &bull; consciousness research</div>\n<div> &bull; perception science</div>\n<div> &bull; personality and social psychology.</div>\n<br>\n<p>The journal welcomes submissions which support and advance the UN’s Sustainable Development Goals (SDG), notably mental health outlined in SDG3, good health and well-being, its partial focus to address the rise of anxiety and depression, particularly among children and adolescents. The journal had an acceptance rate of 37% in 2024.</p>\n<p>Psychology is a highly interdisciplinary science, however, manuscripts that are related to pedagogy, linguistics, business, economics, management, artificial intelligence or environmental impacts without a fundamental psychological basis are not suitable for publication in this title. Research that is purely technological, such as digital technology or neural network analysis, without a foundation in psychology, is also outside the scope of this journal.</p> \n<p>After careful discussion with the Field Chief Editor of Frontiers in Psychology, the journal no longer accepts papers concerning simple bibliometric studies. Authors are still welcome to submit Systematic Reviews using publicly available data, but these must adhere to the <a href=\"https://prisma-statement.org/documents/PRISMA_2020_checklist.pdf\"> PRISMA guidelines</a> and have a conclusion related to psychology. Studies without any particular relevance to psychological phenomena will be transferred to a more applicable journal.</p>\n<p>Frontiers’ journals require that manuscripts primarily comprising computational studies of public data, must include appropriate validation. Please refer to the <a href=\"https://www.frontiersin.org/guidelines/policies-and-publication-ethics#standards-for-research-methodology:~:text=complaints%20and%20allegations.-,Standards%20for%20research%20methodology,-Experiments\">Frontiers Standards for research methodology policy</a>, for more information. Manuscripts not adhering to these standards will not be considered.<p>\n<p>Frontiers in Psychology is committed to advancing developments in the field by allowing unrestricted access to articles, and communicating scientific knowledge to psychologists, researchers, academics and the public alike, to enable the scientific breakthroughs of the future.</p>"
+    },
+    {
+      "index": 566,
+      "value": {
+        "currentArticle": 567,
+        "isPreviewPage": 413,
+        "hasSupplementalData": 413,
+        "showCrossmarkWidget": 13,
+        "articleTemplate": 735,
+        "currentArticlePageMetaInfo": 736,
+        "xmlParsedArticleContent": 877,
+        "xmlParsingError": -1
+      }
+    },
+    {
+      "index": 569,
+      "value": "10.3389/fpsyg.2026.1944170"
+    },
+    {
+      "index": 691,
+      "value": {
+        "views": 692,
+        "downloads": 693,
+        "citations": 425
+      }
+    },
+    {
+      "index": 701,
+      "value": "1944170/epub"
+    },
+    {
+      "index": 706,
+      "value": "Publishers-Proof.pdf"
+    },
+    {
+      "index": 707,
+      "value": "1944170/publishers-proof"
+    },
+    {
+      "index": 712,
+      "value": "fpsyg-17-1944170.xml"
+    },
+    {
+      "index": 713,
+      "value": "fpsyg-17-1944170/fpsyg-17-1944170.xml"
+    },
+    {
+      "index": 714,
+      "value": "1944170/xml"
+    },
+    {
+      "index": 719,
+      "value": "Data Sheet 4.pdf"
+    },
+    {
+      "index": 720,
+      "value": "1944170/data-sheet/4"
+    },
+    {
+      "index": 722,
+      "value": "SUPPLEMENTARY_MATERIAL"
+    },
+    {
+      "index": 724,
+      "value": "Data Sheet 3.pdf"
+    },
+    {
+      "index": 725,
+      "value": "1944170/data-sheet/3"
+    },
+    {
+      "index": 728,
+      "value": "Data Sheet 2.pdf"
+    },
+    {
+      "index": 729,
+      "value": "1944170/data-sheet/2"
+    },
+    {
+      "index": 732,
+      "value": "Data Sheet 1.pdf"
+    },
+    {
+      "index": 733,
+      "value": "1944170/data-sheet/1"
+    },
+    {
+      "index": 741,
+      "value": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/full"
+    },
+    {
+      "index": 785,
+      "value": "1944170"
+    },
+    {
+      "index": 800,
+      "value": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/pdf"
+    },
+    {
+      "index": 803,
+      "value": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1944170/xml"
+    },
+    {
+      "index": 865,
+      "value": "doi:10.3389/fpsyg.2026.1944170"
+    },
+    {
+      "index": 1377,
+      "value": "fpsyg-17-1944170-g001.tif"
+    },
+    {
+      "index": 1406,
+      "value": "Supplementary Materials S1, S2"
+    },
+    {
+      "index": 1644,
+      "value": "fpsyg-17-1944170-g002.tif"
+    },
+    {
+      "index": 1770,
+      "value": "fpsyg-17-1944170-g003.tif"
+    },
+    {
+      "index": 1850,
+      "value": "fpsyg-17-1944170-g004.tif"
+    },
+    {
+      "index": 2933,
+      "value": "Supplementary material"
+    },
+    {
+      "index": 2944,
+      "value": "The Supplementary material for this article can be found online at: "
+    },
+    {
+      "index": 2948,
+      "value": "https://www.frontiersin.org/articles/10.3389/fpsyg.2026.1944170/full#supplementary-material"
+    },
+    {
+      "index": 2951,
+      "value": {
+        "supplementary-material": 2952,
+        ":@": 2953
+      }
+    },
+    {
+      "index": 2954,
+      "value": "Data_Sheet_1.PDF"
+    },
+    {
+      "index": 2958,
+      "value": {
+        "supplementary-material": 2959,
+        ":@": 2960
+      }
+    },
+    {
+      "index": 2961,
+      "value": "Data_Sheet_2.PDF"
+    },
+    {
+      "index": 2964,
+      "value": {
+        "supplementary-material": 2965,
+        ":@": 2966
+      }
+    },
+    {
+      "index": 2967,
+      "value": "Data_Sheet_3.PDF"
+    },
+    {
+      "index": 2970,
+      "value": {
+        "supplementary-material": 2971,
+        ":@": 2972
+      }
+    },
+    {
+      "index": 2973,
+      "value": "Data_Sheet_4.PDF"
+    }
+  ],
+  "heartFocusedMetadata": {
+    "pmid": "33639543",
+    "doi": "10.1016/j.gerinurse.2021.02.006",
+    "title": "Heart-focused breathing and perceptions of burden in Alzheimer's caregivers: An online randomized controlled pilot study.",
+    "abstractText": "Informal caregivers of patients with Alzheimer's disease (AD) often experience high stress and reduced wellbeing and quality of life. HeartMath's Heart Lock-In® technique has been shown to reduce stress. In a randomized controlled pilot study among ten informal AD caregivers, we examined a two-week ten-minute daily, internet delivered heart-focused breathing protocol (n = 5) compared to waitlist control (n = 5). Participants completed pre- and post- self-assessments of perceived caregiver burden, stress, quality of life, anxiety, self-compassion and heart rate variability (HRV). Quality of life improved significantly in the control group compared to intervention, while self-compassion and HRV trended towards the expected direction. Caregiver burden and anxiety worsened in the intervention vs. waitlist control, suggesting the perception of added stress related to the required new daily task. While heart-focused breathing may hold promise for improving aspects of the caregiving experience, exploring online delivery methods and schedules that do not add extra burden is needed.",
+    "isOpenAccess": "N",
+    "hasPDF": "N"
+  },
+  "followupMetadata": {
+    "pmid": "40561221",
+    "doi": "10.1097/jom.0000000000003474",
+    "title": "Videoconference-Supervised Exercise for Low Back Pain in Eldercare Workers: One-Year Follow-up of the ReViEEW Randomized Controlled Trial.",
+    "firstPublicationDate": "2025-06-02",
+    "pubYear": "2025",
+    "abstractText": "<h4>Objective</h4>To examine the 1-year impact of a 12-week videoconference-supervised exercise program followed by exercise advice on low back pain (LBP) among eldercare workers.<h4>Methods</h4>One hundred thirty participants were randomized to control or intervention arms. Both received standard workplace prevention. The intervention group also completed the 12-week program and was encouraged to continue exercising until 1-year follow-up.<h4>Results</h4>Eleven participants dropped out. Intention-to-treat analysis showed no significant group-by-time effect on average LBP intensity ( P = 0.140). However, significant effects favored the intervention group in work interference from LBP and neck pain and reduced use of hypnotic/anxiolytic medications, whereas a negative effect appeared in work-related personal accomplishment ( P < 0.05). Per-protocol analysis showed gains in trunk muscle endurance and depressive symptoms ( P < 0.05).<h4>Conclusions</h4>The intervention did not lower average LBP intensity but positively influenced several secondary outcomes, including work interference from pain and medication use.",
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "hasPDF": "N",
+    "hasSuppl": "N",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1097/JOM.0000000000003474"
+        }
+      ]
+    }
+  }
+}

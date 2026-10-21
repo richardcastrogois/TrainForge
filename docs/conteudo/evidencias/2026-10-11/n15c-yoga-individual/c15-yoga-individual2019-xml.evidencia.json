@@ -1,0 +1,23 @@
+{
+  "id": "c15-yoga-individual2019-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6657047/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T22:06:26.054842+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Protocolo publicado2019DOI0479-5: verificar roteiro/dose/seguranca/apoio e diferenciacaoCY/DY, comparar com resultado2023/registro2026 sem misturar versoes.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6657047/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 110433,
+  "bodyFile": "../raw/c15-yoga-individual2019-xml.xml",
+  "sha256": "c0d13cb9188f701198ce5d03786d8155f093b0ae6252747c03f02cffdee8827c"
+}

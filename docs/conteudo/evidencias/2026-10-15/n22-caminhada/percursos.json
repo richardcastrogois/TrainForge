@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-15",
+  "niche": "N22",
+  "programmes": [
+    {
+      "id": "WK-NHLBI-08",
+      "name": "Referencia de caminhada8semanas",
+      "sourceIds": [
+        "PR140"
+      ],
+      "sourceLocator": "Manual2008PDF117/folhetoPDF1; contextoPDF99-100",
+      "authorCredit": "NHLBI/NIH, HealthyHeartHealthyFamily2008, equipe institucional",
+      "population": "Comunidade filipino-americana, adultos/idosos na educacao comunitaria; nao validacao especifica cuidador",
+      "weeks": [
+        {
+          "week": 1,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 5,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 15,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 2,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 10,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 20,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 3,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 15,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 25,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 4,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 20,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 30,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 5,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 25,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 35,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 6,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 30,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 40,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 7,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 35,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 45,
+          "daysPerWeek": 7
+        },
+        {
+          "week": 8,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 40,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 50,
+          "daysPerWeek": 7
+        }
+      ],
+      "progression": "Tabela original; nao acelerar em funcao de cronometro concluido. Sem algoritmo clinico individual.",
+      "instructionScope": "Marcha lenta / marcha viva / marcha lenta; aula inclui ensino/aquecimento3min/alongamentos separados, nao adicionados silenciosamente a tabela.",
+      "delivery": "Contexto comunitario com agente treinado, handoutpara casa; nao pressupor instrutor disponivel noTrainForge.",
+      "approvalState": "candidato_documental_condicional",
+      "releaseApproved": false,
+      "pending": [
+        "Revisao atual da elegibilidade/progressao e localizacao; ativosformatados excluidos.",
+        "Nao transpor para idoso fragil/cuidador confinado semcompatibilidade demonstrada."
+      ]
+    },
+    {
+      "id": "WK-NHLBI-12",
+      "name": "Referencia de caminhada12semanas2006",
+      "sourceIds": [
+        "PR140"
+      ],
+      "sourceLocator": "Guia2006PDF33, preparacaoPDF29, cautelasPDF24/36",
+      "authorCredit": "NHLBI/NIH; criador profissional nominal desta tabela nao localizado",
+      "population": "Publico geral do guia de saude cardiovascular; nao recorte clinico especifico",
+      "weeks": [
+        {
+          "week": 1,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 5,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 15,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 2,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 7,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 17,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 3,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 9,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 19,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 4,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 11,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 21,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 5,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 13,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 23,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 6,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 15,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 25,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 7,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 18,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 28,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 8,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 20,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 30,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 9,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 23,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 33,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 10,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 26,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 36,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 11,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 28,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 38,
+          "minimumDaysPerWeek": 5
+        },
+        {
+          "week": 12,
+          "slowWarmupMinutes": 5,
+          "briskMinutes": 30,
+          "slowCooldownMinutes": 5,
+          "totalMinutes": 40,
+          "minimumDaysPerWeek": 5
+        }
+      ],
+      "progression": "Semana13+manutencao/avancoqualitativo30-60minvivos; nao gerar calendario adicional",
+      "intensity": "Original usa zonaFCestimada e ressalva medicamentos. Nao substituir silenciosamente peloTalkTestdeoutroprotocolo.",
+      "delivery": "Guia publico; indicacao individual conformeprecaucoes; semservico presumido.",
+      "approvalState": "referencia_autoria_especifica_pendente",
+      "releaseApproved": false,
+      "pending": [
+        "Vinculo profissional responsavel especifico da tabela2006; nao herdar revisores2008.",
+        "Revisao de atualidade de intensidade/triagem antes de propor uso."
+      ]
+    },
+    {
+      "id": "WK-PACEUP-12",
+      "name": "Percurso PACE-UP12semanas por incrementos relativos",
+      "sourceIds": [
+        "PR141"
+      ],
+      "authorCredit": "HarrisTetal.,Trials2013; co-designclinicoHarris/LeeDavid documentado no relatorio2018",
+      "sourceLocator": "Protocolo2013PDF6-11/Fig2PDF11; resultadosPLOS2017Methods; relatorio2018PDF42/142-143; guia2025PDF3-9 separado",
+      "population": "Adultos45-75anos relativamenteinativos, ambulantes no exterior, semcontraindicacao a aumentaratividade; excluidosacamados/institucionalizados, demencias e alto riscodequedas conformefonte",
+      "baseline": {
+        "days": 7,
+        "instruction": "Registrar atividadehabitual para media inicial, sem acrescentar meta fixa universal.",
+        "device": "Protocolo original usa pedometrocegoCW200/avaliacao; uso posteriorSW200. Telefone/relogio e alternativa da versaoMovingMedicine2025, nao equivalencia metrica demonstrada."
+      },
+      "phases": [
+        {
+          "fromWeek": 1,
+          "toWeek": 2,
+          "extraStepsPerTargetDay": 1500,
+          "minimumTargetDaysPerWeek": 3,
+          "approxExtraMinutesPerTargetDay": 15
+        },
+        {
+          "fromWeek": 3,
+          "toWeek": 4,
+          "extraStepsPerTargetDay": 1500,
+          "minimumTargetDaysPerWeek": 5,
+          "approxExtraMinutesPerTargetDay": 15
+        },
+        {
+          "fromWeek": 5,
+          "toWeek": 6,
+          "extraStepsPerTargetDay": 3000,
+          "minimumTargetDaysPerWeek": 3,
+          "approxExtraMinutesPerTargetDay": 30
+        },
+        {
+          "fromWeek": 7,
+          "toWeek": 12,
+          "extraStepsPerTargetDay": 3000,
+          "minimumTargetDaysPerWeek": 5,
+          "approxExtraMinutesPerTargetDay": 30
+        }
+      ],
+      "targetRule": "Mediahabitual+incremento; nao meta diaria total3000 ou10000. Minutos/passos sao aproximacoes do material, nao conversao biomecanica individual.",
+      "intensity": "Moderada: maisquente, respiracao/FCaumentam, ainda consegueconversar. ProtocoloPDF10.",
+      "progression": "Aumentos graduais e reavaliacao debarreiras/limites; nao forcarfasepor calendario quando ha sintomas ou metasnaoatingidas.",
+      "sourceDeliveryPaths": [
+        {
+          "id": "postal",
+          "requirements": [
+            "Material escrito e diario",
+            "Pedometro e instrucao",
+            "Avaliacao inicial/triagem",
+            "Contato de assistente apos envio para equipamento/compreensao"
+          ],
+          "requiresThreeNurseConsultations": false
+        },
+        {
+          "id": "nurse",
+          "requirements": [
+            "Mesmosmateriais",
+            "Enfermeira com treino intervencao",
+            "Consultas individualizadas aproximadamente semanas1/5/9"
+          ]
+        }
+      ],
+      "endOfProgramme": "Manteratividade e automonitoramento conformeutilidade;12semanas nao alta clinica automatica.",
+      "assetSelection": {
+        "algorithmAndModerateIntensity": "ProtocoloCCBY2.0/2013; adaptar comcredito/licenca/mudancas",
+        "outcomeSummary": "ArtigoPLOS2017CCBY",
+        "moving2025FormTextImages": "Nao selecionarpara copiar/traduzir;copyright2020/grantnaoconfirmado",
+        "nihrReportLayout": "Nao selecionar;restricao comercialgeral",
+        "photographsVideosLogos": "Nenhumselecionado"
+      },
+      "approvalState": "candidato_a_composicao_documental",
+      "releaseApproved": false,
+      "pending": [
+        "MaterialfinalptPT e condicoes reais deentrega a revisar antesdeuso; nao exigiruma copiaintegral do manual para compor de fontes abertas.",
+        "Restricoes de publico/apoio preservadas; ensaio nao validou novoapp ou cuidadores separados."
+      ]
+    }
+  ],
+  "rejectedSchedule": {
+    "source": "n22-nhlbi-session3",
+    "pdfPage": 27,
+    "reason": "Semana3total40min(10+20+10), semana4total30min(5+15+10); divergencia preservada e semcorrecao inferida."
+  },
+  "noAutomaticSelection": true
+}

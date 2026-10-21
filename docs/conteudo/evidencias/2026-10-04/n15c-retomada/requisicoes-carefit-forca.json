@@ -1,0 +1,8 @@
+{
+ "date":"2026-10-04", "niche":"N15-C", "requests":[
+  {"id":"c15-carefit-2025-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12432464/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Verificar edicao mais recente de CareFit identificada na busca, anexos e licenca dos videos."},
+  {"id":"c15-forca-relaxamento-2026-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Ler protocolo de forca funcional de cuidadores, instrucoes, dose, progressao e supervisao; nao resultados clinicos."},
+  {"id":"c15-revisao-comportamental-2026-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13600195/fullTextXML","accept":"application/xml","extension":"xml","purpose":"Localizar estudos primarios pessoais do cuidador a partir de referencias da revisao; nao usar revisao como instrucao ou prova primaria."},
+  {"id":"c15-busca-pessoal-anterior-2024","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE%3Acaregiver%20OR%20TITLE%3Acarers%29%20AND%20%28TITLE%3Aexercise%20OR%20TITLE%3A%22physical%20activity%22%29%20AND%20OPEN_ACCESS%3AY%20AND%20FIRST_PDATE%3A%5B1900-01-01%20TO%202024-12-31%5D&format=json&resultType=core&pageSize=100","extension":"json","purpose":"Buscar estudos anteriores relevantes por titulo, em vez de paginar falso-positivos mais recentes."}
+ ]
+}

@@ -1,0 +1,910 @@
+{
+  "date": "2026-10-15",
+  "scope": "Conferência documental; não validação clínica nem teste do aplicativo",
+  "allChecksPassed": true,
+  "checkCount": 167,
+  "checks": [
+    {
+      "check": "JSONs de pesquisa analisáveis",
+      "passed": true,
+      "detail": 99
+    },
+    {
+      "check": "Hash n22-ace-michele",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-ace-toolkit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-brasil-guide",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-galileo-index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-ghc-pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-harris-qualification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-leslie-plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhlbi-filipino",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhlbi-guide",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhlbi-rights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhlbi-sample8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhlbi-session3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhs-active10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-nhs-walking",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-niddk-start",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-pacer-about",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-paceup-article",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-paceup-handbook",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-paceup-moving2025",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-paceup-nihr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-paceup-protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-uga-index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-uga-professional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-wah-home",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n22-wah-terms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n22-caminhada estado coerente",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n22-caminhada revisão visual registrada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-guide 33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-sample8 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-session3 27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-ace-toolkit 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-ace-toolkit 42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-ace-toolkit 47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-brasil-guide 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-brasil-guide 29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-brasil-guide 30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-brasil-guide 32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-brasil-guide 33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-nhlbi-filipino 117",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-protocol 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-protocol 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-protocol 11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-nihr 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-nihr 42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-nihr 47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-nihr 142",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-nihr 143",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n22-caminhada n22-paceup-moving2025 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-berkshire-pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-berkshire-return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-bredeweg-professional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-bupa-5k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-bupa-method",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-decathlon-beginner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun-jats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun-pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun-result-abstract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun-result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun2-jats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-gronorun2-pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-nike-plans",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n23-ohio-return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n23-corrida estado coerente",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n23-corrida revisão visual registrada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun-pdf 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun-pdf 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun-pdf 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun-pdf 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-bupa-5k 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-berkshire-pdf 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-berkshire-pdf 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-ohio-return 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun2-pdf 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun2-pdf 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun2-pdf 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n23-corrida n23-gronorun2-pdf 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-bhf-current-v3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-bhf-plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-cyclinguk-index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-cyclinguk-joebeer2010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-cyclinguk-plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-fullpotential-coaching",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-fullpotential-team",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-gibala-professional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-gillen2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-sofa-saddle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-trainerday-api",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-trainerday-terms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-uga-index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-uga-lingo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Hash n24-uga-tips",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n24-ciclismo estado coerente",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "n24-ciclismo revisão visual registrada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-plan 20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-current-v3 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-current-v3 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-current-v3 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-bhf-current-v3 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-cyclinguk-joebeer2010 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-cyclinguk-joebeer2010 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-cyclinguk-joebeer2010 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Render n24-ciclismo n24-cyclinguk-joebeer2010 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Totais da rodada: 54 GETs / 44 HTTP200 / 43 úteis",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "61 páginas visualizadas com imagens locais",
+      "passed": true,
+      "detail": {
+        "n22-caminhada": 33,
+        "n23-corrida": 12,
+        "n24-ciclismo": 16
+      }
+    },
+    {
+      "check": "232 fontes com IDs e estados válidos",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "23 famílias novas e evidência existente",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "25 sessões, nove semanas, último evento sem dose inventada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W01-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W01-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W01-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W02-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W02-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W02-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W03-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W03-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W03-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W04-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W04-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W04-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W05-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W05-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W05-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W06-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W06-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W06-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W07-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W07-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W07-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W08-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W08-S2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W08-S3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Dose/crédito GRONO2-W09-S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N23 totais semana 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N15 pausada e ponteiro CG02 preservado",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "N25 não iniciada",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Links locais dos relatórios atuais",
+      "passed": true,
+      "detail": {
+        "count": 30,
+        "errors": []
+      }
+    },
+    {
+      "check": "Sem diff rastreado do app",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Raw ignorado pelo Git",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "54 recibos da rodada no índice cumulativo",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "nicheCounts": {
+    "n22-caminhada": {
+      "calls": 25,
+      "http200": 22,
+      "usableBodies": 21
+    },
+    "n23-corrida": {
+      "calls": 14,
+      "http200": 11,
+      "usableBodies": 11
+    },
+    "n24-ciclismo": {
+      "calls": 15,
+      "http200": 11,
+      "usableBodies": 11
+    }
+  },
+  "newHttpCalls": 54,
+  "http200": 44,
+  "usableBodies": 43,
+  "hashesVerified": 54,
+  "pdfPagesVisuallyReviewed": 61,
+  "pageCounts": {
+    "n22-caminhada": 33,
+    "n23-corrida": 12,
+    "n24-ciclismo": 16
+  },
+  "catalogSources": 232,
+  "newSourceFamilies": 23,
+  "inventoryTotals": {
+    "calls": 684,
+    "http200": 563,
+    "hashesVerified": 631
+  },
+  "graphify": {
+    "command": "C:\\Users\\richa\\AppData\\Roaming\\uv\\tools\\graphifyy\\Scripts\\python.exe -m graphify extract C:\\dev\\TrainForge\\trainforge\\lib --update --code-only --no-cluster --out C:\\dev\\TrainForge\\trainforge",
+    "exitCode": 0,
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "outputsLeftUntouched": true,
+    "researchSemanticallyIndexed": false
+  },
+  "researchState": {
+    "n15": "paused_open",
+    "n22": "closed_in_documented_scope",
+    "n23": "closed_in_documented_scope",
+    "n24": "active_incomplete",
+    "n25": "not_started"
+  },
+  "practiceOrPublicationApproved": false,
+  "trackedAppDiffFiles": [],
+  "noFigmaOrDatabaseToolsUsed": true,
+  "noNewContacts": true,
+  "correctionsDuringVerification": [
+    "PR141/PR150: valor de estado normalizado para candidato, conforme enum do catálogo; não alteração de direito/aprovação.",
+    "Estado N22 explicitou releaseApproved=false e campo de escopo temporal; audit já separava pesquisa e publicação."
+  ],
+  "currentHeaderLinksVerified": 56,
+  "diffWhitespaceCheck": "git diff --check dos documentos rastreados desta rodada: saída sem erros"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c15-pediatrico-uem-pdf",
+  "url": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/download/24358/pdf_83/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:50:05.858560+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Texto integral primario, metodos/publico/17posturas de autoalongamento, tempo/resultados/direitos e materiais publicados; sem limite de PDF autorizado, sem executar conteudo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://periodicos.uem.br/ojs/index.php/ActaSciHealthSci/article/download/24358/pdf_83/",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 215169,
+  "bodyFile": "../raw/c15-pediatrico-uem-pdf.pdf",
+  "sha256": "77aa6c40bafcb668ad3df4953416a49c56458c5d96cd789e25911c9aeb6bc06c",
+  "bodyFormatMatchesRequest": true
+}

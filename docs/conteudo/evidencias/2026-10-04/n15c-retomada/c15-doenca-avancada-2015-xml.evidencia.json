@@ -1,0 +1,22 @@
+{
+  "id": "c15-doenca-avancada-2015-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4588256/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-05T02:48:53.773100+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Verificar programa e manual para exercicio proprio dos cuidadores, elegibilidade, viabilidade e licenca sem substituir resultados negativos por promessa.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4588256/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 65211,
+  "bodyFile": "../raw/c15-doenca-avancada-2015-xml.xml",
+  "sha256": "1cd663d6fdc000908d5060ce862b485d114d3edada33401afa75c7a7c4105bca"
+}

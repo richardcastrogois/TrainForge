@@ -1,0 +1,23 @@
+{
+  "id": "c15-gomes2021-rebec",
+  "url": "https://ensaiosclinicos.gov.br/rg/RBR-4fvfn2p",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:17:04.118584+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro prospectivo de Gomes: populacao, dose planejada e desenho. Manter divergencias do plano230/um mes e piloto45/dois meses, sem fundir ou presumir manual acessivel.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://ensaiosclinicos.gov.br/rg/RBR-4fvfn2p",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 119026,
+  "bodyFile": "../raw/c15-gomes2021-rebec.html",
+  "sha256": "f0980796c6a760fb6292df60d478874aa30f28e252e45fee3cab44853be031e3"
+}

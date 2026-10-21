@@ -1,0 +1,22 @@
+{
+  "id": "i18-calm-protocolo-2016-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4977774/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:31:24.149378+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ler protocolo CALM e distinguir treino pesado de academia versus leve em casa, com instrucoes, dose e suplementacao preservadas.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4977774/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 175028,
+  "bodyFile": "../raw/i18-calm-protocolo-2016-xml.xml",
+  "sha256": "5e772cc6b82b678e7e345309571d15a6679b592bc88e4af7bbfac21eea7acaa9"
+}

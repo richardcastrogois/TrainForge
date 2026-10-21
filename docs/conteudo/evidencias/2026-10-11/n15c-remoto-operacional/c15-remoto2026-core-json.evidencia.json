@@ -1,0 +1,23 @@
+{
+  "id": "c15-remoto2026-core-json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41774485%20AND%20SRC%3AMED&resultType=core&format=json",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:27:01.533838+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Resumo primario PMID41774485/DOI10.1249/MSS.0000000000003974: confirmar ganhos proprios do cuidador versusMVPA primaria nula. Nao retry deXML500 nem texto integral recebido por suposicao.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41774485%20AND%20SRC%3AMED&resultType=core&format=json",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 9745,
+  "bodyFile": "../raw/c15-remoto2026-core-json.json",
+  "sha256": "19b9bfcbf532ccba21723b6c68f1d3c3b87b99a060f13cd956c2c74f96b023df"
+}

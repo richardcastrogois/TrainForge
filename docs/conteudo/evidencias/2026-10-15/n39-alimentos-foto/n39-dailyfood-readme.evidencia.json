@@ -1,0 +1,23 @@
+{
+  "id": "n39-dailyfood-readme",
+  "url": "https://raw.githubusercontent.com/SLKAlgs/DailyFood-172/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:02:06.938254+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "README ligado pelo artigo dos autores; conferir acesso, licença e artefatos existentes. Não baixar fotos nem pressupor grant de fotos de terceiros.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/SLKAlgs/DailyFood-172/main/README.md",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 229,
+  "bodyFile": "../raw/n39-dailyfood-readme.md",
+  "sha256": "ae4c17292f4b22d839c142184db14d00f823dc35c20da809ffb28e4ede4d878e"
+}

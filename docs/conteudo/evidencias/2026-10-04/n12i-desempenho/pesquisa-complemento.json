@@ -1,0 +1,50 @@
+{
+  "niche": "N12-I", "date": "2026-10-04", "status": "concluido_para_pesquisa",
+  "researchClosureApproved": true, "releaseApproved": false, "appImplemented": false,
+  "researchScope": "Alimentacao/atividade e funcao muscular no envelhecimento, distinguindo desporto, objetivos pessoais do cuidador e cuidado de outra pessoa; nao meta proteica, suplemento ou dieta individual.",
+  "next": "N13-I: modelos humanos completos/aplicabilidade/direitos; depois retomar complementos de exercicio. N21 permanece retida.",
+  "evidence": [
+    {"record": "2026-10-04/n12i-desempenho/a12-inatividade-proteina.evidencia.json", "anchors": ["2025 Apr 8", "31 January 2025", "six randomized", "Attribution-NonCommercial-NoDerivatives"], "role": "Zhang et al. 2025: revisao sistematica/meta-analise humana, referencia cientifica apenas, nao texto/ativo incorporavel comercialmente."},
+    {"record": "2026-10-03/n12-desempenho/n12-issn-protein.evidencia.json", "anchors": ["2017", "older", "Creative Commons"], "role": "Posicionamento humano de 2017 com texto candidato CC BY; nao guia atualizado universal para idosos."},
+    {"record": "2026-10-03/n11i-alimentacao/n11i-niddk-idosos.evidencia.json", "anchors": ["muscles", "health care professional"], "role": "Contexto geral de envelhecimento/funcao, nao programa de desporto ou prescricao de dose."},
+    {"record": "2026-10-04/alimentacao-contexto/a09-nhs-perda-involuntaria.evidencia.json", "anchors": ["without changing"], "role": "Separar perda involuntaria de composicao corporal/objetivo esportivo."}
+  ],
+  "dependencies": ["2026-10-03/n12-desempenho/conteudo-guiado.json", "2026-10-03/n12-desempenho/resumo-desempenho.json", "2026-10-04/geriatria-nutricao/leitura-web.json", "2026-10-04/n11i-habitos/pesquisa-complemento.json", "2026-10-03/n13-planos-alimentares/amostra-planos.json"],
+  "sourceReview": [
+    {"id": "I12-R01", "sourceId": "NU28", "finding": "ISSN 2017 permanece candidato textual com autoria/licenca; faixa geral de pessoas saudaveis que se exercitam nao e meta automatica de idoso/cuidador.", "updateVerified": true, "updateScope": "Confrontado com uma revisao de 2025 recebida; nao revisao exaustiva nem substituicao integral do posicionamento."},
+    {"id": "I12-R02", "sourceId": "NU29", "finding": "ODS anteriormente lido via web; GET local 403 preservado. Nao repetir nem afirmar guia local recebido/licenca de traducao."},
+    {"id": "I12-R03", "sourceId": "NU30", "finding": "Medline enciclopedia A.D.A.M. e referencia protegida; nao confundir com secao Healthy recipes em dominio publico."},
+    {"id": "I12-R04", "finding": "ESPEN apenas resumo lido na web: individualizacao/multidisciplinaridade; 403 PDF e 203 desafio nao sao conteudo cientifico recebido."},
+    {"id": "I12-R05", "doi": "10.1186/s12877-025-05885-x", "authors": "Liying Zhang et al.", "year": 2025, "sourcePopulation": "Pessoas de 60 anos ou mais com inatividade conforme estudos originais; transicao para treino ou reducao de atividade.", "studyDesign": "Revisao sistematica/meta-analise de seis ensaios randomizados, oito grupos de dados; busca ate 31/01/2025.", "finding": "Resultados sobre massa nao demonstraram efeito significativo; forca/desempenho foram mistos. Nao generalizar para todos os idosos nem recomendar suplemento automaticamente.", "license": "CC BY-NC-ND 4.0", "incorporationDecision": "Referencia factual com citacao, sem traducao/republicacao comercial de texto, tabelas ou figuras.", "releaseApproved": false}
+  ],
+  "lessons": [
+    {"id": "I12-L01", "previousLesson": "G12-L01", "draft": "Identifica a pessoa, o objetivo e a atividade. Funcao no dia a dia, desporto e recuperacao de doenca nao sao o mesmo percurso.", "origin": "Sintese editorial propria assistida por agente a partir de contexto humano, nao prescricao profissional."},
+    {"id": "I12-L02", "previousLesson": "G12-L02", "draft": "Uma quantidade publicada para um grupo nao define a tua meta. Conserva a populacao, a unidade e a origem; uma orientacao individual tem de permanecer identificada.", "origin": "ISSN como referencia populacional e decisao propria de proveniencia."},
+    {"id": "I12-L03", "previousLesson": "G12-L03", "draft": "Confirma autor, data e direitos. Uma revisao de estudos informa a pesquisa, mas nao e um plano alimentar pronto ou uma garantia de resultados pessoais.", "origin": "Fontes humanas e decisao propria de separar evidencia, plano e ativo."},
+    {"id": "I12-L04", "draft": "Mais proteina ou um suplemento nao garantem melhora de forca ou funcao. A pesquisa depende das pessoas e atividades estudadas; nao aplica uma dose automaticamente.", "origin": "Referencia factual limitada a Zhang 2025; sem copiar traducao do artigo protegido."},
+    {"id": "I12-L05", "draft": "Regista refeicao e treino apenas quando conhecidos. A mesma comida pode ser partilhada, mas a quantidade consumida e a atividade de cada pessoa ficam separadas.", "origin": "Requisito proprio de papel/origem e complemento N11-I."},
+    {"id": "I12-L06", "draft": "Se cuidas de alguem, os teus objetivos sao pessoais. Preparar refeicoes ou ajudar a usar o registo nao define necessidades nutricionais ou exercicios da outra pessoa.", "origin": "Requisito expresso do autor; nao recomendacao extraida de ensaio."},
+    {"id": "I12-L07", "draft": "Uma mudanca de peso nao demonstra ganho de musculo. Perda sem intencao ou dificuldade em comer nao deve virar uma meta de desempenho; procura orientacao apropriada.", "origin": "NHS/NIDDK e limites educativos; sem diagnostico ou triagem implementada."}
+  ],
+  "accessLimits": [
+    {"record": "a12-panorama-proteina.evidencia.json", "status": 200, "contentUsable": false, "reason": "Corpo e desafio 'Checking your browser - reCAPTCHA', nao artigo; hash/HTTP preservados, sem contorno ou retry."}
+  ],
+  "operations": [
+    {"id": "I12-O01", "decision": "Separar funcao cotidiana/massa muscular, desempenho esportivo, recuperacao clinica e peso; nao inferir um deles por idade ou pela balanca."},
+    {"id": "I12-O02", "decision": "Cuidador praticante tem rotina propria; apoiar refeicao da pessoa assistida nao e o seu treino/consumo/metas."},
+    {"id": "I12-O03", "decision": "Treino/ambiente/equipamento/elegibilidade pertencem a fonte de exercicio, nao a um texto nutricional; nao compensar calorias ou aumentar proteina por treino marcado concluido."},
+    {"id": "I12-O04", "decision": "Tres licoes gerais existentes sao titulos/rascunhos, nao instrucao completa validada para estes publicos. Complementar com fonte humana atualizada e recorte explicito."}
+  ],
+  "researchClosureCriteria": [
+    {"id": "I12-G01", "met": true, "criterion": "Publicos, papeis, objetivos e limites clinicos/direitos existentes revisados."},
+    {"id": "I12-G02", "met": true, "criterion": "Uma atualizacao apos 2017 conferida em fonte humana primaria; aplicabilidade restrita a populacao/exercicio estudados, sem alegar busca exaustiva."},
+    {"id": "I12-G03", "met": true, "criterion": "Sete licoes educativas complementares redigidas e origens explicitadas; sem prescricao ou ativo protegido copiado."},
+    {"id": "I12-G04", "met": true, "criterion": "Resumo web e falhas locais separados; publicacao, revisao profissional e testes reais nao declarados realizados."}
+  ],
+  "scenarios": [
+    {"id": "I12-S01", "fictional": true, "case": "Idoso pratica treino resistido", "expected": "Nao aplicar faixa proteica de atletas saudaveis automaticamente; contexto e origem profissional separados."},
+    {"id": "I12-S02", "fictional": true, "case": "Cuidador registra atividades de cuidado", "expected": "Nao converter tarefa em treino validado ou gasto para modificar sua alimentacao."},
+    {"id": "I12-S03", "fictional": true, "case": "Fonte Medline menciona proteina", "expected": "Distinguir licencas por secao e populacao, nao copiar enciclopedia protegida."}
+  ],
+  "limits": ["Fechamento apenas do recorte educativo: uma atualizacao recebida, nao toda a literatura atual, homologacao clinica ou dieta individual.", "N13 precisa conferir aplicabilidade e direitos de modelos completos; menu DASH de sete dias nao e dieta universal de idoso/cuidador.", "Nenhuma indicacao de suplemento, prescricao proteica ou alegacao de eficacia do app.", "Sete licoes proprias sao rascunhos, com revisao nutricional/editorial/pt-PT e compreensao reais ainda pendentes."]
+}

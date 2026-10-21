@@ -1,0 +1,144 @@
+{
+  "id": "N32-RELATO-AJUDA-PT-01",
+  "date": "2026-10-15",
+  "niche": "N32",
+  "scope": "Conteúdo educativo e mapa documental de relato/limitações/ajuda, localizado paraPortugal. Não diagnóstico, triagem validada, prescrição ou programa clínico.",
+  "sourceIds": [
+    "CI05",
+    "PR201",
+    "PR202",
+    "PR203"
+  ],
+  "authorship": "Fontes humanas institucionaisNIA,NICE,DGS/SPMS/INEMeRepúblicaPortuguesa. Categorias/organização de produto são proposta editorialTrainForge, não formulário validado criado por esses órgãos.",
+  "fields": [
+    {
+      "id": "person_and_reporter",
+      "meaning": "Pessoa a quem se refere e quem informa; idoso/cuidador/assistido separados",
+      "basis": "Critério N32 do autor e distinçãoNIA/NICE",
+      "origin": "proposta_editorial_do_TrainForge"
+    },
+    {
+      "id": "report_kind",
+      "meaning": "Autorrelato, relato da pessoa transcrito por terceiro, ou observação de terceiro; desconhecido permitido",
+      "basis": "NICE1.8.3/NIAAlzheimer; categorias operacionais são proposta própria",
+      "origin": "proposta_editorial_do_TrainForge"
+    },
+    {
+      "id": "place",
+      "meaning": "Local indicado pela pessoa, sem diagnóstico por mapa corporal",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "onset_and_course",
+      "meaning": "Quando começou, contínua/intermitente e mudanças percebidas, sem rotular condição por duração",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "description",
+      "meaning": "Descrição nas palavras da pessoa; opções exemplificativas não limitam expressão",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "associated_symptoms",
+      "meaning": "Outros sintomas relatados ou observados, com origem de cada informação",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "when_and_modifiers",
+      "meaning": "Horário/contexto e o que melhora ou agrava segundo a pessoa",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "impact",
+      "meaning": "Impacto declarado em atividade, sono/alimentação e movimento, sem teste de capacidade inventado",
+      "basis": "NIAefeitos dador",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "what_was_tried",
+      "meaning": "O que a pessoa diz já ter tentado e seu efeito, opcional; não sugerir dose/medicamento",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "self_reported_intensity",
+      "meaning": "Intensidade opcional descrita pela própria pessoa, verbal ou0–10com significado explícito; nunca preencher por observação/câmera",
+      "basis": "NIADescribingPain",
+      "origin": "fato_de_comunicacao_na_fonte"
+    },
+    {
+      "id": "environment_and_support",
+      "meaning": "Casa, praça/parque ou academia; apoio/equipamento efetivamente disponível e atividade interrompida, se houver",
+      "basis": "Critério N32 econtextos do autor",
+      "origin": "proposta_editorial_do_TrainForge"
+    },
+    {
+      "id": "existing_professional_instructions",
+      "meaning": "Orientações/restrições já recebidas, origem/data/validade quando conhecidas; não presumir autorização médica",
+      "basis": "EscopoR06do planejamento, não novo protocolo clínico",
+      "origin": "proposta_editorial_do_TrainForge"
+    }
+  ],
+  "missingDataRule": "Não informado/não consegue comunicar/desconhecido são estados explícitos. Não atribuir0,sem dor,sem doença ou apto por ausência de resposta. Não comparar notas0–10entre pessoas como mesma experiência.",
+  "proxyRule": "Priorizar comunicação acessível e o relato da pessoa quando possível. Guardar observação separada e descrição literal do comportamento com tempo/contexto, sem converter agitação/recusa em intensidade ou diagnóstico. Divergência entre pessoa e cuidador não apaga nenhum relato; avaliação clínica é externa.",
+  "helpFactsPT": {
+    "country": "PT",
+    "verifiedAt": "2026-10-15",
+    "medicalEmergencyNumber": "112",
+    "healthAdviceNumber": "808242424",
+    "sourceIds": [
+      "PR201",
+      "PR203"
+    ],
+    "usage": "Informação de acesso àajuda: situações graves descritas pela autoridade destinam-se àemergência, e orientação não emergente aoSNS24/profissional. Não usar ausência de exemplos como semáforo de segurança ou algoritmo de risco negativo.",
+    "unknownCountry": "Não mostrar contatosPTcomo universais; localização/jurisdição precisa ser conhecida, não inferida de idioma/IP ou fuso do agente.",
+    "noActionTaken": "Nenhuma chamada, mensagem, consulta, login, encaminhamento real ou localização pessoal coletada.",
+    "costs": "Acesso às páginas público; custos de chamadas/atendimento não confirmados neste recorte."
+  },
+  "contexts": {
+    "idoso_casa": {
+      "status": "aplicavel_com_limites",
+      "content": "Autorrelato da pessoa sobre si; registrar ambiente e apoio real. Ausência de equipamento não muda o significado clínico de dor ou libera treino alternativo.",
+      "pending": "Acessibilidade, compreensão e acesso a ajuda reais ainda não testados."
+    },
+    "idoso_academia_praca": {
+      "status": "aplicavel_com_limites",
+      "content": "Mesmo sujeito e significado do relato, com ambiente externo identificado. Equipamento/piso/clima são contexto, não diagnóstico nem evidência de apoio seguro.",
+      "pending": "Localização efetiva/ajuda presencial/transporte não demonstrados, sem contato automático."
+    },
+    "idoso_academia": {
+      "status": "aplicavel_com_limites",
+      "content": "Separar autorrelato, observação de instrutor e orientação profissional já recebida; instrutor não se torna médico nem pode substituir o relato da pessoa.",
+      "pending": "Credenciais, presença/competência do apoio e condições locais não verificadas."
+    },
+    "cuidador_casa_proprio": {
+      "status": "aplicavel_com_limites",
+      "content": "Queixa própria do cuidador é sobre seu corpo e pode ter fatores de atividade/cuidado, sem causalidade presumida. Observação sobre assistido é outro registo/sujeito; não usar limitações do assistido para selecionar treino do cuidador.",
+      "pending": "Compartilhamento, representação/consentimento e continuidade do cuidado exigem fluxo próprio futuro; não N15retomada."
+    }
+  },
+  "decisionsNotSupported": [
+    "Diagnosticar causa/localização ou classificar dor como muscular normal por contexto de exercício",
+    "Liberar treino por nota menor que um corte, lista de sinais negativa ou diagnóstico declarado",
+    "Determinar medicação/analgesia, tratamento ou amplitude/carga/retorno ao treino",
+    "Transformar escala/foto/câmera/IA emavaliação de dor da pessoa",
+    "Copiar números de emergência dosEUA/ReinoUnido paraPortugal",
+    "Compartilhar automaticamente informação do assistido com cuidador ou outro usuário",
+    "Confundir apoio físico, observação, representação e supervisão profissional"
+  ],
+  "contentDraft": "Pode ser útil registar como se sente e o que está mais difícil para conversar com um profissional. O relato da própria pessoa e a observação de quem acompanha são informações distintas. Registar não identifica a causa nem determina qual exercício é adequado. Acesso a ajuda depende do país e da situação; o aplicativo não substitui atendimento.",
+  "rights": "Fatos de comunicação e de serviços em redação independente, com procedência. PolíticaNIA indexada e seus limites preservados; DGS/NICE/gov.pt sem licença de expressão afirmada. Nenhuma escala de faces, questionário/algoritmo clínico proprietário, foto, cartaz, marca ou audiovisual foi copiado. Rever crédito/expressão doativo final.",
+  "beforePublication": [
+    "Revisão clínica/editorial do texto e dos limites do serviço; não alegar questionário/triagem validada",
+    "Revalidar contatos por país, acessibilidade, compreensão e eventual fluxo de ajuda",
+    "Definir representação/consentimento/visibilidade e proteção de dados em etapa própria, sem coletar saúde real agora",
+    "Conferir versão/licenças/atribuição do ativo final e finalidade do produto antes deimplementação"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

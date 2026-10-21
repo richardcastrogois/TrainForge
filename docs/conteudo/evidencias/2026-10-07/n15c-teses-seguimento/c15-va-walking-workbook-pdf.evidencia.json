@@ -1,0 +1,24 @@
+{
+  "id": "c15-va-walking-workbook-pdf",
+  "url": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T02:56:34.580291+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Workbook do participante publicado na pagina oficial, obter execucao/preparo/limites e conferir separado do modulo cuidador, nao eficacia emprestada de outro ensaio.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://www.mirecc.va.gov/MIRECC/visn16/docs/Walking_to_Wellness_Workbook.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 13784316,
+  "bodyFile": "../raw/c15-va-walking-workbook-pdf.pdf",
+  "sha256": "df3ce629d043b2c0b4e2c347693cdca8d95b4044e3686152de24c21b182a024e",
+  "bodyFormatMatchesRequest": true
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-04",
+  "method": "Busca web com extrato da pagina primaria PubMed; nao resposta do coletor nem manual integral recebido.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/35306388/",
+  "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics",
+  "authors": "Volkert et al.",
+  "doi": "10.1016/j.clnu.2022.01.024",
+  "publicationYear": 2022,
+  "sourceKind": "Resumo de diretriz clinica original; nao estudo de eficacia do TrainForge.",
+  "localBodyObtained": false,
+  "sourceBodySha256": null,
+  "summaryUsed": "O resumo desaconselha restricoes gerais e situa dietas redutoras de peso em idosos com obesidade e problemas relacionados ao peso, combinadas com atividade fisica. As intervencoes sao individualizadas e multidisciplinares.",
+  "rights": "Copyright ESPEN 2022; referencia factual, sem importar/traduzir integralmente diretriz, tabelas, figuras ou algoritmo.",
+  "accessLimits": [
+    {"record": "a10-espen-geriatria.evidencia.json", "status": 403, "contentUsable": false, "reason": "Resposta curta de acesso negado, nao PDF; sem retry."},
+    {"record": "a10-espen-pubmed.evidencia.json", "status": 203, "contentUsable": false, "reason": "Pagina de verificacao/cookies, nao resumo cientifico; sem executar desafio, contorno ou retry."}
+  ],
+  "notUsed": ["Limiares caloricos/proteicos ou de BMI como regras do app", "Detalhes de recomendacoes, algoritmos e tabelas nao conferidos no corpo integral", "Data de rastreamento da busca como data de publicacao"],
+  "releaseApproved": false
+}

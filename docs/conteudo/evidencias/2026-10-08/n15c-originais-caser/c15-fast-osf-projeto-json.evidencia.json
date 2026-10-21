@@ -1,0 +1,23 @@
+{
+  "id": "c15-fast-osf-projeto-json",
+  "url": "https://api.osf.io/v2/nodes/gc9qa/",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T04:12:30.817966+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Metadados/identidade/licenca do projeto FAST; publicacao de dados nao assume manual ou grant para video.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://api.osf.io/v2/nodes/gc9qa/",
+  "contentType": "application/vnd.api+json; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 4365,
+  "bodyFile": "../raw/c15-fast-osf-projeto-json.json",
+  "sha256": "4f7f4e35b81dac0fc3d09750e1617c4302f62681ad6c40089d8eb1a8f1d47696"
+}

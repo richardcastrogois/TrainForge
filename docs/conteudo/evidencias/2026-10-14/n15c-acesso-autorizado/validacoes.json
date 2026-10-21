@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-14",
+  "scope": "Aquisicao pelo navegador,consentimentos e envios autorizados;nao fechamento clinico/comercial N15-C",
+  "sourceIntegrity": {
+    "bytes": 9550390,
+    "sha256": "3a9441ae09ece4926b33204b86df0b4681c48549cee6589921eb9643b80ce90f",
+    "pdfHeaderVerified": true,
+    "pages": 275,
+    "encrypted": false,
+    "firstPageIdentityTextChecked": true,
+    "downloadAndPreservedCopyHashesMatch": true,
+    "originalDownloadsFilePreserved": true,
+    "gitCheckIgnoreExitCode": 0,
+    "httpStatusObserved": null,
+    "commercialLicenceOrFullInstructionReviewAssumed": false
+  },
+  "contactIntegrity": {
+    "materialPermissionRequestAuthorized": true,
+    "gmailSenderDisclosureAuthorized": true,
+    "completedSends": 3,
+    "distinctMessageIds": 3,
+    "cg02SendToolSucceeded": true,
+    "cg03SendToolSucceeded": true,
+    "cg05FirstAttempt": "HTTP403 APIsharedquota",
+    "cg05SearchBeforeRetrySucceeded": true,
+    "cg05SearchResultIds": 0,
+    "cg05SingleRetrySucceeded": true,
+    "recipientReadReplyOrGrantProvenBySend": false,
+    "attachmentsCcBccPersonalBodyDataOrFinancialCommitments": false
+  },
+  "focusedTests": {
+    "command": "python -X utf8 -m unittest discover -s docs/conteudo/evidencias -p test_lacunas_cuidadores.py",
+    "tests": 16,
+    "seconds": 1.507,
+    "exitCode": 0,
+    "result": "OK",
+    "testType": "Consistencia documental, nao clinico/APK",
+    "full337TestSuiteRerunThisIncrement": false,
+    "previousFullSuiteEvidence": "../../2026-10-13/n15c-lacunas-dirigidas/validacoes.json"
+  },
+  "recordValidation": {
+    "exitCode": 0,
+    "receiptAndCopiedPdfHashBytesPagesChecked": true,
+    "explicitConsentsChecked": true,
+    "threeSendResultsAndDistinctIdsChecked": true,
+    "requestsOrDownloadMeanResearchClosure": false
+  },
+  "graphify": {
+    "method": "detect_incremental(Path('lib')) APIlocal",
+    "changed": 0,
+    "unchanged": 42,
+    "deleted": 0,
+    "researchSemanticallyIndexed": false,
+    "graphSha256": "93758d7223f13ac06c70ea9abc866b5e16df15131bdf087a55c53bd676fd670d",
+    "reportSha256": "67b4b843e2c9b8ae1f28f1268e00dd8554e791b097d8b66ac8f6a8cee6827a34",
+    "bothHashesPreserved": true
+  },
+  "finalLocalChecks": {
+    "jsonFilesParsed": ["recebimento-tese.json", "solicitacoes.json", "validacoes.json"],
+    "countsAndHashConsistent": true,
+    "globalQueueValidatorExitCode": 0,
+    "globalNichesChecked": 20,
+    "globalStates": {"reuso_documentado_sem_nova_coleta":6,"concluido_para_pesquisa":10,"em_andamento":1,"pendente":3},
+    "activeComplement": "N15-C",
+    "globalQueueArtifactSha256": "bb92317a38d92fe0e763a365ef6a25ffebee24d713a9ff574cc60baadb9dd339",
+    "trackedScopedGitDiffCheckExitCode": 0,
+    "trackedAppDiffEmpty": true,
+    "appTestsRun": false
+  },
+  "researchClosureApproved": false,
+  "releaseApproved": false,
+  "appImplemented": false,
+  "n21Allowed": false,
+  "noOtherNicheOrAutomationStarted": true,
+  "commitOrPushPerformed": false
+}

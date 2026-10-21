@@ -1,0 +1,23 @@
+{
+  "id": "n43-videomae-card",
+  "url": "https://huggingface.co/MCG-NJU/videomae-base-finetuned-kinetics/resolve/main/README.md",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:54:00.584229+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Alternativa específica de classificação de vídeoKinetics400, metadadosCCBYNCdeclarados. Não obter pesos sob condição incompatível com caminho de produto ou copiar vídeosYouTube.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://huggingface.co/api/resolve-cache/models/MCG-NJU/videomae-base-finetuned-kinetics/488eb9a0565f257b32866000305c8178965eb9f6/README.md?%2FMCG-NJU%2Fvideomae-base-finetuned-kinetics%2Fresolve%2Fmain%2FREADME.md=&etag=%22efad19b4c645d279e6b9ba7a0751a2dba058fbae%22",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 3584,
+  "bodyFile": "../raw/n43-videomae-card.md",
+  "sha256": "b2ef77f0f4f2e729af4f4a874f6c7aff68e2f4c0dccb921cdcc5d4a7164ad3fb"
+}

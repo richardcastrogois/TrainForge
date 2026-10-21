@@ -1,0 +1,23 @@
+{
+  "requests": [
+    {
+      "id": "n22-paceup-article",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002210",
+      "purpose": "Artigo primarioCCBY PACE-UP: autoria/populacao/algoritmo/direitos/anexos",
+      "extension": "html"
+    },
+    {
+      "id": "n22-paceup-nihr",
+      "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/165395115/3014657.pdf",
+      "purpose": "Repositorio institucional do relatorio integral2018 e apendices/manual; alternativa publicada, nao desafio NCBI",
+      "extension": "pdf",
+      "accept": "application/pdf"
+    },
+    {
+      "id": "n22-harris-qualification",
+      "url": "https://profiles.sgul.ac.uk/tess-harris",
+      "purpose": "Formacao em Medicina e autoria/investigadora PACE-UP, evidencia primaria",
+      "extension": "html"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c15-gary-registro-json",
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT01188070",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-08T10:19:09.520016+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Registro do estudo maior e documentos publicados; separar amostra127 de insuficiencia cardiaca dos cuidadores de demencia, sem duplicar ensaios ou cointervencoes.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT01188070",
+  "contentType": "application/json",
+  "retryAfter": null,
+  "bytes": 10744,
+  "bodyFile": "../raw/c15-gary-registro-json.json",
+  "sha256": "900dec6e58495c0018bc979db6d52a8b40df0744e3ba0e97552896df2c8a5bde"
+}

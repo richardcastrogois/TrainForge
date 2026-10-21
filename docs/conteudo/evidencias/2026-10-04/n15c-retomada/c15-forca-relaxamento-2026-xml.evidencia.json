@@ -1,0 +1,22 @@
+{
+  "id": "c15-forca-relaxamento-2026-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T23:18:17.118393+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ler protocolo de forca funcional de cuidadores, instrucoes, dose, progressao e supervisao; nao resultados clinicos.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13627432/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 124430,
+  "bodyFile": "../raw/c15-forca-relaxamento-2026-xml.xml",
+  "sha256": "07b6c241512d11dfe017cad3f652e2bd8c53e22a6c0c551d0cbf75c207704be9"
+}

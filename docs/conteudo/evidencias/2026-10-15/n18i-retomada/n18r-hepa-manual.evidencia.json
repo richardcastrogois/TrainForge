@@ -1,0 +1,18 @@
+{
+  "id": "n18r-hepa-manual",
+  "url": "https://ec.europa.eu/programmes/erasmus-plus/project-result-content/49f2f6b3-447f-449e-8ec3-e839d219a0bc/Educational_Modules_Manual__IO2__-_English.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T03:19:21.468322+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": null,
+  "use": "research_only",
+  "purpose": "Coleção Erasmus+ emrepositório oficial: conferir licença, autoria, escopo e presença de comandos reais de academia. Financiamento público não é licença por si.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+}

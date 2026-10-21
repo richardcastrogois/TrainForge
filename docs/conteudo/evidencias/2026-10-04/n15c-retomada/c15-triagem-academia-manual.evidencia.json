@@ -1,0 +1,22 @@
+{
+  "id": "c15-triagem-academia-manual",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22older%20adults%22%20AND%20%22resistance%20training%22%20AND%20%28protocol%20OR%20instruction%20OR%20manual%29%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY%20AND%20FIRST_PDATE%3A%5B2000-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=12",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T22:22:04.791329+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Identificar fontes suplementares de instrucao para lacunas de academia N18-N20, sem iniciar N21 ou mudar foco ativo N15-C.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22older%20adults%22%20AND%20%22resistance%20training%22%20AND%20%28protocol%20OR%20instruction%20OR%20manual%29%29%20AND%20OPEN_ACCESS%3AY%20AND%20HAS_SUPPL%3AY%20AND%20FIRST_PDATE%3A%5B2000-01-01%20TO%202026-10-04%5D&format=json&resultType=core&pageSize=12",
+  "contentType": "application/json;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 102231,
+  "bodyFile": "../raw/c15-triagem-academia-manual.json",
+  "sha256": "89b61cbd82204276ac83fa90ece2d45f884ab2371949ee86da6496e8b00e9cc1"
+}

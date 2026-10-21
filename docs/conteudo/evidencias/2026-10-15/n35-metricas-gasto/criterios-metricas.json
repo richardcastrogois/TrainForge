@@ -1,0 +1,153 @@
+{
+  "id": "N35-MET60-METODO-01",
+  "date": "2026-10-15",
+  "niche": "N35",
+  "kind": "Pesquisa de fonte/tabela e especificação de estimativas, sem calculadora ou algoritmo implementado noapp.",
+  "sourceId": "CI06",
+  "table": "tabela60mais.json",
+  "calculatorAudit": "auditoria-calculadora.json",
+  "populationAndBase": {
+    "adult": "AdultCompendium2024:19–59;METpadrão referenciado a3.5ml/kg/min. Não mesmo conjunto dosidosos.",
+    "older": "OlderAdultCompendium2024:≥60;MET60+referenciado a2.7ml/kg/min.99códigos recebidos, sete dígitos com zeros preservados.",
+    "wheelchair": "CompendiumpróprioMETwc, método e população distintos; não substituir poridade ou cadeira doméstica. Não coletado/selecionado nestelote."
+  },
+  "selectedExamplesFromTable": [
+    {
+      "code": "0101160",
+      "MET60plus": 4.3,
+      "originalDescription": "Bicycling, stationary, 30-50 watts, moderate effort"
+    },
+    {
+      "code": "0101260",
+      "MET60plus": 6.3,
+      "originalDescription": "Bicycling, stationary, 90-100 watts, vigorous effort"
+    },
+    {
+      "code": "0206360",
+      "MET60plus": 3.8,
+      "originalDescription": "Health club exercise, conditioning classes, chair-based"
+    },
+    {
+      "code": "0207260",
+      "MET60plus": 6.5,
+      "originalDescription": "Rowing, stationary, 50 to 99 watts, moderate-to-vigorous effort"
+    },
+    {
+      "code": "0219160",
+      "MET60plus": 2.8,
+      "originalDescription": "Yoga, chair, general"
+    },
+    {
+      "code": "0505160",
+      "MET60plus": 2.8,
+      "originalDescription": "Cooking, serving food, setting table, implied walking or standing"
+    },
+    {
+      "code": "1302060",
+      "MET60plus": 3.0,
+      "originalDescription": "Dressing, undressing, standing or sitting"
+    },
+    {
+      "code": "1719060",
+      "MET60plus": 5.3,
+      "originalDescription": "Walking, 2.8 to 3.2 mph, level, moderate pace, firm surface"
+    },
+    {
+      "code": "1733060",
+      "MET60plus": 3.5,
+      "originalDescription": "Walking, with a cane"
+    }
+  ],
+  "metricSemantics": {
+    "reported": "Dose/carga/tempo informados pelapessoaouprofissional, comorigem/identidade e ausências. Não medição fisiológica.",
+    "device": "Número dovisor/sensor comunidade/modelo/fonte/timestamp e pessoa; nãoexatidão garantida/eqüivalência entreaparelhos ouMET. Integraçõesnão implementadas.",
+    "estimated": "Referência versão/código/descritivo/MET/base, massae duração válidas e adequação daatividade. Estimativa arredondada/identificada, não caloria medida.",
+    "unknown": "Semcorrespondênciaouinputválido, manterindisponível e motivo; desconhecido não0.",
+    "grossVsNet": "Fórmulaauditada estima custo bruto. Nenhuma subtração automática de1MET, repouso estimado, caloriaativa ouajuste dedieta selecionados.",
+    "multiActivity": "Preservarsegmentos/métodos e intervalos; nãofundir códigos ouMETemnovaatividade. Eventual total é soma deenergias deintervalos semsobreposição e comcompletude, não novoMETdoCompendium; política de agregação final não implementada."
+  },
+  "matchingAndLimits": [
+    "Atividade/variante/intensidade/carga/velocidade/piso e população correspondentes, não apenas nome",
+    "Semcaloria porrepetiçãoquando não há duraçãooumedida humana compatível",
+    "Semíndice metabólico deduzido decâmera, %FC, aparênciadomovimento oudeclaraçãoexercícioleve",
+    "METabsoluto não estabeleceesforçorelativo ouelegibilidade dequemtembaixa capacidade",
+    "Condição/medicamento/repousoindividual e heterogeneidade podem afastarmédias; semfator corretivo criado",
+    "Semduplicarcalorias do relógio, doapp e davisão deoutrosencontro; reconciliação técnica emetapaprópria"
+  ],
+  "workedExamples": [
+    {
+      "id": "older_walk",
+      "status": "estimativa_didatica",
+      "code": "1719060",
+      "MET60plus": 5.3,
+      "referenceVO2mlKgMin": 2.7,
+      "hypotheticalBodyMassKg": 65,
+      "hypotheticalActivityMinutes": 30,
+      "grossKcal": 139.52249999999998,
+      "roundingForPresentation": "Aproximadamente140kcal, sem precisão individual demonstrada",
+      "sourceMatchRequired": "Walking2.8–3.2mph,level,moderatepace,firm surface. Não prescrição de30min para umutente."
+    },
+    {
+      "id": "wrong_reference_comparison",
+      "status": "erro_demonstrado_nao_selecionado",
+      "sameInputsAs": "older_walk",
+      "wrongReference3point5Kcal": 180.86249999999998,
+      "relativeOverstatementPercent": 29.629629629629626,
+      "meaning": "Aplicar3.5ao valorMET60+produz cerca29.6%mais nesta fórmula; não é erroempíricoindividual nem margem universal de erro."
+    },
+    {
+      "id": "unknown_weight_or_duration",
+      "status": "indisponivel",
+      "grossKcal": null,
+      "reason": "Faltadado não0nem uso depeso70kgpadrão."
+    },
+    {
+      "id": "stationary_square",
+      "status": "sem_correspondencia_demonstrada",
+      "grossKcal": null,
+      "reason": "Semcarga/modelo/validação não linhaestacionária poraparência."
+    },
+    {
+      "id": "swimming_older",
+      "status": "sem_linha60mais_nesta_edicao",
+      "grossKcal": null,
+      "reason": "CategoriaWaterActivities=N/A. Não converter tabela19–59emmedida deidosos automaticamente."
+    }
+  ],
+  "contexts": [
+    {
+      "context": "idoso_casa",
+      "assessment": "aplicavel_com_limites",
+      "reason": "MET60+quando atividade/duração e condições correspondem; sedentarismo,autocuidado e treino separados. Yoga de cadeira geral2.8não mede três posesN26semtempo total. Idade≥60não resolve comorbidades/repouso individual."
+    },
+    {
+      "context": "idoso_academia_praca",
+      "assessment": "pendente_por_equipamento",
+      "reason": "Aparelho semwatts/velocidade/validação não herda linhaergômetro. Caminhada emsuperfície firme/plana pode ter linha adequada quandocondições conhecidas; declive/piso diferente exige correspondência, não ajuste inventado."
+    },
+    {
+      "context": "idoso_academia",
+      "assessment": "aplicavel_com_limites",
+      "reason": "Equipamento/carga/atividade identificados podem ter linha correspondente. METmédio não medida doindivíduo, e%FCdoN24não definewatts. Sessão comintervalos mantém segmentos e dados ausentes separados."
+    },
+    {
+      "context": "cuidador_casa_proprio",
+      "assessment": "aplicavel_com_limites",
+      "reason": "Selecionar referência pela pessoaquepratica: cuidador19–59versus≥60não pelo assistido. Tarefacotidiana própria é distinta detreino; não atribuir gastar energia aoassistido. Elevar/transferir pessoa e pausas nãopossuem linha/dose presumida."
+    }
+  ],
+  "missingCoverage": [
+    "WaterActivitiesN/Ano60+",
+    "Calibração deaparelhos depraça não encontrada",
+    "METdeseisfichasclínicas/cincomovimentosES2019e3posesYoga não medidos por esteCompendium",
+    "Reuso deescala clínica como intensidademetabólica não admitido"
+  ],
+  "beforeOffer": [
+    "Revisão dométodo/adequação e apresentação deincerteza porpúblico",
+    "Revisão ptPTdeatividades semalterar códigos/valores; citaçãoe direitos doativo final",
+    "Dados/sensores/duplicados/unidades/compreensão a testar antesdeimplementação ou uso pessoal",
+    "Semdecisão clínica, liberaçãodetreino, dietapersonalizada ou eficácia deperdadepeso por este lote"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false
+}

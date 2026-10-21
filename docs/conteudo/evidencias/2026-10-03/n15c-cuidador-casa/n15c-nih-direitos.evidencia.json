@@ -1,0 +1,23 @@
+{
+  "id": "n15c-nih-direitos",
+  "url": "https://www.nih.gov/about-nih/frequently-asked-questions",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-04T00:48:29.332852+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 403,
+  "use": "research_only",
+  "purpose": "Verificar politica original NIH e excecoes para imagens, marcas, endosso e conteudo de terceiros; nao parecer juridico.",
+  "maxBytes": 2097152,
+  "client": "urllib; default TLS; timeout 25s; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.nih.gov/about-nih/frequently-asked-questions",
+  "contentType": "text/html; charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 5787,
+  "bodyFile": "../raw/n15c-nih-direitos.html",
+  "sha256": "fbe538275ecc4f725309452a6916d2f3f7798b0fc220c160249b242c57f1ef39",
+  "error": "HTTP 403"
+}

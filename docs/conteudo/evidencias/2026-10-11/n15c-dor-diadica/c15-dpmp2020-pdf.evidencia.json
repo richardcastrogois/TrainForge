@@ -1,0 +1,24 @@
+{
+  "id": "c15-dpmp2020-pdf",
+  "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/88101/1/Li_Dyadic_Pain_Management.pdf",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-11T17:46:45.762592+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/pdf",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Original piloto18p depositado porPolyU; diferenciar resultados do idoso e autoexercicio/cuidador/roteiro completo ou livro externo.",
+  "maxBytes": null,
+  "sizePolicy": "research_pdf_unlimited_2026-10-05",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; no byte ceiling for research PDF; no retries",
+  "resolvedUrl": "https://ira.lib.polyu.edu.hk/bitstream/10397/88101/1/Li_Dyadic_Pain_Management.pdf",
+  "contentType": "application/pdf",
+  "retryAfter": null,
+  "bytes": 1323368,
+  "bodyFile": "../raw/c15-dpmp2020-pdf.pdf",
+  "sha256": "2715ee39e7dcea0ed221decfd6c827e6ae53a23e09db33d8cdb59f3f036233f5",
+  "bodyFormatMatchesRequest": true
+}

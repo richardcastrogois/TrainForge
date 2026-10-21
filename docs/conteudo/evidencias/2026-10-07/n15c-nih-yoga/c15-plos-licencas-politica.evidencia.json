@@ -1,0 +1,23 @@
+{
+  "id": "c15-plos-licencas-politica",
+  "url": "https://journals.plos.org/plosone/s/licenses-and-copyright",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:11:14.181788+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Politica editorial primaria de obras publicadas/suplementos/terceiros, nao herdar licenca para gravacao nao publicada.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://journals.plos.org/plosone/s/licenses-and-copyright",
+  "contentType": "text/html;charset=UTF-8",
+  "retryAfter": null,
+  "bytes": 60287,
+  "bodyFile": "../raw/c15-plos-licencas-politica.html",
+  "sha256": "5a25e54239d46f7db3e1f02a4ff8e902c8901f04c159fe6cbdf394a5b2d9d1df"
+}

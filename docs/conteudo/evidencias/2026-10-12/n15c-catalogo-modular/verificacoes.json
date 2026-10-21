@@ -1,0 +1,301 @@
+{
+  "catalogue": "catalogo-cuidadores.json",
+  "date": "2026-10-13",
+  "items": 5,
+  "mappedFields": 90,
+  "readingFiles": 14,
+  "verifiedPrimaryReceipts": 28,
+  "exerciseOrTechniqueComponentsIndexed": 19,
+  "programmePhasesIndexed": 3,
+  "publishedItems": 0,
+  "syntheticProgrammes": 0,
+  "networkCalls": 0,
+  "researchClosedItems": 5,
+  "executionAuditChecked": true,
+  "executableResearchClosedItems": 1,
+  "researchClosureApproved": false,
+  "appImplemented": false,
+  "receiptAudit": {
+    "evidencias/2026-10-04/n15c-retomada/c15-atac-alongamento-2024-xml.evidencia.json": {
+      "id": "c15-atac-alongamento-2024-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507477/fullTextXML",
+      "collectedAtUtc": "2026-10-04T23:24:01.678524+00:00",
+      "status": 200,
+      "bytes": 167187,
+      "sha256": "8c00c573ab0d11e1ba901a1c02ddeefaa1705338780d6c40e27f1d9109960ce4",
+      "bodyFile": "../raw/c15-atac-alongamento-2024-xml.xml"
+    },
+    "evidencias/2026-10-04/n15c-retomada/c15-atac-correcao-2026-xml.evidencia.json": {
+      "id": "c15-atac-correcao-2026-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13116105/fullTextXML",
+      "collectedAtUtc": "2026-10-04T23:24:03.414669+00:00",
+      "status": 200,
+      "bytes": 10116,
+      "sha256": "053e07b538ef703496389b9b8f0643321d9e2d148bd95b30c04bbbabb6e0014b",
+      "bodyFile": "../raw/c15-atac-correcao-2026-xml.xml"
+    },
+    "evidencias/2026-10-07/n15c-alongamento-profissional/c15-atac-qualificacao-trial-json.evidencia.json": {
+      "id": "c15-atac-qualificacao-trial-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05222295",
+      "collectedAtUtc": "2026-10-07T22:40:43.801938+00:00",
+      "status": 200,
+      "bytes": 15307,
+      "sha256": "8010523b681b9c27a10775d4c16a357da6aa069bbf432003601a67e605a40872",
+      "bodyFile": "../raw/c15-atac-qualificacao-trial-json.json"
+    },
+    "evidencias/2026-10-07/n15c-alongamento-profissional/c15-atac-trial-caregivers-json.evidencia.json": {
+      "id": "c15-atac-trial-caregivers-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06466239",
+      "collectedAtUtc": "2026-10-07T22:40:43.576062+00:00",
+      "status": 200,
+      "bytes": 9574,
+      "sha256": "cf36ae034b81393000c86b950534c83bd8b348ca75deddbc0797380c00b42250",
+      "bodyFile": "../raw/c15-atac-trial-caregivers-json.json"
+    },
+    "evidencias/2026-10-12/cg01-estatico/cg01-worcs2025-pdf.evidencia.json": {
+      "id": "cg01-worcs2025-pdf",
+      "url": "https://www.worcsacute.nhs.uk/documents/documents/patient-information-leaflets-a-z/3051-stretching-exercises-physiotherapy/",
+      "resolvedUrl": "https://www.worcsacute.nhs.uk/~documents/documents/patient-information-leaflets-a-z/stretching-exercises-physiotherapy//?layout=file",
+      "collectedAtUtc": "2026-10-12T13:49:12.522985+00:00",
+      "status": 200,
+      "bytes": 793456,
+      "sha256": "ef96b5038f375cc3a0392f6618e38c3c57bb0078c0ed8aa4c3a1e720f32b4547",
+      "bodyFile": "../raw/cg01-worcs2025-pdf.pdf"
+    },
+    "evidencias/2026-10-12/cg01-estatico/cg01-csp-seguranca-html.evidencia.json": {
+      "id": "cg01-csp-seguranca-html",
+      "url": "https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain",
+      "resolvedUrl": "https://www.csp.org.uk/conditions/knee-pain/video-exercises-knee-pain",
+      "collectedAtUtc": "2026-10-12T13:49:18.055771+00:00",
+      "status": 200,
+      "bytes": 217449,
+      "sha256": "73e0e023402000eb8ddf3db7d661934a7c05b8dd9f258e457d7a621674390e18",
+      "bodyFile": "../raw/cg01-csp-seguranca-html.html"
+    },
+    "evidencias/2026-10-08/n15c-benson-reavaliacao/c15-benson2022-original-html.evidencia.json": {
+      "id": "c15-benson2022-original-html",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819/20815783",
+      "resolvedUrl": "https://revistas.udea.edu.co/public/journals/recursos_html/iee-Html/iee-v40n3/2216-0280-iee-40-03-e06.html",
+      "collectedAtUtc": "2026-10-09T02:20:37.109409+00:00",
+      "status": 200,
+      "bytes": 124841,
+      "sha256": "432df1e016323afff438481bb1922554d3257adb2b7cc513df56b037137fd494",
+      "bodyFile": "../raw/c15-benson2022-original-html.html"
+    },
+    "evidencias/2026-10-05/programas-manuais-02/c15-benson-hemodialise-direitos.evidencia.json": {
+      "id": "c15-benson-hemodialise-direitos",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/view/351819",
+      "resolvedUrl": "https://revistas.udea.edu.co/index.php/iee/article/view/351819",
+      "collectedAtUtc": "2026-10-05T12:11:16.985627+00:00",
+      "status": 200,
+      "bytes": 83558,
+      "sha256": "5cdbf9281c93b9c3850243a46b3506507e681f457fde814ecb7706a2ceec8272",
+      "bodyFile": "../raw/c15-benson-hemodialise-direitos.html"
+    },
+    "evidencias/2026-10-12/cg02-benson/cg02-nccih-relaxamento-html.evidencia.json": {
+      "id": "cg02-nccih-relaxamento-html",
+      "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+      "resolvedUrl": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+      "collectedAtUtc": "2026-10-12T14:47:23.563044+00:00",
+      "status": 200,
+      "bytes": 674922,
+      "sha256": "ee6c88c3dc4054f55c76482510d7ccb688febb5441094aac6cb48da66043ce49",
+      "bodyFile": "../raw/cg02-nccih-relaxamento-html.html"
+    },
+    "evidencias/2026-10-12/cg02-benson/cg02-benson-artigo-pdf.evidencia.json": {
+      "id": "cg02-benson-artigo-pdf",
+      "url": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+      "resolvedUrl": "https://revistas.udea.edu.co/index.php/iee/article/download/351819/20812291",
+      "collectedAtUtc": "2026-10-12T14:55:34.974182+00:00",
+      "status": 200,
+      "bytes": 912284,
+      "sha256": "e2a8abd5334cde76aaab290ca18959059e94de3622a14caebe9136dafc74aa22",
+      "bodyFile": "../raw/cg02-benson-artigo-pdf.pdf"
+    },
+    "evidencias/2026-10-11/n15c-start-originais/c15-start2013-rct-xml.evidencia.json": {
+      "id": "c15-start2013-rct-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3808082/fullTextXML",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3808082/fullTextXML",
+      "collectedAtUtc": "2026-10-11T16:35:40.561683+00:00",
+      "status": 200,
+      "bytes": 118850,
+      "sha256": "de4b32455362ff20f2e5f9e6d1540ee6f1f64e47f9ecbfc0f01426fd0f8b9424",
+      "bodyFile": "../raw/c15-start2013-rct-xml.xml"
+    },
+    "evidencias/2026-10-11/n15c-start-originais/c15-start2014-nihr-relatorio-pdf.evidencia.json": {
+      "id": "c15-start2014-nihr-relatorio-pdf",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+      "resolvedUrl": "https://njl-admin.nihr.ac.uk/document/download/2002560",
+      "collectedAtUtc": "2026-10-11T16:42:59.881160+00:00",
+      "status": 200,
+      "bytes": 30102858,
+      "sha256": "0fd474c41671e4d26e89f25335a44ab7a80f9c4035dfd91deea2eb9ce0158e2b",
+      "bodyFile": "../raw/c15-start2014-nihr-relatorio-pdf.pdf"
+    },
+    "evidencias/2026-10-11/n15c-start-originais/c15-start2014-nihr-resumo-pdf.evidencia.json": {
+      "id": "c15-start2014-nihr-resumo-pdf",
+      "url": "https://njl-admin.nihr.ac.uk/document/download/2002673",
+      "resolvedUrl": "https://njl-admin.nihr.ac.uk/document/download/2002673",
+      "collectedAtUtc": "2026-10-11T16:43:53.105028+00:00",
+      "status": 200,
+      "bytes": 132124,
+      "sha256": "256e73410597a592b8a99b0fb96a024190deb89bd746c6591b67ca8a0274402b",
+      "bodyFile": "../raw/c15-start2014-nihr-resumo-pdf.pdf"
+    },
+    "evidencias/2026-10-07/n15c-programa/c15-revieew-protocolo-pdf.evidencia.json": {
+      "id": "c15-revieew-protocolo-pdf",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12891-023-06584-7.pdf",
+      "resolvedUrl": "https://link.springer.com/content/pdf/10.1186/s12891-023-06584-7.pdf?error=cookies_not_supported&code=34e9c623-6463-4025-8ed5-0816a9f592d1",
+      "collectedAtUtc": "2026-10-07T11:06:07.146875+00:00",
+      "status": 200,
+      "bytes": 1829904,
+      "sha256": "470d1afff362415d77ceae7eea3ca050f65ff2e1474a38981acba3b0df7e7f84",
+      "bodyFile": "../raw/c15-revieew-protocolo-pdf.pdf"
+    },
+    "evidencias/2026-10-07/n15c-programa/c15-revieew-resultados-pdf.evidencia.json": {
+      "id": "c15-revieew-resultados-pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10926-024-10182-2.pdf",
+      "resolvedUrl": "https://link.springer.com/content/pdf/10.1007/s10926-024-10182-2.pdf?error=cookies_not_supported&code=2be9f21b-eeb3-46bd-891a-1a7f04d36f14",
+      "collectedAtUtc": "2026-10-07T11:06:11.953029+00:00",
+      "status": 200,
+      "bytes": 629721,
+      "sha256": "09301ffab7886cefb968b0426dbbbe97ee7243db475b6437dd6912f34a6e5552",
+      "bodyFile": "../raw/c15-revieew-resultados-pdf.pdf"
+    },
+    "evidencias/2026-10-07/n15c-revieew-suplementos/c15-revieew-si2-tif.evidencia.json": {
+      "id": "c15-revieew-si2-tif",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM2_ESM.tif",
+      "resolvedUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM2_ESM.tif",
+      "collectedAtUtc": "2026-10-07T23:04:33.052872+00:00",
+      "status": 200,
+      "bytes": 1731296,
+      "sha256": "8e95f9d71f75d192343ece52d617d453ea38cdc529a8de52aa32cc3f9be779a2",
+      "bodyFile": "../raw/c15-revieew-si2-tif.tif"
+    },
+    "evidencias/2026-10-07/n15c-revieew-suplementos/c15-revieew-si3-tif.evidencia.json": {
+      "id": "c15-revieew-si3-tif",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM3_ESM.tif",
+      "resolvedUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10926-024-10182-2/MediaObjects/10926_2024_10182_MOESM3_ESM.tif",
+      "collectedAtUtc": "2026-10-07T23:04:33.633923+00:00",
+      "status": 200,
+      "bytes": 192234,
+      "sha256": "e73e6051fd8c658c496cbcee646c0a3fb3a4f424214f0af314424f7331b1e690",
+      "bodyFile": "../raw/c15-revieew-si3-tif.tif"
+    },
+    "evidencias/2026-10-07/n15c-ufpb/c15-revieew-professor-ehu.evidencia.json": {
+      "id": "c15-revieew-professor-ehu",
+      "url": "https://www.ehu.eus/es/web/graduak/grado-fisioterapia/profesorado?p_idp=762388&p_redirect=fichaPDI",
+      "resolvedUrl": "https://www.ehu.eus/es/web/graduak/grado-fisioterapia/profesorado?p_idp=762388&p_redirect=fichaPDI",
+      "collectedAtUtc": "2026-10-07T11:25:45.545689+00:00",
+      "status": 200,
+      "bytes": 74249,
+      "sha256": "e4752977b15260092c09209d73c1802a5a5d333148448b07532e870a7ab316ed",
+      "bodyFile": "../raw/c15-revieew-professor-ehu.html"
+    },
+    "evidencias/2026-10-07/n15c-teses-seguimento/c15-revieew-seguimento-europepmc.evidencia.json": {
+      "id": "c15-revieew-seguimento-europepmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40561221%20AND%20SRC:MED&format=json&resultType=core",
+      "collectedAtUtc": "2026-10-08T02:48:00.506277+00:00",
+      "status": 200,
+      "bytes": 7063,
+      "sha256": "cc4be19981269045cf794a6e4c7a3f0836b3823d54d5f5be110103de745a5127",
+      "bodyFile": "../raw/c15-revieew-seguimento-europepmc.json"
+    },
+    "evidencias/2026-10-07/n15c-teses-seguimento/c15-revieew-aderencia2026-html.evidencia.json": {
+      "id": "c15-revieew-aderencia2026-html",
+      "url": "https://link.springer.com/article/10.1007/s10926-026-10449-w",
+      "resolvedUrl": "https://link.springer.com/article/10.1007/s10926-026-10449-w?error=cookies_not_supported&code=5e1b46ca-3cfa-4255-96d0-7e30dfcee835",
+      "collectedAtUtc": "2026-10-08T03:29:36.034073+00:00",
+      "status": 200,
+      "bytes": 460509,
+      "sha256": "f160c6e2ad89cace12847c2c76d324a50a1dd94f9ba2b951dd67f16a51da0c07",
+      "bodyFile": "../raw/c15-revieew-aderencia2026-html.html"
+    },
+    "evidencias/2026-10-12/cg04-revieew/cg04-revieew-registro-json.evidencia.json": {
+      "id": "cg04-revieew-registro-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT05050526",
+      "collectedAtUtc": "2026-10-12T21:56:28.757405+00:00",
+      "status": 200,
+      "bytes": 16475,
+      "sha256": "607fc23cf10d434bebb03565fbb1fbdd791bc147b7e1967d52b23c5660ea8b39",
+      "bodyFile": "../raw/cg04-revieew-registro-json.json"
+    },
+    "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-pdf.evidencia.json": {
+      "id": "c15-pilates-pediatrico2019-tese-pdf",
+      "url": "https://i-rep.emu.edu.tr/xmlui/bitstream/handle/11129/5008/Sent%C3%BCrkyazgi.pdf?sequence=1",
+      "resolvedUrl": "https://i-rep.emu.edu.tr/server/api/core/bitstreams/098905a6-b311-4636-bc4b-6e84eb62efac/content",
+      "collectedAtUtc": "2026-10-11T23:02:06.856950+00:00",
+      "status": 200,
+      "bytes": 1666818,
+      "sha256": "8dee1ddceb042df29acea795e4f7964505bcc5bb8f9ecb483359b5ae555e74a9",
+      "bodyFile": "../raw/c15-pilates-pediatrico2019-tese-pdf.pdf"
+    },
+    "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-tese-html.evidencia.json": {
+      "id": "c15-pilates-pediatrico2019-tese-html",
+      "url": "https://i-rep.emu.edu.tr/xmlui/handle/11129/5008",
+      "resolvedUrl": "https://i-rep.emu.edu.tr/items/2736ad23-26de-4244-8564-143df8c135e9",
+      "collectedAtUtc": "2026-10-11T23:02:13.636610+00:00",
+      "status": 200,
+      "bytes": 513537,
+      "sha256": "e2c4397266e921c2b9bd7d69836cee13f791d94a8db74f5b0fe4696db57e9336",
+      "bodyFile": "../raw/c15-pilates-pediatrico2019-tese-html.html"
+    },
+    "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2021-registro-json.evidencia.json": {
+      "id": "c15-pilates-pediatrico2021-registro-json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT03729466",
+      "resolvedUrl": "https://clinicaltrials.gov/api/v2/studies/NCT03729466",
+      "collectedAtUtc": "2026-10-11T23:00:45.274686+00:00",
+      "status": 200,
+      "bytes": 7121,
+      "sha256": "2e5f7b2a9cbecf79ae1f0857a9ed30318729f99eeedef7d4d4e9419c89ad5892",
+      "bodyFile": "../raw/c15-pilates-pediatrico2021-registro-json.json"
+    },
+    "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-kirmizigil-bio-pdf.evidencia.json": {
+      "id": "c15-kirmizigil-bio-pdf",
+      "url": "https://www.emu.edu.tr/stafffile/WHFQEKX.pdf",
+      "resolvedUrl": "https://www.emu.edu.tr/stafffile/WHFQEKX.pdf",
+      "collectedAtUtc": "2026-10-11T23:02:19.832632+00:00",
+      "status": 200,
+      "bytes": 760593,
+      "sha256": "76c29e5ff21e8f4aa62047da361cc0ef4fbe1298babbed9f244c0af6b917f789",
+      "bodyFile": "../raw/c15-kirmizigil-bio-pdf.pdf"
+    },
+    "evidencias/2026-10-11/n15c-pilates-cuidadores/c15-pilates-pediatrico2019-licenca-txt.evidencia.json": {
+      "id": "c15-pilates-pediatrico2019-licenca-txt",
+      "url": "https://i-rep.emu.edu.tr/server/api/core/bitstreams/59e10eae-8351-4dc2-a8cc-c864be6f94c1/content",
+      "resolvedUrl": "https://i-rep.emu.edu.tr/server/api/core/bitstreams/59e10eae-8351-4dc2-a8cc-c864be6f94c1/content",
+      "collectedAtUtc": "2026-10-11T23:11:14.349522+00:00",
+      "status": 200,
+      "bytes": 1958,
+      "sha256": "05a09de9f209e6724e926f52feea94641a83dd86f1f63efd895e5a5021aaa92a",
+      "bodyFile": "../raw/c15-pilates-pediatrico2019-licenca-txt.txt"
+    },
+    "evidencias/2026-10-11/n15c-pilates-2021/c15-pilates-pediatrico2021-core-json.evidencia.json": {
+      "id": "c15-pilates-pediatrico2021-core-json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33709771%20AND%20SRC:MED&format=json&resultType=core",
+      "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:33709771%20AND%20SRC:MED&format=json&resultType=core",
+      "collectedAtUtc": "2026-10-11T23:18:24.101950+00:00",
+      "status": 200,
+      "bytes": 4756,
+      "sha256": "3fc1aea56fa3dc2ceb1210f1ae6cfb8e411c74b0991ae038034b4386e41f6f03",
+      "bodyFile": "../raw/c15-pilates-pediatrico2021-core-json.json"
+    },
+    "evidencias/2026-10-12/cg05-pilates/cg05-cer-crossref-json.evidencia.json": {
+      "id": "cg05-cer-crossref-json",
+      "url": "https://api.crossref.org/works/10.2217/cer-2020-0108",
+      "resolvedUrl": "https://api.crossref.org/works/10.2217/cer-2020-0108",
+      "collectedAtUtc": "2026-10-13T00:53:03.694445+00:00",
+      "status": 200,
+      "bytes": 40381,
+      "sha256": "582145315d44fee8ac20a0026f828793428f8e0211369450ed0b5773e8a7ba40",
+      "bodyFile": "../raw/cg05-cer-crossref-json.json"
+    }
+  },
+  "catalogueSha256": "ae76ce79a2d5307b80d3412e00130a8f2ff19497ea9689ea3efc7f2848d79abc"
+}

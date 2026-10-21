@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-16",
+  "activeNiche": "N18-I",
+  "newFamilies": [
+    {
+      "id": "PR234",
+      "name": "Gerofit — coleção pública e entrega profissional",
+      "status": "referencia",
+      "publisher": "U.S. Department of Veterans Affairs; Katherine Hall PhD, Ryan DeRose DPT, Tyara Mason MS identificados como responsáveis no site",
+      "urls": [
+        "https://www.va.gov/geriatrics/gerofit/gerofit_Home.asp"
+      ],
+      "evidence": "n18r-gerofit.evidencia.json",
+      "finding": "Página recebida identifica prescrição individual, profissionais e recursos/vídeos públicos; não entrega manual completo de máquinas ou licença de vídeos.",
+      "rights": "Nenhum grant de reutilização comercial dos vídeos individuais demonstrado. Não assumir domínio público de todo ativoVA ou equivalência a serviço português.",
+      "next": "Não extrair vídeos nem contactar; só considerar componente se instrução, autoria, dose e direitos forem demonstrados por fonte publicada."
+    },
+    {
+      "id": "PR235",
+      "name": "Sayers e Gibson2012 — treino de potência/força em máquinas",
+      "status": "condicional",
+      "publisher": "Stephen P.Sayers e Kyle Gibson / Journal of Aging Research",
+      "urls": [
+        "https://doi.org/10.1155/2012/426278",
+        "https://downloads.hindawi.com/journals/jar/2012/426278.pdf",
+        "https://healthsciences.missouri.edu/directory/personnel/stephen-sayers/"
+      ],
+      "evidence": "n18r-sayers-2012-pdf.evidencia.json",
+      "finding": "Artigo identificado em índice primário e perfil institucional recebido confirmaPhDemExerciseScience deSayers. PDF403,corpo integral não recebido; não chamar instruções conferidas.",
+      "rights": "CCAttribution declarada na página doPDFindexada, sem versão inferida; falta corpo/creditos de todos os ativos. Perfil institucional não licencia fotos/mídia.",
+      "next": "Manter pendente; não repetir403por outra rota. Não usar resumo/índice como manual recebido."
+    },
+    {
+      "id": "PR236",
+      "name": "Sousa etal2025 — técnica inicial e velocidade em chest/legpress",
+      "status": "referencia",
+      "publisher": "Tiago Sousa, Ana Pereira, Diogo Luís Marques, Henrique Pereira Neiva, David Rodríguez-Rosell, Daniel Almeida Marinho, Mário Cardoso Marques / BMC",
+      "urls": [
+        "https://doi.org/10.1186/s13102-025-01326-9"
+      ],
+      "evidence": "n18r-sousa-2025.evidencia.json",
+      "finding": "Corpo recebido:18pessoas de residências,79±10anos, pelo menos6meses préviosLP/CP; duas técnicas, modelosL050/L070BH. Não evidência de iniciação; desenho compara velocidade, não eficácia geral de programa.",
+      "rights": "CCBY4com ressalvas de terceiros declaradas no corpo; imagem de pessoa não recebida/adotada. Não elimina população/apoio.",
+      "next": "Útil para não confundir técnica inicial, testagem e prescrição; não transferir dose para principiante."
+    },
+    {
+      "id": "PR237",
+      "name": "bestform2023 — protocolo de treino em máquinas em residências",
+      "status": "condicional",
+      "publisher": "M.Siegrist, N.Schaller, M.Weiß, J.Isaak, V.Schmid, E.Köppel, M.Weichenberger, E.Mende, B.Haller, M.Halle / TUM/BMCGeriatrics",
+      "urls": [
+        "https://doi.org/10.1186/s12877-023-04176-7"
+      ],
+      "evidence": "n18r-bestform-2023.evidencia.json",
+      "finding": "Protocolo publicado recebido:6meses,2×/semana45–60min, máquinasHUR, profissionais e familiarização. ZIPpublicado contém2formuláriosCRF; nenhum manual de treino. Protocolo não resultado doensaio.",
+      "rights": "CCBY4do protocolo2023observada, diferente do piloto2022NCpreservado. Sem grant presumido para manual do fabricante, fotos ou outra versão.",
+      "next": "Ainda faltam comandos/ajustes/dose integral por variante selecionada. Não substituir com formulários/nomes de aparelhos ou contratar estrutura."
+    },
+    {
+      "id": "PR238",
+      "name": "Macaulay etal2021 — força em máquinas e cognição, protocoloS1",
+      "status": "condicional",
+      "publisher": "Timothy R.Macaulay, Judy Pa, Jason J.Kutch, Christianne J.Lane, Dominique Duncan, Lirong Yan, E.Todd Schroeder / USC/PLOS",
+      "urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255018",
+        "https://doi.org/10.1371/journal.pone.0255018.s006"
+      ],
+      "evidence": "n18r-macaulay-2021.evidencia.json",
+      "finding": "Artigo eS1DOCXrecebidos. Protocolo identificaMacaulayCSCS eSchroederPhD/diretorCERC; idosos60–80semRTpesado6meses, treino supervisionado12semanas. Ensino de técnica/respiração referido mas comandos de cada máquina ausentes;S1não tutorial.",
+      "rights": "ArtigoCCAttribution com linkBY4; protocoloS1publicado no suplemento vinculado, sem grant estendido a modelos/manuais externos. Não copiar mídia.",
+      "next": "Conferir fases executadas versus planejadas sem fundir: S1refere3–5séries/6–4reps e60sdescanso; tabela2final não foi recebida em formato legível nesta rodada. Instruções/ajustes das7variantes continuam faltando."
+    }
+  ],
+  "sourcePolicy": "Nenhum corpo bloqueado foi repetido por rota alternativa. Índice/referência não é texto integral. Sem contacto, contas, vídeos ou execução de conteúdo externo.",
+  "webOnlyFailures": [
+    {
+      "source": "PMC4195722",
+      "observed": "reCAPTCHA",
+      "fullBodyReceived": false,
+      "action": "não repetir nem obter espelho para contornar"
+    },
+    {
+      "source": "MDPI10.3390/ijerph17207557",
+      "observed": "429",
+      "action": "não repetir"
+    },
+    {
+      "source": "PeerJ7533",
+      "observed": "403",
+      "action": "não repetir"
+    }
+  ],
+  "discardedReference": {
+    "mistake": "URLPLOScomDOI0103537aberta antes de confirmar identidade",
+    "actualTitle": "Specific Learning Disorder: Prevalence and Gender Differences",
+    "usedForExerciseEvidence": false,
+    "correctExerciseDOIIdentified": "10.1371/journal.pone.0110350",
+    "noPublisherDownloadAfterPMCChallenge": true
+  },
+  "newEssentialInstructionsApproved": 0,
+  "researchClosed": false,
+  "additionalFamilies": [
+    {
+      "id": "PR239",
+      "name": "Varjan etal2024 — Centre of Active Ageing",
+      "publisher": "Mikuláš Varjan, Ľubica Žiška Böhmerová, Ľudmila Oreská, Peter Schickhofer, Dušan Hamar / Comenius University/Frontiers",
+      "status": "condicional",
+      "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1386537/full",
+      "finding": "Corpo recebido:34mulheres65–75. Resumo chama ativas; métodos2.1exigem ausência de experiência/treino regular e de desporto ativo≥3anos. Contradição preservada, não excluir como treinadas por uma palavra do resumo. ManualCAAreferido não recebido.",
+      "rights": "CCBYdo artigo; não presumir grant do manual externo ou figuraBioRender. Nenhuma figura/mídia recebida/adotada."
+    },
+    {
+      "id": "PR240",
+      "name": "Hamar etal2022 — manual de atividade física e nutrição de idosos, registro",
+      "publisher": "Dušan Hamar, Milan Sedliak, Veronika Tirpáková, Matej Vajda / Comenius University; catálogoSlovenská národná knižnica",
+      "status": "referencia",
+      "url": "https://katalog.snk.sk/vufind/Record/1044655?sid=6747083",
+      "finding": "Registro primário recebido:ISBN9788022354639, primeiraedição2022,71páginas declaradas. Livro não recebido. Não comprovado que é exatamente o manualCAA citado emVarjan2024.",
+      "rights": "Catálogo e financiamento não licenciam conteúdo do livro; grant de adaptação comercial não identificado."
+    },
+    {
+      "id": "PR241",
+      "name": "HEPA Health and Fitness Assessment for Seniors — Educational Modules Manual IO2",
+      "publisher": "Projeto Erasmus+622166-EPP-1-2020-1-HR-SPO-SCP / repositório oficial europeu",
+      "status": "referencia",
+      "url": "https://ec.europa.eu/programmes/erasmus-plus/project-result-content/49f2f6b3-447f-449e-8ec3-e839d219a0bc/Educational_Modules_Manual__IO2__-_English.pdf",
+      "finding": "Coleta local falhou validação do certificado, sem corpo/hashPDF. Leitorwebposteriormente exibiu texto doPDF117pnoURLoficial, comTLSnormal e sem desativar validação; trechos selecionados lidos, screenshotsCacheMiss. Não tutorial de máquinas demonstrado; grant/autorindividual pendentes.",
+      "rights": "Licença do conteúdo ainda não lida. FinanciamentoErasmus+não prova por si grant comercial."
+    },
+    {
+      "id": "PR242",
+      "name": "Pohybové programy pre seniorov — pista universitária2025",
+      "publisher": "UPJŠ/Unibook, identidade completa do corpo ainda não conferida",
+      "status": "referencia",
+      "url": "https://unibook.upjs.sk/img/cms/2025/pohybove-programy-pre-seniorov.pdf",
+      "finding": "Pista de manual universitário identificada em pesquisa de referências; conexão expirou. Corpo não recebido; autores, licença, variantes e dose não conferidos.",
+      "rights": "Nenhum grant inferido da hospedagem universitária. Não obter cópia de terceiro ou contornar falha."
+    }
+  ],
+  "localCollectionSummary": {
+    "gets": 12,
+    "http200": 9,
+    "http403": 1,
+    "tlsErrors": 1,
+    "connectionTimeouts": 1,
+    "bodyHashes": 10
+  },
+  "newIndependentFreeWeightFactSheets": 3,
+  "nextFreshLeads": [
+    "Somente com nova pista pública legítima: manualCAApublicado/identidade/autor/licença e comandos específicos, sem contato ou grant presumido.",
+    "Não repetir PDFSayers403, MDPI429, PeerJ403, PMCdesafio, TLSHEPAoutimeoutUPJSpara recuperar contexto.",
+    "FichasNIA2018depesos livres são conteúdo concreto, mas não fecham o conjunto essencial de máquinas."
+  ],
+  "additionalReadingClarifications": {
+    "caa": "Não traduzir bi-weekly para frequência certa sem esclarecimento. Resumoativo versus métodossemexperiência registrado; não rejeição automática por atividadeprévia.",
+    "hepa": "Mudança de ferramenta para leitura HTTPSnormal resolve acesso textual, sem alterartruststore/bypassTLSou solicitar contato. Falha local permanece, não declarar novoGET200/corpo-hash ou117páginas inteiras lidas."
+  },
+  "webOnlyPrimaryLeadProMuscle": {
+    "recordedAt": "2026-10-16",
+    "catalogueFamilyAdded": false,
+    "primaryUrls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6045872/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7681212/",
+      "https://frontend.prod.wur.nl/nl/onderwijs/voor-professionals/opleidingen-en-cursussen/promuscle-de-praktijk",
+      "https://www.wur.nl/nl/show/informatie-voor-professionals-die-promuscle-willen-aanbieden.htm"
+    ],
+    "extent": "Descoberta/leitura de resultados indexados primários da pesquisa e WUR; sem coleta local dos artigos, manuais ou inscrição. Não abrir/repetir desafiosPMC.",
+    "findings": [
+      "ProMuscleinPractice: intervenção combinada exercício/dieta, suporte intensivo12semanas econtinuação12semanas, fisioterapeutas/dietistas e máquinas. Não isolar efeito doexercício ouadotar25gdeproteína/refeição como metadoapp.",
+      "Métodos citam manuais entregues a profissionais; os manuais não foram recebidos.",
+      "WURanuncia curso12/11/2026de1dia a€495comlicençaProMuscletrainer epreço diferentepara segunda pessoa; condição descrita pela universidade, semcontratar oumedir custo total.",
+      "Oferta do curso não prova que todo material científico seja pago, nem grant gratuito deincorporação dos manuais."
+    ],
+    "essentialMachineInstructionsObtained": false,
+    "contactOrAccountOrPayment": false,
+    "researchClosed": false
+  },
+  "latestIncrement": "leitura-maquinas-2026-10-16.json",
+  "latestMachineFactSheet": "ficha-legpress-deanza.json",
+  "priorEntriesAreEarlierSnapshot": true
+}

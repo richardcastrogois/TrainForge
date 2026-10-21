@@ -1,0 +1,81 @@
+{
+  "id": "TF-WALK-COMPOSITION-DRAFT-01",
+  "date": "2026-10-15",
+  "status": "rascunho_de_pesquisa_para_revisao",
+  "originalProgramme": false,
+  "compiledBy": "TrainForge, com apoio do agente na organizacao; criadores humanos creditados por modulo",
+  "clinicalTrialOfThisComposition": false,
+  "sourceProgramme": "WK-PACEUP-12",
+  "modules": [
+    {
+      "id": "WALK-PREP",
+      "role": "preparacao",
+      "sourceIds": [
+        "PR140"
+      ],
+      "locator": "ManualNHLBI2008PDF94-100",
+      "proposedTextPt": "Escolha um percurso desimpedido, com piso adequado e espaço para caminhar. Use calçado confortável. Confirme se precisa de avaliação ou apoio antes de começar.",
+      "basis": "Rascunho editorial do preparo do manual comunitario; manter triagem e ensino exigidos, nao triagem automatica."
+    },
+    {
+      "id": "WALK-WARM5",
+      "role": "aquecimento",
+      "sourceIds": [
+        "PR140"
+      ],
+      "locator": "ManualNHLBI2008PDF100/117",
+      "durationSeconds": 300,
+      "proposedTextPt": "Comece a caminhar devagar e aumente o ritmo gradualmente.",
+      "basis": "Fase5min da fonte comunitaria; nao parte demonstrada doPACE-UP."
+    },
+    {
+      "id": "WALK-MAIN-PACE",
+      "role": "parte_principal",
+      "sourceIds": [
+        "PR141"
+      ],
+      "locator": "Protocolo2013PDF10/11",
+      "proposedTextPt": "Caminhe num ritmo que aumente a respiração e permita conversar. Registe os passos e compare com a sua média inicial e a meta da fase.",
+      "doseReference": "WK-PACEUP-12/phases",
+      "basis": "Incrementos relativos da fonte; nao passosminimos universais."
+    },
+    {
+      "id": "WALK-COOL5",
+      "role": "encerramento",
+      "sourceIds": [
+        "PR140"
+      ],
+      "locator": "ManualNHLBI2008PDF100/117",
+      "durationSeconds": 300,
+      "proposedTextPt": "Reduza o ritmo aos poucos durante os últimos cinco minutos.",
+      "basis": "Fase5min da fonte comunitaria; nao parte demonstrada doPACE-UP."
+    },
+    {
+      "id": "WALK-RECORD",
+      "role": "registo_e_revisao",
+      "sourceIds": [
+        "PR141"
+      ],
+      "locator": "Protocolo2013PDF10/11; artigo2017Methods",
+      "proposedTextPt": "Registe o que fez, a dificuldade e as barreiras encontradas. Reveja a meta com o apoio previsto no seu percurso antes de avançar.",
+      "basis": "Novoformulario deve ser redigido paraTrainForge; nao copia doPDF2025."
+    }
+  ],
+  "timeAccounting": "Os10min lentos sao adicao editorial de outra fonte. Nao contar automaticamente como15/30minmoderados PACEUP nem como passos adicionais alcancados; duracaototal planejada25/40min seesta composicaofor escolhida.",
+  "compatibility": "Ambos tratam marchaambulatoria de intensidademoderada/preparo/retorno; compatibilidade documental nao provadoseideal ou eficacia da mistura. Exige revisao do material final e apoioreal.",
+  "alternativeWithoutMixing": "Pode exibir algoritmo original e referencias separadas, sem adicionar fases ou atribuir nova sequencia aos autores.",
+  "rights": "Algoritmo e textoaberto do protocolo2013CCBY2.0 + fatos/rascunhos das orientacoes NHLBI2008. Nenhum layout, diagrama, formularioMovingMedicine, foto ou video selecionado. Conferir expressao final/localizacao antesdepublicar.",
+  "publicationGates": [
+    "Revisao profissional da composicao, elegibilidade e contagem de tempo",
+    "Revisao humana ptPT/acessibilidade/compreensao",
+    "Condicoes reais de apoio e ferramenta de medicao",
+    "Conferencia final de direitos por ativo",
+    "Implementacao e teste tecnico no app"
+  ],
+  "releaseApproved": false,
+  "appImplemented": false,
+  "selectedSourceResponsibilities": {
+    "PR141": "HarrisGP/LeeDavidGP, co-design e apoio da equipe documentados",
+    "PR140": "Autoria institucionalNHLBI; coordenacaoenfermagemMatildeAlvaradoRN/MSN e contribuicao/revisaomedicaCandiceWongMD/PhD creditadas; nao autoriaindividual da tabela presumida"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "n40-nutrition5k-evaluation-script",
+  "url": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/scripts/compute_eval_statistics.py",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-16T00:39:25.021873+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/json,text/html,text/plain",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Script apontado no README PR212 já recebido, somente leitura do cálculo de MAE/denominador e formato de entrada. Não executar código baixado nem importar modelos/dataset.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/main/scripts/compute_eval_statistics.py",
+  "contentType": "text/plain; charset=utf-8",
+  "retryAfter": null,
+  "bytes": 2276,
+  "bodyFile": "../raw/n40-nutrition5k-evaluation-script.txt",
+  "sha256": "e3711e8f4ce82c8a3e8d637386f515b52030840b2879984bb6600fb126dd12ee"
+}

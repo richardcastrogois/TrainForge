@@ -1,0 +1,23 @@
+{
+  "id": "c15-montero2020-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML",
+  "method": "GET",
+  "collectedAtUtc": "2026-10-07T22:50:43.135941+00:00",
+  "requestHeaders": {
+    "User-Agent": "TrainForgeResearch/0.8 (+https://github.com/richardcastrogois/TrainForge; public-source research)",
+    "Accept": "application/xml",
+    "Accept-Encoding": "identity"
+  },
+  "status": 200,
+  "use": "research_only",
+  "purpose": "Ensaio original de exercicio proprio de cuidadoras familiares em centro de atencao primaria: verificar instrucoes, materiais, suporte, resultados e documento externo anunciado.",
+  "maxBytes": 2097152,
+  "sizePolicy": "bounded_non_pdf",
+  "client": "urllib; default TLS; timeout 25s per blocking operation; streaming; max 2 MiB; no retries",
+  "resolvedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7601365/fullTextXML",
+  "contentType": "application/xml",
+  "retryAfter": null,
+  "bytes": 239623,
+  "bodyFile": "../raw/c15-montero2020-xml.xml",
+  "sha256": "48acbc37da1e032ad585285c255c279806f0840125a83ca1a3c98c1a7ce716f8"
+}

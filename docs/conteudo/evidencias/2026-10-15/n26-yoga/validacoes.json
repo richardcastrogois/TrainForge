@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "networkReceiptCount": 5,
+  "http200": 5,
+  "verifiedBodyHashes": 5,
+  "visuallyReviewedPdfPages": 12,
+  "receipts": [
+    {
+      "receipt": "n26-nccih-safety.evidencia.json",
+      "status": 200,
+      "hashValid": true
+    },
+    {
+      "receipt": "n26-va-chair-pdf.evidencia.json",
+      "status": 200,
+      "hashValid": true
+    },
+    {
+      "receipt": "n26-va-copyright.evidencia.json",
+      "status": 200,
+      "hashValid": true
+    },
+    {
+      "receipt": "n26-va-evaluation2017.evidencia.json",
+      "status": 200,
+      "hashValid": true
+    },
+    {
+      "receipt": "n26-va-program-index.evidencia.json",
+      "status": 200,
+      "hashValid": true
+    }
+  ],
+  "selectionChecks": {
+    "threePosesPlusStartAndFinish": true,
+    "breathingCountsNotSeconds": true,
+    "catCowTotalFourCycles": true,
+    "noTotalDurationOrCalendarInvented": true,
+    "noPhotographsImported": true,
+    "n15RemainsPaused": true,
+    "n21NotStarted": true
+  },
+  "passed": true
+}

@@ -1,0 +1,8 @@
+{
+  "date":"2026-10-08",
+  "scope":"Somente N15-C: primeira leitura primaria de exercicio breve para cuidadores profissionais. Nao protocolo generico renomeado, nao ensaio randomizado2015 nem permissao comercial pelo depositoPMC.",
+  "requests":[
+    {"id":"c15-one-stretch2015-xml","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4727733/fullTextXML","extension":"xml","accept":"application/xml","purpose":"Artigo primario2015: instrucaoFig1 e manual/ensino porortopedista; separar comparacao nao randomizada, apoio de grupo e direitos restritos."},
+    {"id":"c15-one-stretch2019-resumo-json","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30130991%20AND%20SRC:MED&format=json","extension":"json","purpose":"Resumo primario do ensaio multicentrico de enfermeiros; nao texto integral, figura, tecnica ou direitos recebidos pelo resumo."}
+  ]
+}
