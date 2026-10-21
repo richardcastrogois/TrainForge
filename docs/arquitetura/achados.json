@@ -1,0 +1,112 @@
+[
+  {
+    "id": "A01",
+    "priority": "Alta",
+    "title": "Corpos completos em logs Flutter",
+    "evidence": "lib/core/http/app_dio.dart",
+    "line": 49,
+    "detail": "Tokens e dados físicos podem passar por logs; não houve teste de exploração.",
+    "story": "V1-021",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A02",
+    "priority": "Alta",
+    "title": "Geradores IA e manual não são catálogo humano",
+    "evidence": "backend:src/routes/mobile-onboarding.ts",
+    "line": 152,
+    "detail": "O builder manual também escolhe treino/dose; retirar do caminho V1.",
+    "story": "V1-015",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A03",
+    "priority": "Alta",
+    "title": "Dose de academia obrigatória no contrato",
+    "evidence": "lib/features/workouts/domain/workout_day_detail.dart",
+    "line": 2,
+    "detail": "sets/reps/rest não representam todos os componentes pesquisados.",
+    "story": "V1-004",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A04",
+    "priority": "Alta",
+    "title": "Migration final remove três índices parciais",
+    "evidence": "backend:prisma/migrations/20260321144259_partialunique/migration.sql",
+    "line": 1,
+    "detail": "Rever invariantes e concorrência; não restaurar um refresh por usuário sem desenho multidevice.",
+    "story": "V1-010",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A05",
+    "priority": "Alta",
+    "title": "Refresh e revogação incompletos no Flutter",
+    "evidence": "lib/features/auth/data/auth_repository.dart",
+    "line": 42,
+    "detail": "API fornece refresh, mas cliente guarda acesso e encerra sessão localmente.",
+    "story": "V1-012",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A06",
+    "priority": "Alta",
+    "title": "Identidade e assinatura Android de desenvolvimento",
+    "evidence": "android/app/build.gradle.kts",
+    "line": 9,
+    "detail": "com.example e signing debug em release não bastam para a entrega.",
+    "story": "V1-034",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A07",
+    "priority": "Média",
+    "title": "Loopback fixo e portas divergentes",
+    "evidence": "lib/core/config/app_config.dart",
+    "line": 3,
+    "detail": "App usa 127.0.0.1:8081; backend padrão8080; URL emulador/staging deve ser configurável.",
+    "story": "V1-021",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A08",
+    "priority": "Alta",
+    "title": "Rotação refresh precisa de teste concorrente",
+    "evidence": "backend:src/routes/mobile-auth.ts",
+    "line": 210,
+    "detail": "Leitura de validade antes da transação e update sem condição de revokedAt: avaliar double use, sem afirmar exploração observada.",
+    "story": "V1-012",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A09",
+    "priority": "Média",
+    "title": "Identidade móvel vinculada por e-mail",
+    "evidence": "backend:src/routes/mobile-auth.ts",
+    "line": 91,
+    "detail": "Rever issuer+sub e regras explícitas de associação de contas.",
+    "story": "V1-011",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A10",
+    "priority": "Alta",
+    "title": "Chave do rate limit usa forwarded header",
+    "evidence": "backend:src/index.ts",
+    "line": 133,
+    "detail": "Confiar apenas em proxy configurado e testar spoof; nenhuma implantação foi atacada.",
+    "story": "V1-013",
+    "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A11",
+    "priority": "Média",
+    "title": "Resumo e histórico exigem semântica por ocorrência",
+    "evidence": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+    "line": 1,
+    "detail": "Conclusão antiga e histórico do plano não devem bloquear próxima data; rever UI e API.",
+    "story": "V1-017",
+    "status": "aberto — inspeção estática"
+  }
+]

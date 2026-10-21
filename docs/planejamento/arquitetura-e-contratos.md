@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](../README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Arquitetura, persistência e contratos
 
 Base de 17/09/2026, ampliada em 24/09/2026 para [R01–R18](README.md). Direção proposta; não é arquitetura aprovada nem contrato já implementado. O estado atual está na [documentação técnica](../../documentacao-tecnica.md).

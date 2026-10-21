@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>TrainForge · Projeto vivo</title>
+  <link rel="stylesheet" href="/painel.css">
+  <script src="/painel.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#workspace">Pular para o conteúdo</a>
+<header>
+  <div class="brand"><span class="mark" aria-hidden="true">TF</span><div><strong>TrainForge</strong><span class="muted">Projeto vivo / V1</span></div></div>
+  <div class="connection"><span id="connection">Conectando ao inventário local…</span><button id="refresh">Atualizar agora</button></div>
+</header>
+<main>
+  <section class="intro">
+    <div><p class="eyebrow">DO CONTEÚDO PESQUISADO AO APLICATIVO</p><h1>Veja como o projeto se conecta.</h1><p>Explore o código atual, o caminho planejado e as tarefas até o primeiro APK.<br>Android primeiro. Android e iOS no produto.</p></div>
+    <div class="next"><span>PRÓXIMA HISTÓRIA</span><strong id="next">—</strong><small>Não iniciada · confira as dependências</small></div>
+  </section>
+  <div id="error" class="error" role="alert" hidden></div>
+  <section id="metrics" class="metrics" aria-label="Cobertura do inventário"></section>
+  <section class="surface" id="workspace">
+    <div class="toolbar">
+      <nav aria-label="Visões do projeto" id="tabs">
+        <button data-tab="map" aria-pressed="true">Arquitetura</button>
+        <button data-tab="screens" aria-pressed="false">Telas e fluxos</button>
+        <button data-tab="http" aria-pressed="false">Chamadas HTTP</button>
+        <button data-tab="db" aria-pressed="false">Banco</button>
+        <button data-tab="backlog" aria-pressed="false">Backlog</button>
+        <button data-tab="findings" aria-pressed="false">Achados</button>
+      </nav>
+      <label class="search">Buscar <input id="search" type="search" placeholder="Tela, rota, história…" autocomplete="off"></label>
+    </div>
+    <div class="view-controls"><div class="segmented" aria-label="Estado da arquitetura"><button id="actual" aria-pressed="true">Atual · detectado</button><button id="planned" aria-pressed="false">Planejado · Go</button></div><span id="context-note"></span></div>
+    <div class="workspace-grid"><section id="content" aria-label="Visualização selecionada"></section><aside id="detail" aria-label="Detalhes da seleção"><h2>Explore uma conexão</h2><p>Selecione um bloco, ligação, rota ou história para entender os dados e a evidência.</p></aside></div>
+  </section>
+  <footer><p id="updated">Aguardando a primeira leitura.</p><p>Detecção estática não comprova execução. Intenção e conclusão de tarefas exigem revisão.</p><p>Iniciar/parar: <code>tools/abrir-painel.ps1</code> · Manual: <code>docs/painel/README.md</code> · Fonte das tarefas: <code>backlog.json</code></p></footer>
+</main>
+</body>
+</html>

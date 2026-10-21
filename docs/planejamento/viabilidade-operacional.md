@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](../README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Viabilidade operacional — mapas, hospedagem e custo
 
 **Revisão de escopo em 24/09/2026:** preservar as evidências operacionais datadas abaixo. A visão atual inclui [R01–R18](README.md); complementar a viabilidade com reconhecimento por imagem, conexão a plataformas/dispositivos, conteúdo visual, planeamento alimentar e manutenção por modalidade. Essas capacidades ainda não foram dimensionadas/testadas. Preços/termos abaixo não foram reconferidos neste incremento. O [balanço da etapa 01](etapa-01-pesquisa.md) registra a cobertura real.

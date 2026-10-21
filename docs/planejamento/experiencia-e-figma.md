@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](../README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Experiência, protótipo e movimento
 
 Base de 17/09/2026, alinhada em 24/09/2026. Escopo detalhado em [ajustes F01–F12](../design/ajustes-visao-integrada.md); nenhuma edição de Figma neste incremento. Especificação proposta para refinamento, não descrição de funções já implementadas.

@@ -1,0 +1,472 @@
+{
+  "status": "PLANEJADO — nenhum serviço Go foi implementado nesta etapa",
+  "nodes": [
+    {
+      "id": "user",
+      "label": "Pessoa",
+      "layer": "Experiência",
+      "description": "Login e ações reais; nenhuma conta fictícia no app entregue.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "ui",
+      "label": "Telas Flutter",
+      "layer": "Flutter",
+      "description": "Entrar, contexto, biblioteca, detalhe, sessão, histórico, alimentação e perfil.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "vm",
+      "label": "ViewModels / controllers",
+      "layer": "Flutter",
+      "description": "Estado de UI, comandos e dependências injetadas; sem acesso direto a SQL.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "repos",
+      "label": "Repositories / DTOs",
+      "layer": "Flutter",
+      "description": "Convertem DTOs em domínio; cache versionado isolado por conta.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "http",
+      "label": "Cliente Dio / sessão",
+      "layer": "Rede",
+      "description": "HTTPS, bearer de curta duração, refresh coordenado, requestId e idempotência.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "auth",
+      "label": "Módulo auth Go",
+      "layer": "API Go",
+      "description": "Valida Google, identidade issuer+sub, tokens rotativos e autorização.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "catalog",
+      "label": "Módulo catalog Go",
+      "layer": "API Go",
+      "description": "Programas/componentes versionados, fontes, apoio e direitos por ativo.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "activity",
+      "label": "Módulo activity Go",
+      "layer": "API Go",
+      "description": "Adesões, ocorrências, eventos reais, histórico e resumos.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "nutrition",
+      "label": "Módulo nutrition Go",
+      "layer": "API Go",
+      "description": "Alimentos versionados e consumo confirmado. Sem prescrição automática.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "pg",
+      "label": "PostgreSQL",
+      "layer": "Dados",
+      "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "manifest",
+      "label": "Manifestos revisados",
+      "layer": "Conteúdo",
+      "description": "Lotes originados da pesquisa com proveniência e allowlist de uso.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "import",
+      "label": "Importador Go",
+      "layer": "Conteúdo",
+      "description": "Dry run e importação idempotente. Fonte externa não consultada a cada toque.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "media",
+      "label": "Mídia autorizada / referência",
+      "layer": "Conteúdo",
+      "description": "Somente ativos com direitos; indisponibilidade explícita.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "obs",
+      "label": "Logs / métricas / traces",
+      "layer": "Operação",
+      "description": "Correlação com requestId; sem token ou dado físico em corpo de log.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "google",
+      "label": "Google Identity",
+      "layer": "Externo",
+      "description": "ID token verificado no backend; client IDs por plataforma/ambiente.",
+      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    }
+  ],
+  "edges": [
+    {
+      "from": "user",
+      "to": "ui",
+      "label": "Ações e dados confirmados",
+      "input": "toques/entrada",
+      "output": "tela e estado real",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "ui",
+      "to": "vm",
+      "label": "Comando tipado",
+      "input": "seleção, data, quantidade",
+      "output": "estado loading/data/empty/error",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "vm",
+      "to": "repos",
+      "label": "Método de domínio",
+      "input": "consulta ou ação validada",
+      "output": "modelo ou falha tipada",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "repos",
+      "to": "http",
+      "label": "DTO versionado",
+      "input": "request da OpenAPI",
+      "output": "response validada / Problem",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "http",
+      "to": "auth",
+      "label": "POST /api/v1/auth/google, refresh, logout",
+      "input": "idToken ou refreshToken",
+      "output": "accessToken + refreshToken + user; logout 204",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "auth",
+      "to": "google",
+      "label": "Verificar assinatura e claims",
+      "input": "token/keys públicos",
+      "output": "iss/sub/aud/exp válidos",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "auth",
+      "to": "pg",
+      "label": "Consulta / transação",
+      "input": "identidade e hash do refresh",
+      "output": "usuário e sessão sem token em claro",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "http",
+      "to": "catalog",
+      "label": "GET /api/v1/catalog/programs/{id}",
+      "input": "filtros/cursor/versionId",
+      "output": "autoria, versão, sessões e requisitos de uso",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "http",
+      "to": "activity",
+      "label": "POST enrollments / sessions / events; GET summary/history",
+      "input": "versionId, occurrenceId, ação real, Idempotency-Key",
+      "output": "IDs, estado persistido e métricas com origem",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "http",
+      "to": "nutrition",
+      "label": "GET foods; POST food-entries",
+      "input": "busca ou foodVersionId + quantidade/unidade",
+      "output": "alimento/preparo e consumo persistido",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "catalog",
+      "to": "pg",
+      "label": "SELECT projetado e paginado",
+      "input": "versão e critérios de disponibilidade",
+      "output": "conteúdo permitido e razões de bloqueio",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "activity",
+      "to": "pg",
+      "label": "Transação por ocorrência",
+      "input": "userId, chave idempotente, evento",
+      "output": "estado/registro confirmado e histórico",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "nutrition",
+      "to": "pg",
+      "label": "Leitura / transação privada",
+      "input": "origem, versão, quantidade",
+      "output": "registro e nutrientes calculáveis, null preservado",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "manifest",
+      "to": "import",
+      "label": "Arquivo validado",
+      "input": "sourceIds, revisão, direitos, hash",
+      "output": "relatório dry run",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "import",
+      "to": "pg",
+      "label": "Transação idempotente",
+      "input": "lote aprovado e versão",
+      "output": "conteúdo persistido; nenhuma história fictícia",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "catalog",
+      "to": "media",
+      "label": "URL de ativo autorizado ou referência",
+      "input": "assetId/version/uso",
+      "output": "mídia permitida ou indisponibilidade",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "auth",
+      "to": "obs",
+      "label": "Telemetria redigida",
+      "input": "requestId/status/latência",
+      "output": "diagnóstico operacional",
+      "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "activity",
+      "to": "obs",
+      "label": "Telemetria redigida",
+      "input": "requestId/status/latência",
+      "output": "diagnóstico operacional",
+      "evidence": "Contrato proposto, não chamada executada."
+    }
+  ],
+  "flows": [
+    {
+      "id": "journey",
+      "title": "Jornada principal planejada",
+      "steps": [
+        "Entrar",
+        "Contexto mínimo",
+        "Biblioteca humana",
+        "Detalhe + origem + requisitos",
+        "Selecionar versão",
+        "Sessão / consulta permitida",
+        "Registrar realizado",
+        "Hoje / histórico"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Alimentação planejada",
+      "steps": [
+        "Hoje",
+        "Alimentação",
+        "Buscar fonte real",
+        "Confirmar preparo e quantidade",
+        "Registrar consumo",
+        "Consultar / editar histórico"
+      ]
+    },
+    {
+      "id": "blocked",
+      "title": "Conteúdo sem cobertura",
+      "steps": [
+        "Detalhe",
+        "Requisito ou licença pendente",
+        "Motivo explícito",
+        "Consultar referência quando permitido / voltar"
+      ]
+    }
+  ],
+  "contracts": [
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/google",
+      "input": "{idToken} real Google",
+      "output": "200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/refresh",
+      "input": "{refreshToken}",
+      "output": "200 rotação atômica;401 inválido/reuso; concorrência tem regra por família"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "input": "{refreshToken}",
+      "output": "204 revogado idempotentemente"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/bootstrap",
+      "input": "Bearer, data/fuso se exigidos pelo resumo",
+      "output": "200 usuário, configuração mínima, contexto e resumo permitido; sem todos os catálogos/históricos"
+    },
+    {
+      "method": "GET/PATCH",
+      "path": "/api/v1/me",
+      "input": "PATCH somente campos pessoais necessários/permitidos",
+      "output": "200 perfil; medidas opcionais, não exigir %gordura para ler biblioteca"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/me/export",
+      "input": "Bearer",
+      "output": "200 exportação privada versionada; fluxo assíncrono apenas se volume justificar"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/me",
+      "input": "Confirmação autenticada conforme política",
+      "output": "204/202 conforme operação definida; retenção/backup explicados"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/programs",
+      "input": "modality, environment, population, cursor, limit, mode",
+      "output": "200 {items,nextCursor}; inclui disponibilidade, natureza modular/integral e source summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/programs/{id}",
+      "input": "versionId opcional e modo de uso",
+      "output": "200 versão, authors/sources/rights, sessões, requisitos e razões de bloqueio;404 retirado/ausente segundo política"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/instructions/{id}",
+      "input": "versão e locale disponível",
+      "output": "200 texto permitido, dose/unidades, atribuição, mídia autorizada ou ausência; sem completar texto faltante"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "input": "{programVersionId, scheduleOptions, acknowledgements}",
+      "output": "201 adesão à versão e requisitos;409 conflito/422 opção incompatível; privado"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/enrollments",
+      "input": "cursor e status",
+      "output": "200 próprias adesões, incluindo arquivadas quando solicitado"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sessions",
+      "input": "{enrollmentId,occurrenceId,startedAt} + chave",
+      "output": "201 sessão real iniciada; reenvio devolve resultado estável;409 conflito"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sessions/{id}/events",
+      "input": "{type,occurredAt,payload} + chave; unidade e estado tipados",
+      "output": "200/201 evento e estado confirmado;403/404 recurso alheio conforme política consistente"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/history",
+      "input": "from, to, cursor, limit",
+      "output": "200 eventos/sessões reais com versão, autor, timestamps e próximos itens"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/summary",
+      "input": "date, timezone",
+      "output": "200 planejado/realizado separados, alimentação, métricas com origem; campos sem dado são null/ausentes conforme schema"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods",
+      "input": "q, preparation, cursor, limit",
+      "output": "200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/food-entries",
+      "input": "{foodVersionId,quantity,unit,occurredAt,timezone} + chave",
+      "output": "201 consumo confirmado com cálculo rastreável;422 unidade não suportada"
+    },
+    {
+      "method": "GET/PATCH/DELETE",
+      "path": "/api/v1/food-entries/{id}",
+      "input": "alteração confirmada ou exclusão",
+      "output": "200/204, somente titular; edição recalcula usando versão e fatores declarados"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health/live",
+      "input": "Sem dados pessoais",
+      "output": "200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health/ready",
+      "input": "Sem dados pessoais",
+      "output": "200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Identity / User / AuthSession",
+      "description": "Provedor+issuer+sub identifica login; usuário é titular; sessão guarda hash/rotação/revogação por dispositivo"
+    },
+    {
+      "name": "Source / Attribution / RightsRecord",
+      "description": "Origem primária, autores/contribuições, evidência e permissões por ativo/versão; licença desconhecida é estado explícito"
+    },
+    {
+      "name": "Movement / MovementVersion",
+      "description": "Conceito e variante concreta com população, ambiente e equipamentos; não confundir gesto com programa"
+    },
+    {
+      "name": "InstructionVersion / MediaAsset",
+      "description": "Expressão instrucional e mídia separadas, idioma, autoria, revisão, direito de exibir/redistribuir e alternativa acessível"
+    },
+    {
+      "name": "Program / ProgramVersion",
+      "description": "Unidade editorial estável e versão imutável; pode ser programa integral ou coleção modular explicitamente identificada"
+    },
+    {
+      "name": "ProgramSession / PrescriptionItem",
+      "description": "Ordem e dose da versão, referência exata ao componente/instrução, progressão permitida e apoio exigido"
+    },
+    {
+      "name": "Enrollment / ScheduleOccurrence",
+      "description": "Adesão de um titular a uma versão, opções permitidas e ocorrência em data/fuso; não duplicar a prescrição por usuário"
+    },
+    {
+      "name": "ActivitySession / ActivityEvent",
+      "description": "Execução realmente iniciada e eventos confirmados: pausa, medida, conclusão parcial/completa; autor do registro separado do titular"
+    },
+    {
+      "name": "IdempotencyRecord",
+      "description": "Usuário+operação+chave, hash do request e resultado; reenvio igual recupera resposta, payload divergente é conflito"
+    },
+    {
+      "name": "Food / FoodVersion / NutrientValue",
+      "description": "Alimento/preparo e versão da fonte, base por100g/100ml, nutrientes com ausência distinta de zero"
+    },
+    {
+      "name": "FoodEntry",
+      "description": "Quantidade e unidade confirmadas, data/fuso, alimento/versão e fatores usados no cálculo; edição rastreável"
+    },
+    {
+      "name": "CareRelationship (posterior)",
+      "description": "Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador”"
+    }
+  ]
+}

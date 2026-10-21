@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](../README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Qualidade, testes e lançamento
 
 Base de 17/09/2026, ampliada em 24/09/2026 para [R01–R18](README.md). Plano de validação; os testes abaixo ainda não foram implementados/executados por esta entrega.

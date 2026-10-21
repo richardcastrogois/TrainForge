@@ -1,3 +1,5 @@
+> Referência datada preservada em21/10/2026. Execução vigente: [índice](../README.md). Preços, cobertura e propostas antigas não substituem o planoV1 atual.
+
 # Fontes, custo e hospedagem
 
 **Alinhamento de 24/09/2026:** usar a [visão integral](README.md) e o [balanço atual da etapa 01](etapa-01-pesquisa.md). Programas prontos, alimentação guiada e reconhecimento assistido são necessidades do produto; plano próprio/foto manual são caminhos complementares. A pesquisa de custo deve cobrir todas as capacidades selecionadas, sem pressupor parceiros. Valores e condições de 17–22/09 abaixo são histórico; não foram todos reconferidos nesta revisão documental.
