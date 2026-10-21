@@ -22,12 +22,16 @@
 No `backlog.json`, marcar doing ao assumir uma história, registrar bloqueio concreto em vez de inventar dado e preencher `completionEvidence` ao fechar. Evidência contém arquivo/commit/comando/resultado/data adequados, sem segredo. Atualizar `next` para uma história com dependências concluídas.
 
 ```powershell
-# Na raiz real. Reutilize o Python existente; alternativa documentada no painel.
-python tools/painel_projeto.py --snapshot --check
-python -m unittest discover -s tools -p "test_painel_projeto.py"
+# Na raiz real. Reutilize o Python existente; comandos apenas para manutenção.
+python tools/gerar_documentacao.py --write --check
+python -m unittest discover -s tools -p "test_documentacao.py"
 ```
 
-O painel lê o JSON canônico e código quando mudam; não altera status sozinho. O Markdown do backlog é gerado. Ao introduzir Go, ampliar o scanner para Go/OpenAPI e testar; enquanto isso sua cobertura continua Flutter/Fastify/Prisma. Graphify é uma ferramenta separada com corpora explícitos, não análise semântica de toda a pesquisa.
+A [documentação arquitetural](../../arquitetura/README.md) é Markdown/Mermaid no repositório; não recriar servidor/painel de leitura. O gerador usa somente código do clone e referência portátil explícita do Fastify. A CI preparada gera/verifica em PR/push e versiona derivados em job confiável, respeitando regras do remoto; sua execução real depende de publicação autorizada.
+
+O Swagger é gerado de comentários e DTOs Go, com versão de ferramenta fixada; JSON/YAML são derivados. `tools/gerar_swagger.py --check` informa pendência se o serviço ainda não existe. Recarga real Go e validação da integração pertencem à V1-008. Anotação, registro de rota, spec e teste runtime são evidências distintas. [Rotina e limites](../../arquitetura/swagger-go.md).
+
+Graphify permanece separado, com corpora explícitos; não analisa semanticamente toda a pesquisa. Status/direitos/apoio/achados exigem revisão e evidência.
 
 ## Handoff ao terminar cada fatia
 

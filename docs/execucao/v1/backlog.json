@@ -68,7 +68,7 @@
             "content/manifests/pilot-candidates.json (futuro)",
             "Critérios de elegibilidade e estados de conteúdo"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -121,14 +121,14 @@
             "ADR final",
             "Mapa de compatibilidade e fronteiras"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
           "id": "V1-003",
-          "title": "Manter mapa, backlog e evidências na rotina de entrega",
-          "userStory": "Como autor, quero acompanhar o projeto num lugar único e distinguir plano, código e runtime.",
-          "status": "todo",
+          "title": "Manter documentação arquitetural dinâmica no repositório",
+          "userStory": "Como autor ou pessoa que clona o repositório, quero ler arquitetura, telas, HTTP, banco e progresso sem iniciar um serviço local.",
+          "status": "doing",
           "release": "V1",
           "size": "S",
           "requirements": [
@@ -139,41 +139,56 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/arquitetura/documentacao-dinamica.md",
+            "docs/arquitetura/swagger-go.md"
           ],
           "acceptance": [
-            "Painel abre localmente, distingue detectado/planejado e mostra ausência do backend externo",
-            "CI/local valida IDs, dependências, backlog gerado e contratos que passarem a ser oficiais",
-            "Tarefa só é marcada done com evidência; mudança de código não inventa conclusão"
+            "Markdown/Mermaid e tabelas versionados são legíveis no GitHub/editor sem iniciar ferramentas; backend externo é referência identificada, sem caminhos da máquina",
+            "CI e geração local são determinísticas, validam fontes/dependências/links e detectam derivados desatualizados; execução remota permanece pendente até publicar e conferir a configuração",
+            "Go distingue comentários, registros literais e contrato gerado; status e achados não são concluídos automaticamente"
           ],
           "tasks": [
             {
               "id": "V1-003-T01",
-              "title": "Formalizar atualização",
+              "title": "Gerar e validar documentação portátil",
               "subtasks": [
-                "Usar tools/painel_projeto.py --snapshot --check",
-                "Ligar a validação ao futuro pipeline sem exigir Graphify com IA"
+                "Ler código do clone e referência versionada do Fastify; gerar Markdown/Mermaid e backlog",
+                "Testar relocação, alteração real, mtime, links e fronteiras da detecção"
               ]
             },
             {
               "id": "V1-003-T02",
-              "title": "Acrescentar cobertura conforme a implementação",
+              "title": "Preparar atualização no GitHub",
               "subtasks": [
-                "Ensinar scanner a ler rotas Go e contrato OpenAPI quando existirem",
-                "Registrar lacunas e validar mudança real no mapa com teste de regressão"
+                "Regenerar/verificar em PR e push; versionar derivados só em job confiável da branch principal",
+                "Não usar token de escrita para executar código de PR; não contornar branch protection"
+              ]
+            },
+            {
+              "id": "V1-003-T03",
+              "title": "Publicar e conferir automação quando autorizado",
+              "subtasks": [
+                "Enviar workflow/documentos ao remoto somente com autorização de publicação",
+                "Conferir execução real da CI e atualização do commit gerado; ajustar a política do remoto caso bloqueie"
               ]
             }
           ],
           "validation": [
-            "Teste do watcher sem reiniciar a página",
-            "Teste de API ausente e dependência cíclica"
+            "Geração/check e testes portáteis com biblioteca padrão",
+            "Sintaxe Mermaid validada com ferramenta separada; clone sem checkout externo",
+            "Execução real no GitHub pendente até publicação autorizada"
           ],
           "deliverables": [
-            "Painel e inventário mantidos",
-            "Job documental da CI"
+            "docs/arquitetura/README.md e gerado/*.md",
+            "tools/gerar_documentacao.py e testes",
+            ".github/workflows/documentacao.yml"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "Geração e CI preparadas neste incremento; resultado local em validacao-planejamento.md. Ativação remota ainda não executada."
+          ]
         }
       ]
     },
@@ -238,7 +253,7 @@
             "Schema JSON editorial",
             "Matriz de direitos por ativo"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -296,7 +311,7 @@
             "content/manifests/pilot-approved.json (futuro)",
             "Registro de revisão e pendências reais"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -353,7 +368,7 @@
             "cmd/import-content",
             "Relatório de importação e rollback editorial"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -416,13 +431,13 @@
             "services/api/go.mod",
             "Servidor local e instruções reproduzíveis"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
           "id": "V1-008",
-          "title": "Publicar contrato OpenAPI v1 antes do cliente",
-          "userStory": "Como integrador, quero contratos verificáveis para Flutter e Go evoluírem sem adivinhação.",
+          "title": "Gerar Swagger dos comentários e DTOs Go antes do cliente",
+          "userStory": "Como integrador, quero comentar os handlers/tipos Go e obter Swagger atualizado automaticamente no desenvolvimento e conferido na CI, sem YAML manual concorrente.",
           "status": "todo",
           "release": "V1",
           "size": "M",
@@ -442,40 +457,54 @@
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/arquitetura-alvo.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/arquitetura/swagger-go.md",
+            "docs/arquitetura/camadas-go.md"
           ],
           "acceptance": [
-            "Rotas planejadas de contratos-v1.md tornam-se OpenAPI revisado com schemas, erros e autorização",
-            "null é diferente de zero; cursor, datas UTC, fuso IANA e Idempotency-Key definidos",
-            "Rotas legado não mudam silenciosamente; compatibilidade e descontinuação explícitas"
+            "Handlers, DTOs e comentários realizam os contratos revisados; Swaggo fixado gera JSON/YAML e integração Go sem edição manual desses derivados",
+            "Versão inicial proposta v1.16.6 gera Swagger2.0; compatibilidade real com cliente Dart deve ser testada antes da adoção ou de mudança para OpenAPI3",
+            "Recarga de desenvolvimento executa geração → compilação → restart e ignora gerados para evitar loop; CI falha em divergência de spec/código",
+            "Anotação @Security não substitui autenticação/autorização; null, unidades, cursor, datas/fuso e idempotência são coerentes com os testes"
           ],
           "tasks": [
             {
               "id": "V1-008-T01",
-              "title": "Definir contrato",
+              "title": "Documentar uma primeira rota real",
               "subtasks": [
-                "Especificar requests, responses e exemplos somente identificados como contrato/teste",
-                "Fixar enum, paginação, validação e formato problem+json com requestId"
+                "Definir DTOs e comentários @Router/@Param/@Success/@Failure sobre o contrato revisado",
+                "Conferir registro net/http, erros, política de acesso e serialização com testes reais"
               ]
             },
             {
               "id": "V1-008-T02",
-              "title": "Conectar geração",
+              "title": "Concretizar geração e recarga",
               "subtasks": [
-                "Escolher ferramenta de cliente Dart depois de teste mínimo",
-                "Conferir diffs do contrato gerado na CI"
+                "Validar Swaggo v1.16.6 e tools/gerar_swagger.py com o serviço presente; importar swaggerdocs e integrar UI net/http",
+                "Configurar watcher para gerar/compilar/reiniciar sem observar gerados; atualizar CI Go com ferramenta fixada"
+              ]
+            },
+            {
+              "id": "V1-008-T03",
+              "title": "Conferir consumidores e segurança",
+              "subtasks": [
+                "Comparar código, registro, spec e respostas dos handlers; testar cliente Dart compatível",
+                "Expor UI por ambiente com autenticação/configuração deliberadas, sem credenciais nos exemplos"
               ]
             }
           ],
           "validation": [
-            "Lint de OpenAPI",
-            "Testes de contrato handler/DTO/cliente contra schemas"
+            "Gerar duas vezes e comparar os derivados; mudar comentário e conferir atualização",
+            "Provocar divergência de contrato e confirmar falha na CI",
+            "Testes de resposta, autorização e cliente contra Swagger gerado, sem spec fictícia com Go ausente"
           ],
           "deliverables": [
-            "contracts/openapi-v1.yaml",
+            "services/api/internal/swaggerdocs/docs.go (gerado)",
+            "contracts/generated/swagger-v1.json e swagger-v1.yaml (gerados)",
+            "Watcher de desenvolvimento e validação de contrato na CI",
             "Política de compatibilidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -537,7 +566,7 @@
             "Modelo lógico revisado",
             "Decisão de invariantes e consultas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -593,7 +622,7 @@
             "services/api/migrations",
             "Runbook de backup/restore com resultado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -657,7 +686,7 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -712,7 +741,7 @@
             "Ciclo de sessão Go/Flutter",
             "Política de reuso e dispositivos"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -770,7 +799,7 @@
             "Matriz de acesso",
             "Política de privacidade do piloto e operações de dados"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -837,7 +866,7 @@
             "Handlers e queries de catálogo",
             "Respostas verificadas do lote"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -896,7 +925,7 @@
             "API de enrollments",
             "Fluxo de seleção humano"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -953,7 +982,7 @@
             "Contrato de instruction/media",
             "Lista de ativos efetivamente liberados"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -1018,7 +1047,7 @@
             "API sessions e session-events",
             "Invariantes documentadas e testes"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1074,7 +1103,7 @@
             "API summary/history",
             "Dicionário de métricas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1132,7 +1161,7 @@
             "Manifesto alimentar aprovado",
             "Lote alimentar versionado no DB"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1192,7 +1221,7 @@
             "API nutrition v1",
             "Registro de consumo real"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -1257,7 +1286,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1322,7 +1351,7 @@
             "Telas library/detail/enrollment",
             "Mapa de fluxo atualizado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1383,7 +1412,7 @@
             "Fluxo de sessão real",
             "Evidência de recuperação"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1444,7 +1473,7 @@
             "Hoje/history/profile",
             "Estado de conta e privacidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1505,7 +1534,7 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1564,7 +1593,7 @@
             "Política de cache e fila",
             "Recuperação verificada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1624,7 +1653,7 @@
             "Relatório de acessibilidade",
             "Matriz Android/iOS por funcionalidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -1687,7 +1716,7 @@
             "Relatório de segurança versionado sem segredos",
             "Riscos residuais e correções"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1743,7 +1772,7 @@
             "Runbook e painel de métricas reais",
             "Evidência de uma jornada rastreada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1803,7 +1832,7 @@
             "Baseline e orçamento de capacidade",
             "Plano de escala condicionado a métricas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -1865,7 +1894,7 @@
             "Decisão de provedor e custos aprovada",
             "Mapa de ambientes e região"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1920,7 +1949,7 @@
             "Workflow CI",
             "Imagem da API e metadados de release"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1978,7 +2007,7 @@
             "URL staging e runbook",
             "Evidência de implantação e recuperação"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -2041,7 +2070,7 @@
             "Configuração de release",
             "Procedimento de guarda/recuperação de chave"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2109,7 +2138,7 @@
             "Relatório de aceite V1",
             "Lista de problemas e limitações"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2164,7 +2193,7 @@
             "APK instalável e checksum",
             "Guia para esposa e registro de feedback"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2219,7 +2248,7 @@
             "Balanço do piloto",
             "Backlog repriorizado e limpeza documentada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -2282,7 +2311,7 @@
             "Build iOS validada",
             "Matriz de paridade atualizada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2338,7 +2367,7 @@
             "Pacotes/metadata de loja",
             "Relatório de submissão e decisões"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -2404,7 +2433,7 @@
             "Lotes adicionais",
             "Editor/importador com limites"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2462,7 +2491,7 @@
             "Integração real documentada",
             "Matriz de disponibilidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2518,7 +2547,7 @@
             "Decisão por tipo de captura",
             "Fluxo confirmado pelo usuário"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2579,7 +2608,7 @@
             "Jornadas de acompanhamento",
             "Expansão alimentar com origem"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]

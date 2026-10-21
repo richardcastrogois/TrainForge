@@ -1,6 +1,6 @@
 # Telas, chamadas e navegação
 
-O [painel](../painel/README.md) tem mapa de telas atual detectado, chamadas HTTP e arquitetura proposta. Referências de construtor/import são evidência estática; não demonstram clique bem-sucedido ou condição de navegação.
+A [documentação dinâmica](README.md) tem mapas de telas, chamadas HTTP, banco e arquitetura proposta no próprio repositório, sem servidor de leitura. Referências de construtor/import são evidência estática; não demonstram clique bem-sucedido ou condição de navegação.
 
 ## Fluxo atual lido no Flutter
 

@@ -32,13 +32,15 @@ trainforge/
       nutrition/
       platform/              # config, postgres, HTTP, logs
     migrations/
-  contracts/openapi-v1.yaml  # FUTURO contrato oficial
+  contracts/generated/     # FUTURO Swagger JSON/YAML gerado por comentários Go
   content/manifests/         # FUTUROS lotes revisados; não payload sem licença
   docs/
   tools/                    # painel e validações documentais existentes
 ```
 
 No Go, organizar cada módulo por responsabilidade real (handler/service/store/model quando existir motivo). Não criar interface, adapter e use case para cada operação trivial. `cmd` faz composição; `internal` limita importações externas. Preferência inicial por `net/http`, `pgx`, SQL explícito e uma ferramenta de migrations escolhida/verificada em `V1-002/007`; novas dependências exigem justificativa e versão suportada. Não instalar framework para copiar um diagrama.
+
+Fronteiras detalhadas em [camadas Go](camadas-go.md): HTTP/DTO → aplicação → domínio e interfaces necessárias; PostgreSQL implementa persistência, com composição em `cmd`. [Swagger](swagger-go.md) será gerado dos comentários/DTOs, com recarga no desenvolvimento e conferência de divergência na CI. O [mapa do repositório](README.md) distingue código, referência externa e intenção planejada sem painel local.
 
 No Flutter, manter a separação por feature. ViewModel/controller conduz estado e comandos; repository fornece domínio e coordena cache/HTTP; widgets apresentam e navegam. Usar composição e ferramentas existentes antes de introduzir BLoC/Riverpod/get_it somente por convenção. Repository não deve ser instanciado dentro de cada página. Camada de domínio adicional é útil onde há regra de unidade, sessão ou sincronização; não precisa existir como camada vazia em toda feature. [Recomendações oficiais Flutter](https://docs.flutter.dev/app-architecture/recommendations) e [organização de módulos Go](https://go.dev/doc/modules/layout) sustentam estas escolhas, adaptadas ao projeto.
 

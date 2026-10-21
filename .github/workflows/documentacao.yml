@@ -1,0 +1,112 @@
+name: Documentação de arquitetura
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'services/api/**'
+      - 'contracts/**'
+      - 'docs/arquitetura/**'
+      - 'docs/execucao/v1/**'
+      - 'tools/**'
+      - '.github/workflows/documentacao.yml'
+      - 'README.md'
+      - 'AGENTS.md'
+      - 'guia-do-projeto.md'
+      - 'documentacao-tecnica.md'
+      - 'docs/README.md'
+  pull_request:
+    paths:
+      - 'lib/**'
+      - 'services/api/**'
+      - 'contracts/**'
+      - 'docs/arquitetura/**'
+      - 'docs/execucao/v1/**'
+      - 'tools/**'
+      - '.github/workflows/documentacao.yml'
+      - 'README.md'
+      - 'AGENTS.md'
+      - 'guia-do-projeto.md'
+      - 'documentacao-tecnica.md'
+      - 'docs/README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: architecture-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, conferido em21/10/2026
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Gerar documentos do código e referências versionadas
+        run: python tools/gerar_documentacao.py --write --check
+      - name: Testar portabilidade, deriva e limites da análise
+        run: python -m unittest discover -s tools -p test_documentacao.py
+      - name: Validar sintaxe dos diagramas em ambiente temporário
+        run: |
+          npm install --prefix "$RUNNER_TEMP/mermaid-validation" --ignore-scripts --no-audit --no-fund mermaid@11.12.0 jsdom@26.1.0
+          node tools/validar_mermaid.mjs "$RUNNER_TEMP/mermaid-validation/node_modules"
+      - name: Confirmar estado da geração Swagger
+        run: python tools/gerar_swagger.py --check
+      - name: Disponibilizar derivados para leitura e revisão
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: arquitetura-gerada
+          retention-days: 7
+          if-no-files-found: error
+          path: |
+            docs/arquitetura/README.md
+            docs/arquitetura/inventario-atual.json
+            docs/arquitetura/gerado/
+            docs/execucao/v1/backlog.md
+      - name: PR precisa conter documentação correspondente ao código
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          state="$(git status --porcelain --untracked-files=all -- docs/arquitetura/README.md docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/execucao/v1/backlog.md)"
+          if [ -n "$state" ]; then
+            printf '%s\n' "$state"
+            echo 'Regere e revise os derivados antes de concluir o PR.'
+            exit 1
+          fi
+
+  version-generated:
+    needs: generate
+    # Credencial de escrita só no push/dispatch confiável da branch padrão.
+    if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4, conferido em21/10/2026
+        with:
+          name: arquitetura-gerada
+          path: docs
+      - name: Versionar somente os derivados, sem executar código recebido
+        shell: bash
+        run: |
+          git add -- docs/arquitetura/README.md docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/execucao/v1/backlog.md
+          if git diff --cached --quiet; then
+            echo 'Documentação já corresponde às entradas.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'docs: update generated architecture'
+          git push origin "HEAD:${GITHUB_REF_NAME}"

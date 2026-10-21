@@ -1,6 +1,6 @@
 # Backlog V1
 
-> Gerado de `backlog.json` por `tools/painel_projeto.py --snapshot`. Edite o JSON.
+> Gerado de `backlog.json` por `tools/gerar_documentacao.py --write`. Edite o JSON.
 
 Status: todo = não iniciado; done exige evidência. Não confundir planejamento com implementação.
 
@@ -37,7 +37,7 @@ Validação: Revisão do manifesto contra evidências locais; Conferir que compo
 
 Entregas: content/manifests/pilot-candidates.json (futuro); Critérios de elegibilidade e estados de conteúdo
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-002 — Aceitar a decisão Go e definir a fronteira de migração
 
@@ -68,38 +68,41 @@ Validação: Revisão do inventário de contratos; Checar ausência de dual writ
 
 Entregas: ADR final; Mapa de compatibilidade e fronteiras
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
-### V1-003 — Manter mapa, backlog e evidências na rotina de entrega
+### V1-003 — Manter documentação arquitetural dinâmica no repositório
 
-**todo · V1 · S**
+**doing · V1 · S**
 
-Como autor, quero acompanhar o projeto num lugar único e distinguir plano, código e runtime.
+Como autor ou pessoa que clona o repositório, quero ler arquitetura, telas, HTTP, banco e progresso sem iniciar um serviço local.
 
 Dependências: nenhuma
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/documentacao-dinamica.md; docs/arquitetura/swagger-go.md
 
 Critérios de aceite:
 
-- Painel abre localmente, distingue detectado/planejado e mostra ausência do backend externo
-- CI/local valida IDs, dependências, backlog gerado e contratos que passarem a ser oficiais
-- Tarefa só é marcada done com evidência; mudança de código não inventa conclusão
+- Markdown/Mermaid e tabelas versionados são legíveis no GitHub/editor sem iniciar ferramentas; backend externo é referência identificada, sem caminhos da máquina
+- CI e geração local são determinísticas, validam fontes/dependências/links e detectam derivados desatualizados; execução remota permanece pendente até publicar e conferir a configuração
+- Go distingue comentários, registros literais e contrato gerado; status e achados não são concluídos automaticamente
 
 Tarefas e subtarefas:
 
-- V1-003-T01 — Formalizar atualização
-  - Usar tools/painel_projeto.py --snapshot --check
-  - Ligar a validação ao futuro pipeline sem exigir Graphify com IA
-- V1-003-T02 — Acrescentar cobertura conforme a implementação
-  - Ensinar scanner a ler rotas Go e contrato OpenAPI quando existirem
-  - Registrar lacunas e validar mudança real no mapa com teste de regressão
+- V1-003-T01 — Gerar e validar documentação portátil
+  - Ler código do clone e referência versionada do Fastify; gerar Markdown/Mermaid e backlog
+  - Testar relocação, alteração real, mtime, links e fronteiras da detecção
+- V1-003-T02 — Preparar atualização no GitHub
+  - Regenerar/verificar em PR e push; versionar derivados só em job confiável da branch principal
+  - Não usar token de escrita para executar código de PR; não contornar branch protection
+- V1-003-T03 — Publicar e conferir automação quando autorizado
+  - Enviar workflow/documentos ao remoto somente com autorização de publicação
+  - Conferir execução real da CI e atualização do commit gerado; ajustar a política do remoto caso bloqueie
 
-Validação: Teste do watcher sem reiniciar a página; Teste de API ausente e dependência cíclica
+Validação: Geração/check e testes portáteis com biblioteca padrão; Sintaxe Mermaid validada com ferramenta separada; clone sem checkout externo; Execução real no GitHub pendente até publicação autorizada
 
-Entregas: Painel e inventário mantidos; Job documental da CI
+Entregas: docs/arquitetura/README.md e gerado/*.md; tools/gerar_documentacao.py e testes; .github/workflows/documentacao.yml
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP02 — Conteúdo, autoria e direitos
 
@@ -134,7 +137,7 @@ Validação: Validar manifesto com 11 componentes N15 e pacote ES2019 separados;
 
 Entregas: Schema JSON editorial; Matriz de direitos por ativo
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-005 — Revisar o lote real para o uso do piloto
 
@@ -165,7 +168,7 @@ Validação: Revisão linha a linha da allowlist; Tentar publicar item bloqueado
 
 Entregas: content/manifests/pilot-approved.json (futuro); Registro de revisão e pendências reais
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-006 — Importar conteúdo de forma idempotente e auditável
 
@@ -196,7 +199,7 @@ Validação: Integração PostgreSQL com manifesto real permitido; Dry run invá
 
 Entregas: cmd/import-content; Relatório de importação e rollback editorial
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP03 — Fundação Go, contratos e banco
 
@@ -231,38 +234,42 @@ Validação: go test ./...; go vet ./... e processo inicia/finaliza sem conexão
 
 Entregas: services/api/go.mod; Servidor local e instruções reproduzíveis
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
-### V1-008 — Publicar contrato OpenAPI v1 antes do cliente
+### V1-008 — Gerar Swagger dos comentários e DTOs Go antes do cliente
 
 **todo · V1 · M**
 
-Como integrador, quero contratos verificáveis para Flutter e Go evoluírem sem adivinhação.
+Como integrador, quero comentar os handlers/tipos Go e obter Swagger atualizado automaticamente no desenvolvimento e conferido na CI, sem YAML manual concorrente.
 
 Dependências: V1-004, V1-007
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/swagger-go.md; docs/arquitetura/camadas-go.md
 
 Critérios de aceite:
 
-- Rotas planejadas de contratos-v1.md tornam-se OpenAPI revisado com schemas, erros e autorização
-- null é diferente de zero; cursor, datas UTC, fuso IANA e Idempotency-Key definidos
-- Rotas legado não mudam silenciosamente; compatibilidade e descontinuação explícitas
+- Handlers, DTOs e comentários realizam os contratos revisados; Swaggo fixado gera JSON/YAML e integração Go sem edição manual desses derivados
+- Versão inicial proposta v1.16.6 gera Swagger2.0; compatibilidade real com cliente Dart deve ser testada antes da adoção ou de mudança para OpenAPI3
+- Recarga de desenvolvimento executa geração → compilação → restart e ignora gerados para evitar loop; CI falha em divergência de spec/código
+- Anotação @Security não substitui autenticação/autorização; null, unidades, cursor, datas/fuso e idempotência são coerentes com os testes
 
 Tarefas e subtarefas:
 
-- V1-008-T01 — Definir contrato
-  - Especificar requests, responses e exemplos somente identificados como contrato/teste
-  - Fixar enum, paginação, validação e formato problem+json com requestId
-- V1-008-T02 — Conectar geração
-  - Escolher ferramenta de cliente Dart depois de teste mínimo
-  - Conferir diffs do contrato gerado na CI
+- V1-008-T01 — Documentar uma primeira rota real
+  - Definir DTOs e comentários @Router/@Param/@Success/@Failure sobre o contrato revisado
+  - Conferir registro net/http, erros, política de acesso e serialização com testes reais
+- V1-008-T02 — Concretizar geração e recarga
+  - Validar Swaggo v1.16.6 e tools/gerar_swagger.py com o serviço presente; importar swaggerdocs e integrar UI net/http
+  - Configurar watcher para gerar/compilar/reiniciar sem observar gerados; atualizar CI Go com ferramenta fixada
+- V1-008-T03 — Conferir consumidores e segurança
+  - Comparar código, registro, spec e respostas dos handlers; testar cliente Dart compatível
+  - Expor UI por ambiente com autenticação/configuração deliberadas, sem credenciais nos exemplos
 
-Validação: Lint de OpenAPI; Testes de contrato handler/DTO/cliente contra schemas
+Validação: Gerar duas vezes e comparar os derivados; mudar comentário e conferir atualização; Provocar divergência de contrato e confirmar falha na CI; Testes de resposta, autorização e cliente contra Swagger gerado, sem spec fictícia com Go ausente
 
-Entregas: contracts/openapi-v1.yaml; Política de compatibilidade
+Entregas: services/api/internal/swaggerdocs/docs.go (gerado); contracts/generated/swagger-v1.json e swagger-v1.yaml (gerados); Watcher de desenvolvimento e validação de contrato na CI; Política de compatibilidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-009 — Modelar conteúdo versionado, adesão e ocorrências
 
@@ -293,7 +300,7 @@ Validação: Revisão ER/contratos com N15 e prática por tempo; Casos semana re
 
 Entregas: Modelo lógico revisado; Decisão de invariantes e consultas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-010 — Criar migrations e testar backup/restauração
 
@@ -324,7 +331,7 @@ Validação: Migrations do zero e upgrade em DB de teste; Restore conferido; nun
 
 Entregas: services/api/migrations; Runbook de backup/restore com resultado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP04 — Identidade, privacidade e acesso
 
@@ -359,7 +366,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
@@ -390,7 +397,7 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
@@ -421,7 +428,7 @@ Validação: Testes BOLA em todos os recursos privados; Teste de spoof de forwar
 
 Entregas: Matriz de acesso; Política de privacidade do piloto e operações de dados
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP05 — Biblioteca humana e API de catálogo
 
@@ -456,7 +463,7 @@ Validação: Contrato e DB com lote real; Filtro e item retirado não vazam cont
 
 Entregas: Handlers e queries de catálogo; Respostas verificadas do lote
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-015 — Criar adesão sem geração de treino
 
@@ -487,7 +494,7 @@ Validação: Selecionar lote real no banco e consultar adesão; Rejeitar variant
 
 Entregas: API de enrollments; Fluxo de seleção humano
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-016 — Expor instrução acessível e mídia com direitos
 
@@ -518,7 +525,7 @@ Validação: Inspeção visual e acessibilidade do material real; Link indispon�
 
 Entregas: Contrato de instruction/media; Lista de ativos efetivamente liberados
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP06 — Atividade e alimentação registradas de verdade
 
@@ -553,7 +560,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -584,7 +591,7 @@ Validação: Conferir resumo contra linhas reais do DB; Casos fronteira de dia, 
 
 Entregas: API summary/history; Dicionário de métricas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-019 — Validar e importar o lote alimentar
 
@@ -615,7 +622,7 @@ Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura en
 
 Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-020 — Pesquisar alimento e registrar consumo
 
@@ -646,7 +653,7 @@ Validação: Integração DB/API com alimento pesquisado; Conferir cálculo cont
 
 Entregas: API nutrition v1; Registro de consumo real
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP07 — Flutter e experiência da V1
 
@@ -681,7 +688,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -712,7 +719,7 @@ Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifes
 
 Entregas: Telas library/detail/enrollment; Mapa de fluxo atualizado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 
@@ -743,7 +750,7 @@ Validação: Integração Android com reinício e duplo toque; Repetir em data f
 
 Entregas: Fluxo de sessão real; Evidência de recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-024 — Implementar Hoje, histórico e perfil
 
@@ -774,7 +781,7 @@ Validação: Emulador com duas contas reais de teste autorizadas ou contas isola
 
 Entregas: Hoje/history/profile; Estado de conta e privacidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-025 — Implementar busca e registro alimentar no Flutter
 
@@ -805,7 +812,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
@@ -836,7 +843,7 @@ Validação: Modo avião, interrupção, expiração e reconexão; Nenhum regist
 
 Entregas: Política de cache e fila; Recuperação verificada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-027 — Validar acessibilidade e paridade de contratos Android/iOS
 
@@ -867,7 +874,7 @@ Validação: Roteiro de acessibilidade em Android; Checklist iOS pendente até m
 
 Entregas: Relatório de acessibilidade; Matriz Android/iOS por funcionalidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP08 — Segurança, desempenho e observabilidade
 
@@ -902,7 +909,7 @@ Validação: Relatórios reais de scanners e testes de autorização; Revisão d
 
 Entregas: Relatório de segurança versionado sem segredos; Riscos residuais e correções
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-029 — Instrumentar requisições, consultas e falhas
 
@@ -933,7 +940,7 @@ Validação: Provocar erro controlado em staging e seguir correlação; Conferir
 
 Entregas: Runbook e painel de métricas reais; Evidência de uma jornada rastreada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-030 — Medir consultas e carga representativa
 
@@ -964,7 +971,7 @@ Validação: Relatório reproduzível de carga em ambiente autorizado; Teste de 
 
 Entregas: Baseline e orçamento de capacidade; Plano de escala condicionado a métricas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP09 — Infraestrutura, CI e implantação
 
@@ -999,7 +1006,7 @@ Validação: Conferir preços e limites atuais com fontes oficiais; Revisar plan
 
 Entregas: Decisão de provedor e custos aprovada; Mapa de ambientes e região
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-032 — Construir pipeline e artefatos reproduzíveis
 
@@ -1030,7 +1037,7 @@ Validação: Pipeline completo no repositório autorizado; Rebuild e conferênci
 
 Entregas: Workflow CI; Imagem da API e metadados de release
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-033 — Implantar staging e conferir restauração
 
@@ -1061,7 +1068,7 @@ Validação: Smoke HTTPS de ponta a ponta; Restore em base separada e rollback d
 
 Entregas: URL staging e runbook; Evidência de implantação e recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP10 — APK e primeiro teste acompanhado
 
@@ -1096,7 +1103,7 @@ Validação: Verificar APK com ferramenta de assinatura do SDK; Instalar e atual
 
 Entregas: Configuração de release; Procedimento de guarda/recuperação de chave
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-035 — Validar a jornada completa da V1
 
@@ -1127,7 +1134,7 @@ Validação: E2E real em Android/emulador e aparelho quando disponível; Verific
 
 Entregas: Relatório de aceite V1; Lista de problemas e limitações
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-036 — Gerar e disponibilizar APK à esposa
 
@@ -1158,7 +1165,7 @@ Validação: Download e hash coincidem; instalação real confirmada pela testad
 
 Entregas: APK instalável e checksum; Guia para esposa e registro de feedback
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-037 — Encerrar piloto e priorizar correções
 
@@ -1189,7 +1196,7 @@ Validação: Conferir correções com reexecução afetada; Recibo de limpeza e 
 
 Entregas: Balanço do piloto; Backlog repriorizado e limpeza documentada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP11 — iOS e distribuição nas lojas
 
@@ -1224,7 +1231,7 @@ Validação: Build iOS e testes em ambiente Apple; E2E na API staging e relatór
 
 Entregas: Build iOS validada; Matriz de paridade atualizada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-039 — Preparar TestFlight, Play e políticas de publicação
 
@@ -1255,7 +1262,7 @@ Validação: Checklist oficial preenchido e testes de loja reais; Sem afirmaçã
 
 Entregas: Pacotes/metadata de loja; Relatório de submissão e decisões
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP12 — Visão integral após o primeiro piloto
 
@@ -1290,7 +1297,7 @@ Validação: Revisão dos lotes e testes de unidade/ordem; Fluxo de composição
 
 Entregas: Lotes adicionais; Editor/importador com limites
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-041 — Adicionar sensores, GPS e integrações
 
@@ -1321,7 +1328,7 @@ Validação: Testes em dispositivos reais compatíveis; Negação/revogação de
 
 Entregas: Integração real documentada; Matriz de disponibilidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-042 — Investigar imagem, OCR e confirmação humana
 
@@ -1352,7 +1359,7 @@ Validação: Ensaio com material autorizado e resultados reais; Testes de erro, 
 
 Entregas: Decisão por tipo de captura; Fluxo confirmado pelo usuário
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-043 — Desenvolver acompanhamento e alimentação avançados
 
@@ -1383,4 +1390,4 @@ Validação: Teste de permissões entre titulares e cuidadores; Revisão da orig
 
 Entregas: Jornadas de acompanhamento; Expansão alimentar com origem
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir painel. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.

@@ -1,0 +1,1211 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/ai",
+      "group": "ai",
+      "requestType": null,
+      "queryType": null,
+      "responses": {},
+      "usecases": [
+        "CreateWorkoutPlan",
+        "GetUserTrainData",
+        "ListWorkoutPlans",
+        "UpsertUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/ai.ts",
+        "line": 80
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bootstrap",
+      "group": "bootstrap",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "BootstrapSchema",
+        "401": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetHomeData",
+        "GetUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/bootstrap.ts",
+        "line": 17
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home/:date",
+      "group": "home",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "HomeDataSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetHomeData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/home.ts",
+        "line": 14
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/me",
+      "group": "me",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "UserTrainDataSchema.nullable",
+        "401": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/me.ts",
+        "line": 19
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/me",
+      "group": "me",
+      "requestType": "UpsertUserTrainDataBodySchema",
+      "queryType": null,
+      "responses": {
+        "200": "UpsertUserTrainDataSchema",
+        "401": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "UpsertUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/me.ts",
+        "line": 62
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile-auth/google",
+      "group": "mobile-auth",
+      "requestType": "z.object",
+      "queryType": null,
+      "responses": {
+        "200": "AuthSuccessSchema",
+        "401": "z.object",
+        "500": "z.object"
+      },
+      "usecases": [],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-auth.ts",
+        "line": 50
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile-auth/refresh",
+      "group": "mobile-auth",
+      "requestType": "RefreshBodySchema",
+      "queryType": null,
+      "responses": {
+        "200": "AuthSuccessSchema",
+        "401": "z.object",
+        "500": "z.object"
+      },
+      "usecases": [
+        "Date"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-auth.ts",
+        "line": 169
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile-auth/logout",
+      "group": "mobile-auth",
+      "requestType": "RefreshBodySchema",
+      "queryType": null,
+      "responses": {
+        "204": "z.null",
+        "500": "z.object"
+      },
+      "usecases": [
+        "Date"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-auth.ts",
+        "line": 274
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile-auth/me",
+      "group": "mobile-auth",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "z.object",
+        "401": "z.object"
+      },
+      "usecases": [],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-auth.ts",
+        "line": 323
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/bootstrap",
+      "group": "mobile-bootstrap",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "z.object",
+        "401": "z.object",
+        "500": "z.object"
+      },
+      "usecases": [
+        "GetHomeData",
+        "GetUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-bootstrap.ts",
+        "line": 16
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/home/:date",
+      "group": "mobile-home",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "HomeDataSchema",
+        "401": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetHomeData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-home.ts",
+        "line": 13
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/onboarding/manual-plan",
+      "group": "mobile-onboarding",
+      "requestType": "CreatePlanRequestSchema",
+      "queryType": null,
+      "responses": {
+        "201": "CreatedWorkoutPlanResponseSchema",
+        "401": "z.object",
+        "409": "ConflictResponseSchema",
+        "422": "z.object",
+        "500": "z.object"
+      },
+      "usecases": [
+        "CreateWorkoutPlan",
+        "UpsertUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-onboarding.ts",
+        "line": 152
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/onboarding/ai-plan",
+      "group": "mobile-onboarding",
+      "requestType": "CreatePlanRequestSchema",
+      "queryType": null,
+      "responses": {
+        "201": "CreatedWorkoutPlanResponseSchema",
+        "401": "z.object",
+        "409": "ConflictResponseSchema",
+        "422": "z.object",
+        "504": "z.object",
+        "500": "z.object"
+      },
+      "usecases": [
+        "CreateWorkoutPlan",
+        "Error",
+        "UpsertUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-onboarding.ts",
+        "line": 258
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/profile",
+      "group": "mobile-profile",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "z.object",
+        "401": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-profile.ts",
+        "line": 19
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mobile/profile/train-data",
+      "group": "mobile-profile",
+      "requestType": "UpsertUserTrainDataBodySchema",
+      "queryType": null,
+      "responses": {
+        "200": "UpsertUserTrainDataSchema",
+        "401": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "UpsertUserTrainData"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-profile.ts",
+        "line": 77
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/stats",
+      "group": "mobile-stats",
+      "requestType": null,
+      "queryType": "StatsQuerySchema",
+      "responses": {
+        "200": "StatsSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetStats"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-stats.ts",
+        "line": 16
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/workout-plans",
+      "group": "mobile-workout-plans",
+      "requestType": null,
+      "queryType": "ListWorkoutPlansQuerySchema",
+      "responses": {
+        "200": "ListWorkoutPlansSchema",
+        "401": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "ListWorkoutPlans"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 36
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/workout-plans",
+      "group": "mobile-workout-plans",
+      "requestType": "WorkoutPlanSchema.omit",
+      "queryType": null,
+      "responses": {
+        "201": "WorkoutPlanSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "CreateWorkoutPlan"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 80
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/workout-plans/:workoutPlanId",
+      "group": "mobile-workout-plans",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "GetWorkoutPlanSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetWorkoutPlan"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 141
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId",
+      "group": "mobile-workout-plans",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "GetWorkoutDaySchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetWorkoutDay"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 195
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
+      "group": "mobile-workout-plans",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "201": "StartWorkoutSessionSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "409": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "StartWorkoutSession"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 251
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
+      "group": "mobile-workout-plans",
+      "requestType": "UpdateWorkoutSessionBodySchema",
+      "queryType": null,
+      "responses": {
+        "200": "UpdateWorkoutSessionSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "409": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "UpdateWorkoutSession"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/mobile-workout-plans.ts",
+        "line": 330
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stats",
+      "group": "stats",
+      "requestType": null,
+      "queryType": "StatsQuerySchema",
+      "responses": {
+        "200": "StatsSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetStats"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/stats.ts",
+        "line": 17
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workout-plans",
+      "group": "workout-plan",
+      "requestType": null,
+      "queryType": "ListWorkoutPlansQuerySchema",
+      "responses": {
+        "200": "ListWorkoutPlansSchema",
+        "401": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "ListWorkoutPlans"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 37
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workout-plans",
+      "group": "workout-plan",
+      "requestType": "WorkoutPlanSchema.omit",
+      "queryType": null,
+      "responses": {
+        "201": "WorkoutPlanSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "CreateWorkoutPlan"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 82
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workout-plans/:workoutPlanId",
+      "group": "workout-plan",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "GetWorkoutPlanSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetWorkoutPlan"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 144
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId",
+      "group": "workout-plan",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "200": "GetWorkoutDaySchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "GetWorkoutDay"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 199
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
+      "group": "workout-plan",
+      "requestType": null,
+      "queryType": null,
+      "responses": {
+        "201": "StartWorkoutSessionSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "409": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "StartWorkoutSession"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 256
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
+      "group": "workout-plan",
+      "requestType": "UpdateWorkoutSessionBodySchema",
+      "queryType": null,
+      "responses": {
+        "200": "UpdateWorkoutSessionSchema",
+        "401": "ErrorSchema",
+        "404": "ErrorSchema",
+        "409": "ErrorSchema",
+        "422": "ErrorSchema",
+        "500": "ErrorSchema"
+      },
+      "usecases": [
+        "UpdateWorkoutSession"
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "src/routes/workout-plan.ts",
+        "line": 336
+      }
+    }
+  ],
+  "models": [
+    {
+      "name": "User",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutPlans",
+          "type": "WorkoutPlan[]",
+          "relation": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "email",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "emailVerified",
+          "type": "Boolean",
+          "relation": false
+        },
+        {
+          "name": "image",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "sessions",
+          "type": "Session[]",
+          "relation": true
+        },
+        {
+          "name": "accounts",
+          "type": "Account[]",
+          "relation": true
+        },
+        {
+          "name": "mobileRefreshTokens",
+          "type": "MobileRefreshToken[]",
+          "relation": true
+        },
+        {
+          "name": "weightInGrams",
+          "type": "Int?",
+          "relation": false
+        },
+        {
+          "name": "heightInCentimeters",
+          "type": "Int?",
+          "relation": false
+        },
+        {
+          "name": "age",
+          "type": "Int?",
+          "relation": false
+        },
+        {
+          "name": "bodyFatPercentage",
+          "type": "Int?",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 12
+      }
+    },
+    {
+      "name": "WorkoutPlan",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "userId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "relation": true
+        },
+        {
+          "name": "workoutDays",
+          "type": "WorkoutDay[]",
+          "relation": true
+        },
+        {
+          "name": "isActive",
+          "type": "Boolean",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 33
+      }
+    },
+    {
+      "name": "WorkoutDay",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutPlanId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutPlan",
+          "type": "WorkoutPlan",
+          "relation": true
+        },
+        {
+          "name": "isRest",
+          "type": "Boolean",
+          "relation": false
+        },
+        {
+          "name": "weekDay",
+          "type": "WeekDay",
+          "relation": false
+        },
+        {
+          "name": "exercises",
+          "type": "WorkoutExercise[]",
+          "relation": true
+        },
+        {
+          "name": "estimatedDurationInSeconds",
+          "type": "Int",
+          "relation": false
+        },
+        {
+          "name": "coverImageUrl",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "sessions",
+          "type": "WorkoutSession[]",
+          "relation": true
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 56
+      }
+    },
+    {
+      "name": "WorkoutExercise",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "order",
+          "type": "Int",
+          "relation": false
+        },
+        {
+          "name": "workoutDayId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutDay",
+          "type": "WorkoutDay",
+          "relation": true
+        },
+        {
+          "name": "sets",
+          "type": "Int",
+          "relation": false
+        },
+        {
+          "name": "reps",
+          "type": "Int",
+          "relation": false
+        },
+        {
+          "name": "restTimeInSeconds",
+          "type": "Int",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 74
+      }
+    },
+    {
+      "name": "WorkoutSession",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutDayId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "workoutDay",
+          "type": "WorkoutDay",
+          "relation": true
+        },
+        {
+          "name": "startedAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "completeAt",
+          "type": "DateTime?",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 90
+      }
+    },
+    {
+      "name": "MobileRefreshToken",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "tokenHash",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "userId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "relation": true
+        },
+        {
+          "name": "expiresAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "revokedAt",
+          "type": "DateTime?",
+          "relation": false
+        },
+        {
+          "name": "userAgent",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "ipAddress",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 103
+      }
+    },
+    {
+      "name": "Session",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "expiresAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "token",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "ipAddress",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "userAgent",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "userId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "relation": true
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 121
+      }
+    },
+    {
+      "name": "Account",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "accountId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "providerId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "userId",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "relation": true
+        },
+        {
+          "name": "accessToken",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "refreshToken",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "idToken",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "accessTokenExpiresAt",
+          "type": "DateTime?",
+          "relation": false
+        },
+        {
+          "name": "refreshTokenExpiresAt",
+          "type": "DateTime?",
+          "relation": false
+        },
+        {
+          "name": "scope",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "password",
+          "type": "String?",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 137
+      }
+    },
+    {
+      "name": "Verification",
+      "fields": [
+        {
+          "name": "id",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "identifier",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "relation": false
+        },
+        {
+          "name": "expiresAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime",
+          "relation": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "DateTime",
+          "relation": false
+        }
+      ],
+      "source": {
+        "repository": "backend-reference",
+        "path": "prisma/schema.prisma",
+        "line": 157
+      }
+    }
+  ],
+  "unresolved": [],
+  "files": {
+    "src/errors/index.ts": "20c4d9631418392f76114aec0e4bf2f44f25c41ce688e669d2fa025c4d783007",
+    "src/index.ts": "2ee053bbe583f7b3b09315ce402f3186f7b9ca1388d40af30c134fec552c387f",
+    "src/lib/auth.ts": "1dfff6f3ea2e3616d3ba056b450616d2e0dece11d333fce4b89705360471e692",
+    "src/lib/db.ts": "1cd94d7ec3a65b82199370a83ab7c4456e5a2a959c7a78fe84a8dac54279091e",
+    "src/lib/env.ts": "ca18f9a2d07b16fa2b6396118a05e2837ef54fa5ac79147e3e3ca0cd5e6292f5",
+    "src/lib/get-mobile-user.ts": "f0d710b388111e86ceb86a89c0f167b1e5655bd89277ef6a27feed2126f6685a",
+    "src/lib/manual-plan-builder.ts": "4cb82f5e3ee71d2d8425eaa8300f05ea6a7d8bf0df6378a5db086c2832ff25c1",
+    "src/lib/mobile-auth.ts": "4185e9c72dd689dc8f52c7ef0d9363d23b04cb62a01bd8fc6f8aa487064f33a5",
+    "src/lib/workout-streak.ts": "7012a288c03fd75805aaba544340e11f709a29cf68f8efef792ae58518e481db",
+    "src/routes/ai.ts": "8213d98b8cf848b9487098c64c39163d7a5f4b221c201adf1c656b470867b09d",
+    "src/routes/bootstrap.ts": "2d8e5992b53550f1817e99e1e2de6acab612d4ff35c35b0ebe8cf1022f28629f",
+    "src/routes/home.ts": "4c2364da90a9c25bdd2f8edd2d06d3be7c4245e8ee27aa8e3e9bd41722e9dbfe",
+    "src/routes/me.ts": "3a92db85ffcc72767a5decfac99acde6c8a60b3794e7ae0563bd1325935d161a",
+    "src/routes/mobile-auth.ts": "3767f687470184ae6008d75f1c0b597382d1cf9eb1ca16a48fefc0a59fd425fd",
+    "src/routes/mobile-bootstrap.ts": "4ceff4878d272dfe02283bc2480e55c5dfd212ab598e95c70ac4dd1be6ae86c6",
+    "src/routes/mobile-home.ts": "d4d1ecec16f4cbd41dfcbde9a3a7473e1e3f74d39b3647b35fa922718c109aae",
+    "src/routes/mobile-onboarding.ts": "8199178edc5da7accb859414733441c9660f34257356f8bc0ef8cb6b53de8d31",
+    "src/routes/mobile-profile.ts": "f141fbfb5bdc1a57db6d745d6a818cf85fdc27a26df878e94e2db4e4e0db762b",
+    "src/routes/mobile-stats.ts": "b0b151bfdc079d5dd7ca12b43a8bab5bcc3fa6e9b1a35be7d348e7ca8828b682",
+    "src/routes/mobile-workout-plans.ts": "759b096ea21f39882cf9688e1422fe35f3c7034b7bab39b6d3365b4b0f0f14d8",
+    "src/routes/stats.ts": "8869f2a4535c6a1c055452d2f660b4429d277904c92b1136bb00d9efd9b651a5",
+    "src/routes/workout-plan.ts": "2d19f04122e5ca71e0ba2a83b75d7efe29a4346a8e070490f675a61226c9cf3f",
+    "src/schemas/index.ts": "be714e8df6534f141daf3956ad57d76bc7b4806826ff34f594bace0164c57641",
+    "src/usecases/CreateWorkoutPlan.ts": "3d7d782812edb258ea3094a1b57fc1932c4bfa53d894f47475a625a55cbc727a",
+    "src/usecases/GetHomeData.ts": "da5db17669a655c75fa954bcbc78aa548290045bcaa0e0392482acf68e3181d1",
+    "src/usecases/GetStats.ts": "92ee5bfe0d0f9325643a4d2a484f98cbc6adbfcff810246b16384b2a683ed09f",
+    "src/usecases/GetUserTrainData.ts": "4f89ab0b8795117037cbdb28980d8f4b363446583553d95e98983fbcdd5aaeda",
+    "src/usecases/GetWorkoutDay.ts": "838ab5a88d47e9ad1444992fb5af1339ccaa73c4f83476629b7c810ea6fd1c42",
+    "src/usecases/GetWorkoutPlan.ts": "52a615586283135a0abb9647a9ca8b2d49cbc7d5f8e6dd389f2196b844d54c20",
+    "src/usecases/ListWorkoutPlans.ts": "70782747a9adb97e1bce44e69e86bc41beae1f4e00ff72e15a553ac7b2aec059",
+    "src/usecases/StartWorkoutSession.ts": "c42153307fe2b13f89a4c42471dbbe4ec58bba26fe047070a6c397ba09938725",
+    "src/usecases/UpdateWorkoutSession.ts": "0945884993dea30b15e8c407e43ff63a20423c074033a4f5177a95c166ad46ad",
+    "src/usecases/UpsertUserTrainData.ts": "05ffcd94d1b0118eb960f7df4257561b892bd96cf6cb1fa702d0d9eb091283e8",
+    "prisma/schema.prisma": "30e571b81f75b6a8a14db68dae086aa9f97caab22bcdfa4d372df7f4503db0ed"
+  },
+  "tsFiles": 33,
+  "limitations": [
+    "Snapshot de código externo, sem validação runtime.",
+    "Rotas de plugins, Swagger e health raiz não são extraídas.",
+    "Schemas inline conservam o nome detectado, sem inventar seu conteúdo."
+  ],
+  "repository": "https://github.com/richardcastrogois/bootcamp-treinos-api",
+  "commit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
+  "capturedOn": "2026-10-21",
+  "dirty": false,
+  "kind": "versioned-external-source-reference"
+}

@@ -1,6 +1,6 @@
 # Estado técnico verificado em 21/10/2026
 
-Inspeção estática do código local. Não foram executados API, migrations, testes de carga ou nova jornada de login do aplicativo nesta entrega. O [inventário gerado](inventario-atual.json) e o painel mostram os caminhos e a cobertura; os achados são [registros revisáveis](achados.json), não uma auditoria de vulnerabilidades executada.
+Inspeção estática do código local. Não foram executados API, migrations, testes de carga ou nova jornada de login do aplicativo nesta entrega. O [inventário portátil](inventario-atual.json) e o [mapa no repositório](README.md) mostram caminhos relativos e cobertura; o Fastify é referência versionada, não dependência local implícita. Os achados são [registros revisáveis](achados.json), não uma auditoria de vulnerabilidades executada.
 
 ## Base existente
 
@@ -28,7 +28,7 @@ Versões são o snapshot dos manifests, não recomendação de congelá-las para
 7. **Entrega Android:** `com.example.trainforge`, assinatura debug em release e `http://127.0.0.1:8081` são configuração de desenvolvimento. Conferir INTERNET no manifest release, HTTPS, OAuth/certificado e chave própria. Backend tem porta padrão8080; loopback do notebook não é o do emulador.
 8. **Operação:** rate limit usa `x-forwarded-for`; configurar fronteira de proxy e testar spoof. Métricas, backup/restauração, limites e desempenho precisam de evidência de execução.
 
-Localização dos achados e histórias correspondentes: [achados.json](achados.json). O scanner atual verifica existência dos arquivos; ele **não verifica se uma correção resolveu o achado**. A conclusão requer revisão e teste registrados.
+Localização dos achados e histórias correspondentes: [achados.json](achados.json). O gerador não decide se uma correção resolveu um achado. A conclusão requer revisão e teste registrados; fontes externas se referem ao snapshot identificado.
 
 ## O que aproveitar
 

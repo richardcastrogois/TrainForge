@@ -6,12 +6,9 @@ Leia [documentação atual](docs/README.md), [diagnóstico](docs/arquitetura/dia
 
 ## Acompanhar o trabalho
 
-```powershell
-cd C:/dev/TrainForge/trainforge
-./tools/abrir-painel.ps1
-```
+Abra [arquitetura dinâmica](docs/arquitetura/README.md) e seus mapas de telas, HTTP, banco e progresso. Os arquivos Markdown/Mermaid estão no próprio clone; não é necessário executar servidor para ler.
 
-[Abra o painel local](http://127.0.0.1:8787). Ele mostra estrutura detectada, HTTP, telas, banco, achados e backlog; não executa app/API/DB. [Manual](docs/painel/README.md).
+O painel local foi removido por decisão do autor. A [CI documental](docs/arquitetura/documentacao-dinamica.md) gera/verifica os derivados após mudanças enviadas ao remoto. Manutenção local pelo agente: `python tools/gerar_documentacao.py --write --check`. Isso não inicia app/API/banco.
 
 ## Desenvolvimento do app existente
 

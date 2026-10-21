@@ -1,8 +1,18 @@
 {
   "date": "2026-10-21",
-  "scope": "Current documentation local file targets (not external URLs or anchors)",
-  "documents": 30,
-  "localLinks": 139,
+  "scope": "Current architecture/documentation local file targets; external URLs and fragments not checked",
+  "documents": 28,
+  "localLinks": 152,
   "failed": 0,
-  "errors": []
+  "errors": [],
+  "newTestsPassed": 13,
+  "mermaidDiagramsParsed": 20,
+  "remoteWorkflowExecuted": false,
+  "cleanIndexExportCheckPassed": true,
+  "cleanIndexExportUnitTestsPassed": 13,
+  "cleanIndexExportExternalBackendRequired": false,
+  "yamlSyntaxAndPermissionBoundariesValidated": true,
+  "validationPackagesRemovedAfterUse": true,
+  "panelProcessStopped": true,
+  "panelFilesRemoved": 7
 }
