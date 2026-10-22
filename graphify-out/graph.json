@@ -1192,13 +1192,10 @@
     {
       "id": "materialpageroute",
       "label": "MaterialPageRoute",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Lista de planos",
       "file_type": "code",
-      "norm_label": "materialpageroute",
       "source_file": null,
-      "source_location": null
+      "source_location": null,
+      "_origin": "ast"
     },
     {
       "id": "package_trainforge_features_onboarding_presentation_pages_onboarding_entry_page_dart",
@@ -2781,13 +2778,10 @@
     {
       "id": "statelesswidget",
       "label": "StatelessWidget",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Interface e widgets",
       "file_type": "code",
-      "norm_label": "statelesswidget",
       "source_file": null,
-      "source_location": null
+      "source_location": null,
+      "_origin": "ast"
     },
     {
       "id": "valuechanged",
@@ -4189,13 +4183,10 @@
     {
       "id": "list",
       "label": "List",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "Modelo do plano",
       "file_type": "code",
-      "norm_label": "list",
       "source_file": null,
-      "source_location": null
+      "source_location": null,
+      "_origin": "ast"
     },
     {
       "id": "package_trainforge_features_home_presentation_pages_home_page_dart",
@@ -4572,106 +4563,10 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_data_auth_repository",
-      "label": "auth_repository.dart",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_authrepository",
-      "label": "AuthRepository",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_googlesignin",
-      "label": "_googleSignIn",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_api",
-      "label": "_api",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_storage",
-      "label": "_storage",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_initialization",
-      "label": "_initialization",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "static_future",
       "label": "static Future",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_ensureinitialized",
-      "label": "_ensureInitialized",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_signinwithgoogle",
-      "label": "signInWithGoogle",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_isauthenticated",
-      "label": "isAuthenticated",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_getme",
-      "label": "getMe",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_logout",
-      "label": "logout",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_getsavedtoken",
-      "label": "getSavedToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -4948,6 +4843,414 @@
       "_origin": "ast"
     },
     {
+      "id": "main",
+      "label": "main.dart",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "main_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository",
+      "label": "auth_repository.dart",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_authrepository",
+      "label": "AuthRepository",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_googlesignin",
+      "label": "_googleSignIn",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_api",
+      "label": "_api",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "authapi",
+      "label": "AuthApi",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_storage",
+      "label": "_storage",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "authstorage",
+      "label": "AuthStorage",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_initialization",
+      "label": "_initialization",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_ensureinitialized",
+      "label": "_ensureInitialized",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_signinwithgoogle",
+      "label": "signInWithGoogle",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_signin",
+      "label": "signIn",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_isauthenticated",
+      "label": "isAuthenticated",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_restoresession",
+      "label": "restoreSession",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_getme",
+      "label": "getMe",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_getsavedtoken",
+      "label": "getSavedToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "domain_auth_profile_dart",
+      "label": "../domain/auth_profile.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile",
+      "label": "auth_profile.dart",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_authprofile",
+      "label": "AuthProfile",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_sessionrepository",
+      "label": "SessionRepository",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_sessionfailure",
+      "label": "SessionFailure",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_sessionexception",
+      "label": "SessionException",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "exception",
+      "label": "Exception",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_email",
+      "label": "email",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_image",
+      "label": "image",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_failure",
+      "label": "failure",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_fromjson",
+      "label": "fromJson",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_restoresession",
+      "label": "restoreSession",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_signin",
+      "label": "signIn",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_domain_auth_profile_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller",
+      "label": "auth_controller.dart",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_authaction",
+      "label": "AuthAction",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_authcontroller",
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "changenotifier",
+      "label": "ChangeNotifier",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_profile",
+      "label": "profile",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_message",
+      "label": "message",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_failedaction",
+      "label": "failedAction",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_disposed",
+      "label": "_disposed",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_restore",
+      "label": "restore",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_login",
+      "label": "login",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_retry",
+      "label": "retry",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_run",
+      "label": "_run",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "features_auth_presentation_pages_auth_page",
       "label": "auth_page.dart",
       "file_type": "code",
@@ -4964,48 +5267,8 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_presentation_pages_auth_page_authpagestate",
-      "label": "_AuthPageState",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_repository",
-      "label": "repository",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_loading",
-      "label": "loading",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_errormessage",
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_handlelogin",
-      "label": "handleLogin",
+      "id": "features_auth_presentation_pages_auth_page_controller",
+      "label": "_controller",
       "file_type": "code",
       "source_file": "features/auth/presentation/pages/auth_page.dart",
       "source_location": null,
@@ -5020,18 +5283,714 @@
       "_origin": "ast"
     },
     {
-      "id": "main",
-      "label": "main.dart",
+      "id": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "label": "package:trainforge/features/catalog/presentation/catalog_page.dart",
       "file_type": "code",
-      "source_file": "main.dart",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "main_main",
-      "label": "main",
+      "id": "auth_controller_dart",
+      "label": "../auth_controller.dart",
       "file_type": "code",
-      "source_file": "main.dart",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository",
+      "label": "catalog_repository.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_gocatalogrepository",
+      "label": "GoCatalogRepository",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_dio",
+      "label": "dio",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_public",
+      "label": "_public",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "options_get",
+      "label": "Options get",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_data_catalog_repository_detail",
+      "label": "detail",
+      "file_type": "code",
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "domain_catalog_entry_dart",
+      "label": "../domain/catalog_entry.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry",
+      "label": "catalog_entry.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogentry",
+      "label": "CatalogEntry",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogfilters",
+      "label": "CatalogFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogpagedata",
+      "label": "CatalogPageData",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogfacets",
+      "label": "CatalogFacets",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogrepository",
+      "label": "CatalogRepository",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_sourcename",
+      "label": "sourceName",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_id_versionid_kind",
+      "label": "String id, versionId, kind,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_sourcepublishedversion",
+      "label": "sourcePublishedVersion",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_title_locale",
+      "label": "String? title, locale,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_populations",
+      "label": "populations",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_supportrequired",
+      "label": "supportRequired",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "bool",
+      "label": "bool?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_modality",
+      "label": "modality",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_supportsource_category",
+      "label": "String? supportSource, category,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_namecreators",
+      "label": "nameCreators",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_namelicenseurl",
+      "label": "nameLicenseUrl",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_items",
+      "label": "items",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_nextcursor",
+      "label": "nextCursor",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_unknownpopulationcount",
+      "label": "unknownPopulationCount",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "int_movementcount_programcount_unknownenvironmentcount",
+      "label": "int movementCount,\n      programCount,\n      unknownEnvironmentCount,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_catalogstrings",
+      "label": "catalogStrings",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_copywith",
+      "label": "copyWith",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_fromjson",
+      "label": "fromJson",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_domain_catalog_entry_detail",
+      "label": "detail",
+      "file_type": "code",
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller",
+      "label": "catalog_controller.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_catalogcontroller",
+      "label": "CatalogController",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_filters",
+      "label": "filters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_items",
+      "label": "items",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_moreerror",
+      "label": "moreError",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_nextcursor_error",
+      "label": "String? nextCursor, error,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_generation",
+      "label": "_generation",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_disposed",
+      "label": "_disposed",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_more",
+      "label": "more",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page",
+      "label": "catalog_detail_page.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_catalogsourcelink",
+      "label": "CatalogSourceLink",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_catalogdetailpage",
+      "label": "CatalogDetailPage",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_catalogdetailpagestate",
+      "label": "_CatalogDetailPageState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "widgetsbindingobserver",
+      "label": "WidgetsBindingObserver",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_uri",
+      "label": "uri",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "return",
+      "label": "return",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_value",
+      "label": "value",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_entry",
+      "label": "entry",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_pending",
+      "label": "pending",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_safecataloglink",
+      "label": "safeCatalogLink",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_detail_page_retry",
+      "label": "retry",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_url_launcher_url_launcher_dart",
+      "label": "package:url_launcher/url_launcher.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page",
+      "label": "catalog_page.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_catalogpage",
+      "label": "CatalogPage",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "label": "_CatalogPageState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_search",
+      "label": "search",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_choosefilters",
+      "label": "chooseFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_clearfilters",
+      "label": "clearFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_header",
+      "label": "_header",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_notice",
+      "label": "_notice",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "data_catalog_repository_dart",
+      "label": "../data/catalog_repository.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "catalog_controller_dart",
+      "label": "catalog_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "catalog_detail_page_dart",
+      "label": "catalog_detail_page.dart",
+      "file_type": "code",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
@@ -5060,50 +6019,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_auth_gate_repository",
-      "label": "repository",
+      "id": "shared_widgets_auth_gate_controller",
+      "label": "controller",
       "file_type": "code",
       "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_auth_gate_loading",
-      "label": "loading",
-      "file_type": "code",
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_auth_gate_signedin",
-      "label": "signedIn",
-      "file_type": "code",
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_auth_gate_errormessage",
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_auth_gate_user",
-      "label": "user",
-      "file_type": "code",
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "map",
-      "label": "Map",
-      "file_type": "code",
-      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
@@ -5124,16 +6043,8 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_auth_gate_checksession",
-      "label": "checkSession",
-      "file_type": "code",
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_auth_gate_logout",
-      "label": "logout",
+      "id": "shared_widgets_auth_gate_dispose",
+      "label": "dispose",
       "file_type": "code",
       "source_file": "shared/widgets/auth_gate.dart",
       "source_location": null,
@@ -5144,6 +6055,14 @@
       "label": "build",
       "file_type": "code",
       "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_auth_presentation_auth_controller_dart",
+      "label": "package:trainforge/features/auth/presentation/auth_controller.dart",
+      "file_type": "code",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     }
@@ -11121,252 +12040,6 @@
       "_origin": "ast"
     },
     {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_authrepository",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_googlesignin",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "googlesignin",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_api",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_api_authapi",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_storage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_storage_authstorage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_initialization",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "static_future",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_ensureinitialized",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_signinwithgoogle",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_isauthenticated",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_getme",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_logout",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_getsavedtoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "package_dio_dio_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "package_flutter_foundation_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "package_google_sign_in_google_sign_in_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "package_trainforge_core_config_app_config_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "domain_auth_user_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "auth_api_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_repository",
-      "target": "auth_storage_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "features_auth_data_auth_storage",
       "target": "features_auth_data_auth_storage_authstorage",
       "relation": "defines",
@@ -11825,172 +12498,6 @@
       "_origin": "ast"
     },
     {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_authpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_authpage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_authpagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_authpagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_authpagestate",
-      "target": "features_auth_presentation_pages_auth_page_authpage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_repository",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_loading",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_errormessage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "string",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_handlelogin",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_features_auth_data_auth_repository_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_shared_widgets_auth_gate_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "main",
       "target": "main_main",
       "relation": "defines",
@@ -12032,6 +12539,2107 @@
       "source_file": "main.dart",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_authrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository_authrepository",
+      "target": "features_auth_domain_auth_profile_sessionrepository",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_googlesignin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "googlesignin",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_api",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "authapi",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_storage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "authstorage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_initialization",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "static_future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_ensureinitialized",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_signinwithgoogle",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_signin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_isauthenticated",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_restoresession",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_getme",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_logout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_getsavedtoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "package_google_sign_in_google_sign_in_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "package_trainforge_core_config_app_config_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "domain_auth_user_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "domain_auth_profile_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "auth_api_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_repository",
+      "target": "auth_storage_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_authprofile",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_sessionrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_sessionfailure",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_sessionexception",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile_sessionexception",
+      "target": "exception",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_id",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_email",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_image",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_failure",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_sessionfailure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_fromjson",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_restoresession",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_signin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_domain_auth_profile",
+      "target": "features_auth_domain_auth_profile_logout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/domain/auth_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authaction",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authcontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller_authcontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_domain_auth_profile_sessionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_profile",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_domain_auth_profile_authprofile",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_busy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_message",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_failedaction",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authaction",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_disposed",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_restore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_login",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_logout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_retry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_run",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_auth_controller",
+      "target": "domain_auth_profile_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_authpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page_authpage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_auth_controller_authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page_build",
+      "target": "materialpageroute",
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_object",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_shared_widgets_auth_gate_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_gocatalogrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository_gocatalogrepository",
+      "target": "features_catalog_domain_catalog_entry_catalogrepository",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_dio",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "dio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_public",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "options_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_list",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "features_catalog_data_catalog_repository_detail",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "package_trainforge_core_http_app_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_data_catalog_repository",
+      "target": "domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/data/catalog_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogentry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogfilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogpagedata",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogfacets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_sourcename",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "string_id_versionid_kind",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_sourcepublishedversion",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "string_title_locale",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_populations",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_supportrequired",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "bool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_modality",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "string_supportsource_category",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_namecreators",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_namelicenseurl",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_items",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_nextcursor",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_unknownpopulationcount",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "int_movementcount_programcount_unknownenvironmentcount",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_catalogstrings",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_copywith",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_fromjson",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_list",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_domain_catalog_entry",
+      "target": "features_catalog_domain_catalog_entry_detail",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/domain/catalog_entry.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_catalogcontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller_catalogcontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_domain_catalog_entry_catalogrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_filters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_domain_catalog_entry_catalogfilters",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_domain_catalog_entry_catalogfacets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_items",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_moreerror",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "string_nextcursor_error",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_busy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_generation",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_disposed",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_load",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_more",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "features_catalog_presentation_catalog_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_controller",
+      "target": "domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_catalogsourcelink",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page_catalogsourcelink",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_catalogdetailpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page_catalogdetailpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_catalogdetailpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page_catalogdetailpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page_catalogdetailpagestate",
+      "target": "features_catalog_presentation_catalog_detail_page_catalogdetailpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page_catalogdetailpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_uri",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "return",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_label",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_value",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_entry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_domain_catalog_entry_catalogentry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_domain_catalog_entry_catalogrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_pending",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_safecataloglink",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "features_catalog_presentation_catalog_detail_page_retry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "package_url_launcher_url_launcher_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_detail_page",
+      "target": "domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_catalogpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "features_catalog_presentation_catalog_page_catalogpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_controller_catalogcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_search",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_choosefilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_clearfilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_header",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_notice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "data_catalog_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalog_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalog_detail_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_domain_catalog_entry_catalogfilters",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
       "_origin": "ast"
     },
     {
@@ -12091,7 +14699,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_repository",
+      "target": "shared_widgets_auth_gate_controller",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -12102,63 +14710,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_loading",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_signedin",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_errormessage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "string",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_user",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "map",
+      "target": "features_auth_presentation_auth_controller_authcontroller",
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -12192,18 +14744,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_checksession",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "shared_widgets_auth_gate_logout",
+      "target": "shared_widgets_auth_gate_dispose",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -12225,7 +14766,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "package_dio_dio_dart",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -12248,6 +14789,17 @@
     {
       "source": "shared_widgets_auth_gate",
       "target": "package_trainforge_features_auth_data_auth_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "package_trainforge_features_auth_presentation_auth_controller_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,

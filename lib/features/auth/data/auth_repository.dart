@@ -3,10 +3,11 @@ import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:trainforge/core/config/app_config.dart';
 import '../domain/auth_user.dart';
+import '../domain/auth_profile.dart';
 import 'auth_api.dart';
 import 'auth_storage.dart';
 
-class AuthRepository {
+class AuthRepository implements SessionRepository {
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
   final AuthApi _api;
   final AuthStorage _storage;
@@ -40,7 +41,18 @@ class AuthRepository {
 
   Future<AuthUser> signInWithGoogle() async {
     await _ensureInitialized();
-    final account = await _googleSignIn.authenticate();
+    GoogleSignInAccount account;
+    try {
+      account = await _googleSignIn.authenticate();
+    } on GoogleSignInException catch (error) {
+      if (error.code.name == "canceled") {
+        throw const SessionException(SessionFailure.cancelled);
+      }
+      if (error.code.name == "clientConfigurationError") {
+        throw const SessionException(SessionFailure.configuration);
+      }
+      rethrow;
+    }
     final idToken = account.authentication.idToken;
     if (idToken == null || idToken.isEmpty) {
       throw StateError('Google não retornou credencial.');
@@ -50,22 +62,36 @@ class AuthRepository {
     return session;
   }
 
-  Future<bool> isAuthenticated() async {
+  @override
+  Future<AuthProfile> signIn() async {
+    final session = await signInWithGoogle();
+    return AuthProfile(
+      id: session.id,
+      name: session.name,
+      email: session.email,
+      image: session.image,
+    );
+  }
+
+  Future<bool> isAuthenticated() async => await restoreSession() != null;
+
+  @override
+  Future<AuthProfile?> restoreSession() async {
     final token = await _storage.getToken();
-    if (token == null || token.isEmpty) return false;
+    if (token == null || token.isEmpty) return null;
     try {
-      await _api.getMe();
-      return true;
+      return AuthProfile.fromJson(await _api.getMe());
     } on DioException catch (error) {
       if (error.response?.statusCode == 401) {
         await _storage.clearIfAccessToken(token);
-        return false;
+        return null;
       }
       rethrow;
     }
   }
 
   Future<Map<String, dynamic>> getMe() => _api.getMe();
+  @override
   Future<void> logout() async {
     final refresh = await _storage.getRefreshToken();
     // Failure remains visible/retryable; never claim server revocation offline.

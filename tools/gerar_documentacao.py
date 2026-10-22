@@ -130,7 +130,7 @@ def outputs(root):
     text += "\n## Planejado: jornadas da V1\n\n"
     for journey in plan["flows"]:
         text += f"### {journey['title']}\n\n"
-        text += flow([(str(i), s) for i, s in enumerate(journey["steps"])], [(str(i), str(i + 1), "próximo estado proposto") for i in range(len(journey["steps"]) - 1)])
+        text += flow([(str(i), s) for i, s in enumerate(journey["steps"])], [(str(i), str(i + 1), journey.get("edgeLabel", "próximo estado proposto")) for i in range(len(journey["steps"]) - 1)])
     text += "\n[Voltar ao mapa](../README.md) · [Responsabilidade de cada tela](../fluxos.md)\n"
     result[doc] = text
 

@@ -44,9 +44,11 @@ ACL de `android/key.properties` foi restringida à conta Windows atual e SYSTEM 
 
 ## Teste real e retomada
 
+Autor fora do notebook em22/10; login consentido/cadastrorelease aguardam retorno. [Um comando de retomada](avaliacao-android.md) prepara banco/API/emulador e reutiliza o APK validado. Biblioteca já acessível semGoogle.
+
 Emulador existente TrainForge_Benchmark: Android35, GooglePlay,2GBRAM. Sem novo AVD, wipe, reset ou instalação Flutter. Conferir serial; `adb -s emulator-5554 reverse tcp:8082 tcp:8082`. API somente loopback.
 
-1. DB V1 com migration00004; API local e Swagger com seis operações.
+1. DB V1 com migration00004; API local e Swagger com11operações (saúde/auth/consulta).
 2. APKdebug com client ID conferido; verificar certificado/checksum; instalar sem uninstall.
 3. Autor autentica manualmente numa conta de teste. Senha/2FA/consentimento só pelo autor. Não pedir tokens, capturar logcat integral ou tela de senha.
 4. Confirmar conta real na tela, GETme200 e identidade persistida; reabrir confirma sessão.
@@ -55,6 +57,6 @@ Emulador existente TrainForge_Benchmark: Android35, GooglePlay,2GBRAM. Sem novo 
 
 Depois orientar celular: opções de desenvolvedor, depuração USB, autorizar computador, serial ADB, reverse específico e instalação sem apagar dados.
 
-`auth-local-verification.json`: fixtures RSA/JWKS, rejeições HTTP e concorrência PostgreSQL em base temporária removida, contagem de usuários V1 inalterada. Testes Flutter: `test/auth_security_test.dart` e `test/session_refresh_test.dart`. Nenhuma fixture comprova login Google real. Handoff traz estado do APK/emulador e pendências.
+`auth-local-verification.json`: fixtures RSA/JWKS, rejeições HTTP e concorrência PostgreSQL em base temporária removida, contagem de usuários V1 inalterada. Testes Flutter: `test/auth_security_test.dart`, `test/session_refresh_test.dart` e `test/auth_controller_test.dart`. Backup/transferência Android excluem arquivos do app e tokens; allowBackup=false e regras explícitas para cloud/device/cross-platform-transfer. iOS não validado. Nenhuma fixture comprova login Google real. Handoff traz estado do APK/emulador e pendências.
 
 Fontes: [Google ID token](https://developers.google.com/identity/gsi/web/guides/verify-google-id-token), [SDK Go](https://docs.cloud.google.com/go/docs/reference/cloud.google.com/go/auth/latest/credentials/idtoken), [Flutter Android](https://pub.dev/packages/google_sign_in_android#integration).

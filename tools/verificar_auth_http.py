@@ -25,8 +25,9 @@ def main():
     with urlopen("http://127.0.0.1:8082/docs/doc.json",timeout=10) as response:
         spec=json.load(response)
     count=sum(len(v) for v in spec["paths"].values())
-    if count!=6:
-        raise RuntimeError("expected six Swagger operations")
+    required={"/api/v1/auth/google","/api/v1/auth/refresh","/api/v1/auth/logout","/api/v1/me","/api/v1/health/live","/api/v1/health/ready"}
+    if not required.issubset(spec["paths"]):
+        raise RuntimeError("missing implemented auth/health Swagger operations")
     receipt={"scope":"real-local-process-negative-auth","results":results,"swaggerOperations":count,
              "realGoogleLoginValidated":False,"syntheticUserCreated":False}
     (ROOT/"docs/execucao/v1/auth-http-verification.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")

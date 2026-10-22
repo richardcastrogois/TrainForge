@@ -1,8 +1,8 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9147d3cd1695ebc5`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b9e82df15eb537fc`.
 
-**9/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**10/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
@@ -10,7 +10,7 @@
 | EP02 | Conteúdo, autoria e direitos | 3 | 3 |
 | EP03 | Fundação Go, contratos e banco | 4 | 4 |
 | EP04 | Identidade, privacidade e acesso | 3 | 0 |
-| EP05 | Biblioteca humana e API de catálogo | 3 | 0 |
+| EP05 | Biblioteca humana e API de catálogo | 3 | 1 |
 | EP06 | Atividade e alimentação registradas de verdade | 4 | 0 |
 | EP07 | Flutter e experiência da V1 | 7 | 0 |
 | EP08 | Segurança, desempenho e observabilidade | 3 | 0 |
@@ -121,7 +121,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-014 | todo | Servir catálogo, versão e requisitos de uso | V1-006, V1-008 |
+| V1-014 | done | Servir catálogo, versão e requisitos de uso | V1-006, V1-008 |
 | V1-015 | todo | Criar adesão sem geração de treino | V1-014, V1-013 |
 | V1-016 | todo | Expor instrução acessível e mídia com direitos | V1-014 |
 ### EP06 — Atividade e alimentação registradas de verdade

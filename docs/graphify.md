@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização22/10: catálogo e controllers
+
+50arquivosDart;10alterados/40inalterados/0removidos,615nós/786arestas. Update incremental code-only e HTML exportado, sem clusterização/custoLLM. Backup desta rodada retido em.local/graphify-backup-20261022-catalog. Contagens anteriores abaixo são históricas.
+
 ## Atualização22/10: autenticação Flutter
 
 Atualização incremental somente de código:10arquivos alterados,33inalterados,0removidos;43arquivosDart,499nós/640arestas. graph.json/manifest.json e graph.html atualizados. Sem clusterização/extracão semântica ou custo de LLM; rótulos de comunidades anteriores preservados. Backup automático anterior retido em .local/graphify-backup-20261022, fora do Git. O relatório abaixo preserva a conferência histórica de21/10; não foi refeito para fingir nova análise semântica.

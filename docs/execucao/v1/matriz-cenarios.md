@@ -1,6 +1,6 @@
 # Matriz de cenários do APK de avaliação
 
-Direção do autor em21/10/2026. O objetivo é percorrer o app inteiro, um cenário de cada vez, enquanto ele é desenvolvido. Esta matriz é roteiro e diagnóstico documental; **nenhum cenário foi testado em um APK novo nesta etapa**. A existência de Flutter/Fastify inicial não comprova a nova integração Go, importação nem prática liberada.
+Direção do autor em21/10/2026. O objetivo é percorrer o app inteiro, um cenário de cada vez, enquanto ele é desenvolvido. Atualizada em22/10 com o APKdebug0.1.1+2 e API/DB reais. Biblioteca/detalhe de consulta foram inspecionados no emulador; Google real aguarda autor. [Roteiro de retomada](avaliacao-android.md) e [V1-014](catalogo-consulta.md). Esta avaliação parcial não libera prática nem conclui os demais cenários.
 
 Entrada de conteúdo: [manifesto de candidatos](../../../content/manifests/pilot-candidates.json), com331famílias,46recortesN e34componentes documentais selecionados. Os componentes são11para cuidadores,5domésticos idosos,9de academia e9de praça; não34programas completos. Todas as fontes continuam visíveis no inventário, inclusive referências, condicionais e antigas incompatíveis com custo zero. São22famílias de fontes alimentares, não22alimentos.
 
@@ -14,8 +14,8 @@ Conta nova começa sem histórico ou medidas. Para avaliar perfis/ambientes dife
 
 | Cenário | Requisitos | Conteúdo/evidência de partida | Estado conhecido e o que verificar no APK |
 |---|---|---|---|
-| C01 — abrir, entrar, sair e retomar | R01/R16/R17/R18 | Base Flutter/Fastify; diagnóstico atual | Base inicial estática; integração Go/novo APK pendente. Conferir conta real, erros, sessão, logout e retomada sem perda indevida. |
-| C02 — entrada e escolha por contexto | R01/R02/R04/R06/R16 | CoberturaN15–N34 e biblioteca de fontes | Cenário planejado. Escolher modalidade/ambiente/recursos sem presumir aparelho, saúde, experiência ou criar prescrição. |
+| C01 — abrir, entrar, sair e retomar | R01/R16/R17/R18 | Base Flutter/Fastify; diagnóstico atual | AuthGo/Flutter implementados e APK0.1.1+2 instalado; loginGoogle real aguarda autor. Conferir conta real, erros, sessão, logout e retomada sem perda indevida. |
+| C02 — entrada e escolha por contexto | R01/R02/R04/R06/R16 | CoberturaN15–N34 e biblioteca de fontes | Consulta de metadados disponível semlogin: busca/filtros de valores efetivamente informados, campos desconhecidos explícitos. Contexto/seleção de rotina ainda pendentes. Escolher modalidade/ambiente/recursos sem presumir aparelho, saúde, experiência ou criar prescrição. |
 | C03 — casa e pessoa idosa | R03/R04/R05/R06 | N15/N16/N17; PR28/ES2019-DOM-01,5movimentos | Candidato documental separado dos cuidadores; direitos, apresentação e critérios de uso ainda requerem revisão. Conferir requisitos e campos ausentes. |
 | C04 — cuidador como praticante | R01/R03/R05/R06 | N15: CG01/PR42,CG04/PR68,CG06/PR261;11componentes | Consulta documental; apoio/população de cada componente não são intercambiáveis. Testar distinção familiar/profissional/pessoa assistida e razões de restrição. |
 | C05 — academia | R02/R03/R04/R05 | N18/N19/N20;9correspondências textuais de máquina/pesos livres | Equipamento real e prática não testados nesta rodada. Conferir nome, variante, preparação/instrução disponível, requisitos e falta de mídia; não alegar que toda máquina é equivalente. |
@@ -35,7 +35,7 @@ Conta nova começa sem histórico ou medidas. Para avaliar perfis/ambientes dife
 | C19 — GPS, sensores e dispositivos | R11/R17 | N35/N36/N37/N38 | Integração real posterior. Conferir a lacuna no APK; tempo de sessão não equivale a distância ou gasto medidos. |
 | C20 — imagem de atividade | R11/R12 | N43 | Posterior; captura/importação por imagem não implementadas. Não inferir execução, tempo ou gasto a partir de uma foto. |
 | C21 — acompanhamento de pessoa assistida | R01/R06/R10/R18 | N44; cuidador e titular separados | Posterior. Autorização/vínculo real ainda requerem implementação; papel de cuidador não concede acesso a registros de outra pessoa. |
-| C22 — linguagem e acessibilidade | R05/R15/R17 | N45; textos e versões efetivamente disponíveis | Testar texto ampliado, leitor de tela, contraste, navegação e linguagem no APK real. Fonte em outro idioma não vira tradução revisada automaticamente. |
+| C22 — linguagem e acessibilidade | R05/R15/R17 | N45; textos e versões efetivamente disponíveis | Teste widget de texto2x/320x568 e inspeção visual da biblioteca/detalhe passaram; leitor de tela físico ainda não validado. Testar contraste, navegação e linguagem no APK real. Fonte em outro idioma não vira tradução revisada automaticamente. |
 | C23 — confiança, custo e operação | R18 | N46; decisão de compra única; política de mídia | Conferir autoria, permissões, versão, rede, segurança e custos. Licença paga depende de proposta/aceite; avaliação não autoriza assinatura, contato ou compra. |
 | C24 — paridade de plataformas | R17 | Android inicial; N37/N38; V1-038/039 | APK Android primeiro. iOS mantém implementação e testes próprios; não declarar validado pelo resultado Android. |
 
