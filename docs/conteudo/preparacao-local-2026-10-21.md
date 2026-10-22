@@ -51,3 +51,7 @@ V1-005: revisar a fila por ativo/operação, começando pelos6textos portugueses
 Alimentação: os insumos completos estão preparados; localização, resolução de identidades/bases e aprovação por fonte/uso continuam antes da importaçãoV1-019, que também depende do bancoV1-010. Nenhum alimento foi gravado em banco nesta rodada. Não marcarV1-006/019ouAPK concluídos por existir JSON local.
 
 [Auditoria de512ponteiros e1.069.660células](../execucao/v1/verificacao-preparacao-local.json), [decisões do autor](../execucao/v1/decisoes-piloto.md), [cenários](../execucao/v1/matriz-cenarios.md) e [backlog](../execucao/v1/backlog.md).
+
+## Atualização posterior na mesma rodada
+
+A [revisão de consulta](revisao-consulta-2026-10-21.md) já conferiu os seis textos portugueses e separou73entradas de catálogo/2textos para consulta, com créditos/condições. O lote candidato e sua matriz permanecem sem aprovações automáticas; a projeção revisada é outro arquivo/manifesto. Vinte mapas de exceções de direitos agora ficam no campo próprio `sourceRightsFacts`, com etiqueta de licença desconhecida, respeitando o schema. V1-005 permanece em andamento; prática, mídia, alimentação e entrega noAPK não foram homologadas.

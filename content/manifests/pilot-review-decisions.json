@@ -1,0 +1,2560 @@
+{
+  "schemaVersion": "1.0.0",
+  "date": "2026-10-21",
+  "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+  "reviewScope": "Revisao documental por agente, integridade e uso de consulta; nao revisao profissional de pratica, aconselhamento juridico ou distribuicao ja realizada.",
+  "sourceBundle": {
+    "path": "content/local/editorial-v1.json",
+    "sha256": "8c78fa41c474d1d027e7633aee1724b96b3604074c2aacc22323b93eedb09390"
+  },
+  "primaryTermsChecked": [
+    {
+      "url": "https://github.com/wger-project/wger#license",
+      "observation": "Projeto separa codigoAGPL de dadosCreativeCommons por entrada; busca primaria conferida, abertura integralGitHubfalhou nesta rodada."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "observation": "Codigo legal aberto em21/10; credito/avisos, alteracoes, ShareAlike e restricoes adicionais conferidos."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/legalcode",
+      "observation": "Codigo legal aberto em21/10; credito/titulo/avisos, ShareAlike e restricoes adicionais conferidos."
+    }
+  ],
+  "approvedOperations": [
+    {
+      "assetId": "wger:movement:9",
+      "assetSha256": "e76b458db45ad20f54bd20d6ad25ac8cc7b333111c91250f2b674f0b60034010",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "2 Handed Kettlebell Swing",
+        "creators": [
+          "deusinvictus",
+          "wger / deusinvictus"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:345",
+          "creators": [
+            "deusinvictus"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:12",
+      "assetSha256": "becb91310c0d8b058ba6255a1ffc3d5d84f3d3a63272a089087fb4f21428ef6e",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Seated Hip Adduction",
+        "creators": [
+          "flori",
+          "wger / wgerjhn, Goulart, flori, Araaosf, wger.de",
+          "wgerjhn",
+          "Goulart",
+          "Araaosf",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/1",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:377",
+          "creators": [
+            "flori",
+            "Araaosf"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:20",
+      "assetSha256": "0cd432ea93483e09cf3c4fea895c3ccf0d981159fd34be0f021336bb54c0663e",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Arnold Shoulder Press",
+        "creators": [
+          "trzr23",
+          "wger / bloody_disgrace, wgerjhn, trzr23",
+          "bloody_disgrace",
+          "wgerjhn"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/2",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:227",
+          "creators": [
+            "trzr23"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:31",
+      "assetSha256": "7a79f9dd13d184fc7b554188c5602f51f4239e7351eb674843294eaa51bf0723",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Axe Hold",
+        "creators": [
+          "GrosseHund",
+          "wger / GrosseHund, wgerjhn, Wunschcoach",
+          "wgerjhn",
+          "Wunschcoach"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/3",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:289",
+          "creators": [
+            "GrosseHund"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:41",
+      "assetSha256": "e4f1e4d22683415697912e7c60be178cc503ddc81b1a1693870046a1c8827776",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Ab Rollout",
+        "creators": [
+          "sevae",
+          "wger / sevae, wgerjhn, wger.de",
+          "wgerjhn",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/4",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:343",
+          "creators": [
+            "sevae"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:43",
+      "assetSha256": "917c359d226e00f415e8267968b2f990e271019aeb54172cf1e9d385374dc516",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Hack Squats",
+        "creators": [
+          "BePieToday",
+          "wger / BePieToday, wgerjhn",
+          "wgerjhn"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:407",
+          "creators": [
+            "BePieToday"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:46",
+      "assetSha256": "97d8de9210ab31197fb95daca814db03b744ed2c220511b9b9cfbe5aee97a9b1",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Lunges Standing",
+        "creators": [
+          "Mikko Ruohola",
+          "wger / wgerjhn, Goulart, wampir5000, wger.de, Mikko Ruohola",
+          "wgerjhn",
+          "Goulart",
+          "wampir5000",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/6",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:405",
+          "creators": [
+            "Mikko Ruohola"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:48",
+      "assetSha256": "558bb98d2fdbd814b2ba434cd3e358bcc4e0aefae70c1ce03a17d2292a6f80b9",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Reverse Wrist Curl",
+        "creators": [
+          "burenl",
+          "wger / wgerjhn, burenl, wger.de",
+          "wgerjhn",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/7",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:759",
+          "creators": [
+            "burenl"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:50",
+      "assetSha256": "14bbb83b2fa747fb5f116d5d9427e02f33edf540c35a9f3379f163bab959294c",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Triceps Extension",
+        "creators": [
+          "sevae",
+          "wger / sevae, Franpol, FEFFO, wger.de",
+          "Franpol",
+          "FEFFO",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/8",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:344",
+          "creators": [
+            "sevae"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:51",
+      "assetSha256": "545379d98bbfc2f8998ad980b619e60e5236b45205a452a9508890d9deadcd6a",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Flexão de Punho com Barra",
+        "creators": [
+          "burenl",
+          "wger / burenl, wgerjhn, bruunomooura, wger.de, Konsumopfer",
+          "wgerjhn",
+          "bruunomooura",
+          "wger.de",
+          "Konsumopfer"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/9",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2138",
+          "creators": [
+            "burenl",
+            "bruunomooura"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:translations:2138",
+      "assetSha256": "c2abb533fd466db58b810b3205b21b5d4fcc085e96fc9a932b8afc169b224647",
+      "operation": "instruction_text",
+      "credits": {
+        "title": "Flexão de Punho com Barra",
+        "creators": [
+          "burenl",
+          "bruunomooura"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/9/translations/3",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:56",
+      "assetSha256": "273f6ab9342b6d525251a92481ed10a7b6341a36eb8f0cec73a78fd4bc4874c8",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Abdominal Stabilization",
+        "creators": [
+          "andikeller",
+          "wger / wgerjhn, wger.de, andikeller",
+          "wgerjhn",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/10",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:1061",
+          "creators": [
+            "andikeller",
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:57",
+      "assetSha256": "b60cabb45d110ca5e10f750da4049ba05b3fd7afb8e05521ac9e94a15889c90f",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bear Walk 2",
+        "creators": [
+          "nate303303",
+          "wger / wgerjhn, nate303303, wger.de, Wunschcoach",
+          "wgerjhn",
+          "wger.de",
+          "Wunschcoach"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/11",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:307",
+          "creators": [
+            "nate303303"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:71",
+      "assetSha256": "547afcbbcadb503298bee1d1ba38c69b4b6a23d1d5e9c11162dd5ebf6aaa2281",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Single Leg Extension",
+        "creators": [
+          "wger.de",
+          "wger / wgerjhn, wger.de",
+          "wgerjhn"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/12",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:1057",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:73",
+      "assetSha256": "b6e1dca1c4e59361314f972fecd99924841e57199fe2b656ab76f714cca05ff2",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bench Press",
+        "creators": [
+          "sistab2",
+          "wger / rlamarca, wgerjhn, Goulart, wampir5000, wger.de, sistab2",
+          "rlamarca",
+          "wgerjhn",
+          "Goulart",
+          "wampir5000",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/13",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:192",
+          "creators": [
+            "sistab2"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:75",
+      "assetSha256": "bcbc0d3a6d6a5133ed67ffa2bd1172250126cb68a90594b2697912d42d651831",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Supino com halteres",
+        "creators": [
+          "wger.de",
+          "wger / Jhonatan, Goulart, Garion, FEFFO, wger.de, admin",
+          "Jhonatan",
+          "Goulart",
+          "Garion",
+          "FEFFO",
+          "admin"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/14",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2789",
+          "creators": [
+            "Jhonatan"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:translations:2789",
+      "assetSha256": "b6e584fa9d76e3a122e1cc33af95b3a6ddc6198ace5502421cddf98d1da0fcf5",
+      "operation": "instruction_text",
+      "credits": {
+        "title": "Supino com halteres",
+        "creators": [
+          "Jhonatan"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/14/translations/5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:76",
+      "assetSha256": "c9a468fb74e35d7ca3f2c9eadd6f5c63a547d55286c44297d018c956ef3a0e7d",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bench Press Narrow Grip",
+        "creators": [
+          "wger.de",
+          "wger / wgerjhn, nishant0712, FEFFO, wger.de",
+          "wgerjhn",
+          "nishant0712",
+          "FEFFO"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/15",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:88",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:79",
+      "assetSha256": "89a6e06fef3231b7bf9a238fdc375612406698cc4c9a56d531cae6bf281ac9e8",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bent High Pulls",
+        "creators": [
+          "lakerbeezel",
+          "wger / wgerjhn, wger.de, lakerbeezel",
+          "wgerjhn",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/16",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:268",
+          "creators": [
+            "lakerbeezel"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:81",
+      "assetSha256": "635f2c6b6486c45ceec4bcc8995bc4f1cc25d4e472212b7fd02f5546b36556e4",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bent Over Dumbbell Rows (Single Arm)",
+        "creators": [
+          "sebk",
+          "wger / Franpol, sebk, wger.de, colundrum",
+          "Franpol",
+          "wger.de",
+          "colundrum"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/17",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:362",
+          "creators": [
+            "sebk"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:82",
+      "assetSha256": "660d5fb35d4c366c3c2b090d709a1499d065107e08b9a74874ef9910f42eee0e",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bent-over Lateral Raises",
+        "creators": [
+          "apeschel",
+          "wger / apeschel, wgerjhn, Goulart, wger.de",
+          "wgerjhn",
+          "Goulart",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/18",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:421",
+          "creators": [
+            "apeschel"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:83",
+      "assetSha256": "8b1e7a4f44f92620f6d54aaaa5597d06c73b9624da20790c2215ee7e2084485a",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Remada Curvada",
+        "creators": [
+          "wger.de",
+          "wger / rlamarca, warchildmd, wgerjhn, br_Orion, wger.de",
+          "rlamarca",
+          "warchildmd",
+          "wgerjhn",
+          "br_Orion"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/19",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2847",
+          "creators": [
+            "br_Orion"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:84",
+      "assetSha256": "5711d1586d866d6560a3ece174230e380727d8fd131c46085b8ea0fe633a8b91",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bent Over Rowing Reverse",
+        "creators": [
+          "wger.de",
+          "wger / wger.de, admin",
+          "admin"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/20",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:110",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:91",
+      "assetSha256": "ec3191a30fa19655b2d33963bb0a8ad4fec2c142b61ed8ba786093c9eafb87d9",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Rosca direta com barra reta",
+        "creators": [
+          "wger.de",
+          "wger / rlamarca, Goulart, roneydya, wger.de, admin",
+          "rlamarca",
+          "Goulart",
+          "roneydya",
+          "admin"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/21",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2888",
+          "creators": [
+            "roneydya"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:92",
+      "assetSha256": "0b1807bfa5a0608b8f8514369936c35f9ac783e4d9e5dedce57921acd8822f86",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Biceps Curls With Dumbbell",
+        "creators": [
+          "wger.de",
+          "wger / Goulart, FEFFO, wger.de, colundrum",
+          "Goulart",
+          "FEFFO",
+          "colundrum"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/22",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:81",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:94",
+      "assetSha256": "e5a99d8a106b9cbedbc0cf5a9782111f7492cc5b8baf5aa71de997b67a44c777",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Biceps Curls With SZ-bar",
+        "creators": [
+          "wger.de",
+          "wger / Franpol, wger.de",
+          "Franpol"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/23",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:80",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:95",
+      "assetSha256": "8baf8a03336f902d62e20d84b270fce72bacde00ee94cabfecb69b8f2af6f803",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Biceps Curl With Cable",
+        "creators": [
+          "wger.de",
+          "wger / wgerjhn, wger.de, Goulart",
+          "wgerjhn",
+          "Goulart"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
+        "jsonPointer": "/data/results/24",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "licenseLabel": "CC-BY-SA 3",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:129",
+          "creators": [
+            "wger.de"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1027",
+      "assetSha256": "d8de9b879c9858d5e360afd72eba6267bb70c759b734b2d66506ac5fa243efab",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Elevated prayer stretch",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/1",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:1972",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1028",
+      "assetSha256": "b16fad426eaf80af1816835578e9c4011123f4d8eee8a6e7ed4d17100336b598",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Quadruped thoracic rotation left",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/2",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:1973",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1029",
+      "assetSha256": "da359033bd77bda588767d88749791c332bb42238d54b93d7c1db8916927e86f",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Quadruped thoracic rotation right",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/3",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:1974",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1080",
+      "assetSha256": "2975009c834dead4eb033ad4739b0634330d7ee650b87628b05868f4d1b77704",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Hindu Pushups",
+        "creators": [
+          "Imobard",
+          "wger / Imobard, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/4",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2025",
+          "creators": [
+            "Imobard"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1081",
+      "assetSha256": "f0ca4029cd6514cb9d50a6b5ec59197915321a60e905926ed730fdb5dd0254db",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Shoulder dislocates",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2031",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1082",
+      "assetSha256": "3a712b15ec242f790bf1e555a5ce2e6fe6950f38b41d9be418f1ec8ca7ccb3ce",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bent over row to external rotation",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/6",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2032",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1083",
+      "assetSha256": "5bd419207656a3baa78cf0358a9076a9c75006f9ee6635b7d38753eacc1f04ac",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "YWTs",
+        "creators": [
+          "tinman",
+          "wger / tinman, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/7",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2033",
+          "creators": [
+            "tinman"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1084",
+      "assetSha256": "18da672b3f8aaae83e7e9e6a42448c2f72607f1091acaa8f4aa839570f8087ae",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Floor Press",
+        "creators": [
+          "admin",
+          "wger / admin, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/8",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2034",
+          "creators": [],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1086",
+      "assetSha256": "3f1b3c3daf166a8546b7e0081f7ee878267af57c5ce7502f5be1eb0baf83be17",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Close-grip Press-ups",
+        "creators": [
+          "philip",
+          "wger / wger.de, philip",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/9",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2036",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1087",
+      "assetSha256": "42bdf8da49360df23bc19c60bc62be920661b824a93b98b03bbe0e3aa58be818",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Hang Power Cleans",
+        "creators": [
+          "philip",
+          "wger / wger.de, philip",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/10",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2037",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1088",
+      "assetSha256": "eee1f5bb3a08e6f192b413028783e9bbed2c94750dfff1c3658c2a789ef01aca",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell sumo deadlift",
+        "creators": [
+          "philip",
+          "wger / wger.de, philip",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/11",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2038",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1089",
+      "assetSha256": "6a7df5d4e50c45434d12d84c37ae4125a3801e6da2db15ccd54b9c885d1b8d22",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Medicine ball twist",
+        "creators": [
+          "clafal",
+          "wger / wger.de, admin, clafal",
+          "wger.de",
+          "admin"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/12",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2039",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1090",
+      "assetSha256": "cb242619ccc1b2125ccf6c29266398a9939b77886017f019f15911ca3edec309",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Vpushup",
+        "creators": [
+          "clafal",
+          "wger / clafal"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/13",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2042",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1091",
+      "assetSha256": "2b5d8a076006dfc6639b828b3a2ca8c3ce7b065fbf3a0283400f6ed5038024c6",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Plank Shoulder Taps",
+        "creators": [
+          "clafal",
+          "wger / wger.de, Franpol, clafal",
+          "wger.de",
+          "Franpol"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/14",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2044",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1092",
+      "assetSha256": "555ddab131d27011f60e69d6587d70e350ced300f81ab5c930090ad3560066d0",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Bag training",
+        "creators": [
+          "clafal",
+          "wger / wger.de, clafal",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/15",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2046",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1093",
+      "assetSha256": "356b8b25fab6382ff8ac02af855daa42744d60b0b376c8f58bee83cc40d1645f",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Rowing Machine",
+        "creators": [
+          "Boertie",
+          "wger / grilobosch, Boertie",
+          "grilobosch"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/16",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2049",
+          "creators": [
+            "Boertie"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1094",
+      "assetSha256": "fe59a24f767c389c83c060113af47b1f8eaf0e1acbbcf489becf53fe5f7bd456",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Seated Bench Press",
+        "creators": [
+          "colundrum",
+          "wger / colundrum, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/17",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2052",
+          "creators": [
+            "colundrum"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1096",
+      "assetSha256": "1e674e85d9a7e97b91fdba550a070a1e26b92517e73f3657f1c0538cc25aeaac",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Abduction while standing",
+        "creators": [
+          "tregga",
+          "wger / tregga, admin, wger.de",
+          "admin",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/18",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2055",
+          "creators": [
+            "tregga"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1098",
+      "assetSha256": "a707dec53aebdbd1cdb5f2539d16bfce037b606b49c544e913023aa84790fd5e",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Seated rear delt rise",
+        "creators": [
+          "philip",
+          "wger / philip"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/19",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2057",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1099",
+      "assetSha256": "540c2bc2a089a8ca05a0f95afed2b6bfde5cf885d7d33e577f73554915217f4b",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dynamic side hold",
+        "creators": [
+          "philip",
+          "wger / wger.de, philip",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/20",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2058",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1100",
+      "assetSha256": "d8933d39622a546d2c7baf809b524ebe12123fb1d2cbbb9c1d57d345332559cf",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Wall balls",
+        "creators": [
+          "philip",
+          "wger / philip"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/21",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2059",
+          "creators": [
+            "philip"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1101",
+      "assetSha256": "a4eeffe3454c403e96b65208182948c3d100eae3b67ffa1432450d0a832b407b",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Horizontal traction isometry",
+        "creators": [
+          "clafal",
+          "wger / clafal"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/22",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2061",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1102",
+      "assetSha256": "dfe0b8f5f45aa84c4a99c0eb796a680b13eb7954795e50934a8c2f99d41b3f6c",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Alternate back lunges",
+        "creators": [
+          "clafal",
+          "wger / clafal"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/23",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2063",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1103",
+      "assetSha256": "1eadb84fd6260fdc53ace0ff3a7f986d71b882be0e1184a527d64e34c7f07019",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "walking bridge",
+        "creators": [
+          "clafal",
+          "wger / wger.de, clafal",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=300",
+        "jsonPointer": "/results/24",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2065",
+          "creators": [
+            "clafal"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1638",
+      "assetSha256": "cd1b6487ca6ba261eba11c7ec71b3554a76275a9171b8d50c3dc5cb10c2b1a0c",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Barbell Clean and press",
+        "creators": [
+          "Rottekongen",
+          "wger / Rottekongen, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2744",
+          "creators": [
+            "Rottekongen"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1639",
+      "assetSha256": "b15b57f9d3b26d112518ad139905c575c5ede8c0644b0e023d32be7ffa916d5f",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Bent Over Face Pull",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/1",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2745",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1640",
+      "assetSha256": "8cd295b3ac836f9398c05f36785d415268faffab959c0314e2d20c7a7f5df1af",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Front Squat",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/2",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2747",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1641",
+      "assetSha256": "e6b6d7ac3a6fed404bd24e14d2ecade2574b0182cd3440a056ee595faff7f94f",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Kettlebell One Legged Deadlift",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/3",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2749",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1642",
+      "assetSha256": "83064bbb70dedf829ad03eeeb55941e990183e8155fa437b4b9f64bf7e443d9d",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Hip Thrust",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/4",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2751",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1648",
+      "assetSha256": "47cd18296d4f3959c42b0ea19474d11c5946b1d9dbf0b5beb3cfd53d43eadbcb",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Weighted Crunch",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2759",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1650",
+      "assetSha256": "45b51022c7b75f8450b79e4bdbf8ab8d138cbd40ff1a981f1a8a7eee1da54f9c",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Side Bend",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/6",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2766",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1651",
+      "assetSha256": "a2c29a58f3952c73bdcf90155021e0427c5014d26680caa9bbf5765e53e26f29",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Rear Lunge",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/7",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2768",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1652",
+      "assetSha256": "26451496344a6409c7d2f017fa3e9ecb155f8c85dcca58b138b12e58d001f4ea",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Romanian Deadlift",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/8",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2770",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1653",
+      "assetSha256": "8a896acaedbe7ba14c88f8f3a42f5352910850276a5f636c83d34c45b10f2fa7",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Dumbbell Side Squat",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/9",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2772",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1654",
+      "assetSha256": "f2827c2ae0dcf3ab55b51b63d9ddbc80700512e14f1e90c9ffef57e212263363",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Elevação lateral na mãquina",
+        "creators": [
+          "roneydya",
+          "wger / roneydya, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/10",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2775",
+          "creators": [
+            "roneydya"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1656",
+      "assetSha256": "6cc7b5f2160ce1744ddf505799df2f23ded64a8885cb92c61459f21da6219958",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Cable Chest Press - Decline",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/11",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2777",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1657",
+      "assetSha256": "3ab0e659cb07f4b66c7a3916f92828874bbdc7420277923bcf6823688432a70c",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Preacher Curl - Internally Rotated",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/12",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2778",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1658",
+      "assetSha256": "a315811f682e3592a974a8bf83975a6d17bd40267928d54f7a0167bd57fa56e6",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Preacher Curl - Externally Rotated",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/13",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2779",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1659",
+      "assetSha256": "71e0a55451c72ec1d922925eda809b415922a501540c187adc4d128342916f96",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Lat Pulldown - Cross Body Single Arm",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/14",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2780",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1660",
+      "assetSha256": "c2a3bb6e5397ff6ca8e0b684054acc08e0d38331c124664fadbf911afd9d55a2",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Cable Chest Press - Incline",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/15",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2781",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1661",
+      "assetSha256": "7228c2e215b6044b8a51b3e9e1c32ddde54fd0caaaeb51b3fc5ec3d562f90faa",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Cable Triceps Press",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/16",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2782",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1662",
+      "assetSha256": "db2ee343788b59387782e901d63c3f75fad95f2c4ce674f434f1117b135d3ecd",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Cable Tri Extension - Internal Rotation",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/17",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2783",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1666",
+      "assetSha256": "a07ed47607901a2b119fcba2b3de929482f586c8dc082918de3cc91b91b9f7a5",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Curl  - With Shoulder Elevated",
+        "creators": [
+          "Shiladree",
+          "wger / Shiladree, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/18",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2785",
+          "creators": [
+            "Shiladree"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1668",
+      "assetSha256": "400801894e543737597de199453db856c7cdbb93f20ad15962d101f852756d11",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "One Arm Overhead Cable Tricep Extension",
+        "creators": [
+          "AlucardEvil40",
+          "wger / AlucardEvil40, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/19",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2787",
+          "creators": [
+            "AlucardEvil40"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1672",
+      "assetSha256": "9a21686709ca67cf77e3e1cbf94828d36b28755408996726e9e6624fb9a22af2",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Seated Hip Abduction",
+        "creators": [
+          "Iko",
+          "wger / Iko, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/21",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2795",
+          "creators": [
+            "Iko"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1679",
+      "assetSha256": "2bb8a2b1634a07bfc779eabdf777eec4f14e90b72f6f9770d0fcef2dbfbacfe5",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Wall Angels",
+        "creators": [
+          "bbayuwega",
+          "wger / bbayuwega, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/22",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2801",
+          "creators": [
+            "bbayuwega"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1680",
+      "assetSha256": "78afc460d453b43bb9e26e065a89f66ad36c445d243b485182394d733c1da0f0",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "seated figure four",
+        "creators": [
+          "ricardodavidrd",
+          "wger / ricardodavidrd, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/23",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2802",
+          "creators": [
+            "ricardodavidrd"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    },
+    {
+      "assetId": "wger:movement:1683",
+      "assetSha256": "7624c77bab51a5439663d5605746ae375c6947cd89a97c1a61b614d2db9ae886",
+      "operation": "catalog_metadata",
+      "credits": {
+        "title": "Zottman curl",
+        "creators": [
+          "meldun",
+          "wger / meldun, wger.de",
+          "wger.de"
+        ],
+        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&offset=600",
+        "jsonPointer": "/results/24",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "licenseLabel": "CC-BY-SA 4",
+        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
+        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge.",
+        "selectedNameCredit": {
+          "translationId": "wger:translations:2803",
+          "creators": [
+            "meldun"
+          ],
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "sourceNameUnchanged": true
+        }
+      },
+      "conditions": [
+        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
+        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
+        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
+        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
+      ]
+    }
+  ],
+  "portugueseInstructionFindings": [
+    {
+      "assetId": "wger:translations:2138",
+      "outcome": "consultation_only",
+      "reason": "Texto existente descreve preparacao, movimento e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas."
+    },
+    {
+      "assetId": "wger:translations:2789",
+      "outcome": "consultation_only",
+      "reason": "Texto existente descreve posicao, subida e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas."
+    },
+    {
+      "assetId": "wger:translations:2847",
+      "outcome": "editorial_review_pending",
+      "reason": "Conferir formulacao sobre antebracos/sustentacao, cabeca e variante pronada antes de usar como ensino. Nao corrigido por inferencia."
+    },
+    {
+      "assetId": "wger:translations:2888",
+      "outcome": "blocked_instruction",
+      "reason": "Redacao contém trechos sem sentido, como bracos armazenados e humanos multiplos. Nao apresentar como instrucao nem completar com IA."
+    },
+    {
+      "assetId": "wger:translations:2775",
+      "outcome": "blocked_instruction",
+      "reason": "Descricao promocional/anatomica da maquina nao fornece preparacao, ajuste, execucao e retorno. Nao equivale a instrucao suficiente."
+    },
+    {
+      "assetId": "wger:translations:2794",
+      "outcome": "variant_review_pending",
+      "reason": "Titulo portugues fala em circulos; corpo descreve balanco frente/tras, coerente com os demais nomes. Resolver variante antes de liberar titulo/ensino; movimento1670 tambem retido."
+    }
+  ],
+  "notApproved": {
+    "guidedPractice": "Requisitos/instrucao e revisao de uso ainda pendentes; nao exigir nem inventar profissional onde a fonte nao exige. Apoio exigido pelas fontes documentais continua vinculante.",
+    "mediaDisplay": "Nenhum arquivo visual desta preparacao foi baixado/inspecionado/revisado para uso no app; marcadoresIA e creditos incompletos retidos.",
+    "remainingText": "Traducoes originais e rascunhos documentais preservados; sem aprovacao editorial/localizacao integral.",
+    "exportDataset": "Nao incluido nesta decisao; nao inferir proibicao daCCnem permissao operacional de exportacao pronta."
+  }
+}

@@ -32,6 +32,15 @@ def validate_bundle(bundle):
         for key in ("authors", "rights", "audience", "dose", "content", "review", "allowedOperations"):
             if key not in asset:
                 errors.append(str(ident) + ": campo ausente " + key)
+        for key in ("sourceVersion", "locale", "title"):
+            if asset.get(key) is not None and not isinstance(asset[key], str):
+                errors.append(str(ident) + ": campo textual invalido " + key)
+        for key in ("label", "licenseUrl", "attribution"):
+            value = asset.get("rights", {}).get(key)
+            if value is not None and not isinstance(value, str):
+                errors.append(str(ident) + ": campo de direitos invalido " + key)
+        if any(not isinstance(x, str) for x in asset.get("authors", [])):
+            errors.append(str(ident) + ": autoria invalida")
         if not set(asset.get("allowedOperations", [])) <= OPERATIONS:
             errors.append(str(ident) + ": operacao desconhecida")
         if bundle.get("stage") == "candidate" and asset.get("allowedOperations"):

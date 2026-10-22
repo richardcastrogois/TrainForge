@@ -15,6 +15,7 @@
 | Limites dos candidatos antigos | [Catálogo cuidadores](catalogo-cuidadores.md) e [fila](fila-cuidadores.json); currentSelection aponta o recorte final |
 | Por que uma fonte não basta para publicar | [Direitos](direitos-e-acordos.md), [curadoria](qualidade-e-curadoria.md), [critériosAPK](criterios-exercicios-apk.md) |
 | Dados reais preparados localmente, schema e fila por ativo | [Preparação de21/10](preparacao-local-2026-10-21.md) |
+| Operações já revisadas para consulta e textos portugueses retidos | [Revisão de consulta](revisao-consulta-2026-10-21.md) |
 | Materiais para integração | [Dossiê de integração](evidencias-para-integracao.md) e [cobertura](cobertura-e-prioridades.md) |
 | BeFit/REA/emulador | [Handoff datado](handoff-befit-2026-10-14.md) e [guia de ambiente](guia-rea-emulador-befit-2026-10-14.md); não repetir nem presumir estado do aparelho |
 | Próxima etapa | [Escopo V1](../execucao/v1/escopo.md), histórias001/004/005/019 |

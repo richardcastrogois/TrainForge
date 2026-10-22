@@ -10,4 +10,4 @@ Conferência: `python tools/validar_manifesto_piloto.py`. Alteração de uma ent
 
 `schemas/editorial-v1.schema.json` separa os tipos editoriais e direitos por operação. `manifests/pilot-prepared.json`, `pilot-rights-matrix.json` e `pilot-review-queue.json` registram a preparação local, sem incorporar os corpos de terceiros ao repositório. [Resultados, comandos e limites](../docs/conteudo/preparacao-local-2026-10-21.md).
 
-`content/local/` é excluído do Git e continua candidato: não importar no aplicativo como lote aprovado. A publicação precisa de manifesto e revisão por operação/uso próprios.
+`content/local/` é excluído do Git. `editorial-v1.json` e os alimentos continuam candidatos. `editorial-v1-reviewed.json` é a projeção de consulta das operações listadas em `manifests/pilot-approved.json`, com créditos/condições e sem liberação de prática. Não importar a pasta inteira. [Revisão e reconstrução](../docs/conteudo/revisao-consulta-2026-10-21.md).
