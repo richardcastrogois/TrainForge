@@ -53,7 +53,7 @@ type GroupPolicy struct {
 type ColumnSpec struct {
 	ID       string       `json:"id"`
 	Header   string       `json:"headerOriginal"`
-	Unit     *string      `json:"unit"`
+	Unit     *string      `json:"unit" extensions:"x-nullable"`
 	Kind     string       `json:"kind"`
 	Declared *ColumnBasis `json:"columnBasisDeclaration"`
 }
@@ -78,8 +78,8 @@ type FoodManifest struct {
 	Clinical  bool     `json:"clinicalApproval"`
 }
 type Basis struct {
-	Quantity *string `json:"quantity"`
-	Unit     *string `json:"unit"`
+	Quantity *string `json:"quantity" extensions:"x-nullable"`
+	Unit     *string `json:"unit" extensions:"x-nullable"`
 }
 type ColumnBasis struct {
 	Quantity int    `json:"quantity"`

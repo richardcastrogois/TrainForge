@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização22/10: consulta alimentar
+
+55arquivosDart,705nós/901arestas. Novos modelos/repository/controller/telas de referência alimentar e navegação foram atualizados apenas por AST;7arquivos alterados na primeira passagem, depois somente1/3arquivos dos ajustes concretos de busca/exibição. HTML exportado. Sem clusterização, extração documental ou custoLLM. Backups inicial/final desta fatia retidos em.local/graphify-backup-20261022-food-reference e.local/graphify-backup-20261022-food-reference-final. Contagens de rodadas anteriores abaixo são históricas.
+
 ## Atualização22/10: catálogo e controllers
 
 50arquivosDart;10alterados/40inalterados/0removidos,615nós/786arestas. Update incremental code-only e HTML exportado, sem clusterização/custoLLM. Backup desta rodada retido em.local/graphify-backup-20261022-catalog. Contagens anteriores abaixo são históricas.

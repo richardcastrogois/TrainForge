@@ -268,13 +268,176 @@ definitions:
       status:
         type: string
     type: object
+  nutrition.Basis:
+    properties:
+      quantity:
+        type: string
+        x-nullable: true
+      unit:
+        type: string
+        x-nullable: true
+    type: object
+  nutrition.Citation:
+    properties:
+      attribution:
+        type: string
+      changes:
+        type: string
+      conditions:
+        items:
+          type: string
+        type: array
+      licenseLabel:
+        type: string
+      licenseUrl:
+        type: string
+      name:
+        type: string
+      publishedAt:
+        type: string
+      publisher:
+        type: string
+      sourceUrl:
+        type: string
+      warrantyNotice:
+        type: string
+    type: object
+  nutrition.ColumnBasis:
+    properties:
+      kind:
+        type: string
+      quantity:
+        type: integer
+      unit:
+        type: string
+    type: object
+  nutrition.FoodCell:
+    properties:
+      basisQuantity:
+        type: string
+        x-nullable: true
+      basisUnit:
+        type: string
+        x-nullable: true
+      declaredColumnBasis:
+        allOf:
+        - $ref: '#/definitions/nutrition.ColumnBasis'
+        x-nullable: true
+      nameOriginal:
+        type: string
+      rawText:
+        type: string
+      reasons:
+        items:
+          type: string
+        type: array
+      scalingAllowed:
+        type: boolean
+      sourceColumnKey:
+        type: string
+      sourceRowKey:
+        type: string
+      state:
+        type: string
+      unit:
+        type: string
+        x-nullable: true
+      upperBound:
+        type: string
+        x-nullable: true
+      value:
+        type: string
+        x-nullable: true
+    type: object
+  nutrition.FoodDetail:
+    properties:
+      basis:
+        $ref: '#/definitions/nutrition.Basis'
+      id:
+        type: string
+      nameLocale:
+        type: string
+      nameOriginal:
+        type: string
+      notice:
+        type: string
+      nutrients:
+        items:
+          $ref: '#/definitions/nutrition.FoodCell'
+        type: array
+      source:
+        $ref: '#/definitions/nutrition.Citation'
+      sourceFoodId:
+        type: string
+      sourceId:
+        type: string
+      sourcePublishedVersion:
+        type: string
+      versionId:
+        type: string
+    type: object
+  nutrition.FoodFacets:
+    properties:
+      sources:
+        items:
+          $ref: '#/definitions/nutrition.FoodSourceCount'
+        type: array
+      total:
+        type: integer
+      unknownBasisCount:
+        type: integer
+    type: object
+  nutrition.FoodPage:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/nutrition.FoodSummary'
+        type: array
+      nextCursor:
+        type: string
+        x-nullable: true
+      notice:
+        type: string
+    type: object
+  nutrition.FoodSourceCount:
+    properties:
+      count:
+        type: integer
+      id:
+        type: string
+      name:
+        type: string
+      nameLocale:
+        type: string
+    type: object
+  nutrition.FoodSummary:
+    properties:
+      basis:
+        $ref: '#/definitions/nutrition.Basis'
+      id:
+        type: string
+      nameLocale:
+        type: string
+      nameOriginal:
+        type: string
+      source:
+        $ref: '#/definitions/nutrition.Citation'
+      sourceFoodId:
+        type: string
+      sourceId:
+        type: string
+      sourcePublishedVersion:
+        type: string
+      versionId:
+        type: string
+    type: object
 info:
   contact: {}
-  description: Local Google sessions and reviewed reference catalog. Real Android
-    OAuth validation remains an acceptance gate; no executable training content is
-    implied.
+  description: Local Google sessions, reviewed movement metadata and food composition
+    references. Real Android OAuth validation remains an acceptance gate; no executable
+    training content is implied.
   title: TrainForge API
-  version: 0.2.0
+  version: 0.3.0
 paths:
   /api/v1/auth/google:
     post:
@@ -654,6 +817,107 @@ paths:
       summary: Reviewed program or collection metadata
       tags:
       - catalog
+  /api/v1/foods:
+    get:
+      parameters:
+      - description: Literal original-name substring with collapsed whitespace; maximum
+          100 UTF-8 bytes
+        in: query
+        name: q
+        type: string
+      - description: Exact reviewed source ID
+        in: query
+        name: sourceId
+        type: string
+      - default: 20
+        description: Page size
+        in: query
+        maximum: 50
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Opaque cursor bound to search, source and page size
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.FoodPage'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Search reviewed food references
+      tags:
+      - nutrition
+  /api/v1/foods/{id}:
+    get:
+      parameters:
+      - description: Source-derived food ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Exact SHA-256 version; latest by default
+        in: query
+        name: versionId
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.FoodDetail'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Reviewed food composition and attribution
+      tags:
+      - nutrition
+  /api/v1/foods/filters:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.FoodFacets'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Reviewed food sources and coverage
+      tags:
+      - nutrition
   /api/v1/health/live:
     get:
       produces:

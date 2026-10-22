@@ -60,6 +60,7 @@ void main() {
       expect(find.text('Conta conectada'), findsOneWidget);
       repo.logoutError = outage();
       await tester.ensureVisible(find.text('Sair desta sessão'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Sair desta sessão'));
       await tester.pumpAndSettle();
       expect(repo.logouts, 1);
@@ -67,6 +68,7 @@ void main() {
       expect(find.textContaining('A saída não foi confirmada'), findsOneWidget);
       repo.logoutError = null;
       await tester.ensureVisible(find.text('Tentar novamente'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Tentar novamente'));
       await tester.pumpAndSettle();
       expect(repo.logouts, 2);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "c4ffb705d2d21912371093010eabc52090016a057c7a0acbc6cf15e1259942b3",
+  "inputRevision": "57861a88cb13ac80707754f0f15b9680dfbc69e1c9de4c75c2ae01e44729d0c3",
   "inputs": {
     "lib/app.dart": "fbb5cec7f1f6f20f29b4caa878164b51484acdd2ee5e9006046559292193d34f",
     "lib/core/config/app_config.dart": "5f053101cb29e8e8a345484cee2386123e9211c0e20eafa34231929e9e9ca43e",
@@ -13,7 +13,7 @@
     "lib/features/auth/domain/auth_profile.dart": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
     "lib/features/auth/presentation/auth_controller.dart": "ce65a53cb02331f1e547e94f8ad8a24c2f69bea853795113c936df29ecc0c9e1",
-    "lib/features/auth/presentation/pages/auth_page.dart": "9a3e43b557fead1b39f74fec373a1b10df226affb7db7be348adeb0c751b2050",
+    "lib/features/auth/presentation/pages/auth_page.dart": "82673128ddef4b086d3f2fd2c816aca14c997c19dbb562c5e80b241f5a035c61",
     "lib/features/bootstrap/data/bootstrap_api.dart": "4505633f5c0d752c59a0459944f757c9f6388bdf0818a8f699b5570bfb8096a7",
     "lib/features/bootstrap/data/bootstrap_repository.dart": "96dc3f3e64695688209b08b33e22b2b970154a3ce12ed85133bbfb9b82f562a0",
     "lib/features/bootstrap/domain/bootstrap_data.dart": "94c54cad4a2ee887f2f38c429909149de9c11c0e66c9e60155cc5989f055d57f",
@@ -22,6 +22,11 @@
     "lib/features/catalog/presentation/catalog_controller.dart": "0f2f0909529f59dc1ccf91bc1aa30e0aa8112ca08bc1f30cd96664382937a929",
     "lib/features/catalog/presentation/catalog_detail_page.dart": "8cbf363fcc8ded117b6188371070a9345e7a63a280afacf67387f18a8d3269ce",
     "lib/features/catalog/presentation/catalog_page.dart": "57cd96e8c7b73711506ea399858a3f56329b1a8c8e6b446b83b2a1bd7ea55e41",
+    "lib/features/food_reference/data/food_repository.dart": "c0fd80cf9dc4913b91b296297347a0d2665421ee777efea2dbf930e2aad7af6f",
+    "lib/features/food_reference/domain/food_reference.dart": "33e4e1599e1badc138d6ae312b27890df5ddde6833b7b959a45a16f9cd7cabc4",
+    "lib/features/food_reference/presentation/food_controller.dart": "017d3b554ec63e7e43827ee13d78e911037646b48141b31d1eee73446759fe46",
+    "lib/features/food_reference/presentation/food_detail_page.dart": "d40a7af223c15d790b8852220cf09c29ae298a988049cf59ff3d7bf518360a6d",
+    "lib/features/food_reference/presentation/food_page.dart": "460bd70a428c43b214acdf7cd900b63ba71d8aeb9aec7da010eff352a99936a5",
     "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
     "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
     "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
@@ -51,8 +56,8 @@
     "lib/main.dart": "f95b1def36e051182f556ab026ca1392067ee71f67d3825716731b599efa1a3f",
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
-    "lib/shared/widgets/auth_gate.dart": "202f106fec92689e72dc32112182a7cbaad57762078bb6aa0e37981a17987f2d",
-    "services/api/cmd/api/main.go": "7d4fd6b2e228441ae6e0db19228b48b282cdde682a20fa43797bc403b38b9f42",
+    "lib/shared/widgets/auth_gate.dart": "36fcd4d9bf011c8850a07fad0bbcfa002d0c1e1f35c958dccda40ca61361c0e2",
+    "services/api/cmd/api/main.go": "31eb50baf07dc1ab1b051b8eb49f197b18288cde3a0df6025090a5f1a06b0fcb",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
@@ -68,30 +73,34 @@
     "services/api/internal/catalog/query.go": "d9a772b5ce811cf8faee670029366ddf5d6cd89d933e503f03df2a76fd62b291",
     "services/api/internal/catalog/read.go": "81c56d8e66dc36f3018b1853c722ad7c09b897fbaa3c3c893e4af56f6ea428d1",
     "services/api/internal/nutrition/doc.go": "bdc5b5b051c4a796162cd3e82c4c0a0bab78c96352a2b73407eaac3706f96bd6",
-    "services/api/internal/nutrition/food.go": "246d3445e5e06c35df97ac9da42e1d9cd02a76ae605e56d5d9848b2264bc5a6e",
+    "services/api/internal/nutrition/food.go": "2c0148fb297b6cc79e109f3ee053c9150e7bc728dc452035135be2f835511800",
+    "services/api/internal/nutrition/handler.go": "1bce286198bc912ace4dd2479779bc8be2726affdf7f07bc5c921f863cc1be1c",
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
     "services/api/internal/nutrition/load.go": "40cc38994faa0bc5d04919f7d68cde930a314ab3d52c4531c95c94b34b12e58e",
+    "services/api/internal/nutrition/postgres_read.go": "95735b33475fbee5979d2af65fe5b3fd63875f45eb788386324ff7c0f2b4e248",
+    "services/api/internal/nutrition/read.go": "6ac5cf99ce94e5e6868129e44d0b06e9cab17eb23492631dfe5ac58a5d52ccc2",
     "services/api/internal/platform/config/config.go": "0f9d295017ffc09fd301dc3ad7ed636dfb9de5a95828976c05ad069d1d3782dd",
     "services/api/internal/platform/httpapi/server.go": "1cabad94f609bf7d26279aa44e574c43485f26c61ca36c2e0dd56eef9ba4c7f3",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
-    "services/api/internal/swaggerdocs/docs.go": "f5c884bed1570f06c59c817f03a236a139137444fac104769d6923a2673e29a2",
+    "services/api/internal/swaggerdocs/docs.go": "0b9c14b95ba0a3bdfa65446554695de40783c8340d32100ca87168182fc207b6",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
     "services/api/migrations/00002_typed_content_refs.sql": "78bbb7315006b7636ac5e00361bd48f7d0aa7181c84ef29b0aeee71ea28a246b",
     "services/api/migrations/00003_prescribed_sessions.sql": "17de442c88738a1fecd531f122edfbe1ebf0c63f0182b1d94bc1888757c5b292",
     "services/api/migrations/00004_access_tokens.sql": "9cf58ad99c5274181615c4836088ac8d7e50e90e7a839afdd34a446a370e663a",
     "services/api/migrations/00005_food_catalog_import.sql": "17762272b73f723219f6e7180d7099b6353dd8b43314cabdd56cefb5776a2657",
+    "services/api/migrations/00006_food_read_indexes.sql": "84433fd42218ae4d5d294bb328ae6bf9a41b35c924194a4f3206d4b8421cd80e",
     "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
     "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
-    "contracts/generated/swagger-v1.json": "6d63a36b351964bac5f663fb0eb5e8388a62c70e36ec03981d7b6dffcea7296a",
+    "contracts/generated/swagger-v1.json": "5be1dd53db7c68a7baddbe11bd2c0ce8bfc7cf693f635cb02d297e1e87c544b0",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/arquitetura/plano.json": "4d1bc153f4a1a413c2125a5c53e7680fa1cd93a919addd0e4d94845539142e96",
-    "docs/execucao/v1/backlog.json": "ef14ecf29c65c60b2c58bcf3fb0ad340ddae0768612dbee9beccd7dfcfebffa0",
+    "docs/arquitetura/plano.json": "4c1e2d17faced7fe9ad1ecf532fb26ce2425c38cb65873871e0bc45d197943ab",
+    "docs/execucao/v1/backlog.json": "3f9b4c129c01d14148cae79938caa13caffca5bac3989949fecb8fcaf1a49248",
     "docs/arquitetura/achados.json": "3c6b94b9edc802941d5b73835f61022acdfb47516ff7467b43fb14b1e161f128",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
-    "tools/avaliar_android.py": "4f7d7bee1bd46f617b07c767a46c3d07ff321a60dd49e99b02b408c773063fe3",
+    "tools/avaliar_android.py": "8dcd54a8266284d1a7e88302f38364c665a31aef247695e3185887735766af84",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
     "tools/db_local.py": "e6a5e537152dd9b49c5b05faf60aa0fe56e1caf1b6da8e58937d6d4059cc150d",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
@@ -121,19 +130,20 @@
     "tools/verificar_auth_local.py": "171628f8808cbb7dc625a04462138a7a1eeb9491a1ec15db1a3b89f2feeeebf4",
     "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776",
     "tools/verificar_catalogo_local.py": "0882d55611e55885c9861c2864d8449864109e27f0140c6c5fa30bdcc4765439",
-    "tools/verificar_importacao_alimentos.py": "bc3c4318dcb80af82fca02c68ed91f2e2cffe961ed9f375b28407be47827d394",
+    "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
+    "tools/verificar_importacao_alimentos.py": "afa8357b1a29513facc0f7620ea6ff6c6875c0b17b5693d79a875c3bd5d30726",
     "tools/verificar_lote_alimentar_local.py": "8fb91247b63595638f722d83a71fd3b2daecf5a73e20ad32ad52d3669e46f4c3"
   },
   "coverage": {
-    "dartFiles": 50,
+    "dartFiles": 55,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
-    "httpCalls": 18,
+    "httpCalls": 21,
     "legacyMatches": 12,
-    "goFiles": 24,
-    "goRegistrations": 12,
+    "goFiles": 27,
+    "goRegistrations": 15,
     "modelsInReference": 9
   },
   "groups": [
@@ -164,6 +174,21 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_controller.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_detail_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_page.dart",
           "line": 1
         },
         {
@@ -245,6 +270,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/data/catalog_repository.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/data/food_repository.dart",
           "line": 1
         },
         {
@@ -342,6 +372,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/domain/catalog_entry.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/domain/food_reference.dart",
           "line": 1
         },
         {
@@ -455,6 +490,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/food_reference/data/food_repository.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/home/data/home_repository.dart",
           "line": 3
         },
@@ -502,6 +542,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/data/catalog_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/data/food_repository.dart",
           "line": 3
         },
         {
@@ -567,6 +612,16 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_controller.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_detail_page.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 7
         },
@@ -620,6 +675,11 @@
           "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_page.dart",
           "line": 2
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_page.dart",
+          "line": 3
         },
         {
           "repository": "trainforge",
@@ -709,7 +769,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/auth_gate.dart",
-          "line": 3
+          "line": 4
         }
       ]
     }
@@ -720,7 +780,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 6
+        "line": 7
       }
     },
     {
@@ -736,6 +796,22 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_page.dart",
+        "line": 7
+      }
+    },
+    {
+      "id": "FoodDetailPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/food_detail_page.dart",
+        "line": 4
+      }
+    },
+    {
+      "id": "FoodPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/food_page.dart",
         "line": 7
       }
     },
@@ -824,7 +900,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 7
+        "line": 8
       }
     }
   ],
@@ -835,7 +911,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 50
+        "line": 51
+      }
+    },
+    {
+      "from": "AuthPage",
+      "to": "FoodPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
+        "line": 63
       }
     },
     {
@@ -844,7 +929,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 13
+        "line": 14
       }
     },
     {
@@ -854,6 +939,15 @@
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_page.dart",
         "line": 336
+      }
+    },
+    {
+      "from": "FoodPage",
+      "to": "FoodDetailPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/food_page.dart",
+        "line": 203
       }
     },
     {
@@ -1060,7 +1154,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 43
+        "line": 44
       }
     },
     {
@@ -1069,7 +1163,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 81
+        "line": 82
+      }
+    },
+    {
+      "from": "AuthGate",
+      "to": "FoodPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 93
       }
     }
   ],
@@ -1228,6 +1331,79 @@
       },
       "legacyMatches": [],
       "goMatches": []
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods",
+      "keys": [
+        "cursor",
+        "limit",
+        "q",
+        "sourceId"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/data/food_repository.dart",
+        "line": 15
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "GET",
+          "path": "/api/v1/foods",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/handler.go",
+            "line": 19
+          }
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods/filters",
+      "keys": [],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/data/food_repository.dart",
+        "line": 30
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "GET",
+          "path": "/api/v1/foods/filters",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/handler.go",
+            "line": 17
+          }
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods/${Uri.encodeComponent(food.id)}",
+      "keys": [
+        "versionId"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/data/food_repository.dart",
+        "line": 36
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "GET",
+          "path": "/api/v1/foods/{id}",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/handler.go",
+            "line": 18
+          }
+        }
+      ]
     },
     {
       "method": "GET",
@@ -2879,8 +3055,11 @@
       "services/api/internal/catalog/read.go",
       "services/api/internal/nutrition/doc.go",
       "services/api/internal/nutrition/food.go",
+      "services/api/internal/nutrition/handler.go",
       "services/api/internal/nutrition/import.go",
       "services/api/internal/nutrition/load.go",
+      "services/api/internal/nutrition/postgres_read.go",
+      "services/api/internal/nutrition/read.go",
       "services/api/internal/platform/config/config.go",
       "services/api/internal/platform/httpapi/server.go",
       "services/api/internal/platform/postgres/pool.go",
@@ -3133,6 +3312,89 @@
       },
       {
         "method": "GET",
+        "path": "/api/v1/foods",
+        "params": [
+          "q query string false \"Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes\"",
+          "sourceId query string false \"Exact reviewed source ID\"",
+          "limit query int false \"Page size\" minimum(1) maximum(50) default(20)",
+          "cursor query string false \"Opaque cursor bound to search, source and page size\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} FoodPage"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 64
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/{id}",
+        "params": [
+          "id path string true \"Source-derived food ID\"",
+          "versionId query string false \"Exact SHA-256 version; latest by default\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} FoodDetail"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,404,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 93
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/filters",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} FoodFacets"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 125
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
         "path": "/api/v1/health/live",
         "params": [],
         "responses": [
@@ -3196,6 +3458,10 @@
       ],
       [
         "cmd/api",
+        "internal/nutrition"
+      ],
+      [
+        "cmd/api",
         "internal/platform/config"
       ],
       [
@@ -3237,6 +3503,10 @@
       [
         "internal/catalog",
         "internal/platform/httpapi"
+      ],
+      [
+        "internal/nutrition",
+        "internal/platform/httpapi"
       ]
     ],
     "migrations": [
@@ -3244,7 +3514,8 @@
       "services/api/migrations/00002_typed_content_refs.sql",
       "services/api/migrations/00003_prescribed_sessions.sql",
       "services/api/migrations/00004_access_tokens.sql",
-      "services/api/migrations/00005_food_catalog_import.sql"
+      "services/api/migrations/00005_food_catalog_import.sql",
+      "services/api/migrations/00006_food_read_indexes.sql"
     ],
     "tables": [
       {
@@ -3496,6 +3767,33 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalog/handler.go",
           "line": 20
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/filters",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 18
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/handler.go",
+          "line": 19
         }
       },
       {
@@ -4055,6 +4353,156 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/catalog.CatalogItem"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact reviewed source ID",
+            "name": "sourceId",
+            "in": "query"
+          },
+          {
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer",
+            "default": 20,
+            "description": "Page size",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Opaque cursor bound to search, source and page size",
+            "name": "cursor",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.FoodPage"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/filters",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.FoodFacets"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/foods/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Source-derived food ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Exact SHA-256 version; latest by default",
+            "name": "versionId",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.FoodDetail"
             }
           },
           "304": {

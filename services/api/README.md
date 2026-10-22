@@ -7,10 +7,11 @@ Pré-requisitos: Go1.27.3, Python3, Swaggo1.16.6; PostgreSQL17 para desenvolvime
 Na raiz do repositório:
 
 ```powershell
-python tools/db_local.py init   # somente primeira criação do cluster isolado
+python tools/db_local.py init   # apenas clone novo; este ambiente já existe
 python tools/db_local.py start
 python tools/migrate_local.py
 python tools/db_local.py grant-runtime
+ # Importações já validadas neste clone; repetir somente se o artefato mudar.
 python tools/importar_catalogo_local.py --dry-run
 python tools/importar_catalogo_local.py
 python tools/dev_api.py
@@ -26,6 +27,6 @@ python tools/verificar_api_local.py
 python tools/verificar_banco_local.py
 ```
 
-API localhost8082; DB localhost15432. Somente health/live e health/ready foram implementados na fundação. O catálogo está no DB, sem endpoint/ensino/prática. Swagger local: `/docs/index.html`. Não alterar a URL Flutter para este serviço antes de adaptar os contratos.
+API localhost8082; DB localhost15432. Go0.3.0 entrega14operações: health, autenticação/sessão, catálogo de73metadados e consulta de6369referências alimentares. Flutter já usa esses contratos na build deavaliação; loginGoogle real permanece pendente. Sem prática/ensino, cadastro privado ou consumo alimentar. Swagger local: `/docs/index.html`. [Retomar APK](../../docs/execucao/v1/avaliacao-android.md) e [consulta alimentar](../../docs/execucao/v1/alimentacao-consulta.md).
 
 Go não é garantia de escala: pool limitado, consultas/índices, autorização, timeouts e carga real serão validados por fatia. PostgreSQL17.5 local exige atualização de patch antes de exposição externa.

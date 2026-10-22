@@ -205,7 +205,7 @@ def start(tooling,serial=None):
     state["installedSha256"]=hashlib.sha256(APK.read_bytes()).hexdigest()
     save_state(state)
     print("Pronto: app atualizado sem apagar dados, API/banco locais conectados.")
-    print("Consulte a biblioteca sem login ou faça o login Google manual. Nenhum consentimento foi automatizado.")
+    print("Consulte biblioteca/alimentos sem login ou faça o login Google manual. Nenhum consentimento foi automatizado.")
 
 def stop(tooling):
     if not STATE.exists():print("Nenhum processo iniciado por este helper registrado.");return

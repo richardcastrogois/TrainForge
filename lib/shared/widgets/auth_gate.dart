@@ -1,3 +1,4 @@
+import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/auth/data/auth_repository.dart';
@@ -60,7 +61,7 @@ class _AuthGateState extends State<AuthGate> {
               ),
               const SizedBox(height: 16),
               const Text(
-                'A biblioteca de referência está disponível para consulta. Atividades, histórico e alimentação continuam pendentes. Nenhum treino ou dado pessoal foi preenchido automaticamente.',
+                'A biblioteca de referência está disponível para consulta. A composição alimentar também pode ser consultada. Atividades, histórico e registros de consumo continuam pendentes. Nenhum treino ou dado pessoal foi preenchido automaticamente.',
               ),
               const SizedBox(height: 16),
               const Text(
@@ -82,6 +83,18 @@ class _AuthGateState extends State<AuthGate> {
                 ),
                 icon: const Icon(Icons.library_books_outlined),
                 label: const Text('Consultar biblioteca'),
+              ),
+              OutlinedButton.icon(
+                onPressed: controller.busy
+                    ? null
+                    : () => Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (_) => const FoodPage(),
+                        ),
+                      ),
+                icon: const Icon(Icons.restaurant_outlined),
+                label: const Text('Consultar alimentos sem registrar consumo'),
               ),
               OutlinedButton(
                 onPressed: controller.restore,

@@ -1,6 +1,6 @@
 # Retomar a avaliação Android
 
-Checkpoint de22/10/2026: **APK debug 0.1.1+2**, backend Go0.2.0 e banco V1 local. A biblioteca já pode ser consultada sem Google. A autenticação está implementada, mas o login Google real aguarda o autor. Nenhum push/deploy foi feito.
+Checkpoint de22/10/2026: **APK debug 0.1.2+3**, backend Go0.3.0 e banco V1 local. Biblioteca e composição alimentar já podem ser consultadas sem Google. A autenticação está implementada, mas o login Google real aguarda o autor. Nenhum push/deploy foi feito.
 
 ## Quando voltar ao notebook
 
@@ -15,8 +15,9 @@ O comando inicia somente o cluster deste clone, a API Go e o emulador existente 
 
 1. Toque **Consultar biblioteca sem entrar**. Deve mostrar73movimentos e0programas. Busque pelo nome original, filtre pelos valores reais da fonte e abra um detalhe.
 2. Confira autoria, contribuição, licença, links, versão e requisitos desconhecidos. Não há treino executável, instrução, dose, foto ou vídeo liberados nesta build.
-3. Volte à entrada e toque **Entrar com Google**. Faça pessoalmente a entrada numa conta cadastrada em Test users. Senha,2FA e consentimento ficam somente no Google; não enviar tokens/senhas ao chat.
-4. Confirme Conta conectada, feche/reabra, teste retomada de conexão e sair/entrar. Registre o resultado sem divulgar e-mail/token. Esse passo ainda não foi validado.
+3. Volte e toque **Consultar alimentos sem registrar consumo**. Deve mostrar6369referências (3484Ciqual/2885CoFID) e3sem base confirmada. Busque no idioma da fonte, filtre a fonte e abra a composição; confira licença, base por célula e distinção entre zero/ausência/traço/limite. Cadastro próprio/refeições/totais ainda não entregues.
+4. Volte à entrada e toque **Entrar com Google**. Faça pessoalmente a entrada numa conta cadastrada em Test users. Senha,2FA e consentimento ficam somente no Google; não enviar tokens/senhas ao chat.
+5. Confirme Conta conectada, feche/reabra, teste retomada de conexão e sair/entrar. Registre o resultado sem divulgar e-mail/token. Esse passo ainda não foi validado.
 
 Se o login falhar, a tela apresenta erro seguro e permite tentar novamente; offline/timeout/429/5xx não apagam a sessão. O backend precisa estar ativo; o APK debug usa loopback via ADB, não é uma entrega remota autônoma.
 
@@ -37,7 +38,7 @@ Preservar os clientes debug/Web existentes. Não é necessário enviar client se
 
 Stop encerra somente recursos registrados como iniciados pelo helper e confere a identidade do emulador. Dados, credenciais e chave de assinatura permanecem locais. Serviços já ativos e reutilizados não são assumidos como pertencentes ao helper.
 
-Arquivo: `build/app/outputs/flutter-apk/app-debug.apk`. SHA-256: `6c7f893ab3d633042bdd4f9eab7697ddb9a76baddb0a07bf6c0f60b623d5d9cf`. [Recibo de build/instalação](android-auth-checkpoint.json).
+Arquivo: `build/app/outputs/flutter-apk/app-debug.apk`. SHA-256: `f15592f29e8e390eeffdd7090f5c8553e2409084fa11724aa9d07c6f9b1a1011`. [Recibo de build/instalação](android-auth-checkpoint.json).
 
 ## Celular depois do emulador
 
@@ -52,7 +53,10 @@ Com o notebook disponível: ativar opções de desenvolvedor/depuração USB no 
 | Programas completos/coleções |0disponíveis; vazio explícito |
 | Idosos, cuidadores, casa, praça e academia | Preservados no produto e nos registros; não inferidos nos metadados sem indicação da fonte |
 | Prática, adesão, atividade e histórico | Ainda não integrados; nenhuma execução fictícia |
-| Alimentação, cadastro próprio, nutrientes | Ainda não integrados; nenhuma base/valor inventado |
+| Consulta alimentar e nutrientes |6369referências reais, busca/fonte/paginação/detalhe e bases/estados/créditos; API/DB/emulador verificados |
+| Cadastro próprio, quantidade e consumo | Pendentes; nenhuma refeição/valor inventado |
 | Release/HTTPS e iOS | Pendentes de infraestrutura/configuração/testes próprios |
 
-V1-014 encerra a leitura do catálogo. V1-011 permanece doing; V1-012/021/022 têm preparação parcial, sem aceite indevido. O roteiro completo continua na [matriz de cenários](matriz-cenarios.md).
+V1-014 encerra a leitura do catálogo. V1-011 permanece doing; V1-012/021/022/020/025 têm preparação parcial, sem aceite indevido. O roteiro completo continua na [matriz de cenários](matriz-cenarios.md).
+
+Falha doGooglePlayServices foi observada no emulador e dispensada durante inspeção pública. Não houve validação de sua resolução ou de login real; não limpar contas/dados automaticamente. [Consulta alimentar e testes](alimentacao-consulta.md).
