@@ -1,0 +1,20 @@
+{
+  "scope": "android-auth-debug-checkpoint",
+  "date": "2026-10-22",
+  "variant": "debug",
+  "package": "com.example.trainforge",
+  "api": "http://127.0.0.1:8082",
+  "transport": "development-loopback-via-adb-reverse",
+  "device": "emulator-5554",
+  "avd": "TrainForge_Benchmark",
+  "built": true,
+  "signatureVerified": true,
+  "certificateSha1": "1E:93:4C:58:20:7C:D2:3B:A8:D8:EE:49:91:DA:80:56:78:DC:9E:1C",
+  "initialInstalledSha256": "1388E962D9B0B8C81BE8CFDE394EB503E4EDE030D11EE6325AD370607B0EBA94",
+  "latestBuiltSha256": "DA2203F1AA50D0439798BC001431EA53600295D666A073771885A3909CFB14B7",
+  "latestBuildInstalled": false,
+  "reason": "Do not interrupt user's Google login; latest rebuild only changes conditional session cleanup.",
+  "realGoogleLoginValidated": false,
+  "releaseOAuthRegistered": false,
+  "iosValidated": false
+}

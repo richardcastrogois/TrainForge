@@ -1,0 +1,33 @@
+{
+  "scope": "real-local-process-negative-auth",
+  "results": [
+    {
+      "method": "GET",
+      "path": "/api/v1/health/ready",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/me",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/google",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/refresh",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "status": 204
+    }
+  ],
+  "swaggerOperations": 6,
+  "realGoogleLoginValidated": false,
+  "syntheticUserCreated": false
+}

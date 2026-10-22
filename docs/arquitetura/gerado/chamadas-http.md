@@ -1,15 +1,16 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5dc884be8dd3d143`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9147d3cd1695ebc5`.
 
-## Atual: Flutter → referência Fastify
+## Chamadas Flutter: comparação com a referência Fastify
 
 Chaves de data/query e nomes de schemas são detectados em padrões literais; schema inline pode ficar apenas como `z.object`. O backend é o retrato versionado, não uma leitura online nem um teste de rede.
 
 | Flutter | Envia: chaves detectadas | Backend: path e tipos | Recebe: status e schemas | Evidência Flutter |
 | --- | --- | --- | --- | --- |
-| `POST /mobile-auth/google` | idToken | /mobile-auth/google / body=z.object / query=ausente | {"200": "AuthSuccessSchema", "401": "z.object", "500": "z.object"} | [lib/features/auth/data/auth_api.dart:10](../../../lib/features/auth/data/auth_api.dart) |
-| `GET /mobile-auth/me` | sem chaves literais detectadas | /mobile-auth/me / body=ausente/inline / query=ausente | {"200": "z.object", "401": "z.object"} | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
+| `POST /api/v1/auth/google` | idToken, publicAuth | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:10](../../../lib/features/auth/data/auth_api.dart) |
+| `GET /api/v1/me` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
+| `POST /api/v1/auth/logout` | publicAuth, refreshToken | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:24](../../../lib/features/auth/data/auth_api.dart) |
 | `GET /mobile/bootstrap` | sem chaves literais detectadas | /mobile/bootstrap / body=ausente/inline / query=ausente | {"200": "z.object", "401": "z.object", "500": "z.object"} | [lib/features/bootstrap/data/bootstrap_api.dart:10](../../../lib/features/bootstrap/data/bootstrap_api.dart) |
 | `GET /mobile/home/$date` | sem chaves literais detectadas | /mobile/home/:date / body=ausente/inline / query=ausente | {"200": "HomeDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/home/data/home_api.dart:11](../../../lib/features/home/data/home_api.dart) |
 | `POST /mobile/onboarding/manual-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/manual-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:19](../../../lib/features/onboarding/data/onboarding_api.dart) |
@@ -59,15 +60,15 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 
 ## Planejado: contratos da API v1
 
-Estas rotas são decisões propostas, ainda sem implementação Go validada. `swagger-go.md` define a geração futura; esta tabela não substitui o contrato gerado nem cria endpoints.
+A tabela mistura implementação local explicitamente identificada e decisões futuras. A seção Go/Swagger mostra operações geradas dos handlers. Testes e aceite real constam no handoff; não inferir execução por uma linha de contrato.
 
 | Método | Path | Envia | Recebe |
 | --- | --- | --- | --- |
-| POST | `/api/v1/auth/google` | {idToken} real Google | 200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit |
-| POST | `/api/v1/auth/refresh` | {refreshToken} | 200 rotação atômica;401 inválido/reuso; concorrência tem regra por família |
-| POST | `/api/v1/auth/logout` | {refreshToken} | 204 revogado idempotentemente |
+| POST | `/api/v1/auth/google` | {idToken} real Google | 200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit; implementado localmente, Swagger gerado |
+| POST | `/api/v1/auth/refresh` | {refreshToken} | 200 rotação atômica;401 inválido/reuso; concorrência tem regra por família; implementado localmente, Swagger gerado |
+| POST | `/api/v1/auth/logout` | {refreshToken} | 204 revogado idempotentemente; implementado localmente, Swagger gerado |
 | GET | `/api/v1/bootstrap` | Bearer, data/fuso se exigidos pelo resumo | 200 usuário, configuração mínima, contexto e resumo permitido; sem todos os catálogos/históricos |
-| GET/PATCH | `/api/v1/me` | PATCH somente campos pessoais necessários/permitidos | 200 perfil; medidas opcionais, não exigir %gordura para ler biblioteca |
+| GET | `/api/v1/me` | Bearer access opaco | 200 identidade própria {id,name,email,image:null}; implementado; PATCH/perfil físico pendente |
 | GET | `/api/v1/me/export` | Bearer | 200 exportação privada versionada; fluxo assíncrono apenas se volume justificar |
 | DELETE | `/api/v1/me` | Confirmação autenticada conforme política | 204/202 conforme operação definida; retenção/backup explicados |
 | GET | `/api/v1/catalog/programs` | modality, environment, population, cursor, limit, mode | 200 {items,nextCursor}; inclui disponibilidade, natureza modular/integral e source summary |
@@ -82,7 +83,7 @@ Estas rotas são decisões propostas, ainda sem implementação Go validada. `sw
 | GET | `/api/v1/foods` | q, preparation, cursor, limit | 200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada |
 | POST | `/api/v1/food-entries` | {foodVersionId,quantity,unit,occurredAt,timezone} + chave | 201 consumo confirmado com cálculo rastreável;422 unidade não suportada |
 | GET/PATCH/DELETE | `/api/v1/food-entries/{id}` | alteração confirmada ou exclusão | 200/204, somente titular; edição recalcula usando versão e fatores declarados |
-| GET | `/api/v1/health/live` | Sem dados pessoais | 200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno |
-| GET | `/api/v1/health/ready` | Sem dados pessoais | 200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis |
+| GET | `/api/v1/health/live` | Sem dados pessoais | 200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno; implementado localmente, Swagger gerado |
+| GET | `/api/v1/health/ready` | Sem dados pessoais | 200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis; implementado localmente, Swagger gerado |
 
 [Voltar ao mapa](../README.md) · [Contrato proposto completo](../contratos-v1.md)

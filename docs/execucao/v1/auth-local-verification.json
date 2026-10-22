@@ -1,0 +1,10 @@
+{
+  "scope": "isolated-auth-fixtures-not-google-login",
+  "passed": true,
+  "temporaryDatabaseRemoved": true,
+  "deliveredUserCountUnchanged": true,
+  "realGoogleLoginValidated": false,
+  "androidDebugOAuth": "console values match user screenshots",
+  "androidReleaseOAuth": "pending dedicated signing certificate",
+  "credentialsPrinted": false
+}

@@ -27,7 +27,7 @@ func JSON(w http.ResponseWriter, status int, value any) {
 	w.WriteHeader(status)
 	_ = json.NewEncoder(w).Encode(value)
 }
-func failure(w http.ResponseWriter, r *http.Request, status int, code string) {
+func Failure(w http.ResponseWriter, r *http.Request, status int, code string) {
 	w.Header().Set("Content-Type", "application/problem+json")
 	w.WriteHeader(status)
 	id, _ := r.Context().Value(requestKey{}).(string)
@@ -55,21 +55,24 @@ func (s Server) Ready(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(r.Context(), time.Second)
 	defer cancel()
 	if s.DB == nil || s.DB.Ping(ctx) != nil {
-		failure(w, r, http.StatusServiceUnavailable, "dependency_unavailable")
+		Failure(w, r, http.StatusServiceUnavailable, "dependency_unavailable")
 		return
 	}
 	JSON(w, http.StatusOK, Status{Status: "ready"})
 }
 
-func New(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Handler) http.Handler {
+func New(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Handler, routes ...func(*http.ServeMux)) http.Handler {
 	mux := http.NewServeMux()
 	s := Server{DB: db}
+	for _, register := range routes {
+		register(mux)
+	}
 	mux.HandleFunc("GET /api/v1/health/live", Live)
 	mux.HandleFunc("GET /api/v1/health/ready", s.Ready)
 	if docs != nil {
 		mux.Handle("GET /docs/", docs)
 	}
-	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) { failure(w, r, http.StatusNotFound, "route_not_found") })
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) { Failure(w, r, http.StatusNotFound, "route_not_found") })
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		id := rand.Text()
 		ctx, cancel := context.WithTimeout(context.WithValue(r.Context(), requestKey{}, id), timeout)
@@ -82,7 +85,7 @@ func New(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Han
 		defer func() {
 			if recover() != nil {
 				logger.Error("request_failed", "requestId", id)
-				failure(w, r, http.StatusInternalServerError, "internal_error")
+				Failure(w, r, http.StatusInternalServerError, "internal_error")
 			}
 		}()
 		mux.ServeHTTP(w, r)

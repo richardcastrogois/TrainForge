@@ -1,3 +1,5 @@
+> Atualização22/10: este diagnóstico preserva o snapshot inicial abaixo. FundaçãoGo/DB/Swagger e auth local foram implementadas depois; AppDio/sessão corrigidos e APKdebug instalado em emulador. Ver handoff/oauth-android.md e achados.json para estado atual. LoginGoogle real/OAuthrelease em validação.
+
 # Estado técnico verificado em 21/10/2026
 
 Inspeção estática do código local. Não foram executados API, migrations, testes de carga ou nova jornada de login do aplicativo nesta entrega. O [inventário portátil](inventario-atual.json) e o [mapa no repositório](README.md) mostram caminhos relativos e cobertura; o Fastify é referência versionada, não dependência local implícita. Os achados são [registros revisáveis](achados.json), não uma auditoria de vulnerabilidades executada.

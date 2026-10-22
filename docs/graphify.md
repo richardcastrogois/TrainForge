@@ -1,5 +1,11 @@
 # Graphify — cobertura e atualização
 
+## Atualização22/10: autenticação Flutter
+
+Atualização incremental somente de código:10arquivos alterados,33inalterados,0removidos;43arquivosDart,499nós/640arestas. graph.json/manifest.json e graph.html atualizados. Sem clusterização/extracão semântica ou custo de LLM; rótulos de comunidades anteriores preservados. Backup automático anterior retido em .local/graphify-backup-20261022, fora do Git. O relatório abaixo preserva a conferência histórica de21/10; não foi refeito para fingir nova análise semântica.
+
+## Conferência histórica21/10
+
 Conferência incremental executada em **21/10/2026**, com a instalação existente. Não houve instalação/upgrade de pacote nem extração semântica dos dossiês.
 
 | Corpus | Arquivos de código | Nós | Arestas | Resultado desta rodada |

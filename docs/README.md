@@ -1,6 +1,6 @@
 # Documentação do TrainForge
 
-Atualizado em **21/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
+Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
 
 | Preciso entender… | Abrir |
 |---|---|
@@ -19,9 +19,9 @@ Atualizado em **21/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Estado:** pesquisa N01–N46 encerrada nos recortes documentados, incluindo N15 modular. Aplicativo Flutter e API Fastify já existem; Go, novo banco lógico, catálogo integrado, deploy e APK V1 ainda são trabalho futuro. Pesquisa concluída não é liberação editorial, clínica ou de redistribuição.
+**Estado:** etapas01/02 concluídas;73metadados de consulta,439excluídos,0prática aprovada. FundaçãoGo/DB/Swagger e auth local implementadas. APKdebug instalado em emulador; loginGoogle real e OAuthrelease em validação. Demais módulosV1 não estão integrados.
 
-**Próxima história:** `V1-005`, revisar o lote real por operação/uso. V1-004 concluiu contrato e preparação local candidata, conforme pedido de continuar a etapa01. A decisão Go/V1-002 permanece não iniciada. `V1-001` concluiu o inventário de candidatos e a matriz de avaliação; não liberou conteúdo nem implementou o app. `backlog.json` é a fonte única de tarefas; o Markdown é gerado. Nada foi marcado como implementado só por constar no planejamento.
+**Próxima história:** V1-011 permanece doing, sem completionEvidence; consultar handoff e oauth-android.md. V1-003 continua transversal, sem publicação remota autorizada.
 
 ## Como a pasta foi organizada
 

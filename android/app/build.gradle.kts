@@ -1,9 +1,15 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
+
+val tfSigningFile = rootProject.file("key.properties")
+val tfSigning = Properties()
+if (tfSigningFile.exists()) { tfSigningFile.inputStream().use { tfSigning.load(it) } }
 
 android {
     namespace = "com.example.trainforge"
@@ -30,15 +36,31 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (tfSigningFile.exists()) {
+            create("evaluationRelease") {
+                storeFile = file(tfSigning.getProperty("storeFile"))
+                storePassword = tfSigning.getProperty("storePassword")
+                keyAlias = tfSigning.getProperty("keyAlias")
+                keyPassword = tfSigning.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            if (tfSigningFile.exists()) { signingConfig = signingConfigs.getByName("evaluationRelease") }
         }
     }
 }
 
 flutter {
     source = "../.."
+}
+
+// Never silently sign a release with the debug certificate.
+gradle.taskGraph.whenReady {
+    if (allTasks.any { it.name.contains("Release") } && !tfSigningFile.exists()) {
+        throw GradleException("Release requires the local signing configuration: android/key.properties")
+    }
 }
