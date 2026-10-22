@@ -1,8 +1,6 @@
 # Caminho da pesquisa ao APK
 
-Plano executável de21/10/2026. Esta entrega organiza e prepara; não iniciou backend Go, migrations, alteração funcional Flutter, provisionamento cloud ou geração do APK V1.
-
-**Próxima ação: V1-005.** V1-004 concluiu contrato editorial e preparação local candidata, sem homologar prática ou importar no app. O autor pediu continuar a etapa01 de conteúdo; V1-002 permanece independente e não iniciada. V1-001 concluiu o inventário de candidatos e a matriz de cenários, sem liberar conteúdo ou implementar o aplicativo. O [backlog](backlog.md) tem43histórias; V1-003 está em andamento para a documentação/CI, demais implementações ainda não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
+Estado vigente22/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02/M1 concluída](etapa-02-fechamento.md). Go/API/DB/Swagger são reais localmente; autenticação/Flutter/APK ainda não entregues. Próxima história011. V1-003 transversal aguarda publicação remota autorizada. Conteúdo:73metadados/439excluídos/0prática aprovada.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|

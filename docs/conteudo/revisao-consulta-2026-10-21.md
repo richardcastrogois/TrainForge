@@ -1,3 +1,5 @@
+> Estado vigente desta continuação: [fechamento da etapa01](../execucao/v1/etapa-01-fechamento.md). Triagem512concluída,73metadados/439excluídos,0ensino/prática; V1-002/005fechadas, V1-007emexecução. Registros de revisão parcial abaixo são históricos.
+
 # Revisão do primeiro lote de consulta — 21/10/2026
 
 Continuação de V1-005 dentro da etapa01. A revisão documental foi feita pelo agente Codex, com essa identidade registrada. Não foi atribuída a um profissional inexistente nem equivale a homologação clínica, teste no aplicativo ou entrega de APK.

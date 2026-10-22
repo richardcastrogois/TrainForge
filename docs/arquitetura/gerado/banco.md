@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `18cbeca1ee537aa2`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `3751dfdb25d00de3`.
 
 ## Referência atual: schema Prisma externo
 
@@ -265,6 +265,30 @@ erDiagram
 | expiresAt | `DateTime` | não |
 | createdAt | `DateTime` | não |
 | updatedAt | `DateTime` | não |
+
+## Go: tabelas declaradas em migrations versionadas
+
+Declaração SQL não prova aplicação no banco; o resultado runtime está em database-verification.json. ALTERs, índices, tipos e FKs completos permanecem nos arquivos fonte.
+
+| Tabela | Migration fonte |
+| --- | --- |
+| users | [services/api/migrations/00001_core.sql:4](../../../services/api/migrations/00001_core.sql) |
+| auth_families | [services/api/migrations/00001_core.sql:14](../../../services/api/migrations/00001_core.sql) |
+| refresh_tokens | [services/api/migrations/00001_core.sql:21](../../../services/api/migrations/00001_core.sql) |
+| sources | [services/api/migrations/00001_core.sql:29](../../../services/api/migrations/00001_core.sql) |
+| content_versions | [services/api/migrations/00001_core.sql:36](../../../services/api/migrations/00001_core.sql) |
+| content_withdrawals | [services/api/migrations/00001_core.sql:52](../../../services/api/migrations/00001_core.sql) |
+| import_batches | [services/api/migrations/00001_core.sql:60](../../../services/api/migrations/00001_core.sql) |
+| batch_content | [services/api/migrations/00001_core.sql:67](../../../services/api/migrations/00001_core.sql) |
+| program_items | [services/api/migrations/00001_core.sql:75](../../../services/api/migrations/00001_core.sql) |
+| enrollments | [services/api/migrations/00001_core.sql:87](../../../services/api/migrations/00001_core.sql) |
+| schedule_occurrences | [services/api/migrations/00001_core.sql:99](../../../services/api/migrations/00001_core.sql) |
+| activity_sessions | [services/api/migrations/00001_core.sql:110](../../../services/api/migrations/00001_core.sql) |
+| activity_events | [services/api/migrations/00001_core.sql:127](../../../services/api/migrations/00001_core.sql) |
+| idempotency_records | [services/api/migrations/00001_core.sql:137](../../../services/api/migrations/00001_core.sql) |
+| food_versions | [services/api/migrations/00001_core.sql:148](../../../services/api/migrations/00001_core.sql) |
+| food_entries | [services/api/migrations/00001_core.sql:169](../../../services/api/migrations/00001_core.sql) |
+| program_sessions | [services/api/migrations/00003_prescribed_sessions.sql:3](../../../services/api/migrations/00003_prescribed_sessions.sql) |
 
 ## Proposto: responsabilidades do domínio novo
 

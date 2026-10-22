@@ -1,14 +1,14 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `18cbeca1ee537aa2`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `3751dfdb25d00de3`.
 
-**2/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-005**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**9/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
-| EP01 | Recorte verificável e governança | 3 | 1 |
-| EP02 | Conteúdo, autoria e direitos | 3 | 1 |
-| EP03 | Fundação Go, contratos e banco | 4 | 0 |
+| EP01 | Recorte verificável e governança | 3 | 2 |
+| EP02 | Conteúdo, autoria e direitos | 3 | 3 |
+| EP03 | Fundação Go, contratos e banco | 4 | 4 |
 | EP04 | Identidade, privacidade e acesso | 3 | 0 |
 | EP05 | Biblioteca humana e API de catálogo | 3 | 0 |
 | EP06 | Atividade e alimentação registradas de verdade | 4 | 0 |
@@ -34,7 +34,7 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-001 | done | Mapear conteúdo e cenários do APK de avaliação | nenhuma |
-| V1-002 | todo | Aceitar a decisão Go e definir a fronteira de migração | V1-001 |
+| V1-002 | done | Aceitar a decisão Go e definir a fronteira de migração | V1-001 |
 | V1-003 | doing | Manter documentação arquitetural dinâmica no repositório | nenhuma |
 ### EP02 — Conteúdo, autoria e direitos
 
@@ -54,8 +54,8 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-004 | done | Criar contrato editorial dos quatro tipos de conteúdo | V1-001 |
-| V1-005 | doing | Revisar o lote real para o uso do piloto | V1-004 |
-| V1-006 | todo | Importar conteúdo de forma idempotente e auditável | V1-005, V1-010 |
+| V1-005 | done | Revisar o lote real para o uso do piloto | V1-004 |
+| V1-006 | done | Importar conteúdo de forma idempotente e auditável | V1-005, V1-010 |
 ### EP03 — Fundação Go, contratos e banco
 
 ```mermaid
@@ -76,10 +76,10 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-007 | todo | Criar o esqueleto do monólito modular Go | V1-002 |
-| V1-008 | todo | Gerar Swagger dos comentários e DTOs Go antes do cliente | V1-004, V1-007 |
-| V1-009 | todo | Modelar conteúdo versionado, adesão e ocorrências | V1-004, V1-007 |
-| V1-010 | todo | Criar migrations e testar backup/restauração | V1-009 |
+| V1-007 | done | Criar o esqueleto do monólito modular Go | V1-002 |
+| V1-008 | done | Gerar Swagger dos comentários e DTOs Go antes do cliente | V1-004, V1-007 |
+| V1-009 | done | Modelar conteúdo versionado, adesão e ocorrências | V1-004, V1-007 |
+| V1-010 | done | Criar migrations e testar backup/restauração | V1-009 |
 ### EP04 — Identidade, privacidade e acesso
 
 ```mermaid
@@ -99,7 +99,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-011 | todo | Autenticar Google no novo serviço | V1-008, V1-010 |
+| V1-011 | doing | Autenticar Google no novo serviço | V1-008, V1-010 |
 | V1-012 | todo | Rotacionar e revogar refresh tokens | V1-011 |
 | V1-013 | todo | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
 ### EP05 — Biblioteca humana e API de catálogo

@@ -1,6 +1,6 @@
-"""Geração code-first preparada para V1-008; não cria um serviço Go fictício.
+"""Geração code-first reproduzível a partir do serviço Go real.
 
-Pré-requisitos futuros: services/api/go.mod, cmd/api/main.go anotado e swag v1.16.6.
+Pré-requisitos: services/api/go.mod, cmd/api/main.go anotado e swag v1.16.6.
 Não instala ferramentas, não chama endpoints e não inicia Swagger UI.
 """
 import argparse
@@ -16,6 +16,14 @@ TARGETS = {"docs.go": "services/api/internal/swaggerdocs/docs.go",
            "swagger.yaml": "contracts/generated/swagger-v1.yaml"}
 
 
+def validate_build_info(info):
+    for line in info.splitlines():
+        fields = line.split()
+        if len(fields) >= 3 and fields[0] == "mod" and fields[1] == "github.com/swaggo/swag" and fields[2] == SWAG_VERSION:
+            return
+    raise ValueError("Build do Swaggo nao comprova modulo/tag fixados " + SWAG_VERSION)
+
+
 def generate(root, write=False):
     service = root / "services/api"
     if not (service / "go.mod").exists():
@@ -27,13 +35,13 @@ def generate(root, write=False):
     binary = shutil.which("swag")
     if not binary:
         raise ValueError(f"Swaggo {SWAG_VERSION} necessário. Instalação explícita: go install github.com/swaggo/swag/cmd/swag@{SWAG_VERSION}")
-    version = subprocess.check_output([binary, "--version"], text=True).strip()
-    if version.split()[-1] != SWAG_VERSION:
-        raise ValueError(f"Versão de swag divergente: esperada {SWAG_VERSION}; encontrada {version}")
+    # Upstream tag1.16.6 embeds CLI version1.16.4. Verify compiled module instead.
+    build_info = subprocess.check_output(["go", "version", "-m", binary], text=True)
+    validate_build_info(build_info)
     with tempfile.TemporaryDirectory(prefix="trainforge-swagger-") as directory:
         output = Path(directory)
         subprocess.run([binary, "init", "--generalInfo", "cmd/api/main.go", "--dir", ".", "--parseInternal",
-                        "--exclude", "internal/swaggerdocs", "--output", str(output), "--outputTypes", "go,json,yaml"],
+                        "--exclude", "internal/swaggerdocs", "--packageName", "swaggerdocs", "--output", str(output), "--outputTypes", "go,json,yaml"],
                        cwd=service, check=True)
         stale = []
         for name, relative in TARGETS.items():

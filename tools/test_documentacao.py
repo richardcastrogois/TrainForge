@@ -21,6 +21,8 @@ def isolated_copy(destination):
     shutil.copytree(ROOT / "tools", destination / "tools", ignore=shutil.ignore_patterns("__pycache__"))
     paths = {"docs/execucao/v1/backlog.json", "docs/arquitetura/plano.json", "docs/arquitetura/achados.json",
              "docs/arquitetura/referencias/backend-fastify.json"}
+    paths.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "services/api").rglob("*") if p.is_file() and (p.suffix in {".go", ".sql"} or p.name in {"go.mod", "go.sum"}))
+    paths.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "contracts/generated").glob("*.json"))
     backlog = json.loads((ROOT / "docs/execucao/v1/backlog.json").read_text(encoding="utf-8"))
     paths.update(p for e in backlog["epics"] for s in e["stories"] for p in s["inputs"])
     for relative in paths:

@@ -3,22 +3,23 @@
   "date": "2026-10-21",
   "stage": "approved_consultation_operations",
   "runtimeSeed": false,
+  "importScope": "isolated_development_consultation",
+  "publishScope": "delivery_conditions_not_yet_verified_in_app",
   "sourceBundle": {
     "path": "content/local/editorial-v1.json",
     "sha256": "8c78fa41c474d1d027e7633aee1724b96b3604074c2aacc22323b93eedb09390"
   },
   "decisions": {
     "path": "content/manifests/pilot-review-decisions.json",
-    "sha256": "ae2b3ac4d3efa1bc99e40a379ee2c6ae698df3409c16569f39c091d0e07b031d"
+    "sha256": "0d2783deba489d07bd3934e94beceba05e23a831ec386fe57242c1e7a7e60a60"
   },
-  "toolSha256": "0c5eb6288584eafc0c89d94ffffe108caa820aaf1a2027cc490c03d51b8f3331",
+  "toolSha256": "5ae033b48c8e023636a01ef0fde57334d218e49f34c46844de05a02633ac3152",
   "output": {
     "path": "content/local/editorial-v1-reviewed.json",
-    "sha256": "a1d562cd8582d20ec5f81d9ae5f894103309dc2d4d3cef59c34336f0be733f4a"
+    "sha256": "01ba97d664bcab958dadb703f57a4c3349387d4e65b2de883a4a507a0d3a3dd3"
   },
   "counts": {
-    "movement": 73,
-    "instruction": 2
+    "movement": 73
   },
   "practiceApproved": 0,
   "mediaApproved": 0,
@@ -463,39 +464,6 @@
       ]
     },
     {
-      "assetId": "wger:translations:2138",
-      "sourceId": "EX01",
-      "allowedOperations": [
-        "instruction_text"
-      ],
-      "evidence": [
-        {
-          "path": "docs/planejamento/evidencias/wger-25.json",
-          "pointer": "/data/results/9/translations/3",
-          "snapshotSha256": "5d7e89c6bcd44fbaf68cfe6ecdb7ebe3fb1e81e0c4aae1bf6bbc0f7a35a4e033"
-        }
-      ],
-      "credits": {
-        "title": "Flexão de Punho com Barra",
-        "creators": [
-          "burenl",
-          "bruunomooura"
-        ],
-        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
-        "jsonPointer": "/data/results/9/translations/3",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-        "licenseLabel": "CC-BY-SA 4",
-        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
-        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
-      },
-      "deliveryConditions": [
-        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
-        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
-        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
-        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
-      ]
-    },
-    {
       "assetId": "wger:movement:56",
       "sourceId": "EX01",
       "allowedOperations": [
@@ -709,38 +677,6 @@
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
           "sourceNameUnchanged": true
         }
-      },
-      "deliveryConditions": [
-        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
-        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
-        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
-        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
-      ]
-    },
-    {
-      "assetId": "wger:translations:2789",
-      "sourceId": "EX01",
-      "allowedOperations": [
-        "instruction_text"
-      ],
-      "evidence": [
-        {
-          "path": "docs/planejamento/evidencias/wger-25.json",
-          "pointer": "/data/results/14/translations/5",
-          "snapshotSha256": "5d7e89c6bcd44fbaf68cfe6ecdb7ebe3fb1e81e0c4aae1bf6bbc0f7a35a4e033"
-        }
-      ],
-      "credits": {
-        "title": "Supino com halteres",
-        "creators": [
-          "Jhonatan"
-        ],
-        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
-        "jsonPointer": "/data/results/14/translations/5",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-        "licenseLabel": "CC-BY-SA 4",
-        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
-        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
       },
       "deliveryConditions": [
         "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",

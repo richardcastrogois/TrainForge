@@ -92,8 +92,17 @@ def go_inventory(root):
     paths = sorted(p for p in (root / "services/api").rglob("*.go")
                    if not p.name.endswith("_test.go") and "vendor" not in p.parts and "generated" not in p.parts)
     annotations, registrations = [], []
+    packages, dependencies = set(), set()
+    service = root / "services/api"
+    module_match = re.search(r"^module\s+(\S+)", read(service / "go.mod"), re.M) if (service / "go.mod").exists() else None
+    module = module_match[1] if module_match else ""
     for path in paths:
         text = read(path)
+        package = path.parent.relative_to(service).as_posix()
+        packages.add(package)
+        if module:
+            for imported in re.findall(r'"(' + re.escape(module) + r'/[^"\n]+)"', text):
+                dependencies.add((package, imported.removeprefix(module + "/")))
         for match in re.finditer(r"^\s*//\s*@Router\s+(\S+)\s+\[(\w+)\]", text, re.M | re.I):
             before = text[:match.start()].split("\n\n")[-1]
             annotations.append({"method": match[2].upper(), "path": match[1],
@@ -117,7 +126,11 @@ def go_inventory(root):
                 specifications.append({"method": method.upper(), "path": spec.get("basePath", "").rstrip("/") + route,
                                        "operationId": operation.get("operationId"), "parameters": operation.get("parameters", []),
                                        "responses": operation.get("responses", {}), "source": source(path, root)})
+    migrations = sorted((service / "migrations").glob("*.sql"))
+    tables = [{"name": m[1], "source": source(p, root, line=line_at(read(p), m.start()))} for p in migrations for m in re.finditer(r"CREATE TABLE trainforge_v1\.([a-z_]+)", read(p))]
     return {"files": [p.relative_to(root).as_posix() for p in paths], "annotations": annotations,
+            "packages": sorted(packages), "imports": [list(edge) for edge in sorted(dependencies)],
+            "migrations": [p.relative_to(root).as_posix() for p in migrations], "tables": tables,
             "registrations": registrations, "specificationOperations": specifications,
             "limitations": ["Anotação não prova registro de rota, autorização ou execução.",
                             "Registro Go detecta literais net/http com método; routers dinâmicos podem ficar fora."]}
@@ -162,6 +175,8 @@ def scan(root):
             if b and b != a:
                 imports.setdefault((a, b), []).append(source(path, root, line=line_at(text, match.start())))
     inputs = dart + [root / f for f in go["files"]]
+    inputs += [root / p for p in go["migrations"]]
+    inputs += [p for p in (root / "services/api").glob("go.*") if p.is_file()]
     inputs += sorted((root / "contracts/generated").glob("*.json"))
     inputs += [ref_path, root / "docs/arquitetura/plano.json", root / "docs/execucao/v1/backlog.json", root / "docs/arquitetura/achados.json"]
     fingerprints = {p.relative_to(root).as_posix(): digest(p) for p in inputs}

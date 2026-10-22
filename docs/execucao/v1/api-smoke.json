@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "checks": {
+    "/api/v1/health/live": 200,
+    "/api/v1/health/ready": 503,
+    "/docs/index.html": 200,
+    "/docs/doc.json": 200
+  },
+  "realProcess": true,
+  "databaseConnected": false,
+  "specMatchesActualHealthPaths": true,
+  "processStoppedAfterTest": true
+}

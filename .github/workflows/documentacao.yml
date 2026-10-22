@@ -60,7 +60,19 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/mermaid-validation" --ignore-scripts --no-audit --no-fund mermaid@11.12.0 jsdom@26.1.0
           node tools/validar_mermaid.mjs "$RUNNER_TEMP/mermaid-validation/node_modules"
-      - name: Confirmar estado da geração Swagger
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
+        with:
+          go-version-file: services/api/go.mod
+          cache-dependency-path: services/api/go.sum
+      - name: Instalar gerador fixado
+        run: go install github.com/swaggo/swag/cmd/swag@v1.16.6
+      - name: Testar serviço Go
+        working-directory: services/api
+        run: |
+          go test ./...
+          go vet ./...
+          go build ./cmd/api
+      - name: Conferir Swagger dos comentários e DTOs reais
         run: python tools/gerar_swagger.py --check
       - name: Disponibilizar derivados para leitura e revisão
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

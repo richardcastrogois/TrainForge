@@ -1,6 +1,6 @@
-# Domínio e banco — modelo lógico proposto
+# Domínio e banco — modelo e implementação inicial
 
-Este é o insumo de `V1-009`, **não uma migration aplicada**. PostgreSQL continua recomendado. O esquema Prisma atual está no backend externo e é inventariado na documentação gerada.
+As migrations00001–00003 em `services/api/migrations` foram aplicadas no banco isolado `trainforge_v1_dev`. O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -39,3 +39,33 @@ Toda query privada usa o titular autorizado. Histórico preserva versão editori
 API Go será a única responsável pelo schema novo. Primeiro banco isolado; migrations pequenas forward, revisão SQL, testes concorrentes e backup restaurável. Se houver dados reais no legado, inventariar contagens/estrutura com autorização, mapear campos (incluindo `completeAt` → `completedAt`) e ensaiar importação sem sobrescrever o original. Não inventar que existem usuários/dados para migrar.
 
 `V1-010` deve registrar versão PostgreSQL suportada, limites de pool, extensões justificadas e papéis runtime/migration separados. Backup só conta como validado depois de restaurado e conferido em base separada. Não usar `docker compose down -v` ou reset de volume para “corrigir” migration.
+
+## Modelo físico aplicado na etapa02
+
+```mermaid
+erDiagram
+    users ||--o{ auth_families : titular
+    auth_families ||--o{ refresh_tokens : rotacao
+    sources ||--o{ content_versions : origem
+    content_versions ||--o{ content_withdrawals : retirada
+    content_versions ||--o{ program_sessions : prescricao
+    program_sessions ||--o{ program_items : ordem
+    content_versions ||--o{ enrollments : versao
+    users ||--o{ enrollments : adesao
+    enrollments ||--o{ schedule_occurrences : agenda
+    program_sessions ||--o{ schedule_occurrences : sessao_fonte
+    schedule_occurrences ||--o{ activity_sessions : execucao
+    activity_sessions ||--o{ activity_events : eventos
+    users ||--o{ food_entries : consumo
+    food_versions ||--o{ food_entries : versao
+```
+
+`content_versions` guarda movimentos, instruções, mídia, programas e coleções separados por `kind`, payload original revisado e hash canônico. `source_published_version` continua nulo se a fonte não informar versão; o hash não se apresenta como versão publicada pelo autor. Direitos e atribuição permanecem no payload. `batch_content` liga cada versão ao lote/manifesto.
+
+Sessão prescrita tem chave composta de programa+versão+session_key. Item aponta para essa sessão e para uma versão de movimento; ocorrência repete as chaves sob FKs que comprovam a adesão e a sessão daquela versão. `source_dose` ausente permanece null; validação tipada de cada dose/apoio será implementada antes da prática.
+
+Invariantes SQL efetivamente ensaiadas no restore: rejeitar duas execuções abertas na mesma ocorrência, evento de outro titular, movimento usado como programa, conclusão sem datas finais e ocorrência sem sessão prescrita. Nenhuma fixture persistiu. As FKs não substituem ownership nas queries HTTP.
+
+`food_versions` distingue fonte editorial e titular de cadastro próprio por CHECK exclusivo. Nutrientes preservam estado/ausência em JSON; bases e unidades são explícitas. Nenhum alimento foi importado nessa etapa. Suporte a outra pessoa assistida permanece posterior e exige vínculo/consentimento; os registros atuais só permitem o próprio titular.
+
+Papéis separados: migrator é proprietário do banco novo; runtime tem CRUD apenas das tabelas privadas e leitura editorial, sem CREATE/UPDATE editorial ou superuser. Scripts de bootstrap usam owner apenas no cluster criado para o clone. [Runbook da etapa02](../execucao/v1/etapa-02-fechamento.md).

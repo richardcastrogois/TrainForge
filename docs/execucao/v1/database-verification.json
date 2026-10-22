@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "source": "isolated_development",
+  "postgres": "postgres (PostgreSQL) 17.5",
+  "restoreTarget": "trainforge_v1_restore_20261021",
+  "sameCountsAndContent": true,
+  "counts": {
+    "users": 0,
+    "sources": 1,
+    "enrollments": 0,
+    "food_entries": 0,
+    "auth_families": 0,
+    "batch_content": 73,
+    "food_versions": 0,
+    "program_items": 0,
+    "import_batches": 1,
+    "refresh_tokens": 0,
+    "activity_events": 0,
+    "content_versions": 73,
+    "program_sessions": 0,
+    "activity_sessions": 0,
+    "content_withdrawals": 0,
+    "idempotency_records": 0,
+    "schedule_occurrences": 0
+  },
+  "contentRowsSha256": "da2fa3c4d9478bdc71f07de494c93570eceac700b6cff4f963fcfa888512a3f4",
+  "privileges": {
+    "runtimeCanCreate": false,
+    "runtimeCanMutateEditorial": false,
+    "runtimeCanReadEditorial": true,
+    "runtimeSuperuser": false
+  },
+  "sqlInvariantsChecked": [
+    "one_open_session_per_occurrence",
+    "cross_owner_event_rejected",
+    "movement_not_program",
+    "completion_requires_timestamps",
+    "occurrence_requires_prescribed_session"
+  ],
+  "fixturesPersisted": 0,
+  "backupSha256": "7016e798271565e14594a6e05ce21c94706513afa0700854afa70bac40f46b4e",
+  "restoreTargetRemoved": true,
+  "legacyDatabaseAccessed": false,
+  "externalReleaseApproved": false
+}

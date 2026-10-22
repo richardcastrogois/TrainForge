@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "realProcess": true,
+  "databaseConnected": true,
+  "livenessHTTP": 200,
+  "readinessHTTP": 200,
+  "swaggerUIHTTP": 200,
+  "specPaths": [
+    "/api/v1/health/live",
+    "/api/v1/health/ready"
+  ],
+  "servedSpecMatchesGenerated": true,
+  "emptyHostNormalization": true,
+  "annotationRegenerateBuildRestart": true,
+  "sourceRestored": true,
+  "ownedProcessStopped": true,
+  "result": "PASS"
+}

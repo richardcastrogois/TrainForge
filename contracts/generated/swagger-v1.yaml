@@ -1,0 +1,64 @@
+basePath: /
+definitions:
+  httpapi.Problem:
+    properties:
+      code:
+        type: string
+      requestId:
+        type: string
+      status:
+        type: integer
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  httpapi.Status:
+    properties:
+      status:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: Actual local foundation; health endpoints only. No training/authentication
+    functionality implied.
+  title: TrainForge API
+  version: 0.1.0
+paths:
+  /api/v1/health/live:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/httpapi.Status'
+      summary: Process liveness
+      tags:
+      - operation
+  /api/v1/health/ready:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/httpapi.Status'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Database readiness
+      tags:
+      - operation
+schemes:
+- http
+- https
+securityDefinitions:
+  BearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

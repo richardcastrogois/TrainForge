@@ -46,7 +46,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-002 — Aceitar a decisão Go e definir a fronteira de migração
 
-**todo · V1 · S**
+**done · V1 · S**
 
 Como mantenedor, quero um serviço com responsabilidade clara para evitar duas APIs escrevendo nos mesmos domínios.
 
@@ -146,13 +146,13 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-005 — Revisar o lote real para o uso do piloto
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como usuário, quero ver apenas o uso que o material realmente permite.
 
 Dependências: V1-004
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md; content/manifests/pilot-review-decisions.json; content/manifests/pilot-approved.json; docs/conteudo/revisao-consulta-2026-10-21.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md; content/manifests/pilot-review-decisions.json; content/manifests/pilot-approved.json; docs/conteudo/revisao-consulta-2026-10-21.md; content/manifests/pilot-dispositions.json
 
 Critérios de aceite:
 
@@ -171,13 +171,13 @@ Tarefas e subtarefas:
 
 Validação: Revisão linha a linha da allowlist; Tentar publicar item bloqueado e comprovar rejeição
 
-Entregas: content/manifests/pilot-approved.json (consulta parcial; pratica e entrega no app pendentes); content/manifests/pilot-review-decisions.json; docs/conteudo/revisao-consulta-2026-10-21.md
+Entregas: content/manifests/pilot-approved.json (somente metadados de consulta); content/manifests/pilot-dispositions.json; docs/execucao/v1/etapa-01-fechamento.md
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-006 — Importar conteúdo de forma idempotente e auditável
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como operador, quero carregar o lote aprovado no PostgreSQL sem pesquisa em runtime nem duplicações.
 
@@ -212,7 +212,7 @@ Uma API pequena com configurações, migrations e domínio próprios; preservar 
 
 ### V1-007 — Criar o esqueleto do monólito modular Go
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como desenvolvedor, quero iniciar API e testes de forma previsível com módulos explícitos.
 
@@ -243,7 +243,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-008 — Gerar Swagger dos comentários e DTOs Go antes do cliente
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como integrador, quero comentar os handlers/tipos Go e obter Swagger atualizado automaticamente no desenvolvimento e conferido na CI, sem YAML manual concorrente.
 
@@ -278,7 +278,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-009 — Modelar conteúdo versionado, adesão e ocorrências
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como usuário, quero repetir uma atividade em outra data sem perder histórico ou mudar a fonte original.
 
@@ -309,7 +309,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-010 — Criar migrations e testar backup/restauração
 
-**todo · V1 · L**
+**done · V1 · L**
 
 Como operador, quero evoluir o banco sem perder pesquisa ou registros pessoais.
 
@@ -321,7 +321,7 @@ Critérios de aceite:
 
 - Banco isolado sobe do zero por migrations Go; Prisma não migra o mesmo schema simultaneamente
 - Backup restaurado em outra base é conferido por contagens e referências
-- Banco real existente é inventariado com acesso autorizado; se não existe dado, registrar sem inventar migração
+- Banco legado não é presumido vazio: se migração de seus dados estiver no recorte, inventariar com acesso autorizado; na fundação isolada registrar o inventário como gate obrigatório de uma migração futura, sem inventar contagens
 
 Tarefas e subtarefas:
 
@@ -344,7 +344,7 @@ Autenticação real, sessões revogáveis e isolamento de dados por usuário, in
 
 ### V1-011 — Autenticar Google no novo serviço
 
-**todo · V1 · M**
+**doing · V1 · M**
 
 Como testador, quero entrar com minha conta real e usar a mesma identidade nas duas plataformas.
 
@@ -516,6 +516,7 @@ Critérios de aceite:
 - Texto fiel revisado, idioma, atribuição e versão aparecem juntos
 - Mídia ausente fica indisponível; nenhuma foto/vídeo de placeholder ou extração BeFit
 - Se existir mídia autorizada, entrega não expõe bucket nem exige download irrestrito
+- Triagem005concluida nao libera os439ativos excluidos: praticas requerem evidencia especifica/profissional e apoio conforme a fonte; nao fechar aceite integrado somente com catalogo de referencia
 
 Tarefas e subtarefas:
 
@@ -1101,6 +1102,7 @@ Critérios de aceite:
 - ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro
 - Manifest INTERNET e network config conferidos; release usa HTTPS e assinatura própria, sem debug key
 - OAuth release fingerprint configurado; segredo não entra no repo/log
+- Triagem005concluida nao libera os439ativos excluidos: praticas requerem evidencia especifica/profissional e apoio conforme a fonte; nao fechar aceite integrado somente com catalogo de referencia
 
 Tarefas e subtarefas:
 
