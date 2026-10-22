@@ -29,9 +29,11 @@ class _AuthPageState extends State<AuthPage> {
       Navigator.of(
         context,
       ).pushReplacement(MaterialPageRoute(builder: (_) => const AuthGate()));
-    } catch (e) {
+    } catch (_) {
+      if (!mounted) return;
       setState(() {
-        errorMessage = e.toString();
+        errorMessage =
+            'Não foi possível entrar. Confira sua conexão e tente novamente.';
       });
     } finally {
       if (mounted) {
