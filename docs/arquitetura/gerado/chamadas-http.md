@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9147d3cd1695ebc5`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b9e82df15eb537fc`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 
@@ -12,6 +12,9 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /api/v1/me` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
 | `POST /api/v1/auth/logout` | publicAuth, refreshToken | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:24](../../../lib/features/auth/data/auth_api.dart) |
 | `GET /mobile/bootstrap` | sem chaves literais detectadas | /mobile/bootstrap / body=ausente/inline / query=ausente | {"200": "z.object", "401": "z.object", "500": "z.object"} | [lib/features/bootstrap/data/bootstrap_api.dart:10](../../../lib/features/bootstrap/data/bootstrap_api.dart) |
+| `GET /api/v1/catalog/${filters.kind}` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:23](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:35](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` | mode, versionId | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:44](../../../lib/features/catalog/data/catalog_repository.dart) |
 | `GET /mobile/home/$date` | sem chaves literais detectadas | /mobile/home/:date / body=ausente/inline / query=ausente | {"200": "HomeDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/home/data/home_api.dart:11](../../../lib/features/home/data/home_api.dart) |
 | `POST /mobile/onboarding/manual-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/manual-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:19](../../../lib/features/onboarding/data/onboarding_api.dart) |
 | `POST /mobile/onboarding/ai-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/ai-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "504": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:50](../../../lib/features/onboarding/data/onboarding_api.dart) |
@@ -71,8 +74,8 @@ A tabela mistura implementação local explicitamente identificada e decisões f
 | GET | `/api/v1/me` | Bearer access opaco | 200 identidade própria {id,name,email,image:null}; implementado; PATCH/perfil físico pendente |
 | GET | `/api/v1/me/export` | Bearer | 200 exportação privada versionada; fluxo assíncrono apenas se volume justificar |
 | DELETE | `/api/v1/me` | Confirmação autenticada conforme política | 204/202 conforme operação definida; retenção/backup explicados |
-| GET | `/api/v1/catalog/programs` | modality, environment, population, cursor, limit, mode | 200 {items,nextCursor}; inclui disponibilidade, natureza modular/integral e source summary |
-| GET | `/api/v1/catalog/programs/{id}` | versionId opcional e modo de uso | 200 versão, authors/sources/rights, sessões, requisitos e razões de bloqueio;404 retirado/ausente segundo política |
+| GET | `/api/v1/catalog/programs` | q, environment, population, modality, equipment, category, cursor, limit1..50, mode | IMPLEMENTADO:200 {items,nextCursor,mode,notice}; tipos program/collection,0disponíveis no lote;304 revalidado,400/503 |
+| GET | `/api/v1/catalog/programs/{id}` | versionId SHA256 opcional, mode | IMPLEMENTADO:200 metadados autorizados e requisitos;304 após verificar retirada;400/404/503. Sem dose/sessões/instrução/mídia |
 | GET | `/api/v1/catalog/instructions/{id}` | versão e locale disponível | 200 texto permitido, dose/unidades, atribuição, mídia autorizada ou ausência; sem completar texto faltante |
 | POST | `/api/v1/enrollments` | {programVersionId, scheduleOptions, acknowledgements} | 201 adesão à versão e requisitos;409 conflito/422 opção incompatível; privado |
 | GET | `/api/v1/enrollments` | cursor e status | 200 próprias adesões, incluindo arquivadas quando solicitado |
@@ -85,5 +88,8 @@ A tabela mistura implementação local explicitamente identificada e decisões f
 | GET/PATCH/DELETE | `/api/v1/food-entries/{id}` | alteração confirmada ou exclusão | 200/204, somente titular; edição recalcula usando versão e fatores declarados |
 | GET | `/api/v1/health/live` | Sem dados pessoais | 200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno; implementado localmente, Swagger gerado |
 | GET | `/api/v1/health/ready` | Sem dados pessoais | 200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis; implementado localmente, Swagger gerado |
+| GET | `/api/v1/catalog/movements` | Mesmos filtros de programs | IMPLEMENTADO:73referências de movimento, nunca programa renomeado; paginação/ETag e metadados somente |
+| GET | `/api/v1/catalog/movements/{id}` | versionId SHA256 opcional, mode | IMPLEMENTADO:metadados da versão;404 se retirada/não autorizada; nenhum payload instrucional |
+| GET | `/api/v1/catalog/filters` | Sem parâmetros | IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência |
 
 [Voltar ao mapa](../README.md) · [Contrato proposto completo](../contratos-v1.md)

@@ -1,6 +1,6 @@
 # Caminho da pesquisa ao APK
 
-Estado vigente22/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02/M1 concluída](etapa-02-fechamento.md). Go/API/DB/Swagger são reais localmente; authGo/Flutter têm checkpoint local, APKdebug instalado; loginGoogle real e OAuthrelease em validação na011. Demais módulos/APKintegrado ainda não entregues. V1-003 transversal aguarda publicação remota autorizada. Conteúdo:73metadados/439excluídos/0prática aprovada.
+Estado vigente22/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02/M1 concluída](etapa-02-fechamento.md). Go/API/DB/Swagger são reais localmente; authGo/Flutter têm checkpoint local, APKdebug instalado; loginGoogle real e OAuthrelease em validação na011. V1-014 concluída: catálogo Go/Flutter real com73metadados, busca/filtros/atribuição/versões; APK0.1.1+2 e comando de retomada em avaliacao-android.md. Demais módulos/APKintegrado ainda não entregues. V1-003 transversal aguarda publicação remota autorizada. Conteúdo:73metadados/439excluídos/0prática aprovada.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|

@@ -1,83 +1,82 @@
-//lib/features/auth/presentation/pages/auth_page.dart
-import 'package:flutter/material.dart';
-import 'package:trainforge/features/auth/data/auth_repository.dart';
+import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:trainforge/shared/widgets/auth_gate.dart';
+import 'package:flutter/material.dart';
+import '../auth_controller.dart';
 
-class AuthPage extends StatefulWidget {
-  const AuthPage({super.key});
-
-  @override
-  State<AuthPage> createState() => _AuthPageState();
-}
-
-class _AuthPageState extends State<AuthPage> {
-  final repository = AuthRepository();
-  bool loading = false;
-  String? errorMessage;
-
-  Future<void> handleLogin() async {
-    setState(() {
-      loading = true;
-      errorMessage = null;
-    });
-
-    try {
-      await repository.signInWithGoogle();
-
-      if (!mounted) return;
-
-      Navigator.of(
-        context,
-      ).pushReplacement(MaterialPageRoute(builder: (_) => const AuthGate()));
-    } catch (_) {
-      if (!mounted) return;
-      setState(() {
-        errorMessage =
-            'Não foi possível entrar. Confira sua conexão e tente novamente.';
-      });
-    } finally {
-      if (mounted) {
-        setState(() {
-          loading = false;
-        });
-      }
-    }
-  }
-
+class AuthPage extends StatelessWidget {
+  final AuthController? _controller;
+  const AuthPage({super.key, AuthController? controller})
+    : _controller = controller;
   @override
   Widget build(BuildContext context) {
+    final controller = _controller;
+    if (controller == null) return const AuthGate();
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'TrainForge',
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 12),
-            const Text(
-              'Entre com Google para continuar',
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 32),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: loading ? null : handleLogin,
-                child: Text(loading ? 'Entrando...' : 'Entrar com Google'),
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 480),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'TrainForge',
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Entre com sua conta Google para avaliar sua sessão.',
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 24),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton.icon(
+                      onPressed: controller.busy ? null : controller.login,
+                      icon: const Icon(Icons.login),
+                      label: Text(
+                        controller.busy ? 'Conectando…' : 'Entrar com Google',
+                      ),
+                    ),
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: controller.busy
+                        ? null
+                        : () => Navigator.push(
+                            context,
+                            MaterialPageRoute<void>(
+                              builder: (_) => const CatalogPage(),
+                            ),
+                          ),
+                    icon: const Icon(Icons.library_books_outlined),
+                    label: const Text('Consultar biblioteca sem entrar'),
+                  ),
+                  if (controller.message != null) ...[
+                    const SizedBox(height: 16),
+                    Semantics(
+                      liveRegion: true,
+                      child: Text(
+                        controller.message!,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    if (controller.failedAction != null)
+                      TextButton(
+                        onPressed: controller.busy ? null : controller.retry,
+                        child: const Text('Tentar novamente'),
+                      ),
+                  ],
+                  const SizedBox(height: 24),
+                  const Text(
+                    'Versão de avaliação. Outros cenários serão liberados conforme a integração e o conteúdo permitido.',
+                    textAlign: TextAlign.center,
+                  ),
+                ],
               ),
             ),
-            if (errorMessage != null) ...[
-              const SizedBox(height: 16),
-              Text(
-                errorMessage!,
-                style: const TextStyle(color: Colors.red),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ],
+          ),
         ),
       ),
     );

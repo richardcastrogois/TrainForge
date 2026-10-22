@@ -108,5 +108,15 @@
     "detail": "Conclusão antiga e histórico do plano não devem bloquear próxima data; rever UI e API.",
     "story": "V1-017",
     "status": "aberto — inspeção estática"
+  },
+  {
+    "id": "A12",
+    "priority": "Alta",
+    "title": "Catálogo consultável não implica prática liberada",
+    "evidence": "services/api/internal/catalog/postgres_read.go",
+    "line": 27,
+    "detail": "V1-014:73metadados permitidos; projeção/retirada/revisão verificadas. Nenhuma dose/instrução/mídia entregue, população/ambiente/apoio desconhecidos preservados. Adesão/prática e aceite integrado pendentes.",
+    "story": "V1-016",
+    "status": "leitura concluída — conteúdo de prática continua excluído"
   }
 ]

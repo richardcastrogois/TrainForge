@@ -115,3 +115,17 @@ Autor confirmou por capturas o projetoCloud correto, OAuthdebug com pacote/finge
 EmuladorGooglePlayTrainForge_Benchmark existente iniciado, porta8082reversa; APKdebug gerado/instalado/aberto sem apagar dados. NovoAPK com últimos ajustes também gerado e assinatura verificada; não reinstalado para não interromper o loginmanual. Hashes/estado exatos emandroid-auth-checkpoint.json. Ainda0usuáriosV1naúltimaconferência; nenhuma fixture na base entregue. APIwatcher/cluster/emulador permanecemativos para intervenção doautor. Não houve loginGoogle real comprovado.
 
 Backlog011permanece doing e completionEvidencevazio;012tem preparação implementada, sem fechamento. Handoff/guiaOAuth/contrato/Swagger/achados/diagramas atualizados. GrafoFlutter atualizado somente porAST (10alterados/33inalterados,499nós/640arestas); HTMLexportado, backupanterior guardado em.local. Semnova pesquisa deconteúdo, reimportação, restore, instalaçãoFlutter, push/deploy/compra/contatoexterno.
+
+## 22/10/2026 — catálogo real, frontend e retomada preparados enquanto autor está fora
+
+GitHub main consultado diretamente permaneceu90e746e;1765708/6d3f3a4 eram commits locais, sem push e sem confirmação pendente. Autor adiou login/OAuthrelease até voltar ao notebook. Nenhum consentimentoGoogle automatizado.
+
+V1-014 concluída pelas dependências006/008: cinco leituras Go para catálogo/filtros/detalhe, movimentos separados de programas, filtros/cursor limitado, versão exata, rights/review/fidelity/withdrawal antes deETag. Projeção só de metadados, sem dose/instrução/mídia. LoteHTTP real exatamente73IDs revisados e créditos completos;0programas/prática, hash/contagens inalterados. FixturesSQL isoladas foram removidas, incluindo versões/retirada/ETag e ausência de privilégioeditorialruntime. Ver catalog-read-verification.json.
+
+Flutter recebeu controllerauth injetado e restauração única, retry correto de logout/cancelamento/mensagens seguras; biblioteca pública/autenticada, busca/filtros/paginação/estados/detalhe revalidado e atribuição/licença/versões/requisitos sem inferência. url_launcher6.3.3 oficial adicionado para linksHTTPS voluntários. Não foram ligados os geradores legados. BackupAndroid desabilitado e regras excluem cloud/device/cross-platform-transfer para não copiar tokens.
+
+APKdebug0.1.1+2 gerado/assinado, instalado sem apagar dados e inspecionado emAndroid35GooglePlay. Lista/detalhe públicos com autoria/licença conferidos, capturas ignoradas sem identidade.24testesFlutter e analyze passaram; go test/vet passaram;48testesPython passaram. Swagger atualizado para11operações. Não houve novo loginreal nem cadastro de usuário fictício.
+
+Helper avaliar-android.ps1 validado de partida fria: iniciou somente DB/API/AVD existentes, conferiu certificado/fonte/config/APKhash, pulou reinstalação redundante e abriu app. Parada conferiu propriedade/bootID e encerrou os três recursos; APK/dados/credenciais/chave retidos. Recibo android-environment-verification.json. Roteiro para retorno em avaliacao-android.md.
+
+V1-011 permanece doing,012/021/022parciais sem fechamento;016aguarda conteúdo realmente liberado. Demais módulos, HTTPSrelease e iOS não estão entregues. Backlog/contratos/achados/mapas/handoff atualizados e regenerados. Graphify incremental code-only:50Dart,615nós/786arestas,10alterados/40inalterados, backup em.local. Semnova pesquisa, importação/restore repetidos, contratação/pago, contatoexterno, push ou deploy.

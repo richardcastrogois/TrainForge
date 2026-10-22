@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — fundação Go/DB/Swagger e auth local implementadas; aceite Google Android em andamento; demais domínios planejados",
+  "status": "PARCIAL REAL — fundação Go/DB/Swagger, auth local e leitura de catálogo implementadas; Google real e demais domínios pendentes",
   "nodes": [
     {
       "id": "user",
@@ -12,29 +12,29 @@
       "id": "ui",
       "label": "Telas Flutter",
       "layer": "Flutter",
-      "description": "Entrar, contexto, biblioteca, detalhe, sessão, histórico, alimentação e perfil.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "Entrada/conta e biblioteca/detalhe de consulta implementados; contexto, adesão, atividade, histórico e alimentação ainda planejados.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "vm",
       "label": "ViewModels / controllers",
       "layer": "Flutter",
-      "description": "Estado de UI, comandos e dependências injetadas; sem acesso direto a SQL.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "AuthController e CatalogController com repositories injetados, comandos/estado seguros; demais features ainda não migradas.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "repos",
       "label": "Repositories / DTOs",
       "layer": "Flutter",
-      "description": "Convertem DTOs em domínio; cache versionado isolado por conta.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "SessionRepository e CatalogRepository tipados; domínio sem Dio/widgets. Catálogo revalidado no servidor, sem cache eterno.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "http",
       "label": "Cliente Dio / sessão",
       "layer": "Rede",
-      "description": "HTTPS, bearer de curta duração, refresh coordenado, requestId e idempotência.",
-      "evidence": "lib/core/http/app_dio.dart; test/session_refresh_test.dart; integração real pendente"
+      "description": "Dio central: origem/configuração explícitas, sem redirects, refresh coordenado e logs por allowlist. Idempotência de outros domínios ainda planejada.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "auth",
@@ -47,8 +47,8 @@
       "id": "catalog",
       "label": "Módulo catalog Go",
       "layer": "API Go",
-      "description": "Programas/componentes versionados, fontes, apoio e direitos por ativo.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "Leitura real dos metadados revisados: movimento/programa separados, filtros/cursor, atribuição, versão e retirada/ETag. Sem entrega de dose/instrução/mídia.",
+      "evidence": "services/api/internal/catalog/{handler,postgres_read,read}.go; catalog-read-verification.json"
     },
     {
       "id": "activity",
@@ -114,7 +114,7 @@
       "label": "Ações e dados confirmados",
       "input": "toques/entrada",
       "output": "tela e estado real",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
     },
     {
       "from": "ui",
@@ -122,7 +122,7 @@
       "label": "Comando tipado",
       "input": "seleção, data, quantidade",
       "output": "estado loading/data/empty/error",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
     },
     {
       "from": "vm",
@@ -130,7 +130,7 @@
       "label": "Método de domínio",
       "input": "consulta ou ação validada",
       "output": "modelo ou falha tipada",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
     },
     {
       "from": "repos",
@@ -138,7 +138,7 @@
       "label": "DTO versionado",
       "input": "request da OpenAPI",
       "output": "response validada / Problem",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
     },
     {
       "from": "http",
@@ -167,10 +167,10 @@
     {
       "from": "http",
       "to": "catalog",
-      "label": "GET /api/v1/catalog/programs/{id}",
-      "input": "filtros/cursor/versionId",
-      "output": "autoria, versão, sessões e requisitos de uso",
-      "evidence": "Contrato proposto, não chamada executada."
+      "label": "GET catálogo/filtros/detalhe",
+      "input": "q, valores reais, cursor/limit, versionId/mode",
+      "output": "metadados permitidos, atribuição e requisitos desconhecidos explícitos",
+      "evidence": "Chamadas GoCatalogRepository; API/DB/emulador validados, V1-014"
     },
     {
       "from": "http",
@@ -194,7 +194,7 @@
       "label": "SELECT projetado e paginado",
       "input": "versão e critérios de disponibilidade",
       "output": "conteúdo permitido e razões de bloqueio",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "services/api/internal/catalog/postgres_read.go; lote real73 e retirada/ETag em DBfixture"
     },
     {
       "from": "activity",
@@ -231,10 +231,10 @@
     {
       "from": "catalog",
       "to": "media",
-      "label": "URL de ativo autorizado ou referência",
+      "label": "Entrega futura, ainda indisponível",
       "input": "assetId/version/uso",
-      "output": "mídia permitida ou indisponibilidade",
-      "evidence": "Contrato proposto, não chamada executada."
+      "output": "Hoje apenas referência/licença e indisponibilidade explícita; nenhum arquivo entregue",
+      "evidence": "V1-016 pendente,0mídias liberadas"
     },
     {
       "from": "auth",
@@ -254,6 +254,20 @@
     }
   ],
   "flows": [
+    {
+      "id": "catalog_read",
+      "title": "Consulta real entregue — V1-014",
+      "edgeLabel": "implementado e validado",
+      "steps": [
+        "Entrada sem login ou conta conectada",
+        "Biblioteca:73movimentos /0programas",
+        "Busca e filtros da fonte",
+        "GET paginado: direitos/revisão/retirada",
+        "Detalhe da versão: autoria e licença",
+        "Requisitos desconhecidos e prática indisponível",
+        "Voltar / recarregar sem gerar treino"
+      ]
+    },
     {
       "id": "journey",
       "title": "Jornada principal planejada",
@@ -337,14 +351,14 @@
     {
       "method": "GET",
       "path": "/api/v1/catalog/programs",
-      "input": "modality, environment, population, cursor, limit, mode",
-      "output": "200 {items,nextCursor}; inclui disponibilidade, natureza modular/integral e source summary"
+      "input": "q, environment, population, modality, equipment, category, cursor, limit1..50, mode",
+      "output": "IMPLEMENTADO:200 {items,nextCursor,mode,notice}; tipos program/collection,0disponíveis no lote;304 revalidado,400/503"
     },
     {
       "method": "GET",
       "path": "/api/v1/catalog/programs/{id}",
-      "input": "versionId opcional e modo de uso",
-      "output": "200 versão, authors/sources/rights, sessões, requisitos e razões de bloqueio;404 retirado/ausente segundo política"
+      "input": "versionId SHA256 opcional, mode",
+      "output": "IMPLEMENTADO:200 metadados autorizados e requisitos;304 após verificar retirada;400/404/503. Sem dose/sessões/instrução/mídia"
     },
     {
       "method": "GET",
@@ -417,6 +431,24 @@
       "path": "/api/v1/health/ready",
       "input": "Sem dados pessoais",
       "output": "200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis; implementado localmente, Swagger gerado"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/movements",
+      "input": "Mesmos filtros de programs",
+      "output": "IMPLEMENTADO:73referências de movimento, nunca programa renomeado; paginação/ETag e metadados somente"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/movements/{id}",
+      "input": "versionId SHA256 opcional, mode",
+      "output": "IMPLEMENTADO:metadados da versão;404 se retirada/não autorizada; nenhum payload instrucional"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/filters",
+      "input": "Sem parâmetros",
+      "output": "IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência"
     }
   ],
   "entities": [

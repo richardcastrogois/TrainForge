@@ -851,7 +851,7 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "22/10 retomada: auth Go implementada e fixtures criptográficas/HTTP/concorrência PostgreSQL isoladas passaram; Flutter integrado em checkpoint, APK debug instalado no emulador Google Play. Client Web e Android debug conferidos por capturas do autor. Certificado release dedicado criado; cadastro OAuth release e login Google real aguardam intervenção. Não marcar done com fixtures. Ver oauth-android.md, auth-local-verification.json e handoff.md.",
+          "handoff": "22/10: implementação Go/Flutter preparada, APK0.1.1+2 instalado e helper de retomada. Autor fora do notebook: login consentido e cadastroOAuthrelease adiados até retorno. Debug/Web conferidos, fixtures não encerram história. Ver avaliacao-android.md e handoff.md.",
           "completionEvidence": []
         },
         {
@@ -906,7 +906,7 @@
             "Ciclo de sessão Go/Flutter",
             "Política de reuso e dispositivos"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.",
           "completionEvidence": []
         },
         {
@@ -978,7 +978,7 @@
           "id": "V1-014",
           "title": "Servir catálogo, versão e requisitos de uso",
           "userStory": "Como praticante, quero comparar opções reais por público, local e apoio.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -1031,8 +1031,29 @@
             "Handlers e queries de catálogo",
             "Respostas verificadas do lote"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "handoff": "22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver catalogo-consulta.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.",
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Leitura de metadados Go/Flutter com lote local revisado e APK0.1.1+2",
+              "files": [
+                "services/api/internal/catalog/handler.go",
+                "services/api/internal/catalog/postgres_read.go",
+                "lib/features/catalog/presentation/catalog_page.dart",
+                "docs/execucao/v1/catalog-read-verification.json",
+                "docs/execucao/v1/catalogo-consulta.md"
+              ],
+              "validation": [
+                "Go test/vet passaram; fixture PostgreSQL isolada removida: paginação/tipos/filtros/versões/retirada/ETag e runtime sem escrita",
+                "HTTP real compara exatamente73IDs/atribuições,0programas e0prática; lote/hash inalterados",
+                "24testesFlutter e analyze passaram; biblioteca/detalhe inspecionados visualmente no emulador com API/DB reais"
+              ],
+              "limits": [
+                "Somente consulta; sem dose/unidades/instrução/mídia liberadas e sem inferir elegibilidade/ambiente/apoio",
+                "Google real, adesão/atividade/histórico/alimentação, HTTPSrelease e iOS não validados nem concluídos"
+              ]
+            }
+          ]
         },
         {
           "id": "V1-015",
@@ -1148,7 +1169,7 @@
             "Contrato de instruction/media",
             "Lista de ativos efetivamente liberados"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia.",
           "completionEvidence": []
         }
       ]
@@ -1460,7 +1481,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.",
           "completionEvidence": []
         },
         {
@@ -1528,7 +1549,7 @@
             "Telas library/detail/enrollment",
             "Mapa de fluxo atualizado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.",
           "completionEvidence": []
         },
         {

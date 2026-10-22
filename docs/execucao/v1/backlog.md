@@ -371,7 +371,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: 22/10 retomada: auth Go implementada e fixtures criptográficas/HTTP/concorrência PostgreSQL isoladas passaram; Flutter integrado em checkpoint, APK debug instalado no emulador Google Play. Client Web e Android debug conferidos por capturas do autor. Certificado release dedicado criado; cadastro OAuth release e login Google real aguardam intervenção. Não marcar done com fixtures. Ver oauth-android.md, auth-local-verification.json e handoff.md.
+Handoff: 22/10: implementação Go/Flutter preparada, APK0.1.1+2 instalado e helper de retomada. Autor fora do notebook: login consentido e cadastroOAuthrelease adiados até retorno. Debug/Web conferidos, fixtures não encerram história. Ver avaliacao-android.md e handoff.md.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
@@ -402,7 +402,7 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
@@ -441,7 +441,7 @@ Consumir conteúdo pesquisado com origem e disponibilidade reais, sem gerar prog
 
 ### V1-014 — Servir catálogo, versão e requisitos de uso
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como praticante, quero comparar opções reais por público, local e apoio.
 
@@ -468,7 +468,7 @@ Validação: Contrato e DB com lote real; Filtro e item retirado não vazam cont
 
 Entregas: Handlers e queries de catálogo; Respostas verificadas do lote
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver catalogo-consulta.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.
 
 ### V1-015 — Criar adesão sem geração de treino
 
@@ -531,7 +531,7 @@ Validação: Inspeção visual e acessibilidade do material real; Link indispon�
 
 Entregas: Contrato de instruction/media; Lista de ativos efetivamente liberados
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia.
 
 ## EP06 — Atividade e alimentação registradas de verdade
 
@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -730,7 +730,7 @@ Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifes
 
 Entregas: Telas library/detail/enrollment; Mapa de fluxo atualizado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 

@@ -1,20 +1,27 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "9147d3cd1695ebc538cf66ff1d374fc8a361e09576bec7c2317d8b28c42dca33",
+  "inputRevision": "b9e82df15eb537fcabb4198a760a1d5cb624e56df76332388c20b6048d55573a",
   "inputs": {
     "lib/app.dart": "fbb5cec7f1f6f20f29b4caa878164b51484acdd2ee5e9006046559292193d34f",
     "lib/core/config/app_config.dart": "5f053101cb29e8e8a345484cee2386123e9211c0e20eafa34231929e9e9ca43e",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
     "lib/features/auth/data/auth_api.dart": "4e3775e3adfa57804907e943cceb0b4992df04fdaaf65465cdcf66824e40fad0",
-    "lib/features/auth/data/auth_repository.dart": "35f6079ad31073a5af65d2be869824f185332ccacfae72da25c642ce2ab6be36",
+    "lib/features/auth/data/auth_repository.dart": "0050dbfe16c326fe2c75b276c99fee1e886a2a36589b6540bbd02a7db700251c",
     "lib/features/auth/data/auth_storage.dart": "3790da813bfff74b4568d137f58b9df18cbc7bb873150fd629d80b98a9c5d9c0",
     "lib/features/auth/data/session_refresh.dart": "3253f0e08bf455206f88a70488be00796811eff0832a82d92b1e35693bb3a1cc",
+    "lib/features/auth/domain/auth_profile.dart": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
-    "lib/features/auth/presentation/pages/auth_page.dart": "6b35832b37c76d523d3b226a39431c55df7152667e571e206e899a7aa98e9369",
+    "lib/features/auth/presentation/auth_controller.dart": "ce65a53cb02331f1e547e94f8ad8a24c2f69bea853795113c936df29ecc0c9e1",
+    "lib/features/auth/presentation/pages/auth_page.dart": "9a3e43b557fead1b39f74fec373a1b10df226affb7db7be348adeb0c751b2050",
     "lib/features/bootstrap/data/bootstrap_api.dart": "4505633f5c0d752c59a0459944f757c9f6388bdf0818a8f699b5570bfb8096a7",
     "lib/features/bootstrap/data/bootstrap_repository.dart": "96dc3f3e64695688209b08b33e22b2b970154a3ce12ed85133bbfb9b82f562a0",
     "lib/features/bootstrap/domain/bootstrap_data.dart": "94c54cad4a2ee887f2f38c429909149de9c11c0e66c9e60155cc5989f055d57f",
+    "lib/features/catalog/data/catalog_repository.dart": "17c5f9900fe15a8289f53d3acacd3bbae4fa3deb08919a3021235a558ce241b0",
+    "lib/features/catalog/domain/catalog_entry.dart": "723a01b5b8717722fec7e53d01d246d576ee2038ff3b0156e3923604e876956f",
+    "lib/features/catalog/presentation/catalog_controller.dart": "0f2f0909529f59dc1ccf91bc1aa30e0aa8112ca08bc1f30cd96664382937a929",
+    "lib/features/catalog/presentation/catalog_detail_page.dart": "8cbf363fcc8ded117b6188371070a9345e7a63a280afacf67387f18a8d3269ce",
+    "lib/features/catalog/presentation/catalog_page.dart": "57cd96e8c7b73711506ea399858a3f56329b1a8c8e6b446b83b2a1bd7ea55e41",
     "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
     "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
     "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
@@ -44,8 +51,8 @@
     "lib/main.dart": "f95b1def36e051182f556ab026ca1392067ee71f67d3825716731b599efa1a3f",
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
-    "lib/shared/widgets/auth_gate.dart": "530c772aa803b2f16aac30ffbc1d9da2d334f49ce78d816d4debba11bc649e26",
-    "services/api/cmd/api/main.go": "c57392f1e736c2413ff67c419523734f1dd17ebcb73434828748fd88deb93d9c",
+    "lib/shared/widgets/auth_gate.dart": "202f106fec92689e72dc32112182a7cbaad57762078bb6aa0e37981a17987f2d",
+    "services/api/cmd/api/main.go": "7d4fd6b2e228441ae6e0db19228b48b282cdde682a20fa43797bc403b38b9f42",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
     "services/api/internal/activity/doc.go": "9c96dee6094436f58077a2977187e2b778d2cd82ba4ad93aae0436d961e5d89e",
@@ -53,13 +60,17 @@
     "services/api/internal/auth/google.go": "c2f8052eaf2419412d421a13c311de99d6a26eeb467537bbb95217add8253be9",
     "services/api/internal/auth/handler.go": "3a5d94d05f51c99c0f0c902125b862197af0fa0dbf3a9735caccf2d46d6070b5",
     "services/api/internal/auth/postgres.go": "d337bae2451219bf910a84e05e535f3ea6f1edab9a31ce3339c2c4470c215ce2",
-    "services/api/internal/auth/service.go": "3bbd93869d5aac08179252d8e7aa5720b376da85c52c18ab7f2365289c5876b9",
+    "services/api/internal/auth/service.go": "00463dbf70e0e7f95e5430f9aa7214f1146d9dca3d5a98d7ded053e614e873d9",
+    "services/api/internal/catalog/handler.go": "acfed4fdf3ae31f4b521b6a94e0d021522c319993e937084bd7d9cc576119110",
     "services/api/internal/catalog/import.go": "b5654ba5b1c59285010322a763840848637ba403f319f5c2734abfa6790f9a4b",
+    "services/api/internal/catalog/postgres_read.go": "b5b29ea2fe46c1c3093070502460479a0861da1dff4c65b5076e0b1d8af2982b",
+    "services/api/internal/catalog/query.go": "d9a772b5ce811cf8faee670029366ddf5d6cd89d933e503f03df2a76fd62b291",
+    "services/api/internal/catalog/read.go": "81c56d8e66dc36f3018b1853c722ad7c09b897fbaa3c3c893e4af56f6ea428d1",
     "services/api/internal/nutrition/doc.go": "013863f9b28c7c5c7c88d0ce4a22d84f1fb6696e5f1dda5557cbea05dfb3dd7c",
     "services/api/internal/platform/config/config.go": "0f9d295017ffc09fd301dc3ad7ed636dfb9de5a95828976c05ad069d1d3782dd",
     "services/api/internal/platform/httpapi/server.go": "1cabad94f609bf7d26279aa44e574c43485f26c61ca36c2e0dd56eef9ba4c7f3",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
-    "services/api/internal/swaggerdocs/docs.go": "715ed818f1c99a6c7746ecfc556a3b7c463148cfed4a471b15db42319bfd9e12",
+    "services/api/internal/swaggerdocs/docs.go": "f5c884bed1570f06c59c817f03a236a139137444fac104769d6923a2673e29a2",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
     "services/api/migrations/00002_typed_content_refs.sql": "78bbb7315006b7636ac5e00361bd48f7d0aa7181c84ef29b0aeee71ea28a246b",
@@ -67,25 +78,27 @@
     "services/api/migrations/00004_access_tokens.sql": "9cf58ad99c5274181615c4836088ac8d7e50e90e7a839afdd34a446a370e663a",
     "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
     "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
-    "contracts/generated/swagger-v1.json": "9231492a9b750cdbb490d16e37799c16a6c725a5168a881d232a0e67fc165aab",
+    "contracts/generated/swagger-v1.json": "6d63a36b351964bac5f663fb0eb5e8388a62c70e36ec03981d7b6dffcea7296a",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/arquitetura/plano.json": "632f65d2190a8ebbe38d8a0a222cc8cfa731b14e63d25136cfc67a2d99ef3b73",
-    "docs/execucao/v1/backlog.json": "0082aebaafffc3bc0773a85885203a7e1d018b1ec669a79947435a75bc144776",
-    "docs/arquitetura/achados.json": "745052735605acba4713b75e986afb3c74911c9df0dda4693a7e4de0b9b868b3",
+    "docs/arquitetura/plano.json": "27a73d296e55713676063374bffb5ffdb353c69c3208dba5cc6b8eafb798a302",
+    "docs/execucao/v1/backlog.json": "b8369673b1d39b700ac814e0aea04edd775e892cce08f9629ff3849ba99d67ac",
+    "docs/arquitetura/achados.json": "3c6b94b9edc802941d5b73835f61022acdfb47516ff7467b43fb14b1e161f128",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
+    "tools/avaliar_android.py": "4f7d7bee1bd46f617b07c767a46c3d07ff321a60dd49e99b02b408c773063fe3",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
     "tools/db_local.py": "14442d74a661fb14517a4ecb960369af6cee6ee90fa3286c8166d719f4dd4b19",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "01a084abae0a11dc9c74db96aa87ba629bcab1663e72e6523339817db3039adc",
     "tools/fechar_triagem_piloto.py": "9680f470c0c461676c9c3138d858213e0657ff8df038f7e1379cbec41db9b027",
-    "tools/gerar_documentacao.py": "fefa472773714f1de0060cd5abc0119a5f81e77b20320f54c171f74a16132cbb",
+    "tools/gerar_documentacao.py": "001ea0f6d0921a9a7658dea3b114470648b82b7e5a85c0038391bc2e44162cfd",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
     "tools/importar_catalogo_local.py": "3dc782157ea40dc86dbbcf9db2b2e11b9922a9a83bafb3e63452a02e310485fa",
     "tools/migrate_local.py": "04c795436d4d6a00881ca7a1cd0b401c7e3104cc4187e1c82b3fbe59c583b589",
     "tools/preparar_conteudo_local.py": "e4983901ab515e5c61b8e47872e3426641322f62e84842b8cb24d3eefb8c193c",
     "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
+    "tools/test_avaliar_android.py": "359e87508acdaaa20a29a36743f3d3c6637bfcf62175f1bbcab2a9d0dd675db9",
     "tools/test_conteudo_editorial.py": "e450dcef916d852e5e490b7188b2b06b6f83082e8ea2bdd97fb972de550d8a10",
     "tools/test_documentacao.py": "0d329bf5f6c05c7ff97e79d8930f442ad263bfb78e5f781ef4f41e86a9fcd804",
     "tools/test_revisao_conteudo.py": "8e5b98cfcaea352087c5bee2cf8e317ed9c6f7772513690f6988b90ab8f50da9",
@@ -93,20 +106,21 @@
     "tools/validar_manifesto_piloto.py": "85bb3d0d1053794bf9a61a8f25c1cb2693e49c445924be79691d81fb291cdefe",
     "tools/validar_mermaid.mjs": "e8ad6a610b13cfee280be81f7a15ebe52ffc06de7e842e7dd654e9219e0ba14b",
     "tools/verificar_api_local.py": "c2f379d46bf585082e5f22f6011f0599b9547ad474889972aaa97c2c90cbd387",
-    "tools/verificar_auth_http.py": "39c9597cb427375021a84563244782b942cb1223376647ef7be5c38f7f3e0bf5",
+    "tools/verificar_auth_http.py": "68e244652e209e269db877f823781317f0e1bb5c86b7a890e8f828017489a74c",
     "tools/verificar_auth_local.py": "171628f8808cbb7dc625a04462138a7a1eeb9491a1ec15db1a3b89f2feeeebf4",
-    "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776"
+    "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776",
+    "tools/verificar_catalogo_local.py": "0882d55611e55885c9861c2864d8449864109e27f0140c6c5fa30bdcc4765439"
   },
   "coverage": {
-    "dartFiles": 43,
+    "dartFiles": 50,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
-    "httpCalls": 15,
+    "httpCalls": 18,
     "legacyMatches": 12,
-    "goFiles": 16,
-    "goRegistrations": 7,
+    "goFiles": 20,
+    "goRegistrations": 12,
     "modelsInReference": 9
   },
   "groups": [
@@ -116,7 +130,27 @@
       "files": [
         {
           "repository": "trainforge",
+          "path": "lib/features/auth/presentation/auth_controller.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/auth/presentation/pages/auth_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_controller.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_detail_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_page.dart",
           "line": 1
         },
         {
@@ -193,6 +227,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 1
         },
         {
@@ -274,12 +313,22 @@
       "files": [
         {
           "repository": "trainforge",
+          "path": "lib/features/auth/domain/auth_profile.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/auth/domain/auth_user.dart",
           "line": 1
         },
         {
           "repository": "trainforge",
           "path": "lib/features/bootstrap/domain/bootstrap_data.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/domain/catalog_entry.dart",
           "line": 1
         },
         {
@@ -379,11 +428,16 @@
         {
           "repository": "trainforge",
           "path": "lib/features/auth/data/auth_repository.dart",
-          "line": 6
+          "line": 7
         },
         {
           "repository": "trainforge",
           "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 2
         },
         {
@@ -424,7 +478,17 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/auth/data/auth_repository.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 3
         },
         {
@@ -468,6 +532,26 @@
       "from": "ui",
       "to": "models",
       "sources": [
+        {
+          "repository": "trainforge",
+          "path": "lib/features/auth/presentation/auth_controller.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_controller.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_detail_page.dart",
+          "line": 4
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/catalog/presentation/catalog_page.dart",
+          "line": 3
+        },
         {
           "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/home_page.dart",
@@ -521,8 +605,8 @@
       "sources": [
         {
           "repository": "trainforge",
-          "path": "lib/features/auth/presentation/pages/auth_page.dart",
-          "line": 3
+          "path": "lib/features/catalog/presentation/catalog_page.dart",
+          "line": 2
         },
         {
           "repository": "trainforge",
@@ -627,6 +711,22 @@
       }
     },
     {
+      "id": "CatalogDetailPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/presentation/catalog_detail_page.dart",
+        "line": 62
+      }
+    },
+    {
+      "id": "CatalogPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/presentation/catalog_page.dart",
+        "line": 7
+      }
+    },
+    {
       "id": "HomePage",
       "source": {
         "repository": "trainforge",
@@ -711,18 +811,36 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 6
+        "line": 7
       }
     }
   ],
   "navigation": [
     {
       "from": "AuthPage",
+      "to": "CatalogPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
+        "line": 50
+      }
+    },
+    {
+      "from": "AuthPage",
       "to": "AuthGate",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 31
+        "line": 13
+      }
+    },
+    {
+      "from": "CatalogPage",
+      "to": "CatalogDetailPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/presentation/catalog_page.dart",
+        "line": 336
       }
     },
     {
@@ -929,7 +1047,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 103
+        "line": 43
+      }
+    },
+    {
+      "from": "AuthGate",
+      "to": "CatalogPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 81
       }
     }
   ],
@@ -1038,6 +1165,55 @@
           }
         }
       ],
+      "goMatches": []
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/${filters.kind}",
+      "keys": [],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/data/catalog_repository.dart",
+        "line": 23
+      },
+      "legacyMatches": [],
+      "goMatches": []
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/filters",
+      "keys": [],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/data/catalog_repository.dart",
+        "line": 35
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "GET",
+          "path": "/api/v1/catalog/filters",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/catalog/handler.go",
+            "line": 16
+          }
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}",
+      "keys": [
+        "mode",
+        "versionId"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/catalog/data/catalog_repository.dart",
+        "line": 44
+      },
+      "legacyMatches": [],
       "goMatches": []
     },
     {
@@ -2682,7 +2858,11 @@
       "services/api/internal/auth/handler.go",
       "services/api/internal/auth/postgres.go",
       "services/api/internal/auth/service.go",
+      "services/api/internal/catalog/handler.go",
       "services/api/internal/catalog/import.go",
+      "services/api/internal/catalog/postgres_read.go",
+      "services/api/internal/catalog/query.go",
+      "services/api/internal/catalog/read.go",
       "services/api/internal/nutrition/doc.go",
       "services/api/internal/platform/config/config.go",
       "services/api/internal/platform/httpapi/server.go",
@@ -2783,6 +2963,159 @@
       },
       {
         "method": "GET",
+        "path": "/api/v1/catalog/programs",
+        "params": [
+          "mode query string false \"consultation (default) or practice; unknown requirements never imply eligibility\" Enums(consultation,practice)",
+          "q query string false \"Literal title substring, maximum 100 UTF-8 bytes\"",
+          "environment query string false \"Exact source environment; unknown values do not match\"",
+          "population query string false \"Exact source population\"",
+          "modality query string false \"Exact source modality\"",
+          "equipment query string false \"Exact source equipment name\"",
+          "category query string false \"Exact source category\"",
+          "limit query int false \"Page size\" minimum(1) maximum(50) default(20)",
+          "cursor query string false \"Opaque cursor bound to the filters and page size\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} CatalogPage"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 101
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/programs/{id}",
+        "params": [
+          "id path string true \"Editorial asset ID\"",
+          "versionId query string false \"Exact SHA-256 version; latest by default\"",
+          "mode query string false \"consultation or practice\" Enums(consultation,practice)"
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} CatalogItem"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,404,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 116
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements",
+        "params": [
+          "mode query string false \"consultation or practice\" Enums(consultation,practice)",
+          "q query string false \"Literal title substring\"",
+          "environment query string false \"Exact source environment\"",
+          "population query string false \"Exact source population\"",
+          "modality query string false \"Exact source modality\"",
+          "equipment query string false \"Exact source equipment name\"",
+          "category query string false \"Exact source category\"",
+          "limit query int false \"Page size\" minimum(1) maximum(50) default(20)",
+          "cursor query string false \"Opaque cursor bound to filters\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} CatalogPage"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 137
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements/{id}",
+        "params": [
+          "id path string true \"Editorial movement ID\"",
+          "versionId query string false \"Exact SHA-256 version\"",
+          "mode query string false \"consultation or practice\" Enums(consultation,practice)"
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} CatalogItem"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,404,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 152
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/filters",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} CatalogFacets"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "400,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 164
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
         "path": "/api/v1/health/live",
         "params": [],
         "responses": [
@@ -2841,6 +3174,10 @@
       ],
       [
         "cmd/api",
+        "internal/catalog"
+      ],
+      [
+        "cmd/api",
         "internal/platform/config"
       ],
       [
@@ -2869,6 +3206,10 @@
       ],
       [
         "internal/auth",
+        "internal/platform/httpapi"
+      ],
+      [
+        "internal/catalog",
         "internal/platform/httpapi"
       ]
     ],
@@ -3059,6 +3400,51 @@
           "repository": "trainforge",
           "path": "services/api/internal/auth/handler.go",
           "line": 37
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/filters",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 16
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/programs",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/programs/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 18
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 19
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalog/handler.go",
+          "line": 20
         }
       },
       {
@@ -3277,6 +3663,360 @@
           },
           "429": {
             "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/filters",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/catalog.CatalogFacets"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements",
+        "operationId": null,
+        "parameters": [
+          {
+            "enum": [
+              "consultation",
+              "practice"
+            ],
+            "type": "string",
+            "description": "consultation or practice",
+            "name": "mode",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Literal title substring",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source environment",
+            "name": "environment",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source population",
+            "name": "population",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source modality",
+            "name": "modality",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source equipment name",
+            "name": "equipment",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source category",
+            "name": "category",
+            "in": "query"
+          },
+          {
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer",
+            "default": 20,
+            "description": "Page size",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Opaque cursor bound to filters",
+            "name": "cursor",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/catalog.CatalogPage"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/movements/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Editorial movement ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Exact SHA-256 version",
+            "name": "versionId",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "consultation",
+              "practice"
+            ],
+            "type": "string",
+            "description": "consultation or practice",
+            "name": "mode",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/catalog.CatalogItem"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/programs",
+        "operationId": null,
+        "parameters": [
+          {
+            "enum": [
+              "consultation",
+              "practice"
+            ],
+            "type": "string",
+            "description": "consultation (default) or practice; unknown requirements never imply eligibility",
+            "name": "mode",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Literal title substring, maximum 100 UTF-8 bytes",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source environment; unknown values do not match",
+            "name": "environment",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source population",
+            "name": "population",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source modality",
+            "name": "modality",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source equipment name",
+            "name": "equipment",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Exact source category",
+            "name": "category",
+            "in": "query"
+          },
+          {
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer",
+            "default": 20,
+            "description": "Page size",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Opaque cursor bound to the filters and page size",
+            "name": "cursor",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/catalog.CatalogPage"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog/programs/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Editorial asset ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Exact SHA-256 version; latest by default",
+            "name": "versionId",
+            "in": "query"
+          },
+          {
+            "enum": [
+              "consultation",
+              "practice"
+            ],
+            "type": "string",
+            "description": "consultation or practice",
+            "name": "mode",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/catalog.CatalogItem"
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }

@@ -12,6 +12,7 @@ import (
 	"syscall"
 	"time"
 	"trainforge.local/api/internal/auth"
+	"trainforge.local/api/internal/catalog"
 	"trainforge.local/api/internal/platform/config"
 	"trainforge.local/api/internal/platform/httpapi"
 	"trainforge.local/api/internal/platform/postgres"
@@ -19,8 +20,8 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.1.0
-// @description Local API with Google credential exchange and device sessions. Real Android OAuth validation remains an acceptance gate.
+// @version 0.2.0
+// @description Local Google sessions and reviewed reference catalog. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.
 // @BasePath /
 // @schemes http https
 // @securityDefinitions.apikey BearerAuth
@@ -63,7 +64,12 @@ func run(logger *slog.Logger) error {
 		repository = auth.Postgres{Pool: pool}
 	}
 	authentication := &auth.Handler{Service: auth.Service{Verifier: verifier, Repository: repository}, RequireTLS: c.Environment == "production"}
-	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.New(db, logger, c.RequestTimeout, docs, authentication.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
+	var catalogRepository catalog.CatalogRepository
+	if pool != nil {
+		catalogRepository = catalog.CatalogPostgres{Pool: pool}
+	}
+	catalogHTTP := catalog.CatalogHandler{Reader: catalog.Reader{Repository: catalogRepository}}
+	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.New(db, logger, c.RequestTimeout, docs, authentication.Register, catalogHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
 	go func() {
 		<-ctx.Done()
 		shutdown, cancel := context.WithTimeout(context.Background(), 5*time.Second)

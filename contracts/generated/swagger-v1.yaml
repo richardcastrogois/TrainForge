@@ -33,8 +33,222 @@ definitions:
         type: string
       image:
         type: string
+        x-nullable: true
       name:
         type: string
+    type: object
+  catalog.Availability:
+    properties:
+      consultation:
+        type: boolean
+      instruction:
+        type: boolean
+      media:
+        type: boolean
+      practice:
+        type: boolean
+      reasons:
+        items:
+          type: string
+        type: array
+    type: object
+  catalog.CatalogAudience:
+    properties:
+      environment:
+        items:
+          type: string
+        type: array
+        x-nullable: true
+      population:
+        items:
+          type: string
+        type: array
+        x-nullable: true
+      supportRequired:
+        type: boolean
+        x-nullable: true
+      supportSource:
+        type: string
+        x-nullable: true
+    type: object
+  catalog.CatalogFacets:
+    properties:
+      categories:
+        items:
+          type: string
+        type: array
+      environments:
+        items:
+          type: string
+        type: array
+      equipment:
+        items:
+          type: string
+        type: array
+      modalities:
+        items:
+          type: string
+        type: array
+      movementCount:
+        type: integer
+      populations:
+        items:
+          type: string
+        type: array
+      programCount:
+        type: integer
+      unknownEnvironmentCount:
+        type: integer
+      unknownPopulationCount:
+        type: integer
+    type: object
+  catalog.CatalogItem:
+    properties:
+      audience:
+        $ref: '#/definitions/catalog.CatalogAudience'
+      authors:
+        items:
+          type: string
+        type: array
+      availability:
+        $ref: '#/definitions/catalog.Availability'
+      id:
+        type: string
+      kind:
+        type: string
+      locale:
+        type: string
+        x-nullable: true
+      requirements:
+        $ref: '#/definitions/catalog.Requirements'
+      rights:
+        $ref: '#/definitions/catalog.CatalogRights'
+      source:
+        $ref: '#/definitions/catalog.CatalogSource'
+      sourcePublishedVersion:
+        type: string
+        x-nullable: true
+      title:
+        type: string
+        x-nullable: true
+      versionId:
+        type: string
+    type: object
+  catalog.CatalogPage:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/catalog.CatalogItem'
+        type: array
+      mode:
+        type: string
+      nextCursor:
+        type: string
+        x-nullable: true
+      notice:
+        type: string
+    type: object
+  catalog.CatalogRights:
+    properties:
+      attribution:
+        type: string
+        x-nullable: true
+      deliveryConditions:
+        items:
+          type: string
+        type: array
+      displayCredits:
+        $ref: '#/definitions/catalog.Credits'
+      label:
+        type: string
+        x-nullable: true
+      licenseUrl:
+        type: string
+        x-nullable: true
+      scope:
+        type: string
+        x-nullable: true
+    type: object
+  catalog.CatalogSource:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      publisher:
+        type: string
+        x-nullable: true
+      urls:
+        items:
+          type: string
+        type: array
+    type: object
+  catalog.Credits:
+    properties:
+      changes:
+        type: string
+        x-nullable: true
+      creators:
+        items:
+          type: string
+        type: array
+      licenseLabel:
+        type: string
+        x-nullable: true
+      licenseUrl:
+        type: string
+        x-nullable: true
+      selectedNameCredit:
+        allOf:
+        - $ref: '#/definitions/catalog.NameCredit'
+        x-nullable: true
+      sourceUrl:
+        type: string
+        x-nullable: true
+      title:
+        type: string
+        x-nullable: true
+      warrantyNotice:
+        type: string
+        x-nullable: true
+    type: object
+  catalog.Label:
+    properties:
+      id:
+        type: integer
+        x-nullable: true
+      name:
+        type: string
+    type: object
+  catalog.NameCredit:
+    properties:
+      creators:
+        items:
+          type: string
+        type: array
+      licenseUrl:
+        type: string
+        x-nullable: true
+      sourceNameUnchanged:
+        type: boolean
+        x-nullable: true
+      translationId:
+        type: string
+        x-nullable: true
+    type: object
+  catalog.Requirements:
+    properties:
+      category:
+        allOf:
+        - $ref: '#/definitions/catalog.Label'
+        x-nullable: true
+      equipment:
+        items:
+          $ref: '#/definitions/catalog.Label'
+        type: array
+      modality:
+        type: string
+        x-nullable: true
     type: object
   httpapi.Problem:
     properties:
@@ -56,10 +270,11 @@ definitions:
     type: object
 info:
   contact: {}
-  description: Local API with Google credential exchange and device sessions. Real
-    Android OAuth validation remains an acceptance gate.
+  description: Local Google sessions and reviewed reference catalog. Real Android
+    OAuth validation remains an acceptance gate; no executable training content is
+    implied.
   title: TrainForge API
-  version: 0.1.0
+  version: 0.2.0
 paths:
   /api/v1/auth/google:
     post:
@@ -200,6 +415,245 @@ paths:
       summary: Rotate session credentials
       tags:
       - auth
+  /api/v1/catalog/filters:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/catalog.CatalogFacets'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Source-backed catalog filters and coverage
+      tags:
+      - catalog
+  /api/v1/catalog/movements:
+    get:
+      parameters:
+      - description: consultation or practice
+        enum:
+        - consultation
+        - practice
+        in: query
+        name: mode
+        type: string
+      - description: Literal title substring
+        in: query
+        name: q
+        type: string
+      - description: Exact source environment
+        in: query
+        name: environment
+        type: string
+      - description: Exact source population
+        in: query
+        name: population
+        type: string
+      - description: Exact source modality
+        in: query
+        name: modality
+        type: string
+      - description: Exact source equipment name
+        in: query
+        name: equipment
+        type: string
+      - description: Exact source category
+        in: query
+        name: category
+        type: string
+      - default: 20
+        description: Page size
+        in: query
+        maximum: 50
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Opaque cursor bound to filters
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/catalog.CatalogPage'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: List reviewed movement metadata
+      tags:
+      - catalog
+  /api/v1/catalog/movements/{id}:
+    get:
+      parameters:
+      - description: Editorial movement ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Exact SHA-256 version
+        in: query
+        name: versionId
+        type: string
+      - description: consultation or practice
+        enum:
+        - consultation
+        - practice
+        in: query
+        name: mode
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/catalog.CatalogItem'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Reviewed movement metadata
+      tags:
+      - catalog
+  /api/v1/catalog/programs:
+    get:
+      parameters:
+      - description: consultation (default) or practice; unknown requirements never
+          imply eligibility
+        enum:
+        - consultation
+        - practice
+        in: query
+        name: mode
+        type: string
+      - description: Literal title substring, maximum 100 UTF-8 bytes
+        in: query
+        name: q
+        type: string
+      - description: Exact source environment; unknown values do not match
+        in: query
+        name: environment
+        type: string
+      - description: Exact source population
+        in: query
+        name: population
+        type: string
+      - description: Exact source modality
+        in: query
+        name: modality
+        type: string
+      - description: Exact source equipment name
+        in: query
+        name: equipment
+        type: string
+      - description: Exact source category
+        in: query
+        name: category
+        type: string
+      - default: 20
+        description: Page size
+        in: query
+        maximum: 50
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Opaque cursor bound to the filters and page size
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/catalog.CatalogPage'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: List reviewed program and collection metadata
+      tags:
+      - catalog
+  /api/v1/catalog/programs/{id}:
+    get:
+      parameters:
+      - description: Editorial asset ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Exact SHA-256 version; latest by default
+        in: query
+        name: versionId
+        type: string
+      - description: consultation or practice
+        enum:
+        - consultation
+        - practice
+        in: query
+        name: mode
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/catalog.CatalogItem'
+        "304":
+          description: Not Modified
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Reviewed program or collection metadata
+      tags:
+      - catalog
   /api/v1/health/live:
     get:
       produces:
