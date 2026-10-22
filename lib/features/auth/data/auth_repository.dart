@@ -1,5 +1,6 @@
 //lib/features/auth/data/auth_repository.dart
 import 'package:flutter/foundation.dart';
+import 'package:dio/dio.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 import '../domain/auth_user.dart';
@@ -8,8 +9,12 @@ import 'auth_storage.dart';
 
 class AuthRepository {
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
-  final _api = AuthApi();
-  final _storage = AuthStorage();
+  final AuthApi _api;
+  final AuthStorage _storage;
+
+  AuthRepository({AuthApi? api, AuthStorage? storage})
+    : _api = api ?? AuthApi(),
+      _storage = storage ?? AuthStorage();
 
   bool _initialized = false;
 
@@ -55,9 +60,12 @@ class AuthRepository {
     try {
       await _api.getMe();
       return true;
-    } catch (_) {
-      await _storage.clearToken();
-      return false;
+    } on DioException catch (error) {
+      if (error.response?.statusCode == 401) {
+        await _storage.clearToken();
+        return false;
+      }
+      rethrow;
     }
   }
 

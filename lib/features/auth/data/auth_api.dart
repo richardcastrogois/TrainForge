@@ -4,7 +4,9 @@ import 'package:trainforge/core/http/app_dio.dart';
 import '../domain/auth_user.dart';
 
 class AuthApi {
-  final Dio dio = AppDio.instance;
+  final Dio dio;
+
+  AuthApi({Dio? dio}) : dio = dio ?? AppDio.instance;
 
   Future<AuthUser> loginWithGoogleIdToken(String idToken) async {
     final response = await dio.post(

@@ -95,3 +95,9 @@ Texto novo do autor recebido e comparativo consolidado emdocs/conteudo/opcoes-ap
 Novo teto futuroatéR$400, gratuitasprimeiro, preferência porcompraúnica mantida; nenhuma compra, assinatura, cadastro, contato, scraping ou teste decarga deterceiros. Explorar opções gratuitas não autoriza ultrapassar quotas nem copiar biblioteca com direitos pendentes. Não reabrirNs porhábito.
 
 API/watcher parados; clusterV1 parado comtools/db_local.py stop, dados/credenciais/backupretidos. ZIPGooficial instalado/verificado removido, toolchainmantida. Handoff comcomandos/estado/pontodecontinuação atualizado. Sempush/publicação.
+
+## 22/10/2026 — retomada V1-011, segurança do cliente
+
+Retomada autorizada no clone correto; HEAD inicial90e746e, working tree limpo. AppDio deixou de registrar URLs/query/headers/corpos/exceções e usa eventos fixos, status e categoria. Falha de secure storage interrompe a requisição. AuthRepository remove credencial somente diante de401 confirmado; timeout/offline/403/429/5xx propagam sem apagar sessão. AuthPage não exibe texto bruto de exceção.
+
+Validação nova: Flutter3.41.4/Dart3.11.1 existentes; 7testes em test/auth_security_test.dart passaram e analyze dirigido sem achados. São regressões isoladas, não loginGoogle real. OAuth debug/release, implementaçãoGo e integração continuam pendentes. Nenhuma pesquisa de conteúdo, instalaçãoFlutter, reimportação ou restore repetidos. As execuções de binários no sandbox travaram sem output; leituraGit fora dele confirmou o estado.
