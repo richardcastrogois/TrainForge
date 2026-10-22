@@ -84,3 +84,14 @@ Importador validou artefato/allowlist, transação e versão imutável; encontro
 Swagger real2.0, duas rotas de saúde: teste do watcher mudou anotação, observou versão nova, restaurou e confirmou versão original antes de parar processo. Corrigidos packageName temporário e verificação de versão pelo buildinfo do Swaggo. CI Go/Swagger preparada; execução remota não realizada.
 
 006–010 encerradas nos recortes documentados em etapa-02-fechamento.md; próxima011 Google real. Migração de dados legados é fora do recorte desta fundação: não sabemos suas contagens; inventário é gate de futura migração. Sem prática/Flutter/APK homologados.
+
+
+##22/10 — encerramento para o próximo chat, a pedido do autor
+
+Etapas01 e02/M1 concluídas no commitc23ace6;011 apenas investigada. Não foram criados handlersAuth, alteraçãofuncionalFlutter ou loginfictício. Investigada bibliotecaidtokenGooglev0.24.1 e identificados logs debody/response noAppDio e limpeza detokenemqualquerfalha noAuthRepository. Pendências detalhadas nohandoff; dependência exploratória não utilizada removida, manifestsGo restaurados ao commitvalidado.
+
+Texto novo do autor recebido e comparativo consolidado emdocs/conteudo/opcoes-apis-exercicios.md, preservando evidências anteriores e um endereço histórico simples. Fontes primárias consultadas sem download demídia:free-exercise-db/Unlicense; GymRatREADMEdeclaraMITmasLICENSE404; hasaneyldrmNOTICEseparaGymvisual; APINinjasimagenspremium; MuscleWikigrátissóPlayground; MoveKitclipeavulso/APIemespera; ExerciseAnimaticinacessível/preçoaindanãoconfirmado.
+
+Novo teto futuroatéR$400, gratuitasprimeiro, preferência porcompraúnica mantida; nenhuma compra, assinatura, cadastro, contato, scraping ou teste decarga deterceiros. Explorar opções gratuitas não autoriza ultrapassar quotas nem copiar biblioteca com direitos pendentes. Não reabrirNs porhábito.
+
+API/watcher parados; clusterV1 parado comtools/db_local.py stop, dados/credenciais/backupretidos. ZIPGooficial instalado/verificado removido, toolchainmantida. Handoff comcomandos/estado/pontodecontinuação atualizado. Sempush/publicação.

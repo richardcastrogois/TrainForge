@@ -37,7 +37,7 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md"
+            "docs/conteudo/opcoes-apis-exercicios.md"
           ],
           "acceptance": [
             "Manifesto cobre os candidatos existentes e seus IDs PR/N/componentes, versões, fontes, públicos e ambientes, mantendo casa, praça, academia, idosos e cuidadores distintos; não reduzir a cobertura a uma amostra arbitrária",
@@ -77,7 +77,7 @@
             "content/manifests/pilot-candidates.json",
             "docs/execucao/v1/matriz-cenarios.md",
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md",
+            "docs/conteudo/opcoes-apis-exercicios.md",
             "tools/validar_manifesto_piloto.py",
             "docs/execucao/v1/verificacao-manifesto.json"
           ],
@@ -851,7 +851,7 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Encerramento solicitado em22/10: somente investigação inicial, sem handler/auth real. Ler docs/execucao/v1/handoff.md; corrigir logs de corpo no AppDio antes de login; implementar Google+OAuth real, depois012/013. Não marcar done com fixture. Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {

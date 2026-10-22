@@ -16,7 +16,7 @@ Como responsável pelo produto, quero avaliar o app inteiro com conteúdo real e
 
 Dependências: nenhuma
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/opcoes-apis-exercicios.md
 
 Critérios de aceite:
 
@@ -40,7 +40,7 @@ Tarefas e subtarefas:
 
 Validação: Revisão do manifesto contra evidências locais; Conferir que componentes isolados não aparecem como programa integral; Conferir cobertura ampla, lacunas de mídia/instrução e estados de cenários contra os registros reais, sem fechar a história apenas por registrar decisões; python tools/validar_manifesto_piloto.py: fontes/ponteiros/hashes/cobertura/estados e matriz conferidos; nao homologacao de pratica
 
-Entregas: content/manifests/pilot-candidates.json; docs/execucao/v1/matriz-cenarios.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md; tools/validar_manifesto_piloto.py; docs/execucao/v1/verificacao-manifesto.json
+Entregas: content/manifests/pilot-candidates.json; docs/execucao/v1/matriz-cenarios.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/opcoes-apis-exercicios.md; tools/validar_manifesto_piloto.py; docs/execucao/v1/verificacao-manifesto.json
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
@@ -371,7 +371,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Encerramento solicitado em22/10: somente investigação inicial, sem handler/auth real. Ler docs/execucao/v1/handoff.md; corrigir logs de corpo no AppDio antes de login; implementar Google+OAuth real, depois012/013. Não marcar done com fixture. Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
