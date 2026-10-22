@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `8b80b92605ef4773`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5c9f4a2bb090c812`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -61,7 +61,7 @@ flowchart LR
     node5 -->|"Consulta / transação"| node9
     node4 -->|"GET /api/v1/catalog/programs/{id}"| node6
     node4 -->|"POST enrollments / sessions / events; GET summary/history"| node7
-    node4 -->|"GET foods; POST food-entries"| node8
+    node4 -->|"GET/POST foods; POST food-entries"| node8
     node6 -->|"SELECT projetado e paginado"| node9
     node7 -->|"Transação por ocorrência"| node9
     node8 -->|"Leitura / transação privada"| node9

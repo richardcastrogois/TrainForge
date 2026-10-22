@@ -1,13 +1,13 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `8b80b92605ef4773`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5c9f4a2bb090c812`.
 
-**0/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-001**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**2/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-005**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
-| EP01 | Recorte verificável e governança | 3 | 0 |
-| EP02 | Conteúdo, autoria e direitos | 3 | 0 |
+| EP01 | Recorte verificável e governança | 3 | 1 |
+| EP02 | Conteúdo, autoria e direitos | 3 | 1 |
 | EP03 | Fundação Go, contratos e banco | 4 | 0 |
 | EP04 | Identidade, privacidade e acesso | 3 | 0 |
 | EP05 | Biblioteca humana e API de catálogo | 3 | 0 |
@@ -33,7 +33,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-001 | todo | Fixar o lote candidato e a jornada do primeiro teste | nenhuma |
+| V1-001 | done | Mapear conteúdo e cenários do APK de avaliação | nenhuma |
 | V1-002 | todo | Aceitar a decisão Go e definir a fronteira de migração | V1-001 |
 | V1-003 | doing | Manter documentação arquitetural dinâmica no repositório | nenhuma |
 ### EP02 — Conteúdo, autoria e direitos
@@ -53,8 +53,8 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-004 | todo | Criar contrato editorial dos quatro tipos de conteúdo | V1-001 |
-| V1-005 | todo | Revisar o lote real para o uso do piloto | V1-004 |
+| V1-004 | done | Criar contrato editorial dos quatro tipos de conteúdo | V1-001 |
+| V1-005 | doing | Revisar o lote real para o uso do piloto | V1-004 |
 | V1-006 | todo | Importar conteúdo de forma idempotente e auditável | V1-005, V1-010 |
 ### EP03 — Fundação Go, contratos e banco
 
@@ -153,7 +153,7 @@ flowchart LR
 | V1-017 | todo | Executar ocorrências idempotentes de atividade | V1-015, V1-012 |
 | V1-018 | todo | Consultar histórico e resumo com origem das métricas | V1-017 |
 | V1-019 | todo | Validar e importar o lote alimentar | V1-004, V1-010 |
-| V1-020 | todo | Pesquisar alimento e registrar consumo | V1-019, V1-013, V1-008 |
+| V1-020 | todo | Pesquisar e cadastrar alimento próprio e registrar consumo | V1-019, V1-013, V1-008 |
 ### EP07 — Flutter e experiência da V1
 
 ```mermaid
@@ -200,7 +200,7 @@ flowchart LR
 | V1-022 | todo | Implementar entrada e biblioteca com conteúdo real | V1-014, V1-015, V1-021 |
 | V1-023 | todo | Implementar sessão e recuperação de interrupção | V1-016, V1-017, V1-022 |
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |
-| V1-025 | todo | Implementar busca e registro alimentar no Flutter | V1-020, V1-021 |
+| V1-025 | todo | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021 |
 | V1-026 | todo | Tratar offline e sincronização sem fingir sucesso | V1-023, V1-025 |
 | V1-027 | todo | Validar acessibilidade e paridade de contratos Android/iOS | V1-022, V1-024, V1-025 |
 ### EP08 — Segurança, desempenho e observabilidade

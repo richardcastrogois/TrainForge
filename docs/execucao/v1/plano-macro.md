@@ -2,7 +2,7 @@
 
 Plano executável de21/10/2026. Esta entrega organiza e prepara; não iniciou backend Go, migrations, alteração funcional Flutter, provisionamento cloud ou geração do APK V1.
 
-**Próxima ação: V1-001.** O [backlog](backlog.md) tem43histórias; V1-003 está em andamento para a documentação/CI, demais implementações ainda não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
+**Próxima ação: V1-005.** V1-004 concluiu contrato editorial e preparação local candidata, sem homologar prática ou importar no app. O autor pediu continuar a etapa01 de conteúdo; V1-002 permanece independente e não iniciada. V1-001 concluiu o inventário de candidatos e a matriz de cenários, sem liberar conteúdo ou implementar o aplicativo. O [backlog](backlog.md) tem43histórias; V1-003 está em andamento para a documentação/CI, demais implementações ainda não iniciadas. Tamanho S/M/L indica complexidade relativa, não prazo prometido. História L deve ser entregue em fatias pequenas com aceite próprio.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|
@@ -15,6 +15,14 @@ Plano executável de21/10/2026. Esta entrega organiza e prepara; não iniciou ba
 | M6 — iOS e expansão |038–043 | macOS/Xcode e paridade, lojas e funcionalidades posteriores | Cada capacidade tem evidência de uso/direitos/custo próprios |
 
 As dependências exatas estão em `backlog.json`; intervalos da tabela são orientação macro e não autorização para pular dependência. É possível investigar hospedagem/contratos independentemente de um material bloqueado; não fingir que bloqueio editorial fechou.
+
+## Avaliar antes de concluir o produto
+
+As [respostas de21/10](decisoes-piloto.md) ampliam a cobertura do piloto: o autor quer o APK para entender o app inteiro, percorrendo todos os cenários um de cada vez. V1-001 deve mapear a cobertura pesquisada completa e suas lacunas, em vez de escolher uma única jornada ou poucos alimentos como produto final do teste. Importações continuam em lotes técnicos com direitos e qualidade conferidos.
+
+M2 e M3 devem produzir checkpoints de APK de avaliação assim que houver fatias reais instaláveis, com versão, configuração, assinatura, proteção dos fluxos habilitados e roteiro do que pode ser testado. Usar as tarefas de034/036 também como referência de build/distribuição, antecipando somente os requisitos necessários ao checkpoint. Suas dependências e o aceite integral permanecem válidos para fechar a V1; não marcar034/036 concluídas por entregar uma build intermediária. Não aguardar todos os módulos prontos para colher feedback. M5 continua sendo o aceite integrado da V1 e sua entrega completa.
+
+Cada checkpoint relaciona todos os cenários a um estado real: disponível para teste, incompleto, bloqueado por conteúdo/requisito ou ainda não implementado. Não usar telas, dados ou ações simulados para aparentar cobertura. O feedback orienta refinamento ou pesquisa direcionada com nova pista. Custo atualizado: priorizar fontes gratuitas; o autor indicou cerca deUS$19 como possibilidade em pagamento único e considerou valores maiores inviáveis. Assinatura não atende a essa direção; nenhuma compra foi aprovada. O inventário de fontes e cenários independe da decisão sobre uma compra específica.
 
 ## Incrementos que o agente deve executar
 

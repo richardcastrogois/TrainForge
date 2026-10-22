@@ -8,34 +8,39 @@ Status: todo = não iniciado; done exige evidência. Não confundir planejamento
 
 Transformar a pesquisa concluída em um lote candidato real e uma execução rastreável, sem presumir liberação dos materiais.
 
-### V1-001 — Fixar o lote candidato e a jornada do primeiro teste
+### V1-001 — Mapear conteúdo e cenários do APK de avaliação
 
-**todo · V1 · S**
+**done · V1 · M**
 
-Como responsável pelo produto, quero escolher conteúdo pesquisado e uma jornada pequena para ver o app com dados reais.
+Como responsável pelo produto, quero avaliar o app inteiro com conteúdo real e lacunas explícitas, cenário por cenário, para orientar o desenvolvimento antes de o produto estar completo.
 
 Dependências: nenhuma
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md
 
 Critérios de aceite:
 
-- Manifesto enumera IDs PR/N/componentes, versões e público para casa, praça, academia, idosos e cuidadores, mantendo os recortes distintos
-- Esposa testa usabilidade; idade, elegibilidade e eventual apoio não são inferidos
-- Cada material tem estado consulta/prática/bloqueado e motivo; zero conteúdo inventado
+- Manifesto cobre os candidatos existentes e seus IDs PR/N/componentes, versões, fontes, públicos e ambientes, mantendo casa, praça, academia, idosos e cuidadores distintos; não reduzir a cobertura a uma amostra arbitrária
+- Matriz relaciona os cenários R01-R18 do APK a capacidades e conteúdo disponíveis, incompletos, bloqueados ou ainda não implementados; avaliação ampla não implica funcionamento simulado
+- Autor e esposa avaliam o app por cenários; idade, elegibilidade, equipamento e apoio disponíveis não são inferidos
+- Cada material tem estado consulta/prática/bloqueado e motivo; ausência de foto/vídeo e de instrução são separadas, sem conteúdo inventado nem mídia sem direito de uso
+- Alimentação contempla base ampla pesquisada, busca por texto, cadastro próprio real e origem distinta; custo prioriza gratuitas e referência de cerca deUS$19 em compra única, sem assinatura nem compra automática
 
 Tarefas e subtarefas:
 
-- V1-001-T01 — Selecionar candidatos existentes
-  - Ler consolidacao-n01-n46 e seleção N15 de 21/10
-  - Listar autoria, dose, idioma, mídia disponível e lacunas sem nova coleta sem pista
-- V1-001-T02 — Delimitar o piloto
-  - Descrever login → biblioteca → detalhe → registro → histórico e alimentação
-  - Separar teste de interface de prática e registrar campos realmente necessários
+- V1-001-T01 — Inventariar a cobertura existente
+  - Ler consolidação N01-N46 e seleção N15 de21/10, relacionando candidatos às evidências locais sem nova coleta sem pista
+  - Listar autoria, dose, idioma, instrução, mídia disponível, direitos, público, equipamento, apoio e lacunas por ativo
+  - Cobrir fontes alimentares existentes com contagens, versões, direitos e pendências, sem limitar o objetivo a poucos alimentos
+- V1-001-T02 — Mapear avaliação por cenários e checkpoints de APK
+  - Relacionar todos os cenários de treino, alimentação, públicos e ambientes ao estado real, com roteiro um de cada vez
+  - Registrar busca e cadastro próprio de alimento, mídia conforme disponibilidade e ensino voltado à autonomia sem apagar requisitos da fonte
+  - Definir checkpoints intermediários de APK e separar avaliação de interface, prática permitida e aceite integral da V1
+  - Registrar a decisão de avaliar opções pagas de pagamento único e baixo custo; apresentar preço, licença e condições para aceite específico antes de qualquer contratação
 
-Validação: Revisão do manifesto contra evidências locais; Conferir que componentes isolados não aparecem como programa integral
+Validação: Revisão do manifesto contra evidências locais; Conferir que componentes isolados não aparecem como programa integral; Conferir cobertura ampla, lacunas de mídia/instrução e estados de cenários contra os registros reais, sem fechar a história apenas por registrar decisões; python tools/validar_manifesto_piloto.py: fontes/ponteiros/hashes/cobertura/estados e matriz conferidos; nao homologacao de pratica
 
-Entregas: content/manifests/pilot-candidates.json (futuro); Critérios de elegibilidade e estados de conteúdo
+Entregas: content/manifests/pilot-candidates.json; docs/execucao/v1/matriz-cenarios.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md; tools/validar_manifesto_piloto.py; docs/execucao/v1/verificacao-manifesto.json
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
@@ -110,7 +115,7 @@ Um catálogo importável com proveniência, versões e uso permitido por ativo; 
 
 ### V1-004 — Criar contrato editorial dos quatro tipos de conteúdo
 
-**todo · V1 · M**
+**done · V1 · M**
 
 Como curador, quero separar movimentos, instruções, mídia e programas completos para não atribuir ao conjunto direitos de uma única peça.
 
@@ -135,19 +140,19 @@ Tarefas e subtarefas:
 
 Validação: Validar manifesto com 11 componentes N15 e pacote ES2019 separados; Rejeitar componente sem proveniência ou unidade válida
 
-Entregas: Schema JSON editorial; Matriz de direitos por ativo
+Entregas: content/schemas/editorial-v1.schema.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-prepared.json; tools/conteudo_editorial.py; tools/preparar_conteudo_local.py; docs/conteudo/preparacao-local-2026-10-21.md
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-005 — Revisar o lote real para o uso do piloto
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero ver apenas o uso que o material realmente permite.
 
 Dependências: V1-004
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md
 
 Critérios de aceite:
 
@@ -601,11 +606,11 @@ Como usuário, quero procurar alimentos pesquisados com preparo e unidades corre
 
 Dependências: V1-004, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md
 
 Critérios de aceite:
 
-- Selecionar lote real das fontes alimentares pesquisadas com direitos de uso e cobertura PT conferidos
+- Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária
 - Alimento/preparo, base 100g/100ml, porção e nutrientes ausentes mantidos distintos
 - Não gerar receita, alergênico seguro, dieta ou medida caseira sem origem
 
@@ -613,10 +618,11 @@ Tarefas e subtarefas:
 
 - V1-019-T01 — Selecionar e revisar fonte
   - Conferir catálogos N de alimentação e termos por dataset
-  - Escolher itens úteis ao piloto sem presumir que todos têm direitos iguais
+  - Conferir cobertura e direitos por dataset/versão; preservar pendências sem presumir licença igual para todos os itens
 - V1-019-T02 — Importar versão
   - Validar nutrientes/unidades e identificador de origem
   - Criar importador idempotente e relatório sem payload de terceiro no Git sem licença
+  - Contabilizar entrada, importação, duplicados, rejeições e pendências por motivo; permitir retomar lotes sem duplicação
 
 Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura entre alimento cru/cozido e null=0
 
@@ -624,7 +630,7 @@ Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
-### V1-020 — Pesquisar alimento e registrar consumo
+### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 
 **todo · V1 · L**
 
@@ -632,24 +638,26 @@ Como usuário, quero registrar uma quantidade real e consultar o que consumi.
 
 Dependências: V1-019, V1-013, V1-008
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
 
 Critérios de aceite:
 
 - Busca paginada de alimentos reais e POST de registro com quantidade, unidade, preparo e versão
 - Nutrientes derivados usam base/fator declarado; quantidade não confirmada não vira medida
 - Sem dietas prescritas, história pré-populada ou compensação automática de calorias do treino
+- Cadastrar alimento próprio com titular, origem e versão distintos do catálogo editorial; aceitar ausências sem inventar nutrientes e sem tornar o cadastro público ou revisado por inferência
 
 Tarefas e subtarefas:
 
 - V1-020-T01 — Criar contratos e handlers
   - Implementar foods e food-entries com ownership e idempotência
   - Definir edição/exclusão sem perder rastreio da origem do cálculo
+  - Definir POST de alimento próprio e consulta autorizada; separar cadastro do alimento de registro de consumo e preservar isolamento entre contas
 - V1-020-T02 — Integrar totais
   - Somar apenas registros confirmados com regras de null
   - Testar divergência de porção e registro em outro fuso
 
-Validação: Integração DB/API com alimento pesquisado; Conferir cálculo contra base conhecida e histórico vazio
+Validação: Integração DB/API com alimento pesquisado; Conferir cálculo contra base conhecida e histórico vazio; Testar cadastro próprio com nutrientes ausentes, busca autorizada e isolamento de outro usuário, sem alterar a fonte pesquisada
 
 Entregas: API nutrition v1; Registro de consumo real
 
@@ -698,13 +706,14 @@ Como iniciante, quero escolher uma opção humana e entender por que ela está d
 
 Dependências: V1-014, V1-015, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
 
 Critérios de aceite:
 
 - Login → contexto mínimo → biblioteca → detalhe → adesão sem AI/manual generator
 - Filtros casa/praça/academia e públicos preservam restrições; origem e versão legíveis
 - Ausência, incompatibilidade, carregamento e erro usam dados reais e ação útil
+- Detalhe mostra foto e vídeo autorizados quando existirem, apenas a mídia disponível nos demais casos e ausência explícita de mídia/instrução quando faltar; lacuna não exclui metadados permitidos nem libera prática automaticamente
 
 Tarefas e subtarefas:
 
@@ -714,6 +723,7 @@ Tarefas e subtarefas:
 - V1-022-T02 — Implementar telas e navegação
   - Criar catálogo/detalhe/requisitos e vínculo real
   - Persistir seleção e tratar botão voltar, leitor de tela e texto ampliado
+  - Representar os estados reais da matriz de cenários e registrar limitações para o APK de avaliação, sem aparentar funções ainda não implementadas
 
 Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifesto real aprovado
 
@@ -783,7 +793,7 @@ Entregas: Hoje/history/profile; Estado de conta e privacidade
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
-### V1-025 — Implementar busca e registro alimentar no Flutter
+### V1-025 — Implementar busca, cadastro próprio e registro alimentar no Flutter
 
 **todo · V1 · L**
 
@@ -791,24 +801,26 @@ Como usuário, quero consumir o lote alimentar real em uma refeição registrada
 
 Dependências: V1-020, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
 
 Critérios de aceite:
 
 - Tela procura alimento/preparo, confirma quantidade e registra por API
 - Total, base por100 e campos desconhecidos são claros; sem dieta ou foto reconhecida fictícia
 - Integração visual com Hoje mantém alimentação distinta de gasto da atividade
+- Busca usa base ampla pesquisada e oferece cadastro de alimento próprio com dados reais informados, origem visível e nutrientes desconhecidos preservados; cadastro manual complementa a base
 
 Tarefas e subtarefas:
 
 - V1-025-T01 — Criar feature nutrition
   - Reusar cliente e estado, adicionar busca com debounce/cancelamento
   - Construir detalhe, unidade e confirmação sem inferir peso por fotografia
+  - Criar formulário de alimento próprio conectado à API, distinguindo criação do alimento e lançamento de consumo; manter ausência e validação de unidade/base explícitas
 - V1-025-T02 — Ligar histórico
   - Editar/excluir registro próprio e atualizar resumo
   - Oferecer vazio real quando lote/quantidade não disponível
 
-Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a ponta com fonte alimentar real
+Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a ponta com fonte alimentar real; Buscar item importado e cadastrar item próprio real; confirmar origem, persistência, ausência de nutrientes e privacidade entre contas
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
@@ -1082,7 +1094,7 @@ Como desenvolvedor, quero que o APK de teste possa ser atualizado sem perder a i
 
 Dependências: V1-021, V1-032
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md
 
 Critérios de aceite:
 
@@ -1098,6 +1110,7 @@ Tarefas e subtarefas:
 - V1-034-T02 — Validar release
   - Configurar Gradle sem segredo hardcoded e revisar permissões
   - Conferir certificado do APK, endpoint e flags debug
+  - Aplicar os requisitos pertinentes também aos checkpoints intermediários de APK, documentando versão, ambiente, cenários testáveis e pendências; checkpoint não fecha o aceite integral desta história
 
 Validação: Verificar APK com ferramenta de assinatura do SDK; Instalar e atualizar build assinada mantendo dados
 
@@ -1144,7 +1157,7 @@ Como testadora, quero receber o arquivo e instruções claras para instalar, tes
 
 Dependências: V1-035
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md
 
 Critérios de aceite:
 
@@ -1160,6 +1173,7 @@ Tarefas e subtarefas:
 - V1-036-T02 — Preparar entrega e feedback
   - Disponibilizar arquivo/link no local aprovado e roteiro simples
   - Separar feedback de usabilidade de sintoma/prática; registrar erro/requestId sem PII
+  - Aplicar os requisitos pertinentes também aos checkpoints intermediários de APK, documentando versão, ambiente, cenários testáveis e pendências; checkpoint não fecha o aceite integral desta história
 
 Validação: Download e hash coincidem; instalação real confirmada pela testadora; Registrar feedback real, sem inventar aceitação
 

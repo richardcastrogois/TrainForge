@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-21",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-001",
+  "next": "V1-005",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -17,11 +17,11 @@
       "stories": [
         {
           "id": "V1-001",
-          "title": "Fixar o lote candidato e a jornada do primeiro teste",
-          "userStory": "Como responsável pelo produto, quero escolher conteúdo pesquisado e uma jornada pequena para ver o app com dados reais.",
-          "status": "todo",
+          "title": "Mapear conteúdo e cenários do APK de avaliação",
+          "userStory": "Como responsável pelo produto, quero avaliar o app inteiro com conteúdo real e lacunas explícitas, cenário por cenário, para orientar o desenvolvimento antes de o produto estar completo.",
+          "status": "done",
           "release": "V1",
-          "size": "S",
+          "size": "M",
           "requirements": [
             "R01",
             "R02",
@@ -35,41 +35,67 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md"
           ],
           "acceptance": [
-            "Manifesto enumera IDs PR/N/componentes, versões e público para casa, praça, academia, idosos e cuidadores, mantendo os recortes distintos",
-            "Esposa testa usabilidade; idade, elegibilidade e eventual apoio não são inferidos",
-            "Cada material tem estado consulta/prática/bloqueado e motivo; zero conteúdo inventado"
+            "Manifesto cobre os candidatos existentes e seus IDs PR/N/componentes, versões, fontes, públicos e ambientes, mantendo casa, praça, academia, idosos e cuidadores distintos; não reduzir a cobertura a uma amostra arbitrária",
+            "Matriz relaciona os cenários R01-R18 do APK a capacidades e conteúdo disponíveis, incompletos, bloqueados ou ainda não implementados; avaliação ampla não implica funcionamento simulado",
+            "Autor e esposa avaliam o app por cenários; idade, elegibilidade, equipamento e apoio disponíveis não são inferidos",
+            "Cada material tem estado consulta/prática/bloqueado e motivo; ausência de foto/vídeo e de instrução são separadas, sem conteúdo inventado nem mídia sem direito de uso",
+            "Alimentação contempla base ampla pesquisada, busca por texto, cadastro próprio real e origem distinta; custo prioriza gratuitas e referência de cerca deUS$19 em compra única, sem assinatura nem compra automática"
           ],
           "tasks": [
             {
               "id": "V1-001-T01",
-              "title": "Selecionar candidatos existentes",
+              "title": "Inventariar a cobertura existente",
               "subtasks": [
-                "Ler consolidacao-n01-n46 e seleção N15 de 21/10",
-                "Listar autoria, dose, idioma, mídia disponível e lacunas sem nova coleta sem pista"
+                "Ler consolidação N01-N46 e seleção N15 de21/10, relacionando candidatos às evidências locais sem nova coleta sem pista",
+                "Listar autoria, dose, idioma, instrução, mídia disponível, direitos, público, equipamento, apoio e lacunas por ativo",
+                "Cobrir fontes alimentares existentes com contagens, versões, direitos e pendências, sem limitar o objetivo a poucos alimentos"
               ]
             },
             {
               "id": "V1-001-T02",
-              "title": "Delimitar o piloto",
+              "title": "Mapear avaliação por cenários e checkpoints de APK",
               "subtasks": [
-                "Descrever login → biblioteca → detalhe → registro → histórico e alimentação",
-                "Separar teste de interface de prática e registrar campos realmente necessários"
+                "Relacionar todos os cenários de treino, alimentação, públicos e ambientes ao estado real, com roteiro um de cada vez",
+                "Registrar busca e cadastro próprio de alimento, mídia conforme disponibilidade e ensino voltado à autonomia sem apagar requisitos da fonte",
+                "Definir checkpoints intermediários de APK e separar avaliação de interface, prática permitida e aceite integral da V1",
+                "Registrar a decisão de avaliar opções pagas de pagamento único e baixo custo; apresentar preço, licença e condições para aceite específico antes de qualquer contratação"
               ]
             }
           ],
           "validation": [
             "Revisão do manifesto contra evidências locais",
-            "Conferir que componentes isolados não aparecem como programa integral"
+            "Conferir que componentes isolados não aparecem como programa integral",
+            "Conferir cobertura ampla, lacunas de mídia/instrução e estados de cenários contra os registros reais, sem fechar a história apenas por registrar decisões",
+            "python tools/validar_manifesto_piloto.py: fontes/ponteiros/hashes/cobertura/estados e matriz conferidos; nao homologacao de pratica"
           ],
           "deliverables": [
-            "content/manifests/pilot-candidates.json (futuro)",
-            "Critérios de elegibilidade e estados de conteúdo"
+            "content/manifests/pilot-candidates.json",
+            "docs/execucao/v1/matriz-cenarios.md",
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md",
+            "tools/validar_manifesto_piloto.py",
+            "docs/execucao/v1/verificacao-manifesto.json"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-21",
+              "scope": "Lote candidato e matriz de avaliacao; nenhuma pratica, importacao, compra ou capacidade do APK aprovada",
+              "files": [
+                "content/manifests/pilot-candidates.json",
+                "docs/execucao/v1/matriz-cenarios.md",
+                "docs/execucao/v1/decisoes-piloto.md",
+                "docs/execucao/v1/verificacao-manifesto.json"
+              ],
+              "validation": "python tools/validar_manifesto_piloto.py: PASS;331familias/46Ns/34componentes/22familiasalimentares/24cenarios,0itensruntimeaprovados",
+              "conditions": "Custo atualizado: priorizar gratuitas; referencia de cerca deUSD19 uma unica vez, valores maiores apresentados inviaveis; compra nao aprovada; revisoes por ativo/uso nas004/005/019"
+            }
+          ]
         },
         {
           "id": "V1-002",
@@ -201,7 +227,7 @@
           "id": "V1-004",
           "title": "Criar contrato editorial dos quatro tipos de conteúdo",
           "userStory": "Como curador, quero separar movimentos, instruções, mídia e programas completos para não atribuir ao conjunto direitos de uma única peça.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -250,17 +276,40 @@
             "Rejeitar componente sem proveniência ou unidade válida"
           ],
           "deliverables": [
-            "Schema JSON editorial",
-            "Matriz de direitos por ativo"
+            "content/schemas/editorial-v1.schema.json",
+            "content/manifests/pilot-rights-matrix.json",
+            "content/manifests/pilot-prepared.json",
+            "tools/conteudo_editorial.py",
+            "tools/preparar_conteudo_local.py",
+            "docs/conteudo/preparacao-local-2026-10-21.md"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-21",
+              "scope": "Contrato editorial e preparacao local candidata, sem homologacao de pratica ou importacao em banco",
+              "files": [
+                "content/schemas/editorial-v1.schema.json",
+                "content/manifests/pilot-rights-matrix.json",
+                "content/manifests/pilot-prepared.json",
+                "tools/conteudo_editorial.py",
+                "tools/preparar_conteudo_local.py",
+                "docs/conteudo/preparacao-local-2026-10-21.md"
+              ],
+              "validation": [
+                "python tools/preparar_conteudo_local.py --write --check: PASS",
+                "python -m unittest discover -s tools -p test_conteudo_editorial.py:17testes",
+                "python tools/auditar_conteudo_local.py:512ponteiros/1069660celulas conferidos"
+              ],
+              "result": "Movimento/instrucao/midia/protocolo/colecao separados; direitos por operacao, doses opcionais e apoio preservados; materias de terceiros fora do Git"
+            }
+          ]
         },
         {
           "id": "V1-005",
           "title": "Revisar o lote real para o uso do piloto",
           "userStory": "Como usuário, quero ver apenas o uso que o material realmente permite.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -278,7 +327,12 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/dominio-e-banco.md",
+            "content/schemas/editorial-v1.schema.json",
+            "content/manifests/pilot-prepared.json",
+            "content/manifests/pilot-rights-matrix.json",
+            "content/manifests/pilot-review-queue.json",
+            "docs/conteudo/preparacao-local-2026-10-21.md"
           ],
           "acceptance": [
             "Cada item tem evidência de direitos e fidelidade do que será exibido, sem copiar PDF/foto indevidamente",
@@ -312,7 +366,18 @@
             "Registro de revisão e pendências reais"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [],
+          "progressEvidence": [
+            {
+              "date": "2026-10-21",
+              "scope": "Fila concreta de512ativos,14bloqueios documentais identificados e integridade auditada; nao revisao humana/clinica concluida",
+              "files": [
+                "content/manifests/pilot-review-queue.json",
+                "docs/execucao/v1/verificacao-preparacao-local.json"
+              ],
+              "next": "Revisar primeiro6traducoes portuguesas wger e34componentes documentais por operacao, sem reduzir cobertura a esses itens; registrar responsavel/resultado reais e material faltante"
+            }
+          ]
         },
         {
           "id": "V1-006",
@@ -1128,10 +1193,13 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/decisoes-piloto.md",
+            "content/manifests/pilot-prepared.json",
+            "docs/conteudo/preparacao-local-2026-10-21.md"
           ],
           "acceptance": [
-            "Selecionar lote real das fontes alimentares pesquisadas com direitos de uso e cobertura PT conferidos",
+            "Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária",
             "Alimento/preparo, base 100g/100ml, porção e nutrientes ausentes mantidos distintos",
             "Não gerar receita, alergênico seguro, dieta ou medida caseira sem origem"
           ],
@@ -1141,7 +1209,7 @@
               "title": "Selecionar e revisar fonte",
               "subtasks": [
                 "Conferir catálogos N de alimentação e termos por dataset",
-                "Escolher itens úteis ao piloto sem presumir que todos têm direitos iguais"
+                "Conferir cobertura e direitos por dataset/versão; preservar pendências sem presumir licença igual para todos os itens"
               ]
             },
             {
@@ -1149,7 +1217,8 @@
               "title": "Importar versão",
               "subtasks": [
                 "Validar nutrientes/unidades e identificador de origem",
-                "Criar importador idempotente e relatório sem payload de terceiro no Git sem licença"
+                "Criar importador idempotente e relatório sem payload de terceiro no Git sem licença",
+                "Contabilizar entrada, importação, duplicados, rejeições e pendências por motivo; permitir retomar lotes sem duplicação"
               ]
             }
           ],
@@ -1166,7 +1235,7 @@
         },
         {
           "id": "V1-020",
-          "title": "Pesquisar alimento e registrar consumo",
+          "title": "Pesquisar e cadastrar alimento próprio e registrar consumo",
           "userStory": "Como usuário, quero registrar uma quantidade real e consultar o que consumi.",
           "status": "todo",
           "release": "V1",
@@ -1188,12 +1257,14 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/decisoes-piloto.md"
           ],
           "acceptance": [
             "Busca paginada de alimentos reais e POST de registro com quantidade, unidade, preparo e versão",
             "Nutrientes derivados usam base/fator declarado; quantidade não confirmada não vira medida",
-            "Sem dietas prescritas, história pré-populada ou compensação automática de calorias do treino"
+            "Sem dietas prescritas, história pré-populada ou compensação automática de calorias do treino",
+            "Cadastrar alimento próprio com titular, origem e versão distintos do catálogo editorial; aceitar ausências sem inventar nutrientes e sem tornar o cadastro público ou revisado por inferência"
           ],
           "tasks": [
             {
@@ -1201,7 +1272,8 @@
               "title": "Criar contratos e handlers",
               "subtasks": [
                 "Implementar foods e food-entries com ownership e idempotência",
-                "Definir edição/exclusão sem perder rastreio da origem do cálculo"
+                "Definir edição/exclusão sem perder rastreio da origem do cálculo",
+                "Definir POST de alimento próprio e consulta autorizada; separar cadastro do alimento de registro de consumo e preservar isolamento entre contas"
               ]
             },
             {
@@ -1215,7 +1287,8 @@
           ],
           "validation": [
             "Integração DB/API com alimento pesquisado",
-            "Conferir cálculo contra base conhecida e histórico vazio"
+            "Conferir cálculo contra base conhecida e histórico vazio",
+            "Testar cadastro próprio com nutrientes ausentes, busca autorizada e isolamento de outro usuário, sem alterar a fonte pesquisada"
           ],
           "deliverables": [
             "API nutrition v1",
@@ -1318,12 +1391,14 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/decisoes-piloto.md"
           ],
           "acceptance": [
             "Login → contexto mínimo → biblioteca → detalhe → adesão sem AI/manual generator",
             "Filtros casa/praça/academia e públicos preservam restrições; origem e versão legíveis",
-            "Ausência, incompatibilidade, carregamento e erro usam dados reais e ação útil"
+            "Ausência, incompatibilidade, carregamento e erro usam dados reais e ação útil",
+            "Detalhe mostra foto e vídeo autorizados quando existirem, apenas a mídia disponível nos demais casos e ausência explícita de mídia/instrução quando faltar; lacuna não exclui metadados permitidos nem libera prática automaticamente"
           ],
           "tasks": [
             {
@@ -1339,7 +1414,8 @@
               "title": "Implementar telas e navegação",
               "subtasks": [
                 "Criar catálogo/detalhe/requisitos e vínculo real",
-                "Persistir seleção e tratar botão voltar, leitor de tela e texto ampliado"
+                "Persistir seleção e tratar botão voltar, leitor de tela e texto ampliado",
+                "Representar os estados reais da matriz de cenários e registrar limitações para o APK de avaliação, sem aparentar funções ainda não implementadas"
               ]
             }
           ],
@@ -1478,7 +1554,7 @@
         },
         {
           "id": "V1-025",
-          "title": "Implementar busca e registro alimentar no Flutter",
+          "title": "Implementar busca, cadastro próprio e registro alimentar no Flutter",
           "userStory": "Como usuário, quero consumir o lote alimentar real em uma refeição registrada por mim.",
           "status": "todo",
           "release": "V1",
@@ -1501,12 +1577,14 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/decisoes-piloto.md"
           ],
           "acceptance": [
             "Tela procura alimento/preparo, confirma quantidade e registra por API",
             "Total, base por100 e campos desconhecidos são claros; sem dieta ou foto reconhecida fictícia",
-            "Integração visual com Hoje mantém alimentação distinta de gasto da atividade"
+            "Integração visual com Hoje mantém alimentação distinta de gasto da atividade",
+            "Busca usa base ampla pesquisada e oferece cadastro de alimento próprio com dados reais informados, origem visível e nutrientes desconhecidos preservados; cadastro manual complementa a base"
           ],
           "tasks": [
             {
@@ -1514,7 +1592,8 @@
               "title": "Criar feature nutrition",
               "subtasks": [
                 "Reusar cliente e estado, adicionar busca com debounce/cancelamento",
-                "Construir detalhe, unidade e confirmação sem inferir peso por fotografia"
+                "Construir detalhe, unidade e confirmação sem inferir peso por fotografia",
+                "Criar formulário de alimento próprio conectado à API, distinguindo criação do alimento e lançamento de consumo; manter ausência e validação de unidade/base explícitas"
               ]
             },
             {
@@ -1528,7 +1607,8 @@
           ],
           "validation": [
             "Flutter analyze e widgets de unidades/ausência",
-            "Registro ponta a ponta com fonte alimentar real"
+            "Registro ponta a ponta com fonte alimentar real",
+            "Buscar item importado e cadastrar item próprio real; confirmar origem, persistência, ausência de nutrientes e privacidade entre contas"
           ],
           "deliverables": [
             "Feature nutrition",
@@ -2037,7 +2117,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/decisoes-piloto.md"
           ],
           "acceptance": [
             "ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro",
@@ -2058,7 +2139,8 @@
               "title": "Validar release",
               "subtasks": [
                 "Configurar Gradle sem segredo hardcoded e revisar permissões",
-                "Conferir certificado do APK, endpoint e flags debug"
+                "Conferir certificado do APK, endpoint e flags debug",
+                "Aplicar os requisitos pertinentes também aos checkpoints intermediários de APK, documentando versão, ambiente, cenários testáveis e pendências; checkpoint não fecha o aceite integral desta história"
               ]
             }
           ],
@@ -2160,7 +2242,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/decisoes-piloto.md"
           ],
           "acceptance": [
             "APK release versionado, checksum, notas e link privado autorizado; sem envio de mensagem sem pedido explícito",
@@ -2181,7 +2264,8 @@
               "title": "Preparar entrega e feedback",
               "subtasks": [
                 "Disponibilizar arquivo/link no local aprovado e roteiro simples",
-                "Separar feedback de usabilidade de sintoma/prática; registrar erro/requestId sem PII"
+                "Separar feedback de usabilidade de sintoma/prática; registrar erro/requestId sem PII",
+                "Aplicar os requisitos pertinentes também aos checkpoints intermediários de APK, documentando versão, ambiente, cenários testáveis e pendências; checkpoint não fecha o aceite integral desta história"
               ]
             }
           ],

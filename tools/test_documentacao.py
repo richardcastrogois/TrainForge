@@ -126,6 +126,7 @@ class DocumentationTests(unittest.TestCase):
         story = bad["epics"][0]["stories"][0]
         story["dependsOn"] = [story["id"]]
         story["status"] = "done"
+        story["completionEvidence"] = []  # O caso negativo independe do progresso real.
         errors = validate(bad, plan, ROOT)
         self.assertTrue(any("cíclica" in e for e in errors))
         self.assertTrue(any("sem evidência" in e for e in errors))

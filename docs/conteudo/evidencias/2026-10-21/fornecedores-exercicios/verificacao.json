@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-21",
+  "method": "Consulta documental a paginas oficiais pela ferramenta web; sintese propria, sem copias integrais ou download de midia",
+  "trigger": "Pista do autor e autorizacao para avaliar compra unica de baixo custo; nao autoriza compra",
+  "report": "../../../avaliacao-apis-exercicios-2026-10-21.md",
+  "runtimeIntegrated": false,
+  "providerApproved": false,
+  "purchaseMade": false,
+  "thirdPartyMediaDownloaded": false,
+  "records": [
+    {
+      "id": "EX03-OSS-20261021",
+      "catalogSourceId": "EX03",
+      "urls": [
+        "https://oss.exercisedb.dev/docs",
+        "https://docs.ascendapi.com/guides/caching"
+      ],
+      "result": "OSS nao comercial; cache depende do plano; compra unica nao confirmada",
+      "oneTimeCommercialPrice": null
+    },
+    {
+      "id": "EX01-20261021",
+      "catalogSourceId": "EX01",
+      "urls": [
+        "https://github.com/wger-project/wger#license",
+        "https://wger.readthedocs.io/en/stable/changelog.html"
+      ],
+      "localEvidence": "../../wger-amostra-ampliada.json",
+      "result": "Creative Commons por entrada; midias e traducoes precisam de revisao por objeto",
+      "oneTimeCommercialPrice": 0
+    },
+    {
+      "id": "WorkoutX-20261021",
+      "catalogSourceId": null,
+      "urls": [
+        "https://workoutxapp.com/pricing.html",
+        "https://workoutxapp.com/terms.html",
+        "https://workoutxapp.com/v2-migration.html"
+      ],
+      "result": "API de exercicios com assinatura; compra unica Body Scan nao serve como biblioteca",
+      "meetsOneTimePreference": false
+    },
+    {
+      "id": "EX04-20261021",
+      "catalogSourceId": "EX04",
+      "urls": [
+        "https://exercisedb.io/pricing",
+        "https://exercisedb.io/faq",
+        "https://exercisedb.io/terms"
+      ],
+      "result": "Compra unica anunciada; Starter199/Pro599 com simbolo dollar; EULA integral do ZIP nao recebida",
+      "meetsOneTimeStructure": true,
+      "affordableForUser": null,
+      "currencyCheckoutVerified": false
+    },
+    {
+      "id": "marketplace-unspecified",
+      "catalogSourceId": null,
+      "urls": [],
+      "result": "Sem produto, vendedor ou licenca especificos; nao auditado"
+    },
+    {
+      "id": "EX02-PTBR-followup",
+      "catalogSourceId": "EX02",
+      "urls": [
+        "https://github.com/gugeldev/exercicios-bd-ptbr",
+        "https://raw.githubusercontent.com/gugeldev/exercicios-bd-ptbr/main/LICENSE",
+        "https://github.com/yuhonas/free-exercise-db",
+        "https://github.com/wrkout/exercises.json"
+      ],
+      "result": "JSON/traducao CC0 declarada; imagens excluidas; revisao de origem/qualidade pendente, sem importacao"
+    },
+    {
+      "id": "RepDB-free-followup",
+      "catalogSourceId": null,
+      "urls": [
+        "https://github.com/RepDB/exercise-dataset",
+        "https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md"
+      ],
+      "result": "Uso comercial in-app gratuito com credito; imagens geradas com IA declaradas; EN/DE/ES, sem pt; amostras animadas pagas nao liberadas; sem midia baixada"
+    },
+    {
+      "id": "RapidAPI-Justin-basic-followup",
+      "catalogSourceId": "EX04",
+      "urls": [
+        "https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/pricing",
+        "https://docs.rapidapi.com/v2/docs/api-pricing"
+      ],
+      "result": "690requests/mes hard limit anunciados; banda tem cobranca separada; nao confirmar condicoes AscendAPI por esta outra listagem"
+    }
+  ],
+  "accessLimits": [
+    {
+      "url": "https://wger.de/en/software/api",
+      "observed": "Anubis; sem contorno; documentacao oficial disponivel separadamente"
+    },
+    {
+      "url": "https://go.exercisedb.dev/shop",
+      "observed": "403; preco/condicoes nao verificados, sem contorno"
+    },
+    {
+      "url": "https://rapidapi.com/ascendapi/api/exercisedb/pricing",
+      "observed": "Inacessivel pela ferramenta web; sem afirmar quotas/licenca nao lidas"
+    }
+  ],
+  "budgetUpdate": {
+    "date": "2026-10-21",
+    "currency": "USD",
+    "oneTimeReference": 19,
+    "approximate": true,
+    "recurringAccepted": false,
+    "purchaseApproved": false,
+    "higherPresentedPricesRejected": true
+  }
+}
