@@ -34,6 +34,10 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 
 Os DTOs/comentários e o Swagger gerado definem os campos/limites implementados; x-nullable registra os campos desconhecidos. Na leitura de catálogo a versão mais recente é escolhida antes da autorização; retirada/grants/revisão são consultados antes de304. Filtros não inferem ambiente/público/apoio e a projeção não inclui dose/unidades/instrução/mídia. Rotas futuras da tabela ainda exigem revisão antes de integrar o cliente. Não gerar Dart a partir desta tabela. Exemplos de schema/teste nunca serão seed ou fallback do app entregue.
 
+## Preparação alimentar sem rotaHTTP
+
+V1-019 possui agora preflight candidato offline (contrato trainforge.food-staging/1), não uma API foods implementada. Preserva estados/decimais/unidades/denominadores/fatores e identidades dos snapshots já existentes; todas as flags de importação/cálculo seguemfalse. Não altera Swagger ou rotas entregues. [Contrato e evidência](../execucao/v1/alimentacao-preflight.md). Busca/cadastro privado/consumo continuam nas histórias dependentes.
+
 ## Compatibilidade com o legado
 
 As telas legadas ainda contêm chamadas a `/mobile-auth/google`, `/mobile-auth/me`, `/mobile/bootstrap`, `/mobile/home/{date}`, `/mobile/profile`, `/mobile/stats`, `/mobile/onboarding/*` e `/mobile/workout-plans/*`. A entrada atual usa contratoGo e não navega para esses fluxos legados. O retorno auth legado usa `token`, não `accessToken`; término de sessão usa `completedAt` no HTTP e `completeAt` internamente. A troca para `/api/v1` é explícita, por ambiente/release e com testes de contrato. Não trocar base URL e supor equivalência.

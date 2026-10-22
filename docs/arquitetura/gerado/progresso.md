@@ -1,8 +1,8 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b9e82df15eb537fc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
 
-**10/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**10/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-019**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
@@ -152,7 +152,7 @@ flowchart LR
 | --- | --- | --- | --- |
 | V1-017 | todo | Executar ocorrências idempotentes de atividade | V1-015, V1-012 |
 | V1-018 | todo | Consultar histórico e resumo com origem das métricas | V1-017 |
-| V1-019 | todo | Validar e importar o lote alimentar | V1-004, V1-010 |
+| V1-019 | doing | Validar e importar o lote alimentar | V1-004, V1-010 |
 | V1-020 | todo | Pesquisar e cadastrar alimento próprio e registrar consumo | V1-019, V1-013, V1-008 |
 ### EP07 — Flutter e experiência da V1
 

@@ -129,3 +129,17 @@ APKdebug0.1.1+2 gerado/assinado, instalado sem apagar dados e inspecionado emAnd
 Helper avaliar-android.ps1 validado de partida fria: iniciou somente DB/API/AVD existentes, conferiu certificado/fonte/config/APKhash, pulou reinstalação redundante e abriu app. Parada conferiu propriedade/bootID e encerrou os três recursos; APK/dados/credenciais/chave retidos. Recibo android-environment-verification.json. Roteiro para retorno em avaliacao-android.md.
 
 V1-011 permanece doing,012/021/022parciais sem fechamento;016aguarda conteúdo realmente liberado. Demais módulos, HTTPSrelease e iOS não estão entregues. Backlog/contratos/achados/mapas/handoff atualizados e regenerados. Graphify incremental code-only:50Dart,615nós/786arestas,10alterados/40inalterados, backup em.local. Semnova pesquisa, importação/restore repetidos, contratação/pago, contatoexterno, push ou deploy.
+
+## 22/10/2026 — V1-019 iniciada sem depender do autor/Google
+
+Autor pediu avanço independente até retornar ao notebook. Git inicial limpo em5254ac9/ahead3; nenhuma publicação autorizada. Dependências004/010da019concluídas, enquanto016continua sem conteúdo liberado e031exige decisão comercial. Escolhido incremento técnico alimentar semlogin/infra/compra.
+
+Implementados tools/alimentos_lote.py e preparar_alimentos_v1.py: hashes dos snapshots/planilhas/recibos, cobertura completa22famílias, identidade fonte+versão+código+nome, linhas/tabelas/células, decimais e estados exatos, denominadoresFA porcoluna inclusiveProximates, fatores separados, basealcoólica desconhecida preservada e colisõesquarentenadas. Temporários exclusivos e checagem criptográfica de cabeçalhos/staging; sem rede/banco.
+
+Lote completo existente:3484identidadesCiqual/261300células e2887identidadesCoFID/808360células (41015linhas,1069660células no total). Não são6371alimentos semanticamente únicos. Ciqual:3484fatoresJones; CoFID:14435célulasdefatores,1código/2identidadesconflitantes e15marcadoresnãointerpretados preservados. Não foi refeito parserExcel nem pesquisa/coleta. Todos os candidatos continuam runtimeImportApproved=false/calculationsApproved=false;0alimentosimportados.
+
+13testesnovos passaram, incluindo adulteração, bases/fatores/ausência/zero/limites, código e linha conflitantes, cobertura/paths, flags de autopromoção e reprodução em clone movido. Primeira regressão revelou traduçãoCRLF no hash do manifestoWindows; publicação passou a escreverLF explícito. Dados originais mantidos. Reciboagregado food-preflight-verification.json e alimentacao-preflight.md; dados/cabeçalhos completos somente emcontent/local ignorado.
+
+V1-019doing/completionEvidencevazio; próximo trabalho autônomo: direitos/operação, base/grupoCoFID, identidade/métodos e importadorGo idempotente após manifesto específico aprovado. API/Swagger/APK0.1.1+2 não alterados; serviços seguem parados. Handoff/backlog/mapas atualizados; grafoFlutter não reindexado porque lib não mudou. Sem push/deploy/contratação/contatoexterno.
+
+Verificação final deste incremento:61testesPython passaram (13novos+48existentes); geração/backlog/dependências/links passaram e --check conferiu hashes sem refazer planilhas. Não repetidos buildAPK, Go/Flutter ou restore/import históricos, pois seus códigos e contratos não mudaram.

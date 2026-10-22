@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b9e82df15eb537fc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
 
 ## Atual: referências entre widgets
 
@@ -83,6 +83,22 @@ flowchart LR
 
 ## Planejado: jornadas da V1
 
+### Preparação alimentar parcial real — V1-019
+
+```mermaid
+flowchart LR
+    node0["Manifestos/snapshots existentes"]
+    node1["Hashes e cobertura conferidos"]
+    node2["Estados/decimais e unidades preservados"]
+    node3["Fatores/FA/conflitos separados"]
+    node4["Staging local não aprovado + recibo"]
+    node5["Gate pendente: direitos/base/identidade e importadorGo"]
+    node0 -->|"preflight offline, sem runtime"| node1
+    node1 -->|"preflight offline, sem runtime"| node2
+    node2 -->|"preflight offline, sem runtime"| node3
+    node3 -->|"preflight offline, sem runtime"| node4
+    node4 -->|"preflight offline, sem runtime"| node5
+```
 ### Consulta real entregue — V1-014
 
 ```mermaid

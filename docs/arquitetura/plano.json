@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — fundação Go/DB/Swagger, auth local e leitura de catálogo implementadas; Google real e demais domínios pendentes",
+  "status": "PARCIAL REAL — auth local e consultaGo/Flutter implementadas; preflight alimentar offline candidato; Google real e demais domínios pendentes",
   "nodes": [
     {
       "id": "user",
@@ -105,6 +105,27 @@
       "layer": "Externo",
       "description": "ID token verificado no backend; client IDs por plataforma/ambiente.",
       "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+    },
+    {
+      "id": "food_preflight",
+      "label": "Preflight alimentar offline",
+      "layer": "Conteúdo",
+      "description": "Confere hashes/identidades/células/bases/fatores dos snapshotsCiqual/CoFID existentes; não acessa rede/banco ou autoriza uso.",
+      "evidence": "tools/alimentos_lote.py; tools/preparar_alimentos_v1.py; food-preflight-verification.json"
+    },
+    {
+      "id": "food_candidate",
+      "label": "Staging alimentar candidato",
+      "layer": "Conteúdo",
+      "description": "6371identidades de origem,1069660células preservadas; candidatos ignorados emcontent/local. Direitos/importação/cálculos continuam pendentes.",
+      "evidence": "docs/execucao/v1/alimentacao-preflight.md; contrato trainforge.food-staging/1"
+    },
+    {
+      "id": "food_inputs",
+      "label": "Snapshots alimentares preparados",
+      "layer": "Conteúdo",
+      "description": "JSONL/planilhas/recibosCiqual/CoFID já coletados e auditados; candidatos, não alimentos aprovados para runtime.",
+      "evidence": "content/manifests/pilot-prepared.json; content/local ignorado"
     }
   ],
   "edges": [
@@ -251,9 +272,38 @@
       "input": "requestId/status/latência",
       "output": "diagnóstico operacional",
       "evidence": "Contrato proposto, não chamada executada."
+    },
+    {
+      "from": "food_inputs",
+      "to": "food_preflight",
+      "label": "Snapshots preparados e hashes",
+      "input": "JSONL/planilhas/recibos locais já auditados e inventário22famílias",
+      "output": "Cobertura, conflitos, denominadores e estados preservados",
+      "evidence": "Processamento offline completo validado em22/10; nenhuma coleta repetida"
+    },
+    {
+      "from": "food_preflight",
+      "to": "food_candidate",
+      "label": "Candidato sem aprovação",
+      "input": "Cabeçalhos/unidades e medidas com proveniência",
+      "output": "Staginglocal+reciboagregado; runtime/cálculo false,0DB",
+      "evidence": "tools/preparar_alimentos_v1.py;13testes isolados; sem importadorGo nesta fatia"
     }
   ],
   "flows": [
+    {
+      "id": "food_preflight",
+      "title": "Preparação alimentar parcial real — V1-019",
+      "edgeLabel": "preflight offline, sem runtime",
+      "steps": [
+        "Manifestos/snapshots existentes",
+        "Hashes e cobertura conferidos",
+        "Estados/decimais e unidades preservados",
+        "Fatores/FA/conflitos separados",
+        "Staging local não aprovado + recibo",
+        "Gate pendente: direitos/base/identidade e importadorGo"
+      ]
+    },
     {
       "id": "catalog_read",
       "title": "Consulta real entregue — V1-014",

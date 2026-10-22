@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b9e82df15eb537fc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -52,6 +52,9 @@ flowchart LR
     node12["Mídia autorizada / referência"]
     node13["Logs / métricas / traces"]
     node14["Google Identity"]
+    node15["Preflight alimentar offline"]
+    node16["Staging alimentar candidato"]
+    node17["Snapshots alimentares preparados"]
     node0 -->|"Ações e dados confirmados"| node1
     node1 -->|"Comando tipado"| node2
     node2 -->|"Método de domínio"| node3
@@ -70,6 +73,8 @@ flowchart LR
     node6 -->|"Entrega futura, ainda indisponível"| node12
     node5 -->|"Telemetria redigida"| node13
     node7 -->|"Telemetria redigida"| node13
+    node17 -->|"Snapshots preparados e hashes"| node15
+    node15 -->|"Candidato sem aprovação"| node16
 ```
 
 A proposta Go não vira código atual por estar no desenho. Detalhes, camadas e limites de capacidade estão nos documentos revisados.
