@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-22",
+  "result": "PASS",
+  "scope": "isolated_development_consultation",
+  "checks": [
+    {
+      "dryRun": true,
+      "totalAssets": 73,
+      "inserted": 0,
+      "unchanged": 0,
+      "artifactSha256": "01ba97d664bcab958dadb703f57a4c3349387d4e65b2de883a4a507a0d3a3dd3"
+    },
+    {
+      "dryRun": false,
+      "totalAssets": 73,
+      "inserted": 0,
+      "unchanged": 73,
+      "artifactSha256": "01ba97d664bcab958dadb703f57a4c3349387d4e65b2de883a4a507a0d3a3dd3"
+    },
+    {
+      "dryRun": false,
+      "totalAssets": 73,
+      "inserted": 0,
+      "unchanged": 73,
+      "artifactSha256": "01ba97d664bcab958dadb703f57a4c3349387d4e65b2de883a4a507a0d3a3dd3"
+    }
+  ],
+  "initialInsertVerifiedByDatabase": 73,
+  "actualRows": 73,
+  "users": 0,
+  "guidedPracticeApproved": 0
+}

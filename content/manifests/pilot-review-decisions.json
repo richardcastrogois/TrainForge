@@ -369,30 +369,6 @@
       ]
     },
     {
-      "assetId": "wger:translations:2138",
-      "assetSha256": "c2abb533fd466db58b810b3205b21b5d4fcc085e96fc9a932b8afc169b224647",
-      "operation": "instruction_text",
-      "credits": {
-        "title": "Flexão de Punho com Barra",
-        "creators": [
-          "burenl",
-          "bruunomooura"
-        ],
-        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
-        "jsonPointer": "/data/results/9/translations/3",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-        "licenseLabel": "CC-BY-SA 4",
-        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
-        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
-      },
-      "conditions": [
-        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
-        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
-        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
-        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
-      ]
-    },
-    {
       "assetId": "wger:movement:56",
       "assetSha256": "273f6ab9342b6d525251a92481ed10a7b6341a36eb8f0cec73a78fd4bc4874c8",
       "operation": "catalog_metadata",
@@ -561,29 +537,6 @@
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
           "sourceNameUnchanged": true
         }
-      },
-      "conditions": [
-        "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
-        "Conservar a licenca de cada ativo; identificar alteracoes e licenciar adaptacoes conforme ShareAlike; nao impor restricoes adicionais ao material licenciado.",
-        "Uso de consulta: nao habilita prescricao, programa, timer de pratica, adaptacao de publico/equipamento ou alegacao de seguranca/eficacia.",
-        "Verificar exibicao dos creditos e condicoes na API/UI/APK antes de distribuir; esta revisao nao prova que a entrega ja os implementou."
-      ]
-    },
-    {
-      "assetId": "wger:translations:2789",
-      "assetSha256": "b6e584fa9d76e3a122e1cc33af95b3a6ddc6198ace5502421cddf98d1da0fcf5",
-      "operation": "instruction_text",
-      "credits": {
-        "title": "Supino com halteres",
-        "creators": [
-          "Jhonatan"
-        ],
-        "sourceUrl": "https://wger.de/api/v2/exerciseinfo/?limit=25&ordering=id",
-        "jsonPointer": "/data/results/14/translations/5",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-        "licenseLabel": "CC-BY-SA 4",
-        "changes": "Sem traducao nova ou alteracao da instrucao; campos do catalogo selecionados e relacoes nao liberadas removidas da projecao.",
-        "warrantyNotice": "Material fornecido pelos contribuidores sob a licenca indicada, sem garantia; sem endosso ao TrainForge."
       },
       "conditions": [
         "Exibir titulo, criadores/contribuidores, fonte e link da licenca do ativo; conservar avisos existentes e ausencia de garantia.",
@@ -2522,13 +2475,13 @@
   "portugueseInstructionFindings": [
     {
       "assetId": "wger:translations:2138",
-      "outcome": "consultation_only",
-      "reason": "Texto existente descreve preparacao, movimento e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas."
+      "outcome": "reuse_licence_identified_publication_excluded",
+      "reason": "Texto existente descreve preparacao, movimento e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas. Licenca permite reaproveitamento condicionado, mas autoria profissional vinculada ao exercicio nao comprovada; ensino/texto excluido do piloto."
     },
     {
       "assetId": "wger:translations:2789",
-      "outcome": "consultation_only",
-      "reason": "Texto existente descreve posicao, subida e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas."
+      "outcome": "reuse_licence_identified_publication_excluded",
+      "reason": "Texto existente descreve posicao, subida e retorno. Preservado sem criar dose; elegibilidade e pratica nao homologadas. Licenca permite reaproveitamento condicionado, mas autoria profissional vinculada ao exercicio nao comprovada; ensino/texto excluido do piloto."
     },
     {
       "assetId": "wger:translations:2847",
@@ -2556,5 +2509,10 @@
     "mediaDisplay": "Nenhum arquivo visual desta preparacao foi baixado/inspecionado/revisado para uso no app; marcadoresIA e creditos incompletos retidos.",
     "remainingText": "Traducoes originais e rascunhos documentais preservados; sem aprovacao editorial/localizacao integral.",
     "exportDataset": "Nao incluido nesta decisao; nao inferir proibicao daCCnem permissao operacional de exportacao pronta."
+  },
+  "publicationPolicy": {
+    "professionalAuthorshipRequiredForTeaching": true,
+    "professionalReviewerAvailable": false,
+    "consultationMetadataDoesNotEnableTeaching": true
   }
 }

@@ -67,3 +67,20 @@ Próximas entradas devem registrar somente ações/resultados efetivos, com hist
 - Primeira execução de37testes detectou somente inventário gerado desatualizado após novas ferramentas; regenerar e conferir antes do commit. Resultado final registrado após execução.
 
 - Conferência final:37testes passaram; auditoria de512ativos/1.069.660células passou; checks de preparação e revisão passaram. Mapa documental regenerado/conferido e diff sem erro. Quatro arquivos derivados locais continuam ignorados. Commit local autorizado desta revisão: `chore: review pilot consultation content`; sem push.
+
+## 21/10/2026 — fechamento integral da triagem e início da fundação
+
+- Autor pediu concluir etapas em sequência. V1-005 teve512disposições completas:73metadados/439excluídos,0ensino/prática. Dois textos anteriormente selecionados foram retirados da publicação instrucional por autoria profissional não comprovada. Fim da triagem não equivale à liberação dos excluídos.
+- V1-002: Go modular, banco isolado e Goose escolhidos; cópiaGo1.27.3portátil validada porSHA256eexecução da versão, sem alterarGo/PATHglobais. Docker existente iniciado em segundo plano; conexão ainda sendo verificada, sem reiniciar outros projetos.
+- [Saída da etapa01](etapa-01-fechamento.md), [decisão](../../arquitetura/decisao-go-v1.md). Próxima007;003transversal mantém pendência de publicação. Nenhuma migration, usuário real, treino novo ou APK simulados.
+
+
+## Continuação21–22/10 — M1 local
+
+Go1.27.3portátil instalado/verificado; serviço modular `services/api`, net/http+pgx, requestID/limites/timeouts/shutdown e health/live vsready. Docker falhou no socketInference; usar binários nativosPostgreSQL17.5 em cluster separado15432, sem tocar legado. Três migrations Goose e grants separados aplicados; PostgreSQLpatch deve atualizar antes de staging.
+
+Importador validou artefato/allowlist, transação e versão imutável; encontrou bug real de CRLF no hash preparado pelo Python, corrigido para bytes LF com regressão.73metadados importados, reimportações sem duplicar, zero usuários/treinos/consumos. Backup restaurado noutra base, contagens/hash iguais e cinco restrições testadas; fixtures revertidas/base temporária removida.
+
+Swagger real2.0, duas rotas de saúde: teste do watcher mudou anotação, observou versão nova, restaurou e confirmou versão original antes de parar processo. Corrigidos packageName temporário e verificação de versão pelo buildinfo do Swaggo. CI Go/Swagger preparada; execução remota não realizada.
+
+006–010 encerradas nos recortes documentados em etapa-02-fechamento.md; próxima011 Google real. Migração de dados legados é fora do recorte desta fundação: não sabemos suas contagens; inventário é gate de futura migração. Sem prática/Flutter/APK homologados.

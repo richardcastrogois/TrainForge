@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "18cbeca1ee537aa22646b9aff4e82658eb95810ac21e0747c3f2520dccfe3d3a",
+  "inputRevision": "3751dfdb25d00de39d61a25712be80cc5bb5e0898f466bd0029f6b053a622310",
   "inputs": {
     "lib/app.dart": "fbb5cec7f1f6f20f29b4caa878164b51484acdd2ee5e9006046559292193d34f",
     "lib/core/config/app_config.dart": "4d1030b8f0f3f29d2f605a805d50de2c8002fbb4e51f6ab58af07458133e9bf3",
@@ -44,23 +44,49 @@
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
     "lib/shared/widgets/auth_gate.dart": "0acbff74cdbe6e4050dfc447d216abe20b141a3bb3db8d1ed75ba1dc9358d2bd",
+    "services/api/cmd/api/main.go": "5ba441737229235ae513e0b3b1cb23bb49f910c1f05949b173ee1d25b88e0fae",
+    "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
+    "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
+    "services/api/internal/activity/doc.go": "9c96dee6094436f58077a2977187e2b778d2cd82ba4ad93aae0436d961e5d89e",
+    "services/api/internal/auth/doc.go": "d4750d16f58a1c4397c4150ac8420d6451db791b2e415e9032e616a842b3b32f",
+    "services/api/internal/catalog/import.go": "b5654ba5b1c59285010322a763840848637ba403f319f5c2734abfa6790f9a4b",
+    "services/api/internal/nutrition/doc.go": "013863f9b28c7c5c7c88d0ce4a22d84f1fb6696e5f1dda5557cbea05dfb3dd7c",
+    "services/api/internal/platform/config/config.go": "f9eb45fc11d037612f0c811f051126cc05e4462adc2762cb741a749a2291ccf7",
+    "services/api/internal/platform/httpapi/server.go": "2a82469e8ccb26a85e9227a7b1c6af8fa8ea029c3b4a206a10c8d0a7d1996ad1",
+    "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
+    "services/api/internal/swaggerdocs/docs.go": "3355abde02beb96a7c44bd707d021ee3fd0e9c4d1d91f81a0aea6d5320ac6e35",
+    "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
+    "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
+    "services/api/migrations/00002_typed_content_refs.sql": "78bbb7315006b7636ac5e00361bd48f7d0aa7181c84ef29b0aeee71ea28a246b",
+    "services/api/migrations/00003_prescribed_sessions.sql": "17de442c88738a1fecd531f122edfbe1ebf0c63f0182b1d94bc1888757c5b292",
+    "services/api/go.mod": "d38cd861597208d85e4a1c32d1144ca3796ad9fdfeda5f7e03a4c2f183450052",
+    "services/api/go.sum": "6dde7db0368031c8a9efe014754ba7a29d47492cfb7bc88940a8eeb2454c8c08",
+    "contracts/generated/swagger-v1.json": "6139f67087d701b10741f7acef723d8413683e944e2fc6ce018b3f9ea10c3d32",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "b8a9564645b2d16c2cef45ef31f6b3fce6398e98adcec0debfd20fd4cccb8e14",
-    "docs/execucao/v1/backlog.json": "fd1bb1c64493155adf31c9e3afa5a10d1dc1c8f1536149f28c28d5c60f2724fb",
+    "docs/execucao/v1/backlog.json": "724a7a3d54675c3c9f1ebd1cc8e9e845de95dfb6ee1a103784d0648d65072b67",
     "docs/arquitetura/achados.json": "dd8724b68bc1da4a96d14685de501f690f547d00b544e5af7247dc49c94bbebd",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
+    "tools/db_local.py": "bae38e8a6f21d862b21371fe7093b58399f77e3b73f1bf3f04de95599d3ba43f",
+    "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
-    "tools/documentacao_inventario.py": "6babe4936a6f03d36e25bc3d9f2d2d0ecde382c22f8c77fc6aeae7aabc714b0f",
-    "tools/gerar_documentacao.py": "47b755d4a0ed8f0ea6807934896d286134ec15bce1d79f10870908f12b374126",
-    "tools/gerar_swagger.py": "84d06022c093adc48309622b8ccaab617d026a269f0c532b62a3d69523838191",
+    "tools/documentacao_inventario.py": "01a084abae0a11dc9c74db96aa87ba629bcab1663e72e6523339817db3039adc",
+    "tools/fechar_triagem_piloto.py": "9680f470c0c461676c9c3138d858213e0657ff8df038f7e1379cbec41db9b027",
+    "tools/gerar_documentacao.py": "eb6d308d626bd9cf62b3fedac595b537b2b963f80165fb01612f2f134a9233b7",
+    "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
+    "tools/importar_catalogo_local.py": "3dc782157ea40dc86dbbcf9db2b2e11b9922a9a83bafb3e63452a02e310485fa",
+    "tools/migrate_local.py": "04c795436d4d6a00881ca7a1cd0b401c7e3104cc4187e1c82b3fbe59c583b589",
     "tools/preparar_conteudo_local.py": "e4983901ab515e5c61b8e47872e3426641322f62e84842b8cb24d3eefb8c193c",
-    "tools/revisar_conteudo_local.py": "881a84c75fe9587d09cfd55cf25d0188b79e226a27db8113c773031a7285f3dd",
+    "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
     "tools/test_conteudo_editorial.py": "e450dcef916d852e5e490b7188b2b06b6f83082e8ea2bdd97fb972de550d8a10",
-    "tools/test_documentacao.py": "bcdd7393d548f62a76593de56cb1e1b8c02053cd7bfa0f38661aa1ca85e6a046",
-    "tools/test_revisao_conteudo.py": "463fd27ef27dd2c28c093281a77c4ad5e09994de4677454caefda35a98d66ce8",
+    "tools/test_documentacao.py": "0d329bf5f6c05c7ff97e79d8930f442ad263bfb78e5f781ef4f41e86a9fcd804",
+    "tools/test_revisao_conteudo.py": "8e5b98cfcaea352087c5bee2cf8e317ed9c6f7772513690f6988b90ab8f50da9",
+    "tools/test_swagger_build.py": "c80a91b7a5be372ba1f2a515f5d1abf84d4e981adbd4b2c35e7d21913992444f",
     "tools/validar_manifesto_piloto.py": "85bb3d0d1053794bf9a61a8f25c1cb2693e49c445924be79691d81fb291cdefe",
-    "tools/validar_mermaid.mjs": "e8ad6a610b13cfee280be81f7a15ebe52ffc06de7e842e7dd654e9219e0ba14b"
+    "tools/validar_mermaid.mjs": "e8ad6a610b13cfee280be81f7a15ebe52ffc06de7e842e7dd654e9219e0ba14b",
+    "tools/verificar_api_local.py": "c2f379d46bf585082e5f22f6011f0599b9547ad474889972aaa97c2c90cbd387",
+    "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776"
   },
   "coverage": {
     "dartFiles": 42,
@@ -70,8 +96,8 @@
     "legacyRoutes": 29,
     "httpCalls": 14,
     "legacyMatches": 14,
-    "goFiles": 0,
-    "goRegistrations": 0,
+    "goFiles": 12,
+    "goRegistrations": 3,
     "modelsInReference": 9
   },
   "groups": [
@@ -2656,10 +2682,322 @@
     "kind": "versioned-external-source-reference"
   },
   "go": {
-    "files": [],
-    "annotations": [],
-    "registrations": [],
-    "specificationOperations": [],
+    "files": [
+      "services/api/cmd/api/main.go",
+      "services/api/cmd/import-content/main.go",
+      "services/api/cmd/migrate/main.go",
+      "services/api/internal/activity/doc.go",
+      "services/api/internal/auth/doc.go",
+      "services/api/internal/catalog/import.go",
+      "services/api/internal/nutrition/doc.go",
+      "services/api/internal/platform/config/config.go",
+      "services/api/internal/platform/httpapi/server.go",
+      "services/api/internal/platform/postgres/pool.go",
+      "services/api/internal/swaggerdocs/docs.go",
+      "services/api/migrations/files.go"
+    ],
+    "annotations": [
+      {
+        "method": "GET",
+        "path": "/api/v1/health/live",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Status"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/platform/httpapi/server.go",
+          "line": 42
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/health/ready",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Status"
+          ],
+          [
+            "Failure",
+            "503 {object} Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/platform/httpapi/server.go",
+          "line": 53
+        },
+        "registrationDetected": true
+      }
+    ],
+    "packages": [
+      "cmd/api",
+      "cmd/import-content",
+      "cmd/migrate",
+      "internal/activity",
+      "internal/auth",
+      "internal/catalog",
+      "internal/nutrition",
+      "internal/platform/config",
+      "internal/platform/httpapi",
+      "internal/platform/postgres",
+      "internal/swaggerdocs",
+      "migrations"
+    ],
+    "imports": [
+      [
+        "cmd/api",
+        "internal/platform/config"
+      ],
+      [
+        "cmd/api",
+        "internal/platform/httpapi"
+      ],
+      [
+        "cmd/api",
+        "internal/platform/postgres"
+      ],
+      [
+        "cmd/api",
+        "internal/swaggerdocs"
+      ],
+      [
+        "cmd/import-content",
+        "internal/catalog"
+      ],
+      [
+        "cmd/import-content",
+        "internal/platform/postgres"
+      ],
+      [
+        "cmd/migrate",
+        "migrations"
+      ]
+    ],
+    "migrations": [
+      "services/api/migrations/00001_core.sql",
+      "services/api/migrations/00002_typed_content_refs.sql",
+      "services/api/migrations/00003_prescribed_sessions.sql"
+    ],
+    "tables": [
+      {
+        "name": "users",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 4
+        }
+      },
+      {
+        "name": "auth_families",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 14
+        }
+      },
+      {
+        "name": "refresh_tokens",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 21
+        }
+      },
+      {
+        "name": "sources",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 29
+        }
+      },
+      {
+        "name": "content_versions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 36
+        }
+      },
+      {
+        "name": "content_withdrawals",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 52
+        }
+      },
+      {
+        "name": "import_batches",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 60
+        }
+      },
+      {
+        "name": "batch_content",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 67
+        }
+      },
+      {
+        "name": "program_items",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 75
+        }
+      },
+      {
+        "name": "enrollments",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 87
+        }
+      },
+      {
+        "name": "schedule_occurrences",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 99
+        }
+      },
+      {
+        "name": "activity_sessions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 110
+        }
+      },
+      {
+        "name": "activity_events",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 127
+        }
+      },
+      {
+        "name": "idempotency_records",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 137
+        }
+      },
+      {
+        "name": "food_versions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 148
+        }
+      },
+      {
+        "name": "food_entries",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00001_core.sql",
+          "line": 169
+        }
+      },
+      {
+        "name": "program_sessions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00003_prescribed_sessions.sql",
+          "line": 3
+        }
+      }
+    ],
+    "registrations": [
+      {
+        "method": "GET",
+        "path": "/api/v1/health/live",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/platform/httpapi/server.go",
+          "line": 67
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/health/ready",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/platform/httpapi/server.go",
+          "line": 68
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/docs/",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/platform/httpapi/server.go",
+          "line": 70
+        }
+      }
+    ],
+    "specificationOperations": [
+      {
+        "method": "GET",
+        "path": "/api/v1/health/live",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Status"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/health/ready",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Status"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      }
+    ],
     "limitations": [
       "Anotação não prova registro de rota, autorização ou execução.",
       "Registro Go detecta literais net/http com método; routers dinâmicos podem ficar fora."

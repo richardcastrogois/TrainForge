@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-005",
+  "next": "V1-011",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -101,7 +101,7 @@
           "id": "V1-002",
           "title": "Aceitar a decisão Go e definir a fronteira de migração",
           "userStory": "Como mantenedor, quero um serviço com responsabilidade clara para evitar duas APIs escrevendo nos mesmos domínios.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "S",
           "requirements": [
@@ -148,7 +148,15 @@
             "Mapa de compatibilidade e fronteiras"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-21",
+              "files": [
+                "docs/arquitetura/decisao-go-v1.md"
+              ],
+              "result": "Go modular escolhido pela direcao do autor e pedido de executar etapas; fronteira de banco/rotas/migrador e ausencia de dualwrite registradas; Go1.27.3portatil baixado comchecksum e versao executada, sem migration de producao."
+            }
+          ]
         },
         {
           "id": "V1-003",
@@ -309,7 +317,7 @@
           "id": "V1-005",
           "title": "Revisar o lote real para o uso do piloto",
           "userStory": "Como usuário, quero ver apenas o uso que o material realmente permite.",
-          "status": "doing",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -335,7 +343,8 @@
             "docs/conteudo/preparacao-local-2026-10-21.md",
             "content/manifests/pilot-review-decisions.json",
             "content/manifests/pilot-approved.json",
-            "docs/conteudo/revisao-consulta-2026-10-21.md"
+            "docs/conteudo/revisao-consulta-2026-10-21.md",
+            "content/manifests/pilot-dispositions.json"
           ],
           "acceptance": [
             "Cada item tem evidência de direitos e fidelidade do que será exibido, sem copiar PDF/foto indevidamente",
@@ -365,12 +374,23 @@
             "Tentar publicar item bloqueado e comprovar rejeição"
           ],
           "deliverables": [
-            "content/manifests/pilot-approved.json (consulta parcial; pratica e entrega no app pendentes)",
-            "content/manifests/pilot-review-decisions.json",
-            "docs/conteudo/revisao-consulta-2026-10-21.md"
+            "content/manifests/pilot-approved.json (somente metadados de consulta)",
+            "content/manifests/pilot-dispositions.json",
+            "docs/execucao/v1/etapa-01-fechamento.md"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": [],
+          "completionEvidence": [
+            {
+              "date": "2026-10-21",
+              "scope": "Triagem documental completa;73metadados para consulta e439excluidos com motivos, responsavel e hashes. Zero ensino/midia/pratica liberados; gates de publicacao mantidos, sem homologacao clinica.",
+              "files": [
+                "content/manifests/pilot-dispositions.json",
+                "content/manifests/pilot-approved.json",
+                "docs/execucao/v1/etapa-01-fechamento.md"
+              ],
+              "validation": "python tools/fechar_triagem_piloto.py --write --check:512ativos, nenhuma disposicao ausente; candidatos alterados/operacoes indevidas rejeitados"
+            }
+          ],
           "progressEvidence": [
             {
               "date": "2026-10-21",
@@ -398,7 +418,7 @@
           "id": "V1-006",
           "title": "Importar conteúdo de forma idempotente e auditável",
           "userStory": "Como operador, quero carregar o lote aprovado no PostgreSQL sem pesquisa em runtime nem duplicações.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -449,7 +469,20 @@
             "Relatório de importação e rollback editorial"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
+              "files": [
+                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/api-connected-verification.json",
+                "docs/execucao/v1/database-verification.json",
+                "docs/execucao/v1/catalog-import-verification.json"
+              ],
+              "validation": "Go test/vet/build; API+DB reais; watcher alterado/restaurado; importacao idempotente; restore e cinco invariantes SQL PASS",
+              "limits": "CI remota e compatibilidade com futuro gerador Dart nao executadas; legado nao acessado; nenhuma pratica liberada"
+            }
+          ]
         }
       ]
     },
@@ -462,7 +495,7 @@
           "id": "V1-007",
           "title": "Criar o esqueleto do monólito modular Go",
           "userStory": "Como desenvolvedor, quero iniciar API e testes de forma previsível com módulos explícitos.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -512,13 +545,26 @@
             "Servidor local e instruções reproduzíveis"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
+              "files": [
+                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/api-connected-verification.json",
+                "docs/execucao/v1/database-verification.json",
+                "docs/execucao/v1/catalog-import-verification.json"
+              ],
+              "validation": "Go test/vet/build; API+DB reais; watcher alterado/restaurado; importacao idempotente; restore e cinco invariantes SQL PASS",
+              "limits": "CI remota e compatibilidade com futuro gerador Dart nao executadas; legado nao acessado; nenhuma pratica liberada"
+            }
+          ]
         },
         {
           "id": "V1-008",
           "title": "Gerar Swagger dos comentários e DTOs Go antes do cliente",
           "userStory": "Como integrador, quero comentar os handlers/tipos Go e obter Swagger atualizado automaticamente no desenvolvimento e conferido na CI, sem YAML manual concorrente.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -585,13 +631,26 @@
             "Política de compatibilidade"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
+              "files": [
+                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/api-connected-verification.json",
+                "docs/execucao/v1/database-verification.json",
+                "docs/execucao/v1/catalog-import-verification.json"
+              ],
+              "validation": "Go test/vet/build; API+DB reais; watcher alterado/restaurado; importacao idempotente; restore e cinco invariantes SQL PASS",
+              "limits": "CI remota e compatibilidade com futuro gerador Dart nao executadas; legado nao acessado; nenhuma pratica liberada"
+            }
+          ]
         },
         {
           "id": "V1-009",
           "title": "Modelar conteúdo versionado, adesão e ocorrências",
           "userStory": "Como usuário, quero repetir uma atividade em outra data sem perder histórico ou mudar a fonte original.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -647,13 +706,26 @@
             "Decisão de invariantes e consultas"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
+              "files": [
+                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/api-connected-verification.json",
+                "docs/execucao/v1/database-verification.json",
+                "docs/execucao/v1/catalog-import-verification.json"
+              ],
+              "validation": "Go test/vet/build; API+DB reais; watcher alterado/restaurado; importacao idempotente; restore e cinco invariantes SQL PASS",
+              "limits": "CI remota e compatibilidade com futuro gerador Dart nao executadas; legado nao acessado; nenhuma pratica liberada"
+            }
+          ]
         },
         {
           "id": "V1-010",
           "title": "Criar migrations e testar backup/restauração",
           "userStory": "Como operador, quero evoluir o banco sem perder pesquisa ou registros pessoais.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -674,7 +746,7 @@
           "acceptance": [
             "Banco isolado sobe do zero por migrations Go; Prisma não migra o mesmo schema simultaneamente",
             "Backup restaurado em outra base é conferido por contagens e referências",
-            "Banco real existente é inventariado com acesso autorizado; se não existe dado, registrar sem inventar migração"
+            "Banco legado não é presumido vazio: se migração de seus dados estiver no recorte, inventariar com acesso autorizado; na fundação isolada registrar o inventário como gate obrigatório de uma migração futura, sem inventar contagens"
           ],
           "tasks": [
             {
@@ -703,7 +775,20 @@
             "Runbook de backup/restore com resultado"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": []
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
+              "files": [
+                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/api-connected-verification.json",
+                "docs/execucao/v1/database-verification.json",
+                "docs/execucao/v1/catalog-import-verification.json"
+              ],
+              "validation": "Go test/vet/build; API+DB reais; watcher alterado/restaurado; importacao idempotente; restore e cinco invariantes SQL PASS",
+              "limits": "CI remota e compatibilidade com futuro gerador Dart nao executadas; legado nao acessado; nenhuma pratica liberada"
+            }
+          ]
         }
       ]
     },
@@ -716,7 +801,7 @@
           "id": "V1-011",
           "title": "Autenticar Google no novo serviço",
           "userStory": "Como testador, quero entrar com minha conta real e usar a mesma identidade nas duas plataformas.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "M",
           "requirements": [
@@ -1034,7 +1119,8 @@
           "acceptance": [
             "Texto fiel revisado, idioma, atribuição e versão aparecem juntos",
             "Mídia ausente fica indisponível; nenhuma foto/vídeo de placeholder ou extração BeFit",
-            "Se existir mídia autorizada, entrega não expõe bucket nem exige download irrestrito"
+            "Se existir mídia autorizada, entrega não expõe bucket nem exige download irrestrito",
+            "Triagem005concluida nao libera os439ativos excluidos: praticas requerem evidencia especifica/profissional e apoio conforme a fonte; nao fechar aceite integrado somente com catalogo de referencia"
           ],
           "tasks": [
             {
@@ -2138,7 +2224,8 @@
           "acceptance": [
             "ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro",
             "Manifest INTERNET e network config conferidos; release usa HTTPS e assinatura própria, sem debug key",
-            "OAuth release fingerprint configurado; segredo não entra no repo/log"
+            "OAuth release fingerprint configurado; segredo não entra no repo/log",
+            "Triagem005concluida nao libera os439ativos excluidos: praticas requerem evidencia especifica/profissional e apoio conforme a fonte; nao fechar aceite integrado somente com catalogo de referencia"
           ],
           "tasks": [
             {

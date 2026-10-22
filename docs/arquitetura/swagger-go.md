@@ -39,11 +39,11 @@ Exemplo **de anotação proposta, não endpoint já existente**:
 
 `ListProgramsResponse` e `Problem` serão structs reais do serviço; o exemplo não cria mock nem conteúdo de runtime. O padrão proposto usa paths completos em `@Router` e basePath raiz, evitando duplicar `/api/v1`. Em V1-008 conferir que o schema descreve os corpos/status reais, inclusive erros de aplicação, e não apenas as anotações.
 
-## Automação preparada e trabalho futuro
+## Automação implementada e validada
 
-`tools/gerar_swagger.py --write` gera em diretório temporário e distribui somente os três derivados definidos; `--check` regenera e falha se divergir. A ferramenta não instala dependências e exige `swag --version` compatível. Se `services/api/go.mod` não existe, informa **PENDENTE V1-008** sem gerar serviço ou spec fictícios.
+`tools/gerar_swagger.py --write` gera em diretório temporário e distribui somente os três derivados definidos; `--check` regenera e falha se divergir. A ferramenta não instala dependências e comprova o módulo compilado com `go version -m`: a tag1.16.6 ainda imprime1.16.4 no rótulo do CLI. O pacote gerado tem nome fixo `swaggerdocs`, sem variar com a pasta temporária. Se `services/api/go.mod` não existe, informa **PENDENTE V1-008** sem gerar serviço ou spec fictícios.
 
-Depois de implementar a base Go e revisar os pré-requisitos:
+O serviço local agora existe. Dois endpoints de saúde foram executados, sem e com PostgreSQL; o teste alterou/restaurou uma anotação e confirmou atualização da especificação após recompilação/restart. Instalar o gerador em um clone novo continua explícito:
 
 ```powershell
 # Instalação futura explícita da ferramenta de desenvolvimento:
@@ -62,4 +62,22 @@ Na CI do serviço, gerar e comparar os três arquivos com a ferramenta fixada, t
 
 Anotação `@Security` documenta autenticação; não implementa middleware ou autorização por recurso. Exemplos devem ser contratuais e anônimos, sem tokens/dados físicos reais. Swagger UI interativo deve ter exposição/configuração deliberadas por ambiente, sem segredo embutido ou credencial persistente. Testar rotação, isolamento, idempotência e limites continua obrigatório. Interface atualizada não prova API segura ou capaz de atender uma carga.
 
-O [mapa Go gerado](gerado/go-e-swagger.md) separa anotações, registros literais e operações encontradas na especificação. Hoje a ausência do serviço é mostrada explicitamente.
+O [mapa Go gerado](gerado/go-e-swagger.md) separa anotações, registros literais e operações encontradas na especificação. O serviço real e suas duas rotas de saúde estão na especificação. Auth, catálogo HTTP e cliente Dart ainda não foram implementados nessa etapa.
+
+## Comandos locais e limites
+
+```powershell
+# Terminal na raiz do clone, Python3 disponível:
+python tools/db_local.py start
+python tools/dev_api.py
+# Parar API/watcher: Ctrl+C no mesmo terminal.
+# Parar apenas o cluster V1 deste clone:
+python tools/db_local.py stop
+```
+
+API em `http://127.0.0.1:8082`, Swagger em `http://127.0.0.1:8082/docs/index.html`.
+O watcher lê `.local/api.env`, observa Go/go.mod/go.sum, ignora gerados e preserva o processo anterior se a compilação falhar. Não aplica migration automaticamente.
+
+`tools/verificar_api_local.py` inicia processos próprios em porta livre, prova a mudança/restauração da anotação e para o processo. O JSON servido e o gerado são iguais após normalizar o `host` vazio que o template Swaggo emite e seu writer omite.
+
+A CI instala Go do `go.mod` e Swaggo1.16.6, testa/compila e executa `--check`; execução remota segue pendente de publicação autorizada. Não existe gerador Dart adotado: a compatibilidade Swagger2→cliente será verificada antes dessa adoção, na integração Flutter.

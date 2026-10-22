@@ -181,6 +181,8 @@ def outputs(root):
     for model in backend["models"]:
         text += f"\n### {model['name']}\n\n{evidence(model['source'], doc, backend)}\n\n"
         text += table(["Campo", "Tipo", "Relação"], [[f["name"], f"`{f['type']}`", "sim" if f["relation"] else "não"] for f in model["fields"]])
+    text += "\n## Go: tabelas declaradas em migrations versionadas\n\nDeclaração SQL não prova aplicação no banco; o resultado runtime está em database-verification.json. ALTERs, índices, tipos e FKs completos permanecem nos arquivos fonte.\n\n"
+    text += table(["Tabela", "Migration fonte"], [[t["name"], evidence(t["source"], doc, backend)] for t in data["go"]["tables"]])
     text += "\n## Proposto: responsabilidades do domínio novo\n\n"
     text += table(["Entidades propostas", "Responsabilidade"], [[e["name"], e["description"]] for e in plan["entities"]])
     text += "\n[Modelo lógico e invariantes](../dominio-e-banco.md) · [Voltar ao mapa](../README.md)\n"
@@ -191,12 +193,15 @@ def outputs(root):
     text += f"Arquivos Go de aplicação encontrados: **{len(data['go']['files'])}**. Registros net/http literais: **{len(data['go']['registrations'])}**.\n\n"
     if not data["go"]["files"]:
         text += "**O backend Go ainda não foi implementado.** Não há Swagger real do TrainForge Go para abrir ou executar; a configuração é trabalho da história V1-008. A proposta está documentada separadamente.\n\n"
+    if data["go"]["packages"]:
+        text += "## Pacotes Go e imports atuais\n\nSetas são imports estáticos; não são chamadas HTTP nem traces de execução.\n\n"
+        text += flow([(p,p) for p in data["go"]["packages"]], [(a,b,"import") for a,b in data["go"]["imports"]])
     text += "## Anotações encontradas\n\n"
     text += table(["@Router", "@Param", "@Success / @Failure", "Registro compatível detectado", "Fonte"], [
         [f"`{r['method']} {r['path']}`", "; ".join(r["params"]), "; ".join(" ".join(v) for v in r["responses"]), "sim" if r["registrationDetected"] else "não — verificar", evidence(r["source"], doc, backend)] for r in data["go"]["annotations"]])
     text += "\n## Registros HTTP encontrados\n\n" + table(["Rota", "Fonte"], [[f"`{r['method']} {r['path']}`", evidence(r["source"], doc, backend)] for r in data["go"]["registrations"]])
     text += "\n## Operações da especificação gerada\n\n" + table(["Rota", "operationId", "Envia: parâmetros/body", "Recebe: status e schemas", "Fonte"], [[f"`{r['method']} {r['path']}`", r["operationId"], json.dumps(r["parameters"], ensure_ascii=False), json.dumps(r["responses"], ensure_ascii=False), evidence(r["source"], doc, backend)] for r in data["go"]["specificationOperations"]])
-    text += "\nAnotação, registro de rota e operação na especificação são evidências distintas. A CI do futuro serviço deve comparar as três e testar resposta/autorização. O extrator documental não executa Go nem substitui o gerador Swaggo.\n\n[Decisão e rotina Swagger](../swagger-go.md) · [Voltar ao mapa](../README.md)\n"
+    text += "\nAnotação, registro de rota e operação na especificação são evidências distintas. A CI do serviço compara os derivados e testa handlers. Novas rotas continuam exigindo teste de resposta/autorização. O extrator documental não executa Go nem substitui o gerador Swaggo.\n\n[Decisão e rotina Swagger](../swagger-go.md) · [Voltar ao mapa](../README.md)\n"
     result[doc] = text
 
     doc = f"{GENERATED}/progresso.md"

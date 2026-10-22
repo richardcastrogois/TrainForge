@@ -1,15 +1,15 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **21/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. Pedidos atuais do usuário prevalecem sobre snapshots históricos.
+Estado vigente: **22/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. Pedidos atuais do usuário prevalecem sobre snapshots históricos.
 
 ## Próxima ação e escopo
 
 - Ler [índice](docs/README.md), [plano macro](docs/execucao/v1/plano-macro.md), [escopo](docs/execucao/v1/escopo.md) e [handoff](docs/execucao/v1/handoff.md).
-- [Revisão parcial de consulta](docs/conteudo/revisao-consulta-2026-10-21.md):73metadados/2textos; `pilot-approved.json` é somente allowlist de consulta, sem prática/mídia/entregaAPK homologadas. Não importar todos os candidatos.
-- Próxima história **V1-005** (revisão do lote; continuação de conteúdo da etapa01 solicitada pelo autor; V1-004 concluída, V1-002 não iniciada) em `docs/execucao/v1/backlog.json`. 12 épicos/43 histórias; implantação do app ainda não iniciada neste planejamento.
+- [Etapa01 encerrada](docs/execucao/v1/etapa-01-fechamento.md): triagem dos512ativos concluída;73metadados de consulta e439excluídos. Nenhuma instrução/mídia/prática liberada. As exclusões continuam vinculantes; não publicar texto por herdar licença ou chamar fim da triagem de homologação clínica.
+- [Etapa02 concluída](docs/execucao/v1/etapa-02-fechamento.md): Go real, Swagger2gerado, PostgreSQL isolado/migrations,73metadados importados, reimportação e restore validados. Próxima história **V1-011**, autenticaçãoGoogle, autorizada pela sequência de etapas. V1-003 continua transversal/publicação remota pendente.
 - Produto **Android e iOS**; desenvolvimento e primeiro teste da esposa em Android. Não presumir iOS testado por haver pasta nativa.
 - [Direção do piloto de21/10](docs/execucao/v1/decisoes-piloto.md): autor quer avaliar o app inteiro, cenário por cenário, em APKs incrementais. Cobrir pesquisa existente e base alimentar ampla com busca/cadastro próprio; mídia conforme disponibilidade e lacunas explícitas. Não reduzir a entrega a uma jornada pequena nem aguardar o produto completo para feedback. Priorizar conteúdo gratuito; referência de orçamento do autor é cerca deUS$19 em pagamento único, sem assinatura nem compra automática. Valores maiores foram considerados inviáveis; apresentar condições antes de qualquer contratação.
-- API atual Fastify/Prisma/PostgreSQL em `C:/dev/bootcamp-treinos-api`; Next.js antigo é referência. Go modular é recomendação planejada, não migração entregue.
+- API atual Fastify/Prisma/PostgreSQL em `C:/dev/bootcamp-treinos-api`; Next.js antigo é referência. Go modular tem fundação local em `services/api`; auth/cliente e migração de dados legados ainda não entregues.
 - Pedido vigente: remover o painel local, manter documentação arquitetural dinâmica no repositório e gerar Swagger por comentários/tipos Go. Organização, ferramentas documentais e commits locais autorizados; não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
 
 ## Conteúdo e pesquisa
@@ -29,7 +29,7 @@ Estado vigente: **21/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 - Atualizar backlog JSON, contratos/achados/mapa afetados e diário ao concluir; `done` exige completionEvidence. Gerar backlog Markdown, não mantê-lo à mão.
 - Leitura sem servidor: [arquitetura dinâmica](docs/arquitetura/README.md). Manutenção: `python tools/gerar_documentacao.py --write --check` e `python -m unittest discover -s tools -p test_documentacao.py`. Validação documental não é teste clínico ou do app.
 - [Automação documental](docs/arquitetura/documentacao-dinamica.md): geração determinística na CI; captura do backend externo é explícita/versionada e não depende de caminhos locais. Intenção/fechamento exigem registro humano. Não recriar painel/servidor de leitura.
-- [Swagger Go](docs/arquitetura/swagger-go.md): comentários/DTOs são fonte, JSON/YAML gerados não editados à mão. `python tools/gerar_swagger.py --check` informa pendência enquanto não existe serviço Go; não chamar isso de Swagger real validado.
+- [Swagger Go](docs/arquitetura/swagger-go.md): comentários/DTOs são fonte, JSON/YAML gerados não editados à mão. serviço Go e Swagger reais existem; watcher `python tools/dev_api.py` validou geração/build/restart. O gerador exige Go/Swaggo no PATH ou ambiente do projeto.
 - [Graphify](docs/graphify.md): query primeiro em grafos existentes; update incremental code-only, corpora separados. Não indexar todo `docs/` semanticamente sem escopo/custo autorizados.
 - No Git usar por comando `git -c safe.directory=C:/dev/TrainForge/trainforge ...` se houver erro de propriedade. Não alterar confiança global. Commit/push/publicação conforme autorização do usuário.
 - Credenciais, chaves de assinatura, .env, caches e corpos/renders de terceiros fora do Git. Ao descartar temporários após uso, verificar alvos, apagar somente o que não é mais necessário e registrar resultado quando pertinente.

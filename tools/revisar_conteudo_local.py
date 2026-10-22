@@ -47,6 +47,8 @@ def review_bundle(candidate, decisions):
         if original["rights"]["licenseUrl"] not in LICENSES:
             raise ValueError("Licenca nao conferida")
         op = row["operation"]
+        if original["kind"] == "instruction" and decisions.get("publicationPolicy", {}).get("professionalAuthorshipRequiredForTeaching") and not row.get("professionalAuthorshipEvidence"):
+            raise ValueError("Autoria profissional do ensino nao comprovada")
         expected = "catalog_metadata" if original["kind"] == "movement" else "instruction_text" if original["kind"] == "instruction" else None
         if op != expected or not row.get("credits") or not row.get("conditions") or not decisions.get("reviewer"):
             raise ValueError("Operacao/credito/condicao/responsavel ausente")
@@ -96,6 +98,7 @@ def main():
     bundle = review_bundle(candidate, decisions)
     encoded = json.dumps(bundle, ensure_ascii=False, indent=2) + "\n"
     summary = {"schemaVersion":"1.0.0", "date":"2026-10-21", "stage":"approved_consultation_operations", "runtimeSeed":False,
+               "importScope":"isolated_development_consultation", "publishScope":"delivery_conditions_not_yet_verified_in_app",
                "sourceBundle":decisions["sourceBundle"], "decisions":{"path":DECISIONS, "sha256":file_sha(DECISIONS)},
                "toolSha256":file_sha("tools/revisar_conteudo_local.py"),
                "output":{"path":TARGET, "sha256":hashlib.sha256(encoded.encode()).hexdigest()},
@@ -104,7 +107,7 @@ def main():
                "rows":[{"assetId":a["id"], "sourceId":a["sourceId"], "allowedOperations":a["allowedOperations"], "evidence":a["evidence"],
                         "credits":a["rights"]["displayCredits"], "deliveryConditions":a["rights"]["deliveryConditions"]} for a in bundle["assets"]]}
     if args.write:
-        (ROOT / TARGET).write_text(encoded, encoding="utf-8")
+        (ROOT / TARGET).write_bytes(encoded.encode("utf-8"))
         (ROOT / REPORT).write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n", encoding="utf-8")
     if args.check:
         if (ROOT / TARGET).read_text(encoding="utf-8") != encoded or read(REPORT) != summary:

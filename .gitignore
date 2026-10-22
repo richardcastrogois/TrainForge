@@ -87,3 +87,10 @@ __pycache__/
 
 # Derived third-party content stays local until distribution review
 /content/local/
+
+# Project-scoped development tools and local PostgreSQL secrets
+/.tools/
+/.local/
+/services/api/.env
+/services/api/api.exe
+/services/api/import-content.exe
