@@ -61,7 +61,7 @@
       "id": "nutrition",
       "label": "Módulo nutrition Go",
       "layer": "API Go",
-      "description": "Alimentos versionados e consumo confirmado. Sem prescrição automática.",
+      "description": "Base alimentar pesquisada ampla, cadastro próprio identificado e consumo confirmado; nutrientes ausentes preservados, sem prescrição automática.",
       "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
     },
     {
@@ -89,7 +89,7 @@
       "id": "media",
       "label": "Mídia autorizada / referência",
       "layer": "Conteúdo",
-      "description": "Somente ativos com direitos; indisponibilidade explícita.",
+      "description": "Fotos e vídeos conforme disponibilidade e direitos; falta de mídia e de instrução têm estados distintos e explícitos.",
       "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
     },
     {
@@ -183,9 +183,9 @@
     {
       "from": "http",
       "to": "nutrition",
-      "label": "GET foods; POST food-entries",
-      "input": "busca ou foodVersionId + quantidade/unidade",
-      "output": "alimento/preparo e consumo persistido",
+      "label": "GET/POST foods; POST food-entries",
+      "input": "busca, cadastro próprio real ou foodVersionId + quantidade/unidade",
+      "output": "alimento pesquisado ou próprio identificado; consumo persistido",
       "evidence": "Contrato proposto, não chamada executada."
     },
     {

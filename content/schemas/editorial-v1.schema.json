@@ -1,0 +1,359 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trainforge:editorial:1.0.0",
+  "title": "TrainForge local editorial bundle",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "bundleId",
+    "stage",
+    "sources",
+    "assets"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "bundleId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "enum": [
+        "candidate",
+        "approved_operations"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": [
+        "path",
+        "pointer",
+        "snapshotSha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pointer": {
+          "type": "string"
+        },
+        "snapshotSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "measure": {
+      "type": "object",
+      "required": [
+        "quantity",
+        "unit",
+        "sourceField"
+      ],
+      "properties": {
+        "quantity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "enum": [
+            "s",
+            "min",
+            "m",
+            "km",
+            "cm",
+            "kg",
+            "repetitions",
+            "sets"
+          ]
+        },
+        "sourceField": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "sourceId",
+        "sourceVersion",
+        "locale",
+        "title",
+        "authors",
+        "evidence",
+        "rights",
+        "audience",
+        "dose",
+        "content",
+        "review",
+        "allowedOperations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "movement",
+            "instruction",
+            "media",
+            "program",
+            "collection"
+          ]
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "sourceVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "rights": {
+          "type": "object",
+          "required": [
+            "label",
+            "licenseUrl",
+            "attribution",
+            "scope",
+            "operationGrants"
+          ],
+          "properties": {
+            "label": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "licenseUrl": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "attribution": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "scope": {
+              "enum": [
+                "movement_metadata",
+                "instruction_text",
+                "media_asset",
+                "source_protocol",
+                "modular_collection"
+              ]
+            },
+            "operationGrants": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "catalog_metadata": {
+                  "enum": [
+                    "allowed",
+                    "denied",
+                    "unknown"
+                  ]
+                },
+                "instruction_text": {
+                  "enum": [
+                    "allowed",
+                    "denied",
+                    "unknown"
+                  ]
+                },
+                "media_display": {
+                  "enum": [
+                    "allowed",
+                    "denied",
+                    "unknown"
+                  ]
+                },
+                "guided_practice": {
+                  "enum": [
+                    "allowed",
+                    "denied",
+                    "unknown"
+                  ]
+                },
+                "export_dataset": {
+                  "enum": [
+                    "allowed",
+                    "denied",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "audience": {
+          "type": "object",
+          "required": [
+            "population",
+            "environment",
+            "supportRequired",
+            "supportSource"
+          ],
+          "properties": {
+            "population": {},
+            "environment": {},
+            "supportRequired": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "supportSource": {}
+          }
+        },
+        "dose": {
+          "type": "object",
+          "required": [
+            "measurements",
+            "sourceFacts",
+            "contextRef"
+          ],
+          "properties": {
+            "measurements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/measure"
+              }
+            },
+            "sourceFacts": {},
+            "contextRef": {}
+          }
+        },
+        "content": {
+          "type": "object"
+        },
+        "review": {
+          "type": "object",
+          "required": [
+            "state",
+            "reviewer",
+            "rightsVerified",
+            "fidelityChecked",
+            "safetyUseReviewed",
+            "instructionSufficient",
+            "reasons"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "blocked",
+                "reviewed"
+              ]
+            },
+            "reviewer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "rightsVerified": {
+              "type": "boolean"
+            },
+            "fidelityChecked": {
+              "type": "boolean"
+            },
+            "safetyUseReviewed": {
+              "type": "boolean"
+            },
+            "instructionSufficient": {
+              "type": "boolean"
+            },
+            "reasons": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "allowedOperations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "catalog_metadata",
+              "instruction_text",
+              "media_display",
+              "guided_practice",
+              "export_dataset"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "8b80b92605ef47734091ec957c50d886899fef9a2004fbaeb7225e5111f85024",
+  "inputRevision": "5c9f4a2bb090c81210f6ebd80131a9953f0d4506032a5e9a6db1f32c1639b884",
   "inputs": {
     "lib/app.dart": "fbb5cec7f1f6f20f29b4caa878164b51484acdd2ee5e9006046559292193d34f",
     "lib/core/config/app_config.dart": "4d1030b8f0f3f29d2f605a805d50de2c8002fbb4e51f6ab58af07458133e9bf3",
@@ -45,14 +45,19 @@
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
     "lib/shared/widgets/auth_gate.dart": "0acbff74cdbe6e4050dfc447d216abe20b141a3bb3db8d1ed75ba1dc9358d2bd",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/arquitetura/plano.json": "fa611bcf2febf062ed2de35c8ccc3bbca7522bfcd5912bb897058f49fd035e0f",
-    "docs/execucao/v1/backlog.json": "ddad5b65ea7fccf74b9b40c4cda320a51451da7d841d14a90364efc1d26ac3ab",
+    "docs/arquitetura/plano.json": "b8a9564645b2d16c2cef45ef31f6b3fce6398e98adcec0debfd20fd4cccb8e14",
+    "docs/execucao/v1/backlog.json": "a79fe306b002abe76c013411d4271e671f312aac327a5c463015034671d36cde",
     "docs/arquitetura/achados.json": "dd8724b68bc1da4a96d14685de501f690f547d00b544e5af7247dc49c94bbebd",
+    "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
+    "tools/conteudo_editorial.py": "027f1e18e0865ac4976b8a9f25e48dd6134a4113d52e6dbd6d0248975738fa5c",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "6babe4936a6f03d36e25bc3d9f2d2d0ecde382c22f8c77fc6aeae7aabc714b0f",
     "tools/gerar_documentacao.py": "47b755d4a0ed8f0ea6807934896d286134ec15bce1d79f10870908f12b374126",
     "tools/gerar_swagger.py": "84d06022c093adc48309622b8ccaab617d026a269f0c532b62a3d69523838191",
-    "tools/test_documentacao.py": "00d9af2e06d9907ddf56e72f4b634177a903f2633b58456e561b404b69753b1f",
+    "tools/preparar_conteudo_local.py": "39f5591db5f684561a68e966e91aeeed68b48370b50d0ebe202d92e620187c69",
+    "tools/test_conteudo_editorial.py": "6967718a5411eb3446797a82ca741cfc9af66c9ae1b5b59e4831728c47bfec30",
+    "tools/test_documentacao.py": "bcdd7393d548f62a76593de56cb1e1b8c02053cd7bfa0f38661aa1ca85e6a046",
+    "tools/validar_manifesto_piloto.py": "85bb3d0d1053794bf9a61a8f25c1cb2693e49c445924be79691d81fb291cdefe",
     "tools/validar_mermaid.mjs": "e8ad6a610b13cfee280be81f7a15ebe52ffc06de7e842e7dd654e9219e0ba14b"
   },
   "coverage": {

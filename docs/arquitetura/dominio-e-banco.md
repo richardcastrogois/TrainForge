@@ -1,6 +1,6 @@
 # Domínio e banco — modelo lógico proposto
 
-Este é o insumo de `V1-009`, **não uma migration aplicada**. PostgreSQL continua recomendado. O esquema Prisma atual está no backend externo e é inventariado no painel.
+Este é o insumo de `V1-009`, **não uma migration aplicada**. PostgreSQL continua recomendado. O esquema Prisma atual está no backend externo e é inventariado na documentação gerada.
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -14,6 +14,7 @@ Este é o insumo de `V1-009`, **não uma migration aplicada**. PostgreSQL contin
 | ActivitySession / ActivityEvent | Execução realmente iniciada e eventos confirmados: pausa, medida, conclusão parcial/completa; autor do registro separado do titular |
 | IdempotencyRecord | Usuário+operação+chave, hash do request e resultado; reenvio igual recupera resposta, payload divergente é conflito |
 | Food / FoodVersion / NutrientValue | Alimento/preparo e versão da fonte, base por100g/100ml, nutrientes com ausência distinta de zero |
+| UserFood / UserFoodVersion (nome a validar na009) | Cadastro real informado pelo usuário, com titular e origem distintos do catálogo pesquisado; não publicar nem tratar como revisado por inferência |
 | FoodEntry | Quantidade e unidade confirmadas, data/fuso, alimento/versão e fatores usados no cálculo; edição rastreável |
 | CareRelationship (posterior) | Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador” |
 
@@ -24,6 +25,8 @@ Representar campos opcionais/tipados: sets, repetitions, holdSeconds, durationSe
 Não transformar oito variantes ReViEEW em circuito novo ou transferir a eficácia de um programa a uma peça. N15 guarda onze componentes para cuidadores; ES2019-DOM-01 guarda cinco movimentos para idosos em casa, em pacote separado. Instrução, apoio, público e direitos continuam vinculados a cada versão.
 
 ## Integridade e tempo
+
+O [piloto esclarecido](../execucao/v1/decisoes-piloto.md) exige busca em base alimentar ampla e opção de cadastrar alimento próprio. A modelagem deve distinguir origem editorial e informação do usuário, preservar versões usadas no consumo e representar nutrientes/porções desconhecidos sem inventar valores. Compartilhamento/moderação não foi decidido. Catálogo e cadastro próprio podem participar da busca autorizada da conta; essa consulta não deve expor cadastros de terceiros.
 
 IDs estáveis opacos; foreign keys para versões; timestamps UTC e fuso IANA para interpretar datas da agenda. Data local não deve ser deduzida do relógio do servidor. Uma ocorrência não é “toda segunda-feira para sempre”. Estados e transições devem ter contrato explícito, incluindo planejado, iniciado, pausado, parcial, concluído, não feito e descanso.
 

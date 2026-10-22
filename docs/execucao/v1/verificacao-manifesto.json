@@ -1,0 +1,16 @@
+{
+  "checkedOn": "2026-10-21",
+  "command": "python tools/validar_manifesto_piloto.py",
+  "result": {
+    "result": "PASS",
+    "checks": 1248,
+    "sourceFamilies": 331,
+    "researchNiches": 46,
+    "selectedDocumentaryComponents": 34,
+    "foodSourceFamilies": 22,
+    "runtimeApprovedItems": 0,
+    "scenarios": 24,
+    "manifestSha256": "46f04179845f36fe8944997bbb3b11fa76cea692595185400e23ec31300507d4"
+  },
+  "scope": "Verificacao documental apos esclarecer USD19 e pistas gratuitas; nao teste do app, homologacao ou compra"
+}

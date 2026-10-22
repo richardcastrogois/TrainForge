@@ -1,5 +1,7 @@
 # Catálogo comparativo de fontes
 
+**Revisão de custo em21/10/2026:** o autor aceita avaliar licenças baratas de pagamento único, com condições apresentadas antes da compra. A classificação histórica `incompativel_zero` continua descrevendo a hipótese de custo zero; não rejeita automaticamente uma compra única. [ExerciseDB.dev/OSS, ExerciseDB.io, wger e WorkoutX: verificação atual](avaliacao-apis-exercicios-2026-10-21.md).
+
 Gerado de [fontes.json](fontes.json) em 2026-10-21. 331 fontes/famílias; não é uma contagem de APIs nem de fornecedores aprovados. Não editar esta tabela separadamente: atualizar o JSON e executar `consultar-fontes.py --gerar-indice`.
 
 Todas as ligações remetem a fontes primárias. Para nível de evidência, amostras, data e próxima ação por fonte, consultar o JSON pelo ID. Rodadas iniciais em 22–23/09; pilotos e atualização de fontes selecionadas em 26–28/09. A data individual indica o que foi reconferido. Páginas bloqueadas ou apenas indexadas estão identificadas no JSON.

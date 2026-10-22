@@ -25,6 +25,7 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 | Activity API: `GET /history` | from, to, cursor, limit |200 eventos/sessões reais com versão, autor, timestamps e próximos itens |
 | Summary API: `GET /summary` | date, timezone |200 planejado/realizado separados, alimentação, métricas com origem; campos sem dado são null/ausentes conforme schema |
 | Nutrition API: `GET /foods` | q, preparation, cursor, limit |200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada |
+| Nutrition API: `POST /foods` (cadastro próprio; revisar na008/020) | Nome, preparo, base/unidade e valores efetivamente informados + chave |201 alimento próprio versionado, origem informada pelo usuário e titular; não publica no catálogo editorial nem completa nutrientes ausentes |
 | Nutrition API: `POST /food-entries` | `{foodVersionId,quantity,unit,occurredAt,timezone}` + chave |201 consumo confirmado com cálculo rastreável;422 unidade não suportada |
 | Nutrition API: `GET/PATCH/DELETE /food-entries/{id}` | alteração confirmada ou exclusão |200/204, somente titular; edição recalcula usando versão e fatores declarados |
 | Operação: `GET /health/live` e `/health/ready` | Sem dados pessoais |200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno |

@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "editorialAssetsChecked": 512,
+  "evidencePointersChecked": 512,
+  "food": [
+    {
+      "sourceId": "AL-CIQUAL-2025",
+      "tableRowsChecked": 3484,
+      "sourceCellsChecked": 261300,
+      "conflictingRowsPreserved": 0
+    },
+    {
+      "sourceId": "AL-COFID-2021",
+      "tableRowsChecked": 37531,
+      "sourceCellsChecked": 808360,
+      "conflictingRowsPreserved": 26
+    }
+  ],
+  "scope": "Fidelidade documental e integridade dos arquivos locais; nao revisao clinica/editorial humana ou teste do app"
+}

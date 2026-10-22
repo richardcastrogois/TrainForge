@@ -5,8 +5,9 @@ Estado vigente: **21/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 ## Próxima ação e escopo
 
 - Ler [índice](docs/README.md), [plano macro](docs/execucao/v1/plano-macro.md), [escopo](docs/execucao/v1/escopo.md) e [handoff](docs/execucao/v1/handoff.md).
-- Próxima história **V1-001** em `docs/execucao/v1/backlog.json`. 12 épicos/43 histórias; implantação do app ainda não iniciada neste planejamento.
+- Próxima história **V1-005** (revisão do lote; continuação de conteúdo da etapa01 solicitada pelo autor; V1-004 concluída, V1-002 não iniciada) em `docs/execucao/v1/backlog.json`. 12 épicos/43 histórias; implantação do app ainda não iniciada neste planejamento.
 - Produto **Android e iOS**; desenvolvimento e primeiro teste da esposa em Android. Não presumir iOS testado por haver pasta nativa.
+- [Direção do piloto de21/10](docs/execucao/v1/decisoes-piloto.md): autor quer avaliar o app inteiro, cenário por cenário, em APKs incrementais. Cobrir pesquisa existente e base alimentar ampla com busca/cadastro próprio; mídia conforme disponibilidade e lacunas explícitas. Não reduzir a entrega a uma jornada pequena nem aguardar o produto completo para feedback. Priorizar conteúdo gratuito; referência de orçamento do autor é cerca deUS$19 em pagamento único, sem assinatura nem compra automática. Valores maiores foram considerados inviáveis; apresentar condições antes de qualquer contratação.
 - API atual Fastify/Prisma/PostgreSQL em `C:/dev/bootcamp-treinos-api`; Next.js antigo é referência. Go modular é recomendação planejada, não migração entregue.
 - Pedido vigente: remover o painel local, manter documentação arquitetural dinâmica no repositório e gerar Swagger por comentários/tipos Go. Organização, ferramentas documentais e commits locais autorizados; não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
 

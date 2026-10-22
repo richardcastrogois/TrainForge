@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "stage": "local_candidate",
+  "noNetworkCalls": true,
+  "noDatabaseWrites": true,
+  "editorial": {
+    "path": "content/local/editorial-v1.json",
+    "sha256": "71a3d51a286d328223deaf71000e408a553cdc53e00548841ffd8ed66165f431",
+    "rightsMatrix": {
+      "path": "content/manifests/pilot-rights-matrix.json",
+      "sha256": "580a8c41e71eae1e729f440d4690e7790cb775eeb890f2721fae3366d458638a"
+    },
+    "counts": {
+      "movement": 109,
+      "instruction": 329,
+      "media": 68,
+      "collection": 5,
+      "program": 1
+    },
+    "blockedAssets": 14,
+    "portugueseWgerInstructions": 6,
+    "mediaDownloaded": 0,
+    "runtimeApproved": 0,
+    "inputs": [
+      {
+        "path": "docs/planejamento/evidencias/wger-25.json",
+        "sha256": "5d7e89c6bcd44fbaf68cfe6ecdb7ebe3fb1e81e0c4aae1bf6bbc0f7a35a4e033"
+      },
+      {
+        "path": "docs/conteudo/evidencias/wger-offset-300.json",
+        "sha256": "1724b934691e7ea0aec2f9bd9ce21b281489618edaa2c9bfa704962f7390ec01"
+      },
+      {
+        "path": "docs/conteudo/evidencias/wger-offset-600.json",
+        "sha256": "9260581c43804fb80fbd08a56407ac48b624e2ab95ae7ce7f7705df072d903ff"
+      },
+      {
+        "path": "docs/planejamento/evidencias/wger-languages.json",
+        "sha256": "59b760d2466e56edae0570b8338470ba2726ede2aa5b4a506b7bbc1ce227f0c0"
+      },
+      {
+        "path": "docs/conteudo/evidencias/2026-10-21/n15c-composicao/biblioteca-cuidadores.json",
+        "sha256": "c5a8f3190a92f10fad30e8ee72c32ea66569f8bca3c60add0662c586e5be3ef7"
+      },
+      {
+        "path": "docs/conteudo/evidencias/2026-10-04/n15i-funcional/pacote-apk-snacking-2019.json",
+        "sha256": "39ee2f7304123c223254ac7879c430421df4180304bae5a01ed1462c23df19ee"
+      },
+      {
+        "path": "docs/conteudo/evidencias/2026-10-15/n20i-retomada/mapa-instrucao-textual.json",
+        "sha256": "d8f43ed8eecb618fe2ecea8a11536204056f0062ec35b383050d90af8e01354f"
+      },
+      {
+        "path": "docs/conteudo/evidencias/2026-10-15/n21-praca/pacote-modular-praca.json",
+        "sha256": "4dcee09d5909f656237c08820c96bbf4ffbe878d0e7804ecdb7b1abfd1df4722"
+      },
+      {
+        "path": "docs/conteudo/fontes.json",
+        "sha256": "61daf5a43363f7eb53a84a4ea4ce1819b457491d10f7cf57b7ab74220f54e568"
+      },
+      {
+        "path": "content/manifests/pilot-candidates.json",
+        "sha256": "46f04179845f36fe8944997bbb3b11fa76cea692595185400e23ec31300507d4"
+      }
+    ]
+  },
+  "food": [
+    {
+      "path": "content/local/al-ciqual-2025-foods.jsonl",
+      "sha256": "6f3b5b620b7611e6b07f3e73db1a71094ca134b1d9a63c031014bedfb8826df9",
+      "sourceId": "AL-CIQUAL-2025",
+      "sourceFile": "docs/conteudo/evidencias/ciqual-2025.xlsx",
+      "sourceSha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0",
+      "receipt": "docs/conteudo/evidencias/ciqual-2025-windows.evidencia.json",
+      "receiptSha256": "682b132aa64c0ac6a85e6d50c577454205a26170703b19a485f2d5adb4267c53",
+      "sourceUrl": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666260",
+      "tables": 1,
+      "uniqueFoods": 3484,
+      "uniqueSourceCodes": 3484,
+      "tableRecords": 3484,
+      "identityConflicts": [],
+      "blankOrNamelessRows": 0,
+      "valueStates": {
+        "numeric": 155465,
+        "missing": 83246,
+        "less_than": 20075,
+        "trace": 2514
+      },
+      "columnsByTable": {
+        "composition nutritionnelle": [
+          {
+            "column": 10,
+            "header": "Energie,\nRèglement\nUE N°\n1169\n2011 (kJ\n100 g)"
+          },
+          {
+            "column": 11,
+            "header": "Energie,\nRèglement\nUE N°\n1169\n2011 (kcal\n100 g)"
+          },
+          {
+            "column": 12,
+            "header": "Energie, N x\nfacteur\nJones, avec\nfibres (kJ\n100 g)"
+          },
+          {
+            "column": 13,
+            "header": "Energie, N x\nfacteur\nJones, avec\nfibres (kcal\n100 g)"
+          },
+          {
+            "column": 14,
+            "header": "Eau\n(g\n100\ng)"
+          },
+          {
+            "column": 15,
+            "header": "Protéines,\nN x\nfacteur de\nJones (g\n100 g)"
+          },
+          {
+            "column": 16,
+            "header": "Protéines,\nN x 6.25\n(g\n100 g)"
+          },
+          {
+            "column": 17,
+            "header": "Glucides\n(g\n100 g)"
+          },
+          {
+            "column": 18,
+            "header": "Lipides\n(g\n100 g)"
+          },
+          {
+            "column": 19,
+            "header": "Sucres\n(g\n100 g)"
+          },
+          {
+            "column": 20,
+            "header": "Fructose\n(g\n100 g)"
+          },
+          {
+            "column": 21,
+            "header": "Galactose\n(g\n100 g)"
+          },
+          {
+            "column": 22,
+            "header": "Glucose\n(g\n100 g)"
+          },
+          {
+            "column": 23,
+            "header": "Lactose\n(g\n100 g)"
+          },
+          {
+            "column": 24,
+            "header": "Maltose\n(g\n100 g)"
+          },
+          {
+            "column": 25,
+            "header": "Saccharose\n(g\n100 g)"
+          },
+          {
+            "column": 26,
+            "header": "Amidon\n(g\n100 g)"
+          },
+          {
+            "column": 27,
+            "header": "Fibres\nalimentaires\n(g\n100 g)"
+          },
+          {
+            "column": 28,
+            "header": "Polyols\ntotaux\n(g\n100 g)"
+          },
+          {
+            "column": 29,
+            "header": "Cendres\n(g\n100 g)"
+          },
+          {
+            "column": 30,
+            "header": "Alcool\n(éthanol)\n(g\n100 g)"
+          },
+          {
+            "column": 31,
+            "header": "Acides\norganiques\n(g\n100 g)"
+          },
+          {
+            "column": 32,
+            "header": "AG\nsaturés\n(g\n100 g)"
+          },
+          {
+            "column": 33,
+            "header": "AG\nmonoinsaturés\n(g\n100 g)"
+          },
+          {
+            "column": 34,
+            "header": "AG\npolyinsaturés\n(g\n100 g)"
+          },
+          {
+            "column": 35,
+            "header": "AG 4:0,\nbutyrique\n(g\n100 g)"
+          },
+          {
+            "column": 36,
+            "header": "AG 6:0,\ncaproïque\n(g\n100 g)"
+          },
+          {
+            "column": 37,
+            "header": "AG 8:0,\ncaprylique\n(g\n100 g)"
+          },
+          {
+            "column": 38,
+            "header": "AG 10:0,\ncaprique\n(g\n100 g)"
+          },
+          {
+            "column": 39,
+            "header": "AG\n12:0,\nlaurique\n(g\n100 g)"
+          },
+          {
+            "column": 40,
+            "header": "AG 14:0,\nmyristique\n(g\n100 g)"
+          },
+          {
+            "column": 41,
+            "header": "AG 16:0,\npalmitique\n(g\n100 g)"
+          },
+          {
+            "column": 42,
+            "header": "AG 18:0,\nstéarique\n(g\n100 g)"
+          },
+          {
+            "column": 43,
+            "header": "AG 18:1\n9c (n-9),\noléique\n(g\n100 g)"
+          },
+          {
+            "column": 44,
+            "header": "AG 18:2\n9c,12c\n(n-6),\nlinoléique\n(g\n100 g)"
+          },
+          {
+            "column": 45,
+            "header": "AG 18:3\nc9,c12,c15 (n-3),\nalpha-linolénique\n(g\n100 g)"
+          },
+          {
+            "column": 46,
+            "header": "AG 20:4\n5c,8c,11c,14c\n(n-6),\narachidonique\n(g\n100 g)"
+          },
+          {
+            "column": 47,
+            "header": "AG 20:5\n5c,8c,11c,14c,17c\n(n-3) EPA (g\n100 g)"
+          },
+          {
+            "column": 48,
+            "header": "AG 22:6\n4c,7c,10c,13c,16c,19c\n(n-3) DHA (g\n100 g)"
+          },
+          {
+            "column": 49,
+            "header": "Cholestérol\n(mg\n100 g)"
+          },
+          {
+            "column": 50,
+            "header": "Sel\nchlorure\nde\nsodium\n(g\n100 g)"
+          },
+          {
+            "column": 51,
+            "header": "Calcium\n(mg\n100 g)"
+          },
+          {
+            "column": 52,
+            "header": "Chlorure\n(mg\n100 g)"
+          },
+          {
+            "column": 53,
+            "header": "Cuivre\n(mg\n100 g)"
+          },
+          {
+            "column": 54,
+            "header": "Fer (mg\n100 g)"
+          },
+          {
+            "column": 55,
+            "header": "Iode\n(µg\n100 g)"
+          },
+          {
+            "column": 56,
+            "header": "Magnésium\n(mg\n100 g)"
+          },
+          {
+            "column": 57,
+            "header": "Manganèse\n(mg\n100 g)"
+          },
+          {
+            "column": 58,
+            "header": "Phosphore\n(mg\n100 g)"
+          },
+          {
+            "column": 59,
+            "header": "Potassium\n(mg\n100 g)"
+          },
+          {
+            "column": 60,
+            "header": "Sélénium\n(µg\n100 g)"
+          },
+          {
+            "column": 61,
+            "header": "Sodium\n(mg\n100 g)"
+          },
+          {
+            "column": 62,
+            "header": "Zinc\n(mg\n100 g)"
+          },
+          {
+            "column": 63,
+            "header": "Activité\nvitaminique\nA,\néquivalents\nrétinol (µg\n100 g)"
+          },
+          {
+            "column": 64,
+            "header": "Rétinol\n(µg\n100 g)"
+          },
+          {
+            "column": 65,
+            "header": "Beta-Carotène\n(µg\n100 g)"
+          },
+          {
+            "column": 66,
+            "header": "Vitamine\nD (µg\n100 g)"
+          },
+          {
+            "column": 67,
+            "header": "Vitamine D2\n(ergocalciférol)\n(µg\n100 g)"
+          },
+          {
+            "column": 68,
+            "header": "Vitamine D3\n(cholécalciférol)\n(µg\n100 g)"
+          },
+          {
+            "column": 69,
+            "header": "Alpha-tocophérol\n(vitamine E) (mg\n100 g)"
+          },
+          {
+            "column": 70,
+            "header": "Vitamine\nE (mg\n100 g)"
+          },
+          {
+            "column": 71,
+            "header": "Vitamine\nK1 (µg\n100 g)"
+          },
+          {
+            "column": 72,
+            "header": "Vitamine\nK2 (µg\n100 g)"
+          },
+          {
+            "column": 73,
+            "header": "Vitamine\nC (mg\n100 g)"
+          },
+          {
+            "column": 74,
+            "header": "Vitamine\nB1 ou\nThiamine\n(mg\n100 g)"
+          },
+          {
+            "column": 75,
+            "header": "Vitamine\nB2 ou\nRiboflavine\n(mg\n100 g)"
+          },
+          {
+            "column": 76,
+            "header": "Vitamine\nB3 ou PP\nou\nNiacine\n(mg\n100 g)"
+          },
+          {
+            "column": 77,
+            "header": "Vitamine B5\nou Acide\npantothénique\n(mg\n100 g)"
+          },
+          {
+            "column": 78,
+            "header": "Vitamine\nB6 (mg\n100 g)"
+          },
+          {
+            "column": 79,
+            "header": "Vitamine B9 ou\nFolates totaux,\néquivalents folates\nalimentaires, DFE (µg\n100 g)"
+          },
+          {
+            "column": 80,
+            "header": "Vitamine\nB9 ou\nFolates\ntotaux (µg\n100 g)"
+          },
+          {
+            "column": 81,
+            "header": "Folates\nintrinsèques\n(µg\n100 g)"
+          },
+          {
+            "column": 82,
+            "header": "Acide folique\n(enrichissement)\n(µg\n100 g)"
+          },
+          {
+            "column": 83,
+            "header": "Vitamine\nB12 (µg\n100 g)"
+          },
+          {
+            "column": 84,
+            "header": "Facteur\nde\nJones"
+          }
+        ]
+      },
+      "credits": "Anses, Table Ciqual2025, doi:10.57745/RDMHWY, Licence Ouverte Etalab2.0",
+      "originalLabelsPreserved": true,
+      "portugueseTranslationReviewed": false,
+      "runtimeApproved": 0
+    },
+    {
+      "path": "content/local/al-cofid-2021-foods.jsonl",
+      "sha256": "a844941779930f64def3efc08ef88d3f7c550a7801979e661c0ef97d44b02708",
+      "sourceId": "AL-COFID-2021",
+      "sourceFile": "docs/conteudo/evidencias/cofid-2021.xlsx",
+      "sourceSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "receipt": "docs/conteudo/evidencias/cofid-2021.evidencia.json",
+      "receiptSha256": "fabc19492cb65ed666c2f43e6ad6b5e6eba518647d60f7d44c4e768ccd63562c",
+      "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+      "tables": 13,
+      "uniqueFoods": 2887,
+      "uniqueSourceCodes": 2886,
+      "tableRecords": 37531,
+      "identityConflicts": [
+        {
+          "sheet": "1.2 Factors",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.3 Proximates",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.4 Inorganics",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.5 Vitamins",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.6 Vitamin Fractions",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.7 (SFA per 100gFA)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.8 (SFA per 100gFood)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.9 (MUFA per 100FA)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.10 (MUFA per 100gFood)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.11 (PUFA per 100gFA)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.12 (PUFA per 100gFood)",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.13 Phytosterols",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        },
+        {
+          "sheet": "1.14 Organic Acids",
+          "sourceFoodId": "13-669",
+          "rowsAndNames": [
+            [
+              55,
+              "Aubergine, flesh and skin, roasted in rapeseed oil"
+            ],
+            [
+              2827,
+              "Watercress, raw"
+            ]
+          ]
+        }
+      ],
+      "blankOrNamelessRows": 0,
+      "valueStates": {
+        "present_quantity_unknown": 11967,
+        "missing": 568020,
+        "numeric": 198132,
+        "trace": 30226,
+        "unparsed": 15
+      },
+      "columnsByTable": {
+        "1.2 Factors": [
+          {
+            "column": 8,
+            "header": "Edible proportion"
+          },
+          {
+            "column": 9,
+            "header": "Specific gravity"
+          },
+          {
+            "column": 10,
+            "header": "Total solids"
+          },
+          {
+            "column": 11,
+            "header": "Nitrogen conversion factor "
+          },
+          {
+            "column": 12,
+            "header": "Glycerol conversion factor"
+          }
+        ],
+        "1.3 Proximates": [
+          {
+            "column": 8,
+            "header": "Water (g)"
+          },
+          {
+            "column": 9,
+            "header": "Total nitrogen (g)"
+          },
+          {
+            "column": 10,
+            "header": "Protein (g)"
+          },
+          {
+            "column": 11,
+            "header": "Fat (g)"
+          },
+          {
+            "column": 12,
+            "header": "Carbohydrate (g)"
+          },
+          {
+            "column": 13,
+            "header": "Energy (kcal) (kcal)"
+          },
+          {
+            "column": 14,
+            "header": "Energy (kJ) (kJ)"
+          },
+          {
+            "column": 15,
+            "header": "Starch (g)"
+          },
+          {
+            "column": 16,
+            "header": "Oligosaccharide (g)"
+          },
+          {
+            "column": 17,
+            "header": "Total sugars (g)"
+          },
+          {
+            "column": 18,
+            "header": "Glucose (g)"
+          },
+          {
+            "column": 19,
+            "header": "Galactose (g)"
+          },
+          {
+            "column": 20,
+            "header": "Fructose (g)"
+          },
+          {
+            "column": 21,
+            "header": "Sucrose (g)"
+          },
+          {
+            "column": 22,
+            "header": "Maltose (g)"
+          },
+          {
+            "column": 23,
+            "header": "Lactose (g)"
+          },
+          {
+            "column": 24,
+            "header": "Alcohol (g)"
+          },
+          {
+            "column": 25,
+            "header": "NSP (g)"
+          },
+          {
+            "column": 26,
+            "header": "AOAC fibre (g)"
+          },
+          {
+            "column": 27,
+            "header": "Satd FA /100g FA (g)"
+          },
+          {
+            "column": 28,
+            "header": "Satd FA /100g fd (g)"
+          },
+          {
+            "column": 29,
+            "header": "n-6 poly /100g FA (g)"
+          },
+          {
+            "column": 30,
+            "header": "n-6 poly /100g food (g)"
+          },
+          {
+            "column": 31,
+            "header": "n-3 poly /100g FA (g)"
+          },
+          {
+            "column": 32,
+            "header": "n-3 poly /100g food (g)"
+          },
+          {
+            "column": 33,
+            "header": "cis-Mono FA /100g FA (g)"
+          },
+          {
+            "column": 34,
+            "header": "cis-Mono FA /100g Food (g)"
+          },
+          {
+            "column": 35,
+            "header": "Mono FA/ 100g FA (g)"
+          },
+          {
+            "column": 36,
+            "header": "Mono FA /100g food (g)"
+          },
+          {
+            "column": 37,
+            "header": "cis-Polyu FA /100g FA (g)"
+          },
+          {
+            "column": 38,
+            "header": "cis-Poly FA /100g Food (g)"
+          },
+          {
+            "column": 39,
+            "header": "Poly FA /100g FA (g)"
+          },
+          {
+            "column": 40,
+            "header": "Poly FA /100g food (g)"
+          },
+          {
+            "column": 41,
+            "header": "Sat FA excl Br /100g FA (g)"
+          },
+          {
+            "column": 42,
+            "header": "Sat FA excl Br /100g food (g)"
+          },
+          {
+            "column": 43,
+            "header": "Branched chain FA /100g FA (g)"
+          },
+          {
+            "column": 44,
+            "header": "Branched chain FA /100g food (g)"
+          },
+          {
+            "column": 45,
+            "header": "Trans FAs /100g FA (g)"
+          },
+          {
+            "column": 46,
+            "header": "Trans FAs /100g food (g)"
+          },
+          {
+            "column": 47,
+            "header": "Cholesterol (mg)"
+          }
+        ],
+        "1.4 Inorganics": [
+          {
+            "column": 8,
+            "header": "Sodium (mg)"
+          },
+          {
+            "column": 9,
+            "header": "Potassium (mg)"
+          },
+          {
+            "column": 10,
+            "header": "Calcium (mg)"
+          },
+          {
+            "column": 11,
+            "header": "Magnesium (mg)"
+          },
+          {
+            "column": 12,
+            "header": "Phosphorus (mg)"
+          },
+          {
+            "column": 13,
+            "header": "Iron (mg)"
+          },
+          {
+            "column": 14,
+            "header": "Copper (mg)"
+          },
+          {
+            "column": 15,
+            "header": "Zinc (mg)"
+          },
+          {
+            "column": 16,
+            "header": "Chloride (mg)"
+          },
+          {
+            "column": 17,
+            "header": "Manganese (mg)"
+          },
+          {
+            "column": 18,
+            "header": "Selenium (µg)"
+          },
+          {
+            "column": 19,
+            "header": "Iodine (µg)"
+          }
+        ],
+        "1.5 Vitamins": [
+          {
+            "column": 8,
+            "header": "Retinol (µg)"
+          },
+          {
+            "column": 9,
+            "header": "Carotene (µg)"
+          },
+          {
+            "column": 10,
+            "header": "Retinol Equivalent (µg)"
+          },
+          {
+            "column": 11,
+            "header": "Vitamin D (µg)"
+          },
+          {
+            "column": 12,
+            "header": "Vitamin E (mg)"
+          },
+          {
+            "column": 13,
+            "header": "Vitamin K1 (µg)"
+          },
+          {
+            "column": 14,
+            "header": "Thiamin (mg)"
+          },
+          {
+            "column": 15,
+            "header": "Riboflavin (mg)"
+          },
+          {
+            "column": 16,
+            "header": "Niacin (mg)"
+          },
+          {
+            "column": 17,
+            "header": "Tryptophan/60 (mg)"
+          },
+          {
+            "column": 18,
+            "header": "Niacin equivalent (mg)"
+          },
+          {
+            "column": 19,
+            "header": "Vitamin B6 (mg)"
+          },
+          {
+            "column": 20,
+            "header": "Vitamin B12 (µg)"
+          },
+          {
+            "column": 21,
+            "header": "Folate (µg)"
+          },
+          {
+            "column": 22,
+            "header": "Pantothenate (mg)"
+          },
+          {
+            "column": 23,
+            "header": "Biotin (µg)"
+          },
+          {
+            "column": 24,
+            "header": "Vitamin C (mg)"
+          }
+        ],
+        "1.6 Vitamin Fractions": [
+          {
+            "column": 8,
+            "header": "All-trans-retinol (µg)"
+          },
+          {
+            "column": 9,
+            "header": "13-cis-retinol (µg)"
+          },
+          {
+            "column": 10,
+            "header": "Dehydroretinol (µg)"
+          },
+          {
+            "column": 11,
+            "header": "Retinaldehyde (µg)"
+          },
+          {
+            "column": 12,
+            "header": "Alpha-carotene (µg)"
+          },
+          {
+            "column": 13,
+            "header": "Beta-carotene (µg)"
+          },
+          {
+            "column": 14,
+            "header": "Cryptoxanthins (µg)"
+          },
+          {
+            "column": 15,
+            "header": "Lutein (µg)"
+          },
+          {
+            "column": 16,
+            "header": "Lycopene (µg)"
+          },
+          {
+            "column": 17,
+            "header": "25-hydroxy vitamin D3 (µg)"
+          },
+          {
+            "column": 18,
+            "header": "Cholecalciferol (µg)"
+          },
+          {
+            "column": 19,
+            "header": "5-mehtyl folate (µg)"
+          },
+          {
+            "column": 20,
+            "header": "Alpha-tocopherol (mg)"
+          },
+          {
+            "column": 21,
+            "header": "Beta-tocopherol (mg)"
+          },
+          {
+            "column": 22,
+            "header": "Delta-tocopherol (mg)"
+          },
+          {
+            "column": 23,
+            "header": "Gamma-tocopherol (mg)"
+          },
+          {
+            "column": 24,
+            "header": "Alpha-tocotrienol (mg)"
+          },
+          {
+            "column": 25,
+            "header": "Gamma-tocotrienol (mg)"
+          }
+        ],
+        "1.7 (SFA per 100gFA)": [
+          {
+            "column": 8,
+            "header": "C4:0 /100g FA (g)"
+          },
+          {
+            "column": 9,
+            "header": "C6:0 /100g FA (g)"
+          },
+          {
+            "column": 10,
+            "header": "C8:0 /100g FA (g)"
+          },
+          {
+            "column": 11,
+            "header": "C10:0 /100g FA (g)"
+          },
+          {
+            "column": 12,
+            "header": "C11:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 13,
+            "header": "C12:0 /100g FA (g)"
+          },
+          {
+            "column": 14,
+            "header": "C12:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 15,
+            "header": "C13:0 /100g FA (g)"
+          },
+          {
+            "column": 16,
+            "header": "C13:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 17,
+            "header": "C14:0 /100g FA (g)"
+          },
+          {
+            "column": 18,
+            "header": "C14:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 19,
+            "header": "C15:0 /100g FA (g)"
+          },
+          {
+            "column": 20,
+            "header": "C15:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 21,
+            "header": "C16:0 /100g FA (g)"
+          },
+          {
+            "column": 22,
+            "header": "C16:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 23,
+            "header": "C17:0 /100g FA (g)"
+          },
+          {
+            "column": 24,
+            "header": "C17:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 25,
+            "header": "C18:0 /100g FA (g)"
+          },
+          {
+            "column": 26,
+            "header": "C18:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 27,
+            "header": "C19:0 /100g FA (g)"
+          },
+          {
+            "column": 28,
+            "header": "C20:0 /100g FA (g)"
+          },
+          {
+            "column": 29,
+            "header": "C20:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 30,
+            "header": "C22:0 /100g FA (g)"
+          },
+          {
+            "column": 31,
+            "header": "C22:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 32,
+            "header": "C24:0 /100g FA (g)"
+          },
+          {
+            "column": 33,
+            "header": "C24:0 ex Br /100g FA (g)"
+          },
+          {
+            "column": 34,
+            "header": "C25:0 ex Br /100g FA (g)"
+          }
+        ],
+        "1.8 (SFA per 100gFood)": [
+          {
+            "column": 8,
+            "header": "C4:0 /100g food (g)"
+          },
+          {
+            "column": 9,
+            "header": "C6:0 /100g food (g)"
+          },
+          {
+            "column": 10,
+            "header": "C8:0 /100g food (g)"
+          },
+          {
+            "column": 11,
+            "header": "C10:0 /100g food (g)"
+          },
+          {
+            "column": 12,
+            "header": "C11:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 13,
+            "header": "C12:0 /100g food (g)"
+          },
+          {
+            "column": 14,
+            "header": "C12:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 15,
+            "header": "C13:0 /100g food (g)"
+          },
+          {
+            "column": 16,
+            "header": "C13:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 17,
+            "header": "C14:0 /100g food (g)"
+          },
+          {
+            "column": 18,
+            "header": "C14:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 19,
+            "header": "C15:0 /100g food (g)"
+          },
+          {
+            "column": 20,
+            "header": "C15:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 21,
+            "header": "C16:0 /100g food (g)"
+          },
+          {
+            "column": 22,
+            "header": "C16:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 23,
+            "header": "C17:0 /100g food (g)"
+          },
+          {
+            "column": 24,
+            "header": "C17:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 25,
+            "header": "C18:0 /100g food (g)"
+          },
+          {
+            "column": 26,
+            "header": "C18:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 27,
+            "header": "C19:0 /100g food (g)"
+          },
+          {
+            "column": 28,
+            "header": "C20:0 /100g food (g)"
+          },
+          {
+            "column": 29,
+            "header": "C20:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 30,
+            "header": "C22:0 /100g food (g)"
+          },
+          {
+            "column": 31,
+            "header": "C22:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 32,
+            "header": "C24:0 /100g food (g)"
+          },
+          {
+            "column": 33,
+            "header": "C24:0 ex Br /100g food (g)"
+          },
+          {
+            "column": 34,
+            "header": "C25:0 ex Br /100g food (g)"
+          }
+        ],
+        "1.9 (MUFA per 100FA)": [
+          {
+            "column": 8,
+            "header": "C10:1 /100g FA (g)"
+          },
+          {
+            "column": 9,
+            "header": "cis C10:1 /100g FA (g)"
+          },
+          {
+            "column": 10,
+            "header": "C12:1 /100g FA (g)"
+          },
+          {
+            "column": 11,
+            "header": "cis C12:1 /100g FA (g)"
+          },
+          {
+            "column": 12,
+            "header": "C14:1 /100g FA (g)"
+          },
+          {
+            "column": 13,
+            "header": "cis C14:1 /100g FA (g)"
+          },
+          {
+            "column": 14,
+            "header": "C15:1 /100g FA (g)"
+          },
+          {
+            "column": 15,
+            "header": "cis C15:1 /100g FA (g)"
+          },
+          {
+            "column": 16,
+            "header": "C16:1 /100g FA (g)"
+          },
+          {
+            "column": 17,
+            "header": "cis C16:1 /100g FA (g)"
+          },
+          {
+            "column": 18,
+            "header": "C17:1 /100g FA (g)"
+          },
+          {
+            "column": 19,
+            "header": "cis C17:1 /100g FA (g)"
+          },
+          {
+            "column": 20,
+            "header": "C18:1 /100g FA (g)"
+          },
+          {
+            "column": 21,
+            "header": "cis C18:1 /100g FA (g)"
+          },
+          {
+            "column": 22,
+            "header": "cis/trans C18:1n-9 /100g FA (g)"
+          },
+          {
+            "column": 23,
+            "header": "cis/trans C18:1n-7 /100g FA (g)"
+          },
+          {
+            "column": 24,
+            "header": "C20:1 /100g FA (g)"
+          },
+          {
+            "column": 25,
+            "header": "cis C20:1 /100g FA (g)"
+          },
+          {
+            "column": 26,
+            "header": "C22:1 /100g FA (g)"
+          },
+          {
+            "column": 27,
+            "header": "cis C22:1 /100g FA (g)"
+          },
+          {
+            "column": 28,
+            "header": "cis/trans C22:1n-11 /100g FA (g)"
+          },
+          {
+            "column": 29,
+            "header": "cis/trans C22:1n-9 /100g FA (g)"
+          },
+          {
+            "column": 30,
+            "header": "C24:1 /100g FA (g)"
+          },
+          {
+            "column": 31,
+            "header": "cis C24:1 /100g FA (g)"
+          },
+          {
+            "column": 32,
+            "header": "trans monounsaturated /100g FA (g)"
+          }
+        ],
+        "1.10 (MUFA per 100gFood)": [
+          {
+            "column": 8,
+            "header": "C10:1 /100g food (g)"
+          },
+          {
+            "column": 9,
+            "header": "cis C10:1 /100g food (g)"
+          },
+          {
+            "column": 10,
+            "header": "C12:1 /100g food (g)"
+          },
+          {
+            "column": 11,
+            "header": "cis C12:1 /100g food (g)"
+          },
+          {
+            "column": 12,
+            "header": "C14:1 /100g food (g)"
+          },
+          {
+            "column": 13,
+            "header": "cis C14:1 /100g food (g)"
+          },
+          {
+            "column": 14,
+            "header": "C15:1 /100g food (g)"
+          },
+          {
+            "column": 15,
+            "header": "cis C15:1 /100g food (g)"
+          },
+          {
+            "column": 16,
+            "header": "C16:1 /100g food (g)"
+          },
+          {
+            "column": 17,
+            "header": "cis C16:1 /100g food (g)"
+          },
+          {
+            "column": 18,
+            "header": "C17:1 /100g food (g)"
+          },
+          {
+            "column": 19,
+            "header": "cis C17:1 /100g food (g)"
+          },
+          {
+            "column": 20,
+            "header": "C18:1 /100g food (g)"
+          },
+          {
+            "column": 21,
+            "header": "cis C18:1 /100g food (g)"
+          },
+          {
+            "column": 22,
+            "header": "cis/trans C18:1n-9 /100g food (g)"
+          },
+          {
+            "column": 23,
+            "header": "cis/trans C18:1n-7 /100g food (g)"
+          },
+          {
+            "column": 24,
+            "header": "C20:1 /100g food (g)"
+          },
+          {
+            "column": 25,
+            "header": "cis C20:1 /100g food (g)"
+          },
+          {
+            "column": 26,
+            "header": "C22:1 /100g food (g)"
+          },
+          {
+            "column": 27,
+            "header": "cis C22:1 /100g food (g)"
+          },
+          {
+            "column": 28,
+            "header": "cis/trans C22:1n-11 /100g food (g)"
+          },
+          {
+            "column": 29,
+            "header": "cis/trans C22:1n-9 /100g food (g)"
+          },
+          {
+            "column": 30,
+            "header": "C24:1 /100g food (g)"
+          },
+          {
+            "column": 31,
+            "header": "cis C24:1 /100g food (g)"
+          },
+          {
+            "column": 32,
+            "header": "trans monounsaturated /100g food (g)"
+          }
+        ],
+        "1.11 (PUFA per 100gFA)": [
+          {
+            "column": 8,
+            "header": "C16:2 /100g FA (g)"
+          },
+          {
+            "column": 9,
+            "header": "cis C16:2 /100g FA (g)"
+          },
+          {
+            "column": 10,
+            "header": "cis C16:3 /100g FA (g)"
+          },
+          {
+            "column": 11,
+            "header": "C16:4 /100g FA (g)"
+          },
+          {
+            "column": 12,
+            "header": "cis C16:4 /100g FA (g)"
+          },
+          {
+            "column": 13,
+            "header": "unknown C16 poly /100g FA (g)"
+          },
+          {
+            "column": 14,
+            "header": "C18:2 /100g FA (g)"
+          },
+          {
+            "column": 15,
+            "header": "cis n-6 C18:2 /100g FA (g)"
+          },
+          {
+            "column": 16,
+            "header": "C18:3 /100g FA (g)"
+          },
+          {
+            "column": 17,
+            "header": "cis n-3 C18:3 /100g FA (g)"
+          },
+          {
+            "column": 18,
+            "header": "cis n-6 C18:3 /100g FA (g)"
+          },
+          {
+            "column": 19,
+            "header": "C18:4 /100g FA (g)"
+          },
+          {
+            "column": 20,
+            "header": "cis n-3 C18:4 /100g FA (g)"
+          },
+          {
+            "column": 21,
+            "header": "unknown C18 poly /100g FA (g)"
+          },
+          {
+            "column": 22,
+            "header": "C20:2 /100g FA (g)"
+          },
+          {
+            "column": 23,
+            "header": "cis n-6 C20:2 /100g FA (g)"
+          },
+          {
+            "column": 24,
+            "header": "C20:3 /100g FA (g)"
+          },
+          {
+            "column": 25,
+            "header": "cis n-6 C20:3 /100g FA (g)"
+          },
+          {
+            "column": 26,
+            "header": "C20:4 /100g FA (g)"
+          },
+          {
+            "column": 27,
+            "header": "cis n-6 C20:4 /100g FA (g)"
+          },
+          {
+            "column": 28,
+            "header": "C20:5 /100g FA (g)"
+          },
+          {
+            "column": 29,
+            "header": "cis n-3 C20:5 /100g FA (g)"
+          },
+          {
+            "column": 30,
+            "header": "unknown C20 poly /100 FA (g)"
+          },
+          {
+            "column": 31,
+            "header": "C21:5 /100g FA (g)"
+          },
+          {
+            "column": 32,
+            "header": "cis n-3 C21:5 /100g FA (g)"
+          },
+          {
+            "column": 33,
+            "header": "C22:2 /100g FA (g)"
+          },
+          {
+            "column": 34,
+            "header": "cis n-6 C22:2 /100g FA (g)"
+          },
+          {
+            "column": 35,
+            "header": "cis n-6 C22:3 /100g FA (g)"
+          },
+          {
+            "column": 36,
+            "header": "C22:4 /100g FA (g)"
+          },
+          {
+            "column": 37,
+            "header": "cis n-6 C22:4 /100g FA (g)"
+          },
+          {
+            "column": 38,
+            "header": "C22:5 /100g FA (g)"
+          },
+          {
+            "column": 39,
+            "header": "cis n-3 C22:5 /100g FA (g)"
+          },
+          {
+            "column": 40,
+            "header": "C22:6 /100g FA (g)"
+          },
+          {
+            "column": 41,
+            "header": "cis n-3 C22:6 /100g FA (g)"
+          },
+          {
+            "column": 42,
+            "header": "unknown C22 poly /100g FA (g)"
+          },
+          {
+            "column": 43,
+            "header": "trans poly /100g FA (g)"
+          }
+        ],
+        "1.12 (PUFA per 100gFood)": [
+          {
+            "column": 8,
+            "header": "C16:2 /100g food (g)"
+          },
+          {
+            "column": 9,
+            "header": "cis C16:2 /100g food (g)"
+          },
+          {
+            "column": 10,
+            "header": "C16:3 /100g food (g)"
+          },
+          {
+            "column": 11,
+            "header": "C16:4 /100g food (g)"
+          },
+          {
+            "column": 12,
+            "header": "cis C16:4 /100g food (g)"
+          },
+          {
+            "column": 13,
+            "header": "unknown C16 poly /100g food (g)"
+          },
+          {
+            "column": 14,
+            "header": "C18:2 /100g food (g)"
+          },
+          {
+            "column": 15,
+            "header": "cis n-6 C18:2 /100g food (g)"
+          },
+          {
+            "column": 16,
+            "header": "C18:3 /100g food (g)"
+          },
+          {
+            "column": 17,
+            "header": "cis n-3 C18:3 /100g food (g)"
+          },
+          {
+            "column": 18,
+            "header": "cis n-6 C18:3 /100g food (g)"
+          },
+          {
+            "column": 19,
+            "header": "C18:4 /100g food (g)"
+          },
+          {
+            "column": 20,
+            "header": "cis n-3 C18:4 /100g food (g)"
+          },
+          {
+            "column": 21,
+            "header": "unknown C18 poly /100g food (g)"
+          },
+          {
+            "column": 22,
+            "header": "C20:2 /100g food (g)"
+          },
+          {
+            "column": 23,
+            "header": "cis n-6 C20:2 /100g food (g)"
+          },
+          {
+            "column": 24,
+            "header": "C20:3 /100g food (g)"
+          },
+          {
+            "column": 25,
+            "header": "cis n-6 C20:3 /100g food (g)"
+          },
+          {
+            "column": 26,
+            "header": "C20:4 /100g food (g)"
+          },
+          {
+            "column": 27,
+            "header": "cis n-6 C20:4 /100g food (g)"
+          },
+          {
+            "column": 28,
+            "header": "C20:5 /100g food (g)"
+          },
+          {
+            "column": 29,
+            "header": "cis n-3 C20:5 /100g food (g)"
+          },
+          {
+            "column": 30,
+            "header": "unknown C20 poly /100g food (g)"
+          },
+          {
+            "column": 31,
+            "header": "C21:5 /100g food (g)"
+          },
+          {
+            "column": 32,
+            "header": "cis n-3 C21:5 /100g food (g)"
+          },
+          {
+            "column": 33,
+            "header": "C22:2 /100g food (g)"
+          },
+          {
+            "column": 34,
+            "header": "cis n-6 C22:2 /100g food (g)"
+          },
+          {
+            "column": 35,
+            "header": "cis n-6 C22:3 /100g food (g)"
+          },
+          {
+            "column": 36,
+            "header": "C22:4 /100g food (g)"
+          },
+          {
+            "column": 37,
+            "header": "cis n-6 C22:4 /100g food (g)"
+          },
+          {
+            "column": 38,
+            "header": "C22:5 /100g food (g)"
+          },
+          {
+            "column": 39,
+            "header": "cis n-3 C22:5 /100g food (g)"
+          },
+          {
+            "column": 40,
+            "header": "C22:6 /100g food (g)"
+          },
+          {
+            "column": 41,
+            "header": "cis n-3 C22:6 /100g food (g)"
+          },
+          {
+            "column": 42,
+            "header": "unknown C22 poly /100g food (g)"
+          },
+          {
+            "column": 43,
+            "header": "trans poly /100g food (g)"
+          }
+        ],
+        "1.13 Phytosterols": [
+          {
+            "column": 8,
+            "header": "Total Phytosterols (mg)"
+          },
+          {
+            "column": 9,
+            "header": "Other Cholesterol and Phytosterols (mg)"
+          },
+          {
+            "column": 10,
+            "header": "Phytosterol (mg)"
+          },
+          {
+            "column": 11,
+            "header": "Beta-sitosterol (mg)"
+          },
+          {
+            "column": 12,
+            "header": "Brassicasterol (mg)"
+          },
+          {
+            "column": 13,
+            "header": "Campesterol (mg)"
+          },
+          {
+            "column": 14,
+            "header": "Delta-5-avenasterol (mg)"
+          },
+          {
+            "column": 15,
+            "header": "Delta-7-avenasterol (mg)"
+          },
+          {
+            "column": 16,
+            "header": "Delta-7-stigmastenol (mg)"
+          },
+          {
+            "column": 17,
+            "header": "Stigmasterol (mg)"
+          }
+        ],
+        "1.14 Organic Acids": [
+          {
+            "column": 8,
+            "header": "Citric acid (g)"
+          },
+          {
+            "column": 9,
+            "header": "Malic acid (g)"
+          }
+        ]
+      },
+      "credits": "Public Health England, CoFID2021, Open Government Licence v3.0, excecoes aplicaveis",
+      "originalLabelsPreserved": true,
+      "portugueseTranslationReviewed": false,
+      "runtimeApproved": 0
+    }
+  ],
+  "programmeOrClinicalApproval": false,
+  "operationalApproval": false,
+  "toolInputs": [
+    {
+      "path": "tools/preparar_conteudo_local.py",
+      "sha256": "77787b77b4720af5ddc7baa7c28e26a16a92b3cab18a3da9fe8f6c546c708dc9"
+    },
+    {
+      "path": "tools/conteudo_editorial.py",
+      "sha256": "5440bb4b1252c9ceced3294557d34afc70363652154b70e0b880082440bcd4b3"
+    },
+    {
+      "path": "content/schemas/editorial-v1.schema.json",
+      "sha256": "29dd0d58aff060240aa4ffe31cda252c238e550fdc5e991c0abacb41543d0fc2"
+    }
+  ]
+}

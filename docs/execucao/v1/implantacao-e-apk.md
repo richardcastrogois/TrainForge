@@ -26,6 +26,8 @@ Fornecedor ainda **pendente**. Em031 comparar container Go+Postgres gerenciado c
 
 ## Roteiro que acompanhará o APK
 
+Conforme [direção do piloto](decisoes-piloto.md), entregar também APKs intermediários de avaliação ao longo do desenvolvimento, sem esperar todo o produto pronto. Cada build declara versão, ambiente, cenários habilitados, limitações e pendências. Usar a matriz completa do app para explorar um cenário de cada vez; ainda não implementado não pode aparentar funcionalidade. Os controles de assinatura, identidade/configuração, acesso e dados reais dos fluxos habilitados se aplicam também a esses checkpoints. Um APK intermediário não conclui as histórias de aceite integral/distribuição da V1.
+
 Instruções finais dependem da versão/aparelho Android da testadora. Usar o arquivo/link fornecido; ao abrir o APK, se o Android bloquear, permitir **somente a origem usada para esse arquivo** nas configurações exibidas e retirar essa permissão depois da instalação. Não orientar desativar proteções gerais nem contornar bloqueio de segurança.
 
 Informar versão, checksum, conta própria para login e finalidade dos dados. Testar: abrir→entrar→ver biblioteca e origem→consultar item permitido→registrar ação real→ver histórico→registrar alimento real→fechar/reabrir→logout. Não executar material que exija apoio/condições não presentes. Feedback: tela/ação, esperado, ocorrido, versão e requestId se houver; sem token, fotografia pessoal ou dados de saúde em log compartilhado.
