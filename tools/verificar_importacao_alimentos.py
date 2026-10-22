@@ -49,7 +49,10 @@ def fixtures():
     return {"scope": "isolated-food-import-postgresql-fixtures", "temporaryDatabaseRemoved": True,
             "deliveredDataUnchanged": True, "idempotencyVerified": True,
             "partialFailureRolledBack": True, "immutableVersionTamperRejected": True,
-            "runtimeEditorialWritesDenied": True, "realGoogleLoginValidated": False}
+            "runtimeEditorialWritesDenied": True,
+            "publicReadVisibilityVerified": True, "privateAndUnreviewedRowsExcluded": True,
+            "withdrawalOverridesETagVerified": True, "latestCannotReviveOlderVersion": True,
+            "literalSearchAndFilterBoundCursorVerified": True, "realGoogleLoginValidated": False}
 
 
 if __name__ == "__main__":

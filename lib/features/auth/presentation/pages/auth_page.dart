@@ -1,3 +1,4 @@
+import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:trainforge/shared/widgets/auth_gate.dart';
 import 'package:flutter/material.dart';
@@ -52,6 +53,20 @@ class AuthPage extends StatelessWidget {
                           ),
                     icon: const Icon(Icons.library_books_outlined),
                     label: const Text('Consultar biblioteca sem entrar'),
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: controller.busy
+                        ? null
+                        : () => Navigator.push(
+                            context,
+                            MaterialPageRoute<void>(
+                              builder: (_) => const FoodPage(),
+                            ),
+                          ),
+                    icon: const Icon(Icons.restaurant_outlined),
+                    label: const Text(
+                      'Consultar alimentos sem registrar consumo',
+                    ),
                   ),
                   if (controller.message != null) ...[
                     const SizedBox(height: 16),

@@ -48,10 +48,10 @@
     "semantic_hash": "fd8f8870f4582e72c0112bb4dd2c85b0"
   },
   "features/auth/presentation/pages/auth_page.dart": {
-    "mtime": 1792666506.142254,
-    "seen": 1792668636.5828886,
-    "ast_hash": "a97e7e7b76e13ec5da88c5ec7a8ace84",
-    "semantic_hash": "a97e7e7b76e13ec5da88c5ec7a8ace84"
+    "mtime": 1792708449.0478556,
+    "seen": 1792708663.8085961,
+    "ast_hash": "07eb3e9feeb4579e55d44971ff8b96a8",
+    "semantic_hash": "07eb3e9feeb4579e55d44971ff8b96a8"
   },
   "features/bootstrap/data/bootstrap_api.dart": {
     "mtime": 1773713767.17842,
@@ -246,10 +246,10 @@
     "semantic_hash": "0cc846d5cbfb1619aebf2e2b507ca928"
   },
   "shared/widgets/auth_gate.dart": {
-    "mtime": 1792666581.0345972,
-    "seen": 1792668636.588427,
-    "ast_hash": "df6e31d58aa796158af3e0da433ea42f",
-    "semantic_hash": "df6e31d58aa796158af3e0da433ea42f"
+    "mtime": 1792708449.0515819,
+    "seen": 1792708663.8125985,
+    "ast_hash": "08cb50831449c5c091f41a51e3b669c4",
+    "semantic_hash": "08cb50831449c5c091f41a51e3b669c4"
   },
   "features/auth/data/session_refresh.dart": {
     "mtime": 1792664542.7549963,
@@ -298,5 +298,35 @@
     "seen": 1792668636.5828886,
     "ast_hash": "ee6c495a40e2fbd067ae1b717476b80a",
     "semantic_hash": "ee6c495a40e2fbd067ae1b717476b80a"
+  },
+  "features/food_reference/data/food_repository.dart": {
+    "mtime": 1792708571.4333544,
+    "seen": 1792708663.8096025,
+    "ast_hash": "de32e3d3175d0a58613e9cb54f5269a1",
+    "semantic_hash": "de32e3d3175d0a58613e9cb54f5269a1"
+  },
+  "features/food_reference/domain/food_reference.dart": {
+    "mtime": 1792709323.036203,
+    "seen": 1792709405.0151694,
+    "ast_hash": "c4e3e03b48a8e38e0a0eb57c200475e4",
+    "semantic_hash": "c4e3e03b48a8e38e0a0eb57c200475e4"
+  },
+  "features/food_reference/presentation/food_controller.dart": {
+    "mtime": 1792708903.533013,
+    "seen": 1792709271.4250586,
+    "ast_hash": "1a5f161790b90c3bc3afdbec28cb0797",
+    "semantic_hash": "1a5f161790b90c3bc3afdbec28cb0797"
+  },
+  "features/food_reference/presentation/food_detail_page.dart": {
+    "mtime": 1792709323.043404,
+    "seen": 1792709405.0151694,
+    "ast_hash": "8333a6238d2d5883b36acae8b5dd6ee7",
+    "semantic_hash": "8333a6238d2d5883b36acae8b5dd6ee7"
+  },
+  "features/food_reference/presentation/food_page.dart": {
+    "mtime": 1792709323.04017,
+    "seen": 1792709405.0151694,
+    "ast_hash": "62384e0159f2a41e46863b49349e3c13",
+    "semantic_hash": "62384e0159f2a41e46863b49349e3c13"
   }
 }

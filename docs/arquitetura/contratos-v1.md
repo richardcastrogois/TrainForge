@@ -1,6 +1,6 @@
 # Contratos da V1 — implementado e planejado
 
-**22/10:11operações reais no Swagger Go0.2.0: saúde, auth/google, refresh, logout, me e cinco leituras de catálogo. Demais rotas da tabela são propostas.** [Catálogo entregue](../execucao/v1/catalogo-consulta.md). [Sessão e OAuth](../execucao/v1/oauth-android.md). LoginGoogle Android real permanece gate de aceite, separado de fixtures. A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
+**22/10:14operações reais no Swagger Go0.3.0: saúde, auth/google, refresh, logout, me, cinco leituras de catálogo e três leituras alimentares. Demais rotas da tabela são propostas.** [Catálogo entregue](../execucao/v1/catalogo-consulta.md). [Sessão e OAuth](../execucao/v1/oauth-android.md). LoginGoogle Android real permanece gate de aceite, separado de fixtures. A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
 
 Decisão vigente: [Swagger por comentários e tipos Go](swagger-go.md). Os `contracts/generated/swagger-v1.json` e `.yaml` são derivados do gerador fixado, não um YAML editado em paralelo. A versão inicial proposta usa Swagger2.0; não apresentá-la como OpenAPI3.
 
@@ -26,7 +26,9 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 | Activity API: `POST /sessions/{id}/events` | `{type,occurredAt,payload}` + chave; unidade e estado tipados |200/201 evento e estado confirmado;403/404 recurso alheio conforme política consistente |
 | Activity API: `GET /history` | from, to, cursor, limit |200 eventos/sessões reais com versão, autor, timestamps e próximos itens |
 | Summary API: `GET /summary` | date, timezone |200 planejado/realizado separados, alimentação, métricas com origem; campos sem dado são null/ausentes conforme schema |
-| Nutrition API: `GET /foods` | q, preparation, cursor, limit |200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada |
+| **Real:** `GET /api/v1/foods` | q, sourceId, cursor, limit1–50 |200 referências revisadas, nomes/idiomas/base/fonte; ordenação porID; sem consumo |
+| **Real:** `GET /api/v1/foods/filters` | sem parâmetros |200 fontes/contagens e bases desconhecidas; somente registros públicos revisados |
+| **Real:** `GET /api/v1/foods/{id}` | versionId SHAopcional |200 versão/base/nutrientes com estados/atribuição;404 para retirada ou indisponível |
 | Nutrition API: `POST /foods` (cadastro próprio; revisar na008/020) | Nome, preparo, base/unidade e valores efetivamente informados + chave |201 alimento próprio versionado, origem informada pelo usuário e titular; não publica no catálogo editorial nem completa nutrientes ausentes |
 | Nutrition API: `POST /food-entries` | `{foodVersionId,quantity,unit,occurredAt,timezone}` + chave |201 consumo confirmado com cálculo rastreável;422 unidade não suportada |
 | Nutrition API: `GET/PATCH/DELETE /food-entries/{id}` | alteração confirmada ou exclusão |200/204, somente titular; edição recalcula usando versão e fatores declarados |
@@ -34,9 +36,9 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 
 Os DTOs/comentários e o Swagger gerado definem os campos/limites implementados; x-nullable registra os campos desconhecidos. Na leitura de catálogo a versão mais recente é escolhida antes da autorização; retirada/grants/revisão são consultados antes de304. Filtros não inferem ambiente/público/apoio e a projeção não inclui dose/unidades/instrução/mídia. Rotas futuras da tabela ainda exigem revisão antes de integrar o cliente. Não gerar Dart a partir desta tabela. Exemplos de schema/teste nunca serão seed ou fallback do app entregue.
 
-## Preparação alimentar sem rotaHTTP
+## Importação e consulta alimentar entregues
 
-V1-019 concluiu o lote autorizado de6369registros noDB: preflight candidato preservado (trainforge.food-staging/1), revisão porfonte/operação, projeção exata e importadorGo transacional. Fatores/FA separados, ausências/limites mantidos,2identidadesconflitantes excluídas e3basesdesconhecidas semescala. Ainda não é APIfoods/consumo. Não altera Swagger ou rotas entregues. [Contrato e evidência](../execucao/v1/alimentacao-importacao.md). Busca/cadastro privado/consumo continuam nas histórias dependentes.
+V1-019 concluiu o lote autorizado de6369registros noDB: preflight candidato preservado (trainforge.food-staging/1), revisão porfonte/operação, projeção exata e importadorGo transacional. Fatores/FA separados, ausências/limites mantidos,2identidadesconflitantes excluídas e3basesdesconhecidas semescala. A consultaHTTPGo e Flutter está implementada como preparação parcial020/025, com14operaçõesSwagger. Cadastro e consumo não foram entregues. [Contrato e evidência](../execucao/v1/alimentacao-importacao.md). [Consulta entregue e limites](../execucao/v1/alimentacao-consulta.md). Cadastro privado/consumo continuam nas histórias dependentes.
 
 ## Compatibilidade com o legado
 

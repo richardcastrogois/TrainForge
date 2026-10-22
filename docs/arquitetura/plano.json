@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — auth local, catálogoGo/Flutter e importação alimentarGo/DB entregues; Google real e APIs/Flutteralimentar pendentes",
+  "status": "PARCIAL REAL — auth local, catálogo e consulta alimentar Go/Flutter entregues; Google real e escrita privada pendentes",
   "nodes": [
     {
       "id": "user",
@@ -12,21 +12,21 @@
       "id": "ui",
       "label": "Telas Flutter",
       "layer": "Flutter",
-      "description": "Entrada/conta e biblioteca/detalhe de consulta implementados; contexto, adesão, atividade, histórico e alimentação ainda planejados.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
+      "description": "Entrada/conta, biblioteca/detalhe e alimentos/composição implementados; contexto, adesão, execução, histórico e consumo ainda planejados.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter; lib/features/food_reference"
     },
     {
       "id": "vm",
       "label": "ViewModels / controllers",
       "layer": "Flutter",
-      "description": "AuthController e CatalogController com repositories injetados, comandos/estado seguros; demais features ainda não migradas.",
+      "description": "AuthController, CatalogController e FoodController com repositories injetados, descarte de respostas antigas e erros seguros; demais features ainda não migradas.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "repos",
       "label": "Repositories / DTOs",
       "layer": "Flutter",
-      "description": "SessionRepository e CatalogRepository tipados; domínio sem Dio/widgets. Catálogo revalidado no servidor, sem cache eterno.",
+      "description": "Contratos tipados de sessão, catálogo e referência alimentar; leituras revalidadas. Cadastro/consumo privados futuros.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
@@ -59,17 +59,17 @@
     },
     {
       "id": "nutrition",
-      "label": "Nutrition Go: importação real / API futura",
+      "label": "Nutrition Go: importação e consulta reais",
       "layer": "API Go",
-      "description": "ImportadorGo de6369registros alimentares autorizados, com fonte/versão/estados/bases, idempotência e runtimeeditorialreadonly. Busca/cadastro/consumoHTTP pendentes.",
-      "evidence": "services/api/internal/nutrition; food-import-verification.json"
+      "description": "6369referências revisadas importadas e consultáveis por busca/fonte/cursor/detalhe/ETag; cadastro e consumo privados pendentes.",
+      "evidence": "services/api/internal/nutrition; food-read-verification.json; alimentacao-consulta.md"
     },
     {
       "id": "pg",
       "label": "PostgreSQL",
       "layer": "Dados",
       "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
-      "evidence": "services/api/migrations/00001–00004; etapa-02-fechamento.md e auth-local-verification.json"
+      "evidence": "services/api/migrations/00001–00006; auth-local-verification.json; food-import-verification.json; food-read-verification.json"
     },
     {
       "id": "manifest",
@@ -479,8 +479,8 @@
     {
       "method": "GET",
       "path": "/api/v1/foods",
-      "input": "q, preparation, cursor, limit",
-      "output": "200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada"
+      "input": "q (espaços normalizados), sourceId, cursor, limit1..50",
+      "output": "IMPLEMENTADO:200 referências públicas revisadas com nomes/idiomas/base/fonte;304 após verificar retirada;400/503. Sem consumo."
     },
     {
       "method": "POST",
@@ -523,6 +523,18 @@
       "path": "/api/v1/catalog/filters",
       "input": "Sem parâmetros",
       "output": "IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods/filters",
+      "input": "Sem parâmetros",
+      "output": "IMPLEMENTADO:fontes e contagens de registros visíveis, incluindo bases desconhecidas."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/foods/{id}",
+      "input": "versionId SHA256 opcional",
+      "output": "IMPLEMENTADO:composição original/estados/bases/créditos;304 revalidado;400/404/503."
     }
   ],
   "entities": [

@@ -5251,38 +5251,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_presentation_pages_auth_page",
-      "label": "auth_page.dart",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_authpage",
-      "label": "AuthPage",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_controller",
-      "label": "_controller",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "package_trainforge_features_catalog_presentation_catalog_page_dart",
       "label": "package:trainforge/features/catalog/presentation/catalog_page.dart",
       "file_type": "code",
@@ -5995,6 +5963,214 @@
       "_origin": "ast"
     },
     {
+      "id": "package_trainforge_features_auth_presentation_auth_controller_dart",
+      "label": "package:trainforge/features/auth/presentation/auth_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page",
+      "label": "auth_page.dart",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_authpage",
+      "label": "AuthPage",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_controller",
+      "label": "_controller",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "authcontroller",
+      "label": "AuthController?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_food_reference_presentation_food_page_dart",
+      "label": "package:trainforge/features/food_reference/presentation/food_page.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository",
+      "label": "food_repository.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_gofoodrepository",
+      "label": "GoFoodRepository",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_dio",
+      "label": "dio",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_public",
+      "label": "_public",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_data_food_repository_detail",
+      "label": "detail",
+      "file_type": "code",
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "domain_food_reference_dart",
+      "label": "../domain/food_reference.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_basisquantity",
+      "label": "String? basisQuantity,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_get",
+      "label": "String get",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_column_name_state",
+      "label": "String column, name, state,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_id",
+      "label": "String id,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "int_total",
+      "label": "int total,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_cursor_error",
+      "label": "String? cursor, error,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "timer",
+      "label": "Timer?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "dart_async",
+      "label": "dart:async",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "data_food_repository_dart",
+      "label": "../data/food_repository.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "food_controller_dart",
+      "label": "food_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "food_detail_page_dart",
+      "label": "food_detail_page.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_auth_gate",
       "label": "auth_gate.dart",
       "file_type": "code",
@@ -6059,10 +6235,554 @@
       "_origin": "ast"
     },
     {
-      "id": "package_trainforge_features_auth_presentation_auth_controller_dart",
-      "label": "package:trainforge/features/auth/presentation/auth_controller.dart",
+      "id": "features_food_reference_presentation_food_controller",
+      "label": "food_controller.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_foodcontroller",
+      "label": "FoodController",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "foodrepository",
+      "label": "FoodRepository",
       "file_type": "code",
       "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_items",
+      "label": "items",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "foodfacets",
+      "label": "FoodFacets?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_q",
+      "label": "q",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_moreerror",
+      "label": "moreError",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_generation",
+      "label": "_generation",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_more",
+      "label": "more",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference",
+      "label": "food_reference.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodsource",
+      "label": "FoodSource",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodreference",
+      "label": "FoodReference",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodnutrient",
+      "label": "FoodNutrient",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_fooddetaildata",
+      "label": "FoodDetailData",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodpagedata",
+      "label": "FoodPageData",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodsourcecount",
+      "label": "FoodSourceCount",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodfacets",
+      "label": "FoodFacets",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_foodrepository",
+      "label": "FoodRepository",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_conditions",
+      "label": "conditions",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_basisunit",
+      "label": "basisUnit",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_displayname",
+      "label": "displayName",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_basislabel",
+      "label": "basisLabel",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_languagelabel",
+      "label": "languageLabel",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_raw",
+      "label": "raw",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_declared",
+      "label": "declared",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_food",
+      "label": "food",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_nutrients",
+      "label": "nutrients",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_notice",
+      "label": "notice",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_items",
+      "label": "items",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_nextcursor",
+      "label": "nextCursor",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_count",
+      "label": "count",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_sources",
+      "label": "sources",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_unknownbasis",
+      "label": "unknownBasis",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_facets",
+      "label": "facets",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_domain_food_reference_detail",
+      "label": "detail",
+      "file_type": "code",
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page",
+      "label": "food_detail_page.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_fooddetailpage",
+      "label": "FoodDetailPage",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_fooddetailpagestate",
+      "label": "_FoodDetailPageState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_food",
+      "label": "food",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_result",
+      "label": "result",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_reload",
+      "label": "reload",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_detail_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page",
+      "label": "food_page.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_foodpage",
+      "label": "FoodPage",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_foodpagestate",
+      "label": "_FoodPageState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "foodcontroller",
+      "label": "FoodController?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_search",
+      "label": "search",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_debounce",
+      "label": "debounce",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_submit",
+      "label": "submit",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_message",
+      "label": "_message",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
       "source_location": null,
       "_origin": "ast"
     }
@@ -13256,118 +13976,6 @@
       "_origin": "ast"
     },
     {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_authpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_authpage",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_controller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_auth_controller_authcontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_build",
-      "target": "materialpageroute",
-      "relation": "navigates",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "route_object",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_shared_widgets_auth_gate_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "auth_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "features_catalog_data_catalog_repository",
       "target": "features_catalog_data_catalog_repository_gocatalogrepository",
       "relation": "defines",
@@ -14643,6 +15251,263 @@
       "_origin": "ast"
     },
     {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_authpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page_authpage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page_build",
+      "target": "materialpageroute",
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_object",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_food_reference_presentation_food_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_shared_widgets_auth_gate_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_gofoodrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository_gofoodrepository",
+      "target": "features_food_reference_domain_food_reference_foodrepository",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_dio",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "dio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_public",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "options_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_list",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "features_food_reference_data_food_repository_detail",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "package_trainforge_core_http_app_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_data_food_repository",
+      "target": "domain_food_reference_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/data/food_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "shared_widgets_auth_gate",
       "target": "shared_widgets_auth_gate_authgate",
       "relation": "defines",
@@ -14710,7 +15575,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "features_auth_presentation_auth_controller_authcontroller",
+      "target": "authcontroller",
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -14757,6 +15622,17 @@
       "source": "shared_widgets_auth_gate",
       "target": "shared_widgets_auth_gate_build",
       "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "package_trainforge_features_food_reference_presentation_food_page_dart",
+      "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/widgets/auth_gate.dart",
@@ -14815,6 +15691,1137 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_foodcontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller_foodcontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "foodrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_items",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "foodfacets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_q",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_moreerror",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "string_cursor_error",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_busy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_generation",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_load",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_more",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "features_food_reference_presentation_food_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "dart_convert",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_controller",
+      "target": "domain_food_reference_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodsource",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodreference",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodnutrient",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_fooddetaildata",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodpagedata",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodsourcecount",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodfacets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_conditions",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_basisunit",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "string_basisquantity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_source",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodsource",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_displayname",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "string_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_basislabel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_languagelabel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_raw",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "string_column_name_state",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_declared",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "map",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_food",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_foodreference",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_nutrients",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_notice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_items",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_nextcursor",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "string_id",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_count",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_sources",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_unknownbasis",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "int_total",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_list",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_facets",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_domain_food_reference",
+      "target": "features_food_reference_domain_food_reference_detail",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/domain/food_reference.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_fooddetailpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page_fooddetailpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_fooddetailpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page_fooddetailpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page_fooddetailpagestate",
+      "target": "features_food_reference_presentation_food_detail_page_fooddetailpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page_fooddetailpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_food",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_domain_food_reference_foodreference",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_domain_food_reference_foodrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_result",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_reload",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_presentation_food_detail_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "domain_food_reference_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_detail_page",
+      "target": "features_food_reference_domain_food_reference_fooddetaildata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_detail_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_foodpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_foodpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "features_food_reference_presentation_food_page_foodpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "foodcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_search",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_debounce",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "timer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_submit",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_message",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "data_food_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "food_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "food_detail_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast"

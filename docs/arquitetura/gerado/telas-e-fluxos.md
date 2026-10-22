@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
 
 ## Atual: referências entre widgets
 
@@ -11,51 +11,58 @@ flowchart LR
     node0["AuthPage"]
     node1["CatalogDetailPage"]
     node2["CatalogPage"]
-    node3["HomePage"]
-    node4["AiOnboardingPage"]
-    node5["ManualOnboardingPage"]
-    node6["OnboardingEntryPage"]
-    node7["ProfilePage"]
-    node8["StatsPage"]
-    node9["WorkoutDayPage"]
-    node10["WorkoutPlanPage"]
-    node11["WorkoutsPage"]
-    node12["AppShell"]
-    node13["AuthGate"]
+    node3["FoodDetailPage"]
+    node4["FoodPage"]
+    node5["HomePage"]
+    node6["AiOnboardingPage"]
+    node7["ManualOnboardingPage"]
+    node8["OnboardingEntryPage"]
+    node9["ProfilePage"]
+    node10["StatsPage"]
+    node11["WorkoutDayPage"]
+    node12["WorkoutPlanPage"]
+    node13["WorkoutsPage"]
+    node14["AppShell"]
+    node15["AuthGate"]
     node0 -->|"referencia widget"| node2
-    node0 -->|"referencia widget"| node13
+    node0 -->|"referencia widget"| node4
+    node0 -->|"referencia widget"| node15
     node2 -->|"referencia widget"| node1
-    node3 -->|"referencia widget"| node0
-    node3 -->|"referencia widget"| node9
-    node4 -->|"referencia widget"| node0
-    node4 -->|"referencia widget"| node13
+    node4 -->|"referencia widget"| node3
     node5 -->|"referencia widget"| node0
-    node5 -->|"referencia widget"| node13
+    node5 -->|"referencia widget"| node11
     node6 -->|"referencia widget"| node0
-    node6 -->|"referencia widget"| node4
-    node6 -->|"referencia widget"| node5
+    node6 -->|"referencia widget"| node15
     node7 -->|"referencia widget"| node0
+    node7 -->|"referencia widget"| node15
     node8 -->|"referencia widget"| node0
     node8 -->|"referencia widget"| node6
+    node8 -->|"referencia widget"| node7
     node9 -->|"referencia widget"| node0
     node10 -->|"referencia widget"| node0
-    node10 -->|"referencia widget"| node9
+    node10 -->|"referencia widget"| node8
     node11 -->|"referencia widget"| node0
-    node11 -->|"referencia widget"| node6
-    node11 -->|"referencia widget"| node10
-    node12 -->|"referencia widget"| node3
-    node12 -->|"referencia widget"| node7
-    node12 -->|"referencia widget"| node8
+    node12 -->|"referencia widget"| node0
     node12 -->|"referencia widget"| node11
     node13 -->|"referencia widget"| node0
-    node13 -->|"referencia widget"| node2
+    node13 -->|"referencia widget"| node8
+    node13 -->|"referencia widget"| node12
+    node14 -->|"referencia widget"| node5
+    node14 -->|"referencia widget"| node9
+    node14 -->|"referencia widget"| node10
+    node14 -->|"referencia widget"| node13
+    node15 -->|"referencia widget"| node0
+    node15 -->|"referencia widget"| node2
+    node15 -->|"referencia widget"| node4
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
-| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:6](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:7](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:62](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:7](../../../lib/features/catalog/presentation/catalog_page.dart) |
+| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:4](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
+| FoodPage | [lib/features/food_reference/presentation/food_page.dart:7](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
@@ -66,7 +73,7 @@ flowchart LR
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:7](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:8](../../../lib/shared/widgets/auth_gate.dart) |
 
 ## Chamadas usadas por cada feature
 
@@ -75,6 +82,7 @@ flowchart LR
 | auth | `POST /api/v1/auth/google`; `GET /api/v1/me`; `POST /api/v1/auth/logout` |
 | bootstrap | `GET /mobile/bootstrap` |
 | catalog | `GET /api/v1/catalog/${filters.kind}`; `GET /api/v1/catalog/filters`; `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` |
+| food_reference | `GET /api/v1/foods`; `GET /api/v1/foods/filters`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` |
 | home | `GET /mobile/home/$date` |
 | onboarding | `POST /mobile/onboarding/manual-plan`; `POST /mobile/onboarding/ai-plan` |
 | profile | `GET /mobile/profile`; `PUT /mobile/profile/train-data` |

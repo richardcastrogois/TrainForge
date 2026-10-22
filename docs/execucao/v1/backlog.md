@@ -639,7 +639,7 @@ Como usuário, quero registrar uma quantidade real e consultar o que consumi.
 
 Dependências: V1-019, V1-013, V1-008
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md
 
 Critérios de aceite:
 
@@ -662,7 +662,7 @@ Validação: Integração DB/API com alimento pesquisado; Conferir cálculo cont
 
 Entregas: API nutrition v1; Registro de consumo real
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: preparação parcial de busca pública de6369referências, filtros/fonte/cursor/detalhe/retirada/ETag entregue naAPI Go0.3.0. Status permanece todo e completionEvidence vazio: cadastro privado/consumo/cálculos/totais e dependências013/011 não concluídos. Ver alimentacao-consulta.md e food-read-verification.json.
 
 ## EP07 — Flutter e experiência da V1
 
@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
+Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo/alimentos somente consulta), testes isolados e APK0.1.2+3. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -802,7 +802,7 @@ Como usuário, quero consumir o lote alimentar real em uma refeição registrada
 
 Dependências: V1-020, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md
 
 Critérios de aceite:
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: consulta pública Flutter de alimentos/composição preparada noAPK0.1.2+3, sem login, com nomes/estados/bases/créditos originais. Status permanece todo e completionEvidence vazio: cadastro próprio, quantidade, refeição e histórico alimentar ainda pendentes. Ver alimentacao-consulta.md e avaliacao-android.md.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 

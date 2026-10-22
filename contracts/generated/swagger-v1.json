@@ -5,10 +5,10 @@
     ],
     "swagger": "2.0",
     "info": {
-        "description": "Local Google sessions and reviewed reference catalog. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.",
+        "description": "Local Google sessions, reviewed movement metadata and food composition references. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.",
         "title": "TrainForge API",
         "contact": {},
-        "version": "0.2.0"
+        "version": "0.3.0"
     },
     "basePath": "/",
     "paths": {
@@ -583,6 +583,158 @@
                 }
             }
         },
+        "/api/v1/foods": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Search reviewed food references",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes",
+                        "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact reviewed source ID",
+                        "name": "sourceId",
+                        "in": "query"
+                    },
+                    {
+                        "maximum": 50,
+                        "minimum": 1,
+                        "type": "integer",
+                        "default": 20,
+                        "description": "Page size",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Opaque cursor bound to search, source and page size",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.FoodPage"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/foods/filters": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Reviewed food sources and coverage",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.FoodFacets"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/foods/{id}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Reviewed food composition and attribution",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Source-derived food ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact SHA-256 version; latest by default",
+                        "name": "versionId",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.FoodDetail"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/health/live": {
             "get": {
                 "produces": [
@@ -1073,6 +1225,253 @@
             "type": "object",
             "properties": {
                 "status": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.Basis": {
+            "type": "object",
+            "properties": {
+                "quantity": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "unit": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "nutrition.Citation": {
+            "type": "object",
+            "properties": {
+                "attribution": {
+                    "type": "string"
+                },
+                "changes": {
+                    "type": "string"
+                },
+                "conditions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "licenseLabel": {
+                    "type": "string"
+                },
+                "licenseUrl": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "publishedAt": {
+                    "type": "string"
+                },
+                "publisher": {
+                    "type": "string"
+                },
+                "sourceUrl": {
+                    "type": "string"
+                },
+                "warrantyNotice": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.ColumnBasis": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "integer"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.FoodCell": {
+            "type": "object",
+            "properties": {
+                "basisQuantity": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "basisUnit": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "declaredColumnBasis": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/nutrition.ColumnBasis"
+                        }
+                    ],
+                    "x-nullable": true
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "rawText": {
+                    "type": "string"
+                },
+                "reasons": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "scalingAllowed": {
+                    "type": "boolean"
+                },
+                "sourceColumnKey": {
+                    "type": "string"
+                },
+                "sourceRowKey": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "upperBound": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "value": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "nutrition.FoodDetail": {
+            "type": "object",
+            "properties": {
+                "basis": {
+                    "$ref": "#/definitions/nutrition.Basis"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "nameLocale": {
+                    "type": "string"
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "notice": {
+                    "type": "string"
+                },
+                "nutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodCell"
+                    }
+                },
+                "source": {
+                    "$ref": "#/definitions/nutrition.Citation"
+                },
+                "sourceFoodId": {
+                    "type": "string"
+                },
+                "sourceId": {
+                    "type": "string"
+                },
+                "sourcePublishedVersion": {
+                    "type": "string"
+                },
+                "versionId": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.FoodFacets": {
+            "type": "object",
+            "properties": {
+                "sources": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodSourceCount"
+                    }
+                },
+                "total": {
+                    "type": "integer"
+                },
+                "unknownBasisCount": {
+                    "type": "integer"
+                }
+            }
+        },
+        "nutrition.FoodPage": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodSummary"
+                    }
+                },
+                "nextCursor": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "notice": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.FoodSourceCount": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nameLocale": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.FoodSummary": {
+            "type": "object",
+            "properties": {
+                "basis": {
+                    "$ref": "#/definitions/nutrition.Basis"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "nameLocale": {
+                    "type": "string"
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "source": {
+                    "$ref": "#/definitions/nutrition.Citation"
+                },
+                "sourceFoodId": {
+                    "type": "string"
+                },
+                "sourceId": {
+                    "type": "string"
+                },
+                "sourcePublishedVersion": {
+                    "type": "string"
+                },
+                "versionId": {
                     "type": "string"
                 }
             }

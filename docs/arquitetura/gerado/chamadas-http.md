@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 
@@ -15,6 +15,9 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /api/v1/catalog/${filters.kind}` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:23](../../../lib/features/catalog/data/catalog_repository.dart) |
 | `GET /api/v1/catalog/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:35](../../../lib/features/catalog/data/catalog_repository.dart) |
 | `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` | mode, versionId | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:44](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/foods` | cursor, limit, q, sourceId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:15](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:30](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /mobile/home/$date` | sem chaves literais detectadas | /mobile/home/:date / body=ausente/inline / query=ausente | {"200": "HomeDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/home/data/home_api.dart:11](../../../lib/features/home/data/home_api.dart) |
 | `POST /mobile/onboarding/manual-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/manual-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:19](../../../lib/features/onboarding/data/onboarding_api.dart) |
 | `POST /mobile/onboarding/ai-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/ai-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "504": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:50](../../../lib/features/onboarding/data/onboarding_api.dart) |
@@ -83,7 +86,7 @@ A tabela mistura implementação local explicitamente identificada e decisões f
 | POST | `/api/v1/sessions/{id}/events` | {type,occurredAt,payload} + chave; unidade e estado tipados | 200/201 evento e estado confirmado;403/404 recurso alheio conforme política consistente |
 | GET | `/api/v1/history` | from, to, cursor, limit | 200 eventos/sessões reais com versão, autor, timestamps e próximos itens |
 | GET | `/api/v1/summary` | date, timezone | 200 planejado/realizado separados, alimentação, métricas com origem; campos sem dado são null/ausentes conforme schema |
-| GET | `/api/v1/foods` | q, preparation, cursor, limit | 200 alimento/versão/preparo/base/nutrientes/fonte; paginação limitada |
+| GET | `/api/v1/foods` | q (espaços normalizados), sourceId, cursor, limit1..50 | IMPLEMENTADO:200 referências públicas revisadas com nomes/idiomas/base/fonte;304 após verificar retirada;400/503. Sem consumo. |
 | POST | `/api/v1/food-entries` | {foodVersionId,quantity,unit,occurredAt,timezone} + chave | 201 consumo confirmado com cálculo rastreável;422 unidade não suportada |
 | GET/PATCH/DELETE | `/api/v1/food-entries/{id}` | alteração confirmada ou exclusão | 200/204, somente titular; edição recalcula usando versão e fatores declarados |
 | GET | `/api/v1/health/live` | Sem dados pessoais | 200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno; implementado localmente, Swagger gerado |
@@ -91,5 +94,7 @@ A tabela mistura implementação local explicitamente identificada e decisões f
 | GET | `/api/v1/catalog/movements` | Mesmos filtros de programs | IMPLEMENTADO:73referências de movimento, nunca programa renomeado; paginação/ETag e metadados somente |
 | GET | `/api/v1/catalog/movements/{id}` | versionId SHA256 opcional, mode | IMPLEMENTADO:metadados da versão;404 se retirada/não autorizada; nenhum payload instrucional |
 | GET | `/api/v1/catalog/filters` | Sem parâmetros | IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência |
+| GET | `/api/v1/foods/filters` | Sem parâmetros | IMPLEMENTADO:fontes e contagens de registros visíveis, incluindo bases desconhecidas. |
+| GET | `/api/v1/foods/{id}` | versionId SHA256 opcional | IMPLEMENTADO:composição original/estados/bases/créditos;304 revalidado;400/404/503. |
 
 [Voltar ao mapa](../README.md) · [Contrato proposto completo](../contratos-v1.md)

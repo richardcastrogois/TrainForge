@@ -1,0 +1,27 @@
+{
+  "scope": "real-isolated-food-http-read",
+  "apiVersion": "0.3.0",
+  "swaggerOperations": 14,
+  "foodCount": 6369,
+  "sourceCounts": {
+    "AL-CIQUAL-2025": 3484,
+    "AL-COFID-2021": 2885
+  },
+  "pagesVerified": 128,
+  "pageWalkSeconds": 34.36,
+  "detailFieldsComparedToDatabase": true,
+  "sampleNutrientStates": {
+    "numeric": 88,
+    "less_than": 16,
+    "trace": 3,
+    "missing": 137,
+    "present_quantity_unknown": 7
+  },
+  "unknownBasisPreserved": true,
+  "filterBoundCursorVerified": true,
+  "etagVerified": true,
+  "accountsCreated": 0,
+  "consumptionEntriesCreated": 0,
+  "deliveredIdentityAndVersionsUnchanged": true,
+  "realGoogleLoginValidated": false
+}
