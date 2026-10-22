@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-22",
+  "scope": "reviewed-food-projection",
+  "sources": [
+    {
+      "sourceId": "AL-CIQUAL-2025",
+      "inputIdentities": 3484,
+      "importCandidates": 3484,
+      "excludedCodeConflict": 0,
+      "excludedConflictCells": 0,
+      "unknownGroupIdentities": 0,
+      "basisGrams": 3484,
+      "basisMillilitres": 0,
+      "nutrientCells": 257816,
+      "auxiliaryCellsExcluded": 3484,
+      "nutrientStates": {
+        "less_than": 20075,
+        "missing": 83246,
+        "numeric": 151981,
+        "trace": 2514
+      },
+      "scalingBlockedReasons": {
+        "no_exact_numeric_quantity": 105835
+      }
+    },
+    {
+      "sourceId": "AL-COFID-2021",
+      "inputIdentities": 2887,
+      "importCandidates": 2885,
+      "excludedCodeConflict": 2,
+      "excludedConflictCells": 560,
+      "unknownGroupIdentities": 3,
+      "basisGrams": 2851,
+      "basisMillilitres": 31,
+      "nutrientCells": 510645,
+      "auxiliaryCellsExcluded": 297155,
+      "nutrientStates": {
+        "missing": 317788,
+        "numeric": 157521,
+        "present_quantity_unknown": 11625,
+        "trace": 23697,
+        "unparsed": 14
+      },
+      "scalingBlockedReasons": {
+        "food_basis_unresolved": 531,
+        "no_exact_numeric_quantity": 353124,
+        "source_basis_declarations_conflict": 3038
+      }
+    }
+  ],
+  "outputSha256": "f3a62f54a3cb4d5b4ba755c795076288945bc0f8f628c6506cfb4b56dd353174",
+  "reviewSha256": "bfae494d96a7e4c8dcb8d72aa4fe5a6f15896b73aadeeadf1e3c37954fb0ca8c",
+  "approvedImportCandidates": 6369,
+  "databaseWrites": 0,
+  "runtimeFoodsImported": 0,
+  "clinicalApproval": false,
+  "otherFamilies": "Inventariadas no preflight, não aprovadas por herança destas duas fontes"
+}

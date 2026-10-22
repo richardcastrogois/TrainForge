@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — auth local e consultaGo/Flutter implementadas; preflight alimentar offline candidato; Google real e demais domínios pendentes",
+  "status": "PARCIAL REAL — auth local, catálogoGo/Flutter e importação alimentarGo/DB entregues; Google real e APIs/Flutteralimentar pendentes",
   "nodes": [
     {
       "id": "user",
@@ -59,10 +59,10 @@
     },
     {
       "id": "nutrition",
-      "label": "Módulo nutrition Go",
+      "label": "Nutrition Go: importação real / API futura",
       "layer": "API Go",
-      "description": "Base alimentar pesquisada ampla, cadastro próprio identificado e consumo confirmado; nutrientes ausentes preservados, sem prescrição automática.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "ImportadorGo de6369registros alimentares autorizados, com fonte/versão/estados/bases, idempotência e runtimeeditorialreadonly. Busca/cadastro/consumoHTTP pendentes.",
+      "evidence": "services/api/internal/nutrition; food-import-verification.json"
     },
     {
       "id": "pg",
@@ -126,6 +126,13 @@
       "layer": "Conteúdo",
       "description": "JSONL/planilhas/recibosCiqual/CoFID já coletados e auditados; candidatos, não alimentos aprovados para runtime.",
       "evidence": "content/manifests/pilot-prepared.json; content/local ignorado"
+    },
+    {
+      "id": "food_reviewed",
+      "label": "Lote alimentar revisado",
+      "layer": "Conteúdo",
+      "description": "6369registros de duas fontes, com grants/condições específicos; sem herdar aprovação para outrasfamílias.",
+      "evidence": "content/manifests/food-review-decisions.json; food-approved.json"
     }
   ],
   "edges": [
@@ -228,10 +235,10 @@
     {
       "from": "nutrition",
       "to": "pg",
-      "label": "Leitura / transação privada",
-      "input": "origem, versão, quantidade",
-      "output": "registro e nutrientes calculáveis, null preservado",
-      "evidence": "Contrato proposto, não chamada executada."
+      "label": "Importação real; CRUD privado futuro",
+      "input": "Fonte, versão, nutrientes/estados e proveniência revisados",
+      "output": "6369food_versions + lote;0consumos novos",
+      "evidence": "ImportadorGo real e backupnovo restaurado; APIprivada não implementada"
     },
     {
       "from": "manifest",
@@ -288,20 +295,37 @@
       "input": "Cabeçalhos/unidades e medidas com proveniência",
       "output": "Staginglocal+reciboagregado; runtime/cálculo false,0DB",
       "evidence": "tools/preparar_alimentos_v1.py;13testes isolados; sem importadorGo nesta fatia"
+    },
+    {
+      "from": "food_candidate",
+      "to": "food_reviewed",
+      "label": "Revisão explícita porfonte/uso",
+      "input": "Evidências de direitos, grupo/base, identidade e cabeçalhos",
+      "output": "Artifactversionado + exclusões/requisitos",
+      "evidence": "tools/revisar_alimentos_v1.py; food-review-verification.json"
+    },
+    {
+      "from": "food_reviewed",
+      "to": "nutrition",
+      "label": "CLIimportadorGo real",
+      "input": "ArtifactSHA + revisãoSHA + metadados + valores",
+      "output": "Transação/versões/lote; não consome por usuário",
+      "evidence": "services/api/cmd/import-food; food-import-verification.json"
     }
   ],
   "flows": [
     {
       "id": "food_preflight",
-      "title": "Preparação alimentar parcial real — V1-019",
-      "edgeLabel": "preflight offline, sem runtime",
+      "title": "Lote alimentar importado — V1-019",
+      "edgeLabel": "implementado e validado",
       "steps": [
-        "Manifestos/snapshots existentes",
-        "Hashes e cobertura conferidos",
-        "Estados/decimais e unidades preservados",
-        "Fatores/FA/conflitos separados",
-        "Staging local não aprovado + recibo",
-        "Gate pendente: direitos/base/identidade e importadorGo"
+        "Snapshots/recibos existentes",
+        "Preflight e proveniência por célula",
+        "Revisão específica de direitos/base/identidade",
+        "6369registros versionados /2excluídos",
+        "ImportaçãoGo idempotente noDBisolado",
+        "Backupnovo restaurado e tabelas iguais",
+        "Gate pendente: autorização/API/Flutteralimentar"
       ]
     },
     {

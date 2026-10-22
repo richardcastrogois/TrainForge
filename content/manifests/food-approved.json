@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "stage": "approved_food_consultation_operations",
+  "importScope": "isolated_development_food_consultation",
+  "bundleId": "TF-FOOD-20261022-v1",
+  "review": {
+    "path": "content/manifests/food-review-decisions.json",
+    "sha256": "bfae494d96a7e4c8dcb8d72aa4fe5a6f15896b73aadeeadf1e3c37954fb0ca8c"
+  },
+  "preflight": {
+    "path": "docs/execucao/v1/food-preflight-verification.json",
+    "sha256": "3c3ecd2d418a41a46f796ce4c5b77df06372239ea51840198fa45c92a82078e2"
+  },
+  "output": {
+    "path": "content/local/food-approved-v1.jsonl",
+    "sha256": "f3a62f54a3cb4d5b4ba755c795076288945bc0f8f628c6506cfb4b56dd353174",
+    "rows": 6369
+  },
+  "sourceResults": [
+    {
+      "sourceId": "AL-CIQUAL-2025",
+      "inputIdentities": 3484,
+      "importCandidates": 3484,
+      "excludedCodeConflict": 0,
+      "excludedConflictCells": 0,
+      "unknownGroupIdentities": 0,
+      "basisGrams": 3484,
+      "basisMillilitres": 0,
+      "nutrientCells": 257816,
+      "auxiliaryCellsExcluded": 3484,
+      "nutrientStates": {
+        "less_than": 20075,
+        "missing": 83246,
+        "numeric": 151981,
+        "trace": 2514
+      },
+      "scalingBlockedReasons": {
+        "no_exact_numeric_quantity": 105835
+      }
+    },
+    {
+      "sourceId": "AL-COFID-2021",
+      "inputIdentities": 2887,
+      "importCandidates": 2885,
+      "excludedCodeConflict": 2,
+      "excludedConflictCells": 560,
+      "unknownGroupIdentities": 3,
+      "basisGrams": 2851,
+      "basisMillilitres": 31,
+      "nutrientCells": 510645,
+      "auxiliaryCellsExcluded": 297155,
+      "nutrientStates": {
+        "missing": 317788,
+        "numeric": 157521,
+        "present_quantity_unknown": 11625,
+        "trace": 23697,
+        "unparsed": 14
+      },
+      "scalingBlockedReasons": {
+        "food_basis_unresolved": 531,
+        "no_exact_numeric_quantity": 353124,
+        "source_basis_declarations_conflict": 3038
+      }
+    }
+  ],
+  "clinicalApproval": false
+}

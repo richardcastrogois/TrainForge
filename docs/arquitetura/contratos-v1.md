@@ -36,7 +36,7 @@ Os DTOs/comentários e o Swagger gerado definem os campos/limites implementados;
 
 ## Preparação alimentar sem rotaHTTP
 
-V1-019 possui agora preflight candidato offline (contrato trainforge.food-staging/1), não uma API foods implementada. Preserva estados/decimais/unidades/denominadores/fatores e identidades dos snapshots já existentes; todas as flags de importação/cálculo seguemfalse. Não altera Swagger ou rotas entregues. [Contrato e evidência](../execucao/v1/alimentacao-preflight.md). Busca/cadastro privado/consumo continuam nas histórias dependentes.
+V1-019 concluiu o lote autorizado de6369registros noDB: preflight candidato preservado (trainforge.food-staging/1), revisão porfonte/operação, projeção exata e importadorGo transacional. Fatores/FA separados, ausências/limites mantidos,2identidadesconflitantes excluídas e3basesdesconhecidas semescala. Ainda não é APIfoods/consumo. Não altera Swagger ou rotas entregues. [Contrato e evidência](../execucao/v1/alimentacao-importacao.md). Busca/cadastro privado/consumo continuam nas histórias dependentes.
 
 ## Compatibilidade com o legado
 

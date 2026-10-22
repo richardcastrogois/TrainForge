@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
 
 ## Referência atual: schema Prisma externo
 
@@ -290,6 +290,9 @@ Declaração SQL não prova aplicação no banco; o resultado runtime está em d
 | food_entries | [services/api/migrations/00001_core.sql:169](../../../services/api/migrations/00001_core.sql) |
 | program_sessions | [services/api/migrations/00003_prescribed_sessions.sql:3](../../../services/api/migrations/00003_prescribed_sessions.sql) |
 | access_tokens | [services/api/migrations/00004_access_tokens.sql:3](../../../services/api/migrations/00004_access_tokens.sql) |
+| food_import_batches | [services/api/migrations/00005_food_catalog_import.sql:9](../../../services/api/migrations/00005_food_catalog_import.sql) |
+| food_batch_versions | [services/api/migrations/00005_food_catalog_import.sql:17](../../../services/api/migrations/00005_food_catalog_import.sql) |
+| food_withdrawals | [services/api/migrations/00005_food_catalog_import.sql:24](../../../services/api/migrations/00005_food_catalog_import.sql) |
 
 ## Proposto: responsabilidades do domínio novo
 

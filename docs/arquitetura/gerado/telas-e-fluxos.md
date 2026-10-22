@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
 
 ## Atual: referências entre widgets
 
@@ -83,21 +83,23 @@ flowchart LR
 
 ## Planejado: jornadas da V1
 
-### Preparação alimentar parcial real — V1-019
+### Lote alimentar importado — V1-019
 
 ```mermaid
 flowchart LR
-    node0["Manifestos/snapshots existentes"]
-    node1["Hashes e cobertura conferidos"]
-    node2["Estados/decimais e unidades preservados"]
-    node3["Fatores/FA/conflitos separados"]
-    node4["Staging local não aprovado + recibo"]
-    node5["Gate pendente: direitos/base/identidade e importadorGo"]
-    node0 -->|"preflight offline, sem runtime"| node1
-    node1 -->|"preflight offline, sem runtime"| node2
-    node2 -->|"preflight offline, sem runtime"| node3
-    node3 -->|"preflight offline, sem runtime"| node4
-    node4 -->|"preflight offline, sem runtime"| node5
+    node0["Snapshots/recibos existentes"]
+    node1["Preflight e proveniência por célula"]
+    node2["Revisão específica de direitos/base/identidade"]
+    node3["6369registros versionados /2excluídos"]
+    node4["ImportaçãoGo idempotente noDBisolado"]
+    node5["Backupnovo restaurado e tabelas iguais"]
+    node6["Gate pendente: autorização/API/Flutteralimentar"]
+    node0 -->|"implementado e validado"| node1
+    node1 -->|"implementado e validado"| node2
+    node2 -->|"implementado e validado"| node3
+    node3 -->|"implementado e validado"| node4
+    node4 -->|"implementado e validado"| node5
+    node5 -->|"implementado e validado"| node6
 ```
 ### Consulta real entregue — V1-014
 

@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -10,7 +10,7 @@
 | --- | --- |
 | Flutter neste clone | 50 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
-| Go neste clone | 20 arquivos Go de aplicação; 12 registros net/http detectados |
+| Go neste clone | 24 arquivos Go de aplicação; 12 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
 | Conteúdo | Pesquisa concluída nos recortes; publicação/prática/direitos continuam por item |
 
@@ -45,7 +45,7 @@ flowchart LR
     node5["Módulo auth Go"]
     node6["Módulo catalog Go"]
     node7["Módulo activity Go"]
-    node8["Módulo nutrition Go"]
+    node8["Nutrition Go: importação real / API futura"]
     node9["PostgreSQL"]
     node10["Manifestos revisados"]
     node11["Importador Go"]
@@ -55,6 +55,7 @@ flowchart LR
     node15["Preflight alimentar offline"]
     node16["Staging alimentar candidato"]
     node17["Snapshots alimentares preparados"]
+    node18["Lote alimentar revisado"]
     node0 -->|"Ações e dados confirmados"| node1
     node1 -->|"Comando tipado"| node2
     node2 -->|"Método de domínio"| node3
@@ -67,7 +68,7 @@ flowchart LR
     node4 -->|"GET/POST foods; POST food-entries"| node8
     node6 -->|"SELECT projetado e paginado"| node9
     node7 -->|"Transação por ocorrência"| node9
-    node8 -->|"Leitura / transação privada"| node9
+    node8 -->|"Importação real; CRUD privado futuro"| node9
     node10 -->|"Arquivo validado"| node11
     node11 -->|"Transação idempotente"| node9
     node6 -->|"Entrega futura, ainda indisponível"| node12
@@ -75,6 +76,8 @@ flowchart LR
     node7 -->|"Telemetria redigida"| node13
     node17 -->|"Snapshots preparados e hashes"| node15
     node15 -->|"Candidato sem aprovação"| node16
+    node16 -->|"Revisão explícita porfonte/uso"| node18
+    node18 -->|"CLIimportadorGo real"| node8
 ```
 
 A proposta Go não vira código atual por estar no desenho. Detalhes, camadas e limites de capacidade estão nos documentos revisados.

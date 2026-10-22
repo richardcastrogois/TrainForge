@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f34ff62ae27a35a0`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c4ffb705d2d21912`.
 
-Arquivos Go de aplicação encontrados: **20**. Registros net/http literais: **12**.
+Arquivos Go de aplicação encontrados: **24**. Registros net/http literais: **12**.
 
 ## Pacotes Go e imports atuais
 
@@ -12,27 +12,30 @@ Setas são imports estáticos; não são chamadas HTTP nem traces de execução.
 flowchart LR
     node0["cmd/api"]
     node1["cmd/import-content"]
-    node2["cmd/migrate"]
-    node3["internal/activity"]
-    node4["internal/auth"]
-    node5["internal/catalog"]
-    node6["internal/nutrition"]
-    node7["internal/platform/config"]
-    node8["internal/platform/httpapi"]
-    node9["internal/platform/postgres"]
-    node10["internal/swaggerdocs"]
-    node11["migrations"]
-    node0 -->|"import"| node4
+    node2["cmd/import-food"]
+    node3["cmd/migrate"]
+    node4["internal/activity"]
+    node5["internal/auth"]
+    node6["internal/catalog"]
+    node7["internal/nutrition"]
+    node8["internal/platform/config"]
+    node9["internal/platform/httpapi"]
+    node10["internal/platform/postgres"]
+    node11["internal/swaggerdocs"]
+    node12["migrations"]
     node0 -->|"import"| node5
-    node0 -->|"import"| node7
+    node0 -->|"import"| node6
     node0 -->|"import"| node8
     node0 -->|"import"| node9
     node0 -->|"import"| node10
-    node1 -->|"import"| node5
-    node1 -->|"import"| node9
-    node2 -->|"import"| node11
-    node4 -->|"import"| node8
-    node5 -->|"import"| node8
+    node0 -->|"import"| node11
+    node1 -->|"import"| node6
+    node1 -->|"import"| node10
+    node2 -->|"import"| node7
+    node2 -->|"import"| node10
+    node3 -->|"import"| node12
+    node5 -->|"import"| node9
+    node6 -->|"import"| node9
 ```
 ## Anotações encontradas
 

@@ -69,3 +69,18 @@ Invariantes SQL efetivamente ensaiadas no restore: rejeitar duas execuções abe
 `food_versions` distingue fonte editorial e titular de cadastro próprio por CHECK exclusivo. Nutrientes preservam estado/ausência em JSON; bases e unidades são explícitas. Nenhum alimento foi importado nessa etapa. Suporte a outra pessoa assistida permanece posterior e exige vínculo/consentimento; os registros atuais só permitem o próprio titular.
 
 Papéis separados: migrator é proprietário do banco novo; runtime tem CRUD apenas das tabelas privadas e leitura editorial, sem CREATE/UPDATE editorial ou superuser. Scripts de bootstrap usam owner apenas no cluster criado para o clone. [Runbook da etapa02](../execucao/v1/etapa-02-fechamento.md).
+
+## Incremento alimentar00005 —22/10
+
+6369food_versions reais importadas (3484Ciqual/2885CoFID),2identidadesconflitantes fora do lote e3basesdesconhecidas mantidas. ImportadorGo é único escritor editorial; runtime apenasSELECT. Idioma/versão pública e operações explícitos, batch/versões e retirada lógica em tabelas próprias. Valores/limites são decimais exatos emstrings e estados tipados; fatores/denominadoresFA separados, sem soma de métodos alternativos. FK de fonte da00002foireutilizada. Cadastro próprio e consumoHTTP continuam pendentes.
+
+```mermaid
+erDiagram
+    sources ||--o{ food_versions : origem_editorial
+    food_import_batches ||--o{ food_batch_versions : lote
+    food_versions ||--o{ food_batch_versions : versao
+    food_versions ||--o{ food_withdrawals : retirada_logica
+    food_versions ||--o{ food_entries : consumo_futuro
+```
+
+[Importação/reimportação e restauração novas verificadas](../execucao/v1/alimentacao-importacao.md); documentação da etapa02 acima permanece histórica, sem inventar que já havia alimentos naquela entrega.

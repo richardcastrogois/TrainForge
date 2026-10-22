@@ -8,7 +8,7 @@ Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro 
 | O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
 | Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
 | Retomar o APK disponível e testar | [Avaliação Android0.1.1+2](execucao/v1/avaliacao-android.md) |
-| Alimentação em preparação independente | [Preflight V1-019 e limites](execucao/v1/alimentacao-preflight.md) |
+| Base alimentar real no banco | [V1-019: importação6369registros e limites](execucao/v1/alimentacao-importacao.md) |
 | Catálogo real entregue | [V1-014: consulta e limites](execucao/v1/catalogo-consulta.md) |
 | O caminho até o primeiro APK | [Plano macro da V1](execucao/v1/plano-macro.md) |
 | O que entra na V1 e o que fica depois | [Escopo e critérios](execucao/v1/escopo.md) |
@@ -24,7 +24,7 @@ Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro 
 
 **Estado:** etapas01/02 concluídas;73metadados de consulta,439excluídos,0prática aprovada. FundaçãoGo/DB/Swagger, auth local e leitura de catálogo implementadas. APKdebug0.1.1+2 instalado no emulador; biblioteca real consultável semGoogle. V1-014 concluída; loginGoogle real/OAuthrelease aguardam retorno do autor. Demais módulosV1 não estão integrados.
 
-**Próxima história autônoma:** V1-019 doing, preflight alimentar validado sem importar/liberar dados; consultar alimentacao-preflight.md. V1-011 permanece doing, sem completionEvidence; intervenção Google só quando o autor retornar. V1-003 continua transversal, sem publicação remota autorizada.
+**V1-019 concluída:**6369registros alimentares noDB, com reimportação/restore verificados; busca/consumo e Flutter pendentes. V1-011 permanece doing, sem completionEvidence; intervenção Google só quando o autor retornar. V1-003 continua transversal, sem publicação remota autorizada.
 
 ## Como a pasta foi organizada
 

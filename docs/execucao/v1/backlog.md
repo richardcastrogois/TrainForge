@@ -601,13 +601,13 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-019 — Validar e importar o lote alimentar
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.
 
 Dependências: V1-004, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md; docs/execucao/v1/alimentacao-preflight.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md; docs/execucao/v1/alimentacao-preflight.md; content/manifests/food-review-decisions.json; docs/execucao/v1/alimentacao-importacao.md
 
 Critérios de aceite:
 
@@ -629,7 +629,7 @@ Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura en
 
 Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
-Handoff: 22/10: preflight/staging offline implementado e validado sobre6371identidades de origem/1069660células dos snapshotsCiqual/CoFID já auditados; inventário22famílias.13testesnovos, estados/base/fatores/colisão/atribuição e hashes preservados. RuntimeImportApproved/calculationsApproved false,0alimentos noDB/API/APK. Ver alimentacao-preflight.md e food-preflight-verification.json. Continuar revisão específica de direitos, unidades/identidades e futuro importadorGo; não fechar019com staging.
+Handoff: 22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver alimentacao-importacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.
 
 ### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 
