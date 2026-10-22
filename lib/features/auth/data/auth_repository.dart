@@ -1,8 +1,7 @@
-//lib/features/auth/data/auth_repository.dart
-import 'package:flutter/foundation.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-
+import 'package:trainforge/core/config/app_config.dart';
 import '../domain/auth_user.dart';
 import 'auth_api.dart';
 import 'auth_storage.dart';
@@ -11,74 +10,76 @@ class AuthRepository {
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
   final AuthApi _api;
   final AuthStorage _storage;
-
   AuthRepository({AuthApi? api, AuthStorage? storage})
     : _api = api ?? AuthApi(),
       _storage = storage ?? AuthStorage();
 
-  bool _initialized = false;
-
+  static Future<void>? _initialization;
   Future<void> _ensureInitialized() async {
-    if (_initialized) return;
-
-    if (kIsWeb) {
-      await _googleSignIn.initialize();
-    } else {
-      await _googleSignIn.initialize(
-        serverClientId:
-            '975945820703-phranuo6urju23c43fb6n2102do767kl.apps.googleusercontent.com',
-      );
+    AppConfig.validate();
+    if (kIsWeb || AppConfig.googleServerClientId.isEmpty) {
+      throw StateError('Login Google indisponível: configure o client ID Web.');
     }
-
-    _initialized = true;
+    if (defaultTargetPlatform == TargetPlatform.iOS &&
+        AppConfig.googleIosClientId.isEmpty) {
+      throw StateError('OAuth iOS ainda não configurado.');
+    }
+    final pending = _initialization ??= _googleSignIn.initialize(
+      serverClientId: AppConfig.googleServerClientId,
+      clientId: defaultTargetPlatform == TargetPlatform.iOS
+          ? AppConfig.googleIosClientId
+          : null,
+    );
+    try {
+      await pending;
+    } catch (_) {
+      _initialization = null;
+      rethrow;
+    }
   }
 
   Future<AuthUser> signInWithGoogle() async {
     await _ensureInitialized();
-
-    final GoogleSignInAccount account = await _googleSignIn.authenticate();
-    final auth = account.authentication;
-    final idToken = auth.idToken;
-
+    final account = await _googleSignIn.authenticate();
+    final idToken = account.authentication.idToken;
     if (idToken == null || idToken.isEmpty) {
-      throw Exception('Google não retornou idToken');
+      throw StateError('Google não retornou credencial.');
     }
-
-    final user = await _api.loginWithGoogleIdToken(idToken);
-    await _storage.saveToken(user.token);
-
-    return user;
+    final session = await _api.loginWithGoogleIdToken(idToken);
+    await _storage.saveSession(session);
+    return session;
   }
 
   Future<bool> isAuthenticated() async {
     final token = await _storage.getToken();
-
-    if (token == null || token.isEmpty) {
-      return false;
-    }
-
+    if (token == null || token.isEmpty) return false;
     try {
       await _api.getMe();
       return true;
     } on DioException catch (error) {
       if (error.response?.statusCode == 401) {
-        await _storage.clearToken();
+        await _storage.clearIfAccessToken(token);
         return false;
       }
       rethrow;
     }
   }
 
+  Future<Map<String, dynamic>> getMe() => _api.getMe();
   Future<void> logout() async {
-    await _storage.clearToken();
-
+    final refresh = await _storage.getRefreshToken();
+    // Failure remains visible/retryable; never claim server revocation offline.
+    if (refresh != null && refresh.isNotEmpty) await _api.logout(refresh);
+    if (refresh != null) {
+      await _storage.clearIfRefreshToken(refresh);
+    } else {
+      final access = await _storage.getToken();
+      if (access != null) await _storage.clearIfAccessToken(access);
+    }
     try {
-      await _ensureInitialized();
       await _googleSignIn.signOut();
     } catch (_) {}
   }
 
-  Future<String?> getSavedToken() async {
-    return _storage.getToken();
-  }
+  Future<String?> getSavedToken() => _storage.getToken();
 }

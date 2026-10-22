@@ -6,12 +6,7 @@ import 'core/log/app_logger.dart';
 
 void main() {
   FlutterError.onError = (FlutterErrorDetails details) {
-    AppLogger.error(
-      'FlutterError capturado',
-      tag: 'APP',
-      error: details.exception,
-      stackTrace: details.stack,
-    );
+    AppLogger.error('FlutterError capturado', tag: 'APP');
   };
 
   AppLogger.info('Inicializando app', tag: 'APP');

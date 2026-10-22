@@ -11,6 +11,13 @@ class MemoryStorage extends AuthStorage {
   @override
   Future<String?> getToken() async => token;
   @override
+  Future<void> clearIfAccessToken(String expected) async {
+    if (token == expected) token = null;
+  }
+
+  @override
+  Future<String?> getRefreshToken() async => null;
+  @override
   Future<void> clearToken() async {
     token = null;
   }

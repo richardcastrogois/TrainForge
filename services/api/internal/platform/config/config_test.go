@@ -29,3 +29,27 @@ func TestConfigValidationAndNoLegacyDatabaseFallback(t *testing.T) {
 		}
 	}
 }
+
+func TestGoogleAudienceRequiresExplicitPublicClientID(t *testing.T) {
+	for _, value := range []string{"", "example.apps.googleusercontent.com"} {
+		c, err := Load(func(k string) string {
+			if k == "TF_GOOGLE_SERVER_CLIENT_ID" {
+				return value
+			}
+			return ""
+		})
+		if err != nil || c.GoogleAudience != value {
+			t.Fatal("audience configuration mismatch")
+		}
+	}
+	for _, value := range []string{"not-a-client", "one.apps.googleusercontent.com,two.apps.googleusercontent.com", "secret\n.apps.googleusercontent.com"} {
+		if _, err := Load(func(k string) string {
+			if k == "TF_GOOGLE_SERVER_CLIENT_ID" {
+				return value
+			}
+			return ""
+		}); err == nil {
+			t.Fatal("accepted invalid audience configuration")
+		}
+	}
+}

@@ -1,6 +1,6 @@
 # Camadas e responsabilidades do backend Go
 
-Proposta refinada em **21/10/2026**, ainda sem implementação. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
+Refinada em **22/10/2026**: fundação, importador e auth implementados localmente; catálogoHTTP, atividade e nutrição ainda planejados. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
 
 ```mermaid
 flowchart LR
@@ -26,7 +26,7 @@ A seta de implementação representa dependência/contrato, não chamada HTTP. E
 | `cmd/api` | Montar dependências e iniciar/parar o processo | Não conter o domínio inteiro |
 
 ```text
-services/api/                     # futuro
+services/api/                     # fundação/auth/import reais; demais módulos incrementais
   cmd/api/main.go
   cmd/import-content/main.go
   internal/

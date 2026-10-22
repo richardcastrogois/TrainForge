@@ -851,7 +851,7 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "Encerramento solicitado em22/10: somente investigação inicial, sem handler/auth real. Ler docs/execucao/v1/handoff.md; corrigir logs de corpo no AppDio antes de login; implementar Google+OAuth real, depois012/013. Não marcar done com fixture. Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10 retomada: auth Go implementada e fixtures criptográficas/HTTP/concorrência PostgreSQL isoladas passaram; Flutter integrado em checkpoint, APK debug instalado no emulador Google Play. Client Web e Android debug conferidos por capturas do autor. Certificado release dedicado criado; cadastro OAuth release e login Google real aguardam intervenção. Não marcar done com fixtures. Ver oauth-android.md, auth-local-verification.json e handoff.md.",
           "completionEvidence": []
         },
         {

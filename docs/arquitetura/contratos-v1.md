@@ -1,8 +1,8 @@
-# Contratos da V1 — proposta para implementação
+# Contratos da V1 — implementado e planejado
 
-**Estas rotas ainda não existem na API Go.** A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
+**22/10: saúde, POSTauth/google, POSTauth/refresh, POSTauth/logout e GETme existem localmente na API Go. Demais rotas da tabela são propostas.** [Sessão e OAuth](../execucao/v1/oauth-android.md). LoginGoogle Android real permanece gate de aceite, separado de fixtures. A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
 
-Decisão vigente: [Swagger por comentários e tipos Go](swagger-go.md). Os futuros `contracts/generated/swagger-v1.json` e `.yaml` são derivados do gerador fixado, não um YAML editado em paralelo. A versão inicial proposta usa Swagger2.0; não apresentá-la como OpenAPI3.
+Decisão vigente: [Swagger por comentários e tipos Go](swagger-go.md). Os `contracts/generated/swagger-v1.json` e `.yaml` são derivados do gerador fixado, não um YAML editado em paralelo. A versão inicial proposta usa Swagger2.0; não apresentá-la como OpenAPI3.
 
 Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, fuso IANA quando necessário. Bearer access token nas rotas privadas. `X-Request-Id` para correlação; `Idempotency-Key` nas criações/eventos. Nenhum token ou dado físico em log. Erro padrão `application/problem+json` com type/title/status/code/requestId; erro de campo sem ecoar segredo.
 
@@ -12,7 +12,7 @@ Base proposta `/api/v1`, HTTPS em staging/produção. JSON, datas ISO8601 UTC, f
 | Session API: `POST /auth/refresh` | `{refreshToken}` |200 rotação atômica;401 inválido/reuso; concorrência tem regra por família |
 | Session API: `POST /auth/logout` | `{refreshToken}` |204 revogado idempotentemente |
 | Bootstrap API: `GET /bootstrap` | Bearer, data/fuso se exigidos pelo resumo |200 usuário, configuração mínima, contexto e resumo permitido; sem todos os catálogos/históricos |
-| Profile API: `GET/PATCH /me` | PATCH somente campos pessoais necessários/permitidos |200 perfil; medidas opcionais, não exigir %gordura para ler biblioteca |
+| Identity API: `GET /me` implementado; `PATCH /me` futuro | Bearer opaco |200 identidade própria `{id,name,email,image:null}`; perfil físico não implementado |
 | Profile API: `GET /me/export` | Bearer |200 exportação privada versionada; fluxo assíncrono apenas se volume justificar |
 | Profile API: `DELETE /me` | Confirmação autenticada conforme política |204/202 conforme operação definida; retenção/backup explicados |
 | Catalog API: `GET /catalog/programs` | modality, environment, population, cursor, limit, mode |200 `{items,nextCursor}`; inclui disponibilidade, natureza modular/integral e source summary |
@@ -34,7 +34,7 @@ Os campos completos, limites e códigos serão revisados nos DTOs/comentários e
 
 ## Compatibilidade com o legado
 
-Hoje o Flutter chama `/mobile-auth/google`, `/mobile-auth/me`, `/mobile/bootstrap`, `/mobile/home/{date}`, `/mobile/profile`, `/mobile/stats`, `/mobile/onboarding/*` e `/mobile/workout-plans/*`. O retorno auth atual usa `token`, não `accessToken`; término de sessão usa `completedAt` no HTTP e `completeAt` internamente. A troca para `/api/v1` é explícita, por ambiente/release e com testes de contrato. Não trocar base URL e supor equivalência.
+As telas legadas ainda contêm chamadas a `/mobile-auth/google`, `/mobile-auth/me`, `/mobile/bootstrap`, `/mobile/home/{date}`, `/mobile/profile`, `/mobile/stats`, `/mobile/onboarding/*` e `/mobile/workout-plans/*`. A entrada atual usa contratoGo e não navega para esses fluxos legados. O retorno auth legado usa `token`, não `accessToken`; término de sessão usa `completedAt` no HTTP e `completeAt` internamente. A troca para `/api/v1` é explícita, por ambiente/release e com testes de contrato. Não trocar base URL e supor equivalência.
 
 Preservar validação de proprietário, intervalo de tempo e concorrência; redesenhar plano/dia/exercício em catálogo/adesão/ocorrência. Manter Fastify isolado durante desenvolvimento da primeira fatia Go. Ele não deve gerar conteúdo para preencher a nova biblioteca.
 

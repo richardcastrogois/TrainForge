@@ -1,5 +1,5 @@
 {
-  "status": "PLANEJADO — nenhum serviço Go foi implementado nesta etapa",
+  "status": "PARCIAL REAL — fundação Go/DB/Swagger e auth local implementadas; aceite Google Android em andamento; demais domínios planejados",
   "nodes": [
     {
       "id": "user",
@@ -34,14 +34,14 @@
       "label": "Cliente Dio / sessão",
       "layer": "Rede",
       "description": "HTTPS, bearer de curta duração, refresh coordenado, requestId e idempotência.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "evidence": "lib/core/http/app_dio.dart; test/session_refresh_test.dart; integração real pendente"
     },
     {
       "id": "auth",
       "label": "Módulo auth Go",
       "layer": "API Go",
-      "description": "Valida Google, identidade issuer+sub, tokens rotativos e autorização.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "Implementado localmente: verificação Google, identidade issuer+sub, hashes de access/refresh, rotação e revogação por família. Aceite Google real pendente.",
+      "evidence": "services/api/internal/auth; docs/execucao/v1/auth-local-verification.json"
     },
     {
       "id": "catalog",
@@ -69,7 +69,7 @@
       "label": "PostgreSQL",
       "layer": "Dados",
       "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "evidence": "services/api/migrations/00001–00004; etapa-02-fechamento.md e auth-local-verification.json"
     },
     {
       "id": "manifest",
@@ -83,7 +83,7 @@
       "label": "Importador Go",
       "layer": "Conteúdo",
       "description": "Dry run e importação idempotente. Fonte externa não consultada a cada toque.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "evidence": "services/api/internal/catalog/import.go; catalog-import-verification.json"
     },
     {
       "id": "media",
@@ -146,7 +146,7 @@
       "label": "POST /api/v1/auth/google, refresh, logout",
       "input": "idToken ou refreshToken",
       "output": "accessToken + refreshToken + user; logout 204",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "AuthApi e SessionRefresh usam contrato Go; APKdebug instalado, aceite em andamento."
     },
     {
       "from": "auth",
@@ -154,7 +154,7 @@
       "label": "Verificar assinatura e claims",
       "input": "token/keys públicos",
       "output": "iss/sub/aud/exp válidos",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Verificador oficial em auth/google.go; fixtures criptográficas passaram; loginGoogle real pendente."
     },
     {
       "from": "auth",
@@ -162,7 +162,7 @@
       "label": "Consulta / transação",
       "input": "identidade e hash do refresh",
       "output": "usuário e sessão sem token em claro",
-      "evidence": "Contrato proposto, não chamada executada."
+      "evidence": "Implementado em auth/postgres.go; transações verificadas em banco isolado descartável."
     },
     {
       "from": "http",
@@ -296,19 +296,19 @@
       "method": "POST",
       "path": "/api/v1/auth/google",
       "input": "{idToken} real Google",
-      "output": "200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit"
+      "output": "200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit; implementado localmente, Swagger gerado"
     },
     {
       "method": "POST",
       "path": "/api/v1/auth/refresh",
       "input": "{refreshToken}",
-      "output": "200 rotação atômica;401 inválido/reuso; concorrência tem regra por família"
+      "output": "200 rotação atômica;401 inválido/reuso; concorrência tem regra por família; implementado localmente, Swagger gerado"
     },
     {
       "method": "POST",
       "path": "/api/v1/auth/logout",
       "input": "{refreshToken}",
-      "output": "204 revogado idempotentemente"
+      "output": "204 revogado idempotentemente; implementado localmente, Swagger gerado"
     },
     {
       "method": "GET",
@@ -317,10 +317,10 @@
       "output": "200 usuário, configuração mínima, contexto e resumo permitido; sem todos os catálogos/históricos"
     },
     {
-      "method": "GET/PATCH",
+      "method": "GET",
       "path": "/api/v1/me",
-      "input": "PATCH somente campos pessoais necessários/permitidos",
-      "output": "200 perfil; medidas opcionais, não exigir %gordura para ler biblioteca"
+      "input": "Bearer access opaco",
+      "output": "200 identidade própria {id,name,email,image:null}; implementado; PATCH/perfil físico pendente"
     },
     {
       "method": "GET",
@@ -410,13 +410,13 @@
       "method": "GET",
       "path": "/api/v1/health/live",
       "input": "Sem dados pessoais",
-      "output": "200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno"
+      "output": "200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno; implementado localmente, Swagger gerado"
     },
     {
       "method": "GET",
       "path": "/api/v1/health/ready",
       "input": "Sem dados pessoais",
-      "output": "200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis"
+      "output": "200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis; implementado localmente, Swagger gerado"
     }
   ],
   "entities": [

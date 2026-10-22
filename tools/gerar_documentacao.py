@@ -136,7 +136,7 @@ def outputs(root):
 
     doc = f"{GENERATED}/chamadas-http.md"
     text = header("Chamadas, entradas e respostas", revision)
-    text += "## Atual: Flutter → referência Fastify\n\nChaves de data/query e nomes de schemas são detectados em padrões literais; schema inline pode ficar apenas como `z.object`. O backend é o retrato versionado, não uma leitura online nem um teste de rede.\n\n"
+    text += "## Chamadas Flutter: comparação com a referência Fastify\n\nChaves de data/query e nomes de schemas são detectados em padrões literais; schema inline pode ficar apenas como `z.object`. O backend é o retrato versionado, não uma leitura online nem um teste de rede.\n\n"
     rows = []
     for call in data["calls"]:
         matches = call["legacyMatches"]
@@ -148,7 +148,7 @@ def outputs(root):
     text += table(["Rota", "Entrada", "Saída", "Casos de uso instanciados", "Fonte externa"], [
         [f"`{r['method']} {r['path']}`", f"body={r['requestType'] or 'ausente/inline'}; query={r['queryType'] or 'ausente'}",
          json.dumps(r["responses"], ensure_ascii=False), ", ".join(r["usecases"]) or "não detectado", evidence(r["source"], doc, backend)] for r in backend["routes"]])
-    text += "\n## Planejado: contratos da API v1\n\nEstas rotas são decisões propostas, ainda sem implementação Go validada. `swagger-go.md` define a geração futura; esta tabela não substitui o contrato gerado nem cria endpoints.\n\n"
+    text += "\n## Planejado: contratos da API v1\n\nA tabela mistura implementação local explicitamente identificada e decisões futuras. A seção Go/Swagger mostra operações geradas dos handlers. Testes e aceite real constam no handoff; não inferir execução por uma linha de contrato.\n\n"
     text += table(["Método", "Path", "Envia", "Recebe"], [[c["method"], f"`{c['path']}`", c["input"], c["output"]] for c in plan["contracts"]])
     text += "\n[Voltar ao mapa](../README.md) · [Contrato proposto completo](../contratos-v1.md)\n"
     result[doc] = text

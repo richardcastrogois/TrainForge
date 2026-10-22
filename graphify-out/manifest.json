@@ -6,16 +6,16 @@
     "semantic_hash": "53ea8e4b9c9ae461d9c33f737b5efdac"
   },
   "core/config/app_config.dart": {
-    "mtime": 1773790569.9890873,
-    "seen": 1788960629.715067,
-    "ast_hash": "2cde39f42f72b24c32ed84dd326de7ba",
-    "semantic_hash": "2cde39f42f72b24c32ed84dd326de7ba"
+    "mtime": 1792663903.8144777,
+    "seen": 1792664593.4369361,
+    "ast_hash": "161cfca77c56e875d06750fb795e2d13",
+    "semantic_hash": "161cfca77c56e875d06750fb795e2d13"
   },
   "core/http/app_dio.dart": {
-    "mtime": 1773890540.8756962,
-    "seen": 1788960629.715067,
-    "ast_hash": "6252168c66be13aa44e71a5f193f7619",
-    "semantic_hash": "6252168c66be13aa44e71a5f193f7619"
+    "mtime": 1792664070.6013544,
+    "seen": 1792664593.4369361,
+    "ast_hash": "d02a45eb56ab13ce9bacc3596a891a08",
+    "semantic_hash": "d02a45eb56ab13ce9bacc3596a891a08"
   },
   "core/log/app_logger.dart": {
     "mtime": 1773890496.0064273,
@@ -24,34 +24,34 @@
     "semantic_hash": "a46a67ee39aad75fbf45bd5c07d4ee61"
   },
   "features/auth/data/auth_api.dart": {
-    "mtime": 1773545152.6805215,
-    "seen": 1788960629.715067,
-    "ast_hash": "9631d7afaf74018dc7dc8c25537b6a99",
-    "semantic_hash": "9631d7afaf74018dc7dc8c25537b6a99"
+    "mtime": 1792663903.822524,
+    "seen": 1792664593.4369361,
+    "ast_hash": "abb1769549138e61ba158897c5f7b851",
+    "semantic_hash": "abb1769549138e61ba158897c5f7b851"
   },
   "features/auth/data/auth_repository.dart": {
-    "mtime": 1773669693.131951,
-    "seen": 1788960629.715067,
-    "ast_hash": "01b70575e0e90d7918029a3f8a7dad30",
-    "semantic_hash": "01b70575e0e90d7918029a3f8a7dad30"
+    "mtime": 1792664542.7560015,
+    "seen": 1792664593.4369361,
+    "ast_hash": "fc4d8275fbdc70723f495fb2ea9c072b",
+    "semantic_hash": "fc4d8275fbdc70723f495fb2ea9c072b"
   },
   "features/auth/data/auth_storage.dart": {
-    "mtime": 1773545172.9043393,
-    "seen": 1788960629.715067,
-    "ast_hash": "75f987af8e6497fc8bb4488a9fb54cd9",
-    "semantic_hash": "75f987af8e6497fc8bb4488a9fb54cd9"
+    "mtime": 1792663989.2642996,
+    "seen": 1792664593.4369361,
+    "ast_hash": "62420e7e2b326f95952db61035ee51a3",
+    "semantic_hash": "62420e7e2b326f95952db61035ee51a3"
   },
   "features/auth/domain/auth_user.dart": {
-    "mtime": 1773545182.8375292,
-    "seen": 1788960629.715067,
-    "ast_hash": "d9b690c364681650c85922d8d0975a01",
-    "semantic_hash": "d9b690c364681650c85922d8d0975a01"
+    "mtime": 1792663903.8326128,
+    "seen": 1792664593.4369361,
+    "ast_hash": "fd8f8870f4582e72c0112bb4dd2c85b0",
+    "semantic_hash": "fd8f8870f4582e72c0112bb4dd2c85b0"
   },
   "features/auth/presentation/pages/auth_page.dart": {
-    "mtime": 1773714137.6169596,
-    "seen": 1788960629.715067,
-    "ast_hash": "d70ba8d9537072005f62f33bd911f382",
-    "semantic_hash": "d70ba8d9537072005f62f33bd911f382"
+    "mtime": 1792662861.9144402,
+    "seen": 1792664593.4369361,
+    "ast_hash": "4a3969e8582e8ba837fe74afac8143d6",
+    "semantic_hash": "4a3969e8582e8ba837fe74afac8143d6"
   },
   "features/bootstrap/data/bootstrap_api.dart": {
     "mtime": 1773713767.17842,
@@ -228,10 +228,10 @@
     "semantic_hash": "d1854619435d6e1276f7cdb242b28d92"
   },
   "main.dart": {
-    "mtime": 1773890509.1066272,
-    "seen": 1788960629.715067,
-    "ast_hash": "3ac69e8bc6c15bbf59cce660858a1d83",
-    "semantic_hash": "3ac69e8bc6c15bbf59cce660858a1d83"
+    "mtime": 1792663903.8496702,
+    "seen": 1792664593.441449,
+    "ast_hash": "ae2a982e6fa4376924dd441c77f0b78d",
+    "semantic_hash": "ae2a982e6fa4376924dd441c77f0b78d"
   },
   "shared/widgets/app_bottom_nav.dart": {
     "mtime": 1773545472.8688226,
@@ -246,9 +246,15 @@
     "semantic_hash": "0cc846d5cbfb1619aebf2e2b507ca928"
   },
   "shared/widgets/auth_gate.dart": {
-    "mtime": 1773714098.5945666,
-    "seen": 1788960629.715067,
-    "ast_hash": "30780af4355e4fe30cff835e5ad17e17",
-    "semantic_hash": "30780af4355e4fe30cff835e5ad17e17"
+    "mtime": 1792663989.2648387,
+    "seen": 1792664593.441449,
+    "ast_hash": "f2603f2dd5715235bdceac908b6a11e7",
+    "semantic_hash": "f2603f2dd5715235bdceac908b6a11e7"
+  },
+  "features/auth/data/session_refresh.dart": {
+    "mtime": 1792664542.7549963,
+    "seen": 1792664593.4369361,
+    "ast_hash": "5a40dbc42f3d0ce8ea27a31ad94c79a7",
+    "semantic_hash": "5a40dbc42f3d0ce8ea27a31ad94c79a7"
   }
 }

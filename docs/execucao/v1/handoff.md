@@ -1,56 +1,64 @@
-# Handoff vigente — encerramento solicitado em22/10/2026
+# Handoff vigente — V1-011 em validação Android
 
-**Ponto exato:** etapas01 e02/M1 concluídas; etapa03/M2 iniciou somente investigação da **V1-011 (autenticaçãoGoogle)**. Não há handlerGo de login, refresh ou catálogo, integração nova Flutter nem APKV1. O autor pediu encerrar esta rodada, registrar e commitar para o próximo chat; não continuar implementação nesta rodada.
+Atualizado em22/10/2026. Repositório correto: `C:/dev/TrainForge/trainforge`. Retomada autorizada pelo autor; não aplicar a antiga instrução de encerrar antes de implementar.
 
-Repositório: `C:/dev/TrainForge/trainforge`. O pai não é repo. Primeiro leia AGENTS, [plano macro](plano-macro.md), [escopo](escopo.md), [decisões do piloto](decisoes-piloto.md), [backlog](backlog.md) e os fechamentos abaixo. Atualização por IA exige evidência, sem marcar capacidade planejada como entregue.
+**Ponto exato:** auth Go e integração Flutter implementadas localmente. APK debug gerado, instalado e aberto no emulador existente. Login Google real ainda aguarda conclusão manual do autor; OAuth release dedicado ainda não cadastrado. **V1-011 permanece doing, completionEvidence vazio.** Não concluir com fixtures. V1-012 tem implementação preparatória servidor/cliente coberta por testes isolados; não foi encerrada nem teve suas dependências ignoradas.
 
-## O que já foi feito
+## Confirmado nesta retomada
 
-- **[Etapa01 encerrada](etapa-01-fechamento.md):** triagem dos512ativos completa;73metadados de consulta,439excluídos;0instruções/mídias/prática. DecisãoGo/fronteira documentada. É fechamento de triagem, não homologação clínica. N01–N46 permanecem encerradas nos seus recortes; não reabrir pesquisas por causa dessas exclusões.
-- **[Etapa02/M1 concluída](etapa-02-fechamento.md):** histórias006–010; Go1.27.3portátil, servidor net/http+pgx, config/limites/timeouts/shutdown, duas rotas reais de saúde. Swagger2.0 por comentários/DTOs, recarga geração→build→restart comprovada e geração determinística. Três migrationsGoose aplicadas,73metadados importados e reimportados sem duplicar. Backup/restore real comparou contagens/hash; cinco invariantesSQL verificadas, fixtures revertidas e base temporária removida.
-- Commit local da fundação: **`c23ace6 feat: establish isolated Go API foundation and reviewed catalog`**. O commit documental de encerramento seguinte contém estehandoff e o comparativo único deAPIs.
--42testesPython passaram; `go test ./...`, `go vet ./...`, build, Swaggercheck e testes de processoAPI/DB passaram. Evidências: [API conectada](api-connected-verification.json), [DB/restore](database-verification.json), [importação](catalog-import-verification.json). CI preparada, mas sem execução remota/publicação autorizada.
+- Git inicial limpo em90e746e, após fundaçãoc23ace6. Primeiro incremento validado: `1765708 fix: protect auth logs and retain sessions on network failures`.
+- AppDio sem corpo/query/headers/URL/exceções nos logs; só eventos fixos/status/categoria. Falha de secure storage interrompe requisição. Sem redirecionamento de credenciais a outra origem. Exceção bruta não aparece na tela de login nem no handler global Flutter.
+- Google oficialv0.24.1, RS256 e assinatura por certsGoogle fixos; issuer, audienceWeb explícita, exp/iat/sub e e-mail verificado. IdentidadeGoogle+issuer canônico+sub, nunca e-mail. JSONnull malformado é rejeitado antes do parserSDK. Configuração ausente=503.
+- Sessão opaca com aleatoriedade256bits, hashesSHA256 noDB, access15min e refresh máximo30dias desde login. Migration00004 aditiva aplicada ao clusterV1 e privilégios runtime concedidos. Go continua único escritor/migrador desse schema.
+- Refresh/rotação atômicos porfamília, singleuse, reuso revoga família incluindoaccess; logout idempotente por dispositivo. TestePostgreSQL concorrente passou em base descartável separada, removida depois. Usuários fictícios não foram inseridos na base entregue.
+- Flutter usa `/api/v1/auth/google`, refresh/logout e `/api/v1/me`; par de tokens numa chave securestorage específicaGo. Refresh compartilhado entre401concorrentes, retryúnico, falhastransitórias preservam sessão. Compare-and-replace/limpezacondicional impedem respostas antigas de apagar/restaurar outra sessão.
+- Entrada atual é checkpoint de autenticação com perfilreal e lacunas. Não chama bootstrap/geradoresFastify nem apresenta os módulos legados como integrados. CatálogoHTTP, atividade/histórico/alimentação continuam pendentes.
+- OAuth debug e Web conferidos pelas capturas do autor: projeto bootcamp-treinos-ia/975945820703; pacote com.example.trainforge e SHA1debug coincidem. PúblicoExternal com três contasTestusers. Existem avisosGoogledeinatividade, ainda sem resolução comprovada. [GuiaOAuth](oauth-android.md). Não versionar e-mails/capturas.
+- CertificadoRSA3072 release local dedicado criado e preservado; Gradle não usa debug como fallbackrelease. `.local/android-signing/trainforge-evaluation.p12` e `android/key.properties` ignorados. ACLdoproperties restringida à contaWindows/SYSTEM após autorização explícita, resolvendo o bloqueio inicial do auto-review. Não gerar de novo, rotacionar, apagar ou comitar os segredos.
 
-## De onde seguir no próximo chat
+## Validação realizada
 
-**V1-011 está `doing` somente por investigação.** `completionEvidence` permanece vazio. Na retomada autorizada:
+- 12testesFlutter passaram; analyze completo semissues. A mudança final de limpezacondicional passou e gerou novoAPK; não foi reinstalado durante o loginmanual. [ReciboAPK](android-auth-checkpoint.json) distingue o hash instalado do recompilado.
+- `go test ./...` e `go vet ./...` passaram; testesnovos de chavesGoogleindisponíveis/audience explícita também passaram. FixturesRSA/JWKS são locais; não são loginGoogle real.
+- [Testestransacionais](auth-local-verification.json): loginconcorrente com identidadeúnica, e-mailigual/subdistinto semvincular, expiração, reusorefreshconcorrente, logout e isolamentodefamílias. Basetemporária removida, contagemusuáriosV1inalterada.
+- [ProcessoHTTP real](auth-http-verification.json): ready200, meanônimo401, Googleinválido401, refreshinválido401, logoutinválido204; Swagger6operações. Essas sondas não criam usuários.
+- Swagger gerado por comentários/DTOs; mapas/registros/backlog regenerados;42testesPython passaram. Evidências históricas da etapa02 não foram sobrescritas nem restore/importação repetidos.
+- APKinicial: `build/app/outputs/flutter-apk/app-debug.apk`, SHA256 `1388E962D9B0B8C81BE8CFDE394EB503E4EDE030D11EE6325AD370607B0EBA94`; instalado comadbinstall-r e aberto semuninstall. Não éAPKrelease nem jornada completa.
 
-1. Revisar [contratos](../../arquitetura/contratos-v1.md) e [camadas](../../arquitetura/camadas-go.md). Implementar validaçãoGoogle com assinatura, issuer, audience explícita, exp e subject; identidade por issuer+sub, sem vincular contas por e-mail. Ausência deOAuth/configuração deve ser estado indisponível, sem token/perfil fictício no runtime.
-2. Biblioteca oficial investigada: [cloud.google.com/go/auth/credentials/idtoken v0.24.1](https://docs.cloud.google.com/go/docs/reference/cloud.google.com/go/auth/latest/credentials/idtoken), [fonte](https://github.com/googleapis/google-cloud-go/blob/auth/v0.24.1/auth/credentials/idtoken/validate.go), [regrasGoogle](https://developers.google.com/identity/gsi/web/guides/verify-google-id-token). Fonte verificada: Validate usa as chaves conhecidas e valida audiência quando não vazia/exp; a aplicação ainda precisa verificar issuer/sub. Nenhuma dependênciaGoogle foi mantida emgo.mod: a exploração foi removida para encerrar sem código incompleto.
-3. Cliente atual: `lib/features/auth/data/auth_repository.dart` tem serverClientId público no código; sua presença não comprova configuraçãoAndroid debug/release. `auth_api.dart` usa `/mobile-auth/google` e `/mobile-auth/me`, retorno`token`. NovaAPI usa `/api/v1`/`accessToken`: não basta mudarbaseURL. Não houve loginGoogle real/validação doOAuth nesta rodada.
-4. **Achado pendente de segurança:** `lib/core/http/app_dio.dart` registra query/body e responsebody; pode imprimir IDtoken/access/refresh e dados pessoais. Corrigir antes do próximo teste de login, mantendo só metadados seguros. `AuthRepository.isAuthenticated` apaga token em qualquer falha degetMe; diferenciar falha de rede de401 na integração. Essas correções foram identificadas, ainda não implementadas.
-5. Depois011, seguir012 (rotação singleuse/família/logout/Flutter),013 (ownership/limites/dados),014–016 e021–022 conforme dependências dobacklog. Fixtures isoladas são permitidas em testes; não inserir usuários/treinos/históricos fictícios no DB entregue para aparentar jornada concluída.
-6. Conteúdo de prática permanece bloqueado:73metadados não formam programa executável. Manter fonte/autoria/versão/requisitos e estado real poroperação. Não substituir exclusão por instruçãoIA. Disponibilidade de clipes pagos não homologa dose/progressão nem público.
+## Intervenção aguardada e próximo passo
 
-## Estado local ao encerrar
+1. Autor toca Entrar comGoogle noemulador e autentica manualmente numa contaTestuser. Se não houvercontaGoogle, ele faz a entrada; senha/2FA/consentimento não são coletados poragente/chat. Não capturar logcatintegral ou tela de senha. Confirmar tela Conta conectada e conferir somente contagens/relações/hash noDB, sem divulgar dados pessoais.
+2. Autor ainda não criou clienteOAuthrelease. NoConsole→Clientes→Criarcliente→Android: pacote com.example.trainforge, SHA1 `24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D`; preservar clientedebug. Não exigirclientsecret.
+3. Validar reabertura/rede/retomada, logout/reentrada reais; incluir expiração/refresh com recorte explícito da sessão se necessário. Instalar oAPK recompilado após o fluxoGoogle terminar; certificado/debug já conferido, hash no recibo. Atualizar evidências. Só depois avaliar011done, sem mascarar pendênciasrelease/HTTPS.
+4. Não avançar históriasdependentes como prontas enquanto011não fechar. Trabalho independente de documentação/revisão/configuração pode continuar. Produto Android+iOS; iOS não testado e exigeOAuth/Keychain/Xcode próprios.
 
-- API/watcher de verificação encerrados; **clusterPostgreSQLV1 parado de forma segura** em22/10. `.local/pgdata`, credenciais e backup preservados porque serão reutilizados. Nenhuma base/volume legado removido.
-- BináriosPostgreSQL17.5 existentes em `C:/Program Files/PostgreSQL/17/bin`, clusterV1localhost15432, DB`trainforge_v1_dev`, schema`trainforge_v1`. Não foi criado serviçoWindows. Serviço/bancos legados não acessados; suas contagens são desconhecidas.17.5 exige atualização de patch antes de staging/exposição externa.
-- Go1.27.3 em `.tools/go/bin/go.exe`; caches/Swaggo em `.tools`; segredos/dados/dump em `.local`, todos ignorados. ZIPGo já instalado/verificado foi excluído; toolchain permaneceu. ACL de`.local` restrita ao usuário/SYSTEM. Não copiar segredos aoGit.
-- Docker apresentou erro no gerenciadorInference/socket `dockerInference`; substituído pelo banco nativo. Sem reset deDocker/WSL/volumes, mudança devirtualização ou tentativa de apagar osocket.
-- Flutter/globalGo/legado não foram trocados. Produto continuaAndroid+iOS; primeiro testeAPK seráAndroid. iOS não testado.
+## Estado local e comandos
 
-Comandos reproduzíveis usados nesta máquina:
+**APIwatcher ativo** nesta rodada: processo criado por `tools/dev_api.py --stop-file .local/auth-checkpoint.stop`, localhost8082. **ClusterV1 ativo**, localhost15432, `.local/pgdata`, DBtrainforge_v1_dev. EmuladorTrainForge_Benchmark/Android35GooglePlay ativo, serialobservadoemulator-5554; reverse8082→8082. Não encerrar durante login manual; ao finalizar validar estado real antes de atualizar esta seção.
+
+Go1.27.3, Swaggo1.16.6, Flutter3.41.4/Dart3.11.1 existentes foram reutilizados. A única nova dependência de runtime foi a bibliotecaGoogle necessária e seus transitivos. Emulador já existia emC:/dev/rea-tools/avd; semnovoAVD/reset. BináriosPostgreSQL17.5 existentes; atualizarpatch antes de staging/exposição. Execuçãosandbox de binários ficou travada semoutput; ferramentas locais funcionaram fora do sandbox apósaprovação. Não repetir a investigação desse comportamento.
 
 ```powershell
 Set-Location C:/dev/TrainForge/trainforge
 $tfPython = 'C:/Users/richa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
 & $tfPython tools/db_local.py start
+# Usar watcher existente; não abrir segundo processo na mesma porta.
+# Se estiver parado: & $tfPython tools/dev_api.py
 ./tools/go-api.ps1 test ./...
 ./tools/go-api.ps1 vet ./...
-& $tfPython -m unittest discover -s tools -p 'test_*.py'
+& $tfPython tools/verificar_auth_local.py # só para mudançasauth; DBtemporária própria
+& $tfPython tools/verificar_auth_http.py # exigeAPIlocalativa; sondasnegativas
 & $tfPython tools/gerar_documentacao.py --write --check
-& $tfPython tools/dev_api.py
-# API localhost8082; Swagger /docs/index.html. Ctrl+C para API/watcher.
-& $tfPython tools/db_local.py stop
+# Builddebug usa .local/flutter-auth.json existente, somenteIDs públicos+URLlocal:
+flutter build apk --debug --no-pub --dart-define-from-file=.local/flutter-auth.json
+# Conferir serial antes de operar:
+adb -s emulator-5554 reverse tcp:8082 tcp:8082
+# Para parar somenteAPIwatcher desta rodada: criar .local/auth-checkpoint.stop
+# Para parar somenteclusterV1 apósencerrarAPI: & $tfPython tools/db_local.py stop
 ```
 
-Helpers adicionais: `migrate_local.py` somente forward; `importar_catalogo_local.py --dry-run`/semflag; `verificar_banco_local.py` testa restore em base separada e exclui só a base que criou. Não reimportar/retestar por hábito se nenhum arquivo/modelo mudou. O smokeAPI é o teste específico da fundação com duas rotas; atualizar suas expectativas deliberadamente quando novos contratos forem implementados, sem falsificar a evidência histórica.
+## Limites preservados
 
-## Opções de conteúdo e orçamento — decisão nova
+Etapas01/02 concluídas:73metadados,439excluídos,0prática/instrução/mídiaaprovada; importaçãoidempotente/restore já comprovados. Nada foi fabricado para login ou catálogo. Idosos, cuidadores, casa, praça/parque e academia permanecem na cobertura.
 
-**[Registro único deAPIs/datasets/mídias](../../conteudo/opcoes-apis-exercicios.md)** incorpora todas as opções anteriores e as novas pistas: free-exercise-db, GymRatDataStash, hasaneyldrm, APINinjas, MuscleWiki, MoveKit e ExerciseAnimatic. Evidência primária/pendências/preços datados separados; nenhuma mídia nova baixada, integração contratada ou fornecedor homologado.
-
-Direção atual: testar primeiro o que temos sem pagar e explorar gratuitas dentro de quotas/licenças. Se faltar, teto de avaliação futura **atéR$400**, preservando preferência por pagamento único; nenhuma compra/assinatura autorizada. O valorUS$19 anterior é histórico. Não pagar nem abrir nova frente ampla de pesquisa agora; aguardar lacunas do teste e direção do autor. Não contactar autores/BeFit/fornecedores.
-
-Documentação de leitura: `docs/arquitetura/README.md`, Markdown/Mermaid sem painel/servidor. Atualizarbacklog/evidências/diário e regenerar derivados a cada história. Não publicar/push/deploy por inferência de commitlocal autorizado.
+[OpçõesdeAPIs](../../conteudo/opcoes-apis-exercicios.md) permanece registroúnico: gratuitasprimeiro, eventualcompraúnicaatéR$400 depende da decisão doautor. Semnova pesquisaampla, integraçãopaga, compra, contatoexterno, push, deploy oupublicação nesta retomada.

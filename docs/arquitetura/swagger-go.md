@@ -62,7 +62,7 @@ Na CI do serviço, gerar e comparar os três arquivos com a ferramenta fixada, t
 
 Anotação `@Security` documenta autenticação; não implementa middleware ou autorização por recurso. Exemplos devem ser contratuais e anônimos, sem tokens/dados físicos reais. Swagger UI interativo deve ter exposição/configuração deliberadas por ambiente, sem segredo embutido ou credencial persistente. Testar rotação, isolamento, idempotência e limites continua obrigatório. Interface atualizada não prova API segura ou capaz de atender uma carga.
 
-O [mapa Go gerado](gerado/go-e-swagger.md) separa anotações, registros literais e operações encontradas na especificação. O serviço real e suas duas rotas de saúde estão na especificação. Auth, catálogo HTTP e cliente Dart ainda não foram implementados nessa etapa.
+O [mapa Go gerado](gerado/go-e-swagger.md) separa anotações, registros literais e operações encontradas na especificação. O serviço real e suas duas rotas de saúde estão na especificação. Na retomada de22/10, authGo acrescentou quatro rotas (trocaGoogle, refresh, logout, GETme), totalizando seis operações; sondasHTTP reais em auth-http-verification.json. Flutter usa DTOs explícitos; não há geradorDart. CatálogoHTTP continua pendente; fixtures não comprovam loginGoogle real.
 
 ## Comandos locais e limites
 

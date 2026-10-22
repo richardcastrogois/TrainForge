@@ -1,3 +1,3 @@
-// Package auth owns provider identity and per-device session lifecycles.
-// Authentication handlers will be introduced incrementally in V1-011/012.
+// Package auth owns Google provider identity and per-device opaque sessions.
+// Fixtures are test-only; real Android OAuth acceptance is tracked in V1-011/012.
 package auth

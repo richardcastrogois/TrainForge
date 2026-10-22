@@ -4,10 +4,10 @@
     "priority": "Alta",
     "title": "Corpos completos em logs Flutter",
     "evidence": "lib/core/http/app_dio.dart",
-    "line": 49,
-    "detail": "Tokens e dados físicos podem passar por logs; não houve teste de exploração.",
+    "line": 7,
+    "detail": "AppDio registra só eventos fixos/status/categoria, sem URL/query/headers/corpos/exceções. Teste auth_security_test.dart; handlerglobal e tela de login sem exceção bruta.",
     "story": "V1-021",
-    "status": "aberto — inspeção estática"
+    "status": "corrigido — testes de privacidade Flutter passaram em22/10"
   },
   {
     "id": "A02",
@@ -45,9 +45,9 @@
     "title": "Refresh e revogação incompletos no Flutter",
     "evidence": "lib/features/auth/data/auth_repository.dart",
     "line": 42,
-    "detail": "API fornece refresh, mas cliente guarda acesso e encerra sessão localmente.",
+    "detail": "ClienteGo guarda parrotativo atomicamente, coordena refresh e revoga logout. Testes concorrentes/rede passaram; login/refresh/logout reais em emulador aguardam autor.",
     "story": "V1-012",
-    "status": "aberto — inspeção estática"
+    "status": "implementado localmente — aceite real Android pendente"
   },
   {
     "id": "A06",
@@ -55,9 +55,9 @@
     "title": "Identidade e assinatura Android de desenvolvimento",
     "evidence": "android/app/build.gradle.kts",
     "line": 9,
-    "detail": "com.example e signing debug em release não bastam para a entrega.",
+    "detail": "Pacote preservado para piloto; certificado dedicado criado, Gradle semfallbackdebug. OAuthdebug conferido; cadastrorelease/HTTPS/aceiterelease não concluídos.",
     "story": "V1-034",
-    "status": "aberto — inspeção estática"
+    "status": "parcial — certificado release local dedicado, OAuthrelease pendente"
   },
   {
     "id": "A07",
@@ -65,9 +65,9 @@
     "title": "Loopback fixo e portas divergentes",
     "evidence": "lib/core/config/app_config.dart",
     "line": 3,
-    "detail": "App usa 127.0.0.1:8081; backend padrão8080; URL emulador/staging deve ser configurável.",
+    "detail": "API_BASE_URL configurável; debuglocalhost8082 comadb reverse. ReleaseexigeHTTPS. Rotas/DTOsGo distintos dos legados explicitamente integrados.",
     "story": "V1-021",
-    "status": "aberto — inspeção estática"
+    "status": "corrigido no checkpoint Go — HTTPS externo pendente"
   },
   {
     "id": "A08",
@@ -75,9 +75,9 @@
     "title": "Rotação refresh precisa de teste concorrente",
     "evidence": "backend:src/routes/mobile-auth.ts",
     "line": 210,
-    "detail": "Leitura de validade antes da transação e update sem condição de revokedAt: avaliar double use, sem afirmar exploração observada.",
+    "detail": "Leitura de validade antes da transação e update sem condição de revokedAt: avaliar double use, sem afirmar exploração observada. AuthGo usa issuer+sub e rotação comlockdefamília/reuso; fixturesPostgreSQL passaram, aceiteGoogle real pendente. Não foi alterado o backendFastify.",
     "story": "V1-012",
-    "status": "aberto — inspeção estática"
+    "status": "legado preservado; nova API Go corrigida em testes isolados"
   },
   {
     "id": "A09",
@@ -85,9 +85,9 @@
     "title": "Identidade móvel vinculada por e-mail",
     "evidence": "backend:src/routes/mobile-auth.ts",
     "line": 91,
-    "detail": "Rever issuer+sub e regras explícitas de associação de contas.",
+    "detail": "Rever issuer+sub e regras explícitas de associação de contas. AuthGo usa issuer+sub e rotação comlockdefamília/reuso; fixturesPostgreSQL passaram, aceiteGoogle real pendente. Não foi alterado o backendFastify.",
     "story": "V1-011",
-    "status": "aberto — inspeção estática"
+    "status": "legado preservado; nova API Go corrigida em testes isolados"
   },
   {
     "id": "A10",

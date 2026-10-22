@@ -4,6 +4,7 @@ import (
 	"errors"
 	"net"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -13,6 +14,7 @@ type Config struct {
 	Environment    string
 	MaxConns       int32
 	RequestTimeout time.Duration
+	GoogleAudience string
 	Swagger        bool
 }
 
@@ -29,6 +31,10 @@ func Load(get func(string) string) (Config, error) {
 	n, err := strconv.Atoi(port)
 	if err != nil || n < 1 || n > 65535 {
 		return c, errors.New("invalid listen port")
+	}
+	c.GoogleAudience = strings.TrimSpace(get("TF_GOOGLE_SERVER_CLIENT_ID"))
+	if c.GoogleAudience != "" && (!strings.HasSuffix(c.GoogleAudience, ".apps.googleusercontent.com") || strings.ContainsAny(c.GoogleAudience, " ,;\t\r\n")) {
+		return c, errors.New("invalid TF_GOOGLE_SERVER_CLIENT_ID")
 	}
 	c.DatabaseURL = get("TF_DATABASE_URL")
 	if v := get("TF_ENV"); v != "" {

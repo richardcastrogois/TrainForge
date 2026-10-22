@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5dc884be8dd3d143`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9147d3cd1695ebc5`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,9 +8,9 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 42 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 43 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
-| Go neste clone | 12 arquivos Go de aplicação; 3 registros net/http detectados |
+| Go neste clone | 16 arquivos Go de aplicação; 7 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
 | Conteúdo | Pesquisa concluída nos recortes; publicação/prática/direitos continuam por item |
 
@@ -28,7 +28,7 @@ flowchart LR
     node1 -->|"importação estática"| node3
     node0 -->|"importação estática"| node3
     node0 -->|"importação estática"| node1
-    node2 -->|"14 métodos e paths compatíveis"| node4
+    node2 -->|"12 métodos e paths compatíveis"| node4
 ```
 
 Setas de importação não são traces. Correspondência HTTP não confirma autenticação, DTO completo ou resposta em execução.

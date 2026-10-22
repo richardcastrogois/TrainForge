@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5dc884be8dd3d143`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9147d3cd1695ebc5`.
 
 ## Atual: referências entre widgets
 
@@ -44,8 +44,6 @@ flowchart LR
     node10 -->|"referencia widget"| node6
     node10 -->|"referencia widget"| node9
     node11 -->|"referencia widget"| node0
-    node11 -->|"referencia widget"| node4
-    node11 -->|"referencia widget"| node10
 ```
 
 | Tela/widget | Localização |
@@ -61,13 +59,13 @@ flowchart LR
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:6](../../../lib/shared/widgets/auth_gate.dart) |
 
 ## Chamadas usadas por cada feature
 
 | Feature | Literais HTTP |
 | --- | --- |
-| auth | `POST /mobile-auth/google`; `GET /mobile-auth/me` |
+| auth | `POST /api/v1/auth/google`; `GET /api/v1/me`; `POST /api/v1/auth/logout` |
 | bootstrap | `GET /mobile/bootstrap` |
 | home | `GET /mobile/home/$date` |
 | onboarding | `POST /mobile/onboarding/manual-plan`; `POST /mobile/onboarding/ai-plan` |
