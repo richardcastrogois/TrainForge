@@ -332,7 +332,10 @@
             "content/manifests/pilot-prepared.json",
             "content/manifests/pilot-rights-matrix.json",
             "content/manifests/pilot-review-queue.json",
-            "docs/conteudo/preparacao-local-2026-10-21.md"
+            "docs/conteudo/preparacao-local-2026-10-21.md",
+            "content/manifests/pilot-review-decisions.json",
+            "content/manifests/pilot-approved.json",
+            "docs/conteudo/revisao-consulta-2026-10-21.md"
           ],
           "acceptance": [
             "Cada item tem evidência de direitos e fidelidade do que será exibido, sem copiar PDF/foto indevidamente",
@@ -362,8 +365,9 @@
             "Tentar publicar item bloqueado e comprovar rejeição"
           ],
           "deliverables": [
-            "content/manifests/pilot-approved.json (futuro)",
-            "Registro de revisão e pendências reais"
+            "content/manifests/pilot-approved.json (consulta parcial; pratica e entrega no app pendentes)",
+            "content/manifests/pilot-review-decisions.json",
+            "docs/conteudo/revisao-consulta-2026-10-21.md"
           ],
           "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [],
@@ -376,6 +380,17 @@
                 "docs/execucao/v1/verificacao-preparacao-local.json"
               ],
               "next": "Revisar primeiro6traducoes portuguesas wger e34componentes documentais por operacao, sem reduzir cobertura a esses itens; registrar responsavel/resultado reais e material faltante"
+            },
+            {
+              "date": "2026-10-21",
+              "scope": "Revisao documental identificada por agente:73metadados e2textos para consulta;6textosPTconferidos,437ativos fora da projecao; nenhuma pratica/midia/entregaAPK homologada",
+              "files": [
+                "content/manifests/pilot-approved.json",
+                "content/manifests/pilot-review-decisions.json",
+                "docs/conteudo/revisao-consulta-2026-10-21.md",
+                "tools/revisar_conteudo_local.py"
+              ],
+              "next": "Conferir34componentes, expressao autorizada, variantes/instrucao/apoio e midias selecionadas; nao fechar005ou liberar pratica por esta projecao de consulta"
             }
           ]
         },

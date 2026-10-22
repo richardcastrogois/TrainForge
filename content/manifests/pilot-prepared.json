@@ -6,10 +6,10 @@
   "noDatabaseWrites": true,
   "editorial": {
     "path": "content/local/editorial-v1.json",
-    "sha256": "71a3d51a286d328223deaf71000e408a553cdc53e00548841ffd8ed66165f431",
+    "sha256": "8c78fa41c474d1d027e7633aee1724b96b3604074c2aacc22323b93eedb09390",
     "rightsMatrix": {
       "path": "content/manifests/pilot-rights-matrix.json",
-      "sha256": "580a8c41e71eae1e729f440d4690e7790cb775eeb890f2721fae3366d458638a"
+      "sha256": "c59337a54ecd562f01600bf378ffc06ff59446abc93ed511d44a3c9ebdeb2bf4"
     },
     "counts": {
       "movement": 109,
@@ -1760,11 +1760,11 @@
   "toolInputs": [
     {
       "path": "tools/preparar_conteudo_local.py",
-      "sha256": "77787b77b4720af5ddc7baa7c28e26a16a92b3cab18a3da9fe8f6c546c708dc9"
+      "sha256": "a079d90500c79d41f4255251c11e1c6cdc83c801ed44bfe65a1ced284feb8a7e"
     },
     {
       "path": "tools/conteudo_editorial.py",
-      "sha256": "5440bb4b1252c9ceced3294557d34afc70363652154b70e0b880082440bcd4b3"
+      "sha256": "57ba89d04fee79e8c463ab64c3a7d034fda6dee9314b9b55aab3c09387bd77dc"
     },
     {
       "path": "content/schemas/editorial-v1.schema.json",

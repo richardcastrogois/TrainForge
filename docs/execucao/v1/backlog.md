@@ -152,7 +152,7 @@ Como usuário, quero ver apenas o uso que o material realmente permite.
 
 Dependências: V1-004
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md; content/manifests/pilot-review-decisions.json; content/manifests/pilot-approved.json; docs/conteudo/revisao-consulta-2026-10-21.md
 
 Critérios de aceite:
 
@@ -171,7 +171,7 @@ Tarefas e subtarefas:
 
 Validação: Revisão linha a linha da allowlist; Tentar publicar item bloqueado e comprovar rejeição
 
-Entregas: content/manifests/pilot-approved.json (futuro); Registro de revisão e pendências reais
+Entregas: content/manifests/pilot-approved.json (consulta parcial; pratica e entrega no app pendentes); content/manifests/pilot-review-decisions.json; docs/conteudo/revisao-consulta-2026-10-21.md
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 

@@ -65,6 +65,11 @@ def evidence(path, point):
 
 def asset(ident, kind, source, ref, title=None, locale=None, version=None, authors=None, rights=None, audience=None, content=None, dose=None, reasons=None):
     rights = dict(rights or {"label": None, "licenseUrl": None, "attribution": None, "scope": "movement_metadata"})
+    # Dossies guardam mapas de excecoes, nao uma etiqueta de licenca unica.
+    # Conservar os fatos sem preencher o campo escalar do contrato com um objeto.
+    if isinstance(rights.get("label"), dict):
+        rights["sourceRightsFacts"] = rights["label"]
+        rights["label"] = None
     rights["operationGrants"] = {op: "unknown" for op in ("catalog_metadata", "instruction_text", "media_display", "guided_practice", "export_dataset")}
     return {"id": ident, "kind": kind, "sourceId": source, "sourceVersion": version, "locale": locale, "title": title,
             "authors": authors or [], "evidence": [ref],

@@ -1,18 +1,21 @@
 {
   "schemaVersion": "1.0.0",
-  "stage": "pending_review",
-  "sourceBundleSha256": "71a3d51a286d328223deaf71000e408a553cdc53e00548841ffd8ed66165f431",
+  "stage": "partially_reviewed",
+  "sourceBundleSha256": "8c78fa41c474d1d027e7633aee1724b96b3604074c2aacc22323b93eedb09390",
   "rows": [
     {
       "assetId": "wger:movement:9",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:345",
@@ -29,12 +32,15 @@
       "assetId": "wger:movement:12",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4829",
@@ -108,12 +114,15 @@
       "assetId": "wger:movement:20",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:228",
@@ -152,12 +161,15 @@
       "assetId": "wger:movement:31",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:289",
@@ -210,12 +222,15 @@
       "assetId": "wger:movement:41",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:343",
@@ -279,12 +294,15 @@
       "assetId": "wger:movement:43",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:407",
@@ -312,12 +330,15 @@
       "assetId": "wger:movement:46",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:405",
@@ -400,12 +421,15 @@
       "assetId": "wger:movement:48",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:759",
@@ -455,12 +479,15 @@
       "assetId": "wger:movement:50",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:344",
@@ -565,12 +592,15 @@
       "assetId": "wger:movement:51",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:758",
@@ -609,12 +639,15 @@
       "assetId": "wger:translations:2138",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "instruction_text"
+      ]
     },
     {
       "assetId": "wger:translations:282",
@@ -644,12 +677,15 @@
       "assetId": "wger:movement:56",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:1061",
@@ -688,12 +724,15 @@
       "assetId": "wger:movement:57",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:718",
@@ -743,12 +782,15 @@
       "assetId": "wger:movement:71",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:69",
@@ -787,12 +829,15 @@
       "assetId": "wger:movement:73",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:15",
@@ -919,12 +964,15 @@
       "assetId": "wger:movement:75",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:77",
@@ -985,12 +1033,15 @@
       "assetId": "wger:translations:2789",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "instruction_text"
+      ]
     },
     {
       "assetId": "wger:images:113",
@@ -1076,12 +1127,15 @@
       "assetId": "wger:movement:76",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:38",
@@ -1175,12 +1229,15 @@
       "assetId": "wger:movement:79",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:268",
@@ -1244,12 +1301,15 @@
       "assetId": "wger:movement:81",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:362",
@@ -1310,12 +1370,15 @@
       "assetId": "wger:movement:82",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:421",
@@ -1409,12 +1472,15 @@
       "assetId": "wger:movement:83",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:109",
@@ -1431,12 +1497,13 @@
       "assetId": "wger:translations:2847",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "editorial_review_pending",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Conferir formulacao sobre antebracos/sustentacao, cabeca e variante pronada antes de usar como ensino. Nao corrigido por inferencia."
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": []
     },
     {
       "assetId": "wger:translations:1165",
@@ -1508,12 +1575,15 @@
       "assetId": "wger:movement:84",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:110",
@@ -1585,12 +1655,15 @@
       "assetId": "wger:movement:91",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:74",
@@ -1651,12 +1724,13 @@
       "assetId": "wger:translations:2888",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "blocked_instruction",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Redacao contém trechos sem sentido, como bracos armazenados e humanos multiplos. Nao apresentar como instrucao nem completar com IA."
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": []
     },
     {
       "assetId": "wger:images:27",
@@ -1695,12 +1769,15 @@
       "assetId": "wger:movement:92",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:81",
@@ -1794,12 +1871,15 @@
       "assetId": "wger:movement:94",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:80",
@@ -1860,12 +1940,15 @@
       "assetId": "wger:movement:95",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:129",
@@ -2026,12 +2109,15 @@
       "assetId": "wger:movement:1027",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:1972",
@@ -2081,12 +2167,15 @@
       "assetId": "wger:movement:1028",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3647",
@@ -2136,12 +2225,15 @@
       "assetId": "wger:movement:1029",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3627",
@@ -2191,12 +2283,15 @@
       "assetId": "wger:movement:1080",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2025",
@@ -2257,12 +2352,15 @@
       "assetId": "wger:movement:1081",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3651",
@@ -2312,12 +2410,15 @@
       "assetId": "wger:movement:1082",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2032",
@@ -2367,12 +2468,15 @@
       "assetId": "wger:movement:1083",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4475",
@@ -2422,12 +2526,15 @@
       "assetId": "wger:movement:1084",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2034",
@@ -2492,12 +2599,15 @@
       "assetId": "wger:movement:1086",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2036",
@@ -2558,12 +2668,15 @@
       "assetId": "wger:movement:1087",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3659",
@@ -2624,12 +2737,15 @@
       "assetId": "wger:movement:1088",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2038",
@@ -2690,12 +2806,15 @@
       "assetId": "wger:movement:1089",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2647",
@@ -2767,12 +2886,15 @@
       "assetId": "wger:movement:1090",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2042",
@@ -2800,12 +2922,15 @@
       "assetId": "wger:movement:1091",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2133",
@@ -2877,12 +3002,15 @@
       "assetId": "wger:movement:1092",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2047",
@@ -2943,12 +3071,15 @@
       "assetId": "wger:movement:1093",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2049",
@@ -2976,12 +3107,15 @@
       "assetId": "wger:movement:1094",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3688",
@@ -3031,12 +3165,15 @@
       "assetId": "wger:movement:1096",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3690",
@@ -3086,12 +3223,15 @@
       "assetId": "wger:movement:1098",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2057",
@@ -3119,12 +3259,15 @@
       "assetId": "wger:movement:1099",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2058",
@@ -3174,12 +3317,15 @@
       "assetId": "wger:movement:1100",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2059",
@@ -3207,12 +3353,15 @@
       "assetId": "wger:movement:1101",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2061",
@@ -3240,12 +3389,15 @@
       "assetId": "wger:movement:1102",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2064",
@@ -3273,12 +3425,15 @@
       "assetId": "wger:movement:1103",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4488",
@@ -3339,12 +3494,15 @@
       "assetId": "wger:movement:1638",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2744",
@@ -3405,12 +3563,15 @@
       "assetId": "wger:movement:1639",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2745",
@@ -3471,12 +3632,15 @@
       "assetId": "wger:movement:1640",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2747",
@@ -3537,12 +3701,15 @@
       "assetId": "wger:movement:1641",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3666",
@@ -3603,12 +3770,15 @@
       "assetId": "wger:movement:1642",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2751",
@@ -3669,12 +3839,15 @@
       "assetId": "wger:movement:1648",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3673",
@@ -3735,12 +3908,15 @@
       "assetId": "wger:movement:1650",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2766",
@@ -3801,12 +3977,15 @@
       "assetId": "wger:movement:1651",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2768",
@@ -3867,12 +4046,15 @@
       "assetId": "wger:movement:1652",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2770",
@@ -3933,12 +4115,15 @@
       "assetId": "wger:movement:1653",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2772",
@@ -3999,12 +4184,15 @@
       "assetId": "wger:movement:1654",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3682",
@@ -4021,12 +4209,13 @@
       "assetId": "wger:translations:2775",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "blocked_instruction",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Descricao promocional/anatomica da maquina nao fornece preparacao, ajuste, execucao e retorno. Nao equivale a instrucao suficiente."
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": []
     },
     {
       "assetId": "wger:translations:2774",
@@ -4076,12 +4265,15 @@
       "assetId": "wger:movement:1656",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3752",
@@ -4131,12 +4323,15 @@
       "assetId": "wger:movement:1657",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4567",
@@ -4186,12 +4381,15 @@
       "assetId": "wger:movement:1658",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4613",
@@ -4241,12 +4439,15 @@
       "assetId": "wger:movement:1659",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3839",
@@ -4296,12 +4497,15 @@
       "assetId": "wger:movement:1660",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3840",
@@ -4351,12 +4555,15 @@
       "assetId": "wger:movement:1661",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2782",
@@ -4406,12 +4613,15 @@
       "assetId": "wger:movement:1662",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2783",
@@ -4461,12 +4671,15 @@
       "assetId": "wger:movement:1666",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:2785",
@@ -4516,12 +4729,15 @@
       "assetId": "wger:movement:1668",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3865",
@@ -4571,12 +4787,13 @@
       "assetId": "wger:movement:1670",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "variant_review_pending",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Titulo portugues fala em circulos; corpo descreve balanco frente/tras, coerente com os demais nomes. Resolver variante antes de liberar titulo/ensino; movimento1670 tambem retido."
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": []
     },
     {
       "assetId": "wger:translations:4584",
@@ -4615,12 +4832,13 @@
       "assetId": "wger:translations:2794",
       "kind": "instruction",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "variant_review_pending",
       "reasons": [
-        "Conferir atribuicao, fidelidade e permissao da operacao pretendida"
+        "Titulo portugues fala em circulos; corpo descreve balanco frente/tras, coerente com os demais nomes. Resolver variante antes de liberar titulo/ensino; movimento1670 tambem retido."
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": []
     },
     {
       "assetId": "wger:translations:2793",
@@ -4637,12 +4855,15 @@
       "assetId": "wger:movement:1672",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3870",
@@ -4692,12 +4913,15 @@
       "assetId": "wger:movement:1679",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3875",
@@ -4747,12 +4971,15 @@
       "assetId": "wger:movement:1680",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:3878",
@@ -4802,12 +5029,15 @@
       "assetId": "wger:movement:1683",
       "kind": "movement",
       "sourceId": "EX01",
-      "state": "pending_review",
+      "state": "consultation_approved",
       "reasons": [
-        "Conferir populacao/ambiente e requisitos reais para o uso pretendido antes de liberar pratica"
+        "Consulta documental liberada sob creditos/condicoes; pratica e entrega no APK nao homologadas"
       ],
-      "reviewer": null,
-      "practiceApproved": false
+      "reviewer": "Codex (agente de IA), revisao documental/editorial em 21/10/2026; sem homologacao clinica humana",
+      "practiceApproved": false,
+      "allowedOperations": [
+        "catalog_metadata"
+      ]
     },
     {
       "assetId": "wger:translations:4596",
@@ -5816,5 +6046,7 @@
     }
   ],
   "runtimeApproved": 0,
-  "humanProfessionalReviewClaimed": false
+  "humanProfessionalReviewClaimed": false,
+  "decisionRecord": "content/manifests/pilot-review-decisions.json",
+  "consultationApprovedAssets": 75
 }

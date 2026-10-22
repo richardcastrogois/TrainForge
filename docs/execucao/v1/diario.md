@@ -56,3 +56,14 @@ Próximas entradas devem registrar somente ações/resultados efetivos, com hist
 - [Resultado, caminhos e próximos passos](../../conteudo/preparacao-local-2026-10-21.md). V1-004 concluída no escopo de contrato/preparação; V1-005 em andamento pela fila real. V1-006/019não concluídas; sem escrita emDB, alteração Flutter/Go, provisão cloud, compra ou APK. Conferência final de geração/testes registrada após execução.
 
 - Conferência final:30testes de conteúdo/documentação passaram; geração e auditoria local passaram; `git diff --check` sem erro. Três arquivos locais derivados de terceiros confirmados como ignorados pelo Git. Commit local autorizado: `chore: prepare real pilot content and editorial review`; sem push.
+
+## 21/10/2026 — primeira revisão efetiva para consulta
+
+- Preparação anterior salva no commit local `7748f18`, sem push. Revisão documental continuou na mesma etapa, identificada como trabalho do agenteCodex, sem revisor humano/profissional presumido.
+- Seis textosPTwger conferidos; dois textos preservados para consulta. Outros quatro têm pendências específicas de redação, suficiência ou variante. Movimento1670 retido pela divergência título/corpo;1022 mantém bloqueio anterior.
+- Projeção separada:73metadados/2textos,0prática,0mídia,0entregaAPK validada;437ativos fora da projeção. Cada decisão presa ao hash do objeto e com créditos/condições próprios. Nenhuma nova tradução/dose/instrução completada porIA.
+- Corrigido desvio do contrato em20ativos: mapas de exceções saem da etiqueta escalar de licença para `sourceRightsFacts`, preservados. Validador e caso de regressão acrescentados; originais intactos.
+- [Resultado e limites](../../conteudo/revisao-consulta-2026-10-21.md). TermosCCBYSA3/4conferidos em fontes primárias, sem copiar seus textos integrais. V1-005 permanece em andamento;006/019/Go/banco/Flutter/APK não concluídos por esta revisão.
+- Primeira execução de37testes detectou somente inventário gerado desatualizado após novas ferramentas; regenerar e conferir antes do commit. Resultado final registrado após execução.
+
+- Conferência final:37testes passaram; auditoria de512ativos/1.069.660células passou; checks de preparação e revisão passaram. Mapa documental regenerado/conferido e diff sem erro. Quatro arquivos derivados locais continuam ignorados. Commit local autorizado desta revisão: `chore: review pilot consultation content`; sem push.

@@ -38,6 +38,15 @@ class EditorialTests(unittest.TestCase):
         b=self.bundle();b["assets"][0]["content"]["itemRefs"]=["missing"]
         self.assertTrue(validate_bundle(b))
 
+    def test_rights_facts_not_misrepresented_as_one_license(self):
+        b = self.bundle()
+        b["assets"][0]["rights"]["label"] = {"article": "CC BY", "photos": "unknown"}
+        self.assertTrue(validate_bundle(b))
+        a = asset("fixture:movement", "movement", "fixture:source", b["assets"][0]["evidence"][0],
+                  rights={"label": {"article": "CC BY", "photos": "unknown"}, "scope": "movement_metadata", "licenseUrl": None, "attribution": None})
+        self.assertIsNone(a["rights"]["label"])
+        self.assertEqual(a["rights"]["sourceRightsFacts"]["photos"], "unknown")
+
     def test_dose_requires_valid_unit_and_origin(self):
         for measure in [{"quantity":30,"unit":"minutes?","sourceField":"x"},{"quantity":-1,"unit":"s","sourceField":"x"},{"quantity":True,"unit":"s","sourceField":"x"},{"quantity":float("nan"),"unit":"s","sourceField":"x"},{"quantity":30,"unit":"s"}]:
             b=self.bundle();b["assets"][0]["dose"]["measurements"]=[measure];self.assertTrue(validate_bundle(b))
