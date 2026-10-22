@@ -1,0 +1,356 @@
+{
+  "contract": "trainforge.food-staging/1",
+  "scope": "offline-food-staging-preflight",
+  "story": "V1-019",
+  "inputs": [
+    {
+      "path": "content/manifests/pilot-prepared.json",
+      "sha256": "54335c2feed761dffdb243b17e7f0934673c15edd91deccfa06b47e84547e72e"
+    },
+    {
+      "path": "content/manifests/pilot-candidates.json",
+      "sha256": "46f04179845f36fe8944997bbb3b11fa76cea692595185400e23ec31300507d4"
+    }
+  ],
+  "families": [
+    {
+      "familyId": "AL01",
+      "name": "USDA FoodData Central",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/24",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL02",
+      "name": "Open Food Facts",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/25",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL03",
+      "name": "PortFIR / TCA",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/26",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL04",
+      "name": "Anses Ciqual 2025",
+      "state": "prepared_snapshot",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/27",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL05",
+      "name": "CoFID 2021",
+      "state": "prepared_snapshot",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/28",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL06",
+      "name": "Fineli",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/29",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL07",
+      "name": "BLS 4.0",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/30",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL08",
+      "name": "Swiss Food Composition Database 7.1",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/31",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL09",
+      "name": "Frida",
+      "state": "dataset_not_prepared",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/32",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "AL10",
+      "name": "TBCA",
+      "state": "existing_rights_restriction",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/33",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR211",
+      "name": "Food-101 — Bossard, Guillaumin e Van Gool,2014",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/280",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR212",
+      "name": "Google Nutrition5k — dados visuais/ingredientes anotados",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/281",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR213",
+      "name": "nateraw/food — ViT ajustado paraFood-101",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/282",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR214",
+      "name": "LogMeal — reconhecimento alimentar especializado emnuvem",
+      "state": "existing_rights_restriction",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/283",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR215",
+      "name": "DailyFood-172/16 — generalização para refeições cotidianas",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/284",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR216",
+      "name": "Swin-Food101 — conversão ONNX pela onnx-community",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/285",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR217",
+      "name": "NutriLens — aplicação aberta e relatórios de reconhecimento",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/286",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR218",
+      "name": "Apple MobileCLIP — licenças separadas de software/modelo/dados",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/287",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR219",
+      "name": "GoCARB vs. Dietitians",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/288",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR220",
+      "name": "goFOOD — refeições em vida livre",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/289",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR225",
+      "name": "ML Kit Barcode Scanning — Android",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/294",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    },
+    {
+      "familyId": "PR226",
+      "name": "GS1 — dígito verificador e formato GTIN",
+      "state": "visual_method_or_tool_not_composition_dataset",
+      "catalogRef": "docs/conteudo/fontes.json",
+      "catalogPointer": "/sources/295",
+      "rightsReviewState": "pending",
+      "runtimeImportApproved": false
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "AL-CIQUAL-2025",
+      "familyId": "AL04",
+      "version": "2025",
+      "inputs": [
+        {
+          "path": "content/local/al-ciqual-2025-foods.jsonl",
+          "sha256": "6f3b5b620b7611e6b07f3e73db1a71094ca134b1d9a63c031014bedfb8826df9"
+        },
+        {
+          "path": "docs/conteudo/evidencias/ciqual-2025.xlsx",
+          "sha256": "5555c572fa3735991298d832d0427788fa69a11b4fd20a5d580d58942369fbb0"
+        },
+        {
+          "path": "docs/conteudo/evidencias/ciqual-2025-windows.evidencia.json",
+          "sha256": "682b132aa64c0ac6a85e6d50c577454205a26170703b19a485f2d5adb4267c53"
+        }
+      ],
+      "inputRows": 3484,
+      "normalizedRows": 3484,
+      "exactDuplicateRows": 0,
+      "sourceIdentities": 3484,
+      "uniqueSourceCodes": 3484,
+      "conflictingSourceCodes": 0,
+      "conflictingIdentities": 0,
+      "tableRows": {
+        "composition nutritionnelle": 3484
+      },
+      "cells": 261300,
+      "valueStates": {
+        "less_than": 20075,
+        "missing": 83246,
+        "numeric": 155465,
+        "trace": 2514
+      },
+      "measurementKinds": {
+        "factor": 3484,
+        "nutrient": 257816
+      },
+      "technicalNumericCandidates": 151981,
+      "blockingReasonCounts": {
+        "factor_is_not_food_nutrient": 3484,
+        "no_exact_numeric_quantity": 105835,
+        "nutrient_unit_unresolved": 3484
+      },
+      "normalizedSha256": "7634245c54dd3e2ef1659c6b957ce9d1b0a199ed01a524ec0b78f9403417e6da",
+      "reviewState": "pending",
+      "runtimeImportApproved": false,
+      "calculationsApproved": false,
+      "normalizedLocalPath": "content/local/food-v1-al-ciqual-2025.staging.jsonl"
+    },
+    {
+      "sourceId": "AL-COFID-2021",
+      "familyId": "AL05",
+      "version": "2021",
+      "inputs": [
+        {
+          "path": "content/local/al-cofid-2021-foods.jsonl",
+          "sha256": "a844941779930f64def3efc08ef88d3f7c550a7801979e661c0ef97d44b02708"
+        },
+        {
+          "path": "docs/conteudo/evidencias/cofid-2021.xlsx",
+          "sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d"
+        },
+        {
+          "path": "docs/conteudo/evidencias/cofid-2021.evidencia.json",
+          "sha256": "fabc19492cb65ed666c2f43e6ad6b5e6eba518647d60f7d44c4e768ccd63562c"
+        }
+      ],
+      "inputRows": 37531,
+      "normalizedRows": 37531,
+      "exactDuplicateRows": 0,
+      "sourceIdentities": 2887,
+      "uniqueSourceCodes": 2886,
+      "conflictingSourceCodes": 1,
+      "conflictingIdentities": 2,
+      "tableRows": {
+        "1.10 (MUFA per 100gFood)": 2887,
+        "1.11 (PUFA per 100gFA)": 2887,
+        "1.12 (PUFA per 100gFood)": 2887,
+        "1.13 Phytosterols": 2887,
+        "1.14 Organic Acids": 2887,
+        "1.2 Factors": 2887,
+        "1.3 Proximates": 2887,
+        "1.4 Inorganics": 2887,
+        "1.5 Vitamins": 2887,
+        "1.6 Vitamin Fractions": 2887,
+        "1.7 (SFA per 100gFA)": 2887,
+        "1.8 (SFA per 100gFood)": 2887,
+        "1.9 (MUFA per 100FA)": 2887
+      },
+      "cells": 808360,
+      "valueStates": {
+        "missing": 568020,
+        "numeric": 198132,
+        "present_quantity_unknown": 11967,
+        "trace": 30226,
+        "unparsed": 15
+      },
+      "measurementKinds": {
+        "factor": 14435,
+        "nutrient": 793925
+      },
+      "technicalNumericCandidates": 26418,
+      "blockingReasonCounts": {
+        "basis_is_fatty_acids_not_food": 282926,
+        "factor_is_not_food_nutrient": 14435,
+        "food_basis_unresolved": 271378,
+        "no_exact_numeric_quantity": 610228,
+        "nutrient_unit_unresolved": 14435,
+        "source_code_conflict": 560
+      },
+      "normalizedSha256": "5d515b7eea2abec5718d91be2948949a2b1e66bbf086c1beca29072caebeb9a9",
+      "reviewState": "pending",
+      "runtimeImportApproved": false,
+      "calculationsApproved": false,
+      "normalizedLocalPath": "content/local/food-v1-al-cofid-2021.staging.jsonl"
+    }
+  ],
+  "familyCount": 22,
+  "preparedSources": 2,
+  "sourceIdentities": 6371,
+  "sourceTableRows": 41015,
+  "compositionCellsPreserved": 1069660,
+  "runtimeFoodsImported": 0,
+  "runtimeImportApproved": false,
+  "calculationsApproved": false,
+  "networkCalls": 0,
+  "databaseWrites": 0,
+  "limits": [
+    "Rights review and source exceptions pending; no grant inferred from license names",
+    "Original language/preparation preserved; no Portuguese translation, portion or density invented",
+    "Technical candidate is not permission or nutritional/clinical validation",
+    "CoFID code collision and alcohol unit mapping remain unresolved",
+    "No search/register-consumption API or Flutter nutrition integration delivered"
+  ],
+  "localManifest": {
+    "path": "content/local/food-v1-staging-manifest.json",
+    "sha256": "d33d0066cb66330b830d27b9585db2e4bf8873fc5a810a8a06303cabd8f44f40"
+  }
+}

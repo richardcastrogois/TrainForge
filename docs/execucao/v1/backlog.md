@@ -601,13 +601,13 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-019 — Validar e importar o lote alimentar
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.
 
 Dependências: V1-004, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md; docs/execucao/v1/alimentacao-preflight.md
 
 Critérios de aceite:
 
@@ -629,7 +629,7 @@ Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura en
 
 Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 22/10: preflight/staging offline implementado e validado sobre6371identidades de origem/1069660células dos snapshotsCiqual/CoFID já auditados; inventário22famílias.13testesnovos, estados/base/fatores/colisão/atribuição e hashes preservados. RuntimeImportApproved/calculationsApproved false,0alimentos noDB/API/APK. Ver alimentacao-preflight.md e food-preflight-verification.json. Continuar revisão específica de direitos, unidades/identidades e futuro importadorGo; não fechar019com staging.
 
 ### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 

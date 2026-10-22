@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-22",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-011",
+  "next": "V1-019",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -1297,7 +1297,7 @@
           "id": "V1-019",
           "title": "Validar e importar o lote alimentar",
           "userStory": "Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1318,7 +1318,8 @@
             "docs/arquitetura/fluxos.md",
             "docs/execucao/v1/decisoes-piloto.md",
             "content/manifests/pilot-prepared.json",
-            "docs/conteudo/preparacao-local-2026-10-21.md"
+            "docs/conteudo/preparacao-local-2026-10-21.md",
+            "docs/execucao/v1/alimentacao-preflight.md"
           ],
           "acceptance": [
             "Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária",
@@ -1352,7 +1353,7 @@
             "Manifesto alimentar aprovado",
             "Lote alimentar versionado no DB"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "22/10: preflight/staging offline implementado e validado sobre6371identidades de origem/1069660células dos snapshotsCiqual/CoFID já auditados; inventário22famílias.13testesnovos, estados/base/fatores/colisão/atribuição e hashes preservados. RuntimeImportApproved/calculationsApproved false,0alimentos noDB/API/APK. Ver alimentacao-preflight.md e food-preflight-verification.json. Continuar revisão específica de direitos, unidades/identidades e futuro importadorGo; não fechar019com staging.",
           "completionEvidence": []
         },
         {
