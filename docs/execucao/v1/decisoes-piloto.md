@@ -1,3 +1,5 @@
+> Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
+
 # Direção do APK de avaliação
 
 Respostas diretas do autor em **21/10/2026**, posteriores ao planejamento inicial. Este registro ajusta o objetivo do piloto; não comprova implementação, aprovação de conteúdo ou teste do APK.
@@ -42,7 +44,7 @@ Para cada opção paga, registrar fornecedor, preço/moeda/data, cobrança únic
 
 A autorização é para pesquisar e apresentar condições, sem compra, contratação, criação de conta ou contato por inferência. Fontes gratuitas continuam elegíveis conforme suas permissões. Gratuito para consultar não comprova direito de incorporar conteúdo no APK. A decisão comercial específica de cada fornecedor permanece pendente até o autor aceitar uma proposta concreta.
 
-Nova pista do autor: ExerciseDB OSS/completo, wger, WorkoutX e pacotes de marketplace. A [verificação de fornecedores](../../conteudo/avaliacao-apis-exercicios-2026-10-21.md) registra fontes oficiais, diferenças de licença e candidatos com pagamento único. Não atribuir o mesmo fornecedor a ExerciseDB.dev/AscendAPI e ExerciseDB.io.
+Nova pista do autor: ExerciseDB OSS/completo, wger, WorkoutX e pacotes de marketplace. A [verificação de fornecedores](../../conteudo/opcoes-apis-exercicios.md) registra fontes oficiais, diferenças de licença e candidatos com pagamento único. Não atribuir o mesmo fornecedor a ExerciseDB.dev/AscendAPI e ExerciseDB.io.
 
 ## Consequência para V1-001
 

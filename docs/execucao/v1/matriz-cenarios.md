@@ -47,4 +47,4 @@ Conta nova começa sem histórico ou medidas. Para avaliar perfis/ambientes dife
 - Pesquisa complementar: partir da lacuna observada ou de pista específica; preservar conclusões N01–N46 e os componentes já conferidos.
 - Não solicitar idade, diagnóstico ou profissão pessoal só para explorar os cenários de interface. A elegibilidade para prática será tratada pelo conteúdo e pelos campos efetivamente necessários.
 
-[Decisões do autor](decisoes-piloto.md), [escopo](escopo.md), [backlog](backlog.md) e [comparação de fornecedores](../../conteudo/avaliacao-apis-exercicios-2026-10-21.md). Custo atualizado para avaliação: priorizar gratuito; referência de cerca deUS$19 em pagamento único, sem assinatura. Os valores maiores apresentados foram considerados inviáveis; nenhuma compra foi aprovada.
+[Decisões do autor](decisoes-piloto.md), [escopo](escopo.md), [backlog](backlog.md) e [comparação de fornecedores](../../conteudo/opcoes-apis-exercicios.md). Custo atualizado para avaliação: priorizar gratuito; referência de cerca deUS$19 em pagamento único, sem assinatura. Os valores maiores apresentados foram considerados inviáveis; nenhuma compra foi aprovada.
