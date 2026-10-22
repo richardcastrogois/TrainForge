@@ -104,7 +104,7 @@ def provision():
 
 def grant_runtime():
     verify_owned()
-    readonly=["sources","content_versions","content_withdrawals","program_sessions","program_items","food_versions"]
+    readonly=["sources","content_versions","content_withdrawals","program_sessions","program_items","food_versions","food_import_batches","food_batch_versions","food_withdrawals"]
     writable=["users","auth_families","refresh_tokens","access_tokens","enrollments","schedule_occurrences","activity_sessions","activity_events","idempotency_records","food_entries"]
     sql("GRANT USAGE ON SCHEMA trainforge_v1 TO trainforge_runtime; GRANT SELECT ON "+",".join("trainforge_v1."+x for x in readonly)+" TO trainforge_runtime; GRANT SELECT,INSERT,UPDATE,DELETE ON "+",".join("trainforge_v1."+x for x in writable)+" TO trainforge_runtime;",NAME)
 

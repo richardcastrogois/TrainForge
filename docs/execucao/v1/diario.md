@@ -143,3 +143,17 @@ Lote completo existente:3484identidadesCiqual/261300células e2887identidadesCoF
 V1-019doing/completionEvidencevazio; próximo trabalho autônomo: direitos/operação, base/grupoCoFID, identidade/métodos e importadorGo idempotente após manifesto específico aprovado. API/Swagger/APK0.1.1+2 não alterados; serviços seguem parados. Handoff/backlog/mapas atualizados; grafoFlutter não reindexado porque lib não mudou. Sem push/deploy/contratação/contatoexterno.
 
 Verificação final deste incremento:61testesPython passaram (13novos+48existentes); geração/backlog/dependências/links passaram e --check conferiu hashes sem refazer planilhas. Não repetidos buildAPK, Go/Flutter ou restore/import históricos, pois seus códigos e contratos não mudaram.
+
+## 22/10/2026 — lote alimentar autorizado importado, com idempotência e restore
+
+Continuação autônoma solicitada pelo autor até o limite, preservando a intervençãoGoogle. Conferência direcionada de duas fontes já escolhidas: metadadosCiqual locais SHA/MD5/arquivo666260não restrito e Etalab2oficial; páginaCoFID/OGLindexadoprimário e guia de bases/grupos. Aberturasindisponíveis/403não contornadas; semnova pesquisaampla ou coleta de dataset. Distinguido arquivo principalCoFID2887da contagem histórica limitada2760e do arquivo oldfoods separado.
+
+Revisão porfonte/operação emfood-review-decisions.json; sourceURL/licença/atribuição/versão/data/alterações/semgarantia preservados, sem imagens/guias/livros/dadospessoais nem prescrição. Projeção revisada6369registros (3484+2885),2identidadesconflitantes excluídas e3gruposBTMsem baseinferida.6335bases100g/31bases100ml/3desconhecidas;768461célulasdenutrientes+300639auxiliares+560excluídas conciliam1069660células. Denominadoresconflitantes têm valor/declaracão retidos, escala bloqueada.
+
+ImportadorGo comos.OpenRoot/limites/validaçãoexata das colunas, decimais, estados e direitos; CLI restrita aoDBisolado. Migration00005aditiva de idioma/versão/operações/trilhalotes/retirada. Oprimeiroensaio descartável detectou duplicação da FKjáexistente na00002; corrigidoantesdeaplicar00005noDBentregue. Testesisolados passaram paraidempotência/rollback/imutabilidade/runtime readonly e basefoiremovida.
+
+DBreal isolado:6369inseridos, reimport0/6369. Sem alteração nosdadosanteriores nem usuáriofictício. Checkpointanterior preservado e backupnovoefetivamente restaurado em outrabase, com contagem/hashdetodasastabelasiguais; base de restore removida. Fontes/datasets/backup/artefatos completos ficam ignorados. V1-019donecomcompletionEvidence;020continua dependendo de013/019/008. API/Flutteralimentar não integrados, Swagger11/APK0.1.1+2mantidos; sem rebuildFlutter nem reindexaçãoGraphify porque lib não mudou.
+
+Go test/vet e sete testesPythonnovos deprojeçãopassaram; documentação/backlog/mapas/handoff atualizados. SemGoogle real, push, deploy, contratação, integração paga ou contatoexterno.
+
+Verificação final do lote:68testesPython passaram; Go test/vet passaram e fixturesPostgreSQL executadas (não apenas skip). Diretórios de dados originais e artefatos/backup permanecem ignorados. A escrita de alimentos reais ocorreu apenas noDBisolado explicitamente verificado.

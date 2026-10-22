@@ -4,15 +4,19 @@ Atualizado em22/10/2026. Raiz correta: `C:/dev/TrainForge/trainforge`. **Primeir
 
 ## Trabalho autônomo enquanto autor está fora
 
-V1-019 agora doing e próximo incremento do backlog: [preflight alimentar](alimentacao-preflight.md) implementado,6371identidades por fonte/código/nome/versão,41015linhas,1069660células,22famílias inventariadas.13testes novos passaram; staging local e recibo agregado conferidos porhash. Semnova coletaExcel/download/rede/banco. FatorJones e fatoresCoFID separados de nutrientes; denominadoresFA porcoluna e exceção100g/100ml preservados;1códigoCoFIDcom2identidades bloqueadas. Nenhum alimento/consumo importado, sem mudançaAPI/Swagger/APK.
+**V1-019 concluída para o lote alimentar autorizado.** [Importação real](alimentacao-importacao.md):6369registros (3484Ciqual/2885CoFID),2identidadesdo código13-669excluídas,3basesBTMdesconhecidas mantidas. Preflight6371identidades/1069660células preservado como histórico candidato; revisão específica porfonte e projeção final separadas.
 
-Próximo agente pode continuar revisão das evidências de direitos já arquivadas, correspondência de base/grupo e política de identidade/métodos; depois importadorGo idempotente comDBfixture. Não marcar019done com candidato técnico, não liberar cálculo por technicalCalculationCandidate e não exigirGoogle para trabalhar nessas dependências independentes. Consultar food-preflight-verification.json; flags runtimeImportApproved/calculationsApproved false.
+Goimportador verifica operação/atribuição/hash/cabeçalho/estado/decimal/base/grupo, limita paths/tamanhos e grava transacionalmente com idempotência/imutabilidade. Migration00005aditiva aplicada; runtime não pode escrever editorial. Reimportação0novos/6369inalterados. Backupnovo restaurado em DBseparada, comparando contagem/hash de todas as tabelas; alvo removido. Checkpoint anterior mantido sem alegar teste de restore dele. Recibos food-review-verification.json, food-import-fixtures-verification.json e food-import-verification.json.
+
+Permissões são específicas de consulta/composição/escala fiel de dados, sem clínica, dieta, porção caseira ou mídia. Outras20famílias continuam inventariadas sem aprovação porherança. APIbusca/consumo e Flutteralimentar **não entregues**; Swaggercontinua11operações, APK0.1.1+2inalterado. Não repetir export/import/restore sem mudança concreta.
+
+Próxima dependência funcional éV1-013 antes de020;011ainda exigeGooglemanual. Preparação técnica de contratos/testes pode continuar sem concluir histórias dependentes ou inventar contas/requisitos. Manter gates deaceite e a cobertura completa do produto.
 
 ## Estado Git e entregas
 
 O remoto main foi consultado e continuava em `90e746e2cdf35c5ff0788cd3441e269b1748f533`. Os incrementos `1765708` (logs/sessão) e `6d3f3a4` (auth/checkpoint) foram commits locais; os incrementos desta continuação também devem ser locais. Não houve push. A lista de mudanças no VSCode não significa envio ao remoto nem confirmação pendente dos commits já feitos. Conferir Git real antes da próxima edição.
 
-Etapas01/02 concluídas:73metadados de consulta importados,439excluídos e0prática/instrução/mídia liberadas. V1-014 agora concluída como leitura de catálogo; V1-011 continua doing/completionEvidence vazio. V1-012/021/022 têm preparação parcial, sem fechamento das dependências ou aceite integrado. V1-003 continua transversal/publicação remota pendente.
+Etapas01/02 concluídas:73metadados de consulta importados,439excluídos e0prática/instrução/mídia liberadas. V1-014 concluída como leitura de catálogo e019como importação alimentarGo/DB; V1-011 continua doing/completionEvidence vazio. V1-012/021/022 têm preparação parcial, sem fechamento das dependências ou aceite integrado. V1-003 continua transversal/publicação remota pendente.
 
 ## Implementação local real
 

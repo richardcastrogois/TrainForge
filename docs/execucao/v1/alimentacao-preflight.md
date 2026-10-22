@@ -1,3 +1,5 @@
+> Atualização posterior em22/10: o preflight abaixo foi preservado como etapa candidata. A [revisão/importação Go](alimentacao-importacao.md) passou depois e importou6369registros autorizados, com reimportação/restore verificados. V1-019 encerrou o lote; busca/consumoHTTP e Flutter seguem pendentes.
+
 # V1-019 — preflight alimentar offline
 
 Incremento de22/10/2026, independente do loginGoogle e de decisões comerciais. **Validação e staging candidatos implementados; nenhum alimento importado no banco, API ou APK. V1-019 permanece doing.** Não equivale a homologação nutricional, clínica ou de direitos.

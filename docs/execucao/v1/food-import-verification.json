@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-22",
+  "scope": "real-reviewed-food-import-and-restore",
+  "dryRun": {
+    "dryRun": true,
+    "totalFoods": 6369,
+    "inserted": 0,
+    "unchanged": 0,
+    "artifactSha256": "f3a62f54a3cb4d5b4ba755c795076288945bc0f8f628c6506cfb4b56dd353174"
+  },
+  "firstImport": {
+    "dryRun": false,
+    "totalFoods": 6369,
+    "inserted": 6369,
+    "unchanged": 0,
+    "artifactSha256": "f3a62f54a3cb4d5b4ba755c795076288945bc0f8f628c6506cfb4b56dd353174"
+  },
+  "reimport": {
+    "dryRun": false,
+    "totalFoods": 6369,
+    "inserted": 0,
+    "unchanged": 6369,
+    "artifactSha256": "f3a62f54a3cb4d5b4ba755c795076288945bc0f8f628c6506cfb4b56dd353174"
+  },
+  "sourceChecks": {
+    "sourceFoodCounts": {
+      "AL-COFID-2021": 2885,
+      "AL-CIQUAL-2025": 3484
+    },
+    "unknownBasis": 3,
+    "millilitreBasis": 31,
+    "conflictingCodeImported": 0,
+    "privateOwnersCreated": 0,
+    "runtimeCanWriteFoods": false,
+    "runtimeCanReadFoods": true,
+    "nutrientStates": {
+      "less_than": 20075,
+      "numeric": 309502,
+      "present_quantity_unknown": 11625,
+      "missing": 401034,
+      "trace": 26211,
+      "unparsed": 14
+    }
+  },
+  "sameCountsAndAllTableContentAfterRestore": true,
+  "tables": {
+    "access_tokens": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "activity_events": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "activity_sessions": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "auth_families": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "batch_content": {
+      "count": 73,
+      "rowsSha256": "477d6d363d8b0060d8ce91288888941ebab6417fc966e48abec1b550f4c57a9d"
+    },
+    "content_versions": {
+      "count": 73,
+      "rowsSha256": "47afcbfb5136b5724b6bbbfc141508f9890a468c12f6b899d6e947a25e6cabc9"
+    },
+    "content_withdrawals": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "enrollments": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "food_batch_versions": {
+      "count": 6369,
+      "rowsSha256": "4d6261cd4f2c28f42ef3baecb7d4df72b680ccfb12a9f7f6abc3dffe145e38d2"
+    },
+    "food_entries": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "food_import_batches": {
+      "count": 1,
+      "rowsSha256": "e6c20d9e87ea24ccdb6bfac29e96971928917c1981a9700bafda1a57b36058c0"
+    },
+    "food_versions": {
+      "count": 6369,
+      "rowsSha256": "f9b925b2d28ef90afe2a94131beca3c5120f7d48c82f5eea7fd7b57a2c4b3158"
+    },
+    "food_withdrawals": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "idempotency_records": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "import_batches": {
+      "count": 1,
+      "rowsSha256": "467df26b64dbef9eb0a537f13c2c7cebfbfd3c834452bdfa27a9792103d6c9b5"
+    },
+    "program_items": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "program_sessions": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "refresh_tokens": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "schedule_occurrences": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sources": {
+      "count": 3,
+      "rowsSha256": "0df62746890e8c682f182dd7cd01f16e193c1d6362ea73c85f96f12be3a87617"
+    },
+    "users": {
+      "count": 0,
+      "rowsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "restoreTargetRemoved": true,
+  "unrelatedDeliveredDataUnchanged": true,
+  "beforeBackup": {
+    "relativePath": ".local/backups/trainforge-v1-before-food-2a8f2e7efe07.dump",
+    "sha256": "581c1f098ca119de54879473d5541068e9f07e8c1d8bf17cfe49a62327e71aa6",
+    "restoreTested": false
+  },
+  "verifiedBackup": {
+    "relativePath": ".local/backups/trainforge-v1-post-food-2a8f2e7efe07.dump",
+    "sha256": "8b2510d4c4f004823337174f9a24320897e2088a7af0a8bf03ac777ef1e1a7ea",
+    "restoreTested": true
+  },
+  "realGoogleLoginValidated": false,
+  "foodHttpApiImplemented": false,
+  "flutterFoodIntegrated": false
+}

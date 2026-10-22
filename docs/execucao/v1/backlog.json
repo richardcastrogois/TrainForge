@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-22",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-019",
+  "next": "V1-011",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -1297,7 +1297,7 @@
           "id": "V1-019",
           "title": "Validar e importar o lote alimentar",
           "userStory": "Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.",
-          "status": "doing",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1319,7 +1319,9 @@
             "docs/execucao/v1/decisoes-piloto.md",
             "content/manifests/pilot-prepared.json",
             "docs/conteudo/preparacao-local-2026-10-21.md",
-            "docs/execucao/v1/alimentacao-preflight.md"
+            "docs/execucao/v1/alimentacao-preflight.md",
+            "content/manifests/food-review-decisions.json",
+            "docs/execucao/v1/alimentacao-importacao.md"
           ],
           "acceptance": [
             "Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária",
@@ -1353,8 +1355,34 @@
             "Manifesto alimentar aprovado",
             "Lote alimentar versionado no DB"
           ],
-          "handoff": "22/10: preflight/staging offline implementado e validado sobre6371identidades de origem/1069660células dos snapshotsCiqual/CoFID já auditados; inventário22famílias.13testesnovos, estados/base/fatores/colisão/atribuição e hashes preservados. RuntimeImportApproved/calculationsApproved false,0alimentos noDB/API/APK. Ver alimentacao-preflight.md e food-preflight-verification.json. Continuar revisão específica de direitos, unidades/identidades e futuro importadorGo; não fechar019com staging.",
-          "completionEvidence": []
+          "handoff": "22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver alimentacao-importacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.",
+          "completionEvidence": [
+            {
+              "date": "2026-10-22",
+              "scope": "Inventário22famílias e lote integral autorizado dos dois snapshots alimentares preparados; Go/DBisolado",
+              "files": [
+                "content/manifests/food-review-decisions.json",
+                "content/manifests/food-approved.json",
+                "services/api/internal/nutrition/import.go",
+                "services/api/migrations/00005_food_catalog_import.sql",
+                "docs/execucao/v1/food-review-verification.json",
+                "docs/execucao/v1/food-import-fixtures-verification.json",
+                "docs/execucao/v1/food-import-verification.json",
+                "docs/execucao/v1/alimentacao-importacao.md"
+              ],
+              "validation": [
+                "Direitos/atribuição/versão vinculados aos arquivos;6371identidades/1069660células conciliadas em6369registros, auxiliares e exclusões",
+                "Go dryrunvalidou todoartifact; PostgreSQLfixture separado verificou idempotência/rollback/imutabilidade/sem escritaeditorialruntime e foi removido",
+                "Importação real6369, reimportação0novos/6369inalterados; backup novo restaurado em outra base e hash/contagem de todas as tabelas iguais",
+                "Nutrientes ausentes/traço/N/limites preservados,100g/100ml porgrupoexato,3basesdesconhecidas e conflitosdedenominador semescala"
+              ],
+              "limits": [
+                "Sem consumo/dieta/porção caseira/receita inventados ou homologação clínica",
+                "Outras20famílias inventariadas permanecem fora da aprovação específica; expansão requer fonte/versão/uso próprios",
+                "APIalimentar/Flutter ainda não integrados;020continua dependendo de013/019/008; Google real/release/iOS pendentes"
+              ]
+            }
+          ]
         },
         {
           "id": "V1-020",
