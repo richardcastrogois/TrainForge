@@ -68,3 +68,7 @@ Cliente Android TrainForge avaliação release no projeto existente bootcamp-tre
 A captura mostra cadastro criado e uma data de uso; isso não comprova que o APKrelease fez login. API atual permanece loopbackHTTP exclusiva de debug. Nenhum endpointHTTPS/deploy foi inventado ou autorizado. Não executar alteração de certificados/trust store nem desinstalar o debug para contornar a assinatura diferente.
 
 A conta que administra o projeto pode ser diferente da contaGoogle do testador. O app usa somente GoogleSignIn.authenticate, sem autorização de APIsGoogle adicionais. Para identidade básica (openid/email/profile), oGoogle prevê exceção à lista deTestusers: um quarto e-mail pode autenticar sem constar nos três cadastrados. [Regra oficial](https://support.google.com/cloud/answer/15549945?hl=en). Adicionar testadores àlista é organização do piloto; não foi necessário criar clientOAuth por e-mail.
+
+## Correção de escopo — teste local
+
+O autor não quer hospedar agora. A pergunta dehospedagem foi uma antecipação indevida, não um pré-requisito de autenticação noemulador.011/012/013 concluídas no checkpoint local com critérios mapeados em [auth-local-fechamento.md](auth-local-fechamento.md). HTTPS fora de desenvolvimento continua obrigatório; implantaçãoHTTPS e validaçãoAPKrelease/iOS pertencem aos gates posteriores. Não repetir configuraçãoOAuth/login jávalidado para retomar consultas locais.

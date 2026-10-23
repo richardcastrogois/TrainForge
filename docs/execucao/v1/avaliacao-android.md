@@ -2,7 +2,7 @@
 
 Checkpoint de23/10/2026: **APK debug 0.1.3+4**, backend Go0.4.0 e banco V1 local. Biblioteca e composição alimentar já podem ser consultadas sem Google. LoginGoogle real Androiddebug, reabertura, falha/retomada deconexão, refreshnatural e logout validados em23/10. Reentrada na mesma conta e exclusão autorizada passaram; OAuthrelease/HTTPS pendentes. [Resultados reais](auth-real-android-verification.json). Publicação dos incrementos noGitHub autorizada em23/10; nenhum deploy.
 
-## Quando voltar ao notebook
+## Testar agora no notebook
 
 No terminal PowerShell do VSCode:
 
@@ -28,7 +28,7 @@ Depois de validar a sessão, **Meus dados e privacidade** permite consultar/copi
 
 O autor criou o cliente Android **TrainForge avaliação release** no projeto bootcamp-treinos-ia em23/10. Pacote com.example.trainforge e SHA-1 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D correspondem ao certificado dedicado local. [Recibo](oauth-release-verification.json). O clientWeb continua na configuração doFlutter e daAPI.
 
-Para este pacote/certificado, o cadastro está concluído. O próximo teste exige APIHTTPS deavaliação e APKrelease próprios; o ambiente atual éHTTPloopback/debug. A escolha da hospedagem está pendente de informação doautor, e nenhum deploy/provisionamento foi autorizado. Preservar os três clientes existentes; não publicar o projeto para contornar gates. [Guia técnicoOAuth](oauth-android.md).
+Para este pacote/certificado, o cadastro está concluído. O próximo teste exige APIHTTPS deavaliação e APKrelease próprios; o ambiente atual éHTTPloopback/debug. Oautor adiou hospedagem. Esse gate futuro não impede usar oAPKdebug local nem desenvolver aspróximas funções; nenhuma informação adicional sobre hospedagem énecessária agora. Preservar os três clientes existentes; não publicar o projeto para contornar gates. [Guia técnicoOAuth](oauth-android.md).
 
 ## Parar e consultar
 
@@ -59,6 +59,10 @@ Com o notebook disponível: ativar opções de desenvolvedor/depuração USB no 
 | Cadastro próprio, quantidade e consumo | Pendentes; nenhuma refeição/valor inventado |
 | Release/HTTPS e iOS | Pendentes de infraestrutura/configuração/testes próprios |
 
-V1-014 encerra a leitura do catálogo. V1-011 permanece doing; V1-012/021/022/020/025 têm preparação parcial, sem aceite indevido. O roteiro completo continua na [matriz de cenários](matriz-cenarios.md).
+V1-014 encerra a leitura do catálogo. V1-011/012/013 concluídas no aceite local; V1-012/021/022/020/025 têm preparação parcial, sem aceite indevido. O roteiro completo continua na [matriz de cenários](matriz-cenarios.md).
 
 Falha doGooglePlayServices foi observada no emulador e dispensada durante inspeção pública. Não houve validação de sua resolução ou de login real; não limpar contas/dados automaticamente. [Consulta alimentar e testes](alimentacao-consulta.md).
+
+## Prioridade confirmada pelo autor
+
+Teste noemulador e desenvolvimento local agora. A biblioteca foi aberta com73movimentos/0programas,APIpronta e APKatual. Não pedir hospedagem para iniciar esse teste. [Critérios locais concluídos](auth-local-fechamento.md); HTTPSstaging/release/iOS permanecem nas histórias próprias.

@@ -1,15 +1,15 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `7d74984cd0858532`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `334f3f976cf35a5b`.
 
-**12/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**15/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-020**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
 | EP01 | Recorte verificável e governança | 3 | 3 |
 | EP02 | Conteúdo, autoria e direitos | 3 | 3 |
 | EP03 | Fundação Go, contratos e banco | 4 | 4 |
-| EP04 | Identidade, privacidade e acesso | 3 | 0 |
+| EP04 | Identidade, privacidade e acesso | 3 | 3 |
 | EP05 | Biblioteca humana e API de catálogo | 3 | 1 |
 | EP06 | Atividade e alimentação registradas de verdade | 4 | 1 |
 | EP07 | Flutter e experiência da V1 | 7 | 0 |
@@ -99,9 +99,9 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-011 | doing | Autenticar Google no novo serviço | V1-008, V1-010 |
-| V1-012 | todo | Rotacionar e revogar refresh tokens | V1-011 |
-| V1-013 | doing | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
+| V1-011 | done | Autenticar Google no novo serviço | V1-008, V1-010 |
+| V1-012 | done | Rotacionar e revogar refresh tokens | V1-011 |
+| V1-013 | done | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
 ### EP05 — Biblioteca humana e API de catálogo
 
 ```mermaid
