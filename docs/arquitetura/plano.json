@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — auth, catálogo, consulta alimentar e privacidade Go/Flutter implementados; aceite Google e jornadas privadas pendentes",
+  "status": "PARCIAL REAL — auth/privacidade locais aceitos; alimentação particular e consumo Go/Flutter em aceite humano; atividade/prática/infraestrutura pendentes",
   "nodes": [
     {
       "id": "user",
@@ -12,8 +12,8 @@
       "id": "ui",
       "label": "Telas Flutter",
       "layer": "Flutter",
-      "description": "Entrada/conta, biblioteca, composição alimentar e política/controles privados implementados; contexto, adesão, execução, histórico e consumo ainda planejados.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter; lib/features/food_reference"
+      "description": "Entrada/conta, biblioteca, composição, privacidade e alimentação particular/consumo implementados; atividade/prática/Hoje integrado pendentes.",
+      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter; lib/features/food_reference; lib/features/nutrition"
     },
     {
       "id": "vm",
@@ -33,15 +33,15 @@
       "id": "http",
       "label": "Cliente Dio / sessão",
       "layer": "Rede",
-      "description": "Dio central: origem/configuração explícitas, sem redirects, refresh coordenado e logs por allowlist. Idempotência de outros domínios ainda planejada.",
+      "description": "Dio central com origem explícita, sem redirects, refresh coordenado e logs seguros; mutações nutricionais idempotentes vinculadas à conta.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "auth",
       "label": "Módulo auth Go",
       "layer": "API Go",
-      "description": "Implementado localmente: verificação Google, identidade issuer+sub, hashes de access/refresh, rotação e revogação por família. Aceite Google real pendente.",
-      "evidence": "services/api/internal/auth; docs/execucao/v1/auth-local-verification.json"
+      "description": "Google Androiddebug real/sessão/privacidade locais aceitos em23/10; distribuiçãorelease/HTTPS/iOS continuam nas histórias próprias.",
+      "evidence": "docs/execucao/v1/auth-local-fechamento.md; auth-real-android-verification.json"
     },
     {
       "id": "catalog",
@@ -59,17 +59,17 @@
     },
     {
       "id": "nutrition",
-      "label": "Nutrition Go: importação e consulta reais",
+      "label": "Nutrition Go: referências e consumo particular",
       "layer": "API Go",
-      "description": "6369referências revisadas importadas e consultáveis por busca/fonte/cursor/detalhe/ETag; cadastro e consumo privados pendentes.",
-      "evidence": "services/api/internal/nutrition; food-read-verification.json; alimentacao-consulta.md"
+      "description": "6369referências, cadastro particular, consumo, histórico, correção/exclusão e subtotais por coluna/unidade; aceite humano020pendente.",
+      "evidence": "services/api/internal/nutrition; docs/execucao/v1/alimentacao-registro.md; nutrition-local-verification.json"
     },
     {
       "id": "pg",
       "label": "PostgreSQL",
       "layer": "Dados",
       "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
-      "evidence": "services/api/migrations/00001–00007; privacy-local-verification.json; food-import-verification.json"
+      "evidence": "services/api/migrations/00001–00008; nutrition-local-verification.json; privacy-local-verification.json"
     },
     {
       "id": "manifest",
@@ -117,7 +117,7 @@
       "id": "food_candidate",
       "label": "Staging alimentar candidato",
       "layer": "Conteúdo",
-      "description": "6371identidades de origem,1069660células preservadas; candidatos ignorados emcontent/local. Direitos/importação/cálculos continuam pendentes.",
+      "description": "Prévia histórica de6371identidades; revisão posterior aprovou6369referências, excluindo2conflitantes. Outrasfamílias seguem candidatas.",
       "evidence": "docs/execucao/v1/alimentacao-preflight.md; contrato trainforge.food-staging/1"
     },
     {
@@ -138,8 +138,8 @@
       "id": "privacy",
       "label": "Privacidade e titularidade Go",
       "layer": "API Go",
-      "description": "Exportação própria paginada, confirmação temporária e exclusão transacional; inventário privado bloqueia schema desconhecido. Aceite pessoal pendente.",
-      "evidence": "services/api/internal/privacy; docs/execucao/v1/privacy-local-verification.json"
+      "description": "Exportação e exclusão próprias aceitas pessoalmente em23/10; inventário inclui declarações alimentares, cálculos e correções do020.",
+      "evidence": "docs/execucao/v1/auth-real-android-verification.json; nutrition-local-verification.json"
     },
     {
       "id": "network_limits",
@@ -203,7 +203,7 @@
       "label": "Verificar assinatura e claims",
       "input": "token/keys públicos",
       "output": "iss/sub/aud/exp válidos",
-      "evidence": "Verificador oficial em auth/google.go; fixtures criptográficas passaram; loginGoogle real pendente."
+      "evidence": "Google oficial e loginAndroiddebug pessoal aceitos em23/10; auth-real-android-verification.json"
     },
     {
       "from": "auth",
@@ -232,10 +232,10 @@
     {
       "from": "http",
       "to": "nutrition",
-      "label": "GET/POST foods; POST food-entries",
-      "input": "busca, cadastro próprio real ou foodVersionId + quantidade/unidade",
-      "output": "alimento pesquisado ou próprio identificado; consumo persistido",
-      "evidence": "Contrato proposto, não chamada executada."
+      "label": "Consulta pública; alimentos próprios e consumo privados",
+      "input": "versão, quantidade, evidência, preparo, data/fuso, revisão e Idempotency-Key",
+      "output": "consumo confirmado, histórico próprio e subtotais com ausências",
+      "evidence": "GoNutritionRepository; entries_handler.go; nutrition-local-verification.json; aceite humano emandamento"
     },
     {
       "from": "catalog",

@@ -1087,6 +1087,588 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/v1/me/food-entries": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Own consumption history by local day",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "YYYY-MM-DD",
+                        "name": "date",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "IANA name, UTC or fixed offset such as -03:00",
+                        "name": "timezone",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "1..20; default 10",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Account and filter-bound cursor",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.NutritionPage"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Record food consumption",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "UUID stable across retries",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Exact food version, quantity, unit, preparation, time, zone and measured/estimated evidence; revision zero",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.EntryInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Entry"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-entries/{id}": {
+            "delete": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Remove own consumption from active history",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Entry UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "UUID stable across retries",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Current revision; other fields omitted",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.EntryInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Entry"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Correct own consumption with optimistic revision",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Entry UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "UUID stable across retries",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Complete replacement; same food version and current revision; maximum 100 corrections",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.EntryInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Entry"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-summary": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Daily confirmed consumption subtotals by source column",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "YYYY-MM-DD",
+                        "name": "date",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "IANA name, UTC or fixed offset",
+                        "name": "timezone",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.NutritionTotals"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/foods": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Search own foods",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Literal name, maximum 100 characters",
+                        "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "1..20; default 10",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Account and filter-bound cursor",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.NutritionPage"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Create own food declaration",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "UUID, stable across retries; 24-hour retention",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Private declaration, nullable basis and nutrient values",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.OwnFoodInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.FoodDetail"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/privacy": {
             "get": {
                 "produces": [
@@ -1527,6 +2109,41 @@ const docTemplate = `{
                 }
             }
         },
+        "nutrition.Calculation": {
+            "type": "object",
+            "properties": {
+                "algorithm": {
+                    "type": "string"
+                },
+                "changes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.EntryChange"
+                    }
+                },
+                "food": {
+                    "$ref": "#/definitions/nutrition.FoodSummary"
+                },
+                "nutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.ScaledCell"
+                    }
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "preparation": {
+                    "type": "string"
+                },
+                "quantityEvidence": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "integer"
+                }
+            }
+        },
         "nutrition.Citation": {
             "type": "object",
             "properties": {
@@ -1573,6 +2190,100 @@ const docTemplate = `{
                 },
                 "quantity": {
                     "type": "integer"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.Entry": {
+            "type": "object",
+            "properties": {
+                "calculation": {
+                    "$ref": "#/definitions/nutrition.Calculation"
+                },
+                "deletedAt": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "foodId": {
+                    "type": "string"
+                },
+                "foodVersion": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "occurredAt": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "timezone": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.EntryChange": {
+            "type": "object",
+            "properties": {
+                "occurredAt": {
+                    "type": "string"
+                },
+                "preparation": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "quantityEvidence": {
+                    "type": "string"
+                },
+                "replacedAt": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "integer"
+                },
+                "timezone": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.EntryInput": {
+            "type": "object",
+            "properties": {
+                "foodId": {
+                    "type": "string"
+                },
+                "foodVersion": {
+                    "type": "string"
+                },
+                "occurredAt": {
+                    "type": "string"
+                },
+                "preparation": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "quantityEvidence": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "integer"
+                },
+                "timezone": {
+                    "type": "string"
                 },
                 "unit": {
                     "type": "string"
@@ -1761,6 +2472,164 @@ const docTemplate = `{
                 }
             }
         },
+        "nutrition.NutrientTotal": {
+            "type": "object",
+            "properties": {
+                "exactFraction": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "includedEntries": {
+                    "type": "integer"
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "sourceColumnKey": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "unknownEntries": {
+                    "type": "integer"
+                },
+                "value": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "nutrition.NutritionPage": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "nextCursor": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "nutrition.NutritionTotals": {
+            "type": "object",
+            "properties": {
+                "complete": {
+                    "type": "boolean"
+                },
+                "entries": {
+                    "type": "integer"
+                },
+                "estimatedEntries": {
+                    "type": "integer"
+                },
+                "measuredEntries": {
+                    "type": "integer"
+                },
+                "notice": {
+                    "type": "string"
+                },
+                "nutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.NutrientTotal"
+                    }
+                }
+            }
+        },
+        "nutrition.OwnFoodInput": {
+            "type": "object",
+            "properties": {
+                "basis": {
+                    "$ref": "#/definitions/nutrition.Basis"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.OwnNutrient"
+                    }
+                },
+                "preparation": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.OwnNutrient": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "nutrition.ScaledCell": {
+            "type": "object",
+            "properties": {
+                "basis": {
+                    "$ref": "#/definitions/nutrition.Basis"
+                },
+                "exactFraction": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "factor": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "rawText": {
+                    "type": "string"
+                },
+                "reason": {
+                    "type": "string"
+                },
+                "sourceColumnKey": {
+                    "type": "string"
+                },
+                "sourceReasons": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "sourceState": {
+                    "type": "string"
+                },
+                "sourceUpperBound": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "sourceValue": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "unit": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "value": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
         "privacy.DeleteRequest": {
             "type": "object",
             "properties": {
@@ -1888,12 +2757,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.4.0",
+	Version:          "0.5.1",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},
 	Title:            "TrainForge API",
-	Description:      "Local Google sessions, reviewed movement metadata and food composition references. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.",
+	Description:      "Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

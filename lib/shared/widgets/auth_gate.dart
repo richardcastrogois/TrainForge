@@ -1,3 +1,5 @@
+import 'package:trainforge/core/theme/trainforge_theme.dart';
+import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
@@ -44,7 +46,7 @@ class _AuthGateState extends State<AuthGate> {
       final profile = controller.profile;
       if (profile == null) return AuthPage(controller: controller);
       return Scaffold(
-        appBar: AppBar(title: const Text('TrainForge · avaliação')),
+        appBar: AppBar(title: const TrainForgeBrand()),
         body: SafeArea(
           child: ListView(
             padding: const EdgeInsets.all(24),
@@ -62,7 +64,7 @@ class _AuthGateState extends State<AuthGate> {
               ),
               const SizedBox(height: 16),
               const Text(
-                'A biblioteca de referência está disponível para consulta. A composição alimentar também pode ser consultada. Atividades, histórico e registros de consumo continuam pendentes. Nenhum treino ou dado pessoal foi preenchido automaticamente.',
+                'A biblioteca e a composição alimentar estão disponíveis. Você pode cadastrar alimentos próprios e registrar seu consumo. Atividades e prática guiada continuam pendentes. Nenhum treino ou consumo foi preenchido automaticamente.',
               ),
               const SizedBox(height: 16),
               const Text(
@@ -95,7 +97,21 @@ class _AuthGateState extends State<AuthGate> {
                         ),
                       ),
                 icon: const Icon(Icons.restaurant_outlined),
-                label: const Text('Consultar alimentos sem registrar consumo'),
+                label: const Text('Consultar alimentos de referência'),
+              ),
+              FilledButton.icon(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (_) => NutritionPage(
+                      accountId: profile.id,
+                      currentAccountId: () => controller.profile?.id,
+                      sessionChanges: controller,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.restaurant),
+                label: const Text('Minha alimentação e consumo'),
               ),
               OutlinedButton(
                 onPressed: controller.busy

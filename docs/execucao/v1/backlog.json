@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-23",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-020",
+  "next": "V1-021",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -1448,7 +1448,7 @@
           "id": "V1-020",
           "title": "Pesquisar e cadastrar alimento próprio e registrar consumo",
           "userStory": "Como usuário, quero registrar uma quantidade real e consultar o que consumi.",
-          "status": "todo",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1506,8 +1506,21 @@
             "API nutrition v1",
             "Registro de consumo real"
           ],
-          "handoff": "22/10: preparação parcial de busca pública de6369referências, filtros/fonte/cursor/detalhe/retirada/ETag entregue naAPI Go0.3.0. Status permanece todo e completionEvidence vazio: cadastro privado/consumo/cálculos/totais e dependências013/011 não concluídos. Ver alimentacao-consulta.md e food-read-verification.json.",
-          "completionEvidence": []
+          "handoff": "23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver alimentacao-registro.md, nutrition-real-android-verification.json e frontend-fidelidade-figma.md.",
+          "completionEvidence": [
+            {
+              "date": "2026-10-23",
+              "scope": "API alimentar privada e consumo real no Androiddebug; conclusão visual separada",
+              "files": [
+                "docs/execucao/v1/alimentacao-registro.md",
+                "docs/execucao/v1/nutrition-local-verification.json",
+                "docs/execucao/v1/nutrition-real-android-verification.json",
+                "services/api/migrations/00008_private_nutrition.sql"
+              ],
+              "validation": "SQL/HTTP com2titulares isolados: cadastro com ausências, busca, isolamento, concorrência/idempotência, revisão/limite, porção de referência real, UTC/fuso/cursor/retirada, exportação/exclusão. Banco descartável removido e dados entregues preservados. Titular criou consumo real e confirmou histórico noapp.58testesFlutter/analyze0issues.",
+              "limits": "Cadastro próprio/correções/exclusão foram validados tecnicamente emfixtures, sem alegar aceite humano dessesfluxos. Frontend fiel aoFigma/Hoje integrado, iOS, release e capacidade demilhões não concluídos."
+            }
+          ]
         }
       ]
     },
@@ -1520,7 +1533,7 @@
           "id": "V1-021",
           "title": "Organizar configuração, composição e estado",
           "userStory": "Como desenvolvedor, quero telas pequenas e dependências substituíveis sem reescrever a lib inteira.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1538,7 +1551,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/frontend-fidelidade-figma.md"
           ],
           "acceptance": [
             "Feature-first preservado; UI usa controller/viewmodel e repository injetado",
@@ -1571,7 +1585,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "22/10: preparação parcial implementada (sessão/controller/repository e catálogo/alimentos somente consulta), testes isolados e APK0.1.2+3. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.",
+          "handoff": "23/10: nova prioridade explícita de todo o frontend fiel aoFigma v0.5, antes de novas funcionalidades. Fundamentos/tema/marca iniciados; composição/controllers/sessão existentes, mas shell/Hoje/rascunhos e paridade visual completos ainda faltam. Ver frontend-fidelidade-figma.md; não encerrar só por aplicar tema.",
           "completionEvidence": []
         },
         {
@@ -1827,7 +1841,7 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "22/10: consulta pública Flutter de alimentos/composição preparada noAPK0.1.2+3, sem login, com nomes/estados/bases/créditos originais. Status permanece todo e completionEvidence vazio: cadastro próprio, quantidade, refeição e histórico alimentar ainda pendentes. Ver alimentacao-consulta.md e avaliacao-android.md.",
+          "handoff": "23/10: formulários de alimento próprio, consumo, histórico e subtotais entregues na020. Consumo humano real confirmado. Frontend completo deve agora corresponder aoFigma v0.5, com Hoje integrado e dependência021; cadastro próprio humano/aceite visual ainda pendentes. Ver frontend-fidelidade-figma.md.",
           "completionEvidence": []
         },
         {
@@ -2914,5 +2928,6 @@
         }
       ]
     }
-  ]
+  ],
+  "currentPriority": "23/10: pedido explícito doautor: ajustar todo o frontend para corresponder exatamente aoFigma vigente antes de novasfuncionalidades backend; ver frontend-fidelidade-figma.md"
 }

@@ -4,6 +4,8 @@ Estado vigente: **23/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 
 ## Próxima ação e escopo
 
+**Prioridade explícita mais recente23/10: alinhar todo o frontend exatamente aoFigma vigente antes de novas funcionalidades.** Ler docs/execucao/v1/frontend-fidelidade-figma.md e o inventário frontend-figma-inventory.json. Figma0:1 é “01 · Produto interativo · v0.5”,401quadrostoplevel/398mobile incluindo variantes. Não reutilizar geradoresv0.4 como desenho atual. V1-020 funcional concluída com consumo real confirmado pelo titular e provasSQL/HTTP; visual completo não está pronto. NovoAPKdebug0.1.5+8/API0.5.1/25operações instalado após conferir zero rascunhos abertos; preservou conta/consumo.58testesFlutter/analyze0issues. Tema/marca iniciais não equivalem a frontend inteiro fiel. Novo trabalho é frontend021/022/025 e demais famílias, preservando APIs/dados reais e lacunas.
+
 - Ler [índice](docs/README.md), [plano macro](docs/execucao/v1/plano-macro.md), [escopo](docs/execucao/v1/escopo.md) e [handoff](docs/execucao/v1/handoff.md).
 - [Etapa01 encerrada](docs/execucao/v1/etapa-01-fechamento.md): triagem dos512ativos concluída;73metadados de consulta e439excluídos. Nenhuma instrução/mídia/prática liberada. As exclusões continuam vinculantes; não publicar texto por herdar licença ou chamar fim da triagem de homologação clínica.
 - [Etapa02 concluída](docs/execucao/v1/etapa-02-fechamento.md): Go real, Swagger2gerado, PostgreSQL isolado/migrations,73metadados importados, reimportação e restore validados. **V1-011/012/013 concluídas no checkpoint local autorizado:** Googledebug real/sessão/privacidade validados e OAuthrelease conferido. HTTPS continua obrigatório fora de desenvolvimento; staging/distribuiçãoAPKrelease/iOS permanecem nas histórias próprias. [Fechamento](docs/execucao/v1/auth-local-fechamento.md). Autor não quer hospedagem agora; não voltar a perguntá-la como condição do teste noemulador. V1-003 concluída com publicação autorizada/CI remota confirmadas em23/10; documentação continua transversal.
@@ -15,6 +17,8 @@ Estado vigente: **23/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 - Pedido vigente: remover o painel local, manter documentação arquitetural dinâmica no repositório e gerar Swagger por comentários/tipos Go. Organização, ferramentas documentais e commits locais autorizados; não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
 
 - 23/10: push autorizado e confirmado em3170c50 e4b922ab (ambasCIs passaram). V1-013 implementada/validada tecnicamente emGo0.4.0/18operações, exportação própria/exclusão confirmada/manutenção/gate de restore e Flutter; [estado013](docs/execucao/v1/privacidade-013.md). Googledebug/aceite privado reais passaram em23/10; aceite local011/012/013 concluído em auth-local-fechamento.md. Distribuiçãorelease égateposterior; desenvolvimento/teste local pode continuar por dependências. Novos commits validados/push autorizados, deploy/contratação/contato seguem fora do escopo. Não alegar milhões simultâneos sem carga/infra dimensionada.
+
+- Incremento020 encerrado funcionalmente em23/10: ver alimentacao-registro.md, nutrition-local-verification.json e nutrition-real-android-verification.json. Frontend completo/fidelidadeFigma continuam pendentes; prioridade é frontend. Sempre conferir ausência de rascunho antes de instalar umAPK; nunca apagar dados para atualizar.
 
 ## Conteúdo e pesquisa
 

@@ -1,5 +1,7 @@
 # TrainForge — referências e evolução do design
 
+**Prioridade23/10/2026:** autor pediu frontend completo fiel aoFigma. Leitura viva confirmou página0:1, “01 · Produto interativo · v0.5”,401quadrostoplevel/398mobile, incluindo variantes. [Plano e limites atuais](../execucao/v1/frontend-fidelidade-figma.md), [inventário](../execucao/v1/frontend-figma-inventory.json). Conteúdo abaixo é histórico e não substitui a leitura do desenho atual.
+
 **Entrada atual — 24/09/2026:** a base aplicada é a [v0.4](fluxos-v04.md), com cópia preservada em 22/09. O próximo trabalho está detalhado em [ajustes da visão integrada](ajustes-visao-integrada.md); não foi aplicado ao Figma nesta entrega. Consultar esse documento antes de reutilizar geradores ou tratar o HTML como entrega atual.
 
 **Histórico concluído em 14/09/2026:** o Figma contém 33 telas editáveis, 83 rotas verificadas, abertura animada, sete estados de carregamento e mapa navegável. Inventário, percursos testados e limites estão em [fluxos v0.3](fluxos-v03.md). A prévia HTML abaixo é o artefato histórico de sete telas, não a entrega atual do Figma.

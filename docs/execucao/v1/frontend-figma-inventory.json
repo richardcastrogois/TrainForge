@@ -1,0 +1,3220 @@
+{
+  "date": "2026-10-23",
+  "fileKey": "bX6YjBBLIJgoo2MtiFLntl",
+  "pageId": "0:1",
+  "pageName": "01 · Produto interativo · v0.5",
+  "source": "Figma get_metadata read only",
+  "topLevelFrames": 401,
+  "mobileFrames": 398,
+  "notice": "Inclui variantes, rascunhos e exemplos; não equivale a funcionalidades implementadas.",
+  "frames": [
+    {
+      "id": "25:1667",
+      "name": "01 · Hoje",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1778",
+      "name": "02 · Planos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1859",
+      "name": "03 · Treino em curso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1913",
+      "name": "04 · Atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1992",
+      "name": "05 · Alimentação",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:2068",
+      "name": "06 · Evolução",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:2152",
+      "name": "07 · Perfil",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:735",
+      "name": "10 · Entrar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:765",
+      "name": "08 · Abertura A",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:774",
+      "name": "09 · Abertura B",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:783",
+      "name": "11 · Criar conta",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:813",
+      "name": "12 · Recuperar acesso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:834",
+      "name": "13 · Confirmar e-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:856",
+      "name": "14 · Antes de começar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:884",
+      "name": "15 · Escolher áreas",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:910",
+      "name": "16 · Qual é o teu objetivo?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:937",
+      "name": "17 · Onde te queres mexer?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:965",
+      "name": "18 · O ponto de partida.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:993",
+      "name": "19 · Comer ao teu jeito.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1021",
+      "name": "20 · Cabe na tua rotina.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1049",
+      "name": "21 · Uma semana possível.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1080",
+      "name": "22 · Rever configuração",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1110",
+      "name": "23 · Planos · por configurar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1135",
+      "name": "24 · Diário · por configurar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1157",
+      "name": "25 · Rotina · por configurar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1177",
+      "name": "33 · Recuperação · enviada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1195",
+      "name": "26 · A carregar · hoje",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "23:1289",
+      "name": "27 · A carregar · planos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "24:1356",
+      "name": "28 · A carregar · sessao",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1411",
+      "name": "29 · A carregar · atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1479",
+      "name": "30 · A carregar · alimentacao",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1544",
+      "name": "31 · A carregar · evolucao",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "25:1617",
+      "name": "32 · A carregar · perfil",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "54:94",
+      "name": "00 · Mapa dos fluxos v0.3",
+      "width": 2460,
+      "height": 1530,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:2",
+      "name": "34 · Dados pessoais",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:28",
+      "name": "35 · Editar perfil",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:50",
+      "name": "36 · Conta e acesso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:76",
+      "name": "37 · Medidas corporais",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:102",
+      "name": "38 · Objetivos e preferências",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:128",
+      "name": "39 · Notificações",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:154",
+      "name": "40 · Notificações ativadas",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:183",
+      "name": "41 · Idioma e unidades",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:208",
+      "name": "42 · Preferências alternativas",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:230",
+      "name": "43 · Privacidade e dados",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:260",
+      "name": "44 · Sobre os teus dados",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:283",
+      "name": "45 · Exportação solicitada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:303",
+      "name": "46 · Apagar dados opcionais?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:327",
+      "name": "47 · Eliminar a conta?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:349",
+      "name": "48 · Ajuda e feedback",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:374",
+      "name": "49 · Perguntas frequentes",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:397",
+      "name": "50 · Enviar feedback",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:423",
+      "name": "51 · Obrigado pelo feedback",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:440",
+      "name": "52 · Terminar sessão?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:461",
+      "name": "53 · Força &amp; energia",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:490",
+      "name": "54 · De onde vem o plano?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:513",
+      "name": "55 · A tua sessão de hoje",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:539",
+      "name": "56 · Plano guardado",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:560",
+      "name": "57 · Como fazer este exercício",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:583",
+      "name": "58 · Registar a série",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:609",
+      "name": "59 · Mais uma, feita!",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:633",
+      "name": "60 · Como queres terminar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:659",
+      "name": "61 · Boa! Treino concluído.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:683",
+      "name": "62 · Fica guardado para depois.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:704",
+      "name": "63 · Registar atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:733",
+      "name": "64 · Uma volta que conta.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:754",
+      "name": "65 · O que vamos registar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:780",
+      "name": "66 · O teu histórico",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:810",
+      "name": "67 · Histórico de medidas",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:836",
+      "name": "68 · O que queres encontrar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:866",
+      "name": "69 · O meu plano",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:892",
+      "name": "70 · Nova palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:917",
+      "name": "71 · Reenviar confirmação",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:934",
+      "name": "72 · Termos de utilização",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:954",
+      "name": "73 · Cada dia é diferente.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:979",
+      "name": "74 · O teu pequeno-almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1005",
+      "name": "75 · Imagem do perfil",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1026",
+      "name": "76 · Nome de apresentação",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1043",
+      "name": "77 · Alterar e-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1063",
+      "name": "78 · Métodos de entrada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1088",
+      "name": "79 · Uma nova medida",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1111",
+      "name": "80 · Dados opcionais apagados",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1128",
+      "name": "81 · Conta eliminada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1145",
+      "name": "82 · Pré-visualizar feedback",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1165",
+      "name": "83 · Editar a série",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1188",
+      "name": "84 · Editar atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1211",
+      "name": "85 · Resultados da pesquisa",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1233",
+      "name": "86 · A porção é tua.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1260",
+      "name": "87 · Registar manualmente",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1283",
+      "name": "88 · Já está no teu diário.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1304",
+      "name": "89 · Um treino que se encaixa",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1330",
+      "name": "90 · A minha sessão",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1351",
+      "name": "91 · Confirmar nova palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1371",
+      "name": "92 · Vamos ajustar a procura?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1393",
+      "name": "93 · Privacidade no registo",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1416",
+      "name": "94 · O teu almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1438",
+      "name": "95 · Palavra-passe atualizada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1455",
+      "name": "96 · Alterar palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1510",
+      "name": "110 · Rever dados · 10",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1525",
+      "name": "111 · Rever dados · 11",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1548",
+      "name": "112 · Rever dados · 12",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1559",
+      "name": "116 · Rever dados · 16",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1578",
+      "name": "117 · Rever dados · 17",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1601",
+      "name": "118 · Rever dados · 18",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1620",
+      "name": "119 · Rever dados · 19",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1639",
+      "name": "120 · Rever dados · 20",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1658",
+      "name": "121 · Rever dados · 21",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "104:1974",
+      "name": "00 · Destinos e percursos v0.4",
+      "width": 2500,
+      "height": 1720,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:1901",
+      "name": "150 · O corpo tem muitas formas de se mexer.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:1941",
+      "name": "151 · O próximo passo é teu.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:1977",
+      "name": "152 · Cabe na tua casa.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2013",
+      "name": "153 · Força, ao teu ritmo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2049",
+      "name": "154 · Move-te com intenção.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2085",
+      "name": "155 · Vamos encontrar um começo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2121",
+      "name": "156 · O teu objetivo, mais claro.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2157",
+      "name": "157 · O que tens disponível?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2193",
+      "name": "158 · Experiência é mais do que um nível.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2229",
+      "name": "159 · Uma semana com espaço para ti.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2269",
+      "name": "160 · Escolhe o teu exercício",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2309",
+      "name": "161 · Remada sentada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2345",
+      "name": "Referência preservada · 162 · Estrutura do guia",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2382",
+      "name": "163 · Os detalhes também contam.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2418",
+      "name": "164 · O teu contexto merece cuidado.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2454",
+      "name": "165 · Cada modalidade tem o seu ritmo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2490",
+      "name": "166 · Respira. Já vais continuar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2522",
+      "name": "167 · Como te sentiste?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2558",
+      "name": "168 · A sessão, em detalhe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2594",
+      "name": "169 · Pronto para a próxima?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2622",
+      "name": "170 · Qual é o movimento de hoje?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2658",
+      "name": "171 · Vamos marcar o teu caminho?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2688",
+      "name": "172 · Tudo pronto para sair.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2720",
+      "name": "174 · Um momento para respirar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2752",
+      "name": "176 · Como foi a volta?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2786",
+      "name": "177 · Mais uma volta na tua história.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2814",
+      "name": "178 · O caminho que fizeste",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2850",
+      "name": "182 · Uma foto, um ponto de partida.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2882",
+      "name": "183 · Descartar esta atividade?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2910",
+      "name": "184 · O tempo continua a contar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2942",
+      "name": "185 · Liga o que faz sentido.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:2978",
+      "name": "186 · Tu escolhes o acesso.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3016",
+      "name": "187 · Uma atividade, uma vez.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3048",
+      "name": "188 · Está tudo ligado.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3076",
+      "name": "189 · Desligar esta fonte?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3104",
+      "name": "190 · Planear também pode ser simples.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3140",
+      "name": "191 · Uma semana à tua medida",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3178",
+      "name": "192 · Uma taça, várias possibilidades.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3215",
+      "name": "193 · O que costumas comer?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3251",
+      "name": "194 · Um pouco de água.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3287",
+      "name": "195 · Alimentação com contexto.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3323",
+      "name": "196 · A semana está organizada.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3351",
+      "name": "197 · Aprender para escolher melhor.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3387",
+      "name": "198 · O rótulo, sem mistério.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3423",
+      "name": "199 · Uma imagem ajuda a começar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3458",
+      "name": "201 · Confere antes de guardar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3493",
+      "name": "202 · Encontra o produto da embalagem.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3525",
+      "name": "203 · Ler, rever e confirmar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3559",
+      "name": "204 · O detalhe faz diferença.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3595",
+      "name": "205 · O teu mês em movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3631",
+      "name": "206 · Metas que cabem na vida.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3667",
+      "name": "207 · Uma meta de cada vez.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3703",
+      "name": "208 · Continuas no teu ritmo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3735",
+      "name": "209 · Guardado no dispositivo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3767",
+      "name": "212 · Continuar com Google",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3797",
+      "name": "213 · Continuar com Apple",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3827",
+      "name": "214 · Vamos corrigir este campo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3859",
+      "name": "215 · O que aparece na imagem?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3895",
+      "name": "216 · Precisamos de mais um detalhe.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3925",
+      "name": "217 · Não foi possível carregar.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3953",
+      "name": "218 · Aqui, primeiro vem o contexto.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:3985",
+      "name": "219 · Da ideia para o prato",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4017",
+      "name": "220 · Ao teu jeito.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4053",
+      "name": "221 · Confiança também é controlo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4089",
+      "name": "222 · Confortável para ti.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4121",
+      "name": "223 · Conteúdo com uma origem.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4157",
+      "name": "224 · Mais espaço para ler.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4185",
+      "name": "225 · Movimento mais suave.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4213",
+      "name": "230 · TrainForge no iPhone",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4245",
+      "name": "173 · Atividade em curso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4290",
+      "name": "175 · Atividade · a terminar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4335",
+      "name": "200 · Câmara · alimento",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4360",
+      "name": "226 · A analisar imagem",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4382",
+      "name": "210 · Teclado · entrada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4473",
+      "name": "211 · Teclado · formulário",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:4644",
+      "name": "Referência preservada · 231 · Hoje · iOS",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "146:9365",
+      "name": "231 · Hoje · iOS",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:10820",
+      "name": "Entrada · 10 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:10892",
+      "name": "Entrada · 10 · E-mail · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:10962",
+      "name": "Rascunho · 10 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11024",
+      "name": "Entrada · 10 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11096",
+      "name": "Entrada · 10 · Palavra-passe · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11166",
+      "name": "Rascunho · 10 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11228",
+      "name": "Entrada · 11 · Nome",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11300",
+      "name": "Entrada · 11 · Nome · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11370",
+      "name": "Rascunho · 11 · Nome",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11434",
+      "name": "Entrada · 11 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11506",
+      "name": "Entrada · 11 · E-mail · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11576",
+      "name": "Rascunho · 11 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11640",
+      "name": "Entrada · 11 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11712",
+      "name": "Entrada · 11 · Palavra-passe · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11782",
+      "name": "Rascunho · 11 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11846",
+      "name": "Entrada · 11 · Confirmar palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11918",
+      "name": "Entrada · 11 · Confirmar palavra-passe · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:11988",
+      "name": "Rascunho · 11 · Confirmar palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12052",
+      "name": "Entrada · 12 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12124",
+      "name": "Entrada · 12 · E-mail · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12194",
+      "name": "Rascunho · 12 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12249",
+      "name": "Entrada · 18 · Altura · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12287",
+      "name": "Entrada · 18 · Altura · opcional · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12323",
+      "name": "Rascunho · 18 · Altura · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12372",
+      "name": "Entrada · 18 · Peso · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12410",
+      "name": "Entrada · 18 · Peso · opcional · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12446",
+      "name": "Rascunho · 18 · Peso · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12495",
+      "name": "Entrada · 19 · Preferência alimentar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12567",
+      "name": "Entrada · 19 · Preferência alimentar · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12637",
+      "name": "Rascunho · 19 · Preferência alimentar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12698",
+      "name": "Entrada · 19 · Alergias · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12770",
+      "name": "Entrada · 19 · Alergias · opcional · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12840",
+      "name": "Rascunho · 19 · Alergias · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12901",
+      "name": "Entrada · 20 · Pequeno-almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12939",
+      "name": "Entrada · 20 · Pequeno-almoço · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:12975",
+      "name": "Rascunho · 20 · Pequeno-almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13020",
+      "name": "Entrada · 20 · Almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13058",
+      "name": "Entrada · 20 · Almoço · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13094",
+      "name": "Rascunho · 20 · Almoço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13139",
+      "name": "Entrada · 20 · Jantar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13177",
+      "name": "Entrada · 20 · Jantar · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13213",
+      "name": "Rascunho · 20 · Jantar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13258",
+      "name": "Entrada · 21 · Dias preferidos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13330",
+      "name": "Entrada · 21 · Dias preferidos · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13400",
+      "name": "Rascunho · 21 · Dias preferidos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13459",
+      "name": "Entrada · 21 · Tempo por sessão",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13497",
+      "name": "Entrada · 21 · Tempo por sessão · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13533",
+      "name": "Rascunho · 21 · Tempo por sessão",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13575",
+      "name": "Entrada · 69 · Nome do plano",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13647",
+      "name": "Entrada · 69 · Nome do plano · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13717",
+      "name": "Rascunho · 69 · Nome do plano",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13785",
+      "name": "Entrada · 79 · Peso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13823",
+      "name": "Entrada · 79 · Peso · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13859",
+      "name": "Rascunho · 79 · Peso",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13910",
+      "name": "Entrada · 79 · Altura",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13948",
+      "name": "Entrada · 79 · Altura · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:13984",
+      "name": "Rascunho · 79 · Altura",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14035",
+      "name": "Entrada · 79 · Data do registo",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14073",
+      "name": "Entrada · 79 · Data do registo · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14109",
+      "name": "Rascunho · 79 · Data do registo",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14160",
+      "name": "Entrada · 79 · Observação · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14232",
+      "name": "Entrada · 79 · Observação · opcional · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14302",
+      "name": "Rascunho · 79 · Observação · opcional",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14370",
+      "name": "Entrada · 83 · Carga",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14408",
+      "name": "Entrada · 83 · Carga · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14444",
+      "name": "Rascunho · 83 · Carga",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14491",
+      "name": "Entrada · 83 · Repetições",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14529",
+      "name": "Entrada · 83 · Repetições · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14565",
+      "name": "Rascunho · 83 · Repetições",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14612",
+      "name": "Entrada · 87 · Alimento e quantidade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14650",
+      "name": "Entrada · 87 · Alimento e quantidade · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14686",
+      "name": "Rascunho · 87 · Alimento e quantidade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14737",
+      "name": "Entrada · 87 · Valor por 100 g",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14775",
+      "name": "Entrada · 87 · Valor por 100 g · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14811",
+      "name": "Rascunho · 87 · Valor por 100 g",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14862",
+      "name": "Entrada · 87 · Refeição",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:14934",
+      "name": "Entrada · 87 · Refeição · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15004",
+      "name": "Rascunho · 87 · Refeição",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15072",
+      "name": "Entrada · 172 · Objetivo da atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15144",
+      "name": "Entrada · 172 · Objetivo da atividade · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15214",
+      "name": "Rascunho · 172 · Objetivo da atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15278",
+      "name": "Entrada · 176 · Esforço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15350",
+      "name": "Entrada · 176 · Esforço · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15420",
+      "name": "Rascunho · 176 · Esforço",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15485",
+      "name": "Entrada · 194 · Outra quantidade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15523",
+      "name": "Entrada · 194 · Outra quantidade · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15559",
+      "name": "Rascunho · 194 · Outra quantidade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15610",
+      "name": "Entrada · 202 · Escrever o código",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15648",
+      "name": "Entrada · 202 · Escrever o código · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15684",
+      "name": "Rascunho · 202 · Escrever o código",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15731",
+      "name": "Entrada · 207 · Nome",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15803",
+      "name": "Entrada · 207 · Nome · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15873",
+      "name": "Rascunho · 207 · Nome",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:15941",
+      "name": "Entrada · 207 · Repetir",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16013",
+      "name": "Entrada · 207 · Repetir · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16083",
+      "name": "Rascunho · 207 · Repetir",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16151",
+      "name": "Entrada · 214 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16223",
+      "name": "Entrada · 214 · E-mail · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16293",
+      "name": "Rascunho · 214 · E-mail",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16357",
+      "name": "Entrada · 214 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16429",
+      "name": "Entrada · 214 · Palavra-passe · preenchido",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16499",
+      "name": "Rascunho · 214 · Palavra-passe",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16563",
+      "name": "Estado guardado · alimento · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16629",
+      "name": "Estado guardado · alimento · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16698",
+      "name": "Estado guardado · alimento · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16760",
+      "name": "Estado guardado · alimento · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16825",
+      "name": "Estado guardado · alimento · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16932",
+      "name": "Estado guardado · treino · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:16998",
+      "name": "Estado guardado · treino · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17067",
+      "name": "Estado guardado · treino · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17129",
+      "name": "Estado guardado · treino · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17194",
+      "name": "Estado guardado · treino · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17300",
+      "name": "Estado guardado · caminhada · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17366",
+      "name": "Estado guardado · caminhada · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17435",
+      "name": "Estado guardado · caminhada · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17497",
+      "name": "Estado guardado · caminhada · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17562",
+      "name": "Estado guardado · caminhada · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17669",
+      "name": "250 · Agachamento",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17707",
+      "name": "251 · Press de peito",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17745",
+      "name": "252 · Ponte de glúteos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17783",
+      "name": "253 · Prancha",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17829",
+      "name": "240 · Estados da experiência",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17859",
+      "name": "260 · Abertura animada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "156:17864",
+      "name": "261 · Abertura animada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:17964",
+      "name": "270 · A semana conta a tua história.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18006",
+      "name": "271 · Há dias assim.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18034",
+      "name": "272 · O que fizeste conta.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18062",
+      "name": "273 · Já tens um próximo passo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18090",
+      "name": "274 · Descansar também faz parte.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18251",
+      "name": "280 · Remada sentada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18286",
+      "name": "281 · Remada sentada",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18322",
+      "name": "295 · A origem acompanha o movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18355",
+      "name": "282 · Agachamento",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18390",
+      "name": "283 · Agachamento",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18426",
+      "name": "296 · A origem acompanha o movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18460",
+      "name": "284 · Press de peito",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18495",
+      "name": "285 · Press de peito",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18531",
+      "name": "297 · A origem acompanha o movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18565",
+      "name": "286 · Ponte de glúteos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18600",
+      "name": "287 · Ponte de glúteos",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18636",
+      "name": "298 · A origem acompanha o movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18670",
+      "name": "288 · Prancha",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18705",
+      "name": "289 · Prancha",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18741",
+      "name": "299 · A origem acompanha o movimento.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18782",
+      "name": "300 · Corrida · 171",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18812",
+      "name": "301 · Corrida · 172",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18844",
+      "name": "302 · Corrida · 173",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18902",
+      "name": "303 · Corrida · 174",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18934",
+      "name": "304 · Corrida · 175",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:18992",
+      "name": "305 · Corrida · 176",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19026",
+      "name": "306 · Corrida · 177",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19054",
+      "name": "307 · Corrida · 178",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19090",
+      "name": "308 · Corrida · 183",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19118",
+      "name": "309 · Corrida · 184",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19731",
+      "name": "Estado guardado · corrida · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19797",
+      "name": "Estado guardado · corrida · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19866",
+      "name": "Estado guardado · corrida · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:19941",
+      "name": "Estado guardado · corrida · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20006",
+      "name": "Estado guardado · corrida · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20406",
+      "name": "320 · Bicicleta · 171",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20436",
+      "name": "321 · Bicicleta · 172",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20468",
+      "name": "322 · Bicicleta · 173",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20526",
+      "name": "323 · Bicicleta · 174",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20558",
+      "name": "324 · Bicicleta · 175",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20616",
+      "name": "325 · Bicicleta · 176",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20650",
+      "name": "326 · Bicicleta · 177",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20678",
+      "name": "327 · Bicicleta · 178",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20714",
+      "name": "328 · Bicicleta · 183",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:20742",
+      "name": "329 · Bicicleta · 184",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:21355",
+      "name": "Estado guardado · bicicleta · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:21421",
+      "name": "Estado guardado · bicicleta · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:21490",
+      "name": "Estado guardado · bicicleta · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:21565",
+      "name": "Estado guardado · bicicleta · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:21630",
+      "name": "Estado guardado · bicicleta · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22030",
+      "name": "340 · Atividade sem GPS · 173",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22088",
+      "name": "341 · Atividade sem GPS · 174",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22120",
+      "name": "342 · Atividade sem GPS · 176",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22154",
+      "name": "343 · Atividade sem GPS · 177",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22281",
+      "name": "275 · Todos os estados, no teu controlo.",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22335",
+      "name": "Entrada · perfil · 76",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22405",
+      "name": "Entrada · perfil preenchido · 76",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22475",
+      "name": "Rascunho · perfil · 76",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22524",
+      "name": "276 · Iogurte natural",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22560",
+      "name": "350 · Pronto para começar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22583",
+      "name": "351 · Pronto para começar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22606",
+      "name": "352 · Pronto para começar?",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22630",
+      "name": "Toque · 10 · Entrar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22662",
+      "name": "Toque · 58 · Confirmar série",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22696",
+      "name": "Toque · 86 · Adicionar ao diário",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22734",
+      "name": "Toque · 176 · Guardar atividade",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22769",
+      "name": "Toque · 87 · Rever e adicionar",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22810",
+      "name": "00 · Guia da experiência v0.5",
+      "width": 2140,
+      "height": 880,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22871",
+      "name": "277 · Rever campos e validação",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:22956",
+      "name": "355 · Corrida sem GPS · 0",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23014",
+      "name": "356 · Corrida sem GPS · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23046",
+      "name": "357 · Corrida sem GPS · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23080",
+      "name": "358 · Corrida sem GPS · 3",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23202",
+      "name": "359 · Bicicleta sem GPS · 0",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23260",
+      "name": "360 · Bicicleta sem GPS · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23292",
+      "name": "361 · Bicicleta sem GPS · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23326",
+      "name": "362 · Bicicleta sem GPS · 3",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "165:23448",
+      "name": "363 · Linguagem simples ou técnica",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:23494",
+      "name": "Estado guardado · caminhada sem GPS · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:23560",
+      "name": "Estado guardado · caminhada sem GPS · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:23629",
+      "name": "Estado guardado · caminhada sem GPS · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:23704",
+      "name": "Estado guardado · caminhada sem GPS · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:23769",
+      "name": "Estado guardado · caminhada sem GPS · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24168",
+      "name": "Estado guardado · corrida sem GPS · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24234",
+      "name": "Estado guardado · corrida sem GPS · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24303",
+      "name": "Estado guardado · corrida sem GPS · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24378",
+      "name": "Estado guardado · corrida sem GPS · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24443",
+      "name": "Estado guardado · corrida sem GPS · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24842",
+      "name": "Estado guardado · bicicleta sem GPS · 1",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24908",
+      "name": "Estado guardado · bicicleta sem GPS · 2",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:24977",
+      "name": "Estado guardado · bicicleta sem GPS · 4",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:25052",
+      "name": "Estado guardado · bicicleta sem GPS · 5",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    },
+    {
+      "id": "178:25117",
+      "name": "Estado guardado · bicicleta sem GPS · 6",
+      "width": 390,
+      "height": 844,
+      "designContextInspected": false,
+      "flutterVisualAcceptance": "pending"
+    }
+  ]
+}

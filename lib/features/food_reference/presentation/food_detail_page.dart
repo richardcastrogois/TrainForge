@@ -4,10 +4,12 @@ import '../domain/food_reference.dart';
 class FoodDetailPage extends StatefulWidget {
   final FoodReference food;
   final FoodRepository repository;
+  final bool selectForConsumption;
   const FoodDetailPage({
     super.key,
     required this.food,
     required this.repository,
+    this.selectForConsumption = false,
   });
   @override
   State<FoodDetailPage> createState() => _FoodDetailPageState();
@@ -97,6 +99,13 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                     Text('${food.languageLabel} · ${food.basisLabel}'),
                     const SizedBox(height: 8),
                     Text(data.notice),
+                    if (widget.selectForConsumption)
+                      FilledButton(
+                        onPressed: () => Navigator.pop(context, food),
+                        child: const Text(
+                          'Usar esta versão para registrar consumo',
+                        ),
+                      ),
                     const SizedBox(height: 16),
                     Card(
                       child: Padding(
