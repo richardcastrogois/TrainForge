@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-23",
+  "scope": "frontend-visual01-shell-entry-profile",
+  "status": "increment-validated-full-fidelity-pending",
+  "figma": {
+    "fileKey": "bX6YjBBLIJgoo2MtiFLntl",
+    "pageId": "0:1",
+    "pageName": "01 · Produto interativo · v0.5",
+    "fullFrameVisualAcceptance": false,
+    "writeOperations": 0,
+    "designContextsWithScreenshots": [
+      "23:735",
+      "25:1667",
+      "25:1778",
+      "25:1913",
+      "25:1992",
+      "25:2068",
+      "25:2152",
+      "104:1233",
+      "23:1110",
+      "146:4938",
+      "146:5069",
+      "146:5224"
+    ]
+  },
+  "assets": {
+    "originalLocalSVGs": 22,
+    "svgPathsOrRootDimensionsEdited": false,
+    "font": "Inter 4.1 static Regular/Bold",
+    "fontLicense": "SIL Open Font License",
+    "runtimeTemporaryFigmaURLs": 0,
+    "manifests": [
+      "assets/figma/manifest.json",
+      "assets/fonts/manifest.json"
+    ]
+  },
+  "flutter": {
+    "testsPassed": 68,
+    "analyzeIssues": 0,
+    "widgetFixtureOnly": true,
+    "realGoogleLoginRevalidated": false,
+    "screenWidthsChecked": [
+      320,
+      390
+    ],
+    "enlargedTextFactor": 2,
+    "visualArtifactsInspected": [
+      "entry",
+      "today",
+      "plans",
+      "activity",
+      "diary",
+      "evolution",
+      "profile",
+      "navigation-plans"
+    ],
+    "checks": [
+      "lazy tabs and retained draft",
+      "focus dismissal on tab change",
+      "Android back to Hoje",
+      "offline session retained with current tab",
+      "erasure removes private routes",
+      "stale responses/account changes/disposal guarded",
+      "day changes clear previous snapshot",
+      "energy methods never summed or unknowns replaced by zero",
+      "all SVG states render",
+      "navigation touch targets >=48px at320"
+    ]
+  },
+  "runtime": {
+    "androidEvidence": "android-frontend-checkpoint.json",
+    "priorHumanConsumptionEvidence": "nutrition-real-android-verification.json",
+    "priorHumanGoogleLoginEvidence": "auth-real-android-verification.json",
+    "agentCreatedConsumptionRecords": 0,
+    "backendVersion": "0.5.1",
+    "swaggerOperations": 25,
+    "newAPIContracts": 0,
+    "newMigrations": 0
+  },
+  "remaining": [
+    "library/search/filter/detail visual conversion",
+    "nutrition forms/quantity/history/detail visual conversion",
+    "privacy and remaining Figma families/states",
+    "full visual acceptance and human acceptance",
+    "activity/plan/goals/sensors functionality remains unavailable",
+    "iOS and release distribution not validated"
+  ]
+}

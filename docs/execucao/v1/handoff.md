@@ -2,6 +2,12 @@
 
 Atualizado em23/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mais recente do autor é **ajustar todo o frontend para ficar exatamente igual ao Figma antes de continuar novas funcionalidades**. Ler [plano visual](frontend-fidelidade-figma.md) e [inventário atual](frontend-figma-inventory.json). Não retomar uma nova história debackend por ignorar essa mudança.
 
+## Checkpoint visual atual
+
+Incremento visual01: APKdebug0.1.6+9,68testesFlutter/analyze0issues. Inter local/OFL,22SVGs originais, shellGo com cinco abas, entrada/perfil e visões iniciais deHoje/Planos/Atividade/Diário/Evolução. Resumo diário real compartilhado, estado/foco/voltar/guardas deconta. [Evidências](frontend-shell-verification.json) e [APK atual](android-frontend-checkpoint.json). Interface completa ainda não aceita como exatamente igual; biblioteca, formulários/detalhes alimentares, privacidade e demais estados são a próxima fatia. Atividade/planos/metas/sensores continuam indisponíveis funcionalmente. Nenhuma nova API/migration, consumo ou pesquisa.
+
+Base funcional publicada em b066082d0a69e1a821565cf14ef92f749591fa16; CI passou em https://github.com/richardcastrogois/TrainForge/actions/runs/40007081568. Conferir Git real para o commit posterior do visual01.
+
 ## Estado entregue
 
 - Etapas01/02 concluídas:73metadados de movimento,439ativos excluídos,0programas/instruções/mídias/prática liberados. Não inventar conteúdo para preencher o visual.
@@ -11,7 +17,7 @@ Atualizado em23/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mai
 - **V1-020 concluída funcionalmente:** API Go0.5.1/25operações, migration00008, cadastro particular, consumo, histórico do dia/fuso, revisões/exclusão e subtotais rastreáveis. Flutterconectado às APIs. [Implementação](alimentacao-registro.md), [SQL/HTTPdescartável](nutrition-local-verification.json), [consumo real](nutrition-real-android-verification.json).
 - Autor confirmou pessoalmente um consumo real e mostrou confirmação/histórico. Conferência só por contagens:1conta/1consumo ativo/0alimentos próprios; nenhum nome/e-mail/quantidade/alimento/horário/token do titular em recibosGit. Agente não criou refeição na base entregue e não está autorizado a apagar esse consumo por inferência.
 - Cadastro próprio/ausências/ownership/concorrência/idempotência/edição/exclusão/limite/retirada/exportação/purge testados em banco temporário removido, com uma referência real já pesquisada copiada somente para a fixture. Isso não é novo loginGoogle nem aceite humano de todos os fluxos025.
-- APKdebug **0.1.5+8**, gerado e instalado com preservação dos dados após conferir noAndroid a telaMinhaAlimentação,0editores/rascunhos e1registro persistido. A revisão automática bloqueou primeiro por receio de rascunho aberto; a nova conferência comprovou condição segura e a atualização passou. [Buildatual](android-nutrition-checkpoint.json). Reciboandroid-auth-checkpoint.json representa build0.1.3+4 histórica.
+- APKdebug histórico do020 **0.1.5+8**, gerado e instalado com preservação dos dados após conferir noAndroid a telaMinhaAlimentação,0editores/rascunhos e1registro persistido. A revisão automática bloqueou primeiro por receio de rascunho aberto; a nova conferência comprovou condição segura e a atualização passou. [Buildatual](android-nutrition-checkpoint.json). Reciboandroid-auth-checkpoint.json representa build0.1.3+4 histórica.
 
 ## Frontend — trabalho atual
 
@@ -27,7 +33,7 @@ Leitura de design context com screenshots concluída para:
 
 Sessão conector be13df9a-20a4-47d5-ba30-e854be04613e, reutilizar enquanto válida. Skillfigma-design-to-code já lida; deve ser incluída em skillNames e screenshot do contexto é referência visual. Pedir novos contextos de famílias/estados, não implementar só de metadados ou dos SVGs históricos.
 
-Primeiro ajuste deidentidade já aplicado: `lib/core/theme/trainforge_theme.dart` com tokensFigma, marcaTF, superfícies/botões/campos e tipografia inicial; entrada e cabeçalho deconta usam marca. **Fidelidade completa pendente**: Interasset não distribuído, shell/Hoje/barra inferior, todas as famílias e seus estados ainda não convertidos/conferidos. AuthsóGoogle real; e-mail/Apple não foram simulados.
+Checkpoint inicial histórico deidentidade: `lib/core/theme/trainforge_theme.dart` com tokensFigma, marcaTF, superfícies/botões/campos e tipografia inicial; entrada e cabeçalho deconta usam marca. **Fidelidade completa pendente.** O incremento visual01 agora distribuiInter eSVGs, conecta shell/barra inferior e as primeiras composições. Biblioteca/formulários/detalhes/privacidade e demais estados ainda exigem conversão visual; ver o checkpoint atual acima. AuthsóGoogle real; e-mail/Apple não foram simulados.
 
 Próxima história021emdoing, com prioridade visual transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
 
@@ -43,9 +49,9 @@ Próxima história021emdoing, com prioridade visual transversal a022/025 e demai
 
 ## Verificação e publicação
 
-58testesFlutter passaram, analyze0issues; Go testes/vet e integraçãoSQL/HTTP do020 passaram;71testesPython passaram no checkpoint anterior desta rodada, regenerar derivados após documentação final. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
+68testesFlutter passaram no visual01, analyze0issues; Go testes/vet e integraçãoSQL/HTTP do020 passaram;71testesPython passaram no checkpoint anterior desta rodada, regenerar derivados após documentação final. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
 
-Push dos incrementos validados aoGitHub autorizado em23/10. Conferir Git real; estado inicial da rodada d091735 sincronizado, incremento020/tema/documentação ainda deve ser commitado/publicado se a retomada acontecer antes do commit. Remoto https://github.com/richardcastrogois/TrainForge.git. Não fazerforcepush. Scriptsignorados.local/check_auth_stage.py echeck_publish.py verificam segredos/caminhos; stage explícito. Conferir CI doSHAreal, não inferir push peloVSCode.
+Push dos incrementos validados aoGitHub autorizado em23/10. Conferir Git real.020/tema/documentação publicados em b066082 comCI40007081568 bem-sucedida; visual01 é o incremento posterior, sem deploy. Remoto https://github.com/richardcastrogois/TrainForge.git. Não fazerforcepush. Scriptsignorados.local/check_auth_stage.py echeck_publish.py verificam segredos/caminhos; stage explícito. Conferir CI doSHAreal, não inferir push peloVSCode.
 
 ## Ambiente preservado e comandos
 

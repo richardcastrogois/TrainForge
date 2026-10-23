@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Tokens read from the current Figma v0.5: node 23:735 (entry).
-/// Platform font retained until a distributable Inter font asset is supplied.
+/// Inter 4.1 static fonts are bundled with their SIL Open Font License.
 abstract final class TrainForgeTheme {
   static const background = Color(0xfff6f6f1), surface = Colors.white;
   static const ink = Color(0xff142f2c), muted = Color(0xff64736e);
@@ -10,6 +10,7 @@ abstract final class TrainForgeTheme {
   static ThemeData get light {
     final base = ThemeData(
       useMaterial3: true,
+      fontFamily: 'Inter',
       colorScheme: ColorScheme.fromSeed(seedColor: primary).copyWith(
         primary: primary,
         onPrimary: Colors.white,
@@ -26,9 +27,10 @@ abstract final class TrainForgeTheme {
     return base.copyWith(
       scaffoldBackgroundColor: background,
       textTheme: base.textTheme
-          .apply(bodyColor: ink, displayColor: ink)
+          .apply(bodyColor: ink, displayColor: ink, fontFamily: 'Inter')
           .copyWith(
             headlineLarge: const TextStyle(
+              fontFamily: 'Inter',
               fontSize: 28,
               fontWeight: FontWeight.w700,
               height: 1.35,
@@ -47,7 +49,8 @@ abstract final class TrainForgeTheme {
               color: ink,
             ),
             bodyMedium: const TextStyle(fontSize: 14, height: 1.4, color: ink),
-          ),
+          )
+          .apply(fontFamily: 'Inter'),
       appBarTheme: const AppBarTheme(
         backgroundColor: background,
         foregroundColor: primary,
@@ -68,7 +71,11 @@ abstract final class TrainForgeTheme {
           minimumSize: const Size(0, 52),
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           shape: shape,
-          textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+          textStyle: const TextStyle(
+            fontFamily: 'Inter',
+            fontSize: 14,
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -79,7 +86,11 @@ abstract final class TrainForgeTheme {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           side: BorderSide.none,
           shape: shape,
-          textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+          textStyle: const TextStyle(
+            fontFamily: 'Inter',
+            fontSize: 14,
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(

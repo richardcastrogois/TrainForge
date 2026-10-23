@@ -1,3 +1,4 @@
+import 'nutrition_test.dart' show FakeNutrition;
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -80,10 +81,17 @@ void main() {
       final repo = SessionFixture()..profile = fixtureProfile;
       final controller = AuthController(repo);
       await tester.pumpWidget(
-        MaterialApp(home: AuthGate(controller: controller)),
+        MaterialApp(
+          home: AuthGate(
+            controller: controller,
+            nutritionRepository: FakeNutrition(),
+          ),
+        ),
       );
       await tester.pumpAndSettle();
       expect(repo.restores, 1);
+      await tester.tap(find.byTooltip('Abrir perfil'));
+      await tester.pumpAndSettle();
       expect(find.text('Conta conectada'), findsOneWidget);
       repo.logoutError = outage();
       await tester.scrollUntilVisible(
@@ -122,7 +130,12 @@ void main() {
         );
       final controller = AuthController(repo);
       await tester.pumpWidget(
-        MaterialApp(home: AuthGate(controller: controller)),
+        MaterialApp(
+          home: AuthGate(
+            controller: controller,
+            nutritionRepository: FakeNutrition(),
+          ),
+        ),
       );
       await tester.pumpAndSettle();
       expect(find.textContaining('Sua sessão foi preservada'), findsOneWidget);

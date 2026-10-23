@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 23/10: nova prioridade explícita de todo o frontend fiel aoFigma v0.5, antes de novas funcionalidades. Fundamentos/tema/marca iniciados; composição/controllers/sessão existentes, mas shell/Hoje/rascunhos e paridade visual completos ainda faltam. Ver frontend-fidelidade-figma.md; não encerrar só por aplicar tema.
+Handoff: 23/10: prioridade continua frontend inteiro fiel aoFigma. Incremento visual01: shellGo, Inter/assets originais, cinco abas lazy com estado/foco/voltar, conta peloavatar, resumo diário injetável e proteção deconta/rede.68testesFlutter/analyze0issues. Biblioteca/formulários/detalhes/demais estados e aceite visual completo pendentes; não marcar done.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 23/10: formulários de alimento próprio, consumo, histórico e subtotais entregues na020. Consumo humano real confirmado. Frontend completo deve agora corresponder aoFigma v0.5, com Hoje integrado e dependência021; cadastro próprio humano/aceite visual ainda pendentes. Ver frontend-fidelidade-figma.md.
+Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
