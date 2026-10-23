@@ -24,7 +24,7 @@ Console: [clientes](https://console.cloud.google.com/auth/clients?project=bootca
 
 Go: `TF_GOOGLE_SERVER_CLIENT_ID` exige um único client ID Web explícito. Vazio torna troca Google indisponível503. `.local/api.env` guarda configuração e conexão runtime; não imprimir.
 
-Flutter: `GOOGLE_SERVER_CLIENT_ID` e `API_BASE_URL` via dart-define/arquivo local ignorado. HTTP só em debug para localhost/127.0.0.1/10.0.2.2/::1. Release exige HTTPS. Não segue redirects. `TF_ENV=production` recusa autenticação sem TLS e não confia em X-Forwarded-Proto. Terminação TLS/proxy confiável dependem da etapa de infraestrutura; servidor local não é staging.
+Flutter: `GOOGLE_SERVER_CLIENT_ID` e `API_BASE_URL` via dart-define/arquivo local ignorado. HTTP só em debug para localhost/127.0.0.1/10.0.2.2/::1. Release exige HTTPS. Não segue redirects. `TF_ENV=production` recusa HTTP sem TLS verificado. Encaminhamento somente de peers nos CIDRs explicitamente configurados em TF_TRUSTED_PROXY_CIDRS, com cadeia estrita; cabeçalhos arbitrários são ignorados. TerminaçãoTLS/proxy de produção ainda não validados; servidor local não é staging.
 
 Secure storage usa chave Go distinta do JWT Fastify. O par de tokens fica num único JSON sem nome/e-mail. O checkpoint não chama bootstrap/geradores legados com token Go. Mostra autenticação e lacunas dos demais domínios.
 
@@ -44,11 +44,11 @@ ACL de `android/key.properties` foi restringida à conta Windows atual e SYSTEM 
 
 ## Teste real e retomada
 
-Autor fora do notebook em22/10; login consentido/cadastrorelease aguardam retorno. [Um comando de retomada](avaliacao-android.md) prepara banco/API/emulador e reutiliza o APK validado. Biblioteca já acessível semGoogle.
+Em22/10 o autor estava fora do notebook. Em23/10 fez loginGoogleAndroiddebug consentido; GETme200, reabertura/rede, refreshnatural, logout e reentrada reais passaram. ExclusãoTrainForge explicitamente autorizada e validada. Cadastrorelease/HTTPS pendentes. [Evidência real](auth-real-android-verification.json). [Um comando de retomada](avaliacao-android.md) prepara banco/API/emulador e reutiliza o APK validado. Biblioteca já acessível semGoogle.
 
 Emulador existente TrainForge_Benchmark: Android35, GooglePlay,2GBRAM. Sem novo AVD, wipe, reset ou instalação Flutter. Conferir serial; `adb -s emulator-5554 reverse tcp:8082 tcp:8082`. API somente loopback.
 
-1. DB V1 com migration00004; API local e Swagger com11operações (saúde/auth/consulta).
+1. DB V1 com migrations00001–00007; API Go0.4.0 e Swagger com18operações (saúde/auth/consulta/privacidade).
 2. APKdebug com client ID conferido; verificar certificado/checksum; instalar sem uninstall.
 3. Autor autentica manualmente numa conta de teste. Senha/2FA/consentimento só pelo autor. Não pedir tokens, capturar logcat integral ou tela de senha.
 4. Confirmar conta real na tela, GETme200 e identidade persistida; reabrir confirma sessão.

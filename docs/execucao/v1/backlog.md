@@ -371,7 +371,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: 23/10: Go/Flutter implementados, APK0.1.3+4 instalado, hash/assinatura/fontes conferidos. LoginGoogle consentido, cadastroOAuthrelease e HTTPS continuam pendentes; fixtures não concluem história. Ver avaliacao-android.md.
+Handoff: 23/10: loginGoogle Androiddebug consentido pelo autor validado noAPK0.1.3+4: identidade única issuer+sub, GETme200, reabertura/rede, refreshnatural, logout e reentrada na mesma conta. Exclusão TrainForge real autorizada/concluída, Google preservado. OAuthrelease/HTTPS/iOS não validados; mantém doing/completionEvidence vazio. Ver auth-real-android-verification.json.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
@@ -402,7 +402,7 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
+Handoff: 23/10: preparação existente validada com contaGoogle real: reabertura, falha/retomada, access expirado naturalmente, refresh consumido0→1, retry200, logout204/família revogada e reentrada sem duplicar identidade. Exclusão posterior revogou todas as famílias.011 continua doing porOAuthrelease/HTTPS; não marcar done antes da dependência.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
@@ -433,7 +433,7 @@ Validação: Testes BOLA em todos os recursos privados; Teste de spoof de forwar
 
 Entregas: Matriz de acesso; Política de privacidade do piloto e operações de dados
 
-Handoff: 23/10: trabalho independente implementado/validado emGo0.4.0/18operações e Flutter/APK0.1.3+4: proxy/limites, exportação própria, exclusão confirmada/transacional, manutenção e gate de restore.48testesFlutter, fixturesPostgreSQL/restore e HTTPsemconta reais. doing/completionEvidence vazio:011Google real e aceite pessoal privado pendentes. Não iniciar outraV1 antes do aceite; ver privacidade-013.md e privacy-*-verification.json.
+Handoff: 23/10: consultas das oito seções e exclusão privadas validadas com contaGoogle real. Titular autorizou explicitamente excluir a contaTrainForge de avaliação; nonce/frase/commit/limpeza/reabertura passaram.0contas/sessões/intenções,1registro mínimo e hashes/6369alimentos/73metadados preservados. doing pela011/OAuthrelease/HTTPS ainda pendente; aceite privado resolvido. Não iniciar outraV1 antes dos gates.
 
 ## EP05 — Biblioteca humana e API de catálogo
 

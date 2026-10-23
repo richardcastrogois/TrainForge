@@ -20,5 +20,8 @@
   "dataCredentialsAndSigningPreserved": true,
   "priorColdStartSucceeded": true,
   "priorColdStartVersion": "0.1.1+2",
-  "realGoogleLoginValidated": false
+  "realGoogleLoginValidated": false,
+  "historicalUnattendedCheckpoint": true,
+  "currentConsentedValidation": "auth-real-android-verification.json",
+  "currentEnvironmentLeftRunningForUser": true
 }

@@ -1,12 +1,22 @@
-# Handoff vigente — APK0.1.3+4, catálogo/alimentos reais e aceite Google pendente
+# Handoff vigente — APK0.1.3+4, catálogo/alimentos reais e login Google debug e privacidade validados; gates release pendentes
 
-Atualizado em23/10/2026. Raiz correta: `C:/dev/TrainForge/trainforge`. **Primeiro abrir [avaliação Android](avaliacao-android.md)**: `.\tools\avaliar-android.ps1` inicia o ambiente existente e abre o app. Autor está fora do notebook; não aguardar intervenção para revisão técnica nem tentar senha/2FA/consentimento.
+Atualizado em23/10/2026. Raiz correta: `C:/dev/TrainForge/trainforge`. **Primeiro abrir [avaliação Android](avaliacao-android.md)**: `.\tools\avaliar-android.ps1` inicia o ambiente existente e abre o app. Autor retornou ao notebook e fez loginGoogle consentido. Não automatizar senha/2FA/consentimento. Reentrada na mesma conta e exclusãoTrainForge explicitamente autorizada foram concluídas. ContaGoogle preservada, app reaberto naentrada; catálogos preservados.
+
+## Validação consentida em23/10 — estado mais recente
+
+LoginGoogle real Androiddebug concluído pessoalmente pelo autor. Uma identidadeGoogle canônica persistida, GETme200 e conta conectada; nenhum e-mail/token/subject registrado nas evidências. Reabertura preservou sessão. Falha temporária somente noADB reverse8082 preservou conta e contagens; mapping restaurado emfinally, reconexão200.
+
+Access expirou naturalmente, sem alterarDB: consulta401→refresh→retry200, consumo de refresh0→1 e mesma identidade, acesso renovado válido. Logout pelo botão retornou204 e tela deentrada,0famílias/acessos ativos. Autor reentrou pessoalmente, mesma identidade/1usuário e nova família, sem duplicar conta.
+
+Exportação no app: Conta/Sessões próprias,semcredenciais; seis demais seções vazias com200. Clipboard não usado, exportação/XML bruto não retidos. Titular autorizou explicitamente excluir somente a contaTrainForge deavaliação. Fluxo normal daUI executado após verificar mesmaidentidade: leitura dos limites, intenção temporária, frase exata, DELETE200 e confirmação.0contas/famílias/access/refresh/intenções/dados privados na base corrente,1registro mínimoUUID/data correspondente ao titular. ContaGoogle não alterada.73metadados/6369alimentos e hashes das linhas editoriais preservados.
+
+App reaberto naentrada sem requisição deautenticação, evidenciando limpeza/retomada sem conta residual. [Recibo real](auth-real-android-verification.json). API/emulador/DB permanecem ativos para o autor; recibo deparada anterior é histórico. Nenhuma mudança de código/APK/Graphify ou nova fixture necessária. Gate restante: OAuthAndroidrelease/HTTPS e validações próprias de plataforma; não fechar011/013 nem iniciar outraV1 indevidamente.
 
 ## Direção autorizada em23/10
 
 Autor autorizou atualizar Graphify, commitar e enviar os incrementos validados aoGitHub; essa autorização substitui a restrição anterior a push. Deploy/compra/contato externo continuam sem autorização. Graphify reconferido:0alterados/55inalterados,705nós/901arestas; artefatos já atuais, sem reindexação semântica ou instalação.
 
-V1-013 implementada/validada tecnicamente: autorização/titularidade, limites por instância, exportação própria, exclusão confirmada, manutenção limitada e gate de restore, com contratosGo/Flutter. Continua doing porque011Google real e aceite integrado privado dependem do autor. Não iniciar outraV1 antes desse aceite. Requisito de escala é objetivo: capacidade de milhões simultâneos não está comprovada sem carga e infraestrutura dimensionada.
+V1-013 implementada/validada tecnicamente: autorização/titularidade, limites por instância, exportação própria, exclusão confirmada, manutenção limitada e gate de restore, com contratosGo/Flutter. Continua doing: loginGoogle debug real passou; OAuthrelease/HTTPS ainda pendem; fluxo privado real concluído. Não iniciar outraV1 antes desse aceite. Requisito de escala é objetivo: capacidade de milhões simultâneos não está comprovada sem carga e infraestrutura dimensionada.
 
 ## Trabalho autônomo enquanto autor está fora
 
@@ -16,7 +26,7 @@ Goimportador verifica operação/atribuição/hash/cabeçalho/estado/decimal/bas
 
 Permissões são específicas de consulta/composição/escala fiel de dados, sem clínica, dieta, porção caseira ou mídia. Outras20famílias continuam inventariadas sem aprovação porherança. API deconsulta e Flutteralimentar entregues como preparação parcial020/025: busca/fonte/cursor/detalhe/ETag, nomes/colunas originais, nutrientes com estados/bases/créditos, sem cálculo/consumo. Consulta alimentar entregue inicialmente emGo0.3.0/14operações; estado atualGo0.4.0/18operações eAPK0.1.3+4. [Consulta alimentar](alimentacao-consulta.md), food-read-verification.json. Migration00006só adiciona índices;00007 adiciona ciclo deprivacidade. Backup alimentar histórico validado até00005; após restore aplicar migrations atuais e gate de exclusões antes de liberar acesso. Não repetir export/import/restore sem mudança concreta.
 
-V1-013 tem implementação independente pronta, com aceite pessoal e011Googlemanual pendentes. Não iniciar020 nem outra história funcional antes de concluir esses gates. Manter gates deaceite e a cobertura completa do produto.
+V1-013 tem implementação independente pronta, com aceite privado real concluído;011/OAuthrelease/HTTPS ainda pendentes. Não iniciar020 nem outra história funcional antes de concluir esses gates. Manter gates deaceite e a cobertura completa do produto.
 
 ## Estado Git e entregas
 
@@ -51,15 +61,14 @@ Manutenção manual com prévia padrão; wrapper de restore recusa alvo real/aus
 - [Authtransacional](auth-local-verification.json): identidade/concorrência/rotação/reuso/expiração/logout em DBtemporária; nenhuma fixture entregue. [HTTPatual](auth-http-verification.json): ready200/me401/Googleinválido401/refreshinválido401/logout204, Swagger11operações nesse recibo histórico; estado atual18operações/Go0.4.0 comprovado por privacy-http-verification.json.
 - Inspeção visual da biblioteca e detalhe no emulador confirmou autoria/licença e consulta explícita. Capturas públicas ficam ignoradas em.local, sem conta/e-mail/tokens. Nenhum link de fornecedor foi aberto pelo agente.
 - GraphifyFlutter atualizado apenasporAST:59arquivos,783nós/1001arestas;7arquivos novos/alterados de013/auth, HTMLexportado. Sem extraçãosemântica/reclusterização; backup em.local/graphify-backup-20261023-privacy.
-- LoginGoogle **real ainda não validado**; fixture/negativosHTTP/APKaberto não encerram011. Nenhum usuário foi inventado. Prática, adesões, atividade/histórico, cadastro alimentar/consumo, HTTPSrelease, infraestrutura e iOS seguem pendentes.
+- LoginGoogle real **Androiddebug validado em23/10**; release/HTTPS seguem sem validação, portanto011 não foi encerrada. Nenhum usuário foi inventado. Prática, adesões, atividade/histórico, cadastro alimentar/consumo, HTTPSrelease, infraestrutura e iOS seguem pendentes.
 
 ## Próximo passo do autor e do agente
 
-1. Autor retorna ao notebook e executa o comando do [guia](avaliacao-android.md); biblioteca e alimentos independem deGoogle.
-2. Autor faz entradaGoogle pessoalmente numa Testuser. Não capturar tela de senha/logcatintegral; confirmar tela Conta conectada, GETme200 e somente relações/contagens/hash noDB, sem exporidentidade. Depois reabertura/rede/refresh/logout/reentrada reais.
-3. Autor cria clienteAndroidrelease separado com pacote com.example.trainforge e SHA1 `24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D`. Debug pode ser validado antes. HTTPS/testerelease são gates próprios; não publicar para contorná-los.
-4. Só fechar011/012/013 quando critérios reais passarem; validar exportação própria e exclusão somente com escolha explícita do titular. Não iniciar próximaV1 antes de concluir013. Depois, avançar pelas dependências;014não libera016sem instrução/mídia revisada nem022sem015/021. Preservar todos os públicos/ambientes e lacunas da [matriz](matriz-cenarios.md).
-5. Celular vem depois, com serialADB explícito, depuraçãoUSB e instalação sem apagar dados. ProdutoAndroid+iOS, não reduzir escopo à plataforma desta máquina.
+1. LoginGoogle debug, sessão/refresh/logout/reentrada e exclusão privados reais passaram; não repetir sem mudança relevante. A contaTrainForge foi excluída por autorização explícita. Entrar novamente criaria uma nova contaTrainForge; Google permanece intacto.
+2. Conferir/criar clienteOAuthAndroidrelease separado, pacote com.example.trainforge e SHA1 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D. [GuiaOAuth](oauth-android.md). Debug já validado não comprova release; APIHTTPS/release/iOS continuam gates próprios.
+3. Não fazer deploy/criar cobrança/alterar segurança da máquina ou contratar para contornar gates. Após evidência dos critérios/dependências, fechar011/012/013 e só então iniciar próximaV1.
+4. Celular vem depois, com serialADB explícito, depuraçãoUSB e instalação preservando dados. Manter Android+iOS e todos os cenários da [matriz](matriz-cenarios.md).
 
 ## Ambiente e operação
 
