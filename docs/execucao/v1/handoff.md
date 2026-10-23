@@ -1,6 +1,12 @@
 # Handoff vigente — APK0.1.2+3, catálogo/alimentos reais e aceite Google pendente
 
-Atualizado em22/10/2026. Raiz correta: `C:/dev/TrainForge/trainforge`. **Primeiro abrir [avaliação Android](avaliacao-android.md)**: `.\tools\avaliar-android.ps1` inicia o ambiente existente e abre o app. Autor está fora do notebook; não aguardar intervenção para revisão técnica nem tentar senha/2FA/consentimento.
+Atualizado em23/10/2026. Raiz correta: `C:/dev/TrainForge/trainforge`. **Primeiro abrir [avaliação Android](avaliacao-android.md)**: `.\tools\avaliar-android.ps1` inicia o ambiente existente e abre o app. Autor está fora do notebook; não aguardar intervenção para revisão técnica nem tentar senha/2FA/consentimento.
+
+## Direção autorizada em23/10
+
+Autor autorizou atualizar Graphify, commitar e enviar os incrementos validados aoGitHub; essa autorização substitui a restrição anterior a push. Deploy/compra/contato externo continuam sem autorização. Graphify reconferido:0alterados/55inalterados,705nós/901arestas; artefatos já atuais, sem reindexação semântica ou instalação.
+
+Próximo incremento: V1-013, autorização/titularidade, limites e ciclo dos dados (exportação/exclusão/retenção), com testes descartáveis e contratosGo/Flutter. Finalizar implementação/validação dessa história antes de iniciar outra; aceite integrado continua condicionado à011Google real. Requisito de escala é objetivo: capacidade de milhões simultâneos não está comprovada sem carga e infraestrutura dimensionada.
 
 ## Trabalho autônomo enquanto autor está fora
 
