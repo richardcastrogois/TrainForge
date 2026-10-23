@@ -97,3 +97,19 @@ flowchart TD
 ```
 
 UI nova usa os contratosGo existentes; nenhum endpoint novo nesta fatia. Swagger permanece Go0.5.1/25operações. Atividade, sensores, planos e metas não foram implementados por haver navegação. Diagramas são derivados da composição real e não comprovam aceite visual ou capacidade de carga.
+
+## Incremento visual02 — busca alimentar e porção
+
+APKdebug0.1.7+10. Resultados da pesquisa104:1211 e porção104:1233 foram convertidos com os contextos/screenhots já lidos: cabeçalho/marca/voltar, margem24, Inter, cartões22px, cores dafonte, entrada dequantidade emacento e origem/preparo emsuperfíciebranca. Busca/paginação/filtros continuam usandoGo real e versão/licença/idioma/base originais. Não foram criados favoritos ou resultados fictícios.
+
+Quantidade permanece vazia até entrada explícita. Unidade g/ml, medida/estimativa, preparo, data/fuso, validações e confirmação continuam reais. Campos extras de segurança permanecem apesar de não aparecerem noexemplo compacto doFigma. O cálculo da porção é confirmado pelaAPI; não foi reproduzido o exemplo170g/104kcal/macros. TecladoAndroid nativo, sem desenhar ou controlar um teclado fictício doprotótipo156:14612.
+
+Oformulário mantém todos os campos montados ao rolar, inclusive com teclado/texto2x, para validar campos fora daárea visível e preservar seuestado. Busca vazia/erro usa seção de altura natural para manter a ação de recuperação alcançável. Testes exigem quantidade/evidência, corpo/chave congelados após resposta incerta e umúnico envio emtoque duplo.
+
+70testesFlutter/analyze0issues, incluindo320x568/texto2x/teclado240px e preservação daquantidade ao rolar. Prévias390x844 de busca/porção inspecionadas com fixtures isoladas, sem escrever noDBentregue. [Recibo](frontend-food-verification.json). Sem novaAPI/migration; Swagger permanece25operações/Go0.5.1.
+
+### Limite externo de referência
+
+Em23/10 oconectorFigma retornou limite do planoStarter para get_design_context de **104:1260 · cadastro manual**. Contextos de104:1211 e156:14612 da mesma rodada foram recebidos; o104:1233 já estava disponível. Não repetir chamadas, comprar plano, contornar quota ou implementar famílias sem contexto suficiente. Ocadastro próprio funcional permanece acessível noapp; sua conversão visual, detalhes/histórico/privacidade/biblioteca e demais famílias seguem pendentes de referências suficientes e conferência. Oautor pode continuar avaliando os incrementos locais; esta pendência não exige hospedagem nem recriarOAuth.
+
+Não afirmar que todo o front está exatamente igual ou encerrar022/025 devido a estes componentes. Continuar primeiro pelas referências já obtidas; obter os contextos faltantes quando oacesso voltar ou oautor fornecer as referências, sem pesquisa ampla deAPIs.

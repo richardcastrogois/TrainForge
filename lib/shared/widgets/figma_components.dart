@@ -252,3 +252,72 @@ class FigmaBack extends StatelessWidget {
     ),
   );
 }
+
+class FigmaRouteFrame extends StatelessWidget {
+  final Widget body;
+  const FigmaRouteFrame({super.key, required this.body});
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    body: SafeArea(
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 480),
+          child: Column(
+            children: [
+              const FigmaHeader(),
+              Expanded(child: body),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+class FigmaPageHeading extends StatelessWidget {
+  final String title, subtitle;
+  const FigmaPageHeading({
+    super.key,
+    required this.title,
+    required this.subtitle,
+  });
+  @override
+  Widget build(BuildContext context) => Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      const FigmaBack(),
+      Text(title, style: Theme.of(context).textTheme.headlineLarge),
+      const SizedBox(height: 12),
+      Text(
+        subtitle,
+        style: const TextStyle(
+          fontSize: 12,
+          height: 1.35,
+          color: TrainForgeTheme.muted,
+        ),
+      ),
+      const SizedBox(height: 12),
+    ],
+  );
+}
+
+class FigmaSection extends StatelessWidget {
+  final Widget child;
+  final Color color;
+  const FigmaSection({
+    super.key,
+    required this.child,
+    this.color = Colors.white,
+  });
+  @override
+  Widget build(BuildContext context) => Container(
+    width: double.infinity,
+    padding: const EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      color: color,
+      borderRadius: BorderRadius.circular(22),
+    ),
+    child: child,
+  );
+}

@@ -700,8 +700,9 @@
       "name": "85 · Resultados da pesquisa",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "visual02-real-food-flow-with-explicit-safety-fields"
     },
     {
       "id": "104:1233",
@@ -709,7 +710,8 @@
       "width": 390,
       "height": 844,
       "designContextInspected": true,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "visual02-real-food-flow-with-explicit-safety-fields"
     },
     {
       "id": "104:1260",
@@ -2044,7 +2046,7 @@
       "name": "Entrada · 87 · Alimento e quantidade",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
+      "designContextInspected": true,
       "flutterVisualAcceptance": "pending"
     },
     {
@@ -3224,6 +3226,11 @@
       "flutterVisualAcceptance": "pending"
     }
   ],
-  "frontendIncrement": "visual01-shell-entry-profile",
-  "evidence": "frontend-shell-verification.json"
+  "frontendIncrement": "visual02-food-search-portion",
+  "evidence": "frontend-food-verification.json",
+  "referenceAccessPending": {
+    "nodeId": "104:1260",
+    "reason": "Figma MCP Starter tool call limit",
+    "date": "2026-10-23"
+  }
 }

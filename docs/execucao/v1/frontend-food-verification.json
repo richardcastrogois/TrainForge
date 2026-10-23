@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-23",
+  "scope": "frontend-visual02-food-search-portion",
+  "status": "increment-validated-full-fidelity-pending",
+  "figma": {
+    "nodesImplementedFromContext": [
+      "104:1211",
+      "104:1233"
+    ],
+    "nativeKeyboardReferenceInspected": "156:14612",
+    "fullVisualAcceptance": false,
+    "missingContext": {
+      "node": "104:1260",
+      "reason": "Figma MCP Starter plan tool call limit"
+    },
+    "newFigmaWriteOperations": 0
+  },
+  "flutter": {
+    "testsPassed": 70,
+    "analyzeIssues": 0,
+    "visualPreviewsInspected": [
+      "food-search",
+      "food-portion"
+    ],
+    "smallScreen": [
+      320,
+      568
+    ],
+    "textScale": 2,
+    "keyboardInset": 240,
+    "checks": [
+      "quantity stays explicit and editable",
+      "form validators retain offscreen field state",
+      "quantity retained after scrolling",
+      "evidence required",
+      "ambiguous retries freeze original body/key",
+      "double tap sends once",
+      "empty search reset reachable and effective",
+      "unknown cells and original sources preserved"
+    ]
+  },
+  "runtime": {
+    "androidEvidence": "android-frontend-checkpoint.json",
+    "agentCreatedConsumptionRecords": 0,
+    "agentEnteredQuantity": false,
+    "agentConfirmedConsumption": false,
+    "newAPIContracts": 0,
+    "newMigrations": 0,
+    "apiVersion": "0.5.1",
+    "swaggerOperations": 25
+  },
+  "remaining": [
+    "full visual fidelity across all families",
+    "own food visual context104:1260",
+    "food details/history/revisions visual conversion",
+    "privacy/library/remaining states",
+    "iOS and release validation"
+  ]
+}

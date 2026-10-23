@@ -1,24 +1,24 @@
 {
-  "versionName": "0.1.6",
-  "versionCode": 9,
+  "versionName": "0.1.7",
+  "versionCode": 10,
   "variant": "debug",
   "package": "com.example.trainforge",
   "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
-  "sha256": "7ca5dc9e24b442f66b1c2f8e5ca2a284ca725be3cb946afd3714a28294e11796",
+  "sha256": "c5267618505fee8013fdbe1aa87c2308265578759abf9ef838564676248958dd",
   "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
-  "sourceFingerprint": "0f23af910ff48d48391dbed65da5bbc4d78ab12c210553e8f12c74f91b42e738",
+  "sourceFingerprint": "f4ebc904345056b6fc201ea4c0f0619d0cee78236cb74eae8378325ca2a7c4ac",
   "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
   "realGoogleLoginValidated": false,
   "date": "2026-10-23",
-  "scope": "figma-visual01-shell-entry-profile-debug",
+  "scope": "figma-visual02-food-search-portion-debug",
   "apiVersion": "0.5.1",
   "swaggerOperations": 25,
   "device": "emulator-5554",
   "built": true,
   "signatureVerified": true,
   "latestBuildInstalled": true,
-  "installedSha256": "7ca5dc9e24b442f66b1c2f8e5ca2a284ca725be3cb946afd3714a28294e11796",
-  "flutterTestsPassed": 68,
+  "installedSha256": "c5267618505fee8013fdbe1aa87c2308265578759abf9ef838564676248958dd",
+  "flutterTestsPassed": 70,
   "flutterAnalyzeIssues": 0,
   "figmaExactVisualAcceptance": false,
   "figmaPriority": "frontend-fidelidade-figma.md",
@@ -27,10 +27,15 @@
   "agentCreatedConsumptionRecords": 0,
   "humanConsumptionEvidence": "nutrition-real-android-verification.json",
   "priorRealGoogleLoginEvidence": "auth-real-android-verification.json",
-  "readOnlyAndroidNavigation": {
-    "allFiveAreasVerified": true,
-    "returnedToHoje": true,
-    "consumptionCountUnchanged": true,
-    "activeConsumptionCount": 1
-  }
+  "priorNavigationEvidence": "frontend-shell-verification.json",
+  "readOnlyAndroidFoodNavigation": {
+    "realPublicFoodSearchReached": true,
+    "emptyPortionFormReached": true,
+    "quantityEditorEnabled": true,
+    "returnedToHoje": true
+  },
+  "activeConsumptionCount": 1,
+  "consumptionCountUnchanged": true,
+  "agentEnteredQuantity": false,
+  "agentConfirmedConsumption": false
 }

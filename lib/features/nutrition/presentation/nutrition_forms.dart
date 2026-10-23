@@ -1,3 +1,5 @@
+import 'package:trainforge/core/theme/trainforge_theme.dart';
+import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
@@ -127,66 +129,78 @@ class _EntryFormPageState extends State<EntryFormPage> {
   @override
   Widget build(BuildContext context) {
     final locked = busy || pending != null;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          widget.entry == null ? 'Registrar consumo' : 'Corrigir consumo',
-        ),
-      ),
-      body: SafeArea(
-        child: Form(
-          key: form,
-          child: ListView(
-            padding: const EdgeInsets.all(16),
+    return FigmaRouteFrame(
+      body: Form(
+        key: form,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
-                widget.food.displayName,
-                style: Theme.of(context).textTheme.titleLarge,
+              FigmaPageHeading(
+                title: widget.entry == null
+                    ? 'A porção é tua.'
+                    : 'Corrigir consumo',
+                subtitle: widget.food.displayName,
               ),
-              Text(widget.food.basisLabel),
-              Text(widget.food.source.attribution),
-              ExpansionTile(
-                title: const Text('Fonte e versão'),
-                children: [
-                  SelectableText(
-                    'Origem: ${widget.food.sourceId}\nVersão: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.license}',
-                  ),
-                ],
-              ),
-              const Text(
-                'Confirme somente o que você consumiu. Não há dieta prescrita nem compensação por exercícios. Quantidades estimadas serão identificadas como estimadas.',
-              ),
-              TextFormField(
-                key: const Key('entry-quantity'),
-                controller: quantity,
-                enabled: !locked,
-                maxLength: 14,
-                keyboardType: const TextInputType.numberWithOptions(
-                  decimal: true,
+              FigmaSection(
+                color: TrainForgeTheme.accent,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      'Quantidade',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    TextFormField(
+                      key: const Key('entry-quantity'),
+                      controller: quantity,
+                      enabled: !locked,
+                      maxLength: 14,
+                      keyboardType: const TextInputType.numberWithOptions(
+                        decimal: true,
+                      ),
+                      textInputAction: TextInputAction.done,
+                      decoration: const InputDecoration(
+                        labelText: 'Quantidade consumida',
+                        hintText: 'Informe a quantidade',
+                      ),
+                      validator: (v) =>
+                          validDecimal(decimal(v ?? ''), positive: true)
+                          ? null
+                          : 'Informe uma quantidade maior que zero, até 6 casas decimais.',
+                    ),
+                    const SizedBox(height: 12),
+                    DropdownButtonFormField<String>(
+                      initialValue: unit,
+                      isExpanded: true,
+                      itemHeight: null,
+                      decoration: const InputDecoration(
+                        labelText: 'Unidade da quantidade',
+                      ),
+                      items: const [
+                        DropdownMenuItem(value: 'g', child: Text('Gramas (g)')),
+                        DropdownMenuItem(
+                          value: 'ml',
+                          child: Text('Mililitros (ml)'),
+                        ),
+                      ],
+                      onChanged: locked
+                          ? null
+                          : (v) => setState(() => unit = v!),
+                    ),
+                  ],
                 ),
-                decoration: const InputDecoration(
-                  labelText: 'Quantidade consumida',
-                  hintText: 'Informe a quantidade',
-                ),
-                validator: (v) => validDecimal(decimal(v ?? ''), positive: true)
-                    ? null
-                    : 'Informe uma quantidade maior que zero, até 6 casas decimais.',
               ),
-              DropdownButtonFormField<String>(
-                initialValue: unit,
-                isExpanded: true,
-                decoration: const InputDecoration(
-                  labelText: 'Unidade da quantidade',
-                ),
-                items: const [
-                  DropdownMenuItem(value: 'g', child: Text('Gramas (g)')),
-                  DropdownMenuItem(value: 'ml', child: Text('Mililitros (ml)')),
-                ],
-                onChanged: locked ? null : (v) => setState(() => unit = v!),
-              ),
+              const SizedBox(height: 12),
               DropdownButtonFormField<String>(
                 initialValue: evidence,
                 isExpanded: true,
+                itemHeight: null,
                 decoration: const InputDecoration(
                   labelText: 'Como obteve a quantidade?',
                 ),
@@ -204,26 +218,106 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     v == null ? 'Escolha medida ou estimativa.' : null,
                 onChanged: locked ? null : (v) => setState(() => evidence = v),
               ),
-              TextFormField(
-                key: const Key('entry-preparation'),
-                controller: preparation,
-                enabled: !locked,
-                maxLength: 180,
-                decoration: const InputDecoration(
-                  labelText: 'Preparo observado (opcional)',
+              const SizedBox(height: 12),
+              FigmaSection(
+                color: TrainForgeTheme.nutrition,
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Composição da porção',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      'O cálculo é confirmado pela API ao salvar. Valores desconhecidos não viram zero; métodos e unidades diferentes não são somados.',
+                      style: TextStyle(
+                        fontSize: 12,
+                        height: 1.35,
+                        color: TrainForgeTheme.muted,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const Text(
-                'O preparo informado é uma anotação sua. Ele não transforma a composição da fonte. Não convertemos gramas em mililitros sem densidade comprovada.',
+              const SizedBox(height: 12),
+              FigmaSection(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      'Origem e preparação',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      widget.food.basisLabel,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        height: 1.35,
+                        color: TrainForgeTheme.muted,
+                      ),
+                    ),
+                    ExpansionTile(
+                      tilePadding: EdgeInsets.zero,
+                      title: const Text('Fonte e versão'),
+                      children: [
+                        SelectableText(
+                          'Origem: ${widget.food.sourceId}\nVersão: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.attribution}\n${widget.food.source.license}',
+                        ),
+                      ],
+                    ),
+                    TextFormField(
+                      key: const Key('entry-preparation'),
+                      controller: preparation,
+                      enabled: !locked,
+                      maxLength: 180,
+                      decoration: const InputDecoration(
+                        labelText: 'Preparo observado (opcional)',
+                      ),
+                    ),
+                    const Text(
+                      'O preparo é uma anotação sua e não altera a composição da fonte. Não convertemos gramas em mililitros sem densidade comprovada.',
+                      style: TextStyle(
+                        fontSize: 12,
+                        height: 1.35,
+                        color: TrainForgeTheme.muted,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              OutlinedButton.icon(
+              const SizedBox(height: 12),
+              OutlinedButton(
                 onPressed: locked ? null : pickDate,
-                icon: const Icon(Icons.event),
-                label: Text(
+                child: Text(
                   '${localDay(when)} · ${when.hour.toString().padLeft(2, '0')}:${when.minute.toString().padLeft(2, '0')} · ${offsetZone(when)}',
                 ),
               ),
-              const Text('Data e hora do aparelho, confirmadas por você.'),
+              const Text(
+                'Data e hora do aparelho, confirmadas por você.',
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.35,
+                  color: TrainForgeTheme.muted,
+                ),
+              ),
+              const SizedBox(height: 12),
+              const Text(
+                'Confirme somente o que você consumiu. Não há dieta prescrita nem compensação por exercícios. Quantidades estimadas serão identificadas como estimadas.',
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.35,
+                  color: TrainForgeTheme.muted,
+                ),
+              ),
+              const SizedBox(height: 12),
               if (error != null)
                 Semantics(liveRegion: true, child: Text(error!)),
               if (pending != null && !busy)
