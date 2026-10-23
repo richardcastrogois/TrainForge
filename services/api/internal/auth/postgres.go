@@ -53,15 +53,20 @@ func insertCredentials(ctx context.Context, tx pgx.Tx, family string, c Credenti
 	return err
 }
 func (p Postgres) Authenticate(ctx context.Context, h []byte) (User, error) {
-	var u User
-	err := p.Pool.QueryRow(ctx, `SELECT u.id::text,coalesce(u.display_name,''),coalesce(u.email,'') FROM trainforge_v1.access_tokens a JOIN trainforge_v1.auth_families f ON f.id=a.family_id JOIN trainforge_v1.users u ON u.id=f.user_id WHERE a.token_hash=$1 AND a.expires_at>now() AND f.revoked_at IS NULL`, h).Scan(&u.ID, &u.Name, &u.Email)
+	principal, err := p.Authorize(ctx, h)
+	return principal.User, err
+}
+func (p Postgres) Authorize(ctx context.Context, h []byte) (Principal, error) {
+	var principal Principal
+	err := p.Pool.QueryRow(ctx, `SELECT u.id::text,coalesce(u.display_name,''),coalesce(u.email,''),f.id::text,f.created_at FROM trainforge_v1.access_tokens a JOIN trainforge_v1.auth_families f ON f.id=a.family_id JOIN trainforge_v1.users u ON u.id=f.user_id WHERE a.token_hash=$1 AND a.expires_at>now() AND f.revoked_at IS NULL`, h).Scan(&principal.User.ID, &principal.User.Name, &principal.User.Email, &principal.FamilyID, &principal.LoginAt)
 	if errors.Is(err, pgx.ErrNoRows) {
-		return User{}, ErrInvalid
+		return principal, ErrInvalid
 	}
 	if err != nil {
-		return User{}, ErrUnavailable
+		return principal, ErrUnavailable
 	}
-	return u, nil
+	principal.AccessHash = append([]byte(nil), h...)
+	return principal, nil
 }
 func (p Postgres) Rotate(ctx context.Context, h []byte, c Credentials) (User, error) {
 	tx, err := p.Pool.Begin(ctx)

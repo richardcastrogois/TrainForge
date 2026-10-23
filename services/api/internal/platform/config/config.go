@@ -3,6 +3,7 @@ package config
 import (
 	"errors"
 	"net"
+	"net/netip"
 	"strconv"
 	"strings"
 	"time"
@@ -15,6 +16,7 @@ type Config struct {
 	MaxConns       int32
 	RequestTimeout time.Duration
 	GoogleAudience string
+	TrustedProxies []netip.Prefix
 	Swagger        bool
 }
 
@@ -35,6 +37,19 @@ func Load(get func(string) string) (Config, error) {
 	c.GoogleAudience = strings.TrimSpace(get("TF_GOOGLE_SERVER_CLIENT_ID"))
 	if c.GoogleAudience != "" && (!strings.HasSuffix(c.GoogleAudience, ".apps.googleusercontent.com") || strings.ContainsAny(c.GoogleAudience, " ,;\t\r\n")) {
 		return c, errors.New("invalid TF_GOOGLE_SERVER_CLIENT_ID")
+	}
+	if raw := strings.TrimSpace(get("TF_TRUSTED_PROXY_CIDRS")); raw != "" {
+		values := strings.Split(raw, ",")
+		if len(values) > 16 {
+			return c, errors.New("too many trusted proxy prefixes")
+		}
+		for _, value := range values {
+			prefix, err := netip.ParsePrefix(strings.TrimSpace(value))
+			if err != nil || prefix.Bits() == 0 {
+				return c, errors.New("invalid TF_TRUSTED_PROXY_CIDRS")
+			}
+			c.TrustedProxies = append(c.TrustedProxies, prefix.Masked())
+		}
 	}
 	c.DatabaseURL = get("TF_DATABASE_URL")
 	if v := get("TF_ENV"); v != "" {

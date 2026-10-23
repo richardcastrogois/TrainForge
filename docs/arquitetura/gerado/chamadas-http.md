@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 
@@ -21,6 +21,10 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /mobile/home/$date` | sem chaves literais detectadas | /mobile/home/:date / body=ausente/inline / query=ausente | {"200": "HomeDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/home/data/home_api.dart:11](../../../lib/features/home/data/home_api.dart) |
 | `POST /mobile/onboarding/manual-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/manual-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:19](../../../lib/features/onboarding/data/onboarding_api.dart) |
 | `POST /mobile/onboarding/ai-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/ai-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "504": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:50](../../../lib/features/onboarding/data/onboarding_api.dart) |
+| `GET /api/v1/privacy` | publicAuth | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:20](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `GET /api/v1/me/export` | cursor, limit, section | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:29](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `POST /api/v1/me/deletion-intent` | confirmation | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:43](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `DELETE /api/v1/me` | challenge, confirmation | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:55](../../../lib/features/privacy/data/privacy_repository.dart) |
 | `GET /mobile/profile` | sem chaves literais detectadas | /mobile/profile / body=ausente/inline / query=ausente | {"200": "z.object", "401": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/profile/data/profile_api.dart:10](../../../lib/features/profile/data/profile_api.dart) |
 | `PUT /mobile/profile/train-data` | age, bodyFatPercentage, heightInCentimeters, weightInGrams | /mobile/profile/train-data / body=UpsertUserTrainDataBodySchema / query=ausente | {"200": "UpsertUserTrainDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/profile/data/profile_api.dart:20](../../../lib/features/profile/data/profile_api.dart) |
 | `GET /mobile/stats` | from, to | /mobile/stats / body=ausente/inline / query=StatsQuerySchema | {"200": "StatsSchema", "401": "ErrorSchema", "404": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/stats/data/stats_api.dart:13](../../../lib/features/stats/data/stats_api.dart) |
@@ -96,5 +100,9 @@ A tabela mistura implementação local explicitamente identificada e decisões f
 | GET | `/api/v1/catalog/filters` | Sem parâmetros | IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência |
 | GET | `/api/v1/foods/filters` | Sem parâmetros | IMPLEMENTADO:fontes e contagens de registros visíveis, incluindo bases desconhecidas. |
 | GET | `/api/v1/foods/{id}` | versionId SHA256 opcional | IMPLEMENTADO:composição original/estados/bases/créditos;304 revalidado;400/404/503. |
+| GET | `/api/v1/privacy` | Público; sem query | IMPLEMENTADO: política200/no-store, limites de backups/restore/sessão e8seções. |
+| GET | `/api/v1/me/export` | Bearer; section, cursor vinculado ao titular, limit1..50 | IMPLEMENTADO: página própria até1MiB, JSON original, nenhum token/nonce. |
+| POST | `/api/v1/me/deletion-intent` | Bearer recente e confirmation exata | IMPLEMENTADO: challenge de5min da mesma conta/família;409 sessão antiga. |
+| DELETE | `/api/v1/me` | Bearer recente, confirmation e challenge | IMPLEMENTADO: purge privado transacional, revogação de todas as sessões e registro mínimo; backup histórico explícito. |
 
 [Voltar ao mapa](../README.md) · [Contrato proposto completo](../contratos-v1.md)

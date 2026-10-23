@@ -47,6 +47,33 @@ DioException outage() => DioException(
 );
 
 void main() {
+  test('late login cannot restore the identity of an erased account', () async {
+    final repo = SessionFixture()..profile = fixtureProfile;
+    final controller = AuthController(repo);
+    await controller.restore();
+    repo.pendingLogin = Completer<AuthProfile>();
+    final task = controller.login();
+    controller.accountErased(fixtureProfile.id);
+    repo.pendingLogin!.complete(fixtureProfile);
+    await task;
+    expect(controller.profile, isNull);
+    controller.dispose();
+  });
+  test(
+    'erasure callback does not clear a different connected account',
+    () async {
+      const other = AuthProfile(
+        id: 'different-fixture',
+        name: 'Other',
+        email: 'other@example.invalid',
+      );
+      final controller = AuthController(SessionFixture()..profile = other);
+      await controller.restore();
+      controller.accountErased(fixtureProfile.id);
+      expect(controller.profile?.id, other.id);
+      controller.dispose();
+    },
+  );
   testWidgets(
     'restore makes one identity call and logout failure retries logout',
     (tester) async {
@@ -59,7 +86,11 @@ void main() {
       expect(repo.restores, 1);
       expect(find.text('Conta conectada'), findsOneWidget);
       repo.logoutError = outage();
-      await tester.ensureVisible(find.text('Sair desta sessão'));
+      await tester.scrollUntilVisible(
+        find.text('Sair desta sessão'),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
       await tester.pumpAndSettle();
       await tester.tap(find.text('Sair desta sessão'));
       await tester.pumpAndSettle();
@@ -67,7 +98,11 @@ void main() {
       expect(repo.restores, 1);
       expect(find.textContaining('A saída não foi confirmada'), findsOneWidget);
       repo.logoutError = null;
-      await tester.ensureVisible(find.text('Tentar novamente'));
+      await tester.scrollUntilVisible(
+        find.text('Tentar novamente'),
+        -250,
+        scrollable: find.byType(Scrollable).first,
+      );
       await tester.pumpAndSettle();
       await tester.tap(find.text('Tentar novamente'));
       await tester.pumpAndSettle();

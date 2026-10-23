@@ -1,5 +1,5 @@
 {
-  "status": "PARCIAL REAL — auth local, catálogo e consulta alimentar Go/Flutter entregues; Google real e escrita privada pendentes",
+  "status": "PARCIAL REAL — auth, catálogo, consulta alimentar e privacidade Go/Flutter implementados; aceite Google e jornadas privadas pendentes",
   "nodes": [
     {
       "id": "user",
@@ -12,21 +12,21 @@
       "id": "ui",
       "label": "Telas Flutter",
       "layer": "Flutter",
-      "description": "Entrada/conta, biblioteca/detalhe e alimentos/composição implementados; contexto, adesão, execução, histórico e consumo ainda planejados.",
+      "description": "Entrada/conta, biblioteca, composição alimentar e política/controles privados implementados; contexto, adesão, execução, histórico e consumo ainda planejados.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter; lib/features/food_reference"
     },
     {
       "id": "vm",
       "label": "ViewModels / controllers",
       "layer": "Flutter",
-      "description": "AuthController, CatalogController e FoodController com repositories injetados, descarte de respostas antigas e erros seguros; demais features ainda não migradas.",
+      "description": "AuthController, CatalogController, FoodController e PrivacyController injetáveis; proteção contra respostas antigas, troca de conta e erro de rede.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
       "id": "repos",
       "label": "Repositories / DTOs",
       "layer": "Flutter",
-      "description": "Contratos tipados de sessão, catálogo e referência alimentar; leituras revalidadas. Cadastro/consumo privados futuros.",
+      "description": "Contratos tipados de sessão, catálogo, referência alimentar e privacidade; exportação preserva JSON exato e exclusão exige confirmação.",
       "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
     },
     {
@@ -69,7 +69,7 @@
       "label": "PostgreSQL",
       "layer": "Dados",
       "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
-      "evidence": "services/api/migrations/00001–00006; auth-local-verification.json; food-import-verification.json; food-read-verification.json"
+      "evidence": "services/api/migrations/00001–00007; privacy-local-verification.json; food-import-verification.json"
     },
     {
       "id": "manifest",
@@ -133,6 +133,27 @@
       "layer": "Conteúdo",
       "description": "6369registros de duas fontes, com grants/condições específicos; sem herdar aprovação para outrasfamílias.",
       "evidence": "content/manifests/food-review-decisions.json; food-approved.json"
+    },
+    {
+      "id": "privacy",
+      "label": "Privacidade e titularidade Go",
+      "layer": "API Go",
+      "description": "Exportação própria paginada, confirmação temporária e exclusão transacional; inventário privado bloqueia schema desconhecido. Aceite pessoal pendente.",
+      "evidence": "services/api/internal/privacy; docs/execucao/v1/privacy-local-verification.json"
+    },
+    {
+      "id": "network_limits",
+      "label": "Limites por instância",
+      "layer": "Operação",
+      "description": "1024 conexões,128 requisições em processamento, rate limiter particionado limitado e proxies explicitamente confiáveis. Capacidade global não medida.",
+      "evidence": "services/api/internal/platform/httpapi/{listener,network,server}.go"
+    },
+    {
+      "id": "privacy_admin",
+      "label": "Manutenção e restauração locais",
+      "layer": "Operação",
+      "description": "Manutenção manual limitada e aplicação do registro atual de exclusões em restauração separada/offline; sem promoção automática ou expiração de backups implantada.",
+      "evidence": "tools/manter_privacidade_local.py; tools/aplicar_exclusoes_restore.py; services/api/cmd/privacy-restore"
     }
   ],
   "edges": [
@@ -311,6 +332,38 @@
       "input": "ArtifactSHA + revisãoSHA + metadados + valores",
       "output": "Transação/versões/lote; não consome por usuário",
       "evidence": "services/api/cmd/import-food; food-import-verification.json"
+    },
+    {
+      "from": "http",
+      "to": "privacy",
+      "label": "Política/exportação/intenção/exclusão",
+      "input": "Bearer próprio; frase e challenge quando necessário",
+      "output": "Página limitada ou exclusão confirmada, sem dados de outro titular",
+      "evidence": "privacy/handler.go; testes Go/PostgreSQL/Flutter; Google real pendente"
+    },
+    {
+      "from": "privacy",
+      "to": "pg",
+      "label": "Titularidade e transação",
+      "input": "Principal validado e schema privado conhecido",
+      "output": "Dados próprios, purge atômico e registro mínimo",
+      "evidence": "privacy/postgres.go; migration00007; testes descartáveis"
+    },
+    {
+      "from": "network_limits",
+      "to": "auth",
+      "label": "Admissão/IP/TLS antes da ação",
+      "input": "Peer real ou cadeia de proxy validada",
+      "output": "Requisição limitada ou rejeição429/503/426",
+      "evidence": "main.go; httpapi/network.go; limites por processo"
+    },
+    {
+      "from": "privacy_admin",
+      "to": "pg",
+      "label": "Manutenção e gate de restore",
+      "input": "Credencial administrativa local, alvo explícito",
+      "output": "Lote limitado ou alvo separado sanitizado; nenhuma promoção",
+      "evidence": "privacy-local-verification.json; wrappers locais"
     }
   ],
   "flows": [
@@ -535,6 +588,30 @@
       "path": "/api/v1/foods/{id}",
       "input": "versionId SHA256 opcional",
       "output": "IMPLEMENTADO:composição original/estados/bases/créditos;304 revalidado;400/404/503."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/privacy",
+      "input": "Público; sem query",
+      "output": "IMPLEMENTADO: política200/no-store, limites de backups/restore/sessão e8seções."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/me/export",
+      "input": "Bearer; section, cursor vinculado ao titular, limit1..50",
+      "output": "IMPLEMENTADO: página própria até1MiB, JSON original, nenhum token/nonce."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/me/deletion-intent",
+      "input": "Bearer recente e confirmation exata",
+      "output": "IMPLEMENTADO: challenge de5min da mesma conta/família;409 sessão antiga."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/me",
+      "input": "Bearer recente, confirmation e challenge",
+      "output": "IMPLEMENTADO: purge privado transacional, revogação de todas as sessões e registro mínimo; backup histórico explícito."
     }
   ],
   "entities": [
@@ -585,6 +662,10 @@
     {
       "name": "CareRelationship (posterior)",
       "description": "Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador”"
+    },
+    {
+      "name": "DeletionIntent / AccountErasure",
+      "description": "Desafio temporário por titular/família e registro mínimoUUID/data separado das contas para barrar reaparecimento em restore"
     }
   ]
 }

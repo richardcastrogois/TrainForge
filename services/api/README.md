@@ -27,6 +27,8 @@ python tools/verificar_api_local.py
 python tools/verificar_banco_local.py
 ```
 
-API localhost8082; DB localhost15432. Go0.3.0 entrega14operações: health, autenticação/sessão, catálogo de73metadados e consulta de6369referências alimentares. Flutter já usa esses contratos na build deavaliação; loginGoogle real permanece pendente. Sem prática/ensino, cadastro privado ou consumo alimentar. Swagger local: `/docs/index.html`. [Retomar APK](../../docs/execucao/v1/avaliacao-android.md) e [consulta alimentar](../../docs/execucao/v1/alimentacao-consulta.md).
+API localhost8082; DB localhost15432. Go0.4.0 entrega18operações: health, autenticação/sessão, catálogo de73metadados e consulta de6369referências alimentares, política pública, exportação própria e exclusão confirmada. Migration00007 aplicada; teste integrado pessoal deprivacidade depende doGoogle real. Flutter já usa esses contratos na build deavaliação; loginGoogle real permanece pendente. Sem prática/ensino, cadastro privado ou consumo alimentar. Swagger local: `/docs/index.html`. [Retomar APK](../../docs/execucao/v1/avaliacao-android.md) e [consulta alimentar](../../docs/execucao/v1/alimentacao-consulta.md).
 
 Go não é garantia de escala: pool limitado, consultas/índices, autorização, timeouts e carga real serão validados por fatia. PostgreSQL17.5 local exige atualização de patch antes de exposição externa.
+
+Privacidade: [implementação e limites](../../docs/execucao/v1/privacidade-013.md). Manutenção manual: python tools/manter_privacidade_local.py (prévia; --apply aplica um lote). Restore separado: python tools/aplicar_exclusoes_restore.py --target-database trainforge_v1_privacy_restore_<12hex> (prévia; --apply sanitiza sem promover). Usar os comandos Python a partir da raiz. Credenciais administrativas continuam fora do runtime/Git.

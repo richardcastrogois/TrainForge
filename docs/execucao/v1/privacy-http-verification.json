@@ -1,0 +1,17 @@
+{
+  "scope": "actual-isolated-privacy-public-http",
+  "apiVersion": "0.4.0",
+  "swaggerOperations": 18,
+  "anonymousChecks": {
+    "GET /api/v1/me/export": 401,
+    "POST /api/v1/me/deletion-intent": 401,
+    "DELETE /api/v1/me": 401
+  },
+  "policyNoStoreVerified": true,
+  "movementCount": 73,
+  "foodCount": 6369,
+  "deliveredPrivateCountsUnchanged": true,
+  "accountsCreated": 0,
+  "accountsDeleted": 0,
+  "realGoogleLoginValidated": false
+}

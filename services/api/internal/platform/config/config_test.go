@@ -53,3 +53,25 @@ func TestGoogleAudienceRequiresExplicitPublicClientID(t *testing.T) {
 		}
 	}
 }
+
+func TestTrustedProxyConfigurationIsExplicitAndBounded(t *testing.T) {
+	for _, value := range []string{"0.0.0.0/0", "::/0", "bad", "127.0.0.1", strings.Repeat("10.0.0.0/24,", 17)} {
+		if _, err := Load(func(k string) string {
+			if k == "TF_TRUSTED_PROXY_CIDRS" {
+				return value
+			}
+			return ""
+		}); err == nil {
+			t.Fatal("unsafe proxy configuration accepted")
+		}
+	}
+	c, err := Load(func(k string) string {
+		if k == "TF_TRUSTED_PROXY_CIDRS" {
+			return "10.0.0.1/24,2001:db8::/64"
+		}
+		return ""
+	})
+	if err != nil || len(c.TrustedProxies) != 2 {
+		t.Fatal("valid explicit proxies refused")
+	}
+}

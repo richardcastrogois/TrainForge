@@ -1,0 +1,26 @@
+{
+  "scope": "disposable-privacy-postgresql-not-google-login",
+  "passed": true,
+  "restore": {
+    "scope": "historical-account-backup-erasure-gate",
+    "snapshotSha256": "15629a35663924841b1e4687eedbf77342de26e7f4b7514de8595396f253320c",
+    "resurrectedAccountsBeforeGate": 1,
+    "erasedAccountsAfterGate": 0,
+    "otherAccountAndEditorialPreserved": true,
+    "reapplicationIdempotent": true,
+    "temporaryRestoreDatabaseAndBackupRemoved": true,
+    "targetPromoted": false
+  },
+  "temporaryDatabaseRemoved": true,
+  "deliveredAccountsAndEditorialUnchanged": true,
+  "ownershipAndCursorBoundariesVerified": true,
+  "unknownPrivateStoreFailsClosed": true,
+  "recentSessionAndExpiringFamilyBoundConfirmationVerified": true,
+  "atomicDeletionAndRollbackVerified": true,
+  "otherAccountAndEditorialPreserved": true,
+  "allDeviceTokensRevokedOnDeletion": true,
+  "runtimeEditorialAndLedgerPrivilegesVerified": true,
+  "boundedMaintenanceAndReplayRetentionVerified": true,
+  "confirmationClockAuthority": "PostgreSQL",
+  "realGoogleLoginValidated": false
+}

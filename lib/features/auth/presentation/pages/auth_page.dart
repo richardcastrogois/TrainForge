@@ -1,3 +1,4 @@
+import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:trainforge/shared/widgets/auth_gate.dart';
@@ -67,6 +68,17 @@ class AuthPage extends StatelessWidget {
                     label: const Text(
                       'Consultar alimentos sem registrar consumo',
                     ),
+                  ),
+                  TextButton(
+                    onPressed: controller.busy
+                        ? null
+                        : () => Navigator.push(
+                            context,
+                            MaterialPageRoute<void>(
+                              builder: (_) => const PrivacyPage(),
+                            ),
+                          ),
+                    child: const Text('Privacidade e dados'),
                   ),
                   if (controller.message != null) ...[
                     const SizedBox(height: 16),

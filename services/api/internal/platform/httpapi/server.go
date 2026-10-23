@@ -62,6 +62,12 @@ func (s Server) Ready(w http.ResponseWriter, r *http.Request) {
 }
 
 func New(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Handler, routes ...func(*http.ServeMux)) http.Handler {
+	return NewWithNetwork(db, logger, timeout, docs, Network{}, routes...)
+}
+
+func NewWithNetwork(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Handler, network Network, routes ...func(*http.ServeMux)) http.Handler {
+	var limits Limiter
+	admission := make(chan struct{}, 128)
 	mux := http.NewServeMux()
 	s := Server{DB: db}
 	for _, register := range routes {
@@ -88,6 +94,27 @@ func New(db Readiness, logger *slog.Logger, timeout time.Duration, docs http.Han
 				Failure(w, r, http.StatusInternalServerError, "internal_error")
 			}
 		}()
+		peer, secure, err := network.Resolve(r)
+		if err != nil {
+			Failure(w, r, 400, "invalid_proxy_headers")
+			return
+		}
+		if network.RequireTLS && !secure {
+			Failure(w, r, 426, "https_required")
+			return
+		}
+		if !limits.Allow(peer, 240) {
+			limited(w, r)
+			return
+		}
+		select {
+		case admission <- struct{}{}:
+			defer func() { <-admission }()
+		default:
+			w.Header().Set("Retry-After", "1")
+			Failure(w, r, 503, "server_busy")
+			return
+		}
 		mux.ServeHTTP(w, r)
 	})
 }

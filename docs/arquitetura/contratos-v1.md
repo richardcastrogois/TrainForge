@@ -1,6 +1,6 @@
 # Contratos da V1 — implementado e planejado
 
-**22/10:14operações reais no Swagger Go0.3.0: saúde, auth/google, refresh, logout, me, cinco leituras de catálogo e três leituras alimentares. Demais rotas da tabela são propostas.** [Catálogo entregue](../execucao/v1/catalogo-consulta.md). [Sessão e OAuth](../execucao/v1/oauth-android.md). LoginGoogle Android real permanece gate de aceite, separado de fixtures. A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
+**22/10:18operações reais no Swagger Go0.4.0: saúde, auth/google, refresh, logout, me, cinco leituras de catálogo três leituras alimentares e quatro operações de privacidade. Demais rotas da tabela são propostas.** [Catálogo entregue](../execucao/v1/catalogo-consulta.md). [Sessão e OAuth](../execucao/v1/oauth-android.md). LoginGoogle Android real permanece gate de aceite, separado de fixtures. A [referência HTTP gerada](gerado/chamadas-http.md) separa rotas Fastify capturadas e literais do Flutter atual, com arquivo/linha e tipos detectados. Esta tabela orienta a revisão dos DTOs/handlers/comentários na V1-008; não é contrato gerado de um serviço já executado.
 
 Decisão vigente: [Swagger por comentários e tipos Go](swagger-go.md). Os `contracts/generated/swagger-v1.json` e `.yaml` são derivados do gerador fixado, não um YAML editado em paralelo. A versão inicial proposta usa Swagger2.0; não apresentá-la como OpenAPI3.
 
@@ -55,3 +55,7 @@ Preservar validação de proprietário, intervalo de tempo e concorrência; rede
 5. Home/histórico consultam o banco; a UI não incrementa estatística fictícia por abrir a tela.
 
 Testes unitários podem usar fixtures explícitas e isoladas; staging para carga pode usar usuários sintéticos. Nenhum desses registros integra a base/manifesto da V1 entregue. Teste de aceite usa o lote real autorizado e ações reais da conta de teste.
+
+## Privacidade implementada em23/10
+
+GET /api/v1/privacy (público); GET /api/v1/me/export (section/limit/cursor vinculados ao titular); POST /api/v1/me/deletion-intent (confirmação, sessão recente e nonce5min); DELETE /api/v1/me (nonce/conta/família e confirmação explícita, recibo após commit). Respostas privadas no-store, sem credenciais na exportação; falhas transitórias503 preservam sessão. Exportação pagina porseção, sem snapshotglobal atômico. [Contrato completo, matriz e limites](../execucao/v1/privacidade-013.md). Nenhuma escrita de consumo/cadastro alimentar foi liberada.

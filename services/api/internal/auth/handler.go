@@ -5,11 +5,8 @@ import (
 	"errors"
 	"io"
 	"mime"
-	"net"
 	"net/http"
 	"strings"
-	"sync"
-	"time"
 	"trainforge.local/api/internal/platform/httpapi"
 )
 
@@ -19,15 +16,11 @@ type GoogleRequest struct {
 type RefreshRequest struct {
 	RefreshToken string `json:"refreshToken" minLength:"1" maxLength:"128"`
 }
-type window struct {
-	start time.Time
-	count int
-}
 type Handler struct {
 	Service    Service
 	RequireTLS bool
-	mu         sync.Mutex
-	windows    map[string]window
+	Network    *httpapi.Network
+	limits     httpapi.Limiter
 }
 
 func (h *Handler) Register(mux *http.ServeMux) {
@@ -38,46 +31,25 @@ func (h *Handler) Register(mux *http.ServeMux) {
 }
 func (h *Handler) guard(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		if h.RequireTLS && r.TLS == nil {
+		n := httpapi.Network{RequireTLS: h.RequireTLS}
+		if h.Network != nil {
+			n = *h.Network
+		}
+		key, secure, err := n.Resolve(r)
+		if err != nil {
+			httpapi.Failure(w, r, 400, "invalid_proxy_headers")
+			return
+		}
+		if n.RequireTLS && !secure {
 			httpapi.Failure(w, r, 426, "https_required")
 			return
 		}
-		host, _, err := net.SplitHostPort(r.RemoteAddr)
-		if err != nil {
-			host = r.RemoteAddr
-		}
-		// Never trust client-supplied Forwarded/X-Forwarded-For headers.
-		key := host
+		limit := 60
 		if r.URL.Path == "/api/v1/auth/google" {
 			key += ":login"
-		}
-		now := time.Now()
-		h.mu.Lock()
-		if h.windows == nil {
-			h.windows = make(map[string]window)
-		}
-		for k, v := range h.windows {
-			if now.Sub(v.start) >= time.Minute {
-				delete(h.windows, k)
-			}
-		}
-		entry := h.windows[key]
-		limit := 60
-		if strings.HasSuffix(key, ":login") {
 			limit = 10
 		}
-		allowed := true
-		if entry.count >= limit || len(h.windows) >= 4096 && entry.count == 0 {
-			allowed = false
-		} else {
-			if entry.count == 0 {
-				entry.start = now
-			}
-			entry.count++
-			h.windows[key] = entry
-		}
-		h.mu.Unlock()
-		if !allowed {
+		if !h.limits.Allow(key, limit) {
 			w.Header().Set("Retry-After", "60")
 			httpapi.Failure(w, r, 429, "rate_limited")
 			return

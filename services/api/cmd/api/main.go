@@ -17,11 +17,12 @@ import (
 	"trainforge.local/api/internal/platform/config"
 	"trainforge.local/api/internal/platform/httpapi"
 	"trainforge.local/api/internal/platform/postgres"
+	"trainforge.local/api/internal/privacy"
 	_ "trainforge.local/api/internal/swaggerdocs"
 )
 
 // @title TrainForge API
-// @version 0.3.0
+// @version 0.4.0
 // @description Local Google sessions, reviewed movement metadata and food composition references. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.
 // @BasePath /
 // @schemes http https
@@ -64,7 +65,8 @@ func run(logger *slog.Logger) error {
 	if pool != nil {
 		repository = auth.Postgres{Pool: pool}
 	}
-	authentication := &auth.Handler{Service: auth.Service{Verifier: verifier, Repository: repository}, RequireTLS: c.Environment == "production"}
+	network := httpapi.Network{RequireTLS: c.Environment == "production", TrustedProxies: c.TrustedProxies}
+	authentication := &auth.Handler{Service: auth.Service{Verifier: verifier, Repository: repository}, Network: &network}
 	var catalogRepository catalog.CatalogRepository
 	if pool != nil {
 		catalogRepository = catalog.CatalogPostgres{Pool: pool}
@@ -75,7 +77,12 @@ func run(logger *slog.Logger) error {
 		foodRepository = nutrition.FoodPostgres{Pool: pool}
 	}
 	foodHTTP := nutrition.FoodHandler{Reader: nutrition.FoodReader{Repository: foodRepository}}
-	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.New(db, logger, c.RequestTimeout, docs, authentication.Register, catalogHTTP.Register, foodHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
+	var privacyRepository privacy.Repository
+	if pool != nil {
+		privacyRepository = privacy.Postgres{Pool: pool}
+	}
+	privacyHTTP := &privacy.Handler{Service: privacy.Service{Repository: privacyRepository}, Authorize: authentication.Service.Authorize}
+	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogHTTP.Register, foodHTTP.Register, privacyHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
 	go func() {
 		<-ctx.Done()
 		shutdown, cancel := context.WithTimeout(context.Background(), 5*time.Second)
@@ -83,7 +90,7 @@ func run(logger *slog.Logger) error {
 		_ = server.Shutdown(shutdown)
 	}()
 	logger.Info("api_listening", "address", c.ListenAddr, "environment", c.Environment)
-	if err := server.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+	if err := httpapi.Serve(server, 1024); err != nil && !errors.Is(err, http.ErrServerClosed) {
 		return errors.New("HTTP listener failed")
 	}
 	return nil

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-011",
@@ -162,7 +162,7 @@
           "id": "V1-003",
           "title": "Manter documentação arquitetural dinâmica no repositório",
           "userStory": "Como autor ou pessoa que clona o repositório, quero ler arquitetura, telas, HTTP, banco e progresso sem iniciar um serviço local.",
-          "status": "doing",
+          "status": "done",
           "release": "V1",
           "size": "S",
           "requirements": [
@@ -179,7 +179,7 @@
           ],
           "acceptance": [
             "Markdown/Mermaid e tabelas versionados são legíveis no GitHub/editor sem iniciar ferramentas; backend externo é referência identificada, sem caminhos da máquina",
-            "CI e geração local são determinísticas, validam fontes/dependências/links e detectam derivados desatualizados; execução remota permanece pendente até publicar e conferir a configuração",
+            "CI e geração local determinísticas, com validação de fontes/dependências/links e detecção de derivados desatualizados; publicação autorizada e execução remota conferidas em23/10.",
             "Go distingue comentários, registros literais e contrato gerado; status e achados não são concluídos automaticamente"
           ],
           "tasks": [
@@ -211,17 +211,21 @@
           "validation": [
             "Geração/check e testes portáteis com biblioteca padrão",
             "Sintaxe Mermaid validada com ferramenta separada; clone sem checkout externo",
-            "Execução real no GitHub pendente até publicação autorizada"
+            "Execução real noGitHub em23/10: generate e version-generated concluídos com sucesso; derivados já atuais, sem commit artificial."
           ],
           "deliverables": [
             "docs/arquitetura/README.md e gerado/*.md",
             "tools/gerar_documentacao.py e testes",
             ".github/workflows/documentacao.yml"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
-          "completionEvidence": [],
+          "handoff": "23/10: critério remoto resolvido com push autorizado e CI bem-sucedida; documentação permanece transversal, regenerar a cada alteração relevante. Não é início de outra história funcional.",
+          "completionEvidence": [
+            "docs/execucao/v1/publicacao-ci-verification.json",
+            "docs/execucao/v1/validacao-planejamento.md",
+            ".github/workflows/documentacao.yml"
+          ],
           "workEvidence": [
-            "Geração e CI preparadas neste incremento; resultado local em validacao-planejamento.md. Ativação remota ainda não executada."
+            "Geração local, testes portáteis e Mermaid validados; autorização de push em23/10, main publicado em3170c50 e CI real39952064880 passou."
           ]
         }
       ]
@@ -851,7 +855,7 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "22/10: implementação Go/Flutter preparada, APK0.1.1+2 instalado e helper de retomada. Autor fora do notebook: login consentido e cadastroOAuthrelease adiados até retorno. Debug/Web conferidos, fixtures não encerram história. Ver avaliacao-android.md e handoff.md.",
+          "handoff": "23/10: Go/Flutter implementados, APK0.1.3+4 instalado, hash/assinatura/fontes conferidos. LoginGoogle consentido, cadastroOAuthrelease e HTTPS continuam pendentes; fixtures não concluem história. Ver avaliacao-android.md.",
           "completionEvidence": []
         },
         {
@@ -913,7 +917,7 @@
           "id": "V1-013",
           "title": "Aplicar autorização, limites e ciclo dos dados",
           "userStory": "Como titular, quero que só eu acesse meus registros e que exclusão seja verificável.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -931,7 +935,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/privacidade-013.md"
           ],
           "acceptance": [
             "Todas as consultas/mutações privadas filtram ownership, inclusive IDs trocados",
@@ -964,7 +969,7 @@
             "Matriz de acesso",
             "Política de privacidade do piloto e operações de dados"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "23/10: trabalho independente implementado/validado emGo0.4.0/18operações e Flutter/APK0.1.3+4: proxy/limites, exportação própria, exclusão confirmada/transacional, manutenção e gate de restore.48testesFlutter, fixturesPostgreSQL/restore e HTTPsemconta reais. doing/completionEvidence vazio:011Google real e aceite pessoal privado pendentes. Não iniciar outraV1 antes do aceite; ver privacidade-013.md e privacy-*-verification.json.",
           "completionEvidence": []
         }
       ]

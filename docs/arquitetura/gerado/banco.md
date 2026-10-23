@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
 ## Referência atual: schema Prisma externo
 
@@ -293,6 +293,8 @@ Declaração SQL não prova aplicação no banco; o resultado runtime está em d
 | food_import_batches | [services/api/migrations/00005_food_catalog_import.sql:9](../../../services/api/migrations/00005_food_catalog_import.sql) |
 | food_batch_versions | [services/api/migrations/00005_food_catalog_import.sql:17](../../../services/api/migrations/00005_food_catalog_import.sql) |
 | food_withdrawals | [services/api/migrations/00005_food_catalog_import.sql:24](../../../services/api/migrations/00005_food_catalog_import.sql) |
+| account_deletion_intents | [services/api/migrations/00007_privacy_lifecycle.sql:2](../../../services/api/migrations/00007_privacy_lifecycle.sql) |
+| account_erasures | [services/api/migrations/00007_privacy_lifecycle.sql:12](../../../services/api/migrations/00007_privacy_lifecycle.sql) |
 
 ## Proposto: responsabilidades do domínio novo
 
@@ -310,5 +312,6 @@ Declaração SQL não prova aplicação no banco; o resultado runtime está em d
 | Food / FoodVersion / NutrientValue | Alimento/preparo e versão da fonte, base por100g/100ml, nutrientes com ausência distinta de zero |
 | FoodEntry | Quantidade e unidade confirmadas, data/fuso, alimento/versão e fatores usados no cálculo; edição rastreável |
 | CareRelationship (posterior) | Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador” |
+| DeletionIntent / AccountErasure | Desafio temporário por titular/família e registro mínimoUUID/data separado das contas para barrar reaparecimento em restore |
 
 [Modelo lógico e invariantes](../dominio-e-banco.md) · [Voltar ao mapa](../README.md)

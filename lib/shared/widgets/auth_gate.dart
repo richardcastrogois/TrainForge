@@ -1,3 +1,4 @@
+import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:flutter/material.dart';
@@ -95,6 +96,30 @@ class _AuthGateState extends State<AuthGate> {
                       ),
                 icon: const Icon(Icons.restaurant_outlined),
                 label: const Text('Consultar alimentos sem registrar consumo'),
+              ),
+              OutlinedButton(
+                onPressed: controller.busy
+                    ? null
+                    : () => Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (_) => PrivacyPage(
+                            authenticated: true,
+                            reauthenticate: () async {
+                              await controller.login();
+                              if (controller.message != null) {
+                                throw StateError('Confirmação indisponível');
+                              }
+                            },
+                            currentAccountId: () => controller.profile?.id,
+                            onDeleted: (erasedId) async {
+                              controller.accountErased(erasedId);
+                              await controller.restore();
+                            },
+                          ),
+                        ),
+                      ),
+                child: const Text('Meus dados e privacidade'),
               ),
               OutlinedButton(
                 onPressed: controller.restore,
