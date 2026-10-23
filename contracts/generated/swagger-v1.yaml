@@ -277,6 +277,29 @@ definitions:
         type: string
         x-nullable: true
     type: object
+  nutrition.Calculation:
+    properties:
+      algorithm:
+        type: string
+      changes:
+        items:
+          $ref: '#/definitions/nutrition.EntryChange'
+        type: array
+      food:
+        $ref: '#/definitions/nutrition.FoodSummary'
+      nutrients:
+        items:
+          $ref: '#/definitions/nutrition.ScaledCell'
+        type: array
+      origin:
+        type: string
+      preparation:
+        type: string
+      quantityEvidence:
+        type: string
+      revision:
+        type: integer
+    type: object
   nutrition.Citation:
     properties:
       attribution:
@@ -308,6 +331,68 @@ definitions:
         type: string
       quantity:
         type: integer
+      unit:
+        type: string
+    type: object
+  nutrition.Entry:
+    properties:
+      calculation:
+        $ref: '#/definitions/nutrition.Calculation'
+      deletedAt:
+        type: string
+        x-nullable: true
+      foodId:
+        type: string
+      foodVersion:
+        type: string
+      id:
+        type: string
+      occurredAt:
+        type: string
+      quantity:
+        type: string
+      timezone:
+        type: string
+      unit:
+        type: string
+    type: object
+  nutrition.EntryChange:
+    properties:
+      occurredAt:
+        type: string
+      preparation:
+        type: string
+      quantity:
+        type: string
+      quantityEvidence:
+        type: string
+      replacedAt:
+        type: string
+      revision:
+        type: integer
+      timezone:
+        type: string
+      unit:
+        type: string
+    type: object
+  nutrition.EntryInput:
+    properties:
+      foodId:
+        type: string
+      foodVersion:
+        type: string
+      occurredAt:
+        type: string
+      preparation:
+        type: string
+      quantity:
+        type: string
+      quantityEvidence:
+        type: string
+      revision:
+        type: integer
+      timezone:
+        type: string
       unit:
         type: string
     type: object
@@ -431,6 +516,113 @@ definitions:
       versionId:
         type: string
     type: object
+  nutrition.NutrientTotal:
+    properties:
+      exactFraction:
+        type: string
+        x-nullable: true
+      includedEntries:
+        type: integer
+      nameOriginal:
+        type: string
+      sourceColumnKey:
+        type: string
+      unit:
+        type: string
+        x-nullable: true
+      unknownEntries:
+        type: integer
+      value:
+        type: string
+        x-nullable: true
+    type: object
+  nutrition.NutritionPage:
+    properties:
+      items:
+        items:
+          type: object
+        type: array
+      nextCursor:
+        type: string
+        x-nullable: true
+    type: object
+  nutrition.NutritionTotals:
+    properties:
+      complete:
+        type: boolean
+      entries:
+        type: integer
+      estimatedEntries:
+        type: integer
+      measuredEntries:
+        type: integer
+      notice:
+        type: string
+      nutrients:
+        items:
+          $ref: '#/definitions/nutrition.NutrientTotal'
+        type: array
+    type: object
+  nutrition.OwnFoodInput:
+    properties:
+      basis:
+        $ref: '#/definitions/nutrition.Basis'
+      name:
+        type: string
+      nutrients:
+        items:
+          $ref: '#/definitions/nutrition.OwnNutrient'
+        type: array
+      preparation:
+        type: string
+    type: object
+  nutrition.OwnNutrient:
+    properties:
+      name:
+        type: string
+      unit:
+        type: string
+      value:
+        type: string
+        x-nullable: true
+    type: object
+  nutrition.ScaledCell:
+    properties:
+      basis:
+        $ref: '#/definitions/nutrition.Basis'
+      exactFraction:
+        type: string
+        x-nullable: true
+      factor:
+        type: string
+        x-nullable: true
+      nameOriginal:
+        type: string
+      rawText:
+        type: string
+      reason:
+        type: string
+      sourceColumnKey:
+        type: string
+      sourceReasons:
+        items:
+          type: string
+        type: array
+      sourceState:
+        type: string
+      sourceUpperBound:
+        type: string
+        x-nullable: true
+      sourceValue:
+        type: string
+        x-nullable: true
+      unit:
+        type: string
+        x-nullable: true
+      value:
+        type: string
+        x-nullable: true
+    type: object
   privacy.DeleteRequest:
     properties:
       challenge:
@@ -508,11 +700,11 @@ definitions:
     type: object
 info:
   contact: {}
-  description: Local Google sessions, reviewed movement metadata and food composition
-    references. Real Android OAuth validation remains an acceptance gate; no executable
-    training content is implied.
+  description: Google sessions, privacy, reviewed movement and food references, private
+    food declarations and explicitly recorded consumption. No executable training
+    content or prescribed diets.
   title: TrainForge API
-  version: 0.4.0
+  version: 0.5.1
 paths:
   /api/v1/auth/google:
     post:
@@ -1219,6 +1411,384 @@ paths:
       summary: Export a page of the current account's data
       tags:
       - privacy
+  /api/v1/me/food-entries:
+    get:
+      parameters:
+      - description: YYYY-MM-DD
+        in: query
+        name: date
+        required: true
+        type: string
+      - description: IANA name, UTC or fixed offset such as -03:00
+        in: query
+        name: timezone
+        required: true
+        type: string
+      - description: 1..20; default 10
+        in: query
+        name: limit
+        type: integer
+      - description: Account and filter-bound cursor
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.NutritionPage'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Own consumption history by local day
+      tags:
+      - nutrition
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: UUID stable across retries
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Exact food version, quantity, unit, preparation, time, zone and
+          measured/estimated evidence; revision zero
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.EntryInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/nutrition.Entry'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Record food consumption
+      tags:
+      - nutrition
+  /api/v1/me/food-entries/{id}:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: Entry UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: UUID stable across retries
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Current revision; other fields omitted
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.EntryInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.Entry'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Remove own consumption from active history
+      tags:
+      - nutrition
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: Entry UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: UUID stable across retries
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Complete replacement; same food version and current revision;
+          maximum 100 corrections
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.EntryInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.Entry'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Correct own consumption with optimistic revision
+      tags:
+      - nutrition
+  /api/v1/me/food-summary:
+    get:
+      parameters:
+      - description: YYYY-MM-DD
+        in: query
+        name: date
+        required: true
+        type: string
+      - description: IANA name, UTC or fixed offset
+        in: query
+        name: timezone
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.NutritionTotals'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Daily confirmed consumption subtotals by source column
+      tags:
+      - nutrition
+  /api/v1/me/foods:
+    get:
+      parameters:
+      - description: Literal name, maximum 100 characters
+        in: query
+        name: q
+        type: string
+      - description: 1..20; default 10
+        in: query
+        name: limit
+        type: integer
+      - description: Account and filter-bound cursor
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.NutritionPage'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Search own foods
+      tags:
+      - nutrition
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: UUID, stable across retries; 24-hour retention
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Private declaration, nullable basis and nutrient values
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.OwnFoodInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/nutrition.FoodDetail'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Create own food declaration
+      tags:
+      - nutrition
   /api/v1/privacy:
     get:
       produces:

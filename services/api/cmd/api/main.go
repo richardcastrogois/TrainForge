@@ -22,8 +22,8 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.4.0
-// @description Local Google sessions, reviewed movement metadata and food composition references. Real Android OAuth validation remains an acceptance gate; no executable training content is implied.
+// @version 0.5.1
+// @description Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
 // @securityDefinitions.apikey BearerAuth
@@ -82,7 +82,8 @@ func run(logger *slog.Logger) error {
 		privacyRepository = privacy.Postgres{Pool: pool}
 	}
 	privacyHTTP := &privacy.Handler{Service: privacy.Service{Repository: privacyRepository}, Authorize: authentication.Service.Authorize}
-	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogHTTP.Register, foodHTTP.Register, privacyHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
+	nutritionHTTP := &nutrition.EntryHandler{Store: nutrition.NutritionStore{Pool: pool}, Authorize: authentication.Service.Authorize}
+	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogHTTP.Register, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
 	go func() {
 		<-ctx.Done()
 		shutdown, cancel := context.WithTimeout(context.Background(), 5*time.Second)

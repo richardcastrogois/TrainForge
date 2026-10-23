@@ -1,5 +1,13 @@
 # Graphify — cobertura e atualização
 
+## Atualização23/10: identidade Figma e correções deexibição
+
+65arquivosDart,918nós/1181arestas;7arquivos alterados/novos,58inalterados,0removidos. Tokens/marca/entrada e exibição alimentar incluídos porAST; HTMLexportado, semanálisesemântica/clusterização. Backup em.local/graphify-backup-20261023-figma-tokens. Fidelidade visual completa permanece pendente; grafo não a comprova.
+
+## Atualização23/10: alimentação particular e consumo
+
+64arquivosDart,905nós/1165arestas. Update incremental porAST:8arquivos alterados/novos,56inalterados,0removidos. Sem leitura semântica ou clusterização; backup em.local/graphify-backup-20261023-nutrition. HTML exportado após o update. O corpusGo permanece no inventário documental/Swagger, sem afirmar que foi semanticamente indexado no grafoFlutter.
+
 ## Atualização23/10: privacidade
 
 59arquivosDart,783nós/1001arestas. Atualização incremental porAST dos7arquivos novos/alterados deprivacidade/auth e HTML exportado; sem clusterização, leitura semântica de dossiês ou custoLLM. Backup anterior preservado em.local/graphify-backup-20261023-privacy. A conferência inicial desta retomada encontrou0alterações/55inalterados antes da implementação. Contagens abaixo são históricas.

@@ -633,7 +633,7 @@ Handoff: 22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6
 
 ### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 
-**todo · V1 · L**
+**done · V1 · L**
 
 Como usuário, quero registrar uma quantidade real e consultar o que consumi.
 
@@ -662,7 +662,7 @@ Validação: Integração DB/API com alimento pesquisado; Conferir cálculo cont
 
 Entregas: API nutrition v1; Registro de consumo real
 
-Handoff: 22/10: preparação parcial de busca pública de6369referências, filtros/fonte/cursor/detalhe/retirada/ETag entregue naAPI Go0.3.0. Status permanece todo e completionEvidence vazio: cadastro privado/consumo/cálculos/totais e dependências013/011 não concluídos. Ver alimentacao-consulta.md e food-read-verification.json.
+Handoff: 23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver alimentacao-registro.md, nutrition-real-android-verification.json e frontend-fidelidade-figma.md.
 
 ## EP07 — Flutter e experiência da V1
 
@@ -670,13 +670,13 @@ Evoluir a lib existente por feature, com contratos reais, estado consistente e s
 
 ### V1-021 — Organizar configuração, composição e estado
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como desenvolvedor, quero telas pequenas e dependências substituíveis sem reescrever a lib inteira.
 
 Dependências: V1-008, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/frontend-fidelidade-figma.md
 
 Critérios de aceite:
 
@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo/alimentos somente consulta), testes isolados e APK0.1.2+3. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md.
+Handoff: 23/10: nova prioridade explícita de todo o frontend fiel aoFigma v0.5, antes de novas funcionalidades. Fundamentos/tema/marca iniciados; composição/controllers/sessão existentes, mas shell/Hoje/rascunhos e paridade visual completos ainda faltam. Ver frontend-fidelidade-figma.md; não encerrar só por aplicar tema.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 22/10: consulta pública Flutter de alimentos/composição preparada noAPK0.1.2+3, sem login, com nomes/estados/bases/créditos originais. Status permanece todo e completionEvidence vazio: cadastro próprio, quantidade, refeição e histórico alimentar ainda pendentes. Ver alimentacao-consulta.md e avaliacao-android.md.
+Handoff: 23/10: formulários de alimento próprio, consumo, histórico e subtotais entregues na020. Consumo humano real confirmado. Frontend completo deve agora corresponder aoFigma v0.5, com Hoje integrado e dependência021; cadastro próprio humano/aceite visual ainda pendentes. Ver frontend-fidelidade-figma.md.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 

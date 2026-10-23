@@ -1,3 +1,4 @@
+import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
@@ -15,22 +16,26 @@ class AuthPage extends StatelessWidget {
     if (controller == null) return const AuthGate();
     return Scaffold(
       body: SafeArea(
-        child: Center(
+        child: Align(
+          alignment: Alignment.topCenter,
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 480),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  const TrainForgeBrand(),
+                  const SizedBox(height: 24),
                   Text(
-                    'TrainForge',
+                    'Que bom ter você por aqui.',
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   const SizedBox(height: 12),
                   const Text(
-                    'Entre com sua conta Google para avaliar sua sessão.',
-                    textAlign: TextAlign.center,
+                    'Entre com Google para continuar sua rotina.',
+                    textAlign: TextAlign.start,
                   ),
                   const SizedBox(height: 24),
                   SizedBox(
@@ -43,6 +48,7 @@ class AuthPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 12),
                   OutlinedButton.icon(
                     onPressed: controller.busy
                         ? null
@@ -86,7 +92,7 @@ class AuthPage extends StatelessWidget {
                       liveRegion: true,
                       child: Text(
                         controller.message!,
-                        textAlign: TextAlign.center,
+                        textAlign: TextAlign.start,
                       ),
                     ),
                     if (controller.failedAction != null)
@@ -98,7 +104,7 @@ class AuthPage extends StatelessWidget {
                   const SizedBox(height: 24),
                   const Text(
                     'Versão de avaliação. Outros cenários serão liberados conforme a integração e o conteúdo permitido.',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.start,
                   ),
                 ],
               ),

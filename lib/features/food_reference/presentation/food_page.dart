@@ -2,11 +2,17 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import '../data/food_repository.dart';
 import 'food_controller.dart';
+import '../domain/food_reference.dart';
 import 'food_detail_page.dart';
 
 class FoodPage extends StatefulWidget {
   final FoodController? controller;
-  const FoodPage({super.key, this.controller});
+  final bool selectForConsumption;
+  const FoodPage({
+    super.key,
+    this.controller,
+    this.selectForConsumption = false,
+  });
   @override
   State<FoodPage> createState() => _FoodPageState();
 }
@@ -197,15 +203,24 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                             ),
                             trailing: const Icon(Icons.chevron_right),
                             onTap: () async {
-                              await Navigator.push(
-                                context,
-                                MaterialPageRoute<void>(
-                                  builder: (_) => FoodDetailPage(
-                                    food: food,
-                                    repository: controller.repository,
-                                  ),
-                                ),
-                              );
+                              final selected =
+                                  await Navigator.push<FoodReference>(
+                                    context,
+                                    MaterialPageRoute<FoodReference>(
+                                      builder: (_) => FoodDetailPage(
+                                        food: food,
+                                        repository: controller.repository,
+                                        selectForConsumption:
+                                            widget.selectForConsumption,
+                                      ),
+                                    ),
+                                  );
+                              if (context.mounted &&
+                                  selected != null &&
+                                  widget.selectForConsumption) {
+                                Navigator.pop(context, selected);
+                                return;
+                              }
                               if (mounted) controller.load();
                             },
                           ),

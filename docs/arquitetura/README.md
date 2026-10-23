@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `334f3f976cf35a5b`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `51e0d2acebc5e4c1`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,9 +8,9 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 59 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 65 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
-| Go neste clone | 37 arquivos Go de aplicação; 19 registros net/http detectados |
+| Go neste clone | 40 arquivos Go de aplicação; 26 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
 | Conteúdo | Pesquisa concluída nos recortes; publicação/prática/direitos continuam por item |
 
@@ -18,10 +18,10 @@
 
 ```mermaid
 flowchart LR
-    node0["Telas e widgets (22 arquivos)"]
-    node1["Repositories Flutter (10 arquivos)"]
+    node0["Telas e widgets (25 arquivos)"]
+    node1["Repositories Flutter (11 arquivos)"]
     node2["HTTP Dio (8 arquivos)"]
-    node3["Modelos Dart (13 arquivos)"]
+    node3["Modelos Dart (14 arquivos)"]
     node4["Fastify: referência externa versionada"]
     node2 -->|"importação estática"| node3
     node1 -->|"importação estática"| node2
@@ -45,7 +45,7 @@ flowchart LR
     node5["Módulo auth Go"]
     node6["Módulo catalog Go"]
     node7["Módulo activity Go"]
-    node8["Nutrition Go: importação e consulta reais"]
+    node8["Nutrition Go: referências e consumo particular"]
     node9["PostgreSQL"]
     node10["Manifestos revisados"]
     node11["Importador Go"]
@@ -68,7 +68,7 @@ flowchart LR
     node5 -->|"Consulta / transação"| node9
     node4 -->|"GET catálogo/filtros/detalhe"| node6
     node4 -->|"POST enrollments / sessions / events; GET summary/history"| node7
-    node4 -->|"GET/POST foods; POST food-entries"| node8
+    node4 -->|"Consulta pública; alimentos próprios e consumo privados"| node8
     node6 -->|"SELECT projetado e paginado"| node9
     node7 -->|"Transação por ocorrência"| node9
     node8 -->|"Importação real; CRUD privado futuro"| node9

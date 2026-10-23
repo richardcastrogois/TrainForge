@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "scope": "consented-real-food-consumption-android-debug",
+  "humanConsumptionValidated": true,
+  "evidence": [
+    "Titular entrou pessoalmente e chegou à Minha alimentação.",
+    "Capturas do titular mostram confirmação e o mesmo lançamento no histórico.",
+    "Titular confirmou explicitamente que a quantidade correspondia a consumo real.",
+    "Conferência somente por contagens: uma conta, um consumo ativo e zero alimentos particulares."
+  ],
+  "recordCreatedBy": "human-through-app",
+  "agentCreatedConsumptionRecords": 0,
+  "privateFoodHumanAccepted": false,
+  "editDeleteHumanAccepted": false,
+  "sqlHttpPrivateFoodOwnershipIdempotencyCorrectionsDeletionValidated": "nutrition-local-verification.json",
+  "editorialFoods": 6369,
+  "movementReferences": 73,
+  "personalNamesEmailsFoodIDsQuantitiesTimestampsAndTokensRecorded": false,
+  "keyboardIssue": {
+    "observed": "campo habilitado e focado aceitava entrada ADB; teclado local não aparecia",
+    "action": "reconexão do método de entrada; lista original restaurada, sem reset de app ou dados",
+    "humanConfirmedPhysicalInputRestored": true,
+    "temporaryDigitInsertedByAgentRemoved": true
+  },
+  "latestVisualFidelityAccepted": false,
+  "releaseAPKLoginValidated": false,
+  "iosValidated": false
+}

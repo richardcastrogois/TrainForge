@@ -1,5 +1,7 @@
 # Caminho da pesquisa ao APK
 
+**Prioridade nova23/10:** autor quer ajustar todo o frontend para ficar exatamente igual aoFigma vigente antes de novas funcionalidades. [Plano e inventário atuais](frontend-fidelidade-figma.md). V1-020 funcional concluída com consumo real confirmado, cadastro próprio/ownership/cálculo/revisões testados; UI completa e fidelidade visual seguem abertas. [Entrega020](alimentacao-registro.md). Parágrafos datados anteriores abaixo descrevem o checkpoint anterior.
+
 Estado vigente23/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02/M1 concluída](etapa-02-fechamento.md). Go/API/DB/Swagger são reais localmente; authGo/Flutter têm checkpoint local, APKdebug instalado; loginGoogle Androiddebug real validado; OAuthrelease confirmado; HTTPS/testeAPKrelease com validação futura nas histórias dedistribuição. V1-014 concluída: catálogo Go/Flutter real com73metadados, busca/filtros/atribuição/versões; APK0.1.3+4 e comando de retomada em avaliacao-android.md. V1-019 concluída:6369registrosCiqual/CoFID noDBisolado, manifesto aprovado/importadorGo e backupnovo restaurado; ConsultaGo/Flutter entregue como preparação parcial020/025; cadastro e consumo pendentes. Ver alimentacao-importacao.md. Demais módulos/APKintegrado ainda não entregues. V1-003 concluída com publicação autorizada e CI remota bem-sucedida; documentação permanece transversal. Conteúdo:73metadados/439excluídos/0prática aprovada.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |

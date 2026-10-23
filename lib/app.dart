@@ -1,5 +1,6 @@
 //lib/app.dart
 import 'package:flutter/material.dart';
+import 'core/theme/trainforge_theme.dart';
 import 'package:trainforge/shared/widgets/auth_gate.dart';
 
 class TrainForgeApp extends StatelessWidget {
@@ -10,10 +11,7 @@ class TrainForgeApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TrainForge',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
+      theme: TrainForgeTheme.light,
       home: const AuthGate(),
     );
   }
