@@ -4,9 +4,13 @@ Atualizado em23/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mai
 
 ## Checkpoint visual atual
 
-Incremento visual01: APKdebug0.1.6+9,68testesFlutter/analyze0issues. Inter local/OFL,22SVGs originais, shellGo com cinco abas, entrada/perfil e visões iniciais deHoje/Planos/Atividade/Diário/Evolução. Resumo diário real compartilhado, estado/foco/voltar/guardas deconta. [Evidências](frontend-shell-verification.json) e [APK atual](android-frontend-checkpoint.json). Interface completa ainda não aceita como exatamente igual; biblioteca, formulários/detalhes alimentares, privacidade e demais estados são a próxima fatia. Atividade/planos/metas/sensores continuam indisponíveis funcionalmente. Nenhuma nova API/migration, consumo ou pesquisa.
+**APKdebug0.1.7+10 instalado,70testesFlutter/analyze0issues.** Visual01 trouxe Inter/OFL,22SVGs originais, shellnovoGo/cincoabas/entrada/perfil/resumo diário real. Visual02 alinhou busca alimentar eporção aos contextosFigma104:1211/104:1233, com quantidade/unidade/evidência/preparo/data/fuso explícitos. Formulário mantém estado/validação de campos fora daárea visível; tecladoAndroid nativo. [Visual01](frontend-shell-verification.json), [visual02](frontend-food-verification.json), [APK atual](android-frontend-checkpoint.json).
 
-Base funcional publicada em b066082d0a69e1a821565cf14ef92f749591fa16; CI passou em https://github.com/richardcastrogois/TrainForge/actions/runs/40007081568. Conferir Git real para o commit posterior do visual01.
+Instalação preservou conta e1consumo real. Navegação de leitura noAndroid passou porDiário → histórico → busca comdadosGo reais → detalhe de referência → formulário deporção vazio/habilitado; voltou aHoje. Agente não digitou quantidade nem confirmou consumo. Não apagar oregistro por inferência.
+
+**Frontend completo/exatamente igual continua pendente.** Em23/10 oconectorFigma atingiu quotaStarter ao pedir104:1260/cadastro manual. Contextos de busca/porção/entrada/shell/perfil já lidos continuam aproveitáveis. Não comprar plano nem contornar quota; registrar e obter referências faltantes quando disponíveis. Próxima fatia: detalhe/histórico/formulários próprios/privacidade/biblioteca/demais famílias, com design context+screenshots suficientes antes de converter. Nenhuma nova API/migration/pesquisa.
+
+Publicação: base020 b066082,CI40007081568 passou; visual01 b9660d5a15c4e4b88797278fde75b13b405bddbd,CI https://github.com/richardcastrogois/TrainForge/actions/runs/40011701056 passou. Conferir Git real para o commit posterior visual02. Sem deploy.
 
 ## Estado entregue
 
@@ -49,7 +53,7 @@ Próxima história021emdoing, com prioridade visual transversal a022/025 e demai
 
 ## Verificação e publicação
 
-68testesFlutter passaram no visual01, analyze0issues; Go testes/vet e integraçãoSQL/HTTP do020 passaram;71testesPython passaram no checkpoint anterior desta rodada, regenerar derivados após documentação final. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
+70testesFlutter passaram no visual02, analyze0issues; Go testes/vet e integraçãoSQL/HTTP do020 passaram;71testesPython passaram no checkpoint anterior desta rodada, regenerar derivados após documentação final. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
 
 Push dos incrementos validados aoGitHub autorizado em23/10. Conferir Git real.020/tema/documentação publicados em b066082 comCI40007081568 bem-sucedida; visual01 é o incremento posterior, sem deploy. Remoto https://github.com/richardcastrogois/TrainForge.git. Não fazerforcepush. Scriptsignorados.local/check_auth_stage.py echeck_publish.py verificam segredos/caminhos; stage explícito. Conferir CI doSHAreal, não inferir push peloVSCode.
 

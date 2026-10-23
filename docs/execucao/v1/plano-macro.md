@@ -1,5 +1,8 @@
 # Caminho da pesquisa ao APK
 
+23/10 · visual02: busca alimentar/porção convertidas; APKdebug0.1.7+10 instalado com conta/consumo real preservados,70testesFlutter/analyze0issues. [Recibo](frontend-food-verification.json). Figmaatingiu quotaStarter para104:1260; demais referências/famílias pendentes, semcontratação. Prioridade continua todo o front antes de novas funcionalidades.
+
+
 23/10 · visual01: shell/cinco abas/entrada/perfil e resumo diário real implementados noAndroiddebug0.1.6+9; Inter e22SVGs originais locais.68testesFlutter/analyze0issues. Frontend completo/fidelidade integral ainda pendentes; próxima fatia é biblioteca e alimentação. Nenhuma nova funcionalidade debackend nesta prioridade. [Evidências](frontend-shell-verification.json).
 
 

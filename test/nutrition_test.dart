@@ -105,9 +105,8 @@ void main() {
       find.text('Confirmar consumo'),
       200,
       scrollable: find
-          .descendant(
-            of: find.byType(ListView).first,
-            matching: find.byType(Scrollable),
+          .byWidgetPredicate(
+            (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
           )
           .first,
     );
@@ -138,9 +137,8 @@ void main() {
       find.text('Confirmar consumo'),
       200,
       scrollable: find
-          .descendant(
-            of: find.byType(ListView).first,
-            matching: find.byType(Scrollable),
+          .byWidgetPredicate(
+            (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
           )
           .first,
     );
@@ -156,9 +154,8 @@ void main() {
       find.text('Tentar confirmar novamente'),
       200,
       scrollable: find
-          .descendant(
-            of: find.byType(ListView).first,
-            matching: find.byType(Scrollable),
+          .byWidgetPredicate(
+            (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
           )
           .first,
     );
@@ -183,9 +180,8 @@ void main() {
       find.text('Confirmar consumo'),
       200,
       scrollable: find
-          .descendant(
-            of: find.byType(ListView).first,
-            matching: find.byType(Scrollable),
+          .byWidgetPredicate(
+            (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
           )
           .first,
     );
@@ -226,9 +222,8 @@ void main() {
         find.text('Nenhum consumo registrado neste dia.'),
         150,
         scrollable: find
-            .descendant(
-              of: find.byType(ListView).first,
-              matching: find.byType(Scrollable),
+            .byWidgetPredicate(
+              (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
             )
             .first,
       );

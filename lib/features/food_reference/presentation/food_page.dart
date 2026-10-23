@@ -1,3 +1,5 @@
+import 'package:trainforge/core/theme/trainforge_theme.dart';
+import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../data/food_repository.dart';
@@ -49,191 +51,226 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
     super.dispose();
   }
 
+  Future<void> openFood(FoodReference food) async {
+    final selected = await Navigator.push<FoodReference>(
+      context,
+      MaterialPageRoute<FoodReference>(
+        builder: (_) => FoodDetailPage(
+          food: food,
+          repository: controller.repository,
+          selectForConsumption: widget.selectForConsumption,
+        ),
+      ),
+    );
+    if (!mounted) return;
+    if (selected != null && widget.selectForConsumption) {
+      Navigator.pop(context, selected);
+      return;
+    }
+    controller.load();
+  }
+
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: controller,
     builder: (context, _) {
       final facets = controller.facets;
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Alimentos de referência',
-            overflow: TextOverflow.ellipsis,
-          ),
-          actions: [
-            IconButton(
-              onPressed: controller.busy ? null : () => controller.load(),
-              tooltip: 'Atualizar alimentos',
-              icon: const Icon(Icons.refresh),
-            ),
-          ],
-        ),
-        body: SafeArea(
-          child: RefreshIndicator(
-            onRefresh: () => controller.load(),
-            child: CustomScrollView(
-              physics: const AlwaysScrollableScrollPhysics(),
-              slivers: [
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const Text(
-                          'Composição das fontes Ciqual e CoFID. Consulta sem prescrição de dieta ou registro de consumo.',
+      return FigmaRouteFrame(
+        body: RefreshIndicator(
+          onRefresh: () => controller.load(),
+          child: CustomScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            slivers: [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(24, 0, 24, 12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      FigmaPageHeading(
+                        title: 'Resultados da pesquisa',
+                        subtitle: controller.q.isEmpty
+                            ? 'ALIMENTOS DE REFERÊNCIA'
+                            : 'PESQUISA · ${controller.q}',
+                      ),
+                      TextField(
+                        controller: search,
+                        textInputAction: TextInputAction.search,
+                        maxLength: 100,
+                        decoration: InputDecoration(
+                          labelText: 'Buscar pelo nome original',
+                          hintText: 'Alimento ou preparo',
+                          helperText:
+                              'Nomes em francês ou inglês, conforme a fonte.',
+                          helperMaxLines: 3,
+                          suffixIcon: TextButton(
+                            onPressed: () => submit(search.text),
+                            child: const Text('Pesquisar'),
+                          ),
                         ),
+                        onSubmitted: submit,
+                        onChanged: (value) {
+                          debounce?.cancel();
+                          debounce = Timer(
+                            const Duration(milliseconds: 400),
+                            () => submit(value),
+                          );
+                        },
+                      ),
+                      if (facets != null) ...[
                         const SizedBox(height: 12),
-                        TextField(
-                          controller: search,
-                          textInputAction: TextInputAction.search,
-                          maxLength: 100,
-                          decoration: InputDecoration(
-                            labelText: 'Buscar pelo nome original',
-                            helperText:
-                                'Nomes em francês ou inglês, conforme a fonte.',
-                            helperMaxLines: 2,
-                            prefixIcon: const Icon(Icons.search),
-                            suffixIcon: IconButton(
-                              tooltip: 'Pesquisar alimentos',
-                              onPressed: () => submit(search.text),
-                              icon: const Icon(Icons.arrow_forward),
-                            ),
+                        Text(
+                          '${facets.total} referências · ${facets.unknownBasis} sem base confirmada.',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            height: 1.35,
+                            color: TrainForgeTheme.muted,
                           ),
-                          onSubmitted: submit,
-                          onChanged: (value) {
-                            debounce?.cancel();
-                            debounce = Timer(
-                              const Duration(milliseconds: 400),
-                              () => submit(value),
-                            );
-                          },
                         ),
-                        if (facets != null) ...[
-                          Text(
-                            '${facets.total} referências · ${facets.unknownBasis} sem base confirmada.',
-                          ),
-                          const SizedBox(height: 8),
-                          Wrap(
-                            spacing: 8,
-                            runSpacing: 4,
-                            children: [
-                              ChoiceChip(
-                                label: const Text('Todas as fontes'),
-                                selected: controller.sourceId.isEmpty,
-                                onSelected: controller.busy
-                                    ? null
-                                    : (_) => controller.load(sourceId: ''),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 4,
+                          children: [
+                            sourceChip('Todas as fontes', ''),
+                            for (final source in facets.sources)
+                              sourceChip(
+                                '${source.name} (${source.count})',
+                                source.id,
                               ),
-                              ...facets.sources.map(
-                                (s) => ChoiceChip(
-                                  label: Text('${s.name} (${s.count})'),
-                                  selected: controller.sourceId == s.id,
-                                  onSelected: controller.busy
-                                      ? null
-                                      : (_) => controller.load(sourceId: s.id),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                        const SizedBox(height: 8),
-                        const Text(
-                          'Preparo e idioma permanecem no nome original. Ausência, traço e limite não são zero. Fonte e licença em cada detalhe.',
+                          ],
                         ),
                       ],
-                    ),
+                      const SizedBox(height: 12),
+                      const Text(
+                        'Preparo e idioma permanecem no nome original. Ausência, traço e limite não são zero. Fonte e licença em cada detalhe.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          height: 1.35,
+                          color: TrainForgeTheme.muted,
+                        ),
+                      ),
+                      if (!widget.selectForConsumption)
+                        const Padding(
+                          padding: EdgeInsets.only(top: 8),
+                          child: Text(
+                            'Consulta sem prescrição de dieta ou registro de consumo.',
+                            style: TextStyle(
+                              fontSize: 12,
+                              height: 1.35,
+                              color: TrainForgeTheme.muted,
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
                 ),
-                if (controller.busy)
-                  const SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: Center(
-                      child: CircularProgressIndicator(
-                        semanticsLabel: 'Consultando alimentos',
-                      ),
-                    ),
-                  )
-                else if (controller.error != null)
-                  SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: _message(controller.error!, retry: true),
-                  )
-                else if (controller.items.isEmpty)
-                  SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: _message(
-                      'Nenhum alimento corresponde à busca. Tente um termo no idioma original ou outra fonte.',
-                    ),
-                  )
-                else
-                  SliverPadding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
-                    sliver: SliverList.builder(
-                      itemCount: controller.items.length + 1,
-                      itemBuilder: (context, index) {
-                        if (index == controller.items.length) {
-                          return Column(
-                            children: [
-                              if (controller.moreError != null)
-                                Semantics(
-                                  liveRegion: true,
-                                  child: Text(controller.moreError!),
-                                ),
-                              if (controller.cursor != null)
-                                OutlinedButton(
-                                  onPressed: controller.loadingMore
-                                      ? null
-                                      : controller.more,
-                                  child: Text(
-                                    controller.loadingMore
-                                        ? 'Carregando…'
-                                        : 'Carregar mais alimentos',
-                                  ),
-                                ),
-                            ],
-                          );
-                        }
-                        final food = controller.items[index];
-                        return Card(
-                          child: ListTile(
-                            title: Text(food.displayName),
-                            subtitle: Text(
-                              '${food.source.name} · ${food.languageLabel}\n${food.basisLabel}\n${food.source.license} · ${food.sourceVersion}',
-                            ),
-                            trailing: const Icon(Icons.chevron_right),
-                            onTap: () async {
-                              final selected =
-                                  await Navigator.push<FoodReference>(
-                                    context,
-                                    MaterialPageRoute<FoodReference>(
-                                      builder: (_) => FoodDetailPage(
-                                        food: food,
-                                        repository: controller.repository,
-                                        selectForConsumption:
-                                            widget.selectForConsumption,
-                                      ),
-                                    ),
-                                  );
-                              if (context.mounted &&
-                                  selected != null &&
-                                  widget.selectForConsumption) {
-                                Navigator.pop(context, selected);
-                                return;
-                              }
-                              if (mounted) controller.load();
-                            },
-                          ),
-                        );
-                      },
+              ),
+              if (controller.busy)
+                const SliverToBoxAdapter(
+                  child: Center(
+                    child: CircularProgressIndicator(
+                      semanticsLabel: 'Consultando alimentos',
                     ),
                   ),
-              ],
-            ),
+                )
+              else if (controller.error != null)
+                SliverToBoxAdapter(
+                  child: _message(controller.error!, retry: true),
+                )
+              else if (controller.items.isEmpty)
+                SliverToBoxAdapter(
+                  child: _message(
+                    'Nenhum alimento corresponde à busca. Tente um termo no idioma original ou outra fonte.',
+                  ),
+                )
+              else
+                SliverPadding(
+                  padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+                  sliver: SliverList.builder(
+                    itemCount: controller.items.length + 1,
+                    itemBuilder: (context, index) {
+                      if (index == controller.items.length) {
+                        return Column(
+                          children: [
+                            if (controller.moreError != null)
+                              Semantics(
+                                liveRegion: true,
+                                child: Text(controller.moreError!),
+                              ),
+                            if (controller.cursor != null)
+                              OutlinedButton(
+                                onPressed: controller.loadingMore
+                                    ? null
+                                    : controller.more,
+                                child: Text(
+                                  controller.loadingMore
+                                      ? 'Carregando…'
+                                      : 'Carregar mais alimentos',
+                                ),
+                              ),
+                          ],
+                        );
+                      }
+                      final food = controller.items[index];
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 12),
+                        child: Material(
+                          color: TrainForgeTheme.nutrition,
+                          borderRadius: BorderRadius.circular(22),
+                          child: InkWell(
+                            onTap: () => openFood(food),
+                            borderRadius: BorderRadius.circular(22),
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Text(
+                                    food.displayName,
+                                    style: const TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.35,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    '${food.source.name} · ${food.languageLabel}\n${food.basisLabel}\n${food.source.license} · ${food.sourceVersion}',
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      height: 1.35,
+                                      color: TrainForgeTheme.muted,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+            ],
           ),
         ),
       );
     },
+  );
+  Widget sourceChip(String label, String id) => ChoiceChip(
+    label: Text(label),
+    selected: controller.sourceId == id,
+    backgroundColor: Colors.white,
+    selectedColor: TrainForgeTheme.primary,
+    labelStyle: TextStyle(
+      fontSize: 11,
+      fontWeight: FontWeight.w700,
+      color: controller.sourceId == id ? Colors.white : TrainForgeTheme.primary,
+    ),
+    shape: const StadiumBorder(),
+    side: BorderSide.none,
+    showCheckmark: false,
+    onSelected: controller.busy ? null : (_) => controller.load(sourceId: id),
   );
   Widget _message(String text, {bool retry = false}) => Center(
     child: Padding(

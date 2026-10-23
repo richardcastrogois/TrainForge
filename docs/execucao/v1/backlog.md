@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes.
+Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 

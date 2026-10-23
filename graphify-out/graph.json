@@ -842,14 +842,11 @@
     },
     {
       "id": "widget",
-      "label": "Widget?",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Entrada autenticada",
+      "label": "Widget",
       "file_type": "code",
-      "norm_label": "widget?",
       "source_file": null,
-      "source_location": null
+      "source_location": null,
+      "_origin": "ast"
     },
     {
       "id": "features_home_domain_home_summary",
@@ -7071,118 +7068,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_food_reference_presentation_food_page",
-      "label": "food_page.dart",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_foodpage",
-      "label": "FoodPage",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_foodpagestate",
-      "label": "_FoodPageState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_controller",
-      "label": "controller",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_selectforconsumption",
-      "label": "selectForConsumption",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_search",
-      "label": "search",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_debounce",
-      "label": "debounce",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
-      "label": "didChangeAppLifecycleState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_submit",
-      "label": "submit",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_food_page_message",
-      "label": "_message",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "features_nutrition_data_nutrition_repository",
       "label": "nutrition_repository.dart",
       "file_type": "code",
@@ -7335,218 +7220,10 @@
       "_origin": "ast"
     },
     {
-      "id": "features_nutrition_presentation_nutrition_forms",
-      "label": "nutrition_forms.dart",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_entryformpage",
-      "label": "EntryFormPage",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
-      "label": "_EntryFormPageState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_nutrientdraft",
-      "label": "_NutrientDraft",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
-      "label": "OwnFoodFormPage",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
-      "label": "_OwnFoodFormPageState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_food",
-      "label": "food",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_repository",
-      "label": "repository",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_entry",
-      "label": "entry",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_form",
-      "label": "form",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_quantity",
-      "label": "quantity",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_when",
-      "label": "when",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_unit",
-      "label": "unit",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_error",
-      "label": "error",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "string_evidence",
       "label": "String? evidence,",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_busy",
-      "label": "busy",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_pending",
-      "label": "pending",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_keyvalue",
-      "label": "keyValue",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_name",
-      "label": "name",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_nutrients",
-      "label": "nutrients",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_rejected",
-      "label": "_rejected",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_pickdate",
-      "label": "pickDate",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_save",
-      "label": "save",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_nutrition_forms_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -8456,7 +8133,7 @@
     },
     {
       "id": "nutritionrepository",
-      "label": "NutritionRepository?",
+      "label": "NutritionRepository",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -8807,82 +8484,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_components",
-      "label": "figma_components.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_figmacontent",
-      "label": "FigmaContent",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_figmaactioncard",
-      "label": "FigmaActionCard",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_figmametric",
-      "label": "FigmaMetric",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_figmaheader",
-      "label": "FigmaHeader",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_figmaback",
-      "label": "FigmaBack",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_subtitle",
-      "label": "subtitle",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "string_title",
       "label": "String title,",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_children",
-      "label": "children",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_asset",
-      "label": "asset",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -8895,26 +8500,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_components_color",
-      "label": "color",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "color",
       "label": "Color",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_ontap",
-      "label": "onTap",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -8927,50 +8516,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_components_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "string_value",
       "label": "String value,",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_name",
-      "label": "name",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_onprofile",
-      "label": "onProfile",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_components_showavailability",
-      "label": "showAvailability",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -9379,6 +8928,510 @@
       "label": "plans_overview.dart",
       "file_type": "code",
       "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page",
+      "label": "food_page.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_foodpage",
+      "label": "FoodPage",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_foodpagestate",
+      "label": "_FoodPageState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_selectforconsumption",
+      "label": "selectForConsumption",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_search",
+      "label": "search",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_debounce",
+      "label": "debounce",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_submit",
+      "label": "submit",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_openfood",
+      "label": "openFood",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_sourcechip",
+      "label": "sourceChip",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_food_page_message",
+      "label": "_message",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms",
+      "label": "nutrition_forms.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_entryformpage",
+      "label": "EntryFormPage",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
+      "label": "_EntryFormPageState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_nutrientdraft",
+      "label": "_NutrientDraft",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
+      "label": "OwnFoodFormPage",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
+      "label": "_OwnFoodFormPageState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_food",
+      "label": "food",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_entry",
+      "label": "entry",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_form",
+      "label": "form",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_quantity",
+      "label": "quantity",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_when",
+      "label": "when",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_unit",
+      "label": "unit",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_error",
+      "label": "error",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_pending",
+      "label": "pending",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_keyvalue",
+      "label": "keyValue",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_nutrients",
+      "label": "nutrients",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_rejected",
+      "label": "_rejected",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_pickdate",
+      "label": "pickDate",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_save",
+      "label": "save",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_nutrition_forms_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components",
+      "label": "figma_components.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmacontent",
+      "label": "FigmaContent",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaactioncard",
+      "label": "FigmaActionCard",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmametric",
+      "label": "FigmaMetric",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaheader",
+      "label": "FigmaHeader",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaback",
+      "label": "FigmaBack",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmarouteframe",
+      "label": "FigmaRouteFrame",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmapageheading",
+      "label": "FigmaPageHeading",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmasection",
+      "label": "FigmaSection",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_subtitle",
+      "label": "subtitle",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_children",
+      "label": "children",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_onprofile",
+      "label": "onProfile",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_body",
+      "label": "body",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_child",
+      "label": "child",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_showavailability",
+      "label": "showAvailability",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "_origin": "ast"
     }
@@ -19596,295 +19649,6 @@
       "_origin": "ast"
     },
     {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_foodpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page_foodpage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_foodpagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page_foodpagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page_foodpagestate",
-      "target": "features_food_reference_presentation_food_page_foodpage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page_foodpagestate",
-      "target": "widgetsbindingobserver",
-      "relation": "mixes_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_controller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "foodcontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_selectforconsumption",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_search",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_debounce",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "timer",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_initstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_submit",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "features_food_reference_presentation_food_page_message",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "dart_async",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "data_food_repository_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "food_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "domain_food_reference_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "food_detail_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_food_reference_presentation_food_page",
-      "target": "foodreference",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/food_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
       "source": "features_nutrition_data_nutrition_repository",
       "target": "features_nutrition_data_nutrition_repository_gonutritionrepository",
       "relation": "defines",
@@ -20070,486 +19834,6 @@
       "source_file": "features/nutrition/data/nutrition_repository.dart",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_entryformpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_entryformpage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
-      "target": "features_nutrition_presentation_nutrition_forms_entryformpage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_nutrientdraft",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
-      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_food",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "foodreference",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_repository",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_domain_nutrition_nutritionrepository",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_entry",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_domain_nutrition_json",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_form",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_quantity",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_when",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "datetime",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_unit",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_error",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "string_evidence",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_busy",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_pending",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_keyvalue",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_name",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_nutrients",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "string",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_rejected",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_initstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_pickdate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_save",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "features_nutrition_presentation_nutrition_forms_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "package_dio_dio_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "package_trainforge_features_food_reference_domain_food_reference_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "domain_nutrition_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "data_nutrition_repository_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_nutrition_presentation_nutrition_forms",
-      "target": "formstate",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
       "_origin": "ast"
     },
     {
@@ -23079,343 +22363,6 @@
       "_origin": "ast"
     },
     {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_figmacontent",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components_figmacontent",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_figmaactioncard",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components_figmaactioncard",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_figmametric",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components_figmametric",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_figmaheader",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components_figmaheader",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_figmaback",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components_figmaback",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_subtitle",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "string_title",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_children",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "list",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_asset",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "string_title_subtitle",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_color",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "color",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_ontap",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "voidcallback",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_label",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "string_value",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_name",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "string",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_onprofile",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "shared_widgets_figma_components_showavailability",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "package_flutter_svg_flutter_svg_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_components",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_components.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "shared_widgets_plans_overview",
       "target": "shared_widgets_plans_overview_plansoverview",
       "relation": "defines",
@@ -24333,6 +23280,1278 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_foodpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_foodpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "features_food_reference_presentation_food_page_foodpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page_foodpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "foodcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_selectforconsumption",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_search",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_debounce",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "timer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_submit",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_openfood",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_sourcechip",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "features_food_reference_presentation_food_page_message",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "package_trainforge_shared_widgets_figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "data_food_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "food_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "domain_food_reference_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "food_detail_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_food_reference_presentation_food_page",
+      "target": "foodreference",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/food_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_entryformpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_entryformpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_entryformpagestate",
+      "target": "features_nutrition_presentation_nutrition_forms_entryformpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_nutrientdraft",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms_ownfoodformpagestate",
+      "target": "features_nutrition_presentation_nutrition_forms_ownfoodformpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_food",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "foodreference",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "nutritionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_entry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_form",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_quantity",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_when",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "datetime",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_unit",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_error",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "string_evidence",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_busy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_pending",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_keyvalue",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_nutrients",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_rejected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_pickdate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_save",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "features_nutrition_presentation_nutrition_forms_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "package_trainforge_shared_widgets_figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "package_trainforge_features_food_reference_domain_food_reference_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "domain_nutrition_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "data_nutrition_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_nutrition_forms",
+      "target": "formstate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmacontent",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmacontent",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaactioncard",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaactioncard",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmametric",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmametric",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaheader",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaheader",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaback",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmarouteframe",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmarouteframe",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmapageheading",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmapageheading",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmasection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmasection",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_subtitle",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_title",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_children",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_asset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_title_subtitle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_color",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "color",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_ontap",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "voidcallback",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_label",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_value",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_onprofile",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_body",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "widget",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_child",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_showavailability",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_flutter_svg_flutter_svg_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast"

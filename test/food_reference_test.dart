@@ -229,10 +229,27 @@ void main() {
     expect(find.textContaining('secret'), findsNothing);
   });
   testWidgets('empty search has a clear reset action', (tester) async {
-    final c = FoodController(FixtureFoods()..empty = true);
+    final c = FoodController(FixtureFoods()..empty = true)
+      ..q = 'missing'
+      ..sourceId = 'fixture';
     await tester.pumpWidget(MaterialApp(home: FoodPage(controller: c)));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text('Limpar busca e fonte'),
+      150,
+      scrollable: find
+          .byWidgetPredicate(
+            (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
+          )
+          .first,
+    );
     expect(find.text('Limpar busca e fonte'), findsOneWidget);
+    await tester.ensureVisible(find.text('Limpar busca e fonte'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Limpar busca e fonte'));
+    await tester.pumpAndSettle();
+    expect(c.q, isEmpty);
+    expect(c.sourceId, isEmpty);
     await tester.pumpWidget(const SizedBox());
     c.dispose();
   });
