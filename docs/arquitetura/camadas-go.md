@@ -1,6 +1,6 @@
 # Camadas e responsabilidades do backend Go
 
-Refinada em **22/10/2026**: fundação, importador e auth implementados localmente; catálogoHTTP, atividade e nutrição ainda planejados. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
+Refinada em **23/10/2026**: fundação, auth, catálogoHTTP, importação/consulta alimentar e privacidade implementados localmente; atividade e escrita alimentar ainda planejadas. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`, `privacy`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
 
 ```mermaid
 flowchart LR
@@ -26,7 +26,7 @@ A seta de implementação representa dependência/contrato, não chamada HTTP. E
 | `cmd/api` | Montar dependências e iniciar/parar o processo | Não conter o domínio inteiro |
 
 ```text
-services/api/                     # fundação/auth/import reais; demais módulos incrementais
+services/api/                     # auth/catálogo/consulta alimentar/privacidade reais; demais incrementais
   cmd/api/main.go
   cmd/import-content/main.go
   internal/
@@ -34,6 +34,7 @@ services/api/                     # fundação/auth/import reais; demais módulo
     catalog/{handler,dto,service,model,repository,postgres}.go
     activity/
     nutrition/
+    privacy/
     platform/{config,http,postgres,observability}/
     swaggerdocs/docs.go            # gerado por Swaggo, não editar
   migrations/
@@ -41,7 +42,7 @@ services/api/                     # fundação/auth/import reais; demais módulo
 
 O esquema ilustra nomes e fronteiras; arquivos separados só quando houver responsabilidade real. Interfaces ficam próximas do consumidor; composição manual em `cmd`, antes de escolher container de injeção. Uma regra pequena não precisa virar uma interface e três adapters. Módulos não acessam tabelas privadas de outro por conveniência; operações cruzadas têm responsabilidade explícita.
 
-## Milhares de usuários: critérios que vão além das camadas
+## Capacidade: critérios que vão além das camadas
 
 Contas cadastradas e requisições simultâneas são cargas diferentes. A primeira versão deve preservar possibilidade de adicionar instâncias sem estado local indispensável, mas **capacidade exige medição** da mistura de chamadas, concorrência, volume, hardware e banco.
 
@@ -52,3 +53,5 @@ Contas cadastradas e requisições simultâneas são cargas diferentes. A primei
 - Baseline com throughput, p50/p95/p99, erros, saturação de CPU/memória/pool e planos de consulta. Replicas/filas/cache distribuído entram por necessidade medida.
 
 Plano de validação: [segurança e operação](seguranca-operacao.md), histórias012/013/028/029/030 e critérios de entrega035. Nenhum número de capacidade foi certificado por este desenho. A [decisão de arquitetura](arquitetura-alvo.md) continua distinguindo migração de linguagem e revisão do domínio.
+
+A privacidade coordena explicitamente a exportação e o ciclo dos dados de todos os módulos privados conhecidos, com inventário de schema e transação única. Não é acesso casual entre módulos: a responsabilidade está em privacy e migrations, com testes de titularidade e privilégios. [Implementação, limites por instância e aceite pendente](../execucao/v1/privacidade-013.md).

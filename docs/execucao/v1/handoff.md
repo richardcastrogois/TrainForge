@@ -20,7 +20,7 @@ V1-013 tem implementação independente pronta, com aceite pessoal e011Googleman
 
 ## Estado Git e entregas
 
-Push expressamente autorizado em23/10. Os seis commits antes locais e o registro3170c50 foram enviados ao origin/main e oSHAremoto conferido. [CI real bem-sucedida39952064880](https://github.com/richardcastrogois/TrainForge/actions/runs/39952064880); generate e version-generated concluídos, derivados já correspondentes às entradas. V1-003 concluída com [evidência](publicacao-ci-verification.json). Mudanças de013 compõem o próximo incremento validado desta continuação; conferir Git real antes de editar. A lista doVSCode por si só não confirma commit/push.
+Push expressamente autorizado em23/10. Os seis commits antes locais e o registro3170c50 foram enviados ao origin/main e oSHAremoto conferido. [CI real bem-sucedida39952064880](https://github.com/richardcastrogois/TrainForge/actions/runs/39952064880); generate e version-generated concluídos, derivados já correspondentes às entradas. V1-003 concluída com [evidência](publicacao-ci-verification.json). Implementação013 publicada em4b922abd32db6c8f7ec806438d1969f49086e44d; [CI01339963554285](https://github.com/richardcastrogois/TrainForge/actions/runs/39963554285) passou (71testesPython,Go/Swagger/Mermaid). Conferir Git real antes de editar. A lista doVSCode por si só não confirma commit/push.
 
 Etapas01/02 concluídas:73metadados de consulta importados,439excluídos e0prática/instrução/mídia liberadas. V1-014 concluída como leitura de catálogo e019como importação alimentarGo/DB; V1-011 continua doing/completionEvidence vazio. V1-012/021/022 têm preparação parcial, sem fechamento das dependências ou aceite integrado. V1-003 concluída quanto aos critérios documentais/remotos.
 

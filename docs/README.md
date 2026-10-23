@@ -26,7 +26,7 @@ Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro 
 
 **Estado:** etapas01/02 concluídas;73metadados de consulta,439excluídos,0prática aprovada. FundaçãoGo/DB/Swagger, auth local e leitura de catálogo implementadas. APKdebug0.1.3+4 instalado no emulador; biblioteca real consultável semGoogle. V1-014 concluída; loginGoogle real/OAuthrelease aguardam retorno do autor. Demais módulosV1 não estão integrados.
 
-**V1-019 concluída:**6369registros alimentares noDB, com reimportação/restore verificados; consultaGo/Flutter entregue em preparação parcial020/025; cadastro próprio/consumo pendentes. V1-011 permanece doing, sem completionEvidence; intervenção Google só quando o autor retornar. V1-003 continua transversal, sem publicação remota autorizada.
+**V1-019 concluída:**6369registros alimentares noDB, com reimportação/restore verificados; consultaGo/Flutter entregue em preparação parcial020/025; cadastro próprio/consumo pendentes. V1-011 permanece doing, sem completionEvidence; intervenção Google só quando o autor retornar. V1-003 concluída com push autorizado e CI remota bem-sucedida em23/10; documentação continua transversal.
 
 ## Como a pasta foi organizada
 
@@ -41,4 +41,4 @@ Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro 
 
 A organização removeu dos pontos de entrada as filas e instruções ultrapassadas. Não apagou provas de autoria, recibos, verificadores nem arquivos necessários para reproduzir a pesquisa. PDFs e renders de terceiros continuam locais e ignorados no Git; o repositório guarda registros e hashes, não uma licença de redistribuição desses materiais.
 
-**23/10:** V1-013 tem implementação independente validada: política pública, exportação própria, exclusão confirmada, manutenção e filtro de restore. Go0.4.0/18operações, Flutter48testes/APK0.1.3+4. Google real/aceite privado pendentes; nenhuma outraV1 iniciada. Publicação inicial autorizada noGitHub (3170c50/CIverde), semdeploy.
+**23/10:** V1-013 tem implementação independente validada: política pública, exportação própria, exclusão confirmada, manutenção e filtro de restore. Go0.4.0/18operações, Flutter48testes/APK0.1.3+4. Google real/aceite privado pendentes; nenhuma outraV1 iniciada. Incrementos publicados noGitHub em3170c50/4b922ab; ambasCIs verdes, nenhum deploy.

@@ -38,7 +38,7 @@ Os DTOs/comentários e o Swagger gerado definem os campos/limites implementados;
 
 ## Importação e consulta alimentar entregues
 
-V1-019 concluiu o lote autorizado de6369registros noDB: preflight candidato preservado (trainforge.food-staging/1), revisão porfonte/operação, projeção exata e importadorGo transacional. Fatores/FA separados, ausências/limites mantidos,2identidadesconflitantes excluídas e3basesdesconhecidas semescala. A consultaHTTPGo e Flutter está implementada como preparação parcial020/025, com14operaçõesSwagger. Cadastro e consumo não foram entregues. [Contrato e evidência](../execucao/v1/alimentacao-importacao.md). [Consulta entregue e limites](../execucao/v1/alimentacao-consulta.md). Cadastro privado/consumo continuam nas histórias dependentes.
+V1-019 concluiu o lote autorizado de6369registros noDB: preflight candidato preservado (trainforge.food-staging/1), revisão porfonte/operação, projeção exata e importadorGo transacional. Fatores/FA separados, ausências/limites mantidos,2identidadesconflitantes excluídas e3basesdesconhecidas semescala. A consultaHTTPGo e Flutter está implementada como preparação parcial020/025, no checkpoint histórico Go0.3.0/14operações; o contrato atual Go0.4.0 possui18operações. Cadastro e consumo não foram entregues. [Contrato e evidência](../execucao/v1/alimentacao-importacao.md). [Consulta entregue e limites](../execucao/v1/alimentacao-consulta.md). Cadastro privado/consumo continuam nas histórias dependentes.
 
 ## Compatibilidade com o legado
 
