@@ -95,9 +95,9 @@
     "title": "Chave do rate limit usa forwarded header",
     "evidence": "backend:src/index.ts",
     "line": 133,
-    "detail": "Confiar apenas em proxy configurado e testar spoof; nenhuma implantação foi atacada.",
+    "detail": "Fastify legado preservado. Go0.4.0 ignora forwarded headers de peers não confiáveis; CIDRs explícitos, cadeia estrita e teste de spoof/limites por processo. Integração com proxy de produção e capacidade distribuída não validadas.",
     "story": "V1-013",
-    "status": "aberto — inspeção estática"
+    "status": "corrigido na API Go em testes locais — legado e infraestrutura externos pendentes"
   },
   {
     "id": "A11",

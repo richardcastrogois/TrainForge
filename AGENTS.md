@@ -14,7 +14,7 @@ Estado vigente: **23/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o d
 - API atual Fastify/Prisma/PostgreSQL em `C:/dev/bootcamp-treinos-api`; Next.js antigo é referência. Go modular tem fundação local em `services/api`; auth/cliente possuem checkpoint local em validação; migração de dados legados não entregue.
 - Pedido vigente: remover o painel local, manter documentação arquitetural dinâmica no repositório e gerar Swagger por comentários/tipos Go. Organização, ferramentas documentais e commits locais autorizados; não implica publicar, criar cobrança, alterar DB real ou enviar mensagens.
 
-- 23/10: push autorizado e confirmado em3170c50 (CI passou). V1-013 implementada/validada tecnicamente emGo0.4.0/18operações, exportação própria/exclusão confirmada/manutenção/gate de restore e Flutter; [estado013](docs/execucao/v1/privacidade-013.md). Continua doing por011/aceite pessoal pendentes; não avançar outraV1 antes desse aceite. Novos commits validados/push autorizados, deploy/contratação/contato seguem fora do escopo. Não alegar milhões simultâneos sem carga/infra dimensionada.
+- 23/10: push autorizado e confirmado em3170c50 e4b922ab (ambasCIs passaram). V1-013 implementada/validada tecnicamente emGo0.4.0/18operações, exportação própria/exclusão confirmada/manutenção/gate de restore e Flutter; [estado013](docs/execucao/v1/privacidade-013.md). Continua doing por011/aceite pessoal pendentes; não avançar outraV1 antes desse aceite. Novos commits validados/push autorizados, deploy/contratação/contato seguem fora do escopo. Não alegar milhões simultâneos sem carga/infra dimensionada.
 
 ## Conteúdo e pesquisa
 
