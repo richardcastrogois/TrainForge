@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-23",
+  "scope": "consented-google-android-debug-session-and-privacy",
+  "versionName": "0.1.3",
+  "versionCode": 4,
+  "apiVersion": "0.4.0",
+  "device": "emulator-5554",
+  "realGoogleLoginValidated": true,
+  "consentPerformedByUser": true,
+  "singleCanonicalGoogleIdentityPersisted": true,
+  "sessionConfirmationHTTPStatus": 200,
+  "sessionRestoredAfterAppRestart": true,
+  "temporaryApiConnectionFailure": {
+    "transport": "ADB reverse removed temporarily; restored in finally",
+    "accountScreenRetained": true,
+    "databaseCountsUnchanged": true,
+    "reconnectionHTTPStatus": 200
+  },
+  "naturalAccessExpirationAndRefresh": {
+    "databaseExpiryNotModified": true,
+    "expiredAccessObservedBeforeRequest": true,
+    "consumedRefreshBefore": 0,
+    "consumedRefreshAfter": 1,
+    "renewedAccessVerified": true,
+    "sameAccountVerified": true,
+    "retriedRequestHTTPStatus": 200
+  },
+  "logout": {
+    "httpStatus": 204,
+    "entryScreenObserved": true,
+    "activeFamiliesAfter": 0,
+    "validAccessAfter": 0,
+    "accountPreserved": true
+  },
+  "reentry": {
+    "status": "passed",
+    "accountSelectionPerformedByUser": true,
+    "sameAccountVerified": true,
+    "userCount": 1,
+    "familyCount": 2,
+    "activeFamilyCount": 1
+  },
+  "privateExport": {
+    "account": {
+      "items": 1,
+      "currentAccountMatches": true,
+      "credentialFieldsAbsent": true
+    },
+    "sessions": {
+      "items": 1,
+      "currentAccountMatches": true,
+      "credentialFieldsAbsent": true
+    },
+    "emptySectionsVerified": [
+      "enrollments",
+      "occurrences",
+      "activitySessions",
+      "activityEvents",
+      "foods",
+      "foodEntries"
+    ],
+    "httpStatus": 200,
+    "clipboardUsed": false,
+    "rawExportRetained": false
+  },
+  "accountDeletion": {
+    "explicitUserAuthorization": true,
+    "performed": true,
+    "throughNormalFlutterConfirmationFlow": true,
+    "originalConsentedAccountCheckedBeforeMutation": true,
+    "intentHTTPStatus": 200,
+    "deleteHTTPStatus": 200,
+    "confirmedInApp": true,
+    "usersAfter": 0,
+    "authFamiliesAfter": 0,
+    "accessAndRefreshTokensAfter": 0,
+    "deletionIntentsAfter": 0,
+    "privateTablesEmpty": true,
+    "minimumErasureRecordsAfter": 1,
+    "erasureLedgerMatchesOriginalAccount": true,
+    "foodCountPreserved": 6369,
+    "movementCountPreserved": 73,
+    "editorialRowsAndHashesUnchanged": true,
+    "appRestartedAtEntryScreen": true,
+    "noAuthenticationRequestAfterRestart": true,
+    "googleAccountChangedByAgent": false,
+    "historicalBackupsRemoved": false
+  },
+  "releaseOAuthRegistered": false,
+  "releaseHTTPSValidated": false,
+  "iosValidated": false,
+  "privateIdentityOrTokensIncluded": false,
+  "environmentLeftRunningForUser": true
+}

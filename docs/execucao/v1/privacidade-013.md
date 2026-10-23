@@ -1,6 +1,6 @@
 # V1-013 — autorização, limites e ciclo dos dados
 
-Implementação e testes independentes concluídos em23/10/2026: Go0.4.0,18operaçõesSwagger e APKdebug0.1.3+4. **A história permanece doing:** depende da011Google real e009; o aceite pessoal integrado das operações privadas aguarda o autor. Não iniciar outraV1 antes desse aceite, conforme orientação de23/10. Nenhuma conta/atividade/refeição de fixture entrou na base entregue.
+Implementação e testes independentes concluídos em23/10/2026: Go0.4.0,18operaçõesSwagger e APKdebug0.1.3+4. **A história permanece doing:** depende da011 e009. GoogleAndroiddebug real, consultas próprias e exclusão autorizada passaram em23/10; OAuthrelease/HTTPS ainda pendentes. Não iniciar outraV1 antes desse aceite, conforme orientação de23/10. Nenhuma conta/atividade/refeição de fixture entrou na base entregue.
 
 ## Contrato real
 
@@ -13,7 +13,7 @@ Implementação e testes independentes concluídos em23/10/2026: Go0.4.0,18opera
 
 Bearer único, conta derivada exclusivamente do token validado; IDs de titular na query/body não são aceitos nessas operações. Acompanhamento de terceiro continua não implementado e não é autorizado por perfil de cuidador. As respostas privadas usam no-store.400/401/409/413/415/426/429/503 são erros seguros; falha de banco não vira401 nem apaga sessão válida.
 
-A sessão de entrada do TrainForge precisa ter sido criada há no máximo15min para emitir/usar confirmação. Isso mede a sessão criada após verificar uma credencialGoogle válida; não comprova nova senha/MFA ou presença física noGoogle. O app oferece nova entradaGoogle e descarta confirmação/exportação anterior. LoginGoogle real e esse fluxo pessoal ainda não foram validados; fixtures não substituem esse aceite.
+A sessão de entrada do TrainForge precisa ter sido criada há no máximo15min para emitir/usar confirmação. Isso mede a sessão criada após verificar uma credencialGoogle válida; não comprova nova senha/MFA ou presença física noGoogle. O app oferece nova entradaGoogle e descarta confirmação/exportação anterior. LoginGoogle real Androiddebug e o fluxo privado autorizado foram validados em23/10; não confundir isso com aceite release/iOS.
 
 ## Matriz de autorização
 
@@ -77,6 +77,6 @@ Backups existentes foram preservados. Expiração operacional de cópias e repli
 - [PostgreSQL/restore descartáveis](privacy-local-verification.json): duas contas, corpo/owner/cursor, nonce expirado/outra família, sessão antiga, store desconhecido, falha tardia/rollback, corrida refresh/delete, privilégios editoriais, manutenção/replay; uma conta reaparecia no backup antigo e foi removida pelo filtro; reaplicação idempotente. Alvos e dump de fixture removidos.
 - [HTTP real](privacy-http-verification.json): política200/no-store, export/intenção/delete anônimos401,18operações,73metadados/6369alimentos preservados e0contas criadas/excluídas.
 - Flutter:48testes e analyze0issues, incluindo confirmação, cache após troca de conta, limpeza pendente, precisãoJSON, tela320x568/texto2x e regressões anteriores.
-- [APK e ambiente](android-auth-checkpoint.json): assinatura/hash/fontes/configuração/instalação conferidos, política pública inspecionada. Telas privadas: widgets/fixtures apenas, sem alegar loginGoogle ou aceite pessoal. iOS/release/HTTPS continuam pendentes.
+- [APK e ambiente](android-auth-checkpoint.json): assinatura/hash/fontes/configuração/instalação conferidos, política pública inspecionada. [Ciclo privado real](auth-real-android-verification.json): oito seções consultadas, exclusão autorizada/confirmada,0contas/sessões privadas e1registro mínimo; editorial/hash preservados e app reaberto sem conta. iOS/release/HTTPS continuam pendentes.
 
 [Retomar avaliação](avaliacao-android.md). Repetir somente validações afetadas por mudança relevante. Nenhuma nova coleta de fornecedores ou integração paga faz parte desta história.

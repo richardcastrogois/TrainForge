@@ -1,6 +1,6 @@
 # Retomar a avaliação Android
 
-Checkpoint de23/10/2026: **APK debug 0.1.3+4**, backend Go0.4.0 e banco V1 local. Biblioteca e composição alimentar já podem ser consultadas sem Google. A autenticação está implementada, mas o login Google real aguarda o autor. Publicação dos incrementos noGitHub autorizada em23/10; nenhum deploy.
+Checkpoint de23/10/2026: **APK debug 0.1.3+4**, backend Go0.4.0 e banco V1 local. Biblioteca e composição alimentar já podem ser consultadas sem Google. LoginGoogle real Androiddebug, reabertura, falha/retomada deconexão, refreshnatural e logout validados em23/10. Reentrada na mesma conta e exclusão autorizada passaram; OAuthrelease/HTTPS pendentes. [Resultados reais](auth-real-android-verification.json). Publicação dos incrementos noGitHub autorizada em23/10; nenhum deploy.
 
 ## Quando voltar ao notebook
 
@@ -18,11 +18,11 @@ O comando inicia somente o cluster deste clone, a API Go e o emulador existente 
 3. Abra **Privacidade e dados** na entrada. Confira os limites de exclusão, registros temporários e backups; essa tela é pública.
 4. Volte e toque **Consultar alimentos sem registrar consumo**. Deve mostrar6369referências (3484Ciqual/2885CoFID) e3sem base confirmada. Busque no idioma da fonte, filtre a fonte e abra a composição; confira licença, base por célula e distinção entre zero/ausência/traço/limite. Cadastro próprio/refeições/totais ainda não entregues.
 5. Volte à entrada e toque **Entrar com Google**. Faça pessoalmente a entrada numa conta cadastrada em Test users. Senha,2FA e consentimento ficam somente no Google; não enviar tokens/senhas ao chat.
-6. Confirme Conta conectada, feche/reabra, teste retomada de conexão e sair/entrar. Registre o resultado sem divulgar e-mail/token. Esse passo ainda não foi validado.
+6. Confirme Conta conectada, feche/reabra, teste retomada de conexão e sair/entrar. Registre o resultado sem divulgar e-mail/token. Reabertura/rede/refresh/logout/reentrada passaram.
 
 Se o login falhar, a tela apresenta erro seguro e permite tentar novamente; offline/timeout/429/5xx não apagam a sessão. O backend precisa estar ativo; o APK debug usa loopback via ADB, não é uma entrega remota autônoma.
 
-Depois de validar a sessão, **Meus dados e privacidade** permite consultar/copiar páginas próprias e solicitar exclusão. O agente não executou exclusão em conta real. Para escolher testar: leia os limites, confirme uma entrada recente e digite a frase exata. ContaGoogle permanece independente. Se a limpeza local falhar após confirmação do servidor, use Concluir limpeza local; não é necessário repetir DELETE. Essa jornada pessoal continua pendente. [V1-013](privacidade-013.md).
+Depois de validar a sessão, **Meus dados e privacidade** permite consultar/copiar páginas próprias e solicitar exclusão. O agente executou a exclusão da contaTrainForge deavaliação após autorização explícita do titular; confirmação, banco e reabertura foram conferidos. Para escolher testar: leia os limites, confirme uma entrada recente e digite a frase exata. ContaGoogle permanece independente. Se a limpeza local falhar após confirmação do servidor, use Concluir limpeza local; não é necessário repetir DELETE. Essa jornada passou com a conta real deavaliação. Entrar novamente após a exclusão cria uma nova contaTrainForge, sem reativar a antiga. [V1-013](privacidade-013.md).
 
 ## OAuth release: próxima ação manual
 
@@ -51,13 +51,13 @@ Com o notebook disponível: ativar opções de desenvolvedor/depuração USB no 
 
 | Capacidade | Estado nesta build |
 |---|---|
-| Google, sessão, refresh/logout | Código Go/Flutter e testes isolados prontos; aceite pessoal Google pendente |
+| Google, sessão, refresh/logout | LoginGoogle Androiddebug, refreshnatural, logout e reentrada reais validados; release/HTTPS pendentes |
 | Biblioteca de referência |73metadados reais, busca/filtros, paginação e detalhes; testada com API/DB/emulador |
 | Programas completos/coleções |0disponíveis; vazio explícito |
 | Idosos, cuidadores, casa, praça e academia | Preservados no produto e nos registros; não inferidos nos metadados sem indicação da fonte |
 | Prática, adesão, atividade e histórico | Ainda não integrados; nenhuma execução fictícia |
 | Consulta alimentar e nutrientes |6369referências reais, busca/fonte/paginação/detalhe e bases/estados/créditos; API/DB/emulador verificados |
-| Privacidade da conta | Implementada/testada com fixtures; política pública inspecionada; aceite privadoGoogle real pendente |
+| Privacidade da conta | Consulta e exclusão explicitamente autorizada validadas comGoogle real/debug; banco/limpeza/catálogos conferidos |
 | Cadastro próprio, quantidade e consumo | Pendentes; nenhuma refeição/valor inventado |
 | Release/HTTPS e iOS | Pendentes de infraestrutura/configuração/testes próprios |
 

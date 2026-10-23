@@ -8,7 +8,7 @@
   "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
   "sourceFingerprint": "dcb30c7e3bc4d00041a0d63903e60d6a984a5becb17f68a9e62074e0232b3b33",
   "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
-  "realGoogleLoginValidated": false,
+  "realGoogleLoginValidated": true,
   "scope": "android-auth-catalog-food-privacy-debug-checkpoint",
   "date": "2026-10-23",
   "api": "http://127.0.0.1:8082",
@@ -22,14 +22,13 @@
   "latestBuildInstalled": true,
   "installedSha256": "aee2e72f49e82984357d3def33559083998b70405def21a6117f0700d788a585",
   "publicPrivacyPolicyVisuallyInspected": true,
-  "privatePrivacyFlowPersonallyAccepted": false,
+  "privatePrivacyFlowPersonallyAccepted": true,
   "priorFoodVisualCheckpointVersion": "0.1.2+3",
   "priorCatalogVisualCheckpointVersion": "0.1.1+2",
   "catalogAndFoodRegressionTestsPassed": true,
   "publicScreenHashes": {
     "privacy-policy.png": "582dd8556efd0ad70234034b76ee2993090b9c5e56c5fdf580f5cfb128bb77c6"
   },
-  "accountsCreated": 0,
   "accountsDeleted": 0,
   "consumptionEntriesCreated": 0,
   "androidBackupExcluded": true,
@@ -38,5 +37,10 @@
   "googlePlayServicesCrashObservedAtPriorCheckpoint": true,
   "googlePlayServicesLoginRecoveryValidated": false,
   "flutterTestsPassed": 48,
-  "flutterAnalyzeIssues": 0
+  "flutterAnalyzeIssues": 0,
+  "consentedRuntimeValidation": "auth-real-android-verification.json",
+  "buildInspectionAccountsCreated": 0,
+  "consentedLoginAccountsCreated": 1,
+  "consentedAccountsDeletedWithExplicitAuthorization": 1,
+  "privateExportWithRealAccountValidated": true
 }
