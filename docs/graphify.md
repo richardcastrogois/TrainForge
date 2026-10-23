@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização23/10: shell Figma, entrada e perfil
+
+72arquivosDart,1031nós/1342arestas;12arquivos alterados/novos,60inalterados,0removidos. Update incremental code-only porAST e HTMLexportado, sem clusterização/semântica/custoLLM. Backup automático preservado em.local/graphify-backup-20261023-frontend-shell. Novos componentes e resumo diário mapeados; grafo não comprova fidelidade visual.
+
 ## Atualização23/10: identidade Figma e correções deexibição
 
 65arquivosDart,918nós/1181arestas;7arquivos alterados/novos,58inalterados,0removidos. Tokens/marca/entrada e exibição alimentar incluídos porAST; HTMLexportado, semanálisesemântica/clusterização. Backup em.local/graphify-backup-20261023-figma-tokens. Fidelidade visual completa permanece pendente; grafo não a comprova.

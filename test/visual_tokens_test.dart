@@ -41,26 +41,10 @@ void main() {
   testWidgets('entry visual inspection artifact', (t) async {
     if (!const bool.fromEnvironment('TF_RENDER_AUTH')) return;
     await t.runAsync(() async {
-      final font = File(
-        'C:/Users/richa/flutter/bin/cache/artifacts/material_fonts/Roboto-Regular.ttf',
-      );
-      if (await font.exists()) {
-        final loader = FontLoader('Roboto')
-          ..addFont(font.readAsBytes().then((b) => ByteData.sublistView(b)))
-          ..addFont(
-            File(
-              'C:/Users/richa/flutter/bin/cache/artifacts/material_fonts/roboto-bold.ttf',
-            ).readAsBytes().then((b) => ByteData.sublistView(b)),
-          );
-        final icons = FontLoader('MaterialIcons')
-          ..addFont(
-            File(
-              'C:/Users/richa/flutter/bin/cache/artifacts/material_fonts/materialicons-regular.otf',
-            ).readAsBytes().then((b) => ByteData.sublistView(b)),
-          );
-        await icons.load();
-        await loader.load();
-      }
+      final loader = FontLoader('Inter')
+        ..addFont(rootBundle.load('assets/fonts/Inter-Regular.ttf'))
+        ..addFont(rootBundle.load('assets/fonts/Inter-Bold.ttf'));
+      await loader.load();
     });
     t.view.physicalSize = const Size(390, 844);
     t.view.devicePixelRatio = 1;
@@ -74,11 +58,7 @@ void main() {
         key: key,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: TrainForgeTheme.light.copyWith(
-            textTheme: TrainForgeTheme.light.textTheme.apply(
-              fontFamily: 'Roboto',
-            ),
-          ),
+          theme: TrainForgeTheme.light,
           home: AuthPage(controller: controller),
         ),
       ),

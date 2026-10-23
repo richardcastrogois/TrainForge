@@ -1,5 +1,8 @@
 # Retomar a avaliação Android
 
+**Checkpoint atual23/10:** APKdebug0.1.6+9, visual01 shell/entrada/perfil e cinco áreas iniciais;68testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [escopo e lacunas visuais](frontend-fidelidade-figma.md). Mantém consumo real e sessão, sem novo login automatizado. Builds e roteiros abaixo datados são históricos.
+
+
 Checkpoint atual de23/10/2026: **APKdebug0.1.5+8**,Go0.5.1/25operações e bancoV1local. Alimentação particular/consumo/histórico entregues; titular confirmou consumo real. [Buildatual](android-nutrition-checkpoint.json), [aceite](nutrition-real-android-verification.json). A prioridade agora é [frontend completo fiel aoFigma](frontend-fidelidade-figma.md); tema/marca iniciais não encerram esse trabalho. Nenhum deploy.
 
 ## Testar agora no notebook

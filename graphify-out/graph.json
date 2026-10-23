@@ -2753,13 +2753,10 @@
     {
       "id": "valuechanged",
       "label": "ValueChanged",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Interface e widgets",
       "file_type": "code",
-      "norm_label": "valuechanged",
       "source_file": null,
-      "source_location": null
+      "source_location": null,
+      "_origin": "ast"
     },
     {
       "id": "features_profile_data_profile_repository",
@@ -4810,22 +4807,6 @@
       "_origin": "ast"
     },
     {
-      "id": "main",
-      "label": "main.dart",
-      "file_type": "code",
-      "source_file": "main.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "main_main",
-      "label": "main",
-      "file_type": "code",
-      "source_file": "main.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "map",
       "label": "Map",
       "file_type": "code",
@@ -5674,118 +5655,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_catalog_presentation_catalog_page",
-      "label": "catalog_page.dart",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_catalogpage",
-      "label": "CatalogPage",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_catalogpagestate",
-      "label": "_CatalogPageState",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_controller",
-      "label": "controller",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_search",
-      "label": "search",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
-      "label": "didChangeAppLifecycleState",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_choosefilters",
-      "label": "chooseFilters",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_clearfilters",
-      "label": "clearFilters",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_header",
-      "label": "_header",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_notice",
-      "label": "_notice",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_catalog_presentation_catalog_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "data_catalog_repository_dart",
       "label": "../data/catalog_repository.dart",
       "file_type": "code",
@@ -5819,7 +5688,7 @@
     },
     {
       "id": "authcontroller",
-      "label": "AuthController?",
+      "label": "AuthController",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -7762,102 +7631,6 @@
       "_origin": "ast"
     },
     {
-      "id": "core_theme_trainforge_theme",
-      "label": "trainforge_theme.dart",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_trainforgetheme",
-      "label": "TrainForgeTheme",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_trainforgebrand",
-      "label": "TrainForgeBrand",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_background",
-      "label": "background",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_ink",
-      "label": "ink",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_primary",
-      "label": "primary",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_nutrition",
-      "label": "nutrition",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_theme_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page",
-      "label": "auth_page.dart",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_authpage",
-      "label": "AuthPage",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_controller",
-      "label": "_controller",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_pages_auth_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "package_trainforge_core_theme_trainforge_theme_dart",
       "label": "package:trainforge/core/theme/trainforge_theme.dart",
       "file_type": "code",
@@ -8418,6 +8191,454 @@
       "_origin": "ast"
     },
     {
+      "id": "core_theme_trainforge_theme",
+      "label": "trainforge_theme.dart",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_trainforgetheme",
+      "label": "TrainForgeTheme",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_trainforgebrand",
+      "label": "TrainForgeBrand",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_background",
+      "label": "background",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_ink",
+      "label": "ink",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_primary",
+      "label": "primary",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_nutrition",
+      "label": "nutrition",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_theme_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page",
+      "label": "auth_page.dart",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_authpage",
+      "label": "AuthPage",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_controller",
+      "label": "_controller",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_pages_auth_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_shared_widgets_figma_components_dart",
+      "label": "package:trainforge/shared/widgets/figma_components.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page",
+      "label": "catalog_page.dart",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_catalogpage",
+      "label": "CatalogPage",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "label": "_CatalogPageState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "catalogcontroller",
+      "label": "CatalogController?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_initialfilters",
+      "label": "initialFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "catalogfilters",
+      "label": "CatalogFilters?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_search",
+      "label": "search",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_choosefilters",
+      "label": "chooseFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_clearfilters",
+      "label": "clearFilters",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_header",
+      "label": "_header",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_notice",
+      "label": "_notice",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_catalog_presentation_catalog_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller",
+      "label": "daily_summary_controller.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_dailysummarycontroller",
+      "label": "DailySummaryController",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "nutritionrepository",
+      "label": "NutritionRepository?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_accountid",
+      "label": "accountId",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_summary",
+      "label": "summary",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "json",
+      "label": "Json?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_zone",
+      "label": "zone",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_day",
+      "label": "String? day,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_loading",
+      "label": "loading",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_generation",
+      "label": "_generation",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_candidates",
+      "label": "candidates",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_value",
+      "label": "value",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_daily_summary_controller_dailyenergy",
+      "label": "dailyEnergy",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "main",
+      "label": "main.dart",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "main_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page",
+      "label": "account_page.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_accountpage",
+      "label": "AccountPage",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_privacy",
+      "label": "privacy",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_flutter_svg_flutter_svg_dart",
+      "label": "package:flutter_svg/flutter_svg.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "figma_components_dart",
+      "label": "figma_components.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "product_overviews_dart",
+      "label": "product_overviews.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_auth_gate",
       "label": "auth_gate.dart",
       "file_type": "code",
@@ -8450,6 +8671,22 @@
       "_origin": "ast"
     },
     {
+      "id": "shared_widgets_auth_gate_nutritionrepository",
+      "label": "nutritionRepository",
+      "file_type": "code",
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_auth_gate_accountid",
+      "label": "accountId",
+      "file_type": "code",
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_auth_gate_createstate",
       "label": "createState",
       "file_type": "code",
@@ -8460,6 +8697,14 @@
     {
       "id": "shared_widgets_auth_gate_initstate",
       "label": "initState",
+      "file_type": "code",
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_auth_gate_accountchanged",
+      "label": "accountChanged",
       "file_type": "code",
       "source_file": "shared/widgets/auth_gate.dart",
       "source_location": null,
@@ -8478,6 +8723,662 @@
       "label": "build",
       "file_type": "code",
       "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_nutrition_domain_nutrition_dart",
+      "label": "package:trainforge/features/nutrition/domain/nutrition.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "product_shell_dart",
+      "label": "product_shell.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav",
+      "label": "figma_bottom_nav.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "label": "TrainForgeDestination",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "label": "FigmaBottomNav",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_label",
+      "label": "String label,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_selected",
+      "label": "selected",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_onselected",
+      "label": "onSelected",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components",
+      "label": "figma_components.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmacontent",
+      "label": "FigmaContent",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaactioncard",
+      "label": "FigmaActionCard",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmametric",
+      "label": "FigmaMetric",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaheader",
+      "label": "FigmaHeader",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_figmaback",
+      "label": "FigmaBack",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_subtitle",
+      "label": "subtitle",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_title",
+      "label": "String title,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_children",
+      "label": "children",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_title_subtitle",
+      "label": "String title, subtitle,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "voidcallback",
+      "label": "VoidCallback",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_value",
+      "label": "String value,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_onprofile",
+      "label": "onProfile",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_showavailability",
+      "label": "showAvailability",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview",
+      "label": "plans_overview.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_plansoverview",
+      "label": "PlansOverview",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_plansoverviewstate",
+      "label": "_PlansOverviewState",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_library",
+      "label": "library",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_plans_overview_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_catalog_data_catalog_repository_dart",
+      "label": "package:trainforge/features/catalog/data/catalog_repository.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_catalog_domain_catalog_entry_dart",
+      "label": "package:trainforge/features/catalog/domain/catalog_entry.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_catalog_presentation_catalog_controller_dart",
+      "label": "package:trainforge/features/catalog/presentation/catalog_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews",
+      "label": "product_overviews.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_dailyoverview",
+      "label": "DailyOverview",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_activityoverview",
+      "label": "ActivityOverview",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_evolutionoverview",
+      "label": "EvolutionOverview",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_tfblue",
+      "label": "tfBlue",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_days",
+      "label": "days",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_months",
+      "label": "months",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_food",
+      "label": "food",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_openactivity",
+      "label": "openActivity",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "voidcallback_opennutrition_opencatalog",
+      "label": "VoidCallback openNutrition, openCatalog,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_opennutrition",
+      "label": "openNutrition",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_overviewdate",
+      "label": "overviewDate",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart",
+      "label": "package:trainforge/features/nutrition/presentation/daily_summary_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell",
+      "label": "product_shell.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_productshell",
+      "label": "ProductShell",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_productshellstate",
+      "label": "_ProductShellState",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_nutritionrepository",
+      "label": "nutritionRepository",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_planscontroller",
+      "label": "plansController",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_selected",
+      "label": "selected",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_visited",
+      "label": "visited",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_accountid",
+      "label": "accountId",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_daily",
+      "label": "daily",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_opennutrition",
+      "label": "openNutrition",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_opencatalog",
+      "label": "openCatalog",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_select",
+      "label": "select",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_page",
+      "label": "page",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_shell_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_nutrition_data_nutrition_repository_dart",
+      "label": "package:trainforge/features/nutrition/data/nutrition_repository.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "account_page_dart",
+      "label": "account_page.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "figma_bottom_nav_dart",
+      "label": "figma_bottom_nav.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "plans_overview_dart",
+      "label": "plans_overview.dart",
+      "file_type": "code",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     }
@@ -14858,50 +15759,6 @@
       "_origin": "ast"
     },
     {
-      "source": "main",
-      "target": "main_main",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "main.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "main",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "main.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "main",
-      "target": "app_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "main.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "main",
-      "target": "core_log_app_logger_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "main.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "features_auth_data_auth_repository",
       "target": "features_auth_data_auth_repository_authrepository",
       "relation": "defines",
@@ -16376,272 +17233,6 @@
       "source_file": "features/catalog/presentation/catalog_detail_page.dart",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_catalogpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page_catalogpage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_catalogpagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
-      "target": "features_catalog_presentation_catalog_page_catalogpage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
-      "target": "widgetsbindingobserver",
-      "relation": "mixes_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_controller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_controller_catalogcontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_search",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_initstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_choosefilters",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_clearfilters",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_header",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_notice",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_presentation_catalog_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "data_catalog_repository_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "domain_catalog_entry_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "catalog_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "catalog_detail_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_catalog_presentation_catalog_page",
-      "target": "features_catalog_domain_catalog_entry_catalogfilters",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/catalog/presentation/catalog_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
       "_origin": "ast"
     },
     {
@@ -20028,262 +20619,6 @@
       "_origin": "ast"
     },
     {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_trainforgetheme",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_trainforgebrand",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme_trainforgebrand",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_background",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "static_const",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_ink",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_primary",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_nutrition",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "core_theme_trainforge_theme_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_theme",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_theme.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_authpage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_authpage",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_controller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "authcontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "features_auth_presentation_pages_auth_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page_build",
-      "target": "materialpageroute",
-      "relation": "navigates",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "route_object",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_features_privacy_presentation_privacy_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_features_food_reference_presentation_food_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_trainforge_shared_widgets_auth_gate_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_presentation_pages_auth_page",
-      "target": "auth_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/pages/auth_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "features_nutrition_domain_nutrition",
       "target": "features_nutrition_domain_nutrition_nutritionpagedata",
       "relation": "defines",
@@ -21421,6 +21756,949 @@
       "_origin": "ast"
     },
     {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_trainforgetheme",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_trainforgebrand",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme_trainforgebrand",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_background",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "static_const",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_ink",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_primary",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_nutrition",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "core_theme_trainforge_theme_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_theme",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_theme.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_authpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page_authpage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "features_auth_presentation_pages_auth_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_privacy_presentation_privacy_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_food_reference_presentation_food_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_shared_widgets_auth_gate_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "package_trainforge_shared_widgets_figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_presentation_pages_auth_page",
+      "target": "auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/pages/auth_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_catalogpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "features_catalog_presentation_catalog_page_catalogpage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page_catalogpagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalogcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_initialfilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalogfilters",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_search",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_choosefilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_clearfilters",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_header",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_notice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "features_catalog_presentation_catalog_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "data_catalog_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalog_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_catalog_presentation_catalog_page",
+      "target": "catalog_detail_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/catalog/presentation/catalog_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_dailysummarycontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller_dailysummarycontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_repository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "nutritionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_accountid",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_summary",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_zone",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "string_day",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_loading",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_generation",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_candidates",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_value",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_load",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "features_nutrition_presentation_daily_summary_controller_dailyenergy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_nutrition_presentation_daily_summary_controller",
+      "target": "domain_nutrition_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/daily_summary_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "app_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "core_log_app_logger_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_accountpage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page_accountpage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_privacy",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "package_flutter_svg_flutter_svg_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "package_trainforge_features_auth_presentation_auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "package_trainforge_features_privacy_presentation_privacy_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_account_page",
+      "target": "product_overviews_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "shared_widgets_auth_gate",
       "target": "shared_widgets_auth_gate_authgate",
       "relation": "defines",
@@ -21500,6 +22778,52 @@
     },
     {
       "source": "shared_widgets_auth_gate",
+      "target": "shared_widgets_auth_gate_nutritionrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "nutritionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "shared_widgets_auth_gate_accountid",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
       "target": "shared_widgets_auth_gate_createstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
@@ -21512,6 +22836,17 @@
     {
       "source": "shared_widgets_auth_gate",
       "target": "shared_widgets_auth_gate_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "shared_widgets_auth_gate_accountchanged",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -21544,51 +22879,7 @@
     },
     {
       "source": "shared_widgets_auth_gate",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "package_trainforge_features_nutrition_presentation_nutrition_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "package_trainforge_features_privacy_presentation_privacy_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "package_trainforge_features_food_reference_presentation_food_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_auth_gate",
-      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "target": "package_trainforge_features_nutrition_domain_nutrition_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -21637,6 +22928,1411 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_auth_gate",
+      "target": "product_shell_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_asset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "string_label",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_selected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_onselected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "valuechanged",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_flutter_svg_flutter_svg_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmacontent",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmacontent",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaactioncard",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaactioncard",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmametric",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmametric",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaheader",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaheader",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_figmaback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components_figmaback",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_subtitle",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_title",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_children",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_asset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_title_subtitle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_color",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "color",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_ontap",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "voidcallback",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_label",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string_value",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "string",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_onprofile",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_showavailability",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_flutter_svg_flutter_svg_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_components",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_plansoverview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview_plansoverview",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_plansoverviewstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview_plansoverviewstate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview_plansoverviewstate",
+      "target": "shared_widgets_plans_overview_plansoverview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "catalogcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_library",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "shared_widgets_plans_overview_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_trainforge_features_catalog_data_catalog_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_trainforge_features_catalog_domain_catalog_entry_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_trainforge_features_catalog_presentation_catalog_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_plans_overview",
+      "target": "product_overviews_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/plans_overview.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_dailyoverview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews_dailyoverview",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_activityoverview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews_activityoverview",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_evolutionoverview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews_evolutionoverview",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_tfblue",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_days",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_months",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "features_nutrition_presentation_daily_summary_controller_dailysummarycontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_food",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_openactivity",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "voidcallback_opennutrition_opencatalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_opennutrition",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "voidcallback",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_overviewdate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_overviews",
+      "target": "figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_productshell",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell_productshell",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_productshellstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell_productshellstate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell_productshellstate",
+      "target": "shared_widgets_product_shell_productshell",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell_productshellstate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_nutritionrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "nutritionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_planscontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "catalogcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_selected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_visited",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_accountid",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_daily",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "features_nutrition_presentation_daily_summary_controller_dailysummarycontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_opennutrition",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_opencatalog",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_select",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_page",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_catalog_presentation_catalog_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_auth_presentation_auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_nutrition_data_nutrition_repository_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_nutrition_domain_nutrition_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_nutrition_presentation_nutrition_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_catalog_presentation_catalog_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "account_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "figma_bottom_nav_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "plans_overview_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_product_shell",
+      "target": "product_overviews_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast"

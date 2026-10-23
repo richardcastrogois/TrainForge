@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `51e0d2acebc5e4c1`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c103927fdb660d58`.
 
 ## Atual: referências entre widgets
 
@@ -27,12 +27,14 @@ flowchart LR
     node16["WorkoutDayPage"]
     node17["WorkoutPlanPage"]
     node18["WorkoutsPage"]
-    node19["AppShell"]
-    node20["AuthGate"]
+    node19["AccountPage"]
+    node20["AppShell"]
+    node21["AuthGate"]
+    node22["ProductShell"]
     node0 -->|"referencia widget"| node2
     node0 -->|"referencia widget"| node4
     node0 -->|"referencia widget"| node13
-    node0 -->|"referencia widget"| node20
+    node0 -->|"referencia widget"| node21
     node2 -->|"referencia widget"| node1
     node4 -->|"referencia widget"| node3
     node5 -->|"referencia widget"| node0
@@ -45,9 +47,9 @@ flowchart LR
     node9 -->|"referencia widget"| node7
     node9 -->|"referencia widget"| node8
     node10 -->|"referencia widget"| node0
-    node10 -->|"referencia widget"| node20
+    node10 -->|"referencia widget"| node21
     node11 -->|"referencia widget"| node0
-    node11 -->|"referencia widget"| node20
+    node11 -->|"referencia widget"| node21
     node12 -->|"referencia widget"| node0
     node12 -->|"referencia widget"| node10
     node12 -->|"referencia widget"| node11
@@ -60,20 +62,21 @@ flowchart LR
     node18 -->|"referencia widget"| node0
     node18 -->|"referencia widget"| node12
     node18 -->|"referencia widget"| node17
-    node19 -->|"referencia widget"| node5
-    node19 -->|"referencia widget"| node14
-    node19 -->|"referencia widget"| node15
-    node19 -->|"referencia widget"| node18
-    node20 -->|"referencia widget"| node0
-    node20 -->|"referencia widget"| node2
-    node20 -->|"referencia widget"| node4
-    node20 -->|"referencia widget"| node9
-    node20 -->|"referencia widget"| node13
+    node19 -->|"referencia widget"| node13
+    node20 -->|"referencia widget"| node5
+    node20 -->|"referencia widget"| node14
+    node20 -->|"referencia widget"| node15
+    node20 -->|"referencia widget"| node18
+    node21 -->|"referencia widget"| node0
+    node21 -->|"referencia widget"| node22
+    node22 -->|"referencia widget"| node2
+    node22 -->|"referencia widget"| node9
+    node22 -->|"referencia widget"| node19
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
-| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:9](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:10](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:62](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:7](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:4](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
@@ -92,8 +95,10 @@ flowchart LR
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:9](../../../lib/shared/widgets/account_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:8](../../../lib/shared/widgets/auth_gate.dart) |
+| ProductShell | [lib/shared/widgets/product_shell.dart:15](../../../lib/shared/widgets/product_shell.dart) |
 
 ## Chamadas usadas por cada feature
 

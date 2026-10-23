@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:trainforge/shared/widgets/auth_gate.dart';
-import 'package:flutter/material.dart';
+import 'package:trainforge/shared/widgets/figma_components.dart';
 import '../auth_controller.dart';
 
 class AuthPage extends StatelessWidget {
@@ -18,96 +19,123 @@ class AuthPage extends StatelessWidget {
       body: SafeArea(
         child: Align(
           alignment: Alignment.topCenter,
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(24),
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 480),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const TrainForgeBrand(),
-                  const SizedBox(height: 24),
-                  Text(
-                    'Que bom ter você por aqui.',
-                    style: Theme.of(context).textTheme.headlineLarge,
-                  ),
-                  const SizedBox(height: 12),
-                  const Text(
-                    'Entre com Google para continuar sua rotina.',
-                    textAlign: TextAlign.start,
-                  ),
-                  const SizedBox(height: 24),
-                  SizedBox(
-                    width: double.infinity,
-                    child: FilledButton.icon(
-                      onPressed: controller.busy ? null : controller.login,
-                      icon: const Icon(Icons.login),
-                      label: Text(
-                        controller.busy ? 'Conectando…' : 'Entrar com Google',
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 480),
+            child: Column(
+              children: [
+                const FigmaHeader(),
+                Expanded(
+                  child: FigmaContent(
+                    title: 'Que bom ter-te por cá.',
+                    subtitle: 'Entra para continuar a tua rotina.',
+                    children: [
+                      OutlinedButton(
+                        onPressed: controller.busy ? null : controller.login,
+                        child: Text(
+                          controller.busy ? 'Conectando…' : 'Entrar com Google',
+                        ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  OutlinedButton.icon(
-                    onPressed: controller.busy
-                        ? null
-                        : () => Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (_) => const CatalogPage(),
+                      Material(
+                        color: TrainForgeTheme.accent,
+                        borderRadius: BorderRadius.circular(22),
+                        child: InkWell(
+                          onTap: controller.busy ? null : controller.login,
+                          borderRadius: BorderRadius.circular(22),
+                          child: const Padding(
+                            padding: EdgeInsets.all(16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Ainda não tens conta?',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w700,
+                                    height: 1.35,
+                                  ),
+                                ),
+                                SizedBox(height: 4),
+                                Text(
+                                  'Criar conta com Google',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: TrainForgeTheme.muted,
+                                    height: 1.35,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                    icon: const Icon(Icons.library_books_outlined),
-                    label: const Text('Consultar biblioteca sem entrar'),
-                  ),
-                  OutlinedButton.icon(
-                    onPressed: controller.busy
-                        ? null
-                        : () => Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (_) => const FoodPage(),
-                            ),
-                          ),
-                    icon: const Icon(Icons.restaurant_outlined),
-                    label: const Text(
-                      'Consultar alimentos sem registrar consumo',
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: controller.busy
-                        ? null
-                        : () => Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (_) => const PrivacyPage(),
-                            ),
-                          ),
-                    child: const Text('Privacidade e dados'),
-                  ),
-                  if (controller.message != null) ...[
-                    const SizedBox(height: 16),
-                    Semantics(
-                      liveRegion: true,
-                      child: Text(
-                        controller.message!,
-                        textAlign: TextAlign.start,
+                        ),
                       ),
-                    ),
-                    if (controller.failedAction != null)
+                      const Text(
+                        'Neste incremento, o acesso é por Google. E-mail e Apple ainda não estão disponíveis.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          height: 1.35,
+                          color: TrainForgeTheme.muted,
+                        ),
+                      ),
+                      if (controller.message != null) ...[
+                        Semantics(
+                          liveRegion: true,
+                          child: Text(controller.message!),
+                        ),
+                        if (controller.failedAction != null)
+                          TextButton(
+                            onPressed: controller.busy
+                                ? null
+                                : controller.retry,
+                            child: const Text('Tentar novamente'),
+                          ),
+                      ],
+                      const Text(
+                        'Explorar antes de entrar',
+                        style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w700,
+                          height: 1.35,
+                        ),
+                      ),
+                      OutlinedButton(
+                        onPressed: controller.busy
+                            ? null
+                            : () => Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const CatalogPage(),
+                                ),
+                              ),
+                        child: const Text('Consultar biblioteca sem entrar'),
+                      ),
+                      OutlinedButton(
+                        onPressed: controller.busy
+                            ? null
+                            : () => Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const FoodPage(),
+                                ),
+                              ),
+                        child: const Text(
+                          'Consultar alimentos sem registrar consumo',
+                        ),
+                      ),
                       TextButton(
-                        onPressed: controller.busy ? null : controller.retry,
-                        child: const Text('Tentar novamente'),
+                        onPressed: controller.busy
+                            ? null
+                            : () => Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const PrivacyPage(),
+                                ),
+                              ),
+                        child: const Text('Privacidade e dados'),
                       ),
-                  ],
-                  const SizedBox(height: 24),
-                  const Text(
-                    'Versão de avaliação. Outros cenários serão liberados conforme a integração e o conteúdo permitido.',
-                    textAlign: TextAlign.start,
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),

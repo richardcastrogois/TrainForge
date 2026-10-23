@@ -6,7 +6,8 @@ import 'catalog_detail_page.dart';
 
 class CatalogPage extends StatefulWidget {
   final CatalogController? controller;
-  const CatalogPage({super.key, this.controller});
+  final CatalogFilters? initialFilters;
+  const CatalogPage({super.key, this.controller, this.initialFilters});
   @override
   State<CatalogPage> createState() => _CatalogPageState();
 }
@@ -19,7 +20,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     controller = widget.controller ?? CatalogController(GoCatalogRepository());
-    controller.load();
+    controller.load(filters: widget.initialFilters);
   }
 
   @override

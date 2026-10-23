@@ -1,0 +1,21 @@
+{
+  "release": "https://github.com/rsms/inter/releases/tag/v4.1",
+  "archiveSha256": "9883fdd4a49d4fb66bd8177ba6625ef9a64aa45899767dde3d36aa425756b11e",
+  "files": [
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "archivePath": "extras/ttf/Inter-Regular.ttf",
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+    },
+    {
+      "path": "assets/fonts/Inter-Bold.ttf",
+      "archivePath": "extras/ttf/Inter-Bold.ttf",
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "archivePath": "LICENSE.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    }
+  ]
+}

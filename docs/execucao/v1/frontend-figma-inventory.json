@@ -14,15 +14,17 @@
       "width": 390,
       "height": 844,
       "designContextInspected": true,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "25:1778",
       "name": "02 · Planos",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "25:1859",
@@ -37,8 +39,9 @@
       "name": "04 · Atividade",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "25:1992",
@@ -46,23 +49,26 @@
       "width": 390,
       "height": 844,
       "designContextInspected": true,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "25:2068",
       "name": "06 · Evolução",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "25:2152",
       "name": "07 · Perfil",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "designContextInspected": true,
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "23:735",
@@ -70,7 +76,8 @@
       "width": 390,
       "height": 844,
       "designContextInspected": true,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
     },
     {
       "id": "23:765",
@@ -189,7 +196,7 @@
       "name": "23 · Planos · por configurar",
       "width": 390,
       "height": 844,
-      "designContextInspected": false,
+      "designContextInspected": true,
       "flutterVisualAcceptance": "pending"
     },
     {
@@ -3216,5 +3223,7 @@
       "designContextInspected": false,
       "flutterVisualAcceptance": "pending"
     }
-  ]
+  ],
+  "frontendIncrement": "visual01-shell-entry-profile",
+  "evidence": "frontend-shell-verification.json"
 }
