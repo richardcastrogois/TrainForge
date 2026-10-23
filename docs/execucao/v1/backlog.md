@@ -344,7 +344,7 @@ Autenticação real, sessões revogáveis e isolamento de dados por usuário, in
 
 ### V1-011 — Autenticar Google no novo serviço
 
-**doing · V1 · M**
+**done · V1 · M**
 
 Como testador, quero entrar com minha conta real e usar a mesma identidade nas duas plataformas.
 
@@ -371,11 +371,11 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: 23/10: loginGoogle Androiddebug, reabertura/rede, refreshnatural, logout/reentrada e exclusão reais passaram. OAuthAndroidrelease criado pelo autor e confirmado porprint: pacote/certificado conferem; ver oauth-release-verification.json. EndpointHTTPS deavaliação e testeAPKrelease continuam pendentes, semdeploy autorizado. Mantém doing/completionEvidence vazio.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
-**todo · V1 · L**
+**done · V1 · L**
 
 Como usuário, quero continuar conectado e encerrar acesso de forma confiável.
 
@@ -402,11 +402,11 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: 23/10: preparação existente validada com contaGoogle real: reabertura, falha/retomada, access expirado naturalmente, refresh consumido0→1, retry200, logout204/família revogada e reentrada sem duplicar identidade. Exclusão posterior revogou todas as famílias.011 continua doing porHTTPS/testeAPKrelease; não marcar done antes da dependência.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como titular, quero que só eu acesse meus registros e que exclusão seja verificável.
 
@@ -433,7 +433,7 @@ Validação: Testes BOLA em todos os recursos privados; Teste de spoof de forwar
 
 Entregas: Matriz de acesso; Política de privacidade do piloto e operações de dados
 
-Handoff: 23/10: consultas das oito seções e exclusão privadas validadas com contaGoogle real. Titular autorizou explicitamente excluir a contaTrainForge de avaliação; nonce/frase/commit/limpeza/reabertura passaram.0contas/sessões/intenções,1registro mínimo e hashes/6369alimentos/73metadados preservados. OAuthrelease cadastrado/conferido; doing pela011/HTTPS e testeAPKrelease pendentes; aceite privado resolvido. Não iniciar outraV1 antes dos gates.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ## EP05 — Biblioteca humana e API de catálogo
 
