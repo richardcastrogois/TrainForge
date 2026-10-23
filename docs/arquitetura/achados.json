@@ -55,9 +55,9 @@
     "title": "Identidade e assinatura Android de desenvolvimento",
     "evidence": "android/app/build.gradle.kts",
     "line": 9,
-    "detail": "Pacote preservado para piloto; certificado dedicado criado, Gradle semfallbackdebug. OAuthdebug conferido; cadastrorelease/HTTPS/aceiterelease não concluídos.",
+    "detail": "Pacote preservado para piloto; certificado dedicado protegido e Gradle semfallbackdebug. OAuthdebug e cadastroAndroidrelease conferidos comcertificado. HTTPS/build/loginrelease/instalação/atualização ainda não validados.",
     "story": "V1-034",
-    "status": "parcial — certificado release local dedicado, OAuthrelease pendente"
+    "status": "parcial — OAuthrelease cadastrado e conferido; validação da distribuição pendente"
   },
   {
     "id": "A07",

@@ -1,6 +1,6 @@
 # OAuth Android e sessão — V1-011/012
 
-Estado em22/10/2026: auth Go e Flutter implementados localmente, em validação. Fixtures criptográficas/PostgreSQL não comprovam login Google real. iOS continua no produto, sem teste nativo.
+Estado em23/10/2026: loginGoogle Androiddebug e ciclo privado reais validados; OAuthAndroidrelease cadastrado pelo autor e confirmado por captura. APIHTTPS deavaliação e login/buildrelease ainda não validados. iOS continua no produto, sem teste nativo; fixtures não substituem testes reais.
 
 ## Valores públicos conferidos com o autor
 
@@ -11,7 +11,7 @@ Client ID Web de servidor: `975945820703-phranuo6urju23c43fb6n2102do767kl.apps.g
 | Variante | Pacote | SHA-1 | Estado OAuth |
 |---|---|---|---|
 | Debug | com.example.trainforge | 1E:93:4C:58:20:7C:D2:3B:A8:D8:EE:49:91:DA:80:56:78:DC:9E:1C | Pacote e fingerprint coincidem com captura do cliente existente |
-| Release avaliação | com.example.trainforge | 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D | Cadastro separado solicitado ao autor; confirmação pendente |
+| Release avaliação | com.example.trainforge | 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D | Cadastro separado criado pelo autor e confirmado porprint em23/10; teste doAPKrelease pendente |
 
 SHA-256 debug: `01:96:DD:07:C2:35:76:D2:BA:2C:3E:8B:DC:EA:8D:03:4B:81:F7:8C:45:84:AC:E2:F4:16:A5:03:B4:EB:13:0F`.
 SHA-256 release: `BF:A9:1D:87:92:CE:53:12:4A:77:7B:15:BF:46:50:C4:0A:B7:25:92:36:63:62:B6:A5:58:1F:21:1C:20:88:78`.
@@ -44,7 +44,7 @@ ACL de `android/key.properties` foi restringida à conta Windows atual e SYSTEM 
 
 ## Teste real e retomada
 
-Em22/10 o autor estava fora do notebook. Em23/10 fez loginGoogleAndroiddebug consentido; GETme200, reabertura/rede, refreshnatural, logout e reentrada reais passaram. ExclusãoTrainForge explicitamente autorizada e validada. Cadastrorelease/HTTPS pendentes. [Evidência real](auth-real-android-verification.json). [Um comando de retomada](avaliacao-android.md) prepara banco/API/emulador e reutiliza o APK validado. Biblioteca já acessível semGoogle.
+Em22/10 o autor estava fora do notebook. Em23/10 fez loginGoogleAndroiddebug consentido; GETme200, reabertura/rede, refreshnatural, logout e reentrada reais passaram. ExclusãoTrainForge explicitamente autorizada e validada. Cadastrorelease confirmado em23/10; HTTPS/testeAPKrelease pendentes. [Evidência real](auth-real-android-verification.json). [Um comando de retomada](avaliacao-android.md) prepara banco/API/emulador e reutiliza o APK validado. Biblioteca já acessível semGoogle.
 
 Emulador existente TrainForge_Benchmark: Android35, GooglePlay,2GBRAM. Sem novo AVD, wipe, reset ou instalação Flutter. Conferir serial; `adb -s emulator-5554 reverse tcp:8082 tcp:8082`. API somente loopback.
 
@@ -60,3 +60,11 @@ Depois orientar celular: opções de desenvolvedor, depuração USB, autorizar c
 `auth-local-verification.json`: fixtures RSA/JWKS, rejeições HTTP e concorrência PostgreSQL em base temporária removida, contagem de usuários V1 inalterada. Testes Flutter: `test/auth_security_test.dart`, `test/session_refresh_test.dart` e `test/auth_controller_test.dart`. Backup/transferência Android excluem arquivos do app e tokens; allowBackup=false e regras explícitas para cloud/device/cross-platform-transfer. iOS não validado. Nenhuma fixture comprova login Google real. Handoff traz estado do APK/emulador e pendências.
 
 Fontes: [Google ID token](https://developers.google.com/identity/gsi/web/guides/verify-google-id-token), [SDK Go](https://docs.cloud.google.com/go/docs/reference/cloud.google.com/go/auth/latest/credentials/idtoken), [Flutter Android](https://pub.dev/packages/google_sign_in_android#integration).
+
+## Cadastro release confirmado em23/10
+
+Cliente Android TrainForge avaliação release no projeto existente bootcamp-treinos-ia. Pacote com.example.trainforge eSHA1 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D conferem com os metadados públicos do certificado dedicado local. [Recibo](oauth-release-verification.json). O cadastro não substitui oclientWeb daAPI/Flutter; não há necessidade de alterar IDs públicos usados como serverClientId.
+
+A captura mostra cadastro criado e uma data de uso; isso não comprova que o APKrelease fez login. API atual permanece loopbackHTTP exclusiva de debug. Nenhum endpointHTTPS/deploy foi inventado ou autorizado. Não executar alteração de certificados/trust store nem desinstalar o debug para contornar a assinatura diferente.
+
+A conta que administra o projeto pode ser diferente da contaGoogle do testador. O app usa somente GoogleSignIn.authenticate, sem autorização de APIsGoogle adicionais. Para identidade básica (openid/email/profile), oGoogle prevê exceção à lista deTestusers: um quarto e-mail pode autenticar sem constar nos três cadastrados. [Regra oficial](https://support.google.com/cloud/answer/15549945?hl=en). Adicionar testadores àlista é organização do piloto; não foi necessário criar clientOAuth por e-mail.

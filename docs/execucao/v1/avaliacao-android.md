@@ -24,13 +24,11 @@ Se o login falhar, a tela apresenta erro seguro e permite tentar novamente; offl
 
 Depois de validar a sessão, **Meus dados e privacidade** permite consultar/copiar páginas próprias e solicitar exclusão. O agente executou a exclusão da contaTrainForge deavaliação após autorização explícita do titular; confirmação, banco e reabertura foram conferidos. Para escolher testar: leia os limites, confirme uma entrada recente e digite a frase exata. ContaGoogle permanece independente. Se a limpeza local falhar após confirmação do servidor, use Concluir limpeza local; não é necessário repetir DELETE. Essa jornada passou com a conta real deavaliação. Entrar novamente após a exclusão cria uma nova contaTrainForge, sem reativar a antiga. [V1-013](privacidade-013.md).
 
-## OAuth release: próxima ação manual
+## OAuth release: cadastro confirmado
 
-Debug já tem pacote/SHA conferidos. Para a variante release, abrir [clientes do projeto correto](https://console.cloud.google.com/auth/clients?project=bootcamp-treinos-ia), criar cliente OAuth do tipo **Android**, nome **TrainForge avaliação release**, pacote `com.example.trainforge` e SHA-1:
+O autor criou o cliente Android **TrainForge avaliação release** no projeto bootcamp-treinos-ia em23/10. Pacote com.example.trainforge e SHA-1 24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D correspondem ao certificado dedicado local. [Recibo](oauth-release-verification.json). O clientWeb continua na configuração doFlutter e daAPI.
 
-`24:EF:27:3C:82:50:DC:FE:15:8A:E6:45:42:BA:8D:D4:0F:02:17:6D`
-
-Preservar os clientes debug/Web existentes. Não é necessário enviar client secret. Depois confirmar cadastro; APK release também depende de API HTTPS. O debug já pode ser testado sem concluir esse cadastro. Os avisos de inatividade dos clientes existentes precisam ser conferidos após uso real. [Guia técnico OAuth](oauth-android.md).
+Para este pacote/certificado, o cadastro está concluído. O próximo teste exige APIHTTPS deavaliação e APKrelease próprios; o ambiente atual éHTTPloopback/debug. A escolha da hospedagem está pendente de informação doautor, e nenhum deploy/provisionamento foi autorizado. Preservar os três clientes existentes; não publicar o projeto para contornar gates. [Guia técnicoOAuth](oauth-android.md).
 
 ## Parar e consultar
 

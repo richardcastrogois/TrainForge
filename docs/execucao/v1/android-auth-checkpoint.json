@@ -32,7 +32,7 @@
   "accountsDeleted": 0,
   "consumptionEntriesCreated": 0,
   "androidBackupExcluded": true,
-  "releaseOAuthRegistered": false,
+  "releaseOAuthRegistered": true,
   "iosValidated": false,
   "googlePlayServicesCrashObservedAtPriorCheckpoint": true,
   "googlePlayServicesLoginRecoveryValidated": false,
@@ -42,5 +42,6 @@
   "buildInspectionAccountsCreated": 0,
   "consentedLoginAccountsCreated": 1,
   "consentedAccountsDeletedWithExplicitAuthorization": 1,
-  "privateExportWithRealAccountValidated": true
+  "privateExportWithRealAccountValidated": true,
+  "releaseOAuthRegistrationEvidence": "oauth-release-verification.json"
 }
