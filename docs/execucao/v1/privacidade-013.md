@@ -1,6 +1,6 @@
 # V1-013 — autorização, limites e ciclo dos dados
 
-Implementação e testes independentes concluídos em23/10/2026: Go0.4.0,18operaçõesSwagger e APKdebug0.1.3+4. **A história permanece doing:** depende da011 e009. GoogleAndroiddebug real, consultas próprias e exclusão autorizada passaram em23/10; OAuthrelease/HTTPS ainda pendentes. Não iniciar outraV1 antes desse aceite, conforme orientação de23/10. Nenhuma conta/atividade/refeição de fixture entrou na base entregue.
+Implementação e testes independentes concluídos em23/10/2026: Go0.4.0,18operaçõesSwagger e APKdebug0.1.3+4. **A história permanece doing:** depende da011 e009. GoogleAndroiddebug real, consultas próprias e exclusão autorizada passaram em23/10; OAuthrelease cadastrado/conferido; HTTPS/testeAPKrelease ainda pendentes. Não iniciar outraV1 antes desse aceite, conforme orientação de23/10. Nenhuma conta/atividade/refeição de fixture entrou na base entregue.
 
 ## Contrato real
 

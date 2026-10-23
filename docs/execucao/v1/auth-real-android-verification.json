@@ -86,9 +86,10 @@
     "googleAccountChangedByAgent": false,
     "historicalBackupsRemoved": false
   },
-  "releaseOAuthRegistered": false,
+  "releaseOAuthRegistered": true,
   "releaseHTTPSValidated": false,
   "iosValidated": false,
   "privateIdentityOrTokensIncluded": false,
-  "environmentLeftRunningForUser": true
+  "environmentLeftRunningForUser": true,
+  "releaseOAuthRegistrationEvidence": "oauth-release-verification.json"
 }

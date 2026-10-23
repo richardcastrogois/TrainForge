@@ -371,7 +371,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: 23/10: loginGoogle Androiddebug consentido pelo autor validado noAPK0.1.3+4: identidade única issuer+sub, GETme200, reabertura/rede, refreshnatural, logout e reentrada na mesma conta. Exclusão TrainForge real autorizada/concluída, Google preservado. OAuthrelease/HTTPS/iOS não validados; mantém doing/completionEvidence vazio. Ver auth-real-android-verification.json.
+Handoff: 23/10: loginGoogle Androiddebug, reabertura/rede, refreshnatural, logout/reentrada e exclusão reais passaram. OAuthAndroidrelease criado pelo autor e confirmado porprint: pacote/certificado conferem; ver oauth-release-verification.json. EndpointHTTPS deavaliação e testeAPKrelease continuam pendentes, semdeploy autorizado. Mantém doing/completionEvidence vazio.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
@@ -402,7 +402,7 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: 23/10: preparação existente validada com contaGoogle real: reabertura, falha/retomada, access expirado naturalmente, refresh consumido0→1, retry200, logout204/família revogada e reentrada sem duplicar identidade. Exclusão posterior revogou todas as famílias.011 continua doing porOAuthrelease/HTTPS; não marcar done antes da dependência.
+Handoff: 23/10: preparação existente validada com contaGoogle real: reabertura, falha/retomada, access expirado naturalmente, refresh consumido0→1, retry200, logout204/família revogada e reentrada sem duplicar identidade. Exclusão posterior revogou todas as famílias.011 continua doing porHTTPS/testeAPKrelease; não marcar done antes da dependência.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
@@ -433,7 +433,7 @@ Validação: Testes BOLA em todos os recursos privados; Teste de spoof de forwar
 
 Entregas: Matriz de acesso; Política de privacidade do piloto e operações de dados
 
-Handoff: 23/10: consultas das oito seções e exclusão privadas validadas com contaGoogle real. Titular autorizou explicitamente excluir a contaTrainForge de avaliação; nonce/frase/commit/limpeza/reabertura passaram.0contas/sessões/intenções,1registro mínimo e hashes/6369alimentos/73metadados preservados. doing pela011/OAuthrelease/HTTPS ainda pendente; aceite privado resolvido. Não iniciar outraV1 antes dos gates.
+Handoff: 23/10: consultas das oito seções e exclusão privadas validadas com contaGoogle real. Titular autorizou explicitamente excluir a contaTrainForge de avaliação; nonce/frase/commit/limpeza/reabertura passaram.0contas/sessões/intenções,1registro mínimo e hashes/6369alimentos/73metadados preservados. OAuthrelease cadastrado/conferido; doing pela011/HTTPS e testeAPKrelease pendentes; aceite privado resolvido. Não iniciar outraV1 antes dos gates.
 
 ## EP05 — Biblioteca humana e API de catálogo
 
@@ -1118,7 +1118,7 @@ Validação: Verificar APK com ferramenta de assinatura do SDK; Instalar e atual
 
 Entregas: Configuração de release; Procedimento de guarda/recuperação de chave
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 23/10: certificado de avaliação release dedicado existente e protegido; cadastroOAuthAndroidrelease confirmado pelo autor, pacote/SHA1 conferidos. Apenas preparação parcial: applicationIdestável/backup de chave/HTTPS/build/instalação/atualização release ainda exigem critérios próprios e dependências; não marcar done.
 
 ### V1-035 — Validar a jornada completa da V1
 
