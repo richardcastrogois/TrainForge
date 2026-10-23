@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,9 +8,9 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 55 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 59 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
-| Go neste clone | 27 arquivos Go de aplicação; 15 registros net/http detectados |
+| Go neste clone | 37 arquivos Go de aplicação; 19 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
 | Conteúdo | Pesquisa concluída nos recortes; publicação/prática/direitos continuam por item |
 
@@ -18,10 +18,10 @@
 
 ```mermaid
 flowchart LR
-    node0["Telas e widgets (20 arquivos)"]
-    node1["Repositories Flutter (9 arquivos)"]
+    node0["Telas e widgets (22 arquivos)"]
+    node1["Repositories Flutter (10 arquivos)"]
     node2["HTTP Dio (8 arquivos)"]
-    node3["Modelos Dart (12 arquivos)"]
+    node3["Modelos Dart (13 arquivos)"]
     node4["Fastify: referência externa versionada"]
     node2 -->|"importação estática"| node3
     node1 -->|"importação estática"| node2
@@ -56,6 +56,9 @@ flowchart LR
     node16["Staging alimentar candidato"]
     node17["Snapshots alimentares preparados"]
     node18["Lote alimentar revisado"]
+    node19["Privacidade e titularidade Go"]
+    node20["Limites por instância"]
+    node21["Manutenção e restauração locais"]
     node0 -->|"Ações e dados confirmados"| node1
     node1 -->|"Comando tipado"| node2
     node2 -->|"Método de domínio"| node3
@@ -78,6 +81,10 @@ flowchart LR
     node15 -->|"Candidato sem aprovação"| node16
     node16 -->|"Revisão explícita porfonte/uso"| node18
     node18 -->|"CLIimportadorGo real"| node8
+    node4 -->|"Política/exportação/intenção/exclusão"| node19
+    node19 -->|"Titularidade e transação"| node9
+    node20 -->|"Admissão/IP/TLS antes da ação"| node5
+    node21 -->|"Manutenção e gate de restore"| node9
 ```
 
 A proposta Go não vira código atual por estar no desenho. Detalhes, camadas e limites de capacidade estão nos documentos revisados.

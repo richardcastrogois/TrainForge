@@ -12,6 +12,18 @@ class AuthController extends ChangeNotifier {
   String? message;
   AuthAction? failedAction;
   bool _disposed = false;
+  String? _erasedAccountId;
+
+  void accountErased(String expectedId) {
+    if (_disposed) return;
+    _erasedAccountId = expectedId;
+    if (profile?.id == expectedId) {
+      profile = null;
+      message = null;
+      failedAction = null;
+    }
+    notifyListeners();
+  }
 
   Future<void> restore() => _run(AuthAction.restore);
   Future<void> login() => _run(AuthAction.login);
@@ -27,9 +39,11 @@ class AuthController extends ChangeNotifier {
     try {
       switch (action) {
         case AuthAction.restore:
-          profile = await repository.restoreSession();
+          final restored = await repository.restoreSession();
+          profile = restored?.id == _erasedAccountId ? null : restored;
         case AuthAction.login:
-          profile = await repository.signIn();
+          final signedIn = await repository.signIn();
+          profile = signedIn.id == _erasedAccountId ? null : signedIn;
         case AuthAction.logout:
           await repository.logout();
           profile = null;

@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização23/10: privacidade
+
+59arquivosDart,783nós/1001arestas. Atualização incremental porAST dos7arquivos novos/alterados deprivacidade/auth e HTML exportado; sem clusterização, leitura semântica de dossiês ou custoLLM. Backup anterior preservado em.local/graphify-backup-20261023-privacy. A conferência inicial desta retomada encontrou0alterações/55inalterados antes da implementação. Contagens abaixo são históricas.
+
 ## Atualização22/10: consulta alimentar
 
 55arquivosDart,705nós/901arestas. Novos modelos/repository/controller/telas de referência alimentar e navegação foram atualizados apenas por AST;7arquivos alterados na primeira passagem, depois somente1/3arquivos dos ajustes concretos de busca/exibição. HTML exportado. Sem clusterização, extração documental ou custoLLM. Backups inicial/final desta fatia retidos em.local/graphify-backup-20261022-food-reference e.local/graphify-backup-20261022-food-reference-final. Contagens de rodadas anteriores abaixo são históricas.

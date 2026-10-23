@@ -431,13 +431,88 @@ definitions:
       versionId:
         type: string
     type: object
+  privacy.DeleteRequest:
+    properties:
+      challenge:
+        type: string
+      confirmation:
+        type: string
+    type: object
+  privacy.Erased:
+    properties:
+      accountId:
+        type: string
+      backupNotice:
+        type: string
+      deleted:
+        type: boolean
+      erasedAt:
+        type: string
+    type: object
+  privacy.ExportPage:
+    properties:
+      accountId:
+        type: string
+      generatedAt:
+        type: string
+      items:
+        items:
+          type: object
+        type: array
+      nextCursor:
+        type: string
+        x-nullable: true
+      notice:
+        type: string
+      section:
+        type: string
+    type: object
+  privacy.Intent:
+    properties:
+      challenge:
+        type: string
+      expiresAt:
+        type: string
+    type: object
+  privacy.IntentRequest:
+    properties:
+      confirmation:
+        type: string
+    type: object
+  privacy.Policy:
+    properties:
+      accountDeletion:
+        type: string
+      backupRetention:
+        type: string
+      erasureLedger:
+        type: string
+      exportSections:
+        items:
+          type: string
+        type: array
+      freshLoginMinutes:
+        type: integer
+      futureStorage:
+        type: string
+      intentMinutes:
+        type: integer
+      otherServices:
+        type: string
+      restoreRequirement:
+        type: string
+      sessionRetention:
+        type: string
+      version:
+        type: string
+    type: object
 info:
   contact: {}
   description: Local Google sessions, reviewed movement metadata and food composition
     references. Real Android OAuth validation remains an acceptance gate; no executable
     training content is implied.
   title: TrainForge API
-  version: 0.3.0
+  version: 0.4.0
 paths:
   /api/v1/auth/google:
     post:
@@ -947,6 +1022,60 @@ paths:
       tags:
       - operation
   /api/v1/me:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: Confirmation and challenge of this account/session
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/privacy.DeleteRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/privacy.Erased'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "426":
+          description: Upgrade Required
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Confirm deletion of the current TrainForge account
+      tags:
+      - privacy
     get:
       produces:
       - application/json
@@ -976,6 +1105,136 @@ paths:
       summary: Current authenticated identity
       tags:
       - auth
+  /api/v1/me/deletion-intent:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Explicit account deletion confirmation
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/privacy.IntentRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/privacy.Intent'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "426":
+          description: Upgrade Required
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Create a five-minute account deletion challenge
+      tags:
+      - privacy
+  /api/v1/me/export:
+    get:
+      parameters:
+      - description: Owned data section
+        enum:
+        - account
+        - sessions
+        - enrollments
+        - occurrences
+        - activitySessions
+        - activityEvents
+        - foods
+        - foodEntries
+        in: query
+        name: section
+        type: string
+      - default: 20
+        description: Maximum page size
+        in: query
+        maximum: 50
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Opaque cursor bound to user, section and limit
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/privacy.ExportPage'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "426":
+          description: Upgrade Required
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Export a page of the current account's data
+      tags:
+      - privacy
+  /api/v1/privacy:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/privacy.Policy'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Privacy and data lifecycle policy
+      tags:
+      - privacy
 schemes:
 - http
 - https

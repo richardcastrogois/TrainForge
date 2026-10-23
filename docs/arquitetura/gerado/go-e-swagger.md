@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
-Arquivos Go de aplicação encontrados: **27**. Registros net/http literais: **15**.
+Arquivos Go de aplicação encontrados: **37**. Registros net/http literais: **19**.
 
 ## Pacotes Go e imports atuais
 
@@ -14,39 +14,47 @@ flowchart LR
     node1["cmd/import-content"]
     node2["cmd/import-food"]
     node3["cmd/migrate"]
-    node4["internal/activity"]
-    node5["internal/auth"]
-    node6["internal/catalog"]
-    node7["internal/nutrition"]
-    node8["internal/platform/config"]
-    node9["internal/platform/httpapi"]
-    node10["internal/platform/postgres"]
-    node11["internal/swaggerdocs"]
-    node12["migrations"]
-    node0 -->|"import"| node5
-    node0 -->|"import"| node6
+    node4["cmd/privacy-maintenance"]
+    node5["cmd/privacy-restore"]
+    node6["internal/activity"]
+    node7["internal/auth"]
+    node8["internal/catalog"]
+    node9["internal/nutrition"]
+    node10["internal/platform/config"]
+    node11["internal/platform/httpapi"]
+    node12["internal/platform/postgres"]
+    node13["internal/privacy"]
+    node14["internal/swaggerdocs"]
+    node15["migrations"]
     node0 -->|"import"| node7
     node0 -->|"import"| node8
     node0 -->|"import"| node9
     node0 -->|"import"| node10
     node0 -->|"import"| node11
-    node1 -->|"import"| node6
-    node1 -->|"import"| node10
-    node2 -->|"import"| node7
-    node2 -->|"import"| node10
-    node3 -->|"import"| node12
-    node5 -->|"import"| node9
-    node6 -->|"import"| node9
-    node7 -->|"import"| node9
+    node0 -->|"import"| node12
+    node0 -->|"import"| node13
+    node0 -->|"import"| node14
+    node1 -->|"import"| node8
+    node1 -->|"import"| node12
+    node2 -->|"import"| node9
+    node2 -->|"import"| node12
+    node3 -->|"import"| node15
+    node4 -->|"import"| node13
+    node5 -->|"import"| node13
+    node7 -->|"import"| node11
+    node8 -->|"import"| node11
+    node9 -->|"import"| node11
+    node13 -->|"import"| node7
+    node13 -->|"import"| node11
 ```
 ## Anotações encontradas
 
 | @Router | @Param | @Success / @Failure | Registro compatível detectado | Fonte |
 | --- | --- | --- | --- | --- |
-| `POST /api/v1/auth/google` | body body GoogleRequest true "Google ID token" | Success 200 {object} Session; Failure 400,401,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:131](../../../services/api/internal/auth/handler.go) |
-| `POST /api/v1/auth/refresh` | body body RefreshRequest true "Single-use refresh token" | Success 200 {object} Session; Failure 400,401,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:157](../../../services/api/internal/auth/handler.go) |
-| `POST /api/v1/auth/logout` | body body RefreshRequest true "Refresh token of the device" | Success 204; Failure 400,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:182](../../../services/api/internal/auth/handler.go) |
-| `GET /api/v1/me` |  | Success 200 {object} User; Failure 401,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:206](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/google` | body body GoogleRequest true "Google ID token" | Success 200 {object} Session; Failure 400,401,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:103](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/refresh` | body body RefreshRequest true "Single-use refresh token" | Success 200 {object} Session; Failure 400,401,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:129](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/logout` | body body RefreshRequest true "Refresh token of the device" | Success 204; Failure 400,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:154](../../../services/api/internal/auth/handler.go) |
+| `GET /api/v1/me` |  | Success 200 {object} User; Failure 401,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/auth/handler.go:178](../../../services/api/internal/auth/handler.go) |
 | `GET /api/v1/catalog/programs` | mode query string false "consultation (default) or practice; unknown requirements never imply eligibility" Enums(consultation,practice); q query string false "Literal title substring, maximum 100 UTF-8 bytes"; environment query string false "Exact source environment; unknown values do not match"; population query string false "Exact source population"; modality query string false "Exact source modality"; equipment query string false "Exact source equipment name"; category query string false "Exact source category"; limit query int false "Page size" minimum(1) maximum(50) default(20); cursor query string false "Opaque cursor bound to the filters and page size" | Success 200 {object} CatalogPage; Success 304; Failure 400,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:101](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/programs/{id}` | id path string true "Editorial asset ID"; versionId query string false "Exact SHA-256 version; latest by default"; mode query string false "consultation or practice" Enums(consultation,practice) | Success 200 {object} CatalogItem; Success 304; Failure 400,404,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:116](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/movements` | mode query string false "consultation or practice" Enums(consultation,practice); q query string false "Literal title substring"; environment query string false "Exact source environment"; population query string false "Exact source population"; modality query string false "Exact source modality"; equipment query string false "Exact source equipment name"; category query string false "Exact source category"; limit query int false "Page size" minimum(1) maximum(50) default(20); cursor query string false "Opaque cursor bound to filters" | Success 200 {object} CatalogPage; Success 304; Failure 400,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:137](../../../services/api/internal/catalog/handler.go) |
@@ -57,15 +65,19 @@ flowchart LR
 | `GET /api/v1/foods/filters` |  | Success 200 {object} FoodFacets; Success 304; Failure 400,503 {object} httpapi.Problem | sim | [services/api/internal/nutrition/handler.go:125](../../../services/api/internal/nutrition/handler.go) |
 | `GET /api/v1/health/live` |  | Success 200 {object} Status | sim | [services/api/internal/platform/httpapi/server.go:42](../../../services/api/internal/platform/httpapi/server.go) |
 | `GET /api/v1/health/ready` |  | Success 200 {object} Status; Failure 503 {object} Problem | sim | [services/api/internal/platform/httpapi/server.go:53](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/privacy` |  | Success 200 {object} Policy; Failure 400 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:160](../../../services/api/internal/privacy/handler.go) |
+| `GET /api/v1/me/export` | section query string false "Owned data section" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries); limit query int false "Maximum page size" minimum(1) maximum(50) default(20); cursor query string false "Opaque cursor bound to user, section and limit" | Success 200 {object} ExportPage; Failure 400,401,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:179](../../../services/api/internal/privacy/handler.go) |
+| `POST /api/v1/me/deletion-intent` | body body IntentRequest true "Explicit account deletion confirmation" | Success 200 {object} Intent; Failure 400,401,409,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:212](../../../services/api/internal/privacy/handler.go) |
+| `DELETE /api/v1/me` | body body DeleteRequest true "Confirmation and challenge of this account/session" | Success 200 {object} Erased; Failure 400,401,409,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:238](../../../services/api/internal/privacy/handler.go) |
 
 ## Registros HTTP encontrados
 
 | Rota | Fonte |
 | --- | --- |
-| `POST /api/v1/auth/google` | [services/api/internal/auth/handler.go:34](../../../services/api/internal/auth/handler.go) |
-| `POST /api/v1/auth/refresh` | [services/api/internal/auth/handler.go:35](../../../services/api/internal/auth/handler.go) |
-| `POST /api/v1/auth/logout` | [services/api/internal/auth/handler.go:36](../../../services/api/internal/auth/handler.go) |
-| `GET /api/v1/me` | [services/api/internal/auth/handler.go:37](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/google` | [services/api/internal/auth/handler.go:27](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/refresh` | [services/api/internal/auth/handler.go:28](../../../services/api/internal/auth/handler.go) |
+| `POST /api/v1/auth/logout` | [services/api/internal/auth/handler.go:29](../../../services/api/internal/auth/handler.go) |
+| `GET /api/v1/me` | [services/api/internal/auth/handler.go:30](../../../services/api/internal/auth/handler.go) |
 | `GET /api/v1/catalog/filters` | [services/api/internal/catalog/handler.go:16](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/programs` | [services/api/internal/catalog/handler.go:17](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/programs/{id}` | [services/api/internal/catalog/handler.go:18](../../../services/api/internal/catalog/handler.go) |
@@ -74,9 +86,13 @@ flowchart LR
 | `GET /api/v1/foods/filters` | [services/api/internal/nutrition/handler.go:17](../../../services/api/internal/nutrition/handler.go) |
 | `GET /api/v1/foods/{id}` | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) |
 | `GET /api/v1/foods` | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) |
-| `GET /api/v1/health/live` | [services/api/internal/platform/httpapi/server.go:70](../../../services/api/internal/platform/httpapi/server.go) |
-| `GET /api/v1/health/ready` | [services/api/internal/platform/httpapi/server.go:71](../../../services/api/internal/platform/httpapi/server.go) |
-| `GET /docs/` | [services/api/internal/platform/httpapi/server.go:73](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/live` | [services/api/internal/platform/httpapi/server.go:76](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/ready` | [services/api/internal/platform/httpapi/server.go:77](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /docs/` | [services/api/internal/platform/httpapi/server.go:79](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/privacy` | [services/api/internal/privacy/handler.go:28](../../../services/api/internal/privacy/handler.go) |
+| `GET /api/v1/me/export` | [services/api/internal/privacy/handler.go:29](../../../services/api/internal/privacy/handler.go) |
+| `POST /api/v1/me/deletion-intent` | [services/api/internal/privacy/handler.go:30](../../../services/api/internal/privacy/handler.go) |
+| `DELETE /api/v1/me` | [services/api/internal/privacy/handler.go:31](../../../services/api/internal/privacy/handler.go) |
 
 ## Operações da especificação gerada
 
@@ -96,6 +112,10 @@ flowchart LR
 | `GET /api/v1/health/live` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/httpapi.Status"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `GET /api/v1/health/ready` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/httpapi.Status"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `GET /api/v1/me` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/auth.User"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `DELETE /api/v1/me` | não detectado | [{"description": "Confirmation and challenge of this account/session", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/privacy.DeleteRequest"}}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/privacy.Erased"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `POST /api/v1/me/deletion-intent` | não detectado | [{"description": "Explicit account deletion confirmation", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/privacy.IntentRequest"}}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/privacy.Intent"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `GET /api/v1/me/export` | não detectado | [{"enum": ["account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries"], "type": "string", "description": "Owned data section", "name": "section", "in": "query"}, {"maximum": 50, "minimum": 1, "type": "integer", "default": 20, "description": "Maximum page size", "name": "limit", "in": "query"}, {"type": "string", "description": "Opaque cursor bound to user, section and limit", "name": "cursor", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/privacy.ExportPage"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `GET /api/v1/privacy` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/privacy.Policy"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 
 Anotação, registro de rota e operação na especificação são evidências distintas. A CI do serviço compara os derivados e testa handlers. Novas rotas continuam exigindo teste de resposta/autorização. O extrator documental não executa Go nem substitui o gerador Swaggo.
 

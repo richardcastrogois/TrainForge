@@ -1,12 +1,12 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
-**11/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**12/43 histórias concluídas**, em 12 épicos. Próxima história: **V1-011**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
-| EP01 | Recorte verificável e governança | 3 | 2 |
+| EP01 | Recorte verificável e governança | 3 | 3 |
 | EP02 | Conteúdo, autoria e direitos | 3 | 3 |
 | EP03 | Fundação Go, contratos e banco | 4 | 4 |
 | EP04 | Identidade, privacidade e acesso | 3 | 0 |
@@ -35,7 +35,7 @@ flowchart LR
 | --- | --- | --- | --- |
 | V1-001 | done | Mapear conteúdo e cenários do APK de avaliação | nenhuma |
 | V1-002 | done | Aceitar a decisão Go e definir a fronteira de migração | V1-001 |
-| V1-003 | doing | Manter documentação arquitetural dinâmica no repositório | nenhuma |
+| V1-003 | done | Manter documentação arquitetural dinâmica no repositório | nenhuma |
 ### EP02 — Conteúdo, autoria e direitos
 
 ```mermaid
@@ -101,7 +101,7 @@ flowchart LR
 | --- | --- | --- | --- |
 | V1-011 | doing | Autenticar Google no novo serviço | V1-008, V1-010 |
 | V1-012 | todo | Rotacionar e revogar refresh tokens | V1-011 |
-| V1-013 | todo | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
+| V1-013 | doing | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
 ### EP05 — Biblioteca humana e API de catálogo
 
 ```mermaid

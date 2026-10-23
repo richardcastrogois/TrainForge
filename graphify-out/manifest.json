@@ -48,10 +48,10 @@
     "semantic_hash": "fd8f8870f4582e72c0112bb4dd2c85b0"
   },
   "features/auth/presentation/pages/auth_page.dart": {
-    "mtime": 1792708449.0478556,
-    "seen": 1792708663.8085961,
-    "ast_hash": "07eb3e9feeb4579e55d44971ff8b96a8",
-    "semantic_hash": "07eb3e9feeb4579e55d44971ff8b96a8"
+    "mtime": 1792759658.6497548,
+    "seen": 1792762080.6658974,
+    "ast_hash": "c1a6820d588770218fc4f298c2d9708a",
+    "semantic_hash": "c1a6820d588770218fc4f298c2d9708a"
   },
   "features/bootstrap/data/bootstrap_api.dart": {
     "mtime": 1773713767.17842,
@@ -246,10 +246,10 @@
     "semantic_hash": "0cc846d5cbfb1619aebf2e2b507ca928"
   },
   "shared/widgets/auth_gate.dart": {
-    "mtime": 1792708449.0515819,
-    "seen": 1792708663.8125985,
-    "ast_hash": "08cb50831449c5c091f41a51e3b669c4",
-    "semantic_hash": "08cb50831449c5c091f41a51e3b669c4"
+    "mtime": 1792759940.7181067,
+    "seen": 1792762080.6699038,
+    "ast_hash": "c73de83940e3be72addf130e72eaa1ed",
+    "semantic_hash": "c73de83940e3be72addf130e72eaa1ed"
   },
   "features/auth/data/session_refresh.dart": {
     "mtime": 1792664542.7549963,
@@ -264,10 +264,10 @@
     "semantic_hash": "8398c918db32403c39b58762d05f9852"
   },
   "features/auth/presentation/auth_controller.dart": {
-    "mtime": 1792665693.8995974,
-    "seen": 1792668636.5828886,
-    "ast_hash": "92c1d8a19542e7957268430749087b11",
-    "semantic_hash": "92c1d8a19542e7957268430749087b11"
+    "mtime": 1792759658.642979,
+    "seen": 1792762080.6658974,
+    "ast_hash": "f3a0dbee305e55f16e53b9863d1e6e72",
+    "semantic_hash": "f3a0dbee305e55f16e53b9863d1e6e72"
   },
   "features/catalog/data/catalog_repository.dart": {
     "mtime": 1792666578.8505065,
@@ -328,5 +328,29 @@
     "seen": 1792709405.0151694,
     "ast_hash": "62384e0159f2a41e46863b49349e3c13",
     "semantic_hash": "62384e0159f2a41e46863b49349e3c13"
+  },
+  "features/privacy/data/privacy_repository.dart": {
+    "mtime": 1792761644.9247394,
+    "seen": 1792762080.6679037,
+    "ast_hash": "6049d8d20a9bfdc564cf8b6d06828018",
+    "semantic_hash": "6049d8d20a9bfdc564cf8b6d06828018"
+  },
+  "features/privacy/domain/privacy.dart": {
+    "mtime": 1792761644.9312556,
+    "seen": 1792762080.6679037,
+    "ast_hash": "3d3b45f6c3fa852b43097f92a3efbcf4",
+    "semantic_hash": "3d3b45f6c3fa852b43097f92a3efbcf4"
+  },
+  "features/privacy/presentation/privacy_controller.dart": {
+    "mtime": 1792759936.8884013,
+    "seen": 1792762080.6679037,
+    "ast_hash": "f1938536842cd63356a6df3894f7970e",
+    "semantic_hash": "f1938536842cd63356a6df3894f7970e"
+  },
+  "features/privacy/presentation/privacy_page.dart": {
+    "mtime": 1792761230.096831,
+    "seen": 1792762080.6679037,
+    "ast_hash": "6be69475679a6d1ea98c8ef917492d89",
+    "semantic_hash": "6be69475679a6d1ea98c8ef917492d89"
   }
 }

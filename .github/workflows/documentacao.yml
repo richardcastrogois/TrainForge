@@ -54,8 +54,8 @@ jobs:
           python-version: '3.12'
       - name: Gerar documentos do código e referências versionadas
         run: python tools/gerar_documentacao.py --write --check
-      - name: Testar portabilidade, deriva e limites da análise
-        run: python -m unittest discover -s tools -p test_documentacao.py
+      - name: Testar ferramentas, portabilidade, deriva e barreiras operacionais
+        run: python -m unittest discover -s tools -p "test_*.py"
       - name: Validar sintaxe dos diagramas em ambiente temporário
         run: |
           npm install --prefix "$RUNNER_TEMP/mermaid-validation" --ignore-scripts --no-audit --no-fund mermaid@11.12.0 jsdom@26.1.0

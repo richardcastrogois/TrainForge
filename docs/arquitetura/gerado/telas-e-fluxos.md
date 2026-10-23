@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `57861a88cb13ac80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `551bf81304e2993a`.
 
 ## Atual: referências entre widgets
 
@@ -17,48 +17,51 @@ flowchart LR
     node6["AiOnboardingPage"]
     node7["ManualOnboardingPage"]
     node8["OnboardingEntryPage"]
-    node9["ProfilePage"]
-    node10["StatsPage"]
-    node11["WorkoutDayPage"]
-    node12["WorkoutPlanPage"]
-    node13["WorkoutsPage"]
-    node14["AppShell"]
-    node15["AuthGate"]
+    node9["PrivacyPage"]
+    node10["ProfilePage"]
+    node11["StatsPage"]
+    node12["WorkoutDayPage"]
+    node13["WorkoutPlanPage"]
+    node14["WorkoutsPage"]
+    node15["AppShell"]
+    node16["AuthGate"]
     node0 -->|"referencia widget"| node2
     node0 -->|"referencia widget"| node4
-    node0 -->|"referencia widget"| node15
+    node0 -->|"referencia widget"| node9
+    node0 -->|"referencia widget"| node16
     node2 -->|"referencia widget"| node1
     node4 -->|"referencia widget"| node3
     node5 -->|"referencia widget"| node0
-    node5 -->|"referencia widget"| node11
+    node5 -->|"referencia widget"| node12
     node6 -->|"referencia widget"| node0
-    node6 -->|"referencia widget"| node15
+    node6 -->|"referencia widget"| node16
     node7 -->|"referencia widget"| node0
-    node7 -->|"referencia widget"| node15
+    node7 -->|"referencia widget"| node16
     node8 -->|"referencia widget"| node0
     node8 -->|"referencia widget"| node6
     node8 -->|"referencia widget"| node7
-    node9 -->|"referencia widget"| node0
     node10 -->|"referencia widget"| node0
-    node10 -->|"referencia widget"| node8
     node11 -->|"referencia widget"| node0
+    node11 -->|"referencia widget"| node8
     node12 -->|"referencia widget"| node0
-    node12 -->|"referencia widget"| node11
     node13 -->|"referencia widget"| node0
-    node13 -->|"referencia widget"| node8
     node13 -->|"referencia widget"| node12
-    node14 -->|"referencia widget"| node5
-    node14 -->|"referencia widget"| node9
-    node14 -->|"referencia widget"| node10
+    node14 -->|"referencia widget"| node0
+    node14 -->|"referencia widget"| node8
     node14 -->|"referencia widget"| node13
-    node15 -->|"referencia widget"| node0
-    node15 -->|"referencia widget"| node2
-    node15 -->|"referencia widget"| node4
+    node15 -->|"referencia widget"| node5
+    node15 -->|"referencia widget"| node10
+    node15 -->|"referencia widget"| node11
+    node15 -->|"referencia widget"| node14
+    node16 -->|"referencia widget"| node0
+    node16 -->|"referencia widget"| node2
+    node16 -->|"referencia widget"| node4
+    node16 -->|"referencia widget"| node9
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
-| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:7](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:8](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:62](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:7](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:4](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
@@ -67,13 +70,14 @@ flowchart LR
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
 | OnboardingEntryPage | [lib/features/onboarding/presentation/pages/onboarding_entry_page.dart:9](../../../lib/features/onboarding/presentation/pages/onboarding_entry_page.dart) |
+| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:6](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | ProfilePage | [lib/features/profile/presentation/pages/profile_page.dart:9](../../../lib/features/profile/presentation/pages/profile_page.dart) |
 | StatsPage | [lib/features/stats/presentation/pages/stats_page.dart:10](../../../lib/features/stats/presentation/pages/stats_page.dart) |
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:8](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:9](../../../lib/shared/widgets/auth_gate.dart) |
 
 ## Chamadas usadas por cada feature
 
@@ -85,6 +89,7 @@ flowchart LR
 | food_reference | `GET /api/v1/foods`; `GET /api/v1/foods/filters`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` |
 | home | `GET /mobile/home/$date` |
 | onboarding | `POST /mobile/onboarding/manual-plan`; `POST /mobile/onboarding/ai-plan` |
+| privacy | `GET /api/v1/privacy`; `GET /api/v1/me/export`; `POST /api/v1/me/deletion-intent`; `DELETE /api/v1/me` |
 | profile | `GET /mobile/profile`; `PUT /mobile/profile/train-data` |
 | stats | `GET /mobile/stats` |
 | workouts | `GET /mobile/workout-plans`; `GET /mobile/workout-plans/$workoutPlanId`; `GET /mobile/workout-plans/$workoutPlanId/days/$workoutDayId`; `POST /mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions`; `PATCH /mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions/$sessionId` |

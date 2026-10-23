@@ -84,3 +84,27 @@ erDiagram
 ```
 
 [Importação/reimportação e restauração novas verificadas](../execucao/v1/alimentacao-importacao.md); documentação da etapa02 acima permanece histórica, sem inventar que já havia alimentos naquela entrega.
+
+## V1-013: ciclo privado e confirmação
+
+Migration00007 adiciona account_deletion_intents (noncehash, titular/família, expiração) e account_erasures (UUID/data, semFKpara permitir apagar a conta). Inventário de tabelas/colunas privadas é conferido em exportação/purge. Foodentryguard rejeita alimento privado de outro titular. Runtime continua semDELETEeditorial; função de exclusão privada exige sessão/nonce válidos. [Detalhes](../execucao/v1/privacidade-013.md).
+
+```mermaid
+erDiagram
+ users ||--o{ auth_families : possui
+ auth_families ||--o| account_deletion_intents : confirma
+ users o|--o{ food_versions : titular_privado
+ users ||--o{ food_entries : registra
+ account_erasures {
+  uuid user_id PK
+  timestamptz erased_at
+ }
+ account_deletion_intents {
+  bytea token_hash PK
+  uuid user_id FK
+  uuid family_id FK
+  timestamptz expires_at
+ }
+```
+
+Registro de exclusões não contém nome/e-mail/token. Cópia histórica só pode ser promovida depois do gate de exclusões atuais; o CLI não faz promoção. Manutenção é manual e limitada; backups existentes não são apagados.
