@@ -12,5 +12,26 @@ import UIKit
 
   func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
     GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+    let channel = FlutterMethodChannel(
+      name: "trainforge/appearance",
+      binaryMessenger: engineBridge.applicationRegistrar.messenger()
+    )
+    channel.setMethodCallHandler { call, result in
+      let key = "trainforge.appearance.mode"
+      switch call.method {
+      case "read":
+        result(UserDefaults.standard.string(forKey: key) ?? "system")
+      case "write":
+        guard let mode = call.arguments as? String,
+              ["system", "light", "dark"].contains(mode) else {
+          result(FlutterError(code: "invalid_mode", message: "Unsupported appearance", details: nil))
+          return
+        }
+        UserDefaults.standard.set(mode, forKey: key)
+        result(nil)
+      default:
+        result(FlutterMethodNotImplemented)
+      }
+    }
   }
 }
