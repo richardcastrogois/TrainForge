@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import '../domain/auth_profile.dart';
@@ -6,7 +7,11 @@ enum AuthAction { restore, login, logout }
 
 class AuthController extends ChangeNotifier {
   final SessionRepository repository;
-  AuthController(this.repository);
+  final Duration restoreTimeout;
+  AuthController(
+    this.repository, {
+    this.restoreTimeout = const Duration(seconds: 30),
+  });
   AuthProfile? profile;
   bool busy = false;
   String? message;
@@ -39,7 +44,9 @@ class AuthController extends ChangeNotifier {
     try {
       switch (action) {
         case AuthAction.restore:
-          final restored = await repository.restoreSession();
+          final restored = await repository.restoreSession().timeout(
+            restoreTimeout,
+          );
           profile = restored?.id == _erasedAccountId ? null : restored;
         case AuthAction.login:
           final signedIn = await repository.signIn();
@@ -48,6 +55,10 @@ class AuthController extends ChangeNotifier {
           await repository.logout();
           profile = null;
       }
+    } on TimeoutException catch (_) {
+      message =
+          'A confirmação da sessão demorou mais que o esperado. Sua sessão foi preservada; tente novamente ou consulte a biblioteca sem entrar.';
+      failedAction = AuthAction.restore;
     } on SessionException catch (error) {
       if (error.failure == SessionFailure.configuration) {
         message =

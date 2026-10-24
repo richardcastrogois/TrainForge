@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-23",
+  "scope": "frontend-points01to06-android-debug",
+  "artifact": {
+    "versionName": "0.2.0",
+    "versionCode": 11,
+    "variant": "debug",
+    "package": "com.example.trainforge",
+    "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "d745119fc803473af2cfabfea851b35d5fa701093288856d96b41a3f2c5ffbf1",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "e2da35779a7979fea5a076a9ace73a01cbcd9c97bf242fac63523dba87f74535",
+    "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+    "realGoogleLoginValidated": false
+  },
+  "apiVersion": "0.5.1",
+  "swaggerOperations": 25,
+  "device": "emulator-5554",
+  "flutterTestsPassed": 85,
+  "flutterAnalyzeIssues": 0,
+  "nativeResourceTestsPassed": 5,
+  "nativeBrandFilesVerified": 43,
+  "visualFixturePreviewsInspected": 15,
+  "smallScreenWidth": 320,
+  "textScaleTested": 2,
+  "reducedMotionTested": true,
+  "appearanceRootReducedMotionTested": true,
+  "nativeRuntime": {
+    "checks": {
+      "nativeDarkChoiceApplied": true,
+      "followsSystemLightAndDark": true,
+      "originalSystemModeRestored": true,
+      "offlineRestoreOffersRecoveryWithoutGoogleConsent": true,
+      "appOnlyConnectionRestored": true,
+      "sessionRestoredAfterOfflineWithoutRelogin": true,
+      "storedThemeAndSessionSurviveColdStart": true,
+      "warmResumePreservesThemeAndSession": true,
+      "nativeLightChoiceApplied": true,
+      "allFiveAreasReadOnlyNavigation": true,
+      "calendarOpensFoodDiaryForRealDate": true
+    },
+    "activeConsumptionBefore": 1,
+    "coldStartObservedMs": 6035,
+    "activeConsumptionAfter": 1,
+    "sourceAndInstalledHashMatch": true,
+    "sha256": "d745119fc803473af2cfabfea851b35d5fa701093288856d96b41a3f2c5ffbf1",
+    "agentCreatedConsumptionRecords": 0,
+    "agentEnteredQuantity": false,
+    "newGoogleConsentAutomated": false
+  },
+  "points": [
+    {
+      "id": "01",
+      "implementation": "complete-android-checkpoint",
+      "validation": "native-assets-hashes-dimensions-adaptive-monochrome-ios-rgb-and-apk-build"
+    },
+    {
+      "id": "02",
+      "implementation": "complete-android-checkpoint",
+      "visualAcceptance": "approved-author-direction-implemented-and-verified",
+      "validation": "native-build-cold-warm-restore-offline-recovery-timeout-test"
+    },
+    {
+      "id": "03",
+      "implementation": "complete-android-checkpoint",
+      "validation": "today-real-dates-calendar-loading-error-empty-partial-midnight-and-read-only-android"
+    },
+    {
+      "id": "04",
+      "implementation": "complete-active-flow-checkpoint",
+      "validation": "shared-loading-status-skeleton-and-reduced-motion-with-real-retry-and-busy-actions"
+    },
+    {
+      "id": "05",
+      "implementation": "complete-android-checkpoint",
+      "validation": "incoming-only-motion-five-tabs-state-focus-back-private-route-reset-and-reduced-motion"
+    },
+    {
+      "id": "06",
+      "implementation": "complete-android-checkpoint",
+      "visualAcceptance": "approved-author-direction-implemented-and-verified",
+      "validation": "native-preference-light-dark-system-cold-warm-theme-contrast-icons-and-bars"
+    }
+  ],
+  "figmaExactVisualAcceptance": false,
+  "openingAndDarkDirection": "author-approved-current-TF-opening-and-derived-dark",
+  "figmaQuotaWorkaround": false,
+  "iosResourcesStructurallyChecked": true,
+  "iosNativeBuildOrRuntimeValidated": false,
+  "releasePerformanceOrConcurrentLoadValidated": false,
+  "notes": [
+    "coldStartObservedMs is a single Android debug am-start-W observation, not a performance guarantee",
+    "runtime checks use real existing session; no Google consent automated",
+    "fixture images are isolated previews, not Google login or human consumption acceptance",
+    "original Android system night mode restored; app ends following device",
+    "no new API, migration, provider, deployment, workout or nutrition data"
+  ],
+  "priorRealGoogleLoginEvidence": "auth-real-android-verification.json",
+  "humanConsumptionEvidence": "nutrition-real-android-verification.json",
+  "stageStatus": "complete-android-checkpoint",
+  "authorDirectionConfirmedAt": "2026-10-23"
+}

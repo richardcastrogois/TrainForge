@@ -1,13 +1,13 @@
 # Documentação do TrainForge
 
-Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
+Atualizado em **23/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
 
 | Preciso entender… | Abrir |
 |---|---|
 | O produto inteiro, incluindo públicos e ambientes | [Visão R01–R18](planejamento/visao-produto.md) |
 | O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
 | Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
-| Retomar o APK disponível e testar | [Avaliação Android0.1.3+4](execucao/v1/avaliacao-android.md) |
+| Retomar o APK disponível e testar | [Avaliação Android e checkpoint atual](execucao/v1/avaliacao-android.md) |
 | Consultar alimentos reais no app | [Consulta pública e limites](execucao/v1/alimentacao-consulta.md) |
 | Privacidade e ciclo da conta | [V1-013: implementação e aceite pendente](execucao/v1/privacidade-013.md) |
 | Base alimentar real no banco | [V1-019: importação6369registros e limites](execucao/v1/alimentacao-importacao.md) |
@@ -24,9 +24,9 @@ Atualizado em **22/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Estado:** etapas01/02 concluídas;73metadados de consulta,439excluídos,0prática aprovada. FundaçãoGo/DB/Swagger, auth local e leitura de catálogo implementadas. APKdebug0.1.3+4 instalado no emulador; biblioteca real consultável semGoogle. V1-014 concluída; loginGoogle real/OAuthrelease aguardam retorno do autor. Demais módulosV1 não estão integrados.
+**Estado:** etapas01/02 e V1-011/012/013/014/019 concluídas no recorte documentado. V1-020 funcional e consumo humano real confirmados. Prioridade atual: frontend fiel aoFigma, pontos01–06 antes dos07–12. APKdebug0.2.0+11, aparência/inicialização/Hoje/loaders/transições e identidade nativa implementados; direção visual de aberturaTF/dark confirmada peloautor e seis pontos concluídos no checkpointAndroid. [Etapa e limites](execucao/v1/frontend-etapa-01-06.md), [recibo atual](execucao/v1/android-frontend-checkpoint.json), [handoff](execucao/v1/handoff.md).
 
-**V1-019 concluída:**6369registros alimentares noDB, com reimportação/restore verificados; consultaGo/Flutter entregue em preparação parcial020/025; cadastro próprio/consumo pendentes. V1-011/012/013 concluídas no aceite local com completionEvidence; GoogleAndroiddebug e ciclo privado reais validados em23/10; OAuthrelease cadastrado/conferido; HTTPS/testeAPKrelease pendentes. V1-003 concluída com push autorizado e CI remota bem-sucedida em23/10; documentação continua transversal.
+73metadados/6369referências alimentares reais, sem prática aprovada ou novas instruções/mídias inventadas. API/banco/emulador locais; nenhuma hospedagem necessária para avaliar. Distribuiçãorelease/iOS e demais histórias continuam nos próprios gates.
 
 ## Como a pasta foi organizada
 

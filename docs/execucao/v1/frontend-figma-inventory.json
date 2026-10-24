@@ -15,7 +15,7 @@
       "height": 844,
       "designContextInspected": true,
       "flutterVisualAcceptance": "pending",
-      "flutterImplementation": "initial-components-with-explicit-runtime-gaps"
+      "flutterImplementation": "real-day-week-calendar-loading-error-empty-partial-and-theme-states"
     },
     {
       "id": "25:1778",
@@ -3232,5 +3232,12 @@
     "nodeId": "104:1260",
     "reason": "Figma MCP Starter tool call limit",
     "date": "2026-10-23"
+  },
+  "frontendStage01to06": {
+    "implementation": "android-debug-0.2.0+11",
+    "evidence": "frontend-stage01-verification.json",
+    "visualDirection": "author-approved-current-TF-opening-and-derived-dark",
+    "exactFigmaAcceptance": false,
+    "stageStatus": "complete-android-checkpoint"
   }
 }

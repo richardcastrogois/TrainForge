@@ -1,3 +1,4 @@
+import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import '../domain/nutrition.dart';
 import '../data/nutrition_repository.dart';
@@ -44,6 +45,7 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
     if (busy) return;
     final yes = await showDialog<bool>(
       context: context,
+      animationStyle: AppMotion.style(context),
       builder: (context) => AlertDialog(
         title: const Text('Excluir este consumo?'),
         content: const Text(

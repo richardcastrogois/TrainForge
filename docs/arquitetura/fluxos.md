@@ -4,21 +4,27 @@ A [documentação dinâmica](README.md) tem mapas de telas, chamadas HTTP, banco
 
 ## Fluxo atual lido no Flutter
 
-AuthGate restaura a sessãoGo e apresenta entrada ou conta. Ambas abrem PrivacyPage, CatalogPage e FoodPage sem depender de consentimento Google para consulta pública. Biblioteca abre detalhe de metadados; alimentos abre composição original/atribuição. AppShell/Hoje, contexto, adesão, execução e consumo permanecem estruturas legadas ou propostas e não são a jornada integrada desta build.
+Checkpoint23/10: pontosfrontend01–06 concluídos noAndroiddebug0.2.0+11 conforme direção doautor (aberturaTF/dark derivado). Aparência local é lida antes deAuthGate; restauração limitada apresenta entrada/retentativa ouProductShell poridentidade. Hoje/Diário usam resumoGo real; calendário abre histórico por data. Cinco abas preservam estado/foco/voltar; perfil abre aparência/privacidade/sessão. AppShell legado continua fora da composição. Execução/adesão e demais funções semcontrato/conteúdo permanecem indisponíveis.
 
 ```mermaid
 flowchart LR
-  entrada[Entrada ou conta] --> biblioteca[Catálogo de consulta]
-  biblioteca --> movimento[Metadados e atribuição]
-  entrada --> alimentos[Busca alimentar real]
-  alimentos --> composicao[Composição, bases e fonte]
-  entrada --> google[Login Google: aceite pessoal pendente]
-  alimentos -. futuro .-> consumo[Registro de consumo: pendente]
+  launch["Splash TF nativo"] --> appearance["Aparência local: sistema / claro / escuro"]
+  appearance --> gate["AuthGate: restaurar sessão com limite"]
+  gate --> entry["Entrada / retentativa sem apagar sessão por rede"]
+  gate --> shell["ProductShell por identidade"]
+  shell --> today["Hoje: datas, estados e resumo Go real"]
+  shell --> tabs["Planos / Atividade / Diário / Evolução"]
+  today --> day["Diário alimentar pela data escolhida"]
+  shell --> profile["Perfil"]
+  profile --> appearance
+  profile --> privacy["Exportação / exclusão / sessão"]
+  entry --> public["Biblioteca e composição alimentar públicas"]
+  day --> nutrition["Histórico / porção / revisão reais"]
 ```
 
 ## Privacidade implementada em23/10
 
-Política pública sem login. Conta conectada abre exportação própria por seção e exclusão confirmada. Os controles privados foram validados por testes; aceite pessoal comGoogle segue pendente.
+Política pública sem login. Conta conectada abre exportação própria por seção e exclusão confirmada. Os controles privados e o aceite local comGoogle foram validados em23/10; os recibos históricos distinguem login, exportação e exclusão autorizada.
 
 ```mermaid
 flowchart LR

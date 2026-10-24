@@ -1,10 +1,11 @@
+import 'package:trainforge/core/theme/appearance_page.dart';
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'figma_components.dart';
-import 'product_overviews.dart';
 
 class AccountPage extends StatelessWidget {
   final AuthController controller;
@@ -39,7 +40,7 @@ class AccountPage extends StatelessWidget {
           child: Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 480),
+              constraints: BoxConstraints(maxWidth: 480),
               child: Column(
                 children: [
                   FigmaHeader(name: profile.name),
@@ -47,25 +48,25 @@ class AccountPage extends StatelessWidget {
                     child: ListView(
                       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
                       children: [
-                        const FigmaBack(),
+                        FigmaBack(),
                         Text(
                           'O teu espaço.',
                           style: Theme.of(context).textTheme.headlineLarge,
                         ),
-                        const SizedBox(height: 12),
-                        const Text(
+                        SizedBox(height: 12),
+                        Text(
                           'Conta conectada',
                           style: TextStyle(
                             fontSize: 12,
-                            color: TrainForgeTheme.muted,
+                            color: context.tf.muted,
                             height: 1.35,
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         Container(
                           padding: const EdgeInsets.all(18),
                           decoration: BoxDecoration(
-                            color: TrainForgeTheme.accent,
+                            color: context.tf.accent,
                             borderRadius: BorderRadius.circular(24),
                           ),
                           child: Row(
@@ -77,28 +78,36 @@ class AccountPage extends StatelessWidget {
                                   child: SvgPicture.asset(
                                     'assets/figma/profile-user.svg',
                                     excludeFromSemantics: true,
+                                    colorFilter:
+                                        Theme.of(context).brightness ==
+                                            Brightness.dark
+                                        ? ColorFilter.mode(
+                                            context.tf.primary,
+                                            BlendMode.srcIn,
+                                          )
+                                        : null,
                                   ),
                                 ),
                               ),
-                              const SizedBox(width: 16),
+                              SizedBox(width: 16),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       profile.name,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 21,
                                         fontWeight: FontWeight.w700,
                                         height: 1.35,
                                       ),
                                     ),
-                                    const SizedBox(height: 4),
+                                    SizedBox(height: 4),
                                     Text(
                                       profile.email,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 12,
-                                        color: TrainForgeTheme.primary,
+                                        color: context.tf.primary,
                                         height: 1.35,
                                       ),
                                     ),
@@ -108,14 +117,14 @@ class AccountPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Conta e dados pessoais',
                           subtitle: 'Identidade Google, exportação e exclusão',
                           asset: 'user',
                           onTap: () => privacy(context),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Objetivos e rotina',
                           subtitle: 'Equipamento, dias e modalidades',
@@ -126,42 +135,41 @@ class AccountPage extends StatelessWidget {
                             'A configuração de contexto e rotina ainda não está implementada. Nenhuma preferência foi inferida da sua conta Google.',
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Preferências',
-                          subtitle: 'Notificações, idioma e acessibilidade',
+                          subtitle: 'Aparência e acessibilidade do aparelho',
                           asset: 'settings',
-                          onTap: () => showAvailability(
+                          onTap: () => Navigator.push<void>(
                             context,
-                            'Preferências',
-                            'As preferências próprias do app ainda não são persistidas. O tamanho do texto e o leitor de tela seguem as configurações de acessibilidade do aparelho.',
+                            MaterialPageRoute(
+                              builder: (_) => const AppearancePage(),
+                            ),
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Dispositivos e permissões',
                           subtitle: 'Health Connect, localização e câmara',
                           asset: 'activity',
-                          color: tfBlue,
+                          color: context.tf.blue,
                           onTap: () => showAvailability(
                             context,
                             'Dispositivos e permissões',
                             'As integrações com sensores, localização e câmera ainda não foram implementadas. Nenhuma permissão será solicitada por esta ação.',
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Privacidade e ajuda',
                           subtitle: 'Os teus dados sob o teu controlo',
                           asset: 'heart',
-                          color: TrainForgeTheme.soft,
+                          color: context.tf.soft,
                           onTap: () => privacy(context),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         if (controller.busy)
-                          const LinearProgressIndicator(
-                            semanticsLabel: 'Confirmando sessão',
-                          ),
+                          AppProgress(label: 'Confirmando sessão'),
                         if (controller.message != null) ...[
                           Semantics(
                             liveRegion: true,
@@ -171,19 +179,19 @@ class AccountPage extends StatelessWidget {
                             onPressed: controller.busy
                                 ? null
                                 : controller.retry,
-                            child: const Text('Tentar novamente'),
+                            child: Text('Tentar novamente'),
                           ),
                         ],
                         OutlinedButton(
                           onPressed: controller.busy
                               ? null
                               : controller.restore,
-                          child: const Text('Confirmar conexão'),
+                          child: Text('Confirmar conexão'),
                         ),
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         FilledButton(
                           onPressed: controller.busy ? null : controller.logout,
-                          child: const Text('Sair desta sessão'),
+                          child: Text('Sair desta sessão'),
                         ),
                       ],
                     ),

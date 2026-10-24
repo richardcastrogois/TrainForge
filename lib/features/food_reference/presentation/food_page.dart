@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'dart:async';
@@ -79,7 +80,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
         body: RefreshIndicator(
           onRefresh: () => controller.load(),
           child: CustomScrollView(
-            physics: const AlwaysScrollableScrollPhysics(),
+            physics: AlwaysScrollableScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(
                 child: Padding(
@@ -105,26 +106,26 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                           helperMaxLines: 3,
                           suffixIcon: TextButton(
                             onPressed: () => submit(search.text),
-                            child: const Text('Pesquisar'),
+                            child: Text('Pesquisar'),
                           ),
                         ),
                         onSubmitted: submit,
                         onChanged: (value) {
                           debounce?.cancel();
                           debounce = Timer(
-                            const Duration(milliseconds: 400),
+                            Duration(milliseconds: 400),
                             () => submit(value),
                           );
                         },
                       ),
                       if (facets != null) ...[
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         Text(
                           '${facets.total} referências · ${facets.unknownBasis} sem base confirmada.',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 12,
                             height: 1.35,
-                            color: TrainForgeTheme.muted,
+                            color: context.tf.muted,
                           ),
                         ),
                         Wrap(
@@ -140,24 +141,24 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                           ],
                         ),
                       ],
-                      const SizedBox(height: 12),
-                      const Text(
+                      SizedBox(height: 12),
+                      Text(
                         'Preparo e idioma permanecem no nome original. Ausência, traço e limite não são zero. Fonte e licença em cada detalhe.',
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
-                          color: TrainForgeTheme.muted,
+                          color: context.tf.muted,
                         ),
                       ),
                       if (!widget.selectForConsumption)
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.only(top: 8),
                           child: Text(
                             'Consulta sem prescrição de dieta ou registro de consumo.',
                             style: TextStyle(
                               fontSize: 12,
                               height: 1.35,
-                              color: TrainForgeTheme.muted,
+                              color: context.tf.muted,
                             ),
                           ),
                         ),
@@ -166,11 +167,9 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                 ),
               ),
               if (controller.busy)
-                const SliverToBoxAdapter(
+                SliverToBoxAdapter(
                   child: Center(
-                    child: CircularProgressIndicator(
-                      semanticsLabel: 'Consultando alimentos',
-                    ),
+                    child: AppLoading(label: 'Consultando alimentos'),
                   ),
                 )
               else if (controller.error != null)
@@ -215,7 +214,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 12),
                         child: Material(
-                          color: TrainForgeTheme.nutrition,
+                          color: context.tf.nutrition,
                           borderRadius: BorderRadius.circular(22),
                           child: InkWell(
                             onTap: () => openFood(food),
@@ -227,19 +226,19 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                                 children: [
                                   Text(
                                     food.displayName,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w700,
                                       height: 1.35,
                                     ),
                                   ),
-                                  const SizedBox(height: 4),
+                                  SizedBox(height: 4),
                                   Text(
                                     '${food.source.name} · ${food.languageLabel}\n${food.basisLabel}\n${food.source.license} · ${food.sourceVersion}',
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 12,
                                       height: 1.35,
-                                      color: TrainForgeTheme.muted,
+                                      color: context.tf.muted,
                                     ),
                                   ),
                                 ],
@@ -260,14 +259,16 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
   Widget sourceChip(String label, String id) => ChoiceChip(
     label: Text(label),
     selected: controller.sourceId == id,
-    backgroundColor: Colors.white,
-    selectedColor: TrainForgeTheme.primary,
+    backgroundColor: context.tf.surface,
+    selectedColor: context.tf.primary,
     labelStyle: TextStyle(
       fontSize: 11,
       fontWeight: FontWeight.w700,
-      color: controller.sourceId == id ? Colors.white : TrainForgeTheme.primary,
+      color: controller.sourceId == id
+          ? context.tf.onPrimary
+          : context.tf.primary,
     ),
-    shape: const StadiumBorder(),
+    shape: StadiumBorder(),
     side: BorderSide.none,
     showCheckmark: false,
     onSelected: controller.busy ? null : (_) => controller.load(sourceId: id),
@@ -282,11 +283,11 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
             liveRegion: true,
             child: Text(text, textAlign: TextAlign.center),
           ),
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
           if (retry)
             FilledButton(
               onPressed: () => controller.load(),
-              child: const Text('Tentar novamente'),
+              child: Text('Tentar novamente'),
             )
           else
             TextButton(
@@ -294,7 +295,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                 search.clear();
                 controller.load(q: '', sourceId: '');
               },
-              child: const Text('Limpar busca e fonte'),
+              child: Text('Limpar busca e fonte'),
             ),
         ],
       ),

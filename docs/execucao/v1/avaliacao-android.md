@@ -1,6 +1,8 @@
 # Retomar a avaliação Android
 
-**Checkpoint atual23/10:** APKdebug0.1.7+10, visual01 shell/entrada/perfil/cinco áreas e visual02 busca/porção;70testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [escopo e lacunas visuais](frontend-fidelidade-figma.md). Mantém consumo real e sessão, sem novo login automatizado. Builds e roteiros abaixo datados são históricos.
+**Checkpoint atual23/10:** APKdebug0.2.0+11, frontend pontos01–06 implementados tecnicamente: identidade/splash, inicialização, Hoje real, loaders, transições e aparência claro/escuro/sistema persistida.85testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [etapa e limites](frontend-etapa-01-06.md). Direção aberturaTF/dark confirmada peloautor; pontos01–06 concluídos noAndroid, iOS nãoexecutado. Conta/consumo reais preservados, sem novo consentimentoGoogle automatizado. Snapshots e roteiros anteriores abaixo são históricos.
+
+**Aparência:** avatar → Preferências → Aparência (ou Aparência naentrada). **CalendárioHoje:** toque nodia para abrir o diário alimentar nessa data; não marca treino nem cria consumo.
 
 
 Checkpoint atual de23/10/2026: **APKdebug0.1.5+8**,Go0.5.1/25operações e bancoV1local. Alimentação particular/consumo/histórico entregues; titular confirmou consumo real. [Buildatual](android-nutrition-checkpoint.json), [aceite](nutrition-real-android-verification.json). A prioridade agora é [frontend completo fiel aoFigma](frontend-fidelidade-figma.md); tema/marca iniciais não encerram esse trabalho. Nenhum deploy.

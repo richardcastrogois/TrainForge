@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
@@ -12,12 +13,14 @@ class NutritionPage extends StatefulWidget {
   final String? Function() currentAccountId;
   final Listenable sessionChanges;
   final NutritionRepository? repository;
+  final DateTime? initialDate;
   const NutritionPage({
     super.key,
     required this.accountId,
     required this.currentAccountId,
     required this.sessionChanges,
     this.repository,
+    this.initialDate,
   });
   @override
   State<NutritionPage> createState() => _NutritionPageState();
@@ -38,6 +41,7 @@ class _NutritionPageState extends State<NutritionPage>
   @override
   void initState() {
     super.initState();
+    date = widget.initialDate ?? DateTime.now();
     repository =
         widget.repository ??
         GoNutritionRepository(
@@ -268,9 +272,7 @@ class _NutritionPageState extends State<NutritionPage>
                 ),
                 if (loading)
                   const Center(
-                    child: CircularProgressIndicator(
-                      semanticsLabel: 'Consultando alimentação',
-                    ),
+                    child: AppLoading(label: 'Consultando alimentação'),
                   ),
                 if (error != null) _error(),
                 if (!loading && error == null && entries.isEmpty)
@@ -353,9 +355,7 @@ class _NutritionPageState extends State<NutritionPage>
                 ),
                 if (loading)
                   const Center(
-                    child: CircularProgressIndicator(
-                      semanticsLabel: 'Consultando alimentos particulares',
-                    ),
+                    child: AppLoading(label: 'Consultando alimentos particulares'),
                   ),
                 if (error != null) _error(),
                 if (!loading && error == null && foods.isEmpty)

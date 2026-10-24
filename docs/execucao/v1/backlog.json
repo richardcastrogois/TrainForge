@@ -1585,12 +1585,14 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "23/10: prioridade continua frontend inteiro fiel aoFigma. Incremento visual01: shellGo, Inter/assets originais, cinco abas lazy com estado/foco/voltar, conta peloavatar, resumo diário injetável e proteção deconta/rede.68testesFlutter/analyze0issues. Biblioteca/formulários/detalhes/demais estados e aceite visual completo pendentes; não marcar done.",
+          "handoff": "23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
-            "docs/execucao/v1/frontend-food-verification.json"
+            "docs/execucao/v1/frontend-food-verification.json",
+            "docs/execucao/v1/frontend-etapa-01-06.md",
+            "docs/execucao/v1/frontend-stage01-verification.json"
           ]
         },
         {
@@ -1663,7 +1665,9 @@
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
-            "docs/execucao/v1/frontend-food-verification.json"
+            "docs/execucao/v1/frontend-food-verification.json",
+            "docs/execucao/v1/frontend-etapa-01-06.md",
+            "docs/execucao/v1/frontend-stage01-verification.json"
           ]
         },
         {
@@ -1851,12 +1855,14 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar.",
+          "handoff": "23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
-            "docs/execucao/v1/frontend-food-verification.json"
+            "docs/execucao/v1/frontend-food-verification.json",
+            "docs/execucao/v1/frontend-etapa-01-06.md",
+            "docs/execucao/v1/frontend-stage01-verification.json"
           ]
         },
         {

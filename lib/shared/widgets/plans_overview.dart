@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/catalog/data/catalog_repository.dart';
@@ -5,7 +6,6 @@ import 'package:trainforge/features/catalog/domain/catalog_entry.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'figma_components.dart';
-import 'product_overviews.dart';
 
 class PlansOverview extends StatefulWidget {
   final CatalogController? controller;
@@ -20,7 +20,7 @@ class _PlansOverviewState extends State<PlansOverview> {
   void initState() {
     super.initState();
     controller = widget.controller ?? CatalogController(GoCatalogRepository());
-    controller.load(filters: const CatalogFilters(kind: 'programs'));
+    controller.load(filters: CatalogFilters(kind: 'programs'));
   }
 
   @override
@@ -43,12 +43,12 @@ class _PlansOverviewState extends State<PlansOverview> {
       subtitle: 'Com orientação, ao teu ritmo.',
       children: [
         Material(
-          color: Colors.white,
+          color: context.tf.surface,
           borderRadius: BorderRadius.circular(16),
           child: InkWell(
             onTap: library,
             borderRadius: BorderRadius.circular(16),
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.all(13),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +57,7 @@ class _PlansOverviewState extends State<PlansOverview> {
                     'PESQUISAR',
                     style: TextStyle(
                       fontSize: 10,
-                      color: TrainForgeTheme.muted,
+                      color: context.tf.muted,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -72,16 +72,14 @@ class _PlansOverviewState extends State<PlansOverview> {
           ),
         ),
         if (controller.busy)
-          const LinearProgressIndicator(
-            semanticsLabel: 'Consultando programas disponíveis',
-          ),
+          AppProgress(label: 'Consultando programas disponíveis'),
         if (controller.error != null) ...[
-          const Text(
+          Text(
             'Não foi possível consultar os programas. A disponibilidade não foi confirmada.',
           ),
           OutlinedButton(
             onPressed: () => controller.load(),
-            child: const Text('Tentar novamente'),
+            child: Text('Tentar novamente'),
           ),
         ] else if (!controller.busy)
           FigmaActionCard(
@@ -92,14 +90,14 @@ class _PlansOverviewState extends State<PlansOverview> {
                 ? 'Nenhum programa liberado para prática. Consulte as referências disponíveis.'
                 : 'Ver origem, requisitos e disponibilidade',
             asset: 'plan',
-            color: TrainForgeTheme.accent,
+            color: context.tf.accent,
             onTap: () => library(kind: 'programs'),
           ),
         FigmaActionCard(
           title: 'Explorar modalidades',
           subtitle: 'Biblioteca de referência · somente consulta',
           asset: 'activity',
-          color: tfBlue,
+          color: context.tf.blue,
           onTap: library,
         ),
         FigmaActionCard(
@@ -116,7 +114,7 @@ class _PlansOverviewState extends State<PlansOverview> {
           title: 'Ajuda-me a começar',
           subtitle: 'Casa, praça, academia, idosos e cuidadores',
           asset: 'spark',
-          color: const Color(0xfff8d6e8),
+          color: context.tf.pink,
           onTap: () => showAvailability(
             context,
             'Ajuda-me a começar',
