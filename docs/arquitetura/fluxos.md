@@ -4,12 +4,13 @@ A [documentação dinâmica](README.md) tem mapas de telas, chamadas HTTP, banco
 
 ## Fluxo atual lido no Flutter
 
-Checkpoint23/10: pontosfrontend01–06 concluídos noAndroiddebug0.2.0+11 conforme direção doautor (aberturaTF/dark derivado). Aparência local é lida antes deAuthGate; restauração limitada apresenta entrada/retentativa ouProductShell poridentidade. Hoje/Diário usam resumoGo real; calendário abre histórico por data. Cinco abas preservam estado/foco/voltar; perfil abre aparência/privacidade/sessão. AppShell legado continua fora da composição. Execução/adesão e demais funções semcontrato/conteúdo permanecem indisponíveis.
+Checkpoint24/10: pontosfrontend01–06 e ajusteGrafite e lima/rolagem noAndroiddebug0.2.1+12 conforme direção doautor (aberturaTF/dark derivado). Aparência local é lida antes deAuthGate; restauração limitada apresenta entrada/retentativa ouProductShell poridentidade. Hoje/Diário usam resumoGo real; calendário abre histórico por data. Cinco abas preservam estado/foco/voltar; perfil abre aparência/privacidade/sessão. AppShell legado continua fora da composição. Execução/adesão e demais funções semcontrato/conteúdo permanecem indisponíveis.
 
 ```mermaid
 flowchart LR
   launch["Splash TF nativo"] --> appearance["Aparência local: sistema / claro / escuro"]
   appearance --> gate["AuthGate: restaurar sessão com limite"]
+  shell --> scroll["Rolagem por plataforma: Android sem esticar; iOS padrão"]
   gate --> entry["Entrada / retentativa sem apagar sessão por rede"]
   gate --> shell["ProductShell por identidade"]
   shell --> today["Hoje: datas, estados e resumo Go real"]

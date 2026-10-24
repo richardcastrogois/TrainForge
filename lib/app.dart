@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'core/theme/trainforge_theme.dart';
 import 'core/theme/appearance_controller.dart';
 import 'core/motion/app_motion.dart';
+import 'core/scroll/trainforge_scroll_behavior.dart';
 import 'features/auth/presentation/auth_controller.dart';
 import 'features/nutrition/domain/nutrition.dart';
 import 'shared/widgets/auth_gate.dart';
@@ -48,6 +49,7 @@ class _TrainForgeAppState extends State<TrainForgeApp> {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'TrainForge',
+          scrollBehavior: const TrainForgeScrollBehavior(),
           theme: TrainForgeTheme.light,
           darkTheme: TrainForgeTheme.dark,
           themeMode: appearance.mode,

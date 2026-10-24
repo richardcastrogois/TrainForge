@@ -22,24 +22,25 @@ class TrainForgeColors extends ThemeExtension<TrainForgeColors> {
     'navSurface': Color(0xffe8f0e8),
     'navBorder': Color(0xffc5d9cf),
   });
-  // Companion palette derived from the existing green identity, not a claimed Figma dark frame.
+  // Author-selected Grafite e lima. Neutral surfaces carry hierarchy; lime marks actions.
+  // 70/20/10 is a visual direction, not a measured pixel quota.
   static const dark = TrainForgeColors({
-    'background': Color(0xff101c18),
-    'surface': Color(0xff1c2d25),
-    'ink': Color(0xffedf3e9),
-    'muted': Color(0xffb5c8bd),
-    'cardMuted': Color(0xffb5c8bd),
-    'primary': Color(0xffa4dbc1),
-    'onPrimary': Color(0xff12382a),
-    'accent': Color(0xff344629),
-    'nutrition': Color(0xff42332b),
-    'soft': Color(0xff263c31),
-    'blue': Color(0xff203e48),
-    'yellow': Color(0xff443e22),
-    'pink': Color(0xff442e3d),
-    'outline': Color(0xff6f8c7d),
-    'navSurface': Color(0xff1d352a),
-    'navBorder': Color(0xff486653),
+    'background': Color(0xff111211),
+    'surface': Color(0xff242823),
+    'ink': Color(0xfff4f6ef),
+    'muted': Color(0xffbfc7ba),
+    'cardMuted': Color(0xffbfc7ba),
+    'primary': Color(0xffd8eb90),
+    'onPrimary': Color(0xff263015),
+    'accent': Color(0xff303a23),
+    'nutrition': Color(0xff242823),
+    'soft': Color(0xff2b3028),
+    'blue': Color(0xff242823),
+    'yellow': Color(0xff242823),
+    'pink': Color(0xff242823),
+    'outline': Color(0xff869173),
+    'navSurface': Color(0xff242823),
+    'navBorder': Color(0xff687260),
   });
   Color get background => values['background']!;
   Color get surface => values['surface']!;

@@ -1,5 +1,7 @@
 # Frontend — etapa 01 a 06
 
+Atualização24/10: oautor rejeitou o primeirodark e escolheu Grafite e lima. O ajuste posterior decores/rolagem está em[frontend-dark-scroll.md](frontend-dark-scroll.md), APK0.2.1+12. O fechamento abaixo registra a etapa original23/10; não usar suas cores/versão como estado atual.
+
 Pedido de 23/10: implementar os seis primeiros pontos antes dos pontos 07–12 e de novas funcionalidades. O APK debug **0.2.0+11** contém a implementação técnica dos seis pontos e está instalado no emulador, com conta e consumo reais preservados.
 
 **Os seis pontos estão concluídos no checkpoint Android desta etapa.** O autor confirmou em23/10 a abertura com a marcaTF atual e o dark derivado dessa identidade. Essa decisão aprova a adaptação preparada; não significa comparação exata com quadros Figma não obtidos. Build/execução iOS continuam pendentes na plataforma própria.

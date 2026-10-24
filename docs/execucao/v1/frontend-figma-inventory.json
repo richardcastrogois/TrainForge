@@ -3239,5 +3239,12 @@
     "visualDirection": "author-approved-current-TF-opening-and-derived-dark",
     "exactFigmaAcceptance": false,
     "stageStatus": "complete-android-checkpoint"
+  },
+  "frontendAdjustment20261024": {
+    "direction": "author-selected-grafite-e-lima",
+    "evidence": "frontend-dark-scroll-verification.json",
+    "android": "remove-stretch-decoration-preserve-physics-and-refresh",
+    "ios": "keep-platform-default-no-native-ios27-claim",
+    "exactFigmaDarkComparison": false
   }
 }

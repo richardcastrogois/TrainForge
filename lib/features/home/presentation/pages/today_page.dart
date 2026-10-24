@@ -66,6 +66,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
     listenable: widget.controller,
     builder: (context, _) {
       final controller = widget.controller, now = controller.now();
+      final dark = Theme.of(context).brightness == Brightness.dark;
       final snapshot = controller.loading ? null : controller.summary;
       final complete = snapshot?['complete'] == true;
       final int? count = complete ? (snapshot?['entries'] as int?) : null;
@@ -81,7 +82,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
           subtitle: todayDate(now),
           children: [
             Material(
-              color: TrainForgeTheme.primary,
+              color: dark ? context.tf.surface : TrainForgeTheme.primary,
               borderRadius: BorderRadius.circular(24),
               child: InkWell(
                 onTap: widget.openCatalog,
@@ -96,7 +97,9 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w700,
-                          color: TrainForgeTheme.accent,
+                          color: dark
+                              ? context.tf.primary
+                              : TrainForgeTheme.accent,
                         ),
                       ),
                       SizedBox(height: 6),
@@ -106,7 +109,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
                           height: 1.35,
-                          color: Colors.white,
+                          color: dark ? context.tf.ink : Colors.white,
                         ),
                       ),
                       SizedBox(height: 6),
@@ -115,7 +118,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
-                          color: Colors.white,
+                          color: dark ? context.tf.ink : Colors.white,
                         ),
                       ),
                     ],

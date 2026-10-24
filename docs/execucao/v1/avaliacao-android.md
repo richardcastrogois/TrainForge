@@ -1,6 +1,8 @@
 # Retomar a avaliação Android
 
-**Checkpoint atual23/10:** APKdebug0.2.0+11, frontend pontos01–06 implementados tecnicamente: identidade/splash, inicialização, Hoje real, loaders, transições e aparência claro/escuro/sistema persistida.85testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [etapa e limites](frontend-etapa-01-06.md). Direção aberturaTF/dark confirmada peloautor; pontos01–06 concluídos noAndroid, iOS nãoexecutado. Conta/consumo reais preservados, sem novo consentimentoGoogle automatizado. Snapshots e roteiros anteriores abaixo são históricos.
+**Checkpoint atual24/10:** Grafite e lima e rolagemAndroid semesticar noAPKdebug0.2.1+12,90testesFlutter/analyze0issues. [Recibo atual](frontend-dark-scroll-verification.json), [ajuste e limites](frontend-dark-scroll.md). Preserva conta, consumo e física iOS porplataforma; iOS27 nãoexecutado.
+
+**Checkpoint anterior23/10:** APKdebug0.2.0+11, frontend pontos01–06 implementados tecnicamente: identidade/splash, inicialização, Hoje real, loaders, transições e aparência claro/escuro/sistema persistida.85testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [etapa e limites](frontend-etapa-01-06.md). Direção aberturaTF/dark confirmada peloautor; pontos01–06 concluídos noAndroid, iOS nãoexecutado. Conta/consumo reais preservados, sem novo consentimentoGoogle automatizado. Snapshots e roteiros anteriores abaixo são históricos.
 
 **Aparência:** avatar → Preferências → Aparência (ou Aparência naentrada). **CalendárioHoje:** toque nodia para abrir o diário alimentar nessa data; não marca treino nem cria consumo.
 

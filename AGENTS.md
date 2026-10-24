@@ -1,8 +1,10 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **23/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. Pedidos atuais do usuário prevalecem sobre snapshots históricos.
+Estado vigente: **24/10/2026**. Esta raiz é `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. Pedidos atuais do usuário prevalecem sobre snapshots históricos.
 
 ## Próxima ação e escopo
+
+**Atualização24/10: Grafite e lima e rolagem por plataforma implementadas.** APKdebug0.2.1+12,90testesFlutter/analyze0issues. Ler docs/execucao/v1/frontend-dark-scroll.md efrontend-dark-scroll-verification.json; android-frontend-checkpoint.json é o artefato atual. Fundo#111211, superfície#242823 e lima#D8EB90;70–20–10 é direção visual, sem porcentagem medida. Android sem StretchingOverscrollIndicator; física/notificações/pull-to-refresh preservados. iOS mantém padrãoFlutter da plataforma, sem alegar validação nativa iOS27. Código/recursos e contas/dados preservados; sem novaAPI/migration/dependência. Registros23/10 abaixo são checkpoints anteriores.
 
 **Prioridade explícita23/10: frontend fiel aoFigma, agora pontos01–06 antes dos07–12 e de novas funcionalidades.** Ler docs/execucao/v1/frontend-etapa-01-06.md, frontend-fidelidade-figma.md, frontend-figma-inventory.json e handoff.md. APKdebug0.2.0+11: identidade/splash nativos, inicialização recuperável, Hoje real/calendário, loaders, transições/redução de movimento e claro/escuro/sistema persistidos.85testesFlutter/analyze0issues; recibo integrado emfrontend-stage01-verification.json eandroid-frontend-checkpoint.json. Conta/1consumo real preservados. Aparência noavatar → Preferências ou naentrada semlogin.
 

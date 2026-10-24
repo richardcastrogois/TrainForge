@@ -227,3 +227,12 @@ ConectorFigma continua emquotaStarter. Pergunta de direção visual daabertura/d
 
 
 Autor respondeu à pergunta e confirmou: usar marcaTF atual naabertura e criar dark derivado daidentidade. A implementação jávalidada corresponde àescolha. Pontos01–06 encerrados no checkpointAndroid, conforme frontend-etapa-01-06.md;07–12 e execuçãoiOS permanecem abertos. A decisão substitui a pendência visual registrada acima, sem alegar leitura decomparação exata dosquadros nãoobtidos.76testesPython passaram, docsderivadas verificadas.
+
+
+## 24/10/2026 — Grafite e lima e rolagem
+
+Autor escolheu terceira proposta e pediu que o iOS acompanhe a plataforma. Aplicados fundo#111211, cartões#242823 (separação reforçada) e lima#D8EB90, com texto adequado e cores deconteúdo neutras no dark.70–20–10 é orientação, sem medição depixels. MaterialApp usa comportamento central: Android semStretchingOverscrollIndicator; física/notificações/atualizar e iOS padrão mantidos. Sem GSAP/Motion ou outra dependência/API/migration.
+
+90testesFlutter/analyze0issues, cinco novos cenários de borda/refresh/iOS/composição. Seis préviasFlutter dasáreas/perfil inspecionadas comfixtures isoladas;320/texto2x e contraste passam. APK0.2.1+12 instalado, fonte/assinatura/hash conferidos; navegação nascincoáreas e reabertura comprovamtema/sessão. Conferência porcontagens preservou1consumo real; agente não digitou quantidade nem confirmouconsumo. HelperUI teve leitura do perfil antes daestabilização; recibo final passou comespera limitada e navegação pública observada, semreset deapp.
+
+Recursos/código iOS preservados e física validada porwidget, sem alegar execuçãoiOS27 noWindows. Figma permanece emquota; semnovas chamadas ou pesquisa. Docs/backlog/fluxos/Graphify atualizados (80Dart/1185nós/1578arestas, ASTsomente). Ver frontend-dark-scroll.md efrontend-dark-scroll-verification.json.

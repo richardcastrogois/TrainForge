@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos.
+Handoff: 23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes.
+Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 

@@ -1,5 +1,7 @@
 # Caminho da pesquisa ao APK
 
+24/10 · ajuste solicitado: Grafite e lima aplicado com cartões mais separados, Android sem decoração deesticar e iOS com padrãoFlutter porplataforma. APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Critérios e limites](frontend-dark-scroll.md). Sem novas funções, dados, APIs ou bibliotecas.
+
 23/10 · prioridade imediata: frontend pontos01–06 antes dos07–12. APK0.2.0+11 com identidade/splash, inicialização recuperável, Hoje real, loaders, transições e temas persistidos;85testesFlutter/analyze0issues. Autor aprovou marcaTF naabertura e dark derivado; pontos01–06 concluídos no checkpointAndroid, sem alegação de frontend inteiro concluído. [Critérios e evidências](frontend-etapa-01-06.md). Snapshots anteriores abaixo são históricos.
 
 23/10 · visual02: busca alimentar/porção convertidas; APKdebug0.1.7+10 instalado com conta/consumo real preservados,70testesFlutter/analyze0issues. [Recibo](frontend-food-verification.json). Figmaatingiu quotaStarter para104:1260; demais referências/famílias pendentes, semcontratação. Prioridade continua todo o front antes de novas funcionalidades.

@@ -1,9 +1,9 @@
 {
   "app.dart": {
-    "mtime": 1792805617.0174751,
-    "seen": 1792806578.6562014,
-    "ast_hash": "ac03ff9eb03cad48049c3fd31c7dcfc0",
-    "semantic_hash": "ac03ff9eb03cad48049c3fd31c7dcfc0"
+    "mtime": 1792847613.125379,
+    "seen": 1792847971.7403104,
+    "ast_hash": "316b0c42baf933fa54d4ef3cd0b7915e",
+    "semantic_hash": "316b0c42baf933fa54d4ef3cd0b7915e"
   },
   "core/config/app_config.dart": {
     "mtime": 1792663903.8144777,
@@ -402,10 +402,10 @@
     "semantic_hash": "4da86201a3c9ca7f5fc7e37a25957f66"
   },
   "shared/widgets/figma_bottom_nav.dart": {
-    "mtime": 1792804987.4559793,
-    "seen": 1792806578.6672306,
-    "ast_hash": "5ee97c3713f8b0306f1966363db372a4",
-    "semantic_hash": "5ee97c3713f8b0306f1966363db372a4"
+    "mtime": 1792847661.3554404,
+    "seen": 1792847971.7485394,
+    "ast_hash": "1c5ad11164c8455881051a0e40bceac3",
+    "semantic_hash": "1c5ad11164c8455881051a0e40bceac3"
   },
   "shared/widgets/figma_components.dart": {
     "mtime": 1792806278.5767808,
@@ -450,16 +450,16 @@
     "semantic_hash": "eef6b12a19596fdad2e41c9ab17a2a07"
   },
   "core/theme/trainforge_colors.dart": {
-    "mtime": 1792805674.4402995,
-    "seen": 1792806578.6572037,
-    "ast_hash": "8b680839f0e41b4a7e740eaf4bc9d1f3",
-    "semantic_hash": "8b680839f0e41b4a7e740eaf4bc9d1f3"
+    "mtime": 1792847613.118834,
+    "seen": 1792847971.7413292,
+    "ast_hash": "240644c2a0bf6e8c636bbae2914ef5c1",
+    "semantic_hash": "240644c2a0bf6e8c636bbae2914ef5c1"
   },
   "features/home/presentation/pages/today_page.dart": {
-    "mtime": 1792805506.7243588,
-    "seen": 1792806578.6617231,
-    "ast_hash": "78b7c789e7861842c541fe711d95df5b",
-    "semantic_hash": "78b7c789e7861842c541fe711d95df5b"
+    "mtime": 1792847661.3711984,
+    "seen": 1792847971.7443323,
+    "ast_hash": "95c1b5095e659a8f1d38df51879e46da",
+    "semantic_hash": "95c1b5095e659a8f1d38df51879e46da"
   },
   "shared/widgets/app_loading.dart": {
     "mtime": 1792805617.0390174,
@@ -472,5 +472,11 @@
     "seen": 1792806578.6672306,
     "ast_hash": "d632950de32b24672d9a99502cab6da1",
     "semantic_hash": "d632950de32b24672d9a99502cab6da1"
+  },
+  "core/scroll/trainforge_scroll_behavior.dart": {
+    "mtime": 1792847613.1228418,
+    "seen": 1792847971.7403104,
+    "ast_hash": "231cc56f861da220932aaa429d6ae92d",
+    "semantic_hash": "231cc56f861da220932aaa429d6ae92d"
   }
 }
