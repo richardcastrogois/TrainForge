@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'package:trainforge/shared/widgets/figma_components.dart';
+import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
@@ -17,11 +20,13 @@ class CatalogPage extends StatefulWidget {
 class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
   late final CatalogController controller;
   final search = TextEditingController();
+  Timer? debounce;
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     controller = widget.controller ?? CatalogController(GoCatalogRepository());
+    search.text = (widget.initialFilters ?? controller.filters).q;
     controller.load(filters: widget.initialFilters);
   }
 
@@ -33,6 +38,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    debounce?.cancel();
     search.dispose();
     if (widget.controller == null) controller.dispose();
     super.dispose();
@@ -41,6 +47,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
   Future<void> chooseFilters() async {
     final facets = controller.facets;
     if (facets == null) return;
+    FocusManager.instance.primaryFocus?.unfocus();
     var selected = controller.filters;
     final result = await showModalBottomSheet<CatalogFilters>(
       context: context,
@@ -66,6 +73,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                 padding: const EdgeInsets.only(bottom: 16),
                 child: DropdownButtonFormField<String>(
                   initialValue: current,
+                  itemHeight: null,
                   isExpanded: true,
                   decoration: InputDecoration(
                     labelText: title,
@@ -78,7 +86,10 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                       child: Text('Todos os valores informados'),
                     ),
                     ...values.map(
-                      (v) => DropdownMenuItem(value: v, child: Text(v)),
+                      (v) => DropdownMenuItem(
+                        value: v,
+                        child: Text(v, softWrap: true),
+                      ),
                     ),
                   ],
                   onChanged: (value) => update(() => apply(value ?? '')),
@@ -130,6 +141,10 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                     facets.modalities,
                     (v) => selected = selected.copyWith(modality: v),
                   ),
+                  TextButton(
+                    onPressed: () => Navigator.pop(context),
+                    child: const Text('Cancelar'),
+                  ),
                   FilledButton(
                     onPressed: () => Navigator.pop(context, selected),
                     child: const Text('Aplicar filtros'),
@@ -144,22 +159,33 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
     if (result != null && mounted) controller.load(filters: result);
   }
 
+  void submit(String value) {
+    debounce?.cancel();
+    controller.load(filters: controller.filters.copyWith(q: value.trim()));
+  }
+
   void clearFilters() {
+    debounce?.cancel();
     search.clear();
     controller.load(filters: CatalogFilters(kind: controller.filters.kind));
   }
 
   Widget _header(BuildContext context, CatalogFacets? facets) => Padding(
-    padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+    padding: const EdgeInsets.fromLTRB(24, 0, 24, 12),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        const FigmaPageHeading(
+          title: 'Biblioteca de referência',
+          subtitle: 'MOVIMENTO · ORIGEM · DISPONIBILIDADE',
+        ),
         const Text(
           'Somente consulta. Estes registros não são instruções nem programas liberados para prática.',
         ),
         const SizedBox(height: 12),
         TextField(
           controller: search,
+          maxLength: 100,
           textInputAction: TextInputAction.search,
           decoration: InputDecoration(
             labelText: 'Buscar pelo nome original',
@@ -176,9 +202,14 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
               icon: const Icon(Icons.arrow_forward),
             ),
           ),
-          onSubmitted: (value) => controller.load(
-            filters: controller.filters.copyWith(q: value.trim()),
-          ),
+          onSubmitted: submit,
+          onChanged: (value) {
+            debounce?.cancel();
+            debounce = Timer(
+              const Duration(milliseconds: 400),
+              () => submit(value),
+            );
+          },
         ),
         const SizedBox(height: 8),
         Wrap(
@@ -224,130 +255,90 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
       ],
     ),
   );
-  Widget _notice(String text, {bool retry = false}) => Center(
-    child: Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Semantics(
-            liveRegion: true,
-            child: Text(text, textAlign: TextAlign.center),
-          ),
-          const SizedBox(height: 16),
-          if (retry)
-            FilledButton(
-              onPressed: () => controller.load(),
-              child: const Text('Tentar novamente'),
-            )
-          else
-            TextButton(
-              onPressed: clearFilters,
-              child: const Text('Limpar filtros'),
-            ),
-        ],
-      ),
+  Widget _notice(String text, {bool retry = false}) => Padding(
+    padding: const EdgeInsets.all(24),
+    child: FlowStatus(
+      title: retry ? 'Consulta indisponível' : 'Sem resultados',
+      message: text,
+      actionLabel: retry ? 'Tentar novamente' : 'Limpar filtros',
+      onAction: retry ? () => controller.load() : clearFilters,
     ),
   );
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: controller,
     builder: (context, _) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Biblioteca de referência',
-            overflow: TextOverflow.ellipsis,
-          ),
-          actions: [
-            IconButton(
-              onPressed: controller.busy ? null : () => controller.load(),
-              tooltip: 'Atualizar biblioteca',
-              icon: const Icon(Icons.refresh),
-            ),
-          ],
-        ),
-        body: SafeArea(
-          child: RefreshIndicator(
-            onRefresh: () => controller.load(),
-            child: CustomScrollView(
-              physics: const AlwaysScrollableScrollPhysics(),
-              slivers: [
-                SliverToBoxAdapter(child: _header(context, controller.facets)),
-                if (controller.busy)
-                  const SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: Center(
-                      child: AppLoading(label: 'Consultando biblioteca'),
-                    ),
-                  )
-                else if (controller.error != null)
-                  SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: _notice(controller.error!, retry: true),
-                  )
-                else if (controller.items.isEmpty)
-                  SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: _notice(
-                      '${controller.filters.kind == 'programs' ? 'Nenhum programa autorizado neste lote.' : 'Nenhum metadado corresponde aos filtros.'}\n\nIdosos, cuidadores, casa, praça e academia continuam no escopo. A fonte precisa informar requisitos e permissão para cada uso.',
-                    ),
-                  )
-                else
-                  SliverPadding(
-                    padding: const EdgeInsets.all(16),
-                    sliver: SliverList.builder(
-                      itemCount: controller.items.length + 1,
-                      itemBuilder: (context, index) {
-                        if (index == controller.items.length) {
-                          return Column(
-                            children: [
-                              if (controller.moreError != null)
-                                Text(controller.moreError!),
-                              if (controller.nextCursor != null)
-                                OutlinedButton(
-                                  onPressed: controller.loadingMore
-                                      ? null
-                                      : controller.more,
-                                  child: Text(
-                                    controller.loadingMore
-                                        ? 'Carregando…'
-                                        : 'Carregar mais',
-                                  ),
-                                ),
-                            ],
-                          );
-                        }
-                        final item = controller.items[index];
-                        return Card(
-                          child: ListTile(
-                            title: Text(
-                              item.title ?? 'Título não informado pela fonte',
-                            ),
-                            subtitle: Text(
-                              '${item.kind == 'movement'
-                                  ? 'Movimento'
-                                  : item.kind == 'collection'
-                                  ? 'Coleção modular'
-                                  : 'Programa'} · ${item.sourceName} · ${item.locale ?? 'Idioma não informado'}\nCréditos: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? 'Licença não informada'}\nFonte e licença no detalhe · Somente consulta',
-                            ),
-                            trailing: const Icon(Icons.chevron_right),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute<void>(
-                                builder: (_) => CatalogDetailPage(
-                                  entry: item,
-                                  repository: controller.repository,
+      return FigmaRouteFrame(
+        body: RefreshIndicator(
+          onRefresh: () => controller.load(),
+          child: CustomScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            slivers: [
+              SliverToBoxAdapter(child: _header(context, controller.facets)),
+              if (controller.busy)
+                const SliverToBoxAdapter(
+                  child: Center(
+                    child: AppLoading(label: 'Consultando biblioteca'),
+                  ),
+                )
+              else if (controller.error != null)
+                SliverToBoxAdapter(
+                  child: _notice(controller.error!, retry: true),
+                )
+              else if (controller.items.isEmpty)
+                SliverToBoxAdapter(
+                  child: _notice(
+                    '${controller.filters.kind == 'programs' ? 'Nenhum programa autorizado neste lote.' : 'Nenhum metadado corresponde aos filtros.'}\n\nIdosos, cuidadores, casa, praça e academia continuam no escopo. A fonte precisa informar requisitos e permissão para cada uso.',
+                  ),
+                )
+              else
+                SliverPadding(
+                  padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+                  sliver: SliverList.builder(
+                    itemCount: controller.items.length + 1,
+                    itemBuilder: (context, index) {
+                      if (index == controller.items.length) {
+                        return Column(
+                          children: [
+                            if (controller.moreError != null)
+                              Text(controller.moreError!),
+                            if (controller.nextCursor != null)
+                              OutlinedButton(
+                                onPressed: controller.loadingMore
+                                    ? null
+                                    : controller.more,
+                                child: Text(
+                                  controller.loadingMore
+                                      ? 'Carregando…'
+                                      : 'Carregar mais',
                                 ),
                               ),
+                          ],
+                        );
+                      }
+                      final item = controller.items[index];
+                      return FlowRecord(
+                        title: item.title ?? 'Título não informado pela fonte',
+                        subtitle:
+                            '${item.kind == 'movement'
+                                ? 'Movimento'
+                                : item.kind == 'collection'
+                                ? 'Coleção modular'
+                                : 'Programa'} · ${item.sourceName} · ${item.locale ?? 'Idioma não informado'}\nCréditos: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? 'Licença não informada'}\nFonte e licença no detalhe · Somente consulta',
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (_) => CatalogDetailPage(
+                              entry: item,
+                              repository: controller.repository,
                             ),
                           ),
-                        );
-                      },
-                    ),
+                        ),
+                      );
+                    },
                   ),
-              ],
-            ),
+                ),
+            ],
           ),
         ),
       );

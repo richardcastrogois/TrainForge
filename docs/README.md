@@ -24,9 +24,11 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Atualização24/10:** Grafite e lima/rolagem por plataforma aplicados noAPK0.2.1+12. [Ajuste e limites](execucao/v1/frontend-dark-scroll.md).90testesFlutter/analyze0issues; iOS27 nativo nãoexecutado.
+**Checkpoint mais recente24/10:** pontosfrontend07–12 nos fluxos disponíveis, APKdebug0.3.0+13,101testesFlutter/analyze0issues. [Implementação e pendências](execucao/v1/frontend-etapa-07-12.md). Configuração/treino/atividade e capacidades sem contrato, referênciasFigma faltantes e iOS nativo continuam abertos.
 
-**Estado:** etapas01/02 e V1-011/012/013/014/019 concluídas no recorte documentado. V1-020 funcional e consumo humano real confirmados. Prioridade atual: frontend fiel aoFigma, pontos01–06 antes dos07–12. APKdebug0.2.1+12, aparência/inicialização/Hoje/loaders/transições e identidade nativa implementados; direção visual de aberturaTF/dark confirmada peloautor e seis pontos concluídos no checkpointAndroid. [Etapa e limites](execucao/v1/frontend-etapa-01-06.md), [recibo atual](execucao/v1/android-frontend-checkpoint.json), [handoff](execucao/v1/handoff.md).
+**Checkpoint anterior24/10:** Grafite e lima/rolagem por plataforma aplicados noAPK0.2.1+12. [Ajuste e limites](execucao/v1/frontend-dark-scroll.md).90testesFlutter/analyze0issues; iOS27 nativo nãoexecutado.
+
+**Estado:** etapas01/02 e V1-011/012/013/014/019 concluídas no recorte documentado. V1-020 funcional e consumo humano real confirmados. Prioridade atual: frontend fiel aoFigma, com novo checkpoint dospontos07–12 e dependências explícitas. APKdebug0.3.0+13; aparência/inicialização/Hoje/loaders/transições e identidade nativa implementados; direção visual de aberturaTF/dark confirmada peloautor e seis pontos concluídos no checkpointAndroid. [Etapa e limites](execucao/v1/frontend-etapa-01-06.md), [recibo atual](execucao/v1/android-frontend-checkpoint.json), [handoff](execucao/v1/handoff.md).
 
 73metadados/6369referências alimentares reais, sem prática aprovada ou novas instruções/mídias inventadas. API/banco/emulador locais; nenhuma hospedagem necessária para avaliar. Distribuiçãorelease/iOS e demais histórias continuam nos próprios gates.
 

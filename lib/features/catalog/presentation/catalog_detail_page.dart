@@ -1,3 +1,5 @@
+import 'package:trainforge/shared/widgets/figma_components.dart';
+import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -98,59 +100,80 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
   void retry() =>
       setState(() => pending = widget.repository.detail(widget.entry));
   @override
-  Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('Origem e disponibilidade')),
+  Widget build(BuildContext context) => FigmaRouteFrame(
     body: SafeArea(
       child: FutureBuilder<CatalogEntry>(
         future: pending,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(child: AppLoading(label: 'Consultando detalhe'));
+            return ListView(
+              children: [
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  child: FigmaBack(),
+                ),
+                const AppLoading(label: 'Consultando detalhe'),
+              ],
+            );
           }
           if (snapshot.hasError || !snapshot.hasData) {
             final error = snapshot.error;
             final unavailable =
                 error is DioException && error.response?.statusCode == 404;
-            return Center(
-              child: Padding(
-                padding: const EdgeInsets.all(24),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      unavailable
-                          ? 'Este registro não está disponível ou foi retirado. Volte à biblioteca.'
-                          : 'Não foi possível confirmar este registro. Tente novamente conectado.',
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton(
-                      onPressed: retry,
-                      child: const Text('Tentar novamente'),
-                    ),
-                  ],
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              children: [
+                const FigmaPageHeading(
+                  title: 'Origem e disponibilidade',
+                  subtitle: 'BIBLIOTECA',
                 ),
-              ),
+                FlowStatus(
+                  title: unavailable
+                      ? 'Referência indisponível'
+                      : 'Consulta indisponível',
+                  message: unavailable
+                      ? 'Este registro não está disponível ou foi retirado. Volte à biblioteca.'
+                      : 'Não foi possível confirmar este registro. Tente novamente conectado.',
+                  actionLabel: unavailable
+                      ? 'Voltar à biblioteca'
+                      : 'Tentar novamente',
+                  onAction: unavailable
+                      ? () => Navigator.maybePop(context)
+                      : retry,
+                ),
+              ],
             );
           }
           final item = snapshot.data!;
           Widget section(String title, Widget content) => Padding(
             padding: const EdgeInsets.only(bottom: 24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(title, style: Theme.of(context).textTheme.titleMedium),
-                const SizedBox(height: 8),
-                content,
-              ],
+            child: FigmaSection(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Semantics(
+                    header: true,
+                    child: Text(
+                      title,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  content,
+                ],
+              ),
             ),
           );
           String known(List<String>? values) => values == null || values.isEmpty
               ? 'Não informado pela fonte'
               : values.join(', ');
           return ListView(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
             children: [
+              const FigmaPageHeading(
+                title: 'Origem e disponibilidade',
+                subtitle: 'BIBLIOTECA · SOMENTE CONSULTA',
+              ),
               Text(
                 item.title ?? 'Título não informado',
                 style: Theme.of(context).textTheme.headlineSmall,
@@ -215,12 +238,10 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
                 'Público, ambiente e apoio',
                 Text(
                   'Público: ${known(item.populations)}\nAmbiente: ${known(item.environments)}\nApoio: ${item.supportRequired == null
-                          ? 'Não informado pela fonte'
-                          : item.supportRequired!
-                          ? 'Exigido pela fonte'
-                          : 'Não exigido conforme a fonte'}${item.supportSource == null
-                          ? ''
-                          : '\nReferência de apoio: ${item.supportSource!}'}',
+                      ? 'Não informado pela fonte'
+                      : item.supportRequired!
+                      ? 'Exigido pela fonte'
+                      : 'Não exigido conforme a fonte'}${item.supportSource == null ? '' : '\nReferência de apoio: ${item.supportSource!}'}',
                 ),
               ),
               section(
@@ -271,9 +292,7 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
                     Text(
                       'Versão publicada pela fonte: ${item.sourcePublishedVersion ?? 'Não informada'}',
                     ),
-                    Text(
-                      'Idioma original: ${item.locale ?? 'Não informado'}',
-                    ),
+                    Text('Idioma original: ${item.locale ?? 'Não informado'}'),
                   ],
                 ),
               ),

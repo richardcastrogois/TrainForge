@@ -224,7 +224,10 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    expect(find.textContaining('indisponível'), findsOneWidget);
+    expect(
+      find.textContaining('Este alimento está indisponível'),
+      findsOneWidget,
+    );
     expect(find.text('0 g'), findsNothing);
     expect(find.textContaining('secret'), findsNothing);
   });

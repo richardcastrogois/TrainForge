@@ -1,3 +1,5 @@
+import 'package:trainforge/shared/widgets/figma_components.dart';
+import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import '../domain/nutrition.dart';
@@ -87,70 +89,156 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
     final c = object(entry['calculation']),
         food = object(c['food']),
         source = object(food['source']);
-    return Scaffold(
-      appBar: AppBar(title: const Text('Consumo confirmado')),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16),
+    return PopScope(
+      canPop: !busy,
+      child: FigmaRouteFrame(
+        body: ListView(
+          padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
           children: [
-            Text(
-              food['nameOriginal'] as String,
-              style: Theme.of(context).textTheme.titleLarge,
+            const FigmaPageHeading(
+              title: 'Consumo confirmado',
+              subtitle: 'DIÁRIO · REGISTRO PARTICULAR',
             ),
-            Text(
-              '${entry['quantity']} ${entry['unit']} · ${c['quantityEvidence'] == 'measured' ? 'quantidade medida' : 'quantidade estimada'}',
+            FigmaSection(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    displayLabel(food['nameOriginal']),
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    '${entry['quantity']} ${entry['unit']}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                  Text(
+                    c['quantityEvidence'] == 'measured'
+                        ? 'Quantidade medida'
+                        : 'Quantidade estimada',
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Horário neste aparelho: ${localTimestamp(entry['occurredAt'] as String)}',
+                  ),
+                  Text('Fuso informado no registro: ${entry['timezone']}'),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Preparo anotado: ${(c['preparation'] as String).isEmpty ? 'não informado' : c['preparation']}',
+                  ),
+                ],
+              ),
             ),
-            Text(
-              'Horário neste aparelho: ${localTimestamp(entry['occurredAt'] as String)} · fuso informado no registro: ${entry['timezone']}',
+            const SizedBox(height: 12),
+            FigmaSection(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const FlowSectionTitle('Origem da composição'),
+                  Text(source['attribution'] as String),
+                  ExpansionTile(
+                    tilePadding: EdgeInsets.zero,
+                    title: const Text('Origem e cálculo preservados'),
+                    children: [
+                      SelectableText(
+                        '''Origem: ${c['origin']} · ${food['sourceId']}
+Versão: ${entry['foodVersion']}
+Método: ${c['algorithm']}
+${source['licenseLabel']}
+${source['sourceUrl']}
+${source['licenseUrl']}''',
+                      ),
+                      const Text(
+                        'Fração exata preservada. Exibição arredondada a 6 casas. Traço, limite, unidade incompatível e base ausente não se tornam zero. Preparo não altera a composição.',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-            Text(
-              'Preparo anotado: ${(c['preparation'] as String).isEmpty ? 'não informado' : c['preparation']}',
-            ),
-            Text(source['attribution'] as String),
-            ExpansionTile(
-              title: const Text('Origem e cálculo preservados'),
-              children: [
-                SelectableText(
-                  'Origem: ${c['origin']} · ${food['sourceId']}\nVersão: ${entry['foodVersion']}\nMétodo: ${c['algorithm']}\n${source['licenseLabel']}\n${source['sourceUrl']}\n${source['licenseUrl']}',
-                ),
-                const Text(
-                  'Fração exata preservada. Exibição arredondada a 6 casas. Traço, limite, unidade incompatível e base ausente não se tornam zero. Preparo não altera a composição.',
-                ),
-              ],
-            ),
-            if (error != null) Semantics(liveRegion: true, child: Text(error!)),
+            const SizedBox(height: 16),
+            if (error != null) ...[
+              FlowStatus(title: 'Solicitação não confirmada', message: error!),
+              const SizedBox(height: 12),
+            ],
             OutlinedButton(
               onPressed: busy ? null : edit,
               child: const Text('Corrigir quantidade, preparo ou horário'),
             ),
+            const SizedBox(height: 8),
             OutlinedButton(
               onPressed: busy ? null : remove,
               child: Text(busy ? 'Confirmando…' : 'Excluir este consumo'),
             ),
+            const FlowSectionTitle('Composição desta porção'),
+            const Text(
+              'Os valores abaixo pertencem à versão e ao método da fonte. Desconhecido não significa zero.',
+            ),
+            const SizedBox(height: 12),
             for (final n in objects(c['nutrients']))
-              Card(
-                child: ListTile(
-                  title: Text(displayLabel(n['nameOriginal'])),
-                  subtitle: Text(
-                    '${n['value'] ?? 'Desconhecido'} ${n['unit'] ?? ''}\nEstado original: ${n['sourceState']} · célula: ${n['rawText'] ?? ''} · limite: ${n['sourceUpperBound'] ?? 'não informado'}\nBase: ${object(n['basis'])['quantity'] ?? '?'} ${object(n['basis'])['unit'] ?? ''}\nFator: ${n['factor'] ?? 'não calculável'}\nFração exata: ${n['exactFraction'] ?? 'desconhecida'}${n['reason'] == '' ? '' : '\nMotivo: ${n['reason']}'}',
+              Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: FigmaSection(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        displayLabel(n['nameOriginal']),
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        '${n['value'] ?? 'Desconhecido'} ${n['unit'] ?? ''}',
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                      if (n['reason'] != null && n['reason'] != '')
+                        Text('Motivo: ${n['reason']}'),
+                      ExpansionTile(
+                        tilePadding: EdgeInsets.zero,
+                        title: const Text('Base, valor original e cálculo'),
+                        children: [
+                          Text(
+                            '''Estado original: ${n['sourceState']} · célula: ${n['rawText'] ?? ''} · limite: ${n['sourceUpperBound'] ?? 'não informado'}
+Base: ${object(n['basis'])['quantity'] ?? '?'} ${object(n['basis'])['unit'] ?? ''}
+Fator: ${n['factor'] ?? 'não calculável'}
+Fração exata: ${n['exactFraction'] ?? 'desconhecida'}''',
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),
-            ExpansionTile(
-              title: Text(
-                'Correções anteriores (${(c['changes'] as List).length})',
+            FigmaSection(
+              child: ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                title: Text(
+                  'Correções anteriores (${(c['changes'] as List).length})',
+                ),
+                children: [
+                  for (final change in objects(c['changes']))
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            'Revisão ${change['revision']} · ${change['quantity']} ${change['unit']}',
+                          ),
+                          Text(
+                            '${localTimestamp(change['occurredAt'] as String)} · fuso informado: ${change['timezone']}',
+                          ),
+                          Text(
+                            change['quantityEvidence'] == 'measured'
+                                ? 'Quantidade medida'
+                                : 'Quantidade estimada',
+                          ),
+                          Text('Preparo: ${change['preparation']}'),
+                        ],
+                      ),
+                    ),
+                ],
               ),
-              children: [
-                for (final change in objects(c['changes']))
-                  ListTile(
-                    title: Text(
-                      'Revisão ${change['revision']} · ${change['quantity']} ${change['unit']}',
-                    ),
-                    subtitle: Text(
-                      '${change['occurredAt']} · ${change['timezone']}\n${change['quantityEvidence']}\nPreparo: ${change['preparation']}',
-                    ),
-                  ),
-              ],
             ),
           ],
         ),

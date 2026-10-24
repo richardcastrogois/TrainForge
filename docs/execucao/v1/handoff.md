@@ -2,9 +2,15 @@
 
 Atualizado em24/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mais recente do autor é **ajustar todo o frontend para ficar exatamente igual ao Figma antes de continuar novas funcionalidades**. Ler [plano visual](frontend-fidelidade-figma.md) e [inventário atual](frontend-figma-inventory.json). Não retomar uma nova história debackend por ignorar essa mudança.
 
-## Checkpoint atual — Grafite e lima / rolagem
+## Checkpoint atual — pontos07–12 nos fluxos disponíveis
 
-APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Ajuste implementado](frontend-dark-scroll.md), [recibo](frontend-dark-scroll-verification.json), [APK atual](android-frontend-checkpoint.json). Autor escolheu terceira proposta e pediu rolagem conforme iOS27: superfícies neutras mais separadas e lima nos destaques; Android sem decoração de esticamento. Física e gesto de atualizar preservados; iOS padrãoFlutter mantido e testado porwidget, sem execução nativa iOS27. Não instalar GSAP/Motion, atualizar SDKs, pedir novoOAuth ou pesquisar novamente para esses ajustes. Figma permanece emquota. Conta/consumo reais preservados, sem novo consumo peloagente. Pontos07–12 continuam fora desta rodada.
+APKdebug0.3.0+13 instalado,101testesFlutter/analyze0issues. [Implementação, critérios e pendências](frontend-etapa-07-12.md), [recibo](frontend-stage07-12-verification.json), [artefato](android-frontend-checkpoint.json). Biblioteca e detalhes, composição/cadastro/histórico/subtotais/consumo, privacidade e ajuda alinhados aos primitives atuais. Formulários com proteção de rascunho/envio/resposta incerta; primeiro erro alcançável. Busca particular não refaz diário/subtotais e descarta respostas antigas.
+
+Não declarar integralmente07–12 concluídos: configuração persistida, treino/atividade e recursos sem contrato/conteúdo, referências Figma não obtidas e validação nativa iOS continuam abertos. Consulta de disponibilidade não simula função entregue. Não repetir chamadasFigma nem testesGoogle/import/restore históricos. Conta/consumo preservados; push de incrementos validados autorizado, semdeploy.
+
+## Checkpoint anterior — Grafite e lima / rolagem
+
+APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Ajuste implementado](frontend-dark-scroll.md), [recibo](frontend-dark-scroll-verification.json), [APK atual](android-frontend-checkpoint.json). Autor escolheu terceira proposta e pediu rolagem conforme iOS27: superfícies neutras mais separadas e lima nos destaques; Android sem decoração de esticamento. Física e gesto de atualizar preservados; iOS padrãoFlutter mantido e testado porwidget, sem execução nativa iOS27. Não instalar GSAP/Motion, atualizar SDKs, pedir novoOAuth ou pesquisar novamente para esses ajustes. Figma permanece emquota. Conta/consumo reais preservados, sem novo consumo peloagente. Esse checkpoint anterior cobria somente o ajuste decores/rolagem.
 
 Base anterior42bb676431cabe5228fbc82960a35878dd214260 publicada comCI40052687262 bem-sucedida. Conferir Git real para o incremento posterior. Push de incrementos validados continua autorizado; sem deploy.
 
@@ -47,7 +53,7 @@ Sessão conector be13df9a-20a4-47d5-ba30-e854be04613e, reutilizar enquanto váli
 
 Checkpoint inicial histórico deidentidade: `lib/core/theme/trainforge_theme.dart` com tokensFigma, marcaTF, superfícies/botões/campos e tipografia inicial; entrada e cabeçalho deconta usam marca. **Fidelidade completa pendente.** O incremento visual01 agora distribuiInter eSVGs, conecta shell/barra inferior e as primeiras composições. Biblioteca/formulários/detalhes/privacidade e demais estados ainda exigem conversão visual; ver o checkpoint atual acima. AuthsóGoogle real; e-mail/Apple não foram simulados.
 
-História021emdoing, com pontosfrontend01–06 concluídos no checkpointAndroid,07–12 ainda abertos; transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
+História021emdoing, pontos01–06 concluídos no checkpointAndroid e07–12 com novo checkpoint dos fluxos disponíveis, mantendo dependências abertas; transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
 
 ## Cuidados do incremento
 

@@ -40,18 +40,27 @@ class AppLoading extends StatelessWidget {
   final String label;
   const AppLoading({super.key, required this.label});
   @override
-  Widget build(BuildContext context) => Center(
-    child: Padding(
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, constraints) => SingleChildScrollView(
       padding: const EdgeInsets.all(24),
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 360),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const TrainForgeBrand(),
-            const SizedBox(height: 20),
-            AppProgress(label: label),
-          ],
+        constraints: BoxConstraints(
+          minHeight: constraints.hasBoundedHeight
+              ? (constraints.maxHeight - 48).clamp(0, double.infinity)
+              : 0,
+        ),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 360),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const TrainForgeBrand(),
+                const SizedBox(height: 20),
+                AppProgress(label: label),
+              ],
+            ),
+          ),
         ),
       ),
     ),

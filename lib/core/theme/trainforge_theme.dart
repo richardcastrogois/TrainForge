@@ -21,6 +21,10 @@ abstract final class TrainForgeTheme {
         ).copyWith(
           primary: p.primary,
           onPrimary: p.onPrimary,
+          primaryContainer: brightness == Brightness.dark ? p.accent : null,
+          onPrimaryContainer: brightness == Brightness.dark ? p.ink : null,
+          secondaryContainer: brightness == Brightness.dark ? p.accent : null,
+          onSecondaryContainer: brightness == Brightness.dark ? p.ink : null,
           secondary: p.accent,
           onSecondary: p.ink,
           surface: p.surface,

@@ -127,7 +127,11 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.ensureVisible(find.text('Aparência'));
+      await t.scrollUntilVisible(
+        find.text('Aparência'),
+        160,
+        scrollable: find.byType(Scrollable).first,
+      );
       await t.tap(find.text('Aparência'));
       await t.pumpAndSettle();
       await t.tap(find.text('Escuro'));
