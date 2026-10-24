@@ -1,3 +1,4 @@
+import 'evaluation_guide_page.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
@@ -122,17 +123,19 @@ class AccountPage extends StatelessWidget {
                           title: 'Conta e dados pessoais',
                           subtitle: 'Identidade Google, exportação e exclusão',
                           asset: 'user',
-                          onTap: () => privacy(context),
+                          onTap: () => openEvaluationGuide(
+                            context,
+                            EvaluationTopic.profile,
+                          ),
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
                           title: 'Objetivos e rotina',
                           subtitle: 'Equipamento, dias e modalidades',
                           asset: 'plan',
-                          onTap: () => showAvailability(
+                          onTap: () => openEvaluationGuide(
                             context,
-                            'Objetivos e rotina',
-                            'A configuração de contexto e rotina ainda não está implementada. Nenhuma preferência foi inferida da sua conta Google.',
+                            EvaluationTopic.firstAccess,
                           ),
                         ),
                         SizedBox(height: 12),
@@ -153,21 +156,30 @@ class AccountPage extends StatelessWidget {
                           subtitle: 'Health Connect, localização e câmara',
                           asset: 'activity',
                           color: context.tf.blue,
-                          onTap: () => showAvailability(
+                          onTap: () => openEvaluationGuide(
                             context,
-                            'Dispositivos e permissões',
-                            'As integrações com sensores, localização e câmera ainda não foram implementadas. Nenhuma permissão será solicitada por esta ação.',
+                            EvaluationTopic.devices,
                           ),
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Privacidade e ajuda',
-                          subtitle: 'Os teus dados sob o teu controlo',
+                          title: 'Privacidade e dados',
+                          subtitle: 'Exportação, exclusão e política efetiva',
                           asset: 'heart',
                           color: context.tf.soft,
                           onTap: () => privacy(context),
                         ),
                         SizedBox(height: 12),
+                        FigmaActionCard(
+                          title: 'Ajuda e condições da avaliação',
+                          subtitle: 'Dúvidas, origem e recursos disponíveis',
+                          asset: 'plan',
+                          onTap: () => openEvaluationGuide(
+                            context,
+                            EvaluationTopic.help,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
                         if (controller.busy)
                           AppProgress(label: 'Confirmando sessão'),
                         if (controller.message != null) ...[

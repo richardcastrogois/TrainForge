@@ -236,3 +236,14 @@ Autor escolheu terceira proposta e pediu que o iOS acompanhe a plataforma. Aplic
 90testesFlutter/analyze0issues, cinco novos cenários de borda/refresh/iOS/composição. Seis préviasFlutter dasáreas/perfil inspecionadas comfixtures isoladas;320/texto2x e contraste passam. APK0.2.1+12 instalado, fonte/assinatura/hash conferidos; navegação nascincoáreas e reabertura comprovamtema/sessão. Conferência porcontagens preservou1consumo real; agente não digitou quantidade nem confirmouconsumo. HelperUI teve leitura do perfil antes daestabilização; recibo final passou comespera limitada e navegação pública observada, semreset deapp.
 
 Recursos/código iOS preservados e física validada porwidget, sem alegar execuçãoiOS27 noWindows. Figma permanece emquota; semnovas chamadas ou pesquisa. Docs/backlog/fluxos/Graphify atualizados (80Dart/1185nós/1578arestas, ASTsomente). Ver frontend-dark-scroll.md efrontend-dark-scroll-verification.json.
+
+
+## 24/10/2026 — frontend pontos07–12 nos fluxos disponíveis
+
+Lista original recuperada da própria conversa e registrada emfrontend-etapa-07-12.md. APKdebug0.3.0+13: biblioteca/filtros/detalhe, composição/cadastro/histórico/subtotais/confirmação/correções, privacidade eajuda refinados com componentes/tokens já conferidos. Formulários preservam/confirmam descarte de rascunho, bloqueiam saída durante envio e explicam resposta incerta; rolagem ao primeiro erro. Busca particular independente evita refazer diário/subtotais e descarta respostas antigas. Atividade/configuração têm limites e caminhos úteis; não foram simulados serviços.
+
+101testesFlutter/analyze0issues;20prévias de fixtures claras/escuras inspecionadas;320/texto2x e alvos48px/rotulados. A nova validação encontrou loader sem espaço no texto2x e falta de validação de nutriente fora da tela; corrigidos com altura natural/rolagem e campos montados. Helpers de captura/semântica precisaram encerrar recursos corretamente; recibos finais passaram, sem alteração de dados reais.
+
+Android real: atualização sem rascunho aberto, hash/assinatura/fingerprint conferidos, biblioteca com0programas, histórico/alimentos próprios/política/ajuda alcançáveis.1consumo antes/1depois; sem quantidade/consumo/cadastro/exclusão peloagente nem novoGoogle automatizado. Graphify83Dart/1235nós/1665arestas, ASTsomente. Sem novaAPI/migration/dependência/pesquisa/deploy/contratação.
+
+Não declarar todos07–12 concluídos: configuração persistida, treino/atividade, capacidades sem contrato/conteúdo, contextosFigma faltantes e iOS nativo seguem emgates explícitos. Backlog021/022/025 mantido semdone indevido.

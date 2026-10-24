@@ -365,7 +365,8 @@
       "width": 390,
       "height": 844,
       "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterAdaptation": "existing-confirmed-primitives-for-functional-fields-not-exact-unread-frame"
     },
     {
       "id": "104:260",
@@ -373,7 +374,8 @@
       "width": 390,
       "height": 844,
       "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterAdaptation": "existing-confirmed-primitives-for-functional-fields-not-exact-unread-frame"
     },
     {
       "id": "104:283",
@@ -719,7 +721,8 @@
       "width": 390,
       "height": 844,
       "designContextInspected": false,
-      "flutterVisualAcceptance": "pending"
+      "flutterVisualAcceptance": "pending",
+      "flutterAdaptation": "existing-confirmed-primitives-for-functional-fields-not-exact-unread-frame"
     },
     {
       "id": "104:1283",
@@ -3246,5 +3249,13 @@
     "android": "remove-stretch-decoration-preserve-physics-and-refresh",
     "ios": "keep-platform-default-no-native-ios27-claim",
     "exactFigmaDarkComparison": false
+  },
+  "frontendStage07to12": {
+    "implementation": "android-debug-0.3.0+13",
+    "evidence": "frontend-stage07-12-verification.json",
+    "stageStatus": "available-flows-checkpoint-with-open-dependencies",
+    "exactFigmaAcceptance": false,
+    "unreadFramesNotAccepted": true,
+    "referenceQuotaRetried": false
   }
 }

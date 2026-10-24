@@ -1,3 +1,4 @@
+import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
@@ -115,11 +116,8 @@ class _PlansOverviewState extends State<PlansOverview> {
           subtitle: 'Casa, praça, academia, idosos e cuidadores',
           asset: 'spark',
           color: context.tf.pink,
-          onTap: () => showAvailability(
-            context,
-            'Ajuda-me a começar',
-            'A configuração de contexto ainda não está disponível. Idade, elegibilidade, equipamentos e apoio não serão inferidos.',
-          ),
+          onTap: () =>
+              openEvaluationGuide(context, EvaluationTopic.firstAccess),
         ),
       ],
     ),

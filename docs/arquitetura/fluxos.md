@@ -4,7 +4,7 @@ A [documentação dinâmica](README.md) tem mapas de telas, chamadas HTTP, banco
 
 ## Fluxo atual lido no Flutter
 
-Checkpoint24/10: pontosfrontend01–06 e ajusteGrafite e lima/rolagem noAndroiddebug0.2.1+12 conforme direção doautor (aberturaTF/dark derivado). Aparência local é lida antes deAuthGate; restauração limitada apresenta entrada/retentativa ouProductShell poridentidade. Hoje/Diário usam resumoGo real; calendário abre histórico por data. Cinco abas preservam estado/foco/voltar; perfil abre aparência/privacidade/sessão. AppShell legado continua fora da composição. Execução/adesão e demais funções semcontrato/conteúdo permanecem indisponíveis.
+Checkpoint24/10: frontend07–12 nos fluxos disponíveis, Androiddebug0.3.0+13. Biblioteca/detalhe, composição/cadastro/histórico/subtotais/consumo, privacidade eajuda usam primitives atuais; proteção de rascunho/envio/resposta incerta e busca particular independente.101testesFlutter/analyze0issues. [Critérios e gates](../execucao/v1/frontend-etapa-07-12.md). Configuração persistida, treino/atividade e demais funções sem contrato/conteúdo continuam indisponíveis; referênciasFigma faltantes e execução nativa iOS pendentes. Pontos01–06, identidade/temas/rolagem e dados reais preservados.
 
 ```mermaid
 flowchart LR
@@ -21,6 +21,9 @@ flowchart LR
   profile --> privacy["Exportação / exclusão / sessão"]
   entry --> public["Biblioteca e composição alimentar públicas"]
   day --> nutrition["Histórico / porção / revisão reais"]
+  nutrition --> draft["Guarda de rascunho / envio / resposta incerta"]
+  nutrition --> ownSearch["Busca particular independente do resumo"]
+  profile --> help["Ajuda e disponibilidade sem simulação"]
 ```
 
 ## Privacidade implementada em23/10

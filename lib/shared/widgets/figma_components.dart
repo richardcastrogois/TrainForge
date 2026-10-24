@@ -17,7 +17,10 @@ class FigmaContent extends StatelessWidget {
     physics: AlwaysScrollableScrollPhysics(),
     padding: const EdgeInsets.fromLTRB(24, 0, 24, 16),
     children: [
-      Text(title, style: Theme.of(context).textTheme.headlineLarge),
+      Semantics(
+        header: true,
+        child: Text(title, style: Theme.of(context).textTheme.headlineLarge),
+      ),
       SizedBox(height: 12),
       Text(
         subtitle,
@@ -302,7 +305,10 @@ class FigmaPageHeading extends StatelessWidget {
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
       FigmaBack(),
-      Text(title, style: Theme.of(context).textTheme.headlineLarge),
+      Semantics(
+        header: true,
+        child: Text(title, style: Theme.of(context).textTheme.headlineLarge),
+      ),
       SizedBox(height: 12),
       Text(
         subtitle,

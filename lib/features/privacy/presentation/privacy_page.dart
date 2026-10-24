@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -55,17 +56,15 @@ class _PrivacyPageState extends State<PrivacyPage> {
           erased = controller.erased;
       return PopScope(
         canPop: !controller.busy,
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text(
-              'Privacidade e dados',
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
+        child: FigmaRouteFrame(
           body: SafeArea(
             child: ListView(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               children: [
+                const FigmaPageHeading(
+                  title: 'Privacidade e dados',
+                  subtitle: 'POLÍTICA EFETIVA · CONTROLES DA SUA CONTA',
+                ),
                 if (controller.busy)
                   const AppProgress(label: 'Processando solicitação de dados'),
                 if (controller.error != null) ...[
@@ -111,27 +110,34 @@ class _PrivacyPageState extends State<PrivacyPage> {
                       child: const Text('Tentar carregar política'),
                     ),
                   if (policy != null) ...[
-                    Text(policy.accountDeletion),
-                    const SizedBox(height: 12),
-                    Text(
-                      'Backups e recuperação',
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                    Text(policy.backupRetention),
-                    Text(policy.restoreRequirement),
-                    const SizedBox(height: 12),
-                    Text(
-                      'Registro mínimo após exclusão',
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                    Text(policy.erasureLedger),
-                    Text(policy.sessionRetention),
-                    const SizedBox(height: 12),
-                    Text(policy.otherServices),
-                    Text(policy.futureStorage),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'Dados que você copiar ou exportar ficam sob sua gestão; a exclusão da conta não apaga cópias externas ou a área de transferência do aparelho.',
+                    FigmaSection(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(policy.accountDeletion),
+                          const SizedBox(height: 12),
+                          Text(
+                            'Backups e recuperação',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          Text(policy.backupRetention),
+                          Text(policy.restoreRequirement),
+                          const SizedBox(height: 12),
+                          Text(
+                            'Registro mínimo após exclusão',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          Text(policy.erasureLedger),
+                          Text(policy.sessionRetention),
+                          const SizedBox(height: 12),
+                          Text(policy.otherServices),
+                          Text(policy.futureStorage),
+                          const SizedBox(height: 12),
+                          const Text(
+                            'Dados que você copiar ou exportar ficam sob sua gestão; a exclusão da conta não apaga cópias externas ou a área de transferência do aparelho.',
+                          ),
+                        ],
+                      ),
                     ),
                     if (!widget.authenticated) ...[
                       const SizedBox(height: 20),
@@ -150,6 +156,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                       const SizedBox(height: 12),
                       DropdownButtonFormField<String>(
                         initialValue: controller.section,
+                        itemHeight: null,
                         isExpanded: true,
                         decoration: const InputDecoration(
                           labelText: 'Seção de dados',
@@ -240,9 +247,12 @@ class _PrivacyPageState extends State<PrivacyPage> {
                         OutlinedButton(
                           onPressed: controller.busy
                               ? null
-                              : () => controller.confirmAccount(
-                                  widget.reauthenticate!,
-                                ),
+                              : () {
+                                  confirmation.clear();
+                                  controller.confirmAccount(
+                                    widget.reauthenticate!,
+                                  );
+                                },
                           child: const Text(
                             'Confirmar conta novamente com Google',
                           ),
@@ -262,7 +272,10 @@ class _PrivacyPageState extends State<PrivacyPage> {
                         OutlinedButton(
                           onPressed: controller.busy || !acknowledged
                               ? null
-                              : controller.requestDeletion,
+                              : () {
+                                  confirmation.clear();
+                                  controller.requestDeletion();
+                                },
                           child: const Text(
                             'Solicitar confirmação de exclusão',
                           ),
@@ -273,6 +286,9 @@ class _PrivacyPageState extends State<PrivacyPage> {
                         ),
                         TextField(
                           controller: confirmation,
+                          enabled: !controller.busy,
+                          maxLength: 19,
+                          textCapitalization: TextCapitalization.characters,
                           autocorrect: false,
                           enableSuggestions: false,
                           decoration: const InputDecoration(

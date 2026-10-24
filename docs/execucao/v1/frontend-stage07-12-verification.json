@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-24",
+  "scope": "frontend07to12-available-flows",
+  "status": "implemented-available-flows-with-open-gates",
+  "allSixPointsFullyComplete": false,
+  "artifact": {
+    "versionName": "0.3.0",
+    "versionCode": 13,
+    "variant": "debug",
+    "package": "com.example.trainforge",
+    "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "868f0a893923bc58ebd66cef4e23799656bee9c4171725a58bb48d31fdb7a4b6",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "39f294b7f35084f5ed80f07489982acb7a4cc23173f9a1f2cafb00cae93bca16",
+    "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+    "realGoogleLoginValidated": false
+  },
+  "flutterTestsPassed": 101,
+  "flutterAnalyzeIssues": 0,
+  "newRegressionTests": 11,
+  "previewFixtureCount": 20,
+  "previewThemes": [
+    "light",
+    "dark"
+  ],
+  "previewSize": [
+    390,
+    844
+  ],
+  "smallScreenWidthTested": 320,
+  "textScaleTested": 2,
+  "androidTapTargetsAndLabelsChecked": true,
+  "nativeAndroid": {
+    "date": "2026-10-24",
+    "checks": {
+      "publicLibraryEmptyPrograms": true,
+      "activityAvailabilityWithoutPermissionPrompt": true,
+      "foodHistoryReadOnly": true,
+      "ownFoodsAvailableWithoutCreatingFood": true,
+      "privacyPolicyFromApiReachable": true,
+      "helpAvailable": true
+    },
+    "beforeActiveConsumption": 1,
+    "afterActiveConsumption": 1,
+    "sourceAndInstalledHashMatch": true,
+    "installedSha256": "868f0a893923bc58ebd66cef4e23799656bee9c4171725a58bb48d31fdb7a4b6",
+    "agentEnteredQuantity": false,
+    "agentConfirmedConsumption": false,
+    "agentDeletedData": false,
+    "automatedGoogleConsent": false,
+    "navigationArtifactBeforeFinalQueryFix": "945631a8e065e42973ecf511093841e0e51a9af85e15211bb3c1e1bea4c8d521",
+    "postReviewNativeChecks": {
+      "sessionRestored": true,
+      "historyAndOwnFoodsReachable": true,
+      "returnedToToday": true,
+      "beforeActiveConsumption": 1,
+      "afterActiveConsumption": 1
+    }
+  },
+  "apiVersion": "0.5.1",
+  "swaggerOperations": 25,
+  "newApiOrMigration": false,
+  "dependenciesAdded": [],
+  "humanConsumptionEvidence": "nutrition-real-android-verification.json",
+  "priorGoogleLoginEvidence": "auth-real-android-verification.json",
+  "newRealGoogleLoginPerformed": false,
+  "figma": {
+    "fileKey": "bX6YjBBLIJgoo2MtiFLntl",
+    "pageId": "0:1",
+    "exactVisualAcceptance": false,
+    "newConnectorCalls": 0,
+    "quotaBypassed": false,
+    "implementation": "compose-previously-confirmed-primitives-for-existing-functional-fields",
+    "missingExamples": [
+      "104:1260",
+      "104:230",
+      "104:260",
+      "23:910",
+      "23:1021",
+      "23:1080",
+      "104:704",
+      "104:780",
+      "104:810"
+    ]
+  },
+  "openGates": {
+    "10": [
+      "activity-history-measurement-goal-services",
+      "gps-sensors-devices-ocr"
+    ],
+    "11": [
+      "persisted-profile-unit-language-editing",
+      "approved-production-terms",
+      "feedback-channel"
+    ],
+    "12": [
+      "exact-comparison-of-unread-figma-families",
+      "native-ios-execution"
+    ],
+    "07": [
+      "persisted-context-setup",
+      "additional-auth-channels",
+      "missing-design-contexts"
+    ],
+    "08": [
+      "authorized-human-program-and-instructions",
+      "enrollment-and-session-services",
+      "missing-design-contexts"
+    ],
+    "09": [
+      "missing-design-contexts",
+      "favorites-hydration-planning-learning",
+      "human-own-food-acceptance"
+    ]
+  },
+  "iosNativeValidated": false,
+  "graph": {
+    "dartFiles": 83,
+    "nodes": 1235,
+    "edges": 1665,
+    "changedFiles": 18,
+    "unchangedFiles": 65,
+    "semanticExtraction": false,
+    "finalReviewReextractionFiles": 1
+  },
+  "pythonTestsPassed": 76,
+  "review": {
+    "result": "approve-with-documented-open-gates",
+    "fixed": "pagination-cursor-retains-applied-query-during-debounce",
+    "regressionTest": "pagination keeps the applied query while new typing is debounced"
+  }
+}

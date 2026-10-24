@@ -151,6 +151,16 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('Programas (0)'));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.textContaining('Nenhum programa autorizado'),
+      180,
+      scrollable: find
+          .descendant(
+            of: find.byType(CustomScrollView),
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     expect(find.textContaining('Nenhum programa autorizado'), findsOneWidget);
     expect(find.textContaining('Isolated fixture'), findsNothing);
     controller.dispose();

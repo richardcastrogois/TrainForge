@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a47738d4915c175f`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e6283a7abb0d0cbf`.
 
 ## Atual: referências entre widgets
 
@@ -32,8 +32,9 @@ flowchart LR
     node21["AccountPage"]
     node22["AppShell"]
     node23["AuthGate"]
-    node24["ProductShell"]
-    node25["StartupPage"]
+    node24["EvaluationGuidePage"]
+    node25["ProductShell"]
+    node26["StartupPage"]
     node1 -->|"referencia widget"| node0
     node1 -->|"referencia widget"| node3
     node1 -->|"referencia widget"| node5
@@ -73,39 +74,42 @@ flowchart LR
     node22 -->|"referencia widget"| node17
     node22 -->|"referencia widget"| node20
     node23 -->|"referencia widget"| node1
-    node23 -->|"referencia widget"| node24
     node23 -->|"referencia widget"| node25
+    node23 -->|"referencia widget"| node26
     node24 -->|"referencia widget"| node3
-    node24 -->|"referencia widget"| node11
-    node24 -->|"referencia widget"| node21
+    node24 -->|"referencia widget"| node5
+    node25 -->|"referencia widget"| node3
+    node25 -->|"referencia widget"| node11
+    node25 -->|"referencia widget"| node21
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
 | AppearancePage | [lib/core/theme/appearance_page.dart:5](../../../lib/core/theme/appearance_page.dart) |
-| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:11](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:63](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
-| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:9](../../../lib/features/catalog/presentation/catalog_page.dart) |
-| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:5](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
+| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:13](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
+| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:12](../../../lib/features/catalog/presentation/catalog_page.dart) |
+| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:7](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:11](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:9](../../../lib/features/home/presentation/pages/today_page.dart) |
-| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:7](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
-| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:13](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:356](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:11](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
+| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:9](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
+| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:34](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:400](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:13](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
 | OnboardingEntryPage | [lib/features/onboarding/presentation/pages/onboarding_entry_page.dart:9](../../../lib/features/onboarding/presentation/pages/onboarding_entry_page.dart) |
-| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:7](../../../lib/features/privacy/presentation/privacy_page.dart) |
+| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:8](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | ProfilePage | [lib/features/profile/presentation/pages/profile_page.dart:9](../../../lib/features/profile/presentation/pages/profile_page.dart) |
 | StatsPage | [lib/features/stats/presentation/pages/stats_page.dart:10](../../../lib/features/stats/presentation/pages/stats_page.dart) |
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
-| AccountPage | [lib/shared/widgets/account_page.dart:10](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:11](../../../lib/shared/widgets/account_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
 | AuthGate | [lib/shared/widgets/auth_gate.dart:10](../../../lib/shared/widgets/auth_gate.dart) |
+| EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:10](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | ProductShell | [lib/shared/widgets/product_shell.dart:17](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 

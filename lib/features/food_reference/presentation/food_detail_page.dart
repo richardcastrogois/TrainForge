@@ -1,3 +1,5 @@
+import 'package:trainforge/shared/widgets/figma_components.dart';
+import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import '../domain/food_reference.dart';
@@ -42,54 +44,53 @@ class _FoodDetailPageState extends State<FoodDetailPage>
   }
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(
-      title: const Text('Composição da fonte'),
-      actions: [
-        IconButton(
-          onPressed: () => setState(reload),
-          tooltip: 'Atualizar composição',
-          icon: const Icon(Icons.refresh),
-        ),
-      ],
-    ),
+  Widget build(BuildContext context) => FigmaRouteFrame(
     body: SafeArea(
       child: FutureBuilder<FoodDetailData>(
         future: result,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(
-              child: AppLoading(label: 'Consultando composição'),
+            return ListView(
+              children: [
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  child: FigmaBack(),
+                ),
+                const AppLoading(label: 'Consultando composição'),
+              ],
             );
           }
           if (!snapshot.hasData) {
-            return Center(
-              child: Padding(
-                padding: const EdgeInsets.all(24),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Text(
-                      'Este alimento está indisponível. Pode haver falha de conexão ou retirada da versão.',
-                    ),
-                    FilledButton(
-                      onPressed: () => setState(reload),
-                      child: const Text('Tentar novamente'),
-                    ),
-                  ],
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              children: [
+                const FigmaPageHeading(
+                  title: 'Composição da fonte',
+                  subtitle: 'ALIMENTO DE REFERÊNCIA',
                 ),
-              ),
+                FlowStatus(
+                  title: 'Composição indisponível',
+                  message:
+                      'Este alimento está indisponível. Pode haver falha de conexão ou retirada da versão.',
+                  actionLabel: 'Tentar novamente',
+                  onAction: () => setState(reload),
+                ),
+              ],
             );
           }
           final data = snapshot.data!, food = data.food, source = food.source;
           return ListView.builder(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
             itemCount: data.nutrients.length + 1,
             itemBuilder: (context, index) {
               if (index == 0) {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    const FigmaPageHeading(
+                      title: 'Composição da fonte',
+                      subtitle: 'ALIMENTO · VERSÃO ORIGINAL',
+                    ),
                     Text(
                       food.displayName,
                       style: Theme.of(context).textTheme.headlineSmall,
@@ -98,6 +99,10 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                     Text('${food.languageLabel} · ${food.basisLabel}'),
                     const SizedBox(height: 8),
                     Text(data.notice),
+                    TextButton(
+                      onPressed: () => setState(reload),
+                      child: const Text('Atualizar composição'),
+                    ),
                     if (widget.selectForConsumption)
                       FilledButton(
                         onPressed: () => Navigator.pop(context, food),
@@ -106,35 +111,32 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                         ),
                       ),
                     const SizedBox(height: 16),
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Text(
-                              'Fonte e licença',
-                              style: Theme.of(context).textTheme.titleMedium,
-                            ),
-                            const SizedBox(height: 8),
-                            SelectableText(source.attribution),
-                            Text(
-                              '${source.license} · ${food.sourceVersion}\nPublicação: ${source.publishedAt}',
-                            ),
-                            SelectableText(source.url),
-                            SelectableText(source.licenseUrl),
-                            Text(source.warranty),
-                            ExpansionTile(
-                              tilePadding: EdgeInsets.zero,
-                              title: const Text('Proveniência e condições'),
-                              children: [
-                                SelectableText(
-                                  '${source.publisher}\nCódigo: ${food.sourceFoodId}\nVersão: ${food.versionId}\n${source.changes}\n${source.conditions.join('\n')}',
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
+                    FigmaSection(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            'Fonte e licença',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          const SizedBox(height: 8),
+                          SelectableText(source.attribution),
+                          Text(
+                            '${source.license} · ${food.sourceVersion}\nPublicação: ${source.publishedAt}',
+                          ),
+                          SelectableText(source.url),
+                          SelectableText(source.licenseUrl),
+                          Text(source.warranty),
+                          ExpansionTile(
+                            tilePadding: EdgeInsets.zero,
+                            title: const Text('Proveniência e condições'),
+                            children: [
+                              SelectableText(
+                                '${source.publisher}\nCódigo: ${food.sourceFoodId}\nVersão: ${food.versionId}\n${source.changes}\n${source.conditions.join('\n')}',
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -150,9 +152,9 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                 );
               }
               final n = data.nutrients[index - 1];
-              return Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: FigmaSection(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [

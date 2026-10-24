@@ -141,3 +141,10 @@ Swagger permaneceGo0.5.1/25operações. Recursos/códigoiOS estão preparados; e
 ## Ajuste24/10 — direção dark escolhida e rolagem
 
 Autor rejeitou as cores do primeirodark e escolheu a terceira proposta, Grafite e lima. A implementação usa fundo#111211, cartões#242823 (separação reforçada) e destaque#D8EB90. Tons antes coloridos ficam neutros nodark, navegação selecionada emlima;70–20–10 orienta a composição sem alegar medição exata. Android remove somente a decoração deesticar, preservando física/notificações/atualizar; iOS padrão porplataforma. [Implementação/evidências](frontend-dark-scroll.md), APK0.2.1+12. Não é novo contextoFigma nem validação nativa iOS27; claros/ícones/fontes e dados reais preservados.
+
+
+## Checkpoint24/10 — pontos07–12
+
+[Implementação e gates por ponto](frontend-etapa-07-12.md), [recibo](frontend-stage07-12-verification.json). APK0.3.0+13/101testesFlutter/analyze0issues: biblioteca/detalhe, composição/cadastro/histórico/subtotais/confirmação/correções, privacidade e ajuda refinados com primitives/tokens já conferidos. Formulários com rascunho/envio/resposta incerta protegidos; busca particular com estado independente.
+
+Famílias sem design context integral continuam sem aceite exato: reaproveitar componentes não supre a referência. Configuração persistida, treino/atividade e demais capacidades ausentes continuam pendentes; guias de disponibilidade não as implementam.20prévias de fixtures claras/escuras inspecionadas, sem dados fictícios no runtime nem novo consumo humano.

@@ -1,3 +1,5 @@
+import 'package:trainforge/shared/widgets/evaluation_guide_page.dart';
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
@@ -30,6 +32,10 @@ class AuthPage extends StatelessWidget {
                     title: 'Que bom ter-te por cá.',
                     subtitle: 'Entra para continuar a tua rotina.',
                     children: [
+                      if (controller.busy)
+                        const AppProgress(
+                          label: 'Aguardando confirmação do Google',
+                        ),
                       OutlinedButton(
                         onPressed: controller.busy ? null : controller.login,
                         child: Text(
@@ -90,6 +96,15 @@ class AuthPage extends StatelessWidget {
                             child: Text('Tentar novamente'),
                           ),
                       ],
+                      TextButton(
+                        onPressed: controller.busy
+                            ? null
+                            : () => openEvaluationGuide(
+                                context,
+                                EvaluationTopic.firstAccess,
+                              ),
+                        child: const Text('Primeiro acesso e configuração'),
+                      ),
                       Text(
                         'Explorar antes de entrar',
                         style: TextStyle(
@@ -121,12 +136,14 @@ class AuthPage extends StatelessWidget {
                         ),
                       ),
                       TextButton(
-                        onPressed: () => Navigator.push<void>(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => const AppearancePage(),
-                          ),
-                        ),
+                        onPressed: controller.busy
+                            ? null
+                            : () => Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const AppearancePage(),
+                                ),
+                              ),
                         child: const Text('Aparência'),
                       ),
                       TextButton(

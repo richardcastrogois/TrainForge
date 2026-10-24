@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização24/10: frontend pontos07–12 — checkpoint dos fluxos disponíveis
+
+83arquivosDart,1235nós/1665arestas;18alterados/novos,65inalterados,0removidos na passagem principal;1arquivo reextraído após a revisão da paginação (82inalterados). Update incremental code-only/AST e HTML exportado. Sem clusterização, leitura semântica ou custoLLM. Backup.local/graphify-backup-20261024-frontend-07-12. Guias de disponibilidade não equivalem a serviços implementados; ver frontend-etapa-07-12.md.
+
 ## Atualização24/10: Grafite e lima / rolagem por plataforma
 
 80arquivosDart,1185nós/1578arestas;5arquivos alterados/novos,75inalterados,0removidos. ASTsomente e HTMLexportado; sem extração semântica. Backup em.local/graphify-backup-20261024-dark-scroll. Tokens semânticos e comportamento central de rolagem incluídos; sem alegação de validação nativa iOS27.

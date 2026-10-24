@@ -1,3 +1,4 @@
+import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/home/presentation/pages/today_page.dart';
 import 'package:flutter/material.dart';
@@ -284,33 +285,21 @@ class ActivityOverview extends StatelessWidget {
         ],
       ),
       FilledButton(
-        onPressed: () => showAvailability(
-          context,
-          'Começar atividade',
-          'O registro de atividade e a coleta de GPS ainda não foram implementados neste incremento.',
-        ),
+        onPressed: () => openEvaluationGuide(context, EvaluationTopic.activity),
         child: Text('Começar atividade'),
       ),
       FigmaActionCard(
         title: 'Registo rápido',
         subtitle: 'Registro manual e por imagem ainda indisponíveis',
         asset: 'plus',
-        onTap: () => showAvailability(
-          context,
-          'Registo rápido',
-          'Este fluxo ainda depende da implementação de atividade e suas validações. Nenhum histórico será criado por esta ação.',
-        ),
+        onTap: () => openEvaluationGuide(context, EvaluationTopic.activity),
       ),
       FigmaActionCard(
         title: 'Os meus dispositivos',
         subtitle: 'Permissões, origem e sincronização',
         asset: 'activity',
         color: context.tf.soft,
-        onTap: () => showAvailability(
-          context,
-          'Os meus dispositivos',
-          'Ainda não há integração com sensores ou dispositivos. Nenhuma permissão será solicitada por esta tela.',
-        ),
+        onTap: () => openEvaluationGuide(context, EvaluationTopic.devices),
       ),
     ],
   );
@@ -375,11 +364,7 @@ class EvolutionOverview extends StatelessWidget {
         title: 'Medidas e objetivos',
         subtitle: 'Configuração ainda indisponível',
         asset: 'heart',
-        onTap: () => showAvailability(
-          context,
-          'Medidas e objetivos',
-          'Este fluxo ainda não persiste medidas ou metas. Nenhuma meta foi inferida a partir do seu perfil.',
-        ),
+        onTap: () => openEvaluationGuide(context, EvaluationTopic.firstAccess),
       ),
     ],
   );

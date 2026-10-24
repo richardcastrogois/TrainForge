@@ -19,6 +19,7 @@ class CatalogController extends ChangeNotifier {
     nextCursor = null;
     error = null;
     moreError = null;
+    loadingMore = false;
     busy = true;
     notifyListeners();
     try {
@@ -60,8 +61,10 @@ class CatalogController extends ChangeNotifier {
       moreError =
           'Não foi possível carregar a próxima página. Tente novamente.';
     } finally {
-      loadingMore = false;
-      if (!_disposed) notifyListeners();
+      if (!_disposed && generation == _generation) {
+        loadingMore = false;
+        notifyListeners();
+      }
     }
   }
 
