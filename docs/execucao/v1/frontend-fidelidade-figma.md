@@ -136,3 +136,8 @@ flowchart TD
 ```
 
 Swagger permaneceGo0.5.1/25operações. Recursos/códigoiOS estão preparados; execuçãoXcode continua pendente e não impede ocheckpointAndroid. Nenhum teste de carga comprova milhões simultâneos nestaetapa.
+
+
+## Ajuste24/10 — direção dark escolhida e rolagem
+
+Autor rejeitou as cores do primeirodark e escolheu a terceira proposta, Grafite e lima. A implementação usa fundo#111211, cartões#242823 (separação reforçada) e destaque#D8EB90. Tons antes coloridos ficam neutros nodark, navegação selecionada emlima;70–20–10 orienta a composição sem alegar medição exata. Android remove somente a decoração deesticar, preservando física/notificações/atualizar; iOS padrão porplataforma. [Implementação/evidências](frontend-dark-scroll.md), APK0.2.1+12. Não é novo contextoFigma nem validação nativa iOS27; claros/ícones/fontes e dados reais preservados.

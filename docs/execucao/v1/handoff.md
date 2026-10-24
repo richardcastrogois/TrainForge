@@ -1,8 +1,14 @@
 # Handoff vigente — frontend completo fiel ao Figma
 
-Atualizado em23/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mais recente do autor é **ajustar todo o frontend para ficar exatamente igual ao Figma antes de continuar novas funcionalidades**. Ler [plano visual](frontend-fidelidade-figma.md) e [inventário atual](frontend-figma-inventory.json). Não retomar uma nova história debackend por ignorar essa mudança.
+Atualizado em24/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mais recente do autor é **ajustar todo o frontend para ficar exatamente igual ao Figma antes de continuar novas funcionalidades**. Ler [plano visual](frontend-fidelidade-figma.md) e [inventário atual](frontend-figma-inventory.json). Não retomar uma nova história debackend por ignorar essa mudança.
 
-## Checkpoint visual atual
+## Checkpoint atual — Grafite e lima / rolagem
+
+APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Ajuste implementado](frontend-dark-scroll.md), [recibo](frontend-dark-scroll-verification.json), [APK atual](android-frontend-checkpoint.json). Autor escolheu terceira proposta e pediu rolagem conforme iOS27: superfícies neutras mais separadas e lima nos destaques; Android sem decoração de esticamento. Física e gesto de atualizar preservados; iOS padrãoFlutter mantido e testado porwidget, sem execução nativa iOS27. Não instalar GSAP/Motion, atualizar SDKs, pedir novoOAuth ou pesquisar novamente para esses ajustes. Figma permanece emquota. Conta/consumo reais preservados, sem novo consumo peloagente. Pontos07–12 continuam fora desta rodada.
+
+Base anterior42bb676431cabe5228fbc82960a35878dd214260 publicada comCI40052687262 bem-sucedida. Conferir Git real para o incremento posterior. Push de incrementos validados continua autorizado; sem deploy.
+
+## Checkpoint visual anterior — 23/10
 
 Pedido mais recente: implementar os pontosfrontend01–06 antes dos07–12. [Etapa e critérios](frontend-etapa-01-06.md), [recibo integrado](frontend-stage01-verification.json), [APK atual](android-frontend-checkpoint.json).
 

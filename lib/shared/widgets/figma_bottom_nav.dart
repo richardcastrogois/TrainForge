@@ -59,7 +59,9 @@ class FigmaBottomNav extends StatelessWidget {
                         message: destination.label,
                         child: Material(
                           color: destination == selected
-                              ? const Color(0xff246859)
+                              ? (Theme.of(context).brightness == Brightness.dark
+                                    ? context.tf.primary
+                                    : const Color(0xff246859))
                               : Colors.transparent,
                           borderRadius: BorderRadius.circular(28),
                           child: InkWell(
@@ -74,10 +76,11 @@ class FigmaBottomNav extends StatelessWidget {
                                     excludeFromSemantics: true,
                                     colorFilter:
                                         Theme.of(context).brightness ==
-                                                Brightness.dark &&
-                                            destination != selected
+                                            Brightness.dark
                                         ? ColorFilter.mode(
-                                            context.tf.primary,
+                                            destination == selected
+                                                ? context.tf.onPrimary
+                                                : context.tf.primary,
                                             BlendMode.srcIn,
                                           )
                                         : null,

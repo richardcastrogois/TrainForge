@@ -5549,7 +5549,7 @@
     },
     {
       "id": "authcontroller",
-      "label": "AuthController",
+      "label": "AuthController?",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -6325,7 +6325,7 @@
     },
     {
       "id": "datetime",
-      "label": "DateTime?",
+      "label": "DateTime",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -7269,7 +7269,7 @@
     },
     {
       "id": "color",
-      "label": "Color?",
+      "label": "Color",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -7360,94 +7360,6 @@
       "label": "plans_overview.dart",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app",
-      "label": "app.dart",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_trainforgeapp",
-      "label": "TrainForgeApp",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_trainforgeappstate",
-      "label": "_TrainForgeAppState",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_appearance",
-      "label": "appearance",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_authcontroller",
-      "label": "authController",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_nutritionrepository",
-      "label": "nutritionRepository",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_initialthemeapplied",
-      "label": "initialThemeApplied",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "app.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "app_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "app.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -7860,22 +7772,6 @@
       "_origin": "ast"
     },
     {
-      "id": "core_theme_trainforge_colors",
-      "label": "trainforge_colors.dart",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_trainforgecolors",
-      "label": "TrainForgeColors",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "themeextension",
       "label": "ThemeExtension",
       "file_type": "code",
@@ -7892,50 +7788,10 @@
       "_origin": "ast"
     },
     {
-      "id": "core_theme_trainforge_colors_trainforgecontext",
-      "label": "TrainForgeContext",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "buildcontext",
       "label": "BuildContext",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_values",
-      "label": "values",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_light",
-      "label": "light",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_dark",
-      "label": "dark",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_background",
-      "label": "background",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -7948,154 +7804,10 @@
       "_origin": "ast"
     },
     {
-      "id": "core_theme_trainforge_colors_surface",
-      "label": "surface",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_ink",
-      "label": "ink",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_muted",
-      "label": "muted",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_cardmuted",
-      "label": "cardMuted",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_primary",
-      "label": "primary",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_onprimary",
-      "label": "onPrimary",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_accent",
-      "label": "accent",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_nutrition",
-      "label": "nutrition",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_soft",
-      "label": "soft",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_blue",
-      "label": "blue",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_yellow",
-      "label": "yellow",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_pink",
-      "label": "pink",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_outline",
-      "label": "outline",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_navsurface",
-      "label": "navSurface",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_navborder",
-      "label": "navBorder",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_tf",
-      "label": "tf",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "trainforgecolors_get",
       "label": "TrainForgeColors get",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_copywith",
-      "label": "copyWith",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_trainforge_colors_lerp",
-      "label": "lerp",
-      "file_type": "code",
-      "source_file": "core/theme/trainforge_colors.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -8908,202 +8620,10 @@
       "_origin": "ast"
     },
     {
-      "id": "features_home_presentation_pages_today_page",
-      "label": "today_page.dart",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_todaypage",
-      "label": "TodayPage",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_todaypagestate",
-      "label": "_TodayPageState",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_week",
-      "label": "_Week",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_metric",
-      "label": "_Metric",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_controller",
-      "label": "controller",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "dailysummarycontroller",
       "label": "DailySummaryController",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_name",
-      "label": "name",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_openactivity",
-      "label": "openActivity",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_openday",
-      "label": "openDay",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_midnight",
-      "label": "midnight",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_days",
-      "label": "days",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_months",
-      "label": "months",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_now",
-      "label": "now",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_onselected",
-      "label": "onSelected",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_color",
-      "label": "color",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_ontap",
-      "label": "onTap",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_schedulemidnight",
-      "label": "scheduleMidnight",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_didchangeapplifecyclestate",
-      "label": "didChangeAppLifecycleState",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_home_presentation_pages_today_page_todaydate",
-      "label": "todayDate",
-      "file_type": "code",
-      "source_file": "features/home/presentation/pages/today_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -9948,62 +9468,6 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav",
-      "label": "figma_bottom_nav.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_trainforgedestination",
-      "label": "TrainForgeDestination",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_figmabottomnav",
-      "label": "FigmaBottomNav",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_asset",
-      "label": "asset",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_selected",
-      "label": "selected",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_onselected",
-      "label": "onSelected",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_components",
       "label": "figma_components.dart",
       "file_type": "code",
@@ -10560,6 +10024,590 @@
       "label": "build",
       "file_type": "code",
       "source_file": "shared/widgets/startup_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app",
+      "label": "app.dart",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_trainforgeapp",
+      "label": "TrainForgeApp",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_trainforgeappstate",
+      "label": "_TrainForgeAppState",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_appearance",
+      "label": "appearance",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "appearancecontroller",
+      "label": "AppearanceController?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_authcontroller",
+      "label": "authController",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nutritionrepository",
+      "label": "nutritionRepository",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_initialthemeapplied",
+      "label": "initialThemeApplied",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "app_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "app.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_scroll_trainforge_scroll_behavior_dart",
+      "label": "core/scroll/trainforge_scroll_behavior.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_scroll_trainforge_scroll_behavior",
+      "label": "trainforge_scroll_behavior.dart",
+      "file_type": "code",
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_scroll_trainforge_scroll_behavior_trainforgescrollbehavior",
+      "label": "TrainForgeScrollBehavior",
+      "file_type": "code",
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "materialscrollbehavior",
+      "label": "MaterialScrollBehavior",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_scroll_trainforge_scroll_behavior_buildoverscrollindicator",
+      "label": "buildOverscrollIndicator",
+      "file_type": "code",
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors",
+      "label": "trainforge_colors.dart",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_trainforgecolors",
+      "label": "TrainForgeColors",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_trainforgecontext",
+      "label": "TrainForgeContext",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_values",
+      "label": "values",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_light",
+      "label": "light",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_dark",
+      "label": "dark",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_background",
+      "label": "background",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_surface",
+      "label": "surface",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_ink",
+      "label": "ink",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_muted",
+      "label": "muted",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_cardmuted",
+      "label": "cardMuted",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_primary",
+      "label": "primary",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_onprimary",
+      "label": "onPrimary",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_accent",
+      "label": "accent",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_nutrition",
+      "label": "nutrition",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_soft",
+      "label": "soft",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_blue",
+      "label": "blue",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_yellow",
+      "label": "yellow",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_pink",
+      "label": "pink",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_outline",
+      "label": "outline",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_navsurface",
+      "label": "navSurface",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_navborder",
+      "label": "navBorder",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_tf",
+      "label": "tf",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_copywith",
+      "label": "copyWith",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_trainforge_colors_lerp",
+      "label": "lerp",
+      "file_type": "code",
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page",
+      "label": "today_page.dart",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_todaypage",
+      "label": "TodayPage",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_todaypagestate",
+      "label": "_TodayPageState",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_week",
+      "label": "_Week",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_metric",
+      "label": "_Metric",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_openactivity",
+      "label": "openActivity",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_openday",
+      "label": "openDay",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_midnight",
+      "label": "midnight",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_days",
+      "label": "days",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_months",
+      "label": "months",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_now",
+      "label": "now",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_onselected",
+      "label": "onSelected",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_schedulemidnight",
+      "label": "scheduleMidnight",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_didchangeapplifecyclestate",
+      "label": "didChangeAppLifecycleState",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_home_presentation_pages_today_page_todaydate",
+      "label": "todayDate",
+      "file_type": "code",
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav",
+      "label": "figma_bottom_nav.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "label": "TrainForgeDestination",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "label": "FigmaBottomNav",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_selected",
+      "label": "selected",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_onselected",
+      "label": "onSelected",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
       "_origin": "ast"
     }
@@ -20517,296 +20565,6 @@
       "_origin": "ast"
     },
     {
-      "source": "app",
-      "target": "app_trainforgeapp",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app_trainforgeapp",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_trainforgeappstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app_trainforgeappstate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app_trainforgeappstate",
-      "target": "app_trainforgeapp",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_appearance",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "core_theme_appearance_controller_appearancecontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_authcontroller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "features_auth_presentation_auth_controller_authcontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_nutritionrepository",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "nutritionrepository",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_initialthemeapplied",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_initstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "app_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "package_flutter_services_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "core_theme_appearance_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "core_motion_app_motion_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "features_auth_presentation_auth_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "features_nutrition_domain_nutrition_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "shared_widgets_auth_gate_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "shared_widgets_startup_page_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "app",
-      "target": "systemuioverlaystyle",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
       "source": "core_motion_app_motion",
       "target": "core_motion_app_motion_appmotion",
       "relation": "defines",
@@ -21506,385 +21264,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_trainforgecolors",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors_trainforgecolors",
-      "target": "themeextension",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors_trainforgecolors",
-      "target": "core_theme_trainforge_colors_trainforgecolors",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors_trainforgecolors",
-      "target": "annotation_immutable",
-      "relation": "configures",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_trainforgecontext",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors_trainforgecontext",
-      "target": "buildcontext",
-      "relation": "extends",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_values",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "map",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_light",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "static_const",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_dark",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_background",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "color_get",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_surface",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_ink",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_muted",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_cardmuted",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_primary",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_onprimary",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_accent",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_nutrition",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_soft",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_blue",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_yellow",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_pink",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_outline",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_navsurface",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_navborder",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_tf",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "trainforgecolors_get",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_copywith",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_lerp",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_trainforge_colors",
-      "target": "core_theme_trainforge_colors_trainforgecolors",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/trainforge_colors.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "type_lookup",
@@ -23802,498 +23181,6 @@
       "source_location": null,
       "weight": 1.0,
       "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_todaypage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_todaypage",
-      "target": "statefulwidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_todaypagestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_todaypagestate",
-      "target": "state",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_todaypagestate",
-      "target": "features_home_presentation_pages_today_page_todaypage",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_todaypagestate",
-      "target": "widgetsbindingobserver",
-      "relation": "mixes_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_week",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_week",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_metric",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page_metric",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_controller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "dailysummarycontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_name",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_openactivity",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "voidcallback_opennutrition_opencatalog",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_openday",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "valuechanged",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_midnight",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "timer",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_days",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_months",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_now",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "datetime",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_onselected",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_label",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "string_value",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_color",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "color",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_ontap",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "voidcallback",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_createstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_initstate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_schedulemidnight",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_didchangeapplifecyclestate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "features_home_presentation_pages_today_page_todaydate",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "dart_async",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_trainforge_features_nutrition_domain_nutrition_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_trainforge_shared_widgets_app_loading_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_home_presentation_pages_today_page",
-      "target": "package_trainforge_shared_widgets_figma_components_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/home/presentation/pages/today_page.dart",
-      "source_location": null,
-      "weight": 1.0,
       "_origin": "ast"
     },
     {
@@ -26389,152 +25276,6 @@
       "_origin": "ast"
     },
     {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_figmabottomnav",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav_figmabottomnav",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_asset",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "string_label",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_selected",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_onselected",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "valuechanged",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "package_flutter_svg_flutter_svg_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
       "source": "shared_widgets_figma_components",
       "target": "shared_widgets_figma_components_figmacontent",
       "relation": "defines",
@@ -28092,6 +26833,1368 @@
       "source_location": null,
       "weight": 1.0,
       "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_trainforgeapp",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_trainforgeapp",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_trainforgeappstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_trainforgeappstate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_trainforgeappstate",
+      "target": "app_trainforgeapp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_appearance",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "appearancecontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_authcontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "authcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_nutritionrepository",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "nutritionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_initialthemeapplied",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "app_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "core_theme_appearance_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "core_motion_app_motion_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "core_scroll_trainforge_scroll_behavior_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "features_auth_presentation_auth_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "features_nutrition_domain_nutrition_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "shared_widgets_auth_gate_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "shared_widgets_startup_page_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app",
+      "target": "systemuioverlaystyle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_scroll_trainforge_scroll_behavior",
+      "target": "core_scroll_trainforge_scroll_behavior_trainforgescrollbehavior",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_scroll_trainforge_scroll_behavior_trainforgescrollbehavior",
+      "target": "materialscrollbehavior",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_scroll_trainforge_scroll_behavior",
+      "target": "core_scroll_trainforge_scroll_behavior_buildoverscrollindicator",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_scroll_trainforge_scroll_behavior",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/scroll/trainforge_scroll_behavior.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_trainforgecolors",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors_trainforgecolors",
+      "target": "themeextension",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors_trainforgecolors",
+      "target": "core_theme_trainforge_colors_trainforgecolors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors_trainforgecolors",
+      "target": "annotation_immutable",
+      "relation": "configures",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_trainforgecontext",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors_trainforgecontext",
+      "target": "buildcontext",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_values",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "map",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_light",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "static_const",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_dark",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_background",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "color_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_surface",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_ink",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_muted",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_cardmuted",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_primary",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_onprimary",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_accent",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_nutrition",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_soft",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_blue",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_yellow",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_pink",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_outline",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_navsurface",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_navborder",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_tf",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "trainforgecolors_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_copywith",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_lerp",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_trainforge_colors",
+      "target": "core_theme_trainforge_colors_trainforgecolors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/trainforge_colors.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_todaypage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_todaypage",
+      "target": "statefulwidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_todaypagestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_todaypagestate",
+      "target": "state",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_todaypagestate",
+      "target": "features_home_presentation_pages_today_page_todaypage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_todaypagestate",
+      "target": "widgetsbindingobserver",
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_week",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_week",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_metric",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page_metric",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_controller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "dailysummarycontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_openactivity",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "voidcallback_opennutrition_opencatalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_openday",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "valuechanged",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_midnight",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "timer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_days",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_months",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_now",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "datetime",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_onselected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_label",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "string_value",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_color",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "color",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_ontap",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "voidcallback",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_createstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_schedulemidnight",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_didchangeapplifecyclestate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "features_home_presentation_pages_today_page_todaydate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_trainforge_features_nutrition_domain_nutrition_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_trainforge_shared_widgets_app_loading_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_home_presentation_pages_today_page",
+      "target": "package_trainforge_shared_widgets_figma_components_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/home/presentation/pages/today_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav_figmabottomnav",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_asset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "string_label",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_selected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_trainforgedestination",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_onselected",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "valuechanged",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_flutter_svg_flutter_svg_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
       "_origin": "ast"
     }
   ],
