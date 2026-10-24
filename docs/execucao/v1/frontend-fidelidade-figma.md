@@ -113,3 +113,26 @@ Oformulário mantém todos os campos montados ao rolar, inclusive com teclado/te
 Em23/10 oconectorFigma retornou limite do planoStarter para get_design_context de **104:1260 · cadastro manual**. Contextos de104:1211 e156:14612 da mesma rodada foram recebidos; o104:1233 já estava disponível. Não repetir chamadas, comprar plano, contornar quota ou implementar famílias sem contexto suficiente. Ocadastro próprio funcional permanece acessível noapp; sua conversão visual, detalhes/histórico/privacidade/biblioteca e demais famílias seguem pendentes de referências suficientes e conferência. Oautor pode continuar avaliando os incrementos locais; esta pendência não exige hospedagem nem recriarOAuth.
 
 Não afirmar que todo o front está exatamente igual ou encerrar022/025 devido a estes componentes. Continuar primeiro pelas referências já obtidas; obter os contextos faltantes quando oacesso voltar ou oautor fornecer as referências, sem pesquisa ampla deAPIs.
+
+## Etapa atual — pontos01–06
+
+Pedido posterior doautor: encerrar identidade nativa, abertura, Hoje, loaders, transições e dark antes dospontos07–12. [Plano/evidências](frontend-etapa-01-06.md). APK0.2.0+11 reúne a implementação técnica desses seis pontos; oautor confirmou marcaTF atual naabertura e dark derivado dessaidentidade. Pontos01–06 concluídos no checkpointAndroid conforme a direção aprovada; seus contextos Figma nãoobtidos não foram tratados como comparação exata. Nenhuma nova função backend ou prática foi liberada.
+
+Aparência claro/escuro/sistema agora persiste somente noaparelho e independe daconta; isso substitui a lacuna de aparência registrada nos snapshots anteriores, sem concluir demaispreferências/objetivos/localidade. Hoje mostra semana/data reais abrindo diário por data; nenhum treino demonstrativo. Componentes de carregamento e movimento respeitam texto ampliado/redução de movimento; saída deconta não mantém tela privada antiga emtransição.
+
+```mermaid
+flowchart TD
+  Native["Ícone e splash TF nativos"] --> Appearance["Aparência local: sistema / claro / escuro"]
+  Appearance --> Restore["Restauração de sessão limitada e recuperável"]
+  Restore --> Entry["Entrada e retentativa"]
+  Restore --> Shell["ProductShell por identidade"]
+  Shell --> Today["Hoje: data, semana e estados reais"]
+  Today --> Day["Diário alimentar na data escolhida"]
+  Today --> Summary["Go: resumo real sem total inventado"]
+  Shell --> Profile["Perfil / Aparência"]
+  Profile --> Appearance
+  Motion["Movimento reduzido, sem reter conteúdo privado antigo"] --> Shell
+  Loaders["Carga / erro / vazio / parcial / envio"] --> Today
+```
+
+Swagger permaneceGo0.5.1/25operações. Recursos/códigoiOS estão preparados; execuçãoXcode continua pendente e não impede ocheckpointAndroid. Nenhum teste de carga comprova milhões simultâneos nestaetapa.

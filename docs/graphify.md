@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização23/10: frontend pontos01–06
+
+79arquivosDart,1179nós/1573arestas;26arquivos alterados/novos,53inalterados,0removidos. Update incremental code-only/AST e HTMLexportado. Sem clusterização, leitura semântica ou custoLLM. Backup em.local/graphify-backup-20261023-frontend-stage01-06. Grafo reflete bootstrap, aparência, movimento, Hoje e loaders; não comprova aceite visual/nativoiOS ou escala.
+
 ## Atualização23/10: busca alimentar e porção
 
 72arquivosDart,1038nós/1357arestas;3arquivos alterados,69inalterados,0removidos. Update incremental code-only/AST e HTMLexportado, sem semântica/clusterização. Backup em.local/graphify-backup-20261023-frontend-food.

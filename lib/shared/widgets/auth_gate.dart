@@ -1,3 +1,5 @@
+import 'package:trainforge/core/motion/app_motion.dart';
+import 'startup_page.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/auth/data/auth_repository.dart';
@@ -50,19 +52,21 @@ class _AuthGateState extends State<AuthGate> {
     builder: (context, _) {
       final profile = controller.profile;
       if (controller.busy && profile == null) {
-        return const Scaffold(
-          body: Center(
-            child: CircularProgressIndicator(
-              semanticsLabel: 'Confirmando sessão',
-            ),
-          ),
+        return const StartupPage(label: 'Confirmando sua sessão');
+      }
+      if (profile == null) {
+        return AppAppear(
+          key: const ValueKey('signed-out'),
+          child: AuthPage(controller: controller),
         );
       }
-      if (profile == null) return AuthPage(controller: controller);
-      return ProductShell(
+      return AppAppear(
         key: ValueKey(profile.id),
-        controller: controller,
-        nutritionRepository: widget.nutritionRepository,
+        child: ProductShell(
+          key: ValueKey(profile.id),
+          controller: controller,
+          nutritionRepository: widget.nutritionRepository,
+        ),
       );
     },
   );

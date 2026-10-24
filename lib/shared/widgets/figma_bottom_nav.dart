@@ -1,3 +1,4 @@
+import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -27,8 +28,8 @@ class FigmaBottomNav extends StatelessWidget {
     height: 66,
     child: DecoratedBox(
       decoration: BoxDecoration(
-        color: const Color(0xffe8f0e8),
-        border: Border.all(color: const Color(0xffc5d9cf)),
+        color: context.tf.navSurface,
+        border: Border.all(color: context.tf.navBorder),
         borderRadius: BorderRadius.circular(33),
         boxShadow: const [
           BoxShadow(
@@ -71,6 +72,15 @@ class FigmaBottomNav extends StatelessWidget {
                                   child: SvgPicture.asset(
                                     'assets/figma/${destination.asset}-${destination == selected ? 'active' : 'inactive'}.svg',
                                     excludeFromSemantics: true,
+                                    colorFilter:
+                                        Theme.of(context).brightness ==
+                                                Brightness.dark &&
+                                            destination != selected
+                                        ? ColorFilter.mode(
+                                            context.tf.primary,
+                                            BlendMode.srcIn,
+                                          )
+                                        : null,
                                   ),
                                 ),
                               ),

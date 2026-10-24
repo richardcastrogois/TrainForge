@@ -144,20 +144,20 @@ class _EntryFormPageState extends State<EntryFormPage> {
                 subtitle: widget.food.displayName,
               ),
               FigmaSection(
-                color: TrainForgeTheme.accent,
+                color: context.tf.accent,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    const Text(
+                    Text(
                       'Quantidade',
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
                     TextFormField(
-                      key: const Key('entry-quantity'),
+                      key: Key('entry-quantity'),
                       controller: quantity,
                       enabled: !locked,
                       maxLength: 14,
@@ -165,7 +165,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         decimal: true,
                       ),
                       textInputAction: TextInputAction.done,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Quantidade consumida',
                         hintText: 'Informe a quantidade',
                       ),
@@ -174,15 +174,15 @@ class _EntryFormPageState extends State<EntryFormPage> {
                           ? null
                           : 'Informe uma quantidade maior que zero, até 6 casas decimais.',
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
                     DropdownButtonFormField<String>(
                       initialValue: unit,
                       isExpanded: true,
                       itemHeight: null,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Unidade da quantidade',
                       ),
-                      items: const [
+                      items: [
                         DropdownMenuItem(value: 'g', child: Text('Gramas (g)')),
                         DropdownMenuItem(
                           value: 'ml',
@@ -196,15 +196,15 @@ class _EntryFormPageState extends State<EntryFormPage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               DropdownButtonFormField<String>(
                 initialValue: evidence,
                 isExpanded: true,
                 itemHeight: null,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Como obteve a quantidade?',
                 ),
-                items: const [
+                items: [
                   DropdownMenuItem(
                     value: 'measured',
                     child: Text('Medi com balança ou recipiente'),
@@ -218,10 +218,10 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     v == null ? 'Escolha medida ou estimativa.' : null,
                 onChanged: locked ? null : (v) => setState(() => evidence = v),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               FigmaSection(
-                color: TrainForgeTheme.nutrition,
-                child: const Column(
+                color: context.tf.nutrition,
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -237,36 +237,36 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       style: TextStyle(
                         fontSize: 12,
                         height: 1.35,
-                        color: TrainForgeTheme.muted,
+                        color: context.tf.cardMuted,
                       ),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               FigmaSection(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    const Text(
+                    Text(
                       'Origem e preparação',
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 4),
+                    SizedBox(height: 4),
                     Text(
                       widget.food.basisLabel,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 12,
                         height: 1.35,
-                        color: TrainForgeTheme.muted,
+                        color: context.tf.muted,
                       ),
                     ),
                     ExpansionTile(
                       tilePadding: EdgeInsets.zero,
-                      title: const Text('Fonte e versão'),
+                      title: Text('Fonte e versão'),
                       children: [
                         SelectableText(
                           'Origem: ${widget.food.sourceId}\nVersão: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.attribution}\n${widget.food.source.license}',
@@ -274,54 +274,54 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       ],
                     ),
                     TextFormField(
-                      key: const Key('entry-preparation'),
+                      key: Key('entry-preparation'),
                       controller: preparation,
                       enabled: !locked,
                       maxLength: 180,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Preparo observado (opcional)',
                       ),
                     ),
-                    const Text(
+                    Text(
                       'O preparo é uma anotação sua e não altera a composição da fonte. Não convertemos gramas em mililitros sem densidade comprovada.',
                       style: TextStyle(
                         fontSize: 12,
                         height: 1.35,
-                        color: TrainForgeTheme.muted,
+                        color: context.tf.muted,
                       ),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               OutlinedButton(
                 onPressed: locked ? null : pickDate,
                 child: Text(
                   '${localDay(when)} · ${when.hour.toString().padLeft(2, '0')}:${when.minute.toString().padLeft(2, '0')} · ${offsetZone(when)}',
                 ),
               ),
-              const Text(
+              Text(
                 'Data e hora do aparelho, confirmadas por você.',
                 style: TextStyle(
                   fontSize: 12,
                   height: 1.35,
-                  color: TrainForgeTheme.muted,
+                  color: context.tf.muted,
                 ),
               ),
-              const SizedBox(height: 12),
-              const Text(
+              SizedBox(height: 12),
+              Text(
                 'Confirme somente o que você consumiu. Não há dieta prescrita nem compensação por exercícios. Quantidades estimadas serão identificadas como estimadas.',
                 style: TextStyle(
                   fontSize: 12,
                   height: 1.35,
-                  color: TrainForgeTheme.muted,
+                  color: context.tf.muted,
                 ),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               if (error != null)
                 Semantics(liveRegion: true, child: Text(error!)),
               if (pending != null && !busy)
-                const Text(
+                Text(
                   'A resposta ainda não foi confirmada. Tente novamente com os mesmos dados ou volte para conferir o histórico.',
                 ),
               FilledButton(
@@ -432,24 +432,22 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
   Widget build(BuildContext context) {
     final locked = busy || pending != null;
     return Scaffold(
-      appBar: AppBar(title: const Text('Cadastrar alimento próprio')),
+      appBar: AppBar(title: Text('Cadastrar alimento próprio')),
       body: SafeArea(
         child: Form(
           key: form,
           child: ListView(
             padding: const EdgeInsets.all(16),
             children: [
-              const Text(
+              Text(
                 'Cadastro particular, separado do catálogo público. Criar este alimento não registra consumo e não significa revisão editorial ou clínica.',
               ),
               TextFormField(
-                key: const Key('own-food-name'),
+                key: Key('own-food-name'),
                 controller: name,
                 enabled: !locked,
                 maxLength: 180,
-                decoration: const InputDecoration(
-                  labelText: 'Nome do alimento',
-                ),
+                decoration: InputDecoration(labelText: 'Nome do alimento'),
                 validator: (v) =>
                     (v ?? '').trim().isEmpty ? 'Informe o nome.' : null,
               ),
@@ -457,11 +455,11 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                 controller: preparation,
                 enabled: !locked,
                 maxLength: 180,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Preparo declarado (opcional)',
                 ),
               ),
-              const Text(
+              Text(
                 'Se souber, informe a base a que os nutrientes se referem. Deixe em branco o que não conhece. Ausência não significa zero.',
               ),
               TextFormField(
@@ -471,7 +469,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                 keyboardType: const TextInputType.numberWithOptions(
                   decimal: true,
                 ),
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Quantidade da base (opcional)',
                 ),
                 validator: (v) =>
@@ -483,8 +481,8 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
               DropdownButtonFormField<String>(
                 initialValue: unit,
                 isExpanded: true,
-                decoration: const InputDecoration(labelText: 'Unidade da base'),
-                items: const [
+                decoration: InputDecoration(labelText: 'Unidade da base'),
+                items: [
                   DropdownMenuItem(value: 'g', child: Text('Gramas (g)')),
                   DropdownMenuItem(value: 'ml', child: Text('Mililitros (ml)')),
                 ],
@@ -501,7 +499,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                           controller: nutrients[i].name,
                           enabled: !locked,
                           maxLength: 100,
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             labelText: 'Nome do nutriente',
                           ),
                           validator: (v) => (v ?? '').trim().isEmpty
@@ -515,7 +513,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                           keyboardType: const TextInputType.numberWithOptions(
                             decimal: true,
                           ),
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             labelText: 'Valor na base (opcional)',
                           ),
                           validator: (v) =>
@@ -527,7 +525,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                         DropdownButtonFormField<String>(
                           initialValue: nutrients[i].unit,
                           isExpanded: true,
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             labelText: 'Unidade do nutriente',
                           ),
                           items: ['g', 'mg', 'µg', 'kcal', 'kJ']
@@ -548,7 +546,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                                     nutrients.removeAt(i).dispose();
                                   });
                                 },
-                          child: const Text('Remover este campo'),
+                          child: Text('Remover este campo'),
                         ),
                       ],
                     ),
@@ -558,14 +556,12 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                 onPressed: locked || nutrients.length >= 32
                     ? null
                     : () => setState(() => nutrients.add(_NutrientDraft())),
-                child: const Text(
-                  'Adicionar nutriente conhecido ou desconhecido',
-                ),
+                child: Text('Adicionar nutriente conhecido ou desconhecido'),
               ),
               if (error != null)
                 Semantics(liveRegion: true, child: Text(error!)),
               if (pending != null && !busy)
-                const Text(
+                Text(
                   'Resposta não confirmada. Repita com os mesmos dados para evitar duplicação.',
                 ),
               FilledButton(

@@ -1,3 +1,4 @@
+import 'package:trainforge/core/theme/appearance_page.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
@@ -14,16 +15,16 @@ class AuthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = _controller;
-    if (controller == null) return const AuthGate();
+    if (controller == null) return AuthGate();
     return Scaffold(
       body: SafeArea(
         child: Align(
           alignment: Alignment.topCenter,
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 480),
+            constraints: BoxConstraints(maxWidth: 480),
             child: Column(
               children: [
-                const FigmaHeader(),
+                FigmaHeader(),
                 Expanded(
                   child: FigmaContent(
                     title: 'Que bom ter-te por cá.',
@@ -36,12 +37,12 @@ class AuthPage extends StatelessWidget {
                         ),
                       ),
                       Material(
-                        color: TrainForgeTheme.accent,
+                        color: context.tf.accent,
                         borderRadius: BorderRadius.circular(22),
                         child: InkWell(
                           onTap: controller.busy ? null : controller.login,
                           borderRadius: BorderRadius.circular(22),
-                          child: const Padding(
+                          child: Padding(
                             padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +60,7 @@ class AuthPage extends StatelessWidget {
                                   'Criar conta com Google',
                                   style: TextStyle(
                                     fontSize: 12,
-                                    color: TrainForgeTheme.muted,
+                                    color: context.tf.cardMuted,
                                     height: 1.35,
                                   ),
                                 ),
@@ -68,12 +69,12 @@ class AuthPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const Text(
+                      Text(
                         'Neste incremento, o acesso é por Google. E-mail e Apple ainda não estão disponíveis.',
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
-                          color: TrainForgeTheme.muted,
+                          color: context.tf.muted,
                         ),
                       ),
                       if (controller.message != null) ...[
@@ -86,10 +87,10 @@ class AuthPage extends StatelessWidget {
                             onPressed: controller.busy
                                 ? null
                                 : controller.retry,
-                            child: const Text('Tentar novamente'),
+                            child: Text('Tentar novamente'),
                           ),
                       ],
-                      const Text(
+                      Text(
                         'Explorar antes de entrar',
                         style: TextStyle(
                           fontSize: 17,
@@ -103,23 +104,30 @@ class AuthPage extends StatelessWidget {
                             : () => Navigator.push<void>(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (_) => const CatalogPage(),
+                                  builder: (_) => CatalogPage(),
                                 ),
                               ),
-                        child: const Text('Consultar biblioteca sem entrar'),
+                        child: Text('Consultar biblioteca sem entrar'),
                       ),
                       OutlinedButton(
                         onPressed: controller.busy
                             ? null
                             : () => Navigator.push<void>(
                                 context,
-                                MaterialPageRoute(
-                                  builder: (_) => const FoodPage(),
-                                ),
+                                MaterialPageRoute(builder: (_) => FoodPage()),
                               ),
-                        child: const Text(
+                        child: Text(
                           'Consultar alimentos sem registrar consumo',
                         ),
+                      ),
+                      TextButton(
+                        onPressed: () => Navigator.push<void>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const AppearancePage(),
+                          ),
+                        ),
+                        child: const Text('Aparência'),
                       ),
                       TextButton(
                         onPressed: controller.busy
@@ -127,10 +135,10 @@ class AuthPage extends StatelessWidget {
                             : () => Navigator.push<void>(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (_) => const PrivacyPage(),
+                                  builder: (_) => PrivacyPage(),
                                 ),
                               ),
-                        child: const Text('Privacidade e dados'),
+                        child: Text('Privacidade e dados'),
                       ),
                     ],
                   ),

@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -104,7 +105,7 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
         future: pending,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: AppLoading(label: 'Consultando detalhe'));
           }
           if (snapshot.hasError || !snapshot.hasData) {
             final error = snapshot.error;

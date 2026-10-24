@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import '../domain/food_reference.dart';
 
@@ -58,9 +59,7 @@ class _FoodDetailPageState extends State<FoodDetailPage>
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
             return const Center(
-              child: CircularProgressIndicator(
-                semanticsLabel: 'Consultando composição',
-              ),
+              child: AppLoading(label: 'Consultando composição'),
             );
           }
           if (!snapshot.hasData) {

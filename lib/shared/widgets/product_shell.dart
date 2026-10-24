@@ -1,3 +1,5 @@
+import 'package:trainforge/core/motion/app_motion.dart';
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
 import 'package:flutter/material.dart';
 import 'figma_components.dart';
@@ -29,11 +31,16 @@ class ProductShell extends StatefulWidget {
 }
 
 class _ProductShellState extends State<ProductShell>
-    with WidgetsBindingObserver {
+    with WidgetsBindingObserver, SingleTickerProviderStateMixin {
   TrainForgeDestination selected = TrainForgeDestination.today;
   final visited = {TrainForgeDestination.today};
   late final String accountId;
   late final DailySummaryController daily;
+  late final AnimationController tabMotion = AnimationController(
+    vsync: this,
+    duration: AppMotion.duration,
+    value: 1,
+  );
   @override
   void initState() {
     super.initState();
@@ -62,16 +69,18 @@ class _ProductShellState extends State<ProductShell>
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    tabMotion.dispose();
     daily.dispose();
     super.dispose();
   }
 
-  Future<void> openNutrition() async {
+  Future<void> openNutrition({DateTime? day}) async {
     await Navigator.push<void>(
       context,
       MaterialPageRoute(
         builder: (_) => NutritionPage(
           accountId: accountId,
+          initialDate: day,
           currentAccountId: () => widget.controller.profile?.id,
           sessionChanges: widget.controller,
           repository: widget.nutritionRepository,
@@ -90,6 +99,11 @@ class _ProductShellState extends State<ProductShell>
   void select(TrainForgeDestination value) {
     if (value == selected) return;
     FocusManager.instance.primaryFocus?.unfocus();
+    if (AppMotion.reduced(context)) {
+      tabMotion.value = 1;
+    } else {
+      tabMotion.forward(from: 0);
+    }
     setState(() {
       selected = value;
       visited.add(value);
@@ -104,6 +118,7 @@ class _ProductShellState extends State<ProductShell>
         controller: daily,
         name: widget.controller.profile!.name,
         food: false,
+        openDay: (day) => openNutrition(day: day),
         openNutrition: openNutrition,
         openCatalog: openCatalog,
         openActivity: () => select(TrainForgeDestination.activity),
@@ -156,9 +171,7 @@ class _ProductShellState extends State<ProductShell>
                     ),
                   ),
                   if (widget.controller.busy)
-                    const LinearProgressIndicator(
-                      semanticsLabel: 'Confirmando sessão',
-                    ),
+                    const AppProgress(label: 'Confirmando sessão'),
                   if (widget.controller.message != null)
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -170,18 +183,23 @@ class _ProductShellState extends State<ProductShell>
                       ),
                     ),
                   Expanded(
-                    child: IndexedStack(
-                      index: selected.index,
-                      children: [
-                        for (final value in TrainForgeDestination.values)
-                          TickerMode(
-                            enabled: value == selected,
-                            child: ExcludeFocus(
-                              excluding: value != selected,
-                              child: page(value),
+                    child: FadeTransition(
+                      opacity: tabMotion.drive(
+                        CurveTween(curve: Curves.easeOutCubic),
+                      ),
+                      child: IndexedStack(
+                        index: selected.index,
+                        children: [
+                          for (final value in TrainForgeDestination.values)
+                            TickerMode(
+                              enabled: value == selected,
+                              child: ExcludeFocus(
+                                excluding: value != selected,
+                                child: page(value),
+                              ),
                             ),
-                          ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Padding(

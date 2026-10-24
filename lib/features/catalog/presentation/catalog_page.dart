@@ -1,3 +1,5 @@
+import 'package:trainforge/core/motion/app_motion.dart';
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import '../data/catalog_repository.dart';
 import '../domain/catalog_entry.dart';
@@ -42,6 +44,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
     var selected = controller.filters;
     final result = await showModalBottomSheet<CatalogFilters>(
       context: context,
+      sheetAnimationStyle: AppMotion.style(context),
       isScrollControlled: true,
       builder: (context) => SafeArea(
         child: SingleChildScrollView(
@@ -275,9 +278,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                   const SliverFillRemaining(
                     hasScrollBody: false,
                     child: Center(
-                      child: CircularProgressIndicator(
-                        semanticsLabel: 'Consultando biblioteca',
-                      ),
+                      child: AppLoading(label: 'Consultando biblioteca'),
                     ),
                   )
                 else if (controller.error != null)

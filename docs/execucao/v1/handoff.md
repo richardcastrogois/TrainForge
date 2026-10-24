@@ -4,13 +4,15 @@ Atualizado em23/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mai
 
 ## Checkpoint visual atual
 
-**APKdebug0.1.7+10 instalado,70testesFlutter/analyze0issues.** Visual01 trouxe Inter/OFL,22SVGs originais, shellnovoGo/cincoabas/entrada/perfil/resumo diário real. Visual02 alinhou busca alimentar eporção aos contextosFigma104:1211/104:1233, com quantidade/unidade/evidência/preparo/data/fuso explícitos. Formulário mantém estado/validação de campos fora daárea visível; tecladoAndroid nativo. [Visual01](frontend-shell-verification.json), [visual02](frontend-food-verification.json), [APK atual](android-frontend-checkpoint.json).
+Pedido mais recente: implementar os pontosfrontend01–06 antes dos07–12. [Etapa e critérios](frontend-etapa-01-06.md), [recibo integrado](frontend-stage01-verification.json), [APK atual](android-frontend-checkpoint.json).
 
-Instalação preservou conta e1consumo real. Navegação de leitura noAndroid passou porDiário → histórico → busca comdadosGo reais → detalhe de referência → formulário deporção vazio/habilitado; voltou aHoje. Agente não digitou quantidade nem confirmou consumo. Não apagar oregistro por inferência.
+**APKdebug0.2.0+11 instalado,85testesFlutter/analyze0issues.** ÍconeTF/nome/splash nativos, inicialização com preferência antes dasessão e restauração limitada/recuperável, Hoje com datas/semana e resumoGo reais, carregamentos/estados, transições/redução de movimento e tema claro/escuro/sistema persistido noaparelho. Aparência acessível noavatar → Preferências e naentrada semlogin. Preferência separada dascredenciais; nenhuma novaAPI/migration/dado deconsumo.
 
-**Frontend completo/exatamente igual continua pendente.** Em23/10 oconectorFigma atingiu quotaStarter ao pedir104:1260/cadastro manual. Contextos de busca/porção/entrada/shell/perfil já lidos continuam aproveitáveis. Não comprar plano nem contornar quota; registrar e obter referências faltantes quando disponíveis. Próxima fatia: detalhe/histórico/formulários próprios/privacidade/biblioteca/demais famílias, com design context+screenshots suficientes antes de converter. Nenhuma nova API/migration/pesquisa.
+**Pontos01–06 concluídos no checkpointAndroid, conforme direção confirmada peloautor: marcaTF atual naabertura e dark derivado dessaidentidade.** Implementação e recibo conferidos. Contextos deaberturaA/B e dark completo nãoobtidos antes daquotaStarter; a decisão aprova a adaptação, sem alegar comparação exata dequadros nãoinspecionados. Demaisfamílias07–12 continuam fora destaetapa. iOS somente código/recursos preparados e verificados estruturalmente, sem build/execuçãoXcode.
 
-Publicação: base020 b066082,CI40007081568 passou; visual01 b9660d5a15c4e4b88797278fde75b13b405bddbd,CI https://github.com/richardcastrogois/TrainForge/actions/runs/40011701056 passou. Conferir Git real para o commit posterior visual02. Sem deploy.
+Conta e1consumo humano real preservados; agente não digitou quantidade nem confirmou consumo. Sem reset nem novo consentimentoGoogle automatizado. Não apagar registro porinferência. Recursos API/banco/emulador locais ativos; autor não quer hospedagem agora.
+
+Publicação anterior: base020 b066082,CI40007081568 passou; visual01 b9660d5a15c4e4b88797278fde75b13b405bddbd,CI40011701056 passou; visual02 49982c3c957212e86dcc6536c42b3baa79c6265f,CI40013327968 passou. Conferir Git real para o incremento01–06 posterior; push autorizado, nenhum deploy.
 
 ## Estado entregue
 
@@ -39,7 +41,7 @@ Sessão conector be13df9a-20a4-47d5-ba30-e854be04613e, reutilizar enquanto váli
 
 Checkpoint inicial histórico deidentidade: `lib/core/theme/trainforge_theme.dart` com tokensFigma, marcaTF, superfícies/botões/campos e tipografia inicial; entrada e cabeçalho deconta usam marca. **Fidelidade completa pendente.** O incremento visual01 agora distribuiInter eSVGs, conecta shell/barra inferior e as primeiras composições. Biblioteca/formulários/detalhes/privacidade e demais estados ainda exigem conversão visual; ver o checkpoint atual acima. AuthsóGoogle real; e-mail/Apple não foram simulados.
 
-Próxima história021emdoing, com prioridade visual transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
+História021emdoing, com pontosfrontend01–06 concluídos no checkpointAndroid,07–12 ainda abertos; transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
 
 ## Cuidados do incremento
 
@@ -53,7 +55,7 @@ Próxima história021emdoing, com prioridade visual transversal a022/025 e demai
 
 ## Verificação e publicação
 
-70testesFlutter passaram no visual02, analyze0issues; Go testes/vet e integraçãoSQL/HTTP do020 passaram;71testesPython passaram no checkpoint anterior desta rodada, regenerar derivados após documentação final. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
+85testesFlutter passaram nesta etapa, analyze0issues; visual02 histórico tinha70. Go testes/vet e integraçãoSQL/HTTP do020 passaram;76testesPython passaram nesta etapa (71anteriores +5recursos nativos); documentação derivada regenerada e verificada. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
 
 Push dos incrementos validados aoGitHub autorizado em23/10. Conferir Git real.020/tema/documentação publicados em b066082 comCI40007081568 bem-sucedida; visual01 é o incremento posterior, sem deploy. Remoto https://github.com/richardcastrogois/TrainForge.git. Não fazerforcepush. Scriptsignorados.local/check_auth_stage.py echeck_publish.py verificam segredos/caminhos; stage explícito. Conferir CI doSHAreal, não inferir push peloVSCode.
 

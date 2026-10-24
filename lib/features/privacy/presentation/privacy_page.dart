@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../data/privacy_repository.dart';
@@ -66,9 +67,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
               padding: const EdgeInsets.all(20),
               children: [
                 if (controller.busy)
-                  const LinearProgressIndicator(
-                    semanticsLabel: 'Processando solicitação de dados',
-                  ),
+                  const AppProgress(label: 'Processando solicitação de dados'),
                 if (controller.error != null) ...[
                   Semantics(liveRegion: true, child: Text(controller.error!)),
                   const SizedBox(height: 12),

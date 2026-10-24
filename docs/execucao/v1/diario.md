@@ -215,3 +215,15 @@ Esclarecida a separação entre contaadministradoraCloud e contaGoogle do testad
 Autor esclareceu que não quer hospedagem e questionou por que aavaliação local estava bloqueada. O agente havia antecipado indevidamente os gates dedistribuição. Nenhuma dúvida ou informação adicional doautor falta para oteste local. APIpronta/APKatual/emulador conectado foram conferidos; biblioteca aberta pelaUI e confirmados73movimentos/0programas.
 
 Critérios011/012/013 confrontados com as evidências reais já concluídas e cadastroOAuthrelease conferido. Encerradas essas histórias no checkpoint local, sem alterar acceptance: políticaHTTPS fora de desenvolvimento permanece noFlutter/manifest/API/testes; provisionar staging e testar a distribuiçãoAPKrelease continuam nas histórias031–036. iOSnativo continua futuro. Fechamento granular em auth-local-fechamento.md, completionEvidence atualizado e próxima implementação020pelas dependências;015/016 não podem fingirprogramas/prática permitidos que continuam0. Hospedagem adiada porvontade explícita doautor, sem nova pesquisa/provisionamento/contratação/deploy. Sem código/build/instalação/Graphify ou testes funcionais repetidos; somente manutenção documental.
+
+
+## 23/10/2026 — frontend pontos01–06
+
+Autor priorizou os seis primeiros pontos antes dos07–12. APKdebug0.2.0+11 implementa ícone/nome/splashTFnativos, bootstrap compreferência antes desessão e restauração limitada, Hoje real comsemana/calendário pordata e estados, loaders compartilhados, transições/redução de movimento e temas claro/escuro/sistema persistidos noaparelho.43PNGs nativos determinísticos/proveniência, códigoiOS noengineimplícito preparado, semalegar buildXcode. Sem novasAPIs/migrations/fontes ou dados.
+
+85testesFlutter/analyze0issues;5testesrecursosnativos;15préviasfixtureinspecionadas. Android: temas/persistência/sistema restaurado, cold/warm/rede/retentativa semnovoGoogle, cincoáreas/calendário reais, hashinstaladoconferido e1consumorealpreservado. Agente não digitou quantidade nem criouregistro. Uma execução dohelper depersistência foiinterrompida ao concorrer com outra leituraUI; rechecagem sequencial posterior passou, semreset ou alteração dosdados.
+
+ConectorFigma continua emquotaStarter. Pergunta de direção visual daabertura/dark permanece semresposta; proposta usa marcaTFvigente, semconsiderar silêncio comoaceite ou alegar fidelidade exata decontextos nãoobtidos. Pontos02/06 comfechamento visualpendente; demaisfamílias/aceite integral seguemabertos. Docs/backlog/diagramas/Graphify atualizados, pushautorizado semdeploy. Ver frontend-etapa-01-06.md efrontend-stage01-verification.json.
+
+
+Autor respondeu à pergunta e confirmou: usar marcaTF atual naabertura e criar dark derivado daidentidade. A implementação jávalidada corresponde àescolha. Pontos01–06 encerrados no checkpointAndroid, conforme frontend-etapa-01-06.md;07–12 e execuçãoiOS permanecem abertos. A decisão substitui a pendência visual registrada acima, sem alegar leitura decomparação exata dosquadros nãoobtidos.76testesPython passaram, docsderivadas verificadas.

@@ -1,3 +1,5 @@
+import 'package:trainforge/shared/widgets/app_loading.dart';
+import 'package:trainforge/features/home/presentation/pages/today_page.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
@@ -35,12 +37,14 @@ class DailyOverview extends StatelessWidget {
   final DailySummaryController controller;
   final String name;
   final bool food;
+  final ValueChanged<DateTime>? openDay;
   final VoidCallback openNutrition, openCatalog, openActivity;
   const DailyOverview({
     super.key,
     required this.controller,
     required this.name,
     required this.food,
+    this.openDay,
     required this.openNutrition,
     required this.openCatalog,
     required this.openActivity,
@@ -49,6 +53,16 @@ class DailyOverview extends StatelessWidget {
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: controller,
     builder: (context, _) {
+      if (!food) {
+        return TodayPage(
+          controller: controller,
+          name: name,
+          openNutrition: openNutrition,
+          openCatalog: openCatalog,
+          openActivity: openActivity,
+          openDay: openDay,
+        );
+      }
       final snapshot = controller.loading ? null : controller.summary;
       final count = snapshot?['entries'];
       final energy = dailyEnergy(snapshot);
@@ -67,12 +81,10 @@ class DailyOverview extends StatelessWidget {
               '${overviewDate(controller.now())} · ${food ? 'DIÁRIO ALIMENTAR' : 'O teu ritmo, todos os dias'}',
           children: [
             if (controller.loading)
-              const LinearProgressIndicator(
-                semanticsLabel: 'Consultando registros do dia',
-              ),
+              AppProgress(label: 'Consultando registros do dia'),
             if (!food) ...[
               Material(
-                color: TrainForgeTheme.primary,
+                color: context.tf.primary,
                 borderRadius: BorderRadius.circular(24),
                 child: InkWell(
                   onTap: openCatalog,
@@ -82,30 +94,30 @@ class DailyOverview extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
+                        Text(
                           'UM POUCO MAIS FORTE, TODOS OS DIAS',
                           style: TextStyle(
                             fontSize: 10,
-                            color: TrainForgeTheme.accent,
+                            color: context.tf.accent,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        const SizedBox(height: 6),
-                        const Text(
+                        SizedBox(height: 6),
+                        Text(
                           'O teu próximo movimento',
                           style: TextStyle(
                             fontSize: 24,
-                            color: Colors.white,
+                            color: context.tf.surface,
                             height: 1.35,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        const SizedBox(height: 6),
-                        const Text(
+                        SizedBox(height: 6),
+                        Text(
                           'Biblioteca para consulta. Prática guiada ainda indisponível.',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.white,
+                            color: context.tf.surface,
                             height: 1.35,
                           ),
                         ),
@@ -114,7 +126,7 @@ class DailyOverview extends StatelessWidget {
                   ),
                 ),
               ),
-              const Text(
+              Text(
                 'O teu dia',
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
               ),
@@ -125,15 +137,15 @@ class DailyOverview extends StatelessWidget {
                     child: FigmaMetric(
                       value: count?.toString() ?? '—',
                       label: 'consumos confirmados',
-                      color: TrainForgeTheme.nutrition,
+                      color: context.tf.nutrition,
                     ),
                   ),
-                  const SizedBox(width: 10),
-                  const Expanded(
+                  SizedBox(width: 10),
+                  Expanded(
                     child: FigmaMetric(
                       value: '—',
                       label: 'atividade ainda indisponível',
-                      color: tfBlue,
+                      color: context.tf.blue,
                     ),
                   ),
                 ],
@@ -142,23 +154,23 @@ class DailyOverview extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
-                  color: TrainForgeTheme.nutrition,
+                  color: context.tf.nutrition,
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'ENERGIA REGISTRADA',
                       style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 4),
+                    SizedBox(height: 4),
                     Text(
                       energy ?? '—',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 36,
                         fontWeight: FontWeight.w700,
                         height: 1.35,
@@ -168,12 +180,12 @@ class DailyOverview extends StatelessWidget {
                       energy == null
                           ? state
                           : 'kcal · subtotal de um método da fonte',
-                      style: const TextStyle(fontSize: 12, height: 1.35),
+                      style: TextStyle(fontSize: 12, height: 1.35),
                     ),
                     if (energy != null)
                       Text(
                         '${snapshot!['measuredEntries']} medidas · ${snapshot['estimatedEntries']} estimadas',
-                        style: const TextStyle(fontSize: 12),
+                        style: TextStyle(fontSize: 12),
                       ),
                   ],
                 ),
@@ -181,7 +193,7 @@ class DailyOverview extends StatelessWidget {
             if (controller.failed)
               OutlinedButton(
                 onPressed: controller.load,
-                child: const Text('Atualizar registros do dia'),
+                child: Text('Atualizar registros do dia'),
               ),
             FigmaActionCard(
               title: food ? 'Meus registros' : 'Minha alimentação',
@@ -189,19 +201,19 @@ class DailyOverview extends StatelessWidget {
                   ? state
                   : '$count consumos neste dia · ver histórico e origem',
               asset: 'food',
-              color: food ? Colors.white : TrainForgeTheme.nutrition,
+              color: food ? context.tf.surface : context.tf.nutrition,
               onTap: openNutrition,
             ),
             if (food) ...[
               FilledButton(
                 onPressed: openNutrition,
-                child: const Text('Adicionar alimento'),
+                child: Text('Adicionar alimento'),
               ),
               FigmaActionCard(
                 title: 'Hidratação',
                 subtitle: 'Registro de água ainda indisponível',
                 asset: 'water',
-                color: tfBlue,
+                color: context.tf.blue,
                 onTap: () => showAvailability(
                   context,
                   'Hidratação',
@@ -223,7 +235,7 @@ class DailyOverview extends StatelessWidget {
                 title: 'O que te apetece hoje?',
                 subtitle: 'Caminhar, correr, explorar outra modalidade',
                 asset: 'activity',
-                color: tfYellow,
+                color: context.tf.yellow,
                 onTap: openActivity,
               ),
           ],
@@ -243,22 +255,22 @@ class ActivityOverview extends StatelessWidget {
       Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: tfBlue,
+          color: context.tf.blue,
           borderRadius: BorderRadius.circular(22),
         ),
-        child: const Text(
+        child: Text(
           'Percurso ainda indisponível. Nenhuma localização está sendo coletada.',
           style: TextStyle(fontSize: 15, height: 1.35),
         ),
       ),
-      const Row(
+      Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             child: FigmaMetric(
               value: '—',
               label: 'km · sem registro de caminhada',
-              color: tfBlue,
+              color: context.tf.blue,
             ),
           ),
           SizedBox(width: 10),
@@ -266,7 +278,7 @@ class ActivityOverview extends StatelessWidget {
             child: FigmaMetric(
               value: '—',
               label: 'min de atividade indisponíveis',
-              color: tfYellow,
+              color: context.tf.yellow,
             ),
           ),
         ],
@@ -277,7 +289,7 @@ class ActivityOverview extends StatelessWidget {
           'Começar atividade',
           'O registro de atividade e a coleta de GPS ainda não foram implementados neste incremento.',
         ),
-        child: const Text('Começar atividade'),
+        child: Text('Começar atividade'),
       ),
       FigmaActionCard(
         title: 'Registo rápido',
@@ -293,7 +305,7 @@ class ActivityOverview extends StatelessWidget {
         title: 'Os meus dispositivos',
         subtitle: 'Permissões, origem e sincronização',
         asset: 'activity',
-        color: TrainForgeTheme.soft,
+        color: context.tf.soft,
         onTap: () => showAvailability(
           context,
           'Os meus dispositivos',
@@ -315,10 +327,10 @@ class EvolutionOverview extends StatelessWidget {
       Container(
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: context.tf.surface,
           borderRadius: BorderRadius.circular(24),
         ),
-        child: const Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -332,14 +344,14 @@ class EvolutionOverview extends StatelessWidget {
           ],
         ),
       ),
-      const Row(
+      Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             child: FigmaMetric(
               value: '—',
               label: 'treinos ainda indisponíveis',
-              color: TrainForgeTheme.soft,
+              color: context.tf.soft,
             ),
           ),
           SizedBox(width: 10),
@@ -347,7 +359,7 @@ class EvolutionOverview extends StatelessWidget {
             child: FigmaMetric(
               value: '—',
               label: 'km de caminhada indisponíveis',
-              color: tfBlue,
+              color: context.tf.blue,
             ),
           ),
         ],
@@ -356,7 +368,7 @@ class EvolutionOverview extends StatelessWidget {
         title: 'Cada registo conta',
         subtitle: 'Ver histórico e corrigir um consumo',
         asset: 'chart',
-        color: tfYellow,
+        color: context.tf.yellow,
         onTap: openNutrition,
       ),
       FigmaActionCard(
