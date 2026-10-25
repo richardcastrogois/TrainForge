@@ -945,7 +945,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Q6 definiu exclusão por usuário/master049 e avaliação de todos os cenários. Seguir implementação pelas dependências, sem nova rodada genérica de perguntas; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
+Handoff: 25/10:composição lazy criada em lib/composition e injetada nas rotas ativas; Hoje/diário compartilham repositório por conta. Dois testes integrados novos e suíte103/analyze0issues passaram, conforme recibo. Continua doing: revisar responsabilidades de estado/formulários alimentares e configuração por ambiente antes do encerramento. Configuração privada047, offline026, localização048 e exclusão master049 continuam histórias próprias, sem reativar onboarding IA. Q1–Q6 registrados; preservar APK0.3.0+13, dados reais e aceites específicos.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 

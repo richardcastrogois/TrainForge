@@ -2,7 +2,7 @@ import 'package:trainforge/core/motion/app_motion.dart';
 import 'startup_page.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:flutter/material.dart';
-import 'package:trainforge/features/auth/data/auth_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
 import 'package:trainforge/features/auth/presentation/pages/auth_page.dart';
 import 'product_shell.dart';
@@ -21,7 +21,11 @@ class _AuthGateState extends State<AuthGate> {
   @override
   void initState() {
     super.initState();
-    controller = widget.controller ?? AuthController(AuthRepository());
+    controller =
+        widget.controller ??
+        AuthController(
+          AppDependencyScope.read(context).createSessionRepository(),
+        );
     accountId = controller.profile?.id;
     controller.addListener(accountChanged);
     controller.restore();

@@ -46,21 +46,21 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 - **Configuração:** completa e revisada antes da busca/seleção de treino. Nova V1-047 para persistir o contexto privado em Go/SQL/Flutter, com campos justificados por finalidade/fonte; não reativar geradores nem herdar dados físicos obrigatórios do legado.
 - **Ajustes:** permitir trocar exercícios compatíveis e editar dias/horários dentro das regras humanas. Preservar versão/autoria/dose e histórico; V1-015/044.
 - **Interrupção:** oferecer retomar ou encerrar como parcial, preservando eventos confirmados e idempotência; V1-017/023. Saída de tela/tempo decorrido não concluem treino.
-- **Q4/Q5 posteriores:** escolhas registradas abaixo; próximo bloco Q6. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
+- **Q4/Q5 posteriores:** escolhas registradas abaixo; Q6 também respondido. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
 
 ## Respostas Q4 incorporadas — 25/10/2026
 
 - **Exclusão:** apagar refeição inteira também apaga foto/miniaturas; coordenar banco/arquivos/cache/fila. Upload ou resposta atrasada não recria dados excluídos (042/045).
 - **Offline:** registrar alimentação e andamento com dados disponíveis, em fila durável privada, com pendência até confirmar/reconciliar (026 existente, sem nova história).
 - **Isolamento:** conta trocada/revogação/exclusão bloqueiam acesso/envio indevidos; resposta perdida não duplica registro. Reconhecimento de imagem não foi validado offline.
-- **Q5 posterior:** apresentação da configuração e nomes definida abaixo; próximo bloco Q6. Nenhum gate funcional ou de segurança foi encerrado por documentar a escolha.
+- **Q5 posterior:** apresentação da configuração e nomes definida abaixo; Q6 também respondido. Nenhum gate funcional ou de segurança foi encerrado por documentar a escolha.
 
 ## Respostas Q5 incorporadas — 25/10/2026
 
 - **Configuração:** etapas curtas por assunto, com revisão final e retorno/correção sem perda de respostas (047).
 - **Alimentos:** nome traduzido quando revisado para o idioma escolhido; original/fonte/versão nos detalhes, fallback original na ausência de revisão. Não alterar identidade, preparo ou nutrientes.
 - **Idiomas:** nova048 explicita UI pt-BR/pt-PT/en/es e nomes revisados separados do lote original;025/027/035 conferem o conjunto. Nenhuma tradução foi publicada nesta rodada.
-- **Próximo bloco:** Q6, organização dos aceites humanos e conta de avaliação; emulador primeiro e físico guiado já definidos.
+- **Q6 posterior:** regra de exclusão e cobertura registradas abaixo; organização humana dos aceites será combinada com fluxo concreto. Emulador primeiro e físico guiado já definidos.
 
 ## Respostas Q6 incorporadas — 25/10/2026
 
@@ -193,7 +193,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 |---|---|---|---|
 | FE-01 | Jornada simples | Revisar tarefas principais, ordem e caminhos de retorno; evitar levar a becos sem saída e não multiplicar telas por quantidade de frames do Figma | Usuário entende entrada → ação → confirmação → histórico, inclusive o cuidador como praticante nas pausas |
 | FE-02 | Campos e contratos | Matriz campo do usuário / dado automático / regra / endpoint / persistência; DTO e estado tipados | Nenhum campo inútil ou obrigatório ausente; mensagem vinculada ao campo que falhou |
-| FE-03 | Componentes e estado | Separar controllers/viewmodels, widgets e repositories; refinar formulários grandes sem reescrever tudo | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
+| FE-03 | Componentes e estado | Composição lazy/injeção por conta implementada25/10 (103testes/analyze0issues); falta revisar estado/formulários alimentares e configuração por ambiente na021 | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
 | FE-04 | Configuração e treino | Concluir/revisar configuração antes de buscar treino; integrar trocas compatíveis e dias/horários, adesão/agenda e retomada ou parcial | Jornada real alinhada a047/015/044/017/023; sem gráfico/série/dose fictícios e com limites do conteúdo explícitos |
 | FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
 | FE-06 | Retomada/offline | Integrar fila durável privada de alimentação/andamento; estados salvo no aparelho, pendente, confirmado e falha/conflito | Processo encerrado, resposta perdida, conta trocada e exclusão concorrente sem duplicação/recriação ou falso sucesso (026/042/045) |

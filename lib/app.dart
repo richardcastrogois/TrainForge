@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'composition/app_dependencies.dart';
+import 'composition/app_dependency_scope.dart';
+import 'composition/production_dependencies.dart';
 import 'package:flutter/services.dart';
 import 'core/theme/trainforge_theme.dart';
 import 'core/theme/appearance_controller.dart';
@@ -10,11 +13,13 @@ import 'shared/widgets/auth_gate.dart';
 import 'shared/widgets/startup_page.dart';
 
 class TrainForgeApp extends StatefulWidget {
+  final AppDependencies? dependencies;
   final AppearanceController? appearance;
   final AuthController? authController;
   final NutritionRepository? nutritionRepository;
   const TrainForgeApp({
     super.key,
+    this.dependencies,
     this.appearance,
     this.authController,
     this.nutritionRepository,
@@ -24,6 +29,7 @@ class TrainForgeApp extends StatefulWidget {
 }
 
 class _TrainForgeAppState extends State<TrainForgeApp> {
+  late final dependencies = widget.dependencies ?? productionDependencies();
   late final appearance = widget.appearance ?? AppearanceController();
   bool initialThemeApplied = false;
   @override
@@ -39,48 +45,53 @@ class _TrainForgeAppState extends State<TrainForgeApp> {
   }
 
   @override
-  Widget build(BuildContext context) => AppearanceScope(
-    controller: appearance,
-    child: ListenableBuilder(
-      listenable: appearance,
-      builder: (context, _) {
-        final animateTheme = initialThemeApplied;
-        if (appearance.loaded) initialThemeApplied = true;
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'TrainForge',
-          scrollBehavior: const TrainForgeScrollBehavior(),
-          theme: TrainForgeTheme.light,
-          darkTheme: TrainForgeTheme.dark,
-          themeMode: appearance.mode,
-          themeAnimationDuration: !animateTheme || AppMotion.reduced(context)
-              ? Duration.zero
-              : AppMotion.duration,
-          builder: (context, child) {
-            final dark = Theme.of(context).brightness == Brightness.dark;
-            return AnnotatedRegion<SystemUiOverlayStyle>(
-              value: SystemUiOverlayStyle(
-                statusBarColor: Colors.transparent,
-                statusBarIconBrightness: dark
-                    ? Brightness.light
-                    : Brightness.dark,
-                statusBarBrightness: dark ? Brightness.dark : Brightness.light,
-                systemNavigationBarColor: context.tf.background,
-                systemNavigationBarIconBrightness: dark
-                    ? Brightness.light
-                    : Brightness.dark,
-              ),
-              child: child!,
-            );
-          },
-          home: appearance.loaded
-              ? AuthGate(
-                  controller: widget.authController,
-                  nutritionRepository: widget.nutritionRepository,
-                )
-              : const StartupPage(label: 'Preparando o TrainForge'),
-        );
-      },
+  Widget build(BuildContext context) => AppDependencyScope(
+    dependencies: dependencies,
+    child: AppearanceScope(
+      controller: appearance,
+      child: ListenableBuilder(
+        listenable: appearance,
+        builder: (context, _) {
+          final animateTheme = initialThemeApplied;
+          if (appearance.loaded) initialThemeApplied = true;
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'TrainForge',
+            scrollBehavior: const TrainForgeScrollBehavior(),
+            theme: TrainForgeTheme.light,
+            darkTheme: TrainForgeTheme.dark,
+            themeMode: appearance.mode,
+            themeAnimationDuration: !animateTheme || AppMotion.reduced(context)
+                ? Duration.zero
+                : AppMotion.duration,
+            builder: (context, child) {
+              final dark = Theme.of(context).brightness == Brightness.dark;
+              return AnnotatedRegion<SystemUiOverlayStyle>(
+                value: SystemUiOverlayStyle(
+                  statusBarColor: Colors.transparent,
+                  statusBarIconBrightness: dark
+                      ? Brightness.light
+                      : Brightness.dark,
+                  statusBarBrightness: dark
+                      ? Brightness.dark
+                      : Brightness.light,
+                  systemNavigationBarColor: context.tf.background,
+                  systemNavigationBarIconBrightness: dark
+                      ? Brightness.light
+                      : Brightness.dark,
+                ),
+                child: child!,
+              );
+            },
+            home: appearance.loaded
+                ? AuthGate(
+                    controller: widget.authController,
+                    nutritionRepository: widget.nutritionRepository,
+                  )
+                : const StartupPage(label: 'Preparando o TrainForge'),
+          );
+        },
+      ),
     ),
   );
 }

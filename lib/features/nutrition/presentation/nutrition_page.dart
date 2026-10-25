@@ -2,6 +2,7 @@ import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'dart:async';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
@@ -47,7 +48,7 @@ class _NutritionPageState extends State<NutritionPage>
     date = widget.initialDate ?? DateTime.now();
     repository =
         widget.repository ??
-        GoNutritionRepository(
+        AppDependencyScope.read(context).createNutritionRepository(
           accountId: widget.accountId,
           currentAccountId: widget.currentAccountId,
         );

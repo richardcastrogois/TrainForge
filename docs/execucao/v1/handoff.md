@@ -13,11 +13,17 @@ A [auditoria24/10](auditoria-produto-2026-10-24.md) é o baseline factual. A tri
 ## Estado do aplicativo preservado
 
 - API Go0.5.1/25operações, PostgreSQL17.5 local isolado,23tabelas. Última leitura da auditoria:1conta/1consumo humano real,6369referências alimentares e73metadados de movimento. Zero programas/práticas aprovados.
-- APKdebug **0.3.0+13**, assinatura/configuração e sessão preservadas. [Artefato](android-frontend-checkpoint.json). Não reinstalado nem testado com novos dados nesta rodada documental.
+- APKdebug **0.3.0+13**, assinatura/configuração e sessão preservadas. [Artefato](android-frontend-checkpoint.json). Não reinstalado nem testado com novos dados nesta rodada. Código Flutter recebeu composição/injeção de dependências, ainda sem novo APK.
 - GoogleAndroiddebug/sessão/privacidade reais já validados; OAuthdebug/release conferido. [Fechamento](auth-local-fechamento.md). DistribuiçãoHTTPS/release/iOS têm gates próprios e não impedem teste local.
 - V1-014/019/020 reais:consulta de catálogo/base alimentar e registro manual, revisão/exclusão, histórico e subtotais. Cadastro particular e demais jornadas ainda exigem os aceites da025; não repetir SQL/importação/restore históricos por hábito.
 - Faltam configuração persistida, seleção/composição humana permitida, adesão/agenda/execução/histórico de treino, contexto de pausa do cuidador, foto e quatro idiomas completos. Delegação de pessoa assistida não é requisito desta versão.
 - Medição da auditoria:101testesFlutter/78,46% das linhas instrumentadas; Go71resultados aprovados/10integraçõespuladas/40,73% das instruções. Não equivale a teste em tudo. Sonar/CIFlutter/SQLautomático/carga não completos.
+
+## Incremento V1-021 — 25/10
+
+Fábricas lazy em lib/composition centralizam os adaptadores de produção. AuthGate, catálogo, alimentos e privacidade recebem dependências por escopo; ProductShell compartilha o mesmo repositório de alimentação com Hoje/diário, vinculado à conta. Dois testes novos cobrem rotas públicas/tema e reutilização/troca de identidade. Suíte completa:103aprovados; analyze:0issues. [Recibo](frontend-composition-verification.json). Fixtures isoladas, sem Google real novo, banco, API, instalaçãoAPK ou alteração visual.
+
+V1-021 continua doing: próxima fatia é revisar estado/formulários alimentares e configuração por ambiente. Não significa entrega de047/026/048/049. Graphify atualizado porAST,86Dart/1265nós/1698arestas eHTML; fontes/diagramas documentais refletem a composição.
 
 ## Frontend e Figma
 
@@ -39,5 +45,5 @@ Sem hospedagem/deploy/compra/assinatura/integração paga/contato externo. Gratu
 
 - [Índice](../../README.md), [plano macro](plano-macro.md), [escopo](escopo.md), [arquitetura](../../arquitetura/README.md), [diário](diario.md).
 - Gerar/check:`python tools/gerar_documentacao.py --write --check`; testes pertinentes:`python -m unittest discover -s tools -p test_documentacao.py`.
-- Trilha não mudaAPI/migration; Swagger e GraphifyAST não precisam regeneração de código neste incremento. Não usar validação documental como prova de função doAPK.
+- Sem alteração deAPI/migration, Swagger preservado. Código mudou:GraphifyAST/HTML e mapas documentais atualizados. Recibo separa testesFlutter da geração documental; nenhum deles substitui o aceite humano doAPK.
 - Comparar Git real antes de continuar; snapshots antigos e recibos mantêm seu valor histórico e seu escopo.

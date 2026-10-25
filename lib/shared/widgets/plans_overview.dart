@@ -2,7 +2,7 @@ import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
-import 'package:trainforge/features/catalog/data/catalog_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:trainforge/features/catalog/domain/catalog_entry.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
@@ -20,7 +20,11 @@ class _PlansOverviewState extends State<PlansOverview> {
   @override
   void initState() {
     super.initState();
-    controller = widget.controller ?? CatalogController(GoCatalogRepository());
+    controller =
+        widget.controller ??
+        CatalogController(
+          AppDependencyScope.read(context).createCatalogRepository(),
+        );
     controller.load(filters: CatalogFilters(kind: 'programs'));
   }
 

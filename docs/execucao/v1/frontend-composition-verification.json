@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-25",
+  "story": "V1-021",
+  "status": "partial",
+  "scope": "Composição lazy na raiz Flutter e injeção dos repositórios nas rotas ativas; sem alteração visual, de API ou de dados.",
+  "sourceBaseCommit": "afda9f3",
+  "implementation": [
+    "lib/composition/app_dependencies.dart",
+    "lib/composition/app_dependency_scope.dart",
+    "lib/composition/production_dependencies.dart",
+    "lib/app.dart"
+  ],
+  "checks": [
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 103,
+      "failed": 0
+    },
+    {
+      "command": "flutter test --no-pub test/app_composition_test.dart --reporter expanded",
+      "result": "passed",
+      "passed": 2,
+      "failed": 0
+    }
+  ],
+  "behavior": [
+    "Rotas públicas recebem serviços isolados injetados, criados somente ao abrir a função.",
+    "Mudança de tema mantém o controller e não restaura a sessão outra vez.",
+    "Hoje e diário usam o mesmo repositório vinculado à conta.",
+    "Mudança de conta fecha a rota privada antiga e compõe um novo repositório; guardas do adaptador preservadas."
+  ],
+  "evidence": [
+    "test/app_composition_test.dart",
+    "test/product_shell_test.dart"
+  ],
+  "limitations": [
+    "Fixtures somente em testes; nenhuma nova prova de login Google real.",
+    "Sem instalação de APK, escrita no banco ou exclusão de dado real.",
+    "Sem nova medição de cobertura, carga ou validação nativa iOS.",
+    "V1-021 continua doing: estado/formulários de alimentação ainda precisam da revisão por responsabilidade; não entrega configuração047, offline026, idiomas048 ou master049."
+  ],
+  "graph": {
+    "files": 86,
+    "changed": 11,
+    "unchanged": 75,
+    "deleted": 0,
+    "nodes": 1265,
+    "edges": 1698,
+    "mode": "incremental code-only AST sem clusterização; HTML exportado"
+  },
+  "documentation": {
+    "generation": "passed",
+    "testsPassed": 13,
+    "diffCheck": "passed"
+  }
+}

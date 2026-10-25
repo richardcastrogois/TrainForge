@@ -4,7 +4,7 @@ import 'package:trainforge/features/catalog/presentation/catalog_controller.dart
 import 'package:flutter/material.dart';
 import 'figma_components.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
-import 'package:trainforge/features/nutrition/data/nutrition_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
@@ -35,6 +35,7 @@ class _ProductShellState extends State<ProductShell>
   TrainForgeDestination selected = TrainForgeDestination.today;
   final visited = {TrainForgeDestination.today};
   late final String accountId;
+  late final NutritionRepository nutrition;
   late final DailySummaryController daily;
   late final AnimationController tabMotion = AnimationController(
     vsync: this,
@@ -45,13 +46,14 @@ class _ProductShellState extends State<ProductShell>
   void initState() {
     super.initState();
     accountId = widget.controller.profile!.id;
+    nutrition =
+        widget.nutritionRepository ??
+        AppDependencyScope.read(context).createNutritionRepository(
+          accountId: accountId,
+          currentAccountId: () => widget.controller.profile?.id,
+        );
     daily = DailySummaryController(
-      repository:
-          widget.nutritionRepository ??
-          GoNutritionRepository(
-            accountId: accountId,
-            currentAccountId: () => widget.controller.profile?.id,
-          ),
+      repository: nutrition,
       accountId: accountId,
       currentAccountId: () => widget.controller.profile?.id,
     );
@@ -83,7 +85,7 @@ class _ProductShellState extends State<ProductShell>
           initialDate: day,
           currentAccountId: () => widget.controller.profile?.id,
           sessionChanges: widget.controller,
-          repository: widget.nutritionRepository,
+          repository: nutrition,
         ),
       ),
     );

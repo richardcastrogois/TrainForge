@@ -2,7 +2,7 @@ import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../data/privacy_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'privacy_controller.dart';
 
 class PrivacyPage extends StatefulWidget {
@@ -33,7 +33,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
     controller =
         widget.controller ??
         PrivacyController(
-          GoPrivacyRepository(),
+          AppDependencyScope.read(context).createPrivacyRepository(),
           afterDeletion: widget.onDeleted,
           currentAccountId: widget.currentAccountId,
         );

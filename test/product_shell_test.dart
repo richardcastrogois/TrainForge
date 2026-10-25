@@ -158,6 +158,7 @@ void main() {
           theme: TrainForgeTheme.light,
           home: ProductShell(
             controller: auth,
+            nutritionRepository: FakeNutrition(),
             pageBuilder: (destination) {
               built.add(destination);
               return destination == TrainForgeDestination.plans

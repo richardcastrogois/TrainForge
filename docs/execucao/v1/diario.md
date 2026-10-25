@@ -313,3 +313,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Inspeção dirigida: exclusão alimentar atual usa titular autenticado na query; nenhum papel master encontrado.049 criada todo, com provisionamento verificado/revogável, confirmação, auditoria e negativos;035 exige matriz completa e regra de autorização. Nenhum done alterado.
 - Decisões/trilha/escopo/matriz/modelo/segurança/handoff atualizados. Encerrada bateria genéricaQ1–Q6; seguir dependências pela021. Identidade master e aceites humanos só quando houver fluxo concreto.
 - Sem alteração de API/migration/permissão/arquivo privado nesta unidade documental. Geração/dependências/requisitos/links e13testes documentais passaram; diff sem erros. O incremento de código terá resultados próprios.
+
+## 25/10/2026 — V1-021: composição e injeção nas rotas ativas
+
+- Criadas fábricas lazy/escopo na raiz; adaptadores de produção centralizados em lib/composition. AuthGate, catálogo, alimentos e privacidade recebem serviços; Hoje e diário reutilizam repositório privado vinculado à conta. Sem pacote novo, visual/API/migration ou mudança de autorização.
+- Dois testes integrados novos:rotas públicas/tema com serviços injetados; reuso no diário e troca de conta removendo rota antiga. SuíteFlutter completa103aprovados/analyze0issues; [recibo](frontend-composition-verification.json). Ajustes de seleção/rolagem dos novos testes respeitam construção sob demanda e rota sob offstage. Nenhum ensaio com contaGoogle ou registro real.
+- Graphify incremental86Dart/1265nós/1698arestas,11alterados/75inalterados/0removidos; backup local eHTML exportado, sem LLM/clusterização. Mapas e diagrama de composição atualizados; Swagger preservado pois contrato não mudou.
+- V1-021 permanece doing:revisar estado/formulários alimentares e configuração por ambiente. Próximas capacidades continuam nas suas histórias; não habilitada exclusão master, não alteradoAPK/banco/histórico/sessão. Sem repetir Go/SQL/import/restore ou medição de cobertura sem motivo.
+- Validação documental final:geração reproduzível/backlog/dependências/links e13testes passaram; gitdiff--check sem erro. Backups automáticos doGraphify movidos para o destino.local verificado, fora doGit.

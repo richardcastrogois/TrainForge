@@ -3,7 +3,7 @@ import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import '../data/food_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'food_controller.dart';
 import '../domain/food_reference.dart';
 import 'food_detail_page.dart';
@@ -28,7 +28,9 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    controller = widget.controller ?? FoodController(GoFoodRepository());
+    controller =
+        widget.controller ??
+        FoodController(AppDependencyScope.read(context).createFoodRepository());
     search.text = controller.q;
     controller.load();
   }

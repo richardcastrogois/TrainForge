@@ -4,7 +4,7 @@ import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
-import '../data/catalog_repository.dart';
+import 'package:trainforge/composition/app_dependency_scope.dart';
 import '../domain/catalog_entry.dart';
 import 'catalog_controller.dart';
 import 'catalog_detail_page.dart';
@@ -25,7 +25,11 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    controller = widget.controller ?? CatalogController(GoCatalogRepository());
+    controller =
+        widget.controller ??
+        CatalogController(
+          AppDependencyScope.read(context).createCatalogRepository(),
+        );
     search.text = (widget.initialFilters ?? controller.filters).q;
     controller.load(filters: widget.initialFilters);
   }

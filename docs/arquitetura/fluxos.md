@@ -26,6 +26,27 @@ flowchart LR
   profile --> help["Ajuda e disponibilidade sem simulação"]
 ```
 
+## Composição Flutter implementada em 25/10
+
+TrainForgeApp recebe AppDependencies ou compõe as fábricas de produção uma vez na raiz. O escopo fica acima do Navigator, alcançando também as rotas abertas depois. As fábricas criam os serviços sob demanda; dados privados são vinculados à conta, sem singleton de estado do diário. [Verificação](../execucao/v1/frontend-composition-verification.json): rotas públicas/tema, reutilização do serviço e troca de identidade;103 testes aprovados/analyze sem issues. Estado/formulários alimentares e configuração por ambiente continuam em revisão na021.
+
+```mermaid
+flowchart LR
+  root["TrainForgeApp"] --> scope["AppDependencyScope"]
+  prod["productionDependencies: fábricas lazy"] --> scope
+  injected["Dependências isoladas nos testes"] --> scope
+  scope --> gate["AuthGate e controller de sessão"]
+  scope --> public["Catálogo / alimentos / privacidade"]
+  gate --> shell["ProductShell por identidade"]
+  scope --> bound["NutritionRepository por conta"]
+  bound --> daily["DailySummaryController: Hoje / Diário"]
+  bound --> diary["NutritionPage e formulários"]
+  shell --> daily
+  shell --> diary
+  gate --> change["Troca de conta remove rotas privadas"]
+  change --> bound
+```
+
 ## Privacidade implementada em23/10
 
 Política pública sem login. Conta conectada abre exportação própria por seção e exclusão confirmada. Os controles privados e o aceite local comGoogle foram validados em23/10; os recibos históricos distinguem login, exportação e exclusão autorizada.

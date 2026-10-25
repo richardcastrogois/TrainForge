@@ -1,8 +1,11 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "1268d3cacb87300c7601eda969144367a2f302ed313dbe016b6fefa638e88cf9",
+  "inputRevision": "bca078d46d1d052114da6681e0eb807b505669bb2209cefb3d5c240304b5b75c",
   "inputs": {
-    "lib/app.dart": "a3cb321a6b07053198c4d0652dcae4c6d6829a84f23b839833693bb787b405ee",
+    "lib/app.dart": "0caae0bf26a1c9efee733856e0e3a3a85a9f01b9498f56b800841b33e15b5a84",
+    "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
+    "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
+    "lib/composition/production_dependencies.dart": "8692241088a1eb0745e3684dfd2feb200b554f26f90631fa4912328a4cbcbcd9",
     "lib/core/config/app_config.dart": "5f053101cb29e8e8a345484cee2386123e9211c0e20eafa34231929e9e9ca43e",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
@@ -27,12 +30,12 @@
     "lib/features/catalog/domain/catalog_entry.dart": "723a01b5b8717722fec7e53d01d246d576ee2038ff3b0156e3923604e876956f",
     "lib/features/catalog/presentation/catalog_controller.dart": "c3b3f353cb6e3edf1ae3379e88d203fa56a6fdc0854cd1a32599c3bec6f5cc76",
     "lib/features/catalog/presentation/catalog_detail_page.dart": "1ca3497cd096396f59d47908c82d188dd2ca43fefe67eb3e7e8bcf20efb48cf0",
-    "lib/features/catalog/presentation/catalog_page.dart": "f99622ff2b9997a90cf95b251a3fda22cc611bdadfbb87a997af94c16ada4e10",
+    "lib/features/catalog/presentation/catalog_page.dart": "125edc4a2bf4aafd28a5dc70de01b668b2ddbda8e4edbc1bc713d60627800685",
     "lib/features/food_reference/data/food_repository.dart": "c0fd80cf9dc4913b91b296297347a0d2665421ee777efea2dbf930e2aad7af6f",
     "lib/features/food_reference/domain/food_reference.dart": "33e4e1599e1badc138d6ae312b27890df5ddde6833b7b959a45a16f9cd7cabc4",
     "lib/features/food_reference/presentation/food_controller.dart": "017d3b554ec63e7e43827ee13d78e911037646b48141b31d1eee73446759fe46",
     "lib/features/food_reference/presentation/food_detail_page.dart": "1c3183f68ccd9db08c9eb871dc7caf428dc841c23be2755548782fd6bf05f421",
-    "lib/features/food_reference/presentation/food_page.dart": "fb5b26138b3cc95f006b4f55627ba063f34f1bc9a19bd0e9569bbb713acd57e5",
+    "lib/features/food_reference/presentation/food_page.dart": "779cbaa9c2e1dcf7e59c0168cecbb278f7d1dfa6783bda33ec5d19adf901ec6a",
     "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
     "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
     "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
@@ -43,7 +46,7 @@
     "lib/features/nutrition/presentation/daily_summary_controller.dart": "eb523d37e822f49d19d07ba2fdcf97f482ed7bb3c1356f8a5a163cc01dc2a2fd",
     "lib/features/nutrition/presentation/entry_detail_page.dart": "0be4e935c2b914e52b755374c3d192981e2e281130417fcf2946fd4769f0faa7",
     "lib/features/nutrition/presentation/nutrition_forms.dart": "fbd9c8353a372fc0c30fd18363035c035348d0ba02423f11e9e107d5679d552c",
-    "lib/features/nutrition/presentation/nutrition_page.dart": "44384ef3515d06bc12965c8df432fa0674bbc1d64260737f2a80e145fe0f0dc3",
+    "lib/features/nutrition/presentation/nutrition_page.dart": "1342f989f03a26a062da3839514a86ae78cde29b712e0d22cc28cfed330069d5",
     "lib/features/onboarding/data/onboarding_api.dart": "f45f2870fe242224e9d1743d24569c0849546e25394e36d1294ae394736c1256",
     "lib/features/onboarding/data/onboarding_repository.dart": "ded7943c9a323d70f8c92a9e0227a5dfb019f07bd18e71d903bb2b6f8b764449",
     "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart": "f40390c4253ba85dd2dace3b11ed7e509da26ac05d3a59b4529037dda993b595",
@@ -52,7 +55,7 @@
     "lib/features/privacy/data/privacy_repository.dart": "f00c103aba21246123c1ab9c780e85a4ea43b66717c3f2439f49690c0e2c62d9",
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
-    "lib/features/privacy/presentation/privacy_page.dart": "cc875ce3f092dcdf98117f8ecaa995525021c2fa878a044ee6bef1248eb95a85",
+    "lib/features/privacy/presentation/privacy_page.dart": "93df09572e650a0ec8d2ba562a0e74d969e3b0fdc5d2236b4298df8d169d3df6",
     "lib/features/profile/data/profile_api.dart": "6acd968c17539a107a0c6556caa86c63db9e3179333ecf88dda568c1a62876a8",
     "lib/features/profile/data/profile_repository.dart": "8e16e09c535990df9f1e7629dd2885fd49f4d4cd682003b2bf7ec808634cbadc",
     "lib/features/profile/domain/profile_data.dart": "c3187b408c8a102bfe5d188ac173986e7136ba140c6c3a114c23290034167570",
@@ -75,15 +78,15 @@
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
-    "lib/shared/widgets/auth_gate.dart": "ad45095529e9189daea15212164a2e29aed59fb1fa042c17676eab66e39609fd",
+    "lib/shared/widgets/auth_gate.dart": "6ee91eadaa0b32761084e58e0752be7bb237a7f51f27bb141995ff8d7ac89cad",
     "lib/shared/widgets/draft_guard.dart": "16d3ce0eb1df8a5c6eb0fa06754e13fbb00f5708e90030c91033c4f3555ded57",
     "lib/shared/widgets/evaluation_guide_page.dart": "815c5d51926f6fc8e97b3d59fa392c5e09c50ec82c9c819be982165815e543b0",
     "lib/shared/widgets/figma_bottom_nav.dart": "c7000d1873409b2ba92afc840c3f08aa55de0451a41673bf8334eac7d6f446b0",
     "lib/shared/widgets/figma_components.dart": "5dbd274284883446d6367d71d26f2ae9e3c3c5d3baab26b947a1ee2456add70e",
     "lib/shared/widgets/flow_components.dart": "1bb465dda5bdca775c79b318aca1712051d40f9480bf964a7a84dd1d45d09978",
-    "lib/shared/widgets/plans_overview.dart": "717bc51eec4a4dd22805409a6b690645f47c5f364b7cf057f72f4792b6072fe8",
+    "lib/shared/widgets/plans_overview.dart": "3eb9eb07c63bc4652113972d1fd1393728e7c4a8b991a43ee989571a205adbe2",
     "lib/shared/widgets/product_overviews.dart": "764bbad32432507291a04e5c9de3a77f294d0d9ccf6271dd76e6949f1b480580",
-    "lib/shared/widgets/product_shell.dart": "5723f8f5bccddab25755c24ea9410394013a42ce04ee7279f1d4f4413fbe2d5f",
+    "lib/shared/widgets/product_shell.dart": "2729713bf92d95c70fddfbbac5fb16785719ca3ae908d0b254a23cb18ee93d3d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
     "services/api/cmd/api/main.go": "1c05fcbc20b3de090a0f441904ce5f952f3af4c760ec59644af2643fe64ae3ac",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
@@ -138,7 +141,7 @@
     "contracts/generated/swagger-v1.json": "f6745bbfa4ef370af2c5e360e7f7acecbf359e44a8c06fd95e6c50d5883955f6",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "7a83af52c4b16ba2a8c6b9f234f5736b7eb4d77f389c16f37d0685ee7764232b",
+    "docs/execucao/v1/backlog.json": "d0e1637f940aba3b78442a7a9cadfdb0cb714777becd480b7c4ae6c897c367a1",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -186,7 +189,7 @@
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
   },
   "coverage": {
-    "dartFiles": 83,
+    "dartFiles": 86,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
@@ -839,12 +842,12 @@
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-          "line": 6
+          "line": 7
         },
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-          "line": 9
+          "line": 10
         },
         {
           "repository": "trainforge",
@@ -914,16 +917,6 @@
       "sources": [
         {
           "repository": "trainforge",
-          "path": "lib/features/catalog/presentation/catalog_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/food_reference/presentation/food_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 4
         },
@@ -945,7 +938,7 @@
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-          "line": 8
+          "line": 9
         },
         {
           "repository": "trainforge",
@@ -974,11 +967,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/privacy/presentation/privacy_page.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/profile/presentation/pages/profile_page.dart",
           "line": 4
         },
@@ -1025,21 +1013,6 @@
         {
           "repository": "trainforge",
           "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/shared/widgets/auth_gate.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/shared/widgets/plans_overview.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/shared/widgets/product_shell.dart",
           "line": 7
         }
       ]
@@ -1139,7 +1112,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 13
+        "line": 14
       }
     },
     {
@@ -1315,7 +1288,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_page.dart",
-        "line": 331
+        "line": 335
       }
     },
     {
@@ -1324,7 +1297,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
-        "line": 59
+        "line": 61
       }
     },
     {
@@ -1378,7 +1351,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 246
+        "line": 247
       }
     },
     {
@@ -1387,7 +1360,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 236
+        "line": 237
       }
     },
     {
@@ -1396,7 +1369,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 224
+        "line": 225
       }
     },
     {
@@ -1405,7 +1378,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 256
+        "line": 257
       }
     },
     {
@@ -1612,7 +1585,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 60
+        "line": 64
       }
     },
     {
@@ -1621,7 +1594,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 65
+        "line": 69
       }
     },
     {
@@ -1630,7 +1603,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 55
+        "line": 59
       }
     },
     {
@@ -1657,7 +1630,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 97
+        "line": 99
       }
     },
     {
@@ -1666,7 +1639,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 81
+        "line": 83
       }
     },
     {
@@ -1675,7 +1648,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 169
+        "line": 171
       }
     }
   ],
