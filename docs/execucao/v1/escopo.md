@@ -18,6 +18,12 @@ A análise mostra somente os registros disponíveis, com período/fuso, dias com
 
 Após a [pesquisa comparativa de fotos](pesquisa-fotos-historico.md), o autor aprovou **recuperar fotos pela conta, com cache no celular**. Fotos já sincronizadas devem acompanhar o histórico em outro aparelho; rascunhos não enviados não têm recuperação garantida. Retenção/limites/exclusão serão definidos antes da liberação. Não autoriza hospedagem ou envio de fotos agora.
 
+## Respostas Q3 incorporadas em 25/10
+
+O autor escolheu configuração completa antes de procurar/selecionar treino (V1-047), troca de exercícios compatíveis e edição de dias/horários (015/044), além de oferecer retomada ou encerramento parcial de treino interrompido (017/023).
+
+Completar o contexto exige finalidade para cada campo, revisão e persistência privada; não herdar obrigatoriedade de peso/altura/idade/gordura do legado ou reativar geração por IA. Consulta de referências e alimentação conservam seu escopo. Mudanças respeitam as regras humanas, direitos e versões; não alteram sessões passadas nem inventam dose, progresso ou conclusão. [Detalhes e matriz de campos](decisoes-piloto.md).
+
 ## Compromissos da V1
 
 - Conteúdo de fontes humanas existentes, com autoria/contribuição, evidência, versão e direitos por ativo. Inventariar toda a cobertura pesquisada; importar todo material utilizável e permitido em lotes técnicos. Lote candidato e lote aprovado são manifestos distintos;331 famílias não equivalem a331 importações autorizadas.
@@ -49,7 +55,7 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 
 1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
 2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
-3. As duas jornadas de treino (programa e composição controlada), alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
+3. Configuração completa, os dois caminhos de treino com trocas compatíveis/agenda e retomada/parcial, alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
 4. Sessões idempotentes, retomada, logout/revogação e isolamento de conta verificados.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.

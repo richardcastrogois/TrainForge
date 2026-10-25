@@ -1116,6 +1116,92 @@
           ]
         },
         {
+          "id": "V1-047",
+          "title": "Persistir configuração completa antes da seleção de treino",
+          "userStory": "Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R01",
+            "R02",
+            "R04",
+            "R06",
+            "R15",
+            "R16",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-008",
+            "V1-012",
+            "V1-013",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Configuração completa e revisada antecede busca/seleção de treino compatível e confirmação da composição; consulta pública de referências, alimentação e privacidade conservam seu recorte",
+            "Matriz por campo define finalidade, origem, obrigatório/condicional/opcional, valores/unidades, validação, persistência e uso nas regras; não herdar peso/altura/idade/gordura obrigatórios ou padrões fictícios do onboarding legado",
+            "Ambiente/recursos, disponibilidade e contexto de pausa do próprio cuidador respeitam os dados declarados; preferências não viram dose, progressão ou adequação clínica inventadas",
+            "Configuração privada pode ser salva, recuperada e alterada por sua conta com versão/concorrência e erros de campo explícitos; mudança de conta ou resposta tardia não mistura dados",
+            "Atualizar contexto não reescreve sessões/versões históricas; novas escolhas são validadas pelo backend contra configuração e requisitos humanos atuais",
+            "Go/SQL/Flutter separados por responsabilidade, DTOs e Swagger coerentes, autorização por titular e testes de persistência/isolamento; completar formulário não libera prática bloqueada",
+            "Fluxo legado de geração IA/manual-generator permanece fora da composição ativa; nenhum formulário simula salvamento ou elegibilidade sem API/regra implementadas"
+          ],
+          "tasks": [
+            {
+              "id": "V1-047-T01",
+              "title": "Detalhar campos e persistência privada",
+              "subtasks": [
+                "Reutilizar categorias Q3, requisitos das fontes e referências visuais obtidas; não repetir chamadas Figma limitadas",
+                "Fechar matriz de campos por finalidade e distinguir contexto necessário de medida física opcional ou sem uso",
+                "Definir modelo/versionamento e migration forward sem reset, preservando dados e fluxo de privacidade"
+              ]
+            },
+            {
+              "id": "V1-047-T02",
+              "title": "Implementar contrato e configuração revisável",
+              "subtasks": [
+                "Implementar casos de uso Go para salvar/ler/alterar configuração com titularidade e conflito de versão",
+                "Gerar Swagger por tipos/comentários e integrar repository/controller Flutter injetados",
+                "Concluir e revisar a configuração antes de abrir a seleção de treino; tratar vazio/erro/rede/retorno sem reativar geradores"
+              ]
+            },
+            {
+              "id": "V1-047-T03",
+              "title": "Validar jornada e compatibilidade",
+              "subtasks": [
+                "Testar campos condicionais/desconhecidos, concorrência, conta trocada e respostas atrasadas",
+                "Conferir persistência/recuperação em base isolada e atualização sem alterar histórico anterior",
+                "Registrar aceite real do fluxo e limites editoriais; fixtures não comprovam treino liberado"
+              ]
+            }
+          ],
+          "validation": [
+            "Matriz de campos fundamentada e contratos/UI/SQL coerentes",
+            "Testes Go/SQL/Flutter de persistência, ownership, concorrência e estado",
+            "Aceite de configuração completa e revisão antes da seleção, com ausência de conteúdo honesta"
+          ],
+          "deliverables": [
+            "Configuração privada persistida e versionada",
+            "Contrato e fluxo Flutter completos para revisão",
+            "Recibo de campos, isolamento, atualização e aceite"
+          ],
+          "handoff": "25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md"
+          ]
+        },
+        {
           "id": "V1-015",
           "title": "Criar adesão sem geração de treino",
           "userStory": "Como usuário, quero selecionar uma versão existente e uma agenda permitida pelo autor.",
@@ -1130,7 +1216,8 @@
           ],
           "dependsOn": [
             "V1-014",
-            "V1-013"
+            "V1-013",
+            "V1-047"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -1144,7 +1231,8 @@
           "acceptance": [
             "Adesão aponta para versão imutável e valida os requisitos necessários",
             "Composição personalizada mantém autoria de componentes e perde rótulo de programa original se alterado",
-            "Rotas IA/manual-generator não participam da V1 e Gemini deixa de ser requisito"
+            "Rotas IA/manual-generator não participam da V1 e Gemini deixa de ser requisito",
+            "Q3:adesão/seleção exige configuração completa revisada; dias/horários e trocas compatíveis respeitam regras humanas sem reescrever ocorrências ou versões históricas"
           ],
           "tasks": [
             {
@@ -1172,7 +1260,7 @@
             "API de enrollments",
             "Fluxo de seleção humano"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
@@ -1276,7 +1364,8 @@
             "Contexto/opções editáveis definidos antes do modelo e persistência; preservar autoria, versão, instrução, dose, direitos e apoio de cada componente",
             "Combinação incompatível ou sem regra/material aprovado retorna motivo e bloqueio; nenhuma série, repetição, frequência ou adequação criada pela IA",
             "Cuidador é o próprio praticante durante pausas de trabalho; não exige cadastro ou dados da pessoa assistida e não concede acesso a outra conta",
-            "Composição confirmada gera versão rastreável e integra adesão/agenda/execução sem reescrever sessões históricas"
+            "Composição confirmada gera versão rastreável e integra adesão/agenda/execução sem reescrever sessões históricas",
+            "Q3:usuário pode trocar exercícios compatíveis e ajustar dias/horários antes de confirmar; explicar incompatibilidade e manter dose/instrução/direitos da fonte, sem ajuste livre inventado"
           ],
           "tasks": [
             {
@@ -1315,7 +1404,7 @@
             "Versão persistida com proveniência e regra humana",
             "Recibo de casos permitidos/bloqueados"
           ],
-          "handoff": "24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado.",
+          "handoff": "24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado. 25/10:Q3 definiu configuração completa047 antes da busca/seleção, trocas compatíveis e agenda editável; requisitos/valores de campos e regras de troca ainda a detalhar.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
@@ -1357,7 +1446,8 @@
           "acceptance": [
             "Planejado, iniciado, pausado, parcial, concluído, não feito e descanso têm semântica explícita",
             "Idempotency-Key e constraints evitam duas sessões para a mesma ocorrência",
-            "Conclusão de uma semana não bloqueia outra; duração observada separada da dose prescrita"
+            "Conclusão de uma semana não bloqueia outra; duração observada separada da dose prescrita",
+            "Q3:interromper oferece retomar ou encerrar parcial; saída de tela, relógio decorrido ou término do processo não concluem sessão nem geram eventos/medidas fictícios"
           ],
           "tasks": [
             {
@@ -1385,7 +1475,7 @@
             "API sessions e session-events",
             "Invariantes documentadas e testes"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; offline/fila ainda será detalhado noQ4.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
@@ -1928,7 +2018,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "24/10:trilha-implementacao.md governa o recorte por área; próxima conversaQ1 antes de decisões dependentes. Código seguro, modular e testável desde já; Flutter101testes no checkpoint0.3.0+13, sem fechar integralmente01–12 ou a história. Fonte única de referências e checkpoints:frontend-fidelidade-figma.md; auditoria-produto-2026-10-24.md separa fundação real de lacunas. Preservar runtime/dados e não reativar caminhos legados.",
+          "handoff": "25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Próximo blocoQ4 trata exclusão de fotos e uso offline; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
@@ -2048,7 +2138,8 @@
           "acceptance": [
             "Player/instrução usa modalidade/unidade real; prática bloqueada quando requisito não atendido",
             "Pausar/retomar/encerrar/parcial funcionam com estado persistido e idempotência",
-            "Matar processo e reabrir recupera registro real; sem duração/reps fictícias"
+            "Matar processo e reabrir recupera registro real; sem duração/reps fictícias",
+            "Q3:ao retornar ao treino interrompido, mostrar o que foi registrado e oferecer retomar ou encerrar parcial; timer, dose prevista e realizado distintos, sem concluir automaticamente"
           ],
           "tasks": [
             {
@@ -2076,7 +2167,7 @@
             "Fluxo de sessão real",
             "Evidência de recuperação"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução.",
           "completionEvidence": []
         },
         {
@@ -2808,7 +2899,8 @@
             "V1-042",
             "V1-044",
             "V1-045",
-            "V1-046"
+            "V1-046",
+            "V1-047"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -2823,7 +2915,8 @@
             "Erro/offline/duplo toque/ausência de conteúdo e troca de data cobertos sem mocks no runtime",
             "Lote bloqueado não executa; feedback não é apresentado como comprovação clínica",
             "Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1",
-            "Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes"
+            "Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes",
+            "Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais"
           ],
           "tasks": [
             {
@@ -3280,5 +3373,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10: seguir trilha por área e perguntas por blocos. Q1/Q2 respondidos: dois caminhos de treino; cuidador pratica para si; foto com revisão/quantidade; refeições/alimentos e histórico visual/análise/dicas juntos naV1; fotos recuperáveis pela conta com cache no celular. Próximo blocoQ3: configuração, ajustes, agenda e retomada dos treinos. V1-021 doing,045/046 todo; sem hospedagem agora."
+  "currentPriority": "25/10:Q1/Q2/Q3 respondidos. Configuração completa antes da busca/seleção(047), trocas compatíveis/dias/horários(015/044) e retomada ou parcial(017/023) aprovados. Histórico/refeição/alimento/análise/dicas e fotos pela conta+cache preservados. Próximo blocoQ4:exclusão de fotos e uso offline. V1-021 doing,047 todo; seguir dependências, sem hospedagem ou gerador de treino."
 }

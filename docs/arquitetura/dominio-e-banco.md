@@ -108,3 +108,14 @@ erDiagram
 ```
 
 Registro de exclusões não contém nome/e-mail/token. Cópia histórica só pode ser promovida depois do gate de exclusões atuais; o CLI não faz promoção. Manutenção é manual e limitada; backups existentes não são apagados.
+
+## Decisões Q3 — configuração e retomada planejadas
+
+Em25/10, o autor exigiu configuração completa antes da busca/seleção de treino; trocas de exercícios compatíveis e dias/horários editáveis; retomada ou encerramento parcial. V1-047 especificará a configuração privada, seus campos justificados, validação/versão e vínculo com as escolhas015/044. Esta seção é planejamento, sem nova tabela, endpoint ou migration aplicada.
+
+- Configuração concluída é requisito da jornada de treino, com titularidade e versão; não libera prática sem fonte/instrução/regra/direito apropriados. A consulta de referências conserva seu recorte.
+- Preferências de agenda e tempo disponível não são dose autorizada; alteração de composição/adesão não reescreve versões e eventos históricos.
+- Retomar preserva somente dados efetivamente registrados. Pausa, parcial e conclusão têm ações/estados distintos; nenhum tempo/repetição é inferido do período em que o app ficou fechado.
+- Campos físicos do formulário legado não se tornam obrigatórios por existir no código antigo; a matriz finalidade/campo/regra/contrato será detalhada na047.
+
+[Decisões completas e categorias de campos](../execucao/v1/decisoes-piloto.md) · [Trilha por área](../execucao/v1/trilha-implementacao.md).

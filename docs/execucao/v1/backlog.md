@@ -470,13 +470,54 @@ Entregas: Handlers e queries de catálogo; Respostas verificadas do lote
 
 Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver catalogo-consulta.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.
 
+### V1-047 — Persistir configuração completa antes da seleção de treino
+
+**todo · V1 · L**
+
+Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.
+
+Dependências: V1-008, V1-012, V1-013, V1-021
+
+Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/execucao/v1/frontend-fidelidade-figma.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md
+
+Critérios de aceite:
+
+- Configuração completa e revisada antecede busca/seleção de treino compatível e confirmação da composição; consulta pública de referências, alimentação e privacidade conservam seu recorte
+- Matriz por campo define finalidade, origem, obrigatório/condicional/opcional, valores/unidades, validação, persistência e uso nas regras; não herdar peso/altura/idade/gordura obrigatórios ou padrões fictícios do onboarding legado
+- Ambiente/recursos, disponibilidade e contexto de pausa do próprio cuidador respeitam os dados declarados; preferências não viram dose, progressão ou adequação clínica inventadas
+- Configuração privada pode ser salva, recuperada e alterada por sua conta com versão/concorrência e erros de campo explícitos; mudança de conta ou resposta tardia não mistura dados
+- Atualizar contexto não reescreve sessões/versões históricas; novas escolhas são validadas pelo backend contra configuração e requisitos humanos atuais
+- Go/SQL/Flutter separados por responsabilidade, DTOs e Swagger coerentes, autorização por titular e testes de persistência/isolamento; completar formulário não libera prática bloqueada
+- Fluxo legado de geração IA/manual-generator permanece fora da composição ativa; nenhum formulário simula salvamento ou elegibilidade sem API/regra implementadas
+
+Tarefas e subtarefas:
+
+- V1-047-T01 — Detalhar campos e persistência privada
+  - Reutilizar categorias Q3, requisitos das fontes e referências visuais obtidas; não repetir chamadas Figma limitadas
+  - Fechar matriz de campos por finalidade e distinguir contexto necessário de medida física opcional ou sem uso
+  - Definir modelo/versionamento e migration forward sem reset, preservando dados e fluxo de privacidade
+- V1-047-T02 — Implementar contrato e configuração revisável
+  - Implementar casos de uso Go para salvar/ler/alterar configuração com titularidade e conflito de versão
+  - Gerar Swagger por tipos/comentários e integrar repository/controller Flutter injetados
+  - Concluir e revisar a configuração antes de abrir a seleção de treino; tratar vazio/erro/rede/retorno sem reativar geradores
+- V1-047-T03 — Validar jornada e compatibilidade
+  - Testar campos condicionais/desconhecidos, concorrência, conta trocada e respostas atrasadas
+  - Conferir persistência/recuperação em base isolada e atualização sem alterar histórico anterior
+  - Registrar aceite real do fluxo e limites editoriais; fixtures não comprovam treino liberado
+
+Validação: Matriz de campos fundamentada e contratos/UI/SQL coerentes; Testes Go/SQL/Flutter de persistência, ownership, concorrência e estado; Aceite de configuração completa e revisão antes da seleção, com ausência de conteúdo honesta
+
+Entregas: Configuração privada persistida e versionada; Contrato e fluxo Flutter completos para revisão; Recibo de campos, isolamento, atualização e aceite
+
+Handoff: 25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done.
+
 ### V1-015 — Criar adesão sem geração de treino
 
 **todo · V1 · M**
 
 Como usuário, quero selecionar uma versão existente e uma agenda permitida pelo autor.
 
-Dependências: V1-014, V1-013
+Dependências: V1-014, V1-013, V1-047
 
 Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; docs/execucao/v1/trilha-implementacao.md
 
@@ -485,6 +526,7 @@ Critérios de aceite:
 - Adesão aponta para versão imutável e valida os requisitos necessários
 - Composição personalizada mantém autoria de componentes e perde rótulo de programa original se alterado
 - Rotas IA/manual-generator não participam da V1 e Gemini deixa de ser requisito
+- Q3:adesão/seleção exige configuração completa revisada; dias/horários e trocas compatíveis respeitam regras humanas sem reescrever ocorrências ou versões históricas
 
 Tarefas e subtarefas:
 
@@ -499,7 +541,7 @@ Validação: Selecionar lote real no banco e consultar adesão; Rejeitar variant
 
 Entregas: API de enrollments; Fluxo de seleção humano
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte.
 
 ### V1-016 — Expor instrução acessível e mídia com direitos
 
@@ -550,6 +592,7 @@ Critérios de aceite:
 - Combinação incompatível ou sem regra/material aprovado retorna motivo e bloqueio; nenhuma série, repetição, frequência ou adequação criada pela IA
 - Cuidador é o próprio praticante durante pausas de trabalho; não exige cadastro ou dados da pessoa assistida e não concede acesso a outra conta
 - Composição confirmada gera versão rastreável e integra adesão/agenda/execução sem reescrever sessões históricas
+- Q3:usuário pode trocar exercícios compatíveis e ajustar dias/horários antes de confirmar; explicar incompatibilidade e manter dose/instrução/direitos da fonte, sem ajuste livre inventado
 
 Tarefas e subtarefas:
 
@@ -569,7 +612,7 @@ Validação: Contrato HTTP/Swagger e integração SQL/Flutter consistentes; Duas
 
 Entregas: Contrato e fluxo de composição controlada; Versão persistida com proveniência e regra humana; Recibo de casos permitidos/bloqueados
 
-Handoff: 24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado.
+Handoff: 24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado. 25/10:Q3 definiu configuração completa047 antes da busca/seleção, trocas compatíveis e agenda editável; requisitos/valores de campos e regras de troca ainda a detalhar.
 
 ## EP06 — Atividade e alimentação registradas de verdade
 
@@ -590,6 +633,7 @@ Critérios de aceite:
 - Planejado, iniciado, pausado, parcial, concluído, não feito e descanso têm semântica explícita
 - Idempotency-Key e constraints evitam duas sessões para a mesma ocorrência
 - Conclusão de uma semana não bloqueia outra; duração observada separada da dose prescrita
+- Q3:interromper oferece retomar ou encerrar parcial; saída de tela, relógio decorrido ou término do processo não concluem sessão nem geram eventos/medidas fictícios
 
 Tarefas e subtarefas:
 
@@ -604,7 +648,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; offline/fila ainda será detalhado noQ4.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -852,7 +896,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 24/10:trilha-implementacao.md governa o recorte por área; próxima conversaQ1 antes de decisões dependentes. Código seguro, modular e testável desde já; Flutter101testes no checkpoint0.3.0+13, sem fechar integralmente01–12 ou a história. Fonte única de referências e checkpoints:frontend-fidelidade-figma.md; auditoria-produto-2026-10-24.md separa fundação real de lacunas. Preservar runtime/dados e não reativar caminhos legados.
+Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Próximo blocoQ4 trata exclusão de fotos e uso offline; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -902,6 +946,7 @@ Critérios de aceite:
 - Player/instrução usa modalidade/unidade real; prática bloqueada quando requisito não atendido
 - Pausar/retomar/encerrar/parcial funcionam com estado persistido e idempotência
 - Matar processo e reabrir recupera registro real; sem duração/reps fictícias
+- Q3:ao retornar ao treino interrompido, mostrar o que foi registrado e oferecer retomar ou encerrar parcial; timer, dose prevista e realizado distintos, sem concluir automaticamente
 
 Tarefas e subtarefas:
 
@@ -916,7 +961,7 @@ Validação: Integração Android com reinício e duplo toque; Repetir em data f
 
 Entregas: Fluxo de sessão real; Evidência de recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução.
 
 ### V1-024 — Implementar Hoje, histórico e perfil
 
@@ -1281,7 +1326,7 @@ Handoff: 23/10: certificado de avaliação release dedicado existente e protegid
 
 Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e conteúdo reais.
 
-Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046
+Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047
 
 Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
@@ -1292,6 +1337,7 @@ Critérios de aceite:
 - Lote bloqueado não executa; feedback não é apresentado como comprovação clínica
 - Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1
 - Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes
+- Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais
 
 Tarefas e subtarefas:
 

@@ -1,4 +1,4 @@
-> Estado vigente 25/10: Q1/Q2 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; próximo bloco Q3. As decisões antigas são preservadas no seu recorte.
+> Estado vigente 25/10: Q1/Q2/Q3 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; próximo bloco Q4. As decisões antigas são preservadas no seu recorte.
 
 > Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
 
@@ -125,3 +125,42 @@ A decisão de comportamento não contrata hospedagem, escolhe fornecedor ou auto
 ### Consequência de implementação
 
 V1-045/046 foram criadas como **todo**, V1-042 depende do agrupamento e V1-035 exige o conjunto aprovado. Nenhuma funcionalidade, API, migration, dado privado ou APK foi alterado nesta rodada. A implementação segue as dependências e os gates da trilha; a auditoria de 24/10 continua sendo o baseline técnico.
+
+## Decisões Q3 — 25/10/2026
+
+### Configuração completa antes de procurar treino
+
+O autor escolheu **“Configuração completa antes de procurar treino”**. O usuário deve concluir e revisar o contexto necessário antes de buscar/selecionar um programa compatível ou confirmar uma composição. A configuração inclui revisão antes de abrir a seleção de treino.
+
+Configuração completa significa concluir os campos necessários à jornada, com obrigatoriedade fundamentada. Não torna obrigatório todo dado físico ou clínico presente no legado. A consulta pública da biblioteca de referências, alimentação e privacidade conserva seu recorte; não depende de configurar treino. A nova **V1-047** torna explícita a entrega Go/SQL/Flutter desse contexto, sem tratar a organização técnica da021 como implementação de perfil.
+
+| Categoria a especificar | Finalidade e limite |
+|---|---|
+| Ambiente e recursos declarados | Casa, praça/parque, academia e equipamentos realmente disponíveis; nenhuma disponibilidade presumida |
+| Tempo disponível e agenda | Preferência, dias e horários do usuário; não equivalem a dose, frequência ou duração autorizadas pela fonte |
+| Objetivo e experiência, quando usados | Preferências e critérios de compatibilidade explicáveis, com valores fundamentados; não criam adequação clínica |
+| Pausas do cuidador | Contexto do próprio praticante; não exige cadastro da pessoa assistida nem inventa duração da pausa |
+| Requisitos condicionais do material | Coletar apenas o necessário para verificar o uso permitido; resposta desconhecida mantém a restrição correspondente |
+| Medidas físicas/dados clínicos do legado | Peso, altura, idade ou percentual de gordura não se tornam obrigatórios por existirem no formulário antigo; exigir finalidade e necessidade antes de coletar |
+
+Esta matriz é o recorte para detalhar campos/valores/validações, não um contrato HTTP ou questionário já implementado. O formulário legado de IA/manual e suas rotas não devem ser reativados. Não copiar valores padrão antigos como fatos do novo usuário.
+
+Configuração confirmada deve ser privada, persistida pela conta e versionada, com atualização concorrente tratada. Editar preferências não altera retroativamente plano/sessões/histórico; novas escolhas são validadas contra o contexto atual e as regras do conteúdo.
+
+### Trocar exercícios compatíveis e editar a agenda
+
+O autor aprovou **trocar exercícios compatíveis e ajustar dias/horários** ao revisar uma composição. A troca exige alternativa permitida pelas regras humanas e mantém autoria, versão, instrução, direitos, dose e apoio necessários. Ausência de alternativa válida produz motivo claro, sem exercício/dose inventados.
+
+Dias/horários são escolhas do usuário sujeitas às regras de frequência/recuperação da fonte. Não converter preferência em progressão ou dose automática. Mudança de programa integral para composição deve aparecer com a natureza correta, sem herdar o nome ou a eficácia do programa alterado. Confirmar uma revisão preserva as versões e ocorrências já registradas. V1-015/044 e o aceite integrado035 recebem esses critérios.
+
+### Oferecer retomada ou encerramento parcial
+
+O autor aprovou **oferecer retomar ou encerrar como parcial** quando interromper um treino. Preservar os eventos e medidas efetivamente confirmados, sem concluir por saída de tela, relógio decorrido, mudança de dia ou término do processo.
+
+Pausado, parcial e concluído são estados distintos. Encerrar como parcial é uma ação explícita; retornar ao app oferece a recuperação do estado real. Timer, dose prevista e realizado permanecem separados. Retentativa/reenvio não cria outra execução da mesma ocorrência; expiração da sessão de login não autoriza perder silenciosamente o registro. V1-017/023 tratam persistência, idempotência e recuperação; o comportamento offline/filas privadas ainda será detalhado no Q4.
+
+### Próxima decisão e limites da rodada
+
+As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. Próximo bloco **Q4**, com foco nas escolhas ainda abertas de exclusão das fotos e uso offline. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
+
+Esta rodada altera planejamento e critérios. Nenhuma configuração, composição ou retomada foi implementada por atualizar estes documentos; nenhuma história nova foi marcada como concluída.

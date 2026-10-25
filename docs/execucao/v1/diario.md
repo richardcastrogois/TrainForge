@@ -282,3 +282,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Atualizadas decisões, trilha, backlog, escopo, matriz, frontend, índice e handoff. Próximo bloco após fechar fotos éQ3. Rodada documental, sem código/API/migration/APK, novo consumo ou repetição de Google/import/restore.
 - Validação documental: geração reproduzível, backlog/dependências/requisitos/links locais conferidos; 13 testes de documentação passaram. Diff revisado antes do commit/push. Esses resultados não equivalem a validação funcional no aplicativo.
 - Commit d2704a6 publicado em origin/main. Em seguida, autor aprovou recuperar fotos pela conta com cache no celular; Q2 respondido. Fontes atuais e critérios042 atualizados, sem escolher serviço ou liberar envio de fotos; próximos assuntos são configuração/ajustes/agenda/retomada noQ3.
+
+## 25/10/2026 — respostas Q3, configuração e retomada
+
+- Autor escolheu configuração completa antes de procurar treino; trocar exercícios compatíveis e ajustar dias/horários; oferecer retomar ou encerrar como parcial. Respostas registradas em decisoes-piloto.md e incorporadas na trilha/escopo/frontend/matriz/handoff.
+- Consulta Graphify existente direcionou a inspeção do onboarding legado. Código antigo exige medidas físicas e chama geração de plano; continua fora do caminho ativo. Sua existência não valida contrato Go nem torna seus campos obrigatórios. Matriz de categorias/finalidades registrada para detalhamento.
+- NovaV1-047(todo) explicita configuração privada Go/SQL/Flutter, com revisão/versão/concorrência;015 depende dela,044 herda o requisito via015 e035 exige o aceite integrado.017/023 incorporam retomada/parcial sem conclusão automática. Nenhum statusdone alterado.
+- Próximo blocoQ4:destino da foto ao excluir refeição e funcionamento offline. Sem mudança de código/API/migration/APK, dado privado, fonte de conteúdo ou serviço externo; Swagger e GraphifyAST preservados. Não repetidos login/import/restore ou testes deapp.
+- Validação documental: geração reproduzível, dependências/requisitos/entradas/links conferidos;13testes documentais passaram e diff sem erros. Commit/push seguem a autorização existente. Esses testes não comprovam funcionamento do novo fluxo noAPK.
