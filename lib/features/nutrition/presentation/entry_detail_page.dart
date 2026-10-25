@@ -3,7 +3,7 @@ import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import '../domain/nutrition.dart';
-import '../data/nutrition_repository.dart';
+import 'nutrition_messages.dart';
 import 'nutrition_forms.dart';
 
 class EntryDetailPage extends StatefulWidget {

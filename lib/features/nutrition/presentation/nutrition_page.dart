@@ -1,12 +1,11 @@
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
-import 'dart:async';
 import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
-import '../data/nutrition_repository.dart';
+import 'nutrition_controller.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_forms.dart';
 import 'entry_detail_page.dart';
@@ -32,43 +31,37 @@ class NutritionPage extends StatefulWidget {
 class _NutritionPageState extends State<NutritionPage>
     with WidgetsBindingObserver {
   late final NutritionRepository repository;
-  DateTime date = DateTime.now();
-  bool loading = true, moreBusy = false, ownMoreBusy = false, ownLoading = true;
-  String? error, ownError, cursor, ownCursor;
-  List<Json> entries = [], foods = [];
-  Json? summary;
-  int generation = 0, ownGeneration = 0;
+  late final NutritionController controller;
   final search = TextEditingController();
-  String ownQuery = '';
-  Timer? debounce;
-  bool get active => mounted && widget.currentAccountId() == widget.accountId;
+  bool get active => mounted && controller.active;
+
   @override
   void initState() {
     super.initState();
-    date = widget.initialDate ?? DateTime.now();
     repository =
         widget.repository ??
         AppDependencyScope.read(context).createNutritionRepository(
           accountId: widget.accountId,
           currentAccountId: widget.currentAccountId,
         );
+    controller = NutritionController(
+      repository: repository,
+      accountId: widget.accountId,
+      currentAccountId: widget.currentAccountId,
+      initialDate: widget.initialDate,
+    );
     widget.sessionChanges.addListener(accountChanged);
     WidgetsBinding.instance.addObserver(this);
-    load();
-    searchOwn();
+    controller.load();
+    controller.searchOwn();
   }
 
   void accountChanged() {
-    if (widget.currentAccountId() != widget.accountId) {
-      generation++;
-      ownGeneration++;
-      entries = [];
-      foods = [];
-      summary = null;
+    controller.accountChanged();
+    if (!controller.active) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) Navigator.of(context).popUntil((r) => r.isFirst);
       });
-      if (mounted) setState(() {});
     }
   }
 
@@ -77,144 +70,19 @@ class _NutritionPageState extends State<NutritionPage>
     if (state == AppLifecycleState.resumed) {
       accountChanged();
       if (active) {
-        load();
-        searchOwn();
+        controller.load();
+        controller.searchOwn();
       }
     }
   }
 
   @override
   void dispose() {
-    generation++;
-    ownGeneration++;
-    debounce?.cancel();
     search.dispose();
     widget.sessionChanges.removeListener(accountChanged);
     WidgetsBinding.instance.removeObserver(this);
+    controller.dispose();
     super.dispose();
-  }
-
-  Future<void> load() async {
-    if (!active) return;
-    final g = ++generation;
-    setState(() {
-      loading = true;
-      moreBusy = false;
-      error = null;
-      entries = [];
-      summary = null;
-      cursor = null;
-    });
-    try {
-      final values = await Future.wait<Object>([
-        repository.entries(localDay(date), offsetZone(date)),
-        repository.summary(localDay(date), offsetZone(date)),
-      ]);
-      if (!active || g != generation) return;
-      final records = values[0] as NutritionPageData;
-      setState(() {
-        entries = records.items;
-        cursor = records.cursor;
-        summary = values[1] as Json;
-      });
-    } catch (e) {
-      if (active && g == generation) setState(() => error = nutritionError(e));
-    } finally {
-      if (active && g == generation) {
-        setState(() => loading = false);
-      }
-    }
-  }
-
-  Future<void> searchOwn() async {
-    if (!active) return;
-    final g = ++ownGeneration;
-    final query = search.text.trim();
-    ownQuery = query;
-    setState(() {
-      ownLoading = true;
-      ownMoreBusy = false;
-      ownError = null;
-      foods = [];
-      ownCursor = null;
-    });
-    try {
-      final page = await repository.foods(q: query);
-      if (active && g == ownGeneration) {
-        setState(() {
-          foods = page.items;
-          ownCursor = page.cursor;
-        });
-      }
-    } catch (e) {
-      if (active && g == ownGeneration) {
-        setState(() => ownError = nutritionError(e));
-      }
-    } finally {
-      if (active && g == ownGeneration) setState(() => ownLoading = false);
-    }
-  }
-
-  Future<void> more(bool own) async {
-    if (!active || (own ? ownLoading || ownMoreBusy : loading || moreBusy)) {
-      return;
-    }
-    final token = own ? ownCursor : cursor;
-    if (token == null) return;
-    final g = own ? ownGeneration : generation;
-    bool current() => active && g == (own ? ownGeneration : generation);
-    setState(() {
-      if (own) {
-        ownMoreBusy = true;
-      } else {
-        moreBusy = true;
-      }
-      if (own) {
-        ownError = null;
-      } else {
-        error = null;
-      }
-    });
-    try {
-      final result = own
-          ? await repository.foods(q: ownQuery, cursor: token)
-          : await repository.entries(
-              localDay(date),
-              offsetZone(date),
-              cursor: token,
-            );
-      if (current()) {
-        setState(() {
-          if (own) {
-            foods = [...foods, ...result.items];
-            ownCursor = result.cursor;
-          } else {
-            entries = [...entries, ...result.items];
-            cursor = result.cursor;
-          }
-        });
-      }
-    } catch (e) {
-      if (current()) {
-        setState(() {
-          if (own) {
-            ownError = nutritionError(e);
-          } else {
-            error = nutritionError(e);
-          }
-        });
-      }
-    } finally {
-      if (current()) {
-        setState(() {
-          if (own) {
-            ownMoreBusy = false;
-          } else {
-            moreBusy = false;
-          }
-        });
-      }
-    }
   }
 
   Future<void> record(FoodReference food) async {
@@ -226,7 +94,7 @@ class _NutritionPageState extends State<NutritionPage>
       ),
     );
     if (!active) return;
-    await load();
+    await controller.load();
     if (active && result != null) await detail(result);
   }
 
@@ -237,7 +105,7 @@ class _NutritionPageState extends State<NutritionPage>
         builder: (_) => EntryDetailPage(entry: entry, repository: repository),
       ),
     );
-    if (active) await load();
+    if (active) await controller.load();
   }
 
   Future<void> chooseReference() async {
@@ -258,7 +126,7 @@ class _NutritionPageState extends State<NutritionPage>
       ),
     );
     if (!active) return;
-    await searchOwn();
+    await controller.searchOwn();
     if (mounted && active && result != null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -273,32 +141,34 @@ class _NutritionPageState extends State<NutritionPage>
   Future<void> chooseDate() async {
     final chosen = await showDatePicker(
       context: context,
-      initialDate: date,
+      initialDate: controller.date,
       firstDate: DateTime(1900),
       lastDate: DateTime(2100, 12, 31),
     );
     if (chosen != null && active) {
-      date = chosen;
-      await load();
+      await controller.selectDate(chosen);
     }
   }
 
   @override
-  Widget build(BuildContext context) => DefaultTabController(
-    length: 2,
-    child: FigmaRouteFrame(
-      body: Column(
-        children: [
-          const TabBar(
-            tabs: [
-              Tab(text: 'Consumo'),
-              Tab(text: 'Meus alimentos'),
-            ],
-          ),
-          Expanded(
-            child: TabBarView(children: [consumptionList(), ownFoodList()]),
-          ),
-        ],
+  Widget build(BuildContext context) => ListenableBuilder(
+    listenable: controller,
+    builder: (context, _) => DefaultTabController(
+      length: 2,
+      child: FigmaRouteFrame(
+        body: Column(
+          children: [
+            const TabBar(
+              tabs: [
+                Tab(text: 'Consumo'),
+                Tab(text: 'Meus alimentos'),
+              ],
+            ),
+            Expanded(
+              child: TabBarView(children: [consumptionList(), ownFoodList()]),
+            ),
+          ],
+        ),
       ),
     ),
   );
@@ -307,7 +177,7 @@ class _NutritionPageState extends State<NutritionPage>
       FigmaPageHeading(title: 'Minha alimentação', subtitle: subtitle);
 
   Widget consumptionList() => RefreshIndicator(
-    onRefresh: load,
+    onRefresh: controller.load,
     child: ListView(
       key: const PageStorageKey('nutrition-consumption'),
       physics: const AlwaysScrollableScrollPhysics(),
@@ -317,7 +187,9 @@ class _NutritionPageState extends State<NutritionPage>
         OutlinedButton.icon(
           onPressed: chooseDate,
           icon: const Icon(Icons.calendar_today),
-          label: Text('${localDay(date)} · ${offsetZone(date)}'),
+          label: Text(
+            '${localDay(controller.date)} · ${offsetZone(controller.date)}',
+          ),
         ),
         const SizedBox(height: 12),
         FilledButton.icon(
@@ -330,15 +202,18 @@ class _NutritionPageState extends State<NutritionPage>
           'Registros confirmados por você. Nenhuma dieta, meta ou compensação por exercício é criada.',
         ),
         const SizedBox(height: 16),
-        if (loading) const AppLoading(label: 'Consultando alimentação'),
-        if (error != null) _error(),
-        if (!loading && error == null && entries.isEmpty)
+        if (controller.loading)
+          const AppLoading(label: 'Consultando alimentação'),
+        if (controller.error != null) _error(),
+        if (!controller.loading &&
+            controller.error == null &&
+            controller.entries.isEmpty)
           const FlowStatus(
             title: 'Nenhum consumo registrado neste dia.',
             message:
                 'Escolha outra data ou pesquise um alimento para registrar o que consumiu. Ausência de registro não significa consumo zero.',
           ),
-        for (final entry in entries)
+        for (final entry in controller.entries)
           FlowRecord(
             title: displayLabel(
               object(object(entry['calculation'])['food'])['nameOriginal'],
@@ -348,28 +223,32 @@ class _NutritionPageState extends State<NutritionPage>
 ${localTimestamp(entry['occurredAt'] as String)}''',
             onTap: () => detail(entry),
           ),
-        if (cursor != null)
+        if (controller.cursor != null)
           OutlinedButton(
-            onPressed: moreBusy ? null : () => more(false),
-            child: Text(moreBusy ? 'Carregando…' : 'Carregar mais registros'),
+            onPressed: controller.moreBusy
+                ? null
+                : () => controller.more(false),
+            child: Text(
+              controller.moreBusy ? 'Carregando…' : 'Carregar mais registros',
+            ),
           ),
-        if (summary != null)
+        if (controller.summary != null)
           FigmaSection(
             child: ExpansionTile(
               tilePadding: EdgeInsets.zero,
               title: Text(
-                summary!['complete'] == true
-                    ? 'Subtotais do dia · ${summary!['entries']} registros'
+                controller.summary!['complete'] == true
+                    ? 'Subtotais do dia · ${controller.summary!['entries']} registros'
                     : 'Limite de subtotal excedido',
               ),
               children: [
-                Text(summary!['notice'] as String),
-                if (summary!['complete'] == true)
+                Text(controller.summary!['notice'] as String),
+                if (controller.summary!['complete'] == true)
                   Text(
-                    '${summary!['measuredEntries']} quantidades medidas · ${summary!['estimatedEntries']} estimadas',
+                    '${controller.summary!['measuredEntries']} quantidades medidas · ${controller.summary!['estimatedEntries']} estimadas',
                   ),
                 const SizedBox(height: 12),
-                for (final n in objects(summary!['nutrients']))
+                for (final n in objects(controller.summary!['nutrients']))
                   Padding(
                     padding: const EdgeInsets.only(bottom: 12),
                     child: Column(
@@ -399,7 +278,7 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
   );
 
   Widget ownFoodList() => RefreshIndicator(
-    onRefresh: searchOwn,
+    onRefresh: controller.searchOwn,
     child: ListView(
       key: const PageStorageKey('nutrition-own-foods'),
       physics: const AlwaysScrollableScrollPhysics(),
@@ -423,43 +302,43 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
           decoration: const InputDecoration(
             labelText: 'Buscar nos meus alimentos',
           ),
-          onChanged: (_) {
-            debounce?.cancel();
-            debounce = Timer(const Duration(milliseconds: 400), searchOwn);
-          },
-          onSubmitted: (_) {
-            debounce?.cancel();
-            searchOwn();
-          },
+          onChanged: controller.queryChanged,
+          onSubmitted: controller.submitQuery,
         ),
         const SizedBox(height: 12),
-        if (ownLoading)
+        if (controller.ownLoading)
           const AppLoading(label: 'Consultando alimentos particulares'),
-        if (ownError != null)
+        if (controller.ownError != null)
           FlowStatus(
             title: 'Consulta indisponível',
-            message: ownError!,
+            message: controller.ownError!,
             actionLabel: 'Tentar novamente',
-            onAction: searchOwn,
+            onAction: controller.searchOwn,
           ),
-        if (!ownLoading && ownError == null && foods.isEmpty)
+        if (!controller.ownLoading &&
+            controller.ownError == null &&
+            controller.foods.isEmpty)
           const FlowStatus(
             title: 'Nenhum alimento próprio corresponde à busca.',
             message:
                 'Pesquise outro nome ou cadastre um alimento particular. Informe somente os dados conhecidos; não preencha nutrientes por suposição.',
           ),
-        for (final food in foods)
+        for (final food in controller.foods)
           FlowRecord(
             title: asFood(food).displayName,
             subtitle: '''${asFood(food).basisLabel}
 Particular · tocar para informar uma porção''',
             onTap: () => record(asFood(food)),
           ),
-        if (ownCursor != null)
+        if (controller.ownCursor != null)
           OutlinedButton(
-            onPressed: ownMoreBusy ? null : () => more(true),
+            onPressed: controller.ownMoreBusy
+                ? null
+                : () => controller.more(true),
             child: Text(
-              ownMoreBusy ? 'Carregando…' : 'Carregar mais alimentos próprios',
+              controller.ownMoreBusy
+                  ? 'Carregando…'
+                  : 'Carregar mais alimentos próprios',
             ),
           ),
       ],
@@ -468,8 +347,8 @@ Particular · tocar para informar uma porção''',
 
   Widget _error() => FlowStatus(
     title: 'Consulta indisponível',
-    message: error!,
+    message: controller.error!,
     actionLabel: 'Tentar novamente',
-    onAction: load,
+    onAction: controller.load,
   );
 }

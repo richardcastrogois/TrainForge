@@ -28,7 +28,7 @@ flowchart LR
 
 ## Composição Flutter implementada em 25/10
 
-TrainForgeApp recebe AppDependencies ou compõe as fábricas de produção uma vez na raiz. O escopo fica acima do Navigator, alcançando também as rotas abertas depois. As fábricas criam os serviços sob demanda; dados privados são vinculados à conta, sem singleton de estado do diário. [Verificação](../execucao/v1/frontend-composition-verification.json): rotas públicas/tema, reutilização do serviço e troca de identidade;103 testes aprovados/analyze sem issues. Estado/formulários alimentares e configuração por ambiente continuam em revisão na021.
+TrainForgeApp recebe AppDependencies ou compõe as fábricas de produção uma vez na raiz. O escopo fica acima do Navigator, alcançando também as rotas abertas depois. As fábricas criam os serviços sob demanda; dados privados são vinculados à conta, sem singleton de estado do diário. [Verificação](../execucao/v1/frontend-composition-verification.json): rotas públicas/tema, reutilização do serviço e troca de identidade;103 testes aprovados/analyze sem issues. Segundo incremento:estado emNutritionController eAPP_ENV por ambiente,108testes/analyze0issues.021encerrada no seu recorte; [critérios](../execucao/v1/frontend-state-verification.json). Entrada/foco/validação dos formulários permanecem naUI, comrepository injetado.
 
 ```mermaid
 flowchart LR
@@ -40,12 +40,18 @@ flowchart LR
   gate --> shell["ProductShell por identidade"]
   scope --> bound["NutritionRepository por conta"]
   bound --> daily["DailySummaryController: Hoje / Diário"]
-  bound --> diary["NutritionPage e formulários"]
+  bound --> reads["NutritionController: consultas / busca / paginação"]
+  reads --> diary["NutritionPage: apresentação e navegação"]
+  bound --> forms["Formulários: campos e guardas visuais"]
   shell --> daily
   shell --> diary
   gate --> change["Troca de conta remove rotas privadas"]
   change --> bound
 ```
+
+### Configuração por ambiente
+
+APP_ENV aceita development, staging ou production; emdebug o default édevelopment e emprofile/release éproduction. API_BASE_URL continua definido por dart-define, com o defaultlocal127.0.0.1:8082 preservado para desenvolvimento. HTTP só é permitido parahosts locais exatos emdevelopment/debug; staging/production eprofile/release exigemHTTPS. URL não aceita credenciais,query,fragmento,pathextra ouhostvazio. Nenhum endpoint externo foi criado; ambiente configurado não implica hospedagem. IDsOAuth permanecem públicos separados de segredos.
 
 ## Privacidade implementada em23/10
 

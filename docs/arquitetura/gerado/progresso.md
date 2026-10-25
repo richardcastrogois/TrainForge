@@ -1,8 +1,8 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `bca078d46d1d0521`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4e427778df9aaff9`.
 
-**16/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**17/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-048**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
@@ -12,7 +12,7 @@
 | EP04 | Identidade, privacidade e acesso | 4 | 3 |
 | EP05 | Biblioteca humana e API de catálogo | 5 | 1 |
 | EP06 | Atividade e alimentação registradas de verdade | 7 | 2 |
-| EP07 | Flutter e experiência da V1 | 8 | 0 |
+| EP07 | Flutter e experiência da V1 | 8 | 1 |
 | EP08 | Segurança, desempenho e observabilidade | 3 | 0 |
 | EP09 | Infraestrutura, CI e implantação | 3 | 0 |
 | EP10 | APK e primeiro teste acompanhado | 4 | 0 |
@@ -248,7 +248,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-021 | doing | Organizar configuração, composição e estado | V1-008, V1-012 |
+| V1-021 | done | Organizar configuração, composição e estado | V1-008, V1-012 |
 | V1-022 | todo | Implementar entrada e biblioteca com conteúdo real | V1-014, V1-015, V1-021 |
 | V1-023 | todo | Implementar sessão e recuperação de interrupção | V1-016, V1-017, V1-022 |
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |

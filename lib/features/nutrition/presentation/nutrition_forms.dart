@@ -7,7 +7,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import '../domain/nutrition.dart';
-import '../data/nutrition_repository.dart';
+import 'nutrition_messages.dart';
 
 bool _rejected(Object e) =>
     e is DioException &&

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-25",
+  "story": "V1-021",
+  "status": "done",
+  "scope": "Fundação Flutter: composição explícita, configuração por ambiente e uma fatia de estado migrada; não representa o frontend inteiro.",
+  "sourceBaseCommit": "8a9d71c",
+  "checks": [
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 108,
+      "failed": 0
+    },
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "check": "imports dos14arquivos de domínio",
+      "result": "passed",
+      "flutterOrDioImports": 0
+    }
+  ],
+  "acceptance": [
+    {
+      "criterion": "Feature-first; controller/viewmodel e repository injetado",
+      "evidence": [
+        "lib/composition/app_dependencies.dart",
+        "lib/composition/production_dependencies.dart",
+        "lib/features/nutrition/presentation/nutrition_controller.dart",
+        "lib/features/nutrition/presentation/nutrition_page.dart",
+        "test/app_composition_test.dart",
+        "test/nutrition_controller_test.dart"
+      ],
+      "result": "Fábricas de produção na raiz; controllers recebem contratos. Nutrição separa consultas/paginação/busca da navegação e campos da tela."
+    },
+    {
+      "criterion": "Configuração por dart-define, Dio central, timeouts e sessão coordenada",
+      "evidence": [
+        "lib/core/config/app_config.dart",
+        "lib/core/http/app_dio.dart",
+        "lib/features/auth/data/session_refresh.dart",
+        "test/app_config_test.dart",
+        "test/session_refresh_test.dart"
+      ],
+      "result": "APP_ENV development/staging/production e API_BASE_URL; HTTP somente local development/debug, HTTPS nos demais. Infraestrutura central de sessão/timeouts preservada e regressão aprovada."
+    },
+    {
+      "criterion": "Logs por allowlist e domínio sem widgets/Dio",
+      "evidence": [
+        "lib/core/http/app_dio.dart",
+        "test/auth_security_test.dart",
+        "docs/execucao/v1/auth-real-android-verification.json"
+      ],
+      "result": "Eventos/status/categoria sem URL/corpo/erro bruto;14domínios sem Flutter/Dio. Prova real de login permanece a23/10; não foi repetida nem substituída porfixtures."
+    }
+  ],
+  "behavior": [
+    "Troca de dia ignora resposta anterior.",
+    "Troca de conta limpa o estado, cancela debounce e invalida definitivamente o controller antigo.",
+    "Saída da tela durante consulta ignora conclusão e não notifica controller destruído.",
+    "Busca particular e diário mantêm estados independentes; paginação usa a consulta aplicada.",
+    "Mensagens de apresentação foram retiradas do adaptador HTTP."
+  ],
+  "limits": [
+    "Formulários mantêm campos, foco, validação visual e guardas de envio locais com repository injetado; não houve reescrita de toda lib.",
+    "Nenhuma nova instalaçãoAPK, consulta/escrita no banco, exclusão, sessãoGoogle real, carga ou medição de cobertura.",
+    "Configuração047, idiomas048, offline026 e master049 continuam abertos; não houve contratação ou hospedagem.",
+    "Sem validação nativa iOS; testes visuais são de widgets com fixtures isoladas."
+  ],
+  "graph": {
+    "files": 88,
+    "changed": 7,
+    "unchanged": 81,
+    "deleted": 0,
+    "nodes": 1294,
+    "edges": 1734,
+    "mode": "AST incremental code-only; HTML exportado; sem clusterização/LLM"
+  },
+  "documentation": {
+    "generation": "passed",
+    "testsPassed": 13,
+    "diffCheck": "passed"
+  }
+}

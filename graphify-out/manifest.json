@@ -6,10 +6,10 @@
     "semantic_hash": "3caf4448388637133eaf14a8b3c5e399"
   },
   "core/config/app_config.dart": {
-    "mtime": 1792663903.8144777,
-    "seen": 1792664593.4369361,
-    "ast_hash": "161cfca77c56e875d06750fb795e2d13",
-    "semantic_hash": "161cfca77c56e875d06750fb795e2d13"
+    "mtime": 1792970236.9552076,
+    "seen": 1792970345.298125,
+    "ast_hash": "b8c473488f691d40fc4effea85b2dca6",
+    "semantic_hash": "b8c473488f691d40fc4effea85b2dca6"
   },
   "core/http/app_dio.dart": {
     "mtime": 1792664070.6013544,
@@ -354,10 +354,10 @@
     "semantic_hash": "f9b4c1b91fc822e1817924aa88590b4d"
   },
   "features/nutrition/data/nutrition_repository.dart": {
-    "mtime": 1792778651.8276787,
-    "seen": 1792779383.8134906,
-    "ast_hash": "1b204aac23759c7a669b970276a3cfdd",
-    "semantic_hash": "1b204aac23759c7a669b970276a3cfdd"
+    "mtime": 1792970090.8709717,
+    "seen": 1792970345.3027697,
+    "ast_hash": "7bcc45de8b39056e1676eb703a622cde",
+    "semantic_hash": "7bcc45de8b39056e1676eb703a622cde"
   },
   "features/nutrition/domain/nutrition.dart": {
     "mtime": 1792781015.1132708,
@@ -366,22 +366,22 @@
     "semantic_hash": "947e2ab1ff61eaaf6d9cfbce4ddeae49"
   },
   "features/nutrition/presentation/entry_detail_page.dart": {
-    "mtime": 1792859214.7491474,
-    "seen": 1792860036.132118,
-    "ast_hash": "fe5d66fe26e7e8772815223bb6c71bc2",
-    "semantic_hash": "fe5d66fe26e7e8772815223bb6c71bc2"
+    "mtime": 1792970124.6642036,
+    "seen": 1792970345.3027697,
+    "ast_hash": "7c5e9a6142df13449b531f054598d540",
+    "semantic_hash": "7c5e9a6142df13449b531f054598d540"
   },
   "features/nutrition/presentation/nutrition_forms.dart": {
-    "mtime": 1792859658.309898,
-    "seen": 1792860036.132118,
-    "ast_hash": "8caaf9702725a33178589c550f5dc50c",
-    "semantic_hash": "8caaf9702725a33178589c550f5dc50c"
+    "mtime": 1792970124.6564324,
+    "seen": 1792970345.3027697,
+    "ast_hash": "ae108c7e8e36f0936f8496a344056a85",
+    "semantic_hash": "ae108c7e8e36f0936f8496a344056a85"
   },
   "features/nutrition/presentation/nutrition_page.dart": {
-    "mtime": 1792968997.6136165,
-    "seen": 1792969794.4291015,
-    "ast_hash": "9aa2609597c9fc81ca4ddde71e8c9bd4",
-    "semantic_hash": "9aa2609597c9fc81ca4ddde71e8c9bd4"
+    "mtime": 1792970129.801452,
+    "seen": 1792970345.3027697,
+    "ast_hash": "45f9aba27d2345fdbc693a9572872146",
+    "semantic_hash": "45f9aba27d2345fdbc693a9572872146"
   },
   "core/theme/trainforge_theme.dart": {
     "mtime": 1792859872.8864472,
@@ -514,5 +514,17 @@
     "seen": 1792969794.4245894,
     "ast_hash": "7f09306743e6eee67d3884d9da5fded1",
     "semantic_hash": "7f09306743e6eee67d3884d9da5fded1"
+  },
+  "features/nutrition/presentation/nutrition_controller.dart": {
+    "mtime": 1792970212.7683601,
+    "seen": 1792970345.3027697,
+    "ast_hash": "4240ac90d60f32c5dd67912024995a0a",
+    "semantic_hash": "4240ac90d60f32c5dd67912024995a0a"
+  },
+  "features/nutrition/presentation/nutrition_messages.dart": {
+    "mtime": 1792970090.868956,
+    "seen": 1792970345.3027697,
+    "ast_hash": "bcf8b8ae7d88310cad6a32d215127110",
+    "semantic_hash": "bcf8b8ae7d88310cad6a32d215127110"
   }
 }

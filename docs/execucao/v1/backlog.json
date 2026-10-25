@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-25",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-021",
+  "next": "V1-048",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -2059,7 +2059,7 @@
           "id": "V1-021",
           "title": "Organizar configuração, composição e estado",
           "userStory": "Como desenvolvedor, quero telas pequenas e dependências substituíveis sem reescrever a lib inteira.",
-          "status": "doing",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -2112,8 +2112,23 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "25/10:composição lazy criada em lib/composition e injetada nas rotas ativas; Hoje/diário compartilham repositório por conta. Dois testes integrados novos e suíte103/analyze0issues passaram, conforme recibo. Continua doing: revisar responsabilidades de estado/formulários alimentares e configuração por ambiente antes do encerramento. Configuração privada047, offline026, localização048 e exclusão master049 continuam histórias próprias, sem reativar onboarding IA. Q1–Q6 registrados; preservar APK0.3.0+13, dados reais e aceites específicos.",
-          "completionEvidence": [],
+          "handoff": "25/10:fundação021encerrada no recorte previsto de composição/configuração e uma fatia migrada, sem rewrite da lib. Fábricas lazy na raiz; repository privado por conta; NutritionController separa consulta/paginação/busca da tela; mensagens fora do adaptador. APP_ENV development/staging/production eHTTPS fora do development/debug local.108testesFlutter/analyze0issues;14domínios sem Flutter/Dio. Evidências históricas de sessão/logs reais reutilizadas pois HTTP/auth não mudaram. APK0.3.0+13 e dados reais preservados. Próxima048 pelas dependências;025/026/047/049 e aceite integral continuam abertos.",
+          "completionEvidence": [
+            {
+              "date": "2026-10-25",
+              "scope": "Composição/configuração Flutter e migração de uma fatia de estado, conformeT01/T02 da021; sem reescrever toda lib ou concluir frontend integrado",
+              "files": [
+                "docs/execucao/v1/frontend-composition-verification.json",
+                "docs/execucao/v1/frontend-state-verification.json",
+                "docs/execucao/v1/auth-local-fechamento.md",
+                "test/app_composition_test.dart",
+                "test/nutrition_controller_test.dart",
+                "test/app_config_test.dart"
+              ],
+              "validation": "108testesFlutter aprovados/analyze0issues; rotas injetadas, tema, conta/dia/dispose/respostas atrasadas, paginação/busca independente e política de ambiente.14domínios sem Flutter/Dio. Logs/sessão reais têm evidência histórica preservada, sem repetir Google.",
+              "limits": "Sem novoAPK, teste humano integrado ou validaçãoiOS.025/026/047/048/049 e capacidade de produção permanecem próprias; fixtures não entram no runtime."
+            }
+          ],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
@@ -2123,7 +2138,8 @@
             "docs/execucao/v1/frontend-stage07-12-verification.json",
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
-            "docs/execucao/v1/frontend-composition-verification.json"
+            "docs/execucao/v1/frontend-composition-verification.json",
+            "docs/execucao/v1/frontend-state-verification.json"
           ]
         },
         {
@@ -3594,5 +3610,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10:Q1–Q6 registrados; implementar pelas dependências. V1-021 doing recebeu composição lazy/injeção por conta e103testesFlutter aprovados; revisar estado/formulários e configuração por ambiente antes de encerrar. Master049 ainda todo, sem papel provisionado; participantes/conta de ensaio não presumidos. Preservar dados reais e decisões anteriores, sem hospedagem ou gerador de treino."
+  "currentPriority": "25/10:V1-021encerrada no recorte de composição/configuração/estado com108testesFlutter/analyze0issues. Próxima048, pronta por020/021:localização e nomes revisados. Q1–Q6 registrados; master049todo, sem privilégio provisionado. PreservarAPK/dados reais e gates de conteúdo/aceite, sem hospedagem ou gerador de treino."
 }

@@ -918,7 +918,7 @@ Evoluir a lib existente por feature, com contratos reais, estado consistente e s
 
 ### V1-021 — Organizar configuração, composição e estado
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como desenvolvedor, quero telas pequenas e dependências substituíveis sem reescrever a lib inteira.
 
@@ -945,7 +945,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 25/10:composição lazy criada em lib/composition e injetada nas rotas ativas; Hoje/diário compartilham repositório por conta. Dois testes integrados novos e suíte103/analyze0issues passaram, conforme recibo. Continua doing: revisar responsabilidades de estado/formulários alimentares e configuração por ambiente antes do encerramento. Configuração privada047, offline026, localização048 e exclusão master049 continuam histórias próprias, sem reativar onboarding IA. Q1–Q6 registrados; preservar APK0.3.0+13, dados reais e aceites específicos.
+Handoff: 25/10:fundação021encerrada no recorte previsto de composição/configuração e uma fatia migrada, sem rewrite da lib. Fábricas lazy na raiz; repository privado por conta; NutritionController separa consulta/paginação/busca da tela; mensagens fora do adaptador. APP_ENV development/staging/production eHTTPS fora do development/debug local.108testesFlutter/analyze0issues;14domínios sem Flutter/Dio. Evidências históricas de sessão/logs reais reutilizadas pois HTTP/auth não mudaram. APK0.3.0+13 e dados reais preservados. Próxima048 pelas dependências;025/026/047/049 e aceite integral continuam abertos.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 

@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização25/10: estado alimentar e ambientes
+
+88arquivosDart,1294nós/1734arestas;7alterados/novos,81inalterados,0removidos. ASTincremental eHTMLexportado, sem semântica/clusterização/LLM. Backup.local/graphify-backup-20261025-nutrition-state. IncluiNutritionController/mensagens eAPP_ENV. [Aceite021](execucao/v1/frontend-state-verification.json).
+
 ## Atualização25/10: composição Flutter por conta
 
 86arquivosDart,1265nós/1698arestas;11alterados/novos,75inalterados,0removidos. Update incremental code-only/AST eHTML exportado, sem clusterização/extração semântica/custoLLM. Backup.local/graphify-backup-20261025-composition. Inclui fábricas, escopo e injeção nas rotas ativas; comportamento coberto pelos testes do [recibo](execucao/v1/frontend-composition-verification.json), não inferido do grafo.

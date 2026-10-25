@@ -4,6 +4,8 @@ Atualizada em **25/10/2026**, por solicitação do autor. Base factual: [auditor
 
 Este é o roteiro humano principal para decidir, implementar e acompanhar o que falta. [backlog.json](backlog.json) continua sendo a fonte dos estados e dependências das histórias V1. Este plano não executa funcionalidades nem transforma propostas em decisões aprovadas.
 
+V1-021 foi encerrada em25/10 no recorte de fundação Flutter, com [critérios/evidências](frontend-state-verification.json), sem encerrar o frontend integrado. Próxima história pronta:048; as demais áreas conservam seus gates.
+
 ## 1. O raciocínio e a expectativa do autor
 
 O autor está disposto a avaliar a compra de uma API que demonstra exercícios por GIF, mas quer primeiro usar o aplicativo e compreender o que já tem. Não basta um exercício demonstrado se o sistema não entrega um treino coerente com o pedido da pessoa. Também quer compreender o registro alimentar, inclusive a expectativa de foto, identificação e quantidade consumida.
@@ -67,7 +69,7 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 - **Exclusão:** usuário exclui seus próprios dados; master do autor terá permissão excepcional mantida no servidor, com identidade verificada, confirmação e auditoria (nova049todo). Não conceder por e-mail, body, GitHub ou apenas pela existência do login Google.
 - **Aceite:** todos os cenários da matriz devem aparecer com pré-condições, resultado/evidência e estado real. Ausência de função/conteúdo obrigatório não vira aprovação.
 - **Limites:** participantes/conta de ensaio não foram confirmados. Preservar dados reais; testes técnicos isolados não substituem aceite humano de público/cenário. Recursos posteriores conservam sua prioridade já acordada.
-- **Próxima ação:** implementar pelas dependências, começando pela021. Só perguntar detalhes materiais restantes quando o fluxo concreto exigir, sem nova bateria genérica.
+- **Próxima ação:** 021 encerrada no recorte de fundação; seguir048 pelas dependências. Só perguntar detalhes materiais restantes quando o fluxo concreto exigir, sem nova bateria genérica.
 
 ## 2. Como trabalhar um bloco de cada vez
 
@@ -193,7 +195,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 |---|---|---|---|
 | FE-01 | Jornada simples | Revisar tarefas principais, ordem e caminhos de retorno; evitar levar a becos sem saída e não multiplicar telas por quantidade de frames do Figma | Usuário entende entrada → ação → confirmação → histórico, inclusive o cuidador como praticante nas pausas |
 | FE-02 | Campos e contratos | Matriz campo do usuário / dado automático / regra / endpoint / persistência; DTO e estado tipados | Nenhum campo inútil ou obrigatório ausente; mensagem vinculada ao campo que falhou |
-| FE-03 | Componentes e estado | Composição lazy/injeção por conta implementada25/10 (103testes/analyze0issues); falta revisar estado/formulários alimentares e configuração por ambiente na021 | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
+| FE-03 | Componentes e estado | 021encerrada25/10:composição/injeção, NutritionController e ambientes (108testes/analyze0issues); manter o padrão em novas jornadas e tratar melhorias de formulário/aceite025/026 | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
 | FE-04 | Configuração e treino | Concluir/revisar configuração antes de buscar treino; integrar trocas compatíveis e dias/horários, adesão/agenda e retomada ou parcial | Jornada real alinhada a047/015/044/017/023; sem gráfico/série/dose fictícios e com limites do conteúdo explícitos |
 | FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
 | FE-06 | Retomada/offline | Integrar fila durável privada de alimentação/andamento; estados salvo no aparelho, pendente, confirmado e falha/conflito | Processo encerrado, resposta perdida, conta trocada e exclusão concorrente sem duplicação/recriação ou falso sucesso (026/042/045) |

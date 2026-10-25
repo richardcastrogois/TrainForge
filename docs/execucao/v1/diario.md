@@ -321,3 +321,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Graphify incremental86Dart/1265nós/1698arestas,11alterados/75inalterados/0removidos; backup local eHTML exportado, sem LLM/clusterização. Mapas e diagrama de composição atualizados; Swagger preservado pois contrato não mudou.
 - V1-021 permanece doing:revisar estado/formulários alimentares e configuração por ambiente. Próximas capacidades continuam nas suas histórias; não habilitada exclusão master, não alteradoAPK/banco/histórico/sessão. Sem repetir Go/SQL/import/restore ou medição de cobertura sem motivo.
 - Validação documental final:geração reproduzível/backlog/dependências/links e13testes passaram; gitdiff--check sem erro. Backups automáticos doGraphify movidos para o destino.local verificado, fora doGit.
+
+## 25/10/2026 — V1-021: estado alimentar, ambientes e encerramento do recorte
+
+- ExtraídoNutritionController de consulta/busca/paginação/debounce; tela mantém navegação/input. Respostas antigas não trocam dia/conta; invalidação é definitiva e dispose cancela consulta visual/debounce. Mensagens humanas movidas do adaptador para apresentação; sem alterar texto/contratoHTTP.
+- APP_ENV aceita development/staging/production; HTTP somente development/debug emhostlocalexato,HTTPS nos demais. RejeitaURLsemhost/credenciais/query/fragmento/path. Sem endpoint/hospedagem novos; defaultsdebug/release compatíveis com o gate anterior.
+- Cinco testes novos cobrem configuração e corridas de dia/conta/dispose; suíte completa108aprovados/analyze0issues.14domínios sem importFlutter/Dio. [Recibo de critérios](frontend-state-verification.json). Login/logs reais históricos preservados, sem repetirGoogle ou tocar dados reais; APKpreservado.
+- Graphify final88Dart/1294nós/1734arestas,7alterados/81inalterados/0removidos eHTML.021encerrada no recorteT01/T02 de fundação e uma fatia migrada, sem reescrever toda lib.025/026/047/048/049 e frontend integrado conservam os critérios; próxima048 pelas dependências.
+- Validação documental:geração reproduzível, dependências/entradas/links e13testes aprovados; diff sem erros. Backup automático preservado em.local, fora doGit.
