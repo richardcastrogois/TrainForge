@@ -135,3 +135,7 @@ V1-048 manterá traduções/aliases revisados separados do conteúdo original, v
 Hoje a API expõe nameOriginal/nameLocale e o cliente só compacta espaços em displayName; o importador original recusa namePt preenchido. Não alterar lote/hash original para simular tradução. Busca/cache deverão considerar idioma/versão e aliases revisados sem mesclar alimentos homônimos. O contrato novo ainda será implementado e gerado no Swagger, sem campos/tabelas novos nesta rodada.
 
 Configuração047 seguirá etapas curtas por assunto e revisão final, com o mesmo contexto/versionamento privado do Q3. Localização da UI e idioma do conteúdo são dimensões distintas; fonte estrangeira não vira base regional brasileira pela tradução. [Decisões Q5](../execucao/v1/decisoes-piloto.md).
+
+## Q6 — autorização administrativa planejada
+
+049 modelará permissão master explícita e revogável vinculada a identidade autenticada estável. Uso próprio mantém autor/titular na mesma conta; exclusão excepcional precisa de recurso/titular exatos, confirmação e auditoria mínima. Isso não adiciona papel/tabela/migration ao runtime nesta rodada nem implica acesso irrestrito. Retirada editorial continua distinta da exclusão de registro privado.

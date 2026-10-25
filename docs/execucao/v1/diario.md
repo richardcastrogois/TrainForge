@@ -306,3 +306,10 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Criada048(todo) para localização UIpt-BR/pt-PT/en/es e nomes/aliases revisados;025/027/035/047 passam a depender da capacidade.047 recebe etapas/progresso/retorno/revisão. Nenhum done alterado.
 - Próximo blocoQ6:aceites humanos e conta de avaliação. Emulador primeiro e físico guiado já definidos; não repetir perguntas/resets, OAuth/import/restore ou testes deapp. Sem código/API/migration/APK, dado privado, nova chamada Figma ou contratação; Swagger/GraphifyAST preservados.
 - Validação documental: geração reproduzível, dependências/requisitos/entradas/links conferidos;13testes documentais passaram e diff sem erros. Não comprova UI multilíngue ou tradução revisada noAPK.
+
+## 25/10/2026 — respostas Q6 e retomada da implementação
+
+- Autor definiu exclusão de dados particulares pelo usuário que os incluiu ou master do autor, e avaliação de todos os cenários. Isso não confirma conta de ensaio/participantes nem autoriza apagar dados reais.
+- Inspeção dirigida: exclusão alimentar atual usa titular autenticado na query; nenhum papel master encontrado.049 criada todo, com provisionamento verificado/revogável, confirmação, auditoria e negativos;035 exige matriz completa e regra de autorização. Nenhum done alterado.
+- Decisões/trilha/escopo/matriz/modelo/segurança/handoff atualizados. Encerrada bateria genéricaQ1–Q6; seguir dependências pela021. Identidade master e aceites humanos só quando houver fluxo concreto.
+- Sem alteração de API/migration/permissão/arquivo privado nesta unidade documental. Geração/dependências/requisitos/links e13testes documentais passaram; diff sem erros. O incremento de código terá resultados próprios.

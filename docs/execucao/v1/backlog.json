@@ -1026,6 +1026,91 @@
           "workEvidence": [
             "docs/execucao/v1/auth-real-android-verification.json"
           ]
+        },
+        {
+          "id": "V1-049",
+          "title": "Autorizar exclusão própria e exceção master auditada",
+          "userStory": "Como titular, quero que somente minha conta possa excluir meus dados particulares, com exceção controlada e auditada do administrador master do projeto.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R01",
+            "R10",
+            "R16",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-012",
+            "V1-013",
+            "V1-017",
+            "V1-020",
+            "V1-021",
+            "V1-042",
+            "V1-045"
+          ],
+          "inputs": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/execucao/v1/matriz-cenarios.md",
+            "docs/arquitetura/seguranca-operacao.md",
+            "docs/arquitetura/dominio-e-banco.md"
+          ],
+          "acceptance": [
+            "Q6:usuário comum exclui somente seus próprios treinos/registros/alimentos particulares/refeições/fotos; trocar ID ou usar fila/chamada direta não concede acesso alheio",
+            "Exceção master é explícita, revogável e mantida no servidor para identidade autenticada estável verificada; default sem privilégio, sem inferência por e-mail/GitHub, claim do cliente ou segredo no APK",
+            "Provisionamento da conta master real exige verificação antes da ativação; não promover primeiro usuário ou conta atual por suposição",
+            "Exclusão master usa confirmação reforçada, recurso/titular exatos e motivo; auditoria mínima de ator/alvo/resultado sem tokens, fotos, corpos privados ou dados clínicos",
+            "Permissão de exclusão não implica leitura/edição/impersonação irrestritas ou promoção de outras contas; dados editoriais compartilhados e retirada lógica conservam seu contrato",
+            "RegrasQ4 de arquivo/miniatura/cache/fila e backups se aplicam à exclusão autorizada; reenvio não recria dados e falha parcial de limpeza é recuperável",
+            "Testar proprietário, terceiro, anônimo, master válido/revogado, privilégio forjado, confirmação inválida, repetição e corrida com upload/reenvio em base isolada; aceite privilegiado real só com identidade/ação autorizadas"
+          ],
+          "tasks": [
+            {
+              "id": "V1-049-T01",
+              "title": "Modelar permissão e provisionamento controlado",
+              "subtasks": [
+                "Definir matriz de ações por recurso e limites do master sem bypass geral de ownership",
+                "Definir identidade estável, concessão/revogação no servidor e fluxo de confirmação/auditoria",
+                "Planejar migration e ciclo de privacidade do registro administrativo sem segredo/role no cliente"
+              ]
+            },
+            {
+              "id": "V1-049-T02",
+              "title": "Integrar exclusão autorizada por recurso",
+              "subtasks": [
+                "Preservar operações do titular e adicionar a exceção por caso de uso com verificação no servidor",
+                "Integrar treinos/alimentos/refeições/fotos e limpeza privada sem apagar catálogo compartilhado",
+                "Expor controles administrativos somente após permissão confirmada; ausência de permissão não revela dados privados"
+              ]
+            },
+            {
+              "id": "V1-049-T03",
+              "title": "Validar negativos e aceite controlado",
+              "subtasks": [
+                "Ensaiar acesso alheio, papel/ID forjado, revogação, confirmação inválida, auditoria e idempotência",
+                "Cobrir processo/fila/upload concorrentes sem reaparecimento de dados excluídos",
+                "Vincular identidade master e executar aceite real somente quando o fluxo estiver pronto, sem apagar histórico por inferência"
+              ]
+            }
+          ],
+          "validation": [
+            "Matriz de autorização por recurso com negativos automatizados",
+            "Integração e auditoria em banco/arquivos isolados",
+            "Aceite privilegiado real autorizado, com vínculo da identidade comprovado"
+          ],
+          "deliverables": [
+            "Permissão master controlada e revogável",
+            "Exclusão própria/master por recurso com auditoria",
+            "Recibo de isolamento, negativos, limpeza e aceite"
+          ],
+          "handoff": "25/10:Q6 definiu exclusão por quem incluiu os dados ou pelo master, o autor do projeto. Backend atual só tem ownership por titular; nenhuma permissão master foi encontrada ou provisionada. Regra registrada sem autorizar exclusão real agora. Identidade master ainda exige verificação; avançar apenas no trabalho independente.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "docs/execucao/v1/decisoes-piloto.md"
+          ]
         }
       ]
     },
@@ -2027,7 +2112,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Próximo blocoQ6 trata aceites humanos e conta de avaliação; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.",
+          "handoff": "25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Q6 definiu exclusão por usuário/master049 e avaliação de todos os cenários. Seguir implementação pelas dependências, sem nova rodada genérica de perguntas; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
@@ -2591,7 +2676,8 @@
             "Inventário e análise de Go/Flutter/Android com resultados e versões reais",
             "govulncheck, análise estática e busca de segredos registram escopo/data e exceções",
             "Nenhum token, dados físicos ou mídia privada em log/artefato de build; nenhuma contagem fictícia de falhas",
-            "Revisar fila/cache/anexos privados, proteção em repouso/ciclo de chaves/backup e exclusão coordenada aprovados noQ4; conta trocada/revogada/excluída não lê nem reaplica pendências alheias"
+            "Revisar fila/cache/anexos privados, proteção em repouso/ciclo de chaves/backup e exclusão coordenada aprovados noQ4; conta trocada/revogada/excluída não lê nem reaplica pendências alheias",
+            "Revisar autorização master049 sem privilégio inferido por e-mail/cliente, provisionamento/revogação, confirmação e auditoria mínima; nenhuma conta promovida automaticamente"
           ],
           "tasks": [
             {
@@ -3029,7 +3115,8 @@
             "V1-045",
             "V1-046",
             "V1-047",
-            "V1-048"
+            "V1-048",
+            "V1-049"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -3047,7 +3134,9 @@
             "Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes",
             "Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais",
             "Q4:offline durável, processo encerrado/reaberto e resposta perdida sincronizam sem duplicação; refeição/foto excluídas não reaparecem por upload/reenvio ou troca de conta",
-            "Q5:configuração em etapas/revisão, UI nos quatro idiomas e nomes alimentares revisados/fallback aceitos sem alterar origem/identidade/nutrientes ou fingir cobertura de tradução"
+            "Q5:configuração em etapas/revisão, UI nos quatro idiomas e nomes alimentares revisados/fallback aceitos sem alterar origem/identidade/nutrientes ou fingir cobertura de tradução",
+            "Q6:toda a matriz consta do roteiro com pré-condições, resultado/evidência e disponível/incompleto/bloqueado; não concluir capacidade obrigatória ausente nem usar fixture como aceite humano",
+            "Q6:usuário alheio não exclui registros; proprietário e master explicitamente autorizado seguem seus controles e auditoria049, preservando ciclo privado e catálogo compartilhado"
           ],
           "tasks": [
             {
@@ -3504,5 +3593,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10:Q1–Q5 respondidos. Q5:configuração completa em etapas curtas/revisão(047); nome traduzido quando revisado, original/fonte nos detalhes e fallback original(nova048todo). UI pt-BR/pt-PT/en/es preservada; nomes não mudam fonte/identidade/nutrientes. Próximo blocoQ6:organização dos aceites humanos e conta de avaliação. V1-021 doing, sem novo done, hospedagem ou serviço pago."
+  "currentPriority": "25/10:decisõesQ1–Q6 registradas. Q6:exclusão por titular ou master049(todo) e avaliação de todos os cenários, sem presumir participantes/conta de ensaio ou ativar privilégio. Implementar pelas dependências, começando pela021. Preservar dados reais, conteúdo/versões e decisões anteriores; sem hospedagem ou gerador de treino. Identidade master e aceites humanos serão combinados diante de fluxo concreto."
 }

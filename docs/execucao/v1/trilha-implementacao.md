@@ -62,9 +62,16 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 - **Idiomas:** nova048 explicita UI pt-BR/pt-PT/en/es e nomes revisados separados do lote original;025/027/035 conferem o conjunto. Nenhuma tradução foi publicada nesta rodada.
 - **Próximo bloco:** Q6, organização dos aceites humanos e conta de avaliação; emulador primeiro e físico guiado já definidos.
 
+## Respostas Q6 incorporadas — 25/10/2026
+
+- **Exclusão:** usuário exclui seus próprios dados; master do autor terá permissão excepcional mantida no servidor, com identidade verificada, confirmação e auditoria (nova049todo). Não conceder por e-mail, body, GitHub ou apenas pela existência do login Google.
+- **Aceite:** todos os cenários da matriz devem aparecer com pré-condições, resultado/evidência e estado real. Ausência de função/conteúdo obrigatório não vira aprovação.
+- **Limites:** participantes/conta de ensaio não foram confirmados. Preservar dados reais; testes técnicos isolados não substituem aceite humano de público/cenário. Recursos posteriores conservam sua prioridade já acordada.
+- **Próxima ação:** implementar pelas dependências, começando pela021. Só perguntar detalhes materiais restantes quando o fluxo concreto exigir, sem nova bateria genérica.
+
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1/Q2/Q3/Q4/Q5 foram respondidos. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1–Q6 tiveram decisões registradas. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -166,7 +173,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | ID | Falta ou melhoria | Entrega concreta | Evidência de encerramento |
 |---|---|---|---|
 | SEG-01 | Modelo de ameaças por jornada | Mapear atores, dados, fronteiras, abuso, dispositivo perdido, acesso entre contas e fornecedor futuro | Cada risco relevante ligado a controle/teste ou risco residual aceito |
-| SEG-02 | Matriz de autorização | Cobrir todas as operações privadas do titular, inclusive anexos e resultados de análise; delegação só se aprovada futuramente | Testes entre contas e revogação; não conceder acesso extra por ser cuidador |
+| SEG-02 | Matriz de autorização | Cobrir operações privadas e exceção de exclusão master049, com papel no servidor, confirmação/auditoria; delegação só se aprovada futuramente | Usuário alheio e privilégio forjado negados; master revogado perde acesso e cuidador não ganha permissão por profissão |
 | SEG-03 | Credenciais e sessão | Revisar rotação/reuso, logout, falhas de rede, relógio, expiração e armazenamento/recuperação nativos | Rede não apaga sessão válida; credencial revogada não volta por resposta tardia |
 | SEG-04 | Superfície da API | Revisar limites por rota, JSON/entrada ambígua, uploads se existirem, paginação, enumeração, proxy e orçamento por instância | Requisição inválida/abusiva é limitada sem vazar conteúdo interno; casos concorrentes testados |
 | SEG-05 | Dependências e segredos | Inventário, versões, lockfiles, análise Go/Flutter/nativo, govulncheck e varredura de segredos com resultado real | Achados triados/corrigidos, exceções justificadas e nenhum segredo em Git/APK/log/artefato |
@@ -265,7 +272,7 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Q1/Q2/Q3/Q4/Q5 foram respondidos. Avançar a Q6 sobre organização dos aceites humanos e conta de avaliação. Emulador primeiro/físico guiado e requisitos anteriores não devem ser perguntados novamente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Q1–Q6 têm decisões registradas. Encerrar a rodada genérica de perguntas e seguir implementação pelas dependências. Identidade master/provisionamento e organização humana dos ensaios serão combinados diante de fluxo concreto. Emulador primeiro/físico guiado e requisitos anteriores não devem ser perguntados novamente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
@@ -274,7 +281,7 @@ Não apresentar todas de uma vez. Q1/Q2/Q3/Q4/Q5 foram respondidos. Avançar a Q
 | Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047 todo, modelos/campos e regras ainda a detalhar |
 | Q4 | Segurança e privacidade | Excluir foto com a refeição; registrar offline e sincronizar depois | Respondido25/10;026/042/045 e revisão de segurança continuam pendentes |
 | Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047/048 todo, sem repetir chamadas Figma limitadas |
-| Q6 | Qualidade e aceite | Organização dos aceites humanos e conta de avaliação; emulador primeiro e físico guiado já definidos | Próxima conversa; carga local isolada e limites medidos pelo agente, sem hospedagem |
+| Q6 | Qualidade e aceite | Exclusão por usuário/master e avaliação de todos os cenários; participantes/conta ainda não confirmados | Decisões25/10 registradas; combinar o restante somente com fluxo concreto |
 
 ## 13. Figma — impedimento e alternativa permitida
 
@@ -320,4 +327,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. Q1/Q2/Q3/Q4/Q5 estão registrados; próximo bloco Q6, aceites humanos e conta de avaliação. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Q1–Q6 estão registrados; próxima ação é implementação pelas dependências. A identidade master e o aceite humano conservam seus gates específicos. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.

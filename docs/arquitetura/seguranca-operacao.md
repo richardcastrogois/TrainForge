@@ -31,6 +31,14 @@ Em25/10, o autor aprovou excluir foto com a refeição e registrar alimentação
 
 Usar dados/arquivos isolados. Definir limites, proteção em repouso, recuperação, ciclo de chaves, backup e expurgo antes de liberar filas/imagens privadas. Autenticação válida condiciona sincronização; tokens não ficam no payload da fila/log. Nenhum dado real foi apagado nesta rodada. [Decisões Q4](../execucao/v1/decisoes-piloto.md).
 
+## Q6 — autorização de exclusão e master planejado
+
+O autor determinou exclusão de dados particulares pelo usuário que os incluiu ou pelo master do projeto. Hoje a exclusão de consumo usa o titular da sessão na query; não há papel master no runtime. V1-049 implementará a exceção, sem bypass genérico de ownership.
+
+Requerer permissão explícita e revogável no servidor, identidade autenticada estável verificada, confirmação reforçada, recurso/titular exatos e trilha mínima de ator/motivo/resultado sem corpo privado. Não derivar poder de e-mail, campo enviado pelo app ou propriedade do GitHub; não conceder leitura/edição irrestritas por inferência. Provar casos de usuário alheio, papel forjado/revogado, confirmação inválida, repetição e exclusão concorrente com fila/upload em ambiente isolado.
+
+O vínculo da conta master real permanece pendente de verificação antes da ativação. Todos os cenários devem constar do aceite; isso não significa que participantes humanos ou práticas/conteúdo já estejam disponíveis. [Decisões Q6](../execucao/v1/decisoes-piloto.md).
+
 ## Critérios de segurança e exposição
 
 - Identidade Google verificada com assinatura/issuer/audience/expiração, identidade estável e associação explícita. Preservar as verificações já existentes. Referência: [Google backend auth](https://developers.google.com/identity/sign-in/web/backend-auth).

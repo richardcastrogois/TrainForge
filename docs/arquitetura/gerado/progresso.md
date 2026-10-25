@@ -1,15 +1,15 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1084e6609ab44b65`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1268d3cacb87300c`.
 
-**16/48 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**16/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
 | EP01 | Recorte verificável e governança | 3 | 3 |
 | EP02 | Conteúdo, autoria e direitos | 3 | 3 |
 | EP03 | Fundação Go, contratos e banco | 4 | 4 |
-| EP04 | Identidade, privacidade e acesso | 3 | 3 |
+| EP04 | Identidade, privacidade e acesso | 4 | 3 |
 | EP05 | Biblioteca humana e API de catálogo | 5 | 1 |
 | EP06 | Atividade e alimentação registradas de verdade | 7 | 2 |
 | EP07 | Flutter e experiência da V1 | 8 | 0 |
@@ -90,11 +90,24 @@ flowchart LR
     node3["V1-011"]
     node4["V1-012"]
     node5["V1-013"]
+    node6["V1-017 (pré-requisito externo ao épico)"]
+    node7["V1-020 (pré-requisito externo ao épico)"]
+    node8["V1-021 (pré-requisito externo ao épico)"]
+    node9["V1-042 (pré-requisito externo ao épico)"]
+    node10["V1-045 (pré-requisito externo ao épico)"]
+    node11["V1-049"]
     node0 -->|"requer"| node3
     node2 -->|"requer"| node3
     node3 -->|"requer"| node4
     node3 -->|"requer"| node5
     node1 -->|"requer"| node5
+    node4 -->|"requer"| node11
+    node5 -->|"requer"| node11
+    node6 -->|"requer"| node11
+    node7 -->|"requer"| node11
+    node8 -->|"requer"| node11
+    node9 -->|"requer"| node11
+    node10 -->|"requer"| node11
 ```
 
 | História | Status | Entrega | Depende de |
@@ -102,6 +115,7 @@ flowchart LR
 | V1-011 | done | Autenticar Google no novo serviço | V1-008, V1-010 |
 | V1-012 | done | Rotacionar e revogar refresh tokens | V1-011 |
 | V1-013 | done | Aplicar autorização, limites e ciclo dos dados | V1-011, V1-009 |
+| V1-049 | todo | Autorizar exclusão própria e exceção master auditada | V1-012, V1-013, V1-017, V1-020, V1-021, V1-042, V1-045 |
 ### EP05 — Biblioteca humana e API de catálogo
 
 ```mermaid
@@ -323,6 +337,7 @@ flowchart LR
     node16["V1-046 (pré-requisito externo ao épico)"]
     node17["V1-047 (pré-requisito externo ao épico)"]
     node18["V1-048 (pré-requisito externo ao épico)"]
+    node19["V1-049 (pré-requisito externo ao épico)"]
     node0 -->|"requer"| node9
     node7 -->|"requer"| node9
     node1 -->|"requer"| node10
@@ -339,6 +354,7 @@ flowchart LR
     node16 -->|"requer"| node10
     node17 -->|"requer"| node10
     node18 -->|"requer"| node10
+    node19 -->|"requer"| node10
     node10 -->|"requer"| node11
     node11 -->|"requer"| node12
 ```
@@ -346,7 +362,7 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-034 | todo | Preparar identidade e assinatura Android | V1-021, V1-032 |
-| V1-035 | todo | Validar a jornada completa da V1 | V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047, V1-048 |
+| V1-035 | todo | Validar a jornada completa da V1 | V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047, V1-048, V1-049 |
 | V1-036 | todo | Gerar e disponibilizar APK à esposa | V1-035 |
 | V1-037 | todo | Encerrar piloto e priorizar correções | V1-036 |
 ### EP11 — iOS e distribuição nas lojas

@@ -435,6 +435,47 @@ Entregas: Matriz de acesso; Política de privacidade do piloto e operações de 
 
 Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
+### V1-049 — Autorizar exclusão própria e exceção master auditada
+
+**todo · V1 · L**
+
+Como titular, quero que somente minha conta possa excluir meus dados particulares, com exceção controlada e auditada do administrador master do projeto.
+
+Dependências: V1-012, V1-013, V1-017, V1-020, V1-021, V1-042, V1-045
+
+Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/execucao/v1/matriz-cenarios.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/dominio-e-banco.md
+
+Critérios de aceite:
+
+- Q6:usuário comum exclui somente seus próprios treinos/registros/alimentos particulares/refeições/fotos; trocar ID ou usar fila/chamada direta não concede acesso alheio
+- Exceção master é explícita, revogável e mantida no servidor para identidade autenticada estável verificada; default sem privilégio, sem inferência por e-mail/GitHub, claim do cliente ou segredo no APK
+- Provisionamento da conta master real exige verificação antes da ativação; não promover primeiro usuário ou conta atual por suposição
+- Exclusão master usa confirmação reforçada, recurso/titular exatos e motivo; auditoria mínima de ator/alvo/resultado sem tokens, fotos, corpos privados ou dados clínicos
+- Permissão de exclusão não implica leitura/edição/impersonação irrestritas ou promoção de outras contas; dados editoriais compartilhados e retirada lógica conservam seu contrato
+- RegrasQ4 de arquivo/miniatura/cache/fila e backups se aplicam à exclusão autorizada; reenvio não recria dados e falha parcial de limpeza é recuperável
+- Testar proprietário, terceiro, anônimo, master válido/revogado, privilégio forjado, confirmação inválida, repetição e corrida com upload/reenvio em base isolada; aceite privilegiado real só com identidade/ação autorizadas
+
+Tarefas e subtarefas:
+
+- V1-049-T01 — Modelar permissão e provisionamento controlado
+  - Definir matriz de ações por recurso e limites do master sem bypass geral de ownership
+  - Definir identidade estável, concessão/revogação no servidor e fluxo de confirmação/auditoria
+  - Planejar migration e ciclo de privacidade do registro administrativo sem segredo/role no cliente
+- V1-049-T02 — Integrar exclusão autorizada por recurso
+  - Preservar operações do titular e adicionar a exceção por caso de uso com verificação no servidor
+  - Integrar treinos/alimentos/refeições/fotos e limpeza privada sem apagar catálogo compartilhado
+  - Expor controles administrativos somente após permissão confirmada; ausência de permissão não revela dados privados
+- V1-049-T03 — Validar negativos e aceite controlado
+  - Ensaiar acesso alheio, papel/ID forjado, revogação, confirmação inválida, auditoria e idempotência
+  - Cobrir processo/fila/upload concorrentes sem reaparecimento de dados excluídos
+  - Vincular identidade master e executar aceite real somente quando o fluxo estiver pronto, sem apagar histórico por inferência
+
+Validação: Matriz de autorização por recurso com negativos automatizados; Integração e auditoria em banco/arquivos isolados; Aceite privilegiado real autorizado, com vínculo da identidade comprovado
+
+Entregas: Permissão master controlada e revogável; Exclusão própria/master por recurso com auditoria; Recibo de isolamento, negativos, limpeza e aceite
+
+Handoff: 25/10:Q6 definiu exclusão por quem incluiu os dados ou pelo master, o autor do projeto. Backend atual só tem ownership por titular; nenhuma permissão master foi encontrada ou provisionada. Regra registrada sem autorizar exclusão real agora. Identidade master ainda exige verificação; avançar apenas no trabalho independente.
+
 ## EP05 — Biblioteca humana e API de catálogo
 
 Consumir conteúdo pesquisado com origem e disponibilidade reais, sem gerar programas de fallback.
@@ -904,7 +945,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Próximo blocoQ6 trata aceites humanos e conta de avaliação; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
+Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Q6 definiu exclusão por usuário/master049 e avaliação de todos os cenários. Seguir implementação pelas dependências, sem nova rodada genérica de perguntas; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -1175,6 +1216,7 @@ Critérios de aceite:
 - govulncheck, análise estática e busca de segredos registram escopo/data e exceções
 - Nenhum token, dados físicos ou mídia privada em log/artefato de build; nenhuma contagem fictícia de falhas
 - Revisar fila/cache/anexos privados, proteção em repouso/ciclo de chaves/backup e exclusão coordenada aprovados noQ4; conta trocada/revogada/excluída não lê nem reaplica pendências alheias
+- Revisar autorização master049 sem privilégio inferido por e-mail/cliente, provisionamento/revogação, confirmação e auditoria mínima; nenhuma conta promovida automaticamente
 
 Tarefas e subtarefas:
 
@@ -1393,7 +1435,7 @@ Handoff: 23/10: certificado de avaliação release dedicado existente e protegid
 
 Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e conteúdo reais.
 
-Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047, V1-048
+Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047, V1-048, V1-049
 
 Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
@@ -1407,6 +1449,8 @@ Critérios de aceite:
 - Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais
 - Q4:offline durável, processo encerrado/reaberto e resposta perdida sincronizam sem duplicação; refeição/foto excluídas não reaparecem por upload/reenvio ou troca de conta
 - Q5:configuração em etapas/revisão, UI nos quatro idiomas e nomes alimentares revisados/fallback aceitos sem alterar origem/identidade/nutrientes ou fingir cobertura de tradução
+- Q6:toda a matriz consta do roteiro com pré-condições, resultado/evidência e disponível/incompleto/bloqueado; não concluir capacidade obrigatória ausente nem usar fixture como aceite humano
+- Q6:usuário alheio não exclui registros; proprietário e master explicitamente autorizado seguem seus controles e auditoria049, preservando ciclo privado e catálogo compartilhado
 
 Tarefas e subtarefas:
 

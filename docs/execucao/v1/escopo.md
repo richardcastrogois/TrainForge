@@ -36,6 +36,12 @@ Configuração completa em etapas curtas por assunto, com retorno/correção sem
 
 Nome traduzido quando houver tradução revisada para o idioma escolhido; original/idioma/fonte/versão nos detalhes e fallback original quando faltar revisão (048). UI em pt-BR, pt-PT, inglês e espanhol; traduzir apresentação não altera preparo, base, unidade, nutrientes, identidade ou histórico. Consulta por nome traduzido usa correspondência revisada, sem mesclar alimentos ou publicar tradução automática como revisão. [Decisões completas](decisoes-piloto.md).
 
+## Respostas Q6 incorporadas em 25/10
+
+Dados particulares podem ser excluídos pelo usuário que os incluiu ou pelo administrador master do autor do projeto (049). A exceção exige papel explícito no servidor, identidade verificada, confirmação e auditoria; não está implementada nem foi provisionada por esta decisão. Não implica leitura/edição irrestritas ou exclusão do catálogo compartilhado.
+
+A avaliação cobre todos os cenários da matriz, com resultado real ou limitação explícita por cenário. Isso não confirma participação de públicos nem promove capacidades posteriores para V1 por inferência. Preservar dados reais; testes técnicos isolados e aceite humano têm evidências distintas. [Decisões completas](decisoes-piloto.md).
+
 ## Compromissos da V1
 
 - Conteúdo de fontes humanas existentes, com autoria/contribuição, evidência, versão e direitos por ativo. Inventariar toda a cobertura pesquisada; importar todo material utilizável e permitido em lotes técnicos. Lote candidato e lote aprovado são manifestos distintos;331 famílias não equivalem a331 importações autorizadas.
@@ -68,7 +74,7 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
 2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
 3. Configuração completa, os dois caminhos de treino com trocas compatíveis/agenda e retomada/parcial, alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
-4. Sessões idempotentes, retomada, registro offline durável/sincronização, logout/revogação e isolamento de conta verificados; exclusão da refeição/foto não é desfeita por reenvio.
+4. Sessões idempotentes, retomada, registro offline durável/sincronização, logout/revogação, isolamento e autorização de exclusão por usuário/master verificados; exclusão da refeição/foto não é desfeita por reenvio.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.
 7. Configuração em etapas/revisão, interface nos quatro idiomas e nomes revisados/fallback verificados; notas de versão explicam cobertura/limites. Aceite e feedback da esposa registrados somente quando acontecerem.

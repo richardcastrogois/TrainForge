@@ -1,6 +1,6 @@
 # Matriz de cenários do APK de avaliação
 
-Direção do autor desde 21/10/2026: percorrer o app inteiro, um cenário de cada vez, enquanto ele é desenvolvido. Atualizada em 25/10 pelas decisões Q1/Q2/Q3/Q4/Q5 e pelo baseline da auditoria de24/10: APKdebug0.3.0+13, API/DB locais e loginGoogleAndroiddebug real já validado. [Roteiro de retomada](avaliacao-android.md) e [V1-014](catalogo-consulta.md). Esta avaliação parcial não libera prática nem conclui os demais cenários.
+Direção do autor desde 21/10/2026: percorrer o app inteiro, um cenário de cada vez, enquanto ele é desenvolvido. Atualizada em 25/10 pelas decisões Q1–Q6 e pelo baseline da auditoria de24/10: APKdebug0.3.0+13, API/DB locais e loginGoogleAndroiddebug real já validado. [Roteiro de retomada](avaliacao-android.md) e [V1-014](catalogo-consulta.md). Esta avaliação parcial não libera prática nem conclui os demais cenários.
 
 Entrada de conteúdo: [manifesto de candidatos](../../../content/manifests/pilot-candidates.json), com331famílias,46recortesN e34componentes documentais selecionados. Os componentes são11para cuidadores,5domésticos idosos,9de academia e9de praça; não34programas completos. Todas as fontes continuam visíveis no inventário, inclusive referências, condicionais e antigas incompatíveis com custo zero. São22famílias de fontes alimentares, não22alimentos.
 
@@ -50,3 +50,9 @@ Conta nova começa sem histórico ou medidas. Para avaliar perfis/ambientes dife
 [Decisões do autor](decisoes-piloto.md), [escopo](escopo.md), [backlog](backlog.md) e [comparação de fornecedores](../../conteudo/opcoes-apis-exercicios.md). Custo atualizado para avaliação: priorizar gratuito; referência de cerca deUS$19 em pagamento único, sem assinatura. Os valores maiores apresentados foram considerados inviáveis; nenhuma compra foi aprovada.
 
 Baseline posterior: controles de privacidade e aceite pessoalGoogleAndroiddebug já validados, incluindo exportação/exclusão consentidas no seu recorte; ver auth-local-fechamento.md. Novos dados/anexos e cenários conservam gates próprios. [Detalhes e retenção](privacidade-013.md).
+
+## Q6 — abrangência e autorização
+
+Todos os cenários desta matriz entram no roteiro, com pré-condições, ação real, resultado/evidência e estado disponível/incompleto/bloqueado. Capacidades posteriores continuam visíveis com sua prioridade; ausência de função obrigatória não é aprovação. Público/participantes e conta para ensaios não foram confirmados por essa resposta.
+
+Dados particulares só são excluídos por quem os incluiu ou pelo master explicitamente autorizado no servidor(049todo). Testar ID alheio, privilégio forjado/revogado e ciclo de foto/fila. Não excluir dados reais ou promover conta por inferência; catálogo compartilhado segue retirada própria.

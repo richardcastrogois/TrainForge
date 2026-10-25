@@ -1,4 +1,4 @@
-> Estado vigente 25/10: Q1/Q2/Q3/Q4/Q5 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; Q4 confirmou foto excluída com a refeição e registros offline sincronizados depois; Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados, com original/fonte; próximo bloco Q6. As decisões antigas são preservadas no seu recorte.
+> Estado vigente 25/10: Q1–Q6 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; Q4 confirmou foto excluída com a refeição e registros offline sincronizados depois; Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados, com original/fonte; Q6 definiu exclusão por usuário/master e todos os cenários; seguir implementação pelas dependências. As decisões antigas são preservadas no seu recorte.
 
 > Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
 
@@ -161,7 +161,7 @@ Pausado, parcial e concluído são estados distintos. Encerrar como parcial é u
 
 ### Próxima decisão e limites da rodada
 
-As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. Q4/Q5 abaixo resolveram exclusão/offline, etapas/revisão e nomes estrangeiros; próximo bloco Q6. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
+As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. Q4/Q5 abaixo resolveram exclusão/offline, etapas/revisão e nomes estrangeiros; Q6 definiu exclusão por usuário/master e todos os cenários; seguir implementação pelas dependências. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
 
 Esta rodada altera planejamento e critérios. Nenhuma configuração, composição ou retomada foi implementada por atualizar estes documentos; nenhuma história nova foi marcada como concluída.
 
@@ -223,4 +223,32 @@ Hoje FoodReference lê nameOriginal/nameLocale e displayName só compacta espaç
 
 Q5 respondido. V1-047 recebe o fluxo em etapas;048 recebe quatro idiomas e nomes revisados;025/027/035 conferem integração alimentar, acessibilidade e aceite. Infraestrutura de localização não comprova que todo alimento/treino foi traduzido; contabilizar cobertura e lacunas nos recibos.
 
-Próximo bloco **Q6**, organização dos aceites humanos e conta de avaliação para casos de edição/exclusão. Emulador primeiro e Android físico com orientação já foram escolhidos; não perguntar novamente. Carga será ensaiada localmente com dados isolados, sem pedir ao autor estimativa técnica de milhões simultâneos ou contratar hospedagem. Nenhuma funcionalidade nova foi implementada por registrar Q5.
+O Q6 abaixo definiu autorização de exclusão e abrangência total; conta de ensaio e participantes serão combinados diante de um fluxo concreto. Emulador primeiro e Android físico com orientação já foram escolhidos; não perguntar novamente. Carga será ensaiada localmente com dados isolados, sem pedir ao autor estimativa técnica de milhões simultâneos ou contratar hospedagem. Nenhuma funcionalidade nova foi implementada por registrar Q5.
+
+## Decisões Q6 — 25/10/2026
+
+### Exclusão pelo próprio usuário ou pelo administrador master
+
+O autor definiu a regra: treino, alimento, refeição e foto particulares só podem ser excluídos pela conta que incluiu esses dados ou pelo administrador master do TrainForge, identificado como o próprio autor do projeto. Isto define autorização do produto; não é autorização para apagar registros reais agora.
+
+Na V1 de uso próprio, autor e titular do registro coincidem. O backend deve obter o titular da sessão autenticada e verificar cada recurso; ID informado pelo cliente não concede acesso. Alteração de ID, deep link, fila offline ou chamada direta não permite excluir dados de outra pessoa.
+
+A exceção master passa a ser entrega explícita na **V1-049**. Não foi encontrada permissão master implementada na API atual. Ela requer associação segura de uma identidade autenticada estável a uma permissão mantida no servidor, provisionamento controlado e revogável, confirmação reforçada, recurso/titular exatos e auditoria mínima de ator/motivo/resultado. Ser dono do GitHub ou informar e-mail, role ou master no app não concede esse poder.
+
+A autorização pedida é para exclusão excepcional; não implica leitura indiscriminada, edição/impersonação de usuários ou promoção de outras contas. Não inserir e-mail privilegiado fixo, segredo no APK ou bypass do filtro de titular. A vinculação à conta master real exige verificação de identidade antes de ativar a permissão; não presumir qual das contas Google do autor será usada.
+
+Excluir registro pessoal não apaga o programa/alimento editorial compartilhado que ele referencia. Retirada editorial e preservação de versões/histórico seguem seus contratos. A exclusão autorizada respeita foto/miniatura/cache/fila e limites de backup definidos noQ4, sem recriação por reenvio.
+
+### Todos os cenários na avaliação
+
+O autor respondeu **“quero todos os cenários”**. O roteiro deve cobrir toda a matriz, incluindo idosos, cuidador como praticante, casa, praça/parque, academia, treino pelos dois caminhos, alimentação, foto, histórico, idiomas, acessibilidade, permissões e falhas/recuperação.
+
+Para cada cenário: pré-condições, entrada/ação real, resultado esperado, evidência, disponível/incompleto/bloqueado e motivo. Não reduzir silenciosamente o recorte, inventar conteúdo/dados ou marcar sucesso quando uma capacidade obrigatória da V1 estiver ausente. Cenários posteriores continuam visíveis com seu estado; esta resposta não antecipa automaticamente sensores, OCR, delegação ou lojas que estavam fora da V1 acordada.
+
+Todas as jornadas incluem isolamento entre contas, tentativa de ID alheio, sessão/rede interrompidas, reenvio, saída/retomada e exclusão quando aplicáveis. Fixtures e usuários sintéticos são apenas testes técnicos isolados; não constituem histórico real do app nem aceite humano.
+
+A resposta confirma abrangência, não disponibilidade de pessoas idosas/cuidadores nem escolha de conta para testes destrutivos. Preservar a conta/histórico real existente; testes técnicos usam base isolada. Quando um APK concreto estiver pronto, combinar somente o aceite humano/conta ainda necessários, sem repetir agora a bateria de perguntas. Emulador primeiro e Android físico com orientação continuam definidos.
+
+### Execução após os blocos
+
+Q1–Q6 têm suas decisões registradas, com identidade/provisionamento master e organização humana de ensaios ainda pendentes no momento apropriado. Seguir implementação pelas dependências, começando pela021 e pelas capacidades prontas, sem outra rodada genérica de perguntas. Não declarar segurança, papel master, tradução, conteúdo ou capacidade de milhões comprovados por documentação.
