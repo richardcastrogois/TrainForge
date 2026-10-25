@@ -1,4 +1,4 @@
-> Estado vigente 25/10: Q1/Q2 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos aguarda decisão após pesquisa. As decisões antigas são preservadas no seu recorte.
+> Estado vigente 25/10: Q1/Q2 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; próximo bloco Q3. As decisões antigas são preservadas no seu recorte.
 
 > Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
 
@@ -98,7 +98,7 @@ Qualquer sugestão educativa deve ser explicável, ligada a fonte/revisão/vers�
 
 Referências delimitadas desta decisão: [OMS: diversidade e contexto da alimentação](https://www.who.int/news-room/fact-sheets/detail/healthy-diet) e [NCI/NIH: erros e registros incompletos na avaliação alimentar](https://epi.grants.cancer.gov/dietary-assessment-primer/profiles/record/validation.html). Não foi feita pesquisa de fornecedor/modelo de reconhecimento ou contato profissional.
 
-**Situação após Q2 em 25/10:** organização e entrega conjunta foram decididas abaixo; apenas recuperação das fotos segue pendente. Nenhuma resposta autoriza serviço externo, custo, hospedagem ou compartilhamento de foto pessoal por inferência.
+**Situação após Q2 em 25/10:** organização, entrega conjunta e recuperação das fotos pela conta com cache foram decididas abaixo. Nenhuma resposta autoriza serviço externo, custo, hospedagem ou compartilhamento de foto pessoal por inferência.
 
 ## Decisões Q2 — 25/10/2026
 
@@ -112,11 +112,13 @@ Após a resposta “opção 2 e 3 juntas”, foi solicitada clarificação. Resp
 
 A análise descreve os nutrientes dos registros confirmados, seus métodos, unidades, estimativas, período/fuso e cobertura. Mostrar dias com dados e campos desconhecidos; diário parcial não equivale à ingestão integral. Dicas educativas precisam de regra explicável, fonte, versão, revisão humana e aplicabilidade. Não inferir deficiência, preencher ausência com zero, prescrever suplemento/dose ou inventar meta clínica. Esses critérios não equivalem a conteúdo/regras já revisados ou implementados.
 
-### Fotos e troca de aparelho: pesquisa feita, decisão pendente
+### Fotos e troca de aparelho: recuperação pela conta aprovada
 
 O autor pediu comparar mais de um produto antes de escolher. A [pesquisa de quatro produtos](pesquisa-fotos-historico.md) diferencia reconhecimento, foto salva no diário e recuperação entre aparelhos. AteMate e GreaseFit documentam persistência vinculada à conta; Cronometer separa Photo-Logging de Photo Notes; a documentação consultada do Meal Scanner do MyFitnessPal não garante arquivo recuperável de toda foto usada.
 
-Recomendação apresentada: **fotos privadas vinculadas à conta, com cache no celular**, mantendo registros/metadados no PostgreSQL e arquivos em armazenamento próprio para imagens. É proposta, não decisão aprovada. A alternativa é imagem local com backup/exportação manual e risco explícito de perda das cópias não salvas.
+Após comparar os produtos, o autor escolheu expressamente: **“Recuperar fotos pela conta, com cache no celular (recomendado)”**. A recuperação das imagens sincronizadas faz parte do requisito, além dos registros. Planejar metadados/vínculos no PostgreSQL e arquivos privados em armazenamento próprio para imagens; não depender da única cópia local do aparelho.
+
+A alternativa de imagens somente locais com backup manual foi apresentada e não foi escolhida. Excluir cache não apaga a refeição ou a foto persistente. Falta de imagem não apaga alimento, quantidade ou cálculo; mostrar estado de envio e permitir retentativa sem duplicar consumo.
 
 A decisão de comportamento não contrata hospedagem, escolhe fornecedor ou autoriza envio de imagens pessoais. Rascunho não sincronizado não pode ser prometido como recuperável. Retenção, limites, exclusão, cache/fila e privacidade serão detalhados antes de liberar o fluxo.
 

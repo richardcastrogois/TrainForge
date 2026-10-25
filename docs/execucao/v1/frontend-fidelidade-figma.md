@@ -4,7 +4,7 @@ Fonte única atualizada em **25/10/2026**. [Trilha por área](trilha-implementac
 
 ## Estado atual e limites
 
-Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-045/046); só a recuperação das imagens aguarda decisão após pesquisa. Nenhuma dessas capacidades foi implementada por alterar o escopo.
+Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-045/046); após pesquisa, aprovou também recuperar imagens pela conta com cache no celular. Nenhuma dessas capacidades foi implementada por alterar o escopo.
 
 APK Android **debug 0.3.0+13**, API Go **0.5.1 / 25 operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
 

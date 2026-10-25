@@ -46,11 +46,11 @@ Princípio transferível: separar a análise temporária de uma imagem da decis�
 
 Princípio transferível: revisar os alimentos e quantidades antes de registrar. Guardar uma imagem para recordação/diário é um requisito adicional ao scanner.
 
-## Recomendação para o TrainForge — proposta, ainda não decidida
+## Direção aprovada para o TrainForge — recuperação pela conta
 
-Para o objetivo do autor (histórico visual útil e continuidade ao trocar de celular), recomendo **persistência privada das fotos vinculada à conta, com cópia/cache local**, além da persistência dos consumos. Esta é uma recomendação de comportamento e arquitetura; não autoriza hospedar, contratar, selecionar provedor ou enviar fotos pessoais a terceiros.
+Após ler a comparação, o autor escolheu em 25/10: **“Recuperar fotos pela conta, com cache no celular (recomendado)”**. Persistência privada das fotos vinculada à conta, além dos consumos, passa a ser requisito aprovado. Não é funcionalidade já implementada nem autoriza hospedar, contratar, selecionar provedor ou enviar fotos pessoais a terceiros agora.
 
-| Camada | Responsabilidade proposta |
+| Camada | Responsabilidade planejada |
 |---|---|
 | PostgreSQL | Refeição, itens confirmados, quantidade/unidade, base/versão, cálculo, revisões, titularidade e referência/estado da imagem |
 | Armazenamento privado de arquivos | Imagem e miniatura sincronizadas; acesso autorizado e política de retenção/exclusão |
@@ -64,12 +64,12 @@ O original em resolução máxima não precisa ser preservado indefinidamente pa
 
 Pode-se preparar e ensaiar a arquitetura com armazenamento local isolado do backend. Isso não é sincronização de produção já entregue nem dispensa disponibilidade futura do serviço para recuperação pela conta. Hospedagem continua adiada por decisão do autor.
 
-Alternativa válida, se o autor preferir: registros pela conta e imagens locais com backup/exportação manual. É preciso mostrar claramente a possibilidade de perder imagens não copiadas; essa alternativa não oferece a mesma experiência de recuperação automática.
+Alternativa apresentada e não escolhida: registros pela conta e imagens locais com backup/exportação manual. É preciso mostrar claramente a possibilidade de perder imagens não copiadas; essa alternativa não oferece a mesma experiência de recuperação automática.
 
-## Decisões Q2 já recebidas e pendências
+## Decisões Q2 recebidas e trabalho pendente
 
 - **Aprovado:** agrupar os alimentos por refeição e oferecer também a visualização por alimento. As duas visões usam os mesmos registros, sem duplicar consumo ou nutrientes; uma refeição pode conter vários itens/quantidades.
-- **Fotos:** autor pediu esta pesquisa antes de decidir. A recomendação acima continua proposta; não foi marcada como escolha confirmada.
+- **Fotos aprovado após pesquisa:** recuperar fotos pela conta, com cache no celular. Limites, retenção/exclusão e segurança do ciclo privado serão detalhados; hospedagem continua adiada e recuperação ainda precisa de implementação/ensaio.
 - **Confirmado após clarificação:** “Entregar histórico visual, análise nutricional e dicas revisadas juntos na primeira versão”. V1-046 registra o conjunto, sem adiar análise/dicas silenciosamente; regras/fontes/revisão e implementação ainda precisam ser feitas.
 
 ## Critérios a levar para banco/backend/frontend

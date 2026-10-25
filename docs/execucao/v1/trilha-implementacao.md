@@ -28,7 +28,7 @@ A expectativa é avaliar **o produto inteiro em incrementos reais**, cenário po
 - **Treinos:**os dois caminhos entram na versão desejada:escolher programas compatíveis e compor exercícios por regras humanas revisadas. V1-015 e novaV1-044, sem prescrição inventada.
 - **Cuidador:**o próprio cuidador é o praticante durante pausas do trabalho. Vínculo/delegação de pessoa assistida não é foco nem bloqueio desta versão; a interpretação anterior foi corrigida.
 - **Foto:**reconhecer candidatos, permitir corrigir/remover/adicionar, pedir quantidade explícita, calcular por base/versão e só então confirmar consumo. V1-042 antecipada paraV1.
-- **Histórico:**deve ser visual e agradável; registros de consumo são do servidor. Recuperar também as imagens exige decisãoQ2 sobre persistência/sincronização. Q2 abaixo confirmou histórico, análise nutricional e dicas juntos; regras/fontes/revisão ainda precisam ser elaboradas. Não inferir deficiência de registros incompletos.
+- **Histórico:**deve ser visual e agradável; registros de consumo são do servidor. Q2 abaixo aprovou recuperar também as imagens pela conta com cache local. Q2 abaixo confirmou histórico, análise nutricional e dicas juntos; regras/fontes/revisão ainda precisam ser elaboradas. Não inferir deficiência de registros incompletos.
 
 Registro detalhado e distinção entre decisão e proposta em [decisoes-piloto.md](decisoes-piloto.md). Nenhuma dessas capacidades foi implementada por esta atualização.
 
@@ -36,14 +36,14 @@ Registro detalhado e distinção entre decisão e proposta em [decisoes-piloto.m
 
 - **Organização aprovada:** agrupar por refeição e também permitir visão por alimento, sobre os mesmos registros (V1-045).
 - **Entrega conjunta aprovada:** histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-046). A clarificação elimina a resposta ambígua “opção 2 e 3 juntas”; não adiar análise/dicas silenciosamente.
-- **Fotos:** a [comparação de quatro produtos](pesquisa-fotos-historico.md) foi concluída documentalmente. Persistência privada pela conta + cache local é recomendação, ainda não escolha aprovada; hospedagem continua adiada.
+- **Fotos:** a [comparação de quatro produtos](pesquisa-fotos-historico.md) foi concluída documentalmente. Após comparar, o autor aprovou recuperar fotos pela conta com cache no celular. Hospedagem continua adiada; ciclo privado, limites/retenção/exclusão e implementação precisam ser detalhados.
 - **Limites:** análise representa somente o registrado, com cobertura/desconhecidos explícitos. Dicas exigem regra/fonte/versão/revisão; não diagnosticar deficiência nem inventar nutrientes ou metas.
 
 Nenhuma história foi concluída por essas decisões. Contratos, modelos, conteúdo revisado e implementação seguem os gates abaixo.
 
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1 e parte de Q2 foram respondidos. Recuperação das fotos e campos de contexto ainda exigem decisões; entrega conjunta de histórico/análise/dicas já foi aprovada, com regras e conteúdo a revisar.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1 e Q2 foram respondidos. Campos de contexto e opções do treino seguem para Q3; entrega conjunta de histórico/análise/dicas e recuperação das fotos pela conta com cache foram aprovadas, com regras, conteúdo e ciclo privado a detalhar.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -77,7 +77,7 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 |---|---|---|
 | D-01 | Respondido:programas humanos compatíveis **e** composição por regras revisadas; opções editáveis ainda a definir | V1-015/044; dois caminhos sem dose inventada |
 | D-02 | Respondido:cuidador pratica durante pausas do seu trabalho, usando os próprios dados | Contexto de pausa sem cadastro de paciente ou autorização delegada |
-| D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; política de armazenamento/recuperação das imagens ainda pendente |
+| D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; recuperação das imagens pela conta com cache aprovada noQ2, ciclo privado a detalhar |
 | D-04 | Quais campos de configuração são realmente necessários para as escolhas aprovadas | Coleta mínima, validação e persistência sem formulário físico genérico por suposição |
 | D-05 | O que funciona offline e qual perda de rascunho é aceitável | Cache, fila local, sincronização, proteção e conflitos |
 | D-06 | Prioridade dos países/idiomas, apresentação de fontes estrangeiras e termos de entendimento difícil | Localização e cobertura alimentar/treino revisada |
@@ -242,13 +242,13 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Q1 e parte de Q2 foram respondidos. Apresentar a pesquisa e fechar somente a decisão restante sobre fotos; depois avançar a Q3, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Não apresentar todas de uma vez. Q1 e Q2 foram respondidos; recuperação das fotos pela conta com cache foi aprovada após a comparação. Avançar a Q3, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
 | Q1 | Resultado da primeira versão | Dois caminhos; cuidador como praticante; foto com correção e quantidade informada | Respondido24/10; registradas decisões e corrigida interpretação |
-| Q2 | Fotos, histórico e observações | Agrupamento por refeição/alimento e histórico/análise/dicas juntos confirmados; decidir recuperação das fotos após a comparação | Parcial em 25/10; somente política de fotos pendente, nenhuma contratação agora |
-| Q3 | Backend e treino | Opções que a pessoa pode alterar, restrições da fonte, sequência/agenda, pausa/parcial e histórico esperado | Aguardar contexto/modelo |
+| Q2 | Fotos, histórico e observações | Refeições/alimentos; histórico/análise/dicas juntos; recuperação das fotos pela conta com cache | Respondido em 25/10; sem contratação ou implementação por inferência |
+| Q3 | Backend e treino | Configuração curta/completa, ajustes permitidos e agenda, pausa/retomada/parcial; preservar regras da fonte | Próxima conversa; perguntas do bloco antes dos modelos |
 | Q4 | Segurança e privacidade | Retenção, recuperação, imagens/análise e comportamento em revogação/exclusão | Reaproveitar decisões anteriores e perguntar só lacunas |
 | Q5 | Frontend e idiomas | Jornada simples, referências disponíveis, prioridade regional/termos e comportamento com fonte estrangeira | Aguardar contratos e referências suficientes |
 | Q6 | Qualidade e aceite | Dispositivos de teste, cenário de uso/carga e critérios de aceite humano | Definir antes dos ensaios correspondentes |
@@ -273,7 +273,7 @@ Famílias ainda sem contexto integral: cadastro manual 104:1260; privacidade 104
 | auditoria-produto-2026-10-24.md + recibo | Baseline factual e medição histórica; não substituir por planejamento |
 | backlog.json → backlog.md | Estados/dependências e critérios das histórias; Markdown gerado |
 | frontend-fidelidade-figma.md | Referências, direção aprovada e checkpoints do frontend consolidados |
-| pesquisa-fotos-historico.md | Comparação delimitada de quatro produtos e proposta de persistência, sem selecionar serviço |
+| pesquisa-fotos-historico.md | Comparação delimitada de quatro produtos e direção de recuperação aprovada, sem selecionar serviço |
 | handoff.md / AGENTS.md | Retomada e instruções atuais concisas, sem repetir relatos completos |
 | Arquitetura/contratos/Swagger/diário/recibos | Responsabilidades, documentação gerada, histórico e prova das validações |
 | Conteúdo/licenças/manifestações de exclusão | Evidência e limites de uso preservados; não são lixo documental |
@@ -297,4 +297,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. Q1 e agrupamento/entrega conjunta do Q2 estão registrados; resta decidir a política de fotos após a pesquisa. Depois, seguir Q3. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Este incremento é documental. Q1/Q2 estão registrados, incluindo a recuperação das fotos pela conta com cache. Próxima conversa Q3, configuração e treino. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.

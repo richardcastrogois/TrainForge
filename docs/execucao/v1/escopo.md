@@ -8,7 +8,7 @@ Objetivo ajustado pelas [respostas do autor](decisoes-piloto.md): obter APKs de 
 
 Dois caminhos de treino:escolher programas humanos compatíveis e compor exercícios com regras humanas revisadas(V1-044), sem dose inventada. Cuidador é o praticante nas pausas do próprio trabalho; acompanhamento de pessoa assistida não é requisito desta entrega.
 
-Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; a recuperação das fotos ainda aguarda a decisão Q2 descrita abaixo. [Decisões completas](decisoes-piloto.md).
+Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; a recuperação das fotos pela conta, com cache no celular, foi aprovada no Q2 descrito abaixo. [Decisões completas](decisoes-piloto.md).
 
 ## Respostas Q2 incorporadas em 25/10
 
@@ -16,7 +16,7 @@ Agrupar por refeição e oferecer também a visão por alimento, usando os mesmo
 
 A análise mostra somente os registros disponíveis, com período/fuso, dias com dados, estimativas, métodos e desconhecidos. Dicas exigem fonte, versão, regra e revisão humana; não diagnosticar deficiência ou criar metas clínicas por diário parcial.
 
-A [pesquisa comparativa de fotos](pesquisa-fotos-historico.md) foi pedida antes da decisão de recuperação. Persistência privada pela conta + cache é proposta, não escolha confirmada nem autorização de hospedagem.
+Após a [pesquisa comparativa de fotos](pesquisa-fotos-historico.md), o autor aprovou **recuperar fotos pela conta, com cache no celular**. Fotos já sincronizadas devem acompanhar o histórico em outro aparelho; rascunhos não enviados não têm recuperação garantida. Retenção/limites/exclusão serão definidos antes da liberação. Não autoriza hospedagem ou envio de fotos agora.
 
 ## Compromissos da V1
 

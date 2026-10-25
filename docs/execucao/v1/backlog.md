@@ -718,7 +718,7 @@ Critérios de aceite:
 - Quantidade, ingredientes ocultos, preparo e nutrientes não são inventados pela imagem; correspondência com alimento/base/versão precisa ser confirmada
 - Falha/baixa confiança permite busca/cadastro manual; reanálise/cancelamento não grava consumo nem duplica confirmação
 - Modelo/capacidade, licença, precisão, privacidade e custo medidos em prova delimitada antes de adoção; nenhuma contratação automática
-- Metadados, imagem privada e registros têm titularidade, limites, retenção/exclusão e política de recuperação entre aparelhos definida noQ2
+- Fotos sincronizadas são recuperáveis pela mesma conta em outro aparelho, com cache local; titularidade, limites, retenção/exclusão e estado de envio explícitos; rascunho não enviado não tem recuperação prometida
 - Histórico visual apresenta registros confirmados e estado de foto ausente/sincronização, sem apagar consumo quando imagem falta
 - OCR/barcode, imagem de atividade e gesto continuam recortes distintos posteriores; observações nutricionais dependem de escopo/regras próprias e não inferem deficiência de registros incompletos
 
@@ -726,7 +726,7 @@ Tarefas e subtarefas:
 
 - V1-042-T01 — Definir política de foto e prova delimitada
   - Reutilizar evidênciasN06/N39/N40 sem pesquisa ampla de fornecedor
-  - Definir armazenamento local versus recuperação das fotos, autorização e expurgo; nenhum recurso cloud por inferência
+  - Implementar recuperação privada das fotos pela conta com cache local, conformeQ2; definir autorização, limites e expurgo sem recurso cloud por inferência
   - Medir identificação com imagens autorizadas, correções e baixa confiança; dados pessoais não são dataset por padrão
 - V1-042-T02 — Implementar análise e confirmação por item
   - Separar captura/anexo privado, inferência, candidatos e correspondência com base versionada
@@ -741,7 +741,7 @@ Validação: Ensaio com imagens autorizadas e resultado real editado; métricas 
 
 Entregas: Fluxo real de reconhecimento/revisão/quantidade/confirmação; Política de armazenamento e histórico visual privado; Resultados da prova de identificação e testes do ciclo privado
 
-Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045 e histórico/análise/dicas juntos na046. Recuperação das imagens ainda aguarda decisão após a comparação de quatro produtos; persistência privada pela conta+cache é proposta. Sem serviço pago, hospedagem ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores.
+Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045, histórico/análise/dicas juntos na046 e recuperação das fotos pela conta com cache no celular após comparação de quatro produtos. Detalhar limites/retenção/exclusão e comprovar recuperação real; nenhuma funcionalidade concluída nesta rodada. Sem hospedagem, serviço pago ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores.
 
 ### V1-045 — Organizar registros por refeição e por alimento
 
@@ -777,7 +777,7 @@ Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Co
 
 Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
 
-Handoff: 25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; política de recuperação de fotos continua proposta, não escolhida. API de foto042 depende desse agrupamento.
+Handoff: 25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; recuperação das fotos pela conta com cache também foi aprovada após pesquisa e será integrada na042. API de foto042 depende desse agrupamento.
 
 ### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
 
@@ -817,7 +817,7 @@ Validação: Resultados conferidos contra consumos/versões e cálculos da API; 
 
 Entregas: Contrato e tela de análise/histórico; Regras e conteúdo educativo revisados; Recibo de cálculos, limites e aceite
 
-Handoff: 25/10:autor esclareceu expressamente que quer histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Escopo aprovado, não implementação. Retenção/recuperação de imagens ainda aguardam decisão após pesquisa; sem contratação ou inferência clínica.
+Handoff: 25/10:autor esclareceu expressamente que quer histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Aprovou também recuperar fotos pela conta com cache no celular, sem hospedagem agora. Escopo aprovado, não implementação; detalhar ciclo privado e regras/fontes/revisão sem inferência clínica.
 
 ## EP07 — Flutter e experiência da V1
 
