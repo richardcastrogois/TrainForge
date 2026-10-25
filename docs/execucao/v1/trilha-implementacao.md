@@ -23,9 +23,18 @@ A expectativa é avaliar **o produto inteiro em incrementos reais**, cenário po
 
 **Limites preservados:** sem hospedagem/deploy agora, sem compra/assinatura/integração paga automática, sem nova pesquisa ampla de fornecedores, sem conteúdo de treino/dose/nutriente inventado e sem apagar dados reais. A lista de [APIs já pesquisadas](../../conteudo/opcoes-apis-exercicios.md) permanece válida. A indicação de até R$400 não é autorização de compra.
 
+## Respostas Q1 incorporadas — 24/10/2026
+
+- **Treinos:**os dois caminhos entram na versão desejada:escolher programas compatíveis e compor exercícios por regras humanas revisadas. V1-015 e novaV1-044, sem prescrição inventada.
+- **Cuidador:**o próprio cuidador é o praticante durante pausas do trabalho. Vínculo/delegação de pessoa assistida não é foco nem bloqueio desta versão; a interpretação anterior foi corrigida.
+- **Foto:**reconhecer candidatos, permitir corrigir/remover/adicionar, pedir quantidade explícita, calcular por base/versão e só então confirmar consumo. V1-042 antecipada paraV1.
+- **Histórico:**deve ser visual e agradável; registros de consumo são do servidor. Recuperar também as imagens exige decisãoQ2 sobre persistência/sincronização. Dicas de variedade/nutrientes ainda precisam de escopo e regras revisadas; não inferir deficiência de registros incompletos.
+
+Registro detalhado e distinção entre decisão e proposta em [decisoes-piloto.md](decisoes-piloto.md). Nenhuma dessas capacidades foi implementada por esta atualização.
+
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Todos os blocos abaixo continuam abertos; a conclusão deste documento não encerra nenhum deles.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1 foi respondido; armazenamento, campos de contexto e política das observações ainda exigem decisões.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -37,7 +46,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 |---|---|---|---|
 | 00 | Decisões do produto e contratos de jornada | Decisões pendentes | Perguntas essenciais respondidas e escopo das jornadas aprovado |
 | 01 | Banco e armazenamento no aparelho | Fundação real; modelos novos pendentes | Modelos/privilégios/recuperação alinhados ao escopo, migrations e testes aprovados |
-| 02 | Backend | Fundação e alimentação reais; treino/cuidado/foto incompletos | Casos de uso do recorte completos, isolados, documentados e testados |
+| 02 | Backend | Fundação e alimentação reais; treino e foto incompletos | Casos de uso do recorte completos, isolados, documentados e testados |
 | 03 | Segurança e privacidade | Controles presentes; revisão completa pendente | Matriz de riscos/controles e correções verificadas, com limites explícitos |
 | 04 | Frontend, experiência e idiomas | Checkpoints visuais parciais | Jornadas reais simples, contratos coerentes, acessibilidade e referências conferidas |
 | 05 | Testes, CI e análise de qualidade | Cobertura parcial; CI incompleta | Regressões críticas automatizadas e pipeline capaz de detectar falhas do recorte |
@@ -47,9 +56,9 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 ### Decisões que não podem ficar escondidas
 
-Foto/OCR (V1-042), acompanhamento de outra pessoa (parte de V1-043), sensores/GPS (V1-041) e expansão da personalização (V1-040) estão em recortes posteriores do backlog vigente. A expectativa atual exige decidir quais entram na primeira versão desejada. Qualquer antecipação precisa atualizar escopo, histórias, dependências, dados e critérios; não declarar uma V1 completa omitindo uma expectativa essencial.
+V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
-Configuração persistida, delegação do cuidador e quatro idiomas ainda não têm histórias próprias suficientemente detalhadas. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
+Configuração persistida e quatro idiomas ainda precisam de detalhamento nas histórias. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
 ## 3. Bloco 00 — decisões do produto
 
@@ -57,9 +66,9 @@ Configuração persistida, delegação do cuidador e quatro idiomas ainda não t
 
 | ID | Decisão necessária | O que ela desbloqueia |
 |---|---|---|
-| D-01 | Escolha de programa aprovado, composição por regras humanas ou ambos; quais escolhas o usuário pode alterar | Modelo e contratos de treino, aderência e composição sem prescrição inventada |
-| D-02 | Quem usa: praticante, cuidador ou pessoa assistida; o que cada um pode fazer e quando | Vínculo, autorização, telas e rastreabilidade do cuidador |
-| D-03 | Foto precisa entrar nessa primeira versão? Foto anexada, rótulo/barcode e reconhecimento de prato têm escopos diferentes | Replanejamento da V1-042 e arquitetura de captura/privacidade/custo |
+| D-01 | Respondido:programas humanos compatíveis **e** composição por regras revisadas; opções editáveis ainda a definir | V1-015/044; dois caminhos sem dose inventada |
+| D-02 | Respondido:cuidador pratica durante pausas do seu trabalho, usando os próprios dados | Contexto de pausa sem cadastro de paciente ou autorização delegada |
+| D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; armazenamento/recuperação das imagens e insights ainda pendentes |
 | D-04 | Quais campos de configuração são realmente necessários para as escolhas aprovadas | Coleta mínima, validação e persistência sem formulário físico genérico por suposição |
 | D-05 | O que funciona offline e qual perda de rascunho é aceitável | Cache, fila local, sincronização, proteção e conflitos |
 | D-06 | Prioridade dos países/idiomas, apresentação de fontes estrangeiras e termos de entendimento difícil | Localização e cobertura alimentar/treino revisada |
@@ -74,7 +83,7 @@ Configuração persistida, delegação do cuidador e quatro idiomas ainda não t
 |---|---|---|---|
 | BD-01 | Inventário compreensível | Por tabela: finalidade, titular, produtor/consumidor, chave, relações, retenção, exportação/exclusão e índice usado; separar tabelas ativas de preparação | Mapa corresponde às migrations e às consultas reais |
 | BD-02 | Configuração persistida | Modelar somente os campos aprovados em D-04, versão da configuração, unidades/localidade quando necessárias e alteração de contexto | Migration e ciclo criar/consultar/alterar validados; sem coletar dado sem finalidade |
-| BD-03 | Cuidador, se antecipado | Identidades distintas, convite/consentimento, permissões, validade/revogação e autoria da ação; definir quem pode exportar/excluir | Duas contas e pessoa assistida com acesso permitido/negado; revogação efetiva e registro mínimo apropriado |
+| BD-03 | Contexto do cuidador praticante | Usar a conta do próprio cuidador e registrar somente o contexto de pausas aprovado; não coletar dados da pessoa assistida | Nenhuma permissão extra por profissão; contexto respeita requisitos humanos e não inventa dose/duração |
 | BD-04 | Treino, agenda e execução | Conferir o modelo existente contra as regras aprovadas; versão de adesão, ocorrência, eventos, dose de origem versus execução observada | Constraints e transações rejeitam duplicidade, vínculo alheio e transição inválida |
 | BD-05 | Servidor versus aparelho | Fechar política por dado; servidor autoritativo, tokens no armazenamento seguro, preferência local e eventual outbox privada ligada à conta | Inventário inclui TTL, logout, troca de conta, exclusão, sincronização e falha do processo |
 | BD-06 | Recuperação de envio | Se D-05 exigir durabilidade, persistir identificador/corpo da operação e reconciliar resposta perdida sem novo lançamento | Ensaio em banco descartável: servidor confirmou, resposta sumiu, processo encerrou e retomada não duplicou |
@@ -107,13 +116,13 @@ Configuração persistida, delegação do cuidador e quatro idiomas ainda não t
 | BE-05 | Execução e retomada | Estados planejado/iniciado/pausado/parcial/concluído/não feito/descanso; eventos, datas/fuso e medido versus previsto | Corridas, reenvio, interrupção, retomada e semanas/datas independentes validadas |
 | BE-06 | Histórico e resumo | Consultas paginadas e resumo de origem explícita; execução real separada do plano e alimentação separada de gasto | Respostas não somam métodos incompatíveis nem convertem ausência em zero |
 | BE-07 | Alimentação e erros | Preservar racional/unidades/desconhecidos; resposta de validação clara para nutrientes duplicados e demais falhas de negócio | Contrato e regressão de regras/ownership/revisões, sem novo cálculo divergente no cliente |
-| BE-08 | Cuidador, se aprovado | Autorizar por recurso/ação e vínculo atual; indicar ator e pessoa assistida sem exigir senha compartilhada | Toda rota privada rejeita relação revogada ou acesso fora da permissão |
-| BE-09 | Foto, se antecipada | Separar captura, armazenamento, reconhecimento, correspondência com alimento e confirmação. Análise não grava consumo automaticamente | Incerteza/erro/edição/cancelamento e quantidade confirmada; custo e privacidade aprovados antes de serviço externo |
+| BE-08 | Cuidador praticante | Filtrar opções aprovadas para o contexto de pausa do próprio usuário, sem acesso delegado | Mesmo ownership do praticante; não exige vínculo ou cadastro de pessoa assistida |
+| BE-09 | Alimento por foto, aprovado paraV1 | Captura/análise separadas; lista editável, inclusão/remoção, quantidade pelo usuário e confirmação por alimento | Não inventa ingredientes/nutrientes/quantidades; cancelamento/reanálise não duplica consumo; fallback manual e isolamento privados |
 | BE-10 | Documentação e legado | Atualizar Swagger por comentários/tipos, diagramas e mapas; isolar/remover caminho legado após prova de uso | Cliente ativo só usa contratos Go; sem dois escritores do mesmo domínio; referências antigas não parecem entrega atual |
 
 **Gate 02 — “backend encerrado para este recorte”:** todos os casos de uso acordados implementados e integrados ao banco, organização acima conferida, autorização/concorrência/erros/cancelamento testados e Swagger coerente. Se prática real depende de conteúdo ainda não autorizado, o gate funcional continua aberto mesmo que contratos e testes técnicos passem com fixtures isoladas.
 
-**Histórias:** V1-015/016/017/018/020 e extensões necessárias da configuração/cuidador; V1-040/042/043 se replanejadas. Fundação V1-007/008 continua válida no seu escopo.
+**Histórias:** V1-015/016/017/018/020 e extensões de configuração/contexto; V1-042/044 naV1; V1-040/043 permanecem posteriores. Fundação V1-007/008 continua válida no seu escopo.
 
 ## 6. Bloco 03 — segurança e privacidade
 
@@ -122,12 +131,12 @@ Configuração persistida, delegação do cuidador e quatro idiomas ainda não t
 | ID | Falta ou melhoria | Entrega concreta | Evidência de encerramento |
 |---|---|---|---|
 | SEG-01 | Modelo de ameaças por jornada | Mapear atores, dados, fronteiras, abuso, dispositivo perdido, acesso entre contas e fornecedor futuro | Cada risco relevante ligado a controle/teste ou risco residual aceito |
-| SEG-02 | Matriz de autorização | Cobrir todas as operações privadas, titular e cuidador, listagem/IDs/exportação/exclusão e revogação | Testes negativos e positivos entre contas; não apenas tela ocultando botão |
+| SEG-02 | Matriz de autorização | Cobrir todas as operações privadas do titular, inclusive anexos e resultados de análise; delegação só se aprovada futuramente | Testes entre contas e revogação; não conceder acesso extra por ser cuidador |
 | SEG-03 | Credenciais e sessão | Revisar rotação/reuso, logout, falhas de rede, relógio, expiração e armazenamento/recuperação nativos | Rede não apaga sessão válida; credencial revogada não volta por resposta tardia |
 | SEG-04 | Superfície da API | Revisar limites por rota, JSON/entrada ambígua, uploads se existirem, paginação, enumeração, proxy e orçamento por instância | Requisição inválida/abusiva é limitada sem vazar conteúdo interno; casos concorrentes testados |
 | SEG-05 | Dependências e segredos | Inventário, versões, lockfiles, análise Go/Flutter/nativo, govulncheck e varredura de segredos com resultado real | Achados triados/corrigidos, exceções justificadas e nenhum segredo em Git/APK/log/artefato |
 | SEG-06 | Dados em repouso e backup | Comprovar proteção de tokens, outbox e eventuais fotos, transferência/backup Android/iOS, dumps e volume conforme ameaça | Inspeção dos mecanismos e ensaio no ambiente pertinente; não inferir criptografia de uma ACL |
-| SEG-07 | Privacidade ao ampliar dados | Atualizar finalidade/coleta mínima, exportação/exclusão, retenção e consentimento; foto e cuidador entram no inventário | Dados novos não ficam órfãos após exclusão/revogação; política coincide com comportamento |
+| SEG-07 | Privacidade ao ampliar dados | Finalidade/coleta mínima, exportação/exclusão, retenção e consentimento incluem imagens e resultados do reconhecimento | Nenhum anexo/resultado órfão após exclusão; política coincide com comportamento |
 | SEG-08 | Artefato de distribuição | Revisar assinatura, permissões, debug flags, configuração de rede, endpoint e falha segura em Android/iOS | APK release e build iOS validados em ambientes próprios; HTTPS exigido fora do desenvolvimento autorizado |
 
 **Gate 03:** requisitos aplicáveis da [ASVS](https://asvs.owasp.org/) e [MASVS](https://mas.owasp.org/MASVS/) ligados a evidência, riscos residuais escritos, nenhuma falha bloqueante conhecida sem tratamento e escopo de revisão explícito. Sem dizer “100% seguro”, sem nota inventada e sem chamar scanner de pentest. Testes locais não encerram homologação de exposição pública.
@@ -140,7 +149,7 @@ Configuração persistida, delegação do cuidador e quatro idiomas ainda não t
 
 | ID | Falta ou melhoria | Entrega concreta | Evidência de encerramento |
 |---|---|---|---|
-| FE-01 | Jornada simples | Revisar tarefas principais, ordem e caminhos de retorno; evitar levar a becos sem saída e não multiplicar telas por quantidade de frames do Figma | Usuário entende entrada → ação → confirmação → histórico, inclusive cuidador quando disponível |
+| FE-01 | Jornada simples | Revisar tarefas principais, ordem e caminhos de retorno; evitar levar a becos sem saída e não multiplicar telas por quantidade de frames do Figma | Usuário entende entrada → ação → confirmação → histórico, inclusive o cuidador como praticante nas pausas |
 | FE-02 | Campos e contratos | Matriz campo do usuário / dado automático / regra / endpoint / persistência; DTO e estado tipados | Nenhum campo inútil ou obrigatório ausente; mensagem vinculada ao campo que falhou |
 | FE-03 | Componentes e estado | Separar controllers/viewmodels, widgets e repositories; refinar formulários grandes sem reescrever tudo | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
 | FE-04 | Configuração e treino | Integrar configuração, opções permitidas, adesão, agenda, execução/pausa/retomada e histórico depois dos contratos | Jornada real, sem gráfico/série/dose fictícios; ausência de conteúdo permanece explícita |
@@ -221,14 +230,14 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Primeiro concluir esta documentação/limpeza, fazer commit/push e então abrir **Q1**. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Não apresentar todas de uma vez. Q1 foi respondido depois do push da trilha. Abrir agoraQ2, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
-| Q1 | Resultado da primeira versão | Programa versus composição; cuidador já na primeira versão; foto agora ou posterior | Pendente — perguntar após o push deste plano |
-| Q2 | Banco e contexto | Campos realmente necessários, permissões/consentimento, preferências por aparelho e expectativa offline | Aguardar Q1 |
+| Q1 | Resultado da primeira versão | Dois caminhos; cuidador como praticante; foto com correção e quantidade informada | Respondido24/10; registradas decisões e corrigida interpretação |
+| Q2 | Fotos, histórico e observações | Recuperar imagens entre aparelhos, organizar os registros e definir recorte das mensagens educativas | Próxima conversa; nenhuma contratação agora |
 | Q3 | Backend e treino | Opções que a pessoa pode alterar, restrições da fonte, sequência/agenda, pausa/parcial e histórico esperado | Aguardar contexto/modelo |
-| Q4 | Segurança e privacidade | Retenção, recuperação, ação do cuidador, fotos e comportamento em revogação/exclusão | Reaproveitar decisões anteriores e perguntar só lacunas |
+| Q4 | Segurança e privacidade | Retenção, recuperação, imagens/análise e comportamento em revogação/exclusão | Reaproveitar decisões anteriores e perguntar só lacunas |
 | Q5 | Frontend e idiomas | Jornada simples, referências disponíveis, prioridade regional/termos e comportamento com fonte estrangeira | Aguardar contratos e referências suficientes |
 | Q6 | Qualidade e aceite | Dispositivos de teste, cenário de uso/carga e critérios de aceite humano | Definir antes dos ensaios correspondentes |
 
@@ -275,4 +284,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. A próxima ação é Q1; implementação começa após as respostas que alteram o comportamento pretendido. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Este incremento é documental. Q1 está registrado; a próxima conversa é Q2. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.

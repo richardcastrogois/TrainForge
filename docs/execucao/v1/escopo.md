@@ -4,11 +4,17 @@ Direção de 21/10/2026. **Produto final Android e iOS; desenvolvimento e primei
 
 Objetivo ajustado pelas [respostas do autor](decisoes-piloto.md): obter APKs de avaliação durante o desenvolvimento para percorrer o aplicativo como um todo, cenário por cenário, entender o estado real e orientar mudanças antes do produto completo. Cada versão identifica o que funciona, o que falta e o que está restrito, sem simular capacidades. A V1 integrada permite autenticar uma pessoa real, consultar a biblioteca pesquisada, entender fonte/requisitos, registrar ações e recuperar histórico persistido. Alimentação inclui busca em base ampla pesquisada, quantidade/registro e cadastro real de alimento pelo usuário.
 
+## Respostas Q1 incorporadas em24/10
+
+Dois caminhos de treino:escolher programas humanos compatíveis e compor exercícios com regras humanas revisadas(V1-044), sem dose inventada. Cuidador é o praticante nas pausas do próprio trabalho; acompanhamento de pessoa assistida não é requisito desta entrega.
+
+Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; recuperação das fotos e recorte de observações educativas aguardamQ2. [Decisões completas](decisoes-piloto.md).
+
 ## Compromissos da V1
 
 - Conteúdo de fontes humanas existentes, com autoria/contribuição, evidência, versão e direitos por ativo. Inventariar toda a cobertura pesquisada; importar todo material utilizável e permitido em lotes técnicos. Lote candidato e lote aprovado são manifestos distintos;331 famílias não equivalem a331 importações autorizadas.
 - Movimentos, instruções, mídia e programas inteiros são objetos diferentes. Coleção modular informa essa natureza e conserva autoria de cada peça. Não herda a eficácia do programa original.
-- Casa, praça/parque, academia, idosos e cuidadores continuam na matriz. Disponibilidade e limites reais são exibidos mesmo quando um recorte só permite consulta. Cuidador praticante não equivale à pessoa assistida.
+- Casa, praça/parque, academia, idosos e cuidadores continuam na matriz. Disponibilidade e limites reais são exibidos mesmo quando um recorte só permite consulta. Cuidador é o próprio praticante durante pausas do trabalho; pessoa assistida é possibilidade posterior, não requisito do modo cuidador.
 - Frontend consulta nossa API e banco alimentados por lotes revisados. Não há exigência de acesso ao fornecedor a cada toque. Cache não transforma um conteúdo proibido em autorizado.
 - Conta, preferências, consumo e atividade vêm de entradas/ações reais do testador. Novo usuário começa sem histórico, sem peso, calorias, refeições, fotos ou progressos pré-preenchidos.
 - Interface cobre loading, vazio, falha, bloqueio, rede indisponível e retomada, além do caminho feliz. Ausência não vira zero medido, vídeo falso ou texto criado por IA.
@@ -25,7 +31,7 @@ N15 tem11 componentes para cuidadores no recorte modular; ES2019-DOM-01 tem5 mov
 
 ## Depois do primeiro piloto
 
-O [backlog](backlog.md) mantém iOS/TestFlight/lojas em V1.1, e expansão de modalidades, composição/importação própria, sensores/GPS, captura por imagem/OCR e acompanhamento de terceiros em histórias posteriores. Esses recursos não serão simulados no APK para parecer completos. R12/R13 continuam na visão; não estão descartados. Nutrição avançada/prescrição individual exige viabilidade própria, distinta do organizador de consumo.
+O [backlog](backlog.md) mantém iOS/TestFlight/lojas emV1.1; expansão de modalidades/importação própria, sensores/GPS, OCR/barcode, imagem deatividade e acompanhamento de terceiros seguem posteriores. Composição controlada044 e alimento por foto042 foram antecipados paraV1 pelas respostasQ1. Esses recursos não serão simulados no APK para parecer completos. R12/R13 continuam na visão; não estão descartados. Nutrição avançada/prescrição individual exige viabilidade própria, distinta do organizador de consumo.
 
 ## APKs intermediários para avaliação
 
@@ -35,7 +41,7 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 
 1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
 2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
-3. Uma jornada autorizada de conteúdo/atividade e uma alimentar verificadas contra o banco; histórico vazio e erros honestos.
+3. As duas jornadas de treino(programa e composição controlada) e alimentação manual/por foto revisada verificadas contra o banco; histórico vazio e erros honestos, sem práticas não autorizadas.
 4. Sessões idempotentes, retomada, logout/revogação e isolamento de conta verificados.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.

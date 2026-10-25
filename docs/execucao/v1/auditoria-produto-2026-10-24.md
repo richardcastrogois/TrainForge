@@ -2,6 +2,10 @@
 
 Data: **24/10/2026**. Base inspecionada: commit `953b1c04a042b2fb7b57a5e11f17260a2c54781f`, API Go **0.5.1 / 25 operações**, APK Android de avaliação **debug 0.3.0+13**. Repositório: `C:/dev/TrainForge/trainforge`.
 
+## Correção de escopo após as respostas Q1
+
+Em24/10 o autor esclareceu que **o cuidador é o praticante nas pausas do próprio trabalho**. A ausência de delegação para pessoa assistida não é um impedimento desse modo; a interpretação anterior foi corrigida. Ambos os caminhos de treino e alimento por foto com revisão/quantidade digitada entram na versão desejada, ainda não implementados. Histórico visual e recuperação das imagens estão em detalhamentoQ2. As medições técnicas abaixo mantêm o escopo do baseline. [Decisões](decisoes-piloto.md).
+
 ## Decisão principal
 
 **A API de GIFs não é o único impedimento.** Há banco, autenticação e registro alimentar reais. Ainda não há o percurso completo configuração do usuário → seleção/composição permitida → agenda → execução do treino → histórico. A captura e identificação de refeições por foto também não foram implementadas.
@@ -21,7 +25,7 @@ Veredito: **solicitar alterações antes de declarar o produto completo, seguro 
 | Executar treino e acompanhar evolução | Esqueleto de navegação com indisponibilidades explícitas | Sem contrato/serviço de execução, agenda e histórico de atividade; cartões vazios não são atividade implementada |
 | Alimentação manual | 6.369 referências, busca, detalhe, cadastro particular, consumo, revisão, exclusão, histórico e subtotais pela API | Um consumo humano real confirmado; cadastro particular e demais variações ainda precisam de aceite humano; não há dieta prescrita |
 | Alimentação por foto | Não implementada | Foto, identificação do alimento, preparo, porção, privacidade e confirmação exigem um fluxo próprio |
-| Cuidador | Público preservado nas decisões e textos | Não existe delegação de acesso, vínculo com pessoa assistida e revogação; não está pronto como modo de cuidador |
+| Cuidador praticante | Usa os próprios dados; público preservado | Falta contexto de treino nas pausas com conteúdo permitido. Delegação de pessoa assistida é opção futura, não requisito deste modo |
 
 Login real não foi repetido nesta auditoria. Fixtures de testes não contam como login Google ou aceite de uma refeição real. Nenhum consumo foi criado, editado ou excluído pelo agente nesta etapa.
 
@@ -63,7 +67,7 @@ Contagens são um snapshot, não dados permanentes. Foram lidos schema, privilé
 
 **Decisões corretas verificadas:** SQL parametrizado, constraints e chaves estrangeiras; vínculo de titularidade nas entidades; versões e proveniência preservadas; valores nutricionais desconhecidos distintos de zero; quantidade/base/unidade explícitas; cálculo racional autoritativo no Go; idempotência e revisões transacionais; separação de runtime, migrator e conteúdo editorial.
 
-**O que ainda falta decidir ou comprovar:** modelo de configuração e contexto do usuário, delegação de cuidador, política de montagem permitida, persistência de preferências entre aparelhos, durabilidade offline, retenção/expurgo automatizado, crescimento dos registros/revisões e índices sob carga. Não preencher essas lacunas com novas colunas escolhidas por suposição.
+**O que ainda falta decidir ou comprovar:** modelo de configuração e contexto do usuário/cuidador praticante, política de montagem permitida, persistência de preferências entre aparelhos, durabilidade offline, retenção/expurgo automatizado, crescimento dos registros/revisões e índices sob carga. Não preencher essas lacunas com novas colunas escolhidas por suposição.
 
 Não há RLS habilitada nas tabelas. Hoje a autorização depende da API, de filtros por titular, constraints, transações e privilégios. Isso não prova uma falha por si só; uma revisão deve decidir se RLS acrescenta defesa útil e testar também pool/contexto de conexão antes de adotá-la.
 
@@ -149,7 +153,7 @@ Não há refeição ou treino fictício preenchido automaticamente na composiç�
 
 **Acessibilidade está parcial, não homologada.** Há semântica/estados, foco no primeiro erro, redução de movimento, temas e testes de escala em recortes. Falta aceite das jornadas completas com idosos e cuidadores, TalkBack/VoiceOver, tamanho de fonte/display grande, contraste nos estados, alvos de toque, teclado, foco, leitura e recuperação de erro em aparelho real. A documentação oficial do [Flutter](https://docs.flutter.dev/ui/accessibility) e sua [API de teste de acessibilidade](https://docs.flutter.dev/ui/accessibility/accessibility-testing) orientam critérios verificáveis; o sistema operacional não torna qualquer tela automaticamente acessível.
 
-Cuidador precisa de identidade própria e autorização explícita para agir pela pessoa assistida, com limites, revogação e indicação clara de em nome de quem atua. Compartilhar senha ou tratar o cuidador como se fosse o titular não resolve esse requisito. Casa, praça, academia e idosos continuam no escopo; não há adequação clínica presumida.
+No foco confirmadoQ1, o cuidador pratica para si nas pausas e usa a mesma proteção de titularidade de qualquer praticante. Se houver acompanhamento de pessoa assistida futuramente, deverá ter vínculo/consentimento/permissões próprios; não é requisito desta entrega. Casa, praça, academia e idosos continuam no escopo; não há adequação clínica presumida.
 
 ## Idiomas e abrangência dos dados
 
@@ -196,7 +200,7 @@ Antes de alegar capacidade: cenário misto de leitura/escrita/refresh, volumes e
 
 | Ordem | Entrega que permite avaliar o produto | Dependência / critério de saída |
 |---|---|---|
-| 1 | Inventário de jornadas visíveis e contrato do contexto do usuário/cuidador | Entender ator, objetivos/contexto realmente necessários e limites de apoio; não coletar dados físicos sem finalidade |
+| 1 | Inventário de jornadas visíveis e contrato do contexto do usuário/cuidador | Entender o próprio praticante/cuidador nas pausas, objetivos/contexto necessários e limites de apoio; não coletar dados físicos sem finalidade |
 | 2 | Percurso de treino com conteúdo e composição permitidos | V1-015/016 e revisão das evidências: fonte humana, direitos, público, instrução, dose e agenda aprovados; sem gerador de prescrição |
 | 3 | Agenda e execução real com retomada | V1-017/018 e Flutter correspondente; estados, ocorrência única, parcial/pausa, histórico e testes de concorrência |
 | 4 | Alimentação manual compreensível e durável | Fechar aceite V1-025, corrigir erros/terminologia, unidades/fuso e recuperação; preservar consumo real |
@@ -204,7 +208,7 @@ Antes de alegar capacidade: cenário misto de leitura/escrita/refresh, volumes e
 | 6 | Qualidade demonstrável | CI Flutter/SQL, revisão V1-028, observabilidade V1-029, carga V1-030 e release testável conforme escopo, sem exigir hospedagem agora |
 | 7 | Reavaliar a lacuna de mídia | Só atribuir à API de GIFs aquilo que ela de fato fornece e licencia; comprar não aprova treino nem corrige as etapas acima |
 
-**Foto é uma decisão de escopo separada.** Hoje V1-042 está em `Posterior`, dependente de V1-037. O pedido atual traz essa expectativa à avaliação, mas não altera silenciosamente o aceite anterior. Se foto for indispensável para a primeira versão que o autor quer experimentar, replanejar formalmente essa dependência antes de prometer conclusão da V1. Separar rótulo/barcode, foto de prato e estimativa de porção; mostrar candidatos, incerteza e confirmação humana. Não afirmar que uma única fotografia mede com precisão o quanto foi consumido.
+**Foto é uma decisão de escopo separada.** Hoje V1-042 estava em `Posterior`, dependente deV1-037, no baseline. A respostaQ1 confirmou foto na versão desejada:história antecipada e delimitada a alimento por foto, com quantidade informada e confirmação. Recuperação das imagens e recorte das observações aguardamQ2; nada foi concluído só por replanejar. Separar rótulo/barcode, foto de prato e estimativa de porção; mostrar candidatos, incerteza e confirmação humana. Não afirmar que uma única fotografia mede com precisão o quanto foi consumido.
 
 Também faltam critérios explícitos de suporte/recuperação, consentimento e privacidade das novas informações, compatibilidade Android/iOS e aparelhos modestos, bateria/memória/tempo de abertura, atualização do APK sem perda de dados, conflitos entre aparelhos, retirada de conteúdo e custo/licença de eventual mídia. Esses critérios devem acompanhar as histórias, não virar uma contratação antecipada.
 

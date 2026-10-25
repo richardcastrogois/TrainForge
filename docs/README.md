@@ -26,11 +26,11 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Prioridade vigente24/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md), responderQ1 e implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
+**Prioridade vigente24/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md), Q1 respondido e próximoQ2 sobre fotos/histórico/observações. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
 
 **Aplicativo disponível:** APK Android debug **0.3.0+13**, API Go **0.5.1 / 25 operações**, PostgreSQL local. Autenticação/privacidade e alimentação manual possuem evidências reais. Há 73 metadados de movimento e 6.369 referências alimentares; nenhuma prática foi liberada por aplicar o visual.
 
-**Frontend:** pontos 01–06 têm checkpoint Android aprovado; 07–12 refinam os fluxos disponíveis, sem encerramento integral. Configuração, treino, cuidador, foto, idiomas e validação nativa iOS permanecem abertos. [Fonte visual e checkpoints](execucao/v1/frontend-fidelidade-figma.md) · [Artefato](execucao/v1/android-frontend-checkpoint.json) · [Handoff](execucao/v1/handoff.md).
+**Frontend:** pontos 01–06 têm checkpoint Android aprovado; 07–12 refinam os fluxos disponíveis, sem encerramento integral. Configuração, treino, contexto de pausa, foto, idiomas e validação nativa iOS permanecem abertos. Cuidador pratica para si; delegação de outra pessoa não é requisito desta versão. [Fonte visual e checkpoints](execucao/v1/frontend-fidelidade-figma.md) · [Artefato](execucao/v1/android-frontend-checkpoint.json) · [Handoff](execucao/v1/handoff.md).
 
 ## Como a pasta foi organizada
 

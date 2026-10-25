@@ -533,6 +533,44 @@ Entregas: Contrato de instruction/media; Lista de ativos efetivamente liberados
 
 Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
+### V1-044 — Compor treino com regras humanas revisadas
+
+**todo · V1 · L**
+
+Como praticante, inclusive cuidador nas pausas do próprio trabalho, quero escolher um programa compatível ou usar uma composição permitida conforme meu contexto, sem prescrição inventada.
+
+Dependências: V1-015, V1-016, V1-021
+
+Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md; docs/conteudo/evidencias-para-integracao.md
+
+Critérios de aceite:
+
+- Dois caminhos distinguíveis: escolher versão de programa humano compatível e compor coleção com regras humanas revisadas; não rotular composição alterada como programa original
+- Contexto/opções editáveis definidos antes do modelo e persistência; preservar autoria, versão, instrução, dose, direitos e apoio de cada componente
+- Combinação incompatível ou sem regra/material aprovado retorna motivo e bloqueio; nenhuma série, repetição, frequência ou adequação criada pela IA
+- Cuidador é o próprio praticante durante pausas de trabalho; não exige cadastro ou dados da pessoa assistida e não concede acesso a outra conta
+- Composição confirmada gera versão rastreável e integra adesão/agenda/execução sem reescrever sessões históricas
+
+Tarefas e subtarefas:
+
+- V1-044-T01 — Definir contexto e regras permitidas
+  - Registrar escolhas do autor sobre entradas e opções alteráveis
+  - Reutilizar dossiês/evidências existentes e separar regra aprovada de material indisponível
+  - Especificar incompatibilidades e semântica de composição versus programa original
+- V1-044-T02 — Implementar contrato, persistência e jornada
+  - Modelar versão/atribuição dos componentes e casos de uso com interfaces pequenas
+  - Integrar escolha/composição no Flutter sem geradores legados
+  - Vincular versão confirmada à adesão e agenda permitidas
+- V1-044-T03 — Validar fronteiras e aceite
+  - Testar regras, ownership, concorrência e preservação de histórico em banco descartável
+  - Executar um caso humano permitido e outro bloqueado sem conteúdo fictício no runtime
+
+Validação: Contrato HTTP/Swagger e integração SQL/Flutter consistentes; Duas jornadas reais de seleção/composição com material aprovado; fixtures só comprovam regras técnicas
+
+Entregas: Contrato e fluxo de composição controlada; Versão persistida com proveniência e regra humana; Recibo de casos permitidos/bloqueados
+
+Handoff: 24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado.
+
 ## EP06 — Atividade e alimentação registradas de verdade
 
 Persistir ações reais, unidades corretas e histórico sem criar desempenho, dieta ou medição fictícios.
@@ -663,6 +701,47 @@ Validação: Integração DB/API com alimento pesquisado; Conferir cálculo cont
 Entregas: API nutrition v1; Registro de consumo real
 
 Handoff: 23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver alimentacao-registro.md, nutrition-real-android-verification.json e frontend-fidelidade-figma.md.
+
+### V1-042 — Reconhecer alimentos por foto com revisão e quantidade informada
+
+**todo · V1 · L**
+
+Como usuário, quero fotografar uma refeição, corrigir os alimentos identificados e informar quanto consumi antes do cálculo e da confirmação.
+
+Dependências: V1-013, V1-020, V1-025
+
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/contratos-v1.md
+
+Critérios de aceite:
+
+- Foto gera candidatos editáveis; usuário pode corrigir/remover/adicionar itens e informa quantidade por alimento antes de confirmar consumo
+- Quantidade, ingredientes ocultos, preparo e nutrientes não são inventados pela imagem; correspondência com alimento/base/versão precisa ser confirmada
+- Falha/baixa confiança permite busca/cadastro manual; reanálise/cancelamento não grava consumo nem duplica confirmação
+- Modelo/capacidade, licença, precisão, privacidade e custo medidos em prova delimitada antes de adoção; nenhuma contratação automática
+- Metadados, imagem privada e registros têm titularidade, limites, retenção/exclusão e política de recuperação entre aparelhos definida noQ2
+- Histórico visual apresenta registros confirmados e estado de foto ausente/sincronização, sem apagar consumo quando imagem falta
+- OCR/barcode, imagem de atividade e gesto continuam recortes distintos posteriores; observações nutricionais dependem de escopo/regras próprias e não inferem deficiência de registros incompletos
+
+Tarefas e subtarefas:
+
+- V1-042-T01 — Definir política de foto e prova delimitada
+  - Reutilizar evidênciasN06/N39/N40 sem pesquisa ampla de fornecedor
+  - Definir armazenamento local versus recuperação das fotos, autorização e expurgo; nenhum recurso cloud por inferência
+  - Medir identificação com imagens autorizadas, correções e baixa confiança; dados pessoais não são dataset por padrão
+- V1-042-T02 — Implementar análise e confirmação por item
+  - Separar captura/anexo privado, inferência, candidatos e correspondência com base versionada
+  - Permitir corrigir/remover/adicionar e digitar quantidade; manter desconhecidos e incompatibilidades de unidade
+  - Calcular com regrasGo existentes e gravar somente após confirmação humana idempotente
+- V1-042-T03 — Integrar histórico visual e ciclo privado
+  - Vincular imagem e itens sem depender de caminho local do aparelho como identidade do registro
+  - Exibir falha/ausência/pendência de foto com registro textual preservado
+  - Validar acesso entre contas, edição/exclusão/retentativa e recuperação conforme política aprovada
+
+Validação: Ensaio com imagens autorizadas e resultado real editado; métricas de identificação e correções registradas; Integração de foto revisada→quantidade informada→cálculo/consumo→histórico, sem fixtures como aceite humano; Testes de baixa confiança, reanálise/duplo envio, dados desconhecidos, titularidade e recuperação/exclusão
+
+Entregas: Fluxo real de reconhecimento/revisão/quantidade/confirmação; Política de armazenamento e histórico visual privado; Resultados da prova de identificação e testes do ciclo privado
+
+Handoff: 24/10:Q1 antecipou esta capacidade paraV1. A quantidade será digitada pelo usuário; o reconhecimento não confirma consumo. Recuperação das imagens e mensagens educativas aguardamQ2. Sem novo serviço pago, hospedagem ou envio a terceiro autorizado por inferência. Barcode/OCR e imagens de atividade não foram antecipados.
 
 ## EP07 — Flutter e experiência da V1
 
@@ -1126,7 +1205,7 @@ Handoff: 23/10: certificado de avaliação release dedicado existente e protegid
 
 Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e conteúdo reais.
 
-Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034
+Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044
 
 Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
@@ -1135,6 +1214,7 @@ Critérios de aceite:
 - Login real → lote aprovado → fonte/versão → registro real → resumo → relançamento → logout verificados
 - Erro/offline/duplo toque/ausência de conteúdo e troca de data cobertos sem mocks no runtime
 - Lote bloqueado não executa; feedback não é apresentado como comprovação clínica
+- Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1
 
 Tarefas e subtarefas:
 
@@ -1313,7 +1393,7 @@ Validação: Revisão dos lotes e testes de unidade/ordem; Fluxo de composição
 
 Entregas: Lotes adicionais; Editor/importador com limites
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:composição controlada antecipada na044; esta história mantém expansão posterior de modalidades/lotes/importação própria sem adiar os dois caminhos aprovadosQ1.
 
 ### V1-041 — Adicionar sensores, GPS e integrações
 
@@ -1346,37 +1426,6 @@ Entregas: Integração real documentada; Matriz de disponibilidade
 
 Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
-### V1-042 — Investigar imagem, OCR e confirmação humana
-
-**todo · Posterior · L**
-
-Como usuário, quero apoio para registrar uma foto sem tratar estimativa visual como medição confirmada.
-
-Dependências: V1-037
-
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
-
-Critérios de aceite:
-
-- Foto de prato, rótulo/barcode, painel de treino e gesto são problemas separados
-- Modelo/API, licença, custo, privacidade e precisão medidos antes de adoção
-- Candidatos exigem confirmação de alimento/preparo/quantidade/atividade; nenhum treino prescrito por IA
-
-Tarefas e subtarefas:
-
-- V1-042-T01 — Executar prova delimitada
-  - Reutilizar evidências N correspondentes antes de nova pesquisa
-  - Definir dataset autorizado e métricas de erro sem dados pessoais por padrão
-- V1-042-T02 — Decidir produto
-  - Comparar captura local/remota e fallback manual
-  - Implementar somente resultado aprovado, com edição e exclusão da foto
-
-Validação: Ensaio com material autorizado e resultados reais; Testes de erro, baixa confiança e privacidade
-
-Entregas: Decisão por tipo de captura; Fluxo confirmado pelo usuário
-
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
-
 ### V1-043 — Desenvolver acompanhamento e alimentação avançados
 
 **todo · Posterior · L**
@@ -1406,4 +1455,4 @@ Validação: Teste de permissões entre titulares e cuidadores; Revisão da orig
 
 Entregas: Jornadas de acompanhamento; Expansão alimentar com origem
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados.

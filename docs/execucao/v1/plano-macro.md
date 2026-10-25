@@ -1,12 +1,12 @@
 # Caminho da pesquisa ao APK
 
-Estado vigente em **24/10/2026**. O roteiro de execução atual é a [trilha por área](trilha-implementacao.md), que registra expectativas, tarefas, dependências, critérios de encerramento e dúvidas do autor. A [auditoria](auditoria-produto-2026-10-24.md) é o baseline factual; o [backlog](backlog.json) governa estados das histórias. Próxima conversa:Q1 da trilha, após documentação/commit/push.
+Estado vigente em **24/10/2026**. O roteiro de execução atual é a [trilha por área](trilha-implementacao.md), que registra expectativas, tarefas, dependências, critérios de encerramento e dúvidas do autor. A [auditoria](auditoria-produto-2026-10-24.md) é o baseline factual; o [backlog](backlog.json) governa estados das histórias. Q1 respondido:dois caminhos de treino, cuidador praticante nas pausas e alimento por foto com revisão/quantidade informada. Próxima conversa:Q2 sobre fotos/histórico/observações.
 
 Banco local, autenticação e alimentação manual são reais; treino completo, cuidador, foto e idiomas ainda têm lacunas. Código seguro, organizado e preparado para crescer é exigido desde agora. Não basta trocar paraGo nem comprarGIFs. Segurança/testes entram em cada incremento.
 
 APKdebug **0.3.0+13** preservado. IdentidadeTF, darkGrafite e lima, rolagem e checkpoints01–12 estão na [fonte visual única](frontend-fidelidade-figma.md);01–06 têm checkpointAndroid e07–12 não estão integralmente concluídos. Relatos históricos foram consolidados para reduzir instruções repetidas.
 
-**Sem hospedagem agora.** Os marcos abaixo distinguem o checkpoint local de avaliação do aceite integral de distribuição/staging. Foto/cuidador e demais capacidadesPosterior precisam de replanejamento se antecipadas; a expectativa não será omitida para chamar o produto de pronto.
+**Sem hospedagem agora.** Os marcos abaixo distinguem o checkpoint local de avaliação do aceite integral de distribuição/staging. Foto042 antecipada paraV1 e composição044 criada; cuidador pratica para si, sem delegação como requisito. OCR/barcode/sensores/terceiros permanecem posteriores. Recuperação das fotos e observações aguardamQ2.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Cada checkpoint relaciona todos os cenários a um estado real: disponível para 
 
 ## Cobertura da visão
 
-R01–R06 e R15–R17: catálogo, requisitos, sessão, acessibilidade e evolução multiplataforma. R07–R10/R14: fatia alimentar, registro, histórico e origem das métricas. R11: sessão/recuperação agora, sensores/GPS na041. R12/R13: imagem/OCR na042. Acompanhamento legítimo de outra pessoa e alimentação avançada na043. R18 é transversal a conteúdo, segurança, custo e operação. A matriz exata de IDs está em cada história.
+R01–R06 e R15–R17: catálogo, requisitos, sessão, acessibilidade e evolução multiplataforma. R07–R10/R14: fatia alimentar, registro, histórico e origem das métricas. R11: sessão/recuperação agora, sensores/GPS na041. R13:alimento por foto042 naV1 apósQ1; outros usos deimagem/OCR permanecem posteriores. Composição controlada044 também naV1; expansão na040. Acompanhamento de outra pessoa na043 não é requisito do cuidador praticante; observações alimentares dependem do recorteQ2. R18 é transversal a conteúdo, segurança, custo e operação. A matriz exata de IDs está em cada história.
 
 23/10: [V1-013](privacidade-013.md) implementada/validada tecnicamente,18operações/Go0.4.0 e48testesFlutter. LoginAndroiddebug real/aceite privado passaram; OAuthrelease confirmado; HTTPS/testeAPKrelease continuam pendentes; aceite local011/012/013 encerrado; desenvolvimento pode seguir pelas dependências. Push dos incrementos validados autorizado, deploy não. Meta de milhões simultâneos exige carga/infraestrutura próprias, não comprovada neste checkpoint.
 

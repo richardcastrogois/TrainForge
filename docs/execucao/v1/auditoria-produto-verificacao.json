@@ -112,5 +112,18 @@
     "Fixtures do not validate real Google login, human nutrition acceptance or clinical suitability.",
     "No supplier research, purchase, paid integration, hosting, deploy, data deletion or app update."
   ],
-  "report": "docs/execucao/v1/auditoria-produto-2026-10-24.md"
+  "report": "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+  "scopeClarificationAfterQ1": {
+    "date": "2026-10-24",
+    "caregiverFocus": "self practice during work breaks",
+    "caregiverDelegationRequiredForV1": false,
+    "requiredWorkoutPaths": [
+      "compatible human program",
+      "composition with reviewed human rules"
+    ],
+    "photoRequiredForDesiredV1": true,
+    "photoQuantityProvidedByUser": true,
+    "photoRecoveryAndEducationalInsights": "Q2 pending; no service/storage contracted",
+    "baselineTechnicalChecksRepeated": false
+  }
 }

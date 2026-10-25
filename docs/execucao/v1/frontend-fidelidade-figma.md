@@ -4,9 +4,11 @@ Fonte única atualizada em **24/10/2026**. [Trilha por área](trilha-implementac
 
 ## Estado atual e limites
 
+Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Recuperação das imagens/histórico/observações aguardamQ2; nenhuma dessas capacidades foi implementada por alterar o escopo.
+
 APK Android **debug 0.3.0+13**, API Go **0.5.1 / 25 operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
 
-Faltam configuração persistida, treino/agenda/execução, delegação do cuidador, captura/reconhecimento por foto, quatro idiomas completos e validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
+Faltam configuração persistida, treino/agenda/execução, contexto de pausa do cuidador, captura/reconhecimento por foto, quatro idiomas completos e validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
 
 | Ponto | Implementado | Falta para o aceite integral |
 |---|---|---|

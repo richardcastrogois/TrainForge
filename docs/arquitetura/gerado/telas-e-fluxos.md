@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `2b685de841e57e3e`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `50011d3da7ee48f6`.
 
 ## Atual: referências entre widgets
 
