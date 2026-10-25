@@ -33,5 +33,26 @@ import UIKit
         result(FlutterMethodNotImplemented)
       }
     }
+    let localeChannel = FlutterMethodChannel(
+      name: "trainforge/locale",
+      binaryMessenger: engineBridge.applicationRegistrar.messenger()
+    )
+    localeChannel.setMethodCallHandler { call, result in
+      let key = "trainforge.locale.language"
+      switch call.method {
+      case "read":
+        result(UserDefaults.standard.string(forKey: key) ?? "system")
+      case "write":
+        guard let language = call.arguments as? String,
+              ["system", "pt-BR", "pt-PT", "en", "es"].contains(language) else {
+          result(FlutterError(code: "invalid_locale", message: "Unsupported locale", details: nil))
+          return
+        }
+        UserDefaults.standard.set(language, forKey: key)
+        result(nil)
+      default:
+        result(FlutterMethodNotImplemented)
+      }
+    }
   }
 }

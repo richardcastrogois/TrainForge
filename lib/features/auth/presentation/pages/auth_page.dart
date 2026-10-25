@@ -1,3 +1,6 @@
+import 'package:trainforge/core/l10n/feedback_localization.dart';
+import 'package:trainforge/core/l10n/language_page.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
@@ -29,17 +32,17 @@ class AuthPage extends StatelessWidget {
                 FigmaHeader(),
                 Expanded(
                   child: FigmaContent(
-                    title: 'Que bom ter-te por cá.',
-                    subtitle: 'Entra para continuar a tua rotina.',
+                    title: context.l10n.welcome,
+                    subtitle: context.l10n.welcomeHint,
                     children: [
                       if (controller.busy)
-                        const AppProgress(
-                          label: 'Aguardando confirmação do Google',
-                        ),
+                        AppProgress(label: context.l10n.waitingGoogle),
                       OutlinedButton(
                         onPressed: controller.busy ? null : controller.login,
                         child: Text(
-                          controller.busy ? 'Conectando…' : 'Entrar com Google',
+                          controller.busy
+                              ? context.l10n.connecting
+                              : context.l10n.signInGoogle,
                         ),
                       ),
                       Material(
@@ -54,7 +57,7 @@ class AuthPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Ainda não tens conta?',
+                                  context.l10n.noAccount,
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w700,
@@ -63,7 +66,7 @@ class AuthPage extends StatelessWidget {
                                 ),
                                 SizedBox(height: 4),
                                 Text(
-                                  'Criar conta com Google',
+                                  context.l10n.createGoogle,
                                   style: TextStyle(
                                     fontSize: 12,
                                     color: context.tf.cardMuted,
@@ -76,7 +79,7 @@ class AuthPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Neste incremento, o acesso é por Google. E-mail e Apple ainda não estão disponíveis.',
+                        context.l10n.googleOnly,
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -86,14 +89,14 @@ class AuthPage extends StatelessWidget {
                       if (controller.message != null) ...[
                         Semantics(
                           liveRegion: true,
-                          child: Text(controller.message!),
+                          child: Text(controller.feedback!.localized(context)),
                         ),
                         if (controller.failedAction != null)
                           TextButton(
                             onPressed: controller.busy
                                 ? null
                                 : controller.retry,
-                            child: Text('Tentar novamente'),
+                            child: Text(context.l10n.retry),
                           ),
                       ],
                       TextButton(
@@ -103,10 +106,10 @@ class AuthPage extends StatelessWidget {
                                 context,
                                 EvaluationTopic.firstAccess,
                               ),
-                        child: const Text('Primeiro acesso e configuração'),
+                        child: Text(context.l10n.firstAccess),
                       ),
                       Text(
-                        'Explorar antes de entrar',
+                        context.l10n.exploreFirst,
                         style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.w700,
@@ -122,7 +125,7 @@ class AuthPage extends StatelessWidget {
                                   builder: (_) => CatalogPage(),
                                 ),
                               ),
-                        child: Text('Consultar biblioteca sem entrar'),
+                        child: Text(context.l10n.publicCatalog),
                       ),
                       OutlinedButton(
                         onPressed: controller.busy
@@ -131,9 +134,7 @@ class AuthPage extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(builder: (_) => FoodPage()),
                               ),
-                        child: Text(
-                          'Consultar alimentos sem registrar consumo',
-                        ),
+                        child: Text(context.l10n.publicFood),
                       ),
                       TextButton(
                         onPressed: controller.busy
@@ -144,7 +145,18 @@ class AuthPage extends StatelessWidget {
                                   builder: (_) => const AppearancePage(),
                                 ),
                               ),
-                        child: const Text('Aparência'),
+                        child: Text(context.l10n.appearance),
+                      ),
+                      TextButton(
+                        onPressed: controller.busy
+                            ? null
+                            : () => Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const LanguagePage(),
+                                ),
+                              ),
+                        child: Text(context.l10n.language),
                       ),
                       TextButton(
                         onPressed: controller.busy
@@ -155,7 +167,7 @@ class AuthPage extends StatelessWidget {
                                   builder: (_) => PrivacyPage(),
                                 ),
                               ),
-                        child: Text('Privacidade e dados'),
+                        child: Text(context.l10n.privacy),
                       ),
                     ],
                   ),

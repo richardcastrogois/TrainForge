@@ -16,6 +16,22 @@ class NativeAppearanceStore implements AppearanceStore {
   Future<void> write(String mode) => channel.invokeMethod<void>('write', mode);
 }
 
+enum AppearanceFeedback {
+  appearanceInvalid(
+    "A preferência anterior não pôde ser usada. O tema segue o aparelho.",
+  ),
+  appearanceReadFailed(
+    "Não foi possível ler a aparência salva. O tema segue o aparelho.",
+  ),
+  appearanceSaveUncertain(
+    "A aparência foi aplicada, mas a gravação não foi confirmada. Tente novamente.",
+  ),
+  appearanceSaveFailed("Não foi possível salvar a aparência. Tente novamente.");
+
+  final String fallback;
+  const AppearanceFeedback(this.fallback);
+}
+
 class AppearanceController extends ChangeNotifier {
   final AppearanceStore store;
   final Duration restoreTimeout;
@@ -25,7 +41,8 @@ class AppearanceController extends ChangeNotifier {
   }) : store = store ?? NativeAppearanceStore();
   ThemeMode mode = ThemeMode.system;
   bool loaded = false, saving = false, _disposed = false;
-  String? message;
+  AppearanceFeedback? feedback;
+  String? get message => feedback?.fallback;
   Future<void>? _restore;
   Future<void> restore() => _restore ??= _load();
   Future<void> _load() async {
@@ -38,13 +55,11 @@ class AppearanceController extends ChangeNotifier {
         _ => ThemeMode.system,
       };
       if (saved != null && !{'system', 'light', 'dark'}.contains(saved)) {
-        message =
-            'A preferência anterior não pôde ser usada. O tema segue o aparelho.';
+        feedback = AppearanceFeedback.appearanceInvalid;
       }
     } catch (_) {
       if (!_disposed) {
-        message =
-            'Não foi possível ler a aparência salva. O tema segue o aparelho.';
+        feedback = AppearanceFeedback.appearanceReadFailed;
       }
     } finally {
       if (!_disposed) {
@@ -55,24 +70,23 @@ class AppearanceController extends ChangeNotifier {
   }
 
   Future<void> select(ThemeMode next) async {
-    if (_disposed || !loaded || saving || (next == mode && message == null)) {
+    if (_disposed || !loaded || saving || (next == mode && feedback == null)) {
       return;
     }
     final previous = mode;
     mode = next;
     saving = true;
-    message = null;
+    feedback = null;
     notifyListeners();
     try {
       await store.write(next.name).timeout(restoreTimeout);
     } on TimeoutException catch (_) {
       if (_disposed) return;
-      message =
-          'A aparência foi aplicada, mas a gravação não foi confirmada. Tente novamente.';
+      feedback = AppearanceFeedback.appearanceSaveUncertain;
     } catch (_) {
       if (_disposed) return;
       mode = previous;
-      message = 'Não foi possível salvar a aparência. Tente novamente.';
+      feedback = AppearanceFeedback.appearanceSaveFailed;
     } finally {
       if (!_disposed) {
         saving = false;

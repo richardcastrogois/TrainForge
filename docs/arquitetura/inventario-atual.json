@@ -1,18 +1,22 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "4e427778df9aaff948d161c75f717b70852319eeace8ae4fa7d1e92a4b338ea0",
+  "inputRevision": "e1cc4ec2b6909a8a33770d6462d06b4bc4573e1a6cbe135d6533c2e044ed1f9f",
   "inputs": {
-    "lib/app.dart": "0caae0bf26a1c9efee733856e0e3a3a85a9f01b9498f56b800841b33e15b5a84",
+    "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
     "lib/composition/production_dependencies.dart": "8692241088a1eb0745e3684dfd2feb200b554f26f90631fa4912328a4cbcbcd9",
     "lib/core/config/app_config.dart": "c0b07f2c9b0790ffbcfcda80d48945d1f4daadc3c61838f30aba3d823502638c",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
+    "lib/core/l10n/feedback_localization.dart": "2feac32ad62a7b436bf9afed74c71d3fd2bee6e901f3cd65be9bb47f2b279f85",
+    "lib/core/l10n/language_page.dart": "8254aa297f9f506cd7588afe585be5f4bf26759372aa0184065ed771203441f2",
+    "lib/core/l10n/locale_controller.dart": "f30c2cad8cbc3bcd15c2603654abf0bcc506d4eed37e6299e1a46599b180282f",
+    "lib/core/l10n/localized_context.dart": "42a59b7b6a5e3fd5a511b267f6467c3b97e7c529746dd0d3e17971641b5e1fbc",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
     "lib/core/motion/app_motion.dart": "925e67cc9cec4cabd756f361b29fb85a47c3ad21085976b51e3dc16ffb9715f3",
     "lib/core/scroll/trainforge_scroll_behavior.dart": "5161f121bdd1a0b467c4df0bc550731e98843945acc8bd65b32d676d79d431de",
-    "lib/core/theme/appearance_controller.dart": "9a0b9230c8978a4018d90c31b1132d678e56bbd754ed8cf5e4342dcc448cf00f",
-    "lib/core/theme/appearance_page.dart": "2795d108896721663118dca7509c1c2b6a3d5c5337e743d13066e8ee0d252493",
+    "lib/core/theme/appearance_controller.dart": "19bd28fad2f9fe6903fd8c4ea882fa76e6caec2b35748c03507d5bc301b81dd9",
+    "lib/core/theme/appearance_page.dart": "8d5658ceca464c7ef4a2f87fc8d7e61dae125927a73aeeffb3c7d4e8da6924e0",
     "lib/core/theme/trainforge_colors.dart": "4244b42ff45116d85f37c3c2547082878926ff7c6506d59924f023db04f91219",
     "lib/core/theme/trainforge_theme.dart": "d606dffc059040c6e2d89663fa137b3f7dc2aba24fe23af7222898f415a82afb",
     "lib/features/auth/data/auth_api.dart": "4e3775e3adfa57804907e943cceb0b4992df04fdaaf65465cdcf66824e40fad0",
@@ -21,8 +25,8 @@
     "lib/features/auth/data/session_refresh.dart": "3253f0e08bf455206f88a70488be00796811eff0832a82d92b1e35693bb3a1cc",
     "lib/features/auth/domain/auth_profile.dart": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
-    "lib/features/auth/presentation/auth_controller.dart": "22da0d9779d33972d3badce9be66db14ead2b8e4b17f58b3bf772748625bc61d",
-    "lib/features/auth/presentation/pages/auth_page.dart": "dc6f13191f7d8cc946bf7f299ffcf262b48e4bcba778d8f324f67afddcd2fa7e",
+    "lib/features/auth/presentation/auth_controller.dart": "50d4d6970bf9bcb272a2098842ec27d8fa7df3febf5739964f9374b582363219",
+    "lib/features/auth/presentation/pages/auth_page.dart": "ee0d3fc5d643d04d9fa23d2852df7cac266f32167c1f7d12f37622d1022e3dbc",
     "lib/features/bootstrap/data/bootstrap_api.dart": "4505633f5c0d752c59a0459944f757c9f6388bdf0818a8f699b5570bfb8096a7",
     "lib/features/bootstrap/data/bootstrap_repository.dart": "96dc3f3e64695688209b08b33e22b2b970154a3ce12ed85133bbfb9b82f562a0",
     "lib/features/bootstrap/domain/bootstrap_data.dart": "94c54cad4a2ee887f2f38c429909149de9c11c0e66c9e60155cc5989f055d57f",
@@ -75,20 +79,24 @@
     "lib/features/workouts/presentation/pages/workout_day_page.dart": "404b0b9a1cc1058da7b92fc7bd2e8ca3b260336a9a1bbb7d2f9ca3ceb26b03aa",
     "lib/features/workouts/presentation/pages/workout_plan_page.dart": "1094bef3cc0c4d4553ffc30eded6a3cf6c093202468e7c25e8e56de1007e8f30",
     "lib/features/workouts/presentation/pages/workouts_page.dart": "e3e72e390f4925e929a13b3aa66e0e70add6bf2a4c3844c770c323ac548cb73e",
+    "lib/l10n/generated/app_localizations.dart": "c1f9a7d03f599b4d3a1bc443b258e7df2d1a7b1c797d86e470e530ce71ce992e",
+    "lib/l10n/generated/app_localizations_en.dart": "09f7d123af847428e194b861a1a8a6f21d71f15d94cd9938fe0dea8dce6cfdb4",
+    "lib/l10n/generated/app_localizations_es.dart": "e4f19cd324602a78001e99ff7005b3a4d4eb23c61fde970df8a2440a7729f305",
+    "lib/l10n/generated/app_localizations_pt.dart": "6c2e5a3d283be502c61f3e36d4a58b6aa221374b28704abafbbab7de261273c5",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
-    "lib/shared/widgets/account_page.dart": "f491d795ff7b80eb9ce72ceca003fc58ee092d1c551583bf18beb3fa27a451ec",
+    "lib/shared/widgets/account_page.dart": "f683c99bb5e1294c70c606007cd6109e7e206bbd1ce9d11a72914a2ad1c4e2a6",
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
-    "lib/shared/widgets/auth_gate.dart": "6ee91eadaa0b32761084e58e0752be7bb237a7f51f27bb141995ff8d7ac89cad",
+    "lib/shared/widgets/auth_gate.dart": "7b9ab00076f06be804b147e1d6baa01860cc001d36b46d4320bc5ad97d52ed39",
     "lib/shared/widgets/draft_guard.dart": "16d3ce0eb1df8a5c6eb0fa06754e13fbb00f5708e90030c91033c4f3555ded57",
     "lib/shared/widgets/evaluation_guide_page.dart": "815c5d51926f6fc8e97b3d59fa392c5e09c50ec82c9c819be982165815e543b0",
-    "lib/shared/widgets/figma_bottom_nav.dart": "c7000d1873409b2ba92afc840c3f08aa55de0451a41673bf8334eac7d6f446b0",
-    "lib/shared/widgets/figma_components.dart": "5dbd274284883446d6367d71d26f2ae9e3c3c5d3baab26b947a1ee2456add70e",
+    "lib/shared/widgets/figma_bottom_nav.dart": "2dae71a63f9b01be7e39ad6828d0eacd1f75ed149e8b2fc5ba89606c96bf387b",
+    "lib/shared/widgets/figma_components.dart": "c6e9b3e35bc204f869574e354d1ebc06613cb62e049f1775315194c1010ce7eb",
     "lib/shared/widgets/flow_components.dart": "1bb465dda5bdca775c79b318aca1712051d40f9480bf964a7a84dd1d45d09978",
     "lib/shared/widgets/plans_overview.dart": "3eb9eb07c63bc4652113972d1fd1393728e7c4a8b991a43ee989571a205adbe2",
     "lib/shared/widgets/product_overviews.dart": "764bbad32432507291a04e5c9de3a77f294d0d9ccf6271dd76e6949f1b480580",
-    "lib/shared/widgets/product_shell.dart": "2729713bf92d95c70fddfbbac5fb16785719ca3ae908d0b254a23cb18ee93d3d",
+    "lib/shared/widgets/product_shell.dart": "3aaaca2cd5281cd9cb83811c9e6fd02e45a9175abb5be065b2048080d26e223d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
     "services/api/cmd/api/main.go": "1c05fcbc20b3de090a0f441904ce5f952f3af4c760ec59644af2643fe64ae3ac",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
@@ -143,13 +151,13 @@
     "contracts/generated/swagger-v1.json": "f6745bbfa4ef370af2c5e360e7f7acecbf359e44a8c06fd95e6c50d5883955f6",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "ac035d691c4aa9d322ac9ec705b1a183d4a11c92f96ce00f855367edab5081b1",
+    "docs/execucao/v1/backlog.json": "80b780333a2db333e3823f3e67b72b116aa0d6c89392996599160b402d07e0c9",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
-    "tools/avaliar_android.py": "8dcd54a8266284d1a7e88302f38364c665a31aef247695e3185887735766af84",
+    "tools/avaliar_android.py": "c74da8368f088e70a30ca4e847d80e5ce2a43f97f71e4366889965ca72ba6202",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
     "tools/db_local.py": "2965d8133b358e4da8b5d3840200668e71be859c88f6184215b3ff98be331669",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
@@ -168,7 +176,7 @@
     "tools/revisar_alimentos_v1.py": "3f1c34c48c94cd38ccd9bba7133fb7b4c67c0054040bcadc0356ae3839612f91",
     "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
     "tools/test_alimentos_lote.py": "eaba7be2f68b933e1c3887f3dcd553791090ff1f04cbfc56cf8f0ebaf5a36640",
-    "tools/test_avaliar_android.py": "359e87508acdaaa20a29a36743f3d3c6637bfcf62175f1bbcab2a9d0dd675db9",
+    "tools/test_avaliar_android.py": "926ae515142d28eb771b37895bc86c7fcea2a29a1bf00532b639a54c34c96b6b",
     "tools/test_conteudo_editorial.py": "e450dcef916d852e5e490b7188b2b06b6f83082e8ea2bdd97fb972de550d8a10",
     "tools/test_documentacao.py": "0d329bf5f6c05c7ff97e79d8930f442ad263bfb78e5f781ef4f41e86a9fcd804",
     "tools/test_identidade_nativa.py": "9311f6da366c082af29f4aae5d0b09fc84e7feb71253fb7bd22af3e281bcdac6",
@@ -191,7 +199,7 @@
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
   },
   "coverage": {
-    "dartFiles": 88,
+    "dartFiles": 96,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
@@ -914,7 +922,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/auth_gate.dart",
-          "line": 3
+          "line": 4
         },
         {
           "repository": "trainforge",
@@ -924,7 +932,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/product_shell.dart",
-          "line": 8
+          "line": 10
         }
       ]
     },
@@ -1022,11 +1030,19 @@
   ],
   "screens": [
     {
+      "id": "LanguagePage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/core/l10n/language_page.dart",
+        "line": 6
+      }
+    },
+    {
       "id": "AppearancePage",
       "source": {
         "repository": "trainforge",
         "path": "lib/core/theme/appearance_page.dart",
-        "line": 5
+        "line": 7
       }
     },
     {
@@ -1034,7 +1050,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 13
+        "line": 16
       }
     },
     {
@@ -1194,7 +1210,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 11
+        "line": 14
       }
     },
     {
@@ -1210,7 +1226,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 10
+        "line": 11
       }
     },
     {
@@ -1226,7 +1242,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 17
+        "line": 19
       }
     },
     {
@@ -1241,11 +1257,20 @@
   "navigation": [
     {
       "from": "AuthPage",
+      "to": "LanguagePage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
+        "line": 156
+      }
+    },
+    {
+      "from": "AuthPage",
       "to": "AppearancePage",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 144
+        "line": 145
       }
     },
     {
@@ -1254,7 +1279,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 122
+        "line": 125
       }
     },
     {
@@ -1263,7 +1288,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 132
+        "line": 135
       }
     },
     {
@@ -1272,7 +1297,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 155
+        "line": 167
       }
     },
     {
@@ -1281,7 +1306,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 20
+        "line": 23
       }
     },
     {
@@ -1529,11 +1554,20 @@
     },
     {
       "from": "AccountPage",
+      "to": "LanguagePage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/account_page.dart",
+        "line": 164
+      }
+    },
+    {
+      "from": "AccountPage",
       "to": "AppearancePage",
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 149
+        "line": 152
       }
     },
     {
@@ -1542,7 +1576,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 17
+        "line": 20
       }
     },
     {
@@ -1587,7 +1621,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 64
+        "line": 65
       }
     },
     {
@@ -1596,7 +1630,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 69
+        "line": 70
       }
     },
     {
@@ -1605,7 +1639,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 59
+        "line": 60
       }
     },
     {
@@ -1632,7 +1666,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 99
+        "line": 101
       }
     },
     {
@@ -1641,7 +1675,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 83
+        "line": 85
       }
     },
     {
@@ -1650,7 +1684,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 171
+        "line": 173
       }
     }
   ],

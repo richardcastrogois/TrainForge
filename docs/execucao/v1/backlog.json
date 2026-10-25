@@ -2514,7 +2514,7 @@
           "id": "V1-048",
           "title": "Localizar interface e nomes alimentares com revisão",
           "userStory": "Como usuário, quero usar a interface em meu idioma e entender nomes alimentares traduzidos quando revisados, conservando o original e a fonte.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -2589,11 +2589,13 @@
             "Busca/apresentação com original/fonte e fallback",
             "Recibo de cobertura, integridade e aceite"
           ],
-          "handoff": "25/10:Q5 escolheu etapas curtas/revisão na047 e nome traduzido quando revisado, original/fonte nos detalhes e fallback original. Quatro idiomas já eram exigência do autor; esta história explicita a implementação ausente, distinta da validação027. Atual FoodReference apenas compacta espaços do original; importador recusa namePt preenchido. Não houve tradução publicada, contrato/migration ou código novo.",
+          "handoff": "25/10:infraestrutura oficialFlutter, escolha persistida no aparelho e79mensagens de entrada/perfil/aparência/navegação/feedback implementadas nos quatro idiomas.119testesFlutter/analyze0issues;7testesAndroidhelper eAPKdebug0.3.1+14 compilado/assinatura verificada, ainda não instalado. Continua doing:demais telas/plurais/formatos, camada de nomes ealiases revisados, busca/idioma/versões e aceitesAndroid/iOS pendentes. API atual rejeita querylocale:alinhar contrato Go antes de enviar parâmetro peloFlutter. Fontes/import/hash/nutrientes/consumos intactos; nenhuma tradução alimentar publicada porIA.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/frontend-localization-verification.json",
+            "docs/execucao/v1/android-localization-checkpoint.json"
           ]
         },
         {
@@ -3610,5 +3612,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10:V1-021encerrada no recorte de composição/configuração/estado com108testesFlutter/analyze0issues. Próxima048, pronta por020/021:localização e nomes revisados. Q1–Q6 registrados; master049todo, sem privilégio provisionado. PreservarAPK/dados reais e gates de conteúdo/aceite, sem hospedagem ou gerador de treino."
+  "currentPriority": "25/10:V1-048doing. Fundação de idiomas e79mensagens pronta;119testesFlutter/analyze0issues, APK0.3.1+14 preparado e não instalado. Continuar nas demais telas/plurais e camada de nomes revisados/busca, respeitando contrato Go e os gates de revisão/aceite.021encerrada; não avançar de história nem alegar localização completa. Preservar dados reais e escolhasQ1–Q6, sem hospedagem ou integração paga."
 }

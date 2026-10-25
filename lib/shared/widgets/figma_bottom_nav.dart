@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -11,6 +12,13 @@ enum TrainForgeDestination {
 
   final String label, asset;
   const TrainForgeDestination(this.label, this.asset);
+  String localizedLabel(BuildContext context) => switch (this) {
+    today => context.l10n.today,
+    plans => context.l10n.plans,
+    activity => context.l10n.activity,
+    food => context.l10n.diary,
+    evolution => context.l10n.evolution,
+  };
 }
 
 /// Current Figma v0.5 navigation, with original SVG root geometry.
@@ -52,11 +60,11 @@ class FigmaBottomNav extends StatelessWidget {
                   SizedBox(
                     width: width,
                     child: Semantics(
-                      label: destination.label,
+                      label: destination.localizedLabel(context),
                       button: true,
                       selected: destination == selected,
                       child: Tooltip(
-                        message: destination.label,
+                        message: destination.localizedLabel(context),
                         child: Material(
                           color: destination == selected
                               ? (Theme.of(context).brightness == Brightness.dark

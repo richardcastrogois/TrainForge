@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'startup_page.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
@@ -56,7 +57,7 @@ class _AuthGateState extends State<AuthGate> {
     builder: (context, _) {
       final profile = controller.profile;
       if (controller.busy && profile == null) {
-        return const StartupPage(label: 'Confirmando sua sessão');
+        return StartupPage(label: context.l10n.restoringSession);
       }
       if (profile == null) {
         return AppAppear(

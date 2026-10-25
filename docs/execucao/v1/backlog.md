@@ -1124,7 +1124,7 @@ Handoff: 25/10:Q4 aprovou registrar offline e sincronizar depois. Pendência atu
 
 ### V1-048 — Localizar interface e nomes alimentares com revisão
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero usar a interface em meu idioma e entender nomes alimentares traduzidos quando revisados, conservando o original e a fonte.
 
@@ -1162,7 +1162,7 @@ Validação: Testes Go/SQL/Flutter do vínculo/alias/fallback e integridade dos 
 
 Entregas: Estrutura e textos de UI pt-BR/pt-PT/en/es; Contrato/modelo de nomes e aliases revisados; Busca/apresentação com original/fonte e fallback; Recibo de cobertura, integridade e aceite
 
-Handoff: 25/10:Q5 escolheu etapas curtas/revisão na047 e nome traduzido quando revisado, original/fonte nos detalhes e fallback original. Quatro idiomas já eram exigência do autor; esta história explicita a implementação ausente, distinta da validação027. Atual FoodReference apenas compacta espaços do original; importador recusa namePt preenchido. Não houve tradução publicada, contrato/migration ou código novo.
+Handoff: 25/10:infraestrutura oficialFlutter, escolha persistida no aparelho e79mensagens de entrada/perfil/aparência/navegação/feedback implementadas nos quatro idiomas.119testesFlutter/analyze0issues;7testesAndroidhelper eAPKdebug0.3.1+14 compilado/assinatura verificada, ainda não instalado. Continua doing:demais telas/plurais/formatos, camada de nomes ealiases revisados, busca/idioma/versões e aceitesAndroid/iOS pendentes. API atual rejeita querylocale:alinhar contrato Go antes de enviar parâmetro peloFlutter. Fontes/import/hash/nutrientes/consumos intactos; nenhuma tradução alimentar publicada porIA.
 
 ### V1-027 — Validar acessibilidade e paridade de contratos Android/iOS
 

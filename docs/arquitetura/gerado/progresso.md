@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4e427778df9aaff9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e1cc4ec2b6909a8a`.
 
 **17/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-048**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -254,7 +254,7 @@ flowchart LR
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |
 | V1-025 | todo | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021, V1-048 |
 | V1-026 | todo | Tratar offline e sincronização sem fingir sucesso | V1-023, V1-025 |
-| V1-048 | todo | Localizar interface e nomes alimentares com revisão | V1-020, V1-021 |
+| V1-048 | doing | Localizar interface e nomes alimentares com revisão | V1-020, V1-021 |
 | V1-027 | todo | Validar acessibilidade e paridade de contratos Android/iOS | V1-022, V1-024, V1-025, V1-048 |
 ### EP08 — Segurança, desempenho e observabilidade
 

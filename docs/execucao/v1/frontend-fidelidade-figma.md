@@ -25,6 +25,14 @@ Faltam configuração completa persistida (047), treino/agenda/execução com tr
 | 11 · Perfil/privacidade | Identidade real, aparência, política da API, exportação/exclusão e ajuda | Edição persistida de campos aprovados, idioma/unidades, feedback e termos de distribuição |
 | 12 · Acabamento | Teclado, rolagem, voltar/cancelar, foco no erro, escala2x/largura320 e alvos de toque em recortes | Jornadas completas, referências faltantes, acessibilidade humana e execução nativa iOS |
 
+## Localização em andamento — V1-048
+
+Fundação em25/10:recursos ARB e classes tipadas, quatro localidades selecionáveis, seguir aparelho e preferência local separada de credenciais. Entrada/perfil/aparência/navegação e seus feedbacks têm79mensagens por idioma. Calendários e controles podem usar os delegates oficiaisFlutter. [Recibo e limites](frontend-localization-verification.json); [APK0.3.1+14 preparado](android-localization-checkpoint.json), ainda não instalado.
+
+Troca de idioma mantém conta/aba; recursos de data/hora/decimal foram testados sem converter os valores exatos da API emfloat.79mensagens traduzidas não são79% nem100% do app. Faltam outras famílias, plurais/formatos, nomes/aliases alimentares revisados e integração Go/SQL/cliente com versão/revisão e aceites próprios. A tela de idioma avisa que a tradução das demais telas continua em implementação. Fontes, nomes e preparos originais não são traduzidos automaticamente. iOS não executado nativamente.
+
+Fonte técnica:[localizaçãoFlutter](https://docs.flutter.dev/ui/internationalization), conferida25/10; mantidos o framework, os tokens e os componentes vigentes, sem migração de sistema visual ou nova leituraFigma.8prévias locais deIdioma nos quatro idiomas/claro/dark; testes de320px/texto2x e119testes gerais aprovados, analyze0issues. APKinstalado anterior preservado porque inspeção não identificou raiz segura para atualizar.
+
 ## Referência Figma e decisões aprovadas
 
 Arquivo [TrainForge](https://www.figma.com/design/bX6YjBBLIJgoo2MtiFLntl), página **0:1 · 01 · Produto interativo · v0.5**. Páginas126:2 e141:2 são arquivo. [Inventário por nó](frontend-figma-inventory.json):401quadros de primeiro nível/398comlargura390, incluindo variantes/estados/rascunhos; não são398funcionalidades. Não reaplicar geradoresv0.4.

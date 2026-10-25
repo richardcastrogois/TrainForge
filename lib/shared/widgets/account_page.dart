@@ -1,3 +1,6 @@
+import 'package:trainforge/core/l10n/feedback_localization.dart';
+import 'package:trainforge/core/l10n/language_page.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -51,12 +54,12 @@ class AccountPage extends StatelessWidget {
                       children: [
                         FigmaBack(),
                         Text(
-                          'O teu espaço.',
+                          context.l10n.yourSpace,
                           style: Theme.of(context).textTheme.headlineLarge,
                         ),
                         SizedBox(height: 12),
                         Text(
-                          'Conta conectada',
+                          context.l10n.connected,
                           style: TextStyle(
                             fontSize: 12,
                             color: context.tf.muted,
@@ -120,8 +123,8 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Conta e dados pessoais',
-                          subtitle: 'Identidade Google, exportação e exclusão',
+                          title: context.l10n.accountData,
+                          subtitle: context.l10n.identityHint,
                           asset: 'user',
                           onTap: () => openEvaluationGuide(
                             context,
@@ -130,8 +133,8 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Objetivos e rotina',
-                          subtitle: 'Equipamento, dias e modalidades',
+                          title: context.l10n.goalsRoutine,
+                          subtitle: context.l10n.equipmentDays,
                           asset: 'plan',
                           onTap: () => openEvaluationGuide(
                             context,
@@ -140,8 +143,8 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Preferências',
-                          subtitle: 'Aparência e acessibilidade do aparelho',
+                          title: context.l10n.preferences,
+                          subtitle: context.l10n.preferenceHint,
                           asset: 'settings',
                           onTap: () => Navigator.push<void>(
                             context,
@@ -152,8 +155,20 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Dispositivos e permissões',
-                          subtitle: 'Health Connect, localização e câmara',
+                          title: context.l10n.language,
+                          subtitle: context.l10n.languageNames,
+                          asset: 'settings',
+                          onTap: () => Navigator.push<void>(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const LanguagePage(),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        FigmaActionCard(
+                          title: context.l10n.devicesPermissions,
+                          subtitle: context.l10n.devicesHint,
                           asset: 'activity',
                           color: context.tf.blue,
                           onTap: () => openEvaluationGuide(
@@ -163,16 +178,16 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Privacidade e dados',
-                          subtitle: 'Exportação, exclusão e política efetiva',
+                          title: context.l10n.privacy,
+                          subtitle: context.l10n.privacyHint,
                           asset: 'heart',
                           color: context.tf.soft,
                           onTap: () => privacy(context),
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: 'Ajuda e condições da avaliação',
-                          subtitle: 'Dúvidas, origem e recursos disponíveis',
+                          title: context.l10n.helpEvaluation,
+                          subtitle: context.l10n.helpHint,
                           asset: 'plan',
                           onTap: () => openEvaluationGuide(
                             context,
@@ -181,29 +196,31 @@ class AccountPage extends StatelessWidget {
                         ),
                         const SizedBox(height: 12),
                         if (controller.busy)
-                          AppProgress(label: 'Confirmando sessão'),
+                          AppProgress(label: context.l10n.confirmingSession),
                         if (controller.message != null) ...[
                           Semantics(
                             liveRegion: true,
-                            child: Text(controller.message!),
+                            child: Text(
+                              controller.feedback!.localized(context),
+                            ),
                           ),
                           TextButton(
                             onPressed: controller.busy
                                 ? null
                                 : controller.retry,
-                            child: Text('Tentar novamente'),
+                            child: Text(context.l10n.retry),
                           ),
                         ],
                         OutlinedButton(
                           onPressed: controller.busy
                               ? null
                               : controller.restore,
-                          child: Text('Confirmar conexão'),
+                          child: Text(context.l10n.confirmConnection),
                         ),
                         SizedBox(height: 12),
                         FilledButton(
                           onPressed: controller.busy ? null : controller.logout,
-                          child: Text('Sair desta sessão'),
+                          child: Text(context.l10n.signOut),
                         ),
                       ],
                     ),

@@ -61,5 +61,26 @@ class AndroidEvaluationSafetyTest(unittest.TestCase):
         for rules in [legacy,current.find("cloud-backup"),current.find("device-transfer"),current.find("cross-platform-transfer")]:
             excluded={e.get("domain") for e in rules.findall("exclude") if e.get("path")=="."}
             self.assertTrue({"root","file","database","sharedpref","device_sharedpref"}.issubset(excluded))
+
+    def test_artifact_fingerprint_includes_locale_resources_and_generation_config(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base=Path(temp)
+            for relative in [
+                "pubspec.yaml","pubspec.lock","android/app/build.gradle.kts",
+                "android/app/src/main/AndroidManifest.xml","android/app/src/debug/AndroidManifest.xml",
+                "lib/l10n/app_en.arb","l10n.yaml",
+            ]:
+                target=base/relative
+                target.parent.mkdir(parents=True,exist_ok=True)
+                target.write_text("isolated",encoding="utf-8")
+            with patch.object(android,"ROOT",base):
+                before=android.source_fingerprint()
+                (base/"lib/l10n/app_en.arb").write_text("changed message",encoding="utf-8")
+                self.assertNotEqual(before,android.source_fingerprint())
+                (base/"lib/l10n/app_en.arb").write_text("isolated",encoding="utf-8")
+                self.assertEqual(before,android.source_fingerprint())
+                (base/"l10n.yaml").write_text("changed generation config",encoding="utf-8")
+                self.assertNotEqual(before,android.source_fingerprint())
+
 if __name__=="__main__":
     unittest.main()

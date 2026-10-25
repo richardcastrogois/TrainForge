@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/locale_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trainforge/app.dart';
@@ -80,6 +81,18 @@ class ObservedNutrition extends FakeNutrition {
 }
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  setUp(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(
+          NativeLocaleStore.channel,
+          (call) async => call.method == 'read' ? 'pt-BR' : null,
+        );
+  });
+  tearDown(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(NativeLocaleStore.channel, null);
+  });
   testWidgets(
     'public routes use injected services lazily and theme changes retain session',
     (tester) async {

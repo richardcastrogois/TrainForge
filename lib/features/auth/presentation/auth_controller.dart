@@ -5,6 +5,38 @@ import '../domain/auth_profile.dart';
 
 enum AuthAction { restore, login, logout }
 
+enum AuthFeedback {
+  sessionTimeout(
+    "A confirmação da sessão demorou mais que o esperado. Sua sessão foi preservada; tente novamente ou consulte a biblioteca sem entrar.",
+  ),
+  googleConfiguration(
+    "O login Google não está configurado neste ambiente. Confira o roteiro de avaliação.",
+  ),
+  authConfiguration(
+    "O ambiente de autenticação precisa de configuração. Confira o roteiro de avaliação.",
+  ),
+  sessionExpired(
+    "A sessão expirou ou foi revogada. Entre novamente com Google.",
+  ),
+  rateLimited("Muitas tentativas. Aguarde um minuto e tente novamente."),
+  authUnavailable(
+    "O serviço de autenticação está indisponível. Tente novamente mais tarde.",
+  ),
+  signOutUnconfirmed(
+    "A saída não foi confirmada. Conecte-se e tente sair novamente.",
+  ),
+  signInFailed(
+    "Não foi possível entrar. Confira sua conexão e tente novamente.",
+  ),
+  sessionOffline(
+    "Não foi possível confirmar a conexão. Sua sessão foi preservada; tente novamente.",
+  ),
+  actionFailed("Não foi possível concluir esta ação. Tente novamente.");
+
+  final String fallback;
+  const AuthFeedback(this.fallback);
+}
+
 class AuthController extends ChangeNotifier {
   final SessionRepository repository;
   final Duration restoreTimeout;
@@ -14,7 +46,8 @@ class AuthController extends ChangeNotifier {
   });
   AuthProfile? profile;
   bool busy = false;
-  String? message;
+  AuthFeedback? feedback;
+  String? get message => feedback?.fallback;
   AuthAction? failedAction;
   bool _disposed = false;
   String? _erasedAccountId;
@@ -24,7 +57,7 @@ class AuthController extends ChangeNotifier {
     _erasedAccountId = expectedId;
     if (profile?.id == expectedId) {
       profile = null;
-      message = null;
+      feedback = null;
       failedAction = null;
     }
     notifyListeners();
@@ -38,7 +71,7 @@ class AuthController extends ChangeNotifier {
   Future<void> _run(AuthAction action) async {
     if (busy || _disposed) return;
     busy = true;
-    message = null;
+    feedback = null;
     failedAction = null;
     notifyListeners();
     try {
@@ -56,41 +89,37 @@ class AuthController extends ChangeNotifier {
           profile = null;
       }
     } on TimeoutException catch (_) {
-      message =
-          'A confirmação da sessão demorou mais que o esperado. Sua sessão foi preservada; tente novamente ou consulte a biblioteca sem entrar.';
+      feedback = AuthFeedback.sessionTimeout;
       failedAction = AuthAction.restore;
     } on SessionException catch (error) {
       if (error.failure == SessionFailure.configuration) {
-        message =
-            'O login Google não está configurado neste ambiente. Confira o roteiro de avaliação.';
+        feedback = AuthFeedback.googleConfiguration;
         failedAction = action;
       }
       // Cancellation leaves the signed-out screen usable, without treating consent as failure.
     } on StateError catch (_) {
-      message =
-          'O ambiente de autenticação precisa de configuração. Confira o roteiro de avaliação.';
+      feedback = AuthFeedback.authConfiguration;
       failedAction = action;
     } on DioException catch (error) {
       final status = error.response?.statusCode;
       if (status == 401) {
         profile = null;
-        message =
-            'A sessão expirou ou foi revogada. Entre novamente com Google.';
+        feedback = AuthFeedback.sessionExpired;
         failedAction = AuthAction.login;
       } else {
         failedAction = action;
-        message = status == 429
-            ? 'Muitas tentativas. Aguarde um minuto e tente novamente.'
+        feedback = status == 429
+            ? AuthFeedback.rateLimited
             : status == 503
-            ? 'O serviço de autenticação está indisponível. Tente novamente mais tarde.'
+            ? AuthFeedback.authUnavailable
             : action == AuthAction.logout
-            ? 'A saída não foi confirmada. Conecte-se e tente sair novamente.'
+            ? AuthFeedback.signOutUnconfirmed
             : action == AuthAction.login
-            ? 'Não foi possível entrar. Confira sua conexão e tente novamente.'
-            : 'Não foi possível confirmar a conexão. Sua sessão foi preservada; tente novamente.';
+            ? AuthFeedback.signInFailed
+            : AuthFeedback.sessionOffline;
       }
     } catch (_) {
-      message = 'Não foi possível concluir esta ação. Tente novamente.';
+      feedback = AuthFeedback.actionFailed;
       failedAction = action;
     } finally {
       busy = false;

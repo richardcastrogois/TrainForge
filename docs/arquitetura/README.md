@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4e427778df9aaff9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e1cc4ec2b6909a8a`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,7 +8,7 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 88 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 96 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
 | Go neste clone | 40 arquivos Go de aplicação; 26 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |

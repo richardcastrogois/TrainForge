@@ -1,5 +1,8 @@
 # Retomar a avaliação Android
 
+Checkpoint25/10: novo APKdebug **0.3.1+14** compilado e assinatura verificada para a fundação de idiomas048. [Artefato preparado](android-localization-checkpoint.json) e [cobertura parcial](frontend-localization-verification.json). Não instalado pelo agente: a inspeção não identificou raiz segura do emulador e preservou a UI aberta. Último instalado registrado0.3.0+13; não tratar a preparação como atualização já realizada. Continuar048; os demais textos/plurais e nomes revisados ainda faltam.
+
+
 **Checkpoint atual24/10:** Grafite e lima e rolagemAndroid semesticar noAPKdebug0.2.1+12,90testesFlutter/analyze0issues. [Recibo atual](frontend-dark-scroll-verification.json), [ajuste e limites](frontend-fidelidade-figma.md). Preserva conta, consumo e física iOS porplataforma; iOS27 nãoexecutado.
 
 **Checkpoint anterior23/10:** APKdebug0.2.0+11, frontend pontos01–06 implementados tecnicamente: identidade/splash, inicialização, Hoje real, loaders, transições e aparência claro/escuro/sistema persistida.85testesFlutter/analyze0issues. [Recibo](android-frontend-checkpoint.json), [etapa e limites](frontend-fidelidade-figma.md). Direção aberturaTF/dark confirmada peloautor; pontos01–06 concluídos noAndroid, iOS nãoexecutado. Conta/consumo reais preservados, sem novo consentimentoGoogle automatizado. Snapshots e roteiros anteriores abaixo são históricos.

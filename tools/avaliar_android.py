@@ -44,7 +44,8 @@ def output(command,timeout=20):
     return result.stdout.strip()
 
 def source_fingerprint():
-    files=list((ROOT/"lib").rglob("*.dart"))
+    files=[p for p in (ROOT/"lib").rglob("*") if p.is_file() and p.suffix in {".dart", ".arb"}]
+    if (ROOT/"l10n.yaml").is_file():files.append(ROOT/"l10n.yaml")
     files += [p for p in (ROOT/"android/app/src").rglob("*") if p.is_file()]
     files += [p for p in (ROOT/"assets").rglob("*") if p.is_file()]
     files += [ROOT/"pubspec.yaml",ROOT/"pubspec.lock",ROOT/"android/app/build.gradle.kts",

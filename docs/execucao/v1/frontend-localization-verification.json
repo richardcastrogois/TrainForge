@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "story": "V1-048",
+  "status": "partial",
+  "sourceBaseCommit": "36ca046",
+  "scope": "Infraestrutura de idioma, seleção persistida e79mensagens da entrada/perfil/aparência/navegação, incluindo feedback de sessão. Demais telas ainda não migradas.",
+  "locales": [
+    "pt-BR",
+    "pt-PT",
+    "en",
+    "es"
+  ],
+  "resourceKeysPerLocale": 79,
+  "resources": "lib/l10n/app_*.arb; classes geradas por flutter gen-l10n; pt é base interna, somente quatro localidades selecionáveis.",
+  "implementation": [
+    "lib/core/l10n/locale_controller.dart",
+    "lib/core/l10n/language_page.dart",
+    "lib/core/l10n/localized_context.dart",
+    "lib/core/l10n/feedback_localization.dart",
+    "lib/app.dart"
+  ],
+  "checks": [
+    {
+      "command": "flutter gen-l10n",
+      "result": "passed",
+      "missingResourceKeys": 0
+    },
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 119,
+      "failed": 0
+    },
+    {
+      "command": "flutter test --no-pub --dart-define=TF_RENDER_LOCALE=true test/locale_controller_test.dart test/localization_flow_test.dart --reporter expanded",
+      "result": "passed",
+      "passed": 11,
+      "previewImages": 8
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_avaliar_android.py",
+      "result": "passed",
+      "passed": 7
+    },
+    {
+      "command": "python tools/avaliar_android.py prepare",
+      "result": "passed",
+      "apk": "docs/execucao/v1/android-localization-checkpoint.json"
+    }
+  ],
+  "evidence": [
+    "test/locale_controller_test.dart",
+    "test/localization_flow_test.dart",
+    "tools/test_avaliar_android.py"
+  ],
+  "behavior": [
+    "Escolha persistida somente no aparelho; system negocia os idiomas disponíveis e região, com fallback pt-BR.",
+    "Leitura limitada a2s em paralelo à aparência; falha não altera credenciais ou registros.",
+    "Troca de idioma preserva controller de sessão, conta e aba; mensagens controladas não exibem erro bruto.",
+    "Helpers de data/hora e decimal testados nos quatro idiomas; decimal mantém todos os dígitos sem float. Aplicação aos demais fluxos ainda pendente.",
+    "Prévia da tela de idioma em390px nos quatro idiomas/claro/dark, conferida visualmente em en/claro ept-BR/dark; fluxo testado em320px/texto2x.",
+    "Fingerprint do build incluiARB e l10n.yaml; mudança de tradução invalida artefato anterior."
+  ],
+  "limits": [
+    "Interface parcial:Hoje/Planos/Atividade/Evolução,catálogo,alimentação/privacidade/guias/formulários e plurais ainda precisam migrar. A tela de idioma avisa essa cobertura.",
+    "Banco,APIe nomes alimentares não alterados; não existe nova tradução alimentar revisada,alias,busca localizada ou contrato locale nesta entrega. Fallback original preservado.",
+    "APK0.3.1+14 compilado/assinatura conferida; não instalado pelo agente, pois inspeção não identificou uma raiz segura doemulador. Nenhum consumo/exclusão/loginGoogle novo.",
+    "iOS recebeu preferência eCFBundleLocalizations, sem build/execução nativa emWindows.",
+    "Nenhuma contratação, hospedagem, nova pesquisa de fornecedores ou atualização de dependência existente; flutter_localizations SDK eintl0.20.2 ativados por cache offline."
+  ],
+  "graph": {
+    "dartFiles": 96,
+    "nodes": 1699,
+    "edges": 2193,
+    "changed": 18,
+    "unchanged": 78,
+    "deleted": 0,
+    "mode": "AST incremental code-only, sem semântica/clusterização/LLM; ARB não interpretado peloGraphify; HTML exportado."
+  },
+  "references": [
+    {
+      "title": "Internationalizing Flutter apps",
+      "url": "https://docs.flutter.dev/ui/internationalization",
+      "accessedAt": "2026-10-25"
+    }
+  ],
+  "documentation": {
+    "generation": "passed",
+    "testsPassed": 13,
+    "diffCheck": "passed"
+  },
+  "deviceInspection": {
+    "appVisible": true,
+    "knownSafeRoot": false,
+    "editableFieldsVisible": false,
+    "installedByAgent": false,
+    "temporaryTreeRemoved": true,
+    "personalTextPublished": false
+  }
+}

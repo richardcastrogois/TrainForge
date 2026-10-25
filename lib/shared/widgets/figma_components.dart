@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -201,12 +202,12 @@ class FigmaHeader extends StatelessWidget {
             SizedBox.square(
               dimension: 48,
               child: Semantics(
-                label: 'Abrir perfil',
+                label: context.l10n.openProfile,
                 button: true,
                 onTap: onProfile,
                 excludeSemantics: true,
                 child: IconButton(
-                  tooltip: 'Abrir perfil',
+                  tooltip: context.l10n.openProfile,
                   onPressed: onProfile,
                   padding: const EdgeInsets.all(4),
                   icon: Container(
@@ -262,7 +263,7 @@ class FigmaBack extends StatelessWidget {
           ),
           SizedBox(width: 8),
           Text(
-            'Voltar',
+            context.l10n.back,
             style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
           ),
         ],

@@ -1,3 +1,5 @@
+import 'package:trainforge/core/l10n/feedback_localization.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
@@ -173,7 +175,7 @@ class _ProductShellState extends State<ProductShell>
                     ),
                   ),
                   if (widget.controller.busy)
-                    const AppProgress(label: 'Confirmando sessão'),
+                    AppProgress(label: context.l10n.confirmingSession),
                   if (widget.controller.message != null)
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -181,7 +183,9 @@ class _ProductShellState extends State<ProductShell>
                         onPressed: widget.controller.busy
                             ? null
                             : widget.controller.retry,
-                        child: Text(widget.controller.message!),
+                        child: Text(
+                          widget.controller.feedback!.localized(context),
+                        ),
                       ),
                     ),
                   Expanded(

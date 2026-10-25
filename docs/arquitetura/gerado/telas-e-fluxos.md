@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4e427778df9aaff9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e1cc4ec2b6909a8a`.
 
 ## Atual: referências entre widgets
 
@@ -8,85 +8,89 @@ Construtor referenciado é evidência estática. Condições, botão voltar, cli
 
 ```mermaid
 flowchart LR
-    node0["AppearancePage"]
-    node1["AuthPage"]
-    node2["CatalogDetailPage"]
-    node3["CatalogPage"]
-    node4["FoodDetailPage"]
-    node5["FoodPage"]
-    node6["HomePage"]
-    node7["TodayPage"]
-    node8["EntryDetailPage"]
-    node9["EntryFormPage"]
-    node10["OwnFoodFormPage"]
-    node11["NutritionPage"]
-    node12["AiOnboardingPage"]
-    node13["ManualOnboardingPage"]
-    node14["OnboardingEntryPage"]
-    node15["PrivacyPage"]
-    node16["ProfilePage"]
-    node17["StatsPage"]
-    node18["WorkoutDayPage"]
-    node19["WorkoutPlanPage"]
-    node20["WorkoutsPage"]
-    node21["AccountPage"]
-    node22["AppShell"]
-    node23["AuthGate"]
-    node24["EvaluationGuidePage"]
-    node25["ProductShell"]
-    node26["StartupPage"]
-    node1 -->|"referencia widget"| node0
-    node1 -->|"referencia widget"| node3
-    node1 -->|"referencia widget"| node5
-    node1 -->|"referencia widget"| node15
-    node1 -->|"referencia widget"| node23
-    node3 -->|"referencia widget"| node2
-    node5 -->|"referencia widget"| node4
-    node6 -->|"referencia widget"| node1
-    node6 -->|"referencia widget"| node18
-    node8 -->|"referencia widget"| node9
+    node0["LanguagePage"]
+    node1["AppearancePage"]
+    node2["AuthPage"]
+    node3["CatalogDetailPage"]
+    node4["CatalogPage"]
+    node5["FoodDetailPage"]
+    node6["FoodPage"]
+    node7["HomePage"]
+    node8["TodayPage"]
+    node9["EntryDetailPage"]
+    node10["EntryFormPage"]
+    node11["OwnFoodFormPage"]
+    node12["NutritionPage"]
+    node13["AiOnboardingPage"]
+    node14["ManualOnboardingPage"]
+    node15["OnboardingEntryPage"]
+    node16["PrivacyPage"]
+    node17["ProfilePage"]
+    node18["StatsPage"]
+    node19["WorkoutDayPage"]
+    node20["WorkoutPlanPage"]
+    node21["WorkoutsPage"]
+    node22["AccountPage"]
+    node23["AppShell"]
+    node24["AuthGate"]
+    node25["EvaluationGuidePage"]
+    node26["ProductShell"]
+    node27["StartupPage"]
+    node2 -->|"referencia widget"| node0
+    node2 -->|"referencia widget"| node1
+    node2 -->|"referencia widget"| node4
+    node2 -->|"referencia widget"| node6
+    node2 -->|"referencia widget"| node16
+    node2 -->|"referencia widget"| node24
+    node4 -->|"referencia widget"| node3
+    node6 -->|"referencia widget"| node5
+    node7 -->|"referencia widget"| node2
+    node7 -->|"referencia widget"| node19
     node9 -->|"referencia widget"| node10
-    node10 -->|"referencia widget"| node9
-    node11 -->|"referencia widget"| node5
-    node11 -->|"referencia widget"| node8
-    node11 -->|"referencia widget"| node9
+    node10 -->|"referencia widget"| node11
     node11 -->|"referencia widget"| node10
-    node12 -->|"referencia widget"| node1
-    node12 -->|"referencia widget"| node23
-    node13 -->|"referencia widget"| node1
-    node13 -->|"referencia widget"| node23
-    node14 -->|"referencia widget"| node1
-    node14 -->|"referencia widget"| node12
-    node14 -->|"referencia widget"| node13
-    node16 -->|"referencia widget"| node1
-    node17 -->|"referencia widget"| node1
-    node17 -->|"referencia widget"| node14
-    node18 -->|"referencia widget"| node1
-    node19 -->|"referencia widget"| node1
-    node19 -->|"referencia widget"| node18
-    node20 -->|"referencia widget"| node1
-    node20 -->|"referencia widget"| node14
+    node12 -->|"referencia widget"| node6
+    node12 -->|"referencia widget"| node9
+    node12 -->|"referencia widget"| node10
+    node12 -->|"referencia widget"| node11
+    node13 -->|"referencia widget"| node2
+    node13 -->|"referencia widget"| node24
+    node14 -->|"referencia widget"| node2
+    node14 -->|"referencia widget"| node24
+    node15 -->|"referencia widget"| node2
+    node15 -->|"referencia widget"| node13
+    node15 -->|"referencia widget"| node14
+    node17 -->|"referencia widget"| node2
+    node18 -->|"referencia widget"| node2
+    node18 -->|"referencia widget"| node15
+    node19 -->|"referencia widget"| node2
+    node20 -->|"referencia widget"| node2
     node20 -->|"referencia widget"| node19
-    node21 -->|"referencia widget"| node0
+    node21 -->|"referencia widget"| node2
     node21 -->|"referencia widget"| node15
-    node22 -->|"referencia widget"| node6
+    node21 -->|"referencia widget"| node20
+    node22 -->|"referencia widget"| node0
+    node22 -->|"referencia widget"| node1
     node22 -->|"referencia widget"| node16
-    node22 -->|"referencia widget"| node17
-    node22 -->|"referencia widget"| node20
-    node23 -->|"referencia widget"| node1
-    node23 -->|"referencia widget"| node25
-    node23 -->|"referencia widget"| node26
-    node24 -->|"referencia widget"| node3
-    node24 -->|"referencia widget"| node5
-    node25 -->|"referencia widget"| node3
-    node25 -->|"referencia widget"| node11
-    node25 -->|"referencia widget"| node21
+    node23 -->|"referencia widget"| node7
+    node23 -->|"referencia widget"| node17
+    node23 -->|"referencia widget"| node18
+    node23 -->|"referencia widget"| node21
+    node24 -->|"referencia widget"| node2
+    node24 -->|"referencia widget"| node26
+    node24 -->|"referencia widget"| node27
+    node25 -->|"referencia widget"| node4
+    node25 -->|"referencia widget"| node6
+    node26 -->|"referencia widget"| node4
+    node26 -->|"referencia widget"| node12
+    node26 -->|"referencia widget"| node22
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
-| AppearancePage | [lib/core/theme/appearance_page.dart:5](../../../lib/core/theme/appearance_page.dart) |
-| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:13](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| LanguagePage | [lib/core/l10n/language_page.dart:6](../../../lib/core/l10n/language_page.dart) |
+| AppearancePage | [lib/core/theme/appearance_page.dart:7](../../../lib/core/theme/appearance_page.dart) |
+| AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:16](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:12](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:7](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
@@ -106,11 +110,11 @@ flowchart LR
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
-| AccountPage | [lib/shared/widgets/account_page.dart:11](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:14](../../../lib/shared/widgets/account_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:10](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:10](../../../lib/shared/widgets/evaluation_guide_page.dart) |
-| ProductShell | [lib/shared/widgets/product_shell.dart:17](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | [lib/shared/widgets/product_shell.dart:19](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 
 ## Chamadas usadas por cada feature

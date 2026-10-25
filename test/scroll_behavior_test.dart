@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/locale_controller.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -10,6 +11,18 @@ import 'appearance_startup_motion_test.dart' show MemoryAppearance;
 import 'auth_controller_test.dart' show SessionFixture;
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  setUp(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(
+          NativeLocaleStore.channel,
+          (call) async => call.method == 'read' ? 'pt-BR' : null,
+        );
+  });
+  tearDown(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(NativeLocaleStore.channel, null);
+  });
   for (final brightness in Brightness.values) {
     testWidgets(
       'Android scroll boundaries without stretch in ${brightness.name}',

@@ -1,3 +1,5 @@
+import 'package:trainforge/core/l10n/feedback_localization.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/appearance_controller.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -8,22 +10,20 @@ class AppearancePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = AppearanceScope.maybeOf(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Aparência')),
+      appBar: AppBar(title: Text(context.l10n.appearance)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(24),
           children: [
             Text(
-              'O teu ritmo, o teu tema.',
+              context.l10n.appearanceTitle,
               style: Theme.of(context).textTheme.headlineLarge,
             ),
             const SizedBox(height: 12),
-            const Text(
-              'A escolha vale neste aparelho e continua após fechar o app. Seus dados da conta não são alterados.',
-            ),
+            Text(context.l10n.appearanceIntro),
             const SizedBox(height: 20),
             if (controller == null)
-              const Text('A aparência não está disponível neste contexto.')
+              Text(context.l10n.appearanceUnavailable)
             else ...[
               RadioGroup<ThemeMode>(
                 groupValue: controller.mode,
@@ -37,18 +37,18 @@ class AppearancePage extends StatelessWidget {
                     for (final item in [
                       (
                         ThemeMode.system,
-                        'Seguir o aparelho',
-                        'Acompanha o tema claro ou escuro do sistema.',
+                        context.l10n.themeSystem,
+                        context.l10n.themeSystemHint,
                       ),
                       (
                         ThemeMode.light,
-                        'Claro',
-                        'A identidade original em superfícies claras.',
+                        context.l10n.light,
+                        context.l10n.lightHint,
                       ),
                       (
                         ThemeMode.dark,
-                        'Escuro',
-                        'Superfícies escuras e contraste adaptado.',
+                        context.l10n.dark,
+                        context.l10n.darkHint,
                       ),
                     ])
                       Card(
@@ -63,21 +63,19 @@ class AppearancePage extends StatelessWidget {
                 ),
               ),
               if (controller.saving)
-                const AppProgress(label: 'Salvando aparência'),
+                AppProgress(label: context.l10n.savingAppearance),
               if (controller.message != null) ...[
-                Semantics(liveRegion: true, child: Text(controller.message!)),
+                Semantics(liveRegion: true, child: Text(controller.feedback!.localized(context))),
                 TextButton(
                   onPressed: controller.saving
                       ? null
                       : () => controller.select(controller.mode),
-                  child: const Text('Tentar salvar novamente'),
+                  child: Text(context.l10n.retrySave),
                 ),
               ],
             ],
             const SizedBox(height: 20),
-            const Text(
-              'O tamanho do texto e a redução de movimento seguem as configurações de acessibilidade do aparelho.',
-            ),
+            Text(context.l10n.accessibilityDevice),
           ],
         ),
       ),
