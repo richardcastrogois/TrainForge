@@ -1136,7 +1136,8 @@
             "V1-008",
             "V1-012",
             "V1-013",
-            "V1-021"
+            "V1-021",
+            "V1-048"
           ],
           "inputs": [
             "docs/execucao/v1/decisoes-piloto.md",
@@ -1153,7 +1154,8 @@
             "Configuração privada pode ser salva, recuperada e alterada por sua conta com versão/concorrência e erros de campo explícitos; mudança de conta ou resposta tardia não mistura dados",
             "Atualizar contexto não reescreve sessões/versões históricas; novas escolhas são validadas pelo backend contra configuração e requisitos humanos atuais",
             "Go/SQL/Flutter separados por responsabilidade, DTOs e Swagger coerentes, autorização por titular e testes de persistência/isolamento; completar formulário não libera prática bloqueada",
-            "Fluxo legado de geração IA/manual-generator permanece fora da composição ativa; nenhum formulário simula salvamento ou elegibilidade sem API/regra implementadas"
+            "Fluxo legado de geração IA/manual-generator permanece fora da composição ativa; nenhum formulário simula salvamento ou elegibilidade sem API/regra implementadas",
+            "Q5:configuração em etapas curtas por assunto, com progresso real, retorno/correção sem perda de respostas e revisão final antes de confirmar; preservar acessibilidade e tratar saída/falha/descarte sem falso salvamento"
           ],
           "tasks": [
             {
@@ -1171,7 +1173,8 @@
               "subtasks": [
                 "Implementar casos de uso Go para salvar/ler/alterar configuração com titularidade e conflito de versão",
                 "Gerar Swagger por tipos/comentários e integrar repository/controller Flutter injetados",
-                "Concluir e revisar a configuração antes de abrir a seleção de treino; tratar vazio/erro/rede/retorno sem reativar geradores"
+                "Concluir e revisar a configuração antes de abrir a seleção de treino; tratar vazio/erro/rede/retorno sem reativar geradores",
+                "Organizar etapas por assunto e revisão final com retorno ao campo; preservar respostas, foco/teclado e validação, usando localização048"
               ]
             },
             {
@@ -1194,7 +1197,7 @@
             "Contrato e fluxo Flutter completos para revisão",
             "Recibo de campos, isolamento, atualização e aceite"
           ],
-          "handoff": "25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done.",
+          "handoff": "25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done. Q5 definiu etapas curtas por assunto/revisão final, com localização048 antes da implementação integrada.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
@@ -2024,7 +2027,7 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Próximo blocoQ5 trata apresentação da configuração e nomes estrangeiros; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.",
+          "handoff": "25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados;048 explicita idiomas/nomes. Próximo blocoQ6 trata aceites humanos e conta de avaliação; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
@@ -2255,7 +2258,8 @@
           ],
           "dependsOn": [
             "V1-020",
-            "V1-021"
+            "V1-021",
+            "V1-048"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -2272,7 +2276,8 @@
             "Tela procura alimento/preparo, confirma quantidade e registra por API",
             "Total, base por100 e campos desconhecidos são claros; sem dieta ou foto reconhecida fictícia",
             "Integração visual com Hoje mantém alimentação distinta de gasto da atividade",
-            "Busca usa base ampla pesquisada e oferece cadastro de alimento próprio com dados reais informados, origem visível e nutrientes desconhecidos preservados; cadastro manual complementa a base"
+            "Busca usa base ampla pesquisada e oferece cadastro de alimento próprio com dados reais informados, origem visível e nutrientes desconhecidos preservados; cadastro manual complementa a base",
+            "Q5:usar nome traduzido somente quando revisado, preservar original/idioma/fonte/versão no detalhe e fallback original; busca/nome não alteram identidade, preparo, base ou cálculo (048)"
           ],
           "tasks": [
             {
@@ -2404,6 +2409,92 @@
           ]
         },
         {
+          "id": "V1-048",
+          "title": "Localizar interface e nomes alimentares com revisão",
+          "userStory": "Como usuário, quero usar a interface em meu idioma e entender nomes alimentares traduzidos quando revisados, conservando o original e a fonte.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R10",
+            "R15",
+            "R16",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-020",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/conteudo/evidencias-para-integracao.md"
+          ],
+          "acceptance": [
+            "Infraestrutura e textos da UI implementada em pt-BR, pt-PT, inglês e espanhol, com escolha/negociação de idioma, datas/números/plurais/erros e componentes nativos coerentes; novos fluxos usam a mesma estrutura e são conferidos na027/035",
+            "Q5:nome traduzido é exibido quando houver tradução revisada para o idioma escolhido; nome original/idioma/fonte/versão acessíveis nos detalhes; ausência de revisão mantém original sem fingir tradução",
+            "Traduções e aliases têm vínculo exato ao alimento/versão da fonte, idioma/localidade, versão própria, direito e registro de revisão; ficam separados do lote/hash original e não são aprovados automaticamente por IA",
+            "Busca por nome/alias revisado retorna a mesma identidade e preserva preparo, unidade/base, nutrientes e cálculo; não mesclar alimentos homônimos ou deduzir composição regional pela tradução",
+            "Mudar idioma não reescreve consumos antigos nem altera contratos numéricos/IDs; cache e paginação consideram idioma/versão; nome de cadastro próprio conserva declaração e privacidade do titular",
+            "Registrar cobertura e lacunas de tradução por idioma/versão; nenhum nome de alimento/treino é inventado ou declarado revisado sem evidência; tradução de UI não implica cobertura global da base",
+            "Testes de fallback, busca revisada, versões/retirada, idioma trocado, números/datas e texto ampliado; aceite Android dos quatro idiomas e limite nativo iOS explícito"
+          ],
+          "tasks": [
+            {
+              "id": "V1-048-T01",
+              "title": "Estruturar localização da interface",
+              "subtasks": [
+                "Definir recursos e seleção/fallback de pt-BR/pt-PT/en/es com mensagens parametrizadas e plurais",
+                "Localizar textos dos fluxos disponíveis, erros, datas/números e controles; novos componentes não introduzem strings fora da estrutura",
+                "Preservar identidadeTF, semântica, layout flexível, teclado e movimento reduzido"
+              ]
+            },
+            {
+              "id": "V1-048-T02",
+              "title": "Modelar e integrar nomes revisados",
+              "subtasks": [
+                "Separar tradução/alias do original importado, vinculando identidade/versão/idioma, revisão e direitos",
+                "Definir contratos/busca/cache e gerar Swagger a partir da implementação, sem alterar hashes/nutrientes da fonte",
+                "Exibir nome revisado com original/fonte acessíveis e fallback honesto; preservar nomes particulares e dados históricos",
+                "Publicar traduções reais apenas com revisão comprovada, sem pesquisar/contratar tradutor ou serviço pago por inferência"
+              ]
+            },
+            {
+              "id": "V1-048-T03",
+              "title": "Validar identidade e experiência nos idiomas",
+              "subtasks": [
+                "Conferir nomes/preparos homônimos, tradução ausente/retirada, cache/idioma e busca sem mescla de alimentos",
+                "Ensaiar números/datas/plurais, erros, controles e texto ampliado nos quatro idiomas",
+                "Registrar recibo de cobertura da UI e conteúdo, separando fixtures técnicas, traduções revisadas e aceite humano real"
+              ]
+            }
+          ],
+          "validation": [
+            "Testes Go/SQL/Flutter do vínculo/alias/fallback e integridade dos dados originais",
+            "UI disponível validada nos quatro idiomas, inclusive formatos e acessibilidade",
+            "Recibo de cobertura/versões/revisão dos nomes e aceite, sem fixture como conteúdo publicado"
+          ],
+          "deliverables": [
+            "Estrutura e textos de UI pt-BR/pt-PT/en/es",
+            "Contrato/modelo de nomes e aliases revisados",
+            "Busca/apresentação com original/fonte e fallback",
+            "Recibo de cobertura, integridade e aceite"
+          ],
+          "handoff": "25/10:Q5 escolheu etapas curtas/revisão na047 e nome traduzido quando revisado, original/fonte nos detalhes e fallback original. Quatro idiomas já eram exigência do autor; esta história explicita a implementação ausente, distinta da validação027. Atual FoodReference apenas compacta espaços do original; importador recusa namePt preenchido. Não houve tradução publicada, contrato/migration ou código novo.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md"
+          ]
+        },
+        {
           "id": "V1-027",
           "title": "Validar acessibilidade e paridade de contratos Android/iOS",
           "userStory": "Como usuário de qualquer plataforma, quero uma experiência compreensível e compatível com minhas necessidades.",
@@ -2419,7 +2510,8 @@
           "dependsOn": [
             "V1-022",
             "V1-024",
-            "V1-025"
+            "V1-025",
+            "V1-048"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -2433,7 +2525,8 @@
           "acceptance": [
             "Texto ampliado, semântica, contraste, alvos de toque e movimento reduzido conferidos",
             "Pessoas idosas e cuidadores mantêm requisitos específicos sem seleção automática por idade",
-            "Abstrações isolam permissões, OAuth e armazenamento; iOS não declarado testado no Windows"
+            "Abstrações isolam permissões, OAuth e armazenamento; iOS não declarado testado no Windows",
+            "Conferir fluxos implementados em pt-BR/pt-PT/en/es pela048, incluindo formatos, texto ampliado/foco e configuração em etapas/revisão; cobertura da UI separada da tradução de conteúdo"
           ],
           "tasks": [
             {
@@ -2935,7 +3028,8 @@
             "V1-044",
             "V1-045",
             "V1-046",
-            "V1-047"
+            "V1-047",
+            "V1-048"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -2952,7 +3046,8 @@
             "Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1",
             "Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes",
             "Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais",
-            "Q4:offline durável, processo encerrado/reaberto e resposta perdida sincronizam sem duplicação; refeição/foto excluídas não reaparecem por upload/reenvio ou troca de conta"
+            "Q4:offline durável, processo encerrado/reaberto e resposta perdida sincronizam sem duplicação; refeição/foto excluídas não reaparecem por upload/reenvio ou troca de conta",
+            "Q5:configuração em etapas/revisão, UI nos quatro idiomas e nomes alimentares revisados/fallback aceitos sem alterar origem/identidade/nutrientes ou fingir cobertura de tradução"
           ],
           "tasks": [
             {
@@ -3409,5 +3504,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10:Q1/Q2/Q3/Q4 respondidos. Q4:excluir foto com a refeição e registrar alimentação/andamento offline para sincronizar depois (026todo). Fila durável privada, idempotência e exclusão coordenada042/045 impedem mistura de contas ou recriação de dados excluídos. Próximo blocoQ5:apresentação da configuração e nomes estrangeiros; quatro idiomas preservados. V1-021 doing; sem hospedagem, conteúdo inventado ou novo done."
+  "currentPriority": "25/10:Q1–Q5 respondidos. Q5:configuração completa em etapas curtas/revisão(047); nome traduzido quando revisado, original/fonte nos detalhes e fallback original(nova048todo). UI pt-BR/pt-PT/en/es preservada; nomes não mudam fonte/identidade/nutrientes. Próximo blocoQ6:organização dos aceites humanos e conta de avaliação. V1-021 doing, sem novo done, hospedagem ou serviço pago."
 }

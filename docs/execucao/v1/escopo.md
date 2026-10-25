@@ -30,6 +30,12 @@ Excluir refeição inteira também exclui foto/miniaturas, sem galeria separada;
 
 Registrar alimentação e andamento de treino offline, com dados disponíveis e uso permitido, salvando em fila durável privada e mostrando pendência até confirmar/reconciliar na API (026). Troca de conta, revogação, conflito e falha do processo não podem misturar titulares ou duplicar registros. Reconhecimento de foto tem disponibilidade própria, sem promessa de modelo local. [Critérios completos](decisoes-piloto.md).
 
+## Respostas Q5 incorporadas em 25/10
+
+Configuração completa em etapas curtas por assunto, com retorno/correção sem perder respostas e revisão final antes da confirmação (047).
+
+Nome traduzido quando houver tradução revisada para o idioma escolhido; original/idioma/fonte/versão nos detalhes e fallback original quando faltar revisão (048). UI em pt-BR, pt-PT, inglês e espanhol; traduzir apresentação não altera preparo, base, unidade, nutrientes, identidade ou histórico. Consulta por nome traduzido usa correspondência revisada, sem mesclar alimentos ou publicar tradução automática como revisão. [Decisões completas](decisoes-piloto.md).
+
 ## Compromissos da V1
 
 - Conteúdo de fontes humanas existentes, com autoria/contribuição, evidência, versão e direitos por ativo. Inventariar toda a cobertura pesquisada; importar todo material utilizável e permitido em lotes técnicos. Lote candidato e lote aprovado são manifestos distintos;331 famílias não equivalem a331 importações autorizadas.
@@ -65,6 +71,6 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 4. Sessões idempotentes, retomada, registro offline durável/sincronização, logout/revogação e isolamento de conta verificados; exclusão da refeição/foto não é desfeita por reenvio.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.
-7. Notas de versão explicam cobertura/limites. Aceite e feedback da esposa registrados somente quando acontecerem.
+7. Configuração em etapas/revisão, interface nos quatro idiomas e nomes revisados/fallback verificados; notas de versão explicam cobertura/limites. Aceite e feedback da esposa registrados somente quando acontecerem.
 
 Testes isolados podem ter fixtures explicitamente marcadas; testes de carga podem usar base sintética separada. Não são fontes do app nem seeds do ambiente entregue.

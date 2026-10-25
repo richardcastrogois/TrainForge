@@ -46,18 +46,25 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 - **Configuração:** completa e revisada antes da busca/seleção de treino. Nova V1-047 para persistir o contexto privado em Go/SQL/Flutter, com campos justificados por finalidade/fonte; não reativar geradores nem herdar dados físicos obrigatórios do legado.
 - **Ajustes:** permitir trocar exercícios compatíveis e editar dias/horários dentro das regras humanas. Preservar versão/autoria/dose e histórico; V1-015/044.
 - **Interrupção:** oferecer retomar ou encerrar como parcial, preservando eventos confirmados e idempotência; V1-017/023. Saída de tela/tempo decorrido não concluem treino.
-- **Q4 posterior:** escolhas de exclusão e offline registradas abaixo; próximo bloco Q5. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
+- **Q4/Q5 posteriores:** escolhas registradas abaixo; próximo bloco Q6. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
 
 ## Respostas Q4 incorporadas — 25/10/2026
 
 - **Exclusão:** apagar refeição inteira também apaga foto/miniaturas; coordenar banco/arquivos/cache/fila. Upload ou resposta atrasada não recria dados excluídos (042/045).
 - **Offline:** registrar alimentação e andamento com dados disponíveis, em fila durável privada, com pendência até confirmar/reconciliar (026 existente, sem nova história).
 - **Isolamento:** conta trocada/revogação/exclusão bloqueiam acesso/envio indevidos; resposta perdida não duplica registro. Reconhecimento de imagem não foi validado offline.
-- **Próximo bloco:** Q5, apresentação da configuração completa e nomes estrangeiros. Nenhum gate funcional ou de segurança foi encerrado por documentar a escolha.
+- **Q5 posterior:** apresentação da configuração e nomes definida abaixo; próximo bloco Q6. Nenhum gate funcional ou de segurança foi encerrado por documentar a escolha.
+
+## Respostas Q5 incorporadas — 25/10/2026
+
+- **Configuração:** etapas curtas por assunto, com revisão final e retorno/correção sem perda de respostas (047).
+- **Alimentos:** nome traduzido quando revisado para o idioma escolhido; original/fonte/versão nos detalhes, fallback original na ausência de revisão. Não alterar identidade, preparo ou nutrientes.
+- **Idiomas:** nova048 explicita UI pt-BR/pt-PT/en/es e nomes revisados separados do lote original;025/027/035 conferem o conjunto. Nenhuma tradução foi publicada nesta rodada.
+- **Próximo bloco:** Q6, organização dos aceites humanos e conta de avaliação; emulador primeiro e físico guiado já definidos.
 
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1/Q2/Q3/Q4 foram respondidos. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1/Q2/Q3/Q4/Q5 foram respondidos. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -81,7 +88,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. V1-045/046 detalham as duas visões alimentares e o conjunto histórico/análise/dicas, também naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
-Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas também exigem implementação. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
+Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas e nomes revisados agora têm história própria048, ainda todo. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
 ## 3. Bloco 00 — decisões do produto
 
@@ -92,9 +99,9 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | D-01 | Respondido: programas humanos compatíveis **e** composição por regras revisadas; Q3 permite trocas compatíveis e dias/horários editáveis | V1-015/044; dois caminhos sem dose inventada |
 | D-02 | Respondido:cuidador pratica durante pausas do seu trabalho, usando os próprios dados | Contexto de pausa sem cadastro de paciente ou autorização delegada |
 | D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; recuperação das imagens pela conta com cache aprovada noQ2, ciclo privado a detalhar |
-| D-04 | Q3: configuração completa antes da busca/seleção; detalhar campos por finalidade/fonte, sem importar exigências físicas do legado | V1-047; revisão, validação e persistência privada antes de015/044 |
+| D-04 | Q3/Q5: configuração completa em etapas curtas/revisão; detalhar campos por finalidade/fonte, sem importar exigências físicas do legado | V1-047; revisão, validação e persistência privada antes de015/044 |
 | D-05 | Q4: alimentação/andamento offline e sincronização posterior; operação aceita no aparelho exige durabilidade | V1-026; fila privada por titular, pendente explícito e recuperação sem duplicação |
-| D-06 | Prioridade dos países/idiomas, apresentação de fontes estrangeiras e termos de entendimento difícil | Localização e cobertura alimentar/treino revisada |
+| D-06 | Q5: pt-BR/pt-PT/en/es preservados; nomes traduzidos quando revisados, original/fonte nos detalhes e fallback original | V1-048; cobertura/traduções auditáveis sem mudar identidade/preparo/nutrientes |
 | D-07 | Respondido: agrupar por refeição e também visualizar por alimento | V1-045; duas visões sem duplicar consumo/nutrientes |
 | D-08 | Respondido: histórico visual, análise nutricional e dicas revisadas juntos na primeira versão | V1-046; regras/fontes/revisão ainda a elaborar, sem inferência clínica |
 | D-09 | Respondido: oferecer retomar ou encerrar como parcial | V1-017/023; persistir somente eventos reais e não concluir automaticamente |
@@ -183,14 +190,14 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | FE-04 | Configuração e treino | Concluir/revisar configuração antes de buscar treino; integrar trocas compatíveis e dias/horários, adesão/agenda e retomada ou parcial | Jornada real alinhada a047/015/044/017/023; sem gráfico/série/dose fictícios e com limites do conteúdo explícitos |
 | FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
 | FE-06 | Retomada/offline | Integrar fila durável privada de alimentação/andamento; estados salvo no aparelho, pendente, confirmado e falha/conflito | Processo encerrado, resposta perdida, conta trocada e exclusão concorrente sem duplicação/recriação ou falso sucesso (026/042/045) |
-| FE-07 | Quatro idiomas | Estrutura de localização, pt-BR, pt-PT, inglês e espanhol; números, datas, plurais, erros e componentes nativos | Jornada integral em cada idioma e texto grande sem cortes; tradução de UI não altera identidade do alimento |
+| FE-07 | Idiomas e nomes revisados (048) | Localização pt-BR/pt-PT/en/es; números/datas/plurais/erros; nomes alimentares revisados com original/fonte nos detalhes e fallback | UI nos quatro idiomas e cobertura de conteúdo explícita; busca/nome traduzidos preservam ID/preparo/base/nutrientes, sem tradução automática publicada como revisão |
 | FE-08 | Acessibilidade completa | TalkBack/VoiceOver, foco/ordem/rótulos, contraste e estados, fonte/display ampliados, toque/teclado e redução de movimento | Testes automatizados pertinentes e validação com pessoas do público; não depender só do tema |
 | FE-09 | Figma e estados | Conferir famílias com contexto/exportação autorizada suficiente, tema, loading, erro, vazio, indisponível, teclado, navegação e retorno | Comparação com a referência correta e diferenças necessárias registradas; nada “exatamente igual” sem referência |
 | FE-10 | Inicialização e qualidade percebida | Revalidar ícone fechado, splash/primeiro frame, cold/warm start, permissões e transições com os novos fluxos | Sem flash de tema, conteúdo privado antigo, loader sem saída ou regressão da rolagem |
 
 **Gate 04:** matriz de jornadas do recorte sem telas simulando backend ausente; alinhamento aos contratos e ao Figma aprovado, acessibilidade real e traduções; teste Android e limite iOS explícito. Aprovação visual não libera práticas sem conteúdo permitido.
 
-**Histórias:** V1-021–027, V1-042/045/046/047 e extensões de localização. V1-038 é validação nativa iOS; não substituir por widget test no Windows.
+**Histórias:** V1-021–027 e V1-042/045/046/047/048. V1-038 é validação nativa iOS; não substituir por widget test no Windows.
 
 ## 8. Bloco 05 — testes, CI e análise de qualidade
 
@@ -258,7 +265,7 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Q1/Q2/Q3/Q4 foram respondidos. Avançar a Q5 sobre apresentação da configuração completa e nomes de fontes estrangeiras, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Não apresentar todas de uma vez. Q1/Q2/Q3/Q4/Q5 foram respondidos. Avançar a Q6 sobre organização dos aceites humanos e conta de avaliação. Emulador primeiro/físico guiado e requisitos anteriores não devem ser perguntados novamente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
@@ -266,8 +273,8 @@ Não apresentar todas de uma vez. Q1/Q2/Q3/Q4 foram respondidos. Avançar a Q5 s
 | Q2 | Fotos, histórico e observações | Refeições/alimentos; histórico/análise/dicas juntos; recuperação das fotos pela conta com cache | Respondido em 25/10; sem contratação ou implementação por inferência |
 | Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047 todo, modelos/campos e regras ainda a detalhar |
 | Q4 | Segurança e privacidade | Excluir foto com a refeição; registrar offline e sincronizar depois | Respondido25/10;026/042/045 e revisão de segurança continuam pendentes |
-| Q5 | Frontend e idiomas | Apresentação da configuração completa e nomes alimentares estrangeiros; preservar pt-BR/pt-PT/en/es | Próxima conversa; sem repetir chamadas Figma limitadas |
-| Q6 | Qualidade e aceite | Dispositivos de teste, cenário de uso/carga e critérios de aceite humano | Definir antes dos ensaios correspondentes |
+| Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047/048 todo, sem repetir chamadas Figma limitadas |
+| Q6 | Qualidade e aceite | Organização dos aceites humanos e conta de avaliação; emulador primeiro e físico guiado já definidos | Próxima conversa; carga local isolada e limites medidos pelo agente, sem hospedagem |
 
 ## 13. Figma — impedimento e alternativa permitida
 
@@ -313,4 +320,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. Q1/Q2/Q3/Q4 estão registrados; próximo bloco Q5, apresentação da configuração e nomes estrangeiros. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Este incremento é documental. Q1/Q2/Q3/Q4/Q5 estão registrados; próximo bloco Q6, aceites humanos e conta de avaliação. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.

@@ -127,3 +127,11 @@ Q4 exige registro offline durável (026) e exclusão de foto com a refeição (0
 Banco, arquivo/miniatura e fila precisam de exclusão coordenada: cancelar criação/upload não enviados; impedir recriação após exclusão confirmada; retentar limpeza de arquivo com falha sem restabelecer acesso. Outro aparelho reconcilia cache ao conectar. Revisões textuais não justificam foto excluída acessível.
 
 Esta é modelagem a implementar, sem nova migration/tabela/armazenamento aplicado. Formato, proteção em repouso, limites e ciclo de conta serão definidos/ensaiados antes do uso privado. [Decisões completas](../execucao/v1/decisoes-piloto.md).
+
+## Decisões Q5 — nomes revisados e localidade planejados
+
+V1-048 manterá traduções/aliases revisados separados do conteúdo original, vinculados à identidade e versão da fonte e ao idioma/localidade. Revisão, direitos e versão da tradução precisam ser rastreáveis; nome traduzido não muda preparo, base, nutrientes ou ID do alimento.
+
+Hoje a API expõe nameOriginal/nameLocale e o cliente só compacta espaços em displayName; o importador original recusa namePt preenchido. Não alterar lote/hash original para simular tradução. Busca/cache deverão considerar idioma/versão e aliases revisados sem mesclar alimentos homônimos. O contrato novo ainda será implementado e gerado no Swagger, sem campos/tabelas novos nesta rodada.
+
+Configuração047 seguirá etapas curtas por assunto e revisão final, com o mesmo contexto/versionamento privado do Q3. Localização da UI e idioma do conteúdo são dimensões distintas; fonte estrangeira não vira base regional brasileira pela tradução. [Decisões Q5](../execucao/v1/decisoes-piloto.md).

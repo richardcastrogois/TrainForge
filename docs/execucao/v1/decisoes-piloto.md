@@ -1,4 +1,4 @@
-> Estado vigente 25/10: Q1/Q2/Q3/Q4 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; Q4 confirmou foto excluída com a refeição e registros offline sincronizados depois; próximo bloco Q5. As decisões antigas são preservadas no seu recorte.
+> Estado vigente 25/10: Q1/Q2/Q3/Q4/Q5 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; Q4 confirmou foto excluída com a refeição e registros offline sincronizados depois; Q5 definiu etapas curtas/revisão e nomes traduzidos quando revisados, com original/fonte; próximo bloco Q6. As decisões antigas são preservadas no seu recorte.
 
 > Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
 
@@ -161,7 +161,7 @@ Pausado, parcial e concluído são estados distintos. Encerrar como parcial é u
 
 ### Próxima decisão e limites da rodada
 
-As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. O Q4 abaixo resolveu exclusão da foto e uso offline; próximo bloco Q5 sobre apresentação da configuração e nomes estrangeiros. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
+As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. Q4/Q5 abaixo resolveram exclusão/offline, etapas/revisão e nomes estrangeiros; próximo bloco Q6. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
 
 Esta rodada altera planejamento e critérios. Nenhuma configuração, composição ou retomada foi implementada por atualizar estes documentos; nenhuma história nova foi marcada como concluída.
 
@@ -194,4 +194,33 @@ O autor escolheu **“Registrar offline e sincronizar depois”**. Com dados dis
 
 Testar processo encerrado/reaberto, confirmação no servidor com resposta perdida, reenvio, conta trocada, revogação, conflito e exclusão concorrente com upload/reenvio. Usar base/arquivos isolados; aceite real é distinto de fixtures. A [matriz de segurança planejada](../../arquitetura/seguranca-operacao.md) orienta os ensaios.
 
-As escolhas Q4 estão registradas;026/042/045 e gate035 continuam pendentes. O envio incerto atual no formulário é em memória e não prova fila durável. Nenhuma migration, arquivo privado, dado real ou APK foi alterado. Próximo bloco **Q5**, apresentação da configuração e nomes de alimentos estrangeiros, preservando quatro idiomas e referências aprovadas.
+As escolhas Q4 estão registradas;026/042/045 e gate035 continuam pendentes. O envio incerto atual no formulário é em memória e não prova fila durável. Nenhuma migration, arquivo privado, dado real ou APK foi alterado. O Q5 abaixo definiu etapas curtas/revisão e apresentação de nomes revisados; quatro idiomas e referências aprovadas permanecem. Próximo bloco Q6.
+
+## Decisões Q5 — 25/10/2026
+
+### Configuração em etapas curtas, com revisão final
+
+O autor escolheu **“Etapas curtas por assunto, com revisão final”** para completar a configuração antes de procurar treino. V1-047 deve organizar os campos necessários por assunto, mostrar a etapa/progresso real e permitir voltar ou corrigir pela revisão sem perder respostas.
+
+Confirmar somente após rever o conjunto e resolver validações necessárias. Avançar uma etapa não confirma um treino nem libera prática bloqueada. Saída, descarte, falha e retentativa precisam ser claros; não prometer salvamento durável de rascunho de configuração sem implementá-lo. Campos e obrigatoriedade seguem a matriz finalidade/fonte do Q3.
+
+Preservar marcaTF, Grafite e lima, rolagem e referências do Figma já obtidas. A escolha define a organização da jornada; não comprova fidelidade dos nós ainda sem contexto, não autoriza contornar cota nem inventar conteúdo. Conferir teclado, foco, TalkBack, fonte ampliada e movimento reduzido em cada etapa/revisão.
+
+### Nome traduzido quando revisado, original e fonte nos detalhes
+
+O autor escolheu **“Nome traduzido; original e fonte nos detalhes”**, com fallback para o original quando não houver tradução revisada para o idioma escolhido. Aplica-se à apresentação e busca dos alimentos, preservando o vínculo com a referência exata.
+
+- Tradução publicada precisa de idioma/localidade, vínculo ao alimento/versão original, versão própria, fonte/direito aplicável e registro de revisão; não tratar tradução automática ou nome parecido como equivalência aprovada.
+- Manter nome original, idioma, fonte e versão acessíveis nos detalhes. Trocar idioma não altera ID, preparo, quantidade, unidade, base, nutrientes ou cálculo, nem reescreve consumos antigos.
+- Busca por nome/alias traduzido só usa correspondências revisadas e retorna a mesma identidade/versionamento; nomes iguais em bases/preparos diferentes não autorizam mesclar alimentos.
+- Ausência de tradução mantém o original e explicação apropriada. Não apresentar cobertura total nem dados brasileiros/globais só porque o nome foi traduzido; cobertura regional e composição conservam a origem.
+- UI e conteúdo são distintos: textos do app em pt-BR, pt-PT, inglês e espanhol continuam exigidos; uma referência alimentar pode continuar no idioma da fonte enquanto faltar tradução revisada.
+- Cadastro próprio conserva o nome informado pelo titular e privacidade; não se torna item/tradução editorial nem é enviado a terceiros por inferência.
+
+Hoje FoodReference lê nameOriginal/nameLocale e displayName só compacta espaços. O importador editorial rejeita namePt preenchido no lote original. A nova **V1-048** explicita localização da UI e camada de nomes revisados separada da importação original, preservando hashes/proveniência e idempotência. Nenhum nome foi traduzido/publicado nesta rodada.
+
+### Próximo bloco e critério de implementação
+
+Q5 respondido. V1-047 recebe o fluxo em etapas;048 recebe quatro idiomas e nomes revisados;025/027/035 conferem integração alimentar, acessibilidade e aceite. Infraestrutura de localização não comprova que todo alimento/treino foi traduzido; contabilizar cobertura e lacunas nos recibos.
+
+Próximo bloco **Q6**, organização dos aceites humanos e conta de avaliação para casos de edição/exclusão. Emulador primeiro e Android físico com orientação já foram escolhidos; não perguntar novamente. Carga será ensaiada localmente com dados isolados, sem pedir ao autor estimativa técnica de milhões simultâneos ou contratar hospedagem. Nenhuma funcionalidade nova foi implementada por registrar Q5.

@@ -298,3 +298,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Consulta Graphify existente e inspeção dirigida confirmaram pending do formulário em memória; não equivale à fila que sobrevive ao processo. Sem código/API/migration/APK ou acesso/modificação de dados privados, sem repetir Google/import/restore. Swagger e GraphifyAST não regenerados.
 - Próximo blocoQ5:apresentação da configuração e nomes alimentares estrangeiros, com quatro idiomas preservados. Hospedagem/contratação continuam adiadas.
 - Validação documental: geração reproduzível, dependências/requisitos/entradas/links locais conferidos;13testes documentais passaram e diff sem erros. Não comprova funcionamento da fila ou exclusão de fotos noAPK.
+
+## 25/10/2026 — respostas Q5, etapas e nomes revisados
+
+- Autor escolheu etapas curtas por assunto com revisão final e nome traduzido quando revisado, mantendo original/fonte nos detalhes e fallback original. Decisões/trilha/escopo/frontend/modelo/matriz e handoff atualizados.
+- Inspeção dirigida após consulta Graphify:FoodReference lê nameOriginal/nameLocale e displayName só compacta espaços; importador recusa namePt preenchido. Nomes revisados precisam de camada separada, sem alterar lote/hash/preparo/nutrientes. Não foi publicado nome traduzido ou modificada fonte original.
+- Criada048(todo) para localização UIpt-BR/pt-PT/en/es e nomes/aliases revisados;025/027/035/047 passam a depender da capacidade.047 recebe etapas/progresso/retorno/revisão. Nenhum done alterado.
+- Próximo blocoQ6:aceites humanos e conta de avaliação. Emulador primeiro e físico guiado já definidos; não repetir perguntas/resets, OAuth/import/restore ou testes deapp. Sem código/API/migration/APK, dado privado, nova chamada Figma ou contratação; Swagger/GraphifyAST preservados.
+- Validação documental: geração reproduzível, dependências/requisitos/entradas/links conferidos;13testes documentais passaram e diff sem erros. Não comprova UI multilíngue ou tradução revisada noAPK.
