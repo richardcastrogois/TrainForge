@@ -69,8 +69,10 @@ Alternativa apresentada e não escolhida: registros pela conta e imagens locais 
 ## Decisões Q2 recebidas e trabalho pendente
 
 - **Aprovado:** agrupar os alimentos por refeição e oferecer também a visualização por alimento. As duas visões usam os mesmos registros, sem duplicar consumo ou nutrientes; uma refeição pode conter vários itens/quantidades.
-- **Fotos aprovado após pesquisa:** recuperar fotos pela conta, com cache no celular. Limites, retenção/exclusão e segurança do ciclo privado serão detalhados; hospedagem continua adiada e recuperação ainda precisa de implementação/ensaio.
+- **Fotos aprovado após pesquisa:** recuperar fotos pela conta, com cache no celular. Q4 definiu excluir foto com a refeição e registrar offline para sincronizar depois. Limites, retenção e implementação segura do ciclo privado serão detalhados; hospedagem continua adiada e recuperação ainda precisa de implementação/ensaio.
 - **Confirmado após clarificação:** “Entregar histórico visual, análise nutricional e dicas revisadas juntos na primeira versão”. V1-046 registra o conjunto, sem adiar análise/dicas silenciosamente; regras/fontes/revisão e implementação ainda precisam ser feitas.
+
+Q4 posterior: refeição excluída leva sua foto/miniatura; filas/uploads não podem recriá-las. Offline usa fila durável privada (026), com pendência explícita e confirmação/reconciliação posterior. Esta é a escolha do TrainForge, não comportamento atribuído aos produtos pesquisados.
 
 ## Critérios a levar para banco/backend/frontend
 

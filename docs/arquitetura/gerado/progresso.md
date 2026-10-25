@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `12ef91daefac71e5`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `ce2998587e29c294`.
 
 **16/47 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 

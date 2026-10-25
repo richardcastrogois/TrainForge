@@ -119,3 +119,11 @@ Em25/10, o autor exigiu configuração completa antes da busca/seleção de trei
 - Campos físicos do formulário legado não se tornam obrigatórios por existir no código antigo; a matriz finalidade/campo/regra/contrato será detalhada na047.
 
 [Decisões completas e categorias de campos](../execucao/v1/decisoes-piloto.md) · [Trilha por área](../execucao/v1/trilha-implementacao.md).
+
+## Decisões Q4 — fila e exclusão de foto planejadas
+
+Q4 exige registro offline durável (026) e exclusão de foto com a refeição (042/045). Servidor mantém o estado confirmado; aparelho conserva operações pendentes privadas com titular estável, identidade idempotente e versões para reconciliação. O pending atual do formulário em memória não entrega essa persistência.
+
+Banco, arquivo/miniatura e fila precisam de exclusão coordenada: cancelar criação/upload não enviados; impedir recriação após exclusão confirmada; retentar limpeza de arquivo com falha sem restabelecer acesso. Outro aparelho reconcilia cache ao conectar. Revisões textuais não justificam foto excluída acessível.
+
+Esta é modelagem a implementar, sem nova migration/tabela/armazenamento aplicado. Formato, proteção em repouso, limites e ciclo de conta serão definidos/ensaiados antes do uso privado. [Decisões completas](../execucao/v1/decisoes-piloto.md).

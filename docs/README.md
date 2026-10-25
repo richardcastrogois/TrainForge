@@ -11,7 +11,7 @@ Atualizado em **25/10/2026**. Este índice define a leitura atual; datas dentro 
 | Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
 | Retomar o APK disponível e testar | [Avaliação Android e checkpoint atual](execucao/v1/avaliacao-android.md) |
 | Consultar alimentos reais no app | [Consulta pública e limites](execucao/v1/alimentacao-consulta.md) |
-| Privacidade e ciclo da conta | [V1-013: implementação e aceite pendente](execucao/v1/privacidade-013.md) |
+| Privacidade e ciclo da conta | [V1-013: implementação e limites do ciclo privado](execucao/v1/privacidade-013.md) |
 | Base alimentar real no banco | [V1-019: importação6369registros e limites](execucao/v1/alimentacao-importacao.md) |
 | Catálogo real entregue | [V1-014: consulta e limites](execucao/v1/catalogo-consulta.md) |
 | O caminho até o primeiro APK | [Plano macro da V1](execucao/v1/plano-macro.md) |
@@ -27,7 +27,7 @@ Atualizado em **25/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Prioridade vigente 25/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md). Q1 e agrupamento por refeição/alimento confirmados; histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Q2 confirmou recuperação das fotos pela conta, com cache no celular. Q3 confirmou configuração completa, trocas compatíveis/agenda editável e retomada/parcial;047 planeja a configuração privada. Próximo bloco Q4 sobre exclusão de fotos e uso offline. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
+**Prioridade vigente 25/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md). Q1 e agrupamento por refeição/alimento confirmados; histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Q2 confirmou recuperação das fotos pela conta, com cache no celular. Q3 confirmou configuração completa, trocas compatíveis/agenda editável e retomada/parcial;047 planeja a configuração privada. Q4 confirmou apagar foto com a refeição e registrar offline para sincronizar depois (026 ainda todo). Próximo bloco Q5 sobre apresentação da configuração e nomes estrangeiros. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
 
 **Aplicativo disponível:** APK Android debug **0.3.0+13**, API Go **0.5.1 / 25 operações**, PostgreSQL local. Autenticação/privacidade e alimentação manual possuem evidências reais. Há 73 metadados de movimento e 6.369 referências alimentares; nenhuma prática foi liberada por aplicar o visual.
 

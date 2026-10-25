@@ -290,3 +290,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - NovaV1-047(todo) explicita configuração privada Go/SQL/Flutter, com revisão/versão/concorrência;015 depende dela,044 herda o requisito via015 e035 exige o aceite integrado.017/023 incorporam retomada/parcial sem conclusão automática. Nenhum statusdone alterado.
 - Próximo blocoQ4:destino da foto ao excluir refeição e funcionamento offline. Sem mudança de código/API/migration/APK, dado privado, fonte de conteúdo ou serviço externo; Swagger e GraphifyAST preservados. Não repetidos login/import/restore ou testes deapp.
 - Validação documental: geração reproduzível, dependências/requisitos/entradas/links conferidos;13testes documentais passaram e diff sem erros. Commit/push seguem a autorização existente. Esses testes não comprovam funcionamento do novo fluxo noAPK.
+
+## 25/10/2026 — respostas Q4, exclusão e offline
+
+- Autor aprovou excluir foto junto com a refeição e registrar alimentação/andamento offline para sincronizar depois. Decisões, trilha, escopo, matriz, frontend, modelo planejado, segurança e handoff atualizados.
+- V1-026 existente foi detalhada, sem nova história: fila durável privada por titular/identidade/versão, estados, proteção em repouso, limites, recuperação e retentativa.042/045 coordenam arquivo/cache/fila;046 separa pendentes de resultados confirmados e035 exige o aceite.028 recebe riscos/controles. Nenhum done alterado.
+- Consulta Graphify existente e inspeção dirigida confirmaram pending do formulário em memória; não equivale à fila que sobrevive ao processo. Sem código/API/migration/APK ou acesso/modificação de dados privados, sem repetir Google/import/restore. Swagger e GraphifyAST não regenerados.
+- Próximo blocoQ5:apresentação da configuração e nomes alimentares estrangeiros, com quatro idiomas preservados. Hospedagem/contratação continuam adiadas.
+- Validação documental: geração reproduzível, dependências/requisitos/entradas/links locais conferidos;13testes documentais passaram e diff sem erros. Não comprova funcionamento da fila ou exclusão de fotos noAPK.

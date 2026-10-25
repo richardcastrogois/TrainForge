@@ -16,13 +16,19 @@ Agrupar por refeição e oferecer também a visão por alimento, usando os mesmo
 
 A análise mostra somente os registros disponíveis, com período/fuso, dias com dados, estimativas, métodos e desconhecidos. Dicas exigem fonte, versão, regra e revisão humana; não diagnosticar deficiência ou criar metas clínicas por diário parcial.
 
-Após a [pesquisa comparativa de fotos](pesquisa-fotos-historico.md), o autor aprovou **recuperar fotos pela conta, com cache no celular**. Fotos já sincronizadas devem acompanhar o histórico em outro aparelho; rascunhos não enviados não têm recuperação garantida. Retenção/limites/exclusão serão definidos antes da liberação. Não autoriza hospedagem ou envio de fotos agora.
+Após a [pesquisa comparativa de fotos](pesquisa-fotos-historico.md), o autor aprovou **recuperar fotos pela conta, com cache no celular**. Fotos já sincronizadas devem acompanhar o histórico em outro aparelho; rascunhos não enviados não têm recuperação garantida. Q4 definiu excluir foto com a refeição; retenção/limites e mecanismo de limpeza serão detalhados antes da liberação. Não autoriza hospedagem ou envio de fotos agora.
 
 ## Respostas Q3 incorporadas em 25/10
 
 O autor escolheu configuração completa antes de procurar/selecionar treino (V1-047), troca de exercícios compatíveis e edição de dias/horários (015/044), além de oferecer retomada ou encerramento parcial de treino interrompido (017/023).
 
 Completar o contexto exige finalidade para cada campo, revisão e persistência privada; não herdar obrigatoriedade de peso/altura/idade/gordura do legado ou reativar geração por IA. Consulta de referências e alimentação conservam seu escopo. Mudanças respeitam as regras humanas, direitos e versões; não alteram sessões passadas nem inventam dose, progresso ou conclusão. [Detalhes e matriz de campos](decisoes-piloto.md).
+
+## Respostas Q4 incorporadas em 25/10
+
+Excluir refeição inteira também exclui foto/miniaturas, sem galeria separada; coordenar banco/arquivos/cache/fila para retentativa não recriar dados excluídos (042/045).
+
+Registrar alimentação e andamento de treino offline, com dados disponíveis e uso permitido, salvando em fila durável privada e mostrando pendência até confirmar/reconciliar na API (026). Troca de conta, revogação, conflito e falha do processo não podem misturar titulares ou duplicar registros. Reconhecimento de foto tem disponibilidade própria, sem promessa de modelo local. [Critérios completos](decisoes-piloto.md).
 
 ## Compromissos da V1
 
@@ -56,7 +62,7 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
 2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
 3. Configuração completa, os dois caminhos de treino com trocas compatíveis/agenda e retomada/parcial, alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
-4. Sessões idempotentes, retomada, logout/revogação e isolamento de conta verificados.
+4. Sessões idempotentes, retomada, registro offline durável/sincronização, logout/revogação e isolamento de conta verificados; exclusão da refeição/foto não é desfeita por reenvio.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.
 7. Notas de versão explicam cobertura/limites. Aceite e feedback da esposa registrados somente quando acontecerem.

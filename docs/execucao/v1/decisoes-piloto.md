@@ -1,4 +1,4 @@
-> Estado vigente 25/10: Q1/Q2/Q3 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; próximo bloco Q4. As decisões antigas são preservadas no seu recorte.
+> Estado vigente 25/10: Q1/Q2/Q3/Q4 registrados ao final. Visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão estão confirmados. Recuperação das fotos pela conta com cache no celular aprovada após pesquisa; Q3 confirmou configuração completa, trocas compatíveis/agenda e retomada/parcial; Q4 confirmou foto excluída com a refeição e registros offline sincronizados depois; próximo bloco Q5. As decisões antigas são preservadas no seu recorte.
 
 > Atualização22/10: gratuitas primeiro; teto futuro de avaliação **R$400**, preservando preferência por compra única. Sem compra/assinatura autorizada. [Comparativo único](../../conteudo/opcoes-apis-exercicios.md). Referências anteriores aUS$19 abaixo são históricas.
 
@@ -157,10 +157,41 @@ Dias/horários são escolhas do usuário sujeitas às regras de frequência/recu
 
 O autor aprovou **oferecer retomar ou encerrar como parcial** quando interromper um treino. Preservar os eventos e medidas efetivamente confirmados, sem concluir por saída de tela, relógio decorrido, mudança de dia ou término do processo.
 
-Pausado, parcial e concluído são estados distintos. Encerrar como parcial é uma ação explícita; retornar ao app oferece a recuperação do estado real. Timer, dose prevista e realizado permanecem separados. Retentativa/reenvio não cria outra execução da mesma ocorrência; expiração da sessão de login não autoriza perder silenciosamente o registro. V1-017/023 tratam persistência, idempotência e recuperação; o comportamento offline/filas privadas ainda será detalhado no Q4.
+Pausado, parcial e concluído são estados distintos. Encerrar como parcial é uma ação explícita; retornar ao app oferece a recuperação do estado real. Timer, dose prevista e realizado permanecem separados. Retentativa/reenvio não cria outra execução da mesma ocorrência; expiração da sessão de login não autoriza perder silenciosamente o registro. V1-017/023 tratam persistência, idempotência e recuperação; o Q4 abaixo confirmou registros offline e exige detalhar/testar a fila privada durável.
 
 ### Próxima decisão e limites da rodada
 
-As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. Próximo bloco **Q4**, com foco nas escolhas ainda abertas de exclusão das fotos e uso offline. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
+As três respostas Q3 estão registradas. O detalhamento de campos por finalidade/fonte e os contratos/modelos continuam tarefas de implementação da047; regras/conteúdo permitidos continuam gates próprios. O Q4 abaixo resolveu exclusão da foto e uso offline; próximo bloco Q5 sobre apresentação da configuração e nomes estrangeiros. Não reabrir OAuth, hospedagem, caregiver/paciente ou escopo alimentar já decididos.
 
 Esta rodada altera planejamento e critérios. Nenhuma configuração, composição ou retomada foi implementada por atualizar estes documentos; nenhuma história nova foi marcada como concluída.
+
+## Decisões Q4 — 25/10/2026
+
+### Excluir a refeição também exclui a foto
+
+O autor escolheu **“Excluir a foto junto com a refeição”**. A exclusão da refeição inteira deve remover seu anexo privado e miniaturas do armazenamento ativo e invalidar acesso/cache. Não criar galeria separada por inferência. V1-045 cobre a ação de refeição e V1-042 o ciclo do arquivo.
+
+A foto pertence ao agrupamento: remover somente um alimento não deve apagar os demais itens. Excluir somente a imagem, quando essa ação existir, não apaga quantidades/cálculos confirmados. Revisões textuais e registros mínimos seguem a política explicitada; não conservar uma cópia acessível da imagem excluída como revisão.
+
+Se a refeição for excluída antes do primeiro envio, cancelar também criação/upload pendentes. Retentativa ou resposta atrasada não pode recriar refeição/foto. Outro aparelho desconectado aplica a invalidação ao reconciliar; não prometer apagar imediatamente suas cópias offline ou arquivos exportados pelo usuário.
+
+Backups continuam sujeitos à política documentada, com expiração manual e bloqueio de retorno no restore. Não prometer apagamento físico instantâneo nos backups existentes. Exclusão pendente e confirmada precisam ser apresentadas com honestidade. A resposta é uma regra de produto; nenhum dado real deve ser apagado agora para simulá-la.
+
+### Registrar offline e sincronizar depois
+
+O autor escolheu **“Registrar offline e sincronizar depois”**. Com dados disponíveis e uso permitido, salvar alimentação e andamento no aparelho, mostrar **pendente** e enviar/reconciliar quando puder executar com conexão. V1-026 já existe e foi detalhada; não criar outra história para a mesma fila.
+
+- Gravação local durável precede o aceite de salvo no aparelho; falha de armazenamento não produz pendente inexistente. Fechar o processo não deve perder operação aceita localmente.
+- Cada operação mantém titular estável, identidade/chave idempotente, versão e conteúdo necessário ao reenvio. Resposta perdida é reconciliada com a mesma identidade, sem criar outro consumo/sessão.
+- Conta diferente não lê nem envia a fila de outra pessoa. Logout/revogação bloqueiam acesso/envio; exclusão da conta impede recriação por pendência antiga. Mesmo e-mail não autoriza migrar a fila para novo titular.
+- Fila/anexos/cache privados exigem proteção em repouso, limites, política de backup/limpeza e testes Android/iOS pertinentes. Tokens não são copiados para o payload da fila ou logs.
+- Conflito de revisão, material retirado, dados insuficientes, falta de autorização e falha de rede são distintos. Retentativa não altera silenciosamente quantidade, versão, data/fuso ou dose.
+- Registro pendente tem rótulo próprio; não vira confirmação da API nem entra silenciosamente nos subtotais/análises oficiais. Cálculo ainda não confirmado é prévia ou indisponível.
+- Retentativa temporária é limitada e respeita o servidor. Não prometer execução contínua em segundo plano.
+- Reconhecimento de foto tem disponibilidade própria. Offline não comprova modelo local nem permite inventar identificação, quantidade, nutrientes ou liberar conteúdo bloqueado.
+
+### Critérios de encerramento e próximo bloco
+
+Testar processo encerrado/reaberto, confirmação no servidor com resposta perdida, reenvio, conta trocada, revogação, conflito e exclusão concorrente com upload/reenvio. Usar base/arquivos isolados; aceite real é distinto de fixtures. A [matriz de segurança planejada](../../arquitetura/seguranca-operacao.md) orienta os ensaios.
+
+As escolhas Q4 estão registradas;026/042/045 e gate035 continuam pendentes. O envio incerto atual no formulário é em memória e não prova fila durável. Nenhuma migration, arquivo privado, dado real ou APK foi alterado. Próximo bloco **Q5**, apresentação da configuração e nomes de alimentos estrangeiros, preservando quatro idiomas e referências aprovadas.

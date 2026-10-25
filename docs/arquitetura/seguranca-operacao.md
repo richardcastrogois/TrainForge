@@ -16,6 +16,21 @@ A exclusão remove dados correntes e revoga sessões após confirmação; o regi
 
 Naquele snapshot anterior ao aceite local, loginGoogle e configuraçãoOAuthrelease ainda estavam pendentes; foram posteriormente conferidos conforme a seção vigente acima. HTTPS/distribuiçãorelease, iOS, carga e infraestrutura continuam sem validação completa. Não há certificação de segurança ou milhões simultâneos. A lista abaixo mantém os critérios para próxima exposição e versões posteriores, sem reclassificar planejamento como entrega.
 
+## Q4 — controles a implementar para offline e fotos
+
+Em25/10, o autor aprovou excluir foto com a refeição e registrar alimentação/andamento offline para sincronizar depois.026/042/045 continuam pendentes; esta matriz não comprova implementação nem proteção já verificada.
+
+| Risco/cenário | Critério do novo recorte |
+|---|---|
+| Processo encerra após salvar localmente | Operação durável/protegida recuperada, ou falha local informada sem falso aceite |
+| API confirma e resposta se perde | Reconciliar a mesma identidade/chave, sem segundo consumo/sessão |
+| Conta muda, é revogada ou excluída | Fila inacessível a outro titular e sem envio indevido; não reaplicar na conta recriada |
+| Refeição excluída durante upload/reenvio | Cancelar/reconciliar; foto/miniatura não reaparecem nem ficam acessíveis como revisão |
+| Falha entre remoção no banco e no arquivo | Acesso revogado e limpeza retentável; não declarar limpeza física antes de comprová-la |
+| Outro aparelho ou backup contém cópia antiga | Aplicar exclusões na reconciliação/restore; explicar limites sem promessa de limpeza instantânea externa |
+
+Usar dados/arquivos isolados. Definir limites, proteção em repouso, recuperação, ciclo de chaves, backup e expurgo antes de liberar filas/imagens privadas. Autenticação válida condiciona sincronização; tokens não ficam no payload da fila/log. Nenhum dado real foi apagado nesta rodada. [Decisões Q4](../execucao/v1/decisoes-piloto.md).
+
 ## Critérios de segurança e exposição
 
 - Identidade Google verificada com assinatura/issuer/audience/expiração, identidade estável e associação explícita. Preservar as verificações já existentes. Referência: [Google backend auth](https://developers.google.com/identity/sign-in/web/backend-auth).

@@ -46,11 +46,18 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 - **Configuração:** completa e revisada antes da busca/seleção de treino. Nova V1-047 para persistir o contexto privado em Go/SQL/Flutter, com campos justificados por finalidade/fonte; não reativar geradores nem herdar dados físicos obrigatórios do legado.
 - **Ajustes:** permitir trocar exercícios compatíveis e editar dias/horários dentro das regras humanas. Preservar versão/autoria/dose e histórico; V1-015/044.
 - **Interrupção:** oferecer retomar ou encerrar como parcial, preservando eventos confirmados e idempotência; V1-017/023. Saída de tela/tempo decorrido não concluem treino.
-- **Próximo bloco:** Q4, escolhas de exclusão de fotos e funcionamento offline. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
+- **Q4 posterior:** escolhas de exclusão e offline registradas abaixo; próximo bloco Q5. Modelos/campos/regras e implementação seguem pendentes; respostas não encerram histórias.
+
+## Respostas Q4 incorporadas — 25/10/2026
+
+- **Exclusão:** apagar refeição inteira também apaga foto/miniaturas; coordenar banco/arquivos/cache/fila. Upload ou resposta atrasada não recria dados excluídos (042/045).
+- **Offline:** registrar alimentação e andamento com dados disponíveis, em fila durável privada, com pendência até confirmar/reconciliar (026 existente, sem nova história).
+- **Isolamento:** conta trocada/revogação/exclusão bloqueiam acesso/envio indevidos; resposta perdida não duplica registro. Reconhecimento de imagem não foi validado offline.
+- **Próximo bloco:** Q5, apresentação da configuração completa e nomes estrangeiros. Nenhum gate funcional ou de segurança foi encerrado por documentar a escolha.
 
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1/Q2/Q3 foram respondidos. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 detalha exclusão das fotos e uso offline.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1/Q2/Q3/Q4 foram respondidos. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhará campos por finalidade/fonte. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -86,11 +93,12 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | D-02 | Respondido:cuidador pratica durante pausas do seu trabalho, usando os próprios dados | Contexto de pausa sem cadastro de paciente ou autorização delegada |
 | D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; recuperação das imagens pela conta com cache aprovada noQ2, ciclo privado a detalhar |
 | D-04 | Q3: configuração completa antes da busca/seleção; detalhar campos por finalidade/fonte, sem importar exigências físicas do legado | V1-047; revisão, validação e persistência privada antes de015/044 |
-| D-05 | O que funciona offline e qual perda de rascunho é aceitável | Cache, fila local, sincronização, proteção e conflitos |
+| D-05 | Q4: alimentação/andamento offline e sincronização posterior; operação aceita no aparelho exige durabilidade | V1-026; fila privada por titular, pendente explícito e recuperação sem duplicação |
 | D-06 | Prioridade dos países/idiomas, apresentação de fontes estrangeiras e termos de entendimento difícil | Localização e cobertura alimentar/treino revisada |
 | D-07 | Respondido: agrupar por refeição e também visualizar por alimento | V1-045; duas visões sem duplicar consumo/nutrientes |
 | D-08 | Respondido: histórico visual, análise nutricional e dicas revisadas juntos na primeira versão | V1-046; regras/fontes/revisão ainda a elaborar, sem inferência clínica |
 | D-09 | Respondido: oferecer retomar ou encerrar como parcial | V1-017/023; persistir somente eventos reais e não concluir automaticamente |
+| D-10 | Respondido: excluir refeição inteira também exclui sua foto | V1-042/045; invalidar arquivos/cache/fila e impedir recriação por reenvio |
 
 **Gate 00:** decisões registradas com data e consequência; fluxo local e distribuição pública separados; conteúdo permitido identificado ou bloqueio explícito. Sem decisão essencial, seguir apenas nos ajustes independentes de organização e qualidade.
 
@@ -104,8 +112,8 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | BD-02 | Configuração completa persistida (047) | Modelar campos necessários e justificados em D-04, confirmação/versão e alteração concorrente, unidades/localidade quando usadas | Ciclo criar/consultar/alterar privado validado; novo usuário sem fatos físicos preenchidos e histórico preservado |
 | BD-03 | Contexto do cuidador praticante | Usar a conta do próprio cuidador e registrar somente o contexto de pausas aprovado; não coletar dados da pessoa assistida | Nenhuma permissão extra por profissão; contexto respeita requisitos humanos e não inventa dose/duração |
 | BD-04 | Treino, agenda e execução | Conferir o modelo existente contra as regras aprovadas; versão de adesão, ocorrência, eventos, dose de origem versus execução observada | Constraints e transações rejeitam duplicidade, vínculo alheio e transição inválida |
-| BD-05 | Servidor versus aparelho | Fechar política por dado; servidor autoritativo, tokens no armazenamento seguro, preferência local e eventual outbox privada ligada à conta | Inventário inclui TTL, logout, troca de conta, exclusão, sincronização e falha do processo |
-| BD-06 | Recuperação de envio | Se D-05 exigir durabilidade, persistir identificador/corpo da operação e reconciliar resposta perdida sem novo lançamento | Ensaio em banco descartável: servidor confirmou, resposta sumiu, processo encerrou e retomada não duplicou |
+| BD-05 | Servidor versus aparelho | Fechar política por dado; servidor autoritativo, tokens no armazenamento seguro, preferência local e outbox privada durável ligada à conta (Q4/026) | Inventário inclui TTL, logout, troca de conta, exclusão, sincronização e falha do processo |
+| BD-06 | Recuperação de envio | Q4 exige persistir operação/titular/identidade antes do aceite local e reconciliar resposta perdida sem novo lançamento | Ensaio em banco descartável: servidor confirmou, resposta sumiu, processo encerrou e retomada não duplicou |
 | BD-07 | Índices, volume e retenção | Conferir índices com consultas reais, paginação, crescimento de revisões/idempotência e política de expurgo; JSONB somente onde fizer sentido | EXPLAIN em base de teste, ausência de leitura excessiva e expurgo que preserve invariantes |
 | BD-08 | Backup e restauração | Preservar ensaios já feitos; ampliar só quando schema/retorno de dados mudar. Definir proteção das cópias, retenção e aplicação do ledger de exclusão | Roteiro e recuperação conferidos no recorte alterado; ausência de retorno indevido de dados excluídos |
 | BD-09 | Refeições, itens e análises | Modelar refeição com itens versionados, revisões e anexos conforme política aprovada; preservar entradas antigas sem agrupamento inventado | Duas visões sem dupla contagem, isolamento por titular e cálculos consistentes após correção/exclusão (V1-045/046) |
@@ -156,7 +164,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | SEG-04 | Superfície da API | Revisar limites por rota, JSON/entrada ambígua, uploads se existirem, paginação, enumeração, proxy e orçamento por instância | Requisição inválida/abusiva é limitada sem vazar conteúdo interno; casos concorrentes testados |
 | SEG-05 | Dependências e segredos | Inventário, versões, lockfiles, análise Go/Flutter/nativo, govulncheck e varredura de segredos com resultado real | Achados triados/corrigidos, exceções justificadas e nenhum segredo em Git/APK/log/artefato |
 | SEG-06 | Dados em repouso e backup | Comprovar proteção de tokens, outbox e eventuais fotos, transferência/backup Android/iOS, dumps e volume conforme ameaça | Inspeção dos mecanismos e ensaio no ambiente pertinente; não inferir criptografia de uma ACL |
-| SEG-07 | Privacidade ao ampliar dados | Finalidade/coleta mínima, exportação/exclusão, retenção e consentimento incluem imagens e resultados do reconhecimento | Nenhum anexo/resultado órfão após exclusão; política coincide com comportamento |
+| SEG-07 | Privacidade ao ampliar dados | Incluir fotos/miniaturas/filas em exportação, exclusão e retenção; Q4 exclui foto com a refeição | Sem cópia ativa órfã ou recriada por reenvio; backups e aparelhos offline têm limites explícitos |
 | SEG-08 | Artefato de distribuição | Revisar assinatura, permissões, debug flags, configuração de rede, endpoint e falha segura em Android/iOS | APK release e build iOS validados em ambientes próprios; HTTPS exigido fora do desenvolvimento autorizado |
 
 **Gate 03:** requisitos aplicáveis da [ASVS](https://asvs.owasp.org/) e [MASVS](https://mas.owasp.org/MASVS/) ligados a evidência, riscos residuais escritos, nenhuma falha bloqueante conhecida sem tratamento e escopo de revisão explícito. Sem dizer “100% seguro”, sem nota inventada e sem chamar scanner de pentest. Testes locais não encerram homologação de exposição pública.
@@ -174,7 +182,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | FE-03 | Componentes e estado | Separar controllers/viewmodels, widgets e repositories; refinar formulários grandes sem reescrever tudo | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
 | FE-04 | Configuração e treino | Concluir/revisar configuração antes de buscar treino; integrar trocas compatíveis e dias/horários, adesão/agenda e retomada ou parcial | Jornada real alinhada a047/015/044/017/023; sem gráfico/série/dose fictícios e com limites do conteúdo explícitos |
 | FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
-| FE-06 | Retomada/offline | Integrar outbox/cache aprovados, salvar/restaurar rascunho quando previsto, informar pendente versus confirmado | Fechar/reabrir, resposta perdida e troca de conta sem duplicar lançamento ou sugerir sucesso falso |
+| FE-06 | Retomada/offline | Integrar fila durável privada de alimentação/andamento; estados salvo no aparelho, pendente, confirmado e falha/conflito | Processo encerrado, resposta perdida, conta trocada e exclusão concorrente sem duplicação/recriação ou falso sucesso (026/042/045) |
 | FE-07 | Quatro idiomas | Estrutura de localização, pt-BR, pt-PT, inglês e espanhol; números, datas, plurais, erros e componentes nativos | Jornada integral em cada idioma e texto grande sem cortes; tradução de UI não altera identidade do alimento |
 | FE-08 | Acessibilidade completa | TalkBack/VoiceOver, foco/ordem/rótulos, contraste e estados, fonte/display ampliados, toque/teclado e redução de movimento | Testes automatizados pertinentes e validação com pessoas do público; não depender só do tema |
 | FE-09 | Figma e estados | Conferir famílias com contexto/exportação autorizada suficiente, tema, loading, erro, vazio, indisponível, teclado, navegação e retorno | Comparação com a referência correta e diferenças necessárias registradas; nada “exatamente igual” sem referência |
@@ -250,15 +258,15 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Q1/Q2/Q3 foram respondidos. Avançar a Q4 com as lacunas de exclusão das fotos e uso offline, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Não apresentar todas de uma vez. Q1/Q2/Q3/Q4 foram respondidos. Avançar a Q5 sobre apresentação da configuração completa e nomes de fontes estrangeiras, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
 | Q1 | Resultado da primeira versão | Dois caminhos; cuidador como praticante; foto com correção e quantidade informada | Respondido24/10; registradas decisões e corrigida interpretação |
 | Q2 | Fotos, histórico e observações | Refeições/alimentos; histórico/análise/dicas juntos; recuperação das fotos pela conta com cache | Respondido em 25/10; sem contratação ou implementação por inferência |
 | Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047 todo, modelos/campos e regras ainda a detalhar |
-| Q4 | Segurança e privacidade | Destino da foto ao excluir refeição e registros privados offline; reutilizar recuperação pela conta já aprovada | Próxima conversa; sem reabrir hospedagem/OAuth ou solicitar envio de fotos |
-| Q5 | Frontend e idiomas | Jornada simples, referências disponíveis, prioridade regional/termos e comportamento com fonte estrangeira | Aguardar contratos e referências suficientes |
+| Q4 | Segurança e privacidade | Excluir foto com a refeição; registrar offline e sincronizar depois | Respondido25/10;026/042/045 e revisão de segurança continuam pendentes |
+| Q5 | Frontend e idiomas | Apresentação da configuração completa e nomes alimentares estrangeiros; preservar pt-BR/pt-PT/en/es | Próxima conversa; sem repetir chamadas Figma limitadas |
 | Q6 | Qualidade e aceite | Dispositivos de teste, cenário de uso/carga e critérios de aceite humano | Definir antes dos ensaios correspondentes |
 
 ## 13. Figma — impedimento e alternativa permitida
@@ -305,4 +313,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. Q1/Q2 estão registrados, incluindo a recuperação das fotos pela conta com cache. Próxima conversa Q4, exclusão de fotos e uso offline. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Este incremento é documental. Q1/Q2/Q3/Q4 estão registrados; próximo bloco Q5, apresentação da configuração e nomes estrangeiros. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.

@@ -648,7 +648,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; offline/fila ainda será detalhado noQ4.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -765,6 +765,8 @@ Critérios de aceite:
 - Fotos sincronizadas são recuperáveis pela mesma conta em outro aparelho, com cache local; titularidade, limites, retenção/exclusão e estado de envio explícitos; rascunho não enviado não tem recuperação prometida
 - Histórico visual apresenta registros confirmados e estado de foto ausente/sincronização, sem apagar consumo quando imagem falta
 - OCR/barcode, imagem de atividade e gesto continuam recortes distintos posteriores; observações nutricionais dependem de escopo/regras próprias e não inferem deficiência de registros incompletos
+- Q4:excluir refeição inteira remove foto/miniaturas do armazenamento ativo e invalida acesso/cache; upload, resposta atrasada ou retentativa não recriam dados nem mantêm cópia acessível como revisão
+- Cancelamento/exclusão antes do primeiro envio cancela criação/upload; exclusão confirmada é reconciliada nos outros aparelhos quando conectarem, com limites de backups/cópias exportadas explícitos
 
 Tarefas e subtarefas:
 
@@ -780,12 +782,13 @@ Tarefas e subtarefas:
   - Vincular imagem e itens sem depender de caminho local do aparelho como identidade do registro
   - Exibir falha/ausência/pendência de foto com registro textual preservado
   - Validar acesso entre contas, edição/exclusão/retentativa e recuperação conforme política aprovada
+  - Integrar exclusão coordenada de refeição/arquivo/miniatura/cache/fila; testar upload/resposta tardia, cancelamento antes do envio e falha retentável de limpeza sem restabelecer acesso
 
 Validação: Ensaio com imagens autorizadas e resultado real editado; métricas de identificação e correções registradas; Integração de foto revisada→quantidade informada→cálculo/consumo→histórico, sem fixtures como aceite humano; Testes de baixa confiança, reanálise/duplo envio, dados desconhecidos, titularidade e recuperação/exclusão
 
 Entregas: Fluxo real de reconhecimento/revisão/quantidade/confirmação; Política de armazenamento e histórico visual privado; Resultados da prova de identificação e testes do ciclo privado
 
-Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045, histórico/análise/dicas juntos na046 e recuperação das fotos pela conta com cache no celular após comparação de quatro produtos. Detalhar limites/retenção/exclusão e comprovar recuperação real; nenhuma funcionalidade concluída nesta rodada. Sem hospedagem, serviço pago ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores.
+Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045, histórico/análise/dicas juntos na046 e recuperação das fotos pela conta com cache no celular após comparação de quatro produtos. Detalhar limites/retenção/exclusão e comprovar recuperação real; nenhuma funcionalidade concluída nesta rodada. Sem hospedagem, serviço pago ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores. Q4:foto excluída com a refeição; registro offline sincronizado depois na026. Implementar ciclo privado sem recriar dados por upload/reenvio; política de backups mantém limites já documentados.
 
 ### V1-045 — Organizar registros por refeição e por alimento
 
@@ -804,6 +807,7 @@ Critérios de aceite:
 - Alimentos de uma foto podem ser revisados e vinculados à refeição; foto não é identidade nem prova de consumo confirmado
 - Entrada antiga sem informação de refeição permanece preservada e identificável; não inventar agrupamento ou nome de refeição do passado
 - Ownership, fuso/data, revisões, idempotência e cálculos/desconhecidos da020 são mantidos nos novos agrupamentos
+- Q4:excluir refeição inteira remove seus itens do histórico ativo e exclui foto/miniaturas; ação em só um alimento preserva os demais itens, sem galeria de foto criada por inferência
 
 Tarefas e subtarefas:
 
@@ -816,6 +820,7 @@ Tarefas e subtarefas:
 - V1-045-T03 — Validar consistência e privacidade
   - Testar item criado/corrigido/excluído, reenvio e leitura entre contas em base descartável
   - Conferir totais, unidades/métodos, ausência e o registro humano existente sem alterá-lo por inferência
+  - Testar cancelamento/exclusão da refeição com operações pendentes e reenvios;042 implementa remoção de foto sem cópia ativa órfã
 
 Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Compatibilidade de registros anteriores e titularidade verificadas
 
@@ -842,6 +847,7 @@ Critérios de aceite:
 - Não concluir deficiência, criar meta clínica, prescrever suplemento/dose ou tratar diário parcial como ingestão integral; quando dados/regra faltam mostrar a limitação
 - Fotos/miniaturas respeitam política aprovada e titularidade; análise do registro continua disponível se uma imagem faltar
 - Testar consistência, correção/exclusão, período/fuso, desconhecidos, dados insuficientes, acessibilidade e mensagens revisadas antes do aceite humano
+- Q4:registros pendentes locais ficam identificados e separados dos subtotais/análises confirmados; reconciliação/correção/exclusão atualiza o resultado uma vez, sem contar duplicado
 
 Tarefas e subtarefas:
 
@@ -896,7 +902,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Próximo blocoQ4 trata exclusão de fotos e uso offline; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
+Handoff: 25/10:trilha por área e respostasQ1/Q2/Q3 governam o recorte. Esta história organiza composição/estado Flutter; configuração privada completa tem modelo/jornada próprios na047(todo). Preservar o checkpoint0.3.0+13 e o runtime; não reativar onboarding IA/manual-generator. Q4 confirmou excluir foto com refeição e registros offline sincronizados depois na026. Próximo blocoQ5 trata apresentação da configuração e nomes estrangeiros; regras/conteúdo e aceites continuam pendentes. 101testesFlutter são a medição histórica24/10, sem novo teste deapp nesta rodada.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -1035,28 +1041,42 @@ Como usuário, quero ler material já autorizado e saber quando um registro aind
 
 Dependências: V1-023, V1-025
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/seguranca-operacao.md
 
 Critérios de aceite:
 
-- Cache tem versão, validade, direitos e isolamento por conta; sem cache de conteúdo bloqueado
-- Fila guarda somente ações reais do usuário, idempotentes, com pendente/enviado/conflito
-- Retirada de conteúdo e logout invalidam acesso; UI não mostra sucesso antes da confirmação adequada
+- Cache tem versão, validade, direitos e isolamento por conta; offline não libera conteúdo bloqueado ou sem requisito/apoio necessário
+- Q4:alimentação e andamento podem ser registrados offline com dados disponíveis; operação aceita no aparelho é durável e privada, com pendente/enviando/confirmado/falha/conflito explícitos
+- Identidade da operação, titular, chave idempotente, payload e versão necessários sobrevivem ao processo; reenvio/reconciliação de resposta perdida não duplica consumo/sessão
+- Conta diferente não lê nem envia fila alheia; logout/revogação bloqueiam acesso/envio e exclusão da conta impede reaplicar pendências em conta recriada
+- Fila/cache/anexos privados têm proteção em repouso e ciclo de chaves/backup/limpeza definido, limites e falha segura de armazenamento; nenhum token no payload/log
+- Conflito de revisão, rede, autorização, conteúdo retirado e dados insuficientes são distintos; não alterar silenciosamente versão/quantidade/data/fuso/dose ao reenviar
+- Excluir/cancelar antes do primeiro envio invalida operações dependentes; reenvio não recria dado excluído.042 integra o ciclo de upload/arquivo conforme essa regra
+- Pendente é visível e separado dos subtotais/análises confirmados; perda de conexão não vira confirmação da API ou dado inventado
+- Sincronização ocorre quando o app puder executar com conexão/autorização, com retentativa limitada; não prometer execução contínua em segundo plano ou reconhecimento de foto offline
 
 Tarefas e subtarefas:
 
-- V1-026-T01 — Definir limites offline
-  - Escolher armazenamento local mínimo e política de validade
-  - Definir material consultável offline e prática que exige apoio/rede
-- V1-026-T02 — Implementar sincronização
-  - Enfileirar registros reais e reenviar com chaves estáveis
-  - Resolver conflito explicitamente e testar troca de conta
+- V1-026-T01 — Definir armazenamento e limites offline
+  - Modelar fila privada durável por titular/identidade/versão e cache permitido, com proteção em repouso, limites e política de backup/limpeza
+  - Definir ciclo em logout/revogação/exclusão e impedir reaplicação a novo titular no mesmo e-mail
+  - Definir material disponível/permitido e estados de pendência/falha sem presumir catálogo completo ou modelo de reconhecimento local
+- V1-026-T02 — Implementar envio e reconciliação
+  - Persistir atomicamente antes do aceite local; reaproveitar identidade/chave ao retentar, sem novo lançamento
+  - Reconciliar confirmação com resposta perdida e tratar revisão/ownership/retirada com erro explícito
+  - Ordenar dependências, cancelamento/exclusão e retentativa limitada;042 integrará anexos sem recriar dados excluídos
+  - Mostrar salvo no aparelho versus confirmado e proteger fila/cache na mudança de conta
+- V1-026-T03 — Validar durabilidade, isolamento e recuperação
+  - Encerrar/reabrir processo após aceite local e após confirmação remota com resposta perdida
+  - Ensaiar reenvio, falha de armazenamento, conflito, conta trocada/revogada/excluída e exclusão concorrente em base isolada
+  - Conferir separação de pendentes nos totais/análises e recuperação real no Android; registrar gate nativo iOS separado
+  - Verificar exportação/exclusão/backup privados e limites antes do aceite, sem criar/apagar dados do autor por inferência
 
-Validação: Modo avião, interrupção, expiração e reconexão; Nenhum registro duplicado nem vazamento entre contas
+Validação: Testes de persistência/retentativa/idempotência, conflito, titularidade e falha de armazenamento; Ensaio com processo encerrado e resposta perdida em cliente/servidor reais de teste isolado; Aceite de pendência e sincronização sem duplicação, falso sucesso ou recriação de dados excluídos; Inspeção da proteção em repouso e ciclo de conta/backup pertinentes, sem tratar ACL como criptografia
 
-Entregas: Política de cache e fila; Recuperação verificada
+Entregas: Fila durável privada e cache permitido; Estados e sincronização integrados a alimentação/andamento; Recibo de durabilidade, reconciliação, isolamento e limites
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: 25/10:Q4 aprovou registrar offline e sincronizar depois. Pendência atual do formulário é em memória, sem fila durável; esta história continua todo. Não criar outra história para a mesma capacidade.042/045 integram exclusão de foto com refeição e upload sem recriação. Sem promessa de reconhecimento local, execução contínua em segundo plano ou sincronização já entregue; proteção, limites e aceites precisam ser implementados.
 
 ### V1-027 — Validar acessibilidade e paridade de contratos Android/iOS
 
@@ -1108,6 +1128,7 @@ Critérios de aceite:
 - Inventário e análise de Go/Flutter/Android com resultados e versões reais
 - govulncheck, análise estática e busca de segredos registram escopo/data e exceções
 - Nenhum token, dados físicos ou mídia privada em log/artefato de build; nenhuma contagem fictícia de falhas
+- Revisar fila/cache/anexos privados, proteção em repouso/ciclo de chaves/backup e exclusão coordenada aprovados noQ4; conta trocada/revogada/excluída não lê nem reaplica pendências alheias
 
 Tarefas e subtarefas:
 
@@ -1338,6 +1359,7 @@ Critérios de aceite:
 - Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1
 - Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes
 - Q3:configuração completa antes da busca/seleção, trocas compatíveis/dias/horários e retomada ou parcial validados, preservando versões e registros reais
+- Q4:offline durável, processo encerrado/reaberto e resposta perdida sincronizam sem duplicação; refeição/foto excluídas não reaparecem por upload/reenvio ou troca de conta
 
 Tarefas e subtarefas:
 
