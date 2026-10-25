@@ -247,3 +247,12 @@ Lista original recuperada da própria conversa e registrada emfrontend-etapa-07-
 Android real: atualização sem rascunho aberto, hash/assinatura/fingerprint conferidos, biblioteca com0programas, histórico/alimentos próprios/política/ajuda alcançáveis.1consumo antes/1depois; sem quantidade/consumo/cadastro/exclusão peloagente nem novoGoogle automatizado. Graphify83Dart/1235nós/1665arestas, ASTsomente. Sem novaAPI/migration/dependência/pesquisa/deploy/contratação.
 
 Não declarar todos07–12 concluídos: configuração persistida, treino/atividade, capacidades sem contrato/conteúdo, contextosFigma faltantes e iOS nativo seguem emgates explícitos. Backlog021/022/025 mantido semdone indevido.
+
+## 24/10/2026 — auditoria do produto antes de contratar mídia
+
+- Pedido vigente:entender banco, segurança, estrutura Go, campos/UX Flutter, idiomas, testes e escala antes de comprar API de GIFs. [Relatório factual](auditoria-produto-2026-10-24.md), [recibo](auditoria-produto-verificacao.json). GIF não é o único impedimento; treino completo/cuidador/foto não entregues.
+- Leitura real de schema/privilégios/contagens:PostgreSQL17.5,23tabelas;1conta/1consumo real preservados. Sem exportar valores privados.
+- Nova medição usando runtimes existentes:Flutter101testes/78,46% das linhas instrumentadas; Go71resultados aprovados/zero falhas/10testes de integração pulados,40,73% das instruções. Não repetir ensaios SQL históricos, login, importação ou restore para obter essa medição.
+- CI inspecionada:documentação/Python/Mermaid/Go/Swagger; sem Flutter, banco descartável automático, Sonar ou scanners completos. Carga ainda planejada, não medida. Nenhum nível de segurança/capacidade certificado.
+- Corrigidos textos vigentes que ainda chamavam escrita alimentar de planejamento e OAuthdebug/release de pendência anterior. Backlog recebeu workEvidence, sem novos done ou alteração silenciosa do recorte de fotoPosterior.
+- Somente documentação/recibos alterados; código/APK, conta, consumo, dados importados, serviços e sessão preservados. Validação documental:13 testes pertinentes aprovados; geração/backlog/dependências/links locais e diff sem erro, conforme recibo.

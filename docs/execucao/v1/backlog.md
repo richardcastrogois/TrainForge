@@ -499,7 +499,7 @@ Validação: Selecionar lote real no banco e consultar adesão; Rejeitar variant
 
 Entregas: API de enrollments; Fluxo de seleção humano
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-016 — Expor instrução acessível e mídia com direitos
 
@@ -531,7 +531,7 @@ Validação: Inspeção visual e acessibilidade do material real; Link indispon�
 
 Entregas: Contrato de instruction/media; Lista de ativos efetivamente liberados
 
-Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia.
+Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ## EP06 — Atividade e alimentação registradas de verdade
 
@@ -566,7 +566,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md.
+Handoff: 23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md.
+Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
@@ -922,7 +922,7 @@ Validação: Relatórios reais de scanners e testes de autorização; Revisão d
 
 Entregas: Relatório de segurança versionado sem segredos; Riscos residuais e correções
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-029 — Instrumentar requisições, consultas e falhas
 
@@ -953,7 +953,7 @@ Validação: Provocar erro controlado em staging e seguir correlação; Conferir
 
 Entregas: Runbook e painel de métricas reais; Evidência de uma jornada rastreada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-030 — Medir consultas e carga representativa
 
@@ -984,7 +984,7 @@ Validação: Relatório reproduzível de carga em ambiente autorizado; Teste de 
 
 Entregas: Baseline e orçamento de capacidade; Plano de escala condicionado a métricas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ## EP09 — Infraestrutura, CI e implantação
 
@@ -1375,7 +1375,7 @@ Validação: Ensaio com material autorizado e resultados reais; Testes de erro, 
 
 Entregas: Decisão por tipo de captura; Fluxo confirmado pelo usuário
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-043 — Desenvolver acompanhamento e alimentação avançados
 

@@ -1,6 +1,14 @@
-# Handoff vigente — frontend completo fiel ao Figma
+# Handoff vigente — auditoria do produto antes de contratar mídia
 
-Atualizado em24/10/2026. Raiz **C:/dev/TrainForge/trainforge**. A prioridade mais recente do autor é **ajustar todo o frontend para ficar exatamente igual ao Figma antes de continuar novas funcionalidades**. Ler [plano visual](frontend-fidelidade-figma.md) e [inventário atual](frontend-figma-inventory.json). Não retomar uma nova história debackend por ignorar essa mudança.
+Atualizado em **24/10/2026**. Raiz **C:/dev/TrainForge/trainforge**. O pedido mais recente é entender o que existe e o que falta em banco, segurança, backend, frontend, idiomas e escala antes de comprar uma API de GIFs. Ler primeiro a [auditoria factual](auditoria-produto-2026-10-24.md) e o [recibo](auditoria-produto-verificacao.json). A direção visual aprovada continua válida; o pedido não autoriza compra, hospedagem ou preenchimento de conteúdo por suposição.
+
+## Checkpoint da auditoria — sem alterações no aplicativo
+
+Banco real local conferido por metadados/privilégios/contagens: PostgreSQL 17.5, 23 tabelas de aplicação, 1 conta / 1 consumo humano real, 6.369 referências alimentares e 73 metadados de movimento; zero programas/adesões/execuções. API Go 0.5.1 / 25 operações; APK debug 0.3.0+13 preservado. Estrutura modular aproveitável; main monta as dependências. Não há percurso completo de treino, delegação de cuidador, identificação de comida por foto ou quatro idiomas completos. GIF é somente uma lacuna de mídia.
+
+Medição nova, sem reinstalação/reimportação/restore/login: Flutter com 101 testes, 78,46% das linhas instrumentadas; Go com 71 resultados aprovados / zero falhas / 10 testes SQL pulados, 40,73% das instruções no perfil padrão. Integrações SQL históricas continuam válidas nos seus recibos, mas não foram executadas novamente nem contadas como aprovação. CI atual não roda Flutter nem SQL descartável automaticamente; Sonar não configurado; segurança completa e carga continuam abertas.
+
+Próximo trabalho deve converter as prioridades da auditoria em incrementos pelas dependências: contexto/configuração e cuidador, material/composição humana permitidos, adesão/agenda/execução, alimentação compreensível/durável e qualidade. V1-021 permanece próxima no backlog, sem pular dependências nem marcar 015/016/017/025/028/029/030 concluídas. Foto está em V1-042 / Posterior: se for requisito para a primeira versão desejada, replanejar esse recorte explicitamente; não prometer precisão de porção por imagem. Sem nova pesquisa ampla de API; manter o registro de fornecedores existente.
 
 ## Checkpoint atual — pontos07–12 nos fluxos disponíveis
 

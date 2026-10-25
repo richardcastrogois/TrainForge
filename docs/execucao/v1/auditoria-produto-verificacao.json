@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "scope": "Auditoria estática do produto, leitura de schema/privilégios/contagens reais e nova medição de cobertura; sem escrita de dados do titular.",
+  "baseCommit": "953b1c04a042b2fb7b57a5e11f17260a2c54781f",
+  "application": {
+    "apiVersion": "0.5.1",
+    "apiOperations": 25,
+    "androidApkVersion": "0.3.0+13",
+    "buildMode": "debug",
+    "nativeIosValidated": false
+  },
+  "database": {
+    "engine": "PostgreSQL",
+    "version": "17.5",
+    "environment": "local isolated development",
+    "name": "trainforge_v1_dev",
+    "schema": "trainforge_v1",
+    "port": 15432,
+    "applicationTables": 23,
+    "rlsEnabledTables": 0,
+    "runtimeSuperuser": false,
+    "runtimeBypassRls": false,
+    "localMaxConnections": 30,
+    "apiDefaultPoolMaxConnections": 10,
+    "inspection": "metadata, privileges and aggregate counts only",
+    "snapshot": {
+      "users": 1,
+      "activeFoodEntries": 1,
+      "privateFoods": 0,
+      "foodVersions": 6369,
+      "movementMetadataVersions": 73,
+      "programItems": 0,
+      "programSessions": 0,
+      "enrollments": 0,
+      "activitySessions": 0
+    }
+  },
+  "newChecks": {
+    "flutter": {
+      "command": "flutter test --no-pub --coverage --coverage-path=.local/product-flutter-lcov.info --reporter compact",
+      "exitCode": 0,
+      "passed": 101,
+      "coverage": {
+        "kind": "instrumented Dart lines",
+        "covered": 2797,
+        "total": 3565,
+        "files": 51,
+        "percent": 78.45722300140253
+      },
+      "nativeEndToEnd": false,
+      "rawOutput": ".local/product-flutter-coverage-tests.log",
+      "rawCoverage": ".local/product-flutter-lcov.info"
+    },
+    "go": {
+      "command": "./tools/go-api.ps1 test '-coverprofile=../../.local/product-go-coverage.out' -json ./...",
+      "passedTestResults": 71,
+      "failedTestResults": 0,
+      "skippedIntegrationTests": 10,
+      "coverage": {
+        "kind": "Go statements in default run, SQL integration opt-in absent",
+        "covered": 989,
+        "total": 2428,
+        "percent": 40.733113673805605
+      },
+      "sqlIntegrationExecuted": false,
+      "rawOutput": ".local/product-go-tests.jsonl",
+      "rawCoverage": ".local/product-go-coverage.out"
+    },
+    "documentation": {
+      "generatedBacklogMapsAndLocalLinks": {
+        "command": "python tools/gerar_documentacao.py --write --check",
+        "exitCode": 0
+      },
+      "unitTests": {
+        "command": "python -m unittest discover -s tools -p 'test_documentacao*.py'",
+        "passed": 13,
+        "exitCode": 0
+      },
+      "gitDiffCheck": {
+        "exitCode": 0
+      },
+      "swaggerContractChanged": false,
+      "applicationCodeChanged": false
+    }
+  },
+  "historicalEvidence": {
+    "flutterAnalyze": "0 issues at the same source commit; not rerun for a documentation-only change",
+    "pythonTests": 76,
+    "ciRun": 40113857308,
+    "ciUrl": "https://github.com/richardcastrogois/TrainForge/actions/runs/40113857308",
+    "realGoogleDebugLogin": "Previously accepted; not repeated",
+    "nutritionHumanEntry": "Previously confirmed by author; preserved",
+    "isolatedSqlIntegration": "Previous receipts; skipped in this coverage measurement, not new passes"
+  },
+  "gaps": {
+    "workoutConfigurationPersisted": false,
+    "workoutAssemblyAndExecutionDelivered": false,
+    "caregiverDelegationDelivered": false,
+    "photoRecognitionDelivered": false,
+    "fourCompleteLocalesDelivered": false,
+    "fullSecurityAuditDelivered": false,
+    "loadBaselineMeasured": false,
+    "sonarRepositoryConfigurationFound": false,
+    "ciFlutterTests": false,
+    "ciDisposablePostgresIntegration": false,
+    "durablePrivateOutbox": false
+  },
+  "limits": [
+    "Coverage metrics have different denominators and are not a product score.",
+    "No production capacity or OWASP compliance level assigned.",
+    "Fixtures do not validate real Google login, human nutrition acceptance or clinical suitability.",
+    "No supplier research, purchase, paid integration, hosting, deploy, data deletion or app update."
+  ],
+  "report": "docs/execucao/v1/auditoria-produto-2026-10-24.md"
+}

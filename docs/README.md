@@ -5,6 +5,7 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Preciso entender… | Abrir |
 |---|---|
 | O produto inteiro, incluindo públicos e ambientes | [Visão R01–R18](planejamento/visao-produto.md) |
+| O que existe de verdade antes de comprar GIFs | [Auditoria de banco, segurança, Go, Flutter, idiomas e escala](execucao/v1/auditoria-produto-2026-10-24.md) |
 | O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
 | Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
 | Retomar o APK disponível e testar | [Avaliação Android e checkpoint atual](execucao/v1/avaliacao-android.md) |
@@ -24,7 +25,9 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Checkpoint mais recente24/10:** pontosfrontend07–12 nos fluxos disponíveis, APKdebug0.3.0+13,101testesFlutter/analyze0issues. [Implementação e pendências](execucao/v1/frontend-etapa-07-12.md). Configuração/treino/atividade e capacidades sem contrato, referênciasFigma faltantes e iOS nativo continuam abertos.
+**Prioridade vigente24/10:** auditoria antes de contratar mídia; GIFs não são o único bloqueio. Banco local e alimentação manual reais; treino completo, cuidador, foto, idiomas e qualidade ainda têm lacunas. [Diagnóstico e prioridades](execucao/v1/auditoria-produto-2026-10-24.md).
+
+**Checkpoint do aplicativo24/10:** pontosfrontend07–12 nos fluxos disponíveis, APKdebug0.3.0+13,101testesFlutter/analyze0issues. [Implementação e pendências](execucao/v1/frontend-etapa-07-12.md). Configuração/treino/atividade e capacidades sem contrato, referênciasFigma faltantes e iOS nativo continuam abertos.
 
 **Checkpoint anterior24/10:** Grafite e lima/rolagem por plataforma aplicados noAPK0.2.1+12. [Ajuste e limites](execucao/v1/frontend-dark-scroll.md).90testesFlutter/analyze0issues; iOS27 nativo nãoexecutado.
 

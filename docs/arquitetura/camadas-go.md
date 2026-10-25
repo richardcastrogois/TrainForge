@@ -1,6 +1,6 @@
 # Camadas e responsabilidades do backend Go
 
-Refinada em **23/10/2026**: fundação, auth, catálogoHTTP, importação/consulta alimentar e privacidade implementados localmente; atividade e escrita alimentar ainda planejadas. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`, `privacy`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
+Conferida em **24/10/2026**: fundação, auth, catálogoHTTP, importação/consulta alimentar, cadastro particular, consumo/revisões/subtotais e privacidade implementados localmente na API0.5.1/25operações; adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`, `privacy`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
 
 ```mermaid
 flowchart LR
@@ -12,6 +12,8 @@ flowchart LR
     postgres["Repository PostgreSQL: SQL e transação"] -.->|"implementa"| port
     postgres --> database["PostgreSQL"]
 ```
+
+O diagrama expressa a separação de responsabilidades; não afirma que cada operação já possui todas essas camadas. Exceção atual:na escrita alimentar, EntryHandler usa NutritionStore concreto, com SQL/transações em postgres_entries.go e cálculo/regras em entries.go; a fronteira de caso de uso/interface ainda precisa de refinamento ao expandir o módulo. Ver a [auditoria do produto](../execucao/v1/auditoria-produto-2026-10-24.md).
 
 A seta de implementação representa dependência/contrato, não chamada HTTP. Em execução, service usa a implementação injetada do repository, que consulta o banco. Não há chamada HTTP entre essas camadas.
 
@@ -26,7 +28,7 @@ A seta de implementação representa dependência/contrato, não chamada HTTP. E
 | `cmd/api` | Montar dependências e iniciar/parar o processo | Não conter o domínio inteiro |
 
 ```text
-services/api/                     # auth/catálogo/consulta alimentar/privacidade reais; demais incrementais
+services/api/                     # auth/catálogo/registro alimentar/privacidade reais; demais incrementais
   cmd/api/main.go
   cmd/import-content/main.go
   internal/
@@ -54,4 +56,4 @@ Contas cadastradas e requisições simultâneas são cargas diferentes. A primei
 
 Plano de validação: [segurança e operação](seguranca-operacao.md), histórias012/013/028/029/030 e critérios de entrega035. Nenhum número de capacidade foi certificado por este desenho. A [decisão de arquitetura](arquitetura-alvo.md) continua distinguindo migração de linguagem e revisão do domínio.
 
-A privacidade coordena explicitamente a exportação e o ciclo dos dados de todos os módulos privados conhecidos, com inventário de schema e transação única. Não é acesso casual entre módulos: a responsabilidade está em privacy e migrations, com testes de titularidade e privilégios. [Implementação, limites por instância e aceite pendente](../execucao/v1/privacidade-013.md).
+A privacidade coordena explicitamente a exportação e o ciclo dos dados de todos os módulos privados conhecidos, com inventário de schema e transação única. Não é acesso casual entre módulos: a responsabilidade está em privacy e migrations, com testes de titularidade e privilégios. [Implementação, limites por instância e histórico de aceite](../execucao/v1/privacidade-013.md).

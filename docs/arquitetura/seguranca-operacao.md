@@ -2,13 +2,19 @@
 
 Plano, não certificado de auditoria. Os números da imagem de referência de auditoria não são achados do TrainForge. A prioridade dos [achados locais](achados.json) é revisão estática; não houve scanner de dependências, pentest ou benchmark de produção nesta etapa.
 
-## Checkpoint real de23/10
+## Estado conferido em24/10/2026
+
+A [auditoria do produto](../execucao/v1/auditoria-produto-2026-10-24.md) inspecionou a API Go0.5.1/25operações, APKdebug0.3.0+13, schema/privilégios reais e cobertura. Há controles concretos de autenticação, titularidade, sessão, logs, rede e persistência; não há homologação completa de segurança, Sonar configurado ou capacidade medida. V1-028/029/030 continuam abertas. CI verde atual não inclui Flutter nem integraçãoSQL descartável automática.
+
+GoogleAndroiddebug consentido e clientesOAuthdebug/release já conferidos no [aceite local](../execucao/v1/auth-local-fechamento.md). Isso não valida distribuiçãoAPKrelease porHTTPS, iOS ou ambiente público. O autor não quer hospedagem neste momento. Não pedir nova infraestrutura como condição para teste noemulador.
+
+## Checkpoint histórico de23/10 — API0.4.0
 
 API Go0.4.0/18operações e APKdebug0.1.3+4. Auth e sessão implementados, logs por allowlist, exportação própria/exclusão confirmada, inventário privado, proxy explícito e limites por instância validados tecnicamente. A política pública está noAPK; testes de duas contas/rollback/refresh e restore usam banco descartável. Nenhuma conta fictícia na base entregue. [V1-013 e matriz de acesso](../execucao/v1/privacidade-013.md).
 
 A exclusão remove dados correntes e revoga sessões após confirmação; o registro mínimo UUID/data impede retorno no restore separado. Manutenção temporária e expiração de backups continuam manuais; nenhum prazo automatizado é prometido. Antes de promoção, manter o alvo offline, aplicar migrations/registro atual e revalidar o corte com exclusões pausadas na origem. ContaGoogle e cópias feitas pelo usuário são independentes.
 
-LoginGoogle consentido,OAuthrelease/HTTPS, iOS, carga e infraestrutura não foram validados. Não há certificação de segurança ou milhões simultâneos. A lista abaixo mantém os critérios para próxima exposição e versões posteriores, sem reclassificar planejamento como entrega.
+Naquele snapshot anterior ao aceite local, loginGoogle e configuraçãoOAuthrelease ainda estavam pendentes; foram posteriormente conferidos conforme a seção vigente acima. HTTPS/distribuiçãorelease, iOS, carga e infraestrutura continuam sem validação completa. Não há certificação de segurança ou milhões simultâneos. A lista abaixo mantém os critérios para próxima exposição e versões posteriores, sem reclassificar planejamento como entrega.
 
 ## Critérios de segurança e exposição
 
