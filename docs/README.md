@@ -4,6 +4,7 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 
 | Preciso entender… | Abrir |
 |---|---|
+| O que fazer, área por área, e quando encerrar | [Trilha de implementação e decisões](execucao/v1/trilha-implementacao.md) |
 | O produto inteiro, incluindo públicos e ambientes | [Visão R01–R18](planejamento/visao-produto.md) |
 | O que existe de verdade antes de comprar GIFs | [Auditoria de banco, segurança, Go, Flutter, idiomas e escala](execucao/v1/auditoria-produto-2026-10-24.md) |
 | O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
@@ -25,15 +26,11 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Prioridade vigente24/10:** auditoria antes de contratar mídia; GIFs não são o único bloqueio. Banco local e alimentação manual reais; treino completo, cuidador, foto, idiomas e qualidade ainda têm lacunas. [Diagnóstico e prioridades](execucao/v1/auditoria-produto-2026-10-24.md).
+**Prioridade vigente24/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md), responderQ1 e implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
 
-**Checkpoint do aplicativo24/10:** pontosfrontend07–12 nos fluxos disponíveis, APKdebug0.3.0+13,101testesFlutter/analyze0issues. [Implementação e pendências](execucao/v1/frontend-etapa-07-12.md). Configuração/treino/atividade e capacidades sem contrato, referênciasFigma faltantes e iOS nativo continuam abertos.
+**Aplicativo disponível:** APK Android debug **0.3.0+13**, API Go **0.5.1 / 25 operações**, PostgreSQL local. Autenticação/privacidade e alimentação manual possuem evidências reais. Há 73 metadados de movimento e 6.369 referências alimentares; nenhuma prática foi liberada por aplicar o visual.
 
-**Checkpoint anterior24/10:** Grafite e lima/rolagem por plataforma aplicados noAPK0.2.1+12. [Ajuste e limites](execucao/v1/frontend-dark-scroll.md).90testesFlutter/analyze0issues; iOS27 nativo nãoexecutado.
-
-**Estado:** etapas01/02 e V1-011/012/013/014/019 concluídas no recorte documentado. V1-020 funcional e consumo humano real confirmados. Prioridade atual: frontend fiel aoFigma, com novo checkpoint dospontos07–12 e dependências explícitas. APKdebug0.3.0+13; aparência/inicialização/Hoje/loaders/transições e identidade nativa implementados; direção visual de aberturaTF/dark confirmada peloautor e seis pontos concluídos no checkpointAndroid. [Etapa e limites](execucao/v1/frontend-etapa-01-06.md), [recibo atual](execucao/v1/android-frontend-checkpoint.json), [handoff](execucao/v1/handoff.md).
-
-73metadados/6369referências alimentares reais, sem prática aprovada ou novas instruções/mídias inventadas. API/banco/emulador locais; nenhuma hospedagem necessária para avaliar. Distribuiçãorelease/iOS e demais histórias continuam nos próprios gates.
+**Frontend:** pontos 01–06 têm checkpoint Android aprovado; 07–12 refinam os fluxos disponíveis, sem encerramento integral. Configuração, treino, cuidador, foto, idiomas e validação nativa iOS permanecem abertos. [Fonte visual e checkpoints](execucao/v1/frontend-fidelidade-figma.md) · [Artefato](execucao/v1/android-frontend-checkpoint.json) · [Handoff](execucao/v1/handoff.md).
 
 ## Como a pasta foi organizada
 

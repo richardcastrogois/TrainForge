@@ -223,10 +223,10 @@ Autor priorizou os seis primeiros pontos antes dos07–12. APKdebug0.2.0+11 impl
 
 85testesFlutter/analyze0issues;5testesrecursosnativos;15préviasfixtureinspecionadas. Android: temas/persistência/sistema restaurado, cold/warm/rede/retentativa semnovoGoogle, cincoáreas/calendário reais, hashinstaladoconferido e1consumorealpreservado. Agente não digitou quantidade nem criouregistro. Uma execução dohelper depersistência foiinterrompida ao concorrer com outra leituraUI; rechecagem sequencial posterior passou, semreset ou alteração dosdados.
 
-ConectorFigma continua emquotaStarter. Pergunta de direção visual daabertura/dark permanece semresposta; proposta usa marcaTFvigente, semconsiderar silêncio comoaceite ou alegar fidelidade exata decontextos nãoobtidos. Pontos02/06 comfechamento visualpendente; demaisfamílias/aceite integral seguemabertos. Docs/backlog/diagramas/Graphify atualizados, pushautorizado semdeploy. Ver frontend-etapa-01-06.md efrontend-stage01-verification.json.
+ConectorFigma continua emquotaStarter. Pergunta de direção visual daabertura/dark permanece semresposta; proposta usa marcaTFvigente, semconsiderar silêncio comoaceite ou alegar fidelidade exata decontextos nãoobtidos. Pontos02/06 comfechamento visualpendente; demaisfamílias/aceite integral seguemabertos. Docs/backlog/diagramas/Graphify atualizados, pushautorizado semdeploy. Ver frontend-fidelidade-figma.md efrontend-stage01-verification.json.
 
 
-Autor respondeu à pergunta e confirmou: usar marcaTF atual naabertura e criar dark derivado daidentidade. A implementação jávalidada corresponde àescolha. Pontos01–06 encerrados no checkpointAndroid, conforme frontend-etapa-01-06.md;07–12 e execuçãoiOS permanecem abertos. A decisão substitui a pendência visual registrada acima, sem alegar leitura decomparação exata dosquadros nãoobtidos.76testesPython passaram, docsderivadas verificadas.
+Autor respondeu à pergunta e confirmou: usar marcaTF atual naabertura e criar dark derivado daidentidade. A implementação jávalidada corresponde àescolha. Pontos01–06 encerrados no checkpointAndroid, conforme frontend-fidelidade-figma.md;07–12 e execuçãoiOS permanecem abertos. A decisão substitui a pendência visual registrada acima, sem alegar leitura decomparação exata dosquadros nãoobtidos.76testesPython passaram, docsderivadas verificadas.
 
 
 ## 24/10/2026 — Grafite e lima e rolagem
@@ -235,12 +235,12 @@ Autor escolheu terceira proposta e pediu que o iOS acompanhe a plataforma. Aplic
 
 90testesFlutter/analyze0issues, cinco novos cenários de borda/refresh/iOS/composição. Seis préviasFlutter dasáreas/perfil inspecionadas comfixtures isoladas;320/texto2x e contraste passam. APK0.2.1+12 instalado, fonte/assinatura/hash conferidos; navegação nascincoáreas e reabertura comprovamtema/sessão. Conferência porcontagens preservou1consumo real; agente não digitou quantidade nem confirmouconsumo. HelperUI teve leitura do perfil antes daestabilização; recibo final passou comespera limitada e navegação pública observada, semreset deapp.
 
-Recursos/código iOS preservados e física validada porwidget, sem alegar execuçãoiOS27 noWindows. Figma permanece emquota; semnovas chamadas ou pesquisa. Docs/backlog/fluxos/Graphify atualizados (80Dart/1185nós/1578arestas, ASTsomente). Ver frontend-dark-scroll.md efrontend-dark-scroll-verification.json.
+Recursos/código iOS preservados e física validada porwidget, sem alegar execuçãoiOS27 noWindows. Figma permanece emquota; semnovas chamadas ou pesquisa. Docs/backlog/fluxos/Graphify atualizados (80Dart/1185nós/1578arestas, ASTsomente). Ver frontend-fidelidade-figma.md efrontend-dark-scroll-verification.json.
 
 
 ## 24/10/2026 — frontend pontos07–12 nos fluxos disponíveis
 
-Lista original recuperada da própria conversa e registrada emfrontend-etapa-07-12.md. APKdebug0.3.0+13: biblioteca/filtros/detalhe, composição/cadastro/histórico/subtotais/confirmação/correções, privacidade eajuda refinados com componentes/tokens já conferidos. Formulários preservam/confirmam descarte de rascunho, bloqueiam saída durante envio e explicam resposta incerta; rolagem ao primeiro erro. Busca particular independente evita refazer diário/subtotais e descarta respostas antigas. Atividade/configuração têm limites e caminhos úteis; não foram simulados serviços.
+Lista original recuperada da própria conversa e registrada emfrontend-fidelidade-figma.md. APKdebug0.3.0+13: biblioteca/filtros/detalhe, composição/cadastro/histórico/subtotais/confirmação/correções, privacidade eajuda refinados com componentes/tokens já conferidos. Formulários preservam/confirmam descarte de rascunho, bloqueiam saída durante envio e explicam resposta incerta; rolagem ao primeiro erro. Busca particular independente evita refazer diário/subtotais e descarta respostas antigas. Atividade/configuração têm limites e caminhos úteis; não foram simulados serviços.
 
 101testesFlutter/analyze0issues;20prévias de fixtures claras/escuras inspecionadas;320/texto2x e alvos48px/rotulados. A nova validação encontrou loader sem espaço no texto2x e falta de validação de nutriente fora da tela; corrigidos com altura natural/rolagem e campos montados. Helpers de captura/semântica precisaram encerrar recursos corretamente; recibos finais passaram, sem alteração de dados reais.
 
@@ -256,3 +256,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - CI inspecionada:documentação/Python/Mermaid/Go/Swagger; sem Flutter, banco descartável automático, Sonar ou scanners completos. Carga ainda planejada, não medida. Nenhum nível de segurança/capacidade certificado.
 - Corrigidos textos vigentes que ainda chamavam escrita alimentar de planejamento e OAuthdebug/release de pendência anterior. Backlog recebeu workEvidence, sem novos done ou alteração silenciosa do recorte de fotoPosterior.
 - Somente documentação/recibos alterados; código/APK, conta, consumo, dados importados, serviços e sessão preservados. Validação documental:13 testes pertinentes aprovados; geração/backlog/dependências/links locais e diff sem erro, conforme recibo.
+
+## 24/10/2026 — expectativas, trilha por área e limpeza documental
+
+- Autor pediu registrar seus questionamentos e expectativas antes de comprarGIFs, separar banco/backend/segurança/frontend/testes/escala e encerrar cada recorte por critérios. Exigência desde já:código seguro, separado por responsabilidade e preparado para crescer.
+- [Trilha detalhada](trilha-implementacao.md):decisões, tarefas identificadas, evidências/gates, dependências, próximos blocos de perguntas e limites. Q1 será perguntada após commit/push; treino/cuidador/foto ainda sem decisões de escopo dependentes. Nenhum item funcional marcado como concluído.
+- Consolidados frontend-etapa-01-06.md, frontend-dark-scroll.md e frontend-etapa-07-12.md na [fonte frontend única](frontend-fidelidade-figma.md); removidos os três arquivos após transferência e revisão do conteúdo útil, corrigidos links e preservados recibos/licenças. Textos completos permanecem noGit; duplicações/instruções superadas não foram mantidas como ordens atuais. Handoff e AGENTS simplificados e plano macro sem prioridades históricas conflitantes.
+- Figma:somente whoami executado, planoStarter/assentoFull confirmados; erro anterior era cota de leitura. Documentação oficial24/10 indica20leituras/mês paraStarter e whoami isento; saldo/renovação não foram medidos. Nenhuma leitura de design limitada, escritaFigma, contratação ou contorno. Arquivo aberto não muda cota; alternativas na trilha.
+- Incremento somente documental; nenhum app/API/migration/registro do titular alterado. Validações:13testes documentais aprovados; geração reproduzível/backlog/dependências/links locais e gitdiff--check sem erros. Commit/push concluídos são informados no fechamento da rodada.

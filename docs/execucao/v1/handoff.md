@@ -1,101 +1,43 @@
-# Handoff vigente — auditoria do produto antes de contratar mídia
+# Handoff vigente — trilha de implementação por área
 
-Atualizado em **24/10/2026**. Raiz **C:/dev/TrainForge/trainforge**. O pedido mais recente é entender o que existe e o que falta em banco, segurança, backend, frontend, idiomas e escala antes de comprar uma API de GIFs. Ler primeiro a [auditoria factual](auditoria-produto-2026-10-24.md) e o [recibo](auditoria-produto-verificacao.json). A direção visual aprovada continua válida; o pedido não autoriza compra, hospedagem ou preenchimento de conteúdo por suposição.
+Atualizado em **24/10/2026**. Raiz: **C:/dev/TrainForge/trainforge**.
 
-## Checkpoint da auditoria — sem alterações no aplicativo
+## Pedido e próxima ação
 
-Banco real local conferido por metadados/privilégios/contagens: PostgreSQL 17.5, 23 tabelas de aplicação, 1 conta / 1 consumo humano real, 6.369 referências alimentares e 73 metadados de movimento; zero programas/adesões/execuções. API Go 0.5.1 / 25 operações; APK debug 0.3.0+13 preservado. Estrutura modular aproveitável; main monta as dependências. Não há percurso completo de treino, delegação de cuidador, identificação de comida por foto ou quatro idiomas completos. GIF é somente uma lacuna de mídia.
+O autor quer compreender e testar o produto inteiro antes de comprar GIFs. Exige código seguro, organizado, separado por responsabilidade e preparado para crescer desde já. Pediu trilha detalhada por área, limpeza de documentos redundantes, commit/push e depois dúvidas por blocos.
 
-Medição nova, sem reinstalação/reimportação/restore/login: Flutter com 101 testes, 78,46% das linhas instrumentadas; Go com 71 resultados aprovados / zero falhas / 10 testes SQL pulados, 40,73% das instruções no perfil padrão. Integrações SQL históricas continuam válidas nos seus recibos, mas não foram executadas novamente nem contadas como aprovação. CI atual não roda Flutter nem SQL descartável automaticamente; Sonar não configurado; segurança completa e carga continuam abertas.
+**Ler [trilha de implementação](trilha-implementacao.md). Próxima conversa: Q1**, sobre modelo de treino, cuidador e foto na primeira versão. Registrar as respostas antes das mudanças dependentes. Não voltar a pedir hospedagem/OAuth nem pesquisar APIs amplamente.
 
-Próximo trabalho deve converter as prioridades da auditoria em incrementos pelas dependências: contexto/configuração e cuidador, material/composição humana permitidos, adesão/agenda/execução, alimentação compreensível/durável e qualidade. V1-021 permanece próxima no backlog, sem pular dependências nem marcar 015/016/017/025/028/029/030 concluídas. Foto está em V1-042 / Posterior: se for requisito para a primeira versão desejada, replanejar esse recorte explicitamente; não prometer precisão de porção por imagem. Sem nova pesquisa ampla de API; manter o registro de fornecedores existente.
+A [auditoria24/10](auditoria-produto-2026-10-24.md) é o baseline factual. A trilha é o roteiro de decisões e implementação; [backlog.json](backlog.json) governa dependências/estados. Nenhum bloco foi encerrado só por documentá-lo. V1-021 permanece doing e próxima no backlog; adequar o recorte às respostas sem pular dependências.
 
-## Checkpoint atual — pontos07–12 nos fluxos disponíveis
+## Estado do aplicativo preservado
 
-APKdebug0.3.0+13 instalado,101testesFlutter/analyze0issues. [Implementação, critérios e pendências](frontend-etapa-07-12.md), [recibo](frontend-stage07-12-verification.json), [artefato](android-frontend-checkpoint.json). Biblioteca e detalhes, composição/cadastro/histórico/subtotais/consumo, privacidade e ajuda alinhados aos primitives atuais. Formulários com proteção de rascunho/envio/resposta incerta; primeiro erro alcançável. Busca particular não refaz diário/subtotais e descarta respostas antigas.
+- API Go0.5.1/25operações, PostgreSQL17.5 local isolado,23tabelas. Última leitura da auditoria:1conta/1consumo humano real,6369referências alimentares e73metadados de movimento. Zero programas/práticas aprovados.
+- APKdebug **0.3.0+13**, assinatura/configuração e sessão preservadas. [Artefato](android-frontend-checkpoint.json). Não reinstalado nem testado com novos dados nesta rodada documental.
+- GoogleAndroiddebug/sessão/privacidade reais já validados; OAuthdebug/release conferido. [Fechamento](auth-local-fechamento.md). DistribuiçãoHTTPS/release/iOS têm gates próprios e não impedem teste local.
+- V1-014/019/020 reais:consulta de catálogo/base alimentar e registro manual, revisão/exclusão, histórico e subtotais. Cadastro particular e demais jornadas ainda exigem os aceites da025; não repetir SQL/importação/restore históricos por hábito.
+- Faltam configuração persistida, seleção/composição humana permitida, adesão/agenda/execução/histórico de treino, delegação de cuidador, foto e quatro idiomas completos.
+- Medição da auditoria:101testesFlutter/78,46% das linhas instrumentadas; Go71resultados aprovados/10integraçõespuladas/40,73% das instruções. Não equivale a teste em tudo. Sonar/CIFlutter/SQLautomático/carga não completos.
 
-Não declarar integralmente07–12 concluídos: configuração persistida, treino/atividade e recursos sem contrato/conteúdo, referências Figma não obtidas e validação nativa iOS continuam abertos. Consulta de disponibilidade não simula função entregue. Não repetir chamadasFigma nem testesGoogle/import/restore históricos. Conta/consumo preservados; push de incrementos validados autorizado, semdeploy.
+## Frontend e Figma
 
-## Checkpoint anterior — Grafite e lima / rolagem
+[Fonte visual e checkpoints consolidados](frontend-fidelidade-figma.md):pontos01–06 noAndroid,07–12 refinamento dos fluxos disponíveis, sem fechamento integral. MarcaTF, darkGrafite e lima e Android sem esticamento preservados. iOS não foi executado nativamente nesta máquina.
 
-APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Ajuste implementado](frontend-dark-scroll.md), [recibo](frontend-dark-scroll-verification.json), [APK atual](android-frontend-checkpoint.json). Autor escolheu terceira proposta e pediu rolagem conforme iOS27: superfícies neutras mais separadas e lima nos destaques; Android sem decoração de esticamento. Física e gesto de atualizar preservados; iOS padrãoFlutter mantido e testado porwidget, sem execução nativa iOS27. Não instalar GSAP/Motion, atualizar SDKs, pedir novoOAuth ou pesquisar novamente para esses ajustes. Figma permanece emquota. Conta/consumo reais preservados, sem novo consumo peloagente. Esse checkpoint anterior cobria somente o ajuste decores/rolagem.
+Figma vigente:arquivo bX6YjBBLIJgoo2MtiFLntl, página0:1/v0.5. [Inventário](frontend-figma-inventory.json). Contextos obtidos e nós faltantes na fonte visual/trilha. Limite de leituraStarter foi registrado; whoami nesta rodada confirmou o plano, sem repetir get_design_context. AbrirFigma noPC não altera a cota. Não contornar, comprar plano ou alegar comparação exata sem referência suficiente.
 
-Base anterior42bb676431cabe5228fbc82960a35878dd214260 publicada comCI40052687262 bem-sucedida. Conferir Git real para o incremento posterior. Push de incrementos validados continua autorizado; sem deploy.
+Os relatos frontend-etapa-01-06.md, frontend-dark-scroll.md e frontend-etapa-07-12.md foram incorporados à fonte visual única e removidos. Conteúdo e recibos preservados; não recriar arquivos redundantes.
 
-## Checkpoint visual anterior — 23/10
+## Execução e limites
 
-Pedido mais recente: implementar os pontosfrontend01–06 antes dos07–12. [Etapa e critérios](frontend-etapa-01-06.md), [recibo integrado](frontend-stage01-verification.json), [APK atual](android-frontend-checkpoint.json).
+Trabalhar pelos gates da trilha:decisões → banco → backend → segurança → frontend → qualidade → escala → APK → avaliação da mídia, respeitando as dependências do backlog. Segurança/testes entram em cada incremento. Bloqueio humano/editorial não vira done; seguir apenas trabalho independente.
 
-**APKdebug0.2.0+11 instalado,85testesFlutter/analyze0issues.** ÍconeTF/nome/splash nativos, inicialização com preferência antes dasessão e restauração limitada/recuperável, Hoje com datas/semana e resumoGo reais, carregamentos/estados, transições/redução de movimento e tema claro/escuro/sistema persistido noaparelho. Aparência acessível noavatar → Preferências e naentrada semlogin. Preferência separada dascredenciais; nenhuma novaAPI/migration/dado deconsumo.
+Foto042, sensores041 e acompanhamento043 constam comoPosterior; antecipação exige decisão explícita de escopo. Conteúdo precisa de direitos/revisão apropriados; API deGIFs não aprova treino/dose. Sem história/valor/quantidade/condição fictícios no runtime.
 
-**Pontos01–06 concluídos no checkpointAndroid, conforme direção confirmada peloautor: marcaTF atual naabertura e dark derivado dessaidentidade.** Implementação e recibo conferidos. Contextos deaberturaA/B e dark completo nãoobtidos antes daquotaStarter; a decisão aprova a adaptação, sem alegar comparação exata dequadros nãoinspecionados. Demaisfamílias07–12 continuam fora destaetapa. iOS somente código/recursos preparados e verificados estruturalmente, sem build/execuçãoXcode.
+Sem hospedagem/deploy/compra/assinatura/integração paga/contato externo. Gratuitas primeiro; atéR$400 eventual permanece decisão doautor. Commit e push de incrementos validados autorizados; manter credenciais/capturas privadas fora doGit.
 
-Conta e1consumo humano real preservados; agente não digitou quantidade nem confirmou consumo. Sem reset nem novo consentimentoGoogle automatizado. Não apagar registro porinferência. Recursos API/banco/emulador locais ativos; autor não quer hospedagem agora.
+## Documentação e validação
 
-Publicação anterior: base020 b066082,CI40007081568 passou; visual01 b9660d5a15c4e4b88797278fde75b13b405bddbd,CI40011701056 passou; visual02 49982c3c957212e86dcc6536c42b3baa79c6265f,CI40013327968 passou. Conferir Git real para o incremento01–06 posterior; push autorizado, nenhum deploy.
-
-## Estado entregue
-
-- Etapas01/02 concluídas:73metadados de movimento,439ativos excluídos,0programas/instruções/mídias/prática liberados. Não inventar conteúdo para preencher o visual.
-- V1-011/012/013 concluídas no aceite local: GoogleAndroiddebug pessoal, identidade canônica, reabertura, rede sem perda de sessão, expiração natural/refresh, logout/reentrada; exportação e exclusão real explicitamente autorizada passaram. [Fechamento](auth-local-fechamento.md), [aceitehistórico](auth-real-android-verification.json). OAuthdebug/release e Web já conferidos; não pedir recriação declientes ou hospedagem.
-- V1-014 concluída: biblioteca pública Go/Flutter com filtros/cursor/detalhe/versões/retirada/ETag e atribuições; somente consulta.
-- V1-019 concluída no lote autorizado:6369referênciasCiqual/CoFID,2identidades conflitantes excluídas,3bases desconhecidas preservadas. Import/reimport/backuprestore históricos validados; não repetir coleta/importação/restore sem mudança concreta.
-- **V1-020 concluída funcionalmente:** API Go0.5.1/25operações, migration00008, cadastro particular, consumo, histórico do dia/fuso, revisões/exclusão e subtotais rastreáveis. Flutterconectado às APIs. [Implementação](alimentacao-registro.md), [SQL/HTTPdescartável](nutrition-local-verification.json), [consumo real](nutrition-real-android-verification.json).
-- Autor confirmou pessoalmente um consumo real e mostrou confirmação/histórico. Conferência só por contagens:1conta/1consumo ativo/0alimentos próprios; nenhum nome/e-mail/quantidade/alimento/horário/token do titular em recibosGit. Agente não criou refeição na base entregue e não está autorizado a apagar esse consumo por inferência.
-- Cadastro próprio/ausências/ownership/concorrência/idempotência/edição/exclusão/limite/retirada/exportação/purge testados em banco temporário removido, com uma referência real já pesquisada copiada somente para a fixture. Isso não é novo loginGoogle nem aceite humano de todos os fluxos025.
-- APKdebug histórico do020 **0.1.5+8**, gerado e instalado com preservação dos dados após conferir noAndroid a telaMinhaAlimentação,0editores/rascunhos e1registro persistido. A revisão automática bloqueou primeiro por receio de rascunho aberto; a nova conferência comprovou condição segura e a atualização passou. [Buildatual](android-nutrition-checkpoint.json). Reciboandroid-auth-checkpoint.json representa build0.1.3+4 histórica.
-
-## Frontend — trabalho atual
-
-A interface funcional deavaliação anterior **não reproduzia o Figma**. Autor contestou e pediu a mudança de prioridade. Não alegar frontend completo por haver APIs/DTOs ou um tema aplicado.
-
-Figma vivo: arquivo bX6YjBBLIJgoo2MtiFLntl, página **0:1 · 01 · Produto interativo · v0.5**;401quadrostoplevel/398mobile com variantes/rascunhos/exemplos. Páginas126:2 e141:2 são arquivo. Não reaplicar geradoresv0.4 nem editar oFigma sem necessidade.
-
-Leitura de design context com screenshots concluída para:
-- Entrar23:735;
-- Hoje25:1667;
-- Alimentação25:1992;
-- Porção104:1233.
-
-Sessão conector be13df9a-20a4-47d5-ba30-e854be04613e, reutilizar enquanto válida. Skillfigma-design-to-code já lida; deve ser incluída em skillNames e screenshot do contexto é referência visual. Pedir novos contextos de famílias/estados, não implementar só de metadados ou dos SVGs históricos.
-
-Checkpoint inicial histórico deidentidade: `lib/core/theme/trainforge_theme.dart` com tokensFigma, marcaTF, superfícies/botões/campos e tipografia inicial; entrada e cabeçalho deconta usam marca. **Fidelidade completa pendente.** O incremento visual01 agora distribuiInter eSVGs, conecta shell/barra inferior e as primeiras composições. Biblioteca/formulários/detalhes/privacidade e demais estados ainda exigem conversão visual; ver o checkpoint atual acima. AuthsóGoogle real; e-mail/Apple não foram simulados.
-
-História021emdoing, pontos01–06 concluídos no checkpointAndroid e07–12 com novo checkpoint dos fluxos disponíveis, mantendo dependências abertas; transversal a022/025 e demaisUI. Preservar domínio semWidgets/Dio, repositories/controllerinjetados e sessão coordenada. Não reativar AppShell legado que chamaFastify/geradores ou usa dados antigos. Atualizar inventário de fidelidade por família, com evidência visual por nó e estados320/390/textoampliado. Não marcar todas as variantes como rotas diferentes sem conferência.
-
-## Cuidados do incremento
-
-- Quantidade exige entrada explícita, g/ml e evidência medida/estimativa; cálculoGo usa big.Rat, versão/base/fator, sem densidade ou nutrientes inventados. Fonte/célula/limite originais preservados. Subtotais separados por coluna/método/unidade; ausência não é zero. Até100registros/dia para subtotalcompleto, histórico paginado1–20; acima dolimite não exibe totaltruncado.
-- IdempotênciaUUID por titular/operação24h, lock porconta/revalidação desessão, revisãootimista e corpo/chave congelados em resposta incerta. Até100correções; exclusão continua permitida após esse limite. Tombstones/revisões privados até exclusão daconta; exportação/purge013 cobrem tudo.
-- Runtime não tem escrita editorial ampla.00008 adiciona funçãoSECURITYDEFINER restrita a declaração particular, sem source_id e sem clínica, mais índice dohistórico. Migrations atuais00001–00008. Nenhuma tabela/coluna privada nova sem inventário013.
-- Horários de resposta normalizados emUTC; Flutter exibe horário local e fuso informado separadamente. Cabeçalhos de nutrientes com quebras de linha são normalizados somente naexibição, sem alterar fonte/versão.
-- Autor relatou teclado físico/virtual sementrada; campo habilitado/focado aceitou um dígitoADB temporário, removido sem consumo. TecladoAndroid reconectado/listaoriginal restaurada; autor confirmou que tecladonotebook voltou afuncionar. Não limpar app/emulador/contaGoogle para tratar isso. Captura temporária do rascunho deve ser removida, nuncacomitada.
-- Dados demonstrativos doFigma não são dados doapp: não copiar calorias/refeições/treinos/doses/histórico/media semdireitos. Preservar idosos/cuidadores/casa/praça/academia e lacunas reais.
-- AppDio continua sem URL/header/query/body/exceções emlogs; rede/429/5xx preservam sessão. Header deconta esperada impede formulário antigo ir para conta nova. Não imprimir storage, credenciais, SQLprivado ou XMLUIbruto.
-
-## Verificação e publicação
-
-85testesFlutter passaram nesta etapa, analyze0issues; visual02 histórico tinha70. Go testes/vet e integraçãoSQL/HTTP do020 passaram;76testesPython passaram nesta etapa (71anteriores +5recursos nativos); documentação derivada regenerada e verificada. Swagger é gerado por comentários/tipos, não editarJSON/YAML à mão. Graphify atualizado porASTsomente, HTMLexportado; semindexaçãosemântica dos dossiês.
-
-Push dos incrementos validados aoGitHub autorizado em23/10. Conferir Git real.020/tema/documentação publicados em b066082 comCI40007081568 bem-sucedida; visual01 é o incremento posterior, sem deploy. Remoto https://github.com/richardcastrogois/TrainForge.git. Não fazerforcepush. Scriptsignorados.local/check_auth_stage.py echeck_publish.py verificam segredos/caminhos; stage explícito. Conferir CI doSHAreal, não inferir push peloVSCode.
-
-## Ambiente preservado e comandos
-
-API loopback8082, PostgreSQL17.5 local15432/trainforge_v1_dev e AVDTrainForge_Benchmark/emulator-5554 ativos. Instalações existentes Go1.27.3,Flutter3.41.4/Dart3.11.1,Swaggo1.16.6; não reinstalar/atualizar sem motivo. Credenciais/dados/chaves em.local eandroid/key.properties ignorados/ACL protegida; não regenerar chave release.
-
-```powershell
-cd C:\dev\TrainForge\trainforge
-.\tools\avaliar-android.ps1 -Action status
-# start só se necessário e após conferir ausência de rascunho aberto
-.\tools\avaliar-android.ps1
-# prepare compila sem substituir o app em uso
-.\tools\avaliar-android.ps1 -Action prepare
-./tools/go-api.ps1 test ./...
-./tools/go-api.ps1 vet ./...
-python tools/gerar_documentacao.py --write --check
-python -m unittest discover -s tools -p "test_*.py"
-```
-
-Binários locais travam no sandbox deste host; comandos autorizados funcionam fora dele. Edições via ferramentaNodefuncionam; não executarADB/Flutter síncronos dentro doNodeREPLsandbox. Usarexec_command com require_escalated quando necessário. Não perder tempo repetindo essa investigação. FerramentasADB deQA devem guardarXMLemmemória, emitir somente allowlists/contagens e apagar o temporário remoto.
-
-Semhospedagem/deploy/contratação/contato externo. Registro[opções deAPIs](../../conteudo/opcoes-apis-exercicios.md):gratuitasprimeiro, eventualcompraúnicaatéR$400depende de decisão específica. ReleaseHTTPS/iOS e capacidade demilhões não validados; não bloqueiam ofrontendlocal nem autorizam inventar cobertura.
+- [Índice](../../README.md), [plano macro](plano-macro.md), [escopo](escopo.md), [arquitetura](../../arquitetura/README.md), [diário](diario.md).
+- Gerar/check:`python tools/gerar_documentacao.py --write --check`; testes pertinentes:`python -m unittest discover -s tools -p test_documentacao.py`.
+- Trilha não mudaAPI/migration; Swagger e GraphifyAST não precisam regeneração de código neste incremento. Não usar validação documental como prova de função doAPK.
+- Comparar Git real antes de continuar; snapshots antigos e recibos mantêm seu valor histórico e seu escopo.

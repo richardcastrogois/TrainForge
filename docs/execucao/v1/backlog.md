@@ -478,7 +478,7 @@ Como usuário, quero selecionar uma versão existente e uma agenda permitida pel
 
 Dependências: V1-014, V1-013
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -509,7 +509,7 @@ Como usuário, quero aprender o material disponível e saber quem o escreveu.
 
 Dependências: V1-014
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -545,7 +545,7 @@ Como usuário, quero iniciar e terminar uma sessão uma vez, mesmo com reenvio d
 
 Dependências: V1-015, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -576,7 +576,7 @@ Como usuário, quero saber o que registrei, sem números de demonstração.
 
 Dependências: V1-017
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -676,7 +676,7 @@ Como desenvolvedor, quero telas pequenas e dependências substituíveis sem rees
 
 Dependências: V1-008, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/frontend-fidelidade-figma.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/frontend-fidelidade-figma.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -697,7 +697,7 @@ Validação: flutter analyze e testes de estados relevantes; Inspecionar logs de
 
 Entregas: lib/core revisada; Padrão de feature exemplificado
 
-Handoff: 23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: 24/10:trilha-implementacao.md governa o recorte por área; próxima conversaQ1 antes de decisões dependentes. Código seguro, modular e testável desde já; Flutter101testes no checkpoint0.3.0+13, sem fechar integralmente01–12 ou a história. Fonte única de referências e checkpoints:frontend-fidelidade-figma.md; auditoria-produto-2026-10-24.md separa fundação real de lacunas. Preservar runtime/dados e não reativar caminhos legados.
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
@@ -707,7 +707,7 @@ Como iniciante, quero escolher uma opção humana e entender por que ela está d
 
 Dependências: V1-014, V1-015, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -730,7 +730,7 @@ Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifes
 
 Entregas: Telas library/detail/enrollment; Mapa de fluxo atualizado
 
-Handoff: 22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md.
+Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra.
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 
@@ -740,7 +740,7 @@ Como praticante, quero acompanhar o material e registrar o que fiz sem perder a 
 
 Dependências: V1-016, V1-017, V1-022
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -771,7 +771,7 @@ Como usuário, quero enxergar meus próprios registros e gerenciar minha conta.
 
 Dependências: V1-018, V1-021, V1-013
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -802,7 +802,7 @@ Como usuário, quero consumir o lote alimentar real em uma refeição registrada
 
 Dependências: V1-020, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -825,7 +825,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
@@ -835,7 +835,7 @@ Como usuário, quero ler material já autorizado e saber quando um registro aind
 
 Dependências: V1-023, V1-025
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -866,7 +866,7 @@ Como usuário de qualquer plataforma, quero uma experiência compreensível e co
 
 Dependências: V1-022, V1-024, V1-025
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -901,7 +901,7 @@ Como mantenedor, quero um release com riscos conhecidos em vez de um gráfico de
 
 Dependências: V1-013, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -932,7 +932,7 @@ Como operador, quero descobrir onde uma jornada falhou sem registrar conteúdo p
 
 Dependências: V1-007, V1-018
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -963,7 +963,7 @@ Como responsável técnico, quero limites medidos e um plano de escala gradual.
 
 Dependências: V1-014, V1-018, V1-020, V1-029
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1029,7 +1029,7 @@ Como mantenedor, quero testar a mesma versão de API, contrato e app que será d
 
 Dependências: V1-008, V1-028
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1095,7 +1095,7 @@ Como desenvolvedor, quero que o APK de teste possa ser atualizado sem perder a i
 
 Dependências: V1-021, V1-032
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1128,7 +1128,7 @@ Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e co
 
 Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1159,7 +1159,7 @@ Como testadora, quero receber o arquivo e instruções claras para instalar, tes
 
 Dependências: V1-035
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1191,7 +1191,7 @@ Como dono, quero aprender com o uso e retirar o que não for mais necessário.
 
 Dependências: V1-036
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1226,7 +1226,7 @@ Como usuário de iPhone, quero acesso aos mesmos contratos e conteúdo permitido
 
 Dependências: V1-027, V1-035
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1257,7 +1257,7 @@ Como responsável, quero distribuir nas lojas quando houver aceite, privacidade 
 
 Dependências: V1-038, V1-037
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1292,7 +1292,7 @@ Como usuário experiente ou iniciante, quero ampliar a biblioteca sem perder aut
 
 Dependências: V1-037
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1323,7 +1323,7 @@ Como usuário, quero importar medidas reais com permissão e origem, evitando re
 
 Dependências: V1-037, V1-038
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1354,7 +1354,7 @@ Como usuário, quero apoio para registrar uma foto sem tratar estimativa visual 
 
 Dependências: V1-037
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 
@@ -1385,7 +1385,7 @@ Como cuidador ou usuário, quero ferramentas próprias com consentimento e limit
 
 Dependências: V1-037, V1-013
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
 
 Critérios de aceite:
 

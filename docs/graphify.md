@@ -2,7 +2,7 @@
 
 ## Atualização24/10: frontend pontos07–12 — checkpoint dos fluxos disponíveis
 
-83arquivosDart,1235nós/1665arestas;18alterados/novos,65inalterados,0removidos na passagem principal;1arquivo reextraído após a revisão da paginação (82inalterados). Update incremental code-only/AST e HTML exportado. Sem clusterização, leitura semântica ou custoLLM. Backup.local/graphify-backup-20261024-frontend-07-12. Guias de disponibilidade não equivalem a serviços implementados; ver frontend-etapa-07-12.md.
+83arquivosDart,1235nós/1665arestas;18alterados/novos,65inalterados,0removidos na passagem principal;1arquivo reextraído após a revisão da paginação (82inalterados). Update incremental code-only/AST e HTML exportado. Sem clusterização, leitura semântica ou custoLLM. Backup.local/graphify-backup-20261024-frontend-07-12. Guias de disponibilidade não equivalem a serviços implementados; ver [fonte frontend consolidada](execucao/v1/frontend-fidelidade-figma.md).
 
 ## Atualização24/10: Grafite e lima / rolagem por plataforma
 

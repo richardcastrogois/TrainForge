@@ -1,20 +1,12 @@
 # Caminho da pesquisa ao APK
 
-24/10 · pontosfrontend07–12: checkpointAndroid0.3.0+13,101testesFlutter/analyze0issues. Fluxos reais de biblioteca/alimentação/privacidade e ajuda refinados; proteção de rascunho e busca particular independente. [Escopo e gates](frontend-etapa-07-12.md). Configuração persistida, prática/atividade, outros contratos/conteúdo, Figma faltante e iOS nativo não concluídos; nenhum done integral indevido.
+Estado vigente em **24/10/2026**. O roteiro de execução atual é a [trilha por área](trilha-implementacao.md), que registra expectativas, tarefas, dependências, critérios de encerramento e dúvidas do autor. A [auditoria](auditoria-produto-2026-10-24.md) é o baseline factual; o [backlog](backlog.json) governa estados das histórias. Próxima conversa:Q1 da trilha, após documentação/commit/push.
 
-24/10 · ajuste solicitado: Grafite e lima aplicado com cartões mais separados, Android sem decoração deesticar e iOS com padrãoFlutter porplataforma. APKdebug0.2.1+12 instalado,90testesFlutter/analyze0issues. [Critérios e limites](frontend-dark-scroll.md). Sem novas funções, dados, APIs ou bibliotecas.
+Banco local, autenticação e alimentação manual são reais; treino completo, cuidador, foto e idiomas ainda têm lacunas. Código seguro, organizado e preparado para crescer é exigido desde agora. Não basta trocar paraGo nem comprarGIFs. Segurança/testes entram em cada incremento.
 
-23/10 · prioridade imediata: frontend pontos01–06 antes dos07–12. APK0.2.0+11 com identidade/splash, inicialização recuperável, Hoje real, loaders, transições e temas persistidos;85testesFlutter/analyze0issues. Autor aprovou marcaTF naabertura e dark derivado; pontos01–06 concluídos no checkpointAndroid, sem alegação de frontend inteiro concluído. [Critérios e evidências](frontend-etapa-01-06.md). Snapshots anteriores abaixo são históricos.
+APKdebug **0.3.0+13** preservado. IdentidadeTF, darkGrafite e lima, rolagem e checkpoints01–12 estão na [fonte visual única](frontend-fidelidade-figma.md);01–06 têm checkpointAndroid e07–12 não estão integralmente concluídos. Relatos históricos foram consolidados para reduzir instruções repetidas.
 
-23/10 · visual02: busca alimentar/porção convertidas; APKdebug0.1.7+10 instalado com conta/consumo real preservados,70testesFlutter/analyze0issues. [Recibo](frontend-food-verification.json). Figmaatingiu quotaStarter para104:1260; demais referências/famílias pendentes, semcontratação. Prioridade continua todo o front antes de novas funcionalidades.
-
-
-23/10 · visual01: shell/cinco abas/entrada/perfil e resumo diário real implementados noAndroiddebug0.1.6+9; Inter e22SVGs originais locais.68testesFlutter/analyze0issues. Frontend completo/fidelidade integral ainda pendentes; próxima fatia é biblioteca e alimentação. Nenhuma nova funcionalidade debackend nesta prioridade. [Evidências](frontend-shell-verification.json).
-
-
-**Prioridade nova23/10:** autor quer ajustar todo o frontend para ficar exatamente igual aoFigma vigente antes de novas funcionalidades. [Plano e inventário atuais](frontend-fidelidade-figma.md). V1-020 funcional concluída com consumo real confirmado, cadastro próprio/ownership/cálculo/revisões testados; UI completa e fidelidade visual seguem abertas. [Entrega020](alimentacao-registro.md). Parágrafos datados anteriores abaixo descrevem o checkpoint anterior.
-
-Estado vigente23/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02/M1 concluída](etapa-02-fechamento.md). Go/API/DB/Swagger são reais localmente; authGo/Flutter têm checkpoint local, APKdebug instalado; loginGoogle Androiddebug real validado; OAuthrelease confirmado; HTTPS/testeAPKrelease com validação futura nas histórias dedistribuição. V1-014 concluída: catálogo Go/Flutter real com73metadados, busca/filtros/atribuição/versões; APK0.1.3+4 e comando de retomada em avaliacao-android.md. V1-019 concluída:6369registrosCiqual/CoFID noDBisolado, manifesto aprovado/importadorGo e backupnovo restaurado; ConsultaGo/Flutter entregue como preparação parcial020/025; cadastro e consumo pendentes. Ver alimentacao-importacao.md. Demais módulos/APKintegrado ainda não entregues. V1-003 concluída com publicação autorizada e CI remota bem-sucedida; documentação permanece transversal. Conteúdo:73metadados/439excluídos/0prática aprovada.
+**Sem hospedagem agora.** Os marcos abaixo distinguem o checkpoint local de avaliação do aceite integral de distribuição/staging. Foto/cuidador e demais capacidadesPosterior precisam de replanejamento se antecipadas; a expectativa não será omitida para chamar o produto de pronto.
 
 | Ordem / marco | Histórias | Resultado verificável | Condição de saída |
 |---|---|---|---|
@@ -26,7 +18,7 @@ Estado vigente23/10/2026: [etapa01 encerrada](etapa-01-fechamento.md) e [etapa02
 | M5 — arquivo para teste |034–037 | APK assinado, jornada release validada, instalação e feedback | Roteiro real, checksum e limpeza após uso |
 | M6 — iOS e expansão |038–043 | macOS/Xcode e paridade, lojas e funcionalidades posteriores | Cada capacidade tem evidência de uso/direitos/custo próprios |
 
-As dependências exatas estão em `backlog.json`; intervalos da tabela são orientação macro e não autorização para pular dependência. É possível investigar hospedagem/contratos independentemente de um material bloqueado; não fingir que bloqueio editorial fechou.
+As dependências exatas estão em `backlog.json`; intervalos da tabela são orientação macro e não autorização para pular dependência. É possível avançar em contratos/qualidade independentes de material bloqueado; não fingir que bloqueio editorial fechou. Não iniciar pesquisa/provisionamento de hospedagem enquanto essa decisão estiver adiada.
 
 ## Avaliar antes de concluir o produto
 
@@ -34,7 +26,7 @@ As [respostas de21/10](decisoes-piloto.md) ampliam a cobertura do piloto: o auto
 
 M2 e M3 devem produzir checkpoints de APK de avaliação assim que houver fatias reais instaláveis, com versão, configuração, assinatura, proteção dos fluxos habilitados e roteiro do que pode ser testado. Usar as tarefas de034/036 também como referência de build/distribuição, antecipando somente os requisitos necessários ao checkpoint. Suas dependências e o aceite integral permanecem válidos para fechar a V1; não marcar034/036 concluídas por entregar uma build intermediária. Não aguardar todos os módulos prontos para colher feedback. M5 continua sendo o aceite integrado da V1 e sua entrega completa.
 
-Cada checkpoint relaciona todos os cenários a um estado real: disponível para teste, incompleto, bloqueado por conteúdo/requisito ou ainda não implementado. Não usar telas, dados ou ações simulados para aparentar cobertura. O feedback orienta refinamento ou pesquisa direcionada com nova pista. Custo atualizado: priorizar fontes gratuitas; o autor indicou cerca deUS$19 como possibilidade em pagamento único e considerou valores maiores inviáveis. Assinatura não atende a essa direção; nenhuma compra foi aprovada. O inventário de fontes e cenários independe da decisão sobre uma compra específica.
+Cada checkpoint relaciona todos os cenários a um estado real: disponível para teste, incompleto, bloqueado por conteúdo/requisito ou ainda não implementado. Não usar telas, dados ou ações simulados para aparentar cobertura. O feedback orienta refinamento ou pesquisa direcionada com nova pista. Custo vigente:priorizar fontes gratuitas; eventual pagamento único de atéR$400 depende de decisão específica doautor. Nenhuma compra, assinatura ou integração paga foi aprovada. O inventário de fontes e cenários independe da decisão sobre uma compra específica.
 
 ## Incrementos que o agente deve executar
 

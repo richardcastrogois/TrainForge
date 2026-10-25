@@ -1138,7 +1138,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Adesão aponta para versão imutável e valida os requisitos necessários",
@@ -1199,7 +1200,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Texto fiel revisado, idioma, atribuição e versão aparecem juntos",
@@ -1269,7 +1271,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Planejado, iniciado, pausado, parcial, concluído, não feito e descanso têm semântica explícita",
@@ -1329,7 +1332,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Home, histórico e estatísticas vêm de registros persistidos e respeitam fuso e autoria",
@@ -1564,7 +1568,8 @@
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
             "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/frontend-fidelidade-figma.md"
+            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Feature-first preservado; UI usa controller/viewmodel e repository injetado",
@@ -1597,17 +1602,14 @@
             "lib/core revisada",
             "Padrão de feature exemplificado"
           ],
-          "handoff": "23/10: prioridade imediata são pontos frontend01–06, antes de07–12 e novas histórias. APK0.2.0+11: identidade/splash nativos, inicialização limitada/recuperável, Hoje real, loaders, transições/redução de movimento e preferência claro/escuro/sistema isolada da conta.85testesFlutter/analyze0issues; validação Android emfrontend-stage01-verification.json. Autor aprovou marcaTF atual naabertura e dark derivado; pontos01–06 encerrados no checkpointAndroid, sem encerrar fidelidadeFigma completa ou toda a021. iOS somente recursos/código estruturalmente conferidos. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "24/10:trilha-implementacao.md governa o recorte por área; próxima conversaQ1 antes de decisões dependentes. Código seguro, modular e testável desde já; Flutter101testes no checkpoint0.3.0+13, sem fechar integralmente01–12 ou a história. Fonte única de referências e checkpoints:frontend-fidelidade-figma.md; auditoria-produto-2026-10-24.md separa fundação real de lacunas. Preservar runtime/dados e não reativar caminhos legados.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
-            "docs/execucao/v1/frontend-etapa-01-06.md",
             "docs/execucao/v1/frontend-stage01-verification.json",
-            "docs/execucao/v1/frontend-dark-scroll.md",
             "docs/execucao/v1/frontend-dark-scroll-verification.json",
-            "docs/execucao/v1/frontend-etapa-07-12.md",
             "docs/execucao/v1/frontend-stage07-12-verification.json",
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
@@ -1643,7 +1645,8 @@
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
             "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/decisoes-piloto.md"
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Login → contexto mínimo → biblioteca → detalhe → adesão sem AI/manual generator",
@@ -1678,15 +1681,13 @@
             "Telas library/detail/enrollment",
             "Mapa de fluxo atualizado"
           ],
-          "handoff": "22/10: preparação parcial implementada (sessão/controller/repository e catálogo somente consulta), testes isolados e APK0.1.1+2. Dependências/aceite integrado continuam pendentes; não marcar done. Ver avaliacao-android.md, catalogo-consulta.md e handoff.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md.",
+          "handoff": "24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
-            "docs/execucao/v1/frontend-etapa-01-06.md",
             "docs/execucao/v1/frontend-stage01-verification.json",
-            "docs/execucao/v1/frontend-etapa-07-12.md",
             "docs/execucao/v1/frontend-stage07-12-verification.json"
           ]
         },
@@ -1715,7 +1716,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Player/instrução usa modalidade/unidade real; prática bloqueada quando requisito não atendido",
@@ -1776,7 +1778,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Abas mantêm estado e exibem resumo real sem nova busca redundante a cada toque",
@@ -1839,7 +1842,8 @@
             "docs/arquitetura/contratos-v1.md",
             "docs/arquitetura/fluxos.md",
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/alimentacao-consulta.md"
+            "docs/execucao/v1/alimentacao-consulta.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Tela procura alimento/preparo, confirma quantidade e registra por API",
@@ -1875,17 +1879,14 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "23/10: consumo humano real confirmado na020 e preservado; Hoje/Diário agora compartilham resumoGo real, sem misturar energia/métodos/gasto. Shell e visão inicialFigma entregues; conversão visual de busca/quantidade/formulários/detalhe/histórico e cadastro próprio humano ainda pendentes. Visual02: busca eporção comcontextosFigma existentes,70testesFlutter/analyze0issues; histórico/detalhes/cadastro próprio visual ainda pendentes. ConectorFigma atingiu quotaStarter para104:1260; não comprar ou contornar. Pontos01–06: Hoje com semana real abrindo diário por data, estados explícitos e temas semânticos; consumo humano preservado, nenhum novo lançamento. Ver frontend-etapa-01-06.md. Histórico/detalhes e cadastro próprio humano continuam pendentes. 24/10: ajusteGrafite e lima e rolagemAndroid semesticar implementados noAPK0.2.1+12;90testesFlutter/analyze0issues. iOS mantém padrão porplataforma, sem execução nativa iOS27; ver frontend-dark-scroll.md. 24/10: checkpoint07–12 noAPK0.3.0+13;101testesFlutter/analyze0issues,20prévias de fixtures. Biblioteca/alimentação/privacidade e ajuda refinados, proteção de rascunho/envio e busca particular independente. Não concluir a história nem todos07–12: configuração persistida, prática/atividade, recursos semcontrato/conteúdo, referênciasFigma faltantes e iOS nativo permanecem pendentes. Ver frontend-etapa-07-12.md. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
-            "docs/execucao/v1/frontend-etapa-01-06.md",
             "docs/execucao/v1/frontend-stage01-verification.json",
-            "docs/execucao/v1/frontend-dark-scroll.md",
             "docs/execucao/v1/frontend-dark-scroll-verification.json",
-            "docs/execucao/v1/frontend-etapa-07-12.md",
             "docs/execucao/v1/frontend-stage07-12-verification.json",
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
@@ -1914,7 +1915,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Cache tem versão, validade, direitos e isolamento por conta; sem cache de conteúdo bloqueado",
@@ -1974,7 +1976,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md"
+            "docs/arquitetura/fluxos.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Texto ampliado, semântica, contraste, alvos de toque e movimento reduzido conferidos",
@@ -2037,7 +2040,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Inventário e análise de Go/Flutter/Android com resultados e versões reais",
@@ -2097,7 +2101,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "RequestId correlaciona Flutter/API; logs estruturados com redação e cardinalidade limitada",
@@ -2161,7 +2166,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Baseline registra hardware, versão, volume, cenário, p50/p95/p99, erros e saturação",
@@ -2282,7 +2288,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "CI roda análise/testes de Go e Flutter, migrations em DB isolado e validação documental",
@@ -2404,7 +2411,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/decisoes-piloto.md"
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro",
@@ -2477,7 +2485,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Login real → lote aprovado → fonte/versão → registro real → resumo → relançamento → logout verificados",
@@ -2533,7 +2542,8 @@
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/decisoes-piloto.md"
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "APK release versionado, checksum, notas e link privado autorizado; sem envio de mensagem sem pedido explícito",
@@ -2589,7 +2599,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Consolidar problemas realmente observados por impacto e reprodução",
@@ -2652,7 +2663,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Ambiente macOS/Xcode e dispositivo/simulador reais disponíveis e documentados",
@@ -2708,7 +2720,8 @@
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/implantacao-e-apk.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Contas de desenvolvedor, taxas atuais, regras de saúde/dados e revisão verificadas em fontes oficiais",
@@ -2774,7 +2787,8 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Expandir pelos lotes N pesquisados, mantendo direitos/apoio/variante e ambiente",
@@ -2832,7 +2846,8 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Plataformas/provedores são escolhidos por pesquisa e capacidade real do aparelho",
@@ -2888,7 +2903,8 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Foto de prato, rótulo/barcode, painel de treino e gesto são problemas separados",
@@ -2953,7 +2969,8 @@
             "docs/execucao/v1/escopo.md",
             "docs/arquitetura/diagnostico-atual.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md"
+            "docs/execucao/v1/handoff.md",
+            "docs/execucao/v1/trilha-implementacao.md"
           ],
           "acceptance": [
             "Pessoa assistida tem vínculo e permissões explícitos; registros distinguem autor e titular",
