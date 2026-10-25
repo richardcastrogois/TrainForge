@@ -708,9 +708,9 @@ Handoff: 23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimenta�
 
 Como usuário, quero fotografar uma refeição, corrigir os alimentos identificados e informar quanto consumi antes do cálculo e da confirmação.
 
-Dependências: V1-013, V1-020, V1-025
+Dependências: V1-013, V1-020, V1-025, V1-045
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/pesquisa-fotos-historico.md
 
 Critérios de aceite:
 
@@ -741,7 +741,83 @@ Validação: Ensaio com imagens autorizadas e resultado real editado; métricas 
 
 Entregas: Fluxo real de reconhecimento/revisão/quantidade/confirmação; Política de armazenamento e histórico visual privado; Resultados da prova de identificação e testes do ciclo privado
 
-Handoff: 24/10:Q1 antecipou esta capacidade paraV1. A quantidade será digitada pelo usuário; o reconhecimento não confirma consumo. Recuperação das imagens e mensagens educativas aguardamQ2. Sem novo serviço pago, hospedagem ou envio a terceiro autorizado por inferência. Barcode/OCR e imagens de atividade não foram antecipados.
+Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045 e histórico/análise/dicas juntos na046. Recuperação das imagens ainda aguarda decisão após a comparação de quatro produtos; persistência privada pela conta+cache é proposta. Sem serviço pago, hospedagem ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores.
+
+### V1-045 — Organizar registros por refeição e por alimento
+
+**todo · V1 · L**
+
+Como usuário, quero ver minha alimentação agrupada em refeições e também consultar os alimentos individualmente, mantendo os mesmos dados e cálculos.
+
+Dependências: V1-020, V1-021
+
+Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/pesquisa-fotos-historico.md; docs/execucao/v1/escopo.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md
+
+Critérios de aceite:
+
+- Refeição contém itens com quantidades/unidades e versões próprias; visão por alimento usa os mesmos registros, sem duplicar consumo ou nutrientes
+- Usuário pode consultar refeição e detalhe por alimento, corrigir/excluir item e obter resumos consistentes; ações por refeição têm semântica explícita
+- Alimentos de uma foto podem ser revisados e vinculados à refeição; foto não é identidade nem prova de consumo confirmado
+- Entrada antiga sem informação de refeição permanece preservada e identificável; não inventar agrupamento ou nome de refeição do passado
+- Ownership, fuso/data, revisões, idempotência e cálculos/desconhecidos da020 são mantidos nos novos agrupamentos
+
+Tarefas e subtarefas:
+
+- V1-045-T01 — Modelar relação refeição e itens
+  - Especificar identidade, horários, correção/exclusão e compatibilidade dos registros existentes
+  - Criar migrations/contratos sem reset e manter fonte/versionamento/cálculo por item
+- V1-045-T02 — Integrar duas visualizações
+  - Construir resumo da refeição e acesso aos alimentos sobre o mesmo estado/repository
+  - Preservar navegação/rascunhos/conta e mensagens de imagem ausente ou pendente sem apagar consumo
+- V1-045-T03 — Validar consistência e privacidade
+  - Testar item criado/corrigido/excluído, reenvio e leitura entre contas em base descartável
+  - Conferir totais, unidades/métodos, ausência e o registro humano existente sem alterá-lo por inferência
+
+Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Compatibilidade de registros anteriores e titularidade verificadas
+
+Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
+
+Handoff: 25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; política de recuperação de fotos continua proposta, não escolhida. API de foto042 depende desse agrupamento.
+
+### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
+
+**todo · V1 · L**
+
+Como usuário, quero acompanhar minhas refeições visualmente, analisar os nutrientes registrados e receber observações educativas revisadas na primeira versão.
+
+Dependências: V1-045, V1-020, V1-021
+
+Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/pesquisa-fotos-historico.md; docs/execucao/v1/escopo.md; docs/arquitetura/contratos-v1.md; docs/conteudo/evidencias-para-integracao.md
+
+Critérios de aceite:
+
+- Histórico visual por refeição/alimento, análise dos nutrientes registrados e dicas educativas revisadas integram a primeira versão desejada; não adiar silenciosamente análise/dicas após a clarificaçãoQ2
+- Resumos indicam período/fuso, registros e dias com dados, quantidade medida/estimada, métodos e campos desconhecidos; ausência não é zero nem prova de que alimento/nutriente não foi consumido
+- Agregação preserva base/unidade/versão e não soma métodos ou unidades incompatíveis; não duplicar itens ao alternar a visão
+- Observações sobre variedade/repetição e nutrientes têm regra, fonte, versão e revisão humana, condição de aplicabilidade e explicação; sem conselho inventado por IA
+- Não concluir deficiência, criar meta clínica, prescrever suplemento/dose ou tratar diário parcial como ingestão integral; quando dados/regra faltam mostrar a limitação
+- Fotos/miniaturas respeitam política aprovada e titularidade; análise do registro continua disponível se uma imagem faltar
+- Testar consistência, correção/exclusão, período/fuso, desconhecidos, dados insuficientes, acessibilidade e mensagens revisadas antes do aceite humano
+
+Tarefas e subtarefas:
+
+- V1-046-T01 — Definir regras e conteúdo revisado
+  - Reutilizar evidências existentes e separar estatística descritiva de orientação educativa
+  - Definir períodos, cobertura, aplicabilidade e como comunicar ausência/estimativas; não escolher limiar clínico por suposição
+  - Preparar conjunto mínimo de dicas com fonte/licença/versão/revisor e testes dos motivos de exibição
+- V1-046-T02 — Implementar análise e apresentação
+  - Criar agregação/contrato por período compatível com as regras da020
+  - Construir histórico visual e análise legíveis com dicas explicáveis, preservando marca/Figma e as duas visões
+  - Atualizar resultado quando registros forem corrigidos/excluídos; não usar imagem como fonte de nutrientes
+- V1-046-T03 — Validar dados e aceite
+  - Ensaiar dados parciais, referências sem nutrientes/base, conflitos de método/unidade e reenvios em base isolada
+  - Conferir regras/fontes e realizar aceite real do conjunto sem fixtures apresentadas como histórico do usuário
+
+Validação: Resultados conferidos contra consumos/versões e cálculos da API; Cenários negativos de diário incompleto/desconhecido e revisão das mensagens; Aceite conjunto de histórico/análise/dicas com dados reais autorizados
+
+Entregas: Contrato e tela de análise/histórico; Regras e conteúdo educativo revisados; Recibo de cálculos, limites e aceite
+
+Handoff: 25/10:autor esclareceu expressamente que quer histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Escopo aprovado, não implementação. Retenção/recuperação de imagens ainda aguardam decisão após pesquisa; sem contratação ou inferência clínica.
 
 ## EP07 — Flutter e experiência da V1
 
@@ -1205,7 +1281,7 @@ Handoff: 23/10: certificado de avaliação release dedicado existente e protegid
 
 Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e conteúdo reais.
 
-Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044
+Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046
 
 Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
 
@@ -1215,6 +1291,7 @@ Critérios de aceite:
 - Erro/offline/duplo toque/ausência de conteúdo e troca de data cobertos sem mocks no runtime
 - Lote bloqueado não executa; feedback não é apresentado como comprovação clínica
 - Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1
+- Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes
 
 Tarefas e subtarefas:
 
@@ -1455,4 +1532,4 @@ Validação: Teste de permissões entre titulares e cuidadores; Revisão da orig
 
 Entregas: Jornadas de acompanhamento; Expansão alimentar com origem
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.

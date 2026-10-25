@@ -1,12 +1,12 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **24/10/2026**. Raiz correta: `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. O pedido atual do usuário prevalece sobre snapshots históricos.
+Estado vigente: **25/10/2026**. Raiz correta: `C:/dev/TrainForge/trainforge`; o diretório pai não é o repositório. O pedido atual do usuário prevalece sobre snapshots históricos.
 
 ## Leitura e próxima ação
 
 1. Ler [trilha por área](docs/execucao/v1/trilha-implementacao.md), [handoff](docs/execucao/v1/handoff.md), [backlog](docs/execucao/v1/backlog.json) e a história pelas dependências.
 2. A trilha registra a expectativa do autor: avaliar o produto completo antes de comprar GIFs, distinguir banco/backend/segurança/frontend/testes/escala e encerrar cada recorte por critérios e evidências. Código seguro, organizado e preparado para crescer é exigido desde agora; monólito modular não autoriza acoplamento ou segurança adiada.
-3. Q1 respondido:dois caminhos(programa/composição controlada); cuidador treina para si nas pausas do trabalho; foto identifica candidatos editáveis e o usuário digita quantidade antes do cálculo/confirmação. Ler decisoes-piloto.md. Próxima conversa:**Q2**, recuperação de fotos/histórico/observações. Não pedir vínculo com paciente como requisito do cuidador. Resolver detalhes técnicos rotineiros com evidência.
+3. Q1/Q2 em [decisões do piloto](docs/execucao/v1/decisoes-piloto.md): dois caminhos de treino; cuidador treina para si nas pausas; foto com candidatos editáveis e quantidade informada; visões por refeição e alimento; histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Q2 só mantém pendente a política de recuperação das fotos após a [comparação de quatro produtos](docs/execucao/v1/pesquisa-fotos-historico.md). Persistência privada pela conta + cache é proposta, sem autorização de hospedagem. Não pedir vínculo com paciente como requisito do cuidador.
 4. [Auditoria de24/10](docs/execucao/v1/auditoria-produto-2026-10-24.md) e [recibo](docs/execucao/v1/auditoria-produto-verificacao.json) são o baseline factual, não uma certificação de segurança/capacidade.
 
 ## Estado comprovado e limites
@@ -16,7 +16,7 @@ Estado vigente: **24/10/2026**. Raiz correta: `C:/dev/TrainForge/trainforge`; o 
 - V1-011/012/013:Google Android debug real, sessão e privacidade validados localmente; clientes OAuth debug/release conferidos. [Aceite](docs/execucao/v1/auth-local-fechamento.md). Não repetir OAuth/login/import/restore sem alteração que justifique. HTTPS/distribuição release e iOS têm gates próprios.
 - V1-014/019/020:catálogo de consulta e6.369 referências Ciqual/CoFID; cadastro particular e consumo/histórico/revisões/subtotais reais. Última auditoria confirmou1 conta / 1 consumo humano real; preservar. Testes isolados não autorizam criar/apagar dados do titular.
 - APK debug 0.3.0+13; pontos frontend 01–06 têm checkpoint Android,07–12 acabamento dos fluxos disponíveis, sem encerramento integral. [Fonte visual e checkpoints](docs/execucao/v1/frontend-fidelidade-figma.md). Configuração/treino/atividade/cuidador/foto/idiomas completos ainda faltam.
-- V1-021 continua doing; não encerrar021/022/025 por haver componentes ou APIs. Foto042 agora naV1 e composição044 criada pelas respostasQ1; sensores041 e acompanhamento043 seguem posteriores. Não inferir peso/deficiência nutricional pela foto ou por diário incompleto.
+- V1-021 continua doing; não encerrar021/022/025 por haver componentes ou APIs. Foto042 e composição044 estão naV1 pelas respostasQ1; agrupamento045 e histórico/análise/dicas046 são todo naV1 apósQ2. Sensores041 e acompanhamento043 seguem posteriores. Não inferir peso/deficiência nutricional pela foto ou por diário incompleto.
 - Medição24/10:Flutter 101 testes / 78,46% das linhas instrumentadas; Go 71 resultados aprovados / 10 integrações SQL puladas / 40,73% das instruções do perfil padrão. Não contar skip como aprovação nem tratar cobertura como nota do produto. CI atual não executa Flutter/SQL descartável automaticamente; Sonar não configurado e carga não medida.
 
 ## Figma e documentação

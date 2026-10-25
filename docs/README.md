@@ -1,6 +1,6 @@
 # Documentação do TrainForge
 
-Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
+Atualizado em **25/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
 
 | Preciso entender… | Abrir |
 |---|---|
@@ -17,6 +17,7 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | O caminho até o primeiro APK | [Plano macro da V1](execucao/v1/plano-macro.md) |
 | O que entra na V1 e o que fica depois | [Escopo e critérios](execucao/v1/escopo.md) |
 | O que o autor quer avaliar no APK durante o desenvolvimento | [Decisões do piloto](execucao/v1/decisoes-piloto.md) |
+| Como outros produtos guardam fotos de refeições | [Comparação de quatro produtos e proposta para o TrainForge](execucao/v1/pesquisa-fotos-historico.md) |
 | O que cada agente deve executar | [Backlog](execucao/v1/backlog.md) e [handoff](execucao/v1/handoff.md) |
 | Quem chama quem, passando e recebendo o quê | [Arquitetura dinâmica](arquitetura/README.md), [contratos](arquitetura/contratos-v1.md) e [fluxos](arquitetura/fluxos.md) |
 | Como serão camadas e Swagger Go | [Camadas](arquitetura/camadas-go.md) e [Swagger por comentários](arquitetura/swagger-go.md) |
@@ -26,7 +27,7 @@ Atualizado em **24/10/2026**. Este índice define a leitura atual; datas dentro 
 | Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
 | O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
 
-**Prioridade vigente24/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md), Q1 respondido e próximoQ2 sobre fotos/histórico/observações. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
+**Prioridade vigente 25/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md). Q1 e agrupamento por refeição/alimento confirmados; histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Q2 só mantém pendente a recuperação das fotos após pesquisa. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
 
 **Aplicativo disponível:** APK Android debug **0.3.0+13**, API Go **0.5.1 / 25 operações**, PostgreSQL local. Autenticação/privacidade e alimentação manual possuem evidências reais. Há 73 metadados de movimento e 6.369 referências alimentares; nenhuma prática foi liberada por aplicar o visual.
 

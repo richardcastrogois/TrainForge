@@ -1,8 +1,8 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `50011d3da7ee48f6`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4e8f37b704c3e3e3`.
 
-**16/44 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**16/46 histórias concluídas**, em 12 épicos. Próxima história: **V1-021**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
@@ -11,7 +11,7 @@
 | EP03 | Fundação Go, contratos e banco | 4 | 4 |
 | EP04 | Identidade, privacidade e acesso | 3 | 3 |
 | EP05 | Biblioteca humana e API de catálogo | 4 | 1 |
-| EP06 | Atividade e alimentação registradas de verdade | 5 | 2 |
+| EP06 | Atividade e alimentação registradas de verdade | 7 | 2 |
 | EP07 | Flutter e experiência da V1 | 7 | 0 |
 | EP08 | Segurança, desempenho e observabilidade | 3 | 0 |
 | EP09 | Infraestrutura, CI e implantação | 3 | 0 |
@@ -144,8 +144,11 @@ flowchart LR
     node7["V1-018"]
     node8["V1-019"]
     node9["V1-020"]
-    node10["V1-025 (pré-requisito externo ao épico)"]
-    node11["V1-042"]
+    node10["V1-021 (pré-requisito externo ao épico)"]
+    node11["V1-025 (pré-requisito externo ao épico)"]
+    node12["V1-042"]
+    node13["V1-045"]
+    node14["V1-046"]
     node5 -->|"requer"| node6
     node3 -->|"requer"| node6
     node6 -->|"requer"| node7
@@ -154,9 +157,15 @@ flowchart LR
     node8 -->|"requer"| node9
     node4 -->|"requer"| node9
     node1 -->|"requer"| node9
-    node4 -->|"requer"| node11
-    node9 -->|"requer"| node11
-    node10 -->|"requer"| node11
+    node4 -->|"requer"| node12
+    node9 -->|"requer"| node12
+    node11 -->|"requer"| node12
+    node13 -->|"requer"| node12
+    node9 -->|"requer"| node13
+    node10 -->|"requer"| node13
+    node13 -->|"requer"| node14
+    node9 -->|"requer"| node14
+    node10 -->|"requer"| node14
 ```
 
 | História | Status | Entrega | Depende de |
@@ -165,7 +174,9 @@ flowchart LR
 | V1-018 | todo | Consultar histórico e resumo com origem das métricas | V1-017 |
 | V1-019 | done | Validar e importar o lote alimentar | V1-004, V1-010 |
 | V1-020 | done | Pesquisar e cadastrar alimento próprio e registrar consumo | V1-019, V1-013, V1-008 |
-| V1-042 | todo | Reconhecer alimentos por foto com revisão e quantidade informada | V1-013, V1-020, V1-025 |
+| V1-042 | todo | Reconhecer alimentos por foto com revisão e quantidade informada | V1-013, V1-020, V1-025, V1-045 |
+| V1-045 | todo | Organizar registros por refeição e por alimento | V1-020, V1-021 |
+| V1-046 | todo | Entregar histórico visual, análise nutricional e dicas revisadas | V1-045, V1-020, V1-021 |
 ### EP07 — Flutter e experiência da V1
 
 ```mermaid
@@ -292,6 +303,8 @@ flowchart LR
     node12["V1-037"]
     node13["V1-042 (pré-requisito externo ao épico)"]
     node14["V1-044 (pré-requisito externo ao épico)"]
+    node15["V1-045 (pré-requisito externo ao épico)"]
+    node16["V1-046 (pré-requisito externo ao épico)"]
     node0 -->|"requer"| node9
     node7 -->|"requer"| node9
     node1 -->|"requer"| node10
@@ -304,6 +317,8 @@ flowchart LR
     node9 -->|"requer"| node10
     node13 -->|"requer"| node10
     node14 -->|"requer"| node10
+    node15 -->|"requer"| node10
+    node16 -->|"requer"| node10
     node10 -->|"requer"| node11
     node11 -->|"requer"| node12
 ```
@@ -311,7 +326,7 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-034 | todo | Preparar identidade e assinatura Android | V1-021, V1-032 |
-| V1-035 | todo | Validar a jornada completa da V1 | V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044 |
+| V1-035 | todo | Validar a jornada completa da V1 | V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046 |
 | V1-036 | todo | Gerar e disponibilizar APK à esposa | V1-035 |
 | V1-037 | todo | Encerrar piloto e priorizar correções | V1-036 |
 ### EP11 — iOS e distribuição nas lojas

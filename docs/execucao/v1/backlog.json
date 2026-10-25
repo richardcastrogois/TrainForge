@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-25",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-021",
@@ -1634,7 +1634,8 @@
           "dependsOn": [
             "V1-013",
             "V1-020",
-            "V1-025"
+            "V1-025",
+            "V1-045"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -1643,7 +1644,8 @@
             "docs/execucao/v1/handoff.md",
             "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/pesquisa-fotos-historico.md"
           ],
           "acceptance": [
             "Foto gera candidatos editáveis; usuário pode corrigir/remover/adicionar itens e informa quantidade por alimento antes de confirmar consumo",
@@ -1693,11 +1695,173 @@
             "Política de armazenamento e histórico visual privado",
             "Resultados da prova de identificação e testes do ciclo privado"
           ],
-          "handoff": "24/10:Q1 antecipou esta capacidade paraV1. A quantidade será digitada pelo usuário; o reconhecimento não confirma consumo. Recuperação das imagens e mensagens educativas aguardamQ2. Sem novo serviço pago, hospedagem ou envio a terceiro autorizado por inferência. Barcode/OCR e imagens de atividade não foram antecipados.",
+          "handoff": "Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045 e histórico/análise/dicas juntos na046. Recuperação das imagens ainda aguarda decisão após a comparação de quatro produtos; persistência privada pela conta+cache é proposta. Sem serviço pago, hospedagem ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
+          ]
+        },
+        {
+          "id": "V1-045",
+          "title": "Organizar registros por refeição e por alimento",
+          "userStory": "Como usuário, quero ver minha alimentação agrupada em refeições e também consultar os alimentos individualmente, mantendo os mesmos dados e cálculos.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R09",
+            "R10",
+            "R14",
+            "R15",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-020",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/pesquisa-fotos-historico.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/dominio-e-banco.md",
+            "docs/arquitetura/contratos-v1.md"
+          ],
+          "acceptance": [
+            "Refeição contém itens com quantidades/unidades e versões próprias; visão por alimento usa os mesmos registros, sem duplicar consumo ou nutrientes",
+            "Usuário pode consultar refeição e detalhe por alimento, corrigir/excluir item e obter resumos consistentes; ações por refeição têm semântica explícita",
+            "Alimentos de uma foto podem ser revisados e vinculados à refeição; foto não é identidade nem prova de consumo confirmado",
+            "Entrada antiga sem informação de refeição permanece preservada e identificável; não inventar agrupamento ou nome de refeição do passado",
+            "Ownership, fuso/data, revisões, idempotência e cálculos/desconhecidos da020 são mantidos nos novos agrupamentos"
+          ],
+          "tasks": [
+            {
+              "id": "V1-045-T01",
+              "title": "Modelar relação refeição e itens",
+              "subtasks": [
+                "Especificar identidade, horários, correção/exclusão e compatibilidade dos registros existentes",
+                "Criar migrations/contratos sem reset e manter fonte/versionamento/cálculo por item"
+              ]
+            },
+            {
+              "id": "V1-045-T02",
+              "title": "Integrar duas visualizações",
+              "subtasks": [
+                "Construir resumo da refeição e acesso aos alimentos sobre o mesmo estado/repository",
+                "Preservar navegação/rascunhos/conta e mensagens de imagem ausente ou pendente sem apagar consumo"
+              ]
+            },
+            {
+              "id": "V1-045-T03",
+              "title": "Validar consistência e privacidade",
+              "subtasks": [
+                "Testar item criado/corrigido/excluído, reenvio e leitura entre contas em base descartável",
+                "Conferir totais, unidades/métodos, ausência e o registro humano existente sem alterá-lo por inferência"
+              ]
+            }
+          ],
+          "validation": [
+            "Integração Go/SQL/Flutter das duas visões sem dupla contagem",
+            "Compatibilidade de registros anteriores e titularidade verificadas"
+          ],
+          "deliverables": [
+            "Modelo e contrato de refeições/itens",
+            "Visões por refeição e por alimento",
+            "Recibo de integridade/compatibilidade"
+          ],
+          "handoff": "25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; política de recuperação de fotos continua proposta, não escolhida. API de foto042 depende desse agrupamento.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/pesquisa-fotos-historico.md"
+          ]
+        },
+        {
+          "id": "V1-046",
+          "title": "Entregar histórico visual, análise nutricional e dicas revisadas",
+          "userStory": "Como usuário, quero acompanhar minhas refeições visualmente, analisar os nutrientes registrados e receber observações educativas revisadas na primeira versão.",
+          "status": "todo",
+          "release": "V1",
+          "size": "L",
+          "requirements": [
+            "R07",
+            "R08",
+            "R09",
+            "R10",
+            "R14",
+            "R15",
+            "R17",
+            "R18"
+          ],
+          "dependsOn": [
+            "V1-045",
+            "V1-020",
+            "V1-021"
+          ],
+          "inputs": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/pesquisa-fotos-historico.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/arquitetura/contratos-v1.md",
+            "docs/conteudo/evidencias-para-integracao.md"
+          ],
+          "acceptance": [
+            "Histórico visual por refeição/alimento, análise dos nutrientes registrados e dicas educativas revisadas integram a primeira versão desejada; não adiar silenciosamente análise/dicas após a clarificaçãoQ2",
+            "Resumos indicam período/fuso, registros e dias com dados, quantidade medida/estimada, métodos e campos desconhecidos; ausência não é zero nem prova de que alimento/nutriente não foi consumido",
+            "Agregação preserva base/unidade/versão e não soma métodos ou unidades incompatíveis; não duplicar itens ao alternar a visão",
+            "Observações sobre variedade/repetição e nutrientes têm regra, fonte, versão e revisão humana, condição de aplicabilidade e explicação; sem conselho inventado por IA",
+            "Não concluir deficiência, criar meta clínica, prescrever suplemento/dose ou tratar diário parcial como ingestão integral; quando dados/regra faltam mostrar a limitação",
+            "Fotos/miniaturas respeitam política aprovada e titularidade; análise do registro continua disponível se uma imagem faltar",
+            "Testar consistência, correção/exclusão, período/fuso, desconhecidos, dados insuficientes, acessibilidade e mensagens revisadas antes do aceite humano"
+          ],
+          "tasks": [
+            {
+              "id": "V1-046-T01",
+              "title": "Definir regras e conteúdo revisado",
+              "subtasks": [
+                "Reutilizar evidências existentes e separar estatística descritiva de orientação educativa",
+                "Definir períodos, cobertura, aplicabilidade e como comunicar ausência/estimativas; não escolher limiar clínico por suposição",
+                "Preparar conjunto mínimo de dicas com fonte/licença/versão/revisor e testes dos motivos de exibição"
+              ]
+            },
+            {
+              "id": "V1-046-T02",
+              "title": "Implementar análise e apresentação",
+              "subtasks": [
+                "Criar agregação/contrato por período compatível com as regras da020",
+                "Construir histórico visual e análise legíveis com dicas explicáveis, preservando marca/Figma e as duas visões",
+                "Atualizar resultado quando registros forem corrigidos/excluídos; não usar imagem como fonte de nutrientes"
+              ]
+            },
+            {
+              "id": "V1-046-T03",
+              "title": "Validar dados e aceite",
+              "subtasks": [
+                "Ensaiar dados parciais, referências sem nutrientes/base, conflitos de método/unidade e reenvios em base isolada",
+                "Conferir regras/fontes e realizar aceite real do conjunto sem fixtures apresentadas como histórico do usuário"
+              ]
+            }
+          ],
+          "validation": [
+            "Resultados conferidos contra consumos/versões e cálculos da API",
+            "Cenários negativos de diário incompleto/desconhecido e revisão das mensagens",
+            "Aceite conjunto de histórico/análise/dicas com dados reais autorizados"
+          ],
+          "deliverables": [
+            "Contrato e tela de análise/histórico",
+            "Regras e conteúdo educativo revisados",
+            "Recibo de cálculos, limites e aceite"
+          ],
+          "handoff": "25/10:autor esclareceu expressamente que quer histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Escopo aprovado, não implementação. Retenção/recuperação de imagens ainda aguardam decisão após pesquisa; sem contratação ou inferência clínica.",
+          "completionEvidence": [],
+          "workEvidence": [
+            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/pesquisa-fotos-historico.md"
           ]
         }
       ]
@@ -2642,7 +2806,9 @@
             "V1-033",
             "V1-034",
             "V1-042",
-            "V1-044"
+            "V1-044",
+            "V1-045",
+            "V1-046"
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
@@ -2656,7 +2822,8 @@
             "Login real → lote aprovado → fonte/versão → registro real → resumo → relançamento → logout verificados",
             "Erro/offline/duplo toque/ausência de conteúdo e troca de data cobertos sem mocks no runtime",
             "Lote bloqueado não executa; feedback não é apresentado como comprovação clínica",
-            "Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1"
+            "Escolha de programa e composição controlada, além de alimento por foto revisado com quantidade informada, aceitos no recorte aprovadoQ1; ausência dessas capacidades não é escondida para fecharV1",
+            "Visões por refeição e alimento, histórico visual, análise nutricional e dicas revisadas verificados juntos conformeQ2, sem dupla contagem ou diagnóstico por dados ausentes"
           ],
           "tasks": [
             {
@@ -3107,11 +3274,11 @@
             "Jornadas de acompanhamento",
             "Expansão alimentar com origem"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.",
           "completionEvidence": []
         }
       ]
     }
   ],
-  "currentPriority": "23/10: pedido explícito doautor: ajustar todo o frontend para corresponder exatamente aoFigma vigente antes de novasfuncionalidades backend; ver frontend-fidelidade-figma.md"
+  "currentPriority": "25/10: seguir trilha por área e perguntas por blocos. Q1 e parte deQ2 respondidos: dois caminhos de treino; cuidador pratica para si; foto com revisão/quantidade; refeições/alimentos e histórico visual/análise/dicas juntos naV1. Falta decidir recuperação das fotos após pesquisa; depoisQ3. V1-021 doing,045/046 todo; sem hospedagem agora."
 }

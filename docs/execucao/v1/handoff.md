@@ -1,12 +1,12 @@
 # Handoff vigente — trilha de implementação por área
 
-Atualizado em **24/10/2026**. Raiz: **C:/dev/TrainForge/trainforge**.
+Atualizado em **25/10/2026**. Raiz: **C:/dev/TrainForge/trainforge**.
 
 ## Pedido e próxima ação
 
 O autor quer compreender e testar o produto inteiro antes de comprar GIFs. Exige código seguro, organizado, separado por responsabilidade e preparado para crescer desde já. Pediu trilha detalhada por área, limpeza de documentos redundantes, commit/push e depois dúvidas por blocos.
 
-**Q1 respondido e registrado** em [decisões do piloto](decisoes-piloto.md):ambos os caminhos de treino; cuidador é o praticante nas pausas; foto identifica candidatos editáveis e usuário informa quantidade. Próxima conversa:**Q2**, sobre recuperação das fotos, histórico e observações. Ler [trilha](trilha-implementacao.md) antes de mudar o recorte. Não voltar a pedir hospedagem/OAuth nem pesquisar APIs amplamente.
+**Q1 e Q2 registrados** em [decisões do piloto](decisoes-piloto.md): ambos os caminhos de treino; cuidador é o praticante nas pausas; foto com candidatos editáveis e quantidade informada. Q2 confirmou visões por refeição e por alimento, além de histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Só a política de recuperação das fotos aguarda decisão após a [pesquisa de quatro produtos](pesquisa-fotos-historico.md). Persistência privada pela conta + cache é recomendação, ainda não aprovada. Ler [trilha](trilha-implementacao.md); não pedir hospedagem/OAuth nem pesquisar APIs amplamente.
 
 A [auditoria24/10](auditoria-produto-2026-10-24.md) é o baseline factual. A trilha é o roteiro de decisões e implementação; [backlog.json](backlog.json) governa dependências/estados. Nenhum bloco foi encerrado só por documentá-lo. V1-021 permanece doing e próxima no backlog; adequar o recorte às respostas sem pular dependências.
 
@@ -31,7 +31,7 @@ Os relatos frontend-etapa-01-06.md, frontend-dark-scroll.md e frontend-etapa-07-
 
 Trabalhar pelos gates da trilha:decisões → banco → backend → segurança → frontend → qualidade → escala → APK → avaliação da mídia, respeitando as dependências do backlog. Segurança/testes entram em cada incremento. Bloqueio humano/editorial não vira done; seguir apenas trabalho independente.
 
-Foto042 foi antecipada e delimitada a alimento por foto, sem inferir quantidade; composição044 criada para o segundo caminho aprovado. Sensores041 e acompanhamento de terceiros043 continuam posteriores. Histórico deconsumo é dado doservidor; recuperar também as fotos e regras deobservações aguardamQ2. Conteúdo precisa de direitos/revisão apropriados; API deGIFs não aprova treino/dose. Sem história/valor/quantidade/condição fictícios no runtime.
+Foto042 foi antecipada e delimitada a alimento por foto, sem inferir quantidade; composição044 cobre o segundo caminho aprovado. Agrupamento045 e histórico/análise/dicas046 foram planejados como todo naV1, sem implementação ou novo done. Regras/fontes/revisão das dicas precisam ser elaboradas; a prioridade conjunta já foi decidida. Sensores041 e acompanhamento de terceiros043 continuam posteriores. Histórico de consumo é dado do servidor; recuperar também as fotos aguarda a política Q2. Conteúdo precisa de direitos/revisão apropriados; API deGIFs não aprova treino/dose. Sem história/valor/quantidade/condição fictícios no runtime.
 
 Sem hospedagem/deploy/compra/assinatura/integração paga/contato externo. Gratuitas primeiro; atéR$400 eventual permanece decisão doautor. Commit e push de incrementos validados autorizados; manter credenciais/capturas privadas fora doGit.
 

@@ -8,7 +8,15 @@ Objetivo ajustado pelas [respostas do autor](decisoes-piloto.md): obter APKs de 
 
 Dois caminhos de treino:escolher programas humanos compatíveis e compor exercícios com regras humanas revisadas(V1-044), sem dose inventada. Cuidador é o praticante nas pausas do próprio trabalho; acompanhamento de pessoa assistida não é requisito desta entrega.
 
-Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; recuperação das fotos e recorte de observações educativas aguardamQ2. [Decisões completas](decisoes-piloto.md).
+Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; a recuperação das fotos ainda aguarda a decisão Q2 descrita abaixo. [Decisões completas](decisoes-piloto.md).
+
+## Respostas Q2 incorporadas em 25/10
+
+Agrupar por refeição e oferecer também a visão por alimento, usando os mesmos registros/cálculos sem dupla contagem (V1-045). **Histórico visual, análise nutricional e dicas revisadas devem ser entregues juntos na primeira versão** (V1-046); não adiar parte do conjunto sem nova decisão.
+
+A análise mostra somente os registros disponíveis, com período/fuso, dias com dados, estimativas, métodos e desconhecidos. Dicas exigem fonte, versão, regra e revisão humana; não diagnosticar deficiência ou criar metas clínicas por diário parcial.
+
+A [pesquisa comparativa de fotos](pesquisa-fotos-historico.md) foi pedida antes da decisão de recuperação. Persistência privada pela conta + cache é proposta, não escolha confirmada nem autorização de hospedagem.
 
 ## Compromissos da V1
 
@@ -31,7 +39,7 @@ N15 tem11 componentes para cuidadores no recorte modular; ES2019-DOM-01 tem5 mov
 
 ## Depois do primeiro piloto
 
-O [backlog](backlog.md) mantém iOS/TestFlight/lojas emV1.1; expansão de modalidades/importação própria, sensores/GPS, OCR/barcode, imagem deatividade e acompanhamento de terceiros seguem posteriores. Composição controlada044 e alimento por foto042 foram antecipados paraV1 pelas respostasQ1. Esses recursos não serão simulados no APK para parecer completos. R12/R13 continuam na visão; não estão descartados. Nutrição avançada/prescrição individual exige viabilidade própria, distinta do organizador de consumo.
+O [backlog](backlog.md) mantém iOS/TestFlight/lojas emV1.1; expansão de modalidades/importação própria, sensores/GPS, OCR/barcode, imagem deatividade e acompanhamento de terceiros seguem posteriores. Composição controlada044 e alimento por foto042 foram antecipados paraV1 pelas respostasQ1; agrupamento045 e histórico/análise/dicas046 integramV1 apósQ2. Esses recursos não serão simulados no APK para parecer completos. R12/R13 continuam na visão; não estão descartados. Nutrição avançada/prescrição individual exige viabilidade própria, distinta do organizador de consumo.
 
 ## APKs intermediários para avaliação
 
@@ -41,7 +49,7 @@ Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a exp
 
 1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
 2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
-3. As duas jornadas de treino(programa e composição controlada) e alimentação manual/por foto revisada verificadas contra o banco; histórico vazio e erros honestos, sem práticas não autorizadas.
+3. As duas jornadas de treino (programa e composição controlada), alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
 4. Sessões idempotentes, retomada, logout/revogação e isolamento de conta verificados.
 5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
 6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.

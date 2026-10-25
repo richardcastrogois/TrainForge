@@ -1,6 +1,6 @@
 # Trilha de implementação e encerramento por área
 
-Atualizada em **24/10/2026**, por solicitação do autor. Base factual: [auditoria do produto](auditoria-produto-2026-10-24.md) e [recibo](auditoria-produto-verificacao.json). APK atual preservado: **debug 0.3.0+13**; API Go **0.5.1 / 25 operações**.
+Atualizada em **25/10/2026**, por solicitação do autor. Base factual: [auditoria do produto](auditoria-produto-2026-10-24.md) e [recibo](auditoria-produto-verificacao.json). APK atual preservado: **debug 0.3.0+13**; API Go **0.5.1 / 25 operações**.
 
 Este é o roteiro humano principal para decidir, implementar e acompanhar o que falta. [backlog.json](backlog.json) continua sendo a fonte dos estados e dependências das histórias V1. Este plano não executa funcionalidades nem transforma propostas em decisões aprovadas.
 
@@ -28,13 +28,22 @@ A expectativa é avaliar **o produto inteiro em incrementos reais**, cenário po
 - **Treinos:**os dois caminhos entram na versão desejada:escolher programas compatíveis e compor exercícios por regras humanas revisadas. V1-015 e novaV1-044, sem prescrição inventada.
 - **Cuidador:**o próprio cuidador é o praticante durante pausas do trabalho. Vínculo/delegação de pessoa assistida não é foco nem bloqueio desta versão; a interpretação anterior foi corrigida.
 - **Foto:**reconhecer candidatos, permitir corrigir/remover/adicionar, pedir quantidade explícita, calcular por base/versão e só então confirmar consumo. V1-042 antecipada paraV1.
-- **Histórico:**deve ser visual e agradável; registros de consumo são do servidor. Recuperar também as imagens exige decisãoQ2 sobre persistência/sincronização. Dicas de variedade/nutrientes ainda precisam de escopo e regras revisadas; não inferir deficiência de registros incompletos.
+- **Histórico:**deve ser visual e agradável; registros de consumo são do servidor. Recuperar também as imagens exige decisãoQ2 sobre persistência/sincronização. Q2 abaixo confirmou histórico, análise nutricional e dicas juntos; regras/fontes/revisão ainda precisam ser elaboradas. Não inferir deficiência de registros incompletos.
 
 Registro detalhado e distinção entre decisão e proposta em [decisoes-piloto.md](decisoes-piloto.md). Nenhuma dessas capacidades foi implementada por esta atualização.
 
+## Respostas Q2 incorporadas — 25/10/2026
+
+- **Organização aprovada:** agrupar por refeição e também permitir visão por alimento, sobre os mesmos registros (V1-045).
+- **Entrega conjunta aprovada:** histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-046). A clarificação elimina a resposta ambígua “opção 2 e 3 juntas”; não adiar análise/dicas silenciosamente.
+- **Fotos:** a [comparação de quatro produtos](pesquisa-fotos-historico.md) foi concluída documentalmente. Persistência privada pela conta + cache local é recomendação, ainda não escolha aprovada; hospedagem continua adiada.
+- **Limites:** análise representa somente o registrado, com cobertura/desconhecidos explícitos. Dicas exigem regra/fonte/versão/revisão; não diagnosticar deficiência nem inventar nutrientes ou metas.
+
+Nenhuma história foi concluída por essas decisões. Contratos, modelos, conteúdo revisado e implementação seguem os gates abaixo.
+
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1 foi respondido; armazenamento, campos de contexto e política das observações ainda exigem decisões.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1 e parte de Q2 foram respondidos. Recuperação das fotos e campos de contexto ainda exigem decisões; entrega conjunta de histórico/análise/dicas já foi aprovada, com regras e conteúdo a revisar.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -56,7 +65,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 ### Decisões que não podem ficar escondidas
 
-V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
+V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. V1-045/046 detalham as duas visões alimentares e o conjunto histórico/análise/dicas, também naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
 Configuração persistida e quatro idiomas ainda precisam de detalhamento nas histórias. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
@@ -68,10 +77,12 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 |---|---|---|
 | D-01 | Respondido:programas humanos compatíveis **e** composição por regras revisadas; opções editáveis ainda a definir | V1-015/044; dois caminhos sem dose inventada |
 | D-02 | Respondido:cuidador pratica durante pausas do seu trabalho, usando os próprios dados | Contexto de pausa sem cadastro de paciente ou autorização delegada |
-| D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; armazenamento/recuperação das imagens e insights ainda pendentes |
+| D-03 | Respondido:foto identifica candidatos editáveis; usuário informa quantidade antes do cálculo/registro | V1-042 naV1; política de armazenamento/recuperação das imagens ainda pendente |
 | D-04 | Quais campos de configuração são realmente necessários para as escolhas aprovadas | Coleta mínima, validação e persistência sem formulário físico genérico por suposição |
 | D-05 | O que funciona offline e qual perda de rascunho é aceitável | Cache, fila local, sincronização, proteção e conflitos |
 | D-06 | Prioridade dos países/idiomas, apresentação de fontes estrangeiras e termos de entendimento difícil | Localização e cobertura alimentar/treino revisada |
+| D-07 | Respondido: agrupar por refeição e também visualizar por alimento | V1-045; duas visões sem duplicar consumo/nutrientes |
+| D-08 | Respondido: histórico visual, análise nutricional e dicas revisadas juntos na primeira versão | V1-046; regras/fontes/revisão ainda a elaborar, sem inferência clínica |
 
 **Gate 00:** decisões registradas com data e consequência; fluxo local e distribuição pública separados; conteúdo permitido identificado ou bloqueio explícito. Sem decisão essencial, seguir apenas nos ajustes independentes de organização e qualidade.
 
@@ -89,10 +100,11 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 | BD-06 | Recuperação de envio | Se D-05 exigir durabilidade, persistir identificador/corpo da operação e reconciliar resposta perdida sem novo lançamento | Ensaio em banco descartável: servidor confirmou, resposta sumiu, processo encerrou e retomada não duplicou |
 | BD-07 | Índices, volume e retenção | Conferir índices com consultas reais, paginação, crescimento de revisões/idempotência e política de expurgo; JSONB somente onde fizer sentido | EXPLAIN em base de teste, ausência de leitura excessiva e expurgo que preserve invariantes |
 | BD-08 | Backup e restauração | Preservar ensaios já feitos; ampliar só quando schema/retorno de dados mudar. Definir proteção das cópias, retenção e aplicação do ledger de exclusão | Roteiro e recuperação conferidos no recorte alterado; ausência de retorno indevido de dados excluídos |
+| BD-09 | Refeições, itens e análises | Modelar refeição com itens versionados, revisões e anexos conforme política aprovada; preservar entradas antigas sem agrupamento inventado | Duas visões sem dupla contagem, isolamento por titular e cálculos consistentes após correção/exclusão (V1-045/046) |
 
 **Gate 01:** diagrama e inventário atualizados, migrations sem reset, runtime com privilégio mínimo e testes de integridade/isolamento dos novos modelos. Backup antigo validado não comprova automaticamente um schema novo. Dados reais do autor ficam fora das fixtures.
 
-**Histórias relacionadas:** V1-009/010 concluídas para a fundação existente, sem reabertura artificial; novos requisitos alimentam extensões/novas histórias após as decisões. V1-015/017/020/026/043 conforme recorte.
+**Histórias relacionadas:** V1-009/010 concluídas para a fundação existente, sem reabertura artificial; novos requisitos alimentam extensões/novas histórias após as decisões. V1-015/017/020/026/045/046 conforme recorte; V1-043 só para expansão futura.
 
 ## 5. Bloco 02 — backend
 
@@ -115,14 +127,14 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 | BE-04 | Adesão e agenda | Criar/trocar/arquivar adesão; gerar apenas ocorrências previstas pelas regras/fonte, sem progressão inventada | Persistência, troca preservando histórico e rejeição de vínculo inválido |
 | BE-05 | Execução e retomada | Estados planejado/iniciado/pausado/parcial/concluído/não feito/descanso; eventos, datas/fuso e medido versus previsto | Corridas, reenvio, interrupção, retomada e semanas/datas independentes validadas |
 | BE-06 | Histórico e resumo | Consultas paginadas e resumo de origem explícita; execução real separada do plano e alimentação separada de gasto | Respostas não somam métodos incompatíveis nem convertem ausência em zero |
-| BE-07 | Alimentação e erros | Preservar racional/unidades/desconhecidos; resposta de validação clara para nutrientes duplicados e demais falhas de negócio | Contrato e regressão de regras/ownership/revisões, sem novo cálculo divergente no cliente |
+| BE-07 | Alimentação, refeições e análise | Preservar racional/unidades/desconhecidos; refeições/itens sobre os mesmos consumos e agregações por período; erros claros e dicas por regra revisada | Contrato e regressão de ownership/revisões, sem dupla contagem, cálculo divergente no cliente ou diagnóstico por diário parcial (V1-045/046) |
 | BE-08 | Cuidador praticante | Filtrar opções aprovadas para o contexto de pausa do próprio usuário, sem acesso delegado | Mesmo ownership do praticante; não exige vínculo ou cadastro de pessoa assistida |
 | BE-09 | Alimento por foto, aprovado paraV1 | Captura/análise separadas; lista editável, inclusão/remoção, quantidade pelo usuário e confirmação por alimento | Não inventa ingredientes/nutrientes/quantidades; cancelamento/reanálise não duplica consumo; fallback manual e isolamento privados |
 | BE-10 | Documentação e legado | Atualizar Swagger por comentários/tipos, diagramas e mapas; isolar/remover caminho legado após prova de uso | Cliente ativo só usa contratos Go; sem dois escritores do mesmo domínio; referências antigas não parecem entrega atual |
 
 **Gate 02 — “backend encerrado para este recorte”:** todos os casos de uso acordados implementados e integrados ao banco, organização acima conferida, autorização/concorrência/erros/cancelamento testados e Swagger coerente. Se prática real depende de conteúdo ainda não autorizado, o gate funcional continua aberto mesmo que contratos e testes técnicos passem com fixtures isoladas.
 
-**Histórias:** V1-015/016/017/018/020 e extensões de configuração/contexto; V1-042/044 naV1; V1-040/043 permanecem posteriores. Fundação V1-007/008 continua válida no seu escopo.
+**Histórias:** V1-015/016/017/018/020 e extensões de configuração/contexto; V1-042/044/045/046 naV1; V1-040/043 permanecem posteriores. Fundação V1-007/008 continua válida no seu escopo.
 
 ## 6. Bloco 03 — segurança e privacidade
 
@@ -153,7 +165,7 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 | FE-02 | Campos e contratos | Matriz campo do usuário / dado automático / regra / endpoint / persistência; DTO e estado tipados | Nenhum campo inútil ou obrigatório ausente; mensagem vinculada ao campo que falhou |
 | FE-03 | Componentes e estado | Separar controllers/viewmodels, widgets e repositories; refinar formulários grandes sem reescrever tudo | Mudança de conta, dispose, resposta atrasada e navegação não misturam nem perdem estado indevidamente |
 | FE-04 | Configuração e treino | Integrar configuração, opções permitidas, adesão, agenda, execução/pausa/retomada e histórico depois dos contratos | Jornada real, sem gráfico/série/dose fictícios; ausência de conteúdo permanece explícita |
-| FE-05 | Alimentação compreensível | Validar duplicidade de nutrientes, mensagens humanas, quantidade/unidade/fuso, desconhecidos, confirmação e correção/exclusão | Aceite do cadastro particular e consumo real; fonte/licença preservadas e cálculo técnico recolhido em detalhe acessível |
+| FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
 | FE-06 | Retomada/offline | Integrar outbox/cache aprovados, salvar/restaurar rascunho quando previsto, informar pendente versus confirmado | Fechar/reabrir, resposta perdida e troca de conta sem duplicar lançamento ou sugerir sucesso falso |
 | FE-07 | Quatro idiomas | Estrutura de localização, pt-BR, pt-PT, inglês e espanhol; números, datas, plurais, erros e componentes nativos | Jornada integral em cada idioma e texto grande sem cortes; tradução de UI não altera identidade do alimento |
 | FE-08 | Acessibilidade completa | TalkBack/VoiceOver, foco/ordem/rótulos, contraste e estados, fonte/display ampliados, toque/teclado e redução de movimento | Testes automatizados pertinentes e validação com pessoas do público; não depender só do tema |
@@ -162,7 +174,7 @@ Configuração persistida e quatro idiomas ainda precisam de detalhamento nas hi
 
 **Gate 04:** matriz de jornadas do recorte sem telas simulando backend ausente; alinhamento aos contratos e ao Figma aprovado, acessibilidade real e traduções; teste Android e limite iOS explícito. Aprovação visual não libera práticas sem conteúdo permitido.
 
-**Histórias:** V1-021–027 e extensões de localização/configuração. V1-038 é validação nativa iOS; não substituir por widget test no Windows.
+**Histórias:** V1-021–027, V1-042/045/046 e extensões de localização/configuração. V1-038 é validação nativa iOS; não substituir por widget test no Windows.
 
 ## 8. Bloco 05 — testes, CI e análise de qualidade
 
@@ -230,12 +242,12 @@ Monólito modular permite executar várias instâncias; microserviços não corr
 
 ## 12. Perguntas por blocos — sequência de conversa
 
-Não apresentar todas de uma vez. Q1 foi respondido depois do push da trilha. Abrir agoraQ2, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
+Não apresentar todas de uma vez. Q1 e parte de Q2 foram respondidos. Apresentar a pesquisa e fechar somente a decisão restante sobre fotos; depois avançar a Q3, mantendo os demais blocos para a vez correspondente. Registrar as respostas aqui e no recorte afetado antes de implementar. Questões técnicas rotineiras são resolvidas com evidência pelo agente.
 
 | Conversa | Tema | Dúvidas a esclarecer quando chegar a vez | Estado |
 |---|---|---|---|
 | Q1 | Resultado da primeira versão | Dois caminhos; cuidador como praticante; foto com correção e quantidade informada | Respondido24/10; registradas decisões e corrigida interpretação |
-| Q2 | Fotos, histórico e observações | Recuperar imagens entre aparelhos, organizar os registros e definir recorte das mensagens educativas | Próxima conversa; nenhuma contratação agora |
+| Q2 | Fotos, histórico e observações | Agrupamento por refeição/alimento e histórico/análise/dicas juntos confirmados; decidir recuperação das fotos após a comparação | Parcial em 25/10; somente política de fotos pendente, nenhuma contratação agora |
 | Q3 | Backend e treino | Opções que a pessoa pode alterar, restrições da fonte, sequência/agenda, pausa/parcial e histórico esperado | Aguardar contexto/modelo |
 | Q4 | Segurança e privacidade | Retenção, recuperação, imagens/análise e comportamento em revogação/exclusão | Reaproveitar decisões anteriores e perguntar só lacunas |
 | Q5 | Frontend e idiomas | Jornada simples, referências disponíveis, prioridade regional/termos e comportamento com fonte estrangeira | Aguardar contratos e referências suficientes |
@@ -261,6 +273,7 @@ Famílias ainda sem contexto integral: cadastro manual 104:1260; privacidade 104
 | auditoria-produto-2026-10-24.md + recibo | Baseline factual e medição histórica; não substituir por planejamento |
 | backlog.json → backlog.md | Estados/dependências e critérios das histórias; Markdown gerado |
 | frontend-fidelidade-figma.md | Referências, direção aprovada e checkpoints do frontend consolidados |
+| pesquisa-fotos-historico.md | Comparação delimitada de quatro produtos e proposta de persistência, sem selecionar serviço |
 | handoff.md / AGENTS.md | Retomada e instruções atuais concisas, sem repetir relatos completos |
 | Arquitetura/contratos/Swagger/diário/recibos | Responsabilidades, documentação gerada, histórico e prova das validações |
 | Conteúdo/licenças/manifestações de exclusão | Evidência e limites de uso preservados; não são lixo documental |
@@ -284,4 +297,4 @@ Commit/artefato:
 Próxima área/item:
 ```
 
-Este incremento é documental. Q1 está registrado; a próxima conversa é Q2. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+Este incremento é documental. Q1 e agrupamento/entrega conjunta do Q2 estão registrados; resta decidir a política de fotos após a pesquisa. Depois, seguir Q3. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
