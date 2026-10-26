@@ -2,6 +2,10 @@
 
 Decisão do autor em **21/10/2026**: documentar handlers com comentários e DTOs Go; gerar a especificação e disponibilizar Swagger UI no futuro serviço. Não manter um YAML manual como fonte concorrente.
 
+## Código26/10: API0.6.0
+
+25operações, com leitura alimentar opcional porlocale/nomes revisados. Swagger gerado dos handlers/DTOs reais e conferido; querylocale/namesVersion, reviewedName/nameCatalog e409documentados. Cursores legados originais preservados. SQL/HTTP testados emdescartável; base entregue ainda não migrada9/10, Flutter não integrado e0nomes publicados. [Contrato](contratos-v1.md), [recibo](../execucao/v1/food-names-read-verification.json). Relatos abaixo preservam marcos históricos da fundação.
+
 ## Escolha inicial e compatibilidade
 
 Preparação com **Swaggo v1.16.6**, versão identificada e fixada, em vez de instalar `@latest`. O fluxo documentado dessa versão gera **Swagger2.0 / OpenAPI2.0**. Isso não deve ser chamado de OpenAPI3. A linha2 tem releases com sufixoRC; uma mudança de formato/versão precisa de teste com os contratos e o cliente Dart, não de troca automática. Fontes: [release fixada](https://github.com/swaggo/swag/releases/tag/v1.16.6), [README dessa versão](https://github.com/swaggo/swag/blob/v1.16.6/README.md), [releases](https://github.com/swaggo/swag/releases).

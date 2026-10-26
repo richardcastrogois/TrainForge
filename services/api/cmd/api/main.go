@@ -22,7 +22,7 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.5.1
+// @version 0.6.0
 // @description Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https

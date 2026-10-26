@@ -29,7 +29,9 @@ python tools/verificar_banco_local.py
 
 API localhost8082; DB localhost15432. Go0.5.1 entrega25operações:saúde, autenticação/sessão, catálogo de73metadados, consulta de6369referências alimentares, cadastro particular, consumo/revisão/exclusão/histórico/subtotais, política/exportação/exclusão de conta. Migrations00001–00008 aplicadas; GoogleAndroiddebug/sessão/privacidade reais já validados. [Fechamento](../../docs/execucao/v1/auth-local-fechamento.md). Não repetir login/importação/restore por hábito. Sem programa/dose/mídia aprovada para prática. Swagger local:/docs/index.html. [APK](../../docs/execucao/v1/avaliacao-android.md).
 
-A00009(nomes/aliases revisados) foi validada somente em banco descartável. Modelo e persistência existem, mas não há publicação operacional/contratoHTTP/busca localizada integrado. Não enviar locale àAPI atual. Nenhum nome traduzido foi publicado. Para repetir somente esse ensaio quando a implementação mudar:python tools/verificar_nomes_alimentares.py. O helper usa banco temporário, preserva dados e o estado inicial do cluster; não usa Google nem histórico real. [Recibo](../../docs/execucao/v1/food-names-foundation-verification.json).
+CódigoGo0.6.0 mantém25operações e acrescenta leitura opcional de nomes/aliases porlocale e revisão, com cursor/ETag coerentes. Último ambiente humano avaliado continuaGo0.5.1/migration8.00009/00010foram validadas somente em banco descartável, sem aplicação à base entregue. Flutter/APK15 ainda usa o contrato original. Publicação humana e integração cliente continuam pendentes;0nomes traduzidos publicados. [Contrato](../../docs/arquitetura/contratos-v1.md).
+
+Ensaio dirigido quando o código mudar:python tools/verificar_nomes_alimentares.py. Banco temporário comSQL/HTTP, guardas de alvo, dados e estado do cluster preservados; semGoogle/consumo humano. [Recibo atual](../../docs/execucao/v1/food-names-read-verification.json).
 
 Go não é garantia de escala: pool limitado, consultas/índices, autorização, timeouts e carga real serão validados por fatia. PostgreSQL17.5 local exige atualização de patch antes de exposição externa.
 

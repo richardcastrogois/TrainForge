@@ -21,15 +21,16 @@ var ErrFoodMissing = errors.New("food unavailable")
 var ErrFoodUnavailable = errors.New("food references unavailable")
 
 type FoodSummary struct {
-	ID            string   `json:"id"`
-	VersionID     string   `json:"versionId"`
-	SourceID      string   `json:"sourceId"`
-	SourceFoodID  string   `json:"sourceFoodId"`
-	SourceVersion string   `json:"sourcePublishedVersion"`
-	Name          string   `json:"nameOriginal"`
-	Locale        string   `json:"nameLocale"`
-	Basis         Basis    `json:"basis"`
-	Source        Citation `json:"source"`
+	ID            string               `json:"id"`
+	VersionID     string               `json:"versionId"`
+	SourceID      string               `json:"sourceId"`
+	SourceFoodID  string               `json:"sourceFoodId"`
+	SourceVersion string               `json:"sourcePublishedVersion"`
+	Name          string               `json:"nameOriginal"`
+	Locale        string               `json:"nameLocale"`
+	Basis         Basis                `json:"basis"`
+	Source        Citation             `json:"source"`
+	ReviewedName  *ReviewedNameDisplay `json:"reviewedName,omitempty"`
 }
 type FoodCell struct {
 	Column        string       `json:"sourceColumnKey"`
@@ -48,13 +49,15 @@ type FoodCell struct {
 }
 type FoodDetail struct {
 	FoodSummary
-	Nutrients []FoodCell `json:"nutrients"`
-	Notice    string     `json:"notice"`
+	Nutrients   []FoodCell       `json:"nutrients"`
+	Notice      string           `json:"notice"`
+	NameCatalog *FoodNameCatalog `json:"nameCatalog,omitempty"`
 }
 type FoodPage struct {
-	Items      []FoodSummary `json:"items"`
-	NextCursor *string       `json:"nextCursor" extensions:"x-nullable"`
-	Notice     string        `json:"notice"`
+	Items       []FoodSummary    `json:"items"`
+	NextCursor  *string          `json:"nextCursor" extensions:"x-nullable"`
+	Notice      string           `json:"notice"`
+	NameCatalog *FoodNameCatalog `json:"nameCatalog,omitempty"`
 }
 type FoodSourceCount struct {
 	ID     string `json:"id"`
@@ -70,6 +73,8 @@ type FoodFacets struct {
 type FoodFilters struct {
 	Q, Source, After string
 	Limit            int
+	Locale           string `json:",omitempty"`
+	NamesVersion     string `json:",omitempty"`
 }
 type FoodRepository interface {
 	List(context.Context, FoodFilters) ([]FoodSummary, error)
@@ -85,7 +90,20 @@ func (r FoodReader) List(ctx context.Context, f FoodFilters) (FoodPage, error) {
 	if r.Repository == nil {
 		return page, ErrFoodUnavailable
 	}
-	rows, err := r.Repository.List(ctx, f)
+	var rows []FoodSummary
+	var err error
+	if f.Locale != "" {
+		repo, ok := r.Repository.(LocalizedFoodRepository)
+		if !ok {
+			return page, ErrFoodUnavailable
+		}
+		var catalog FoodNameCatalog
+		rows, catalog, err = repo.LocalizedList(ctx, f)
+		page.NameCatalog = &catalog
+		f.NamesVersion = catalog.Version
+	} else {
+		rows, err = r.Repository.List(ctx, f)
+	}
 	if err != nil {
 		return page, err
 	}
@@ -97,9 +115,16 @@ func (r FoodReader) List(ctx context.Context, f FoodFilters) (FoodPage, error) {
 	page.Items = rows
 	return page, nil
 }
-func (r FoodReader) Detail(ctx context.Context, id, version string) (FoodDetail, error) {
+func (r FoodReader) Detail(ctx context.Context, id, version string, locales ...string) (FoodDetail, error) {
 	if r.Repository == nil {
 		return FoodDetail{}, ErrFoodUnavailable
+	}
+	if len(locales) > 0 && locales[0] != "" {
+		repo, ok := r.Repository.(LocalizedFoodRepository)
+		if !ok {
+			return FoodDetail{}, ErrFoodUnavailable
+		}
+		return repo.LocalizedDetail(ctx, id, version, locales[0])
 	}
 	return r.Repository.Detail(ctx, id, version)
 }
@@ -117,23 +142,29 @@ func foodFingerprint(f FoodFilters) string {
 }
 
 type foodPageCursor struct {
-	After  string `json:"after"`
-	Filter string `json:"filter"`
+	After        string `json:"after"`
+	Filter       string `json:"filter"`
+	NamesVersion string `json:"namesVersion,omitempty"`
 }
 
 func foodCursor(after string, f FoodFilters) string {
-	raw, _ := json.Marshal(foodPageCursor{after, foodFingerprint(f)})
+	raw, _ := json.Marshal(foodPageCursor{After: after, Filter: foodFingerprint(f), NamesVersion: f.NamesVersion})
 	return base64.RawURLEncoding.EncodeToString(raw)
 }
 func foodFilters(q url.Values) (FoodFilters, error) {
 	f := FoodFilters{Limit: 20}
 	for key, values := range q {
-		if (key != "q" && key != "sourceId" && key != "limit" && key != "cursor") || len(values) != 1 || len(values[0]) > 1024 || !utf8.ValidString(values[0]) {
+		if (key != "q" && key != "sourceId" && key != "limit" && key != "cursor" && key != "locale" && key != "namesVersion") || len(values) != 1 || len(values[0]) > 1024 || !utf8.ValidString(values[0]) {
 			return f, ErrFoodQuery
 		}
 	}
 	f.Q = strings.Join(strings.Fields(q.Get("q")), " ")
 	f.Source = q.Get("sourceId")
+	f.Locale = q.Get("locale")
+	f.NamesVersion = q.Get("namesVersion")
+	if (f.Locale != "" && !foodNameLocale(f.Locale)) || (f.NamesVersion != "" && (f.Locale == "" || !validNamesRevision(f.NamesVersion))) {
+		return f, ErrFoodQuery
+	}
 	if len(f.Q) > 100 || len(f.Source) > 100 || strings.IndexFunc(f.Q, unicode.IsControl) >= 0 || strings.IndexFunc(f.Source, unicode.IsControl) >= 0 {
 		return f, ErrFoodQuery
 	}
@@ -152,7 +183,14 @@ func foodFilters(q url.Values) (FoodFilters, error) {
 		var c foodPageCursor
 		dec := json.NewDecoder(bytes.NewReader(raw))
 		dec.DisallowUnknownFields()
-		if dec.Decode(&c) != nil || !foodPattern.MatchString(c.After) || c.Filter != foodFingerprint(f) {
+		if dec.Decode(&c) != nil {
+			return f, ErrFoodQuery
+		}
+		if f.NamesVersion == "" {
+			f.NamesVersion = c.NamesVersion
+		}
+		if !foodPattern.MatchString(c.After) || c.Filter != foodFingerprint(f) || c.NamesVersion != f.NamesVersion ||
+			(f.NamesVersion != "" && (f.Locale == "" || !validNamesRevision(f.NamesVersion))) {
 			return f, ErrFoodQuery
 		}
 		if dec.Decode(new(any)) != io.EOF {

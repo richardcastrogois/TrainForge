@@ -4,7 +4,7 @@ Atualizada em **25/10/2026**, por solicitação do autor. Base factual: [auditor
 
 Este é o roteiro humano principal para decidir, implementar e acompanhar o que falta. [backlog.json](backlog.json) continua sendo a fonte dos estados e dependências das histórias V1. Este plano não executa funcionalidades nem transforma propostas em decisões aprovadas.
 
-V1-021 foi encerrada em25/10 no recorte de fundação Flutter, com [critérios/evidências](frontend-state-verification.json), sem encerrar o frontend integrado. 048 está em andamento:fundação e79mensagens localizadas, demais telas/plurais e nomes revisados ainda faltam. As demais áreas conservam seus gates.
+V1-021 foi encerrada em25/10 no recorte de fundação Flutter, com [critérios/evidências](frontend-state-verification.json), sem encerrar o frontend integrado. 048 está em andamento:486mensagens deUI localizadas, Go0.6.0/SQLdescartável com nomes/aliases/cursor/ETag; cliente, publicação editorial eaceites ainda faltam. As demais áreas conservam seus gates.
 
 ## 1. O raciocínio e a expectativa do autor
 
@@ -97,7 +97,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. V1-045/046 detalham as duas visões alimentares e o conjunto histórico/análise/dicas, também naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
-Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas e nomes revisados agora têm história própria048, ainda todo. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
+Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas e nomes revisados agora têm história própria048, em andamento. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
 ## 3. Bloco 00 — decisões do produto
 
@@ -199,7 +199,7 @@ Configuração completa persistida agora tem história própria047, com matriz d
 | FE-04 | Configuração e treino | Concluir/revisar configuração antes de buscar treino; integrar trocas compatíveis e dias/horários, adesão/agenda e retomada ou parcial | Jornada real alinhada a047/015/044/017/023; sem gráfico/série/dose fictícios e com limites do conteúdo explícitos |
 | FE-05 | Alimentação e histórico compreensíveis | Validar quantidade/unidade/fuso, desconhecidos e correção/exclusão; integrar visões por refeição/alimento, histórico visual, análise e dicas revisadas | Aceite conjunto sem dupla contagem ou inferência clínica; cobertura/limites claros, fonte preservada e cálculo técnico em detalhe acessível (V1-045/046) |
 | FE-06 | Retomada/offline | Integrar fila durável privada de alimentação/andamento; estados salvo no aparelho, pendente, confirmado e falha/conflito | Processo encerrado, resposta perdida, conta trocada e exclusão concorrente sem duplicação/recriação ou falso sucesso (026/042/045) |
-| FE-07 | Idiomas e nomes revisados (048 doing) | Fundação e79mensagens de entrada/perfil/aparência/navegação prontas; falta migrar demais telas/plurais/formatos e camada Go/SQL/cliente de nomes revisados com original/fonte e fallback | UI nos quatro idiomas e cobertura de conteúdo explícita; busca/nome traduzidos preservam ID/preparo/base/nutrientes, sem tradução automática publicada como revisão |
+| FE-07 | Idiomas e nomes revisados (048 doing) | 486mensagens nos fluxos disponíveis;Go/SQL/HTTP de nomes/aliases/revisão/retirada validados emdescartável. Faltam cliente/cache/409,publicação humana,cobertura eaceites;9/10nãoaplicadas àbase entregue | UI nos quatro idiomas e cobertura de conteúdo explícita; busca/nome traduzidos preservam ID/preparo/base/nutrientes, sem tradução automática publicada como revisão |
 | FE-08 | Acessibilidade completa | TalkBack/VoiceOver, foco/ordem/rótulos, contraste e estados, fonte/display ampliados, toque/teclado e redução de movimento | Testes automatizados pertinentes e validação com pessoas do público; não depender só do tema |
 | FE-09 | Figma e estados | Conferir famílias com contexto/exportação autorizada suficiente, tema, loading, erro, vazio, indisponível, teclado, navegação e retorno | Comparação com a referência correta e diferenças necessárias registradas; nada “exatamente igual” sem referência |
 | FE-10 | Inicialização e qualidade percebida | Revalidar ícone fechado, splash/primeiro frame, cold/warm start, permissões e transições com os novos fluxos | Sem flash de tema, conteúdo privado antigo, loader sem saída ou regressão da rolagem |
@@ -282,7 +282,7 @@ Q1–Q6 têm decisões registradas. Encerrar a rodada genérica de perguntas e s
 | Q2 | Fotos, histórico e observações | Refeições/alimentos; histórico/análise/dicas juntos; recuperação das fotos pela conta com cache | Respondido em 25/10; sem contratação ou implementação por inferência |
 | Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047 todo, modelos/campos e regras ainda a detalhar |
 | Q4 | Segurança e privacidade | Excluir foto com a refeição; registrar offline e sincronizar depois | Respondido25/10;026/042/045 e revisão de segurança continuam pendentes |
-| Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047/048 todo, sem repetir chamadas Figma limitadas |
+| Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047todo/048doing, sem repetir chamadas Figma limitadas |
 | Q6 | Qualidade e aceite | Exclusão por usuário/master e avaliação de todos os cenários; participantes/conta ainda não confirmados | Decisões25/10 registradas; combinar o restante somente com fluxo concreto |
 
 ## 13. Figma — impedimento e alternativa permitida

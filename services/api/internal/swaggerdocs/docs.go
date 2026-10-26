@@ -598,8 +598,26 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes",
+                        "description": "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
                         "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "pt-BR",
+                            "pt-PT",
+                            "en",
+                            "es"
+                        ],
+                        "type": "string",
+                        "description": "Optional reviewed-name locale; original fallback. Requires name catalog migrations.",
+                        "name": "locale",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Optional locale revision from nameCatalog; changed revision returns409. Cursor retains it automatically.",
+                        "name": "namesVersion",
                         "in": "query"
                     },
                     {
@@ -619,7 +637,7 @@ const docTemplate = `{
                     },
                     {
                         "type": "string",
-                        "description": "Opaque cursor bound to search, source and page size",
+                        "description": "Opaque cursor bound to search, source, page size, locale and name revision",
                         "name": "cursor",
                         "in": "query"
                     }
@@ -636,6 +654,12 @@ const docTemplate = `{
                     },
                     "400": {
                         "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
                         "schema": {
                             "$ref": "#/definitions/httpapi.Problem"
                         }
@@ -702,8 +726,20 @@ const docTemplate = `{
                     },
                     {
                         "type": "string",
-                        "description": "Exact SHA-256 version; latest by default",
+                        "description": "Exact SHA-256 source version; latest by default",
                         "name": "versionId",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "pt-BR",
+                            "pt-PT",
+                            "en",
+                            "es"
+                        ],
+                        "type": "string",
+                        "description": "Optional reviewed-name locale; missing/withdrawn translation keeps original.",
+                        "name": "locale",
                         "in": "query"
                     }
                 ],
@@ -2356,6 +2392,9 @@ const docTemplate = `{
                 "id": {
                     "type": "string"
                 },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
+                },
                 "nameLocale": {
                     "type": "string"
                 },
@@ -2370,6 +2409,9 @@ const docTemplate = `{
                     "items": {
                         "$ref": "#/definitions/nutrition.FoodCell"
                     }
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 },
                 "source": {
                     "$ref": "#/definitions/nutrition.Citation"
@@ -2405,6 +2447,17 @@ const docTemplate = `{
                 }
             }
         },
+        "nutrition.FoodNameCatalog": {
+            "type": "object",
+            "properties": {
+                "locale": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
         "nutrition.FoodPage": {
             "type": "object",
             "properties": {
@@ -2413,6 +2466,9 @@ const docTemplate = `{
                     "items": {
                         "$ref": "#/definitions/nutrition.FoodSummary"
                     }
+                },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
                 },
                 "nextCursor": {
                     "type": "string",
@@ -2454,6 +2510,9 @@ const docTemplate = `{
                 },
                 "nameOriginal": {
                     "type": "string"
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 },
                 "source": {
                     "$ref": "#/definitions/nutrition.Citation"
@@ -2574,6 +2633,35 @@ const docTemplate = `{
                 "value": {
                     "type": "string",
                     "x-nullable": true
+                }
+            }
+        },
+        "nutrition.ReviewedNameDisplay": {
+            "type": "object",
+            "properties": {
+                "attribution": {
+                    "type": "string"
+                },
+                "licenseLabel": {
+                    "type": "string"
+                },
+                "licenseUrl": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "reviewEvidenceSha256": {
+                    "type": "string"
+                },
+                "rightsEvidenceSha256": {
+                    "type": "string"
+                },
+                "versionId": {
+                    "type": "string"
                 }
             }
         },
@@ -2757,7 +2845,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.5.1",
+	Version:          "0.6.0",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},

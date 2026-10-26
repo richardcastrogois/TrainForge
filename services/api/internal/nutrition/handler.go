@@ -26,6 +26,9 @@ func foodFailure(w http.ResponseWriter, r *http.Request, err error) {
 	if errors.Is(err, ErrFoodMissing) {
 		status, code = 404, "food_unavailable"
 	}
+	if errors.Is(err, ErrFoodNamesChanged) {
+		status, code = 409, "food_name_catalog_changed"
+	}
 	httpapi.Failure(w, r, status, code)
 }
 func foodJSON(w http.ResponseWriter, r *http.Request, v any) {
@@ -50,17 +53,19 @@ func foodJSON(w http.ResponseWriter, r *http.Request, v any) {
 	_, _ = w.Write(raw)
 }
 
-// List searches original source names. Stable food-ID order, not nutritional ranking.
+// List searches original names and reviewed locale names/aliases when requested. Stable food-ID order.
 // @Summary Search reviewed food references
 // @Tags nutrition
 // @Produce json
-// @Param q query string false "Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes"
+// @Param q query string false "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes"
+// @Param locale query string false "Optional reviewed-name locale; original fallback. Requires name catalog migrations." Enums(pt-BR,pt-PT,en,es)
+// @Param namesVersion query string false "Optional locale revision from nameCatalog; changed revision returns409. Cursor retains it automatically."
 // @Param sourceId query string false "Exact reviewed source ID"
 // @Param limit query int false "Page size" minimum(1) maximum(50) default(20)
-// @Param cursor query string false "Opaque cursor bound to search, source and page size"
+// @Param cursor query string false "Opaque cursor bound to search, source, page size, locale and name revision"
 // @Success 200 {object} FoodPage
 // @Success 304
-// @Failure 400,503 {object} httpapi.Problem
+// @Failure 400,409,503 {object} httpapi.Problem
 // @Router /api/v1/foods [get]
 func (h FoodHandler) List(w http.ResponseWriter, r *http.Request) {
 	q, err := url.ParseQuery(r.URL.RawQuery)
@@ -86,7 +91,8 @@ func (h FoodHandler) List(w http.ResponseWriter, r *http.Request) {
 // @Tags nutrition
 // @Produce json
 // @Param id path string true "Source-derived food ID"
-// @Param versionId query string false "Exact SHA-256 version; latest by default"
+// @Param versionId query string false "Exact SHA-256 source version; latest by default"
+// @Param locale query string false "Optional reviewed-name locale; missing/withdrawn translation keeps original." Enums(pt-BR,pt-PT,en,es)
 // @Success 200 {object} FoodDetail
 // @Success 304
 // @Failure 400,404,503 {object} httpapi.Problem
@@ -102,12 +108,12 @@ func (h FoodHandler) Detail(w http.ResponseWriter, r *http.Request) {
 		foodFailure(w, r, ErrFoodQuery)
 		return
 	}
-	version, err := foodVersion(q)
+	version, locale, err := foodDetailQuery(q)
 	if err != nil {
 		foodFailure(w, r, err)
 		return
 	}
-	item, err := h.Reader.Detail(r.Context(), id, version)
+	item, err := h.Reader.Detail(r.Context(), id, version, locale)
 	if err != nil {
 		foodFailure(w, r, err)
 		return

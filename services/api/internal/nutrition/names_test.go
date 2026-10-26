@@ -44,6 +44,7 @@ func TestFoodNamesValidationRejectsMissingReviewAndAmbiguousInput(t *testing.T) 
 		"null aliases":             func(n *ReviewedFoodNames) { n.Aliases = nil },
 		"duplicate aliases":        func(n *ReviewedFoodNames) { n.Aliases = []string{"Same", "same"} },
 		"alias duplicates name":    func(n *ReviewedFoodNames) { n.Aliases = []string{strings.ToUpper(n.Name)} },
+		"replacement character":    func(n *ReviewedFoodNames) { n.Name = "unknown\ufffd" },
 		"unreviewed normalization": func(n *ReviewedFoodNames) { n.Name = " two  spaces " },
 		"control character":        func(n *ReviewedFoodNames) { n.Name = "name\nother" },
 		"hidden direction":         func(n *ReviewedFoodNames) { n.Name = "name\u202eother" },
@@ -138,12 +139,23 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 	if err != nil || !inserted || id != n.VersionID() {
 		t.Fatal("reviewed name fixture not stored")
 	}
+	var revisionBeforeRetry string
+	if writer.QueryRow(ctx, "SELECT revision::text FROM trainforge_v1.food_name_catalogs WHERE locale='pt-BR'").Scan(&revisionBeforeRetry) != nil {
+		t.Fatal("name revision missing")
+	}
+
 	second, inserted, err := StoreReviewedFoodNames(ctx, writer, n, evidence, namesNow)
 	if err != nil || inserted || second != id {
 		t.Fatal("non-idempotent name persistence")
 	}
+	var revisionAfterRetry string
+	if writer.QueryRow(ctx, "SELECT revision::text FROM trainforge_v1.food_name_catalogs WHERE locale='pt-BR'").Scan(&revisionAfterRetry) != nil || revisionAfterRetry != revisionBeforeRetry {
+		t.Fatal("idempotent retry changed name generation")
+	}
+
 	n.Name = "Isolated second revision"
-	if _, inserted, err = StoreReviewedFoodNames(ctx, writer, n, evidence, namesNow); err != nil || !inserted {
+	newest, inserted, err := StoreReviewedFoodNames(ctx, writer, n, evidence, namesNow)
+	if err != nil || !inserted {
 		t.Fatal("new immutable revision refused")
 	}
 	n.SourceName = "Different source"
@@ -152,7 +164,7 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 	}
 	n.SourceName = f.food.Name
 	var canRead, canInsert, canUpdate, canDelete bool
-	for _, table := range []string{"food_name_versions", "food_name_withdrawals"} {
+	for _, table := range []string{"food_name_versions", "food_name_withdrawals", "food_name_catalogs"} {
 		err = runtime.QueryRow(ctx, "SELECT has_table_privilege(current_user,$1,'SELECT'),has_table_privilege(current_user,$1,'INSERT'),has_table_privilege(current_user,$1,'UPDATE'),has_table_privilege(current_user,$1,'DELETE')", "trainforge_v1."+table).Scan(&canRead, &canInsert, &canUpdate, &canDelete)
 		if err != nil || !canRead || canInsert || canUpdate || canDelete {
 			t.Fatal("unsafe runtime name privileges")
@@ -167,12 +179,68 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 	if _, err = writer.Exec(ctx, "DELETE FROM trainforge_v1.food_name_versions WHERE food_id=$1", n.FoodID); err == nil {
 		t.Fatal("name history was deleted")
 	}
-	if _, err = writer.Exec(ctx, "INSERT INTO trainforge_v1.food_name_withdrawals(food_id,food_version_sha,locale,version_sha,reason) VALUES($1,$2,$3,$4,'isolated withdrawal fixture')", n.FoodID, n.FoodVersion, n.Locale, id); err != nil {
-		t.Fatal("withdrawal fixture failed")
+
+	resolver := FoodNamesPostgres{runtime}
+	target := FoodNameTarget{n.FoodID, n.FoodVersion}
+	resolved, err := resolver.Resolve(ctx, []FoodNameTarget{target, {n.FoodID, strings.Repeat("e", 64)}}, "pt-BR")
+	if err != nil || len(resolved) != 1 || resolved[target].VersionID != newest || resolved[target].Name != n.Name {
+		t.Fatal("name resolution crossed identity or source version")
 	}
+	if resolved[target].ReviewEvidenceSHA != n.Review.EvidenceSHA || resolved[target].LicenseURL != n.Review.LicenseURL {
+		t.Fatal("name review attribution lost")
+	}
+	wrongVersion, err := resolver.Resolve(ctx, []FoodNameTarget{{n.FoodID, strings.Repeat("e", 64)}}, "pt-BR")
+	if err != nil || len(wrongVersion) != 0 {
+		t.Fatal("translation matched another source version")
+	}
+	// The same visible name is legal for different food identities; never merge.
+	otherFood := newFixture(t, "reviewed-name-homonym")
+	if _, err = Import(ctx, writer, otherFood.load(t)); err != nil {
+		t.Fatal("homonym source fixture failed")
+	}
+	var otherVersion string
+	if writer.QueryRow(ctx, "SELECT version_sha FROM trainforge_v1.food_versions WHERE food_id=$1", otherFood.food.ID).Scan(&otherVersion) != nil {
+		t.Fatal("homonym version missing")
+	}
+	homonym := n
+	homonym.FoodID = otherFood.food.ID
+	homonym.FoodVersion = otherVersion
+	homonymID, _, err := StoreReviewedFoodNames(ctx, writer, homonym, evidence, namesNow)
+	if err != nil {
+		t.Fatal("homonym fixture not stored")
+	}
+	otherTarget := FoodNameTarget{homonym.FoodID, homonym.FoodVersion}
+	both, err := resolver.Resolve(ctx, []FoodNameTarget{target, otherTarget}, "pt-BR")
+	if err != nil || len(both) != 2 || both[target].VersionID != newest || both[otherTarget].VersionID != homonymID {
+		t.Fatal("homonymous foods were merged")
+	}
+
+	checkAfterHTTP := assertLocalizedFoodNames(t, FoodPostgres{runtime}, target, otherTarget, n.Aliases[0])
+
+	for _, locale := range []string{"pt-PT", "en", "es"} {
+		other, err := resolver.Resolve(ctx, []FoodNameTarget{target}, locale)
+		if err != nil || len(other) != 0 {
+			t.Fatal("name crossed locale boundary instead of original fallback")
+		}
+	}
+	if _, err = writer.Exec(ctx, "INSERT INTO trainforge_v1.food_name_withdrawals(food_id,food_version_sha,locale,version_sha,reason) VALUES($1,$2,$3,$4,'latest isolated fixture withdrawn')", n.FoodID, n.FoodVersion, n.Locale, newest); err != nil {
+		t.Fatal("latest withdrawal fixture failed")
+	}
+	resolved, err = resolver.Resolve(ctx, []FoodNameTarget{target}, "pt-BR")
+	if err != nil || len(resolved) != 0 {
+		t.Fatal("withdrawal revived an older translation")
+	}
+
+	checkAfterHTTP()
+
 	if _, err = writer.Exec(ctx, "DELETE FROM trainforge_v1.food_name_withdrawals WHERE food_id=$1", n.FoodID); err == nil {
 		t.Fatal("withdrawal history was deleted")
 	}
+	both, err = resolver.Resolve(ctx, []FoodNameTarget{target, otherTarget}, "pt-BR")
+	if err != nil || len(both) != 1 || both[otherTarget].VersionID != homonymID {
+		t.Fatal("withdrawal crossed another food identity")
+	}
+
 	var after string
 	if writer.QueryRow(ctx, "SELECT row_to_json(v)::text FROM trainforge_v1.food_versions v WHERE food_id=$1", f.food.ID).Scan(&after) != nil || after != before {
 		t.Fatal("original source was modified")
@@ -202,5 +270,54 @@ func TestFoodNamesEvidenceMustMatchBeforePersistence(t *testing.T) {
 	}
 	if _, _, err := StoreReviewedFoodNames(context.Background(), nil, n, e, namesNow); !errors.Is(err, ErrFoodNames) {
 		t.Fatal("invalid evidence reached storage")
+	}
+}
+
+func TestFoodNamesResolveRejectsUnsafeTargetsBeforeQuery(t *testing.T) {
+	resolver := FoodNamesPostgres{}
+	valid := FoodNameTarget{"food:" + strings.Repeat("a", 64), strings.Repeat("b", 64)}
+	for _, test := range []struct {
+		targets []FoodNameTarget
+		locale  string
+	}{
+		{[]FoodNameTarget{valid}, "pt"},
+		{[]FoodNameTarget{{"own:fixture", valid.FoodVersion}}, "en"},
+		{[]FoodNameTarget{{valid.FoodID, "latest"}}, "es"},
+		{make([]FoodNameTarget, 51), "pt-BR"},
+	} {
+		if _, err := resolver.Resolve(context.Background(), test.targets, test.locale); !errors.Is(err, ErrFoodQuery) {
+			t.Fatal("invalid name target reached storage")
+		}
+	}
+	names, err := resolver.Resolve(context.Background(), nil, "en")
+	if err != nil || len(names) != 0 {
+		t.Fatal("empty page should not query storage")
+	}
+}
+
+func TestFoodNamesCanonicalLimitAllowsDatabaseJSONWhitespace(t *testing.T) {
+	n := fixtureNames()
+	n.SourceName = strings.Repeat("x", 2000)
+	n.Name = strings.Repeat("x", 360)
+	n.Review.Attribution = strings.Repeat("y", 2000)
+	n.Aliases = []string{}
+	for i := 0; i < 16; i++ {
+		n.Aliases = append(n.Aliases, strings.Repeat("😀", 340)+string(rune('a'+i)))
+	}
+	if n.Validate(namesNow) != nil {
+		t.Fatal("bounded canonical review refused")
+	}
+	// Pretty JSON may be larger than canonical while describing the same record.
+	raw, _ := json.MarshalIndent(n, "", strings.Repeat(" ", 100))
+	if _, err := DecodeReviewedFoodNames(raw, namesNow); err != nil {
+		t.Fatal("equivalent database whitespace changed review")
+	}
+	n.SourceName = strings.Repeat("😀", 2000)
+	n.Review.Attribution = strings.Repeat("😀", 2000)
+	if n.Validate(namesNow) == nil {
+		t.Fatal("oversized canonical review accepted")
+	}
+	if _, err := DecodeReviewedFoodNames([]byte(strings.Repeat(" ", 65537)), namesNow); err == nil {
+		t.Fatal("unbounded JSON accepted")
 	}
 }

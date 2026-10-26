@@ -62,3 +62,6 @@ A privacidade coordena explicitamente a exportação e o ciclo dos dados de todo
 ## Fundação de nomes editoriais048 —26/10
 
 names.go contém contrato limitado, validação estrutural/revisão e versão própria, semHTTP/pgx. names_postgres.go contém SQL parametrizado, transação, vínculo exato/visibilidade da fonte e persistência idempotente com evidências correspondentes. Nenhum handler chama essa primitiva; publicação operacional humana ainda falta. Runtime não recebe escrita nas duas tabelas editoriais da00009. TesteSQL foi descartável; Go/SQL não foram semanticamente indexados peloGraphifyFlutter. [Modelo e limites](dominio-e-banco.md).
+
+
+Leitura26/10:names_read.go resolve um lote deaté50identidades/versões emumaquery, com fallback original e retirada semreviver antigo. names_localized.go implementa consulta paginada/detail emsnapshotrepeatable-read, busca poralias e revisão poridioma. FoodReader usa o contrato opcionalLocalizedFoodRepository; semlocale mantém o caminho original. FoodHandler valida parâmetros e mapeia revisão alterada para409; não executaSQL. Nenhumhandler publica nomes. [Contrato e limites](contratos-v1.md).

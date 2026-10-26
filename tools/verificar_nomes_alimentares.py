@@ -71,17 +71,21 @@ def main():
             verify_owned()
             run("pg_ctl", ["-D", DATA, "-m", "fast", "-w", "-t", "20", "stop"], timeout=25)
     result = {"schemaVersion": 1, "date": "2026-10-26", "story": "V1-048", "status": "partial",
-              "scope": "reviewed-name-foundations-disposable-sql-not-published-content",
+              "scope": "reviewed-name-batch-resolution-disposable-sql-not-published-content",
               "passed": True, "temporaryDatabaseRemoved": True, "deliveredDataUnchanged": True,
               "clusterInitiallyRunning": was_running, "clusterRunningStatePreserved": True,
-              "migrationsAppliedOnlyToDisposableDatabase": 9, "runtimeReadOnly": True,
+              "migrationsAppliedOnlyToDisposableDatabase": 10, "runtimeReadOnly": True,
               "immutableHistoryAndIdempotencyVerified": True, "evidenceHashesVerified": True,
               "originalFoodVersionUnchanged": True, "publishedNames": 0,
-              "limits": ["No public locale/search/cache/pagination contract or Flutter name projection yet.",
-                         "Migration9 is not applied to delivered DB; actual23 tables remain unchanged.",
+              "batchedReadVerified": True, "localizedHTTPVerified": True,
+              "cursorRejectsChangedLocaleAndRevision": True, "etagRevalidatesWithdrawal": True, "exactVersionAndLocaleVerified": True,
+              "latestWithdrawalDoesNotReviveOlderName": True,
+              "sourceBaseCommit": "a34575b",
+              "limits": ["HTTP locale/search/revision/cursor/ETag tested in fixtures; Flutter name projection and human publication still pending.",
+                         "Migrations9/10 are not applied to delivered DB; actual23 tables remain unchanged.",
                          "Evidence hashes prove matching bytes, not reviewer identity or license truth. Authorized human publication tooling/review still required.",
-                         "No new API endpoint; no Swagger regeneration needed; fixtures never enter delivered DB."]}
-    (ROOT / "docs/execucao/v1/food-names-foundation-verification.json").write_text(
+                         "No new endpoint, only optional locale/namesVersion and reviewedName/nameCatalog fields. Fixtures never enter delivered DB."]}
+    (ROOT / "docs/execucao/v1/food-names-read-verification.json").write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result))
 

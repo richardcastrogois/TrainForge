@@ -8,7 +8,7 @@
         "description": "Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.",
         "title": "TrainForge API",
         "contact": {},
-        "version": "0.5.1"
+        "version": "0.6.0"
     },
     "basePath": "/",
     "paths": {
@@ -595,8 +595,26 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Literal original-name substring with collapsed whitespace; maximum 100 UTF-8 bytes",
+                        "description": "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
                         "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "pt-BR",
+                            "pt-PT",
+                            "en",
+                            "es"
+                        ],
+                        "type": "string",
+                        "description": "Optional reviewed-name locale; original fallback. Requires name catalog migrations.",
+                        "name": "locale",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Optional locale revision from nameCatalog; changed revision returns409. Cursor retains it automatically.",
+                        "name": "namesVersion",
                         "in": "query"
                     },
                     {
@@ -616,7 +634,7 @@
                     },
                     {
                         "type": "string",
-                        "description": "Opaque cursor bound to search, source and page size",
+                        "description": "Opaque cursor bound to search, source, page size, locale and name revision",
                         "name": "cursor",
                         "in": "query"
                     }
@@ -633,6 +651,12 @@
                     },
                     "400": {
                         "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
                         "schema": {
                             "$ref": "#/definitions/httpapi.Problem"
                         }
@@ -699,8 +723,20 @@
                     },
                     {
                         "type": "string",
-                        "description": "Exact SHA-256 version; latest by default",
+                        "description": "Exact SHA-256 source version; latest by default",
                         "name": "versionId",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "pt-BR",
+                            "pt-PT",
+                            "en",
+                            "es"
+                        ],
+                        "type": "string",
+                        "description": "Optional reviewed-name locale; missing/withdrawn translation keeps original.",
+                        "name": "locale",
                         "in": "query"
                     }
                 ],
@@ -2353,6 +2389,9 @@
                 "id": {
                     "type": "string"
                 },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
+                },
                 "nameLocale": {
                     "type": "string"
                 },
@@ -2367,6 +2406,9 @@
                     "items": {
                         "$ref": "#/definitions/nutrition.FoodCell"
                     }
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 },
                 "source": {
                     "$ref": "#/definitions/nutrition.Citation"
@@ -2402,6 +2444,17 @@
                 }
             }
         },
+        "nutrition.FoodNameCatalog": {
+            "type": "object",
+            "properties": {
+                "locale": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
         "nutrition.FoodPage": {
             "type": "object",
             "properties": {
@@ -2410,6 +2463,9 @@
                     "items": {
                         "$ref": "#/definitions/nutrition.FoodSummary"
                     }
+                },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
                 },
                 "nextCursor": {
                     "type": "string",
@@ -2451,6 +2507,9 @@
                 },
                 "nameOriginal": {
                     "type": "string"
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 },
                 "source": {
                     "$ref": "#/definitions/nutrition.Citation"
@@ -2571,6 +2630,35 @@
                 "value": {
                     "type": "string",
                     "x-nullable": true
+                }
+            }
+        },
+        "nutrition.ReviewedNameDisplay": {
+            "type": "object",
+            "properties": {
+                "attribution": {
+                    "type": "string"
+                },
+                "licenseLabel": {
+                    "type": "string"
+                },
+                "licenseUrl": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "reviewEvidenceSha256": {
+                    "type": "string"
+                },
+                "rightsEvidenceSha256": {
+                    "type": "string"
+                },
+                "versionId": {
+                    "type": "string"
                 }
             }
         },

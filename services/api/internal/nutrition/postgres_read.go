@@ -78,6 +78,9 @@ func (p FoodPostgres) Detail(ctx context.Context, id, version string) (FoodDetai
 	if err != nil {
 		return FoodDetail{}, err
 	}
+	return decodeFoodDetail(item, cells)
+}
+func decodeFoodDetail(item FoodSummary, cells []byte) (FoodDetail, error) {
 	var nutrients []Nutrient
 	if json.Unmarshal(cells, &nutrients) != nil {
 		return FoodDetail{}, ErrFoodUnavailable

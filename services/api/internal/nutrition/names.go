@@ -47,7 +47,9 @@ type ReviewedFoodNames struct {
 
 func validNameText(value string, maxRunes int) bool {
 	return value != "" && utf8.ValidString(value) && utf8.RuneCountInString(value) <= maxRunes &&
-		strings.IndexFunc(value, func(r rune) bool { return unicode.IsControl(r) || unicode.Is(unicode.Cf, r) }) < 0 &&
+		strings.IndexFunc(value, func(r rune) bool {
+			return unicode.IsControl(r) || unicode.Is(unicode.Cf, r) || r == unicode.ReplacementChar
+		}) < 0 &&
 		strings.Join(strings.Fields(value), " ") == value
 }
 func foodNameLocale(locale string) bool {
@@ -64,7 +66,7 @@ func (n ReviewedFoodNames) Validate(now time.Time) error {
 		!foodNameLocale(n.Locale) || n.SourceName == "" || !utf8.ValidString(n.SourceName) || utf8.RuneCountInString(n.SourceName) > 2000 || strings.ContainsRune(n.SourceName, 0) || !validNameText(n.SourceLocale, 35) ||
 		!validNameText(n.Name, 360) || n.Aliases == nil || len(n.Aliases) > 16 ||
 		!validNameText(r.ReviewerRef, 160) || !r.HumanReviewed || !shaPattern.MatchString(r.EvidenceSHA) ||
-		!shaPattern.MatchString(r.RightsSHA) || !validNameText(r.LicenseLabel, 160) || !https(r.LicenseURL) || len(r.LicenseURL) > 2048 ||
+		!shaPattern.MatchString(r.RightsSHA) || !validNameText(r.LicenseLabel, 160) || !https(r.LicenseURL) || !utf8.ValidString(r.LicenseURL) || len(r.LicenseURL) > 2048 ||
 		!validNameText(r.Attribution, 2000) || r.Scope != "food_names_and_aliases" || !r.DisplayAllowed || !r.SearchAllowed ||
 		err != nil || reviewed.IsZero() || now.IsZero() || reviewed.After(now) {
 		return ErrFoodNames
@@ -77,14 +79,20 @@ func (n ReviewedFoodNames) Validate(now time.Time) error {
 		}
 		seen[key] = true
 	}
+	canonical, err := json.Marshal(n)
+	if err != nil || len(canonical) > 32768 {
+		return ErrFoodNames
+	}
 	return nil
 }
 
-// DecodeReviewedFoodNames is bounded and rejects unknown fields. It deliberately
+// DecodeReviewedFoodNames allows bounded JSON whitespace from PostgreSQL jsonb
+// serialization; Validate still limits canonical content to32KiB. Unknown fields
+// and duplicate keys are rejected. It deliberately
 // cannot import nutrients, personal foods or make an AI approval claim sufficient.
 func DecodeReviewedFoodNames(raw []byte, now time.Time) (ReviewedFoodNames, error) {
 	var n ReviewedFoodNames
-	if len(raw) == 0 || len(raw) > 32768 || !utf8.Valid(raw) {
+	if len(raw) == 0 || len(raw) > 65536 || !utf8.Valid(raw) {
 		return n, ErrFoodNames
 	}
 	check := json.NewDecoder(bytes.NewReader(raw))

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "story": "V1-048",
+  "status": "partial",
+  "scope": "reviewed-name-SQL-HTTP-read-disposable-not-published-content",
+  "passed": true,
+  "temporaryDatabaseRemoved": true,
+  "deliveredDataUnchanged": true,
+  "clusterInitiallyRunning": false,
+  "clusterRunningStatePreserved": true,
+  "migrationsAppliedOnlyToDisposableDatabase": 10,
+  "runtimeReadOnly": true,
+  "immutableHistoryAndIdempotencyVerified": true,
+  "evidenceHashesVerified": true,
+  "originalFoodVersionUnchanged": true,
+  "publishedNames": 0,
+  "batchedReadVerified": true,
+  "localizedHTTPVerified": true,
+  "cursorRejectsChangedLocaleAndRevision": true,
+  "etagRevalidatesWithdrawal": true,
+  "exactVersionAndLocaleVerified": true,
+  "latestWithdrawalDoesNotReviveOlderName": true,
+  "sourceBaseCommit": "a34575b",
+  "limits": [
+    "HTTP locale/search/revision/cursor/ETag tested in fixtures; Flutter name projection and human publication still pending.",
+    "Migrations9/10 are not applied to delivered DB; actual23 tables remain unchanged.",
+    "Evidence hashes prove matching bytes, not reviewer identity or license truth. Authorized human publication tooling/review still required.",
+    "No new endpoint, only optional locale/namesVersion and reviewedName/nameCatalog fields. Fixtures never enter delivered DB."
+  ],
+  "apiVersion": "0.6.0",
+  "swaggerOperations": 25,
+  "originalOnlyCursorCompatible": true,
+  "idempotentRetryKeepsNameRevision": true,
+  "homonymsKeepSeparateIdentities": true,
+  "canonicalJSONLimitBytes": 32768,
+  "inputJSONLimitBytes": 65536,
+  "checks": [
+    {
+      "command": "go test ./... -count=1",
+      "result": "passed",
+      "sql": "default integrations skipped; targeted run below executed SQL"
+    },
+    {
+      "command": "go vet ./...",
+      "result": "passed"
+    },
+    {
+      "command": "python tools/verificar_nomes_alimentares.py",
+      "result": "passed",
+      "sqlAndHTTP": true
+    },
+    {
+      "command": "python tools/gerar_swagger.py --check",
+      "result": "passed",
+      "version": "0.6.0",
+      "operations": 25
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_nomes_alimentares.py",
+      "result": "passed",
+      "passed": 3
+    },
+    {
+      "command": "python tools/gerar_documentacao.py --write --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_documentacao.py",
+      "result": "passed",
+      "passed": 13
+    }
+  ],
+  "flutterChanged": false,
+  "flutterRegressionReference": "docs/execucao/v1/frontend-localization-write-verification.json",
+  "graph": "Flutter AST/HTML remains100Dart/3346nodes/3864edges; no Dart changed in this backend increment. Go/SQL reflected in generated docs, not claimed semantically indexed.",
+  "diagram": "Contract flow added as Mermaid; Markdown/links checked. Mermaid/jsdom parser unavailable; no dependencies installed."
+}

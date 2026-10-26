@@ -12,7 +12,7 @@ A [auditoria24/10](auditoria-produto-2026-10-24.md) é o baseline factual. A tri
 
 ## Estado do aplicativo preservado
 
-- API Go0.5.1/25operações, PostgreSQL17.5 local isolado,23tabelas. Última leitura da auditoria:1conta/1consumo humano real,6369referências alimentares e73metadados de movimento. Zero programas/práticas aprovados.
+- Último ambiente humano:API Go0.5.1/25operações, PostgreSQL17.5 local isolado,23tabelas. CódigoGo0.6.0 foi validado emSQL/HTTPdescartável;00009/10 não aplicadas àbase entregue eAPI não reiniciada. Última leitura da auditoria:1conta/1consumo humano real,6369referências alimentares e73metadados de movimento. Zero programas/práticas aprovados.
 - Último APK instalado registrado:debug **0.3.0+13**. Novo **0.3.2+15** compilado e assinatura conferida para a interface048; [recibo](android-localization-write-checkpoint.json). Não foi instalado pelo agente:inspeção não identificou uma raiz segura do emulador e a UI atual foi preservada. Nenhum consumo/exclusão/loginGoogle novo.
 - GoogleAndroiddebug/sessão/privacidade reais já validados; OAuthdebug/release conferido. [Fechamento](auth-local-fechamento.md). DistribuiçãoHTTPS/release/iOS têm gates próprios e não impedem teste local.
 - V1-014/019/020 reais:consulta de catálogo/base alimentar e registro manual, revisão/exclusão, histórico e subtotais. Cadastro particular e demais jornadas ainda exigem os aceites da025; não repetir SQL/importação/restore históricos por hábito.
@@ -35,7 +35,9 @@ Segundo incremento:estado de consultas/paginação/debounce saiu daNutritionPage
 
 Fundação de nomes048 implementada emnames.go/names_postgres.go e00009:FK exata,hash próprio,até16aliases,locale restrito,evidência humana/direitos,imutabilidade/idempotência ebytes comhash correspondente. TestesGo/vet eSQLdescartável passaram; banco temporário removido ecluster inicialmente parado voltou a parar; dados entregues preservados. [Recibo](food-names-foundation-verification.json).00009 **não aplicada àbase entregue**(23tabelas);0nomes publicados. Hash/booleano não provam revisão humana:publicação operacional autorizada ainda falta.
 
-Próxima fatia048:integrar contratoHTTP/busca/apresentação de nomes revisados e paginação/cache por idioma/versão; tratar retirada sem reviver versão antiga; ferramenta operacional de revisão/publicação. Não enviarlocale àAPI atual. Não alegar revisão de nomes por traduzir rótulos.048continua doing; aceiteAndroid4idiomas eexecução nativaiOS ainda faltam.
+[LeituraGo0.6.0](food-names-read-verification.json):locale/namesVersion opcionais na lista e locale no detalhe, reviewedName/nameCatalog aditivos. Busca poralias, homônimos separados, fonte/versão/nutrientes preservados; snapshot/00010 vinculam revisão ao cursor eETag;409quando o léxico muda. SQL/HTTP passou, inclusive retirada semreviver antigo, cache entreidiomas e cursor original legado. Nenhum novoendpoint nemnome publicado;Swagger25operações regenerado.00009/10 continuam sóno banco descartável; base entregue ainda23tabelas/migration8.
+
+Próxima fatia048: integrar Flutter em testes (apresentação, original/fonte acessíveis, cache/gerações/409). Antes de ativar os parâmetros no APK, aplicar9/10 e grants com validação que preserve a base entregue. UsarLocale.toLanguageTag(),nãointl.localeName(pt_BR). Falta ferramenta operacional de revisão/publicação, cobertura editorial eaceites. Flutter ainda não deve enviar locale ao ambiente anterior antes das migrations/integração. Não alegar revisão de nomes por traduzir rótulos.048continua doing; aceiteAndroid4idiomas eexecução nativaiOS ainda faltam.
 
 ## V1-048 em andamento — 25/10
 
@@ -43,7 +45,7 @@ Próxima fatia048:integrar contratoHTTP/busca/apresentação de nomes revisados 
 
 119testesFlutter/analyze0issues,11testes novos dirigidos com8prévias locais e7testes dohelperAndroid aprovados. APKdebug0.3.1+14 compilado/certificado verificado, não instalado. Preferência Android compilada; preferência/declaração iOS preparadas, sem execução nativa. Graphify96Dart/1699nós/2193arestas eHTML, sem semântica; ARB não é interpretado pelo grafo.
 
-**Ainda falta na048 (após os incrementos26/10 acima):** modelo separado de nome/alias revisado por alimento+versão+idioma com direitos/revisão/retirada; contrato/busca/paginação/cache por idioma/versão, fallback e aceites. A API atual aceita apenas q/sourceId/limit/cursor na lista e versionId no detalhe: não enviar locale antes de implementar o contrato aditivo. FoodReference continua exibindo original; importador continua rejeitando namePt. Nenhum nome alimentar/tradução foi publicado, nenhum hash/nutriente/consumo mudou. Não marcar done nem trocar de história por este checkpoint. A tela de idioma informa cobertura parcial.
+**Ainda falta na048 (após os incrementos26/10 acima):** modelo separado de nome/alias revisado por alimento+versão+idioma com direitos/revisão/retirada; contrato/busca/paginação/cache por idioma/versão, fallback e aceites. CódigoGo0.6.0 já tem contrato aditivo acima, ainda não integrado aoFlutter/ambiente entregue. FoodReference continua exibindo original; importador continua rejeitando namePt. Nenhum nome alimentar/tradução foi publicado, nenhum hash/nutriente/consumo mudou. Não marcar done nem trocar de história por este checkpoint. A tela de idioma informa cobertura parcial.
 
 ## Frontend e Figma
 

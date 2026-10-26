@@ -440,6 +440,8 @@ definitions:
         $ref: '#/definitions/nutrition.Basis'
       id:
         type: string
+      nameCatalog:
+        $ref: '#/definitions/nutrition.FoodNameCatalog'
       nameLocale:
         type: string
       nameOriginal:
@@ -450,6 +452,8 @@ definitions:
         items:
           $ref: '#/definitions/nutrition.FoodCell'
         type: array
+      reviewedName:
+        $ref: '#/definitions/nutrition.ReviewedNameDisplay'
       source:
         $ref: '#/definitions/nutrition.Citation'
       sourceFoodId:
@@ -472,12 +476,21 @@ definitions:
       unknownBasisCount:
         type: integer
     type: object
+  nutrition.FoodNameCatalog:
+    properties:
+      locale:
+        type: string
+      version:
+        type: string
+    type: object
   nutrition.FoodPage:
     properties:
       items:
         items:
           $ref: '#/definitions/nutrition.FoodSummary'
         type: array
+      nameCatalog:
+        $ref: '#/definitions/nutrition.FoodNameCatalog'
       nextCursor:
         type: string
         x-nullable: true
@@ -505,6 +518,8 @@ definitions:
         type: string
       nameOriginal:
         type: string
+      reviewedName:
+        $ref: '#/definitions/nutrition.ReviewedNameDisplay'
       source:
         $ref: '#/definitions/nutrition.Citation'
       sourceFoodId:
@@ -585,6 +600,25 @@ definitions:
       value:
         type: string
         x-nullable: true
+    type: object
+  nutrition.ReviewedNameDisplay:
+    properties:
+      attribution:
+        type: string
+      licenseLabel:
+        type: string
+      licenseUrl:
+        type: string
+      locale:
+        type: string
+      name:
+        type: string
+      reviewEvidenceSha256:
+        type: string
+      rightsEvidenceSha256:
+        type: string
+      versionId:
+        type: string
     type: object
   nutrition.ScaledCell:
     properties:
@@ -704,7 +738,7 @@ info:
     food declarations and explicitly recorded consumption. No executable training
     content or prescribed diets.
   title: TrainForge API
-  version: 0.5.1
+  version: 0.6.0
 paths:
   /api/v1/auth/google:
     post:
@@ -1087,10 +1121,25 @@ paths:
   /api/v1/foods:
     get:
       parameters:
-      - description: Literal original-name substring with collapsed whitespace; maximum
-          100 UTF-8 bytes
+      - description: Literal name substring with collapsed whitespace; reviewed names/aliases
+          require locale; maximum 100 UTF-8 bytes
         in: query
         name: q
+        type: string
+      - description: Optional reviewed-name locale; original fallback. Requires name
+          catalog migrations.
+        enum:
+        - pt-BR
+        - pt-PT
+        - en
+        - es
+        in: query
+        name: locale
+        type: string
+      - description: Optional locale revision from nameCatalog; changed revision returns409.
+          Cursor retains it automatically.
+        in: query
+        name: namesVersion
         type: string
       - description: Exact reviewed source ID
         in: query
@@ -1103,7 +1152,8 @@ paths:
         minimum: 1
         name: limit
         type: integer
-      - description: Opaque cursor bound to search, source and page size
+      - description: Opaque cursor bound to search, source, page size, locale and
+          name revision
         in: query
         name: cursor
         type: string
@@ -1118,6 +1168,10 @@ paths:
           description: Not Modified
         "400":
           description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
           schema:
             $ref: '#/definitions/httpapi.Problem'
         "503":
@@ -1135,9 +1189,19 @@ paths:
         name: id
         required: true
         type: string
-      - description: Exact SHA-256 version; latest by default
+      - description: Exact SHA-256 source version; latest by default
         in: query
         name: versionId
+        type: string
+      - description: Optional reviewed-name locale; missing/withdrawn translation
+          keeps original.
+        enum:
+        - pt-BR
+        - pt-PT
+        - en
+        - es
+        in: query
+        name: locale
         type: string
       produces:
       - application/json
