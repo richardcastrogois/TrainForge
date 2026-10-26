@@ -1,3 +1,5 @@
+import 'food_labels.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -56,7 +58,7 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                   padding: EdgeInsets.symmetric(horizontal: 24),
                   child: FigmaBack(),
                 ),
-                const AppLoading(label: 'Consultando composição'),
+                AppLoading(label: context.l10n.loadingComposition),
               ],
             );
           }
@@ -64,15 +66,14 @@ class _FoodDetailPageState extends State<FoodDetailPage>
             return ListView(
               padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               children: [
-                const FigmaPageHeading(
-                  title: 'Composição da fonte',
-                  subtitle: 'ALIMENTO DE REFERÊNCIA',
+                FigmaPageHeading(
+                  title: context.l10n.sourceComposition,
+                  subtitle: context.l10n.referenceFood,
                 ),
                 FlowStatus(
-                  title: 'Composição indisponível',
-                  message:
-                      'Este alimento está indisponível. Pode haver falha de conexão ou retirada da versão.',
-                  actionLabel: 'Tentar novamente',
+                  title: context.l10n.compositionUnavailable,
+                  message: context.l10n.foodVersionUnavailable,
+                  actionLabel: context.l10n.retry,
                   onAction: () => setState(reload),
                 ),
               ],
@@ -87,28 +88,28 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    const FigmaPageHeading(
-                      title: 'Composição da fonte',
-                      subtitle: 'ALIMENTO · VERSÃO ORIGINAL',
+                    FigmaPageHeading(
+                      title: context.l10n.sourceComposition,
+                      subtitle: context.l10n.originalFoodVersion,
                     ),
                     Text(
                       food.displayName,
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     const SizedBox(height: 8),
-                    Text('${food.languageLabel} · ${food.basisLabel}'),
+                    Text(
+                      '${food.localizedLanguage(context)} · ${food.localizedBasis(context)}',
+                    ),
                     const SizedBox(height: 8),
-                    Text(data.notice),
+                    Text(context.l10n.foodQueryNotice),
                     TextButton(
                       onPressed: () => setState(reload),
-                      child: const Text('Atualizar composição'),
+                      child: Text(context.l10n.refreshComposition),
                     ),
                     if (widget.selectForConsumption)
                       FilledButton(
                         onPressed: () => Navigator.pop(context, food),
-                        child: const Text(
-                          'Usar esta versão para registrar consumo',
-                        ),
+                        child: Text(context.l10n.useFoodVersion),
                       ),
                     const SizedBox(height: 16),
                     FigmaSection(
@@ -116,23 +117,23 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            'Fonte e licença',
+                            context.l10n.sourceLicense,
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                           const SizedBox(height: 8),
                           SelectableText(source.attribution),
                           Text(
-                            '${source.license} · ${food.sourceVersion}\nPublicação: ${source.publishedAt}',
+                            '${source.license} · ${food.sourceVersion}\n${context.l10n.publication}: ${source.publishedAt}',
                           ),
                           SelectableText(source.url),
                           SelectableText(source.licenseUrl),
                           Text(source.warranty),
                           ExpansionTile(
                             tilePadding: EdgeInsets.zero,
-                            title: const Text('Proveniência e condições'),
+                            title: Text(context.l10n.provenanceConditions),
                             children: [
                               SelectableText(
-                                '${source.publisher}\nCódigo: ${food.sourceFoodId}\nVersão: ${food.versionId}\n${source.changes}\n${source.conditions.join('\n')}',
+                                '${source.publisher}\n${context.l10n.code}: ${food.sourceFoodId}\n${context.l10n.version}: ${food.versionId}\n${source.changes}\n${source.conditions.join('\n')}',
                               ),
                             ],
                           ),
@@ -141,12 +142,10 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Nutrientes e valores originais',
+                      context.l10n.originalNutrients,
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    const Text(
-                      'Métodos e colunas distintos permanecem separados. Cada valor informa sua própria base; nenhuma porção é calculada.',
-                    ),
+                    Text(context.l10n.nutrientMethodsNotice),
                     const SizedBox(height: 8),
                   ],
                 );
@@ -164,11 +163,12 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        n.displayValue,
+                        n.localizedValue(context),
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
-                      Text(n.basisLabel),
-                      if (n.raw.isNotEmpty) Text('Célula original: ${n.raw}'),
+                      Text(n.localizedBasis(context)),
+                      if (n.raw.isNotEmpty)
+                        Text('${context.l10n.originalCell}: ${n.raw}'),
                     ],
                   ),
                 ),

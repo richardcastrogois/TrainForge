@@ -78,5 +78,307 @@
   "appearanceInvalid": "Não foi possível usar a preferência anterior. O tema segue o dispositivo.",
   "appearanceReadFailed": "Não foi possível ler a aparência guardada. O tema segue o dispositivo.",
   "appearanceSaveUncertain": "A aparência foi aplicada, mas a gravação não foi confirmada. Tenta novamente.",
-  "appearanceSaveFailed": "Não foi possível guardar a aparência. Tenta novamente."
+  "appearanceSaveFailed": "Não foi possível guardar a aparência. Tenta novamente.",
+  "moveNow": "Vamos mexer!",
+  "moveWithName": "Vamos mexer, {name}!",
+  "@moveWithName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyRhythm": "O teu ritmo, todos os dias",
+  "strongerDaily": "UM POUCO MAIS FORTE, TODOS OS DIAS",
+  "nextMovement": "O teu próximo movimento",
+  "libraryReadOnly": "Biblioteca para consulta. Prática guiada ainda indisponível.",
+  "yourWeek": "A tua semana",
+  "diaryByDate": "Consultar o diário alimentar por data.",
+  "yourDay": "O teu dia",
+  "loadingDayData": "A consultar os dados reais do dia",
+  "loadingDayRecords": "A consultar registos do dia",
+  "dayUpdateFailed": "Não foi possível atualizar o dia.",
+  "dayUnconfirmed": "Os dados não foram confirmados. Esta consulta não cria nem remove consumos.",
+  "retryUpdate": "Tentar atualizar novamente",
+  "energyNoSubtotal": "energia sem subtotal único confirmado",
+  "energySourceMethod": "kcal · um método da fonte",
+  "activityUnavailable": "atividade ainda indisponível",
+  "summaryLimit": "O limite do resumo foi excedido. Consulta o histórico; nenhum total parcial é apresentado como completo.",
+  "quantityEvidenceCounts": "{measured, plural, =1{1 medida} other{{measured} medidas}} · {estimated, plural, =1{1 estimada} other{{estimated} estimadas}}",
+  "@quantityEvidenceCounts": {
+    "placeholders": {
+      "measured": {
+        "type": "int"
+      },
+      "estimated": {
+        "type": "int"
+      }
+    }
+  },
+  "originMethodDiary": "Origem e método no diário.",
+  "myNutrition": "A minha alimentação",
+  "loadingRecords": "A consultar registos…",
+  "openHistoryRetry": "Abrir histórico e tentar atualizar",
+  "noConfirmedToday": "Nenhum consumo confirmado neste dia",
+  "viewRecordsOrigin": "Consultar registos e origem",
+  "confirmedDayCount": "{count, plural, =0{Nenhum consumo confirmado neste dia} =1{1 consumo confirmado neste dia · ver origem} other{{count} consumos confirmados neste dia · ver origem}}",
+  "@confirmedDayCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatToday": "O que te apetece hoje?",
+  "exploreActivities": "Caminhar, correr, explorar outra modalidade",
+  "updateDay": "Atualizar o dia",
+  "viewFoodDay": "Consultar alimentação de {date}",
+  "@viewFoodDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "findMovement": "Encontra o teu movimento.",
+  "atYourPace": "Com orientação, ao teu ritmo.",
+  "searchUpper": "PESQUISAR",
+  "movementSearchHint": "Movimento, modalidade ou fonte",
+  "loadingPrograms": "A consultar programas disponíveis",
+  "programsUnconfirmed": "Não foi possível consultar os programas. A disponibilidade não foi confirmada.",
+  "programsUnavailable": "Programas ainda indisponíveis",
+  "browsePrograms": "Consultar programas",
+  "noPracticeProgram": "Nenhum programa autorizado para prática. Consulta as referências disponíveis.",
+  "viewRequirements": "Ver origem, requisitos e disponibilidade",
+  "exploreModalities": "Explorar modalidades",
+  "referenceLibrary": "Biblioteca de referência · apenas consulta",
+  "createMyPlan": "Criar o meu plano",
+  "organizeWeek": "Escolher exercícios e organizar a semana",
+  "compositionUnavailable": "Composição indisponível",
+  "helpStart": "Ajuda-me a começar",
+  "audiencesEnvironments": "Casa, praça, ginásio, idosos e cuidadores",
+  "eatSimply": "Comer bem, sem complicar.",
+  "foodDiaryUpper": "DIÁRIO ALIMENTAR",
+  "loadingQuery": "A consultar…",
+  "queryUnavailable": "Consulta indisponível",
+  "sourceSubtotals": "Consulta os subtotais por método da fonte.",
+  "recordedEnergy": "ENERGIA REGISTADA",
+  "energyMethodSubtotal": "kcal · subtotal de um método da fonte",
+  "updateDayRecords": "Atualizar registos do dia",
+  "myRecords": "Os meus registos",
+  "addFood": "Adicionar alimento",
+  "hydration": "Hidratação",
+  "waterUnavailable": "Registo de água ainda indisponível",
+  "waterNotImplemented": "O registo de água ainda não foi implementado. Nenhuma quantidade foi preenchida automaticamente.",
+  "planLearn": "Planear e aprender",
+  "foodGuidanceUnavailable": "Conteúdo alimentar ainda não autorizado",
+  "planningLearning": "Planeamento e aprendizagem",
+  "foodPlansUnavailable": "Planos alimentares e orientações ainda não estão disponíveis. A consulta das fontes e dos seus nutrientes mantém-se acessível pelo diário.",
+  "outdoorsCounts": "Lá fora também conta.",
+  "activityIntro": "Caminha, corre ou regista a tua atividade.",
+  "routeUnavailable": "Percurso ainda indisponível. Não está a ser recolhida qualquer localização.",
+  "noWalkKm": "km · sem registo de caminhada",
+  "noActivityMinutes": "min de atividade indisponíveis",
+  "startActivity": "Começar atividade",
+  "quickRecord": "Registo rápido",
+  "quickUnavailable": "Registo manual e por imagem ainda indisponíveis",
+  "myDevices": "Os meus dispositivos",
+  "permissionsSync": "Permissões, origem e sincronização",
+  "yourProgress": "Olha o que já construíste.",
+  "historyWithSource": "O TEU HISTÓRICO, COM ORIGEM",
+  "chartUnavailable": "Evolução de atividade ainda indisponível. O gráfico será apresentado quando existirem registos e cálculo implementados.",
+  "workoutsUnavailable": "treinos ainda indisponíveis",
+  "walkingKmUnavailable": "km de caminhada indisponíveis",
+  "eachRecordCounts": "Cada registo conta",
+  "historyCorrect": "Ver histórico e corrigir um consumo",
+  "measurementsGoals": "Medidas e objetivos",
+  "configurationUnavailable": "Configuração ainda indisponível",
+  "searchResults": "Resultados da pesquisa",
+  "foodReferences": "ALIMENTOS DE REFERÊNCIA",
+  "searchFor": "PESQUISA · {query}",
+  "@searchFor": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchOriginal": "Pesquisar pelo nome original",
+  "foodPreparation": "Alimento ou preparação",
+  "originalNamesHint": "Nomes em francês ou inglês, conforme a fonte.",
+  "search": "Pesquisar",
+  "foodCoverage": "{total, plural, =1{1 referência} other{{total} referências}} · {unknown} sem base confirmada.",
+  "@foodCoverage": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "unknown": {
+        "type": "int"
+      }
+    }
+  },
+  "allSources": "Todas as fontes",
+  "originalFoodNotice": "Preparação e idioma mantêm-se no nome original. Ausência, vestígio e limite não são zero. Fonte e licença em cada detalhe.",
+  "readOnlyFood": "Consulta sem prescrição de dieta ou registo de consumo.",
+  "loadingFood": "A consultar alimentos",
+  "noFoodResults": "Nenhum alimento corresponde à pesquisa. Tenta um termo no idioma original ou outra fonte.",
+  "loading": "A carregar…",
+  "moreFood": "Carregar mais alimentos",
+  "clearSearch": "Limpar pesquisa e fonte",
+  "loadingComposition": "A consultar composição",
+  "sourceComposition": "Composição da fonte",
+  "referenceFood": "ALIMENTO DE REFERÊNCIA",
+  "foodVersionUnavailable": "Este alimento está indisponível. Pode existir falha de ligação ou retirada da versão.",
+  "originalFoodVersion": "ALIMENTO · VERSÃO ORIGINAL",
+  "foodQueryNotice": "Referência de composição da fonte, sem prescrição de dieta. Nomes e métodos originais preservados; ausência não significa zero. Sem cálculo de porção ou registo de consumo nesta consulta.",
+  "refreshComposition": "Atualizar composição",
+  "useFoodVersion": "Usar esta versão para registar consumo",
+  "sourceLicense": "Fonte e licença",
+  "publication": "Publicação",
+  "provenanceConditions": "Proveniência e condições",
+  "code": "Código",
+  "version": "Versão",
+  "originalNutrients": "Nutrientes e valores originais",
+  "nutrientMethodsNotice": "Métodos e colunas distintos mantêm-se separados. Cada valor indica a sua própria base; nenhuma porção é calculada.",
+  "originalCell": "Célula original",
+  "basisUnknown": "Base de composição desconhecida",
+  "sourceBasis": "Base da fonte: {quantity} {unit}",
+  "@sourceBasis": {
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "perQuantity": "Por {quantity} {unit}",
+  "@perQuantity": {
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "languageFrench": "Francês",
+  "languageEnglish": "Inglês",
+  "valueUnavailable": "Valor indisponível",
+  "limitUnavailable": "Limite indisponível",
+  "lessThanValue": "< {value}{unit} (limite; sem valor exato)",
+  "@lessThanValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "traceValue": "Vestígio (sem quantidade exata)",
+  "notInformed": "Não informado",
+  "presentUnknown": "Presente; quantidade desconhecida",
+  "unparsedValue": "Valor original não interpretado: {value}",
+  "@unparsedValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "basisUnconfirmed": "Base não confirmada para este valor",
+  "columnDeclares": "Coluna declara",
+  "foodSearchTooLong": "A pesquisa ficou longa. Usa uma parte do nome original.",
+  "foodQueryFailed": "Não foi possível consultar os alimentos. Verifica a ligação e tenta novamente.",
+  "foodMoreFailed": "Não foi possível carregar mais alimentos. Tenta novamente.",
+  "catalogQueryFailed": "Não foi possível consultar a biblioteca. Verifica a ligação e tenta novamente.",
+  "catalogMoreFailed": "Não foi possível carregar a próxima página. Tenta novamente.",
+  "allKnownValues": "Todos os valores informados",
+  "sourceFilters": "Filtros da fonte",
+  "unknownNotAssumed": "Valores não informados não são adaptados nem classificados por suposição.",
+  "category": "Categoria",
+  "equipment": "Equipamento",
+  "environment": "Ambiente",
+  "audience": "Público",
+  "modality": "Modalidade",
+  "unknownEnvironment": "{count, plural, =1{1 registo sem ambiente informado.} other{{count} registos sem ambiente informado.}}",
+  "@unknownEnvironment": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unknownAudience": "{count, plural, =1{1 registo sem público informado.} other{{count} registos sem público informado.}}",
+  "@unknownAudience": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cancel": "Cancelar",
+  "applyFilters": "Aplicar filtros",
+  "libraryTitle": "Biblioteca de referência",
+  "librarySubtitle": "MOVIMENTO · ORIGEM · DISPONIBILIDADE",
+  "metadataOnly": "Apenas consulta. Estes registos não são instruções nem programas autorizados para prática.",
+  "movements": "Movimentos",
+  "programs": "Programas",
+  "filters": "Filtros",
+  "clear": "Limpar",
+  "noResults": "Sem resultados",
+  "clearFilters": "Limpar filtros",
+  "loadingLibrary": "A consultar biblioteca",
+  "noProgramsBatch": "Nenhum programa autorizado neste lote.",
+  "noMetadataFilters": "Nenhum metadado corresponde aos filtros.",
+  "audienceScope": "Idosos, cuidadores, casa, praça e ginásio mantêm-se no âmbito. A fonte tem de indicar requisitos e permissão para cada uso.",
+  "loadMore": "Carregar mais",
+  "titleNotProvided": "Título não informado pela fonte",
+  "movement": "Movimento",
+  "collection": "Coleção modular",
+  "program": "Programa",
+  "languageNotProvided": "Idioma não informado",
+  "credits": "Créditos",
+  "licenseNotProvided": "Licença não informada",
+  "sourceInDetail": "Fonte e licença no detalhe · Apenas consulta",
+  "linkFailed": "Não foi possível abrir a ligação. Podes copiar oURL abaixo.",
+  "loadingDetail": "A consultar detalhe",
+  "originAvailability": "Origem e disponibilidade",
+  "libraryUpper": "BIBLIOTECA",
+  "referenceUnavailable": "Referência indisponível",
+  "recordWithdrawn": "Este registo não está disponível ou foi retirado. Volta à biblioteca.",
+  "recordUnconfirmed": "Não foi possível confirmar este registo. Tenta novamente com ligação.",
+  "backLibrary": "Voltar à biblioteca",
+  "notProvidedSource": "Não informado pela fonte",
+  "libraryReadOnlyUpper": "BIBLIOTECA · APENAS CONSULTA",
+  "referenceMovement": "Movimento de referência",
+  "sourceProgram": "Programa da fonte",
+  "noPracticeContent": "Apenas consulta. Instrução, dose e multimédia não estão autorizadas para uso na aplicação.",
+  "authorship": "Autoria e contribuição",
+  "authorsProvided": "Autores informados",
+  "sourceCredits": "Créditos da fonte",
+  "attribution": "Atribuição",
+  "openOriginalSource": "Abrir fonte original",
+  "openLicense": "Abrir licença",
+  "noticeNotProvided": "Aviso não informado",
+  "availability": "Disponibilidade",
+  "audienceSupport": "Público, ambiente e apoio",
+  "support": "Apoio",
+  "supportRequired": "Exigido pela fonte",
+  "supportNotRequired": "Não exigido conforme a fonte",
+  "supportReference": "Referência de apoio",
+  "providedRequirements": "Requisitos informados",
+  "titleCredits": "Créditos do título original",
+  "titleLicense": "Licença do título",
+  "declaredChanges": "Alterações declaradas",
+  "deliveryConditions": "Condições de entrega",
+  "queriedVersion": "Versão consultada",
+  "versionHash": "Hash da versão importada:",
+  "publishedVersion": "Versão publicada pela fonte",
+  "originalLanguage": "Idioma original"
 }

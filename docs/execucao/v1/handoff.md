@@ -1,6 +1,6 @@
 # Handoff vigente — trilha de implementação por área
 
-Atualizado em **25/10/2026**. Raiz: **C:/dev/TrainForge/trainforge**.
+Atualizado em **26/10/2026**. Raiz: **C:/dev/TrainForge/trainforge**.
 
 ## Pedido e próxima ação
 
@@ -26,6 +26,12 @@ Fábricas lazy em lib/composition centralizam os adaptadores de produção. Auth
 Segundo incremento:estado de consultas/paginação/debounce saiu daNutritionPage paraNutritionController; mensagens de apresentação saíram do adaptadorHTTP. Guardas por conta/geração/dispose preservadas e invalidação não revive controller antigo. APP_ENV separa development/staging/production;HTTP somente local development/debug,HTTPS nos demais.
 
 **021encerrada no seu recorteT01/T02**, conforme [mapeamento de critérios](frontend-state-verification.json):108testesFlutter/analyze0issues e14domínios semFlutter/Dio. Prova histórica de sessão/logs reais preservada; não repetidoGoogle. Formulários ainda mantêm entrada/foco/validação e guardas visuais comrepository injetado; este fechamento não entrega025/026/047/048/049 nem todo frontend. Graphify final88Dart/1294nós/1734arestas eHTML. Próxima048 está pronta por020/021:localização e nomes revisados, mantendo original/fonte e sem tradução alimentar inventada.
+
+## V1-048 — incremento26/10
+
+[Recibo das consultas/resumos](frontend-localization-read-verification.json):282mensagens poridioma. Hoje/Diário/Planos/Atividade/Evolução, biblioteca/filtros/detalhes e consulta alimentar usam recursos locais, datas/plurais e rótulos exatos de traço/ausência/limite/base. Fontes/créditos/valores/seleção preservados.132testesFlutter/analyze0issues e8prévias novas; semAPI/SQL/registro real/novoAPK. Código avançou além doAPK14 preparado.
+
+Próxima fatia048:formulários/histórico/escrita alimentar,privacidade/guias; depoiscontratoGo/SQL/busca/apresentação de nomes revisados com versão/revisão/direitos. Não enviarlocale àAPI atual. Não alegar revisão de nomes por traduzir rótulos.048continua doing.
 
 ## V1-048 em andamento — 25/10
 

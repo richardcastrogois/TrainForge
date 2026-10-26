@@ -1,3 +1,6 @@
+import 'food_labels.dart';
+import 'package:trainforge/core/l10n/read_feedback.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
@@ -91,24 +94,23 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       FigmaPageHeading(
-                        title: 'Resultados da pesquisa',
+                        title: context.l10n.searchResults,
                         subtitle: controller.q.isEmpty
-                            ? 'ALIMENTOS DE REFERÊNCIA'
-                            : 'PESQUISA · ${controller.q}',
+                            ? context.l10n.foodReferences
+                            : context.l10n.searchFor(controller.q),
                       ),
                       TextField(
                         controller: search,
                         textInputAction: TextInputAction.search,
                         maxLength: 100,
                         decoration: InputDecoration(
-                          labelText: 'Buscar pelo nome original',
-                          hintText: 'Alimento ou preparo',
-                          helperText:
-                              'Nomes em francês ou inglês, conforme a fonte.',
+                          labelText: context.l10n.searchOriginal,
+                          hintText: context.l10n.foodPreparation,
+                          helperText: context.l10n.originalNamesHint,
                           helperMaxLines: 3,
                           suffixIcon: TextButton(
                             onPressed: () => submit(search.text),
-                            child: Text('Pesquisar'),
+                            child: Text(context.l10n.search),
                           ),
                         ),
                         onSubmitted: submit,
@@ -123,7 +125,10 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                       if (facets != null) ...[
                         SizedBox(height: 12),
                         Text(
-                          '${facets.total} referências · ${facets.unknownBasis} sem base confirmada.',
+                          context.l10n.foodCoverage(
+                            facets.total,
+                            facets.unknownBasis,
+                          ),
                           style: TextStyle(
                             fontSize: 12,
                             height: 1.35,
@@ -134,7 +139,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                           spacing: 8,
                           runSpacing: 4,
                           children: [
-                            sourceChip('Todas as fontes', ''),
+                            sourceChip(context.l10n.allSources, ''),
                             for (final source in facets.sources)
                               sourceChip(
                                 '${source.name} (${source.count})',
@@ -145,7 +150,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                       ],
                       SizedBox(height: 12),
                       Text(
-                        'Preparo e idioma permanecem no nome original. Ausência, traço e limite não são zero. Fonte e licença em cada detalhe.',
+                        context.l10n.originalFoodNotice,
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -156,7 +161,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                         Padding(
                           padding: EdgeInsets.only(top: 8),
                           child: Text(
-                            'Consulta sem prescrição de dieta ou registro de consumo.',
+                            context.l10n.readOnlyFood,
                             style: TextStyle(
                               fontSize: 12,
                               height: 1.35,
@@ -171,19 +176,18 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
               if (controller.busy)
                 SliverToBoxAdapter(
                   child: Center(
-                    child: AppLoading(label: 'Consultando alimentos'),
+                    child: AppLoading(label: context.l10n.loadingFood),
                   ),
                 )
               else if (controller.error != null)
                 SliverToBoxAdapter(
-                  child: _message(controller.error!, retry: true),
-                )
-              else if (controller.items.isEmpty)
-                SliverToBoxAdapter(
                   child: _message(
-                    'Nenhum alimento corresponde à busca. Tente um termo no idioma original ou outra fonte.',
+                    localizedReadFeedback(context, controller.error!),
+                    retry: true,
                   ),
                 )
+              else if (controller.items.isEmpty)
+                SliverToBoxAdapter(child: _message(context.l10n.noFoodResults))
               else
                 SliverPadding(
                   padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
@@ -196,7 +200,12 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                             if (controller.moreError != null)
                               Semantics(
                                 liveRegion: true,
-                                child: Text(controller.moreError!),
+                                child: Text(
+                                  localizedReadFeedback(
+                                    context,
+                                    controller.moreError!,
+                                  ),
+                                ),
                               ),
                             if (controller.cursor != null)
                               OutlinedButton(
@@ -205,8 +214,8 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                                     : controller.more,
                                 child: Text(
                                   controller.loadingMore
-                                      ? 'Carregando…'
-                                      : 'Carregar mais alimentos',
+                                      ? context.l10n.loading
+                                      : context.l10n.moreFood,
                                 ),
                               ),
                           ],
@@ -236,7 +245,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                                   ),
                                   SizedBox(height: 4),
                                   Text(
-                                    '${food.source.name} · ${food.languageLabel}\n${food.basisLabel}\n${food.source.license} · ${food.sourceVersion}',
+                                    '${food.source.name} · ${food.localizedLanguage(context)}\n${food.localizedBasis(context)}\n${food.source.license} · ${food.sourceVersion}',
                                     style: TextStyle(
                                       fontSize: 12,
                                       height: 1.35,
@@ -289,7 +298,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
           if (retry)
             FilledButton(
               onPressed: () => controller.load(),
-              child: Text('Tentar novamente'),
+              child: Text(context.l10n.retry),
             )
           else
             TextButton(
@@ -297,7 +306,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                 search.clear();
                 controller.load(q: '', sourceId: '');
               },
-              child: Text('Limpar busca e fonte'),
+              child: Text(context.l10n.clearSearch),
             ),
         ],
       ),

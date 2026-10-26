@@ -1,6 +1,6 @@
 # Frontend — referências, estado e checkpoints
 
-Fonte única atualizada em **25/10/2026**. [Trilha por área](trilha-implementacao.md) orienta o próximo trabalho; [auditoria](auditoria-produto-2026-10-24.md) registra o baseline. Os antigos relatos 01–06, dark/rolagem e 07–12 foram consolidados aqui. O Git mantém os textos históricos completos; os recibos originais permanecem no repositório.
+Fonte única atualizada em **26/10/2026**. [Trilha por área](trilha-implementacao.md) orienta o próximo trabalho; [auditoria](auditoria-produto-2026-10-24.md) registra o baseline. Os antigos relatos 01–06, dark/rolagem e 07–12 foram consolidados aqui. O Git mantém os textos históricos completos; os recibos originais permanecem no repositório.
 
 ## Estado atual e limites
 
@@ -26,6 +26,9 @@ Faltam configuração completa persistida (047), treino/agenda/execução com tr
 | 12 · Acabamento | Teclado, rolagem, voltar/cancelar, foco no erro, escala2x/largura320 e alvos de toque em recortes | Jornadas completas, referências faltantes, acessibilidade humana e execução nativa iOS |
 
 ## Localização em andamento — V1-048
+
+26/10:resumos das cinco áreas, filtros/detalhes da biblioteca e consulta alimentar localizados;282mensagens poridioma, datas/plurais e valores sem conversãofloat.132testes/analyze0issues,8prévias novas. [Recibo](frontend-localization-read-verification.json). Formulários/histórico/escrita,privacidade/guias e nomes revisados ainda faltam. Nenhum dado de fonte foi traduzido, nemAPI/SQL alterados. O código ainda não foi incorporado a novoAPK.
+
 
 Fundação em25/10:recursos ARB e classes tipadas, quatro localidades selecionáveis, seguir aparelho e preferência local separada de credenciais. Entrada/perfil/aparência/navegação e seus feedbacks têm79mensagens por idioma. Calendários e controles podem usar os delegates oficiaisFlutter. [Recibo e limites](frontend-localization-verification.json); [APK0.3.1+14 preparado](android-localization-checkpoint.json), ainda não instalado.
 

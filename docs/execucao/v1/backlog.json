@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-048",
@@ -2589,13 +2589,14 @@
             "Busca/apresentação com original/fonte e fallback",
             "Recibo de cobertura, integridade e aceite"
           ],
-          "handoff": "25/10:infraestrutura oficialFlutter, escolha persistida no aparelho e79mensagens de entrada/perfil/aparência/navegação/feedback implementadas nos quatro idiomas.119testesFlutter/analyze0issues;7testesAndroidhelper eAPKdebug0.3.1+14 compilado/assinatura verificada, ainda não instalado. Continua doing:demais telas/plurais/formatos, camada de nomes ealiases revisados, busca/idioma/versões e aceitesAndroid/iOS pendentes. API atual rejeita querylocale:alinhar contrato Go antes de enviar parâmetro peloFlutter. Fontes/import/hash/nutrientes/consumos intactos; nenhuma tradução alimentar publicada porIA.",
+          "handoff": "26/10:282mensagens poridioma;resumos/diário/planos/atividade/evolução,biblioteca/filtros/detalhes econsultaalimentar localizados,com datas/plurais e valores exatos.132testesFlutter/analyze0issues;8prévias novas. Continua doing:formulários/histórico/escrita,privacidade/guias,camadaGo/SQL/cliente de nomes/aliases/revisão/busca eaceites. SemAPI/SQL/dadosnovos;contratolocale ainda não implementado. Fontes originais preservadas e fixtures só emtestes. Código avançou além doAPK14 preparado,semnova instalação.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
             "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/frontend-localization-verification.json",
-            "docs/execucao/v1/android-localization-checkpoint.json"
+            "docs/execucao/v1/android-localization-checkpoint.json",
+            "docs/execucao/v1/frontend-localization-read-verification.json"
           ]
         },
         {
@@ -3612,5 +3613,5 @@
       ]
     }
   ],
-  "currentPriority": "25/10:V1-048doing. Fundação de idiomas e79mensagens pronta;119testesFlutter/analyze0issues, APK0.3.1+14 preparado e não instalado. Continuar nas demais telas/plurais e camada de nomes revisados/busca, respeitando contrato Go e os gates de revisão/aceite.021encerrada; não avançar de história nem alegar localização completa. Preservar dados reais e escolhasQ1–Q6, sem hospedagem ou integração paga."
+  "currentPriority": "26/10:continuar048doing.282mensagens econsultas/resumos localizados com132testes/analyze0issues. Próxima fatia:formulários/histórico/escrita alimentar,privacidade/guias;depoiscamada de nomes revisados econtratoGo antes do cliente. Não trocar de história ou alegar cobertura completa. APK14 ainda preparadoanterior;dados reais e gates preservados."
 }

@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -27,7 +28,9 @@ class CatalogSourceLink extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    if (value == null || value!.isEmpty) return Text('$label: não informado');
+    if (value == null || value!.isEmpty) {
+      return Text('$label: ${context.l10n.notInformed}');
+    }
     final uri = safeCatalogLink(value!);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,11 +48,7 @@ class CatalogSourceLink extends StatelessWidget {
                   } catch (_) {}
                   if (!opened && context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                          'Não foi possível abrir o link. Você pode copiar a URL abaixo.',
-                        ),
-                      ),
+                      SnackBar(content: Text(context.l10n.linkFailed)),
                     );
                   }
                 },
@@ -112,7 +111,7 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
                   padding: EdgeInsets.symmetric(horizontal: 24),
                   child: FigmaBack(),
                 ),
-                const AppLoading(label: 'Consultando detalhe'),
+                AppLoading(label: context.l10n.loadingDetail),
               ],
             );
           }
@@ -123,20 +122,20 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
             return ListView(
               padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               children: [
-                const FigmaPageHeading(
-                  title: 'Origem e disponibilidade',
-                  subtitle: 'BIBLIOTECA',
+                FigmaPageHeading(
+                  title: context.l10n.originAvailability,
+                  subtitle: context.l10n.libraryUpper,
                 ),
                 FlowStatus(
                   title: unavailable
-                      ? 'Referência indisponível'
-                      : 'Consulta indisponível',
+                      ? context.l10n.referenceUnavailable
+                      : context.l10n.queryUnavailable,
                   message: unavailable
-                      ? 'Este registro não está disponível ou foi retirado. Volte à biblioteca.'
-                      : 'Não foi possível confirmar este registro. Tente novamente conectado.',
+                      ? context.l10n.recordWithdrawn
+                      : context.l10n.recordUnconfirmed,
                   actionLabel: unavailable
-                      ? 'Voltar à biblioteca'
-                      : 'Tentar novamente',
+                      ? context.l10n.backLibrary
+                      : context.l10n.retry,
                   onAction: unavailable
                       ? () => Navigator.maybePop(context)
                       : retry,
@@ -165,61 +164,61 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
             ),
           );
           String known(List<String>? values) => values == null || values.isEmpty
-              ? 'Não informado pela fonte'
+              ? context.l10n.notProvidedSource
               : values.join(', ');
           return ListView(
             padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
             children: [
-              const FigmaPageHeading(
-                title: 'Origem e disponibilidade',
-                subtitle: 'BIBLIOTECA · SOMENTE CONSULTA',
+              FigmaPageHeading(
+                title: context.l10n.originAvailability,
+                subtitle: context.l10n.libraryReadOnlyUpper,
               ),
               Text(
-                item.title ?? 'Título não informado',
+                item.title ?? context.l10n.titleNotProvided,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 8),
               Text(
                 item.kind == 'movement'
-                    ? 'Movimento de referência'
+                    ? context.l10n.referenceMovement
                     : item.kind == 'collection'
-                    ? 'Coleção modular'
-                    : 'Programa da fonte',
+                    ? context.l10n.collection
+                    : context.l10n.sourceProgram,
               ),
               const SizedBox(height: 8),
-              const Text(
-                'Somente consulta. Instrução, dose e mídia não estão liberadas para uso no app.',
-              ),
+              Text(context.l10n.noPracticeContent),
+              const SizedBox(height: 12),
+              Text(context.l10n.contentOriginal),
               const SizedBox(height: 24),
               section(
-                'Autoria e contribuição',
+                context.l10n.authorship,
                 Text(
-                  'Autores informados: ${known(item.authors)}\nCréditos da fonte: ${known(item.creators)}\nAtribuição: ${item.attribution ?? 'Não informada'}',
+                  '${context.l10n.authorsProvided}: ${known(item.authors)}\n${context.l10n.sourceCredits}: ${known(item.creators)}\n${context.l10n.attribution}: ${item.attribution ?? context.l10n.notInformed}',
                 ),
               ),
               section(
-                'Fonte e licença',
+                context.l10n.sourceLicense,
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(item.sourceName),
                     CatalogSourceLink(
-                      label: 'Abrir fonte original',
+                      label: context.l10n.openOriginalSource,
                       value: item.sourceUrl,
                     ),
                     const SizedBox(height: 12),
-                    Text(item.licenseLabel ?? 'Licença não informada'),
+                    Text(item.licenseLabel ?? context.l10n.licenseNotProvided),
                     CatalogSourceLink(
-                      label: 'Abrir licença',
+                      label: context.l10n.openLicense,
                       value: item.licenseUrl,
                     ),
                     const SizedBox(height: 12),
-                    Text(item.warrantyNotice ?? 'Aviso não informado'),
+                    Text(item.warrantyNotice ?? context.l10n.noticeNotProvided),
                   ],
                 ),
               ),
               section(
-                'Disponibilidade',
+                context.l10n.availability,
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -235,41 +234,41 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
                 ),
               ),
               section(
-                'Público, ambiente e apoio',
+                context.l10n.audienceSupport,
                 Text(
-                  'Público: ${known(item.populations)}\nAmbiente: ${known(item.environments)}\nApoio: ${item.supportRequired == null
-                      ? 'Não informado pela fonte'
+                  '${context.l10n.audience}: ${known(item.populations)}\n${context.l10n.environment}: ${known(item.environments)}\n${context.l10n.support}: ${item.supportRequired == null
+                      ? context.l10n.notProvidedSource
                       : item.supportRequired!
-                      ? 'Exigido pela fonte'
-                      : 'Não exigido conforme a fonte'}${item.supportSource == null ? '' : '\nReferência de apoio: ${item.supportSource!}'}',
+                      ? context.l10n.supportRequired
+                      : context.l10n.supportNotRequired}${item.supportSource == null ? '' : '\n${context.l10n.supportReference}: ${item.supportSource!}'}',
                 ),
               ),
               section(
-                'Requisitos informados',
+                context.l10n.providedRequirements,
                 Text(
-                  'Categoria: ${item.category ?? 'Não informada'}\nModalidade: ${item.modality ?? 'Não informada'}\nEquipamento: ${known(item.equipment)}',
+                  '${context.l10n.category}: ${item.category ?? context.l10n.notInformed}\n${context.l10n.modality}: ${item.modality ?? context.l10n.notInformed}\n${context.l10n.equipment}: ${known(item.equipment)}',
                 ),
               ),
               if (item.nameCreators.isNotEmpty)
                 section(
-                  'Créditos do título original',
+                  context.l10n.titleCredits,
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(item.nameCreators.join(', ')),
                       CatalogSourceLink(
-                        label: 'Licença do título',
+                        label: context.l10n.titleLicense,
                         value: item.nameLicenseUrl,
                       ),
                     ],
                   ),
                 ),
               section(
-                'Alterações declaradas',
-                Text(item.changes ?? 'Não informadas'),
+                context.l10n.declaredChanges,
+                Text(item.changes ?? context.l10n.notInformed),
               ),
               section(
-                'Condições de entrega',
+                context.l10n.deliveryConditions,
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -283,16 +282,18 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
                 ),
               ),
               section(
-                'Versão consultada',
+                context.l10n.queriedVersion,
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Hash da versão importada:'),
+                    Text(context.l10n.versionHash),
                     SelectableText(item.versionId),
                     Text(
-                      'Versão publicada pela fonte: ${item.sourcePublishedVersion ?? 'Não informada'}',
+                      '${context.l10n.publishedVersion}: ${item.sourcePublishedVersion ?? context.l10n.notInformed}',
                     ),
-                    Text('Idioma original: ${item.locale ?? 'Não informado'}'),
+                    Text(
+                      '${context.l10n.originalLanguage}: ${item.locale ?? context.l10n.notInformed}',
+                    ),
                   ],
                 ),
               ),

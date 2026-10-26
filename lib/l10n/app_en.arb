@@ -78,5 +78,307 @@
   "appearanceInvalid": "The previous preference could not be used. The device theme is being used.",
   "appearanceReadFailed": "The saved appearance could not be read. The device theme is being used.",
   "appearanceSaveUncertain": "The appearance was applied, but saving was not confirmed. Try again.",
-  "appearanceSaveFailed": "The appearance could not be saved. Try again."
+  "appearanceSaveFailed": "The appearance could not be saved. Try again.",
+  "moveNow": "Let's move!",
+  "moveWithName": "Let's move, {name}!",
+  "@moveWithName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyRhythm": "Your pace, every day",
+  "strongerDaily": "A LITTLE STRONGER, EVERY DAY",
+  "nextMovement": "Your next movement",
+  "libraryReadOnly": "Reference library. Guided practice is not available yet.",
+  "yourWeek": "Your week",
+  "diaryByDate": "Browse the food diary by date.",
+  "yourDay": "Your day",
+  "loadingDayData": "Loading your recorded day data",
+  "loadingDayRecords": "Loading day records",
+  "dayUpdateFailed": "The day could not be updated.",
+  "dayUnconfirmed": "The data was not confirmed. This query does not create or delete intake records.",
+  "retryUpdate": "Try updating again",
+  "energyNoSubtotal": "energy without a confirmed single subtotal",
+  "energySourceMethod": "kcal · one source method",
+  "activityUnavailable": "activity not available yet",
+  "summaryLimit": "The summary limit was exceeded. Check the history; no partial total is presented as complete.",
+  "quantityEvidenceCounts": "{measured, plural, =1{1 measured quantity} other{{measured} measured quantities}} · {estimated, plural, =1{1 estimated quantity} other{{estimated} estimated quantities}}",
+  "@quantityEvidenceCounts": {
+    "placeholders": {
+      "measured": {
+        "type": "int"
+      },
+      "estimated": {
+        "type": "int"
+      }
+    }
+  },
+  "originMethodDiary": "Source and method in the diary.",
+  "myNutrition": "My nutrition",
+  "loadingRecords": "Loading records…",
+  "openHistoryRetry": "Open history and try updating",
+  "noConfirmedToday": "No confirmed intake for this day",
+  "viewRecordsOrigin": "View records and sources",
+  "confirmedDayCount": "{count, plural, =0{No confirmed intake for this day} =1{1 confirmed intake for this day · view source} other{{count} confirmed intakes for this day · view sources}}",
+  "@confirmedDayCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatToday": "What would you like today?",
+  "exploreActivities": "Walk, run, explore another activity",
+  "updateDay": "Refresh the day",
+  "viewFoodDay": "View intake for {date}",
+  "@viewFoodDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "findMovement": "Find your movement.",
+  "atYourPace": "With guidance, at your pace.",
+  "searchUpper": "SEARCH",
+  "movementSearchHint": "Movement, activity or source",
+  "loadingPrograms": "Loading available programs",
+  "programsUnconfirmed": "Programs could not be loaded. Availability was not confirmed.",
+  "programsUnavailable": "Programs not available yet",
+  "browsePrograms": "Browse programs",
+  "noPracticeProgram": "No program has been approved for practice. Browse the available references.",
+  "viewRequirements": "View sources, requirements and availability",
+  "exploreModalities": "Explore activities",
+  "referenceLibrary": "Reference library · read only",
+  "createMyPlan": "Create my plan",
+  "organizeWeek": "Choose exercises and organize the week",
+  "compositionUnavailable": "Composition unavailable",
+  "helpStart": "Help me get started",
+  "audiencesEnvironments": "Home, park, gym, older adults and caregivers",
+  "eatSimply": "Eating well, made simple.",
+  "foodDiaryUpper": "FOOD DIARY",
+  "loadingQuery": "Loading…",
+  "queryUnavailable": "Query unavailable",
+  "sourceSubtotals": "View subtotals for each source method.",
+  "recordedEnergy": "RECORDED ENERGY",
+  "energyMethodSubtotal": "kcal · subtotal for one source method",
+  "updateDayRecords": "Refresh day records",
+  "myRecords": "My records",
+  "addFood": "Add food",
+  "hydration": "Hydration",
+  "waterUnavailable": "Water tracking is not available yet",
+  "waterNotImplemented": "Water tracking is not implemented yet. No quantity was filled automatically.",
+  "planLearn": "Plan and learn",
+  "foodGuidanceUnavailable": "Food guidance is not approved yet",
+  "planningLearning": "Planning and learning",
+  "foodPlansUnavailable": "Meal plans and guidance are not available yet. Sources and their nutrients can still be browsed through the diary.",
+  "outdoorsCounts": "Outdoors counts too.",
+  "activityIntro": "Walk, run or record your activity.",
+  "routeUnavailable": "Routes are not available yet. No location is being collected.",
+  "noWalkKm": "km · no walking record",
+  "noActivityMinutes": "activity minutes unavailable",
+  "startActivity": "Start activity",
+  "quickRecord": "Quick entry",
+  "quickUnavailable": "Manual and image entries are not available yet",
+  "myDevices": "My devices",
+  "permissionsSync": "Permissions, sources and sync",
+  "yourProgress": "Look at your progress.",
+  "historyWithSource": "YOUR HISTORY, WITH SOURCES",
+  "chartUnavailable": "Activity progress is not available yet. The chart will appear when records and calculations are implemented.",
+  "workoutsUnavailable": "workouts not available yet",
+  "walkingKmUnavailable": "walking km unavailable",
+  "eachRecordCounts": "Every record counts",
+  "historyCorrect": "View history and correct an intake",
+  "measurementsGoals": "Measurements and goals",
+  "configurationUnavailable": "Setup not available yet",
+  "searchResults": "Search results",
+  "foodReferences": "FOOD REFERENCES",
+  "searchFor": "SEARCH · {query}",
+  "@searchFor": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchOriginal": "Search by original name",
+  "foodPreparation": "Food or preparation",
+  "originalNamesHint": "Names are in French or English, as provided by the source.",
+  "search": "Search",
+  "foodCoverage": "{total, plural, =1{1 reference} other{{total} references}} · {unknown} without a confirmed basis.",
+  "@foodCoverage": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "unknown": {
+        "type": "int"
+      }
+    }
+  },
+  "allSources": "All sources",
+  "originalFoodNotice": "Preparation and language stay in the original name. Missing values, traces and limits are not zero. Each detail includes its source and license.",
+  "readOnlyFood": "Read-only reference without dietary prescription or intake recording.",
+  "loadingFood": "Loading foods",
+  "noFoodResults": "No food matches this search. Try a term in its original language or another source.",
+  "loading": "Loading…",
+  "moreFood": "Load more foods",
+  "clearSearch": "Clear search and source",
+  "loadingComposition": "Loading composition",
+  "sourceComposition": "Source composition",
+  "referenceFood": "REFERENCE FOOD",
+  "foodVersionUnavailable": "This food is unavailable. The connection may have failed or the version may have been withdrawn.",
+  "originalFoodVersion": "FOOD · ORIGINAL VERSION",
+  "foodQueryNotice": "Source composition reference without dietary prescription. Original names and methods are preserved; missing does not mean zero. This query does not calculate portions or record intake.",
+  "refreshComposition": "Refresh composition",
+  "useFoodVersion": "Use this version to record intake",
+  "sourceLicense": "Source and license",
+  "publication": "Publication",
+  "provenanceConditions": "Provenance and conditions",
+  "code": "Code",
+  "version": "Version",
+  "originalNutrients": "Original nutrients and values",
+  "nutrientMethodsNotice": "Different methods and columns remain separate. Each value shows its own basis; no portion is calculated.",
+  "originalCell": "Original cell",
+  "basisUnknown": "Composition basis unknown",
+  "sourceBasis": "Source basis: {quantity} {unit}",
+  "@sourceBasis": {
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "perQuantity": "Per {quantity} {unit}",
+  "@perQuantity": {
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "languageFrench": "French",
+  "languageEnglish": "English",
+  "valueUnavailable": "Value unavailable",
+  "limitUnavailable": "Limit unavailable",
+  "lessThanValue": "< {value}{unit} (limit; no exact value)",
+  "@lessThanValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "traceValue": "Trace (no exact quantity)",
+  "notInformed": "Not provided",
+  "presentUnknown": "Present; quantity unknown",
+  "unparsedValue": "Original value not interpreted: {value}",
+  "@unparsedValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "basisUnconfirmed": "Basis not confirmed for this value",
+  "columnDeclares": "Column declares",
+  "foodSearchTooLong": "The search is too long. Use part of the original name.",
+  "foodQueryFailed": "Foods could not be loaded. Check your connection and try again.",
+  "foodMoreFailed": "More foods could not be loaded. Try again.",
+  "catalogQueryFailed": "The library could not be loaded. Check your connection and try again.",
+  "catalogMoreFailed": "The next page could not be loaded. Try again.",
+  "allKnownValues": "All provided values",
+  "sourceFilters": "Source filters",
+  "unknownNotAssumed": "Missing values are not adapted or classified by assumption.",
+  "category": "Category",
+  "equipment": "Equipment",
+  "environment": "Environment",
+  "audience": "Audience",
+  "modality": "Activity type",
+  "unknownEnvironment": "{count, plural, =1{1 record without an environment.} other{{count} records without an environment.}}",
+  "@unknownEnvironment": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unknownAudience": "{count, plural, =1{1 record without an audience.} other{{count} records without an audience.}}",
+  "@unknownAudience": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "applyFilters": "Apply filters",
+  "libraryTitle": "Reference library",
+  "librarySubtitle": "MOVEMENT · SOURCE · AVAILABILITY",
+  "metadataOnly": "Read only. These records are not instructions or programs approved for practice.",
+  "movements": "Movements",
+  "programs": "Programs",
+  "filters": "Filters",
+  "clear": "Clear",
+  "noResults": "No results",
+  "clearFilters": "Clear filters",
+  "loadingLibrary": "Loading library",
+  "noProgramsBatch": "No authorized program in this batch.",
+  "noMetadataFilters": "No metadata matches these filters.",
+  "audienceScope": "Older adults, caregivers, home, parks and gyms remain in scope. The source must provide requirements and permission for each use.",
+  "loadMore": "Load more",
+  "titleNotProvided": "Title not provided by the source",
+  "movement": "Movement",
+  "collection": "Modular collection",
+  "program": "Program",
+  "languageNotProvided": "Language not provided",
+  "credits": "Credits",
+  "licenseNotProvided": "License not provided",
+  "sourceInDetail": "Source and license in details · Read only",
+  "linkFailed": "The link could not be opened. You can copy the URL below.",
+  "loadingDetail": "Loading details",
+  "originAvailability": "Source and availability",
+  "libraryUpper": "LIBRARY",
+  "referenceUnavailable": "Reference unavailable",
+  "recordWithdrawn": "This record is unavailable or has been withdrawn. Return to the library.",
+  "recordUnconfirmed": "This record could not be confirmed. Connect and try again.",
+  "backLibrary": "Back to library",
+  "notProvidedSource": "Not provided by the source",
+  "libraryReadOnlyUpper": "LIBRARY · READ ONLY",
+  "referenceMovement": "Reference movement",
+  "sourceProgram": "Source program",
+  "noPracticeContent": "Read only. Instructions, doses and media are not approved for use in the app.",
+  "authorship": "Authorship and contribution",
+  "authorsProvided": "Provided authors",
+  "sourceCredits": "Source credits",
+  "attribution": "Attribution",
+  "openOriginalSource": "Open original source",
+  "openLicense": "Open license",
+  "noticeNotProvided": "Notice not provided",
+  "availability": "Availability",
+  "audienceSupport": "Audience, environment and support",
+  "support": "Support",
+  "supportRequired": "Required by the source",
+  "supportNotRequired": "Not required according to the source",
+  "supportReference": "Support reference",
+  "providedRequirements": "Provided requirements",
+  "titleCredits": "Original title credits",
+  "titleLicense": "Title license",
+  "declaredChanges": "Declared changes",
+  "deliveryConditions": "Delivery conditions",
+  "queriedVersion": "Queried version",
+  "versionHash": "Imported version hash:",
+  "publishedVersion": "Version published by the source",
+  "originalLanguage": "Original language"
 }

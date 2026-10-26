@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
@@ -78,8 +79,11 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
       return RefreshIndicator(
         onRefresh: controller.load,
         child: FigmaContent(
-          title: name.isEmpty ? 'Bora mexer!' : 'Bora mexer, ${name.first}!',
-          subtitle: todayDate(now),
+          title: name.isEmpty
+              ? context.l10n.moveNow
+              : context.l10n.moveWithName(name.first),
+          subtitle:
+              '${context.displayLongDate(now)} · ${context.l10n.dailyRhythm}',
           children: [
             Material(
               color: dark ? context.tf.surface : TrainForgeTheme.primary,
@@ -93,7 +97,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'UM POUCO MAIS FORTE, TODOS OS DIAS',
+                        context.l10n.strongerDaily,
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w700,
@@ -104,7 +108,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                       ),
                       SizedBox(height: 6),
                       Text(
-                        'O teu próximo movimento',
+                        context.l10n.nextMovement,
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
@@ -114,7 +118,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                       ),
                       SizedBox(height: 6),
                       Text(
-                        'Biblioteca para consulta. Prática guiada ainda indisponível.',
+                        context.l10n.libraryReadOnly,
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -127,11 +131,11 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
               ),
             ),
             Text(
-              'A tua semana',
+              context.l10n.yourWeek,
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
             ),
             Text(
-              'Consultar o diário alimentar por data.',
+              context.l10n.diaryByDate,
               style: TextStyle(
                 fontSize: 12,
                 height: 1.35,
@@ -149,12 +153,12 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
               },
             ),
             Text(
-              'O teu dia',
+              context.l10n.yourDay,
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
             ),
             if (controller.loading) ...[
-              AppMetricSkeleton(label: 'Consultando os dados reais do dia'),
-              AppProgress(label: 'Consultando registros do dia'),
+              AppMetricSkeleton(label: context.l10n.loadingDayData),
+              AppProgress(label: context.l10n.loadingDayRecords),
             ] else if (controller.failed)
               FigmaSection(
                 child: Column(
@@ -163,7 +167,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                     Semantics(
                       liveRegion: true,
                       child: Text(
-                        'Não foi possível atualizar o dia.',
+                        context.l10n.dayUpdateFailed,
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
@@ -171,13 +175,11 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                       ),
                     ),
                     SizedBox(height: 8),
-                    Text(
-                      'Os dados não foram confirmados. Esta consulta não cria nem remove consumos.',
-                    ),
+                    Text(context.l10n.dayUnconfirmed),
                     SizedBox(height: 12),
                     OutlinedButton(
                       onPressed: controller.load,
-                      child: Text('Tentar atualizar novamente'),
+                      child: Text(context.l10n.retryUpdate),
                     ),
                   ],
                 ),
@@ -191,8 +193,8 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                       child: _Metric(
                         value: energy ?? '—',
                         label: energy == null
-                            ? 'energia sem subtotal único confirmado'
-                            : 'kcal · um método da fonte',
+                            ? context.l10n.energyNoSubtotal
+                            : context.l10n.energySourceMethod,
                         color: context.tf.nutrition,
                         onTap: widget.openNutrition,
                       ),
@@ -201,7 +203,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                     Expanded(
                       child: _Metric(
                         value: '—',
-                        label: 'atividade ainda indisponível',
+                        label: context.l10n.activityUnavailable,
                         color: context.tf.blue,
                         onTap: widget.openActivity,
                       ),
@@ -211,73 +213,48 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
               ),
               if (snapshot != null && !complete)
                 Text(
-                  'O limite do resumo foi excedido. Consulte o histórico; nenhum total parcial é apresentado como completo.',
+                  context.l10n.summaryLimit,
                   style: TextStyle(fontSize: 12, height: 1.35),
                 ),
-              if (energy != null)
+              if (energy != null &&
+                  snapshot?['measuredEntries'] is int &&
+                  snapshot?['estimatedEntries'] is int)
                 Text(
-                  '${snapshot!['measuredEntries']} medidas · ${snapshot['estimatedEntries']} estimadas. Origem e método no diário.',
+                  '${context.l10n.quantityEvidenceCounts(snapshot!["measuredEntries"] as int, snapshot["estimatedEntries"] as int)}. ${context.l10n.originMethodDiary}',
                   style: TextStyle(fontSize: 12, height: 1.35),
                 ),
             ],
             FigmaActionCard(
-              title: 'Minha alimentação',
+              title: context.l10n.myNutrition,
               asset: 'food',
               color: context.tf.nutrition,
               subtitle: controller.loading
-                  ? 'Consultando registros…'
+                  ? context.l10n.loadingRecords
                   : controller.failed
-                  ? 'Abrir histórico e tentar atualizar'
+                  ? context.l10n.openHistoryRetry
                   : count == 0
-                  ? 'Nenhum consumo confirmado neste dia'
+                  ? context.l10n.noConfirmedToday
                   : count == null
-                  ? 'Consultar registros e origem'
-                  : '$count ${count == 1 ? 'consumo confirmado' : 'consumos confirmados'} neste dia · ver origem',
+                  ? context.l10n.viewRecordsOrigin
+                  : context.l10n.confirmedDayCount(count),
               onTap: widget.openNutrition,
             ),
             FigmaActionCard(
-              title: 'O que te apetece hoje?',
-              subtitle: 'Caminhar, correr, explorar outra modalidade',
+              title: context.l10n.whatToday,
+              subtitle: context.l10n.exploreActivities,
               asset: 'activity',
               color: context.tf.yellow,
               onTap: widget.openActivity,
             ),
             TextButton(
               onPressed: controller.loading ? null : controller.load,
-              child: Text('Atualizar o dia'),
+              child: Text(context.l10n.updateDay),
             ),
           ],
         ),
       );
     },
   );
-}
-
-String todayDate(DateTime date) {
-  const days = [
-    'Segunda-feira',
-    'Terça-feira',
-    'Quarta-feira',
-    'Quinta-feira',
-    'Sexta-feira',
-    'Sábado',
-    'Domingo',
-  ];
-  const months = [
-    'janeiro',
-    'fevereiro',
-    'março',
-    'abril',
-    'maio',
-    'junho',
-    'julho',
-    'agosto',
-    'setembro',
-    'outubro',
-    'novembro',
-    'dezembro',
-  ];
-  return '${days[date.weekday - 1]}, ${date.day} de ${months[date.month - 1]} · O teu ritmo, todos os dias';
 }
 
 class _Week extends StatelessWidget {
@@ -298,7 +275,7 @@ class _Week extends StatelessWidget {
                 final day = DateTime(monday.year, monday.month, monday.day + i);
                 final selected = localDay(day) == localDay(now);
                 return Semantics(
-                  label: 'Consultar alimentação de ${localDay(day)}',
+                  label: context.l10n.viewFoodDay(context.displayDate(day)),
                   button: true,
                   selected: selected,
                   excludeSemantics: true,
@@ -326,7 +303,7 @@ class _Week extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
-                                  ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'][i],
+                                  context.weekdayInitial(day),
                                   style: TextStyle(
                                     fontSize: 12,
                                     height: 1.35,

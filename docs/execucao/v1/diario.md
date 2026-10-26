@@ -338,3 +338,9 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - APKdebug0.3.1+14 compilado/assinatura conferida sem iniciar serviço ou apagar dados. API/emulador estavam disponíveis; inspeção filtrada não encontrou raiz segura (nenhum campo editável visível, tela não classificada). Não houve instalação pelo agente, navegação forçada, consumo/exclusão ouGoogle novo. iOS preparado sem build nativo.
 - Graphify96Dart/1699nós/2193arestas;18alterados/78inalterados/0removidos eHTML;5ARB não interpretados, sem semântica/LLM. Backup local preservado. API/Swagger/SQL não alterados; não repetidos Go/import/restore.048continua doing:demais telas/plurais e camada de nomes revisados/busca/versões mais aceites ainda faltam.
 - Geração documental reproduzível e13testes documentais aprovados; diff sem erros. Arquivo temporário de inspeção removido doemulador; nenhum texto pessoal ou captura real foi publicado.
+
+##26/10/2026 —048 consultas e resumos
+
+-282mensagens poridioma;Hoje/Diário/Planos/Atividade/Evolução econsulta/detalhes/filtros localizados, datas/semana/plurais e valores desconhecidos/traço/limite. Removidos ramos mortos deDailyOverview após retorno paraTodayPage; resumo incompleto não anuncia contagem completa.
+-132testesFlutter/analyze0issues;13cenários novos dirigidos,8prévias defixture,dark,conferidas Hoje/es ecomposição/en. Fonte/ID/versão/base preservados e teste de seleção com320px/texto2x. Ajustes de expressão e rolagem dos testes corrigidos antes de fechar. [Recibo](frontend-localization-read-verification.json).
+-Graphify98Dart/2521nós/3029arestas,AST/HTML,semsemântica/LLM;backup.local. Sem novoAPK/API/SQL/emulador/dado real.048segue doing; próxima fatia é formulário/histórico/escrita eprivacidade/guias.

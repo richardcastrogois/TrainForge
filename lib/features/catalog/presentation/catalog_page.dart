@@ -1,3 +1,5 @@
+import 'package:trainforge/core/l10n/read_feedback.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'dart:async';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
@@ -85,9 +87,9 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                     helperMaxLines: 3,
                   ),
                   items: [
-                    const DropdownMenuItem(
+                    DropdownMenuItem(
                       value: '',
-                      child: Text('Todos os valores informados'),
+                      child: Text(context.l10n.allKnownValues),
                     ),
                     ...values.map(
                       (v) => DropdownMenuItem(
@@ -103,55 +105,55 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    'Filtros da fonte',
+                    context.l10n.sourceFilters,
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 12),
-                  const Text(
-                    'Valores não informados não são adaptados nem classificados por suposição.',
-                  ),
+                  Text(context.l10n.unknownNotAssumed),
                   const SizedBox(height: 20),
                   select(
-                    'Categoria',
+                    context.l10n.category,
                     selected.category,
                     facets.categories,
                     (v) => selected = selected.copyWith(category: v),
                   ),
                   select(
-                    'Equipamento',
+                    context.l10n.equipment,
                     selected.equipment,
                     facets.equipment,
                     (v) => selected = selected.copyWith(equipment: v),
                   ),
                   select(
-                    'Ambiente',
+                    context.l10n.environment,
                     selected.environment,
                     facets.environments,
                     (v) => selected = selected.copyWith(environment: v),
-                    hint:
-                        '${facets.unknownEnvironmentCount} registros sem ambiente informado.',
+                    hint: context.l10n.unknownEnvironment(
+                      facets.unknownEnvironmentCount,
+                    ),
                   ),
                   select(
-                    'Público',
+                    context.l10n.audience,
                     selected.population,
                     facets.populations,
                     (v) => selected = selected.copyWith(population: v),
-                    hint:
-                        '${facets.unknownPopulationCount} registros sem público informado.',
+                    hint: context.l10n.unknownAudience(
+                      facets.unknownPopulationCount,
+                    ),
                   ),
                   select(
-                    'Modalidade',
+                    context.l10n.modality,
                     selected.modality,
                     facets.modalities,
                     (v) => selected = selected.copyWith(modality: v),
                   ),
                   TextButton(
                     onPressed: () => Navigator.pop(context),
-                    child: const Text('Cancelar'),
+                    child: Text(context.l10n.cancel),
                   ),
                   FilledButton(
                     onPressed: () => Navigator.pop(context, selected),
-                    child: const Text('Aplicar filtros'),
+                    child: Text(context.l10n.applyFilters),
                   ),
                 ],
               );
@@ -179,23 +181,21 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const FigmaPageHeading(
-          title: 'Biblioteca de referência',
-          subtitle: 'MOVIMENTO · ORIGEM · DISPONIBILIDADE',
+        FigmaPageHeading(
+          title: context.l10n.libraryTitle,
+          subtitle: context.l10n.librarySubtitle,
         ),
-        const Text(
-          'Somente consulta. Estes registros não são instruções nem programas liberados para prática.',
-        ),
+        Text(context.l10n.metadataOnly),
         const SizedBox(height: 12),
         TextField(
           controller: search,
           maxLength: 100,
           textInputAction: TextInputAction.search,
           decoration: InputDecoration(
-            labelText: 'Buscar pelo nome original',
+            labelText: context.l10n.searchOriginal,
             prefixIcon: const Icon(Icons.search),
             suffixIcon: IconButton(
-              tooltip: 'Pesquisar',
+              tooltip: context.l10n.search,
               onPressed: controller.busy
                   ? null
                   : () => controller.load(
@@ -223,7 +223,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
           children: [
             ChoiceChip(
               label: Text(
-                'Movimentos${facets == null ? '' : ' (${facets.movementCount})'}',
+                '${context.l10n.movements}${facets == null ? '' : ' (${facets.movementCount})'}',
               ),
               selected: controller.filters.kind == 'movements',
               onSelected: controller.busy
@@ -234,7 +234,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
             ),
             ChoiceChip(
               label: Text(
-                'Programas${facets == null ? '' : ' (${facets.programCount})'}',
+                '${context.l10n.programs}${facets == null ? '' : ' (${facets.programCount})'}',
               ),
               selected: controller.filters.kind == 'programs',
               onSelected: controller.busy
@@ -248,11 +248,11 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                   ? null
                   : chooseFilters,
               icon: const Icon(Icons.filter_list),
-              label: const Text('Filtros'),
+              label: Text(context.l10n.filters),
             ),
             TextButton(
               onPressed: controller.busy ? null : clearFilters,
-              child: const Text('Limpar'),
+              child: Text(context.l10n.clear),
             ),
           ],
         ),
@@ -262,9 +262,9 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
   Widget _notice(String text, {bool retry = false}) => Padding(
     padding: const EdgeInsets.all(24),
     child: FlowStatus(
-      title: retry ? 'Consulta indisponível' : 'Sem resultados',
+      title: retry ? context.l10n.queryUnavailable : context.l10n.noResults,
       message: text,
-      actionLabel: retry ? 'Tentar novamente' : 'Limpar filtros',
+      actionLabel: retry ? context.l10n.retry : context.l10n.clearFilters,
       onAction: retry ? () => controller.load() : clearFilters,
     ),
   );
@@ -280,19 +280,22 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
             slivers: [
               SliverToBoxAdapter(child: _header(context, controller.facets)),
               if (controller.busy)
-                const SliverToBoxAdapter(
+                SliverToBoxAdapter(
                   child: Center(
-                    child: AppLoading(label: 'Consultando biblioteca'),
+                    child: AppLoading(label: context.l10n.loadingLibrary),
                   ),
                 )
               else if (controller.error != null)
                 SliverToBoxAdapter(
-                  child: _notice(controller.error!, retry: true),
+                  child: _notice(
+                    localizedReadFeedback(context, controller.error!),
+                    retry: true,
+                  ),
                 )
               else if (controller.items.isEmpty)
                 SliverToBoxAdapter(
                   child: _notice(
-                    '${controller.filters.kind == 'programs' ? 'Nenhum programa autorizado neste lote.' : 'Nenhum metadado corresponde aos filtros.'}\n\nIdosos, cuidadores, casa, praça e academia continuam no escopo. A fonte precisa informar requisitos e permissão para cada uso.',
+                    '${controller.filters.kind == 'programs' ? context.l10n.noProgramsBatch : context.l10n.noMetadataFilters}\n\n${context.l10n.audienceScope}',
                   ),
                 )
               else
@@ -305,7 +308,12 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                         return Column(
                           children: [
                             if (controller.moreError != null)
-                              Text(controller.moreError!),
+                              Text(
+                                localizedReadFeedback(
+                                  context,
+                                  controller.moreError!,
+                                ),
+                              ),
                             if (controller.nextCursor != null)
                               OutlinedButton(
                                 onPressed: controller.loadingMore
@@ -313,8 +321,8 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                                     : controller.more,
                                 child: Text(
                                   controller.loadingMore
-                                      ? 'Carregando…'
-                                      : 'Carregar mais',
+                                      ? context.l10n.loading
+                                      : context.l10n.loadMore,
                                 ),
                               ),
                           ],
@@ -322,13 +330,13 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                       }
                       final item = controller.items[index];
                       return FlowRecord(
-                        title: item.title ?? 'Título não informado pela fonte',
+                        title: item.title ?? context.l10n.titleNotProvided,
                         subtitle:
                             '${item.kind == 'movement'
-                                ? 'Movimento'
+                                ? context.l10n.movement
                                 : item.kind == 'collection'
-                                ? 'Coleção modular'
-                                : 'Programa'} · ${item.sourceName} · ${item.locale ?? 'Idioma não informado'}\nCréditos: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? 'Licença não informada'}\nFonte e licença no detalhe · Somente consulta',
+                                ? context.l10n.collection
+                                : context.l10n.program} · ${item.sourceName} · ${item.locale ?? context.l10n.languageNotProvided}\n${context.l10n.credits}: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? context.l10n.licenseNotProvided}\n${context.l10n.sourceInDetail}',
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute<void>(

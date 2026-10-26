@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "story": "V1-048",
+  "status": "partial",
+  "sourceBaseCommit": "158ff51",
+  "scope": "Resumos Hoje/Diário/Planos/Atividade/Evolução, biblioteca/filtros/detalhes e consulta alimentar, com datas/plurais e rótulos de valores.",
+  "resourceMessagesPerLocale": 282,
+  "checks": [
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 132
+    },
+    {
+      "command": "flutter test --no-pub --dart-define=TF_RENDER_LOCALE_READ=true test/read_localization_test.dart --reporter expanded",
+      "result": "passed",
+      "passed": 13,
+      "previewImages": 8
+    }
+  ],
+  "behavior": [
+    "Datas/dias da semana e plural0/1/vários seguem idioma; dataISO daAPI permanece inalterada.",
+    "Resumo incompleto doDiário não anuncia contagem completa.",
+    "Estados numeric/trace/missing/less_than e base desconhecida têm rótulos localizados, sem arredondar dígitos ou transformar ausência emzero.",
+    "Seleção mantémID,nomeoriginal,versão ebase; títulos/créditos/URLs/licenças/métodos dafonte não foram traduzidos ou reescritos.",
+    "Apenas erros controlados doscontrollers recebem rótulos locais; texto arbitrário de fonte nunca passa pelo localizador."
+  ],
+  "evidence": [
+    "test/read_localization_test.dart",
+    "test/today_states_test.dart",
+    "lib/features/food_reference/presentation/food_labels.dart",
+    "lib/core/l10n/read_feedback.dart"
+  ],
+  "limits": [
+    "048continua doing:formulários/histórico/escrita alimentar,privacidade/guias e camadaGo/SQL/cliente de nomes/aliases revisados ainda faltam.",
+    "Nenhum nomealimentar,tradução editorial,registro ouAPI foi alterado. Fonte original permanece quando não há revisão.",
+    "Código está à frente doAPK0.3.1+14 preparado; sem novo build/instalação neste incremento. Nenhuma ação noemulador ou dado privado.",
+    "8prévias dewidgets isolados emdark; conferidas Hoje/es ecomposição/en. Não substituem aceiteAndroid/iOS."
+  ],
+  "graph": {
+    "dartFiles": 98,
+    "nodes": 2521,
+    "edges": 3029,
+    "changed": 14,
+    "unchanged": 84,
+    "deleted": 0,
+    "mode": "ASTincremental code-only;HTMLexportado;semclusterização/semântica/LLM;ARBnãointerpretado"
+  }
+}

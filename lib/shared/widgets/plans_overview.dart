@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
@@ -44,8 +45,8 @@ class _PlansOverviewState extends State<PlansOverview> {
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: controller,
     builder: (context, _) => FigmaContent(
-      title: 'Encontra o teu movimento.',
-      subtitle: 'Com orientação, ao teu ritmo.',
+      title: context.l10n.findMovement,
+      subtitle: context.l10n.atYourPace,
       children: [
         Material(
           color: context.tf.surface,
@@ -59,7 +60,7 @@ class _PlansOverviewState extends State<PlansOverview> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'PESQUISAR',
+                    context.l10n.searchUpper,
                     style: TextStyle(
                       fontSize: 10,
                       color: context.tf.muted,
@@ -68,7 +69,7 @@ class _PlansOverviewState extends State<PlansOverview> {
                   ),
                   SizedBox(height: 7),
                   Text(
-                    'Movimento, modalidade ou fonte',
+                    context.l10n.movementSearchHint,
                     style: TextStyle(fontSize: 15, height: 1.35),
                   ),
                 ],
@@ -76,48 +77,45 @@ class _PlansOverviewState extends State<PlansOverview> {
             ),
           ),
         ),
-        if (controller.busy)
-          AppProgress(label: 'Consultando programas disponíveis'),
+        if (controller.busy) AppProgress(label: context.l10n.loadingPrograms),
         if (controller.error != null) ...[
-          Text(
-            'Não foi possível consultar os programas. A disponibilidade não foi confirmada.',
-          ),
+          Text(context.l10n.programsUnconfirmed),
           OutlinedButton(
             onPressed: () => controller.load(),
-            child: Text('Tentar novamente'),
+            child: Text(context.l10n.retry),
           ),
         ] else if (!controller.busy)
           FigmaActionCard(
             title: controller.facets?.programCount == 0
-                ? 'Programas ainda indisponíveis'
-                : 'Consultar programas',
+                ? context.l10n.programsUnavailable
+                : context.l10n.browsePrograms,
             subtitle: controller.facets?.programCount == 0
-                ? 'Nenhum programa liberado para prática. Consulte as referências disponíveis.'
-                : 'Ver origem, requisitos e disponibilidade',
+                ? context.l10n.noPracticeProgram
+                : context.l10n.viewRequirements,
             asset: 'plan',
             color: context.tf.accent,
             onTap: () => library(kind: 'programs'),
           ),
         FigmaActionCard(
-          title: 'Explorar modalidades',
-          subtitle: 'Biblioteca de referência · somente consulta',
+          title: context.l10n.exploreModalities,
+          subtitle: context.l10n.referenceLibrary,
           asset: 'activity',
           color: context.tf.blue,
           onTap: library,
         ),
         FigmaActionCard(
-          title: 'Criar o meu plano',
-          subtitle: 'Escolher exercícios e organizar a semana',
+          title: context.l10n.createMyPlan,
+          subtitle: context.l10n.organizeWeek,
           asset: 'plus',
           onTap: () => showAvailability(
             context,
-            'Criar o meu plano',
-            'A composição de planos ainda não está implementada e não há instruções ou doses liberadas. Nenhum treino será criado automaticamente.',
+            context.l10n.createMyPlan,
+            context.l10n.compositionUnavailable,
           ),
         ),
         FigmaActionCard(
-          title: 'Ajuda-me a começar',
-          subtitle: 'Casa, praça, academia, idosos e cuidadores',
+          title: context.l10n.helpStart,
+          subtitle: context.l10n.audiencesEnvironments,
           asset: 'spark',
           color: context.tf.pink,
           onTap: () =>

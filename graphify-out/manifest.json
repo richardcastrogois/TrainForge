@@ -288,16 +288,16 @@
     "semantic_hash": "6b8db33d3a768978c447342fceb089a9"
   },
   "features/catalog/presentation/catalog_detail_page.dart": {
-    "mtime": 1792859572.0509906,
-    "seen": 1792860036.1301172,
-    "ast_hash": "d459082bb275cb61e36f46d9abc12743",
-    "semantic_hash": "d459082bb275cb61e36f46d9abc12743"
+    "mtime": 1793013069.292501,
+    "seen": 1793013235.862231,
+    "ast_hash": "f83f85330e622aeb3490ddde02ed3115",
+    "semantic_hash": "f83f85330e622aeb3490ddde02ed3115"
   },
   "features/catalog/presentation/catalog_page.dart": {
-    "mtime": 1792969002.3931954,
-    "seen": 1792969794.427593,
-    "ast_hash": "c22b77c1acbd4ca94990918c0e63b606",
-    "semantic_hash": "c22b77c1acbd4ca94990918c0e63b606"
+    "mtime": 1793013043.1988132,
+    "seen": 1793013235.862231,
+    "ast_hash": "555ad97259eb52490a959b2184f5f2ec",
+    "semantic_hash": "555ad97259eb52490a959b2184f5f2ec"
   },
   "features/food_reference/data/food_repository.dart": {
     "mtime": 1792708571.4333544,
@@ -318,16 +318,16 @@
     "semantic_hash": "1a5f161790b90c3bc3afdbec28cb0797"
   },
   "features/food_reference/presentation/food_detail_page.dart": {
-    "mtime": 1792859572.0595028,
-    "seen": 1792860036.1311204,
-    "ast_hash": "36778126091db025be303510576914b0",
-    "semantic_hash": "36778126091db025be303510576914b0"
+    "mtime": 1793013043.1504734,
+    "seen": 1793013235.862231,
+    "ast_hash": "bc1b2b73730c05be65b1b80d0e68316e",
+    "semantic_hash": "bc1b2b73730c05be65b1b80d0e68316e"
   },
   "features/food_reference/presentation/food_page.dart": {
-    "mtime": 1792969002.4082246,
-    "seen": 1792969794.427593,
-    "ast_hash": "888f18a46f821b8e1fafe5177dc6e3b9",
-    "semantic_hash": "888f18a46f821b8e1fafe5177dc6e3b9"
+    "mtime": 1793013043.1680677,
+    "seen": 1793013235.862231,
+    "ast_hash": "9124630b6ca038ed6361467fcd3238bd",
+    "semantic_hash": "9124630b6ca038ed6361467fcd3238bd"
   },
   "features/privacy/data/privacy_repository.dart": {
     "mtime": 1792761644.9247394,
@@ -414,16 +414,16 @@
     "semantic_hash": "8ee2fba8ff51d137ee5e62ce3f3f8ee4"
   },
   "shared/widgets/plans_overview.dart": {
-    "mtime": 1792969002.3711426,
-    "seen": 1792969794.4326437,
-    "ast_hash": "b087db3154b3ca39be846c70f8e2cf86",
-    "semantic_hash": "b087db3154b3ca39be846c70f8e2cf86"
+    "mtime": 1793012825.5573628,
+    "seen": 1793013235.8679683,
+    "ast_hash": "948ea9b8a8e2a7b16c44bac33c1db967",
+    "semantic_hash": "948ea9b8a8e2a7b16c44bac33c1db967"
   },
   "shared/widgets/product_overviews.dart": {
-    "mtime": 1792859182.3114052,
-    "seen": 1792860036.1346486,
-    "ast_hash": "20e7749c2bab362517fb470b0272c8d6",
-    "semantic_hash": "20e7749c2bab362517fb470b0272c8d6"
+    "mtime": 1793012862.4374075,
+    "seen": 1793013235.8679683,
+    "ast_hash": "63b8318bb832e301bc9683f1f8d46eef",
+    "semantic_hash": "63b8318bb832e301bc9683f1f8d46eef"
   },
   "shared/widgets/product_shell.dart": {
     "mtime": 1792971323.581974,
@@ -456,10 +456,10 @@
     "semantic_hash": "240644c2a0bf6e8c636bbae2914ef5c1"
   },
   "features/home/presentation/pages/today_page.dart": {
-    "mtime": 1792847661.3711984,
-    "seen": 1792847971.7443323,
-    "ast_hash": "95c1b5095e659a8f1d38df51879e46da",
-    "semantic_hash": "95c1b5095e659a8f1d38df51879e46da"
+    "mtime": 1793012825.5525165,
+    "seen": 1793013235.8632298,
+    "ast_hash": "30d3eacbe92f692a22cfd44092764f2f",
+    "semantic_hash": "30d3eacbe92f692a22cfd44092764f2f"
   },
   "shared/widgets/app_loading.dart": {
     "mtime": 1792859501.7544124,
@@ -546,33 +546,45 @@
     "semantic_hash": "07a2686efcb09353a20161bfd8b481ff"
   },
   "core/l10n/localized_context.dart": {
-    "mtime": 1792971152.1112993,
-    "seen": 1792971874.8024178,
-    "ast_hash": "7675405a637b280070031605d0c09cc7",
-    "semantic_hash": "7675405a637b280070031605d0c09cc7"
+    "mtime": 1793012825.534025,
+    "seen": 1793013235.860216,
+    "ast_hash": "38ec7a61df188dcf22b16ecb8c98c0c5",
+    "semantic_hash": "38ec7a61df188dcf22b16ecb8c98c0c5"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1792971825.1835468,
-    "seen": 1792971874.8210125,
-    "ast_hash": "f8a714ac11642f5ba52148670ad3e580",
-    "semantic_hash": "f8a714ac11642f5ba52148670ad3e580"
+    "mtime": 1793013038.553075,
+    "seen": 1793013235.8662295,
+    "ast_hash": "523a1bfad18a45b4879400517ac756db",
+    "semantic_hash": "523a1bfad18a45b4879400517ac756db"
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1792971825.174407,
-    "seen": 1792971874.8210125,
-    "ast_hash": "83eef513afe73cc9d74f532d19031e07",
-    "semantic_hash": "83eef513afe73cc9d74f532d19031e07"
+    "mtime": 1793013038.5290823,
+    "seen": 1793013235.8662295,
+    "ast_hash": "bd10b5d7fd24264d52f2308e0af2a730",
+    "semantic_hash": "bd10b5d7fd24264d52f2308e0af2a730"
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1792971825.1765149,
-    "seen": 1792971874.8210125,
-    "ast_hash": "49bcfb70d224a0dcad5a7d433f3eeafc",
-    "semantic_hash": "49bcfb70d224a0dcad5a7d433f3eeafc"
+    "mtime": 1793013038.5354352,
+    "seen": 1793013235.8662295,
+    "ast_hash": "43038fbcd666e7efabf073ce948e7b25",
+    "semantic_hash": "43038fbcd666e7efabf073ce948e7b25"
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1792971825.1810305,
-    "seen": 1792971874.8210125,
-    "ast_hash": "fb5e39afb6da1490ac7cbc60fd8e98ac",
-    "semantic_hash": "fb5e39afb6da1490ac7cbc60fd8e98ac"
+    "mtime": 1793013038.547888,
+    "seen": 1793013235.8662295,
+    "ast_hash": "3f8d53f06a905cb8153cfcd2387183fe",
+    "semantic_hash": "3f8d53f06a905cb8153cfcd2387183fe"
+  },
+  "core/l10n/read_feedback.dart": {
+    "mtime": 1793013043.205864,
+    "seen": 1793013235.860216,
+    "ast_hash": "0ab8814a0627c6af5eacd6bbebe9393e",
+    "semantic_hash": "0ab8814a0627c6af5eacd6bbebe9393e"
+  },
+  "features/food_reference/presentation/food_labels.dart": {
+    "mtime": 1793013043.151657,
+    "seen": 1793013235.862231,
+    "ast_hash": "d55348570eef269b670c8b21a883049a",
+    "semantic_hash": "d55348570eef269b670c8b21a883049a"
   }
 }

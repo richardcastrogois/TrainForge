@@ -97,7 +97,7 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      final date = find.bySemanticsLabel('Consultar alimentação de 2026-10-26');
+      final date = find.bySemanticsLabel('Consultar alimentação de 26/10/2026');
       expect(date, findsOneWidget);
       expect(t.getSize(date).width, greaterThanOrEqualTo(48));
       await t.tap(date);

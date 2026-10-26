@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização26/10: consultas e resumos localizados
+
+98Dart,2521nós/3029arestas;14alterados/84inalterados/0removidos. ASTincremental code-only eHTML, semclusterização/semântica/LLM;5ARB não interpretados. Backup.local/graphify-backup-20261026-locale-read. [Recibo](execucao/v1/frontend-localization-read-verification.json).
+
 ## Atualização25/10: fundação de idiomas
 
 96arquivosDart,1699nós/2193arestas;18alterados/novos,78inalterados,0removidos. ASTincremental eHTMLexportado, sem semântica/clusterização/LLM. Backup.local/graphify-backup-20261025-locale-foundation. Inclui locale/controller/preferência, recursos Dart gerados e primeiras telas;5ARB não classificados peloGraphify, cuja cobertura não equivale à tradução do app. [Recibo048 parcial](execucao/v1/frontend-localization-verification.json).

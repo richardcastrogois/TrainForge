@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "e1cc4ec2b6909a8a33770d6462d06b4bc4573e1a6cbe135d6533c2e044ed1f9f",
+  "inputRevision": "41f2275ca435c9e4897f507f5949d8b2b363934710e8b1e15732b3dc9f77b2e6",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
@@ -11,7 +11,8 @@
     "lib/core/l10n/feedback_localization.dart": "2feac32ad62a7b436bf9afed74c71d3fd2bee6e901f3cd65be9bb47f2b279f85",
     "lib/core/l10n/language_page.dart": "8254aa297f9f506cd7588afe585be5f4bf26759372aa0184065ed771203441f2",
     "lib/core/l10n/locale_controller.dart": "f30c2cad8cbc3bcd15c2603654abf0bcc506d4eed37e6299e1a46599b180282f",
-    "lib/core/l10n/localized_context.dart": "42a59b7b6a5e3fd5a511b267f6467c3b97e7c529746dd0d3e17971641b5e1fbc",
+    "lib/core/l10n/localized_context.dart": "0cd29fdc38bcfc665282362e8dd28e62b9e8cd5353a5dd060642f64e1df958fd",
+    "lib/core/l10n/read_feedback.dart": "426ad10e0997fd3bacc763f158a286fabe70ff37461f43f9ef571dcdfefb70e0",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
     "lib/core/motion/app_motion.dart": "925e67cc9cec4cabd756f361b29fb85a47c3ad21085976b51e3dc16ffb9715f3",
     "lib/core/scroll/trainforge_scroll_behavior.dart": "5161f121bdd1a0b467c4df0bc550731e98843945acc8bd65b32d676d79d431de",
@@ -33,18 +34,19 @@
     "lib/features/catalog/data/catalog_repository.dart": "17c5f9900fe15a8289f53d3acacd3bbae4fa3deb08919a3021235a558ce241b0",
     "lib/features/catalog/domain/catalog_entry.dart": "723a01b5b8717722fec7e53d01d246d576ee2038ff3b0156e3923604e876956f",
     "lib/features/catalog/presentation/catalog_controller.dart": "c3b3f353cb6e3edf1ae3379e88d203fa56a6fdc0854cd1a32599c3bec6f5cc76",
-    "lib/features/catalog/presentation/catalog_detail_page.dart": "1ca3497cd096396f59d47908c82d188dd2ca43fefe67eb3e7e8bcf20efb48cf0",
-    "lib/features/catalog/presentation/catalog_page.dart": "125edc4a2bf4aafd28a5dc70de01b668b2ddbda8e4edbc1bc713d60627800685",
+    "lib/features/catalog/presentation/catalog_detail_page.dart": "28ca48670d717162196cfe5debaabfb45fbd2d12c39b852e08c1f8685b3c13ac",
+    "lib/features/catalog/presentation/catalog_page.dart": "c2ad2a8f10f49e2958aff4cbf0901000105e633a3d4785bccf3edf58da970cb6",
     "lib/features/food_reference/data/food_repository.dart": "c0fd80cf9dc4913b91b296297347a0d2665421ee777efea2dbf930e2aad7af6f",
     "lib/features/food_reference/domain/food_reference.dart": "33e4e1599e1badc138d6ae312b27890df5ddde6833b7b959a45a16f9cd7cabc4",
     "lib/features/food_reference/presentation/food_controller.dart": "017d3b554ec63e7e43827ee13d78e911037646b48141b31d1eee73446759fe46",
-    "lib/features/food_reference/presentation/food_detail_page.dart": "1c3183f68ccd9db08c9eb871dc7caf428dc841c23be2755548782fd6bf05f421",
-    "lib/features/food_reference/presentation/food_page.dart": "779cbaa9c2e1dcf7e59c0168cecbb278f7d1dfa6783bda33ec5d19adf901ec6a",
+    "lib/features/food_reference/presentation/food_detail_page.dart": "03e6a0ddee4d0bc25ae89ec279052edb5d8c75c4a0c0178c7d2dde6a9bcf4e9b",
+    "lib/features/food_reference/presentation/food_labels.dart": "14878b7cb57127f07d1ad793326ab7ae6c7b72ec844e67623bb54f94b610d84a",
+    "lib/features/food_reference/presentation/food_page.dart": "324949ecad332e6e10aa19efad4efc2c057949c6fe4f4883fba1ddb466c81732",
     "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
     "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
     "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
     "lib/features/home/presentation/pages/home_page.dart": "8cf0518112fa0d1f46960a2bd77d9b9392929be15c235574051f4e56fa300bd5",
-    "lib/features/home/presentation/pages/today_page.dart": "2f33596594368fca44087eaaed57e825310d799ca600705e703f138476548a10",
+    "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
     "lib/features/nutrition/data/nutrition_repository.dart": "5cb8d30e5dc2d02ee746aa1397a0430867556fe040957672e48a7dcaa73b3e72",
     "lib/features/nutrition/domain/nutrition.dart": "94ea50371c587004031561e8000a9cce4be073ee38262ed6b5a9a512115b6b4e",
     "lib/features/nutrition/presentation/daily_summary_controller.dart": "eb523d37e822f49d19d07ba2fdcf97f482ed7bb3c1356f8a5a163cc01dc2a2fd",
@@ -79,10 +81,10 @@
     "lib/features/workouts/presentation/pages/workout_day_page.dart": "404b0b9a1cc1058da7b92fc7bd2e8ca3b260336a9a1bbb7d2f9ca3ceb26b03aa",
     "lib/features/workouts/presentation/pages/workout_plan_page.dart": "1094bef3cc0c4d4553ffc30eded6a3cf6c093202468e7c25e8e56de1007e8f30",
     "lib/features/workouts/presentation/pages/workouts_page.dart": "e3e72e390f4925e929a13b3aa66e0e70add6bf2a4c3844c770c323ac548cb73e",
-    "lib/l10n/generated/app_localizations.dart": "c1f9a7d03f599b4d3a1bc443b258e7df2d1a7b1c797d86e470e530ce71ce992e",
-    "lib/l10n/generated/app_localizations_en.dart": "09f7d123af847428e194b861a1a8a6f21d71f15d94cd9938fe0dea8dce6cfdb4",
-    "lib/l10n/generated/app_localizations_es.dart": "e4f19cd324602a78001e99ff7005b3a4d4eb23c61fde970df8a2440a7729f305",
-    "lib/l10n/generated/app_localizations_pt.dart": "6c2e5a3d283be502c61f3e36d4a58b6aa221374b28704abafbbab7de261273c5",
+    "lib/l10n/generated/app_localizations.dart": "8c377cc7790b1f349870d507e33754c9eecd332a1091665381b4ef9e75a82b4c",
+    "lib/l10n/generated/app_localizations_en.dart": "82874cb08ebd5eaf60588ccd75e4dd2414a55a654e28dbbe906e27b2e89b72a9",
+    "lib/l10n/generated/app_localizations_es.dart": "6a6cf151c0acd81b23ac5e0daaf6317769f89fb1c77a072dca1b11862ed1d4b2",
+    "lib/l10n/generated/app_localizations_pt.dart": "0ad56166f545b6056e655d8f5022f3f0ab166586d4d675d0d09c72b919011781",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
     "lib/shared/widgets/account_page.dart": "f683c99bb5e1294c70c606007cd6109e7e206bbd1ce9d11a72914a2ad1c4e2a6",
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
@@ -94,8 +96,8 @@
     "lib/shared/widgets/figma_bottom_nav.dart": "2dae71a63f9b01be7e39ad6828d0eacd1f75ed149e8b2fc5ba89606c96bf387b",
     "lib/shared/widgets/figma_components.dart": "c6e9b3e35bc204f869574e354d1ebc06613cb62e049f1775315194c1010ce7eb",
     "lib/shared/widgets/flow_components.dart": "1bb465dda5bdca775c79b318aca1712051d40f9480bf964a7a84dd1d45d09978",
-    "lib/shared/widgets/plans_overview.dart": "3eb9eb07c63bc4652113972d1fd1393728e7c4a8b991a43ee989571a205adbe2",
-    "lib/shared/widgets/product_overviews.dart": "764bbad32432507291a04e5c9de3a77f294d0d9ccf6271dd76e6949f1b480580",
+    "lib/shared/widgets/plans_overview.dart": "aa3a6c3c332b1cef501a2930b50b1869f6d97ec69127dc1eb286628f99be8357",
+    "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "3aaaca2cd5281cd9cb83811c9e6fd02e45a9175abb5be065b2048080d26e223d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
     "services/api/cmd/api/main.go": "1c05fcbc20b3de090a0f441904ce5f952f3af4c760ec59644af2643fe64ae3ac",
@@ -151,7 +153,7 @@
     "contracts/generated/swagger-v1.json": "f6745bbfa4ef370af2c5e360e7f7acecbf359e44a8c06fd95e6c50d5883955f6",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "80b780333a2db333e3823f3e67b72b116aa0d6c89392996599160b402d07e0c9",
+    "docs/execucao/v1/backlog.json": "c74fc0183b7bc2b09511704e14fa86b10c0e946a1c9c7b82a6a972ea4b9cf5da",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -199,7 +201,7 @@
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
   },
   "coverage": {
-    "dartFiles": 96,
+    "dartFiles": 98,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
@@ -248,6 +250,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/food_reference/presentation/food_detail_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_labels.dart",
           "line": 1
         },
         {
@@ -807,12 +814,12 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_detail_page.dart",
-          "line": 7
+          "line": 8
         },
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_page.dart",
-          "line": 8
+          "line": 10
         },
         {
           "repository": "trainforge",
@@ -822,12 +829,17 @@
         {
           "repository": "trainforge",
           "path": "lib/features/food_reference/presentation/food_detail_page.dart",
-          "line": 5
+          "line": 7
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_labels.dart",
+          "line": 3
         },
         {
           "repository": "trainforge",
           "path": "lib/features/food_reference/presentation/food_page.dart",
-          "line": 8
+          "line": 11
         },
         {
           "repository": "trainforge",
@@ -837,7 +849,7 @@
         {
           "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/today_page.dart",
-          "line": 4
+          "line": 5
         },
         {
           "repository": "trainforge",
@@ -927,7 +939,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/plans_overview.dart",
-          "line": 6
+          "line": 7
         },
         {
           "repository": "trainforge",
@@ -1058,7 +1070,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_detail_page.dart",
-        "line": 65
+        "line": 64
       }
     },
     {
@@ -1066,7 +1078,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_page.dart",
-        "line": 12
+        "line": 14
       }
     },
     {
@@ -1074,7 +1086,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_detail_page.dart",
-        "line": 7
+        "line": 9
       }
     },
     {
@@ -1082,7 +1094,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
-        "line": 11
+        "line": 14
       }
     },
     {
@@ -1098,7 +1110,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/home/presentation/pages/today_page.dart",
-        "line": 9
+        "line": 10
       }
     },
     {
@@ -1315,7 +1327,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/catalog/presentation/catalog_page.dart",
-        "line": 335
+        "line": 343
       }
     },
     {
@@ -1324,7 +1336,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
-        "line": 61
+        "line": 64
       }
     },
     {

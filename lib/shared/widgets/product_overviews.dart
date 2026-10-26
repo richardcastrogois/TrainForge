@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/home/presentation/pages/today_page.dart';
@@ -7,32 +8,6 @@ import 'package:trainforge/features/nutrition/presentation/daily_summary_control
 import 'figma_components.dart';
 
 const tfBlue = Color(0xffc9eaf7), tfYellow = Color(0xfff8eba5);
-String overviewDate(DateTime date) {
-  const days = [
-    'Segunda-feira',
-    'Terça-feira',
-    'Quarta-feira',
-    'Quinta-feira',
-    'Sexta-feira',
-    'Sábado',
-    'Domingo',
-  ];
-  const months = [
-    'janeiro',
-    'fevereiro',
-    'março',
-    'abril',
-    'maio',
-    'junho',
-    'julho',
-    'agosto',
-    'setembro',
-    'outubro',
-    'novembro',
-    'dezembro',
-  ];
-  return '${days[date.weekday - 1]}, ${date.day} de ${months[date.month - 1]}';
-}
 
 class DailyOverview extends StatelessWidget {
   final DailySummaryController controller;
@@ -65,142 +40,73 @@ class DailyOverview extends StatelessWidget {
         );
       }
       final snapshot = controller.loading ? null : controller.summary;
-      final count = snapshot?['entries'];
+      final int? count = snapshot?['complete'] == true
+          ? (snapshot?['entries'] as int?)
+          : null;
       final energy = dailyEnergy(snapshot);
       final state = controller.loading
-          ? 'Consultando…'
+          ? context.l10n.loadingQuery
           : controller.failed
-          ? 'Consulta indisponível'
-          : 'Veja os subtotais por método da fonte.';
+          ? context.l10n.queryUnavailable
+          : context.l10n.sourceSubtotals;
       return RefreshIndicator(
         onRefresh: controller.load,
         child: FigmaContent(
-          title: food
-              ? 'Comer bem, sem complicar.'
-              : 'Bora mexer, ${name.trim().split(RegExp(r'\s+')).first}!',
+          title: context.l10n.eatSimply,
           subtitle:
-              '${overviewDate(controller.now())} · ${food ? 'DIÁRIO ALIMENTAR' : 'O teu ritmo, todos os dias'}',
+              '${context.displayLongDate(controller.now())} · ${food ? context.l10n.foodDiaryUpper : context.l10n.dailyRhythm}',
           children: [
             if (controller.loading)
-              AppProgress(label: 'Consultando registros do dia'),
-            if (!food) ...[
-              Material(
-                color: context.tf.primary,
+              AppProgress(label: context.l10n.loadingDayRecords),
+            Container(
+              padding: const EdgeInsets.all(18),
+              decoration: BoxDecoration(
+                color: context.tf.nutrition,
                 borderRadius: BorderRadius.circular(24),
-                child: InkWell(
-                  onTap: openCatalog,
-                  borderRadius: BorderRadius.circular(24),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'UM POUCO MAIS FORTE, TODOS OS DIAS',
-                          style: TextStyle(
-                            fontSize: 10,
-                            color: context.tf.accent,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        SizedBox(height: 6),
-                        Text(
-                          'O teu próximo movimento',
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: context.tf.surface,
-                            height: 1.35,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        SizedBox(height: 6),
-                        Text(
-                          'Biblioteca para consulta. Prática guiada ainda indisponível.',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: context.tf.surface,
-                            height: 1.35,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
               ),
-              Text(
-                'O teu dia',
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
-              ),
-              Row(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: FigmaMetric(
-                      value: count?.toString() ?? '—',
-                      label: 'consumos confirmados',
-                      color: context.tf.nutrition,
+                  Text(
+                    context.l10n.recordedEnergy,
+                    style: TextStyle(fontSize: 10, fontWeight: FontWeight.w700),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    energy ?? '—',
+                    style: TextStyle(
+                      fontSize: 36,
+                      fontWeight: FontWeight.w700,
+                      height: 1.35,
                     ),
                   ),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: FigmaMetric(
-                      value: '—',
-                      label: 'atividade ainda indisponível',
-                      color: context.tf.blue,
-                    ),
+                  Text(
+                    energy == null ? state : context.l10n.energyMethodSubtotal,
+                    style: TextStyle(fontSize: 12, height: 1.35),
                   ),
+                  if (energy != null &&
+                      snapshot?['measuredEntries'] is int &&
+                      snapshot?['estimatedEntries'] is int)
+                    Text(
+                      context.l10n.quantityEvidenceCounts(
+                        snapshot!["measuredEntries"] as int,
+                        snapshot["estimatedEntries"] as int,
+                      ),
+                      style: TextStyle(fontSize: 12),
+                    ),
                 ],
               ),
-            ] else
-              Container(
-                padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(
-                  color: context.tf.nutrition,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'ENERGIA REGISTRADA',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      energy ?? '—',
-                      style: TextStyle(
-                        fontSize: 36,
-                        fontWeight: FontWeight.w700,
-                        height: 1.35,
-                      ),
-                    ),
-                    Text(
-                      energy == null
-                          ? state
-                          : 'kcal · subtotal de um método da fonte',
-                      style: TextStyle(fontSize: 12, height: 1.35),
-                    ),
-                    if (energy != null)
-                      Text(
-                        '${snapshot!['measuredEntries']} medidas · ${snapshot['estimatedEntries']} estimadas',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                  ],
-                ),
-              ),
+            ),
             if (controller.failed)
               OutlinedButton(
                 onPressed: controller.load,
-                child: Text('Atualizar registros do dia'),
+                child: Text(context.l10n.updateDayRecords),
               ),
             FigmaActionCard(
-              title: food ? 'Meus registros' : 'Minha alimentação',
+              title: food ? context.l10n.myRecords : context.l10n.myNutrition,
               subtitle: count == null
                   ? state
-                  : '$count consumos neste dia · ver histórico e origem',
+                  : context.l10n.confirmedDayCount(count),
               asset: 'food',
               color: food ? context.tf.surface : context.tf.nutrition,
               onTap: openNutrition,
@@ -208,33 +114,33 @@ class DailyOverview extends StatelessWidget {
             if (food) ...[
               FilledButton(
                 onPressed: openNutrition,
-                child: Text('Adicionar alimento'),
+                child: Text(context.l10n.addFood),
               ),
               FigmaActionCard(
-                title: 'Hidratação',
-                subtitle: 'Registro de água ainda indisponível',
+                title: context.l10n.hydration,
+                subtitle: context.l10n.waterUnavailable,
                 asset: 'water',
                 color: context.tf.blue,
                 onTap: () => showAvailability(
                   context,
-                  'Hidratação',
-                  'O registro de água ainda não foi implementado. Nenhuma quantidade foi preenchida automaticamente.',
+                  context.l10n.hydration,
+                  context.l10n.waterNotImplemented,
                 ),
               ),
               FigmaActionCard(
-                title: 'Planear e aprender',
-                subtitle: 'Conteúdo alimentar ainda não liberado',
+                title: context.l10n.planLearn,
+                subtitle: context.l10n.foodGuidanceUnavailable,
                 asset: 'plan',
                 onTap: () => showAvailability(
                   context,
-                  'Planejamento e aprendizagem',
-                  'Planos alimentares e orientações ainda não estão disponíveis. A consulta das fontes e seus nutrientes permanece acessível pelo diário.',
+                  context.l10n.planningLearning,
+                  context.l10n.foodPlansUnavailable,
                 ),
               ),
             ] else
               FigmaActionCard(
-                title: 'O que te apetece hoje?',
-                subtitle: 'Caminhar, correr, explorar outra modalidade',
+                title: context.l10n.whatToday,
+                subtitle: context.l10n.exploreActivities,
                 asset: 'activity',
                 color: context.tf.yellow,
                 onTap: openActivity,
@@ -250,8 +156,8 @@ class ActivityOverview extends StatelessWidget {
   const ActivityOverview({super.key});
   @override
   Widget build(BuildContext context) => FigmaContent(
-    title: 'Lá fora também conta.',
-    subtitle: 'Caminha, corre ou regista a tua atividade.',
+    title: context.l10n.outdoorsCounts,
+    subtitle: context.l10n.activityIntro,
     children: [
       Container(
         padding: const EdgeInsets.all(24),
@@ -260,7 +166,7 @@ class ActivityOverview extends StatelessWidget {
           borderRadius: BorderRadius.circular(22),
         ),
         child: Text(
-          'Percurso ainda indisponível. Nenhuma localização está sendo coletada.',
+          context.l10n.routeUnavailable,
           style: TextStyle(fontSize: 15, height: 1.35),
         ),
       ),
@@ -270,7 +176,7 @@ class ActivityOverview extends StatelessWidget {
           Expanded(
             child: FigmaMetric(
               value: '—',
-              label: 'km · sem registro de caminhada',
+              label: context.l10n.noWalkKm,
               color: context.tf.blue,
             ),
           ),
@@ -278,7 +184,7 @@ class ActivityOverview extends StatelessWidget {
           Expanded(
             child: FigmaMetric(
               value: '—',
-              label: 'min de atividade indisponíveis',
+              label: context.l10n.noActivityMinutes,
               color: context.tf.yellow,
             ),
           ),
@@ -286,17 +192,17 @@ class ActivityOverview extends StatelessWidget {
       ),
       FilledButton(
         onPressed: () => openEvaluationGuide(context, EvaluationTopic.activity),
-        child: Text('Começar atividade'),
+        child: Text(context.l10n.startActivity),
       ),
       FigmaActionCard(
-        title: 'Registo rápido',
-        subtitle: 'Registro manual e por imagem ainda indisponíveis',
+        title: context.l10n.quickRecord,
+        subtitle: context.l10n.quickUnavailable,
         asset: 'plus',
         onTap: () => openEvaluationGuide(context, EvaluationTopic.activity),
       ),
       FigmaActionCard(
-        title: 'Os meus dispositivos',
-        subtitle: 'Permissões, origem e sincronização',
+        title: context.l10n.myDevices,
+        subtitle: context.l10n.permissionsSync,
         asset: 'activity',
         color: context.tf.soft,
         onTap: () => openEvaluationGuide(context, EvaluationTopic.devices),
@@ -310,8 +216,8 @@ class EvolutionOverview extends StatelessWidget {
   const EvolutionOverview({super.key, required this.openNutrition});
   @override
   Widget build(BuildContext context) => FigmaContent(
-    title: 'Olha o que já construíste.',
-    subtitle: 'O TEU HISTÓRICO, COM ORIGEM',
+    title: context.l10n.yourProgress,
+    subtitle: context.l10n.historyWithSource,
     children: [
       Container(
         padding: const EdgeInsets.all(18),
@@ -327,7 +233,7 @@ class EvolutionOverview extends StatelessWidget {
               style: TextStyle(fontSize: 36, fontWeight: FontWeight.w700),
             ),
             Text(
-              'Evolução de atividade ainda indisponível. O gráfico será exibido quando houver registros e cálculo implementados.',
+              context.l10n.chartUnavailable,
               style: TextStyle(fontSize: 12, height: 1.35),
             ),
           ],
@@ -339,7 +245,7 @@ class EvolutionOverview extends StatelessWidget {
           Expanded(
             child: FigmaMetric(
               value: '—',
-              label: 'treinos ainda indisponíveis',
+              label: context.l10n.workoutsUnavailable,
               color: context.tf.soft,
             ),
           ),
@@ -347,22 +253,22 @@ class EvolutionOverview extends StatelessWidget {
           Expanded(
             child: FigmaMetric(
               value: '—',
-              label: 'km de caminhada indisponíveis',
+              label: context.l10n.walkingKmUnavailable,
               color: context.tf.blue,
             ),
           ),
         ],
       ),
       FigmaActionCard(
-        title: 'Cada registo conta',
-        subtitle: 'Ver histórico e corrigir um consumo',
+        title: context.l10n.eachRecordCounts,
+        subtitle: context.l10n.historyCorrect,
         asset: 'chart',
         color: context.tf.yellow,
         onTap: openNutrition,
       ),
       FigmaActionCard(
-        title: 'Medidas e objetivos',
-        subtitle: 'Configuração ainda indisponível',
+        title: context.l10n.measurementsGoals,
+        subtitle: context.l10n.configurationUnavailable,
         asset: 'heart',
         onTap: () => openEvaluationGuide(context, EvaluationTopic.firstAccess),
       ),

@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e1cc4ec2b6909a8a`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `41f2275ca435c9e4`.
 
 ## Atual: referências entre widgets
 
@@ -91,12 +91,12 @@ flowchart LR
 | LanguagePage | [lib/core/l10n/language_page.dart:6](../../../lib/core/l10n/language_page.dart) |
 | AppearancePage | [lib/core/theme/appearance_page.dart:7](../../../lib/core/theme/appearance_page.dart) |
 | AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:16](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
-| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:12](../../../lib/features/catalog/presentation/catalog_page.dart) |
-| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:7](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
-| FoodPage | [lib/features/food_reference/presentation/food_page.dart:11](../../../lib/features/food_reference/presentation/food_page.dart) |
+| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:64](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
+| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:14](../../../lib/features/catalog/presentation/catalog_page.dart) |
+| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:9](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
+| FoodPage | [lib/features/food_reference/presentation/food_page.dart:14](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
-| TodayPage | [lib/features/home/presentation/pages/today_page.dart:9](../../../lib/features/home/presentation/pages/today_page.dart) |
+| TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
 | EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:9](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:34](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:400](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
