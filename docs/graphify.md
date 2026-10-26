@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização em 26/10: cliente de nomes revisados
+
+100 arquivos Dart, 3.400 nós e 3.924 arestas; 11 alterados, 89 inalterados e nenhum removido. AST incremental e HTML exportado, sem clusterização, extração semântica ou LLM. Cinco ARB não interpretados. Backup em .local/graphify-backup-20261026-names-client. [Recibo](execucao/v1/frontend-food-names-verification.json). Go e SQL são documentados nos mapas e no Swagger; não foram indexados semanticamente por esta execução.
+
 ## Atualização26/10: formulários, privacidade e ajuda localizados
 
 100Dart,3346nós/3864arestas;14alterados/86inalterados/0removidos. ASTincremental code-only eHTML, semclusterização/semântica/LLM;5ARB não interpretados. Backup.local/graphify-backup-20261026-locale-write. [Recibo](execucao/v1/frontend-localization-write-verification.json).

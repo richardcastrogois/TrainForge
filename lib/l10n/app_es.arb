@@ -615,5 +615,12 @@
   "evaluationConditions": "Condiciones de esta evaluación",
   "evaluationConditionsHint": "La política de datos vigente viene de la API en Privacidad y datos. Faltan por definir las condiciones de producción y el canal de soporte; este texto no sustituye esos documentos. No hay prescripción, reconocimiento de alimentos por foto ni objetivos automáticos.",
   "browseLibrary": "Consultar biblioteca",
-  "browseFoods": "Consultar alimentos"
+  "browseFoods": "Consultar alimentos",
+  "searchFoodNames": "Buscar por nombre",
+  "reviewedNamesHint": "Busca el nombre original o un nombre/alias revisado en el idioma elegido. Sin revisión, se conserva el original.",
+  "reviewedFoodName": "Nombre revisado en este idioma",
+  "originalFoodName": "Nombre original",
+  "nameReviewSource": "Revisión y derechos del nombre",
+  "nameCatalogChanged": "Los nombres revisados han cambiado. Se descartó la página anterior; revisa la consulta actualizada.",
+  "foodNameFallback": "No hay un nombre revisado en este idioma. Se muestra el nombre original de la fuente."
 }

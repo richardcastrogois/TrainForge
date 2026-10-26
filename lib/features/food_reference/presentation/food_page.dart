@@ -27,6 +27,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
   late final FoodController controller;
   final search = TextEditingController();
   Timer? debounce;
+  String? contentLocale;
   @override
   void initState() {
     super.initState();
@@ -35,7 +36,16 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
         widget.controller ??
         FoodController(AppDependencyScope.read(context).createFoodRepository());
     search.text = controller.q;
-    controller.load();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final locale = foodContentLocale(context);
+    if (contentLocale == locale) return;
+    contentLocale = locale;
+    debounce?.cancel();
+    controller.load(locale: locale, q: search.text.trim());
   }
 
   @override
@@ -104,9 +114,13 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                         textInputAction: TextInputAction.search,
                         maxLength: 100,
                         decoration: InputDecoration(
-                          labelText: context.l10n.searchOriginal,
+                          labelText: controller.localizedNames
+                              ? context.l10n.searchFoodNames
+                              : context.l10n.searchOriginal,
                           hintText: context.l10n.foodPreparation,
-                          helperText: context.l10n.originalNamesHint,
+                          helperText: controller.localizedNames
+                              ? context.l10n.reviewedNamesHint
+                              : context.l10n.originalNamesHint,
                           helperMaxLines: 3,
                           suffixIcon: TextButton(
                             onPressed: () => submit(search.text),
@@ -122,6 +136,11 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                           );
                         },
                       ),
+                      if (controller.catalogChanged)
+                        Semantics(
+                          liveRegion: true,
+                          child: Text(context.l10n.nameCatalogChanged),
+                        ),
                       if (facets != null) ...[
                         SizedBox(height: 12),
                         Text(
@@ -236,7 +255,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Text(
-                                    food.displayName,
+                                    food.localizedName(context),
                                     style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w700,

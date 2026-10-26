@@ -104,12 +104,22 @@ def artifact_current():
 
 def api_ready():
     try:
+        expected=json.loads((ROOT/"contracts/generated/swagger-v1.json").read_text(encoding="utf-8"))["info"]["version"]
         with urlopen(BASE+"/api/v1/health/ready",timeout=2) as response:
             if response.status!=200:return False
         with urlopen(BASE+"/docs/doc.json",timeout=2) as response:
             specification=json.load(response)
-        return specification.get("info",{}).get("title")=="TrainForge API"
-    except (OSError,URLError,ValueError):return False
+        info=specification.get("info",{})
+        if info.get("title")!="TrainForge API" or info.get("version")!=expected:return False
+        # The APK uses the optional locale contract. A ping alone cannot prove
+        # that the matching name-catalog migrations/permissions are available.
+        with urlopen(BASE+"/api/v1/foods?limit=1&locale=pt-BR",timeout=2) as response:
+            if response.status!=200:return False
+            page=json.load(response)
+        catalog=page.get("nameCatalog",{})
+        return catalog.get("locale")=="pt-BR" and isinstance(catalog.get("version"),str)
+    except (OSError,URLError,ValueError,KeyError,TypeError,AttributeError):return False
+
 
 def port_occupied():
     import socket
@@ -160,7 +170,7 @@ def start(tooling,serial=None):
     state["databaseStartedHere"]=state.get("databaseStartedHere",False) or not was_running
     save_state(state)
     if not api_ready():
-        if port_occupied():raise RuntimeError("Porta8082 ocupada por API indisponível/desconhecida; não foi encerrada")
+        if port_occupied():raise RuntimeError("Porta8082 ocupada por API indisponível/incompatível/desconhecida; não foi encerrada")
         stop=STATE_DIR/("api-stop-"+os.urandom(8).hex()+".flag")
         state["apiStopFile"]=str(stop)
         save_state(state)

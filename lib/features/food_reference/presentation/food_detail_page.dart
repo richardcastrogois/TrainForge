@@ -23,15 +23,30 @@ class FoodDetailPage extends StatefulWidget {
 class _FoodDetailPageState extends State<FoodDetailPage>
     with WidgetsBindingObserver {
   late Future<FoodDetailData> result;
+  String? contentLocale;
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final locale = foodContentLocale(context);
+    if (contentLocale == locale) return;
+    contentLocale = locale;
     reload();
   }
 
   void reload() {
-    result = widget.repository.detail(widget.food);
+    final repository = widget.repository;
+    result = repository is LocalizedFoodRepository
+        ? (repository as LocalizedFoodRepository).localizedDetail(
+            widget.food,
+            locale: contentLocale!,
+          )
+        : repository.detail(widget.food);
   }
 
   @override
@@ -80,6 +95,9 @@ class _FoodDetailPageState extends State<FoodDetailPage>
             );
           }
           final data = snapshot.data!, food = data.food, source = food.source;
+          final reviewed = food.reviewedName;
+          final usesReviewed =
+              reviewed != null && reviewed.locale == foodContentLocale(context);
           return ListView.builder(
             padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
             itemCount: data.nutrients.length + 1,
@@ -93,9 +111,32 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                       subtitle: context.l10n.originalFoodVersion,
                     ),
                     Text(
-                      food.displayName,
+                      food.localizedName(context),
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
+
+                    if (usesReviewed) ...[
+                      const SizedBox(height: 8),
+                      Text(context.l10n.reviewedFoodName),
+                      Text(
+                        '${context.l10n.originalFoodName}: ${food.displayName}',
+                      ),
+                      ExpansionTile(
+                        tilePadding: EdgeInsets.zero,
+                        title: Text(context.l10n.nameReviewSource),
+                        children: [
+                          SelectableText(reviewed.attribution),
+                          Text(reviewed.license),
+                          SelectableText(reviewed.licenseUrl),
+                          SelectableText(
+                            '${context.l10n.version}: ${reviewed.versionId}',
+                          ),
+                        ],
+                      ),
+                    ] else if (food.sourceId != 'personal') ...[
+                      const SizedBox(height: 8),
+                      Text(context.l10n.foodNameFallback),
+                    ],
                     const SizedBox(height: 8),
                     Text(
                       '${food.localizedLanguage(context)} · ${food.localizedBasis(context)}',

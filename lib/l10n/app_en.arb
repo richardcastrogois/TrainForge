@@ -615,5 +615,12 @@
   "evaluationConditions": "Evaluation conditions",
   "evaluationConditionsHint": "The effective data policy comes from the API under Privacy and data. Production terms and a support channel still need to be defined; this text does not replace those documents. There is no prescription, food recognition by photo or automatic target.",
   "browseLibrary": "Browse library",
-  "browseFoods": "Browse foods"
+  "browseFoods": "Browse foods",
+  "searchFoodNames": "Search by name",
+  "reviewedNamesHint": "Search the original name or a reviewed name/alias in the selected language. Without review, the original name stays.",
+  "reviewedFoodName": "Reviewed name in this language",
+  "originalFoodName": "Original name",
+  "nameReviewSource": "Name review and rights",
+  "nameCatalogChanged": "The reviewed names changed. The previous page was discarded; check the refreshed query.",
+  "foodNameFallback": "No reviewed name in this language. The original source name is shown."
 }

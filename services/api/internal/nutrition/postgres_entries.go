@@ -53,7 +53,7 @@ func (s NutritionStore) begin(ctx context.Context, p auth.Principal, write bool)
 	return tx, nil
 }
 func ownFood(id string, in OwnFoodInput) FoodDetail {
-	food := FoodDetail{FoodSummary: FoodSummary{ID: id, Name: in.Name, Locale: "pt", Basis: in.Basis, SourceID: "personal", SourceVersion: "user-declaration-v1", Source: Citation{Name: "Informado por você", Publisher: "Titular", Attribution: "Declaração particular, sem revisão editorial ou clínica.", Conditions: []string{}}}, Nutrients: []FoodCell{}, Notice: "Alimento particular; composição declarada pelo titular. Ausências permanecem desconhecidas."}
+	food := FoodDetail{FoodSummary: FoodSummary{ID: id, Name: in.Name, Locale: "und", Basis: in.Basis, SourceID: "personal", SourceVersion: "user-declaration-v1", Source: Citation{Name: "Informado por você", Publisher: "Titular", Attribution: "Declaração particular, sem revisão editorial ou clínica.", Conditions: []string{}}}, Nutrients: []FoodCell{}, Notice: "Alimento particular; composição declarada pelo titular. Ausências permanecem desconhecidas."}
 	for i, n := range in.Nutrients {
 		state, raw := "missing", ""
 		if n.Value != nil {
@@ -68,7 +68,7 @@ func ownFood(id string, in OwnFoodInput) FoodDetail {
 	return food
 }
 
-const ownProjection = `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId','personal','sourceFoodId','','sourcePublishedVersion','user-declaration-v1','nameOriginal',v.name_original,'nameLocale','pt','basis',jsonb_build_object('quantity',v.basis_quantity::text,'unit',v.basis_unit),'source',v.provenance->'source','nutrients',v.nutrients,'notice','Alimento particular; declaração do titular, sem revisão editorial ou clínica.')`
+const ownProjection = `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId','personal','sourceFoodId','','sourcePublishedVersion','user-declaration-v1','nameOriginal',v.name_original,'nameLocale','und','basis',jsonb_build_object('quantity',v.basis_quantity::text,'unit',v.basis_unit),'source',v.provenance->'source','nutrients',v.nutrients,'notice','Alimento particular; declaração do titular, sem revisão editorial ou clínica.')`
 
 func selectedFood(ctx context.Context, tx pgx.Tx, p auth.Principal, id, version string) (FoodDetail, string, error) {
 	var raw []byte

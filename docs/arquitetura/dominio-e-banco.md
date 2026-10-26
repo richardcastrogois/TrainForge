@@ -1,6 +1,6 @@
 # Domínio e banco — modelo e implementação inicial
 
-As migrations00001–00008 em `services/api/migrations` foram aplicadas no banco isolado `trainforge_v1_dev` (23tabelas). As00009/00010 foram validadas somente em banco descartável, ainda não aplicadas à base entregue. O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
+Migrations00001–00011 aplicadas ao banco isolado `trainforge_v1_dev` (26tabelas).9–11 foram autorizadas explicitamente pelo autor e testadas primeiro emdescartável. Comparação antes/depois preservou dados deusuário,consumo,sessões e alimentos. [Ativação](../execucao/v1/food-names-local-activation.json). O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -143,7 +143,7 @@ Configuração047 seguirá etapas curtas por assunto e revisão final, com o mes
 
 ## Nomes alimentares revisados — fundação048,26/10
 
-A migration00009 adiciona duas tabelas editoriais separadas. Foi aplicada apenas em banco descartável; a base entregue continua com23tabelas. [Evidência](../execucao/v1/food-names-foundation-verification.json).
+A migration00009 adiciona duas tabelas editoriais separadas. Depois da validação emdescartável,9–11foram aplicadas àbase local comautorização;26tabelas e dados preservados. [Evidência](../execucao/v1/food-names-foundation-verification.json).
 
 | Tabela | Guarda | Relação e permissão |
 |---|---|---|
@@ -152,6 +152,9 @@ A migration00009 adiciona duas tabelas editoriais separadas. Foi aplicada apenas
 
 O original, a composição, os hashes importados e os consumos não são atualizados. Nomes particulares não entram nessa camada pública. O modeloGo eSQL rejeita identidades privadas, locale fora de pt-BR/pt-PT/en/es e publicação sem campos/evidências exigidos; validaçãoGo rejeita aindaJSONambíguo, campos extras, aliases duplicados e controles invisíveis. A persistência exige bytes de evidência com hashes iguais aos registrados e repete sem duplicar a mesma versão.
 
-**Hash e booleano não comprovam autoria humana nem validade de licença.** Falta a ferramenta operacional com verificação humana autorizada e vínculo entre decisão e artefatos. Não há endpoint público de publicação, nem publicação automática, tradução real ou importação desta camada na base entregue. Sem evidência humana apropriada, manter0nomes publicados.
+**Hash e booleano não comprovam autoria humana nem validade de licença.** Falta a ferramenta operacional com verificação humana autorizada e vínculo entre decisão e artefatos. Não há endpoint público de publicação, nem publicação automática, tradução real ou tradução real importada na base entregue. Sem evidência humana apropriada, manter0nomes publicados.
 
-LeituraGo0.6.0 agora escolhe a versão do nome antes de considerar retirada, sem reviver tradução anterior. Contrato aditivo de locale/revisão, busca por nome/alias mantendofoodId efoodVersion e cursor/ETag foram validados noSQLdescartável.00010adicionafood_name_catalogs:4linhas de metadados poridioma, revisãoBIGINTincrementada atomicamente por publicação/retirada, sem nomes semeados. Repetição idempotente não altera a revisão. Ainda faltam apresentação/cacheFlutter, publicação operacional e cobertura editorial. [Contrato](contratos-v1.md). O modelo não implica abrangência global de alimentos nem aprovação clínica.
+LeituraGo0.6.0 agora escolhe a versão do nome antes de considerar retirada, sem reviver tradução anterior. Contrato aditivo de locale/revisão, busca por nome/alias mantendofoodId efoodVersion e cursor/ETag foram validados noSQLdescartável.00010adicionafood_name_catalogs:4linhas de metadados poridioma, revisãoBIGINTincrementada atomicamente por publicação/retirada, sem nomes semeados. Repetição idempotente não altera a revisão. Flutter agora integra apresentação/cache de consulta/409. Ainda faltam publicação operacional, cobertura editorial eaceites. [Contrato](contratos-v1.md). O modelo não implica abrangência global de alimentos nem aprovação clínica.
+
+
+A00011não adiciona tabela nem reescreve linhas. Preserva o controle por conta/sessão dafunção privada e grava idioma do nome comound(não declarado). A projeção deixa de repetir a antiga suposição automática de português; os registros/snapshots antigos permanecem paraauditoria.

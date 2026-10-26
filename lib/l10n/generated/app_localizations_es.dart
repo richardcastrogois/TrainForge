@@ -1663,4 +1663,28 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get browseFoods => 'Consultar alimentos';
+
+  @override
+  String get searchFoodNames => 'Buscar por nombre';
+
+  @override
+  String get reviewedNamesHint =>
+      'Busca el nombre original o un nombre/alias revisado en el idioma elegido. Sin revisión, se conserva el original.';
+
+  @override
+  String get reviewedFoodName => 'Nombre revisado en este idioma';
+
+  @override
+  String get originalFoodName => 'Nombre original';
+
+  @override
+  String get nameReviewSource => 'Revisión y derechos del nombre';
+
+  @override
+  String get nameCatalogChanged =>
+      'Los nombres revisados han cambiado. Se descartó la página anterior; revisa la consulta actualizada.';
+
+  @override
+  String get foodNameFallback =>
+      'No hay un nombre revisado en este idioma. Se muestra el nombre original de la fuente.';
 }

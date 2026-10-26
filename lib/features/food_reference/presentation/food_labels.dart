@@ -1,8 +1,15 @@
+import 'package:trainforge/core/l10n/locale_controller.dart';
 import 'package:flutter/widgets.dart';
 import '../../../core/l10n/localized_context.dart';
 import '../domain/food_reference.dart';
 
+String foodContentLocale(BuildContext context) => resolveAppLocale([
+  Localizations.maybeLocaleOf(context) ?? const Locale('pt', 'BR'),
+], supportedAppLocales).toLanguageTag();
+
 extension FoodReferenceLabels on FoodReference {
+  String localizedName(BuildContext context) =>
+      displayNameFor(foodContentLocale(context));
   String localizedBasis(BuildContext context) =>
       basisQuantity == null || basisUnit == null
       ? context.l10n.basisUnknown
@@ -11,6 +18,7 @@ extension FoodReferenceLabels on FoodReference {
           basisUnit!,
         );
   String localizedLanguage(BuildContext context) => switch (locale) {
+    'und' => context.l10n.languageNotProvided,
     'fr' => context.l10n.languageFrench,
     'en' => context.l10n.languageEnglish,
     _ => locale,

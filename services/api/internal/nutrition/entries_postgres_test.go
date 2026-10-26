@@ -93,6 +93,13 @@ func TestNutritionPostgresLifecycle(t *testing.T) {
 	if json.Unmarshal(raw, &food) != nil {
 		t.Fatal("food JSON")
 	}
+	if food.Locale != "und" || food.Name != input.Name {
+		t.Fatal("private name language was inferred")
+	}
+	var storedLocale string
+	if writer.QueryRow(ctx, "SELECT name_locale FROM trainforge_v1.food_versions WHERE food_id=$1 AND owner_id=$2", food.ID, pa.User.ID).Scan(&storedLocale) != nil || storedLocale != "und" {
+		t.Fatal("private source language not preserved as unknown")
+	}
 	if code, replay := request("POST", "/api/v1/me/foods", sa.AccessToken, key, input); code != 201 || !sameJSON(replay, raw) {
 		t.Fatal("creation replay")
 	}

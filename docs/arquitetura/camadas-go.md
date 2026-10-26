@@ -1,6 +1,6 @@
 # Camadas e responsabilidades do backend Go
 
-Conferida em **24/10/2026**: fundação, auth, catálogoHTTP, importação/consulta alimentar, cadastro particular, consumo/revisões/subtotais e privacidade implementados localmente na API0.5.1/25operações; adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (`auth`, `catalog`, `activity`, `nutrition`, `privacy`), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo; não são serviços de rede separados.
+Conferida em **26/10/2026**: fundação, autenticação, catálogo HTTP, importação e consulta alimentar, cadastro particular, consumo/revisões/subtotais, privacidade e leitura de nomes revisados implementados na API **0.6.1 / 25 operações**. Base local em schema 11 / 26 tabelas. Publicação editorial operacional, adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (auth, catalog, activity, nutrition, privacy), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo, sem chamadas de rede entre elas.
 
 ```mermaid
 flowchart LR
@@ -43,6 +43,12 @@ services/api/                     # auth/catálogo/registro alimentar/privacidad
 ```
 
 O esquema ilustra nomes e fronteiras; arquivos separados só quando houver responsabilidade real. Interfaces ficam próximas do consumidor; composição manual em `cmd`, antes de escolher container de injeção. Uma regra pequena não precisa virar uma interface e três adapters. Módulos não acessam tabelas privadas de outro por conveniência; operações cruzadas têm responsabilidade explícita.
+
+## Fronteira dos nomes revisados
+
+O contrato editorial e a validação ficam em names.go; a escrita transacional restrita ao operador em names_postgres.go; a resolução em lote e a projeção pública em names_read.go/names_localized.go. O runtime recebe somente leitura das tabelas editoriais. Hashes vinculam os documentos de revisão e direitos, mas não provam a identidade humana nem a validade jurídica: a publicação continua dependendo dessa verificação. Flutter usa um contrato tipado opcional separado do repositório original; IDs, versões, base e nutrientes não são reescritos para traduzir.
+
+A migration 00011 corrige somente o idioma de novos nomes particulares sem declaração explícita para und. A função mantém autorização, locks e limites; registros históricos não são reescritos.
 
 ## Capacidade: critérios que vão além das camadas
 

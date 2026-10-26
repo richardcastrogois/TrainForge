@@ -2,6 +2,12 @@
 
 Implementação em23/10/2026: Go0.5.1,25operações noSwagger e Flutter0.1.5+8. V1-020 **done no recorte funcional**: titular criou um consumo, mostrou confirmação/histórico e confirmou que a quantidade era real. [AceiteAndroid](nutrition-real-android-verification.json). Fixtures SQL/HTTP não são consumo humano nem novo teste de loginGoogle. V1-025 tem preparação entregue neste incremento, sem concluir integraçãoHoje/dependência021.
 
+## Atualização de 26/10 — idioma sem alterar consumo
+
+Go 0.6.1 e cliente Flutter 0.3.3+16 preparado. Interface dos fluxos disponíveis em quatro idiomas; nomes públicos revisados usam a identidade e versão exatas, conservando o original nos detalhes. Zero nomes revisados publicados. O payload de consumo, a chave idempotente e o cálculo permanecem inalterados. Nomes particulares não são traduzidos. Como o cadastro não pergunta idioma, novas declarações passam a usar und; a migration 00011 não reescreve linhas nem snapshots antigos. [SQL descartável](nutrition-locale-verification.json) e [ativação local autorizada](food-names-local-activation.json).
+
+O consumo humano real de 23/10 permanece preservado; estes testes técnicos não são um novo aceite humano. APK não instalado, sem ADB conectado.
+
 ## Fluxo disponível
 
 Após login: **Minha alimentação e consumo**. AbaConsumo permite pesquisar nas6369referências existentes, conferir o detalhe/fonte/versão, escolher a versão e informar quantidade, g/ml, preparo observado, data/hora e se a quantidade foi medida ou estimada. O envio explícito confirma o lançamento. Cadastro e histórico começam vazios; não há refeições predefinidas.

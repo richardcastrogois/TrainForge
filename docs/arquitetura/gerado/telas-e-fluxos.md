@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1c5ce9f591598d96`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0e61188c19be9ed5`.
 
 ## Atual: referências entre widgets
 
@@ -99,7 +99,7 @@ flowchart LR
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
 | EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:11](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:37](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:418](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:423](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:16](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
@@ -124,7 +124,7 @@ flowchart LR
 | auth | `POST /api/v1/auth/google`; `GET /api/v1/me`; `POST /api/v1/auth/logout` |
 | bootstrap | `GET /mobile/bootstrap` |
 | catalog | `GET /api/v1/catalog/${filters.kind}`; `GET /api/v1/catalog/filters`; `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` |
-| food_reference | `GET /api/v1/foods`; `GET /api/v1/foods/filters`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` |
+| food_reference | `GET /api/v1/foods`; `GET /api/v1/foods/filters`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}`; `GET /api/v1/foods`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` |
 | home | `GET /mobile/home/$date` |
 | onboarding | `POST /mobile/onboarding/manual-plan`; `POST /mobile/onboarding/ai-plan` |
 | privacy | `GET /api/v1/privacy`; `GET /api/v1/me/export`; `POST /api/v1/me/deletion-intent`; `DELETE /api/v1/me` |

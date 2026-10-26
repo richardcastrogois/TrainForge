@@ -1,8 +1,10 @@
 # Frontend — referências, estado e checkpoints
 
-## Localização26/10 — interface disponível, ainda sem fechamento048
+## Localização em 26/10 — interface e cliente integrados, V1-048 aberta
 
-486mensagens poridioma em pt-BR/pt-PT/en/es, incluindo formulários/histórico/correção/exclusão, rascunhos, controles deprivacidade eajuda.153testesFlutter/analyze0issues;320px/fonte200% nosquatro idiomas, troca deidioma durante envio incerto sem alterar corpo/chave. Medida/estimativa emduas opções visíveis:correção delayout domenu inglês ampliado. Política daAPI, exportação efrase canônica preservadas eidentificadas; fontes alimentares permanecem originais. [Recibo](frontend-localization-write-verification.json). Nomes/aliases revisados eaceiteAndroid/iOS ainda pendentes; não é igualdade visual anósFigma nãoobtidos.
+493 mensagens por idioma em pt-BR, pt-PT, inglês e espanhol, incluindo os fluxos disponíveis de consulta, escrita alimentar, histórico, privacidade e ajuda. Cliente integrado a Go 0.6.1: nomes revisados por localidade exata, identidade e versão; original e fonte acessíveis, fallback explícito. Troca de idioma preserva busca digitada e descarta respostas antigas; mudança da revisão reinicia a paginação sem misturar resultados. Nenhum nome real revisado foi publicado.
+
+164 testes Flutter aprovados e análise sem problemas; quatro idiomas em 320 px com texto a 200%, incluindo seleção com ID/versão originais. [Recibo](frontend-food-names-verification.json). APK debug 0.3.3+16 preparado e assinado, ainda não instalado: não há dispositivo ADB conectado. [Checkpoint](android-food-names-checkpoint.json). Base local atualizada com autorização: schema 11 / 26 tabelas; conta, consumo e 6.369 versões preservados. Faltam publicação operacional humana, cobertura editorial e aceites nativos. Isso não comprova igualdade a nós Figma sem referência obtida.
 
 
 Fonte única atualizada em **26/10/2026**. [Trilha por área](trilha-implementacao.md) orienta o próximo trabalho; [auditoria](auditoria-produto-2026-10-24.md) registra o baseline. Os antigos relatos 01–06, dark/rolagem e 07–12 foram consolidados aqui. O Git mantém os textos históricos completos; os recibos originais permanecem no repositório.
@@ -11,9 +13,9 @@ Fonte única atualizada em **26/10/2026**. [Trilha por área](trilha-implementac
 
 Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-045/046); após pesquisa, aprovou também recuperar imagens pela conta com cache no celular. Q3 confirmou configuração completa antes da busca, trocas compatíveis/dias/horários e retomada ou parcial (047/015/044/017/023). Q4 confirmou apagar foto com a refeição e registrar offline/sincronizar depois;026/042/045 ainda precisam de fila durável privada, estados e exclusão coordenada. Q5 confirmou configuração em etapas curtas/revisão final e nomes traduzidos quando revisados, com original/fonte nos detalhes e fallback original (047/048). Nenhuma dessas capacidades foi implementada por alterar o escopo.
 
-APK Android **debug 0.3.0+13**, API Go **0.5.1 / 25 operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
+Último APK instalado registrado: **debug 0.3.0+13**. Novo **0.3.3+16 preparado**, sem instalação; API Go **0.6.1 / 25 operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
 
-Faltam configuração completa persistida (047), treino/agenda/execução com trocas compatíveis e retomada/parcial, contexto de pausa do cuidador, captura/reconhecimento por foto, refeições/itens e o conjunto histórico visual/análise/dicas revisadas, localização completa pt-BR/pt-PT/en/es e camada de nomes revisados (048), além de validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
+Faltam configuração completa persistida (047), treino/agenda/execução com trocas compatíveis e retomada/parcial, contexto de pausa do cuidador, captura/reconhecimento por foto, refeições/itens e o conjunto histórico visual/análise/dicas revisadas, cobertura editorial e aceites da localização pt-BR/pt-PT/en/es e dos nomes revisados (048), além de validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
 
 | Ponto | Implementado | Falta para o aceite integral |
 |---|---|---|

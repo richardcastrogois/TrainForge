@@ -1,3 +1,62 @@
+const foodNameLocales = {'pt-BR', 'pt-PT', 'en', 'es'};
+final _foodNameHash = RegExp(r'^[a-f0-9]{64}$');
+
+class FoodNameCatalog {
+  final String locale, version;
+  FoodNameCatalog.fromJson(Map<String, dynamic> json)
+    : locale = json['locale'] as String,
+      version = json['version'] as String {
+    if (!foodNameLocales.contains(locale) ||
+        !RegExp(r'^(0|[1-9][0-9]{0,18})$').hasMatch(version) ||
+        BigInt.parse(version) > BigInt.parse('9223372036854775807')) {
+      throw const FormatException('Invalid food name catalog');
+    }
+  }
+}
+
+class ReviewedFoodName {
+  final String name,
+      locale,
+      versionId,
+      attribution,
+      license,
+      licenseUrl,
+      reviewEvidence,
+      rightsEvidence;
+  ReviewedFoodName.fromJson(Map<String, dynamic> json)
+    : name = json['name'] as String,
+      locale = json['locale'] as String,
+      versionId = json['versionId'] as String,
+      attribution = json['attribution'] as String,
+      license = json['licenseLabel'] as String,
+      licenseUrl = json['licenseUrl'] as String,
+      reviewEvidence = json['reviewEvidenceSha256'] as String,
+      rightsEvidence = json['rightsEvidenceSha256'] as String {
+    final uri = Uri.tryParse(licenseUrl);
+    if (name.trim().isEmpty ||
+        RegExp(
+          r'[\u0000-\u001F\u007F-\u009F\u200B-\u200F\u202A-\u202E\u2060-\u206F\uFEFF\uFFFD]',
+        ).hasMatch(name) ||
+        name.runes.length > 360 ||
+        !foodNameLocales.contains(locale) ||
+        !_foodNameHash.hasMatch(versionId) ||
+        !_foodNameHash.hasMatch(reviewEvidence) ||
+        !_foodNameHash.hasMatch(rightsEvidence) ||
+        attribution.trim().isEmpty ||
+        license.trim().isEmpty ||
+        uri == null ||
+        uri.scheme != 'https' ||
+        uri.host.isEmpty ||
+        uri.userInfo.isNotEmpty) {
+      throw const FormatException('Invalid reviewed food name');
+    }
+  }
+}
+
+class FoodNameCatalogChanged implements Exception {
+  const FoodNameCatalogChanged();
+}
+
 class FoodSource {
   final String name,
       publisher,
@@ -22,6 +81,19 @@ class FoodSource {
       conditions = List<String>.from(j['conditions'] as List);
 }
 
+ReviewedFoodName? _reviewedName(Map<String, dynamic> json) {
+  if (json['reviewedName'] == null || json['sourceId'] == 'personal') {
+    return null;
+  }
+  if (!RegExp(r'^food:[a-f0-9]{64}$').hasMatch(json['id'] as String) ||
+      !_foodNameHash.hasMatch(json['versionId'] as String)) {
+    throw const FormatException('Reviewed name identity unavailable');
+  }
+  return ReviewedFoodName.fromJson(
+    Map<String, dynamic>.from(json['reviewedName'] as Map),
+  );
+}
+
 class FoodReference {
   final String id,
       versionId,
@@ -32,6 +104,7 @@ class FoodReference {
       locale;
   final String? basisQuantity, basisUnit;
   final FoodSource source;
+  final ReviewedFoodName? reviewedName;
   FoodReference.fromJson(Map<String, dynamic> j)
     : id = j['id'] as String,
       versionId = j['versionId'] as String,
@@ -40,11 +113,18 @@ class FoodReference {
       sourceVersion = j['sourcePublishedVersion'] as String,
       name = j['nameOriginal'] as String,
       locale = j['nameLocale'] as String,
+      reviewedName = _reviewedName(j),
       basisQuantity = (j['basis'] as Map)['quantity'] as String?,
       basisUnit = (j['basis'] as Map)['unit'] as String?,
       source = FoodSource.fromJson(
         Map<String, dynamic>.from(j['source'] as Map),
       );
+
+  /// Presentation only; IDs, original name and source composition stay unchanged.
+  String displayNameFor(String language) =>
+      (reviewedName?.locale == language ? reviewedName!.name : name)
+          .replaceAll(RegExp(r'\s+'), ' ')
+          .trim();
   String get displayName => name.replaceAll(RegExp(r'\s+'), ' ').trim();
   String get basisLabel => basisQuantity == null || basisUnit == null
       ? 'Base de composição desconhecida'
@@ -105,9 +185,15 @@ class FoodDetailData {
   final FoodReference food;
   final List<FoodNutrient> nutrients;
   final String notice;
+  final FoodNameCatalog? nameCatalog;
   FoodDetailData.fromJson(Map<String, dynamic> j)
     : food = FoodReference.fromJson(j),
       notice = j['notice'] as String,
+      nameCatalog = j['nameCatalog'] == null
+          ? null
+          : FoodNameCatalog.fromJson(
+              Map<String, dynamic>.from(j['nameCatalog'] as Map),
+            ),
       nutrients = (j['nutrients'] as List)
           .map(
             (v) => FoodNutrient.fromJson(Map<String, dynamic>.from(v as Map)),
@@ -118,13 +204,19 @@ class FoodDetailData {
 class FoodPageData {
   final List<FoodReference> items;
   final String? nextCursor;
+  final FoodNameCatalog? nameCatalog;
   FoodPageData.fromJson(Map<String, dynamic> j)
     : items = (j['items'] as List)
           .map(
             (v) => FoodReference.fromJson(Map<String, dynamic>.from(v as Map)),
           )
           .toList(),
-      nextCursor = j['nextCursor'] as String?;
+      nextCursor = j['nextCursor'] as String?,
+      nameCatalog = j['nameCatalog'] == null
+          ? null
+          : FoodNameCatalog.fromJson(
+              Map<String, dynamic>.from(j['nameCatalog'] as Map),
+            );
 }
 
 class FoodSourceCount {
@@ -158,4 +250,20 @@ abstract interface class FoodRepository {
   });
   Future<FoodFacets> facets();
   Future<FoodDetailData> detail(FoodReference food);
+}
+
+/// Optional capability for the additive Go0.6.0 contract. Legacy adapters can
+/// still serve original-only content without accepting extra query parameters.
+abstract interface class LocalizedFoodRepository {
+  Future<FoodPageData> localizedList({
+    required String locale,
+    String q = '',
+    String sourceId = '',
+    String? cursor,
+    String? namesVersion,
+  });
+  Future<FoodDetailData> localizedDetail(
+    FoodReference food, {
+    required String locale,
+  });
 }

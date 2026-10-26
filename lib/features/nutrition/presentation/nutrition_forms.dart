@@ -182,7 +182,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                   title: widget.entry == null
                       ? context.l10n.portionYours
                       : context.l10n.correctIntake,
-                  subtitle: widget.food.displayName,
+                  subtitle: widget.food.localizedName(context),
                 ),
                 FigmaSection(
                   color: context.tf.accent,
@@ -316,6 +316,11 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         ),
                       ),
                       SizedBox(height: 4),
+                      if (widget.food.reviewedName?.locale ==
+                          foodContentLocale(context))
+                        Text(
+                          '${context.l10n.originalFoodName}: ${widget.food.displayName}',
+                        ),
                       Text(
                         widget.food.localizedBasis(context),
                         style: TextStyle(

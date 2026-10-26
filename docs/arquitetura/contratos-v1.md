@@ -1,10 +1,10 @@
 # Contratos da V1 — implementado e planejado
 
-**CódigoGo0.6.0/25operações**:saúde,sessão,catálogo,referências alimentares,privacidade ealimentação particular. Leitura opcional poridioma/revisão foi validada emSQL/HTTPdescartável. Últimoambiente humano:Go0.5.1/migration8;GoogleAndroiddebug,privacidade econsumo real já confirmados.00009/10nãoaplicadas àbase entregue;Flutter ainda semnomes revisados. Demais rotas propostas continuam futuras. [Registro alimentar](../execucao/v1/alimentacao-registro.md), [auth](../execucao/v1/auth-local-fechamento.md).
+**CódigoGo0.6.1/25operações**, clienteFlutter integrado e schema11/26tabelas locais. Migrations9–11 autorizadas pelo autor e aplicadas após SQLdescartável. LeituraHTTP com a base real passou nos4idiomas; conta,consumo,sessões e6369versões preservados. APK0.3.3+16 preparado,sem instalação. Publicação humana de nomes/cobertura eaceites continuam pendentes. [Integração](../execucao/v1/frontend-food-names-verification.json),[ativação local](../execucao/v1/food-names-local-activation.json).
 
 ## Leitura de nomes048 — códigoGo0.6.0,26/10
 
-Continuam25operações. GET /api/v1/foods e GET /api/v1/foods/{id} ganharam parâmetros opcionais, documentados no [Swagger gerado](../../contracts/generated/swagger-v1.json). Validados porSQL/HTTP em banco descartável; migrations00009/00010 ainda não aplicadas à base entregue. O Flutter/APK15 continua no contrato original até a integração cliente. [Recibo](../execucao/v1/food-names-read-verification.json).
+Continuam25operações. GET /api/v1/foods e GET /api/v1/foods/{id} ganharam parâmetros opcionais, documentados no [Swagger gerado](../../contracts/generated/swagger-v1.json). Validados porSQL/HTTP emdescartável e depois porleitura na base real. Migrations9–11 aplicadas comautorização explícita,cliente integrado eAPK16 preparado. [Recibo](../execucao/v1/food-names-read-verification.json).
 
 | Elemento | Contrato |
 |---|---|
@@ -28,4 +28,7 @@ flowchart LR
     result --> cache["Cursor e ETag por idioma e revisão"]
 ```
 
-Ainda faltam publicação operacional com comprovação humana/direitos, cobertura editorial real e integraçãoFlutter(invalidação de consultas/cache ao trocar idioma ou receber409). Nenhumnome foi publicado; fixtures só noSQLdescartável. Aplicar9/10egrants na base entregue apenas no incremento de integração, preservando os registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
+Flutter já invalida consulta/cursor ao trocar idioma e reinicia uma vez após409, preservando busca digitada,identidade eoriginal. Ainda faltam publicação operacional com comprovação humana/direitos,cobertura editorial eaceites.0nomes publicados; fixtures só nostestes.9–11egrants foram aplicados comautorização, sem mudar registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
+
+
+00011:OwnFoodInput não recebe idioma do nome. Novas declarações e projeção privada usamund(não informado), preservando nomes e linhas antigas em vez de assumir português ou oidioma daUI. Autorização/idempotência originais dafunção foram preservadas e testadas emSQLdescartável.

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "story": "V1-048",
+  "status": "partial",
+  "sourceBaseCommit": "bf52c14",
+  "resourceMessagesPerLocale": 493,
+  "scope": "Flutter integrado à leitura de nomes revisados; preservação de rascunho/busca/identidade e atualização local autorizada.",
+  "checks": [
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 164
+    },
+    {
+      "command": "flutter test --no-pub test/food_names_client_test.dart --reporter expanded",
+      "result": "passed",
+      "passed": 11
+    },
+    {
+      "command": "go test ./... -count=1",
+      "result": "passed",
+      "sqlNote": "default integrations skipped; dedicated SQL/HTTP runs recorded separately"
+    },
+    {
+      "command": "go vet ./...",
+      "result": "passed"
+    }
+  ],
+  "behavior": [
+    "Tag canônica pt-BR/pt-PT/en/es noHTTP; região não é inferida por intl.localeName.",
+    "Nome revisado somente no idioma exato, original/fonte/licença acessíveis; campos originais e corpo do consumo não são reescritos.",
+    "Respostas atrasadas do idioma anterior são descartadas. Texto de busca ainda no debounce é preservado ao trocar idioma.",
+    "Cursor/revisão antigos são descartados e a consulta reinicia uma vez após409food_name_catalog_changed; não mistura gerações.",
+    "Modelo/adaptador recusam revisão malformada, versão fora do limite e identidade/idioma divergentes; cadastro particular mantém nome original.",
+    "Idioma particular não declarado agora éund(não informado), sem assumirportuguês.00011 preserva registros antigos."
+  ],
+  "evidence": [
+    "test/food_names_client_test.dart",
+    "docs/execucao/v1/food-names-local-activation.json",
+    "docs/execucao/v1/nutrition-locale-verification.json",
+    "docs/execucao/v1/android-food-names-checkpoint.json"
+  ],
+  "actualData": {
+    "schema": 11,
+    "tables": 26,
+    "api": "0.6.1",
+    "accounts": 1,
+    "consumptionEntries": 1,
+    "foodVersions": 6369,
+    "unchanged": true,
+    "reviewedNamesPublished": 0,
+    "publicReadFourLocales": true,
+    "GoogleLoginRetested": false
+  },
+  "apk": {
+    "version": "0.3.3+16",
+    "installed": false,
+    "receipt": "docs/execucao/v1/android-food-names-checkpoint.json"
+  },
+  "graph": {
+    "dartFiles": 100,
+    "nodes": 3400,
+    "edges": 3924,
+    "changed": 11,
+    "unchanged": 89,
+    "deleted": 0,
+    "mode": "AST code-only/HTML; no clustering,semantic indexing orLLM;5ARB skipped"
+  },
+  "limits": [
+    "048doing:publicação operacional com autoria/revisão/direitos verificáveis,cobertura editorial eaceites nativos ainda faltam.",
+    "0nomes revisados emdados reais:4idiomas daUI não equivalem a traduzir6369alimentos. Fallback original validado emHTTP comdados reais; nomes fictícios apenas nostestes isolados.",
+    "Nenhum dispositivo ADB conectado;APK preparado,não instalado;164testes não substituem aceiteAndroid/iOS.",
+    "API temporária ecluster inicialmente parado foram encerrados;dados/credenciais preservados. Semhosting,deployment,compra ou novoGoogle."
+  ],
+  "documentation": {
+    "reproducibleGeneration": true,
+    "testsPassed": 13,
+    "swaggerMatchesGo": true,
+    "androidHelperTestsPassed": 9
+  }
+}

@@ -3017,6 +3017,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Browse foods'**
   String get browseFoods;
+
+  /// No description provided for @searchFoodNames.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name'**
+  String get searchFoodNames;
+
+  /// No description provided for @reviewedNamesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search the original name or a reviewed name/alias in the selected language. Without review, the original name stays.'**
+  String get reviewedNamesHint;
+
+  /// No description provided for @reviewedFoodName.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed name in this language'**
+  String get reviewedFoodName;
+
+  /// No description provided for @originalFoodName.
+  ///
+  /// In en, this message translates to:
+  /// **'Original name'**
+  String get originalFoodName;
+
+  /// No description provided for @nameReviewSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Name review and rights'**
+  String get nameReviewSource;
+
+  /// No description provided for @nameCatalogChanged.
+  ///
+  /// In en, this message translates to:
+  /// **'The reviewed names changed. The previous page was discarded; check the refreshed query.'**
+  String get nameCatalogChanged;
+
+  /// No description provided for @foodNameFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'No reviewed name in this language. The original source name is shown.'**
+  String get foodNameFallback;
 }
 
 class _AppLocalizationsDelegate

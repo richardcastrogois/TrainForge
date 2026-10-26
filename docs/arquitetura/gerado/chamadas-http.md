@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1c5ce9f591598d96`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0e61188c19be9ed5`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 
@@ -18,6 +18,8 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /api/v1/foods` | cursor, limit, q, sourceId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:15](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:30](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods` | cursor, limit, locale, namesVersion, q, sourceId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:56](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | locale, versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:102](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /mobile/home/$date` | sem chaves literais detectadas | /mobile/home/:date / body=ausente/inline / query=ausente | {"200": "HomeDataSchema", "401": "ErrorSchema", "422": "ErrorSchema", "500": "ErrorSchema"} | [lib/features/home/data/home_api.dart:11](../../../lib/features/home/data/home_api.dart) |
 | `POST /mobile/onboarding/manual-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/manual-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:19](../../../lib/features/onboarding/data/onboarding_api.dart) |
 | `POST /mobile/onboarding/ai-plan` | age, bodyFatPercentage, daysPerWeek, experienceLevel, goal, heightInCentimeters, preferences, restrictions, sessionDurationInMinutes, trainData, weightInGrams | /mobile/onboarding/ai-plan / body=CreatePlanRequestSchema / query=ausente | {"201": "CreatedWorkoutPlanResponseSchema", "401": "z.object", "409": "ConflictResponseSchema", "422": "z.object", "504": "z.object", "500": "z.object"} | [lib/features/onboarding/data/onboarding_api.dart:50](../../../lib/features/onboarding/data/onboarding_api.dart) |

@@ -1650,4 +1650,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get browseFoods => 'Browse foods';
+
+  @override
+  String get searchFoodNames => 'Search by name';
+
+  @override
+  String get reviewedNamesHint =>
+      'Search the original name or a reviewed name/alias in the selected language. Without review, the original name stays.';
+
+  @override
+  String get reviewedFoodName => 'Reviewed name in this language';
+
+  @override
+  String get originalFoodName => 'Original name';
+
+  @override
+  String get nameReviewSource => 'Name review and rights';
+
+  @override
+  String get nameCatalogChanged =>
+      'The reviewed names changed. The previous page was discarded; check the refreshed query.';
+
+  @override
+  String get foodNameFallback =>
+      'No reviewed name in this language. The original source name is shown.';
 }

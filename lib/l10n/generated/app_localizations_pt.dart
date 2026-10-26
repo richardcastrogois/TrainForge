@@ -1658,6 +1658,30 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get browseFoods => 'Consultar alimentos';
+
+  @override
+  String get searchFoodNames => 'Pesquisar por nome';
+
+  @override
+  String get reviewedNamesHint =>
+      'Busque pelo nome original ou por um nome/alias revisado no idioma escolhido. Sem revisão, o nome original permanece.';
+
+  @override
+  String get reviewedFoodName => 'Nome revisado neste idioma';
+
+  @override
+  String get originalFoodName => 'Nome original';
+
+  @override
+  String get nameReviewSource => 'Revisão e direitos do nome';
+
+  @override
+  String get nameCatalogChanged =>
+      'Os nomes revisados mudaram. A página anterior foi descartada; confira a consulta atualizada.';
+
+  @override
+  String get foodNameFallback =>
+      'Sem nome revisado neste idioma. O nome original da fonte está sendo exibido.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -3314,6 +3338,30 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get browseFoods => 'Consultar alimentos';
+
+  @override
+  String get searchFoodNames => 'Pesquisar por nome';
+
+  @override
+  String get reviewedNamesHint =>
+      'Busque pelo nome original ou por um nome/alias revisado no idioma escolhido. Sem revisão, o nome original permanece.';
+
+  @override
+  String get reviewedFoodName => 'Nome revisado neste idioma';
+
+  @override
+  String get originalFoodName => 'Nome original';
+
+  @override
+  String get nameReviewSource => 'Revisão e direitos do nome';
+
+  @override
+  String get nameCatalogChanged =>
+      'Os nomes revisados mudaram. A página anterior foi descartada; confira a consulta atualizada.';
+
+  @override
+  String get foodNameFallback =>
+      'Sem nome revisado neste idioma. O nome original da fonte está sendo exibido.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -4972,4 +5020,28 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get browseFoods => 'Consultar alimentos';
+
+  @override
+  String get searchFoodNames => 'Pesquisar por nome';
+
+  @override
+  String get reviewedNamesHint =>
+      'Pesquisa pelo nome original ou por um nome/alias revisto no idioma escolhido. Sem revisão, o nome original mantém-se.';
+
+  @override
+  String get reviewedFoodName => 'Nome revisto neste idioma';
+
+  @override
+  String get originalFoodName => 'Nome original';
+
+  @override
+  String get nameReviewSource => 'Revisão e direitos do nome';
+
+  @override
+  String get nameCatalogChanged =>
+      'Os nomes revistos mudaram. A página anterior foi descartada; verifica a consulta atualizada.';
+
+  @override
+  String get foodNameFallback =>
+      'Sem nome revisto neste idioma. É apresentado o nome original da fonte.';
 }

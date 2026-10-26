@@ -1,3 +1,5 @@
+import io
+from urllib.error import URLError
 import json
 from pathlib import Path
 import tempfile
@@ -81,6 +83,28 @@ class AndroidEvaluationSafetyTest(unittest.TestCase):
                 self.assertEqual(before,android.source_fingerprint())
                 (base/"l10n.yaml").write_text("changed generation config",encoding="utf-8")
                 self.assertNotEqual(before,android.source_fingerprint())
+
+    def test_readiness_rejects_old_contract_without_starting_or_stopping_services(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            (root/"contracts/generated").mkdir(parents=True)
+            (root/"contracts/generated/swagger-v1.json").write_text(json.dumps({"info":{"version":"0.6.1"}}))
+            def response(data):
+                value=io.BytesIO(json.dumps(data).encode());value.status=200;return value
+            with patch.object(android,"ROOT",root),patch.object(android,"urlopen",side_effect=[response({}),response({"info":{"title":"TrainForge API","version":"0.5.1"}})]) as requests:
+                self.assertFalse(android.api_ready())
+                self.assertEqual(requests.call_count,2)
+
+    def test_readiness_requires_locale_projection_and_matching_version(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            (root/"contracts/generated").mkdir(parents=True)
+            (root/"contracts/generated/swagger-v1.json").write_text(json.dumps({"info":{"version":"0.6.1"}}))
+            def response(data):
+                value=io.BytesIO(json.dumps(data).encode());value.status=200;return value
+            for probe,expected in [(URLError("schema missing"),False),({},False),({"nameCatalog":{"locale":"pt-BR","version":"0"}},True)]:
+                with patch.object(android,"ROOT",root),patch.object(android,"urlopen",side_effect=[response({}),response({"info":{"title":"TrainForge API","version":"0.6.1"}}),probe if isinstance(probe,Exception) else response(probe)]):
+                    self.assertEqual(android.api_ready(),expected)
 
 if __name__=="__main__":
     unittest.main()

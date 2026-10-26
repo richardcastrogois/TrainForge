@@ -14,7 +14,7 @@ def snapshot():
       (SELECT md5(string_agg(row_to_json(v)::text,'' ORDER BY food_id,version_sha))
        FROM trainforge_v1.food_versions v WHERE owner_id IS NULL))::text;""", NAME)
 
-def main():
+def main(receipt_name="nutrition-local-verification.json"):
     verify_owned()
     before = snapshot()
     env, go = environment()
@@ -58,14 +58,17 @@ def main():
             sql("DROP DATABASE " + name + ";")
     if snapshot() != before:
         raise RuntimeError("Delivered data changed during fixtures")
-    result = {"scope": "disposable-nutrition-sql-http-not-human-consumption",
+    result = {"date": "2026-10-26", "apiVersion": "0.6.1", "privateNameLanguageNotInferred": True, "scope": "disposable-nutrition-sql-http-not-human-consumption",
               "passed": True, "temporaryDatabaseRemoved": True,
               "deliveredDataUnchanged": True, "realGoogleLoginValidated": False,
               "humanConsumptionValidated": False, "reviewedReferenceCopiedOnlyToDisposableDatabase": True,
               "ownershipIdempotencyRevisionsPrivacyVerified": True}
-    (ROOT / "docs/execucao/v1/nutrition-local-verification.json").write_text(
+    (ROOT / "docs/execucao/v1" / receipt_name).write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result))
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--receipt-name", choices=["nutrition-local-verification.json", "nutrition-locale-verification.json"], default="nutrition-local-verification.json")
+    main(parser.parse_args().receipt_name)
