@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "story": "V1-048",
+  "status": "partial",
+  "scope": "reviewed-name-foundations-disposable-sql-not-published-content",
+  "passed": true,
+  "temporaryDatabaseRemoved": true,
+  "deliveredDataUnchanged": true,
+  "clusterInitiallyRunning": false,
+  "clusterRunningStatePreserved": true,
+  "migrationsAppliedOnlyToDisposableDatabase": 9,
+  "runtimeReadOnly": true,
+  "immutableHistoryAndIdempotencyVerified": true,
+  "evidenceHashesVerified": true,
+  "originalFoodVersionUnchanged": true,
+  "publishedNames": 0,
+  "limits": [
+    "No public locale/search/cache/pagination contract or Flutter name projection yet.",
+    "Migration9 is not applied to delivered DB; actual23 tables remain unchanged.",
+    "Evidence hashes prove matching bytes, not reviewer identity or license truth. Authorized human publication tooling/review still required.",
+    "No new API endpoint; no Swagger regeneration needed; fixtures never enter delivered DB."
+  ],
+  "sourceBaseCommit": "ef262cb",
+  "checks": [
+    {
+      "command": "go test ./... -count=1",
+      "result": "passed",
+      "sqlIntegrations": "skipped without explicit disposable target; separate targeted SQL run below"
+    },
+    {
+      "command": "go vet ./...",
+      "result": "passed"
+    },
+    {
+      "command": "python tools/verificar_nomes_alimentares.py",
+      "result": "passed",
+      "sqlTest": "TestFoodNamesPostgresImmutabilityAndRuntimePermissions",
+      "targetRemoved": true
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_nomes_alimentares.py",
+      "result": "passed",
+      "passed": 3
+    },
+    {
+      "command": "python tools/gerar_documentacao.py --write --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_documentacao.py",
+      "result": "passed",
+      "passed": 13
+    }
+  ],
+  "evidence": [
+    "services/api/internal/nutrition/names.go",
+    "services/api/internal/nutrition/names_postgres.go",
+    "services/api/internal/nutrition/names_test.go",
+    "services/api/migrations/00009_reviewed_food_names.sql",
+    "tools/verificar_nomes_alimentares.py"
+  ]
+}

@@ -353,3 +353,9 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Graphify100Dart/3346nós/3864arestas, ASTincremental/HTML, sem semântica/clusterização. Nenhum SQL, novo login ou dado real; Swagger25operações preservado. [Recibo](frontend-localization-write-verification.json).048continua doing pelos nomes/aliases revisados, contrato/busca/cache eaceites.
 
 - APKdebug0.3.2+15 preparado em37,7s; assinaturaOAuthdebug eSHA256 conferidos. Sem instalar/iniciarAPI/banco/emulador. [Checkpoint](android-localization-write-checkpoint.json).
+
+## 26/10/2026 — V1-048: fundação de nomes revisados
+
+- ModeloGo estrito e migration00009 com2tabelas editoriais separadas:FK exata aoalimento/versão,hash próprio,locale/revisão/direitos/aliases,imutabilidade e retirada rastreável. Persistência transacional idempotente confere visibilidade original e bytes de evidência/hash. Runtime somenteSELECT. Nenhum handler/CLI publica nomes.
+- RegressãoGo e go vet passaram. Testes deJSONambíguo/campos extras/controles/aliases/revisão/hash eSQLdescartável passaram.00009aplicada apenas ao banco temporário, depoisremovido; banco entregue e estado inicial parado docluster preservados. Não repetidas importações reais/loginGoogle. [Recibo](food-names-foundation-verification.json).
+- Base entregue ainda23tabelas/migration8. Hash/declaração não prova revisão humana; publicação operacional,contratoHTTP,busca/cache/cursor/Flutter eaceites ainda faltam.048doing;0nomes publicados. Swagger25operações eAPK0.3.2+15 não mudaram por esse backend nãoexposto.

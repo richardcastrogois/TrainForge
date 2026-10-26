@@ -1,6 +1,6 @@
 # Domínio e banco — modelo e implementação inicial
 
-As migrations00001–00003 em `services/api/migrations` foram aplicadas no banco isolado `trainforge_v1_dev`. O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
+As migrations00001–00008 em `services/api/migrations` foram aplicadas no banco isolado `trainforge_v1_dev` (23tabelas). A00009 foi validada somente em banco descartável, ainda não aplicada à base entregue. O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -139,3 +139,19 @@ Configuração047 seguirá etapas curtas por assunto e revisão final, com o mes
 ## Q6 — autorização administrativa planejada
 
 049 modelará permissão master explícita e revogável vinculada a identidade autenticada estável. Uso próprio mantém autor/titular na mesma conta; exclusão excepcional precisa de recurso/titular exatos, confirmação e auditoria mínima. Isso não adiciona papel/tabela/migration ao runtime nesta rodada nem implica acesso irrestrito. Retirada editorial continua distinta da exclusão de registro privado.
+
+
+## Nomes alimentares revisados — fundação048,26/10
+
+A migration00009 adiciona duas tabelas editoriais separadas. Foi aplicada apenas em banco descartável; a base entregue continua com23tabelas. [Evidência](../execucao/v1/food-names-foundation-verification.json).
+
+| Tabela | Guarda | Relação e permissão |
+|---|---|---|
+| food_name_versions | Nome e até16aliases de um idioma, hash próprio, payload revisado, autor/data, hashes das evidências de revisão/direitos, licença/atribuição e instante de publicação | FK exata para food_versions(food_id,version_sha); PK inclui idioma/hash do nome. Runtime somenteSELECT; versões imutáveis |
+| food_name_withdrawals | Retirada da versão do nome, motivo e instante | FK para a versão exata do nome; retirada não pode ser apagada/alterada |
+
+O original, a composição, os hashes importados e os consumos não são atualizados. Nomes particulares não entram nessa camada pública. O modeloGo eSQL rejeita identidades privadas, locale fora de pt-BR/pt-PT/en/es e publicação sem campos/evidências exigidos; validaçãoGo rejeita aindaJSONambíguo, campos extras, aliases duplicados e controles invisíveis. A persistência exige bytes de evidência com hashes iguais aos registrados e repete sem duplicar a mesma versão.
+
+**Hash e booleano não comprovam autoria humana nem validade de licença.** Falta a ferramenta operacional com verificação humana autorizada e vínculo entre decisão e artefatos. Não há endpoint público, publicação automática, tradução real ou importação desta camada na base entregue. Sem evidência humana apropriada, manter0nomes publicados.
+
+Próximo incremento: escolher a versão do nome antes de considerar retirada, sem reviver tradução anterior; contrato aditivo de locale/versão/cobertura, busca por nome/alias mantendofoodId efoodVersion, cache/cursor vinculados e apresentaçãoFlutter comoriginal acessível. Essa integração ainda não existe. O modelo não implica abrangência global de alimentos nem aprovação clínica.

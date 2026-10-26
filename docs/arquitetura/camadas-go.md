@@ -57,3 +57,8 @@ Contas cadastradas e requisições simultâneas são cargas diferentes. A primei
 Plano de validação: [segurança e operação](seguranca-operacao.md), histórias012/013/028/029/030 e critérios de entrega035. Nenhum número de capacidade foi certificado por este desenho. A [decisão de arquitetura](arquitetura-alvo.md) continua distinguindo migração de linguagem e revisão do domínio.
 
 A privacidade coordena explicitamente a exportação e o ciclo dos dados de todos os módulos privados conhecidos, com inventário de schema e transação única. Não é acesso casual entre módulos: a responsabilidade está em privacy e migrations, com testes de titularidade e privilégios. [Implementação, limites por instância e histórico de aceite](../execucao/v1/privacidade-013.md).
+
+
+## Fundação de nomes editoriais048 —26/10
+
+names.go contém contrato limitado, validação estrutural/revisão e versão própria, semHTTP/pgx. names_postgres.go contém SQL parametrizado, transação, vínculo exato/visibilidade da fonte e persistência idempotente com evidências correspondentes. Nenhum handler chama essa primitiva; publicação operacional humana ainda falta. Runtime não recebe escrita nas duas tabelas editoriais da00009. TesteSQL foi descartável; Go/SQL não foram semanticamente indexados peloGraphifyFlutter. [Modelo e limites](dominio-e-banco.md).

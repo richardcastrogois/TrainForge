@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "1c604f23f5f34be14cf87ff236ee5de181bb3423027a499e4b2b1d21aa415847",
+  "inputRevision": "0cc058024e8db0a3bab74aa32568f5857d12a91fcd8aa819612c1fd6f604da52",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
@@ -127,6 +127,8 @@
     "services/api/internal/nutrition/handler.go": "1bce286198bc912ace4dd2479779bc8be2726affdf7f07bc5c921f863cc1be1c",
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
     "services/api/internal/nutrition/load.go": "40cc38994faa0bc5d04919f7d68cde930a314ab3d52c4531c95c94b34b12e58e",
+    "services/api/internal/nutrition/names.go": "580f51ce97c076c4c5726ce58af865ca686ae0431d71558140a16788e6eb23a5",
+    "services/api/internal/nutrition/names_postgres.go": "300f92b7fdbc115b6f7a6f6f1f46f6f9892ea2aca9406f6fd77495a1b6d5dd53",
     "services/api/internal/nutrition/postgres_entries.go": "68264fd346e0ebe8baf3b0a6da84c21edbee8ca002443cdd8a5af000756a3835",
     "services/api/internal/nutrition/postgres_read.go": "95735b33475fbee5979d2af65fe5b3fd63875f45eb788386324ff7c0f2b4e248",
     "services/api/internal/nutrition/read.go": "6ac5cf99ce94e5e6868129e44d0b06e9cab17eb23492631dfe5ac58a5d52ccc2",
@@ -150,12 +152,13 @@
     "services/api/migrations/00006_food_read_indexes.sql": "84433fd42218ae4d5d294bb328ae6bf9a41b35c924194a4f3206d4b8421cd80e",
     "services/api/migrations/00007_privacy_lifecycle.sql": "c973e9f184604d81a35d7814c54c91be5a74827772cc4703bf146bdd675696d9",
     "services/api/migrations/00008_private_nutrition.sql": "371c8b8986bdcffe7eebfba6109d517f6322d22ce43ab52e25e48b0fc05a5c60",
+    "services/api/migrations/00009_reviewed_food_names.sql": "6a17d452d5afc04b8d6126bbf7ab7482af27b2601d8a93de9622ab3b7530a20a",
     "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
     "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
     "contracts/generated/swagger-v1.json": "f6745bbfa4ef370af2c5e360e7f7acecbf359e44a8c06fd95e6c50d5883955f6",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "145443e30c94d8e0ea2fa7c8b7acb1671e6768d91fcd108703f1204de07dce33",
+    "docs/execucao/v1/backlog.json": "702023c198ad59b3ba7180bd42174fbff806130116697fa030216d056d6dc9df",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -163,7 +166,7 @@
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/avaliar_android.py": "c74da8368f088e70a30ca4e847d80e5ce2a43f97f71e4366889965ca72ba6202",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
-    "tools/db_local.py": "2965d8133b358e4da8b5d3840200668e71be859c88f6184215b3ff98be331669",
+    "tools/db_local.py": "7e300a0888139ea2dc7075d55c401d6ed1649d0f0f2e03c420cb27b132de3953",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "01a084abae0a11dc9c74db96aa87ba629bcab1663e72e6523339817db3039adc",
@@ -184,6 +187,7 @@
     "tools/test_conteudo_editorial.py": "e450dcef916d852e5e490b7188b2b06b6f83082e8ea2bdd97fb972de550d8a10",
     "tools/test_documentacao.py": "0d329bf5f6c05c7ff97e79d8930f442ad263bfb78e5f781ef4f41e86a9fcd804",
     "tools/test_identidade_nativa.py": "9311f6da366c082af29f4aae5d0b09fc84e7feb71253fb7bd22af3e281bcdac6",
+    "tools/test_nomes_alimentares.py": "2b9be67a54abd764247d29aaa03c9ae8c3ae50f0f8afe4c31cf734fe1e6ca97e",
     "tools/test_privacidade.py": "8f6f73cccad40a54e8b3fa42e8a06ce998fa78345f2d74f00ba8edf9e7aa50df",
     "tools/test_revisao_alimentos.py": "0ae834acb727dcd8706cec9a9f62171be2cfdc61fc6b008012606055023dd13f",
     "tools/test_revisao_conteudo.py": "8e5b98cfcaea352087c5bee2cf8e317ed9c6f7772513690f6988b90ab8f50da9",
@@ -198,6 +202,7 @@
     "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
     "tools/verificar_importacao_alimentos.py": "afa8357b1a29513facc0f7620ea6ff6c6875c0b17b5693d79a875c3bd5d30726",
     "tools/verificar_lote_alimentar_local.py": "8fb91247b63595638f722d83a71fd3b2daecf5a73e20ad32ad52d3669e46f4c3",
+    "tools/verificar_nomes_alimentares.py": "a967bc6714013256972288c133c992ac41f97a8095fda780806f7cdde7e7f23e",
     "tools/verificar_nutricao_local.py": "ab352c2933dac21452fc5de99de5508a1285526a14b45faf1ce6c453b4e86bd3",
     "tools/verificar_privacidade_http.py": "fa5f96d4e711164a2d9a16087e9eafcbc01512f6bc38927f9817a304cfeb2791",
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
@@ -210,7 +215,7 @@
     "legacyRoutes": 29,
     "httpCalls": 25,
     "legacyMatches": 12,
-    "goFiles": 40,
+    "goFiles": 42,
     "goRegistrations": 26,
     "modelsInReference": 9
   },
@@ -3698,6 +3703,8 @@
       "services/api/internal/nutrition/handler.go",
       "services/api/internal/nutrition/import.go",
       "services/api/internal/nutrition/load.go",
+      "services/api/internal/nutrition/names.go",
+      "services/api/internal/nutrition/names_postgres.go",
       "services/api/internal/nutrition/postgres_entries.go",
       "services/api/internal/nutrition/postgres_read.go",
       "services/api/internal/nutrition/read.go",
@@ -4457,7 +4464,8 @@
       "services/api/migrations/00005_food_catalog_import.sql",
       "services/api/migrations/00006_food_read_indexes.sql",
       "services/api/migrations/00007_privacy_lifecycle.sql",
-      "services/api/migrations/00008_private_nutrition.sql"
+      "services/api/migrations/00008_private_nutrition.sql",
+      "services/api/migrations/00009_reviewed_food_names.sql"
     ],
     "tables": [
       {
@@ -4642,6 +4650,22 @@
           "repository": "trainforge",
           "path": "services/api/migrations/00007_privacy_lifecycle.sql",
           "line": 12
+        }
+      },
+      {
+        "name": "food_name_versions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00009_reviewed_food_names.sql",
+          "line": 3
+        }
+      },
+      {
+        "name": "food_name_withdrawals",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00009_reviewed_food_names.sql",
+          "line": 28
         }
       }
     ],

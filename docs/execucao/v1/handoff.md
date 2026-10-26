@@ -33,7 +33,9 @@ Segundo incremento:estado de consultas/paginação/debounce saiu daNutritionPage
 
 [Recibo dos formulários/privacidade/ajuda](frontend-localization-write-verification.json):486mensagens poridioma;153testesFlutter eanalyze0issues. Troca deidioma noenvio incerto preserva corpo/chave; cadastro mantém desconhecido/null diferente dezero; exclusão cancelada nãoenviaDELETE. Corrigida asserção demenu eminglês comfonte200%/320px:medida/estimativa agora são duasopções visíveis obrigatórias. Política efetiva/exportação efrase canônica deexclusão preservadas. Duasprévias novas sófixtures; conferida porção/en. Nenhum dado real alterado. APKdebug0.3.2+15 compilado/certificado conferido, nãoinstalado; [recibo](android-localization-write-checkpoint.json).
 
-Próxima fatia048:contratoGo/SQL/busca/apresentação de nomes revisados com versão/revisão/direitos e paginação/cache por idioma/versão. Não enviarlocale àAPI atual. Não alegar revisão de nomes por traduzir rótulos.048continua doing; aceiteAndroid4idiomas eexecução nativaiOS ainda faltam.
+Fundação de nomes048 implementada emnames.go/names_postgres.go e00009:FK exata,hash próprio,até16aliases,locale restrito,evidência humana/direitos,imutabilidade/idempotência ebytes comhash correspondente. TestesGo/vet eSQLdescartável passaram; banco temporário removido ecluster inicialmente parado voltou a parar; dados entregues preservados. [Recibo](food-names-foundation-verification.json).00009 **não aplicada àbase entregue**(23tabelas);0nomes publicados. Hash/booleano não provam revisão humana:publicação operacional autorizada ainda falta.
+
+Próxima fatia048:integrar contratoHTTP/busca/apresentação de nomes revisados e paginação/cache por idioma/versão; tratar retirada sem reviver versão antiga; ferramenta operacional de revisão/publicação. Não enviarlocale àAPI atual. Não alegar revisão de nomes por traduzir rótulos.048continua doing; aceiteAndroid4idiomas eexecução nativaiOS ainda faltam.
 
 ## V1-048 em andamento — 25/10
 
