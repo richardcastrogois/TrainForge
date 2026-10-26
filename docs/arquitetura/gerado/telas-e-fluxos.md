@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `41f2275ca435c9e4`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1c604f23f5f34be1`.
 
 ## Atual: referências entre widgets
 
@@ -97,14 +97,14 @@ flowchart LR
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:14](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
-| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:9](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
-| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:34](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:400](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:13](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
+| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:11](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
+| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:37](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:418](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:16](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
 | OnboardingEntryPage | [lib/features/onboarding/presentation/pages/onboarding_entry_page.dart:9](../../../lib/features/onboarding/presentation/pages/onboarding_entry_page.dart) |
-| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:8](../../../lib/features/privacy/presentation/privacy_page.dart) |
+| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:10](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | ProfilePage | [lib/features/profile/presentation/pages/profile_page.dart:9](../../../lib/features/profile/presentation/pages/profile_page.dart) |
 | StatsPage | [lib/features/stats/presentation/pages/stats_page.dart:10](../../../lib/features/stats/presentation/pages/stats_page.dart) |
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
@@ -113,7 +113,7 @@ flowchart LR
 | AccountPage | [lib/shared/widgets/account_page.dart:14](../../../lib/shared/widgets/account_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
 | AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
-| EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:10](../../../lib/shared/widgets/evaluation_guide_page.dart) |
+| EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | ProductShell | [lib/shared/widgets/product_shell.dart:19](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 

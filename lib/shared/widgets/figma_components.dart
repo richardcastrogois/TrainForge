@@ -168,7 +168,7 @@ Future<void> showAvailability(
           SizedBox(height: 20),
           FilledButton(
             onPressed: () => Navigator.pop(context),
-            child: Text('Entendi'),
+            child: Text(context.l10n.understood),
           ),
         ],
       ),

@@ -1,5 +1,10 @@
 # Frontend — referências, estado e checkpoints
 
+## Localização26/10 — interface disponível, ainda sem fechamento048
+
+486mensagens poridioma em pt-BR/pt-PT/en/es, incluindo formulários/histórico/correção/exclusão, rascunhos, controles deprivacidade eajuda.153testesFlutter/analyze0issues;320px/fonte200% nosquatro idiomas, troca deidioma durante envio incerto sem alterar corpo/chave. Medida/estimativa emduas opções visíveis:correção delayout domenu inglês ampliado. Política daAPI, exportação efrase canônica preservadas eidentificadas; fontes alimentares permanecem originais. [Recibo](frontend-localization-write-verification.json). Nomes/aliases revisados eaceiteAndroid/iOS ainda pendentes; não é igualdade visual anósFigma nãoobtidos.
+
+
 Fonte única atualizada em **26/10/2026**. [Trilha por área](trilha-implementacao.md) orienta o próximo trabalho; [auditoria](auditoria-produto-2026-10-24.md) registra o baseline. Os antigos relatos 01–06, dark/rolagem e 07–12 foram consolidados aqui. O Git mantém os textos históricos completos; os recibos originais permanecem no repositório.
 
 ## Estado atual e limites

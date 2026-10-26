@@ -1,9 +1,11 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_messages.dart';
+import 'nutrition_feedback.dart';
 import 'nutrition_forms.dart';
 
 class EntryDetailPage extends StatefulWidget {
@@ -49,18 +51,17 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
       context: context,
       animationStyle: AppMotion.style(context),
       builder: (context) => AlertDialog(
-        title: const Text('Excluir este consumo?'),
-        content: const Text(
-          'Ele sairá dos subtotais e do histórico ativo. O registro e suas correções continuam particulares na exportação até a exclusão da conta. O alimento cadastrado permanece.',
-        ),
+        scrollable: true,
+        title: Text(context.l10n.deleteIntakeQuestion),
+        content: Text(context.l10n.deleteIntakeNotice),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancelar'),
+            child: Text(context.l10n.cancel),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(context, true),
-            child: const Text('Excluir consumo'),
+            child: Text(context.l10n.deleteIntake),
           ),
         ],
       ),
@@ -95,9 +96,9 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
         body: ListView(
           padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
           children: [
-            const FigmaPageHeading(
-              title: 'Consumo confirmado',
-              subtitle: 'DIÁRIO · REGISTRO PARTICULAR',
+            FigmaPageHeading(
+              title: context.l10n.intakeConfirmed,
+              subtitle: context.l10n.privateDiaryUpper,
             ),
             FigmaSection(
               child: Column(
@@ -109,22 +110,22 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    '${entry['quantity']} ${entry['unit']}',
+                    '${context.displayDecimal(entry['quantity'] as String)} ${entry['unit']}',
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   Text(
                     c['quantityEvidence'] == 'measured'
-                        ? 'Quantidade medida'
-                        : 'Quantidade estimada',
+                        ? context.l10n.quantityMeasured
+                        : context.l10n.quantityEstimated,
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Horário neste aparelho: ${localTimestamp(entry['occurredAt'] as String)}',
+                    '${context.l10n.deviceTime}: ${context.displayTimestamp(entry['occurredAt'] as String)}',
                   ),
-                  Text('Fuso informado no registro: ${entry['timezone']}'),
+                  Text('${context.l10n.recordedZone}: ${entry['timezone']}'),
                   const SizedBox(height: 8),
                   Text(
-                    'Preparo anotado: ${(c['preparation'] as String).isEmpty ? 'não informado' : c['preparation']}',
+                    '${context.l10n.notedPreparation}: ${(c['preparation'] as String).isEmpty ? context.l10n.notInformed : c['preparation']}',
                   ),
                 ],
               ),
@@ -134,23 +135,21 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const FlowSectionTitle('Origem da composição'),
+                  FlowSectionTitle(context.l10n.compositionOrigin),
                   Text(source['attribution'] as String),
                   ExpansionTile(
                     tilePadding: EdgeInsets.zero,
-                    title: const Text('Origem e cálculo preservados'),
+                    title: Text(context.l10n.preservedCalculation),
                     children: [
                       SelectableText(
-                        '''Origem: ${c['origin']} · ${food['sourceId']}
-Versão: ${entry['foodVersion']}
-Método: ${c['algorithm']}
+                        '''${context.l10n.origin}: ${c['origin']} · ${food['sourceId']}
+${context.l10n.version}: ${entry['foodVersion']}
+${context.l10n.method}: ${c['algorithm']}
 ${source['licenseLabel']}
 ${source['sourceUrl']}
 ${source['licenseUrl']}''',
                       ),
-                      const Text(
-                        'Fração exata preservada. Exibição arredondada a 6 casas. Traço, limite, unidade incompatível e base ausente não se tornam zero. Preparo não altera a composição.',
-                      ),
+                      Text(context.l10n.fractionNotice),
                     ],
                   ),
                 ],
@@ -158,22 +157,25 @@ ${source['licenseUrl']}''',
             ),
             const SizedBox(height: 16),
             if (error != null) ...[
-              FlowStatus(title: 'Solicitação não confirmada', message: error!),
+              FlowStatus(
+                title: context.l10n.requestUnconfirmed,
+                message: localizedNutritionFeedback(context, error!),
+              ),
               const SizedBox(height: 12),
             ],
             OutlinedButton(
               onPressed: busy ? null : edit,
-              child: const Text('Corrigir quantidade, preparo ou horário'),
+              child: Text(context.l10n.correctIntakeAction),
             ),
             const SizedBox(height: 8),
             OutlinedButton(
               onPressed: busy ? null : remove,
-              child: Text(busy ? 'Confirmando…' : 'Excluir este consumo'),
+              child: Text(
+                busy ? context.l10n.confirming : context.l10n.deleteThisIntake,
+              ),
             ),
-            const FlowSectionTitle('Composição desta porção'),
-            const Text(
-              'Os valores abaixo pertencem à versão e ao método da fonte. Desconhecido não significa zero.',
-            ),
+            FlowSectionTitle(context.l10n.thisPortionComposition),
+            Text(context.l10n.portionSourceNotice),
             const SizedBox(height: 12),
             for (final n in objects(c['nutrients']))
               Padding(
@@ -188,20 +190,20 @@ ${source['licenseUrl']}''',
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        '${n['value'] ?? 'Desconhecido'} ${n['unit'] ?? ''}',
+                        '${n['value'] is String ? context.displayDecimal(n['value'] as String) : context.l10n.unknownValue} ${n['unit'] ?? ''}',
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
                       if (n['reason'] != null && n['reason'] != '')
-                        Text('Motivo: ${n['reason']}'),
+                        Text('${context.l10n.reason}: ${n['reason']}'),
                       ExpansionTile(
                         tilePadding: EdgeInsets.zero,
-                        title: const Text('Base, valor original e cálculo'),
+                        title: Text(context.l10n.basisOriginalCalculation),
                         children: [
                           Text(
-                            '''Estado original: ${n['sourceState']} · célula: ${n['rawText'] ?? ''} · limite: ${n['sourceUpperBound'] ?? 'não informado'}
-Base: ${object(n['basis'])['quantity'] ?? '?'} ${object(n['basis'])['unit'] ?? ''}
-Fator: ${n['factor'] ?? 'não calculável'}
-Fração exata: ${n['exactFraction'] ?? 'desconhecida'}''',
+                            '''${context.l10n.originalState}: ${n['sourceState']} · ${context.l10n.cell}: ${n['rawText'] ?? ''} · ${context.l10n.limit}: ${n['sourceUpperBound'] ?? context.l10n.notInformed}
+${context.l10n.basis}: ${object(n['basis'])['quantity'] ?? '?'} ${object(n['basis'])['unit'] ?? ''}
+${context.l10n.factor}: ${n['factor'] ?? context.l10n.notCalculable}
+${context.l10n.exactFraction}: ${n['exactFraction'] ?? context.l10n.unknownValue}''',
                           ),
                         ],
                       ),
@@ -213,7 +215,9 @@ Fração exata: ${n['exactFraction'] ?? 'desconhecida'}''',
               child: ExpansionTile(
                 tilePadding: EdgeInsets.zero,
                 title: Text(
-                  'Correções anteriores (${(c['changes'] as List).length})',
+                  context.l10n.previousCorrections(
+                    (c['changes'] as List).length,
+                  ),
                 ),
                 children: [
                   for (final change in objects(c['changes']))
@@ -223,17 +227,19 @@ Fração exata: ${n['exactFraction'] ?? 'desconhecida'}''',
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            'Revisão ${change['revision']} · ${change['quantity']} ${change['unit']}',
+                            '${context.l10n.revision(change['revision'] as int)} · ${context.displayDecimal(change['quantity'] as String)} ${change['unit']}',
                           ),
                           Text(
-                            '${localTimestamp(change['occurredAt'] as String)} · fuso informado: ${change['timezone']}',
+                            '${context.displayTimestamp(change['occurredAt'] as String)} · ${context.l10n.recordedZone}: ${change['timezone']}',
                           ),
                           Text(
                             change['quantityEvidence'] == 'measured'
-                                ? 'Quantidade medida'
-                                : 'Quantidade estimada',
+                                ? context.l10n.quantityMeasured
+                                : context.l10n.quantityEstimated,
                           ),
-                          Text('Preparo: ${change['preparation']}'),
+                          Text(
+                            '${context.l10n.preparation}: ${change['preparation']}',
+                          ),
                         ],
                       ),
                     ),

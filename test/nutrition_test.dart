@@ -53,11 +53,9 @@ class FakeNutrition implements NutritionRepository {
 }
 
 Future<void> chooseEvidence(WidgetTester t) async {
-  final dropdown = find.byType(DropdownButtonFormField<String>).last;
-  await t.ensureVisible(dropdown);
-  await t.tap(dropdown);
-  await t.pumpAndSettle();
-  await t.tap(find.text('Fiz uma estimativa').last);
+  final choice = find.text('Fiz uma estimativa');
+  await t.ensureVisible(choice);
+  await t.tap(choice);
   await t.pumpAndSettle();
 }
 

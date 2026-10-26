@@ -1,3 +1,5 @@
+import 'package:trainforge/features/food_reference/presentation/food_labels.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/shared/widgets/draft_guard.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
@@ -8,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_messages.dart';
+import 'nutrition_feedback.dart';
 
 bool _rejected(Object e) =>
     e is DioException &&
@@ -177,8 +180,8 @@ class _EntryFormPageState extends State<EntryFormPage> {
               children: [
                 FigmaPageHeading(
                   title: widget.entry == null
-                      ? 'A porção é tua.'
-                      : 'Corrigir consumo',
+                      ? context.l10n.portionYours
+                      : context.l10n.correctIntake,
                   subtitle: widget.food.displayName,
                 ),
                 FigmaSection(
@@ -187,7 +190,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'Quantidade',
+                        context.l10n.quantity,
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
@@ -204,13 +207,13 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         ),
                         textInputAction: TextInputAction.done,
                         decoration: InputDecoration(
-                          labelText: 'Quantidade consumida',
-                          hintText: 'Informe a quantidade',
+                          labelText: context.l10n.consumedQuantity,
+                          hintText: context.l10n.enterQuantity,
                         ),
                         validator: (v) =>
                             validDecimal(decimal(v ?? ''), positive: true)
                             ? null
-                            : 'Informe uma quantidade maior que zero, até 6 casas decimais.',
+                            : context.l10n.positiveQuantity,
                       ),
                       SizedBox(height: 12),
                       DropdownButtonFormField<String>(
@@ -218,16 +221,16 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         isExpanded: true,
                         itemHeight: null,
                         decoration: InputDecoration(
-                          labelText: 'Unidade da quantidade',
+                          labelText: context.l10n.quantityUnit,
                         ),
                         items: [
                           DropdownMenuItem(
                             value: 'g',
-                            child: Text('Gramas (g)'),
+                            child: Text(context.l10n.grams),
                           ),
                           DropdownMenuItem(
                             value: 'ml',
-                            child: Text('Mililitros (ml)'),
+                            child: Text(context.l10n.milliliters),
                           ),
                         ],
                         onChanged: locked
@@ -238,28 +241,42 @@ class _EntryFormPageState extends State<EntryFormPage> {
                   ),
                 ),
                 SizedBox(height: 12),
-                DropdownButtonFormField<String>(
+                FormField<String>(
                   initialValue: evidence,
-                  isExpanded: true,
-                  itemHeight: null,
-                  decoration: InputDecoration(
-                    labelText: 'Como obteve a quantidade?',
+                  enabled: !locked,
+                  validator: (value) =>
+                      value == null ? context.l10n.chooseEvidence : null,
+                  builder: (field) => InputDecorator(
+                    decoration: InputDecoration(
+                      labelText: context.l10n.quantityHow,
+                      errorText: field.errorText,
+                      enabled: !locked,
+                    ),
+                    child: RadioGroup<String>(
+                      groupValue: field.value,
+                      onChanged: (value) {
+                        if (locked) return;
+                        field.didChange(value);
+                        setState(() => evidence = value);
+                      },
+                      child: Column(
+                        children: [
+                          RadioListTile<String>(
+                            value: 'measured',
+                            enabled: !locked,
+                            contentPadding: EdgeInsets.zero,
+                            title: Text(context.l10n.measuredChoice),
+                          ),
+                          RadioListTile<String>(
+                            value: 'estimated',
+                            enabled: !locked,
+                            contentPadding: EdgeInsets.zero,
+                            title: Text(context.l10n.estimatedChoice),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                  items: [
-                    DropdownMenuItem(
-                      value: 'measured',
-                      child: Text('Medi com balança ou recipiente'),
-                    ),
-                    DropdownMenuItem(
-                      value: 'estimated',
-                      child: Text('Fiz uma estimativa'),
-                    ),
-                  ],
-                  validator: (v) =>
-                      v == null ? 'Escolha medida ou estimativa.' : null,
-                  onChanged: locked
-                      ? null
-                      : (v) => setState(() => evidence = v),
                 ),
                 SizedBox(height: 12),
                 FigmaSection(
@@ -268,7 +285,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Composição da porção',
+                        context.l10n.portionComposition,
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
@@ -276,7 +293,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       ),
                       SizedBox(height: 4),
                       Text(
-                        'O cálculo é confirmado pela API ao salvar. Valores desconhecidos não viram zero; métodos e unidades diferentes não são somados.',
+                        context.l10n.calculationOnSave,
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -292,7 +309,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'Origem e preparação',
+                        context.l10n.originPreparation,
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
@@ -300,7 +317,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       ),
                       SizedBox(height: 4),
                       Text(
-                        widget.food.basisLabel,
+                        widget.food.localizedBasis(context),
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -309,10 +326,10 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       ),
                       ExpansionTile(
                         tilePadding: EdgeInsets.zero,
-                        title: Text('Fonte e versão'),
+                        title: Text(context.l10n.sourceVersion),
                         children: [
                           SelectableText(
-                            'Origem: ${widget.food.sourceId}\nVersão: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.attribution}\n${widget.food.source.license}',
+                            '${context.l10n.origin}: ${widget.food.sourceId}\n${context.l10n.version}: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.attribution}\n${widget.food.source.license}',
                           ),
                         ],
                       ),
@@ -322,11 +339,11 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         enabled: !locked,
                         maxLength: 180,
                         decoration: InputDecoration(
-                          labelText: 'Preparo observado (opcional)',
+                          labelText: context.l10n.observedPreparation,
                         ),
                       ),
                       Text(
-                        'O preparo é uma anotação sua e não altera a composição da fonte. Não convertemos gramas em mililitros sem densidade comprovada.',
+                        context.l10n.preparationNote,
                         style: TextStyle(
                           fontSize: 12,
                           height: 1.35,
@@ -340,11 +357,11 @@ class _EntryFormPageState extends State<EntryFormPage> {
                 OutlinedButton(
                   onPressed: locked ? null : pickDate,
                   child: Text(
-                    '${localDay(when)} · ${when.hour.toString().padLeft(2, '0')}:${when.minute.toString().padLeft(2, '0')} · ${offsetZone(when)}',
+                    '${context.displayDate(when)} · ${context.displayTime(when)} · ${offsetZone(when)}',
                   ),
                 ),
                 Text(
-                  'Data e hora do aparelho, confirmadas por você.',
+                  context.l10n.deviceDateConfirmed,
                   style: TextStyle(
                     fontSize: 12,
                     height: 1.35,
@@ -353,7 +370,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                 ),
                 SizedBox(height: 12),
                 Text(
-                  'Confirme somente o que você consumiu. Não há dieta prescrita nem compensação por exercícios. Quantidades estimadas serão identificadas como estimadas.',
+                  context.l10n.intakeConfirmationNotice,
                   style: TextStyle(
                     fontSize: 12,
                     height: 1.35,
@@ -362,21 +379,22 @@ class _EntryFormPageState extends State<EntryFormPage> {
                 ),
                 SizedBox(height: 12),
                 if (error != null)
-                  Semantics(liveRegion: true, child: Text(error!)),
-                if (pending != null && !busy)
-                  Text(
-                    'A resposta ainda não foi confirmada. Tente novamente com os mesmos dados ou volte para conferir o histórico.',
+                  Semantics(
+                    liveRegion: true,
+                    child: Text(localizedNutritionFeedback(context, error!)),
                   ),
+                if (pending != null && !busy)
+                  Text(context.l10n.intakeUncertain),
                 FilledButton(
                   onPressed: busy ? null : save,
                   child: Text(
                     busy
-                        ? 'Confirmando…'
+                        ? context.l10n.confirming
                         : pending != null
-                        ? 'Tentar confirmar novamente'
+                        ? context.l10n.retryConfirmation
                         : widget.entry == null
-                        ? 'Confirmar consumo'
-                        : 'Confirmar correção',
+                        ? context.l10n.confirmIntake
+                        : context.l10n.confirmCorrection,
                   ),
                 ),
               ],
@@ -498,35 +516,34 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const FigmaPageHeading(
-                    title: 'Cadastrar alimento próprio',
-                    subtitle: 'PARTICULAR · DADOS INFORMADOS POR VOCÊ',
+                  FigmaPageHeading(
+                    title: context.l10n.createOwnFood,
+                    subtitle: context.l10n.ownDataUpper,
                   ),
-                  const FlowSectionTitle('Identidade do alimento'),
-                  Text(
-                    'Cadastro particular, separado do catálogo público. Criar este alimento não registra consumo e não significa revisão editorial ou clínica.',
-                  ),
+                  FlowSectionTitle(context.l10n.foodIdentity),
+                  Text(context.l10n.ownFoodNotice),
                   TextFormField(
                     key: Key('own-food-name'),
                     controller: name,
                     enabled: !locked,
                     maxLength: 180,
-                    decoration: InputDecoration(labelText: 'Nome do alimento'),
-                    validator: (v) =>
-                        (v ?? '').trim().isEmpty ? 'Informe o nome.' : null,
+                    decoration: InputDecoration(
+                      labelText: context.l10n.foodName,
+                    ),
+                    validator: (v) => (v ?? '').trim().isEmpty
+                        ? context.l10n.enterName
+                        : null,
                   ),
                   TextFormField(
                     controller: preparation,
                     enabled: !locked,
                     maxLength: 180,
                     decoration: InputDecoration(
-                      labelText: 'Preparo declarado (opcional)',
+                      labelText: context.l10n.declaredPreparation,
                     ),
                   ),
-                  const FlowSectionTitle('Base da composição'),
-                  Text(
-                    'Se souber, informe a base a que os nutrientes se referem. Deixe em branco o que não conhece. Ausência não significa zero.',
-                  ),
+                  FlowSectionTitle(context.l10n.compositionBasis),
+                  Text(context.l10n.basisNotice),
                   TextFormField(
                     controller: basis,
                     enabled: !locked,
@@ -535,32 +552,35 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                       decimal: true,
                     ),
                     decoration: InputDecoration(
-                      labelText: 'Quantidade da base (opcional)',
+                      labelText: context.l10n.optionalBasisQuantity,
                     ),
                     validator: (v) =>
                         (v ?? '').trim().isEmpty ||
                             validDecimal(decimal(v!), positive: true)
                         ? null
-                        : 'Base deve ser maior que zero.',
+                        : context.l10n.positiveBasis,
                   ),
                   DropdownButtonFormField<String>(
                     initialValue: unit,
                     isExpanded: true,
                     itemHeight: null,
-                    decoration: InputDecoration(labelText: 'Unidade da base'),
+                    decoration: InputDecoration(
+                      labelText: context.l10n.basisUnit,
+                    ),
                     items: [
-                      DropdownMenuItem(value: 'g', child: Text('Gramas (g)')),
+                      DropdownMenuItem(
+                        value: 'g',
+                        child: Text(context.l10n.grams),
+                      ),
                       DropdownMenuItem(
                         value: 'ml',
-                        child: Text('Mililitros (ml)'),
+                        child: Text(context.l10n.milliliters),
                       ),
                     ],
                     onChanged: locked ? null : (v) => setState(() => unit = v!),
                   ),
-                  const FlowSectionTitle('Nutrientes declarados'),
-                  const Text(
-                    'Não informe valores por suposição. Deixar o campo vazio preserva desconhecido; informar 0 declara zero.',
-                  ),
+                  FlowSectionTitle(context.l10n.declaredNutrients),
+                  Text(context.l10n.noAssumedNutrients),
                   const SizedBox(height: 12),
                   for (var i = 0; i < nutrients.length; i++)
                     Card(
@@ -574,10 +594,10 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                               enabled: !locked,
                               maxLength: 100,
                               decoration: InputDecoration(
-                                labelText: 'Nome do nutriente',
+                                labelText: context.l10n.nutrientName,
                               ),
                               validator: (v) => (v ?? '').trim().isEmpty
-                                  ? 'Informe o nome do nutriente.'
+                                  ? context.l10n.enterNutrientName
                                   : null,
                             ),
                             TextFormField(
@@ -589,20 +609,20 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                                     decimal: true,
                                   ),
                               decoration: InputDecoration(
-                                labelText: 'Valor na base (opcional)',
+                                labelText: context.l10n.optionalBasisValue,
                               ),
                               validator: (v) =>
                                   (v ?? '').trim().isEmpty ||
                                       validDecimal(decimal(v!))
                                   ? null
-                                  : 'Informe um decimal ou deixe desconhecido.',
+                                  : context.l10n.decimalOrUnknown,
                             ),
                             DropdownButtonFormField<String>(
                               initialValue: nutrients[i].unit,
                               isExpanded: true,
                               itemHeight: null,
                               decoration: InputDecoration(
-                                labelText: 'Unidade do nutriente',
+                                labelText: context.l10n.nutrientUnit,
                               ),
                               items: ['g', 'mg', 'µg', 'kcal', 'kJ']
                                   .map(
@@ -625,7 +645,7 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                                         nutrients.removeAt(i).dispose();
                                       });
                                     },
-                              child: Text('Remover este campo'),
+                              child: Text(context.l10n.removeField),
                             ),
                           ],
                         ),
@@ -635,24 +655,23 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                     onPressed: locked || nutrients.length >= 32
                         ? null
                         : () => setState(() => nutrients.add(_NutrientDraft())),
-                    child: Text(
-                      'Adicionar nutriente conhecido ou desconhecido',
-                    ),
+                    child: Text(context.l10n.addNutrient),
                   ),
                   if (error != null)
-                    Semantics(liveRegion: true, child: Text(error!)),
-                  if (pending != null && !busy)
-                    Text(
-                      'Resposta não confirmada. Repita com os mesmos dados para evitar duplicação.',
+                    Semantics(
+                      liveRegion: true,
+                      child: Text(localizedNutritionFeedback(context, error!)),
                     ),
+                  if (pending != null && !busy)
+                    Text(context.l10n.ownFoodUncertain),
                   FilledButton(
                     onPressed: busy ? null : save,
                     child: Text(
                       busy
-                          ? 'Confirmando…'
+                          ? context.l10n.confirming
                           : pending != null
-                          ? 'Tentar confirmar novamente'
-                          : 'Salvar somente o alimento',
+                          ? context.l10n.retryConfirmation
+                          : context.l10n.saveFoodOnly,
                     ),
                   ),
                 ],

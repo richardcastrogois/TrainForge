@@ -38,6 +38,14 @@ extension LocalizedContext on BuildContext {
     return DateFormat.Hm(l10n.localeName).format(value);
   }
 
+  String displayTimestamp(String raw) {
+    final value = DateTime.parse(raw).toLocal();
+    final minutes = value.timeZoneOffset.inMinutes;
+    final zone =
+        '${minutes < 0 ? '-' : '+'}${(minutes.abs() ~/ 60).toString().padLeft(2, '0')}:${(minutes.abs() % 60).toString().padLeft(2, '0')}';
+    return '${displayDate(value)} · ${displayTime(value)} ($zone)';
+  }
+
   /// Display only: preserves every original decimal digit, without float rounding.
   String displayDecimal(String value) {
     if (!RegExp(r'^-?[0-9]+(\.[0-9]+)?$').hasMatch(value)) return value;

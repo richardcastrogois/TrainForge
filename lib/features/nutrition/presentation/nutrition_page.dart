@@ -1,3 +1,5 @@
+import 'package:trainforge/features/food_reference/presentation/food_labels.dart';
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -6,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'nutrition_controller.dart';
+import 'nutrition_feedback.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_forms.dart';
 import 'entry_detail_page.dart';
@@ -128,13 +131,9 @@ class _NutritionPageState extends State<NutritionPage>
     if (!active) return;
     await controller.searchOwn();
     if (mounted && active && result != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Alimento particular salvo. Nenhum consumo foi registrado.',
-          ),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.l10n.ownFoodSaved)));
     }
   }
 
@@ -158,10 +157,10 @@ class _NutritionPageState extends State<NutritionPage>
       child: FigmaRouteFrame(
         body: Column(
           children: [
-            const TabBar(
+            TabBar(
               tabs: [
-                Tab(text: 'Consumo'),
-                Tab(text: 'Meus alimentos'),
+                Tab(text: context.l10n.intake),
+                Tab(text: context.l10n.myFoods),
               ],
             ),
             Expanded(
@@ -174,7 +173,7 @@ class _NutritionPageState extends State<NutritionPage>
   );
 
   Widget heading(String subtitle) =>
-      FigmaPageHeading(title: 'Minha alimentação', subtitle: subtitle);
+      FigmaPageHeading(title: context.l10n.myNutrition, subtitle: subtitle);
 
   Widget consumptionList() => RefreshIndicator(
     onRefresh: controller.load,
@@ -183,35 +182,32 @@ class _NutritionPageState extends State<NutritionPage>
       physics: const AlwaysScrollableScrollPhysics(),
       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
       children: [
-        heading('DIÁRIO · REGISTROS CONFIRMADOS POR VOCÊ'),
+        heading(context.l10n.confirmedDiaryUpper),
         OutlinedButton.icon(
           onPressed: chooseDate,
           icon: const Icon(Icons.calendar_today),
           label: Text(
-            '${localDay(controller.date)} · ${offsetZone(controller.date)}',
+            '${context.displayDate(controller.date)} · ${offsetZone(controller.date)}',
           ),
         ),
         const SizedBox(height: 12),
         FilledButton.icon(
           onPressed: chooseReference,
           icon: const Icon(Icons.search),
-          label: const Text('Pesquisar alimento e registrar consumo'),
+          label: Text(context.l10n.searchRecordFood),
         ),
         const SizedBox(height: 12),
-        const Text(
-          'Registros confirmados por você. Nenhuma dieta, meta ou compensação por exercício é criada.',
-        ),
+        Text(context.l10n.diaryNoPrescription),
         const SizedBox(height: 16),
         if (controller.loading)
-          const AppLoading(label: 'Consultando alimentação'),
+          AppLoading(label: context.l10n.loadingNutrition),
         if (controller.error != null) _error(),
         if (!controller.loading &&
             controller.error == null &&
             controller.entries.isEmpty)
-          const FlowStatus(
-            title: 'Nenhum consumo registrado neste dia.',
-            message:
-                'Escolha outra data ou pesquise um alimento para registrar o que consumiu. Ausência de registro não significa consumo zero.',
+          FlowStatus(
+            title: context.l10n.noIntakeDay,
+            message: context.l10n.noIntakeHint,
           ),
         for (final entry in controller.entries)
           FlowRecord(
@@ -219,8 +215,8 @@ class _NutritionPageState extends State<NutritionPage>
               object(object(entry['calculation'])['food'])['nameOriginal'],
             ),
             subtitle:
-                '''${entry['quantity']} ${entry['unit']} · ${object(entry['calculation'])['quantityEvidence'] == 'measured' ? 'medida' : 'estimativa'}
-${localTimestamp(entry['occurredAt'] as String)}''',
+                '''${context.displayDecimal(entry['quantity'] as String)} ${entry['unit']} · ${object(entry['calculation'])['quantityEvidence'] == 'measured' ? context.l10n.measuredShort : context.l10n.estimatedShort}
+${context.displayTimestamp(entry['occurredAt'] as String)}''',
             onTap: () => detail(entry),
           ),
         if (controller.cursor != null)
@@ -229,7 +225,9 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
                 ? null
                 : () => controller.more(false),
             child: Text(
-              controller.moreBusy ? 'Carregando…' : 'Carregar mais registros',
+              controller.moreBusy
+                  ? context.l10n.loading
+                  : context.l10n.moreRecords,
             ),
           ),
         if (controller.summary != null)
@@ -238,14 +236,25 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
               tilePadding: EdgeInsets.zero,
               title: Text(
                 controller.summary!['complete'] == true
-                    ? 'Subtotais do dia · ${controller.summary!['entries']} registros'
-                    : 'Limite de subtotal excedido',
+                    ? context.l10n.daySubtotalCount(
+                        controller.summary!['entries'] as int,
+                      )
+                    : context.l10n.subtotalLimit,
               ),
               children: [
-                Text(controller.summary!['notice'] as String),
-                if (controller.summary!['complete'] == true)
+                Text(
+                  controller.summary!['complete'] == true
+                      ? context.l10n.subtotalNotice
+                      : context.l10n.summaryLimit,
+                ),
+                if (controller.summary!['complete'] == true &&
+                    controller.summary!['measuredEntries'] is int &&
+                    controller.summary!['estimatedEntries'] is int)
                   Text(
-                    '${controller.summary!['measuredEntries']} quantidades medidas · ${controller.summary!['estimatedEntries']} estimadas',
+                    context.l10n.quantityEvidenceCounts(
+                      controller.summary!['measuredEntries'] as int,
+                      controller.summary!['estimatedEntries'] as int,
+                    ),
                   ),
                 const SizedBox(height: 12),
                 for (final n in objects(controller.summary!['nutrients']))
@@ -260,12 +269,15 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          '${n['value'] ?? 'Desconhecido'} ${n['unit'] ?? ''}',
+                          '${n['value'] is String ? context.displayDecimal(n['value'] as String) : context.l10n.unknownValue} ${n['unit'] ?? ''}',
                         ),
                         Text(
-                          '${n['includedEntries']} incluídos · ${n['unknownEntries']} sem valor calculável',
+                          context.l10n.nutrientCoverage(
+                            n['includedEntries'] as int,
+                            n['unknownEntries'] as int,
+                          ),
                         ),
-                        Text('Coluna: ${n['sourceColumnKey']}'),
+                        Text('${context.l10n.column}: ${n['sourceColumnKey']}'),
                         const Divider(),
                       ],
                     ),
@@ -284,50 +296,45 @@ ${localTimestamp(entry['occurredAt'] as String)}''',
       physics: const AlwaysScrollableScrollPhysics(),
       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
       children: [
-        heading('ALIMENTOS PARTICULARES · NÃO PUBLICADOS'),
+        heading(context.l10n.privateFoodsUpper),
         FilledButton.icon(
           onPressed: createFood,
           icon: const Icon(Icons.add),
-          label: const Text('Cadastrar alimento próprio'),
+          label: Text(context.l10n.createOwnFood),
         ),
         const SizedBox(height: 12),
-        const Text(
-          'Somente seus alimentos particulares. Criar um alimento não registra consumo nem o publica no catálogo.',
-        ),
+        Text(context.l10n.privateFoodsHint),
         const SizedBox(height: 16),
         TextField(
           controller: search,
           maxLength: 100,
           textInputAction: TextInputAction.search,
-          decoration: const InputDecoration(
-            labelText: 'Buscar nos meus alimentos',
-          ),
+          decoration: InputDecoration(labelText: context.l10n.searchMyFoods),
           onChanged: controller.queryChanged,
           onSubmitted: controller.submitQuery,
         ),
         const SizedBox(height: 12),
         if (controller.ownLoading)
-          const AppLoading(label: 'Consultando alimentos particulares'),
+          AppLoading(label: context.l10n.loadingPrivateFoods),
         if (controller.ownError != null)
           FlowStatus(
-            title: 'Consulta indisponível',
-            message: controller.ownError!,
-            actionLabel: 'Tentar novamente',
+            title: context.l10n.queryUnavailable,
+            message: localizedNutritionFeedback(context, controller.ownError!),
+            actionLabel: context.l10n.retry,
             onAction: controller.searchOwn,
           ),
         if (!controller.ownLoading &&
             controller.ownError == null &&
             controller.foods.isEmpty)
-          const FlowStatus(
-            title: 'Nenhum alimento próprio corresponde à busca.',
-            message:
-                'Pesquise outro nome ou cadastre um alimento particular. Informe somente os dados conhecidos; não preencha nutrientes por suposição.',
+          FlowStatus(
+            title: context.l10n.noPrivateResults,
+            message: context.l10n.noPrivateHint,
           ),
         for (final food in controller.foods)
           FlowRecord(
             title: asFood(food).displayName,
-            subtitle: '''${asFood(food).basisLabel}
-Particular · tocar para informar uma porção''',
+            subtitle:
+                '${asFood(food).localizedBasis(context)}\n${context.l10n.privatePortionHint}',
             onTap: () => record(asFood(food)),
           ),
         if (controller.ownCursor != null)
@@ -337,8 +344,8 @@ Particular · tocar para informar uma porção''',
                 : () => controller.more(true),
             child: Text(
               controller.ownMoreBusy
-                  ? 'Carregando…'
-                  : 'Carregar mais alimentos próprios',
+                  ? context.l10n.loading
+                  : context.l10n.morePrivateFoods,
             ),
           ),
       ],
@@ -346,9 +353,9 @@ Particular · tocar para informar uma porção''',
   );
 
   Widget _error() => FlowStatus(
-    title: 'Consulta indisponível',
-    message: controller.error!,
-    actionLabel: 'Tentar novamente',
+    title: context.l10n.queryUnavailable,
+    message: localizedNutritionFeedback(context, controller.error!),
+    actionLabel: context.l10n.retry,
     onAction: controller.load,
   );
 }

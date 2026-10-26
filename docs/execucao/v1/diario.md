@@ -344,3 +344,12 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 -282mensagens poridioma;Hoje/Diário/Planos/Atividade/Evolução econsulta/detalhes/filtros localizados, datas/semana/plurais e valores desconhecidos/traço/limite. Removidos ramos mortos deDailyOverview após retorno paraTodayPage; resumo incompleto não anuncia contagem completa.
 -132testesFlutter/analyze0issues;13cenários novos dirigidos,8prévias defixture,dark,conferidas Hoje/es ecomposição/en. Fonte/ID/versão/base preservados e teste de seleção com320px/texto2x. Ajustes de expressão e rolagem dos testes corrigidos antes de fechar. [Recibo](frontend-localization-read-verification.json).
 -Graphify98Dart/2521nós/3029arestas,AST/HTML,semsemântica/LLM;backup.local. Sem novoAPK/API/SQL/emulador/dado real.048segue doing; próxima fatia é formulário/histórico/escrita eprivacidade/guias.
+
+## 26/10/2026 — V1-048: formulários, histórico, privacidade e ajuda
+
+- Localizados os fluxos manuais existentes, estados de envio incerto, rascunhos, controles de privacidade e todos os tópicos de ajuda:486mensagens por idioma. Nomes pessoais/de fonte, política efetiva e exportação preservados; frase canônica de exclusão permaneceEXCLUIR MINHA CONTA.
+- Novo teste em320px/fonte200% encontrou asserção real no menu inglês de evidência. Duas opções visíveis obrigatórias substituem o menu apenas nessa pergunta; contrato measured/estimated inalterado.
+- 21cenários novos verificam4idiomas, retry com mesma chave/corpo após troca deidioma, null diferente de0, exclusão cancelada efrase canônica sem apagar conta. Suíte completa153aprovados; analyze0issues. Duasprévias locais apenasfixtures, conferida porção/en.
+- Graphify100Dart/3346nós/3864arestas, ASTincremental/HTML, sem semântica/clusterização. Nenhum SQL, novo login ou dado real; Swagger25operações preservado. [Recibo](frontend-localization-write-verification.json).048continua doing pelos nomes/aliases revisados, contrato/busca/cache eaceites.
+
+- APKdebug0.3.2+15 preparado em37,7s; assinaturaOAuthdebug eSHA256 conferidos. Sem instalar/iniciarAPI/banco/emulador. [Checkpoint](android-localization-write-checkpoint.json).

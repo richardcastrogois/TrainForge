@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização26/10: formulários, privacidade e ajuda localizados
+
+100Dart,3346nós/3864arestas;14alterados/86inalterados/0removidos. ASTincremental code-only eHTML, semclusterização/semântica/LLM;5ARB não interpretados. Backup.local/graphify-backup-20261026-locale-write. [Recibo](execucao/v1/frontend-localization-write-verification.json).
+
 ## Atualização26/10: consultas e resumos localizados
 
 98Dart,2521nós/3029arestas;14alterados/84inalterados/0removidos. ASTincremental code-only eHTML, semclusterização/semântica/LLM;5ARB não interpretados. Backup.local/graphify-backup-20261026-locale-read. [Recibo](execucao/v1/frontend-localization-read-verification.json).

@@ -1,3 +1,5 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
+import 'privacy_feedback.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
@@ -61,53 +63,55 @@ class _PrivacyPageState extends State<PrivacyPage> {
             child: ListView(
               padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               children: [
-                const FigmaPageHeading(
-                  title: 'Privacidade e dados',
-                  subtitle: 'POLÍTICA EFETIVA · CONTROLES DA SUA CONTA',
+                FigmaPageHeading(
+                  title: context.l10n.privacy,
+                  subtitle: context.l10n.privacyUpper,
                 ),
                 if (controller.busy)
-                  const AppProgress(label: 'Processando solicitação de dados'),
+                  AppProgress(label: context.l10n.processingData),
                 if (controller.error != null) ...[
-                  Semantics(liveRegion: true, child: Text(controller.error!)),
+                  Semantics(
+                    liveRegion: true,
+                    child: Text(
+                      localizedPrivacyFeedback(context, controller.error!),
+                    ),
+                  ),
                   const SizedBox(height: 12),
                 ],
                 if (erased != null) ...[
                   Text(
-                    'Conta TrainForge excluída',
+                    context.l10n.accountDeleted,
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 12),
                   Text(erased.backupNotice),
-                  const Text(
-                    'A conta Google permanece ativa. Os dados privados e as sessões desta conta foram removidos da base corrente do TrainForge.',
-                  ),
+                  Text(context.l10n.googleAccountKept),
                   if (erased.cleanupPending) ...[
-                    const Text(
-                      'A exclusão foi confirmada no servidor. Falta concluir a limpeza ou confirmação da sessão neste aparelho.',
-                    ),
+                    Text(context.l10n.erasureLocalPending),
                     FilledButton(
                       onPressed: controller.busy
                           ? null
                           : controller.finishCleanup,
-                      child: const Text('Concluir limpeza local'),
+                      child: Text(context.l10n.finishLocalCleanup),
                     ),
                   ] else
                     FilledButton(
                       onPressed: controller.busy
                           ? null
                           : () => Navigator.maybePop(context),
-                      child: const Text('Concluir'),
+                      child: Text(context.l10n.finish),
                     ),
                 ] else ...[
                   Text(
-                    'Seus dados e seus controles',
+                    context.l10n.dataControls,
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 12),
+                  Text(context.l10n.policyOriginalNotice),
                   if (policy == null && !controller.busy)
                     FilledButton(
                       onPressed: controller.loadPolicy,
-                      child: const Text('Tentar carregar política'),
+                      child: Text(context.l10n.retryPolicy),
                     ),
                   if (policy != null) ...[
                     FigmaSection(
@@ -117,14 +121,14 @@ class _PrivacyPageState extends State<PrivacyPage> {
                           Text(policy.accountDeletion),
                           const SizedBox(height: 12),
                           Text(
-                            'Backups e recuperação',
+                            context.l10n.backupsRecovery,
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                           Text(policy.backupRetention),
                           Text(policy.restoreRequirement),
                           const SizedBox(height: 12),
                           Text(
-                            'Registro mínimo após exclusão',
+                            context.l10n.erasureMinimum,
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                           Text(policy.erasureLedger),
@@ -133,39 +137,33 @@ class _PrivacyPageState extends State<PrivacyPage> {
                           Text(policy.otherServices),
                           Text(policy.futureStorage),
                           const SizedBox(height: 12),
-                          const Text(
-                            'Dados que você copiar ou exportar ficam sob sua gestão; a exclusão da conta não apaga cópias externas ou a área de transferência do aparelho.',
-                          ),
+                          Text(context.l10n.externalCopiesNotice),
                         ],
                       ),
                     ),
                     if (!widget.authenticated) ...[
                       const SizedBox(height: 20),
-                      const Text(
-                        'Entre com Google para consultar os dados da sua conta e solicitar sua exclusão.',
-                      ),
+                      Text(context.l10n.signInPrivacy),
                     ] else ...[
                       const Divider(height: 32),
                       Text(
-                        'Consultar e copiar meus dados',
+                        context.l10n.viewCopyData,
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
-                      const Text(
-                        'Consulta paginada por seção. Cada cópia contém somente a página visível, sem credenciais de acesso.',
-                      ),
+                      Text(context.l10n.exportPageNotice),
                       const SizedBox(height: 12),
                       DropdownButtonFormField<String>(
                         initialValue: controller.section,
                         itemHeight: null,
                         isExpanded: true,
-                        decoration: const InputDecoration(
-                          labelText: 'Seção de dados',
+                        decoration: InputDecoration(
+                          labelText: context.l10n.dataSection,
                         ),
                         items: policy.sections
                             .map(
                               (s) => DropdownMenuItem(
                                 value: s,
-                                child: Text(sectionLabel(s)),
+                                child: Text(sectionLabel(context, s)),
                               ),
                             )
                             .toList(),
@@ -182,17 +180,15 @@ class _PrivacyPageState extends State<PrivacyPage> {
                         onPressed: controller.busy
                             ? null
                             : () => controller.loadExport(),
-                        child: const Text('Consultar seção'),
+                        child: Text(context.l10n.viewSection),
                       ),
                       if (export != null) ...[
                         Text(export.notice),
-                        const Text(
-                          'Esta é somente a página atual. A próxima página substitui a anterior na tela.',
-                        ),
+                        Text(context.l10n.currentPageOnly),
                         if (export.items.isEmpty)
-                          const Padding(
+                          Padding(
                             padding: EdgeInsets.symmetric(vertical: 12),
-                            child: Text('Nenhum registro nesta seção.'),
+                            child: Text(context.l10n.noSectionRecords),
                           )
                         else
                           Card(
@@ -215,34 +211,32 @@ class _PrivacyPageState extends State<PrivacyPage> {
                                         ScaffoldMessenger.of(
                                           context,
                                         ).showSnackBar(
-                                          const SnackBar(
+                                          SnackBar(
                                             content: Text(
-                                              'Página copiada. Ela pode conter dados pessoais.',
+                                              context.l10n.pageCopied,
                                             ),
                                           ),
                                         );
                                       }
                                     },
-                              child: const Text('Copiar esta página JSON'),
+                              child: Text(context.l10n.copyJsonPage),
                             ),
                             if (export.cursor != null)
                               OutlinedButton(
                                 onPressed: controller.busy
                                     ? null
                                     : () => controller.loadExport(next: true),
-                                child: const Text('Próxima página'),
+                                child: Text(context.l10n.nextPage),
                               ),
                           ],
                         ),
                       ],
                       const Divider(height: 32),
                       Text(
-                        'Excluir minha conta TrainForge',
+                        context.l10n.deleteMyAccount,
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
-                      const Text(
-                        'Essa ação remove seus dados correntes e revoga todas as sessões. Leia acima os limites dos backups. Exige uma entrada Google realizada nos últimos 15 minutos.',
-                      ),
+                      Text(context.l10n.deleteAccountNotice),
                       if (widget.reauthenticate != null)
                         OutlinedButton(
                           onPressed: controller.busy
@@ -253,9 +247,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                                     widget.reauthenticate!,
                                   );
                                 },
-                          child: const Text(
-                            'Confirmar conta novamente com Google',
-                          ),
+                          child: Text(context.l10n.confirmGoogleAgain),
                         ),
                       CheckboxListTile(
                         contentPadding: EdgeInsets.zero,
@@ -264,9 +256,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                         onChanged: controller.busy
                             ? null
                             : (v) => setState(() => acknowledged = v ?? false),
-                        title: const Text(
-                          'Li os limites da exclusão, das cópias históricas e da conta Google.',
-                        ),
+                        title: Text(context.l10n.readDeletionLimits),
                       ),
                       if (controller.deletionIntent == null)
                         OutlinedButton(
@@ -276,14 +266,10 @@ class _PrivacyPageState extends State<PrivacyPage> {
                                   confirmation.clear();
                                   controller.requestDeletion();
                                 },
-                          child: const Text(
-                            'Solicitar confirmação de exclusão',
-                          ),
+                          child: Text(context.l10n.requestDeletionIntent),
                         )
                       else ...[
-                        const Text(
-                          'Confirmação temporária criada para esta sessão. Digite a frase abaixo; ela expira em até 5 minutos.',
-                        ),
+                        Text(context.l10n.temporaryDeletionNotice),
                         TextField(
                           controller: confirmation,
                           enabled: !controller.busy,
@@ -291,7 +277,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                           textCapitalization: TextCapitalization.characters,
                           autocorrect: false,
                           enableSuggestions: false,
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             labelText: 'EXCLUIR MINHA CONTA',
                           ),
                           onChanged: (_) => setState(() {}),
@@ -312,7 +298,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                                   confirmation.text != 'EXCLUIR MINHA CONTA'
                               ? null
                               : () => controller.erase(confirmation.text),
-                          child: const Text('Excluir minha conta e seus dados'),
+                          child: Text(context.l10n.deleteAccountData),
                         ),
                         TextButton(
                           onPressed: controller.busy
@@ -321,7 +307,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
                                   confirmation.clear();
                                   controller.cancelDeletion();
                                 },
-                          child: const Text('Cancelar exclusão'),
+                          child: Text(context.l10n.cancelDeletion),
                         ),
                       ],
                     ],
@@ -336,14 +322,14 @@ class _PrivacyPageState extends State<PrivacyPage> {
   );
 }
 
-String sectionLabel(String section) => switch (section) {
-  'account' => 'Conta',
-  'sessions' => 'Sessões de acesso',
-  'enrollments' => 'Adesões',
-  'occurrences' => 'Agenda',
-  'activitySessions' => 'Atividades',
-  'activityEvents' => 'Eventos de atividade',
-  'foods' => 'Alimentos próprios',
-  'foodEntries' => 'Registros de consumo',
+String sectionLabel(BuildContext context, String section) => switch (section) {
+  'account' => context.l10n.privacySectionAccount,
+  'sessions' => context.l10n.privacySectionSessions,
+  'enrollments' => context.l10n.privacySectionEnrollments,
+  'occurrences' => context.l10n.privacySectionSchedule,
+  'activitySessions' => context.l10n.privacySectionActivities,
+  'activityEvents' => context.l10n.privacySectionEvents,
+  'foods' => context.l10n.privacySectionFoods,
+  'foodEntries' => context.l10n.privacySectionIntakes,
   _ => section,
 };

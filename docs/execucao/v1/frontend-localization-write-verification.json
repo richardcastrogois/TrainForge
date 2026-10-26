@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "story": "V1-048",
+  "status": "partial",
+  "sourceBaseCommit": "5f1cbb7",
+  "scope": "Formulários, histórico e correção/exclusão alimentar; controles de privacidade, rascunhos e ajuda nos quatro idiomas.",
+  "resourceMessagesPerLocale": 486,
+  "checks": [
+    {
+      "command": "flutter analyze --no-pub",
+      "result": "passed",
+      "issues": 0
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded",
+      "result": "passed",
+      "passed": 153
+    },
+    {
+      "command": "flutter test --no-pub test/nutrition_localization_test.dart --reporter expanded",
+      "result": "passed",
+      "passed": 21
+    }
+  ],
+  "behavior": [
+    "Troca de idioma durante envio incerto preserva rascunho, corpo congelado, quantidade decimal canônica, IDs, versão e chave idempotente. Repetição segura usa o mesmo corpo/chave.",
+    "Quantidade medida/estimada agora usa duas opções visíveis obrigatórias: corrigida asserção do menu com texto inglês longo em 320px e fonte200%. Não mudou o contrato measured/estimated.",
+    "Cadastro particular distingue nutriente desconhecido(null) e zero(string0), sem registrar consumo; nomes declarados permanecem originais.",
+    "Cancelamento de exclusão não envia DELETE nem modifica a fixture; diálogo rolável em fonte200%.",
+    "Controles de privacidade/erros estão localizados; política efetiva e exportação originais preservadas com aviso explícito. Frase canônica EXCLUIR MINHA CONTA não é traduzida nem substituída no contrato.",
+    "Ajuda reflete idioma/aparência locais disponíveis e cuidador como praticante para si nas pausas."
+  ],
+  "evidence": [
+    "test/nutrition_localization_test.dart",
+    "test/nutrition_test.dart",
+    "lib/features/nutrition/presentation/nutrition_feedback.dart",
+    "lib/features/privacy/presentation/privacy_feedback.dart"
+  ],
+  "previews": {
+    "count": 2,
+    "localOnly": true,
+    "inspected": [
+      ".local/localization/portion-en.png"
+    ],
+    "fixtureOnly": true
+  },
+  "limits": [
+    "V1-048 continua doing: faltam modelo Go/SQL/cliente de nomes e aliases revisados, busca/paginação/cache por idioma/versão, cobertura editorial e aceites.",
+    "Política efetiva, avisos retornados pela API, valores e créditos de fonte permanecem originais. Nomes alimentares não foram traduzidos nem publicados por esta alteração.",
+    "153 testes não são aceite humano nem execução nativa iOS. Nenhuma gravação em banco, novo login ou exclusão real.",
+    "Sem mudança de API/migration neste incremento; Swagger de25 operações preservado."
+  ],
+  "graph": {
+    "dartFiles": 100,
+    "nodes": 3346,
+    "edges": 3864,
+    "changed": 14,
+    "unchanged": 86,
+    "deleted": 0,
+    "mode": "AST incremental code-only e HTML; sem clusterização, semântica ou LLM;5ARB não interpretados"
+  },
+  "apk": {
+    "version": "0.3.2+15",
+    "receipt": "docs/execucao/v1/android-localization-write-checkpoint.json",
+    "installed": false
+  }
+}

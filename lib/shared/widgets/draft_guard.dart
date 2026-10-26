@@ -1,3 +1,4 @@
+import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 
@@ -35,24 +36,26 @@ class DraftGuardState extends State<DraftGuard> {
       builder: (context) => AlertDialog(
         scrollable: true,
         title: Text(
-          widget.uncertain ? 'Conferir antes de sair' : 'Sair sem salvar?',
+          widget.uncertain
+              ? context.l10n.checkBeforeLeaving
+              : context.l10n.leaveUnsaved,
         ),
         content: Text(
           widget.uncertain
-              ? 'A resposta do envio ainda não foi confirmada. Sair não cancela a solicitação. Confira o histórico antes de criar outro registro; para repetir com segurança, permaneça e use a mesma confirmação.'
-              : 'As alterações deste formulário ainda não foram salvas. Você pode continuar preenchendo ou descartar somente este rascunho.',
+              ? context.l10n.uncertainDraftNotice
+              : context.l10n.unsavedDraftNotice,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Continuar preenchendo'),
+            child: Text(context.l10n.continueEditing),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(context, true),
             child: Text(
               widget.uncertain
-                  ? 'Sair e conferir histórico'
-                  : 'Descartar rascunho',
+                  ? context.l10n.leaveCheckHistory
+                  : context.l10n.discardDraft,
             ),
           ),
         ],

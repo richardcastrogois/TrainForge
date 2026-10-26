@@ -974,4 +974,693 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get originalLanguage => 'Idioma original';
+
+  @override
+  String get portionYours => 'Tu porción.';
+
+  @override
+  String get correctIntake => 'Corregir consumo';
+
+  @override
+  String get quantity => 'Cantidad';
+
+  @override
+  String get consumedQuantity => 'Cantidad consumida';
+
+  @override
+  String get enterQuantity => 'Introduce la cantidad';
+
+  @override
+  String get positiveQuantity =>
+      'Introduce una cantidad mayor que cero, con hasta 6 decimales.';
+
+  @override
+  String get quantityUnit => 'Unidad de la cantidad';
+
+  @override
+  String get grams => 'Gramos (g)';
+
+  @override
+  String get milliliters => 'Mililitros (ml)';
+
+  @override
+  String get quantityHow => '¿Cómo obtuviste la cantidad?';
+
+  @override
+  String get measuredChoice => 'La medí con una báscula o recipiente';
+
+  @override
+  String get estimatedChoice => 'Hice una estimación';
+
+  @override
+  String get chooseEvidence => 'Elige medida o estimada.';
+
+  @override
+  String get portionComposition => 'Composición de la porción';
+
+  @override
+  String get calculationOnSave =>
+      'La API confirma el cálculo al guardar. Los valores desconocidos no se convierten en cero; no se suman métodos ni unidades diferentes.';
+
+  @override
+  String get originPreparation => 'Origen y preparación';
+
+  @override
+  String get sourceVersion => 'Fuente y versión';
+
+  @override
+  String get origin => 'Origen';
+
+  @override
+  String get observedPreparation => 'Preparación observada (opcional)';
+
+  @override
+  String get preparationNote =>
+      'La preparación es una anotación tuya y no cambia la composición de la fuente. No se convierten gramos en mililitros sin una densidad comprobada.';
+
+  @override
+  String get deviceDateConfirmed =>
+      'Fecha y hora del dispositivo, confirmadas por ti.';
+
+  @override
+  String get intakeConfirmationNotice =>
+      'Confirma solo lo que consumiste. No se prescribe una dieta ni se compensa el ejercicio. Las cantidades estimadas se identificarán como estimadas.';
+
+  @override
+  String get intakeUncertain =>
+      'La respuesta aún no se ha confirmado. Reintenta con los mismos datos o vuelve para revisar el historial.';
+
+  @override
+  String get confirming => 'Confirmando…';
+
+  @override
+  String get retryConfirmation => 'Reintentar confirmación';
+
+  @override
+  String get confirmIntake => 'Confirmar consumo';
+
+  @override
+  String get confirmCorrection => 'Confirmar corrección';
+
+  @override
+  String get createOwnFood => 'Crear alimento propio';
+
+  @override
+  String get ownDataUpper => 'PRIVADO · DATOS INDICADOS POR TI';
+
+  @override
+  String get foodIdentity => 'Identidad del alimento';
+
+  @override
+  String get ownFoodNotice =>
+      'Registro privado, separado del catálogo público. Crear este alimento no registra consumo ni implica revisión editorial o clínica.';
+
+  @override
+  String get foodName => 'Nombre del alimento';
+
+  @override
+  String get enterName => 'Introduce el nombre.';
+
+  @override
+  String get declaredPreparation => 'Preparación declarada (opcional)';
+
+  @override
+  String get compositionBasis => 'Base de la composición';
+
+  @override
+  String get basisNotice =>
+      'Si la conoces, indica la base a la que se refieren los nutrientes. Deja en blanco lo que no sabes. La ausencia no significa cero.';
+
+  @override
+  String get optionalBasisQuantity => 'Cantidad de la base (opcional)';
+
+  @override
+  String get positiveBasis => 'La base debe ser mayor que cero.';
+
+  @override
+  String get basisUnit => 'Unidad de la base';
+
+  @override
+  String get declaredNutrients => 'Nutrientes declarados';
+
+  @override
+  String get noAssumedNutrients =>
+      'No supongas valores. Un campo vacío conserva el valor desconocido; introducir 0 declara cero.';
+
+  @override
+  String get nutrientName => 'Nombre del nutriente';
+
+  @override
+  String get enterNutrientName => 'Introduce el nombre del nutriente.';
+
+  @override
+  String get optionalBasisValue => 'Valor en la base (opcional)';
+
+  @override
+  String get decimalOrUnknown => 'Introduce un decimal o déjalo desconocido.';
+
+  @override
+  String get nutrientUnit => 'Unidad del nutriente';
+
+  @override
+  String get removeField => 'Eliminar este campo';
+
+  @override
+  String get addNutrient => 'Añadir un nutriente conocido o desconocido';
+
+  @override
+  String get ownFoodUncertain =>
+      'Respuesta no confirmada. Reintenta con los mismos datos para evitar duplicados.';
+
+  @override
+  String get saveFoodOnly => 'Guardar solo el alimento';
+
+  @override
+  String get ownFoodSaved =>
+      'Alimento privado guardado. No se ha registrado consumo.';
+
+  @override
+  String get intake => 'Consumo';
+
+  @override
+  String get myFoods => 'Mis alimentos';
+
+  @override
+  String get confirmedDiaryUpper => 'DIARIO · REGISTROS CONFIRMADOS POR TI';
+
+  @override
+  String get searchRecordFood => 'Buscar alimento y registrar consumo';
+
+  @override
+  String get diaryNoPrescription =>
+      'Registros confirmados por ti. No se crea una dieta, objetivo ni compensación por ejercicio.';
+
+  @override
+  String get loadingNutrition => 'Consultando alimentación';
+
+  @override
+  String get noIntakeDay => 'No hay consumo registrado en este día.';
+
+  @override
+  String get noIntakeHint =>
+      'Elige otra fecha o busca un alimento para registrar lo que consumiste. La ausencia de registros no significa consumo cero.';
+
+  @override
+  String get measuredShort => 'medida';
+
+  @override
+  String get estimatedShort => 'estimada';
+
+  @override
+  String get moreRecords => 'Cargar más registros';
+
+  @override
+  String get subtotalLimit => 'Límite de subtotal superado';
+
+  @override
+  String get unknownValue => 'Desconocido';
+
+  @override
+  String get column => 'Columna';
+
+  @override
+  String get privateFoodsUpper => 'ALIMENTOS PRIVADOS · NO PUBLICADOS';
+
+  @override
+  String get privateFoodsHint =>
+      'Solo tus alimentos privados. Crear un alimento no registra consumo ni lo publica en el catálogo.';
+
+  @override
+  String get searchMyFoods => 'Buscar en mis alimentos';
+
+  @override
+  String get loadingPrivateFoods => 'Consultando alimentos privados';
+
+  @override
+  String get noPrivateResults =>
+      'Ningún alimento propio coincide con la búsqueda.';
+
+  @override
+  String get noPrivateHint =>
+      'Busca otro nombre o crea un alimento privado. Introduce solo los datos conocidos; no supongas nutrientes.';
+
+  @override
+  String get privatePortionHint => 'Privado · toca para indicar una porción';
+
+  @override
+  String get morePrivateFoods => 'Cargar más alimentos propios';
+
+  @override
+  String get deleteIntakeQuestion => '¿Eliminar este consumo?';
+
+  @override
+  String get deleteIntakeNotice =>
+      'Se eliminará de los subtotales y del historial activo. El registro y sus correcciones seguirán siendo privados en la exportación hasta eliminar la cuenta. El alimento guardado permanece.';
+
+  @override
+  String get deleteIntake => 'Eliminar consumo';
+
+  @override
+  String get intakeConfirmed => 'Consumo confirmado';
+
+  @override
+  String get privateDiaryUpper => 'DIARIO · REGISTRO PRIVADO';
+
+  @override
+  String get quantityMeasured => 'Cantidad medida';
+
+  @override
+  String get quantityEstimated => 'Cantidad estimada';
+
+  @override
+  String get deviceTime => 'Hora en este dispositivo';
+
+  @override
+  String get recordedZone => 'Zona horaria indicada en el registro';
+
+  @override
+  String get notedPreparation => 'Preparación anotada';
+
+  @override
+  String get compositionOrigin => 'Origen de la composición';
+
+  @override
+  String get preservedCalculation => 'Origen y cálculo conservados';
+
+  @override
+  String get method => 'Método';
+
+  @override
+  String get fractionNotice =>
+      'Se conserva la fracción exacta. Se muestran valores redondeados a 6 decimales. Trazas, límites, unidades incompatibles y bases ausentes no se convierten en cero. La preparación no cambia la composición.';
+
+  @override
+  String get requestUnconfirmed => 'Solicitud no confirmada';
+
+  @override
+  String get correctIntakeAction => 'Corregir cantidad, preparación u hora';
+
+  @override
+  String get deleteThisIntake => 'Eliminar este consumo';
+
+  @override
+  String get thisPortionComposition => 'Composición de esta porción';
+
+  @override
+  String get portionSourceNotice =>
+      'Estos valores pertenecen a la versión y al método de la fuente. Desconocido no significa cero.';
+
+  @override
+  String get reason => 'Motivo';
+
+  @override
+  String get basisOriginalCalculation => 'Base, valor original y cálculo';
+
+  @override
+  String get originalState => 'Estado original';
+
+  @override
+  String get cell => 'celda';
+
+  @override
+  String get limit => 'límite';
+
+  @override
+  String get basis => 'Base';
+
+  @override
+  String get factor => 'Factor';
+
+  @override
+  String get notCalculable => 'no calculable';
+
+  @override
+  String get exactFraction => 'Fracción exacta';
+
+  @override
+  String get preparation => 'Preparación';
+
+  @override
+  String get checkBeforeLeaving => 'Revisar antes de salir';
+
+  @override
+  String get leaveUnsaved => '¿Salir sin guardar?';
+
+  @override
+  String get uncertainDraftNotice =>
+      'La respuesta al envío aún no se ha confirmado. Salir no cancela la solicitud. Revisa el historial antes de crear otro registro; para reintentar con seguridad, permanece y usa la misma confirmación.';
+
+  @override
+  String get unsavedDraftNotice =>
+      'Los cambios de este formulario aún no se han guardado. Puedes seguir rellenándolo o descartar solo este borrador.';
+
+  @override
+  String get continueEditing => 'Seguir editando';
+
+  @override
+  String get leaveCheckHistory => 'Salir y revisar historial';
+
+  @override
+  String get discardDraft => 'Descartar borrador';
+
+  @override
+  String get quantityEvidenceRequired =>
+      'Introduce la cantidad e indica si fue medida o estimada.';
+
+  @override
+  String get nutritionAccountChanged =>
+      'La cuenta ha cambiado. Vuelve a la entrada antes de continuar.';
+
+  @override
+  String get nutritionCheckFields =>
+      'Revisa la cantidad, unidad, fecha, preparación y los campos introducidos.';
+
+  @override
+  String get nutritionUnavailable =>
+      'El alimento o registro no está disponible. Actualiza la consulta.';
+
+  @override
+  String get nutritionConflict =>
+      'El registro o la cuenta ha cambiado. Actualiza el historial antes de corregirlo.';
+
+  @override
+  String get nutritionRetrySafe =>
+      'No se ha podido confirmar la acción. Revisa la conexión y reintenta. Repetir la misma acción no duplica el registro.';
+
+  @override
+  String get nutritionActionFailed =>
+      'No se ha podido confirmar la acción. Inténtalo de nuevo.';
+
+  @override
+  String daySubtotalCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count registros',
+      one: '1 registro',
+    );
+    return 'Subtotales del día · $_temp0';
+  }
+
+  @override
+  String nutrientCoverage(int included, int unknown) {
+    return '$included incluidos · $unknown sin valor calculable';
+  }
+
+  @override
+  String previousCorrections(int count) {
+    return 'Correcciones anteriores ($count)';
+  }
+
+  @override
+  String revision(int number) {
+    return 'Revisión $number';
+  }
+
+  @override
+  String get subtotalNotice =>
+      'Subtotales por columna y método de la fuente; no sumes métodos ni unidades diferentes. Las cantidades estimadas siguen siendo estimadas; la ausencia no es cero. Se muestran valores redondeados a 6 decimales y se conservan las fracciones exactas. Sin objetivos ni compensación por ejercicio.';
+
+  @override
+  String get privacyUpper => 'POLÍTICA VIGENTE · CONTROLES DE TU CUENTA';
+
+  @override
+  String get processingData => 'Procesando solicitud de datos';
+
+  @override
+  String get accountDeleted => 'Cuenta TrainForge eliminada';
+
+  @override
+  String get googleAccountKept =>
+      'La cuenta Google permanece activa. Los datos privados y las sesiones de esta cuenta se eliminaron de la base actual de TrainForge.';
+
+  @override
+  String get erasureLocalPending =>
+      'El servidor confirmó la eliminación. Falta completar la limpieza o confirmación de sesión en este dispositivo.';
+
+  @override
+  String get finishLocalCleanup => 'Completar limpieza local';
+
+  @override
+  String get finish => 'Finalizar';
+
+  @override
+  String get dataControls => 'Tus datos y controles';
+
+  @override
+  String get retryPolicy => 'Reintentar cargar política';
+
+  @override
+  String get backupsRecovery => 'Copias de seguridad y recuperación';
+
+  @override
+  String get erasureMinimum => 'Registro mínimo tras la eliminación';
+
+  @override
+  String get externalCopiesNotice =>
+      'Los datos que copies o exportes quedan bajo tu gestión; eliminar la cuenta no borra copias externas ni el portapapeles del dispositivo.';
+
+  @override
+  String get signInPrivacy =>
+      'Entra con Google para consultar los datos de tu cuenta y solicitar su eliminación.';
+
+  @override
+  String get viewCopyData => 'Consultar y copiar mis datos';
+
+  @override
+  String get exportPageNotice =>
+      'Consulta paginada por sección. Cada copia contiene solo la página visible, sin credenciales de acceso.';
+
+  @override
+  String get dataSection => 'Sección de datos';
+
+  @override
+  String get viewSection => 'Consultar sección';
+
+  @override
+  String get currentPageOnly =>
+      'Esta es solo la página actual. La página siguiente sustituye a la anterior en pantalla.';
+
+  @override
+  String get noSectionRecords => 'No hay registros en esta sección.';
+
+  @override
+  String get pageCopied => 'Página copiada. Puede contener datos personales.';
+
+  @override
+  String get copyJsonPage => 'Copiar esta página JSON';
+
+  @override
+  String get nextPage => 'Página siguiente';
+
+  @override
+  String get deleteMyAccount => 'Eliminar mi cuenta TrainForge';
+
+  @override
+  String get deleteAccountNotice =>
+      'Esta acción elimina tus datos actuales y revoca todas las sesiones. Lee los límites de las copias de seguridad. Requiere haber entrado con Google en los últimos 15 minutos.';
+
+  @override
+  String get confirmGoogleAgain => 'Confirmar cuenta de nuevo con Google';
+
+  @override
+  String get readDeletionLimits =>
+      'He leído los límites de la eliminación, las copias históricas y la cuenta Google.';
+
+  @override
+  String get requestDeletionIntent => 'Solicitar confirmación de eliminación';
+
+  @override
+  String get temporaryDeletionNotice =>
+      'Se ha creado una confirmación temporal para esta sesión. Escribe la frase exacta de abajo; caduca en un máximo de 5 minutos.';
+
+  @override
+  String get deleteAccountData => 'Eliminar mi cuenta y sus datos';
+
+  @override
+  String get cancelDeletion => 'Cancelar eliminación';
+
+  @override
+  String get policyOriginalNotice =>
+      'El texto vigente de la política y los avisos de la API se muestran en su idioma original. Los datos exportados también conservan los valores originales.';
+
+  @override
+  String get privacySectionAccount => 'Cuenta';
+
+  @override
+  String get privacySectionSessions => 'Sesiones de acceso';
+
+  @override
+  String get privacySectionEnrollments => 'Inscripciones';
+
+  @override
+  String get privacySectionSchedule => 'Agenda';
+
+  @override
+  String get privacySectionActivities => 'Actividades';
+
+  @override
+  String get privacySectionEvents => 'Eventos de actividad';
+
+  @override
+  String get privacySectionFoods => 'Alimentos propios';
+
+  @override
+  String get privacySectionIntakes => 'Registros de consumo';
+
+  @override
+  String get privacyConfirmPhrase =>
+      'Escribe EXCLUIR MINHA CONTA para confirmar.';
+
+  @override
+  String get privacyRecentLogin =>
+      'Confirma tu cuenta con Google de nuevo para autorizar la eliminación.';
+
+  @override
+  String get privacySessionConfirm =>
+      'Tu sesión necesita confirmación. Entra de nuevo con Google.';
+
+  @override
+  String get privacyIntentExpired =>
+      'La confirmación ha caducado o no pertenece a esta sesión. Solicita una nueva confirmación.';
+
+  @override
+  String get privacyCleanupPending =>
+      'La cuenta ya se ha eliminado. La limpieza local sigue pendiente.';
+
+  @override
+  String get privacyDeletionUnconfirmed =>
+      'No se ha podido confirmar la eliminación. Revisa la conexión e inténtalo de nuevo.';
+
+  @override
+  String get privacyQueryFailed =>
+      'No se han podido consultar los datos. Revisa la conexión e inténtalo de nuevo.';
+
+  @override
+  String get privacyActionFailed =>
+      'No se ha podido completar la acción. Inténtalo de nuevo.';
+
+  @override
+  String get understood => 'Entendido';
+
+  @override
+  String get startingPoint => 'Tu punto de partida';
+
+  @override
+  String get activityProgress => 'Actividad y evolución';
+
+  @override
+  String get accountPreferences => 'Cuenta y preferencias';
+
+  @override
+  String get versionHelp => 'Ayuda de esta versión';
+
+  @override
+  String get evaluationUpper => 'VERSIÓN DE EVALUACIÓN · DISPONIBILIDAD REAL';
+
+  @override
+  String get exploreWithoutSetup => 'Explora sin configurar';
+
+  @override
+  String get exploreWithoutSetupHint =>
+      'Ya puedes consultar la biblioteca de movimientos y la composición de alimentos. Entra con Google para tus registros privados de alimentación.';
+
+  @override
+  String get setupNotAvailable => 'Configuración aún no disponible';
+
+  @override
+  String get setupNotAvailableHint =>
+      'Áreas, objetivos, entornos, experiencia, rutina y revisión aún no se guardan en esta versión. Ninguna elección se ha inferido de la cuenta Google. No hay una configuración obligatoria simulada para acceder a la navegación.';
+
+  @override
+  String get scopeCaregivers =>
+      'Casa, parques y gimnasio siguen en el alcance, al igual que personas mayores y cuidadores. El foco es que los cuidadores entrenen para sí mismos durante las pausas de trabajo. La biblioteca no determina adecuación clínica ni elegibilidad.';
+
+  @override
+  String get noActivityRecording => 'Aún sin registro de actividad';
+
+  @override
+  String get noActivityRecordingHint =>
+      'Iniciar, pausar, finalizar y consultar una actividad dependen del servicio de registro. Esta versión no crea series, dosis, sesiones, rutas, gasto ni finalización de entrenamientos.';
+
+  @override
+  String get permissionsDevices => 'Permisos y dispositivos';
+
+  @override
+  String get permissionsDevicesHint =>
+      'GPS, sensores, Health Connect y cámara no están integrados. Esta pantalla no solicita permisos ni recoge ubicación, imágenes ni datos de dispositivos. El registro por imagen y OCR tampoco están disponibles.';
+
+  @override
+  String get historyProgress => 'Historial y evolución';
+
+  @override
+  String get historyProgressHint =>
+      'Gráficos, períodos de actividad, medidas y objetivos requieren registros y cálculos propios. La falta de implementación no significa actividad cero. El historial alimentario confirmado sigue accesible en el Diario.';
+
+  @override
+  String get googleIdentity => 'Identidad de Google';
+
+  @override
+  String get googleIdentityHint =>
+      'El nombre y correo son los confirmados al entrar. Su edición en TrainForge aún no está disponible. La confirmación de conexión, cierre de sesión, exportación y eliminación tienen acciones propias en el perfil.';
+
+  @override
+  String get devicePreferences => 'Preferencias del dispositivo';
+
+  @override
+  String get devicePreferencesHint =>
+      'Claro, oscuro, seguir dispositivo e idioma están disponibles en preferencias. Estas elecciones se guardan en este dispositivo y están separadas de la cuenta. Unidades, medidas y objetivos aún no tienen edición persistida. Los alimentos conservan nombres, bases y unidades de la fuente hasta disponer de traducciones revisadas.';
+
+  @override
+  String get whatToTest => 'Lo que ya puedes probar';
+
+  @override
+  String get whatToTestHint =>
+      'Entrar con Google, consultar movimientos y alimentos, crear alimentos privados y registrar lo consumido. El Diario permite revisar el origen, corregir y eliminar consumo; Privacidad permite consultar y copiar páginas de tus datos.';
+
+  @override
+  String get faq => 'Preguntas frecuentes';
+
+  @override
+  String get whyOriginalNames => '¿Por qué hay nombres en francés e inglés?';
+
+  @override
+  String get whyOriginalNamesHint =>
+      'Son nombres originales de Ciqual y CoFID. No creamos traducciones que puedan cambiar la identidad del alimento.';
+
+  @override
+  String get unknownMeansZero =>
+      '¿Una traza o un valor desconocido significa cero?';
+
+  @override
+  String get unknownMeansZeroHint =>
+      'No. Las bases ausentes, los valores desconocidos, los límites y los métodos diferentes siguen explícitos. Las cantidades estimadas también se identifican.';
+
+  @override
+  String get libraryGuidesTraining =>
+      '¿La biblioteca ya guía mi entrenamiento?';
+
+  @override
+  String get libraryGuidesTrainingHint =>
+      'Todavía no. Los metadatos son solo de consulta; no hay programas, dosis, instrucciones ni medios aprobados para la práctica.';
+
+  @override
+  String get reportProblem => '¿Cómo informar de un problema?';
+
+  @override
+  String get reportProblemHint =>
+      'Anota la pantalla, la acción y el resultado esperado para la evaluación. Oculta correo, datos personales y registros antes de compartir capturas. El envío de comentarios desde la aplicación aún no está implementado.';
+
+  @override
+  String get evaluationConditions => 'Condiciones de esta evaluación';
+
+  @override
+  String get evaluationConditionsHint =>
+      'La política de datos vigente viene de la API en Privacidad y datos. Faltan por definir las condiciones de producción y el canal de soporte; este texto no sustituye esos documentos. No hay prescripción, reconocimiento de alimentos por foto ni objetivos automáticos.';
+
+  @override
+  String get browseLibrary => 'Consultar biblioteca';
+
+  @override
+  String get browseFoods => 'Consultar alimentos';
 }
