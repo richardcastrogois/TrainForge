@@ -223,8 +223,51 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 			t.Fatal("name crossed locale boundary instead of original fallback")
 		}
 	}
-	if _, err = writer.Exec(ctx, "INSERT INTO trainforge_v1.food_name_withdrawals(food_id,food_version_sha,locale,version_sha,reason) VALUES($1,$2,$3,$4,'latest isolated fixture withdrawn')", n.FoodID, n.FoodVersion, n.Locale, newest); err != nil {
-		t.Fatal("latest withdrawal fixture failed")
+	coverage, err := ReadFoodNameCoverage(ctx, runtime)
+	if err != nil || len(coverage.Locales) != 4 || len(coverage.Sources) == 0 {
+		t.Fatal("coverage unavailable")
+	}
+	for _, row := range coverage.Locales {
+		if row.Foods != 2 || (row.Locale == "pt-BR" && (row.Active != 2 || row.Fallback != 0)) || (row.Locale != "pt-BR" && (row.Active != 0 || row.Fallback != 2)) {
+			t.Fatal("coverage crossed locale or mixed food identities")
+		}
+	}
+	decision := []byte("isolated withdrawal evidence")
+	withdrawal := fixtureWithdrawal()
+	withdrawal.FoodID = n.FoodID
+	withdrawal.FoodVersion = n.FoodVersion
+	withdrawal.NameVersion = newest
+	if _, err = StoreFoodNameWithdrawal(ctx, runtime, withdrawal, decision, namesNow); !errors.Is(err, ErrFoodUnavailable) {
+		t.Fatal("runtime withdrew editorial name")
+	}
+	inserted, err = StoreFoodNameWithdrawal(ctx, writer, withdrawal, decision, namesNow)
+	if err != nil || !inserted {
+		t.Fatal("operator withdrawal failed")
+	}
+	var revisionBefore string
+	writer.QueryRow(ctx, "SELECT revision::text FROM trainforge_v1.food_name_catalogs WHERE locale='pt-BR'").Scan(&revisionBefore)
+	inserted, err = StoreFoodNameWithdrawal(ctx, writer, withdrawal, decision, namesNow)
+	if err != nil || inserted {
+		t.Fatal("withdrawal replay was not idempotent")
+	}
+	var revisionAfter string
+	writer.QueryRow(ctx, "SELECT revision::text FROM trainforge_v1.food_name_catalogs WHERE locale='pt-BR'").Scan(&revisionAfter)
+	if revisionBefore == "" || revisionAfter != revisionBefore {
+		t.Fatal("withdrawal replay changed revision")
+	}
+	conflicting := withdrawal
+	conflicting.Reason = "A replacement reason"
+	if _, err = StoreFoodNameWithdrawal(ctx, writer, conflicting, decision, namesNow); !errors.Is(err, ErrFoodNames) {
+		t.Fatal("withdrawal decision was overwritten")
+	}
+	coverage, err = ReadFoodNameCoverage(ctx, runtime)
+	if err != nil {
+		t.Fatal("post-withdrawal coverage unavailable")
+	}
+	for _, row := range coverage.Locales {
+		if row.Locale == "pt-BR" && (row.Foods != 2 || row.Active != 1 || row.Withdrawn != 1 || row.Fallback != 1 || row.Version != revisionAfter) {
+			t.Fatal("coverage revived older translation or lost revision")
+		}
 	}
 	resolved, err = resolver.Resolve(ctx, []FoodNameTarget{target}, "pt-BR")
 	if err != nil || len(resolved) != 0 {
@@ -241,12 +284,13 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 		t.Fatal("withdrawal crossed another food identity")
 	}
 
+	assertFoodNamesOperatorCLI(t, dsn, os.Getenv("TF_FOOD_NAMES_TEST_RUNTIME_URL"), n, evidence)
+
 	var after string
 	if writer.QueryRow(ctx, "SELECT row_to_json(v)::text FROM trainforge_v1.food_versions v WHERE food_id=$1", f.food.ID).Scan(&after) != nil || after != before {
 		t.Fatal("original source was modified")
 	}
-	// Public read behavior is unchanged: no projection of reviewed names until the
-	// locale/version/withdrawal contract is implemented as a separate increment.
+	// The original-only reader remains unchanged by editorial publication/withdrawal.
 	detail, err := (FoodPostgres{runtime}).Detail(ctx, n.FoodID, n.FoodVersion)
 	if err != nil || detail.Name != f.food.Name || detail.VersionID != n.FoodVersion {
 		t.Fatal("public original projection changed")

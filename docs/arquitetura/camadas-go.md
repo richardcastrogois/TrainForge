@@ -1,6 +1,6 @@
 # Camadas e responsabilidades do backend Go
 
-Conferida em **26/10/2026**: fundação, autenticação, catálogo HTTP, importação e consulta alimentar, cadastro particular, consumo/revisões/subtotais, privacidade e leitura de nomes revisados implementados na API **0.6.1 / 25 operações**. Base local em schema 11 / 26 tabelas. Publicação editorial operacional, adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (auth, catalog, activity, nutrition, privacy), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo, sem chamadas de rede entre elas.
+Conferida em **26/10/2026**: fundação, autenticação, catálogo HTTP, importação e consulta alimentar, cadastro particular, consumo/revisões/subtotais, privacidade e leitura de nomes revisados implementados na API **0.6.1 / 25 operações**. Base local em schema 11 / 26 tabelas. Ferramenta editorial local entregue; adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (auth, catalog, activity, nutrition, privacy), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo, sem chamadas de rede entre elas.
 
 ```mermaid
 flowchart LR
@@ -11,6 +11,11 @@ flowchart LR
     application --> port["Interface de persistência necessária ao serviço"]
     postgres["Repository PostgreSQL: SQL e transação"] -.->|"implementa"| port
     postgres --> database["PostgreSQL"]
+    operator["Operador: revisão humana e direitos conferidos"] --> cli["food-names: pacote limitado e confirmação exata"]
+    cli --> nameStore["Nutrition: nomes imutáveis ou retirada"]
+    nameStore --> database
+    cli --> coverage["Coverage: transação somente leitura"]
+    coverage --> database
 ```
 
 O diagrama expressa a separação de responsabilidades; não afirma que cada operação já possui todas essas camadas. Exceção atual:na escrita alimentar, EntryHandler usa NutritionStore concreto, com SQL/transações em postgres_entries.go e cálculo/regras em entries.go; a fronteira de caso de uso/interface ainda precisa de refinamento ao expandir o módulo. Ver a [auditoria do produto](../execucao/v1/auditoria-produto-2026-10-24.md).
@@ -46,7 +51,7 @@ O esquema ilustra nomes e fronteiras; arquivos separados só quando houver respo
 
 ## Fronteira dos nomes revisados
 
-O contrato editorial e a validação ficam em names.go; a escrita transacional restrita ao operador em names_postgres.go; a resolução em lote e a projeção pública em names_read.go/names_localized.go. O runtime recebe somente leitura das tabelas editoriais. Hashes vinculam os documentos de revisão e direitos, mas não provam a identidade humana nem a validade jurídica: a publicação continua dependendo dessa verificação. Flutter usa um contrato tipado opcional separado do repositório original; IDs, versões, base e nutrientes não são reescritos para traduzir.
+O contrato editorial e a validação ficam em names.go; a escrita transacional restrita ao operador em names_postgres.go; a resolução em lote e a projeção pública em names_read.go/names_localized.go. O runtime recebe somente leitura das tabelas editoriais. A composição de CLI fica em cmd/food-names e internal/foodnamesops; o loader lê pacotes limitados, sem rede, e usa as regras e primitivas de persistência do módulo nutrition. Retirada e cobertura ficam em names_withdraw.go e names_coverage.go. Não há endpoint editorial, novo serviço ou migration nesta fatia. Hashes vinculam os documentos de revisão e direitos, mas não provam a identidade humana nem a validade jurídica: a publicação continua dependendo dessa verificação. Flutter usa um contrato tipado opcional separado do repositório original; IDs, versões, base e nutrientes não são reescritos para traduzir.
 
 A migration 00011 corrige somente o idioma de novos nomes particulares sem declaração explícita para und. A função mantém autorização, locks e limites; registros históricos não são reescritos.
 

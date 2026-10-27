@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0e61188c19be9ed5`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `8c3681f6875b9acc`.
 
-Arquivos Go de aplicação encontrados: **44**. Registros net/http literais: **26**.
+Arquivos Go de aplicação encontrados: **49**. Registros net/http literais: **26**.
 
 ## Pacotes Go e imports atuais
 
@@ -11,42 +11,47 @@ Setas são imports estáticos; não são chamadas HTTP nem traces de execução.
 ```mermaid
 flowchart LR
     node0["cmd/api"]
-    node1["cmd/import-content"]
-    node2["cmd/import-food"]
-    node3["cmd/migrate"]
-    node4["cmd/privacy-maintenance"]
-    node5["cmd/privacy-restore"]
-    node6["internal/activity"]
-    node7["internal/auth"]
-    node8["internal/catalog"]
-    node9["internal/nutrition"]
-    node10["internal/platform/config"]
-    node11["internal/platform/httpapi"]
-    node12["internal/platform/postgres"]
-    node13["internal/privacy"]
-    node14["internal/swaggerdocs"]
-    node15["migrations"]
-    node0 -->|"import"| node7
+    node1["cmd/food-names"]
+    node2["cmd/import-content"]
+    node3["cmd/import-food"]
+    node4["cmd/migrate"]
+    node5["cmd/privacy-maintenance"]
+    node6["cmd/privacy-restore"]
+    node7["internal/activity"]
+    node8["internal/auth"]
+    node9["internal/catalog"]
+    node10["internal/foodnamesops"]
+    node11["internal/nutrition"]
+    node12["internal/platform/config"]
+    node13["internal/platform/httpapi"]
+    node14["internal/platform/postgres"]
+    node15["internal/privacy"]
+    node16["internal/swaggerdocs"]
+    node17["migrations"]
     node0 -->|"import"| node8
     node0 -->|"import"| node9
-    node0 -->|"import"| node10
     node0 -->|"import"| node11
     node0 -->|"import"| node12
     node0 -->|"import"| node13
     node0 -->|"import"| node14
-    node1 -->|"import"| node8
-    node1 -->|"import"| node12
+    node0 -->|"import"| node15
+    node0 -->|"import"| node16
+    node1 -->|"import"| node10
     node2 -->|"import"| node9
-    node2 -->|"import"| node12
-    node3 -->|"import"| node15
-    node4 -->|"import"| node13
-    node5 -->|"import"| node13
-    node7 -->|"import"| node11
-    node8 -->|"import"| node11
-    node9 -->|"import"| node7
-    node9 -->|"import"| node11
-    node13 -->|"import"| node7
-    node13 -->|"import"| node11
+    node2 -->|"import"| node14
+    node3 -->|"import"| node11
+    node3 -->|"import"| node14
+    node4 -->|"import"| node17
+    node5 -->|"import"| node15
+    node6 -->|"import"| node15
+    node8 -->|"import"| node13
+    node9 -->|"import"| node13
+    node10 -->|"import"| node11
+    node10 -->|"import"| node14
+    node11 -->|"import"| node8
+    node11 -->|"import"| node13
+    node15 -->|"import"| node8
+    node15 -->|"import"| node13
 ```
 ## Anotações encontradas
 

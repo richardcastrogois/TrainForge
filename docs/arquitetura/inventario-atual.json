@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "0e61188c19be9ed544090478437ce4a9f7cc2751edb06dd9fd4cba6e809c7c98",
+  "inputRevision": "8c3681f6875b9acc62aa67a32283f4bec1a3a2da8961b59db0da4821460040a9",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
@@ -103,6 +103,7 @@
     "lib/shared/widgets/product_shell.dart": "3aaaca2cd5281cd9cb83811c9e6fd02e45a9175abb5be065b2048080d26e223d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
     "services/api/cmd/api/main.go": "eb5136a5209c5205749a103c9c1dc07fc5152b4c9ac6c2822cf4373a25762621",
+    "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
@@ -120,6 +121,8 @@
     "services/api/internal/catalog/postgres_read.go": "b5b29ea2fe46c1c3093070502460479a0861da1dff4c65b5076e0b1d8af2982b",
     "services/api/internal/catalog/query.go": "d9a772b5ce811cf8faee670029366ddf5d6cd89d933e503f03df2a76fd62b291",
     "services/api/internal/catalog/read.go": "81c56d8e66dc36f3018b1853c722ad7c09b897fbaa3c3c893e4af56f6ea428d1",
+    "services/api/internal/foodnamesops/package.go": "149f7c8416af93699aa1613186fef0e4f190df303a92cbd385e7c5c0eba6e3c4",
+    "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
     "services/api/internal/nutrition/doc.go": "b46f6e493e50360eea09d4faaaaff4f67317ce57acf46377742fa5416ea3441a",
     "services/api/internal/nutrition/entries.go": "eebc7d05c1d1dd7ff1138fbc5a1cc40929c377b4148970bd4791857c85d6a338",
     "services/api/internal/nutrition/entries_handler.go": "c8202cf7199ed3c3e0b09b68118591691e1fd12f0545a3be009d963b8cb9e76d",
@@ -128,9 +131,11 @@
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
     "services/api/internal/nutrition/load.go": "40cc38994faa0bc5d04919f7d68cde930a314ab3d52c4531c95c94b34b12e58e",
     "services/api/internal/nutrition/names.go": "d168d2dc875e6e6b617ad5da92cc6fb02dc44ff67b9c2d2d210e07f03513fe77",
+    "services/api/internal/nutrition/names_coverage.go": "66ccf8417695c802f0a30835909fba7d85961ba364b82173894d6ed4dd2fb4a5",
     "services/api/internal/nutrition/names_localized.go": "7a4b5176715c8b41624bb101d8d9b0957f80e324b89b25acdbff0af67e333810",
     "services/api/internal/nutrition/names_postgres.go": "300f92b7fdbc115b6f7a6f6f1f46f6f9892ea2aca9406f6fd77495a1b6d5dd53",
     "services/api/internal/nutrition/names_read.go": "d9af538eb38532f3bb8f81a921d4ff6afefae05461189b2bd98c030bf21e7344",
+    "services/api/internal/nutrition/names_withdraw.go": "1a19b8f2f2d9c3d0500c82979a03fea6e5103cca0fb5eb5349b80b9ca0d58808",
     "services/api/internal/nutrition/postgres_entries.go": "08c1f133b17e7357e6bb8bed2b7b9d6412ba7eb322f721072a8793b3d11c4626",
     "services/api/internal/nutrition/postgres_read.go": "b73a14fff71c9a4e8c74ef36bb3dd82976707fd1a871f78d4fba72e0d2fbccbd",
     "services/api/internal/nutrition/read.go": "23a68f95fc68a2b9704995ec7ec6a72e352f5dc20f86e375cd82ad3ffbd4100e",
@@ -162,7 +167,7 @@
     "contracts/generated/swagger-v1.json": "1b7e78c31aafa9bca47372fbac54e6d2d0ccb92eb286577f334630f24a54e9f3",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "34cb89c126d2c524c26354c62acdff2dc792fa4fbdff46e257581cc0241bee10",
+    "docs/execucao/v1/backlog.json": "6b309581522a30d5978d2c7328318f3d330176f481aec07651d4796352ac8619",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -206,7 +211,7 @@
     "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
     "tools/verificar_importacao_alimentos.py": "afa8357b1a29513facc0f7620ea6ff6c6875c0b17b5693d79a875c3bd5d30726",
     "tools/verificar_lote_alimentar_local.py": "8fb91247b63595638f722d83a71fd3b2daecf5a73e20ad32ad52d3669e46f4c3",
-    "tools/verificar_nomes_alimentares.py": "b3443eb12d8a5a4d0a3d33893c4de65b8f79059da1945594874d7e429abc2820",
+    "tools/verificar_nomes_alimentares.py": "fb75f03b41f673a2397aeecc1945beb7d8dd67ec68b1548ee588e43c18f211a9",
     "tools/verificar_nutricao_local.py": "2c2055e493eb8a05b7e121952ef019d7dfb45142afc3caaf33639aa2f0fb578e",
     "tools/verificar_privacidade_http.py": "fa5f96d4e711164a2d9a16087e9eafcbc01512f6bc38927f9817a304cfeb2791",
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
@@ -219,7 +224,7 @@
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 44,
+    "goFiles": 49,
     "goRegistrations": 26,
     "modelsInReference": 9
   },
@@ -3737,6 +3742,7 @@
   "go": {
     "files": [
       "services/api/cmd/api/main.go",
+      "services/api/cmd/food-names/main.go",
       "services/api/cmd/import-content/main.go",
       "services/api/cmd/import-food/main.go",
       "services/api/cmd/migrate/main.go",
@@ -3754,6 +3760,8 @@
       "services/api/internal/catalog/postgres_read.go",
       "services/api/internal/catalog/query.go",
       "services/api/internal/catalog/read.go",
+      "services/api/internal/foodnamesops/package.go",
+      "services/api/internal/foodnamesops/run.go",
       "services/api/internal/nutrition/doc.go",
       "services/api/internal/nutrition/entries.go",
       "services/api/internal/nutrition/entries_handler.go",
@@ -3762,9 +3770,11 @@
       "services/api/internal/nutrition/import.go",
       "services/api/internal/nutrition/load.go",
       "services/api/internal/nutrition/names.go",
+      "services/api/internal/nutrition/names_coverage.go",
       "services/api/internal/nutrition/names_localized.go",
       "services/api/internal/nutrition/names_postgres.go",
       "services/api/internal/nutrition/names_read.go",
+      "services/api/internal/nutrition/names_withdraw.go",
       "services/api/internal/nutrition/postgres_entries.go",
       "services/api/internal/nutrition/postgres_read.go",
       "services/api/internal/nutrition/read.go",
@@ -4417,6 +4427,7 @@
     ],
     "packages": [
       "cmd/api",
+      "cmd/food-names",
       "cmd/import-content",
       "cmd/import-food",
       "cmd/migrate",
@@ -4425,6 +4436,7 @@
       "internal/activity",
       "internal/auth",
       "internal/catalog",
+      "internal/foodnamesops",
       "internal/nutrition",
       "internal/platform/config",
       "internal/platform/httpapi",
@@ -4467,6 +4479,10 @@
         "internal/swaggerdocs"
       ],
       [
+        "cmd/food-names",
+        "internal/foodnamesops"
+      ],
+      [
         "cmd/import-content",
         "internal/catalog"
       ],
@@ -4501,6 +4517,14 @@
       [
         "internal/catalog",
         "internal/platform/httpapi"
+      ],
+      [
+        "internal/foodnamesops",
+        "internal/nutrition"
+      ],
+      [
+        "internal/foodnamesops",
+        "internal/platform/postgres"
       ],
       [
         "internal/nutrition",

@@ -1,4 +1,5 @@
 """V1-048 reviewed-name foundations in a disposable database; never publish fixtures."""
+import argparse
 import json
 import re
 import secrets
@@ -15,7 +16,11 @@ def snapshot():
       (SELECT count(*) FROM trainforge_v1.food_entries),
       (SELECT count(*) FROM trainforge_v1.food_versions),
       (SELECT md5(string_agg(row_to_json(v)::text,'' ORDER BY food_id,version_sha))
-       FROM trainforge_v1.food_versions v))::text;""", NAME)
+       FROM trainforge_v1.food_versions v),
+      (SELECT count(*) FROM trainforge_v1.food_name_versions),
+      (SELECT count(*) FROM trainforge_v1.food_name_withdrawals),
+      (SELECT md5(string_agg(row_to_json(c)::text,'' ORDER BY locale))
+       FROM trainforge_v1.food_name_catalogs c))::text;""", NAME)
 
 
 def validate_connection(dsn, role, name):
@@ -26,7 +31,7 @@ def validate_connection(dsn, role, name):
         raise RuntimeError("Refusing a fixture connection outside the owned local target")
 
 
-def main():
+def main(receipt_name="food-names-operations-verification.json"):
     verify_owned()
     try:
         run("pg_ctl", ["-D", DATA, "status"], timeout=5)
@@ -66,29 +71,42 @@ def main():
                 sql("DROP DATABASE " + name + ";")
         if snapshot() != before:
             raise RuntimeError("Delivered data changed during isolated fixtures")
+        # Read only: actual coverage through the operator CLI and runtime role.
+        env["TF_FOOD_NAMES_DATABASE_URL"] = load_env(LOCAL / "api.env")["TF_DATABASE_URL"]
+        coverage_process = subprocess.run([str(go), "run", "./cmd/food-names", "--operation", "coverage"],
+            cwd=SERVICE, env=env, check=True, capture_output=True, text=True, timeout=60)
+        coverage = json.loads(coverage_process.stdout)
+        if coverage.get("contract") != "trainforge.food-name-coverage/1" or len(coverage.get("locales", [])) != 4:
+            raise RuntimeError("Invalid coverage contract")
+        if snapshot() != before:
+            raise RuntimeError("Read-only coverage altered delivered data")
     finally:
         if not was_running:
             verify_owned()
             run("pg_ctl", ["-D", DATA, "-m", "fast", "-w", "-t", "20", "stop"], timeout=25)
     result = {"schemaVersion": 1, "date": "2026-10-26", "story": "V1-048", "status": "partial",
-              "scope": "reviewed-name-batch-resolution-disposable-sql-not-published-content",
+              "scope": "editorial-operations-disposable-sql-and-real-read-only-coverage",
               "passed": True, "temporaryDatabaseRemoved": True, "deliveredDataUnchanged": True,
               "clusterInitiallyRunning": was_running, "clusterRunningStatePreserved": True,
-              "migrationsAppliedOnlyToDisposableDatabase": 10, "runtimeReadOnly": True,
+              "disposableSchemaVersion": 11, "runtimeReadOnly": True,
               "immutableHistoryAndIdempotencyVerified": True, "evidenceHashesVerified": True,
               "originalFoodVersionUnchanged": True, "publishedNames": 0,
               "batchedReadVerified": True, "localizedHTTPVerified": True,
               "cursorRejectsChangedLocaleAndRevision": True, "etagRevalidatesWithdrawal": True, "exactVersionAndLocaleVerified": True,
               "latestWithdrawalDoesNotReviveOlderName": True,
-              "sourceBaseCommit": "a34575b",
-              "limits": ["HTTP locale/search/revision/cursor/ETag tested in fixtures; Flutter name projection and human publication still pending.",
-                         "Migrations9/10 are not applied to delivered DB; actual23 tables remain unchanged.",
-                         "Evidence hashes prove matching bytes, not reviewer identity or license truth. Authorized human publication tooling/review still required.",
-                         "No new endpoint, only optional locale/namesVersion and reviewedName/nameCatalog fields. Fixtures never enter delivered DB."]}
-    (ROOT / "docs/execucao/v1/food-names-read-verification.json").write_text(
+              "sourceBaseCommit": "a81f6db",
+              "operatorWithdrawalIdempotencyVerified": True, "operatorCLIEndToEndDisposableVerified": True, "coverageByLocaleAndSourceVerified": True,
+              "actualReadOnlyCoverage": coverage,
+              "limits": ["Publication/withdrawal fixtures remain only in the removed disposable DB; no reviewed real name was published.",
+                         "The delivered database remains schema11/26tables with user data preserved; no new migration is added by this increment.",
+                         "Evidence hashes and operator acknowledgement do not prove reviewer identity or rights. Human verification and evidence retention are still required.",
+                         "Coverage counts stored active editorial rows over visible latest source versions, not language quality, global food coverage or native acceptance."]}
+    (ROOT / "docs/execucao/v1" / receipt_name).write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result))
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--receipt-name", choices=["food-names-operations-verification.json"], default="food-names-operations-verification.json")
+    main(parser.parse_args().receipt_name)
