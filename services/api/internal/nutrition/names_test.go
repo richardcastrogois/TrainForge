@@ -110,7 +110,12 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 		t.Fatal("fixture writer unavailable")
 	}
 	defer writer.Close()
-	runtime, err := pgxpool.New(ctx, os.Getenv("TF_FOOD_NAMES_TEST_RUNTIME_URL"))
+	runtimeConfig, err := pgxpool.ParseConfig(os.Getenv("TF_FOOD_NAMES_TEST_RUNTIME_URL"))
+	if err != nil {
+		t.Fatal("runtime config")
+	}
+	runtimeConfig.MaxConns = 1
+	runtime, err := pgxpool.NewWithConfig(ctx, runtimeConfig)
 	if err != nil {
 		t.Fatal("fixture runtime unavailable")
 	}
@@ -215,6 +220,8 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 		t.Fatal("homonymous foods were merged")
 	}
 
+	checkAfterEntries := assertEntryFoodNames(t, writer, runtime, target, n.Name)
+
 	checkAfterHTTP := assertLocalizedFoodNames(t, FoodPostgres{runtime}, target, otherTarget, n.Aliases[0])
 
 	for _, locale := range []string{"pt-PT", "en", "es"} {
@@ -275,6 +282,7 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 	}
 
 	checkAfterHTTP()
+	checkAfterEntries()
 
 	if _, err = writer.Exec(ctx, "DELETE FROM trainforge_v1.food_name_withdrawals WHERE food_id=$1", n.FoodID); err == nil {
 		t.Fatal("withdrawal history was deleted")

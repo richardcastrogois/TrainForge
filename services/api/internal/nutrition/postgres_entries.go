@@ -240,8 +240,9 @@ func (s NutritionStore) Mutate(ctx context.Context, p auth.Principal, op, id, ke
 func equal(a, b []byte) bool { return string(a) == string(b) }
 
 type privateFilter struct {
-	Q, After, Day, Zone string
-	Limit               int
+	Q, After, Day, Zone  string
+	Locale, NamesVersion string
+	Limit                int
 }
 
 func (s NutritionStore) Foods(ctx context.Context, p auth.Principal, f privateFilter) ([]FoodDetail, error) {

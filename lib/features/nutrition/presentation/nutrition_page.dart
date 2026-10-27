@@ -55,8 +55,22 @@ class _NutritionPageState extends State<NutritionPage>
     );
     widget.sessionChanges.addListener(accountChanged);
     WidgetsBinding.instance.addObserver(this);
-    controller.load();
     controller.searchOwn();
+  }
+
+  String? _contentLocale;
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final value = foodContentLocale(context);
+    if (value == _contentLocale) return;
+    final first = _contentLocale == null;
+    _contentLocale = value;
+    if (value != controller.locale) {
+      controller.selectLocale(value);
+    } else if (first) {
+      controller.load();
+    }
   }
 
   void accountChanged() {
@@ -211,9 +225,7 @@ class _NutritionPageState extends State<NutritionPage>
           ),
         for (final entry in controller.entries)
           FlowRecord(
-            title: displayLabel(
-              object(object(entry['calculation'])['food'])['nameOriginal'],
-            ),
+            title: entryDisplayName(entry, foodContentLocale(context)),
             subtitle:
                 '''${context.displayDecimal(entry['quantity'] as String)} ${entry['unit']} · ${object(entry['calculation'])['quantityEvidence'] == 'measured' ? context.l10n.measuredShort : context.l10n.estimatedShort}
 ${context.displayTimestamp(entry['occurredAt'] as String)}''',

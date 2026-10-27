@@ -7,6 +7,8 @@ import '../domain/nutrition.dart';
 import 'nutrition_messages.dart';
 import 'nutrition_feedback.dart';
 import 'nutrition_forms.dart';
+import 'entry_read_controller.dart';
+import '../../food_reference/presentation/food_labels.dart';
 
 class EntryDetailPage extends StatefulWidget {
   final Json entry;
@@ -20,15 +22,47 @@ class EntryDetailPage extends StatefulWidget {
   State<EntryDetailPage> createState() => _EntryDetailPageState();
 }
 
-class _EntryDetailPageState extends State<EntryDetailPage> {
-  late Json entry;
+class _EntryDetailPageState extends State<EntryDetailPage>
+    with WidgetsBindingObserver {
+  late EntryReadController reader;
+  Json get entry => reader.entry;
   bool busy = false;
   String? error;
   final deleteKey = mutationKey();
   @override
   void initState() {
     super.initState();
-    entry = widget.entry;
+    reader = EntryReadController(
+      repository: widget.repository,
+      entry: widget.entry,
+    )..addListener(readChanged);
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  void readChanged() {
+    if (mounted) setState(() {});
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final language = foodContentLocale(context);
+    if (reader.locale != language) reader.load(language);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && !busy && reader.locale != null) {
+      reader.load(reader.locale!);
+    }
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    reader.removeListener(readChanged);
+    reader.dispose();
+    super.dispose();
   }
 
   Future<void> edit() async {
@@ -36,13 +70,13 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
       context,
       MaterialPageRoute(
         builder: (_) => EntryFormPage(
-          food: asFood(object(object(entry['calculation'])['food'])),
+          food: entryPresentationFood(entry, foodContentLocale(context)),
           repository: widget.repository,
           entry: entry,
         ),
       ),
     );
-    if (mounted && result != null) setState(() => entry = result);
+    if (mounted && result != null) await reader.edited(result);
   }
 
   Future<void> remove() async {
@@ -90,6 +124,9 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
     final c = object(entry['calculation']),
         food = object(c['food']),
         source = object(food['source']);
+    final reviewed = reader.display?.name;
+    final usesReviewed =
+        reviewed != null && reviewed.locale == foodContentLocale(context);
     return PopScope(
       canPop: !busy,
       child: FigmaRouteFrame(
@@ -105,8 +142,41 @@ class _EntryDetailPageState extends State<EntryDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    displayLabel(food['nameOriginal']),
+                    reader.name(foodContentLocale(context)),
                     style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  if (reader.loading) Text(context.l10n.loading),
+                  if (reader.error != null)
+                    FlowStatus(
+                      title: context.l10n.requestUnconfirmed,
+                      message: localizedNutritionFeedback(
+                        context,
+                        reader.error!,
+                      ),
+                      actionLabel: context.l10n.retry,
+                      onAction: () => reader.load(foodContentLocale(context)),
+                    ),
+                  if (usesReviewed) ...[
+                    Text(context.l10n.reviewedFoodName),
+                    ExpansionTile(
+                      tilePadding: EdgeInsets.zero,
+                      title: Text(context.l10n.nameReviewSource),
+                      children: [
+                        SelectableText(reviewed.attribution),
+                        Text(reviewed.license),
+                        SelectableText(reviewed.licenseUrl),
+                        SelectableText(
+                          "${context.l10n.version}: ${reviewed.versionId}",
+                        ),
+                      ],
+                    ),
+                  ] else if (reader.localized &&
+                      !reader.loading &&
+                      reader.error == null &&
+                      food["sourceId"] != "personal")
+                    Text(context.l10n.foodNameFallback),
+                  Text(
+                    "${context.l10n.originalFoodName}: ${displayLabel(food['nameOriginal'])} · ${food['nameLocale']}",
                   ),
                   const SizedBox(height: 12),
                   Text(
@@ -164,12 +234,22 @@ ${source['licenseUrl']}''',
               const SizedBox(height: 12),
             ],
             OutlinedButton(
-              onPressed: busy ? null : edit,
+              onPressed:
+                  busy ||
+                      reader.loading ||
+                      (reader.localized && reader.error != null)
+                  ? null
+                  : edit,
               child: Text(context.l10n.correctIntakeAction),
             ),
             const SizedBox(height: 8),
             OutlinedButton(
-              onPressed: busy ? null : remove,
+              onPressed:
+                  busy ||
+                      reader.loading ||
+                      (reader.localized && reader.error != null)
+                  ? null
+                  : remove,
               child: Text(
                 busy ? context.l10n.confirming : context.l10n.deleteThisIntake,
               ),

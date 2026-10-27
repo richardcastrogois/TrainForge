@@ -101,6 +101,13 @@ def main(receipt_name="food-names-operations-verification.json"):
                          "The delivered database remains schema11/26tables with user data preserved; no new migration is added by this increment.",
                          "Evidence hashes and operator acknowledgement do not prove reviewer identity or rights. Human verification and evidence retention are still required.",
                          "Coverage counts stored active editorial rows over visible latest source versions, not language quality, global food coverage or native acceptance."]}
+    if receipt_name == "food-names-consumption-verification.json":
+        result.update(date="2026-10-27", scope="consumption-localized-read-disposable-sql-and-real-read-only-coverage",
+                      sourceBaseCommit="462bfe2", apiVersion="0.6.2", swaggerOperations=26,
+                      privateReadOwnershipVerified=True, privateCursorLocaleRevisionVerified=True,
+                      immutableConsumptionSnapshotsVerified=True, privateNamesNeverTranslated=True,
+                      revokedAndDeletedReadsRejected=True, poolOneConnectionVerified=True,
+                      privateMutationReplayUnchanged=True, migrationsAdded=False)
     (ROOT / "docs/execucao/v1" / receipt_name).write_text(
         json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result))
@@ -108,5 +115,5 @@ def main(receipt_name="food-names-operations-verification.json"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--receipt-name", choices=["food-names-operations-verification.json"], default="food-names-operations-verification.json")
+    parser.add_argument("--receipt-name", choices=["food-names-operations-verification.json", "food-names-consumption-verification.json"], default="food-names-operations-verification.json")
     main(parser.parse_args().receipt_name)

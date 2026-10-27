@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "story": "V1-048",
+  "status": "partial",
+  "scope": "consumption-localized-read-disposable-sql-and-real-read-only-coverage",
+  "passed": true,
+  "temporaryDatabaseRemoved": true,
+  "deliveredDataUnchanged": true,
+  "clusterInitiallyRunning": true,
+  "clusterRunningStatePreserved": true,
+  "disposableSchemaVersion": 11,
+  "runtimeReadOnly": true,
+  "immutableHistoryAndIdempotencyVerified": true,
+  "evidenceHashesVerified": true,
+  "originalFoodVersionUnchanged": true,
+  "publishedNames": 0,
+  "batchedReadVerified": true,
+  "localizedHTTPVerified": true,
+  "cursorRejectsChangedLocaleAndRevision": true,
+  "etagRevalidatesWithdrawal": true,
+  "exactVersionAndLocaleVerified": true,
+  "latestWithdrawalDoesNotReviveOlderName": true,
+  "sourceBaseCommit": "462bfe2",
+  "operatorWithdrawalIdempotencyVerified": true,
+  "operatorCLIEndToEndDisposableVerified": true,
+  "coverageByLocaleAndSourceVerified": true,
+  "actualReadOnlyCoverage": {
+    "contract": "trainforge.food-name-coverage/1",
+    "generatedAt": "2026-10-27T09:49:52.594546Z",
+    "basis": "latest-visible-public-source-versions/stored-editorial-rows",
+    "locales": [
+      {
+        "locale": "en",
+        "catalogVersion": "0",
+        "visibleSourceVersions": 6369,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 6369
+      },
+      {
+        "locale": "es",
+        "catalogVersion": "0",
+        "visibleSourceVersions": 6369,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 6369
+      },
+      {
+        "locale": "pt-BR",
+        "catalogVersion": "0",
+        "visibleSourceVersions": 6369,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 6369
+      },
+      {
+        "locale": "pt-PT",
+        "catalogVersion": "0",
+        "visibleSourceVersions": 6369,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 6369
+      }
+    ],
+    "sources": [
+      {
+        "locale": "en",
+        "sourceId": "AL-CIQUAL-2025",
+        "sourcePublishedVersion": "2025",
+        "visibleSourceVersions": 3484,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 3484
+      },
+      {
+        "locale": "en",
+        "sourceId": "AL-COFID-2021",
+        "sourcePublishedVersion": "2021",
+        "visibleSourceVersions": 2885,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 2885
+      },
+      {
+        "locale": "es",
+        "sourceId": "AL-CIQUAL-2025",
+        "sourcePublishedVersion": "2025",
+        "visibleSourceVersions": 3484,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 3484
+      },
+      {
+        "locale": "es",
+        "sourceId": "AL-COFID-2021",
+        "sourcePublishedVersion": "2021",
+        "visibleSourceVersions": 2885,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 2885
+      },
+      {
+        "locale": "pt-BR",
+        "sourceId": "AL-CIQUAL-2025",
+        "sourcePublishedVersion": "2025",
+        "visibleSourceVersions": 3484,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 3484
+      },
+      {
+        "locale": "pt-BR",
+        "sourceId": "AL-COFID-2021",
+        "sourcePublishedVersion": "2021",
+        "visibleSourceVersions": 2885,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 2885
+      },
+      {
+        "locale": "pt-PT",
+        "sourceId": "AL-CIQUAL-2025",
+        "sourcePublishedVersion": "2025",
+        "visibleSourceVersions": 3484,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 3484
+      },
+      {
+        "locale": "pt-PT",
+        "sourceId": "AL-COFID-2021",
+        "sourcePublishedVersion": "2021",
+        "visibleSourceVersions": 2885,
+        "storedActiveNames": 0,
+        "withdrawnLatestNames": 0,
+        "originalFallbacks": 2885
+      }
+    ]
+  },
+  "limits": [
+    "Publication/withdrawal fixtures remain only in the removed disposable DB; no reviewed real name was published.",
+    "The delivered database remains schema11/26tables with user data preserved; no new migration is added by this increment.",
+    "Evidence hashes and operator acknowledgement do not prove reviewer identity or rights. Human verification and evidence retention are still required.",
+    "Coverage counts stored active editorial rows over visible latest source versions, not language quality, global food coverage or native acceptance."
+  ],
+  "apiVersion": "0.6.2",
+  "swaggerOperations": 26,
+  "privateReadOwnershipVerified": true,
+  "privateCursorLocaleRevisionVerified": true,
+  "immutableConsumptionSnapshotsVerified": true,
+  "privateNamesNeverTranslated": true,
+  "revokedAndDeletedReadsRejected": true,
+  "poolOneConnectionVerified": true,
+  "privateMutationReplayUnchanged": true,
+  "migrationsAdded": false
+}

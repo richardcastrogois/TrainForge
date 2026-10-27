@@ -1124,7 +1124,7 @@ Handoff: 25/10:Q4 aprovou registrar offline e sincronizar depois. Pendência atu
 
 ### V1-048 — Localizar interface e nomes alimentares com revisão
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como usuário, quero usar a interface em meu idioma e entender nomes alimentares traduzidos quando revisados, conservando o original e a fonte.
 
@@ -1162,7 +1162,7 @@ Validação: Testes Go/SQL/Flutter do vínculo/alias/fallback e integridade dos 
 
 Entregas: Estrutura e textos de UI pt-BR/pt-PT/en/es; Contrato/modelo de nomes e aliases revisados; Busca/apresentação com original/fonte e fallback; Recibo de cobertura, integridade e aceite
 
-Handoff: 27/10:495 mensagens por idioma;173 testes Flutter/análise sem problemas. APKdebug0.3.6+19 instalado/assinado/hash conferido noAndroid15; seleção/restauração dos4idiomas, mesma sessão e dark, finalHojept-BR. Retentativa de leitura não grava padrão; retentativa de escrita repete escolha solicitada, com9regressões novas e diagnóstico fixo sem dados privados. API0.6.1/25operações, schema11/26tabelas preservados. Ferramenta editorial e cobertura real0/6369 poridioma entregues, sem publicação real. Continua doing:histórico e detalhe de consumo ainda usam calculation.food.nameOriginal; projetar nomes revisados na leitura fora do snapshot/cálculo, semN+1, com idioma/revisão/cursor/titular corretos. Publicação real exige pacote humano/direitos. Sem novoGoogle ou consumo;1conta/1consumo preservados. iOS nativo não executado noWindows.
+Handoff: 27/10:encerrada no escopo da UI disponível e capacidade de nomes revisados.495 mensagens/idioma,197 testes Flutter/analyze0,Go test/vet e SQL/HTTP descartáveis. API0.6.2/26operações; histórico/detalhe/correção usam foodDisplay fora de calculation, lote e cursor/revisão/ownership; mutações inalteradas. APK0.3.8+21 instalado/hash/assinatura conferidos; leitura realEN/PT-BR e restauração tardia de preferência após timeout confirmadas, mesma sessão sem novoGoogle/escrita alimentar. Cobertura editorial real0/6369 poridioma, fallback original; publicação real continua exigindo evidência humana/direitos. iOS nativo não executado noWindows; futuros fluxos localizam conforme forem implementados. Próxima047 pelas dependências.
 
 ### V1-027 — Validar acessibilidade e paridade de contratos Android/iOS
 

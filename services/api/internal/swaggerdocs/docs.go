@@ -1140,6 +1140,18 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
+                        "description": "pt-BR, pt-PT, en or es; display metadata only",
+                        "name": "locale",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Optional catalog revision; changed revision returns 409 food_name_catalog_changed",
+                        "name": "namesVersion",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
                         "description": "YYYY-MM-DD",
                         "name": "date",
                         "in": "query",
@@ -1180,6 +1192,12 @@ const docTemplate = `{
                     },
                     "401": {
                         "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
                         "schema": {
                             "$ref": "#/definitions/httpapi.Problem"
                         }
@@ -1291,6 +1309,79 @@ const docTemplate = `{
             }
         },
         "/api/v1/me/food-entries/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read own consumption and current reviewed display name",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Entry UUID; other owners and deleted records return 404",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "pt-BR, pt-PT, en or es; display metadata only",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Entry"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
             "delete": {
                 "security": [
                     {
@@ -2242,6 +2333,9 @@ const docTemplate = `{
                     "type": "string",
                     "x-nullable": true
                 },
+                "foodDisplay": {
+                    "$ref": "#/definitions/nutrition.EntryFoodDisplay"
+                },
                 "foodId": {
                     "type": "string"
                 },
@@ -2291,6 +2385,23 @@ const docTemplate = `{
                 },
                 "unit": {
                     "type": "string"
+                }
+            }
+        },
+        "nutrition.EntryFoodDisplay": {
+            "type": "object",
+            "properties": {
+                "foodId": {
+                    "type": "string"
+                },
+                "foodVersion": {
+                    "type": "string"
+                },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 }
             }
         },
@@ -2569,6 +2680,9 @@ const docTemplate = `{
                         "type": "object"
                     }
                 },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
+                },
                 "nextCursor": {
                     "type": "string",
                     "x-nullable": true
@@ -2845,7 +2959,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.6.1",
+	Version:          "0.6.2",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},

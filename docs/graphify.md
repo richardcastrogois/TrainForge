@@ -1,5 +1,10 @@
 # Graphify — cobertura e atualização
 
+## Atualização27/10 — consumo localizado e restauração tardia
+
+102arquivosDart;3472nós/4015arestas. Primeira passagem6alterados/96inalterados e final2alterados/100inalterados,0removidos. ASTincremental code-only eHTMLexportado, semLLM/semântica/clusterização;5ARBnão interpretados. Backup em.local/graphify-backup-20261027-consumption-names comautomatic/automatic-final fora doGit. Go/SQLdescritos emSwagger/mapas, sem alegar extração semântica. Contagens abaixo preservam os checkpoints anteriores.
+
+
 ## Atualização em 27/10: recuperação de preferências
 
 101 arquivos Dart, 3.420 nós e 3.949 arestas;9 alterados,92 inalterados e nenhum removido na passagem final. AST incremental e HTML exportado, sem semântica, clusterização ou LLM. Cinco ARB não interpretados. Backup em .local/graphify-backup-20261027-native-locale. Inclui controles de retentativa de leitura/escrita, diagnóstico fixo e recursos tipados gerados. [Recibo](execucao/v1/frontend-localization-native-verification.json). A passagem anterior do dia atualizou quatro gerados; contagens abaixo são checkpoints históricos.

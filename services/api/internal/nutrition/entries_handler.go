@@ -20,6 +20,7 @@ import (
 
 type EntryHandler struct {
 	Store     NutritionStore
+	Names     EntryNameProjector
 	Authorize func(context.Context, string) (auth.Principal, error)
 	limits    httpapi.Limiter
 }
@@ -29,6 +30,7 @@ func (h *EntryHandler) Register(m *http.ServeMux) {
 	m.HandleFunc("GET /api/v1/me/foods", h.private(h.Foods))
 	m.HandleFunc("POST /api/v1/me/food-entries", h.private(h.CreateEntry))
 	m.HandleFunc("GET /api/v1/me/food-entries", h.private(h.Entries))
+	m.HandleFunc("GET /api/v1/me/food-entries/{id}", h.private(h.Entry))
 	m.HandleFunc("PATCH /api/v1/me/food-entries/{id}", h.private(h.EditEntry))
 	m.HandleFunc("DELETE /api/v1/me/food-entries/{id}", h.private(h.DeleteEntry))
 	m.HandleFunc("GET /api/v1/me/food-summary", h.private(h.Summary))
@@ -43,6 +45,8 @@ func entryFailure(w http.ResponseWriter, r *http.Request, e error) {
 		status, code = 400, "invalid_nutrition_request"
 	case errors.Is(e, ErrFoodMissing):
 		status, code = 404, "food_or_entry_unavailable"
+	case errors.Is(e, ErrFoodNamesChanged):
+		status, code = 409, "food_name_catalog_changed"
 	case errors.Is(e, ErrEntryConflict):
 		status, code = 409, "nutrition_conflict"
 	}
@@ -255,15 +259,25 @@ func (h *EntryHandler) DeleteEntry(w http.ResponseWriter, r *http.Request, p aut
 	h.mutate(w, r, p, "delete-entry", &EntryInput{})
 }
 func filterFingerprint(p auth.Principal, f privateFilter, kind string) string {
-	return hex.EncodeToString(digest([]byte(p.User.ID + "|" + kind + "|" + f.Q + "|" + f.Day + "|" + f.Zone)))
+	key := p.User.ID + "|" + kind + "|" + f.Q + "|" + f.Day + "|" + f.Zone
+	if f.Locale != "" {
+		key += "|" + f.Locale + "|" + f.NamesVersion
+	}
+	return hex.EncodeToString(digest([]byte(key)))
 }
 
-type entryCursor struct{ After, Filter string }
+type entryCursor struct {
+	After, Filter string
+	NamesVersion  string `json:"namesVersion,omitempty"`
+}
 
 func parsePrivate(q url.Values, p auth.Principal, kind string) (privateFilter, error) {
-	f := privateFilter{Q: q.Get("q"), Day: q.Get("date"), Zone: q.Get("timezone"), Limit: 10}
+	f := privateFilter{Q: q.Get("q"), Day: q.Get("date"), Zone: q.Get("timezone"), Limit: 10, Locale: q.Get("locale"), NamesVersion: q.Get("namesVersion")}
 	for k, v := range q {
-		if len(v) != 1 || len(v[0]) > 1024 || (k != "q" && k != "date" && k != "timezone" && k != "limit" && k != "cursor") {
+		if len(v) != 1 || len(v[0]) > 1024 || (k != "q" && k != "date" && k != "timezone" && k != "limit" && k != "cursor" && k != "locale" && k != "namesVersion") {
+			return f, ErrFoodQuery
+		}
+		if (k == "locale" || k == "namesVersion") && (kind != "entries" || v[0] == "") {
 			return f, ErrFoodQuery
 		}
 		if kind == "foods" && (k == "date" || k == "timezone") {
@@ -275,6 +289,9 @@ func parsePrivate(q url.Values, p auth.Principal, kind string) (privateFilter, e
 		if kind == "summary" && (k == "cursor" || k == "limit") {
 			return f, ErrFoodQuery
 		}
+	}
+	if (f.Locale != "" && !foodNameLocale(f.Locale)) || (f.NamesVersion != "" && (f.Locale == "" || !validNamesRevision(f.NamesVersion))) {
+		return f, ErrFoodQuery
 	}
 	if !textValid(f.Q, 0, 100) {
 		return f, ErrFoodQuery
@@ -299,7 +316,18 @@ func parsePrivate(q url.Values, p auth.Principal, kind string) (privateFilter, e
 		var c entryCursor
 		d := json.NewDecoder(bytes.NewReader(raw))
 		d.DisallowUnknownFields()
-		if d.Decode(&c) != nil || d.Decode(new(any)) != io.EOF || c.Filter != filterFingerprint(p, f, kind) || (!validAfter(c.After, kind)) {
+		if d.Decode(&c) != nil || d.Decode(new(any)) != io.EOF {
+			return f, ErrFoodQuery
+		}
+		if f.Locale != "" {
+			if !validNamesRevision(c.NamesVersion) || (f.NamesVersion != "" && f.NamesVersion != c.NamesVersion) {
+				return f, ErrFoodQuery
+			}
+			f.NamesVersion = c.NamesVersion
+		} else if c.NamesVersion != "" {
+			return f, ErrFoodQuery
+		}
+		if c.Filter != filterFingerprint(p, f, kind) || (!validAfter(c.After, kind)) {
 			return f, ErrFoodQuery
 		}
 		f.After = c.After
@@ -318,7 +346,7 @@ func validAfter(s, kind string) bool {
 	return err == nil
 }
 func cursorFor(id string, p auth.Principal, f privateFilter, kind string) *string {
-	raw, _ := json.Marshal(entryCursor{id, filterFingerprint(p, f, kind)})
+	raw, _ := json.Marshal(entryCursor{After: id, Filter: filterFingerprint(p, f, kind), NamesVersion: f.NamesVersion})
 	s := base64.RawURLEncoding.EncodeToString(raw)
 	return &s
 }
@@ -367,11 +395,13 @@ func (h *EntryHandler) Foods(w http.ResponseWriter, r *http.Request, p auth.Prin
 		items = items[:f.Limit]
 	}
 	raw, _ := json.Marshal(items)
-	entryJSON(w, NutritionPage{raw, next})
+	entryJSON(w, NutritionPage{Items: raw, NextCursor: next})
 }
 
 // Entries returns active consumption for a calendar day in the requested zone.
 // @Summary Own consumption history by local day
+// @Param locale query string false "pt-BR, pt-PT, en or es; display metadata only"
+// @Param namesVersion query string false "Optional catalog revision; changed revision returns 409 food_name_catalog_changed"
 // @Tags nutrition
 // @Security BearerAuth
 // @Produce json
@@ -380,7 +410,7 @@ func (h *EntryHandler) Foods(w http.ResponseWriter, r *http.Request, p auth.Prin
 // @Param limit query int false "1..20; default 10"
 // @Param cursor query string false "Account and filter-bound cursor"
 // @Success 200 {object} NutritionPage
-// @Failure 400,401,429,503 {object} httpapi.Problem
+// @Failure 400,401,409,429,503 {object} httpapi.Problem
 // @Router /api/v1/me/food-entries [get]
 func (h *EntryHandler) Entries(w http.ResponseWriter, r *http.Request, p auth.Principal) {
 	f, ok := h.filter(w, r, p, "entries")
@@ -392,13 +422,33 @@ func (h *EntryHandler) Entries(w http.ResponseWriter, r *http.Request, p auth.Pr
 		entryFailure(w, r, e)
 		return
 	}
+	var catalog *FoodNameCatalog
 	var next *string
-	if len(items) > f.Limit {
-		next = cursorFor(items[f.Limit-1].OccurredAt+"|"+items[f.Limit-1].ID, p, f, "entries")
+	hasMore := len(items) > f.Limit
+	if hasMore {
+		// Cursor is created after binding the current editorial revision.
 		items = items[:f.Limit]
 	}
+	if f.Locale != "" {
+		if h.Names == nil {
+			entryFailure(w, r, ErrFoodUnavailable)
+			return
+		}
+		var current FoodNameCatalog
+		items, current, e = h.Names.ProjectEntries(r.Context(), items, f.Locale, f.NamesVersion)
+		if e != nil {
+			entryFailure(w, r, e)
+			return
+		}
+		catalog = &current
+		f.NamesVersion = current.Version
+	}
+	// An extra row was trimmed above; keep its presence without another DB call.
+	if hasMore {
+		next = cursorFor(items[len(items)-1].OccurredAt+"|"+items[len(items)-1].ID, p, f, "entries")
+	}
 	raw, _ := json.Marshal(items)
-	entryJSON(w, NutritionPage{raw, next})
+	entryJSON(w, NutritionPage{Items: raw, NextCursor: next, NameCatalog: catalog})
 }
 
 // Summary never silently truncates totals or merges unrelated nutrient methods.

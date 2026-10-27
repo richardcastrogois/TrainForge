@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "15bf5ad8d6569ac91342593cee09ff09fa793519f90107df419df727c2be34f7",
+  "inputRevision": "bad02a2771f0dd992524f95f8f75da3a76a64cf252d23a848ac07678be10002f",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
@@ -10,14 +10,14 @@
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
     "lib/core/l10n/feedback_localization.dart": "2feac32ad62a7b436bf9afed74c71d3fd2bee6e901f3cd65be9bb47f2b279f85",
     "lib/core/l10n/language_page.dart": "31119c0cd5934d4530f3adef03dccdb18d82c8e9555f6402ddf4bfa2f3c7ed5e",
-    "lib/core/l10n/locale_controller.dart": "6f954cc6bdb49606928ad55c0a64f21c0d607573d06ebd9df2daf9746ad31359",
+    "lib/core/l10n/locale_controller.dart": "d3d5151748a6e60e870c55471c795f3cb037b75b510508085ec6715c75e2c97c",
     "lib/core/l10n/localized_context.dart": "73142e775cf0e5ebb4b9998a4e809b91e4a6b011c300a5dd5b91009883a04b4a",
     "lib/core/l10n/read_feedback.dart": "426ad10e0997fd3bacc763f158a286fabe70ff37461f43f9ef571dcdfefb70e0",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
     "lib/core/motion/app_motion.dart": "925e67cc9cec4cabd756f361b29fb85a47c3ad21085976b51e3dc16ffb9715f3",
     "lib/core/preferences/read_diagnostics.dart": "5a418fe03bd2f7411af117916b0a8dd952fa9e4835d8bbdc1f784291b39e0cbf",
     "lib/core/scroll/trainforge_scroll_behavior.dart": "5161f121bdd1a0b467c4df0bc550731e98843945acc8bd65b32d676d79d431de",
-    "lib/core/theme/appearance_controller.dart": "af145d65e53c22c31eb6b69f5d50559f40857bbb47b8cd58e8f84d97774f5149",
+    "lib/core/theme/appearance_controller.dart": "57afd6db739b972a1938076c5153da00ca3eb1581de6f53aa500c2cbdde83bcf",
     "lib/core/theme/appearance_page.dart": "87933e1347e88edbfec65d0d3603f1b629c1492bc92d4cb4710b1f991122bb5f",
     "lib/core/theme/trainforge_colors.dart": "4244b42ff45116d85f37c3c2547082878926ff7c6506d59924f023db04f91219",
     "lib/core/theme/trainforge_theme.dart": "d606dffc059040c6e2d89663fa137b3f7dc2aba24fe23af7222898f415a82afb",
@@ -48,15 +48,16 @@
     "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
     "lib/features/home/presentation/pages/home_page.dart": "8cf0518112fa0d1f46960a2bd77d9b9392929be15c235574051f4e56fa300bd5",
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
-    "lib/features/nutrition/data/nutrition_repository.dart": "5cb8d30e5dc2d02ee746aa1397a0430867556fe040957672e48a7dcaa73b3e72",
-    "lib/features/nutrition/domain/nutrition.dart": "94ea50371c587004031561e8000a9cce4be073ee38262ed6b5a9a512115b6b4e",
+    "lib/features/nutrition/data/nutrition_repository.dart": "630e1aa3a45d65ecd4ae1b917868d9efa7c02a079e17132c0306629e660a2280",
+    "lib/features/nutrition/domain/nutrition.dart": "a1c50074549abf4aac7e9838613439467696684016f188bd948b710e50e6901a",
     "lib/features/nutrition/presentation/daily_summary_controller.dart": "eb523d37e822f49d19d07ba2fdcf97f482ed7bb3c1356f8a5a163cc01dc2a2fd",
-    "lib/features/nutrition/presentation/entry_detail_page.dart": "9a68e6bd95fa644d4e642aa915559bd04fbb2272efa5ab7d44dd9005bd0906f6",
-    "lib/features/nutrition/presentation/nutrition_controller.dart": "216260201aae5dc3131009d74fb1d5985f494da9a3d0dd9c720410fec96ff74b",
+    "lib/features/nutrition/presentation/entry_detail_page.dart": "a6039cd5fd89854cffd3a9e7cea1595cd415ed98c50a4d7ff35b2e9745803321",
+    "lib/features/nutrition/presentation/entry_read_controller.dart": "cf3a0d40c1eebf83826cb41da855fb6f085d6f5d7d78797f82cc2cef6fe63e7a",
+    "lib/features/nutrition/presentation/nutrition_controller.dart": "15274fcdcbaac8b104d84ee298e5d409998a28bd269d4ba97a42e0e0abe10689",
     "lib/features/nutrition/presentation/nutrition_feedback.dart": "b0dc077fb83fbbb7c0e0a403f076008307e96914f4f09c8124085b4bbdb1637d",
     "lib/features/nutrition/presentation/nutrition_forms.dart": "72fb576734403602770ff965140e70ce23de91251ced95f24a97b4932c60513e",
     "lib/features/nutrition/presentation/nutrition_messages.dart": "f6a020b3e6a86e8e15110f41bd49ee38ae69ef1656f1a64ea279594dc35fff51",
-    "lib/features/nutrition/presentation/nutrition_page.dart": "75214cebecd0a61b76e934d5867051fa0be2d92c1c22bcb39a77cafa4ac6c45b",
+    "lib/features/nutrition/presentation/nutrition_page.dart": "c402e31f26e7978305d0b5c194ea932c15ea1ed07f6eb0aa98c20c30e5379443",
     "lib/features/onboarding/data/onboarding_api.dart": "f45f2870fe242224e9d1743d24569c0849546e25394e36d1294ae394736c1256",
     "lib/features/onboarding/data/onboarding_repository.dart": "ded7943c9a323d70f8c92a9e0227a5dfb019f07bd18e71d903bb2b6f8b764449",
     "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart": "f40390c4253ba85dd2dace3b11ed7e509da26ac05d3a59b4529037dda993b595",
@@ -103,7 +104,7 @@
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "3aaaca2cd5281cd9cb83811c9e6fd02e45a9175abb5be065b2048080d26e223d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
-    "services/api/cmd/api/main.go": "eb5136a5209c5205749a103c9c1dc07fc5152b4c9ac6c2822cf4373a25762621",
+    "services/api/cmd/api/main.go": "c30cb696eac4c800d49ac500384bfc4650aa09dccbad97feff11fe200f73f62a",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
@@ -125,8 +126,9 @@
     "services/api/internal/foodnamesops/package.go": "149f7c8416af93699aa1613186fef0e4f190df303a92cbd385e7c5c0eba6e3c4",
     "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
     "services/api/internal/nutrition/doc.go": "b46f6e493e50360eea09d4faaaaff4f67317ce57acf46377742fa5416ea3441a",
-    "services/api/internal/nutrition/entries.go": "eebc7d05c1d1dd7ff1138fbc5a1cc40929c377b4148970bd4791857c85d6a338",
-    "services/api/internal/nutrition/entries_handler.go": "c8202cf7199ed3c3e0b09b68118591691e1fd12f0545a3be009d963b8cb9e76d",
+    "services/api/internal/nutrition/entries.go": "b218079ec5498769d3db8b6bdbe9d789a2ce4adf42cf8753597e988cd1a71d18",
+    "services/api/internal/nutrition/entries_handler.go": "038285c35d581c72e2ea83fedc9eb14fcc7b3107edaf02f4687df0d7fa7158c7",
+    "services/api/internal/nutrition/entries_names.go": "786379c1dd5eaa1d4bc6f38f4f7ed5eb0cab0f15be4a8b6cc5c5ef8421b8d236",
     "services/api/internal/nutrition/food.go": "2c0148fb297b6cc79e109f3ee053c9150e7bc728dc452035135be2f835511800",
     "services/api/internal/nutrition/handler.go": "744d030929433a7f3d6312d67732d4ad095820506e0bd2ba89250863a61f4a6a",
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
@@ -135,9 +137,9 @@
     "services/api/internal/nutrition/names_coverage.go": "66ccf8417695c802f0a30835909fba7d85961ba364b82173894d6ed4dd2fb4a5",
     "services/api/internal/nutrition/names_localized.go": "7a4b5176715c8b41624bb101d8d9b0957f80e324b89b25acdbff0af67e333810",
     "services/api/internal/nutrition/names_postgres.go": "300f92b7fdbc115b6f7a6f6f1f46f6f9892ea2aca9406f6fd77495a1b6d5dd53",
-    "services/api/internal/nutrition/names_read.go": "d9af538eb38532f3bb8f81a921d4ff6afefae05461189b2bd98c030bf21e7344",
+    "services/api/internal/nutrition/names_read.go": "e35bff8c5fa564a0935656333bc8b58a468b2d5116e1be3962fec10dccb79669",
     "services/api/internal/nutrition/names_withdraw.go": "1a19b8f2f2d9c3d0500c82979a03fea6e5103cca0fb5eb5349b80b9ca0d58808",
-    "services/api/internal/nutrition/postgres_entries.go": "08c1f133b17e7357e6bb8bed2b7b9d6412ba7eb322f721072a8793b3d11c4626",
+    "services/api/internal/nutrition/postgres_entries.go": "4744d090a3e68e09e724f4395a9f89f0b5c712fd497c4431c395c52930122e26",
     "services/api/internal/nutrition/postgres_read.go": "b73a14fff71c9a4e8c74ef36bb3dd82976707fd1a871f78d4fba72e0d2fbccbd",
     "services/api/internal/nutrition/read.go": "23a68f95fc68a2b9704995ec7ec6a72e352f5dc20f86e375cd82ad3ffbd4100e",
     "services/api/internal/platform/config/config.go": "40c16e2bf2e0c7e4c35b04c07014b0e1aa606f4f7e56e818e37366f930882589",
@@ -150,7 +152,7 @@
     "services/api/internal/privacy/postgres.go": "613fc595edf49e7d3334a8f5aac65e5c169591eab537458dfbdd7bb60101f7d5",
     "services/api/internal/privacy/privacy.go": "16a4988d4867b27dabc41f64fdaadd37185364bbc08b1f5c5f980480d2315ec0",
     "services/api/internal/privacy/restore.go": "6dd8ebd4d2745807d083a7c629ec7611c715b788d31f41fe5a26dd81b6cb44b3",
-    "services/api/internal/swaggerdocs/docs.go": "dc655e829dbada7c99e9857e2bebce9f2e1a53dcda303ce1534c4e67bfc73275",
+    "services/api/internal/swaggerdocs/docs.go": "96977aaad4e56bcf05fe7bdd31e75ed96591e15d5b28ae2abc3615cc4c5dc029",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
     "services/api/migrations/00002_typed_content_refs.sql": "78bbb7315006b7636ac5e00361bd48f7d0aa7181c84ef29b0aeee71ea28a246b",
@@ -165,10 +167,10 @@
     "services/api/migrations/00011_private_food_unknown_language.sql": "37a81044528e711bcf57262f3801efb5cadfa81d5821547d00bbd31453b4613d",
     "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
     "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
-    "contracts/generated/swagger-v1.json": "1b7e78c31aafa9bca47372fbac54e6d2d0ccb92eb286577f334630f24a54e9f3",
+    "contracts/generated/swagger-v1.json": "b49a12f05d4665e9bdda94a9017fd0486fb793ddd14a93062cb886ee7768a7ef",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "945d6e05592c9d1cd67a1c64026083e8b86f75a59235eadfcf1e37fcdd099181",
+    "docs/execucao/v1/backlog.json": "eb68f5fa043971fc77f3ce9de7da2dae7fe588a3084286845eb1f6038c8e2cae",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -212,21 +214,21 @@
     "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
     "tools/verificar_importacao_alimentos.py": "afa8357b1a29513facc0f7620ea6ff6c6875c0b17b5693d79a875c3bd5d30726",
     "tools/verificar_lote_alimentar_local.py": "8fb91247b63595638f722d83a71fd3b2daecf5a73e20ad32ad52d3669e46f4c3",
-    "tools/verificar_nomes_alimentares.py": "fb75f03b41f673a2397aeecc1945beb7d8dd67ec68b1548ee588e43c18f211a9",
+    "tools/verificar_nomes_alimentares.py": "632933ab9cc1e98c7a85c0f280c462a44157ff50dcbe8f4c95f20934980b388c",
     "tools/verificar_nutricao_local.py": "2c2055e493eb8a05b7e121952ef019d7dfb45142afc3caaf33639aa2f0fb578e",
     "tools/verificar_privacidade_http.py": "fa5f96d4e711164a2d9a16087e9eafcbc01512f6bc38927f9817a304cfeb2791",
     "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
   },
   "coverage": {
-    "dartFiles": 101,
+    "dartFiles": 102,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 49,
-    "goRegistrations": 26,
+    "goFiles": 50,
+    "goRegistrations": 27,
     "modelsInReference": 9
   },
   "groups": [
@@ -297,6 +299,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/entry_detail_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/entry_read_controller.dart",
           "line": 1
         },
         {
@@ -789,6 +796,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/data/nutrition_repository.dart",
+          "line": 4
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/privacy/data/privacy_repository.dart",
           "line": 6
         },
@@ -890,8 +902,18 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/entry_read_controller.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_controller.dart",
           "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_controller.dart",
+          "line": 4
         },
         {
           "repository": "trainforge",
@@ -1145,7 +1167,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/entry_detail_page.dart",
-        "line": 11
+        "line": 13
       }
     },
     {
@@ -1390,7 +1412,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/entry_detail_page.dart",
-        "line": 38
+        "line": 72
       }
     },
     {
@@ -1417,7 +1439,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 118
+        "line": 132
       }
     },
     {
@@ -1426,7 +1448,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 108
+        "line": 122
       }
     },
     {
@@ -1435,7 +1457,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 96
+        "line": 110
       }
     },
     {
@@ -1444,7 +1466,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 128
+        "line": 142
       }
     },
     {
@@ -3766,6 +3788,7 @@
       "services/api/internal/nutrition/doc.go",
       "services/api/internal/nutrition/entries.go",
       "services/api/internal/nutrition/entries_handler.go",
+      "services/api/internal/nutrition/entries_names.go",
       "services/api/internal/nutrition/food.go",
       "services/api/internal/nutrition/handler.go",
       "services/api/internal/nutrition/import.go",
@@ -4056,7 +4079,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 206
+          "line": 210
         },
         "registrationDetected": true
       },
@@ -4080,7 +4103,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 221
+          "line": 225
         },
         "registrationDetected": true
       },
@@ -4105,7 +4128,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 237
+          "line": 241
         },
         "registrationDetected": true
       },
@@ -4130,7 +4153,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 253
+          "line": 257
         },
         "registrationDetected": true
       },
@@ -4155,7 +4178,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 353
+          "line": 381
         },
         "registrationDetected": true
       },
@@ -4163,6 +4186,8 @@
         "method": "GET",
         "path": "/api/v1/me/food-entries",
         "params": [
+          "locale query string false \"pt-BR, pt-PT, en or es; display metadata only\"",
+          "namesVersion query string false \"Optional catalog revision; changed revision returns 409 food_name_catalog_changed\"",
           "date query string true \"YYYY-MM-DD\"",
           "timezone query string true \"IANA name, UTC or fixed offset such as -03:00\"",
           "limit query int false \"1..20; default 10\"",
@@ -4175,13 +4200,13 @@
           ],
           [
             "Failure",
-            "400,401,429,503 {object} httpapi.Problem"
+            "400,401,409,429,503 {object} httpapi.Problem"
           ]
         ],
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 384
+          "line": 414
         },
         "registrationDetected": true
       },
@@ -4205,7 +4230,31 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 413
+          "line": 463
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-entries/{id}",
+        "params": [
+          "id path string true \"Entry UUID; other owners and deleted records return 404\"",
+          "locale query string false \"pt-BR, pt-PT, en or es; display metadata only\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Entry"
+          ],
+          [
+            "Failure",
+            "400,401,404,409,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_names.go",
+          "line": 98
         },
         "registrationDetected": true
       },
@@ -4855,7 +4904,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 28
+          "line": 29
         }
       },
       {
@@ -4864,7 +4913,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 29
+          "line": 30
         }
       },
       {
@@ -4873,7 +4922,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 30
+          "line": 31
         }
       },
       {
@@ -4882,20 +4931,11 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 31
-        }
-      },
-      {
-        "method": "PATCH",
-        "path": "/api/v1/me/food-entries/{id}",
-        "source": {
-          "repository": "trainforge",
-          "path": "services/api/internal/nutrition/entries_handler.go",
           "line": 32
         }
       },
       {
-        "method": "DELETE",
+        "method": "GET",
         "path": "/api/v1/me/food-entries/{id}",
         "source": {
           "repository": "trainforge",
@@ -4904,12 +4944,30 @@
         }
       },
       {
+        "method": "PATCH",
+        "path": "/api/v1/me/food-entries/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 34
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/food-entries/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 35
+        }
+      },
+      {
         "method": "GET",
         "path": "/api/v1/me/food-summary",
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 34
+          "line": 36
         }
       },
       {
@@ -6077,6 +6135,18 @@
         "parameters": [
           {
             "type": "string",
+            "description": "pt-BR, pt-PT, en or es; display metadata only",
+            "name": "locale",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Optional catalog revision; changed revision returns 409 food_name_catalog_changed",
+            "name": "namesVersion",
+            "in": "query"
+          },
+          {
+            "type": "string",
             "description": "YYYY-MM-DD",
             "name": "date",
             "in": "query",
@@ -6117,6 +6187,12 @@
           },
           "401": {
             "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }
@@ -6201,6 +6277,75 @@
           },
           "415": {
             "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-entries/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Entry UUID; other owners and deleted records return 404",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "pt-BR, pt-PT, en or es; display metadata only",
+            "name": "locale",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.Entry"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }

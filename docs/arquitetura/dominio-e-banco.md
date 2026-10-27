@@ -158,3 +158,7 @@ LeituraGo0.6.0 agora escolhe a versão do nome antes de considerar retirada, sem
 
 
 A00011não adiciona tabela nem reescreve linhas. Preserva o controle por conta/sessão dafunção privada e grava idioma do nome comound(não declarado). A projeção deixa de repetir a antiga suposição automática de português; os registros/snapshots antigos permanecem paraauditoria.
+
+## Projeção de leitura048 — 27/10/2026
+
+EntryFoodDisplay/NameCatalog são DTOs de leitura, não tabelas nem novo estado persistido. Histórico/detalhe localizados resolvem o nome pela identidade e versão consumida, sem alterar calculation, nutrientes ou nomes particulares. O SQL privado revalida a sessão e mantém ownership; após encerrar a transação, a projeção editorial usa snapshot repeatable-read e lote. Pool de uma conexão, retirada/revisão, conta alheia/revogada/excluída e replay de mutação passaram em banco descartável. Schema11/26tabelas e dados reais preservados; nenhuma migration nova. [Contrato](contratos-v1.md), [recibo](../execucao/v1/food-names-consumption-verification.json).

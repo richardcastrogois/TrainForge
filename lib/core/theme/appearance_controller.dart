@@ -48,24 +48,47 @@ class AppearanceController extends ChangeNotifier {
       feedback == AppearanceFeedback.appearanceInvalid;
   AppearanceFeedback? feedback;
   String? get message => feedback?.fallback;
+  int _readGeneration = 0;
   Future<void>? _restore;
   Future<void> restore() => _restore ??= _load();
+  void _applySaved(String? saved) {
+    mode = switch (saved) {
+      'light' => ThemeMode.light,
+      'dark' => ThemeMode.dark,
+      _ => ThemeMode.system,
+    };
+    feedback = saved != null && !{'system', 'light', 'dark'}.contains(saved)
+        ? AppearanceFeedback.appearanceInvalid
+        : null;
+  }
+
   Future<void> _load() async {
+    final generation = ++_readGeneration;
+    Future<String?>? pending;
     reading = true;
     feedback = null;
     _retryMode = null;
     try {
-      final saved = await store.read().timeout(restoreTimeout);
+      pending = store.read();
+      final saved = await pending.timeout(restoreTimeout);
       if (_disposed) return;
-      mode = switch (saved) {
-        'light' => ThemeMode.light,
-        'dark' => ThemeMode.dark,
-        _ => ThemeMode.system,
-      };
-      if (saved != null && !{'system', 'light', 'dark'}.contains(saved)) {
-        feedback = AppearanceFeedback.appearanceInvalid;
-      }
+      _applySaved(saved);
     } catch (error) {
+      if (error is TimeoutException && pending != null) {
+        unawaited(
+          pending.then((saved) {
+            if (_disposed ||
+                generation != _readGeneration ||
+                reading ||
+                saving ||
+                !readFailed) {
+              return;
+            }
+            _applySaved(saved);
+            notifyListeners();
+          }, onError: (Object _, StackTrace s) {}),
+        );
+      }
       reportPreferenceReadFailure(PreferenceArea.appearance, error);
       if (!_disposed) {
         feedback = AppearanceFeedback.appearanceReadFailed;
@@ -99,6 +122,7 @@ class AppearanceController extends ChangeNotifier {
         (next == mode && feedback == null)) {
       return;
     }
+    _readGeneration++;
     final previous = mode;
     _retryMode = next;
     mode = next;

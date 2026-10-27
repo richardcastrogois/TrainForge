@@ -1,10 +1,10 @@
 # Trilha de implementação e encerramento por área
 
-Atualizada em **25/10/2026**, por solicitação do autor. Base factual: [auditoria do produto](auditoria-produto-2026-10-24.md) e [recibo](auditoria-produto-verificacao.json). APK atual preservado: **debug 0.3.0+13**; API Go **0.5.1 / 25 operações**.
+Atualizada em **27/10/2026**. Base histórica: [auditoria24/10](auditoria-produto-2026-10-24.md). Estado atual: APKdebug0.3.8+21 instalado;API0.6.2/26operações;schema11/26tabelas. [backlog.json](backlog.json) governa estados/dependências e [handoff](handoff.md) a próxima ação.
 
-Este é o roteiro humano principal para decidir, implementar e acompanhar o que falta. [backlog.json](backlog.json) continua sendo a fonte dos estados e dependências das histórias V1. Este plano não executa funcionalidades nem transforma propostas em decisões aprovadas.
+Este é o roteiro humano principal para acompanhar o que existe, o que falta e quando encerrar.021 foi encerrada no recorte de fundação. **048concluída**:495mensagens/idioma,197testes/analyze0, nomes revisados na biblioteca/histórico/detalhe/correção sem mudar cálculo ou mutações, operação editorial e cobertura0/6369 explícita. [Fechamento](localization-048-fechamento.json). Idioma padrão segue o aparelho, com substituição opcional em configurações e recuperação de resposta tardia sem gravar padrão.
 
-V1-021 foi encerrada em25/10 no recorte de fundação Flutter, com [critérios/evidências](frontend-state-verification.json), sem encerrar o frontend integrado. 048 está em andamento:495 mensagens deUI,cliente integrado aGo0.6.1/schema11, ferramenta editorial e cobertura real entregues.173 testes Flutter e ensaio Android dos idiomas no APK19. Falta a projeção de nomes no histórico/detalhe de consumo; publicação real continua condicionada a pacote humano/direitos. As demais áreas conservam seus gates.
+**Próxima047**: matriz de campos fundamentada, configuração privada versionada, etapas curtas e revisão final antes de procurar treino. Não coletar medidas físicas sem finalidade, reativar gerador ou inventar elegibilidade. Demais blocos continuam com seus gates; traduções reais ainda exigem revisão/direitos e futuros fluxos usam a infraestrutura048.
 
 ## 1. O raciocínio e a expectativa do autor
 
@@ -97,7 +97,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. V1-045/046 detalham as duas visões alimentares e o conjunto histórico/análise/dicas, também naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
-Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas e nomes revisados agora têm história própria048, em andamento. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
+Configuração completa persistida agora tem história própria047, com matriz de campos/contratos ainda a detalhar. Quatro idiomas e capacidade de nomes revisados têm história048 concluída no recorte documentado; publicação real permanece condicionada à revisão humana. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
 ## 3. Bloco 00 — decisões do produto
 

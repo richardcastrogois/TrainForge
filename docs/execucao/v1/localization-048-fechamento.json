@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "story": "V1-048",
+  "status": "done",
+  "scope": "available-ui-and-reviewed-name-read-capability",
+  "sourceBaseCommit": "462bfe2",
+  "ui": {
+    "locales": [
+      "pt-BR",
+      "pt-PT",
+      "en",
+      "es"
+    ],
+    "messagesPerLocale": 495,
+    "default": "device-language",
+    "manualChoice": "optional-settings",
+    "testsPassed": 197,
+    "newConsumptionRegressions": 18,
+    "newLatePreferenceRegressions": 6,
+    "analyzeIssues": 0,
+    "textScaleWidgetChecks": {
+      "width": 320,
+      "scale": 2
+    }
+  },
+  "api": {
+    "version": "0.6.2",
+    "operations": 26,
+    "schemaVersion": 11,
+    "tables": 26,
+    "migrationsAdded": 0,
+    "privateRead": "GET /api/v1/me/food-entries/{id}",
+    "localizedHistory": true,
+    "batchedNames": true,
+    "poolWithOneConnectionTested": true,
+    "snapshotAndMutationReplayUnchanged": true
+  },
+  "editorial": {
+    "publishedRealNames": 0,
+    "visibleFoodVersions": 6369,
+    "fallbackPerLocale": 6369,
+    "reviewRequiredBeforePublication": true,
+    "privateNamesPreserved": true
+  },
+  "native": {
+    "apkVersion": "0.3.8+21",
+    "sha256": "ad52a9ff2471f45bf3c2a985e3ba6e46ba80ebee0ed10036fb2949b8ced425a4",
+    "installedHashMatches": true,
+    "debugSignatureVerified": true,
+    "platform": "Android15",
+    "avd": "TrainForge_Benchmark",
+    "serial": "emulator-5554",
+    "fontScale": 1,
+    "historyAndDetailReadOnlyCases": [
+      {
+        "apk": "0.3.7+20",
+        "locale": "en",
+        "originalFallback": true,
+        "existingRealIntake": true
+      },
+      {
+        "apk": "0.3.8+21",
+        "locale": "pt-BR",
+        "originalFallback": true,
+        "existingRealIntake": true
+      }
+    ],
+    "priorFourLanguageAcceptance": "docs/execucao/v1/frontend-localization-native-verification.json",
+    "coldStartTimeoutsObserved": [
+      "appearance",
+      "locale"
+    ],
+    "savedPreferencesRecoveredAfterTimeout": true,
+    "finalScreen": "Hoje / pt-BR / dark / no form",
+    "newGoogleConsent": false,
+    "consumptionWrites": false,
+    "captureHashes": [
+      {
+        "name": "locale-consumption-before.png",
+        "sha256": "39880c64bf3242deb6d0c43439a4e88f952d7dfdabfdb9cdc14560b64cd7bb03"
+      },
+      {
+        "name": "locale-consumption-history-en.png",
+        "sha256": "af4d62cdbcb8625658397b70b66a71b469e51ee344c21670a029396a2b45f18e"
+      },
+      {
+        "name": "locale-consumption-record-en.png",
+        "sha256": "e0e7673a89f91fffc801703bacf73f421338f3110f5427ca057ad241a8721b99"
+      },
+      {
+        "name": "locale-consumption-detail-en.png",
+        "sha256": "0e5add4f856db93d7c53c84eb4f7deb683174950dff991737cffea313a216bb8"
+      },
+      {
+        "name": "locale-consumption-21-start.png",
+        "sha256": "64ece72ea45a18232ce5c4d4233ffaf0c5162887b9e7ee5d2a0550cc5cbb9d82"
+      },
+      {
+        "name": "locale-consumption-21-history-ptbr.png",
+        "sha256": "b344253b8785b936a48da524a0d37d1bedb169815bcc58bf20eef949a9690ec8"
+      },
+      {
+        "name": "locale-consumption-21-detail-ptbr.png",
+        "sha256": "9cffa15b5a494fc37f8f2d1e3dc6e60b33c61788d6ae038da4026da65c6d1c38"
+      }
+    ]
+  },
+  "dataAfter": {
+    "accounts": 1,
+    "consumptions": 1,
+    "foodVersions": 6369,
+    "reviewedNames": 0
+  },
+  "graph": {
+    "dartFiles": 102,
+    "nodes": 3472,
+    "edges": 4015,
+    "method": "incremental-AST-code-only-with-HTML/no-LLM-or-clustering"
+  },
+  "criteria": [
+    {
+      "criterion": 1,
+      "result": "Available UI localized, device default plus optional saved override; formats/plurals/errors/native controls and late preference recovery tested."
+    },
+    {
+      "criterion": 2,
+      "result": "Public and private display prefer exact reviewed locale, with original/source visible and explicit fallback. Runtime has no published reviewed food names."
+    },
+    {
+      "criterion": 3,
+      "result": "Immutable editorial versions and aliases bound to source identity/version, review and rights evidence; operator preflight/publication/withdrawal and limits documented."
+    },
+    {
+      "criterion": 4,
+      "result": "Reviewed alias search preserves identity/base/preparation/nutrients, including homonyms and withdrawal; isolated SQL/HTTP fixtures only."
+    },
+    {
+      "criterion": 5,
+      "result": "Language/revision-aware read cursor and generations; immutable calculations and mutation replay preserved; private names remain original."
+    },
+    {
+      "criterion": 6,
+      "result": "Read-only real coverage reports0/6369 in each locale; no invented or automatically approved name."
+    },
+    {
+      "criterion": 7,
+      "result": "Go/SQL/Flutter positives/negatives and Android acceptance recorded, with explicit native iOS limit."
+    }
+  ],
+  "evidence": [
+    "docs/execucao/v1/food-names-foundation-verification.json",
+    "docs/execucao/v1/food-names-read-verification.json",
+    "docs/execucao/v1/food-names-operations-verification.json",
+    "docs/execucao/v1/food-names-consumption-verification.json",
+    "docs/execucao/v1/frontend-localization-native-verification.json"
+  ],
+  "limits": [
+    "Reviewed-name fixtures exist only in removed disposable databases and widget tests; none are runtime food content or real Google login evidence.",
+    "No real reviewed translations published. UI localization is not global food-name coverage; human review and rights still gate publication.",
+    "Android agent checks do not replace usability acceptance with all target audiences, public release validation or native iOS testing.",
+    "The197 test count is not100%coverage, a security certification or capacity validation.",
+    "Future journeys must use this localization infrastructure; V1-048 does not implement pending training/photo/offline stories."
+  ]
+}

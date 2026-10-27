@@ -70,21 +70,44 @@ class LocaleController extends ChangeNotifier {
   LanguageChoice? _retryChoice;
   bool get readFailed => issue == LocaleIssue.readFallback;
   LocaleIssue? issue;
+  int _readGeneration = 0;
   Future<void>? _restore;
   Future<void> restore() => _restore ??= _load();
 
+  void _applySaved(String? saved) {
+    choice = LanguageChoice.parse(saved) ?? LanguageChoice.system;
+    issue = saved != null && LanguageChoice.parse(saved) == null
+        ? LocaleIssue.readFallback
+        : null;
+  }
+
   Future<void> _load() async {
+    final generation = ++_readGeneration;
+    Future<String?>? pending;
     reading = true;
     issue = null;
     _retryChoice = null;
     try {
-      final saved = await store.read().timeout(timeout);
+      pending = store.read();
+      final saved = await pending.timeout(timeout);
       if (_disposed) return;
-      choice = LanguageChoice.parse(saved) ?? LanguageChoice.system;
-      if (saved != null && LanguageChoice.parse(saved) == null) {
-        issue = LocaleIssue.readFallback;
-      }
+      _applySaved(saved);
     } catch (error) {
+      if (error is TimeoutException && pending != null) {
+        unawaited(
+          pending.then((saved) {
+            if (_disposed ||
+                generation != _readGeneration ||
+                reading ||
+                saving ||
+                !readFailed) {
+              return;
+            }
+            _applySaved(saved);
+            notifyListeners();
+          }, onError: (Object _, StackTrace s) {}),
+        );
+      }
       reportPreferenceReadFailure(PreferenceArea.locale, error);
       if (!_disposed) issue = LocaleIssue.readFallback;
     } finally {
@@ -116,6 +139,7 @@ class LocaleController extends ChangeNotifier {
         (choice == next && issue == null)) {
       return;
     }
+    _readGeneration++;
     final previous = choice;
     _retryChoice = next;
     choice = next;

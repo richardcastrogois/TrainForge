@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import '../domain/nutrition.dart';
+import '../../food_reference/domain/food_reference.dart';
 import 'nutrition_messages.dart';
 
 /// Read state for a single signed-in account. The view owns navigation and input.
@@ -29,6 +30,41 @@ class NutritionController extends ChangeNotifier {
   List<Json> _entries = const [], _foods = const [];
   Json? _summary;
   String _queryInput = '', _ownQuery = '';
+  String _locale = 'pt-BR';
+  String? _namesVersion;
+  String get locale => _locale;
+  String? get namesVersion => _namesVersion;
+  Future<void> selectLocale(String value) async {
+    if (!foodNameLocales.contains(value)) {
+      throw ArgumentError.value(value, 'locale');
+    }
+    if (!active || value == _locale) return;
+    _locale = value;
+    await load();
+  }
+
+  Future<NutritionPageData> _readEntries({String? cursor}) {
+    final r = repository;
+    return r is LocalizedNutritionRepository
+        ? (r as LocalizedNutritionRepository).localizedEntries(
+            localDay(_date),
+            offsetZone(_date),
+            locale: _locale,
+            cursor: cursor,
+            namesVersion: cursor == null ? null : _namesVersion,
+          )
+        : r.entries(localDay(_date), offsetZone(_date), cursor: cursor);
+  }
+
+  void _confirmCatalog(NutritionPageData page, {bool more = false}) {
+    if (repository is! LocalizedNutritionRepository) return;
+    if (page.nameCatalog?.locale != _locale) {
+      throw const FormatException('History locale mismatch');
+    }
+    if (more && page.nameCatalog?.version != _namesVersion) {
+      throw const FoodNameCatalogChanged();
+    }
+  }
 
   bool get active =>
       !_disposed && !_invalidated && currentAccountId() == accountId;
@@ -60,6 +96,7 @@ class NutritionController extends ChangeNotifier {
     _foods = const [];
     _summary = null;
     _cursor = _ownCursor = null;
+    _namesVersion = null;
     _error = _ownError = null;
     _loading = _ownLoading = _moreBusy = _ownMoreBusy = false;
     _queryInput = _ownQuery = '';
@@ -94,14 +131,17 @@ class NutritionController extends ChangeNotifier {
     _entries = const [];
     _summary = null;
     _cursor = null;
+    _namesVersion = null;
     _changed();
     try {
       final values = await Future.wait<Object>([
-        repository.entries(localDay(_date), offsetZone(_date)),
+        _readEntries(),
         repository.summary(localDay(_date), offsetZone(_date)),
       ]);
       if (!active || g != _generation) return;
       final records = values[0] as NutritionPageData;
+      _confirmCatalog(records);
+      _namesVersion = records.nameCatalog?.version;
       _entries = List.unmodifiable(records.items);
       _cursor = records.cursor;
       _summary = values[1] as Json;
@@ -163,16 +203,13 @@ class NutritionController extends ChangeNotifier {
     try {
       final result = own
           ? await repository.foods(q: _ownQuery, cursor: token)
-          : await repository.entries(
-              localDay(_date),
-              offsetZone(_date),
-              cursor: token,
-            );
+          : await _readEntries(cursor: token);
       if (current()) {
         if (own) {
           _foods = List.unmodifiable([..._foods, ...result.items]);
           _ownCursor = result.cursor;
         } else {
+          _confirmCatalog(result, more: true);
           _entries = List.unmodifiable([..._entries, ...result.items]);
           _cursor = result.cursor;
         }
@@ -182,6 +219,10 @@ class NutritionController extends ChangeNotifier {
         if (own) {
           _ownError = nutritionError(e);
         } else {
+          if (e is FoodNameCatalogChanged) {
+            await load();
+            return;
+          }
           _error = nutritionError(e);
         }
       }
@@ -207,6 +248,7 @@ class NutritionController extends ChangeNotifier {
     _foods = const [];
     _summary = null;
     _cursor = _ownCursor = null;
+    _namesVersion = null;
     _error = _ownError = null;
     _queryInput = _ownQuery = '';
     super.dispose();

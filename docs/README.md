@@ -1,6 +1,6 @@
 # Documentação do TrainForge
 
-Atualizado em **25/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
+Atualizado em **27/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
 
 | Preciso entender… | Abrir |
 |---|---|
@@ -10,7 +10,7 @@ Atualizado em **25/10/2026**. Este índice define a leitura atual; datas dentro 
 | O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
 | Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
 | Retomar o APK disponível e testar | [Avaliação Android e checkpoint atual](execucao/v1/avaliacao-android.md) |
-| Idiomas: o que foi localizado e o que falta | [Cliente, UI e ensaio Android048](execucao/v1/frontend-localization-native-verification.json), [operação e cobertura](conteudo/nomes-alimentares-revisados.md) e [Checkpoint anterior do APK16](execucao/v1/android-food-names-checkpoint.json) |
+| Idiomas: o que foi localizado e o que falta | [Fechamento048 por critério](execucao/v1/localization-048-fechamento.json), [operação e cobertura](conteudo/nomes-alimentares-revisados.md) e [Checkpoint anterior do APK16](execucao/v1/android-food-names-checkpoint.json) |
 | Consultar alimentos reais no app | [Consulta pública e limites](execucao/v1/alimentacao-consulta.md) |
 | Privacidade e ciclo da conta | [V1-013: implementação e limites do ciclo privado](execucao/v1/privacidade-013.md) |
 | Base alimentar real no banco | [V1-019: importação6369registros e limites](execucao/v1/alimentacao-importacao.md) |

@@ -75,19 +75,21 @@ type Calculation struct {
 	Changes          []EntryChange `json:"changes"`
 }
 type Entry struct {
-	ID          string      `json:"id"`
-	FoodID      string      `json:"foodId"`
-	FoodVersion string      `json:"foodVersion"`
-	Quantity    string      `json:"quantity"`
-	Unit        string      `json:"unit"`
-	OccurredAt  string      `json:"occurredAt"`
-	Timezone    string      `json:"timezone"`
-	Calculation Calculation `json:"calculation"`
-	DeletedAt   *string     `json:"deletedAt" extensions:"x-nullable"`
+	ID          string            `json:"id"`
+	FoodID      string            `json:"foodId"`
+	FoodVersion string            `json:"foodVersion"`
+	Quantity    string            `json:"quantity"`
+	Unit        string            `json:"unit"`
+	OccurredAt  string            `json:"occurredAt"`
+	Timezone    string            `json:"timezone"`
+	Calculation Calculation       `json:"calculation"`
+	FoodDisplay *EntryFoodDisplay `json:"foodDisplay,omitempty"`
+	DeletedAt   *string           `json:"deletedAt" extensions:"x-nullable"`
 }
 type NutritionPage struct {
-	Items      json.RawMessage `json:"items" swaggertype:"array,object"`
-	NextCursor *string         `json:"nextCursor" extensions:"x-nullable"`
+	Items       json.RawMessage  `json:"items" swaggertype:"array,object"`
+	NextCursor  *string          `json:"nextCursor" extensions:"x-nullable"`
+	NameCatalog *FoodNameCatalog `json:"nameCatalog,omitempty"`
 }
 type NutrientTotal struct {
 	Column   string  `json:"sourceColumnKey"`

@@ -62,3 +62,7 @@ Não instalar Kubernetes, Spark, Cassandra, Elasticsearch ou toda uma stack de o
 Primeiro corrigir N+1, índices/planos de consulta, paginação, payload excessivo e limites de conexões. Medir compressão/cache/ETag em conteúdo público versionado. Escala horizontal exige estado de sessão e idempotência compartilhados corretamente, não memória local por usuário. Rate limit distribuído/fila/Redis/replica só entram se volume e comportamento justificarem.
 
 Não fazer teste de carga em fornecedor de conteúdo externo. Importar o lote permitido e ensaiar nossa API em ambiente autorizado com dados sintéticos isolados; excluir essa carga do banco entregue. Um benchmark bem-sucedido não prova capacidade de milhões de usuários com qualquer padrão de uso.
+
+## Leitura individual de consumo — 27/10/2026
+
+GET /me/food-entries/{id} exige o mesmo Bearer/guarda de conta das operações privadas; a sessão é revalidada no banco e a consulta usa user_id autenticado. Registro alheio ou excluído retorna404, credencial revogada401, sem divulgar nome/quantidade. Respostas privadas no-store. Nome revisado é metadado público anexado fora do snapshot; nenhum ID particular/titular vai para a consulta editorial. Pool de uma conexão e negativos passaram no ensaio isolado; não é teste de carga. [Evidência](../execucao/v1/food-names-consumption-verification.json).

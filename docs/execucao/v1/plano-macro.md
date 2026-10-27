@@ -1,5 +1,11 @@
 # Caminho da pesquisa ao APK
 
+## Vigente — 27/10/2026
+
+048concluída com [critério/evidência](localization-048-fechamento.json):UI disponível nos quatro idiomas, projeção revisada em histórico/detalhe separada de cálculo e cobertura real0/6369 explícita.197testesFlutter/análise limpa;Go0.6.2/26operações eSQL/HTTPisolados aprovados. APKdebug0.3.8+21 instalado/hash/assinatura conferidos, dados reais preservados. Próxima047 pelas dependências:configuração privada versionada em etapas curtas/revisão antes da seleção. Sem hospedagem, compra ou prática inventada. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) são vigentes.
+
+## Registro macro anterior — 25/10/2026
+
 Estado vigente em **25/10/2026**. O roteiro de execução atual é a [trilha por área](trilha-implementacao.md), que registra expectativas, tarefas, dependências, critérios de encerramento e dúvidas do autor. A [auditoria](auditoria-produto-2026-10-24.md) é o baseline factual; o [backlog](backlog.json) governa estados das histórias. Q1 respondido:dois caminhos de treino, cuidador praticante nas pausas e alimento por foto com revisão/quantidade informada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão; após a [comparação](pesquisa-fotos-historico.md), aprovou também recuperar fotos pela conta com cache no celular. Q3 confirmou configuração completa antes da busca, trocas compatíveis/agenda editável e retomada/parcial. Configuração047 planejada como todo; Q4 confirmou excluir foto com a refeição e registrar offline/sincronizar depois (026 ainda todo); Q5 confirmou etapas curtas/revisão e nome traduzido quando revisado com original/fonte nos detalhes (nova048todo); Q6 definiu exclusão por usuário/master(nova049todo) e avaliação de todos os cenários. Seguir implementação pelas dependências, sem repetir perguntas genéricas.
 
 FundaçãoFlutter021 encerrada25/10:composição/configuração e uma fatia de estado com108testes/analyze0issues; [critérios](frontend-state-verification.json). 048 está doing:fundação e79mensagens nos quatro idiomas,119testes/analyze0issues eAPK0.3.1+14 preparado, não instalado. Demais telas/plurais e nomes revisados/busca continuam pendentes; não representa encerramento do frontend.

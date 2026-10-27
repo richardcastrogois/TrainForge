@@ -8,7 +8,7 @@
         "description": "Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.",
         "title": "TrainForge API",
         "contact": {},
-        "version": "0.6.1"
+        "version": "0.6.2"
     },
     "basePath": "/",
     "paths": {
@@ -1137,6 +1137,18 @@
                 "parameters": [
                     {
                         "type": "string",
+                        "description": "pt-BR, pt-PT, en or es; display metadata only",
+                        "name": "locale",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Optional catalog revision; changed revision returns 409 food_name_catalog_changed",
+                        "name": "namesVersion",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
                         "description": "YYYY-MM-DD",
                         "name": "date",
                         "in": "query",
@@ -1177,6 +1189,12 @@
                     },
                     "401": {
                         "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
                         "schema": {
                             "$ref": "#/definitions/httpapi.Problem"
                         }
@@ -1288,6 +1306,79 @@
             }
         },
         "/api/v1/me/food-entries/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read own consumption and current reviewed display name",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Entry UUID; other owners and deleted records return 404",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "pt-BR, pt-PT, en or es; display metadata only",
+                        "name": "locale",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Entry"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
             "delete": {
                 "security": [
                     {
@@ -2239,6 +2330,9 @@
                     "type": "string",
                     "x-nullable": true
                 },
+                "foodDisplay": {
+                    "$ref": "#/definitions/nutrition.EntryFoodDisplay"
+                },
                 "foodId": {
                     "type": "string"
                 },
@@ -2288,6 +2382,23 @@
                 },
                 "unit": {
                     "type": "string"
+                }
+            }
+        },
+        "nutrition.EntryFoodDisplay": {
+            "type": "object",
+            "properties": {
+                "foodId": {
+                    "type": "string"
+                },
+                "foodVersion": {
+                    "type": "string"
+                },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
+                },
+                "reviewedName": {
+                    "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
                 }
             }
         },
@@ -2565,6 +2676,9 @@
                     "items": {
                         "type": "object"
                     }
+                },
+                "nameCatalog": {
+                    "$ref": "#/definitions/nutrition.FoodNameCatalog"
                 },
                 "nextCursor": {
                     "type": "string",

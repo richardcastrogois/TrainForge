@@ -1,10 +1,39 @@
 # Contratos da V1 — implementado e planejado
 
-**CódigoGo0.6.1/25operações**, clienteFlutter integrado e schema11/26tabelas locais. Migrations9–11 autorizadas pelo autor e aplicadas após SQLdescartável. LeituraHTTP com a base real passou nos4idiomas; conta,consumo,sessões e6369versões preservados. APK0.3.6+19 instalado, com ensaio nativo de idioma e restauração. Ferramenta editorial, cobertura real e ensaio Android dos idiomas entregues; falta a projeção no histórico de consumo e o pacote humano quando houver publicação real. [Integração](../execucao/v1/frontend-food-names-verification.json),[ativação local](../execucao/v1/food-names-local-activation.json).
+**Go 0.6.2 / 26 operações**, Flutter integrado e schema11/26tabelas. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
-## Limite atual da projeção privada
+## Leitura privada localizada — 27/10/2026
 
-Em27/10, histórico e detalhe de consumo ainda exibem calculation.food.nameOriginal. A próxima fatia048 deve resolver nomes por identidade/versão/idioma fora do snapshot imutável, em lote, com retentativas/cursor/revisão coerentes e preservação do titular. Isso é planejamento: não há novo parâmetro privado implementado ou alteração do Swagger nesta correção de preferências. [Recibo e pendências](../execucao/v1/frontend-localization-native-verification.json).
+| Elemento | Contrato |
+|---|---|
+| GET /api/v1/me/food-entries | date/timezone obrigatórios; locale opcional pt-BR/pt-PT/en/es e namesVersion opcional. Sem locale, contrato/cursor original. Limite1–20, default10 |
+| GET /api/v1/me/food-entries/{id} | Nova leitura do consumo ativo do titular, com locale opcional. Alheio ou excluído retorna404; credencial inválida/revogada401. Sem pesquisa de titular por parâmetro |
+| foodDisplay | Metadados opcionais por registro: foodId/foodVersion exatos, nameCatalog e reviewedName opcional. Fora de calculation; nunca persistidos no snapshot, na exportação ou na resposta idempotente de escrita |
+| nameCatalog | Revisão por idioma no envelope da página e em foodDisplay. Snapshot repeatable-read da revisão e de todos os nomes da página |
+| Cursor | Conta, dia, fuso e modo localizado/idioma/revisão vinculados. Carrega revisão, mesmo sem reenviar namesVersion. Revisão alterada retorna409 food_name_catalog_changed; Flutter recarrega a primeira página sem mesclar gerações |
+| Privacidade | Bearer e guarda de conta existentes, sessão revalidada em SQL, filtro por user_id. Cache-Control:no-store. Biblioteca pública não recebe IDs da conta nem registros privados |
+| Lote/conexões | Consulta privada encerra sua transação antes da projeção pública. Uma consulta SQL de nomes por página, alvos deduplicados; pool com uma conexão ensaiado sem bloqueio |
+| Integridade | Identidade/versão, calculation, preparo, base, quantidade, nutrientes e histórico inalterados. Declaração personal/own mantém nome e idioma declarado, sem tradução |
+| Detalhe/correção | Leitura individual atualiza metadados ao abrir, retomar e após corrigir. Idioma/resposta antiga não substitui geração nova. Edição usa FoodReference de apresentação separado; envia somente o contrato original |
+
+```mermaid
+sequenceDiagram
+    participant UI as Flutter / titular
+    participant API as Leitura privada Go
+    participant DB as PostgreSQL
+    UI->>API: GET histórico / detalhe + locale
+    API->>DB: Sessão viva e registro do titular
+    DB-->>API: Snapshot original do consumo
+    Note over API,DB: Transação privada encerrada
+    API->>DB: Revisão e nomes públicos em lote / repeatable-read
+    DB-->>API: Nomes da versão exata ou fallback
+    API-->>UI: Snapshot preservado + foodDisplay / no-store
+    Note over UI: Locale, revisão, conta e geração conferidos
+```
+
+O idioma da interface segue o aparelho por padrão. Escolha manual é opcional em configurações e não traduz documentos ou alimentos automaticamente. Timeout inicial não grava padrão: resposta tardia só restaura a preferência se leitura/tentativa/escolha não tiverem sido substituídas. Falha mantém recuperação explícita.
+
+Os itens abaixo preservam a entrega pública anterior; a antiga lacuna privada foi resolvida pelo contrato acima. Zero nomes revisados publicados continua uma lacuna editorial explícita, com fallback original.
 
 ## Leitura de nomes048 — códigoGo0.6.0,26/10
 
@@ -32,7 +61,7 @@ flowchart LR
     result --> cache["Cursor e ETag por idioma e revisão"]
 ```
 
-Flutter já invalida consulta/cursor ao trocar idioma e reinicia uma vez após409, preservando busca digitada,identidade eoriginal. A ferramenta editorial confere pacotes, publica/retira registros imutáveis e gera cobertura read-only; não há nova rota pública. O ensaio de idiomas Android passou; falta projetar nomes no histórico e detalhe de consumo sem alterar snapshots/cálculos. Uso editorial real exige evidência humana/direitos.0nomes publicados; fixtures só nostestes.9–11egrants foram aplicados comautorização, sem mudar registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
+Flutter já invalida consulta/cursor ao trocar idioma e reinicia uma vez após409, preservando busca digitada,identidade eoriginal. A ferramenta editorial confere pacotes, publica/retira registros imutáveis e gera cobertura read-only; não há nova rota pública. O ensaio de idiomas Android passou; histórico/detalhe agora têm a projeção separada descrita acima. Uso editorial real exige evidência humana/direitos.0nomes publicados; fixtures só nostestes.9–11egrants foram aplicados comautorização, sem mudar registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
 
 
 Operação local e seus limites: [runbook editorial](../conteudo/nomes-alimentares-revisados.md), [recibo SQL/CLI/cobertura](../execucao/v1/food-names-operations-verification.json). Cobertura agrega versões públicas visíveis por idioma/revisão/fonte/versão e não lê dados particulares.

@@ -77,3 +77,7 @@ Falha doGooglePlayServices foi observada no emulador e dispensada durante inspe�
 ## Prioridade confirmada pelo autor
 
 Teste noemulador e desenvolvimento local agora. A biblioteca foi aberta com73movimentos/0programas,APIpronta e APKatual. Não pedir hospedagem para iniciar esse teste. [Critérios locais concluídos](auth-local-fechamento.md); HTTPSstaging/release/iOS permanecem nas histórias próprias.
+
+## Checkpoint vigente — 27/10/2026
+
+APKdebug0.3.8+21 instalado noTrainForge_Benchmark, SHA256ad52a9ff2471f45bf3c2a985e3ba6e46ba80ebee0ed10036fb2949b8ced425a4, assinatura debug verificada. API0.6.2/26operações eDBschema11/26tabelas ativos somente locais. Histórico/detalhe realEN/PT-BR e recuperação de preferência tardia conferidos; ficou emHoje/pt-BR/dark sem formulário. [Fechamento048 e limites](localization-048-fechamento.json). Idioma segue o aparelho por padrão, com escolha opcional em configurações. Sem novoGoogle, consumo, hosting ou deploy;0nomes revisados reais publicados.

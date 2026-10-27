@@ -2,6 +2,7 @@ package nutrition
 
 import (
 	"context"
+	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"time"
 )
@@ -29,8 +30,16 @@ type FoodNamesPostgres struct{ Pool *pgxpool.Pool }
 // Resolve handles a whole public page with one SQL query, not N+1 detail calls.
 // The latest name version is selected BEFORE withdrawal; a withdrawn latest
 // version falls back to the original, never to an older reviewed name.
-// This primitive is not wired to HTTP until locale/cursor/cache are coherent.
+// The caller may bind this query and a catalog revision to one read snapshot.
 func (p FoodNamesPostgres) Resolve(ctx context.Context, targets []FoodNameTarget, locale string) (map[FoodNameTarget]ReviewedNameDisplay, error) {
+	return resolveFoodNames(ctx, p.Pool, targets, locale)
+}
+
+type foodNameQuery interface {
+	Query(context.Context, string, ...any) (pgx.Rows, error)
+}
+
+func resolveFoodNames(ctx context.Context, q foodNameQuery, targets []FoodNameTarget, locale string) (map[FoodNameTarget]ReviewedNameDisplay, error) {
 	result := map[FoodNameTarget]ReviewedNameDisplay{}
 	if !foodNameLocale(locale) || len(targets) > 50 {
 		return nil, ErrFoodQuery
@@ -46,7 +55,7 @@ func (p FoodNamesPostgres) Resolve(ctx context.Context, targets []FoodNameTarget
 	if len(targets) == 0 {
 		return result, nil
 	}
-	rows, err := p.Pool.Query(ctx, `WITH requested AS(SELECT * FROM unnest($1::text[],$2::text[]) r(food_id,version_sha))
+	rows, err := q.Query(ctx, `WITH requested AS(SELECT * FROM unnest($1::text[],$2::text[]) r(food_id,version_sha))
  SELECT v.food_id,v.version_sha,v.name_original,v.name_locale,n.version_sha,n.payload
  FROM requested r JOIN trainforge_v1.food_versions v ON v.food_id=r.food_id AND v.version_sha=r.version_sha
  JOIN LATERAL(SELECT nv.* FROM trainforge_v1.food_name_versions nv

@@ -1,8 +1,8 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `15bf5ad8d6569ac9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `bad02a2771f0dd99`.
 
-**17/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-048**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
+**18/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-047**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
 | Épico | Objetivo | Histórias | Concluídas |
 | --- | --- | --- | --- |
@@ -12,7 +12,7 @@
 | EP04 | Identidade, privacidade e acesso | 4 | 3 |
 | EP05 | Biblioteca humana e API de catálogo | 5 | 1 |
 | EP06 | Atividade e alimentação registradas de verdade | 7 | 2 |
-| EP07 | Flutter e experiência da V1 | 8 | 1 |
+| EP07 | Flutter e experiência da V1 | 8 | 2 |
 | EP08 | Segurança, desempenho e observabilidade | 3 | 0 |
 | EP09 | Infraestrutura, CI e implantação | 3 | 0 |
 | EP10 | APK e primeiro teste acompanhado | 4 | 0 |
@@ -254,7 +254,7 @@ flowchart LR
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |
 | V1-025 | todo | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021, V1-048 |
 | V1-026 | todo | Tratar offline e sincronização sem fingir sucesso | V1-023, V1-025 |
-| V1-048 | doing | Localizar interface e nomes alimentares com revisão | V1-020, V1-021 |
+| V1-048 | done | Localizar interface e nomes alimentares com revisão | V1-020, V1-021 |
 | V1-027 | todo | Validar acessibilidade e paridade de contratos Android/iOS | V1-022, V1-024, V1-025, V1-048 |
 ### EP08 — Segurança, desempenho e observabilidade
 

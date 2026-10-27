@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `15bf5ad8d6569ac9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `bad02a2771f0dd99`.
 
 ## Atual: referências entre widgets
 
@@ -97,7 +97,7 @@ flowchart LR
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:14](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
-| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:11](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
+| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:13](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:37](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:423](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:16](../../../lib/features/nutrition/presentation/nutrition_page.dart) |

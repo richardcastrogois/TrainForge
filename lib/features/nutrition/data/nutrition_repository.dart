@@ -1,8 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:trainforge/core/http/app_dio.dart';
 import '../domain/nutrition.dart';
+import '../../food_reference/domain/food_reference.dart';
 
-class GoNutritionRepository implements NutritionRepository {
+class GoNutritionRepository
+    implements NutritionRepository, LocalizedNutritionRepository {
   final Dio dio;
   final String accountId;
   final String? Function() currentAccountId;
@@ -60,6 +62,76 @@ class GoNutritionRepository implements NutritionRepository {
       query: {'date': day, 'timezone': zone, 'cursor': ?cursor, 'limit': 10},
     ),
   );
+  @override
+  Future<NutritionPageData> localizedEntries(
+    String day,
+    String zone, {
+    required String locale,
+    String? cursor,
+    String? namesVersion,
+  }) async {
+    if (!foodNameLocales.contains(locale)) {
+      throw const FormatException('Invalid content locale');
+    }
+    final NutritionPageData page;
+    try {
+      page = NutritionPageData.fromJson(
+        await _request(
+          'GET',
+          '/api/v1/me/food-entries',
+          query: {
+            'date': day,
+            'timezone': zone,
+            'locale': locale,
+            'cursor': ?cursor,
+            'namesVersion': ?namesVersion,
+            'limit': 10,
+          },
+        ),
+      );
+    } on DioException catch (e) {
+      if (e.response?.statusCode == 409 &&
+          e.response?.data is Map &&
+          e.response?.data['code'] == 'food_name_catalog_changed') {
+        throw const FoodNameCatalogChanged();
+      }
+      rethrow;
+    }
+    if (page.nameCatalog?.locale != locale) {
+      throw const FormatException('Entry catalog locale mismatch');
+    }
+    if (namesVersion != null && page.nameCatalog?.version != namesVersion) {
+      throw const FoodNameCatalogChanged();
+    }
+    for (final entry in page.items) {
+      final d = EntryFoodDisplay.fromEntry(entry);
+      if (d == null ||
+          d.catalog.locale != locale ||
+          d.catalog.version != page.nameCatalog?.version) {
+        throw const FormatException('Entry name catalog mismatch');
+      }
+    }
+    return page;
+  }
+
+  @override
+  Future<Json> localizedEntry(String id, {required String locale}) async {
+    if (!RegExp(r'^[a-f0-9]{8}(-[a-f0-9]{4}){3}-[a-f0-9]{12}$').hasMatch(id) ||
+        !foodNameLocales.contains(locale)) {
+      throw const FormatException('Invalid entry read');
+    }
+    final entry = await _request(
+      'GET',
+      '/api/v1/me/food-entries/$id',
+      query: {'locale': locale},
+    );
+    final d = EntryFoodDisplay.fromEntry(entry);
+    if (entry['id'] != id || d == null || d.catalog.locale != locale) {
+      throw const FormatException('Entry read identity mismatch');
+    }
+    return entry;
+  }
+
   @override
   Future<Json> summary(String day, String zone) => _request(
     'GET',
