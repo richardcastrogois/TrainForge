@@ -8644,30 +8644,6 @@
       "_origin": "ast"
     },
     {
-      "id": "core_l10n_language_page",
-      "label": "language_page.dart",
-      "file_type": "code",
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_language_page_languagepage",
-      "label": "LanguagePage",
-      "file_type": "code",
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_language_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "locale_controller_dart",
       "label": "locale_controller.dart",
       "file_type": "code",
@@ -8684,210 +8660,10 @@
       "_origin": "ast"
     },
     {
-      "id": "core_l10n_locale_controller",
-      "label": "locale_controller.dart",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_languagechoice",
-      "label": "LanguageChoice",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_localestore",
-      "label": "LocaleStore",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_nativelocalestore",
-      "label": "NativeLocaleStore",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_localeissue",
-      "label": "LocaleIssue",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_localecontroller",
-      "label": "LocaleController",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_localescope",
-      "label": "LocaleScope",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_tag",
-      "label": "tag",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_locale",
-      "label": "locale",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "locale",
       "label": "Locale?",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_supportedapplocales",
-      "label": "supportedAppLocales",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_channel",
-      "label": "channel",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_store",
-      "label": "store",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_timeout",
-      "label": "timeout",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_choice",
-      "label": "choice",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_loaded",
-      "label": "loaded",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_issue",
-      "label": "issue",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_restore",
-      "label": "_restore",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_parse",
-      "label": "parse",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_resolveapplocale",
-      "label": "resolveAppLocale",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_read",
-      "label": "read",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_write",
-      "label": "write",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_load",
-      "label": "_load",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_select",
-      "label": "select",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_l10n_locale_controller_maybeof",
-      "label": "maybeOf",
-      "file_type": "code",
-      "source_file": "core/l10n/locale_controller.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -8904,198 +8680,6 @@
       "label": "package:intl/intl.dart",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller",
-      "label": "appearance_controller.dart",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_appearancestore",
-      "label": "AppearanceStore",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_nativeappearancestore",
-      "label": "NativeAppearanceStore",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_appearancefeedback",
-      "label": "AppearanceFeedback",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_appearancecontroller",
-      "label": "AppearanceController",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_appearancescope",
-      "label": "AppearanceScope",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_channel",
-      "label": "channel",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_fallback",
-      "label": "fallback",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_store",
-      "label": "store",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_restoretimeout",
-      "label": "restoreTimeout",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_mode",
-      "label": "mode",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_loaded",
-      "label": "loaded",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_feedback",
-      "label": "feedback",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_message",
-      "label": "message",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_restore",
-      "label": "_restore",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_read",
-      "label": "read",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_write",
-      "label": "write",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_load",
-      "label": "_load",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_select",
-      "label": "select",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_controller_maybeof",
-      "label": "maybeOf",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_page",
-      "label": "appearance_page.dart",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_page_appearancepage",
-      "label": "AppearancePage",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "core_theme_appearance_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "core/theme/appearance_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -12392,6 +11976,518 @@
       "label": "build",
       "file_type": "code",
       "source_file": "features/nutrition/presentation/nutrition_forms.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_language_page",
+      "label": "language_page.dart",
+      "file_type": "code",
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_language_page_languagepage",
+      "label": "LanguagePage",
+      "file_type": "code",
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_language_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller",
+      "label": "locale_controller.dart",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_languagechoice",
+      "label": "LanguageChoice",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_localestore",
+      "label": "LocaleStore",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_nativelocalestore",
+      "label": "NativeLocaleStore",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_localeissue",
+      "label": "LocaleIssue",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_localecontroller",
+      "label": "LocaleController",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_localescope",
+      "label": "LocaleScope",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_tag",
+      "label": "tag",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_locale",
+      "label": "locale",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_supportedapplocales",
+      "label": "supportedAppLocales",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_channel",
+      "label": "channel",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_store",
+      "label": "store",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_timeout",
+      "label": "timeout",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_choice",
+      "label": "choice",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_loaded",
+      "label": "loaded",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_retrychoice",
+      "label": "_retryChoice",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_readfailed",
+      "label": "readFailed",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_issue",
+      "label": "issue",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_restore",
+      "label": "_restore",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_parse",
+      "label": "parse",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_resolveapplocale",
+      "label": "resolveAppLocale",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_read",
+      "label": "read",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_write",
+      "label": "write",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_load",
+      "label": "_load",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_retry",
+      "label": "retry",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_select",
+      "label": "select",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_l10n_locale_controller_maybeof",
+      "label": "maybeOf",
+      "file_type": "code",
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "preferences_read_diagnostics_dart",
+      "label": "../preferences/read_diagnostics.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_preferences_read_diagnostics",
+      "label": "read_diagnostics.dart",
+      "file_type": "code",
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_preferences_read_diagnostics_preferencearea",
+      "label": "PreferenceArea",
+      "file_type": "code",
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_preferences_read_diagnostics_code",
+      "label": "code",
+      "file_type": "code",
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_preferences_read_diagnostics_reportpreferencereadfailure",
+      "label": "reportPreferenceReadFailure",
+      "file_type": "code",
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "log_app_logger_dart",
+      "label": "../log/app_logger.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller",
+      "label": "appearance_controller.dart",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_appearancestore",
+      "label": "AppearanceStore",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_nativeappearancestore",
+      "label": "NativeAppearanceStore",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_appearancefeedback",
+      "label": "AppearanceFeedback",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_appearancecontroller",
+      "label": "AppearanceController",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_appearancescope",
+      "label": "AppearanceScope",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_channel",
+      "label": "channel",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_fallback",
+      "label": "fallback",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_store",
+      "label": "store",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_restoretimeout",
+      "label": "restoreTimeout",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_mode",
+      "label": "mode",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_loaded",
+      "label": "loaded",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_retrymode",
+      "label": "_retryMode",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_readfailed",
+      "label": "readFailed",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_feedback",
+      "label": "feedback",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_message",
+      "label": "message",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_restore",
+      "label": "_restore",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_read",
+      "label": "read",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_write",
+      "label": "write",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_load",
+      "label": "_load",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_retry",
+      "label": "retry",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_select",
+      "label": "select",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_controller_maybeof",
+      "label": "maybeOf",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_page",
+      "label": "appearance_page.dart",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_page_appearancepage",
+      "label": "AppearancePage",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "core_theme_appearance_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "core/theme/appearance_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -16262,6 +16358,22 @@
     {
       "id": "l10n_generated_app_localizations_foodnamefallback",
       "label": "foodNameFallback",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_retryreadpreference",
+      "label": "retryReadPreference",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_readingpreferences",
+      "label": "readingPreferences",
       "file_type": "code",
       "source_file": "l10n/generated/app_localizations.dart",
       "source_location": null,
@@ -20268,6 +20380,22 @@
       "_origin": "ast"
     },
     {
+      "id": "l10n_generated_app_localizations_en_retryreadpreference",
+      "label": "retryReadPreference",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_en.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_en_readingpreferences",
+      "label": "readingPreferences",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_en.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "l10n_generated_app_localizations_en_movewithname",
       "label": "moveWithName",
       "file_type": "code",
@@ -24222,6 +24350,22 @@
     {
       "id": "l10n_generated_app_localizations_es_foodnamefallback",
       "label": "foodNameFallback",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_es.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_es_retryreadpreference",
+      "label": "retryReadPreference",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_es.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_es_readingpreferences",
+      "label": "readingPreferences",
       "file_type": "code",
       "source_file": "l10n/generated/app_localizations_es.dart",
       "source_location": null,
@@ -28198,6 +28342,22 @@
     {
       "id": "l10n_generated_app_localizations_pt_foodnamefallback",
       "label": "foodNameFallback",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_pt.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_pt_retryreadpreference",
+      "label": "retryReadPreference",
+      "file_type": "code",
+      "source_file": "l10n/generated/app_localizations_pt.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "l10n_generated_app_localizations_pt_readingpreferences",
+      "label": "readingPreferences",
       "file_type": "code",
       "source_file": "l10n/generated/app_localizations_pt.dart",
       "source_location": null,
@@ -40219,1025 +40379,6 @@
       "_origin": "ast"
     },
     {
-      "source": "core_l10n_language_page",
-      "target": "core_l10n_language_page_languagepage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page_languagepage",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "core_l10n_language_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "locale_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "localized_context_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "shared_widgets_app_loading_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_language_page",
-      "target": "core_l10n_locale_controller_languagechoice",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/language_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_languagechoice",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localestore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_nativelocalestore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller_nativelocalestore",
-      "target": "core_l10n_locale_controller_localestore",
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localeissue",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localecontroller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller_localecontroller",
-      "target": "changenotifier",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localescope",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller_localescope",
-      "target": "inheritednotifier",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller_localescope",
-      "target": "core_l10n_locale_controller_localecontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_tag",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_locale",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "locale",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_supportedapplocales",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_channel",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "static_const",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_store",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localestore",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_timeout",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "duration",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_choice",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_languagechoice",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_loaded",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_issue",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localeissue",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_restore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "future",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_parse",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_resolveapplocale",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_read",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_write",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_load",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_select",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_maybeof",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "dart_async",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "package_flutter_widgets_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "package_flutter_services_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_l10n_locale_controller",
-      "target": "core_l10n_locale_controller_localescope",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/l10n/locale_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancestore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_nativeappearancestore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller_nativeappearancestore",
-      "target": "core_theme_appearance_controller_appearancestore",
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancefeedback",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancecontroller",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller_appearancecontroller",
-      "target": "changenotifier",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancescope",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller_appearancescope",
-      "target": "inheritednotifier",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller_appearancescope",
-      "target": "core_theme_appearance_controller_appearancecontroller",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_channel",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "static_const",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_fallback",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_store",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancestore",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_restoretimeout",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "duration",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_mode",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "thememode",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_loaded",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_feedback",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancefeedback",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_message",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "string_get",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_restore",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "future",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_read",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_write",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_load",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_select",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_dispose",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_maybeof",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "dart_async",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "package_flutter_services_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_controller",
-      "target": "core_theme_appearance_controller_appearancescope",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "core_theme_appearance_page_appearancepage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page_appearancepage",
-      "target": "statelesswidget",
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "core_theme_appearance_page_build",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "package_trainforge_core_l10n_feedback_localization_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "package_trainforge_core_l10n_localized_context_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "package_flutter_material_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "package_trainforge_core_theme_appearance_controller_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "package_trainforge_shared_widgets_app_loading_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "core_theme_appearance_page",
-      "target": "thememode",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "core/theme/appearance_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
-      "_origin": "ast"
-    },
-    {
       "source": "features_auth_presentation_auth_controller",
       "target": "features_auth_presentation_auth_controller_authaction",
       "relation": "defines",
@@ -49560,6 +48701,1214 @@
       "_origin": "ast"
     },
     {
+      "source": "core_l10n_language_page",
+      "target": "core_l10n_language_page_languagepage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page_languagepage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "core_l10n_language_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "locale_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "localized_context_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "shared_widgets_app_loading_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_language_page",
+      "target": "core_l10n_locale_controller_languagechoice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/language_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_languagechoice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localestore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_nativelocalestore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller_nativelocalestore",
+      "target": "core_l10n_locale_controller_localestore",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localeissue",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localecontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller_localecontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localescope",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller_localescope",
+      "target": "inheritednotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller_localescope",
+      "target": "core_l10n_locale_controller_localecontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_tag",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_locale",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "locale",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_supportedapplocales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_channel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "static_const",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_store",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localestore",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_timeout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "duration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_choice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_languagechoice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_loaded",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_retrychoice",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_readfailed",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "bool_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_issue",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localeissue",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_restore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_parse",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_resolveapplocale",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_read",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_write",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_load",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_retry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_select",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_maybeof",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "preferences_read_diagnostics_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "package_flutter_widgets_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_l10n_locale_controller",
+      "target": "core_l10n_locale_controller_localescope",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/l10n/locale_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "core_preferences_read_diagnostics_preferencearea",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "core_preferences_read_diagnostics_code",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "core_preferences_read_diagnostics_reportpreferencereadfailure",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_preferences_read_diagnostics",
+      "target": "log_app_logger_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/preferences/read_diagnostics.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancestore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_nativeappearancestore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller_nativeappearancestore",
+      "target": "core_theme_appearance_controller_appearancestore",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancefeedback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancecontroller",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller_appearancecontroller",
+      "target": "changenotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancescope",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller_appearancescope",
+      "target": "inheritednotifier",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller_appearancescope",
+      "target": "core_theme_appearance_controller_appearancecontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_channel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "static_const",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_fallback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_store",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancestore",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_restoretimeout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "duration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_mode",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "thememode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_loaded",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_retrymode",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_readfailed",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "bool_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_feedback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancefeedback",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_message",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "string_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_restore",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_read",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_write",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_load",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_retry",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_select",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_maybeof",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "preferences_read_diagnostics_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_controller",
+      "target": "core_theme_appearance_controller_appearancescope",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "core_theme_appearance_page_appearancepage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page_appearancepage",
+      "target": "statelesswidget",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "core_theme_appearance_page_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "package_trainforge_core_l10n_feedback_localization_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "package_trainforge_core_l10n_localized_context_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "package_trainforge_core_theme_appearance_controller_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "package_trainforge_shared_widgets_app_loading_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "core_theme_appearance_page",
+      "target": "thememode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/theme/appearance_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast"
+    },
+    {
       "source": "l10n_generated_app_localizations",
       "target": "l10n_generated_app_localizations_applocalizations",
       "relation": "defines",
@@ -54934,6 +55283,28 @@
     {
       "source": "l10n_generated_app_localizations",
       "target": "l10n_generated_app_localizations_foodnamefallback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations",
+      "target": "l10n_generated_app_localizations_retryreadpreference",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations",
+      "target": "l10n_generated_app_localizations_readingpreferences",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -60580,6 +60951,28 @@
     },
     {
       "source": "l10n_generated_app_localizations_en",
+      "target": "l10n_generated_app_localizations_en_retryreadpreference",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_en.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_en",
+      "target": "l10n_generated_app_localizations_en_readingpreferences",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_en.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_en",
       "target": "l10n_generated_app_localizations_en_movewithname",
       "relation": "defines",
       "confidence": "EXTRACTED",
@@ -66049,6 +66442,28 @@
     {
       "source": "l10n_generated_app_localizations_es",
       "target": "l10n_generated_app_localizations_es_foodnamefallback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_es.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_es",
+      "target": "l10n_generated_app_localizations_es_retryreadpreference",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_es.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_es",
+      "target": "l10n_generated_app_localizations_es_readingpreferences",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -71572,6 +71987,28 @@
     {
       "source": "l10n_generated_app_localizations_pt",
       "target": "l10n_generated_app_localizations_pt_foodnamefallback",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_pt.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_pt",
+      "target": "l10n_generated_app_localizations_pt_retryreadpreference",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "l10n/generated/app_localizations_pt.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "l10n_generated_app_localizations_pt",
+      "target": "l10n_generated_app_localizations_pt_readingpreferences",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,

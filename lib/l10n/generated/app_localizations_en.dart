@@ -24,7 +24,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageProgress =>
-      'Translation of the remaining screens is in progress.';
+      'Available flows use the selected language. New features will be localized as they are implemented.';
 
   @override
   String get followDevice => 'Use device language';
@@ -1674,4 +1674,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get foodNameFallback =>
       'No reviewed name in this language. The original source name is shown.';
+
+  @override
+  String get retryReadPreference => 'Try loading the preference again';
+
+  @override
+  String get readingPreferences => 'Loading preference';
 }

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "story": "V1-048",
+  "status": "partial",
+  "sourceBaseCommit": "1fcdb8f",
+  "scope": "preference-retry-corrections-and-native-localization-smoke",
+  "messagesPerLocale": {
+    "pt_BR": 495,
+    "pt_PT": 495,
+    "en": 495,
+    "es": 495
+  },
+  "flutter": {
+    "fullSuitePassed": 173,
+    "newRegressionTests": 9,
+    "analyzeIssues": 0,
+    "readRetryWritesNothing": true,
+    "writeRetryRetainsRequestedChoice": true,
+    "concurrentReadRetryCoalesced": true,
+    "lateReadAndDisposedGuardsVerified": true,
+    "debugDiagnosticsFixedCodesOnly": true
+  },
+  "nativeAndroid": {
+    "avd": "TrainForge_Benchmark",
+    "serial": "emulator-5554",
+    "androidVersion": "15",
+    "screenPixels": "1080x2340",
+    "fontScale": "1.0",
+    "artifactInstalled": true,
+    "installedSha256Matches": true,
+    "existingSessionRestored": true,
+    "newGoogleConsentPerformed": false,
+    "locales": [
+      {
+        "locale": "es",
+        "selectionVerified": true,
+        "restoration": "saved preference after APK19 update",
+        "pagesVerified": [
+          "Language",
+          "Today"
+        ],
+        "nativeCapture": "locale-before-native-probe.png",
+        "captureSha256": "732fe350e1a859ae48361fe1e93602e77601a2771aec497bfcc2cb8ce7e831be",
+        "captureRetainedLocally": false
+      },
+      {
+        "locale": "en",
+        "selectionVerified": true,
+        "restoration": "force-stop and reopen from Language page",
+        "pagesVerified": [
+          "Language",
+          "Today",
+          "Profile"
+        ],
+        "nativeCapture": "locale-home-en19-ready.png",
+        "captureSha256": "090326ebb325a206255e705a22d3fafba4886a2ca9ab0f8ea61a09a0ea1be500",
+        "captureRetainedLocally": false
+      },
+      {
+        "locale": "pt-BR",
+        "selectionVerified": true,
+        "restoration": "force-stop and reopen from Language page",
+        "pagesVerified": [
+          "Language",
+          "Today",
+          "Profile"
+        ],
+        "nativeCapture": "locale-home-pt-br19-ready.png",
+        "captureSha256": "35ad4430eaa9980272876fb5ed0eb86c543a6c2a75e6b99a6f6c60450e68d82e",
+        "captureRetainedLocally": false
+      },
+      {
+        "locale": "pt-PT",
+        "selectionVerified": true,
+        "restoration": "force-stop and reopen from Language page",
+        "pagesVerified": [
+          "Language",
+          "Today",
+          "Profile"
+        ],
+        "nativeCapture": "locale-home-pt-pt19-ready.png",
+        "captureSha256": "0b31903d9b5df3a3a964581447b7d3f8009c22193ff000702c35a8dae8843ca3",
+        "captureRetainedLocally": false
+      }
+    ],
+    "finalLanguage": "pt-BR",
+    "finalAppearance": "dark",
+    "uiAutomation": "final checks use native UIAutomator plus Android screencap; fresh dump required; Windows window input was inconsistent",
+    "nutritionMutationsPerformed": false,
+    "accountsCreatedOrDeleted": false,
+    "diagnosticCodesOnAPK19FirstOpen": [],
+    "legacyObservation": "A fallback was observed through the Windows window on an earlier build; its underlying read failure was not reproduced with fixed-code diagnostics. Do not claim its cause was established. Confirmed retry semantics were fixed and tested separately.",
+    "privateCapturesExcludedFromGit": true,
+    "fullNativeUsabilityAcceptance": false,
+    "privateCapturesRemovedAfterInspection": true,
+    "safeLanguageScreenCapturesRetainedLocally": true,
+    "finalReadyStatus": {
+      "apiReady": true,
+      "apkCurrent": true,
+      "devices": [
+        "emulator-5554"
+      ]
+    }
+  },
+  "artifact": {
+    "versionName": "0.3.6",
+    "versionCode": 19,
+    "variant": "debug",
+    "package": "com.example.trainforge",
+    "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "4c284880d261a4653c7c66bd2fe65b59e963ec2d7ae5b44894544a95a70f7203",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "79308b6a900f4ea3340cf9590a221370f9fbe65527422c63ac93c6452b3931da",
+    "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+    "realGoogleLoginValidated": false
+  },
+  "backend": {
+    "version": "0.6.1",
+    "swaggerOperations": 25,
+    "schemaVersion": 11,
+    "tables": 26,
+    "newMigration": false,
+    "countsAfter": {
+      "accounts": 1,
+      "consumptions": 1,
+      "foodVersions": 6369,
+      "reviewedNames": 0
+    },
+    "nativeExerciseDidNotProveNewGoogleLogin": true
+  },
+  "graphify": {
+    "dartFiles": 101,
+    "nodes": 3420,
+    "edges": 3949,
+    "changed": 9,
+    "unchanged": 92,
+    "deleted": 0,
+    "astOnly": true,
+    "htmlExported": true,
+    "semanticExtraction": false
+  },
+  "remaining": [
+    "Project reviewed names into consumption history and entry detail, outside immutable calculation snapshots; do not use N+1 requests or translate private declarations.",
+    "Extend locale/revision/cursor and withdrawal tests to that read projection before closing V1-048.",
+    "Zero real reviewed names published; human review and rights verification remain prerequisites for actual editorial content.",
+    "Native iOS was not executed on Windows; broader usability/release checks keep their own backlog criteria."
+  ],
+  "documentation": {
+    "generatedAndChecked": true,
+    "testsPassed": 13,
+    "swaggerRegenerationNeeded": false,
+    "reason": "No HTTP contract changed in this increment"
+  }
+}

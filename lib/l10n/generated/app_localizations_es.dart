@@ -25,7 +25,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get languageProgress =>
-      'La traducción de las demás pantallas está en desarrollo.';
+      'Los flujos disponibles usan el idioma elegido. Las nuevas funciones se localizarán a medida que se implementen.';
 
   @override
   String get followDevice => 'Usar idioma del dispositivo';
@@ -1687,4 +1687,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get foodNameFallback =>
       'No hay un nombre revisado en este idioma. Se muestra el nombre original de la fuente.';
+
+  @override
+  String get retryReadPreference => 'Volver a leer la preferencia';
+
+  @override
+  String get readingPreferences => 'Leyendo preferencia';
 }

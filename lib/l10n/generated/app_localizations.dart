@@ -129,7 +129,7 @@ abstract class AppLocalizations {
   /// No description provided for @languageProgress.
   ///
   /// In en, this message translates to:
-  /// **'Translation of the remaining screens is in progress.'**
+  /// **'Available flows use the selected language. New features will be localized as they are implemented.'**
   String get languageProgress;
 
   /// No description provided for @followDevice.
@@ -3059,6 +3059,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No reviewed name in this language. The original source name is shown.'**
   String get foodNameFallback;
+
+  /// No description provided for @retryReadPreference.
+  ///
+  /// In en, this message translates to:
+  /// **'Try loading the preference again'**
+  String get retryReadPreference;
+
+  /// No description provided for @readingPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading preference'**
+  String get readingPreferences;
 }
 
 class _AppLocalizationsDelegate

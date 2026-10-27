@@ -4,7 +4,7 @@
   "languageIntro": "Escolha o idioma da interface neste aparelho.",
   "languageScope": "A escolha não altera sua conta, os alimentos originais ou os registros.",
   "contentOriginal": "Os nomes e textos das fontes continuam no idioma original quando não houver tradução revisada.",
-  "languageProgress": "A tradução das demais telas está em implementação.",
+  "languageProgress": "Os fluxos disponíveis usam o idioma escolhido. Novas funções serão localizadas conforme forem implementadas.",
   "followDevice": "Seguir o aparelho",
   "languageUnavailable": "O idioma não está disponível neste contexto.",
   "languageFallback": "Não foi possível ler a preferência. O idioma segue o aparelho.",
@@ -622,5 +622,7 @@
   "originalFoodName": "Nome original",
   "nameReviewSource": "Revisão e direitos do nome",
   "nameCatalogChanged": "Os nomes revisados mudaram. A página anterior foi descartada; confira a consulta atualizada.",
-  "foodNameFallback": "Sem nome revisado neste idioma. O nome original da fonte está sendo exibido."
+  "foodNameFallback": "Sem nome revisado neste idioma. O nome original da fonte está sendo exibido.",
+  "retryReadPreference": "Tentar ler a preferência novamente",
+  "readingPreferences": "Lendo preferência"
 }

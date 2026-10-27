@@ -24,7 +24,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get languageProgress =>
-      'A tradução das demais telas está em implementação.';
+      'Os fluxos disponíveis usam o idioma escolhido. Novas funções serão localizadas conforme forem implementadas.';
 
   @override
   String get followDevice => 'Seguir o aparelho';
@@ -1682,6 +1682,12 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get foodNameFallback =>
       'Sem nome revisado neste idioma. O nome original da fonte está sendo exibido.';
+
+  @override
+  String get retryReadPreference => 'Tentar ler a preferência novamente';
+
+  @override
+  String get readingPreferences => 'Lendo preferência';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -1704,7 +1710,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get languageProgress =>
-      'A tradução das demais telas está em implementação.';
+      'Os fluxos disponíveis usam o idioma escolhido. Novas funções serão localizadas conforme forem implementadas.';
 
   @override
   String get followDevice => 'Seguir o aparelho';
@@ -3362,6 +3368,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get foodNameFallback =>
       'Sem nome revisado neste idioma. O nome original da fonte está sendo exibido.';
+
+  @override
+  String get retryReadPreference => 'Tentar ler a preferência novamente';
+
+  @override
+  String get readingPreferences => 'Lendo preferência';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -3385,7 +3397,7 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get languageProgress =>
-      'A tradução dos restantes ecrãs está em implementação.';
+      'Os fluxos disponíveis usam o idioma escolhido. As novas funcionalidades serão localizadas à medida que forem implementadas.';
 
   @override
   String get followDevice => 'Seguir o dispositivo';
@@ -5044,4 +5056,10 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   @override
   String get foodNameFallback =>
       'Sem nome revisto neste idioma. É apresentado o nome original da fonte.';
+
+  @override
+  String get retryReadPreference => 'Tentar ler a preferência novamente';
+
+  @override
+  String get readingPreferences => 'A ler preferência';
 }

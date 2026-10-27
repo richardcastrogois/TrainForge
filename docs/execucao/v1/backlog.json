@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-048",
@@ -2589,7 +2589,7 @@
             "Busca/apresentação com original/fonte e fallback",
             "Recibo de cobertura, integridade e aceite"
           ],
-          "handoff": "26/10: UI com 493 mensagens e cliente Go0.6.1/Flutter integrados; 164 testes Flutter/análise sem problemas, APKdebug0.3.3+16 preparado, não instalado. Schema11/26tabelas aplicado com autorização e dados preservados. Ferramenta editorial local entregue: preflight sem banco, publicação/retirada com confirmação do pacote/revisor, histórico imutável e cobertura read-only. Binário real e retries validados somente em descartável; Goall/vet e7cenários do operador/3guards aprovados. Cobertura real:0/6369 por idioma, Ciqual3484/CoFID2885. Sem publicação real; hash/confirmação não provam revisão humana/direitos. Continua doing pelos aceites nativos e aplicação editorial quando houver pacote humano aprovado. SemADBconectado; iOS nativo não executado noWindows.",
+          "handoff": "27/10:495 mensagens por idioma;173 testes Flutter/análise sem problemas. APKdebug0.3.6+19 instalado/assinado/hash conferido noAndroid15; seleção/restauração dos4idiomas, mesma sessão e dark, finalHojept-BR. Retentativa de leitura não grava padrão; retentativa de escrita repete escolha solicitada, com9regressões novas e diagnóstico fixo sem dados privados. API0.6.1/25operações, schema11/26tabelas preservados. Ferramenta editorial e cobertura real0/6369 poridioma entregues, sem publicação real. Continua doing:histórico e detalhe de consumo ainda usam calculation.food.nameOriginal; projetar nomes revisados na leitura fora do snapshot/cálculo, semN+1, com idioma/revisão/cursor/titular corretos. Publicação real exige pacote humano/direitos. Sem novoGoogle ou consumo;1conta/1consumo preservados. iOS nativo não executado noWindows.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
@@ -2606,7 +2606,8 @@
             "docs/execucao/v1/food-names-local-activation.json",
             "docs/execucao/v1/nutrition-locale-verification.json",
             "docs/conteudo/nomes-alimentares-revisados.md",
-            "docs/execucao/v1/food-names-operations-verification.json"
+            "docs/execucao/v1/food-names-operations-verification.json",
+            "docs/execucao/v1/frontend-localization-native-verification.json"
           ]
         },
         {

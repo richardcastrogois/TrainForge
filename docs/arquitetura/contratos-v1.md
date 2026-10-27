@@ -1,6 +1,10 @@
 # Contratos da V1 — implementado e planejado
 
-**CódigoGo0.6.1/25operações**, clienteFlutter integrado e schema11/26tabelas locais. Migrations9–11 autorizadas pelo autor e aplicadas após SQLdescartável. LeituraHTTP com a base real passou nos4idiomas; conta,consumo,sessões e6369versões preservados. APK0.3.3+16 preparado,sem instalação. Ferramenta editorial e cobertura real entregues; aceites nativos e pacote humano aprovado continuam pendentes. [Integração](../execucao/v1/frontend-food-names-verification.json),[ativação local](../execucao/v1/food-names-local-activation.json).
+**CódigoGo0.6.1/25operações**, clienteFlutter integrado e schema11/26tabelas locais. Migrations9–11 autorizadas pelo autor e aplicadas após SQLdescartável. LeituraHTTP com a base real passou nos4idiomas; conta,consumo,sessões e6369versões preservados. APK0.3.6+19 instalado, com ensaio nativo de idioma e restauração. Ferramenta editorial, cobertura real e ensaio Android dos idiomas entregues; falta a projeção no histórico de consumo e o pacote humano quando houver publicação real. [Integração](../execucao/v1/frontend-food-names-verification.json),[ativação local](../execucao/v1/food-names-local-activation.json).
+
+## Limite atual da projeção privada
+
+Em27/10, histórico e detalhe de consumo ainda exibem calculation.food.nameOriginal. A próxima fatia048 deve resolver nomes por identidade/versão/idioma fora do snapshot imutável, em lote, com retentativas/cursor/revisão coerentes e preservação do titular. Isso é planejamento: não há novo parâmetro privado implementado ou alteração do Swagger nesta correção de preferências. [Recibo e pendências](../execucao/v1/frontend-localization-native-verification.json).
 
 ## Leitura de nomes048 — códigoGo0.6.0,26/10
 
@@ -28,7 +32,7 @@ flowchart LR
     result --> cache["Cursor e ETag por idioma e revisão"]
 ```
 
-Flutter já invalida consulta/cursor ao trocar idioma e reinicia uma vez após409, preservando busca digitada,identidade eoriginal. A ferramenta editorial confere pacotes, publica/retira registros imutáveis e gera cobertura read-only; não há nova rota pública. Faltam aceites nativos e uso editorial real quando houver evidência humana/direitos.0nomes publicados; fixtures só nostestes.9–11egrants foram aplicados comautorização, sem mudar registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
+Flutter já invalida consulta/cursor ao trocar idioma e reinicia uma vez após409, preservando busca digitada,identidade eoriginal. A ferramenta editorial confere pacotes, publica/retira registros imutáveis e gera cobertura read-only; não há nova rota pública. O ensaio de idiomas Android passou; falta projetar nomes no histórico e detalhe de consumo sem alterar snapshots/cálculos. Uso editorial real exige evidência humana/direitos.0nomes publicados; fixtures só nostestes.9–11egrants foram aplicados comautorização, sem mudar registros. Isso não é medição de capacidade nem nova validaçãoGoogle.
 
 
 Operação local e seus limites: [runbook editorial](../conteudo/nomes-alimentares-revisados.md), [recibo SQL/CLI/cobertura](../execucao/v1/food-names-operations-verification.json). Cobertura agrega versões públicas visíveis por idioma/revisão/fonte/versão e não lê dados particulares.

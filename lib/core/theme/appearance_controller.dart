@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../preferences/read_diagnostics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -40,12 +41,19 @@ class AppearanceController extends ChangeNotifier {
     this.restoreTimeout = const Duration(seconds: 2),
   }) : store = store ?? NativeAppearanceStore();
   ThemeMode mode = ThemeMode.system;
-  bool loaded = false, saving = false, _disposed = false;
+  bool loaded = false, reading = false, saving = false, _disposed = false;
+  ThemeMode? _retryMode;
+  bool get readFailed =>
+      feedback == AppearanceFeedback.appearanceReadFailed ||
+      feedback == AppearanceFeedback.appearanceInvalid;
   AppearanceFeedback? feedback;
   String? get message => feedback?.fallback;
   Future<void>? _restore;
   Future<void> restore() => _restore ??= _load();
   Future<void> _load() async {
+    reading = true;
+    feedback = null;
+    _retryMode = null;
     try {
       final saved = await store.read().timeout(restoreTimeout);
       if (_disposed) return;
@@ -57,29 +65,49 @@ class AppearanceController extends ChangeNotifier {
       if (saved != null && !{'system', 'light', 'dark'}.contains(saved)) {
         feedback = AppearanceFeedback.appearanceInvalid;
       }
-    } catch (_) {
+    } catch (error) {
+      reportPreferenceReadFailure(PreferenceArea.appearance, error);
       if (!_disposed) {
         feedback = AppearanceFeedback.appearanceReadFailed;
       }
     } finally {
       if (!_disposed) {
         loaded = true;
+        reading = false;
         notifyListeners();
       }
     }
   }
 
+  Future<void> retry() {
+    if (_disposed || !loaded || reading || saving) return Future.value();
+    if (readFailed) {
+      final pending = _load();
+      _restore = pending;
+      notifyListeners();
+      return pending;
+    }
+    final next = _retryMode;
+    return next == null ? Future.value() : select(next);
+  }
+
   Future<void> select(ThemeMode next) async {
-    if (_disposed || !loaded || saving || (next == mode && feedback == null)) {
+    if (_disposed ||
+        !loaded ||
+        reading ||
+        saving ||
+        (next == mode && feedback == null)) {
       return;
     }
     final previous = mode;
+    _retryMode = next;
     mode = next;
     saving = true;
     feedback = null;
     notifyListeners();
     try {
       await store.write(next.name).timeout(restoreTimeout);
+      if (!_disposed) _retryMode = null;
     } on TimeoutException catch (_) {
       if (_disposed) return;
       feedback = AppearanceFeedback.appearanceSaveUncertain;

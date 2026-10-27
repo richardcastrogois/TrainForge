@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../preferences/read_diagnostics.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/services.dart';
 
@@ -65,12 +66,17 @@ class LocaleController extends ChangeNotifier {
     this.timeout = const Duration(seconds: 2),
   }) : store = store ?? NativeLocaleStore();
   LanguageChoice choice = LanguageChoice.system;
-  bool loaded = false, saving = false, _disposed = false;
+  bool loaded = false, reading = false, saving = false, _disposed = false;
+  LanguageChoice? _retryChoice;
+  bool get readFailed => issue == LocaleIssue.readFallback;
   LocaleIssue? issue;
   Future<void>? _restore;
   Future<void> restore() => _restore ??= _load();
 
   Future<void> _load() async {
+    reading = true;
+    issue = null;
+    _retryChoice = null;
     try {
       final saved = await store.read().timeout(timeout);
       if (_disposed) return;
@@ -78,27 +84,47 @@ class LocaleController extends ChangeNotifier {
       if (saved != null && LanguageChoice.parse(saved) == null) {
         issue = LocaleIssue.readFallback;
       }
-    } catch (_) {
+    } catch (error) {
+      reportPreferenceReadFailure(PreferenceArea.locale, error);
       if (!_disposed) issue = LocaleIssue.readFallback;
     } finally {
       if (!_disposed) {
         loaded = true;
+        reading = false;
         notifyListeners();
       }
     }
   }
 
+  Future<void> retry() {
+    if (_disposed || !loaded || reading || saving) return Future.value();
+    if (readFailed) {
+      final pending = _load();
+      _restore = pending;
+      notifyListeners();
+      return pending;
+    }
+    final next = _retryChoice;
+    return next == null ? Future.value() : select(next);
+  }
+
   Future<void> select(LanguageChoice next) async {
-    if (_disposed || !loaded || saving || (choice == next && issue == null)) {
+    if (_disposed ||
+        !loaded ||
+        reading ||
+        saving ||
+        (choice == next && issue == null)) {
       return;
     }
     final previous = choice;
+    _retryChoice = next;
     choice = next;
     saving = true;
     issue = null;
     notifyListeners();
     try {
       await store.write(next.tag).timeout(timeout);
+      if (!_disposed) _retryChoice = null;
     } on TimeoutException {
       if (!_disposed) issue = LocaleIssue.saveUncertain;
     } catch (_) {

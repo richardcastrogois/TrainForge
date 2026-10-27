@@ -28,7 +28,9 @@ class LanguagePage extends StatelessWidget {
               RadioGroup<LanguageChoice>(
                 groupValue: controller.choice,
                 onChanged: (value) {
-                  if (value != null) controller.select(value);
+                  if (value != null && !controller.reading) {
+                    controller.select(value);
+                  }
                 },
                 child: Column(
                   children: [
@@ -45,7 +47,7 @@ class LanguagePage extends StatelessWidget {
                       Card(
                         child: RadioListTile<LanguageChoice>(
                           value: item.$1,
-                          enabled: !controller.saving,
+                          enabled: !controller.saving && !controller.reading,
                           title: Text(item.$2),
                         ),
                       ),
@@ -53,6 +55,8 @@ class LanguagePage extends StatelessWidget {
                 ),
               ),
               if (controller.saving) AppProgress(label: strings.savingLanguage),
+              if (controller.reading)
+                AppProgress(label: strings.readingPreferences),
               if (controller.issue != null) ...[
                 Semantics(
                   liveRegion: true,
@@ -63,10 +67,14 @@ class LanguagePage extends StatelessWidget {
                   }),
                 ),
                 TextButton(
-                  onPressed: controller.saving
+                  onPressed: controller.saving || controller.reading
                       ? null
-                      : () => controller.select(controller.choice),
-                  child: Text(strings.retrySave),
+                      : controller.retry,
+                  child: Text(
+                    controller.readFailed
+                        ? strings.retryReadPreference
+                        : strings.retrySave,
+                  ),
                 ),
               ],
             ],

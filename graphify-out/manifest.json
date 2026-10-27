@@ -438,16 +438,16 @@
     "semantic_hash": "989382642c968f1dde71c87292ff38a3"
   },
   "core/theme/appearance_controller.dart": {
-    "mtime": 1792971368.9396825,
-    "seen": 1792971874.8034163,
-    "ast_hash": "f63261ea606f2c44aac62762510dacb0",
-    "semantic_hash": "f63261ea606f2c44aac62762510dacb0"
+    "mtime": 1793071518.6296523,
+    "seen": 1793073424.1404169,
+    "ast_hash": "d47634176c457492d56bc95f5f3f43e1",
+    "semantic_hash": "d47634176c457492d56bc95f5f3f43e1"
   },
   "core/theme/appearance_page.dart": {
-    "mtime": 1792971310.6390524,
-    "seen": 1792971874.8034163,
-    "ast_hash": "cf7ceec0130a6e625c5c6df1e3d08362",
-    "semantic_hash": "cf7ceec0130a6e625c5c6df1e3d08362"
+    "mtime": 1793071518.6316302,
+    "seen": 1793073424.1404169,
+    "ast_hash": "e099d5e36fe738521759aefa9c014b7e",
+    "semantic_hash": "e099d5e36fe738521759aefa9c014b7e"
   },
   "core/theme/trainforge_colors.dart": {
     "mtime": 1792847613.118834,
@@ -534,16 +534,16 @@
     "semantic_hash": "3d268e86fc3cddf7672a4aebc25e7820"
   },
   "core/l10n/language_page.dart": {
-    "mtime": 1792971152.1077907,
-    "seen": 1792971874.8024178,
-    "ast_hash": "da5652b71962a22e1000bb11dd207195",
-    "semantic_hash": "da5652b71962a22e1000bb11dd207195"
+    "mtime": 1793071581.341411,
+    "seen": 1793073424.1394176,
+    "ast_hash": "3e3665f7953fd8809bbca63ed3c305cc",
+    "semantic_hash": "3e3665f7953fd8809bbca63ed3c305cc"
   },
   "core/l10n/locale_controller.dart": {
-    "mtime": 1792971310.6410077,
-    "seen": 1792971874.8024178,
-    "ast_hash": "07a2686efcb09353a20161bfd8b481ff",
-    "semantic_hash": "07a2686efcb09353a20161bfd8b481ff"
+    "mtime": 1793071518.622046,
+    "seen": 1793073424.1394176,
+    "ast_hash": "4e738c1f98cf432a08d5e56b9473503c",
+    "semantic_hash": "4e738c1f98cf432a08d5e56b9473503c"
   },
   "core/l10n/localized_context.dart": {
     "mtime": 1793013674.2214215,
@@ -552,28 +552,28 @@
     "semantic_hash": "86f580c2e7459f20bd5462171429437e"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1793018711.801146,
-    "seen": 1793018715.5800755,
-    "ast_hash": "837d2b78c65972affbb98c96a750ad83",
-    "semantic_hash": "837d2b78c65972affbb98c96a750ad83"
+    "mtime": 1793071811.5094175,
+    "seen": 1793073424.1474884,
+    "ast_hash": "2f3b0d6909c9228fef1bfab733a60fbc",
+    "semantic_hash": "2f3b0d6909c9228fef1bfab733a60fbc"
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1793018711.743772,
-    "seen": 1793018715.5800755,
-    "ast_hash": "5c5c1686cac1ab283adf500932c54beb",
-    "semantic_hash": "5c5c1686cac1ab283adf500932c54beb"
+    "mtime": 1793071811.4655714,
+    "seen": 1793073424.1474884,
+    "ast_hash": "81d839029fc09813e24992f152217e5b",
+    "semantic_hash": "81d839029fc09813e24992f152217e5b"
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1793018711.754799,
-    "seen": 1793018715.5800755,
-    "ast_hash": "2db8d869f940289845b006f305f18c02",
-    "semantic_hash": "2db8d869f940289845b006f305f18c02"
+    "mtime": 1793071811.473586,
+    "seen": 1793073424.1474884,
+    "ast_hash": "3282952d81fd457735d5dd9ff6381195",
+    "semantic_hash": "3282952d81fd457735d5dd9ff6381195"
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1793018711.7897913,
-    "seen": 1793018715.5800755,
-    "ast_hash": "fe4c75d463576cef03d6575f003aebd7",
-    "semantic_hash": "fe4c75d463576cef03d6575f003aebd7"
+    "mtime": 1793071811.501483,
+    "seen": 1793073424.1474884,
+    "ast_hash": "e4cce4573049d1db94dcd5ebcbcda4a6",
+    "semantic_hash": "e4cce4573049d1db94dcd5ebcbcda4a6"
   },
   "core/l10n/read_feedback.dart": {
     "mtime": 1793013043.205864,
@@ -598,5 +598,11 @@
     "seen": 1793014188.2430437,
     "ast_hash": "3e1c5a0be0791babf8f64af45904f92b",
     "semantic_hash": "3e1c5a0be0791babf8f64af45904f92b"
+  },
+  "core/preferences/read_diagnostics.dart": {
+    "mtime": 1793071087.606611,
+    "seen": 1793073424.1404169,
+    "ast_hash": "f502ec2965a4c885c30e406e4acd9767",
+    "semantic_hash": "f502ec2965a4c885c30e406e4acd9767"
   }
 }

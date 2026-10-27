@@ -4,7 +4,7 @@
   "languageIntro": "Choose the interface language on this device.",
   "languageScope": "This choice does not change your account, original foods or records.",
   "contentOriginal": "Source names and text stay in their original language when no reviewed translation is available.",
-  "languageProgress": "Translation of the remaining screens is in progress.",
+  "languageProgress": "Available flows use the selected language. New features will be localized as they are implemented.",
   "followDevice": "Use device language",
   "languageUnavailable": "Language settings are unavailable here.",
   "languageFallback": "The preference could not be read. The device language is being used.",
@@ -622,5 +622,7 @@
   "originalFoodName": "Original name",
   "nameReviewSource": "Name review and rights",
   "nameCatalogChanged": "The reviewed names changed. The previous page was discarded; check the refreshed query.",
-  "foodNameFallback": "No reviewed name in this language. The original source name is shown."
+  "foodNameFallback": "No reviewed name in this language. The original source name is shown.",
+  "retryReadPreference": "Try loading the preference again",
+  "readingPreferences": "Loading preference"
 }

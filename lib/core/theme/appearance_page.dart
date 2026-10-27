@@ -28,7 +28,9 @@ class AppearancePage extends StatelessWidget {
               RadioGroup<ThemeMode>(
                 groupValue: controller.mode,
                 onChanged: (value) {
-                  if (value != null && !controller.saving) {
+                  if (value != null &&
+                      !controller.saving &&
+                      !controller.reading) {
                     controller.select(value);
                   }
                 },
@@ -54,7 +56,7 @@ class AppearancePage extends StatelessWidget {
                       Card(
                         child: RadioListTile<ThemeMode>(
                           value: item.$1,
-                          enabled: !controller.saving,
+                          enabled: !controller.saving && !controller.reading,
                           title: Text(item.$2),
                           subtitle: Text(item.$3),
                         ),
@@ -64,13 +66,22 @@ class AppearancePage extends StatelessWidget {
               ),
               if (controller.saving)
                 AppProgress(label: context.l10n.savingAppearance),
+              if (controller.reading)
+                AppProgress(label: context.l10n.readingPreferences),
               if (controller.message != null) ...[
-                Semantics(liveRegion: true, child: Text(controller.feedback!.localized(context))),
+                Semantics(
+                  liveRegion: true,
+                  child: Text(controller.feedback!.localized(context)),
+                ),
                 TextButton(
-                  onPressed: controller.saving
+                  onPressed: controller.saving || controller.reading
                       ? null
-                      : () => controller.select(controller.mode),
-                  child: Text(context.l10n.retrySave),
+                      : controller.retry,
+                  child: Text(
+                    controller.readFailed
+                        ? context.l10n.retryReadPreference
+                        : context.l10n.retrySave,
+                  ),
                 ),
               ],
             ],
