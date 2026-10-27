@@ -330,3 +330,7 @@ Próxima área/item:
 ```
 
 Q1–Q6 estão registrados; próxima ação é implementação pelas dependências. A identidade master e o aceite humano conservam seus gates específicos. Implementação dependente aguarda os pontos ainda em aberto. Melhorias independentes continuam possíveis, sem ultrapassar as decisões pendentes.
+
+## Atualização047 — 27/10/2026
+
+Primeira fatia de047validada: [matriz por campo](configuracao-treino-047.md), domínio/aplicaçãoGo e portaRepository com12testes principais/19subcasos/vet. Unknown/none,fonte do recurso,tempo/agenda,review/revisão,limites e cópia independente preservam declarações sem fatos físicos/paciente/dose. SQL/migration/privacidade/HTTP/Flutter/aceite ainda faltam; não há nova configuração/tabela/rota no app. Próximo incremento deve cuidar do ciclo privado completo antes da ativação. [Evidência parcial](training-configuration-foundation-verification.json).

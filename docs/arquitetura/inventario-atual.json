@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "bad02a2771f0dd992524f95f8f75da3a76a64cf252d23a848ac07678be10002f",
+  "inputRevision": "6e90d3b33d0899cab0d98a20170f3c95803c051b39fe6afaaf606f4c8b3b3331",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
@@ -153,6 +153,8 @@
     "services/api/internal/privacy/privacy.go": "16a4988d4867b27dabc41f64fdaadd37185364bbc08b1f5c5f980480d2315ec0",
     "services/api/internal/privacy/restore.go": "6dd8ebd4d2745807d083a7c629ec7611c715b788d31f41fe5a26dd81b6cb44b3",
     "services/api/internal/swaggerdocs/docs.go": "96977aaad4e56bcf05fe7bdd31e75ed96591e15d5b28ae2abc3615cc4c5dc029",
+    "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
+    "services/api/internal/trainingconfig/service.go": "25c855ceb641d75b7e13c3410d41e9fa8f51cca05e91ad35089bc85ff86b7fa6",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
     "services/api/migrations/00002_typed_content_refs.sql": "78bbb7315006b7636ac5e00361bd48f7d0aa7181c84ef29b0aeee71ea28a246b",
@@ -170,7 +172,7 @@
     "contracts/generated/swagger-v1.json": "b49a12f05d4665e9bdda94a9017fd0486fb793ddd14a93062cb886ee7768a7ef",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "eb68f5fa043971fc77f3ce9de7da2dae7fe588a3084286845eb1f6038c8e2cae",
+    "docs/execucao/v1/backlog.json": "0e8a861e799fcff2c8b5dc7d079edc0c3c0aa25d62bfebe2e6f2439947c2b601",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -227,7 +229,7 @@
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 50,
+    "goFiles": 52,
     "goRegistrations": 27,
     "modelsInReference": 9
   },
@@ -3813,6 +3815,8 @@
       "services/api/internal/privacy/privacy.go",
       "services/api/internal/privacy/restore.go",
       "services/api/internal/swaggerdocs/docs.go",
+      "services/api/internal/trainingconfig/model.go",
+      "services/api/internal/trainingconfig/service.go",
       "services/api/migrations/files.go"
     ],
     "annotations": [
@@ -4493,6 +4497,7 @@
       "internal/platform/postgres",
       "internal/privacy",
       "internal/swaggerdocs",
+      "internal/trainingconfig",
       "migrations"
     ],
     "imports": [
@@ -4591,6 +4596,10 @@
       [
         "internal/privacy",
         "internal/platform/httpapi"
+      ],
+      [
+        "internal/trainingconfig",
+        "internal/auth"
       ]
     ],
     "migrations": [

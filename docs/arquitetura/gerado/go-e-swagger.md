@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `bad02a2771f0dd99`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `6e90d3b33d0899ca`.
 
-Arquivos Go de aplicação encontrados: **50**. Registros net/http literais: **27**.
+Arquivos Go de aplicação encontrados: **52**. Registros net/http literais: **27**.
 
 ## Pacotes Go e imports atuais
 
@@ -27,7 +27,8 @@ flowchart LR
     node14["internal/platform/postgres"]
     node15["internal/privacy"]
     node16["internal/swaggerdocs"]
-    node17["migrations"]
+    node17["internal/trainingconfig"]
+    node18["migrations"]
     node0 -->|"import"| node8
     node0 -->|"import"| node9
     node0 -->|"import"| node11
@@ -41,7 +42,7 @@ flowchart LR
     node2 -->|"import"| node14
     node3 -->|"import"| node11
     node3 -->|"import"| node14
-    node4 -->|"import"| node17
+    node4 -->|"import"| node18
     node5 -->|"import"| node15
     node6 -->|"import"| node15
     node8 -->|"import"| node13
@@ -52,6 +53,7 @@ flowchart LR
     node11 -->|"import"| node13
     node15 -->|"import"| node8
     node15 -->|"import"| node13
+    node17 -->|"import"| node8
 ```
 ## Anotações encontradas
 

@@ -513,7 +513,7 @@ Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais 
 
 ### V1-047 — Persistir configuração completa antes da seleção de treino
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.
 
@@ -552,7 +552,7 @@ Validação: Matriz de campos fundamentada e contratos/UI/SQL coerentes; Testes 
 
 Entregas: Configuração privada persistida e versionada; Contrato e fluxo Flutter completos para revisão; Recibo de campos, isolamento, atualização e aceite
 
-Handoff: 25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done. Q5 definiu etapas curtas por assunto/revisão final, com localização048 antes da implementação integrada.
+Handoff: 27/10:048encerrada antes desta história. Matriz de campos por finalidade e domínio/aplicaçãoGo implementados,12testes principais+19subcasos e vet aprovados. Declaração de ambiente/recursos/agenda/contexto,unknown distinto de none,ref de recurso porfonte,review/revision e cópia canônica;sem dados físicos/paciente/dose implícitos. PortaRepository ainda semSQL: não comprova persistência/ownership real. Próxima fatia éSQL/migration forward e ciclo deprivacidade, com sessão viva/lock/revisão/idempotência/transação e referência de recurso validada;depoisHTTP/Swagger eFlutteretapas/revisão. Nenhuma tabela/rota/configuração real criada;API0.6.2/schema11/APK21 preservados. Continua doing, completionEvidence vazia.
 
 ### V1-015 — Criar adesão sem geração de treino
 

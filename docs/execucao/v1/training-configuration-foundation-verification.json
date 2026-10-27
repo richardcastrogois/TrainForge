@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "scope": "declared-context-domain-and-application-port",
+  "sourceBaseCommit": "f7870cf",
+  "passed": true,
+  "topLevelGoTests": 12,
+  "fieldValidationSubtests": 19,
+  "vetPassed": true,
+  "files": [
+    "services/api/internal/trainingconfig/model.go",
+    "services/api/internal/trainingconfig/model_test.go",
+    "services/api/internal/trainingconfig/service.go",
+    "services/api/internal/trainingconfig/service_test.go"
+  ],
+  "implemented": [
+    "typed-declarations-and-stable-field-errors",
+    "unknown-none-resource-distinction",
+    "source-scoped-equipment-refs-syntax",
+    "weekday-timezone-user-availability",
+    "explicit-review-and-revision",
+    "bounded-work-before-large-collections",
+    "canonical-copy-does-not-mutate-caller",
+    "application-port-validates-before-store",
+    "absent-configuration-is-nil-no-default-facts",
+    "cancellation-conflict-invalid-actor-and-adapter-response-tests"
+  ],
+  "notImplemented": [
+    "SQL-persistence-and-live-session-revalidation",
+    "resource-identity-existence-check",
+    "migration-and-privacy-export-erasure-integration",
+    "HTTP-endpoints-and-Swagger-contract",
+    "Flutter-wizard-and-integration",
+    "native-configuration-acceptance"
+  ],
+  "runtimeChanges": {
+    "apiVersion": "0.6.2",
+    "swaggerOperations": 26,
+    "schemaVersion": 11,
+    "tables": 26,
+    "apk": "0.3.8+21",
+    "newDatabaseTables": 0,
+    "newPublicEndpoints": 0,
+    "realConfigurationsWritten": 0
+  },
+  "limits": [
+    "Adapter fixtures are only application unit tests; they do not prove SQL ownership, persistence, resource identity existence, real Google login or a shipped wizard.",
+    "Availability is user preference, not a dose or medically reviewed training plan.",
+    "No clinical/patient facts or real profile values are prefilled.",
+    "This does not complete V1-047; current next step is persistence, privacy lifecycle and isolated SQL validation before HTTP/UI."
+  ]
+}

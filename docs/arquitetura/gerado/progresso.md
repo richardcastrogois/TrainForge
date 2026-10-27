@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `bad02a2771f0dd99`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `6e90d3b33d0899ca`.
 
 **18/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-047**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -150,7 +150,7 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-014 | done | Servir catálogo, versão e requisitos de uso | V1-006, V1-008 |
-| V1-047 | todo | Persistir configuração completa antes da seleção de treino | V1-008, V1-012, V1-013, V1-021, V1-048 |
+| V1-047 | doing | Persistir configuração completa antes da seleção de treino | V1-008, V1-012, V1-013, V1-021, V1-048 |
 | V1-015 | todo | Criar adesão sem geração de treino | V1-014, V1-013, V1-047 |
 | V1-016 | todo | Expor instrução acessível e mídia com direitos | V1-014 |
 | V1-044 | todo | Compor treino com regras humanas revisadas | V1-015, V1-016, V1-021 |

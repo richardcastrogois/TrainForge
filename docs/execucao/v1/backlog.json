@@ -1204,7 +1204,7 @@
           "id": "V1-047",
           "title": "Persistir configuração completa antes da seleção de treino",
           "userStory": "Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1282,11 +1282,13 @@
             "Contrato e fluxo Flutter completos para revisão",
             "Recibo de campos, isolamento, atualização e aceite"
           ],
-          "handoff": "25/10:Q3 escolheu configuração completa antes de procurar treino, trocas compatíveis/dias/horários e retomada/parcial. História criada todo para explicitar o modelo ausente;015/044 dependem desse contexto. Campos do legado IA não são exigências aprovadas; detalhar finalidade/fonte antes de coletar. Não houve código/migration nem novo done. Q5 definiu etapas curtas por assunto/revisão final, com localização048 antes da implementação integrada.",
+          "handoff": "27/10:048encerrada antes desta história. Matriz de campos por finalidade e domínio/aplicaçãoGo implementados,12testes principais+19subcasos e vet aprovados. Declaração de ambiente/recursos/agenda/contexto,unknown distinto de none,ref de recurso porfonte,review/revision e cópia canônica;sem dados físicos/paciente/dose implícitos. PortaRepository ainda semSQL: não comprova persistência/ownership real. Próxima fatia éSQL/migration forward e ciclo deprivacidade, com sessão viva/lock/revisão/idempotência/transação e referência de recurso validada;depoisHTTP/Swagger eFlutteretapas/revisão. Nenhuma tabela/rota/configuração real criada;API0.6.2/schema11/APK21 preservados. Continua doing, completionEvidence vazia.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/configuracao-treino-047.md",
+            "docs/execucao/v1/training-configuration-foundation-verification.json"
           ]
         },
         {
@@ -3629,5 +3631,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10:048concluída no recorte documentado. Próxima047:matriz de campos por finalidade, configuração privada versionada e revisão em etapas antes de selecionar treino, com persistência/ownership e sem reativar geradores. API0.6.2,APK21,197testes/schema11 preservados; direitos/traduções reais, treino/foto/offline e iOS têm gates próprios."
+  "currentPriority": "27/10:048concluída e047doing. Matriz e domínio/aplicação testados. PróximoSQL/migration e privacidade completos antes da ativação: sessão viva, titular, versões/idempotência, refs de recurso. DepoisHTTP/Swagger/Flutteretapas e aceite. API0.6.2/26, schema11/26,APK21 e dados reais preservados; sem conteúdo/prática inventados."
 }
