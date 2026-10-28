@@ -1,10 +1,14 @@
 import 'package:dio/dio.dart';
 import 'package:trainforge/core/http/app_dio.dart';
 import '../domain/nutrition.dart';
+import '../domain/meals.dart';
 import '../../food_reference/domain/food_reference.dart';
 
 class GoNutritionRepository
-    implements NutritionRepository, LocalizedNutritionRepository {
+    implements
+        NutritionRepository,
+        LocalizedNutritionRepository,
+        MealRepository {
   final Dio dio;
   final String accountId;
   final String? Function() currentAccountId;
@@ -154,4 +158,137 @@ class GoNutritionRepository
       key: key,
     );
   }
+
+  void _mealRead(String? id, String locale) {
+    if ((id != null && !mealUuid(id)) || !foodNameLocales.contains(locale)) {
+      throw const FormatException('Invalid meal read');
+    }
+  }
+
+  @override
+  Future<MealDay> mealDay(
+    String day,
+    String timezone, {
+    required String locale,
+  }) async {
+    _mealRead(null, locale);
+    final result = MealDay.fromJson(
+      await _request(
+        'GET',
+        '/api/v1/me/meal-diary',
+        query: {'date': day, 'timezone': timezone, 'locale': locale},
+      ),
+    );
+    if (result.date != day ||
+        result.timezone != timezone ||
+        result.nameCatalog?.locale != locale) {
+      throw const FormatException('Meal diary scope mismatch');
+    }
+    for (final e in result.entries) {
+      final display = EntryFoodDisplay.fromEntry(e);
+      if (display == null ||
+          display.catalog.locale != locale ||
+          display.catalog.version != result.nameCatalog?.version) {
+        throw const FormatException('Meal diary name revision mismatch');
+      }
+    }
+    return result;
+  }
+
+  @override
+  Future<ConfirmedMeal> meal(String id, {required String locale}) async {
+    _mealRead(id, locale);
+    final result = ConfirmedMeal.fromJson(
+      await _request('GET', '/api/v1/me/meals/$id', query: {'locale': locale}),
+    );
+    if (result.meal.id != id) {
+      throw const FormatException('Meal identity mismatch');
+    }
+    for (final e in result.entries) {
+      final display = EntryFoodDisplay.fromEntry(e);
+      if (display == null || display.catalog.locale != locale) {
+        throw const FormatException('Meal name locale mismatch');
+      }
+    }
+    return result;
+  }
+
+  Future<ConfirmedMeal> _saveMeal(
+    String method,
+    Json body,
+    String key, {
+    String? id,
+  }) async {
+    if (!mealUuid(key) || (id != null && !mealUuid(id))) {
+      throw const FormatException('Invalid meal write identity');
+    }
+    final expected = copyMealJson(body);
+    final result = ConfirmedMeal.fromJson(
+      await _request(
+        method,
+        '/api/v1/me/meals${id == null ? '' : '/$id'}',
+        body: copyMealJson(expected),
+        key: key,
+      ),
+    );
+    if (id != null && result.meal.id != id) {
+      throw const FormatException('Meal write identity mismatch');
+    }
+    final expectedRevision = method == 'POST'
+        ? 1
+        : (expected['revision'] as int) + 1;
+    if (result.meal.revision != expectedRevision ||
+        (method == 'DELETE'
+            ? result.deletedAt == null
+            : result.deletedAt != null)) {
+      throw const FormatException('Meal confirmation revision mismatch');
+    }
+    if (method != 'DELETE' &&
+        (result.meal.title != expected['title'] ||
+            result.meal.timezone != expected['timezone'] ||
+            !sameMealInstant(result.meal.occurredAt, expected['occurredAt']))) {
+      throw const FormatException('Meal confirmation metadata mismatch');
+    }
+    if (method == 'POST') {
+      final items = objects(expected['items']);
+      if (result.entries.length != items.length) {
+        throw const FormatException('Meal item count mismatch');
+      }
+      for (var i = 0; i < items.length; i++) {
+        final input = items[i],
+            entry = result.entries[i],
+            calculation = object(entry['calculation']);
+        if (entry['foodId'] != input['foodId'] ||
+            entry['foodVersion'] != input['foodVersion'] ||
+            !sameMealQuantity(
+              entry['quantity'] as String,
+              input['quantity'] as String,
+            ) ||
+            entry['unit'] != input['unit'] ||
+            entry['timezone'] != input['timezone'] ||
+            !sameMealInstant(entry['occurredAt'], input['occurredAt']) ||
+            calculation['revision'] != 1 ||
+            calculation['preparation'] != input['preparation'] ||
+            calculation['quantityEvidence'] != input['quantityEvidence']) {
+          throw const FormatException('Meal confirmation item mismatch');
+        }
+      }
+    }
+    return result;
+  }
+
+  @override
+  Future<ConfirmedMeal> createMeal(Json body, String key) =>
+      _saveMeal('POST', body, key);
+  @override
+  Future<ConfirmedMeal> editMeal(String id, Json body, String key) =>
+      _saveMeal('PATCH', body, key, id: id);
+  @override
+  Future<ConfirmedMeal> deleteMeal(String id, int revision, String key) =>
+      _saveMeal(
+        'DELETE',
+        {'revision': revision, 'reviewed': true},
+        key,
+        id: id,
+      );
 }

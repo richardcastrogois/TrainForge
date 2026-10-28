@@ -1,12 +1,12 @@
 # Trilha de implementação e encerramento por área
 
-Atualizada em **27/10/2026**. Base histórica: [auditoria24/10](auditoria-produto-2026-10-24.md). Estado atual: APKdebug0.4.0+22 instalado;API0.7.0/29operações;schema12/27tabelas. [backlog.json](backlog.json) governa estados/dependências e [handoff](handoff.md) a próxima ação.
+Atualizada em **28/10/2026**. Base histórica: [auditoria24/10](auditoria-produto-2026-10-24.md). Estado atual: APK debug0.4.1+23 instalado; API0.8.0/34operações; schema13/30tabelas. [backlog.json](backlog.json) governa estados/dependências e [handoff](handoff.md) a próxima ação.
 
 Este é o roteiro humano principal para acompanhar o que existe, o que falta e quando encerrar.021 foi encerrada no recorte de fundação. **048concluída**:495mensagens/idioma,197testes/analyze0, nomes revisados na biblioteca/histórico/detalhe/correção sem mudar cálculo ou mutações, operação editorial e cobertura0/6369 explícita. [Fechamento](localization-048-fechamento.json). Idioma padrão segue o aparelho, com substituição opcional em configurações e recuperação de resposta tardia sem gravar padrão.
 
 **047encerrada no recorte funcional local**: criação/revisão/confirmacão humanas, edição posterior expressamente autorizada e recuperação da revisão2 conferidas. R1/data, demais campos e hashes deconta/consumo/catálogo preservados; semterceiraversão. [Fechamento por critério](training-configuration-047-fechamento.json), [evidência real](training-configuration-human-verification.json). UXfuso/hora/navegação continua pendente para depois dos testes, conforme pedido; isso não é aceite de usabilidade integral. Próxima015pelasdependências; zero conteúdo aprovado mantém o gate de prática.
 
-**045doing — 28/10:** [persistência e contrato HTTP](refeicoes-045.md) implementados e validados em descartável, com rollback, ownership, replay, exclusão/exportação e dump/restore. API Go0.8.0/34operações; schema real12/27tabelas e APK22 preservados. Migration13 somente testada. Cliente Flutter, ativação, APK/aceite real e foto continuam pendentes. O bloqueio editorial de015/016 não impede esse trabalho independente e não autoriza concluir treinos.
+**045doing — 28/10:** [persistência e contrato HTTP](refeicoes-045.md), Flutter e leitura Android integrados; rollback, ownership, replay, exclusão/exportação e dump/restore verificados em descartável. Schema13/30tabelas ativado com checkpoint e comparação, APK23 instalado/hash conferido. O consumo anterior continua intacto e sem agrupamento nas duas visões; nenhuma refeição real criada pelo agente. Faltam aceite humano de nova refeição, seleção particular no grupo, edição de metadados na UI e foto042; outbox026 tem critérios próprios. O bloqueio editorial de015/016 não impede esse trabalho independente e não autoriza concluir treinos.
 
 ## 1. O raciocínio e a expectativa do autor
 

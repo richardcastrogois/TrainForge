@@ -1,3 +1,6 @@
+import 'nutrition_totals_card.dart';
+import 'meal_diary_page.dart';
+import '../domain/meals.dart';
 import 'package:trainforge/features/food_reference/presentation/food_labels.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
@@ -135,6 +138,25 @@ class _NutritionPageState extends State<NutritionPage>
     if (active && food != null) await record(food);
   }
 
+  Future<void> meals() async {
+    final source = repository;
+    if (!active || source is! MealRepository) return;
+    await Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => MealDiaryPage(
+          repository: source as MealRepository,
+          nutrition: repository,
+          accountId: widget.accountId,
+          currentAccountId: widget.currentAccountId,
+          sessionChanges: widget.sessionChanges,
+          initialDate: controller.date,
+        ),
+      ),
+    );
+    if (active) await controller.load();
+  }
+
   Future<void> createFood() async {
     final result = await Navigator.push<Json>(
       context,
@@ -197,6 +219,12 @@ class _NutritionPageState extends State<NutritionPage>
       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
       children: [
         heading(context.l10n.confirmedDiaryUpper),
+        if (repository is MealRepository)
+          OutlinedButton.icon(
+            onPressed: meals,
+            icon: const Icon(Icons.restaurant),
+            label: Text(context.l10n.viewMeals),
+          ),
         OutlinedButton.icon(
           onPressed: chooseDate,
           icon: const Icon(Icons.calendar_today),
@@ -243,60 +271,7 @@ ${context.displayTimestamp(entry['occurredAt'] as String)}''',
             ),
           ),
         if (controller.summary != null)
-          FigmaSection(
-            child: ExpansionTile(
-              tilePadding: EdgeInsets.zero,
-              title: Text(
-                controller.summary!['complete'] == true
-                    ? context.l10n.daySubtotalCount(
-                        controller.summary!['entries'] as int,
-                      )
-                    : context.l10n.subtotalLimit,
-              ),
-              children: [
-                Text(
-                  controller.summary!['complete'] == true
-                      ? context.l10n.subtotalNotice
-                      : context.l10n.summaryLimit,
-                ),
-                if (controller.summary!['complete'] == true &&
-                    controller.summary!['measuredEntries'] is int &&
-                    controller.summary!['estimatedEntries'] is int)
-                  Text(
-                    context.l10n.quantityEvidenceCounts(
-                      controller.summary!['measuredEntries'] as int,
-                      controller.summary!['estimatedEntries'] as int,
-                    ),
-                  ),
-                const SizedBox(height: 12),
-                for (final n in objects(controller.summary!['nutrients']))
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 12),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          displayLabel(n['nameOriginal']),
-                          style: Theme.of(context).textTheme.titleSmall,
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          '${n['value'] is String ? context.displayDecimal(n['value'] as String) : context.l10n.unknownValue} ${n['unit'] ?? ''}',
-                        ),
-                        Text(
-                          context.l10n.nutrientCoverage(
-                            n['includedEntries'] as int,
-                            n['unknownEntries'] as int,
-                          ),
-                        ),
-                        Text('${context.l10n.column}: ${n['sourceColumnKey']}'),
-                        const Divider(),
-                      ],
-                    ),
-                  ),
-              ],
-            ),
-          ),
+          NutritionTotalsCard(totals: controller.summary!),
       ],
     ),
   );

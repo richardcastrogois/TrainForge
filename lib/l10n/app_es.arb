@@ -691,5 +691,50 @@
       }
     }
   },
-  "configEntryHint": "En tu cuenta, abre Configuración de entrenamiento. También está en Planes, en Crear mi plan. Revisa lugares, contexto, equipamiento y disponibilidad antes de confirmar."
+  "configEntryHint": "En tu cuenta, abre Configuración de entrenamiento. También está en Planes, en Crear mi plan. Revisa lugares, contexto, equipamiento y disponibilidad antes de confirmar.",
+  "mealDiary": "Comidas y alimentos",
+  "byMeal": "Por comida",
+  "byFood": "Por alimento",
+  "recordMeal": "Registrar comida",
+  "mealTitle": "Nombre de la comida (opcional)",
+  "prepareMealItem": "Preparar un alimento",
+  "addMealItem": "Añadir alimento a la comida",
+  "mealDraftNotice": "Los alimentos quedan en este borrador hasta revisar y confirmar toda la comida. Aún no se ha registrado nada.",
+  "mealReviewConfirmation": "He revisado los alimentos, cantidades y horarios de esta comida.",
+  "confirmMeal": "Confirmar comida",
+  "mealSaved": "Comida confirmada",
+  "mealNoItems": "Esta comida aún no contiene alimentos.",
+  "ungroupedIntakes": "Registros sin comida indicada",
+  "mealMetadataOnly": "El horario de la comida organiza el grupo. No cambia el horario ni la cantidad de cada alimento.",
+  "correctMeal": "Corregir nombre u horario de la comida",
+  "deleteMeal": "Eliminar toda la comida",
+  "deleteMealConfirm": "Esto elimina la comida y todos sus consumos activos. Para eliminar solo un alimento, ábralo por separado.",
+  "mealDeleted": "Comida eliminada",
+  "mealConflictNotice": "Revise el historial antes de registrar de nuevo. La comida puede haberse confirmado o modificado; este borrador no se reenviará como un registro nuevo.",
+  "mealItemPending": "Borrador — aún no registrado",
+  "mealDraftLimit": "Puede registrar hasta 32 alimentos a la vez.",
+  "removeMealItem": "Quitar alimento del borrador",
+  "mealUnnamed": "Comida sin nombre",
+  "viewMeals": "Ver por comida o alimento",
+  "mealDayScope": "Cambie la vista de los mismos registros confirmados. El horario de cada alimento determina el día en que aparece.",
+  "mealEmptyGroup": "Esta comida ya no tiene alimentos activos.",
+  "mealItemCount": "{count, plural, =1{1 alimento} other{{count} alimentos}}",
+  "@mealItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mealOtherItems": "{count, plural, =1{1 alimento de esta comida está fuera de esta selección.} other{{count} alimentos de esta comida están fuera de esta selección.}}",
+  "@mealOtherItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacySectionMeals": "Comidas",
+  "privacySectionMealItems": "Alimentos vinculados a comidas",
+  "privacySectionMealVersions": "Revisiones de comidas"
 }

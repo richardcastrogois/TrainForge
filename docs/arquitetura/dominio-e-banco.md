@@ -1,6 +1,6 @@
 # Domínio e banco — modelo e implementação inicial
 
-Migrations00001–00012 aplicadas ao banco isolado `trainforge_v1_dev` (27tabelas). A12 foi testada emdescartável e ativada comcheckpoint de schema e comparação das linhas reais; [recibo047](../execucao/v1/training-configuration-local-activation.json).9–11 foram autorizadas explicitamente pelo autor e testadas primeiro emdescartável. Comparação antes/depois preservou dados deusuário,consumo,sessões e alimentos. [Ativação](../execucao/v1/food-names-local-activation.json). O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
+Migrations00001–00013 aplicadas ao banco isolado `trainforge_v1_dev` (30tabelas). A13 foi ativada após SQL/HTTP/restore descartáveis, com checkpoint completo local e comparação dos dados; [recibo045](../execucao/v1/meal-grouping-local-activation.json). A12 foi testada emdescartável e ativada comcheckpoint de schema e comparação das linhas reais; [recibo047](../execucao/v1/training-configuration-local-activation.json).9–11 foram autorizadas explicitamente pelo autor e testadas primeiro emdescartável. Comparação antes/depois preservou dados deusuário,consumo,sessões e alimentos. [Ativação](../execucao/v1/food-names-local-activation.json). O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -38,11 +38,11 @@ erDiagram
     }
 ```
 
-## Agrupamento de refeições045 — migration13 testada, sem ativação real
+## Agrupamento de refeições045 — migration13 aplicada localmente
 
 meals guarda metadados atuais e tombstone do grupo; meal_items referencia os mesmos food_entries por chave composta do titular, com um vínculo por consumo e posição no grupo; meal_versions conserva revisões de metadados e lista de identidades, sem copiar nutrientes. Não há backfill de consumos antigos. [Contrato e limites](../execucao/v1/refeicoes-045.md).
 
-Criar grupo e novos consumos, cálculo e replay usa uma transação. Correção/exclusão individual permanece em food_entries; metadados têm revisão independente. Excluir o grupo desativa seus itens restantes; excluir conta remove todos os grupos e revisões. Runtime só recebe SELECT/EXECUTE para as tabelas novas. Exportação/ledger/restore foram testados antes da ativação. Schema real12/27tabelas preservado; schema13/30tabelas somente nos testes descartáveis.
+Criar grupo e novos consumos, cálculo e replay usa uma transação. Correção/exclusão individual permanece em food_entries; metadados têm revisão independente. Excluir o grupo desativa seus itens restantes; excluir conta remove todos os grupos e revisões. Runtime só recebe SELECT/EXECUTE para as tabelas novas. Exportação/ledger/restore foram testados antes da ativação. Schema real13/30tabelas; dados anteriores preservados por comparação e nenhuma refeição criada por seed. Checkpoint completo local não foi restaurado nesta ativação; o mecanismo de restore/ledger foi verificado em descartável.
 
 ```mermaid
 erDiagram
@@ -53,7 +53,7 @@ erDiagram
     meals ||--|{ meal_versions : metadados_versionados
 ```
 
-As duas visões do diário e seus subtotais leem os mesmos consumos, sem duplicar registros. Itens fora do dia ou limite ficam indicados. Refeição sem itens ativos permanece no detalhe e não cria um consumo fictício no dia. Foto/armazenamento042 e cliente Flutter ainda pendentes.
+As duas visões do diário e seus subtotais leem os mesmos consumos, sem duplicar registros. Itens fora do dia ou limite ficam indicados. Refeição sem itens ativos permanece no detalhe e não cria um consumo fictício no dia. Cliente Flutter integrado; nova refeição real e complementos de UI ainda pendentes. Foto/armazenamento042 mantém seus critérios próprios.
 
 ## Dose e unidades
 

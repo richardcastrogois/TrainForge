@@ -1879,4 +1879,119 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get configEntryHint =>
       'In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming.';
+
+  @override
+  String get mealDiary => 'Meals and foods';
+
+  @override
+  String get byMeal => 'By meal';
+
+  @override
+  String get byFood => 'By food';
+
+  @override
+  String get recordMeal => 'Record a meal';
+
+  @override
+  String get mealTitle => 'Meal name (optional)';
+
+  @override
+  String get prepareMealItem => 'Prepare a meal item';
+
+  @override
+  String get addMealItem => 'Add food to the meal';
+
+  @override
+  String get mealDraftNotice =>
+      'Foods stay in this draft until you review and confirm the whole meal. Nothing has been recorded yet.';
+
+  @override
+  String get mealReviewConfirmation =>
+      'I reviewed the foods, amounts and times for this meal.';
+
+  @override
+  String get confirmMeal => 'Confirm meal';
+
+  @override
+  String get mealSaved => 'Meal confirmed';
+
+  @override
+  String get mealNoItems => 'There are no foods in this meal yet.';
+
+  @override
+  String get ungroupedIntakes => 'Records without a meal';
+
+  @override
+  String get mealMetadataOnly =>
+      'The meal time organizes the group. It does not change each food’s time or amount.';
+
+  @override
+  String get correctMeal => 'Correct meal name or time';
+
+  @override
+  String get deleteMeal => 'Delete the whole meal';
+
+  @override
+  String get deleteMealConfirm =>
+      'This deletes the meal and all its remaining active intake records. To delete just one food, open that food.';
+
+  @override
+  String get mealDeleted => 'Meal deleted';
+
+  @override
+  String get mealConflictNotice =>
+      'Check your history before recording again. The meal may have been confirmed or changed; this draft will not be resent as a new record.';
+
+  @override
+  String get mealItemPending => 'Draft — not recorded yet';
+
+  @override
+  String get mealDraftLimit => 'You can record up to 32 foods at once.';
+
+  @override
+  String get removeMealItem => 'Remove food from draft';
+
+  @override
+  String get mealUnnamed => 'Unnamed meal';
+
+  @override
+  String get viewMeals => 'View by meal or food';
+
+  @override
+  String get mealDayScope =>
+      'Switch views of the same confirmed records. Each food’s time determines the day it appears on.';
+
+  @override
+  String get mealEmptyGroup => 'This meal has no active foods remaining.';
+
+  @override
+  String mealItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count foods',
+      one: '1 food',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String mealOtherItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count foods from this meal are outside this selection.',
+      one: '1 food from this meal is outside this selection.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get privacySectionMeals => 'Meals';
+
+  @override
+  String get privacySectionMealItems => 'Meal food links';
+
+  @override
+  String get privacySectionMealVersions => 'Meal revisions';
 }

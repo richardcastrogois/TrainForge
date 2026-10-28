@@ -691,5 +691,50 @@
       }
     }
   },
-  "configEntryHint": "Na sua conta, abra Configuração de treino. Também está em Planos, em Criar meu plano. Revise locais, contexto, recursos e disponibilidade antes de confirmar."
+  "configEntryHint": "Na sua conta, abra Configuração de treino. Também está em Planos, em Criar meu plano. Revise locais, contexto, recursos e disponibilidade antes de confirmar.",
+  "mealDiary": "Refeições e alimentos",
+  "byMeal": "Por refeição",
+  "byFood": "Por alimento",
+  "recordMeal": "Registrar refeição",
+  "mealTitle": "Nome da refeição (opcional)",
+  "prepareMealItem": "Preparar item da refeição",
+  "addMealItem": "Adicionar alimento à refeição",
+  "mealDraftNotice": "Os alimentos ficam neste rascunho até você conferir e confirmar a refeição inteira. Nada foi registrado ainda.",
+  "mealReviewConfirmation": "Conferi os alimentos, quantidades e horários desta refeição.",
+  "confirmMeal": "Confirmar refeição",
+  "mealSaved": "Refeição confirmada",
+  "mealNoItems": "Ainda não há alimentos nesta refeição.",
+  "ungroupedIntakes": "Registros sem refeição informada",
+  "mealMetadataOnly": "O horário da refeição organiza o grupo. Ele não altera os horários ou quantidades de cada alimento.",
+  "correctMeal": "Corrigir nome ou horário da refeição",
+  "deleteMeal": "Excluir refeição inteira",
+  "deleteMealConfirm": "Isso exclui a refeição e todos os consumos ainda ativos vinculados a ela. Para excluir só um alimento, abra o alimento.",
+  "mealDeleted": "Refeição excluída",
+  "mealConflictNotice": "Confira o histórico antes de registrar novamente. A refeição pode ter sido confirmada ou alterada; este rascunho não será reenviado como um novo registro.",
+  "mealItemPending": "Rascunho — ainda não registrado",
+  "mealDraftLimit": "Você pode registrar até 32 alimentos de uma vez.",
+  "removeMealItem": "Remover alimento do rascunho",
+  "mealUnnamed": "Refeição sem nome",
+  "viewMeals": "Ver por refeição ou alimento",
+  "mealDayScope": "Alterne a visualização dos mesmos registros confirmados. Os horários de cada alimento determinam em qual dia ele aparece.",
+  "mealEmptyGroup": "Esta refeição não tem mais alimentos ativos.",
+  "mealItemCount": "{count, plural, =1{1 alimento} other{{count} alimentos}}",
+  "@mealItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mealOtherItems": "{count, plural, =1{1 alimento desta refeição está fora deste recorte.} other{{count} alimentos desta refeição estão fora deste recorte.}}",
+  "@mealOtherItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacySectionMeals": "Refeições",
+  "privacySectionMealItems": "Alimentos vinculados às refeições",
+  "privacySectionMealVersions": "Revisões das refeições"
 }

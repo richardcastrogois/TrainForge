@@ -1,6 +1,16 @@
 # V1-045 — refeições e alimentos sobre os mesmos registros
 
-Estado em **28/10/2026: doing, persistência SQL e contrato HTTP validados em bases descartáveis**. A configuração047 foi encerrada; 045 continua como trabalho independente do bloqueio editorial de treinos015/016. Código Go **0.8.0 / 34 operações**. Migration13 cria três tabelas, mas **não foi aplicada ao banco real**, que permanece no schema12/27tabelas. APK0.4.0+22 preservado. O consumo humano existente não foi agrupado ou alterado. [SQL, HTTP e restore](meal-grouping-sql-verification.json).
+Estado em **28/10/2026: doing, SQL/HTTP, cliente Flutter e leitura Android integrados**. Go0.8.0/34operações; schema13/30tabelas aplicado localmente com checkpoint e comparação das linhas anteriores; APKdebug0.4.1+23 instalado e hash/assinatura conferidos. Nenhuma refeição real foi criada pelo agente. O consumo humano anterior permaneceu intacto e sem agrupamento nas duas visões. [SQL/HTTP/restore](meal-grouping-sql-verification.json), [ativação](meal-grouping-local-activation.json), [cliente e leitura nativa](meal-grouping-client-verification.json). 045 permanece aberta por aceite de nova refeição, complementos de UI e fotos042.
+
+## Cliente e checkpoint Android — 28/10
+
+MealRepository/GoNutritionRepository validam conta antes e depois da resposta, identidade/versão, cobertura única dos consumos, revisão e confirmação do corpo enviado. MealDiaryController descarta respostas antigas de dia, idioma ou conta. MealDraftController conserva alimentos/quantidades e revisão explícita; falha incerta congela corpo e chave. Conflito ou expiração monotônica da janela24h exige conferir histórico, sem transformar retry em novo consumo. Estado continua somente em memória, sem fechar026.
+
+NutritionPage mantém o histórico avulso paginado e abre Refeições e alimentos. Essa página alterna duas visões sobre o mesmo diário, indica os registros antigos sem refeição e reutiliza NutritionTotalsCard, sem cálculo no cliente. MealDraftPage prepara quantidades por item com EntryFormPage em modo local: adicionar ao rascunho não chama saveEntry. Somente a revisão final envia o grupo inteiro. A data escolhida inicia o rascunho e os itens; depois da confirmação a consulta volta ao dia do primeiro consumo, incluindo grupos que cruzam dias. O detalhe abre o fluxo existente de correção/exclusão individual e distingue exclusão da refeição inteira.
+
+Teste completo da integração:231casos. Ajuste final de data:26casos dirigidos de cliente/UI/nutrição passaram, com análise limpa. Layout de rascunho vazio/diário de um item em320px/texto2x nos quatro idiomas e dois temas. Isso não substitui usabilidade com idosos/cuidadores nem execução nativa iOS. Captura Android conferida em light/pt-BR; sessão anterior restaurada, nenhum novo consentimentoGoogle. Nome/quantidade/unidade do consumo real conferidos contra o banco sem alterá-los.
+
+Ainda faltam seleção de alimento particular dentro do grupo, UI de correção dos metadados da refeição e aceite real de criação/reabertura/correção/exclusão pelo titular. Foto/reconhecimento/armazenamento e sua exclusão continuam042; fila offline durável026. Nenhuma dessas lacunas foi preenchida com fixture, imagem ou nutriente inventado.
 
 ## Incremento SQL e HTTP — 28/10
 
@@ -14,7 +24,7 @@ Corrigir metadados não desloca os horários individuais nem muda quantidades. C
 
 Exportação inclui meals/mealItems/mealVersions. Exclusão confirmada da conta remove grupos, vínculos e versões; o gate de restore reaplica o ledger antes de liberar qualquer recuperação. Novas seções retornam vazio antes da migration13, mantendo o banco12 utilizável. Testes descartáveis cobriram duas contas, rollback do segundo item, concorrência/replay, limites/dias diferentes, edição/exclusão de item e grupo, HTTP nos quatro idiomas, rejeições e dump/restore com outra conta preservada. Fixtures não são refeição real nem login Google.
 
-Próximo incremento: cliente Flutter, suas duas visões e rascunho/revisão/reenvio por conta. Depois, ativação local com checkpoint e comparação de dados, APK e aceite humano. Foto042 e exclusão de mídia continuam pendentes; nenhuma foto foi enviada ou adicionada por esta implementação.
+Cliente, ativação local e APK foram entregues no checkpoint acima; o aceite de uma nova refeição real continua pendente. Foto042 e exclusão de mídia continuam pendentes; nenhuma foto foi enviada ou adicionada por esta implementação.
 
 ## Decisões que governam a implementação
 
@@ -58,10 +68,10 @@ MealCreateRepository é implementado por MealStore: **todos os itens e grupo na 
 ## Plano original e situação após o incremento SQL
 
 1. Escritor atômico de criação, comandos de metadados/exclusão e idempotência implementados e testados. Não agrupar automaticamente o legado nem simular transação com gravações sequenciais no Flutter.
-2. Migration13 criada e validada em descartável; ativação local ainda pendente. Não alterar foodId/versão ou sobrescrever o snapshot alimentar.
+2. Migration13 criada, validada em descartável e ativada com checkpoint/comparação. Não alterar foodId/versão ou sobrescrever o snapshot alimentar.
 3. Correção/exclusão de consumo aparece no grupo; revisão do consumo é independente da revisão dos metadados. Exclusão do grupo e reenvios tardios testados. Remoção de foto depende da042; não manter foto acessível como revisão.
 4. Inventário/exportação/exclusão/restore e privilégios implementados e testados em descartável. Não usar dados reais como fixture.
-5. Handlers/Swagger implementados; repository/controller/Flutter ainda pendentes. Duas visões devem compartilhar o estado e preservar erros, revisão, rascunho, conta e quatro idiomas. Conferir formulário antes de atualizar o APK.
+5. Handlers/Swagger e repository/controller/Flutter implementados no recorte descrito acima; complementos de seleção/edição e aceite ainda pendentes. Duas visões devem compartilhar o estado e preservar erros, revisão, rascunho, conta e quatro idiomas. Conferir formulário antes de atualizar o APK.
 6. Aceite real de refeição por seu titular e teste das duas visões semduplicar consumo. Fotos042 e dicas046 têm implementação/validação próprias; esta fundação não as entrega.
 
 [Recibo de testes e limites](meal-grouping-foundation-verification.json). Fixtures do domínio não comprovam persistência, autorizaçãoSQL, refeição criada ou jornada disponível noAPK.

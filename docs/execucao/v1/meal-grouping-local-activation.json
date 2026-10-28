@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-28",
+  "story": "V1-045",
+  "status": "partial",
+  "schemaFrom": 12,
+  "schemaTo": 13,
+  "tables": 30,
+  "mealCount": 0,
+  "membershipCount": 0,
+  "mealVersionCount": 0,
+  "deliveredRowsUnchanged": true,
+  "runtimeGrantsApplied": true,
+  "fullCheckpointLocal": true,
+  "checkpointSha256": "023a4e0f2571b3324ddb2a3e21a2c734c989840bca8eb0ce0f6712e4edda0c28",
+  "realMealOrIntakeCreated": false,
+  "limits": [
+    "The new local checkpoint itself has not been restored; the migration and erasure gate were verified with disposable backups.",
+    "Activation does not establish native or human meal acceptance."
+  ]
+}

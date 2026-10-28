@@ -332,5 +332,8 @@ String sectionLabel(BuildContext context, String section) => switch (section) {
   'activityEvents' => context.l10n.privacySectionEvents,
   'foods' => context.l10n.privacySectionFoods,
   'foodEntries' => context.l10n.privacySectionIntakes,
+  'meals' => context.l10n.privacySectionMeals,
+  'mealItems' => context.l10n.privacySectionMealItems,
+  'mealVersions' => context.l10n.privacySectionMealVersions,
   _ => section,
 };

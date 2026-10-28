@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a5c5865162c6d76d`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1eae812e03e72b4a`.
 
 ## Atual: referências entre widgets
 
@@ -18,73 +18,83 @@ flowchart LR
     node7["HomePage"]
     node8["TodayPage"]
     node9["EntryDetailPage"]
-    node10["EntryFormPage"]
-    node11["OwnFoodFormPage"]
-    node12["NutritionPage"]
-    node13["AiOnboardingPage"]
-    node14["ManualOnboardingPage"]
-    node15["OnboardingEntryPage"]
-    node16["PrivacyPage"]
-    node17["ProfilePage"]
-    node18["StatsPage"]
-    node19["TrainingConfigurationPage"]
-    node20["WorkoutDayPage"]
-    node21["WorkoutPlanPage"]
-    node22["WorkoutsPage"]
-    node23["AccountPage"]
-    node24["AppShell"]
-    node25["AuthGate"]
-    node26["EvaluationGuidePage"]
-    node27["ProductShell"]
-    node28["StartupPage"]
+    node10["MealDetailPage"]
+    node11["MealDiaryPage"]
+    node12["MealDraftPage"]
+    node13["EntryFormPage"]
+    node14["OwnFoodFormPage"]
+    node15["NutritionPage"]
+    node16["AiOnboardingPage"]
+    node17["ManualOnboardingPage"]
+    node18["OnboardingEntryPage"]
+    node19["PrivacyPage"]
+    node20["ProfilePage"]
+    node21["StatsPage"]
+    node22["TrainingConfigurationPage"]
+    node23["WorkoutDayPage"]
+    node24["WorkoutPlanPage"]
+    node25["WorkoutsPage"]
+    node26["AccountPage"]
+    node27["AppShell"]
+    node28["AuthGate"]
+    node29["EvaluationGuidePage"]
+    node30["ProductShell"]
+    node31["StartupPage"]
     node2 -->|"referencia widget"| node0
     node2 -->|"referencia widget"| node1
     node2 -->|"referencia widget"| node4
     node2 -->|"referencia widget"| node6
-    node2 -->|"referencia widget"| node16
-    node2 -->|"referencia widget"| node25
+    node2 -->|"referencia widget"| node19
+    node2 -->|"referencia widget"| node28
     node4 -->|"referencia widget"| node3
     node6 -->|"referencia widget"| node5
     node7 -->|"referencia widget"| node2
-    node7 -->|"referencia widget"| node20
-    node9 -->|"referencia widget"| node10
-    node10 -->|"referencia widget"| node11
+    node7 -->|"referencia widget"| node23
+    node9 -->|"referencia widget"| node13
+    node10 -->|"referencia widget"| node9
+    node11 -->|"referencia widget"| node9
     node11 -->|"referencia widget"| node10
+    node11 -->|"referencia widget"| node12
     node12 -->|"referencia widget"| node6
-    node12 -->|"referencia widget"| node9
-    node12 -->|"referencia widget"| node10
-    node12 -->|"referencia widget"| node11
-    node13 -->|"referencia widget"| node2
-    node13 -->|"referencia widget"| node25
-    node14 -->|"referencia widget"| node2
-    node14 -->|"referencia widget"| node25
-    node15 -->|"referencia widget"| node2
+    node12 -->|"referencia widget"| node13
+    node13 -->|"referencia widget"| node14
+    node14 -->|"referencia widget"| node13
+    node15 -->|"referencia widget"| node6
+    node15 -->|"referencia widget"| node9
+    node15 -->|"referencia widget"| node11
     node15 -->|"referencia widget"| node13
     node15 -->|"referencia widget"| node14
+    node16 -->|"referencia widget"| node2
+    node16 -->|"referencia widget"| node28
     node17 -->|"referencia widget"| node2
+    node17 -->|"referencia widget"| node28
     node18 -->|"referencia widget"| node2
-    node18 -->|"referencia widget"| node15
+    node18 -->|"referencia widget"| node16
+    node18 -->|"referencia widget"| node17
     node20 -->|"referencia widget"| node2
     node21 -->|"referencia widget"| node2
-    node21 -->|"referencia widget"| node20
-    node22 -->|"referencia widget"| node2
-    node22 -->|"referencia widget"| node15
-    node22 -->|"referencia widget"| node21
-    node23 -->|"referencia widget"| node0
-    node23 -->|"referencia widget"| node1
-    node23 -->|"referencia widget"| node16
-    node24 -->|"referencia widget"| node7
-    node24 -->|"referencia widget"| node17
-    node24 -->|"referencia widget"| node18
-    node24 -->|"referencia widget"| node22
+    node21 -->|"referencia widget"| node18
+    node23 -->|"referencia widget"| node2
+    node24 -->|"referencia widget"| node2
+    node24 -->|"referencia widget"| node23
     node25 -->|"referencia widget"| node2
-    node25 -->|"referencia widget"| node27
-    node25 -->|"referencia widget"| node28
-    node26 -->|"referencia widget"| node4
-    node26 -->|"referencia widget"| node6
-    node27 -->|"referencia widget"| node4
-    node27 -->|"referencia widget"| node12
-    node27 -->|"referencia widget"| node23
+    node25 -->|"referencia widget"| node18
+    node25 -->|"referencia widget"| node24
+    node26 -->|"referencia widget"| node0
+    node26 -->|"referencia widget"| node1
+    node26 -->|"referencia widget"| node19
+    node27 -->|"referencia widget"| node7
+    node27 -->|"referencia widget"| node20
+    node27 -->|"referencia widget"| node21
+    node27 -->|"referencia widget"| node25
+    node28 -->|"referencia widget"| node2
+    node28 -->|"referencia widget"| node30
+    node28 -->|"referencia widget"| node31
+    node29 -->|"referencia widget"| node4
+    node29 -->|"referencia widget"| node6
+    node30 -->|"referencia widget"| node4
+    node30 -->|"referencia widget"| node15
+    node30 -->|"referencia widget"| node26
 ```
 
 | Tela/widget | Localização |
@@ -99,9 +109,12 @@ flowchart LR
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
 | EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:13](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
-| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:37](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:423](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:16](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
+| MealDetailPage | [lib/features/nutrition/presentation/meal_detail_page.dart:15](../../../lib/features/nutrition/presentation/meal_detail_page.dart) |
+| MealDiaryPage | [lib/features/nutrition/presentation/meal_diary_page.dart:16](../../../lib/features/nutrition/presentation/meal_diary_page.dart) |
+| MealDraftPage | [lib/features/nutrition/presentation/meal_draft_page.dart:14](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
+| EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:38](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:438](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:19](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
 | OnboardingEntryPage | [lib/features/onboarding/presentation/pages/onboarding_entry_page.dart:9](../../../lib/features/onboarding/presentation/pages/onboarding_entry_page.dart) |

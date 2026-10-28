@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a5c5865162c6d76d`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `1eae812e03e72b4a`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,7 +8,7 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 107 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 113 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
 | Go neste clone | 61 arquivos Go de aplicação; 35 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
@@ -18,10 +18,10 @@
 
 ```mermaid
 flowchart LR
-    node0["Telas e widgets (47 arquivos)"]
+    node0["Telas e widgets (52 arquivos)"]
     node1["Repositories Flutter (12 arquivos)"]
     node2["HTTP Dio (8 arquivos)"]
-    node3["Modelos Dart (15 arquivos)"]
+    node3["Modelos Dart (16 arquivos)"]
     node4["Fastify: referência externa versionada"]
     node2 -->|"importação estática"| node3
     node1 -->|"importação estática"| node2

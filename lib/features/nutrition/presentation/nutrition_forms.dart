@@ -9,6 +9,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 import '../domain/nutrition.dart';
+import '../domain/meals.dart';
 import 'nutrition_messages.dart';
 import 'nutrition_feedback.dart';
 
@@ -38,12 +39,16 @@ class EntryFormPage extends StatefulWidget {
   final FoodReference food;
   final NutritionRepository repository;
   final Json? entry;
+  final bool prepareForMeal;
+  final DateTime? initialWhen;
   const EntryFormPage({
     super.key,
     required this.food,
     required this.repository,
     this.entry,
-  });
+    this.prepareForMeal = false,
+    this.initialWhen,
+  }) : assert(!prepareForMeal || entry == null);
   @override
   State<EntryFormPage> createState() => _EntryFormPageState();
 }
@@ -72,7 +77,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
     super.initState();
     final e = widget.entry;
     when = e == null
-        ? DateTime.now()
+        ? widget.initialWhen ?? DateTime.now()
         : DateTime.parse(e['occurredAt'] as String).toLocal();
     unit = e?['unit'] as String? ?? widget.food.basisUnit ?? 'g';
     quantity.text = e?['quantity'] as String? ?? '';
@@ -136,6 +141,10 @@ class _EntryFormPageState extends State<EntryFormPage> {
       };
     }
     FocusManager.instance.primaryFocus?.unfocus();
+    if (widget.prepareForMeal) {
+      guard.currentState!.complete(copyMealJson(pending!));
+      return;
+    }
     setState(() {
       busy = true;
       error = null;
@@ -179,7 +188,9 @@ class _EntryFormPageState extends State<EntryFormPage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 FigmaPageHeading(
-                  title: widget.entry == null
+                  title: widget.prepareForMeal
+                      ? context.l10n.prepareMealItem
+                      : widget.entry == null
                       ? context.l10n.portionYours
                       : context.l10n.correctIntake,
                   subtitle: widget.food.localizedName(context),
@@ -375,7 +386,9 @@ class _EntryFormPageState extends State<EntryFormPage> {
                 ),
                 SizedBox(height: 12),
                 Text(
-                  context.l10n.intakeConfirmationNotice,
+                  widget.prepareForMeal
+                      ? context.l10n.mealDraftNotice
+                      : context.l10n.intakeConfirmationNotice,
                   style: TextStyle(
                     fontSize: 12,
                     height: 1.35,
@@ -397,6 +410,8 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         ? context.l10n.confirming
                         : pending != null
                         ? context.l10n.retryConfirmation
+                        : widget.prepareForMeal
+                        ? context.l10n.addMealItem
                         : widget.entry == null
                         ? context.l10n.confirmIntake
                         : context.l10n.confirmCorrection,

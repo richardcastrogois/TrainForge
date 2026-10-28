@@ -869,7 +869,7 @@ Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Co
 
 Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
 
-Handoff: 28/10: persistência e HTTP de refeições implementados e validados em descartável: criação atômica de grupo/consumos, diário/detalhe, correção de metadados, exclusão integral e replay; duas contas, rollback do segundo item, limites/dias distintos, correção/exclusão individual, exportação e dump/restore com ledger e outra conta preservada. DTOs/comandos, aplicação, PostgreSQL e handlers separados. API0.8.0/34; migration13 testada, não ativada. Banco real12/27 e APK22 preservados. Próximo: Flutter com duas visões/rascunho/revisão/retry/conta/idiomas, ativação com checkpoint/comparação, APK e aceite humano. Foto042 e outbox026 pendentes. Não agrupar o consumo real nem concluir045 com fixtures.
+Handoff: 28/10: SQL/HTTP e Flutter de refeições integrados; migration13 ativada com checkpoint/comparação, schema13/30tabelas e API0.8.0/34. APKdebug0.4.1+23 instalado e leitura nativa real aprovada sem alterar/agrupá-lo. Rascunho/revisão, preparo sem saveEntry, duas visões/mesmosIDs/totais, detalhe e exclusão integral.231testes no checkpoint de integração,26dirigidos após ajuste final de data e analyze0. Fonte/quantidade/versão e dados anteriores preservados.0refeições reais criadas pelo agente. Continua doing: aceite humano, seleção particular no grupo, edição de metadados na UI, foto042 e seu ciclo; outbox026 separada. Não repetir SQL/restore/Google sem mudança nem preencher o gate com fixture.
 
 ### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
 

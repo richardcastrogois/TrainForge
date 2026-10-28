@@ -1,5 +1,15 @@
 # Retomar a avaliação Android
 
+## Checkpoint vigente — 28/10/2026
+
+APK debug **0.4.1+23 instalado** no TrainForge_Benchmark/emulator-5554; API Go0.8.0/34operações e PostgreSQL schema13/30tabelas ativos localmente. [Cliente e leitura nativa](meal-grouping-client-verification.json), [ativação preservando dados](meal-grouping-local-activation.json). Sessão existente restaurada, sem novo login Google. Tela final: **Refeições e alimentos**, 28/10/2026, visão por refeição, sem formulário aberto. Conferir estado antes de interagir.
+
+Para testar uma refeição real: toque em **Registrar refeição**, adicione alimentos da biblioteca, informe as quantidades realmente consumidas e se foram medidas ou estimadas, confira datas e marque a revisão antes de confirmar. O preparo de um item ainda não grava consumo; somente a confirmação da refeição grava o grupo inteiro. Não usar dados fictícios para concluir o aceite. Seleção particular no grupo, edição dos metadados na UI, foto042 e fila offline026 continuam pendentes. O registro anterior permanece sem agrupamento inventado.
+
+231 testes Flutter no checkpoint de integração, 26 dirigidos após o alinhamento final de data e analyze sem issues. Isso não encerra usabilidade, iOS, release ou a história045. Configuração047 tem aceite funcional humano registrado. Treinos015/016 seguem sem conteúdo aprovado para prática.
+
+## Checkpoints históricos
+
 Checkpoint25/10: novo APKdebug **0.3.1+14** compilado e assinatura verificada para a fundação de idiomas048. [Artefato preparado](android-localization-checkpoint.json) e [cobertura parcial](frontend-localization-verification.json). Não instalado pelo agente: a inspeção não identificou raiz segura do emulador e preservou a UI aberta. Último instalado registrado0.3.0+13; não tratar a preparação como atualização já realizada. Continuar048; os demais textos/plurais e nomes revisados ainda faltam.
 
 

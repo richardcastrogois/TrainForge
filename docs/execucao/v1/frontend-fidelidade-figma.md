@@ -1,5 +1,12 @@
 # Frontend — referências, estado e checkpoints
 
+## Refeições045 — checkpoint28/10
+
+APKdebug0.4.1+23 instalado; API0.8.0/34operações e schema13/30tabelas locais. Rascunho com revisão, preparo de item sem gravação antecipada, duas visões sobre o mesmo diário e detalhe/exclusão integral integrados. Histórico avulso paginado preservado; cartão de totais compartilhado, sem cálculo no cliente. [Evidências e limites](meal-grouping-client-verification.json).
+
+231testes de integração e26dirigidos após alinhamento da data; analyze0issues. Layout de rascunho vazio/diário de um item em320px/texto2x nos quatro idiomas e temas claro/dark. Nativo light/pt-BR mostrou consumo humano anterior intacto, sem agrupamento inferido. Não constitui aceite de todos os públicos nem fidelidade exata a um frame novo do Figma. Faltam aceite humano de refeição real, seleção particular no grupo, edição de metadados na UI e foto042. Outbox026, treinos e iOS permanecem com gates próprios.
+
+
 ## Configuração047 — teste humano em27/10
 
 APK debug **0.4.0+22**, API **0.7.0 / 29 operações**, 555 mensagens por idioma e 213 testes Flutter no incremento. O autor revisou e confirmou sua rotina; o agente reabriu a configuração e conferiu as quatro etapas e o resumo com o banco. A edição posterior, expressamente autorizada, gerou a revisão 2 e foi recuperada após reabertura, preservando a versão original e os demais registros. A V1-047 está concluída no recorte funcional local. [Evidência real](training-configuration-human-verification.json), [fechamento](training-configuration-047-fechamento.json).
@@ -22,7 +29,7 @@ Fonte única atualizada em **27/10/2026**. [Trilha por área](trilha-implementac
 
 Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-045/046); após pesquisa, aprovou também recuperar imagens pela conta com cache no celular. Q3 confirmou configuração completa antes da busca, trocas compatíveis/dias/horários e retomada ou parcial (047/015/044/017/023). Q4 confirmou apagar foto com a refeição e registrar offline/sincronizar depois;026/042/045 ainda precisam de fila durável privada, estados e exclusão coordenada. Q5 confirmou configuração em etapas curtas/revisão final e nomes traduzidos quando revisados, com original/fonte nos detalhes e fallback original (047/048). Nenhuma dessas capacidades foi implementada por alterar o escopo.
 
-APK anterior instalado: **debug 0.3.0+13**. Atual **0.4.0+22 instalado**, leitura localizada e configuração persistida/recuperada; API Go **0.7.0 /29operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
+APK atual **debug0.4.1+23 instalado**; refeições integradas com leitura das duas visões e configuração047 persistida/recuperada. API Go **0.8.0 /34operações**, schema13/30tabelas. Aceite de nova refeição e complementos estão no [estado045](refeicoes-045.md). Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
 
 Faltam o refinamento didático da configuração047, treino/agenda/execução com trocas compatíveis e retomada/parcial, contexto de pausa do cuidador, captura/reconhecimento por foto, refeições/itens e o conjunto histórico visual/análise/dicas revisadas, publicação de nomes alimentares realmente revisados e aceites ampliados de usabilidade, além de validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
 

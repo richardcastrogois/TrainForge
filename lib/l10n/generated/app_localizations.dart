@@ -3431,6 +3431,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming.'**
   String get configEntryHint;
+
+  /// No description provided for @mealDiary.
+  ///
+  /// In en, this message translates to:
+  /// **'Meals and foods'**
+  String get mealDiary;
+
+  /// No description provided for @byMeal.
+  ///
+  /// In en, this message translates to:
+  /// **'By meal'**
+  String get byMeal;
+
+  /// No description provided for @byFood.
+  ///
+  /// In en, this message translates to:
+  /// **'By food'**
+  String get byFood;
+
+  /// No description provided for @recordMeal.
+  ///
+  /// In en, this message translates to:
+  /// **'Record a meal'**
+  String get recordMeal;
+
+  /// No description provided for @mealTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal name (optional)'**
+  String get mealTitle;
+
+  /// No description provided for @prepareMealItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare a meal item'**
+  String get prepareMealItem;
+
+  /// No description provided for @addMealItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Add food to the meal'**
+  String get addMealItem;
+
+  /// No description provided for @mealDraftNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Foods stay in this draft until you review and confirm the whole meal. Nothing has been recorded yet.'**
+  String get mealDraftNotice;
+
+  /// No description provided for @mealReviewConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'I reviewed the foods, amounts and times for this meal.'**
+  String get mealReviewConfirmation;
+
+  /// No description provided for @confirmMeal.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm meal'**
+  String get confirmMeal;
+
+  /// No description provided for @mealSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal confirmed'**
+  String get mealSaved;
+
+  /// No description provided for @mealNoItems.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no foods in this meal yet.'**
+  String get mealNoItems;
+
+  /// No description provided for @ungroupedIntakes.
+  ///
+  /// In en, this message translates to:
+  /// **'Records without a meal'**
+  String get ungroupedIntakes;
+
+  /// No description provided for @mealMetadataOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'The meal time organizes the group. It does not change each food’s time or amount.'**
+  String get mealMetadataOnly;
+
+  /// No description provided for @correctMeal.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct meal name or time'**
+  String get correctMeal;
+
+  /// No description provided for @deleteMeal.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete the whole meal'**
+  String get deleteMeal;
+
+  /// No description provided for @deleteMealConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'This deletes the meal and all its remaining active intake records. To delete just one food, open that food.'**
+  String get deleteMealConfirm;
+
+  /// No description provided for @mealDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal deleted'**
+  String get mealDeleted;
+
+  /// No description provided for @mealConflictNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your history before recording again. The meal may have been confirmed or changed; this draft will not be resent as a new record.'**
+  String get mealConflictNotice;
+
+  /// No description provided for @mealItemPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft — not recorded yet'**
+  String get mealItemPending;
+
+  /// No description provided for @mealDraftLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'You can record up to 32 foods at once.'**
+  String get mealDraftLimit;
+
+  /// No description provided for @removeMealItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove food from draft'**
+  String get removeMealItem;
+
+  /// No description provided for @mealUnnamed.
+  ///
+  /// In en, this message translates to:
+  /// **'Unnamed meal'**
+  String get mealUnnamed;
+
+  /// No description provided for @viewMeals.
+  ///
+  /// In en, this message translates to:
+  /// **'View by meal or food'**
+  String get viewMeals;
+
+  /// No description provided for @mealDayScope.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch views of the same confirmed records. Each food’s time determines the day it appears on.'**
+  String get mealDayScope;
+
+  /// No description provided for @mealEmptyGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'This meal has no active foods remaining.'**
+  String get mealEmptyGroup;
+
+  /// No description provided for @mealItemCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 food} other{{count} foods}}'**
+  String mealItemCount(int count);
+
+  /// No description provided for @mealOtherItems.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 food from this meal is outside this selection.} other{{count} foods from this meal are outside this selection.}}'**
+  String mealOtherItems(int count);
+
+  /// No description provided for @privacySectionMeals.
+  ///
+  /// In en, this message translates to:
+  /// **'Meals'**
+  String get privacySectionMeals;
+
+  /// No description provided for @privacySectionMealItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal food links'**
+  String get privacySectionMealItems;
+
+  /// No description provided for @privacySectionMealVersions.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal revisions'**
+  String get privacySectionMealVersions;
 }
 
 class _AppLocalizationsDelegate

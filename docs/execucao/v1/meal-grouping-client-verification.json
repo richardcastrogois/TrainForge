@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-28",
+  "story": "V1-045",
+  "status": "partial",
+  "scope": "integrated-flutter-native-read-not-human-meal-save",
+  "apiVersion": "0.8.0",
+  "httpOperations": 34,
+  "localSchema": 13,
+  "localTables": 30,
+  "apk": {
+    "version": "0.4.1+23",
+    "variant": "debug",
+    "sha256": "09e530313df381947900c301645583ae67d9e8b04842b331cec6f510f7914f94",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "0b3483763f5b28c1142388181e89aa60775b898ae8cd9d080822efcb63f15e07",
+    "installedHashMatched": true
+  },
+  "checks": {
+    "fullFlutterSuitePassed": 231,
+    "fullSuiteScope": "after UI integration, before the final selected-date alignment",
+    "latestFocusedFlutterSuitePassed": 26,
+    "latestFocusedScope": "meal client/UI and existing nutrition tests, including final selected-date alignment",
+    "analyzerIssues": 0,
+    "messagesPerLocale": {
+      "pt_BR": 586,
+      "pt_PT": 586,
+      "en": 586,
+      "es": 586
+    },
+    "layoutScopes": [
+      "empty meal draft and one-item diary",
+      "320px with text2x",
+      "pt-BR,pt-PT,en,es",
+      "light and dark"
+    ],
+    "preparedItemDoesNotWriteIntake": true,
+    "explicitWholeMealReviewRequired": true,
+    "twoViewsShareEntryIdentitiesAndServerTotals": true,
+    "pendingBodyAndKeyFrozen": true,
+    "conflictNeverBecomesNewCreateIntention": true,
+    "monotonic24hRetryLimit": true,
+    "accountChangeClearsDraftAndIgnoresLateResponse": true,
+    "dateFilterSeedsDraftAndItemTime": true,
+    "confirmedMealReturnsToFirstIntakeDay": true
+  },
+  "native": {
+    "avd": "TrainForge_Benchmark",
+    "serial": "emulator-5554",
+    "android": 15,
+    "existingSessionRestored": true,
+    "realGoogleLoginRetested": false,
+    "credentialsExtracted": false,
+    "emptyCurrentDayRead": true,
+    "realLegacyIntakeReadInBothViews": true,
+    "originalNameQuantityUnitMatchedDatabase": true,
+    "legacyRemainedUngrouped": true,
+    "realMealCreatedByAgent": false,
+    "realIntakeChangedOrDeletedByAgent": false,
+    "accountCount": 1,
+    "intakeCount": 1,
+    "foodVersionCount": 6369,
+    "trainingConfigurationRevisions": 2,
+    "mealCount": 0
+  },
+  "graph": {
+    "dartFiles": 113,
+    "nodes": 4166,
+    "edges": 4863,
+    "firstPassChanged": 27,
+    "finalPassChanged": 3,
+    "semanticExtraction": false,
+    "llmTokens": 0,
+    "htmlExported": true
+  },
+  "limits": [
+    "No human-confirmed new meal save/reopen/correction/deletion acceptance yet.",
+    "Meal grouping currently selects foods from the reference library; private-food group selection and meal metadata editing UI remain pending.",
+    "Photo capture/recognition/account image storage and photo deletion are still042.",
+    "Memory draft/retry is not the durable offline outbox026.",
+    "Native iOS/release, native dark/all-locale validation and broader usability remain separate gates."
+  ]
+}

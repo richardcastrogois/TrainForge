@@ -691,5 +691,50 @@
       }
     }
   },
-  "configEntryHint": "In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming."
+  "configEntryHint": "In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming.",
+  "mealDiary": "Meals and foods",
+  "byMeal": "By meal",
+  "byFood": "By food",
+  "recordMeal": "Record a meal",
+  "mealTitle": "Meal name (optional)",
+  "prepareMealItem": "Prepare a meal item",
+  "addMealItem": "Add food to the meal",
+  "mealDraftNotice": "Foods stay in this draft until you review and confirm the whole meal. Nothing has been recorded yet.",
+  "mealReviewConfirmation": "I reviewed the foods, amounts and times for this meal.",
+  "confirmMeal": "Confirm meal",
+  "mealSaved": "Meal confirmed",
+  "mealNoItems": "There are no foods in this meal yet.",
+  "ungroupedIntakes": "Records without a meal",
+  "mealMetadataOnly": "The meal time organizes the group. It does not change each food’s time or amount.",
+  "correctMeal": "Correct meal name or time",
+  "deleteMeal": "Delete the whole meal",
+  "deleteMealConfirm": "This deletes the meal and all its remaining active intake records. To delete just one food, open that food.",
+  "mealDeleted": "Meal deleted",
+  "mealConflictNotice": "Check your history before recording again. The meal may have been confirmed or changed; this draft will not be resent as a new record.",
+  "mealItemPending": "Draft — not recorded yet",
+  "mealDraftLimit": "You can record up to 32 foods at once.",
+  "removeMealItem": "Remove food from draft",
+  "mealUnnamed": "Unnamed meal",
+  "viewMeals": "View by meal or food",
+  "mealDayScope": "Switch views of the same confirmed records. Each food’s time determines the day it appears on.",
+  "mealEmptyGroup": "This meal has no active foods remaining.",
+  "mealItemCount": "{count, plural, =1{1 food} other{{count} foods}}",
+  "@mealItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mealOtherItems": "{count, plural, =1{1 food from this meal is outside this selection.} other{{count} foods from this meal are outside this selection.}}",
+  "@mealOtherItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacySectionMeals": "Meals",
+  "privacySectionMealItems": "Meal food links",
+  "privacySectionMealVersions": "Meal revisions"
 }

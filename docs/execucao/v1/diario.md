@@ -462,3 +462,13 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - SQL/HTTP isolado aprovado: duas contas, segundo item inválido com rollback, concorrência/replay, dias distintos/limite/legado, edição/exclusão, exportação e dump/restore. Ledger reaplicado duas vezes; outra conta preservada. Go test ./... e vet passaram; skips de outros SQL não contam como ensaios executados.
 - Banco real manteve schema12/27tabelas; comparação dos hashes de linhas reais aprovada. APK22 preservado. Nenhuma refeição, conta, consumo ou foto real criada/excluída. Cliente Flutter/ativação/aceite e foto042 continuam pendentes;045doing.
 - Leitura local confirmou zero programas/prática; importador atual só aceita metadados de consulta.015/016 mantêm bloqueio editorial e não foram concluídas. [Recibo](meal-grouping-sql-verification.json), [próximo incremento](refeicoes-045.md).
+
+
+## 28/10/2026 — cliente045, ativação local e APK de leitura
+
+- Flutter de refeições integrado: modelos/repository/estado separados, duas visões compartilhadas, rascunho com revisão e preparo de item sem salvar consumo avulso. Confirmação inteira atômica; retry congela corpo/chave, conflito/24h não criam intenção nova; conta diferente limpa estado.
+- Histórico avulso paginado preservado; componente de totais extraído e reutilizado, sem soma no cliente. Rascunho/itens iniciam na data escolhida; confirmação volta ao primeiro dia de consumo.
+- 231 testes completos na integração; depois do ajuste final de data, 26 testes dirigidos aprovados e analyze sem issues. Layout320px/texto2x em quatro idiomas/dois temas para rascunho vazio/diário de um item.
+- Migration13 aplicada após teste SQL/HTTP/restore, com API registrada parada e checkpoint completo local. Comparação preservou contas, consumo, catálogo e configurações.30tabelas,0refeições; o checkpoint novo não foi restaurado, mas o mecanismo foi ensaiado em descartável.
+- APKdebug0.4.1+23 instalado, certificado/hash conferidos. Sessão existente restaurada, sem Google automatizado ou extração de credenciais. Leitura nativa conferiu nome/quantidade/unidade do consumo humano em ambas as visões e sem agrupamento; nenhum registro real alterado.
+- Graphify113Dart/4166nós/4863arestas, HTML e backup local, semLLM/semântica.045segue doing por aceite humano/complementos de UI e foto042; outbox026 não foi concluída por retry em memória. [Recibo do cliente](meal-grouping-client-verification.json), [ativação](meal-grouping-local-activation.json).

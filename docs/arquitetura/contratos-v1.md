@@ -1,10 +1,10 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.8.0 / 34 operações**, schema12/27tabelas local e migration13 testada em descartável. Flutter de refeições ainda pendente; configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.8.0 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.1+23 integrados; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
-## Refeições045 — contrato SQL/HTTP, cliente pendente
+## Refeições045 — contrato SQL/HTTP e cliente integrado
 
-Go0.8.0 acrescenta cinco operações privadas. Requerem migration13, validada somente em descartável; o banco real permanece no schema12 e responde indisponibilidade para essas novas rotas. [Semântica e evidências](../execucao/v1/refeicoes-045.md).
+Go0.8.0 acrescenta cinco operações privadas. Migration13 validada em descartável e aplicada localmente com checkpoint/comparação; cliente e leitura Android integrados. [Semântica e evidências](../execucao/v1/refeicoes-045.md).
 
 | Operação | Contrato |
 |---|---|

@@ -2,7 +2,7 @@
 
 ## Vigente — 28/10/2026
 
-047 encerrada funcionalmente com criação humana, edição autorizada e recuperação da revisão2; refinamento didático continua pendente. 048 permanece concluída no recorte documentado. Treinos015/016 têm bloqueio editorial explícito: zero programas, instruções, doses ou mídia aprovados para prática. Trabalho independente045 avançou para SQL/HTTP, exportação/exclusão e dump/restore validados em descartável. Go0.8.0/34operações; banco real12/27tabelas, migration13 não ativada e APK0.4.0+22 preservado. Próximo incremento: Flutter de refeições antes de ativação/novo APK/aceite humano. Sem hospedagem, compra ou dados inventados. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) detalham dependências e lacunas.
+047 encerrada funcionalmente com criação humana, edição autorizada e recuperação da revisão2; refinamento didático continua pendente. 048 permanece concluída no recorte documentado. Treinos015/016 têm bloqueio editorial explícito: zero programas, instruções, doses ou mídia aprovados para prática. Trabalho independente045 tem SQL/HTTP, cliente Flutter e leitura Android integrados: Go0.8.0/34operações, schema13/30tabelas e APK0.4.1+23 instalado. A ativação preservou os dados anteriores; o consumo real ficou sem agrupamento. Faltam aceite humano de nova refeição, seleção particular no grupo, edição de metadados na UI e foto042; outbox026 tem gate próprio. Sem hospedagem, compra ou dados inventados. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) detalham dependências e lacunas.
 
 ## Registro macro anterior — 25/10/2026
 

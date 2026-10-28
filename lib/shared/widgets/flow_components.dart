@@ -55,7 +55,7 @@ class FlowSectionTitle extends StatelessWidget {
 
 class FlowRecord extends StatelessWidget {
   final String title, subtitle;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   const FlowRecord({
     super.key,
     required this.title,
@@ -68,6 +68,7 @@ class FlowRecord extends StatelessWidget {
     child: MergeSemantics(
       child: Semantics(
         button: true,
+        enabled: onTap != null,
         child: Material(
           color: context.tf.surface,
           borderRadius: BorderRadius.circular(22),

@@ -1,5 +1,10 @@
 # Graphify — cobertura e atualização
 
+## Atualização28/10 — cliente de refeições045
+
+113arquivosDart;4166nós/4863arestas. Passagem principal:27alterados/86inalterados/0removidos; ajuste final de data:3alterados/110inalterados. ASTincremental code-only e HTMLexportado, semLLM/semântica/clusterização; custoLLM0tokens.5ARB não interpretados. Backups exatos em.local/graphify-backup-20261028-meals/before,automatic eautomatic-final. Go/SQL permanecem nos contratos/Swagger/mapas. [Implementação e limites](execucao/v1/refeicoes-045.md).
+
+
 ## Atualização27/10 — configuração privada047
 
 107arquivosDart;3873nós/4476arestas.17arquivos alterados/novos,90inalterados e0removidos. ASTincremental code-only e HTMLexportado, semLLM/extração semântica/clusterização.5ARBnão interpretados. Backup em.local/graphify-backup-20261027-training-config/before e automático emautomatic, fora doGit. Go/SQL descritos emSwagger e mapas; grafo não comprova persistência nem aceite humano. [Configuração e limites](execucao/v1/configuracao-treino-047.md).

@@ -1896,4 +1896,119 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get configEntryHint =>
       'En tu cuenta, abre Configuración de entrenamiento. También está en Planes, en Crear mi plan. Revisa lugares, contexto, equipamiento y disponibilidad antes de confirmar.';
+
+  @override
+  String get mealDiary => 'Comidas y alimentos';
+
+  @override
+  String get byMeal => 'Por comida';
+
+  @override
+  String get byFood => 'Por alimento';
+
+  @override
+  String get recordMeal => 'Registrar comida';
+
+  @override
+  String get mealTitle => 'Nombre de la comida (opcional)';
+
+  @override
+  String get prepareMealItem => 'Preparar un alimento';
+
+  @override
+  String get addMealItem => 'Añadir alimento a la comida';
+
+  @override
+  String get mealDraftNotice =>
+      'Los alimentos quedan en este borrador hasta revisar y confirmar toda la comida. Aún no se ha registrado nada.';
+
+  @override
+  String get mealReviewConfirmation =>
+      'He revisado los alimentos, cantidades y horarios de esta comida.';
+
+  @override
+  String get confirmMeal => 'Confirmar comida';
+
+  @override
+  String get mealSaved => 'Comida confirmada';
+
+  @override
+  String get mealNoItems => 'Esta comida aún no contiene alimentos.';
+
+  @override
+  String get ungroupedIntakes => 'Registros sin comida indicada';
+
+  @override
+  String get mealMetadataOnly =>
+      'El horario de la comida organiza el grupo. No cambia el horario ni la cantidad de cada alimento.';
+
+  @override
+  String get correctMeal => 'Corregir nombre u horario de la comida';
+
+  @override
+  String get deleteMeal => 'Eliminar toda la comida';
+
+  @override
+  String get deleteMealConfirm =>
+      'Esto elimina la comida y todos sus consumos activos. Para eliminar solo un alimento, ábralo por separado.';
+
+  @override
+  String get mealDeleted => 'Comida eliminada';
+
+  @override
+  String get mealConflictNotice =>
+      'Revise el historial antes de registrar de nuevo. La comida puede haberse confirmado o modificado; este borrador no se reenviará como un registro nuevo.';
+
+  @override
+  String get mealItemPending => 'Borrador — aún no registrado';
+
+  @override
+  String get mealDraftLimit => 'Puede registrar hasta 32 alimentos a la vez.';
+
+  @override
+  String get removeMealItem => 'Quitar alimento del borrador';
+
+  @override
+  String get mealUnnamed => 'Comida sin nombre';
+
+  @override
+  String get viewMeals => 'Ver por comida o alimento';
+
+  @override
+  String get mealDayScope =>
+      'Cambie la vista de los mismos registros confirmados. El horario de cada alimento determina el día en que aparece.';
+
+  @override
+  String get mealEmptyGroup => 'Esta comida ya no tiene alimentos activos.';
+
+  @override
+  String mealItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos',
+      one: '1 alimento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String mealOtherItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos de esta comida están fuera de esta selección.',
+      one: '1 alimento de esta comida está fuera de esta selección.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get privacySectionMeals => 'Comidas';
+
+  @override
+  String get privacySectionMealItems => 'Alimentos vinculados a comidas';
+
+  @override
+  String get privacySectionMealVersions => 'Revisiones de comidas';
 }

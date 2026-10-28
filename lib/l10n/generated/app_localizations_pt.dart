@@ -1889,6 +1889,122 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get configEntryHint =>
       'Na tua conta, abre Configuração de treino. Também está em Planos, em Criar o meu plano. Revê locais, contexto, recursos e disponibilidade antes de confirmar.';
+
+  @override
+  String get mealDiary => 'Refeições e alimentos';
+
+  @override
+  String get byMeal => 'Por refeição';
+
+  @override
+  String get byFood => 'Por alimento';
+
+  @override
+  String get recordMeal => 'Registrar refeição';
+
+  @override
+  String get mealTitle => 'Nome da refeição (opcional)';
+
+  @override
+  String get prepareMealItem => 'Preparar item da refeição';
+
+  @override
+  String get addMealItem => 'Adicionar alimento à refeição';
+
+  @override
+  String get mealDraftNotice =>
+      'Os alimentos ficam neste rascunho até você conferir e confirmar a refeição inteira. Nada foi registrado ainda.';
+
+  @override
+  String get mealReviewConfirmation =>
+      'Conferi os alimentos, quantidades e horários desta refeição.';
+
+  @override
+  String get confirmMeal => 'Confirmar refeição';
+
+  @override
+  String get mealSaved => 'Refeição confirmada';
+
+  @override
+  String get mealNoItems => 'Ainda não há alimentos nesta refeição.';
+
+  @override
+  String get ungroupedIntakes => 'Registros sem refeição informada';
+
+  @override
+  String get mealMetadataOnly =>
+      'O horário da refeição organiza o grupo. Ele não altera os horários ou quantidades de cada alimento.';
+
+  @override
+  String get correctMeal => 'Corrigir nome ou horário da refeição';
+
+  @override
+  String get deleteMeal => 'Excluir refeição inteira';
+
+  @override
+  String get deleteMealConfirm =>
+      'Isso exclui a refeição e todos os consumos ainda ativos vinculados a ela. Para excluir só um alimento, abra o alimento.';
+
+  @override
+  String get mealDeleted => 'Refeição excluída';
+
+  @override
+  String get mealConflictNotice =>
+      'Confira o histórico antes de registrar novamente. A refeição pode ter sido confirmada ou alterada; este rascunho não será reenviado como um novo registro.';
+
+  @override
+  String get mealItemPending => 'Rascunho — ainda não registrado';
+
+  @override
+  String get mealDraftLimit =>
+      'Você pode registrar até 32 alimentos de uma vez.';
+
+  @override
+  String get removeMealItem => 'Remover alimento do rascunho';
+
+  @override
+  String get mealUnnamed => 'Refeição sem nome';
+
+  @override
+  String get viewMeals => 'Ver por refeição ou alimento';
+
+  @override
+  String get mealDayScope =>
+      'Alterne a visualização dos mesmos registros confirmados. Os horários de cada alimento determinam em qual dia ele aparece.';
+
+  @override
+  String get mealEmptyGroup => 'Esta refeição não tem mais alimentos ativos.';
+
+  @override
+  String mealItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos',
+      one: '1 alimento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String mealOtherItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos desta refeição estão fora deste recorte.',
+      one: '1 alimento desta refeição está fora deste recorte.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get privacySectionMeals => 'Refeições';
+
+  @override
+  String get privacySectionMealItems => 'Alimentos vinculados às refeições';
+
+  @override
+  String get privacySectionMealVersions => 'Revisões das refeições';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -3776,6 +3892,122 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get configEntryHint =>
       'Na sua conta, abra Configuração de treino. Também está em Planos, em Criar meu plano. Revise locais, contexto, recursos e disponibilidade antes de confirmar.';
+
+  @override
+  String get mealDiary => 'Refeições e alimentos';
+
+  @override
+  String get byMeal => 'Por refeição';
+
+  @override
+  String get byFood => 'Por alimento';
+
+  @override
+  String get recordMeal => 'Registrar refeição';
+
+  @override
+  String get mealTitle => 'Nome da refeição (opcional)';
+
+  @override
+  String get prepareMealItem => 'Preparar item da refeição';
+
+  @override
+  String get addMealItem => 'Adicionar alimento à refeição';
+
+  @override
+  String get mealDraftNotice =>
+      'Os alimentos ficam neste rascunho até você conferir e confirmar a refeição inteira. Nada foi registrado ainda.';
+
+  @override
+  String get mealReviewConfirmation =>
+      'Conferi os alimentos, quantidades e horários desta refeição.';
+
+  @override
+  String get confirmMeal => 'Confirmar refeição';
+
+  @override
+  String get mealSaved => 'Refeição confirmada';
+
+  @override
+  String get mealNoItems => 'Ainda não há alimentos nesta refeição.';
+
+  @override
+  String get ungroupedIntakes => 'Registros sem refeição informada';
+
+  @override
+  String get mealMetadataOnly =>
+      'O horário da refeição organiza o grupo. Ele não altera os horários ou quantidades de cada alimento.';
+
+  @override
+  String get correctMeal => 'Corrigir nome ou horário da refeição';
+
+  @override
+  String get deleteMeal => 'Excluir refeição inteira';
+
+  @override
+  String get deleteMealConfirm =>
+      'Isso exclui a refeição e todos os consumos ainda ativos vinculados a ela. Para excluir só um alimento, abra o alimento.';
+
+  @override
+  String get mealDeleted => 'Refeição excluída';
+
+  @override
+  String get mealConflictNotice =>
+      'Confira o histórico antes de registrar novamente. A refeição pode ter sido confirmada ou alterada; este rascunho não será reenviado como um novo registro.';
+
+  @override
+  String get mealItemPending => 'Rascunho — ainda não registrado';
+
+  @override
+  String get mealDraftLimit =>
+      'Você pode registrar até 32 alimentos de uma vez.';
+
+  @override
+  String get removeMealItem => 'Remover alimento do rascunho';
+
+  @override
+  String get mealUnnamed => 'Refeição sem nome';
+
+  @override
+  String get viewMeals => 'Ver por refeição ou alimento';
+
+  @override
+  String get mealDayScope =>
+      'Alterne a visualização dos mesmos registros confirmados. Os horários de cada alimento determinam em qual dia ele aparece.';
+
+  @override
+  String get mealEmptyGroup => 'Esta refeição não tem mais alimentos ativos.';
+
+  @override
+  String mealItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos',
+      one: '1 alimento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String mealOtherItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos desta refeição estão fora deste recorte.',
+      one: '1 alimento desta refeição está fora deste recorte.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get privacySectionMeals => 'Refeições';
+
+  @override
+  String get privacySectionMealItems => 'Alimentos vinculados às refeições';
+
+  @override
+  String get privacySectionMealVersions => 'Revisões das refeições';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -5665,4 +5897,119 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   @override
   String get configEntryHint =>
       'Na tua conta, abre Configuração de treino. Também está em Planos, em Criar o meu plano. Revê locais, contexto, recursos e disponibilidade antes de confirmar.';
+
+  @override
+  String get mealDiary => 'Refeições e alimentos';
+
+  @override
+  String get byMeal => 'Por refeição';
+
+  @override
+  String get byFood => 'Por alimento';
+
+  @override
+  String get recordMeal => 'Registar refeição';
+
+  @override
+  String get mealTitle => 'Nome da refeição (opcional)';
+
+  @override
+  String get prepareMealItem => 'Preparar alimento da refeição';
+
+  @override
+  String get addMealItem => 'Adicionar alimento à refeição';
+
+  @override
+  String get mealDraftNotice =>
+      'Os alimentos ficam neste rascunho até rever e confirmar a refeição inteira. Ainda não foi registado nada.';
+
+  @override
+  String get mealReviewConfirmation =>
+      'Revi os alimentos, quantidades e horários desta refeição.';
+
+  @override
+  String get confirmMeal => 'Confirmar refeição';
+
+  @override
+  String get mealSaved => 'Refeição confirmada';
+
+  @override
+  String get mealNoItems => 'Ainda não há alimentos nesta refeição.';
+
+  @override
+  String get ungroupedIntakes => 'Registos sem refeição indicada';
+
+  @override
+  String get mealMetadataOnly =>
+      'O horário da refeição organiza o grupo. Não altera os horários ou quantidades de cada alimento.';
+
+  @override
+  String get correctMeal => 'Corrigir nome ou horário da refeição';
+
+  @override
+  String get deleteMeal => 'Eliminar refeição inteira';
+
+  @override
+  String get deleteMealConfirm =>
+      'Isto elimina a refeição e todos os consumos ainda ativos associados. Para eliminar apenas um alimento, abra esse alimento.';
+
+  @override
+  String get mealDeleted => 'Refeição eliminada';
+
+  @override
+  String get mealConflictNotice =>
+      'Consulte o histórico antes de registar novamente. A refeição pode ter sido confirmada ou alterada; este rascunho não será reenviado como um novo registo.';
+
+  @override
+  String get mealItemPending => 'Rascunho — ainda não registado';
+
+  @override
+  String get mealDraftLimit => 'Pode registar até 32 alimentos de uma vez.';
+
+  @override
+  String get removeMealItem => 'Remover alimento do rascunho';
+
+  @override
+  String get mealUnnamed => 'Refeição sem nome';
+
+  @override
+  String get viewMeals => 'Ver por refeição ou alimento';
+
+  @override
+  String get mealDayScope =>
+      'Alterne a visualização dos mesmos registos confirmados. Os horários de cada alimento determinam em que dia aparece.';
+
+  @override
+  String get mealEmptyGroup => 'Esta refeição já não tem alimentos ativos.';
+
+  @override
+  String mealItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos',
+      one: '1 alimento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String mealOtherItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alimentos desta refeição estão fora deste recorte.',
+      one: '1 alimento desta refeição está fora deste recorte.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get privacySectionMeals => 'Refeições';
+
+  @override
+  String get privacySectionMealItems => 'Alimentos associados às refeições';
+
+  @override
+  String get privacySectionMealVersions => 'Revisões das refeições';
 }
