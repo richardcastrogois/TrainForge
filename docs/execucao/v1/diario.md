@@ -452,3 +452,13 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Entrada/rolagem Windows foi inconsistente; seletor visual aplicou a correção eAndroidUIAutomator confirmou a recuperação final. Não atribuir essa limitação à rolagem do aplicativo semevidência.
 -047done somente no recorte funcional de configuração privada. [Critérios/evidências](training-configuration-047-fechamento.json). Usabilidade/fidelidade completa não foram aprovadas: clareza fuso/hora/navegação segue nafonte frontend, para depois dos testes conforme pedido.
 - Próxima015pelasdependências;045independente continua doing. API0.7.0/schema12/APK22mantidos. Só documentação/recibos alterados; repetir apenas checks documentais.
+
+
+## 28/10/2026 — refeições045 com persistência, HTTP e ciclo privado
+
+- Migration13 cria grupo/vínculos/revisões sem backfill; testada em descartável, não aplicada ao banco real. FK composta de titular, um vínculo por consumo, runtime SELECT/EXECUTE restrito.
+- MealStore cria grupo e novos consumos atomicamente, reaproveitando source-rational-v1; diário por referência e detalhe, metadados versionados e exclusão integral. Correções/exclusões de item mantêm os demais; replay tardio não recria dados.
+- Cinco rotas HTTP e Swagger Go0.8.0/34operações. Parser estrito, revalidação de sessão/conta, revisão e idempotência. Nomes nos quatro idiomas em até dois lotes no mesmo snapshot editorial.
+- SQL/HTTP isolado aprovado: duas contas, segundo item inválido com rollback, concorrência/replay, dias distintos/limite/legado, edição/exclusão, exportação e dump/restore. Ledger reaplicado duas vezes; outra conta preservada. Go test ./... e vet passaram; skips de outros SQL não contam como ensaios executados.
+- Banco real manteve schema12/27tabelas; comparação dos hashes de linhas reais aprovada. APK22 preservado. Nenhuma refeição, conta, consumo ou foto real criada/excluída. Cliente Flutter/ativação/aceite e foto042 continuam pendentes;045doing.
+- Leitura local confirmou zero programas/prática; importador atual só aceita metadados de consulta.015/016 mantêm bloqueio editorial e não foram concluídas. [Recibo](meal-grouping-sql-verification.json), [próximo incremento](refeicoes-045.md).

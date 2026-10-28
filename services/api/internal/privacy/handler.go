@@ -171,7 +171,7 @@ func (h *Handler) Policy(w http.ResponseWriter, r *http.Request) {
 // @Tags privacy
 // @Security BearerAuth
 // @Produce json
-// @Param section query string false "Owned data section" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations)
+// @Param section query string false "Owned data section" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations,meals,mealItems,mealVersions)
 // @Param limit query int false "Maximum page size" minimum(1) maximum(50) default(20)
 // @Param cursor query string false "Opaque cursor bound to user, section and limit"
 // @Success 200 {object} ExportPage

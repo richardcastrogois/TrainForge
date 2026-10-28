@@ -1,10 +1,23 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.7.0 / 29 operações**, Flutter integrado e schema12/27tabelas. A configuração047 foi implementada; aceite humano ainda pendente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.8.0 / 34 operações**, schema12/27tabelas local e migration13 testada em descartável. Flutter de refeições ainda pendente; configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
-## Refeições045 — modelo interno, sem contrato HTTP ativo
+## Refeições045 — contrato SQL/HTTP, cliente pendente
 
-A fundação de leitura reúne IDs deconsumo por vínculos explícitos e reutiliza totals020. Não há nova rota, DTOHTTP ou tabela anunciada noSwagger. Persistência, comandos atômicos, revisões/exclusão, privacidade e Flutter ainda pendentes. [Escopo e evidência](../execucao/v1/refeicoes-045.md); fixtures não são refeição criada na conta.
+Go0.8.0 acrescenta cinco operações privadas. Requerem migration13, validada somente em descartável; o banco real permanece no schema12 e responde indisponibilidade para essas novas rotas. [Semântica e evidências](../execucao/v1/refeicoes-045.md).
+
+| Operação | Contrato |
+|---|---|
+| POST /api/v1/me/meals | title opcional0–80, occurredAt/timezone, reviewed:true, items1–32 EntryInput completos com revisão0. Confirma grupo e novos consumos atomicamente; não aceita IDs antigos para vínculo implícito |
+| GET /api/v1/me/meal-diary | date/timezone obrigatórios, locale opcional. Diary contém entries únicos, grupos por entryIds, ungroupedEntryIds, totais e complete. Limite100 e otherActiveItems tornam o recorte explícito |
+| GET /api/v1/me/meals/{id} | Metadados e itens originais do titular, incluindo tombstones; conta alheia404. locale opcional afeta somente foodDisplay |
+| PATCH mesmo caminho | revision esperada, reviewed:true, title/occurredAt/timezone. Corrige metadados sem mudar tempos ou quantidades individuais; nova versão de grupo |
+| DELETE mesmo caminho | revision esperada e reviewed:true. Exclui grupo e seus consumos ativos atomicamente, preservando tombstones/revisões |
+| Escrita e erro | Bearer, titular da sessão e revalidaçãoSQL; chaveUUID estável, resposta idempotente24h, corpo estritoUTF8 até64KiB, datas com precisão de microssegundos. Erros existentes400/401/404/409/413/415/429/503; no-store |
+| Reenvio após correção/exclusão | Confere o resultado atual contra a resposta salva; conflito em vez de reapresentar uma refeição antiga ou recriar consumos |
+| Privacidade | meals/mealItems/mealVersions na exportação; exclusão confirmada/restore limpa os três conjuntos. Antes da13, seções novas vazias, sem quebrar o ciclo existente |
+
+Revisão de metadados não substitui revisão do consumo. Remover um item preserva os demais e o grupo; imagem e fila offline ainda dependem042/026. Não considerar fixtures como refeição humana ou concluir045 somente com esses endpoints.
 
 ## Configuração privada047 — 27/10/2026
 

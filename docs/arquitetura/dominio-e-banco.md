@@ -38,9 +38,22 @@ erDiagram
     }
 ```
 
-## Agrupamento de refeições045 — fundação, sem novas tabelas
+## Agrupamento de refeições045 — migration13 testada, sem ativação real
 
-O modelo de leitura emnutrition/meals.go faz ambas as visões apontarem aos mesmos IDs deFoodEntry e preserva os registros antigos semagrupamento. Não mudafood_entries,calculation ou o consumo real. [Semântica de recorte e próxima persistência](../execucao/v1/refeicoes-045.md). Tabelas de grupos/vínculos/versões, integridade de titular, escrita atômica e ciclo deprivacidade ainda serão implementados; nenhuma migration13 foi criada/aplicada.
+meals guarda metadados atuais e tombstone do grupo; meal_items referencia os mesmos food_entries por chave composta do titular, com um vínculo por consumo e posição no grupo; meal_versions conserva revisões de metadados e lista de identidades, sem copiar nutrientes. Não há backfill de consumos antigos. [Contrato e limites](../execucao/v1/refeicoes-045.md).
+
+Criar grupo e novos consumos, cálculo e replay usa uma transação. Correção/exclusão individual permanece em food_entries; metadados têm revisão independente. Excluir o grupo desativa seus itens restantes; excluir conta remove todos os grupos e revisões. Runtime só recebe SELECT/EXECUTE para as tabelas novas. Exportação/ledger/restore foram testados antes da ativação. Schema real12/27tabelas preservado; schema13/30tabelas somente nos testes descartáveis.
+
+```mermaid
+erDiagram
+    users ||--o{ meals : titular
+    users ||--o{ food_entries : titular
+    meals ||--o{ meal_items : agrupa
+    food_entries ||--o| meal_items : identidade_unica
+    meals ||--|{ meal_versions : metadados_versionados
+```
+
+As duas visões do diário e seus subtotais leem os mesmos consumos, sem duplicar registros. Itens fora do dia ou limite ficam indicados. Refeição sem itens ativos permanece no detalhe e não cria um consumo fictício no dia. Foto/armazenamento042 e cliente Flutter ainda pendentes.
 
 ## Dose e unidades
 

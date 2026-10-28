@@ -6,7 +6,7 @@ Este é o roteiro humano principal para acompanhar o que existe, o que falta e q
 
 **047encerrada no recorte funcional local**: criação/revisão/confirmacão humanas, edição posterior expressamente autorizada e recuperação da revisão2 conferidas. R1/data, demais campos e hashes deconta/consumo/catálogo preservados; semterceiraversão. [Fechamento por critério](training-configuration-047-fechamento.json), [evidência real](training-configuration-human-verification.json). UXfuso/hora/navegação continua pendente para depois dos testes, conforme pedido; isso não é aceite de usabilidade integral. Próxima015pelasdependências; zero conteúdo aprovado mantém o gate de prática.
 
-045doing em trabalho independente iniciado durante o aceite047: [fundação de leitura por refeição](refeicoes-045.md) implementada/testada, semduplicar registros ouinferir agrupamento do legado. Escrita atômica/migration/privacidade/HTTP/Flutter/aceite ainda pendentes. Não confundir essas duas visões internas com tela já disponível.
+**045doing — 28/10:** [persistência e contrato HTTP](refeicoes-045.md) implementados e validados em descartável, com rollback, ownership, replay, exclusão/exportação e dump/restore. API Go0.8.0/34operações; schema real12/27tabelas e APK22 preservados. Migration13 somente testada. Cliente Flutter, ativação, APK/aceite real e foto continuam pendentes. O bloqueio editorial de015/016 não impede esse trabalho independente e não autoriza concluir treinos.
 
 ## 1. O raciocínio e a expectativa do autor
 

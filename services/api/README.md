@@ -2,6 +2,12 @@
 
 Monólito modular em construção. Consulte [o fechamento da fundação](../../docs/execucao/v1/etapa-02-fechamento.md), [camadas](../../docs/arquitetura/camadas-go.md) e [contrato gerado](../../contracts/generated/swagger-v1.json).
 
+## Estado vigente — 28/10/2026
+
+Go0.8.0 /34 operações. Configuração047 foi validada com dados humanos; refeições045 têm gravação atômica, diário/detalhe, metadados versionados e exclusão integral, com SQL/HTTP e privacidade/restore verificados em bases descartáveis. [Estado, semântica e pendências](../../docs/execucao/v1/refeicoes-045.md). O comando `python tools/verificar_refeicoes_local.py`, na raiz, cria e remove somente bases descartáveis, compara hashes dos dados entregues e preserva o estado do cluster. Fixtures não validam refeição real nem login Google.
+
+O banco local continua no schema12/27tabelas; **migration13 não aplicada**. As cinco rotas novas de refeições exigem essa migration e seus grants. Cliente Flutter, ativação com checkpoint/comparação e aceite real ainda pendentes. Não rodar `migrate_local.py` por inferência para retirar essa pendência. Não há programa, instrução, dose ou mídia liberados para prática. Os parágrafos de versões anteriores abaixo são checkpoints históricos.
+
 Pré-requisitos: Go1.27.3, Python3, Swaggo1.16.6; PostgreSQL17 para desenvolvimento local. Este clone usa uma cópia Go portátil ignorada e os binários PostgreSQL previamente instalados. Clones novos não instalam ferramentas automaticamente.
 
 Na raiz do repositório:

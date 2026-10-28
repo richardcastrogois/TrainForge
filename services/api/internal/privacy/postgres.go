@@ -28,6 +28,9 @@ var columns = map[string]string{
 	"food_entries":                    "id user_id food_id food_sha quantity unit occurred_at timezone calculation deleted_at created_at",
 	"account_deletion_intents":        "token_hash user_id family_id expires_at created_at",
 	"training_configuration_versions": "user_id revision configuration confirmed_at",
+	"meals":                           "id user_id title occurred_at timezone revision deleted_at created_at",
+	"meal_items":                      "entry_id user_id meal_id position",
+	"meal_versions":                   "meal_id user_id revision title occurred_at timezone entry_ids deleted confirmed_at",
 	"account_erasures":                "user_id erased_at",
 }
 
@@ -65,7 +68,19 @@ func coverage(ctx context.Context, tx pgx.Tx) error {
 	if err != nil {
 		return ErrUnavailable
 	}
+	mealTables := 0
+	for _, table := range []string{"meals", "meal_items", "meal_versions"} {
+		if len(found[table]) > 0 {
+			mealTables++
+		}
+	}
+	if mealTables != 0 && mealTables != 3 {
+		return ErrUnavailable
+	}
 	for table, expected := range columns {
+		if mealTables == 0 && (table == "meals" || table == "meal_items" || table == "meal_versions") {
+			continue
+		}
 		// Schema11 remains usable before the additive configuration migration is activated.
 		if table == "training_configuration_versions" && len(found[table]) == 0 {
 			continue
@@ -115,6 +130,9 @@ func (p Postgres) begin(ctx context.Context, subject auth.Principal, exclusive b
 type section struct{ table, key, owner, projection string }
 
 var sections = map[string]section{
+	"meals":                  {"meals", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'title',v.title,'occurredAt',v.occurred_at,'timezone',v.timezone,'revision',v.revision,'deletedAt',v.deleted_at,'createdAt',v.created_at)`},
+	"mealItems":              {"meal_items", "v.entry_id::text", "v.user_id", `jsonb_build_object('mealId',v.meal_id,'entryId',v.entry_id,'position',v.position)`},
+	"mealVersions":           {"meal_versions", "v.meal_id::text||':'||lpad(v.revision::text,10,'0')", "v.user_id", `jsonb_build_object('mealId',v.meal_id,'revision',v.revision,'title',v.title,'occurredAt',v.occurred_at,'timezone',v.timezone,'entryIds',v.entry_ids,'deleted',v.deleted,'confirmedAt',v.confirmed_at)`},
 	"account":                {"users", "v.id::text", "v.id", `jsonb_build_object('id',v.id,'provider',v.provider,'issuer',v.issuer,'subject',v.subject,'name',v.display_name,'email',v.email,'createdAt',v.created_at)`},
 	"sessions":               {"auth_families", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'createdAt',v.created_at,'revokedAt',v.revoked_at)`},
 	"enrollments":            {"enrollments", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'programId',v.program_id,'programVersion',v.program_sha,'programKind',v.program_kind,'status',v.status,'options',v.options,'createdAt',v.created_at)`},
@@ -137,6 +155,18 @@ func (p Postgres) Export(ctx context.Context, subject auth.Principal, f ExportFi
 		return result, err
 	}
 	defer tx.Rollback(ctx)
+	if f.Section == "meals" || f.Section == "mealItems" || f.Section == "mealVersions" {
+		present, e := hasMeals(ctx, tx)
+		if e != nil {
+			return result, e
+		}
+		if !present {
+			if tx.Commit(ctx) != nil {
+				return result, ErrUnavailable
+			}
+			return result, nil
+		}
+	}
 	if f.Section == "trainingConfigurations" {
 		present, e := hasTrainingConfiguration(ctx, tx)
 		if e != nil {
@@ -223,12 +253,13 @@ func (p Postgres) Intent(ctx context.Context, subject auth.Principal, hash []byt
 	}
 	return expiry, nil
 }
-func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error, configurationCleanup func() error) error {
+func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error, configurationCleanup func() error, mealCleanup func() error) error {
 	commands := []string{
 		"DELETE FROM trainforge_v1.activity_events WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.activity_sessions WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.schedule_occurrences WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.enrollments WHERE user_id=$1",
+		"private_meal_cleanup",
 		"DELETE FROM trainforge_v1.food_entries WHERE user_id=$1",
 		"private_food_cleanup",
 		"private_configuration_cleanup",
@@ -240,6 +271,16 @@ func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error
 		"DELETE FROM trainforge_v1.users WHERE id=$1",
 	}
 	for _, command := range commands {
+		if command == "private_meal_cleanup" {
+			present, err := hasMeals(ctx, tx)
+			if err != nil {
+				return err
+			}
+			if present && mealCleanup() != nil {
+				return ErrUnavailable
+			}
+			continue
+		}
 		if command == "private_configuration_cleanup" {
 			present, err := hasTrainingConfiguration(ctx, tx)
 			if err != nil {
@@ -305,6 +346,9 @@ func (p Postgres) Delete(ctx context.Context, subject auth.Principal, hash []byt
 	}, func() error {
 		_, err := tx.Exec(ctx, "SELECT trainforge_v1.erase_training_configuration($1,$2,$3,$4)", subject.User.ID, subject.FamilyID, subject.AccessHash, hash)
 		return err
+	}, func() error {
+		_, err := tx.Exec(ctx, "SELECT trainforge_v1.erase_meals($1,$2,$3,$4)", subject.User.ID, subject.FamilyID, subject.AccessHash, hash)
+		return err
 	}); err != nil {
 		return result, err
 	}
@@ -320,6 +364,13 @@ func (p Postgres) Delete(ctx context.Context, subject auth.Principal, hash []byt
 func hasTrainingConfiguration(ctx context.Context, tx pgx.Tx) (bool, error) {
 	var present bool
 	if tx.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL").Scan(&present) != nil {
+		return false, ErrUnavailable
+	}
+	return present, nil
+}
+func hasMeals(ctx context.Context, tx pgx.Tx) (bool, error) {
+	var present bool
+	if tx.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.meals') IS NOT NULL").Scan(&present) != nil {
 		return false, ErrUnavailable
 	}
 	return present, nil

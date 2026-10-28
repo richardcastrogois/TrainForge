@@ -1,6 +1,20 @@
 # V1-045 — refeições e alimentos sobre os mesmos registros
 
-Estado em27/10/2026: **doing, fundação de leitura e caso de criação revisada implementados/testados, sem escritorSQL**. Trabalho independente enquanto047aguarda aceite humano; depende de020/021concluídas. Nenhuma migration/rota/tela de refeição foi criada. API0.7.0/29operações, schema12/27tabelas eAPK0.4.0+22 permanecem. O consumo humano existente não foi agrupado ou alterado.
+Estado em **28/10/2026: doing, persistência SQL e contrato HTTP validados em bases descartáveis**. A configuração047 foi encerrada; 045 continua como trabalho independente do bloqueio editorial de treinos015/016. Código Go **0.8.0 / 34 operações**. Migration13 cria três tabelas, mas **não foi aplicada ao banco real**, que permanece no schema12/27tabelas. APK0.4.0+22 preservado. O consumo humano existente não foi agrupado ou alterado. [SQL, HTTP e restore](meal-grouping-sql-verification.json).
+
+## Incremento SQL e HTTP — 28/10
+
+meals_commands.go separa os comandos e sua validação. MealStore em meals_postgres.go implementa as portas de criação e diário, detalhe privado e correção/exclusão de grupo. Reutiliza a transação autenticada e o cálculo source-rational-v1 da020. Grupo e 1–32 consumos novos são confirmados na mesma transação, incluindo resposta idempotente. Falha em qualquer item desfaz tudo. Quantidades numericamente equivalentes conservam seu significado; o contrato de refeição aceita precisão de microssegundos, que é preservada pelo PostgreSQL.
+
+Migration13 acrescenta meals, meal_items e meal_versions, sem backfill de consumos. Cada vínculo tem FK composta de titular, identidade de consumo única e posição no grupo. Runtime só recebe SELECT e funções restritas de confirmação/exclusão, que revalidam a sessão viva e travam o titular; não recebe DML direto nessas tabelas. Metadados de grupo são versionados; os cálculos e as revisões dos consumos continuam independentes.
+
+GET /api/v1/me/meal-diary recebe date/timezone e locale opcional. Retorna até100 consumos, uma única lista de identidades, grupos por referência e registros sem agrupamento. Incompletude e itens da mesma refeição fora do recorte ficam explícitos. Nomes revisados usam até duas consultas em lote no mesmo snapshot editorial, sem mudar cálculo ou mutação. POST /api/v1/me/meals confirma a refeição; GET/PATCH/DELETE /api/v1/me/meals/{id} consultam, corrigem metadados ou excluem o grupo inteiro.
+
+Corrigir metadados não desloca os horários individuais nem muda quantidades. Corrigir/excluir um item usa as rotas existentes e aparece nas duas visões; não apaga os demais itens. Excluir o grupo torna seus consumos restantes inativos na mesma transação. Reenvio de criação depois de alteração/exclusão retorna conflito, sem recriar registros. A retenção idempotente atual é24h; isso ainda não é a outbox durável da026. Uma refeição sem itens ativos preserva seus metadados no detalhe; não aparece no recorte diário baseado em consumos.
+
+Exportação inclui meals/mealItems/mealVersions. Exclusão confirmada da conta remove grupos, vínculos e versões; o gate de restore reaplica o ledger antes de liberar qualquer recuperação. Novas seções retornam vazio antes da migration13, mantendo o banco12 utilizável. Testes descartáveis cobriram duas contas, rollback do segundo item, concorrência/replay, limites/dias diferentes, edição/exclusão de item e grupo, HTTP nos quatro idiomas, rejeições e dump/restore com outra conta preservada. Fixtures não são refeição real nem login Google.
+
+Próximo incremento: cliente Flutter, suas duas visões e rascunho/revisão/reenvio por conta. Depois, ativação local com checkpoint e comparação de dados, APK e aceite humano. Foto042 e exclusão de mídia continuam pendentes; nenhuma foto foi enviada ou adicionada por esta implementação.
 
 ## Decisões que governam a implementação
 
@@ -21,7 +35,7 @@ O grupo não é prescrição, receita, prova de consumo ou cópia dos nutrientes
 | Complete | Limite atual100consumos, alinhado ao resumo existente. Snapshot incompleto não exibe totais nutricionais como completos; não transforma ausência emzero |
 | Dia e fuso | As duas visões selecionam pelo occurredAt de cada consumo e o fuso consultado, com limites semiabertos/DST da020. Horário da refeição é metadado; uma refeição pode atravessar meia-noite |
 
-meals.go aplica invariantes, ordena por data/ID e monta projeção independente do snapshot de origem. Preserva nomes/unidades/quantidades/fracões/desconhecidos. meals_service.go recebe ator autenticado fora de dados de cliente, valida formato/contexto/cancelamento e delega à portaMealDayRepository; erro interno vira indisponibilidade. **Validação sintática do ator não autentica nem comprova ownershipSQL.** O adaptador precisará revalidar a credencial viva e consultar exclusivamente o titular no mesmo snapshot.
+meals.go aplica invariantes, ordena por data/ID e monta projeção independente do snapshot de origem. Preserva nomes/unidades/quantidades/fracões/desconhecidos. meals_service.go recebe ator autenticado fora de dados de cliente, valida formato/contexto/cancelamento e delega à portaMealDayRepository; erro interno vira indisponibilidade. **Validação sintática do ator não autentica nem comprova ownershipSQL.** O adaptador revalida a credencial viva e consulta exclusivamente o titular na transação protegida pelo lock da conta.
 
 ```mermaid
 flowchart LR
@@ -35,19 +49,19 @@ flowchart LR
     legacy["Sem vínculo informado"] --> ungrouped["Sem agrupamento, sem nome inventado"]
 ```
 
-## Caso de criação revisada — domínio/aplicação, sem persistência
+## Caso de criação revisada — domínio/aplicação
 
 meals_create.go define NewMealCommand e MealCreateService. Title opcional é declaração do titular; OccurredAt/Timezone do grupo são explícitos, reviewed precisa sertrue e items contém1–32EntryInput completos com revisão0.32é limite técnico, não recomendação alimentar. Campos/quantidade/unidade/evidência/versão e tempo por item reutilizam020; itens iguais confirmados não são mesclados automaticamente. Não recebeIDs de consumos antigos para agrupá-los porinferência.
 
-PortaMealCreateRepository deve implementar **todos os itens e grupo na mesma transação**, com sessão viva/titular, versões/cálculos da020 e chave idempotente. Aplicação valida antes de chamar e confere retorno completo, IDs únicos, algoritmo/versão/quantidades/evidência/revisões e tempos equivalentes, sem rótulo inventado. Um adapter comfixture não prova gravação atômica/rollback/ownership: nada foi ligado ao runtime.
+MealCreateRepository é implementado por MealStore: **todos os itens e grupo na mesma transação**, com sessão viva/titular, versões/cálculos da020 e chave idempotente. A aplicação valida antes de chamar e confere retorno completo, IDs únicos, algoritmo, versão, quantidades, evidência, revisões e tempos equivalentes, sem rótulo inventado. O recibo SQL/HTTP acima comprova o adaptador em base descartável; não representa criação real na conta.
 
-## Próxima fatia — ainda não implementada
+## Plano original e situação após o incremento SQL
 
-1. Criar escritorSQL paraMealCreateRepository e fechar comandos de edição/exclusão/vínculo, com revisão/confirmação/chave estável. O caso de criação/aplicação já existe; não refazê-lo. Gravar grupo e itens novos atomicamente; falha não deixa refeição ou consumo parcial. Não implementar gravações sequenciais noFlutter simulando uma transação.
-2. Migrationforward para grupos/vínculos e histórico de alterações, com integridade composta de titular, índices e tombstone. Nenhum agrupamento automático dos registros anteriores. Não alterarfoodId/versão ou sobrescrever snapshot alimentar.
-3. Integrar correção/exclusão de um consumo: mesma transação valida revisão da refeição e mantém os demais itens; replay não incrementa revisão duas vezes. Exclusão de refeição remove seus itens ativos, bloqueia reenvios recriadores e prepara limpeza de imagem042. Sem manter foto acessível como revisão.
-4. Atualizar inventário/exportação/exclusão/restore/ledger e privilégios antes da ativação. SQLisolado: duas contas, concorrência, idempotência, vínculos/revisões, rollback, exclusão e restauração. Não usar dados reais comofixture.
-5. Só então handlers/Swagger e repository/controller/Flutter, duas visões sobre o mesmo estado, com erros/revisão/rascunho/conta e quatro idiomas. Preservar o formulário047em uso no emulador; não publicar endpoint fictício ou atualizarAPK comrascunho aberto.
+1. Escritor atômico de criação, comandos de metadados/exclusão e idempotência implementados e testados. Não agrupar automaticamente o legado nem simular transação com gravações sequenciais no Flutter.
+2. Migration13 criada e validada em descartável; ativação local ainda pendente. Não alterar foodId/versão ou sobrescrever o snapshot alimentar.
+3. Correção/exclusão de consumo aparece no grupo; revisão do consumo é independente da revisão dos metadados. Exclusão do grupo e reenvios tardios testados. Remoção de foto depende da042; não manter foto acessível como revisão.
+4. Inventário/exportação/exclusão/restore e privilégios implementados e testados em descartável. Não usar dados reais como fixture.
+5. Handlers/Swagger implementados; repository/controller/Flutter ainda pendentes. Duas visões devem compartilhar o estado e preservar erros, revisão, rascunho, conta e quatro idiomas. Conferir formulário antes de atualizar o APK.
 6. Aceite real de refeição por seu titular e teste das duas visões semduplicar consumo. Fotos042 e dicas046 têm implementação/validação próprias; esta fundação não as entrega.
 
 [Recibo de testes e limites](meal-grouping-foundation-verification.json). Fixtures do domínio não comprovam persistência, autorizaçãoSQL, refeição criada ou jornada disponível noAPK.

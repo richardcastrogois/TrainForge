@@ -23,8 +23,8 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.7.0
-// @description Google sessions, privacy, reviewed movement and food references, private food declarations and explicitly recorded consumption. No executable training content or prescribed diets.
+// @version 0.8.0
+// @description Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
 // @securityDefinitions.apikey BearerAuth

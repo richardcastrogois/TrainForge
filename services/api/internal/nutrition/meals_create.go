@@ -3,22 +3,24 @@ package nutrition
 import (
 	"context"
 	"errors"
+	"math/big"
 	"time"
 	"trainforge.local/api/internal/auth"
 )
 
 // NewMealCommand creates new intakes together; it never attaches existing legacy
-// entries by inference. The future SQL adapter must write all or none.
+// entries by inference. The SQL adapter must write all or none.
 type NewMealCommand struct {
-	Title      string
-	OccurredAt string
-	Timezone   string
-	Reviewed   bool
-	Items      []EntryInput
+	Title      string       `json:"title"`
+	OccurredAt string       `json:"occurredAt"`
+	Timezone   string       `json:"timezone"`
+	Reviewed   bool         `json:"reviewed"`
+	Items      []EntryInput `json:"items"`
 }
 type ConfirmedMeal struct {
-	Meal    MealMetadata
-	Entries []Entry
+	Meal      MealMetadata `json:"meal"`
+	Entries   []Entry      `json:"entries"`
+	DeletedAt *string      `json:"deletedAt" extensions:"x-nullable"`
 }
 type MealCreateRepository interface {
 	CreateMeal(context.Context, auth.Principal, NewMealCommand, string) (ConfirmedMeal, error)
@@ -34,7 +36,7 @@ func (c NewMealCommand) Validate() error {
 		return ErrFoodQuery
 	}
 	when, e := time.Parse(time.RFC3339, c.OccurredAt)
-	if e != nil || when.Year() < 1900 || when.Year() > 2100 {
+	if e != nil || when.Year() < 1900 || when.Year() > 2100 || when.Nanosecond()%1000 != 0 {
 		return ErrFoodQuery
 	}
 	if _, e = zone(c.Timezone); e != nil {
@@ -42,6 +44,10 @@ func (c NewMealCommand) Validate() error {
 	}
 	for _, item := range c.Items {
 		if item.Revision != 0 || validateEntry(item) != nil {
+			return ErrFoodQuery
+		}
+		when, _ := time.Parse(time.RFC3339, item.OccurredAt)
+		if when.Nanosecond()%1000 != 0 {
 			return ErrFoodQuery
 		}
 	}
@@ -57,19 +63,27 @@ func sameMealTime(a, b string) bool {
 }
 func confirmedMealMatches(saved ConfirmedMeal, command NewMealCommand) bool {
 	meal := saved.Meal
-	if !mealMetadataValid(meal) || meal.Revision != 1 || meal.Title != command.Title || meal.Timezone != command.Timezone || !sameMealTime(meal.OccurredAt, command.OccurredAt) || meal.TotalActiveItems != len(command.Items) || len(saved.Entries) != len(command.Items) {
+	if !mealMetadataValid(meal) || saved.DeletedAt != nil || meal.Revision != 1 || meal.Title != command.Title || meal.Timezone != command.Timezone || !sameMealTime(meal.OccurredAt, command.OccurredAt) || meal.TotalActiveItems != len(command.Items) || len(saved.Entries) != len(command.Items) {
 		return false
 	}
 	seen := map[string]bool{}
 	for i, item := range command.Items {
 		entry := saved.Entries[i]
 		c := entry.Calculation
-		if !uuidPattern.MatchString(entry.ID) || seen[entry.ID] || entry.DeletedAt != nil || entry.FoodID != item.FoodID || entry.FoodVersion != item.FoodVersion || entry.Quantity != item.Quantity || entry.Unit != item.Unit || entry.Timezone != item.Timezone || !sameMealTime(entry.OccurredAt, item.OccurredAt) || c.Algorithm != "source-rational-v1" || len(c.Changes) != 0 || c.Revision != 1 || c.Preparation != item.Preparation || c.QuantityEvidence != item.QuantityEvidence || c.Food.ID != item.FoodID || c.Food.VersionID != item.FoodVersion {
+		if !uuidPattern.MatchString(entry.ID) || seen[entry.ID] || entry.DeletedAt != nil || entry.FoodID != item.FoodID || entry.FoodVersion != item.FoodVersion || !sameMealQuantity(entry.Quantity, item.Quantity) || entry.Unit != item.Unit || entry.Timezone != item.Timezone || !sameMealTime(entry.OccurredAt, item.OccurredAt) || c.Algorithm != "source-rational-v1" || len(c.Changes) != 0 || c.Revision != 1 || c.Preparation != item.Preparation || c.QuantityEvidence != item.QuantityEvidence || c.Food.ID != item.FoodID || c.Food.VersionID != item.FoodVersion {
 			return false
 		}
 		seen[entry.ID] = true
 	}
 	return true
+}
+func sameMealQuantity(a, b string) bool {
+	if !quantity(a, true) || !quantity(b, true) {
+		return false
+	}
+	left, _ := new(big.Rat).SetString(a)
+	right, _ := new(big.Rat).SetString(b)
+	return left.Cmp(right) == 0
 }
 func (s MealCreateService) Create(ctx context.Context, p auth.Principal, command NewMealCommand, key string) (ConfirmedMeal, error) {
 	if e := ctx.Err(); e != nil {
@@ -89,7 +103,7 @@ func (s MealCreateService) Create(ctx context.Context, p auth.Principal, command
 	copyCommand.Items = append([]EntryInput{}, command.Items...)
 	saved, e := s.Repository.CreateMeal(ctx, p, copyCommand, key)
 	if e != nil {
-		if errors.Is(e, auth.ErrInvalid) || errors.Is(e, ErrEntryConflict) || errors.Is(e, ErrFoodQuery) || errors.Is(e, context.Canceled) || errors.Is(e, context.DeadlineExceeded) {
+		if errors.Is(e, auth.ErrInvalid) || errors.Is(e, ErrEntryConflict) || errors.Is(e, ErrFoodQuery) || errors.Is(e, ErrFoodMissing) || errors.Is(e, context.Canceled) || errors.Is(e, context.DeadlineExceeded) {
 			return ConfirmedMeal{}, e
 		}
 		return ConfirmedMeal{}, ErrFoodUnavailable

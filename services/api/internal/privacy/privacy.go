@@ -46,7 +46,7 @@ func CurrentPolicy() Policy {
 		ErasureLedger:      "Mantemos somente um identificador interno da conta e a data da exclusão para impedir que os dados retornem ao recuperar uma cópia de segurança. Esse registro não contém nome, e-mail ou credenciais.",
 		OtherServices:      "A conta Google e dados mantidos pelo Google não são apagados por esta ação.",
 		FutureStorage:      "Esta versão não envia suas fotos. As credenciais da sessão ficam no armazenamento protegido deste aparelho.",
-		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations"},
+		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations", "meals", "mealItems", "mealVersions"},
 		FreshLoginMinutes:  15, IntentMinutes: 5,
 	}
 }

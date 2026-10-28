@@ -16,6 +16,7 @@ import (
 	"time"
 	"trainforge.local/api/internal/auth"
 	"trainforge.local/api/internal/platform/httpapi"
+	"unicode/utf8"
 )
 
 type EntryHandler struct {
@@ -34,6 +35,11 @@ func (h *EntryHandler) Register(m *http.ServeMux) {
 	m.HandleFunc("PATCH /api/v1/me/food-entries/{id}", h.private(h.EditEntry))
 	m.HandleFunc("DELETE /api/v1/me/food-entries/{id}", h.private(h.DeleteEntry))
 	m.HandleFunc("GET /api/v1/me/food-summary", h.private(h.Summary))
+	m.HandleFunc("POST /api/v1/me/meals", h.private(h.CreateMeal))
+	m.HandleFunc("GET /api/v1/me/meal-diary", h.private(h.MealDay))
+	m.HandleFunc("GET /api/v1/me/meals/{id}", h.private(h.Meal))
+	m.HandleFunc("PATCH /api/v1/me/meals/{id}", h.private(h.EditMeal))
+	m.HandleFunc("DELETE /api/v1/me/meals/{id}", h.private(h.DeleteMeal))
 }
 func entryFailure(w http.ResponseWriter, r *http.Request, e error) {
 	status, code := 503, "nutrition_unavailable"
@@ -128,15 +134,22 @@ func uniqueJSON(d *json.Decoder) error {
 	return e
 }
 func entryBody(w http.ResponseWriter, r *http.Request, target any) ([]byte, bool) {
+	return entryBodyLimit(w, r, target, 16<<10)
+}
+func entryBodyLimit(w http.ResponseWriter, r *http.Request, target any, limit int64) ([]byte, bool) {
 	media, _, e := mime.ParseMediaType(r.Header.Get("Content-Type"))
 	if e != nil || media != "application/json" {
 		httpapi.Failure(w, r, 415, "json_required")
 		return nil, false
 	}
-	r.Body = http.MaxBytesReader(w, r.Body, 16<<10)
+	r.Body = http.MaxBytesReader(w, r.Body, limit)
 	raw, e := io.ReadAll(r.Body)
 	if e != nil {
 		httpapi.Failure(w, r, 413, "body_too_large")
+		return nil, false
+	}
+	if !utf8.Valid(raw) {
+		entryFailure(w, r, ErrFoodQuery)
 		return nil, false
 	}
 	d := json.NewDecoder(bytes.NewReader(raw))

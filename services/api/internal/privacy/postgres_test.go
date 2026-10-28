@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -262,6 +263,21 @@ func TestPrivacyRestorePrepareFixture(t *testing.T) {
 	execFixture(t, ctx, w, `INSERT INTO trainforge_v1.food_versions(food_id,version_sha,owner_id,name_original,nutrients,provenance)
  VALUES('restore-private-a',repeat('a',64),$1,'Restore fixture A','[]','{}'),
  ('restore-private-b',repeat('a',64),$2,'Restore fixture B','[]','{}')`, a.User.ID, b.User.ID)
+	var mealsPresent bool
+	if w.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.meals') IS NOT NULL").Scan(&mealsPresent) != nil {
+		t.Fatal("meal schema check")
+	}
+	if mealsPresent {
+		for i, owner := range []string{a.User.ID, b.User.ID} {
+			id := fmt.Sprintf("40000000-0000-4000-8000-%012d", i)
+			food := []string{"restore-private-a", "restore-private-b"}[i]
+			execFixture(t, ctx, w, `INSERT INTO trainforge_v1.food_entries(id,user_id,food_id,food_sha,quantity,unit,occurred_at,timezone,calculation)
+ VALUES($1,$2,$3,repeat('a',64),1,'g',now(),'UTC','{}')`, id, owner, food)
+			execFixture(t, ctx, w, `INSERT INTO trainforge_v1.meals(id,user_id,title,occurred_at,timezone,revision) VALUES($1,$2,'Restore meal fixture',now(),'UTC',1)`, id, owner)
+			execFixture(t, ctx, w, `INSERT INTO trainforge_v1.meal_items(entry_id,user_id,meal_id,position) VALUES($1,$2,$1,0)`, id, owner)
+			execFixture(t, ctx, w, `INSERT INTO trainforge_v1.meal_versions(meal_id,user_id,revision,title,occurred_at,timezone,entry_ids,deleted) VALUES($1,$2,1,'Restore meal fixture',now(),'UTC',ARRAY[$1::uuid],false)`, id, owner)
+		}
+	}
 }
 func TestPrivacyRestoreEraseFixture(t *testing.T) {
 	if os.Getenv("TF_PRIVACY_RESTORE_PHASE") != "erase" {

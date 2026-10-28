@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `9afd7851a3d75a07`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a5c5865162c6d76d`.
 
 ## Referência atual: schema Prisma externo
 
@@ -299,6 +299,9 @@ Declaração SQL não prova aplicação no banco; o resultado runtime está em d
 | food_name_withdrawals | [services/api/migrations/00009_reviewed_food_names.sql:28](../../../services/api/migrations/00009_reviewed_food_names.sql) |
 | food_name_catalogs | [services/api/migrations/00010_food_name_catalog_revision.sql:4](../../../services/api/migrations/00010_food_name_catalog_revision.sql) |
 | training_configuration_versions | [services/api/migrations/00012_training_configuration.sql:67](../../../services/api/migrations/00012_training_configuration.sql) |
+| meals | [services/api/migrations/00013_meal_groups.sql:4](../../../services/api/migrations/00013_meal_groups.sql) |
+| meal_items | [services/api/migrations/00013_meal_groups.sql:16](../../../services/api/migrations/00013_meal_groups.sql) |
+| meal_versions | [services/api/migrations/00013_meal_groups.sql:26](../../../services/api/migrations/00013_meal_groups.sql) |
 
 ## Proposto: responsabilidades do domínio novo
 

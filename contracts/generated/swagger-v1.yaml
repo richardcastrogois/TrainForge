@@ -338,6 +338,38 @@ definitions:
       unit:
         type: string
     type: object
+  nutrition.ConfirmedMeal:
+    properties:
+      deletedAt:
+        type: string
+        x-nullable: true
+      entries:
+        items:
+          $ref: '#/definitions/nutrition.Entry'
+        type: array
+      meal:
+        $ref: '#/definitions/nutrition.MealMetadata'
+    type: object
+  nutrition.DeleteMealCommand:
+    properties:
+      reviewed:
+        type: boolean
+      revision:
+        type: integer
+    type: object
+  nutrition.EditMealCommand:
+    properties:
+      occurredAt:
+        type: string
+      reviewed:
+        type: boolean
+      revision:
+        type: integer
+      timezone:
+        type: string
+      title:
+        type: string
+    type: object
   nutrition.Entry:
     properties:
       calculation:
@@ -546,6 +578,79 @@ definitions:
       sourcePublishedVersion:
         type: string
       versionId:
+        type: string
+    type: object
+  nutrition.MealDayResponse:
+    properties:
+      date:
+        type: string
+      diary:
+        $ref: '#/definitions/nutrition.MealDiary'
+      nameCatalog:
+        $ref: '#/definitions/nutrition.FoodNameCatalog'
+      timezone:
+        type: string
+    type: object
+  nutrition.MealDiary:
+    properties:
+      complete:
+        type: boolean
+      entries:
+        items:
+          $ref: '#/definitions/nutrition.Entry'
+        type: array
+      meals:
+        items:
+          $ref: '#/definitions/nutrition.MealGroup'
+        type: array
+      totals:
+        $ref: '#/definitions/nutrition.NutritionTotals'
+      ungroupedEntryIds:
+        items:
+          type: string
+        type: array
+    type: object
+  nutrition.MealGroup:
+    properties:
+      entryIds:
+        items:
+          type: string
+        type: array
+      meal:
+        $ref: '#/definitions/nutrition.MealMetadata'
+      otherActiveItems:
+        type: integer
+      totals:
+        $ref: '#/definitions/nutrition.NutritionTotals'
+    type: object
+  nutrition.MealMetadata:
+    properties:
+      id:
+        type: string
+      occurredAt:
+        type: string
+      revision:
+        type: integer
+      timezone:
+        type: string
+      title:
+        type: string
+      totalActiveItems:
+        type: integer
+    type: object
+  nutrition.NewMealCommand:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/nutrition.EntryInput'
+        type: array
+      occurredAt:
+        type: string
+      reviewed:
+        type: boolean
+      timezone:
+        type: string
+      title:
         type: string
     type: object
   nutrition.NutrientTotal:
@@ -853,10 +958,10 @@ definitions:
 info:
   contact: {}
   description: Google sessions, privacy, reviewed movement and food references, private
-    food declarations and explicitly recorded consumption. No executable training
-    content or prescribed diets.
+    food declarations, explicitly recorded consumption and atomic meal grouping. Meal
+    routes require schema13. No executable training content or prescribed diets.
   title: TrainForge API
-  version: 0.7.0
+  version: 0.8.0
 paths:
   /api/v1/auth/google:
     post:
@@ -1548,6 +1653,9 @@ paths:
         - foods
         - foodEntries
         - trainingConfigurations
+        - meals
+        - mealItems
+        - mealVersions
         in: query
         name: section
         type: string
@@ -2031,6 +2139,292 @@ paths:
       summary: Create own food declaration
       tags:
       - nutrition
+  /api/v1/me/meal-diary:
+    get:
+      parameters:
+      - description: YYYY-MM-DD
+        in: query
+        name: date
+        required: true
+        type: string
+      - description: UTC, IANA or offset; no server timezone default
+        in: query
+        name: timezone
+        required: true
+        type: string
+      - description: pt-BR,pt-PT,en,es; optional reviewed display names
+        in: query
+        name: locale
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.MealDayResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Read own meal/food diary for one day and timezone
+      tags:
+      - meals
+  /api/v1/me/meals:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: UUID stable across retries; 24-hour retention
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: reviewed=true; quantities/versions/times per item; max64KiB;
+          microsecond timestamp precision
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.NewMealCommand'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/nutrition.ConfirmedMeal'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Record one reviewed meal with 1..32 explicit new consumption items
+      tags:
+      - meals
+  /api/v1/me/meals/{id}:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: Meal UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Stable retry UUID
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Expected grouping revision and reviewed=true
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.DeleteMealCommand'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.ConfirmedMeal'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Delete own whole meal and its remaining intakes
+      tags:
+      - meals
+    get:
+      parameters:
+      - description: Meal UUID; another owner returns404
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: pt-BR,pt-PT,en,es; display only
+        in: query
+        name: locale
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.ConfirmedMeal'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Read own meal and intake revisions
+      tags:
+      - meals
+    patch:
+      consumes:
+      - application/json
+      parameters:
+      - description: Meal UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Stable retry UUID
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Expected grouping revision and reviewed=true
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.EditMealCommand'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.ConfirmedMeal'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Correct own meal title/time without rewriting the intakes
+      tags:
+      - meals
   /api/v1/me/training-configuration:
     get:
       produces:

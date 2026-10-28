@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-015",
@@ -1364,7 +1364,7 @@
             "API de enrollments",
             "Fluxo de seleção humano"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte. 28/10: após047 funcional, conferência local mostrou zero programas/guided_practice e importador restrito a movimentos/catalog_metadata. Adesão e agenda ainda não implementadas; sem conteúdo humano não há aceite real. Continuar045 independente sem converter metadados em prescrição.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
@@ -1972,13 +1972,14 @@
             "Visões por refeição e por alimento",
             "Recibo de integridade/compatibilidade"
           ],
-          "handoff": "27/10:iniciado trabalho independente enquanto047aguarda aceite humano;020/021done. Modelo de leitura e serviço comportaMealDayRepository implementados:Entriesúnicos,gruposporrefsIDs,legacysemagrupamento,subtotaisda020semduplacontagem,limite100/incompletude,fuso/data de cadaitem eordemestável.13testes principais+42subcasos aprovados. CasoCreateMeal/aplicação exige reviewed/1–32itens novos completos,cópia independente do comando e chave idempotente preservada; retorno completo sem alterar identidade/versão/quantidade. Escritor SQL ainda não existe. SemSQL/migration/rotas/Flutter/aceitereal. Próxima fatia:comandos egrupos/vínculos versionados comownership/idempotência/transação,ciclo de correção/exclusão eprivacidade/restore antesdaativação. Preservarconsumoexistente semagrupamentoautomático. API0.7.0/schema12/APK22inalterados.",
+          "handoff": "28/10: persistência e HTTP de refeições implementados e validados em descartável: criação atômica de grupo/consumos, diário/detalhe, correção de metadados, exclusão integral e replay; duas contas, rollback do segundo item, limites/dias distintos, correção/exclusão individual, exportação e dump/restore com ledger e outra conta preservada. DTOs/comandos, aplicação, PostgreSQL e handlers separados. API0.8.0/34; migration13 testada, não ativada. Banco real12/27 e APK22 preservados. Próximo: Flutter com duas visões/rascunho/revisão/retry/conta/idiomas, ativação com checkpoint/comparação, APK e aceite humano. Foto042 e outbox026 pendentes. Não agrupar o consumo real nem concluir045 com fixtures.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
             "docs/execucao/v1/pesquisa-fotos-historico.md",
             "docs/execucao/v1/refeicoes-045.md",
-            "docs/execucao/v1/meal-grouping-foundation-verification.json"
+            "docs/execucao/v1/meal-grouping-foundation-verification.json",
+            "docs/execucao/v1/meal-grouping-sql-verification.json"
           ]
         },
         {
@@ -3647,5 +3648,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10: V1-047 encerrada funcionalmente com criação humana, edição expressamente autorizada e recuperação nativa da revisão 2. Revisão 1 e dados reais preservados. Próxima V1-015 pelas dependências, sem programas, doses ou mídia inventados. Refinamento de fuso, hora e navegação registrado para depois dos testes. V1-045 segue doing: escrita SQL atômica, privacidade, HTTP e Flutter pendentes. Sem hospedagem ou compra."
+  "currentPriority": "28/10: 047 funcional encerrada; 015/016 aguardam conteúdo humano aprovado, sem implementação/aceite de prática. Trabalho independente045 tem SQL/HTTP e ciclo privado/restore validados em descartável. Próximo: cliente Flutter de refeições, depois ativação13/novo APK/aceite real. API0.8.0/34; banco real12/27 e APK22 preservados. Sem hospedagem, compra ou dado inventado."
 }

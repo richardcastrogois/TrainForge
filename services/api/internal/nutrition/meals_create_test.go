@@ -52,19 +52,21 @@ func (r *mealCreateFixture) CreateMeal(_ context.Context, p auth.Principal, c Ne
 }
 func TestMealCreationRequiresReviewedExplicitIntakesBeforeRepository(t *testing.T) {
 	cases := map[string]func(*NewMealCommand){
-		"unreviewed":        func(c *NewMealCommand) { c.Reviewed = false },
-		"empty":             func(c *NewMealCommand) { c.Items = []EntryInput{} },
-		"nil":               func(c *NewMealCommand) { c.Items = nil },
-		"too_many":          func(c *NewMealCommand) { c.Items = make([]EntryInput, maxNewMealItems+1) },
-		"title_controls":    func(c *NewMealCommand) { c.Title = "private\nlabel" },
-		"title_limit":       func(c *NewMealCommand) { c.Title = strings.Repeat("a", 81) },
-		"unknown_zone":      func(c *NewMealCommand) { c.Timezone = "Local" },
-		"unknown_time":      func(c *NewMealCommand) { c.OccurredAt = "" },
-		"existing_revision": func(c *NewMealCommand) { c.Items[0].Revision = 1 },
-		"guessed_quantity":  func(c *NewMealCommand) { c.Items[0].Quantity = "" },
-		"unknown_evidence":  func(c *NewMealCommand) { c.Items[0].QuantityEvidence = "" },
-		"bad_unit":          func(c *NewMealCommand) { c.Items[0].Unit = "portion" },
-		"no_version":        func(c *NewMealCommand) { c.Items[0].FoodVersion = "" },
+		"unreviewed":           func(c *NewMealCommand) { c.Reviewed = false },
+		"empty":                func(c *NewMealCommand) { c.Items = []EntryInput{} },
+		"nil":                  func(c *NewMealCommand) { c.Items = nil },
+		"too_many":             func(c *NewMealCommand) { c.Items = make([]EntryInput, maxNewMealItems+1) },
+		"title_controls":       func(c *NewMealCommand) { c.Title = "private\nlabel" },
+		"title_limit":          func(c *NewMealCommand) { c.Title = strings.Repeat("a", 81) },
+		"unknown_zone":         func(c *NewMealCommand) { c.Timezone = "Local" },
+		"unknown_time":         func(c *NewMealCommand) { c.OccurredAt = "" },
+		"existing_revision":    func(c *NewMealCommand) { c.Items[0].Revision = 1 },
+		"guessed_quantity":     func(c *NewMealCommand) { c.Items[0].Quantity = "" },
+		"unknown_evidence":     func(c *NewMealCommand) { c.Items[0].QuantityEvidence = "" },
+		"bad_unit":             func(c *NewMealCommand) { c.Items[0].Unit = "portion" },
+		"no_version":           func(c *NewMealCommand) { c.Items[0].FoodVersion = "" },
+		"group_submicrosecond": func(c *NewMealCommand) { c.OccurredAt = "2026-10-27T12:00:00.123456789Z" },
+		"item_submicrosecond":  func(c *NewMealCommand) { c.Items[0].OccurredAt = "2026-10-27T12:00:00.123456789Z" },
 	}
 	for name, change := range cases {
 		t.Run(name, func(t *testing.T) {

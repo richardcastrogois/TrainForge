@@ -21,7 +21,7 @@ type EntryNameProjector interface {
 // ProjectEntries resolves a page in one revision snapshot and one batched SQL query.
 // Call after the private transaction ends: a pool with one connection works.
 func (p FoodPostgres) ProjectEntries(ctx context.Context, entries []Entry, locale, expected string) ([]Entry, FoodNameCatalog, error) {
-	if len(entries) > 20 {
+	if len(entries) > maxMealDayEntries {
 		return nil, FoodNameCatalog{}, ErrFoodQuery
 	}
 	tx, catalog, err := p.nameSnapshot(ctx, locale, expected)
@@ -45,9 +45,21 @@ func (p FoodPostgres) ProjectEntries(ctx context.Context, entries []Entry, local
 			seen[target] = true
 		}
 	}
-	names, err := resolveFoodNames(ctx, tx, targets, locale)
-	if err != nil {
-		return nil, catalog, err
+	// Two bounded batches at most, in the same editorial revision snapshot.
+	// The existing public resolver keeps its 50-target input limit.
+	names := map[FoodNameTarget]ReviewedNameDisplay{}
+	for first := 0; first < len(targets); first += 50 {
+		last := first + 50
+		if last > len(targets) {
+			last = len(targets)
+		}
+		batch, e := resolveFoodNames(ctx, tx, targets[first:last], locale)
+		if e != nil {
+			return nil, catalog, e
+		}
+		for target, name := range batch {
+			names[target] = name
+		}
 	}
 	result := append([]Entry{}, entries...)
 	for i := range result {

@@ -1,8 +1,8 @@
 # Caminho da pesquisa ao APK
 
-## Vigente — 27/10/2026
+## Vigente — 28/10/2026
 
-048concluída com [critério/evidência](localization-048-fechamento.json):UI disponível nos quatro idiomas, projeção revisada em histórico/detalhe separada de cálculo e cobertura real0/6369 explícita.197testesFlutter/análise limpa;Go0.6.2/26operações eSQL/HTTPisolados aprovados. APKdebug0.3.8+21 instalado/hash/assinatura conferidos, dados reais preservados. Próxima047 pelas dependências:configuração privada versionada em etapas curtas/revisão antes da seleção. Sem hospedagem, compra ou prática inventada. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) são vigentes.
+047 encerrada funcionalmente com criação humana, edição autorizada e recuperação da revisão2; refinamento didático continua pendente. 048 permanece concluída no recorte documentado. Treinos015/016 têm bloqueio editorial explícito: zero programas, instruções, doses ou mídia aprovados para prática. Trabalho independente045 avançou para SQL/HTTP, exportação/exclusão e dump/restore validados em descartável. Go0.8.0/34operações; banco real12/27tabelas, migration13 não ativada e APK0.4.0+22 preservado. Próximo incremento: Flutter de refeições antes de ativação/novo APK/aceite humano. Sem hospedagem, compra ou dados inventados. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) detalham dependências e lacunas.
 
 ## Registro macro anterior — 25/10/2026
 

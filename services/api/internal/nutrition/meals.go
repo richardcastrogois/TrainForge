@@ -9,17 +9,17 @@ import (
 // MealMetadata is a user-declared grouping, not a nutritional prescription.
 // TotalActiveItems includes members outside the selected day. A meal may cross midnight.
 type MealMetadata struct {
-	ID               string
-	Title            string
-	OccurredAt       string
-	Timezone         string
-	Revision         int
-	TotalActiveItems int
+	ID               string `json:"id"`
+	Title            string `json:"title"`
+	OccurredAt       string `json:"occurredAt"`
+	Timezone         string `json:"timezone"`
+	Revision         int    `json:"revision"`
+	TotalActiveItems int    `json:"totalActiveItems"`
 }
 type MealMembership struct{ EntryID, MealID string }
 
 // MealDaySource must come from one authorized database snapshot. No SQL adapter
-// is installed yet. Memberships cover exactly the entries returned for the day.
+// is allowed to mix accounts or query instants. Memberships cover the returned day entries.
 type MealDaySource struct {
 	Entries     []Entry
 	Meals       []MealMetadata
@@ -27,26 +27,26 @@ type MealDaySource struct {
 	Complete    bool
 }
 type MealGroup struct {
-	Meal             MealMetadata
-	EntryIDs         []string
-	OtherActiveItems int
-	Totals           NutritionTotals
+	Meal             MealMetadata    `json:"meal"`
+	EntryIDs         []string        `json:"entryIds"`
+	OtherActiveItems int             `json:"otherActiveItems"`
+	Totals           NutritionTotals `json:"totals"`
 }
 
 // Entries are emitted once. Both UI views reference these IDs, so switching view
 // cannot create a second intake or add its nutrients twice.
 type MealDiary struct {
-	Entries           []Entry
-	Meals             []MealGroup
-	UngroupedEntryIDs []string
-	Totals            NutritionTotals
-	Complete          bool
+	Entries           []Entry         `json:"entries"`
+	Meals             []MealGroup     `json:"meals"`
+	UngroupedEntryIDs []string        `json:"ungroupedEntryIds"`
+	Totals            NutritionTotals `json:"totals"`
+	Complete          bool            `json:"complete"`
 }
 
 const maxMealDayEntries = 100 // Matches the current bounded daily summary.
 
 func mealMetadataValid(v MealMetadata) bool {
-	if !uuidPattern.MatchString(v.ID) || !textValid(v.Title, 0, 80) || v.Revision < 1 || v.Revision > 2147483647 || v.TotalActiveItems < 1 {
+	if !uuidPattern.MatchString(v.ID) || !textValid(v.Title, 0, 80) || v.Revision < 1 || v.Revision > 2147483647 || v.TotalActiveItems < 0 || v.TotalActiveItems > maxNewMealItems {
 		return false
 	}
 	when, e := time.Parse(time.RFC3339, v.OccurredAt)

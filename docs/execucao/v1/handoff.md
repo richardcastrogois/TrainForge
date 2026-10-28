@@ -1,6 +1,6 @@
 # Handoff vigente — TrainForge
 
-Atualizado em **27/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
+Atualizado em **28/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 ## Próxima ação
 
@@ -16,13 +16,17 @@ Continuar a V1-015, com V1-014, V1-013 e V1-047 concluídas. A ausência de cont
 
 ## Trabalho independente045 já iniciado
 
-Durante a validação047, avançou a fundação independente045 (depende020/021done): nutrition/meals.go/meals_service.go/meals_create.go com13testes principais+42subcasos aprovados. [Modelo e próximos passos](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json). Mesmos IDs/cálculos em duas visões, semagrupamento automático do legado, total diário uma vez, subtotais do recorte/desconhecidos e limite100/incompletude. SemSQL/migration/endpoint/tela nova; porta testada não é persistência real.
+**28/10: SQL/HTTP e privacidade de refeições implementados e validados em descartável.** Código e API local Go0.8.0/34operações; banco real permanece schema12/27tabelas e APK0.4.0+22. Migration13/30tabelas somente nos testes; não ativada. [Estado e próximos passos](refeicoes-045.md), [recibo SQL/HTTP/restore](meal-grouping-sql-verification.json).
 
-CreateMeal/aplicação já valida a revisão e os valores explícitos e confere retorno; ainda sem escritorSQL. Próxima fatia independente: persistência de criação, comandos de edição/exclusão, grupos/vínculos versionados e escrita atômica, revisão/idempotência, integração dos itens e privacidade/exportação/exclusão/restore antes de ativar migration. Não recriar a projeção nem copiar nutrientes. 047foi validada e o formulário foi encerrado; prioridade de treino segue015.045permanece independente/doing.
+MealStore implementa criação atômica de grupo e novos consumos, leitura diária/detalhe, correção de metadados e exclusão do grupo. Compartilha identidades/cálculo da020; legado sem agrupamento. Revisões de grupo e consumo são independentes. Replay após edição/exclusão conflita, sem recriar dados. Runtime não tem DML direto nas tabelas de grupo. Exportação, exclusão de conta e dump/restore com ledger aprovados; outra conta preservada.
+
+Próximo incremento independente: Flutter com duas visões sobre o mesmo estado, rascunho/revisão e retry por conta, quatro idiomas e testes. Depois ativação13 com checkpoint/comparação, APK e aceite humano. Foto042 e outbox026 continuam com gates próprios. Não recriar escritor/handlers nem repetir047/Google. Não agrupar o consumo real por inferência.
+
+Treinos015/016 não estão implementados: consulta real confirmou zero programas/prática e o importador aceita somente metadados. O bloqueio editorial não fecha essas histórias. Manter esta distinção enquanto avança o trabalho independente.
 
 ## Estado validado e ambiente
 
-- **Go0.7.0 /29operações**, Swagger gerado e servido localmente conferido. Novas rotas GET/PUT /api/v1/me/training-configuration e GET …/resources. Domínio/aplicação, PostgreSQL, handler e Flutter separados. [Contrato](../../arquitetura/contratos-v1.md).
+- **Go0.8.0 /34operações**, Swagger gerado e servido localmente conferido. Cinco rotas de refeições requerem migration13, ainda não aplicada ao banco real. Novas rotas GET/PUT /api/v1/me/training-configuration e GET …/resources. Domínio/aplicação, PostgreSQL, handler e Flutter separados. [Contrato](../../arquitetura/contratos-v1.md).
 - **Schema12 /27tabelas** aplicado a trainforge_v1_dev,127.0.0.1:15432. [Ativação](training-configuration-local-activation.json): checkpoint local somente de schema e comparação de linhas preservaram1conta/1consumo/6369versões alimentares. Zero configuração no instante da ativação. Checkpoint não é backup completo restaurado. Não repetir ativador: ele exige schema11 e recusa checkpoint existente.
 - [SQL047](training-configuration-sql-verification.json): criação/leitura/alteração/replay/conflito concorrente, fontes/retirada, duas contas, credencial revogada, exportação/exclusão e DML direto bloqueado em base descartável removida. Novos negativos SQL diretos recusamreview:false,titular forjado,medida física e fusoLocal. [Privacidade/restore](training-configuration-privacy-verification.json): ledger reaplicado em outra base, configuração apagada não ressuscita; outra conta/editorial preservados. Não repetir sem mudança pertinente.
 - Flutter:555mensagens/idioma empt-BR/pt-PT/en/es. [Cliente e testes](training-configuration-client-verification.json). 213testesFlutter na suíte completa e análise sem issues; suíte comumGo e vet passaram. SQL foi executado separadamente, não inferido dos skips da suíte comum. Testes não significam cobertura total, Sonar, CIFlutter/SQL ou carga concluídos.

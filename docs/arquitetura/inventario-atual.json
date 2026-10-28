@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "9afd7851a3d75a07e538cfab5f5d51e5034af86581858c5f47057ae1b43a3fb5",
+  "inputRevision": "a5c5865162c6d76d4cab5b51fde893199ee59f97a1473219e43cff3c1560b173",
   "inputs": {
-    "contracts/generated/swagger-v1.json": "acfd85d77914f58360e498e69481a5e2b2ea883f4e9c32d8571ca8c8eaf7eefb",
+    "contracts/generated/swagger-v1.json": "b03009ca23509a210e89786fc35fa79271faa244e6283bcc093414de4763aefa",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/execucao/v1/backlog.json": "37dda6cf6c27d41532ed1b69f916722c440008a9cb1b5130fde2621f4fbe8a78",
+    "docs/execucao/v1/backlog.json": "16929d031b005b969a509691078b9acaf4164799f56dc42f8035f917bf51936d",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "49c734c7f3db764eb0a84b78ccd16af3627bf93334c394e2a06b4a3909d94113",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
@@ -114,7 +114,7 @@
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "4eb70b8d46786d3802607ee646bd286107957314460460f4eb97841df334b09d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
-    "services/api/cmd/api/main.go": "aa7f4e78371723ed26a1c73ab2b4a6ef3e4e3001f19f8fd6e20819ef19f42985",
+    "services/api/cmd/api/main.go": "9627fc4eff4229ef6acef428b6a776e8c19b40c2ab0f9b2085d52877e47966a6",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
@@ -139,14 +139,17 @@
     "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
     "services/api/internal/nutrition/doc.go": "b46f6e493e50360eea09d4faaaaff4f67317ce57acf46377742fa5416ea3441a",
     "services/api/internal/nutrition/entries.go": "b218079ec5498769d3db8b6bdbe9d789a2ce4adf42cf8753597e988cd1a71d18",
-    "services/api/internal/nutrition/entries_handler.go": "038285c35d581c72e2ea83fedc9eb14fcc7b3107edaf02f4687df0d7fa7158c7",
-    "services/api/internal/nutrition/entries_names.go": "786379c1dd5eaa1d4bc6f38f4f7ed5eb0cab0f15be4a8b6cc5c5ef8421b8d236",
+    "services/api/internal/nutrition/entries_handler.go": "2b798def4ee12d7d17c49f11e39a87dc1cc9ff78404467b7f32f6d335b5a8135",
+    "services/api/internal/nutrition/entries_names.go": "6de6734e461f155b7e93cd435d4ba5fde857748b2266566543e8ffec4758c992",
     "services/api/internal/nutrition/food.go": "2c0148fb297b6cc79e109f3ee053c9150e7bc728dc452035135be2f835511800",
     "services/api/internal/nutrition/handler.go": "744d030929433a7f3d6312d67732d4ad095820506e0bd2ba89250863a61f4a6a",
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
     "services/api/internal/nutrition/load.go": "40cc38994faa0bc5d04919f7d68cde930a314ab3d52c4531c95c94b34b12e58e",
-    "services/api/internal/nutrition/meals.go": "18bc720a0c849580c99a45fc71d9fac02c305fd40905e6ddc44c2053b3dd6655",
-    "services/api/internal/nutrition/meals_create.go": "e378a1b3f9a695591d2347c4d31eb978254f096f00668494052509cf9ddd82a2",
+    "services/api/internal/nutrition/meals.go": "742c1816e907d25c89ef59f5273931c0f07517567a0b086ac09e516e035657ca",
+    "services/api/internal/nutrition/meals_commands.go": "50272994603a8bfe562ef86cafd368ecbbb8e5e2bf5fa4a830d3c2f67e9004a5",
+    "services/api/internal/nutrition/meals_create.go": "7e0858bd438080b4bf62c63c4181df55cb11d0f247e296a9a612dca4ccb5bb2e",
+    "services/api/internal/nutrition/meals_handler.go": "b6c515d9e5680ad1576f85e2a6ce46f2e5758481ae4c4c3baba1afd4340f142d",
+    "services/api/internal/nutrition/meals_postgres.go": "cfd2c167ef82e1daf5b077251ca2104d5da818eadd52d3dc86c66b2b7d4671b8",
     "services/api/internal/nutrition/meals_service.go": "1c0cd2cb62d99d075aa45f19f307358185674182fb22da0e4c436380fc370d40",
     "services/api/internal/nutrition/names.go": "d168d2dc875e6e6b617ad5da92cc6fb02dc44ff67b9c2d2d210e07f03513fe77",
     "services/api/internal/nutrition/names_coverage.go": "66ccf8417695c802f0a30835909fba7d85961ba364b82173894d6ed4dd2fb4a5",
@@ -162,12 +165,12 @@
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
     "services/api/internal/platform/httpapi/server.go": "7679e89e5655ee49f24b94df83b21f5ef9b33bbdcf9b3ccdd051304880a6dc7d",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
-    "services/api/internal/privacy/handler.go": "f77a942f9c2dddef8ebcc85be65aea116aabeb7ffcebd2f9c3667b7e8f76052f",
+    "services/api/internal/privacy/handler.go": "0e9cd6b1624dc3f9994c60304ea6ba31de5408a79950ae6b24925cbbe280fc0d",
     "services/api/internal/privacy/maintenance.go": "28839628a18ea2ff02c73e2cf41b4aafe4a97bfc8e8088551d620df806c00031",
-    "services/api/internal/privacy/postgres.go": "390f891fb22c726a37061829eab388a7ee52a5ff193de1cfaa8aea7e4ffcfa16",
-    "services/api/internal/privacy/privacy.go": "336a70ed5d89eb0fc002cfe8b87f0b1beab820b6e2c3b4d2fa3a8ef786e522cf",
-    "services/api/internal/privacy/restore.go": "638c712c3b30ee77a2ce9cf828380b333dfcbbb853d84c1aff24987e406ec19d",
-    "services/api/internal/swaggerdocs/docs.go": "79ef7246b307d007ef92ff510d2f786e0beec005b9d50cc9d07e874d878bf712",
+    "services/api/internal/privacy/postgres.go": "fc33b79d308ed3ae2be100b56e96efdc4b74c04273a5e7888abb86e1ec4709ba",
+    "services/api/internal/privacy/privacy.go": "76e4621f9de424170834c209c0c448b709524450b20ea29a673445e6d1715221",
+    "services/api/internal/privacy/restore.go": "ebae788a93e7bff709eceff5af1c0d65d120fd033ef0a235c18114867afe4dfd",
+    "services/api/internal/swaggerdocs/docs.go": "98fca577b5aa9756a48cc9413a8a465fc2c191fb92bb7d4af3e83b13022e9580",
     "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
     "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
     "services/api/internal/trainingconfig/postgres.go": "9df895926d3fca98702fc906159f41e65e213789006a6894c96913fa4d8bd1f9",
@@ -185,6 +188,7 @@
     "services/api/migrations/00010_food_name_catalog_revision.sql": "6244366642e3644e458e26465247319c52568e3b4d971541e16e18120628b6ec",
     "services/api/migrations/00011_private_food_unknown_language.sql": "37a81044528e711bcf57262f3801efb5cadfa81d5821547d00bbd31453b4613d",
     "services/api/migrations/00012_training_configuration.sql": "6d38423c1e5a80bcf88752429a44bee490f97ac7e0b4bc32c68b72627c2859ff",
+    "services/api/migrations/00013_meal_groups.sql": "6a7c6cc57c3d4f87b1815b9fb2a314b2829badb4498816a085ad1a4e36fd5f1f",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
@@ -193,7 +197,7 @@
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/avaliar_android.py": "237533eb97156589bf73e7e8a45a0072fec23186c05cb645913dad7a55c6d790",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
-    "tools/db_local.py": "5d54a80b624b6c52ad4d7e9fc088ba3ff4acb3fcddd1fc4670c669c5578f2af6",
+    "tools/db_local.py": "b1987a7472ab795d151683cecbaee2e6d20d46ab34f6575397f4f8493e88c14f",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "b9e80fb2e74cc75fdc0fb3e930dc0941c26221f542d533e541d0330875ce61d2",
@@ -233,7 +237,8 @@
     "tools/verificar_nomes_alimentares.py": "632933ab9cc1e98c7a85c0f280c462a44157ff50dcbe8f4c95f20934980b388c",
     "tools/verificar_nutricao_local.py": "2c2055e493eb8a05b7e121952ef019d7dfb45142afc3caaf33639aa2f0fb578e",
     "tools/verificar_privacidade_http.py": "fa5f96d4e711164a2d9a16087e9eafcbc01512f6bc38927f9817a304cfeb2791",
-    "tools/verificar_privacidade_local.py": "a910f0c4697d1fee7792c36c9feed3452390dfd3a5c9a74e6a357dc710243c07"
+    "tools/verificar_privacidade_local.py": "b890fc1fcef76ac5e7317c37842ebcaf98c9ed56ab9e0e9889a9a874347fb6ad",
+    "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
     "dartFiles": 107,
@@ -243,8 +248,8 @@
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 58,
-    "goRegistrations": 30,
+    "goFiles": 61,
+    "goRegistrations": 35,
     "modelsInReference": 9
   },
   "groups": [
@@ -3883,7 +3888,10 @@
       "services/api/internal/nutrition/import.go",
       "services/api/internal/nutrition/load.go",
       "services/api/internal/nutrition/meals.go",
+      "services/api/internal/nutrition/meals_commands.go",
       "services/api/internal/nutrition/meals_create.go",
+      "services/api/internal/nutrition/meals_handler.go",
+      "services/api/internal/nutrition/meals_postgres.go",
       "services/api/internal/nutrition/meals_service.go",
       "services/api/internal/nutrition/names.go",
       "services/api/internal/nutrition/names_coverage.go",
@@ -4176,7 +4184,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 210
+          "line": 223
         },
         "registrationDetected": true
       },
@@ -4200,7 +4208,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 225
+          "line": 238
         },
         "registrationDetected": true
       },
@@ -4225,7 +4233,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 241
+          "line": 254
         },
         "registrationDetected": true
       },
@@ -4250,7 +4258,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 257
+          "line": 270
         },
         "registrationDetected": true
       },
@@ -4275,7 +4283,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 381
+          "line": 394
         },
         "registrationDetected": true
       },
@@ -4303,7 +4311,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 414
+          "line": 427
         },
         "registrationDetected": true
       },
@@ -4327,7 +4335,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 463
+          "line": 476
         },
         "registrationDetected": true
       },
@@ -4351,7 +4359,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_names.go",
-          "line": 98
+          "line": 110
         },
         "registrationDetected": true
       },
@@ -4442,6 +4450,129 @@
         "registrationDetected": true
       },
       {
+        "method": "POST",
+        "path": "/api/v1/me/meals",
+        "params": [
+          "Idempotency-Key header string true \"UUID stable across retries; 24-hour retention\"",
+          "body body NewMealCommand true \"reviewed=true; quantities/versions/times per item; max64KiB; microsecond timestamp precision\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "201 {object} ConfirmedMeal"
+          ],
+          [
+            "Failure",
+            "400,401,404,409,413,415,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/meals_handler.go",
+          "line": 64
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meal-diary",
+        "params": [
+          "date query string true \"YYYY-MM-DD\"",
+          "timezone query string true \"UTC, IANA or offset; no server timezone default\"",
+          "locale query string false \"pt-BR,pt-PT,en,es; optional reviewed display names\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} MealDayResponse"
+          ],
+          [
+            "Failure",
+            "400,401,409,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/meals_handler.go",
+          "line": 89
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meals/{id}",
+        "params": [
+          "id path string true \"Meal UUID; another owner returns404\"",
+          "locale query string false \"pt-BR,pt-PT,en,es; display only\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} ConfirmedMeal"
+          ],
+          [
+            "Failure",
+            "400,401,404,409,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/meals_handler.go",
+          "line": 127
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/v1/me/meals/{id}",
+        "params": [
+          "id path string true \"Meal UUID\"",
+          "Idempotency-Key header string true \"Stable retry UUID\"",
+          "body body EditMealCommand true \"Expected grouping revision and reviewed=true\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} ConfirmedMeal"
+          ],
+          [
+            "Failure",
+            "400,401,404,409,413,415,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/meals_handler.go",
+          "line": 164
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/meals/{id}",
+        "params": [
+          "id path string true \"Meal UUID\"",
+          "Idempotency-Key header string true \"Stable retry UUID\"",
+          "body body DeleteMealCommand true \"Expected grouping revision and reviewed=true\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} ConfirmedMeal"
+          ],
+          [
+            "Failure",
+            "400,401,404,409,413,415,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/meals_handler.go",
+          "line": 190
+        },
+        "registrationDetected": true
+      },
+      {
         "method": "GET",
         "path": "/api/v1/health/live",
         "params": [],
@@ -4504,7 +4635,7 @@
         "method": "GET",
         "path": "/api/v1/me/export",
         "params": [
-          "section query string false \"Owned data section\" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations)",
+          "section query string false \"Owned data section\" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations,meals,mealItems,mealVersions)",
           "limit query int false \"Maximum page size\" minimum(1) maximum(50) default(20)",
           "cursor query string false \"Opaque cursor bound to user, section and limit\""
         ],
@@ -4785,7 +4916,8 @@
       "services/api/migrations/00009_reviewed_food_names.sql",
       "services/api/migrations/00010_food_name_catalog_revision.sql",
       "services/api/migrations/00011_private_food_unknown_language.sql",
-      "services/api/migrations/00012_training_configuration.sql"
+      "services/api/migrations/00012_training_configuration.sql",
+      "services/api/migrations/00013_meal_groups.sql"
     ],
     "tables": [
       {
@@ -5003,6 +5135,30 @@
           "path": "services/api/migrations/00012_training_configuration.sql",
           "line": 67
         }
+      },
+      {
+        "name": "meals",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00013_meal_groups.sql",
+          "line": 4
+        }
+      },
+      {
+        "name": "meal_items",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00013_meal_groups.sql",
+          "line": 16
+        }
+      },
+      {
+        "name": "meal_versions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00013_meal_groups.sql",
+          "line": 26
+        }
       }
     ],
     "registrations": [
@@ -5093,7 +5249,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 29
+          "line": 30
         }
       },
       {
@@ -5102,20 +5258,11 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 30
-        }
-      },
-      {
-        "method": "POST",
-        "path": "/api/v1/me/food-entries",
-        "source": {
-          "repository": "trainforge",
-          "path": "services/api/internal/nutrition/entries_handler.go",
           "line": 31
         }
       },
       {
-        "method": "GET",
+        "method": "POST",
         "path": "/api/v1/me/food-entries",
         "source": {
           "repository": "trainforge",
@@ -5125,7 +5272,7 @@
       },
       {
         "method": "GET",
-        "path": "/api/v1/me/food-entries/{id}",
+        "path": "/api/v1/me/food-entries",
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
@@ -5133,7 +5280,7 @@
         }
       },
       {
-        "method": "PATCH",
+        "method": "GET",
         "path": "/api/v1/me/food-entries/{id}",
         "source": {
           "repository": "trainforge",
@@ -5142,7 +5289,7 @@
         }
       },
       {
-        "method": "DELETE",
+        "method": "PATCH",
         "path": "/api/v1/me/food-entries/{id}",
         "source": {
           "repository": "trainforge",
@@ -5151,12 +5298,66 @@
         }
       },
       {
+        "method": "DELETE",
+        "path": "/api/v1/me/food-entries/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 36
+        }
+      },
+      {
         "method": "GET",
         "path": "/api/v1/me/food-summary",
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/nutrition/entries_handler.go",
-          "line": 36
+          "line": 37
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/meals",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 38
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meal-diary",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 39
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meals/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 40
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/v1/me/meals/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 41
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/meals/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/entries_handler.go",
+          "line": 42
         }
       },
       {
@@ -6278,7 +6479,10 @@
               "activityEvents",
               "foods",
               "foodEntries",
-              "trainingConfigurations"
+              "trainingConfigurations",
+              "meals",
+              "mealItems",
+              "mealVersions"
             ],
             "type": "string",
             "description": "Owned data section",
@@ -6925,6 +7129,411 @@
           },
           "401": {
             "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "413": {
+            "description": "Request Entity Too Large",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meal-diary",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "YYYY-MM-DD",
+            "name": "date",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "UTC, IANA or offset; no server timezone default",
+            "name": "timezone",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "pt-BR,pt-PT,en,es; optional reviewed display names",
+            "name": "locale",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.MealDayResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/meals",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "UUID stable across retries; 24-hour retention",
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "reviewed=true; quantities/versions/times per item; max64KiB; microsecond timestamp precision",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/nutrition.NewMealCommand"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/nutrition.ConfirmedMeal"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "413": {
+            "description": "Request Entity Too Large",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/meals/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Meal UUID; another owner returns404",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "pt-BR,pt-PT,en,es; display only",
+            "name": "locale",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.ConfirmedMeal"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/meals/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Meal UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Stable retry UUID",
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Expected grouping revision and reviewed=true",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/nutrition.DeleteMealCommand"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.ConfirmedMeal"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "413": {
+            "description": "Request Entity Too Large",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/v1/me/meals/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Meal UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Stable retry UUID",
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Expected grouping revision and reviewed=true",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/nutrition.EditMealCommand"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.ConfirmedMeal"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "404": {
+            "description": "Not Found",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "story": "V1-045",
+  "status": "partial",
+  "passed": true,
+  "scope": "disposable-meal-sql-not-human-meal-acceptance",
+  "schemaTested": 13,
+  "deliveredSchemaMigrated": false,
+  "deliveredRecordsUnchanged": true,
+  "disposableDatabaseRemoved": true,
+  "clusterRunningStatePreserved": true,
+  "atomicGroupAndIntakesVerified": true,
+  "ownerAndLiveCredentialVerified": true,
+  "concurrentCreateRetryVerified": true,
+  "metadataRevisionsAndReplayVerified": true,
+  "crossDayAndLegacyAndBoundVerified": true,
+  "itemAndWholeMealDeletionVerified": true,
+  "lateReplayDoesNotReviveDeletedMeal": true,
+  "privateExportAndAccountErasureVerified": true,
+  "runtimeDirectMealDmlRejected": true,
+  "httpContractAndNegativeBoundariesVerified": true,
+  "localizedDiaryReadVerified": [
+    "pt-BR",
+    "pt-PT",
+    "en",
+    "es"
+  ],
+  "dumpAndRestoreErasureGateVerified": true,
+  "otherOwnerMealsPreservedAfterRestore": true,
+  "limits": [
+    "No real account,meal,intake or photo created/deleted.",
+    "Flutter and human acceptance have separate gates."
+  ]
+}

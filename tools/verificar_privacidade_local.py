@@ -73,6 +73,12 @@ def restore_fixture(env, go, name, writer):
                     raise RuntimeError("Erased configuration returned after restore")
                 if sql("SELECT count(*) FROM trainforge_v1.training_configuration_versions c JOIN trainforge_v1.users u ON u.id=c.user_id WHERE u.subject='privacy-restore-b';", target) != "1":
                     raise RuntimeError("Other account configuration changed during restore")
+            if sql("SELECT to_regclass('trainforge_v1.meals') IS NOT NULL;",target)=="t":
+                for table in ['meals','meal_items','meal_versions']:
+                    if sql("SELECT count(*) FROM trainforge_v1."+table+" WHERE user_id IN("+ids+");",target)!='0':
+                        raise RuntimeError('Erased meal grouping returned after restore')
+                    if sql("SELECT count(*) FROM trainforge_v1."+table+" m JOIN trainforge_v1.users u ON u.id=m.user_id WHERE u.subject='privacy-restore-b';",target)!='1':
+                        raise RuntimeError('Other owner meal grouping changed after restore')
             after_first = sql("SELECT json_build_array((SELECT count(*) FROM trainforge_v1.users),"
                               "(SELECT count(*) FROM trainforge_v1.food_versions),"
                               "(SELECT count(*) FROM trainforge_v1.account_erasures))::text;", target)
