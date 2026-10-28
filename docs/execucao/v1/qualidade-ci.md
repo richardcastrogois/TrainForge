@@ -12,7 +12,7 @@ No Windows, o complemento de refeições passou248 testes Flutter completos ante
 
 Etapas: resolver pubspec.lock com enforce-lockfile, gerar localização e recusar deriva, analisar, executar a suíte inteira de widgets/unidade e produzir lcov.info por sete dias. Fixtures são locais ao runner. Sem chamada de login Google, acesso ao banco de avaliação, assinatura Android ou deploy. Permissão contents:read; nenhum secret é fornecido e não há pull_request_target. Não exige instalar SDKs novamente no notebook.
 
-A primeira execução remota ainda deve ser conferida após o push. O [recibo](ci-flutter-verification.json) será atualizado com o resultado real; configuração escrita não equivale a job aprovado.
+A primeira execução remota foi conferida: [Flutter40690557153](https://github.com/richardcastrogois/TrainForge/actions/runs/40690557153), commit02e596b, concluiu com sucesso. SDK, lockfile, deriva l10n, análise, testes/cobertura e publicação do artefato foram aprovados no job122823943251. [Go/docs40690557360](https://github.com/richardcastrogois/TrainForge/actions/runs/40690557360) também passou para o mesmo commit. [Recibo](ci-flutter-verification.json). Isso não comprova as integrações SQL puladas na suíte comum Go.
 
 ## O que ainda falta
 

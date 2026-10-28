@@ -7,14 +7,14 @@
   "flutterRevision": "ff37bef603469fb030f2b72995ab929ccfc227f0",
   "officialTagVerified": true,
   "existingArchitectureCi": {
-    "commit": "297725f0f4a5de6c976b06dd6e193c46345df74c",
-    "run": 40689113482,
+    "commit": "02e596b3e667a85579b400b5bcfaf1698aea213c",
+    "run": 40690557360,
     "conclusion": "success",
-    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40689113482"
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40690557360"
   },
   "newFlutterCi": {
     "workflow": ".github/workflows/flutter.yml",
-    "remoteRunVerified": false,
+    "remoteRunVerified": true,
     "localFullSuiteBeforeDiscovery": 248,
     "localFocusedSuiteAfterDiscovery": 37,
     "localAnalyzerIssues": 0,
@@ -24,6 +24,19 @@
       "analyzer",
       "full widget/unit tests",
       "lcov artifact"
+    ],
+    "commit": "02e596b3e667a85579b400b5bcfaf1698aea213c",
+    "run": 40690557153,
+    "job": 122823943251,
+    "conclusion": "success",
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40690557153",
+    "stepsVerified": [
+      "official pinned SDK",
+      "locked dependencies",
+      "generated l10n drift",
+      "analyzer",
+      "complete unit/widget tests and coverage",
+      "coverage artifact"
     ]
   },
   "controls": [
@@ -33,7 +46,6 @@
     "Hosted runner only; no local SDK installation."
   ],
   "limits": [
-    "Remote Flutter job still needs first execution after push.",
     "Isolated migration SQL CI and non-root image/artifact delivery are not implemented by this job.",
     "Sonar, complete audit028, load030, offline026, photo042 and release remain separate."
   ]

@@ -1,5 +1,7 @@
 # Graphify — cobertura e atualização
 
+Conferência final28/10 solicitada pelo autor:0Dart alterados/116inalterados;4254nós/4998arestas mantidos e HTML exportado. AST somente, semLLM. Trabalho parado após o checkpoint.
+
 ## Atualização28/10 — seleção privada, metadados e clareza045
 
 116Dart/4254nós/4998arestas. Passagens10alterados/106inalterados e6/110;0removidos. ASTcode-only/HTML semLLM/semântica/clusterização. Backups em.local/graphify-backup-20261028-meal-edit.5ARB não interpretados. [Complemento](execucao/v1/meal-grouping-edit-client-verification.json).

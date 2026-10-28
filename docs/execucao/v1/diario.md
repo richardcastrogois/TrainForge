@@ -488,3 +488,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Autor confirmou que salvou/saiu. APK0.4.3+25 instalado, hash/assinatura conferidos. Comparação de linhas incluiu refeições, vínculos e versões, além dos dados anteriores.
 - Leitura Android recuperou o teste humano e abriu metadados preenchidos, revisão desmarcada e confirmação desabilitada sem mudança. Nova descrição particular e acesso direto à biblioteca/retorno por seletor/rascunho passaram. Nenhum dado escrito/excluído; tela final no diário, sem formulário.
 - Pipeline Go/documentação aprovado no GitHub para297725f. Acrescentado workflow Flutter com revisão oficial fixa, lockfile/l10n/análise/testes/cobertura e permissão somente leitura. Primeira execução remota pendente; não encerra032, auditoria, SQL em CI ou Sonar. [Escopo](qualidade-ci.md).
+
+
+## 28/10/2026 — fechamento do checkpoint e parada solicitada
+
+- CI Flutter40690557153 aprovado para02e596b, com SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado; SQL emCI/Sonar/imagem de entrega continuam pendentes.
+- Graphify novamente atualizado/conferido:0alterados/116inalterados,4254nós/4998arestas e HTMLexportado semLLM. Helper informou apiReady/apkCurrent e emulador conectado.
+- Explicação do monólito modular atualizada nas camadasGo:main compõe, domínios separados, transação de refeições e limites/extração por necessidade medida. Não houve alteração do contrato/Swagger Go.
+- Autor pediu finalizar o checkpoint, registrar estado, commitar e parar. Nenhuma refatoração/runnerSQL parcial foi deixada; API/banco/emulador mantidos para seu uso. Próxima retomada permanece nohandoff, com045e demais histórias incompletas explicitamente abertas.

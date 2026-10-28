@@ -2,6 +2,8 @@
 
 Atualizado em **28/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
+**Checkpoint encerrado e trabalho parado a pedido do autor.** Retomar somente mediante nova solicitação. API/banco/emulador foram mantidos ativos para uso local; isso não é trabalho autônomo continuando.
+
 ## Próxima ação
 
 Ler AGENTS.md, este handoff, backlog.json, plano-macro.md e etapa-02-fechamento.md. Conferir Git/arquivos antes de alterar; não repetir instalações, pesquisas, importações, restore ou Google sem mudança pertinente.
@@ -72,4 +74,15 @@ Atualizar backlogJSON/contratos/diagramas/diário/handoff; gerar docs e testar. 
 
 ## Complemento independente de qualidade032
 
-Job Flutter acrescentado com SDK oficial3.41.4/revisão imutável e lockfile, deriva l10n, análise, suíte e cobertura no runner. Primeira execução remota ainda pendente; pipeline Go/docs já aprovado para297725f. [Escopo e limites](qualidade-ci.md), [recibo](ci-flutter-verification.json). Não encerra032/028 nem SQL em CI/Sonar/carga. Sem instalar ferramentas no notebook, assinar ou publicar APK.
+Job Flutter acrescentado com SDK oficial3.41.4/revisão imutável e lockfile, deriva l10n, análise, suíte e cobertura no runner. Primeira execução remota Flutter40690557153 aprovada para02e596b; SDK, lockfile, l10n, análise, testes/cobertura e artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. [Escopo e limites](qualidade-ci.md), [recibo](ci-flutter-verification.json). Não encerra032/028 nem SQL em CI/Sonar/carga. Sem instalar ferramentas no notebook, assinar ou publicar APK.
+
+
+## Próxima retomada após a parada solicitada
+
+APKdebug0.4.3+25 instalado, API0.8.0/34operações e schema13/30tabelas. Helper confirmou apiReady/apkCurrent e emulator-5554. Última UI observada: diário, sem formulário. Preservados1conta, consumo real anterior, refeição/consumo humano de teste e2revisões047. Não apagar o teste por inferência nem classificá-lo como consumo real.
+
+Graphify conferido novamente:0Dart alterados/116inalterados,4254nós/4998arestas, HTML exportado semLLM. Não havia mudança de contrato Go neste encerramento; Swagger existente permanece válido.
+
+045 precisa de aceite real/correção/exclusão e foto042;015/016 têm bloqueio editorial e implementação pendente. Depois, foto/refeições/análise046, offline026, auditoria/master/observabilidade/carga e entrega seguem dependências. CI Flutter já executou; migrations/SQL noCI, Sonar e imagem/artefatos de entrega ainda faltam. Nenhuma refatoração de grants ou runner SQL provisório ficou em aberto.
+
+A [explicação da arquitetura atual](../../arquitetura/camadas-go.md) registra por que usamos monólito modular, o papel do main, a transação de refeições e os critérios para eventual extração. Não prometer milhões nem migração automática para microserviços.

@@ -1,6 +1,16 @@
 # Camadas e responsabilidades do backend Go
 
-Conferida em **26/10/2026**: fundação, autenticação, catálogo HTTP, importação e consulta alimentar, cadastro particular, consumo/revisões/subtotais, privacidade e leitura de nomes revisados implementados na API **0.6.1 / 25 operações**. Base local em schema 11 / 26 tabelas. Ferramenta editorial local entregue; adesão, agenda e execução de atividade ainda não entregues. API como monólito modular, organizada por domínio (auth, catalog, activity, nutrition, privacy), com dependências explícitas e PostgreSQL. As camadas são responsabilidades de cada módulo, sem chamadas de rede entre elas.
+Conferida em **28/10/2026**: API **0.8.0 /34 operações**, PostgreSQL local schema13/30tabelas. Auth, catalog, nutrition, privacy e trainingconfig têm capacidades integradas; nutrition inclui refeições atômicas e metadados versionados. Activity ainda reserva o domínio, sem execução entregue. Adesão, agenda e treino completo não estão implementados. O backend é um monólito modular: um processo Go, módulos por domínio, dependências explícitas e PostgreSQL. As camadas são responsabilidades internas, sem chamadas de rede entre elas.
+
+## Por que um monólito modular
+
+Monólito descreve a unidade de execução e publicação; não exige um arquivo único ou responsabilidades misturadas. cmd/api/main.go compõe configuração, pool, serviços e handlers e controla a vida do servidor. As requisições seguem para os handlers; cálculos, validações e SQL ficam nos módulos. A estrutura atual tem exceções de acoplamento registradas abaixo e ainda precisa evoluir; o nome da arquitetura não é aprovação automática da qualidade.
+
+Neste momento, o mesmo produto ainda está consolidando contratos, jornadas e conteúdo. Refeição, consumos, versões e idempotência precisam ser gravados juntos: a transação PostgreSQL atual desfaz tudo se um item falhar, com teste SQL já executado. Separar esses dados em bancos de microserviços exigiria coordenação distribuída, filas/outbox e compensações, além de autenticação entre serviços, observabilidade e operação adicionais.
+
+O monólito pode receber réplicas e otimização por módulo, mas isso não comprova capacidade para milhões. Estado em memória, limites por instância, orçamento de conexões, consultas, banco e concorrência precisam ser avaliados antes de múltiplas instâncias. Os testes de carga030 e a auditoria028 seguem pendentes. Microserviços também não garantem segurança ou escalabilidade por si só.
+
+Uma extração futura deve responder a necessidade medida: módulo com perfil de carga distinto, trabalho pesado assíncrono, disponibilidade própria ou equipe/publicação independentes. Processamento de imagens é um candidato possível, ainda não implementado nem decidido como serviço. Manter módulos, contratos e responsabilidades claros facilita essa decisão; a extração não será automática nem necessariamente dispensará migração de dados.
 
 ```mermaid
 flowchart LR
@@ -38,11 +48,12 @@ services/api/                     # auth/catálogo/registro alimentar/privacidad
   cmd/import-content/main.go
   internal/
     auth/
-    catalog/{handler,dto,service,model,repository,postgres}.go
-    activity/
+    catalog/
+    activity/doc.go                # domínio reservado, sem execução entregue
     nutrition/
     privacy/
-    platform/{config,http,postgres,observability}/
+    trainingconfig/
+    platform/{config,httpapi,postgres}/
     swaggerdocs/docs.go            # gerado por Swaggo, não editar
   migrations/
 ```

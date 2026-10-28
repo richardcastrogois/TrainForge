@@ -3011,7 +3011,7 @@
             "Workflow CI",
             "Imagem da API e metadados de release"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota pendente; Go/docs já tiveram run40689113482 aprovado. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/qualidade-ci.md",
@@ -3655,5 +3655,5 @@
       ]
     }
   ],
-  "currentPriority": "28/10:045com seleção particular e edição de metadados;APK25 instalado e navegação conferida após autor salvar/sair,API0.8.0/34/schema13/30. Criação/consulta humana foi teste de navegação;aceite real/correção/exclusão e foto042 pendentes. Preservar dados; reler tela antes de agir.015/016 semconteúdo aprovado;continuar trabalho independente sem concluir indevidamente."
+  "currentPriority": "28/10:045com seleção particular e edição de metadados;APK25 instalado e navegação conferida após autor salvar/sair,API0.8.0/34/schema13/30. Criação/consulta humana foi teste de navegação;aceite real/correção/exclusão e foto042 pendentes. Preservar dados; reler tela antes de agir.015/016 semconteúdo aprovado;continuar trabalho independente sem concluir indevidamente. Parada solicitada pelo autor após o checkpoint28/10. Na próxima retomada, ler handoff; não continuar automaticamente."
 }
