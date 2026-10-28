@@ -102,10 +102,12 @@ class MealDraftController extends ChangeNotifier {
     required this.currentAccountId,
     required DateTime occurredAt,
     this.retryWindow = const Duration(hours: 24),
-  }) : _when = occurredAt;
+  }) : _when = occurredAt,
+       _initialWhen = occurredAt;
   bool _disposed = false, _invalidated = false;
   String _title = '';
   DateTime _when;
+  final DateTime _initialWhen;
   final List<MealDraftItem> _items = [];
   Json? _pending;
   Stopwatch? _pendingAge;
@@ -117,7 +119,10 @@ class MealDraftController extends ChangeNotifier {
       !_disposed && !_invalidated && currentAccountId() == accountId;
   bool get uncertain => _pending != null;
   bool get locked => busy || uncertain || confirmed != null;
-  bool get dirty => _title.isNotEmpty || _items.isNotEmpty;
+  bool get dirty =>
+      _title.isNotEmpty ||
+      _items.isNotEmpty ||
+      !_when.isAtSameMomentAs(_initialWhen);
   String get title => _title;
   DateTime get when => _when;
   List<MealDraftItem> get items => List.unmodifiable(_items);

@@ -1,6 +1,6 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.8.0 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.1+23 integrados; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.8.0 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.2+24 integrados;0.4.3+25 preparado com refinamento de descoberta, não instalado; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
 ## Refeições045 — contrato SQL/HTTP e cliente integrado
 

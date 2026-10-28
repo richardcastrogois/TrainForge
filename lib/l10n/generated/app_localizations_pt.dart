@@ -2005,6 +2005,23 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get privacySectionMealVersions => 'Revisões das refeições';
+
+  @override
+  String get chooseMealFoodSource => 'De onde quer escolher o alimento?';
+
+  @override
+  String get mealLibraryFood => 'Biblioteca de alimentos';
+
+  @override
+  String get mealMetadataReview =>
+      'Revisei o nome e o horário da refeição. Os consumos individuais não serão alterados.';
+
+  @override
+  String get mealOwnFoods => 'Alimentos que cadastrei';
+
+  @override
+  String get mealOwnFoodsHint =>
+      'Aqui aparecem só alimentos que você cadastrou. Para buscar na base de referência, abra a biblioteca.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -4008,6 +4025,23 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get privacySectionMealVersions => 'Revisões das refeições';
+
+  @override
+  String get chooseMealFoodSource => 'De onde quer escolher o alimento?';
+
+  @override
+  String get mealLibraryFood => 'Biblioteca de alimentos';
+
+  @override
+  String get mealMetadataReview =>
+      'Revisei o nome e o horário da refeição. Os consumos individuais não serão alterados.';
+
+  @override
+  String get mealOwnFoods => 'Alimentos que cadastrei';
+
+  @override
+  String get mealOwnFoodsHint =>
+      'Aqui aparecem só alimentos que você cadastrou. Para buscar na base de referência, abra a biblioteca.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -6012,4 +6046,21 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get privacySectionMealVersions => 'Revisões das refeições';
+
+  @override
+  String get chooseMealFoodSource => 'De onde quer escolher o alimento?';
+
+  @override
+  String get mealLibraryFood => 'Biblioteca de alimentos';
+
+  @override
+  String get mealMetadataReview =>
+      'Revi o nome e a hora da refeição. Os consumos individuais não serão alterados.';
+
+  @override
+  String get mealOwnFoods => 'Alimentos que registei';
+
+  @override
+  String get mealOwnFoodsHint =>
+      'Aqui aparecem apenas alimentos que registou. Para procurar na base de referência, abra a biblioteca.';
 }

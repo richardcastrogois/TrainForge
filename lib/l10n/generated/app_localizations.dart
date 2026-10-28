@@ -3617,6 +3617,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Meal revisions'**
   String get privacySectionMealVersions;
+
+  /// No description provided for @chooseMealFoodSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Where would you like to choose a food?'**
+  String get chooseMealFoodSource;
+
+  /// No description provided for @mealLibraryFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food library'**
+  String get mealLibraryFood;
+
+  /// No description provided for @mealMetadataReview.
+  ///
+  /// In en, this message translates to:
+  /// **'I reviewed the meal name and time. Individual intake records will not change.'**
+  String get mealMetadataReview;
+
+  /// No description provided for @mealOwnFoods.
+  ///
+  /// In en, this message translates to:
+  /// **'Foods I added'**
+  String get mealOwnFoods;
+
+  /// No description provided for @mealOwnFoodsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Only foods you added appear here. Open the food library to search the reference database.'**
+  String get mealOwnFoodsHint;
 }
 
 class _AppLocalizationsDelegate

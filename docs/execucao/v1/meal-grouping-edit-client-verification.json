@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-28",
+  "story": "V1-045",
+  "status": "partial",
+  "scope": "private-food-selection-reviewed-metadata-and-discovery",
+  "installedApk": {
+    "sha256": "13c75c50600e4f62b8a275c39e146b2e47984f254c804ce50e5e2e24b1c5561b",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "ba72e5d61dc3499021c698202384f2d4f64a070ebe268210a20f9ef808b909d5",
+    "version": "0.4.2+24",
+    "installedHashMatched": true
+  },
+  "fullFlutterSuitePassedBeforeDiscoveryRefinement": 248,
+  "analyzerIssues": 0,
+  "checks": {
+    "metadataPatchExcludesItemsAndQuantities": true,
+    "explicitReview": true,
+    "pendingBodyKeyRevisionFrozen": true,
+    "conflictAnd24hDoNotCreateFreshIntent": true,
+    "lateAccountResponseDropped": true,
+    "timeOnlyDraftDirty": true,
+    "fourLocaleTwoThemeMetadataLayout320Text2x": true,
+    "realDioPatchValidation": true,
+    "cancelLibraryKeepsPrivateSearch": true,
+    "lateLibrarySelectionAccountGuard": true,
+    "directLibraryAccessFromPrivatePicker": true
+  },
+  "native": {
+    "existingSessionRestored": true,
+    "sourceChooserOpened": true,
+    "privatePickerObserved": true,
+    "nativeReadProbeStoppedWhenHumanUsedSearch": true,
+    "agentDidNotNavigateBackOrEraseHumanQuery": true,
+    "deliveredRowsUnchangedOnInstall": true,
+    "newGoogleLogin": false,
+    "credentialsExtracted": false,
+    "agentBusinessWrites": false,
+    "counts": {
+      "users": 1,
+      "intakes": 2,
+      "foodVersions": 6369,
+      "trainingConfigVersions": 2,
+      "meals": 1
+    }
+  },
+  "humanFeedback": {
+    "privateSearchConfusedWithReferenceLibrary": true,
+    "noNewMealAcceptance": true,
+    "refinement": "Explicit private-food wording and direct library access; user query/draft preserved.",
+    "mealCreationAndReopenShownInScreenshots": true,
+    "authorConfirmedNavigationTestOnly": true,
+    "realConsumptionMealAcceptance": false
+  },
+  "limits": [
+    "APK25 discovery refinement is prepared but not installed; preserve human search/form in APK24.",
+    "Real meal create/reopen/edit/delete acceptance pending.",
+    "Native metadata edit has not been tested on a real group; delivered account was not seeded.",
+    "Photo042, durable offline026, iOS, release and broader usability remain pending."
+  ],
+  "preparedApk": {
+    "sha256": "9b046b9ae0368a47331c133ca195b28ae72d7fe88084c9122d62f0b7336051c5",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "a81b026b9070a2693b5787250a609bd5ba9449353b8c8252cd55adb57de40051",
+    "version": "0.4.3+25",
+    "installed": false,
+    "reason": "Human is using the emulator search/form; preserve it."
+  },
+  "focusedFlutterSuitePassedAfterDiscoveryRefinement": 37,
+  "messagesPerLocale": 591,
+  "graph": {
+    "dartFiles": 116,
+    "nodes": 4254,
+    "edges": 4998,
+    "firstPassChanged": 10,
+    "finalPassChanged": 6,
+    "llmTokens": 0,
+    "htmlExported": true
+  }
+}

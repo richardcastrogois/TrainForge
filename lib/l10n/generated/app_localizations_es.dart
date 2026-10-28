@@ -2011,4 +2011,21 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get privacySectionMealVersions => 'Revisiones de comidas';
+
+  @override
+  String get chooseMealFoodSource => '¿De dónde quieres elegir el alimento?';
+
+  @override
+  String get mealLibraryFood => 'Biblioteca de alimentos';
+
+  @override
+  String get mealMetadataReview =>
+      'Revisé el nombre y la hora de la comida. Los registros individuales no cambiarán.';
+
+  @override
+  String get mealOwnFoods => 'Alimentos que añadí';
+
+  @override
+  String get mealOwnFoodsHint =>
+      'Aquí solo aparecen los alimentos que añadiste. Abre la biblioteca para buscar en la base de referencia.';
 }

@@ -11,6 +11,7 @@ import '../domain/nutrition.dart';
 import 'entry_detail_page.dart';
 import 'nutrition_feedback.dart';
 import 'nutrition_messages.dart';
+import 'meal_metadata_page.dart';
 
 class MealDetailPage extends StatefulWidget {
   final String id, accountId;
@@ -176,6 +177,31 @@ class _MealDetailPageState extends State<MealDetailPage> {
     if (active) await load();
   }
 
+  Future<void> edit() async {
+    final saved = value;
+    if (!active ||
+        busy ||
+        loading ||
+        pendingRevision != null ||
+        saved == null ||
+        saved.deletedAt != null) {
+      return;
+    }
+    await Navigator.push<ConfirmedMeal>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => MealMetadataPage(
+          repository: widget.repository,
+          meal: saved.meal,
+          accountId: widget.accountId,
+          currentAccountId: widget.currentAccountId,
+          sessionChanges: widget.sessionChanges,
+        ),
+      ),
+    );
+    if (active) await load();
+  }
+
   @override
   Widget build(BuildContext context) => DraftGuard(
     dirty: false,
@@ -213,6 +239,11 @@ class _MealDetailPageState extends State<MealDetailPage> {
             if (value!.deletedAt != null)
               Text(context.l10n.mealDeleted)
             else ...[
+              if (pendingRevision == null)
+                OutlinedButton(
+                  onPressed: busy || loading ? null : edit,
+                  child: Text(context.l10n.correctMeal),
+                ),
               if (value!.meal.totalActiveItems == 0)
                 Text(context.l10n.mealEmptyGroup),
               for (final item in value!.entries.where(

@@ -2,11 +2,11 @@
 
 ## Checkpoint vigente — 28/10/2026
 
-APK debug **0.4.1+23 instalado** no TrainForge_Benchmark/emulator-5554; API Go0.8.0/34operações e PostgreSQL schema13/30tabelas ativos localmente. [Cliente e leitura nativa](meal-grouping-client-verification.json), [ativação preservando dados](meal-grouping-local-activation.json). Sessão existente restaurada, sem novo login Google. Tela final: **Refeições e alimentos**, 28/10/2026, visão por refeição, sem formulário aberto. Conferir estado antes de interagir.
+APK debug **0.4.2+24 instalado**; **0.4.3+25 preparado e não instalado** no TrainForge_Benchmark/emulator-5554; API Go0.8.0/34operações e PostgreSQL schema13/30tabelas ativos localmente. [Cliente e leitura nativa](meal-grouping-client-verification.json), [ativação preservando dados](meal-grouping-local-activation.json). Sessão existente restaurada, sem novo login Google. Autor está usando busca/formulário; preservar a tela e confirmar disponibilidade antes de atualizar. Prints mostraram criação/reabertura de refeição, confirmada pelo autor como teste de navegação; não é aceite de consumo real. [Complemento](meal-grouping-edit-client-verification.json).
 
-Para testar uma refeição real: toque em **Registrar refeição**, adicione alimentos da biblioteca, informe as quantidades realmente consumidas e se foram medidas ou estimadas, confira datas e marque a revisão antes de confirmar. O preparo de um item ainda não grava consumo; somente a confirmação da refeição grava o grupo inteiro. Não usar dados fictícios para concluir o aceite. Seleção particular no grupo, edição dos metadados na UI, foto042 e fila offline026 continuam pendentes. O registro anterior permanece sem agrupamento inventado.
+Para testar uma refeição real: toque em **Registrar refeição**, adicione alimentos da biblioteca, informe as quantidades realmente consumidas e se foram medidas ou estimadas, confira datas e marque a revisão antes de confirmar. O preparo de um item ainda não grava consumo; somente a confirmação da refeição grava o grupo inteiro. Não usar dados fictícios para concluir o aceite. Seleção particular e edição de metadados estão integradas noAPK24. APK25 esclarece a busca particular e oferece acesso direto à biblioteca. Foto042 e fila offline026 continuam pendentes. O registro anterior permanece sem agrupamento inventado.
 
-231 testes Flutter no checkpoint de integração, 26 dirigidos após o alinhamento final de data e analyze sem issues. Isso não encerra usabilidade, iOS, release ou a história045. Configuração047 tem aceite funcional humano registrado. Treinos015/016 seguem sem conteúdo aprovado para prática.
+248 testes Flutter completos antes da clareza de busca e37 dirigidos depois, análise sem issues. Isso não encerra usabilidade, iOS, release ou a história045. Configuração047 tem aceite funcional humano registrado. Treinos015/016 seguem sem conteúdo aprovado para prática.
 
 ## Checkpoints históricos
 

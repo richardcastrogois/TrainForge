@@ -472,3 +472,12 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Migration13 aplicada após teste SQL/HTTP/restore, com API registrada parada e checkpoint completo local. Comparação preservou contas, consumo, catálogo e configurações.30tabelas,0refeições; o checkpoint novo não foi restaurado, mas o mecanismo foi ensaiado em descartável.
 - APKdebug0.4.1+23 instalado, certificado/hash conferidos. Sessão existente restaurada, sem Google automatizado ou extração de credenciais. Leitura nativa conferiu nome/quantidade/unidade do consumo humano em ambas as visões e sem agrupamento; nenhum registro real alterado.
 - Graphify113Dart/4166nós/4863arestas, HTML e backup local, semLLM/semântica.045segue doing por aceite humano/complementos de UI e foto042; outbox026 não foi concluída por retry em memória. [Recibo do cliente](meal-grouping-client-verification.json), [ativação](meal-grouping-local-activation.json).
+
+
+## 28/10/2026 — complementos045 e feedback de busca
+
+- Seleção particular reutiliza paginação/conta da020; edição de metadados PATCH não envia itens ou quantidades. Revisão humana, conta e retry de24h preservados; rascunho só com mudança de data avisa ao sair.
+- 248 testes completos antes do refinamento de descoberta;37 dirigidos depois/análise limpa.591 mensagens/idioma e layout de metadados320px/texto2x nos quatro idiomas/dois temas.
+- APK24 instalado após snapshot fresco sem formulário, hash/assinatura e dados anteriores comparados. Autor passou a usar a busca; automação nativa interrompida sem voltar ou apagar sua consulta. Prints mostraram criação/reabertura de1refeição, confirmada pelo autor como teste de navegação. Há2consumos(1real anterior+1teste); não excluir ou classificar como consumo real por inferência.
+- Feedback: busca particular pareceu busca geral. APK25 preparado, não instalado para preservar uso humano; diz “Alimentos que cadastrei”, explica alcance e oferece biblioteca diretamente, com cancelamento preservando busca/rascunho. Não traduziu dados alimentares.
+- Graphify116Dart/4254nós/4998arestas; AST/HTML semLLM e backup local.045continua doing por aceite real/correção/exclusão/foto042;outbox026 separada. [Recibo](meal-grouping-edit-client-verification.json).

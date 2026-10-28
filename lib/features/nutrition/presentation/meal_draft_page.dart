@@ -10,6 +10,7 @@ import '../domain/nutrition.dart';
 import 'meal_controllers.dart';
 import 'nutrition_feedback.dart';
 import 'nutrition_forms.dart';
+import 'own_food_picker_page.dart';
 
 class MealDraftPage extends StatefulWidget {
   final MealRepository repository;
@@ -78,10 +79,47 @@ class _MealDraftPageState extends State<MealDraftPage> {
     if (widget.chooseFood != null) {
       food = await widget.chooseFood!(context);
     } else {
+      final own = await showModalBottomSheet<bool>(
+        context: context,
+        isScrollControlled: true,
+        useSafeArea: true,
+        builder: (context) => SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  context.l10n.chooseMealFoodSource,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+                const SizedBox(height: 16),
+                OutlinedButton(
+                  onPressed: () => Navigator.pop(context, false),
+                  child: Text(context.l10n.mealLibraryFood),
+                ),
+                OutlinedButton(
+                  onPressed: () => Navigator.pop(context, true),
+                  child: Text(context.l10n.mealOwnFoods),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+      if (!mounted || !controller.active || own == null) return;
       food = await Navigator.push<FoodReference>(
         context,
         MaterialPageRoute(
-          builder: (_) => const FoodPage(selectForConsumption: true),
+          builder: (_) => own
+              ? OwnFoodPickerPage(
+                  repository: widget.nutrition,
+                  accountId: widget.accountId,
+                  currentAccountId: widget.currentAccountId,
+                  sessionChanges: widget.sessionChanges,
+                )
+              : const FoodPage(selectForConsumption: true),
         ),
       );
     }

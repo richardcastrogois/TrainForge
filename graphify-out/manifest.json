@@ -552,28 +552,28 @@
     "semantic_hash": "86f580c2e7459f20bd5462171429437e"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1793187698.7185342,
-    "seen": 1793188329.8632395,
-    "ast_hash": "f99b62a7956fffae08b57d9d171ad06e",
-    "semantic_hash": "f99b62a7956fffae08b57d9d171ad06e"
+    "mtime": 1793190359.1947167,
+    "seen": 1793190573.023252,
+    "ast_hash": "7e6adcd11d79b320e993dcd038025a33",
+    "semantic_hash": "7e6adcd11d79b320e993dcd038025a33"
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1793187698.671904,
-    "seen": 1793188329.8632395,
-    "ast_hash": "ce21b07939a8a80ff057a2ffbeb687a3",
-    "semantic_hash": "ce21b07939a8a80ff057a2ffbeb687a3"
+    "mtime": 1793190359.1437569,
+    "seen": 1793190573.023252,
+    "ast_hash": "38fcad55c0ef586c43eccf8fb8ea7bee",
+    "semantic_hash": "38fcad55c0ef586c43eccf8fb8ea7bee"
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1793187698.6795132,
-    "seen": 1793188329.8632395,
-    "ast_hash": "38da60465589fd8a5a9dcb0c6ca02075",
-    "semantic_hash": "38da60465589fd8a5a9dcb0c6ca02075"
+    "mtime": 1793190359.1538422,
+    "seen": 1793190573.023252,
+    "ast_hash": "047137d12bfeb87cda739fb7e9b8e7b4",
+    "semantic_hash": "047137d12bfeb87cda739fb7e9b8e7b4"
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1793187698.7110288,
-    "seen": 1793188329.8632395,
-    "ast_hash": "7b09c756bfdacd2e84d302e6732f07d8",
-    "semantic_hash": "7b09c756bfdacd2e84d302e6732f07d8"
+    "mtime": 1793190359.1833117,
+    "seen": 1793190573.023252,
+    "ast_hash": "a970ccd16b28682c3a6858d957c42562",
+    "semantic_hash": "a970ccd16b28682c3a6858d957c42562"
   },
   "core/l10n/read_feedback.dart": {
     "mtime": 1793013043.205864,
@@ -648,16 +648,16 @@
     "semantic_hash": "0737cc2b870b10f341767d08f916172c"
   },
   "features/nutrition/presentation/meal_controllers.dart": {
-    "mtime": 1793158624.9262743,
-    "seen": 1793187588.4316592,
-    "ast_hash": "4afbbf050a60a856eebbd2ad99db72cc",
-    "semantic_hash": "4afbbf050a60a856eebbd2ad99db72cc"
+    "mtime": 1793189617.0669184,
+    "seen": 1793189840.990795,
+    "ast_hash": "911ae065d1f00b1527b5ecc30058173d",
+    "semantic_hash": "911ae065d1f00b1527b5ecc30058173d"
   },
   "features/nutrition/presentation/meal_detail_page.dart": {
-    "mtime": 1793159101.5062983,
-    "seen": 1793187588.4316592,
-    "ast_hash": "8b9e3dc2eaba488f0487ce27afa8a4a6",
-    "semantic_hash": "8b9e3dc2eaba488f0487ce27afa8a4a6"
+    "mtime": 1793189775.8209627,
+    "seen": 1793189840.990795,
+    "ast_hash": "8113b4aeef664e72488f5833ffb8e62c",
+    "semantic_hash": "8113b4aeef664e72488f5833ffb8e62c"
   },
   "features/nutrition/presentation/meal_diary_page.dart": {
     "mtime": 1793188233.4521694,
@@ -666,15 +666,33 @@
     "semantic_hash": "fb36287c3304e74b2a6a3ce242b372ea"
   },
   "features/nutrition/presentation/meal_draft_page.dart": {
-    "mtime": 1793188228.9544399,
-    "seen": 1793188329.852817,
-    "ast_hash": "0537a585320649d05586b5a9aa75326c",
-    "semantic_hash": "0537a585320649d05586b5a9aa75326c"
+    "mtime": 1793190359.908737,
+    "seen": 1793190573.0086854,
+    "ast_hash": "6ee0b053d80d94357654812b5d9247f2",
+    "semantic_hash": "6ee0b053d80d94357654812b5d9247f2"
   },
   "features/nutrition/presentation/nutrition_totals_card.dart": {
     "mtime": 1793159101.5093513,
     "seen": 1793187588.4316592,
     "ast_hash": "7b464ddd8effbdc0da8a4b6d77a5adf7",
     "semantic_hash": "7b464ddd8effbdc0da8a4b6d77a5adf7"
+  },
+  "features/nutrition/presentation/meal_metadata_controller.dart": {
+    "mtime": 1793189617.0689173,
+    "seen": 1793189840.990795,
+    "ast_hash": "43d3d8f10ffc0d8c5a0f1b078187258a",
+    "semantic_hash": "43d3d8f10ffc0d8c5a0f1b078187258a"
+  },
+  "features/nutrition/presentation/meal_metadata_page.dart": {
+    "mtime": 1793189617.0739708,
+    "seen": 1793189840.990795,
+    "ast_hash": "47c9e952ca6fe20cf8d98652648fccd5",
+    "semantic_hash": "47c9e952ca6fe20cf8d98652648fccd5"
+  },
+  "features/nutrition/presentation/own_food_picker_page.dart": {
+    "mtime": 1793190455.7694643,
+    "seen": 1793190573.011202,
+    "ast_hash": "e3aab3668067233e2e43544b383af94b",
+    "semantic_hash": "e3aab3668067233e2e43544b383af94b"
   }
 }

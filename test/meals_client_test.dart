@@ -371,9 +371,32 @@ void main() {
         repo.createMeal(mealBody(), mealId),
         throwsFormatException,
       );
+      final edit = mealBody()..remove('items');
+      edit['revision'] = 1;
+      edit['title'] = 'Corrected fixture';
+      response = confirmedFixture();
+      response['meal'] = {
+        ...metadataFixture(),
+        'revision': 2,
+        'title': edit['title'],
+      };
+      await repo.editMeal(mealId, edit, mealId);
+      expect(seen.last.method, 'PATCH');
+      expect(seen.last.path, '/api/v1/me/meals/$mealId');
+      expect(seen.last.data, edit);
+      response['meal'] = {
+        ...metadataFixture(),
+        'revision': 2,
+        'title': 'Unexpected',
+      };
+      await expectLater(
+        repo.editMeal(mealId, edit, mealId),
+        throwsFormatException,
+      );
       account = 'b';
       await expectLater(repo.createMeal(mealBody(), mealId), throwsStateError);
-      expect(seen.length, 2);
+      await expectLater(repo.editMeal(mealId, edit, mealId), throwsStateError);
+      expect(seen.length, 4);
     },
   );
 }

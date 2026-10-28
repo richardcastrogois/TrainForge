@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização28/10 — seleção privada, metadados e clareza045
+
+116Dart/4254nós/4998arestas. Passagens10alterados/106inalterados e6/110;0removidos. ASTcode-only/HTML semLLM/semântica/clusterização. Backups em.local/graphify-backup-20261028-meal-edit.5ARB não interpretados. [Complemento](execucao/v1/meal-grouping-edit-client-verification.json).
+
 ## Atualização28/10 — cliente de refeições045
 
 113arquivosDart;4166nós/4863arestas. Passagem principal:27alterados/86inalterados/0removidos; ajuste final de data:3alterados/110inalterados. ASTincremental code-only e HTMLexportado, semLLM/semântica/clusterização; custoLLM0tokens.5ARB não interpretados. Backups exatos em.local/graphify-backup-20261028-meals/before,automatic eautomatic-final. Go/SQL permanecem nos contratos/Swagger/mapas. [Implementação e limites](execucao/v1/refeicoes-045.md).
