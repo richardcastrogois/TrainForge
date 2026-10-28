@@ -1,5 +1,10 @@
 # Graphify — cobertura e atualização
 
+## Atualização27/10 — configuração privada047
+
+107arquivosDart;3873nós/4476arestas.17arquivos alterados/novos,90inalterados e0removidos. ASTincremental code-only e HTMLexportado, semLLM/extração semântica/clusterização.5ARBnão interpretados. Backup em.local/graphify-backup-20261027-training-config/before e automático emautomatic, fora doGit. Go/SQL descritos emSwagger e mapas; grafo não comprova persistência nem aceite humano. [Configuração e limites](execucao/v1/configuracao-treino-047.md).
+
+
 ## Atualização27/10 — consumo localizado e restauração tardia
 
 102arquivosDart;3472nós/4015arestas. Primeira passagem6alterados/96inalterados e final2alterados/100inalterados,0removidos. ASTincremental code-only eHTMLexportado, semLLM/semântica/clusterização;5ARBnão interpretados. Backup em.local/graphify-backup-20261027-consumption-names comautomatic/automatic-final fora doGit. Go/SQLdescritos emSwagger/mapas, sem alegar extração semântica. Contagens abaixo preservam os checkpoints anteriores.

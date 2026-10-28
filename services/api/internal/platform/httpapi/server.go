@@ -14,11 +14,12 @@ type Status struct {
 	Status string `json:"status"`
 }
 type Problem struct {
-	Type      string `json:"type"`
-	Title     string `json:"title"`
-	Status    int    `json:"status"`
-	Code      string `json:"code"`
-	RequestID string `json:"requestId"`
+	Type      string            `json:"type"`
+	Title     string            `json:"title"`
+	Status    int               `json:"status"`
+	Code      string            `json:"code"`
+	RequestID string            `json:"requestId"`
+	Fields    map[string]string `json:"fields,omitempty"`
 }
 type requestKey struct{}
 
@@ -28,10 +29,13 @@ func JSON(w http.ResponseWriter, status int, value any) {
 	_ = json.NewEncoder(w).Encode(value)
 }
 func Failure(w http.ResponseWriter, r *http.Request, status int, code string) {
+	FailureFields(w, r, status, code, nil)
+}
+func FailureFields(w http.ResponseWriter, r *http.Request, status int, code string, fields map[string]string) {
 	w.Header().Set("Content-Type", "application/problem+json")
 	w.WriteHeader(status)
 	id, _ := r.Context().Value(requestKey{}).(string)
-	_ = json.NewEncoder(w).Encode(Problem{Type: "about:blank", Title: http.StatusText(status), Status: status, Code: code, RequestID: id})
+	_ = json.NewEncoder(w).Encode(Problem{Type: "about:blank", Title: http.StatusText(status), Status: status, Code: code, RequestID: id, Fields: fields})
 }
 
 // Live reports whether the actual process is accepting requests.

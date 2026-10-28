@@ -1693,4 +1693,207 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get readingPreferences => 'Leyendo preferencia';
+
+  @override
+  String get trainingConfiguration => 'Configuración de entrenamiento';
+
+  @override
+  String get trainingConfigIntro =>
+      'Indica dónde y cuándo puedes entrenar. Revisa todo antes de confirmar.';
+
+  @override
+  String get trainingConfigNotice =>
+      'Esta configuración describe tu rutina. No confirma tu aptitud física ni crea un entrenamiento. Los programas y las reglas necesitan revisión humana.';
+
+  @override
+  String get configPlaces => 'Lugares y contexto';
+
+  @override
+  String get configResources => 'Equipamiento disponible';
+
+  @override
+  String get configAvailability => 'Disponibilidad';
+
+  @override
+  String get configReview => 'Revisión final';
+
+  @override
+  String configStep(int step) {
+    return 'Paso $step de 4';
+  }
+
+  @override
+  String get configWhere => '¿Dónde puedes entrenar?';
+
+  @override
+  String get configHome => 'Casa';
+
+  @override
+  String get configPark => 'Plaza o parque';
+
+  @override
+  String get configGym => 'Gimnasio';
+
+  @override
+  String get configContext => '¿En qué contexto?';
+
+  @override
+  String get configPersonal => 'En mi rutina personal';
+
+  @override
+  String get configCaregiver =>
+      'Durante mis descansos de trabajo como cuidador';
+
+  @override
+  String get configCaregiverHint =>
+      'El entrenamiento es para ti, no para la persona que cuidas.';
+
+  @override
+  String get configDeclared => 'Voy a indicar el equipamiento que tengo';
+
+  @override
+  String get configNone => 'No tengo equipamiento';
+
+  @override
+  String get configUnknown => 'Todavía no sé qué tengo';
+
+  @override
+  String get configEquipmentHint =>
+      'No saber es distinto de no tener. Selecciona hasta 32 elementos por sus nombres originales de la fuente.';
+
+  @override
+  String get configSelected => 'Equipamiento seleccionado';
+
+  @override
+  String get configResourceWithdrawn =>
+      'Referencia no disponible. Elimínala o elige otra antes de confirmar.';
+
+  @override
+  String get configNoResources =>
+      'No se encontró equipamiento para esta búsqueda.';
+
+  @override
+  String get configTimezone => 'Zona horaria de tu rutina';
+
+  @override
+  String get configTimezoneHint =>
+      'Empieza con el desfase observado en este dispositivo. Puedes usar UTC, un desfase como -03:00 o una zona como America/Sao_Paulo. Un desfase fijo no sigue los cambios de horario.';
+
+  @override
+  String get configAvailabilityHint =>
+      'Indica el tiempo que tienes, no la duración de un entrenamiento prescrito. Puedes añadir varios descansos por día. El día se refiere al inicio del descanso.';
+
+  @override
+  String get configDay => 'Día de la semana';
+
+  @override
+  String get configMinutes => 'Minutos disponibles';
+
+  @override
+  String get configStart => 'Hora de inicio (opcional)';
+
+  @override
+  String get configUnfixed => 'Sin hora fija';
+
+  @override
+  String get configAddSlot => 'Añadir disponibilidad';
+
+  @override
+  String get configRemoveSlot => 'Eliminar disponibilidad';
+
+  @override
+  String get configMonday => 'Lunes';
+
+  @override
+  String get configTuesday => 'Martes';
+
+  @override
+  String get configWednesday => 'Miércoles';
+
+  @override
+  String get configThursday => 'Jueves';
+
+  @override
+  String get configFriday => 'Viernes';
+
+  @override
+  String get configSaturday => 'Sábado';
+
+  @override
+  String get configSunday => 'Domingo';
+
+  @override
+  String get configNext => 'Continuar';
+
+  @override
+  String get configEdit => 'Editar respuestas';
+
+  @override
+  String get configConfirm => 'Confirmar configuración';
+
+  @override
+  String get configSaved => 'Configuración confirmada';
+
+  @override
+  String get configSavedHint =>
+      'Tus respuestas están guardadas en tu cuenta. Todavía no hay un programa aprobado para mostrar.';
+
+  @override
+  String get configUnavailable =>
+      'No se pudo confirmar la configuración. Revisa la conexión e inténtalo de nuevo. Las respuestas del formulario siguen aquí.';
+
+  @override
+  String get configConflict =>
+      'La configuración de la cuenta cambió en otra confirmación. Tus respuestas se conservaron. Vuelve a cargar la versión guardada antes de editar.';
+
+  @override
+  String get configReload => 'Volver a cargar la configuración guardada';
+
+  @override
+  String get configReloadNotice =>
+      'Al volver a cargar se sustituyen solo las respuestas sin guardar de este formulario. ¿Continuar?';
+
+  @override
+  String get configUncertain =>
+      'La confirmación puede haber llegado al servidor. Repite la misma confirmación para comprobar el resultado sin crear otra versión. Si sales, revisa la configuración guardada al volver.';
+
+  @override
+  String get configLeaveCheck => 'Salir y revisar la configuración después';
+
+  @override
+  String get configChoosePlace => 'Selecciona al menos un lugar.';
+
+  @override
+  String get configChooseContext => 'Elige tu contexto.';
+
+  @override
+  String get configChooseStatus =>
+      'Indica si tienes equipamiento, no lo tienes o todavía no lo sabes.';
+
+  @override
+  String get configChooseResource =>
+      'Selecciona entre 1 y 32 elementos disponibles.';
+
+  @override
+  String get configInvalidTimezone =>
+      'Revisa la zona: UTC, desfase hasta 14:00 o una zona reconocida.';
+
+  @override
+  String get configChooseDay => 'Elige un día de la semana.';
+
+  @override
+  String get configInvalidMinutes =>
+      'Indica un número entero de 1 a 1440 minutos.';
+
+  @override
+  String get configInvalidSlot =>
+      'Revisa la hora y evita repetir el mismo día y hora. Mantén entre 1 y 28 disponibilidades.';
+
+  @override
+  String get privacySectionTrainingConfigurations =>
+      'Versiones de la configuración de entrenamiento';
+
+  @override
+  String get configEntryHint =>
+      'En tu cuenta, abre Configuración de entrenamiento. También está en Planes, en Crear mi plan. Revisa lugares, contexto, equipamiento y disponibilidad antes de confirmar.';
 }

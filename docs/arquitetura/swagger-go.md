@@ -2,6 +2,10 @@
 
 Decisão do autor em **21/10/2026**: documentar handlers com comentários e DTOs Go; gerar a especificação e disponibilizar Swagger UI no futuro serviço. Não manter um YAML manual como fonte concorrente.
 
+## Código27/10: API0.7.0 e configuração047
+
+29operações reais. GET/PUT de configuração privada e GET de recursos adicionados; DTOs de revisão/declaração/snapshot/recursos e campos de erro em Problem. Exportação inclui trainingConfigurations. Derivados Go/JSON/YAML gerados pelos tipos/comentários, sem edição manual. Swagger servido localmente confirmou0.7.0/29operações; não equivale a aceite humano da configuração. [Contrato](contratos-v1.md), [matriz e evidências](../execucao/v1/configuracao-treino-047.md).
+
 ## Código26/10: API0.6.1 e cliente integrado
 
 25operações, com leitura alimentar opcional porlocale/nomes revisados. Swagger gerado dos handlers/DTOs reais e conferido; querylocale/namesVersion, reviewedName/nameCatalog e409documentados. Cursores legados originais preservados. SQL/HTTP testados emdescartável e leitura pública real nos4idiomas. Schema11/26tabelas atualizado comautorização; cliente integrado,APK16 preparado e0nomes publicados. [Contrato](contratos-v1.md), [recibo](../execucao/v1/food-names-read-verification.json). Relatos abaixo preservam marcos históricos da fundação.

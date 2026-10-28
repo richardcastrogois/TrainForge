@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "schemaFrom": 11,
+  "schemaTo": 12,
+  "tables": 27,
+  "deliveredRowsUnchanged": true,
+  "accountCount": 1,
+  "entryCount": 1,
+  "foodVersionCount": 6369,
+  "trainingConfigurationCount": 0,
+  "schemaOnlyCheckpointLocal": true,
+  "checkpointSha256": "a02cb6022d03e21562ef530a139965b766f183a93235a9cb20bae524fdd0e5d3",
+  "runtimeGrantsApplied": true,
+  "realUserConfigurationCreated": false,
+  "limits": [
+    "Schema-only checkpoint is not a restored full backup.",
+    "Native/human configuration confirmation is not validated by migration."
+  ]
+}

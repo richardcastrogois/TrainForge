@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "passed": true,
+  "scope": "disposable-configuration-sql-http-not-google-login",
+  "schemaTested": 12,
+  "deliveredSchemaMigrated": false,
+  "deliveredRecordsUnchanged": true,
+  "disposableDatabaseRemoved": true,
+  "clusterRunningStatePreserved": true,
+  "optimisticRevisionAndRetryVerified": true,
+  "immutableVersionsVerified": true,
+  "sourceScopedAndWithdrawnResourcesVerified": true,
+  "liveCredentialRevalidationVerified": true,
+  "privateExportAndErasureVerified": true,
+  "runtimeDirectWritesRejected": true,
+  "limits": [
+    "No real configuration,account or intake created/deleted.",
+    "Restore,Flutter and native acceptance need their own verification."
+  ]
+}

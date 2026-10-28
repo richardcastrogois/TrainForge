@@ -324,6 +324,7 @@ class _PrivacyPageState extends State<PrivacyPage> {
 
 String sectionLabel(BuildContext context, String section) => switch (section) {
   'account' => context.l10n.privacySectionAccount,
+  'trainingConfigurations' => context.l10n.privacySectionTrainingConfigurations,
   'sessions' => context.l10n.privacySectionSessions,
   'enrollments' => context.l10n.privacySectionEnrollments,
   'occurrences' => context.l10n.privacySectionSchedule,

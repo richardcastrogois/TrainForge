@@ -1680,4 +1680,203 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get readingPreferences => 'Loading preference';
+
+  @override
+  String get trainingConfiguration => 'Training setup';
+
+  @override
+  String get trainingConfigIntro =>
+      'Tell us where and when you can train. Review everything before confirming.';
+
+  @override
+  String get trainingConfigNotice =>
+      'This setup describes your routine. It does not confirm fitness or create a workout. Programs and rules need human review.';
+
+  @override
+  String get configPlaces => 'Places and context';
+
+  @override
+  String get configResources => 'Available equipment';
+
+  @override
+  String get configAvailability => 'Availability';
+
+  @override
+  String get configReview => 'Final review';
+
+  @override
+  String configStep(int step) {
+    return 'Step $step of 4';
+  }
+
+  @override
+  String get configWhere => 'Where can you train?';
+
+  @override
+  String get configHome => 'Home';
+
+  @override
+  String get configPark => 'Square or park';
+
+  @override
+  String get configGym => 'Gym';
+
+  @override
+  String get configContext => 'In what context?';
+
+  @override
+  String get configPersonal => 'In my personal routine';
+
+  @override
+  String get configCaregiver => 'During my work breaks as a caregiver';
+
+  @override
+  String get configCaregiverHint =>
+      'The workout is for you, not the person you care for.';
+
+  @override
+  String get configDeclared => 'I will select the equipment I have';
+
+  @override
+  String get configNone => 'I have no equipment';
+
+  @override
+  String get configUnknown => 'I do not know what I have yet';
+
+  @override
+  String get configEquipmentHint =>
+      'Not knowing is different from having none. Select up to 32 items using the original source names.';
+
+  @override
+  String get configSelected => 'Selected equipment';
+
+  @override
+  String get configResourceWithdrawn =>
+      'Reference unavailable. Remove it or select another before confirming.';
+
+  @override
+  String get configNoResources => 'No equipment found for this search.';
+
+  @override
+  String get configTimezone => 'Time zone for your routine';
+
+  @override
+  String get configTimezoneHint =>
+      'Starts with the offset observed on this device. You can use UTC, an offset such as -03:00 or a zone such as America/Sao_Paulo. A fixed offset does not follow daylight saving changes.';
+
+  @override
+  String get configAvailabilityHint =>
+      'Enter the time you have, not a prescribed workout duration. You can add several breaks per day. The day refers to the start of the break.';
+
+  @override
+  String get configDay => 'Day of the week';
+
+  @override
+  String get configMinutes => 'Available minutes';
+
+  @override
+  String get configStart => 'Start time (optional)';
+
+  @override
+  String get configUnfixed => 'No fixed time';
+
+  @override
+  String get configAddSlot => 'Add availability';
+
+  @override
+  String get configRemoveSlot => 'Remove availability';
+
+  @override
+  String get configMonday => 'Monday';
+
+  @override
+  String get configTuesday => 'Tuesday';
+
+  @override
+  String get configWednesday => 'Wednesday';
+
+  @override
+  String get configThursday => 'Thursday';
+
+  @override
+  String get configFriday => 'Friday';
+
+  @override
+  String get configSaturday => 'Saturday';
+
+  @override
+  String get configSunday => 'Sunday';
+
+  @override
+  String get configNext => 'Continue';
+
+  @override
+  String get configEdit => 'Edit answers';
+
+  @override
+  String get configConfirm => 'Confirm setup';
+
+  @override
+  String get configSaved => 'Setup confirmed';
+
+  @override
+  String get configSavedHint =>
+      'Your answers are saved to your account. There is no approved program to show yet.';
+
+  @override
+  String get configUnavailable =>
+      'The setup could not be confirmed. Check the connection and try again. Your form answers remain here.';
+
+  @override
+  String get configConflict =>
+      'The account setup changed in another confirmation. Your answers were preserved. Reload the saved version before editing again.';
+
+  @override
+  String get configReload => 'Reload saved setup';
+
+  @override
+  String get configReloadNotice =>
+      'Reloading replaces only the unsaved answers in this form. Continue?';
+
+  @override
+  String get configUncertain =>
+      'The confirmation may have reached the server. Retry the same confirmation to check the result without creating another version. If you leave, check the saved setup when you return.';
+
+  @override
+  String get configLeaveCheck => 'Leave and check setup later';
+
+  @override
+  String get configChoosePlace => 'Select at least one place.';
+
+  @override
+  String get configChooseContext => 'Choose your context.';
+
+  @override
+  String get configChooseStatus =>
+      'Choose whether you have equipment, have none or do not know yet.';
+
+  @override
+  String get configChooseResource => 'Select between 1 and 32 available items.';
+
+  @override
+  String get configInvalidTimezone =>
+      'Check the time zone: UTC, an offset up to 14:00 or a recognized zone.';
+
+  @override
+  String get configChooseDay => 'Choose a day of the week.';
+
+  @override
+  String get configInvalidMinutes =>
+      'Enter a whole number from 1 to 1440 minutes.';
+
+  @override
+  String get configInvalidSlot =>
+      'Check the time and avoid repeating the same day and time. Keep between 1 and 28 availability slots.';
+
+  @override
+  String get privacySectionTrainingConfigurations => 'Training setup versions';
+
+  @override
+  String get configEntryHint =>
+      'In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming.';
 }

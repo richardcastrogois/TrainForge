@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `6e90d3b33d0899ca`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `02f82d50940a80dc`.
 
 ## Atual: referências entre widgets
 
@@ -27,25 +27,26 @@ flowchart LR
     node16["PrivacyPage"]
     node17["ProfilePage"]
     node18["StatsPage"]
-    node19["WorkoutDayPage"]
-    node20["WorkoutPlanPage"]
-    node21["WorkoutsPage"]
-    node22["AccountPage"]
-    node23["AppShell"]
-    node24["AuthGate"]
-    node25["EvaluationGuidePage"]
-    node26["ProductShell"]
-    node27["StartupPage"]
+    node19["TrainingConfigurationPage"]
+    node20["WorkoutDayPage"]
+    node21["WorkoutPlanPage"]
+    node22["WorkoutsPage"]
+    node23["AccountPage"]
+    node24["AppShell"]
+    node25["AuthGate"]
+    node26["EvaluationGuidePage"]
+    node27["ProductShell"]
+    node28["StartupPage"]
     node2 -->|"referencia widget"| node0
     node2 -->|"referencia widget"| node1
     node2 -->|"referencia widget"| node4
     node2 -->|"referencia widget"| node6
     node2 -->|"referencia widget"| node16
-    node2 -->|"referencia widget"| node24
+    node2 -->|"referencia widget"| node25
     node4 -->|"referencia widget"| node3
     node6 -->|"referencia widget"| node5
     node7 -->|"referencia widget"| node2
-    node7 -->|"referencia widget"| node19
+    node7 -->|"referencia widget"| node20
     node9 -->|"referencia widget"| node10
     node10 -->|"referencia widget"| node11
     node11 -->|"referencia widget"| node10
@@ -54,36 +55,36 @@ flowchart LR
     node12 -->|"referencia widget"| node10
     node12 -->|"referencia widget"| node11
     node13 -->|"referencia widget"| node2
-    node13 -->|"referencia widget"| node24
+    node13 -->|"referencia widget"| node25
     node14 -->|"referencia widget"| node2
-    node14 -->|"referencia widget"| node24
+    node14 -->|"referencia widget"| node25
     node15 -->|"referencia widget"| node2
     node15 -->|"referencia widget"| node13
     node15 -->|"referencia widget"| node14
     node17 -->|"referencia widget"| node2
     node18 -->|"referencia widget"| node2
     node18 -->|"referencia widget"| node15
-    node19 -->|"referencia widget"| node2
     node20 -->|"referencia widget"| node2
-    node20 -->|"referencia widget"| node19
     node21 -->|"referencia widget"| node2
-    node21 -->|"referencia widget"| node15
     node21 -->|"referencia widget"| node20
-    node22 -->|"referencia widget"| node0
-    node22 -->|"referencia widget"| node1
-    node22 -->|"referencia widget"| node16
-    node23 -->|"referencia widget"| node7
-    node23 -->|"referencia widget"| node17
-    node23 -->|"referencia widget"| node18
-    node23 -->|"referencia widget"| node21
-    node24 -->|"referencia widget"| node2
-    node24 -->|"referencia widget"| node26
-    node24 -->|"referencia widget"| node27
-    node25 -->|"referencia widget"| node4
-    node25 -->|"referencia widget"| node6
+    node22 -->|"referencia widget"| node2
+    node22 -->|"referencia widget"| node15
+    node22 -->|"referencia widget"| node21
+    node23 -->|"referencia widget"| node0
+    node23 -->|"referencia widget"| node1
+    node23 -->|"referencia widget"| node16
+    node24 -->|"referencia widget"| node7
+    node24 -->|"referencia widget"| node17
+    node24 -->|"referencia widget"| node18
+    node24 -->|"referencia widget"| node22
+    node25 -->|"referencia widget"| node2
+    node25 -->|"referencia widget"| node27
+    node25 -->|"referencia widget"| node28
     node26 -->|"referencia widget"| node4
-    node26 -->|"referencia widget"| node12
-    node26 -->|"referencia widget"| node22
+    node26 -->|"referencia widget"| node6
+    node27 -->|"referencia widget"| node4
+    node27 -->|"referencia widget"| node12
+    node27 -->|"referencia widget"| node23
 ```
 
 | Tela/widget | Localização |
@@ -107,6 +108,7 @@ flowchart LR
 | PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:10](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | ProfilePage | [lib/features/profile/presentation/pages/profile_page.dart:9](../../../lib/features/profile/presentation/pages/profile_page.dart) |
 | StatsPage | [lib/features/stats/presentation/pages/stats_page.dart:10](../../../lib/features/stats/presentation/pages/stats_page.dart) |
+| TrainingConfigurationPage | [lib/features/training_configuration/presentation/training_configuration_page.dart:35](../../../lib/features/training_configuration/presentation/training_configuration_page.dart) |
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
@@ -114,7 +116,7 @@ flowchart LR
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
 | AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
-| ProductShell | [lib/shared/widgets/product_shell.dart:19](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | [lib/shared/widgets/product_shell.dart:21](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 
 ## Chamadas usadas por cada feature

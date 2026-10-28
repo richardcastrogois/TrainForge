@@ -105,6 +105,9 @@ def provision():
 def grant_runtime(db=NAME):
     verify_owned()
     readonly=["sources","content_versions","content_withdrawals","program_sessions","program_items","food_versions","food_import_batches","food_batch_versions","food_withdrawals","food_name_versions","food_name_withdrawals","food_name_catalogs"]
+    if sql("SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL;",db)=="t":
+        readonly += ["training_configuration_versions","training_configuration_resources"]
+        sql("GRANT EXECUTE ON FUNCTION trainforge_v1.save_training_configuration(uuid,uuid,bytea,jsonb,uuid),trainforge_v1.erase_training_configuration(uuid,uuid,bytea,bytea) TO trainforge_runtime;",db)
     writable=["users","auth_families","refresh_tokens","access_tokens","enrollments","schedule_occurrences","activity_sessions","activity_events","idempotency_records","food_entries","account_deletion_intents"]
     sql("GRANT INSERT,SELECT(erased_at) ON trainforge_v1.account_erasures TO trainforge_runtime; GRANT EXECUTE ON FUNCTION trainforge_v1.erase_private_foods(uuid,uuid,bytea,bytea) TO trainforge_runtime; GRANT EXECUTE ON FUNCTION trainforge_v1.create_private_food(uuid,uuid,bytea,text,text,text,text,text,text,jsonb,jsonb) TO trainforge_runtime;",db)
     sql("GRANT USAGE ON SCHEMA trainforge_v1 TO trainforge_runtime; GRANT SELECT ON "+",".join("trainforge_v1."+x for x in readonly)+" TO trainforge_runtime; GRANT SELECT,INSERT,UPDATE,DELETE ON "+",".join("trainforge_v1."+x for x in writable)+" TO trainforge_runtime;",db)

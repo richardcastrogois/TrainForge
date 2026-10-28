@@ -13,7 +13,8 @@ import 'figma_components.dart';
 
 class AccountPage extends StatelessWidget {
   final AuthController controller;
-  const AccountPage({super.key, required this.controller});
+  final VoidCallback? configure;
+  const AccountPage({super.key, required this.controller, this.configure});
   void privacy(BuildContext context) => Navigator.push<void>(
     context,
     MaterialPageRoute(
@@ -133,13 +134,15 @@ class AccountPage extends StatelessWidget {
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(
-                          title: context.l10n.goalsRoutine,
+                          title: context.l10n.trainingConfiguration,
                           subtitle: context.l10n.equipmentDays,
                           asset: 'plan',
-                          onTap: () => openEvaluationGuide(
-                            context,
-                            EvaluationTopic.firstAccess,
-                          ),
+                          onTap:
+                              configure ??
+                              () => openEvaluationGuide(
+                                context,
+                                EvaluationTopic.firstAccess,
+                              ),
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(

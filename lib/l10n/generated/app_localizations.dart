@@ -3071,6 +3071,366 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Loading preference'**
   String get readingPreferences;
+
+  /// No description provided for @trainingConfiguration.
+  ///
+  /// In en, this message translates to:
+  /// **'Training setup'**
+  String get trainingConfiguration;
+
+  /// No description provided for @trainingConfigIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us where and when you can train. Review everything before confirming.'**
+  String get trainingConfigIntro;
+
+  /// No description provided for @trainingConfigNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'This setup describes your routine. It does not confirm fitness or create a workout. Programs and rules need human review.'**
+  String get trainingConfigNotice;
+
+  /// No description provided for @configPlaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Places and context'**
+  String get configPlaces;
+
+  /// No description provided for @configResources.
+  ///
+  /// In en, this message translates to:
+  /// **'Available equipment'**
+  String get configResources;
+
+  /// No description provided for @configAvailability.
+  ///
+  /// In en, this message translates to:
+  /// **'Availability'**
+  String get configAvailability;
+
+  /// No description provided for @configReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Final review'**
+  String get configReview;
+
+  /// No description provided for @configStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of 4'**
+  String configStep(int step);
+
+  /// No description provided for @configWhere.
+  ///
+  /// In en, this message translates to:
+  /// **'Where can you train?'**
+  String get configWhere;
+
+  /// No description provided for @configHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get configHome;
+
+  /// No description provided for @configPark.
+  ///
+  /// In en, this message translates to:
+  /// **'Square or park'**
+  String get configPark;
+
+  /// No description provided for @configGym.
+  ///
+  /// In en, this message translates to:
+  /// **'Gym'**
+  String get configGym;
+
+  /// No description provided for @configContext.
+  ///
+  /// In en, this message translates to:
+  /// **'In what context?'**
+  String get configContext;
+
+  /// No description provided for @configPersonal.
+  ///
+  /// In en, this message translates to:
+  /// **'In my personal routine'**
+  String get configPersonal;
+
+  /// No description provided for @configCaregiver.
+  ///
+  /// In en, this message translates to:
+  /// **'During my work breaks as a caregiver'**
+  String get configCaregiver;
+
+  /// No description provided for @configCaregiverHint.
+  ///
+  /// In en, this message translates to:
+  /// **'The workout is for you, not the person you care for.'**
+  String get configCaregiverHint;
+
+  /// No description provided for @configDeclared.
+  ///
+  /// In en, this message translates to:
+  /// **'I will select the equipment I have'**
+  String get configDeclared;
+
+  /// No description provided for @configNone.
+  ///
+  /// In en, this message translates to:
+  /// **'I have no equipment'**
+  String get configNone;
+
+  /// No description provided for @configUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'I do not know what I have yet'**
+  String get configUnknown;
+
+  /// No description provided for @configEquipmentHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Not knowing is different from having none. Select up to 32 items using the original source names.'**
+  String get configEquipmentHint;
+
+  /// No description provided for @configSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected equipment'**
+  String get configSelected;
+
+  /// No description provided for @configResourceWithdrawn.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference unavailable. Remove it or select another before confirming.'**
+  String get configResourceWithdrawn;
+
+  /// No description provided for @configNoResources.
+  ///
+  /// In en, this message translates to:
+  /// **'No equipment found for this search.'**
+  String get configNoResources;
+
+  /// No description provided for @configTimezone.
+  ///
+  /// In en, this message translates to:
+  /// **'Time zone for your routine'**
+  String get configTimezone;
+
+  /// No description provided for @configTimezoneHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts with the offset observed on this device. You can use UTC, an offset such as -03:00 or a zone such as America/Sao_Paulo. A fixed offset does not follow daylight saving changes.'**
+  String get configTimezoneHint;
+
+  /// No description provided for @configAvailabilityHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the time you have, not a prescribed workout duration. You can add several breaks per day. The day refers to the start of the break.'**
+  String get configAvailabilityHint;
+
+  /// No description provided for @configDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Day of the week'**
+  String get configDay;
+
+  /// No description provided for @configMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Available minutes'**
+  String get configMinutes;
+
+  /// No description provided for @configStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start time (optional)'**
+  String get configStart;
+
+  /// No description provided for @configUnfixed.
+  ///
+  /// In en, this message translates to:
+  /// **'No fixed time'**
+  String get configUnfixed;
+
+  /// No description provided for @configAddSlot.
+  ///
+  /// In en, this message translates to:
+  /// **'Add availability'**
+  String get configAddSlot;
+
+  /// No description provided for @configRemoveSlot.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove availability'**
+  String get configRemoveSlot;
+
+  /// No description provided for @configMonday.
+  ///
+  /// In en, this message translates to:
+  /// **'Monday'**
+  String get configMonday;
+
+  /// No description provided for @configTuesday.
+  ///
+  /// In en, this message translates to:
+  /// **'Tuesday'**
+  String get configTuesday;
+
+  /// No description provided for @configWednesday.
+  ///
+  /// In en, this message translates to:
+  /// **'Wednesday'**
+  String get configWednesday;
+
+  /// No description provided for @configThursday.
+  ///
+  /// In en, this message translates to:
+  /// **'Thursday'**
+  String get configThursday;
+
+  /// No description provided for @configFriday.
+  ///
+  /// In en, this message translates to:
+  /// **'Friday'**
+  String get configFriday;
+
+  /// No description provided for @configSaturday.
+  ///
+  /// In en, this message translates to:
+  /// **'Saturday'**
+  String get configSaturday;
+
+  /// No description provided for @configSunday.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunday'**
+  String get configSunday;
+
+  /// No description provided for @configNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get configNext;
+
+  /// No description provided for @configEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit answers'**
+  String get configEdit;
+
+  /// No description provided for @configConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm setup'**
+  String get configConfirm;
+
+  /// No description provided for @configSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Setup confirmed'**
+  String get configSaved;
+
+  /// No description provided for @configSavedHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answers are saved to your account. There is no approved program to show yet.'**
+  String get configSavedHint;
+
+  /// No description provided for @configUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'The setup could not be confirmed. Check the connection and try again. Your form answers remain here.'**
+  String get configUnavailable;
+
+  /// No description provided for @configConflict.
+  ///
+  /// In en, this message translates to:
+  /// **'The account setup changed in another confirmation. Your answers were preserved. Reload the saved version before editing again.'**
+  String get configConflict;
+
+  /// No description provided for @configReload.
+  ///
+  /// In en, this message translates to:
+  /// **'Reload saved setup'**
+  String get configReload;
+
+  /// No description provided for @configReloadNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Reloading replaces only the unsaved answers in this form. Continue?'**
+  String get configReloadNotice;
+
+  /// No description provided for @configUncertain.
+  ///
+  /// In en, this message translates to:
+  /// **'The confirmation may have reached the server. Retry the same confirmation to check the result without creating another version. If you leave, check the saved setup when you return.'**
+  String get configUncertain;
+
+  /// No description provided for @configLeaveCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave and check setup later'**
+  String get configLeaveCheck;
+
+  /// No description provided for @configChoosePlace.
+  ///
+  /// In en, this message translates to:
+  /// **'Select at least one place.'**
+  String get configChoosePlace;
+
+  /// No description provided for @configChooseContext.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your context.'**
+  String get configChooseContext;
+
+  /// No description provided for @configChooseStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose whether you have equipment, have none or do not know yet.'**
+  String get configChooseStatus;
+
+  /// No description provided for @configChooseResource.
+  ///
+  /// In en, this message translates to:
+  /// **'Select between 1 and 32 available items.'**
+  String get configChooseResource;
+
+  /// No description provided for @configInvalidTimezone.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the time zone: UTC, an offset up to 14:00 or a recognized zone.'**
+  String get configInvalidTimezone;
+
+  /// No description provided for @configChooseDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a day of the week.'**
+  String get configChooseDay;
+
+  /// No description provided for @configInvalidMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a whole number from 1 to 1440 minutes.'**
+  String get configInvalidMinutes;
+
+  /// No description provided for @configInvalidSlot.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the time and avoid repeating the same day and time. Keep between 1 and 28 availability slots.'**
+  String get configInvalidSlot;
+
+  /// No description provided for @privacySectionTrainingConfigurations.
+  ///
+  /// In en, this message translates to:
+  /// **'Training setup versions'**
+  String get privacySectionTrainingConfigurations;
+
+  /// No description provided for @configEntryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'In your account, open Training setup. It is also under Plans, in Create my plan. Review places, context, equipment and availability before confirming.'**
+  String get configEntryHint;
 }
 
 class _AppLocalizationsDelegate

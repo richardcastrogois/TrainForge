@@ -2,6 +2,27 @@
 
 A [documentação dinâmica](README.md) tem mapas de telas, chamadas HTTP, banco e arquitetura proposta no próprio repositório, sem servidor de leitura. Referências de construtor/import são evidência estática; não demonstram clique bem-sucedido ou condição de navegação.
 
+## Configuração047 integrada em27/10
+
+Conta e Planos abrem o mesmo serviço privado, composto por identidade.555mensagens/idioma; configuração em quatro etapas preserva respostas em memória e pede confirmação antes do descarte. API0.7.0/29operações e schema12/27tabelas ativos localmente; APKdebug0.4.0+22 instalado. [Detalhes e aceite pendente](../execucao/v1/configuracao-treino-047.md). Checkpoints abaixo são históricos.
+
+```mermaid
+flowchart TD
+    account["Conta / Configuração de treino"] --> load["GET próprio: versão ou ausência"]
+    plans["Planos / Criar meu plano"] --> load
+    load --> places["1. Locais e contexto"]
+    places --> resources["2. Recursos: declarados / nenhum / desconhecidos"]
+    resources --> time["3. Disponibilidade e fuso"]
+    time --> review["4. Revisão final / voltar para corrigir"]
+    review --> confirm["PUT completo e revisado"]
+    confirm --> saved["Versão confirmada na conta"]
+    confirm --> uncertain["Resposta incerta: repetir mesmo corpo/chave"]
+    confirm --> conflict["Conflito: preservar e oferecer recarregar"]
+    places --> leave["Sair alterado: continuar editando ou descartar"]
+    time --> leave
+    saved -. "015 ainda pendente" .-> selection["Seleção permitida, sem geração IA"]
+```
+
 ## Fluxo atual lido no Flutter
 
 Checkpoint24/10: frontend07–12 nos fluxos disponíveis, Androiddebug0.3.0+13. Biblioteca/detalhe, composição/cadastro/histórico/subtotais/consumo, privacidade eajuda usam primitives atuais; proteção de rascunho/envio/resposta incerta e busca particular independente.101testesFlutter/analyze0issues. [Critérios e gates](../execucao/v1/frontend-fidelidade-figma.md). Configuração persistida, treino/atividade e demais funções sem contrato/conteúdo continuam indisponíveis; referênciasFigma faltantes e execução nativa iOS pendentes. Pontos01–06, identidade/temas/rolagem e dados reais preservados.

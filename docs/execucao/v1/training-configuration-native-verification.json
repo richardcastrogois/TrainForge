@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "apk": {
+    "variant": "debug",
+    "version": "0.4.0+22",
+    "sha256": "87de38a82f978fbc81a7d8b802e701b56cf6221df984bcb394860638c32d90cb",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "installedHashMatched": true
+  },
+  "apiVersion": "0.7.0",
+  "httpOperations": 29,
+  "device": {
+    "avd": "TrainForge_Benchmark",
+    "serial": "emulator-5554",
+    "android": 15,
+    "resolution": "1080x2340"
+  },
+  "existingSessionRestored": true,
+  "realGoogleLoginRetested": false,
+  "firstLoadConfirmedAbsence": true,
+  "accountRouteOpened": true,
+  "firstStepVisibleWithUncheckedOptions": true,
+  "firstStepCaptureSha256": "7cb56c716bd7b858777d87ed2c941a486e12ad13c57af201a0c678075ced0b9d",
+  "agentSubmittedPersonalConfiguration": false,
+  "humanConfirmationRecoveryAndEdit": "pending",
+  "existingDeliveredRecordsPreservedAtActivation": true,
+  "privateCapturesPublished": false,
+  "limits": [
+    "Native first-step/absence check only; no human setup answers were invented.",
+    "Four-locale/320px/text2x review and retry flows are isolated widget tests.",
+    "Native iOS/release and usability with all audiences remain separate gates."
+  ]
+}

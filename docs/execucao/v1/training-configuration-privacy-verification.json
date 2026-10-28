@@ -1,0 +1,30 @@
+{
+  "scope": "configuration-privacy-erasure-and-restore-disposable",
+  "passed": true,
+  "restore": {
+    "scope": "historical-account-backup-erasure-gate",
+    "snapshotSha256": "0765901da26e35ffbd30540976237215a0df49acd65ac63f995b591f50dbbce7",
+    "resurrectedAccountsBeforeGate": 1,
+    "erasedAccountsAfterGate": 0,
+    "otherAccountAndEditorialPreserved": true,
+    "reapplicationIdempotent": true,
+    "temporaryRestoreDatabaseAndBackupRemoved": true,
+    "targetPromoted": false
+  },
+  "temporaryDatabaseRemoved": true,
+  "deliveredAccountsAndEditorialUnchanged": true,
+  "ownershipAndCursorBoundariesVerified": true,
+  "unknownPrivateStoreFailsClosed": true,
+  "recentSessionAndExpiringFamilyBoundConfirmationVerified": true,
+  "atomicDeletionAndRollbackVerified": true,
+  "otherAccountAndEditorialPreserved": true,
+  "allDeviceTokensRevokedOnDeletion": true,
+  "runtimeEditorialAndLedgerPrivilegesVerified": true,
+  "boundedMaintenanceAndReplayRetentionVerified": true,
+  "confirmationClockAuthority": "PostgreSQL",
+  "realGoogleLoginValidated": false,
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "schemaTested": 12,
+  "configurationExportErasureRestoreVerified": true
+}

@@ -13,6 +13,7 @@ import (
 	"testing"
 	"time"
 	"trainforge.local/api/internal/auth"
+	"trainforge.local/api/internal/trainingconfig"
 )
 
 type fixtureVerifier struct{ subject string }
@@ -68,8 +69,24 @@ func execFixture(t *testing.T, ctx context.Context, pool *pgxpool.Pool, query st
 		t.Fatalf("fixture SQL %v", err)
 	}
 }
+func fixtureConfiguration() trainingconfig.Configuration {
+	return trainingconfig.Configuration{Environments: []string{"home"}, Context: "personal", Timezone: "UTC", Resources: trainingconfig.Resources{Status: "unknown", Items: []trainingconfig.ResourceRef{}}, Availability: []trainingconfig.Availability{{Weekday: 1, MinutesAvailable: 7}}}
+}
+func seedConfiguration(t *testing.T, ctx context.Context, w *pgxpool.Pool, user string) {
+	t.Helper()
+	var present bool
+	if w.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL").Scan(&present) != nil {
+		t.Fatal("configuration schema check")
+	}
+	if !present {
+		return
+	}
+	raw, _ := json.Marshal(fixtureConfiguration())
+	execFixture(t, ctx, w, "INSERT INTO trainforge_v1.training_configuration_versions(user_id,revision,configuration) VALUES($1,1,$2)", user, raw)
+}
 func seedOwned(t *testing.T, ctx context.Context, w *pgxpool.Pool, user, id, food string) {
 	t.Helper()
+	seedConfiguration(t, ctx, w, user)
 	execFixture(t, ctx, w, `INSERT INTO trainforge_v1.enrollments(id,user_id,program_id,program_sha,status) VALUES($1,$2,'fixture-program',repeat('a',64),'active')`, id, user)
 	execFixture(t, ctx, w, `INSERT INTO trainforge_v1.schedule_occurrences(id,user_id,enrollment_id,source_session_key,planned_for,timezone,program_id,program_sha)
  VALUES($1,$2,$1,'fixture-session',now(),'UTC','fixture-program',repeat('a',64))`, id, user)
@@ -226,7 +243,7 @@ func TestPrivacyPostgresOwnerExportConfirmedDeletionAndRollback(t *testing.T) {
 	if writer.QueryRow(ctx, "SELECT count(*) FROM trainforge_v1.account_erasures WHERE user_id=$1", a.User.ID).Scan(&count) != nil || count != 1 {
 		t.Fatal("restore ledger missing")
 	}
-	for table, owner := range map[string]string{"users": "id", "auth_families": "user_id", "enrollments": "user_id", "schedule_occurrences": "user_id", "activity_sessions": "user_id", "activity_events": "user_id", "food_entries": "user_id", "food_versions": "owner_id", "idempotency_records": "user_id", "account_deletion_intents": "user_id"} {
+	for table, owner := range map[string]string{"training_configuration_versions": "user_id", "users": "id", "auth_families": "user_id", "enrollments": "user_id", "schedule_occurrences": "user_id", "activity_sessions": "user_id", "activity_events": "user_id", "food_entries": "user_id", "food_versions": "owner_id", "idempotency_records": "user_id", "account_deletion_intents": "user_id"} {
 		if writer.QueryRow(ctx, "SELECT count(*) FROM trainforge_v1."+table+" WHERE "+owner+"=$1", a.User.ID).Scan(&count) != nil || count != 0 {
 			t.Fatalf("owned rows survived in %s", table)
 		}
@@ -240,6 +257,8 @@ func TestPrivacyRestorePrepareFixture(t *testing.T) {
 	ctx, w, runtime := privacyPools(t)
 	_, _, a := fixtureLogin(t, ctx, runtime, "privacy-restore-a")
 	_, _, b := fixtureLogin(t, ctx, runtime, "privacy-restore-b")
+	seedConfiguration(t, ctx, w, a.User.ID)
+	seedConfiguration(t, ctx, w, b.User.ID)
 	execFixture(t, ctx, w, `INSERT INTO trainforge_v1.food_versions(food_id,version_sha,owner_id,name_original,nutrients,provenance)
  VALUES('restore-private-a',repeat('a',64),$1,'Restore fixture A','[]','{}'),
  ('restore-private-b',repeat('a',64),$2,'Restore fixture B','[]','{}')`, a.User.ID, b.User.ID)

@@ -1688,6 +1688,207 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get readingPreferences => 'Lendo preferência';
+
+  @override
+  String get trainingConfiguration => 'Configuração de treino';
+
+  @override
+  String get trainingConfigIntro =>
+      'Conta onde e quando podes treinar. Revê tudo antes de confirmar.';
+
+  @override
+  String get trainingConfigNotice =>
+      'Esta configuração descreve a tua rotina. Não confirma aptidão física nem cria um treino. Programas e regras precisam de revisão humana.';
+
+  @override
+  String get configPlaces => 'Locais e contexto';
+
+  @override
+  String get configResources => 'Recursos disponíveis';
+
+  @override
+  String get configAvailability => 'Disponibilidade';
+
+  @override
+  String get configReview => 'Revisão final';
+
+  @override
+  String configStep(int step) {
+    return 'Etapa $step de 4';
+  }
+
+  @override
+  String get configWhere => 'Onde podes treinar?';
+
+  @override
+  String get configHome => 'Casa';
+
+  @override
+  String get configPark => 'Praça ou parque';
+
+  @override
+  String get configGym => 'Ginásio';
+
+  @override
+  String get configContext => 'Em que contexto?';
+
+  @override
+  String get configPersonal => 'Na minha rotina pessoal';
+
+  @override
+  String get configCaregiver => 'Nas minhas pausas de trabalho como cuidador';
+
+  @override
+  String get configCaregiverHint =>
+      'O treino é para ti. Não é para a pessoa de quem cuidas.';
+
+  @override
+  String get configDeclared => 'Vou indicar os recursos que tenho';
+
+  @override
+  String get configNone => 'Não tenho equipamentos';
+
+  @override
+  String get configUnknown => 'Ainda não sei quais tenho';
+
+  @override
+  String get configEquipmentHint =>
+      'Não saber é diferente de não ter. Seleciona até 32 recursos pelos nomes originais da fonte.';
+
+  @override
+  String get configSelected => 'Recursos selecionados';
+
+  @override
+  String get configResourceWithdrawn =>
+      'Referência indisponível. Remove-a ou escolhe outra antes de confirmar.';
+
+  @override
+  String get configNoResources => 'Nenhum recurso encontrado nesta consulta.';
+
+  @override
+  String get configTimezone => 'Fuso horário da tua rotina';
+
+  @override
+  String get configTimezoneHint =>
+      'Começa com o desvio observado neste aparelho. Podes usar UTC, um desvio como -03:00 ou uma zona como America/Sao_Paulo. Um desvio fixo não acompanha mudanças de hora.';
+
+  @override
+  String get configAvailabilityHint =>
+      'Indica o tempo que tens, não a duração de um treino prescrito. Podes indicar várias pausas por dia. O dia refere-se ao início da pausa.';
+
+  @override
+  String get configDay => 'Dia da semana';
+
+  @override
+  String get configMinutes => 'Minutos disponíveis';
+
+  @override
+  String get configStart => 'Hora de início (opcional)';
+
+  @override
+  String get configUnfixed => 'Sem hora fixa';
+
+  @override
+  String get configAddSlot => 'Adicionar disponibilidade';
+
+  @override
+  String get configRemoveSlot => 'Remover disponibilidade';
+
+  @override
+  String get configMonday => 'Segunda-feira';
+
+  @override
+  String get configTuesday => 'Terça-feira';
+
+  @override
+  String get configWednesday => 'Quarta-feira';
+
+  @override
+  String get configThursday => 'Quinta-feira';
+
+  @override
+  String get configFriday => 'Sexta-feira';
+
+  @override
+  String get configSaturday => 'Sábado';
+
+  @override
+  String get configSunday => 'Domingo';
+
+  @override
+  String get configNext => 'Continuar';
+
+  @override
+  String get configEdit => 'Editar respostas';
+
+  @override
+  String get configConfirm => 'Confirmar configuração';
+
+  @override
+  String get configSaved => 'Configuração confirmada';
+
+  @override
+  String get configSavedHint =>
+      'As respostas estão guardadas na tua conta. Ainda não existe um programa aprovado para apresentar.';
+
+  @override
+  String get configUnavailable =>
+      'Não foi possível confirmar a configuração. Verifica a ligação e tenta novamente. As respostas deste formulário permanecem aqui.';
+
+  @override
+  String get configConflict =>
+      'A configuração da conta mudou noutra confirmação. As tuas respostas foram preservadas. Recarrega a versão guardada antes de voltar a editar.';
+
+  @override
+  String get configReload => 'Recarregar configuração guardada';
+
+  @override
+  String get configReloadNotice =>
+      'Recarregar substitui apenas as respostas ainda não guardadas deste formulário. Continuar?';
+
+  @override
+  String get configUncertain =>
+      'A confirmação pode ter chegado ao servidor. Repete a mesma confirmação para verificar o resultado sem criar outra versão. Se saíres, confere a configuração guardada ao regressar.';
+
+  @override
+  String get configLeaveCheck => 'Sair e conferir a configuração depois';
+
+  @override
+  String get configChoosePlace => 'Seleciona pelo menos um local.';
+
+  @override
+  String get configChooseContext => 'Escolhe o teu contexto.';
+
+  @override
+  String get configChooseStatus =>
+      'Indica se tens equipamentos, não tens ou ainda não sabes.';
+
+  @override
+  String get configChooseResource =>
+      'Seleciona entre 1 e 32 recursos disponíveis.';
+
+  @override
+  String get configInvalidTimezone =>
+      'Confere o fuso: UTC, desvio até 14:00 ou uma zona reconhecida.';
+
+  @override
+  String get configChooseDay => 'Escolhe um dia da semana.';
+
+  @override
+  String get configInvalidMinutes =>
+      'Indica um número inteiro de 1 a 1440 minutos.';
+
+  @override
+  String get configInvalidSlot =>
+      'Confere a hora e evita repetir o mesmo dia e hora. Mantém entre 1 e 28 disponibilidades.';
+
+  @override
+  String get privacySectionTrainingConfigurations =>
+      'Versões da configuração de treino';
+
+  @override
+  String get configEntryHint =>
+      'Na tua conta, abre Configuração de treino. Também está em Planos, em Criar o meu plano. Revê locais, contexto, recursos e disponibilidade antes de confirmar.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -3374,6 +3575,207 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get readingPreferences => 'Lendo preferência';
+
+  @override
+  String get trainingConfiguration => 'Configuração de treino';
+
+  @override
+  String get trainingConfigIntro =>
+      'Informe onde e quando você pode treinar. Revise tudo antes de confirmar.';
+
+  @override
+  String get trainingConfigNotice =>
+      'Esta configuração descreve sua rotina. Não confirma aptidão física nem cria um treino. Programas e regras precisam de revisão humana.';
+
+  @override
+  String get configPlaces => 'Locais e contexto';
+
+  @override
+  String get configResources => 'Recursos disponíveis';
+
+  @override
+  String get configAvailability => 'Disponibilidade';
+
+  @override
+  String get configReview => 'Revisão final';
+
+  @override
+  String configStep(int step) {
+    return 'Etapa $step de 4';
+  }
+
+  @override
+  String get configWhere => 'Onde você pode treinar?';
+
+  @override
+  String get configHome => 'Casa';
+
+  @override
+  String get configPark => 'Praça ou parque';
+
+  @override
+  String get configGym => 'Academia';
+
+  @override
+  String get configContext => 'Em que contexto?';
+
+  @override
+  String get configPersonal => 'Na minha rotina pessoal';
+
+  @override
+  String get configCaregiver => 'Nas minhas pausas de trabalho como cuidador';
+
+  @override
+  String get configCaregiverHint =>
+      'O treino é para você. Não é para a pessoa de quem você cuida.';
+
+  @override
+  String get configDeclared => 'Vou indicar os recursos que tenho';
+
+  @override
+  String get configNone => 'Não tenho equipamentos';
+
+  @override
+  String get configUnknown => 'Ainda não sei quais tenho';
+
+  @override
+  String get configEquipmentHint =>
+      'Não saber é diferente de não ter. Selecione até 32 recursos pelos nomes originais da fonte.';
+
+  @override
+  String get configSelected => 'Recursos selecionados';
+
+  @override
+  String get configResourceWithdrawn =>
+      'Referência indisponível. Remova ou escolha outra antes de confirmar.';
+
+  @override
+  String get configNoResources => 'Nenhum recurso encontrado nesta consulta.';
+
+  @override
+  String get configTimezone => 'Fuso horário da sua rotina';
+
+  @override
+  String get configTimezoneHint =>
+      'Começa com o deslocamento observado neste aparelho. Você pode usar UTC, um deslocamento como -03:00 ou uma zona como America/Sao_Paulo. Um deslocamento fixo não acompanha mudanças de horário.';
+
+  @override
+  String get configAvailabilityHint =>
+      'Informe o tempo que você tem, não a duração de um treino prescrito. Você pode indicar várias pausas por dia. O dia se refere ao início da pausa.';
+
+  @override
+  String get configDay => 'Dia da semana';
+
+  @override
+  String get configMinutes => 'Minutos disponíveis';
+
+  @override
+  String get configStart => 'Hora de início (opcional)';
+
+  @override
+  String get configUnfixed => 'Sem horário fixo';
+
+  @override
+  String get configAddSlot => 'Adicionar disponibilidade';
+
+  @override
+  String get configRemoveSlot => 'Remover disponibilidade';
+
+  @override
+  String get configMonday => 'Segunda-feira';
+
+  @override
+  String get configTuesday => 'Terça-feira';
+
+  @override
+  String get configWednesday => 'Quarta-feira';
+
+  @override
+  String get configThursday => 'Quinta-feira';
+
+  @override
+  String get configFriday => 'Sexta-feira';
+
+  @override
+  String get configSaturday => 'Sábado';
+
+  @override
+  String get configSunday => 'Domingo';
+
+  @override
+  String get configNext => 'Continuar';
+
+  @override
+  String get configEdit => 'Editar respostas';
+
+  @override
+  String get configConfirm => 'Confirmar configuração';
+
+  @override
+  String get configSaved => 'Configuração confirmada';
+
+  @override
+  String get configSavedHint =>
+      'As respostas estão salvas na sua conta. Ainda não existe um programa aprovado para apresentar.';
+
+  @override
+  String get configUnavailable =>
+      'Não foi possível confirmar a configuração. Confira a conexão e tente novamente. As respostas deste formulário continuam aqui.';
+
+  @override
+  String get configConflict =>
+      'A configuração da conta mudou em outra confirmação. Suas respostas foram preservadas. Recarregue a versão salva antes de voltar a editar.';
+
+  @override
+  String get configReload => 'Recarregar configuração salva';
+
+  @override
+  String get configReloadNotice =>
+      'Recarregar substitui apenas as respostas ainda não salvas deste formulário. Continuar?';
+
+  @override
+  String get configUncertain =>
+      'A confirmação pode ter chegado ao servidor. Repita a mesma confirmação para verificar o resultado sem criar outra versão. Se sair, confira a configuração salva ao voltar.';
+
+  @override
+  String get configLeaveCheck => 'Sair e conferir a configuração depois';
+
+  @override
+  String get configChoosePlace => 'Selecione pelo menos um local.';
+
+  @override
+  String get configChooseContext => 'Escolha seu contexto.';
+
+  @override
+  String get configChooseStatus =>
+      'Informe se você tem equipamentos, não tem ou ainda não sabe.';
+
+  @override
+  String get configChooseResource =>
+      'Selecione entre 1 e 32 recursos disponíveis.';
+
+  @override
+  String get configInvalidTimezone =>
+      'Confira o fuso: UTC, deslocamento até 14:00 ou uma zona reconhecida.';
+
+  @override
+  String get configChooseDay => 'Escolha um dia da semana.';
+
+  @override
+  String get configInvalidMinutes =>
+      'Informe um número inteiro de 1 a 1440 minutos.';
+
+  @override
+  String get configInvalidSlot =>
+      'Confira o horário e evite repetir o mesmo dia e horário. Mantenha entre 1 e 28 disponibilidades.';
+
+  @override
+  String get privacySectionTrainingConfigurations =>
+      'Versões da configuração de treino';
+
+  @override
+  String get configEntryHint =>
+      'Na sua conta, abra Configuração de treino. Também está em Planos, em Criar meu plano. Revise locais, contexto, recursos e disponibilidade antes de confirmar.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -5062,4 +5464,205 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get readingPreferences => 'A ler preferência';
+
+  @override
+  String get trainingConfiguration => 'Configuração de treino';
+
+  @override
+  String get trainingConfigIntro =>
+      'Conta onde e quando podes treinar. Revê tudo antes de confirmar.';
+
+  @override
+  String get trainingConfigNotice =>
+      'Esta configuração descreve a tua rotina. Não confirma aptidão física nem cria um treino. Programas e regras precisam de revisão humana.';
+
+  @override
+  String get configPlaces => 'Locais e contexto';
+
+  @override
+  String get configResources => 'Recursos disponíveis';
+
+  @override
+  String get configAvailability => 'Disponibilidade';
+
+  @override
+  String get configReview => 'Revisão final';
+
+  @override
+  String configStep(int step) {
+    return 'Etapa $step de 4';
+  }
+
+  @override
+  String get configWhere => 'Onde podes treinar?';
+
+  @override
+  String get configHome => 'Casa';
+
+  @override
+  String get configPark => 'Praça ou parque';
+
+  @override
+  String get configGym => 'Ginásio';
+
+  @override
+  String get configContext => 'Em que contexto?';
+
+  @override
+  String get configPersonal => 'Na minha rotina pessoal';
+
+  @override
+  String get configCaregiver => 'Nas minhas pausas de trabalho como cuidador';
+
+  @override
+  String get configCaregiverHint =>
+      'O treino é para ti. Não é para a pessoa de quem cuidas.';
+
+  @override
+  String get configDeclared => 'Vou indicar os recursos que tenho';
+
+  @override
+  String get configNone => 'Não tenho equipamentos';
+
+  @override
+  String get configUnknown => 'Ainda não sei quais tenho';
+
+  @override
+  String get configEquipmentHint =>
+      'Não saber é diferente de não ter. Seleciona até 32 recursos pelos nomes originais da fonte.';
+
+  @override
+  String get configSelected => 'Recursos selecionados';
+
+  @override
+  String get configResourceWithdrawn =>
+      'Referência indisponível. Remove-a ou escolhe outra antes de confirmar.';
+
+  @override
+  String get configNoResources => 'Nenhum recurso encontrado nesta consulta.';
+
+  @override
+  String get configTimezone => 'Fuso horário da tua rotina';
+
+  @override
+  String get configTimezoneHint =>
+      'Começa com o desvio observado neste aparelho. Podes usar UTC, um desvio como -03:00 ou uma zona como America/Sao_Paulo. Um desvio fixo não acompanha mudanças de hora.';
+
+  @override
+  String get configAvailabilityHint =>
+      'Indica o tempo que tens, não a duração de um treino prescrito. Podes indicar várias pausas por dia. O dia refere-se ao início da pausa.';
+
+  @override
+  String get configDay => 'Dia da semana';
+
+  @override
+  String get configMinutes => 'Minutos disponíveis';
+
+  @override
+  String get configStart => 'Hora de início (opcional)';
+
+  @override
+  String get configUnfixed => 'Sem hora fixa';
+
+  @override
+  String get configAddSlot => 'Adicionar disponibilidade';
+
+  @override
+  String get configRemoveSlot => 'Remover disponibilidade';
+
+  @override
+  String get configMonday => 'Segunda-feira';
+
+  @override
+  String get configTuesday => 'Terça-feira';
+
+  @override
+  String get configWednesday => 'Quarta-feira';
+
+  @override
+  String get configThursday => 'Quinta-feira';
+
+  @override
+  String get configFriday => 'Sexta-feira';
+
+  @override
+  String get configSaturday => 'Sábado';
+
+  @override
+  String get configSunday => 'Domingo';
+
+  @override
+  String get configNext => 'Continuar';
+
+  @override
+  String get configEdit => 'Editar respostas';
+
+  @override
+  String get configConfirm => 'Confirmar configuração';
+
+  @override
+  String get configSaved => 'Configuração confirmada';
+
+  @override
+  String get configSavedHint =>
+      'As respostas estão guardadas na tua conta. Ainda não existe um programa aprovado para apresentar.';
+
+  @override
+  String get configUnavailable =>
+      'Não foi possível confirmar a configuração. Verifica a ligação e tenta novamente. As respostas deste formulário permanecem aqui.';
+
+  @override
+  String get configConflict =>
+      'A configuração da conta mudou noutra confirmação. As tuas respostas foram preservadas. Recarrega a versão guardada antes de voltar a editar.';
+
+  @override
+  String get configReload => 'Recarregar configuração guardada';
+
+  @override
+  String get configReloadNotice =>
+      'Recarregar substitui apenas as respostas ainda não guardadas deste formulário. Continuar?';
+
+  @override
+  String get configUncertain =>
+      'A confirmação pode ter chegado ao servidor. Repete a mesma confirmação para verificar o resultado sem criar outra versão. Se saíres, confere a configuração guardada ao regressar.';
+
+  @override
+  String get configLeaveCheck => 'Sair e conferir a configuração depois';
+
+  @override
+  String get configChoosePlace => 'Seleciona pelo menos um local.';
+
+  @override
+  String get configChooseContext => 'Escolhe o teu contexto.';
+
+  @override
+  String get configChooseStatus =>
+      'Indica se tens equipamentos, não tens ou ainda não sabes.';
+
+  @override
+  String get configChooseResource =>
+      'Seleciona entre 1 e 32 recursos disponíveis.';
+
+  @override
+  String get configInvalidTimezone =>
+      'Confere o fuso: UTC, desvio até 14:00 ou uma zona reconhecida.';
+
+  @override
+  String get configChooseDay => 'Escolhe um dia da semana.';
+
+  @override
+  String get configInvalidMinutes =>
+      'Indica um número inteiro de 1 a 1440 minutos.';
+
+  @override
+  String get configInvalidSlot =>
+      'Confere a hora e evita repetir o mesmo dia e hora. Mantém entre 1 e 28 disponibilidades.';
+
+  @override
+  String get privacySectionTrainingConfigurations =>
+      'Versões da configuração de treino';
+
+  @override
+  String get configEntryHint =>
+      'Na tua conta, abre Configuração de treino. Também está em Planos, em Criar o meu plano. Revê locais, contexto, recursos e disponibilidade antes de confirmar.';
 }

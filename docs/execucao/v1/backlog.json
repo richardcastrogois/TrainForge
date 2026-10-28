@@ -1282,13 +1282,18 @@
             "Contrato e fluxo Flutter completos para revisão",
             "Recibo de campos, isolamento, atualização e aceite"
           ],
-          "handoff": "27/10:048encerrada antes desta história. Matriz de campos por finalidade e domínio/aplicaçãoGo implementados,12testes principais+19subcasos e vet aprovados. Declaração de ambiente/recursos/agenda/contexto,unknown distinto de none,ref de recurso porfonte,review/revision e cópia canônica;sem dados físicos/paciente/dose implícitos. PortaRepository ainda semSQL: não comprova persistência/ownership real. Próxima fatia éSQL/migration forward e ciclo deprivacidade, com sessão viva/lock/revisão/idempotência/transação e referência de recurso validada;depoisHTTP/Swagger eFlutteretapas/revisão. Nenhuma tabela/rota/configuração real criada;API0.6.2/schema11/APK21 preservados. Continua doing, completionEvidence vazia.",
+          "handoff": "27/10:implementação047 integrada. Migration12/schema27tabelas ativada comcheckpoint de schema/comparação;1conta/1consumo/6369versões preservados e0configurações criadas pelo agente. API0.7.0/29operações, Postgres comcredencial viva/ownership/revisão/idempotência,recursos porfonte,exportação/exclusão/restore verificados emdescartável. Flutter em4etapas comreview,rascunho emmemória/aviso antes de descartar,retrycorpo/chavefixos econta/geração;555mensagens/idioma. APKdebug0.4.0+22 instalado;entrada/própria ausência/primeiraetapadesmarcada nativas conferidas. Falta aceite humano:confirmar rotina real,reabrir ealterar;pergunta pendente nochat. Não salvar respostas porinferência nemmarcardone comfixtures. Depois015 pelasdependências;zero programa/dose/instrução/mídia aprovados continuam como gate deconteúdo.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
             "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/configuracao-treino-047.md",
-            "docs/execucao/v1/training-configuration-foundation-verification.json"
+            "docs/execucao/v1/training-configuration-foundation-verification.json",
+            "docs/execucao/v1/training-configuration-sql-verification.json",
+            "docs/execucao/v1/training-configuration-privacy-verification.json",
+            "docs/execucao/v1/training-configuration-local-activation.json",
+            "docs/execucao/v1/training-configuration-client-verification.json",
+            "docs/execucao/v1/training-configuration-native-verification.json"
           ]
         },
         {
@@ -3631,5 +3636,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10:048concluída e047doing. Matriz e domínio/aplicação testados. PróximoSQL/migration e privacidade completos antes da ativação: sessão viva, titular, versões/idempotência, refs de recurso. DepoisHTTP/Swagger/Flutteretapas e aceite. API0.6.2/26, schema11/26,APK21 e dados reais preservados; sem conteúdo/prática inventados."
+  "currentPriority": "27/10:047implementada emGo/SQL/Flutter eAPK22instalado;doingapenasatéaceite humano deconfirmar/reabrir/alterar rotina. API0.7.0/29,schema12/27;dadosreaispreservados. Documentarrespostadoautor semfalsoaceite;depois015pelasdependências,comzero conteúdo deprática aprovado. Semcompra/hospedagem."
 }

@@ -68,6 +68,11 @@ def restore_fixture(env, go, name, writer):
                 raise RuntimeError("Editorial data altered by erasure gate")
             if sql("SELECT count(*) FROM trainforge_v1.food_versions WHERE food_id='restore-private-b';", target) != "1":
                 raise RuntimeError("Other account changed during restore")
+            if sql("SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL;", target) == "t":
+                if sql("SELECT count(*) FROM trainforge_v1.training_configuration_versions WHERE user_id IN(" + ids + ");", target) != "0":
+                    raise RuntimeError("Erased configuration returned after restore")
+                if sql("SELECT count(*) FROM trainforge_v1.training_configuration_versions c JOIN trainforge_v1.users u ON u.id=c.user_id WHERE u.subject='privacy-restore-b';", target) != "1":
+                    raise RuntimeError("Other account configuration changed during restore")
             after_first = sql("SELECT json_build_array((SELECT count(*) FROM trainforge_v1.users),"
                               "(SELECT count(*) FROM trainforge_v1.food_versions),"
                               "(SELECT count(*) FROM trainforge_v1.account_erasures))::text;", target)

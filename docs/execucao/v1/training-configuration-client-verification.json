@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "configurationWidgetAndControllerTests": 15,
+  "additionalAccountCompositionRegressionTests": 1,
+  "allFourStepLocales": [
+    "pt-BR",
+    "pt-PT",
+    "en",
+    "es"
+  ],
+  "viewport": {
+    "width": 320,
+    "textScale": 2
+  },
+  "draftExitDecision": "warn_before_discard_memory_only",
+  "emptyContextHasNoFactualDefaults": true,
+  "uncertainIntentKeyAndPayloadPreserved": true,
+  "initialReadFailureCannotOverwriteExistingContext": true,
+  "accountChangeAndLateResponsesIsolated": true,
+  "conflictPreservesDraftAndOffersExplicitReload": true,
+  "accountAndPlansEntryPointsVerified": true,
+  "flutterAnalyzeIssues": 0,
+  "realGoogleLoginRetested": false,
+  "limits": [
+    "Tests use isolated fixtures, never injected into the runtime app.",
+    "Human confirmation/recovery/edit acceptance remains pending.",
+    "No approved program, prescription, durable offline queue or native iOS acceptance."
+  ],
+  "flutterTestsPassed": 213,
+  "fieldErrorsAndExplicitConflictDiscardVerified": true
+}

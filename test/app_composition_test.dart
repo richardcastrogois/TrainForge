@@ -1,3 +1,5 @@
+import 'package:trainforge/features/training_configuration/presentation/training_configuration_page.dart';
+import 'training_configuration_test.dart' show ConfigurationFixture;
 import 'package:trainforge/core/l10n/locale_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -33,9 +35,27 @@ class CompositionFixture {
           ObservedNutrition repository,
         })
       >[];
+  final configurations =
+      <
+        ({
+          String accountId,
+          String? Function() currentAccountId,
+          ConfigurationFixture repository,
+        })
+      >[];
   int sessions = 0, catalogs = 0, foodLists = 0, policies = 0;
 
   late final dependencies = AppDependencies(
+    createTrainingConfigurationRepository:
+        ({required accountId, required currentAccountId}) {
+          final repository = ConfigurationFixture();
+          configurations.add((
+            accountId: accountId,
+            currentAccountId: currentAccountId,
+            repository: repository,
+          ));
+          return repository;
+        },
     createSessionRepository: () {
       sessions++;
       return session;
@@ -215,6 +235,84 @@ void main() {
       );
       expect(services.sessions, 1);
       expect(tester.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'training setup route uses the composed account service and clears on account change',
+    (t) async {
+      final services = CompositionFixture()..session.profile = fixtureProfile;
+      final appearance = AppearanceController(store: MemoryAppearance());
+      addTearDown(appearance.dispose);
+      await t.pumpWidget(
+        TrainForgeApp(
+          dependencies: services.dependencies,
+          appearance: appearance,
+        ),
+      );
+      await t.pumpAndSettle();
+      final account = services.configurations.single;
+      expect(account.accountId, fixtureProfile.id);
+      expect(account.repository.reads, 0);
+      await t.tap(find.byTooltip('Abrir perfil'));
+      await t.pumpAndSettle();
+      await t.scrollUntilVisible(
+        find.text('Configuração de treino'),
+        200,
+        scrollable: find
+            .byWidgetPredicate(
+              (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
+            )
+            .first,
+      );
+      await t.tap(find.text('Configuração de treino'));
+      await t.pumpAndSettle();
+      expect(
+        identical(
+          t
+              .widget<TrainingConfigurationPage>(
+                find.byType(TrainingConfigurationPage),
+              )
+              .repository,
+          account.repository,
+        ),
+        true,
+      );
+      expect(account.repository.reads, 1);
+      expect(account.repository.bodies, isEmpty);
+      await t.binding.handlePopRoute();
+      await t.pumpAndSettle();
+      await t.binding.handlePopRoute();
+      await t.pumpAndSettle();
+      await t.tap(find.byTooltip('Planos'));
+      await t.pumpAndSettle();
+      await t.scrollUntilVisible(
+        find.text('Criar o meu plano'),
+        200,
+        scrollable: find
+            .byWidgetPredicate(
+              (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
+            )
+            .first,
+      );
+      await t.tap(find.text('Criar o meu plano'));
+      await t.pumpAndSettle();
+      expect(find.byType(TrainingConfigurationPage), findsOneWidget);
+      expect(account.repository.reads, 2);
+      expect(services.configurations.length, 1);
+      final auth = t
+          .widget<ProductShell>(find.byType(ProductShell, skipOffstage: false))
+          .controller;
+      services.session.profile = const AuthProfile(
+        id: 'new-owner',
+        name: 'New owner',
+        email: 'new@example.invalid',
+      );
+      await auth.restore();
+      await t.pumpAndSettle();
+      expect(find.byType(TrainingConfigurationPage), findsNothing);
+      expect(account.currentAccountId(), 'new-owner');
+      expect(services.configurations.length, 2);
+      expect(t.takeException(), isNull);
     },
   );
 }

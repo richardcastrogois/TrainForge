@@ -254,6 +254,10 @@ definitions:
     properties:
       code:
         type: string
+      fields:
+        additionalProperties:
+          type: string
+        type: object
       requestId:
         type: string
       status:
@@ -747,13 +751,112 @@ definitions:
       version:
         type: string
     type: object
+  trainingconfig.Availability:
+    properties:
+      minutesAvailable:
+        type: integer
+      startTime:
+        type: string
+        x-nullable: true
+      weekday:
+        type: integer
+    type: object
+  trainingconfig.Configuration:
+    properties:
+      availability:
+        items:
+          $ref: '#/definitions/trainingconfig.Availability'
+        type: array
+      context:
+        type: string
+      environments:
+        items:
+          type: string
+        type: array
+      resources:
+        $ref: '#/definitions/trainingconfig.Resources'
+      timezone:
+        type: string
+    type: object
+  trainingconfig.Current:
+    properties:
+      current:
+        allOf:
+        - $ref: '#/definitions/trainingconfig.Snapshot'
+        x-nullable: true
+      resourceLabels:
+        items:
+          $ref: '#/definitions/trainingconfig.ResourceOption'
+        type: array
+      unavailableResources:
+        items:
+          $ref: '#/definitions/trainingconfig.ResourceRef'
+        type: array
+    type: object
+  trainingconfig.ResourceOption:
+    properties:
+      equipmentId:
+        type: integer
+      nameOriginal:
+        type: string
+      sourceId:
+        type: string
+      sourceName:
+        type: string
+    type: object
+  trainingconfig.ResourcePage:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/trainingconfig.ResourceOption'
+        type: array
+      nextCursor:
+        type: string
+        x-nullable: true
+    type: object
+  trainingconfig.ResourceRef:
+    properties:
+      equipmentId:
+        type: integer
+      sourceId:
+        type: string
+    type: object
+  trainingconfig.Resources:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/trainingconfig.ResourceRef'
+        type: array
+      status:
+        type: string
+    type: object
+  trainingconfig.SaveCommand:
+    properties:
+      configuration:
+        $ref: '#/definitions/trainingconfig.Configuration'
+      reviewed:
+        type: boolean
+      revision:
+        type: integer
+    type: object
+  trainingconfig.Snapshot:
+    properties:
+      configuration:
+        $ref: '#/definitions/trainingconfig.Configuration'
+      confirmedAt:
+        type: string
+      contract:
+        type: string
+      revision:
+        type: integer
+    type: object
 info:
   contact: {}
   description: Google sessions, privacy, reviewed movement and food references, private
     food declarations and explicitly recorded consumption. No executable training
     content or prescribed diets.
   title: TrainForge API
-  version: 0.6.2
+  version: 0.7.0
 paths:
   /api/v1/auth/google:
     post:
@@ -1444,6 +1547,7 @@ paths:
         - activityEvents
         - foods
         - foodEntries
+        - trainingConfigurations
         in: query
         name: section
         type: string
@@ -1927,6 +2031,143 @@ paths:
       summary: Create own food declaration
       tags:
       - nutrition
+  /api/v1/me/training-configuration:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/trainingconfig.Current'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Read own confirmed training configuration
+      tags:
+      - training-configuration
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: UUID stable across retries;24-hour retention
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Complete declaration,reviewed=true and expected revision; no
+          owner field
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/trainingconfig.SaveCommand'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/trainingconfig.Current'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Confirm or replace own training configuration
+      tags:
+      - training-configuration
+  /api/v1/me/training-configuration/resources:
+    get:
+      parameters:
+      - description: Literal original equipment name; maximum100characters
+        in: query
+        name: q
+        type: string
+      - description: 1..20; default20
+        in: query
+        name: limit
+        type: integer
+      - description: Account/query/limit-bound cursor
+        in: query
+        name: cursor
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/trainingconfig.ResourcePage'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Search source-scoped training equipment
+      tags:
+      - training-configuration
   /api/v1/privacy:
     get:
       produces:

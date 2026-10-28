@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `6e90d3b33d0899ca`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `02f82d50940a80dc`.
 
 ## Referência atual: schema Prisma externo
 
@@ -298,6 +298,7 @@ Declaração SQL não prova aplicação no banco; o resultado runtime está em d
 | food_name_versions | [services/api/migrations/00009_reviewed_food_names.sql:3](../../../services/api/migrations/00009_reviewed_food_names.sql) |
 | food_name_withdrawals | [services/api/migrations/00009_reviewed_food_names.sql:28](../../../services/api/migrations/00009_reviewed_food_names.sql) |
 | food_name_catalogs | [services/api/migrations/00010_food_name_catalog_revision.sql:4](../../../services/api/migrations/00010_food_name_catalog_revision.sql) |
+| training_configuration_versions | [services/api/migrations/00012_training_configuration.sql:67](../../../services/api/migrations/00012_training_configuration.sql) |
 
 ## Proposto: responsabilidades do domínio novo
 

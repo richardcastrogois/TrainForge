@@ -6,12 +6,17 @@ import 'package:trainforge/core/motion/app_motion.dart';
 class DraftGuard extends StatefulWidget {
   final Widget child;
   final bool dirty, busy, uncertain;
+  final String? uncertainMessage, uncertainLeaveLabel;
+  final VoidCallback? onStepBack;
   const DraftGuard({
     super.key,
     required this.child,
     required this.dirty,
     required this.busy,
     this.uncertain = false,
+    this.uncertainMessage,
+    this.uncertainLeaveLabel,
+    this.onStepBack,
   });
   @override
   State<DraftGuard> createState() => DraftGuardState();
@@ -42,7 +47,7 @@ class DraftGuardState extends State<DraftGuard> {
         ),
         content: Text(
           widget.uncertain
-              ? context.l10n.uncertainDraftNotice
+              ? (widget.uncertainMessage ?? context.l10n.uncertainDraftNotice)
               : context.l10n.unsavedDraftNotice,
         ),
         actions: [
@@ -54,7 +59,8 @@ class DraftGuardState extends State<DraftGuard> {
             onPressed: () => Navigator.pop(context, true),
             child: Text(
               widget.uncertain
-                  ? context.l10n.leaveCheckHistory
+                  ? (widget.uncertainLeaveLabel ??
+                        context.l10n.leaveCheckHistory)
                   : context.l10n.discardDraft,
             ),
           ),
@@ -67,9 +73,20 @@ class DraftGuardState extends State<DraftGuard> {
 
   @override
   Widget build(BuildContext context) => PopScope<Object?>(
-    canPop: leaving || (!widget.busy && !widget.dirty && !widget.uncertain),
+    canPop:
+        leaving ||
+        (widget.onStepBack == null &&
+            !widget.busy &&
+            !widget.dirty &&
+            !widget.uncertain),
     onPopInvokedWithResult: (didPop, _) {
-      if (!didPop) ask();
+      if (!didPop) {
+        if (widget.onStepBack != null && !widget.busy && !widget.uncertain) {
+          widget.onStepBack!();
+        } else {
+          ask();
+        }
+      }
     },
     child: widget.child,
   );

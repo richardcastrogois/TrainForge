@@ -44,6 +44,9 @@ func ApplyErasures(ctx context.Context, pool *pgxpool.Pool, records []Erasure) (
 		if err = purge(ctx, tx, record.UserID, func() error {
 			_, err := tx.Exec(ctx, "DELETE FROM trainforge_v1.food_versions WHERE owner_id=$1", record.UserID)
 			return err
+		}, func() error {
+			_, err := tx.Exec(ctx, "DELETE FROM trainforge_v1.training_configuration_versions WHERE user_id=$1", record.UserID)
+			return err
 		}); err != nil {
 			return 0, err
 		}

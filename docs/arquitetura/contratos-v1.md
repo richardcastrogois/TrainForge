@@ -1,6 +1,22 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.6.2 / 26 operações**, Flutter integrado e schema11/26tabelas. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.7.0 / 29 operações**, Flutter integrado e schema12/27tabelas. A configuração047 foi implementada; aceite humano ainda pendente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+
+## Configuração privada047 — 27/10/2026
+
+| Elemento | Contrato implementado |
+|---|---|
+| GET /api/v1/me/training-configuration | current:null ou snapshot privado com contract/revision/configuration/confirmedAt; resourceLabels/unavailableResources fora do snapshot |
+| PUT mesmo caminho | revision esperada, reviewed:true, configuration completa; Idempotency-Key UUID por intenção. Sem userId no body. Nova versão=esperada+1 |
+| GET …/resources | q original literal até100runes, limit1–20, cursor vinculado à conta/busca/limite. Identidade composta fonte/equipamento e nome original/fonte; sem dose ou mídia |
+| Campos | environments1–3; resources declared1–32refs ou none/unknown com[]; personal/caregiver_break; fusoUTC/IANA/offset; availability1–28 com weekday1–7, minutesAvailable1–1440 e startTimeHH:MM/null |
+| Mutação | Corpo estrito16KiB/UTF8/sem chaves duplicadas, review explícito, revisão otimista e transação idempotente24h. Mesma chave/corpo recupera versão anterior, mesmo após retirada de recurso; outro significado conflita |
+| Segurança | Bearer e revalidação SQL de credencial/titular; X-TrainForge-Account opcional valida igualdade, não concede identidade. no-store,60/min/conta |
+| Erros |400invalid_training_configuration com fields de caminhos/códigos fixos;401invalid_credential;409training_configuration_conflict;413/415/429;503training_configuration_unavailable. Sem valor privado/SQL na mensagem |
+| Privacidade | Exportação inclui trainingConfigurations; exclusão confirmada e restore/ledger limpam versões. Runtime só lê tabela/view e executa funções restritas |
+| Cliente | Rascunho em memória; saída com aviso; retorno e idioma preservam respostas; retry incerto mantém corpo/chave; conflito não descarta silenciosamente; conta/geração descartam respostas antigas |
+
+[Matriz completa, implementação e limites de aceite](../execucao/v1/configuracao-treino-047.md). Configuração é declaração de rotina, não avaliação física, elegibilidade ou prescrição. Seleção015 e composição044 continuam com seus gates.
 
 ## Leitura privada localizada — 27/10/2026
 

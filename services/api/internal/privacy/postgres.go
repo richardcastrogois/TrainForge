@@ -15,19 +15,20 @@ import (
 type Postgres struct{ Pool *pgxpool.Pool }
 
 var columns = map[string]string{
-	"users":                    "id provider issuer subject display_name email created_at",
-	"auth_families":            "id user_id revoked_at created_at",
-	"access_tokens":            "token_hash family_id expires_at created_at",
-	"refresh_tokens":           "token_hash family_id expires_at consumed_at created_at",
-	"enrollments":              "id user_id program_id program_sha status options created_at program_kind",
-	"schedule_occurrences":     "id user_id enrollment_id source_session_key planned_for timezone program_id program_sha",
-	"activity_sessions":        "id occurrence_id user_id state started_at ended_at completed_at",
-	"activity_events":          "id session_id user_id event_type occurred_at payload",
-	"idempotency_records":      "user_id operation key_hash request_hash response_status response_body expires_at",
-	"food_versions":            "food_id version_sha source_id source_food_id source_row_key owner_id name_original name_pt preparation basis_quantity basis_unit nutrients provenance created_at source_published_version name_locale allowed_operations",
-	"food_entries":             "id user_id food_id food_sha quantity unit occurred_at timezone calculation deleted_at created_at",
-	"account_deletion_intents": "token_hash user_id family_id expires_at created_at",
-	"account_erasures":         "user_id erased_at",
+	"users":                           "id provider issuer subject display_name email created_at",
+	"auth_families":                   "id user_id revoked_at created_at",
+	"access_tokens":                   "token_hash family_id expires_at created_at",
+	"refresh_tokens":                  "token_hash family_id expires_at consumed_at created_at",
+	"enrollments":                     "id user_id program_id program_sha status options created_at program_kind",
+	"schedule_occurrences":            "id user_id enrollment_id source_session_key planned_for timezone program_id program_sha",
+	"activity_sessions":               "id occurrence_id user_id state started_at ended_at completed_at",
+	"activity_events":                 "id session_id user_id event_type occurred_at payload",
+	"idempotency_records":             "user_id operation key_hash request_hash response_status response_body expires_at",
+	"food_versions":                   "food_id version_sha source_id source_food_id source_row_key owner_id name_original name_pt preparation basis_quantity basis_unit nutrients provenance created_at source_published_version name_locale allowed_operations",
+	"food_entries":                    "id user_id food_id food_sha quantity unit occurred_at timezone calculation deleted_at created_at",
+	"account_deletion_intents":        "token_hash user_id family_id expires_at created_at",
+	"training_configuration_versions": "user_id revision configuration confirmed_at",
+	"account_erasures":                "user_id erased_at",
 }
 
 // Inventory is deliberately explicit: a new private table/column must not silently
@@ -65,6 +66,10 @@ func coverage(ctx context.Context, tx pgx.Tx) error {
 		return ErrUnavailable
 	}
 	for table, expected := range columns {
+		// Schema11 remains usable before the additive configuration migration is activated.
+		if table == "training_configuration_versions" && len(found[table]) == 0 {
+			continue
+		}
 		want := strings.Fields(expected)
 		sort.Strings(want)
 		got := found[table]
@@ -110,14 +115,15 @@ func (p Postgres) begin(ctx context.Context, subject auth.Principal, exclusive b
 type section struct{ table, key, owner, projection string }
 
 var sections = map[string]section{
-	"account":          {"users", "v.id::text", "v.id", `jsonb_build_object('id',v.id,'provider',v.provider,'issuer',v.issuer,'subject',v.subject,'name',v.display_name,'email',v.email,'createdAt',v.created_at)`},
-	"sessions":         {"auth_families", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'createdAt',v.created_at,'revokedAt',v.revoked_at)`},
-	"enrollments":      {"enrollments", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'programId',v.program_id,'programVersion',v.program_sha,'programKind',v.program_kind,'status',v.status,'options',v.options,'createdAt',v.created_at)`},
-	"occurrences":      {"schedule_occurrences", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'enrollmentId',v.enrollment_id,'programId',v.program_id,'programVersion',v.program_sha,'sourceSessionKey',v.source_session_key,'plannedFor',v.planned_for,'timezone',v.timezone)`},
-	"activitySessions": {"activity_sessions", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'occurrenceId',v.occurrence_id,'state',v.state,'startedAt',v.started_at,'endedAt',v.ended_at,'completedAt',v.completed_at)`},
-	"activityEvents":   {"activity_events", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'sessionId',v.session_id,'type',v.event_type,'occurredAt',v.occurred_at,'payload',v.payload)`},
-	"foods":            {"food_versions", "v.food_id||':'||v.version_sha", "v.owner_id", `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId',v.source_id,'sourceFoodId',v.source_food_id,'sourceRowKey',v.source_row_key,'sourcePublishedVersion',v.source_published_version,'nameLocale',v.name_locale,'allowedOperations',v.allowed_operations,'nameOriginal',v.name_original,'namePt',v.name_pt,'preparation',v.preparation,'basisQuantity',v.basis_quantity::text,'basisUnit',v.basis_unit,'nutrients',v.nutrients,'provenance',v.provenance,'createdAt',v.created_at)`},
-	"foodEntries":      {"food_entries", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'foodId',v.food_id,'foodVersion',v.food_sha,'quantity',v.quantity::text,'unit',v.unit,'occurredAt',v.occurred_at,'timezone',v.timezone,'calculation',v.calculation,'deletedAt',v.deleted_at,'createdAt',v.created_at)`},
+	"account":                {"users", "v.id::text", "v.id", `jsonb_build_object('id',v.id,'provider',v.provider,'issuer',v.issuer,'subject',v.subject,'name',v.display_name,'email',v.email,'createdAt',v.created_at)`},
+	"sessions":               {"auth_families", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'createdAt',v.created_at,'revokedAt',v.revoked_at)`},
+	"enrollments":            {"enrollments", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'programId',v.program_id,'programVersion',v.program_sha,'programKind',v.program_kind,'status',v.status,'options',v.options,'createdAt',v.created_at)`},
+	"occurrences":            {"schedule_occurrences", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'enrollmentId',v.enrollment_id,'programId',v.program_id,'programVersion',v.program_sha,'sourceSessionKey',v.source_session_key,'plannedFor',v.planned_for,'timezone',v.timezone)`},
+	"activitySessions":       {"activity_sessions", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'occurrenceId',v.occurrence_id,'state',v.state,'startedAt',v.started_at,'endedAt',v.ended_at,'completedAt',v.completed_at)`},
+	"activityEvents":         {"activity_events", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'sessionId',v.session_id,'type',v.event_type,'occurredAt',v.occurred_at,'payload',v.payload)`},
+	"foods":                  {"food_versions", "v.food_id||':'||v.version_sha", "v.owner_id", `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId',v.source_id,'sourceFoodId',v.source_food_id,'sourceRowKey',v.source_row_key,'sourcePublishedVersion',v.source_published_version,'nameLocale',v.name_locale,'allowedOperations',v.allowed_operations,'nameOriginal',v.name_original,'namePt',v.name_pt,'preparation',v.preparation,'basisQuantity',v.basis_quantity::text,'basisUnit',v.basis_unit,'nutrients',v.nutrients,'provenance',v.provenance,'createdAt',v.created_at)`},
+	"trainingConfigurations": {"training_configuration_versions", "lpad(v.revision::text,10,'0')", "v.user_id", `jsonb_build_object('contract','trainforge.training-configuration/1','revision',v.revision,'configuration',v.configuration,'confirmedAt',v.confirmed_at)`},
+	"foodEntries":            {"food_entries", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'foodId',v.food_id,'foodVersion',v.food_sha,'quantity',v.quantity::text,'unit',v.unit,'occurredAt',v.occurred_at,'timezone',v.timezone,'calculation',v.calculation,'deletedAt',v.deleted_at,'createdAt',v.created_at)`},
 }
 
 func (p Postgres) Export(ctx context.Context, subject auth.Principal, f ExportFilter) (ExportPage, error) {
@@ -131,6 +137,18 @@ func (p Postgres) Export(ctx context.Context, subject auth.Principal, f ExportFi
 		return result, err
 	}
 	defer tx.Rollback(ctx)
+	if f.Section == "trainingConfigurations" {
+		present, e := hasTrainingConfiguration(ctx, tx)
+		if e != nil {
+			return result, e
+		}
+		if !present {
+			if tx.Commit(ctx) != nil {
+				return result, ErrUnavailable
+			}
+			return result, nil
+		}
+	}
 	// All SQL identifiers/projections come from the static allowlist above.
 	query := "SELECT " + descriptor.key + "," + descriptor.projection + " FROM trainforge_v1." + descriptor.table + " v WHERE " + descriptor.owner + "=$1 AND ($2='' OR (" + descriptor.key + `) COLLATE "C">$2 COLLATE "C") ORDER BY (` + descriptor.key + `) COLLATE "C" LIMIT $3`
 	rows, err := tx.Query(ctx, query, subject.User.ID, f.After, f.Limit+1)
@@ -205,7 +223,7 @@ func (p Postgres) Intent(ctx context.Context, subject auth.Principal, hash []byt
 	}
 	return expiry, nil
 }
-func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error) error {
+func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error, configurationCleanup func() error) error {
 	commands := []string{
 		"DELETE FROM trainforge_v1.activity_events WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.activity_sessions WHERE user_id=$1",
@@ -213,6 +231,7 @@ func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error
 		"DELETE FROM trainforge_v1.enrollments WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.food_entries WHERE user_id=$1",
 		"private_food_cleanup",
+		"private_configuration_cleanup",
 		"DELETE FROM trainforge_v1.account_deletion_intents WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.idempotency_records WHERE user_id=$1",
 		"DELETE FROM trainforge_v1.access_tokens WHERE family_id IN(SELECT id FROM trainforge_v1.auth_families WHERE user_id=$1)",
@@ -221,6 +240,16 @@ func purge(ctx context.Context, tx pgx.Tx, user string, foodCleanup func() error
 		"DELETE FROM trainforge_v1.users WHERE id=$1",
 	}
 	for _, command := range commands {
+		if command == "private_configuration_cleanup" {
+			present, err := hasTrainingConfiguration(ctx, tx)
+			if err != nil {
+				return err
+			}
+			if present && configurationCleanup() != nil {
+				return ErrUnavailable
+			}
+			continue
+		}
 		if command == "private_food_cleanup" {
 			if foodCleanup() == nil {
 				continue
@@ -273,6 +302,9 @@ func (p Postgres) Delete(ctx context.Context, subject auth.Principal, hash []byt
 	if err = purge(ctx, tx, subject.User.ID, func() error {
 		_, err := tx.Exec(ctx, "SELECT trainforge_v1.erase_private_foods($1,$2,$3,$4)", subject.User.ID, subject.FamilyID, subject.AccessHash, hash)
 		return err
+	}, func() error {
+		_, err := tx.Exec(ctx, "SELECT trainforge_v1.erase_training_configuration($1,$2,$3,$4)", subject.User.ID, subject.FamilyID, subject.AccessHash, hash)
+		return err
 	}); err != nil {
 		return result, err
 	}
@@ -283,4 +315,12 @@ func (p Postgres) Delete(ctx context.Context, subject auth.Principal, hash []byt
 	result.Deleted = true
 	result.BackupNotice = CurrentPolicy().BackupRetention
 	return result, nil
+}
+
+func hasTrainingConfiguration(ctx context.Context, tx pgx.Tx) (bool, error) {
+	var present bool
+	if tx.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL").Scan(&present) != nil {
+		return false, ErrUnavailable
+	}
+	return present, nil
 }

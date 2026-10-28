@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "6e90d3b33d0899cab0d98a20170f3c95803c051b39fe6afaaf606f4c8b3b3331",
+  "inputRevision": "02f82d50940a80dcf35842b3b9e1291ef91b37abf16b5d91d652d74d744cc95d",
   "inputs": {
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
-    "lib/composition/app_dependencies.dart": "46b2067ed68295c18a883ed27795f17851ede8022943f0888f1b1757be3a8a07",
+    "lib/composition/app_dependencies.dart": "49c734c7f3db764eb0a84b78ccd16af3627bf93334c394e2a06b4a3909d94113",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
-    "lib/composition/production_dependencies.dart": "8692241088a1eb0745e3684dfd2feb200b554f26f90631fa4912328a4cbcbcd9",
+    "lib/composition/production_dependencies.dart": "9a371b721bdd015d9dea9440fd830fef6239602583ff3ebff32baf5d917455f0",
     "lib/core/config/app_config.dart": "c0b07f2c9b0790ffbcfcda80d48945d1f4daadc3c61838f30aba3d823502638c",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
     "lib/core/l10n/feedback_localization.dart": "2feac32ad62a7b436bf9afed74c71d3fd2bee6e901f3cd65be9bb47f2b279f85",
@@ -67,7 +67,7 @@
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
     "lib/features/privacy/presentation/privacy_feedback.dart": "a98140cbc5677d6e0cb68e6892707f93df908159207d8a2c1bb0fef3a8e07dd1",
-    "lib/features/privacy/presentation/privacy_page.dart": "841fefec5367ac96c4c2e9aee24370daa4c0f244e838e67c31ac44a686684b93",
+    "lib/features/privacy/presentation/privacy_page.dart": "f4589a699f4d79a7859a45d195b8cb5ce02485814bbd686a00722d2d62a32366",
     "lib/features/profile/data/profile_api.dart": "6acd968c17539a107a0c6556caa86c63db9e3179333ecf88dda568c1a62876a8",
     "lib/features/profile/data/profile_repository.dart": "8e16e09c535990df9f1e7629dd2885fd49f4d4cd682003b2bf7ec808634cbadc",
     "lib/features/profile/domain/profile_data.dart": "c3187b408c8a102bfe5d188ac173986e7136ba140c6c3a114c23290034167570",
@@ -76,6 +76,11 @@
     "lib/features/stats/data/stats_repository.dart": "75137632bc25f3d58f40d9c921364eef141a38a10a41ec0d873d0e4a52dfb320",
     "lib/features/stats/domain/stats_data.dart": "8090df5502a73d4e34eaa57eb939c3317a5e7e6e26b16315d3936f601709c228",
     "lib/features/stats/presentation/pages/stats_page.dart": "c1a5077328ebc2f200a55630b3d186a9ab4511d4b3befeff557acd5559d783b3",
+    "lib/features/training_configuration/data/training_configuration_repository.dart": "997807df68f44f4105a28b58dd7c9a17c991367fa26117019631854b92f499d0",
+    "lib/features/training_configuration/domain/training_configuration.dart": "c0df17a72add0756294c80269eee96882f7b25866c8af53eb21e8a929ac01bb1",
+    "lib/features/training_configuration/presentation/training_configuration_controller.dart": "6ae07af7717b0c27e45e628a33402ebfac1a6306a178850335b9790087ec536a",
+    "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
+    "lib/features/training_configuration/presentation/training_configuration_sections.dart": "38edef72046a5fead45f1de71561e831f34226bd01d1b44e0df53885e83656e4",
     "lib/features/workouts/data/workouts_api.dart": "fc3e13e4c3ab382c6e177a5aec9a9263836455b6469348ee86b579045e53b96f",
     "lib/features/workouts/data/workouts_repository.dart": "20ef770d8a1ab077f1970ce9bce1c5abe62ba6469c300e26ff67bee65faf63f5",
     "lib/features/workouts/domain/workout_day_detail.dart": "d14b28aa39b2d745f41a3300294c02027fe3aad620a3b118d3698e4d7c0b2e67",
@@ -85,26 +90,26 @@
     "lib/features/workouts/presentation/pages/workout_day_page.dart": "404b0b9a1cc1058da7b92fc7bd2e8ca3b260336a9a1bbb7d2f9ca3ceb26b03aa",
     "lib/features/workouts/presentation/pages/workout_plan_page.dart": "1094bef3cc0c4d4553ffc30eded6a3cf6c093202468e7c25e8e56de1007e8f30",
     "lib/features/workouts/presentation/pages/workouts_page.dart": "e3e72e390f4925e929a13b3aa66e0e70add6bf2a4c3844c770c323ac548cb73e",
-    "lib/l10n/generated/app_localizations.dart": "f650d507dec1d0cd14f707a444d9857d442d12c27e520f25f38f02186801f38c",
-    "lib/l10n/generated/app_localizations_en.dart": "d2b91cf0804fa28937070625f2590b7ec7c0df9a36baabd93bb79522b5e7b06f",
-    "lib/l10n/generated/app_localizations_es.dart": "2dd8a0056ea55127c33e529c8237d4ba0bfb4cb1e561e2858c92820f3408471f",
-    "lib/l10n/generated/app_localizations_pt.dart": "440efcb4f56601e1e5cbc233c05ac17ba982ba0a26eac5665e31f63bc7ded05e",
+    "lib/l10n/generated/app_localizations.dart": "2dcda8e94f49451c9cb333827ae0e7c8f0c206d924ecc031fa8b08b9e32e2fb4",
+    "lib/l10n/generated/app_localizations_en.dart": "a789313813d4506b7e3800726e597dde7b8f1fcf88b7eeeeb75183f2bbc021c8",
+    "lib/l10n/generated/app_localizations_es.dart": "52227f48e13d0fd33b2ded83717568014f2b43a78bd2b82575db8bccac92a223",
+    "lib/l10n/generated/app_localizations_pt.dart": "960ae0fc3e3ac8e7dc32a0bb79c2b9bdcde188f67cfe9f5b36c902470cd31540",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
-    "lib/shared/widgets/account_page.dart": "f683c99bb5e1294c70c606007cd6109e7e206bbd1ce9d11a72914a2ad1c4e2a6",
+    "lib/shared/widgets/account_page.dart": "9e7ff66091ab7f57bdcefe6e0bac5ddb4cb1ad8b0b2d1e2e7346483ad719dbdc",
     "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
     "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
     "lib/shared/widgets/auth_gate.dart": "7b9ab00076f06be804b147e1d6baa01860cc001d36b46d4320bc5ad97d52ed39",
-    "lib/shared/widgets/draft_guard.dart": "bf0cb673e0452826448ccc27039cf1d445655fb5aae11d1fcd93005d4e4ce5c4",
-    "lib/shared/widgets/evaluation_guide_page.dart": "5350b73f50ad57a983b38c348e89078e60f414df475575f6a7f8490d5a42643e",
+    "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
+    "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
     "lib/shared/widgets/figma_bottom_nav.dart": "2dae71a63f9b01be7e39ad6828d0eacd1f75ed149e8b2fc5ba89606c96bf387b",
     "lib/shared/widgets/figma_components.dart": "943d5f779c7c134724a4539b0a4ce102a6ad81ee7f411ffe0d279ee7ec598ba5",
     "lib/shared/widgets/flow_components.dart": "1bb465dda5bdca775c79b318aca1712051d40f9480bf964a7a84dd1d45d09978",
-    "lib/shared/widgets/plans_overview.dart": "aa3a6c3c332b1cef501a2930b50b1869f6d97ec69127dc1eb286628f99be8357",
+    "lib/shared/widgets/plans_overview.dart": "0c241a43c2069cb49568c8a8bce2d5e8b389f1d9e5433548c290114baae90ab9",
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
-    "lib/shared/widgets/product_shell.dart": "3aaaca2cd5281cd9cb83811c9e6fd02e45a9175abb5be065b2048080d26e223d",
+    "lib/shared/widgets/product_shell.dart": "4eb70b8d46786d3802607ee646bd286107957314460460f4eb97841df334b09d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
-    "services/api/cmd/api/main.go": "c30cb696eac4c800d49ac500384bfc4650aa09dccbad97feff11fe200f73f62a",
+    "services/api/cmd/api/main.go": "aa7f4e78371723ed26a1c73ab2b4a6ef3e4e3001f19f8fd6e20819ef19f42985",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
@@ -145,15 +150,18 @@
     "services/api/internal/platform/config/config.go": "40c16e2bf2e0c7e4c35b04c07014b0e1aa606f4f7e56e818e37366f930882589",
     "services/api/internal/platform/httpapi/listener.go": "ec3c0da4efc9fa26b52b2b7b4a88e78ee73ea667a5d78c351b0b53e4aabc9299",
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
-    "services/api/internal/platform/httpapi/server.go": "77bb9ea9d9c50a22771baabbb8ba8c158fcbfd5ff0ef5caa0eccee87e0de0fa6",
+    "services/api/internal/platform/httpapi/server.go": "7679e89e5655ee49f24b94df83b21f5ef9b33bbdcf9b3ccdd051304880a6dc7d",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
-    "services/api/internal/privacy/handler.go": "8045ab3ba032d44d53e0494a1362a26e917d5c2c6a9876a9405db1e1036f9714",
+    "services/api/internal/privacy/handler.go": "f77a942f9c2dddef8ebcc85be65aea116aabeb7ffcebd2f9c3667b7e8f76052f",
     "services/api/internal/privacy/maintenance.go": "28839628a18ea2ff02c73e2cf41b4aafe4a97bfc8e8088551d620df806c00031",
-    "services/api/internal/privacy/postgres.go": "613fc595edf49e7d3334a8f5aac65e5c169591eab537458dfbdd7bb60101f7d5",
-    "services/api/internal/privacy/privacy.go": "16a4988d4867b27dabc41f64fdaadd37185364bbc08b1f5c5f980480d2315ec0",
-    "services/api/internal/privacy/restore.go": "6dd8ebd4d2745807d083a7c629ec7611c715b788d31f41fe5a26dd81b6cb44b3",
-    "services/api/internal/swaggerdocs/docs.go": "96977aaad4e56bcf05fe7bdd31e75ed96591e15d5b28ae2abc3615cc4c5dc029",
+    "services/api/internal/privacy/postgres.go": "390f891fb22c726a37061829eab388a7ee52a5ff193de1cfaa8aea7e4ffcfa16",
+    "services/api/internal/privacy/privacy.go": "336a70ed5d89eb0fc002cfe8b87f0b1beab820b6e2c3b4d2fa3a8ef786e522cf",
+    "services/api/internal/privacy/restore.go": "638c712c3b30ee77a2ce9cf828380b333dfcbbb853d84c1aff24987e406ec19d",
+    "services/api/internal/swaggerdocs/docs.go": "79ef7246b307d007ef92ff510d2f786e0beec005b9d50cc9d07e874d878bf712",
+    "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
     "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
+    "services/api/internal/trainingconfig/postgres.go": "9df895926d3fca98702fc906159f41e65e213789006a6894c96913fa4d8bd1f9",
+    "services/api/internal/trainingconfig/resources.go": "cbe835eb25eddd1f41522747a42fa226480ba491087afd10b096a16461dc5039",
     "services/api/internal/trainingconfig/service.go": "25c855ceb641d75b7e13c3410d41e9fa8f51cca05e91ad35089bc85ff86b7fa6",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
@@ -167,20 +175,22 @@
     "services/api/migrations/00009_reviewed_food_names.sql": "6a17d452d5afc04b8d6126bbf7ab7482af27b2601d8a93de9622ab3b7530a20a",
     "services/api/migrations/00010_food_name_catalog_revision.sql": "6244366642e3644e458e26465247319c52568e3b4d971541e16e18120628b6ec",
     "services/api/migrations/00011_private_food_unknown_language.sql": "37a81044528e711bcf57262f3801efb5cadfa81d5821547d00bbd31453b4613d",
-    "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
+    "services/api/migrations/00012_training_configuration.sql": "6d38423c1e5a80bcf88752429a44bee490f97ac7e0b4bc32c68b72627c2859ff",
     "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
-    "contracts/generated/swagger-v1.json": "b49a12f05d4665e9bdda94a9017fd0486fb793ddd14a93062cb886ee7768a7ef",
+    "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
+    "contracts/generated/swagger-v1.json": "acfd85d77914f58360e498e69481a5e2b2ea883f4e9c32d8571ca8c8eaf7eefb",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
-    "docs/execucao/v1/backlog.json": "0e8a861e799fcff2c8b5dc7d079edc0c3c0aa25d62bfebe2e6f2439947c2b601",
+    "docs/execucao/v1/backlog.json": "851ecbeb8db43b563616825e1c494816ddf8e9591d92c30b04d9969c4225e9c3",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
+    "tools/ativar_configuracao_local.py": "341e5463f75be49c174eb21d0bf20343ecb6574355735a3ed41ad78d9935f4c2",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/avaliar_android.py": "237533eb97156589bf73e7e8a45a0072fec23186c05cb645913dad7a55c6d790",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
-    "tools/db_local.py": "5fedc58b67b380d78e3d5bdf23cc6eca3f38e37e7a93ce00826e39c6451d4f26",
+    "tools/db_local.py": "5d54a80b624b6c52ad4d7e9fc088ba3ff4acb3fcddd1fc4670c669c5578f2af6",
     "tools/dev_api.py": "bbe28c45373644db8bf7acb20f16a709bd7e445441c03fda6dc3efafcd245bb1",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "01a084abae0a11dc9c74db96aa87ba629bcab1663e72e6523339817db3039adc",
@@ -213,24 +223,25 @@
     "tools/verificar_auth_local.py": "171628f8808cbb7dc625a04462138a7a1eeb9491a1ec15db1a3b89f2feeeebf4",
     "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776",
     "tools/verificar_catalogo_local.py": "0882d55611e55885c9861c2864d8449864109e27f0140c6c5fa30bdcc4765439",
+    "tools/verificar_configuracao_local.py": "92a1eaac1851bdc2d4e6859d24125318671991e705211b9aa569d8a462b05167",
     "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
     "tools/verificar_importacao_alimentos.py": "afa8357b1a29513facc0f7620ea6ff6c6875c0b17b5693d79a875c3bd5d30726",
     "tools/verificar_lote_alimentar_local.py": "8fb91247b63595638f722d83a71fd3b2daecf5a73e20ad32ad52d3669e46f4c3",
     "tools/verificar_nomes_alimentares.py": "632933ab9cc1e98c7a85c0f280c462a44157ff50dcbe8f4c95f20934980b388c",
     "tools/verificar_nutricao_local.py": "2c2055e493eb8a05b7e121952ef019d7dfb45142afc3caaf33639aa2f0fb578e",
     "tools/verificar_privacidade_http.py": "fa5f96d4e711164a2d9a16087e9eafcbc01512f6bc38927f9817a304cfeb2791",
-    "tools/verificar_privacidade_local.py": "7357bfcb60e1b454170c879c1acb06375728c4e4ef8f7e03633af55ddb6b86cc"
+    "tools/verificar_privacidade_local.py": "a910f0c4697d1fee7792c36c9feed3452390dfd3a5c9a74e6a357dc710243c07"
   },
   "coverage": {
-    "dartFiles": 102,
+    "dartFiles": 107,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 52,
-    "goRegistrations": 27,
+    "goFiles": 55,
+    "goRegistrations": 30,
     "modelsInReference": 9
   },
   "groups": [
@@ -371,6 +382,21 @@
         {
           "repository": "trainforge",
           "path": "lib/features/stats/presentation/pages/stats_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_controller.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_sections.dart",
           "line": 1
         },
         {
@@ -516,6 +542,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 1
         }
@@ -619,6 +650,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/stats/domain/stats_data.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/domain/training_configuration.dart",
           "line": 1
         },
         {
@@ -752,6 +788,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
+          "line": 2
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 2
         }
@@ -814,6 +855,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/stats/data/stats_repository.dart",
+          "line": 3
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
           "line": 3
         },
         {
@@ -969,6 +1015,31 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_controller.dart",
+          "line": 4
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_controller.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_page.dart",
+          "line": 5
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_page.dart",
+          "line": 11
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_configuration/presentation/training_configuration_sections.dart",
+          "line": 7
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
           "line": 7
         },
@@ -995,7 +1066,12 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/product_shell.dart",
-          "line": 10
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/product_shell.dart",
+          "line": 11
         }
       ]
     },
@@ -1245,6 +1321,14 @@
       }
     },
     {
+      "id": "TrainingConfigurationPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/training_configuration/presentation/training_configuration_page.dart",
+        "line": 35
+      }
+    },
+    {
       "id": "WorkoutDayPage",
       "source": {
         "repository": "trainforge",
@@ -1305,7 +1389,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 19
+        "line": 21
       }
     },
     {
@@ -1621,7 +1705,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 164
+        "line": 167
       }
     },
     {
@@ -1630,7 +1714,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 152
+        "line": 155
       }
     },
     {
@@ -1639,7 +1723,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 20
+        "line": 21
       }
     },
     {
@@ -1711,7 +1795,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/evaluation_guide_page.dart",
-        "line": 111
+        "line": 113
       }
     },
     {
@@ -1720,7 +1804,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/evaluation_guide_page.dart",
-        "line": 119
+        "line": 121
       }
     },
     {
@@ -1729,7 +1813,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 101
+        "line": 112
       }
     },
     {
@@ -1738,7 +1822,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 85
+        "line": 96
       }
     },
     {
@@ -1747,7 +1831,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 173
+        "line": 190
       }
     }
   ],
@@ -3815,7 +3899,10 @@
       "services/api/internal/privacy/privacy.go",
       "services/api/internal/privacy/restore.go",
       "services/api/internal/swaggerdocs/docs.go",
+      "services/api/internal/trainingconfig/handler.go",
       "services/api/internal/trainingconfig/model.go",
+      "services/api/internal/trainingconfig/postgres.go",
+      "services/api/internal/trainingconfig/resources.go",
       "services/api/internal/trainingconfig/service.go",
       "services/api/migrations/files.go"
     ],
@@ -4361,7 +4448,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 42
+          "line": 46
         },
         "registrationDetected": true
       },
@@ -4382,7 +4469,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 53
+          "line": 57
         },
         "registrationDetected": true
       },
@@ -4411,7 +4498,7 @@
         "method": "GET",
         "path": "/api/v1/me/export",
         "params": [
-          "section query string false \"Owned data section\" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries)",
+          "section query string false \"Owned data section\" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations)",
           "limit query int false \"Maximum page size\" minimum(1) maximum(50) default(20)",
           "cursor query string false \"Opaque cursor bound to user, section and limit\""
         ],
@@ -4477,6 +4564,76 @@
           "line": 238
         },
         "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Current"
+          ],
+          [
+            "Failure",
+            "400,401,409,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 159
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "PUT",
+        "path": "/api/v1/me/training-configuration",
+        "params": [
+          "Idempotency-Key header string true \"UUID stable across retries;24-hour retention\"",
+          "body body SaveCommand true \"Complete declaration,reviewed=true and expected revision; no owner field\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Current"
+          ],
+          [
+            "Failure",
+            "400,401,409,413,415,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 187
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration/resources",
+        "params": [
+          "q query string false \"Literal original equipment name; maximum100characters\"",
+          "limit query int false \"1..20; default20\"",
+          "cursor query string false \"Account/query/limit-bound cursor\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} ResourcePage"
+          ],
+          [
+            "Failure",
+            "400,401,409,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 280
+        },
+        "registrationDetected": true
       }
     ],
     "packages": [
@@ -4532,6 +4689,10 @@
       [
         "cmd/api",
         "internal/swaggerdocs"
+      ],
+      [
+        "cmd/api",
+        "internal/trainingconfig"
       ],
       [
         "cmd/food-names",
@@ -4600,6 +4761,10 @@
       [
         "internal/trainingconfig",
         "internal/auth"
+      ],
+      [
+        "internal/trainingconfig",
+        "internal/platform/httpapi"
       ]
     ],
     "migrations": [
@@ -4613,7 +4778,8 @@
       "services/api/migrations/00008_private_nutrition.sql",
       "services/api/migrations/00009_reviewed_food_names.sql",
       "services/api/migrations/00010_food_name_catalog_revision.sql",
-      "services/api/migrations/00011_private_food_unknown_language.sql"
+      "services/api/migrations/00011_private_food_unknown_language.sql",
+      "services/api/migrations/00012_training_configuration.sql"
     ],
     "tables": [
       {
@@ -4823,6 +4989,14 @@
           "path": "services/api/migrations/00010_food_name_catalog_revision.sql",
           "line": 4
         }
+      },
+      {
+        "name": "training_configuration_versions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00012_training_configuration.sql",
+          "line": 67
+        }
       }
     ],
     "registrations": [
@@ -5012,7 +5186,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 76
+          "line": 80
         }
       },
       {
@@ -5021,7 +5195,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 77
+          "line": 81
         }
       },
       {
@@ -5030,7 +5204,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 79
+          "line": 83
         }
       },
       {
@@ -5067,6 +5241,33 @@
           "repository": "trainforge",
           "path": "services/api/internal/privacy/handler.go",
           "line": 31
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 40
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/api/v1/me/training-configuration",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 41
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration/resources",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/trainingconfig/handler.go",
+          "line": 42
         }
       }
     ],
@@ -6070,7 +6271,8 @@
               "activitySessions",
               "activityEvents",
               "foods",
-              "foodEntries"
+              "foodEntries",
+              "trainingConfigurations"
             ],
             "type": "string",
             "description": "Owned data section",
@@ -6735,6 +6937,201 @@
           },
           "415": {
             "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/trainingconfig.Current"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/api/v1/me/training-configuration",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "UUID stable across retries;24-hour retention",
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Complete declaration,reviewed=true and expected revision; no owner field",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/trainingconfig.SaveCommand"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/trainingconfig.Current"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "413": {
+            "description": "Request Entity Too Large",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/training-configuration/resources",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Literal original equipment name; maximum100characters",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "1..20; default20",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Account/query/limit-bound cursor",
+            "name": "cursor",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/trainingconfig.ResourcePage"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "409": {
+            "description": "Conflict",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }

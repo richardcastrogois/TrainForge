@@ -2,6 +2,14 @@
 
 Plano, não certificado de auditoria. Os números da imagem de referência de auditoria não são achados do TrainForge. A prioridade dos [achados locais](achados.json) é revisão estática; não houve scanner de dependências, pentest ou benchmark de produção nesta etapa.
 
+## Incremento047 verificado em27/10
+
+Configuração privada tem validação em Go e SQL, credencial viva, lock do titular, revisão otimista, idempotência atômica e versões imutáveis. Negativos em SQL direto recusaram review:false, campo de titular forjado, medida física não prevista e fusoLocal. Runtime não insere/atualiza/apaga a tabela diretamente; funções SECURITYDEFINER usam search_path fixo e execução explicitamente concedida. Não há privilégio master inferido.
+
+HTTP exige Bearer e titular da sessão, aplica no-store, JSONestrito16KiB e limite por conta. Client congela intenção incerta e invalida respostas por conta/geração; rascunho em memória não é fila offline durável. Exportação, exclusão confirmada e restauração/ledger incluem a configuração; testes em descartável provaram preservação de outra conta e editorial. [SQL](../execucao/v1/training-configuration-sql-verification.json), [restore](../execucao/v1/training-configuration-privacy-verification.json).
+
+Schema12 foi ativado somente na base local, com checkpoint de schema e comparação das linhas reais; não é alegação de backup completo restaurado desta ativação. Testes não certificam segurança total nem escala: rate limit é por instância, busca de recursos usa view JSON do catálogo atual e precisa de benchmark/indexação conforme carga. Sonar/CIFlutterSQL/carga e operação pública continuam com seus gates. Nenhuma hospedagem foi criada.
+
 ## Estado conferido em24/10/2026
 
 A [auditoria do produto](../execucao/v1/auditoria-produto-2026-10-24.md) inspecionou a API Go0.5.1/25operações, APKdebug0.3.0+13, schema/privilégios reais e cobertura. Há controles concretos de autenticação, titularidade, sessão, logs, rede e persistência; não há homologação completa de segurança, Sonar configurado ou capacidade medida. V1-028/029/030 continuam abertas. CI verde atual não inclui Flutter nem integraçãoSQL descartável automática.

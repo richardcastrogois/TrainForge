@@ -11,7 +11,8 @@ import 'figma_components.dart';
 
 class PlansOverview extends StatefulWidget {
   final CatalogController? controller;
-  const PlansOverview({super.key, this.controller});
+  final VoidCallback? configure;
+  const PlansOverview({super.key, this.controller, this.configure});
   @override
   State<PlansOverview> createState() => _PlansOverviewState();
 }
@@ -105,13 +106,17 @@ class _PlansOverviewState extends State<PlansOverview> {
         ),
         FigmaActionCard(
           title: context.l10n.createMyPlan,
-          subtitle: context.l10n.organizeWeek,
+          subtitle: widget.configure == null
+              ? context.l10n.organizeWeek
+              : context.l10n.trainingConfiguration,
           asset: 'plus',
-          onTap: () => showAvailability(
-            context,
-            context.l10n.createMyPlan,
-            context.l10n.compositionUnavailable,
-          ),
+          onTap:
+              widget.configure ??
+              () => showAvailability(
+                context,
+                context.l10n.createMyPlan,
+                context.l10n.compositionUnavailable,
+              ),
         ),
         FigmaActionCard(
           title: context.l10n.helpStart,

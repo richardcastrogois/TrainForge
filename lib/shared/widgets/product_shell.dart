@@ -1,3 +1,4 @@
+import 'package:trainforge/features/training_configuration/domain/training_configuration.dart';
 import 'package:trainforge/core/l10n/feedback_localization.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
@@ -12,6 +13,7 @@ import 'package:trainforge/features/nutrition/presentation/daily_summary_control
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'account_page.dart';
+import 'package:trainforge/features/training_configuration/presentation/training_configuration_page.dart';
 import 'figma_bottom_nav.dart';
 import 'plans_overview.dart';
 import 'product_overviews.dart';
@@ -38,6 +40,7 @@ class _ProductShellState extends State<ProductShell>
   final visited = {TrainForgeDestination.today};
   late final String accountId;
   late final NutritionRepository nutrition;
+  late final TrainingConfigurationRepository? configuration;
   late final DailySummaryController daily;
   late final AnimationController tabMotion = AnimationController(
     vsync: this,
@@ -54,6 +57,14 @@ class _ProductShellState extends State<ProductShell>
           accountId: accountId,
           currentAccountId: () => widget.controller.profile?.id,
         );
+    final configurationFactory = context
+        .getInheritedWidgetOfExactType<AppDependencyScope>()
+        ?.dependencies
+        .createTrainingConfigurationRepository;
+    configuration = configurationFactory?.call(
+      accountId: accountId,
+      currentAccountId: () => widget.controller.profile?.id,
+    );
     daily = DailySummaryController(
       repository: nutrition,
       accountId: accountId,
@@ -129,6 +140,13 @@ class _ProductShellState extends State<ProductShell>
       ),
       TrainForgeDestination.plans => PlansOverview(
         controller: widget.plansController,
+        configure: configuration == null
+            ? null
+            : () => openTrainingConfiguration(
+                context,
+                widget.controller,
+                configuration!,
+              ),
       ),
       TrainForgeDestination.activity => const ActivityOverview(),
       TrainForgeDestination.food => DailyOverview(
@@ -169,8 +187,16 @@ class _ProductShellState extends State<ProductShell>
                     onProfile: () => Navigator.push<void>(
                       context,
                       MaterialPageRoute(
-                        builder: (_) =>
-                            AccountPage(controller: widget.controller),
+                        builder: (_) => AccountPage(
+                          controller: widget.controller,
+                          configure: configuration == null
+                              ? null
+                              : () => openTrainingConfiguration(
+                                  context,
+                                  widget.controller,
+                                  configuration!,
+                                ),
+                        ),
                       ),
                     ),
                   ),

@@ -1,6 +1,6 @@
 # Domínio e banco — modelo e implementação inicial
 
-Migrations00001–00011 aplicadas ao banco isolado `trainforge_v1_dev` (26tabelas).9–11 foram autorizadas explicitamente pelo autor e testadas primeiro emdescartável. Comparação antes/depois preservou dados deusuário,consumo,sessões e alimentos. [Ativação](../execucao/v1/food-names-local-activation.json). O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
+Migrations00001–00012 aplicadas ao banco isolado `trainforge_v1_dev` (27tabelas). A12 foi testada emdescartável e ativada comcheckpoint de schema e comparação das linhas reais; [recibo047](../execucao/v1/training-configuration-local-activation.json).9–11 foram autorizadas explicitamente pelo autor e testadas primeiro emdescartável. Comparação antes/depois preservou dados deusuário,consumo,sessões e alimentos. [Ativação](../execucao/v1/food-names-local-activation.json). O modelo abaixo descreve responsabilidades; esta implementação não habilita automaticamente seus casos de uso. Prisma/legado continuam separados. [Teste real de restauração](../execucao/v1/database-verification.json).
 
 | Entidade proposta | Responsabilidade e relação |
 |---|---|
@@ -17,6 +17,26 @@ Migrations00001–00011 aplicadas ao banco isolado `trainforge_v1_dev` (26tabela
 | UserFood / UserFoodVersion (nome a validar na009) | Cadastro real informado pelo usuário, com titular e origem distintos do catálogo pesquisado; não publicar nem tratar como revisado por inferência |
 | FoodEntry | Quantidade e unidade confirmadas, data/fuso, alimento/versão e fatores usados no cálculo; edição rastreável |
 | CareRelationship (posterior) | Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador” |
+
+## Configuração de treino implementada047
+
+training_configuration_versions guarda apenas user_id/revision/configuration/confirmed_at. PK(user_id,revision) serve histórico e leitura do mais recente. Trigger rejeita UPDATE; runtime não tem DML direto. save_training_configuration revalida sessão, trava titular e confirma revisão/recursos, depois salva versão e idempotência atomicamente. A view training_configuration_resources é pública quanto ao conteúdo editorial, mas acessada pela rota autenticada; nenhuma posse ou prática é inferida.
+
+Celular: respostas incompletas somente em memória; corpo/chave congelados enquanto a confirmação for incerta. Banco: apenas declaração completa e revisada, versões antigas, resultado idempotente24h. Não salvar paciente, peso, altura ou diagnóstico sem finalidade fundamentada. Preferências de idioma/tema continuam no dispositivo. Exclusão/restore integram o inventário privado e o ledger.
+
+```mermaid
+erDiagram
+    users ||--o{ training_configuration_versions : titular
+    users ||--o{ idempotency_records : intencoes
+    users ||--o{ auth_families : sessoes
+    auth_families ||--o{ access_tokens : credencial_viva
+    training_configuration_versions {
+        uuid user_id PK,FK
+        integer revision PK
+        jsonb configuration
+        timestamptz confirmed_at
+    }
+```
 
 ## Dose e unidades
 

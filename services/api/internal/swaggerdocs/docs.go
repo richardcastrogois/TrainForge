@@ -1060,7 +1060,8 @@ const docTemplate = `{
                             "activitySessions",
                             "activityEvents",
                             "foods",
-                            "foodEntries"
+                            "foodEntries",
+                            "trainingConfigurations"
                         ],
                         "type": "string",
                         "description": "Owned data section",
@@ -1796,6 +1797,219 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/v1/me/training-configuration": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "training-configuration"
+                ],
+                "summary": "Read own confirmed training configuration",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/trainingconfig.Current"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "training-configuration"
+                ],
+                "summary": "Confirm or replace own training configuration",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "UUID stable across retries;24-hour retention",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Complete declaration,reviewed=true and expected revision; no owner field",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/trainingconfig.SaveCommand"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/trainingconfig.Current"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/training-configuration/resources": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "training-configuration"
+                ],
+                "summary": "Search source-scoped training equipment",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Literal original equipment name; maximum100characters",
+                        "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "1..20; default20",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Account/query/limit-bound cursor",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/trainingconfig.ResourcePage"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/privacy": {
             "get": {
                 "produces": [
@@ -2200,6 +2414,12 @@ const docTemplate = `{
             "properties": {
                 "code": {
                     "type": "string"
+                },
+                "fields": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
                 },
                 "requestId": {
                     "type": "string"
@@ -2946,6 +3166,160 @@ const docTemplate = `{
                     "type": "string"
                 }
             }
+        },
+        "trainingconfig.Availability": {
+            "type": "object",
+            "properties": {
+                "minutesAvailable": {
+                    "type": "integer"
+                },
+                "startTime": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "weekday": {
+                    "type": "integer"
+                }
+            }
+        },
+        "trainingconfig.Configuration": {
+            "type": "object",
+            "properties": {
+                "availability": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingconfig.Availability"
+                    }
+                },
+                "context": {
+                    "type": "string"
+                },
+                "environments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "resources": {
+                    "$ref": "#/definitions/trainingconfig.Resources"
+                },
+                "timezone": {
+                    "type": "string"
+                }
+            }
+        },
+        "trainingconfig.Current": {
+            "type": "object",
+            "properties": {
+                "current": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/trainingconfig.Snapshot"
+                        }
+                    ],
+                    "x-nullable": true
+                },
+                "resourceLabels": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingconfig.ResourceOption"
+                    }
+                },
+                "unavailableResources": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingconfig.ResourceRef"
+                    }
+                }
+            }
+        },
+        "trainingconfig.ResourceOption": {
+            "type": "object",
+            "properties": {
+                "equipmentId": {
+                    "type": "integer"
+                },
+                "nameOriginal": {
+                    "type": "string"
+                },
+                "sourceId": {
+                    "type": "string"
+                },
+                "sourceName": {
+                    "type": "string"
+                }
+            }
+        },
+        "trainingconfig.ResourcePage": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingconfig.ResourceOption"
+                    }
+                },
+                "nextCursor": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "trainingconfig.ResourceRef": {
+            "type": "object",
+            "properties": {
+                "equipmentId": {
+                    "type": "integer"
+                },
+                "sourceId": {
+                    "type": "string"
+                }
+            }
+        },
+        "trainingconfig.Resources": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingconfig.ResourceRef"
+                    }
+                },
+                "status": {
+                    "type": "string"
+                }
+            }
+        },
+        "trainingconfig.SaveCommand": {
+            "type": "object",
+            "properties": {
+                "configuration": {
+                    "$ref": "#/definitions/trainingconfig.Configuration"
+                },
+                "reviewed": {
+                    "type": "boolean"
+                },
+                "revision": {
+                    "type": "integer"
+                }
+            }
+        },
+        "trainingconfig.Snapshot": {
+            "type": "object",
+            "properties": {
+                "configuration": {
+                    "$ref": "#/definitions/trainingconfig.Configuration"
+                },
+                "confirmedAt": {
+                    "type": "string"
+                },
+                "contract": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "integer"
+                }
+            }
         }
     },
     "securityDefinitions": {
@@ -2959,7 +3333,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.6.2",
+	Version:          "0.7.0",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},
