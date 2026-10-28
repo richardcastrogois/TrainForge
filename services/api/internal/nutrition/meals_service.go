@@ -18,7 +18,7 @@ func (s MealDiaryService) Day(ctx context.Context, p auth.Principal, day, tz str
 	if err := ctx.Err(); err != nil {
 		return MealDiary{}, err
 	}
-	if !uuidPattern.MatchString(p.User.ID) || !uuidPattern.MatchString(p.FamilyID) || len(p.AccessHash) != 32 {
+	if !mealPrincipalValid(p) {
 		return MealDiary{}, auth.ErrInvalid
 	}
 	if _, _, err := dayBounds(day, tz); err != nil {

@@ -869,7 +869,7 @@ Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Co
 
 Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
 
-Handoff: 27/10:iniciado trabalho independente enquanto047aguarda aceite humano;020/021done. Modelo de leitura e serviço comportaMealDayRepository implementados:Entriesúnicos,gruposporrefsIDs,legacysemagrupamento,subtotaisda020semduplacontagem,limite100/incompletude,fuso/data de cadaitem eordemestável.9testes principais+17subcasos aprovados. SemSQL/migration/rotas/Flutter/aceitereal. Próxima fatia:comandos egrupos/vínculos versionados comownership/idempotência/transação,ciclo de correção/exclusão eprivacidade/restore antesdaativação. Preservarconsumoexistente semagrupamentoautomático. API0.7.0/schema12/APK22inalterados.
+Handoff: 27/10:iniciado trabalho independente enquanto047aguarda aceite humano;020/021done. Modelo de leitura e serviço comportaMealDayRepository implementados:Entriesúnicos,gruposporrefsIDs,legacysemagrupamento,subtotaisda020semduplacontagem,limite100/incompletude,fuso/data de cadaitem eordemestável.13testes principais+42subcasos aprovados. CasoCreateMeal/aplicação exige reviewed/1–32itens novos completos,cópia independente do comando e chave idempotente preservada; retorno completo sem alterar identidade/versão/quantidade. Escritor SQL ainda não existe. SemSQL/migration/rotas/Flutter/aceitereal. Próxima fatia:comandos egrupos/vínculos versionados comownership/idempotência/transação,ciclo de correção/exclusão eprivacidade/restore antesdaativação. Preservarconsumoexistente semagrupamentoautomático. API0.7.0/schema12/APK22inalterados.
 
 ### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
 

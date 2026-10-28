@@ -12,9 +12,9 @@ Depois047, continuar015 pelas dependências. Zero programa/dose/instrução/míd
 
 ## Trabalho independente045 já iniciado
 
-Enquanto047aguarda o autor, avançou a fundação de leitura045 (depende020/021done): nutrition/meals.go e meals_service.go com9testes principais+17subcasos aprovados. [Modelo e próximos passos](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json). Mesmos IDs/cálculos em duas visões, semagrupamento automático do legado, total diário uma vez, subtotais do recorte/desconhecidos e limite100/incompletude. SemSQL/migration/endpoint/tela nova; porta testada não é persistência real.
+Enquanto047aguarda o autor, avançou a fundação de leitura045 (depende020/021done): nutrition/meals.go/meals_service.go/meals_create.go com13testes principais+42subcasos aprovados. [Modelo e próximos passos](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json). Mesmos IDs/cálculos em duas visões, semagrupamento automático do legado, total diário uma vez, subtotais do recorte/desconhecidos e limite100/incompletude. SemSQL/migration/endpoint/tela nova; porta testada não é persistência real.
 
-Próxima fatia independente: comandos de criação/edição/exclusão, grupos/vínculos versionados e escrita atômica, revisão/idempotência, integração dos itens e privacidade/exportação/exclusão/restore antes de ativar migration. Não recriar a projeção nem copiar nutrientes. Preservar formulário047em uso; prioridade do treino volta a047→015quando o autor confirmar o aceite.
+CreateMeal/aplicação já valida a revisão e os valores explícitos e confere retorno; ainda sem escritorSQL. Próxima fatia independente: persistência de criação, comandos de edição/exclusão, grupos/vínculos versionados e escrita atômica, revisão/idempotência, integração dos itens e privacidade/exportação/exclusão/restore antes de ativar migration. Não recriar a projeção nem copiar nutrientes. Preservar formulário047em uso; prioridade do treino volta a047→015quando o autor confirmar o aceite.
 
 ## Estado validado e ambiente
 

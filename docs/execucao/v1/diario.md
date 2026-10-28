@@ -426,3 +426,10 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Implementados modelo de leitura e serviço/porta no módulonutrition. Cada consumo aparece uma vez; refeição/semagrupamento usamrefsIDs, subtotais reutilizam020 e o total diário não conta os grupos novamente. Metadata semtítulo não vira nome de refeição inventado; legado semvínculo continuaidentificável.
 - Dia/fuso são do consumo nas duas visões, inclusive limite de meia-noite; refeição informa outrositens fora dorecorte. Snapshotincompleto não mostra totalnutricionalcompleto. Projeção independente não reescreve origem/cálculo.
 -9testes principais+17subcasos passaram. Ainda semSQL/migration/rotas/Swagger/Flutter/aceite; porta comfixture não provaownershipSQL. Próximosescritaatômica,versões/vínculos,ciclo privado econtratosintegrados. Banco econsumoreal inalterados;APK22preservado. [Modelo](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json).
+
+
+## 27/10/2026 — caso de criação revisada045
+
+- MealCreateService/NewMealCommand e porta de escrita definidos, ainda semSQL/rotas/tela. Exigemreviewed,1–32itens novos completos/quantidade/evidência/versão e tempos explícitos; nenhuma soma/porção/identidade deduzida.32é limitação técnica.
+- Cópia deentrada preserva chamador/intenção; confirmação recebida precisa corresponder aos campos/cálculos/revisões e conter todos os itens comIDs únicos, sem título inventado. Portas não provam transação ouownershipSQL.
+-13testes principais de refeições e42subcasos negativos aprovados; novas regressões incluemitem parcial,valores/versão/evidência/algoritmo alterados e erro interno sanitizado. Próximo:adapterSQLatômico e ciclo de revisão/exclusão/privacidade antes de migration/HTTP/Flutter. Semmudança noAPI29operações/schema12/APK22 ouconsumoreal.

@@ -1,6 +1,6 @@
 # V1-045 — refeições e alimentos sobre os mesmos registros
 
-Estado em27/10/2026: **doing, fundação de leitura implementada e testada**. Trabalho independente enquanto047aguarda aceite humano; depende de020/021concluídas. Nenhuma migration/rota/tela de refeição foi criada. API0.7.0/29operações, schema12/27tabelas eAPK0.4.0+22 permanecem. O consumo humano existente não foi agrupado ou alterado.
+Estado em27/10/2026: **doing, fundação de leitura e caso de criação revisada implementados/testados, sem escritorSQL**. Trabalho independente enquanto047aguarda aceite humano; depende de020/021concluídas. Nenhuma migration/rota/tela de refeição foi criada. API0.7.0/29operações, schema12/27tabelas eAPK0.4.0+22 permanecem. O consumo humano existente não foi agrupado ou alterado.
 
 ## Decisões que governam a implementação
 
@@ -35,9 +35,15 @@ flowchart LR
     legacy["Sem vínculo informado"] --> ungrouped["Sem agrupamento, sem nome inventado"]
 ```
 
+## Caso de criação revisada — domínio/aplicação, sem persistência
+
+meals_create.go define NewMealCommand e MealCreateService. Title opcional é declaração do titular; OccurredAt/Timezone do grupo são explícitos, reviewed precisa sertrue e items contém1–32EntryInput completos com revisão0.32é limite técnico, não recomendação alimentar. Campos/quantidade/unidade/evidência/versão e tempo por item reutilizam020; itens iguais confirmados não são mesclados automaticamente. Não recebeIDs de consumos antigos para agrupá-los porinferência.
+
+PortaMealCreateRepository deve implementar **todos os itens e grupo na mesma transação**, com sessão viva/titular, versões/cálculos da020 e chave idempotente. Aplicação valida antes de chamar e confere retorno completo, IDs únicos, algoritmo/versão/quantidades/evidência/revisões e tempos equivalentes, sem rótulo inventado. Um adapter comfixture não prova gravação atômica/rollback/ownership: nada foi ligado ao runtime.
+
 ## Próxima fatia — ainda não implementada
 
-1. Fechar comandos de criação/edição/exclusão por refeição e vínculo de itens, com revisão/confirmacão/chave estável. Criar grupo e itens novos atomicamente; falha não deixa refeição ou consumo parcial. Não implementar gravações sequenciais noFlutter simulando uma transação.
+1. Criar escritorSQL paraMealCreateRepository e fechar comandos de edição/exclusão/vínculo, com revisão/confirmação/chave estável. O caso de criação/aplicação já existe; não refazê-lo. Gravar grupo e itens novos atomicamente; falha não deixa refeição ou consumo parcial. Não implementar gravações sequenciais noFlutter simulando uma transação.
 2. Migrationforward para grupos/vínculos e histórico de alterações, com integridade composta de titular, índices e tombstone. Nenhum agrupamento automático dos registros anteriores. Não alterarfoodId/versão ou sobrescrever snapshot alimentar.
 3. Integrar correção/exclusão de um consumo: mesma transação valida revisão da refeição e mantém os demais itens; replay não incrementa revisão duas vezes. Exclusão de refeição remove seus itens ativos, bloqueia reenvios recriadores e prepara limpeza de imagem042. Sem manter foto acessível como revisão.
 4. Atualizar inventário/exportação/exclusão/restore/ledger e privilégios antes da ativação. SQLisolado: duas contas, concorrência, idempotência, vínculos/revisões, rollback, exclusão e restauração. Não usar dados reais comofixture.
