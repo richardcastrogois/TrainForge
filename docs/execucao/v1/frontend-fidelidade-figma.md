@@ -1,12 +1,20 @@
 # Frontend — referências, estado e checkpoints
 
-## Localização048 concluída — 27/10/2026
+## Configuração047 — teste humano em27/10
+
+APKdebug **0.4.0+22**, API **0.7.0/29operações**,555mensagens/idioma e213testesFlutter no incremento. O autor revisou e confirmou sua rotina; o agente reabriu a configuração e conferiu as quatro etapas/resumo com o banco, sem resave ou alteração dos demais registros. [Evidência real parcial](training-configuration-human-verification.json). Falta edição nativa autorizada e recuperação;047continua doing.
+
+**Clareza ainda não aprovada:** usuário confundiu o campo de fuso com a hora de início e considerou a etapa pouco didática. A causa exata da rejeição anterior do textoIANA não foi estabelecida. Entrada comoffset e nova validação permitiu avançar; o horário salvo diverge do mencionado no chat e foi solicitado esclarecimento, sem alteração porinferência.
+
+O autor pediu primeiro concluir os testes e depois voltar às correções dofrontend. Refinar os pontos07/12: apresentar o fuso do aparelho de forma compreensível e deixar identificadores técnicos fora da tarefa comum; separar fuso e hora inicial, reduzir texto, melhorar o seletor de horário e a hierarquia de Continuar/Concluir/Confirmar, mantendo opção semhora fixa. Não inventar cidade pelo offset, valores da rotina, traduções de equipamentos ou aptidão clínica. Este ensaio não é aceite de usabilidade com idosos/cuidadores nem fidelidade integral aoFigma.
+
+## Checkpoint048 anterior — 27/10/2026
 
 495 mensagens/idioma,197 testes Flutter e análise sem problemas. Idioma segue o aparelho por padrão; escolha manual opcional. Biblioteca, seleção, histórico e detalhe/correção usam nome revisado quando disponível, com original/fonte e fallback. Snapshot/cálculo e escrita preservados; conta/idioma/revisão controlam a leitura. [Critérios fechados](localization-048-fechamento.json).
 
 APKdebug **0.3.8+21 instalado**, assinatura/hash conferidos. Leitura realENno20 ePT-BRno21, sem gravar consumo. O timeout de partida fria foi confirmado por códigos fixos;21reconcilia a resposta tardia se nenhuma escolha/tentativa a substituiu. Mesmo com timeout observado, pt-BR/dark foram restaurados; app emHoje sem formulário. Quatro idiomas tinham ensaio nativo no19; novo detalhe tem widgets320px/2x nos quatro. Fonte nativa permaneceu1.0. Sem aceite nativoiOS ou usabilidade de todos os públicos.
 
-Zero nomes revisados reais publicados;6369originais poridioma. A capacidade048 foi entregue; a cobertura editorial depende de pacote humano/direitos e não foi inventada. Futuros fluxos localizam conforme implementação. A próxima047 trata configuração privada completa; as demais jornadas preservam seus gates.
+Zero nomes revisados reais publicados;6369originais poridioma. A capacidade048 foi entregue; a cobertura editorial depende de pacote humano/direitos e não foi inventada. Futuros fluxos localizam conforme implementação. 047agora tem configuração privada completa e salvamento/recuperação reais, com edição/UX pendentes; as demais jornadas preservam seus gates.
 
 Fonte única atualizada em **27/10/2026**. [Trilha por área](trilha-implementacao.md) orienta o próximo trabalho; [auditoria](auditoria-produto-2026-10-24.md) registra o baseline. Os antigos relatos 01–06, dark/rolagem e 07–12 foram consolidados aqui. O Git mantém os textos históricos completos; os recibos originais permanecem no repositório.
 
@@ -14,9 +22,9 @@ Fonte única atualizada em **27/10/2026**. [Trilha por área](trilha-implementac
 
 Q1 posterior:cuidador é o próprio praticante, sem vínculo com pessoa assistida como requisito; ambos os caminhos de treino e reconhecimento alimentar com revisão/quantidade informada fazem parte da versão desejada. Q2 confirmou visões por refeição/alimento e histórico visual, análise nutricional e dicas revisadas juntos na primeira versão (V1-045/046); após pesquisa, aprovou também recuperar imagens pela conta com cache no celular. Q3 confirmou configuração completa antes da busca, trocas compatíveis/dias/horários e retomada ou parcial (047/015/044/017/023). Q4 confirmou apagar foto com a refeição e registrar offline/sincronizar depois;026/042/045 ainda precisam de fila durável privada, estados e exclusão coordenada. Q5 confirmou configuração em etapas curtas/revisão final e nomes traduzidos quando revisados, com original/fonte nos detalhes e fallback original (047/048). Nenhuma dessas capacidades foi implementada por alterar o escopo.
 
-APK anterior instalado: **debug 0.3.0+13**. Atual **0.3.8+21 instalado**, leitura localizada e preferência recuperável; API Go **0.6.2 / 26 operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
+APK anterior instalado: **debug 0.3.0+13**. Atual **0.4.0+22 instalado**, leitura localizada e configuração persistida/recuperada; API Go **0.7.0 /29operações**. Marca TF/Inter e direção dark **Grafite e lima** aprovadas. Pontos 01–06 encerrados no checkpoint Android autorizado; pontos 07–12 têm acabamento dos fluxos disponíveis, sem conclusão integral.
 
-Faltam configuração completa persistida (047), treino/agenda/execução com trocas compatíveis e retomada/parcial, contexto de pausa do cuidador, captura/reconhecimento por foto, refeições/itens e o conjunto histórico visual/análise/dicas revisadas, publicação de nomes alimentares realmente revisados e aceites ampliados de usabilidade, além de validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
+Faltam concluir a edição nativa/aceite047 e seu refinamento didático, treino/agenda/execução com trocas compatíveis e retomada/parcial, contexto de pausa do cuidador, captura/reconhecimento por foto, refeições/itens e o conjunto histórico visual/análise/dicas revisadas, publicação de nomes alimentares realmente revisados e aceites ampliados de usabilidade, além de validação nativa iOS. Melhorar o visual não preenche esses contratos. Não afirmar fidelidade exata sem referência suficiente ou tratar exemplos do Figma como dados do usuário.
 
 | Ponto | Implementado | Falta para o aceite integral |
 |---|---|---|
@@ -26,11 +34,11 @@ Faltam configuração completa persistida (047), treino/agenda/execução com tr
 | 04 · Carregamentos | Loading/progresso/skeletons, ação ocupada e retentativa; redução de movimento | Cobrir os novos fluxos e conferir referências faltantes |
 | 05 · Transições | Abas/rascunhos/voltar/foco, remoção de rotas privadas ao trocar identidade, rotas/modais e movimento reduzido | Aceite nativo iOS e regressão das futuras jornadas |
 | 06 · Temas e rolagem | Claro/dark/sistema persistidos, Grafite e lima e Android sem esticar | Comparação nativa iOS; Flutter não incorpora automaticamente toda novidade do sistema |
-| 07 · Entrada/configuração | Google real, progresso, bloqueio de ações concorrentes e guia de disponibilidade | Configuração persistida, contratos e decisão sobre canais adicionais de entrada |
+| 07 · Entrada/configuração | Google real, configuração privada em4etapas/revisão, salvamento humano e recuperação real, bloqueio de ações concorrentes | Edição nativa autorizada/recuperação e refinamento didático de fuso/hora/navegação; canais adicionais só quando definidos |
 | 08 · Biblioteca/treino | Busca/filtros/cursor/detalhe/versão/origem/retirada, com recuperação | Material humano/instrução/dose/mídia permitidos, adesão, agenda, sessão e comparação das famílias faltantes |
 | 09 · Alimentação | Composição, cadastro particular, confirmação, histórico, revisão/exclusão, subtotais e proteção de formulário | Aceite humano do cadastro particular, melhorias da auditoria e recursos ainda não contratados |
 | 10 · Atividade/evolução | Disponibilidade honesta e caminhos úteis | Registro/execução/histórico/medidas/objetivos reais; GPS/sensores/dispositivos/OCR quando aprovados |
-| 11 · Perfil/privacidade | Identidade real, aparência, política da API, exportação/exclusão e ajuda | Edição persistida de campos aprovados, idioma/unidades, feedback e termos de distribuição |
+| 11 · Perfil/privacidade | Identidade real, aparência, política da API, exportação/exclusão e ajuda | Edição persistida de campos aprovados/unidades, feedback e termos de distribuição; idioma já tem escolha opcional048 |
 | 12 · Acabamento | Teclado, rolagem, voltar/cancelar, foco no erro, escala2x/largura320 e alvos de toque em recortes | Jornadas completas, referências faltantes, acessibilidade humana e execução nativa iOS |
 
 ## Localização em andamento — V1-048

@@ -1282,7 +1282,7 @@
             "Contrato e fluxo Flutter completos para revisão",
             "Recibo de campos, isolamento, atualização e aceite"
           ],
-          "handoff": "27/10:implementação047 integrada. Migration12/schema27tabelas ativada comcheckpoint de schema/comparação;1conta/1consumo/6369versões preservados e0configurações criadas pelo agente. API0.7.0/29operações, Postgres comcredencial viva/ownership/revisão/idempotência,recursos porfonte,exportação/exclusão/restore verificados emdescartável. Flutter em4etapas comreview,rascunho emmemória/aviso antes de descartar,retrycorpo/chavefixos econta/geração;555mensagens/idioma. APKdebug0.4.0+22 instalado;entrada/própria ausência/primeiraetapadesmarcada nativas conferidas. Falta aceite humano:confirmar rotina real,reabrir ealterar;pergunta pendente nochat. Não salvar respostas porinferência nemmarcardone comfixtures. Depois015 pelasdependências;zero programa/dose/instrução/mídia aprovados continuam como gate deconteúdo.",
+          "handoff": "27/10:047integrada; autor revisou/confirmou rotina real. Revisão1 persistida e reaberta pelo agente na abaPlanos, quatro etapas e revisão final conferidas contraSQLsomenteleitura; rótulos porfonte corretos e nenhum resave acidental. Hashes deconta/consumo/catálogo e snapshot/data da revisão1 preservados. Falta edição nativa autorizada e recuperação da segunda revisão: esclarecimento do horário solicitado no chat, sem alterar dado por inferência. UI de fuso/hora foi considerada pouco didática; autor pediu primeiro os testes, depois refinamento. Registrar pendência emfrontend-fidelidade-figma.md; nenhumcódigo/APKalterado. Continua doing/completionEvidencevazia. Após047,015pelasdependências e gate deconteúdo;045independente permanece doing.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
@@ -1293,7 +1293,8 @@
             "docs/execucao/v1/training-configuration-privacy-verification.json",
             "docs/execucao/v1/training-configuration-local-activation.json",
             "docs/execucao/v1/training-configuration-client-verification.json",
-            "docs/execucao/v1/training-configuration-native-verification.json"
+            "docs/execucao/v1/training-configuration-native-verification.json",
+            "docs/execucao/v1/training-configuration-human-verification.json"
           ]
         },
         {
@@ -3638,5 +3639,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10:047implementada emGo/SQL/Flutter eAPK22instalado;doingapenasatéaceite humano deconfirmar/reabrir/alterar rotina. API0.7.0/29,schema12/27;dadosreaispreservados. Documentarrespostadoautor semfalsoaceite;depois015pelasdependências,comzero conteúdo deprática aprovado. Semcompra/hospedagem. Enquanto047aguarda autor,045doing emfundação de leitura independente;próximoescritaatômica/migrationeprivacidade,semalterarconsumoreal."
+  "currentPriority": "27/10:047com salvamento humano e recuperação real nas4etapas validados. Faltaedição nativa autorizada/recuperação; esclarecer horário no chat sem inventar rotina. UXfuso/hora registrada para depois dos testes. API0.7.0/29,schema12/27,APK22; conta/consumo/catálogo preservados. Depois015pelasdependências;045independente temleitura/CreateMealemdomínio/aplicação,SQL/privacidade/HTTP/Flutterpendentes."
 }

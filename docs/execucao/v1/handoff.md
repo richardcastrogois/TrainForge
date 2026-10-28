@@ -6,55 +6,6 @@ Atualizado em **27/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 Ler AGENTS.md, este handoff, backlog.json, plano-macro.md e etapa-02-fechamento.md. Conferir Git/arquivos antes de alterar; não repetir instalações, pesquisas, importações, restore ou Google sem mudança pertinente.
 
-**V1-047 implementada e integrada, ainda doing pelo aceite humano pendente.** Go/SQL/HTTP/Swagger/Flutter e ciclo de privacidade completos no incremento; [matriz e responsabilidades](configuracao-treino-047.md). Não recriar modelo, adaptador, migration ou formulário. O APK0.4.0+22 está instalado e foi deixado na primeira etapa, sem respostas preenchidas pelo agente. Pergunta pendente no chat solicita ao autor informar a rotina real e confirmar. Conferir sua resposta, depois recuperação e alteração da configuração. Não tocar no formulário enquanto o autor estiver preenchendo; não atualizar APK por inferência com rascunho/envio incerto. completionEvidence vazia até o aceite; fixtures não são confirmação humana.
+**V1-047 implementada, com salvamento humano e recuperação reais verificados; doing pela edição nativa ainda pendente.** O autor revisou/confirmou e autorizou acesso para validar. Banco contém revisão1; agente reabriu pela abaPlanos e conferiu as quatro etapas/resumo contraSQLsomenteleitura e referências de recursos. Nenhum resave, alteração de rotina ou credencial extraída do aparelho. Snapshot/data da revisão1 e hashes deconta/consumo/catálogo preservados. [Aceite parcial](training-configuration-human-verification.json).
 
-Depois047, continuar015 pelas dependências. Zero programa/dose/instrução/mídia aprovados continua gate de conteúdo; declaração de rotina não comprova aptidão, elegibilidade ou prescrição. Biblioteca pública, alimentação e privacidade permanecem independentes. Código seguro/separado desde agora; capacidade de milhões exige carga medida. Continuar trabalho independente quando houver pendência humana, sem concluir indevidamente.
-
-## Trabalho independente045 já iniciado
-
-Enquanto047aguarda o autor, avançou a fundação de leitura045 (depende020/021done): nutrition/meals.go/meals_service.go/meals_create.go com13testes principais+42subcasos aprovados. [Modelo e próximos passos](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json). Mesmos IDs/cálculos em duas visões, semagrupamento automático do legado, total diário uma vez, subtotais do recorte/desconhecidos e limite100/incompletude. SemSQL/migration/endpoint/tela nova; porta testada não é persistência real.
-
-CreateMeal/aplicação já valida a revisão e os valores explícitos e confere retorno; ainda sem escritorSQL. Próxima fatia independente: persistência de criação, comandos de edição/exclusão, grupos/vínculos versionados e escrita atômica, revisão/idempotência, integração dos itens e privacidade/exportação/exclusão/restore antes de ativar migration. Não recriar a projeção nem copiar nutrientes. Preservar formulário047em uso; prioridade do treino volta a047→015quando o autor confirmar o aceite.
-
-## Estado validado e ambiente
-
-- **Go0.7.0 /29operações**, Swagger gerado e servido localmente conferido. Novas rotas GET/PUT /api/v1/me/training-configuration e GET …/resources. Domínio/aplicação, PostgreSQL, handler e Flutter separados. [Contrato](../../arquitetura/contratos-v1.md).
-- **Schema12 /27tabelas** aplicado a trainforge_v1_dev,127.0.0.1:15432. [Ativação](training-configuration-local-activation.json): checkpoint local somente de schema e comparação de linhas preservaram1conta/1consumo/6369versões alimentares. Zero configuração no instante da ativação. Checkpoint não é backup completo restaurado. Não repetir ativador: ele exige schema11 e recusa checkpoint existente.
-- [SQL047](training-configuration-sql-verification.json): criação/leitura/alteração/replay/conflito concorrente, fontes/retirada, duas contas, credencial revogada, exportação/exclusão e DML direto bloqueado em base descartável removida. Novos negativos SQL diretos recusamreview:false,titular forjado,medida física e fusoLocal. [Privacidade/restore](training-configuration-privacy-verification.json): ledger reaplicado em outra base, configuração apagada não ressuscita; outra conta/editorial preservados. Não repetir sem mudança pertinente.
-- Flutter:555mensagens/idioma empt-BR/pt-PT/en/es. [Cliente e testes](training-configuration-client-verification.json). 213testesFlutter na suíte completa e análise sem issues; suíte comumGo e vet passaram. SQL foi executado separadamente, não inferido dos skips da suíte comum. Testes não significam cobertura total, Sonar, CIFlutter/SQL ou carga concluídos.
-- **APKdebug0.4.0+22 instalado**, SHA25687de38a82f978fbc81a7d8b802e701b56cf6221df984bcb394860638c32d90cb, assinatura debug conferida. AVDTrainForge_Benchmark/emulator-5554/Android15/1080x2340. [Ensaio nativo parcial](training-configuration-native-verification.json): sessão existente, entrada pela conta, GETausência e opções desmarcadas. Não houve novo consentimentoGoogle nem resposta de rotina inventada.
-- API127.0.0.1:8082, PostgreSQL15432 e emulador ativos após o helper. tools/avaliar_android.py status confere estado/fingerprint. Watcher anterior foi parado pelo própriostopfile antes da implementação; o novo foi iniciado depois da migration/testes.18082 permanece encerrada. Não precisa hospedar para testar localmente.
-- Native iniciou com preferência efetivamente guardada **light/pt-BR**, confirmada por leitura somente das duas chaves não secretas. Códigos fixos do processo mostraramread_appearance_timeout/read_locale_timeout; a tela observada é compatível com os valores guardados. Os códigos não provam sozinhos que a resposta tardia foi aplicada. Nenhuma preferência foi gravada pelo agente neste incremento. Não afirmar que a escolha anterior dark ainda é a preferência vigente.
-- Graphify **107Dart /3873nós /4476arestas**,17alterados/novos,90inalterados,0removidos, ASTincremental+HTML semLLM/semântica/clusterização. Backup exato em.local/graphify-backup-20261027-training-config/before eautomatic.5ARBnão interpretados. Go/SQL estão emSwagger/mapas.
-
-## Decisão do rascunho e integração047
-
-Autor escolheu **avisar antes de descartar**, sem rascunho durável. Respostas ficam em memória durante etapas/retorno/idioma; saída alterada oferece continuar ou descartar. AndroidBack volta uma etapa. Corpo/chave/conta congelados durante resposta incerta; retry confirma mesma intenção. Conflito preserva respostas e oferece recarregar versão guardada com confirmação antes do descarte. Conta diferente invalida estado/respostas e remove rota.
-
-Sem local/contexto/recurso/dia/tempo predefinido como fato. Unknown difere de none. Fuso começa no desvio observado do aparelho, revisável paraUTC/IANA/offset; desvio fixo não acompanhaDST. Horário não fixo énull; tempo disponível não é dose. Recursos têm identidade composta fonte/equipamento e nomes originais; rótulos emlote/retirados ficam fora do snapshot.
-
-Banco guarda somente configuração completa revisada, versões e resultado idempotente24h. Runtime sóSELECT/EXECUTE restrito para essa tabela, semDML direto; versão imutável. Configuração incluída no inventário/exportação/exclusão/ledger/restore antes da ativação. Leitura inicial falha não habilita salvar formulário vazio sobre versão existente.
-
-## Entrega048 preservada e limites editoriais
-
-Biblioteca, detalhe público, seleção/formulário, histórico e detalhe/correção usam nomes revisados por identidade/versão/idioma. foodDisplay fica fora decalculation e não altera snapshot/cálculo/nutrientes/corpos/chaves/replay. Consultas emlote, cursores porconta/filtro/idioma/revisão e retirada semreviver versão antiga já validados; não repetir sem mudança pertinente. Idioma segue aparelho por padrão, escolha manual opcional. Timeout não grava padrão e resposta tardia não substitui intenção mais recente.
-
-Cobertura real de nomes **0/6369 por idioma**, revisão0: Ciqual2025/3484 e CoFID2021/2885. [Ferramenta editorial](../../conteudo/nomes-alimentares-revisados.md) existe, mas hash/confirmação não provam revisão/licença/identidade. Publicação real exige pacote humano/direitos. Não criar traduções para retirar fallback.048done refere-se àUI disponível/capacidade editorial; futuras jornadas usam a infraestrutura existente.
-
-## Decisões do produto preservadas
-
-[Trilha por área](trilha-implementacao.md) e [Q1–Q6](decisoes-piloto.md). Ambos os caminhos de treino; configuração completa em etapas curtas/revisão antes da busca; trocas compatíveis e dias/horários; retomar ou parcial sem conclusão automática. Cuidador pratica para si nas pausas, sem paciente obrigatório. Idosos, cuidadores, casa, praça/parque e academia, Android/iOS permanecem.
-
-Foto propõe candidatos editáveis e usuário informa quantidade. Visões por refeição/alimento; histórico visual/análise/dicas revisadas juntos naV1, sem diagnóstico de diário incompleto. Fotos recuperáveis pela conta com cache; excluir refeição exclui foto. Offline026 exige fila durável privada, conflitos/idempotência e exclusão sem recriar dados; memória de envio incerto não fecha026.042/044/045/046 têm critérios próprios.
-
-Exclusão própria pelo titular; master049todo com identidade estável verificada, concessão/revogação e auditoria. Não inferir master por e-mail/GitHub. Todos os cenários da matriz permanecem; participantes de usabilidade não confirmados. Emulador primeiro e Android físico orientado depois.
-
-73metadados de movimento,439ativos excluídos e zero programas/doses/instruções/mídias/prática aprovados. Sem conteúdo, nutrientes, fatos físicos ou adequação clínica inventados.011/012/013 têm GoogleAndroiddebug real histórico validado; não repetir esse consentimento. HTTPS/release/iOS têm gates próprios. Frontend021 foi fundação, não produto inteiro concluído.
-
-## Operação, documentação e Git
-
-Commit/push de incrementos validados autorizados; sem hospedagem/deploy/recurso cloud, compra/assinatura/integração paga ou contato externo. [Opções deAPI](../../conteudo/opcoes-apis-exercicios.md): gratuitas primeiro; compra única eventual atéR$400 depende de decisão específica. Sem nova pesquisa ampla. TF/Inter/Grafite-lima aprovados; Android semesticar. CotaStarterFigma esgotada, semnova chamada/contorno/compra; abrir noPC não remove limite.
-
-Credenciais/assinatura/logs/XML/capturas privadas/backups fora doGit. Acesso à janela autorizado, mas controleWindows inconsistente; UIAutomator/screencap fornecem evidência Android. Exigir snapshotnovo/dispositivo explícito, nunca usarXMLantigo após dumpfalhar. Não automatizarGoogle.
-
-Atualizar backlogJSON/contratos/diagramas/diário/handoff; gerar docs e testar. Swagger vem dos tipos/comentáriosGo. Não executar analyze/gen-l10n/test junto ao prepare; SDKs instalados. Não prometer certificação de segurança ou escala por contagens/testes.
+Próxima ação: ler a resposta à pergunta no chat sobre o horário desejado, antes de alterar. A pergunta oferece corrigir o início mencionado pelo usuário ou manter o salvo; valor da rotina não é publicado noGit. Se houver correção autorizada, usar aUI existente, confirmar revisão2 e reabrir/comparar sem mudar os outros campos ou a revisão1. Sem resposta, preservar e registrar pendência; não preencher porinferência. completionEvidence permanece vazia até a edição/recuperação real. O usuário pediu primeiro testar e depois refinar a interface; não atualizar APK ou mexer no formulário comrascunho porinferência. Problema de clareza fuso/hora registrado nafonte frontend.

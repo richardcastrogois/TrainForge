@@ -24,7 +24,7 @@
   "firstStepVisibleWithUncheckedOptions": true,
   "firstStepCaptureSha256": "7cb56c716bd7b858777d87ed2c941a486e12ad13c57af201a0c678075ced0b9d",
   "agentSubmittedPersonalConfiguration": false,
-  "humanConfirmationRecoveryAndEdit": "pending",
+  "humanConfirmationRecoveryAndEdit": "human_save_and_native_readback_verified_update_pending",
   "existingDeliveredRecordsPreservedAtActivation": true,
   "privateCapturesPublished": false,
   "limits": [
@@ -32,5 +32,6 @@
     "Four-locale/320px/text2x review and retry flows are isolated widget tests.",
     "Native iOS/release and usability with all audiences remain separate gates."
   ],
-  "privateGeneratedCapturesRemovedAfterHash": true
+  "privateGeneratedCapturesRemovedAfterHash": true,
+  "humanVerificationReceipt": "docs/execucao/v1/training-configuration-human-verification.json"
 }

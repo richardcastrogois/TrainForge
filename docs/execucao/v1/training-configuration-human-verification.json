@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "partial",
+  "scope": "human-confirmed-local-configuration-and-native-readback",
+  "apk": {
+    "version": "0.4.0+22",
+    "sha256": "87de38a82f978fbc81a7d8b802e701b56cf6221df984bcb394860638c32d90cb",
+    "installedHashMatched": true
+  },
+  "apiVersion": "0.7.0",
+  "schema": 12,
+  "httpOperations": 29,
+  "humanReportedReviewedSave": true,
+  "persistedConfigurationCount": 1,
+  "persistedRevision": 1,
+  "reopenedUsingPlansRoute": true,
+  "freshControllerUsesLivePrivateGet": true,
+  "allFourStepsReadBack": true,
+  "environmentContextResourcesTimezoneAvailabilityMatchedDatabase": true,
+  "sourceScopedResourceLabelsMatched": true,
+  "reviewSummaryMatchedDatabase": true,
+  "navigationDidNotCreateVersion": true,
+  "originalSnapshotAndTimestampUnchanged": true,
+  "protectedUserIntakeAndFoodVersionRowHashesUnchanged": true,
+  "readOnlySqlTransactions": true,
+  "realGoogleLoginRetested": false,
+  "credentialsExtractedFromDevice": false,
+  "agentSavedUserConfiguration": false,
+  "routineValuesAndIdentityPublished": false,
+  "realUpdateAcceptance": "pending_user_schedule_clarification",
+  "uxRefinement": "requested_after_functional_test",
+  "limits": [
+    "Actual save and readback were verified; no new routine value was invented or written by the agent.",
+    "Native update and recovery of a second revision still require the user-confirmed correction.",
+    "Timezone/start-time clarity is an open UX issue; cause of the earlier IANA input rejection was not established.",
+    "No approved training program, prescription, media, native iOS/release or usability acceptance for all audiences."
+  ]
+}

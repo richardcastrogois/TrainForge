@@ -433,3 +433,13 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - MealCreateService/NewMealCommand e porta de escrita definidos, ainda semSQL/rotas/tela. Exigemreviewed,1–32itens novos completos/quantidade/evidência/versão e tempos explícitos; nenhuma soma/porção/identidade deduzida.32é limitação técnica.
 - Cópia deentrada preserva chamador/intenção; confirmação recebida precisa corresponder aos campos/cálculos/revisões e conter todos os itens comIDs únicos, sem título inventado. Portas não provam transação ouownershipSQL.
 -13testes principais de refeições e42subcasos negativos aprovados; novas regressões incluemitem parcial,valores/versão/evidência/algoritmo alterados e erro interno sanitizado. Próximo:adapterSQLatômico e ciclo de revisão/exclusão/privacidade antes de migration/HTTP/Flutter. Semmudança noAPI29operações/schema12/APK22 ouconsumoreal.
+
+
+## 27/10/2026 — validação humana de salvamento/recuperação047
+
+- Autor relatou que revisou, salvou e confirmou a configuração e autorizou acesso para validar. Janela realTrainForge_Benchmark acessada porWindowsComputerUse, sem reinstalar/reiniciarAPK ou automatizarGoogle. APK0.4.0+22/hash instalado conferidos.
+- SQLsomenteleitura encontrou uma versão/revisão1. Agente reabriu porPlanos e percorreu as4etapas/revisão; valores de ambiente/contexto/recursos/fuso/disponibilidade e nomes porfonte coincidiram com persistência. Não publicou rotina/identidade noGit nem extraiu credenciais doaparelho.
+- Nenhuma nova confirmação foi enviada: snapshot/data da revisão1 e hashes deconta/consumo/catálogo permaneceram iguais. API0.7.0/29operações e schema12/27tabelas preservados; fixture não substituiu o teste real.
+- Horário inicial salvo diverge do mencionado nochat; solicitado esclarecimento antes de alterar. Edição nativa/revisão2/recuperação ainda pendentes;047permanece doing/completionEvidencevazia.
+- Usuário relatou campo de fuso/hora pouco didático e pediu primeiro testar, depois corrigirfrontend. Origem exata da falha anterior deIANA não comprovada. Registrados pontos07/12 de simplificação e hierarquia, sem alterar código/APK durante o ensaio.
+- [Evidência real parcial](training-configuration-human-verification.json), [fonte frontend](frontend-fidelidade-figma.md). Não repetirGo/Flutter/SQLisolado/restore numa atualização só documental; executar somente validação dos docs.

@@ -1,6 +1,6 @@
 # V1-047 — configuração privada antes de procurar treino
 
-Estado em **27/10/2026: doing, implementação integrada; aceite humano pendente**. Go0.7.0/29operações, migration12 aplicada ao banco local (27tabelas), Flutter em quatro etapas e APKdebug0.4.0+22 instalado. Banco preservou 1conta/1consumo/6369versões alimentares; nenhuma configuração real foi criada pelo agente. [SQL](training-configuration-sql-verification.json), [privacidade/restore](training-configuration-privacy-verification.json), [ativação](training-configuration-local-activation.json).
+Estado em **27/10/2026: doing, salvamento humano e recuperação reais validados; edição nativa pendente**. Go0.7.0/29operações, migration12 aplicada ao banco local (27tabelas), Flutter em quatro etapas e APKdebug0.4.0+22 instalado. Banco preservou 1conta/1consumo/6369versões alimentares; nenhuma configuração real foi criada pelo agente. [SQL](training-configuration-sql-verification.json), [privacidade/restore](training-configuration-privacy-verification.json), [ativação](training-configuration-local-activation.json).
 
 
 ## Finalidade e fundamento
@@ -52,7 +52,13 @@ TF/Inter/Grafite-lima, quatro idiomas, validação/foco e rolagem existente pres
 
 IntegraçãoSQL/HTTP e privacidade verificadas em descartável; migration/grants ativados com checkpoint somente de schema e comparação das linhas reais. Checkpoint de schema não é backup completo restaurado. O ensaio nativo confirmou APK/hash, sessão existente, entrada da conta e primeira etapa com opções desmarcadas, sem salvar respostas por inferência. Não houve novo consentimentoGoogle.
 
-Falta o usuário confirmar sua rotina real, reabrir/alterar a configuração e conferir a recuperação. Não marcar047done antes desse aceite; completionEvidence permanece vazia. Seleção015/composição044 ainda têm implementação e gates próprios, com zero programa/dose/instrução/mídia aprovados para prática. Nenhuma configuração torna um programa elegível automaticamente.
+O autor informou que revisou e confirmou sua rotina. O banco contém a revisão1; o agente reabriu pela abaPlanos e percorreu as quatro etapas, recuperando exatamente os valores e os rótulos de fonte. Navegação/revisão não criaram outra versão; snapshot/data de confirmação e hashes de conta/consumo/catálogo permaneceram iguais. [Aceite real parcial](training-configuration-human-verification.json). Falta validar uma edição real autorizada e sua recuperação; há uma divergência de horário esclarecida no chat, sem alteração por inferência. Não marcar047done antes desse aceite; completionEvidence permanece vazia. Seleção015/composição044 ainda têm implementação e gates próprios, com zero programa/dose/instrução/mídia aprovados para prática. Nenhuma configuração torna um programa elegível automaticamente.
+
+### Refinamento solicitado para depois do teste funcional
+
+O usuário confundiu o campo de fuso com a hora de início e relatou que a etapa não é didática. Orientação manual comoffset e nova validação permitiu confirmar. Isso não estabelece a causa da rejeição anterior de textoIANA: não diagnosticar espaço extra ou falha do backend sem evidência. A validação identificou ainda uma hora inicial diferente da mencionada no chat; o agente solicitou confirmação e preservou a revisão salva.
+
+Rever identificação do fuso do aparelho e eventual troca sem digitar identificador técnico, separar visualmente fuso/hora de início, encurtar ajuda, tornar o seletor de horário claro e rever a hierarquia de Continuar/Concluir/Confirmar. Não alterar a rotina salva, traduzir equipamentos sem fonte ou tratar esse fluxo como usabilidade aprovada para idosos/cuidadores. O autor pediu primeiro concluir os testes e depois corrigir a interface; nenhum código/APK foi alterado nesta validação.
 
 ```mermaid
 sequenceDiagram
