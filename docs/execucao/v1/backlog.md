@@ -835,7 +835,7 @@ Handoff: Q1 antecipou alimento por foto paraV1, com quantidade digitada e consum
 
 ### V1-045 — Organizar registros por refeição e por alimento
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero ver minha alimentação agrupada em refeições e também consultar os alimentos individualmente, mantendo os mesmos dados e cálculos.
 
@@ -869,7 +869,7 @@ Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Co
 
 Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
 
-Handoff: 25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; recuperação das fotos pela conta com cache também foi aprovada após pesquisa e será integrada na042. API de foto042 depende desse agrupamento.
+Handoff: 27/10:iniciado trabalho independente enquanto047aguarda aceite humano;020/021done. Modelo de leitura e serviço comportaMealDayRepository implementados:Entriesúnicos,gruposporrefsIDs,legacysemagrupamento,subtotaisda020semduplacontagem,limite100/incompletude,fuso/data de cadaitem eordemestável.9testes principais+17subcasos aprovados. SemSQL/migration/rotas/Flutter/aceitereal. Próxima fatia:comandos egrupos/vínculos versionados comownership/idempotência/transação,ciclo de correção/exclusão eprivacidade/restore antesdaativação. Preservarconsumoexistente semagrupamentoautomático. API0.7.0/schema12/APK22inalterados.
 
 ### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
 

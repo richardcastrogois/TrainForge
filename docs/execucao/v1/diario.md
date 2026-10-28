@@ -418,3 +418,11 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - APKdebug0.4.0+22 preparado/assinatura/hash/instalação conferidos noTrainForge_Benchmark. Primeira etapa real abriu comlocais/contextos desmarcados após consulta privada; nenhuma confirmação de rotina automatizada e nenhumGoogle repetido. Autor foi solicitado a preencher rotina real; confirmação/reabertura/alteração permanecem pendentes.
 - GraphifyAST+HTML:107Dart,3873nós/4476arestas;17alterados/novos,90inalterados. SemLLM/semântica/clusterização;backup fora doGit. Contratos,diagramas,backlog/handoff atualizados.047continua doing/completionEvidence vazia; depois015 comgate editorial preservado.
 - Evidências: [SQL](training-configuration-sql-verification.json), [privacidade/restore](training-configuration-privacy-verification.json), [ativação](training-configuration-local-activation.json), [cliente](training-configuration-client-verification.json), [nativo parcial](training-configuration-native-verification.json). Semcompra,cloud,deploy oucontato externo.
+
+
+## 27/10/2026 — fundação independente de refeições045
+
+- Após integração047, aceitedoautor ficou pendente. Iniciado045por depender apenas020/021done, preservando047doing e prioridade futura015.
+- Implementados modelo de leitura e serviço/porta no módulonutrition. Cada consumo aparece uma vez; refeição/semagrupamento usamrefsIDs, subtotais reutilizam020 e o total diário não conta os grupos novamente. Metadata semtítulo não vira nome de refeição inventado; legado semvínculo continuaidentificável.
+- Dia/fuso são do consumo nas duas visões, inclusive limite de meia-noite; refeição informa outrositens fora dorecorte. Snapshotincompleto não mostra totalnutricionalcompleto. Projeção independente não reescreve origem/cálculo.
+-9testes principais+17subcasos passaram. Ainda semSQL/migration/rotas/Swagger/Flutter/aceite; porta comfixture não provaownershipSQL. Próximosescritaatômica,versões/vínculos,ciclo privado econtratosintegrados. Banco econsumoreal inalterados;APK22preservado. [Modelo](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json).

@@ -10,6 +10,12 @@ Ler AGENTS.md, este handoff, backlog.json, plano-macro.md e etapa-02-fechamento.
 
 Depois047, continuar015 pelas dependências. Zero programa/dose/instrução/mídia aprovados continua gate de conteúdo; declaração de rotina não comprova aptidão, elegibilidade ou prescrição. Biblioteca pública, alimentação e privacidade permanecem independentes. Código seguro/separado desde agora; capacidade de milhões exige carga medida. Continuar trabalho independente quando houver pendência humana, sem concluir indevidamente.
 
+## Trabalho independente045 já iniciado
+
+Enquanto047aguarda o autor, avançou a fundação de leitura045 (depende020/021done): nutrition/meals.go e meals_service.go com9testes principais+17subcasos aprovados. [Modelo e próximos passos](refeicoes-045.md), [recibo](meal-grouping-foundation-verification.json). Mesmos IDs/cálculos em duas visões, semagrupamento automático do legado, total diário uma vez, subtotais do recorte/desconhecidos e limite100/incompletude. SemSQL/migration/endpoint/tela nova; porta testada não é persistência real.
+
+Próxima fatia independente: comandos de criação/edição/exclusão, grupos/vínculos versionados e escrita atômica, revisão/idempotência, integração dos itens e privacidade/exportação/exclusão/restore antes de ativar migration. Não recriar a projeção nem copiar nutrientes. Preservar formulário047em uso; prioridade do treino volta a047→015quando o autor confirmar o aceite.
+
 ## Estado validado e ambiente
 
 - **Go0.7.0 /29operações**, Swagger gerado e servido localmente conferido. Novas rotas GET/PUT /api/v1/me/training-configuration e GET …/resources. Domínio/aplicação, PostgreSQL, handler e Flutter separados. [Contrato](../../arquitetura/contratos-v1.md).

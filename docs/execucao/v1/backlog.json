@@ -1894,7 +1894,7 @@
           "id": "V1-045",
           "title": "Organizar registros por refeição e por alimento",
           "userStory": "Como usuário, quero ver minha alimentação agrupada em refeições e também consultar os alimentos individualmente, mantendo os mesmos dados e cálculos.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1963,11 +1963,13 @@
             "Visões por refeição e por alimento",
             "Recibo de integridade/compatibilidade"
           ],
-          "handoff": "25/10:Q2 aprovou agrupar por refeição e também visualizar por alimento. História criada sem código/migration; recuperação das fotos pela conta com cache também foi aprovada após pesquisa e será integrada na042. API de foto042 depende desse agrupamento.",
+          "handoff": "27/10:iniciado trabalho independente enquanto047aguarda aceite humano;020/021done. Modelo de leitura e serviço comportaMealDayRepository implementados:Entriesúnicos,gruposporrefsIDs,legacysemagrupamento,subtotaisda020semduplacontagem,limite100/incompletude,fuso/data de cadaitem eordemestável.9testes principais+17subcasos aprovados. SemSQL/migration/rotas/Flutter/aceitereal. Próxima fatia:comandos egrupos/vínculos versionados comownership/idempotência/transação,ciclo de correção/exclusão eprivacidade/restore antesdaativação. Preservarconsumoexistente semagrupamentoautomático. API0.7.0/schema12/APK22inalterados.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md"
+            "docs/execucao/v1/pesquisa-fotos-historico.md",
+            "docs/execucao/v1/refeicoes-045.md",
+            "docs/execucao/v1/meal-grouping-foundation-verification.json"
           ]
         },
         {
@@ -3636,5 +3638,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10:047implementada emGo/SQL/Flutter eAPK22instalado;doingapenasatéaceite humano deconfirmar/reabrir/alterar rotina. API0.7.0/29,schema12/27;dadosreaispreservados. Documentarrespostadoautor semfalsoaceite;depois015pelasdependências,comzero conteúdo deprática aprovado. Semcompra/hospedagem."
+  "currentPriority": "27/10:047implementada emGo/SQL/Flutter eAPK22instalado;doingapenasatéaceite humano deconfirmar/reabrir/alterar rotina. API0.7.0/29,schema12/27;dadosreaispreservados. Documentarrespostadoautor semfalsoaceite;depois015pelasdependências,comzero conteúdo deprática aprovado. Semcompra/hospedagem. Enquanto047aguarda autor,045doing emfundação de leitura independente;próximoescritaatômica/migrationeprivacidade,semalterarconsumoreal."
 }

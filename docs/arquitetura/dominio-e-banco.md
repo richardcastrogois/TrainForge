@@ -38,6 +38,10 @@ erDiagram
     }
 ```
 
+## Agrupamento de refeições045 — fundação, sem novas tabelas
+
+O modelo de leitura emnutrition/meals.go faz ambas as visões apontarem aos mesmos IDs deFoodEntry e preserva os registros antigos semagrupamento. Não mudafood_entries,calculation ou o consumo real. [Semântica de recorte e próxima persistência](../execucao/v1/refeicoes-045.md). Tabelas de grupos/vínculos/versões, integridade de titular, escrita atômica e ciclo deprivacidade ainda serão implementados; nenhuma migration13 foi criada/aplicada.
+
 ## Dose e unidades
 
 Representar campos opcionais/tipados: sets, repetitions, holdSeconds, durationSeconds, distanceMeters, side, restSeconds, tempo, intensidade conforme a fonte e regra de progressão quando existir. A lista é proposta de modelagem, não autorização para preencher os campos de todo componente. `null` significa ausente/não demonstrado; zero representa valor real quando válido. Dose prescrita, tempo do timer e realizado pelo usuário são coisas diferentes.

@@ -2,6 +2,10 @@
 
 **Go 0.7.0 / 29 operações**, Flutter integrado e schema12/27tabelas. A configuração047 foi implementada; aceite humano ainda pendente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
+## Refeições045 — modelo interno, sem contrato HTTP ativo
+
+A fundação de leitura reúne IDs deconsumo por vínculos explícitos e reutiliza totals020. Não há nova rota, DTOHTTP ou tabela anunciada noSwagger. Persistência, comandos atômicos, revisões/exclusão, privacidade e Flutter ainda pendentes. [Escopo e evidência](../execucao/v1/refeicoes-045.md); fixtures não são refeição criada na conta.
+
 ## Configuração privada047 — 27/10/2026
 
 | Elemento | Contrato implementado |

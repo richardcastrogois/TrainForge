@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `03fbc5716957b3ed`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `3b81955b7512c45e`.
 
 **18/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-047**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -199,7 +199,7 @@ flowchart LR
 | V1-019 | done | Validar e importar o lote alimentar | V1-004, V1-010 |
 | V1-020 | done | Pesquisar e cadastrar alimento próprio e registrar consumo | V1-019, V1-013, V1-008 |
 | V1-042 | todo | Reconhecer alimentos por foto com revisão e quantidade informada | V1-013, V1-020, V1-025, V1-045 |
-| V1-045 | todo | Organizar registros por refeição e por alimento | V1-020, V1-021 |
+| V1-045 | doing | Organizar registros por refeição e por alimento | V1-020, V1-021 |
 | V1-046 | todo | Entregar histórico visual, análise nutricional e dicas revisadas | V1-045, V1-020, V1-021 |
 ### EP07 — Flutter e experiência da V1
 

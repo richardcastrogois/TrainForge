@@ -6,6 +6,8 @@ Este é o roteiro humano principal para acompanhar o que existe, o que falta e q
 
 **047doing, integrada; aceite humano pendente**: configuração privada versionada noGo/SQL, exportação/exclusão/restore, API e quatro etapasFlutter com revisão/aviso de descarte.555mensagens por idioma. APK22 abriu a primeira etapa sem respostas predefinidas; nenhuma configuração real preenchida pelo agente. Falta o autor confirmar sua rotina, reabrir e alterar para conferir recuperação. [Matriz, evidências e limites](configuracao-treino-047.md). Depois015 pelas dependências; zero programa/dose/instrução/mídia liberados ainda impede aceite de prática. Não pular esse gate nem tratar compra deGIF como programa aprovado.
 
+045doing em trabalho independente durante o aceite047: [fundação de leitura por refeição](refeicoes-045.md) implementada/testada, semduplicar registros ouinferir agrupamento do legado. Escrita atômica/migration/privacidade/HTTP/Flutter/aceite ainda pendentes. Não confundir essas duas visões internas com tela já disponível.
+
 ## 1. O raciocínio e a expectativa do autor
 
 O autor está disposto a avaliar a compra de uma API que demonstra exercícios por GIF, mas quer primeiro usar o aplicativo e compreender o que já tem. Não basta um exercício demonstrado se o sistema não entrega um treino coerente com o pedido da pessoa. Também quer compreender o registro alimentar, inclusive a expectativa de foto, identificação e quantidade consumida.
