@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-27",
+  "story": "V1-047",
+  "status": "done",
+  "scope": "private-reviewed-configuration-functional-local-acceptance",
+  "apiVersion": "0.7.0",
+  "schema": 12,
+  "apk": "0.4.0+22",
+  "dependencies": [
+    "V1-008",
+    "V1-012",
+    "V1-013",
+    "V1-021",
+    "V1-048"
+  ],
+  "criteria": [
+    {
+      "criterion": "Configuração completa e revisada antecede busca/seleção de treino compatível e confirmação da composição; consulta pública de referências, alimentação e privacidade conservam seu recorte",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/configuracao-treino-047.md",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    },
+    {
+      "criterion": "Matriz por campo define finalidade, origem, obrigatório/condicional/opcional, valores/unidades, validação, persistência e uso nas regras; não herdar peso/altura/idade/gordura obrigatórios ou padrões fictícios do onboarding legado",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/configuracao-treino-047.md"
+      ]
+    },
+    {
+      "criterion": "Ambiente/recursos, disponibilidade e contexto de pausa do próprio cuidador respeitam os dados declarados; preferências não viram dose, progressão ou adequação clínica inventadas",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/configuracao-treino-047.md",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    },
+    {
+      "criterion": "Configuração privada pode ser salva, recuperada e alterada por sua conta com versão/concorrência e erros de campo explícitos; mudança de conta ou resposta tardia não mistura dados",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/training-configuration-sql-verification.json",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    },
+    {
+      "criterion": "Atualizar contexto não reescreve sessões/versões históricas; novas escolhas são validadas pelo backend contra configuração e requisitos humanos atuais",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/training-configuration-sql-verification.json",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    },
+    {
+      "criterion": "Go/SQL/Flutter separados por responsabilidade, DTOs e Swagger coerentes, autorização por titular e testes de persistência/isolamento; completar formulário não libera prática bloqueada",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/training-configuration-client-verification.json",
+        "docs/execucao/v1/training-configuration-privacy-verification.json",
+        "contracts/generated/swagger-v1.json"
+      ]
+    },
+    {
+      "criterion": "Fluxo legado de geração IA/manual-generator permanece fora da composição ativa; nenhum formulário simula salvamento ou elegibilidade sem API/regra implementadas",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/configuracao-treino-047.md",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    },
+    {
+      "criterion": "Q5:configuração em etapas curtas por assunto, com progresso real, retorno/correção sem perda de respostas e revisão final antes de confirmar; preservar acessibilidade e tratar saída/falha/descarte sem falso salvamento",
+      "met": true,
+      "evidence": [
+        "docs/execucao/v1/training-configuration-client-verification.json",
+        "docs/execucao/v1/training-configuration-human-verification.json"
+      ]
+    }
+  ],
+  "openLimits": [
+    "Functional047 acceptance does not approve the overall frontend UX. User explicitly deferred clarity fixes until after testing.",
+    "Timezone/start-time and action hierarchy refinements remain in frontend-fidelidade-figma.md.",
+    "Selection/enrollment015 and composition044 still require their implementations and current human-approved rules/content.",
+    "No approved practice program, instruction, dose or media was invented.",
+    "Native iOS/release, broad usability, load capacity and production operation remain separate gates."
+  ]
+}

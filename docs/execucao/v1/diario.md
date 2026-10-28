@@ -443,3 +443,12 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Horário inicial salvo diverge do mencionado nochat; solicitado esclarecimento antes de alterar. Edição nativa/revisão2/recuperação ainda pendentes;047permanece doing/completionEvidencevazia.
 - Usuário relatou campo de fuso/hora pouco didático e pediu primeiro testar, depois corrigirfrontend. Origem exata da falha anterior deIANA não comprovada. Registrados pontos07/12 de simplificação e hierarquia, sem alterar código/APK durante o ensaio.
 - [Evidência real parcial](training-configuration-human-verification.json), [fonte frontend](frontend-fidelidade-figma.md). Não repetirGo/Flutter/SQLisolado/restore numa atualização só documental; executar somente validação dos docs.
+
+
+## 27/10/2026 — fechamento funcional047 com edição autorizada
+
+- Autor confirmou explicitamente o horário desejado. Agente alterou somente esse campo pelaUI existente, revisou e confirmou naAPIlocal; revisão2 criada. SQLsomenteleitura comparou as versões e comprovou que r1/data/demaiscampos e hashes deconta/consumo/catálogo foram preservados.
+- Concluiu/reabriu por novoController e conferiu a hora recuperada na etapa3. Semterceiraversão; app voltou aPlanos limpo. Nenhuma autenticaçãoGoogle, instalação, migration, reset oufixture na conta.
+- Entrada/rolagem Windows foi inconsistente; seletor visual aplicou a correção eAndroidUIAutomator confirmou a recuperação final. Não atribuir essa limitação à rolagem do aplicativo semevidência.
+-047done somente no recorte funcional de configuração privada. [Critérios/evidências](training-configuration-047-fechamento.json). Usabilidade/fidelidade completa não foram aprovadas: clareza fuso/hora/navegação segue nafonte frontend, para depois dos testes conforme pedido.
+- Próxima015pelasdependências;045independente continua doing. API0.7.0/schema12/APK22mantidos. Só documentação/recibos alterados; repetir apenas checks documentais.

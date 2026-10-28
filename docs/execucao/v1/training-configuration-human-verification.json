@@ -1,8 +1,8 @@
 {
   "date": "2026-10-27",
   "story": "V1-047",
-  "status": "partial",
-  "scope": "human-confirmed-local-configuration-and-native-readback",
+  "status": "passed",
+  "scope": "human-confirmed-local-configuration-create-authorized-edit-and-native-readback",
   "apk": {
     "version": "0.4.0+22",
     "sha256": "87de38a82f978fbc81a7d8b802e701b56cf6221df984bcb394860638c32d90cb",
@@ -12,8 +12,8 @@
   "schema": 12,
   "httpOperations": 29,
   "humanReportedReviewedSave": true,
-  "persistedConfigurationCount": 1,
-  "persistedRevision": 1,
+  "persistedConfigurationCount": 2,
+  "persistedRevision": 2,
   "reopenedUsingPlansRoute": true,
   "freshControllerUsesLivePrivateGet": true,
   "allFourStepsReadBack": true,
@@ -26,14 +26,29 @@
   "readOnlySqlTransactions": true,
   "realGoogleLoginRetested": false,
   "credentialsExtractedFromDevice": false,
-  "agentSavedUserConfiguration": false,
+  "agentSavedUserConfiguration": true,
   "routineValuesAndIdentityPublished": false,
-  "realUpdateAcceptance": "pending_user_schedule_clarification",
-  "uxRefinement": "requested_after_functional_test",
+  "realUpdateAcceptance": "passed_authorized_edit_and_recovery",
+  "uxRefinement": "open_after_functional_acceptance_as_requested",
   "limits": [
-    "Actual save and readback were verified; no new routine value was invented or written by the agent.",
-    "Native update and recovery of a second revision still require the user-confirmed correction.",
-    "Timezone/start-time clarity is an open UX issue; cause of the earlier IANA input rejection was not established.",
+    "User performed original reviewed save; agent changed only the subsequently authorized start time.",
+    "Windows scrolling/text injection was inconsistent; Android hierarchy/gesture confirmed the final recovery. This is not an established app scrolling defect.",
+    "Timezone/start-time clarity remains an open UX issue; cause of the earlier IANA input rejection was not established.",
     "No approved training program, prescription, media, native iOS/release or usability acceptance for all audiences."
-  ]
+  ],
+  "reviewedSaveAndReadbackCompleted": true,
+  "agentSavedOnlyExplicitlyAuthorizedEdit": true,
+  "originalCreationWasPerformedByUser": true,
+  "userExplicitlyConfirmedCorrection": true,
+  "onlyAuthorizedFieldChanged": true,
+  "originalRevisionAndTimestampPreserved": true,
+  "secondRevisionReopenedUsingFreshController": true,
+  "nativeSecondRevisionStartTimeMatchedAuthorization": true,
+  "nativeInputs": [
+    "Windows Computer Use",
+    "Android ADB UIAutomator"
+  ],
+  "noThirdRevisionAfterReadback": true,
+  "finalScreen": "Plans",
+  "openDirtyForm": false
 }

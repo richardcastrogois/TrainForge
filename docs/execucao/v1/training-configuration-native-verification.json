@@ -24,14 +24,18 @@
   "firstStepVisibleWithUncheckedOptions": true,
   "firstStepCaptureSha256": "7cb56c716bd7b858777d87ed2c941a486e12ad13c57af201a0c678075ced0b9d",
   "agentSubmittedPersonalConfiguration": false,
-  "humanConfirmationRecoveryAndEdit": "human_save_and_native_readback_verified_update_pending",
+  "humanConfirmationRecoveryAndEdit": "passed_human_creation_authorized_update_and_native_recovery",
   "existingDeliveredRecordsPreservedAtActivation": true,
   "privateCapturesPublished": false,
   "limits": [
-    "Native first-step/absence check only; no human setup answers were invented.",
+    "Initial probe covered first-step/absence before the user entered a real routine; the later full functional result is in training-configuration-human-verification.json.",
     "Four-locale/320px/text2x review and retry flows are isolated widget tests.",
-    "Native iOS/release and usability with all audiences remain separate gates."
+    "Native iOS/release, timezone/start-time UX refinement and usability with all audiences remain separate gates."
   ],
   "privateGeneratedCapturesRemovedAfterHash": true,
-  "humanVerificationReceipt": "docs/execucao/v1/training-configuration-human-verification.json"
+  "humanVerificationReceipt": "docs/execucao/v1/training-configuration-human-verification.json",
+  "humanAcceptanceCompleted": true,
+  "functionalConfigurationVerified": true,
+  "laterAuthorizedUpdateByAgent": true,
+  "initialProbeScope": "first-step-and-absence-before-human-creation"
 }

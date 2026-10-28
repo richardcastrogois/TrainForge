@@ -4,9 +4,9 @@ Atualizada em **27/10/2026**. Base histórica: [auditoria24/10](auditoria-produt
 
 Este é o roteiro humano principal para acompanhar o que existe, o que falta e quando encerrar.021 foi encerrada no recorte de fundação. **048concluída**:495mensagens/idioma,197testes/analyze0, nomes revisados na biblioteca/histórico/detalhe/correção sem mudar cálculo ou mutações, operação editorial e cobertura0/6369 explícita. [Fechamento](localization-048-fechamento.json). Idioma padrão segue o aparelho, com substituição opcional em configurações e recuperação de resposta tardia sem gravar padrão.
 
-**047doing, salvamento humano e recuperação reais validados**: autor confirmou a rotina; agente reabriu as quatro etapas/resumo e comparou comSQLsomenteleitura, sem duplicar versão ou alterar conta/consumo/catálogo. Falta edição nativa autorizada/recuperação e esclarecimento do horário no chat. [Evidência parcial](training-configuration-human-verification.json). Usuário pediu primeiro testar, depois refinar ofrontend; clareza fuso/hora e navegação registrada nafonte frontend. Depois047→015pelasdependências; zero conteúdo aprovado continua como gate de prática.
+**047encerrada no recorte funcional local**: criação/revisão/confirmacão humanas, edição posterior expressamente autorizada e recuperação da revisão2 conferidas. R1/data, demais campos e hashes deconta/consumo/catálogo preservados; semterceiraversão. [Fechamento por critério](training-configuration-047-fechamento.json), [evidência real](training-configuration-human-verification.json). UXfuso/hora/navegação continua pendente para depois dos testes, conforme pedido; isso não é aceite de usabilidade integral. Próxima015pelasdependências; zero conteúdo aprovado mantém o gate de prática.
 
-045doing em trabalho independente durante o aceite047: [fundação de leitura por refeição](refeicoes-045.md) implementada/testada, semduplicar registros ouinferir agrupamento do legado. Escrita atômica/migration/privacidade/HTTP/Flutter/aceite ainda pendentes. Não confundir essas duas visões internas com tela já disponível.
+045doing em trabalho independente iniciado durante o aceite047: [fundação de leitura por refeição](refeicoes-045.md) implementada/testada, semduplicar registros ouinferir agrupamento do legado. Escrita atômica/migration/privacidade/HTTP/Flutter/aceite ainda pendentes. Não confundir essas duas visões internas com tela já disponível.
 
 ## 1. O raciocínio e a expectativa do autor
 
@@ -75,7 +75,7 @@ Nenhuma história foi concluída por essas decisões. Contratos, modelos, conte�
 
 ## 2. Como trabalhar um bloco de cada vez
 
-Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1–Q6 tiveram decisões registradas. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhou campos por finalidade/fonte e aguarda aceite humano. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
+Estados dos itens: **existente validado** (há evidência do recorte), **parcial**, **a fazer**, **decisão pendente**, **bloqueado por dependência**. Os blocos de implementação continuam abertos. Q1–Q6 tiveram decisões registradas. Configuração completa, trocas compatíveis/agenda e retomada/parcial estão aprovadas; a047 detalhou campos por finalidade/fonte e encerrou o aceite funcional local. Entrega conjunta de histórico/análise/dicas e fotos pela conta com cache continuam aprovadas. Q4 aprovou excluir foto com a refeição e registrar offline para sincronizar depois; mecanismo, limites e testes ainda pendentes na026/042/045.
 
 Antes de codificar um bloco: apresentar somente as dúvidas que alteram seu escopo, registrar respostas/decisões e definir seu recorte. Não fazer o autor decidir detalhes técnicos rotineiros. Fazer incrementos pequenos, contratos antes de consumidores, testes relevantes e commits validados. Confirmar o estado real antes de atualizar APK ou banco.
 
@@ -99,7 +99,7 @@ Banco, segurança e testes acompanham cada mudança de backend; acessibilidade e
 
 V1-042 foi antecipada e delimitada ao reconhecimento de alimentos com revisão e quantidade informada; V1-044 foi criada para a composição controlada de treino naV1. V1-045/046 detalham as duas visões alimentares e o conjunto histórico/análise/dicas, também naV1. OCR/barcode, imagem deatividade, sensores/GPS(V1-041), ampliação de modalidades(V1-040) e acompanhamento de terceiros(V1-043) seguem posteriores. Não incluir delegação como requisito de treino para o próprio cuidador.
 
-Configuração completa persistida tem história própria047, com matriz/contratos/implementação integrados e aceite humano ainda pendente. Quatro idiomas e capacidade de nomes revisados têm história048 concluída no recorte documentado; publicação real permanece condicionada à revisão humana. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
+Configuração completa047 foi implementada e validada funcionalmente; clareza de fuso/hora segue no refinamentofrontend. Quatro idiomas e capacidade de nomes revisados têm história048 concluída no recorte documentado; publicação real permanece condicionada à revisão humana. Delegação de outra pessoa é opção futura, não requisito desta entrega. Identificar a lacuna agora não autoriza inventar campos ou marcar a antiga V1-009 como validação desses novos modelos.
 
 ## 3. Bloco 00 — decisões do produto
 
@@ -282,9 +282,9 @@ Q1–Q6 têm decisões registradas. Encerrar a rodada genérica de perguntas e s
 |---|---|---|---|
 | Q1 | Resultado da primeira versão | Dois caminhos; cuidador como praticante; foto com correção e quantidade informada | Respondido24/10; registradas decisões e corrigida interpretação |
 | Q2 | Fotos, histórico e observações | Refeições/alimentos; histórico/análise/dicas juntos; recuperação das fotos pela conta com cache | Respondido em 25/10; sem contratação ou implementação por inferência |
-| Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047integrada, aceite humano pendente; regras de seleção/composição pertencem a015/044 |
+| Q3 | Backend e treino | Completa antes da busca; trocas compatíveis/dias/horários; retomar ou encerrar parcial | Respondido25/10;047funcionaldone; refinamentoUXpendente; regras de seleção/composição pertencem a015/044 |
 | Q4 | Segurança e privacidade | Excluir foto com a refeição; registrar offline e sincronizar depois | Respondido25/10;026/042/045 e revisão de segurança continuam pendentes |
-| Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047integrada/aceite pendente e048done, sem repetir chamadas Figma limitadas |
+| Q5 | Frontend e idiomas | Etapas curtas/revisão; nomes traduzidos quando revisados, original/fonte e fallback | Respondido25/10;047funcionaldone/UXpendente e048done, sem repetir chamadas Figma limitadas |
 | Q6 | Qualidade e aceite | Exclusão por usuário/master e avaliação de todos os cenários; participantes/conta ainda não confirmados | Decisões25/10 registradas; combinar o restante somente com fluxo concreto |
 
 ## 13. Figma — impedimento e alternativa permitida
@@ -335,4 +335,4 @@ Q1–Q6 estão registrados; próxima ação é implementação pelas dependênci
 
 ## Atualização047 — 27/10/2026
 
-IntegraçãoGo/SQL/HTTP/Flutter e privacidade realizada. API0.7.0/29operações,schema12/27tabelas,APKdebug0.4.0+22.213testesFlutter/analyze0issues, Go test/vet, SQL e restore emdescartável. A [matriz](configuracao-treino-047.md) reúne evidências e contrato. Falta confirmação/reabertura/alteração da rotina real pelo autor; nenhuma resposta foi inventada pelo agente e completionEvidence permanece vazia. A [fundação anterior](training-configuration-foundation-verification.json) é evidência histórica, não trabalho a repetir.
+IntegraçãoGo/SQL/HTTP/Flutter e privacidade realizada. API0.7.0/29operações,schema12/27tabelas,APKdebug0.4.0+22.213testesFlutter/analyze0issues, Go test/vet, SQL e restore emdescartável. A [matriz](configuracao-treino-047.md) reúne evidências e contrato. Criação humana, edição expressamente autorizada e recuperação da revisão2 validadas; nenhum outro dado foi inventado ou alterado pelo agente. CompletionEvidence está no fechamento047. A [fundação anterior](training-configuration-foundation-verification.json) é evidência histórica, não trabalho a repetir.

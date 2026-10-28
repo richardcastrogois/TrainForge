@@ -513,7 +513,7 @@ Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais 
 
 ### V1-047 — Persistir configuração completa antes da seleção de treino
 
-**doing · V1 · L**
+**done · V1 · L**
 
 Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.
 
@@ -552,7 +552,7 @@ Validação: Matriz de campos fundamentada e contratos/UI/SQL coerentes; Testes 
 
 Entregas: Configuração privada persistida e versionada; Contrato e fluxo Flutter completos para revisão; Recibo de campos, isolamento, atualização e aceite
 
-Handoff: 27/10:047integrada; autor revisou/confirmou rotina real. Revisão1 persistida e reaberta pelo agente na abaPlanos, quatro etapas e revisão final conferidas contraSQLsomenteleitura; rótulos porfonte corretos e nenhum resave acidental. Hashes deconta/consumo/catálogo e snapshot/data da revisão1 preservados. Falta edição nativa autorizada e recuperação da segunda revisão: esclarecimento do horário solicitado no chat, sem alterar dado por inferência. UI de fuso/hora foi considerada pouco didática; autor pediu primeiro os testes, depois refinamento. Registrar pendência emfrontend-fidelidade-figma.md; nenhumcódigo/APKalterado. Continua doing/completionEvidencevazia. Após047,015pelasdependências e gate deconteúdo;045independente permanece doing.
+Handoff: 27/10: V1-047 encerrada no recorte funcional local. O autor criou, revisou e confirmou a configuração real; o agente reabriu as quatro etapas e o resumo. Após autorização explícita, somente o horário inicial foi corrigido pela UI/API, gerando a revisão 2. Um novo controlador recuperou essa revisão após reabertura. Comparação SQL somente de leitura confirmou a preservação da revisão 1 e sua data, dos demais campos, da conta, do consumo e do catálogo. Sem terceira versão, novo login Google ou fixtures na conta. APK 22, API 0.7.0 e schema 12 mantidos. Clareza de fuso, hora e navegação permanece pendente na fonte frontend para depois dos testes; o fechamento funcional não aprova toda a usabilidade. Próxima V1-015 pelas dependências e com conteúdo humano como requisito. V1-045 segue doing: leitura e CreateMeal no domínio/aplicação; SQL, privacidade, HTTP e Flutter pendentes.
 
 ### V1-015 — Criar adesão sem geração de treino
 

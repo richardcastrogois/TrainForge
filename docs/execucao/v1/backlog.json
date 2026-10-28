@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-27",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
-  "next": "V1-047",
+  "next": "V1-015",
   "sizeLegend": {
     "S": "uma fatia curta",
     "M": "uma fatia com integração",
@@ -1204,7 +1204,7 @@
           "id": "V1-047",
           "title": "Persistir configuração completa antes da seleção de treino",
           "userStory": "Como praticante, quero concluir e revisar minha configuração antes de procurar um treino compatível e recuperar esse contexto pela minha conta.",
-          "status": "doing",
+          "status": "done",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -1282,8 +1282,16 @@
             "Contrato e fluxo Flutter completos para revisão",
             "Recibo de campos, isolamento, atualização e aceite"
           ],
-          "handoff": "27/10:047integrada; autor revisou/confirmou rotina real. Revisão1 persistida e reaberta pelo agente na abaPlanos, quatro etapas e revisão final conferidas contraSQLsomenteleitura; rótulos porfonte corretos e nenhum resave acidental. Hashes deconta/consumo/catálogo e snapshot/data da revisão1 preservados. Falta edição nativa autorizada e recuperação da segunda revisão: esclarecimento do horário solicitado no chat, sem alterar dado por inferência. UI de fuso/hora foi considerada pouco didática; autor pediu primeiro os testes, depois refinamento. Registrar pendência emfrontend-fidelidade-figma.md; nenhumcódigo/APKalterado. Continua doing/completionEvidencevazia. Após047,015pelasdependências e gate deconteúdo;045independente permanece doing.",
-          "completionEvidence": [],
+          "handoff": "27/10: V1-047 encerrada no recorte funcional local. O autor criou, revisou e confirmou a configuração real; o agente reabriu as quatro etapas e o resumo. Após autorização explícita, somente o horário inicial foi corrigido pela UI/API, gerando a revisão 2. Um novo controlador recuperou essa revisão após reabertura. Comparação SQL somente de leitura confirmou a preservação da revisão 1 e sua data, dos demais campos, da conta, do consumo e do catálogo. Sem terceira versão, novo login Google ou fixtures na conta. APK 22, API 0.7.0 e schema 12 mantidos. Clareza de fuso, hora e navegação permanece pendente na fonte frontend para depois dos testes; o fechamento funcional não aprova toda a usabilidade. Próxima V1-015 pelas dependências e com conteúdo humano como requisito. V1-045 segue doing: leitura e CreateMeal no domínio/aplicação; SQL, privacidade, HTTP e Flutter pendentes.",
+          "completionEvidence": [
+            "docs/execucao/v1/training-configuration-047-fechamento.json",
+            "docs/execucao/v1/configuracao-treino-047.md",
+            "docs/execucao/v1/training-configuration-sql-verification.json",
+            "docs/execucao/v1/training-configuration-privacy-verification.json",
+            "docs/execucao/v1/training-configuration-local-activation.json",
+            "docs/execucao/v1/training-configuration-client-verification.json",
+            "docs/execucao/v1/training-configuration-human-verification.json"
+          ],
           "workEvidence": [
             "docs/execucao/v1/decisoes-piloto.md",
             "docs/execucao/v1/trilha-implementacao.md",
@@ -3639,5 +3647,5 @@
       ]
     }
   ],
-  "currentPriority": "27/10:047com salvamento humano e recuperação real nas4etapas validados. Faltaedição nativa autorizada/recuperação; esclarecer horário no chat sem inventar rotina. UXfuso/hora registrada para depois dos testes. API0.7.0/29,schema12/27,APK22; conta/consumo/catálogo preservados. Depois015pelasdependências;045independente temleitura/CreateMealemdomínio/aplicação,SQL/privacidade/HTTP/Flutterpendentes."
+  "currentPriority": "27/10: V1-047 encerrada funcionalmente com criação humana, edição expressamente autorizada e recuperação nativa da revisão 2. Revisão 1 e dados reais preservados. Próxima V1-015 pelas dependências, sem programas, doses ou mídia inventados. Refinamento de fuso, hora e navegação registrado para depois dos testes. V1-045 segue doing: escrita SQL atômica, privacidade, HTTP e Flutter pendentes. Sem hospedagem ou compra."
 }
