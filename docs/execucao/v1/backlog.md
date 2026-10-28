@@ -869,7 +869,7 @@ Validação: Integração Go/SQL/Flutter das duas visões sem dupla contagem; Co
 
 Entregas: Modelo e contrato de refeições/itens; Visões por refeição e por alimento; Recibo de integridade/compatibilidade
 
-Handoff: 28/10: SQL/HTTP/Flutter, seleção particular e UI de metadados integrados; API0.8.0/34/schema13/30. APK24 instalado/hash;25 preparado com clareza de busca/acesso direto à biblioteca, não instalado para preservar uso humano.248testes completos antes do refinamento/37dirigidos depois/análise limpa/591mensagens. Autor criou/reabriu1refeição como teste de navegação, não consumo real:2consumos totais(1real anterior+1teste),1conta/6369versões/2revisões047 preservados. Não excluir teste nem agrupar legado por inferência. Doing:aceite real/correção/exclusão,foto042/ciclo;outbox026 própria. Não repetir SQL/restore/Google sem mudança pertinente.
+Handoff: 28/10: SQL/HTTP/Flutter, seleção particular e UI de metadados integrados; API0.8.0/34/schema13/30. APK25 instalado/hash após autor salvar/sair; refeição de teste/metadados recuperados e acesso direto à biblioteca/retorno conferidos sem escrita.248testes completos antes do refinamento/37dirigidos depois/análise limpa/591mensagens. Autor criou/reabriu1refeição como teste de navegação, não consumo real:2consumos totais(1real anterior+1teste),1conta/6369versões/2revisões047 preservados. Não excluir teste nem agrupar legado por inferência. Doing:aceite real/correção/exclusão,foto042/ciclo;outbox026 própria. Não repetir SQL/restore/Google sem mudança pertinente.
 
 ### V1-046 — Entregar histórico visual, análise nutricional e dicas revisadas
 
@@ -1359,7 +1359,7 @@ Validação: Pipeline completo no repositório autorizado; Rebuild e conferênci
 
 Entregas: Workflow CI; Imagem da API e metadados de release
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota pendente; Go/docs já tiveram run40689113482 aprovado. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios.
 
 ### V1-033 — Implantar staging e conferir restauração
 

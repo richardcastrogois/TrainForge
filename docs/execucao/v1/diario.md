@@ -481,3 +481,10 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - APK24 instalado após snapshot fresco sem formulário, hash/assinatura e dados anteriores comparados. Autor passou a usar a busca; automação nativa interrompida sem voltar ou apagar sua consulta. Prints mostraram criação/reabertura de1refeição, confirmada pelo autor como teste de navegação. Há2consumos(1real anterior+1teste); não excluir ou classificar como consumo real por inferência.
 - Feedback: busca particular pareceu busca geral. APK25 preparado, não instalado para preservar uso humano; diz “Alimentos que cadastrei”, explica alcance e oferece biblioteca diretamente, com cancelamento preservando busca/rascunho. Não traduziu dados alimentares.
 - Graphify116Dart/4254nós/4998arestas; AST/HTML semLLM e backup local.045continua doing por aceite real/correção/exclusão/foto042;outbox026 separada. [Recibo](meal-grouping-edit-client-verification.json).
+
+
+## 28/10/2026 — atualização25 autorizada e CI Flutter
+
+- Autor confirmou que salvou/saiu. APK0.4.3+25 instalado, hash/assinatura conferidos. Comparação de linhas incluiu refeições, vínculos e versões, além dos dados anteriores.
+- Leitura Android recuperou o teste humano e abriu metadados preenchidos, revisão desmarcada e confirmação desabilitada sem mudança. Nova descrição particular e acesso direto à biblioteca/retorno por seletor/rascunho passaram. Nenhum dado escrito/excluído; tela final no diário, sem formulário.
+- Pipeline Go/documentação aprovado no GitHub para297725f. Acrescentado workflow Flutter com revisão oficial fixa, lockfile/l10n/análise/testes/cobertura e permissão somente leitura. Primeira execução remota pendente; não encerra032, auditoria, SQL em CI ou Sonar. [Escopo](qualidade-ci.md).

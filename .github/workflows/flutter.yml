@@ -1,0 +1,75 @@
+name: Qualidade Flutter
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'test/**'
+      - 'assets/**'
+      - 'pubspec.yaml'
+      - 'pubspec.lock'
+      - 'l10n.yaml'
+      - 'analysis_options.yaml'
+      - '.github/workflows/flutter.yml'
+  pull_request:
+    paths:
+      - 'lib/**'
+      - 'test/**'
+      - 'assets/**'
+      - 'pubspec.yaml'
+      - 'pubspec.lock'
+      - 'l10n.yaml'
+      - 'analysis_options.yaml'
+      - '.github/workflows/flutter.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flutter-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Preparar o mesmo Flutter usado no checkpoint local
+        shell: bash
+        env:
+          # Tag oficial3.41.4 conferida; revisão imutável, sem action de terceiro.
+          FLUTTER_REVISION: ff37bef603469fb030f2b72995ab929ccfc227f0
+        run: |
+          set -euo pipefail
+          sdk="$RUNNER_TEMP/trainforge-flutter"
+          git init "$sdk"
+          git -C "$sdk" remote add origin https://github.com/flutter/flutter.git
+          git -C "$sdk" fetch --depth=1 origin refs/tags/3.41.4:refs/tags/3.41.4
+          git -C "$sdk" checkout --detach FETCH_HEAD
+          test "$(git -C "$sdk" rev-parse HEAD)" = "$FLUTTER_REVISION"
+          printf '%s\n' "$sdk/bin" >> "$GITHUB_PATH"
+          "$sdk/bin/flutter" config --no-analytics
+          "$sdk/bin/flutter" --version
+      - name: Resolver somente o lockfile versionado
+        run: flutter pub get --enforce-lockfile
+      - name: Conferir traduções geradas
+        run: |
+          flutter gen-l10n
+          git diff --exit-code -- lib/l10n/generated pubspec.lock
+      - name: Analisar código
+        run: flutter analyze --no-pub
+      - name: Testar e medir linhas instrumentadas
+        run: flutter test --no-pub --concurrency=2 --coverage
+      - name: Guardar cobertura de fixtures isoladas
+        if: success()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: flutter-coverage
+          path: coverage/lcov.info
+          if-no-files-found: error
+          retention-days: 7

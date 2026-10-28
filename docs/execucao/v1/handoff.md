@@ -8,7 +8,7 @@ Ler AGENTS.md, este handoff, backlog.json, plano-macro.md e etapa-02-fechamento.
 
 **V1-047 encerrada funcionalmente em 27/10. Próxima história: V1-015, pelas dependências.** O autor criou, revisou e confirmou a rotina real; o agente reabriu as quatro etapas e o resumo e conferiu com SQL somente de leitura. Depois o autor autorizou uma correção específica de horário. A UI/API gerou a revisão 2, recuperada ao fechar e reabrir com um novo controlador. A comparação SQL comprovou que somente o campo autorizado mudou, preservando a revisão 1 e sua data, os demais campos, a conta, o consumo e o catálogo. Não houve terceira versão, extração de credenciais do aparelho ou novo login Google. [Fechamento por critério](training-configuration-047-fechamento.json), [teste humano](training-configuration-human-verification.json).
 
-O último checkpoint047 ficou em Planos. O autor está usando a busca/formulário do APK24; não automatizar navegação nem atualizar enquanto isso. APK25 preparado com clareza de busca, ainda não instalado. Banco/API/emulador mantidos. Não repetir a validação da V1-047 sem mudança pertinente. Seu aceite funcional não encerra o frontend inteiro.
+O último checkpoint047 ficou em Planos. O autor confirmou que havia salvado e saído. APK25 instalado com dados preservados; navegação nativa conferiu biblioteca/retorno e metadados preenchidos sem gravar. Tela final no diário, sem formulário; reler antes de agir. Banco/API/emulador mantidos. Não repetir a validação da V1-047 sem mudança pertinente. Seu aceite funcional não encerra o frontend inteiro.
 
 **Refinamento de clareza continua pendente:** o usuário considerou fuso e hora pouco didáticos e pediu primeiro testar, depois corrigir o frontend. A [fonte frontend](frontend-fidelidade-figma.md) registra fuso do aparelho, separação da hora, ajuda e hierarquia de ações. A origem da rejeição do identificador IANA não foi comprovada. O controle de rolagem e texto pelo Windows foi inconsistente no ensaio; a recuperação final foi conferida pela semântica do Android. Não atribuir isso à rolagem do app sem investigação.
 
@@ -16,7 +16,7 @@ Continuar a V1-015, com V1-014, V1-013 e V1-047 concluídas. A ausência de cont
 
 ## Trabalho independente045 já iniciado
 
-**28/10: SQL/HTTP, Flutter, seleção particular e edição de metadados integrados.** API0.8.0/34operações, schema13/30tabelas. APKdebug0.4.2+24 instalado/hash/assinatura conferidos; **0.4.3+25 preparado, não instalado**, para preservar a busca/formulário em uso pelo autor. [Estado](refeicoes-045.md), [complemento atual](meal-grouping-edit-client-verification.json), [cliente anterior](meal-grouping-client-verification.json), [SQL/HTTP/restore](meal-grouping-sql-verification.json), [ativação](meal-grouping-local-activation.json).
+**28/10: SQL/HTTP, Flutter, seleção particular e edição de metadados integrados.** API0.8.0/34operações, schema13/30tabelas. APKdebug0.4.3+25 instalado/hash/assinatura conferidos após o autor salvar/sair; dados incluindo grupos/vínculos/versões preservados. [Estado](refeicoes-045.md), [complemento atual](meal-grouping-edit-client-verification.json), [cliente anterior](meal-grouping-client-verification.json), [SQL/HTTP/restore](meal-grouping-sql-verification.json), [ativação](meal-grouping-local-activation.json).
 
 Preparar item não grava consumo; revisão confirma todo o grupo atomicamente. Duas visões compartilham IDs/totais da API; legado permanece sem agrupamento. Metadados têm revisão/corpo/chave congelados em envio incerto, conflito/24h sem nova intenção; correção não envia itens/quantidades. Conta/geração descartam respostas antigas. Rascunho com alteração só de data também avisa antes de sair.
 
@@ -68,3 +68,8 @@ Commit/push de incrementos validados autorizados; sem hospedagem/deploy/recurso 
 Credenciais/assinatura/logs/XML/capturas privadas/backups fora doGit. Acesso à janela autorizado, mas controleWindows inconsistente; UIAutomator/screencap fornecem evidência Android. Exigir snapshotnovo/dispositivo explícito, nunca usarXMLantigo após dumpfalhar. Não automatizarGoogle.
 
 Atualizar backlogJSON/contratos/diagramas/diário/handoff; gerar docs e testar. Swagger vem dos tipos/comentáriosGo. Não executar analyze/gen-l10n/test junto ao prepare; SDKs instalados. Não prometer certificação de segurança ou escala por contagens/testes.
+
+
+## Complemento independente de qualidade032
+
+Job Flutter acrescentado com SDK oficial3.41.4/revisão imutável e lockfile, deriva l10n, análise, suíte e cobertura no runner. Primeira execução remota ainda pendente; pipeline Go/docs já aprovado para297725f. [Escopo e limites](qualidade-ci.md), [recibo](ci-flutter-verification.json). Não encerra032/028 nem SQL em CI/Sonar/carga. Sem instalar ferramentas no notebook, assinar ou publicar APK.

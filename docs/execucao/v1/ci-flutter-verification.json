@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "story": "V1-032",
+  "status": "partial",
+  "scope": "independent-flutter-ci-foundation-not-delivery-pipeline-complete",
+  "flutterVersion": "3.41.4",
+  "flutterRevision": "ff37bef603469fb030f2b72995ab929ccfc227f0",
+  "officialTagVerified": true,
+  "existingArchitectureCi": {
+    "commit": "297725f0f4a5de6c976b06dd6e193c46345df74c",
+    "run": 40689113482,
+    "conclusion": "success",
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40689113482"
+  },
+  "newFlutterCi": {
+    "workflow": ".github/workflows/flutter.yml",
+    "remoteRunVerified": false,
+    "localFullSuiteBeforeDiscovery": 248,
+    "localFocusedSuiteAfterDiscovery": 37,
+    "localAnalyzerIssues": 0,
+    "scope": [
+      "locked dependencies",
+      "generated localization drift",
+      "analyzer",
+      "full widget/unit tests",
+      "lcov artifact"
+    ]
+  },
+  "controls": [
+    "Pinned checkout/upload action commits and official Flutter revision.",
+    "Read-only repository permission; checkout does not persist token.",
+    "No pull_request_target, repository secrets, Google consent, real business DB, APK signing or deploy.",
+    "Hosted runner only; no local SDK installation."
+  ],
+  "limits": [
+    "Remote Flutter job still needs first execution after push.",
+    "Isolated migration SQL CI and non-root image/artifact delivery are not implemented by this job.",
+    "Sonar, complete audit028, load030, offline026, photo042 and release remain separate."
+  ]
+}
