@@ -179,7 +179,7 @@ def scan(root):
     inputs += [p for p in (root / "services/api").glob("go.*") if p.is_file()]
     inputs += sorted((root / "contracts/generated").glob("*.json"))
     inputs += [ref_path, root / "docs/arquitetura/plano.json", root / "docs/execucao/v1/backlog.json", root / "docs/arquitetura/achados.json"]
-    fingerprints = {p.relative_to(root).as_posix(): digest(p) for p in inputs}
+    fingerprints = {p.relative_to(root).as_posix(): digest(p) for p in sorted(inputs, key=lambda p: p.relative_to(root).as_posix())}
     revision = hashlib.sha256(json.dumps(fingerprints, sort_keys=True).encode()).hexdigest()
     return {"schemaVersion": 2, "inputRevision": revision, "inputs": fingerprints,
             "coverage": {"dartFiles": len(dart), "backendMode": "versioned-reference", "backendCommit": backend["commit"],

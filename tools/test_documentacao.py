@@ -32,6 +32,16 @@ def isolated_copy(destination):
 
 
 class DocumentationTests(unittest.TestCase):
+    def test_inventory_serialization_ignores_filesystem_glob_order(self):
+        expected = json.dumps(scan(ROOT), ensure_ascii=False)
+        original = Path.glob
+        def reversed_module_glob(path, pattern):
+            values = list(original(path, pattern))
+            return iter(reversed(values)) if path == ROOT / "services/api" and pattern == "go.*" else iter(values)
+        with patch.object(Path, "glob", new=reversed_module_glob):
+            observed = json.dumps(scan(ROOT), ensure_ascii=False)
+        self.assertEqual(observed, expected, "Module file enumeration changed serialized inventory")
+
     def test_portable_inventory_does_not_require_external_checkout(self):
         data = scan(ROOT)
         self.assertEqual(data["coverage"]["backendMode"], "versioned-reference")
