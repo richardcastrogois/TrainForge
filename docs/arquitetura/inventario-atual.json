@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "ecf94633e5685e153936f9b27312b149fec10a7851fe99fa741101720fb14444",
+  "inputRevision": "fe5bd1d859a1a7183590f72349c19b32ad678a18c0e48101cbf1ce0f1949e0c3",
   "inputs": {
     "contracts/generated/swagger-v1.json": "e7bd645fa1c671906bcb86e7cfd21df10654af7eec10a9fc6287b08b7265cac8",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
@@ -218,7 +218,7 @@
     "tools/gerar_documentacao.py": "001ea0f6d0921a9a7658dea3b114470648b82b7e5a85c0038391bc2e44162cfd",
     "tools/gerar_identidade_nativa.py": "a31cc309a23d0a9504fe98f00fbb0b5d1f57922a6d76af956d80afba3cd79ebd",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
-    "tools/image_ci.py": "4d5c29f783a35f805b640a1897189ba7f144fa6593517d12015da283d488d9db",
+    "tools/image_ci.py": "9ad0cc16f02526805a7cd1aedbea1ae1bef17e97469d75a214255445bc629380",
     "tools/importar_alimentos_local.py": "cf0889e37105cf1b72be2a0b4e9860139c3458b14960ffb8e2cf7eac01e0a3b3",
     "tools/importar_catalogo_local.py": "3dc782157ea40dc86dbbcf9db2b2e11b9922a9a83bafb3e63452a02e310485fa",
     "tools/manter_privacidade_local.py": "8322d8e7858c1881c795e82accfef8a137394bfeeabc2ded34bbfa993f9ba22b",

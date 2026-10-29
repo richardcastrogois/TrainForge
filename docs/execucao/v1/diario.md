@@ -554,3 +554,5 @@ Commit0c0c531 passou Go/docs40818474388 (testes/vet/build/Swagger), SQL408184743
 BuilderGo1.27.3 por digest oficial conferido;runtime scratch/65532 com binário/CA/tzdata. Runner deimagem somente hospedado, rede interna, read-only,semcapabilities e semprivilegeescalation; artefato porcommit/versão/digest semregistry/deploy. Dois guards passaram;execução remota pendente. Docker local não executado.
 
 Imagem40819307701 falhou no preflight de versão: caminho Swagger incorreto, antes deDocker. Corrigido para ocontrato canônico; nenhuma imagem/smoke foi aprovada nessa rodada. Próximo job pendente.
+
+Imagem40819581479/c35fe20 construiu runtime65532, mas smoke falhou assumindo porta publicada emrede interna. Ajustado paraIPprivado da bridge e sempublicação de porta/proxy, mantendoisolamento. Novoensaio pendente. Levantamento estático também conferiu cobertura das30tabelas no plano depropriedade; sources compartilhada entre catálogos explicita acoplamento adicional.

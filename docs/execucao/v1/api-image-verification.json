@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "story": "V1-032",
-  "status": "preflight-corrected-pending-remote-execution",
+  "status": "internal-network-smoke-corrected-pending-remote-execution",
   "scope": "hosted-only-image-build-and-isolated-smoke",
   "builder": {
     "image": "golang:1.27.3-bookworm",
@@ -18,7 +18,7 @@
     "defaultEnvironment": "production"
   },
   "plannedSmoke": [
-    "Read-only filesystem, no capabilities or privilege escalation, bounded process/memory/CPU, internal network and loopback host port.",
+    "Read-only filesystem, no capabilities or privilege escalation, bounded process/memory/CPU, internal bridge network. Host accesses the private bridge IP; no host port is published and proxy use is disabled.",
     "Production plain HTTP rejected426; test-only mode live200/missingDB503.",
     "GracefulSIGTERM and removal of owned containers/network.",
     "Archive SHA256 and image ID associated with commit/version; retained in Actions artifact7days."
@@ -44,5 +44,18 @@
     "imageBuilt": false,
     "smokeValidated": false
   },
-  "versionSource": "contracts/generated/swagger-v1.json"
+  "versionSource": "contracts/generated/swagger-v1.json",
+  "secondAttempt": {
+    "run": 40819581479,
+    "job": 123268650206,
+    "commit": "c35fe20f47261df81767501cf3cd97182bfef047",
+    "status": "failure",
+    "phase": "inspect-and-smoke",
+    "imageBuilt": true,
+    "imageId": "sha256:b4a5b2bd355eaf020957e06c58d46a358e8f22af11a5f2b561f3ae48a1303ab7",
+    "runtimeUserVerified": "65532:65532",
+    "cause": "Smoke tried to inspect a host port mapping on the internal bridge. Changed to direct private bridge address with no host port publication and no HTTP proxy.",
+    "smokeValidated": false
+  },
+  "networkReference": "https://docs.docker.com/engine/network/port-publishing/"
 }

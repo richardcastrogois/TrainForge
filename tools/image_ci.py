@@ -2,6 +2,7 @@
 import gzip
 import hashlib
 import json
+import ipaddress
 import os
 from pathlib import Path
 import re
@@ -67,7 +68,7 @@ def main():
         report['imageId']=image['Id'];report['runtimeUser']=image['Config']['User']
         cli('network','create','--internal',resource_name(name));network=True
         for mode,expected_live in [('production',426),('test',200)]:
-            cli('run','--detach','--name',name,'--network',name,'--publish','127.0.0.1::8082',
+            cli('run','--detach','--name',name,'--network',name,
                 '--read-only','--cap-drop','ALL','--security-opt','no-new-privileges',
                 '--pids-limit','64','--memory','128m','--cpus','1','--env','TF_ENV='+mode,name)
             container=True
@@ -75,12 +76,17 @@ def main():
             host=info['HostConfig']
             if not host['ReadonlyRootfs'] or host['CapDrop']!=['ALL'] or 'no-new-privileges' not in host['SecurityOpt']:
                 raise RuntimeError('Runtime isolation mismatch')
-            port=info['NetworkSettings']['Ports']['8082/tcp'][0]
-            if port['HostIp']!='127.0.0.1' or not re.fullmatch('[0-9]{1,5}',port['HostPort']): raise RuntimeError('Unexpected smoke port')
-            base='http://127.0.0.1:'+port['HostPort']
+            if not info['State']['Running']: raise RuntimeError('Container exited before smoke')
+            network_info=json.loads(cli('network','inspect',name))[0]
+            if not network_info['Internal'] or info['HostConfig'].get('PortBindings'):
+                raise RuntimeError('Internal network with no published ports required')
+            address=ipaddress.IPv4Address(info['NetworkSettings']['Networks'][name]['IPAddress'])
+            if not address.is_private or address.is_loopback: raise RuntimeError('Private bridge address required')
+            base='http://'+str(address)+':8082'
+            opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
             for attempt in range(40):
                 try:
-                    try: response=urllib.request.urlopen(base+'/api/v1/health/live',timeout=1)
+                    try: response=opener.open(base+'/api/v1/health/live',timeout=1)
                     except urllib.error.HTTPError as error: response=error
                     with response: status=response.status;body=response.read(2048)
                     break
@@ -89,7 +95,7 @@ def main():
                     time.sleep(0.2)
             if status!=expected_live: raise RuntimeError('Liveness/TLS behavior mismatch')
             if mode=='test':
-                try: urllib.request.urlopen(base+'/api/v1/health/ready',timeout=2)
+                try: opener.open(base+'/api/v1/health/ready',timeout=2)
                 except urllib.error.HTTPError as error:
                     with error: problem=json.load(error)
                     if error.code!=503 or problem.get('code')!='dependency_unavailable': raise RuntimeError('Readiness contract mismatch')
@@ -97,7 +103,7 @@ def main():
             stop()
         report.update({'readOnlyNonRootSmokePassed':True,'productionPlainHttpRejected':True,
             'testLiveness200':True,'missingDbReadiness503':True,'gracefulShutdownPassed':True,
-            'internalNetworkOnly':True})
+            'internalNetworkOnly':True,'publishedHostPorts':False})
         report['phase']='archive';phase='archive'
         with tempfile.TemporaryDirectory(prefix='api-image-',dir=os.environ['RUNNER_TEMP']) as scratch:
             tar=Path(scratch)/'image.tar';cli('image','save','--output',str(tar),name,timeout=60)
