@@ -1,6 +1,10 @@
 # Caminho da pesquisa ao APK
 
-## Vigente — 28/10/2026
+## Vigente —29/10/2026
+
+O autor escolheu detalhar microserviços por etapas; a primeira prova de catálogo está proposta, sem cutover ou migração da avaliação. CI SQL passou oito suítes/12 testes principais em bases descartáveis, com schema13 e remoção conferidos. FonteGo0.8.1 tem prontidão reforçada e diagnósticoHTTP parcial; APKdebug0.4.3+25 permanece o checkpoint instalado. Auditoria028, observabilidade029 e pipeline032 continuam abertos; histórico Git contém links externos tokenizados antigos, com arquivos atuais sanitizados e pendência explícita. [Handoff vigente](handoff.md), [plano gradual](../../arquitetura/reavaliacao-microservicos-2026-10-29.md).
+
+## Último checkpoint do app —28/10/2026
 
 047 encerrada funcionalmente com criação humana, edição autorizada e recuperação da revisão2; refinamento didático continua pendente. 048 permanece concluída no recorte documentado. Treinos015/016 têm bloqueio editorial explícito: zero programas, instruções, doses ou mídia aprovados para prática. Trabalho independente045 tem SQL/HTTP, cliente Flutter e leitura Android integrados: Go0.8.0/34operações, schema13/30tabelas e APK0.4.3+25 instalado após salvar/sair e comparação de dados. A ativação preservou os dados anteriores; o consumo real ficou sem agrupamento. Seleção particular e edição de metadados implementadas. Faltam aceite real/correção/exclusão e foto042; criação/consulta humana foi teste de navegação; outbox026 tem gate próprio. Sem hospedagem, compra ou dados inventados. [Trilha](trilha-implementacao.md), [handoff](handoff.md) e [backlog](backlog.json) detalham dependências e lacunas.
 

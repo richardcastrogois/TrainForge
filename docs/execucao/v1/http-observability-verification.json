@@ -35,7 +35,39 @@
       "dependency unavailable503",
       "panic500 correlation without exception value"
     ],
-    "newRemoteExecution": "pending-push"
+    "newRemoteExecution": {
+      "verified": true,
+      "commit": "0c0c53100c067b341692c96538ad000b0ab8be58",
+      "goDocs": {
+        "run": 40818474388,
+        "jobs": [
+          123265072316,
+          123265353516
+        ],
+        "status": "success",
+        "goTestsVetBuildSwaggerPassed": true
+      },
+      "sql": {
+        "run": 40818474391,
+        "job": 123265072186,
+        "status": "success",
+        "suitesPassed": 8,
+        "schemaVersion": 13,
+        "disposableDatabasesRemoved": true,
+        "logsVerified": true
+      },
+      "govulncheck": {
+        "run": 40818474380,
+        "jobs": {
+          "windows": 123265072221,
+          "linux": 123265072730
+        },
+        "status": "success",
+        "knownReachableVulnerabilitiesDetected": 0,
+        "logsVerified": true
+      },
+      "gitHistorySecretsGate": "unresolved-existing-findings"
+    }
   },
   "limits": [
     "No Flutter diagnostic correlation implementation, pool/SQL telemetry, metrics store, trace sampling, retention or alerts delivered by this increment.",

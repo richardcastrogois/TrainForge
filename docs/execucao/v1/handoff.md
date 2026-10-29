@@ -4,7 +4,7 @@ Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 **Trabalho retomado pelo autor em29/10.** Sua nova solicitação revoga a parada anterior. Git inicialmente limpo em3f94bb3; helper29/10 informou apiReady:false, apkCurrent:true e nenhum dispositivo conectado. Não iniciar recursos ou repetir aceite por hábito.
 
-**Arquitetura:** autor pretendia microserviços desde o início e quer reavaliar. [Comparação aplicada e plano para decisão](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). Go mantido, execução atual monolítica confirmada; autor escolheu detalhar microserviços por etapas. Primeira prova: catálogo público em processo/banco descartáveis próprios,5rotas compatíveis;047ainda consulta conteúdo noSQL. PlanoM0–M4 no estudo, sem implementar/cutover ou migrar avaliação porinferência. Continuar tarefas independentes de contratos/dados/qualidade enquanto se define o rumo.
+**Arquitetura:** o autor escolheu detalhar microserviços por etapas. [Plano concreto M0–M4](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). A primeira prova proposta é o catálogo público, com processo/banco descartáveis próprios e cinco rotas compatíveis. A configuração047 ainda consulta conteúdo no SQL. A pergunta de autorização da prova M1 está pendente; não implementar essa mudança arquitetural ou migrar a avaliação por inferência. Continuar trabalho independente de segurança e qualidade.
 
 ## Próxima ação
 
@@ -30,7 +30,7 @@ Preparar item não grava consumo; revisão confirma todo o grupo atomicamente. D
 
 045 continua doing: aceite real de refeição/correção/exclusão, foto042 e seu ciclo pendentes. Nativo de edição em refeição real não foi executado; teste automatizado isolado não o substitui. Outbox026 tem critérios próprios. Treinos015/016 continuam sem conteúdo humano aprovado para prática e sem implementação de adesão. Continuar trabalho independente sem fingir conclusão.
 
-## Estado validado e ambiente
+## Último checkpoint do app e ambiente —28/10 (histórico)
 
 - **Go0.8.0 /34operações**, Swagger gerado e servido localmente conferido. Cinco rotas de refeições integradas com migration13 aplicada localmente. Novas rotas GET/PUT /api/v1/me/training-configuration e GET …/resources. Domínio/aplicação, PostgreSQL, handler e Flutter separados. [Contrato](../../arquitetura/contratos-v1.md).
 - **Schema13 /30tabelas** aplicado em trainforge_v1_dev,127.0.0.1:15432. [Ativação045](meal-grouping-local-activation.json): dump completo local anterior à13 e comparação preservaram os dados; esse checkpoint específico ainda não foi restaurado. O mecanismo de dump/restore/exclusão foi ensaiado separadamente em bases descartáveis. A [ativação histórica da12](training-configuration-local-activation.json) usou checkpoint somente de schema e comparação, quando ainda não havia configuração. Não repetir os ativadores nem tratar checkpoint como restauração validada.
@@ -90,33 +90,19 @@ Graphify conferido novamente:0Dart alterados/116inalterados,4254nós/4998arestas
 A [explicação da arquitetura atual](../../arquitetura/camadas-go.md) registra por que usamos monólito modular, o papel do main, a transação de refeições e os critérios para eventual extração. Não prometer milhões nem migração automática para microserviços.
 
 
-## Incremento independente29/10 — CI SQL
+## Estado da fonte e CI —29/10
 
-Runner dedicado somente a GitHub-hosted Linux com PostgreSQL novo, sem modo local. Recusa configuração de conexão preexistente, credenciais/estado .local e nomes de base fora do prefixo descartável. Usa os mesmos grants extraídos do helper local; equivalência byte a byte nas4combinações de módulos conferida sem SQL.3testes de barreiras passaram e execução no notebook foi recusada antes de conectar. Primeira execução SQL remota40811811519 aprovada para689f64b:13migrations,rerun0,3testesSQL/HTTP de refeições e1de privacidade; base removida. Fonte0.8.1 agora tem prontidão de objetos/permissões, validada porSQL em40813092631/9124a85, com quatro negativos e recuperação. [Recibo](ci-sql-verification.json).
+Fonte Go0.8.1, 34 operações; o diagnóstico HTTP foi acrescentado sem alterar os contratos. O APK instalado continua debug0.4.3+25. Nenhuma API, banco, emulador, conta ou registro de avaliação foi iniciado ou alterado nesta rodada. O helper inicial indicava API indisponível e nenhum dispositivo; reler o estado antes de agir.
 
+- **SQL ampliado aprovado:** run40817964419/3169bea, job123263441423; oito suítes, 12 testes principais e 21 eventosPASS com subtestes, sem skips aceitos. Schema13, reexecução e limpeza das bases descartáveis conferidos nos logs. [Recibo](ci-sql-verification.json). O primeiro ensaio falhou por exigir referência do wrapper local; o teste original foi preservado e o CI usa entrada sintética explícita. Não é aceite humano nem novo login Google.
+- **Prontidão:** objetos/grants/funções, rejeição de papel privilegiado e quatro negativos com recuperação executados no CI; nenhuma migration nova. O adaptador usa metadados e devolve503 genérico.
+- **AuditoriaGo:** scanner oficial v1.9.0 aprovado em Linux/Windows para8331426 e3169bea, com zero vulnerabilidades conhecidas alcançáveis detectadas naquele recorte. [Recibo](go-vulnerability-verification.json). O diagnóstico HTTP0c0c531 também passou em40818474380, com logs Linux/Windows conferidos.
+- **HTTP029 parcial:** requestId gerado pelo servidor, método categorizado, padrão de rota, status, duração e bytes. Sem URL/query/valores deID, corpos, credenciais, IP ou identidade. SuíteGo comum e vet passaram; pipeline0c0c531 aprovado: Go/docs40818474388, SQL40818474391 e scanner40818474380. [Recibo](http-observability-verification.json). Não entrega correlaçãoFlutter, pool/SQL, métricas/traces, retenção ou alertas.
 
-## Prontidão operacional0.8.1 —29/10
+Dump/restore em CI, imagem sem root, artefatos de entrega, Sonar, carga e auditoria integral continuam pendentes.032/028/029 não estão encerradas. Não repetir aceites, testes nativos ou instalações sem mudança pertinente. O Graphify continua116Dart/4254nós/4998arestas, sem alteração Dart nesta rodada; os mapasGo foram regenerados.
 
-Fonte Go0.8.1/34operações; runtime local permaneceu parado. /health/ready passa pelo adaptador PostgreSQL com leitura de catálogos/permissões: objetos/funções essenciais presentes, SELECT/EXECUTE e DML conforme o runtime, nenhum privilégio elevado, ledger com acesso restrito. Falha503 é genérica. Main só injeta o adaptador. Sem migration ou mudança Flutter/APK25. Go test ./... e vet passaram, Swagger regenerado. SQL de prontidão executado noCI40813092631/9124a85, sem skips:quatro negativos e recuperação; refeições/privacidade e limpeza também passaram. Os testes alteram somente o schema descartável para revogar/repor grant, conceder/remover escrita indevida e renomear/repor objeto.
+## Segredos no histórico — pendência real
 
+Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nenhum valor bruto foi publicado. Revisão desses candidatos:79falsos positivos, duas ocorrências de URL externa assinada expirada em03/10 e seis ocorrências de URL externa com token sem validade comprovada. Nenhuma credencial do TrainForge identificada nesses87; isso não prova ausência geral de segredos.
 
-## Auditoria028 em andamento
-
-ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no notebook. Run40813941007/8331426 aprovado nos dois alvos, logs conferidos:0vulnerabilidades conhecidas alcançáveis detectadas. Escopo e data no recibo; não é ausência de falhas. Não significa auditoria Flutter/Android, segredos, master ou offline concluídos. [Recibo](go-vulnerability-verification.json).
-
-
-## Segredos Git028 — execução e revisão29/10
-
-Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nenhum valor bruto foi publicado. Revisão:79falsos positivos (hashes, IDs públicos, cursor de paginação de teste e texto/campos editoriais),2ocorrências de URL externa assinada expirada em03/10 e6ocorrências de URL externa tokenizada sem validade comprovada. Nenhuma credencial do TrainForge identificada nesses candidatos; isso não é auditoria integral. Sete campos emseis evidências atuais tiveram query removida, mantendo localizador, documentos/hashes e observações históricas. [Sanitização](research-url-sanitization.json), [recibo](git-secret-verification.json). Histórico continua contendo os links antigos e o gate permanece pendente; nenhuma exceção ampla, reescrita de histórico, replay de token ou contato com fornecedor. Não publicar diff bruto das linhas removidas.
-
-## Próxima validação independente —SQL por domínio
-
-RunnerSQL agora propõe8suítes/12testes principais em bases descartáveis separadas no mesmo serviçoGitHub-hosted.5testes de barreiras/parser passaram. Parser exige execução/pass explícitos, semaceitar skip e sempublicar saídaGo bruta. Primeira execução ampliada ainda precisa ser conferida após o push; não transferir o sucesso anterior de refeições/privacidade para as novas suítes. Semdados/processos locais alterados. [Recibo](ci-sql-verification.json).
-
-Primeira execução ampliada40817472948/563de01:privacy/auth/catalog/food-import/food-read passaram;nutrition falhou e demais não executaram. A suíte antiga dependia de referência real fornecida pelo wrapperlocal; agora preservada e separada de TestNutritionPostgresFixtureLifecycle paraCI.6testes de guard/diagnóstico eGo nutrição comum passaram. NovaexecuçãoSQL ainda precisa ser conferida; não apresentar a rodada anterior como8suítes aprovadas.
-
-## Ampliação SQL concluída tecnicamente e início deHTTP029
-
-Run40817964419/3169bea aprovado:8suítes/12testes principais/21PASScomsubtestes,sem skips;schema13,reexecução e remoção dasbases. Logs/artefato conferidos;reciboCIatualizado. ConsumoCIusa fixture explícita; nãoé novo aceite real. Dump/restore,carga/Sonar/artefatos continuam pendentes.
-
-FonteHTTP agora registra requestId,método categorizado,padrão de rota,status,duração ebytes,com allowlist;nenhumURL/query/corpo/identidade/credencial. TestesGo comuns/vet passaram,sem SQLlocal. API deavaliação/APK25preservados; pipeline doincremento ainda a conferir depois dopush. Recibo http-observability-verification.json;029continua aberta porFlutter,pool,SQL,métricas,traces,alertas/retention.
+Sete campos em seis evidências atuais foram sanitizados, preservando localizador, documentos/hashes e observações históricas. [Comparação semântica](research-url-sanitization.json), [recibo](git-secret-verification.json). O histórico antigo permanece e o gate segue pendente. Não imprimir diff bruto das linhas antigas, reexecutar os tokens, contatar fornecedores, rotacionar credenciais ou reescrever o Git automaticamente. Nenhuma exceção ampla foi criada para tornar o pipeline verde.
