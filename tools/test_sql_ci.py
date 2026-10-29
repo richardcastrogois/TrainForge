@@ -2,7 +2,7 @@ import tempfile
 from pathlib import Path
 import unittest
 import json
-from sql_ci import check_environment, disposable_name, test_events, SUITES
+from sql_ci import check_environment, disposable_name, test_events, failure_locations, SUITES
 
 
 class SqlCiGuards(unittest.TestCase):
@@ -61,3 +61,10 @@ class SqlTestEvidence(unittest.TestCase):
                 self.assertTrue(package.startswith('./internal/'))
                 self.assertTrue(expected)
                 self.assertTrue(all(name.startswith('Test') for name in expected))
+
+
+    def test_failure_diagnostics_do_not_publish_assertion_or_payload(self):
+        raw=json.dumps({'Output':'    entries_postgres_test.go:129: private-person token=fixture-secret\n'})
+        self.assertEqual(failure_locations(raw),[{'file':'entries_postgres_test.go','line':129}])
+        self.assertEqual(failure_locations('not JSON\n[]\n{}'),[])
+        self.assertNotIn('private-person',str(failure_locations(raw)))

@@ -45,3 +45,7 @@ As evidências atuais tiveram7campos de URL sanitizados em6arquivos, preservando
 ## Ampliação SQL por domínio —29/10
 
 Runner ampliado para8suítes/12testes principais existentes:prontidão/refeições/privacidade,auth,catálogo,importação alimentar,consulta alimentar,consumos,nomenclatura revisada e configuração047. Cada suíte recebe base nova própria, migrations/reexecução e ambienteTFisolado; nomes de base limitados a prefixos exatos/nonce. Parser de eventosGoJSON exige os testes esperados passarem e recusa skip/falha/ausência/resultado terminal duplicado. Só nomes/estados dos testes saem no relatório; saída bruta capturada não é publicada.5testes locais de barreiras/parser passaram; execução SQL ampliada ainda pendente noCI. Sem acesso ao banco de avaliação ou Google real. Dump/restore, carga e demais gates continuam pendentes. [Recibo](ci-sql-verification.json).
+
+### Primeira execução ampliada e ajuste do contrato de teste
+
+Run40817472948/563de01 passou as5primeiras suítes e falhou emconsumos;nomes/configuração não executaram. O teste selecionado requeria uma referência real copiada pelo wrapperlocal, indisponível noCI. Foi preservado e ganhou um ponto de entrada separado com fixture explícita paraCI, sem copiar catálogo ou conta daavaliação. Osmesmos controles de titularidade/replay/cálculo/retirada/privacidade continuam exercitados; isso não valida consumo real. Parser agora publica emfalha somente basename/linhaGo, semmensagem/PII/corpo.6testes de ferramentas e suíteGo comum de nutrição passaram;SQL corrigido aguarda novaexecução remota.

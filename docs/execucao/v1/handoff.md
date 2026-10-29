@@ -112,3 +112,5 @@ Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nen
 ## Próxima validação independente —SQL por domínio
 
 RunnerSQL agora propõe8suítes/12testes principais em bases descartáveis separadas no mesmo serviçoGitHub-hosted.5testes de barreiras/parser passaram. Parser exige execução/pass explícitos, semaceitar skip e sempublicar saídaGo bruta. Primeira execução ampliada ainda precisa ser conferida após o push; não transferir o sucesso anterior de refeições/privacidade para as novas suítes. Semdados/processos locais alterados. [Recibo](ci-sql-verification.json).
+
+Primeira execução ampliada40817472948/563de01:privacy/auth/catalog/food-import/food-read passaram;nutrition falhou e demais não executaram. A suíte antiga dependia de referência real fornecida pelo wrapperlocal; agora preservada e separada de TestNutritionPostgresFixtureLifecycle paraCI.6testes de guard/diagnóstico eGo nutrição comum passaram. NovaexecuçãoSQL ainda precisa ser conferida; não apresentar a rodada anterior como8suítes aprovadas.

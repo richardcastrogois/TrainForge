@@ -536,3 +536,7 @@ Autor escolheu detalhar microserviços por etapas. PropostaM0–M4 incorporada a
 ## 29/10/2026 — ampliação independente doCI SQL
 
 8suítes/12testes principais já existentes passaram a ser selecionados explicitamente pelo runner, cada suíte com base/ambiente separados; parser recusa skip/falha/ausência e publica apenas metadados.5testes de barreiras/parser passaram. Integração remota ampliada ainda pendente; não executada no notebook.
+
+## 29/10/2026 — ensaio remoto ampliado revelou dependência de fixture
+
+Run40817472948 passou5suítes e falhou emnutrition;nomes/configuração não executaram. Teste deconsumos exigia referência real copiada pelo wrapperlocal. Mantido oensaio anterior ecriado ponto deentrada explícito parafixtureCI, com osmesmos controles, semdados daavaliação.6testes debarreiras/diagnóstico eGo nutrição comum passaram;SQL corrigido ainda pendente.

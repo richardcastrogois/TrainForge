@@ -63,7 +63,7 @@
     "disposableDatabaseRemoved": true
   },
   "extendedDomainSuites": {
-    "status": "implemented-pending-first-remote-execution",
+    "status": "corrected-pending-remote-execution",
     "suiteCount": 8,
     "topLevelTestCount": 12,
     "suites": [
@@ -110,8 +110,10 @@
         "id": "nutrition",
         "databasePrefix": "trainforge_v1_nutrition_test_",
         "expectedTests": [
-          "TestNutritionPostgresLifecycle"
-        ]
+          "TestNutritionPostgresFixtureLifecycle"
+        ],
+        "syntheticReferenceOnly": true,
+        "originalResearchedReferenceTestPreserved": true
       },
       {
         "id": "names",
@@ -129,9 +131,31 @@
       }
     ],
     "guards": "Each suite has its own disposable DB and TF_* environment; missing/skip/fail/duplicate events fail. Captured raw Go output is not published.",
-    "localGuardTests": 5,
+    "localGuardTests": 6,
     "evaluationDatabaseAccessed": false,
     "artifact": "sql-verification-<commit>/safe-report.json",
-    "dumpRestoreInCI": false
+    "dumpRestoreInCI": false,
+    "firstAttempt": {
+      "run": 40817472948,
+      "job": 123261834937,
+      "commit": "563de01d48852644e14a2250dc892bcd90e005f6",
+      "conclusion": "failure",
+      "passedSuites": [
+        "privacy",
+        "auth",
+        "catalog",
+        "food-import",
+        "food-read"
+      ],
+      "failedSuite": "nutrition",
+      "notExecuted": [
+        "names",
+        "configuration"
+      ],
+      "diagnosis": "The selected nutrition test requires a researched reference supplied by the local wrapper; hosted CI did not supply it. Raw output was withheld. This input requirement prevented a valid self-contained CI run.",
+      "fix": "Separate explicit synthetic-CI entry point preserving original researched-reference test; no evaluation data copied."
+    },
+    "nutritionOrdinaryGoSuitePassed": true,
+    "nutritionSqlNotRunLocally": true
   }
 }

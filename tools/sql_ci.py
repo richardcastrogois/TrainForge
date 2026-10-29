@@ -30,7 +30,7 @@ SUITES = (
         {'TF_FOOD_TEST_DATABASE_URL':'migrator', 'TF_FOOD_TEST_RUNTIME_URL':'runtime'}),
     ('food-read', 'food', (('./internal/nutrition', ('TestFoodPublicPostgresVisibilityPaginationAndWithdrawal',)),),
         {'TF_FOOD_TEST_DATABASE_URL':'migrator', 'TF_FOOD_TEST_RUNTIME_URL':'runtime'}),
-    ('nutrition', 'nutrition', (('./internal/nutrition', ('TestNutritionPostgresLifecycle',)),),
+    ('nutrition', 'nutrition', (('./internal/nutrition', ('TestNutritionPostgresFixtureLifecycle',)),),
         {'TF_NUTRITION_TEST_DATABASE_URL':'migrator', 'TF_NUTRITION_TEST_RUNTIME_URL':'runtime'}),
     ('names', 'names', (('./internal/nutrition', ('TestFoodNamesPostgresImmutabilityAndRuntimePermissions',)),),
         {'TF_FOOD_NAMES_TEST_DATABASE_URL':'migrator', 'TF_FOOD_NAMES_TEST_RUNTIME_URL':'runtime'}),
@@ -55,6 +55,20 @@ def test_events(raw, expected):
         raise RuntimeError('Expected SQL tests missing, failed or skipped; raw output withheld')
     return [{'test':name, 'result':action} for name,action in sorted(results.items())]
 
+
+
+def failure_locations(raw):
+    """Expose only source basename/line, never the assertion text or payload."""
+    locations = set()
+    for line in raw.splitlines():
+        try: event = json.loads(line)
+        except (ValueError, TypeError): continue
+        output = event.get('Output') if isinstance(event,dict) else None
+        if not isinstance(output,str): continue
+        for item in output.splitlines():
+            match = re.match(r'\s*([A-Za-z_][A-Za-z0-9_]*\.go):([1-9][0-9]{0,7}):',item)
+            if match: locations.add((match[1],int(match[2])))
+    return [{'file':file,'line':line} for file,line in sorted(locations)]
 
 
 def check_environment(env, *, root=ROOT, platform=sys.platform):
@@ -131,11 +145,15 @@ def main():
                 item['migrationRerunPassed'] = True
                 for statement in runtime_statements(training=True,meals=True): sql(statement,name)
                 for key,role in variables.items(): suite_env[key] = dsn(role)
+                if suite_id == 'nutrition': suite_env['TF_NUTRITION_CI_FIXTURE'] = '1'
                 for package, expected in commands:
                     pattern = '^('+'|'.join(expected)+')$'
                     result = subprocess.run([go,'test',package,'-run',pattern,'-count=1','-json','-timeout=90s'],
                         cwd=service,env=suite_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=120)
-                    if result.returncode: raise RuntimeError('SQL suite failed: '+suite_id+'; raw output withheld')
+                    if result.returncode:
+                        item['failureLocations'] = failure_locations(result.stdout)
+                        print(json.dumps({'suite':suite_id, 'status':'failed', 'failureLocations':item['failureLocations']}),flush=True)
+                        raise RuntimeError('SQL suite failed: '+suite_id+'; raw output withheld')
                     events = test_events(result.stdout,expected)
                     item['tests'].extend(events)
                     for event in events: print(json.dumps(dict(suite=suite_id,**event)), flush=True)

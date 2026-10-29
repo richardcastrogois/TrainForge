@@ -24,7 +24,23 @@ type nutritionFixtureVerifier struct{ subject string }
 func (v nutritionFixtureVerifier) Verify(context.Context, string) (auth.Identity, error) {
 	return auth.Identity{Issuer: "https://accounts.google.com", Subject: v.subject, Name: "Disposable nutrition fixture", Email: "fixture@example.invalid"}, nil
 }
+
+// This entry point preserves the previous check with an actual reviewed reference,
+// supplied only by the explicit local wrapper. It is not a real user intake.
 func TestNutritionPostgresLifecycle(t *testing.T) {
+	testNutritionPostgresLifecycle(t, false)
+}
+
+// CI uses a separate entry point and disposable synthetic reference. It never
+// reads the evaluation catalog or claims validation of a researched food.
+func TestNutritionPostgresFixtureLifecycle(t *testing.T) {
+	if os.Getenv("TF_NUTRITION_CI_FIXTURE") != "1" {
+		t.Skip("explicit disposable CI nutrition fixture not requested")
+	}
+	testNutritionPostgresLifecycle(t, true)
+}
+
+func testNutritionPostgresLifecycle(t *testing.T, synthetic bool) {
 	dsn := os.Getenv("TF_NUTRITION_TEST_DATABASE_URL")
 	if dsn == "" {
 		t.Skip("disposable nutrition fixture not requested")
@@ -179,33 +195,49 @@ func TestNutritionPostgresLifecycle(t *testing.T) {
 		t.Fatal("broad editorial insert privilege")
 	}
 
-	// One real reviewed reference is copied by the wrapper into this temporary DB.
-	realID, realSHA := os.Getenv("TF_NUTRITION_RESEARCHED_FOOD_ID"), os.Getenv("TF_NUTRITION_RESEARCHED_FOOD_SHA")
-	realFood, err := (FoodPostgres{Pool: pool}).Detail(ctx, realID, realSHA)
+	// Keep the real-reference path separate from the synthetic CI path. Both
+	// exercise the same ownership, calculation, withdrawal and privacy checks.
+	referenceID, referenceSHA := os.Getenv("TF_NUTRITION_RESEARCHED_FOOD_ID"), os.Getenv("TF_NUTRITION_RESEARCHED_FOOD_SHA")
+	if synthetic {
+		f := newFixture(t, "nutrition-ci-only")
+		f.food.Nutrients[0].Value = ptr("13.7")
+		f.food.Nutrients[0].Raw = json.RawMessage(`"13.7"`)
+		f.saveFood(t)
+		if _, err := Import(ctx, writer, f.load(t)); err != nil {
+			t.Fatal("synthetic nutrition reference import failed")
+		}
+		referenceID = f.food.ID
+		if writer.QueryRow(ctx, "SELECT version_sha FROM trainforge_v1.food_versions WHERE food_id=$1", referenceID).Scan(&referenceSHA) != nil {
+			t.Fatal("synthetic nutrition version missing")
+		}
+	} else if referenceID == "" || referenceSHA == "" {
+		t.Fatal("explicit reviewed reference required; use the fixture entry point for CI")
+	}
+	referenceFood, err := (FoodPostgres{Pool: pool}).Detail(ctx, referenceID, referenceSHA)
 	if err != nil {
-		t.Fatal("researched reference unavailable", err)
+		t.Fatal("reviewed reference unavailable", err)
 	}
-	realInput := exampleEntry()
-	realInput.FoodID = realID
-	realInput.FoodVersion = realSHA
-	realInput.Quantity = "37.5"
-	realInput.Unit = *realFood.Basis.Unit
-	realInput.OccurredAt = "2026-10-24T02:45:00Z"
-	realInput.QuantityEvidence = "measured"
-	code, b := request("POST", "/api/v1/me/food-entries", sa.AccessToken, newID(), realInput)
+	referenceInput := exampleEntry()
+	referenceInput.FoodID = referenceID
+	referenceInput.FoodVersion = referenceSHA
+	referenceInput.Quantity = "37.5"
+	referenceInput.Unit = *referenceFood.Basis.Unit
+	referenceInput.OccurredAt = "2026-10-24T02:45:00Z"
+	referenceInput.QuantityEvidence = "measured"
+	code, b := request("POST", "/api/v1/me/food-entries", sa.AccessToken, newID(), referenceInput)
 	if code != 201 {
-		t.Fatal("researched consumption fixture", code, string(b))
+		t.Fatal("reference consumption fixture", code, string(b))
 	}
-	var researched Entry
-	_ = json.Unmarshal(b, &researched)
+	var referenceEntry Entry
+	_ = json.Unmarshal(b, &referenceEntry)
 	checked := false
-	for i, n := range realFood.Nutrients {
+	for i, n := range referenceFood.Nutrients {
 		if n.Scaling && n.Value != nil && n.BasisQuantity != nil {
 			value, _ := new(big.Rat).SetString(*n.Value)
 			base, _ := new(big.Rat).SetString(*n.BasisQuantity)
 			expected := new(big.Rat).Quo(new(big.Rat).Mul(value, big.NewRat(75, 2)), base)
-			if researched.Calculation.Nutrients[i].Exact == nil || *researched.Calculation.Nutrients[i].Exact != expected.RatString() {
-				t.Fatal("researched portion mismatch")
+			if referenceEntry.Calculation.Nutrients[i].Exact == nil || *referenceEntry.Calculation.Nutrients[i].Exact != expected.RatString() {
+				t.Fatal("reference portion mismatch")
 			}
 			checked = true
 			break
@@ -232,7 +264,7 @@ func TestNutritionPostgresLifecycle(t *testing.T) {
 	var firstItems, secondItems []Entry
 	_ = json.Unmarshal(first.Items, &firstItems)
 	_ = json.Unmarshal(second.Items, &secondItems)
-	if len(firstItems) != 1 || len(secondItems) != 1 || firstItems[0].ID == secondItems[0].ID || firstItems[0].ID != researched.ID {
+	if len(firstItems) != 1 || len(secondItems) != 1 || firstItems[0].ID == secondItems[0].ID || firstItems[0].ID != referenceEntry.ID {
 		t.Fatal("chronological pagination")
 	}
 	if code, _ = request("GET", nextURL, sb.AccessToken, "", nil); code != 400 {
@@ -244,15 +276,15 @@ func TestNutritionPostgresLifecycle(t *testing.T) {
 	if code, b = request("GET", "/api/v1/me/foods?q=Private", sb.AccessToken, "", nil); code != 200 || !strings.Contains(string(b), `"items":[]`) {
 		t.Fatal("private search leaked")
 	}
-	if _, err = writer.Exec(ctx, "INSERT INTO trainforge_v1.food_withdrawals(food_id,version_sha,reason) VALUES($1,$2,'Disposable withdrawal fixture')", realID, realSHA); err != nil {
+	if _, err = writer.Exec(ctx, "INSERT INTO trainforge_v1.food_withdrawals(food_id,version_sha,reason) VALUES($1,$2,'Disposable withdrawal fixture')", referenceID, referenceSHA); err != nil {
 		t.Fatal(err)
 	}
-	realInput.Revision = 1
-	realInput.Quantity = "50"
-	if code, _ = request("PATCH", "/api/v1/me/food-entries/"+researched.ID, sa.AccessToken, newID(), realInput); code != 404 {
+	referenceInput.Revision = 1
+	referenceInput.Quantity = "50"
+	if code, _ = request("PATCH", "/api/v1/me/food-entries/"+referenceEntry.ID, sa.AccessToken, newID(), referenceInput); code != 404 {
 		t.Fatal("withdrawn food recalculated", code)
 	}
-	if code, _ = request("DELETE", "/api/v1/me/food-entries/"+researched.ID, sa.AccessToken, newID(), EntryInput{Revision: 1}); code != 200 {
+	if code, _ = request("DELETE", "/api/v1/me/food-entries/"+referenceEntry.ID, sa.AccessToken, newID(), EntryInput{Revision: 1}); code != 200 {
 		t.Fatal("withdrawn entry cannot be deleted", code)
 	}
 	svc := privacy.Service{Repository: privacy.Postgres{Pool: pool}}
