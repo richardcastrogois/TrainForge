@@ -22,7 +22,7 @@ def check_environment(env,root=ROOT,platform=sys.platform):
 
 
 def disposable_name(name):
-    if not re.fullmatch(r'(?:trainforge_catalog_test_|trainforge_v1_private_test_)[a-f0-9]{12}',name):
+    if not re.fullmatch(r'(?:trainforge_catalog_test_|trainforge_v1_private_test_|trainforge_v1_config_test_)[a-f0-9]{12}',name):
         raise RuntimeError('Unsafe M1 fixture target')
     return name
 
@@ -112,6 +112,8 @@ def main():
             raise RuntimeError('M1 SQL/process/contract test failed; raw output withheld')
         report['tests']=test_events(result.stdout,['TestIsolatedCatalogM1'])
         for event in report['tests']:print(json.dumps(event),flush=True)
+        from catalog_rollout_ci import prove_rollout
+        prove_rollout(sql=sql,run=run,go=go,env=env,dsn=dsn,credentials=credentials,created=created,roles=roles,report=report,service=service)
         report['status']='success'
     finally:
         for name in reversed(created):sql('DROP DATABASE '+disposable_name(name)+' WITH(FORCE);')

@@ -590,3 +590,5 @@ Validação remota do modoSDK39f4a82:40864664869/job123416273057 aprovado (ferra
 ## 29/10/2026 — M2–M4 solicitadas; primeiro incremento M2
 
 Autor autorizou implementação de todas asM, correção de gates, commit/push. Acrescentados protocolo de release/CAS/replay, migration editorial2, CLI de pacote, barreira de digest na047 e encaminhamento opt-in das5rotas semcredenciais. Go comum/vet e Swaggerpreservado passaram. Primeiro teste de timeout usou1ns incompatível comgranularidadeWindows; corrigido para servidor bloqueado e20ms. Uma literal deposicional no teste047 passou a nomearPool. SQLremoto eM3/M4aindapendentes; avaliação/privados/APKpreservados.
+
+M2publicação40873769667/0a4dd9c passou SQL/processo, replay/CAS/retirada, migration2/rerun0 e regressõesM1. Preparada extensãoM3 emcore completo descartável, dois titulares, espelho/hash, rollback/rede e restore antigo offline/catch-up. Compilação eguardspassaram;SQLM3aindaaguardaCI.

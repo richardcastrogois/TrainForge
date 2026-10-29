@@ -2,9 +2,9 @@ name: Catálogo M1 isolado
 on:
   push:
     branches: [main]
-    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
+    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/catalog_rollout_ci.py', 'tools/test_catalog_rollout_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
   pull_request:
-    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
+    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/catalog_rollout_ci.py', 'tools/test_catalog_rollout_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -42,6 +42,7 @@ jobs:
       - name: Executável, banco e contratos próprios em fixtures descartáveis
         env:
           TF_CATALOG_M1_CI: '1'
+          TF_CATALOG_PG_CONTAINER: ${{ job.services.postgres.id }}
           TF_CI_PG_PASSWORD: ci-only-ephemeral-postgres17
         run: python tools/catalog_m1_ci.py
       - name: Guardar somente metadados públicos da prova

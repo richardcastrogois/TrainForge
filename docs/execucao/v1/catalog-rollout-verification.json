@@ -14,13 +14,33 @@
     "localGoSuitePassed": true,
     "localGoVetPassed": true,
     "publicSwaggerUnchangedCheckPassed": true,
-    "remoteSqlPassed": false
+    "remoteSqlPassed": false,
+    "remotePublication": {
+      "verified": true,
+      "run": 40873769667,
+      "job": 123447236725,
+      "commit": "0a4dd9c357df842494e0c139d0c179c763d05f2a",
+      "status": "success",
+      "migrationsAppliedAndRerun": [
+        2,
+        0
+      ],
+      "publicationReplayWithdrawalPassed": true,
+      "originalFiveRoutesRegressionPassed": true,
+      "fixturesRemoved": true
+    }
   },
   "M3": {
-    "status": "not-complete",
+    "status": "implemented-pending-remote-proof",
     "remaining": [
       "Fresh full-core mirror comparison and private-data preservation",
       "Restore and stale mirror/network failure proof"
+    ],
+    "implemented": [
+      "Fresh full core schema13 and separate catalog schema2",
+      "Two fixture accounts, guarded047, private-table fingerprint comparison",
+      "Stale mirror rejected; rollback/catch-up, real bridge and network failure",
+      "Old backup offline, catch-up withdrawal gate and replay before promotion"
     ]
   },
   "M4": {
