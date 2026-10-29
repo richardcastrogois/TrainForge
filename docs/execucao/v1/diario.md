@@ -556,3 +556,7 @@ BuilderGo1.27.3 por digest oficial conferido;runtime scratch/65532 com binário/
 Imagem40819307701 falhou no preflight de versão: caminho Swagger incorreto, antes deDocker. Corrigido para ocontrato canônico; nenhuma imagem/smoke foi aprovada nessa rodada. Próximo job pendente.
 
 Imagem40819581479/c35fe20 construiu runtime65532, mas smoke falhou assumindo porta publicada emrede interna. Ajustado paraIPprivado da bridge e sempublicação de porta/proxy, mantendoisolamento. Novoensaio pendente. Levantamento estático também conferiu cobertura das30tabelas no plano depropriedade; sources compartilhada entre catálogos explicita acoplamento adicional.
+
+## 29/10/2026 — imagem aprovada e recibo conferido
+
+Run40819933235/83b799f,job123269780675,passou build/smoke do runtime scratch/65532:read-only,semcapabilities/elevação,rede interna semportapublicada,produçãoHTTP426,teste live200/ready503, SIGTERM e limpeza. Artefato12874570734 porcommit/versão/digest,metadata e logs conferidos. SemDocker local,registry ou deploy. Handoff consolidado com próximos gates;M1aguarda resposta e032/028seguem abertos.

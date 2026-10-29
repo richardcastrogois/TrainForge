@@ -44,3 +44,7 @@ Ensaio dirigido quando o código mudar:python tools/verificar_nomes_alimentares.
 Go não é garantia de escala: pool limitado, consultas/índices, autorização, timeouts e carga real serão validados por fatia. PostgreSQL17.5 local exige atualização de patch antes de exposição externa.
 
 Privacidade: [implementação e limites](../../docs/execucao/v1/privacidade-013.md). Manutenção manual: python tools/manter_privacidade_local.py (prévia; --apply aplica um lote). Restore separado: python tools/aplicar_exclusoes_restore.py --target-database trainforge_v1_privacy_restore_<12hex> (prévia; --apply sanitiza sem promover). Usar os comandos Python a partir da raiz. Credenciais administrativas continuam fora do runtime/Git.
+
+## Imagem para avaliação noCI
+
+Dockerfile multi-stage e contexto por allowlist geram runtime scratch com UID/GID65532, CA pública e tzdata embutido. [Run40819933235](https://github.com/richardcastrogois/TrainForge/actions/runs/40819933235) aprovou build/smoke somente no runner; [recibo](../../docs/execucao/v1/api-image-verification.json) contém commit, versão, imageID, SHA256 do arquivo e limites. Artefato retido sete dias, sem registry push ou deploy. Não executamos Docker no notebook nem copiamos dados de avaliação. TLS/banco/Google e entregaAPK têm gates próprios; a imagem não contém migrations ou credenciais.

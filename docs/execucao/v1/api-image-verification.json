@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "story": "V1-032",
-  "status": "internal-network-smoke-corrected-pending-remote-execution",
+  "status": "success-with-release-limits",
   "scope": "hosted-only-image-build-and-isolated-smoke",
   "builder": {
     "image": "golang:1.27.3-bookworm",
@@ -57,5 +57,38 @@
     "cause": "Smoke tried to inspect a host port mapping on the internal bridge. Changed to direct private bridge address with no host port publication and no HTTP proxy.",
     "smokeValidated": false
   },
-  "networkReference": "https://docs.docker.com/engine/network/port-publishing/"
+  "networkReference": "https://docs.docker.com/engine/network/port-publishing/",
+  "remote": {
+    "verified": true,
+    "run": 40819933235,
+    "job": 123269780675,
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40819933235",
+    "artifactId": 12874570734,
+    "artifactZipSha256": "ecfc8769e67e15ea6c7c5f2c3f84a0d14afd45881da32baeee5e86bd8e9c7bf9",
+    "artifactExpiresAt": "2026-11-05T04:51:02Z",
+    "logsVerified": true,
+    "result": {
+      "commit": "83b799fad19de72fc716f79f79329e62130c513c",
+      "apiVersion": "0.8.1",
+      "platform": "linux/amd64",
+      "status": "success",
+      "registryPush": false,
+      "deploy": false,
+      "businessDataAccessed": false,
+      "bitReproducibilityProven": false,
+      "phase": "complete",
+      "imageId": "sha256:4eefc13155d9f9b035e7b63bc2ddddc90aa642197aaa801d23d0cfb9b146b302",
+      "runtimeUser": "65532:65532",
+      "readOnlyNonRootSmokePassed": true,
+      "productionPlainHttpRejected": true,
+      "testLiveness200": true,
+      "missingDbReadiness503": true,
+      "gracefulShutdownPassed": true,
+      "internalNetworkOnly": true,
+      "publishedHostPorts": false,
+      "archive": "api-linux-amd64-83b799fad19de72fc716f79f79329e62130c513c.tar.gz",
+      "archiveSha256": "c680a910acad7b592be33f0b931385cebf4cf2280324f9e86ec09f6434151924",
+      "archiveBytes": 10534180
+    }
+  }
 }

@@ -3022,7 +3022,7 @@
             "Workflow CI",
             "Imagem da API e metadados de release"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes. 29/10: imagem não root e artefato verificados em40819933235/83b799f; ver api-image-verification.json. Não encerra032 ou028; semdeploy ou APKnovo.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/qualidade-ci.md",
@@ -3031,7 +3031,8 @@
             "29/10: runnerSQL ampliado para8suítes/12testes principais existentes, bases/ambientes separados e eventosGoJSON que recusam skip/falha/ausência.5testes de guard/parser passaram; primeira execução remota ampliada ainda pendente. Dump/restore e demais gates032não concluídos.",
             "29/10: primeira ampliação40817472948 passou5suítes, falhou emconsumos dependente de referência do wrapperlocal; demais nãoexecutaram. Entrada sintéticaCI separada preserva ensaio de referênciareal.6guard/diagnóstico eGo comum passaram;SQLcorrigido pendente.",
             "29/10: ampliaçãoSQL40817964419/3169bea aprovada;8suítes/12principais/21PASScomsubtestes,nenhumskip,base removida. ConsumosCIexplicitamente sintéticos;ensaio dereferênciareal preservado. Recibo ci-sql-verification.json;restante032pendente.",
-            "docs/execucao/v1/api-image-verification.json"
+            "docs/execucao/v1/api-image-verification.json",
+            "29/10: imagem40819933235/83b799f aprovada:runtime scratch/65532,read-only,rede interna semportapublicada,health/SIGTERM e artefato porcommit/versão/SHA256. Nenhumdeploy/Dockerlocal. Rebuildidêntico,auditoria,restoredump,Sonar/carga e028ainda pendentes."
           ]
         },
         {

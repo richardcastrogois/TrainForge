@@ -52,6 +52,10 @@ Go/docs e scannerGo também aprovaram3169bea; o gate de segredos continua penden
 
 O incremento HTTP0c0c531 passou Go/docs40818474388, SQL40818474391 (oito suítes, bases removidas) e scannerGo40818474380 emLinux/Windows (zero vulnerabilidades conhecidas alcançáveis detectadas). Jobs e logs conferidos; gate de histórico continua pendente.
 
-## Imagem da API emCI — preparada, execução pendente
+## Imagem não root da API aprovada —29/10
 
-Dockerfile multi-stage usa Go1.27.3 por digest oficial e runtime scratch, UID/GID65532, binário e CA pública; tzdata embutido. Contexto por allowlist inclui apenas módulo/cmdAPI/internal, sem testes, migrations, dados locais ou assinatura. O job só roda em GitHub-hosted Linux: build, limites/read-only/capabilities removidas, rede interna, produçãoHTTP426 e modo de teste live200/ready503 sem banco, SIGTERM e arquivo por commit/versão/SHA256. Dois testes de barreiras passaram; nenhum Docker local, push de registry ou deploy executado. Primeira execução remota pendente. Não comprova TLS público, login, fluxo de negócio ou rebuild idêntico. [Recibo](api-image-verification.json).
+[Run40819933235](https://github.com/richardcastrogois/TrainForge/actions/runs/40819933235)/83b799f, job123269780675, construiu e avaliou a imagem. BuilderGo1.27.3 por digest oficial; runtime scratch/65532 com binário, CA pública e tzdata embutido. Contexto do build por allowlist, sem dados/credenciais locais ou assinatura. Smoke confirmou filesystem somente leitura, capabilities removidas, sem elevação, rede interna sem porta publicada, produçãoHTTP426, modo de teste live200/ready503 sem banco, SIGTERM e limpeza. [Recibo](api-image-verification.json).
+
+Artefato12874570734, cerca de10MB, contém arquivo da imagem e metadata por commit/versão/digest, retidos sete dias. Identidade e logs conferidos; não houve registry push, Docker local ou deploy. O ensaio inicial falhou por caminho de versão e o segundo por pressupor mapeamento de porta em rede interna; corrigidos e preservados no recibo. O acesso do host à bridge segue a [documentaçãoDocker](https://docs.docker.com/engine/network/port-publishing/), sem abrir porta nohost.
+
+Não comprova TLS público, Google real, integração com banco, auditoria da imagem, multi-arquitetura, rebuild byte a byte ou capacidade de produção. LimitesCPU/RAM são do smoke, não recomendação de produção.032continua aberta, assim como028, dump/restore noCI, Sonar/carga e aceites finais.

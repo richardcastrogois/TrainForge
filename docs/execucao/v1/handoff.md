@@ -107,10 +107,17 @@ Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nen
 
 Sete campos em seis evidências atuais foram sanitizados, preservando localizador, documentos/hashes e observações históricas. [Comparação semântica](research-url-sanitization.json), [recibo](git-secret-verification.json). O histórico antigo permanece e o gate segue pendente. Não imprimir diff bruto das linhas antigas, reexecutar os tokens, contatar fornecedores, rotacionar credenciais ou reescrever o Git automaticamente. Nenhuma exceção ampla foi criada para tornar o pipeline verde.
 
-## Próxima conferência independente — imagem da API
+## Imagem não root aprovada emCI —29/10
 
-Dockerfile/.dockerignore e job de imagem preparados paraCI hospedado, semDocker local ou deploy. Runtime scratch/65532, contexto allowlist e smoke emrede interna/read-only; artefato porcommit/versão/digest por7dias. Dois testes deguard passaram; primeira execução remota ainda pendente. Conferir [recibo](api-image-verification.json) após opush; não afirmar imagem válida só porque oDockerfile existe.
+[Run40819933235](https://github.com/richardcastrogois/TrainForge/actions/runs/40819933235)/83b799f, job123269780675, passou build e smoke. Runtime scratch, UID/GID65532, filesystem somente leitura, capabilities removidas e sem elevação, rede interna sem portas publicadas. Produção recusouHTTP simples; modo de teste respondeu live200 e ready503 sem banco. SIGTERM e limpeza dos recursos passaram. [Recibo com imageID/SHA256](api-image-verification.json).
 
-Primeiro job da imagem40819307701/7103323 falhou antes deDocker, lendo versão num caminho inexistente. Corrigido para contracts/generated/swagger-v1.json; fase/classe de erro agora saem sem mensagem bruta. Build e smoke continuam sem validação até o próximo job.
+Imagem Linux/amd64 e metadata no artefato12874570734, retido até05/11. Não houve Docker local, registry push, deploy ou acesso aos dados de avaliação. Não comprova TLS público, login real, fluxo de negócio, auditoria da imagem, rebuild idêntico, carga ou releaseAPK. As duas primeiras falhas depreflight/rede e suas correções estão preservadas no recibo/diário; não repetir esses ensaios por hábito.
 
-Segundo job40819581479/c35fe20 construiu a imagem e confirmou UID/GID65532, mas falhou na inspeção do mapeamento de porta da rede interna. Smoke agora usaIPprivado da bridge, sem porta publicada nohost e semproxy; esse modo é documentado peloDocker. Novaexecução ainda pendente; não alegar smoke concluído.
+## Próxima retomada: pendências preservadas
+
+1. Aguardar a resposta da pergunta já enviada sobre a prova isoladaM1. O plano tem os donos candidatos das30tabelas e os acoplamentosSQL: sources também atende alimentos, treinos têmFKs editoriais e idempotência precisa de dono por comando. Não executar cutover ou mexer nos dados reais por inferência.
+2. Trabalho independente possível: dump/restore e gate de exclusões noCI, auditoria028 restante, métricas/pool/retention029 e próximos critérios032. Não declarar032 encerrada pela imagem; seu gate028 e demais critérios continuam abertos.
+3. Histórico de segredos ainda pendente, sem supressão ampla ou reescrita autorizada. Não reexecutar tokens externos para tentar validá-los.
+4. Treinos015/016 e prática continuam sem programas/instruções/doses/mídias aprovados.045 tem aceite humano/foto pendentes;042/046/026 e demais jornadas seguem o backlog. Não preencher lacunas com fixtures no produto.
+
+Commits/push autorizados. API/DB/APK de avaliação preservados; conferir estado somente quando necessário. Sem nova pesquisa ampla de fornecedores, compra, hospedagem ou deploy.
