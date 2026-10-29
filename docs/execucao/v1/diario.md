@@ -516,3 +516,9 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 
 - Run40813092631/9124a85 aprovado. Logs confirmaram TestPostgresRuntimeReadiness e seus quatro negativos, restauração, refeições/privacidade e remoção da base. Go/docs40813092549 também aprovado. API/banco de avaliação não foram iniciados ou alterados.
 -028doing:govulncheckoficialv1.9.0 fixado emCI, alvoLinux/Windows, inventário/relatórios porcommit. Versão/hash conferidos no proxyGo; nada instalado localmente. Primeira execução pendente; auditoria integral continua aberta.
+
+
+## 29/10/2026 — auditoria Go executada e análise de segredos
+
+- Govulncheckv1.9.0 em40813941007/8331426 passou Linux/Windows com0vulnerabilidades conhecidas alcançáveis detectadas. Checksum do módulo/logs conferidos. Não cobre Flutter/Android, autorização, falhas desconhecidas ou todos os alvos.
+- Gitleaks8.30.1 por digest oficial preparado para históricoGit, com teste sintético de redaction e artefato só de metadados. Nenhum valor bruto será publicado, rotacionado ou apagado; primeira execução pendente.028doing; APK25 e dados locais preservados.

@@ -102,4 +102,9 @@ Fonte Go0.8.1/34operações; runtime local permaneceu parado. /health/ready pass
 
 ## Auditoria028 em andamento
 
-ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no notebook. Primeira execução ainda pendente. Conferir resultado/achados antes de qualquer afirmação de vulnerabilidades. Não significa auditoria Flutter/Android, segredos, master ou offline concluídos. [Recibo](go-vulnerability-verification.json).
+ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no notebook. Run40813941007/8331426 aprovado nos dois alvos, logs conferidos:0vulnerabilidades conhecidas alcançáveis detectadas. Escopo e data no recibo; não é ausência de falhas. Não significa auditoria Flutter/Android, segredos, master ou offline concluídos. [Recibo](go-vulnerability-verification.json).
+
+
+## Segredos Git028 — primeira execução pendente
+
+Gitleaks8.30.1 por digest oficial em runner, sem instalação local. Histórico completo; stdout bruto capturado, nunca ecoado. Fixture de token sintético precisa provar redaction; artefato só permite regra/arquivo/linha/commit, semvalores/match/autor/e-mail/mensagem. Não adicionar exceções amplas, rotacionar ou regravar história automaticamente. Classificar os candidatos reais após o primeiro job. [Recibo](git-secret-verification.json).
