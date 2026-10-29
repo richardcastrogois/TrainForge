@@ -1202,7 +1202,7 @@ Medir e verificar o caminho real antes da distribuição, com dados sensíveis p
 
 ### V1-028 — Auditar dependências, segredos e superfície de ataque
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como mantenedor, quero um release com riscos conhecidos em vez de um gráfico de auditoria inventado.
 
@@ -1231,7 +1231,7 @@ Validação: Relatórios reais de scanners e testes de autorização; Revisão d
 
 Entregas: Relatório de segurança versionado sem segredos; Riscos residuais e correções
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: scanner oficial govulncheckv1.9.0 fixado emCI, análise de chamadas Linux/Windows com inventário/artefatos e sem dados privados. Primeira execução pendente; não supor ausência de vulnerabilidades. Flutter/Android, segredos, offline/master e auditoria integral ainda faltam.
 
 ### V1-029 — Instrumentar requisições, consultas e falhas
 
@@ -1262,7 +1262,7 @@ Validação: Provocar erro controlado em staging e seguir correlação; Conferir
 
 Entregas: Runbook e painel de métricas reais; Evidência de uma jornada rastreada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão ainda pendente. Não entrega métricas/traces/alertas/retention nem encerra029.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029.
 
 ### V1-030 — Medir consultas e carga representativa
 

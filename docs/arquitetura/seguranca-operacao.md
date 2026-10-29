@@ -2,7 +2,7 @@
 
 ## Vigente29/10 — prontidão e CI
 
-CI Flutter aprovado e CI SQL de migrations/refeições/privacidade executado em689f64b. Fonte0.8.1 fortalece readiness: objetos e privilégios do runtime são conferidos por uma consulta de metadados, com503genérico emfalha. Teste SQL próprio ainda pendente; não é auditoria completa deDDL, dependências, Sonar, carga ou todos os módulos. Sem nova migration ou alteração nos dados reais. [Recibo](../execucao/v1/ci-sql-verification.json). A execução entre serviços está em [reavaliação](reavaliacao-microservicos-2026-10-29.md); revogação/exclusão exigem contrato específico antes da extração.
+CI Flutter aprovado e CI SQL de migrations/refeições/privacidade executado em689f64b. Fonte0.8.1 fortalece readiness: objetos e privilégios do runtime são conferidos por uma consulta de metadados, com503genérico emfalha. Teste SQL próprio aprovado em40813092631/9124a85; não é auditoria completa deDDL, dependências, Sonar, carga ou todos os módulos. Sem nova migration ou alteração nos dados reais. [Recibo](../execucao/v1/ci-sql-verification.json). A execução entre serviços está em [reavaliação](reavaliacao-microservicos-2026-10-29.md); revogação/exclusão exigem contrato específico antes da extração.
 
 
 Plano, não certificado de auditoria. Os números da imagem de referência de auditoria não são achados do TrainForge. A prioridade dos [achados locais](achados.json) é revisão estática; não houve scanner de dependências, pentest ou benchmark de produção nesta etapa.

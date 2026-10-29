@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c56105b32eb78ae0`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c3a314ae57f341ef`.
 
 **19/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-015**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -281,7 +281,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-028 | todo | Auditar dependências, segredos e superfície de ataque | V1-013, V1-021 |
+| V1-028 | doing | Auditar dependências, segredos e superfície de ataque | V1-013, V1-021 |
 | V1-029 | todo | Instrumentar requisições, consultas e falhas | V1-007, V1-018 |
 | V1-030 | todo | Medir consultas e carga representativa | V1-014, V1-018, V1-020, V1-029 |
 ### EP09 — Infraestrutura, CI e implantação

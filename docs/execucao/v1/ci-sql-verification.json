@@ -36,7 +36,7 @@
   ],
   "runtimeReadiness": {
     "apiVersion": "0.8.1",
-    "status": "pending-first-hosted-sql-test",
+    "status": "success",
     "ordinaryGoSuitePassed": true,
     "goVetPassed": true,
     "swaggerGeneratedFromSource": true,
@@ -50,6 +50,16 @@
       "missing execute grant",
       "canceled context",
       "generic HTTP503 without schema details"
-    ]
+    ],
+    "realSqlPassed": true,
+    "commit": "9124a85a517fff996c579be59a3d510bf33682c4",
+    "run": 40813092631,
+    "job": 123247768258,
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40813092631",
+    "logsVerified": true,
+    "negativeCasesPassed": 4,
+    "normalRuntimeRecoveredAfterEachCase": true,
+    "mealAndPrivacyRegressionPassed": true,
+    "disposableDatabaseRemoved": true
   }
 }

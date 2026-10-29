@@ -1,0 +1,64 @@
+name: Vulnerabilidades Go
+
+on:
+  push:
+    branches: [main]
+    paths: ['services/api/**', '.github/workflows/security-go.yml']
+  pull_request:
+    paths: ['services/api/**', '.github/workflows/security-go.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: go-vulnerabilities-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  govulncheck:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [linux, windows]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+        with:
+          go-version-file: services/api/go.mod
+          cache-dependency-path: services/api/go.sum
+      - name: Preparar scanner oficial fixado
+        env:
+          GOTOOLCHAIN: local
+        run: |
+          set -euo pipefail
+          export GOBIN="$RUNNER_TEMP/trainforge-security-tools"
+          mkdir -p "$GOBIN" "$RUNNER_TEMP/go-security-report"
+          go install golang.org/x/vuln/cmd/govulncheck@v1.9.0
+          go version -m "$GOBIN/govulncheck" > "$RUNNER_TEMP/go-security-report/scanner-build.txt"
+          grep -E '^[[:space:]]*mod[[:space:]]+golang.org/x/vuln[[:space:]]+v1\.9\.0([[:space:]]|$)' "$RUNNER_TEMP/go-security-report/scanner-build.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$RUNNER_TEMP/go-security-report/commit.txt"
+          go version > "$RUNNER_TEMP/go-security-report/go-version.txt"
+      - name: Inventariar módulos e analisar chamadas vulneráveis conhecidas
+        working-directory: services/api
+        env:
+          GOTOOLCHAIN: local
+          GOFLAGS: -mod=readonly
+          GOOS: ${{ matrix.target }}
+        run: |
+          set -euo pipefail
+          printf '%s\n' "$GOOS" > "$RUNNER_TEMP/go-security-report/analysis-target.txt"
+          go list -m -json all > "$RUNNER_TEMP/go-security-report/modules.jsonl"
+          "$RUNNER_TEMP/trainforge-security-tools/govulncheck" ./... 2>&1 | tee "$RUNNER_TEMP/go-security-report/govulncheck.txt"
+      - name: Preservar evidência mesmo se houver achado
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: go-security-${{ github.sha }}-${{ matrix.target }}
+          path: ${{ runner.temp }}/go-security-report/
+          retention-days: 7
+          if-no-files-found: error

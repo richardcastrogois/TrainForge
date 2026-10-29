@@ -2714,7 +2714,7 @@
           "id": "V1-028",
           "title": "Auditar dependências, segredos e superfície de ataque",
           "userStory": "Como mantenedor, quero um release com riscos conhecidos em vez de um gráfico de auditoria inventado.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -2766,11 +2766,13 @@
             "Relatório de segurança versionado sem segredos",
             "Riscos residuais e correções"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: scanner oficial govulncheckv1.9.0 fixado emCI, análise de chamadas Linux/Windows com inventário/artefatos e sem dados privados. Primeira execução pendente; não supor ausência de vulnerabilidades. Flutter/Android, segredos, offline/master e auditoria integral ainda faltam.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
-            "docs/execucao/v1/auditoria-produto-verificacao.json"
+            "docs/execucao/v1/auditoria-produto-verificacao.json",
+            "docs/execucao/v1/go-vulnerability-verification.json",
+            "docs/execucao/v1/qualidade-ci.md"
           ]
         },
         {
@@ -2827,7 +2829,7 @@
             "Runbook e painel de métricas reais",
             "Evidência de uma jornada rastreada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão ainda pendente. Não entrega métricas/traces/alertas/retention nem encerra029.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
@@ -3660,5 +3662,5 @@
       ]
     }
   ],
-  "currentPriority": "29/10: trabalho retomado.015/016 sem conteúdo humano aprovado para prática;045 com aceite real/correção/exclusão/foto pendentes. Autor pediu reavaliar microserviços Go antes da decisão; não executar decomposição ampla por inferência. CI SQL migrations/refeições/privacidade aprovado em689f64b; fonte0.8.1 com prontidão aguardando ensaio SQL próprio. Avançar trabalho independente com critérios explícitos, preservando APK25 e dados."
+  "currentPriority": "29/10: trabalho retomado.015/016 sem conteúdo humano aprovado para prática;045 com aceite real/correção/exclusão/foto pendentes. Autor pediu reavaliar microserviços Go antes da decisão; não executar decomposição ampla por inferência. CI SQL migrations/refeições/privacidade aprovado em689f64b; prontidão0.8.1 aprovada por SQL em9124a85.028doing com scanner Go em preparação. Avançar trabalho independente com critérios explícitos, preservando APK25 e dados."
 }

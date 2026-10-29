@@ -510,3 +510,9 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Logs do run40811811519 em689f64b:13migrations,rerun0,3PASS de refeições e1PASS de privacidade, base removida. Go/docs40811811485 também aprovado. Sem banco de avaliação, Google, registro alimentar real ou compra.
 - Novo adaptador de prontidão confere objetos/grants/funções e rejeita credencial de migração ou privilégio excessivo. Consulta só metadados;503não revela detalhes. Go suite/vet passaram; Swagger0.8.1 gerado porfonte. SQL de prontidão ainda pendente e vai aoCI, sem alteração de schema real ou novoAPK.
 - Imports Go de produção extraídos para a comparação arquitetural; acoplamento SQL/privacidade explicitado. Decisão de microserviços continua em discussão.
+
+
+## 29/10/2026 — readiness SQL aprovado e scanner Go
+
+- Run40813092631/9124a85 aprovado. Logs confirmaram TestPostgresRuntimeReadiness e seus quatro negativos, restauração, refeições/privacidade e remoção da base. Go/docs40813092549 também aprovado. API/banco de avaliação não foram iniciados ou alterados.
+-028doing:govulncheckoficialv1.9.0 fixado emCI, alvoLinux/Windows, inventário/relatórios porcommit. Versão/hash conferidos no proxyGo; nada instalado localmente. Primeira execução pendente; auditoria integral continua aberta.

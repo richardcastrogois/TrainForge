@@ -92,9 +92,14 @@ A [explicação da arquitetura atual](../../arquitetura/camadas-go.md) registra 
 
 ## Incremento independente29/10 — CI SQL
 
-Runner dedicado somente a GitHub-hosted Linux com PostgreSQL novo, sem modo local. Recusa configuração de conexão preexistente, credenciais/estado .local e nomes de base fora do prefixo descartável. Usa os mesmos grants extraídos do helper local; equivalência byte a byte nas4combinações de módulos conferida sem SQL.3testes de barreiras passaram e execução no notebook foi recusada antes de conectar. Primeira execução SQL remota40811811519 aprovada para689f64b:13migrations,rerun0,3testesSQL/HTTP de refeições e1de privacidade; base removida. Fonte0.8.1 agora tem prontidão de objetos/permissões, ainda pendente de ensaio SQL próprio. [Recibo](ci-sql-verification.json).
+Runner dedicado somente a GitHub-hosted Linux com PostgreSQL novo, sem modo local. Recusa configuração de conexão preexistente, credenciais/estado .local e nomes de base fora do prefixo descartável. Usa os mesmos grants extraídos do helper local; equivalência byte a byte nas4combinações de módulos conferida sem SQL.3testes de barreiras passaram e execução no notebook foi recusada antes de conectar. Primeira execução SQL remota40811811519 aprovada para689f64b:13migrations,rerun0,3testesSQL/HTTP de refeições e1de privacidade; base removida. Fonte0.8.1 agora tem prontidão de objetos/permissões, validada porSQL em40813092631/9124a85, com quatro negativos e recuperação. [Recibo](ci-sql-verification.json).
 
 
 ## Prontidão operacional0.8.1 —29/10
 
-Fonte Go0.8.1/34operações; runtime local permaneceu parado. /health/ready passa pelo adaptador PostgreSQL com leitura de catálogos/permissões: objetos/funções essenciais presentes, SELECT/EXECUTE e DML conforme o runtime, nenhum privilégio elevado, ledger com acesso restrito. Falha503 é genérica. Main só injeta o adaptador. Sem migration ou mudança Flutter/APK25. Go test ./... e vet passaram, Swagger regenerado. SQL novo será executado peloCI; não contá-lo a partir do skip da suíte comum. Os testes alteram somente o schema descartável para revogar/repor grant, conceder/remover escrita indevida e renomear/repor objeto.
+Fonte Go0.8.1/34operações; runtime local permaneceu parado. /health/ready passa pelo adaptador PostgreSQL com leitura de catálogos/permissões: objetos/funções essenciais presentes, SELECT/EXECUTE e DML conforme o runtime, nenhum privilégio elevado, ledger com acesso restrito. Falha503 é genérica. Main só injeta o adaptador. Sem migration ou mudança Flutter/APK25. Go test ./... e vet passaram, Swagger regenerado. SQL de prontidão executado noCI40813092631/9124a85, sem skips:quatro negativos e recuperação; refeições/privacidade e limpeza também passaram. Os testes alteram somente o schema descartável para revogar/repor grant, conceder/remover escrita indevida e renomear/repor objeto.
+
+
+## Auditoria028 em andamento
+
+ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no notebook. Primeira execução ainda pendente. Conferir resultado/achados antes de qualquer afirmação de vulnerabilidades. Não significa auditoria Flutter/Android, segredos, master ou offline concluídos. [Recibo](go-vulnerability-verification.json).
