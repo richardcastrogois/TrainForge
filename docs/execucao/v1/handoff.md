@@ -116,7 +116,7 @@ Imagem Linux/amd64 e metadata no artefato12874570734, retido até05/11. Não hou
 ## Próxima retomada: pendências preservadas
 
 1. M1 foi autorizada e concluída isoladamente em29/10; não repetir sua prova sem mudança pertinente. M2–M4 seguem propostos, sem cutover autorizado. O plano tem os donos candidatos das30tabelas e os acoplamentosSQL: sources também atende alimentos, treinos têmFKs editoriais e idempotência precisa de dono por comando. Não executar cutover ou mexer nos dados reais por inferência.
-2. Trabalho independente possível: dump/restore e gate de exclusões noCI, auditoria028 restante, métricas/pool/retention029 e próximos critérios032. Não declarar032 encerrada pela imagem; seu gate028 e demais critérios continuam abertos.
+2. Trabalho independente possível: auditoria028 restante, métricas/pool/retention029 e próximos critérios032. Dump/restore/gate deexclusões e ampliaçãoSQL já aprovados abaixo; não repetir semmudança pertinente. Não declarar032 encerrada pela imagem; seu gate028 e demais critérios continuam abertos.
 3. Histórico de segredos ainda pendente, sem supressão ampla ou reescrita autorizada. Não reexecutar tokens externos para tentar validá-los.
 4. Treinos015/016 e prática continuam sem programas/instruções/doses/mídias aprovados.045 tem aceite humano/foto pendentes;042/046/026 e demais jornadas seguem o backlog. Não preencher lacunas com fixtures no produto.
 
@@ -128,10 +128,12 @@ Commits/push autorizados. API/DB/APK de avaliação preservados; conferir estado
 
 SwaggerM1 code-first tem cinco rotas e duas health, conferido contraAPI0.8.1/34operações. cmdapi, Flutter, Swaggerprincipal e migrations1–13 não mudaram. Nenhum recurso local foi iniciado. Mesmo commit passou Go/docs40860200725, SQLprincipal40860200692, imagem40860200696 e scannerGo40860200586; histórico de segredos continua pendente.
 
-M1 é projeção transitória de leitura, não transferência editorial ou migração do produto. Próximo passo arquitetural é especificarM2 (autoridade/fontes/publicação/retirada/frescor/consumidor047) antes de implementar troca de dono. Trabalho independente de032 pode continuar com dump/restore/gate deexclusão emCI. Nunca reutilizar as credenciais daavaliação ou criar fixtures no banco entregue.
+M1 é projeção transitória de leitura, não transferência editorial ou migração do produto. Próximo passo arquitetural é especificarM2 (autoridade/fontes/publicação/retirada/frescor/consumidor047) antes de implementar troca de dono. Trabalho independente de032 inclui outros gates; dump/restore/gate deexclusão já passou abaixo. Nunca reutilizar as credenciais daavaliação ou criar fixtures no banco entregue.
 
-## RestoreCI aprovado e extensão SQL pendente
+## RestoreCI e extensão SQL aprovados
 
 Backup/restore40862745311/46fb1e2, job123409801747, aprovado: snapshot lógico das30tabelas correspondeu ao backup, conta excluída ausente após gateCLI, refeições/alimentos/configuração removidos, outro titular/editorial/fonte preservados, replay idempotente. Alvo semCONNECT runtime; bancos/roles removidos. Dump só emmemória, nunca emartefato. [Recibo](restore-ci-verification.json). Não é restore do checkpoint de avaliação; não repetir localmente.
 
-SeleçãoSQL ganhou dois testes deprivacidade já existentes: TestPrivacyDeleteRefreshConcurrencyRevokesWinner e TestPrivacyMaintenancePreservesActiveReplayDetection. São8suítes/14principais, extensão remota ainda pendente, semmudança deGo/schema/grants. Conferir ci-sql-verification.json após push; não transferir o resultado anterior de12testes para osdois adicionais. API/APK/dados locais preservados. M1continua concluída;M2–M4semcutover autorizado;028/029/032e restantes mantêm gates próprios.
+SeleçãoSQL ganhou dois testes deprivacidade já existentes: TestPrivacyDeleteRefreshConcurrencyRevokesWinner e TestPrivacyMaintenancePreservesActiveReplayDetection. Run40863556767/d56cabf, job123412525297, passou8suítes/14principais/23PASSincluindo subtestes, semskip; logs individuais, schema13 e remoção dasbases conferidos. [Recibo](ci-sql-verification.json), artefato12892033753. Semmudança deGo/schema/grants. API/APK/dados locais preservados. M1continua concluída;M2–M4semcutover autorizado;028/029/032e restantes mantêm gates próprios.
+
+Compilação/Swagger local: usar environment(include_api_env=False). O helper anterior/default também carrega api.env; isso ocorreu noschecks iniciais, semconectar SQL real ou publicarvalores. Novo modoSDK não lê arquivo e removeTF_/PG herdados; watcher default compatível. ReciboM1 corrigido para preservar essa distinção.

@@ -576,3 +576,11 @@ RestoreCI dedicado preparado comfixturesGo jáexistentes, clientes do próprioPo
 ## 29/10/2026 — restoreCI aprovado; duas suítes deprivacidade adicionadas à seleção
 
 Run40862745311/46fb1e2 aprovou dump/restore sintético,30tabelas comparadas, gateCLI/replay, preservação deoutro titular/editorial/fonte, alvooffline e remoção dasfixtures. Metadados/logs conferidos;dump nunca publicado ou salvo emarquivo. SeleçãoSQL ganhou dois testes existentes deconcorrência/manutenção, aguardando execução remota;8suítes/14principais, semalterarGo ougrants.
+
+## 29/10/2026 — separar SDK de ambiente daAPI
+
+Revisão identificou que o helperenvironment() decompilação também lia api.env, mesmo semuso deSQL. Nenhumvalor foi impresso/enviado e testeslocais não habilitaram SQL ou processoM1. Adicionado environment(include_api_env=False), que não lê essearquivo e removeTF_/PG herdados. Default do watcher preservado; dois testes debarreira/precedência adicionados. ReciboM1 corrigido, semalegar que a leitura inicial não ocorreu.
+
+## 29/10/2026 — extensão SQL aprovada e SDK isolado validado
+
+Run40863556767/d56cabf,job123412525297,aprovou8suítes/14principais/23PASSincluindo subtestes,sem skip; concorrência exclusão/refresh e manutenção/reuso passaram individualmente. Schema13 e limpeza conferidos;artefato12892033753. M1e restore do mesmo commit também passaram.103testesPython passaram incluindo modoSDKsemleitura deapi.env. Recibos/backlog/handoff atualizados;históricoGit,028/029/032 eM2–M4permanecem comseusgates,semcutover ouavaliaçãoalterada.

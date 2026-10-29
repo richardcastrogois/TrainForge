@@ -16,8 +16,8 @@ A primeira execução remota foi conferida: [Flutter40690557153](https://github.
 
 ## O que ainda falta
 
-- Ampliar CI SQL às demais suítes e dump/restore; migrations/refeições/privacidade já executaram em serviço descartável.
-- Imagem sem root, artefatos identificados por commit/digest e distribuição segura; assinatura e deploy continuam fora de PRs sem confiança.
+- Cobrir caminhos SQL ainda não ensaiados e completar os demais gates. Oito suítes/14testes principais e dump/restore com exclusões já passaram em serviço descartável; recibos abaixo.
+- Completar artefatos/validação do APK e distribuição segura; a imagemAPI semroot identificada porcommit/digest já passou. Assinatura e deploy continuam fora dePRs semconfiança.
 - Auditoria028 completa, Sonar/quality gate, observabilidade029 e baseline de carga030. Nenhuma conclusão sobre milhões de usuários é sustentada por esta automação.
 - Aceite humano/nativo das jornadas, offline026, foto042 e release continuam com seus critérios. Não concluir032 por automatizar apenas Go/documentação/Flutter.
 
@@ -58,7 +58,7 @@ O incremento HTTP0c0c531 passou Go/docs40818474388, SQL40818474391 (oito suítes
 
 Artefato12874570734, cerca de10MB, contém arquivo da imagem e metadata por commit/versão/digest, retidos sete dias. Identidade e logs conferidos; não houve registry push, Docker local ou deploy. O ensaio inicial falhou por caminho de versão e o segundo por pressupor mapeamento de porta em rede interna; corrigidos e preservados no recibo. O acesso do host à bridge segue a [documentaçãoDocker](https://docs.docker.com/engine/network/port-publishing/), sem abrir porta nohost.
 
-Não comprova TLS público, Google real, integração com banco, auditoria da imagem, multi-arquitetura, rebuild byte a byte ou capacidade de produção. LimitesCPU/RAM são do smoke, não recomendação de produção.032continua aberta, assim como028, dump/restore noCI, Sonar/carga e aceites finais.
+Não comprova TLS público, Google real, integração com banco, auditoria da imagem, multi-arquitetura, rebuild byte a byte ou capacidade de produção. LimitesCPU/RAM são do smoke, não recomendação de produção.032continua aberta, assim como028, Sonar/carga e aceites finais. O dump/restore emCI foi aprovado posteriormente, no recorte descrito abaixo.
 
 ## Prova isolada de catálogoM1 aprovada
 
@@ -68,4 +68,4 @@ Não comprova TLS público, Google real, integração com banco, auditoria da im
 
 [Run40862745311](https://github.com/richardcastrogois/TrainForge/actions/runs/40862745311)/46fb1e2, job123409801747, passou com clientesPostgreSQL da própria imagem fixada e dump só emmemória. As30tabelas restauradas corresponderam ao estado anterior ao backup. O gateCLI removeu conta já excluída, configuração, alimentos/consumos e refeições; preservou outro titular, metadados públicos e fonte lógica após exclusão. Segunda aplicação idempotente. Runtime semCONNECT ao alvo; bancos/papéis removidos, nenhum dump emartefato. [Recibo](restore-ci-verification.json). Não restaura nem certifica o checkpoint real de avaliação ou backup de produção.
 
-Dois testes SQL deprivacidade já existentes foram acrescentados à seleção do jobSQL: concorrência refresh/exclusão e manutenção de sessões expiradas sem quebrar revogação porreuso. Oito suítes mantidas, agora14testes principais esperados; essa extensão ainda aguarda execução remota. Permissões/schema não mudaram.032/028continuam abertas.
+Dois testes SQL deprivacidade já existentes foram acrescentados à seleção do jobSQL: concorrência refresh/exclusão e manutenção de sessões expiradas sem quebrar revogação porreuso. [Run40863556767](https://github.com/richardcastrogois/TrainForge/actions/runs/40863556767)/d56cabf, job123412525297, aprovou8suítes/14testes principais/23PASS incluindo subtestes, semskip, schema13 e bases removidas. Os dois testes novos passaram individualmente noslogs. Artefato12892033753 conferido; [recibo](ci-sql-verification.json). Permissões/schema não mudaram.032/028continuam abertas.

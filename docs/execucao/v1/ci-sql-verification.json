@@ -31,8 +31,8 @@
   },
   "limits": [
     "No real Google or human meal acceptance.",
-    "Expanded hosted SQL suites passed, with an explicit synthetic nutrition reference. The original local researched-reference scenario was preserved and not rerun in CI. Dump/restore, load and SQL paths not covered by these tests remain pending.",
-    "Audit028, image/delivery artifacts, Sonar and release remain pending."
+    "Expanded hosted SQL suites passed, with an explicit synthetic nutrition reference. The original local researched-reference scenario was preserved and not rerun in CI. Disposable dump/restore has its own verified receipt; load and untested SQL paths remain pending.",
+    "Audit028, APK/delivery completion, Sonar and release remain pending. API image proof has its own verified receipt."
   ],
   "runtimeReadiness": {
     "apiVersion": "0.8.1",
@@ -186,7 +186,7 @@
     }
   },
   "privacyLifecycleExtension": {
-    "status": "implemented-pending-remote-execution",
+    "status": "success",
     "additionalExistingTests": [
       "TestPrivacyDeleteRefreshConcurrencyRevokesWinner",
       "TestPrivacyMaintenancePreservesActiveReplayDetection"
@@ -194,6 +194,23 @@
     "suiteCountUnchanged": 8,
     "expectedTopLevelTestCount": 14,
     "schemaOrPermissionsChanged": false,
-    "localSqlExecuted": false
+    "localSqlExecuted": false,
+    "remote": {
+      "verified": true,
+      "commit": "d56cabf4a0f8a713fbe080e1de811030ddd000a1",
+      "run": 40863556767,
+      "job": 123412525297,
+      "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40863556767",
+      "safeArtifactId": 12892033753,
+      "safeArtifactSha256": "f6477868f548319011cf5145e7c812595d0879352b762f66467efd69a495aafa",
+      "logsVerified": true,
+      "suitesPassed": 8,
+      "topLevelTestsPassed": 14,
+      "terminalPassEventsIncludingSubtests": 23,
+      "skipsAccepted": false,
+      "schemaVersionPerDatabase": 13,
+      "disposableDatabasesRemoved": true,
+      "realGoogleOrHumanAcceptance": false
+    }
   }
 }

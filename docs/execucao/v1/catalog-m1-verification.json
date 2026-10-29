@@ -32,10 +32,14 @@
     "m1SwaggerGeneratedFromGo": true,
     "mainApiSwaggerUnchangedCheckPassed": true,
     "sqlExecuted": false,
-    "serverOrDatabaseStarted": false,
     "ordinaryGoSuitePassed": true,
     "goVetPassed": true,
-    "pythonToolTestsPassed": 99
+    "pythonToolTestsPassed": 99,
+    "evaluationApiOrDatabaseStarted": false,
+    "initialSdkHelperAlsoLoadedIgnoredApiEnv": true,
+    "connectionSettingsUsedForLocalSql": false,
+    "sdkOnlyModeAddedAfterReview": true,
+    "sdkOnlyReviewToolTestsPassed": 103
   },
   "remote": {
     "verified": true,
@@ -102,7 +106,7 @@
   },
   "limits": [
     "This is a transitional read projection, not complete editorial ownership or production microservices migration.",
-    "No live catalog copied, private data read, evaluation credentials read, APK updated or API routes redirected.",
+    "No live catalog copied, private data read, APK updated or API routes redirected.",
     "Shared module/packages are intentional; M2-M4 require publication/withdrawal/freshness, cross-domain references and migration/restore/cutover proof.",
     "No practice, real Google login, human acceptance or scale/load validation claimed.",
     "Existing secret history gate and stories028/029/032 remain open."
@@ -161,5 +165,6 @@
     "goVulnerabilityRun": 40860200586,
     "allConclusions": "success",
     "gitHistorySecretsGate": "still-unresolved-existing-findings"
-  }
+  },
+  "localEnvironmentReview": "Initial local Go/Swagger checks used the existing SDK helper, which also loaded the ignored API env into process memory. No local SQL/standalone process was enabled and no values were logged or uploaded. A tested SDK-only option now avoids reading that file and strips inherited TF_/PG settings; API watcher default preserved."
 }
