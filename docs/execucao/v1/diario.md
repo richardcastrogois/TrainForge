@@ -614,3 +614,15 @@ Commit6d62673 enviado porpushnormal junto do fechamentoM4/49b588c. CI de segredo
 Autor respondeu duas vezes “Autorizar a limpeza do histórico da main”. A autorização cobre somente a proposta revisada: seis arquivos de pesquisa, árvore atual preservada, backup e force-with-lease; não outras branches ou contato externo. A primeira tentativa de continuar o ajuste do helper foi bloqueada por limite de uso da revisão automática, sem execução. Após a liberação, o trabalho foi retomado pelo caminho normal de aprovação.
 
 Revisão do helper: reader.env contém somente a conexão de leitura; o daemon não lê arquivos de migração/escrita. Ambiente herdado limitado às variáveis de sistema necessárias. Compilação dos operadores usa ambiente SDK sem credenciais; a execução recebe apenas as credenciais necessárias. Dois testes extras cobrem isolamento e recusa de conexão de escrita no reader.
+
+## 29/10/2026 — limpeza histórica aplicada e oito workflows aprovados
+
+Depois da autorização expressa, o incremento de isolamento de credenciais do helper foi validado:116testes Python passaram e o reader voltou pronto, preservando digest e modo remoto. Commit de origemf8bf6bc enviado normalmente antes da operação de histórico. A prévia final comparou95commits:88IDs alterados, sete blobs/11ocorrências de query nos seis arquivos permitidos; árvore atual, autores, mensagens e datas preservados. Bundle original mantido em.local com SHA256 conferido. Nenhuma assinatura removida.
+
+Force-with-lease aplicado somente à main contraf8bf6bc, resultando em6894858; refs remotos restantes comparados e inalterados. Main local e origin/main alinhados, árvore limpa após a troca. Nenhum reset do app, reinstalação, escrita em dados privados, alteração OAuth ou teste Google repetido. A autorização foi usada para essa operação; não autoriza futuras reescritas.
+
+CI no commit6894858 aprovou os oito workflows. Segredos40888675534/job123499303383:85ocorrências não secretas verificadas,0bloqueadoras, autorredação aprovada, sem valores brutos publicados; artefato12903447721. Go/documentação40888675485, Flutter40888675373, SQL40888675415, restore40888675416, imagem40888675342, vulnerabilidades Go40888675441 e catálogo40888675475 também passaram. Recibos, backlog, handoff e instruções atualizados sem marcar028/029/032 ou produto inteiro como concluídos. Graphify Dart permanece116arquivos/4254nós/4998arestas; sem mudança de código Dart ou contrato, não houve regeneração de grafo/Swagger.
+
+Outros clones precisam reconciliar ou clonar novamente antes de push. Caches/objetos inacessíveis do GitHub e cópias externas não foram certificados como apagados; nenhum token foi reproduzido, rotacionado ou enviado ao fornecedor. E-mails e falhas anteriores continuam como histórico. Próxima história funcional015 mantém o gate de conteúdo aprovado, sem inventar programas, instruções, doses ou mídia.
+
+Fechamento documental: geração reproduzível e14testes de documentação passaram; diff sem erros. Alterações restritas aos recibos/instruções/backlog e derivados, sem novo código de aplicativo, contrato, migração ou APK.

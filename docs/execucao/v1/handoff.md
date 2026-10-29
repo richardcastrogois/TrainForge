@@ -4,7 +4,7 @@ Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 ## Próxima ação
 
-O autor pediu implementar M0–M4 da primeira extração do catálogo, corrigir as verificações, fazer commits e push. Os marcos do catálogo estão concluídos no recorte local. A próxima ação é fechar a remediação do histórico Git; não repetir a migração ou os testes do app sem mudança pertinente.
+O autor pediu implementar M0–M4 da primeira extração do catálogo, corrigir as verificações, fazer commits e push. Os marcos do catálogo estão concluídos no recorte local. A remediação do histórico Git foi aplicada e verificada no remoto. Próxima história funcional: V1-015 pelas dependências, mantendo explícita a ausência de conteúdo aprovado para prática; continuar os trabalhos independentes do backlog. Não repetir limpeza, migração ou testes do app sem mudança pertinente.
 
 Ler também AGENTS.md, backlog.json, plano-macro.md e etapa-02-fechamento.md. Conferir o Git e os arquivos reais. A solicitação atual do autor prevalece sobre relatos históricos no diário.
 
@@ -36,9 +36,11 @@ A captura Windows falhou com `window crop is outside captured monitor`; a evidê
 
 ## Verificações e histórico Git
 
-As últimas provas de Go/docs, SQL, imagem, restore e scanner Go passaram para ba46c3c. O gate histórico de segredos continua pendente. Os90candidatos foram reconciliados: **82 falsos positivos e oito ocorrências de URLs históricas com tokens**. O novo CI40882610220/6d62673 confirmou93candidatos:85não secretas (incluindo3hashes novos comprovados automaticamente) e apenas8bloqueadoras históricas. A prévia local do histórico passou:94commits revistos,87reidentificados,6arquivos de pesquisa, árvore atual igual e0bloqueadores; [proposta/evidência](git-history-remediation-preview.json). Backupbundle local e remoto da prévia desabilitado. O autor autorizou expressamente a limpeza da main com force-with-lease em29/10. Autorização limitada aos seis arquivos revisados, com backup e árvore atual preservada; nenhuma outra branch ou contato externo. Atualizar a prévia antes de aplicar. Antes de qualquer aplicação autorizada, atualizar a prévia para o HEAD corrente e conferir novamente árvore/refs e lease. Os três adicionais eram hashes de arquivos e foram comparados aos conteúdos dos commits originais.
+A limpeza autorizada foi aplicada somente à main, com lease exato contra o commit de origem. A prova final comparou **95 commits, 88 IDs alterados, sete blobs e 11 ocorrências de query em seis arquivos**; árvore atual, autores, mensagens e datas preservados. Backup local por bundle com SHA256 conferido, demais refs remotos inalterados e Git deste notebook alinhado. [Recibo da aplicação](git-history-remediation-preview.json).
 
-Corrigir falsos positivos somente por contexto exato ou SHA256 comprovado do arquivo, mantendo achados desconhecidos bloqueados. Não imprimir valores, reproduzir tokens, contatar fornecedores ou silenciar URLs não comprovadas. Preparar backup e prévia isolada antes de pedir decisão sobre reescrita remota. O push comum não autoriza outras reescritas por inferência; esta limpeza específica foi autorizada pelo autor.
+No commit limpo **6894858**, os oito workflows passaram: segredos, Flutter, Go/documentação, vulnerabilidades Go, SQL, restore, imagem e catálogo. [Segredos40888675534](https://github.com/richardcastrogois/TrainForge/actions/runs/40888675534): **85 ocorrências não secretas verificadas, zero bloqueadoras**, autorredação aprovada, sem valores brutos publicados. [Documentação40888675485](https://github.com/richardcastrogois/TrainForge/actions/runs/40888675485). As falhas anteriores permanecem como evidência histórica; os e-mails já enviados não são apagados.
+
+**Não repetir o force-push.** A autorização específica foi usada nesta operação; novas reescritas exigem nova decisão. Outros clones precisam ser reconciliados ou refeitos antes de enviar código, para não reintroduzir o histórico antigo. Objetos inacessíveis/cache do GitHub e cópias externas não foram certificados como apagados. Validade dos tokens externos não foi testada; nenhum replay, rotação ou contato ocorreu. Achados desconhecidos continuam bloqueadores; não imprimir valores nem silenciar URLs por inferência.
 
 Auditoria028, observabilidade029 e pipeline032 não estão encerrados. Sonar, carga, release e demais critérios mantêm os gates do backlog; não prometer milhões de usuários por contagem de testes.
 
