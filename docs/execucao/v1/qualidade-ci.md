@@ -63,3 +63,7 @@ Não comprova TLS público, Google real, integração com banco, auditoria da im
 ## Prova isolada de catálogoM1 aprovada
 
 [Run40860200717](https://github.com/richardcastrogois/TrainForge/actions/runs/40860200717)/ff8c8bb executou a prova em serviçoPostgreSQL próprio: bancos e papéis exclusivos, migration/reexecução, build doCLI e comparação do processo real com o handler anterior. Teste principal/cinco subtestes passaram, semskip. Credencial não escreve no catálogo nem conecta ao banco sentinela privado; retirada/ETag, versões, readiness com negativos, deadline/cancelamento eSIGTERM conferidos. Fixtures/papéis removidos. Somente metadados no artefato; [recibo](catalog-m1-verification.json). API/APK/avaliação preservados; não é conteúdo real ou migração editorial completa.
+
+## Backup/restore com exclusões noCI — preparado
+
+Novo job descartável usa as fixturesGo existentes prepare/erase, cliente pg_dump/pg_restore da própria imagemPostgreSQL fixada e dump apenas emmemória. Confere snapshot lógico de30tabelas, conta excluída ausente após gateCLI, preservação dooutro titular/editorial/fonte e replay idempotente. Restore permanece semCONNECT runtime e não é promovido. Metadados apenas, nunca dump. Dois testes deguard passaram; execução remota pendente. [Recibo](restore-ci-verification.json). SemSQL/Docker local, backup real ou efeito noAPK.

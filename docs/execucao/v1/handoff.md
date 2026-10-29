@@ -129,3 +129,7 @@ Commits/push autorizados. API/DB/APK de avaliação preservados; conferir estado
 SwaggerM1 code-first tem cinco rotas e duas health, conferido contraAPI0.8.1/34operações. cmdapi, Flutter, Swaggerprincipal e migrations1–13 não mudaram. Nenhum recurso local foi iniciado. Mesmo commit passou Go/docs40860200725, SQLprincipal40860200692, imagem40860200696 e scannerGo40860200586; histórico de segredos continua pendente.
 
 M1 é projeção transitória de leitura, não transferência editorial ou migração do produto. Próximo passo arquitetural é especificarM2 (autoridade/fontes/publicação/retirada/frescor/consumidor047) antes de implementar troca de dono. Trabalho independente de032 pode continuar com dump/restore/gate deexclusão emCI. Nunca reutilizar as credenciais daavaliação ou criar fixtures no banco entregue.
+
+## Próxima execução independente032 — restoreCI
+
+Runner dedicado debackup/restore preparado, reutilizando fixturesGo prepare/erase jáexistentes emserviço novo, semSQL/Docker local. Cliente17.5 do próprio container, dump só emmemória, comparação de30tabelas, gateCLI deexclusões/replay e preservação deoutro titular/editorial/fonte. Alvo semCONNECT runtime e sempromoção. Dois guards passaram; primeira execução remota ainda pendente. Conferir restore-ci-verification.json após push, semrepetir o ensaio local ou tratar isso como restore do checkpoint deavaliação.

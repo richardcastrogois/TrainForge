@@ -1,6 +1,6 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `18378f91abf4ebe4`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `85a7e1713ef0e441`.
 
 Arquivos Go de aplicação encontrados: **69**. Registros net/http literais: **35**.
 

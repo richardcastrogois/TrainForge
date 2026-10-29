@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "story": "V1-032",
+  "status": "implemented-pending-remote-execution",
+  "scope": "hosted-synthetic-dump-restore-erasure-gate",
+  "approach": [
+    "Reuse existing prepare/erase Go fixtures on a fresh schema13 database.",
+    "Use pg_dump/pg_restore from the pinned PostgreSQL service itself, avoiding host-client version mismatch.",
+    "Keep custom-format dump only in memory and never upload it.",
+    "Compare canonical row snapshots of all30business tables after restore.",
+    "Apply the current erasure ledger twice via the existing privacy-restore CLI; verify deleted owner data absent, other owner/public metadata/source preserved and replay idempotent.",
+    "Keep restore offline without runtime CONNECT; remove both created databases and roles."
+  ],
+  "localGuardTestsPassed": 2,
+  "localDatabaseOrDockerTouched": false,
+  "evaluationDataAccessed": false,
+  "remote": {
+    "verified": false,
+    "status": "pending-first-push"
+  },
+  "limits": [
+    "This does not restore or certify the evaluation checkpoint or any production backup.",
+    "No target promotion, backup retention automation, hosting, deployment or real-user acceptance.",
+    "032 and028 remain open; schema or privacy coverage changes require review."
+  ]
+}

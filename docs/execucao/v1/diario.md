@@ -568,3 +568,7 @@ Autor autorizou a prova isolada. Novos comandos catalog/catalog-migrate, banco/r
 ## 29/10/2026 — M1 aprovada noCI e encerrada no seu recorte
 
 Run40860200717/ff8c8bb,job123401197361,aprovou processo real, imports semdomíniosprivados, migration1/rerun0, contratos/permissões/CONNECTprivado/retirada304/semfallback/readiness/deadline/cancelamento/SIGTERM. Fixtures e roles removidos; artefato12890394370/logs conferidos e fechamento porcritério registrado. Go/docs,SQLprincipal,imagem e scannerGo do mesmo commit também passaram; históricoGitcontinua pendente. NenhumSQLlocal,APKouAPIprincipais alterados. M2–M4não autorizamcutoverporinferência.
+
+## 29/10/2026 — próximo incremento independente032 preparado
+
+RestoreCI dedicado preparado comfixturesGo jáexistentes, clientes do próprioPostgreSQL17.5, dump apenas emmemória e comparação lógica de30tabelas. GateCLI/replay protege exclusões; titularB/editorial/fonte e alvooffline serão conferidos. Doisguards passaram; execução remota pendente. NenhumSQL/Docker local.
