@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-29",
+  "scope": "current-research-evidence-only",
+  "changes": [
+    {
+      "file": "docs/conteudo/evidencias/2026-10-03/n16i-apoios/n16i-otago-manual.evidencia.json",
+      "field": "/resolvedUrl",
+      "removedQueryKeys": [
+        "X-Amz-Algorithm",
+        "X-Amz-Credential",
+        "X-Amz-Date",
+        "X-Amz-Expires",
+        "X-Amz-Signature",
+        "X-Amz-SignedHeaders",
+        "response-content-disposition",
+        "response-content-type"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/2026-10-04/n15c-retomada/resumo-complemento.json",
+      "field": "/sourceEvidence/94/url",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-pdf.evidencia.json",
+      "field": "/url",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/2026-10-08/n15c-protocolos-operacionais/c15-baduanjin-avc2023-pdf.evidencia.json",
+      "field": "/resolvedUrl",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/2026-10-08/n15c-protocolos-operacionais/inventario.json",
+      "field": "/sources/4/url",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/2026-10-08/n15c-protocolos-operacionais/requisicoes-baduanjin-pdf.json",
+      "field": "/requests/0/url",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    },
+    {
+      "file": "docs/conteudo/evidencias/retornos-observados.json",
+      "field": "/records/478/request/url",
+      "removedQueryKeys": [
+        "token"
+      ],
+      "canonicalLocatorRetained": true,
+      "networkRequestMade": false
+    }
+  ],
+  "historyRewritten": false,
+  "sourceDocumentBytesAndHashesUnchanged": true,
+  "semanticDiffVerifiedAgainstHead": true,
+  "note": "Query strings were removed for security. The retained URL is a locator, not a replayable signed response URL. Original status and document evidence remain historical observations."
+}
