@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "d39c59c9043c281ab856526c8fc7c6d46da1b80f00c1ff8cd328b5e8d1d22327",
+  "inputRevision": "a77b33eca32daefad411cee526adc722a87f4ed0ee22ef3e9af9ed89282bb4d8",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "e8bdbaadbb3ef899d080754782e2c34adebc5ed33200fa0fe827128be65576c3",
@@ -222,7 +222,7 @@
     "tools/ativar_refeicoes_local.py": "a7ec395a586c97358ed7163d37619f5bac01a78560dab288092887b25085177e",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/avaliar_android.py": "237533eb97156589bf73e7e8a45a0072fec23186c05cb645913dad7a55c6d790",
-    "tools/catalog_local.py": "7d332a782e7df9729108a07c69e50b30208818f39b792a378352415d8d8bb6b6",
+    "tools/catalog_local.py": "d2d0c9a24e43ab298d897d191bafff39748e6b7b0f8843f63946aa5d8c9c30fe",
     "tools/catalog_m1_ci.py": "77393614f8bb92874f7aa916e039e093b0aa6811697ca430d29acfc98735012c",
     "tools/catalog_rollout_ci.py": "1d04e5ae729204ff0346f4abc286561c087148b0165c0910f5b3c6f3833d305e",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
@@ -252,7 +252,7 @@
     "tools/sql_ci.py": "f7f0b77a2618ab674e8659f24672d782e0184eac11f043c66af9e3cc3bfb5df0",
     "tools/test_alimentos_lote.py": "eaba7be2f68b933e1c3887f3dcd553791090ff1f04cbfc56cf8f0ebaf5a36640",
     "tools/test_avaliar_android.py": "3dad8d9b17eb4394509d75f94af447c6134386f877b63cf584bc32193f48bb44",
-    "tools/test_catalog_local.py": "a8c80e0428ecd3ba282330f21b220ea0519b2715dd6e59f3d2158f2e1d616d77",
+    "tools/test_catalog_local.py": "e6afd9ee2e59ab42f431da7abfa7d091fba891d475debd4ac13e1f9532748346",
     "tools/test_catalog_m1_ci.py": "5f4cf3acbe73c658892ca29c7f1823f9670d6ad25fd36644f221f66f2c3d8d34",
     "tools/test_catalog_m1_contract.py": "7ff8b389c6574217d7e5d1d3ee4117810d30e25eb084124f201222ef8122bac1",
     "tools/test_catalog_rollout_ci.py": "3abcc4afefe34b8ab1a093889d7c3aaa3991ffac56fdbd93c9ef2649f5aff2ce",

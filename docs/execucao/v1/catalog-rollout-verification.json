@@ -150,6 +150,14 @@
       "run": 40876296947,
       "job": 123455864674,
       "conclusion": "success"
+    },
+    "readerEnvironmentReview": {
+      "ownReaderEnvFileOnly": true,
+      "longRunningHelperDoesNotReadCoreOrWriterFiles": true,
+      "inheritedEnvironmentAllowlisted": true,
+      "compilationUsesSdkOnlyEnvironment": true,
+      "operatorExecutionUsesSeparateRequiredCredentials": true,
+      "twoAdditionalGuardTestsPassed": true
     }
   },
   "limits": [

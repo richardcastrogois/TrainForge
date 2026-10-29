@@ -604,3 +604,13 @@ Operador criou bancoeditorial/credenciais próprios comACLWindows restrita. Comp
 ## 29/10/2026 — revisão dos90candidatos e correção restrita
 
 Artefato sanitizado40865025572 conferido porSHA256. Revisão dos blobs classificou82ocorrências não secretas e manteve8URLs históricas bloqueadoras. Três novas eram hashes comprovados dos arquivos. Classificador por contexto exato e hash real do arquivo mantém desconhecidos/URLs bloqueados;7testes de sanitização/classificação passaram. Dois parâmetros curtos adicionais foram removidos de campos atuais, sem mudar outros valores;DEMO_KEYpública preservada. Prévia local de histórico inicialmente alteraria queries públicas DEMO_KEY; a barreira de árvore igual recusou a proposta, e o sanitizador foi corrigido/testado. Clone local otimizado foi recusado por proprietário Windows diferente; a versão final usa bundle com confiança por comando, sem configuração global. Nenhum ref ativo/remoto reescrito.
+
+## 29/10/2026 — prévia histórica passou; decisão específica pendente
+
+Commit6d62673 enviado porpushnormal junto do fechamentoM4/49b588c. CI de segredos40882610220/job123477835294 confirmou93candidatos,85não secretos comprovados e apenas8URLs históricas bloqueadoras. Prévia isolada porbundle sobre6d62673:94commits,87IDs substituídos,7blobs históricos/seisarquivos/11ocorrências dequery removidas, autores/mensagens/datas preservados e árvore atual idêntica. ScannerWindows8.30.1 oficial/checksum conferido, apenas cache local:85candidatos não secretos,0bloqueadores pela mesma política doCI. Nenhum ref ativo/remoto mudou. Backupbundle preservado e remoto da prévia desabilitado. Proposta concreta apresentada ao autor; autorização específica de force-with-lease aguardada. Não confundir pushnormal já feito com autorização para substituir histórico. Caches/objetos antigos doGitHub e outrosclones são limites separados; semreplay/contato.
+
+## 29/10/2026 — limpeza histórica especificamente autorizada
+
+Autor respondeu duas vezes “Autorizar a limpeza do histórico da main”. A autorização cobre somente a proposta revisada: seis arquivos de pesquisa, árvore atual preservada, backup e force-with-lease; não outras branches ou contato externo. A primeira tentativa de continuar o ajuste do helper foi bloqueada por limite de uso da revisão automática, sem execução. Após a liberação, o trabalho foi retomado pelo caminho normal de aprovação.
+
+Revisão do helper: reader.env contém somente a conexão de leitura; o daemon não lê arquivos de migração/escrita. Ambiente herdado limitado às variáveis de sistema necessárias. Compilação dos operadores usa ambiente SDK sem credenciais; a execução recebe apenas as credenciais necessárias. Dois testes extras cobrem isolamento e recusa de conexão de escrita no reader.

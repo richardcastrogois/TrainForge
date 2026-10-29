@@ -58,8 +58,41 @@ def settings():
     return env,go
 
 
+def reader_settings():
+    inherited,_=environment(include_api_env=False)
+    runtime_keys={'PATH','SYSTEMROOT','WINDIR','SYSTEMDRIVE','TEMP','TMP','COMSPEC','PATHEXT','USERPROFILE','HOME','HOMEDRIVE','HOMEPATH','LOCALAPPDATA','APPDATA','NUMBER_OF_PROCESSORS','PROCESSOR_ARCHITECTURE','LANG','LC_ALL'}
+    env={key:value for key,value in inherited.items() if key.upper() in runtime_keys}
+    values=load_env(DIRECTORY/'reader.env')
+    if set(values)!={'TF_CATALOG_MODE','TF_CATALOG_DATABASE_URL'} or values['TF_CATALOG_MODE']!='local':raise RuntimeError('Reader configuration must contain only its own connection')
+    env.update(values)
+    return env
+
+
+def ensure_reader_config():
+    # Operator-only step; the long-running reader helper never opens catalog.env/migrate.env.
+    values=load_env(DIRECTORY/'catalog.env')
+    text='TF_CATALOG_MODE=local\nTF_CATALOG_DATABASE_URL='+values['TF_CATALOG_DATABASE_URL']+'\n'
+    path=DIRECTORY/'reader.env'
+    if path.exists():
+        if path.read_text(encoding='utf-8')!=text:raise RuntimeError('Existing reader configuration differs; no overwrite')
+    else:
+        path.touch(exist_ok=False);protect(path);path.write_text(text,encoding='utf-8')
+
+
 def go_command(args,env,go):
-    result=subprocess.run([str(go),*args],cwd=SERVICE,env=env,capture_output=True,timeout=100)
+    sdk_env,_=environment(include_api_env=False)
+    if args[:1]==['run']:
+        allowed={'./cmd/catalog-migrate','./cmd/catalog-transition'}
+        if len(args)<2 or args[1] not in allowed:raise RuntimeError('Unknown operator executable')
+        name='ops-'+args[1].split('/')[-1]+('.exe' if os.name=='nt' else '')
+        binary=DIRECTORY/name
+        build=subprocess.run([str(go),'build','-trimpath','-o',str(binary),args[1]],cwd=SERVICE,env=sdk_env,capture_output=True,timeout=90)
+        if build.returncode:raise RuntimeError('Operator compilation failed; raw output withheld')
+        command=[str(binary),*args[2:]];settings=env
+    elif args[:1]==['build']:
+        command=[str(go),*args];settings=sdk_env
+    else:raise RuntimeError('Unknown Go operation')
+    result=subprocess.run(command,cwd=SERVICE,env=settings,capture_output=True,timeout=100)
     if result.returncode:raise RuntimeError('Catalog Go operation failed; raw output withheld')
     return result.stdout
 
@@ -118,11 +151,12 @@ def start_reader(state):
         return
     with socket.socket() as probe:
         if probe.connect_ex(('127.0.0.1',18083))==0:raise RuntimeError('Unknown listener18083; not stopped')
-    env,go=settings();binary=DIRECTORY/('catalog.exe' if os.name=='nt' else 'catalog')
+    ensure_reader_config()
+    env,go=environment(include_api_env=False);binary=DIRECTORY/('catalog.exe' if os.name=='nt' else 'catalog')
     go_command(['build','-trimpath','-o',str(binary),'./cmd/catalog'],env,go)
     state['binarySha256']=hashlib.sha256(binary.read_bytes()).hexdigest();state['stopFile']=str(DIRECTORY/('stop-'+secrets.token_hex(8)+'.flag'));save_state(state)
     with (DIRECTORY/'catalog.log').open('a',encoding='utf-8') as log:
-        subprocess.Popen([sys.executable,str(Path(__file__).resolve()),'serve'],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW if os.name=='nt' else 0)
+        subprocess.Popen([sys.executable,str(Path(__file__).resolve()),'serve'],cwd=ROOT,env=reader_settings(),stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW if os.name=='nt' else 0)
     end=time.monotonic()+20
     while time.monotonic()<end:
         if ready():return
@@ -135,7 +169,7 @@ def serve():
     if hashlib.sha256(binary.read_bytes()).hexdigest()!=state['binarySha256']:raise RuntimeError('Catalog binary identity changed')
     stop=Path(state['stopFile']).resolve()
     if stop.parent!=DIRECTORY.resolve() or not re.fullmatch('stop-[a-f0-9]{16}.flag',stop.name):raise RuntimeError('Unsafe stop path')
-    env,_=settings();env.pop('TF_CATALOG_MIGRATION_DATABASE_URL',None);env.pop('TF_CATALOG_CORE_DATABASE_URL',None);env.pop('TF_MIGRATION_DATABASE_URL',None);env.pop('TF_IMPORT_DATABASE_URL',None)
+    env=reader_settings()
     process=subprocess.Popen([str(binary)],cwd=SERVICE,env=env,creationflags=subprocess.CREATE_NEW_PROCESS_GROUP if os.name=='nt' else 0)
     try:
         while not stop.exists():
