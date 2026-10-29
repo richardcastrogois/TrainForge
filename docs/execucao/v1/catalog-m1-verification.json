@@ -166,5 +166,17 @@
     "allConclusions": "success",
     "gitHistorySecretsGate": "still-unresolved-existing-findings"
   },
-  "localEnvironmentReview": "Initial local Go/Swagger checks used the existing SDK helper, which also loaded the ignored API env into process memory. No local SQL/standalone process was enabled and no values were logged or uploaded. A tested SDK-only option now avoids reading that file and strips inherited TF_/PG settings; API watcher default preserved."
+  "localEnvironmentReview": "Initial local Go/Swagger checks used the existing SDK helper, which also loaded the ignored API env into process memory. No local SQL/standalone process was enabled and no values were logged or uploaded. A tested SDK-only option now avoids reading that file and strips inherited TF_/PG settings; API watcher default preserved.",
+  "sdkBoundaryVerification": {
+    "status": "success",
+    "commit": "39f4a828573695a21ab5927d5812a9a6b33b162c",
+    "run": 40864664869,
+    "job": 123416273057,
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40864664869",
+    "localToolTestsPassed": 103,
+    "remoteToolSuitePassed": true,
+    "remoteGoTestVetBuildPassed": true,
+    "remoteSwaggerAndMermaidChecksPassed": true,
+    "apiWatcherDefaultPreserved": true
+  }
 }

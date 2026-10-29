@@ -584,3 +584,5 @@ Revisão identificou que o helperenvironment() decompilação também lia api.en
 ## 29/10/2026 — extensão SQL aprovada e SDK isolado validado
 
 Run40863556767/d56cabf,job123412525297,aprovou8suítes/14principais/23PASSincluindo subtestes,sem skip; concorrência exclusão/refresh e manutenção/reuso passaram individualmente. Schema13 e limpeza conferidos;artefato12892033753. M1e restore do mesmo commit também passaram.103testesPython passaram incluindo modoSDKsemleitura deapi.env. Recibos/backlog/handoff atualizados;históricoGit,028/029/032 eM2–M4permanecem comseusgates,semcutover ouavaliaçãoalterada.
+
+Validação remota do modoSDK39f4a82:40864664869/job123416273057 aprovado (ferramentas,Go test/vet/build,Swaggerprincipal/M1 eMermaid);derivados também aprovados. Gate histórico de segredos continua pendente; não houve exceção para silenciá-lo.
