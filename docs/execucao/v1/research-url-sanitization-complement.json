@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "scope": "two-short-unverified-url-parameters-not-detected-by-scanner",
+  "changes": [
+    {
+      "file": "docs/conteudo/evidencias/retornos-observados.json",
+      "fields": [
+        "/records/602/request/url",
+        "/records/603/request/url"
+      ],
+      "allOtherValuesPreserved": true,
+      "removedQueryOccurrences": 2
+    }
+  ],
+  "publicUsdaDemoKeyPreserved": true,
+  "noTokenReplay": true,
+  "sourceDocumentHashesAndObservedStatusesPreserved": true,
+  "historicalResultsAreNotNewAccessProof": true
+}

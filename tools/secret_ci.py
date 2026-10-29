@@ -8,6 +8,7 @@ import secrets
 import subprocess
 import sys
 import tempfile
+from secret_review import load_review, classify_findings
 
 ROOT=Path(__file__).resolve().parents[1]
 phase='environment'
@@ -68,13 +69,17 @@ def main():
         if code!=1 or not safe or token.encode() in stdout or token in json.dumps(safe):raise RuntimeError('Redaction self-test failed')
         phase='git_history_scan'
         code,findings,_=run_scan(binary,ROOT,scratch/'history-raw.json')
+        phase='classify_exact_reviewed_nonsecrets'
+        review=load_review(ROOT/'docs/execucao/v1/git-secret-nonsecret-review.json')
+        classified=classify_findings(ROOT,findings,review)
+        blocking=sum(item['blocking'] for item in classified)
         phase='safe_metadata_report'
         report={'scope':'tracked-git-history','commit':os.environ['GITHUB_SHA'],'scanner':'gitleaks8.30.1',
-                'syntheticRedactionSelfTestPassed':True,'candidateCount':len(findings),'findings':findings,
-                'rawValuesPublished':False,'humanReviewRequired':bool(findings)}
+                'syntheticRedactionSelfTestPassed':True,'candidateCount':len(findings),'findings':classified,'blockingCandidateCount':blocking,'verifiedNonsecretCount':len(findings)-blocking,
+                'rawValuesPublished':False,'humanReviewRequired':bool(blocking)}
         (output/'safe-report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
-        print(json.dumps({'secretCandidates':len(findings),'redactionSelfTestPassed':True,'rawValuesPublished':False}))
-        return code
+        print(json.dumps({'secretCandidates':len(findings),'blockingCandidates':blocking,'verifiedNonsecrets':len(findings)-blocking,'redactionSelfTestPassed':True,'rawValuesPublished':False}))
+        return 1 if blocking else 0
 
 
 if __name__=='__main__':

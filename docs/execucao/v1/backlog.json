@@ -162,7 +162,8 @@
             "29/10: direção microserviços por etapas aceita para detalhamento. Prova de catálogo público proposta:5rotas,reader/banco próprios,contratos/retirada e acoplamento047explicitados. M1não implementado;APK/dados reais preservados.",
             "29/10: autor autorizou prova isolada M1. Runtime/migrator e alvo/banco/roles próprios emfixturesCI, contrato separado de5rotas+health. Código/contrato local validados; SQL/processo remoto pendentes. Recibo catalog-m1-verification.json; semcutover.",
             "29/10: M1 isolada concluída em40860200717/ff8c8bb: migration1/rerun0, processo real, cinco rotas equivalentes, SELECT/CONNECTprivado negado, retiradas/cache/readiness/deadline/cancelamento/SIGTERM, fixtures/roles removidos. Recibo catalog-m1-verification.json. Semcutover;M2–M4propostos.",
-            "docs/execucao/v1/catalog-rollout-verification.json"
+            "docs/execucao/v1/catalog-rollout-verification.json",
+            "29/10: M0–M4 da primeira extração do catálogo concluídas localmente; ver catalog-rollout-verification.json. API0.9.0/catálogo0.2.0, banco próprio,13/30núcleo eAPK25preservados; não encerra separação dosdemaisdomínios."
           ]
         },
         {
@@ -2778,7 +2779,10 @@
             "docs/execucao/v1/go-vulnerability-verification.json",
             "docs/execucao/v1/qualidade-ci.md",
             "docs/execucao/v1/git-secret-verification.json",
-            "29/10: Gitleaks40815286943 falhou com87candidatos; revisão identificou79falsos positivos,2URLs externas assinadas expiradas e6ocorrências externas com token de validade não comprovada. Sete campos emseis evidências atuais sanitizados; histórico preservado, gate não silenciado. Recibos git-secret-verification.json e research-url-sanitization.json;028continua doing."
+            "29/10: Gitleaks40815286943 falhou com87candidatos; revisão identificou79falsos positivos,2URLs externas assinadas expiradas e6ocorrências externas com token de validade não comprovada. Sete campos emseis evidências atuais sanitizados; histórico preservado, gate não silenciado. Recibos git-secret-verification.json e research-url-sanitization.json;028continua doing.",
+            "docs/execucao/v1/git-secret-nonsecret-review.json",
+            "docs/execucao/v1/research-url-sanitization-complement.json",
+            "29/10:90candidatos reconciliados:82falsos positivos decontexto exato;8URLs históricas continuam bloqueadoras. Três achados adicionais sãoSHA256comprovados dearquivos. Dois parâmetros curtos adicionais sanitizados semalterar demaisdados. Préviaisolada dehistórico em preparação; semforcepushautorizado."
           ]
         },
         {
