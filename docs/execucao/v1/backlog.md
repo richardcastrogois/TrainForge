@@ -73,7 +73,7 @@ Validação: Revisão do inventário de contratos; Checar ausência de dual writ
 
 Entregas: ADR final; Mapa de compatibilidade e fronteiras
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Reavaliação documentada, sem decomposição aprovada; done histórico não é aprovação definitiva do monólito.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.
 
 ### V1-003 — Manter documentação arquitetural dinâmica no repositório
 

@@ -147,7 +147,7 @@
             "ADR final",
             "Mapa de compatibilidade e fronteiras"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Reavaliação documentada, sem decomposição aprovada; done histórico não é aprovação definitiva do monólito.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
@@ -158,7 +158,8 @@
             }
           ],
           "workEvidence": [
-            "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md"
+            "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md",
+            "29/10: direção microserviços por etapas aceita para detalhamento. Prova de catálogo público proposta:5rotas,reader/banco próprios,contratos/retirada e acoplamento047explicitados. M1não implementado;APK/dados reais preservados."
           ]
         },
         {
@@ -2773,7 +2774,8 @@
             "docs/execucao/v1/auditoria-produto-verificacao.json",
             "docs/execucao/v1/go-vulnerability-verification.json",
             "docs/execucao/v1/qualidade-ci.md",
-            "docs/execucao/v1/git-secret-verification.json"
+            "docs/execucao/v1/git-secret-verification.json",
+            "29/10: Gitleaks40815286943 falhou com87candidatos; revisão identificou79falsos positivos,2URLs externas assinadas expiradas e6ocorrências externas com token de validade não comprovada. Sete campos emseis evidências atuais sanitizados; histórico preservado, gate não silenciado. Recibos git-secret-verification.json e research-url-sanitization.json;028continua doing."
           ]
         },
         {

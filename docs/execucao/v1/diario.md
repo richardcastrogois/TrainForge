@@ -522,3 +522,13 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 
 - Govulncheckv1.9.0 em40813941007/8331426 passou Linux/Windows com0vulnerabilidades conhecidas alcançáveis detectadas. Checksum do módulo/logs conferidos. Não cobre Flutter/Android, autorização, falhas desconhecidas ou todos os alvos.
 - Gitleaks8.30.1 por digest oficial preparado para históricoGit, com teste sintético de redaction e artefato só de metadados. Nenhum valor bruto será publicado, rotacionado ou apagado; primeira execução pendente.028doing; APK25 e dados locais preservados.
+
+## 29/10/2026 — classificação do histórico e sanitização das evidências
+
+- Run40815286943/9b712b0 falhou com87candidatos; redaction passou.79falsos positivos classificados;2URLs externas assinadas expiradas e6ocorrências de token externo sem validade comprovada. Nenhuma credencial TrainForge identificada nesses87. Sem replay ou contato externo.
+- Sete campos emseis JSONs atuais tiveram query removida. Comparação estrutural contraHEAD comprovou somente as alterações previstas; bytes/hashes dos documentos de origem preservados. Histórico não foi reescrito; gate ainda pendente. Não imprimir diff bruto das linhas antigas.
+- Autor escolheu detalhar microserviços por etapas; primeira fronteira será proposta com contratos/dados/retirada antes de trocar o APK. Sem migração de dados reais nesta rodada.
+
+## 29/10/2026 — direção gradual de microserviços
+
+Autor escolheu detalhar microserviços por etapas. PropostaM0–M4 incorporada ao estudo existente: catálogo público como primeira prova isolada,cinco rotas compatíveis,base/reader/migrator próprios e limites de retirada/frescor/rollback. AcoplamentoSQL de047explicita por que abrir outro processo não conclui a extração. Nenhuma mudança deAPK, dados reais ou novos processos.

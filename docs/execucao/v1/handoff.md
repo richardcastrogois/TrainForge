@@ -4,7 +4,7 @@ Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 **Trabalho retomado pelo autor em29/10.** Sua nova solicitação revoga a parada anterior. Git inicialmente limpo em3f94bb3; helper29/10 informou apiReady:false, apkCurrent:true e nenhum dispositivo conectado. Não iniciar recursos ou repetir aceite por hábito.
 
-**Arquitetura:** autor pretendia microserviços desde o início e quer reavaliar. [Comparação aplicada e plano para decisão](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). Go mantido, execução atual monolítica confirmada; nenhuma decomposição aprovada. Continuar tarefas independentes de contratos/dados/qualidade enquanto se define o rumo.
+**Arquitetura:** autor pretendia microserviços desde o início e quer reavaliar. [Comparação aplicada e plano para decisão](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). Go mantido, execução atual monolítica confirmada; autor escolheu detalhar microserviços por etapas. Primeira prova: catálogo público em processo/banco descartáveis próprios,5rotas compatíveis;047ainda consulta conteúdo noSQL. PlanoM0–M4 no estudo, sem implementar/cutover ou migrar avaliação porinferência. Continuar tarefas independentes de contratos/dados/qualidade enquanto se define o rumo.
 
 ## Próxima ação
 
@@ -105,6 +105,6 @@ Fonte Go0.8.1/34operações; runtime local permaneceu parado. /health/ready pass
 ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no notebook. Run40813941007/8331426 aprovado nos dois alvos, logs conferidos:0vulnerabilidades conhecidas alcançáveis detectadas. Escopo e data no recibo; não é ausência de falhas. Não significa auditoria Flutter/Android, segredos, master ou offline concluídos. [Recibo](go-vulnerability-verification.json).
 
 
-## Segredos Git028 — primeira execução pendente
+## Segredos Git028 — execução e revisão29/10
 
-Gitleaks8.30.1 por digest oficial em runner, sem instalação local. Histórico completo; stdout bruto capturado, nunca ecoado. Fixture de token sintético precisa provar redaction; artefato só permite regra/arquivo/linha/commit, semvalores/match/autor/e-mail/mensagem. Não adicionar exceções amplas, rotacionar ou regravar história automaticamente. Classificar os candidatos reais após o primeiro job. [Recibo](git-secret-verification.json).
+Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nenhum valor bruto foi publicado. Revisão:79falsos positivos (hashes, IDs públicos, cursor de paginação de teste e texto/campos editoriais),2ocorrências de URL externa assinada expirada em03/10 e6ocorrências de URL externa tokenizada sem validade comprovada. Nenhuma credencial do TrainForge identificada nesses candidatos; isso não é auditoria integral. Sete campos emseis evidências atuais tiveram query removida, mantendo localizador, documentos/hashes e observações históricas. [Sanitização](research-url-sanitization.json), [recibo](git-secret-verification.json). Histórico continua contendo os links antigos e o gate permanece pendente; nenhuma exceção ampla, reescrita de histórico, replay de token ou contato com fornecedor. Não publicar diff bruto das linhas removidas.
