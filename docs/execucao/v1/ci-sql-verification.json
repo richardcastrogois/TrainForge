@@ -184,5 +184,16 @@
       "disposableDatabasesRemoved": true,
       "logsVerified": true
     }
+  },
+  "privacyLifecycleExtension": {
+    "status": "implemented-pending-remote-execution",
+    "additionalExistingTests": [
+      "TestPrivacyDeleteRefreshConcurrencyRevokesWinner",
+      "TestPrivacyMaintenancePreservesActiveReplayDetection"
+    ],
+    "suiteCountUnchanged": 8,
+    "expectedTopLevelTestCount": 14,
+    "schemaOrPermissionsChanged": false,
+    "localSqlExecuted": false
   }
 }

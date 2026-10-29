@@ -572,3 +572,7 @@ Run40860200717/ff8c8bb,job123401197361,aprovou processo real, imports semdomíni
 ## 29/10/2026 — próximo incremento independente032 preparado
 
 RestoreCI dedicado preparado comfixturesGo jáexistentes, clientes do próprioPostgreSQL17.5, dump apenas emmemória e comparação lógica de30tabelas. GateCLI/replay protege exclusões; titularB/editorial/fonte e alvooffline serão conferidos. Doisguards passaram; execução remota pendente. NenhumSQL/Docker local.
+
+## 29/10/2026 — restoreCI aprovado; duas suítes deprivacidade adicionadas à seleção
+
+Run40862745311/46fb1e2 aprovou dump/restore sintético,30tabelas comparadas, gateCLI/replay, preservação deoutro titular/editorial/fonte, alvooffline e remoção dasfixtures. Metadados/logs conferidos;dump nunca publicado ou salvo emarquivo. SeleçãoSQL ganhou dois testes existentes deconcorrência/manutenção, aguardando execução remota;8suítes/14principais, semalterarGo ougrants.

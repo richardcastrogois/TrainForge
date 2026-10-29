@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "story": "V1-032",
-  "status": "implemented-pending-remote-execution",
+  "status": "success-synthetic-ci-scope",
   "scope": "hosted-synthetic-dump-restore-erasure-gate",
   "approach": [
     "Reuse existing prepare/erase Go fixtures on a fresh schema13 database.",
@@ -15,8 +15,48 @@
   "localDatabaseOrDockerTouched": false,
   "evaluationDataAccessed": false,
   "remote": {
-    "verified": false,
-    "status": "pending-first-push"
+    "verified": true,
+    "run": 40862745311,
+    "job": 123409801747,
+    "commit": "46fb1e22d1721ee0256b515acf56f7a166de81e8",
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40862745311",
+    "artifactId": 12892372002,
+    "artifactZipSha256": "4ebbce3415de2558e6804021aa02d02f657a155d2e39918f3becb6845b7279a7",
+    "logsVerified": true,
+    "result": {
+      "commit": "46fb1e22d1721ee0256b515acf56f7a166de81e8",
+      "scope": "hosted-synthetic-dump-restore-erasure-gate",
+      "status": "success",
+      "evaluationDataAccessed": false,
+      "targetPromoted": false,
+      "dumpUploaded": false,
+      "dumpWrittenToDisk": false,
+      "databasesRemoved": true,
+      "rolesRemoved": true,
+      "prepareTests": [
+        {
+          "test": "TestPrivacyRestorePrepareFixture",
+          "result": "pass"
+        }
+      ],
+      "dumpSha256": "92bace2c1a3d2ecd79bcd5de54655b7438e2edd223e9c00eaa288c11b8be6c49",
+      "dumpBytes": 125095,
+      "eraseTests": [
+        {
+          "test": "TestPrivacyRestoreEraseFixture",
+          "result": "pass"
+        }
+      ],
+      "allThirtyTablesLogicalSnapshotMatched": true,
+      "historicalAccountPresentBeforeGate": true,
+      "schemaVersion": 13,
+      "erasedAccountAbsentAfterGate": true,
+      "privateMealsConfigurationAndFoodRemoved": true,
+      "otherOwnerAndPublicMetadataPreserved": true,
+      "sourceUnchangedByGate": true,
+      "gateReplayIdempotent": true,
+      "runtimeCannotConnectRestoreTarget": true
+    }
   },
   "limits": [
     "This does not restore or certify the evaluation checkpoint or any production backup.",

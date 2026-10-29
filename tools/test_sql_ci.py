@@ -2,6 +2,7 @@ import tempfile
 from pathlib import Path
 import unittest
 import json
+import re
 from sql_ci import check_environment, disposable_name, test_events, failure_locations, SUITES
 
 
@@ -61,6 +62,9 @@ class SqlTestEvidence(unittest.TestCase):
                 self.assertTrue(package.startswith('./internal/'))
                 self.assertTrue(expected)
                 self.assertTrue(all(name.startswith('Test') for name in expected))
+                directory=Path(__file__).resolve().parents[1]/'services/api'/package.removeprefix('./')
+                declared={name for source in directory.glob('*_test.go') for name in re.findall(r'func (Test[A-Za-z0-9_]+)\(',source.read_text(encoding='utf-8'))}
+                self.assertTrue(set(expected)<=declared,'Selected SQL test name is missing from its package')
 
 
     def test_failure_diagnostics_do_not_publish_assertion_or_payload(self):

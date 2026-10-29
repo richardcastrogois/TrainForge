@@ -130,6 +130,8 @@ SwaggerM1 code-first tem cinco rotas e duas health, conferido contraAPI0.8.1/34o
 
 M1 é projeção transitória de leitura, não transferência editorial ou migração do produto. Próximo passo arquitetural é especificarM2 (autoridade/fontes/publicação/retirada/frescor/consumidor047) antes de implementar troca de dono. Trabalho independente de032 pode continuar com dump/restore/gate deexclusão emCI. Nunca reutilizar as credenciais daavaliação ou criar fixtures no banco entregue.
 
-## Próxima execução independente032 — restoreCI
+## RestoreCI aprovado e extensão SQL pendente
 
-Runner dedicado debackup/restore preparado, reutilizando fixturesGo prepare/erase jáexistentes emserviço novo, semSQL/Docker local. Cliente17.5 do próprio container, dump só emmemória, comparação de30tabelas, gateCLI deexclusões/replay e preservação deoutro titular/editorial/fonte. Alvo semCONNECT runtime e sempromoção. Dois guards passaram; primeira execução remota ainda pendente. Conferir restore-ci-verification.json após push, semrepetir o ensaio local ou tratar isso como restore do checkpoint deavaliação.
+Backup/restore40862745311/46fb1e2, job123409801747, aprovado: snapshot lógico das30tabelas correspondeu ao backup, conta excluída ausente após gateCLI, refeições/alimentos/configuração removidos, outro titular/editorial/fonte preservados, replay idempotente. Alvo semCONNECT runtime; bancos/roles removidos. Dump só emmemória, nunca emartefato. [Recibo](restore-ci-verification.json). Não é restore do checkpoint de avaliação; não repetir localmente.
+
+SeleçãoSQL ganhou dois testes deprivacidade já existentes: TestPrivacyDeleteRefreshConcurrencyRevokesWinner e TestPrivacyMaintenancePreservesActiveReplayDetection. São8suítes/14principais, extensão remota ainda pendente, semmudança deGo/schema/grants. Conferir ci-sql-verification.json após push; não transferir o resultado anterior de12testes para osdois adicionais. API/APK/dados locais preservados. M1continua concluída;M2–M4semcutover autorizado;028/029/032e restantes mantêm gates próprios.
