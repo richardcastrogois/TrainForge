@@ -115,3 +115,20 @@ M4 só ocorre depois deM2/M3. Rollback do caminhoHTTP só é permitido enquanto 
 4. Extrair identidade e coordenação de privacidade somente com protocolo de revogação/exclusão/restore testado entre serviços. Nunca substituir principal verificado por userId do cliente ou aceitar timeout como autorização.
 
 Essa ordem é candidata e poderá mudar por evidência de carga/acoplamento. Não é estimativa de prazo nem capacidade garantida. No momento, oAPK continua na arquitetura atual e continua faltando conteúdo humano, foto/análise, offline e os demais critérios do backlog.
+
+## Propriedade candidata das30tabelas: levantamento estático
+
+Conferido nas migrations1–13, sem consultar o banco de avaliação. A tabela de controleGoose não entra nessa conta. Os nomes abaixo já existem no schema; isso não significa que todas as jornadas estejam implementadas. A divisão é proposta, semALTER/DROP ou troca de escritor.
+
+| Dono candidato | Tabelas atuais | Acoplamento a resolver |
+|---|---|---|
+| Identidade (4) | `users`, `auth_families`, `refresh_tokens`, `access_tokens` | As escritas privadas atuais revalidam usuário/família/token no mesmoSQL; preservar revogação ao criar fronteira remota. |
+| Catálogo editorial (7) | `sources`, `content_versions`, `content_withdrawals`, `import_batches`, `batch_content`, `program_items`, `program_sessions` | sources também é referenciada por food_versions. Não mover todas as fontes para o catálogo de movimentos. Separar autoridade/proveniência por domínio; consumidor guarda versão necessária sem join remoto. |
+| Treinos (5) | `enrollments`, `schedule_occurrences`, `activity_sessions`, `activity_events`, `training_configuration_versions` | HáFKs para versões/program_sessions editoriais. Adesão/agenda/execução ainda não entregues; histórico deve manter snapshot permitido e identidade da versão, com retirada governada. |
+| Alimentação (11) | `food_versions`, `food_entries`, `food_import_batches`, `food_batch_versions`, `food_withdrawals`, `food_name_versions`, `food_name_withdrawals`, `food_name_catalogs`, `meals`, `meal_items`, `meal_versions` | Manter refeição/itens/consumos/cálculo no mesmo dono. Metadados de fontes alimentares precisam acompanhar este domínio; catálogo público de movimentos não pode virar dependência obrigatória de toda refeição. |
+| Privacidade (2) | `account_deletion_intents`, `account_erasures` | Exclusão/exportação/restore exigem confirmações dos donos e proteção contra reaparecimento. Ledger atual não deve ser eliminado ou distribuído sem protocolo testado. |
+| Idempotência transversal (1) | `idempotency_records` | Replays pertencem ao dono da operação; planejar separação por comando/domínio com compatibilidade e expiração. Não criar um serviço genérico de tabela para contornar a divisão. |
+
+A provaM1 lê somente as três tabelas necessárias às cinco rotas públicas numa projeção descartável. A extração editorial completa também precisa tratar lotes, vínculos e estrutura de programas. Conteúdo continua sem prática aprovada. Fonte compartilhada, FKs editoriais de treinos e idempotência são motivos concretos para etapasM2/M3 antes do cutover; não são autorização para deixar vários serviços gravarem o mesmo banco.
+
+Fotos não têm tabelas/armazenamento entregues só por estarem neste plano. Sua futura recuperação pela conta, cache e exclusão continuam nos critérios042/045/026, sem contratar provedor nesta rodada.
