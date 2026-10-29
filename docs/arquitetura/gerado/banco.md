@@ -1,6 +1,6 @@
 # Banco: referência e modelo proposto
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `862c8604fdea7d80`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `ecf94633e5685e15`.
 
 ## Referência atual: schema Prisma externo
 

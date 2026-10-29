@@ -2,9 +2,9 @@ name: Imagem isolada da API
 on:
   push:
     branches: [main]
-    paths: ['services/api/**', 'tools/image_ci.py', 'tools/test_image_ci.py', '.github/workflows/api-image.yml']
+    paths: ['services/api/**', 'contracts/generated/**', 'tools/image_ci.py', 'tools/test_image_ci.py', '.github/workflows/api-image.yml']
   pull_request:
-    paths: ['services/api/**', 'tools/image_ci.py', 'tools/test_image_ci.py', '.github/workflows/api-image.yml']
+    paths: ['services/api/**', 'contracts/generated/**', 'tools/image_ci.py', 'tools/test_image_ci.py', '.github/workflows/api-image.yml']
   workflow_dispatch:
 permissions:
   contents: read

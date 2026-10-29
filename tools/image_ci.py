@@ -15,6 +15,7 @@ import urllib.error
 import urllib.request
 
 ROOT=Path(__file__).resolve().parents[1]
+phase='environment'
 
 
 def check_environment(env,root=ROOT,platform=sys.platform):
@@ -33,12 +34,14 @@ def resource_name(value):
 
 
 def main():
+    global phase
     check_environment(os.environ)
     docker=shutil.which('docker')
     if not docker: raise RuntimeError('Hosted Docker missing; no installation attempted')
     commit=os.environ['GITHUB_SHA']; name=resource_name('trainforge-ci-image-'+secrets.token_hex(6))
     artifact=Path(os.environ['RUNNER_TEMP'])/'api-image-artifact';artifact.mkdir(exist_ok=True)
-    version=json.loads((ROOT/'services/api/internal/swaggerdocs/swagger.json').read_text(encoding='utf-8'))['info']['version']
+    phase='contract-version'
+    version=json.loads((ROOT/'contracts/generated/swagger-v1.json').read_text(encoding='utf-8'))['info']['version']
     if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+',version): raise RuntimeError('Invalid API version')
     report={'commit':commit,'apiVersion':version,'platform':'linux/amd64','status':'running',
         'registryPush':False,'deploy':False,'businessDataAccessed':False,'bitReproducibilityProven':False,'phase':'build'}
@@ -54,9 +57,10 @@ def main():
         if state['ExitCode']!=0: raise RuntimeError('Graceful shutdown failed')
         cli('rm',resource_name(name));container=False
     try:
+        phase='build'
         cli('build','--platform','linux/amd64','--tag',name,'--build-arg','VCS_REF='+commit,
             '--build-arg','API_VERSION='+version,'services/api',timeout=720)
-        report['phase']='inspect-and-smoke'
+        report['phase']='inspect-and-smoke';phase='inspect-and-smoke'
         image=json.loads(cli('image','inspect',name))[0]
         if image['Config']['User']!='65532:65532' or image['Config']['Labels']['org.opencontainers.image.revision']!=commit:
             raise RuntimeError('Image identity or non-root user mismatch')
@@ -94,7 +98,7 @@ def main():
         report.update({'readOnlyNonRootSmokePassed':True,'productionPlainHttpRejected':True,
             'testLiveness200':True,'missingDbReadiness503':True,'gracefulShutdownPassed':True,
             'internalNetworkOnly':True})
-        report['phase']='archive'
+        report['phase']='archive';phase='archive'
         with tempfile.TemporaryDirectory(prefix='api-image-',dir=os.environ['RUNNER_TEMP']) as scratch:
             tar=Path(scratch)/'image.tar';cli('image','save','--output',str(tar),name,timeout=60)
             archive=artifact/('api-linux-amd64-'+commit+'.tar.gz')
@@ -115,6 +119,6 @@ def main():
 
 if __name__=='__main__':
     try:main()
-    except Exception:
-        print('Image CI failed; raw process output withheld.',file=sys.stderr)
+    except Exception as error:
+        print('Image CI failed in '+phase+' ('+type(error).__name__+'); raw process output withheld.',file=sys.stderr)
         raise SystemExit(1)

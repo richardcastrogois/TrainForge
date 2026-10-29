@@ -110,3 +110,5 @@ Sete campos em seis evidências atuais foram sanitizados, preservando localizado
 ## Próxima conferência independente — imagem da API
 
 Dockerfile/.dockerignore e job de imagem preparados paraCI hospedado, semDocker local ou deploy. Runtime scratch/65532, contexto allowlist e smoke emrede interna/read-only; artefato porcommit/versão/digest por7dias. Dois testes deguard passaram; primeira execução remota ainda pendente. Conferir [recibo](api-image-verification.json) após opush; não afirmar imagem válida só porque oDockerfile existe.
+
+Primeiro job da imagem40819307701/7103323 falhou antes deDocker, lendo versão num caminho inexistente. Corrigido para contracts/generated/swagger-v1.json; fase/classe de erro agora saem sem mensagem bruta. Build e smoke continuam sem validação até o próximo job.

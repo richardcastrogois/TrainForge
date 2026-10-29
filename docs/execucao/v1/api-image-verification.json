@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "story": "V1-032",
-  "status": "implemented-pending-remote-execution",
+  "status": "preflight-corrected-pending-remote-execution",
   "scope": "hosted-only-image-build-and-isolated-smoke",
   "builder": {
     "image": "golang:1.27.3-bookworm",
@@ -33,5 +33,16 @@
     "Runtime TLS termination, business flow, image vulnerability audit, multi-architecture and byte-identical rebuild are not proven.",
     "Resource bounds are smoke-test settings, not production capacity recommendations.",
     "032 and028 remain open."
-  ]
+  ],
+  "firstAttempt": {
+    "run": 40819307701,
+    "job": 123267764004,
+    "commit": "7103323da8ee6f13ea55097b40c4d74d376c1b62",
+    "status": "failure",
+    "phase": "contract-version-before-Docker",
+    "cause": "Version reader pointed to a nonexistent Swagger JSON next to generated Go docs. The canonical JSON is contracts/generated/swagger-v1.json.",
+    "imageBuilt": false,
+    "smokeValidated": false
+  },
+  "versionSource": "contracts/generated/swagger-v1.json"
 }
