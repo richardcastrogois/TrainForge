@@ -78,6 +78,8 @@ def main():
         for statement in runtime_statements(training=True,meals=True): sql(statement,name)
         env['TF_MEALS_TEST_DATABASE_URL'] = dsn('migrator')
         env['TF_MEALS_TEST_RUNTIME_URL'] = dsn('runtime')
+        subprocess.run([go,'test','./internal/platform/postgres','-run','^TestPostgresRuntimeReadiness$','-count=1','-v'],
+                       cwd=service,env=env,check=True,timeout=90)
         subprocess.run([go,'test','./internal/nutrition','-run','^TestMealPostgres','-count=1','-v'],
                        cwd=service,env=env,check=True,timeout=180)
         env['TF_PRIVACY_TEST_DATABASE_URL'] = dsn('migrator')
@@ -87,7 +89,7 @@ def main():
     finally:
         if created: sql('DROP DATABASE '+disposable_name(name)+';')
     print(json.dumps({'scope':'fresh-github-service-only','migrationsApplied':latest,
-        'migrationRerun':True,'mealSqlAndHttpPassed':True,'privacySqlPassed':True,
+        'migrationRerun':True,'runtimeReadinessPassed':True,'mealSqlAndHttpPassed':True,'privacySqlPassed':True,
         'disposableDatabaseRemoved':True,'realGoogleOrHumanAcceptance':False}))
 
 

@@ -961,7 +961,7 @@ info:
     food declarations, explicitly recorded consumption and atomic meal grouping. Meal
     routes require schema13. No executable training content or prescribed diets.
   title: TrainForge API
-  version: 0.8.0
+  version: 0.8.1
 paths:
   /api/v1/auth/google:
     post:
@@ -1497,7 +1497,7 @@ paths:
           description: Service Unavailable
           schema:
             $ref: '#/definitions/httpapi.Problem'
-      summary: Database readiness
+      summary: Runtime database prerequisites
       tags:
       - operation
   /api/v1/me:

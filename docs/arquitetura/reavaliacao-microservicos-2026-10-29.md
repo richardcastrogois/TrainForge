@@ -50,3 +50,8 @@ Preferência técnica inicial: migração progressiva, mantendo avaliação do A
 ## Decisão pendente
 
 O autor pode manter o atual enquanto avalia, aprovar extração progressiva ou priorizar uma migração completa antes de novas jornadas. A implementação atual não será apresentada como arquitetura final aprovada. CI SQL, contratos, regras e segurança necessários aos dois caminhos podem avançar enquanto essa decisão é discutida. A migração ampla só começa após escopo e critérios concretos aprovados.
+
+
+## Dependências Go conferidas por go list
+
+Imports de produção internos: auth→httpapi;catalog→httpapi;nutrition→auth/httpapi;privacy→auth/httpapi;trainingconfig→auth/httpapi;foodnamesops→nutrition/postgres. Platform não importa domínios. Testes não entraram nessa contagem. Isso mostra dependências de pacotes; não prova isolamento dos dados: as referências SQL entre sessões, alimentação e privacidade continuam existindo. A prontidão0.8.1 é um adaptador daAPI atual e deverá receber requisitos por serviço se a extração for aprovada.

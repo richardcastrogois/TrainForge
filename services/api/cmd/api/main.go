@@ -23,7 +23,7 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.8.0
+// @version 0.8.1
 // @description Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
@@ -52,7 +52,7 @@ func run(logger *slog.Logger) error {
 			return err
 		}
 		defer pool.Close()
-		db = pool
+		db = postgres.Readiness{Pool: pool}
 	}
 	var docs http.Handler
 	if c.Swagger {

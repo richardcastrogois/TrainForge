@@ -17,13 +17,39 @@
     "purpose": "test parity with local PostgreSQL, not production version/security recommendation"
   },
   "remote": {
-    "verified": false,
-    "status": "pending-first-push"
+    "verified": true,
+    "status": "success",
+    "commit": "689f64b9877c97992d9b0c62cf1e030e03e12ce2",
+    "run": 40811811519,
+    "job": 123243625797,
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40811811519",
+    "appliedMigrations": 13,
+    "reappliedMigrations": 0,
+    "mealSqlTestsPassed": 3,
+    "privacySqlTestsPassed": 1,
+    "disposableDatabaseRemoved": true
   },
   "limits": [
     "No real Google or human meal acceptance.",
-    "SQL fixture integration must be verified in hosted runner after push.",
     "This scope does not run every SQL suite, dump/restore or load in CI.",
     "Audit028, image/delivery artifacts, Sonar and release remain pending."
-  ]
+  ],
+  "runtimeReadiness": {
+    "apiVersion": "0.8.1",
+    "status": "pending-first-hosted-sql-test",
+    "ordinaryGoSuitePassed": true,
+    "goVetPassed": true,
+    "swaggerGeneratedFromSource": true,
+    "localBusinessDatabaseTouched": false,
+    "cases": [
+      "healthy runtime",
+      "migration credential rejected",
+      "missing read grant",
+      "unexpected write privilege",
+      "missing relation",
+      "missing execute grant",
+      "canceled context",
+      "generic HTTP503 without schema details"
+    ]
+  }
 }

@@ -48,8 +48,8 @@ func Live(w http.ResponseWriter, r *http.Request) { JSON(w, http.StatusOK, Statu
 
 type Server struct{ DB Readiness }
 
-// Ready checks the configured database; it never pretends that a missing DB is ready.
-// @Summary Database readiness
+// Ready checks runtime schema and privileges without exposing internal diagnostics.
+// @Summary Runtime database prerequisites
 // @Tags operation
 // @Produce json
 // @Success 200 {object} Status

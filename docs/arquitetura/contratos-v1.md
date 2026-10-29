@@ -1,6 +1,10 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.8.0 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.3+25 integrados com refinamento de descoberta; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.8.1 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.3+25 integrados com refinamento de descoberta; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+
+## Prontidão operacional0.8.1 —29/10
+
+GET /api/v1/health/ready mantém200/503 e Problem genérico. Agora exige relações, leitura/escrita permitidas, funções e papel não elevado compatíveis com o runtime, além da conexão. Consulta apenas catálogos/permissões, sem dados privados. Falta de objeto/grant, privilégio inesperado, erro ou cancelamento falham como dependency_unavailable. Live continua separado. Não é auditoria completa deDDL, assinatura das funções, backups ou capacidade. [Testes e limites](../execucao/v1/ci-sql-verification.json).
 
 ## Refeições045 — contrato SQL/HTTP e cliente integrado
 

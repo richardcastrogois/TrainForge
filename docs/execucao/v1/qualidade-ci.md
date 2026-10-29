@@ -1,4 +1,4 @@
-# Qualidade automatizada — estado em28/10/2026
+# Qualidade automatizada — estado em29/10/2026
 
 ## O que já executou
 
@@ -16,14 +16,14 @@ A primeira execução remota foi conferida: [Flutter40690557153](https://github.
 
 ## O que ainda falta
 
-- CI de migrations e integrações SQL em PostgreSQL descartável, com roles/grants reais e rejeição de alvos de avaliação/produção.
+- Ampliar CI SQL às demais suítes e dump/restore; migrations/refeições/privacidade já executaram em serviço descartável.
 - Imagem sem root, artefatos identificados por commit/digest e distribuição segura; assinatura e deploy continuam fora de PRs sem confiança.
 - Auditoria028 completa, Sonar/quality gate, observabilidade029 e baseline de carga030. Nenhuma conclusão sobre milhões de usuários é sustentada por esta automação.
 - Aceite humano/nativo das jornadas, offline026, foto042 e release continuam com seus critérios. Não concluir032 por automatizar apenas Go/documentação/Flutter.
 
 
-## CI SQL em preparação —29/10
+## CI SQL executado —29/10
 
-[WorkflowSQL](../../../.github/workflows/sql.yml) usa serviço PostgreSQL17.5 por digest oficial, roles migrator/runtime separadas e base aleatória descartável. [Runner](../../../tools/sql_ci.py) exige GitHub-hosted Linux, checkout correto, ausência de configuração/estado de avaliação e cluster novo; não tem modo local. Aplica migrations duas vezes e executa SQL/HTTP de refeições e o ciclo SQL de exportação/exclusão/rollback de privacidade. Os grants são a mesma fonte do helper local, sem ampliar privilégios.3barreiras locais e equivalência de4variantes passaram; primeira execução remota ainda deve ser conferida. [Recibo](ci-sql-verification.json).
+[WorkflowSQL](../../../.github/workflows/sql.yml) usa serviço PostgreSQL17.5 por digest oficial, roles migrator/runtime separadas e base aleatória descartável. [Runner](../../../tools/sql_ci.py) exige GitHub-hosted Linux, checkout correto, ausência de configuração/estado de avaliação e cluster novo; não tem modo local. Aplica migrations duas vezes e executa SQL/HTTP de refeições e o ciclo SQL de exportação/exclusão/rollback de privacidade. Os grants são a mesma fonte do helper local, sem ampliar privilégios.3barreiras locais e equivalência de4variantes passaram. [Run40811811519](https://github.com/richardcastrogois/TrainForge/actions/runs/40811811519) aprovado em689f64b:13migrations/segundo passe0,3testesSQL/HTTP de refeições e1de privacidade, limpeza confirmada; job123243625797 teve logs conferidos. [Recibo](ci-sql-verification.json).
 
-Não inclui todas as suítes SQL nem dump/restore noCI; PostgreSQL17.5 é paridade de fixture, não recomendação de produção ou conclusão da auditoria de dependências. Nenhum secret da conta, assinatura Android ou dados de negócio entra no runner. A credencial literal do serviço é descartável; senhas dos dois papéis são geradas e mascaradas durante o job.
+Novo incremento0.8.1 acrescenta teste SQL de readiness, ainda aguardando seu primeiro runner; Go comum/vet/Swagger passaram sem iniciar API/banco locais. Não inclui todas as suítes SQL nem dump/restore noCI; PostgreSQL17.5 é paridade de fixture, não recomendação de produção ou conclusão da auditoria de dependências. Nenhum secret da conta, assinatura Android ou dados de negócio entra no runner. A credencial literal do serviço é descartável; senhas dos dois papéis são geradas e mascaradas durante o job.

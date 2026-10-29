@@ -503,3 +503,10 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Git limpo em3f94bb3; helper informou API parada, APK25 atual e nenhum dispositivo. Não houve reinício, Google ou nova escrita de dados.
 - Autor esclareceu preferência por microserviços. Comparação com fontes primárias Microsoft/AWS e acoplamentos Go/SQL reais documentada; Go mantido e decisão de execução em discussão. Nenhuma reescrita ampla executada.
 - CI SQL descartável implementado: cluster novo GitHub-hosted, roles/grants compartilhados, migrations/reexecução e fixtures de refeições/privacidade. Equivalência exata dos grants em4combinações e3testes de barreiras aprovados; notebook recusado antes de conectar. Integração remota ainda pendente.
+
+
+## 29/10/2026 — primeiro CI SQL aprovado e prontidão0.8.1
+
+- Logs do run40811811519 em689f64b:13migrations,rerun0,3PASS de refeições e1PASS de privacidade, base removida. Go/docs40811811485 também aprovado. Sem banco de avaliação, Google, registro alimentar real ou compra.
+- Novo adaptador de prontidão confere objetos/grants/funções e rejeita credencial de migração ou privilégio excessivo. Consulta só metadados;503não revela detalhes. Go suite/vet passaram; Swagger0.8.1 gerado porfonte. SQL de prontidão ainda pendente e vai aoCI, sem alteração de schema real ou novoAPK.
+- Imports Go de produção extraídos para a comparação arquitetural; acoplamento SQL/privacidade explicitado. Decisão de microserviços continua em discussão.

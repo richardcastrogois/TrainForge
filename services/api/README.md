@@ -2,9 +2,9 @@
 
 Monólito modular em construção. Consulte [o fechamento da fundação](../../docs/execucao/v1/etapa-02-fechamento.md), [camadas](../../docs/arquitetura/camadas-go.md) e [contrato gerado](../../contracts/generated/swagger-v1.json).
 
-## Estado vigente — 28/10/2026
+## Estado vigente — 29/10/2026
 
-Go0.8.0 /34 operações. Configuração047 foi validada com dados humanos; refeições045 têm gravação atômica, diário/detalhe, metadados versionados e exclusão integral, com SQL/HTTP e privacidade/restore verificados em bases descartáveis. [Estado, semântica e pendências](../../docs/execucao/v1/refeicoes-045.md). O comando `python tools/verificar_refeicoes_local.py`, na raiz, cria e remove somente bases descartáveis, compara hashes dos dados entregues e preserva o estado do cluster. Fixtures não validam refeição real nem login Google.
+Go0.8.1 /34 operações. Readiness confere objetos/privilégios do runtime com falha genérica; não lê registros de usuários. Suíte comum/vet/Swagger passaram; teste SQL de prontidão ainda aguarda runner. CI de migrations/refeições/privacidade0.8.0 já aprovado. [Escopo](../../docs/execucao/v1/ci-sql-verification.json). Configuração047 foi validada com dados humanos; refeições045 têm gravação atômica, diário/detalhe, metadados versionados e exclusão integral, com SQL/HTTP e privacidade/restore verificados em bases descartáveis. [Estado, semântica e pendências](../../docs/execucao/v1/refeicoes-045.md). O comando `python tools/verificar_refeicoes_local.py`, na raiz, cria e remove somente bases descartáveis, compara hashes dos dados entregues e preserva o estado do cluster. Fixtures não validam refeição real nem login Google.
 
 O banco local está no schema13/30tabelas, com grants restritos e [ativação com checkpoint e comparação](../../docs/execucao/v1/meal-grouping-local-activation.json). Cliente Flutter integrado no APK debug0.4.3+25; leitura nativa preservou o consumo real anterior sem agrupamento inventado. Seleção particular e edição de metadados na UI implementadas. Aceite de consumo real/correção/exclusão e foto042 continuam pendentes; criação/consulta humana observada foi confirmada como teste de navegação. Não repetir migrations, SQL ou restore sem mudança pertinente. Não há programa, instrução, dose ou mídia liberados para prática. Os parágrafos de versões anteriores abaixo são checkpoints históricos.
 

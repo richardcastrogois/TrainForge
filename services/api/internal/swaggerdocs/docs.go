@@ -801,7 +801,7 @@ const docTemplate = `{
                 "tags": [
                     "operation"
                 ],
-                "summary": "Database readiness",
+                "summary": "Runtime database prerequisites",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -3937,7 +3937,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.8.0",
+	Version:          "0.8.1",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},
