@@ -4,6 +4,7 @@ import (
 	"context"
 	"crypto/rand"
 	"encoding/json"
+	"github.com/felixge/httpsnoop"
 	"log/slog"
 	"net/http"
 	"time"
@@ -92,33 +93,38 @@ func NewWithNetwork(db Readiness, logger *slog.Logger, timeout time.Duration, do
 		w.Header().Set("X-Content-Type-Options", "nosniff")
 		w.Header().Set("Cache-Control", "no-store")
 		r.Body = http.MaxBytesReader(w, r.Body, 64<<10)
-		defer func() {
-			if recover() != nil {
-				logger.Error("request_failed", "requestId", id)
-				Failure(w, r, http.StatusInternalServerError, "internal_error")
+		metrics := httpsnoop.CaptureMetricsFn(w, func(w http.ResponseWriter) {
+			defer func() {
+				if recover() != nil {
+					logger.Error("request_failed", "requestId", id)
+					Failure(w, r, http.StatusInternalServerError, "internal_error")
+				}
+			}()
+			peer, secure, err := network.Resolve(r)
+			if err != nil {
+				Failure(w, r, 400, "invalid_proxy_headers")
+				return
 			}
-		}()
-		peer, secure, err := network.Resolve(r)
-		if err != nil {
-			Failure(w, r, 400, "invalid_proxy_headers")
-			return
-		}
-		if network.RequireTLS && !secure {
-			Failure(w, r, 426, "https_required")
-			return
-		}
-		if !limits.Allow(peer, 240) {
-			limited(w, r)
-			return
-		}
-		select {
-		case admission <- struct{}{}:
-			defer func() { <-admission }()
-		default:
-			w.Header().Set("Retry-After", "1")
-			Failure(w, r, 503, "server_busy")
-			return
-		}
-		mux.ServeHTTP(w, r)
+			if network.RequireTLS && !secure {
+				Failure(w, r, 426, "https_required")
+				return
+			}
+			if !limits.Allow(peer, 240) {
+				limited(w, r)
+				return
+			}
+			select {
+			case admission <- struct{}{}:
+				defer func() { <-admission }()
+			default:
+				w.Header().Set("Retry-After", "1")
+				Failure(w, r, 503, "server_busy")
+				return
+			}
+			mux.ServeHTTP(w, r)
+		})
+		logger.Info("http_request", "requestId", id, "method", methodLabel(r.Method),
+			"route", routeLabel(r.Pattern), "status", metrics.Code,
+			"durationMs", float64(metrics.Duration)/float64(time.Millisecond), "responseBytes", metrics.Written)
 	})
 }

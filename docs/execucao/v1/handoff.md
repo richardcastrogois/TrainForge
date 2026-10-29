@@ -114,3 +114,9 @@ Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nen
 RunnerSQL agora propõe8suítes/12testes principais em bases descartáveis separadas no mesmo serviçoGitHub-hosted.5testes de barreiras/parser passaram. Parser exige execução/pass explícitos, semaceitar skip e sempublicar saídaGo bruta. Primeira execução ampliada ainda precisa ser conferida após o push; não transferir o sucesso anterior de refeições/privacidade para as novas suítes. Semdados/processos locais alterados. [Recibo](ci-sql-verification.json).
 
 Primeira execução ampliada40817472948/563de01:privacy/auth/catalog/food-import/food-read passaram;nutrition falhou e demais não executaram. A suíte antiga dependia de referência real fornecida pelo wrapperlocal; agora preservada e separada de TestNutritionPostgresFixtureLifecycle paraCI.6testes de guard/diagnóstico eGo nutrição comum passaram. NovaexecuçãoSQL ainda precisa ser conferida; não apresentar a rodada anterior como8suítes aprovadas.
+
+## Ampliação SQL concluída tecnicamente e início deHTTP029
+
+Run40817964419/3169bea aprovado:8suítes/12testes principais/21PASScomsubtestes,sem skips;schema13,reexecução e remoção dasbases. Logs/artefato conferidos;reciboCIatualizado. ConsumoCIusa fixture explícita; nãoé novo aceite real. Dump/restore,carga/Sonar/artefatos continuam pendentes.
+
+FonteHTTP agora registra requestId,método categorizado,padrão de rota,status,duração ebytes,com allowlist;nenhumURL/query/corpo/identidade/credencial. TestesGo comuns/vet passaram,sem SQLlocal. API deavaliação/APK25preservados; pipeline doincremento ainda a conferir depois dopush. Recibo http-observability-verification.json;029continua aberta porFlutter,pool,SQL,métricas,traces,alertas/retention.

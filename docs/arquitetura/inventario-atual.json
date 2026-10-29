@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "4837a061626b74feb39ac97e61723af91f4183feff51ed93a73d45c94ca956c2",
+  "inputRevision": "30e2937037db971a7a663e0012541c8ee167ed64e80fb2f3f8d5e4284811bedc",
   "inputs": {
     "contracts/generated/swagger-v1.json": "e7bd645fa1c671906bcb86e7cfd21df10654af7eec10a9fc6287b08b7265cac8",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/execucao/v1/backlog.json": "6b3d6db0d172f4ca2c4c8cf004d0125d53a4109b778bdeec5d3b511198e80c45",
+    "docs/execucao/v1/backlog.json": "85053188c0015629fef5335e8ebefcf10f030a8f78a5ca3195c058eeb1bf0d45",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "49c734c7f3db764eb0a84b78ccd16af3627bf93334c394e2a06b4a3909d94113",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
@@ -130,7 +130,7 @@
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
     "services/api/cmd/privacy-maintenance/main.go": "4beac3b5fc92b092780a8b58f176b90ac2259b3fdd8a5045d0b2ec4b8bb4da84",
     "services/api/cmd/privacy-restore/main.go": "2e18dfda39c00e7d45b4f7b5377b2cca7f9aa17f33845a76269a9e97f44e80ff",
-    "services/api/go.mod": "22ff58d500c78dcce41bd9f740e78c489c6211305bb89e92e64339509cdda9fc",
+    "services/api/go.mod": "9f5091519b83c6b36b2207679a0e680b6ea6ed6b2003993f57838bc7188abba3",
     "services/api/go.sum": "c21ed37308eaa7fe0e045c24877f9e5811c4c104acfb21996269f175df53779a",
     "services/api/internal/activity/doc.go": "9c96dee6094436f58077a2977187e2b778d2cd82ba4ad93aae0436d961e5d89e",
     "services/api/internal/auth/doc.go": "8139fc3bc1fb0a4ecf86bcc2a26dbbfea0a950536b72503d6af1b82f50674da9",
@@ -172,7 +172,8 @@
     "services/api/internal/platform/config/config.go": "40c16e2bf2e0c7e4c35b04c07014b0e1aa606f4f7e56e818e37366f930882589",
     "services/api/internal/platform/httpapi/listener.go": "ec3c0da4efc9fa26b52b2b7b4a88e78ee73ea667a5d78c351b0b53e4aabc9299",
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
-    "services/api/internal/platform/httpapi/server.go": "1518461e61dacba5e12fe5696a9e544b38203279a4a0c8fa4acd782d87d8efc8",
+    "services/api/internal/platform/httpapi/observability.go": "fcd3be9dfa325d37e96c7720e4b9df9e6ba010bd4f38bc02f71e3611fc4d7dd0",
+    "services/api/internal/platform/httpapi/server.go": "b319c6c5f07dbd646463cfdb94f3c1b83c89ab10f542cb605d45d51c1cadf8fe",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
     "services/api/internal/platform/postgres/readiness.go": "48868148e4f32ef8faa8a2ffc2ec6c1263b6f160d758551801dddda115b8f801",
     "services/api/internal/privacy/handler.go": "0e9cd6b1624dc3f9994c60304ea6ba31de5408a79950ae6b24925cbbe280fc0d",
@@ -264,7 +265,7 @@
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 62,
+    "goFiles": 63,
     "goRegistrations": 35,
     "modelsInReference": 9
   },
@@ -4191,6 +4192,7 @@
       "services/api/internal/platform/config/config.go",
       "services/api/internal/platform/httpapi/listener.go",
       "services/api/internal/platform/httpapi/network.go",
+      "services/api/internal/platform/httpapi/observability.go",
       "services/api/internal/platform/httpapi/server.go",
       "services/api/internal/platform/postgres/pool.go",
       "services/api/internal/platform/postgres/readiness.go",
@@ -4872,7 +4874,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 46
+          "line": 47
         },
         "registrationDetected": true
       },
@@ -4893,7 +4895,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 57
+          "line": 58
         },
         "registrationDetected": true
       },
@@ -5680,7 +5682,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 80
+          "line": 81
         }
       },
       {
@@ -5689,7 +5691,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 81
+          "line": 82
         }
       },
       {
@@ -5698,7 +5700,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 83
+          "line": 84
         }
       },
       {

@@ -79,3 +79,7 @@ Não fazer teste de carga em fornecedor de conteúdo externo. Importar o lote pe
 ## Leitura individual de consumo — 27/10/2026
 
 GET /me/food-entries/{id} exige o mesmo Bearer/guarda de conta das operações privadas; a sessão é revalidada no banco e a consulta usa user_id autenticado. Registro alheio ou excluído retorna404, credencial revogada401, sem divulgar nome/quantidade. Respostas privadas no-store. Nome revisado é metadado público anexado fora do snapshot; nenhum ID particular/titular vai para a consulta editorial. Pool de uma conexão e negativos passaram no ensaio isolado; não é teste de carga. [Evidência](../execucao/v1/food-names-consumption-verification.json).
+
+## Instrumentação HTTP implementada —29/10
+
+FonteGo mantém34operações; cada requisição agora emite evento http_request com requestId gerado, método categorizado, padrão de rota registrado,status,duraçãoMs ebytes enviados. Nunca usaURL completa/query/valor deID,corpo,Authorization,cookie,IPou identidade. Rejeição anterior aorouter viraunmatched; método desconhecidoOTHER. Panic mantém código fixo correlacionado. httpsnoop1.1.0 jáfixado preserva capacidades deResponseWriter. Testes incluíram sucessos,404,503,pânico500 e sentinelas privadas; suíteGo comum/vet passaram. [Recibo](../execucao/v1/http-observability-verification.json). Nãoé monitoramento implantado nem prova de desempenho; faltaFlutter/pool/SQL/métricas/traces/retention/alertas. Um evento porrequisição exige medição de volume antes da exposição; nenhum coletor ou armazenamento foi contratado.

@@ -2832,12 +2832,13 @@
             "Runbook e painel de métricas reais",
             "Evidência de uma jornada rastreada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029. 29/10: diagnósticoHTTP porcampos limitados implementado nafonte;suíteGo/vet passaram. SemURL/query/corpo/identidade;correlação do servidor. Não reiniciou avaliação, não implementaFlutter/pool/SQL/métricas/alertas/retention e não encerra029.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
-            "docs/execucao/v1/ci-sql-verification.json"
+            "docs/execucao/v1/ci-sql-verification.json",
+            "docs/execucao/v1/http-observability-verification.json"
           ]
         },
         {
@@ -3027,7 +3028,8 @@
             "docs/execucao/v1/ci-flutter-verification.json",
             "docs/execucao/v1/ci-sql-verification.json",
             "29/10: runnerSQL ampliado para8suítes/12testes principais existentes, bases/ambientes separados e eventosGoJSON que recusam skip/falha/ausência.5testes de guard/parser passaram; primeira execução remota ampliada ainda pendente. Dump/restore e demais gates032não concluídos.",
-            "29/10: primeira ampliação40817472948 passou5suítes, falhou emconsumos dependente de referência do wrapperlocal; demais nãoexecutaram. Entrada sintéticaCI separada preserva ensaio de referênciareal.6guard/diagnóstico eGo comum passaram;SQLcorrigido pendente."
+            "29/10: primeira ampliação40817472948 passou5suítes, falhou emconsumos dependente de referência do wrapperlocal; demais nãoexecutaram. Entrada sintéticaCI separada preserva ensaio de referênciareal.6guard/diagnóstico eGo comum passaram;SQLcorrigido pendente.",
+            "29/10: ampliaçãoSQL40817964419/3169bea aprovada;8suítes/12principais/21PASScomsubtestes,nenhumskip,base removida. ConsumosCIexplicitamente sintéticos;ensaio dereferênciareal preservado. Recibo ci-sql-verification.json;restante032pendente."
           ]
         },
         {

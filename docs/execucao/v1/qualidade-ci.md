@@ -49,3 +49,7 @@ Runner ampliado para8suítes/12testes principais existentes:prontidão/refeiçõ
 ### Primeira execução ampliada e ajuste do contrato de teste
 
 Run40817472948/563de01 passou as5primeiras suítes e falhou emconsumos;nomes/configuração não executaram. O teste selecionado requeria uma referência real copiada pelo wrapperlocal, indisponível noCI. Foi preservado e ganhou um ponto de entrada separado com fixture explícita paraCI, sem copiar catálogo ou conta daavaliação. Osmesmos controles de titularidade/replay/cálculo/retirada/privacidade continuam exercitados; isso não valida consumo real. Parser agora publica emfalha somente basename/linhaGo, semmensagem/PII/corpo.6testes de ferramentas e suíteGo comum de nutrição passaram;SQL corrigido aguarda novaexecução remota.
+
+### Ampliação SQL aprovada
+
+[Run40817964419](https://github.com/richardcastrogois/TrainForge/actions/runs/40817964419)/3169bea,job123263441423:8suítes,12testes principais e21eventosPASS incluindo subtestes,nenhumskip aceito. Schema13emcada base;reexecução/limpeza passaram. Artefato sanitizado12873765255 e logs conferidos. NutritionalCI usa fixture explícita; ensaio local com referência real preservado, não repetido. Go/docs e scannerGo também aprovaram ocommit; gate de segredos continua pendente pelo histórico. Dump/restore,carga,imagem/Sonar eaceites humanos não encerrados.

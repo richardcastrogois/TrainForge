@@ -540,3 +540,7 @@ Autor escolheu detalhar microserviços por etapas. PropostaM0–M4 incorporada a
 ## 29/10/2026 — ensaio remoto ampliado revelou dependência de fixture
 
 Run40817472948 passou5suítes e falhou emnutrition;nomes/configuração não executaram. Teste deconsumos exigia referência real copiada pelo wrapperlocal. Mantido oensaio anterior ecriado ponto deentrada explícito parafixtureCI, com osmesmos controles, semdados daavaliação.6testes debarreiras/diagnóstico eGo nutrição comum passaram;SQL corrigido ainda pendente.
+
+## 29/10/2026 — oito suítes SQL aprovadas e diagnóstico HTTP
+
+Run40817964419/3169bea passou8suítes/12principais/21PASSincluindo subtestes,sem skip;schema13,reexecução e bases removidas. Recibo/logs/artefato conferidos. Início independente029com eventosHTTP permitidos:requestId,rota registrada,método categorizado,status,duração,bytes;semvalores pessoais. Go comum/vet passaram;pipeline doincremento ainda pendente. SemAPI/DB/APK deavaliação alterados.

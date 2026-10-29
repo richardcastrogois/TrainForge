@@ -31,7 +31,7 @@
   },
   "limits": [
     "No real Google or human meal acceptance.",
-    "This scope does not run every SQL suite, dump/restore or load in CI.",
+    "Expanded hosted SQL suites passed, with an explicit synthetic nutrition reference. The original local researched-reference scenario was preserved and not rerun in CI. Dump/restore, load and SQL paths not covered by these tests remain pending.",
     "Audit028, image/delivery artifacts, Sonar and release remain pending."
   ],
   "runtimeReadiness": {
@@ -63,7 +63,7 @@
     "disposableDatabaseRemoved": true
   },
   "extendedDomainSuites": {
-    "status": "corrected-pending-remote-execution",
+    "status": "success",
     "suiteCount": 8,
     "topLevelTestCount": 12,
     "suites": [
@@ -156,6 +156,24 @@
       "fix": "Separate explicit synthetic-CI entry point preserving original researched-reference test; no evaluation data copied."
     },
     "nutritionOrdinaryGoSuitePassed": true,
-    "nutritionSqlNotRunLocally": true
+    "nutritionSqlNotRunLocally": true,
+    "remote": {
+      "verified": true,
+      "run": 40817964419,
+      "job": 123263441423,
+      "commit": "3169bea812f2c6c60d6a32846c1ecdc1d0090e04",
+      "conclusion": "success",
+      "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40817964419",
+      "safeArtifactId": 12873765255,
+      "safeArtifactSha256": "96ac7b378584b2b06281adba93b8cdb1d41633d8444b3deeb36b50dcae22746c",
+      "logsVerified": true,
+      "suitesPassed": 8,
+      "topLevelTestsPassed": 12,
+      "terminalPassEventsIncludingSubtests": 21,
+      "skipsAccepted": false,
+      "schemaVersionPerDatabase": 13,
+      "disposableDatabasesRemoved": true,
+      "realGoogleOrHumanAcceptance": false
+    }
   }
 }

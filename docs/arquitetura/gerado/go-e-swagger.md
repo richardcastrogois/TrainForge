@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4837a061626b74fe`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `30e2937037db971a`.
 
-Arquivos Go de aplicação encontrados: **62**. Registros net/http literais: **35**.
+Arquivos Go de aplicação encontrados: **63**. Registros net/http literais: **35**.
 
 ## Pacotes Go e imports atuais
 
@@ -86,8 +86,8 @@ flowchart LR
 | `GET /api/v1/me/meals/{id}` | id path string true "Meal UUID; another owner returns404"; locale query string false "pt-BR,pt-PT,en,es; display only" | Success 200 {object} ConfirmedMeal; Failure 400,401,404,409,429,503 {object} httpapi.Problem | sim | [services/api/internal/nutrition/meals_handler.go:127](../../../services/api/internal/nutrition/meals_handler.go) |
 | `PATCH /api/v1/me/meals/{id}` | id path string true "Meal UUID"; Idempotency-Key header string true "Stable retry UUID"; body body EditMealCommand true "Expected grouping revision and reviewed=true" | Success 200 {object} ConfirmedMeal; Failure 400,401,404,409,413,415,429,503 {object} httpapi.Problem | sim | [services/api/internal/nutrition/meals_handler.go:164](../../../services/api/internal/nutrition/meals_handler.go) |
 | `DELETE /api/v1/me/meals/{id}` | id path string true "Meal UUID"; Idempotency-Key header string true "Stable retry UUID"; body body DeleteMealCommand true "Expected grouping revision and reviewed=true" | Success 200 {object} ConfirmedMeal; Failure 400,401,404,409,413,415,429,503 {object} httpapi.Problem | sim | [services/api/internal/nutrition/meals_handler.go:190](../../../services/api/internal/nutrition/meals_handler.go) |
-| `GET /api/v1/health/live` |  | Success 200 {object} Status | sim | [services/api/internal/platform/httpapi/server.go:46](../../../services/api/internal/platform/httpapi/server.go) |
-| `GET /api/v1/health/ready` |  | Success 200 {object} Status; Failure 503 {object} Problem | sim | [services/api/internal/platform/httpapi/server.go:57](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/live` |  | Success 200 {object} Status | sim | [services/api/internal/platform/httpapi/server.go:47](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/ready` |  | Success 200 {object} Status; Failure 503 {object} Problem | sim | [services/api/internal/platform/httpapi/server.go:58](../../../services/api/internal/platform/httpapi/server.go) |
 | `GET /api/v1/privacy` |  | Success 200 {object} Policy; Failure 400 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:160](../../../services/api/internal/privacy/handler.go) |
 | `GET /api/v1/me/export` | section query string false "Owned data section" Enums(account,sessions,enrollments,occurrences,activitySessions,activityEvents,foods,foodEntries,trainingConfigurations,meals,mealItems,mealVersions); limit query int false "Maximum page size" minimum(1) maximum(50) default(20); cursor query string false "Opaque cursor bound to user, section and limit" | Success 200 {object} ExportPage; Failure 400,401,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:179](../../../services/api/internal/privacy/handler.go) |
 | `POST /api/v1/me/deletion-intent` | body body IntentRequest true "Explicit account deletion confirmation" | Success 200 {object} Intent; Failure 400,401,409,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/privacy/handler.go:212](../../../services/api/internal/privacy/handler.go) |
@@ -125,9 +125,9 @@ flowchart LR
 | `GET /api/v1/foods/filters` | [services/api/internal/nutrition/handler.go:17](../../../services/api/internal/nutrition/handler.go) |
 | `GET /api/v1/foods/{id}` | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) |
 | `GET /api/v1/foods` | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) |
-| `GET /api/v1/health/live` | [services/api/internal/platform/httpapi/server.go:80](../../../services/api/internal/platform/httpapi/server.go) |
-| `GET /api/v1/health/ready` | [services/api/internal/platform/httpapi/server.go:81](../../../services/api/internal/platform/httpapi/server.go) |
-| `GET /docs/` | [services/api/internal/platform/httpapi/server.go:83](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/live` | [services/api/internal/platform/httpapi/server.go:81](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /api/v1/health/ready` | [services/api/internal/platform/httpapi/server.go:82](../../../services/api/internal/platform/httpapi/server.go) |
+| `GET /docs/` | [services/api/internal/platform/httpapi/server.go:84](../../../services/api/internal/platform/httpapi/server.go) |
 | `GET /api/v1/privacy` | [services/api/internal/privacy/handler.go:28](../../../services/api/internal/privacy/handler.go) |
 | `GET /api/v1/me/export` | [services/api/internal/privacy/handler.go:29](../../../services/api/internal/privacy/handler.go) |
 | `POST /api/v1/me/deletion-intent` | [services/api/internal/privacy/handler.go:30](../../../services/api/internal/privacy/handler.go) |
