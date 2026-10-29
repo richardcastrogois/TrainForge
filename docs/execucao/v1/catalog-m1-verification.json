@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "milestone": "microservices-M1",
-  "status": "implemented-pending-remote-SQL-and-process-validation",
+  "status": "complete-isolated-M1-scope-only",
   "userAuthorization": "Explicit isolated M1 proof approved; fixtures/CI only, no evaluation API/APK/database cutover.",
   "scope": {
     "commands": [
@@ -32,11 +32,73 @@
     "m1SwaggerGeneratedFromGo": true,
     "mainApiSwaggerUnchangedCheckPassed": true,
     "sqlExecuted": false,
-    "serverOrDatabaseStarted": false
+    "serverOrDatabaseStarted": false,
+    "ordinaryGoSuitePassed": true,
+    "goVetPassed": true,
+    "pythonToolTestsPassed": 99
   },
   "remote": {
-    "verified": false,
-    "status": "pending-first-push"
+    "verified": true,
+    "run": 40860200717,
+    "job": 123401197361,
+    "commit": "ff8c8bbb36f0e265eb82889f00b37e2741d6a6fa",
+    "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40860200717",
+    "artifactId": 12890394370,
+    "artifactZipSha256": "c01ae6e71e9ee494a3673856278d0fe4f50b255498c0ec2a393a1531d0b055ea",
+    "logsVerified": true,
+    "result": {
+      "commit": "ff8c8bbb36f0e265eb82889f00b37e2741d6a6fa",
+      "scope": "isolated-fixture-ci-M1-only",
+      "status": "success",
+      "evaluationDataAccessed": false,
+      "apkOrApiCutover": false,
+      "realPracticeOrGoogleValidated": false,
+      "fixturesRemoved": true,
+      "migrationsAppliedAndRerun": [
+        1,
+        0
+      ],
+      "catalogDatabaseTables": [
+        "public.trainforge_catalog_schema_version",
+        "trainforge_v1.content_versions",
+        "trainforge_v1.content_withdrawals",
+        "trainforge_v1.sources"
+      ],
+      "binarySha256": "7a3db7fced7c265b4c8e45a3af71f73eb086fca21b2b15a7dec311b1377bda5a",
+      "internalRuntimeDependencies": [
+        "trainforge.local/api/cmd/catalog",
+        "trainforge.local/api/internal/catalog",
+        "trainforge.local/api/internal/catalogruntime",
+        "trainforge.local/api/internal/catalogtarget",
+        "trainforge.local/api/internal/platform/httpapi"
+      ],
+      "tests": [
+        {
+          "test": "TestIsolatedCatalogM1",
+          "result": "pass"
+        },
+        {
+          "test": "TestIsolatedCatalogM1/five_routes_contract_and_versions",
+          "result": "pass"
+        },
+        {
+          "test": "TestIsolatedCatalogM1/query_deadline_and_client_cancellation",
+          "result": "pass"
+        },
+        {
+          "test": "TestIsolatedCatalogM1/reader_permissions_and_private_database_isolation",
+          "result": "pass"
+        },
+        {
+          "test": "TestIsolatedCatalogM1/readiness_negatives_and_recovery",
+          "result": "pass"
+        },
+        {
+          "test": "TestIsolatedCatalogM1/withdrawal_beats_cache_and_latest_has_no_fallback",
+          "result": "pass"
+        }
+      ]
+    }
   },
   "limits": [
     "This is a transitional read projection, not complete editorial ownership or production microservices migration.",
@@ -44,5 +106,60 @@
     "Shared module/packages are intentional; M2-M4 require publication/withdrawal/freshness, cross-domain references and migration/restore/cutover proof.",
     "No practice, real Google login, human acceptance or scale/load validation claimed.",
     "Existing secret history gate and stories028/029/032 remain open."
-  ]
+  ],
+  "completionEvidence": [
+    {
+      "criterion": "runtime contains no private business module or core migrations",
+      "result": "pass",
+      "evidence": "Compiled process dependency inventory has only cmd/catalog, catalog, catalogruntime, catalogtarget and httpapi."
+    },
+    {
+      "criterion": "own database and least privilege",
+      "result": "pass",
+      "evidence": "Reader DML/DDL/control-table SELECT/SET ROLE denied42501; private sentinel CONNECT denied42501."
+    },
+    {
+      "criterion": "independent idempotent migration",
+      "result": "pass",
+      "evidence": "Own migration applied1,rerun0; only3editorial tables and1control table."
+    },
+    {
+      "criterion": "five compatible public routes and schemas",
+      "result": "pass",
+      "evidence": "Source-generated Swagger comparison and actual standalone HTTP versus existing handler; status, headers, normalized JSON, filters/cursors/versions preserved."
+    },
+    {
+      "criterion": "withdrawal before conditional cache and no silent older-version fallback",
+      "result": "pass",
+      "evidence": "304positive path; withdrawn latest404despiteETag; latest unreviewed/withdrawn excluded from list. Explicit allowed old-version detail retains existing contract."
+    },
+    {
+      "criterion": "dependency failure and readiness recovery",
+      "result": "pass",
+      "evidence": "Missing SELECT, excessive INSERT and missing relation returned generic503readiness; each recovered after restoration."
+    },
+    {
+      "criterion": "deadline and cancellation",
+      "result": "pass",
+      "evidence": "Blocked query in standalone process returned503within bound; canceled HTTP call released reader pool connection."
+    },
+    {
+      "criterion": "process shutdown",
+      "result": "pass",
+      "evidence": "Independently built CLI receivedSIGTERM and exited successfully within bound."
+    },
+    {
+      "criterion": "no evaluation cutover or fabricated product data",
+      "result": "pass",
+      "evidence": "Hosted-only fixtures and private sentinel empty tables; no real evaluation access/APKchange/Google or practice claim; fixtures and exclusive roles removed."
+    }
+  ],
+  "regressionSameCommit": {
+    "goDocsRun": 40860200725,
+    "mainSqlRun": 40860200692,
+    "mainApiImageRun": 40860200696,
+    "goVulnerabilityRun": 40860200586,
+    "allConclusions": "success",
+    "gitHistorySecretsGate": "still-unresolved-existing-findings"
+  }
 }

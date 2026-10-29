@@ -4,7 +4,7 @@ Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 **Trabalho retomado pelo autor em29/10.** Sua nova solicitação revoga a parada anterior. Git inicialmente limpo em3f94bb3; helper29/10 informou apiReady:false, apkCurrent:true e nenhum dispositivo conectado. Não iniciar recursos ou repetir aceite por hábito.
 
-**Arquitetura:** o autor escolheu detalhar microserviços por etapas. [Plano concreto M0–M4](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). A primeira prova proposta é o catálogo público, com processo/banco descartáveis próprios e cinco rotas compatíveis. A configuração047 ainda consulta conteúdo no SQL. Autor respondeu “Autorizar a prova isolada M1” em29/10. Implementação aditiva em andamento; não autoriza cutover ou migração da avaliação. Continuar trabalho independente de segurança e qualidade.
+**Arquitetura:** o autor escolheu detalhar microserviços por etapas. [Plano concreto M0–M4](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). A primeira prova proposta é o catálogo público, com processo/banco descartáveis próprios e cinco rotas compatíveis. A configuração047 ainda consulta conteúdo no SQL. Autor respondeu “Autorizar a prova isolada M1” em29/10. M1 concluída isoladamente noCI40860200717/ff8c8bb; não autoriza cutover ou migração da avaliação. Continuar trabalho independente de segurança e qualidade.
 
 ## Próxima ação
 
@@ -115,9 +115,17 @@ Imagem Linux/amd64 e metadata no artefato12874570734, retido até05/11. Não hou
 
 ## Próxima retomada: pendências preservadas
 
-1. M1 foi expressamente autorizada em29/10; implementar e validar a prova isolada emCI. O plano tem os donos candidatos das30tabelas e os acoplamentosSQL: sources também atende alimentos, treinos têmFKs editoriais e idempotência precisa de dono por comando. Não executar cutover ou mexer nos dados reais por inferência.
+1. M1 foi autorizada e concluída isoladamente em29/10; não repetir sua prova sem mudança pertinente. M2–M4 seguem propostos, sem cutover autorizado. O plano tem os donos candidatos das30tabelas e os acoplamentosSQL: sources também atende alimentos, treinos têmFKs editoriais e idempotência precisa de dono por comando. Não executar cutover ou mexer nos dados reais por inferência.
 2. Trabalho independente possível: dump/restore e gate de exclusões noCI, auditoria028 restante, métricas/pool/retention029 e próximos critérios032. Não declarar032 encerrada pela imagem; seu gate028 e demais critérios continuam abertos.
 3. Histórico de segredos ainda pendente, sem supressão ampla ou reescrita autorizada. Não reexecutar tokens externos para tentar validá-los.
 4. Treinos015/016 e prática continuam sem programas/instruções/doses/mídias aprovados.045 tem aceite humano/foto pendentes;042/046/026 e demais jornadas seguem o backlog. Não preencher lacunas com fixtures no produto.
 
 Commits/push autorizados. API/DB/APK de avaliação preservados; conferir estado somente quando necessário. Sem nova pesquisa ampla de fornecedores, compra, hospedagem ou deploy.
+
+## M1 concluída: usar este resultado, não repetir a preparação
+
+[Run40860200717](https://github.com/richardcastrogois/TrainForge/actions/runs/40860200717)/ff8c8bb, job123401197361: processoGo independente de catálogo, banco/roles exclusivos, migration1/reexecução0 e somente três tabelas editoriais mais controle. Teste principal e cinco subtestes passaram: equivalênciaHTTP, permissões/CONNECT privado negado, retirada antes de304/sem fallback, readiness com negativos/recuperação, timeout/cancelamento eSIGTERM. Inventário de imports exclui auth/nutrição/privacidade/treinos/migrations do runtime. Bancos e roles foram removidos. [Critérios/evidência](catalog-m1-verification.json).
+
+SwaggerM1 code-first tem cinco rotas e duas health, conferido contraAPI0.8.1/34operações. cmdapi, Flutter, Swaggerprincipal e migrations1–13 não mudaram. Nenhum recurso local foi iniciado. Mesmo commit passou Go/docs40860200725, SQLprincipal40860200692, imagem40860200696 e scannerGo40860200586; histórico de segredos continua pendente.
+
+M1 é projeção transitória de leitura, não transferência editorial ou migração do produto. Próximo passo arquitetural é especificarM2 (autoridade/fontes/publicação/retirada/frescor/consumidor047) antes de implementar troca de dono. Trabalho independente de032 pode continuar com dump/restore/gate deexclusão emCI. Nunca reutilizar as credenciais daavaliação ou criar fixtures no banco entregue.

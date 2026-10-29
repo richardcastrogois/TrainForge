@@ -59,3 +59,7 @@ O incremento HTTP0c0c531 passou Go/docs40818474388, SQL40818474391 (oito suítes
 Artefato12874570734, cerca de10MB, contém arquivo da imagem e metadata por commit/versão/digest, retidos sete dias. Identidade e logs conferidos; não houve registry push, Docker local ou deploy. O ensaio inicial falhou por caminho de versão e o segundo por pressupor mapeamento de porta em rede interna; corrigidos e preservados no recibo. O acesso do host à bridge segue a [documentaçãoDocker](https://docs.docker.com/engine/network/port-publishing/), sem abrir porta nohost.
 
 Não comprova TLS público, Google real, integração com banco, auditoria da imagem, multi-arquitetura, rebuild byte a byte ou capacidade de produção. LimitesCPU/RAM são do smoke, não recomendação de produção.032continua aberta, assim como028, dump/restore noCI, Sonar/carga e aceites finais.
+
+## Prova isolada de catálogoM1 aprovada
+
+[Run40860200717](https://github.com/richardcastrogois/TrainForge/actions/runs/40860200717)/ff8c8bb executou a prova em serviçoPostgreSQL próprio: bancos e papéis exclusivos, migration/reexecução, build doCLI e comparação do processo real com o handler anterior. Teste principal/cinco subtestes passaram, semskip. Credencial não escreve no catálogo nem conecta ao banco sentinela privado; retirada/ETag, versões, readiness com negativos, deadline/cancelamento eSIGTERM conferidos. Fixtures/papéis removidos. Somente metadados no artefato; [recibo](catalog-m1-verification.json). API/APK/avaliação preservados; não é conteúdo real ou migração editorial completa.

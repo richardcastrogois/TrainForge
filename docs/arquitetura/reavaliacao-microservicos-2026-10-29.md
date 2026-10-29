@@ -57,7 +57,7 @@ Imports de produção internos: auth→httpapi;catalog→httpapi;nutrition→aut
 
 ## Primeiro incremento proposto: leitura do catálogo público
 
-**M1 autorizada em29/10; implementação aditiva em andamento, sem cutover.** Usar o catálogo de movimentos/programas como primeira prova de processo separado. Seu pacote só importa a camadaHTTP interna; leitura depende de `sources`, `content_versions` e `content_withdrawals`. A propriedade editorial completa não estará extraída apenas por abrir outro processo.
+**M1 concluída no recorte isolado em29/10, sem cutover.** Usar o catálogo de movimentos/programas como primeira prova de processo separado. Seu pacote só importa a camadaHTTP interna; leitura depende de `sources`, `content_versions` e `content_withdrawals`. A propriedade editorial completa não estará extraída apenas por abrir outro processo.
 
 | Parte | Prova isolada proposta | Condição para a troca real |
 |---|---|---|
@@ -98,7 +98,7 @@ Retirada tem precedência sobre cache. Sem prova atual de permissão, devolver i
 | Passo | Entrega verificável | Estado |
 |---|---|---|
 | M0 | Direção gradual escolhida e acoplamentos Go/SQL documentados | Direção e limites M1 aceitos; migração real não autorizada |
-| M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Autorizado; implementação/validação isolada em andamento |
+| M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Concluído:40860200717/ff8c8bb; fixtures removidas |
 | M2 | Protocolo editorial de publicação/retirada, versões, frescor e treino047; um dono por dado | Proposto; impede cutover |
 | M3 | Ensaio de migração/restore com dados descartáveis e comparação de hashes/visibilidade; falhas de rede | Proposto; sem acesso a dados reais |
 | M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Requer escopo/autorização concreta; não iniciado |
@@ -133,7 +133,7 @@ A provaM1 lê somente as três tabelas necessárias às cinco rotas públicas nu
 
 Fotos não têm tabelas/armazenamento entregues só por estarem neste plano. Sua futura recuperação pela conta, cache e exclusão continuam nos critérios042/045/026, sem contratar provedor nesta rodada.
 
-## Implementação da prova M1 —29/10 (SQL remoto ainda pendente)
+## Prova M1 concluída —29/10
 
 Novos comandos `cmd/catalog` e `cmd/catalog-migrate`, sem editar `cmd/api`. Runtime só importa catálogo, alvo/configuração próprios e a fronteiraHTTP compartilhada. O móduloGo continua compartilhado no monorepositório; não alegar isolamento completo de dependências/builds ou transferência editorial.
 
@@ -141,7 +141,7 @@ O banco aceita somente `trainforge_catalog_test_<nonce>` em127.0.0.1:15432; pap�
 
 O contrato code-first separado está em `contracts/generated/catalog-m1.swagger.json`: cinco rotas públicas e duas de saúde, com operações/schemas conferidos contra aAPI atual. Nenhuma rota deauth/nutrição/privacidade/configuração ou SwaggerUI é registrada na prova. O processo restringe listener a127.0.0.1 e tem timeout/pool/shutdown próprios; logs continuam porallowlist.
 
-CI dedicado cria também um banco sentinela privado vazio, só para comprovar recusa deCONNECT com a credencial do catálogo. Credenciais não vêm do notebook. Executa migration/reexecução, build separado, inventário de imports e teste do processo real contra o handler anterior emHTTP. Testa permissões, paginação/versões/ETag, retirada antes de304, negação de fallback, erroSQL, timeout/cancelamento e SIGTERM. Fixtures só existem no serviço descartável. Resultado remoto precisa ser conferido no [recibo](../execucao/v1/catalog-m1-verification.json) antes de concluirM1.
+CI dedicado cria também um banco sentinela privado vazio, só para comprovar recusa deCONNECT com a credencial do catálogo. Credenciais não vêm do notebook. Executa migration/reexecução, build separado, inventário de imports e teste do processo real contra o handler anterior emHTTP. Testa permissões, paginação/versões/ETag, retirada antes de304, negação de fallback, erroSQL, timeout/cancelamento e SIGTERM. Fixtures só existem no serviço descartável. O [run40860200717](https://github.com/richardcastrogois/TrainForge/actions/runs/40860200717), commitff8c8bb, passou o teste principal e seus cinco subtestes; logs e artefato conferidos no [recibo](../execucao/v1/catalog-m1-verification.json). Migration1/reexecução0, isolamento, contratos, cache/retirada, falhas/cancelamento eSIGTERM passaram. Bancos e papéis da prova foram removidos.
 
 ```mermaid
 flowchart LR

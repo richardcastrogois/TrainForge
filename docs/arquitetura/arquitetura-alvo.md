@@ -1,6 +1,6 @@
 # Arquitetura atual e reavaliação de execução
 
-**29/10/2026:** Go0.8.1/34operações e schema13/30tabelas estão implementados como um processo modular. O autor esclareceu que sua preferência era microserviços e pediu investigação antes de escolher o rumo. A escolha Go permanece; o autor escolheu detalhar microserviços por etapas. A primeira prova de catálogo está delimitada, ainda sem cutover ou migração de dados reais. [Comparação aplicada, domínios e sequência para decisão](reavaliacao-microservicos-2026-10-29.md). Microserviços não exigem Kubernetes ou hospedagem. Não iniciar migração ampla nem assumir aprovação definitiva do monólito.
+**29/10/2026:** Go0.8.1/34operações e schema13/30tabelas estão implementados como um processo modular. O autor esclareceu que sua preferência era microserviços e pediu investigação antes de escolher o rumo. A escolha Go permanece; o autor escolheu detalhar microserviços por etapas. A primeira prova de catálogoM1 foi implementada e aprovada emCI40860200717/ff8c8bb, sem cutover ou migração de dados reais. [Comparação aplicada, domínios e sequência para decisão](reavaliacao-microservicos-2026-10-29.md). Microserviços não exigem Kubernetes ou hospedagem. Não iniciar migração ampla nem assumir aprovação definitiva do monólito.
 
 ## Registro histórico da proposta21/10
 

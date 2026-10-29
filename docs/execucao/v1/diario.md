@@ -564,3 +564,7 @@ Run40819933235/83b799f,job123269780675,passou build/smoke do runtime scratch/655
 ## 29/10/2026 — M1 expressamente autorizada e implementada para validação
 
 Autor autorizou a prova isolada. Novos comandos catalog/catalog-migrate, banco/roles exclusivos e3tabelas editoriais, semmudança do cmdapi/APK/avaliação. Guards ecompilação passaram;SwaggerM1 code-first preservou5operações/schemas existentes e inclui2health. CI dedicado preparado comsentinela privada vazia,processo real e testes decontrato/permissões/retirada/deadline/shutdown. SQL remoto ainda pendente; não concluirM1 porcompilação.
+
+## 29/10/2026 — M1 aprovada noCI e encerrada no seu recorte
+
+Run40860200717/ff8c8bb,job123401197361,aprovou processo real, imports semdomíniosprivados, migration1/rerun0, contratos/permissões/CONNECTprivado/retirada304/semfallback/readiness/deadline/cancelamento/SIGTERM. Fixtures e roles removidos; artefato12890394370/logs conferidos e fechamento porcritério registrado. Go/docs,SQLprincipal,imagem e scannerGo do mesmo commit também passaram; históricoGitcontinua pendente. NenhumSQLlocal,APKouAPIprincipais alterados. M2–M4não autorizamcutoverporinferência.
