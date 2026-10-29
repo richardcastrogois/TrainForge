@@ -34,7 +34,7 @@ def runtime_dependencies(raw):
         path=item.get('ImportPath','')
         if path.startswith('trainforge.local/api/'):
             if path not in {'trainforge.local/api/cmd/catalog','trainforge.local/api/internal/catalog',
-                'trainforge.local/api/internal/catalogruntime','trainforge.local/api/internal/catalogtarget',
+                'trainforge.local/api/internal/catalogruntime','trainforge.local/api/internal/catalogtarget','trainforge.local/api/internal/catalogauthority',
                 'trainforge.local/api/internal/platform/httpapi'}:
                 raise RuntimeError('Catalog runtime imported another business domain')
             packages.append(path)
@@ -88,9 +88,9 @@ def main():
             match=re.search(rb'catalog_migrations_applied=([0-9]+)',result.stdout)
             if not match:raise RuntimeError('Missing migration evidence')
             applied.append(int(match[1]))
-        if applied!=[1,0]:raise RuntimeError('Migration rerun not idempotent')
+        if applied!=[2,0]:raise RuntimeError('Migration rerun not idempotent')
         objects=sql("SELECT string_agg(table_schema||'.'||table_name,',' ORDER BY table_schema,table_name) FROM information_schema.tables WHERE table_schema IN('public','trainforge_v1') AND table_type='BASE TABLE';",catalog).split(',')
-        if objects!=['public.trainforge_catalog_schema_version','trainforge_v1.content_versions','trainforge_v1.content_withdrawals','trainforge_v1.sources']:
+        if objects!=['public.trainforge_catalog_schema_version','trainforge_v1.catalog_releases','trainforge_v1.content_versions','trainforge_v1.content_withdrawals','trainforge_v1.sources']:
             raise RuntimeError('Projection contains unexpected tables')
         report['migrationsAppliedAndRerun']=applied;report['catalogDatabaseTables']=objects
         binary=Path(os.environ['RUNNER_TEMP'])/'trainforge-catalog-m1'

@@ -586,3 +586,7 @@ Revisão identificou que o helperenvironment() decompilação também lia api.en
 Run40863556767/d56cabf,job123412525297,aprovou8suítes/14principais/23PASSincluindo subtestes,sem skip; concorrência exclusão/refresh e manutenção/reuso passaram individualmente. Schema13 e limpeza conferidos;artefato12892033753. M1e restore do mesmo commit também passaram.103testesPython passaram incluindo modoSDKsemleitura deapi.env. Recibos/backlog/handoff atualizados;históricoGit,028/029/032 eM2–M4permanecem comseusgates,semcutover ouavaliaçãoalterada.
 
 Validação remota do modoSDK39f4a82:40864664869/job123416273057 aprovado (ferramentas,Go test/vet/build,Swaggerprincipal/M1 eMermaid);derivados também aprovados. Gate histórico de segredos continua pendente; não houve exceção para silenciá-lo.
+
+## 29/10/2026 — M2–M4 solicitadas; primeiro incremento M2
+
+Autor autorizou implementação de todas asM, correção de gates, commit/push. Acrescentados protocolo de release/CAS/replay, migration editorial2, CLI de pacote, barreira de digest na047 e encaminhamento opt-in das5rotas semcredenciais. Go comum/vet e Swaggerpreservado passaram. Primeiro teste de timeout usou1ns incompatível comgranularidadeWindows; corrigido para servidor bloqueado e20ms. Uma literal deposicional no teste047 passou a nomearPool. SQLremoto eM3/M4aindapendentes; avaliação/privados/APKpreservados.

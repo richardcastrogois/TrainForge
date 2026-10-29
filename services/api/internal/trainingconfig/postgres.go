@@ -10,7 +10,10 @@ import (
 	"trainforge.local/api/internal/auth"
 )
 
-type Postgres struct{ Pool *pgxpool.Pool }
+type Postgres struct {
+	Pool         *pgxpool.Pool
+	CatalogGuard func(context.Context, pgx.Tx) error
+}
 
 func (p Postgres) begin(ctx context.Context, actor auth.Principal) (pgx.Tx, error) {
 	if !actorValid(actor) {
@@ -76,7 +79,22 @@ func (p Postgres) Save(ctx context.Context, actor auth.Principal, command SaveCo
 		return Snapshot{}, ErrUnavailable
 	}
 	var saved []byte
-	err = p.Pool.QueryRow(ctx, `SELECT trainforge_v1.save_training_configuration($1,$2,$3,$4::jsonb,$5::uuid)`, actor.User.ID, actor.FamilyID, actor.AccessHash, raw, key).Scan(&saved)
+	var query interface {
+		QueryRow(context.Context, string, ...any) pgx.Row
+	} = p.Pool
+	var guarded pgx.Tx
+	if p.CatalogGuard != nil && len(command.Configuration.Resources.Items) > 0 {
+		guarded, err = p.Pool.Begin(ctx)
+		if err != nil {
+			return Snapshot{}, ErrUnavailable
+		}
+		defer guarded.Rollback(ctx)
+		if p.CatalogGuard(ctx, guarded) != nil {
+			return Snapshot{}, ErrUnavailable
+		}
+		query = guarded
+	}
+	err = query.QueryRow(ctx, `SELECT trainforge_v1.save_training_configuration($1,$2,$3,$4::jsonb,$5::uuid)`, actor.User.ID, actor.FamilyID, actor.AccessHash, raw, key).Scan(&saved)
 	if err != nil {
 		var pg *pgconn.PgError
 		if errors.As(err, &pg) {
@@ -99,6 +117,9 @@ func (p Postgres) Save(ctx context.Context, actor auth.Principal, command SaveCo
 	if json.Unmarshal(saved, &result) != nil || !snapshotValid(result) {
 		return Snapshot{}, ErrUnavailable
 	}
+	if guarded != nil && guarded.Commit(ctx) != nil {
+		return Snapshot{}, ErrUnavailable
+	}
 	return result, nil
 }
 
@@ -108,6 +129,9 @@ func (p Postgres) Resources(ctx context.Context, actor auth.Principal, f Resourc
 		return nil, err
 	}
 	defer tx.Rollback(ctx)
+	if p.CatalogGuard != nil && p.CatalogGuard(ctx, tx) != nil {
+		return nil, ErrUnavailable
+	}
 	rows, err := tx.Query(ctx, `SELECT source_id,equipment_id,name_original,source_name FROM trainforge_v1.training_configuration_resources WHERE ($1='' OR position(lower($1) in lower(name_original))>0) AND (source_id COLLATE "C">$2 COLLATE "C" OR (source_id=$2 AND equipment_id>$3)) ORDER BY source_id COLLATE "C",equipment_id LIMIT $4`, f.Q, f.AfterSource, f.AfterID, f.Limit+1)
 	if err != nil {
 		return nil, ErrUnavailable
@@ -144,6 +168,9 @@ func (p Postgres) ResolveResources(ctx context.Context, actor auth.Principal, re
 		return nil, e
 	}
 	defer tx.Rollback(ctx)
+	if len(refs) > 0 && p.CatalogGuard != nil && p.CatalogGuard(ctx, tx) != nil {
+		return nil, ErrUnavailable
+	}
 	rows, e := tx.Query(ctx, "SELECT r.source_id,r.equipment_id,r.name_original,r.source_name FROM trainforge_v1.training_configuration_resources r JOIN unnest($1::text[],$2::int[]) wanted(source_id,equipment_id) USING(source_id,equipment_id) ORDER BY r.source_id COLLATE \"C\",r.equipment_id", sources, ids)
 	if e != nil {
 		return nil, ErrUnavailable

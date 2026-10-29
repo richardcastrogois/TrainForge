@@ -161,7 +161,8 @@
             "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md",
             "29/10: direção microserviços por etapas aceita para detalhamento. Prova de catálogo público proposta:5rotas,reader/banco próprios,contratos/retirada e acoplamento047explicitados. M1não implementado;APK/dados reais preservados.",
             "29/10: autor autorizou prova isolada M1. Runtime/migrator e alvo/banco/roles próprios emfixturesCI, contrato separado de5rotas+health. Código/contrato local validados; SQL/processo remoto pendentes. Recibo catalog-m1-verification.json; semcutover.",
-            "29/10: M1 isolada concluída em40860200717/ff8c8bb: migration1/rerun0, processo real, cinco rotas equivalentes, SELECT/CONNECTprivado negado, retiradas/cache/readiness/deadline/cancelamento/SIGTERM, fixtures/roles removidos. Recibo catalog-m1-verification.json. Semcutover;M2–M4propostos."
+            "29/10: M1 isolada concluída em40860200717/ff8c8bb: migration1/rerun0, processo real, cinco rotas equivalentes, SELECT/CONNECTprivado negado, retiradas/cache/readiness/deadline/cancelamento/SIGTERM, fixtures/roles removidos. Recibo catalog-m1-verification.json. Semcutover;M2–M4propostos.",
+            "docs/execucao/v1/catalog-rollout-verification.json"
           ]
         },
         {

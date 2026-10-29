@@ -14,8 +14,14 @@ import (
 //go:embed *.sql
 var files embed.FS
 
-func Apply(ctx context.Context, dsn string) (int, error) {
-	c, err := catalogtarget.Config(dsn, catalogtarget.MigratorRole)
+func Apply(ctx context.Context, dsn string) (int, error)      { return apply(ctx, dsn, false) }
+func ApplyLocal(ctx context.Context, dsn string) (int, error) { return apply(ctx, dsn, true) }
+func apply(ctx context.Context, dsn string, local bool) (int, error) {
+	target := catalogtarget.Config
+	if local {
+		target = catalogtarget.LocalConfig
+	}
+	c, err := target(dsn, catalogtarget.MigratorRole)
 	if err != nil {
 		return 0, err
 	}

@@ -1,3 +1,4 @@
+<!-- Solicitação vigente: implementar M2–M4 e corrigir gates, com commit/push; em andamento. Marcos antigos de "não autorizado" abaixo são históricos e não substituem a nova solicitação. Sem hospedagem ou rewrite Git porinferência. -->
 # Handoff vigente — TrainForge
 
 Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.

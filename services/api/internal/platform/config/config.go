@@ -10,6 +10,7 @@ import (
 )
 
 type Config struct {
+	CatalogURL     string
 	ListenAddr     string
 	DatabaseURL    string
 	Environment    string
@@ -52,6 +53,10 @@ func Load(get func(string) string) (Config, error) {
 		}
 	}
 	c.DatabaseURL = get("TF_DATABASE_URL")
+	c.CatalogURL = get("TF_CATALOG_URL")
+	if c.CatalogURL != "" && c.CatalogURL != "http://127.0.0.1:18083" {
+		return c, errors.New("invalid isolated catalog endpoint")
+	}
 	if v := get("TF_ENV"); v != "" {
 		c.Environment = v
 	}

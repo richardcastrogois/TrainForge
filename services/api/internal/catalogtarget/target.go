@@ -22,12 +22,20 @@ const RoleSQL = `SELECT current_user=$1 AND current_database()=$2 AND NOT EXISTS
  (rolsuper OR rolcreatedb OR rolcreaterole OR rolreplication OR rolbypassrls OR NOT rolcanlogin OR rolconnlimit<1 OR rolconnlimit>16))
  AND NOT EXISTS(SELECT 1 FROM pg_auth_members WHERE member=(SELECT oid FROM pg_roles WHERE rolname=current_user))`
 
-func Config(dsn, role string) (*pgxpool.Config, error) {
+func Config(dsn, role string) (*pgxpool.Config, error)      { return config(dsn, role, false) }
+func LocalConfig(dsn, role string) (*pgxpool.Config, error) { return config(dsn, role, true) }
+func config(dsn, role string, local bool) (*pgxpool.Config, error) {
+	allowedDatabase := func(name string) bool {
+		if local {
+			return name == "trainforge_catalog_dev"
+		}
+		return databaseName.MatchString(name)
+	}
 	if dsn == "" || (role != ReaderRole && role != MigratorRole) {
 		return nil, ErrTarget
 	}
 	u, e := url.Parse(dsn)
-	if e != nil || u.Scheme != "postgresql" || u.User == nil || u.User.Username() != role || u.Hostname() != "127.0.0.1" || u.Port() != "15432" || (len(u.Path) < 2 || !databaseName.MatchString(u.Path[1:])) || u.Fragment != "" {
+	if e != nil || u.Scheme != "postgresql" || u.User == nil || u.User.Username() != role || u.Hostname() != "127.0.0.1" || u.Port() != "15432" || (len(u.Path) < 2 || !allowedDatabase(u.Path[1:])) || u.Fragment != "" {
 		return nil, ErrTarget
 	}
 	password, present := u.User.Password()
@@ -48,7 +56,7 @@ func Config(dsn, role string) (*pgxpool.Config, error) {
 		return nil, ErrTarget
 	}
 	cc := c.ConnConfig
-	if cc.Host != "127.0.0.1" || cc.Port != 15432 || cc.User != role || !databaseName.MatchString(cc.Database) || len(cc.RuntimeParams) != 0 || len(cc.Fallbacks) != 0 || cc.TLSConfig != nil {
+	if cc.Host != "127.0.0.1" || cc.Port != 15432 || cc.User != role || !allowedDatabase(cc.Database) || len(cc.RuntimeParams) != 0 || len(cc.Fallbacks) != 0 || cc.TLSConfig != nil {
 		return nil, ErrTarget
 	}
 	return c, nil

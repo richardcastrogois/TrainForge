@@ -154,3 +154,13 @@ flowchart LR
     Leitor -. "CONNECT negado" .-> Sentinela["Banco privado sentinela vazio"]
     CI --> Processo
 ```
+
+## Continuação autorizada: M2–M4
+
+Autor solicitou implementar todas asM, corrigir verificações, commit/push. Autorização substitui a limitação anterior aM1 para esta transição local; nenhuma hospedagem ou reescrita forçada doGit foi autorizada.
+
+M2 emimplementação: catálogo com revisão/digest/CAS/replay e snapshots append-only de movimentos/programas/coleções; fontes alimentares não migram. Pacote preserva versões, carimbos e retiradas; remoção/alteração histórica é recusada. CLI comcredencial própria, hash deconfirmação e pacote local não autentica revisor nemaprova novosdireitos. Leitor permanece semDML e semcredencial privada.
+
+Configuração047 conserva a transação privada e revalida sessão noSQL. A projeção editorial no núcleo é um espelho de consumo/histórico para asFKs atuais, não outro escritor editorial. Operação comrecursos compara digest do espelho comrevisão remota, semcache, soblock deprojeção; divergência/rede retorna503 e não altera sessão ou rotina. Essa validação é da identidade dos recursos declarados, não elegibilidade ou prescrição. Uma publicação concorrente poderá se linearizar depois da consulta da requisição emcurso; não se promete autorização perpétua de prática.
+
+Encaminhamento é opt-in porTF_CATALOG_URL fixo emloopback. Apenas5GETs, semAuthorization/cookies/identidade, semproxy deambiente/redirect, comdeadline e resposta limitada. Falha não busca dados antigos como fallback. M3 precisa provar publicação/replay/retirada, espelho/hash, falhas, restore e preservação privada antes deM4; os marcos não estão encerrados porcompilação.

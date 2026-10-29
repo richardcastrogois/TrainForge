@@ -22,6 +22,7 @@ import (
 	"testing"
 	"time"
 	"trainforge.local/api/internal/catalog"
+	"trainforge.local/api/internal/catalogauthority"
 	"trainforge.local/api/internal/catalogtarget"
 	"trainforge.local/api/internal/platform/httpapi"
 )
@@ -311,6 +312,61 @@ func TestIsolatedCatalogM1(t *testing.T) {
 			t.Fatal("fixture unlock")
 		}
 		waitReady(t, 200)
+	})
+	t.Run("m2_immutable_publication_replay_and_withdrawal", func(t *testing.T) {
+		snapshot, digest, e := catalogauthority.Read(ctx, writer)
+		if e != nil {
+			t.Fatal("snapshot export failed")
+		}
+		release, e := catalogauthority.Publish(ctx, writer, catalogauthority.Command{PackageDigest: digest, Snapshot: snapshot})
+		if e != nil || release.Revision != 1 || release.Digest != digest {
+			t.Fatal("initial publication failed")
+		}
+		replay, e := catalogauthority.Publish(ctx, writer, catalogauthority.Command{PackageDigest: digest, Snapshot: snapshot})
+		if e != nil || replay != release {
+			t.Fatal("release replay changed")
+		}
+		head, e := client.Get(standalone + "/internal/catalog/revision")
+		if e != nil {
+			t.Fatal("revision HTTP failed")
+		}
+		var observed catalogauthority.Head
+		e = json.NewDecoder(head.Body).Decode(&observed)
+		head.Body.Close()
+		if e != nil || observed != release {
+			t.Fatal("wrong authority revision")
+		}
+		raw, _ := catalogauthority.Canonical(snapshot)
+		changed, e := catalogauthority.Decode(raw)
+		if e != nil {
+			t.Fatal(e)
+		}
+		changed.Sources[0]["name"] = "must not mutate history"
+		b, _ := catalogauthority.Canonical(changed)
+		if _, e = catalogauthority.Publish(ctx, writer, catalogauthority.Command{ExpectedRevision: 1, ExpectedDigest: digest, PackageDigest: catalogauthority.Hash(b), Snapshot: changed}); e == nil {
+			t.Fatal("historical mutation accepted")
+		}
+		if _, e = writer.Exec(ctx, `UPDATE trainforge_v1.catalog_releases SET digest=digest`); e == nil {
+			t.Fatal("SQL release mutation accepted")
+		}
+		snapshot.Withdrawals = append(snapshot.Withdrawals, map[string]any{"asset_id": "m1:movement:a", "version_sha": strings.Repeat("a", 64), "reason": "M2 synthetic withdrawal", "withdrawn_at": "2002-01-01T00:00:00+00:00"})
+		packageBody, e := catalogauthority.Canonical(snapshot)
+		if e != nil {
+			t.Fatal(e)
+		}
+		next := catalogauthority.Hash(packageBody)
+
+		second, e := catalogauthority.Publish(ctx, writer, catalogauthority.Command{ExpectedRevision: 1, ExpectedDigest: digest, PackageDigest: next, Snapshot: snapshot})
+		if e != nil || second.Revision != 2 {
+			t.Fatal("withdrawal publication failed")
+		}
+		status, _, _ := request(t, standalone, "/api/v1/catalog/movements/m1:movement:a", "")
+		if status != 404 {
+			t.Fatal("withdrawal not applied")
+		}
+		if _, e = catalogauthority.Publish(ctx, writer, catalogauthority.Command{ExpectedRevision: 1, ExpectedDigest: digest, PackageDigest: digest, Snapshot: changed}); e == nil {
+			t.Fatal("stale release accepted")
+		}
 	})
 	if err := command.Process.Signal(syscall.SIGTERM); err != nil {
 		t.Fatal("SIGTERM failed")

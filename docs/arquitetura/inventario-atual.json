@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "44e2d39ecaeb3aac5aafe094ff77e9874f76bb464abdb2101b161b7c6f7ae8e4",
+  "inputRevision": "8cb5936f9b77bffc059104fb497f474431aca8d002ce7605e5246ed10c5c3f5f",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "6551ae1e1859382cde4af1a44eae4a065c2846221fcbb3fde10d1bae282afbde",
     "contracts/generated/swagger-v1.json": "e7bd645fa1c671906bcb86e7cfd21df10654af7eec10a9fc6287b08b7265cac8",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/execucao/v1/backlog.json": "1d4f4612769af5a68b988f480c7ff27234c0b1e3805e2f98ec9caaef58037ac0",
+    "docs/execucao/v1/backlog.json": "a9d4560313bcd76225a837998f13efee24f0d355060f7bfd80a35128deb3578b",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "49c734c7f3db764eb0a84b78ccd16af3627bf93334c394e2a06b4a3909d94113",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
@@ -124,8 +124,9 @@
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "4eb70b8d46786d3802607ee646bd286107957314460460f4eb97841df334b09d",
     "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
-    "services/api/cmd/api/main.go": "27c95c9e3918503801ed346125a0bf0000b22fdca2a31dab7bfdd6128de3cb76",
-    "services/api/cmd/catalog-migrate/main.go": "b359b1145fa8c58eb404e2c050e4c54d5acc365fe857db2cfe1ab29688f90750",
+    "services/api/cmd/api/main.go": "6a94619cae861451e7b5dd7403952467c9685f201fca23fd96234fb4f71229ce",
+    "services/api/cmd/catalog-migrate/main.go": "baa58f3b644dfc8bcd5c3657f5495b04d8202e385166ca3ad968869fa6e313ff",
+    "services/api/cmd/catalog-release/main.go": "19723348d4d564413ae2369ed7cdcd15b9c37f61b409f3fe17cb2c520c0cda16",
     "services/api/cmd/catalog/main.go": "e52e0e491cb6d4e0777ad6f52fb8d4f662f103315db92c4ad2f526163fb1403c",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
@@ -147,10 +148,13 @@
     "services/api/internal/catalog/postgres_read.go": "b5b29ea2fe46c1c3093070502460479a0861da1dff4c65b5076e0b1d8af2982b",
     "services/api/internal/catalog/query.go": "d9a772b5ce811cf8faee670029366ddf5d6cd89d933e503f03df2a76fd62b291",
     "services/api/internal/catalog/read.go": "81c56d8e66dc36f3018b1853c722ad7c09b897fbaa3c3c893e4af56f6ea428d1",
-    "services/api/internal/catalogruntime/readiness.go": "d5556ec5baf3b59b5cc3f0a17728140843bc2f5f15fd2814805d9a28ae0ed97d",
-    "services/api/internal/catalogruntime/runtime.go": "1275dd424cbd4b85b13981aa822728de42ab3b71761bed9e6f07418014f6bdfb",
-    "services/api/internal/catalogschema/schema.go": "757c59d889116434acc72b7c22945be6720987e84ae8d0831fba0affc599a817",
-    "services/api/internal/catalogtarget/target.go": "4c3b60fce6144b1344cd37d743abf5024c6d54c14d9b4acb2f0a03c4b153c74f",
+    "services/api/internal/catalogauthority/publish.go": "87a4e00cc4f7efa561b2fc2f3d8c459ec18c10c8011664cec5c174e5290d0516",
+    "services/api/internal/catalogauthority/snapshot.go": "52aafcb240656ef4259e7318e0b952f7c98b538e80ce046369143d6a910c3031",
+    "services/api/internal/catalogbridge/client.go": "eb82638d242dd8c1521fcea192587aa451f05e7e0bd747bff203e1f3940c824a",
+    "services/api/internal/catalogruntime/readiness.go": "ca97bb6f3ca20df2b607472b129a72516d207d4aff20fdc06ff3eda8d6b26cc7",
+    "services/api/internal/catalogruntime/runtime.go": "83eac0f2fda18978c28e7574f112c07314631a7a1566e35ce46bfe8fb452bffd",
+    "services/api/internal/catalogschema/schema.go": "1731c52add9b947657f8fc6051117a336ff1e64f41347eff4352f23a735b494a",
+    "services/api/internal/catalogtarget/target.go": "d64cd2268b10003a0fe1f05d536fe303f8b6fe862f642264d6990d414315ddf0",
     "services/api/internal/foodnamesops/package.go": "149f7c8416af93699aa1613186fef0e4f190df303a92cbd385e7c5c0eba6e3c4",
     "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
     "services/api/internal/nutrition/doc.go": "b46f6e493e50360eea09d4faaaaff4f67317ce57acf46377742fa5416ea3441a",
@@ -176,7 +180,7 @@
     "services/api/internal/nutrition/postgres_entries.go": "4744d090a3e68e09e724f4395a9f89f0b5c712fd497c4431c395c52930122e26",
     "services/api/internal/nutrition/postgres_read.go": "b73a14fff71c9a4e8c74ef36bb3dd82976707fd1a871f78d4fba72e0d2fbccbd",
     "services/api/internal/nutrition/read.go": "23a68f95fc68a2b9704995ec7ec6a72e352f5dc20f86e375cd82ad3ffbd4100e",
-    "services/api/internal/platform/config/config.go": "40c16e2bf2e0c7e4c35b04c07014b0e1aa606f4f7e56e818e37366f930882589",
+    "services/api/internal/platform/config/config.go": "0d2e4e202a37abc5dd11057225c2fea1c5569ec7b46fa49579d18f28934c0320",
     "services/api/internal/platform/httpapi/listener.go": "ec3c0da4efc9fa26b52b2b7b4a88e78ee73ea667a5d78c351b0b53e4aabc9299",
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
     "services/api/internal/platform/httpapi/observability.go": "fcd3be9dfa325d37e96c7720e4b9df9e6ba010bd4f38bc02f71e3611fc4d7dd0",
@@ -191,7 +195,7 @@
     "services/api/internal/swaggerdocs/docs.go": "224d96563e301df63584c12b5c539e82e5b38c0aa04df3b7abc20fcabfe91d4f",
     "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
     "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
-    "services/api/internal/trainingconfig/postgres.go": "9df895926d3fca98702fc906159f41e65e213789006a6894c96913fa4d8bd1f9",
+    "services/api/internal/trainingconfig/postgres.go": "64e903486724f7adc4f3190ab794a3dbf3d00efa12e0692c58b3f4043455bd44",
     "services/api/internal/trainingconfig/resources.go": "cbe835eb25eddd1f41522747a42fa226480ba491087afd10b096a16461dc5039",
     "services/api/internal/trainingconfig/service.go": "25c855ceb641d75b7e13c3410d41e9fa8f51cca05e91ad35089bc85ff86b7fa6",
     "services/api/migrations/00001_core.sql": "e1b7d52e6149be6e74ee84213635ce3cb5a851f1797095f8aa0fba89070a57a5",
@@ -215,7 +219,7 @@
     "tools/ativar_refeicoes_local.py": "a7ec395a586c97358ed7163d37619f5bac01a78560dab288092887b25085177e",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
     "tools/avaliar_android.py": "237533eb97156589bf73e7e8a45a0072fec23186c05cb645913dad7a55c6d790",
-    "tools/catalog_m1_ci.py": "3bdbaa39c283c3045deb43ad6d2f7391e98968d05b07c79d1bc3e1ab8d530df7",
+    "tools/catalog_m1_ci.py": "7dd7eb872bd3f123ed7d0ed3db17a9e5e5346672c4f99b9605fd5d9c0106b18c",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
     "tools/db_local.py": "185f0a766675743ebda653f33e9c3c3161ad2bd1c6167ea01489fbd73156cf5e",
     "tools/db_permissions.py": "e0f7ba0c5fdf3c6da6e351b7b2d81473e8ab37c117e2b27a05d959c819d3f4e3",
@@ -281,8 +285,8 @@
     "legacyRoutes": 29,
     "httpCalls": 27,
     "legacyMatches": 12,
-    "goFiles": 69,
-    "goRegistrations": 35,
+    "goFiles": 73,
+    "goRegistrations": 36,
     "modelsInReference": 9
   },
   "groups": [
@@ -4164,6 +4168,7 @@
       "services/api/cmd/api/main.go",
       "services/api/cmd/catalog/main.go",
       "services/api/cmd/catalog-migrate/main.go",
+      "services/api/cmd/catalog-release/main.go",
       "services/api/cmd/food-names/main.go",
       "services/api/cmd/import-content/main.go",
       "services/api/cmd/import-food/main.go",
@@ -4182,6 +4187,9 @@
       "services/api/internal/catalog/postgres_read.go",
       "services/api/internal/catalog/query.go",
       "services/api/internal/catalog/read.go",
+      "services/api/internal/catalogauthority/publish.go",
+      "services/api/internal/catalogauthority/snapshot.go",
+      "services/api/internal/catalogbridge/client.go",
       "services/api/internal/catalogruntime/readiness.go",
       "services/api/internal/catalogruntime/runtime.go",
       "services/api/internal/catalogschema/schema.go",
@@ -5088,6 +5096,7 @@
       "cmd/api",
       "cmd/catalog",
       "cmd/catalog-migrate",
+      "cmd/catalog-release",
       "cmd/food-names",
       "cmd/import-content",
       "cmd/import-food",
@@ -5097,6 +5106,8 @@
       "internal/activity",
       "internal/auth",
       "internal/catalog",
+      "internal/catalogauthority",
+      "internal/catalogbridge",
       "internal/catalogruntime",
       "internal/catalogschema",
       "internal/catalogtarget",
@@ -5118,6 +5129,10 @@
       [
         "cmd/api",
         "internal/catalog"
+      ],
+      [
+        "cmd/api",
+        "internal/catalogbridge"
       ],
       [
         "cmd/api",
@@ -5154,6 +5169,14 @@
       [
         "cmd/catalog-migrate",
         "internal/catalogschema"
+      ],
+      [
+        "cmd/catalog-release",
+        "internal/catalogauthority"
+      ],
+      [
+        "cmd/catalog-release",
+        "internal/catalogtarget"
       ],
       [
         "cmd/food-names",
@@ -5196,8 +5219,20 @@
         "internal/platform/httpapi"
       ],
       [
+        "internal/catalogbridge",
+        "internal/catalogauthority"
+      ],
+      [
+        "internal/catalogbridge",
+        "internal/platform/httpapi"
+      ],
+      [
         "internal/catalogruntime",
         "internal/catalog"
+      ],
+      [
+        "internal/catalogruntime",
+        "internal/catalogauthority"
       ],
       [
         "internal/catalogruntime",
@@ -5581,6 +5616,15 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalog/handler.go",
           "line": 20
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/internal/catalog/revision",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/catalogruntime/runtime.go",
+          "line": 88
         }
       },
       {

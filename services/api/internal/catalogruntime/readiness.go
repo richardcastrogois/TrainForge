@@ -21,8 +21,8 @@ func (r Readiness) Ping(ctx context.Context) error {
  AND has_schema_privilege(current_user,'trainforge_v1','USAGE')
  AND NOT has_schema_privilege(current_user,'trainforge_v1','CREATE')
  AND NOT has_schema_privilege(current_user,'public','CREATE')
- AND (SELECT count(*) FROM information_schema.tables WHERE table_schema='trainforge_v1' AND table_type='BASE TABLE')=3
- AND NOT EXISTS(SELECT 1 FROM unnest(ARRAY['sources','content_versions','content_withdrawals']) t(name)
+ AND (SELECT count(*) FROM information_schema.tables WHERE table_schema='trainforge_v1' AND table_type='BASE TABLE')=4
+ AND NOT EXISTS(SELECT 1 FROM unnest(ARRAY['sources','content_versions','content_withdrawals','catalog_releases']) t(name)
  WHERE to_regclass('trainforge_v1.'||name) IS NULL OR NOT has_table_privilege(current_user,'trainforge_v1.'||name,'SELECT')
  OR has_table_privilege(current_user,'trainforge_v1.'||name,'INSERT,UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER')
  OR has_any_column_privilege(current_user,'trainforge_v1.'||name,'INSERT,UPDATE,REFERENCES'))

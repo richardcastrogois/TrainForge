@@ -11,12 +11,14 @@ import (
 	"strconv"
 	"time"
 	"trainforge.local/api/internal/catalog"
+	"trainforge.local/api/internal/catalogauthority"
 	"trainforge.local/api/internal/catalogtarget"
 	"trainforge.local/api/internal/platform/httpapi"
 )
 
 type Config struct {
 	Address, DSN string
+	Local        bool
 	Timeout      time.Duration
 }
 
@@ -39,14 +41,28 @@ func Load(get func(string) string) (Config, error) {
 		}
 		c.Timeout = time.Duration(n) * time.Second
 	}
-	if _, err := catalogtarget.Config(c.DSN, catalogtarget.ReaderRole); err != nil {
+	mode := get("TF_CATALOG_MODE")
+	if mode != "" && mode != "fixture" && mode != "local" {
+		return c, ErrConfig
+	}
+	c.Local = mode == "local"
+	target := catalogtarget.Config
+	if c.Local {
+		target = catalogtarget.LocalConfig
+	}
+	if _, err := target(c.DSN, catalogtarget.ReaderRole); err != nil {
 		return c, ErrConfig
 	}
 	return c, nil
 }
 
-func Open(ctx context.Context, dsn string) (*pgxpool.Pool, error) {
-	c, err := catalogtarget.Config(dsn, catalogtarget.ReaderRole)
+func Open(ctx context.Context, dsn string) (*pgxpool.Pool, error) { return open(ctx, dsn, false) }
+func open(ctx context.Context, dsn string, local bool) (*pgxpool.Pool, error) {
+	target := catalogtarget.Config
+	if local {
+		target = catalogtarget.LocalConfig
+	}
+	c, err := target(dsn, catalogtarget.ReaderRole)
 	if err != nil {
 		return nil, err
 	}
@@ -68,12 +84,27 @@ func Handler(pool *pgxpool.Pool, logger *slog.Logger, timeout time.Duration) htt
 		repo = catalog.CatalogPostgres{Pool: pool}
 	}
 	public := catalog.CatalogHandler{Reader: catalog.Reader{Repository: repo}}
-	return httpapi.New(Readiness{pool}, logger, timeout, nil, public.Register)
+	internal := func(m *http.ServeMux) {
+		m.HandleFunc("GET /internal/catalog/revision", func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Cache-Control", "no-store")
+			if pool == nil {
+				httpapi.Failure(w, r, 503, "catalog_unavailable")
+				return
+			}
+			head, e := catalogauthority.Current(r.Context(), pool)
+			if e != nil {
+				httpapi.Failure(w, r, 503, "catalog_unavailable")
+				return
+			}
+			httpapi.JSON(w, 200, head)
+		})
+	}
+	return httpapi.New(Readiness{pool}, logger, timeout, nil, public.Register, internal)
 }
 
 // Run never starts the main API, a migration or an external Google client.
 func Run(ctx context.Context, c Config, logger *slog.Logger) error {
-	pool, err := Open(ctx, c.DSN)
+	pool, err := open(ctx, c.DSN, c.Local)
 	if err != nil {
 		return err
 	}

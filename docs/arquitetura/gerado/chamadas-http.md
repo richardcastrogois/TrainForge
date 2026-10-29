@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `44e2d39ecaeb3aac`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `8cb5936f9b77bffc`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 

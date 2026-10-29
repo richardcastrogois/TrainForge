@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `44e2d39ecaeb3aac`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `8cb5936f9b77bffc`.
 
-Arquivos Go de aplicação encontrados: **69**. Registros net/http literais: **35**.
+Arquivos Go de aplicação encontrados: **73**. Registros net/http literais: **36**.
 
 ## Pacotes Go e imports atuais
 
@@ -13,60 +13,69 @@ flowchart LR
     node0["cmd/api"]
     node1["cmd/catalog"]
     node2["cmd/catalog-migrate"]
-    node3["cmd/food-names"]
-    node4["cmd/import-content"]
-    node5["cmd/import-food"]
-    node6["cmd/migrate"]
-    node7["cmd/privacy-maintenance"]
-    node8["cmd/privacy-restore"]
-    node9["internal/activity"]
-    node10["internal/auth"]
-    node11["internal/catalog"]
-    node12["internal/catalogruntime"]
-    node13["internal/catalogschema"]
-    node14["internal/catalogtarget"]
-    node15["internal/foodnamesops"]
-    node16["internal/nutrition"]
-    node17["internal/platform/config"]
-    node18["internal/platform/httpapi"]
-    node19["internal/platform/postgres"]
-    node20["internal/privacy"]
-    node21["internal/swaggerdocs"]
-    node22["internal/trainingconfig"]
-    node23["migrations"]
-    node0 -->|"import"| node10
+    node3["cmd/catalog-release"]
+    node4["cmd/food-names"]
+    node5["cmd/import-content"]
+    node6["cmd/import-food"]
+    node7["cmd/migrate"]
+    node8["cmd/privacy-maintenance"]
+    node9["cmd/privacy-restore"]
+    node10["internal/activity"]
+    node11["internal/auth"]
+    node12["internal/catalog"]
+    node13["internal/catalogauthority"]
+    node14["internal/catalogbridge"]
+    node15["internal/catalogruntime"]
+    node16["internal/catalogschema"]
+    node17["internal/catalogtarget"]
+    node18["internal/foodnamesops"]
+    node19["internal/nutrition"]
+    node20["internal/platform/config"]
+    node21["internal/platform/httpapi"]
+    node22["internal/platform/postgres"]
+    node23["internal/privacy"]
+    node24["internal/swaggerdocs"]
+    node25["internal/trainingconfig"]
+    node26["migrations"]
     node0 -->|"import"| node11
-    node0 -->|"import"| node16
-    node0 -->|"import"| node17
-    node0 -->|"import"| node18
+    node0 -->|"import"| node12
+    node0 -->|"import"| node14
     node0 -->|"import"| node19
     node0 -->|"import"| node20
     node0 -->|"import"| node21
     node0 -->|"import"| node22
-    node1 -->|"import"| node12
-    node2 -->|"import"| node13
-    node3 -->|"import"| node15
-    node4 -->|"import"| node11
-    node4 -->|"import"| node19
-    node5 -->|"import"| node16
-    node5 -->|"import"| node19
-    node6 -->|"import"| node23
-    node7 -->|"import"| node20
-    node8 -->|"import"| node20
-    node10 -->|"import"| node18
-    node11 -->|"import"| node18
-    node12 -->|"import"| node11
-    node12 -->|"import"| node14
-    node12 -->|"import"| node18
-    node13 -->|"import"| node14
-    node15 -->|"import"| node16
-    node15 -->|"import"| node19
-    node16 -->|"import"| node10
-    node16 -->|"import"| node18
-    node20 -->|"import"| node10
-    node20 -->|"import"| node18
-    node22 -->|"import"| node10
-    node22 -->|"import"| node18
+    node0 -->|"import"| node23
+    node0 -->|"import"| node24
+    node0 -->|"import"| node25
+    node1 -->|"import"| node15
+    node2 -->|"import"| node16
+    node3 -->|"import"| node13
+    node3 -->|"import"| node17
+    node4 -->|"import"| node18
+    node5 -->|"import"| node12
+    node5 -->|"import"| node22
+    node6 -->|"import"| node19
+    node6 -->|"import"| node22
+    node7 -->|"import"| node26
+    node8 -->|"import"| node23
+    node9 -->|"import"| node23
+    node11 -->|"import"| node21
+    node12 -->|"import"| node21
+    node14 -->|"import"| node13
+    node14 -->|"import"| node21
+    node15 -->|"import"| node12
+    node15 -->|"import"| node13
+    node15 -->|"import"| node17
+    node15 -->|"import"| node21
+    node16 -->|"import"| node17
+    node18 -->|"import"| node19
+    node18 -->|"import"| node22
+    node19 -->|"import"| node11
+    node19 -->|"import"| node21
+    node23 -->|"import"| node11
+    node23 -->|"import"| node21
+    node25 -->|"import"| node11
+    node25 -->|"import"| node21
 ```
 ## Anotações encontradas
 
@@ -120,6 +129,7 @@ flowchart LR
 | `GET /api/v1/catalog/programs/{id}` | [services/api/internal/catalog/handler.go:18](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/movements` | [services/api/internal/catalog/handler.go:19](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/movements/{id}` | [services/api/internal/catalog/handler.go:20](../../../services/api/internal/catalog/handler.go) |
+| `GET /internal/catalog/revision` | [services/api/internal/catalogruntime/runtime.go:88](../../../services/api/internal/catalogruntime/runtime.go) |
 | `POST /api/v1/me/foods` | [services/api/internal/nutrition/entries_handler.go:30](../../../services/api/internal/nutrition/entries_handler.go) |
 | `GET /api/v1/me/foods` | [services/api/internal/nutrition/entries_handler.go:31](../../../services/api/internal/nutrition/entries_handler.go) |
 | `POST /api/v1/me/food-entries` | [services/api/internal/nutrition/entries_handler.go:32](../../../services/api/internal/nutrition/entries_handler.go) |

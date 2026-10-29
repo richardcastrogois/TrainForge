@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "scope": "M2-M4-catalog-progressive-extraction",
+  "authorization": "User explicitly requested all M, verification fixes, commit and push. No hosting or history force-push authorized.",
+  "status": "in-progress",
+  "M2": {
+    "status": "implemented-pending-sql-proof",
+    "implemented": [
+      "Append-only editorial packages, revision/digest, predecessor CAS and replay",
+      "Own release migration2 and reader SELECT only",
+      "Bounded credential-free five-route bridge, opt-in",
+      "047 projection digest guard in the SQL transaction; private authorization remains SQL"
+    ],
+    "localGoSuitePassed": true,
+    "localGoVetPassed": true,
+    "publicSwaggerUnchangedCheckPassed": true,
+    "remoteSqlPassed": false
+  },
+  "M3": {
+    "status": "not-complete",
+    "remaining": [
+      "Fresh full-core mirror comparison and private-data preservation",
+      "Restore and stale mirror/network failure proof"
+    ]
+  },
+  "M4": {
+    "status": "not-activated",
+    "evaluationDatabaseChanged": false,
+    "apkChanged": false
+  },
+  "limits": [
+    "No new human-reviewed practice content.",
+    "Config is a routine declaration, never prescription or eligibility.",
+    "No closed M2/M3/M4 claim from compiler/unit tests."
+  ]
+}

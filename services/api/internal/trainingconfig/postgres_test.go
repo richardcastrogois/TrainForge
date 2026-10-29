@@ -62,7 +62,7 @@ func TestConfigurationPostgresLifecycle(t *testing.T) {
 	}
 	authentication, session, a := login("config-a")
 	_, otherSession, b := login("config-b")
-	store := Postgres{runtime}
+	store := Postgres{Pool: runtime}
 	service := Service{store}
 	if current, e := service.Load(ctx, a); e != nil || current != nil {
 		t.Fatal("unconfigured profile invented")
