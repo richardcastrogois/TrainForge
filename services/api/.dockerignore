@@ -1,0 +1,11 @@
+# Allowlist: no evaluation data, env, credentials, keys, migrations or local cache.
+*
+!go.mod
+!go.sum
+!cmd/
+!cmd/api/
+!cmd/api/**
+!internal/
+!internal/**
+**/*_test.go
+**/testdata/

@@ -106,3 +106,7 @@ Dump/restore em CI, imagem sem root, artefatos de entrega, Sonar, carga e audito
 Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nenhum valor bruto foi publicado. Revisão desses candidatos:79falsos positivos, duas ocorrências de URL externa assinada expirada em03/10 e seis ocorrências de URL externa com token sem validade comprovada. Nenhuma credencial do TrainForge identificada nesses87; isso não prova ausência geral de segredos.
 
 Sete campos em seis evidências atuais foram sanitizados, preservando localizador, documentos/hashes e observações históricas. [Comparação semântica](research-url-sanitization.json), [recibo](git-secret-verification.json). O histórico antigo permanece e o gate segue pendente. Não imprimir diff bruto das linhas antigas, reexecutar os tokens, contatar fornecedores, rotacionar credenciais ou reescrever o Git automaticamente. Nenhuma exceção ampla foi criada para tornar o pipeline verde.
+
+## Próxima conferência independente — imagem da API
+
+Dockerfile/.dockerignore e job de imagem preparados paraCI hospedado, semDocker local ou deploy. Runtime scratch/65532, contexto allowlist e smoke emrede interna/read-only; artefato porcommit/versão/digest por7dias. Dois testes deguard passaram; primeira execução remota ainda pendente. Conferir [recibo](api-image-verification.json) após opush; não afirmar imagem válida só porque oDockerfile existe.

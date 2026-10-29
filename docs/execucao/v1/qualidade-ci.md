@@ -51,3 +51,7 @@ O primeiro ensaio40817472948 passou cinco suítes e falhou emconsumos por depend
 Go/docs e scannerGo também aprovaram3169bea; o gate de segredos continua pendente pelo histórico. Dump/restore, carga, imagem, Sonar e aceites humanos mantêm seus critérios próprios. O diagnósticoHTTP posterior tem [recibo separado](http-observability-verification.json), sem extrapolar o resultado desses commits.
 
 O incremento HTTP0c0c531 passou Go/docs40818474388, SQL40818474391 (oito suítes, bases removidas) e scannerGo40818474380 emLinux/Windows (zero vulnerabilidades conhecidas alcançáveis detectadas). Jobs e logs conferidos; gate de histórico continua pendente.
+
+## Imagem da API emCI — preparada, execução pendente
+
+Dockerfile multi-stage usa Go1.27.3 por digest oficial e runtime scratch, UID/GID65532, binário e CA pública; tzdata embutido. Contexto por allowlist inclui apenas módulo/cmdAPI/internal, sem testes, migrations, dados locais ou assinatura. O job só roda em GitHub-hosted Linux: build, limites/read-only/capabilities removidas, rede interna, produçãoHTTP426 e modo de teste live200/ready503 sem banco, SIGTERM e arquivo por commit/versão/SHA256. Dois testes de barreiras passaram; nenhum Docker local, push de registry ou deploy executado. Primeira execução remota pendente. Não comprova TLS público, login, fluxo de negócio ou rebuild idêntico. [Recibo](api-image-verification.json).

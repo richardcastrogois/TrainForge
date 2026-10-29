@@ -548,3 +548,7 @@ Run40817964419/3169bea passou8suítes/12principais/21PASSincluindo subtestes,sem
 ## 29/10/2026 — diagnóstico HTTP aprovado noCI
 
 Commit0c0c531 passou Go/docs40818474388 (testes/vet/build/Swagger), SQL40818474391 (oito suítes/bases removidas) e scanner40818474380 emLinux/Windows (zero vulnerabilidades conhecidas alcançáveis detectadas). Jobs/logs conferidos e recibos atualizados. Handoff consolidado para remover instruções de ensaios já concluídos, preservando recibos e a pendência de histórico. ProvaM1 aguarda resposta de autorização; nenhum cutover ou novoAPK.
+
+## 29/10/2026 — imagem não root preparada
+
+BuilderGo1.27.3 por digest oficial conferido;runtime scratch/65532 com binário/CA/tzdata. Runner deimagem somente hospedado, rede interna, read-only,semcapabilities e semprivilegeescalation; artefato porcommit/versão/digest semregistry/deploy. Dois guards passaram;execução remota pendente. Docker local não executado.
