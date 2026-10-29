@@ -50,7 +50,7 @@ def main():
     admin=dict(env,PGPASSWORD=os.environ['TF_CI_PG_PASSWORD'])
     artifact=Path(os.environ['RUNNER_TEMP'])/'catalog-m1-verification';artifact.mkdir(exist_ok=True)
     service=ROOT/'services/api'
-    report={'commit':os.environ['GITHUB_SHA'],'scope':'isolated-fixture-ci-M1-only','status':'running',
+    report={'commit':os.environ['GITHUB_SHA'],'scope':'isolated-catalog-M1-M3-no-evaluation','status':'running',
         'evaluationDataAccessed':False,'apkOrApiCutover':False,'realPracticeOrGoogleValidated':False,'fixturesRemoved':False}
     def sql(statement,database='postgres'):
         if database!='postgres':disposable_name(database)

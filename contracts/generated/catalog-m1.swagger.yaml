@@ -237,10 +237,10 @@ definitions:
     type: object
 info:
   contact: {}
-  description: Isolated fixture/CI public read projection. No live editorial ownership,
-    private routes, auth, nutrition or training execution. Not a production cutover.
+  description: Versioned movement/program/collection metadata with its own database.
+    Local routing is explicit; private routes and training execution are excluded.
   title: TrainForge Catalog M1
-  version: 0.1.0
+  version: 0.2.0
 paths:
   /api/v1/catalog/filters:
     get:

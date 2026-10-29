@@ -24,7 +24,7 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.8.1
+// @version 0.9.0
 // @description Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
@@ -93,7 +93,11 @@ func run(logger *slog.Logger) error {
 			return e
 		}
 		catalogRoutes = bridge.Register
+		if c.CatalogReadMode == "local-verified" {
+			catalogRoutes = bridge.LocalVerified(pool, catalogHTTP.Register)
+		}
 		trainingStore.CatalogGuard = bridge.CheckProjection
+		db = catalogbridge.Readiness{Core: db, Catalog: bridge, Pool: pool}
 	}
 	trainingHTTP := &trainingconfig.Handler{Service: trainingconfig.Service{Repository: trainingStore}, ResourceStore: trainingStore, Authorize: authentication.Service.Authorize}
 	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, trainingHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}

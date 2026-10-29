@@ -1,3 +1,7 @@
+## Incremento vigente M2–M4
+
+Autor pediu todas asM, correção dasverificações, commit/push. M2/M3 passaram em40874689251/c68b085: publicador/CAS/replay,047guardada, retirada, espelho/rede,privados e restoreantigo comcatch-up/replay offline. [Recibo](catalog-rollout-verification.json). M4preparada: fonteAPI0.9.0/catálogo0.2.0, helpercatalog_local comcheckpoint restaurável/30tabelas e rollbacklocal-verified. Ainda não executarativação semconferir ensaio remoto do rollback/operador. Último status local:APIindisponível, APKcurrenttrue,nenhumADB. Novaautorização substitui restrições antigas aM1; semcloudouforcepushporinferência.
+
 <!-- Solicitação vigente: implementar M2–M4 e corrigir gates, com commit/push; em andamento. Marcos antigos de "não autorizado" abaixo são históricos e não substituem a nova solicitação. Sem hospedagem ou rewrite Git porinferência. -->
 # Handoff vigente — TrainForge
 

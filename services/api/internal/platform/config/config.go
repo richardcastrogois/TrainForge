@@ -10,15 +10,16 @@ import (
 )
 
 type Config struct {
-	CatalogURL     string
-	ListenAddr     string
-	DatabaseURL    string
-	Environment    string
-	MaxConns       int32
-	RequestTimeout time.Duration
-	GoogleAudience string
-	TrustedProxies []netip.Prefix
-	Swagger        bool
+	CatalogURL      string
+	CatalogReadMode string
+	ListenAddr      string
+	DatabaseURL     string
+	Environment     string
+	MaxConns        int32
+	RequestTimeout  time.Duration
+	GoogleAudience  string
+	TrustedProxies  []netip.Prefix
+	Swagger         bool
 }
 
 // Load only consumes this service's names; legacy DATABASE_URL is never inherited.
@@ -54,6 +55,13 @@ func Load(get func(string) string) (Config, error) {
 	}
 	c.DatabaseURL = get("TF_DATABASE_URL")
 	c.CatalogURL = get("TF_CATALOG_URL")
+	c.CatalogReadMode = get("TF_CATALOG_READ_MODE")
+	if c.CatalogReadMode != "" && c.CatalogReadMode != "remote" && c.CatalogReadMode != "local-verified" {
+		return c, errors.New("invalid catalog read mode")
+	}
+	if c.CatalogURL == "" && c.CatalogReadMode != "" {
+		return c, errors.New("catalog read mode requires authority endpoint")
+	}
 	if c.CatalogURL != "" && c.CatalogURL != "http://127.0.0.1:18083" {
 		return c, errors.New("invalid isolated catalog endpoint")
 	}

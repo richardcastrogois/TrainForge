@@ -17,6 +17,7 @@ import (
 	"testing"
 	"time"
 	"trainforge.local/api/internal/auth"
+	"trainforge.local/api/internal/catalog"
 	"trainforge.local/api/internal/catalogauthority"
 	"trainforge.local/api/internal/catalogbridge"
 	"trainforge.local/api/internal/catalogtarget"
@@ -244,7 +245,21 @@ func TestCatalogRolloutSQL(t *testing.T) {
 		if e != nil || len(resources) != 0 {
 			t.Fatal("withdrawn resource revived")
 		}
+
+		local := catalog.CatalogHandler{Reader: catalog.Reader{Repository: catalog.CatalogPostgres{Pool: app}}}
+		rollbackMux := http.NewServeMux()
+		bridge.LocalVerified(app, local.Register)(rollbackMux)
+		response := httptest.NewRecorder()
+		rollbackMux.ServeHTTP(response, httptest.NewRequest("GET", "/api/v1/catalog/movements/m3%3Amovement", nil))
+		if response.Code != 404 {
+			t.Fatal("verified rollback revived withdrawn content")
+		}
 		stop()
+		response = httptest.NewRecorder()
+		rollbackMux.ServeHTTP(response, httptest.NewRequest("GET", "/api/v1/catalog/movements", nil))
+		if response.Code != 503 {
+			t.Fatal("rollback hid authority outage")
+		}
 		if _, e = store.Resources(ctx, p, trainingconfig.ResourceFilter{Limit: 20}); !errors.Is(e, trainingconfig.ErrUnavailable) {
 			t.Fatal("network failure used stale data")
 		}

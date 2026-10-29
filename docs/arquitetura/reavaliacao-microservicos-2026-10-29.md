@@ -99,9 +99,9 @@ Retirada tem precedência sobre cache. Sem prova atual de permissão, devolver i
 |---|---|---|
 | M0 | Direção gradual escolhida e acoplamentos Go/SQL documentados | Direção e limites M1 aceitos; migração real não autorizada |
 | M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Concluído:40860200717/ff8c8bb; fixtures removidas |
-| M2 | Protocolo editorial de publicação/retirada, versões, frescor e treino047; um dono por dado | Proposto; impede cutover |
-| M3 | Ensaio de migração/restore com dados descartáveis e comparação de hashes/visibilidade; falhas de rede | Proposto; sem acesso a dados reais |
-| M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Requer escopo/autorização concreta; não iniciado |
+| M2 | Protocolo editorial de publicação/retirada, versões, frescor e treino047; um dono por dado | Concluído no recorte público:40874689251/c68b085 |
+| M3 | Ensaio de migração/restore com dados descartáveis e comparação de hashes/visibilidade; falhas de rede | Concluído:prepare/withdraw/restore40874689251/c68b085 |
+| M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Autorizado pelo autor; operador e rollback preparados, ativação pendente |
 
 Aceite deM1 exige: processo sem auth/nutrition/privacy/trainingconfig; credencial incapaz de ler usuários/sessões/consumos ou gravar catálogo; migração idempotente somente editorial; testes de contrato, retirada, cache304, erro deDB, timeout/cancelamento e encerramento. Nenhum segredo ou corpo pessoal nos logs. Fixtures não validam loginGoogle nem prática real. Nenhuma nova prática será liberada.
 
@@ -164,3 +164,24 @@ M2 emimplementação: catálogo com revisão/digest/CAS/replay e snapshots appen
 Configuração047 conserva a transação privada e revalida sessão noSQL. A projeção editorial no núcleo é um espelho de consumo/histórico para asFKs atuais, não outro escritor editorial. Operação comrecursos compara digest do espelho comrevisão remota, semcache, soblock deprojeção; divergência/rede retorna503 e não altera sessão ou rotina. Essa validação é da identidade dos recursos declarados, não elegibilidade ou prescrição. Uma publicação concorrente poderá se linearizar depois da consulta da requisição emcurso; não se promete autorização perpétua de prática.
 
 Encaminhamento é opt-in porTF_CATALOG_URL fixo emloopback. Apenas5GETs, semAuthorization/cookies/identidade, semproxy deambiente/redirect, comdeadline e resposta limitada. Falha não busca dados antigos como fallback. M3 precisa provar publicação/replay/retirada, espelho/hash, falhas, restore e preservação privada antes deM4; os marcos não estão encerrados porcompilação.
+
+### Operação preparada de M4
+
+FonteAPI0.9.0 ecatálogo0.2.0 mantêm os5contratos/34operações públicas. O catálogo tem4tabelas maiscontroleGoose, schema próprio2; núcleo permanece13/30. `tools/catalog_local.py activate` verifica cluster/estado, protege credenciais novas, cria apenas obancoeditorial local, gera checkpoint do núcleo e restaura em alvooffline efêmero para comparar30tabelas. Somente depois debootstrap idêntico/prontidão alteraTF_CATALOG_URL/TF_CATALOG_READ_MODE. Nenhum registro privado é escrito por esse operador. O APKexistente continua compatível.
+
+`catalog-transition` é o plano decontrole local: bootstrap só lê núcleo; mirror só avança as3tabelas editoriais comdigest/append-only; verify recusa divergência. `catalog-release` publica pacote exato na autoridade comCAS/replay, não noespelho. Importador legado fica bloqueado após registro daautoridade. Migration13/30tabelas e fontes alimentares continuam no dono anterior. Estrutura deprogramas/doses ainda não executável não ganha aprovação por esta separação.
+
+Rollback explícito usa `local-verified`: conserva autoridade remota e exige revisão/digest iguais antes/depois da resposta local, incluindo304. Semautoridade ou comretirada nova/digest divergente retorna503. Não há retorno automático à cópia antiga. A seleção do modo exigeverify antes de reiniciar somente owatcher registrado. `activate`/`rollback` não instalam APK nemfazem OAuth; aceite nativo é conferido separadamente.
+
+```mermaid
+flowchart LR
+  APK["APK: contrato preservado"] --> API["API: auth, alimentação, privacidade,047"]
+  API --> Ponte["5GETs: sem credenciais privadas"]
+  Ponte --> Cat["Catálogo: processo e reader próprios"]
+  Cat --> DB["Banco editorial:4tabelas + controle"]
+  Publicador["CLI release: CAS e pacote revisado"] --> DB
+  Publicador -. "pacote/digest" .-> Mirror["CLI mirror: projeção de consumo"]
+  Mirror --> Core["Núcleo: privados e espelho histórico"]
+  API --> Core
+  API -. "047: conferir revisão atual" .-> Cat
+```

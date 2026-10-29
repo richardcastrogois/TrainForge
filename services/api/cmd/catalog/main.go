@@ -1,4 +1,4 @@
-// Command catalog is the isolated, loopback-only M1 proof. No live API cutover.
+// Command catalog serves a loopback-only editorial authority with its own database.
 package main
 
 import (
@@ -11,8 +11,8 @@ import (
 )
 
 // @title TrainForge Catalog M1
-// @version 0.1.0
-// @description Isolated fixture/CI public read projection. No live editorial ownership, private routes, auth, nutrition or training execution. Not a production cutover.
+// @version 0.2.0
+// @description Versioned movement/program/collection metadata with its own database. Local routing is explicit; private routes and training execution are excluded.
 // @BasePath /
 // @schemes http
 func main() {
