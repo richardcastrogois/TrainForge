@@ -1,0 +1,770 @@
+{
+    "schemes": [
+        "http"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "Isolated fixture/CI public read projection. No live editorial ownership, private routes, auth, nutrition or training execution. Not a production cutover.",
+        "title": "TrainForge Catalog M1",
+        "contact": {},
+        "version": "0.1.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/api/v1/catalog/filters": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "catalog"
+                ],
+                "summary": "Source-backed catalog filters and coverage",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/catalog.CatalogFacets"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/catalog/movements": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "catalog"
+                ],
+                "summary": "List reviewed movement metadata",
+                "parameters": [
+                    {
+                        "enum": [
+                            "consultation",
+                            "practice"
+                        ],
+                        "type": "string",
+                        "description": "consultation or practice",
+                        "name": "mode",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Literal title substring",
+                        "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source environment",
+                        "name": "environment",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source population",
+                        "name": "population",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source modality",
+                        "name": "modality",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source equipment name",
+                        "name": "equipment",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source category",
+                        "name": "category",
+                        "in": "query"
+                    },
+                    {
+                        "maximum": 50,
+                        "minimum": 1,
+                        "type": "integer",
+                        "default": 20,
+                        "description": "Page size",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Opaque cursor bound to filters",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/catalog.CatalogPage"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/catalog/movements/{id}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "catalog"
+                ],
+                "summary": "Reviewed movement metadata",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Editorial movement ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact SHA-256 version",
+                        "name": "versionId",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "consultation",
+                            "practice"
+                        ],
+                        "type": "string",
+                        "description": "consultation or practice",
+                        "name": "mode",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/catalog.CatalogItem"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/catalog/programs": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "catalog"
+                ],
+                "summary": "List reviewed program and collection metadata",
+                "parameters": [
+                    {
+                        "enum": [
+                            "consultation",
+                            "practice"
+                        ],
+                        "type": "string",
+                        "description": "consultation (default) or practice; unknown requirements never imply eligibility",
+                        "name": "mode",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Literal title substring, maximum 100 UTF-8 bytes",
+                        "name": "q",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source environment; unknown values do not match",
+                        "name": "environment",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source population",
+                        "name": "population",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source modality",
+                        "name": "modality",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source equipment name",
+                        "name": "equipment",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact source category",
+                        "name": "category",
+                        "in": "query"
+                    },
+                    {
+                        "maximum": 50,
+                        "minimum": 1,
+                        "type": "integer",
+                        "default": 20,
+                        "description": "Page size",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Opaque cursor bound to the filters and page size",
+                        "name": "cursor",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/catalog.CatalogPage"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/catalog/programs/{id}": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "catalog"
+                ],
+                "summary": "Reviewed program or collection metadata",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Editorial asset ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact SHA-256 version; latest by default",
+                        "name": "versionId",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "consultation",
+                            "practice"
+                        ],
+                        "type": "string",
+                        "description": "consultation or practice",
+                        "name": "mode",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/catalog.CatalogItem"
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/health/live": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "operation"
+                ],
+                "summary": "Process liveness",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Status"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/health/ready": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "operation"
+                ],
+                "summary": "Runtime database prerequisites",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Status"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "catalog.Availability": {
+            "type": "object",
+            "properties": {
+                "consultation": {
+                    "type": "boolean"
+                },
+                "instruction": {
+                    "type": "boolean"
+                },
+                "media": {
+                    "type": "boolean"
+                },
+                "practice": {
+                    "type": "boolean"
+                },
+                "reasons": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "catalog.CatalogAudience": {
+            "type": "object",
+            "properties": {
+                "environment": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "x-nullable": true
+                },
+                "population": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "x-nullable": true
+                },
+                "supportRequired": {
+                    "type": "boolean",
+                    "x-nullable": true
+                },
+                "supportSource": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "catalog.CatalogFacets": {
+            "type": "object",
+            "properties": {
+                "categories": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "environments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "equipment": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "modalities": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "movementCount": {
+                    "type": "integer"
+                },
+                "populations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "programCount": {
+                    "type": "integer"
+                },
+                "unknownEnvironmentCount": {
+                    "type": "integer"
+                },
+                "unknownPopulationCount": {
+                    "type": "integer"
+                }
+            }
+        },
+        "catalog.CatalogItem": {
+            "type": "object",
+            "properties": {
+                "audience": {
+                    "$ref": "#/definitions/catalog.CatalogAudience"
+                },
+                "authors": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "availability": {
+                    "$ref": "#/definitions/catalog.Availability"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "kind": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "requirements": {
+                    "$ref": "#/definitions/catalog.Requirements"
+                },
+                "rights": {
+                    "$ref": "#/definitions/catalog.CatalogRights"
+                },
+                "source": {
+                    "$ref": "#/definitions/catalog.CatalogSource"
+                },
+                "sourcePublishedVersion": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "title": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "versionId": {
+                    "type": "string"
+                }
+            }
+        },
+        "catalog.CatalogPage": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/catalog.CatalogItem"
+                    }
+                },
+                "mode": {
+                    "type": "string"
+                },
+                "nextCursor": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "notice": {
+                    "type": "string"
+                }
+            }
+        },
+        "catalog.CatalogRights": {
+            "type": "object",
+            "properties": {
+                "attribution": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "deliveryConditions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "displayCredits": {
+                    "$ref": "#/definitions/catalog.Credits"
+                },
+                "label": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "licenseUrl": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "scope": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "catalog.CatalogSource": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "publisher": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "catalog.Credits": {
+            "type": "object",
+            "properties": {
+                "changes": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "creators": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "licenseLabel": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "licenseUrl": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "selectedNameCredit": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/catalog.NameCredit"
+                        }
+                    ],
+                    "x-nullable": true
+                },
+                "sourceUrl": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "title": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "warrantyNotice": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "catalog.Label": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "x-nullable": true
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "catalog.NameCredit": {
+            "type": "object",
+            "properties": {
+                "creators": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "licenseUrl": {
+                    "type": "string",
+                    "x-nullable": true
+                },
+                "sourceNameUnchanged": {
+                    "type": "boolean",
+                    "x-nullable": true
+                },
+                "translationId": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "catalog.Requirements": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/catalog.Label"
+                        }
+                    ],
+                    "x-nullable": true
+                },
+                "equipment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/catalog.Label"
+                    }
+                },
+                "modality": {
+                    "type": "string",
+                    "x-nullable": true
+                }
+            }
+        },
+        "httpapi.Problem": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "requestId": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "httpapi.Status": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

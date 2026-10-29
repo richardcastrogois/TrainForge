@@ -1,0 +1,54 @@
+name: Catálogo M1 isolado
+on:
+  push:
+    branches: [main]
+    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
+  pull_request:
+    paths: ['services/api/**', 'tools/catalog_m1_ci.py', 'tools/test_catalog_m1_ci.py', 'tools/sql_ci.py', '.github/workflows/catalog-m1.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: catalog-m1-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  public-read-proof:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17.5@sha256:aadf2c0696f5ef357aa7a68da995137f0cf17bad0bf6e1f17de06ae5c769b302
+        env:
+          POSTGRES_USER: trainforge_ci_bootstrap
+          POSTGRES_PASSWORD: ci-only-ephemeral-postgres17
+          POSTGRES_DB: postgres
+        ports: ['15432:5432']
+        options: >-
+          --health-cmd "pg_isready -U trainforge_ci_bootstrap -d postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+        with:
+          go-version-file: services/api/go.mod
+          cache-dependency-path: services/api/go.sum
+      - name: Testar barreiras antes de conectar
+        run: python -m unittest discover -s tools -p test_catalog_m1_ci.py
+      - name: Executável, banco e contratos próprios em fixtures descartáveis
+        env:
+          TF_CATALOG_M1_CI: '1'
+          TF_CI_PG_PASSWORD: ci-only-ephemeral-postgres17
+        run: python tools/catalog_m1_ci.py
+      - name: Guardar somente metadados públicos da prova
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: catalog-m1-${{ github.sha }}
+          path: ${{ runner.temp }}/catalog-m1-verification/safe-report.json
+          retention-days: 7
+          if-no-files-found: warn

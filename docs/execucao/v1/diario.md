@@ -560,3 +560,7 @@ Imagem40819581479/c35fe20 construiu runtime65532, mas smoke falhou assumindo por
 ## 29/10/2026 — imagem aprovada e recibo conferido
 
 Run40819933235/83b799f,job123269780675,passou build/smoke do runtime scratch/65532:read-only,semcapabilities/elevação,rede interna semportapublicada,produçãoHTTP426,teste live200/ready503, SIGTERM e limpeza. Artefato12874570734 porcommit/versão/digest,metadata e logs conferidos. SemDocker local,registry ou deploy. Handoff consolidado com próximos gates;M1aguarda resposta e032/028seguem abertos.
+
+## 29/10/2026 — M1 expressamente autorizada e implementada para validação
+
+Autor autorizou a prova isolada. Novos comandos catalog/catalog-migrate, banco/roles exclusivos e3tabelas editoriais, semmudança do cmdapi/APK/avaliação. Guards ecompilação passaram;SwaggerM1 code-first preservou5operações/schemas existentes e inclui2health. CI dedicado preparado comsentinela privada vazia,processo real e testes decontrato/permissões/retirada/deadline/shutdown. SQL remoto ainda pendente; não concluirM1 porcompilação.

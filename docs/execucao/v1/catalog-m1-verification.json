@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "milestone": "microservices-M1",
+  "status": "implemented-pending-remote-SQL-and-process-validation",
+  "userAuthorization": "Explicit isolated M1 proof approved; fixtures/CI only, no evaluation API/APK/database cutover.",
+  "scope": {
+    "commands": [
+      "cmd/catalog",
+      "cmd/catalog-migrate"
+    ],
+    "sharedGoModule": true,
+    "separateDisposableDatabase": true,
+    "roles": [
+      "trainforge_catalog_reader",
+      "trainforge_catalog_migrator"
+    ],
+    "businessTables": [
+      "sources",
+      "content_versions",
+      "content_withdrawals"
+    ],
+    "migrationControl": "public.trainforge_catalog_schema_version",
+    "newSchemaVersion": 1,
+    "existingApiSchemaVersionUnchanged": 13,
+    "publicOperations": 5,
+    "healthOperations": 2,
+    "contract": "contracts/generated/catalog-m1.swagger.json"
+  },
+  "local": {
+    "newCommandsCompile": true,
+    "targetAndHandlerUnitTestsPassed": true,
+    "m1SwaggerGeneratedFromGo": true,
+    "mainApiSwaggerUnchangedCheckPassed": true,
+    "sqlExecuted": false,
+    "serverOrDatabaseStarted": false
+  },
+  "remote": {
+    "verified": false,
+    "status": "pending-first-push"
+  },
+  "limits": [
+    "This is a transitional read projection, not complete editorial ownership or production microservices migration.",
+    "No live catalog copied, private data read, evaluation credentials read, APK updated or API routes redirected.",
+    "Shared module/packages are intentional; M2-M4 require publication/withdrawal/freshness, cross-domain references and migration/restore/cutover proof.",
+    "No practice, real Google login, human acceptance or scale/load validation claimed.",
+    "Existing secret history gate and stories028/029/032 remain open."
+  ]
+}

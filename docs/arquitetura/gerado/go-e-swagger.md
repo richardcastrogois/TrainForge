@@ -1,8 +1,8 @@
 # Go e Swagger: evidência de código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `d53d1ee3262f527e`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `376642918f76b428`.
 
-Arquivos Go de aplicação encontrados: **63**. Registros net/http literais: **35**.
+Arquivos Go de aplicação encontrados: **69**. Registros net/http literais: **35**.
 
 ## Pacotes Go e imports atuais
 
@@ -11,51 +11,62 @@ Setas são imports estáticos; não são chamadas HTTP nem traces de execução.
 ```mermaid
 flowchart LR
     node0["cmd/api"]
-    node1["cmd/food-names"]
-    node2["cmd/import-content"]
-    node3["cmd/import-food"]
-    node4["cmd/migrate"]
-    node5["cmd/privacy-maintenance"]
-    node6["cmd/privacy-restore"]
-    node7["internal/activity"]
-    node8["internal/auth"]
-    node9["internal/catalog"]
-    node10["internal/foodnamesops"]
-    node11["internal/nutrition"]
-    node12["internal/platform/config"]
-    node13["internal/platform/httpapi"]
-    node14["internal/platform/postgres"]
-    node15["internal/privacy"]
-    node16["internal/swaggerdocs"]
-    node17["internal/trainingconfig"]
-    node18["migrations"]
-    node0 -->|"import"| node8
-    node0 -->|"import"| node9
+    node1["cmd/catalog"]
+    node2["cmd/catalog-migrate"]
+    node3["cmd/food-names"]
+    node4["cmd/import-content"]
+    node5["cmd/import-food"]
+    node6["cmd/migrate"]
+    node7["cmd/privacy-maintenance"]
+    node8["cmd/privacy-restore"]
+    node9["internal/activity"]
+    node10["internal/auth"]
+    node11["internal/catalog"]
+    node12["internal/catalogruntime"]
+    node13["internal/catalogschema"]
+    node14["internal/catalogtarget"]
+    node15["internal/foodnamesops"]
+    node16["internal/nutrition"]
+    node17["internal/platform/config"]
+    node18["internal/platform/httpapi"]
+    node19["internal/platform/postgres"]
+    node20["internal/privacy"]
+    node21["internal/swaggerdocs"]
+    node22["internal/trainingconfig"]
+    node23["migrations"]
+    node0 -->|"import"| node10
     node0 -->|"import"| node11
-    node0 -->|"import"| node12
-    node0 -->|"import"| node13
-    node0 -->|"import"| node14
-    node0 -->|"import"| node15
     node0 -->|"import"| node16
     node0 -->|"import"| node17
-    node1 -->|"import"| node10
-    node2 -->|"import"| node9
-    node2 -->|"import"| node14
-    node3 -->|"import"| node11
-    node3 -->|"import"| node14
-    node4 -->|"import"| node18
-    node5 -->|"import"| node15
-    node6 -->|"import"| node15
-    node8 -->|"import"| node13
-    node9 -->|"import"| node13
-    node10 -->|"import"| node11
-    node10 -->|"import"| node14
-    node11 -->|"import"| node8
-    node11 -->|"import"| node13
-    node15 -->|"import"| node8
-    node15 -->|"import"| node13
-    node17 -->|"import"| node8
-    node17 -->|"import"| node13
+    node0 -->|"import"| node18
+    node0 -->|"import"| node19
+    node0 -->|"import"| node20
+    node0 -->|"import"| node21
+    node0 -->|"import"| node22
+    node1 -->|"import"| node12
+    node2 -->|"import"| node13
+    node3 -->|"import"| node15
+    node4 -->|"import"| node11
+    node4 -->|"import"| node19
+    node5 -->|"import"| node16
+    node5 -->|"import"| node19
+    node6 -->|"import"| node23
+    node7 -->|"import"| node20
+    node8 -->|"import"| node20
+    node10 -->|"import"| node18
+    node11 -->|"import"| node18
+    node12 -->|"import"| node11
+    node12 -->|"import"| node14
+    node12 -->|"import"| node18
+    node13 -->|"import"| node14
+    node15 -->|"import"| node16
+    node15 -->|"import"| node19
+    node16 -->|"import"| node10
+    node16 -->|"import"| node18
+    node20 -->|"import"| node10
+    node20 -->|"import"| node18
+    node22 -->|"import"| node10
+    node22 -->|"import"| node18
 ```
 ## Anotações encontradas
 
@@ -140,6 +151,13 @@ flowchart LR
 
 | Rota | operationId | Envia: parâmetros/body | Recebe: status e schemas | Fonte |
 | --- | --- | --- | --- | --- |
+| `GET /api/v1/catalog/filters` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/catalog.CatalogFacets"}}, "304": {"description": "Not Modified"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/catalog/movements` | não detectado | [{"enum": ["consultation", "practice"], "type": "string", "description": "consultation or practice", "name": "mode", "in": "query"}, {"type": "string", "description": "Literal title substring", "name": "q", "in": "query"}, {"type": "string", "description": "Exact source environment", "name": "environment", "in": "query"}, {"type": "string", "description": "Exact source population", "name": "population", "in": "query"}, {"type": "string", "description": "Exact source modality", "name": "modality", "in": "query"}, {"type": "string", "description": "Exact source equipment name", "name": "equipment", "in": "query"}, {"type": "string", "description": "Exact source category", "name": "category", "in": "query"}, {"maximum": 50, "minimum": 1, "type": "integer", "default": 20, "description": "Page size", "name": "limit", "in": "query"}, {"type": "string", "description": "Opaque cursor bound to filters", "name": "cursor", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/catalog.CatalogPage"}}, "304": {"description": "Not Modified"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/catalog/movements/{id}` | não detectado | [{"type": "string", "description": "Editorial movement ID", "name": "id", "in": "path", "required": true}, {"type": "string", "description": "Exact SHA-256 version", "name": "versionId", "in": "query"}, {"enum": ["consultation", "practice"], "type": "string", "description": "consultation or practice", "name": "mode", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/catalog.CatalogItem"}}, "304": {"description": "Not Modified"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "404": {"description": "Not Found", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/catalog/programs` | não detectado | [{"enum": ["consultation", "practice"], "type": "string", "description": "consultation (default) or practice; unknown requirements never imply eligibility", "name": "mode", "in": "query"}, {"type": "string", "description": "Literal title substring, maximum 100 UTF-8 bytes", "name": "q", "in": "query"}, {"type": "string", "description": "Exact source environment; unknown values do not match", "name": "environment", "in": "query"}, {"type": "string", "description": "Exact source population", "name": "population", "in": "query"}, {"type": "string", "description": "Exact source modality", "name": "modality", "in": "query"}, {"type": "string", "description": "Exact source equipment name", "name": "equipment", "in": "query"}, {"type": "string", "description": "Exact source category", "name": "category", "in": "query"}, {"maximum": 50, "minimum": 1, "type": "integer", "default": 20, "description": "Page size", "name": "limit", "in": "query"}, {"type": "string", "description": "Opaque cursor bound to the filters and page size", "name": "cursor", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/catalog.CatalogPage"}}, "304": {"description": "Not Modified"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/catalog/programs/{id}` | não detectado | [{"type": "string", "description": "Editorial asset ID", "name": "id", "in": "path", "required": true}, {"type": "string", "description": "Exact SHA-256 version; latest by default", "name": "versionId", "in": "query"}, {"enum": ["consultation", "practice"], "type": "string", "description": "consultation or practice", "name": "mode", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/catalog.CatalogItem"}}, "304": {"description": "Not Modified"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "404": {"description": "Not Found", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/health/live` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/httpapi.Status"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
+| `GET /api/v1/health/ready` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/httpapi.Status"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/catalog-m1.swagger.json:1](../../../contracts/generated/catalog-m1.swagger.json) |
 | `POST /api/v1/auth/google` | não detectado | [{"description": "Google ID token", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/auth.GoogleRequest"}}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/auth.Session"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `POST /api/v1/auth/logout` | não detectado | [{"description": "Refresh token of the device", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/auth.RefreshRequest"}}] | {"204": {"description": "No Content"}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `POST /api/v1/auth/refresh` | não detectado | [{"description": "Single-use refresh token", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/auth.RefreshRequest"}}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/auth.Session"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |

@@ -73,7 +73,9 @@ jobs:
           go vet ./...
           go build ./cmd/api
       - name: Conferir Swagger dos comentários e DTOs reais
-        run: python tools/gerar_swagger.py --check
+        run: |
+          python tools/gerar_swagger.py --check
+          python tools/gerar_catalogo_m1_swagger.py --check
       - name: Disponibilizar derivados para leitura e revisão
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:

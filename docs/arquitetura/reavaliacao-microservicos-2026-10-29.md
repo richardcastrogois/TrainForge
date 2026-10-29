@@ -1,6 +1,6 @@
 # Reavaliar microserviços Go — 29/10/2026
 
-**Direção escolhida pelo autor em29/10: microserviços por etapas.** O detalhamento foi aprovado; a primeira prova abaixo ainda requer delimitação/aceite antes de alterar processos, dados ou rotas da avaliação. O autor esclareceu que pretendia microserviços desde o início e continua propenso a esse rumo. A escolha Go permanece; a recomendação anterior de monólito modular deixa de representar uma decisão definitiva sobre a arquitetura de execução. O APK25, os contratos e os dados existentes são a referência de compatibilidade.
+**Direção escolhida pelo autor em29/10: microserviços por etapas.** Autor autorizou a implementação isolada M1 em29/10, somente fixtures/CI. M2–M4, processos/dados/rotas da avaliação continuam sem cutover aprovado. O autor esclareceu que pretendia microserviços desde o início e continua propenso a esse rumo. A escolha Go permanece; a recomendação anterior de monólito modular deixa de representar uma decisão definitiva sobre a arquitetura de execução. O APK25, os contratos e os dados existentes são a referência de compatibilidade.
 
 ## O que existe e o que está acoplado
 
@@ -57,7 +57,7 @@ Imports de produção internos: auth→httpapi;catalog→httpapi;nutrition→aut
 
 ## Primeiro incremento proposto: leitura do catálogo público
 
-**Escopo para revisão, ainda sem implementação/cutover.** Usar o catálogo de movimentos/programas como primeira prova de processo separado. Seu pacote só importa a camadaHTTP interna; leitura depende de `sources`, `content_versions` e `content_withdrawals`. A propriedade editorial completa não estará extraída apenas por abrir outro processo.
+**M1 autorizada em29/10; implementação aditiva em andamento, sem cutover.** Usar o catálogo de movimentos/programas como primeira prova de processo separado. Seu pacote só importa a camadaHTTP interna; leitura depende de `sources`, `content_versions` e `content_withdrawals`. A propriedade editorial completa não estará extraída apenas por abrir outro processo.
 
 | Parte | Prova isolada proposta | Condição para a troca real |
 |---|---|---|
@@ -97,8 +97,8 @@ Retirada tem precedência sobre cache. Sem prova atual de permissão, devolver i
 
 | Passo | Entrega verificável | Estado |
 |---|---|---|
-| M0 | Direção gradual escolhida e acoplamentos Go/SQL documentados | Direção aceita; limites da primeira prova em revisão |
-| M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Proposto; ainda não implementado |
+| M0 | Direção gradual escolhida e acoplamentos Go/SQL documentados | Direção e limites M1 aceitos; migração real não autorizada |
+| M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Autorizado; implementação/validação isolada em andamento |
 | M2 | Protocolo editorial de publicação/retirada, versões, frescor e treino047; um dono por dado | Proposto; impede cutover |
 | M3 | Ensaio de migração/restore com dados descartáveis e comparação de hashes/visibilidade; falhas de rede | Proposto; sem acesso a dados reais |
 | M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Requer escopo/autorização concreta; não iniciado |
@@ -132,3 +132,25 @@ Conferido nas migrations1–13, sem consultar o banco de avaliação. A tabela d
 A provaM1 lê somente as três tabelas necessárias às cinco rotas públicas numa projeção descartável. A extração editorial completa também precisa tratar lotes, vínculos e estrutura de programas. Conteúdo continua sem prática aprovada. Fonte compartilhada, FKs editoriais de treinos e idempotência são motivos concretos para etapasM2/M3 antes do cutover; não são autorização para deixar vários serviços gravarem o mesmo banco.
 
 Fotos não têm tabelas/armazenamento entregues só por estarem neste plano. Sua futura recuperação pela conta, cache e exclusão continuam nos critérios042/045/026, sem contratar provedor nesta rodada.
+
+## Implementação da prova M1 —29/10 (SQL remoto ainda pendente)
+
+Novos comandos `cmd/catalog` e `cmd/catalog-migrate`, sem editar `cmd/api`. Runtime só importa catálogo, alvo/configuração próprios e a fronteiraHTTP compartilhada. O móduloGo continua compartilhado no monorepositório; não alegar isolamento completo de dependências/builds ou transferência editorial.
+
+O banco aceita somente `trainforge_catalog_test_<nonce>` em127.0.0.1:15432; papéis exclusivos `trainforge_catalog_reader` e `trainforge_catalog_migrator`. Leitor sóSELECT nas três tabelas; a migration1 própria adiciona somente essas tabelas e um controleGoose separado. O nome de schema `trainforge_v1` é conservado dentro de outro banco apenas para reutilizar o SQL existente, sem copiar tabelas privadas ou conectar à avaliação.
+
+O contrato code-first separado está em `contracts/generated/catalog-m1.swagger.json`: cinco rotas públicas e duas de saúde, com operações/schemas conferidos contra aAPI atual. Nenhuma rota deauth/nutrição/privacidade/configuração ou SwaggerUI é registrada na prova. O processo restringe listener a127.0.0.1 e tem timeout/pool/shutdown próprios; logs continuam porallowlist.
+
+CI dedicado cria também um banco sentinela privado vazio, só para comprovar recusa deCONNECT com a credencial do catálogo. Credenciais não vêm do notebook. Executa migration/reexecução, build separado, inventário de imports e teste do processo real contra o handler anterior emHTTP. Testa permissões, paginação/versões/ETag, retirada antes de304, negação de fallback, erroSQL, timeout/cancelamento e SIGTERM. Fixtures só existem no serviço descartável. Resultado remoto precisa ser conferido no [recibo](../execucao/v1/catalog-m1-verification.json) antes de concluirM1.
+
+```mermaid
+flowchart LR
+    APK["APK preservado"] --> API["API atual preservada"]
+    API --> Dados["Banco de avaliação preservado"]
+    CI["CI dedicado: fixtures"] --> Mig["catalog-migrate: credencial própria"]
+    Mig --> Projecao["Banco catálogo: 3 tabelas + controle"]
+    Processo["Processo catalog: 5 rotas + saúde"] --> Leitor["Reader só SELECT"]
+    Leitor --> Projecao
+    Leitor -. "CONNECT negado" .-> Sentinela["Banco privado sentinela vazio"]
+    CI --> Processo
+```

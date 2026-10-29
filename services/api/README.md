@@ -48,3 +48,7 @@ Privacidade: [implementação e limites](../../docs/execucao/v1/privacidade-013.
 ## Imagem para avaliação noCI
 
 Dockerfile multi-stage e contexto por allowlist geram runtime scratch com UID/GID65532, CA pública e tzdata embutido. [Run40819933235](https://github.com/richardcastrogois/TrainForge/actions/runs/40819933235) aprovou build/smoke somente no runner; [recibo](../../docs/execucao/v1/api-image-verification.json) contém commit, versão, imageID, SHA256 do arquivo e limites. Artefato retido sete dias, sem registry push ou deploy. Não executamos Docker no notebook nem copiamos dados de avaliação. TLS/banco/Google e entregaAPK têm gates próprios; a imagem não contém migrations ou credenciais.
+
+## Prova isolada de catálogoM1
+
+`cmd/catalog` e `cmd/catalog-migrate` são aditivos e restritos ao banco descartável próprio da prova. Não são o caminho doAPK ou uma migration da avaliação. Papéis e comandos separados, cinco rotas públicas existentes e duas de saúde; [plano e limites](../../docs/arquitetura/reavaliacao-microservicos-2026-10-29.md), [contrato gerado](../../contracts/generated/catalog-m1.swagger.json) e [evidência](../../docs/execucao/v1/catalog-m1-verification.json). Fixtures SQL/processo somente noCI dedicado; não reutilizar o helper de banco real ou rodar migrations do monólito nessa projeção.
