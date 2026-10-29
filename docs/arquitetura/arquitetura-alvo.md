@@ -1,4 +1,8 @@
-# Arquitetura proposta e decisão sobre Go
+# Arquitetura atual e reavaliação de execução
+
+**29/10/2026:** Go0.8.0/34operações e schema13/30tabelas estão implementados como um processo modular. O autor esclareceu que sua preferência era microserviços e pediu investigação antes de escolher o rumo. A escolha Go permanece; a arquitetura de execução está em reavaliação. [Comparação aplicada, domínios e sequência para decisão](reavaliacao-microservicos-2026-10-29.md). Microserviços não exigem Kubernetes ou hospedagem. Não iniciar migração ampla nem assumir aprovação definitiva do monólito.
+
+## Registro histórico da proposta21/10
 
 **Proposta de 21/10/2026; implementação ainda não iniciada.** Recomendação: Flutter compartilhado Android/iOS, **API Go como monólito modular** e PostgreSQL. Um processo de API, módulos internos por domínio e um banco com transações. A migração atende à direção do autor e à revisão de domínio necessária; não é uma correção automática de desempenho.
 

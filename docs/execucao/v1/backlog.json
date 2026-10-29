@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "title": "TrainForge — entrega V1 Android e evolução Android/iOS",
   "statusRule": "done exige critérios e completionEvidence; código detectado não conclui história.",
   "next": "V1-015",
@@ -147,7 +147,7 @@
             "ADR final",
             "Mapa de compatibilidade e fronteiras"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Reavaliação documentada, sem decomposição aprovada; done histórico não é aprovação definitiva do monólito.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
@@ -156,6 +156,9 @@
               ],
               "result": "Go modular escolhido pela direcao do autor e pedido de executar etapas; fronteira de banco/rotas/migrador e ausencia de dualwrite registradas; Go1.27.3portatil baixado comchecksum e versao executada, sem migration de producao."
             }
+          ],
+          "workEvidence": [
+            "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md"
           ]
         },
         {
@@ -3011,11 +3014,12 @@
             "Workflow CI",
             "Imagem da API e metadados de release"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota ainda pendente; não concluir032 nem028.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/qualidade-ci.md",
-            "docs/execucao/v1/ci-flutter-verification.json"
+            "docs/execucao/v1/ci-flutter-verification.json",
+            "docs/execucao/v1/ci-sql-verification.json"
           ]
         },
         {
@@ -3655,5 +3659,5 @@
       ]
     }
   ],
-  "currentPriority": "28/10:045com seleção particular e edição de metadados;APK25 instalado e navegação conferida após autor salvar/sair,API0.8.0/34/schema13/30. Criação/consulta humana foi teste de navegação;aceite real/correção/exclusão e foto042 pendentes. Preservar dados; reler tela antes de agir.015/016 semconteúdo aprovado;continuar trabalho independente sem concluir indevidamente. Parada solicitada pelo autor após o checkpoint28/10. Na próxima retomada, ler handoff; não continuar automaticamente."
+  "currentPriority": "29/10: trabalho retomado.015/016 sem conteúdo humano aprovado para prática;045 com aceite real/correção/exclusão/foto pendentes. Autor pediu reavaliar microserviços Go antes da decisão; não executar decomposição ampla por inferência. Avançar CI SQL e trabalho independente com critérios explícitos, preservando APK25 e dados."
 }

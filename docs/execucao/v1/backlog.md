@@ -73,7 +73,7 @@ Validação: Revisão do inventário de contratos; Checar ausência de dual writ
 
 Entregas: ADR final; Mapa de compatibilidade e fronteiras
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Reavaliação documentada, sem decomposição aprovada; done histórico não é aprovação definitiva do monólito.
 
 ### V1-003 — Manter documentação arquitetural dinâmica no repositório
 
@@ -1359,7 +1359,7 @@ Validação: Pipeline completo no repositório autorizado; Rebuild e conferênci
 
 Entregas: Workflow CI; Imagem da API e metadados de release
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota ainda pendente; não concluir032 nem028.
 
 ### V1-033 — Implantar staging e conferir restauração
 

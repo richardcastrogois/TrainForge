@@ -20,3 +20,10 @@ A primeira execução remota foi conferida: [Flutter40690557153](https://github.
 - Imagem sem root, artefatos identificados por commit/digest e distribuição segura; assinatura e deploy continuam fora de PRs sem confiança.
 - Auditoria028 completa, Sonar/quality gate, observabilidade029 e baseline de carga030. Nenhuma conclusão sobre milhões de usuários é sustentada por esta automação.
 - Aceite humano/nativo das jornadas, offline026, foto042 e release continuam com seus critérios. Não concluir032 por automatizar apenas Go/documentação/Flutter.
+
+
+## CI SQL em preparação —29/10
+
+[WorkflowSQL](../../../.github/workflows/sql.yml) usa serviço PostgreSQL17.5 por digest oficial, roles migrator/runtime separadas e base aleatória descartável. [Runner](../../../tools/sql_ci.py) exige GitHub-hosted Linux, checkout correto, ausência de configuração/estado de avaliação e cluster novo; não tem modo local. Aplica migrations duas vezes e executa SQL/HTTP de refeições e o ciclo SQL de exportação/exclusão/rollback de privacidade. Os grants são a mesma fonte do helper local, sem ampliar privilégios.3barreiras locais e equivalência de4variantes passaram; primeira execução remota ainda deve ser conferida. [Recibo](ci-sql-verification.json).
+
+Não inclui todas as suítes SQL nem dump/restore noCI; PostgreSQL17.5 é paridade de fixture, não recomendação de produção ou conclusão da auditoria de dependências. Nenhum secret da conta, assinatura Android ou dados de negócio entra no runner. A credencial literal do serviço é descartável; senhas dos dois papéis são geradas e mascaradas durante o job.

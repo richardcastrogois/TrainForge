@@ -1,8 +1,10 @@
 # Handoff vigente — TrainForge
 
-Atualizado em **28/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
+Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
-**Checkpoint encerrado e trabalho parado a pedido do autor.** Retomar somente mediante nova solicitação. API/banco/emulador foram mantidos ativos para uso local; isso não é trabalho autônomo continuando.
+**Trabalho retomado pelo autor em29/10.** Sua nova solicitação revoga a parada anterior. Git inicialmente limpo em3f94bb3; helper29/10 informou apiReady:false, apkCurrent:true e nenhum dispositivo conectado. Não iniciar recursos ou repetir aceite por hábito.
+
+**Arquitetura:** autor pretendia microserviços desde o início e quer reavaliar. [Comparação aplicada e plano para decisão](../../arquitetura/reavaliacao-microservicos-2026-10-29.md). Go mantido, execução atual monolítica confirmada; nenhuma decomposição aprovada. Continuar tarefas independentes de contratos/dados/qualidade enquanto se define o rumo.
 
 ## Próxima ação
 
@@ -86,3 +88,8 @@ Graphify conferido novamente:0Dart alterados/116inalterados,4254nós/4998arestas
 045 precisa de aceite real/correção/exclusão e foto042;015/016 têm bloqueio editorial e implementação pendente. Depois, foto/refeições/análise046, offline026, auditoria/master/observabilidade/carga e entrega seguem dependências. CI Flutter já executou; migrations/SQL noCI, Sonar e imagem/artefatos de entrega ainda faltam. Nenhuma refatoração de grants ou runner SQL provisório ficou em aberto.
 
 A [explicação da arquitetura atual](../../arquitetura/camadas-go.md) registra por que usamos monólito modular, o papel do main, a transação de refeições e os critérios para eventual extração. Não prometer milhões nem migração automática para microserviços.
+
+
+## Incremento independente29/10 — CI SQL
+
+Runner dedicado somente a GitHub-hosted Linux com PostgreSQL novo, sem modo local. Recusa configuração de conexão preexistente, credenciais/estado .local e nomes de base fora do prefixo descartável. Usa os mesmos grants extraídos do helper local; equivalência byte a byte nas4combinações de módulos conferida sem SQL.3testes de barreiras passaram e execução no notebook foi recusada antes de conectar. Primeira execução SQL remota ainda pendente; não registrar integração SQL aprovada antes dela. [Recibo](ci-sql-verification.json).

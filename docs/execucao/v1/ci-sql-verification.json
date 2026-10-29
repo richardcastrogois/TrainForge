@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "story": "V1-032",
+  "status": "partial",
+  "scope": "hosted-disposable-migrations-meal-and-privacy-ci",
+  "localChecks": {
+    "guardTestsPassed": 3,
+    "desktopExecutionRefusedBeforeConnection": true,
+    "allFourGrantVariantsByteIdenticalToPriorCommit": true,
+    "localBusinessDatabaseTouched": false
+  },
+  "image": {
+    "name": "postgres:17.5",
+    "digest": "sha256:aadf2c0696f5ef357aa7a68da995137f0cf17bad0bf6e1f17de06ae5c769b302",
+    "digestSource": "https://hub.docker.com/v2/repositories/library/postgres/tags/17.5",
+    "digestVerifiedOn": "2026-10-28",
+    "purpose": "test parity with local PostgreSQL, not production version/security recommendation"
+  },
+  "remote": {
+    "verified": false,
+    "status": "pending-first-push"
+  },
+  "limits": [
+    "No real Google or human meal acceptance.",
+    "SQL fixture integration must be verified in hosted runner after push.",
+    "This scope does not run every SQL suite, dump/restore or load in CI.",
+    "Audit028, image/delivery artifacts, Sonar and release remain pending."
+  ]
+}

@@ -496,3 +496,10 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 - Graphify novamente atualizado/conferido:0alterados/116inalterados,4254nós/4998arestas e HTMLexportado semLLM. Helper informou apiReady/apkCurrent e emulador conectado.
 - Explicação do monólito modular atualizada nas camadasGo:main compõe, domínios separados, transação de refeições e limites/extração por necessidade medida. Não houve alteração do contrato/Swagger Go.
 - Autor pediu finalizar o checkpoint, registrar estado, commitar e parar. Nenhuma refatoração/runnerSQL parcial foi deixada; API/banco/emulador mantidos para seu uso. Próxima retomada permanece nohandoff, com045e demais histórias incompletas explicitamente abertas.
+
+
+## 29/10/2026 — retomada, reavaliação de arquitetura e CI SQL
+
+- Git limpo em3f94bb3; helper informou API parada, APK25 atual e nenhum dispositivo. Não houve reinício, Google ou nova escrita de dados.
+- Autor esclareceu preferência por microserviços. Comparação com fontes primárias Microsoft/AWS e acoplamentos Go/SQL reais documentada; Go mantido e decisão de execução em discussão. Nenhuma reescrita ampla executada.
+- CI SQL descartável implementado: cluster novo GitHub-hosted, roles/grants compartilhados, migrations/reexecução e fixtures de refeições/privacidade. Equivalência exata dos grants em4combinações e3testes de barreiras aprovados; notebook recusado antes de conectar. Integração remota ainda pendente.
