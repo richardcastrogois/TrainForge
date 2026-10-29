@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  meal-privacy:
+  domain-sql:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     services:
@@ -44,8 +44,16 @@ jobs:
           cache-dependency-path: services/api/go.sum
       - name: Validar barreiras antes de conectar
         run: python -m unittest discover -s tools -p test_sql_ci.py
-      - name: Migrations, rerun e integração SQL/HTTP de refeições e privacidade
+      - name: Migrations, rerun e oito suítes SQL isoladas
         env:
           TF_SQL_CI: '1'
           TF_CI_PG_PASSWORD: ci-only-ephemeral-postgres17
         run: python tools/sql_ci.py
+      - name: Publicar apenas metadados dos testes SQL
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sql-verification-${{ github.sha }}
+          path: ${{ runner.temp }}/sql-verification/safe-report.json
+          if-no-files-found: warn
+          retention-days: 7

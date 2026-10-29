@@ -532,3 +532,7 @@ Não declarar todos07–12 concluídos: configuração persistida, treino/ativid
 ## 29/10/2026 — direção gradual de microserviços
 
 Autor escolheu detalhar microserviços por etapas. PropostaM0–M4 incorporada ao estudo existente: catálogo público como primeira prova isolada,cinco rotas compatíveis,base/reader/migrator próprios e limites de retirada/frescor/rollback. AcoplamentoSQL de047explicita por que abrir outro processo não conclui a extração. Nenhuma mudança deAPK, dados reais ou novos processos.
+
+## 29/10/2026 — ampliação independente doCI SQL
+
+8suítes/12testes principais já existentes passaram a ser selecionados explicitamente pelo runner, cada suíte com base/ambiente separados; parser recusa skip/falha/ausência e publica apenas metadados.5testes de barreiras/parser passaram. Integração remota ampliada ainda pendente; não executada no notebook.

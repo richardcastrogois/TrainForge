@@ -61,5 +61,77 @@
     "normalRuntimeRecoveredAfterEachCase": true,
     "mealAndPrivacyRegressionPassed": true,
     "disposableDatabaseRemoved": true
+  },
+  "extendedDomainSuites": {
+    "status": "implemented-pending-first-remote-execution",
+    "suiteCount": 8,
+    "topLevelTestCount": 12,
+    "suites": [
+      {
+        "id": "privacy",
+        "databasePrefix": "trainforge_v1_privacy_test_",
+        "expectedTests": [
+          "TestPostgresRuntimeReadiness",
+          "TestMealPostgresAtomicOwnershipReplayAndPrivacy",
+          "TestMealPostgresDayBoundAndLegacy",
+          "TestMealPostgresHTTPContractAndBoundaries",
+          "TestPrivacyPostgresOwnerExportConfirmedDeletionAndRollback"
+        ]
+      },
+      {
+        "id": "auth",
+        "databasePrefix": "trainforge_v1_auth_test_",
+        "expectedTests": [
+          "TestPostgresIsolatedSessionLifecycle"
+        ]
+      },
+      {
+        "id": "catalog",
+        "databasePrefix": "trainforge_v1_catalog_test_",
+        "expectedTests": [
+          "TestCatalogPostgresAndConditionalWithdrawal"
+        ]
+      },
+      {
+        "id": "food-import",
+        "databasePrefix": "trainforge_v1_food_test_",
+        "expectedTests": [
+          "TestFoodPostgresIdempotencyRollbackAndReadonlyRuntime"
+        ]
+      },
+      {
+        "id": "food-read",
+        "databasePrefix": "trainforge_v1_food_test_",
+        "expectedTests": [
+          "TestFoodPublicPostgresVisibilityPaginationAndWithdrawal"
+        ]
+      },
+      {
+        "id": "nutrition",
+        "databasePrefix": "trainforge_v1_nutrition_test_",
+        "expectedTests": [
+          "TestNutritionPostgresLifecycle"
+        ]
+      },
+      {
+        "id": "names",
+        "databasePrefix": "trainforge_v1_names_test_",
+        "expectedTests": [
+          "TestFoodNamesPostgresImmutabilityAndRuntimePermissions"
+        ]
+      },
+      {
+        "id": "configuration",
+        "databasePrefix": "trainforge_v1_config_test_",
+        "expectedTests": [
+          "TestConfigurationPostgresLifecycle"
+        ]
+      }
+    ],
+    "guards": "Each suite has its own disposable DB and TF_* environment; missing/skip/fail/duplicate events fail. Captured raw Go output is not published.",
+    "localGuardTests": 5,
+    "evaluationDatabaseAccessed": false,
+    "artifact": "sql-verification-<commit>/safe-report.json",
+    "dumpRestoreInCI": false
   }
 }

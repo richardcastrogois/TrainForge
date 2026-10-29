@@ -1,7 +1,8 @@
 import tempfile
 from pathlib import Path
 import unittest
-from sql_ci import check_environment, disposable_name
+import json
+from sql_ci import check_environment, disposable_name, test_events, SUITES
 
 
 class SqlCiGuards(unittest.TestCase):
@@ -32,3 +33,31 @@ class SqlCiGuards(unittest.TestCase):
         for target in ['trainforge_v1_dev','postgres','trainforge_v1_privacy_test_000000000000; DROP DATABASE postgres','trainforge_v1_privacy_test_../dev']:
             with self.subTest(target=target),self.assertRaises(RuntimeError):disposable_name(target)
         self.assertEqual(disposable_name('trainforge_v1_privacy_test_012345abcdef'),'trainforge_v1_privacy_test_012345abcdef')
+
+
+class SqlTestEvidence(unittest.TestCase):
+    def event(self,name,action='pass'):
+        return json.dumps({'Action':action,'Test':name,'Output':'sensitive-output-must-not-publish'})
+
+    def test_missing_skipped_failed_or_bad_evidence_is_rejected(self):
+        for raw in ['', self.event('Other'), self.event('Expected','skip'),
+                    self.event('Expected','fail'), 'raw secret', '[]',
+                    self.event('Expected')+'\n'+self.event('Expected/child','skip'),
+                    self.event('Expected','fail')+'\n'+self.event('Expected')]:
+            with self.subTest(raw=raw),self.assertRaises(RuntimeError): test_events(raw,['Expected'])
+        result=test_events(self.event('Expected')+'\n'+self.event('Expected/child'),['Expected'])
+        self.assertEqual(result,[{'test':'Expected','result':'pass'},{'test':'Expected/child','result':'pass'}])
+        self.assertNotIn('sensitive-output',str(result))
+
+    def test_every_suite_uses_an_allowlisted_disposable_database_and_explicit_test(self):
+        self.assertEqual(len(SUITES),8)
+        self.assertEqual(len({s[0] for s in SUITES}),8)
+        for _,prefix,commands,variables in SUITES:
+            disposable_name('trainforge_v1_'+prefix+'_test_012345abcdef')
+            self.assertTrue(commands)
+            self.assertTrue(variables)
+            self.assertTrue(all(role in ('runtime','migrator') for role in variables.values()))
+            for package,expected in commands:
+                self.assertTrue(package.startswith('./internal/'))
+                self.assertTrue(expected)
+                self.assertTrue(all(name.startswith('Test') for name in expected))

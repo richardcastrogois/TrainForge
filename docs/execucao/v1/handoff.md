@@ -108,3 +108,7 @@ ScannerGo oficialv1.9.0 fixado paraLinux/Windows noCI; não instalado no noteboo
 ## Segredos Git028 — execução e revisão29/10
 
 Run40815286943/9b712b0 falhou com87candidatos; redaction sintético passou e nenhum valor bruto foi publicado. Revisão:79falsos positivos (hashes, IDs públicos, cursor de paginação de teste e texto/campos editoriais),2ocorrências de URL externa assinada expirada em03/10 e6ocorrências de URL externa tokenizada sem validade comprovada. Nenhuma credencial do TrainForge identificada nesses candidatos; isso não é auditoria integral. Sete campos emseis evidências atuais tiveram query removida, mantendo localizador, documentos/hashes e observações históricas. [Sanitização](research-url-sanitization.json), [recibo](git-secret-verification.json). Histórico continua contendo os links antigos e o gate permanece pendente; nenhuma exceção ampla, reescrita de histórico, replay de token ou contato com fornecedor. Não publicar diff bruto das linhas removidas.
+
+## Próxima validação independente —SQL por domínio
+
+RunnerSQL agora propõe8suítes/12testes principais em bases descartáveis separadas no mesmo serviçoGitHub-hosted.5testes de barreiras/parser passaram. Parser exige execução/pass explícitos, semaceitar skip e sempublicar saídaGo bruta. Primeira execução ampliada ainda precisa ser conferida após o push; não transferir o sucesso anterior de refeições/privacidade para as novas suítes. Semdados/processos locais alterados. [Recibo](ci-sql-verification.json).

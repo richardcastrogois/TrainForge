@@ -3025,7 +3025,8 @@
           "workEvidence": [
             "docs/execucao/v1/qualidade-ci.md",
             "docs/execucao/v1/ci-flutter-verification.json",
-            "docs/execucao/v1/ci-sql-verification.json"
+            "docs/execucao/v1/ci-sql-verification.json",
+            "29/10: runnerSQL ampliado para8suítes/12testes principais existentes, bases/ambientes separados e eventosGoJSON que recusam skip/falha/ausência.5testes de guard/parser passaram; primeira execução remota ampliada ainda pendente. Dump/restore e demais gates032não concluídos."
           ]
         },
         {

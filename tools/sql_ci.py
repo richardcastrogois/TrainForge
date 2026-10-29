@@ -1,4 +1,4 @@
-"""Migrations and meal SQL fixtures in a fresh GitHub-hosted service only. No local mode."""
+"""Migrations and isolated domain SQL fixtures in a fresh GitHub-hosted service only. No local mode."""
 import json
 import os
 from pathlib import Path
@@ -11,6 +11,50 @@ from db_permissions import runtime_statements
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOTSTRAP = 'trainforge_ci_bootstrap'
+
+# Existing SQL tests have intentionally different disposable-name/DSN contracts.
+# Each suite gets a fresh database; no fixture state is shared across domains.
+SUITES = (
+    ('privacy', 'privacy', (
+        ('./internal/platform/postgres', ('TestPostgresRuntimeReadiness',)),
+        ('./internal/nutrition', ('TestMealPostgresAtomicOwnershipReplayAndPrivacy',
+            'TestMealPostgresDayBoundAndLegacy', 'TestMealPostgresHTTPContractAndBoundaries')),
+        ('./internal/privacy', ('TestPrivacyPostgresOwnerExportConfirmedDeletionAndRollback',)),
+    ), {'TF_MEALS_TEST_DATABASE_URL':'migrator', 'TF_MEALS_TEST_RUNTIME_URL':'runtime',
+        'TF_PRIVACY_TEST_DATABASE_URL':'migrator', 'TF_PRIVACY_TEST_RUNTIME_URL':'runtime'}),
+    ('auth', 'auth', (('./internal/auth', ('TestPostgresIsolatedSessionLifecycle',)),),
+        {'TF_AUTH_TEST_DATABASE_URL':'runtime'}),
+    ('catalog', 'catalog', (('./internal/catalog', ('TestCatalogPostgresAndConditionalWithdrawal',)),),
+        {'TF_CATALOG_TEST_DATABASE_URL':'runtime', 'TF_CATALOG_TEST_WRITER_DATABASE_URL':'migrator'}),
+    ('food-import', 'food', (('./internal/nutrition', ('TestFoodPostgresIdempotencyRollbackAndReadonlyRuntime',)),),
+        {'TF_FOOD_TEST_DATABASE_URL':'migrator', 'TF_FOOD_TEST_RUNTIME_URL':'runtime'}),
+    ('food-read', 'food', (('./internal/nutrition', ('TestFoodPublicPostgresVisibilityPaginationAndWithdrawal',)),),
+        {'TF_FOOD_TEST_DATABASE_URL':'migrator', 'TF_FOOD_TEST_RUNTIME_URL':'runtime'}),
+    ('nutrition', 'nutrition', (('./internal/nutrition', ('TestNutritionPostgresLifecycle',)),),
+        {'TF_NUTRITION_TEST_DATABASE_URL':'migrator', 'TF_NUTRITION_TEST_RUNTIME_URL':'runtime'}),
+    ('names', 'names', (('./internal/nutrition', ('TestFoodNamesPostgresImmutabilityAndRuntimePermissions',)),),
+        {'TF_FOOD_NAMES_TEST_DATABASE_URL':'migrator', 'TF_FOOD_NAMES_TEST_RUNTIME_URL':'runtime'}),
+    ('configuration', 'config', (('./internal/trainingconfig', ('TestConfigurationPostgresLifecycle',)),),
+        {'TF_CONFIGURATION_TEST_DATABASE_URL':'migrator', 'TF_CONFIGURATION_TEST_RUNTIME_URL':'runtime'}),
+)
+
+
+def test_events(raw, expected):
+    """Only test metadata may leave the captured Go output; skips never mean success."""
+    if not expected: raise RuntimeError('Explicit expected tests required')
+    results = {}
+    for line in raw.splitlines():
+        try: event = json.loads(line)
+        except (ValueError, TypeError): raise RuntimeError('Invalid Go test event output') from None
+        if not isinstance(event, dict): raise RuntimeError('Invalid Go test event shape')
+        test, action = event.get('Test'), event.get('Action')
+        if test and action in ('pass', 'fail', 'skip'):
+            if not isinstance(test,str) or test in results: raise RuntimeError('Invalid or duplicate test result')
+            results[test] = action
+    if any(results.get(name) != 'pass' for name in expected) or any(v != 'pass' for v in results.values()):
+        raise RuntimeError('Expected SQL tests missing, failed or skipped; raw output withheld')
+    return [{'test':name, 'result':action} for name,action in sorted(results.items())]
+
 
 
 def check_environment(env, *, root=ROOT, platform=sys.platform):
@@ -31,7 +75,7 @@ def check_environment(env, *, root=ROOT, platform=sys.platform):
 
 
 def disposable_name(name):
-    if not re.fullmatch(r'trainforge_v1_privacy_test_[a-f0-9]{12}', name):
+    if not re.fullmatch(r'trainforge_v1_(?:privacy|auth|catalog|food|nutrition|names|config)_test_[a-f0-9]{12}', name):
         raise RuntimeError('Unsafe fixture name')
     return name
 
@@ -57,40 +101,55 @@ def main():
     # This guard also refuses a mistakenly configured evaluation/production cluster.
     if sql("SELECT (SELECT count(*) FROM pg_roles WHERE rolname IN ('trainforge_owner','trainforge_migrator','trainforge_runtime'))+(SELECT count(*) FROM pg_database WHERE datname LIKE 'trainforge_v1_%');") != '0':
         raise RuntimeError('Fresh service required; existing roles/databases preserved')
-    name = disposable_name('trainforge_v1_privacy_test_'+secrets.token_hex(6))
     credentials = {role:secrets.token_hex(32) for role in ('migrator','runtime')}
     for password in credentials.values(): print('::add-mask::'+password, flush=True)
     for role,password in credentials.items():
         sql("CREATE ROLE trainforge_"+role+" LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS PASSWORD '"+password+"';")
-    created = False
-    def dsn(role):
-        return 'postgresql://trainforge_'+role+':'+credentials[role]+'@127.0.0.1:15432/'+name+'?sslmode=disable'
+    service = ROOT/'services/api'
+    latest = max(int(p.name.split('_',1)[0]) for p in (service/'migrations').glob('*.sql'))
+    report = {'scope':'fresh-github-service-only', 'commit':os.environ['GITHUB_SHA'],
+        'schemaVersion':latest, 'suites':[], 'realGoogleOrHumanAcceptance':False}
+    report_dir = Path(os.environ['RUNNER_TEMP'])/'sql-verification'
+    report_dir.mkdir(exist_ok=True)
     try:
-        sql('CREATE DATABASE '+name+' OWNER trainforge_migrator;');created = True
-        sql('REVOKE ALL ON DATABASE '+name+' FROM PUBLIC; GRANT CONNECT ON DATABASE '+name+' TO trainforge_runtime; REVOKE CREATE ON SCHEMA public FROM PUBLIC;',name)
-        env['TF_MIGRATION_DATABASE_URL'] = dsn('migrator')
-        service = ROOT/'services/api'
-        for _ in range(2):
-            subprocess.run([go,'run','./cmd/migrate'],cwd=service,env=env,check=True,timeout=120)
-        latest = max(int(p.name.split('_',1)[0]) for p in (service/'migrations').glob('*.sql'))
-        if sql('SELECT max(version_id) FROM public.trainforge_v1_schema_version WHERE is_applied;',name) != str(latest):
-            raise RuntimeError('Migration version mismatch')
-        for statement in runtime_statements(training=True,meals=True): sql(statement,name)
-        env['TF_MEALS_TEST_DATABASE_URL'] = dsn('migrator')
-        env['TF_MEALS_TEST_RUNTIME_URL'] = dsn('runtime')
-        subprocess.run([go,'test','./internal/platform/postgres','-run','^TestPostgresRuntimeReadiness$','-count=1','-v'],
-                       cwd=service,env=env,check=True,timeout=90)
-        subprocess.run([go,'test','./internal/nutrition','-run','^TestMealPostgres','-count=1','-v'],
-                       cwd=service,env=env,check=True,timeout=180)
-        env['TF_PRIVACY_TEST_DATABASE_URL'] = dsn('migrator')
-        env['TF_PRIVACY_TEST_RUNTIME_URL'] = dsn('runtime')
-        subprocess.run([go,'test','./internal/privacy','-run','^TestPrivacyPostgresOwnerExportConfirmedDeletionAndRollback$','-count=1','-v'],
-                       cwd=service,env=env,check=True,timeout=120)
+        for suite_id, prefix, commands, variables in SUITES:
+            name = disposable_name('trainforge_v1_'+prefix+'_test_'+secrets.token_hex(6))
+            item = {'suite':suite_id, 'status':'running', 'tests':[], 'databaseRemoved':False}
+            report['suites'].append(item)
+            suite_env = dict(env)  # Never retain another suite's TF_* connection variables.
+            def dsn(role):
+                return 'postgresql://trainforge_'+role+':'+credentials[role]+'@127.0.0.1:15432/'+name+'?sslmode=disable'
+            created = False
+            try:
+                sql('CREATE DATABASE '+name+' OWNER trainforge_migrator;');created = True
+                sql('REVOKE ALL ON DATABASE '+name+' FROM PUBLIC; GRANT CONNECT ON DATABASE '+name+' TO trainforge_runtime; REVOKE CREATE ON SCHEMA public FROM PUBLIC;',name)
+                suite_env['TF_MIGRATION_DATABASE_URL'] = dsn('migrator')
+                for _ in range(2):
+                    subprocess.run([go,'run','./cmd/migrate'],cwd=service,env=suite_env,check=True,timeout=120)
+                if sql('SELECT max(version_id) FROM public.trainforge_v1_schema_version WHERE is_applied;',name) != str(latest):
+                    raise RuntimeError('Migration version mismatch')
+                item['migrationRerunPassed'] = True
+                for statement in runtime_statements(training=True,meals=True): sql(statement,name)
+                for key,role in variables.items(): suite_env[key] = dsn(role)
+                for package, expected in commands:
+                    pattern = '^('+'|'.join(expected)+')$'
+                    result = subprocess.run([go,'test',package,'-run',pattern,'-count=1','-json','-timeout=90s'],
+                        cwd=service,env=suite_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=120)
+                    if result.returncode: raise RuntimeError('SQL suite failed: '+suite_id+'; raw output withheld')
+                    events = test_events(result.stdout,expected)
+                    item['tests'].extend(events)
+                    for event in events: print(json.dumps(dict(suite=suite_id,**event)), flush=True)
+                item['status'] = 'passed'
+            finally:
+                if created:
+                    sql('DROP DATABASE '+disposable_name(name)+';')
+                    item['databaseRemoved'] = True
+                if item['status'] == 'running': item['status'] = 'failed'
     finally:
-        if created: sql('DROP DATABASE '+disposable_name(name)+';')
-    print(json.dumps({'scope':'fresh-github-service-only','migrationsApplied':latest,
-        'migrationRerun':True,'runtimeReadinessPassed':True,'mealSqlAndHttpPassed':True,'privacySqlPassed':True,
-        'disposableDatabaseRemoved':True,'realGoogleOrHumanAcceptance':False}))
+        (report_dir/'safe-report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({'scope':'fresh-github-service-only', 'suitesPassed':len(report['suites']),
+        'migrationsAppliedPerDatabase':latest, 'disposableDatabasesRemoved':True,
+        'realGoogleOrHumanAcceptance':False}))
 
 
 if __name__ == '__main__':
