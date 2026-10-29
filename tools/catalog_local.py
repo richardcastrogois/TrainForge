@@ -69,8 +69,9 @@ def snapshot(database):
     if len(tables)!=30 or any(not re.fullmatch('[a-z_]+',t) for t in tables):raise RuntimeError('Core inventory changed')
     result={}
     for table in tables:
-        raw=sql("SELECT coalesce(jsonb_agg(to_jsonb(v) ORDER BY to_jsonb(v)::text),'[]'::jsonb)::text FROM trainforge_v1."+table+' v;',database)
-        result[table]=hashlib.sha256(raw.encode('utf-8')).hexdigest()
+        digest=sql("SELECT encode(sha256(convert_to(coalesce(string_agg(row_digest,',' ORDER BY row_digest),''),'UTF8')),'hex') FROM (SELECT encode(sha256(convert_to(to_jsonb(v)::text,'UTF8')),'hex') AS row_digest FROM trainforge_v1."+table+' v) digests;',database)
+        if not re.fullmatch('[a-f0-9]{64}',digest):raise RuntimeError('Snapshot did not return a bounded digest')
+        result[table]=digest
     return result
 
 

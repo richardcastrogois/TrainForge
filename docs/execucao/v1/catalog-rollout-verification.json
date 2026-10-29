@@ -2,7 +2,7 @@
   "date": "2026-10-29",
   "scope": "M2-M4-catalog-progressive-extraction",
   "authorization": "User explicitly requested all M, verification fixes, commit and push. No hosting or history force-push authorized.",
-  "status": "in-progress",
+  "status": "complete-local-catalog-M0-M4-scope-only",
   "M2": {
     "status": "complete-current-catalog-scope",
     "implemented": [
@@ -60,19 +60,103 @@
     "dumpWrittenToDisk": false
   },
   "M4": {
-    "status": "prepared-not-activated",
-    "evaluationDatabaseChanged": false,
-    "apkChanged": false,
-    "implemented": [
-      "Owned local operator with checkpoint and30table restore comparison",
-      "Explicit remote/local-verified routing; no automatic fallback",
-      "Readiness includes authority and core projection",
-      "Legacy importer refuses write after authority registration"
-    ]
+    "status": "complete-local-catalog-scope",
+    "apiVersion": "0.9.0",
+    "catalogVersion": "0.2.0",
+    "coreSchemaVersion": 13,
+    "coreBusinessTables": 30,
+    "catalogSchemaVersion": 2,
+    "catalogDomainAndReleaseTables": 4,
+    "head": {
+      "contract": "trainforge.catalog.release.v1",
+      "revision": 1,
+      "digest": "7f6ae29a57d79887d6d3bf45c2d6a1be806e4e449bcfca0d28fcec6aff5bee90",
+      "previousDigest": "",
+      "packageDigest": "7f6ae29a57d79887d6d3bf45c2d6a1be806e4e449bcfca0d28fcec6aff5bee90"
+    },
+    "checkpoint": {
+      "retainedLocally": true,
+      "sha256": "0980239d07d72a3bea45dff1c7262c96aca0fbf332a3e419572b6c295ca725b4",
+      "restored30TablesMatched": true,
+      "restoreTargetOfflineAndRemoved": true
+    },
+    "migrationCore30TablesUnchanged": true,
+    "http": {
+      "routes": [
+        {
+          "route": "/api/v1/catalog/filters",
+          "status": 200,
+          "sourceMatched": true
+        },
+        {
+          "route": "/api/v1/catalog/programs",
+          "status": 200,
+          "sourceMatched": true
+        },
+        {
+          "route": "catalog-public-contract",
+          "status": 404,
+          "sourceMatched": true
+        },
+        {
+          "route": "catalog-public-contract",
+          "status": 200,
+          "sourceMatched": true
+        },
+        {
+          "route": "catalog-public-contract",
+          "status": 200,
+          "sourceMatched": true
+        }
+      ],
+      "conditional304Passed": true,
+      "movementCount": 73,
+      "programCount": 0,
+      "newPracticeApproved": false,
+      "readMode": "remote"
+    },
+    "recovery": {
+      "explicitRollbackAndRemoteRecoveryPassed": true,
+      "catalogOutage503NoFallback": true,
+      "readiness503DuringOutage": true,
+      "recovery200": true,
+      "core30TablesUnchanged": true,
+      "changedTableNames": [],
+      "finalReadMode": "remote"
+    },
+    "nativeAndroid": {
+      "existingApk": "0.4.3+25",
+      "reinstalled": false,
+      "existingSessionRetained": true,
+      "newGoogleConsent": false,
+      "device": "TrainForge_Benchmark/emulator-5554",
+      "library73Movements0ProgramsObserved": true,
+      "realReferenceDetailObserved": true,
+      "sourceCreditsLicenseAndConsultationLimitsPreserved": true,
+      "privateRecordWrittenOrDeletedByAgent": false,
+      "windowsCaptureFailed": "window crop is outside captured monitor",
+      "evidenceFallback": "fresh Android UIAutomator semantics and native screenshot, kept locally"
+    },
+    "finalMode": "remote",
+    "localDatabaseAndApiAndCatalogAndEmulatorActive": true,
+    "firstAttempt": {
+      "status": "stopped-before-checkpoint-or-route-switch",
+      "phase": "full-row-aggregate-comparison",
+      "coreBusinessRowsChanged": false,
+      "fix": "Compare SHA256 per row and ordered digests inside PostgreSQL; return only64hex/table. Final checkpoint/restore and30table comparisons passed."
+    },
+    "rollbackCi": {
+      "commit": "ba46c3c30fac9633fed3e589f813be0a6242ce47",
+      "run": 40876296947,
+      "job": 123455864674,
+      "conclusion": "success"
+    }
   },
   "limits": [
-    "No new human-reviewed practice content.",
-    "Config is a routine declaration, never prescription or eligibility.",
-    "No closed M2/M3/M4 claim from compiler/unit tests."
+    "Only the first catalog extraction is complete. Nutrition/training/photos/identity still need their own stages.",
+    "No approved practice, instruction, dose or media added;73consultation references/0programs remain.",
+    "Program structure and future executable-content ownership still require their own validated implementation and rights.",
+    "No hosting/deploy, purchase, real Google reconsent, private test records or history force-push.",
+    "Secret history gate and broader028/029/032/product release remain open."
   ]
 }

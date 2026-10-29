@@ -68,6 +68,9 @@ func Load(get func(string) string) (Config, error) {
 	if v := get("TF_ENV"); v != "" {
 		c.Environment = v
 	}
+	if c.CatalogURL != "" && c.Environment == "production" {
+		return c, errors.New("local catalog extraction is not configured for production")
+	}
 	if c.Environment != "development" && c.Environment != "test" && c.Environment != "production" {
 		return c, errors.New("invalid TF_ENV")
 	}

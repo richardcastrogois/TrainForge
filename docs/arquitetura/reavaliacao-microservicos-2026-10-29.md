@@ -101,7 +101,7 @@ Retirada tem precedência sobre cache. Sem prova atual de permissão, devolver i
 | M1 | Processo de catálogo e reader próprio em fixtures/CI; contratos equivalentes e negativos de grants | Concluído:40860200717/ff8c8bb; fixtures removidas |
 | M2 | Protocolo editorial de publicação/retirada, versões, frescor e treino047; um dono por dado | Concluído no recorte público:40874689251/c68b085 |
 | M3 | Ensaio de migração/restore com dados descartáveis e comparação de hashes/visibilidade; falhas de rede | Concluído:prepare/withdraw/restore40874689251/c68b085 |
-| M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Autorizado pelo autor; operador e rollback preparados, ativação pendente |
+| M4 | Checkpoint real, troca controlada das5rotas, aceite doAPK e rollback ensaiado | Concluído localmente:checkpointrestaurado/30tabelas,5rotas/304,APK25,rollback/rede/recuperação; reciboM4 |
 
 Aceite deM1 exige: processo sem auth/nutrition/privacy/trainingconfig; credencial incapaz de ler usuários/sessões/consumos ou gravar catálogo; migração idempotente somente editorial; testes de contrato, retirada, cache304, erro deDB, timeout/cancelamento e encerramento. Nenhum segredo ou corpo pessoal nos logs. Fixtures não validam loginGoogle nem prática real. Nenhuma nova prática será liberada.
 
@@ -185,3 +185,9 @@ flowchart LR
   API --> Core
   API -. "047: conferir revisão atual" .-> Cat
 ```
+
+### M4 local encerrada no recorte —29/10
+
+[Recibo porcritério](../execucao/v1/catalog-rollout-verification.json). API0.9.0/catálogo0.2.0 ativos em8082/18083; catálogo emtrainforge_catalog_dev comschema2 e papéis próprios, núcleo13/30preservado. Checkpointreal restaurado offline ecomparado em30tabelas;alvoefêmero removido. Cinco rotas equivalentes àorigem,304e detalhe negativo deprograma foram conferidos; não há programa real para um detalhe positivo. NativeAPK25mostroubiblioteca73/0 e detalhereal de referência comautoria/licença. Nãohouve reinstalação, novoGoogle ou prática.
+
+Rollbacklocal-verified e voltaremoto foram executados, assimcomo indisponibilidade503 e recuperação200 do catálogo. Snapshot das30tabelas correspondeu antes/depois; nenhuma escritanegocial privada. Modofinalremoto; processoslocais ativos. M0–M4cobrem esta extração inicial, não todos osdomínios ou aV1inteira. Testes/hashesnãoautenticamrevisor ou aprovam instruções/doses/mídias.

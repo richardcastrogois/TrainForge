@@ -1,6 +1,8 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **29/10/2026**. Autor retomou o trabalho e pediu execução pelas dependências. Repositório correto: **C:/dev/TrainForge/trainforge**; o diretório pai não é o repositório. A solicitação atual do usuário prevalece sobre snapshots históricos.
+Estado vigente: **29/10/2026**. Repositório correto: **C:/dev/TrainForge/trainforge**. A solicitação atual prevalece sobre snapshots históricos.
+
+**Continuação atual:** o autor pediu todas asM e correção das verificações, com commit/push. M0–M4 da primeira extração do catálogo estão concluídas localmente: API0.9.0/34operações, catálogo0.2.0/schema2/banco próprio; núcleo13/30 e APK25 preservados. [Recibo](docs/execucao/v1/catalog-rollout-verification.json). M2/M3SQL40874689251/c68b085 e rollback40876296947/ba46c3c passaram. Checkpoint real restaurado e30tabelas comparadas; cinco rotas/304, biblioteca/detalhe Android, rollback, falha e recuperação passaram. API/DB/catálogo/emulador ativos, modo remoto. Não repetir ativação, restore ou login sem mudança pertinente. A próxima ação é o gate histórico de segredos; demais domínios, conteúdo/prática e release continuam abertos. Reescrita remota/force-push exige decisão específica. Usar o handoff consolidado para o estado vigente.
 
 ## Retomada e próxima ação
 
