@@ -1,5 +1,13 @@
 # Handoff vigente — TrainForge
 
+## Último incremento — V1-028 / APK27
+
+Após o ajuste visual, o plano foi retomado em028. **APK debug0.4.5+27 instalado**, API0.9.1/34operações e bancos preservados. Conta existente restaurada, sem novoGoogle ou alteração privada; emulador em **Hoje**, sem formulário. Reobservar antes de agir.
+
+Armazenamento agora usa resetOnError false; cifras/formato/logout preservados.258testesFlutter/análise0 e cinco testes do inventário passaram. Graphify1alterado/120inalterados,121Dart/4370nós/5129arestas,HTML semLLM. Oito workflows do ajuste visuala8ea84a verdes; SQL40977166330/job123807949543 confirmou busca/prefixos.028continua doing; keystore perdido, release/iOS, dependências completas, offline/fotos/master e carga não certificados. OAPK26 é recibo histórico do ajuste visual, substituído pelo27.
+
+[Recibo](secure-storage-recovery-verification.json), [inventário](android-security-inventory.json). Não repetir login, migration ou restore.
+
 Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
 ## Ajuste de interface29/10 — vigente

@@ -1,5 +1,9 @@
 # Caminho da pesquisa ao APK
 
+## Retomada independente — V1-028 / 29/10
+
+APKdebug0.4.5+27 instalado com sessão preservada. Desativado reset automático em falha de armazenamento seguro;258testesFlutter/análise0 e inventário compilado aprovados. [Evidência](secure-storage-recovery-verification.json). Oito workflows do ajuste visuala8ea84a verdes, incluindo SQL da busca cotidiana.028segue doing;015mantém gate de conteúdo humano aprovado. Sem migration, hospedagem ou escrita privada.
+
 ## Vigente —29/10/2026
 
 M0–M4 da primeira extração do catálogo concluídas localmente; núcleo13/30 preservado e catálogo0.2.0/schema2 com banco próprio. Limpeza histórica da main especificamente autorizada aplicada e gate remoto aprovado; não repetir force-push. API0.9.1/34operações eAPKdebug0.4.4+26 trazem o ajuste visual solicitado: jornadas sem metadados técnicos, comprovação isolada, nomes de apresentação73/31 e busca cotidiana.257testesFlutter/análise0,Go-vet/Swagger e leituraAndroid; [recibo](frontend-content-cleanup-verification.json). Próxima funcional015 continua sem conteúdo humano aprovado para prática; seguir trabalho independente conforme dependências. Demais domínios, fotos, offline, auditoria integral, carga e release continuam abertos. Sem contratação/hospedagem. [Handoff vigente](handoff.md).

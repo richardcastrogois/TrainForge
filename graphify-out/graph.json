@@ -4484,118 +4484,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_data_auth_storage",
-      "label": "auth_storage.dart",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_authstorage",
-      "label": "AuthStorage",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_storage",
-      "label": "_storage",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_key",
-      "label": "_key",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_pending",
-      "label": "_pending",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_read",
-      "label": "_read",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_gettoken",
-      "label": "getToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_getrefreshtoken",
-      "label": "getRefreshToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_savesession",
-      "label": "saveSession",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_write",
-      "label": "_write",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_replacesession",
-      "label": "replaceSession",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_clearifrefreshtoken",
-      "label": "clearIfRefreshToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_clearifaccesstoken",
-      "label": "clearIfAccessToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_storage_cleartoken",
-      "label": "clearToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "dart_convert",
       "label": "dart:convert",
       "file_type": "code",
@@ -36090,6 +35978,118 @@
       "source_file": "features/nutrition/presentation/nutrition_facts.dart",
       "source_location": null,
       "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage",
+      "label": "auth_storage.dart",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_authstorage",
+      "label": "AuthStorage",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_storage",
+      "label": "_storage",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_key",
+      "label": "_key",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_pending",
+      "label": "_pending",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_read",
+      "label": "_read",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_gettoken",
+      "label": "getToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_getrefreshtoken",
+      "label": "getRefreshToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_savesession",
+      "label": "saveSession",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_write",
+      "label": "_write",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_replacesession",
+      "label": "replaceSession",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_clearifrefreshtoken",
+      "label": "clearIfRefreshToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_clearifaccesstoken",
+      "label": "clearIfAccessToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_storage_cleartoken",
+      "label": "clearToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "_origin": "ast"
     }
   ],
   "edges": [
@@ -41929,218 +41929,6 @@
       "source_file": "features/auth/data/auth_api.dart",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_authstorage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_storage",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "static_const",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_key",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_pending",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "static_future",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_read",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_gettoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_getrefreshtoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_savesession",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_write",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_replacesession",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_clearifrefreshtoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_clearifaccesstoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "features_auth_data_auth_storage_cleartoken",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "dart_convert",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "package_flutter_secure_storage_flutter_secure_storage_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "domain_auth_user_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "features_auth_data_auth_storage",
-      "target": "t",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_storage.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "type_lookup",
       "_origin": "ast"
     },
     {
@@ -92920,6 +92708,218 @@
       "source_file": "features/nutrition/presentation/nutrition_facts.dart",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_authstorage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_storage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "static_const",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_key",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_pending",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "static_future",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_read",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_gettoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_getrefreshtoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_savesession",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_write",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_replacesession",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_clearifrefreshtoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_clearifaccesstoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "features_auth_data_auth_storage_cleartoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "dart_convert",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "package_flutter_secure_storage_flutter_secure_storage_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "domain_auth_user_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "features_auth_data_auth_storage",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_storage.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
       "_origin": "ast"
     }
   ],

@@ -2787,7 +2787,10 @@
             "docs/execucao/v1/research-url-sanitization-complement.json",
             "29/10:90candidatos reconciliados:82falsos positivos decontexto exato;8URLs históricas continuam bloqueadoras. Três achados adicionais sãoSHA256comprovados dearquivos. Dois parâmetros curtos adicionais sanitizados semalterar demaisdados. Préviaisolada dehistórico em preparação; semforcepushautorizado.",
             "docs/execucao/v1/git-history-remediation-preview.json",
-            "29/10: limpeza histórica aplicada somente à main e verificada remotamente em40888675534/6894858;95commits comparados,88IDs alterados, seis arquivos, árvore atual/autores/mensagens/datas preservados, backup local e demais refs remotos inalterados.85candidatos não secretos verificados e0bloqueadores.028continua doing pelos demais critérios."
+            "29/10: limpeza histórica aplicada somente à main e verificada remotamente em40888675534/6894858;95commits comparados,88IDs alterados, seis arquivos, árvore atual/autores/mensagens/datas preservados, backup local e demais refs remotos inalterados.85candidatos não secretos verificados e0bloqueadores.028continua doing pelos demais critérios.",
+            "docs/execucao/v1/secure-storage-recovery-verification.json",
+            "docs/execucao/v1/android-security-inventory.json",
+            "29/10: reset automático Android desativado;258testesFlutter/análise0 e cinco testes de inventário. APK27 instalado e conta existente restaurada sem novoGoogle; manifesto/backup compilados conferidos. Cifras/formato/logout mantidos.028doing pelos demais critérios; sem corrupção nativa de chave, release/iOS ou auditoria integral."
           ]
         },
         {

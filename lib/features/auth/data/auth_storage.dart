@@ -3,7 +3,11 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../domain/auth_user.dart';
 
 class AuthStorage {
-  static const _storage = FlutterSecureStorage();
+  // A keystore/I/O failure must surface for retry, never silently erase tokens.
+  // Cipher algorithms and the serialized session format keep their defaults.
+  static const _storage = FlutterSecureStorage(
+    aOptions: AndroidOptions(resetOnError: false),
+  );
   // Deliberately separate from the legacy Fastify credential.
   static const _key = 'trainforge.go.v1.tokens';
   static Future<void> _pending = Future.value();

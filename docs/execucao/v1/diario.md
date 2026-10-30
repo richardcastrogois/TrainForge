@@ -641,3 +641,14 @@ Traduções de apresentação73movimentos/31alimentos ligadas aID/versão/nome o
 Graphify121/4370/5129,AST/HTMLsemLLM, backups ignorados.022/025doing; demais jornadas não encerradas.031hosting e compras continuam semautorização. Próxima015mantém gate deconteúdo; retomar trabalho independente conforme dependências. Demais nomes alimentares, aceites/usabilidade completa, foto/offline/release/iOS seguem abertos.
 
 Fechamento local: hash do APK instalado corresponde ao artefato final. Scanner já verificado analisou somente66arquivos propostos:27ocorrências não secretas por contexto/hash comprovado,0bloqueadoras, sem valores brutos publicados. Isso não substitui o gate de histórico no CI. Documentação reproduzível e14testes passaram.
+
+
+## 29/10/2026 — ajuste visual publicado e continuidade028
+
+Ajuste visual enviado em a8ea84a: comprovação isolada, jornadas limpas, nomes de apresentação73/31 e busca cotidiana. Oito workflows passaram; SQL40977166330/job123807949543 confirmou aliases/prefixos. O recibo mantém oAPK26 como evidência daquela fatia.
+
+Depois, inspecionado default resetOnError true do flutter_secure_storage10.0.0. App define false; formato/cifras/logout mantidos. Teste do canal verifica propagação e retentativa sem exclusão;258testesFlutter/análise0. APKdebug0.4.5+27 construído/assinado/conferido e instalado sem formulário aberto; conta existente restaurada, sem novoGoogle ou registro privado criado/alterado/excluído. Emulador emHoje.
+
+Inventário verificou hash/assinatura, versão, permissões, exports declarados, allowBackupfalse e nove domínios excluídos. Primeiro inventário bloqueou serviçoGoogle não previsto; merge comprovou play-services-auth21.4.0 e permissão exata. Política/teste passaram após essa revisão específica. Biometria transitiva vem deAndroidX1.1.0; não foi habilitado fluxo biométrico. Cinco testes do parser/política, com negativos, aprovados. [Recibo](secure-storage-recovery-verification.json), [inventário](android-security-inventory.json).
+
+Graphify1alterado/120inalterados,121Dart/4370nós/5129arestas,HTML/zeroLLM.028doing: sem corrupção nativa de chave, certificaçãoOEM/release/iOS, auditoria completa, implementaçãooffline/fotos/master ou teste de milhões. Sem migration, compra, hospedagem ou deploy.

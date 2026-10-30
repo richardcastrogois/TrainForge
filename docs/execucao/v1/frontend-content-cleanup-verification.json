@@ -71,7 +71,13 @@
     "flutterAnalysisIssues": 0,
     "goOrdinaryTestsAndVetPassed": true,
     "swaggerGeneratedAndChecked": true,
-    "sqlDisposableCi": "pending-after-push",
+    "sqlDisposableCi": {
+      "status": "passed",
+      "commit": "a8ea84a44d5f213f47801cc23d3c582be89fd249",
+      "runId": 40977166330,
+      "jobId": 123807949543,
+      "everydayDiscoveryAndPrefixBoundarySubtest": "pass"
+    },
     "native": {
       "movementListClean": true,
       "movementTitlePortuguese": true,
@@ -114,7 +120,65 @@
       "candidates": 27,
       "blockingCandidates": 0,
       "rawValuesPublished": false
-    }
+    },
+    "remoteWorkflows": [
+      {
+        "id": 40977166688,
+        "name": "Imagem isolada da API",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166688"
+      },
+      {
+        "id": 40977166611,
+        "name": "Documentação de arquitetura",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166611"
+      },
+      {
+        "id": 40977166549,
+        "name": "Segredos no histórico Git",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166549"
+      },
+      {
+        "id": 40977166445,
+        "name": "Catálogo - contrato, migração e restore",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166445"
+      },
+      {
+        "id": 40977166369,
+        "name": "Vulnerabilidades Go",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166369"
+      },
+      {
+        "id": 40977166361,
+        "name": "Qualidade Flutter",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166361"
+      },
+      {
+        "id": 40977166356,
+        "name": "Backup e exclusão em restore descartável",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166356"
+      },
+      {
+        "id": 40977166330,
+        "name": "Integração SQL descartável",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/richardcastrogois/TrainForge/actions/runs/40977166330"
+      }
+    ]
   },
   "limits": [
     "This does not translate the full 6369-food dataset. Unknown names retain the original; no substitute food or nutrient value is invented.",

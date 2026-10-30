@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "scope": "prepared-debug-apk-public-metadata-only",
+  "artifactSha256": "0bca13ba4ba08fe1625486332228af129a0072bd4aee79e64005e65bda1dc8f5",
+  "signatureMatchesPreparedArtifact": true,
+  "sdkBuildTools": "35.0.1",
+  "manifest": {
+    "package": "com.example.trainforge",
+    "versionName": "0.4.5",
+    "versionCode": 27,
+    "minSdk": 24,
+    "targetSdk": 36,
+    "application": {
+      "debuggable": true,
+      "allowBackup": false,
+      "usesCleartextTraffic": true,
+      "fullBackupContent": "@0x7f110000",
+      "dataExtractionRules": "@0x7f110001"
+    },
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "com.example.trainforge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "exportedComponents": [
+      {
+        "kind": "activity",
+        "name": "com.example.trainforge.MainActivity",
+        "permission": null,
+        "launcher": true
+      },
+      {
+        "kind": "service",
+        "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+        "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+        "launcher": false
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.profileinstaller.ProfileInstallReceiver",
+        "permission": "android.permission.DUMP",
+        "launcher": false
+      }
+    ]
+  },
+  "compiledBackupExclusionsVerified": true,
+  "rawValuesPublished": false,
+  "limits": [
+    "Debug APK only; cleartext/debuggable development flags are not release approval.",
+    "Manifest settings do not prove every OEM backup/transfer behavior or device keystore resilience.",
+    "Optional biometric permissions originate in AndroidX; their presence does not prove biometric authentication is used.",
+    "Exported dependency components retain their declared permissions; runtime caller authorization was not exercised.",
+    "This is not dependency vulnerability scanning, penetration testing, iOS validation, or a complete security audit."
+  ]
+}

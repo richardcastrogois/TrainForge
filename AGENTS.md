@@ -1,5 +1,13 @@
 # TrainForge — instruções para agentes
 
+## Último incremento de continuidade — APK27
+
+Após o ajuste visual, o plano foi retomado em028. **APK debug0.4.5+27 instalado**, API0.9.1/34operações e bancos preservados. Conta existente restaurada, sem novoGoogle ou alteração privada; emulador em **Hoje**, sem formulário. Reobservar antes de agir.
+
+Armazenamento agora usa resetOnError false; cifras/formato/logout preservados.258testesFlutter/análise0 e cinco testes do inventário passaram. Graphify1alterado/120inalterados,121Dart/4370nós/5129arestas,HTML semLLM. Oito workflows do ajuste visuala8ea84a verdes; SQL40977166330/job123807949543 confirmou busca/prefixos.028continua doing; keystore perdido, release/iOS, dependências completas, offline/fotos/master e carga não certificados. OAPK26 é recibo histórico do ajuste visual, substituído pelo27.
+
+[Recibo](docs/execucao/v1/secure-storage-recovery-verification.json). Backup do grafo em.local/graphify-backup-20261029-storage-policy. Não repetir login, migration ou restore.
+
 Estado vigente: **29/10/2026**. Repositório correto: **C:/dev/TrainForge/trainforge**. A solicitação atual prevalece sobre snapshots históricos.
 
 **Continuação atual:** o autor pediu todas asM e correção das verificações, com commit/push. M0–M4 da primeira extração do catálogo estão concluídas localmente: API0.9.0/34operações, catálogo0.2.0/schema2/banco próprio; núcleo13/30 e APK25 preservados. [Recibo](docs/execucao/v1/catalog-rollout-verification.json). M2/M3SQL40874689251/c68b085 e rollback40876296947/ba46c3c passaram. Checkpoint real restaurado e30tabelas comparadas; cinco rotas/304, biblioteca/detalhe Android, rollback, falha e recuperação passaram. API/DB/catálogo/emulador ativos, modo remoto. Não repetir ativação, restore ou login sem mudança pertinente. Limpeza histórica autorizada aplicada somente à main em29/10:95commits comparados/88IDs alterados, seis arquivos, árvore atual/autores/mensagens/datas preservados, backup local conferido e demais refs remotos inalterados. Git deste notebook alinhado ao histórico limpo6894858; os oito workflows passaram, inclusive segredos40888675534 com85não secretos verificados e0bloqueadores. Não repetir force-push; a autorização foi consumida para essa operação e não cobre novas reescritas. Outros clones precisam reconciliação antes de enviar código. Próxima história funcional015; demais domínios, conteúdo/prática e release continuam abertos. Usar o handoff consolidado para o estado vigente.

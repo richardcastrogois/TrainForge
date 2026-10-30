@@ -1,5 +1,17 @@
 # Segurança, observabilidade e capacidade
 
+## Incremento de 29/10 — armazenamento e superfície Android
+
+O app define AndroidOptions(resetOnError: false) no flutter_secure_storage 10.0.0. O padrão true podia apagar o armazenamento ao falhar; agora o erro chega ao fluxo de retentativa. Algoritmos padrão, formato da sessão e exclusão explícita no logout preservados. O teste do canal nativo prova a opção enviada e a leitura posterior sem comando de exclusão; não simula perda física de chave.
+
+APK debug **0.4.5+27** instalado, hash/assinatura conferidos e conta existente restaurada, sem novo consentimento ou escrita privada. 258 testes Flutter, análise sem problemas e cinco testes do leitor de manifesto passaram. [Recibo](../execucao/v1/secure-storage-recovery-verification.json).
+
+[Inventário compilado](../execucao/v1/android-security-inventory.json): minSDK24/target36, allowBackup false e nove domínios excluídos em backup/cloud/transferência. Quatro permissões: internet, biometria/fingerprint transitivas do AndroidX e receiver interno. Exportados: MainActivity, serviço Google de revogação com permissão declarada e ProfileInstallReceiver com DUMP. Merge comprova dependências21.4.0/1.1.0; presença de biometria não significa fluxo biométrico habilitado.
+
+Reproduzir após preparar o artefato corrente: python tools/android_security_inventory.py --write. O leitor não instala ferramentas nem acessa credenciais/dados do aparelho; testes sintéticos rodam no CI documental. Hash/assinatura/versão divergentes, permissão nova, export não revisado ou exclusão ausente bloqueiam o recibo.
+
+**Limites:** debug/HTTP local não aprova release; manifesto não certifica fabricantes, autorização dos chamadores, resistência de keystore ou ausência de vulnerabilidades. Recuperação de chave perdida, dependências completas, ciclo offline/fotos e master continuam abertos em028. Os oito workflows do ajuste visual a8ea84a passaram, incluindo o subteste SQL da busca; não encerram a auditoria integral.
+
 ## Vigente29/10 — prontidão e CI
 
 CI Flutter aprovado e CI SQL de migrations/refeições/privacidade executado em689f64b. Fonte0.8.1 fortalece readiness: objetos e privilégios do runtime são conferidos por uma consulta de metadados, com503genérico emfalha. Teste SQL próprio aprovado em40813092631/9124a85; não é auditoria completa deDDL, dependências, Sonar, carga ou todos os módulos. Sem nova migration ou alteração nos dados reais. [Recibo](../execucao/v1/ci-sql-verification.json). A execução entre serviços está em [reavaliação](reavaliacao-microservicos-2026-10-29.md); revogação/exclusão exigem contrato específico antes da extração.

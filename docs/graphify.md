@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Atualização29/10 — conteúdo limpo e armazenamento
+
+121arquivosDart/4370nós/5129arestas. Ajuste visual e hub de fontes incluídos; depois1arquivoAuthStorage alterado/120inalterados/0removidos. ASTincremental code-only/HTML, semLLM/semântica/clusterização. Backups em.local/graphify-backup-20261029-clean-content e.local/graphify-backup-20261029-storage-policy. CincoARBnão interpretados; Go/SQL seguem nos contratos/Swagger. [UI](execucao/v1/frontend-content-cleanup-verification.json), [armazenamento](execucao/v1/secure-storage-recovery-verification.json).
+
 Conferência final28/10 solicitada pelo autor:0Dart alterados/116inalterados;4254nós/4998arestas mantidos e HTML exportado. AST somente, semLLM. Trabalho parado após o checkpoint.
 
 ## Atualização28/10 — seleção privada, metadados e clareza045

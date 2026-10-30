@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-29",
+  "story": "V1-028",
+  "storyStatus": "doing",
+  "scope": "android-secure-storage-error-policy-and-debug-artifact-inventory",
+  "dependency": {
+    "name": "flutter_secure_storage",
+    "version": "10.0.0",
+    "defaultResetOnError": true,
+    "explicitResetOnError": false,
+    "cipherAlgorithmsChanged": false,
+    "serializedTokenFormatChanged": false,
+    "defaultKeyCipher": "RSA_ECB_OAEPwithSHA_256andMGF1Padding",
+    "defaultStorageCipher": "AES_GCM_NoPadding",
+    "biometricEnforcementEnabledByThisChange": false
+  },
+  "behavior": {
+    "nativeFailurePropagatesForRetry": true,
+    "readDoesNotRequestCredentialDeletion": true,
+    "logoutDeletionUnchanged": true,
+    "networkErrorNotSessionRevocation": true,
+    "credentialValuesLogged": false
+  },
+  "validation": {
+    "flutterTestsPassed": 258,
+    "flutterAnalysisIssues": 0,
+    "inventoryPolicyUnitTestsPassed": 5,
+    "nativeMethodChannelContractTest": "test/auth_storage_recovery_test.dart",
+    "realKeystoreCorruptionAttempted": false,
+    "native": {
+      "existingAccountRestored": true,
+      "accountControlsVisible": true,
+      "googleConsentRepeated": false,
+      "privateRecordsChanged": false,
+      "installedApkHashVerified": true
+    },
+    "artifact": {
+      "versionName": "0.4.5",
+      "versionCode": 27,
+      "variant": "debug",
+      "package": "com.example.trainforge",
+      "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+      "sha256": "0bca13ba4ba08fe1625486332228af129a0072bd4aee79e64005e65bda1dc8f5",
+      "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+      "sourceFingerprint": "5a51e5818c75c81def5da88a12e05200df4f9f176cb6ed71cdac23b84cdc7285",
+      "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+      "realGoogleLoginValidated": false
+    },
+    "inventory": "docs/execucao/v1/android-security-inventory.json",
+    "graphify": {
+      "dartFiles": 121,
+      "nodes": 4370,
+      "edges": 5129,
+      "changedFiles": 1,
+      "unchangedFiles": 120,
+      "llmTokens": 0
+    }
+  },
+  "nativeDependencyProvenance": {
+    "biometricPermissions": "androidx.biometric:biometric:1.1.0",
+    "revocationBoundService": "com.google.android.gms:play-services-auth:21.4.0",
+    "evidence": "local manifest-merger-debug-report.txt; raw build paths not published"
+  },
+  "limits": [
+    "Mocked channel verifies the application option and retry contract, not a real Google login or hardware keystore fault.",
+    "A permanently lost/invalid device key may require explicit session recovery. No real keystore was corrupted or erased.",
+    "The existing real account was restored after update; no Google consent or private record mutation was automated.",
+    "Debug artifact only; no release distribution, HTTPS hosting or iOS certification.",
+    "Metadata and compiled exclusions do not certify every OEM behavior, dependency vulnerability or exported caller authorization.",
+    "V1-028 remains open for other Android/Flutter dependencies, release, offline/photo lifecycle and master authorization. Sonar/load have separate gates."
+  ]
+}

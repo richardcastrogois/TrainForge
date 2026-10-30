@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 
-REASONS={'file_sha256_metadata','public_figma_file_id','test_cursor_fixture','application_field_name','natural_language_research_note','editorial_field_mapping'}
+REASONS={'file_sha256_metadata','public_figma_file_id','test_cursor_fixture','application_field_name','natural_language_research_note','editorial_field_mapping','public_algorithm_identifier'}
 GENERATED={'docs/arquitetura/inventario-atual.json','docs/arquitetura/referencias/backend-fastify.json'}
 
 
