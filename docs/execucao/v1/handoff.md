@@ -1,92 +1,57 @@
 # Handoff vigente — TrainForge
 
-## Último incremento — V1-028 / APK27
+Atualizado em **30/10/2026**. Repositório **C:/dev/TrainForge/trainforge**.
 
-Após o ajuste visual, o plano foi retomado em028. **APK debug0.4.5+27 instalado**, API0.9.1/34operações e bancos preservados. Conta existente restaurada, sem novoGoogle ou alteração privada; emulador em **Hoje**, sem formulário. Reobservar antes de agir.
+## Último pedido e entrega
 
-Armazenamento agora usa resetOnError false; cifras/formato/logout preservados.258testesFlutter/análise0 e cinco testes do inventário passaram. Graphify1alterado/120inalterados,121Dart/4370nós/5129arestas,HTML semLLM. Oito workflows do ajuste visuala8ea84a verdes; SQL40977166330/job123807949543 confirmou busca/prefixos.028continua doing; keystore perdido, release/iOS, dependências completas, offline/fotos/master e carga não certificados. OAPK26 é recibo histórico do ajuste visual, substituído pelo27.
+Autor pediu: esclarecerORM/Prisma, avaliar MoveKitR$779, limpar fontes obsoletas, usar a skilldraw.io, criar uma seção visual e ensinar cada peça e como operar/logar/parar. Não pediu compra, hospedagem ou migração deORM.
 
-[Recibo](secure-storage-recovery-verification.json), [inventário](android-security-inventory.json). Não repetir login, migration ou restore.
+- [Aprendizado e operação](../../aprendizado/README.md)
+- [15diagramas editáveis/SVG](../../diagramas/README.md), [30+4tabelas/colunas](../../diagramas/banco.md), [34APIs](../../diagramas/apis.md)
+- [AvaliaçãoMoveKit](../../conteudo/avaliacao-movekit-2026-10-29.md)
+- [Recibo da limpeza/validação](repository-cleanup-verification.json)
 
-Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
+Removidos31arquivosDart sem referências no app/testes e63arquivos dos scaffoldsLinux/macOS/Windows/web. Android/iOS mantidos. Guias de entrada que ainda diziamGo futuro/Fastify atual foram substituídos por estado atual. Evidências/licenças/recibos e dados/chaves/backups locais preservados.
 
-## Ajuste de interface29/10 — vigente
+APKdebug **0.4.6+28 instalado** e assinatura/hash conferidos. Sessão existente restaurada; emulador em **Hoje**, sem formulário ao final. Nenhum consumo/treino criado, editado ou excluído pelo agente. Não foi repetidoGoogle. Reobservar a tela antes de agir.
 
-Pedido do autor: jornadas limpas e nomes no idioma do app, com comprovação isolada. **API0.9.1 /34operações; APKdebug0.4.4+26 instalado**, assinatura e fonte conferidas; catálogo0.2.0 e schema13/30 preservados. [Recibo](frontend-content-cleanup-verification.json).
+258testesFlutter/análise0, quatro testes dohelper, dois dosdiagramas e14documentais. Validador original da skill aprovou15XML;SVGs renderizados localmente e amostras inspecionadas. Não foi automatizado o renderer nativo draw.io. Graphify90Dart/4032nós/4628arestas,31removidos/90inalterados,AST/HTML/zeroLLM; backupem.local/graphify-backup-20261029-learning.
 
-Listas/detalhes de movimentos, alimentos e consumo não mostram autores, licenças, IDs, hashes, células ou frações como conteúdo principal. A área **Perfil > Fontes e transparência** conserva essas informações por versão; **Privacidade > Fontes e transparência** permite ler fontes públicas sem login. Cálculos privados continuam com repositório e guardas do titular. Aviso de prática indisponível permanece; não há treino aprovado.
+tools/ambiente.py status eplan-stop foram conferidos no ambiente atual; start/stop têm testes com mocks, sem repetir parada real. Helper usa registros existentes, nunca activate/init/migration. Guia explica primeiro plano, logs e limites. Sem validação nova de permissões/conta viaGoogle.
 
-Traduções de apresentação para73movimentos e31alimentos, ligadas aID/versão/nome original, sem gravar nomes humanos revisados no banco. Interface pt-BR/pt-PT/en/es; demais nomes alimentares ainda usam o original. Busca porarroz/feijão e variantes tem vocabulário limitado; atalhos paraarroz branco/integral e feijão-vermelho. Não assumir feijão-carioca ou preparo brasileiro porque a consulta está em português.
+## Estado técnico
 
-257testesFlutter, analyze0issues, Go test/vet eSwagger passaram. Android real conferiu biblioteca/detalhe traduzido e limpo, área de comprovação com original/autoria e busca/detalhe alimentar. Nenhum consumo foi confirmado ou dado privado editado/excluído; sessão existente, semnovoGoogle. Figma voltou a responder: quatro contextos com screenshots consultados; limiteStarter anterior é histórico, não impedimento vigente comprovado. Graphify121Dart/4370nós/5129arestas, AST/HTMLsemLLM.
+API Go **0.9.1 /34operações**; catálogo **0.2.0 /schema2/4tabelas**, núcleo **schema13/30tabelas**. Persistência pgx/v5 eSQL;Goose para migrations; semORM. Não instalarPrisma/GORM/Ent/sqlc por inferência; comparação está no aprendizado.
 
-## Próxima ação
+M0–M4 encerram **somente a primeira extração do catálogo**: base/roles próprios, contrato de cinco rotas, publicação/retirada, rollback, falha/recuperação e checkpoint restaurado passaram. API8082/catálogo18083/PostgreSQL15432/emulador ativos, modo remote. Não repetir ativação/restauração/login. [ReciboM4](catalog-rollout-verification.json), [arquitetura](../../arquitetura/reavaliacao-microservicos-2026-10-29.md).
 
-O autor pediu implementar M0–M4 da primeira extração do catálogo, corrigir as verificações, fazer commits e push. Os marcos do catálogo estão concluídos no recorte local. A remediação do histórico Git foi aplicada e verificada no remoto. Próxima história funcional: V1-015 pelas dependências, mantendo explícita a ausência de conteúdo aprovado para prática; continuar os trabalhos independentes do backlog. Não repetir limpeza, migração ou testes do app sem mudança pertinente.
+Os metadados lidos para diagramas vieram de transaçãoREADONLY, sem linhas de usuário. Núcleo e catálogo têm tabelas de mesmo nome em bases distintas. Tabela existente de treino não é endpoint/jornada pronta.
 
-Ler também AGENTS.md, backlog.json, plano-macro.md e etapa-02-fechamento.md. Conferir o Git e os arquivos reais. A solicitação atual do autor prevalece sobre relatos históricos no diário.
+## Próxima ação pelas dependências
 
-## Catálogo separado: M0–M4 concluídos localmente
+**V1-015** continua próxima funcional: criar adesão/seleção real, exigindo configuração revisada e conteúdo humano liberado. Há73referências/zero programas. Não inventar dose/instrução/mídia para fechar a história. Continuar trabalho independente028/029/qualidade e045/025 conforme dependências/recortes.
 
-[Critérios e evidências](catalog-rollout-verification.json), [plano e diagrama](../../arquitetura/reavaliacao-microservicos-2026-10-29.md).
+- **047** encerrada funcionalmente: pessoa confirmou a configuração, autorizou editar para14:00 e revisão2foi recuperada. Não criar revisão3porhábito. Fuso/horário precisam refinamento didático.
+- **045doing:** refeições e duas visões, SQL/HTTP/Flutter e metadados integrados. Faltam aceite/correção/exclusão real e ligação comfoto042. O lançamento20gfoi declarado teste; não excluir ou chamar ingestão real.
+- **048** entregue na capacidade documentada; cobertura editorial0/6369. UItem73nomes de movimento e31variantes alimentares em quatro idiomas porID/versão/original. Não foram publicados como traduções profissionais. Demais nomes mantêm original.
+- **022/025doing:** jornadas comuns limpas e comprovação emPerfil/Privacidade > Fontes e transparência; treino e ciclos alimentares completos ainda abertos.
+- Foto042, composição044, histórico/análise/dicas046, offline026, master049, acessibilidade027 e entrega035conservam critérios próprios. Não são concluídos pela limpeza ou pelos diagramas.
+- **028doing:** resetOnErrorfalse preserva erro para retentativa; cifras/formato/logout mantidos. Contrato testado, não houve corrupção real dekeystore. InventárioAPK27é histórico; recibo atual contém metadadosAPK28. Dependências completas, release/iOS, offline/fotos/master/Sonar/carga permanecem gates. [Segurança](../../arquitetura/seguranca-operacao.md).
 
-- API **0.9.0 / 34 operações**, catálogo **0.2.0 / schema 2**, banco `trainforge_catalog_dev` e reader/migrator próprios. O núcleo permanece **schema 13 / 30 tabelas**.
-- M2/M3 passaram em **40874689251/c68b085**: publicação imutável, CAS/replay, consumidor047, retirada, espelho antigo, rollback de projeção, rede e restore antigo com reaplicação de retirada. Duas contas apenas sintéticas em CI; fixtures removidas.
-- Rollback verificado passou no CI **40876296947/ba46c3c**. O modo `local-verified` exige autoridade e digest atuais antes/depois da resposta. Não existe fallback automático para conteúdo antigo.
-- Ativação local teve checkpoint completo restaurado numa base temporária sem CONNECT do runtime, com comparação das30tabelas. O alvo foi removido; backup e credenciais ficam somente em `.local` com ACL Windows restrita.
-- Bootstrap preservou o núcleo; cinco rotas e ETag304 corresponderam ao catálogo separado. Há **73 referências e zero programas**. Detalhe de programa só teve teste negativo, pois não existe programa real liberado.
-- APK **0.4.3+25** preservado e não reinstalado. Sessão existente restaurada, sem novo consentimento Google. Android mostrou biblioteca73/0 e um detalhe real com autoria, licença e limites de consulta.
-- Rollback local, retorno remoto, parada do catálogo com503 na rota/prontidão e recuperação200 passaram. As30tabelas permaneceram iguais nesses ensaios. Nenhum registro privado foi criado ou excluído pelo agente.
-- Primeira comparação agregando linhas completas falhou antes do checkpoint/troca. A versão final calcula SHA256 por linha dentro do PostgreSQL e devolve apenas64hex por tabela; checkpoint e comparações passaram depois.
+## Produto e compra
 
-**Ambiente final:** API8082, catálogo18083, PostgreSQL15432 e emulador ativos; modo `remote`. Última navegação observada nesta rodada foi a composição pública alimentar, antes de qualquer confirmação de consumo. Reobservar a tela antes de agir.
+Q1–Q6em[decisões](decisoes-piloto.md): ambos os caminhos de treino; cuidador para si nas pausas; configuração completa; trocas compatíveis/dias/horários; retomar ou encerrar parcial. Foto sugere candidatos editáveis e usuário informa quantidade. Refeição/alimento usam mesmos registros; histórico visual/análise/dicas revisadas juntos. Fotos pela conta/cache; apagar refeição apaga foto; offline requer durabilidade/isolamento/idempotência; master nunca por e-mail/GitHub.
 
-Para conferir sem repetir a ativação:
+MoveKit consultado em29/10: pricingR$779/582exercícios; formatosMP4 e metadados anunciados; APIfutura, licença perpétua com12meses de novos lançamentos. Não compramos, não contatamos e não integramos. A cláusula3restringe obtenção de arquivo bruto por usuário, portanto cache/offline/entrega precisam esclarecimento. Não é substituto de programa/dose/revisão humana. O antigo tetoR$400é histórico; o interesse deR$779não é autorização de pagamento. Sem hospedagem agora.
 
-```powershell
-python tools/catalog_local.py verify
-python tools/avaliar_android.py status
-```
+## Histórico útil preservado
 
-`catalog-release` publica na autoridade com pacote/digest exatos. `catalog-transition mirror` avança somente a projeção editorial no núcleo. O importador legado recusa escrita após registro da autoridade. Não mover fontes alimentares, dividir refeição/itens ou usar credencial privada no catálogo.
+Auth011/012/013passou no recorte Androiddebug real;OAuthdebug/release conferidos. [Fechamento](auth-local-fechamento.md). A conta, consumo humano anterior e refeição de teste permanecem; capturas/logs privados ficam em.local, não noGit. PreservarAndroid/iOS e todos os públicos/ambientes.
 
-A captura Windows falhou com `window crop is outside captured monitor`; a evidência veio de semântica Android atual e screenshot nativo. Capturas/XML privados ficam fora do Git. Não reutilizar dump antigo se uma nova captura falhar. Não automatizar Google.
+A limpeza histórica da main anterior foi especificamente autorizada e concluída com lease/backup, comparando95commits/88IDs alterados e mantendo árvore/autores/mensagens/datas. Demais refs preservadas; outros clones precisam reconciliação. **Não repetir force-push.** Caches/cópias externas e validade dos tokens não certificados. [Recibo](git-history-remediation-preview.json).
 
-## Verificações e histórico Git
+No ajuste visuala8ea84a, oito workflows passaram, inclusiveSQL40977166330. No armazenamento764749f,Flutter40979922367,segredos40979922349 eGo/docs40979922319 passaram. Isso não é aprovação integral do produto. Não repetir sem mudança pertinente.
 
-A limpeza autorizada foi aplicada somente à main, com lease exato contra o commit de origem. A prova final comparou **95 commits, 88 IDs alterados, sete blobs e 11 ocorrências de query em seis arquivos**; árvore atual, autores, mensagens e datas preservados. Backup local por bundle com SHA256 conferido, demais refs remotos inalterados e Git deste notebook alinhado. [Recibo da aplicação](git-history-remediation-preview.json).
+Antes de nova tarefa: AGENTS.md, backlog.json, plano-macro.md e etapa-02-fechamento.md. Os recibos datados preservam detalhes históricos; este documento governa o estado atual.
 
-No commit limpo **6894858**, os oito workflows passaram: segredos, Flutter, Go/documentação, vulnerabilidades Go, SQL, restore, imagem e catálogo. [Segredos40888675534](https://github.com/richardcastrogois/TrainForge/actions/runs/40888675534): **85 ocorrências não secretas verificadas, zero bloqueadoras**, autorredação aprovada, sem valores brutos publicados. [Documentação40888675485](https://github.com/richardcastrogois/TrainForge/actions/runs/40888675485). As falhas anteriores permanecem como evidência histórica; os e-mails já enviados não são apagados.
-
-**Não repetir o force-push.** A autorização específica foi usada nesta operação; novas reescritas exigem nova decisão. Outros clones precisam ser reconciliados ou refeitos antes de enviar código, para não reintroduzir o histórico antigo. Objetos inacessíveis/cache do GitHub e cópias externas não foram certificados como apagados. Validade dos tokens externos não foi testada; nenhum replay, rotação ou contato ocorreu. Achados desconhecidos continuam bloqueadores; não imprimir valores nem silenciar URLs por inferência.
-
-Auditoria028, observabilidade029 e pipeline032 não estão encerrados. Sonar, carga, release e demais critérios mantêm os gates do backlog; não prometer milhões de usuários por contagem de testes.
-
-## Estado funcional preservado
-
-- V1-047 concluída funcionalmente: criação humana, edição autorizada para14:00 e recuperação da revisão2, sem terceira versão. [Fechamento047](training-configuration-047-fechamento.json). Clareza de fuso/hora permanece pendente; não repetir essa confirmação.
-- V1-048 concluída no recorte documentado. Cobertura editorial de traduções reais permanece **0/6369** por idioma; usar o nome original quando não houver tradução revisada. [Ferramenta editorial](../../conteudo/nomes-alimentares-revisados.md).
-- V1-045 continua doing: SQL/HTTP, Flutter, seleção particular e edição de metadados integrados. O autor criou/reabriu uma refeição, mas confirmou que era teste de navegação. Não classificá-la como consumo real nem excluí-la por inferência. [Estado045](refeicoes-045.md), [cliente](meal-grouping-edit-client-verification.json), [ativação](meal-grouping-local-activation.json).
-- Foram preservados a conta, o consumo humano real anterior, a refeição/consumo de teste e duas revisões047. Preparar rascunho não confirma consumo; correção de metadados não envia itens/quantidades.
-- Próxima história funcional pelas dependências: **V1-015**. Não há programas, instruções, doses ou mídias autorizados para prática. A configuração não cria elegibilidade. Continuar trabalho independente quando o bloqueio editorial impedir aceite.
-- Foto042, composição044, ciclo completo045, histórico/análise/dicas046, offline026 e administração master049 ainda têm seus próprios critérios. M0–M4 fecham apenas esta extração inicial; alimentação, treinos, fotos e identidade ainda precisam de etapas de separação.
-
-## Requisitos e limites do produto
-
-[Decisões Q1–Q6](decisoes-piloto.md) e [trilha por área](trilha-implementacao.md). Dois caminhos de treino; configuração completa em etapas curtas/revisão; trocas compatíveis e agenda; retomar ou encerrar parcial. Cuidador pratica para si nas pausas. Preservar idosos, cuidadores, casa, praça/parque e academia; Android e iOS.
-
-Foto propõe alimentos editáveis; usuário informa quantidades. Visões por refeição/alimento e histórico visual/análise/dicas revisadas juntos naV1. Fotos recuperáveis pela conta com cache; excluir refeição exclui foto. Offline requer fila durável, conflitos/idempotência e exclusão sem recriar dados. Sessão trocada/revogada não acessa pendências de outro titular. Master depende de identidade verificada e auditoria, sem promoção por e-mail/GitHub.
-
-Sem treinos, doses, instruções, mídia, nutrientes, traduções ou histórico inventados. Fixtures pertencem somente aos testes descartáveis. Sem compra, integração paga, pesquisa ampla, hospedagem, deploy ou contato externo. [Opções de API](../../conteudo/opcoes-apis-exercicios.md): gratuitas primeiro; compra única eventual de atéR$400 exige decisão específica.
-
-## Frontend, documentos e Git
-
-TF/Inter, dark Grafite e lima e Android sem esticar aprovados. Idioma segue o aparelho por padrão, com escolha manual opcional; pt-BR/pt-PT/en/es. Não alegar execução iOS no Windows ou aderência comprovada ao iOS27.
-
-[Fonte visual única](frontend-fidelidade-figma.md). Figma Starter atingiu a cota registrada; não repetir chamadas para testar saldo, contornar limites ou comprar plano. Abrir no notebook não elimina a cota.
-
-Graphify permanece **116Dart /4254nós /4998arestas**, sem alteração Dart nesta rodada. Consultado para CatalogRepository; Go/SQL ficam nos mapas e Swagger. Não reextrair todos os documentos. Swagger vem de comentários/DTOsGo; não editar derivados à mão. Não rodar analyze/gen-l10n/test junto a `avaliar_android.py prepare`.
-
-Para Go/Swagger sem iniciar a API, usar `environment(include_api_env=False)`; o default do watcher lê api.env. SDKs estão instalados; não reinstalar por hábito.
-
-Atualizar backlogJSON, recibos, diário, contratos/diagramas afetados e gerar documentos. `done` exige evidência. Commits/push autorizados com staging explícito e revisão de dados sensíveis. Git usa `git -c safe.directory=C:/dev/TrainForge/trainforge ...`; não mudar confiança global. Histórico detalhado está no diário e recibos, não em instruções repetidas para reexecutar trabalho concluído.
+Validação complementar deste incremento: suíte completaPython doCI com127testes aprovada; inclui os helpers e a reprodutibilidade dos15diagramas. Não é teste real de parada/start nem validação de compra/licença do pacote adquirido.

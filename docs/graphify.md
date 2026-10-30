@@ -1,5 +1,9 @@
 # Graphify — cobertura e atualização
 
+## Limpeza de 29–30/10
+
+90Dart/4032nós/4628arestas;31arquivos removidos/90inalterados. ASTincremental code-only eHTML, semLLM/semântica/clusterização. Backup exato em.local/graphify-backup-20261029-learning. Código legado removido não deve orientar diagramas ativos; [mapas didáticos](diagramas/README.md) usam fontes e schema conferidos. [Recibo](execucao/v1/repository-cleanup-verification.json).
+
 ## Atualização29/10 — conteúdo limpo e armazenamento
 
 121arquivosDart/4370nós/5129arestas. Ajuste visual e hub de fontes incluídos; depois1arquivoAuthStorage alterado/120inalterados/0removidos. ASTincremental code-only/HTML, semLLM/semântica/clusterização. Backups em.local/graphify-backup-20261029-clean-content e.local/graphify-backup-20261029-storage-policy. CincoARBnão interpretados; Go/SQL seguem nos contratos/Swagger. [UI](execucao/v1/frontend-content-cleanup-verification.json), [armazenamento](execucao/v1/secure-storage-recovery-verification.json).

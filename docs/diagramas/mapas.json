@@ -1,0 +1,1253 @@
+{
+  "schemaVersion": 1,
+  "diagrams": [
+    {
+      "id": "01-produto",
+      "title": "O que o TrainForge oferece",
+      "note": "Verde: existente; amarelo: parcial; tracejado: planejado. Casa, praça, academia, idosos e cuidador praticante continuam no escopo.",
+      "columns": 3,
+      "sources": [
+        "docs/execucao/v1/backlog.json",
+        "lib/shared/widgets/product_shell.dart"
+      ],
+      "nodes": [
+        {
+          "id": "consulta",
+          "title": "Bibliotecas",
+          "text": "Movimentos e alimentos reais; consulta pública.",
+          "state": "atual"
+        },
+        {
+          "id": "conta",
+          "title": "Conta pessoal",
+          "text": "Google, sessão, privacidade e preferências.",
+          "state": "atual"
+        },
+        {
+          "id": "diario",
+          "title": "Alimentação manual",
+          "text": "Alimento próprio, consumo e refeições; aceite completo pendente.",
+          "state": "parcial"
+        },
+        {
+          "id": "config",
+          "title": "Configuração de treino",
+          "text": "Rotina, locais, recursos e disponibilidade.",
+          "state": "atual"
+        },
+        {
+          "id": "treino",
+          "title": "Treino completo",
+          "text": "Selecionar, compor, agendar, executar e retomar.",
+          "state": "planejado"
+        },
+        {
+          "id": "foto",
+          "title": "Foto e análise",
+          "text": "Candidatos editáveis, quantidade, fotos pela conta e dicas revisadas.",
+          "state": "planejado"
+        }
+      ],
+      "edges": [
+        {
+          "from": "conta",
+          "to": "diario",
+          "label": "titular"
+        },
+        {
+          "from": "config",
+          "to": "treino",
+          "label": "pré-requisito"
+        },
+        {
+          "from": "diario",
+          "to": "foto",
+          "label": "evolução"
+        }
+      ]
+    },
+    {
+      "id": "02-arquitetura",
+      "title": "Quem conversa com quem",
+      "note": "As duas bases usam o mesmo cluster PostgreSQL isolado15432 neste notebook. Isso não constitui isolamento de infraestrutura em produção.",
+      "columns": 3,
+      "sources": [
+        "services/api/cmd/api/main.go",
+        "services/api/cmd/catalog/main.go",
+        "lib/composition/production_dependencies.dart"
+      ],
+      "nodes": [
+        {
+          "id": "celular",
+          "title": "Flutter / Android",
+          "text": "Interface no emulador. Porta8082 por adb reverse.",
+          "state": "atual"
+        },
+        {
+          "id": "api",
+          "title": "API Go :8082",
+          "text": "Autenticação, regras privadas e composição dos serviços.",
+          "state": "atual"
+        },
+        {
+          "id": "catalogo",
+          "title": "Catálogo Go :18083",
+          "text": "Leitura editorial separada; só quatro tabelas públicas.",
+          "state": "atual"
+        },
+        {
+          "id": "google",
+          "title": "Google OAuth",
+          "text": "Pessoa escolhe conta; API verifica identidade.",
+          "state": "externo"
+        },
+        {
+          "id": "core",
+          "title": "Banco do núcleo",
+          "text": "trainforge_v1_dev; schema13;30tabelas.",
+          "state": "atual"
+        },
+        {
+          "id": "catdb",
+          "title": "Banco do catálogo",
+          "text": "trainforge_catalog_dev; schema2;4tabelas.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "celular",
+          "to": "api",
+          "label": "HTTP/JSON local"
+        },
+        {
+          "from": "api",
+          "to": "catalogo",
+          "label": "HTTP interno"
+        },
+        {
+          "from": "api",
+          "to": "core",
+          "label": "pgx / SQL"
+        },
+        {
+          "from": "catalogo",
+          "to": "catdb",
+          "label": "pgx / SQL"
+        },
+        {
+          "from": "celular",
+          "to": "google",
+          "label": "login consentido"
+        }
+      ]
+    },
+    {
+      "id": "03-telas",
+      "title": "Mapa das telas ativas",
+      "note": "Setas são navegação, não chamadas SQL. Biblioteca e fontes públicas também podem ser acessadas antes do login.",
+      "columns": 3,
+      "sources": [
+        "lib/shared/widgets/auth_gate.dart",
+        "lib/shared/widgets/product_shell.dart",
+        "lib/shared/widgets/account_page.dart",
+        "lib/features/nutrition/presentation/meal_diary_page.dart"
+      ],
+      "nodes": [
+        {
+          "id": "inicio",
+          "title": "Inicialização / entrada",
+          "text": "Restaura preferências e sessão; login é manual.",
+          "state": "atual"
+        },
+        {
+          "id": "hoje",
+          "title": "Hoje / ProductShell",
+          "text": "Planos, atividade, alimentação e evolução; indisponibilidade explícita.",
+          "state": "atual"
+        },
+        {
+          "id": "biblioteca",
+          "title": "Biblioteca",
+          "text": "Lista → detalhe; conteúdo de treino só para consulta.",
+          "state": "atual"
+        },
+        {
+          "id": "perfil",
+          "title": "Seu espaço",
+          "text": "Conta, configuração, preferências, idioma e fontes.",
+          "state": "atual"
+        },
+        {
+          "id": "diario",
+          "title": "Refeições e alimentos",
+          "text": "Diário → refeição/item → correção ou exclusão confirmada.",
+          "state": "atual"
+        },
+        {
+          "id": "busca",
+          "title": "Busca de alimentos",
+          "text": "Pesquisar → detalhe → quantidade → confirmação.",
+          "state": "atual"
+        },
+        {
+          "id": "config",
+          "title": "Configuração",
+          "text": "Quatro etapas → revisão → confirmação.",
+          "state": "atual"
+        },
+        {
+          "id": "fontes",
+          "title": "Fontes e transparência",
+          "text": "Originais, autoria, licença e cálculo detalhado.",
+          "state": "atual"
+        },
+        {
+          "id": "privacidade",
+          "title": "Privacidade",
+          "text": "Política; dados próprios e exclusão confirmada.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "inicio",
+          "to": "hoje",
+          "label": "sessão válida"
+        },
+        {
+          "from": "hoje",
+          "to": "biblioteca",
+          "label": "consultar"
+        },
+        {
+          "from": "hoje",
+          "to": "perfil",
+          "label": "avatar"
+        },
+        {
+          "from": "hoje",
+          "to": "diario",
+          "label": "alimentação"
+        },
+        {
+          "from": "diario",
+          "to": "busca",
+          "label": "adicionar"
+        },
+        {
+          "from": "perfil",
+          "to": "config",
+          "label": "rotina"
+        },
+        {
+          "from": "perfil",
+          "to": "fontes",
+          "label": "comprovação"
+        },
+        {
+          "from": "perfil",
+          "to": "privacidade",
+          "label": "conta"
+        }
+      ]
+    },
+    {
+      "id": "04-login",
+      "title": "Como a sessão nasce e continua",
+      "note": "Diagrama omite valores de tokens. Falha de rede não equivale a revogação; login real não é comprovado por fixtures.",
+      "columns": 3,
+      "sources": [
+        "services/api/internal/auth/postgres.go",
+        "lib/features/auth/data/auth_storage.dart",
+        "lib/features/auth/data/session_refresh.dart"
+      ],
+      "nodes": [
+        {
+          "id": "pessoa",
+          "title": "Pessoa",
+          "text": "Toca Entrar com Google e confirma sua conta.",
+          "state": "atual"
+        },
+        {
+          "id": "google",
+          "title": "Google",
+          "text": "Entrega uma identidade assinada; não uma sessão do TrainForge.",
+          "state": "externo"
+        },
+        {
+          "id": "api",
+          "title": "POST auth/google",
+          "text": "API confere assinatura, emissor, audiência e validade.",
+          "state": "atual"
+        },
+        {
+          "id": "banco",
+          "title": "PostgreSQL",
+          "text": "Usuário, família, access e refresh conforme o contrato.",
+          "state": "atual"
+        },
+        {
+          "id": "seguro",
+          "title": "Armazenamento seguro",
+          "text": "Tokens no dispositivo; reset automático em erro desativado.",
+          "state": "atual"
+        },
+        {
+          "id": "sessao",
+          "title": "Chamadas e renovação",
+          "text": "Bearer nas rotas privadas; refresh rotativo; logout revoga.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "pessoa",
+          "to": "google",
+          "label": "consentimento"
+        },
+        {
+          "from": "google",
+          "to": "api",
+          "label": "ID token"
+        },
+        {
+          "from": "api",
+          "to": "banco",
+          "label": "transação"
+        },
+        {
+          "from": "banco",
+          "to": "seguro",
+          "label": "credenciais da sessão"
+        },
+        {
+          "from": "seguro",
+          "to": "sessao",
+          "label": "uso autenticado"
+        }
+      ]
+    },
+    {
+      "id": "05-consumo",
+      "title": "Da quantidade ao registro alimentar",
+      "note": "Foto ainda não integra este fluxo. Uma busca ou rascunho não prova que a pessoa consumiu algo.",
+      "columns": 3,
+      "sources": [
+        "lib/features/nutrition/presentation/nutrition_forms.dart",
+        "services/api/internal/nutrition/postgres_entries.go",
+        "services/api/internal/nutrition/meals_postgres.go"
+      ],
+      "nodes": [
+        {
+          "id": "busca",
+          "title": "Pesquisar",
+          "text": "Nome/atalho → alimento e versão exatos.",
+          "state": "atual"
+        },
+        {
+          "id": "form",
+          "title": "Preencher",
+          "text": "Pessoa informa quantidade, unidade, horário e medida/estimativa.",
+          "state": "atual"
+        },
+        {
+          "id": "confirmar",
+          "title": "Confirmar",
+          "text": "POST privado; titular e chave idempotente.",
+          "state": "atual"
+        },
+        {
+          "id": "api",
+          "title": "Validar e calcular",
+          "text": "API preserva unidade, versão e desconhecidos.",
+          "state": "atual"
+        },
+        {
+          "id": "banco",
+          "title": "Persistir",
+          "text": "food_entries + vínculos em meal_items quando aplicável.",
+          "state": "atual"
+        },
+        {
+          "id": "diario",
+          "title": "Mostrar diário",
+          "text": "Mesmos registros nas visões por refeição e por alimento.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "busca",
+          "to": "form",
+          "label": "selecionar versão"
+        },
+        {
+          "from": "form",
+          "to": "confirmar",
+          "label": "revisão humana"
+        },
+        {
+          "from": "confirmar",
+          "to": "api",
+          "label": "JSON"
+        },
+        {
+          "from": "api",
+          "to": "banco",
+          "label": "transação"
+        },
+        {
+          "from": "banco",
+          "to": "diario",
+          "label": "resposta confirmada"
+        }
+      ]
+    },
+    {
+      "id": "06-catalogo",
+      "title": "Publicação e leitura do catálogo",
+      "note": "M0–M4 fecham a primeira extração do catálogo. Comprar mídia não publica automaticamente programas ou doses.",
+      "columns": 3,
+      "sources": [
+        "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md",
+        "services/api/internal/catalogbridge/client.go"
+      ],
+      "nodes": [
+        {
+          "id": "fonte",
+          "title": "Fonte e direitos",
+          "text": "Autoria, licença, versão e uso permitido.",
+          "state": "atual"
+        },
+        {
+          "id": "revisao",
+          "title": "Revisão humana",
+          "text": "Separar movimento, instrução, mídia e programa.",
+          "state": "parcial"
+        },
+        {
+          "id": "pacote",
+          "title": "Publicação editorial",
+          "text": "Artefato/digest imutável; autoridade e retirada.",
+          "state": "atual"
+        },
+        {
+          "id": "catalogo",
+          "title": "Catálogo separado",
+          "text": "Leitor sem acesso às tabelas pessoais.",
+          "state": "atual"
+        },
+        {
+          "id": "api",
+          "title": "API / bridge",
+          "text": "Confere autoridade atual; sem fallback automático antigo.",
+          "state": "atual"
+        },
+        {
+          "id": "app",
+          "title": "Biblioteca",
+          "text": "73movimentos consultáveis; zero programas liberados.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "fonte",
+          "to": "revisao",
+          "label": "verificar"
+        },
+        {
+          "from": "revisao",
+          "to": "pacote",
+          "label": "somente aprovado"
+        },
+        {
+          "from": "pacote",
+          "to": "catalogo",
+          "label": "versão"
+        },
+        {
+          "from": "catalogo",
+          "to": "api",
+          "label": "cinco rotas"
+        },
+        {
+          "from": "api",
+          "to": "app",
+          "label": "referência"
+        }
+      ]
+    },
+    {
+      "id": "07-dados-no-aparelho",
+      "title": "O que fica em cada lugar",
+      "note": "Banco é fonte dos registros confirmados. Apagar dados do app não equivale a excluir a conta do servidor.",
+      "columns": 3,
+      "sources": [
+        "lib/features/auth/data/auth_storage.dart",
+        "docs/execucao/v1/backlog.json",
+        "docs/arquitetura/seguranca-operacao.md"
+      ],
+      "nodes": [
+        {
+          "id": "seguro",
+          "title": "Celular: seguro",
+          "text": "Tokens da sessão; proteção fornecida pela plataforma.",
+          "state": "atual"
+        },
+        {
+          "id": "prefs",
+          "title": "Celular: preferências",
+          "text": "Idioma e aparência; sem histórico alimentar autoritativo.",
+          "state": "atual"
+        },
+        {
+          "id": "memoria",
+          "title": "Celular: memória",
+          "text": "Formulários/intenções atuais; não é fila offline durável.",
+          "state": "atual"
+        },
+        {
+          "id": "db",
+          "title": "Servidor: PostgreSQL",
+          "text": "Conta, registros, versões e vínculos de refeição.",
+          "state": "atual"
+        },
+        {
+          "id": "fotos",
+          "title": "Fotos recuperáveis",
+          "text": "Arquivos privados por conta + cache; ainda não implementado.",
+          "state": "planejado"
+        },
+        {
+          "id": "offline",
+          "title": "Fila offline",
+          "text": "Operações duráveis e isoladas por titular; ainda não implementado.",
+          "state": "planejado"
+        }
+      ],
+      "edges": [
+        {
+          "from": "seguro",
+          "to": "db",
+          "label": "API autenticada"
+        },
+        {
+          "from": "memoria",
+          "to": "db",
+          "label": "confirmação explícita"
+        },
+        {
+          "from": "fotos",
+          "to": "db",
+          "label": "metadados / futuro"
+        },
+        {
+          "from": "offline",
+          "to": "db",
+          "label": "reconciliação / futuro"
+        }
+      ]
+    },
+    {
+      "id": "08-ambiente",
+      "title": "Iniciar, observar e parar",
+      "note": "status e plan-stop só consultam. Não executar init/activate/restore para abrir o app no dia a dia.",
+      "columns": 3,
+      "sources": [
+        "tools/ambiente.py",
+        "tools/avaliar_android.py",
+        "tools/catalog_local.py",
+        "tools/db_local.py"
+      ],
+      "nodes": [
+        {
+          "id": "start",
+          "title": "ambiente start",
+          "text": "Reutiliza ferramentas e configuração já existentes.",
+          "state": "atual"
+        },
+        {
+          "id": "db",
+          "title": "1. PostgreSQL15432",
+          "text": "Inicia apenas o cluster local registrado.",
+          "state": "atual"
+        },
+        {
+          "id": "catalogo",
+          "title": "2. Catálogo18083",
+          "text": "Reutiliza a base já provisionada; não ativa migrations.",
+          "state": "atual"
+        },
+        {
+          "id": "api",
+          "title": "3. API8082",
+          "text": "Watcher local; build e Swagger quando as fontes mudam.",
+          "state": "atual"
+        },
+        {
+          "id": "android",
+          "title": "4. Emulador / APK",
+          "text": "TrainForge_Benchmark; instala somente se necessário.",
+          "state": "atual"
+        },
+        {
+          "id": "stop",
+          "title": "ambiente stop",
+          "text": "API → catálogo → AVD registrado → banco; sem wipe.",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "start",
+          "to": "db",
+          "label": "ordem"
+        },
+        {
+          "from": "db",
+          "to": "catalogo",
+          "label": "ordem"
+        },
+        {
+          "from": "catalogo",
+          "to": "api",
+          "label": "ordem"
+        },
+        {
+          "from": "api",
+          "to": "android",
+          "label": "ordem"
+        },
+        {
+          "from": "android",
+          "to": "stop",
+          "label": "salvar antes"
+        }
+      ]
+    },
+    {
+      "id": "09-midia-proposta",
+      "title": "MoveKit: proposta de integração",
+      "note": "Proposta, não infraestrutura existente. Cache/offline da mídia depende de esclarecer compatibilidade com a cláusula3 da licença.",
+      "columns": 3,
+      "sources": [
+        "docs/conteudo/avaliacao-movekit-2026-10-29.md"
+      ],
+      "nodes": [
+        {
+          "id": "compra",
+          "title": "Compra manual",
+          "text": "Ainda não realizada ou autorizada para execução.",
+          "state": "planejado"
+        },
+        {
+          "id": "arquivo",
+          "title": "Arquivos adquiridos",
+          "text": "ZIP MP4; posters e metadados anunciados pelo fornecedor.",
+          "state": "externo"
+        },
+        {
+          "id": "revisao",
+          "title": "Importação revisada",
+          "text": "Validar licença, identidade, tradução e versão.",
+          "state": "planejado"
+        },
+        {
+          "id": "metadados",
+          "title": "PostgreSQL",
+          "text": "IDs, relações, licença, versão e chave do objeto; não vídeos.",
+          "state": "planejado"
+        },
+        {
+          "id": "objetos",
+          "title": "Arquivos privados",
+          "text": "Em dev: diretório local; futuro: object storage escolhido.",
+          "state": "planejado"
+        },
+        {
+          "id": "app",
+          "title": "Player no aplicativo",
+          "text": "Entrega controlada; sem links públicos ou download bruto.",
+          "state": "planejado"
+        }
+      ],
+      "edges": [
+        {
+          "from": "compra",
+          "to": "arquivo",
+          "label": "aquisição"
+        },
+        {
+          "from": "arquivo",
+          "to": "revisao",
+          "label": "conferência"
+        },
+        {
+          "from": "revisao",
+          "to": "metadados",
+          "label": "índice"
+        },
+        {
+          "from": "revisao",
+          "to": "objetos",
+          "label": "mídia"
+        },
+        {
+          "from": "metadados",
+          "to": "app",
+          "label": "API"
+        },
+        {
+          "from": "objetos",
+          "to": "app",
+          "label": "stream autorizado"
+        }
+      ]
+    },
+    {
+      "id": "10-qualidade",
+      "title": "Como uma alteração chega ao GitHub",
+      "note": "Workflows usam filtros de caminhos; nem todos executam em todo commit. Sonar/carga/release integral ainda têm gates próprios.",
+      "columns": 3,
+      "sources": [
+        ".github/workflows",
+        "docs/execucao/v1/backlog.json"
+      ],
+      "nodes": [
+        {
+          "id": "codigo",
+          "title": "Código local",
+          "text": "Flutter, Go, SQL e documentação.",
+          "state": "atual"
+        },
+        {
+          "id": "testes",
+          "title": "Validação local",
+          "text": "Testes proporcionais, análise e revisão de segredos.",
+          "state": "atual"
+        },
+        {
+          "id": "commit",
+          "title": "Commit e push",
+          "text": "Incremento identificado; credenciais fora do Git.",
+          "state": "atual"
+        },
+        {
+          "id": "ci",
+          "title": "GitHub Actions",
+          "text": "Flutter, Go/docs, SQL, catálogo, restore, imagem e segredos.",
+          "state": "atual"
+        },
+        {
+          "id": "artefato",
+          "title": "Artefato de avaliação",
+          "text": "APK por versão/hash; CI verde não é aceite humano.",
+          "state": "atual"
+        },
+        {
+          "id": "aceite",
+          "title": "Aceite real",
+          "text": "Emulador/celular; consentimentos e dados reais fornecidos pela pessoa.",
+          "state": "parcial"
+        }
+      ],
+      "edges": [
+        {
+          "from": "codigo",
+          "to": "testes",
+          "label": "verificar"
+        },
+        {
+          "from": "testes",
+          "to": "commit",
+          "label": "validado"
+        },
+        {
+          "from": "commit",
+          "to": "ci",
+          "label": "push"
+        },
+        {
+          "from": "ci",
+          "to": "artefato",
+          "label": "evidências"
+        },
+        {
+          "from": "artefato",
+          "to": "aceite",
+          "label": "testar jornada"
+        }
+      ]
+    },
+    {
+      "id": "11-banco-identidade",
+      "title": "Banco: identidade e privacidade",
+      "note": "Seta FK: tabela de origem referencia a de destino; tabelas não chamam outras. Colunas completas, cardinalidades/constraints e responsabilidades em banco.md. Tabela existente não comprova jornada implementada.",
+      "columns": 3,
+      "sources": [
+        "docs/diagramas/schema-publico.json",
+        "services/api/migrations"
+      ],
+      "nodes": [
+        {
+          "id": "users",
+          "title": "users",
+          "text": "id | provider | issuer | subject | display_name …",
+          "state": "atual"
+        },
+        {
+          "id": "auth_families",
+          "title": "auth_families",
+          "text": "id | user_id | revoked_at | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "refresh_tokens",
+          "title": "refresh_tokens",
+          "text": "token_hash | family_id | expires_at | consumed_at | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "access_tokens",
+          "title": "access_tokens",
+          "text": "token_hash | family_id | expires_at | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "account_deletion_intents",
+          "title": "account_deletion_intents",
+          "text": "token_hash | user_id | family_id | expires_at | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "account_erasures",
+          "title": "account_erasures",
+          "text": "user_id | erased_at …",
+          "state": "atual"
+        },
+        {
+          "id": "idempotency_records",
+          "title": "idempotency_records",
+          "text": "user_id | operation | key_hash | request_hash | response_status …",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "access_tokens",
+          "to": "auth_families",
+          "label": "FK"
+        },
+        {
+          "from": "account_deletion_intents",
+          "to": "auth_families",
+          "label": "FK"
+        },
+        {
+          "from": "auth_families",
+          "to": "users",
+          "label": "FK"
+        },
+        {
+          "from": "idempotency_records",
+          "to": "users",
+          "label": "FK"
+        },
+        {
+          "from": "refresh_tokens",
+          "to": "auth_families",
+          "label": "FK"
+        }
+      ]
+    },
+    {
+      "id": "12-banco-treinos",
+      "title": "Banco: treino e configuração",
+      "note": "Seta FK: tabela de origem referencia a de destino; tabelas não chamam outras. Colunas completas, cardinalidades/constraints e responsabilidades em banco.md. Tabela existente não comprova jornada implementada.",
+      "columns": 3,
+      "sources": [
+        "docs/diagramas/schema-publico.json",
+        "services/api/migrations"
+      ],
+      "nodes": [
+        {
+          "id": "users",
+          "title": "users",
+          "text": "id | provider | issuer | subject | display_name …",
+          "state": "atual"
+        },
+        {
+          "id": "training_configuration_versions",
+          "title": "training_configuration_versions",
+          "text": "user_id | revision | configuration | confirmed_at …",
+          "state": "atual"
+        },
+        {
+          "id": "enrollments",
+          "title": "enrollments",
+          "text": "id | user_id | program_id | program_sha | status …",
+          "state": "atual"
+        },
+        {
+          "id": "schedule_occurrences",
+          "title": "schedule_occurrences",
+          "text": "id | user_id | enrollment_id | source_session_key | planned_for …",
+          "state": "atual"
+        },
+        {
+          "id": "activity_sessions",
+          "title": "activity_sessions",
+          "text": "id | occurrence_id | user_id | state | started_at …",
+          "state": "atual"
+        },
+        {
+          "id": "activity_events",
+          "title": "activity_events",
+          "text": "id | session_id | user_id | event_type | occurred_at …",
+          "state": "atual"
+        },
+        {
+          "id": "program_sessions",
+          "title": "program_sessions",
+          "text": "program_id | program_sha | program_kind | session_key | source_metadata …",
+          "state": "atual"
+        },
+        {
+          "id": "program_items",
+          "title": "program_items",
+          "text": "program_id | program_sha | session_key | position | movement_id …",
+          "state": "atual"
+        },
+        {
+          "id": "content_versions",
+          "title": "content_versions",
+          "text": "asset_id | version_sha | kind | source_id | title …",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "activity_events",
+          "to": "activity_sessions",
+          "label": "FK"
+        },
+        {
+          "from": "activity_sessions",
+          "to": "schedule_occurrences",
+          "label": "FK"
+        },
+        {
+          "from": "enrollments",
+          "to": "content_versions",
+          "label": "FK"
+        },
+        {
+          "from": "enrollments",
+          "to": "users",
+          "label": "FK"
+        },
+        {
+          "from": "program_items",
+          "to": "content_versions",
+          "label": "FK"
+        },
+        {
+          "from": "program_items",
+          "to": "program_sessions",
+          "label": "FK"
+        },
+        {
+          "from": "program_sessions",
+          "to": "content_versions",
+          "label": "FK"
+        },
+        {
+          "from": "schedule_occurrences",
+          "to": "program_sessions",
+          "label": "FK"
+        },
+        {
+          "from": "schedule_occurrences",
+          "to": "enrollments",
+          "label": "FK"
+        },
+        {
+          "from": "training_configuration_versions",
+          "to": "users",
+          "label": "FK"
+        }
+      ]
+    },
+    {
+      "id": "13-banco-alimentacao",
+      "title": "Banco: alimentos e refeições",
+      "note": "Seta FK: tabela de origem referencia a de destino; tabelas não chamam outras. Colunas completas, cardinalidades/constraints e responsabilidades em banco.md. Tabela existente não comprova jornada implementada.",
+      "columns": 3,
+      "sources": [
+        "docs/diagramas/schema-publico.json",
+        "services/api/migrations"
+      ],
+      "nodes": [
+        {
+          "id": "users",
+          "title": "users",
+          "text": "id | provider | issuer | subject | display_name …",
+          "state": "atual"
+        },
+        {
+          "id": "food_versions",
+          "title": "food_versions",
+          "text": "food_id | version_sha | source_id | source_food_id | source_row_key …",
+          "state": "atual"
+        },
+        {
+          "id": "food_entries",
+          "title": "food_entries",
+          "text": "id | user_id | food_id | food_sha | quantity …",
+          "state": "atual"
+        },
+        {
+          "id": "meals",
+          "title": "meals",
+          "text": "id | user_id | title | occurred_at | timezone …",
+          "state": "atual"
+        },
+        {
+          "id": "meal_items",
+          "title": "meal_items",
+          "text": "entry_id | user_id | meal_id | position …",
+          "state": "atual"
+        },
+        {
+          "id": "meal_versions",
+          "title": "meal_versions",
+          "text": "meal_id | user_id | revision | title | occurred_at …",
+          "state": "atual"
+        },
+        {
+          "id": "food_name_versions",
+          "title": "food_name_versions",
+          "text": "food_id | food_version_sha | locale | version_sha | name …",
+          "state": "atual"
+        },
+        {
+          "id": "food_name_withdrawals",
+          "title": "food_name_withdrawals",
+          "text": "food_id | food_version_sha | locale | version_sha | reason …",
+          "state": "atual"
+        },
+        {
+          "id": "food_name_catalogs",
+          "title": "food_name_catalogs",
+          "text": "locale | revision …",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "food_entries",
+          "to": "food_versions",
+          "label": "FK"
+        },
+        {
+          "from": "food_entries",
+          "to": "users",
+          "label": "FK"
+        },
+        {
+          "from": "food_name_versions",
+          "to": "food_versions",
+          "label": "FK"
+        },
+        {
+          "from": "food_name_withdrawals",
+          "to": "food_name_versions",
+          "label": "FK"
+        },
+        {
+          "from": "food_versions",
+          "to": "users",
+          "label": "FK"
+        },
+        {
+          "from": "meal_items",
+          "to": "food_entries",
+          "label": "FK"
+        },
+        {
+          "from": "meal_items",
+          "to": "meals",
+          "label": "FK"
+        },
+        {
+          "from": "meal_versions",
+          "to": "meals",
+          "label": "FK"
+        },
+        {
+          "from": "meals",
+          "to": "users",
+          "label": "FK"
+        }
+      ]
+    },
+    {
+      "id": "14-banco-editorial",
+      "title": "Banco: editorial e importação",
+      "note": "Seta FK: tabela de origem referencia a de destino; tabelas não chamam outras. Colunas completas, cardinalidades/constraints e responsabilidades em banco.md. Tabela existente não comprova jornada implementada.",
+      "columns": 3,
+      "sources": [
+        "docs/diagramas/schema-publico.json",
+        "services/api/migrations"
+      ],
+      "nodes": [
+        {
+          "id": "sources",
+          "title": "sources",
+          "text": "id | name | publisher | urls | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "content_versions",
+          "title": "content_versions",
+          "text": "asset_id | version_sha | kind | source_id | title …",
+          "state": "atual"
+        },
+        {
+          "id": "content_withdrawals",
+          "title": "content_withdrawals",
+          "text": "asset_id | version_sha | reason | withdrawn_at …",
+          "state": "atual"
+        },
+        {
+          "id": "import_batches",
+          "title": "import_batches",
+          "text": "artifact_sha | bundle_id | manifest_sha | imported_assets | created_at …",
+          "state": "atual"
+        },
+        {
+          "id": "batch_content",
+          "title": "batch_content",
+          "text": "artifact_sha | asset_id | version_sha …",
+          "state": "atual"
+        },
+        {
+          "id": "food_versions",
+          "title": "food_versions",
+          "text": "food_id | version_sha | source_id | source_food_id | source_row_key …",
+          "state": "atual"
+        },
+        {
+          "id": "food_import_batches",
+          "title": "food_import_batches",
+          "text": "artifact_sha | bundle_id | manifest_sha | review_sha | imported_foods …",
+          "state": "atual"
+        },
+        {
+          "id": "food_batch_versions",
+          "title": "food_batch_versions",
+          "text": "artifact_sha | food_id | version_sha …",
+          "state": "atual"
+        },
+        {
+          "id": "food_withdrawals",
+          "title": "food_withdrawals",
+          "text": "food_id | version_sha | reason | withdrawn_at …",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "batch_content",
+          "to": "import_batches",
+          "label": "FK"
+        },
+        {
+          "from": "batch_content",
+          "to": "content_versions",
+          "label": "FK"
+        },
+        {
+          "from": "content_versions",
+          "to": "sources",
+          "label": "FK"
+        },
+        {
+          "from": "content_withdrawals",
+          "to": "content_versions",
+          "label": "FK"
+        },
+        {
+          "from": "food_batch_versions",
+          "to": "food_import_batches",
+          "label": "FK"
+        },
+        {
+          "from": "food_batch_versions",
+          "to": "food_versions",
+          "label": "FK"
+        },
+        {
+          "from": "food_versions",
+          "to": "sources",
+          "label": "FK"
+        },
+        {
+          "from": "food_withdrawals",
+          "to": "food_versions",
+          "label": "FK"
+        }
+      ]
+    },
+    {
+      "id": "15-banco-catalogo",
+      "title": "Banco separado: catálogo",
+      "note": "Banco independente no cluster local. Sem users, tokens, alimentação privada ou cópias de fotos.",
+      "columns": 3,
+      "sources": [
+        "docs/diagramas/schema-publico.json",
+        "services/api/internal/catalogschema"
+      ],
+      "nodes": [
+        {
+          "id": "catalog_releases",
+          "title": "catalog_releases",
+          "text": "revision | digest | previous_digest | package_digest | published_at",
+          "state": "atual"
+        },
+        {
+          "id": "content_versions",
+          "title": "content_versions",
+          "text": "asset_id | version_sha | kind | source_id | title",
+          "state": "atual"
+        },
+        {
+          "id": "content_withdrawals",
+          "title": "content_withdrawals",
+          "text": "asset_id | version_sha | reason | withdrawn_at",
+          "state": "atual"
+        },
+        {
+          "id": "sources",
+          "title": "sources",
+          "text": "id | name | publisher | urls | created_at",
+          "state": "atual"
+        }
+      ],
+      "edges": [
+        {
+          "from": "content_versions",
+          "to": "sources",
+          "label": "FK"
+        },
+        {
+          "from": "content_withdrawals",
+          "to": "content_versions",
+          "label": "FK"
+        }
+      ]
+    }
+  ]
+}

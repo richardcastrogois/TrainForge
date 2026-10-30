@@ -1,54 +1,26 @@
 # Documentação do TrainForge
 
-Atualizado em **27/10/2026**. Este índice define a leitura atual; datas dentro dos dossiês preservam o histórico.
+## Para aprender e operar
 
-| Preciso entender… | Abrir |
-|---|---|
-| O que fazer, área por área, e quando encerrar | [Trilha de implementação e decisões](execucao/v1/trilha-implementacao.md) |
-| O produto inteiro, incluindo públicos e ambientes | [Visão R01–R18](planejamento/visao-produto.md) |
-| O que existe de verdade antes de comprar GIFs | [Auditoria de banco, segurança, Go, Flutter, idiomas e escala](execucao/v1/auditoria-produto-2026-10-24.md) |
-| O que existe e o que precisa mudar | [Diagnóstico atual](arquitetura/diagnostico-atual.md) |
-| Por que Go e como organizar os serviços | [Arquitetura proposta](arquitetura/arquitetura-alvo.md) |
-| Retomar o APK disponível e testar | [Avaliação Android e checkpoint atual](execucao/v1/avaliacao-android.md) |
-| Idiomas: o que foi localizado e o que falta | [Fechamento048 por critério](execucao/v1/localization-048-fechamento.json), [operação e cobertura](conteudo/nomes-alimentares-revisados.md) e [Checkpoint anterior do APK16](execucao/v1/android-food-names-checkpoint.json) |
-| Consultar alimentos reais no app | [Consulta pública e limites](execucao/v1/alimentacao-consulta.md) |
-| Privacidade e ciclo da conta | [V1-013: implementação e limites do ciclo privado](execucao/v1/privacidade-013.md) |
-| Base alimentar real no banco | [V1-019: importação6369registros e limites](execucao/v1/alimentacao-importacao.md) |
-| Catálogo real entregue | [V1-014: consulta e limites](execucao/v1/catalogo-consulta.md) |
-| O caminho até o primeiro APK | [Plano macro da V1](execucao/v1/plano-macro.md) |
-| O que entra na V1 e o que fica depois | [Escopo e critérios](execucao/v1/escopo.md) |
-| O que o autor quer avaliar no APK durante o desenvolvimento | [Decisões do piloto](execucao/v1/decisoes-piloto.md) |
-| Como outros produtos guardam fotos de refeições | [Comparação de quatro produtos e direção aprovada para o TrainForge](execucao/v1/pesquisa-fotos-historico.md) |
-| O que cada agente deve executar | [Backlog](execucao/v1/backlog.md) e [handoff](execucao/v1/handoff.md) |
-| Quem chama quem, passando e recebendo o quê | [Arquitetura dinâmica](arquitetura/README.md), [contratos](arquitetura/contratos-v1.md) e [fluxos](arquitetura/fluxos.md) |
-| Como serão camadas e Swagger Go | [Camadas](arquitetura/camadas-go.md) e [Swagger por comentários](arquitetura/swagger-go.md) |
-| Banco, unidades, versões e histórico | [Domínio e banco](arquitetura/dominio-e-banco.md) |
-| Segurança, observabilidade e escala | [Plano de qualidade](arquitetura/seguranca-operacao.md) |
-| Implantação e entrega à esposa | [Roteiro de distribuição](execucao/v1/implantacao-e-apk.md) |
-| Conteúdo efetivamente encontrado | [Índice de conteúdo](conteudo/README.md) |
-| O que foi validado nesta entrega | [Validação e registro](execucao/v1/validacao-planejamento.md) |
+- [Começar pelo aprendizado](aprendizado/README.md)
+- [Iniciar, acompanhar logs e parar](aprendizado/operacao-local.md)
+- [O que cada pasta/ferramenta faz](aprendizado/pecas-do-projeto.md)
+- [Banco sem ORM e a dúvida sobre Prisma](aprendizado/orm-e-persistencia.md)
+- [Diagramas visuais/editáveis](diagramas/README.md), [tabelas](diagramas/banco.md) e [APIs](diagramas/apis.md)
 
-**Prioridade vigente 27/10:** seguir a [trilha por área](execucao/v1/trilha-implementacao.md). Q1 e agrupamento por refeição/alimento confirmados; histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Q2 confirmou recuperação das fotos pela conta, com cache no celular. Q3 confirmou configuração completa, trocas compatíveis/agenda editável e retomada/parcial;047 planeja a configuração privada. Q4 confirmou apagar foto com a refeição e registrar offline para sincronizar depois (026 ainda todo). Q5 confirmou etapas curtas com revisão final e nomes traduzidos quando revisados, mantendo original/fonte e fallback.048 está doing com495 mensagens,173 testes Flutter, cliente Go/Flutter e ferramenta editorial integrados; cobertura real0/6.369 por idioma e APK19 instalado com ensaio Android. Falta projeção de nomes no histórico/detalhe de consumo sem alterar snapshots; Q6 definiu exclusão pelo próprio usuário ou master (nova049todo) e avaliação de todos os cenários. Seguir implementação pelas dependências; identidade master e aceites humanos só serão combinados quando houver fluxo concreto. Implementar com critérios verificáveis. GIFs não são o único bloqueio. Direção visual aprovada preservada; sem hospedagem/contratação agora. A auditoria mantém o baseline; planejamento não conta como conclusão.
+## Para implementar e retomar
 
-**Aplicativo disponível:** APK Android debug **0.3.0+13**, API Go **0.5.1 / 25 operações**, PostgreSQL local. Autenticação/privacidade e alimentação manual possuem evidências reais. Há 73 metadados de movimento e 6.369 referências alimentares; nenhuma prática foi liberada por aplicar o visual.
+- [Handoff vigente](execucao/v1/handoff.md)
+- [Trilha por área](execucao/v1/trilha-implementacao.md) e [backlog](execucao/v1/backlog.json)
+- [Mapa estrutural gerado](arquitetura/README.md) e [Graphify](graphify.md)
+- [Fonte visual](execucao/v1/frontend-fidelidade-figma.md)
+- [Conteúdo e direitos](conteudo/README.md)
+- [Avaliação MoveKit](conteudo/avaliacao-movekit-2026-10-29.md)
 
-**Checkpoint de idiomas:** APKdebug0.3.1+14 compilado/assinatura conferida, sem instalação automática nesta rodada. Interface parcial em pt-BR/pt-PT/en/es; [critérios/limites](execucao/v1/frontend-localization-verification.json).119testesFlutter/analyze0issues e7testes dohelper; iOS e aceite Android próprios ainda pendentes.
+Estado atual é documentado no handoff; snapshots de2026 anteriores não são instrução para instalar ou recomeçar. Docs de entrada foram atualizados paraGo; Fastify/Prisma continuam referências históricas.
 
-**Frontend:** pontos 01–06 têm checkpoint Android aprovado; 07–12 refinam os fluxos disponíveis, sem encerramento integral. Configuração, treino, contexto de pausa, foto, idiomas e validação nativa iOS permanecem abertos. Cuidador pratica para si; delegação de outra pessoa não é requisito desta versão. [Fonte visual e checkpoints](execucao/v1/frontend-fidelidade-figma.md) · [Artefato](execucao/v1/android-frontend-checkpoint.json) · [Handoff](execucao/v1/handoff.md).
+## O que foi preservado e por quê
 
-## Como a pasta foi organizada
+execucao/v1 guarda decisões e recibos; conteudo guarda evidências/licenças; arquitetura contém contratos e mapas; design e arquivo preservam referências históricas que ainda são citadas. Geradores/protótipos antigos não são funcionalidades do APK. Não apagar essas provas por parecerem antigas.
 
-- `arquitetura/`: entrada navegável sem servidor, fatos atuais, propostas, Swagger por comentários, referências portáteis e mapas gerados.
-- `execucao/v1/`: recorte, sequência, backlog, entrega e retomada para agentes.
-- `.github/workflows/documentacao.yml`: geração/verificação dos documentos e atualização dos derivados na branch principal, após publicação da configuração e respeitando regras do remoto.
-- `conteudo/`: autoria, fontes, direitos e evidências da pesquisa, com caminhos preservados.
-- `planejamento/`: visão R01–R18 e referências de produto; a execução atual está na V1.
-- `design/`: protótipos e inventários datados; simulações do Figma não são dados do app.
-- `referencias/`: Graphify do backend e do frontend antigo, com cobertura própria.
-- `arquivo/2026-10-21/`: versões antigas dos documentos de entrada. Consultar somente para histórico.
-
-A organização removeu dos pontos de entrada as filas e instruções ultrapassadas. Não apagou provas de autoria, recibos, verificadores nem arquivos necessários para reproduzir a pesquisa. PDFs e renders de terceiros continuam locais e ignorados no Git; o repositório guarda registros e hashes, não uma licença de redistribuição desses materiais.
-
-**23/10:** V1-013 tem implementação independente validada: política pública, exportação própria, exclusão confirmada, manutenção e filtro de restore. Go0.4.0/18operações, Flutter48testes/APK0.1.3+4. GoogleAndroiddebug/aceite privado reais passaram; OAuthrelease cadastrado/conferido; HTTPS/testeAPKrelease pendentes; nenhuma outraV1 iniciada. Incrementos publicados noGitHub em3170c50/4b922ab; ambasCIs verdes, nenhum deploy.
-
-**Prioridade atual:** autor não quer hospedagem agora. Teste local pronto;011/012/013 concluídas com [critérios/evidência](execucao/v1/auth-local-fechamento.md). DistribuiçãoHTTPS/release/iOS permanece futura, sem bloquear consultas noemulador.
+A limpeza de 29/10 removeu31 arquivos Dart sem referências e63 arquivos dos quatro scaffolds Flutter fora deAndroid/iOS. [Recibo](execucao/v1/repository-cleanup-verification.json). Não limpou bancos, chaves, backups, caches necessários nem provas de origem.

@@ -1,17 +1,20 @@
 # Documentação técnica
 
-Estado verificado em 21/10/2026: Flutter existente + API externa Fastify/Prisma/PostgreSQL. Nenhuma API Go ou migration nova foi implementada por esta entrega. O mapa detecta estrutura estática; execução real requer testes próprios.
+Estado em 29/10/2026:Flutter → APIGo0.9.1 → PostgreSQL. Catálogo Go0.2.0 separado, com cinco rotas preservadas e base/credenciais próprias. O núcleo ainda concentra autenticação, alimentação, privacidade e configuração; não apresentamos todos os domínios como microserviços concluídos.
 
-| Assunto | Fonte vigente |
+| Pergunta | Fonte |
 |---|---|
-| Inventário, achados e código aproveitável | [Diagnóstico atual](docs/arquitetura/diagnostico-atual.md) e [inventário](docs/arquitetura/inventario-atual.json) |
-| Organização Flutter/Go e escolha técnica | [Arquitetura proposta](docs/arquitetura/arquitetura-alvo.md) |
-| Quem chama quem e dados trocados | [Mapa dinâmico no repositório](docs/arquitetura/README.md), [contratos propostos](docs/arquitetura/contratos-v1.md) e [fluxos](docs/arquitetura/fluxos.md) |
-| Camadas do backend e documentação por comentários | [Camadas Go](docs/arquitetura/camadas-go.md) e [Swagger code-first](docs/arquitetura/swagger-go.md) |
-| Entidades, unidades, versões e ocorrências | [Domínio/banco](docs/arquitetura/dominio-e-banco.md) |
-| Autenticação, autorização, limites, escala e telemetria | [Segurança/operação](docs/arquitetura/seguranca-operacao.md) |
-| Fonte, autoria e direitos | [Conteúdo](docs/conteudo/README.md) |
-| Tarefas e retomada | [Backlog](docs/execucao/v1/backlog.md) e [handoff](docs/execucao/v1/handoff.md) |
-| Infraestrutura, build e distribuição | [Implantação/APK](docs/execucao/v1/implantacao-e-apk.md) |
+| Qual peça faz o quê? | [Aprendizado](docs/aprendizado/pecas-do-projeto.md) |
+| Como iniciar/parar/ver logs? | [Operação local](docs/aprendizado/operacao-local.md) |
+| Quem chama quem? | [15 mapas visuais](docs/diagramas/README.md) |
+| Quais tabelas e campos? | [Schema real](docs/diagramas/banco.md) |
+| Quais APIs existem? | [34 operações](docs/diagramas/apis.md), [Swagger](docs/arquitetura/swagger-go.md) |
+| Usamos ORM? | [pgx, SQL, Goose e alternativas](docs/aprendizado/orm-e-persistencia.md) |
+| Como estão os serviços separados? | [M0–M4 do catálogo](docs/arquitetura/reavaliacao-microservicos-2026-10-29.md) |
+| Quais controles e lacunas? | [Segurança/operação](docs/arquitetura/seguranca-operacao.md) |
+| Como preservar direitos? | [Conteúdo](docs/conteudo/README.md) e [MoveKit](docs/conteudo/avaliacao-movekit-2026-10-29.md) |
+| O que falta? | [Handoff](docs/execucao/v1/handoff.md), [trilha](docs/execucao/v1/trilha-implementacao.md), [backlog](docs/execucao/v1/backlog.json) |
 
-Contrato oficial gerado por comentários/DTOs Go, serviço Go e manifestos aprovados são entregas futuras. JSON/YAML Swagger serão derivados, não especificação manual concorrente. Não gerar cliente ou executar SQL a partir de tabelas propostas como se já tivessem sido aceitas/testadas. Snapshot técnico anterior: [arquivo](docs/arquivo/2026-10-21/documentacao-tecnica.md).
+Código Go, migrations e Swagger gerado prevalecem sobre diagramas desatualizados. Os mapas visuais mostram fatos atuais e propostas com legenda; metadados de tabela não significam capacidade de negócio pronta. O[mapa estrutural gerado](docs/arquitetura/README.md) e[Graphify](docs/graphify.md) complementam a leitura.
+
+Não executar Prisma sobre a baseGo. Migrations ficam com Goose e credenciais administrativas próprias. Nenhuma tabela recebe chamada direta do APK.

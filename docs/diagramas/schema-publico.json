@@ -1,0 +1,1750 @@
+{
+  "date": "2026-10-29",
+  "scope": "schema-metadata-only-no-rows",
+  "coreRevision": 13,
+  "catalogRevision": 2,
+  "databases": {
+    "trainforge_v1_dev": {
+      "tables": [
+        {
+          "name": "access_tokens",
+          "columns": [
+            {
+              "name": "token_hash",
+              "type": "bytea",
+              "notNull": true
+            },
+            {
+              "name": "family_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "expires_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "account_deletion_intents",
+          "columns": [
+            {
+              "name": "token_hash",
+              "type": "bytea",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "family_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "expires_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "account_erasures",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "erased_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "activity_events",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "session_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "event_type",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "occurred_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "payload",
+              "type": "jsonb",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "activity_sessions",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "occurrence_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "state",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "started_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "ended_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            },
+            {
+              "name": "completed_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            }
+          ]
+        },
+        {
+          "name": "auth_families",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "revoked_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "batch_content",
+          "columns": [
+            {
+              "name": "artifact_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "asset_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "content_versions",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "kind",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "source_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "locale",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "source_published_version",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "allowed_operations",
+              "type": "text[]",
+              "notNull": true
+            },
+            {
+              "name": "payload",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "content_withdrawals",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "reason",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "withdrawn_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "enrollments",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "program_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "status",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "options",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "program_kind",
+              "type": "text",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_batch_versions",
+          "columns": [
+            {
+              "name": "artifact_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_entries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "food_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "quantity",
+              "type": "numeric",
+              "notNull": true
+            },
+            {
+              "name": "unit",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "occurred_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "timezone",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "calculation",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "deleted_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_import_batches",
+          "columns": [
+            {
+              "name": "artifact_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "bundle_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "manifest_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "review_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "imported_foods",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_name_catalogs",
+          "columns": [
+            {
+              "name": "locale",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "revision",
+              "type": "bigint",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_name_versions",
+          "columns": [
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "food_version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "locale",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "name",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "aliases",
+              "type": "text[]",
+              "notNull": true
+            },
+            {
+              "name": "payload",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_name_withdrawals",
+          "columns": [
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "food_version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "locale",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "reason",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "withdrawn_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_versions",
+          "columns": [
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "source_id",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "source_food_id",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "source_row_key",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "owner_id",
+              "type": "uuid",
+              "notNull": false
+            },
+            {
+              "name": "name_original",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "name_pt",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "preparation",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "basis_quantity",
+              "type": "numeric",
+              "notNull": false
+            },
+            {
+              "name": "basis_unit",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "nutrients",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "provenance",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "source_published_version",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "name_locale",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "allowed_operations",
+              "type": "text[]",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "food_withdrawals",
+          "columns": [
+            {
+              "name": "food_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "reason",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "withdrawn_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "idempotency_records",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "operation",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "key_hash",
+              "type": "bytea",
+              "notNull": true
+            },
+            {
+              "name": "request_hash",
+              "type": "bytea",
+              "notNull": true
+            },
+            {
+              "name": "response_status",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "response_body",
+              "type": "jsonb",
+              "notNull": false
+            },
+            {
+              "name": "expires_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "import_batches",
+          "columns": [
+            {
+              "name": "artifact_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "bundle_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "manifest_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "imported_assets",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "meal_items",
+          "columns": [
+            {
+              "name": "entry_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "meal_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "position",
+              "type": "integer",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "meal_versions",
+          "columns": [
+            {
+              "name": "meal_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "revision",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "occurred_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "timezone",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "entry_ids",
+              "type": "uuid[]",
+              "notNull": true
+            },
+            {
+              "name": "deleted",
+              "type": "boolean",
+              "notNull": true
+            },
+            {
+              "name": "confirmed_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "meals",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "occurred_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "timezone",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "revision",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "deleted_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "program_items",
+          "columns": [
+            {
+              "name": "program_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "session_key",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "position",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "movement_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "movement_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "source_dose",
+              "type": "jsonb",
+              "notNull": false
+            },
+            {
+              "name": "program_kind",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "movement_kind",
+              "type": "text",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "program_sessions",
+          "columns": [
+            {
+              "name": "program_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_kind",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "session_key",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "source_metadata",
+              "type": "jsonb",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "refresh_tokens",
+          "columns": [
+            {
+              "name": "token_hash",
+              "type": "bytea",
+              "notNull": true
+            },
+            {
+              "name": "family_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "expires_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "consumed_at",
+              "type": "timestamp with time zone",
+              "notNull": false
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "schedule_occurrences",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "enrollment_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "source_session_key",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "planned_for",
+              "type": "timestamp with time zone",
+              "notNull": true
+            },
+            {
+              "name": "timezone",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "program_sha",
+              "type": "text",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "sources",
+          "columns": [
+            {
+              "name": "id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "name",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "publisher",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "urls",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "training_configuration_versions",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "revision",
+              "type": "integer",
+              "notNull": true
+            },
+            {
+              "name": "configuration",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "confirmed_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "users",
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true
+            },
+            {
+              "name": "provider",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "issuer",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "subject",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "display_name",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "email",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "table": "access_tokens",
+          "target": "auth_families",
+          "type": "f",
+          "definition": "FOREIGN KEY (family_id) REFERENCES trainforge_v1.auth_families(id)"
+        },
+        {
+          "table": "access_tokens",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (token_hash)"
+        },
+        {
+          "table": "account_deletion_intents",
+          "target": "auth_families",
+          "type": "f",
+          "definition": "FOREIGN KEY (family_id, user_id) REFERENCES trainforge_v1.auth_families(id, user_id)"
+        },
+        {
+          "table": "account_deletion_intents",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (token_hash)"
+        },
+        {
+          "table": "account_deletion_intents",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (user_id, family_id)"
+        },
+        {
+          "table": "account_erasures",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (user_id)"
+        },
+        {
+          "table": "activity_events",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "activity_events",
+          "target": "activity_sessions",
+          "type": "f",
+          "definition": "FOREIGN KEY (session_id, user_id) REFERENCES trainforge_v1.activity_sessions(id, user_id)"
+        },
+        {
+          "table": "activity_sessions",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "activity_sessions",
+          "target": "schedule_occurrences",
+          "type": "f",
+          "definition": "FOREIGN KEY (occurrence_id, user_id) REFERENCES trainforge_v1.schedule_occurrences(id, user_id)"
+        },
+        {
+          "table": "activity_sessions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "auth_families",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "auth_families",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "auth_families",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "batch_content",
+          "target": "import_batches",
+          "type": "f",
+          "definition": "FOREIGN KEY (artifact_sha) REFERENCES trainforge_v1.import_batches(artifact_sha)"
+        },
+        {
+          "table": "batch_content",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (asset_id, version_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "batch_content",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (artifact_sha, asset_id, version_sha)"
+        },
+        {
+          "table": "content_versions",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (asset_id, version_sha, kind)"
+        },
+        {
+          "table": "content_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (asset_id, version_sha)"
+        },
+        {
+          "table": "content_versions",
+          "target": "sources",
+          "type": "f",
+          "definition": "FOREIGN KEY (source_id) REFERENCES trainforge_v1.sources(id)"
+        },
+        {
+          "table": "content_withdrawals",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (asset_id, version_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "content_withdrawals",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (asset_id, version_sha)"
+        },
+        {
+          "table": "enrollments",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha, program_kind) REFERENCES trainforge_v1.content_versions(asset_id, version_sha, kind)"
+        },
+        {
+          "table": "enrollments",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id, program_id, program_sha)"
+        },
+        {
+          "table": "enrollments",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "enrollments",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "enrollments",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "enrollments",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "food_batch_versions",
+          "target": "food_import_batches",
+          "type": "f",
+          "definition": "FOREIGN KEY (artifact_sha) REFERENCES trainforge_v1.food_import_batches(artifact_sha)"
+        },
+        {
+          "table": "food_batch_versions",
+          "target": "food_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (food_id, version_sha) REFERENCES trainforge_v1.food_versions(food_id, version_sha)"
+        },
+        {
+          "table": "food_batch_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (artifact_sha, food_id, version_sha)"
+        },
+        {
+          "table": "food_entries",
+          "target": "food_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (food_id, food_sha) REFERENCES trainforge_v1.food_versions(food_id, version_sha)"
+        },
+        {
+          "table": "food_entries",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "food_entries",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "food_entries",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "food_import_batches",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (artifact_sha)"
+        },
+        {
+          "table": "food_name_catalogs",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (locale)"
+        },
+        {
+          "table": "food_name_versions",
+          "target": "food_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (food_id, food_version_sha) REFERENCES trainforge_v1.food_versions(food_id, version_sha)"
+        },
+        {
+          "table": "food_name_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (food_id, food_version_sha, locale, version_sha)"
+        },
+        {
+          "table": "food_name_withdrawals",
+          "target": "food_name_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (food_id, food_version_sha, locale, version_sha) REFERENCES trainforge_v1.food_name_versions(food_id, food_version_sha, locale, version_sha)"
+        },
+        {
+          "table": "food_name_withdrawals",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (food_id, food_version_sha, locale, version_sha)"
+        },
+        {
+          "table": "food_versions",
+          "target": "sources",
+          "type": "f",
+          "definition": "FOREIGN KEY (source_id) REFERENCES trainforge_v1.sources(id)"
+        },
+        {
+          "table": "food_versions",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (owner_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "food_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (food_id, version_sha)"
+        },
+        {
+          "table": "food_withdrawals",
+          "target": "food_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (food_id, version_sha) REFERENCES trainforge_v1.food_versions(food_id, version_sha)"
+        },
+        {
+          "table": "food_withdrawals",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (food_id, version_sha)"
+        },
+        {
+          "table": "idempotency_records",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (user_id, operation, key_hash)"
+        },
+        {
+          "table": "idempotency_records",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "import_batches",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (artifact_sha)"
+        },
+        {
+          "table": "meal_items",
+          "target": "food_entries",
+          "type": "f",
+          "definition": "FOREIGN KEY (entry_id, user_id) REFERENCES trainforge_v1.food_entries(id, user_id) ON DELETE CASCADE"
+        },
+        {
+          "table": "meal_items",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (meal_id, \"position\")"
+        },
+        {
+          "table": "meal_items",
+          "target": "meals",
+          "type": "f",
+          "definition": "FOREIGN KEY (meal_id, user_id) REFERENCES trainforge_v1.meals(id, user_id) ON DELETE CASCADE"
+        },
+        {
+          "table": "meal_items",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (entry_id)"
+        },
+        {
+          "table": "meal_versions",
+          "target": "meals",
+          "type": "f",
+          "definition": "FOREIGN KEY (meal_id, user_id) REFERENCES trainforge_v1.meals(id, user_id) ON DELETE CASCADE"
+        },
+        {
+          "table": "meal_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (meal_id, revision)"
+        },
+        {
+          "table": "meals",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "meals",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "meals",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "program_items",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (movement_id, movement_sha, movement_kind) REFERENCES trainforge_v1.content_versions(asset_id, version_sha, kind)"
+        },
+        {
+          "table": "program_items",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha, program_kind) REFERENCES trainforge_v1.content_versions(asset_id, version_sha, kind)"
+        },
+        {
+          "table": "program_items",
+          "target": "program_sessions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha, session_key) REFERENCES trainforge_v1.program_sessions(program_id, program_sha, session_key)"
+        },
+        {
+          "table": "program_items",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (movement_id, movement_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "program_items",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (program_id, program_sha, session_key, \"position\")"
+        },
+        {
+          "table": "program_items",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "program_sessions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (program_id, program_sha, session_key)"
+        },
+        {
+          "table": "program_sessions",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha, program_kind) REFERENCES trainforge_v1.content_versions(asset_id, version_sha, kind)"
+        },
+        {
+          "table": "refresh_tokens",
+          "target": "auth_families",
+          "type": "f",
+          "definition": "FOREIGN KEY (family_id) REFERENCES trainforge_v1.auth_families(id)"
+        },
+        {
+          "table": "refresh_tokens",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (token_hash)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": "program_sessions",
+          "type": "f",
+          "definition": "FOREIGN KEY (program_id, program_sha, source_session_key) REFERENCES trainforge_v1.program_sessions(program_id, program_sha, session_key)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": "enrollments",
+          "type": "f",
+          "definition": "FOREIGN KEY (enrollment_id, user_id, program_id, program_sha) REFERENCES trainforge_v1.enrollments(id, user_id, program_id, program_sha)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (enrollment_id, planned_for, source_session_key)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": "enrollments",
+          "type": "f",
+          "definition": "FOREIGN KEY (enrollment_id, user_id) REFERENCES trainforge_v1.enrollments(id, user_id)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (id, user_id)"
+        },
+        {
+          "table": "schedule_occurrences",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "sources",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "training_configuration_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (user_id, revision)"
+        },
+        {
+          "table": "training_configuration_versions",
+          "target": "users",
+          "type": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES trainforge_v1.users(id)"
+        },
+        {
+          "table": "users",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "table": "users",
+          "target": null,
+          "type": "u",
+          "definition": "UNIQUE (provider, issuer, subject)"
+        }
+      ]
+    },
+    "trainforge_catalog_dev": {
+      "tables": [
+        {
+          "name": "catalog_releases",
+          "columns": [
+            {
+              "name": "revision",
+              "type": "bigint",
+              "notNull": true
+            },
+            {
+              "name": "digest",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "previous_digest",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "package_digest",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "published_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "content_versions",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "kind",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "source_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "locale",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "source_published_version",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "allowed_operations",
+              "type": "text[]",
+              "notNull": true
+            },
+            {
+              "name": "payload",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "content_withdrawals",
+          "columns": [
+            {
+              "name": "asset_id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "version_sha",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "reason",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "withdrawn_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        },
+        {
+          "name": "sources",
+          "columns": [
+            {
+              "name": "id",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "name",
+              "type": "text",
+              "notNull": true
+            },
+            {
+              "name": "publisher",
+              "type": "text",
+              "notNull": false
+            },
+            {
+              "name": "urls",
+              "type": "jsonb",
+              "notNull": true
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "table": "catalog_releases",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (revision)"
+        },
+        {
+          "table": "content_versions",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (asset_id, version_sha)"
+        },
+        {
+          "table": "content_versions",
+          "target": "sources",
+          "type": "f",
+          "definition": "FOREIGN KEY (source_id) REFERENCES trainforge_v1.sources(id)"
+        },
+        {
+          "table": "content_withdrawals",
+          "target": "content_versions",
+          "type": "f",
+          "definition": "FOREIGN KEY (asset_id, version_sha) REFERENCES trainforge_v1.content_versions(asset_id, version_sha)"
+        },
+        {
+          "table": "content_withdrawals",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (asset_id, version_sha)"
+        },
+        {
+          "table": "sources",
+          "target": null,
+          "type": "p",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="910" viewBox="0 0 1000 910" role="img">
+<title>Banco separado: catálogo</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect width="1000" height="910" fill="#ffffff"/>
+<g font-family="Inter,Arial,sans-serif" fill="#18332e">
+<text x="40" y="60" font-size="18" font-weight="700">Banco separado: catálogo</text>
+<text x="40" y="100" font-size="15" font-weight="400">Banco independente no cluster local. Sem users, tokens, alimentação privada ou cópias de fotos.</text>
+<path d="M400,280 L610,280" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="265" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,510 L610,510" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="495" font-size="13" font-weight="400">referencia (FK)</text>
+<rect x="70" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="244" font-size="18" font-weight="700">content_versions</text>
+<text x="88" y="292" font-size="15" font-weight="400">asset_id | version_sha | kind |</text>
+<text x="88" y="310" font-size="15" font-weight="400">source_id | title</text>
+<rect x="610" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="244" font-size="18" font-weight="700">sources</text>
+<text x="628" y="292" font-size="15" font-weight="400">id | name | publisher | urls |</text>
+<text x="628" y="310" font-size="15" font-weight="400">created_at</text>
+<rect x="70" y="420" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="446" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="474" font-size="18" font-weight="700">content_withdrawals</text>
+<text x="88" y="522" font-size="15" font-weight="400">asset_id | version_sha | reason |</text>
+<text x="88" y="540" font-size="15" font-weight="400">withdrawn_at</text>
+<rect x="610" y="420" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="446" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="474" font-size="18" font-weight="700">content_versions</text>
+<text x="628" y="522" font-size="15" font-weight="400">asset_id | version_sha | kind |</text>
+<text x="628" y="540" font-size="15" font-weight="400">source_id | title</text>
+<rect x="70" y="650" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="676" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="704" font-size="18" font-weight="700">catalog_releases</text>
+<text x="88" y="752" font-size="15" font-weight="400">revision | digest | previous_digest</text>
+<text x="88" y="770" font-size="15" font-weight="400">| package_digest | published_at</text>
+</g></svg>

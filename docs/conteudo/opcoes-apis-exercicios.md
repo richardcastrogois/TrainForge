@@ -1,5 +1,9 @@
 # Opções de APIs, datasets e mídias de exercícios — registro único
 
+## Consulta delimitada de 29–30/10/2026
+
+O autor manifestou interesse no pacote MoveKit de R$ 779. [Avaliação específica](avaliacao-movekit-2026-10-29.md) distingue licença, MP4/metadados, entrega e lacunas de programa/dose. Não houve compra, cadastro, contato ou integração. O teto anterior de R$ 400 abaixo é histórico; o novo interesse não autoriza executar pagamento. Sem reabrir pesquisa ampla.
+
 Atualização22/10/2026. Este é o comparativo canônico; centraliza a análise de21/10 e as novas pistas enviadas pelo autor em22/10. Registro/triagem documental, sem integração nova, extração de catálogo, cadastro, contato ou compra. Fontes de fornecedores são declarações públicas; licença/preço precisam de reconferência antes de uso/compra.
 
 ## Direção atual do autor

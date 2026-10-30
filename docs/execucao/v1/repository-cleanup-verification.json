@@ -1,0 +1,514 @@
+{
+  "date": "2026-10-29",
+  "sourceCommit": "764749fb8b8f44faed008649ded26a9679ad12f7",
+  "scope": "unused-platform-scaffolds-and-unreachable-legacy-dart",
+  "dartRoots": [
+    "lib/main.dart",
+    "all test/**/*.dart"
+  ],
+  "removedFiles": [
+    {
+      "path": "lib/features/bootstrap/data/bootstrap_api.dart",
+      "bytes": 464
+    },
+    {
+      "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
+      "bytes": 367
+    },
+    {
+      "path": "lib/features/bootstrap/domain/bootstrap_data.dart",
+      "bytes": 1060
+    },
+    {
+      "path": "lib/features/home/data/home_api.dart",
+      "bytes": 396
+    },
+    {
+      "path": "lib/features/home/data/home_repository.dart",
+      "bytes": 258
+    },
+    {
+      "path": "lib/features/home/domain/home_summary.dart",
+      "bytes": 1785
+    },
+    {
+      "path": "lib/features/home/presentation/pages/home_page.dart",
+      "bytes": 6365
+    },
+    {
+      "path": "lib/features/onboarding/data/onboarding_api.dart",
+      "bytes": 2229
+    },
+    {
+      "path": "lib/features/onboarding/data/onboarding_repository.dart",
+      "bytes": 1675
+    },
+    {
+      "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
+      "bytes": 15890
+    },
+    {
+      "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
+      "bytes": 10708
+    },
+    {
+      "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
+      "bytes": 5292
+    },
+    {
+      "path": "lib/features/profile/data/profile_api.dart",
+      "bytes": 932
+    },
+    {
+      "path": "lib/features/profile/data/profile_repository.dart",
+      "bytes": 716
+    },
+    {
+      "path": "lib/features/profile/domain/profile_data.dart",
+      "bytes": 1708
+    },
+    {
+      "path": "lib/features/profile/presentation/pages/profile_page.dart",
+      "bytes": 10618
+    },
+    {
+      "path": "lib/features/stats/data/stats_api.dart",
+      "bytes": 529
+    },
+    {
+      "path": "lib/features/stats/data/stats_repository.dart",
+      "bytes": 379
+    },
+    {
+      "path": "lib/features/stats/domain/stats_data.dart",
+      "bytes": 1912
+    },
+    {
+      "path": "lib/features/stats/presentation/pages/stats_page.dart",
+      "bytes": 7843
+    },
+    {
+      "path": "lib/features/workouts/data/workouts_api.dart",
+      "bytes": 2239
+    },
+    {
+      "path": "lib/features/workouts/data/workouts_repository.dart",
+      "bytes": 1664
+    },
+    {
+      "path": "lib/features/workouts/domain/workout_day_detail.dart",
+      "bytes": 2758
+    },
+    {
+      "path": "lib/features/workouts/domain/workout_plan_detail.dart",
+      "bytes": 1538
+    },
+    {
+      "path": "lib/features/workouts/domain/workout_plan_item.dart",
+      "bytes": 2412
+    },
+    {
+      "path": "lib/features/workouts/domain/workout_session_action.dart",
+      "bytes": 869
+    },
+    {
+      "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+      "bytes": 11195
+    },
+    {
+      "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
+      "bytes": 4872
+    },
+    {
+      "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
+      "bytes": 7241
+    },
+    {
+      "path": "lib/shared/widgets/app_bottom_nav.dart",
+      "bytes": 1177
+    },
+    {
+      "path": "lib/shared/widgets/app_shell.dart",
+      "bytes": 1144
+    },
+    {
+      "path": "linux/.gitignore",
+      "bytes": 19
+    },
+    {
+      "path": "linux/CMakeLists.txt",
+      "bytes": 4887
+    },
+    {
+      "path": "linux/flutter/CMakeLists.txt",
+      "bytes": 2903
+    },
+    {
+      "path": "linux/flutter/generated_plugin_registrant.cc",
+      "bytes": 783
+    },
+    {
+      "path": "linux/flutter/generated_plugin_registrant.h",
+      "bytes": 303
+    },
+    {
+      "path": "linux/flutter/generated_plugins.cmake",
+      "bytes": 791
+    },
+    {
+      "path": "linux/runner/CMakeLists.txt",
+      "bytes": 1000
+    },
+    {
+      "path": "linux/runner/main.cc",
+      "bytes": 186
+    },
+    {
+      "path": "linux/runner/my_application.cc",
+      "bytes": 5607
+    },
+    {
+      "path": "linux/runner/my_application.h",
+      "bytes": 472
+    },
+    {
+      "path": "macos/.gitignore",
+      "bytes": 96
+    },
+    {
+      "path": "macos/Flutter/Flutter-Debug.xcconfig",
+      "bytes": 49
+    },
+    {
+      "path": "macos/Flutter/Flutter-Release.xcconfig",
+      "bytes": 49
+    },
+    {
+      "path": "macos/Flutter/GeneratedPluginRegistrant.swift",
+      "bytes": 535
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.pbxproj",
+      "bytes": 27090
+    },
+    {
+      "path": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 246
+    },
+    {
+      "path": "macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "bytes": 3798
+    },
+    {
+      "path": "macos/Runner.xcworkspace/contents.xcworkspacedata",
+      "bytes": 159
+    },
+    {
+      "path": "macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 246
+    },
+    {
+      "path": "macos/Runner/AppDelegate.swift",
+      "bytes": 324
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "bytes": 1359
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+      "bytes": 102994
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+      "bytes": 5680
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+      "bytes": 520
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+      "bytes": 14142
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+      "bytes": 1066
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+      "bytes": 36406
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+      "bytes": 2218
+    },
+    {
+      "path": "macos/Runner/Base.lproj/MainMenu.xib",
+      "bytes": 24072
+    },
+    {
+      "path": "macos/Runner/Configs/AppInfo.xcconfig",
+      "bytes": 621
+    },
+    {
+      "path": "macos/Runner/Configs/Debug.xcconfig",
+      "bytes": 79
+    },
+    {
+      "path": "macos/Runner/Configs/Release.xcconfig",
+      "bytes": 81
+    },
+    {
+      "path": "macos/Runner/Configs/Warnings.xcconfig",
+      "bytes": 593
+    },
+    {
+      "path": "macos/Runner/DebugProfile.entitlements",
+      "bytes": 360
+    },
+    {
+      "path": "macos/Runner/Info.plist",
+      "bytes": 1092
+    },
+    {
+      "path": "macos/Runner/MainFlutterWindow.swift",
+      "bytes": 403
+    },
+    {
+      "path": "macos/Runner/Release.entitlements",
+      "bytes": 248
+    },
+    {
+      "path": "macos/RunnerTests/RunnerTests.swift",
+      "bytes": 302
+    },
+    {
+      "path": "web/favicon.png",
+      "bytes": 917
+    },
+    {
+      "path": "web/icons/Icon-192.png",
+      "bytes": 5292
+    },
+    {
+      "path": "web/icons/Icon-512.png",
+      "bytes": 8252
+    },
+    {
+      "path": "web/icons/Icon-maskable-192.png",
+      "bytes": 5594
+    },
+    {
+      "path": "web/icons/Icon-maskable-512.png",
+      "bytes": 20998
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 1726
+    },
+    {
+      "path": "web/manifest.json",
+      "bytes": 951
+    },
+    {
+      "path": "windows/.gitignore",
+      "bytes": 308
+    },
+    {
+      "path": "windows/CMakeLists.txt",
+      "bytes": 4264
+    },
+    {
+      "path": "windows/flutter/CMakeLists.txt",
+      "bytes": 3851
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.cc",
+      "bytes": 541
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.h",
+      "bytes": 302
+    },
+    {
+      "path": "windows/flutter/generated_plugins.cmake",
+      "bytes": 799
+    },
+    {
+      "path": "windows/runner/CMakeLists.txt",
+      "bytes": 1836
+    },
+    {
+      "path": "windows/runner/Runner.rc",
+      "bytes": 3158
+    },
+    {
+      "path": "windows/runner/flutter_window.cpp",
+      "bytes": 2193
+    },
+    {
+      "path": "windows/runner/flutter_window.h",
+      "bytes": 961
+    },
+    {
+      "path": "windows/runner/main.cpp",
+      "bytes": 1306
+    },
+    {
+      "path": "windows/runner/resource.h",
+      "bytes": 448
+    },
+    {
+      "path": "windows/runner/resources/app_icon.ico",
+      "bytes": 33772
+    },
+    {
+      "path": "windows/runner/runner.exe.manifest",
+      "bytes": 616
+    },
+    {
+      "path": "windows/runner/utils.cpp",
+      "bytes": 1862
+    },
+    {
+      "path": "windows/runner/utils.h",
+      "bytes": 691
+    },
+    {
+      "path": "windows/runner/win32_window.cpp",
+      "bytes": 8822
+    },
+    {
+      "path": "windows/runner/win32_window.h",
+      "bytes": 3624
+    }
+  ],
+  "preserved": [
+    "android",
+    "ios",
+    "assets used by product/brand/fonts",
+    "content and rights evidence",
+    "local databases credentials backups and existing APK",
+    "historical receipts and referenced Figma design evidence"
+  ],
+  "remainingPlatforms": [
+    "android",
+    "ios"
+  ],
+  "completedDate": "2026-10-30",
+  "removedDartFiles": 31,
+  "removedPlatformFiles": 63,
+  "flutterTestsPassed": 258,
+  "flutterAnalysisIssues": 0,
+  "environmentSafetyUnitTestsPassed": 4,
+  "diagramTestsPassed": 2,
+  "documentationTestsPassed": 14,
+  "diagramCount": 15,
+  "drawioSkillValidationPassed": true,
+  "svgTextBoundsChecked": true,
+  "previewRenderer": "local-Pillow-from-generated-SVG-elements;not-native-drawio-renderer",
+  "nativeReadOnlyCheck": {
+    "existingSessionRestored": true,
+    "finalScreen": "Hoje",
+    "googleConsentRepeated": false,
+    "installedArtifactHashMatches": true,
+    "trainingOrNutritionRecordMutationsByAgent": false
+  },
+  "artifact": {
+    "versionName": "0.4.6",
+    "versionCode": 28,
+    "variant": "debug",
+    "package": "com.example.trainforge",
+    "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "8ea23813455467cd33e0e5d0c016b8c139a620a0c99bbd9a5d4413a3ae101fc6",
+    "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+    "sourceFingerprint": "8a1a85aa66243b18e91e4abf9ceaf720d32d9af3f66b3cfa55d876b0020a4a52",
+    "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+    "realGoogleLoginValidated": false
+  },
+  "androidPublicMetadata": {
+    "schemaVersion": 1,
+    "scope": "prepared-debug-apk-public-metadata-only",
+    "artifactSha256": "8ea23813455467cd33e0e5d0c016b8c139a620a0c99bbd9a5d4413a3ae101fc6",
+    "signatureMatchesPreparedArtifact": true,
+    "sdkBuildTools": "35.0.1",
+    "manifest": {
+      "package": "com.example.trainforge",
+      "versionName": "0.4.6",
+      "versionCode": 28,
+      "minSdk": 24,
+      "targetSdk": 36,
+      "application": {
+        "debuggable": true,
+        "allowBackup": false,
+        "usesCleartextTraffic": true,
+        "fullBackupContent": "@0x7f110000",
+        "dataExtractionRules": "@0x7f110001"
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "com.example.trainforge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "exportedComponents": [
+        {
+          "kind": "activity",
+          "name": "com.example.trainforge.MainActivity",
+          "permission": null,
+          "launcher": true
+        },
+        {
+          "kind": "service",
+          "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "launcher": false
+        },
+        {
+          "kind": "receiver",
+          "name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "permission": "android.permission.DUMP",
+          "launcher": false
+        }
+      ]
+    },
+    "compiledBackupExclusionsVerified": true,
+    "rawValuesPublished": false,
+    "limits": [
+      "Debug APK only; cleartext/debuggable development flags are not release approval.",
+      "Manifest settings do not prove every OEM backup/transfer behavior or device keystore resilience.",
+      "Optional biometric permissions originate in AndroidX; their presence does not prove biometric authentication is used.",
+      "Exported dependency components retain their declared permissions; runtime caller authorization was not exercised.",
+      "This is not dependency vulnerability scanning, penetration testing, iOS validation, or a complete security audit."
+    ]
+  },
+  "graphify": {
+    "dartFiles": 90,
+    "nodes": 4032,
+    "edges": 4628,
+    "deletedFiles": 31,
+    "changedFiles": 0,
+    "llmTokens": 0
+  },
+  "localOperation": {
+    "statusPassed": true,
+    "planStopPassed": true,
+    "realStopStartCycleRepeated": false
+  },
+  "research": {
+    "provider": "MoveKit",
+    "purchasePerformed": false,
+    "paidIntegrationPerformed": false,
+    "externalContactPerformed": false
+  },
+  "limits": [
+    "No workout or food record was changed. Existing real Google consent was not repeated.",
+    "No complete security/release/iOS/usability certification; V1-028 and other gates remain open.",
+    "Referenced historical documentation, content/rights evidence and local databases/secrets/backups preserved.",
+    "Native draw.io rendering was not automated; XML passed the skill validator, and SVG previews were generated/inspected locally."
+  ],
+  "trainingOrNutritionRecordMutationsByAgent": false,
+  "databaseRowSnapshotComparisonPerformed": false,
+  "pythonUnitTestsPassed": 127
+}

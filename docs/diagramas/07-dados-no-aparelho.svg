@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1230" height="824" viewBox="0 0 1230 824" role="img">
+<title>O que fica em cada lugar</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect width="1230" height="824" fill="#ffffff"/>
+<g font-family="Inter,Arial,sans-serif" fill="#18332e">
+<text x="40" y="60" font-size="18" font-weight="700">O que fica em cada lugar</text>
+<text x="40" y="100" font-size="15" font-weight="400">Banco é fonte dos registros confirmados. Apagar dados do app não equivale a excluir a conta do servidor.</text>
+<path d="M225,370 L225,415.0 L225,415.0 L225,460" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1005,370 L1005,415.0 L225,415.0 L225,460" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M450,550 L390,550" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M840,550 L390,550" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="60" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="78" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="78" y="244" font-size="18" font-weight="700">Celular: seguro</text>
+<text x="78" y="292" font-size="15" font-weight="400">Tokens da sessão; proteção</text>
+<text x="78" y="310" font-size="15" font-weight="400">fornecida pela plataforma.</text>
+<rect x="450" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="468" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="468" y="244" font-size="18" font-weight="700">Celular: preferências</text>
+<text x="468" y="292" font-size="15" font-weight="400">Idioma e aparência; sem histórico</text>
+<text x="468" y="310" font-size="15" font-weight="400">alimentar autoritativo.</text>
+<rect x="840" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="858" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="858" y="244" font-size="18" font-weight="700">Celular: memória</text>
+<text x="858" y="292" font-size="15" font-weight="400">Formulários/intenções atuais; não é</text>
+<text x="858" y="310" font-size="15" font-weight="400">fila offline durável.</text>
+<rect x="60" y="460" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="78" y="486" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="78" y="514" font-size="18" font-weight="700">Servidor: PostgreSQL</text>
+<text x="78" y="562" font-size="15" font-weight="400">Conta, registros, versões e</text>
+<text x="78" y="580" font-size="15" font-weight="400">vínculos de refeição.</text>
+<rect x="450" y="460" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="468" y="486" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="468" y="514" font-size="18" font-weight="700">Fotos recuperáveis</text>
+<text x="468" y="562" font-size="15" font-weight="400">Arquivos privados por conta +</text>
+<text x="468" y="580" font-size="15" font-weight="400">cache; ainda não implementado.</text>
+<rect x="840" y="460" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="858" y="486" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="858" y="514" font-size="18" font-weight="700">Fila offline</text>
+<text x="858" y="562" font-size="15" font-weight="400">Operações duráveis e isoladas por</text>
+<text x="858" y="580" font-size="15" font-weight="400">titular; ainda não implementado.</text>
+<text x="40" y="680" font-size="16" font-weight="700">Conexões (mesma ordem do arquivo editável)</text>
+<text x="40" y="708" font-size="14" font-weight="400">Celular: seguro → Servidor: PostgreSQL: API autenticada</text>
+<text x="40" y="734" font-size="14" font-weight="400">Celular: memória → Servidor: PostgreSQL: confirmação explícita</text>
+<text x="40" y="760" font-size="14" font-weight="400">Fotos recuperáveis → Servidor: PostgreSQL: metadados / futuro</text>
+<text x="40" y="786" font-size="14" font-weight="400">Fila offline → Servidor: PostgreSQL: reconciliação / futuro</text>
+</g></svg>

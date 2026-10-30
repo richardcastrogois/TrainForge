@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge — comece aqui
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a6e54a51d7637836`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `09e7c86d011d1ebc`.
 
 **Leia este arquivo e os links abaixo no GitHub ou no editor. Não é necessário iniciar Python, Go, API, banco ou servidor para consultar.** Os diagramas Mermaid são texto versionado e renderizado pelo GitHub.
 
@@ -8,7 +8,7 @@
 
 | Área | Evidência e limite |
 | --- | --- |
-| Flutter neste clone | 121 arquivos Dart; análise estática, sem teste runtime |
+| Flutter neste clone | 90 arquivos Dart; análise estática, sem teste runtime |
 | Backend Fastify externo | Referência auditada em 2026-10-21, commit `523f6d9609be`; 29 rotas extraídas. O clone não contém esse código |
 | Go neste clone | 77 arquivos Go de aplicação; 36 registros net/http detectados |
 | Produto | Android e iOS; primeiro desenvolvimento/teste em Android |
@@ -18,17 +18,14 @@
 
 ```mermaid
 flowchart LR
-    node0["Telas e widgets (58 arquivos)"]
-    node1["Repositories Flutter (12 arquivos)"]
-    node2["HTTP Dio (8 arquivos)"]
-    node3["Modelos Dart (18 arquivos)"]
-    node4["Fastify: referência externa versionada"]
+    node0["Telas e widgets (47 arquivos)"]
+    node1["Repositories Flutter (6 arquivos)"]
+    node2["HTTP Dio (2 arquivos)"]
+    node3["Modelos Dart (10 arquivos)"]
     node2 -->|"importação estática"| node3
     node1 -->|"importação estática"| node2
     node1 -->|"importação estática"| node3
     node0 -->|"importação estática"| node3
-    node0 -->|"importação estática"| node1
-    node2 -->|"12 métodos e paths compatíveis"| node4
 ```
 
 Setas de importação não são traces. Correspondência HTTP não confirma autenticação, DTO completo ou resposta em execução.

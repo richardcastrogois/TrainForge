@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "a6e54a51d76378369c4112274243135e0f868e33fd6e902d8009e05e3e2b0073",
+  "inputRevision": "09e7c86d011d1ebc1f3d09f376e11decd9a290a51e2daafa681e8457c56eae16",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "84a08b52ebb4e470b5fa79160664f48fbaffba982e152b6c7432960436c4c69e",
     "docs/arquitetura/achados.json": "058a8a8d07eeb4bb9b7625628262d56693f35b6ad6c37d3252e67854793e7804",
     "docs/arquitetura/plano.json": "f4b2af4c7112a2ca6b4aad866c7284d86e422bdaed151a3a67a6aa4570785523",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/execucao/v1/backlog.json": "151ceac2332c940700677d3c977681a95a0c86855c0980db114f2cee9b620ee5",
+    "docs/execucao/v1/backlog.json": "9f05c4c12da8ccf8c9675e802eafb5677a333cf1f3296d74f97753ed454ecff1",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "49c734c7f3db764eb0a84b78ccd16af3627bf93334c394e2a06b4a3909d94113",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
@@ -35,9 +35,6 @@
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
     "lib/features/auth/presentation/auth_controller.dart": "50d4d6970bf9bcb272a2098842ec27d8fa7df3febf5739964f9374b582363219",
     "lib/features/auth/presentation/pages/auth_page.dart": "ee0d3fc5d643d04d9fa23d2852df7cac266f32167c1f7d12f37622d1022e3dbc",
-    "lib/features/bootstrap/data/bootstrap_api.dart": "4505633f5c0d752c59a0459944f757c9f6388bdf0818a8f699b5570bfb8096a7",
-    "lib/features/bootstrap/data/bootstrap_repository.dart": "96dc3f3e64695688209b08b33e22b2b970154a3ce12ed85133bbfb9b82f562a0",
-    "lib/features/bootstrap/domain/bootstrap_data.dart": "94c54cad4a2ee887f2f38c429909149de9c11c0e66c9e60155cc5989f055d57f",
     "lib/features/catalog/data/catalog_repository.dart": "9ca2802cb1f86c2bd24c158b5bbad3f1ac8bdf6ed9a47c1948ab52a25f10ee65",
     "lib/features/catalog/domain/catalog_entry.dart": "723a01b5b8717722fec7e53d01d246d576ee2038ff3b0156e3923604e876956f",
     "lib/features/catalog/domain/catalog_names.dart": "40203f3e7ae256fcd69e919678abb53b00c7ac55a343b4b0448b3219a29b67de",
@@ -52,10 +49,6 @@
     "lib/features/food_reference/presentation/food_detail_page.dart": "48ad87a959dd4963c2c6d9b8f89a900b8ec633e955cf2492cb14c692e64d63a1",
     "lib/features/food_reference/presentation/food_labels.dart": "4c10a94596bf42f566fa51a8e94eaac3ca4831add72e3f0782e02fd84282d309",
     "lib/features/food_reference/presentation/food_page.dart": "3c0072eef8dc7b949e3a5793cb4479bd4e0f40ebd974072ea3fe267c3a5ece4f",
-    "lib/features/home/data/home_api.dart": "2ff3b5b78f35c4db0eda1202fceb710772318b2eb70f6d5500c26ab758e07e8d",
-    "lib/features/home/data/home_repository.dart": "03edd8872c33aa6e6f7ef880ce769c764ece18fcfa86f0d8fa2c73d9a0d61ed1",
-    "lib/features/home/domain/home_summary.dart": "b5bc4b348e18e24b06fbfc6bd85172a19f1014f6ad235ac129dda5db48a346ac",
-    "lib/features/home/presentation/pages/home_page.dart": "8cf0518112fa0d1f46960a2bd77d9b9392929be15c235574051f4e56fa300bd5",
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
     "lib/features/nutrition/data/nutrition_repository.dart": "4f6610b64dfbad5f84d0b51adadce495870b48da4a9b21204302666ec28dd343",
     "lib/features/nutrition/domain/meals.dart": "d0ee1496c5f571555d63b9aaae61a474ebf34a07bd9e506e6c09deadc9193048",
@@ -77,47 +70,23 @@
     "lib/features/nutrition/presentation/nutrition_page.dart": "55b0d2ca8abef0cf2cb402d400e192cce98f32f65088de1766b283ed716d70c7",
     "lib/features/nutrition/presentation/nutrition_totals_card.dart": "72a05406d5cca81f449a9842e3cc2046d63124e6d9ec6e02619b572dd2ebcf93",
     "lib/features/nutrition/presentation/own_food_picker_page.dart": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
-    "lib/features/onboarding/data/onboarding_api.dart": "f45f2870fe242224e9d1743d24569c0849546e25394e36d1294ae394736c1256",
-    "lib/features/onboarding/data/onboarding_repository.dart": "ded7943c9a323d70f8c92a9e0227a5dfb019f07bd18e71d903bb2b6f8b764449",
-    "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart": "f40390c4253ba85dd2dace3b11ed7e509da26ac05d3a59b4529037dda993b595",
-    "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart": "99fbfa1215cecda42caa9c7ea1b3b8b63e275618eec96dfd55fac8f2d10bd122",
-    "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart": "b4c63717a20b9588ed16e87d0816c227c8d9081d48d8b2cacc78bdfc05b47e13",
     "lib/features/privacy/data/privacy_repository.dart": "f00c103aba21246123c1ab9c780e85a4ea43b66717c3f2439f49690c0e2c62d9",
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
     "lib/features/privacy/presentation/privacy_feedback.dart": "a98140cbc5677d6e0cb68e6892707f93df908159207d8a2c1bb0fef3a8e07dd1",
     "lib/features/privacy/presentation/privacy_page.dart": "36646536475ce869dc2a3411b6fea8b6cb98e91b620cbbf9307790bfe03f52a2",
-    "lib/features/profile/data/profile_api.dart": "6acd968c17539a107a0c6556caa86c63db9e3179333ecf88dda568c1a62876a8",
-    "lib/features/profile/data/profile_repository.dart": "8e16e09c535990df9f1e7629dd2885fd49f4d4cd682003b2bf7ec808634cbadc",
-    "lib/features/profile/domain/profile_data.dart": "c3187b408c8a102bfe5d188ac173986e7136ba140c6c3a114c23290034167570",
-    "lib/features/profile/presentation/pages/profile_page.dart": "8fc313d97c21a4c3986e15de9d2ac7c6c8423bdc5ee05fd072f8ed7b8e0ecd66",
-    "lib/features/stats/data/stats_api.dart": "af24fb9a3bd26ae8e3cfc868601779cbed24616ebef4e46d8461c2faf6b1fdfa",
-    "lib/features/stats/data/stats_repository.dart": "75137632bc25f3d58f40d9c921364eef141a38a10a41ec0d873d0e4a52dfb320",
-    "lib/features/stats/domain/stats_data.dart": "8090df5502a73d4e34eaa57eb939c3317a5e7e6e26b16315d3936f601709c228",
-    "lib/features/stats/presentation/pages/stats_page.dart": "c1a5077328ebc2f200a55630b3d186a9ab4511d4b3befeff557acd5559d783b3",
     "lib/features/training_configuration/data/training_configuration_repository.dart": "997807df68f44f4105a28b58dd7c9a17c991367fa26117019631854b92f499d0",
     "lib/features/training_configuration/domain/training_configuration.dart": "c0df17a72add0756294c80269eee96882f7b25866c8af53eb21e8a929ac01bb1",
     "lib/features/training_configuration/presentation/training_configuration_controller.dart": "6ae07af7717b0c27e45e628a33402ebfac1a6306a178850335b9790087ec536a",
     "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
     "lib/features/training_configuration/presentation/training_configuration_sections.dart": "38edef72046a5fead45f1de71561e831f34226bd01d1b44e0df53885e83656e4",
-    "lib/features/workouts/data/workouts_api.dart": "fc3e13e4c3ab382c6e177a5aec9a9263836455b6469348ee86b579045e53b96f",
-    "lib/features/workouts/data/workouts_repository.dart": "20ef770d8a1ab077f1970ce9bce1c5abe62ba6469c300e26ff67bee65faf63f5",
-    "lib/features/workouts/domain/workout_day_detail.dart": "d14b28aa39b2d745f41a3300294c02027fe3aad620a3b118d3698e4d7c0b2e67",
-    "lib/features/workouts/domain/workout_plan_detail.dart": "aefbdedf96677b109d9bf70a582fab94fb817b7db6d1509ae886e2b4cf467bc0",
-    "lib/features/workouts/domain/workout_plan_item.dart": "dc7324f59a1b4de3484aea7dfa6f0450a1a3867094e279e56a1391183d35e948",
-    "lib/features/workouts/domain/workout_session_action.dart": "6f0f6c344e1365f94bdd13edd0d8c6a9d85f8926faf1b2829b1097e3bdfde92d",
-    "lib/features/workouts/presentation/pages/workout_day_page.dart": "404b0b9a1cc1058da7b92fc7bd2e8ca3b260336a9a1bbb7d2f9ca3ceb26b03aa",
-    "lib/features/workouts/presentation/pages/workout_plan_page.dart": "1094bef3cc0c4d4553ffc30eded6a3cf6c093202468e7c25e8e56de1007e8f30",
-    "lib/features/workouts/presentation/pages/workouts_page.dart": "e3e72e390f4925e929a13b3aa66e0e70add6bf2a4c3844c770c323ac548cb73e",
     "lib/l10n/generated/app_localizations.dart": "3469ab18c6b618665ccbc5ff554c1c7012d215d4bbb5a02053efa29da8b6022a",
     "lib/l10n/generated/app_localizations_en.dart": "17c9e6d8512b0f3b84e6531b21335d068f598b3306a09ed5ded1fe16d2ea4837",
     "lib/l10n/generated/app_localizations_es.dart": "b4c82f347678ca99573fb9af7860067285ae0889047188adba4f3ab2c6be7966",
     "lib/l10n/generated/app_localizations_pt.dart": "4fec034d3d18f56bb22eaea277386aab0287c617b97cd170ccd48ded80f93d51",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
     "lib/shared/widgets/account_page.dart": "b03596fe0e4cced58e8dd31e65fd34905c4e9040476ee5b122510f3c959fa6fc",
-    "lib/shared/widgets/app_bottom_nav.dart": "3887276bb32edd9c88aa4b70d589a47a086a1f73523873c22c43f3597895d637",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
-    "lib/shared/widgets/app_shell.dart": "80a0aa7b63f9e42d6ca9e515124e6abe54e71ee655c71de50331e07a73eee83a",
     "lib/shared/widgets/auth_gate.dart": "7b9ab00076f06be804b147e1d6baa01860cc001d36b46d4320bc5ad97d52ed39",
     "lib/shared/widgets/content_sources_page.dart": "7055bf4248b29a50ff2a6fc7b70665534fe37dfa89cd24f17ba1f7684f1d3df4",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
@@ -222,6 +191,7 @@
     "services/api/migrations/00013_meal_groups.sql": "6a7c6cc57c3d4f87b1815b9fb2a314b2829badb4498816a085ad1a4e36fd5f1f",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
+    "tools/ambiente.py": "e5af86ed61296d81aa0a24f5d2ad3bb6308edc0957cdf24575786ddbaf30ec96",
     "tools/android_security_inventory.py": "4200ec44711fb240f76016b4e4b96b85dcb5165acc46999e12072ebf533f9188",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
@@ -240,6 +210,7 @@
     "tools/documentacao_inventario.py": "b9e80fb2e74cc75fdc0fb3e930dc0941c26221f542d533e541d0330875ce61d2",
     "tools/fechar_triagem_piloto.py": "9680f470c0c461676c9c3138d858213e0657ff8df038f7e1379cbec41db9b027",
     "tools/gerar_catalogo_m1_swagger.py": "0218939efc865aae5bc9817ab9c14899c1480f2b70ca296d2d18383efa90a091",
+    "tools/gerar_diagramas.py": "b20ff4350ac7c0569ee3ec2351f01d9b57d2b5fa2c61a7ae2e56abc72a0845b4",
     "tools/gerar_documentacao.py": "001ea0f6d0921a9a7658dea3b114470648b82b7e5a85c0038391bc2e44162cfd",
     "tools/gerar_identidade_nativa.py": "a31cc309a23d0a9504fe98f00fbb0b5d1f57922a6d76af956d80afba3cd79ebd",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
@@ -258,6 +229,7 @@
     "tools/secret_review.py": "2345a74610ff0650a4d83ddf210c4b31935d83f128036f7f9c4da8d79fabc385",
     "tools/sql_ci.py": "f7f0b77a2618ab674e8659f24672d782e0184eac11f043c66af9e3cc3bfb5df0",
     "tools/test_alimentos_lote.py": "eaba7be2f68b933e1c3887f3dcd553791090ff1f04cbfc56cf8f0ebaf5a36640",
+    "tools/test_ambiente.py": "46e0e2a86dee55d74cc7c7dacfe2d8225820ba1bf93e9793b1d1f40a43611313",
     "tools/test_android_security_inventory.py": "85532340c08b003a446127d516fe37b45278071417da653c463ab3238d9e7abd",
     "tools/test_avaliar_android.py": "3dad8d9b17eb4394509d75f94af447c6134386f877b63cf584bc32193f48bb44",
     "tools/test_catalog_local.py": "e6afd9ee2e59ab42f431da7abfa7d091fba891d475debd4ac13e1f9532748346",
@@ -266,6 +238,7 @@
     "tools/test_catalog_rollout_ci.py": "3abcc4afefe34b8ab1a093889d7c3aaa3991ffac56fdbd93c9ef2649f5aff2ce",
     "tools/test_conteudo_editorial.py": "e450dcef916d852e5e490b7188b2b06b6f83082e8ea2bdd97fb972de550d8a10",
     "tools/test_dev_api_environment.py": "5a294a2d4f16923b9918d7cacfd51eba6531908527c208c797a7e5b60a42df9b",
+    "tools/test_diagramas.py": "ca066d23a44e0cfee13f596fb4e14f37b9d1d738fe45c4028e9eb9ed56e8b1a5",
     "tools/test_documentacao.py": "b2d9bf1f08a7b7ddfe9ad188a460356dcaf41fec8873134474b5c14c72227ab7",
     "tools/test_history_remediation.py": "5701e94cd1844f82b7250616df870c539d1a12091a6218657f5084479e524f20",
     "tools/test_identidade_nativa.py": "9311f6da366c082af29f4aae5d0b09fc84e7feb71253fb7bd22af3e281bcdac6",
@@ -297,13 +270,13 @@
     "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
-    "dartFiles": 121,
+    "dartFiles": 90,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
-    "httpCalls": 27,
-    "legacyMatches": 12,
+    "httpCalls": 15,
+    "legacyMatches": 0,
     "goFiles": 77,
     "goRegistrations": 36,
     "modelsInReference": 9
@@ -361,11 +334,6 @@
         {
           "repository": "trainforge",
           "path": "lib/features/food_reference/presentation/food_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/presentation/pages/home_page.dart",
           "line": 1
         },
         {
@@ -460,21 +428,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/privacy/presentation/privacy_controller.dart",
           "line": 1
         },
@@ -486,16 +439,6 @@
         {
           "repository": "trainforge",
           "path": "lib/features/privacy/presentation/privacy_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/presentation/pages/stats_page.dart",
           "line": 1
         },
         {
@@ -515,37 +458,12 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/shared/widgets/account_page.dart",
           "line": 1
         },
         {
           "repository": "trainforge",
-          "path": "lib/shared/widgets/app_bottom_nav.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/shared/widgets/app_loading.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/shared/widgets/app_shell.dart",
           "line": 1
         },
         {
@@ -616,11 +534,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 1
         },
@@ -631,17 +544,7 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/home/data/home_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/nutrition/data/nutrition_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/data/onboarding_repository.dart",
           "line": 1
         },
         {
@@ -651,22 +554,7 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/profile/data/profile_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/data/stats_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 1
         }
       ]
@@ -684,36 +572,6 @@
           "repository": "trainforge",
           "path": "lib/features/auth/data/auth_api.dart",
           "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/bootstrap/data/bootstrap_api.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/data/home_api.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/data/onboarding_api.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/data/profile_api.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/data/stats_api.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_api.dart",
-          "line": 1
         }
       ]
     },
@@ -729,11 +587,6 @@
         {
           "repository": "trainforge",
           "path": "lib/features/auth/domain/auth_user.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/bootstrap/domain/bootstrap_data.dart",
           "line": 1
         },
         {
@@ -758,11 +611,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/home/domain/home_summary.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/nutrition/domain/meals.dart",
           "line": 1
         },
@@ -778,37 +626,7 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/profile/domain/profile_data.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/domain/stats_data.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/training_configuration/domain/training_configuration.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/domain/workout_day_detail.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/domain/workout_plan_detail.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/domain/workout_plan_item.dart",
-          "line": 1
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/domain/workout_session_action.dart",
           "line": 1
         }
       ]
@@ -823,46 +641,6 @@
           "repository": "trainforge",
           "path": "lib/features/auth/data/auth_api.dart",
           "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/bootstrap/data/bootstrap_api.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/data/home_api.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/data/profile_api.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/data/stats_api.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_api.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_api.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_api.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_api.dart",
-          "line": 7
         }
       ]
     },
@@ -877,11 +655,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
-          "line": 2
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 3
         },
@@ -892,17 +665,7 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/home/data/home_repository.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/nutrition/data/nutrition_repository.dart",
-          "line": 2
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/data/onboarding_repository.dart",
           "line": 2
         },
         {
@@ -912,22 +675,7 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/profile/data/profile_repository.dart",
-          "line": 2
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/data/stats_repository.dart",
-          "line": 2
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
-          "line": 2
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
           "line": 2
         }
       ]
@@ -948,11 +696,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/bootstrap/data/bootstrap_repository.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/catalog/data/catalog_repository.dart",
           "line": 1
         },
@@ -965,11 +708,6 @@
           "repository": "trainforge",
           "path": "lib/features/food_reference/data/food_repository.dart",
           "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/data/home_repository.dart",
-          "line": 2
         },
         {
           "repository": "trainforge",
@@ -993,38 +731,8 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/profile/data/profile_repository.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/data/stats_repository.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
           "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
-          "line": 5
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/data/workouts_repository.dart",
-          "line": 6
         }
       ]
     },
@@ -1081,11 +789,6 @@
           "repository": "trainforge",
           "path": "lib/features/food_reference/presentation/food_page.dart",
           "line": 11
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/presentation/pages/home_page.dart",
-          "line": 7
         },
         {
           "repository": "trainforge",
@@ -1229,33 +932,8 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/features/privacy/presentation/privacy_controller.dart",
           "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/presentation/pages/stats_page.dart",
-          "line": 8
         },
         {
           "repository": "trainforge",
@@ -1284,21 +962,6 @@
         },
         {
           "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 8
-        },
-        {
-          "repository": "trainforge",
           "path": "lib/shared/widgets/auth_gate.dart",
           "line": 4
         },
@@ -1316,97 +979,6 @@
           "repository": "trainforge",
           "path": "lib/shared/widgets/product_shell.dart",
           "line": 11
-        }
-      ]
-    },
-    {
-      "from": "ui",
-      "to": "repositories",
-      "sources": [
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/presentation/pages/home_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/home/presentation/pages/home_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-          "line": 3
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/profile/presentation/pages/profile_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/presentation/pages/stats_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/stats/presentation/pages/stats_page.dart",
-          "line": 7
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-          "line": 6
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 4
-        },
-        {
-          "repository": "trainforge",
-          "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-          "line": 7
         }
       ]
     }
@@ -1466,14 +1038,6 @@
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
         "line": 14
-      }
-    },
-    {
-      "id": "HomePage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/home/presentation/pages/home_page.dart",
-        "line": 10
       }
     },
     {
@@ -1557,51 +1121,11 @@
       }
     },
     {
-      "id": "AiOnboardingPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-        "line": 10
-      }
-    },
-    {
-      "id": "ManualOnboardingPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-        "line": 10
-      }
-    },
-    {
-      "id": "OnboardingEntryPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-        "line": 9
-      }
-    },
-    {
       "id": "PrivacyPage",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/presentation/privacy_page.dart",
         "line": 11
-      }
-    },
-    {
-      "id": "ProfilePage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/profile/presentation/pages/profile_page.dart",
-        "line": 9
-      }
-    },
-    {
-      "id": "StatsPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/stats/presentation/pages/stats_page.dart",
-        "line": 10
       }
     },
     {
@@ -1613,43 +1137,11 @@
       }
     },
     {
-      "id": "WorkoutDayPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-        "line": 9
-      }
-    },
-    {
-      "id": "WorkoutPlanPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-        "line": 10
-      }
-    },
-    {
-      "id": "WorkoutsPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-        "line": 11
-      }
-    },
-    {
       "id": "AccountPage",
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
         "line": 15
-      }
-    },
-    {
-      "id": "AppShell",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/shared/widgets/app_shell.dart",
-        "line": 9
       }
     },
     {
@@ -1764,24 +1256,6 @@
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
         "line": 76
-      }
-    },
-    {
-      "from": "HomePage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/home/presentation/pages/home_page.dart",
-        "line": 57
-      }
-    },
-    {
-      "from": "HomePage",
-      "to": "WorkoutDayPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/home/presentation/pages/home_page.dart",
-        "line": 91
       }
     },
     {
@@ -1938,156 +1412,12 @@
       }
     },
     {
-      "from": "AiOnboardingPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-        "line": 65
-      }
-    },
-    {
-      "from": "AiOnboardingPage",
-      "to": "AuthGate",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/ai_onboarding_page.dart",
-        "line": 74
-      }
-    },
-    {
-      "from": "ManualOnboardingPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-        "line": 65
-      }
-    },
-    {
-      "from": "ManualOnboardingPage",
-      "to": "AuthGate",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/manual_onboarding_page.dart",
-        "line": 74
-      }
-    },
-    {
-      "from": "OnboardingEntryPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-        "line": 21
-      }
-    },
-    {
-      "from": "OnboardingEntryPage",
-      "to": "AiOnboardingPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-        "line": 83
-      }
-    },
-    {
-      "from": "OnboardingEntryPage",
-      "to": "ManualOnboardingPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/presentation/pages/onboarding_entry_page.dart",
-        "line": 123
-      }
-    },
-    {
       "from": "PrivacyPage",
       "to": "ContentSourcesPage",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/presentation/privacy_page.dart",
         "line": 75
-      }
-    },
-    {
-      "from": "ProfilePage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/profile/presentation/pages/profile_page.dart",
-        "line": 80
-      }
-    },
-    {
-      "from": "StatsPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/stats/presentation/pages/stats_page.dart",
-        "line": 65
-      }
-    },
-    {
-      "from": "StatsPage",
-      "to": "OnboardingEntryPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/stats/presentation/pages/stats_page.dart",
-        "line": 127
-      }
-    },
-    {
-      "from": "WorkoutDayPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
-        "line": 97
-      }
-    },
-    {
-      "from": "WorkoutPlanPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-        "line": 65
-      }
-    },
-    {
-      "from": "WorkoutPlanPage",
-      "to": "WorkoutDayPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workout_plan_page.dart",
-        "line": 149
-      }
-    },
-    {
-      "from": "WorkoutsPage",
-      "to": "AuthPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-        "line": 62
-      }
-    },
-    {
-      "from": "WorkoutsPage",
-      "to": "OnboardingEntryPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-        "line": 87
-      }
-    },
-    {
-      "from": "WorkoutsPage",
-      "to": "WorkoutPlanPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/presentation/pages/workouts_page.dart",
-        "line": 189
       }
     },
     {
@@ -2124,42 +1454,6 @@
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
         "line": 200
-      }
-    },
-    {
-      "from": "AppShell",
-      "to": "HomePage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/shared/widgets/app_shell.dart",
-        "line": 20
-      }
-    },
-    {
-      "from": "AppShell",
-      "to": "ProfilePage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/shared/widgets/app_shell.dart",
-        "line": 23
-      }
-    },
-    {
-      "from": "AppShell",
-      "to": "StatsPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/shared/widgets/app_shell.dart",
-        "line": 22
-      }
-    },
-    {
-      "from": "AppShell",
-      "to": "WorkoutsPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/shared/widgets/app_shell.dart",
-        "line": 21
       }
     },
     {
@@ -2334,40 +1628,6 @@
           }
         }
       ]
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/bootstrap",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/bootstrap/data/bootstrap_api.dart",
-        "line": 10
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/bootstrap",
-          "group": "mobile-bootstrap",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "200": "z.object",
-            "401": "z.object",
-            "500": "z.object"
-          },
-          "usecases": [
-            "GetHomeData",
-            "GetUserTrainData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-bootstrap.ts",
-            "line": 16
-          }
-        }
-      ],
-      "goMatches": []
     },
     {
       "method": "GET",
@@ -2547,138 +1807,6 @@
     },
     {
       "method": "GET",
-      "path": "/mobile/home/$date",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/home/data/home_api.dart",
-        "line": 11
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/home/:date",
-          "group": "mobile-home",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "200": "HomeDataSchema",
-            "401": "ErrorSchema",
-            "422": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "GetHomeData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-home.ts",
-            "line": 13
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/onboarding/manual-plan",
-      "keys": [
-        "age",
-        "bodyFatPercentage",
-        "daysPerWeek",
-        "experienceLevel",
-        "goal",
-        "heightInCentimeters",
-        "preferences",
-        "restrictions",
-        "sessionDurationInMinutes",
-        "trainData",
-        "weightInGrams"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/data/onboarding_api.dart",
-        "line": 19
-      },
-      "legacyMatches": [
-        {
-          "method": "POST",
-          "path": "/mobile/onboarding/manual-plan",
-          "group": "mobile-onboarding",
-          "requestType": "CreatePlanRequestSchema",
-          "queryType": null,
-          "responses": {
-            "201": "CreatedWorkoutPlanResponseSchema",
-            "401": "z.object",
-            "409": "ConflictResponseSchema",
-            "422": "z.object",
-            "500": "z.object"
-          },
-          "usecases": [
-            "CreateWorkoutPlan",
-            "UpsertUserTrainData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-onboarding.ts",
-            "line": 152
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/onboarding/ai-plan",
-      "keys": [
-        "age",
-        "bodyFatPercentage",
-        "daysPerWeek",
-        "experienceLevel",
-        "goal",
-        "heightInCentimeters",
-        "preferences",
-        "restrictions",
-        "sessionDurationInMinutes",
-        "trainData",
-        "weightInGrams"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/onboarding/data/onboarding_api.dart",
-        "line": 50
-      },
-      "legacyMatches": [
-        {
-          "method": "POST",
-          "path": "/mobile/onboarding/ai-plan",
-          "group": "mobile-onboarding",
-          "requestType": "CreatePlanRequestSchema",
-          "queryType": null,
-          "responses": {
-            "201": "CreatedWorkoutPlanResponseSchema",
-            "401": "z.object",
-            "409": "ConflictResponseSchema",
-            "422": "z.object",
-            "504": "z.object",
-            "500": "z.object"
-          },
-          "usecases": [
-            "CreateWorkoutPlan",
-            "Error",
-            "UpsertUserTrainData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-onboarding.ts",
-            "line": 258
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "GET",
       "path": "/api/v1/privacy",
       "keys": [
         "publicAuth"
@@ -2775,293 +1903,6 @@
           }
         }
       ]
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/profile",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/profile/data/profile_api.dart",
-        "line": 10
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/profile",
-          "group": "mobile-profile",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "200": "z.object",
-            "401": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "GetUserTrainData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-profile.ts",
-            "line": 19
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "PUT",
-      "path": "/mobile/profile/train-data",
-      "keys": [
-        "age",
-        "bodyFatPercentage",
-        "heightInCentimeters",
-        "weightInGrams"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/profile/data/profile_api.dart",
-        "line": 20
-      },
-      "legacyMatches": [
-        {
-          "method": "PUT",
-          "path": "/mobile/profile/train-data",
-          "group": "mobile-profile",
-          "requestType": "UpsertUserTrainDataBodySchema",
-          "queryType": null,
-          "responses": {
-            "200": "UpsertUserTrainDataSchema",
-            "401": "ErrorSchema",
-            "422": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "UpsertUserTrainData"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-profile.ts",
-            "line": 77
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/stats",
-      "keys": [
-        "from",
-        "to"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/stats/data/stats_api.dart",
-        "line": 13
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/stats",
-          "group": "mobile-stats",
-          "requestType": null,
-          "queryType": "StatsQuerySchema",
-          "responses": {
-            "200": "StatsSchema",
-            "401": "ErrorSchema",
-            "404": "ErrorSchema",
-            "422": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "GetStats"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-stats.ts",
-            "line": 16
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans",
-      "keys": [
-        "active"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/data/workouts_api.dart",
-        "line": 13
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/workout-plans",
-          "group": "mobile-workout-plans",
-          "requestType": null,
-          "queryType": "ListWorkoutPlansQuerySchema",
-          "responses": {
-            "200": "ListWorkoutPlansSchema",
-            "401": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "ListWorkoutPlans"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-workout-plans.ts",
-            "line": 36
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans/$workoutPlanId",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/data/workouts_api.dart",
-        "line": 26
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/workout-plans/:workoutPlanId",
-          "group": "mobile-workout-plans",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "200": "GetWorkoutPlanSchema",
-            "401": "ErrorSchema",
-            "404": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "GetWorkoutPlan"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-workout-plans.ts",
-            "line": 141
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "GET",
-      "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/data/workouts_api.dart",
-        "line": 34
-      },
-      "legacyMatches": [
-        {
-          "method": "GET",
-          "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId",
-          "group": "mobile-workout-plans",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "200": "GetWorkoutDaySchema",
-            "401": "ErrorSchema",
-            "404": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "GetWorkoutDay"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-workout-plans.ts",
-            "line": 195
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "POST",
-      "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions",
-      "keys": [],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/data/workouts_api.dart",
-        "line": 45
-      },
-      "legacyMatches": [
-        {
-          "method": "POST",
-          "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions",
-          "group": "mobile-workout-plans",
-          "requestType": null,
-          "queryType": null,
-          "responses": {
-            "201": "StartWorkoutSessionSchema",
-            "401": "ErrorSchema",
-            "404": "ErrorSchema",
-            "409": "ErrorSchema",
-            "422": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "StartWorkoutSession"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-workout-plans.ts",
-            "line": 251
-          }
-        }
-      ],
-      "goMatches": []
-    },
-    {
-      "method": "PATCH",
-      "path": "/mobile/workout-plans/$workoutPlanId/days/$workoutDayId/sessions/$sessionId",
-      "keys": [
-        "completedAt"
-      ],
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/workouts/data/workouts_api.dart",
-        "line": 59
-      },
-      "legacyMatches": [
-        {
-          "method": "PATCH",
-          "path": "/mobile/workout-plans/:workoutPlanId/days/:workoutDayId/sessions/:sessionId",
-          "group": "mobile-workout-plans",
-          "requestType": "UpdateWorkoutSessionBodySchema",
-          "queryType": null,
-          "responses": {
-            "200": "UpdateWorkoutSessionSchema",
-            "401": "ErrorSchema",
-            "404": "ErrorSchema",
-            "409": "ErrorSchema",
-            "422": "ErrorSchema",
-            "500": "ErrorSchema"
-          },
-          "usecases": [
-            "UpdateWorkoutSession"
-          ],
-          "source": {
-            "repository": "backend-reference",
-            "path": "src/routes/mobile-workout-plans.ts",
-            "line": 330
-          }
-        }
-      ],
-      "goMatches": []
     }
   ],
   "backend": {

@@ -652,3 +652,18 @@ Depois, inspecionado default resetOnError true do flutter_secure_storage10.0.0. 
 Inventário verificou hash/assinatura, versão, permissões, exports declarados, allowBackupfalse e nove domínios excluídos. Primeiro inventário bloqueou serviçoGoogle não previsto; merge comprovou play-services-auth21.4.0 e permissão exata. Política/teste passaram após essa revisão específica. Biometria transitiva vem deAndroidX1.1.0; não foi habilitado fluxo biométrico. Cinco testes do parser/política, com negativos, aprovados. [Recibo](secure-storage-recovery-verification.json), [inventário](android-security-inventory.json).
 
 Graphify1alterado/120inalterados,121Dart/4370nós/5129arestas,HTML/zeroLLM.028doing: sem corrupção nativa de chave, certificaçãoOEM/release/iOS, auditoria completa, implementaçãooffline/fotos/master ou teste de milhões. Sem migration, compra, hospedagem ou deploy.
+
+
+## 29–30/10/2026 — limpeza, aprendizado e avaliaçãoMoveKit
+
+A pedido do autor, conferidoGo compgx/SQL/Goose e ausência deORM. Comparadas alternativas sem instalar/trocar persistência. Avaliação delimitadaMoveKit com páginas oficiais de preço/pacote/licença/instrução: interesseR$779,582exercícios anunciados; licença perpétua e12meses de novidades,API futura. Restrição de arquivo bruto exige esclarecer entrega/cache; não comprado/contatado/integrado.
+
+Removidos31Dart inalcançáveis desde app/testes e63scaffolds fora deAndroid/iOS; metadadosFlutter alinhados. Fontes de marca, referências históricas citadas, direitos, bancos, backups e credenciais preservados. Reescritos documentos de entrada obsoletos e consolidadoAGENTS/handoff. Novo aprendizado explica diretórios/ferramentas/ORM e operação.
+
+Skilldraw-io-diagram-generator obtida do repositório oficial fixado e aplicada a15mapasXML/SVG; validador aprovado. Snapshot somente metadadosREADONLY confirmou30tabelas no núcleo e4no catálogo; banco.md/APIs explicam colunas e relações/34operações. GaleriaHTMLlocal;SVGs renderizados e amostras inspecionadas. Não certifica renderer nativodraw.io.
+
+Novoambiente.py controla apenas recursos registrados; status/plan-stop executados, start/stop testados com quatro mocks de segurança. Não repetida parada real.258Flutter/análise0,2testesdiagramas e14documentais aprovados. APKdebug0.4.6+28 compilado/assinado/hashconferido, instalado sem formulário aberto e sessão recuperada; emulador emHoje, sem mutação de treino/consumo ou novoGoogle.
+
+Graphify90Dart/4032nós/4628arestas;31removidos/90inalterados,AST/HTML/zeroLLM. Próxima funcional015segue bloqueada por conteúdo;028/029/qualidade e demais dependências continuam. Sem migração de banco, hospedagem, compra ou dados inventados. [Recibo](repository-cleanup-verification.json).
+
+Validação complementar deste incremento: suíte completaPython doCI com127testes aprovada; inclui os helpers e a reprodutibilidade dos15diagramas. Não é teste real de parada/start nem validação de compra/licença do pacote adquirido.

@@ -1,5 +1,9 @@
 # Caminho da pesquisa ao APK
 
+## Incremento de aprendizado e limpeza — 30/10
+
+APKdebug0.4.6+28 instalado, sessão preservada;31Dart legados e63scaffolds fora deAndroid/iOS removidos. Guias de entrada corrigidos paraGo,15diagramas com metadados reais e controle local documentado. [Recibo](repository-cleanup-verification.json). V1-015mantém gate de conteúdo; não concluiu028/offline/foto/master/release. Pesquisa delimitadaMoveKit não é compra autorizada.
+
 ## Retomada independente — V1-028 / 29/10
 
 APKdebug0.4.5+27 instalado com sessão preservada. Desativado reset automático em falha de armazenamento seguro;258testesFlutter/análise0 e inventário compilado aprovados. [Evidência](secure-storage-recovery-verification.json). Oito workflows do ajuste visuala8ea84a verdes, incluindo SQL da busca cotidiana.028segue doing;015mantém gate de conteúdo humano aprovado. Sem migration, hospedagem ou escrita privada.

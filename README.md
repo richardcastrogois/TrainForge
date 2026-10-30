@@ -1,34 +1,19 @@
 # TrainForge
 
-Aplicativo Flutter em desenvolvimento para integrar orientação por conteúdo humano, atividades, alimentação e acompanhamento pessoal. **Android e iOS** são o destino; desenvolvimento e primeiro teste serão em Android.
+Aplicativo Flutter para Android e iOS, com conteúdo rastreável e dados reais. Primeiro ambiente de avaliação:Android local. Backend Go e PostgreSQL já implementados; catálogo separado em serviço/base próprios. Não há programa de treino liberado para prática.
 
-## Onde começar
+## Comece aqui
 
-- [Documentação atual](docs/README.md)
-- [Plano até o APK da V1](docs/execucao/v1/plano-macro.md) e [43 histórias em 12 épicos](docs/execucao/v1/backlog.md)
-- [Arquitetura proposta Go + Flutter + PostgreSQL](docs/arquitetura/arquitetura-alvo.md)
-- [Arquitetura dinâmica: mapas, telas, HTTP, banco e progresso](docs/arquitetura/README.md)
-- [Fontes, autoria, direitos e evidências](docs/conteudo/README.md)
+- [Aprender cada peça](docs/aprendizado/README.md)
+- [Iniciar, ver logs e parar](docs/aprendizado/operacao-local.md)
+- [15 diagramas visuais e editáveis](docs/diagramas/README.md)
+- [Backend, tabelas e contratos](documentacao-tecnica.md)
+- [Estado atual e próxima história](docs/execucao/v1/handoff.md)
+- [Requisitos e backlog](docs/execucao/v1/backlog.md)
+- [Avaliação do MoveKit](docs/conteudo/avaliacao-movekit-2026-10-29.md)
 
-## Estado em 21/10/2026
+## Estado
 
-| Frente | Estado real |
-|---|---|
-| Flutter | Base existente de autenticação, onboarding, home, treino, stats e perfil; revisão necessária para catálogo humano |
-| Backend | Fastify/TypeScript/Prisma/PostgreSQL no repositório separado `bootcamp-treinos-api`; Go é proposta para próxima etapa |
-| Pesquisa | N01–N46 encerradas nos recortes:40 pesquisas e6 reusos;331 famílias catalogadas. Não significa conteúdo todo homologado |
-| N15 |11 componentes modulares para cuidadores; separados de5 movimentos domésticos para idosos; direitos/apoio preservados |
-| Planejamento |12 épicos/43 histórias documentadas; V1-003 documental em andamento e implementação do app pendente; próxima V1-001 |
-| Entrega | Nenhum deploy ou APK V1 criado por este planejamento; assinatura, API real e teste ponta a ponta estão no backlog |
+API 0.9.1/34 operações; catálogo 0.2.0; núcleo schema 13/30 tabelas e catálogo schema 2/4 tabelas. Autenticação Google, configuração e alimentação manual têm evidências locais. Fotos, treino completo, offline e outras jornadas mantêm seus critérios abertos.
 
-Sem treino prescrito por IA, dados de demonstração no runtime ou fonte atribuída sem prova. Não é produto pronto para uso público. Visão integral: [R01–R18](docs/planejamento/visao-produto.md).
-
-## Entender o projeto sem iniciar ferramentas
-
-Abra a [documentação de arquitetura](docs/arquitetura/README.md): diagramas Mermaid, mapas das telas, chamadas e dados trocados, banco, proposta Go e progresso. Tudo faz parte do clone e pode ser lido no GitHub/editor, sem servidor local.
-
-A CI regenera os derivados em mudanças do código/planejamento e os versiona na branch principal quando as permissões/regras do remoto permitem. [Funcionamento e limites da atualização](docs/arquitetura/documentacao-dinamica.md). O backend Fastify externo é uma referência auditada/versionada, identificada como tal, sem dependência de caminhos deste computador.
-
-[Swagger por comentários Go](docs/arquitetura/swagger-go.md): contrato gerado dos comentários e DTOs, com conferência de divergência. Serviço/Swagger Go real ainda a implementar.
-
-O [guia](guia-do-projeto.md) diferencia ferramentas atuais e futuras. Snapshots antigos estão em [arquivo](docs/arquivo/README.md), mantendo evidências e autoria nos caminhos originais.
+SomenteAndroid/iOS continuam como plataformasFlutter do produto. Dados, chaves e ferramentas locais ficam ignorados no Git. Push não é deploy. Sem contratação ou hospedagem autorizada nesta etapa.

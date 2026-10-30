@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1230" height="876" viewBox="0 0 1230 876" role="img">
+<title>MoveKit: proposta de integração</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect width="1230" height="876" fill="#ffffff"/>
+<g font-family="Inter,Arial,sans-serif" fill="#18332e">
+<text x="40" y="60" font-size="18" font-weight="700">MoveKit: proposta de integração</text>
+<text x="40" y="100" font-size="15" font-weight="400">Proposta, não infraestrutura existente. Cache/offline da mídia depende de esclarecer compatibilidade com a cláusula3 da</text>
+<text x="40" y="120" font-size="15" font-weight="400">licença.</text>
+<path d="M390,280 L450,280" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M780,280 L840,280" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1005,370 L1005,415.0 L225,415.0 L225,460" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1005,370 L1005,415.0 L615,415.0 L615,460" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M390,550 L840,550" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M780,550 L840,550" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="60" y="190" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="78" y="216" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="78" y="244" font-size="18" font-weight="700">Compra manual</text>
+<text x="78" y="292" font-size="15" font-weight="400">Ainda não realizada ou autorizada</text>
+<text x="78" y="310" font-size="15" font-weight="400">para execução.</text>
+<rect x="450" y="190" width="330" height="180" rx="15" fill="#e1d5e7" stroke="#756080"/>
+<text x="468" y="216" font-size="12" font-weight="700">EXTERNO</text>
+<text x="468" y="244" font-size="18" font-weight="700">Arquivos adquiridos</text>
+<text x="468" y="292" font-size="15" font-weight="400">ZIP MP4; posters e metadados</text>
+<text x="468" y="310" font-size="15" font-weight="400">anunciados pelo fornecedor.</text>
+<rect x="840" y="190" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="858" y="216" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="858" y="244" font-size="18" font-weight="700">Importação revisada</text>
+<text x="858" y="292" font-size="15" font-weight="400">Validar licença, identidade,</text>
+<text x="858" y="310" font-size="15" font-weight="400">tradução e versão.</text>
+<rect x="60" y="460" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="78" y="486" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="78" y="514" font-size="18" font-weight="700">PostgreSQL</text>
+<text x="78" y="562" font-size="15" font-weight="400">IDs, relações, licença, versão e</text>
+<text x="78" y="580" font-size="15" font-weight="400">chave do objeto; não vídeos.</text>
+<rect x="450" y="460" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="468" y="486" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="468" y="514" font-size="18" font-weight="700">Arquivos privados</text>
+<text x="468" y="562" font-size="15" font-weight="400">Em dev: diretório local; futuro:</text>
+<text x="468" y="580" font-size="15" font-weight="400">object storage escolhido.</text>
+<rect x="840" y="460" width="330" height="180" rx="15" fill="#f5f5f5" stroke="#777777" stroke-dasharray="7 5"/>
+<text x="858" y="486" font-size="12" font-weight="700">PLANEJADO</text>
+<text x="858" y="514" font-size="18" font-weight="700">Player no aplicativo</text>
+<text x="858" y="562" font-size="15" font-weight="400">Entrega controlada; sem links</text>
+<text x="858" y="580" font-size="15" font-weight="400">públicos ou download bruto.</text>
+<text x="40" y="680" font-size="16" font-weight="700">Conexões (mesma ordem do arquivo editável)</text>
+<text x="40" y="708" font-size="14" font-weight="400">Compra manual → Arquivos adquiridos: aquisição</text>
+<text x="40" y="734" font-size="14" font-weight="400">Arquivos adquiridos → Importação revisada: conferência</text>
+<text x="40" y="760" font-size="14" font-weight="400">Importação revisada → PostgreSQL: índice</text>
+<text x="40" y="786" font-size="14" font-weight="400">Importação revisada → Arquivos privados: mídia</text>
+<text x="40" y="812" font-size="14" font-weight="400">PostgreSQL → Player no aplicativo: API</text>
+<text x="40" y="838" font-size="14" font-weight="400">Arquivos privados → Player no aplicativo: stream autorizado</text>
+</g></svg>

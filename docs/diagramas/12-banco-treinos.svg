@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2520" viewBox="0 0 1000 2520" role="img">
+<title>Banco: treino e configuração</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect width="1000" height="2520" fill="#ffffff"/>
+<g font-family="Inter,Arial,sans-serif" fill="#18332e">
+<text x="40" y="60" font-size="18" font-weight="700">Banco: treino e configuração</text>
+<text x="40" y="100" font-size="15" font-weight="400">Seta FK: tabela de origem referencia a de destino; tabelas não chamam outras. Colunas completas,</text>
+<text x="40" y="120" font-size="15" font-weight="400">cardinalidades/constraints e responsabilidades em banco.md. Tabela existente não comprova jornada implementada.</text>
+<path d="M400,280 L610,280" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="265" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,510 L610,510" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="495" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,740 L610,740" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="725" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,970 L610,970" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="955" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,1200 L610,1200" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="1185" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,1430 L610,1430" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="1415" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,1660 L610,1660" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="1645" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,1890 L610,1890" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="1875" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,2120 L610,2120" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="2105" font-size="13" font-weight="400">referencia (FK)</text>
+<path d="M400,2350 L610,2350" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="422" y="2335" font-size="13" font-weight="400">referencia (FK)</text>
+<rect x="70" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="244" font-size="18" font-weight="700">activity_events</text>
+<text x="88" y="292" font-size="15" font-weight="400">id | session_id | user_id |</text>
+<text x="88" y="310" font-size="15" font-weight="400">event_type | occurred_at …</text>
+<rect x="610" y="190" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="216" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="244" font-size="18" font-weight="700">activity_sessions</text>
+<text x="628" y="292" font-size="15" font-weight="400">id | occurrence_id | user_id |</text>
+<text x="628" y="310" font-size="15" font-weight="400">state | started_at …</text>
+<rect x="70" y="420" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="446" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="474" font-size="18" font-weight="700">activity_sessions</text>
+<text x="88" y="522" font-size="15" font-weight="400">id | occurrence_id | user_id |</text>
+<text x="88" y="540" font-size="15" font-weight="400">state | started_at …</text>
+<rect x="610" y="420" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="446" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="474" font-size="18" font-weight="700">schedule_occurrences</text>
+<text x="628" y="522" font-size="15" font-weight="400">id | user_id | enrollment_id |</text>
+<text x="628" y="540" font-size="15" font-weight="400">source_session_key | planned_for …</text>
+<rect x="70" y="650" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="676" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="704" font-size="18" font-weight="700">enrollments</text>
+<text x="88" y="752" font-size="15" font-weight="400">id | user_id | program_id |</text>
+<text x="88" y="770" font-size="15" font-weight="400">program_sha | status …</text>
+<rect x="610" y="650" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="676" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="704" font-size="18" font-weight="700">content_versions</text>
+<text x="628" y="752" font-size="15" font-weight="400">asset_id | version_sha | kind |</text>
+<text x="628" y="770" font-size="15" font-weight="400">source_id | title …</text>
+<rect x="70" y="880" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="906" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="934" font-size="18" font-weight="700">enrollments</text>
+<text x="88" y="982" font-size="15" font-weight="400">id | user_id | program_id |</text>
+<text x="88" y="1000" font-size="15" font-weight="400">program_sha | status …</text>
+<rect x="610" y="880" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="906" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="934" font-size="18" font-weight="700">users</text>
+<text x="628" y="982" font-size="15" font-weight="400">id | provider | issuer | subject |</text>
+<text x="628" y="1000" font-size="15" font-weight="400">display_name …</text>
+<rect x="70" y="1110" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="1136" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="1164" font-size="18" font-weight="700">program_items</text>
+<text x="88" y="1212" font-size="15" font-weight="400">program_id | program_sha |</text>
+<text x="88" y="1230" font-size="15" font-weight="400">session_key | position |</text>
+<text x="88" y="1248" font-size="15" font-weight="400">movement_id …</text>
+<rect x="610" y="1110" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="1136" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="1164" font-size="18" font-weight="700">content_versions</text>
+<text x="628" y="1212" font-size="15" font-weight="400">asset_id | version_sha | kind |</text>
+<text x="628" y="1230" font-size="15" font-weight="400">source_id | title …</text>
+<rect x="70" y="1340" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="1366" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="1394" font-size="18" font-weight="700">program_items</text>
+<text x="88" y="1442" font-size="15" font-weight="400">program_id | program_sha |</text>
+<text x="88" y="1460" font-size="15" font-weight="400">session_key | position |</text>
+<text x="88" y="1478" font-size="15" font-weight="400">movement_id …</text>
+<rect x="610" y="1340" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="1366" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="1394" font-size="18" font-weight="700">program_sessions</text>
+<text x="628" y="1442" font-size="15" font-weight="400">program_id | program_sha |</text>
+<text x="628" y="1460" font-size="15" font-weight="400">program_kind | session_key |</text>
+<text x="628" y="1478" font-size="15" font-weight="400">source_metadata …</text>
+<rect x="70" y="1570" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="1596" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="1624" font-size="18" font-weight="700">program_sessions</text>
+<text x="88" y="1672" font-size="15" font-weight="400">program_id | program_sha |</text>
+<text x="88" y="1690" font-size="15" font-weight="400">program_kind | session_key |</text>
+<text x="88" y="1708" font-size="15" font-weight="400">source_metadata …</text>
+<rect x="610" y="1570" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="1596" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="1624" font-size="18" font-weight="700">content_versions</text>
+<text x="628" y="1672" font-size="15" font-weight="400">asset_id | version_sha | kind |</text>
+<text x="628" y="1690" font-size="15" font-weight="400">source_id | title …</text>
+<rect x="70" y="1800" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="1826" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="1854" font-size="18" font-weight="700">schedule_occurrences</text>
+<text x="88" y="1902" font-size="15" font-weight="400">id | user_id | enrollment_id |</text>
+<text x="88" y="1920" font-size="15" font-weight="400">source_session_key | planned_for …</text>
+<rect x="610" y="1800" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="1826" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="1854" font-size="18" font-weight="700">program_sessions</text>
+<text x="628" y="1902" font-size="15" font-weight="400">program_id | program_sha |</text>
+<text x="628" y="1920" font-size="15" font-weight="400">program_kind | session_key |</text>
+<text x="628" y="1938" font-size="15" font-weight="400">source_metadata …</text>
+<rect x="70" y="2030" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="2056" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="2084" font-size="18" font-weight="700">schedule_occurrences</text>
+<text x="88" y="2132" font-size="15" font-weight="400">id | user_id | enrollment_id |</text>
+<text x="88" y="2150" font-size="15" font-weight="400">source_session_key | planned_for …</text>
+<rect x="610" y="2030" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="2056" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="2084" font-size="18" font-weight="700">enrollments</text>
+<text x="628" y="2132" font-size="15" font-weight="400">id | user_id | program_id |</text>
+<text x="628" y="2150" font-size="15" font-weight="400">program_sha | status …</text>
+<rect x="70" y="2260" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="88" y="2286" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="88" y="2314" font-size="18" font-weight="700">training_configuration_versions</text>
+<text x="88" y="2362" font-size="15" font-weight="400">user_id | revision | configuration</text>
+<text x="88" y="2380" font-size="15" font-weight="400">| confirmed_at …</text>
+<rect x="610" y="2260" width="330" height="180" rx="15" fill="#d5e8d4" stroke="#52734d"/>
+<text x="628" y="2286" font-size="12" font-weight="700">EXISTENTE</text>
+<text x="628" y="2314" font-size="18" font-weight="700">users</text>
+<text x="628" y="2362" font-size="15" font-weight="400">id | provider | issuer | subject |</text>
+<text x="628" y="2380" font-size="15" font-weight="400">display_name …</text>
+</g></svg>
