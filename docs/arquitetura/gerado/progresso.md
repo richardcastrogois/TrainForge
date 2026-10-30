@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0c1f080e1dd51b06`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5375107b667e0145`.
 
 **19/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-015**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -249,10 +249,10 @@ flowchart LR
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
 | V1-021 | done | Organizar configuração, composição e estado | V1-008, V1-012 |
-| V1-022 | todo | Implementar entrada e biblioteca com conteúdo real | V1-014, V1-015, V1-021 |
+| V1-022 | doing | Implementar entrada e biblioteca com conteúdo real | V1-014, V1-015, V1-021 |
 | V1-023 | todo | Implementar sessão e recuperação de interrupção | V1-016, V1-017, V1-022 |
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |
-| V1-025 | todo | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021, V1-048 |
+| V1-025 | doing | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021, V1-048 |
 | V1-026 | todo | Tratar offline e sincronização sem fingir sucesso | V1-023, V1-025 |
 | V1-048 | done | Localizar interface e nomes alimentares com revisão | V1-020, V1-021 |
 | V1-027 | todo | Validar acessibilidade e paridade de contratos Android/iOS | V1-022, V1-024, V1-025, V1-048 |

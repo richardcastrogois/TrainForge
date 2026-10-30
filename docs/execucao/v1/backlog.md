@@ -949,7 +949,7 @@ Handoff: 25/10:fundação021encerrada no recorte previsto de composição/config
 
 ### V1-022 — Implementar entrada e biblioteca com conteúdo real
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como iniciante, quero escolher uma opção humana e entender por que ela está disponível.
 
@@ -978,7 +978,7 @@ Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifes
 
 Entregas: Telas library/detail/enrollment; Mapa de fluxo atualizado
 
-Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra.
+Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 
@@ -1045,7 +1045,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-025 — Implementar busca, cadastro próprio e registro alimentar no Flutter
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero consumir o lote alimentar real em uma refeição registrada por mim.
 
@@ -1075,7 +1075,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue.
+Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
@@ -1162,7 +1162,7 @@ Validação: Testes Go/SQL/Flutter do vínculo/alias/fallback e integridade dos 
 
 Entregas: Estrutura e textos de UI pt-BR/pt-PT/en/es; Contrato/modelo de nomes e aliases revisados; Busca/apresentação com original/fonte e fallback; Recibo de cobertura, integridade e aceite
 
-Handoff: 27/10:encerrada no escopo da UI disponível e capacidade de nomes revisados.495 mensagens/idioma,197 testes Flutter/analyze0,Go test/vet e SQL/HTTP descartáveis. API0.6.2/26operações; histórico/detalhe/correção usam foodDisplay fora de calculation, lote e cursor/revisão/ownership; mutações inalteradas. APK0.3.8+21 instalado/hash/assinatura conferidos; leitura realEN/PT-BR e restauração tardia de preferência após timeout confirmadas, mesma sessão sem novoGoogle/escrita alimentar. Cobertura editorial real0/6369 poridioma, fallback original; publicação real continua exigindo evidência humana/direitos. iOS nativo não executado noWindows; futuros fluxos localizam conforme forem implementados. Próxima047 pelas dependências.
+Handoff: 27/10:encerrada no escopo da UI disponível e capacidade de nomes revisados.495 mensagens/idioma,197 testes Flutter/analyze0,Go test/vet e SQL/HTTP descartáveis. API0.6.2/26operações; histórico/detalhe/correção usam foodDisplay fora de calculation, lote e cursor/revisão/ownership; mutações inalteradas. APK0.3.8+21 instalado/hash/assinatura conferidos; leitura realEN/PT-BR e restauração tardia de preferência após timeout confirmadas, mesma sessão sem novoGoogle/escrita alimentar. Cobertura editorial real0/6369 poridioma, fallback original; publicação real continua exigindo evidência humana/direitos. iOS nativo não executado noWindows; futuros fluxos localizam conforme forem implementados. Próxima047 pelas dependências. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
 
 ### V1-027 — Validar acessibilidade e paridade de contratos Android/iOS
 

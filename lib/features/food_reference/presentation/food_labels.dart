@@ -13,7 +13,7 @@ extension FoodReferenceLabels on FoodReference {
   String localizedBasis(BuildContext context) =>
       basisQuantity == null || basisUnit == null
       ? context.l10n.basisUnknown
-      : context.l10n.sourceBasis(
+      : context.l10n.perQuantity(
           context.displayDecimal(basisQuantity!),
           basisUnit!,
         );
@@ -26,6 +26,13 @@ extension FoodReferenceLabels on FoodReference {
 }
 
 extension FoodNutrientLabels on FoodNutrient {
+  String localizedMagnitude(BuildContext context) {
+    final text = localizedValue(context), suffix = unit == null ? '' : ' $unit';
+    return suffix.isNotEmpty && text.endsWith(suffix)
+        ? text.substring(0, text.length - suffix.length)
+        : text;
+  }
+
   String localizedValue(BuildContext context) {
     final suffix = unit == null ? '' : ' $unit';
     return switch (state) {

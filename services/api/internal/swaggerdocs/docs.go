@@ -588,6 +588,7 @@ const docTemplate = `{
         },
         "/api/v1/foods": {
             "get": {
+                "description": "Locale-aware search also recognizes bounded everyday-food discovery terms. It preserves source identity, preparation, reviewed names and composition.",
                 "produces": [
                     "application/json"
                 ],
@@ -598,7 +599,7 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
+                        "description": "Literal name substring plus bounded everyday-food discovery terms when locale is supplied; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
                         "name": "q",
                         "in": "query"
                     },
@@ -3937,7 +3938,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.9.0",
+	Version:          "0.9.1",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},

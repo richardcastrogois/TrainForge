@@ -124,6 +124,27 @@ func TestFoodNamesPostgresImmutabilityAndRuntimePermissions(t *testing.T) {
 	if _, err = Import(ctx, writer, f.load(t)); err != nil {
 		t.Fatal("fixture import failed")
 	}
+	t.Run("everyday discovery query and prefix boundaries", func(t *testing.T) {
+		public := FoodPostgres{Pool: runtime}
+		if _, _, err := public.LocalizedList(ctx, FoodFilters{Q: "arroz", Locale: "pt-BR", Limit: 2}); err != nil {
+			t.Fatal("discovery query failed")
+		}
+		for _, sample := range []struct {
+			name string
+			want bool
+		}{
+			{"Rice, white, boiled in unsalted water", true},
+			{"Riz blanc, cru", true},
+			{"Chorizo", false},
+			{"Curry, without rice", false},
+		} {
+			var matched bool
+			err := runtime.QueryRow(ctx, `SELECT EXISTS(SELECT 1 FROM unnest($2::text[]) term WHERE lower($1::text) ~ ('^[[:space:]]*'||term||'([^[:alpha:]]|$)'))`, sample.name, foodSearchTerms("arroz", "pt-BR")).Scan(&matched)
+			if err != nil || matched != sample.want {
+				t.Fatal("discovery prefix boundary changed")
+			}
+		}
+	})
 	var before string
 	if writer.QueryRow(ctx, "SELECT row_to_json(v)::text FROM trainforge_v1.food_versions v WHERE food_id=$1", f.food.ID).Scan(&before) != nil {
 		t.Fatal("fixture source missing")

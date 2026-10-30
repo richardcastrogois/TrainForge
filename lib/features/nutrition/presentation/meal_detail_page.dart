@@ -14,6 +14,7 @@ import 'nutrition_messages.dart';
 import 'meal_metadata_page.dart';
 
 class MealDetailPage extends StatefulWidget {
+  final bool evidenceMode;
   final String id, accountId;
   final MealRepository repository;
   final NutritionRepository nutrition;
@@ -27,6 +28,7 @@ class MealDetailPage extends StatefulWidget {
     required this.nutrition,
     required this.currentAccountId,
     required this.sessionChanges,
+    this.evidenceMode = false,
   });
   @override
   State<MealDetailPage> createState() => _MealDetailPageState();
@@ -170,8 +172,11 @@ class _MealDetailPageState extends State<MealDetailPage> {
     await Navigator.push<void>(
       context,
       MaterialPageRoute(
-        builder: (_) =>
-            EntryDetailPage(entry: item, repository: widget.nutrition),
+        builder: (_) => EntryDetailPage(
+          entry: item,
+          repository: widget.nutrition,
+          evidenceMode: widget.evidenceMode,
+        ),
       ),
     );
     if (active) await load();

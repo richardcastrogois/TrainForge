@@ -1,3 +1,5 @@
+import 'food_display_names.dart';
+
 const foodNameLocales = {'pt-BR', 'pt-PT', 'en', 'es'};
 final _foodNameHash = RegExp(r'^[a-f0-9]{64}$');
 
@@ -121,10 +123,20 @@ class FoodReference {
       );
 
   /// Presentation only; IDs, original name and source composition stay unchanged.
-  String displayNameFor(String language) =>
-      (reviewedName?.locale == language ? reviewedName!.name : name)
-          .replaceAll(RegExp(r'\s+'), ' ')
-          .trim();
+  String displayNameFor(String language) {
+    final translated = foodDisplayNames[id];
+    final exact =
+        translated != null &&
+        translated.version == versionId &&
+        translated.original == name;
+    final display = reviewedName?.locale == language
+        ? reviewedName!.name
+        : exact
+        ? translated.names[language.split('-').first] ?? name
+        : name;
+    return display.replaceAll(RegExp(r'\s+'), ' ').trim();
+  }
+
   String get displayName => name.replaceAll(RegExp(r'\s+'), ' ').trim();
   String get basisLabel => basisQuantity == null || basisUnit == null
       ? 'Base de composição desconhecida'

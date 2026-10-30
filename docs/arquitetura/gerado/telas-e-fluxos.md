@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0c1f080e1dd51b06`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5375107b667e0145`.
 
 ## Atual: referências entre widgets
 
@@ -39,9 +39,10 @@ flowchart LR
     node28["AccountPage"]
     node29["AppShell"]
     node30["AuthGate"]
-    node31["EvaluationGuidePage"]
-    node32["ProductShell"]
-    node33["StartupPage"]
+    node31["ContentSourcesPage"]
+    node32["EvaluationGuidePage"]
+    node33["ProductShell"]
+    node34["StartupPage"]
     node2 -->|"referencia widget"| node0
     node2 -->|"referencia widget"| node1
     node2 -->|"referencia widget"| node4
@@ -76,6 +77,7 @@ flowchart LR
     node20 -->|"referencia widget"| node2
     node20 -->|"referencia widget"| node18
     node20 -->|"referencia widget"| node19
+    node21 -->|"referencia widget"| node31
     node22 -->|"referencia widget"| node2
     node23 -->|"referencia widget"| node2
     node23 -->|"referencia widget"| node20
@@ -88,18 +90,22 @@ flowchart LR
     node28 -->|"referencia widget"| node0
     node28 -->|"referencia widget"| node1
     node28 -->|"referencia widget"| node21
+    node28 -->|"referencia widget"| node31
     node29 -->|"referencia widget"| node7
     node29 -->|"referencia widget"| node22
     node29 -->|"referencia widget"| node23
     node29 -->|"referencia widget"| node27
     node30 -->|"referencia widget"| node2
-    node30 -->|"referencia widget"| node32
     node30 -->|"referencia widget"| node33
+    node30 -->|"referencia widget"| node34
     node31 -->|"referencia widget"| node4
     node31 -->|"referencia widget"| node6
+    node31 -->|"referencia widget"| node16
     node32 -->|"referencia widget"| node4
-    node32 -->|"referencia widget"| node16
-    node32 -->|"referencia widget"| node28
+    node32 -->|"referencia widget"| node6
+    node33 -->|"referencia widget"| node4
+    node33 -->|"referencia widget"| node16
+    node33 -->|"referencia widget"| node28
 ```
 
 | Tela/widget | Localização |
@@ -107,34 +113,35 @@ flowchart LR
 | LanguagePage | [lib/core/l10n/language_page.dart:6](../../../lib/core/l10n/language_page.dart) |
 | AppearancePage | [lib/core/theme/appearance_page.dart:7](../../../lib/core/theme/appearance_page.dart) |
 | AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:16](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:64](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
-| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:14](../../../lib/features/catalog/presentation/catalog_page.dart) |
-| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:9](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
+| CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
+| CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:15](../../../lib/features/catalog/presentation/catalog_page.dart) |
+| FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:10](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:14](../../../lib/features/food_reference/presentation/food_page.dart) |
 | HomePage | [lib/features/home/presentation/pages/home_page.dart:10](../../../lib/features/home/presentation/pages/home_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
-| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:13](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
+| EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:14](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | MealDetailPage | [lib/features/nutrition/presentation/meal_detail_page.dart:16](../../../lib/features/nutrition/presentation/meal_detail_page.dart) |
 | MealDiaryPage | [lib/features/nutrition/presentation/meal_diary_page.dart:16](../../../lib/features/nutrition/presentation/meal_diary_page.dart) |
 | MealDraftPage | [lib/features/nutrition/presentation/meal_draft_page.dart:15](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
 | MealMetadataPage | [lib/features/nutrition/presentation/meal_metadata_page.dart:10](../../../lib/features/nutrition/presentation/meal_metadata_page.dart) |
 | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:38](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:438](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:428](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:19](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | OwnFoodPickerPage | [lib/features/nutrition/presentation/own_food_picker_page.dart:14](../../../lib/features/nutrition/presentation/own_food_picker_page.dart) |
 | AiOnboardingPage | [lib/features/onboarding/presentation/pages/ai_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/ai_onboarding_page.dart) |
 | ManualOnboardingPage | [lib/features/onboarding/presentation/pages/manual_onboarding_page.dart:10](../../../lib/features/onboarding/presentation/pages/manual_onboarding_page.dart) |
 | OnboardingEntryPage | [lib/features/onboarding/presentation/pages/onboarding_entry_page.dart:9](../../../lib/features/onboarding/presentation/pages/onboarding_entry_page.dart) |
-| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:10](../../../lib/features/privacy/presentation/privacy_page.dart) |
+| PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:11](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | ProfilePage | [lib/features/profile/presentation/pages/profile_page.dart:9](../../../lib/features/profile/presentation/pages/profile_page.dart) |
 | StatsPage | [lib/features/stats/presentation/pages/stats_page.dart:10](../../../lib/features/stats/presentation/pages/stats_page.dart) |
 | TrainingConfigurationPage | [lib/features/training_configuration/presentation/training_configuration_page.dart:35](../../../lib/features/training_configuration/presentation/training_configuration_page.dart) |
 | WorkoutDayPage | [lib/features/workouts/presentation/pages/workout_day_page.dart:9](../../../lib/features/workouts/presentation/pages/workout_day_page.dart) |
 | WorkoutPlanPage | [lib/features/workouts/presentation/pages/workout_plan_page.dart:10](../../../lib/features/workouts/presentation/pages/workout_plan_page.dart) |
 | WorkoutsPage | [lib/features/workouts/presentation/pages/workouts_page.dart:11](../../../lib/features/workouts/presentation/pages/workouts_page.dart) |
-| AccountPage | [lib/shared/widgets/account_page.dart:14](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:15](../../../lib/shared/widgets/account_page.dart) |
 | AppShell | [lib/shared/widgets/app_shell.dart:9](../../../lib/shared/widgets/app_shell.dart) |
 | AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
+| ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:9](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | ProductShell | [lib/shared/widgets/product_shell.dart:21](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |

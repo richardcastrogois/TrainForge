@@ -794,7 +794,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get libraryTitle => 'Reference library';
 
   @override
-  String get librarySubtitle => 'MOVEMENT · SOURCE · AVAILABILITY';
+  String get librarySubtitle => 'MOVEMENTS AND PROGRAMS';
 
   @override
   String get metadataOnly =>
@@ -1012,7 +1012,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calculationOnSave =>
-      'The API confirms the calculation when saving. Unknown values do not become zero; different methods and units are not added together.';
+      'Calculated values appear after you confirm consumption.';
 
   @override
   String get originPreparation => 'Source and preparation';
@@ -1028,7 +1028,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get preparationNote =>
-      'Preparation is your note and does not change the source composition. Grams are not converted to milliliters without a verified density.';
+      'Optional note; it does not change nutrition values.';
 
   @override
   String get deviceDateConfirmed => 'Device date and time, confirmed by you.';
@@ -2011,4 +2011,63 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get mealOwnFoodsHint =>
       'Only foods you added appear here. Open the food library to search the reference database.';
+
+  @override
+  String get sourcesSettings => 'Sources and transparency';
+
+  @override
+  String get sourcesSettingsHint =>
+      'Content sources, licenses and calculations';
+
+  @override
+  String get sourcesExplanation =>
+      'Read authors, versions, licenses and original content data.';
+
+  @override
+  String get exerciseDetails => 'About this movement';
+
+  @override
+  String get consultationOnlyShort => 'Reference only';
+
+  @override
+  String get practiceUnavailableShort =>
+      'Instructions for practicing this movement are not available yet.';
+
+  @override
+  String get nutritionFacts => 'Nutrition facts';
+
+  @override
+  String get moreNutrients => 'View all nutrients';
+
+  @override
+  String get multipleNutrientMethods =>
+      'Different methods report different values. See Sources and transparency.';
+
+  @override
+  String get nutrientEnergy => 'Energy';
+
+  @override
+  String get nutrientProtein => 'Protein';
+
+  @override
+  String get nutrientCarbs => 'Carbohydrate';
+
+  @override
+  String get nutrientFat => 'Fat';
+
+  @override
+  String get nutrientFiber => 'Fibre';
+
+  @override
+  String get translationsExplanation =>
+      'Names translated for display. Original names and source data are preserved; this does not approve instructions or workouts.';
+
+  @override
+  String get commonRice => 'White rice';
+
+  @override
+  String get commonBrownRice => 'Brown rice';
+
+  @override
+  String get commonRedBeans => 'Red kidney beans';
 }

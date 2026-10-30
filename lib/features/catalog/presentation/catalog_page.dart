@@ -10,11 +10,18 @@ import 'package:trainforge/composition/app_dependency_scope.dart';
 import '../domain/catalog_entry.dart';
 import 'catalog_controller.dart';
 import 'catalog_detail_page.dart';
+import 'catalog_labels.dart';
 
 class CatalogPage extends StatefulWidget {
   final CatalogController? controller;
   final CatalogFilters? initialFilters;
-  const CatalogPage({super.key, this.controller, this.initialFilters});
+  final bool evidenceMode;
+  const CatalogPage({
+    super.key,
+    this.controller,
+    this.initialFilters,
+    this.evidenceMode = false,
+  });
   @override
   State<CatalogPage> createState() => _CatalogPageState();
 }
@@ -82,6 +89,7 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                   itemHeight: null,
                   isExpanded: true,
                   decoration: InputDecoration(
+                    counterText: '',
                     labelText: title,
                     helperText: hint,
                     helperMaxLines: 3,
@@ -185,14 +193,15 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
           title: context.l10n.libraryTitle,
           subtitle: context.l10n.librarySubtitle,
         ),
-        Text(context.l10n.metadataOnly),
+        if (widget.evidenceMode) Text(context.l10n.metadataOnly),
         const SizedBox(height: 12),
         TextField(
           controller: search,
           maxLength: 100,
           textInputAction: TextInputAction.search,
           decoration: InputDecoration(
-            labelText: context.l10n.searchOriginal,
+            counterText: '',
+            labelText: context.l10n.search,
             prefixIcon: const Icon(Icons.search),
             suffixIcon: IconButton(
               tooltip: context.l10n.search,
@@ -330,19 +339,21 @@ class _CatalogPageState extends State<CatalogPage> with WidgetsBindingObserver {
                       }
                       final item = controller.items[index];
                       return FlowRecord(
-                        title: item.title ?? context.l10n.titleNotProvided,
-                        subtitle:
-                            '${item.kind == 'movement'
-                                ? context.l10n.movement
-                                : item.kind == 'collection'
-                                ? context.l10n.collection
-                                : context.l10n.program} · ${item.sourceName} · ${item.locale ?? context.l10n.languageNotProvided}\n${context.l10n.credits}: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? context.l10n.licenseNotProvided}\n${context.l10n.sourceInDetail}',
+                        title: localizedCatalogTitle(context, item),
+                        subtitle: widget.evidenceMode
+                            ? '${item.kind == 'movement'
+                                  ? context.l10n.movement
+                                  : item.kind == 'collection'
+                                  ? context.l10n.collection
+                                  : context.l10n.program} · ${item.sourceName} · ${item.locale ?? context.l10n.languageNotProvided}\n${context.l10n.credits}: ${(item.nameCreators.isNotEmpty ? item.nameCreators : item.creators).join(', ')}\n${item.licenseLabel ?? context.l10n.licenseNotProvided}\n${context.l10n.sourceInDetail}'
+                            : context.l10n.consultationOnlyShort,
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute<void>(
                             builder: (_) => CatalogDetailPage(
                               entry: item,
                               repository: controller.repository,
+                              evidenceMode: widget.evidenceMode,
                             ),
                           ),
                         ),

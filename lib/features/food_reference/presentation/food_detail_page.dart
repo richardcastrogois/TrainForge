@@ -1,4 +1,5 @@
 import 'food_labels.dart';
+import '../../nutrition/presentation/nutrition_facts.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import 'package:trainforge/shared/widgets/flow_components.dart';
@@ -10,11 +11,13 @@ class FoodDetailPage extends StatefulWidget {
   final FoodReference food;
   final FoodRepository repository;
   final bool selectForConsumption;
+  final bool evidenceMode;
   const FoodDetailPage({
     super.key,
     required this.food,
     required this.repository,
     this.selectForConsumption = false,
+    this.evidenceMode = false,
   });
   @override
   State<FoodDetailPage> createState() => _FoodDetailPageState();
@@ -95,6 +98,34 @@ class _FoodDetailPageState extends State<FoodDetailPage>
             );
           }
           final data = snapshot.data!, food = data.food, source = food.source;
+          if (!widget.evidenceMode) {
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              children: [
+                FigmaPageHeading(
+                  title: food.localizedName(context),
+                  subtitle: food.localizedBasis(context),
+                ),
+                if (widget.selectForConsumption) ...[
+                  FilledButton(
+                    onPressed: () => Navigator.pop(context, food),
+                    child: Text(context.l10n.useFoodVersion),
+                  ),
+                  const SizedBox(height: 12),
+                ],
+                NutritionFacts(
+                  values: [
+                    for (final n in data.nutrients)
+                      (
+                        name: n.displayName,
+                        value: n.localizedMagnitude(context),
+                        unit: n.unit ?? '',
+                      ),
+                  ],
+                ),
+              ],
+            );
+          }
           final reviewed = food.reviewedName;
           final usesReviewed =
               reviewed != null && reviewed.locale == foodContentLocale(context);
@@ -115,6 +146,13 @@ class _FoodDetailPageState extends State<FoodDetailPage>
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
 
+                    if (!usesReviewed &&
+                        food.localizedName(context) != food.displayName) ...[
+                      Text(context.l10n.translationsExplanation),
+                      Text(
+                        '${context.l10n.originalFoodName}: ${food.displayName}',
+                      ),
+                    ],
                     if (usesReviewed) ...[
                       const SizedBox(height: 8),
                       Text(context.l10n.reviewedFoodName),

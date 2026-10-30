@@ -132,3 +132,8 @@ Usar a raiz do corpus/grafo correto. Não enviar todo graph.json como contexto. 
 O [mapa versionado do repositório](arquitetura/README.md) conecta HTTP, telas, schema de referência e backlog em Markdown/Mermaid. Não exige serviço para leitura; a [CI documental](arquitetura/documentacao-dinamica.md) gera/verifica seus derivados. Graphify permanece um mapa estrutural separado. Intenção Go, direitos, aceite e execução real não são inferidos por nenhum dos dois. Código novo em tools/ não foi acrescentado ao corpus Flutter `lib/`; ampliar cobertura deve ser decisão explícita.
 
 Histórico anterior em [arquivo](arquivo/2026-10-21/docs/graphify.md).
+
+
+## Atualização29/10 — clareza, fontes e idioma
+
+121Dart/4370nós/5129arestas. Primeira passagem24alterados/97inalterados; complementos pontuais de privacidade e nutrientes,0removidos. ASTincremental/HTML, semLLM/semântica/clusterização; cincoARBnão interpretados. Backups em.local/graphify-backup-20261029-clean-content; não publicar as cópias datadas. Go/SQL permanecem nos mapas/Swagger. Verexecucao/v1/frontend-content-cleanup-verification.json.

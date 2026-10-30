@@ -423,7 +423,11 @@ void main() {
               ).copyWith(textScaler: TextScaler.linear(2)),
               child: child!,
             ),
-            home: EntryDetailPage(entry: consumed(tag), repository: repo),
+            home: EntryDetailPage(
+              evidenceMode: true,
+              entry: consumed(tag),
+              repository: repo,
+            ),
           ),
         );
         await t.pumpAndSettle();

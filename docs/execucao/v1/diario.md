@@ -626,3 +626,18 @@ CI no commit6894858 aprovou os oito workflows. Segredos40888675534/job1234993033
 Outros clones precisam reconciliar ou clonar novamente antes de push. Caches/objetos inacessíveis do GitHub e cópias externas não foram certificados como apagados; nenhum token foi reproduzido, rotacionado ou enviado ao fornecedor. E-mails e falhas anteriores continuam como histórico. Próxima história funcional015 mantém o gate de conteúdo aprovado, sem inventar programas, instruções, doses ou mídia.
 
 Fechamento documental: geração reproduzível e14testes de documentação passaram; diff sem erros. Alterações restritas aos recibos/instruções/backlog e derivados, sem novo código de aplicativo, contrato, migração ou APK.
+
+
+## 29/10/2026 — clareza das jornadas, nomes e busca cotidiana
+
+Autor pediu comparar Figma, limpar metadados da navegação, centralizar comprovação, localizar nomes e melhorar arroz/feijão; commit antes de retomar o plano. Git inicialabf6876 limpo. Quatro contextosFigma voltaram a responder com screenshots, sem compra/contorno de cota; original/imagens de exemplo não viraram dados.
+
+Criado Fontes e transparência noPerfil e acesso público porPrivacidade. Modo de comprovação conserva original/autoria/licença/versão/cálculo; jornada normal mostra somente identificação, uso permitido, quantidade, horário e nutrientes relevantes. Células/IDs/frações saíram do fluxo principal. Registros privados mantêm guardas do titular e corpos/chaves originais; nenhuma alteração de migrations.
+
+Traduções de apresentação73movimentos/31alimentos ligadas aID/versão/nome original. Não houve publicação de nomes humanos revisados no banco ou aprovação clínica. Busca emlocale tem vocabulário fixo/parametrizado e atalhos cotidianos, sem substituir variedade/preparo. Casos de prefixo evitamchorizo/semarroz para os aliases; consultas públicas reais positivas. APIs34operações preservadas,Go0.9.1 eSwaggerderivado.
+
+257testesFlutter passaram, análise0issues,Go test/vet eSwaggerpassaram; SQLnovo preparado emsuíteCI descartável, semcredenciais deavaliação. Primeira verificação nativa capturou frame antes da transição terminar; alvo foi relido/confirmado com screenshot e espera de frame antes de continuar. Androidvalidou biblioteca/detalhe emportuguês e limpos, fontes comoriginal/autoria, busca ecomposiçãoalimentar. Nenhumconsumo/treino confirmado/editado/excluído, nenhumGoogle automatizado. APK0.4.4+26 comassinatura/hash/fingerprint conferidos. Recibo frontend-content-cleanup-verification.json; capturas/XML privados ficam em.local.
+
+Graphify121/4370/5129,AST/HTMLsemLLM, backups ignorados.022/025doing; demais jornadas não encerradas.031hosting e compras continuam semautorização. Próxima015mantém gate deconteúdo; retomar trabalho independente conforme dependências. Demais nomes alimentares, aceites/usabilidade completa, foto/offline/release/iOS seguem abertos.
+
+Fechamento local: hash do APK instalado corresponde ao artefato final. Scanner já verificado analisou somente66arquivos propostos:27ocorrências não secretas por contexto/hash comprovado,0bloqueadoras, sem valores brutos publicados. Isso não substitui o gate de histórico no CI. Documentação reproduzível e14testes passaram.

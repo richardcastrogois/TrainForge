@@ -331,6 +331,7 @@ void main() {
                       context,
                       MaterialPageRoute(
                         builder: (_) => FoodDetailPage(
+                          evidenceMode: true,
                           food: FoodReference.fromJson(
                             reviewedFixture(locale.toLanguageTag()),
                           ),

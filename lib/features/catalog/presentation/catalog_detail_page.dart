@@ -6,6 +6,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../domain/catalog_entry.dart';
+import 'catalog_labels.dart';
 
 Uri? safeCatalogLink(String value) {
   final uri = Uri.tryParse(value);
@@ -64,10 +65,12 @@ class CatalogSourceLink extends StatelessWidget {
 class CatalogDetailPage extends StatefulWidget {
   final CatalogEntry entry;
   final CatalogRepository repository;
+  final bool evidenceMode;
   const CatalogDetailPage({
     super.key,
     required this.entry,
     required this.repository,
+    this.evidenceMode = false,
   });
   @override
   State<CatalogDetailPage> createState() => _CatalogDetailPageState();
@@ -144,6 +147,51 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
             );
           }
           final item = snapshot.data!;
+          if (!widget.evidenceMode) {
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              children: [
+                FigmaPageHeading(
+                  title: localizedCatalogTitle(context, item),
+                  subtitle: context.l10n.exerciseDetails,
+                ),
+                FigmaSection(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        context.l10n.consultationOnlyShort,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      const SizedBox(height: 8),
+                      Text(context.l10n.practiceUnavailableShort),
+                    ],
+                  ),
+                ),
+                if (item.equipment.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  FigmaSection(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          context.l10n.equipment,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          item.equipment
+                              .map((v) => localizedCatalogTerm(context, v))
+                              .join(', '),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ],
+            );
+          }
+
           Widget section(String title, Widget content) => Padding(
             padding: const EdgeInsets.only(bottom: 24),
             child: FigmaSection(
@@ -189,6 +237,7 @@ class _CatalogDetailPageState extends State<CatalogDetailPage>
               Text(context.l10n.noPracticeContent),
               const SizedBox(height: 12),
               Text(context.l10n.contentOriginal),
+              Text(context.l10n.translationsExplanation),
               const SizedBox(height: 24),
               section(
                 context.l10n.authorship,

@@ -78,6 +78,7 @@ void main() {
                   context,
                   MaterialPageRoute(
                     builder: (_) => FoodDetailPage(
+                      evidenceMode: true,
                       food: food,
                       repository: FixtureFoods(),
                       selectForConsumption: true,
@@ -197,6 +198,7 @@ void main() {
                   openActivity: () {},
                 )
               : FoodDetailPage(
+                  evidenceMode: true,
                   food: FoodReference.fromJson(fixtureFood('locale-fixture')),
                   repository: FixtureFoods(),
                 );

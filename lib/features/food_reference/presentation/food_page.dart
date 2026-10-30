@@ -14,10 +14,12 @@ import 'food_detail_page.dart';
 class FoodPage extends StatefulWidget {
   final FoodController? controller;
   final bool selectForConsumption;
+  final bool evidenceMode;
   const FoodPage({
     super.key,
     this.controller,
     this.selectForConsumption = false,
+    this.evidenceMode = false,
   });
   @override
   State<FoodPage> createState() => _FoodPageState();
@@ -75,6 +77,7 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
           food: food,
           repository: controller.repository,
           selectForConsumption: widget.selectForConsumption,
+          evidenceMode: widget.evidenceMode,
         ),
       ),
     );
@@ -114,11 +117,14 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                         textInputAction: TextInputAction.search,
                         maxLength: 100,
                         decoration: InputDecoration(
+                          counterText: '',
                           labelText: controller.localizedNames
                               ? context.l10n.searchFoodNames
                               : context.l10n.searchOriginal,
                           hintText: context.l10n.foodPreparation,
-                          helperText: controller.localizedNames
+                          helperText: !widget.evidenceMode
+                              ? null
+                              : controller.localizedNames
                               ? context.l10n.reviewedNamesHint
                               : context.l10n.originalNamesHint,
                           helperMaxLines: 3,
@@ -136,12 +142,34 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                           );
                         },
                       ),
+                      if (!widget.evidenceMode)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 4,
+                            children: [
+                              for (final choice in [
+                                context.l10n.commonRice,
+                                context.l10n.commonBrownRice,
+                                context.l10n.commonRedBeans,
+                              ])
+                                ActionChip(
+                                  label: Text(choice),
+                                  onPressed: () {
+                                    search.text = choice;
+                                    submit(choice);
+                                  },
+                                ),
+                            ],
+                          ),
+                        ),
                       if (controller.catalogChanged)
                         Semantics(
                           liveRegion: true,
                           child: Text(context.l10n.nameCatalogChanged),
                         ),
-                      if (facets != null) ...[
+                      if (widget.evidenceMode && facets != null) ...[
                         SizedBox(height: 12),
                         Text(
                           context.l10n.foodCoverage(
@@ -168,15 +196,16 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                         ),
                       ],
                       SizedBox(height: 12),
-                      Text(
-                        context.l10n.originalFoodNotice,
-                        style: TextStyle(
-                          fontSize: 12,
-                          height: 1.35,
-                          color: context.tf.muted,
+                      if (widget.evidenceMode)
+                        Text(
+                          context.l10n.originalFoodNotice,
+                          style: TextStyle(
+                            fontSize: 12,
+                            height: 1.35,
+                            color: context.tf.muted,
+                          ),
                         ),
-                      ),
-                      if (!widget.selectForConsumption)
+                      if (widget.evidenceMode && !widget.selectForConsumption)
                         Padding(
                           padding: EdgeInsets.only(top: 8),
                           child: Text(
@@ -264,7 +293,9 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                                   ),
                                   SizedBox(height: 4),
                                   Text(
-                                    '${food.source.name} · ${food.localizedLanguage(context)}\n${food.localizedBasis(context)}\n${food.source.license} · ${food.sourceVersion}',
+                                    widget.evidenceMode
+                                        ? '${food.source.name} · ${food.localizedLanguage(context)}\n${food.localizedBasis(context)}\n${food.source.license} · ${food.sourceVersion}'
+                                        : food.localizedBasis(context),
                                     style: TextStyle(
                                       fontSize: 12,
                                       height: 1.35,

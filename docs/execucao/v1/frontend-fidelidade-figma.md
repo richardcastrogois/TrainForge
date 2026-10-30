@@ -130,3 +130,12 @@ Erro registrado em get_design_context:limiteStarter para104:1260. Também faltam
 Próxima implementação segue os blocos/dependências da trilha, depois das decisões que alteram o produto. Melhorias conhecidas incluem validação de nutrientes duplicados, mensagens humanas, durabilidade de envio e localização. Não reativar geradoresFastify/Gemini como fallback. V1-021 encerrada no recorte de fundação;022/025 continuam abertas e048 é a próxima pelas dependências.
 
 Idosos, cuidadores, casa, praça e academia permanecem na cobertura. Sem novaAPI/migration/conteúdo, deploy, compra ou hospedagem por esta consolidação. Aparência não comprova milhões simultâneos.
+
+
+## 29/10 — interface limpa e comprovação isolada
+
+Pedido posterior do autor prevalece sobre a antiga apresentação de origem/licença dentro de cada etapa. Figma voltou a responder:104:1260(registro manual),104:560(exercício),104:1211(busca alimentar),25:2152(perfil), com screenshots/contexto. Os quadros mostram hierarquia curta e cartões de nome/quantidade/ação; dados demonstrativos não foram copiados. AssetsTF/back/ícones locais e tokens existentes foram reutilizados.
+
+Movimentos e alimentos mostram nome, disponibilidade real e composição útil; confirmação mantém quantidade/unidade/medida ou estimativa/preparo/horário. Fontes, autores, licença, nome original, IDs, versões, cálculo e células originais ficam em Perfil > Fontes e transparência. A entrada por Privacidade oferece somente as fontes públicas sem login. Isso não remove limites de uso, direitos, revisão ou autorização privada.
+
+Nomes de apresentação73/31 vinculados à versão/original, sem alterar conteúdo nutricional ou aprovar prática. Restante da base6369permanece parcialmente sem tradução; não declarar cobertura completa, preparo brasileiro ou feijão-carioca presente. [Recibo único](frontend-content-cleanup-verification.json). APK0.4.4+26;257testes/análise0 e leitura nativa de jornadas públicas passaram. Acesso ao Figma nesta data não confirma cota ilimitada futura.

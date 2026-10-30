@@ -252,3 +252,8 @@ A resposta confirma abrangência, não disponibilidade de pessoas idosas/cuidado
 ### Execução após os blocos
 
 Q1–Q6 têm suas decisões registradas, com identidade/provisionamento master e organização humana de ensaios ainda pendentes no momento apropriado. Seguir implementação pelas dependências, começando pela021 e pelas capacidades prontas, sem outra rodada genérica de perguntas. Não declarar segurança, papel master, tradução, conteúdo ou capacidade de milhões comprovados por documentação.
+
+
+## 29/10 — clareza das jornadas e idioma
+
+Autor pediu separar comprovação da interação cotidiana: fontes/autoria/licenças/versões/cálculos em área própria de configurações; jornadas mostram apenas informações úteis para entender e confirmar a ação. Avisos materiais de indisponibilidade ou segurança continuam no ponto de uso. Nomes de apresentação seguem o idioma escolhido/padrão do aparelho; original e identidade da fonte permanecem acessíveis. Adaptação de texto de interface não concede aprovação profissional, licença de mídia ou permissão para prática e não publica traduções como revisão humana sem evidência. Cobertura incompleta fica explícita no recibo frontend-content-cleanup-verification.json.

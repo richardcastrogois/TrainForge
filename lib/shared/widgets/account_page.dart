@@ -2,6 +2,7 @@ import 'package:trainforge/core/l10n/feedback_localization.dart';
 import 'package:trainforge/core/l10n/language_page.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
+import 'content_sources_page.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
@@ -188,6 +189,19 @@ class AccountPage extends StatelessWidget {
                           onTap: () => privacy(context),
                         ),
                         SizedBox(height: 12),
+                        FigmaActionCard(
+                          title: context.l10n.sourcesSettings,
+                          subtitle: context.l10n.sourcesSettingsHint,
+                          asset: 'plan',
+                          onTap: () => Navigator.push<void>(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  ContentSourcesPage(controller: controller),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
                         FigmaActionCard(
                           title: context.l10n.helpEvaluation,
                           subtitle: context.l10n.helpHint,

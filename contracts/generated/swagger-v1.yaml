@@ -961,7 +961,7 @@ info:
     food declarations, explicitly recorded consumption and atomic meal grouping. Meal
     routes require schema13. No executable training content or prescribed diets.
   title: TrainForge API
-  version: 0.9.0
+  version: 0.9.1
 paths:
   /api/v1/auth/google:
     post:
@@ -1343,9 +1343,12 @@ paths:
       - catalog
   /api/v1/foods:
     get:
+      description: Locale-aware search also recognizes bounded everyday-food discovery
+        terms. It preserves source identity, preparation, reviewed names and composition.
       parameters:
-      - description: Literal name substring with collapsed whitespace; reviewed names/aliases
-          require locale; maximum 100 UTF-8 bytes
+      - description: Literal name substring plus bounded everyday-food discovery terms
+          when locale is supplied; reviewed names/aliases require locale; maximum
+          100 UTF-8 bytes
         in: query
         name: q
         type: string

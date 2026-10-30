@@ -5,6 +5,7 @@ import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_messages.dart';
+import 'nutrition_facts.dart';
 import 'nutrition_feedback.dart';
 import 'nutrition_forms.dart';
 import 'entry_read_controller.dart';
@@ -13,10 +14,12 @@ import '../../food_reference/presentation/food_labels.dart';
 class EntryDetailPage extends StatefulWidget {
   final Json entry;
   final NutritionRepository repository;
+  final bool evidenceMode;
   const EntryDetailPage({
     super.key,
     required this.entry,
     required this.repository,
+    this.evidenceMode = false,
   });
   @override
   State<EntryDetailPage> createState() => _EntryDetailPageState();
@@ -124,6 +127,93 @@ class _EntryDetailPageState extends State<EntryDetailPage>
     final c = object(entry['calculation']),
         food = object(c['food']),
         source = object(food['source']);
+    if (!widget.evidenceMode) {
+      return PopScope(
+        canPop: !busy,
+        child: FigmaRouteFrame(
+          body: ListView(
+            padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+            children: [
+              FigmaPageHeading(
+                title: reader.name(foodContentLocale(context)),
+                subtitle: context.l10n.intakeConfirmed,
+              ),
+              FigmaSection(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      '${context.displayDecimal(entry['quantity'] as String)} ${entry['unit']}',
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                    Text(
+                      c['quantityEvidence'] == 'measured'
+                          ? context.l10n.quantityMeasured
+                          : context.l10n.quantityEstimated,
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      context.displayTimestamp(entry['occurredAt'] as String),
+                    ),
+                    if ((c['preparation'] as String).isNotEmpty)
+                      Text(c['preparation'] as String),
+                  ],
+                ),
+              ),
+              if (reader.loading) Text(context.l10n.loading),
+              if (reader.error != null)
+                FlowStatus(
+                  title: context.l10n.requestUnconfirmed,
+                  message: localizedNutritionFeedback(context, reader.error!),
+                  actionLabel: context.l10n.retry,
+                  onAction: () => reader.load(foodContentLocale(context)),
+                ),
+              if (error != null)
+                FlowStatus(
+                  title: context.l10n.requestUnconfirmed,
+                  message: localizedNutritionFeedback(context, error!),
+                ),
+              const SizedBox(height: 12),
+              OutlinedButton(
+                onPressed:
+                    busy ||
+                        reader.loading ||
+                        (reader.localized && reader.error != null)
+                    ? null
+                    : edit,
+                child: Text(context.l10n.correctIntakeAction),
+              ),
+              OutlinedButton(
+                onPressed:
+                    busy ||
+                        reader.loading ||
+                        (reader.localized && reader.error != null)
+                    ? null
+                    : remove,
+                child: Text(
+                  busy
+                      ? context.l10n.confirming
+                      : context.l10n.deleteThisIntake,
+                ),
+              ),
+              const SizedBox(height: 12),
+              NutritionFacts(
+                values: [
+                  for (final n in objects(c['nutrients']))
+                    (
+                      name: displayLabel(n['nameOriginal']),
+                      value: n['value'] is String
+                          ? context.displayDecimal(n['value'] as String)
+                          : context.l10n.unknownValue,
+                      unit: n['unit'] as String? ?? '',
+                    ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      );
+    }
     final reviewed = reader.display?.name;
     final usesReviewed =
         reviewed != null && reviewed.locale == foodContentLocale(context);

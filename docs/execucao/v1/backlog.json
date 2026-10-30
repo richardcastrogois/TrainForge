@@ -2176,7 +2176,7 @@
           "id": "V1-022",
           "title": "Implementar entrada e biblioteca com conteúdo real",
           "userStory": "Como iniciante, quero escolher uma opção humana e entender por que ela está disponível.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -2238,14 +2238,15 @@
             "Telas library/detail/enrollment",
             "Mapa de fluxo atualizado"
           ],
-          "handoff": "24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra.",
+          "handoff": "24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
             "docs/execucao/v1/frontend-stage01-verification.json",
-            "docs/execucao/v1/frontend-stage07-12-verification.json"
+            "docs/execucao/v1/frontend-stage07-12-verification.json",
+            "docs/execucao/v1/frontend-content-cleanup-verification.json"
           ]
         },
         {
@@ -2377,7 +2378,7 @@
           "id": "V1-025",
           "title": "Implementar busca, cadastro próprio e registro alimentar no Flutter",
           "userStory": "Como usuário, quero consumir o lote alimentar real em uma refeição registrada por mim.",
-          "status": "todo",
+          "status": "doing",
           "release": "V1",
           "size": "L",
           "requirements": [
@@ -2439,7 +2440,7 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue.",
+          "handoff": "24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
           "completionEvidence": [],
           "workEvidence": [
             "docs/execucao/v1/frontend-fidelidade-figma.md",
@@ -2449,7 +2450,8 @@
             "docs/execucao/v1/frontend-dark-scroll-verification.json",
             "docs/execucao/v1/frontend-stage07-12-verification.json",
             "docs/execucao/v1/auditoria-produto-2026-10-24.md",
-            "docs/execucao/v1/auditoria-produto-verificacao.json"
+            "docs/execucao/v1/auditoria-produto-verificacao.json",
+            "docs/execucao/v1/frontend-content-cleanup-verification.json"
           ]
         },
         {
@@ -2619,7 +2621,7 @@
             "Busca/apresentação com original/fonte e fallback",
             "Recibo de cobertura, integridade e aceite"
           ],
-          "handoff": "27/10:encerrada no escopo da UI disponível e capacidade de nomes revisados.495 mensagens/idioma,197 testes Flutter/analyze0,Go test/vet e SQL/HTTP descartáveis. API0.6.2/26operações; histórico/detalhe/correção usam foodDisplay fora de calculation, lote e cursor/revisão/ownership; mutações inalteradas. APK0.3.8+21 instalado/hash/assinatura conferidos; leitura realEN/PT-BR e restauração tardia de preferência após timeout confirmadas, mesma sessão sem novoGoogle/escrita alimentar. Cobertura editorial real0/6369 poridioma, fallback original; publicação real continua exigindo evidência humana/direitos. iOS nativo não executado noWindows; futuros fluxos localizam conforme forem implementados. Próxima047 pelas dependências.",
+          "handoff": "27/10:encerrada no escopo da UI disponível e capacidade de nomes revisados.495 mensagens/idioma,197 testes Flutter/analyze0,Go test/vet e SQL/HTTP descartáveis. API0.6.2/26operações; histórico/detalhe/correção usam foodDisplay fora de calculation, lote e cursor/revisão/ownership; mutações inalteradas. APK0.3.8+21 instalado/hash/assinatura conferidos; leitura realEN/PT-BR e restauração tardia de preferência após timeout confirmadas, mesma sessão sem novoGoogle/escrita alimentar. Cobertura editorial real0/6369 poridioma, fallback original; publicação real continua exigindo evidência humana/direitos. iOS nativo não executado noWindows; futuros fluxos localizam conforme forem implementados. Próxima047 pelas dependências. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
           "completionEvidence": [
             "docs/execucao/v1/localization-048-fechamento.json",
             "docs/execucao/v1/food-names-consumption-verification.json"
@@ -2642,7 +2644,8 @@
             "docs/execucao/v1/food-names-operations-verification.json",
             "docs/execucao/v1/frontend-localization-native-verification.json",
             "docs/execucao/v1/food-names-consumption-verification.json",
-            "docs/execucao/v1/localization-048-fechamento.json"
+            "docs/execucao/v1/localization-048-fechamento.json",
+            "docs/execucao/v1/frontend-content-cleanup-verification.json"
           ]
         },
         {
@@ -3685,5 +3688,5 @@
       ]
     }
   ],
-  "currentPriority": "29/10: trabalho retomado.015/016 sem conteúdo humano aprovado para prática;045 com aceite real/correção/exclusão/foto pendentes. Autor pediu reavaliar microserviços Go antes da decisão; não executar decomposição ampla por inferência. CI SQL migrations/refeições/privacidade aprovado em689f64b; prontidão0.8.1 aprovada por SQL em9124a85.028doing com scanner Go em preparação. Avançar trabalho independente com critérios explícitos, preservando APK25 e dados."
+  "currentPriority": "29/10: ajuste visual solicitado pelo autor validado localmente no APK0.4.4+26 e API0.9.1. Bibliotecas e consumo sem metadados técnicos; comprovação isolada e fontes originais preservadas.022/025doing,048mantém fechamento anterior no recorte. Próxima funcional015; zero programas/instruções/doses/mídia aprovados para prática. Continuar trabalho independente028/029/qualidade quando o gate editorial bloquear015, sem inventar treino ou contratar API/hospedagem."
 }

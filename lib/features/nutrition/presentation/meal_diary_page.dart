@@ -14,6 +14,7 @@ import 'nutrition_feedback.dart';
 import 'nutrition_totals_card.dart';
 
 class MealDiaryPage extends StatefulWidget {
+  final bool evidenceMode;
   final MealRepository repository;
   final NutritionRepository nutrition;
   final String accountId;
@@ -28,6 +29,7 @@ class MealDiaryPage extends StatefulWidget {
     required this.currentAccountId,
     required this.sessionChanges,
     required this.initialDate,
+    this.evidenceMode = false,
   });
   @override
   State<MealDiaryPage> createState() => _MealDiaryPageState();
@@ -143,8 +145,11 @@ class _MealDiaryPageState extends State<MealDiaryPage>
     await Navigator.push<void>(
       context,
       MaterialPageRoute(
-        builder: (_) =>
-            EntryDetailPage(entry: value, repository: widget.nutrition),
+        builder: (_) => EntryDetailPage(
+          entry: value,
+          repository: widget.nutrition,
+          evidenceMode: widget.evidenceMode,
+        ),
       ),
     );
     if (mounted && controller.active) await controller.load();
@@ -155,6 +160,7 @@ class _MealDiaryPageState extends State<MealDiaryPage>
       context,
       MaterialPageRoute(
         builder: (_) => MealDetailPage(
+          evidenceMode: widget.evidenceMode,
           id: id,
           repository: widget.repository,
           nutrition: widget.nutrition,

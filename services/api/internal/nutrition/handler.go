@@ -54,10 +54,11 @@ func foodJSON(w http.ResponseWriter, r *http.Request, v any) {
 }
 
 // List searches original names and reviewed locale names/aliases when requested. Stable food-ID order.
+// @Description Locale-aware search also recognizes bounded everyday-food discovery terms. It preserves source identity, preparation, reviewed names and composition.
 // @Summary Search reviewed food references
 // @Tags nutrition
 // @Produce json
-// @Param q query string false "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes"
+// @Param q query string false "Literal name substring plus bounded everyday-food discovery terms when locale is supplied; reviewed names/aliases require locale; maximum 100 UTF-8 bytes"
 // @Param locale query string false "Optional reviewed-name locale; original fallback. Requires name catalog migrations." Enums(pt-BR,pt-PT,en,es)
 // @Param namesVersion query string false "Optional locale revision from nameCatalog; changed revision returns409. Cursor retains it automatically."
 // @Param sourceId query string false "Exact reviewed source ID"

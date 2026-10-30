@@ -97,9 +97,10 @@ func (p FoodPostgres) LocalizedList(ctx context.Context, f FoodFilters) ([]FoodS
 	defer tx.Rollback(ctx)
 	rows, err := tx.Query(ctx, foodLatest+`SELECT `+foodProjection+`,`+activeNamePayload+`,`+activeNameVersion+` FROM latest v `+localizedNameJoin+` WHERE `+foodVisible+`
  AND ($1='' OR position(lower($1) in lower(regexp_replace(v.name_original,U&'[\0009-\000D\0020\0085\00A0\1680\2000-\200A\2028\2029\202F\205F\3000]+',' ','g')))>0
- OR (n.version_sha IS NOT NULL AND nw.version_sha IS NULL AND (position(lower($1) in lower(n.name))>0 OR EXISTS(SELECT 1 FROM unnest(n.aliases) alias WHERE position(lower($1) in lower(alias))>0))))
+ OR (n.version_sha IS NOT NULL AND nw.version_sha IS NULL AND (position(lower($1) in lower(n.name))>0 OR EXISTS(SELECT 1 FROM unnest(n.aliases) alias WHERE position(lower($1) in lower(alias))>0)))
+ OR EXISTS(SELECT 1 FROM unnest($6::text[]) term WHERE lower(v.name_original) ~ ('^[[:space:]]*'||term||'([^[:alpha:]]|$)')))
  AND ($2='' OR v.source_id=$2) AND ($4='' OR v.food_id COLLATE "C">$4 COLLATE "C")
- ORDER BY v.food_id COLLATE "C" LIMIT $5`, f.Q, f.Source, f.Locale, f.After, f.Limit+1)
+ ORDER BY v.food_id COLLATE "C" LIMIT $5`, f.Q, f.Source, f.Locale, f.After, f.Limit+1, foodSearchTerms(f.Q, f.Locale))
 	if err != nil {
 		return nil, catalog, ErrFoodUnavailable
 	}

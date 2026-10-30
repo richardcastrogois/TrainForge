@@ -52,7 +52,6 @@ class NutritionTotalsCard extends StatelessWidget {
                     n['unknownEntries'] as int,
                   ),
                 ),
-                Text('${context.l10n.column}: ${n['sourceColumnKey']}'),
                 const Divider(),
               ],
             ),

@@ -196,6 +196,7 @@ void main() {
         home: FoodDetailPage(
           food: FoodReference.fromJson(fixtureFood('first')),
           repository: FixtureFoods(),
+          evidenceMode: true,
         ),
       ),
     );

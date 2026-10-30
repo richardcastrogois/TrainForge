@@ -1,3 +1,4 @@
+import '../domain/catalog_names.dart';
 import 'package:dio/dio.dart';
 import 'package:trainforge/core/http/app_dio.dart';
 import '../domain/catalog_entry.dart';
@@ -10,7 +11,7 @@ class GoCatalogRepository implements CatalogRepository {
   Future<CatalogPageData> list(CatalogFilters filters, {String? cursor}) async {
     final query = <String, dynamic>{'mode': 'consultation', 'limit': 20};
     for (final entry in {
-      'q': filters.q,
+      'q': catalogSearchTerm(filters.q),
       'environment': filters.environment,
       'population': filters.population,
       'equipment': filters.equipment,

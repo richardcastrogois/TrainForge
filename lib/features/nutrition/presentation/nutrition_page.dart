@@ -17,6 +17,7 @@ import 'nutrition_forms.dart';
 import 'entry_detail_page.dart';
 
 class NutritionPage extends StatefulWidget {
+  final bool evidenceMode;
   final String accountId;
   final String? Function() currentAccountId;
   final Listenable sessionChanges;
@@ -29,6 +30,7 @@ class NutritionPage extends StatefulWidget {
     required this.sessionChanges,
     this.repository,
     this.initialDate,
+    this.evidenceMode = false,
   });
   @override
   State<NutritionPage> createState() => _NutritionPageState();
@@ -122,7 +124,11 @@ class _NutritionPageState extends State<NutritionPage>
     await Navigator.push<void>(
       context,
       MaterialPageRoute(
-        builder: (_) => EntryDetailPage(entry: entry, repository: repository),
+        builder: (_) => EntryDetailPage(
+          entry: entry,
+          repository: repository,
+          evidenceMode: widget.evidenceMode,
+        ),
       ),
     );
     if (active) await controller.load();
@@ -145,6 +151,7 @@ class _NutritionPageState extends State<NutritionPage>
       context,
       MaterialPageRoute(
         builder: (_) => MealDiaryPage(
+          evidenceMode: widget.evidenceMode,
           repository: source as MealRepository,
           nutrition: repository,
           accountId: widget.accountId,

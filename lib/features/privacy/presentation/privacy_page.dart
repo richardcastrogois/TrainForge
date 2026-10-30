@@ -1,3 +1,4 @@
+import 'package:trainforge/shared/widgets/content_sources_page.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'privacy_feedback.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
@@ -66,6 +67,16 @@ class _PrivacyPageState extends State<PrivacyPage> {
                 FigmaPageHeading(
                   title: context.l10n.privacy,
                   subtitle: context.l10n.privacyUpper,
+                ),
+                TextButton.icon(
+                  onPressed: () => Navigator.push<void>(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const ContentSourcesPage(),
+                    ),
+                  ),
+                  icon: const Icon(Icons.info_outline),
+                  label: Text(context.l10n.sourcesSettings),
                 ),
                 if (controller.busy)
                   AppProgress(label: context.l10n.processingData),

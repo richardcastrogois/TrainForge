@@ -1,6 +1,6 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0c1f080e1dd51b06`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `5375107b667e0145`.
 
 ## Chamadas Flutter: comparação com a referência Fastify
 
@@ -12,9 +12,9 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /api/v1/me` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
 | `POST /api/v1/auth/logout` | publicAuth, refreshToken | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:24](../../../lib/features/auth/data/auth_api.dart) |
 | `GET /mobile/bootstrap` | sem chaves literais detectadas | /mobile/bootstrap / body=ausente/inline / query=ausente | {"200": "z.object", "401": "z.object", "500": "z.object"} | [lib/features/bootstrap/data/bootstrap_api.dart:10](../../../lib/features/bootstrap/data/bootstrap_api.dart) |
-| `GET /api/v1/catalog/${filters.kind}` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:23](../../../lib/features/catalog/data/catalog_repository.dart) |
-| `GET /api/v1/catalog/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:35](../../../lib/features/catalog/data/catalog_repository.dart) |
-| `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` | mode, versionId | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:44](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/${filters.kind}` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:24](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:36](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` | mode, versionId | sem correspondência na referência | não detectado | [lib/features/catalog/data/catalog_repository.dart:45](../../../lib/features/catalog/data/catalog_repository.dart) |
 | `GET /api/v1/foods` | cursor, limit, q, sourceId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:15](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/filters` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:30](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |

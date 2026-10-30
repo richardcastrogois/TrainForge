@@ -171,7 +171,11 @@ void main() {
       final e = entry('detail');
       await tester.pumpWidget(
         MaterialApp(
-          home: CatalogDetailPage(entry: e, repository: FixtureCatalog()),
+          home: CatalogDetailPage(
+            entry: e,
+            repository: FixtureCatalog(),
+            evidenceMode: true,
+          ),
         ),
       );
       await tester.pumpAndSettle();

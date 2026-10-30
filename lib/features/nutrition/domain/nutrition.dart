@@ -1,3 +1,4 @@
+import '../../food_reference/domain/food_display_names.dart';
 import 'dart:math';
 import 'package:trainforge/features/food_reference/domain/food_reference.dart';
 
@@ -100,9 +101,16 @@ class EntryFoodDisplay {
 String entryDisplayName(Json entry, String locale) {
   final food = object(object(entry['calculation'])['food']);
   final display = EntryFoodDisplay.fromEntry(entry);
+  final translated = foodDisplayNames[entry['foodId']];
+  final exact =
+      translated != null &&
+      translated.version == entry['foodVersion'] &&
+      translated.original == food['nameOriginal'];
   return displayLabel(
-    display?.catalog.locale == locale
-        ? (display?.name?.name ?? food['nameOriginal'])
+    display?.catalog.locale == locale && display?.name != null
+        ? display!.name!.name
+        : exact
+        ? translated.names[locale.split('-').first] ?? food['nameOriginal']
         : food['nameOriginal'],
   );
 }

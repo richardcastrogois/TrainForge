@@ -1461,7 +1461,7 @@ abstract class AppLocalizations {
   /// No description provided for @librarySubtitle.
   ///
   /// In en, this message translates to:
-  /// **'MOVEMENT · SOURCE · AVAILABILITY'**
+  /// **'MOVEMENTS AND PROGRAMS'**
   String get librarySubtitle;
 
   /// No description provided for @metadataOnly.
@@ -1881,7 +1881,7 @@ abstract class AppLocalizations {
   /// No description provided for @calculationOnSave.
   ///
   /// In en, this message translates to:
-  /// **'The API confirms the calculation when saving. Unknown values do not become zero; different methods and units are not added together.'**
+  /// **'Calculated values appear after you confirm consumption.'**
   String get calculationOnSave;
 
   /// No description provided for @originPreparation.
@@ -1911,7 +1911,7 @@ abstract class AppLocalizations {
   /// No description provided for @preparationNote.
   ///
   /// In en, this message translates to:
-  /// **'Preparation is your note and does not change the source composition. Grams are not converted to milliliters without a verified density.'**
+  /// **'Optional note; it does not change nutrition values.'**
   String get preparationNote;
 
   /// No description provided for @deviceDateConfirmed.
@@ -3647,6 +3647,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Only foods you added appear here. Open the food library to search the reference database.'**
   String get mealOwnFoodsHint;
+
+  /// No description provided for @sourcesSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources and transparency'**
+  String get sourcesSettings;
+
+  /// No description provided for @sourcesSettingsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Content sources, licenses and calculations'**
+  String get sourcesSettingsHint;
+
+  /// No description provided for @sourcesExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Read authors, versions, licenses and original content data.'**
+  String get sourcesExplanation;
+
+  /// No description provided for @exerciseDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'About this movement'**
+  String get exerciseDetails;
+
+  /// No description provided for @consultationOnlyShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference only'**
+  String get consultationOnlyShort;
+
+  /// No description provided for @practiceUnavailableShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Instructions for practicing this movement are not available yet.'**
+  String get practiceUnavailableShort;
+
+  /// No description provided for @nutritionFacts.
+  ///
+  /// In en, this message translates to:
+  /// **'Nutrition facts'**
+  String get nutritionFacts;
+
+  /// No description provided for @moreNutrients.
+  ///
+  /// In en, this message translates to:
+  /// **'View all nutrients'**
+  String get moreNutrients;
+
+  /// No description provided for @multipleNutrientMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Different methods report different values. See Sources and transparency.'**
+  String get multipleNutrientMethods;
+
+  /// No description provided for @nutrientEnergy.
+  ///
+  /// In en, this message translates to:
+  /// **'Energy'**
+  String get nutrientEnergy;
+
+  /// No description provided for @nutrientProtein.
+  ///
+  /// In en, this message translates to:
+  /// **'Protein'**
+  String get nutrientProtein;
+
+  /// No description provided for @nutrientCarbs.
+  ///
+  /// In en, this message translates to:
+  /// **'Carbohydrate'**
+  String get nutrientCarbs;
+
+  /// No description provided for @nutrientFat.
+  ///
+  /// In en, this message translates to:
+  /// **'Fat'**
+  String get nutrientFat;
+
+  /// No description provided for @nutrientFiber.
+  ///
+  /// In en, this message translates to:
+  /// **'Fibre'**
+  String get nutrientFiber;
+
+  /// No description provided for @translationsExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Names translated for display. Original names and source data are preserved; this does not approve instructions or workouts.'**
+  String get translationsExplanation;
+
+  /// No description provided for @commonRice.
+  ///
+  /// In en, this message translates to:
+  /// **'White rice'**
+  String get commonRice;
+
+  /// No description provided for @commonBrownRice.
+  ///
+  /// In en, this message translates to:
+  /// **'Brown rice'**
+  String get commonBrownRice;
+
+  /// No description provided for @commonRedBeans.
+  ///
+  /// In en, this message translates to:
+  /// **'Red kidney beans'**
+  String get commonRedBeans;
 }
 
 class _AppLocalizationsDelegate

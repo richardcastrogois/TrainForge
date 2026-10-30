@@ -8,7 +8,7 @@
         "description": "Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.",
         "title": "TrainForge API",
         "contact": {},
-        "version": "0.9.0"
+        "version": "0.9.1"
     },
     "basePath": "/",
     "paths": {
@@ -585,6 +585,7 @@
         },
         "/api/v1/foods": {
             "get": {
+                "description": "Locale-aware search also recognizes bounded everyday-food discovery terms. It preserves source identity, preparation, reviewed names and composition.",
                 "produces": [
                     "application/json"
                 ],
@@ -595,7 +596,7 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Literal name substring with collapsed whitespace; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
+                        "description": "Literal name substring plus bounded everyday-food discovery terms when locale is supplied; reviewed names/aliases require locale; maximum 100 UTF-8 bytes",
                         "name": "q",
                         "in": "query"
                     },

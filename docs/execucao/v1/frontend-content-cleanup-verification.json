@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-29",
+  "scope": "clean-content-journeys-and-isolated-source-evidence",
+  "status": "implemented-local-debug-readonly-validation",
+  "sourceBase": "abf6876331c37ba4a8238ef34031614f8683f316",
+  "versions": {
+    "api": "0.9.1",
+    "publicOperations": 34,
+    "catalog": "0.2.0",
+    "coreSchema": 13,
+    "coreTables": 30,
+    "apk": "0.4.4+26"
+  },
+  "figma": {
+    "freshContextAndScreenshotNodes": [
+      "104:1260",
+      "104:560",
+      "104:1211",
+      "25:2152"
+    ],
+    "readAccessSucceeded": true,
+    "exampleDataCopied": false,
+    "existingLocalAssetsAndTokensReused": true,
+    "document": "https://www.figma.com/design/bX6YjBBLIJgoo2MtiFLntl"
+  },
+  "interface": {
+    "normalMovementListAndDetailHideTechnicalMetadata": true,
+    "normalFoodListDetailAndConsumptionHideTechnicalMetadata": true,
+    "normalFormPreservesQuantityUnitEvidencePreparationAndTime": true,
+    "sourceHub": "Perfil > Fontes e transparência",
+    "publicSourceHub": "Privacidade > Fontes e transparência",
+    "originalNamesAuthorsRightsVersionsAndCalculationPreserved": true,
+    "publicHubDoesNotOfferPrivateCalculationAction": true,
+    "unapprovedPracticeStillExplicitAndUnavailable": true
+  },
+  "displayTranslations": {
+    "movementExactVersionBindings": 73,
+    "foodExactVersionBindings": 31,
+    "languages": [
+      "pt-BR",
+      "pt-PT",
+      "en",
+      "es"
+    ],
+    "originalPayloadAndNutrientsUnchanged": true,
+    "serverReviewedFoodNamesPublished": 0,
+    "humanTerminologyReviewClaimed": false,
+    "rightsOrClinicalApprovalChanged": false,
+    "unknownVersionOrOriginalNameFallsBackToSource": true
+  },
+  "discovery": {
+    "localeBoundedStaticVocabulary": true,
+    "originalAndReviewedNameSearchPreserved": true,
+    "cursorFiltersAndNameRevisionPreserved": true,
+    "literalInputNeverInterpolatedIntoSQL": true,
+    "normalShortcuts": [
+      "white rice",
+      "brown rice",
+      "red kidney beans"
+    ],
+    "realLocalPublicQueries": [
+      "arroz",
+      "arroz branco",
+      "feijão",
+      "feijão vermelho"
+    ],
+    "prefixPreventsChorizoAndWithoutRiceMatchesForTranslatedAliases": true
+  },
+  "validation": {
+    "flutterTestsPassed": 257,
+    "flutterAnalysisIssues": 0,
+    "goOrdinaryTestsAndVetPassed": true,
+    "swaggerGeneratedAndChecked": true,
+    "sqlDisposableCi": "pending-after-push",
+    "native": {
+      "movementListClean": true,
+      "movementTitlePortuguese": true,
+      "movementDetailClean": true,
+      "practiceStillUnavailable": true,
+      "sourcesSettingsReachable": true,
+      "originalNameAndAuthorshipPreserved": true,
+      "googleConsentRepeated": false,
+      "foodSearchPortuguese": true,
+      "riceVariantPreparationPreserved": true,
+      "foodListMetadataHidden": true,
+      "foodDetailClean": true,
+      "consumptionConfirmedByAgent": false,
+      "finalScreen": "public-food-composition-before-any-consumption-confirmation",
+      "trainingOrNutritionRecordsCreatedOrDeleted": false
+    },
+    "artifact": {
+      "versionName": "0.4.4",
+      "versionCode": 26,
+      "variant": "debug",
+      "package": "com.example.trainforge",
+      "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+      "sha256": "ed9cd0f8ac85e23f8f69fea360ee8827a0ad4ff26556844ff0ee391f9c5c7278",
+      "certificateSha1": "1e934c58207cd23ba8d8ee4991da805678dc9e1c",
+      "sourceFingerprint": "cba1581f11ebdce4538ca66160c7525179e12eea68a5be84f56128eebc33ffa8",
+      "configurationFingerprint": "089dd3b33ce523ad514ce6e257d38d6f82d166a88a323851301c4e0d7799f4bc",
+      "realGoogleLoginValidated": false
+    },
+    "graphify": {
+      "dartFiles": 121,
+      "nodes": 4370,
+      "edges": 5129,
+      "llmTokens": 0,
+      "semanticExtraction": false
+    },
+    "installedApkHashVerified": true,
+    "proposedFilesSecretReview": {
+      "scope": "proposed-current-files-only-not-history",
+      "files": 66,
+      "candidates": 27,
+      "blockingCandidates": 0,
+      "rawValuesPublished": false
+    }
+  },
+  "limits": [
+    "This does not translate the full 6369-food dataset. Unknown names retain the original; no substitute food or nutrient value is invented.",
+    "Display translations are UI adaptations, not new human-reviewed source publications or professional approval of exercise terminology.",
+    "The current public food databases are Ciqual and CoFID; a Portuguese lookup does not establish Brazilian preparation or carioca-bean coverage.",
+    "No approved executable programs, instructions, doses or media were added. No photo recognition, offline queue, master account, release distribution or iOS validation was completed here.",
+    "Native checks only browsed existing records and public references. No consumption or workout was confirmed, modified or deleted, and no new Google consent was automated.",
+    "No new migrations, hosting, purchase, paid integration or broad supplier research."
+  ]
+}

@@ -218,6 +218,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         ),
                         textInputAction: TextInputAction.done,
                         decoration: InputDecoration(
+                          counterText: '',
                           labelText: context.l10n.consumedQuantity,
                           hintText: context.l10n.enterQuantity,
                         ),
@@ -232,6 +233,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         isExpanded: true,
                         itemHeight: null,
                         decoration: InputDecoration(
+                          counterText: '',
                           labelText: context.l10n.quantityUnit,
                         ),
                         items: [
@@ -259,6 +261,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                       value == null ? context.l10n.chooseEvidence : null,
                   builder: (field) => InputDecorator(
                     decoration: InputDecoration(
+                      counterText: '',
                       labelText: context.l10n.quantityHow,
                       errorText: field.errorText,
                       enabled: !locked,
@@ -320,18 +323,13 @@ class _EntryFormPageState extends State<EntryFormPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        context.l10n.originPreparation,
+                        context.l10n.observedPreparation,
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                       SizedBox(height: 4),
-                      if (widget.food.reviewedName?.locale ==
-                          foodContentLocale(context))
-                        Text(
-                          '${context.l10n.originalFoodName}: ${widget.food.displayName}',
-                        ),
                       Text(
                         widget.food.localizedBasis(context),
                         style: TextStyle(
@@ -340,21 +338,13 @@ class _EntryFormPageState extends State<EntryFormPage> {
                           color: context.tf.muted,
                         ),
                       ),
-                      ExpansionTile(
-                        tilePadding: EdgeInsets.zero,
-                        title: Text(context.l10n.sourceVersion),
-                        children: [
-                          SelectableText(
-                            '${context.l10n.origin}: ${widget.food.sourceId}\n${context.l10n.version}: ${widget.food.versionId}\n${widget.food.sourceVersion}\n${widget.food.source.attribution}\n${widget.food.source.license}',
-                          ),
-                        ],
-                      ),
                       TextFormField(
                         key: Key('entry-preparation'),
                         controller: preparation,
                         enabled: !locked,
                         maxLength: 180,
                         decoration: InputDecoration(
+                          counterText: '',
                           labelText: context.l10n.observedPreparation,
                         ),
                       ),

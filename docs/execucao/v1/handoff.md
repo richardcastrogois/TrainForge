@@ -2,6 +2,16 @@
 
 Atualizado em **29/10/2026**. Repositório: **C:/dev/TrainForge/trainforge**.
 
+## Ajuste de interface29/10 — vigente
+
+Pedido do autor: jornadas limpas e nomes no idioma do app, com comprovação isolada. **API0.9.1 /34operações; APKdebug0.4.4+26 instalado**, assinatura e fonte conferidas; catálogo0.2.0 e schema13/30 preservados. [Recibo](frontend-content-cleanup-verification.json).
+
+Listas/detalhes de movimentos, alimentos e consumo não mostram autores, licenças, IDs, hashes, células ou frações como conteúdo principal. A área **Perfil > Fontes e transparência** conserva essas informações por versão; **Privacidade > Fontes e transparência** permite ler fontes públicas sem login. Cálculos privados continuam com repositório e guardas do titular. Aviso de prática indisponível permanece; não há treino aprovado.
+
+Traduções de apresentação para73movimentos e31alimentos, ligadas aID/versão/nome original, sem gravar nomes humanos revisados no banco. Interface pt-BR/pt-PT/en/es; demais nomes alimentares ainda usam o original. Busca porarroz/feijão e variantes tem vocabulário limitado; atalhos paraarroz branco/integral e feijão-vermelho. Não assumir feijão-carioca ou preparo brasileiro porque a consulta está em português.
+
+257testesFlutter, analyze0issues, Go test/vet eSwagger passaram. Android real conferiu biblioteca/detalhe traduzido e limpo, área de comprovação com original/autoria e busca/detalhe alimentar. Nenhum consumo foi confirmado ou dado privado editado/excluído; sessão existente, semnovoGoogle. Figma voltou a responder: quatro contextos com screenshots consultados; limiteStarter anterior é histórico, não impedimento vigente comprovado. Graphify121Dart/4370nós/5129arestas, AST/HTMLsemLLM.
+
 ## Próxima ação
 
 O autor pediu implementar M0–M4 da primeira extração do catálogo, corrigir as verificações, fazer commits e push. Os marcos do catálogo estão concluídos no recorte local. A remediação do histórico Git foi aplicada e verificada no remoto. Próxima história funcional: V1-015 pelas dependências, mantendo explícita a ausência de conteúdo aprovado para prática; continuar os trabalhos independentes do backlog. Não repetir limpeza, migração ou testes do app sem mudança pertinente.
@@ -21,7 +31,7 @@ Ler também AGENTS.md, backlog.json, plano-macro.md e etapa-02-fechamento.md. Co
 - Rollback local, retorno remoto, parada do catálogo com503 na rota/prontidão e recuperação200 passaram. As30tabelas permaneceram iguais nesses ensaios. Nenhum registro privado foi criado ou excluído pelo agente.
 - Primeira comparação agregando linhas completas falhou antes do checkpoint/troca. A versão final calcula SHA256 por linha dentro do PostgreSQL e devolve apenas64hex por tabela; checkpoint e comparações passaram depois.
 
-**Ambiente final:** API8082, catálogo18083, PostgreSQL15432 e emulador ativos; modo `remote`. Última navegação observada foi o detalhe público. Reobservar a tela antes de agir.
+**Ambiente final:** API8082, catálogo18083, PostgreSQL15432 e emulador ativos; modo `remote`. Última navegação observada nesta rodada foi a composição pública alimentar, antes de qualquer confirmação de consumo. Reobservar a tela antes de agir.
 
 Para conferir sem repetir a ativação:
 
