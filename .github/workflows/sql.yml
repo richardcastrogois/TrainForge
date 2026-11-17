@@ -44,7 +44,7 @@ jobs:
           cache-dependency-path: services/api/go.sum
       - name: Validar barreiras antes de conectar
         run: python -m unittest discover -s tools -p test_sql_ci.py
-      - name: Migrations, rerun e oito suítes SQL isoladas
+      - name: Migrations, rerun e nove suítes SQL isoladas
         env:
           TF_SQL_CI: '1'
           TF_CI_PG_PASSWORD: ci-only-ephemeral-postgres17

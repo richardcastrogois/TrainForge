@@ -1,7 +1,7 @@
-FROM golang:1.27.3-bookworm@sha256:d9b6a1beb9474adc2a1ce842573639b44b2a0dd49b6669f51d3821baf9ec37c9 AS build
+FROM golang:1.27.4-bookworm@sha256:4fa7c968ba93f1635670522dbb01a2c78150443e1385746924566079f36570ea AS build
 WORKDIR /src
 COPY go.mod go.sum ./
-RUN test "$(go env GOVERSION)" = "go1.27.3" && go mod download && go mod verify
+RUN test "$(go env GOVERSION)" = "go1.27.4" && go mod download && go mod verify
 COPY cmd/api/ ./cmd/api/
 COPY internal/ ./internal/
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOTOOLCHAIN=local go build -mod=readonly -tags=timetzdata -trimpath -buildvcs=false -ldflags="-s -w" -o /out/trainforge-api ./cmd/api

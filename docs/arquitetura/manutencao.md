@@ -60,3 +60,10 @@ python tools/gerar_documentacao.py --capture-backend C:/caminho/do/backend --wri
 Esse comando exige repositório limpo, captura revisão/metadados e não lê `.env`, tráfego ou banco. Não executá-lo para manter o Go. O Graphify usa atualização AST incremental de `lib/`, code-only/no-cluster; Go/SQL ficam nos mapas, fontes e Swagger. [Detalhes Graphify](../graphify.md).
 
 Import não é trace; construtor não prova clique; rota compatível não prova DTO/login; anotação não prova registro; tabela existente não entrega jornada; hash não libera direito ou comprova revisão humana. Evidências runtime e conclusão das histórias ficam nos seus recibos, backlog e handoff.
+
+
+## Correções de CI em17/11/2026
+
+O catálogo gera Swagger somente a partir dos diretórios públicos, mantendo a recusa de rotas/DTOs privados. Testes Go com `-json` têm stdout separado de stderr: downloads de cache frio não são eventos JSON e nunca são publicados como evidência. O parser continua estrito.
+
+O SDK mínimo e a imagem de build foram atualizados paraGo 1.27.4, por digest oficial, após o achado [GO-2026-6859](https://pkg.go.dev/vuln/GO-2026-6859) no primeiro CI pós-push. Não houve alteração de contrato HTTP, schema ou dados do produto.

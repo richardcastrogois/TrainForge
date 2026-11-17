@@ -42,6 +42,17 @@ def runtime_dependencies(raw):
     return sorted(packages)
 
 
+def run_captured(args, *, cwd, env, timeout=120):
+    """Keep machine-readable stdout separate from private Go tool diagnostics.
+
+    A cold module cache writes `go: downloading ...` to stderr even when
+    `go test -json` succeeds. Mixing it into stdout would reject passing tests
+    as invalid evidence. Neither stream is echoed: failures stay sanitized.
+    """
+    return subprocess.run(args, cwd=cwd, env=env, stdout=subprocess.PIPE,
+                          stderr=subprocess.PIPE, timeout=timeout)
+
+
 def main():
     check_environment(os.environ)
     go,psql=shutil.which('go'),shutil.which('psql')
@@ -67,7 +78,7 @@ def main():
         disposable_name(database)
         return 'postgresql://'+role+':'+credentials[role]+'@127.0.0.1:15432/'+database+'?sslmode=disable'
     def run(args,timeout=120):
-        return subprocess.run(args,cwd=service,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout)
+        return run_captured(args,cwd=service,env=env,timeout=timeout)
     try:
         sql('REVOKE CONNECT ON DATABASE postgres,template1 FROM PUBLIC;')
         for role,password in credentials.items():

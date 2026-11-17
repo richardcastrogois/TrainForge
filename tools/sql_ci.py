@@ -75,6 +75,11 @@ def failure_locations(raw):
     return [{'file':file,'line':line} for file,line in sorted(locations)]
 
 
+def run_go_json(command, **kwargs):
+    # Toolchain downloads belong to stderr. Only stdout is the Go JSON stream.
+    return subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, **kwargs)
+
+
 def check_environment(env, *, root=ROOT, platform=sys.platform):
     if platform != 'linux' or any(env.get(k) != v for k,v in {
         'CI':'true','GITHUB_ACTIONS':'true','RUNNER_ENVIRONMENT':'github-hosted',
@@ -152,8 +157,8 @@ def main():
                 if suite_id == 'nutrition': suite_env['TF_NUTRITION_CI_FIXTURE'] = '1'
                 for package, expected in commands:
                     pattern = '^('+'|'.join(expected)+')$'
-                    result = subprocess.run([go,'test',package,'-run',pattern,'-count=1','-json','-timeout=90s'],
-                        cwd=service,env=suite_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=120)
+                    result = run_go_json([go,'test',package,'-run',pattern,'-count=1','-json','-timeout=90s'],
+                        cwd=service,env=suite_env,timeout=120)
                     if result.returncode:
                         item['failureLocations'] = failure_locations(result.stdout)
                         print(json.dumps({'suite':suite_id, 'status':'failed', 'failureLocations':item['failureLocations']}),flush=True)

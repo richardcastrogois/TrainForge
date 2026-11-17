@@ -29,8 +29,11 @@ def generate(root,write=False):
     if not binary:raise ValueError('Use the already pinned Swaggo v1.16.6; no automatic installation')
     validate_build_info(subprocess.check_output(['go','version','-m',binary],text=True))
     with tempfile.TemporaryDirectory(prefix='trainforge-catalog-swagger-') as directory:
-        subprocess.run([binary,'init','--generalInfo','cmd/catalog/main.go','--dir','.',
-            '--parseInternal','--exclude','internal/swaggerdocs,internal/auth,internal/nutrition,internal/privacy,internal/trainingconfig,cmd/api',
+        # Swag resolves generalInfo relative to the first search directory.
+        # Scan the public source owners, so adding another private module cannot
+        # append its annotated operations to the standalone catalog contract.
+        subprocess.run([binary,'init','--generalInfo','main.go',
+            '--dir','cmd/catalog,internal/catalog,internal/platform/httpapi','--parseInternal',
             '--packageName','catalogdocs','--output',directory,'--outputTypes','json,yaml'],cwd=root/'services/api',check=True)
         reference=json.loads((root/'contracts/generated/swagger-v1.json').read_text(encoding='utf-8'))
         document=json.loads((Path(directory)/'swagger.json').read_text(encoding='utf-8'))

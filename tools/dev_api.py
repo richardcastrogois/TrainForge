@@ -18,10 +18,11 @@ LOCAL=ROOT/".local"
 def environment(*, include_api_env=True):
     # SDK-only callers must not read the API file or inherit connection settings.
     env=os.environ.copy() if include_api_env else {k:v for k,v in os.environ.items() if not k.startswith(("TF_","PG"))}
-    go=ROOT/".tools/go/bin/go.exe"
+    go=ROOT/".tools/go-1.27.4/bin/go.exe"
+    if not go.exists():go=ROOT/".tools/go/bin/go.exe"
     if not go.exists():
         found=shutil.which("go")
-        if not found:raise RuntimeError("Go1.27.3 required; no installer is run by this command")
+        if not found:raise RuntimeError("Go1.27.4 required; no installer is run by this command")
         go=Path(found)
     env["PATH"]=str(go.parent)+os.pathsep+str(ROOT/".tools/bin")+os.pathsep+env.get("PATH","")
     env["GOCACHE"]=str(ROOT/".tools/gocache");env["GOMODCACHE"]=str(ROOT/".tools/gomodcache");env["GOTOOLCHAIN"]="local"

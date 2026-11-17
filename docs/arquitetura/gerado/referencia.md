@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `7a777d1ef1a0fed2`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `eb3451c8a5e4251d`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 

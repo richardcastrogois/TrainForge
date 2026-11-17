@@ -79,7 +79,7 @@ def snapshot():
 
 def checked_process(command, env, timeout):
     result = subprocess.run(
-        command, cwd=SERVICE, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        command, cwd=SERVICE, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         text=True, encoding="utf-8", errors="replace", timeout=timeout,
     )
     if result.returncode:

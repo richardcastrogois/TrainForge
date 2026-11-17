@@ -1,6 +1,6 @@
 # Arquitetura do TrainForge
 
-O TrainForge tem um aplicativo **Flutter para Android/iOS**, uma **API Go** e um **catálogo Go separado**, com PostgreSQL e papéis próprios. O núcleo reúne autenticação, privacidade, configuração, alimentação e execução; o catálogo fornece referências públicas. Estado consolidado em **16/11/2026**.
+O TrainForge tem um aplicativo **Flutter para Android/iOS**, uma **API Go** e um **catálogo Go separado**, com PostgreSQL e papéis próprios. SDK mínimo: **Go 1.27.4**, com patch de segurança conferido em17/11/2026. O núcleo reúne autenticação, privacidade, configuração, alimentação e execução; o catálogo fornece referências públicas. Estado consolidado em **16/11/2026**.
 
 ![Quem conversa com quem](diagramas/02-arquitetura.svg)
 

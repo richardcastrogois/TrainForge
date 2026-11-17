@@ -3,7 +3,8 @@ from pathlib import Path
 import unittest
 import json
 import re
-from sql_ci import check_environment, disposable_name, test_events, failure_locations, SUITES
+import sys
+from sql_ci import check_environment, disposable_name, test_events, failure_locations, SUITES, run_go_json
 
 
 class SqlCiGuards(unittest.TestCase):
@@ -37,6 +38,17 @@ class SqlCiGuards(unittest.TestCase):
 
 
 class SqlTestEvidence(unittest.TestCase):
+    def test_cold_cache_downloads_are_private_stderr_not_json_events(self):
+        command = [sys.executable, '-c',
+                   'import sys; print(\'{"Action":"pass","Test":"Expected"}\'); '
+                   'print("go: downloading fixture.invalid/module",file=sys.stderr)']
+        result = run_go_json(command, timeout=10)
+        self.assertEqual(result.returncode, 0)
+        self.assertIn(b'go: downloading', result.stderr)
+        evidence = test_events(result.stdout, ['Expected'])
+        self.assertEqual(evidence, [{'test': 'Expected', 'result': 'pass'}])
+        self.assertNotIn('downloading', str(evidence))
+
     def event(self,name,action='pass'):
         return json.dumps({'Action':action,'Test':name,'Output':'sensitive-output-must-not-publish'})
 

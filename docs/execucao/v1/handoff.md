@@ -30,3 +30,8 @@ A reorganização compactou pesquisa/documentos originais com caminhos e hashes,
 Não repetirGoogle, alterar/classificar refeições antigas ou executar scripts históricos de pesquisa para recuperar contexto. Consulta de evidências antigas: `python tools/evidencias.py listar --filtro ...`, `mostrar <caminho>` ou `extrair <caminho>`; extração fica privada em`.local`. Prova documental não concede direitos de publicação/prática.
 
 Git: commit/push deste trabalho foram autorizados; nunca repetir a reescrita histórica/force-push. Conferir todo o intervalo a publicar e não imprimir segredos. Novas pesquisas, compras, contatos ou hospedagem exigem escopo concreto; interesse em preço não é pagamento autorizado.
+
+
+## CI pós-publicação —17/11
+
+A primeira publicação detectou três causas: Swagger do catálogo varria também o novo módulo privado de atividade; cache Go frio enviava downloads em stderr misturados ao JSON; o Go 1.27.3 tinha a falha oficialGO-2026-6859. Correções: seleção positiva de fontes públicas, streams separados com parser estrito e SDK/build mínimoGo 1.27.4. Não transformar os resultados anteriores em validação nova; acompanhar oCI deste ajuste.

@@ -147,5 +147,33 @@
     "Historical research dates, prices, licences and results were preserved as dated findings; no remote sources were researched again.",
     "Private third-party bodies are optional local files; a fresh clone does not download or recreate them automatically.",
     "Commit range is scanned again before push; remote equality is reported after publication."
-  ]
+  ],
+  "postPushCiCorrection": {
+    "date": "2026-11-17",
+    "causes": [
+      "Catalog Swaggo scanned new private activity module",
+      "Cold module-cache download stderr mixed into Go test JSON stdout",
+      "Go standard library GO-2026-6859"
+    ],
+    "corrections": [
+      "Positive public catalog source selection with strict contract guard",
+      "Separate captured stdout and private stderr; reject invalid JSON stdout",
+      "Go minimum/build SDK 1.27.4; official archive and container digests verified"
+    ],
+    "goSdkSha256": "178ab98950ac69ab25069307dc6ade79f3816e414cce95b4da166a115cde1e7e",
+    "dockerImageDigest": "sha256:4fa7c968ba93f1635670522dbb01a2c78150443e1385746924566079f36570ea",
+    "apiSchemaOrBusinessRecordsChanged": false,
+    "verification": {
+      "pythonTestsPassed": 167,
+      "goTestsAllPassed": true,
+      "goVetAllPassed": true,
+      "mainAndCatalogSwaggerChecksPassed": true,
+      "govulncheckVersion": "1.9.0",
+      "reachableVulnerabilities": 0,
+      "importedPackageVulnerabilities": 0,
+      "requiredModuleVulnerabilitiesNotCalled": 3,
+      "realDatabaseTouched": false,
+      "remoteCi": "pending publication of correction commit"
+    }
+  }
 }

@@ -1,8 +1,11 @@
 from pathlib import Path
 import json
+import os
+import sys
 import tempfile
 import unittest
-from catalog_m1_ci import check_environment,disposable_name,runtime_dependencies
+from catalog_m1_ci import check_environment,disposable_name,runtime_dependencies,run_captured
+from sql_ci import test_events
 
 class CatalogM1Boundaries(unittest.TestCase):
  def test_explicit_hosted_fixture_only(self):
@@ -25,3 +28,21 @@ class CatalogM1Boundaries(unittest.TestCase):
   self.assertEqual(runtime_dependencies(main),['trainforge.local/api/cmd/catalog'])
   for name in ['internal/auth','internal/nutrition','internal/privacy','internal/trainingconfig','internal/catalogschema','migrations']:
    with self.subTest(name=name),self.assertRaises(RuntimeError):runtime_dependencies(main+b'\n'+package(name))
+
+class CatalogMachineOutput(unittest.TestCase):
+ def run_child(self,script):
+  return run_captured([sys.executable,'-c',script],cwd=Path(__file__).resolve().parent,
+                      env=dict(os.environ),timeout=10)
+
+ def test_successful_test_json_is_not_corrupted_by_cold_cache_diagnostics(self):
+  result=self.run_child("import json,sys; print(json.dumps({'Action':'pass','Test':'Expected'})); print('go: downloading example.invalid/fixture v1.0.0',file=sys.stderr)")
+  self.assertEqual(result.returncode,0)
+  self.assertIn(b'go: downloading',result.stderr)
+  self.assertNotIn(b'go: downloading',result.stdout)
+  evidence=test_events(result.stdout,['Expected'])
+  self.assertEqual(evidence,[{'test':'Expected','result':'pass'}])
+  self.assertNotIn('example.invalid',json.dumps(evidence))
+
+ def test_non_json_stdout_is_still_rejected(self):
+  result=self.run_child("print('not-test-json')")
+  with self.assertRaises(RuntimeError):test_events(result.stdout,['Expected'])

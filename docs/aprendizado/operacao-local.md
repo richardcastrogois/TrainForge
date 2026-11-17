@@ -141,3 +141,8 @@ Não executar dois watchers na mesma porta. `init`, `activate`, migrations, roll
 | Prática indisponível/lista vazia | Conferir conteúdo aprovado e dependências; não criar fixture na base entregue |
 
 Os helpers e seus testes são a fonte do comportamento descrito. A documentação não repete instalações, restore, login ou parada real só para atualizar exemplos. O último estado observado e os resultados de cada incremento ficam no [handoff](../execucao/v1/handoff.md).
+
+
+## SDK Go deste checkpoint
+
+O mínimo atual é **Go 1.27.4**. Os helpers preferem o SDK privado em`.tools/go-1.27.4/`; o SDK 1.27.3 anterior foi preservado e não foi trocado globalmente no Windows. `go.mod` e o build Docker também exigem o patch. A alteração veio de um achado confirmado no CI, não de uma reinstalação para abrir o projeto.
