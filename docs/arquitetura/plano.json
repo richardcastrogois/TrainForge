@@ -1,671 +1,130 @@
 {
-  "status": "PARCIAL REAL — auth/privacidade locais aceitos; alimentação particular e consumo Go/Flutter em aceite humano; atividade/prática/infraestrutura pendentes",
+  "status": "PARCIAL REAL — capacidades locais implementadas e catálogo extraído; prática depende de conteúdo aprovado. Estado consolidado em 16/11/2026.",
+  "contractSource": "contracts/generated/swagger-v1.json",
+  "diagramSource": "docs/arquitetura/diagramas/mapas.json",
   "nodes": [
     {
-      "id": "user",
-      "label": "Pessoa",
-      "layer": "Experiência",
-      "description": "Login e ações reais; nenhuma conta fictícia no app entregue.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "id": "flutter",
+      "label": "Flutter Android/iOS",
+      "description": "Sessão, consulta, configuração, alimentação e tela de execução integradas; iOS sem validação nativa neste Windows.",
+      "state": "parcial"
     },
     {
-      "id": "ui",
-      "label": "Telas Flutter",
-      "layer": "Flutter",
-      "description": "Entrada/conta, biblioteca, composição, privacidade e alimentação particular/consumo implementados; atividade/prática/Hoje integrado pendentes.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter; lib/features/food_reference; lib/features/nutrition"
-    },
-    {
-      "id": "vm",
-      "label": "ViewModels / controllers",
-      "layer": "Flutter",
-      "description": "AuthController, CatalogController, FoodController e PrivacyController injetáveis; proteção contra respostas antigas, troca de conta e erro de rede.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
-    },
-    {
-      "id": "repos",
-      "label": "Repositories / DTOs",
-      "layer": "Flutter",
-      "description": "Contratos tipados de sessão, catálogo, referência alimentar e privacidade; exportação preserva JSON exato e exclusão exige confirmação.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
-    },
-    {
-      "id": "http",
-      "label": "Cliente Dio / sessão",
-      "layer": "Rede",
-      "description": "Dio central com origem explícita, sem redirects, refresh coordenado e logs seguros; mutações nutricionais idempotentes vinculadas à conta.",
-      "evidence": "lib/features/auth; lib/features/catalog; lib/core/http/app_dio.dart; tests Flutter"
-    },
-    {
-      "id": "auth",
-      "label": "Módulo auth Go",
-      "layer": "API Go",
-      "description": "Google Androiddebug real/sessão/privacidade locais aceitos em23/10; distribuiçãorelease/HTTPS/iOS continuam nas histórias próprias.",
-      "evidence": "docs/execucao/v1/auth-local-fechamento.md; auth-real-android-verification.json"
+      "id": "api",
+      "label": "Núcleo Go 0.10.0",
+      "description": "38 operações, autenticação/privacidade/configuração/alimentação/execução; revalidação privada e idempotência.",
+      "state": "atual"
     },
     {
       "id": "catalog",
-      "label": "Módulo catalog Go",
-      "layer": "API Go",
-      "description": "Leitura real dos metadados revisados: movimento/programa separados, filtros/cursor, atribuição, versão e retirada/ETag. Sem entrega de dose/instrução/mídia.",
-      "evidence": "services/api/internal/catalog/{handler,postgres_read,read}.go; catalog-read-verification.json"
+      "label": "Catálogo Go 0.2.0",
+      "description": "Primeira extração M0–M4 concluída localmente; cinco leituras públicas, autoridade editorial e reader próprios.",
+      "state": "atual"
     },
     {
-      "id": "activity",
-      "label": "Módulo activity Go",
-      "layer": "API Go",
-      "description": "Adesões, ocorrências, eventos reais, histórico e resumos.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "id": "core_db",
+      "label": "PostgreSQL núcleo",
+      "description": "Schema13/30 tabelas; dados privados e espelho editorial para referências históricas.",
+      "state": "atual"
     },
     {
-      "id": "nutrition",
-      "label": "Nutrition Go: referências e consumo particular",
-      "layer": "API Go",
-      "description": "6369referências, cadastro particular, consumo, histórico, correção/exclusão e subtotais por coluna/unidade; aceite humano020pendente.",
-      "evidence": "services/api/internal/nutrition; docs/execucao/v1/alimentacao-registro.md; nutrition-local-verification.json"
-    },
-    {
-      "id": "pg",
-      "label": "PostgreSQL",
-      "layer": "Dados",
-      "description": "Transações, constraints, índices e backups. Um escritor por domínio.",
-      "evidence": "services/api/migrations/00001–00008; nutrition-local-verification.json; privacy-local-verification.json"
-    },
-    {
-      "id": "manifest",
-      "label": "Manifestos revisados",
-      "layer": "Conteúdo",
-      "description": "Lotes originados da pesquisa com proveniência e allowlist de uso.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
-    },
-    {
-      "id": "import",
-      "label": "Importador Go",
-      "layer": "Conteúdo",
-      "description": "Dry run e importação idempotente. Fonte externa não consultada a cada toque.",
-      "evidence": "services/api/internal/catalog/import.go; catalog-import-verification.json"
-    },
-    {
-      "id": "media",
-      "label": "Mídia autorizada / referência",
-      "layer": "Conteúdo",
-      "description": "Fotos e vídeos conforme disponibilidade e direitos; falta de mídia e de instrução têm estados distintos e explícitos.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
-    },
-    {
-      "id": "obs",
-      "label": "Logs / métricas / traces",
-      "layer": "Operação",
-      "description": "Correlação com requestId; sem token ou dado físico em corpo de log.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "id": "catalog_db",
+      "label": "PostgreSQL catálogo",
+      "description": "Schema2/4 tabelas, papéis próprios e reader sem DML/acesso privado.",
+      "state": "atual"
     },
     {
       "id": "google",
       "label": "Google Identity",
-      "layer": "Externo",
-      "description": "ID token verificado no backend; client IDs por plataforma/ambiente.",
-      "evidence": "Decisão proposta em arquitetura-alvo.md; validar na implementação."
+      "description": "Troca de token verificado por issuer/audience/sub/expiração; Androiddebug local aceito.",
+      "state": "atual"
     },
     {
-      "id": "food_preflight",
-      "label": "Preflight alimentar offline",
-      "layer": "Conteúdo",
-      "description": "Confere hashes/identidades/células/bases/fatores dos snapshotsCiqual/CoFID existentes; não acessa rede/banco ou autoriza uso.",
-      "evidence": "tools/alimentos_lote.py; tools/preparar_alimentos_v1.py; food-preflight-verification.json"
-    },
-    {
-      "id": "food_candidate",
-      "label": "Staging alimentar candidato",
-      "layer": "Conteúdo",
-      "description": "Prévia histórica de6371identidades; revisão posterior aprovou6369referências, excluindo2conflitantes. Outrasfamílias seguem candidatas.",
-      "evidence": "docs/execucao/v1/alimentacao-preflight.md; contrato trainforge.food-staging/1"
-    },
-    {
-      "id": "food_inputs",
-      "label": "Snapshots alimentares preparados",
-      "layer": "Conteúdo",
-      "description": "JSONL/planilhas/recibosCiqual/CoFID já coletados e auditados; candidatos, não alimentos aprovados para runtime.",
-      "evidence": "content/manifests/pilot-prepared.json; content/local ignorado"
-    },
-    {
-      "id": "food_reviewed",
-      "label": "Lote alimentar revisado",
-      "layer": "Conteúdo",
-      "description": "6369registros de duas fontes, com grants/condições específicos; sem herdar aprovação para outrasfamílias.",
-      "evidence": "content/manifests/food-review-decisions.json; food-approved.json"
-    },
-    {
-      "id": "privacy",
-      "label": "Privacidade e titularidade Go",
-      "layer": "API Go",
-      "description": "Exportação e exclusão próprias aceitas pessoalmente em23/10; inventário inclui declarações alimentares, cálculos e correções do020.",
-      "evidence": "docs/execucao/v1/auth-real-android-verification.json; nutrition-local-verification.json"
-    },
-    {
-      "id": "network_limits",
-      "label": "Limites por instância",
-      "layer": "Operação",
-      "description": "1024 conexões,128 requisições em processamento, rate limiter particionado limitado e proxies explicitamente confiáveis. Capacidade global não medida.",
-      "evidence": "services/api/internal/platform/httpapi/{listener,network,server}.go"
-    },
-    {
-      "id": "privacy_admin",
-      "label": "Manutenção e restauração locais",
-      "layer": "Operação",
-      "description": "Manutenção manual limitada e aplicação do registro atual de exclusões em restauração separada/offline; sem promoção automática ou expiração de backups implantada.",
-      "evidence": "tools/manter_privacidade_local.py; tools/aplicar_exclusoes_restore.py; services/api/cmd/privacy-restore"
+      "id": "operator",
+      "label": "Operação editorial explícita",
+      "description": "Manifestos/evidências revisados, publicação por pacote/CAS/replay, mirror e retirada; nenhum direito inferido pelo hash.",
+      "state": "atual"
     }
   ],
   "edges": [
     {
-      "from": "user",
-      "to": "ui",
-      "label": "Ações e dados confirmados",
-      "input": "toques/entrada",
-      "output": "tela e estado real",
-      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
+      "from": "flutter",
+      "to": "api",
+      "label": "HTTP tipado, sessão e respostas por conta/geração"
     },
     {
-      "from": "ui",
-      "to": "vm",
-      "label": "Comando tipado",
-      "input": "seleção, data, quantidade",
-      "output": "estado loading/data/empty/error",
-      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
-    },
-    {
-      "from": "vm",
-      "to": "repos",
-      "label": "Método de domínio",
-      "input": "consulta ou ação validada",
-      "output": "modelo ou falha tipada",
-      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
-    },
-    {
-      "from": "repos",
-      "to": "http",
-      "label": "DTO versionado",
-      "input": "request da OpenAPI",
-      "output": "response validada / Problem",
-      "evidence": "Implementado na fatia auth/consulta; demais fluxos permanecem planejados"
-    },
-    {
-      "from": "http",
-      "to": "auth",
-      "label": "POST /api/v1/auth/google, refresh, logout",
-      "input": "idToken ou refreshToken",
-      "output": "accessToken + refreshToken + user; logout 204",
-      "evidence": "AuthApi e SessionRefresh usam contrato Go; APKdebug instalado, aceite em andamento."
-    },
-    {
-      "from": "auth",
+      "from": "api",
       "to": "google",
-      "label": "Verificar assinatura e claims",
-      "input": "token/keys públicos",
-      "output": "iss/sub/aud/exp válidos",
-      "evidence": "Google oficial e loginAndroiddebug pessoal aceitos em23/10; auth-real-android-verification.json"
+      "label": "Verificação de identidade"
     },
     {
-      "from": "auth",
-      "to": "pg",
-      "label": "Consulta / transação",
-      "input": "identidade e hash do refresh",
-      "output": "usuário e sessão sem token em claro",
-      "evidence": "Implementado em auth/postgres.go; transações verificadas em banco isolado descartável."
+      "from": "api",
+      "to": "core_db",
+      "label": "SQL/transações privadas e sessão viva"
     },
     {
-      "from": "http",
+      "from": "api",
       "to": "catalog",
-      "label": "GET catálogo/filtros/detalhe",
-      "input": "q, valores reais, cursor/limit, versionId/mode",
-      "output": "metadados permitidos, atribuição e requisitos desconhecidos explícitos",
-      "evidence": "Chamadas GoCatalogRepository; API/DB/emulador validados, V1-014"
-    },
-    {
-      "from": "http",
-      "to": "activity",
-      "label": "POST enrollments / sessions / events; GET summary/history",
-      "input": "versionId, occurrenceId, ação real, Idempotency-Key",
-      "output": "IDs, estado persistido e métricas com origem",
-      "evidence": "Contrato proposto, não chamada executada."
-    },
-    {
-      "from": "http",
-      "to": "nutrition",
-      "label": "Consulta pública; alimentos próprios e consumo privados",
-      "input": "versão, quantidade, evidência, preparo, data/fuso, revisão e Idempotency-Key",
-      "output": "consumo confirmado, histórico próprio e subtotais com ausências",
-      "evidence": "GoNutritionRepository; entries_handler.go; nutrition-local-verification.json; aceite humano emandamento"
+      "label": "Cinco GETs sem credenciais privadas; revisão/digest"
     },
     {
       "from": "catalog",
-      "to": "pg",
-      "label": "SELECT projetado e paginado",
-      "input": "versão e critérios de disponibilidade",
-      "output": "conteúdo permitido e razões de bloqueio",
-      "evidence": "services/api/internal/catalog/postgres_read.go; lote real73 e retirada/ETag em DBfixture"
+      "to": "catalog_db",
+      "label": "SELECT projetado/paginado"
     },
     {
-      "from": "activity",
-      "to": "pg",
-      "label": "Transação por ocorrência",
-      "input": "userId, chave idempotente, evento",
-      "output": "estado/registro confirmado e histórico",
-      "evidence": "Contrato proposto, não chamada executada."
+      "from": "operator",
+      "to": "catalog_db",
+      "label": "Publicação/retirada com credencial própria"
     },
     {
-      "from": "nutrition",
-      "to": "pg",
-      "label": "Importação real; CRUD privado futuro",
-      "input": "Fonte, versão, nutrientes/estados e proveniência revisados",
-      "output": "6369food_versions + lote;0consumos novos",
-      "evidence": "ImportadorGo real e backupnovo restaurado; APIprivada não implementada"
-    },
-    {
-      "from": "manifest",
-      "to": "import",
-      "label": "Arquivo validado",
-      "input": "sourceIds, revisão, direitos, hash",
-      "output": "relatório dry run",
-      "evidence": "Contrato proposto, não chamada executada."
-    },
-    {
-      "from": "import",
-      "to": "pg",
-      "label": "Transação idempotente",
-      "input": "lote aprovado e versão",
-      "output": "conteúdo persistido; nenhuma história fictícia",
-      "evidence": "Contrato proposto, não chamada executada."
-    },
-    {
-      "from": "catalog",
-      "to": "media",
-      "label": "Entrega futura, ainda indisponível",
-      "input": "assetId/version/uso",
-      "output": "Hoje apenas referência/licença e indisponibilidade explícita; nenhum arquivo entregue",
-      "evidence": "V1-016 pendente,0mídias liberadas"
-    },
-    {
-      "from": "auth",
-      "to": "obs",
-      "label": "Telemetria redigida",
-      "input": "requestId/status/latência",
-      "output": "diagnóstico operacional",
-      "evidence": "Contrato proposto, não chamada executada."
-    },
-    {
-      "from": "activity",
-      "to": "obs",
-      "label": "Telemetria redigida",
-      "input": "requestId/status/latência",
-      "output": "diagnóstico operacional",
-      "evidence": "Contrato proposto, não chamada executada."
-    },
-    {
-      "from": "food_inputs",
-      "to": "food_preflight",
-      "label": "Snapshots preparados e hashes",
-      "input": "JSONL/planilhas/recibos locais já auditados e inventário22famílias",
-      "output": "Cobertura, conflitos, denominadores e estados preservados",
-      "evidence": "Processamento offline completo validado em22/10; nenhuma coleta repetida"
-    },
-    {
-      "from": "food_preflight",
-      "to": "food_candidate",
-      "label": "Candidato sem aprovação",
-      "input": "Cabeçalhos/unidades e medidas com proveniência",
-      "output": "Staginglocal+reciboagregado; runtime/cálculo false,0DB",
-      "evidence": "tools/preparar_alimentos_v1.py;13testes isolados; sem importadorGo nesta fatia"
-    },
-    {
-      "from": "food_candidate",
-      "to": "food_reviewed",
-      "label": "Revisão explícita porfonte/uso",
-      "input": "Evidências de direitos, grupo/base, identidade e cabeçalhos",
-      "output": "Artifactversionado + exclusões/requisitos",
-      "evidence": "tools/revisar_alimentos_v1.py; food-review-verification.json"
-    },
-    {
-      "from": "food_reviewed",
-      "to": "nutrition",
-      "label": "CLIimportadorGo real",
-      "input": "ArtifactSHA + revisãoSHA + metadados + valores",
-      "output": "Transação/versões/lote; não consome por usuário",
-      "evidence": "services/api/cmd/import-food; food-import-verification.json"
-    },
-    {
-      "from": "http",
-      "to": "privacy",
-      "label": "Política/exportação/intenção/exclusão",
-      "input": "Bearer próprio; frase e challenge quando necessário",
-      "output": "Página limitada ou exclusão confirmada, sem dados de outro titular",
-      "evidence": "privacy/handler.go; testes Go/PostgreSQL/Flutter; Google real pendente"
-    },
-    {
-      "from": "privacy",
-      "to": "pg",
-      "label": "Titularidade e transação",
-      "input": "Principal validado e schema privado conhecido",
-      "output": "Dados próprios, purge atômico e registro mínimo",
-      "evidence": "privacy/postgres.go; migration00007; testes descartáveis"
-    },
-    {
-      "from": "network_limits",
-      "to": "auth",
-      "label": "Admissão/IP/TLS antes da ação",
-      "input": "Peer real ou cadeia de proxy validada",
-      "output": "Requisição limitada ou rejeição429/503/426",
-      "evidence": "main.go; httpapi/network.go; limites por processo"
-    },
-    {
-      "from": "privacy_admin",
-      "to": "pg",
-      "label": "Manutenção e gate de restore",
-      "input": "Credencial administrativa local, alvo explícito",
-      "output": "Lote limitado ou alvo separado sanitizado; nenhuma promoção",
-      "evidence": "privacy-local-verification.json; wrappers locais"
+      "from": "operator",
+      "to": "core_db",
+      "label": "Espelho editorial verificado; sem segundo escritor autorizado"
     }
   ],
   "flows": [
     {
-      "id": "food_preflight",
-      "title": "Lote alimentar importado — V1-019",
-      "edgeLabel": "implementado e validado",
-      "steps": [
-        "Snapshots/recibos existentes",
-        "Preflight e proveniência por célula",
-        "Revisão específica de direitos/base/identidade",
-        "6369registros versionados /2excluídos",
-        "ImportaçãoGo idempotente noDBisolado",
-        "Backupnovo restaurado e tabelas iguais",
-        "Gate pendente: autorização/API/Flutteralimentar"
-      ]
-    },
-    {
       "id": "catalog_read",
-      "title": "Consulta real entregue — V1-014",
-      "edgeLabel": "implementado e validado",
+      "title": "Consulta entregue",
       "steps": [
-        "Entrada sem login ou conta conectada",
-        "Biblioteca:73movimentos /0programas",
-        "Busca e filtros da fonte",
-        "GET paginado: direitos/revisão/retirada",
-        "Detalhe da versão: autoria e licença",
-        "Requisitos desconhecidos e prática indisponível",
-        "Voltar / recarregar sem gerar treino"
+        "Busca/filtros reais",
+        "Versão permitida/retirada",
+        "Autoria/licença/ausência explícita"
       ]
     },
     {
-      "id": "journey",
-      "title": "Jornada principal planejada",
+      "id": "private_write",
+      "title": "Confirmação privada",
       "steps": [
-        "Entrar",
-        "Contexto mínimo",
-        "Biblioteca humana",
-        "Detalhe + origem + requisitos",
-        "Selecionar versão",
-        "Sessão / consulta permitida",
-        "Registrar realizado",
-        "Hoje / histórico"
+        "Revisão do usuário",
+        "Corpo/chave estáveis",
+        "Sessão/titular/revisão em transação",
+        "Resultado confirmado ou conflito"
       ]
     },
     {
-      "id": "food",
-      "title": "Alimentação planejada",
+      "id": "activity",
+      "title": "Execução implementada, prática condicionada",
       "steps": [
-        "Hoje",
-        "Alimentação",
-        "Buscar fonte real",
-        "Confirmar preparo e quantidade",
-        "Registrar consumo",
-        "Consultar / editar histórico"
-      ]
-    },
-    {
-      "id": "blocked",
-      "title": "Conteúdo sem cobertura",
-      "steps": [
-        "Detalhe",
-        "Requisito ou licença pendente",
-        "Motivo explícito",
-        "Consultar referência quando permitido / voltar"
+        "Programa/ocorrência aprovados são pré-condição",
+        "Sessão e eventos persistidos",
+        "Tela e replay do confirmado; intenção incerta somente em memória"
       ]
     }
   ],
-  "contracts": [
-    {
-      "method": "POST",
-      "path": "/api/v1/auth/google",
-      "input": "{idToken} real Google",
-      "output": "200 {accessToken,refreshToken,expiresIn,user:{id,name,email,image}}; público com rate limit; implementado localmente, Swagger gerado"
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/auth/refresh",
-      "input": "{refreshToken}",
-      "output": "200 rotação atômica;401 inválido/reuso; concorrência tem regra por família; implementado localmente, Swagger gerado"
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/auth/logout",
-      "input": "{refreshToken}",
-      "output": "204 revogado idempotentemente; implementado localmente, Swagger gerado"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/bootstrap",
-      "input": "Bearer, data/fuso se exigidos pelo resumo",
-      "output": "200 usuário, configuração mínima, contexto e resumo permitido; sem todos os catálogos/históricos"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/me",
-      "input": "Bearer access opaco",
-      "output": "200 identidade própria {id,name,email,image:null}; implementado; PATCH/perfil físico pendente"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/me/export",
-      "input": "Bearer",
-      "output": "200 exportação privada versionada; fluxo assíncrono apenas se volume justificar"
-    },
-    {
-      "method": "DELETE",
-      "path": "/api/v1/me",
-      "input": "Confirmação autenticada conforme política",
-      "output": "204/202 conforme operação definida; retenção/backup explicados"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/programs",
-      "input": "q, environment, population, modality, equipment, category, cursor, limit1..50, mode",
-      "output": "IMPLEMENTADO:200 {items,nextCursor,mode,notice}; tipos program/collection,0disponíveis no lote;304 revalidado,400/503"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/programs/{id}",
-      "input": "versionId SHA256 opcional, mode",
-      "output": "IMPLEMENTADO:200 metadados autorizados e requisitos;304 após verificar retirada;400/404/503. Sem dose/sessões/instrução/mídia"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/instructions/{id}",
-      "input": "versão e locale disponível",
-      "output": "200 texto permitido, dose/unidades, atribuição, mídia autorizada ou ausência; sem completar texto faltante"
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/enrollments",
-      "input": "{programVersionId, scheduleOptions, acknowledgements}",
-      "output": "201 adesão à versão e requisitos;409 conflito/422 opção incompatível; privado"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/enrollments",
-      "input": "cursor e status",
-      "output": "200 próprias adesões, incluindo arquivadas quando solicitado"
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/sessions",
-      "input": "{enrollmentId,occurrenceId,startedAt} + chave",
-      "output": "201 sessão real iniciada; reenvio devolve resultado estável;409 conflito"
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/sessions/{id}/events",
-      "input": "{type,occurredAt,payload} + chave; unidade e estado tipados",
-      "output": "200/201 evento e estado confirmado;403/404 recurso alheio conforme política consistente"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/history",
-      "input": "from, to, cursor, limit",
-      "output": "200 eventos/sessões reais com versão, autor, timestamps e próximos itens"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/summary",
-      "input": "date, timezone",
-      "output": "200 planejado/realizado separados, alimentação, métricas com origem; campos sem dado são null/ausentes conforme schema"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/foods",
-      "input": "q (espaços normalizados), sourceId, cursor, limit1..50",
-      "output": "IMPLEMENTADO:200 referências públicas revisadas com nomes/idiomas/base/fonte;304 após verificar retirada;400/503. Sem consumo."
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/food-entries",
-      "input": "{foodVersionId,quantity,unit,occurredAt,timezone} + chave",
-      "output": "201 consumo confirmado com cálculo rastreável;422 unidade não suportada"
-    },
-    {
-      "method": "GET/PATCH/DELETE",
-      "path": "/api/v1/food-entries/{id}",
-      "input": "alteração confirmada ou exclusão",
-      "output": "200/204, somente titular; edição recalcula usando versão e fatores declarados"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/health/live",
-      "input": "Sem dados pessoais",
-      "output": "200 processo; readiness503 se dependências necessárias não disponíveis, sem divulgar senha/host interno; implementado localmente, Swagger gerado"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/health/ready",
-      "input": "Sem dados pessoais",
-      "output": "200 pronto;503 dependência necessária indisponível, sem detalhes sensíveis; implementado localmente, Swagger gerado"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/movements",
-      "input": "Mesmos filtros de programs",
-      "output": "IMPLEMENTADO:73referências de movimento, nunca programa renomeado; paginação/ETag e metadados somente"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/movements/{id}",
-      "input": "versionId SHA256 opcional, mode",
-      "output": "IMPLEMENTADO:metadados da versão;404 se retirada/não autorizada; nenhum payload instrucional"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/catalog/filters",
-      "input": "Sem parâmetros",
-      "output": "IMPLEMENTADO:facetas/contagens dos itens visíveis; desconhecidos contabilizados sem inferência"
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/foods/filters",
-      "input": "Sem parâmetros",
-      "output": "IMPLEMENTADO:fontes e contagens de registros visíveis, incluindo bases desconhecidas."
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/foods/{id}",
-      "input": "versionId SHA256 opcional",
-      "output": "IMPLEMENTADO:composição original/estados/bases/créditos;304 revalidado;400/404/503."
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/privacy",
-      "input": "Público; sem query",
-      "output": "IMPLEMENTADO: política200/no-store, limites de backups/restore/sessão e8seções."
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/me/export",
-      "input": "Bearer; section, cursor vinculado ao titular, limit1..50",
-      "output": "IMPLEMENTADO: página própria até1MiB, JSON original, nenhum token/nonce."
-    },
-    {
-      "method": "POST",
-      "path": "/api/v1/me/deletion-intent",
-      "input": "Bearer recente e confirmation exata",
-      "output": "IMPLEMENTADO: challenge de5min da mesma conta/família;409 sessão antiga."
-    },
-    {
-      "method": "DELETE",
-      "path": "/api/v1/me",
-      "input": "Bearer recente, confirmation e challenge",
-      "output": "IMPLEMENTADO: purge privado transacional, revogação de todas as sessões e registro mínimo; backup histórico explícito."
-    }
+  "pendingCapabilities": [
+    "V1-015/016: conteúdo humano aprovado, adesão/seleção, instruções/doses/mídias e agenda pelas dependências.",
+    "Fila privada durável e reconciliação após matar processo; não confundir rascunho em memória com offline.",
+    "Fotos/ciclo de exclusão, master explícito/revogável/auditável e demais critérios do backlog.",
+    "Auditoria integral, carga, HTTPS/release, iOS nativo e exposição/hospedagem conforme decisão específica."
   ],
-  "entities": [
-    {
-      "name": "Identity / User / AuthSession",
-      "description": "Provedor+issuer+sub identifica login; usuário é titular; sessão guarda hash/rotação/revogação por dispositivo"
-    },
-    {
-      "name": "Source / Attribution / RightsRecord",
-      "description": "Origem primária, autores/contribuições, evidência e permissões por ativo/versão; licença desconhecida é estado explícito"
-    },
-    {
-      "name": "Movement / MovementVersion",
-      "description": "Conceito e variante concreta com população, ambiente e equipamentos; não confundir gesto com programa"
-    },
-    {
-      "name": "InstructionVersion / MediaAsset",
-      "description": "Expressão instrucional e mídia separadas, idioma, autoria, revisão, direito de exibir/redistribuir e alternativa acessível"
-    },
-    {
-      "name": "Program / ProgramVersion",
-      "description": "Unidade editorial estável e versão imutável; pode ser programa integral ou coleção modular explicitamente identificada"
-    },
-    {
-      "name": "ProgramSession / PrescriptionItem",
-      "description": "Ordem e dose da versão, referência exata ao componente/instrução, progressão permitida e apoio exigido"
-    },
-    {
-      "name": "Enrollment / ScheduleOccurrence",
-      "description": "Adesão de um titular a uma versão, opções permitidas e ocorrência em data/fuso; não duplicar a prescrição por usuário"
-    },
-    {
-      "name": "ActivitySession / ActivityEvent",
-      "description": "Execução realmente iniciada e eventos confirmados: pausa, medida, conclusão parcial/completa; autor do registro separado do titular"
-    },
-    {
-      "name": "IdempotencyRecord",
-      "description": "Usuário+operação+chave, hash do request e resultado; reenvio igual recupera resposta, payload divergente é conflito"
-    },
-    {
-      "name": "Food / FoodVersion / NutrientValue",
-      "description": "Alimento/preparo e versão da fonte, base por100g/100ml, nutrientes com ausência distinta de zero"
-    },
-    {
-      "name": "FoodEntry",
-      "description": "Quantidade e unidade confirmadas, data/fuso, alimento/versão e fatores usados no cálculo; edição rastreável"
-    },
-    {
-      "name": "CareRelationship (posterior)",
-      "description": "Vínculo e autorização explícitos para pessoa assistida; não pressuposto pelo perfil “cuidador”"
-    },
-    {
-      "name": "DeletionIntent / AccountErasure",
-      "description": "Desafio temporário por titular/família e registro mínimoUUID/data separado das contas para barrar reaparecimento em restore"
-    }
+  "references": [
+    "docs/arquitetura/README.md",
+    "docs/arquitetura/camadas-e-fluxos.md",
+    "docs/arquitetura/modelo-e-contratos.md",
+    "docs/arquitetura/decisoes.md",
+    "docs/arquitetura/seguranca-operacao.md",
+    "docs/execucao/v1/backlog.json"
   ]
 }

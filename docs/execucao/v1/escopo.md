@@ -1,82 +1,44 @@
-# V1: produto real para teste Android
+# Produto acordado e prioridades da V1
 
-Direção de 21/10/2026. **Produto final Android e iOS; desenvolvimento e primeira entrega em Android.** O primeiro teste da esposa é teste de experiência/funcionamento, sem presumir idade, condição clínica, profissão, elegibilidade ou apoio disponível.
+Consolidado em **17/11/2026**. O TrainForge é um produto móvel Android/iOS para treino, alimentação e acompanhamento, com prioridade a idosos e cuidadores como praticantes, em casa, praça/parque, academia e outros contextos pesquisados. [Visão R01–R18](../../planejamento/visao-produto.md) conserva os requisitos; [backlog](backlog.json) contém histórias e critérios. A faculdade é uma apresentação do trabalho, não o limite comercial do produto.
 
-Objetivo ajustado pelas [respostas do autor](decisoes-piloto.md): obter APKs de avaliação durante o desenvolvimento para percorrer o aplicativo como um todo, cenário por cenário, entender o estado real e orientar mudanças antes do produto completo. Cada versão identifica o que funciona, o que falta e o que está restrito, sem simular capacidades. A V1 integrada permite autenticar uma pessoa real, consultar a biblioteca pesquisada, entender fonte/requisitos, registrar ações e recuperar histórico persistido. Alimentação inclui busca em base ampla pesquisada, quantidade/registro e cadastro real de alimento pelo usuário.
+<a id="decisoes"></a>
+## Decisões do autor e consequências
 
-## Respostas Q1 incorporadas em24/10
+| Bloco | Decisão registrada | Consequência |
+|---|---|---|
+| Q1 —24/10 | Preservar todos os públicos/ambientes e dois caminhos de treino: programa compatível e composição controlada. Alimento por foto e composição antecipados paraV1. | Não reduzir o produto a musculação nem prometer prescrição por IA; disponibilidade depende de regras/conteúdo revisados. |
+| Q2 —25/10 | Refeições e alimentos são visões dos mesmos registros; histórico visual/análise/dicas avaliados juntos. | Evitar bancos/totais divergentes e não substituir quantidade informada por uma foto. |
+| Q3 —25/10 | Configuração completa antes de selecionar; programa pronto ou composição, trocas compatíveis, dias/horários e retomar ou encerrar parcial. Cuidador pratica para si em suas pausas. | Falta de recurso/instrução não vira adaptação inventada. Saída/timer/processo encerrado não concluem treino. |
+| Q4 —25/10 | Alimentação e andamento offline com fila durável privada; fotos recuperáveis pela conta/cache; excluir refeição exclui foto. | Isolamento de titular, confirmação/reenvio/conflito e exclusão sem recriar dados são critérios próprios. Retentativa em memória não encerra026. |
+| Q5 —25/10 | Etapas curtas de configuração com revisão final; nome traduzido quando revisado, original/fonte nos detalhes. | Preservar respostas ao voltar; quatro idiomas naUI não equivalem a cobertura editorial integral. |
+| Q6 —25/10 | Dados particulares excluíveis pelo titular ou pelo master do autor, com permissão real no servidor; avaliar todos os cenários. | Master revogável/auditável é uma história pendente, sem bypass por e-mail/GitHub. Não presumir participantes ou autorização para apagar dados reais. |
+| 16/11 | Incorporar comportamentos úteis com implementação própria, mantendoFlutter/Go/PostgreSQL; sem web, alimentação como foco desta rodada ou cópiaAGPL/mídia com novas obrigações. | Avançar execução sem reescrever a base, criar treinos fictícios ou comprar mídia por inferência. |
 
-Dois caminhos de treino:escolher programas humanos compatíveis e compor exercícios com regras humanas revisadas(V1-044), sem dose inventada. Cuidador é o praticante nas pausas do próprio trabalho; acompanhamento de pessoa assistida não é requisito desta entrega.
+As perguntas e respostas originais estão em `docs/execucao/v1/decisoes-piloto.md` no [acervo histórico](../../historico/README.md). A organização acima reúne a decisão final, sem tratar cada proposta anterior como vigente.
 
-Alimento por foto entra no recorte desejado(V1-042):analisar → revisar/corrigir/remover/adicionar alimentos → informar quantidade por item → calcular pela base/versão → confirmar consumo. Não inferir peso ou nutrientes como fatos da imagem. Histórico visual e continuidade entre aparelhos fazem parte da expectativa; a recuperação das fotos pela conta, com cache no celular, foi aprovada no Q2 descrito abaixo. [Decisões completas](decisoes-piloto.md).
+## Regras que atravessam o produto
 
-## Respostas Q2 incorporadas em 25/10
+- Programa, movimento, instrução, dose e mídia são ativos diferentes, ligados a versão, fonte, autoria e direitos por operação. Pesquisa, tradução de apresentação e cache não liberam publicação ou prática.
+- Configuração respeita contexto, ambiente e recursos efetivamente informados; desconhecido permanece desconhecido. Adequação clínica e exigência profissional não são inferidas pelo nome de uma condição.
+- Conta nova começa sem histórico, medidas, calorias ou resultados de demonstração. Planejado e realizado ficam separados; ausência não vira zero, vídeo falso ou sucesso simulado.
+- Foto sugere candidatos editáveis; a pessoa informa quantidade e confirma. Original, preparo, unidade, composição e histórico não mudam ao traduzir um nome.
+- Servidor verifica identidade/titularidade/revisão. Logs, backup, restauração, exclusão, fila e anexos privados têm critérios de proteção próprios.
+- Emulador primeiro e Android físico depois; iOS, lojas, sensores/GPS, OCR/barcode e delegação conservam seus recortes no backlog. Todos os cenários permanecem visíveis com status honesto.
 
-Agrupar por refeição e oferecer também a visão por alimento, usando os mesmos registros/cálculos sem dupla contagem (V1-045). **Histórico visual, análise nutricional e dicas revisadas devem ser entregues juntos na primeira versão** (V1-046); não adiar parte do conjunto sem nova decisão.
+<a id="prioridades"></a>
+## O que vem antes do quê
 
-A análise mostra somente os registros disponíveis, com período/fuso, dias com dados, estimativas, métodos e desconhecidos. Dicas exigem fonte, versão, regra e revisão humana; não diagnosticar deficiência ou criar metas clínicas por diário parcial.
+O JSON do backlog é a fonte única de status/dependências: **19 done,6 doing,24 todo** no checkpoint funcional. A limpeza documental não encerra histórias. A próxima funcional é **V1-015**, condicionada a um primeiro programa próprio com instruções, dose e revisão verificáveis, seguido de seleção/adesão e agenda. Execução017/023 já tem motor/API/UI, sem conteúdo liberado para completar o ciclo.
 
-Após a [pesquisa comparativa de fotos](pesquisa-fotos-historico.md), o autor aprovou **recuperar fotos pela conta, com cache no celular**. Fotos já sincronizadas devem acompanhar o histórico em outro aparelho; rascunhos não enviados não têm recuperação garantida. Q4 definiu excluir foto com a refeição; retenção/limites e mecanismo de limpeza serão detalhados antes da liberação. Não autoriza hospedagem ou envio de fotos agora.
+Trabalho independente de conteúdo pode continuar pelos gates de qualidade, privacidade e operação. Fotos042, composição044, refeições045, histórico/análise046, offline026, master049, acessibilidade027 e entrega035 têm critérios próprios; não são substituídos por uma tela, uma tabela ou documentação.
 
-## Respostas Q3 incorporadas em 25/10
+## Pronto para piloto e pronto para venda
 
-O autor escolheu configuração completa antes de procurar/selecionar treino (V1-047), troca de exercícios compatíveis e edição de dias/horários (015/044), além de oferecer retomada ou encerramento parcial de treino interrompido (017/023).
+Um APK incremental pode ser avaliado antes de todaV1, com roteiro que mostre disponível/incompleto/bloqueado/ainda não implementado. A [matriz de cenários](matriz-cenarios.md) não permite fingir capacidades ausentes. Para distribuir aos colegas, precisamos de API acessível por HTTPS, configuração correta de autenticação, artefato assinado e validação do fluxo habilitado.
 
-Completar o contexto exige finalidade para cada campo, revisão e persistência privada; não herdar obrigatoriedade de peso/altura/idade/gordura do legado ou reativar geração por IA. Consulta de referências e alimentação conservam seu escopo. Mudanças respeitam as regras humanas, direitos e versões; não alteram sessões passadas nem inventam dose, progresso ou conclusão. [Detalhes e matriz de campos](decisoes-piloto.md).
+Para V1 completa, conferir todos os critérios do backlog: ao menos uma fatia de prática humana revisada; autorização/reenvio e exclusão; dados e fontes rastreáveis; testes/restore e segurança; offline/fotos quando exigidos; idiomas/acessibilidade; artefato e aceite humano. Um teste técnico descartável não é um registro humano nem uma aprovação clínica.
 
-## Respostas Q4 incorporadas em 25/10
+## Compras e novas pesquisas
 
-Excluir refeição inteira também exclui foto/miniaturas, sem galeria separada; coordenar banco/arquivos/cache/fila para retentativa não recriar dados excluídos (042/045).
-
-Registrar alimentação e andamento de treino offline, com dados disponíveis e uso permitido, salvando em fila durável privada e mostrando pendência até confirmar/reconciliar na API (026). Troca de conta, revogação, conflito e falha do processo não podem misturar titulares ou duplicar registros. Reconhecimento de foto tem disponibilidade própria, sem promessa de modelo local. [Critérios completos](decisoes-piloto.md).
-
-## Respostas Q5 incorporadas em 25/10
-
-Configuração completa em etapas curtas por assunto, com retorno/correção sem perder respostas e revisão final antes da confirmação (047).
-
-Nome traduzido quando houver tradução revisada para o idioma escolhido; original/idioma/fonte/versão nos detalhes e fallback original quando faltar revisão (048). UI em pt-BR, pt-PT, inglês e espanhol; traduzir apresentação não altera preparo, base, unidade, nutrientes, identidade ou histórico. Consulta por nome traduzido usa correspondência revisada, sem mesclar alimentos ou publicar tradução automática como revisão. [Decisões completas](decisoes-piloto.md).
-
-## Respostas Q6 incorporadas em 25/10
-
-Dados particulares podem ser excluídos pelo usuário que os incluiu ou pelo administrador master do autor do projeto (049). A exceção exige papel explícito no servidor, identidade verificada, confirmação e auditoria; não está implementada nem foi provisionada por esta decisão. Não implica leitura/edição irrestritas ou exclusão do catálogo compartilhado.
-
-A avaliação cobre todos os cenários da matriz, com resultado real ou limitação explícita por cenário. Isso não confirma participação de públicos nem promove capacidades posteriores para V1 por inferência. Preservar dados reais; testes técnicos isolados e aceite humano têm evidências distintas. [Decisões completas](decisoes-piloto.md).
-
-## Compromissos da V1
-
-- Conteúdo de fontes humanas existentes, com autoria/contribuição, evidência, versão e direitos por ativo. Inventariar toda a cobertura pesquisada; importar todo material utilizável e permitido em lotes técnicos. Lote candidato e lote aprovado são manifestos distintos;331 famílias não equivalem a331 importações autorizadas.
-- Movimentos, instruções, mídia e programas inteiros são objetos diferentes. Coleção modular informa essa natureza e conserva autoria de cada peça. Não herda a eficácia do programa original.
-- Casa, praça/parque, academia, idosos e cuidadores continuam na matriz. Disponibilidade e limites reais são exibidos mesmo quando um recorte só permite consulta. Cuidador é o próprio praticante durante pausas do trabalho; pessoa assistida é possibilidade posterior, não requisito do modo cuidador.
-- Frontend consulta nossa API e banco alimentados por lotes revisados. Não há exigência de acesso ao fornecedor a cada toque. Cache não transforma um conteúdo proibido em autorizado.
-- Conta, preferências, consumo e atividade vêm de entradas/ações reais do testador. Novo usuário começa sem histórico, sem peso, calorias, refeições, fotos ou progressos pré-preenchidos.
-- Interface cobre loading, vazio, falha, bloqueio, rede indisponível e retomada, além do caminho feliz. Ausência não vira zero medido, vídeo falso ou texto criado por IA.
-- Mostrar foto e vídeo quando ambos existirem e tiverem uso permitido, ou somente a mídia disponível. Item sem mídia continua visível quando permitido, com ausência explícita; falta de instrução é outra lacuna e não libera prática guiada automaticamente.
-- Alimentação permite buscar na base e cadastrar item próprio com dados reais informados; cadastro próprio não herda validação editorial nem vira público por inferência. A base pesquisada deve ter cobertura ampla, com importação/rejeições/pendências contabilizadas.
-- Ensino para autonomia é o objetivo; seleção por ambiente/equipamento respeita requisitos da fonte. Não presumir máquina disponível, inventar adaptação doméstica ou retirar acompanhamento exigido pelo material.
-- Logs sem segredos/dados físicos, autorização por recurso, refresh/revogação, backup restaurado, endpoint HTTPS e assinatura release são critérios de entrega.
-
-## O que ainda precisa ser decidido com evidência
-
-`V1-001/005/019` selecionam o lote útil e realmente liberado, com quantidades, população, instrução, revisão e direitos. A pesquisa fechou N01–N46 nos recortes, mas não homologou331 fornecedores nem toda prática. Se nenhum item atender a um uso, a V1 mostra a lacuna e não finge treinamento executável. A definição de pronto exige ao menos uma fatia que permita o uso previsto; só navegação em referência não conta como prática liberada.
-
-N15 tem11 componentes para cuidadores no recorte modular; ES2019-DOM-01 tem5 movimentos domésticos para idosos, separados. Protocolos que exigem fisioterapeuta/facilitação não se tornam autônomos no APK. Não presumir parceiros, contato com fornecedor, instrutor ou verba de conteúdo. Sem nova coleta sem pista; não reabrir todas as N para recuperar contexto.
-
-## Depois do primeiro piloto
-
-O [backlog](backlog.md) mantém iOS/TestFlight/lojas emV1.1; expansão de modalidades/importação própria, sensores/GPS, OCR/barcode, imagem deatividade e acompanhamento de terceiros seguem posteriores. Composição controlada044 e alimento por foto042 foram antecipados paraV1 pelas respostasQ1; agrupamento045 e histórico/análise/dicas046 integramV1 apósQ2. Esses recursos não serão simulados no APK para parecer completos. R12/R13 continuam na visão; não estão descartados. Nutrição avançada/prescrição individual exige viabilidade própria, distinta do organizador de consumo.
-
-## APKs intermediários para avaliação
-
-Não exigir o fechamento de todas as histórias da V1 para o autor avaliar a experiência no aparelho. Preparar builds incrementais com roteiro da matriz completa, indicando cenários disponíveis, incompletos e ainda não implementados. Isso não move automaticamente histórias posteriores para a V1 nem declara todos os cenários funcionais. Fluxos habilitados usam API/dados reais, controles de acesso e configuração apropriada ao ambiente; nenhuma operação com dado pessoal é liberada sem os controles correspondentes. O aceite integral abaixo continua sendo o marco da V1 completa.
-
-## Definição de pronto da entrega à esposa
-
-1. Manifesto do lote e uso revisados; nenhuma mídia/instrução incorporada sem direitos demonstrados.
-2. API, PostgreSQL e Flutter integrados no ambiente de teste, com login real e registros persistidos.
-3. Configuração completa, os dois caminhos de treino com trocas compatíveis/agenda e retomada/parcial, alimentação manual/por foto revisada, visões por refeição/alimento e histórico visual/análise/dicas revisadas verificados contra o banco; dados ausentes e erros honestos, sem práticas ou orientação não aprovadas.
-4. Sessões idempotentes, retomada, registro offline durável/sincronização, logout/revogação, isolamento e autorização de exclusão por usuário/master verificados; exclusão da refeição/foto não é desfeita por reenvio.
-5. Análise, testes de contrato/integração, revisão de segurança e backup/restore com evidências reais.
-6. APK release assinado, instalado/atualizado, certificado e SHA256 conferidos; link privado e roteiro de teste.
-7. Configuração em etapas/revisão, interface nos quatro idiomas e nomes revisados/fallback verificados; notas de versão explicam cobertura/limites. Aceite e feedback da esposa registrados somente quando acontecerem.
-
-Testes isolados podem ter fixtures explicitamente marcadas; testes de carga podem usar base sintética separada. Não são fontes do app nem seeds do ambiente entregue.
+Priorizar opções gratuitas com direitos claros. Avaliações de preço, teto antigoR$ 400 e interesse posteriorMoveKitR$ 779 são históricos; nenhum deles autorizou compra, assinatura, cadastro, contato ou hospedagem. Os preços datados não são ofertas atuais. Reabrir pesquisa quando houver uma lacuna concreta e nova pista, preservando o [catálogo de fontes](../../conteudo/catalogo-fontes.md).

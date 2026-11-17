@@ -9,25 +9,47 @@ import gerar_diagramas as diagrams
 class ReviewedDiagrams(unittest.TestCase):
     def test_generated_files_are_current_and_have_valid_references(self):
         generated = diagrams.outputs()
-        self.assertEqual(len(generated), 30)
+        maps = json.loads((diagrams.DIRECTORY/'mapas.json').read_text(encoding='utf-8'))['diagrams']
+        self.assertEqual({p.stem for p in generated if p.suffix == '.svg'}, {d['id'] for d in maps})
+        editable = [p for p in diagrams.DIRECTORY.glob('*.drawio')]
+        self.assertEqual([p.name for p in editable], ['trainforge.drawio'])
         for path, value in generated.items():
             with self.subTest(file=path.name):
                 self.assertEqual(path.read_text(encoding='utf-8'), value)
+                if path.suffix not in {'.drawio', '.svg'}:
+                    continue
                 root = ET.fromstring(value)
                 if path.suffix != '.drawio':
                     continue
-                cells = root.findall('.//mxCell')
-                ids = [cell.attrib['id'] for cell in cells]
-                self.assertEqual(len(ids), len(set(ids)))
-                self.assertTrue({'0', '1'} <= set(ids))
-                for cell in cells:
-                    if 'parent' in cell.attrib:
-                        self.assertIn(cell.attrib['parent'], ids)
-                    if cell.attrib.get('edge') == '1':
-                        self.assertIn(cell.attrib['source'], ids)
-                        self.assertIn(cell.attrib['target'], ids)
-                    if cell.attrib.get('vertex') == '1':
-                        self.assertIsNotNone(cell.find('mxGeometry'))
+                pages = root.findall('diagram')
+                self.assertEqual([p.attrib['id'] for p in pages], [d['id'] for d in maps])
+                self.assertEqual([p.attrib['name'] for p in pages], [d['title'] for d in maps])
+                for page in pages:
+                    # draw.io starts a new graph with roots 0/1 on each page.
+                    cells = page.findall('.//mxCell')
+                    ids = [cell.attrib['id'] for cell in cells]
+                    self.assertEqual(len(ids), len(set(ids)))
+                    self.assertEqual(ids[:2], ['0', '1'])
+                    for cell in cells:
+                        if 'parent' in cell.attrib:
+                            self.assertIn(cell.attrib['parent'], ids)
+                        if cell.attrib.get('edge') == '1':
+                            self.assertIn(cell.attrib['source'], ids)
+                            self.assertIn(cell.attrib['target'], ids)
+                        if cell.attrib.get('vertex') == '1':
+                            self.assertIsNotNone(cell.find('mxGeometry'))
+
+    def test_api_index_tracks_specification_without_inventing_operations(self):
+        spec = {'info': {'version': 'fixture'}, 'basePath': '/api/v1', 'paths': {
+            '/public': {'parameters': [], 'get': {'tags': ['catalog']}},
+            '/me/private': {'post': {'tags': ['private'], 'security': [{'BearerAuth': []}]}}
+        }}
+        rendered = diagrams.api_markdown(spec)
+        self.assertIn('**2 operações**', rendered)
+        self.assertIn('| GET | /api/v1/public | catalog | Pública |', rendered)
+        self.assertIn('| POST | /api/v1/me/private | private | Bearer / titular |', rendered)
+        del spec['paths']['/public']
+        self.assertNotIn('| GET | /api/v1/public |', diagrams.api_markdown(spec))
 
     def test_database_maps_cover_real_tables_and_only_real_foreign_keys(self):
         source = json.loads((diagrams.DIRECTORY/'schema-publico.json').read_text(encoding='utf-8'))

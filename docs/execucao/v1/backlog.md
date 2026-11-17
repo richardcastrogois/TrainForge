@@ -16,7 +16,7 @@ Como responsável pelo produto, quero avaliar o app inteiro com conteúdo real e
 
 Dependências: nenhuma
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/opcoes-apis-exercicios.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/opcoes-apis-exercicios.md
 
 Critérios de aceite:
 
@@ -40,9 +40,9 @@ Tarefas e subtarefas:
 
 Validação: Revisão do manifesto contra evidências locais; Conferir que componentes isolados não aparecem como programa integral; Conferir cobertura ampla, lacunas de mídia/instrução e estados de cenários contra os registros reais, sem fechar a história apenas por registrar decisões; python tools/validar_manifesto_piloto.py: fontes/ponteiros/hashes/cobertura/estados e matriz conferidos; nao homologacao de pratica
 
-Entregas: content/manifests/pilot-candidates.json; docs/execucao/v1/matriz-cenarios.md; docs/execucao/v1/decisoes-piloto.md; docs/conteudo/opcoes-apis-exercicios.md; tools/validar_manifesto_piloto.py; docs/execucao/v1/verificacao-manifesto.json
+Entregas: content/manifests/pilot-candidates.json; docs/execucao/v1/matriz-cenarios.md; docs/execucao/v1/escopo.md; docs/conteudo/opcoes-apis-exercicios.md; tools/validar_manifesto_piloto.py; docs/execucao/v1/verificacao-manifesto.json
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-002 — Aceitar a decisão Go e definir a fronteira de migração
 
@@ -52,7 +52,7 @@ Como mantenedor, quero um serviço com responsabilidade clara para evitar duas A
 
 Dependências: V1-001
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
 
 Critérios de aceite:
 
@@ -73,7 +73,7 @@ Validação: Revisão do inventário de contratos; Checar ausência de dual writ
 
 Entregas: ADR final; Mapa de compatibilidade e fronteiras
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.
 
 ### V1-003 — Manter documentação arquitetural dinâmica no repositório
 
@@ -83,7 +83,7 @@ Como autor ou pessoa que clona o repositório, quero ler arquitetura, telas, HTT
 
 Dependências: nenhuma
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/documentacao-dinamica.md; docs/arquitetura/swagger-go.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/manutencao.md
 
 Critérios de aceite:
 
@@ -121,7 +121,7 @@ Como curador, quero separar movimentos, instruções, mídia e programas complet
 
 Dependências: V1-001
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -140,9 +140,9 @@ Tarefas e subtarefas:
 
 Validação: Validar manifesto com 11 componentes N15 e pacote ES2019 separados; Rejeitar componente sem proveniência ou unidade válida
 
-Entregas: content/schemas/editorial-v1.schema.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-prepared.json; tools/conteudo_editorial.py; tools/preparar_conteudo_local.py; docs/conteudo/preparacao-local-2026-10-21.md
+Entregas: content/schemas/editorial-v1.schema.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-prepared.json; tools/conteudo_editorial.py; tools/preparar_conteudo_local.py; docs/conteudo/evidencias-para-integracao.md
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-005 — Revisar o lote real para o uso do piloto
 
@@ -152,7 +152,7 @@ Como usuário, quero ver apenas o uso que o material realmente permite.
 
 Dependências: V1-004
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; docs/conteudo/preparacao-local-2026-10-21.md; content/manifests/pilot-review-decisions.json; content/manifests/pilot-approved.json; docs/conteudo/revisao-consulta-2026-10-21.md; content/manifests/pilot-dispositions.json
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md; content/schemas/editorial-v1.schema.json; content/manifests/pilot-prepared.json; content/manifests/pilot-rights-matrix.json; content/manifests/pilot-review-queue.json; content/manifests/pilot-review-decisions.json; content/manifests/pilot-approved.json; content/manifests/pilot-dispositions.json
 
 Critérios de aceite:
 
@@ -171,9 +171,9 @@ Tarefas e subtarefas:
 
 Validação: Revisão linha a linha da allowlist; Tentar publicar item bloqueado e comprovar rejeição
 
-Entregas: content/manifests/pilot-approved.json (somente metadados de consulta); content/manifests/pilot-dispositions.json; docs/execucao/v1/etapa-01-fechamento.md
+Entregas: content/manifests/pilot-approved.json (somente metadados de consulta); content/manifests/pilot-dispositions.json; docs/execucao/v1/implementacao.md
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-006 — Importar conteúdo de forma idempotente e auditável
 
@@ -183,7 +183,7 @@ Como operador, quero carregar o lote aprovado no PostgreSQL sem pesquisa em runt
 
 Dependências: V1-005, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -204,7 +204,7 @@ Validação: Integração PostgreSQL com manifesto real permitido; Dry run invá
 
 Entregas: cmd/import-content; Relatório de importação e rollback editorial
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP03 — Fundação Go, contratos e banco
 
@@ -218,7 +218,7 @@ Como desenvolvedor, quero iniciar API e testes de forma previsível com módulos
 
 Dependências: V1-002
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -239,7 +239,7 @@ Validação: go test ./...; go vet ./... e processo inicia/finaliza sem conexão
 
 Entregas: services/api/go.mod; Servidor local e instruções reproduzíveis
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-008 — Gerar Swagger dos comentários e DTOs Go antes do cliente
 
@@ -249,7 +249,7 @@ Como integrador, quero comentar os handlers/tipos Go e obter Swagger atualizado 
 
 Dependências: V1-004, V1-007
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/swagger-go.md; docs/arquitetura/camadas-go.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/manutencao.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -274,7 +274,7 @@ Validação: Gerar duas vezes e comparar os derivados; mudar comentário e confe
 
 Entregas: services/api/internal/swaggerdocs/docs.go (gerado); contracts/generated/swagger-v1.json e swagger-v1.yaml (gerados); Watcher de desenvolvimento e validação de contrato na CI; Política de compatibilidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-009 — Modelar conteúdo versionado, adesão e ocorrências
 
@@ -284,7 +284,7 @@ Como usuário, quero repetir uma atividade em outra data sem perder histórico o
 
 Dependências: V1-004, V1-007
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -305,7 +305,7 @@ Validação: Revisão ER/contratos com N15 e prática por tempo; Casos semana re
 
 Entregas: Modelo lógico revisado; Decisão de invariantes e consultas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-010 — Criar migrations e testar backup/restauração
 
@@ -315,7 +315,7 @@ Como operador, quero evoluir o banco sem perder pesquisa ou registros pessoais.
 
 Dependências: V1-009
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/arquitetura-alvo.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -336,7 +336,7 @@ Validação: Migrations do zero e upgrade em DB de teste; Restore conferido; nun
 
 Entregas: services/api/migrations; Runbook de backup/restore com resultado
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP04 — Identidade, privacidade e acesso
 
@@ -350,7 +350,7 @@ Como testador, quero entrar com minha conta real e usar a mesma identidade nas d
 
 Dependências: V1-008, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -371,7 +371,7 @@ Validação: Integração com login real no Android; Testes de token inválido/e
 
 Entregas: Auth Go e contrato de sessão; Guia OAuth por ambiente
 
-Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ### V1-012 — Rotacionar e revogar refresh tokens
 
@@ -381,7 +381,7 @@ Como usuário, quero continuar conectado e encerrar acesso de forma confiável.
 
 Dependências: V1-011
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -402,7 +402,7 @@ Validação: Teste PostgreSQL concorrente; Login, expiração, refresh e logout 
 
 Entregas: Ciclo de sessão Go/Flutter; Política de reuso e dispositivos
 
-Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ### V1-013 — Aplicar autorização, limites e ciclo dos dados
 
@@ -412,7 +412,7 @@ Como titular, quero que só eu acesse meus registros e que exclusão seja verifi
 
 Dependências: V1-011, V1-009
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/privacidade-013.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md; docs/execucao/v1/implementacao.md
 
 Critérios de aceite:
 
@@ -433,7 +433,7 @@ Validação: Testes BOLA em todos os recursos privados; Teste de spoof de forwar
 
 Entregas: Matriz de acesso; Política de privacidade do piloto e operações de dados
 
-Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
+Handoff: 23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.
 
 ### V1-049 — Autorizar exclusão própria e exceção master auditada
 
@@ -443,7 +443,7 @@ Como titular, quero que somente minha conta possa excluir meus dados particulare
 
 Dependências: V1-012, V1-013, V1-017, V1-020, V1-021, V1-042, V1-045
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/execucao/v1/matriz-cenarios.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/execucao/v1/matriz-cenarios.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -488,7 +488,7 @@ Como praticante, quero comparar opções reais por público, local e apoio.
 
 Dependências: V1-006, V1-008
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -509,7 +509,7 @@ Validação: Contrato e DB com lote real; Filtro e item retirado não vazam cont
 
 Entregas: Handlers e queries de catálogo; Respostas verificadas do lote
 
-Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver catalogo-consulta.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.
+Handoff: 22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver docs/execucao/v1/implementacao.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.
 
 ### V1-047 — Persistir configuração completa antes da seleção de treino
 
@@ -519,7 +519,7 @@ Como praticante, quero concluir e revisar minha configuração antes de procurar
 
 Dependências: V1-008, V1-012, V1-013, V1-021, V1-048
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/execucao/v1/frontend-fidelidade-figma.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/execucao/v1/validacao-e-entrega.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -562,7 +562,7 @@ Como usuário, quero selecionar uma versão existente e uma agenda permitida pel
 
 Dependências: V1-014, V1-013, V1-047
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -584,7 +584,7 @@ Validação: Selecionar lote real no banco e consultar adesão; Rejeitar variant
 
 Entregas: API de enrollments; Fluxo de seleção humano
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte. 28/10: após047 funcional, conferência local mostrou zero programas/guided_practice e importador restrito a movimentos/catalog_metadata. Adesão e agenda ainda não implementadas; sem conteúdo humano não há aceite real. Continuar045 independente sem converter metadados em prescrição.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte. 28/10: após047 funcional, conferência local mostrou zero programas/guided_practice e importador restrito a movimentos/catalog_metadata. Adesão e agenda ainda não implementadas; sem conteúdo humano não há aceite real. Continuar045 independente sem converter metadados em prescrição.
 
 ### V1-016 — Expor instrução acessível e mídia com direitos
 
@@ -594,7 +594,7 @@ Como usuário, quero aprender o material disponível e saber quem o escreveu.
 
 Dependências: V1-014
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/dominio-e-banco.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/conteudo/README.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -616,7 +616,7 @@ Validação: Inspeção visual e acessibilidade do material real; Link indispon�
 
 Entregas: Contrato de instruction/media; Lista de ativos efetivamente liberados
 
-Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: 22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ### V1-044 — Compor treino com regras humanas revisadas
 
@@ -626,7 +626,7 @@ Como praticante, inclusive cuidador nas pausas do próprio trabalho, quero escol
 
 Dependências: V1-015, V1-016, V1-021
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/escopo.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md; docs/conteudo/evidencias-para-integracao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/modelo-e-contratos.md; docs/conteudo/evidencias-para-integracao.md
 
 Critérios de aceite:
 
@@ -669,7 +669,7 @@ Como usuário, quero iniciar e terminar uma sessão uma vez, mesmo com reenvio d
 
 Dependências: V1-015, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/execucao-treino-017.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; docs/execucao/v1/implementacao.md
 
 Critérios de aceite:
 
@@ -691,7 +691,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026. 16/11: agregado puro de execução e contrato/projeção Flutter implementados; ver execucao-treino-017.md. Testes em memória não concluem HTTP/SQL, idempotência durável, autorização, conteúdo ou jornada no APK. Segundo incremento16/11: persistência/eventos/replay durável e quatro rotas privadas, autenticação viva e testes SQL/HTTP em descartável; nenhuma migration/dado na base entregue. Flutter integrado à aba Atividade. Conteúdo e aceite real continuam abertos.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026. 16/11: agregado puro de execução e contrato/projeção Flutter implementados; ver docs/execucao/v1/implementacao.md#atividade. Testes em memória não concluem HTTP/SQL, idempotência durável, autorização, conteúdo ou jornada no APK. Segundo incremento16/11: persistência/eventos/replay durável e quatro rotas privadas, autenticação viva e testes SQL/HTTP em descartável; nenhuma migration/dado na base entregue. Flutter integrado à aba Atividade. Conteúdo e aceite real continuam abertos.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -701,7 +701,7 @@ Como usuário, quero saber o que registrei, sem números de demonstração.
 
 Dependências: V1-017
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -722,7 +722,7 @@ Validação: Conferir resumo contra linhas reais do DB; Casos fronteira de dia, 
 
 Entregas: API summary/history; Dicionário de métricas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-019 — Validar e importar o lote alimentar
 
@@ -732,7 +732,7 @@ Como usuário, quero procurar alimentos pesquisados com preparo e unidades corre
 
 Dependências: V1-004, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; content/manifests/pilot-prepared.json; docs/conteudo/preparacao-local-2026-10-21.md; docs/execucao/v1/alimentacao-preflight.md; content/manifests/food-review-decisions.json; docs/execucao/v1/alimentacao-importacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; content/manifests/pilot-prepared.json; docs/execucao/v1/implementacao.md; content/manifests/food-review-decisions.json
 
 Critérios de aceite:
 
@@ -754,7 +754,7 @@ Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura en
 
 Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
-Handoff: 22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver alimentacao-importacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.
+Handoff: 22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver docs/execucao/v1/implementacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.
 
 ### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 
@@ -764,7 +764,7 @@ Como usuário, quero registrar uma quantidade real e consultar o que consumi.
 
 Dependências: V1-019, V1-013, V1-008
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; docs/execucao/v1/implementacao.md
 
 Critérios de aceite:
 
@@ -787,7 +787,7 @@ Validação: Integração DB/API com alimento pesquisado; Conferir cálculo cont
 
 Entregas: API nutrition v1; Registro de consumo real
 
-Handoff: 23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver alimentacao-registro.md, nutrition-real-android-verification.json e frontend-fidelidade-figma.md.
+Handoff: 23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver docs/execucao/v1/implementacao.md, nutrition-real-android-verification.json e docs/execucao/v1/validacao-e-entrega.md.
 
 ### V1-042 — Reconhecer alimentos por foto com revisão e quantidade informada
 
@@ -797,7 +797,7 @@ Como usuário, quero fotografar uma refeição, corrigir os alimentos identifica
 
 Dependências: V1-013, V1-020, V1-025, V1-045
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/pesquisa-fotos-historico.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/conteudo/pesquisa-e-decisoes.md
 
 Critérios de aceite:
 
@@ -841,7 +841,7 @@ Como usuário, quero ver minha alimentação agrupada em refeições e também c
 
 Dependências: V1-020, V1-021
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/pesquisa-fotos-historico.md; docs/execucao/v1/escopo.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md
+Entradas: docs/execucao/v1/escopo.md; docs/conteudo/pesquisa-e-decisoes.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -879,7 +879,7 @@ Como usuário, quero acompanhar minhas refeições visualmente, analisar os nutr
 
 Dependências: V1-045, V1-020, V1-021
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/pesquisa-fotos-historico.md; docs/execucao/v1/escopo.md; docs/arquitetura/contratos-v1.md; docs/conteudo/evidencias-para-integracao.md
+Entradas: docs/execucao/v1/escopo.md; docs/conteudo/pesquisa-e-decisoes.md; docs/arquitetura/modelo-e-contratos.md; docs/conteudo/evidencias-para-integracao.md
 
 Critérios de aceite:
 
@@ -924,7 +924,7 @@ Como desenvolvedor, quero telas pequenas e dependências substituíveis sem rees
 
 Dependências: V1-008, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/frontend-fidelidade-figma.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -955,7 +955,7 @@ Como iniciante, quero escolher uma opção humana e entender por que ela está d
 
 Dependências: V1-014, V1-015, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -978,7 +978,7 @@ Validação: Teste widget de erro/vazio/seleção; Emulador com API/DB e manifes
 
 Entregas: Telas library/detail/enrollment; Mapa de fluxo atualizado
 
-Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
+Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir docs/execucao/v1/escopo.md e dependências, usando docs/execucao/v1/validacao-e-entrega.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 
@@ -988,7 +988,7 @@ Como praticante, quero acompanhar o material e registrar o que fiz sem perder a 
 
 Dependências: V1-016, V1-017, V1-022
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -1010,7 +1010,7 @@ Validação: Integração Android com reinício e duplo toque; Repetir em data f
 
 Entregas: Fluxo de sessão real; Evidência de recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução. 16/11: controller e tela única reutilizável na aba Atividade, composição lazy por conta e API persistida; formulário de realizado vazio, estados/encerramento explícitos, reenvio incerto só em memória. Conteúdo/instrução/player e recuperação de intenção após matar processo ainda pendentes; sem aceite nativo.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução. 16/11: controller e tela única reutilizável na aba Atividade, composição lazy por conta e API persistida; formulário de realizado vazio, estados/encerramento explícitos, reenvio incerto só em memória. Conteúdo/instrução/player e recuperação de intenção após matar processo ainda pendentes; sem aceite nativo.
 
 ### V1-024 — Implementar Hoje, histórico e perfil
 
@@ -1020,7 +1020,7 @@ Como usuário, quero enxergar meus próprios registros e gerenciar minha conta.
 
 Dependências: V1-018, V1-021, V1-013
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -1041,7 +1041,7 @@ Validação: Emulador com duas contas reais de teste autorizadas ou contas isola
 
 Entregas: Hoje/history/profile; Estado de conta e privacidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-025 — Implementar busca, cadastro próprio e registro alimentar no Flutter
 
@@ -1051,7 +1051,7 @@ Como usuário, quero consumir o lote alimentar real em uma refeição registrada
 
 Dependências: V1-020, V1-021, V1-048
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/alimentacao-consulta.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; docs/execucao/v1/implementacao.md
 
 Critérios de aceite:
 
@@ -1075,7 +1075,7 @@ Validação: Flutter analyze e widgets de unidades/ausência; Registro ponta a p
 
 Entregas: Feature nutrition; Refeição persistida e exibida
 
-Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
+Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme docs/execucao/v1/escopo.md. Fonte visual única:docs/execucao/v1/validacao-e-entrega.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
@@ -1085,7 +1085,7 @@ Como usuário, quero ler material já autorizado e saber quando um registro aind
 
 Dependências: V1-023, V1-025
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/decisoes-piloto.md; docs/arquitetura/seguranca-operacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md; docs/arquitetura/seguranca-operacao.md
 
 Critérios de aceite:
 
@@ -1130,7 +1130,7 @@ Como usuário, quero usar a interface em meu idioma e entender nomes alimentares
 
 Dependências: V1-020, V1-021
 
-Entradas: docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/frontend-fidelidade-figma.md; docs/execucao/v1/escopo.md; docs/arquitetura/dominio-e-banco.md; docs/arquitetura/contratos-v1.md; docs/conteudo/evidencias-para-integracao.md
+Entradas: docs/execucao/v1/escopo.md; docs/execucao/v1/validacao-e-entrega.md; docs/arquitetura/modelo-e-contratos.md; docs/conteudo/evidencias-para-integracao.md
 
 Critérios de aceite:
 
@@ -1172,7 +1172,7 @@ Como usuário de qualquer plataforma, quero uma experiência compreensível e co
 
 Dependências: V1-022, V1-024, V1-025, V1-048
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/modelo-e-contratos.md; docs/arquitetura/camadas-e-fluxos.md
 
 Critérios de aceite:
 
@@ -1194,7 +1194,7 @@ Validação: Roteiro de acessibilidade em Android; Checklist iOS pendente até m
 
 Entregas: Relatório de acessibilidade; Matriz Android/iOS por funcionalidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP08 — Segurança, desempenho e observabilidade
 
@@ -1208,7 +1208,7 @@ Como mantenedor, quero um release com riscos conhecidos em vez de um gráfico de
 
 Dependências: V1-013, V1-021
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -1241,7 +1241,7 @@ Como operador, quero descobrir onde uma jornada falhou sem registrar conteúdo p
 
 Dependências: V1-007, V1-018
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -1262,7 +1262,7 @@ Validação: Provocar erro controlado em staging e seguir correlação; Conferir
 
 Entregas: Runbook e painel de métricas reais; Evidência de uma jornada rastreada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029. 29/10: diagnósticoHTTP porcampos limitados implementado nafonte;suíteGo/vet passaram. SemURL/query/corpo/identidade;correlação do servidor. Não reiniciou avaliação, não implementaFlutter/pool/SQL/métricas/alertas/retention e não encerra029.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029. 29/10: diagnósticoHTTP porcampos limitados implementado nafonte;suíteGo/vet passaram. SemURL/query/corpo/identidade;correlação do servidor. Não reiniciou avaliação, não implementaFlutter/pool/SQL/métricas/alertas/retention e não encerra029.
 
 ### V1-030 — Medir consultas e carga representativa
 
@@ -1272,7 +1272,7 @@ Como responsável técnico, quero limites medidos e um plano de escala gradual.
 
 Dependências: V1-014, V1-018, V1-020, V1-029
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/contratos-v1.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/seguranca-operacao.md; docs/arquitetura/modelo-e-contratos.md
 
 Critérios de aceite:
 
@@ -1293,7 +1293,7 @@ Validação: Relatório reproduzível de carga em ambiente autorizado; Teste de 
 
 Entregas: Baseline e orçamento de capacidade; Plano de escala condicionado a métricas
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.
 
 ## EP09 — Infraestrutura, CI e implantação
 
@@ -1307,7 +1307,7 @@ Como dono, quero aprovar uma opção concreta antes de criar recursos ou fornece
 
 Dependências: V1-007, V1-010
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1328,7 +1328,7 @@ Validação: Conferir preços e limites atuais com fontes oficiais; Revisar plan
 
 Entregas: Decisão de provedor e custos aprovada; Mapa de ambientes e região
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-032 — Construir pipeline e artefatos reproduzíveis
 
@@ -1338,7 +1338,7 @@ Como mantenedor, quero testar a mesma versão de API, contrato e app que será d
 
 Dependências: V1-008, V1-028
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1359,7 +1359,7 @@ Validação: Pipeline completo no repositório autorizado; Rebuild e conferênci
 
 Entregas: Workflow CI; Imagem da API e metadados de release
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes. 29/10: imagem não root e artefato verificados em40819933235/83b799f; ver api-image-verification.json. Não encerra032 ou028; semdeploy ou APKnovo.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes. 29/10: imagem não root e artefato verificados em40819933235/83b799f; ver api-image-verification.json. Não encerra032 ou028; semdeploy ou APKnovo.
 
 ### V1-033 — Implantar staging e conferir restauração
 
@@ -1369,7 +1369,7 @@ Como testador, quero acessar a API do celular fora da rede do notebook.
 
 Dependências: V1-031, V1-032, V1-006, V1-020, V1-029
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1390,7 +1390,7 @@ Validação: Smoke HTTPS de ponta a ponta; Restore em base separada e rollback d
 
 Entregas: URL staging e runbook; Evidência de implantação e recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP10 — APK e primeiro teste acompanhado
 
@@ -1404,7 +1404,7 @@ Como desenvolvedor, quero que o APK de teste possa ser atualizado sem perder a i
 
 Dependências: V1-021, V1-032
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1437,7 +1437,7 @@ Como responsável pelo teste, quero evidência de que o arquivo usa API, DB e co
 
 Dependências: V1-023, V1-024, V1-025, V1-026, V1-027, V1-030, V1-033, V1-034, V1-042, V1-044, V1-045, V1-046, V1-047, V1-048, V1-049
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1465,7 +1465,7 @@ Validação: E2E real em Android/emulador e aparelho quando disponível; Verific
 
 Entregas: Relatório de aceite V1; Lista de problemas e limitações
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-036 — Gerar e disponibilizar APK à esposa
 
@@ -1475,7 +1475,7 @@ Como testadora, quero receber o arquivo e instruções claras para instalar, tes
 
 Dependências: V1-035
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/decisoes-piloto.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1497,7 +1497,7 @@ Validação: Download e hash coincidem; instalação real confirmada pela testad
 
 Entregas: APK instalável e checksum; Guia para esposa e registro de feedback
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-037 — Encerrar piloto e priorizar correções
 
@@ -1507,7 +1507,7 @@ Como dono, quero aprender com o uso e retirar o que não for mais necessário.
 
 Dependências: V1-036
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1528,7 +1528,7 @@ Validação: Conferir correções com reexecução afetada; Recibo de limpeza e 
 
 Entregas: Balanço do piloto; Backlog repriorizado e limpeza documentada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP11 — iOS e distribuição nas lojas
 
@@ -1542,7 +1542,7 @@ Como usuário de iPhone, quero acesso aos mesmos contratos e conteúdo permitido
 
 Dependências: V1-027, V1-035
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1563,7 +1563,7 @@ Validação: Build iOS e testes em ambiente Apple; E2E na API staging e relatór
 
 Entregas: Build iOS validada; Matriz de paridade atualizada
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-039 — Preparar TestFlight, Play e políticas de publicação
 
@@ -1573,7 +1573,7 @@ Como responsável, quero distribuir nas lojas quando houver aceite, privacidade 
 
 Dependências: V1-038, V1-037
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/implantacao-e-apk.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/validacao-e-entrega.md
 
 Critérios de aceite:
 
@@ -1594,7 +1594,7 @@ Validação: Checklist oficial preenchido e testes de loja reais; Sem afirmaçã
 
 Entregas: Pacotes/metadata de loja; Relatório de submissão e decisões
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ## EP12 — Visão integral após o primeiro piloto
 
@@ -1608,7 +1608,7 @@ Como usuário experiente ou iniciante, quero ampliar a biblioteca sem perder aut
 
 Dependências: V1-037
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
 
 Critérios de aceite:
 
@@ -1629,7 +1629,7 @@ Validação: Revisão dos lotes e testes de unidade/ordem; Fluxo de composição
 
 Entregas: Lotes adicionais; Editor/importador com limites
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:composição controlada antecipada na044; esta história mantém expansão posterior de modalidades/lotes/importação própria sem adiar os dois caminhos aprovadosQ1.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:composição controlada antecipada na044; esta história mantém expansão posterior de modalidades/lotes/importação própria sem adiar os dois caminhos aprovadosQ1.
 
 ### V1-041 — Adicionar sensores, GPS e integrações
 
@@ -1639,7 +1639,7 @@ Como usuário, quero importar medidas reais com permissão e origem, evitando re
 
 Dependências: V1-037, V1-038
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
 
 Critérios de aceite:
 
@@ -1660,7 +1660,7 @@ Validação: Testes em dispositivos reais compatíveis; Negação/revogação de
 
 Entregas: Integração real documentada; Matriz de disponibilidade
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.
 
 ### V1-043 — Desenvolver acompanhamento e alimentação avançados
 
@@ -1670,7 +1670,7 @@ Como cuidador ou usuário, quero ferramentas próprias com consentimento e limit
 
 Dependências: V1-037, V1-013
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md
 
 Critérios de aceite:
 
@@ -1691,4 +1691,4 @@ Validação: Teste de permissões entre titulares e cuidadores; Revisão da orig
 
 Entregas: Jornadas de acompanhamento; Expansão alimentar com origem
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.

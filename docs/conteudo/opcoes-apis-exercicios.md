@@ -69,7 +69,7 @@ Nova pista fornecida pelo autor após permitir avaliação de licenças baratas 
 1. Endpoint sem chave não significa mídia aberta para uso comercial. A [documentação OSS](https://oss.exercisedb.dev/docs) explicita restrição não comercial. A licença AGPL do [repositório do servidor](https://github.com/ExerciseDB/exercisedb-api) não substitui a licença dos ativos.
 2. Cache/CDN depende de cada fornecedor. A [política AscendAPI](https://docs.ascendapi.com/guides/caching) condiciona armazenamento ao plano; os [termos WorkoutX](https://workoutxapp.com/terms.html), atualizados em16/10/2026, restringem mídiaV2 a streaming e proíbem exportação em massa. Não aplicar o conselho genérico de baixar todas as mídias.
 3. [Preços WorkoutX](https://workoutxapp.com/pricing.html): compra única indicada para Body Scan; API de exercícios tem assinatura. A indicação de sete idiomas não demonstra português; o [guia oficialV2](https://workoutxapp.com/v2-migration.html) lista idiomas sem pt. Números são oferta declarada, não contagem de ativos recebidos pelo projeto.
-4. [README wger](https://github.com/wger-project/wger#license) distingue código e dados; licença/autoria são por entrada. [Changelog oficial](https://wger.readthedocs.io/en/stable/changelog.html) registra vídeos contribuídos. Não presumir que cada exercício contém foto e vídeo. A evidência do projeto é [amostra ampliada](evidencias/wger-amostra-ampliada.json), com4imagens sinalizadas como IA e divergência editorial noID1022; não republicar automaticamente esses itens.
+4. [README wger](https://github.com/wger-project/wger#license) distingue código e dados; licença/autoria são por entrada. [Changelog oficial](https://wger.readthedocs.io/en/stable/changelog.html) registra vídeos contribuídos. Não presumir que cada exercício contém foto e vídeo. A evidência do projeto é [amostra ampliada](evidencias/pesquisas.zip#docs/conteudo/evidencias/wger-amostra-ampliada.json), com4imagens sinalizadas como IA e divergência editorial noID1022; não republicar automaticamente esses itens.
 
 ## Limites e próxima ação
 
@@ -77,7 +77,7 @@ O site wger.de apresentou proteção automatizada nesta consulta; não houve con
 
 Esses fornecedores podem complementar movimento, instrução e mídia. Programas completos, autoria profissional verificável, doses, apoio e públicos específicos continuam associados às fontes humanas pesquisadas. Não atribuir uma animação genérica a um programa sem conferir o gesto/variante e a licença. Não ativar geradores de treino por IA oferecidos por planos pagos.
 
-A [direção do piloto](../execucao/v1/decisoes-piloto.md) permite mostrar faltas de imagem/vídeo/instrução. Assim, a escolha de uma biblioteca paga não precisa bloquear a matriz de cenários nem a preparação do conteúdo gratuito utilizável. Nova pesquisa somente com pista concreta de produto, licença, conteúdo ou lacuna observada.
+A [direção do piloto](../execucao/v1/escopo.md) permite mostrar faltas de imagem/vídeo/instrução. Assim, a escolha de uma biblioteca paga não precisa bloquear a matriz de cenários nem a preparação do conteúdo gratuito utilizável. Nova pesquisa somente com pista concreta de produto, licença, conteúdo ou lacuna observada.
 
 ## Complemento histórico: caminho gratuito e orçamento anterior deUS$19
 

@@ -3,6 +3,10 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'tools'))
+from evidence_store import read_text as evidence_text, read_bytes as evidence_bytes
 
 ROOT = Path(__file__).resolve().parent
 CATALOGUE = ROOT / 'catalogo-cuidadores.json'
@@ -41,8 +45,8 @@ def selected_library(catalogue=None):
     selection = catalogue.get('currentSelection')
     if not selection:
         return None
-    library = json.loads(bounded_path(selection['file']).read_text(encoding='utf-8'))
-    audit = json.loads(bounded_path(selection['audit']).read_text(encoding='utf-8'))
+    library = json.loads(evidence_text(bounded_path(selection['file']), root=ROOT.parents[1]))
+    audit = json.loads(evidence_text(bounded_path(selection['audit']), root=ROOT.parents[1]))
     identifiers = [item['id'] for item in library['components']]
     if len(set(identifiers)) != len(identifiers) or len(identifiers) != selection['selectedComponents']:
         raise ValueError('Current library component identity/count mismatch')
@@ -72,7 +76,7 @@ def validate(catalogue=None):
 
     def load(relative):
         if relative not in cache:
-            cache[relative] = json.loads(bounded_path(relative).read_text(encoding='utf-8'))
+            cache[relative] = json.loads(evidence_text(bounded_path(relative), root=ROOT.parents[1]))
         return cache[relative]
 
     execution_rows = {}
@@ -133,7 +137,7 @@ def validate(catalogue=None):
                 raise ValueError('Selected receipt has no usable primary body')
             record_path = bounded_path(relative)
             body_path = bounded_path(receipt['bodyFile'], record_path.parent, ROOT / 'evidencias')
-            body = body_path.read_bytes()
+            body = evidence_bytes(body_path, root=ROOT.parents[1])
             if len(body) != receipt['bytes'] or hashlib.sha256(body).hexdigest() != receipt['sha256']:
                 raise ValueError('Selected primary body integrity mismatch')
             receipts[relative] = {key:receipt.get(key) for key in ('id', 'url', 'resolvedUrl', 'collectedAtUtc', 'status', 'bytes', 'sha256', 'bodyFile')}
@@ -170,7 +174,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     result = validate()
     if args.write_audit:
-        output = ROOT / 'evidencias/2026-10-12/n15c-catalogo-modular'
+        output = ROOT.parents[1] / '.local/research-derived/caregiver-audit'
         output.mkdir(parents=True, exist_ok=True)
         compact = {key:value for key,value in result.items() if key != 'resolvedItems'}
         compact['catalogueSha256'] = hashlib.sha256(CATALOGUE.read_bytes()).hexdigest()

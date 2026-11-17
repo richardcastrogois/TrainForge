@@ -33,10 +33,9 @@
           "dependsOn": [],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/decisoes-piloto.md",
             "docs/conteudo/opcoes-apis-exercicios.md"
           ],
           "acceptance": [
@@ -76,12 +75,12 @@
           "deliverables": [
             "content/manifests/pilot-candidates.json",
             "docs/execucao/v1/matriz-cenarios.md",
-            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/execucao/v1/escopo.md",
             "docs/conteudo/opcoes-apis-exercicios.md",
             "tools/validar_manifesto_piloto.py",
             "docs/execucao/v1/verificacao-manifesto.json"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
@@ -89,7 +88,7 @@
               "files": [
                 "content/manifests/pilot-candidates.json",
                 "docs/execucao/v1/matriz-cenarios.md",
-                "docs/execucao/v1/decisoes-piloto.md",
+                "docs/execucao/v1/escopo.md",
                 "docs/execucao/v1/verificacao-manifesto.json"
               ],
               "validation": "python tools/validar_manifesto_piloto.py: PASS;331familias/46Ns/34componentes/22familiasalimentares/24cenarios,0itensruntimeaprovados",
@@ -112,7 +111,7 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md"
           ],
@@ -147,18 +146,18 @@
             "ADR final",
             "Mapa de compatibilidade e fronteiras"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 29/10: Go permanece escolhido; autor esclareceu preferência inicial por microserviços e pediu comparação para decidir execução. Autor escolheu detalhar microserviços por etapas; primeira prova de catálogo delimitada com gatesM0–M4, sem cutover/migração real aprovados; done histórico não é aprovação definitiva do monólito.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
               "files": [
-                "docs/arquitetura/decisao-go-v1.md"
+                "docs/arquitetura/decisoes.md"
               ],
               "result": "Go modular escolhido pela direcao do autor e pedido de executar etapas; fronteira de banco/rotas/migrador e ausencia de dualwrite registradas; Go1.27.3portatil baixado comchecksum e versao executada, sem migration de producao."
             }
           ],
           "workEvidence": [
-            "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md",
+            "docs/arquitetura/decisoes.md",
             "29/10: direção microserviços por etapas aceita para detalhamento. Prova de catálogo público proposta:5rotas,reader/banco próprios,contratos/retirada e acoplamento047explicitados. M1não implementado;APK/dados reais preservados.",
             "29/10: autor autorizou prova isolada M1. Runtime/migrator e alvo/banco/roles próprios emfixturesCI, contrato separado de5rotas+health. Código/contrato local validados; SQL/processo remoto pendentes. Recibo catalog-m1-verification.json; semcutover.",
             "29/10: M1 isolada concluída em40860200717/ff8c8bb: migration1/rerun0, processo real, cinco rotas equivalentes, SELECT/CONNECTprivado negado, retiradas/cache/readiness/deadline/cancelamento/SIGTERM, fixtures/roles removidos. Recibo catalog-m1-verification.json. Semcutover;M2–M4propostos.",
@@ -179,11 +178,10 @@
           "dependsOn": [],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/documentacao-dinamica.md",
-            "docs/arquitetura/swagger-go.md"
+            "docs/arquitetura/manutencao.md"
           ],
           "acceptance": [
             "Markdown/Mermaid e tabelas versionados são legíveis no GitHub/editor sem iniciar ferramentas; backend externo é referência identificada, sem caminhos da máquina",
@@ -229,7 +227,7 @@
           "handoff": "23/10: critério remoto resolvido com push autorizado e CI bem-sucedida; documentação permanece transversal, regenerar a cada alteração relevante. Não é início de outra história funcional.",
           "completionEvidence": [
             "docs/execucao/v1/publicacao-ci-verification.json",
-            "docs/execucao/v1/validacao-planejamento.md",
+            "docs/historico/README.md",
             ".github/workflows/documentacao.yml"
           ],
           "workEvidence": [
@@ -262,11 +260,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Source, autoria/contribuição, licença por ativo, evidência, versão, idioma, população, ambiente e apoio definidos",
@@ -301,9 +299,9 @@
             "content/manifests/pilot-prepared.json",
             "tools/conteudo_editorial.py",
             "tools/preparar_conteudo_local.py",
-            "docs/conteudo/preparacao-local-2026-10-21.md"
+            "docs/conteudo/evidencias-para-integracao.md"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
@@ -314,7 +312,7 @@
                 "content/manifests/pilot-prepared.json",
                 "tools/conteudo_editorial.py",
                 "tools/preparar_conteudo_local.py",
-                "docs/conteudo/preparacao-local-2026-10-21.md"
+                "docs/conteudo/evidencias-para-integracao.md"
               ],
               "validation": [
                 "python tools/preparar_conteudo_local.py --write --check: PASS",
@@ -343,19 +341,17 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md",
+            "docs/arquitetura/modelo-e-contratos.md",
             "content/schemas/editorial-v1.schema.json",
             "content/manifests/pilot-prepared.json",
             "content/manifests/pilot-rights-matrix.json",
             "content/manifests/pilot-review-queue.json",
-            "docs/conteudo/preparacao-local-2026-10-21.md",
             "content/manifests/pilot-review-decisions.json",
             "content/manifests/pilot-approved.json",
-            "docs/conteudo/revisao-consulta-2026-10-21.md",
             "content/manifests/pilot-dispositions.json"
           ],
           "acceptance": [
@@ -388,9 +384,9 @@
           "deliverables": [
             "content/manifests/pilot-approved.json (somente metadados de consulta)",
             "content/manifests/pilot-dispositions.json",
-            "docs/execucao/v1/etapa-01-fechamento.md"
+            "docs/execucao/v1/implementacao.md"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-21",
@@ -398,7 +394,7 @@
               "files": [
                 "content/manifests/pilot-dispositions.json",
                 "content/manifests/pilot-approved.json",
-                "docs/execucao/v1/etapa-01-fechamento.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": "python tools/fechar_triagem_piloto.py --write --check:512ativos, nenhuma disposicao ausente; candidatos alterados/operacoes indevidas rejeitados"
             }
@@ -419,7 +415,7 @@
               "files": [
                 "content/manifests/pilot-approved.json",
                 "content/manifests/pilot-review-decisions.json",
-                "docs/conteudo/revisao-consulta-2026-10-21.md",
+                "docs/conteudo/evidencias-para-integracao.md",
                 "tools/revisar_conteudo_local.py"
               ],
               "next": "Conferir34componentes, expressao autorizada, variantes/instrucao/apoio e midias selecionadas; nao fechar005ou liberar pratica por esta projecao de consulta"
@@ -443,11 +439,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Dry run informa contagens/erros e não escreve; importação usa versão/hash e transação",
@@ -480,13 +476,13 @@
             "cmd/import-content",
             "Relatório de importação e rollback editorial"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
               "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
               "files": [
-                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/api-connected-verification.json",
                 "docs/execucao/v1/database-verification.json",
                 "docs/execucao/v1/catalog-import-verification.json"
@@ -518,12 +514,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/arquitetura-alvo.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "services/api contém cmd/api e internal/{auth,catalog,activity,nutrition,platform}",
@@ -556,13 +550,13 @@
             "services/api/go.mod",
             "Servidor local e instruções reproduzíveis"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
               "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
               "files": [
-                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/api-connected-verification.json",
                 "docs/execucao/v1/database-verification.json",
                 "docs/execucao/v1/catalog-import-verification.json"
@@ -590,14 +584,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/arquitetura-alvo.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/arquitetura/swagger-go.md",
-            "docs/arquitetura/camadas-go.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/manutencao.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Handlers, DTOs e comentários realizam os contratos revisados; Swaggo fixado gera JSON/YAML e integração Go sem edição manual desses derivados",
@@ -642,13 +634,13 @@
             "Watcher de desenvolvimento e validação de contrato na CI",
             "Política de compatibilidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
               "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
               "files": [
-                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/api-connected-verification.json",
                 "docs/execucao/v1/database-verification.json",
                 "docs/execucao/v1/catalog-import-verification.json"
@@ -679,12 +671,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/arquitetura-alvo.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Programa/versão/sessão prescrita separados de enrollment/ocorrência/registro real",
@@ -717,13 +707,13 @@
             "Modelo lógico revisado",
             "Decisão de invariantes e consultas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
               "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
               "files": [
-                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/api-connected-verification.json",
                 "docs/execucao/v1/database-verification.json",
                 "docs/execucao/v1/catalog-import-verification.json"
@@ -748,12 +738,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/arquitetura-alvo.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Banco isolado sobe do zero por migrations Go; Prisma não migra o mesmo schema simultaneamente",
@@ -786,13 +774,13 @@
             "services/api/migrations",
             "Runbook de backup/restore com resultado"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
               "scope": "Fundacao isolada local; sem auth/Flutter/pratica/release",
               "files": [
-                "docs/execucao/v1/etapa-02-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/api-connected-verification.json",
                 "docs/execucao/v1/database-verification.json",
                 "docs/execucao/v1/catalog-import-verification.json"
@@ -826,11 +814,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "ID token validado por assinatura/iss/aud/exp e identidade vinculada a issuer+sub",
@@ -863,18 +851,18 @@
             "Auth Go e contrato de sessão",
             "Guia OAuth por ambiente"
           ],
-          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
+          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
           "completionEvidence": [
             {
               "date": "2026-10-23",
               "scope": "Aceite local Android de autenticação/sessão/privacidade; sem distribuição release nem deploy",
               "files": [
-                "docs/execucao/v1/auth-local-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/auth-real-android-verification.json",
                 "docs/execucao/v1/oauth-release-verification.json",
                 "docs/execucao/v1/auth-local-verification.json",
                 "docs/execucao/v1/privacy-local-verification.json",
-                "docs/execucao/v1/privacidade-013.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": "LoginGoogle consentido, GETme200, reabertura/rede, expiração natural e refresh, logout204/reentrada na mesmaidentidade; exportação real/exclusão autorizada/limpeza; SQLconcorrente/BOLA/restore e OAuthcertificado conferidos. Critérios mapeados no fechamento.",
               "limits": "Sem endpoint externo, deploy, APKrelease instalado/testado, carga de produção ou iOS nativo. Manutenção/backups históricos com limites explícitos; sem prática fictícia."
@@ -900,11 +888,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Refresh hash armazenado, rotação atômica single use e detecção de reuso por família",
@@ -937,18 +925,18 @@
             "Ciclo de sessão Go/Flutter",
             "Política de reuso e dispositivos"
           ],
-          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
+          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
           "completionEvidence": [
             {
               "date": "2026-10-23",
               "scope": "Aceite local Android de autenticação/sessão/privacidade; sem distribuição release nem deploy",
               "files": [
-                "docs/execucao/v1/auth-local-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/auth-real-android-verification.json",
                 "docs/execucao/v1/oauth-release-verification.json",
                 "docs/execucao/v1/auth-local-verification.json",
                 "docs/execucao/v1/privacy-local-verification.json",
-                "docs/execucao/v1/privacidade-013.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": "LoginGoogle consentido, GETme200, reabertura/rede, expiração natural e refresh, logout204/reentrada na mesmaidentidade; exportação real/exclusão autorizada/limpeza; SQLconcorrente/BOLA/restore e OAuthcertificado conferidos. Critérios mapeados no fechamento.",
               "limits": "Sem endpoint externo, deploy, APKrelease instalado/testado, carga de produção ou iOS nativo. Manutenção/backups históricos com limites explícitos; sem prática fictícia."
@@ -976,12 +964,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/execucao/v1/privacidade-013.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/execucao/v1/implementacao.md"
           ],
           "acceptance": [
             "Todas as consultas/mutações privadas filtram ownership, inclusive IDs trocados",
@@ -1014,18 +1002,18 @@
             "Matriz de acesso",
             "Política de privacidade do piloto e operações de dados"
           ],
-          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver auth-local-fechamento.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
+          "handoff": "23/10: critérios do checkpoint local concluídos com contaGoogle real consentida, sessão/refresh/logout/reentrada e privacidade/exclusão autorizada. OAuthdebug/release conferidos; HTTPS fora do desenvolvimento permanece obrigatório, sem exposição externa. Hospedagem agora foi recusada pelo autor e não bloqueia teste local. Ver docs/execucao/v1/implementacao.md; gates de distribuição/HTTPSstaging/iOS permanecem nas histórias próprias.",
           "completionEvidence": [
             {
               "date": "2026-10-23",
               "scope": "Aceite local Android de autenticação/sessão/privacidade; sem distribuição release nem deploy",
               "files": [
-                "docs/execucao/v1/auth-local-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/auth-real-android-verification.json",
                 "docs/execucao/v1/oauth-release-verification.json",
                 "docs/execucao/v1/auth-local-verification.json",
                 "docs/execucao/v1/privacy-local-verification.json",
-                "docs/execucao/v1/privacidade-013.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": "LoginGoogle consentido, GETme200, reabertura/rede, expiração natural e refresh, logout204/reentrada na mesmaidentidade; exportação real/exclusão autorizada/limpeza; SQLconcorrente/BOLA/restore e OAuthcertificado conferidos. Critérios mapeados no fechamento.",
               "limits": "Sem endpoint externo, deploy, APKrelease instalado/testado, carga de produção ou iOS nativo. Manutenção/backups históricos com limites explícitos; sem prática fictícia."
@@ -1059,12 +1047,10 @@
             "V1-045"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/escopo.md",
             "docs/execucao/v1/matriz-cenarios.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Q6:usuário comum exclui somente seus próprios treinos/registros/alimentos particulares/refeições/fotos; trocar ID ou usar fila/chamada direta não concede acesso alheio",
@@ -1117,7 +1103,7 @@
           "handoff": "25/10:Q6 definiu exclusão por quem incluiu os dados ou pelo master, o autor do projeto. Backend atual só tem ownership por titular; nenhuma permissão master foi encontrada ou provisionada. Regra registrada sem autorizar exclusão real agora. Identidade master ainda exige verificação; avançar apenas no trabalho independente.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md"
+            "docs/execucao/v1/escopo.md"
           ]
         }
       ]
@@ -1147,11 +1133,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "GET catalog/programs e detalhe retornam somente conteúdo permitido ao modo de consulta/prática",
@@ -1184,7 +1170,7 @@
             "Handlers e queries de catálogo",
             "Respostas verificadas do lote"
           ],
-          "handoff": "22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver catalogo-consulta.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.",
+          "handoff": "22/10: leitura Go/Flutter de catálogo concluída com73metadados reais e0programas/prática; cinco rotas públicas, filtros/cursor/versões/ETag/retirada, atribuição e requisitos ausentes explícitos. Ver docs/execucao/v1/implementacao.md e catalog-read-verification.json. Não encerra016/022 nem loginGoogle.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
@@ -1194,7 +1180,7 @@
                 "services/api/internal/catalog/postgres_read.go",
                 "lib/features/catalog/presentation/catalog_page.dart",
                 "docs/execucao/v1/catalog-read-verification.json",
-                "docs/execucao/v1/catalogo-consulta.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": [
                 "Go test/vet passaram; fixture PostgreSQL isolada removida: paginação/tipos/filtros/versões/retirada/ETag e runtime sem escrita",
@@ -1233,12 +1219,9 @@
             "V1-048"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/escopo.md",
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/execucao/v1/validacao-e-entrega.md",
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Configuração completa e revisada antecede busca/seleção de treino compatível e confirmação da composição; consulta pública de referências, alimentação e privacidade conservam seu recorte",
@@ -1293,7 +1276,7 @@
           "handoff": "27/10: V1-047 encerrada no recorte funcional local. O autor criou, revisou e confirmou a configuração real; o agente reabriu as quatro etapas e o resumo. Após autorização explícita, somente o horário inicial foi corrigido pela UI/API, gerando a revisão 2. Um novo controlador recuperou essa revisão após reabertura. Comparação SQL somente de leitura confirmou a preservação da revisão 1 e sua data, dos demais campos, da conta, do consumo e do catálogo. Sem terceira versão, novo login Google ou fixtures na conta. APK 22, API 0.7.0 e schema 12 mantidos. Clareza de fuso, hora e navegação permanece pendente na fonte frontend para depois dos testes; o fechamento funcional não aprova toda a usabilidade. Próxima V1-015 pelas dependências e com conteúdo humano como requisito. V1-045 segue doing: leitura e CreateMeal no domínio/aplicação; SQL, privacidade, HTTP e Flutter pendentes.",
           "completionEvidence": [
             "docs/execucao/v1/training-configuration-047-fechamento.json",
-            "docs/execucao/v1/configuracao-treino-047.md",
+            "docs/execucao/v1/implementacao.md",
             "docs/execucao/v1/training-configuration-sql-verification.json",
             "docs/execucao/v1/training-configuration-privacy-verification.json",
             "docs/execucao/v1/training-configuration-local-activation.json",
@@ -1301,9 +1284,8 @@
             "docs/execucao/v1/training-configuration-human-verification.json"
           ],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/configuracao-treino-047.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/execucao/v1/implementacao.md",
             "docs/execucao/v1/training-configuration-foundation-verification.json",
             "docs/execucao/v1/training-configuration-sql-verification.json",
             "docs/execucao/v1/training-configuration-privacy-verification.json",
@@ -1333,12 +1315,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Adesão aponta para versão imutável e valida os requisitos necessários",
@@ -1372,10 +1353,10 @@
             "API de enrollments",
             "Fluxo de seleção humano"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte. 28/10: após047 funcional, conferência local mostrou zero programas/guided_practice e importador restrito a movimentos/catalog_metadata. Adesão e agenda ainda não implementadas; sem conteúdo humano não há aceite real. Continuar045 independente sem converter metadados em prescrição.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 aprovado; configuração047 antecede seleção/adesão. Trocas de exercícios são restritas a alternativas compatíveis e agenda deve respeitar a fonte. 28/10: após047 funcional, conferência local mostrou zero programas/guided_practice e importador restrito a movimentos/catalog_metadata. Adesão e agenda ainda não implementadas; sem conteúdo humano não há aceite real. Continuar045 independente sem converter metadados em prescrição.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
           ]
         },
@@ -1396,12 +1377,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/conteudo/README.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Texto fiel revisado, idioma, atribuição e versão aparecem juntos",
@@ -1435,10 +1415,10 @@
             "Contrato de instruction/media",
             "Lista de ativos efetivamente liberados"
           ],
-          "handoff": "22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "22/10: V1-014 concluída para metadados; nenhuma instrução/mídia/prática liberada na triagem. Preservar439exclusões; esta história exige material efetivamente autorizado e revisado, sem conteúdo fabricado. Não encerrar por mostrar atribuição ou ausência de mídia. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
           ]
         },
@@ -1464,11 +1444,8 @@
             "V1-021"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/arquitetura/contratos-v1.md",
+            "docs/arquitetura/modelo-e-contratos.md",
             "docs/conteudo/evidencias-para-integracao.md"
           ],
           "acceptance": [
@@ -1519,8 +1496,7 @@
           "handoff": "24/10:criada após respostaQ1 explícita 'Ter os dois caminhos'. Não equivale à expansão ampla da040 nem libera prática pela existência de metadados. Nenhuma implementação concluída; campos/regras ainda dependem de decisões e conteúdo aprovado. 25/10:Q3 definiu configuração completa047 antes da busca/seleção, trocas compatíveis e agenda editável; requisitos/valores de campos e regras de troca ainda a detalhar.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/escopo.md"
           ]
         }
       ]
@@ -1548,13 +1524,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/execucao-treino-017.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
+            "docs/execucao/v1/implementacao.md"
           ],
           "acceptance": [
             "Planejado, iniciado, pausado, parcial, concluído, não feito e descanso têm semântica explícita",
@@ -1588,12 +1563,12 @@
             "API sessions e session-events",
             "Invariantes documentadas e testes"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026. 16/11: agregado puro de execução e contrato/projeção Flutter implementados; ver execucao-treino-017.md. Testes em memória não concluem HTTP/SQL, idempotência durável, autorização, conteúdo ou jornada no APK. Segundo incremento16/11: persistência/eventos/replay durável e quatro rotas privadas, autenticação viva e testes SQL/HTTP em descartável; nenhuma migration/dado na base entregue. Flutter integrado à aba Atividade. Conteúdo e aceite real continuam abertos.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026. 16/11: agregado puro de execução e contrato/projeção Flutter implementados; ver docs/execucao/v1/implementacao.md#atividade. Testes em memória não concluem HTTP/SQL, idempotência durável, autorização, conteúdo ou jornada no APK. Segundo incremento16/11: persistência/eventos/replay durável e quatro rotas privadas, autenticação viva e testes SQL/HTTP em descartável; nenhuma migration/dado na base entregue. Flutter integrado à aba Atividade. Conteúdo e aceite real continuam abertos.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
-            "docs/execucao/v1/execucao-treino-017.md",
+            "docs/execucao/v1/implementacao.md",
             "services/api/internal/activity/session.go",
             "services/api/internal/activity/session_test.go",
             "lib/features/activity/domain/activity_session.dart",
@@ -1624,12 +1599,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Home, histórico e estatísticas vêm de registros persistidos e respeitam fuso e autoria",
@@ -1662,7 +1636,7 @@
             "API summary/history",
             "Dicionário de métricas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -1683,17 +1657,14 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
             "content/manifests/pilot-prepared.json",
-            "docs/conteudo/preparacao-local-2026-10-21.md",
-            "docs/execucao/v1/alimentacao-preflight.md",
-            "content/manifests/food-review-decisions.json",
-            "docs/execucao/v1/alimentacao-importacao.md"
+            "docs/execucao/v1/implementacao.md",
+            "content/manifests/food-review-decisions.json"
           ],
           "acceptance": [
             "Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária",
@@ -1727,7 +1698,7 @@
             "Manifesto alimentar aprovado",
             "Lote alimentar versionado no DB"
           ],
-          "handoff": "22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver alimentacao-importacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.",
+          "handoff": "22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver docs/execucao/v1/implementacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.",
           "completionEvidence": [
             {
               "date": "2026-10-22",
@@ -1740,7 +1711,7 @@
                 "docs/execucao/v1/food-review-verification.json",
                 "docs/execucao/v1/food-import-fixtures-verification.json",
                 "docs/execucao/v1/food-import-verification.json",
-                "docs/execucao/v1/alimentacao-importacao.md"
+                "docs/execucao/v1/implementacao.md"
               ],
               "validation": [
                 "Direitos/atribuição/versão vinculados aos arquivos;6371identidades/1069660células conciliadas em6369registros, auxiliares e exclusões",
@@ -1776,13 +1747,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/alimentacao-consulta.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
+            "docs/execucao/v1/implementacao.md"
           ],
           "acceptance": [
             "Busca paginada de alimentos reais e POST de registro com quantidade, unidade, preparo e versão",
@@ -1818,13 +1788,13 @@
             "API nutrition v1",
             "Registro de consumo real"
           ],
-          "handoff": "23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver alimentacao-registro.md, nutrition-real-android-verification.json e frontend-fidelidade-figma.md.",
+          "handoff": "23/10: API Go0.5.1/25operações, migration00008 e Flutter de alimentação entregues; cadastro próprio/ausências/ownership/idempotência/edição/exclusão/totais conferidos emSQL/HTTPdescartável comfontereal. Autor confirmou consumo real noapp e histórico persistido. Visual completo doFigma permanece pendente; prioridade mudou para frontend. Ver docs/execucao/v1/implementacao.md, nutrition-real-android-verification.json e docs/execucao/v1/validacao-e-entrega.md.",
           "completionEvidence": [
             {
               "date": "2026-10-23",
               "scope": "API alimentar privada e consumo real no Androiddebug; conclusão visual separada",
               "files": [
-                "docs/execucao/v1/alimentacao-registro.md",
+                "docs/execucao/v1/implementacao.md",
                 "docs/execucao/v1/nutrition-local-verification.json",
                 "docs/execucao/v1/nutrition-real-android-verification.json",
                 "services/api/migrations/00008_private_nutrition.sql"
@@ -1855,13 +1825,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/conteudo/pesquisa-e-decisoes.md"
           ],
           "acceptance": [
             "Foto gera candidatos editáveis; usuário pode corrigir/remover/adicionar itens e informa quantidade por alimento antes de confirmar consumo",
@@ -1917,7 +1885,7 @@
           "handoff": "Q1 antecipou alimento por foto paraV1, com quantidade digitada e consumo somente após confirmação. Em25/10,Q2 confirmou duas visões(refeição/alimento) na045, histórico/análise/dicas juntos na046 e recuperação das fotos pela conta com cache no celular após comparação de quatro produtos. Detalhar limites/retenção/exclusão e comprovar recuperação real; nenhuma funcionalidade concluída nesta rodada. Sem hospedagem, serviço pago ou envio a terceiros por inferência. Barcode/OCR/imagens de atividade continuam posteriores. Q4:foto excluída com a refeição; registro offline sincronizado depois na026. Implementar ciclo privado sem recriar dados por upload/reenvio; política de backups mantém limites já documentados.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
           ]
         },
@@ -1943,12 +1911,9 @@
             "V1-021"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md",
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/arquitetura/contratos-v1.md"
+            "docs/conteudo/pesquisa-e-decisoes.md",
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Refeição contém itens com quantidades/unidades e versões próprias; visão por alimento usa os mesmos registros, sem duplicar consumo ou nutrientes",
@@ -1997,9 +1962,9 @@
           "handoff": "28/10: SQL/HTTP/Flutter, seleção particular e UI de metadados integrados; API0.8.0/34/schema13/30. APK25 instalado/hash após autor salvar/sair; refeição de teste/metadados recuperados e acesso direto à biblioteca/retorno conferidos sem escrita.248testes completos antes do refinamento/37dirigidos depois/análise limpa/591mensagens. Autor criou/reabriu1refeição como teste de navegação, não consumo real:2consumos totais(1real anterior+1teste),1conta/6369versões/2revisões047 preservados. Não excluir teste nem agrupar legado por inferência. Doing:aceite real/correção/exclusão,foto042/ciclo;outbox026 própria. Não repetir SQL/restore/Google sem mudança pertinente.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md",
-            "docs/execucao/v1/refeicoes-045.md",
+            "docs/execucao/v1/escopo.md",
+            "docs/conteudo/pesquisa-e-decisoes.md",
+            "docs/execucao/v1/implementacao.md",
             "docs/execucao/v1/meal-grouping-foundation-verification.json",
             "docs/execucao/v1/meal-grouping-sql-verification.json",
             "docs/execucao/v1/meal-grouping-local-activation.json",
@@ -2030,11 +1995,9 @@
             "V1-021"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md",
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/contratos-v1.md",
+            "docs/conteudo/pesquisa-e-decisoes.md",
+            "docs/arquitetura/modelo-e-contratos.md",
             "docs/conteudo/evidencias-para-integracao.md"
           ],
           "acceptance": [
@@ -2088,8 +2051,8 @@
           "handoff": "25/10:autor esclareceu expressamente que quer histórico visual, análise nutricional e dicas revisadas juntos na primeira versão. Aprovou também recuperar fotos pela conta com cache no celular, sem hospedagem agora. Escopo aprovado, não implementação; detalhar ciclo privado e regras/fontes/revisão sem inferência clínica.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/pesquisa-fotos-historico.md"
+            "docs/execucao/v1/escopo.md",
+            "docs/conteudo/pesquisa-e-decisoes.md"
           ]
         }
       ]
@@ -2117,13 +2080,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Feature-first preservado; UI usa controller/viewmodel e repository injetado",
@@ -2164,7 +2126,7 @@
               "files": [
                 "docs/execucao/v1/frontend-composition-verification.json",
                 "docs/execucao/v1/frontend-state-verification.json",
-                "docs/execucao/v1/auth-local-fechamento.md",
+                "docs/execucao/v1/implementacao.md",
                 "test/app_composition_test.dart",
                 "test/nutrition_controller_test.dart",
                 "test/app_config_test.dart"
@@ -2174,13 +2136,13 @@
             }
           ],
           "workEvidence": [
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
             "docs/execucao/v1/frontend-stage01-verification.json",
             "docs/execucao/v1/frontend-dark-scroll-verification.json",
             "docs/execucao/v1/frontend-stage07-12-verification.json",
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
             "docs/execucao/v1/frontend-composition-verification.json",
             "docs/execucao/v1/frontend-state-verification.json"
@@ -2211,13 +2173,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Login → contexto mínimo → biblioteca → detalhe → adesão sem AI/manual generator",
@@ -2252,10 +2212,10 @@
             "Telas library/detail/enrollment",
             "Mapa de fluxo atualizado"
           ],
-          "handoff": "24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir trilha-implementacao.md e dependências, usando frontend-fidelidade-figma.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
+          "handoff": "24/10:biblioteca/entrada e visual possuem implementação parcial comprovada nos recibos. Adesão e treino permitido ainda faltam; não concluir pela consulta de metadados. Seguir docs/execucao/v1/escopo.md e dependências, usando docs/execucao/v1/validacao-e-entrega.md como fonte visual única; Figma com limiteStarter, sem contorno/compra. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
             "docs/execucao/v1/frontend-stage01-verification.json",
@@ -2284,12 +2244,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Player/instrução usa modalidade/unidade real; prática bloqueada quando requisito não atendido",
@@ -2323,10 +2282,10 @@
             "Fluxo de sessão real",
             "Evidência de recuperação"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução. 16/11: controller e tela única reutilizável na aba Atividade, composição lazy por conta e API persistida; formulário de realizado vazio, estados/encerramento explícitos, reenvio incerto só em memória. Conteúdo/instrução/player e recuperação de intenção após matar processo ainda pendentes; sem aceite nativo.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução. 16/11: controller e tela única reutilizável na aba Atividade, composição lazy por conta e API persistida; formulário de realizado vazio, estados/encerramento explícitos, reenvio incerto só em memória. Conteúdo/instrução/player e recuperação de intenção após matar processo ainda pendentes; sem aceite nativo.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/execucao-treino-017.md",
+            "docs/execucao/v1/implementacao.md",
             "lib/features/activity/presentation/activity_page.dart",
             "lib/features/activity/presentation/activity_controller.dart",
             "lib/features/activity/data/activity_repository.dart",
@@ -2359,12 +2318,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Abas mantêm estado e exibem resumo real sem nova busca redundante a cada toque",
@@ -2397,7 +2355,7 @@
             "Hoje/history/profile",
             "Estado de conta e privacidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -2422,14 +2380,12 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/alimentacao-consulta.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
+            "docs/execucao/v1/implementacao.md"
           ],
           "acceptance": [
             "Tela procura alimento/preparo, confirma quantidade e registra por API",
@@ -2466,16 +2422,16 @@
             "Feature nutrition",
             "Refeição persistida e exibida"
           ],
-          "handoff": "24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme trilha-implementacao.md. Fonte visual única:frontend-fidelidade-figma.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
+          "handoff": "24/10:consumo humano real preservado e fluxos alimentares refinados noAPK0.3.0+13. Cadastro próprio e demais jornadas exigem aceite humano; corrigir validação divergente, terminologia e recuperação conforme docs/execucao/v1/escopo.md. Fonte visual única:docs/execucao/v1/validacao-e-entrega.md. Não chamar fixtures de refeição/login real, nem marcar história encerrada pelo backend020 já entregue. 29/10: pedido de interface limpa implementado e validado no APK26. Fontes/autoria/licenças/cálculos foram centralizados em Perfil > Fontes e transparência, com entrada pública por Privacidade. Nomes de apresentação vinculados à versão:73movimentos/31alimentos em quatro idiomas; não são publicações humanas de nomes revisados. Busca em português/espanhol com vocabulário limitado e atalhos. Dados originais preservados. Sem fechamento integral da jornada ou de toda a tradução alimentar; recibo frontend-content-cleanup-verification.json.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
             "docs/execucao/v1/frontend-shell-verification.json",
             "docs/execucao/v1/frontend-food-verification.json",
             "docs/execucao/v1/frontend-stage01-verification.json",
             "docs/execucao/v1/frontend-dark-scroll-verification.json",
             "docs/execucao/v1/frontend-stage07-12-verification.json",
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
             "docs/execucao/v1/frontend-content-cleanup-verification.json"
           ]
@@ -2499,13 +2455,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/decisoes-piloto.md",
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md",
             "docs/arquitetura/seguranca-operacao.md"
           ],
           "acceptance": [
@@ -2564,8 +2518,7 @@
           "handoff": "25/10:Q4 aprovou registrar offline e sincronizar depois. Pendência atual do formulário é em memória, sem fila durável; esta história continua todo. Não criar outra história para a mesma capacidade.042/045 integram exclusão de foto com refeição e upload sem recriação. Sem promessa de reconhecimento local, execução contínua em segundo plano ou sincronização já entregue; proteção, limites e aceites precisam ser implementados.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/escopo.md"
           ]
         },
         {
@@ -2589,12 +2542,9 @@
             "V1-021"
           ],
           "inputs": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
-            "docs/execucao/v1/frontend-fidelidade-figma.md",
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/dominio-e-banco.md",
-            "docs/arquitetura/contratos-v1.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
+            "docs/arquitetura/modelo-e-contratos.md",
             "docs/conteudo/evidencias-para-integracao.md"
           ],
           "acceptance": [
@@ -2653,8 +2603,7 @@
             "docs/execucao/v1/food-names-consumption-verification.json"
           ],
           "workEvidence": [
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md",
+            "docs/execucao/v1/escopo.md",
             "docs/execucao/v1/frontend-localization-verification.json",
             "docs/execucao/v1/android-localization-checkpoint.json",
             "docs/execucao/v1/frontend-localization-read-verification.json",
@@ -2666,7 +2615,7 @@
             "docs/execucao/v1/android-food-names-checkpoint.json",
             "docs/execucao/v1/food-names-local-activation.json",
             "docs/execucao/v1/nutrition-locale-verification.json",
-            "docs/conteudo/nomes-alimentares-revisados.md",
+            "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/food-names-operations-verification.json",
             "docs/execucao/v1/frontend-localization-native-verification.json",
             "docs/execucao/v1/food-names-consumption-verification.json",
@@ -2695,12 +2644,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/arquitetura/fluxos.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md",
+            "docs/arquitetura/camadas-e-fluxos.md"
           ],
           "acceptance": [
             "Texto ampliado, semântica, contraste, alvos de toque e movimento reduzido conferidos",
@@ -2734,7 +2682,7 @@
             "Relatório de acessibilidade",
             "Matriz Android/iOS por funcionalidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -2760,12 +2708,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Inventário e análise de Go/Flutter/Android com resultados e versões reais",
@@ -2803,10 +2750,10 @@
           "handoff": "Registrar arquivos/contratos alterados, comandos, resultados reais, pendências e próxima história desbloqueada no diário; atualizar este JSON e derivados. Concluir somente com os critérios e evidências desta história. A auditoria24/10 é baseline histórico, não aceite integral. Govulncheckv1.9.0 Linux/Windows passou em40813941007/8331426, sem vulnerabilidades conhecidas alcançáveis detectadas; isso não certifica ausência de falhas. Gitleaks8.30.1 por digest e autorredação passou em40888675534/6894858:85não secretos verificados e0bloqueadores. Limpeza histórica especificamente autorizada aplicada somente à main com lease e backup:95commits comparados/88IDs alterados, seis arquivos, árvore atual/autores/mensagens/datas preservados e demais refs remotos inalterados. Não repetir force-push; outros clones precisam reconciliação. Histórico alcançável fechado neste recorte; caches/cópias externas e validade de tokens não certificados. Flutter/Android, offline/master e auditoria integral permanecem abertos. Sem compra/hospedagem, replay, rotação ou contato externo por inferência.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
             "docs/execucao/v1/go-vulnerability-verification.json",
-            "docs/execucao/v1/qualidade-ci.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
             "docs/execucao/v1/git-secret-verification.json",
             "29/10: Gitleaks40815286943 falhou com87candidatos; revisão identificou79falsos positivos,2URLs externas assinadas expiradas e6ocorrências externas com token de validade não comprovada. Sete campos emseis evidências atuais sanitizados; histórico preservado, gate não silenciado. Recibos git-secret-verification.json e research-url-sanitization.json;028continua doing.",
             "docs/execucao/v1/git-secret-nonsecret-review.json",
@@ -2835,12 +2782,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "RequestId correlaciona Flutter/API; logs estruturados com redação e cardinalidade limitada",
@@ -2873,10 +2819,10 @@
             "Runbook e painel de métricas reais",
             "Evidência de uma jornada rastreada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029. 29/10: diagnósticoHTTP porcampos limitados implementado nafonte;suíteGo/vet passaram. SemURL/query/corpo/identidade;correlação do servidor. Não reiniciou avaliação, não implementaFlutter/pool/SQL/métricas/alertas/retention e não encerra029.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 29/10: readiness0.8.1 confere objetos e privilégios com falha genérica; testesGo comuns/vet/Swagger passaram. SQL de prontidão aprovado no run40813092631 para9124a85, quatro negativos e recuperação conferidos, sem avaliação real. Não entrega métricas/traces/alertas/retention nem encerra029. 29/10: diagnósticoHTTP porcampos limitados implementado nafonte;suíteGo/vet passaram. SemURL/query/corpo/identidade;correlação do servidor. Não reiniciou avaliação, não implementaFlutter/pool/SQL/métricas/alertas/retention e não encerra029.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json",
             "docs/execucao/v1/ci-sql-verification.json",
             "docs/execucao/v1/http-observability-verification.json",
@@ -2903,12 +2849,11 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
             "docs/arquitetura/seguranca-operacao.md",
-            "docs/arquitetura/contratos-v1.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/arquitetura/modelo-e-contratos.md"
           ],
           "acceptance": [
             "Baseline registra hardware, versão, volume, cenário, p50/p95/p99, erros e saturação",
@@ -2941,10 +2886,10 @@
             "Baseline e orçamento de capacidade",
             "Plano de escala condicionado a métricas"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em docs/historico/README.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+            "docs/historico/README.md",
             "docs/execucao/v1/auditoria-produto-verificacao.json"
           ]
         }
@@ -2971,10 +2916,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Comparar container Go + Postgres gerenciado com VPS, região/latência, backup, sleep, quotas e custo atual oficial",
@@ -3007,7 +2952,7 @@
             "Decisão de provedor e custos aprovada",
             "Mapa de ambientes e região"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -3026,11 +2971,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "CI roda análise/testes de Go e Flutter, migrations em DB isolado e validação documental",
@@ -3063,10 +3007,10 @@
             "Workflow CI",
             "Imagem da API e metadados de release"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes. 29/10: imagem não root e artefato verificados em40819933235/83b799f; ver api-image-verification.json. Não encerra032 ou028; semdeploy ou APKnovo.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 28/10: fundação independente de CI Flutter adicionada, SDK oficial3.41.4/revisão fixa, lockfile/l10n/análise/testes/cobertura e permissões somente leitura. Primeira execução remota40690557153 aprovada para02e596b; SDK/lockfile/l10n/análise/testes/cobertura/artefato conferidos. Go/docs40690557360 também aprovado para o mesmo commit. Não encerra032 nem028: SQL em CI, imagem/artefatos e auditoria têm gates próprios. 29/10: fundação de CI SQL implementada com serviço PostgreSQL descartável, roles separadas e grants compartilhados; barreiras locais passaram. Primeira execução remota40811811519 aprovada para689f64b:13migrations/rerun0,refeições/privacidade e limpeza. Não encerra032 nem028; demais suítes/restore/artefatos próprios pendentes. 29/10: imagem não root e artefato verificados em40819933235/83b799f; ver api-image-verification.json. Não encerra032 ou028; semdeploy ou APKnovo.",
           "completionEvidence": [],
           "workEvidence": [
-            "docs/execucao/v1/qualidade-ci.md",
+            "docs/execucao/v1/validacao-e-entrega.md",
             "docs/execucao/v1/ci-flutter-verification.json",
             "docs/execucao/v1/ci-sql-verification.json",
             "29/10: runnerSQL ampliado para8suítes/12testes principais existentes, bases/ambientes separados e eventosGoJSON que recusam skip/falha/ausência.5testes de guard/parser passaram; primeira execução remota ampliada ainda pendente. Dump/restore e demais gates032não concluídos.",
@@ -3099,10 +3043,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "API pública por HTTPS com DB privado, segredo gerenciado, CORS/proxy corretos e readiness",
@@ -3135,7 +3079,7 @@
             "URL staging e runbook",
             "Evidência de implantação e recuperação"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -3162,12 +3106,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "ApplicationId próprio, versionName/code e keystore release protegido e com backup seguro",
@@ -3244,11 +3186,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Login real → lote aprovado → fonte/versão → registro real → resumo → relançamento → logout verificados",
@@ -3288,7 +3229,7 @@
             "Relatório de aceite V1",
             "Lista de problemas e limitações"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -3307,12 +3248,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/decisoes-piloto.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "APK release versionado, checksum, notas e link privado autorizado; sem envio de mensagem sem pedido explícito",
@@ -3346,7 +3285,7 @@
             "APK instalável e checksum",
             "Guia para esposa e registro de feedback"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -3365,11 +3304,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Consolidar problemas realmente observados por impacto e reprodução",
@@ -3402,7 +3340,7 @@
             "Balanço do piloto",
             "Backlog repriorizado e limpeza documentada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -3429,11 +3367,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Ambiente macOS/Xcode e dispositivo/simulador reais disponíveis e documentados",
@@ -3466,7 +3403,7 @@
             "Build iOS validada",
             "Matriz de paridade atualizada"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -3486,11 +3423,10 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
             "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/implantacao-e-apk.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/validacao-e-entrega.md"
           ],
           "acceptance": [
             "Contas de desenvolvedor, taxas atuais, regras de saúde/dados e revisão verificadas em fontes oficiais",
@@ -3523,7 +3459,7 @@
             "Pacotes/metadata de loja",
             "Relatório de submissão e decisões"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         }
       ]
@@ -3554,10 +3490,9 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/handoff.md"
           ],
           "acceptance": [
             "Expandir pelos lotes N pesquisados, mantendo direitos/apoio/variante e ambiente",
@@ -3590,7 +3525,7 @@
             "Lotes adicionais",
             "Editor/importador com limites"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:composição controlada antecipada na044; esta história mantém expansão posterior de modalidades/lotes/importação própria sem adiar os dois caminhos aprovadosQ1.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:composição controlada antecipada na044; esta história mantém expansão posterior de modalidades/lotes/importação própria sem adiar os dois caminhos aprovadosQ1.",
           "completionEvidence": []
         },
         {
@@ -3613,10 +3548,9 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/handoff.md"
           ],
           "acceptance": [
             "Plataformas/provedores são escolhidos por pesquisa e capacidade real do aparelho",
@@ -3649,7 +3583,7 @@
             "Integração real documentada",
             "Matriz de disponibilidade"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história.",
           "completionEvidence": []
         },
         {
@@ -3675,10 +3609,9 @@
           ],
           "inputs": [
             "docs/execucao/v1/escopo.md",
-            "docs/arquitetura/diagnostico-atual.md",
+            "docs/arquitetura/decisoes.md",
             "docs/conteudo/evidencias-para-integracao.md",
-            "docs/execucao/v1/handoff.md",
-            "docs/execucao/v1/trilha-implementacao.md"
+            "docs/execucao/v1/handoff.md"
           ],
           "acceptance": [
             "Pessoa assistida tem vínculo e permissões explícitos; registros distinguem autor e titular",
@@ -3711,7 +3644,7 @@
             "Jornadas de acompanhamento",
             "Expansão alimentar com origem"
           ],
-          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.",
+          "handoff": "Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/historico/README.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10:cuidador pratica para si nas pausas; vínculo com pessoa assistida não é requisito daV1. Ideias de variedade/fibra/ferro exigem recorte próprio noQ2, fontes/revisão e cobertura do diário; não são diagnóstico ou meta clínica aprovados. 25/10:histórico/análise dos nutrientes registrados e dicas educativas revisadas foram antecipados paraV1 na046; aqui permanecem acompanhamento de terceiros e expansão clínica/avançada não aprovada por inferência.",
           "completionEvidence": []
         }
       ]

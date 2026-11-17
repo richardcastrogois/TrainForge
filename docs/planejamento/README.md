@@ -1,9 +1,12 @@
-# Planejamento atual
+# Planejamento do TrainForge
 
-A [visão do produto R01–R18](visao-produto.md) foi preservada sem reduzir o TrainForge a musculação. Android e iOS são as plataformas do produto; primeiro desenvolvimento e teste em Android.
+A [visão R01–R18](visao-produto.md) preserva o produto pretendido: treino, movimento, alimentação, aprendizagem e acompanhamento para pessoas com diferentes experiências, incluindo idosos e cuidadores. Android e iOS fazem parte da visão; o desenvolvimento e a validação começaram por Android.
 
-A execução atual está em [plano macro V1](../execucao/v1/plano-macro.md), [escopo](../execucao/v1/escopo.md), [backlog](../execucao/v1/backlog.md) e [handoff](../execucao/v1/handoff.md). Próxima história V1-001; não há N ativa. A pesquisa N01–N46 encerrou seus recortes, inclusive N15 modular, sem equivaler à liberação de publicação/prática.
+- [Decisões, experiência, viabilidade e critérios de entrega](decisoes-e-viabilidade.md): síntese das propostas de setembro e das decisões posteriores, com fontes e limites.
+- [História e roteiro para apresentação](../historico/README.md): perguntas, pesquisas, mudanças de direção e marcos verificáveis.
+- [Escopo e ordem da execução V1](../execucao/v1/escopo.md), [backlog canônico](../execucao/v1/backlog.json) e [handoff vigente](../execucao/v1/handoff.md): estados e próxima ação.
+- [Pesquisa e conteúdo](../conteudo/README.md): fontes, direitos, acervo e integração.
 
-Documentos de experiência/Figma, pitch, viabilidade e custos desta pasta são referências datadas. Preços, quotas e recomendações antigas precisam de nova conferência quando usados para uma contratação. As propostas de arquitetura atuais estão em [arquitetura](../arquitetura/arquitetura-alvo.md).
+Planejamento descreve a intenção e seus critérios. Não certifica que uma jornada, licença, capacidade clínica ou infraestrutura já foi entregue. As antigas filas “próxima V1-001” e “Go futuro” foram substituídas pelo backlog e pelo handoff. Os documentos originais continuam no [acervo documental](../historico/README.md).
 
-[Índice principal](../README.md) · [Histórico anterior](../arquivo/2026-10-21/docs/planejamento/README.md).
+Os JSON e scripts de `evidencias/` preservam a coleta de 22/09/2026; seus [resultados e limites de reprodução](../conteudo/pesquisa-e-decisoes.md#amostras) estão no guia de pesquisa. Alguns insumos são somente locais e não podem ser presumidos disponíveis num clone novo.

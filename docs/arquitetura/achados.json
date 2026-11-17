@@ -15,19 +15,24 @@
     "title": "Geradores IA e manual não são catálogo humano",
     "evidence": "backend:src/routes/mobile-onboarding.ts",
     "line": 152,
-    "detail": "O builder manual também escolhe treino/dose; retirar do caminho V1.",
+    "detail": "O diagnóstico original encontrou IA/builder de rotinas no Fastify. O código atual não usa esse caminho como conteúdo aprovado. V1-015/016 continuam condicionadas à revisão humana.",
     "story": "V1-015",
-    "status": "aberto — inspeção estática"
+    "status": "histórico do legado — fora do caminho de prática V1; conteúdo real ainda pendente"
   },
   {
     "id": "A03",
     "priority": "Alta",
     "title": "Dose de academia obrigatória no contrato",
-    "evidence": "lib/features/workouts/domain/workout_day_detail.dart",
-    "line": 2,
-    "detail": "sets/reps/rest não representam todos os componentes pesquisados.",
+    "evidence": "docs/arquitetura/modelo-e-contratos.md",
+    "line": 1,
+    "detail": "A estrutura Go distingue conteúdo/versionamento/sessão/ocorrência e unidades tipadas. O arquivo Dart original foi retirado como inalcançável; nenhuma dose foi inventada para liberar prática.",
     "story": "V1-004",
-    "status": "aberto — inspeção estática"
+    "status": "modelo legado substituído — revisão de conteúdo/dose segue gate próprio",
+    "historicalEvidence": {
+      "path": "lib/features/workouts/domain/workout_day_detail.dart",
+      "line": 2,
+      "scope": "diagnóstico estático21/10; arquivo removido na limpeza autorizada"
+    }
   },
   {
     "id": "A04",
@@ -45,9 +50,9 @@
     "title": "Refresh e revogação incompletos no Flutter",
     "evidence": "lib/features/auth/data/auth_repository.dart",
     "line": 42,
-    "detail": "ClienteGo guarda parrotativo atomicamente, coordena refresh e revoga logout. Testes concorrentes/rede passaram; login/refresh/logout reais em emulador aguardam autor.",
+    "detail": "Cliente Go guarda o par rotativo, coordena refresh, revalida e revoga logout. Aceite local de011/012/013 está em auth-local-fechamento; testes antigos não representam nova execução.",
     "story": "V1-012",
-    "status": "implementado localmente — aceite real Android pendente"
+    "status": "aceite local Android concluído em23/10 — release/HTTPS/iOS têm gates próprios"
   },
   {
     "id": "A06",
@@ -75,9 +80,9 @@
     "title": "Rotação refresh precisa de teste concorrente",
     "evidence": "backend:src/routes/mobile-auth.ts",
     "line": 210,
-    "detail": "Leitura de validade antes da transação e update sem condição de revokedAt: avaliar double use, sem afirmar exploração observada. AuthGo usa issuer+sub e rotação comlockdefamília/reuso; fixturesPostgreSQL passaram, aceiteGoogle real pendente. Não foi alterado o backendFastify.",
+    "detail": "O achado descreve o snapshot Fastify. Go usa issuer/sub, rotação com lock de família/reuso e revalidação; aceite local Android011/012/013 concluído, sem corrigir ou revalidar o legado por inferência.",
     "story": "V1-012",
-    "status": "legado preservado; nova API Go corrigida em testes isolados"
+    "status": "legado histórico preservado — rotação Go testada e aceite local encerrado"
   },
   {
     "id": "A09",
@@ -85,9 +90,9 @@
     "title": "Identidade móvel vinculada por e-mail",
     "evidence": "backend:src/routes/mobile-auth.ts",
     "line": 91,
-    "detail": "Rever issuer+sub e regras explícitas de associação de contas. AuthGo usa issuer+sub e rotação comlockdefamília/reuso; fixturesPostgreSQL passaram, aceiteGoogle real pendente. Não foi alterado o backendFastify.",
+    "detail": "O snapshot Fastify vinculava identidade por e-mail; Go usa issuer/sub. Aceite Android local concluído; isso não valida distribuição release/HTTPS/iOS.",
     "story": "V1-011",
-    "status": "legado preservado; nova API Go corrigida em testes isolados"
+    "status": "legado histórico preservado — identidade Go e aceite local encerrados"
   },
   {
     "id": "A10",
@@ -103,11 +108,16 @@
     "id": "A11",
     "priority": "Média",
     "title": "Resumo e histórico exigem semântica por ocorrência",
-    "evidence": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+    "evidence": "services/api/internal/activity/session.go",
     "line": 1,
-    "detail": "Conclusão antiga e histórico do plano não devem bloquear próxima data; rever UI e API.",
+    "detail": "O arquivo Dart antigo foi removido. Sessões por ocorrência, eventos, revisão/replay e tela única foram integrados em16/11; V1-017/023 continuam doing e a intenção incerta do Flutter fica só em memória.",
     "story": "V1-017",
-    "status": "aberto — inspeção estática"
+    "status": "execução Go/Flutter implementada parcialmente — conteúdo/seleção/agenda pendentes",
+    "historicalEvidence": {
+      "path": "lib/features/workouts/presentation/pages/workout_day_page.dart",
+      "line": 1,
+      "scope": "diagnóstico estático21/10; arquivo removido na limpeza autorizada"
+    }
   },
   {
     "id": "A12",
@@ -115,8 +125,8 @@
     "title": "Catálogo consultável não implica prática liberada",
     "evidence": "services/api/internal/catalog/postgres_read.go",
     "line": 27,
-    "detail": "V1-014:73metadados permitidos; projeção/retirada/revisão verificadas. Nenhuma dose/instrução/mídia entregue, população/ambiente/apoio desconhecidos preservados. Adesão/prática e aceite integrado pendentes.",
+    "detail": "73metadados consultáveis e0programas aprovados. Catálogo separado e motor de execução não aprovam prática, população/ambiente/apoio ou direitos por inferência.",
     "story": "V1-016",
-    "status": "leitura concluída — conteúdo de prática continua excluído"
+    "status": "consulta entregue — nenhum programa/instrução/dose/mídia liberado"
   }
 ]

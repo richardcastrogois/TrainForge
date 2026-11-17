@@ -1,9 +1,28 @@
-# Evidências da pesquisa
+# Acervo de pesquisa: originais sem milhares de arquivos soltos
 
-As pastas datadas registram o que foi coletado, lido, observado e validado em cada rodada. Uma falha antiga não deve ser reescrita como sucesso atual. Recibos e hashes têm caminhos preservados para não romper os verificadores.
+Os **1.901 registros anteriormente versionados** estão em [pesquisas.zip](pesquisas.zip). O [índice](indice.json) conserva caminho original, tamanho e SHA256 de cada arquivo. Foram preservados os bytes do checkout anterior à limpeza, inclusive finais de linha. O checkpoint Git de referência é `b77cf94`; a normalização de EOL doGit pode produzir outro hash do blob sem mudar o texto.
 
-Estado final em 21/10/2026: [N15 modular](2026-10-21/n15c-composicao/relatorio.md), [consolidação N01–N46](2026-10-15/consolidacao-n01-n46.json), [índice de conteúdo](../README.md).331 famílias;840GETs tentados/694HTTP200/780 hashes conferidos. Não há N ativa.
+São recibos, levantamentos, análises e scripts datados. O acervo mantém fontes, URLs, falhas, direitos e decisões, sem transformá-los em instruções atuais ou conteúdo aprovado. Arquivos privados ignorados, como corposPDF/HTML e planilhas de terceiros, **não foram adicionados aoZIP público**: continuam em`.local/pesquisa-corpos/docs/conteudo/evidencias/` neste notebook. Ausência em outro clone permanece uma ausência, sem download automático.
 
-`raw/`, renders e páginas de leitura de terceiros ficam fora do Git. Sua presença local não demonstra licença de redistribuição. O catálogo conserva direitos, autoria e lacunas. Scripts documentais não atestam segurança clínica ou sucesso de runtime do app.
+## Consultar
 
-O [índice antigo](../../arquivo/2026-10-21/docs/conteudo/evidencias/README.md) preserva as notas por rodada. Nova integração deve começar pelo [plano V1](../../execucao/v1/plano-macro.md), sem repetir toda a pesquisa.
+Na raiz do projeto:
+
+```powershell
+python tools/evidencias.py listar --filtro n15c
+python tools/evidencias.py mostrar docs/conteudo/evidencias/2026-10-15/consolidacao-n01-n46.json
+python tools/evidencias.py extrair docs/conteudo/evidencias/2026-10-15/consolidacao-n01-n46.json
+python tools/evidencias.py verificar
+```
+
+`mostrar` lê o original arquivado; `extrair` recupera somente o arquivo pedido em`.local/consulta-evidencias/`, preservando a árvore e sem sobrescrever uma cópia editada. ParaPDF/imagem, extrair e abrir localmente. `verificar` confere todos os hashes sem extrair ou fazer rede. Os consultores de fontes/cuidadores e o preparador usam o leitor de acervo para resolver os caminhos antigos.
+
+Os antigos scripts de rodada são preservados para auditoria, não executados automaticamente. Alguns geram recibos ou dependem de corpos locais e contexto de época. Consultar um documento não autoriza repetir coleta, contornar bloqueio, importar dose ou publicar mídia.
+
+## Por onde ler primeiro
+
+- [Pesquisa, achados e decisões](../pesquisa-e-decisoes.md): perguntas e resultados por etapa.
+- [331 fontes/famílias](../catalogo-fontes.md) e [registro estruturado](../fontes.json): nomes, URLs, direitos declarados e pendências.
+- [Direitos e curadoria](../direitos-e-curadoria.md): critérios e limites.
+- [Integração](../evidencias-para-integracao.md): o que entrou no lote e o que continua bloqueado.
+- [Histórico do projeto](../../historico/README.md): como pesquisa e implementação se conectaram para a apresentação.

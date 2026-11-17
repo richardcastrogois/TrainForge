@@ -54,12 +54,12 @@ jobs:
           python-version: '3.12'
       - name: Gerar documentos do código e referências versionadas
         run: python tools/gerar_documentacao.py --write --check
+      - name: Gerar mapas, arquivo editável e índices do contrato
+        run: |
+          python tools/gerar_diagramas.py
+          python tools/gerar_diagramas.py --check
       - name: Testar ferramentas, portabilidade, deriva e barreiras operacionais
         run: python -m unittest discover -s tools -p "test_*.py"
-      - name: Validar sintaxe dos diagramas em ambiente temporário
-        run: |
-          npm install --prefix "$RUNNER_TEMP/mermaid-validation" --ignore-scripts --no-audit --no-fund mermaid@11.12.0 jsdom@26.1.0
-          node tools/validar_mermaid.mjs "$RUNNER_TEMP/mermaid-validation/node_modules"
       - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
         with:
           go-version-file: services/api/go.mod
@@ -83,15 +83,19 @@ jobs:
           retention-days: 7
           if-no-files-found: error
           path: |
-            docs/arquitetura/README.md
             docs/arquitetura/inventario-atual.json
             docs/arquitetura/gerado/
+            docs/arquitetura/diagramas/*.svg
+            docs/arquitetura/diagramas/trainforge.drawio
+            docs/arquitetura/diagramas/README.md
+            docs/arquitetura/diagramas/index.html
+            docs/arquitetura/diagramas/apis.md
             docs/execucao/v1/backlog.md
       - name: PR precisa conter documentação correspondente ao código
         if: github.event_name == 'pull_request'
         shell: bash
         run: |
-          state="$(git status --porcelain --untracked-files=all -- docs/arquitetura/README.md docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/execucao/v1/backlog.md)"
+          state="$(git status --porcelain --untracked-files=all -- docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/arquitetura/diagramas/*.svg docs/arquitetura/diagramas/trainforge.drawio docs/arquitetura/diagramas/README.md docs/arquitetura/diagramas/index.html docs/arquitetura/diagramas/apis.md docs/execucao/v1/backlog.md)"
           if [ -n "$state" ]; then
             printf '%s\n' "$state"
             echo 'Regere e revise os derivados antes de concluir o PR.'
@@ -115,7 +119,7 @@ jobs:
       - name: Versionar somente os derivados, sem executar código recebido
         shell: bash
         run: |
-          git add -- docs/arquitetura/README.md docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/execucao/v1/backlog.md
+          git add -- docs/arquitetura/inventario-atual.json docs/arquitetura/gerado docs/arquitetura/diagramas/*.svg docs/arquitetura/diagramas/trainforge.drawio docs/arquitetura/diagramas/README.md docs/arquitetura/diagramas/index.html docs/arquitetura/diagramas/apis.md docs/execucao/v1/backlog.md
           if git diff --cached --quiet; then
             echo 'Documentação já corresponde às entradas.'
             exit 0

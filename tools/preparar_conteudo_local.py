@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import re
 from conteudo_editorial import validate_bundle
+from evidence_store import read_bytes as evidence_bytes, local_path as evidence_path
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCAL = ROOT / "content/local"
@@ -18,11 +19,14 @@ CANDIDATES = "content/manifests/pilot-candidates.json"
 
 
 def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    value = evidence_bytes(path, root=ROOT) if path.resolve().is_relative_to((ROOT / 'docs').resolve()) else path.read_bytes()
+    return hashlib.sha256(value).hexdigest()
 
 
 def read(name):
-    return json.loads((ROOT / name).read_text(encoding="utf-8-sig"))
+    path = ROOT / name
+    value = evidence_bytes(path, root=ROOT) if path.resolve().is_relative_to((ROOT / 'docs').resolve()) else path.read_bytes()
+    return json.loads(value.decode('utf-8-sig'))
 
 
 def numeric_cell(raw):
@@ -204,7 +208,7 @@ def prepare_editorial():
 def prepare_food(name, receipt_name, source_id, sheet_names=None):
     import openpyxl
     receipt = read(receipt_name)
-    original = ROOT / name
+    original = evidence_path(ROOT / name, root=ROOT)
     if receipt.get("status") != 200 or receipt.get("sha256") != sha(original):
         raise ValueError("Recibo/hash da planilha invalido: " + name)
     workbook = openpyxl.load_workbook(original, read_only=True, data_only=True)

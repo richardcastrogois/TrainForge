@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "archive": "memoria-documental.zip",
+  "snapshotCommit": "b77cf94",
+  "scope": "previously tracked documentary records only; original checkout bytes preserved",
+  "files": [
+    {
+      "path": "docs/README.md",
+      "sha256": "38d23e3c127246ea338a027b5ce3e19f2a49a4bda1a032e6708e64bd3331bb2a",
+      "bytes": 1702
+    },
+    {
+      "path": "docs/aprendizado/README.md",
+      "sha256": "0045cfdff09dfa92a5211edbe8b3d313ae13b41cc1880871fe91ed61b0641a3f",
+      "bytes": 724
+    },
+    {
+      "path": "docs/aprendizado/operacao-local.md",
+      "sha256": "3b42f4af9c055b5113424b23e7b997f17c78976c98becb8d62f0259fefb26ec3",
+      "bytes": 6205
+    },
+    {
+      "path": "docs/aprendizado/orm-e-persistencia.md",
+      "sha256": "ede34d7664f3618b100301ee0a4e2b1ef26905b66984418245aa59d62ef98ab6",
+      "bytes": 2378
+    },
+    {
+      "path": "docs/aprendizado/pecas-do-projeto.md",
+      "sha256": "8a01b7e81df0a3e0a76762543c850033a38fafe325b4ab04636f2695aa58c5b5",
+      "bytes": 6447
+    },
+    {
+      "path": "docs/arquitetura/README.md",
+      "sha256": "7182ae950aaa4add4236ede853f856192a6091c59471fe736707736e7feb0572",
+      "bytes": 4597
+    },
+    {
+      "path": "docs/arquitetura/arquitetura-alvo.md",
+      "sha256": "ab548d4f3936a3c7f7a78111cf1636ce1076d76681a9cb72f943645f2903d575",
+      "bytes": 6927
+    },
+    {
+      "path": "docs/arquitetura/camadas-go.md",
+      "sha256": "c557d4c2f44f949546abb6c67a499293dd520c70fc369ec79db7cc957df66812",
+      "bytes": 10030
+    },
+    {
+      "path": "docs/arquitetura/contratos-v1.md",
+      "sha256": "3064a6a962e287dc8b42febf48c754d6c91c54f4acc521327cba312c7d3bbfdc",
+      "bytes": 12378
+    },
+    {
+      "path": "docs/arquitetura/decisao-go-v1.md",
+      "sha256": "a6b4a9b8ec8658e3469bbde0b40b4f7e4c3b3e6c25e432d6c5237fc400e3e95f",
+      "bytes": 3538
+    },
+    {
+      "path": "docs/arquitetura/diagnostico-atual.md",
+      "sha256": "7ca8990c5387a8dc19914450ad02d590a195aac8facaf66b5367dce896c4ab56",
+      "bytes": 5358
+    },
+    {
+      "path": "docs/arquitetura/documentacao-dinamica.md",
+      "sha256": "74c41578bc0b991bb8b2b4516672a41441fbec7c3b4dc6b0e5e08b6d6c79c9cb",
+      "bytes": 5736
+    },
+    {
+      "path": "docs/arquitetura/dominio-e-banco.md",
+      "sha256": "d15d502f327aa90cc29ec63818aeae75dc969c03e20b75ae366e5e0dc6a43f18",
+      "bytes": 21848
+    },
+    {
+      "path": "docs/arquitetura/fluxos.md",
+      "sha256": "1773a5be6bfd9e6bcc497df2cabc7bc1338ed9cdf8f7c6868a430c8e669f9913",
+      "bytes": 7935
+    },
+    {
+      "path": "docs/arquitetura/gerado/banco.md",
+      "sha256": "669f4c51776ce7da57988f0bfe8cfdb78c021b54afdf6d27667c3bd825909531",
+      "bytes": 14175
+    },
+    {
+      "path": "docs/arquitetura/gerado/chamadas-http.md",
+      "sha256": "6fe81e4d205a267ccfe0823844bd1076a49b90b88805770cac6a6dbaab6ae574",
+      "bytes": 31258
+    },
+    {
+      "path": "docs/arquitetura/gerado/go-e-swagger.md",
+      "sha256": "f1af17a34c6c8efe0ff64ea07a5cc48e326ceefd4d8cd9f1294daefdba33994e",
+      "bytes": 70075
+    },
+    {
+      "path": "docs/arquitetura/gerado/progresso.md",
+      "sha256": "14bb0684e30af9f7e1224932378fcb7b24d84b1ababe7bdf26a8689639c7647e",
+      "bytes": 16033
+    },
+    {
+      "path": "docs/arquitetura/gerado/telas-e-fluxos.md",
+      "sha256": "c05be7db635ef75487e63dbd45e98e28d2fc6efa974c4e3f883b2f9530808d03",
+      "bytes": 10736
+    },
+    {
+      "path": "docs/arquitetura/reavaliacao-microservicos-2026-10-29.md",
+      "sha256": "34b552c61dee41644fd1adc8b26fb77f3592ff50b4a63f9bd6b649e346134a48",
+      "bytes": 24640
+    },
+    {
+      "path": "docs/arquitetura/seguranca-operacao.md",
+      "sha256": "52150ca2b65119ed27cb4b002e1c218145d6d74562d3d4b010e0385ff341e47d",
+      "bytes": 14543
+    },
+    {
+      "path": "docs/arquitetura/swagger-go.md",
+      "sha256": "199b335d9f7334ffe37514a4ace93f3feea3369a5268c72e54aa7585045bc468",
+      "bytes": 7852
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/AGENTS.md",
+      "sha256": "29dcc0bce8553ea2b3576acd87a0fb2a58db0b480edb30b8af848e6a9628a974",
+      "bytes": 41720
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/README.md",
+      "sha256": "b2dac120b413782ecc500b8ed8ab382a07a6f75d2d7c97040c43d4c727175a81",
+      "bytes": 8742
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/conteudo/README.md",
+      "sha256": "3824dc42094b87db454aa9250eb26d5c0a46676e80219e4b398741539caa5761",
+      "bytes": 23413
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/conteudo/evidencias/README.md",
+      "sha256": "7e44f7304b055e93629bc6c5291a169129bc3590e0b31b45a0a1eb6a85474bda",
+      "bytes": 33408
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/graphify.md",
+      "sha256": "56263e874e0a289a0d69590348ff64e76b042591834254686c42a9f5afac76b4",
+      "bytes": 24902
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/planejamento/README.md",
+      "sha256": "184bcc25e6c534fadd2120ed79d9481acd57906405e7675250dfd34e3d2fe884",
+      "bytes": 19233
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/planejamento/etapa-01-pesquisa.md",
+      "sha256": "6fd6e59ddb246a3d59157836a9f1fe759d8f80001f6768a658ff58bfb4a5f920",
+      "bytes": 66182
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/planejamento/plano-de-execucao.md",
+      "sha256": "bbd5e3f315eab4330be5c71db0e54f39243f8c476034d34b186ff6c9e2d17834",
+      "bytes": 56539
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/proximas-fases.md",
+      "sha256": "574d730a10ea5ae6b83514c51e73ab9579157a78dda2bc303d07507b1ba3c60d",
+      "bytes": 6070
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/retomada-fase-2.md",
+      "sha256": "047972720ecb4f99a7f2f6fe253b3d224b3177cd737fcd1f005604465630c215",
+      "bytes": 4910
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/docs/validacao.md",
+      "sha256": "2b434b8f7a81adced3fffe3294a33f3cf28c650d1cd0f62ba6c5426f67037d61",
+      "bytes": 9198
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/documentacao-tecnica.md",
+      "sha256": "5c87ff2250db9157ce48c0b8ad021baf120c7a0008f2a31f2b0701c62cc08848",
+      "bytes": 18374
+    },
+    {
+      "path": "docs/arquivo/2026-10-21/guia-do-projeto.md",
+      "sha256": "8efed4e62926b62da01b2513df6d3d746408648bdbe0194d1aac7cdec9d87b49",
+      "bytes": 11077
+    },
+    {
+      "path": "docs/arquivo/README.md",
+      "sha256": "25e31edbd51e83057a8d5c3ff16e3c116ceb415af6908cc2337cc1e9b2b9afb6",
+      "bytes": 469
+    },
+    {
+      "path": "docs/conteudo/README.md",
+      "sha256": "5b0d5a7dd9f197cf2f0f06404b8f9dfb21f886079e821abfbe40f699c3aa2c6e",
+      "bytes": 3485
+    },
+    {
+      "path": "docs/conteudo/amostras-e-achados.md",
+      "sha256": "ae32505137318b235a410f39e4dd582d7aeaec4e83e51f9649e1e972d16b88d7",
+      "bytes": 10540
+    },
+    {
+      "path": "docs/conteudo/avaliacao-apis-exercicios-2026-10-21.md",
+      "sha256": "291367fb015eeaf8b98bf9c27d64e633478085d170691be2692f693fdd72c43c",
+      "bytes": 289
+    },
+    {
+      "path": "docs/conteudo/avaliacao-movekit-2026-10-29.md",
+      "sha256": "409bab6ea247cb7a8162c8a479f10998e8894c8408c58a415270c492f5266467",
+      "bytes": 4242
+    },
+    {
+      "path": "docs/conteudo/catalogo-cuidadores.md",
+      "sha256": "88df5d349378d8af948fc097e647a2222a47d3850db602d5cc6928c9d2bc09f9",
+      "bytes": 9047
+    },
+    {
+      "path": "docs/conteudo/catalogo-fontes.md",
+      "sha256": "14f0440d42b7a63078ad856a431d8130f7920bc4c80c02d79a53eafc44ab58a9",
+      "bytes": 151326
+    },
+    {
+      "path": "docs/conteudo/cobertura-e-prioridades.md",
+      "sha256": "c2c238f5b69ce15cf633027329fd185277d8a6bd9965a53e298f73d0cf9be404",
+      "bytes": 51964
+    },
+    {
+      "path": "docs/conteudo/complementos-2026-10-04.md",
+      "sha256": "64c7fe1651d76238b5cad5d80b85b8293f5ddb5493dbe1f25d5de3d27ecb1a0e",
+      "bytes": 33519
+    },
+    {
+      "path": "docs/conteudo/criterios-exercicios-apk.md",
+      "sha256": "be160c127f0a9942a7188dab8106ccab5191578f5f9320bca80f3f96c4c97fd8",
+      "bytes": 6218
+    },
+    {
+      "path": "docs/conteudo/direitos-e-acordos.md",
+      "sha256": "57dea6e39e89272191b9a0843b9a311e4c4447deac9f53ff64144cb9d42ee35c",
+      "bytes": 13022
+    },
+    {
+      "path": "docs/conteudo/evidencias-para-integracao.md",
+      "sha256": "755bf7a3ac6c06ca08405e1f3da05c1f50811add7a6495a1708f5023635ce4bd",
+      "bytes": 147987
+    },
+    {
+      "path": "docs/conteudo/guia-rea-emulador-befit-2026-10-14.md",
+      "sha256": "3237511bd653b49f850b4639952e8e04aa2724afd3540d04ba7aa3752a5f644c",
+      "bytes": 13037
+    },
+    {
+      "path": "docs/conteudo/handoff-befit-2026-10-14.md",
+      "sha256": "01258e270ecd9918deee7fa050386feccc3b821b6e47d4cafedcd1b0ff670d55",
+      "bytes": 9873
+    },
+    {
+      "path": "docs/conteudo/idosos-e-cuidadores.md",
+      "sha256": "fcbf83aaeac0cac43f64163cd1390cb3f3843c39ad4ccbcf454024dc32126ff1",
+      "bytes": 34976
+    },
+    {
+      "path": "docs/conteudo/nomes-alimentares-revisados.md",
+      "sha256": "8b0c89cce022f36c8b1983d68238d44f4fca6fd74300e5a09b8588351f265c66",
+      "bytes": 8200
+    },
+    {
+      "path": "docs/conteudo/opcoes-apis-exercicios.md",
+      "sha256": "e4b36f4dc1ff5e82dd454e368664fdecfbf447d5ec8fe3dd44554917a245ef9e",
+      "bytes": 18360
+    },
+    {
+      "path": "docs/conteudo/preparacao-local-2026-10-21.md",
+      "sha256": "4cd5af4a91cdcf4d322e8cdc32e95d297e22a0d56385fb0299ebb7d333849d10",
+      "bytes": 6986
+    },
+    {
+      "path": "docs/conteudo/programas-prontos-e-cenarios-clinicos.md",
+      "sha256": "cdb485fb615d9e6298a62a185326a5ef6bf9e540ff04cf89cd2d1ecc77cf04ed",
+      "bytes": 11872
+    },
+    {
+      "path": "docs/conteudo/qualidade-e-curadoria.md",
+      "sha256": "841bc2f5a2cfc909283be65e5f8b55be56f500c6dc65b2e87586b6352d4a8753",
+      "bytes": 12756
+    },
+    {
+      "path": "docs/conteudo/retomada-rea-android-befit-2026-10-14.md",
+      "sha256": "893f8be3b6bbe511e8368b69383e74f391cf36c775541c7f6a125cf7ab0f5b6c",
+      "bytes": 6334
+    },
+    {
+      "path": "docs/conteudo/revisao-consulta-2026-10-21.md",
+      "sha256": "2a3b3f4cccd77a4c816f80b4e729f8c9a52918172c0f7b86e411b7b94d3ea737",
+      "bytes": 6881
+    },
+    {
+      "path": "docs/design/README.md",
+      "sha256": "108ffef05e3d24c4f5eb085d11831ed4a09359f7310c4a5dda46e6b18f7585c6",
+      "bytes": 2670
+    },
+    {
+      "path": "docs/design/ajustes-visao-integrada.md",
+      "sha256": "82b4e09623280aa068b3a335823baa25ccc1adff954ded6aaa8535de236bc8da",
+      "bytes": 18932
+    },
+    {
+      "path": "docs/design/fluxos-v03.md",
+      "sha256": "889d32476a6538c0f027d5d9c923220fc6ab5ad11359ccb301f1635c9941c02b",
+      "bytes": 7971
+    },
+    {
+      "path": "docs/design/fluxos-v04.md",
+      "sha256": "80c1354e59d52ce34728fd807a85af434121652256b8cd70c7eaf6b064fb8e63",
+      "bytes": 6961
+    },
+    {
+      "path": "docs/design/refinamento-v02.md",
+      "sha256": "3f26f0afe3e4cc30231902656777c13e96d6d68d42308e9b3e92c77aa850a88e",
+      "bytes": 2824
+    },
+    {
+      "path": "docs/diagnostico.md",
+      "sha256": "9ef1594865604a7b050ca11f75e967b4541caaee86ae35d25d00feb01b7432de",
+      "bytes": 11215
+    },
+    {
+      "path": "docs/diagramas/README.md",
+      "sha256": "3dc64e140b077bae5edf01f68e35ba478592d51858db721e6a3cb0eb2b882dd3",
+      "bytes": 3286
+    },
+    {
+      "path": "docs/diagramas/apis.md",
+      "sha256": "afc3c1f41897efefbc388f697754ecde8b7df080b84f93e75fede2425123ff75",
+      "bytes": 3618
+    },
+    {
+      "path": "docs/diagramas/banco.md",
+      "sha256": "8259cf11e7d527ee052a4de8571ff11f63347084bf1346e1eb0381803fc09d31",
+      "bytes": 19735
+    },
+    {
+      "path": "docs/execucao/v1/alimentacao-consulta.md",
+      "sha256": "67bdbb7e68757619d6a28937bc6b33661c04cf9d9f6e44fe5e51f1026ff3b79b",
+      "bytes": 5470
+    },
+    {
+      "path": "docs/execucao/v1/alimentacao-importacao.md",
+      "sha256": "73015cccfc99e706e11c4cd35cca6962f0ae2e415e85564f509182436b6bc2b0",
+      "bytes": 7770
+    },
+    {
+      "path": "docs/execucao/v1/alimentacao-preflight.md",
+      "sha256": "9fe19a47f8339f17fa210b289572f8fd3aa28a547de3ef82a0deffdaf5eadfb0",
+      "bytes": 7323
+    },
+    {
+      "path": "docs/execucao/v1/alimentacao-registro.md",
+      "sha256": "48acb7111ca5dc47108f9264d45c927ed53bd332ef2b9c5a02584c2b90eaa811",
+      "bytes": 9334
+    },
+    {
+      "path": "docs/execucao/v1/auditoria-produto-2026-10-24.md",
+      "sha256": "a3993078014a053e6d477380d54da5756d35f0f9137c97338050558a6d834a51",
+      "bytes": 28971
+    },
+    {
+      "path": "docs/execucao/v1/auth-local-fechamento.md",
+      "sha256": "34effd7c833b76303942603b2a75b592430c66e0edd44d392a5be778338c546c",
+      "bytes": 3948
+    },
+    {
+      "path": "docs/execucao/v1/avaliacao-android.md",
+      "sha256": "c24bface200998f71d9164ca35bb853e4b3622e955cff6d5a8660e761454936c",
+      "bytes": 11417
+    },
+    {
+      "path": "docs/execucao/v1/backlog.md",
+      "sha256": "fc60cd8ef1c482a1329fae1ca0fff26d726874637ae3b8a9972ddbd5e100ba6d",
+      "bytes": 120510
+    },
+    {
+      "path": "docs/execucao/v1/catalogo-consulta.md",
+      "sha256": "181a17f48d15e4b7fa92d4d0c5f0e34cef270375b6dc47da1ecb913a67e004ff",
+      "bytes": 4580
+    },
+    {
+      "path": "docs/execucao/v1/configuracao-treino-047.md",
+      "sha256": "723d87d37597b0c19dabf6131b71d57c4b689a71a9bbed503b47b7cebe163d14",
+      "bytes": 12086
+    },
+    {
+      "path": "docs/execucao/v1/decisoes-piloto.md",
+      "sha256": "c025335541acbcad8f611b7582a8f83500154edb56bb8c788a46c2adbd465703",
+      "bytes": 34362
+    },
+    {
+      "path": "docs/execucao/v1/diario.md",
+      "sha256": "1fc0bf4105d0164f4af00160e170212f2eb9ffb0da7d3cb92e430420e61a7f4b",
+      "bytes": 113931
+    },
+    {
+      "path": "docs/execucao/v1/escopo.md",
+      "sha256": "d60fc32c3c8c4c74e9c3826f5e9ab7248d76b604a3e3d8e3b242377dc3f70838",
+      "bytes": 11532
+    },
+    {
+      "path": "docs/execucao/v1/etapa-01-fechamento.md",
+      "sha256": "f35cb09b34d42af3f2540fb4da9fb6610deef6c45a94792944d19c4e1e620766",
+      "bytes": 4150
+    },
+    {
+      "path": "docs/execucao/v1/etapa-02-fechamento.md",
+      "sha256": "376c88abe76a33cd18829b83f88096382caa39ba3d76b2d278d1ab5ff6571cf5",
+      "bytes": 5645
+    },
+    {
+      "path": "docs/execucao/v1/execucao-treino-017.md",
+      "sha256": "4e8d859116e63722f38cab78c608eed79e051b72ff93f7f95993b73100452558",
+      "bytes": 10598
+    },
+    {
+      "path": "docs/execucao/v1/frontend-fidelidade-figma.md",
+      "sha256": "762a63a23d0631c65956ede1f20fb039ea902e77fa97f128b2111d299c6566d8",
+      "bytes": 23054
+    },
+    {
+      "path": "docs/execucao/v1/handoff.md",
+      "sha256": "8716989a13c74078c5c6ce3a1f085480d99e4144cc549f576a39963eba3df47e",
+      "bytes": 10027
+    },
+    {
+      "path": "docs/execucao/v1/implantacao-e-apk.md",
+      "sha256": "6cf3500e853a886d598eaf14c2d36f08094628d75a28f0b72059ad12c4db41f4",
+      "bytes": 5754
+    },
+    {
+      "path": "docs/execucao/v1/matriz-cenarios.md",
+      "sha256": "2c5cdec7fe366ea7bbeefdecda83f48f849a946e6874abb2e499fcde0c510fc7",
+      "bytes": 12590
+    },
+    {
+      "path": "docs/execucao/v1/oauth-android.md",
+      "sha256": "903d4aae6273dfa601835da7ccca7260532c7a060bb83dbbb65a9f0fa552e195",
+      "bytes": 9434
+    },
+    {
+      "path": "docs/execucao/v1/pesquisa-fotos-historico.md",
+      "sha256": "36e5ed0b41e097275fc1476f27623d5b9ecf974fc552b81faf83422d8b434a1d",
+      "bytes": 10669
+    },
+    {
+      "path": "docs/execucao/v1/plano-macro.md",
+      "sha256": "25e006d5283a730cb2e753a49b800eae16bf663b20922eef6ae0dd170d6ed624",
+      "bytes": 11791
+    },
+    {
+      "path": "docs/execucao/v1/privacidade-013.md",
+      "sha256": "b6c9f5086ae56fc7af9bb63ead713e851884c68c8261c6854046b1b15d0d62ae",
+      "bytes": 10487
+    },
+    {
+      "path": "docs/execucao/v1/qualidade-ci.md",
+      "sha256": "920687e82e5e7023022b347ec956359663d2e2882697927a64ba45426fae2b7c",
+      "bytes": 15296
+    },
+    {
+      "path": "docs/execucao/v1/refeicoes-045.md",
+      "sha256": "1b9091c47a2f88bc61cdec85e073ba986fc9bcf417df660af78b5344015f73d6",
+      "bytes": 12419
+    },
+    {
+      "path": "docs/execucao/v1/trilha-implementacao.md",
+      "sha256": "2d94e50e035b1880140249aa1af7a5830c3bc57d4d2f519a2b99a2bf8f89477a",
+      "bytes": 48631
+    },
+    {
+      "path": "docs/execucao/v1/validacao-planejamento.md",
+      "sha256": "899ea885443c7f139411fc009fabe3ba84a4ac7cb07cd410939a99c0daeec386",
+      "bytes": 3624
+    },
+    {
+      "path": "docs/graphify.md",
+      "sha256": "3fb59c670aa90bcab9ae4f8a4d086eda317415d36b3ff193f7bbdccae7545b54",
+      "bytes": 14559
+    },
+    {
+      "path": "docs/pesquisa-fontes.md",
+      "sha256": "17de28a3e3b9f2bfe2f8fe6df95c4530602a5b394e49cd089ab4a3f17a108b51",
+      "bytes": 7550
+    },
+    {
+      "path": "docs/planejamento/README.md",
+      "sha256": "5855f3694c33f6e8694f08264da82aca9c8a003240d7944093ef24cc5746df2f",
+      "bytes": 1007
+    },
+    {
+      "path": "docs/planejamento/arquitetura-e-contratos.md",
+      "sha256": "9c3d283b6bb2b7308a8eebd437dc22bccb85e5857912219686fbd6d6e9d0c7ad",
+      "bytes": 15987
+    },
+    {
+      "path": "docs/planejamento/etapa-00-base.md",
+      "sha256": "c89b61f2f501860649ff79984365bbb9a91ff3123bd1c9dcbf8f0bd44504a05d",
+      "bytes": 3241
+    },
+    {
+      "path": "docs/planejamento/etapa-01-pesquisa.md",
+      "sha256": "54392a728198ccfc7077541defde9fa54405c23886de479951f01cb5a5724471",
+      "bytes": 1300
+    },
+    {
+      "path": "docs/planejamento/evidencias/README.md",
+      "sha256": "0044d91d0291e963f6823fad5423f2fdebafc195f01130c2036887a430f727b3",
+      "bytes": 4006
+    },
+    {
+      "path": "docs/planejamento/experiencia-e-figma.md",
+      "sha256": "5c0d0939de9c96f06d0d77eb14b558884752558e5450057af98145920b738d89",
+      "bytes": 10603
+    },
+    {
+      "path": "docs/planejamento/fontes-custos-e-hospedagem.md",
+      "sha256": "602444aa789dbabbb8b6e4db3836fe464ea5e7aee0eeee3a1230468431983c0a",
+      "bytes": 12441
+    },
+    {
+      "path": "docs/planejamento/pitch-e-decisoes.md",
+      "sha256": "6029770f4e165696a599b4b6e71d9cbcabd1ebc100613ea459ecc794c177c7c9",
+      "bytes": 5723
+    },
+    {
+      "path": "docs/planejamento/plano-de-execucao.md",
+      "sha256": "09c9e1d931e3a581ab76add85fd509e882aba0708a3f723fde4df3b70df1361a",
+      "bytes": 661
+    },
+    {
+      "path": "docs/planejamento/qualidade-e-lancamento.md",
+      "sha256": "f07c2a0f179a0db40901798c7704bc15c346590d5bbac3d887027cea0583b7aa",
+      "bytes": 9846
+    },
+    {
+      "path": "docs/planejamento/viabilidade-operacional.md",
+      "sha256": "7cb9655b520baaae2705bdf1b2cc36d9755a14ce8fedbae9bc93cc9ddb2444a0",
+      "bytes": 12478
+    },
+    {
+      "path": "docs/planejamento/visao-produto.md",
+      "sha256": "cbb36156a1b66f6677e39f1c5dddee005e957432ca309508f98a1763b9f61895",
+      "bytes": 11928
+    },
+    {
+      "path": "docs/proposta-visual.md",
+      "sha256": "ebf40b97edf427d1478fe4c0a2878af419f2344fe728a9316df5791722e4a702",
+      "bytes": 8565
+    },
+    {
+      "path": "docs/proximas-fases.md",
+      "sha256": "5ea60cc67ada7f6fcd8477277bff010a84279b4a1b6794d26a6c73444be9b283",
+      "bytes": 501
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/.graphify_analysis.json",
+      "sha256": "a80c5197855ca917d3bd13a63a9ca63ed4c6a3537dca64127bc6bec7c75bd53b",
+      "bytes": 14168
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/.graphify_build.json",
+      "sha256": "a964ee3827056e9a724d9fd6a41ee33c7f2935a2b92fbca6e6cf0b8ba4406e91",
+      "bytes": 27
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/.graphify_labels.json",
+      "sha256": "a910b6e93987fd7f85fc12f021556a1254bf8cc8dfb830b0dba288670dc14b2c",
+      "bytes": 199
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/.graphify_labels.json.sig",
+      "sha256": "c3ccc8d012a7bf4b4655a61a6ed0ba696a1f59dc412386c15ab93c895505e002",
+      "bytes": 175
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/.graphify_root",
+      "sha256": "d26f040fc3651851d9cdf7fd36d01d68800089cbc8945a27518ced5a8ee02126",
+      "bytes": 31
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/GRAPH_REPORT.md",
+      "sha256": "415a03087297ac34015d4ab9a1c0da68ca32c3cfb4939cb5d474bd19f843566f",
+      "bytes": 5358
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/graph.html",
+      "sha256": "83ca6350bc85af6b14f67e32f063340a1f28f195f0ded32694e7ce11e53199bc",
+      "bytes": 200878
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/graph.json",
+      "sha256": "5e39caf231f046988e20c8cdfdac6a2a67fd4f639a2cca3972eb730c756a6cdb",
+      "bytes": 246032
+    },
+    {
+      "path": "docs/referencias/api/graphify-out/manifest.json",
+      "sha256": "450d8e9110e89778624e81781df3d118433084c58e3aa3fd2330215113a1c46b",
+      "bytes": 7023
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/.graphify_analysis.json",
+      "sha256": "3ab806d19285c64d4dec000a77054388afaba948b988abc3525e1c74c88a8f9d",
+      "bytes": 18220
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/.graphify_build.json",
+      "sha256": "0a4c050215430c8bd7b51602af9f333db825618184414db8451e712b6c9cc4ec",
+      "bytes": 114
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/.graphify_labels.json",
+      "sha256": "f0976e43c5e75efcd452e018562271c13d127dae8231914e638864e5b4559b0d",
+      "bytes": 570
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/.graphify_labels.json.sig",
+      "sha256": "55a48ec83081295e64d5d7b5bf60ca117492ee53b6bf2e69fd0628cb07cb8df4",
+      "bytes": 484
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/.graphify_root",
+      "sha256": "8f55768e0b7050e4db4a57db6b01cb9d7310de1cfcaff0adbb86e8131e0715a2",
+      "bytes": 32
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/2026-09-09/.graphify_analysis.json",
+      "sha256": "05d14f9c0474a00a4b0f6efeed60484bc922f5e309a17bc92948ee43bf78d538",
+      "bytes": 16457
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/2026-09-09/.graphify_labels.json",
+      "sha256": "c769778fd01b3a57f86c5de4b006e6367aa74718438460fc30ddbf121b22208d",
+      "bytes": 437
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/2026-09-09/GRAPH_REPORT.md",
+      "sha256": "a7770bf8f5dc2798905195ed5b422e52ed4ddad484ffe50701bcce1bf007bf41",
+      "bytes": 5826
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/2026-09-09/graph.json",
+      "sha256": "7aad346c52f0c1f5acf38eb1cadb054bf5676efb916420b6af1c47471609daf1",
+      "bytes": 244067
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/2026-09-09/manifest.json",
+      "sha256": "c630a310d43973d63e3cc3ce88852b7b03caabc1b173ebc8456bce7a6e12db21",
+      "bytes": 12023
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/GRAPH_REPORT.md",
+      "sha256": "157ada50d8078419f16ca97fe7cb8cbfee40f3e52c4083ff36ead51e31486e97",
+      "bytes": 6182
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/graph.html",
+      "sha256": "3fd811cb11fc3e016f9fc7310c351d0e7a6486ab0ba995fb3ceb256684791587",
+      "bytes": 230657
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/graph.json",
+      "sha256": "6113949b18f010b0ec23dc1d78ad916858dbe2dcabe40cf4344f224d570ece73",
+      "bytes": 259046
+    },
+    {
+      "path": "docs/referencias/frontend/graphify-out/manifest.json",
+      "sha256": "c630a310d43973d63e3cc3ce88852b7b03caabc1b173ebc8456bce7a6e12db21",
+      "bytes": 12023
+    },
+    {
+      "path": "docs/retomada-fase-2.md",
+      "sha256": "f1af156aeed39cd8b76cb139674c8ee0c40318fa57439d944ed029ad99a9cd89",
+      "bytes": 268
+    },
+    {
+      "path": "docs/validacao.md",
+      "sha256": "bc72b25c1845f0d50819b19698f67ac56a6441456eb6d98215bbe61251b8de56",
+      "bytes": 424
+    }
+  ]
+}

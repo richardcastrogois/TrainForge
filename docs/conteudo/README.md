@@ -1,35 +1,30 @@
-# Conteúdo: estado e ponto de entrada
+# Conteúdo, fontes e integração
 
-**21/10/2026:** N01–N46 encerradas nos recortes documentados:40 pesquisas e6 reusos; sem N ativa.331 famílias catalogadas, com estados candidato/condicional/referência/incompatível. Não equivalem a331 fornecedores licenciados nem a46 programas integrais executáveis.
+O TrainForge conserva origem, autoria, versão e direitos por uso. Pesquisa concluída não equivale a programa publicado ou prática liberada. O fechamento de pesquisa N01–N46 e a triagem editorial são etapas diferentes; o estado atual está no [handoff](../execucao/v1/handoff.md).
 
-Índice documental:840 tentativasGET,694HTTP200 e780 hashes de corpos retidos conferidos. São registros de pesquisa, não chamadas do app. Pesquisa concluída não é homologação editorial, clínica ou comercial.
-
-## Encontrar sem repetir buscas
-
-| Preciso de… | Abrir |
+| Preciso encontrar | Documento canônico |
 |---|---|
-| Estado de todas as N | [Consolidação](evidencias/2026-10-15/consolidacao-n01-n46.json) e [complementos](evidencias/2026-10-03/revisao-publicos-ambientes/fila-complementos-anteriores.json) |
-| Nova pista: APIs de exercício, mídias e compra única | [Registro único atualizado em22/10](opcoes-apis-exercicios.md) |
-| Lista de fontes/famílias | [Catálogo](catalogo-fontes.md), [JSON](fontes.json), `consultar-fontes.py` |
-| Cuidadores — seleção final | [Relatório N15](evidencias/2026-10-21/n15c-composicao/relatorio.md), [biblioteca11](evidencias/2026-10-21/n15c-composicao/biblioteca-cuidadores.json), `consultar-cuidadores.py --biblioteca` |
-| Limites dos candidatos antigos | [Catálogo cuidadores](catalogo-cuidadores.md) e [fila](fila-cuidadores.json); currentSelection aponta o recorte final |
-| Por que uma fonte não basta para publicar | [Direitos](direitos-e-acordos.md), [curadoria](qualidade-e-curadoria.md), [critériosAPK](criterios-exercicios-apk.md) |
-| Dados reais preparados localmente, schema e fila por ativo | [Preparação de21/10](preparacao-local-2026-10-21.md) |
-| Estado editorial vigente:73metadados/439excluídos/0prática | [Fechamento da etapa01](../execucao/v1/etapa-01-fechamento.md); [revisão parcial histórica](revisao-consulta-2026-10-21.md) |
-| Materiais para integração | [Dossiê de integração](evidencias-para-integracao.md) e [cobertura](cobertura-e-prioridades.md) |
-| BeFit/REA/emulador | [Handoff datado](handoff-befit-2026-10-14.md) e [guia de ambiente](guia-rea-emulador-befit-2026-10-14.md); não repetir nem presumir estado do aparelho |
-| Próxima etapa | [Escopo V1](../execucao/v1/escopo.md), histórias001/004/005/019 |
+| O que foi pesquisado, quando e por quê | [Pesquisa e decisões](pesquisa-e-decisoes.md) e [história para apresentação](../historico/README.md). |
+| Fonte, URL, versão, resultado e lacunas por ID | [331 fontes/famílias em JSON](fontes.json) e [catálogo legível gerado](catalogo-fontes.md). |
+| Direitos, autoria profissional, revisão e limites de uso | [Direitos e curadoria](direitos-e-curadoria.md). |
+| O que foi preparado/revisado e como integrar | [Integração e operações editoriais](evidencias-para-integracao.md). |
+| Comparação de APIs, datasets e mídia | [Registro único de opções](opcoes-apis-exercicios.md) e [avaliação MoveKit](avaliacao-movekit-2026-10-29.md). |
+| A prova original de uma rodada | [Acervo de pesquisa](evidencias/README.md), com ZIP, índice e consulta por caminho antigo. |
+| Uma instrução ou relato anterior à consolidação | [Memória documental e cronologia](../historico/README.md). |
 
-N15:1 alongamento estático restritoCG01/PR42,8 variantesnível1ReViEEWCG04/PR68 com apoio profissional e2 práticas escritasCaregiversFIRSTCG06/PR261. São11 componentes, sem circuito novo ou eficácia herdada. ES2019-DOM-01/PR28 mantém5 movimentos para idosos em casa separadamente. Materiais Benson/START/Pilates e variantes não selecionadas conservam lacunas de material/direitos/versão. Não preencher por IA.
+A pesquisa N01–N46 encerrou seus recortes em **21/10/2026**. O balanço, as fontes e os limites da seleção modular estão no guia de pesquisa; esse fechamento não aprovou conteúdo para publicação.
 
-## Conferir resultados localmente
+A triagem posterior de **512 ativos** deixou **73 metadados para consulta e 439 excluídos**, sem liberar programa, instrução, dose ou mídia para prática. O catálogo no banco e as rotas de execução não removem esse gate. Não completar dados ausentes por IA nem promover fixture a conteúdo real.
+
+## Consultar sem refazer buscas
 
 ```powershell
-python docs/conteudo/evidencias/2026-10-21/n15c-composicao/conferir-fechamento.py
-python docs/conteudo/evidencias/2026-10-15/conferir-continuacao-n39-n46.py
-python -m unittest discover -s docs/conteudo/evidencias -p test_catalogo_cuidadores.py
+python docs/conteudo/consultar-fontes.py --help
+python docs/conteudo/consultar-cuidadores.py --item CG-01
+python tools/evidencias.py listar --filtro n15c
+python tools/evidencias.py mostrar docs/conteudo/evidencias/2026-10-15/consolidacao-n01-n46.json
 ```
 
-São verificações documentais, não teste clínico nem do aplicativo. Corpos/renders de terceiros permanecem locais e ignorados no Git; recibos/hashes permitem saber o que foi efetivamente recebido e o que falhou. Não repetir URLs/barreiras sem pista nova, nem atribuir fonte externa ao BeFit sem prova.
+`fontes.json`, `catalogo-cuidadores.json`, `fila-cuidadores.json` e `criterios-exercicios-apk.json` conservam registros estruturados. O índice legível de fontes deriva do JSON por `consultar-fontes.py --gerar-indice`; não editar a tabela de fontes separadamente.
 
-[Snapshots do antigo índice](../arquivo/2026-10-21/docs/conteudo/README.md) preservam a evolução, sem substituir o estado vigente.
+O ZIP público contém somente metadados e arquivos já versionados. Corpos de terceiros, planilhas locais, capturas privadas, credenciais e bancos permanecem fora dele. Sua existência local ou um hash coincidente não autorizam redistribuição nem atestam qualidade clínica. Antes de outra pesquisa, localizar a lacuna e a tentativa anterior; não repetir barreiras, contatos ou testes sem necessidade nova.

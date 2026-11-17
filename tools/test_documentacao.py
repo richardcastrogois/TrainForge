@@ -6,12 +6,13 @@ import re
 import shutil
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 from unittest.mock import patch
 
 from documentacao_backlog import validate
 from documentacao_inventario import dart_calls, go_inventory, normalized, scan
-from gerar_documentacao import ROOT, check_links, flow, outputs
+from gerar_documentacao import ROOT, check_links, outputs
 from gerar_swagger import generate
 
 
@@ -60,6 +61,16 @@ class DocumentationTests(unittest.TestCase):
             os.utime(root / "lib/main.dart", (1000000000, 1000000000))
             touched, _ = outputs(root)
             self.assertEqual(moved, touched)
+
+    def test_generation_preserves_manual_guides_and_has_one_technical_reference(self):
+        expected, _ = outputs(ROOT)
+        self.assertEqual(set(expected), {'docs/arquitetura/inventario-atual.json',
+                                         'docs/arquitetura/gerado/referencia.md',
+                                         'docs/execucao/v1/backlog.md'})
+        reference = expected['docs/arquitetura/gerado/referencia.md']
+        self.assertIn('## Referência histórica do backend anterior', reference)
+        self.assertNotIn('## Referência atual: schema Prisma', reference)
+        self.assertNotIn('Arquitetura proposta: ainda a implementar', reference)
 
     def test_new_screen_and_http_literal_update_without_phantom_navigation(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -164,13 +175,6 @@ class DocumentationTests(unittest.TestCase):
             (root / "readme.md").write_text("[broken](missing.md)\n```text\n[example](example.md)\n```", encoding="utf-8")
             self.assertEqual(check_links(root, ["readme.md"]), ["readme.md → missing.md"])
 
-    def test_diagram_rejects_unknown_node_and_escapes_labels(self):
-        with self.assertRaises(ValueError):
-            flow([("a", "A")], [("a", "absent", "edge")])
-        text = flow([("a", 'Unsafe "label" <tag>\nline')], [])
-        self.assertNotIn("<tag>", text)
-        self.assertNotIn('Unsafe "label"', text)
-
     def test_checked_in_files_match_generator_and_no_panel_output(self):
         expected, _ = outputs(ROOT)
         for relative, text in expected.items():
@@ -179,6 +183,23 @@ class DocumentationTests(unittest.TestCase):
             self.assertNotIn("docs/painel", relative)
         self.assertFalse((ROOT / "tools/painel_projeto.py").exists())
         self.assertFalse((ROOT / "tools/abrir-painel.ps1").exists())
+
+    def test_relative_heading_and_explicit_anchors_are_checked(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'guide.md').write_text('# Guia\n<a id="exact"></a>\n## Ação real\n'
+                '[valid](#ação-real) [explicit](#exact) [broken](#missing)\n'
+                '~~~text\n[example](absent.md)\n~~~', encoding='utf-8')
+            self.assertEqual(check_links(root, ['guide.md']), ['guide.md → #missing'])
+
+    def test_archive_locator_must_name_a_preserved_member(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with zipfile.ZipFile(root / 'research.zip', 'w') as bundle:
+                bundle.writestr('docs/original.json', '{"fixtureOnly":true}')
+            (root / 'guide.md').write_text('[source](research.zip#docs/original.json) '
+                '[missing](research.zip#docs/missing.json)', encoding='utf-8')
+            self.assertEqual(check_links(root, ['guide.md']), ['guide.md → research.zip#docs/missing.json'])
 
 
 if __name__ == "__main__":

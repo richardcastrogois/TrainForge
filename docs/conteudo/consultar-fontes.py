@@ -3,6 +3,10 @@ import argparse
 import collections
 import json
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'tools'))
+from evidence_store import available
 
 ROOT=Path(__file__).resolve().parent
 parser=argparse.ArgumentParser()
@@ -19,7 +23,7 @@ assert all(r["status"] in base["statusDefinitions"] for r in rows), "Estado desc
 assert all(r["urls"] and all(u.startswith("https://") for u in r["urls"]) for r in rows), "URL invalida"
 for row in rows:
     if row.get("localEvidence"):
-        assert (ROOT/row["localEvidence"]).is_file(), row["id"]+": evidencia local ausente"
+        assert available(ROOT/row["localEvidence"], root=ROOT.parents[1]), row["id"]+": evidencia local ausente"
 if args.gerar_indice:
     labels={"exercicios":"Exercícios e demonstrações","programas":"Programas humanos e modalidades","ciencia":"Ciência, educação e triagem","atividades":"Atividades e gasto energético","alimentos":"Composição de alimentos e produtos","alimentacao_editorial":"Receitas, alimentação e educação","midia":"Imagens e vídeos"}
     out=["# Catálogo comparativo de fontes", "", "Gerado de [fontes.json](fontes.json) em "+base["updatedAt"]+". "+str(len(rows))+" fontes/famílias; não é uma contagem de APIs nem de fornecedores aprovados. Não editar esta tabela separadamente: atualizar o JSON e executar `consultar-fontes.py --gerar-indice`.","", "Todas as ligações remetem a fontes primárias. Para nível de evidência, amostras, data e próxima ação por fonte, consultar o JSON pelo ID. Rodadas iniciais em 22–23/09; pilotos e atualização de fontes selecionadas em 26–28/09. A data individual indica o que foi reconferido. Páginas bloqueadas ou apenas indexadas estão identificadas no JSON.", ""]

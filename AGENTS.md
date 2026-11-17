@@ -1,59 +1,37 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **16/11/2026**. Repositório **C:/dev/TrainForge/trainforge**; o diretório pai não é este checkout. A solicitação atual prevalece sobre snapshots históricos.
-
-## Retomada atual
-
-Autor priorizou comportamentos úteis com implementação própria, Flutter/Go/PostgreSQL, sem web e sem alterar alimentação. Execução ganhou agregado Go, persistência/eventos/idempotência nas tabelas existentes, quatro rotas privadas e tela reutilizável na aba Atividade. API0.10.0/38operações. [Escopo](docs/execucao/v1/execucao-treino-017.md), [SQL isolado](docs/execucao/v1/activity-session-sql-verification.json). V1-017/023 doing; 015/016 continuam sem conteúdo aprovado. Não criar programa, dose ou ocorrência fictícios para liberar prática; feed real vazio é esperado. Uma resposta incerta fica somente na memória do Flutter: não anunciar fila offline durável ou recuperação de intenção após matar processo. Não copiar código/rotinas/traduções AGPL nem mídia de terceiros ou fazer compra por inferência. Direitos/autoria do conteúdo existente preservados. Checkpoints abaixo são históricos.
-
-Verificação deste incremento:337Flutter/analyze0, Go comum/vet,138Python e15documentais após geração; SQL3testes+23subtestes descartáveis, tabelas entregues iguais. APKdebug0.4.7+29 gerado/conferido, não instalado/publicado. [Integração](docs/execucao/v1/activity-session-integration-verification.json). PostgreSQL próprio restaurado para parado;8082/18083/15432 sem escuta ao final. Não presumir APK/serviços anteriores ativos; não repetirGoogle ou mutar dados para ensaiar treino sem conteúdo liberado.
+Estado documental: **17/11/2026**. Checkout ativo `C:/dev/TrainForge/trainforge`; o diretório pai não é este repositório. A solicitação atual do autor prevalece sobre snapshots históricos.
 
 ## Primeiro contexto
 
-Antes de alterar, ler este arquivo, docs/execucao/v1/handoff.md, backlog.json, plano-macro.md e etapa-02-fechamento.md. Para requisitos, ler trilha-implementacao.md e a história/dependências. Para operar/aprender, docs/aprendizado/README.md e docs/diagramas/README.md. Conferir Git e arquivos reais; não repetir instalação/pesquisa/teste/restore/login sem motivo novo.
+Ler `docs/README.md`, `docs/execucao/v1/handoff.md`, `docs/execucao/v1/escopo.md` e a história/dependências no `backlog.json`. Para código, `docs/arquitetura/README.md`; para comandos/ensino pessoal, `docs/aprendizado/README.md`. Pesquisas e marcos ficam em `docs/conteudo/README.md` e `docs/historico/README.md`.
 
-## Último incremento
+## Estado e prioridade
 
-- Pedido atual: explicar ORM, avaliar MoveKit, limpar o repositório e ensinar operação/fluxos. [Recibo](docs/execucao/v1/repository-cleanup-verification.json).
-- Removidos31Dart inalcançáveis a partir de main.dart e todos os testes, mais63arquivos dos scaffoldsLinux/macOS/Windows/web. Android/iOS preservados; runtime ativo não ganhou dados fictícios. Não reintroduzir os endpoints legados removidos.
-- APKdebug **0.4.6+28 instalado**, hash/assinatura conferidos, sessão existente restaurada; emulador emHoje. Reobservar antes de agir; não atualizar com formulário/envio incerto aberto por inferência.
--258testesFlutter/analyze0; quatro testes do helper e dois dos diagramas;14documentais.15mapasdraw.io/SVG validados pela skill e prévias locais conferidas. Graphify90Dart/4032nós/4628arestas,31removidos/90inalterados,zeroLLM. Backup exato em.local/graphify-backup-20261029-learning.
-- Operação diária: tools/ambiente.py status/start/plan-stop/stop/start-catalog. Somente status/plan-stop executados para o novohelper; start/stop têm testes com mocks. Não chamar activate/init/restore para iniciar o ambiente já provisionado.
-- Skill draw-io-diagram-generator em.local/skills, fixada na revisão5269f7ea2d6c3a9bfda5ed878b6726cf509121fd do repositório oficialgithub/awesome-copilot. Ler SKILL.md antes de novosdraw.io. Fontes públicas: docs/diagramas/mapas.json e schema-publico.json; gerar/verificar com tools/gerar_diagramas.py.
-- MoveKit: pesquisa delimitada concluída; interesse do autor no pacoteR$779 NÃO é compra autorizada. MP4/metadata anunciados, licença perpétua e12meses de novidades; cache/offline/entrega e cobertura requerem conferência. [Avaliação](docs/conteudo/avaliacao-movekit-2026-10-29.md). Sem compra, contato ou integração.
+Flutter Android/iOS; API Go0.10.0/38 operações; catálogo 0.2.0; núcleo schema 13/30 tabelas, catálogo schema 2/4 tabelas. pgx/SQL  e Goose, sem ORM atual. Catálogo é a primeira extração delimitada; não reescrever os demais domínios sem decidir ownership/transações/operação. Prisma/Fastify são referências históricas.
 
-## Estado funcional e próxima história
+Execução017/023 tem motor, eventos/idempotência SQL, quatro rotas privadas e uma superfície na aba Atividade. Continua doing, com015/016 bloqueadas por conteúdo:73 metadados/439 ativos excluídos/zero programa-instrução-dose-mídia liberados para prática. Não inventar rotina, adequação clínica, tradução editorial ou histórico para fechar critérios. Intenção incerta no Flutter é somente em memória; não anunciar offline durável.
 
-- API Go0.10.0/38operações; catálogo0.2.0, núcleo schema13/30tabelas, catálogo schema2/4tabelas. Execução reaproveita tabelas/grants, sem migration nova. Go usa pgx/SQL eGoose, semORM. Prisma é referência antiga; não criar dois escritores/migradores nem adicionarNode para isso sem decisão.
-- Checkpoint históricoM0–M4 da primeira extração do catálogo concluído localmente. Bancos/roles próprios, retirada/autoridade/rollback/falha/recuperação conferidos. Naquele ensaio os serviços e emulador estavam ativos; não é observação atual. [Recibo](docs/execucao/v1/catalog-rollout-verification.json). Demais domínios não foram todos extraídos.
-- **Próxima funcionalV1-015**: adesão/seleção depende de conteúdo humano aprovado.73metadados de consulta,439ativos excluídos, zero programas/instruções/doses/mídias liberados. Não inventar treino para fechar aceite. Continuar trabalho independente028/029/qualidade pelas dependências.
-- V1-011/012/013 encerradas no recorte local real: loginGoogleAndroiddebug, sessão e privacidade. OAuthdebug/release conferidos. Não repetir consentimentoGoogle por hábito; fixtures não validam login real. HTTPS/distribuiçãorelease/iOS têm gates próprios.
-- V1-047 encerrada funcionalmente: criação humana, edição autorizada para14:00 e recuperação da revisão2; sem terceira versão. Clareza fuso/hora segue refinamento; não reescrever rotina por inferência.
-- V1-045doing: SQL/HTTP/cliente de refeições e edição de metadados integrados. Autor confirmou refeição20g como teste de navegação; preservar, não chamar consumo real nem excluir sem ação específica. Consumo real anterior e conta preservados.
-- V1-048 entregue no recorte de capacidade;0/6369nomes editoriais reais publicados. UI atual tem apresentação73movimentos/31variantes alimentares nos quatro idiomas, ligada aID/versão/original, sem claim de revisão profissional. Demais alimentos usam original. Público:Perfil/Privacidade > Fontes e transparência conserva autoria/licença/cálculo; jornadas comuns limpas. Aviso de prática indisponível não é metadado dispensável.
-- V1-028doing: resetOnErrorfalse, logsDio seguros, sessão não apagada por falha de rede, inventárioAndroid e gatesCI verificados; não é auditoria integral. Perda permanente de chave, dependências completas, release, offline/fotos/master/Sonar/carga continuam abertos. [Recibo](docs/execucao/v1/secure-storage-recovery-verification.json).
+O incremento funcional anterior passou337 Flutter/análise0, Go/vet,138 Python e SQL3 testes+23 subtestes descartáveis. APK debug0.4.7+29 gerado/conferido, não instalado/publicado. A limpeza documental não repetiu aceite humano. Estado atual exige observar processos/aparelho; antes dela8082/18083/15432 estavam parados.
 
-## Produto e limites
+## Preservação e operação
 
-Dois caminhos de treino: programas compatíveis e composição com regras humanas revisadas. Configuração completa em etapas curtas/revisão antes de buscar; trocas compatíveis e agenda; retomar ou encerrar parcial. Cuidador pratica para si nas pausas. Preservar idosos, cuidadores, casa, praça/parque e academia; Android/iOS.
+`.local` contém bancos, credenciais, assinatura, backups, corpos de pesquisa e capturas: nunca apagar, publicar ou imprimir. Preservar dados reais, inclusive consumo humano e refeição20g declarada teste; não reclassificar/excluir por inferência. Não repetirGoogle por hábito. Configuração047 teve revisão 2/14:00 recuperada; não criar outra para navegar.
 
-Foto propõe alimentos editáveis, pessoa informa quantidade e confirma. Refeição/alimento são visões dos mesmos registros. Histórico visual/análise/dicas revisadas juntos naV1. Fotos recuperáveis pela conta/cache; excluir refeição exclui foto. Offline requer fila durável privada, conflitos/idempotência e exclusão sem recriar dados. Master requer identidade/permissão revogável/auditoria; não inferir por e-mail, GitHub ouclaimdoapp.
+Operação diária: `python tools/ambiente.py status`, `start`, logs, `plan-stop` e `stop`. Não usar init/activate/importação/restore/migration como startup. Não parar processos globais. SDK Go sem credenciais: `tools.dev_api.environment(include_api_env=False)` retorna `(env,go)`.
 
-Sem treino, dose, instrução, mídia, nutriente, tradução editorial ou histórico inventados. Fixtures só em testes descartáveis. Nenhum dado de exemploFigma vira dado real. Sem compra, conta comercial, assinatura, integração paga, hospedagem/deploy ou contato externo por inferência. Pesquisa ampla anterior consolidada; o pedidoMoveKit autorizou apenas pesquisa delimitada.
+Pesquisa foi compactada com caminhos/bytes/SHA preservados. `tools/evidencias.py listar|mostrar|extrair|verificar` consulta os originais; extrair fica em`.local`, sem download. O leitor resolve paths históricos presentes em JSON sem exigir milhares de arquivos soltos. Catálogos estruturados e recibos únicos continuam canônicos; não sobrescrever recibos datados como se um teste tivesse sido repetido.
 
-## Operação e verificação
+SENAS e os42 SVG/7 JSON originais de design foram preservados para a apresentação. SVG de estudo não é screenshot atual doAPK. Não comprar mídia, copiar códigoAGPL/rotinas/traduções ou incorporar ativos com novas obrigações por inferência. Direitos/créditos existentes continuam válidos. Interesse em preço não autoriza pagamento, conta, contato, assinatura, hospedagem ou nova integração.
 
-- .local contém bancos, credenciais, assinatura, backups e capturas; nunca apagar/vazar/versionar. .tools e caches existentes preservados. Não parar processos globais nem mudar virtualização.
-- SDKGo sem credenciais: tools.dev_api.environment(include_api_env=False). Defaultenvironment lê api.env; só fluxos que precisam disso.
-- Não rodar analyze/gen-l10n/test em paralelo a avaliar_android.py prepare; fingerprint deve permanecer estável.
-- Validação documental: python tools/gerar_documentacao.py --write --check e unittesttest_documentacao.py. Diagramas: python tools/gerar_diagramas.py --check. Swagger deriva de comentários/DTOs; regenerar só quando contrato muda.
-- Graphify: consultar vizinhança primeiro; AST incremental lib/, code-only/no-cluster e HTML, sem reprocessar todos os dossiês/LLM. Go/SQL ficam nos mapas/Swagger.
-- Figma: arquivo bX6YjBBLIJgoo2MtiFLntl;TF/Inter, darkGrafite/lima e rolagemAndroid sem esticar aprovados. Quatro contextos responderam em29/10; limiteStarter anterior não é bloqueio vigente comprovado. iOS não validado nativamente noWindows.
+## Documentação e verificação
 
-## Documentação e Git
+Não recriar pastas de snapshots ou MD por toda retomada. Atualizar os guias canônicos e a linha do tempo; detalhes imutáveis ficam nos acervos/recibos. Handoff é curto e atual; histórico não governa operação. Manter status/criteria/completionEvidence do backlog; done exige os critérios reais.
 
-Atualizar backlogJSON, contratos/mapas afetados e handoff conforme implementação. done exige completionEvidence; não encerrar história por preview ou regra planejada. Recibos/licenças/evidências referenciados foram preservados; histórico emGit não é instrução vigente.
+Gerar/conferir com `python tools/gerar_documentacao.py --write --check`; diagramas com `python tools/gerar_diagramas.py` e `--check`; suítePython em tools. Arquitetura e diagramas têm uma entrada comum. Ler `.local/skills/draw-io-diagram-generator/SKILL.md` antes de novos draw.io. Diagramas derivam de mapas/schema/Swagger; não editar os derivados à mão.
 
-Git por comando: git -c safe.directory=C:/dev/TrainForge/trainforge ...; não mudar confiança global. Commits e push de incrementos validados autorizados. Limpeza histórica anterior especificamente autorizada já foi aplicada e verificada: não repetir force-push. Outros clones precisam reconciliar o histórico; caches/cópias externas não certificados como apagados. Achado desconhecido de segredo bloqueia; não imprimir valor ou criar exceção ampla.
+Graphify: consultar o grafo existente, atualizar AST incremental de `lib/` com `python tools/atualizar_graphify.py --write`, sem LLM/semântica/clustering/reprocessamento dos dossiês. Go/SQL e docs usam mapas/Swagger/índices próprios. Não rodar testes/análise/gen-l10n em paralelo ao `avaliar_android.py prepare`.
 
-Validação complementar deste incremento: suíte completaPython doCI com127testes aprovada; inclui os helpers e a reprodutibilidade dos15diagramas. Não é teste real de parada/start nem validação de compra/licença do pacote adquirido.
+## Git
+
+Usar `git -c safe.directory=C:/dev/TrainForge/trainforge ...`, sem mudar confiança global. Commit/push desta implementação e da reorganização foram explicitamente autorizados. Fazer stage por paths revisados, nunca `git add .`; escanear todo o intervalo/blobs a publicar, incluindo ZIPs descompactados pelo scanner, sem imprimir valores. ConfirmarHEAD remoto/local e ahead/behind0 0 apóspush. Nunca repetir a antiga reescrita histórica/force-push. Memória de fornecedor ou testes antigos não substitui evidência atual.

@@ -1,99 +1,55 @@
 # Segurança, observabilidade e capacidade
 
-## Incremento de 29/10 — armazenamento e superfície Android
+Estado consolidado em **16/11/2026**. Existem controles e verificações locais; V1-028/029/030 mantêm critérios abertos. Não há certificação integral, pentest completo ou capacidade de milhões comprovada. [Modelo e contratos](modelo-e-contratos.md) · [Operação diária](../aprendizado/operacao-local.md).
 
-O app define AndroidOptions(resetOnError: false) no flutter_secure_storage 10.0.0. O padrão true podia apagar o armazenamento ao falhar; agora o erro chega ao fluxo de retentativa. Algoritmos padrão, formato da sessão e exclusão explícita no logout preservados. O teste do canal nativo prova a opção enviada e a leitura posterior sem comando de exclusão; não simula perda física de chave.
+## Controles implementados e evidência
 
-APK debug **0.4.5+27** instalado, hash/assinatura conferidos e conta existente restaurada, sem novo consentimento ou escrita privada. 258 testes Flutter, análise sem problemas e cinco testes do leitor de manifesto passaram. [Recibo](../execucao/v1/secure-storage-recovery-verification.json).
+| Fronteira | Controle e limite | Evidência |
+|---|---|---|
+| Identidade/sessão | Google verificado, identidade issuer/sub, hashes, rotação/família/reuso e logout; aceite Android debug local, sem comprovar distribuição release/iOS | [Aceite local](../execucao/v1/implementacao.md) |
+| HTTP privado | Principal autenticado, titular em query e credencial viva revalidada na transação; conta alheia sem acesso; revisão/idempotência e limites por operação | [Privacidade](../execucao/v1/implementacao.md), [configuração SQL](../execucao/v1/training-configuration-sql-verification.json), [atividade SQL](../execucao/v1/activity-session-sql-verification.json) |
+| Persistência | SQL parametrizado, papéis runtime/migrator separados, funções restritas e versões imutáveis; SECURITY DEFINER com search_path fixo/execução explícita | [Schema/privilégios](../execucao/v1/database-verification.json) |
+| Readiness | Live separado; ready confere conexão, objetos/grants, funções e runtime não elevado; falha genérica 503 sem consultar dados privados | [CI SQL](../execucao/v1/ci-sql-verification.json) |
+| Catálogo separado | Reader sem DML/acesso privado; encaminhamento sem credenciais; digest/revisão e retirada precedem cache/304; indisponível falha fechado | [Transição](../execucao/v1/catalog-rollout-verification.json), [decisões](decisoes.md) |
+| Cliente | Logs restritos, troca de conta/geração invalida respostas, rede não apaga sessão; intenção incerta conserva corpo/chave em memória | [Integração](../execucao/v1/activity-session-integration-verification.json) |
+| Armazenamento seguro | AndroidOptions(resetOnError:false) preserva falha para retentativa; algoritmos/formato/logout explícito mantidos | [Recibo](../execucao/v1/secure-storage-recovery-verification.json) |
 
-[Inventário compilado](../execucao/v1/android-security-inventory.json): minSDK24/target36, allowBackup false e nove domínios excluídos em backup/cloud/transferência. Quatro permissões: internet, biometria/fingerprint transitivas do AndroidX e receiver interno. Exportados: MainActivity, serviço Google de revogação com permissão declarada e ProfileInstallReceiver com DUMP. Merge comprova dependências21.4.0/1.1.0; presença de biometria não significa fluxo biométrico habilitado.
+Prontidão não audita todo DDL, dependências, backups ou capacidade. Testes do secure storage conferem a opção enviada ao canal nativo e leitura posterior sem exclusão; não simulam perda física da chave. Rascunho em memória não entrega a fila durável V1-026.
 
-Reproduzir após preparar o artefato corrente: python tools/android_security_inventory.py --write. O leitor não instala ferramentas nem acessa credenciais/dados do aparelho; testes sintéticos rodam no CI documental. Hash/assinatura/versão divergentes, permissão nova, export não revisado ou exclusão ausente bloqueiam o recibo.
+O [inventário Android histórico](../execucao/v1/android-security-inventory.json) registra minSDK24/target36, allowBackup false, exclusões de backup/cloud/transferência, permissões e componentes exportados daquele APK. Biometria transitiva no manifesto não significa fluxo biométrico habilitado. Após preparar novo artefato pertinente, `python tools/android_security_inventory.py --write` reavalia o manifesto compilado, sem ler credenciais/dados do aparelho ou instalar ferramentas. Hash/assinatura divergentes, permissão/export novo ou exclusão ausente exigem revisão do recibo. Manifesto não certifica comportamento de todos os fabricantes ou resistência do keystore.
 
-**Limites:** debug/HTTP local não aprova release; manifesto não certifica fabricantes, autorização dos chamadores, resistência de keystore ou ausência de vulnerabilidades. Recuperação de chave perdida, dependências completas, ciclo offline/fotos e master continuam abertos em028. Os oito workflows do ajuste visual a8ea84a passaram, incluindo o subteste SQL da busca; não encerram a auditoria integral.
+## Exclusão e recuperação
 
-## Vigente29/10 — prontidão e CI
+Exclusão própria exige sessão/intenções válidas e confirmação, remove o inventário privado e revoga sessões. O ledger mínimo UUID/data impede retorno no restore separado, sem nome/e-mail/token. Configuração, refeições, consumos e execução integram suas verificações privadas. Conta Google e cópias feitas pelo usuário são independentes.
 
-CI Flutter aprovado e CI SQL de migrations/refeições/privacidade executado em689f64b. Fonte0.8.1 fortalece readiness: objetos e privilégios do runtime são conferidos por uma consulta de metadados, com503genérico emfalha. Teste SQL próprio aprovado em40813092631/9124a85; não é auditoria completa deDDL, dependências, Sonar, carga ou todos os módulos. Sem nova migration ou alteração nos dados reais. [Recibo](../execucao/v1/ci-sql-verification.json). A execução entre serviços está em [reavaliação](reavaliacao-microservicos-2026-10-29.md); revogação/exclusão exigem contrato específico antes da extração.
+Restore permanece separado/offline: aplicar migrations/registro atual, conferir exclusões e revalidar o corte antes de promover. O CLI não promove automaticamente. Manutenção/expiração de backups são manuais e limitadas; não se promete apagamento físico instantâneo ou prazo automatizado inexistente. [Procedimento e limites](../execucao/v1/implementacao.md), [restore de configuração](../execucao/v1/training-configuration-privacy-verification.json).
 
+## Offline, fotos e master: requisitos ainda abertos
 
-Plano, não certificado de auditoria. Os números da imagem de referência de auditoria não são achados do TrainForge. A prioridade dos [achados locais](achados.json) é revisão estática; não houve scanner de dependências, pentest ou benchmark de produção nesta etapa.
-
-## Incremento047 verificado em27/10
-
-Configuração privada tem validação em Go e SQL, credencial viva, lock do titular, revisão otimista, idempotência atômica e versões imutáveis. Negativos em SQL direto recusaram review:false, campo de titular forjado, medida física não prevista e fusoLocal. Runtime não insere/atualiza/apaga a tabela diretamente; funções SECURITYDEFINER usam search_path fixo e execução explicitamente concedida. Não há privilégio master inferido.
-
-HTTP exige Bearer e titular da sessão, aplica no-store, JSONestrito16KiB e limite por conta. Client congela intenção incerta e invalida respostas por conta/geração; rascunho em memória não é fila offline durável. Exportação, exclusão confirmada e restauração/ledger incluem a configuração; testes em descartável provaram preservação de outra conta e editorial. [SQL](../execucao/v1/training-configuration-sql-verification.json), [restore](../execucao/v1/training-configuration-privacy-verification.json).
-
-Schema12 foi ativado somente na base local, com checkpoint de schema e comparação das linhas reais; não é alegação de backup completo restaurado desta ativação. Testes não certificam segurança total nem escala: rate limit é por instância, busca de recursos usa view JSON do catálogo atual e precisa de benchmark/indexação conforme carga. Sonar/CIFlutterSQL/carga e operação pública continuam com seus gates. Nenhuma hospedagem foi criada.
-
-## Estado conferido em24/10/2026
-
-A [auditoria do produto](../execucao/v1/auditoria-produto-2026-10-24.md) inspecionou a API Go0.5.1/25operações, APKdebug0.3.0+13, schema/privilégios reais e cobertura. Há controles concretos de autenticação, titularidade, sessão, logs, rede e persistência; não há homologação completa de segurança, Sonar configurado ou capacidade medida. V1-028/029/030 continuam abertas. CI verde atual não inclui Flutter nem integraçãoSQL descartável automática.
-
-GoogleAndroiddebug consentido e clientesOAuthdebug/release já conferidos no [aceite local](../execucao/v1/auth-local-fechamento.md). Isso não valida distribuiçãoAPKrelease porHTTPS, iOS ou ambiente público. O autor não quer hospedagem neste momento. Não pedir nova infraestrutura como condição para teste noemulador.
-
-## Checkpoint histórico de23/10 — API0.4.0
-
-API Go0.4.0/18operações e APKdebug0.1.3+4. Auth e sessão implementados, logs por allowlist, exportação própria/exclusão confirmada, inventário privado, proxy explícito e limites por instância validados tecnicamente. A política pública está noAPK; testes de duas contas/rollback/refresh e restore usam banco descartável. Nenhuma conta fictícia na base entregue. [V1-013 e matriz de acesso](../execucao/v1/privacidade-013.md).
-
-A exclusão remove dados correntes e revoga sessões após confirmação; o registro mínimo UUID/data impede retorno no restore separado. Manutenção temporária e expiração de backups continuam manuais; nenhum prazo automatizado é prometido. Antes de promoção, manter o alvo offline, aplicar migrations/registro atual e revalidar o corte com exclusões pausadas na origem. ContaGoogle e cópias feitas pelo usuário são independentes.
-
-Naquele snapshot anterior ao aceite local, loginGoogle e configuraçãoOAuthrelease ainda estavam pendentes; foram posteriormente conferidos conforme a seção vigente acima. HTTPS/distribuiçãorelease, iOS, carga e infraestrutura continuam sem validação completa. Não há certificação de segurança ou milhões simultâneos. A lista abaixo mantém os critérios para próxima exposição e versões posteriores, sem reclassificar planejamento como entrega.
-
-## Q4 — controles a implementar para offline e fotos
-
-Em25/10, o autor aprovou excluir foto com a refeição e registrar alimentação/andamento offline para sincronizar depois.026/042/045 continuam pendentes; esta matriz não comprova implementação nem proteção já verificada.
-
-| Risco/cenário | Critério do novo recorte |
+| Cenário | Critério antes de liberar |
 |---|---|
-| Processo encerra após salvar localmente | Operação durável/protegida recuperada, ou falha local informada sem falso aceite |
-| API confirma e resposta se perde | Reconciliar a mesma identidade/chave, sem segundo consumo/sessão |
-| Conta muda, é revogada ou excluída | Fila inacessível a outro titular e sem envio indevido; não reaplicar na conta recriada |
-| Refeição excluída durante upload/reenvio | Cancelar/reconciliar; foto/miniatura não reaparecem nem ficam acessíveis como revisão |
-| Falha entre remoção no banco e no arquivo | Acesso revogado e limpeza retentável; não declarar limpeza física antes de comprová-la |
-| Outro aparelho ou backup contém cópia antiga | Aplicar exclusões na reconciliação/restore; explicar limites sem promessa de limpeza instantânea externa |
+| Processo morre após salvar localmente | Operação privada durável/protegida é recuperada, ou falha local é informada sem falso aceite |
+| API confirma e resposta se perde | Reconciliar mesma identidade/chave sem duplicar consumo/sessão |
+| Conta troca, é revogada ou excluída | Fila inacessível a outro titular e sem reaplicação na conta recriada |
+| Refeição é excluída durante upload/reenvio | Cancelar/reconciliar; foto/miniatura não reaparecem nem permanecem acessíveis como revisão |
+| Banco e arquivo falham em etapas diferentes | Revogar acesso e retentar limpeza, sem declarar remoção física não comprovada |
+| Outro aparelho/backup tem cópia antiga | Aplicar exclusões em reconciliação/restore e explicar os limites externos |
+| Exclusão por master | Permissão explícita/revogável no servidor, identidade estável, titular/recurso exatos, confirmação e auditoria mínima |
 
-Usar dados/arquivos isolados. Definir limites, proteção em repouso, recuperação, ciclo de chaves, backup e expurgo antes de liberar filas/imagens privadas. Autenticação válida condiciona sincronização; tokens não ficam no payload da fila/log. Nenhum dado real foi apagado nesta rodada. [Decisões Q4](../execucao/v1/decisoes-piloto.md).
+Antes de usar filas/imagens privadas, definir limites, proteção em repouso, ciclo de chaves, backup e expurgo. Tokens não ficam no payload da fila/log; sincronização exige autenticação válida. Master não é inferido por e-mail, GitHub ou campo do aplicativo e não implica leitura/edição irrestritas. Ensaiar papel forjado/revogado, conta alheia, confirmação inválida, repetição e concorrência em ambiente isolado. [Decisões Q4/Q6](../execucao/v1/escopo.md).
 
-## Q6 — autorização de exclusão e master planejado
+## Instrumentação e dados que podem aparecer em log
 
-O autor determinou exclusão de dados particulares pelo usuário que os incluiu ou pelo master do projeto. Hoje a exclusão de consumo usa o titular da sessão na query; não há papel master no runtime. V1-049 implementará a exceção, sem bypass genérico de ownership.
+O evento `http_request` contém requestId gerado, método categorizado, padrão de rota, status, duração e bytes. Não contém URL/query/IDs fornecidos, corpo, Authorization, cookies, IP ou identidade. Rejeição antes do router usa unmatched; método desconhecido usa OTHER. Panic gera código fixo correlacionado, sem texto bruto da exceção. Testes cobriram sucesso/404/503/panic e sentinelas privadas. [Recibo HTTP](../execucao/v1/http-observability-verification.json).
 
-Requerer permissão explícita e revogável no servidor, identidade autenticada estável verificada, confirmação reforçada, recurso/titular exatos e trilha mínima de ator/motivo/resultado sem corpo privado. Não derivar poder de e-mail, campo enviado pelo app ou propriedade do GitHub; não conceder leitura/edição irrestritas por inferência. Provar casos de usuário alheio, papel forjado/revogado, confirmação inválida, repetição e exclusão concorrente com fila/upload em ambiente isolado.
+Faltam correlação Flutter→Go→SQL, métricas/pool, traces, retenção e alertas operacionais. Um evento por requisição exige medir volume/custo antes de exposição. Nenhum coletor ou storage foi contratado. [Sinais OpenTelemetry](https://opentelemetry.io/docs/concepts/signals/) foram referência conceitual, sem exigir uma pilha inteira.
 
-O vínculo da conta master real permanece pendente de verificação antes da ativação. Todos os cenários devem constar do aceite; isso não significa que participantes humanos ou práticas/conteúdo já estejam disponíveis. [Decisões Q6](../execucao/v1/decisoes-piloto.md).
+## Exposição e capacidade
 
-## Critérios de segurança e exposição
+Preservar verificação de assinatura/issuer/audience/expiração, autorização em todo recurso, paginação/corpo/tempo limitados, proxy explicitamente confiável e rate limit coerente com a topologia. Não incluir corpo privado, token, e-mail ou exceção bruta em logs/métricas. Runtime sem superuser, TLS/banco protegido e assinatura própria/HTTPS no release continuam critérios de distribuição.
 
-- Identidade Google verificada com assinatura/issuer/audience/expiração, identidade estável e associação explícita. Preservar as verificações já existentes. Referência: [Google backend auth](https://developers.google.com/identity/sign-in/web/backend-auth).
-- Access token de curta duração; refresh hash/rotação atômica/família/reuso; logout revoga no backend; secure storage no cliente. Não apagar sessão válida por erro de rede.
-- Ownership em toda operação privada e teste de ID alheio; permissões do cuidador separadas. Limites de corpo/página/tempo, proxy confiável e rate limit coerentes com o deploy. Referência: [OWASP API Security 2023](https://api-security.owasp.org/editions/2023/en/0x11-t10/).
-- Logging por allowlist e redação; não corpo de auth/perfil, token em query, e-mail como label de métrica ou log completo de exceção com segredo. Segredos em ambiente/gerenciador adequado, fora do Git e dos artefatos públicos.
-- Análise Go/Flutter/Android, verificação de segredos e dependências com versões/data/resultado reais; `govulncheck` depois de existir Go. [Guia oficial de segurança Go](https://go.dev/doc/security/).
-- Runtime com privilégio mínimo, SQL parametrizado, migrations separadas, TLS e banco protegido. Exportação/exclusão e retenção precisam cobrir também caches e backups. Ensaio de restore antes de confiar em backup.
-- Release Android com assinatura própria, certificado verificado, segredo protegido, permissões necessárias e endpoint HTTPS. [Assinatura Android](https://developer.android.com/studio/publish/app-signing).
+Análise de dependências/segredos/Go/Flutter/Android precisa registrar versão, data e resultado reais. Referências utilizadas: [Google backend auth](https://developers.google.com/identity/sign-in/web/backend-auth), [OWASP API Security](https://api-security.owasp.org/editions/2023/en/0x11-t10/), [segurança Go](https://go.dev/doc/security/) e [assinatura Android](https://developer.android.com/studio/publish/app-signing). CI aprovado em um recorte não encerra auditoria completa, Sonar, release, offline/fotos/master ou carga.
 
-## Telemetria útil para o piloto
+V1-030 conserva alvos iniciais a revisar: p95 de leituras abaixo de 500ms e escritas abaixo de 1s em staging aquecido. São metas, não medidas. Um ensaio deve declarar hardware/região/versão, concorrência, volume, mistura de endpoints, duração, p50/p95/p99, erros e saturação do pool/CPU/memória. Login/cold start e catálogo cacheado têm perfis diferentes.
 
-Começar com logs estruturados redigidos, requestId, duração/status por rota, erros, uso de pool e health/readiness. Uma falha real deve poder ser seguida de Flutter → HTTP → Go → SQL → resposta sem expor o usuário. Traces podem ser instrumentados conforme necessidade, com amostragem e retenção definidas. [OpenTelemetry](https://opentelemetry.io/docs/concepts/signals/) define sinais, não exige a pilha inteira das imagens de referência.
-
-Não instalar Kubernetes, Spark, Cassandra, Elasticsearch ou toda uma stack de observabilidade para duas pessoas sem problema medido. Preferir recursos existentes do provedor e uma trilha reproduzível de diagnóstico. Alertas devem levar a ação: indisponibilidade, erro persistente, falha de backup, cota ou custo; não ruído por cada erro de formulário.
-
-## Medição e escala progressiva
-
-`V1-030` propõe inicialmente p95 de leituras abaixo de500ms e escritas abaixo de1s em staging aquecido. São **alvos a revisar**, não números medidos. Registrar hardware, região, versão, concorrência, volume, mistura de endpoints, duração, p50/p95/p99, erros e pool. Autenticação e cold start têm perfil diferente de catálogo cacheado.
-
-Primeiro corrigir N+1, índices/planos de consulta, paginação, payload excessivo e limites de conexões. Medir compressão/cache/ETag em conteúdo público versionado. Escala horizontal exige estado de sessão e idempotência compartilhados corretamente, não memória local por usuário. Rate limit distribuído/fila/Redis/replica só entram se volume e comportamento justificarem.
-
-Não fazer teste de carga em fornecedor de conteúdo externo. Importar o lote permitido e ensaiar nossa API em ambiente autorizado com dados sintéticos isolados; excluir essa carga do banco entregue. Um benchmark bem-sucedido não prova capacidade de milhões de usuários com qualquer padrão de uso.
-
-## Leitura individual de consumo — 27/10/2026
-
-GET /me/food-entries/{id} exige o mesmo Bearer/guarda de conta das operações privadas; a sessão é revalidada no banco e a consulta usa user_id autenticado. Registro alheio ou excluído retorna404, credencial revogada401, sem divulgar nome/quantidade. Respostas privadas no-store. Nome revisado é metadado público anexado fora do snapshot; nenhum ID particular/titular vai para a consulta editorial. Pool de uma conexão e negativos passaram no ensaio isolado; não é teste de carga. [Evidência](../execucao/v1/food-names-consumption-verification.json).
-
-## Instrumentação HTTP implementada —29/10
-
-Cada requisição emite `http_request` com requestId gerado, método categorizado, padrão de rota registrado, status, duração emms e bytes enviados. Não registra URL completa, query, valores deID, corpos, Authorization, cookies, IP ou identidade. Rejeição anterior ao router usa `unmatched`; método desconhecido usa `OTHER`. Panic mantém código fixo correlacionado, sem texto da exceção. A dependência httpsnoop1.1.0 já estava fixada e preserva as capacidades deResponseWriter.
-
-Testes cobriram sucesso,404,503,panic500 e sentinelas privadas; suíteGo comum/vet passaram. [Recibo](../execucao/v1/http-observability-verification.json). Falta correlaçãoFlutter, pool/SQL, métricas/traces, retenção e alertas. Um evento por requisição exige medir volume/custo antes da exposição; nenhum coletor ou armazenamento foi contratado. Não é teste de desempenho ou monitoramento implantado.
+Primeiro observar consultas/índices/N+1, paginação/payload, cache público versionado, conexões/timeouts e transações. Réplicas precisam compartilhar corretamente sessão/idempotência; rate limit atual é por instância. Fila, cache distribuído, réplica ou nova extração entram por necessidade medida. Não fazer carga em fornecedor externo nem no banco real entregue: ensaiar a própria API com dados sintéticos isolados. Nenhuma hospedagem está autorizada por estes critérios.

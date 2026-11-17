@@ -9,7 +9,7 @@ import textwrap
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-DIRECTORY = ROOT/'docs/diagramas'
+DIRECTORY = ROOT/'docs/arquitetura/diagramas'
 COLORS = {'atual': ('#d5e8d4', '#52734d', 'EXISTENTE'),
           'parcial': ('#fff2cc', '#9c7b18', 'PARCIAL'),
           'planejado': ('#f5f5f5', '#777777', 'PLANEJADO'),
@@ -109,15 +109,75 @@ def generate(diagram):
     svg.append('</g></svg>\n')
     return ET.tostring(mx,encoding='unicode')+'\n','\n'.join(svg)
 
-def outputs():
-    data=json.loads((DIRECTORY/'mapas.json').read_text(encoding='utf-8'))
+def api_markdown(spec):
+    """Route list comes from the same specification consumed by Swagger UI."""
+    rows=[]
+    for route, operations in sorted(spec.get('paths', {}).items()):
+        for method, operation in sorted(operations.items()):
+            if method.upper() not in {'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'}:
+                continue
+            path=spec.get('basePath', '').rstrip('/')+'/'+route.lstrip('/')
+            tags=', '.join(operation.get('tags', [])) or 'sem tag'
+            security=operation.get('security', spec.get('security', []))
+            auth='Bearer / titular' if any('BearerAuth' in value for value in security) else 'Pública'
+            if path.startswith('/api/v1/auth/'):
+                auth='Credencial do fluxo; ver contrato'
+            rows.append((method.upper(), path, tags, auth))
+    text='# APIs atuais\n\n'
+    text+='> Gerado por `tools/gerar_diagramas.py` de `contracts/generated/swagger-v1.json`; não editar à mão.\n\n'
+    text+=f"API **{spec['info']['version']}**, **{len(rows)} operações**. [Contrato completo](../../../contracts/generated/swagger-v1.json) · [Modelo e regras](../modelo-e-contratos.md) · [Arquitetura](../README.md).\n\n"
+    text+='Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Operação documentada não implica aceite funcional ou prática autorizada.\n\n'
+    text+='| Método | Rota | Área | Autorização |\n|---|---|---|---|\n'
+    text+=''.join('| '+' | '.join(row)+' |\n' for row in rows)
+    text+='\n## Ler uma chamada\n\n'
+    text+='Consulta: tela → repository Flutter → AppDio → handler Go → consulta parametrizada → JSON → tela. Escrita: revisão da pessoa → requisição privada → sessão/titular/revisão → transação/idempotência → resposta confirmada. O celular não consulta tabelas diretamente.\n\n'
+    text+='As cinco leituras do catálogo passam pela API para o processo separado. Execução usa ocorrências e eventos reais; seleção/adesão, conteúdo, agenda, foto e master conservam critérios próprios. [Camadas e fluxos](../camadas-e-fluxos.md).\n'
+    return text
+
+
+def diagram_index(data):
+    text='# Mapas do TrainForge\n\n'
+    text+='> Índice gerado de `mapas.json` por `tools/gerar_diagramas.py`; não editar à mão.\n\n'
+    text+='Comece por produto, arquitetura e telas. Abra [o índice visual](index.html) localmente ou cada SVG no navegador/editor. O [arquivo draw.io](trainforge.drawio) contém os mesmos 15 mapas em páginas separadas, editáveis no draw.io Desktop/extensão VS Code.\n\n'
+    text+='| Página | Mapa | Prévia |\n|---|---|---|\n'
+    for i,d in enumerate(data['diagrams'],1):
+        text+=f"| {i:02} | {d['title']} | [SVG]({d['id']}.svg) |\n"
+    text+='\nVerde: existente; amarelo: parcial; cinza tracejado: planejado; lilás: externo. Setas de tela representam navegação; HTTP/SQL representam comunicação; FK representa referência, sem ordem de INSERT. Uma tabela pode aparecer repetida para manter as relações legíveis.\n\n'
+    text+='[APIs](apis.md) · [Tabelas e colunas](banco.md) · [Arquitetura explicada](../README.md) · [Operação diária](../../aprendizado/operacao-local.md).\n\n'
+    text+='Fontes revisadas: `mapas.json`; metadados sem registros: `schema-publico.json`. Alterar a fonte e regenerar; uma edição direta do derivado é substituída na próxima geração. O snapshot de schema conserva sua data original, sem alegar nova consulta ao banco.\n\n'
+    text+='Aplicada a skill [draw-io-diagram-generator](https://github.com/github/awesome-copilot/tree/5269f7ea2d6c3a9bfda5ed878b6726cf509121fd/skills/draw-io-diagram-generator), fixada nessa revisão. Arquivos locais, sem envio a serviço externo e sem conteúdo de fornecedor copiado.\n'
+    return text
+
+
+def diagram_html(data):
+    nav=''.join(f'<li><a href="#{html.escape(d["id"], quote=True)}">{html.escape(d["title"])}</a></li>' for d in data['diagrams'])
+    figures=''.join(f'<section id="{html.escape(d["id"], quote=True)}"><h2>{html.escape(d["title"])}</h2><p>{html.escape(d["note"])}</p><a href="{html.escape(d["id"], quote=True)}.svg"><img loading="lazy" src="{html.escape(d["id"], quote=True)}.svg" alt="{html.escape(d["title"], quote=True)}"></a></section>' for d in data['diagrams'])
+    return ('<!doctype html>\n<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<title>Mapas do TrainForge</title><style>body{margin:0 auto;padding:24px;max-width:1200px;font:17px/1.6 system-ui,sans-serif;color:#18332e;background:#f6f8f7}a{color:#245744}nav,section{background:white;border:1px solid #d4dfda;border-radius:12px;padding:24px;margin:24px 0}img{display:block;width:100%;height:auto}h1,h2{line-height:1.3}section{scroll-margin-top:20px}</style>'
+            '<body><h1>Mapas do TrainForge</h1><p>Fontes revisadas em mapas.json. Verde: existente; amarelo: parcial; cinza: planejado; lilás: externo.</p>'
+            '<p><a href="trainforge.drawio">Editar as 15 páginas no draw.io</a> · <a href="README.md">Índice em Markdown</a> · <a href="apis.md">APIs</a> · <a href="banco.md">Banco</a></p>'
+            f'<nav aria-label="Mapas"><ol>{nav}</ol></nav>{figures}</body></html>\n')
+
+
+def outputs(root=ROOT):
+    directory=root/'docs/arquitetura/diagramas'
+    data=json.loads((directory/'mapas.json').read_text(encoding='utf-8'))
     result={}
+    combined=ET.Element('mxfile', host='Electron', version='26.0.0', modified='2026-11-16T00:00:00Z')
+    ids=[d['id'] for d in data['diagrams']]
+    if len(ids)!=len(set(ids)):
+        raise ValueError('Duplicate diagram id')
     for d in data['diagrams']:
         for source in d['sources']:
-            if not (ROOT/source).exists():raise ValueError('Missing source: '+source)
+            if not (root/source).exists():raise ValueError('Missing source: '+source)
         xml,svg=generate(d)
-        result[DIRECTORY/(d['id']+'.drawio')]=xml
-        result[DIRECTORY/(d['id']+'.svg')]=svg
+        combined.append(ET.fromstring(xml).find('diagram'))
+        result[directory/(d['id']+'.svg')]=svg
+    result[directory/'trainforge.drawio']=ET.tostring(combined, encoding='unicode')+'\n'
+    result[directory/'README.md']=diagram_index(data)
+    result[directory/'index.html']=diagram_html(data)
+    spec=json.loads((root/'contracts/generated/swagger-v1.json').read_text(encoding='utf-8'))
+    result[directory/'apis.md']=api_markdown(spec)
     return result
 
 def main():
@@ -130,6 +190,7 @@ def main():
             if not path.exists() or path.read_text(encoding='utf-8')!=value:
                 raise SystemExit('Diagram diverged: '+path.name)
         else:path.write_text(value,encoding='utf-8')
-    print(f'{len(generated)//2} diagramas XML/SVG verificados; sem rede ou dados privados.')
+    count=sum(path.suffix=='.svg' for path in generated)
+    print(f'{count} mapas SVG, um draw.io multipáginas e três índices verificados; sem rede ou dados privados.')
 
 if __name__=='__main__':main()

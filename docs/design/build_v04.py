@@ -1,7 +1,13 @@
-"""Design-only: build an auditable, offline Scripter payload for Figma Desktop."""
+"""Reproduce historical v0.4 data and script locally; never write to Figma."""
 from pathlib import Path
+import argparse
 import json
 R=Path(__file__).parent
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output', type=Path, default=R.resolve().parents[1]/'.local/design-generated',
+                    help='Directory for derived files (default: .local/design-generated)')
+output=parser.parse_args().output.resolve()
+output.mkdir(parents=True, exist_ok=True)
 # id, name, subtitle, back, cards [title, detail, destination], primary [label,destination]
 S=[
 (34,'Dados pessoais','Escolhe o que queres partilhar.',7,[('RG · Richard Gois','Alterar imagem e nome',35),('E-mail e acesso','richard@exemplo.pt · dados de demonstração',36),('Medidas corporais','Opcionais · altura e peso',37)],['Guardar e voltar ao perfil',7]),
@@ -70,10 +76,10 @@ S.append((95,'Palavra-passe atualizada','SIMULAÇÃO CONCLUÍDA',36,[('Nenhuma c
 S.append((96,'Alterar palavra-passe','CONTA · ESTADO DE PREENCHIMENTO',36,[('Palavra-passe atual *','•••••••••• · exemplo',None),('Nova palavra-passe *','•••••••••••• · exemplo',None),('Confirmar nova palavra-passe *','•••••••••••• · exemplo',None)],['Simular alteração',95]))
 S[2][4][1]=('Palavra-passe','Alterar palavra-passe',96)
 payload={'screens':S}
-(R/'v04-spec.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
+(output/'v04-spec.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
 template=(R/'v04-template.js').read_text(encoding='utf-8')
 old=json.loads((R/'fluxos-v03.json').read_text(encoding='utf-8'))
 inputs=[(n,[(b[1],b[2]) for b in blocks if b[0] in ('field','choice')]) for n,name,title,sub,blocks,*_ in old if any(b[0] in ('field','choice') for b in blocks)]
-(R/'v04-input-audit.json').write_text(json.dumps(inputs,ensure_ascii=False,indent=2),encoding='utf-8')
-(R/'v04.scripter.js').write_text(template.replace('__SPEC__',json.dumps(payload,ensure_ascii=False)).replace('__INPUTS__',json.dumps(inputs,ensure_ascii=False)),encoding='utf-8')
-print(f'{len(S)} destinos novos; script preparado. Ainda não aplicado ao Figma.')
+(output/'v04-input-audit.json').write_text(json.dumps(inputs,ensure_ascii=False,indent=2),encoding='utf-8')
+(output/'v04.scripter.js').write_text(template.replace('__SPEC__',json.dumps(payload,ensure_ascii=False)).replace('__INPUTS__',json.dumps(inputs,ensure_ascii=False)),encoding='utf-8')
+print(f'Histórico v0.4 reproduzido em {output}: {len(S)} destinos. Não aplicado ao Figma.')
