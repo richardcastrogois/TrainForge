@@ -173,7 +173,12 @@
       "importedPackageVulnerabilities": 0,
       "requiredModuleVulnerabilitiesNotCalled": 3,
       "realDatabaseTouched": false,
-      "remoteCi": "pending publication of correction commit"
+      "remoteCi": {
+        "testedCommit": "08d57740b5162e4a1298c8919a726dedbdb4f1e1",
+        "allPassed": true,
+        "workflowRuns": [44153466984, 44153466999, 44153467027, 44153466935, 44153466979, 44153467420, 44153467090],
+        "scope": "Seven workflows passed: restore, Go vulnerabilities, API image, secrets, catalog, SQL and documentation"
+      }
     }
   }
 }
