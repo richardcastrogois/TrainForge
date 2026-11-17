@@ -667,3 +667,16 @@ Novoambiente.py controla apenas recursos registrados; status/plan-stop executado
 Graphify90Dart/4032nós/4628arestas;31removidos/90inalterados,AST/HTML/zeroLLM. Próxima funcional015segue bloqueada por conteúdo;028/029/qualidade e demais dependências continuam. Sem migração de banco, hospedagem, compra ou dados inventados. [Recibo](repository-cleanup-verification.json).
 
 Validação complementar deste incremento: suíte completaPython doCI com127testes aprovada; inclui os helpers e a reprodutibilidade dos15diagramas. Não é teste real de parada/start nem validação de compra/licença do pacote adquirido.
+
+
+## 16/11/2026 — execução própria: motor, persistência/API e Atividade
+
+Pedido do autor: continuar as próximas etapas já implementando, Android/iOS, sem web/alimentação/cópia AGPL ou mídia com novas obrigações. Reaproveitadas as tabelas do núcleo sem migration/grant novo. API0.10.0/38operações com feed, detalhe, início de ocorrência existente e comandos; eventos reidratáveis, fatos/prescrição distintos, autenticação viva e idempotência durável por titular.
+
+Flutter usa serviço lazy por conta e uma superfície na aba Atividade: lista → sessão → estados/encerramento; realizado vazio, zero explícito, medidas decimais exatas e confirmação. Intenção incerta conserva chave/corpo/revisão somente no processo e exige reconciliação; não é offline durável. Revisão encontrou e corrigiu flags de confirmação, ordem de locks, posição de série omitida, respostas antigas e perda de rascunho ao remontar linhas durante rolagem.
+
+337Flutter completos aprovados;21testes do repository repetidos após correções de estilo; analyze0. Go comum/vet aprovados, SQL/HTTP3testes+23subtestes em descartável após lock order final; todas tabelas entregues iguais e descartável removido.138Python e15documentais após regeneração aprovados. Swagger e15mapas conferidos; doisXML alterados validados pela skilldraw.io. Prévias sintéticas de formulário320px/texto2x e sessão/feed390px inspecionadas; não é aceite nativo. Graphify95Dart/4430nós/5046arestas,ASTincremental/HTML/zeroLLM; backup preservado.
+
+APKdebug0.4.7+29 compilado, certificado/hash e correspondência às fontes conferidos; não instalado, publicado ou usado comGoogle. PostgreSQL próprio estava parado, foi iniciado para ensaio e parado após encerrar conexões dos testes; API8082/catálogo18083/PG15432 parados ao final. Nenhuma conta/rotina/ocorrência/consumo real alterado.
+
+V1-017/023doing;19done/24todo/6doing. Próxima funcional015: primeiro programa próprio revisado, adesão e agenda. Nenhuma instrução/dose/programa/mídia foi liberada para contornar o gate. [Implementação e próximos passos](execucao-treino-017.md), [SQL](activity-session-sql-verification.json), [integração e limites](activity-session-integration-verification.json).

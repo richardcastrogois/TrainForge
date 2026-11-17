@@ -11,6 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+	"trainforge.local/api/internal/activity"
 	"trainforge.local/api/internal/auth"
 	"trainforge.local/api/internal/catalog"
 	"trainforge.local/api/internal/catalogbridge"
@@ -24,7 +25,7 @@ import (
 )
 
 // @title TrainForge API
-// @version 0.9.1
+// @version 0.10.0
 // @description Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
@@ -86,6 +87,7 @@ func run(logger *slog.Logger) error {
 	privacyHTTP := &privacy.Handler{Service: privacy.Service{Repository: privacyRepository}, Authorize: authentication.Service.Authorize}
 	nutritionHTTP := &nutrition.EntryHandler{Store: nutrition.NutritionStore{Pool: pool}, Names: nutrition.FoodPostgres{Pool: pool}, Authorize: authentication.Service.Authorize}
 	trainingStore := trainingconfig.Postgres{Pool: pool}
+	activityStore := activity.ActivityStore{Pool: pool}
 	catalogRoutes := catalogHTTP.Register
 	if c.CatalogURL != "" {
 		bridge, e := catalogbridge.New(c.CatalogURL)
@@ -97,10 +99,12 @@ func run(logger *slog.Logger) error {
 			catalogRoutes = bridge.LocalVerified(pool, catalogHTTP.Register)
 		}
 		trainingStore.CatalogGuard = bridge.CheckProjection
+		activityStore.CatalogGuard = bridge.CheckProjection
 		db = catalogbridge.Readiness{Core: db, Catalog: bridge, Pool: pool}
 	}
 	trainingHTTP := &trainingconfig.Handler{Service: trainingconfig.Service{Repository: trainingStore}, ResourceStore: trainingStore, Authorize: authentication.Service.Authorize}
-	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, trainingHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
+	activityHTTP := &activity.Handler{Store: activityStore, Authorize: authentication.Service.Authorize}
+	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, trainingHTTP.Register, activityHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
 	go func() {
 		<-ctx.Done()
 		shutdown, cancel := context.WithTimeout(context.Background(), 5*time.Second)

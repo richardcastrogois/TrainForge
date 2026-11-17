@@ -1,6 +1,12 @@
 # TrainForge — instruções para agentes
 
-Estado vigente: **30/10/2026**. Repositório **C:/dev/TrainForge/trainforge**; o diretório pai não é este checkout. A solicitação atual prevalece sobre snapshots históricos.
+Estado vigente: **16/11/2026**. Repositório **C:/dev/TrainForge/trainforge**; o diretório pai não é este checkout. A solicitação atual prevalece sobre snapshots históricos.
+
+## Retomada atual
+
+Autor priorizou comportamentos úteis com implementação própria, Flutter/Go/PostgreSQL, sem web e sem alterar alimentação. Execução ganhou agregado Go, persistência/eventos/idempotência nas tabelas existentes, quatro rotas privadas e tela reutilizável na aba Atividade. API0.10.0/38operações. [Escopo](docs/execucao/v1/execucao-treino-017.md), [SQL isolado](docs/execucao/v1/activity-session-sql-verification.json). V1-017/023 doing; 015/016 continuam sem conteúdo aprovado. Não criar programa, dose ou ocorrência fictícios para liberar prática; feed real vazio é esperado. Uma resposta incerta fica somente na memória do Flutter: não anunciar fila offline durável ou recuperação de intenção após matar processo. Não copiar código/rotinas/traduções AGPL nem mídia de terceiros ou fazer compra por inferência. Direitos/autoria do conteúdo existente preservados. Checkpoints abaixo são históricos.
+
+Verificação deste incremento:337Flutter/analyze0, Go comum/vet,138Python e15documentais após geração; SQL3testes+23subtestes descartáveis, tabelas entregues iguais. APKdebug0.4.7+29 gerado/conferido, não instalado/publicado. [Integração](docs/execucao/v1/activity-session-integration-verification.json). PostgreSQL próprio restaurado para parado;8082/18083/15432 sem escuta ao final. Não presumir APK/serviços anteriores ativos; não repetirGoogle ou mutar dados para ensaiar treino sem conteúdo liberado.
 
 ## Primeiro contexto
 
@@ -18,8 +24,8 @@ Antes de alterar, ler este arquivo, docs/execucao/v1/handoff.md, backlog.json, p
 
 ## Estado funcional e próxima história
 
-- API Go0.9.1/34operações; catálogo0.2.0, núcleo schema13/30tabelas, catálogo schema2/4tabelas. Go usa pgx/SQL eGoose, semORM. Prisma é referência antiga; não criar dois escritores/migradores nem adicionarNode para isso sem decisão.
-- M0–M4 da primeira extração do catálogo concluídas localmente. Bancos/roles próprios, retirada/autoridade/rollback/falha/recuperação conferidos. API8082, catálogo18083, PostgreSQL15432 e emulador ativos; leitura emmodo remote. [Recibo](docs/execucao/v1/catalog-rollout-verification.json). Demais domínios não foram todos extraídos.
+- API Go0.10.0/38operações; catálogo0.2.0, núcleo schema13/30tabelas, catálogo schema2/4tabelas. Execução reaproveita tabelas/grants, sem migration nova. Go usa pgx/SQL eGoose, semORM. Prisma é referência antiga; não criar dois escritores/migradores nem adicionarNode para isso sem decisão.
+- Checkpoint históricoM0–M4 da primeira extração do catálogo concluído localmente. Bancos/roles próprios, retirada/autoridade/rollback/falha/recuperação conferidos. Naquele ensaio os serviços e emulador estavam ativos; não é observação atual. [Recibo](docs/execucao/v1/catalog-rollout-verification.json). Demais domínios não foram todos extraídos.
 - **Próxima funcionalV1-015**: adesão/seleção depende de conteúdo humano aprovado.73metadados de consulta,439ativos excluídos, zero programas/instruções/doses/mídias liberados. Não inventar treino para fechar aceite. Continuar trabalho independente028/029/qualidade pelas dependências.
 - V1-011/012/013 encerradas no recorte local real: loginGoogleAndroiddebug, sessão e privacidade. OAuthdebug/release conferidos. Não repetir consentimentoGoogle por hábito; fixtures não validam login real. HTTPS/distribuiçãorelease/iOS têm gates próprios.
 - V1-047 encerrada funcionalmente: criação humana, edição autorizada para14:00 e recuperação da revisão2; sem terceira versão. Clareza fuso/hora segue refinamento; não reescrever rotina por inferência.

@@ -37,6 +37,9 @@ SUITES = (
         {'TF_FOOD_NAMES_TEST_DATABASE_URL':'migrator', 'TF_FOOD_NAMES_TEST_RUNTIME_URL':'runtime'}),
     ('configuration', 'config', (('./internal/trainingconfig', ('TestConfigurationPostgresLifecycle',)),),
         {'TF_CONFIGURATION_TEST_DATABASE_URL':'migrator', 'TF_CONFIGURATION_TEST_RUNTIME_URL':'runtime'}),
+    ('activity', 'activity', (('./internal/activity', ('TestActivityPostgresLifecycle',
+        'TestActivityPostgresAuthorizationWithdrawalAndErasure', 'TestActivityPostgresHTTPContractAndBoundaries')),),
+        {'TF_ACTIVITY_TEST_DATABASE_URL':'migrator', 'TF_ACTIVITY_TEST_RUNTIME_URL':'runtime'}),
 )
 
 
@@ -90,7 +93,7 @@ def check_environment(env, *, root=ROOT, platform=sys.platform):
 
 
 def disposable_name(name):
-    if not re.fullmatch(r'trainforge_v1_(?:privacy|auth|catalog|food|nutrition|names|config)_test_[a-f0-9]{12}', name):
+    if not re.fullmatch(r'trainforge_v1_(?:privacy|auth|catalog|food|nutrition|names|config|activity)_test_[a-f0-9]{12}', name):
         raise RuntimeError('Unsafe fixture name')
     return name
 

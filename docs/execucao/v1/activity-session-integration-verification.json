@@ -1,0 +1,87 @@
+{
+  "dateLocal": "2026-11-16",
+  "timezone": "America/Sao_Paulo",
+  "executedAtUtc": "2026-11-17T01:33:33.260515+00:00",
+  "stories": {
+    "V1-017": "doing",
+    "V1-023": "doing"
+  },
+  "scope": "original-persisted-activity-api-and-single-flutter-tab-surface",
+  "implementation": {
+    "apiVersion": "0.10.0",
+    "apiOperations": 38,
+    "newHttpOperations": 4,
+    "newMigrations": 0,
+    "newGrants": 0,
+    "newDependencies": 0,
+    "existingTablesUsed": [
+      "activity_sessions",
+      "activity_events",
+      "idempotency_records"
+    ],
+    "prescriptionContract": "trainforge.activity-prescription/1",
+    "eventContract": "trainforge.activity-event/1",
+    "snapshotContract": "trainforge.activity-session/1",
+    "flutterComposition": "lazy service per authenticated account in Activity tab"
+  },
+  "verification": {
+    "goTestAll": true,
+    "goVetAll": true,
+    "goActivityTestAfterExplicitSlotValidation": true,
+    "flutterFullTestsPassed": 337,
+    "flutterRepositoryTestsAfterLintCleanup": 21,
+    "flutterAnalyzeIssues": 0,
+    "pythonFullTestsPassed": 138,
+    "documentationTestsAfterRegeneration": 15,
+    "sqlTopLevelTestsPassed": 3,
+    "sqlSubtestsPassed": 23,
+    "sqlReceipt": "docs/execucao/v1/activity-session-sql-verification.json",
+    "swaggerGeneratedAndChecked": true,
+    "documentationGeneratedAndChecked": true,
+    "diagramCountChecked": 15,
+    "changedDrawioFilesValidated": 2,
+    "visualPreviewsInspected": [
+      "activity-form-320",
+      "activity-session-390",
+      "activity-feed-390"
+    ],
+    "previewData": "synthetic fixtures only",
+    "graphify": {
+      "dartFiles": 95,
+      "nodes": 4430,
+      "edges": 5046,
+      "llmTokens": 0
+    }
+  },
+  "apk": {
+    "versionName": "0.4.7",
+    "versionCode": 29,
+    "variant": "debug",
+    "package": "com.example.trainforge",
+    "relativePath": "build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "71f43c85bc9b2a13edaa9098b58c345ea26bbaff8686d5e17b607f89ebed7eae",
+    "artifactMatchesCurrentSources": true
+  },
+  "preservation": {
+    "allDeliveredDatabaseTablesUnchanged": true,
+    "disposableDatabaseRemoved": true,
+    "ownedClusterInitiallyRunning": false,
+    "ownedClusterStoppedAfterTests": true,
+    "apiCatalogOrEmulatorStarted": false,
+    "apkInstalled": false,
+    "newGoogleLoginAttempted": false,
+    "realFoodOrWorkoutRecordsChanged": false,
+    "thirdPartyCodeOrMediaCopied": false,
+    "contentPublished": false,
+    "purchaseMade": false,
+    "webAdded": false,
+    "externalDistributionPublished": false
+  },
+  "limits": [
+    "No approved programme, instruction, dose or media was published in the delivered database.",
+    "Selection/enrollment and schedule creation remain V1-015/016; this API executes existing occurrences.",
+    "Unconfirmed client intentions and UUIDs are memory-only; no durable offline queue or process-death recovery.",
+    "No native practice acceptance, iOS build, release deployment or external tester link was validated.",
+    "SQL grant-partial/title-empty/missing-join negatives were reviewed statically, not injected in SQL."
+  ]
+}

@@ -88,6 +88,21 @@ class DocumentationTests(unittest.TestCase):
             self.assertEqual(len(calls), 1)
             self.assertEqual(calls[0]["keys"], ["quantity"])
 
+    def test_dio_request_helper_preserves_literal_routes_without_inventing_dynamic_calls(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / 'repository.dart'
+            path.write_text("Future call() => dio.request(path);\n"
+                            "load() => _request('GET', '/api/v1/me/activity', decode);\n"
+                            "command(id) => _request('POST', '/api/v1/me/activity-sessions/${Uri.encodeComponent(id)}/commands', decode);\n"
+                            "dynamic() => _request(method, path);", encoding='utf-8')
+            calls = dart_calls(path, root)
+            self.assertEqual([(c['method'], normalized(c['path'])) for c in calls],
+                             [('GET', '/api/v1/me/activity'),
+                              ('POST', '/api/v1/me/activity-sessions/:param/commands')])
+            path.write_text("load() => _request('GET', '/not-an-http-helper');", encoding='utf-8')
+            self.assertEqual(dart_calls(path, root), [])
+
     def test_go_comment_registration_and_specification_are_separate(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

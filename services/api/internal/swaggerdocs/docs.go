@@ -951,6 +951,316 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/v1/me/activity": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "activity"
+                ],
+                "summary": "Read own upcoming activity and execution history",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/activity.Feed"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/activity-sessions": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "activity"
+                ],
+                "summary": "Start an existing owned activity occurrence",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "UUID retained by the durable activity event",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Owned occurrence only; no prescription or owner supplied by client",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/activity.StartRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/activity.MutationResult"
+                        }
+                    },
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/activity.MutationResult"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/activity-sessions/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "activity"
+                ],
+                "summary": "Read own activity session",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Session UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/activity.Detail"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/activity-sessions/{id}/commands": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "activity"
+                ],
+                "summary": "Record, pause, resume or explicitly close an owned activity session",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Session UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Command UUID stable across retries",
+                        "name": "Idempotency-Key",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "description": "Expected revision and explicit action; no client timestamp",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/activity.CommandInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/activity.MutationResult"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "413": {
+                        "description": "Request Entity Too Large",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "415": {
+                        "description": "Unsupported Media Type",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/me/deletion-intent": {
             "post": {
                 "security": [
@@ -2481,6 +2791,300 @@ const docTemplate = `{
         }
     },
     "definitions": {
+        "activity.CommandInput": {
+            "type": "object",
+            "properties": {
+                "action": {
+                    "type": "string"
+                },
+                "confirmed": {
+                    "type": "boolean"
+                },
+                "expectedRevision": {
+                    "type": "integer"
+                },
+                "set": {
+                    "$ref": "#/definitions/activity.Set"
+                }
+            }
+        },
+        "activity.Detail": {
+            "type": "object",
+            "properties": {
+                "movementLabels": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.MovementLabel"
+                    }
+                },
+                "practiceAvailable": {
+                    "type": "boolean"
+                },
+                "snapshot": {
+                    "$ref": "#/definitions/activity.Snapshot"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.Feed": {
+            "type": "object",
+            "properties": {
+                "complete": {
+                    "type": "boolean"
+                },
+                "sessions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.Detail"
+                    }
+                },
+                "upcoming": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.Upcoming"
+                    }
+                }
+            }
+        },
+        "activity.Item": {
+            "type": "object",
+            "properties": {
+                "mode": {
+                    "type": "string"
+                },
+                "movementId": {
+                    "type": "string"
+                },
+                "movementVersion": {
+                    "type": "string"
+                },
+                "position": {
+                    "type": "integer"
+                },
+                "targets": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.Target"
+                    }
+                }
+            }
+        },
+        "activity.MovementLabel": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "versionId": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.MutationResult": {
+            "type": "object",
+            "properties": {
+                "appliedRevision": {
+                    "type": "integer"
+                },
+                "movementLabels": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.MovementLabel"
+                    }
+                },
+                "practiceAvailable": {
+                    "type": "boolean"
+                },
+                "replayed": {
+                    "type": "boolean"
+                },
+                "snapshot": {
+                    "$ref": "#/definitions/activity.Snapshot"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.Pause": {
+            "type": "object",
+            "properties": {
+                "endedAt": {
+                    "type": "string"
+                },
+                "startedAt": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.RecordedSet": {
+            "type": "object",
+            "properties": {
+                "commandId": {
+                    "type": "string"
+                },
+                "recordedAt": {
+                    "type": "string"
+                },
+                "set": {
+                    "$ref": "#/definitions/activity.Set"
+                }
+            }
+        },
+        "activity.Set": {
+            "type": "object",
+            "properties": {
+                "durationMilliseconds": {
+                    "type": "integer"
+                },
+                "loadKg": {
+                    "type": "string"
+                },
+                "number": {
+                    "type": "integer"
+                },
+                "position": {
+                    "type": "integer"
+                },
+                "repetitions": {
+                    "type": "integer"
+                }
+            }
+        },
+        "activity.Snapshot": {
+            "type": "object",
+            "properties": {
+                "activeMilliseconds": {
+                    "type": "integer"
+                },
+                "contract": {
+                    "type": "string"
+                },
+                "endedAt": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.Item"
+                    }
+                },
+                "lastEventAt": {
+                    "type": "string"
+                },
+                "occurrenceId": {
+                    "type": "string"
+                },
+                "ownerId": {
+                    "type": "string"
+                },
+                "pauses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.Pause"
+                    }
+                },
+                "revision": {
+                    "type": "integer"
+                },
+                "sets": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/activity.RecordedSet"
+                    }
+                },
+                "source": {
+                    "$ref": "#/definitions/activity.Source"
+                },
+                "startedAt": {
+                    "type": "string"
+                },
+                "state": {
+                    "$ref": "#/definitions/activity.State"
+                }
+            }
+        },
+        "activity.Source": {
+            "type": "object",
+            "properties": {
+                "programId": {
+                    "type": "string"
+                },
+                "programVersion": {
+                    "type": "string"
+                },
+                "sessionKey": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.StartRequest": {
+            "type": "object",
+            "properties": {
+                "occurrenceId": {
+                    "type": "string"
+                }
+            }
+        },
+        "activity.State": {
+            "type": "string",
+            "enum": [
+                "started",
+                "paused",
+                "partial",
+                "completed",
+                "cancelled"
+            ],
+            "x-enum-varnames": [
+                "Started",
+                "Paused",
+                "Partial",
+                "Completed",
+                "Cancelled"
+            ]
+        },
+        "activity.Target": {
+            "type": "object",
+            "properties": {
+                "durationMilliseconds": {
+                    "type": "integer"
+                },
+                "repetitions": {
+                    "type": "integer"
+                }
+            }
+        },
+        "activity.Upcoming": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "plannedFor": {
+                    "type": "string"
+                },
+                "practiceAvailable": {
+                    "type": "boolean"
+                },
+                "source": {
+                    "$ref": "#/definitions/activity.Source"
+                },
+                "timezone": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        },
         "auth.GoogleRequest": {
             "type": "object",
             "properties": {
@@ -3938,7 +4542,7 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.9.1",
+	Version:          "0.10.0",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},

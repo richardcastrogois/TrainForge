@@ -38,8 +38,8 @@
         {
           "id": "treino",
           "title": "Treino completo",
-          "text": "Selecionar, compor, agendar, executar e retomar.",
-          "state": "planejado"
+          "text": "Sessão persistida e tela única; adesão, conteúdo e agenda pendentes.",
+          "state": "parcial"
         },
         {
           "id": "foto",
@@ -151,7 +151,8 @@
         "lib/shared/widgets/auth_gate.dart",
         "lib/shared/widgets/product_shell.dart",
         "lib/shared/widgets/account_page.dart",
-        "lib/features/nutrition/presentation/meal_diary_page.dart"
+        "lib/features/nutrition/presentation/meal_diary_page.dart",
+        "lib/features/activity/presentation/activity_page.dart"
       ],
       "nodes": [
         {
@@ -163,7 +164,7 @@
         {
           "id": "hoje",
           "title": "Hoje / ProductShell",
-          "text": "Planos, atividade, alimentação e evolução; indisponibilidade explícita.",
+          "text": "Cinco abas; Atividade mostra lista e sessão na mesma superfície.",
           "state": "atual"
         },
         {

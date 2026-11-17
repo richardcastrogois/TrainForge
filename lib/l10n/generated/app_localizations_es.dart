@@ -2087,4 +2087,142 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get commonRedBeans => 'Alubias rojas';
+
+  @override
+  String get activitySessionIntro =>
+      'Sesiones disponibles y registros confirmados por ti.';
+
+  @override
+  String get activityUpcoming => 'Sesiones disponibles';
+
+  @override
+  String get activityRecent => 'Tu historial de sesiones';
+
+  @override
+  String get activityEmptyUpcoming =>
+      'No hay ninguna sesión aprobada disponible ahora.';
+
+  @override
+  String get activityEmptyHistory => 'No hay sesiones registradas.';
+
+  @override
+  String get activityBackToFeed => 'Volver a las sesiones';
+
+  @override
+  String get activityStartSession => 'Iniciar sesión';
+
+  @override
+  String get activityOpenSession => 'Abrir sesión';
+
+  @override
+  String get activityStateStarted => 'En curso';
+
+  @override
+  String get activityStatePaused => 'En pausa';
+
+  @override
+  String get activityStatePartial => 'Finalizada parcialmente';
+
+  @override
+  String get activityStateCompleted => 'Completada';
+
+  @override
+  String get activityStateCancelled => 'Cancelada';
+
+  @override
+  String get activityRecordedSets => 'Series registradas';
+
+  @override
+  String get activityEstimatedTime => 'Tiempo activo estimado';
+
+  @override
+  String get activityConfirmedTime => 'Tiempo activo confirmado';
+
+  @override
+  String get activityPrescription => 'Referencia del programa';
+
+  @override
+  String get activitySet => 'Serie';
+
+  @override
+  String get activityPlanned => 'Planificado';
+
+  @override
+  String get activityRecorded => 'Registrado';
+
+  @override
+  String get activityRecordSet => 'Registrar serie';
+
+  @override
+  String get activityRepetitions => 'Repeticiones realizadas';
+
+  @override
+  String get activityDurationSeconds => 'Duración realizada (segundos)';
+
+  @override
+  String get activityLoadKg => 'Carga indicada (kg, opcional)';
+
+  @override
+  String get activityPauseSession => 'Pausar';
+
+  @override
+  String get activityResumeSession => 'Reanudar';
+
+  @override
+  String get activityPartialSession => 'Finalizar como parcial';
+
+  @override
+  String get activityCompleteSession => 'Completar sesión';
+
+  @override
+  String get activityCancelSession => 'Cancelar sesión';
+
+  @override
+  String get activityConfirmAction => 'Confirmar acción';
+
+  @override
+  String get activityConfirmNotice =>
+      'Confirma solo la acción que deseas registrar. Para completar se deben registrar todas las series.';
+
+  @override
+  String get activityConfirmed => 'Acción confirmada por el servidor.';
+
+  @override
+  String get activityUncertain =>
+      'La respuesta no se confirmó. Reintenta la misma acción sin crear otro registro.';
+
+  @override
+  String get activityConflict =>
+      'La sesión cambió. Recarga y revisa los registros antes de continuar.';
+
+  @override
+  String get activityRetryExpired =>
+      'Este intento caducó. Revisa la sesión antes de volver a registrar otra acción.';
+
+  @override
+  String get activityReadFailed =>
+      'No se pudieron consultar tus sesiones. Reinténtalo.';
+
+  @override
+  String get activityWriteRejected =>
+      'Se rechazó la acción. Revisa la sesión y los valores indicados.';
+
+  @override
+  String get activityInvalidSet =>
+      'Revisa el valor realizado y la carga opcional; usa hasta tres decimales.';
+
+  @override
+  String get activityPracticeUnavailable =>
+      'La práctica no está disponible para esta versión. Tus registros siguen disponibles para consultar y finalizar.';
+
+  @override
+  String get activityPartialFeed =>
+      'Esta consulta muestra solo parte del historial.';
+
+  @override
+  String get activityCheckSession => 'Revisar sesión';
+
+  @override
+  String get activityPendingExit =>
+      'Si sales o cierras la app mientras falta una respuesta, revisa esta sesión antes de volver a registrar.';
 }

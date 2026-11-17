@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-16",
+  "story": "V1-017",
+  "storyStatus": "doing",
+  "scope": "original-pure-session-engine-and-defensive-flutter-contract",
+  "baseCommit": "9840f947d343a1087868a6f6a46fba752d7be2e6",
+  "implementation": {
+    "go": "services/api/internal/activity/session.go",
+    "dart": "lib/features/activity/domain/activity_session.dart",
+    "contract": "trainforge.activity-session/1",
+    "newHttpRoutes": 0,
+    "migrations": 0,
+    "newApplicationScreens": 0,
+    "newDependencies": 0,
+    "importedThirdPartyAssets": 0,
+    "copiedOpenGymCode": false
+  },
+  "verification": {
+    "goOrdinarySuitePassed": true,
+    "goVetPassed": true,
+    "flutterDirectedTestsPassed": 25,
+    "flutterFullSuitePassed": 283,
+    "flutterAnalysisIssues": 0,
+    "pythonFullSuitePassed": 127,
+    "documentationGeneratedAndChecked": true,
+    "swaggerUnchangedAndVerified": true,
+    "diagramsChecked": 15,
+    "independentCodeReview": "approved-in-declared-foundation-scope"
+  },
+  "regressions": [
+    "partial after pause/resume keeps original start and excludes pause intervals",
+    "terminal confirmation closes an open pause",
+    "prescribed targets and performed values never overwrite one another",
+    "declared zero result remains distinct from missing measurement",
+    "same command replays before stale-revision and terminal checks",
+    "a replay reports its applied revision with the current snapshot",
+    "technical journal cap leaves capacity for explicit termination",
+    "submillisecond intervals are rounded only over the complete timeline",
+    "caller mutations cannot change an aggregate or a confirmed snapshot",
+    "late responses and invalidated account contexts do not regress client state"
+  ],
+  "limits": [
+    "Memory-only domain and client projection; no SQL or HTTP persistence adapter implemented.",
+    "No durable outbox, process-death recovery, live credential revalidation or authorization certified by this increment.",
+    "No practice/content/eligibility approval inferred from the contract.",
+    "No new session UI, runtime composition or APK build/install performed.",
+    "No live database, account, occurrence, workout or food record written.",
+    "Fixtures are disposable synthetic test prescriptions, never production seed data.",
+    "V1-015/016 retain their content gates; V1-017 is not complete."
+  ]
+}

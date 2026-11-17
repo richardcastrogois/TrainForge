@@ -17,18 +17,22 @@ import 'package:trainforge/features/training_configuration/presentation/training
 import 'figma_bottom_nav.dart';
 import 'plans_overview.dart';
 import 'product_overviews.dart';
+import 'package:trainforge/features/activity/domain/activity_repository.dart';
+import 'package:trainforge/features/activity/presentation/activity_page.dart';
 
 class ProductShell extends StatefulWidget {
   final AuthController controller;
   final NutritionRepository? nutritionRepository;
   final CatalogController? plansController;
   final Widget Function(TrainForgeDestination)? pageBuilder;
+  final ActivityRepository? activityRepository;
   const ProductShell({
     super.key,
     required this.controller,
     this.nutritionRepository,
     this.plansController,
     this.pageBuilder,
+    this.activityRepository,
   });
   @override
   State<ProductShell> createState() => _ProductShellState();
@@ -41,6 +45,20 @@ class _ProductShellState extends State<ProductShell>
   late final String accountId;
   late final NutritionRepository nutrition;
   late final TrainingConfigurationRepository? configuration;
+  ActivityRepository? _activity;
+  ActivityRepository? get activity {
+    if (_activity != null) return _activity;
+    _activity = widget.activityRepository;
+    final factory = context
+        .getInheritedWidgetOfExactType<AppDependencyScope>()
+        ?.dependencies
+        .createActivityRepository;
+    return _activity ??= factory?.call(
+      accountId: accountId,
+      currentAccountId: () => widget.controller.profile?.id,
+    );
+  }
+
   late final DailySummaryController daily;
   late final AnimationController tabMotion = AnimationController(
     vsync: this,
@@ -148,7 +166,23 @@ class _ProductShellState extends State<ProductShell>
                 configuration!,
               ),
       ),
-      TrainForgeDestination.activity => const ActivityOverview(),
+      TrainForgeDestination.activity =>
+        activity == null
+            ? const ActivityOverview()
+            : ActivityPage(
+                repository: activity!,
+                accountId: accountId,
+                currentAccountId: () => widget.controller.profile?.id,
+                sessionChanges: widget.controller,
+                openCatalog: openCatalog,
+                configure: configuration == null
+                    ? null
+                    : () => openTrainingConfiguration(
+                        context,
+                        widget.controller,
+                        configuration!,
+                      ),
+              ),
       TrainForgeDestination.food => DailyOverview(
         controller: daily,
         name: widget.controller.profile!.name,

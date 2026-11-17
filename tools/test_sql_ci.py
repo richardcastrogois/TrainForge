@@ -51,8 +51,8 @@ class SqlTestEvidence(unittest.TestCase):
         self.assertNotIn('sensitive-output',str(result))
 
     def test_every_suite_uses_an_allowlisted_disposable_database_and_explicit_test(self):
-        self.assertEqual(len(SUITES),8)
-        self.assertEqual(len({s[0] for s in SUITES}),8)
+        self.assertEqual(len(SUITES),9)
+        self.assertEqual(len({s[0] for s in SUITES}),9)
         for _,prefix,commands,variables in SUITES:
             disposable_name('trainforge_v1_'+prefix+'_test_012345abcdef')
             self.assertTrue(commands)

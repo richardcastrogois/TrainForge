@@ -1,6 +1,6 @@
 # APIs atuais
 
-Gerado a partir de contracts/generated/swagger-v1.json (API 0.9.1).34 operações. Swagger local: http://127.0.0.1:8082/docs/index.html. ContratoHTTP não implica aceitação de conteúdo inexistente.
+Gerado a partir de contracts/generated/swagger-v1.json (API 0.10.0).38 operações. Swagger local: http://127.0.0.1:8082/docs/index.html. ContratoHTTP não implica aceitação de conteúdo inexistente.
 
 | Método | Rota | Área | Autorização |
 |---|---|---|---|
@@ -19,6 +19,10 @@ Gerado a partir de contracts/generated/swagger-v1.json (API 0.9.1).34 operaçõe
 | GET | /api/v1/health/ready | operation | Pública |
 | GET | /api/v1/me | auth | Bearer / titular |
 | DELETE | /api/v1/me | privacy | Bearer / titular |
+| GET | /api/v1/me/activity | activity | Bearer / titular |
+| POST | /api/v1/me/activity-sessions | activity | Bearer / titular |
+| GET | /api/v1/me/activity-sessions/{id} | activity | Bearer / titular |
+| POST | /api/v1/me/activity-sessions/{id}/commands | activity | Bearer / titular |
 | POST | /api/v1/me/deletion-intent | privacy | Bearer / titular |
 | GET | /api/v1/me/export | privacy | Bearer / titular |
 | GET | /api/v1/me/food-entries | nutrition | Bearer / titular |
@@ -45,4 +49,4 @@ Exemplo de consulta: Flutter GoFoodRepository → AppDio → GET foods → handl
 
 Exemplo de escrita: pessoa confirma consumo → POST me/food-entries → sessão/titular/limites → transação/idempotência → food_entries e vínculo de refeição quando aplicável → resposta confirmada. A tabela não recebe requisições do celular diretamente.
 
-As cinco rotas de catálogo passam pela API para o serviço separado. Foto, composição/execução de treino e master não ganham rotas prontas por aparecerem no planejamento.
+As cinco rotas de catálogo passam pela API para o serviço separado. Execução tem quatro rotas privadas e usa ocorrências existentes. Seleção/adesão, composição, agenda, foto e master ainda têm etapas próprias; o novo serviço não cria prescrições. [Fluxo e limites de execução](../execucao/v1/execucao-treino-017.md).

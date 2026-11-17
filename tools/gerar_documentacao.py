@@ -136,6 +136,11 @@ def outputs(root):
 
     doc = f"{GENERATED}/chamadas-http.md"
     text = header("Chamadas, entradas e respostas", revision)
+    text += "## Atual: Flutter e registros Go\n\nCorrespondência estática de método e caminho com os handlers registrados. Expressões dinâmicas podem ficar fora; presença de rota não prova autorização, rede ou aceite funcional.\n\n"
+    text += table(["Chamada Flutter", "Registro Go", "Evidência Flutter"], [
+        [f"`{c['method']} {c['path']}`",
+         "; ".join(evidence(r['source'], doc, backend) for r in c['goMatches']) or "não resolvido estaticamente",
+         evidence(c['source'], doc, backend)] for c in data['calls']])
     text += "## Chamadas Flutter: comparação com a referência Fastify\n\nChaves de data/query e nomes de schemas são detectados em padrões literais; schema inline pode ficar apenas como `z.object`. O backend é o retrato versionado, não uma leitura online nem um teste de rede.\n\n"
     rows = []
     for call in data["calls"]:

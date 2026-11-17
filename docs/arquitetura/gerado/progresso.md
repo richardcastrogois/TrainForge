@@ -1,6 +1,6 @@
 # Progresso e dependências
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `09e7c86d011d1ebc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c10b9ae4574f25eb`.
 
 **19/49 histórias concluídas**, em 12 épicos. Próxima história: **V1-015**. Status vem do backlog revisado, não da existência de arquivo ou de um desenho.
 
@@ -194,7 +194,7 @@ flowchart LR
 
 | História | Status | Entrega | Depende de |
 | --- | --- | --- | --- |
-| V1-017 | todo | Executar ocorrências idempotentes de atividade | V1-015, V1-012 |
+| V1-017 | doing | Executar ocorrências idempotentes de atividade | V1-015, V1-012 |
 | V1-018 | todo | Consultar histórico e resumo com origem das métricas | V1-017 |
 | V1-019 | done | Validar e importar o lote alimentar | V1-004, V1-010 |
 | V1-020 | done | Pesquisar e cadastrar alimento próprio e registrar consumo | V1-019, V1-013, V1-008 |
@@ -250,7 +250,7 @@ flowchart LR
 | --- | --- | --- | --- |
 | V1-021 | done | Organizar configuração, composição e estado | V1-008, V1-012 |
 | V1-022 | doing | Implementar entrada e biblioteca com conteúdo real | V1-014, V1-015, V1-021 |
-| V1-023 | todo | Implementar sessão e recuperação de interrupção | V1-016, V1-017, V1-022 |
+| V1-023 | doing | Implementar sessão e recuperação de interrupção | V1-016, V1-017, V1-022 |
 | V1-024 | todo | Implementar Hoje, histórico e perfil | V1-018, V1-021, V1-013 |
 | V1-025 | doing | Implementar busca, cadastro próprio e registro alimentar no Flutter | V1-020, V1-021, V1-048 |
 | V1-026 | todo | Tratar offline e sincronização sem fingir sucesso | V1-023, V1-025 |

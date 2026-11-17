@@ -1,6 +1,6 @@
 # Telas e fluxos
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `09e7c86d011d1ebc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c10b9ae4574f25eb`.
 
 ## Atual: referências entre widgets
 
@@ -10,76 +10,79 @@ Construtor referenciado é evidência estática. Condições, botão voltar, cli
 flowchart LR
     node0["LanguagePage"]
     node1["AppearancePage"]
-    node2["AuthPage"]
-    node3["CatalogDetailPage"]
-    node4["CatalogPage"]
-    node5["FoodDetailPage"]
-    node6["FoodPage"]
-    node7["TodayPage"]
-    node8["EntryDetailPage"]
-    node9["MealDetailPage"]
-    node10["MealDiaryPage"]
-    node11["MealDraftPage"]
-    node12["MealMetadataPage"]
-    node13["EntryFormPage"]
-    node14["OwnFoodFormPage"]
-    node15["NutritionPage"]
-    node16["OwnFoodPickerPage"]
-    node17["PrivacyPage"]
-    node18["TrainingConfigurationPage"]
-    node19["AccountPage"]
-    node20["AuthGate"]
-    node21["ContentSourcesPage"]
-    node22["EvaluationGuidePage"]
-    node23["ProductShell"]
-    node24["StartupPage"]
-    node2 -->|"referencia widget"| node0
-    node2 -->|"referencia widget"| node1
-    node2 -->|"referencia widget"| node4
-    node2 -->|"referencia widget"| node6
-    node2 -->|"referencia widget"| node17
-    node2 -->|"referencia widget"| node20
-    node4 -->|"referencia widget"| node3
-    node6 -->|"referencia widget"| node5
-    node8 -->|"referencia widget"| node13
-    node9 -->|"referencia widget"| node8
-    node9 -->|"referencia widget"| node12
-    node10 -->|"referencia widget"| node8
+    node2["ActivityPage"]
+    node3["AuthPage"]
+    node4["CatalogDetailPage"]
+    node5["CatalogPage"]
+    node6["FoodDetailPage"]
+    node7["FoodPage"]
+    node8["TodayPage"]
+    node9["EntryDetailPage"]
+    node10["MealDetailPage"]
+    node11["MealDiaryPage"]
+    node12["MealDraftPage"]
+    node13["MealMetadataPage"]
+    node14["EntryFormPage"]
+    node15["OwnFoodFormPage"]
+    node16["NutritionPage"]
+    node17["OwnFoodPickerPage"]
+    node18["PrivacyPage"]
+    node19["TrainingConfigurationPage"]
+    node20["AccountPage"]
+    node21["AuthGate"]
+    node22["ContentSourcesPage"]
+    node23["EvaluationGuidePage"]
+    node24["ProductShell"]
+    node25["StartupPage"]
+    node3 -->|"referencia widget"| node0
+    node3 -->|"referencia widget"| node1
+    node3 -->|"referencia widget"| node5
+    node3 -->|"referencia widget"| node7
+    node3 -->|"referencia widget"| node18
+    node3 -->|"referencia widget"| node21
+    node5 -->|"referencia widget"| node4
+    node7 -->|"referencia widget"| node6
+    node9 -->|"referencia widget"| node14
     node10 -->|"referencia widget"| node9
-    node10 -->|"referencia widget"| node11
-    node11 -->|"referencia widget"| node6
-    node11 -->|"referencia widget"| node13
-    node11 -->|"referencia widget"| node16
-    node13 -->|"referencia widget"| node14
-    node14 -->|"referencia widget"| node13
-    node15 -->|"referencia widget"| node6
-    node15 -->|"referencia widget"| node8
-    node15 -->|"referencia widget"| node10
-    node15 -->|"referencia widget"| node13
+    node10 -->|"referencia widget"| node13
+    node11 -->|"referencia widget"| node9
+    node11 -->|"referencia widget"| node10
+    node11 -->|"referencia widget"| node12
+    node12 -->|"referencia widget"| node7
+    node12 -->|"referencia widget"| node14
+    node12 -->|"referencia widget"| node17
+    node14 -->|"referencia widget"| node15
     node15 -->|"referencia widget"| node14
-    node16 -->|"referencia widget"| node6
-    node17 -->|"referencia widget"| node21
-    node19 -->|"referencia widget"| node0
-    node19 -->|"referencia widget"| node1
-    node19 -->|"referencia widget"| node17
-    node19 -->|"referencia widget"| node21
-    node20 -->|"referencia widget"| node2
-    node20 -->|"referencia widget"| node23
-    node20 -->|"referencia widget"| node24
-    node21 -->|"referencia widget"| node4
-    node21 -->|"referencia widget"| node6
-    node21 -->|"referencia widget"| node15
-    node22 -->|"referencia widget"| node4
-    node22 -->|"referencia widget"| node6
-    node23 -->|"referencia widget"| node4
-    node23 -->|"referencia widget"| node15
-    node23 -->|"referencia widget"| node19
+    node16 -->|"referencia widget"| node7
+    node16 -->|"referencia widget"| node9
+    node16 -->|"referencia widget"| node11
+    node16 -->|"referencia widget"| node14
+    node16 -->|"referencia widget"| node15
+    node17 -->|"referencia widget"| node7
+    node18 -->|"referencia widget"| node22
+    node20 -->|"referencia widget"| node0
+    node20 -->|"referencia widget"| node1
+    node20 -->|"referencia widget"| node18
+    node20 -->|"referencia widget"| node22
+    node21 -->|"referencia widget"| node3
+    node21 -->|"referencia widget"| node24
+    node21 -->|"referencia widget"| node25
+    node22 -->|"referencia widget"| node5
+    node22 -->|"referencia widget"| node7
+    node22 -->|"referencia widget"| node16
+    node23 -->|"referencia widget"| node5
+    node23 -->|"referencia widget"| node7
+    node24 -->|"referencia widget"| node2
+    node24 -->|"referencia widget"| node5
+    node24 -->|"referencia widget"| node16
+    node24 -->|"referencia widget"| node20
 ```
 
 | Tela/widget | Localização |
 | --- | --- |
 | LanguagePage | [lib/core/l10n/language_page.dart:6](../../../lib/core/l10n/language_page.dart) |
 | AppearancePage | [lib/core/theme/appearance_page.dart:7](../../../lib/core/theme/appearance_page.dart) |
+| ActivityPage | [lib/features/activity/presentation/activity_page.dart:12](../../../lib/features/activity/presentation/activity_page.dart) |
 | AuthPage | [lib/features/auth/presentation/pages/auth_page.dart:16](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:15](../../../lib/features/catalog/presentation/catalog_page.dart) |
@@ -101,16 +104,18 @@ flowchart LR
 | AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:9](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
-| ProductShell | [lib/shared/widgets/product_shell.dart:21](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | [lib/shared/widgets/product_shell.dart:23](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 
 ## Chamadas usadas por cada feature
 
 | Feature | Literais HTTP |
 | --- | --- |
+| activity | `GET /api/v1/me/activity`; `GET /api/v1/me/activity-sessions/${Uri.encodeComponent(id)}`; `POST /api/v1/me/activity-sessions`; `POST /api/v1/me/activity-sessions/${Uri.encodeComponent(sessionId)}/commands` |
 | auth | `POST /api/v1/auth/google`; `GET /api/v1/me`; `POST /api/v1/auth/logout` |
 | catalog | `GET /api/v1/catalog/${filters.kind}`; `GET /api/v1/catalog/filters`; `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` |
 | food_reference | `GET /api/v1/foods`; `GET /api/v1/foods/filters`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}`; `GET /api/v1/foods`; `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` |
+| nutrition | `GET /api/v1/me/foods`; `POST /api/v1/me/foods`; `GET /api/v1/me/food-entries`; `GET /api/v1/me/food-entries`; `GET /api/v1/me/food-entries/$id`; `GET /api/v1/me/food-summary`; `DELETE /api/v1/me/food-entries/$id`; `GET /api/v1/me/meal-diary`; `GET /api/v1/me/meals/$id` |
 | privacy | `GET /api/v1/privacy`; `GET /api/v1/me/export`; `POST /api/v1/me/deletion-intent`; `DELETE /api/v1/me` |
 
 ## Planejado: jornadas da V1

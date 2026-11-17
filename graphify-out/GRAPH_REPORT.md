@@ -1,3 +1,9 @@
+# Mapa atual — TrainForge (16/11/2026)
+
+AST incremental de `lib/`: 95 arquivos Dart, 4430 nós e 5046 arestas; sem clustering novo e sem LLM. `graph.json`, `graph.html` e o manifesto refletem esta atualização. [Recibo](activity-update.json). Go e SQL estão no Swagger e nos mapas de arquitetura.
+
+O relatório de comunidades abaixo é histórico de 09/09/2026; suas contagens não descrevem o grafo atual.
+
 # Graph Report - trainforge  (2026-09-09)
 
 ## Corpus Check

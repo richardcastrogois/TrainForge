@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-17",
+  "dateUtc": "2026-11-17",
+  "executedAtUtc": "2026-11-17T01:17:45.963035+00:00",
+  "story": "V1-017",
+  "status": "partial",
+  "passed": true,
+  "scope": "disposable-activity-sql-http-not-human-practice-acceptance",
+  "schemaTested": 13,
+  "tests": [
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/catalog_outage_prevents_practice_but_never_traps_a_session",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/command",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/detail",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/expired_credential_is_rechecked_inside_every_transaction",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/expired_credential_is_rechecked_inside_every_transaction/command",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/expired_credential_is_rechecked_inside_every_transaction/detail",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/expired_credential_is_rechecked_inside_every_transaction/feed",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/expired_credential_is_rechecked_inside_every_transaction/start",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/feed",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/forged_principal_hash_is_not_authorization",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/forged_principal_hash_is_not_authorization/command",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/forged_principal_hash_is_not_authorization/detail",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/forged_principal_hash_is_not_authorization/feed",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/forged_principal_hash_is_not_authorization/start",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresAuthorizationWithdrawalAndErasure/start",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/bad_key",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/duplicate_field",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/missing_key",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/oversized_body",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/trailing_value",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/unknown_owner",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresHTTPContractAndBoundaries/wrong_media_type",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresLifecycle",
+      "result": "pass"
+    },
+    {
+      "test": "TestActivityPostgresLifecycle/concurrent_starts_serialize_one_occurrence",
+      "result": "pass"
+    }
+  ],
+  "deliveredSchemaMigrated": false,
+  "allDeliveredTablesUnchanged": true,
+  "disposableDatabaseRemoved": true,
+  "existingClusterLeftRunning": true,
+  "clusterStartedOrStopped": false,
+  "realGoogleOrHumanPracticeValidated": false,
+  "fixtures": "synthetic editor-reviewed practice flags only in discarded test database",
+  "credentialsPrinted": false,
+  "limits": [
+    "No content or activity was published in the delivered database.",
+    "No APK, real practice, offline queue, accessibility or release acceptance."
+  ]
+}

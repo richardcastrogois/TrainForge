@@ -2080,6 +2080,144 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get commonRedBeans => 'Feijão-vermelho';
+
+  @override
+  String get activitySessionIntro =>
+      'Sessões liberadas e registros confirmados por você.';
+
+  @override
+  String get activityUpcoming => 'Sessões disponíveis';
+
+  @override
+  String get activityRecent => 'Seu histórico de sessões';
+
+  @override
+  String get activityEmptyUpcoming =>
+      'Nenhuma sessão aprovada está disponível no momento.';
+
+  @override
+  String get activityEmptyHistory => 'Nenhuma sessão registrada.';
+
+  @override
+  String get activityBackToFeed => 'Voltar às sessões';
+
+  @override
+  String get activityStartSession => 'Iniciar sessão';
+
+  @override
+  String get activityOpenSession => 'Abrir sessão';
+
+  @override
+  String get activityStateStarted => 'Em andamento';
+
+  @override
+  String get activityStatePaused => 'Pausada';
+
+  @override
+  String get activityStatePartial => 'Encerrada parcialmente';
+
+  @override
+  String get activityStateCompleted => 'Concluída';
+
+  @override
+  String get activityStateCancelled => 'Cancelada';
+
+  @override
+  String get activityRecordedSets => 'Séries registradas';
+
+  @override
+  String get activityEstimatedTime => 'Tempo ativo estimado';
+
+  @override
+  String get activityConfirmedTime => 'Tempo ativo confirmado';
+
+  @override
+  String get activityPrescription => 'Referência do programa';
+
+  @override
+  String get activitySet => 'Série';
+
+  @override
+  String get activityPlanned => 'Planejado';
+
+  @override
+  String get activityRecorded => 'Registrado';
+
+  @override
+  String get activityRecordSet => 'Registrar série';
+
+  @override
+  String get activityRepetitions => 'Repetições realizadas';
+
+  @override
+  String get activityDurationSeconds => 'Duração realizada (segundos)';
+
+  @override
+  String get activityLoadKg => 'Carga informada (kg, opcional)';
+
+  @override
+  String get activityPauseSession => 'Pausar';
+
+  @override
+  String get activityResumeSession => 'Retomar';
+
+  @override
+  String get activityPartialSession => 'Encerrar como parcial';
+
+  @override
+  String get activityCompleteSession => 'Concluir sessão';
+
+  @override
+  String get activityCancelSession => 'Cancelar sessão';
+
+  @override
+  String get activityConfirmAction => 'Confirmar ação';
+
+  @override
+  String get activityConfirmNotice =>
+      'Confirme somente a ação que deseja registrar. A conclusão exige todas as séries registradas.';
+
+  @override
+  String get activityConfirmed => 'Ação confirmada pelo servidor.';
+
+  @override
+  String get activityUncertain =>
+      'A resposta não foi confirmada. Tente a mesma ação novamente, sem criar outro registro.';
+
+  @override
+  String get activityConflict =>
+      'A sessão mudou. Recarregue e confira os registros antes de continuar.';
+
+  @override
+  String get activityRetryExpired =>
+      'O prazo desta tentativa terminou. Confira a sessão antes de registrar outra ação.';
+
+  @override
+  String get activityReadFailed =>
+      'Não foi possível consultar suas sessões. Tente novamente.';
+
+  @override
+  String get activityWriteRejected =>
+      'A ação foi recusada. Confira a sessão e os valores informados.';
+
+  @override
+  String get activityInvalidSet =>
+      'Confira o valor realizado e a carga opcional; use até três casas decimais.';
+
+  @override
+  String get activityPracticeUnavailable =>
+      'A prática não está disponível nesta versão. Seus registros continuam disponíveis para consulta e encerramento.';
+
+  @override
+  String get activityPartialFeed =>
+      'Esta consulta mostra apenas parte do histórico.';
+
+  @override
+  String get activityCheckSession => 'Conferir sessão';
+
+  @override
+  String get activityPendingExit =>
+      'Se sair ou fechar o app durante um envio sem resposta, confira esta sessão antes de registrar novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -4158,6 +4296,144 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get commonRedBeans => 'Feijão-vermelho';
+
+  @override
+  String get activitySessionIntro =>
+      'Sessões liberadas e registros confirmados por você.';
+
+  @override
+  String get activityUpcoming => 'Sessões disponíveis';
+
+  @override
+  String get activityRecent => 'Seu histórico de sessões';
+
+  @override
+  String get activityEmptyUpcoming =>
+      'Nenhuma sessão aprovada está disponível no momento.';
+
+  @override
+  String get activityEmptyHistory => 'Nenhuma sessão registrada.';
+
+  @override
+  String get activityBackToFeed => 'Voltar às sessões';
+
+  @override
+  String get activityStartSession => 'Iniciar sessão';
+
+  @override
+  String get activityOpenSession => 'Abrir sessão';
+
+  @override
+  String get activityStateStarted => 'Em andamento';
+
+  @override
+  String get activityStatePaused => 'Pausada';
+
+  @override
+  String get activityStatePartial => 'Encerrada parcialmente';
+
+  @override
+  String get activityStateCompleted => 'Concluída';
+
+  @override
+  String get activityStateCancelled => 'Cancelada';
+
+  @override
+  String get activityRecordedSets => 'Séries registradas';
+
+  @override
+  String get activityEstimatedTime => 'Tempo ativo estimado';
+
+  @override
+  String get activityConfirmedTime => 'Tempo ativo confirmado';
+
+  @override
+  String get activityPrescription => 'Referência do programa';
+
+  @override
+  String get activitySet => 'Série';
+
+  @override
+  String get activityPlanned => 'Planejado';
+
+  @override
+  String get activityRecorded => 'Registrado';
+
+  @override
+  String get activityRecordSet => 'Registrar série';
+
+  @override
+  String get activityRepetitions => 'Repetições realizadas';
+
+  @override
+  String get activityDurationSeconds => 'Duração realizada (segundos)';
+
+  @override
+  String get activityLoadKg => 'Carga informada (kg, opcional)';
+
+  @override
+  String get activityPauseSession => 'Pausar';
+
+  @override
+  String get activityResumeSession => 'Retomar';
+
+  @override
+  String get activityPartialSession => 'Encerrar como parcial';
+
+  @override
+  String get activityCompleteSession => 'Concluir sessão';
+
+  @override
+  String get activityCancelSession => 'Cancelar sessão';
+
+  @override
+  String get activityConfirmAction => 'Confirmar ação';
+
+  @override
+  String get activityConfirmNotice =>
+      'Confirme somente a ação que deseja registrar. A conclusão exige todas as séries registradas.';
+
+  @override
+  String get activityConfirmed => 'Ação confirmada pelo servidor.';
+
+  @override
+  String get activityUncertain =>
+      'A resposta não foi confirmada. Tente a mesma ação novamente, sem criar outro registro.';
+
+  @override
+  String get activityConflict =>
+      'A sessão mudou. Recarregue e confira os registros antes de continuar.';
+
+  @override
+  String get activityRetryExpired =>
+      'O prazo desta tentativa terminou. Confira a sessão antes de registrar outra ação.';
+
+  @override
+  String get activityReadFailed =>
+      'Não foi possível consultar suas sessões. Tente novamente.';
+
+  @override
+  String get activityWriteRejected =>
+      'A ação foi recusada. Confira a sessão e os valores informados.';
+
+  @override
+  String get activityInvalidSet =>
+      'Confira o valor realizado e a carga opcional; use até três casas decimais.';
+
+  @override
+  String get activityPracticeUnavailable =>
+      'A prática não está disponível nesta versão. Seus registros continuam disponíveis para consulta e encerramento.';
+
+  @override
+  String get activityPartialFeed =>
+      'Esta consulta mostra apenas parte do histórico.';
+
+  @override
+  String get activityCheckSession => 'Conferir sessão';
+
+  @override
+  String get activityPendingExit =>
+      'Se sair ou fechar o app durante um envio sem resposta, confira esta sessão antes de registrar novamente.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -6237,4 +6513,142 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get commonRedBeans => 'Feijão-vermelho';
+
+  @override
+  String get activitySessionIntro =>
+      'Sessões liberadas e registros confirmados por você.';
+
+  @override
+  String get activityUpcoming => 'Sessões disponíveis';
+
+  @override
+  String get activityRecent => 'Seu histórico de sessões';
+
+  @override
+  String get activityEmptyUpcoming =>
+      'Nenhuma sessão aprovada está disponível no momento.';
+
+  @override
+  String get activityEmptyHistory => 'Nenhuma sessão registrada.';
+
+  @override
+  String get activityBackToFeed => 'Voltar às sessões';
+
+  @override
+  String get activityStartSession => 'Iniciar sessão';
+
+  @override
+  String get activityOpenSession => 'Abrir sessão';
+
+  @override
+  String get activityStateStarted => 'Em andamento';
+
+  @override
+  String get activityStatePaused => 'Pausada';
+
+  @override
+  String get activityStatePartial => 'Encerrada parcialmente';
+
+  @override
+  String get activityStateCompleted => 'Concluída';
+
+  @override
+  String get activityStateCancelled => 'Cancelada';
+
+  @override
+  String get activityRecordedSets => 'Séries registradas';
+
+  @override
+  String get activityEstimatedTime => 'Tempo ativo estimado';
+
+  @override
+  String get activityConfirmedTime => 'Tempo ativo confirmado';
+
+  @override
+  String get activityPrescription => 'Referência do programa';
+
+  @override
+  String get activitySet => 'Série';
+
+  @override
+  String get activityPlanned => 'Planejado';
+
+  @override
+  String get activityRecorded => 'Registrado';
+
+  @override
+  String get activityRecordSet => 'Registrar série';
+
+  @override
+  String get activityRepetitions => 'Repetições realizadas';
+
+  @override
+  String get activityDurationSeconds => 'Duração realizada (segundos)';
+
+  @override
+  String get activityLoadKg => 'Carga informada (kg, opcional)';
+
+  @override
+  String get activityPauseSession => 'Pausar';
+
+  @override
+  String get activityResumeSession => 'Retomar';
+
+  @override
+  String get activityPartialSession => 'Encerrar como parcial';
+
+  @override
+  String get activityCompleteSession => 'Concluir sessão';
+
+  @override
+  String get activityCancelSession => 'Cancelar sessão';
+
+  @override
+  String get activityConfirmAction => 'Confirmar ação';
+
+  @override
+  String get activityConfirmNotice =>
+      'Confirme somente a ação que deseja registrar. A conclusão exige todas as séries registradas.';
+
+  @override
+  String get activityConfirmed => 'Ação confirmada pelo servidor.';
+
+  @override
+  String get activityUncertain =>
+      'A resposta não foi confirmada. Tente a mesma ação novamente, sem criar outro registro.';
+
+  @override
+  String get activityConflict =>
+      'A sessão mudou. Recarregue e confira os registros antes de continuar.';
+
+  @override
+  String get activityRetryExpired =>
+      'O prazo desta tentativa terminou. Confira a sessão antes de registrar outra ação.';
+
+  @override
+  String get activityReadFailed =>
+      'Não foi possível consultar suas sessões. Tente novamente.';
+
+  @override
+  String get activityWriteRejected =>
+      'A ação foi recusada. Confira a sessão e os valores informados.';
+
+  @override
+  String get activityInvalidSet =>
+      'Confira o valor realizado e a carga opcional; use até três casas decimais.';
+
+  @override
+  String get activityPracticeUnavailable =>
+      'A prática não está disponível nesta versão. Seus registros continuam disponíveis para consulta e encerramento.';
+
+  @override
+  String get activityPartialFeed =>
+      'Esta consulta mostra apenas parte do histórico.';
+
+  @override
+  String get activityCheckSession => 'Conferir sessão';
+
+  @override
+  String get activityPendingExit =>
+      'Se sair ou fechar o app durante um envio sem resposta, confira esta sessão antes de registrar novamente.';
 }

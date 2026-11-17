@@ -663,13 +663,13 @@ Persistir ações reais, unidades corretas e histórico sem criar desempenho, di
 
 ### V1-017 — Executar ocorrências idempotentes de atividade
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero iniciar e terminar uma sessão uma vez, mesmo com reenvio da rede.
 
 Dependências: V1-015, V1-012
 
-Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md
+Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/diagnostico-atual.md; docs/conteudo/evidencias-para-integracao.md; docs/execucao/v1/handoff.md; docs/arquitetura/contratos-v1.md; docs/arquitetura/fluxos.md; docs/execucao/v1/trilha-implementacao.md; docs/execucao/v1/execucao-treino-017.md
 
 Critérios de aceite:
 
@@ -691,7 +691,7 @@ Validação: Integração PostgreSQL concorrente; Sessões reais em duas datas e
 
 Entregas: API sessions e session-events; Invariantes documentadas e testes
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 24/10: auditoria do produto registrada em auditoria-produto-2026-10-24.md. Revisão estática/contagens e cobertura não encerram a história; ver lacunas e ordem pelas dependências. Sem compra/hospedagem ou dados fictícios. 25/10:Q3 exige recuperação do estado real ou encerramento parcial explícito; Q4 aprovou alimentação/andamento offline, com durabilidade e sincronização na026. 16/11: agregado puro de execução e contrato/projeção Flutter implementados; ver execucao-treino-017.md. Testes em memória não concluem HTTP/SQL, idempotência durável, autorização, conteúdo ou jornada no APK. Segundo incremento16/11: persistência/eventos/replay durável e quatro rotas privadas, autenticação viva e testes SQL/HTTP em descartável; nenhuma migration/dado na base entregue. Flutter integrado à aba Atividade. Conteúdo e aceite real continuam abertos.
 
 ### V1-018 — Consultar histórico e resumo com origem das métricas
 
@@ -982,7 +982,7 @@ Handoff: 24/10:biblioteca/entrada e visual possuem implementação parcial compr
 
 ### V1-023 — Implementar sessão e recuperação de interrupção
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como praticante, quero acompanhar o material e registrar o que fiz sem perder a sessão ao trocar de aba.
 
@@ -1010,7 +1010,7 @@ Validação: Integração Android com reinício e duplo toque; Repetir em data f
 
 Entregas: Fluxo de sessão real; Evidência de recuperação
 
-Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução.
+Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pendências e próxima história desbloqueada em docs/execucao/v1/diario.md; atualizar este JSON, regenerar backlog e conferir mapas versionados. Concluir somente com os critérios e evidências desta história. 25/10:retomada/parcial escolhidos noQ3; persistência de eventos e retentativa devem sobreviver ao processo sem duplicar execução. 16/11: controller e tela única reutilizável na aba Atividade, composição lazy por conta e API persistida; formulário de realizado vazio, estados/encerramento explícitos, reenvio incerto só em memória. Conteúdo/instrução/player e recuperação de intenção após matar processo ainda pendentes; sem aceite nativo.
 
 ### V1-024 — Implementar Hoje, histórico e perfil
 

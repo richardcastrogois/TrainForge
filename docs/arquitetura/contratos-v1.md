@@ -1,6 +1,6 @@
 # Contratos da V1 — implementado e planejado
 
-**Go 0.8.1 / 34 operações**, schema13/30tabelas local. Cliente de refeições e APKdebug0.4.3+25 integrados com refinamento de descoberta; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
+**Go 0.10.0 / 38 operações**, schema13/30tabelas local. Execução ganhou quatro rotas privadas, eventos e tela única na aba Atividade; conteúdo próprio, adesão/agenda, mídia e offline durável permanecem pendentes. [Contrato de execução](../execucao/v1/execucao-treino-017.md). O restante deste parágrafo conserva o checkpoint alimentar anterior. Cliente de refeições e APKdebug0.4.3+25 integrados com refinamento de descoberta; aceite de nova refeição ainda pendente. Configuração047 encerrada funcionalmente. O parágrafo alimentar a seguir descreve a entrega anterior, preservada. A leitura localizada alcança biblioteca, seleção, histórico e detalhe/correção de consumo. Nenhuma migration nova; corpos e chaves de mutação permanecem iguais. [SQL/HTTP isolados](../execucao/v1/food-names-consumption-verification.json).
 
 ## Prontidão operacional0.8.1 —29/10
 

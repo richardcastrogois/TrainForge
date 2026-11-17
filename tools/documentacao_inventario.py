@@ -37,6 +37,13 @@ def dart_calls(path, root):
         result.append({"method": match[1].upper(), "path": match[3],
                        "keys": sorted(set(re.findall(r"['\"]([\w]+)['\"]\s*:", segment))),
                        "source": source(path, root, line=line_at(text, match.start()))})
+    # Account repositories centralize Dio request/decoding in a local helper.
+    # Only literal methods/paths in a file that actually delegates to Dio count.
+    if re.search(r"\b(?:dio|_dio)\.request\b", text):
+        helper = r"\b_request\s*\(\s*(['\"])(GET|POST|PUT|PATCH|DELETE)\1\s*,\s*(['\"])(.*?)\3"
+        for match in re.finditer(helper, text, re.S):
+            result.append({"method": match[2], "path": match[4], "keys": [],
+                           "source": source(path, root, line=line_at(text, match.start()))})
     return result
 
 

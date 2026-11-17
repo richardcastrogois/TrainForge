@@ -13,6 +13,8 @@ import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'package:trainforge/features/privacy/presentation/privacy_page.dart';
 import 'package:trainforge/shared/widgets/product_shell.dart';
+import 'package:trainforge/features/activity/domain/activity_repository.dart';
+import 'package:trainforge/features/activity/presentation/activity_page.dart';
 
 import 'appearance_startup_motion_test.dart' show MemoryAppearance;
 import 'auth_controller_test.dart' show SessionFixture, fixtureProfile;
@@ -43,9 +45,16 @@ class CompositionFixture {
           ConfigurationFixture repository,
         })
       >[];
+  final activities = <ObservedActivity>[];
   int sessions = 0, catalogs = 0, foodLists = 0, policies = 0;
 
   late final dependencies = AppDependencies(
+    createActivityRepository:
+        ({required accountId, required currentAccountId}) {
+          final repository = ObservedActivity(accountId, currentAccountId);
+          activities.add(repository);
+          return repository;
+        },
     createTrainingConfigurationRepository:
         ({required accountId, required currentAccountId}) {
           final repository = ConfigurationFixture();
@@ -100,6 +109,33 @@ class ObservedNutrition extends FakeNutrition {
   }
 }
 
+class ObservedActivity implements ActivityRepository {
+  final String accountId;
+  final String? Function() currentAccountId;
+  int reads = 0;
+  ObservedActivity(this.accountId, this.currentAccountId);
+  @override
+  Future<ActivityFeed> load() async {
+    reads++;
+    return ActivityFeed(upcoming: [], sessions: [], complete: true);
+  }
+
+  @override
+  Future<ActivityDetail> detail(String id) => throw UnimplementedError();
+  @override
+  Future<ActivityDetail> start(String occurrenceId, String key) =>
+      throw UnimplementedError();
+  @override
+  Future<ActivityMutation> command(
+    String sessionId, {
+    required int expectedRevision,
+    required String action,
+    required bool confirmed,
+    Map<String, dynamic>? set,
+    required String key,
+  }) => throw UnimplementedError();
+}
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUp(() {
@@ -113,6 +149,52 @@ void main() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(NativeLocaleStore.channel, null);
   });
+  testWidgets(
+    'activity service opens lazily and is replaced with the account',
+    (t) async {
+      final services = CompositionFixture()..session.profile = fixtureProfile;
+      final appearance = AppearanceController(store: MemoryAppearance());
+      addTearDown(appearance.dispose);
+      await t.pumpWidget(
+        TrainForgeApp(
+          dependencies: services.dependencies,
+          appearance: appearance,
+        ),
+      );
+      await t.pumpAndSettle();
+      expect(services.activities, isEmpty);
+      await t.tap(find.byTooltip('Atividade'));
+      await t.pumpAndSettle();
+      expect(find.byType(ActivityPage), findsOneWidget);
+      final original = services.activities.single;
+      expect(original.accountId, fixtureProfile.id);
+      expect(original.reads, 1);
+      await t.tap(find.byTooltip('Hoje'));
+      await t.pumpAndSettle();
+      await t.tap(find.byTooltip('Atividade'));
+      await t.pumpAndSettle();
+      expect(services.activities, hasLength(1));
+      expect(original.reads, 1);
+      const other = AuthProfile(
+        id: 'activity-other-fixture',
+        name: 'Other',
+        email: 'activity-other@example.invalid',
+      );
+      final auth = t.widget<ProductShell>(find.byType(ProductShell)).controller;
+      services.session.profile = other;
+      await auth.restore();
+      await t.pumpAndSettle();
+      expect(find.byType(ActivityPage), findsNothing);
+      expect(original.currentAccountId(), other.id);
+      await t.tap(find.byTooltip('Atividade'));
+      await t.pumpAndSettle();
+      expect(services.activities, hasLength(2));
+      expect(services.activities.last.accountId, other.id);
+      expect(identical(services.activities.last, original), false);
+      expect(t.takeException(), isNull);
+      await t.pumpWidget(const SizedBox.shrink());
+    },
+  );
   testWidgets(
     'public routes use injected services lazily and theme changes retain session',
     (tester) async {

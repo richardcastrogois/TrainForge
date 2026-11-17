@@ -2070,4 +2070,142 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commonRedBeans => 'Red kidney beans';
+
+  @override
+  String get activitySessionIntro =>
+      'Available sessions and records confirmed by you.';
+
+  @override
+  String get activityUpcoming => 'Available sessions';
+
+  @override
+  String get activityRecent => 'Your session history';
+
+  @override
+  String get activityEmptyUpcoming =>
+      'No approved session is available right now.';
+
+  @override
+  String get activityEmptyHistory => 'No sessions recorded.';
+
+  @override
+  String get activityBackToFeed => 'Back to sessions';
+
+  @override
+  String get activityStartSession => 'Start session';
+
+  @override
+  String get activityOpenSession => 'Open session';
+
+  @override
+  String get activityStateStarted => 'In progress';
+
+  @override
+  String get activityStatePaused => 'Paused';
+
+  @override
+  String get activityStatePartial => 'Finished partially';
+
+  @override
+  String get activityStateCompleted => 'Completed';
+
+  @override
+  String get activityStateCancelled => 'Cancelled';
+
+  @override
+  String get activityRecordedSets => 'Recorded sets';
+
+  @override
+  String get activityEstimatedTime => 'Estimated active time';
+
+  @override
+  String get activityConfirmedTime => 'Confirmed active time';
+
+  @override
+  String get activityPrescription => 'Program reference';
+
+  @override
+  String get activitySet => 'Set';
+
+  @override
+  String get activityPlanned => 'Planned';
+
+  @override
+  String get activityRecorded => 'Recorded';
+
+  @override
+  String get activityRecordSet => 'Record set';
+
+  @override
+  String get activityRepetitions => 'Repetitions performed';
+
+  @override
+  String get activityDurationSeconds => 'Duration performed (seconds)';
+
+  @override
+  String get activityLoadKg => 'Entered load (kg, optional)';
+
+  @override
+  String get activityPauseSession => 'Pause';
+
+  @override
+  String get activityResumeSession => 'Resume';
+
+  @override
+  String get activityPartialSession => 'Finish as partial';
+
+  @override
+  String get activityCompleteSession => 'Complete session';
+
+  @override
+  String get activityCancelSession => 'Cancel session';
+
+  @override
+  String get activityConfirmAction => 'Confirm action';
+
+  @override
+  String get activityConfirmNotice =>
+      'Confirm only the action you want to record. Completion requires all sets to be recorded.';
+
+  @override
+  String get activityConfirmed => 'Action confirmed by the server.';
+
+  @override
+  String get activityUncertain =>
+      'The response was not confirmed. Retry the same action without creating another record.';
+
+  @override
+  String get activityConflict =>
+      'The session changed. Reload and check its records before continuing.';
+
+  @override
+  String get activityRetryExpired =>
+      'This attempt expired. Check the session before recording another action.';
+
+  @override
+  String get activityReadFailed =>
+      'Your sessions could not be loaded. Try again.';
+
+  @override
+  String get activityWriteRejected =>
+      'The action was refused. Check the session and entered values.';
+
+  @override
+  String get activityInvalidSet =>
+      'Check the performed value and optional load; use up to three decimal places.';
+
+  @override
+  String get activityPracticeUnavailable =>
+      'Practice is unavailable for this version. Your records remain available to view and finish.';
+
+  @override
+  String get activityPartialFeed =>
+      'This query shows only part of the history.';
+
+  @override
+  String get activityCheckSession => 'Check session';
+
+  @override
+  String get activityPendingExit =>
+      'If you leave or close the app while a response is pending, check this session before recording again.';
 }

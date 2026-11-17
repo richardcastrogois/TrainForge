@@ -1,13 +1,29 @@
 # Handoff vigente — TrainForge
 
-Atualizado em **30/10/2026**. Repositório **C:/dev/TrainForge/trainforge**.
+Atualizado em **16/11/2026**. Repositório **C:/dev/TrainForge/trainforge**.
+
+## Retomada — execução persistida e integrada ao Flutter
+
+Autor pediu incorporar comportamentos úteis do openGym com implementação própria, preservar Flutter/Go/PostgreSQL, sem web e sem trabalhar alimentação agora, um problema por vez. Não incorporar código AGPL, programas/traduções ou mídia com obrigações de terceiros por inferência; compra futura de mídia não foi executada. Direitos e créditos do conteúdo já existente continuam preservados.
+
+Motor Go de sessão (iniciar/registrar/pausar/retomar/parcial/concluir/cancelar), persistência pgx nas tabelas existentes, journal reidratável, revisão/replay durável por titular e credencial viva em cada transação. Quatro rotas privadas elevam a API a0.10.0/38operações. Flutter compõe serviço sob demanda e usa uma tela na aba Atividade, com lista/sessão/estados, entradas reais vazias e encerramento confirmado. [Escopo e limites](execucao-treino-017.md). V1-017 eV1-023 estão doing; nenhuma história foi encerrada.
+
+SQL/HTTP isolado: três testes principais e23subtestes aprovados após o ajuste da ordem dos locks; schema13, todas as tabelas entregues inalteradas, descartável removido. [Recibo](activity-session-sql-verification.json). A revisão/flag editorial dos testes é sintética, não aprovação de um programa real. [Fundação anterior](activity-session-foundation-verification.json) conserva os resultados daquele checkpoint.
+
+Integração atual:337Flutter aprovados; analyze0; Go comum/vet;138Python e15documentais após regeneração; Swagger e15mapas conferidos. Prévias sintéticas320px/texto2x e390px inspecionadas, sem aceite nativo. APKdebug **0.4.7+29 gerado**, assinatura/hash/fontes conferidos; **não instalado nem publicado**. [Recibo de integração](activity-session-integration-verification.json).
+
+Operação observada neste incremento: o PostgreSQL próprio estava parado, foi iniciado para os testes e parado ao final, após verificar ausência de outros clientes. Portas8082/18083/15432 sem escuta ao encerrar; API/catálogo/emulador não foram iniciados. Retomar pelo helper diário; não usar init/activate/restore nem reaplicar migrations para iniciar.
+
+Não houve migration, novo grant ou fixture no banco entregue, nem compra/cópia de mídia ou alteração de alimentos. Não iniciar prática por haver código:015/016 mantêm o gate de conteúdo; nenhum programa/instrução/dose foi liberado. A aba apresenta ausência real e caminhos para configuração/biblioteca. Fila offline durável e recuperação de uma intenção não confirmada após matar processo continuam pendentes. Próxima unidade funcional: primeiro programa próprio revisado, seleção/adesão e agenda; depois ensaio Android com ocorrência real e futura distribuição.
+
+Os checkpoints de APK/ambiente abaixo são históricos de outubro, não nova observação do dispositivo.
 
 ## Último pedido e entrega
 
 Autor pediu: esclarecerORM/Prisma, avaliar MoveKitR$779, limpar fontes obsoletas, usar a skilldraw.io, criar uma seção visual e ensinar cada peça e como operar/logar/parar. Não pediu compra, hospedagem ou migração deORM.
 
 - [Aprendizado e operação](../../aprendizado/README.md)
-- [15diagramas editáveis/SVG](../../diagramas/README.md), [30+4tabelas/colunas](../../diagramas/banco.md), [34APIs](../../diagramas/apis.md)
+- [15diagramas editáveis/SVG](../../diagramas/README.md), [30+4tabelas/colunas](../../diagramas/banco.md), [38APIs](../../diagramas/apis.md)
 - [AvaliaçãoMoveKit](../../conteudo/avaliacao-movekit-2026-10-29.md)
 - [Recibo da limpeza/validação](repository-cleanup-verification.json)
 
@@ -21,9 +37,9 @@ tools/ambiente.py status eplan-stop foram conferidos no ambiente atual; start/st
 
 ## Estado técnico
 
-API Go **0.9.1 /34operações**; catálogo **0.2.0 /schema2/4tabelas**, núcleo **schema13/30tabelas**. Persistência pgx/v5 eSQL;Goose para migrations; semORM. Não instalarPrisma/GORM/Ent/sqlc por inferência; comparação está no aprendizado.
+API Go **0.10.0 /38operações**; catálogo **0.2.0 /schema2/4tabelas**, núcleo **schema13/30tabelas**. Persistência pgx/v5 eSQL;Goose para migrations; semORM. Não instalarPrisma/GORM/Ent/sqlc por inferência; comparação está no aprendizado.
 
-M0–M4 encerram **somente a primeira extração do catálogo**: base/roles próprios, contrato de cinco rotas, publicação/retirada, rollback, falha/recuperação e checkpoint restaurado passaram. API8082/catálogo18083/PostgreSQL15432/emulador ativos, modo remote. Não repetir ativação/restauração/login. [ReciboM4](catalog-rollout-verification.json), [arquitetura](../../arquitetura/reavaliacao-microservicos-2026-10-29.md).
+Checkpoint históricoM0–M4 encerrou **somente a primeira extração do catálogo**: base/roles próprios, contrato de cinco rotas, publicação/retirada, rollback, falha/recuperação e checkpoint restaurado passaram. Naquele ensaio, API8082/catálogo18083/PostgreSQL15432/emulador estavam ativos, modo remote; não é estado atual. Não repetir ativação/restauração/login. [ReciboM4](catalog-rollout-verification.json), [arquitetura](../../arquitetura/reavaliacao-microservicos-2026-10-29.md).
 
 Os metadados lidos para diagramas vieram de transaçãoREADONLY, sem linhas de usuário. Núcleo e catálogo têm tabelas de mesmo nome em bases distintas. Tabela existente de treino não é endpoint/jornada pronta.
 

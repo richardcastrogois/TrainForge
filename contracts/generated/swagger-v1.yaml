@@ -1,5 +1,199 @@
 basePath: /
 definitions:
+  activity.CommandInput:
+    properties:
+      action:
+        type: string
+      confirmed:
+        type: boolean
+      expectedRevision:
+        type: integer
+      set:
+        $ref: '#/definitions/activity.Set'
+    type: object
+  activity.Detail:
+    properties:
+      movementLabels:
+        items:
+          $ref: '#/definitions/activity.MovementLabel'
+        type: array
+      practiceAvailable:
+        type: boolean
+      snapshot:
+        $ref: '#/definitions/activity.Snapshot'
+      title:
+        type: string
+    type: object
+  activity.Feed:
+    properties:
+      complete:
+        type: boolean
+      sessions:
+        items:
+          $ref: '#/definitions/activity.Detail'
+        type: array
+      upcoming:
+        items:
+          $ref: '#/definitions/activity.Upcoming'
+        type: array
+    type: object
+  activity.Item:
+    properties:
+      mode:
+        type: string
+      movementId:
+        type: string
+      movementVersion:
+        type: string
+      position:
+        type: integer
+      targets:
+        items:
+          $ref: '#/definitions/activity.Target'
+        type: array
+    type: object
+  activity.MovementLabel:
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+      versionId:
+        type: string
+    type: object
+  activity.MutationResult:
+    properties:
+      appliedRevision:
+        type: integer
+      movementLabels:
+        items:
+          $ref: '#/definitions/activity.MovementLabel'
+        type: array
+      practiceAvailable:
+        type: boolean
+      replayed:
+        type: boolean
+      snapshot:
+        $ref: '#/definitions/activity.Snapshot'
+      title:
+        type: string
+    type: object
+  activity.Pause:
+    properties:
+      endedAt:
+        type: string
+      startedAt:
+        type: string
+    type: object
+  activity.RecordedSet:
+    properties:
+      commandId:
+        type: string
+      recordedAt:
+        type: string
+      set:
+        $ref: '#/definitions/activity.Set'
+    type: object
+  activity.Set:
+    properties:
+      durationMilliseconds:
+        type: integer
+      loadKg:
+        type: string
+      number:
+        type: integer
+      position:
+        type: integer
+      repetitions:
+        type: integer
+    type: object
+  activity.Snapshot:
+    properties:
+      activeMilliseconds:
+        type: integer
+      contract:
+        type: string
+      endedAt:
+        type: string
+      id:
+        type: string
+      items:
+        items:
+          $ref: '#/definitions/activity.Item'
+        type: array
+      lastEventAt:
+        type: string
+      occurrenceId:
+        type: string
+      ownerId:
+        type: string
+      pauses:
+        items:
+          $ref: '#/definitions/activity.Pause'
+        type: array
+      revision:
+        type: integer
+      sets:
+        items:
+          $ref: '#/definitions/activity.RecordedSet'
+        type: array
+      source:
+        $ref: '#/definitions/activity.Source'
+      startedAt:
+        type: string
+      state:
+        $ref: '#/definitions/activity.State'
+    type: object
+  activity.Source:
+    properties:
+      programId:
+        type: string
+      programVersion:
+        type: string
+      sessionKey:
+        type: string
+    type: object
+  activity.StartRequest:
+    properties:
+      occurrenceId:
+        type: string
+    type: object
+  activity.State:
+    enum:
+    - started
+    - paused
+    - partial
+    - completed
+    - cancelled
+    type: string
+    x-enum-varnames:
+    - Started
+    - Paused
+    - Partial
+    - Completed
+    - Cancelled
+  activity.Target:
+    properties:
+      durationMilliseconds:
+        type: integer
+      repetitions:
+        type: integer
+    type: object
+  activity.Upcoming:
+    properties:
+      id:
+        type: string
+      plannedFor:
+        type: string
+      practiceAvailable:
+        type: boolean
+      source:
+        $ref: '#/definitions/activity.Source'
+      timezone:
+        type: string
+      title:
+        type: string
+    type: object
   auth.GoogleRequest:
     properties:
       idToken:
@@ -961,7 +1155,7 @@ info:
     food declarations, explicitly recorded consumption and atomic meal grouping. Meal
     routes require schema13. No executable training content or prescribed diets.
   title: TrainForge API
-  version: 0.9.1
+  version: 0.10.0
 paths:
   /api/v1/auth/google:
     post:
@@ -1587,6 +1781,205 @@ paths:
       summary: Current authenticated identity
       tags:
       - auth
+  /api/v1/me/activity:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/activity.Feed'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Read own upcoming activity and execution history
+      tags:
+      - activity
+  /api/v1/me/activity-sessions:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: UUID retained by the durable activity event
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Owned occurrence only; no prescription or owner supplied by client
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/activity.StartRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/activity.MutationResult'
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/activity.MutationResult'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Start an existing owned activity occurrence
+      tags:
+      - activity
+  /api/v1/me/activity-sessions/{id}:
+    get:
+      parameters:
+      - description: Session UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/activity.Detail'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Read own activity session
+      tags:
+      - activity
+  /api/v1/me/activity-sessions/{id}/commands:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Session UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Command UUID stable across retries
+        in: header
+        name: Idempotency-Key
+        required: true
+        type: string
+      - description: Expected revision and explicit action; no client timestamp
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/activity.CommandInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/activity.MutationResult'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Record, pause, resume or explicitly close an owned activity session
+      tags:
+      - activity
   /api/v1/me/deletion-intent:
     post:
       consumes:

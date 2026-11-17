@@ -3755,6 +3755,258 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Red kidney beans'**
   String get commonRedBeans;
+
+  /// No description provided for @activitySessionIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Available sessions and records confirmed by you.'**
+  String get activitySessionIntro;
+
+  /// No description provided for @activityUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Available sessions'**
+  String get activityUpcoming;
+
+  /// No description provided for @activityRecent.
+  ///
+  /// In en, this message translates to:
+  /// **'Your session history'**
+  String get activityRecent;
+
+  /// No description provided for @activityEmptyUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'No approved session is available right now.'**
+  String get activityEmptyUpcoming;
+
+  /// No description provided for @activityEmptyHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'No sessions recorded.'**
+  String get activityEmptyHistory;
+
+  /// No description provided for @activityBackToFeed.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to sessions'**
+  String get activityBackToFeed;
+
+  /// No description provided for @activityStartSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Start session'**
+  String get activityStartSession;
+
+  /// No description provided for @activityOpenSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Open session'**
+  String get activityOpenSession;
+
+  /// No description provided for @activityStateStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get activityStateStarted;
+
+  /// No description provided for @activityStatePaused.
+  ///
+  /// In en, this message translates to:
+  /// **'Paused'**
+  String get activityStatePaused;
+
+  /// No description provided for @activityStatePartial.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished partially'**
+  String get activityStatePartial;
+
+  /// No description provided for @activityStateCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get activityStateCompleted;
+
+  /// No description provided for @activityStateCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get activityStateCancelled;
+
+  /// No description provided for @activityRecordedSets.
+  ///
+  /// In en, this message translates to:
+  /// **'Recorded sets'**
+  String get activityRecordedSets;
+
+  /// No description provided for @activityEstimatedTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated active time'**
+  String get activityEstimatedTime;
+
+  /// No description provided for @activityConfirmedTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmed active time'**
+  String get activityConfirmedTime;
+
+  /// No description provided for @activityPrescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Program reference'**
+  String get activityPrescription;
+
+  /// No description provided for @activitySet.
+  ///
+  /// In en, this message translates to:
+  /// **'Set'**
+  String get activitySet;
+
+  /// No description provided for @activityPlanned.
+  ///
+  /// In en, this message translates to:
+  /// **'Planned'**
+  String get activityPlanned;
+
+  /// No description provided for @activityRecorded.
+  ///
+  /// In en, this message translates to:
+  /// **'Recorded'**
+  String get activityRecorded;
+
+  /// No description provided for @activityRecordSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Record set'**
+  String get activityRecordSet;
+
+  /// No description provided for @activityRepetitions.
+  ///
+  /// In en, this message translates to:
+  /// **'Repetitions performed'**
+  String get activityRepetitions;
+
+  /// No description provided for @activityDurationSeconds.
+  ///
+  /// In en, this message translates to:
+  /// **'Duration performed (seconds)'**
+  String get activityDurationSeconds;
+
+  /// No description provided for @activityLoadKg.
+  ///
+  /// In en, this message translates to:
+  /// **'Entered load (kg, optional)'**
+  String get activityLoadKg;
+
+  /// No description provided for @activityPauseSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get activityPauseSession;
+
+  /// No description provided for @activityResumeSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Resume'**
+  String get activityResumeSession;
+
+  /// No description provided for @activityPartialSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish as partial'**
+  String get activityPartialSession;
+
+  /// No description provided for @activityCompleteSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete session'**
+  String get activityCompleteSession;
+
+  /// No description provided for @activityCancelSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel session'**
+  String get activityCancelSession;
+
+  /// No description provided for @activityConfirmAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm action'**
+  String get activityConfirmAction;
+
+  /// No description provided for @activityConfirmNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm only the action you want to record. Completion requires all sets to be recorded.'**
+  String get activityConfirmNotice;
+
+  /// No description provided for @activityConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Action confirmed by the server.'**
+  String get activityConfirmed;
+
+  /// No description provided for @activityUncertain.
+  ///
+  /// In en, this message translates to:
+  /// **'The response was not confirmed. Retry the same action without creating another record.'**
+  String get activityUncertain;
+
+  /// No description provided for @activityConflict.
+  ///
+  /// In en, this message translates to:
+  /// **'The session changed. Reload and check its records before continuing.'**
+  String get activityConflict;
+
+  /// No description provided for @activityRetryExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'This attempt expired. Check the session before recording another action.'**
+  String get activityRetryExpired;
+
+  /// No description provided for @activityReadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Your sessions could not be loaded. Try again.'**
+  String get activityReadFailed;
+
+  /// No description provided for @activityWriteRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'The action was refused. Check the session and entered values.'**
+  String get activityWriteRejected;
+
+  /// No description provided for @activityInvalidSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the performed value and optional load; use up to three decimal places.'**
+  String get activityInvalidSet;
+
+  /// No description provided for @activityPracticeUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice is unavailable for this version. Your records remain available to view and finish.'**
+  String get activityPracticeUnavailable;
+
+  /// No description provided for @activityPartialFeed.
+  ///
+  /// In en, this message translates to:
+  /// **'This query shows only part of the history.'**
+  String get activityPartialFeed;
+
+  /// No description provided for @activityCheckSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Check session'**
+  String get activityCheckSession;
+
+  /// No description provided for @activityPendingExit.
+  ///
+  /// In en, this message translates to:
+  /// **'If you leave or close the app while a response is pending, check this session before recording again.'**
+  String get activityPendingExit;
 }
 
 class _AppLocalizationsDelegate

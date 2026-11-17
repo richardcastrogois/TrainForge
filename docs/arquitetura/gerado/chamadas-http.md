@@ -1,13 +1,51 @@
 # Chamadas, entradas e respostas
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `09e7c86d011d1ebc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c10b9ae4574f25eb`.
 
+## Atual: Flutter e registros Go
+
+Correspondência estática de método e caminho com os handlers registrados. Expressões dinâmicas podem ficar fora; presença de rota não prova autorização, rede ou aceite funcional.
+
+| Chamada Flutter | Registro Go | Evidência Flutter |
+| --- | --- | --- |
+| `GET /api/v1/me/activity` | [services/api/internal/activity/handler.go:27](../../../services/api/internal/activity/handler.go) | [lib/features/activity/data/activity_repository.dart:69](../../../lib/features/activity/data/activity_repository.dart) |
+| `GET /api/v1/me/activity-sessions/${Uri.encodeComponent(id)}` | [services/api/internal/activity/handler.go:28](../../../services/api/internal/activity/handler.go) | [lib/features/activity/data/activity_repository.dart:78](../../../lib/features/activity/data/activity_repository.dart) |
+| `POST /api/v1/me/activity-sessions` | [services/api/internal/activity/handler.go:29](../../../services/api/internal/activity/handler.go) | [lib/features/activity/data/activity_repository.dart:91](../../../lib/features/activity/data/activity_repository.dart) |
+| `POST /api/v1/me/activity-sessions/${Uri.encodeComponent(sessionId)}/commands` | [services/api/internal/activity/handler.go:30](../../../services/api/internal/activity/handler.go) | [lib/features/activity/data/activity_repository.dart:115](../../../lib/features/activity/data/activity_repository.dart) |
+| `POST /api/v1/auth/google` | [services/api/internal/auth/handler.go:27](../../../services/api/internal/auth/handler.go) | [lib/features/auth/data/auth_api.dart:10](../../../lib/features/auth/data/auth_api.dart) |
+| `GET /api/v1/me` | [services/api/internal/auth/handler.go:30](../../../services/api/internal/auth/handler.go) | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
+| `POST /api/v1/auth/logout` | [services/api/internal/auth/handler.go:29](../../../services/api/internal/auth/handler.go) | [lib/features/auth/data/auth_api.dart:24](../../../lib/features/auth/data/auth_api.dart) |
+| `GET /api/v1/catalog/${filters.kind}` | não resolvido estaticamente | [lib/features/catalog/data/catalog_repository.dart:24](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/filters` | [services/api/internal/catalog/handler.go:16](../../../services/api/internal/catalog/handler.go) | [lib/features/catalog/data/catalog_repository.dart:36](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/catalog/$kind/${Uri.encodeComponent(entry.id)}` | não resolvido estaticamente | [lib/features/catalog/data/catalog_repository.dart:45](../../../lib/features/catalog/data/catalog_repository.dart) |
+| `GET /api/v1/foods` | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:15](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/filters` | [services/api/internal/nutrition/handler.go:17](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:30](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods` | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:56](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:102](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/me/foods` | [services/api/internal/nutrition/entries_handler.go:31](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:48](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `POST /api/v1/me/foods` | [services/api/internal/nutrition/entries_handler.go:30](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:56](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries` | [services/api/internal/nutrition/entries_handler.go:33](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:63](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries` | [services/api/internal/nutrition/entries_handler.go:33](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:83](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries/$id` | [services/api/internal/nutrition/entries_handler.go:34](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:127](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-summary` | [services/api/internal/nutrition/entries_handler.go:37](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:140](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `DELETE /api/v1/me/food-entries/$id` | [services/api/internal/nutrition/entries_handler.go:36](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:154](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/meal-diary` | [services/api/internal/nutrition/entries_handler.go:39](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:176](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/meals/$id` | [services/api/internal/nutrition/entries_handler.go:40](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:202](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/privacy` | [services/api/internal/privacy/handler.go:28](../../../services/api/internal/privacy/handler.go) | [lib/features/privacy/data/privacy_repository.dart:20](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `GET /api/v1/me/export` | [services/api/internal/privacy/handler.go:29](../../../services/api/internal/privacy/handler.go) | [lib/features/privacy/data/privacy_repository.dart:29](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `POST /api/v1/me/deletion-intent` | [services/api/internal/privacy/handler.go:30](../../../services/api/internal/privacy/handler.go) | [lib/features/privacy/data/privacy_repository.dart:43](../../../lib/features/privacy/data/privacy_repository.dart) |
+| `DELETE /api/v1/me` | [services/api/internal/privacy/handler.go:31](../../../services/api/internal/privacy/handler.go) | [lib/features/privacy/data/privacy_repository.dart:55](../../../lib/features/privacy/data/privacy_repository.dart) |
 ## Chamadas Flutter: comparação com a referência Fastify
 
 Chaves de data/query e nomes de schemas são detectados em padrões literais; schema inline pode ficar apenas como `z.object`. O backend é o retrato versionado, não uma leitura online nem um teste de rede.
 
 | Flutter | Envia: chaves detectadas | Backend: path e tipos | Recebe: status e schemas | Evidência Flutter |
 | --- | --- | --- | --- | --- |
+| `GET /api/v1/me/activity` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/activity/data/activity_repository.dart:69](../../../lib/features/activity/data/activity_repository.dart) |
+| `GET /api/v1/me/activity-sessions/${Uri.encodeComponent(id)}` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/activity/data/activity_repository.dart:78](../../../lib/features/activity/data/activity_repository.dart) |
+| `POST /api/v1/me/activity-sessions` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/activity/data/activity_repository.dart:91](../../../lib/features/activity/data/activity_repository.dart) |
+| `POST /api/v1/me/activity-sessions/${Uri.encodeComponent(sessionId)}/commands` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/activity/data/activity_repository.dart:115](../../../lib/features/activity/data/activity_repository.dart) |
 | `POST /api/v1/auth/google` | idToken, publicAuth | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:10](../../../lib/features/auth/data/auth_api.dart) |
 | `GET /api/v1/me` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:19](../../../lib/features/auth/data/auth_api.dart) |
 | `POST /api/v1/auth/logout` | publicAuth, refreshToken | sem correspondência na referência | não detectado | [lib/features/auth/data/auth_api.dart:24](../../../lib/features/auth/data/auth_api.dart) |
@@ -19,6 +57,15 @@ Chaves de data/query e nomes de schemas são detectados em padrões literais; sc
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods` | cursor, limit, locale, namesVersion, q, sourceId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:56](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | locale, versionId | sem correspondência na referência | não detectado | [lib/features/food_reference/data/food_repository.dart:102](../../../lib/features/food_reference/data/food_repository.dart) |
+| `GET /api/v1/me/foods` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:48](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `POST /api/v1/me/foods` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:56](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:63](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:83](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-entries/$id` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:127](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/food-summary` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:140](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `DELETE /api/v1/me/food-entries/$id` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:154](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/meal-diary` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:176](../../../lib/features/nutrition/data/nutrition_repository.dart) |
+| `GET /api/v1/me/meals/$id` | sem chaves literais detectadas | sem correspondência na referência | não detectado | [lib/features/nutrition/data/nutrition_repository.dart:202](../../../lib/features/nutrition/data/nutrition_repository.dart) |
 | `GET /api/v1/privacy` | publicAuth | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:20](../../../lib/features/privacy/data/privacy_repository.dart) |
 | `GET /api/v1/me/export` | cursor, limit, section | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:29](../../../lib/features/privacy/data/privacy_repository.dart) |
 | `POST /api/v1/me/deletion-intent` | confirmation | sem correspondência na referência | não detectado | [lib/features/privacy/data/privacy_repository.dart:43](../../../lib/features/privacy/data/privacy_repository.dart) |

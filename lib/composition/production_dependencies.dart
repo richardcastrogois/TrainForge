@@ -5,8 +5,14 @@ import '../features/nutrition/data/nutrition_repository.dart';
 import '../features/privacy/data/privacy_repository.dart';
 import 'app_dependencies.dart';
 import '../features/training_configuration/data/training_configuration_repository.dart';
+import '../features/activity/data/activity_repository.dart';
 
 AppDependencies productionDependencies() => AppDependencies(
+  createActivityRepository: ({required accountId, required currentAccountId}) =>
+      GoActivityRepository(
+        accountId: accountId,
+        currentAccountId: currentAccountId,
+      ),
   createTrainingConfigurationRepository:
       ({required accountId, required currentAccountId}) =>
           GoTrainingConfigurationRepository(

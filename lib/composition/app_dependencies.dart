@@ -4,6 +4,13 @@ import '../features/food_reference/domain/food_reference.dart';
 import '../features/nutrition/domain/nutrition.dart';
 import '../features/privacy/domain/privacy.dart';
 import '../features/training_configuration/domain/training_configuration.dart';
+import '../features/activity/domain/activity_repository.dart';
+
+typedef ActivityRepositoryFactory =
+    ActivityRepository Function({
+      required String accountId,
+      required String? Function() currentAccountId,
+    });
 
 typedef TrainingConfigurationRepositoryFactory =
     TrainingConfigurationRepository Function({
@@ -26,6 +33,7 @@ class AppDependencies {
   final NutritionRepositoryFactory createNutritionRepository;
   final TrainingConfigurationRepositoryFactory?
   createTrainingConfigurationRepository;
+  final ActivityRepositoryFactory? createActivityRepository;
 
   const AppDependencies({
     required this.createSessionRepository,
@@ -34,5 +42,6 @@ class AppDependencies {
     required this.createPrivacyRepository,
     required this.createNutritionRepository,
     this.createTrainingConfigurationRepository,
+    this.createActivityRepository,
   });
 }
