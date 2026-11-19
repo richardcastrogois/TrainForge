@@ -7,6 +7,11 @@ on:
       - 'lib/**'
       - 'test/**'
       - 'assets/**'
+      - 'android/**'
+      - 'tools/food_catalog*.py'
+      - 'tools/verificar_catalogo_apk.py'
+      - 'tools/requirements-food-catalog.txt'
+      - 'content/food_catalog/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
       - 'l10n.yaml'
@@ -17,6 +22,11 @@ on:
       - 'lib/**'
       - 'test/**'
       - 'assets/**'
+      - 'android/**'
+      - 'tools/food_catalog*.py'
+      - 'tools/verificar_catalogo_apk.py'
+      - 'tools/requirements-food-catalog.txt'
+      - 'content/food_catalog/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
       - 'l10n.yaml'
@@ -34,7 +44,7 @@ concurrency:
 jobs:
   analyze-test:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -55,6 +65,15 @@ jobs:
           printf '%s\n' "$sdk/bin" >> "$GITHUB_PATH"
           "$sdk/bin/flutter" config --no-analytics
           "$sdk/bin/flutter" --version
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Preparar catálogo sintético exclusivo de CI
+        env:
+          TF_CATALOG_NATIVE_FIXTURE: '1'
+        run: |
+          python -m pip install -r tools/requirements-food-catalog.txt
+          python tools/food_catalog_ci.py
       - name: Resolver somente o lockfile versionado
         run: flutter pub get --enforce-lockfile
       - name: Conferir traduções geradas
@@ -65,6 +84,12 @@ jobs:
         run: flutter analyze --no-pub
       - name: Testar e medir linhas instrumentadas
         run: flutter test --no-pub --concurrency=2 --coverage
+      - name: Compilar integração Android com catálogo sintético não distribuível
+        run: flutter build apk --debug --no-pub
+      - name: Verificar catálogo e criptografia embarcados no APK de CI
+        env:
+          TF_CATALOG_NATIVE_FIXTURE: '1'
+        run: python tools/verificar_catalogo_apk.py --apk build/app/outputs/flutter-apk/app-debug.apk --fixture-ci
       - name: Guardar cobertura de fixtures isoladas
         if: success()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

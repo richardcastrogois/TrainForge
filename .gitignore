@@ -88,7 +88,14 @@ __pycache__/
 # Derived third-party content stays local until distribution review
 /content/local/
 
+# Complete public catalog binaries are built from locked source hashes, not Git blobs.
+/assets/food_catalog/*.sqlite
+/assets/food_catalog/*.sqlite-*
+/assets/food_catalog/*.gz
+/assets/food_catalog/*.zip
+
 # Project-scoped development tools and local PostgreSQL secrets
+/android/build/
 /.tools/
 /.local/
 /services/api/.env

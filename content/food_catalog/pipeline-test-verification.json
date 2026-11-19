@@ -1,0 +1,33 @@
+{
+  "contract": "trainforge.food-catalog-tests/1",
+  "observedOn": "2026-11-18",
+  "command": "python -m unittest discover -s tools -p test_food_catalog*.py",
+  "testsRun": 31,
+  "result": "passed",
+  "scope": "Offline synthetic temporary inputs and contract verification; this receipt does not declare the production catalog complete.",
+  "coveredBehaviors": [
+    "Exact decimal preservation and distinct missing, trace, bound and zero states",
+    "Canonical primary nutrient selection and original metric-unit preservation",
+    "Legacy IDs and content versions unchanged",
+    "GTIN leading zeros and check-digit validation",
+    "Documented metric portions and explicit contribution consent",
+    "SQLite column-reference encoding and lossless per-record compression",
+    "Ed25519 payload tampering and SQLite/gzip asset tampering rejection",
+    "Full gzip asset verification without an uncompressed database copy",
+    "OFF coverage parity with the actual CSV reader, including absent optional columns",
+    "Concatenated gzip member offsets and preservation of committed compressed prefixes",
+    "Removal of uncommitted records only from the final gzip member",
+    "Recovery of a truncated last gzip footer without inventing committed rows",
+    "All food fields and nonsequential row identities preserved by structural compaction",
+    "Barcode equivalence in both directions, indexed public view, foreign keys and external-content FTS",
+    "Named integer row keys remain stable after VACUUM",
+    "Physical repackaging preserves content version, signed source exports and the trusted signing key",
+    "Deferred two-entry ZIP32 archive after verified gzip replacement",
+    "Resume committed food copy and recover a stale barcode cursor without recopying foods",
+    "Versioned public export publication rejects corrupt bytes and preserves prior releases"
+  ],
+  "gzipRecoveryTests": [
+    "test_export_recovery_preserves_committed_gzip_members_and_trims_only_tail",
+    "test_export_recovery_can_repair_missing_last_footer_without_inventing_rows"
+  ]
+}
