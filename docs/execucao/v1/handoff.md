@@ -12,7 +12,7 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 | 2 | Importar pacote Brasil + Portugal no Neon | **Cancelada**: banco fica só com o Brasil ([melhoria](../../planejamento/melhoria-pacotes-regionais.md)) |
 | 3 | Publicar pacotes no GitHub Releases | Adiada para a melhoria dos pacotes regionais |
 | 4 | Commitar tela de pacotes + manifest do pacote Brasil | Pendente |
-| 5 | Google: `TF_GOOGLE_SERVER_CLIENT_ID` na Vercel e teste de login | **Servidor configurado** (rota responde `invalid_credential` a token falso); login real a confirmar no celular |
+| 5 | Google: `TF_GOOGLE_SERVER_CLIENT_ID` na Vercel e teste de login | **Servidor configurado** e consentimento **Em produção**; login real a confirmar no celular |
 | 6 | Licença proprietária + Termos/Privacidade | **Implementada** (abaixo) |
 
 ## Arquitetura de distribuição (19/11)
@@ -32,7 +32,7 @@ Hoje o app oferece só o pacote Brasil (aparece como **Instalado**, com aviso de
 
 ## Distribuição (19/11)
 
-APK **0.5.1+31** publicado no [GitHub Release v0.5.1](https://github.com/richardcastrogois/TrainForge/releases/tag/v0.5.1) como `TrainForge.apk` (SHA `f4567de648a04caf…`, download conferido). Link fixo e QR code em [distribuição](../../distribuicao/README.md); novas versões com `tools/publicar_release_android.py --confirm-publish`. Próximas tarefas registradas: [pacotes regionais](../../planejamento/melhoria-pacotes-regionais.md) e [desvincular o Bootcamp](../../planejamento/melhoria-identidade-google.md). Login Google ainda em modo **Testando** no Google Cloud (só usuários de teste) até o autor completar a Identidade visual e publicar.
+APK **0.5.1+31** publicado no [GitHub Release v0.5.1](https://github.com/richardcastrogois/TrainForge/releases/tag/v0.5.1) como `TrainForge.apk` (SHA `f4567de648a04caf…`, download conferido). Link fixo e QR code em [distribuição](../../distribuicao/README.md); novas versões com `tools/publicar_release_android.py --confirm-publish`. Próximas tarefas registradas: [pacotes regionais](../../planejamento/melhoria-pacotes-regionais.md) e [desvincular o Bootcamp](../../planejamento/melhoria-identidade-google.md). Tela de consentimento Google publicada **Em produção** em 19/11 pelo autor (nome TrainForge, links de Termos/Privacidade no GitHub, domínio `github.com` autorizado): qualquer conta Google entra, só escopos básicos, sem verificação.
 
 ## Licença, termos e aceite registrado (pendência 6)
 
