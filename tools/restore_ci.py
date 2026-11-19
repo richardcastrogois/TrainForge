@@ -27,6 +27,10 @@ def disposable_name(name):
     return name
 
 
+# Owner data added by migrations 14-15; removed with the user through ON DELETE CASCADE.
+PRIVATE_OFFLINE=('nutrition_sync_state','nutrition_changes','nutrition_operation_receipts','food_contributions','food_contribution_media')
+
+
 def main():
     check_environment(os.environ)
     go,psql,docker=shutil.which('go'),shutil.which('psql'),shutil.which('docker')
@@ -66,7 +70,8 @@ def main():
         return hashlib.sha256(raw.encode('utf-8')).hexdigest()
     def full_snapshot(database):
         tables=sql("SELECT string_agg(tablename,',' ORDER BY tablename) FROM pg_tables WHERE schemaname='trainforge_v1';",database).split(',')
-        if len(tables)!=30 or any(not re.fullmatch('[a-z_]+',t) for t in tables):raise RuntimeError('Schema inventory changed; review restore coverage')
+        # Schema16: 30 core tables + offline sync (3), contributions (2) and catalog releases (3).
+        if len(tables)!=38 or any(not re.fullmatch('[a-z_]+',t) for t in tables):raise RuntimeError('Schema inventory changed; review restore coverage')
         return {t:fingerprint('SELECT * FROM trainforge_v1.'+t,database) for t in tables}
     def preserved_snapshot(database):
         result={}
@@ -74,7 +79,7 @@ def main():
             result[table]=fingerprint('SELECT * FROM trainforge_v1.'+table,database)
         result['publicFoods']=fingerprint('SELECT * FROM trainforge_v1.food_versions WHERE owner_id IS NULL',database)
         owner="(SELECT id FROM trainforge_v1.users WHERE subject='privacy-restore-b')"
-        for table in ('users','auth_families','food_versions','food_entries','training_configuration_versions','meals','meal_items','meal_versions','idempotency_records','account_deletion_intents'):
+        for table in ('users','auth_families','food_versions','food_entries','training_configuration_versions','meals','meal_items','meal_versions','idempotency_records','account_deletion_intents')+PRIVATE_OFFLINE:
             column='id' if table=='users' else ('owner_id' if table=='food_versions' else 'user_id')
             result['otherOwner:'+table]=fingerprint('SELECT * FROM trainforge_v1.'+table+' WHERE '+column+'='+owner,database)
         for table in ('access_tokens','refresh_tokens'):
@@ -107,7 +112,7 @@ def main():
         if r.returncode:raise RuntimeError('Matching-version service pg_restore failed')
         sql('REVOKE ALL ON DATABASE '+target+' FROM PUBLIC; REVOKE CONNECT ON DATABASE '+target+' FROM trainforge_runtime;')
         if full_snapshot(target)!=before:raise RuntimeError('Restored logical rows differ from pre-erasure backup')
-        report['allThirtyTablesLogicalSnapshotMatched']=True
+        report['allTablesLogicalSnapshotMatched']=38
         if sql("SELECT count(*) FROM trainforge_v1.users WHERE subject='privacy-restore-a';",target)!='1':raise RuntimeError('Historical account fixture not present before gate')
         report['historicalAccountPresentBeforeGate']=True
         keep=preserved_snapshot(target);current_source=full_snapshot(source)
@@ -119,7 +124,7 @@ def main():
             output=json.loads(r.stdout)
             if output.get('processedErasureRecords')!=1 or output.get('sourceModified') is not False or output.get('targetPromoted') is not False:raise RuntimeError('Restore CLI evidence mismatch')
             if sql("SELECT count(*) FROM trainforge_v1.users WHERE subject='privacy-restore-a';",target)!='0':raise RuntimeError('Erased account survived restore gate')
-            for table,column in [('users','id'),('auth_families','user_id'),('food_versions','owner_id'),('food_entries','user_id'),('training_configuration_versions','user_id'),('meals','user_id'),('meal_items','user_id'),('meal_versions','user_id'),('idempotency_records','user_id')]:
+            for table,column in [('users','id'),('auth_families','user_id'),('food_versions','owner_id'),('food_entries','user_id'),('training_configuration_versions','user_id'),('meals','user_id'),('meal_items','user_id'),('meal_versions','user_id'),('idempotency_records','user_id')]+[(t,'user_id') for t in PRIVATE_OFFLINE]:
                 if sql('SELECT count(*) FROM trainforge_v1.'+table+' WHERE '+column+' IN(SELECT user_id FROM trainforge_v1.account_erasures);',target)!='0':raise RuntimeError('Erased owner data survived gate')
             if preserved_snapshot(target)!=keep or full_snapshot(source)!=current_source:raise RuntimeError('Erasure gate changed other owner/editorial/source')
             snapshot=full_snapshot(target)
