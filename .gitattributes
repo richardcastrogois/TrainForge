@@ -1,5 +1,10 @@
 * text=auto
 
+# Preserve document and image bytes across Windows and Unix checkouts
+*.pdf binary
+*.pptx binary
+*.png binary
+
 # Generated indexes and historical design exports do not define source language
 **/graphify-out/** linguist-generated=true
 docs/design/*.scripter.js linguist-generated=true
