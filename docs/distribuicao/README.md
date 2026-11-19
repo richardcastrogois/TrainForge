@@ -27,4 +27,5 @@ O app já instalado não se atualiza sozinho: a pessoa baixa pelo mesmo link e i
 
 | Versão | Data | SHA-256 (início) |
 |---|---|---|
-| 0.5.1+31 | 19/11/2026 | `f4567de648a04caf` |
+| 0.5.2+32 | 19/11/2026 | `88f6825c51ccad9a` — termos só após login; sem tela vazia |
+| 0.5.1+31 | 19/11/2026 | `f4567de648a04caf` | — termos antes da entrada travavam (substituída) |
