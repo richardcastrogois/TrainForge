@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `37ad486e9fb14a57`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `c472bdef2dde67db`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -11,7 +11,7 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 | Arquivos Dart | 114 |
 | Telas/widgets | 32 |
 | Literais HTTP Flutter | 34 |
-| Arquivos Go de produção | 98 |
+| Arquivos Go de produção | 99 |
 | Registros HTTP Go | 53 |
 | Operações em especificações versionadas | 58 |
 | Tabelas do núcleo declaradas em migrations | 38 |
@@ -154,7 +154,7 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 
 | Pacote | Importa internamente |
 | --- | --- |
-| api | internal/app, internal/platform/config |
+| api | serverless |
 | cmd/api | internal/app, internal/platform/config, internal/platform/httpapi |
 | cmd/catalog | internal/catalogruntime |
 | cmd/catalog-migrate | internal/catalogschema |
@@ -187,6 +187,7 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 | internal/swaggerdocs | nenhum import interno detectado |
 | internal/trainingconfig | internal/auth, internal/platform/httpapi |
 | migrations | nenhum import interno detectado |
+| serverless | internal/app, internal/platform/config |
 
 ## Go: anotações e registros HTTP
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "37ad486e9fb14a57b8f553786f8d62aa5e7f7ed89178e72a292d4f29c6260966",
+  "inputRevision": "c472bdef2dde67dbb5b340e6916116dfa6eeb268ac6ea512551b8ec0540a3881",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "8c99bc5411793d8d23228a1f3b10d71c17bebd7248e3217322152d1e7b60e218",
@@ -121,7 +121,7 @@
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
     "lib/shared/widgets/startup_page.dart": "f57230d55be844cd1d9654d70822ac2c8179b5ef0bd6cd5f07c0c7bfa56db71c",
-    "services/api/api/index.go": "e0537febd34f4c189ae3f5a50ee7aa52cabd6a660137675e1eb57eac21292e00",
+    "services/api/api/index.go": "bff6d65701fca9a0c3e16c3b41ff8bf9d44be886abe42d37842a5a90b875b878",
     "services/api/cmd/api/main.go": "da7e84e3337e3c9a45a36c426011b291be6f2aa1310c4ce6c8ae282d39c98bc6",
     "services/api/cmd/catalog-migrate/main.go": "baa58f3b644dfc8bcd5c3657f5495b04d8202e385166ca3ad968869fa6e313ff",
     "services/api/cmd/catalog-release/main.go": "19723348d4d564413ae2369ed7cdcd15b9c37f61b409f3fe17cb2c520c0cda16",
@@ -237,6 +237,7 @@
     "services/api/migrations/00015_food_contributions.sql": "fcce1c22736f3b9826e3727ebb700666c500e7fa54c6d95a445cd7fc175599ce",
     "services/api/migrations/00016_food_catalog_releases.sql": "281cd398b1355f508660bfa105d2ee1caea315b846c15803dd0a00e9dbb1a98c",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
+    "services/api/serverless/serverless.go": "96fbcc812b31950f1c4371d018d0eb08cb8bb28c0cc11cd5f0721ac593473391",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/ambiente.py": "e5af86ed61296d81aa0a24f5d2ad3bb6308edc0957cdf24575786ddbaf30ec96",
     "tools/android_security_inventory.py": "fc265147ef83d0852abfb8966814d45bef05ecc883f381c1133bb683a52a81c4",
@@ -268,7 +269,7 @@
     "tools/food_catalog_package.py": "25811a0cc7d74a196fc2f2c838300e250dd1a2aa54985e4787048086a9932446",
     "tools/food_catalog_publish.py": "8e84e4fbf02a24581064d8475fabb4d2fc7a461f36a543283213fb417da7984d",
     "tools/food_catalog_resume.py": "0ee37a7388b619c647fa3ef845c2518dd1e72e996579169fb1de2a13ca206ff9",
-    "tools/food_catalog_slim.py": "10ccf531ee965cff3237b2f6ba698da898480a2c029c500cebd8a937f5c2084a",
+    "tools/food_catalog_slim.py": "3e39ad128538af7d657103de1eac888f160fea2b7b8c75693ff45173d20c494a",
     "tools/gerar_catalogo_m1_swagger.py": "4ccdc44d5be7869a0d9769ec02b4614b008478606f335c710c7bcd40a1d1d82c",
     "tools/gerar_diagramas.py": "5081a43639b7b4cb443692c1d1505ea43a97e0e783ae8bb6ef0cfde5d2d983f6",
     "tools/gerar_documentacao.py": "8e9717d497eb9f9bc912facb8de9e2e04f5c7d965f72493a6526d3c91f2de1fb",
@@ -345,7 +346,7 @@
   "coverage": {
     "dartFiles": 114,
     "httpCalls": 34,
-    "goFiles": 98,
+    "goFiles": 99,
     "goRegistrations": 53
   },
   "groups": [
@@ -2826,7 +2827,8 @@
       "services/api/internal/trainingconfig/postgres.go",
       "services/api/internal/trainingconfig/resources.go",
       "services/api/internal/trainingconfig/service.go",
-      "services/api/migrations/files.go"
+      "services/api/migrations/files.go",
+      "services/api/serverless/serverless.go"
     ],
     "annotations": [
       {
@@ -4187,16 +4189,13 @@
       "internal/publiccatalog",
       "internal/swaggerdocs",
       "internal/trainingconfig",
-      "migrations"
+      "migrations",
+      "serverless"
     ],
     "imports": [
       [
         "api",
-        "internal/app"
-      ],
-      [
-        "api",
-        "internal/platform/config"
+        "serverless"
       ],
       [
         "cmd/api",
@@ -4413,6 +4412,14 @@
       [
         "internal/trainingconfig",
         "internal/platform/httpapi"
+      ],
+      [
+        "serverless",
+        "internal/app"
+      ],
+      [
+        "serverless",
+        "internal/platform/config"
       ]
     ],
     "migrations": [

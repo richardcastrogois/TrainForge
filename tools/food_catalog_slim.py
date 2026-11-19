@@ -191,7 +191,7 @@ def build(pack_id, limit=None):
         'file': 'catalog.sqlite.gz', 'compression': 'gzip', 'bytes': compressed.stat().st_size, 'sha256': sha_file(compressed),
         'databaseFile': 'catalog.sqlite', 'databaseBytes': database.stat().st_size, 'databaseSha256': sha_file(database),
         'version': version, 'counts': counts,
-        'sources': [s for s in parent['sources'] if s['sourceId'] in counts],
+        'sources': [{**s, 'foods': counts[s['sourceId']]} for s in parent['sources'] if s['sourceId'] in counts],
         'pack': {'id': pack_id, 'title': pack['title'], 'countries': pack['countries'], 'parentVersion': parent['version'],
                  'parentSha256': parent['sha256'], 'offLimit': limit, 'offCandidates': len(codes)},
     })
