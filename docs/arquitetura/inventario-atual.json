@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "19fc07ec0dd281bd171b9083a9b7831d02b39f28305b4d4a318d2e1f216c954d",
+  "inputRevision": "fc6f19bd64ecd19dbd87d5bff6edd8a73308f6b71a9dda8fb414bbd2a642a900",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "8c99bc5411793d8d23228a1f3b10d71c17bebd7248e3217322152d1e7b60e218",
@@ -281,7 +281,7 @@
     "tools/preparar_conteudo_local.py": "e65f64541eccc390f8c52fb3aad7ecf8c97823c0941abb903df8bcc99be3a36a",
     "tools/preparar_release_android.py": "ba7855fdc03fe77148db95f9d2f1b28f247e4e4db12f8b12aaf28415cb9cd0c9",
     "tools/prepare_history_remediation.py": "4a84ca42de16cf52c4cdca55c69969d1c95495a08bcc12d71caad888b321f513",
-    "tools/restore_ci.py": "3818fd1b3684255edc6335e478de0c50798fb8ecddb667f5e2d6d82525480d9b",
+    "tools/restore_ci.py": "8bdf0b1e1a8683e53dee32eccd38b479027d41cf8ab069558dd15c8699e24c80",
     "tools/revisar_alimentos_v1.py": "3f1c34c48c94cd38ccd9bba7133fb7b4c67c0054040bcadc0356ae3839612f91",
     "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
     "tools/secret_ci.py": "a79a87e3597cdb58fc2edd8bb3413663ee78d8e9dfc9709b039044ba306d4270",
