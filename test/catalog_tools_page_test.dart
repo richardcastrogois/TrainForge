@@ -6,7 +6,7 @@ import 'package:trainforge/features/food_reference/presentation/catalog_tools_pa
 import 'package:trainforge/l10n/generated/app_localizations.dart';
 
 class _Installer extends CatalogInstaller {
-  final String? pack;
+  String? pack;
   int imports = 0;
   _Installer(this.pack);
   @override
@@ -40,21 +40,34 @@ void main() {
     expect(find.textContaining('GitHub'), findsOneWidget);
   });
 
-  testWidgets('download asks for confirmation with size and can be declined', (
+  testWidgets('bundled pack retries local preparation without downloading', (
     tester,
   ) async {
     final installer = _Installer(null);
     await tester.pumpWidget(_app(installer));
     await tester.pumpAndSettle();
-    await tester.tap(find.byTooltip('Baixar pacote'));
+    installer.pack = 'br';
+    await tester.tap(find.byTooltip('Preparar catálogo incluído no app'));
     await tester.pumpAndSettle();
-    expect(find.text('Baixar pacote de alimentos?'), findsOneWidget);
-    expect(find.textContaining('41 MB'), findsWidgets);
-    expect(find.textContaining('Wi-Fi'), findsOneWidget);
-    await tester.tap(find.text('Cancelar'));
-    await tester.pumpAndSettle();
+    expect(find.text('Instalado'), findsOneWidget);
+    expect(find.byTooltip('Baixar pacote'), findsNothing);
     expect(find.byType(AlertDialog), findsNothing);
     expect(find.byType(CircularProgressIndicator), findsNothing);
     expect(installer.imports, 0);
+  });
+
+  testWidgets('failed local preparation remains visible and retryable', (
+    tester,
+  ) async {
+    await tester.pumpWidget(_app(_Installer(null)));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Preparar catálogo incluído no app'));
+    await tester.pumpAndSettle();
+    expect(
+      find.textContaining('Não foi possível verificar ou instalar'),
+      findsOneWidget,
+    );
+    expect(find.byTooltip('Preparar catálogo incluído no app'), findsOneWidget);
+    expect(find.byType(CircularProgressIndicator), findsNothing);
   });
 }

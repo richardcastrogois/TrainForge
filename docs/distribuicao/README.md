@@ -27,5 +27,8 @@ O app já instalado não se atualiza sozinho: a pessoa baixa pelo mesmo link e i
 
 | Versão | Data | SHA-256 (início) |
 |---|---|---|
+| 0.5.3+33 | 19/11/2026 | `d3aa1962d5f6d7ea` — busca/detalhes usam servidor se o catálogo local falhar; login Google bloqueado pela ausência do registrador de plugins |
 | 0.5.2+32 | 19/11/2026 | `88f6825c51ccad9a` — termos só após login; sem tela vazia |
 | 0.5.1+31 | 19/11/2026 | `f4567de648a04caf` | — termos antes da entrada travavam (substituída) |
+
+O preparo do release gera os arquivos nativos com `flutter build apk --release --config-only` antes de medir as fontes e compilar. O APK final só recebe recibo se definir a classe `io.flutter.plugins.GeneratedPluginRegistrant` no DEX. Apagar o registrador e compilar diretamente com `--no-pub` produziu a falha nativa da 0.5.3; testes Flutter isolados não detectam esse problema de empacotamento.

@@ -4,6 +4,7 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:dio/dio.dart';
+import 'package:crypto/crypto.dart' as hashes;
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -11,6 +12,7 @@ import 'package:integration_test/integration_test.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:path/path.dart' as paths;
 import 'package:path_provider/path_provider.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:trainforge/features/food_reference/data/catalog_installer.dart';
 import 'package:trainforge/features/food_reference/data/local_food_repository.dart';
 import 'package:trainforge/features/nutrition/data/nutrition_local_store.dart';
@@ -22,6 +24,59 @@ import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 /// Reopening a real database is tested; process death is not simulated here.
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  testWidgets(
+    'bundled catalog installs with signed bytes and read-only search',
+    (tester) async {
+      await tester.pumpWidget(const MaterialApp(home: Scaffold()));
+      final report = await tester.runAsync(() async {
+        final installer = CatalogInstaller();
+        final catalog = LocalFoodRepository(
+          installer.open,
+          installer: installer,
+        );
+        final db = await installer.open();
+        try {
+          final manifest = await installer.manifest();
+          final rice = await catalog.list(q: 'arroz', sourceId: 'AL-TACO');
+          expect(rice.items, isNotEmpty);
+          final detail = await catalog.detail(rice.items.first);
+          expect(detail.nutrients, isNotEmpty);
+          await expectLater(
+            db.insert('metadata', {'key': 'read-only-probe', 'value': 'test'}),
+            throwsA(isA<DatabaseException>()),
+          );
+          final digest =
+              (await hashes.sha256.bind(File(db.path).openRead()).first)
+                  .toString();
+          expect(digest, manifest['databaseSha256']);
+          expect(
+            await Directory(paths.dirname(db.path))
+                .list()
+                .where(
+                  (file) =>
+                      paths.basename(file.path).startsWith('.verification-'),
+                )
+                .isEmpty,
+            isTrue,
+          );
+          return <String, dynamic>{
+            'contract': 'trainforge.food-catalog-native/1',
+            'catalogVersion': manifest['version'],
+            'catalogSha256Unchanged': true,
+            'tacoRiceSearch': true,
+            'foodDetails': true,
+            'readOnlyConnection': true,
+            'temporaryValidationCleaned': true,
+            'googleLoginTested': false,
+          };
+        } finally {
+          await db.close();
+        }
+      });
+      binding.reportData = report;
+    },
+    timeout: const Timeout(Duration(minutes: 10)),
+  );
   testWidgets(
     'complete bundled catalog, encrypted queue and EAN scanner work offline',
     (tester) async {

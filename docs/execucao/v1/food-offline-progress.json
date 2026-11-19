@@ -1,6 +1,6 @@
 {
   "contract": "trainforge.food-offline-progress/1",
-  "updatedAtUtc": "2026-11-19T07:08:52.502842+00:00",
+  "updatedAtUtc": "2026-11-19T22:05:53.919833+00:00",
   "instruction": "Append/update after every finished stage. Handoff is the human entry point. Never infer native/publication completion from unit tests.",
   "stages": [
     {
@@ -388,6 +388,31 @@
         "agent": "Claude",
         "note": "Streaming count only; package step still has to write, sign and verify"
       }
+    },
+    {
+      "id": "android-catalog-install-fix-20261119",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-19T21:59:18.335774+00:00",
+      "result": "Reproduced Android FTS4 readonly quick_check failure; verification now uses disposable writable copy, preserves signed original and read-only reader. Focused native test passed. Full native harness still fails synthetic EAN decoding.",
+      "evidence": [
+        "integration_test/food_offline_native_test.dart",
+        ".local/android-release/diagnosis-native-test-detail.log",
+        ".local/android-release/diagnosis-native-catalog-final.log",
+        ".local/android-release/diagnosis-native-test-copy.log"
+      ]
+    },
+    {
+      "id": "release-plugin-registration-fix-20261119",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-19T22:05:53.919833+00:00",
+      "result": "0.5.4+34 built, signed, inspected for a defined DEX registrant, installed on physical Android over Wi-Fi after author removed old app; author confirmed successful Google sign-in. Flutter387/analyze0/Python10/nativeCatalog1 passed. Publication and Git pending.",
+      "evidence": [
+        "tools/preparar_release_android.py",
+        "tools/test_preparar_release_android.py",
+        ".local/android-release/device-google-system-filtered.log",
+        ".local/android-release/diagnosis-full-flutter.log",
+        "docs/execucao/v1/android-release-fix-20261119.json"
+      ]
     }
   ]
 }

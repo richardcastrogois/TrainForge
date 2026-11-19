@@ -19,6 +19,9 @@ enum AuthFeedback {
   googleUnavailable(
     "Não foi possível abrir o login do Google neste aparelho. Tente novamente ou explore sem conta.",
   ),
+  googleNotCompleted(
+    "O login com Google não foi concluído. Você pode tentar novamente ou explorar sem conta.",
+  ),
   sessionExpired(
     "A sessão expirou ou foi revogada. Entre novamente com Google.",
   ),
@@ -103,14 +106,17 @@ class AuthController extends ChangeNotifier {
     } on SessionException catch (error) {
       if (error.failure == SessionFailure.configuration) {
         feedback = AuthFeedback.googleConfiguration;
-        failedAction = action;
+      } else if (error.failure == SessionFailure.cancelled) {
+        feedback = AuthFeedback.googleNotCompleted;
       }
-      // Cancellation leaves the signed-out screen usable, without treating consent as failure.
+      failedAction = action;
     } on GoogleSignInException catch (error) {
-      // Cancellation keeps the signed-out screen usable without blaming the user.
+      // Android can report a provider failure as canceled. Use neutral feedback
+      // for both outcomes; never claim that the person canceled or consented.
       switch (error.code) {
         case GoogleSignInExceptionCode.canceled:
-          break;
+          feedback = AuthFeedback.googleNotCompleted;
+          failedAction = action;
         case GoogleSignInExceptionCode.clientConfigurationError:
         case GoogleSignInExceptionCode.providerConfigurationError:
           feedback = AuthFeedback.googleConfiguration;

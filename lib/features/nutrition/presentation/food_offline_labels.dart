@@ -77,6 +77,7 @@ const _labels = <String, Map<String, String>>{
     'update': 'Update catalog',
     'packs': 'Food packs',
     'installed': 'Installed',
+    'prepareBundled': 'Prepare catalog included in the app',
     'downloading': 'Downloading…',
     'verifying': 'Checking signature and installing…',
     'downloadCanceled': 'Download canceled. The installed catalog was kept.',
@@ -164,6 +165,7 @@ const _labels = <String, Map<String, String>>{
     'update': 'Atualizar catálogo',
     'packs': 'Pacotes de alimentos',
     'installed': 'Instalado',
+    'prepareBundled': 'Preparar catálogo incluído no app',
     'downloading': 'Baixando…',
     'verifying': 'Conferindo assinatura e instalando…',
     'downloadCanceled': 'Download cancelado. O catálogo instalado foi mantido.',
@@ -252,6 +254,7 @@ const _labels = <String, Map<String, String>>{
     'update': 'Actualizar catálogo',
     'packs': 'Paquetes de alimentos',
     'installed': 'Instalado',
+    'prepareBundled': 'Preparar catálogo incluido en la app',
     'downloading': 'Descargando…',
     'verifying': 'Verificando firma e instalando…',
     'downloadCanceled':

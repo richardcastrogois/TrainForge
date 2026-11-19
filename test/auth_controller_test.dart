@@ -163,8 +163,13 @@ void main() {
       repo.pendingLogin = null;
       repo.loginError = const SessionException(SessionFailure.cancelled);
       await controller.login();
-      expect(controller.message, isNull);
+      expect(controller.feedback, AuthFeedback.googleNotCompleted);
+      expect(controller.failedAction, AuthAction.login);
       expect(controller.busy, isFalse);
+      repo.loginError = null;
+      await controller.retry();
+      expect(repo.logins, 3);
+      expect(controller.feedback, isNull);
       controller.dispose();
     },
   );

@@ -1,0 +1,50 @@
+{
+  "contract": "trainforge.android-release-fix/1",
+  "verifiedAtUtc": "2026-11-19T22:05:53.919833+00:00",
+  "version": "0.5.4+34",
+  "apkSha256": "7d0ad4e3e8ea04c0781d61cd042558b4788b544119604b6e3cec42533daeb26a",
+  "apkBytes": 139268925,
+  "certificateSha256": "bfa91d8792ce53124a777b15bf4650c40ab72592366362b6a5581f211c208878",
+  "previousRelease": "0.5.3+33",
+  "previousDexRegistrantDefined": false,
+  "observedFailure": "ClassNotFoundException: io.flutter.plugins.GeneratedPluginRegistrant",
+  "cause": "Release script deleted generated native plugin registrant, then skipped its regeneration with --no-pub.",
+  "nativeRegistrantDefined": true,
+  "catalogHashAndSignatureVerified": true,
+  "sameSignerAndIncreasingVersionVerified": true,
+  "physicalAndroidInstalled": true,
+  "userUninstalledPreviousVersionBeforeInstallation": true,
+  "realGoogleLoginConfirmedByAuthor": true,
+  "googleCloudConfigurationChanged": false,
+  "nativeCatalogTest": {
+    "passed": true,
+    "riceSearch": true,
+    "foodDetail": true,
+    "signedDatabaseHashUnchanged": true,
+    "readerRejectsWrites": true,
+    "verificationCopyCleaned": true
+  },
+  "validation": {
+    "flutterTests": 387,
+    "flutterAnalyzeIssues": 0,
+    "releasePythonTests": 10,
+    "nativeFocusedTests": 1,
+    "documentationAndDiagramsChecked": true,
+    "graphifyAstUpdated": true,
+    "changedSourceSecretScanFindings": 0
+  },
+  "limits": [
+    "Full native food harness still fails synthetic EAN image decoding; scanner not validated.",
+    "iOS not validated.",
+    "0.5.4 not published; public link still serves0.5.3.",
+    "No commit or push in this correction yet."
+  ],
+  "localEvidence": [
+    ".local/android-release/diagnosis-native-test-detail.log",
+    ".local/android-release/diagnosis-native-catalog-final.log",
+    ".local/android-release/diagnosis-full-flutter.log",
+    ".local/android-release/diagnosis-final-analyze.log",
+    ".local/android-release/build-0.5.4.log",
+    ".local/android-release/device-0.5.4-app.log"
+  ]
+}

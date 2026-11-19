@@ -2231,6 +2231,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'No se pudo abrir el acceso de Google en este dispositivo. Reinténtalo o explora sin cuenta.';
 
   @override
+  String get googleNotCompleted =>
+      'No se completó el inicio de sesión con Google. Puedes volver a intentarlo o explorar sin cuenta.';
+
+  @override
   String get exploreWithoutAccount => 'Conoce la app sin crear cuenta';
 
   @override

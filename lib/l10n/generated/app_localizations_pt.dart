@@ -2224,6 +2224,10 @@ class AppLocalizationsPt extends AppLocalizations {
       'Não foi possível abrir o login do Google neste aparelho. Tente novamente ou explore sem conta.';
 
   @override
+  String get googleNotCompleted =>
+      'O login com Google não foi concluído. Você pode tentar novamente ou explorar sem conta.';
+
+  @override
   String get exploreWithoutAccount => 'Conheça o app sem criar conta';
 
   @override
@@ -4518,6 +4522,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get googleUnavailable =>
       'Não foi possível abrir o login do Google neste aparelho. Tente novamente ou explore sem conta.';
+
+  @override
+  String get googleNotCompleted =>
+      'O login com Google não foi concluído. Você pode tentar novamente ou explorar sem conta.';
 
   @override
   String get exploreWithoutAccount => 'Conheça o app sem criar conta';
@@ -6815,6 +6823,10 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   @override
   String get googleUnavailable =>
       'Não foi possível abrir o acesso Google neste aparelho. Tenta novamente ou explora sem conta.';
+
+  @override
+  String get googleNotCompleted =>
+      'O início de sessão com o Google não foi concluído. Podes tentar novamente ou explorar sem conta.';
 
   @override
   String get exploreWithoutAccount => 'Conhece a app sem criar conta';

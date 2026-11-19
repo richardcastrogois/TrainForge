@@ -18,13 +18,19 @@ class CatalogPack {
   final String id;
   final String titleKey;
   final int megabytes;
-  const CatalogPack(this.id, this.titleKey, this.megabytes);
+  final bool bundled;
+  const CatalogPack(
+    this.id,
+    this.titleKey,
+    this.megabytes, {
+    this.bundled = false,
+  });
   String get file => 'trainforge-catalog-$id.zip';
 }
 
 // Only packs whose foods the server also knows can be offered: a recorded food
 // must exist in the API catalog to synchronize. The server holds Brazil only.
-const catalogPacks = [CatalogPack('br', 'packBrazil', 41)];
+const catalogPacks = [CatalogPack('br', 'packBrazil', 41, bundled: true)];
 
 class CatalogToolsPage extends StatefulWidget {
   final CatalogInstaller installer;
@@ -92,15 +98,25 @@ class _CatalogToolsPageState extends State<CatalogToolsPage> {
 
   Future<void> install({CatalogPack? pack}) async {
     if (busy) return;
-    if (pack != null && !await _confirm(pack)) return;
+    if (pack != null && !pack.bundled && !await _confirm(pack)) return;
     setState(() {
       busy = true;
       message = null;
       activePack = pack?.id;
-      progress = pack == null ? null : 0;
+      progress = pack == null || pack.bundled ? null : 0;
     });
     File? temporary;
     try {
+      if (pack?.bundled == true) {
+        // Brazil is already in the APK. Retry its signed local installation;
+        // regional download releases are not published yet.
+        await widget.installer.manifest();
+        if (mounted) {
+          setState(() => message = foodOfflineLabel(context, 'imported'));
+        }
+        await _readInstalled();
+        return;
+      }
       String? path;
       if (pack != null) {
         final directory = await getTemporaryDirectory();
@@ -201,9 +217,12 @@ class _CatalogToolsPageState extends State<CatalogToolsPage> {
       );
     }
     return IconButton(
-      tooltip: foodOfflineLabel(context, 'download'),
+      tooltip: foodOfflineLabel(
+        context,
+        pack.bundled ? 'prepareBundled' : 'download',
+      ),
       onPressed: busy ? null : () => install(pack: pack),
-      icon: const Icon(Icons.download),
+      icon: Icon(pack.bundled ? Icons.refresh : Icons.download),
     );
   }
 

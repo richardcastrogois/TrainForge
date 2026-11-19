@@ -82,6 +82,33 @@ void main() {
     );
   });
 
+  testWidgets('Google cancellation shows neutral feedback and supports retry', (
+    t,
+  ) async {
+    final repo = SessionFixture()
+      ..loginError = const GoogleSignInException(
+        code: GoogleSignInExceptionCode.canceled,
+        description: 'private-provider-detail',
+      );
+    final controller = AuthController(repo);
+    addTearDown(controller.dispose);
+    await t.pumpWidget(gate(controller));
+    await t.pumpAndSettle();
+    await t.tap(find.text('Continuar com o Google'));
+    await t.pumpAndSettle();
+    expect(
+      find.textContaining('O login com Google não foi concluído'),
+      findsOneWidget,
+    );
+    expect(find.textContaining('private-provider-detail'), findsNothing);
+    expect(controller.busy, isFalse);
+    await t.ensureVisible(find.text('Tentar novamente'));
+    await t.tap(find.text('Tentar novamente'));
+    await t.pumpAndSettle();
+    expect(repo.logins, 2);
+    expect(find.text('Continuar com o Google'), findsOneWidget);
+  });
+
   test('Google plugin failures map to actionable feedback', () async {
     Future<AuthFeedback?> feedbackFor(GoogleSignInExceptionCode code) async {
       final controller = AuthController(
@@ -93,7 +120,10 @@ void main() {
       return feedback;
     }
 
-    expect(await feedbackFor(GoogleSignInExceptionCode.canceled), isNull);
+    expect(
+      await feedbackFor(GoogleSignInExceptionCode.canceled),
+      AuthFeedback.googleNotCompleted,
+    );
     expect(
       await feedbackFor(GoogleSignInExceptionCode.providerConfigurationError),
       AuthFeedback.googleConfiguration,

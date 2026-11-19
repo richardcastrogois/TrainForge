@@ -97,24 +97,38 @@ class CatalogInstaller {
             _databaseHash(manifest)) {
       throw const FormatException('Catalog integrity check failed');
     }
-    final db = await openDatabase(
-      file.path,
-      readOnly: true,
-      singleInstance: false,
-    );
+    // Android's FTS4 integrity check needs a writable connection. Opening one
+    // also adds Android's locale metadata, changing the signed file. Validate a
+    // disposable copy, then keep the original byte-for-byte for activation.
+    final verification = await Directory(
+      paths.dirname(file.path),
+    ).createTemp('.verification-');
+    Database? db;
     try {
+      final copy = await file.copy(
+        paths.join(verification.path, 'catalog.sqlite'),
+      );
+      db = await openDatabase(copy.path, singleInstance: false);
       final check = await db.rawQuery('PRAGMA quick_check');
       final version = await db.query(
         'metadata',
         where: 'key=?',
         whereArgs: ['version'],
       );
-      if (check.single.values.single != 'ok' ||
-          version.single['value'] != manifest['version']) {
-        throw const FormatException('Catalog database is invalid');
+      if (check.single.values.single != 'ok') {
+        throw const FormatException('Catalog SQLite integrity check failed');
+      }
+      if (version.single['value'] != manifest['version']) {
+        throw const FormatException('Catalog database version does not match');
       }
     } finally {
-      await db.close();
+      await db?.close();
+      await verification.delete(recursive: true);
+    }
+    if (await file.length() != _databaseBytes(manifest) ||
+        (await hashes.sha256.bind(file.openRead()).first).toString() !=
+            _databaseHash(manifest)) {
+      throw const FormatException('Catalog changed during database validation');
     }
   }
 

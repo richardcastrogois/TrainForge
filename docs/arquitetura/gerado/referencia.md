@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `48cd869857474987`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e628c4df604f6fc9`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -30,7 +30,7 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | CatalogDetailPage | [lib/features/catalog/presentation/catalog_detail_page.dart:65](../../../lib/features/catalog/presentation/catalog_detail_page.dart) |
 | CatalogPage | [lib/features/catalog/presentation/catalog_page.dart:15](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | BarcodeScannerPage | [lib/features/food_reference/presentation/barcode_scanner_page.dart:7](../../../lib/features/food_reference/presentation/barcode_scanner_page.dart) |
-| CatalogToolsPage | [lib/features/food_reference/presentation/catalog_tools_page.dart:29](../../../lib/features/food_reference/presentation/catalog_tools_page.dart) |
+| CatalogToolsPage | [lib/features/food_reference/presentation/catalog_tools_page.dart:35](../../../lib/features/food_reference/presentation/catalog_tools_page.dart) |
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:10](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:17](../../../lib/features/food_reference/presentation/food_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |

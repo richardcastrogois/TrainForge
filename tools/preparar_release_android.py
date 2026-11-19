@@ -9,6 +9,8 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import struct
+import zipfile
 from urllib.parse import urlsplit
 
 from avaliar_android import ROOT, LOCAL, paths, source_fingerprint
@@ -21,6 +23,40 @@ PUBLIC_KEYS = {"APP_ENV", "API_BASE_URL", "GOOGLE_SERVER_CLIENT_ID", "GOOGLE_IOS
 def file_hash(path: Path) -> str:
     with path.open("rb") as stream:
         return hashlib.file_digest(stream, "sha256").hexdigest()
+
+
+def verify_plugin_registration(apk: Path) -> dict:
+    """Require the generated registrant as a defined DEX class, not a string reference."""
+    expected = b"Lio/flutter/plugins/GeneratedPluginRegistrant;"
+    with zipfile.ZipFile(apk) as archive:
+        for name in archive.namelist():
+            if not re.fullmatch(r"classes(?:[2-9]|[1-9][0-9]+)?[.]dex", name):
+                continue
+            data = archive.read(name)
+            if len(data) < 112 or not data.startswith(b"dex\n"):
+                raise ValueError("Invalid packaged Android DEX")
+            strings_count, strings_offset = struct.unpack_from("<II", data, 56)
+            types_count, types_offset = struct.unpack_from("<II", data, 64)
+            classes_count, classes_offset = struct.unpack_from("<II", data, 96)
+            for index in range(classes_count):
+                type_index = struct.unpack_from("<I", data, classes_offset + index * 32)[0]
+                if type_index >= types_count:
+                    raise ValueError("Invalid DEX class type")
+                string_index = struct.unpack_from("<I", data, types_offset + type_index * 4)[0]
+                if string_index >= strings_count:
+                    raise ValueError("Invalid DEX class descriptor")
+                offset = struct.unpack_from("<I", data, strings_offset + string_index * 4)[0]
+                # Skip the ULEB128 UTF-16 length; class descriptors are ASCII.
+                for _ in range(5):
+                    byte = data[offset]
+                    offset += 1
+                    if byte < 128:
+                        break
+                else:
+                    raise ValueError("Invalid DEX string length")
+                if data[offset:data.index(0, offset)] == expected:
+                    return {"generatedRegistrantDefined": True}
+    raise ValueError("APK is missing GeneratedPluginRegistrant; native plugins cannot initialize")
 
 
 def release_config(raw: dict) -> dict:
@@ -117,23 +153,30 @@ def prepare(config: dict, certificate: str, *, check_only=False, compare_apk: Pa
         return {"configurationValid": True, "catalog": catalog,
                 "built": False, "installed": False, "published": False}
     tooling = paths()
-    # `flutter test`/debug builds leave a registrant that lists dev-only plugins
-    # (integration_test), which do not exist in release. It is generated and
-    # gitignored; removing it makes the release build regenerate the right one.
-    (ROOT / "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java").unlink(missing_ok=True)
-    before = source_fingerprint()
+    # Generate release-only tooling before fingerprinting: --no-pub on a build
+    # skips regeneration, while debug registrants contain dev-only plugins.
+    registrant = ROOT / "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java"
+    registrant.unlink(missing_ok=True)
     directory = LOCAL / "android-release"
     directory.mkdir(parents=True, exist_ok=True)
     defines = directory / "public-defines.json"
     defines.write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
     env = os.environ.copy()
     env.setdefault("GRADLE_OPTS", '-Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxMetaspaceSize=768m" -Dorg.gradle.workers.max=2')
+    configured = subprocess.run([str(tooling["flutter"]), "build", "apk", "--release", "--config-only",
+                                 "--dart-define-from-file=" + str(defines)], cwd=ROOT, env=env)
+    if configured.returncode or not registrant.is_file():
+        raise RuntimeError("Flutter did not generate the release plugin registrant")
+    if "IntegrationTestPlugin" in registrant.read_text(encoding="utf-8"):
+        raise RuntimeError("Release registrant contains a dev-only plugin")
+    before = source_fingerprint()
     completed = subprocess.run([str(tooling["flutter"]), "build", "apk", "--release", "--no-pub",
                                 "--dart-define-from-file=" + str(defines)], cwd=ROOT, env=env)
     if completed.returncode or source_fingerprint() != before:
         raise RuntimeError("Release build failed or sources changed during build")
     apk = ROOT / "build/app/outputs/flutter-apk/app-release.apk"
     report = inspect_apk(apk, tooling, certificate)
+    plugin_registration = verify_plugin_registration(apk)
     app = report["manifest"]["application"]
     if app.get("debuggable") is True or app.get("usesCleartextTraffic") is True or app.get("allowBackup") is not False:
         raise ValueError("Compiled release policy failed")
@@ -145,6 +188,7 @@ def prepare(config: dict, certificate: str, *, check_only=False, compare_apk: Pa
         validate_upgrade(inspect_apk(compare_apk, tooling), report)
     report.update({"variant": "release", "sourceFingerprint": before,
                    "configurationSha256": file_hash(defines), "catalog": catalog, "catalogApk": catalog_apk,
+                   "pluginRegistration": plugin_registration,
                    "relativePath": apk.relative_to(ROOT).as_posix(), "installed": False,
                    "published": False, "realGoogleLoginValidated": False,
                    "publicApiReachabilityValidated": False})

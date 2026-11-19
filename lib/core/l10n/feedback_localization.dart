@@ -9,6 +9,7 @@ extension AuthFeedbackLocalization on AuthFeedback {
     AuthFeedback.googleConfiguration => context.l10n.googleConfiguration,
     AuthFeedback.authConfiguration => context.l10n.authConfiguration,
     AuthFeedback.googleUnavailable => context.l10n.googleUnavailable,
+    AuthFeedback.googleNotCompleted => context.l10n.googleNotCompleted,
     AuthFeedback.sessionExpired => context.l10n.sessionExpired,
     AuthFeedback.rateLimited => context.l10n.rateLimited,
     AuthFeedback.authUnavailable => context.l10n.authUnavailable,

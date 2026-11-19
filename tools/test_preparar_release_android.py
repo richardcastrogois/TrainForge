@@ -4,6 +4,8 @@ from pathlib import Path
 from types import SimpleNamespace
 import tempfile
 import unittest
+import struct
+import zipfile
 from unittest.mock import patch
 
 import preparar_release_android as release
@@ -11,6 +13,26 @@ from preparar_release_android import release_config, validate_upgrade
 
 
 class ReleasePreparationTests(unittest.TestCase):
+    def test_apk_requires_a_defined_registrant_not_only_its_descriptor(self):
+        descriptor = b"Lio/flutter/plugins/GeneratedPluginRegistrant;"
+        for defined in (False, True):
+            with self.subTest(defined=defined), tempfile.TemporaryDirectory() as directory:
+                data = bytearray(152)
+                data[:8] = b"dex\n035\0"
+                struct.pack_into("<II", data, 56, 1, 112)
+                struct.pack_into("<II", data, 64, 1, 116)
+                struct.pack_into("<II", data, 96, int(defined), 120)
+                struct.pack_into("<I", data, 112, 152)
+                data.extend(bytes([len(descriptor)]) + descriptor + b"\0")
+                apk = Path(directory) / "app.apk"
+                with zipfile.ZipFile(apk, "w") as archive:
+                    archive.writestr("classes2.dex", data)
+                if defined:
+                    self.assertTrue(release.verify_plugin_registration(apk)["generatedRegistrantDefined"])
+                else:
+                    with self.assertRaisesRegex(ValueError, "missing GeneratedPluginRegistrant"):
+                        release.verify_plugin_registration(apk)
+
     def config(self, url="https://api.trainforge.test"):
         return {"APP_ENV": "staging", "API_BASE_URL": url,
                 "GOOGLE_SERVER_CLIENT_ID": "public-test.apps.googleusercontent.com"}
@@ -58,9 +80,16 @@ class ReleasePreparationTests(unittest.TestCase):
         self.enterContext(patch.object(release, "source_fingerprint", return_value="fixed source fingerprint"))
         self.enterContext(patch.object(release, "paths", return_value={"flutter": root / "flutter"}))
         bundle = self.enterContext(patch("food_catalog.verify_bundle", return_value=catalog))
-        build = self.enterContext(patch.object(release.subprocess, "run", return_value=SimpleNamespace(returncode=0)))
+        def run(command, **kwargs):
+            if "--config-only" in command:
+                registrant = root / "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java"
+                registrant.parent.mkdir(parents=True, exist_ok=True)
+                registrant.write_text("synthetic release registrant\n", encoding="utf-8")
+            return SimpleNamespace(returncode=0)
+        build = self.enterContext(patch.object(release.subprocess, "run", side_effect=run))
         self.enterContext(patch.object(release, "inspect_apk", return_value={
             "manifest": {"application": {"debuggable": False, "usesCleartextTraffic": False, "allowBackup": False}}}))
+        self.enterContext(patch.object(release, "verify_plugin_registration", return_value={"generatedRegistrantDefined": True}))
         native = self.enterContext(patch.object(release, "verify_catalog_apk", return_value=packaged))
         return root, apk, bundle, build, native
 
@@ -69,7 +98,10 @@ class ReleasePreparationTests(unittest.TestCase):
         report = release.prepare(self.config(), "a" * 64)
         native.assert_called_once_with(apk, root / "assets/food_catalog", ci_fixture=False)
         bundle.assert_called_once_with(root / "assets/food_catalog")
-        self.assertEqual(build.call_count, 1)
+        self.assertEqual(build.call_count, 2)
+        self.assertIn("--config-only", build.call_args_list[0].args[0])
+        self.assertNotIn("--no-pub", build.call_args_list[0].args[0])
+        self.assertIn("--no-pub", build.call_args_list[1].args[0])
         self.assertTrue(report["catalogApk"]["signatureVerified"])
         receipt = json.loads((root / ".local/android-release/artifact.json").read_text(encoding="utf-8"))
         self.assertEqual(receipt["catalogApk"], report["catalogApk"])
@@ -79,6 +111,13 @@ class ReleasePreparationTests(unittest.TestCase):
         root, _, _, _, native = self.prepared_build()
         native.side_effect = ValueError("missing SQLCipher for one Flutter ABI")
         with self.assertRaisesRegex(ValueError, "SQLCipher"):
+            release.prepare(self.config(), "a" * 64)
+        self.assertFalse((root / ".local/android-release/artifact.json").exists())
+
+    def test_missing_plugins_never_receives_a_release_receipt(self):
+        root, _, _, _, _ = self.prepared_build()
+        release.verify_plugin_registration.side_effect = ValueError("missing GeneratedPluginRegistrant")
+        with self.assertRaisesRegex(ValueError, "missing GeneratedPluginRegistrant"):
             release.prepare(self.config(), "a" * 64)
         self.assertFalse((root / ".local/android-release/artifact.json").exists())
 

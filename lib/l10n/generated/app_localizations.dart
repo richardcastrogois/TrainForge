@@ -4014,6 +4014,12 @@ abstract class AppLocalizations {
   /// **'Google sign-in could not open on this device. Try again or explore without an account.'**
   String get googleUnavailable;
 
+  /// No description provided for @googleNotCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Google sign-in was not completed. You can try again or explore without an account.'**
+  String get googleNotCompleted;
+
   /// No description provided for @exploreWithoutAccount.
   ///
   /// In en, this message translates to:

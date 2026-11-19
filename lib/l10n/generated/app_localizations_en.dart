@@ -2214,6 +2214,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Google sign-in could not open on this device. Try again or explore without an account.';
 
   @override
+  String get googleNotCompleted =>
+      'Google sign-in was not completed. You can try again or explore without an account.';
+
+  @override
   String get exploreWithoutAccount => 'Explore the app without an account';
 
   @override
