@@ -20,8 +20,7 @@ def isolated_copy(destination):
     """Copiar somente fontes/entradas necessárias; nunca banco, rede, raw ou .env."""
     shutil.copytree(ROOT / "lib", destination / "lib", ignore=shutil.ignore_patterns("graphify-out"))
     shutil.copytree(ROOT / "tools", destination / "tools", ignore=shutil.ignore_patterns("__pycache__"))
-    paths = {"docs/execucao/v1/backlog.json", "docs/arquitetura/plano.json", "docs/arquitetura/achados.json",
-             "docs/arquitetura/referencias/backend-fastify.json"}
+    paths = {"docs/execucao/v1/backlog.json", "docs/arquitetura/plano.json", "docs/arquitetura/achados.json"}
     paths.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "services/api").rglob("*") if p.is_file() and (p.suffix in {".go", ".sql"} or p.name in {"go.mod", "go.sum"}))
     paths.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "contracts/generated").glob("*.json"))
     backlog = json.loads((ROOT / "docs/execucao/v1/backlog.json").read_text(encoding="utf-8"))
@@ -45,8 +44,7 @@ class DocumentationTests(unittest.TestCase):
 
     def test_portable_inventory_does_not_require_external_checkout(self):
         data = scan(ROOT)
-        self.assertEqual(data["coverage"]["backendMode"], "versioned-reference")
-        self.assertIn("/mobile-auth/google", [r["path"] for r in data["backend"]["routes"]])
+        self.assertNotIn("backend", data)
         self.assertIsNone(re.search(r"(?<![A-Za-z])[A-Za-z]:[/\\]", json.dumps(data)), "Inventário contém caminho de unidade local")
         for call in data["calls"]:
             self.assertFalse(Path(call["source"]["path"]).is_absolute())
@@ -68,8 +66,7 @@ class DocumentationTests(unittest.TestCase):
                                          'docs/arquitetura/gerado/referencia.md',
                                          'docs/execucao/v1/backlog.md'})
         reference = expected['docs/arquitetura/gerado/referencia.md']
-        self.assertIn('## Referência histórica do backend anterior', reference)
-        self.assertNotIn('## Referência atual: schema Prisma', reference)
+        self.assertNotIn('Referência histórica do backend anterior', reference)
         self.assertNotIn('Arquitetura proposta: ainda a implementar', reference)
 
     def test_new_screen_and_http_literal_update_without_phantom_navigation(self):
@@ -84,7 +81,7 @@ class DocumentationTests(unittest.TestCase):
             self.assertIn("FixturePage", [s["id"] for s in after["screens"]])
             self.assertFalse(any(e["to"] == "FixturePage" for e in after["navigation"]))
             call = next(c for c in after["calls"] if c["path"] == "/fixture")
-            self.assertEqual(call["legacyMatches"], [])
+            self.assertEqual(call["goMatches"], [])
 
     def test_method_path_normalization_does_not_merge_different_actions(self):
         self.assertEqual(normalized("/plans/$plan/days/${day}"), normalized("/plans/:id/days/{day}"))

@@ -51,9 +51,9 @@ Fontes: C:/dev/TrainForge/trainforge/docs/planejamento/README.md; C:/Users/richa
 
 Tempo: 1 minuto e 30 segundos.
 
-Percorra o diagrama do aplicativo para o servidor e o banco. A base Flutter separa features em data, domain e presentation; repositórios usam classes API e Dio. O servidor Fastify/TypeScript está no projeto bootcamp-treinos-api e usa Prisma/PostgreSQL. Google Sign-In e autenticação Bearer fazem parte do fluxo mobile. A documentação registra problemas pendentes de sessão, histórico e recorrência, portanto a arquitetura não implica produto validado em produção. A linha inferior apresenta hipóteses de evolução, não serviços já integrados. A geração de planos por IA ainda existe na base herdada, mas não é a direção aprovada do conteúdo futuro.
+Percorra o diagrama do aplicativo para o servidor e o banco. A base Flutter separa features em data, domain e presentation; repositórios usam classes API e Dio. O servidor Fastify/TypeScript estava no projeto bootcamp-treinos-api e usava PostgreSQL. Google Sign-In e autenticação Bearer fazem parte do fluxo mobile. A documentação registra problemas pendentes de sessão, histórico e recorrência, portanto a arquitetura não implica produto validado em produção. A linha inferior apresenta hipóteses de evolução, não serviços já integrados. A geração de planos por IA ainda existe na base herdada, mas não é a direção aprovada do conteúdo futuro.
 
-Fontes: C:/dev/TrainForge/trainforge/documentacao-tecnica.md; C:/dev/TrainForge/trainforge/docs/planejamento/arquitetura-e-contratos.md; C:/dev/bootcamp-treinos-api/prisma/schema.prisma
+Fontes: C:/dev/TrainForge/trainforge/documentacao-tecnica.md; C:/dev/TrainForge/trainforge/docs/planejamento/arquitetura-e-contratos.md
 
 ### 6. Entidades
 
@@ -61,7 +61,7 @@ Tempo: 1 minuto e 15 segundos.
 
 Explique que um usuário pode ter vários planos; cada plano reúne dias; cada dia tem exercícios e sessões. A sessão representa uma execução com início e conclusão. Os nomes técnicos no diagrama correspondem ao schema existente; os campos são uma seleção didática, não a lista completa. Session, Account e MobileRefreshToken são entidades de autenticação e não substituem WorkoutSession. Alimentação, fontes e execução multimodal aparecem na evolução conceitual; não afirmar que o banco já possui essas tabelas.
 
-Fontes: C:/dev/bootcamp-treinos-api/prisma/schema.prisma; C:/dev/TrainForge/trainforge/documentacao-tecnica.md; C:/dev/TrainForge/trainforge/docs/planejamento/arquitetura-e-contratos.md
+Fontes: C:/dev/TrainForge/trainforge/documentacao-tecnica.md; C:/dev/TrainForge/trainforge/docs/planejamento/arquitetura-e-contratos.md
 
 ### 7. Uso da IA
 

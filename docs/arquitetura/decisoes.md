@@ -16,7 +16,7 @@ A escolha não decorre de incapacidade de escalar Fastify nem certifica capacida
 
 ## Diagnóstico que motivou a mudança
 
-Em 21/10 foram lidos Flutter, backend externo Fastify/Prisma e mapas estruturais, sem apresentar inspeção estática como teste runtime. O [snapshot externo](referencias/backend-fastify.json) registra revisão, hashes, rotas/modelos e links da origem; o [recibo Graphify](graphify-2026-10-21.json) conserva a cobertura daquela data. As versões/fontes históricas podem ser recuperadas no Git; os fatos atuais estão nos guias consolidados.
+Em 21/10 foram lidos Flutter, backend externo Fastify e mapas estruturais, sem apresentar inspeção estática como teste runtime. O [recibo Graphify](graphify-2026-10-21.json) conserva a cobertura daquela data. As versões/fontes históricas podem ser recuperadas no Git; os fatos atuais estão nos guias consolidados.
 
 | Achado original | Encaminhamento e estado consolidado |
 |---|---|

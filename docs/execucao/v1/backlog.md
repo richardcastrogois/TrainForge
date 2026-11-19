@@ -319,7 +319,7 @@ Entradas: docs/execucao/v1/escopo.md; docs/arquitetura/decisoes.md; docs/conteud
 
 Critérios de aceite:
 
-- Banco isolado sobe do zero por migrations Go; Prisma não migra o mesmo schema simultaneamente
+- Banco isolado sobe do zero somente por migrations Go
 - Backup restaurado em outra base é conferido por contagens e referências
 - Banco legado não é presumido vazio: se migração de seus dados estiver no recorte, inventariar com acesso autorizado; na fundação isolada registrar o inventário como gate obrigatório de uma migração futura, sem inventar contagens
 

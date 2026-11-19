@@ -10,7 +10,6 @@ Os guias são arquivos locais e versionados. Abra [a arquitetura](README.md) no 
 | Intenção/achados | `plano.json`, `achados.json`, decisões e histórias | Entradas auditáveis do inventário; o gerador não conclui trabalho |
 | Mapas revisados | `diagramas/mapas.json` | 15 SVGs, `trainforge.drawio` com 15 páginas, README e index HTML |
 | Banco observado | `diagramas/schema-publico.json`, apenas metadados | `diagramas/banco.md` documenta colunas/restrições; testes conferem cobertura/FKs |
-| Backend anterior | `referencias/backend-fastify.json` | Snapshot histórico com revisão/hashes/links; não descreve o Go atual |
 | Estrutura Dart detalhada | `graphify-out/graph.json` | Consulta e HTML Graphify; escopo AST de `lib/` |
 
 ## Alterar e conferir

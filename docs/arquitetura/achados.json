@@ -38,7 +38,7 @@
     "id": "A04",
     "priority": "Alta",
     "title": "Migration final remove três índices parciais",
-    "evidence": "backend:prisma/migrations/20260321144259_partialunique/migration.sql",
+    "evidence": "backend-anterior:migrations/20260321144259_partialunique/migration.sql",
     "line": 1,
     "detail": "Rever invariantes e concorrência; não restaurar um refresh por usuário sem desenho multidevice.",
     "story": "V1-010",

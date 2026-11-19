@@ -47,54 +47,6 @@ def dart_calls(path, root):
     return result
 
 
-def backend_inventory(api):
-    """Captura explícita: apenas metadados, sem valores .env, logs ou banco."""
-    index = api / "src/index.ts"
-    if not index.exists() or not (api / "prisma/schema.prisma").exists():
-        raise ValueError("Backend Fastify/Prisma não encontrado no caminho fornecido")
-    registrations = {}
-    for match in re.finditer(r"app\.register\(\s*(\w+)\s*,\s*\{(.*?)\}\s*\)", read(index), re.S):
-        prefix = re.search(r'prefix:\s*[\'"]([^\'"]+)', match[2])
-        if prefix:
-            registrations[match[1]] = prefix[1]
-    routes, unresolved = [], []
-    for path in sorted((api / "src/routes").glob("*.ts")):
-        text = read(path)
-        exported = re.search(r"export\s+const\s+(\w+)", text)
-        prefix = registrations.get(exported[1] if exported else "")
-        starts = list(re.finditer(r"method:\s*['\"](GET|POST|PATCH|PUT|DELETE)['\"]\s*,\s*url:\s*['\"]([^'\"]+)['\"]", text))
-        for i, match in enumerate(starts):
-            loc = source(path, api, "backend-reference", line_at(text, match.start()))
-            if prefix is None:
-                unresolved.append({"source": loc, "reason": "prefixo não resolvido"})
-                continue
-            chunk = text[match.end():starts[i + 1].start() if i + 1 < len(starts) else len(text)]
-            body = re.search(r"\bbody:\s*([\w.]+)", chunk)
-            query = re.search(r"\bquerystring:\s*(\w+)", chunk)
-            response = re.search(r"\bresponse:\s*\{(.*?)\n\s*\},", chunk, re.S)
-            routes.append({"method": match[1], "path": prefix.rstrip("/") + (match[2] if match[2] != "/" else ""),
-                           "group": path.stem, "requestType": body[1] if body else None,
-                           "queryType": query[1] if query else None,
-                           "responses": dict(re.findall(r"\b(\d{3}):\s*([\w.]+)", response[1])) if response else {},
-                           "usecases": sorted(set(re.findall(r"new\s+([A-Z]\w+)\(", chunk))), "source": loc})
-    schema = api / "prisma/schema.prisma"
-    text = read(schema)
-    names = set(re.findall(r"^model\s+(\w+)", text, re.M))
-    models = []
-    for match in re.finditer(r"^model\s+(\w+)\s*\{(.*?)^\}", text, re.M | re.S):
-        fields = [{"name": f[1], "type": f[2] + (f[3] or ""), "relation": f[2] in names}
-                  for f in re.finditer(r"^\s*(\w+)\s+(\w+)(\[\]|\?)?([^\n]*)", match[2], re.M)]
-        models.append({"name": match[1], "fields": fields,
-                       "source": source(schema, api, "backend-reference", line_at(text, match.start()))})
-    files = sorted(p for p in (api / "src").rglob("*.ts") if "generated" not in p.parts) + [schema]
-    return {"routes": routes, "models": models, "unresolved": unresolved,
-            "files": {p.relative_to(api).as_posix(): digest(p) for p in files},
-            "tsFiles": len(files) - 1,
-            "limitations": ["Snapshot de código externo, sem validação runtime.",
-                            "Rotas de plugins, Swagger e health raiz não são extraídas.",
-                            "Schemas inline conservam o nome detectado, sem inventar seu conteúdo."]}
-
-
 def go_inventory(root):
     paths = sorted(p for p in (root / "services/api").rglob("*.go")
                    if not p.name.endswith("_test.go") and "vendor" not in p.parts and "generated" not in p.parts)
@@ -144,13 +96,10 @@ def go_inventory(root):
 
 
 def scan(root):
-    ref_path = root / "docs/arquitetura/referencias/backend-fastify.json"
-    backend = json.loads(read(ref_path))
     dart = sorted((root / "lib").rglob("*.dart"))
     calls = [c for path in dart for c in dart_calls(path, root)]
     go = go_inventory(root)
     for call in calls:
-        call["legacyMatches"] = [r for r in backend["routes"] if r["method"] == call["method"] and normalized(r["path"]) == normalized(call["path"])]
         call["goMatches"] = [r for r in go["registrations"] if r["method"] == call["method"] and normalized(r["path"]) == normalized(call["path"])]
     screens, navigation = [], []
     for path in dart:
@@ -185,18 +134,15 @@ def scan(root):
     inputs += [root / p for p in go["migrations"]]
     inputs += [p for p in (root / "services/api").glob("go.*") if p.is_file()]
     inputs += sorted((root / "contracts/generated").glob("*.json"))
-    inputs += [ref_path, root / "docs/arquitetura/plano.json", root / "docs/execucao/v1/backlog.json", root / "docs/arquitetura/achados.json"]
+    inputs += [root / "docs/arquitetura/plano.json", root / "docs/execucao/v1/backlog.json", root / "docs/arquitetura/achados.json"]
     fingerprints = {p.relative_to(root).as_posix(): digest(p) for p in sorted(inputs, key=lambda p: p.relative_to(root).as_posix())}
     revision = hashlib.sha256(json.dumps(fingerprints, sort_keys=True).encode()).hexdigest()
     return {"schemaVersion": 2, "inputRevision": revision, "inputs": fingerprints,
-            "coverage": {"dartFiles": len(dart), "backendMode": "versioned-reference", "backendCommit": backend["commit"],
-                         "backendTsFiles": backend["tsFiles"], "legacyRoutes": len(backend["routes"]),
-                         "httpCalls": len(calls), "legacyMatches": sum(bool(c["legacyMatches"]) for c in calls),
-                         "goFiles": len(go["files"]), "goRegistrations": len(go["registrations"]), "modelsInReference": len(backend["models"])},
+            "coverage": {"dartFiles": len(dart), "httpCalls": len(calls),
+                         "goFiles": len(go["files"]), "goRegistrations": len(go["registrations"])},
             "groups": [{"id": name, "label": label, "files": [source(p, root) for p in paths]} for name, label, paths in groups],
             "imports": [{"from": a, "to": b, "sources": refs} for (a, b), refs in sorted(imports.items())],
-            "screens": screens, "navigation": navigation, "calls": calls, "backend": backend, "go": go,
+            "screens": screens, "navigation": navigation, "calls": calls, "go": go,
             "limitations": ["Somente análise estática dos padrões suportados; não executa app/API/DB.",
-                            "Backend externo é retrato explícito versionado, não código recebido no clone.",
                             "Comentários Go, rotas e especificação são evidências diferentes; não confundem com runtime.",
                             "Intenção arquitetural, direitos, revisão e conclusão de tarefa não são inferidos."]}

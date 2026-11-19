@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `fc6f19bd64ecd19d`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a794d850f51539dc`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -407,9 +407,5 @@ A declaração não comprova aplicação no banco. ALTERs, índices, funções e
 | food_catalog_releases | [services/api/migrations/00016_food_catalog_releases.sql:4](../../../services/api/migrations/00016_food_catalog_releases.sql) |
 | food_catalog_import_progress | [services/api/migrations/00016_food_catalog_releases.sql:14](../../../services/api/migrations/00016_food_catalog_releases.sql) |
 | food_catalog_annotations | [services/api/migrations/00016_food_catalog_releases.sql:22](../../../services/api/migrations/00016_food_catalog_releases.sql) |
-
-## Referência histórica do backend anterior
-
-O snapshot Fastify/Prisma de 2026-10-21, commit `523f6d9609bef532958f14227b2b2e105d5f3bcf`, conserva 29 rotas e 9 modelos para rastreabilidade da migração. Ele não descreve o backend atual. Metadados, hashes e links das fontes estão no [JSON histórico](../referencias/backend-fastify.json); a interpretação está nas [decisões](../decisoes.md).
 
 O estado das histórias permanece no backlog; o gerador não encerra achados ou libera conteúdo. [Como manter esta referência](../manutencao.md).

@@ -16,7 +16,7 @@ Prioridade desta rodada: alimentação offline ampla, autorizada, em implementa�
 
 SDK mínimo Go **1.27.4**, conferido em17/11 após o achado GO-2026-6859 no CI. Helpers preferem `.tools/go-1.27.4/`; o SDK anterior foi preservado. JSON de testes Go usa stdout separado de stderr; não ignorar linhas inválidas para esconder falhas de evidência.
 
-Flutter Android/iOS; API Go0.10.0/38 operações; catálogo 0.2.0; núcleo schema 13/30 tabelas, catálogo schema 2/4 tabelas. pgx/SQL  e Goose, sem ORM atual. Catálogo é a primeira extração delimitada; não reescrever os demais domínios sem decidir ownership/transações/operação. Prisma/Fastify são referências históricas.
+Flutter Android/iOS; API Go0.10.0/38 operações; catálogo 0.2.0; núcleo schema 13/30 tabelas, catálogo schema 2/4 tabelas. pgx/SQL  e Goose, sem ORM atual. Catálogo é a primeira extração delimitada; não reescrever os demais domínios sem decidir ownership/transações/operação. O backend Fastify anterior não faz mais parte do projeto.
 
 Execução017/023 tem motor, eventos/idempotência SQL, quatro rotas privadas e uma superfície na aba Atividade. Continua doing, com015/016 bloqueadas por conteúdo:73 metadados/439 ativos excluídos/zero programa-instrução-dose-mídia liberados para prática. Não inventar rotina, adequação clínica, tradução editorial ou histórico para fechar critérios. Intenção incerta no Flutter é somente em memória; não anunciar offline durável.
 

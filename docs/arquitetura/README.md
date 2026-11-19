@@ -6,7 +6,7 @@ O TrainForge tem um aplicativo **Flutter para Android/iOS**, uma **API Go** e um
 
 A busca alimentar e o barcode usam um SQLite público assinado no celular. Consumos/alimentos particulares ficam em SQLCipher por conta e uma fila durável; a sincronização usa a API Go própria após autenticação. Atualizações do catálogo e exportações de licença são opcionais e usam a infraestrutura própria.
 
-Nas demais jornadas, o celular envia HTTP para a API; a API consulta o banco privado ou encaminha cinco leituras ao catálogo. O celular não acessa PostgreSQL diretamente. Regras, revisões, titularidade e idempotência ficam no servidor. Go usa pgx/SQL e Goose, sem ORM; Prisma pertence ao backend histórico.
+Nas demais jornadas, o celular envia HTTP para a API; a API consulta o banco privado ou encaminha cinco leituras ao catálogo. O celular não acessa PostgreSQL diretamente. Regras, revisões, titularidade e idempotência ficam no servidor. Go usa pgx/SQL e Goose, sem ORM.
 
 | Quero entender | Leitura |
 |---|---|

@@ -30,13 +30,12 @@ O [fluxo de uma ação](fluxo-de-uma-acao.md) mostra quem chama quem usando trê
 | Graphify | Navegar nas relações do corpus de código analisado; não comprova execução ou direitos de conteúdo |
 | draw.io e SVG | Editar e ler os mapas visuais; não fazem parte do APK |
 | Figma | Projetar e revisar telas/estados; protótipo não autentica nem grava dados |
-| Prisma | Referência do backend antigo Node/TypeScript; não é dependência do Go atual |
 
 ## Banco e persistência
 
 O backend atual usa **pgx/v5 e pgxpool com SQL parametrizado**. Valores entram em parâmetros como `$1` e `$2`; não por concatenação de dados da pessoa. Goose controla a sequência de migrations. Um exemplo para estudar é [`auth/postgres.go`](../../services/api/internal/auth/postgres.go), que agrupa identidade e sessão em transação. Outro é [`trainingconfig/postgres.go`](../../services/api/internal/trainingconfig/postgres.go), que preserva revisões da configuração.
 
-Não há GORM, Ent, Prisma ou sqlc no runtime Go atual. Prisma pertencia à referência Fastify/TypeScript. Não executar migrations Prisma e Goose sobre a mesma base por conveniência: um mesmo schema precisa de um dono claro.
+Não há GORM, Ent ou sqlc no runtime Go atual. Goose é o único dono das migrations: um mesmo schema precisa de um dono claro.
 
 A comparação abaixo conserva o estudo registrado em 29/10/2026; nenhuma alternativa foi instalada ou escolhida para substituir pgx nesta revisão documental.
 
@@ -46,9 +45,8 @@ A comparação abaixo conserva o estudo registrado em 29/10/2026; nenhuma altern
 | sqlc + pgx | Gerar métodos e tipos Go a partir de SQL | Não é ORM; precisa de prova com as queries/funções reais |
 | GORM | ORM Go com convenções de CRUD e associações | Novo mapeamento; `AutoMigrate` não deve alterar o schema crítico existente por inferência |
 | Ent | Schema Go e código tipado gerado | Introduz outro modelo/geração e exige desenho de migrations/coexistência |
-| Prisma/TypeScript | Familiaridade do ecossistema TypeScript | Não substitui pgx diretamente; adicionar Node só para isso aumenta a operação |
 
-Referências já usadas no estudo: [sqlc/pgx](https://docs.sqlc.dev/en/latest/guides/using-go-and-pgx.html), [GORM](https://gorm.io/docs/), [Ent](https://entgo.io/docs/getting-started/) e [Prisma](https://www.prisma.io/docs/orm). O registro de 29/10 marcou o projeto comunitário [prisma-client-go](https://github.com/steebchen/prisma-client-go) como arquivado em 28/07/2025; é uma constatação daquele levantamento, não uma nova pesquisa de fornecedores.
+Referências já usadas no estudo: [sqlc/pgx](https://docs.sqlc.dev/en/latest/guides/using-go-and-pgx.html), [GORM](https://gorm.io/docs/) e [Ent](https://entgo.io/docs/getting-started/).
 
 Para decidir uma troca, primeiro identifique uma dificuldade concreta em uma operação real. ORM ou ausência de ORM não garantem performance e segurança: continuam necessários parâmetros, titularidade, privilégios, transações, índices, testes e medição.
 

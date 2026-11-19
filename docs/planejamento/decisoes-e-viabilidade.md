@@ -44,7 +44,7 @@ Os critérios de experiência continuam úteis: preservar filtro/scroll e rascun
 <a id="arquitetura"></a>
 ## Arquitetura e persistência
 
-Em 17–24/09, a proposta era avaliar o Flutter e o Fastify/Prisma existentes antes de reescrever, separando responsabilidades e contratos. Em outubro a implementação adotou Go/pgx/SQL/Goose, e em 29/10 foi ensaiada a primeira extração do catálogo. Essa evolução não aprova automaticamente a extração de todos os domínios. A [arquitetura atual](../arquitetura/README.md) e as decisões documentadas governam o código vigente.
+Em 17–24/09, a proposta era avaliar o Flutter e o Fastify existentes antes de reescrever, separando responsabilidades e contratos. Em outubro a implementação adotou Go/pgx/SQL/Goose, e em 29/10 foi ensaiada a primeira extração do catálogo. Essa evolução não aprova automaticamente a extração de todos os domínios. A [arquitetura atual](../arquitetura/README.md) e as decisões documentadas governam o código vigente.
 
 Continuam relevantes os limites de desenho registrados no planejamento:
 

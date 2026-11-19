@@ -16,7 +16,7 @@ Evidências: [manifesto](verificacao-manifesto.json), [preparação](verificacao
 <a id="fundacao"></a>
 ## Fundação e separação do catálogo
 
-O backend foi estruturado em Go, `net/http`, pgx/v5 com SQL parametrizado e Goose. PostgreSQL local usa cluster e papéis próprios; não se confunde com o serviço instalado globalmente. Os contratos HTTP são derivados dos comentários e DTOs Go. Não há ORM no backend atual; Fastify/Prisma é referência histórica.
+O backend foi estruturado em Go, `net/http`, pgx/v5 com SQL parametrizado e Goose. PostgreSQL local usa cluster e papéis próprios; não se confunde com o serviço instalado globalmente. Os contratos HTTP são derivados dos comentários e DTOs Go. Não há ORM no backend atual.
 
 O catálogo foi a primeira extração delimitada: banco, papéis e cinco rotas de leitura próprios, com publicação, retirada, projeção, falha/recuperação e rollback ensaiados. Isso não significa que todos os domínios viraram microserviços. Alimentação e execução continuam no núcleo, mantendo suas transações locais.
 

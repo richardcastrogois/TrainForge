@@ -9,18 +9,16 @@ import hashlib
 import json
 import os
 import re
-import subprocess
 from pathlib import Path
-from urllib.parse import quote, urlparse
+from urllib.parse import quote
 
 from documentacao_backlog import backlog_markdown, validate
-from documentacao_inventario import backend_inventory, digest, read, scan
+from documentacao_inventario import digest, read, scan
 
 ROOT = Path(__file__).resolve().parents[1]
 GENERATED = "docs/arquitetura/gerado/referencia.md"
 BACKLOG_PATH = "docs/execucao/v1/backlog.json"
 PLAN_PATH = "docs/arquitetura/plano.json"
-REFERENCE = "docs/arquitetura/referencias/backend-fastify.json"
 
 
 def cell(text):
@@ -32,13 +30,10 @@ def local_link(target, document, text=None):
     return f"[{text or target}]({quote(href, safe='/.-_')})"
 
 
-def evidence(ref, document, backend):
+def evidence(ref, document):
     title = f"{ref['path']}:{ref.get('line', 1)}"
     if ref["repository"] == "trainforge":
         return local_link(ref["path"], document, title)
-    if backend.get("repository") and not backend.get("dirty"):
-        url = f"{backend['repository']}/blob/{backend['commit']}/{quote(ref['path'], safe='/')}#L{ref.get('line', 1)}"
-        return f"[{title}]({url})"
     return f"`{title}` (referência externa)"
 
 
@@ -62,7 +57,7 @@ def outputs(root):
     for path in sorted(list((root / "tools").glob("*.py")) + list((root / "tools").glob("*.mjs"))):
         data["inputs"][path.relative_to(root).as_posix()] = digest(path)
     data["inputRevision"] = hashlib.sha256(json.dumps(data["inputs"], sort_keys=True).encode()).hexdigest()
-    backend, coverage, doc = data["backend"], data["coverage"], GENERATED
+    coverage, doc = data["coverage"], GENERATED
     text = header("Referência técnica extraída do código", data["inputRevision"])
     text += "[Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)\n\n"
     text += "Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não executa o aplicativo nem comprova navegação, autorização, migrations aplicadas ou aceite funcional. Os guias manuais explicam o sistema e as decisões; esta página concentra os detalhes extraídos.\n\n"
@@ -74,14 +69,14 @@ def outputs(root):
         ["Tabelas do núcleo declaradas em migrations", len(data["go"]["tables"])],
     ])
     text += "\n## Flutter: telas e referências\n\nUma referência de construtor não demonstra clique ou condição de navegação.\n\n"
-    text += table(["Tela/widget", "Fonte"], [[s["id"], evidence(s["source"], doc, backend)] for s in data["screens"]])
+    text += table(["Tela/widget", "Fonte"], [[s["id"], evidence(s["source"], doc)] for s in data["screens"]])
     text += "\n" + table(["Origem", "Widget referenciado", "Fonte"], [
-        [e["from"], e["to"], evidence(e["source"], doc, backend)] for e in data["navigation"]])
+        [e["from"], e["to"], evidence(e["source"], doc)] for e in data["navigation"]])
     text += "\n## Flutter: chamadas e registros Go\n\nMétodo e caminho compatíveis não garantem DTO, resposta ou autenticação. Expressões dinâmicas podem ficar fora da extração.\n\n"
     text += table(["Chamada Flutter", "Chaves literais", "Registro Go compatível", "Fonte Flutter"], [
         [f"`{c['method']} {c['path']}`", ", ".join(c["keys"]) or "não detectadas",
-         "; ".join(evidence(r["source"], doc, backend) for r in c["goMatches"]) or "não resolvido estaticamente",
-         evidence(c["source"], doc, backend)] for c in data["calls"]])
+         "; ".join(evidence(r["source"], doc) for r in c["goMatches"]) or "não resolvido estaticamente",
+         evidence(c["source"], doc)] for c in data["calls"]])
     text += "\n## Go: pacotes e imports\n\nImports indicam dependência de código; não são chamadas HTTP nem traces.\n\n"
     text += table(["Pacote", "Importa internamente"], [
         [p, ", ".join(b for a, b in data["go"]["imports"] if a == p) or "nenhum import interno detectado"]
@@ -89,18 +84,17 @@ def outputs(root):
     text += "\n## Go: anotações e registros HTTP\n\nAnotação, registro de rota e operação Swagger são evidências diferentes. Testes de handler e integração continuam necessários.\n\n"
     text += table(["Anotação @Router", "Parâmetros", "Respostas", "Registro compatível", "Fonte"], [
         [f"`{r['method']} {r['path']}`", "; ".join(r["params"]), "; ".join(" ".join(v) for v in r["responses"]),
-         "sim" if r["registrationDetected"] else "não detectado", evidence(r["source"], doc, backend)] for r in data["go"]["annotations"]])
+         "sim" if r["registrationDetected"] else "não detectado", evidence(r["source"], doc)] for r in data["go"]["annotations"]])
     text += "\n" + table(["Registro HTTP", "Fonte"], [
-        [f"`{r['method']} {r['path']}`", evidence(r["source"], doc, backend)] for r in data["go"]["registrations"]])
+        [f"`{r['method']} {r['path']}`", evidence(r["source"], doc)] for r in data["go"]["registrations"]])
     text += "\n## Swagger: parâmetros e respostas\n\n"
     text += table(["Operação", "operationId", "Parâmetros/body", "Status e schemas", "Fonte"], [
         [f"`{r['method']} {r['path']}`", r["operationId"], json.dumps(r["parameters"], ensure_ascii=False),
-         json.dumps(r["responses"], ensure_ascii=False), evidence(r["source"], doc, backend)]
+         json.dumps(r["responses"], ensure_ascii=False), evidence(r["source"], doc)]
         for r in data["go"]["specificationOperations"]])
     text += "\n## SQL: criação das tabelas do núcleo\n\nA declaração não comprova aplicação no banco. ALTERs, índices, funções e grants permanecem nas migrations; o snapshot público de schema está na referência de banco.\n\n"
-    text += table(["Tabela", "Migration fonte"], [[t["name"], evidence(t["source"], doc, backend)] for t in data["go"]["tables"]])
-    text += "\n## Referência histórica do backend anterior\n\n"
-    text += f"O snapshot Fastify/Prisma de {backend['capturedOn']}, commit `{backend['commit']}`, conserva {coverage['legacyRoutes']} rotas e {coverage['modelsInReference']} modelos para rastreabilidade da migração. Ele não descreve o backend atual. Metadados, hashes e links das fontes estão no [JSON histórico](../referencias/backend-fastify.json); a interpretação está nas [decisões](../decisoes.md).\n\n"
+    text += table(["Tabela", "Migration fonte"], [[t["name"], evidence(t["source"], doc)] for t in data["go"]["tables"]])
+    text += "\n"
     text += "O estado das histórias permanece no backlog; o gerador não encerra achados ou libera conteúdo. [Como manter esta referência](../manutencao.md).\n"
     result = {"docs/arquitetura/inventario-atual.json": json.dumps(data, ensure_ascii=False, indent=2) + "\n",
               "docs/execucao/v1/backlog.md": backlog_markdown(backlog), GENERATED: text}
@@ -152,31 +146,11 @@ def check_links(root, documents):
     return failures
 
 
-def capture(root, api):
-    api = api.resolve()
-    base = ["git", "-c", "safe.directory=" + api.as_posix(), "-C", str(api)]
-    if subprocess.check_output(base + ["status", "--porcelain"]):
-        raise ValueError("Backend com alterações locais: revisar e registrar antes de capturar")
-    commit = subprocess.check_output(base + ["rev-parse", "HEAD"], text=True).strip()
-    origin = subprocess.check_output(base + ["config", "--get", "remote.origin.url"], text=True).strip()
-    origin = origin.replace("git@github.com:", "https://github.com/")
-    parsed = urlparse(origin)
-    repository = "https://github.com" + parsed.path.removesuffix(".git") if parsed.hostname == "github.com" else None
-    from datetime import datetime
-    snapshot = backend_inventory(api)
-    snapshot.update({"repository": repository, "commit": commit, "capturedOn": datetime.now().astimezone().date().isoformat(),
-                     "dirty": False, "kind": "versioned-external-source-reference"})
-    (root / REFERENCE).write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write", action="store_true", help="regenerar arquivos derivados")
     parser.add_argument("--check", action="store_true", help="falhar se derivados estiverem desatualizados")
-    parser.add_argument("--capture-backend", type=Path, help="atualizar explicitamente a referência externa")
     args = parser.parse_args()
-    if args.capture_backend:
-        capture(ROOT, args.capture_backend)
     expected, data = outputs(ROOT)
     if args.write:
         for relative, content in expected.items():
