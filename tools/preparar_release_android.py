@@ -117,6 +117,10 @@ def prepare(config: dict, certificate: str, *, check_only=False, compare_apk: Pa
         return {"configurationValid": True, "catalog": catalog,
                 "built": False, "installed": False, "published": False}
     tooling = paths()
+    # `flutter test`/debug builds leave a registrant that lists dev-only plugins
+    # (integration_test), which do not exist in release. It is generated and
+    # gitignored; removing it makes the release build regenerate the right one.
+    (ROOT / "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java").unlink(missing_ok=True)
     before = source_fingerprint()
     directory = LOCAL / "android-release"
     directory.mkdir(parents=True, exist_ok=True)

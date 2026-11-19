@@ -16334,126 +16334,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_food_reference_presentation_catalog_tools_page",
-      "label": "catalog_tools_page.dart",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_catalogpack",
-      "label": "CatalogPack",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage",
-      "label": "CatalogToolsPage",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate",
-      "label": "_CatalogToolsPageState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_id",
-      "label": "id",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_titlekey",
-      "label": "titleKey",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_megabytes",
-      "label": "megabytes",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_file",
-      "label": "file",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_catalogpacks",
-      "label": "catalogPacks",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_installer",
-      "label": "installer",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_busy",
-      "label": "busy",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_message",
-      "label": "message",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_install",
-      "label": "install",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_food_reference_presentation_catalog_tools_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "features_nutrition_data_offline_nutrition_repository",
       "label": "offline_nutrition_repository.dart",
       "file_type": "code",
@@ -17282,38 +17162,6 @@
       "label": "exact_nutrition.dart",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_food_offline_labels",
-      "label": "food_offline_labels.dart",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_food_offline_labels_language",
-      "label": "language",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_food_offline_labels_labels",
-      "label": "_labels",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_food_offline_labels_foodofflinelabel",
-      "label": "foodOfflineLabel",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -39828,6 +39676,246 @@
       "source_file": "shared/widgets/startup_page.dart",
       "source_location": null,
       "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page",
+      "label": "catalog_tools_page.dart",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_catalogpack",
+      "label": "CatalogPack",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage",
+      "label": "CatalogToolsPage",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate",
+      "label": "_CatalogToolsPageState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_titlekey",
+      "label": "titleKey",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_megabytes",
+      "label": "megabytes",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_file",
+      "label": "file",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_catalogpacks",
+      "label": "catalogPacks",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_installer",
+      "label": "installer",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_downloader",
+      "label": "downloader",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_message",
+      "label": "message",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_activepack",
+      "label": "activePack",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_installedpack",
+      "label": "installedPack",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_progress",
+      "label": "progress",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "double",
+      "label": "double?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_cancel",
+      "label": "cancel",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "canceltoken",
+      "label": "CancelToken?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_readinstalled",
+      "label": "_readInstalled",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_confirm",
+      "label": "_confirm",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_install",
+      "label": "install",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_packaction",
+      "label": "_packAction",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_food_reference_presentation_catalog_tools_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_offline_labels",
+      "label": "food_offline_labels.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_offline_labels_language",
+      "label": "language",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_offline_labels_labels",
+      "label": "_labels",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_offline_labels_foodofflinelabel",
+      "label": "foodOfflineLabel",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "_origin": "ast"
     }
   ],
   "edges": [
@@ -39889,6 +39977,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_food_reference_data_food_repository",
+      "target": "dio"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
       "target": "dio"
     },
     {
@@ -70821,171 +70921,6 @@
       "target": "cataloginstaller"
     },
     {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_busy"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_catalogpack"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_catalogpacks"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_createstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_file"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_id"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_install"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_installer"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_megabytes"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_message"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "features_food_reference_presentation_catalog_tools_page_titlekey"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate",
-      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage"
-    },
-    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -72155,39 +72090,6 @@
       "_origin": "ast",
       "source": "features_nutrition_domain_portion_quantity",
       "target": "features_nutrition_domain_portion_quantity_validsourcequantity"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_food_offline_labels",
-      "target": "features_nutrition_presentation_food_offline_labels_foodofflinelabel"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_food_offline_labels",
-      "target": "features_nutrition_presentation_food_offline_labels_labels"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_food_offline_labels",
-      "target": "features_nutrition_presentation_food_offline_labels_language"
     },
     {
       "relation": "defines",
@@ -103178,6 +103080,327 @@
       "_origin": "ast",
       "source": "shared_widgets_startup_page",
       "target": "shared_widgets_startup_page_startuppage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "canceltoken"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "double"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_activepack"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_busy"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_cancel"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_catalogpack"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_catalogpacks"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_confirm"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_downloader"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_file"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_id"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_install"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_installedpack"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_installer"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_megabytes"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_message"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_packaction"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_progress"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_readinstalled"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "features_food_reference_presentation_catalog_tools_page_titlekey"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/food_reference/presentation/catalog_tools_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_food_reference_presentation_catalog_tools_page_catalogtoolspagestate",
+      "target": "features_food_reference_presentation_catalog_tools_page_catalogtoolspage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_offline_labels",
+      "target": "features_nutrition_presentation_food_offline_labels_foodofflinelabel"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_offline_labels",
+      "target": "features_nutrition_presentation_food_offline_labels_labels"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_offline_labels.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_offline_labels",
+      "target": "features_nutrition_presentation_food_offline_labels_language"
     }
   ],
   "hyperedges": [],

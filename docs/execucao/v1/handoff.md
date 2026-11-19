@@ -9,8 +9,8 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 | # | Pendência | Estado |
 |---|---|---|
 | 1 | APK release | **Concluída**: 0.5.0+30 assinado e verificado (abaixo) |
-| 2 | Importar pacote Brasil + Portugal no Neon | Pendente (aguarda ok do autor) |
-| 3 | Publicar pacotes no GitHub Releases (`catalog-packs-v1`) | Pendente (upload pelo autor no navegador) |
+| 2 | Importar pacote Brasil + Portugal no Neon | **Cancelada**: banco fica só com o Brasil ([melhoria](../../planejamento/melhoria-pacotes-regionais.md)) |
+| 3 | Publicar pacotes no GitHub Releases | Adiada para a melhoria dos pacotes regionais |
 | 4 | Commitar tela de pacotes + manifest do pacote Brasil | Pendente |
 | 5 | Google: `TF_GOOGLE_SERVER_CLIENT_ID` na Vercel e teste de login | Pendente |
 | 6 | Licença proprietária + Termos/Privacidade | Pendente; ressalvas: repositório público, dados de terceiros (ODbL/CC-BY-SA) e Termos/Privacidade |
@@ -28,15 +28,15 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 | `br-pt` | 78.262 | 52 MB | 129 MB | Download opcional (GitHub Releases) |
 | completo | 6.702.350 | 3,2 GB | 8,8 GB | Só local (`.local/food-catalog/full-assets`) |
 
-ZIPs prontos para upload em `build/catalog-packs/` (gitignored). O app baixa de `AppConfig.catalogPacksUrl` (padrão `…/releases/download/catalog-packs-v1/`) e importa com a verificação de assinatura já existente; o repositório precisa continuar público para esse download.
+Hoje o app oferece só o pacote Brasil (aparece como **Instalado**, com aviso de tamanho e progresso no botão). O `br-pt` não é oferecido: substituiria o catálogo e alimentos portugueses não sincronizariam. Próxima melhoria, decidida pelo autor: [6 pacotes regionais que se somam](../../planejamento/melhoria-pacotes-regionais.md), publicados no GitHub Releases, com o banco só com o Brasil.
 
 ## APK release (pendência 1, concluída)
 
-`build/app/outputs/flutter-apk/app-release.apk`: **0.5.0+30**, 135.738.207 bytes (129,5 MB, 3 ABIs), SHA `bf00d761cb2a…`, certificado de release `BF:A9:1D…` (o mesmo registrado no Google), `allowBackup=false`, sem debuggable/cleartext, catálogo Brasil verificado dentro do APK. Recibo: `.local/android-release/artifact.json`. Não instalado nem publicado.
+`build/app/outputs/flutter-apk/app-release.apk`: **0.5.0+30**, 135.738.243 bytes (129,5 MB, 3 ABIs), SHA `7f73e507ace7…` (com a tela de pacotes final), certificado de release `BF:A9:1D…` (o mesmo registrado no Google), `allowBackup=false`, sem debuggable/cleartext, catálogo Brasil verificado dentro do APK. Recibo: `.local/android-release/artifact.json`. Não instalado nem publicado.
 
 - JDK: **Temurin 21.0.13 LTS** (Gradle 8.14 não roda em Java 25). Exportar `JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot"` em shells abertos antes da instalação.
-- Correções: `GeneratedPluginRegistrant.java` (gerado, ignorado) estava com o plugin de teste do build debug; movido para `.local/android-release/`, e o Flutter regenerou a versão release. `tools/preparar_release_android.py` resolve os recursos XML encurtados no release (`res/xml/backup_rules.xml` → `res/Qq.xml`) pela tabela do `aapt2`.
-- Validação: `flutter analyze` 0 problemas e **372 testes Flutter**; `go test ./...` completo; gitleaks sem achados nos commits.
+- Correções: `GeneratedPluginRegistrant.java` (gerado, ignorado) estava com o plugin de teste do build debug; agora o próprio `preparar_release_android.py` o apaga antes de compilar, e o Flutter gera a versão release. `tools/preparar_release_android.py` resolve os recursos XML encurtados no release (`res/xml/backup_rules.xml` → `res/Qq.xml`) pela tabela do `aapt2`.
+- Validação: `flutter analyze` 0 problemas e **374 testes Flutter** (inclui `test/catalog_tools_page_test.dart`); `go test ./...` completo; gitleaks sem achados nos commits.
 - Comando: `python tools/preparar_release_android.py --config .local/android-release/release-config.json --certificate-sha256 BFA91D8792CE53124A777B15BF4650C40AB72592366362B6A5581F211C208878`.
 
 ## Preservação e limites
