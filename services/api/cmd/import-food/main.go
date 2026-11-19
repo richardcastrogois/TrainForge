@@ -34,7 +34,7 @@ func run() error {
 	}
 	dsn := os.Getenv("TF_IMPORT_DATABASE_URL")
 	cfg, err := pgx.ParseConfig(dsn)
-	if dsn == "" || err != nil || cfg.Host != "127.0.0.1" || cfg.Port != 15432 || cfg.Database != "trainforge_v1_dev" {
+	if dsn == "" || err != nil || (!postgres.HostedTarget(cfg, os.Getenv) && (cfg.Host != "127.0.0.1" || cfg.Port != 15432 || cfg.Database != "trainforge_v1_dev")) {
 		return errors.New("food import restricted to owned isolated local development database")
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), 120*time.Second)

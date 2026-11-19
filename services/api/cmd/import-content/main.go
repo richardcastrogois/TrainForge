@@ -33,7 +33,7 @@ func run() error {
 	}
 	dsn := os.Getenv("TF_IMPORT_DATABASE_URL")
 	cfg, err := pgx.ParseConfig(dsn)
-	if dsn == "" || err != nil || cfg.Host != "127.0.0.1" || cfg.Database != "trainforge_v1_dev" || cfg.Port != 15432 {
+	if dsn == "" || err != nil || (!postgres.HostedTarget(cfg, os.Getenv) && (cfg.Host != "127.0.0.1" || cfg.Database != "trainforge_v1_dev" || cfg.Port != 15432)) {
 		return errors.New("import is restricted to the isolated local development database")
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)

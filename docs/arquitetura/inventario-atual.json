@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "a794d850f51539dca77a3548adbccf76e23a5563d3dc782e54761d712d39684a",
+  "inputRevision": "37ad486e9fb14a57b8f553786f8d62aa5e7f7ed89178e72a292d4f29c6260966",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "8c99bc5411793d8d23228a1f3b10d71c17bebd7248e3217322152d1e7b60e218",
@@ -121,16 +121,17 @@
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
     "lib/shared/widgets/startup_page.dart": "f57230d55be844cd1d9654d70822ac2c8179b5ef0bd6cd5f07c0c7bfa56db71c",
-    "services/api/cmd/api/main.go": "c50062a67790c01c7db63c8b825b9ce4dc445e2df6bb8c528ec04f7a0f3c8f40",
+    "services/api/api/index.go": "e0537febd34f4c189ae3f5a50ee7aa52cabd6a660137675e1eb57eac21292e00",
+    "services/api/cmd/api/main.go": "da7e84e3337e3c9a45a36c426011b291be6f2aa1310c4ce6c8ae282d39c98bc6",
     "services/api/cmd/catalog-migrate/main.go": "baa58f3b644dfc8bcd5c3657f5495b04d8202e385166ca3ad968869fa6e313ff",
     "services/api/cmd/catalog-release/main.go": "19723348d4d564413ae2369ed7cdcd15b9c37f61b409f3fe17cb2c520c0cda16",
     "services/api/cmd/catalog-transition/main.go": "88a395068323dc02e4834028c9177fecac5f0bcb6c2d8dc8ad93f61ef3075de0",
     "services/api/cmd/catalog/main.go": "5a4d1938494bd3e0746189743ecbc6f0d051c88af225771f9d26479c5b82d8d9",
     "services/api/cmd/food-maintenance/main.go": "43c436158dbd9bf248446ea751d0920f29abbfa61afc03e2ea1ea7d8fd0d8ab6",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
-    "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
-    "services/api/cmd/import-food-catalog/main.go": "d3a447dd26badd333e2e96533debc2ba89c35a96ca8a821621a48777770340d7",
-    "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
+    "services/api/cmd/import-content/main.go": "470cf2c478843cd425e8fc08d295c588d409498cfa00f411762316630aeec5d2",
+    "services/api/cmd/import-food-catalog/main.go": "73589aa2e6e9ea289ba9f21ab45245799b34141ffb0071e5f38584d43d8feaf3",
+    "services/api/cmd/import-food/main.go": "3bff1ec22e9ed7a39a6c566b9b86d20f9aaf1095cb77441addaab543bb74f506",
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
     "services/api/cmd/privacy-maintenance/main.go": "4beac3b5fc92b092780a8b58f176b90ac2259b3fdd8a5045d0b2ec4b8bb4da84",
     "services/api/cmd/privacy-restore/main.go": "2e18dfda39c00e7d45b4f7b5377b2cca7f9aa17f33845a76269a9e97f44e80ff",
@@ -142,6 +143,7 @@
     "services/api/internal/activity/prescription.go": "d19c37f674dad0b9c3de4ee5e9cf73a9248a7de42c49926cc236ad61a452cba3",
     "services/api/internal/activity/service.go": "49d991de4addcfeef7df2f25915c12839ddea09f614718f01cb0771f10172bee",
     "services/api/internal/activity/session.go": "a78df275de1428b02785e6d1e2e39721a46bff0d620d2007d54f103a0e1cb791",
+    "services/api/internal/app/app.go": "a2625fdb787a7a89c9d87ae74cff82a4736d425b626dc7916c956224828eae86",
     "services/api/internal/auth/doc.go": "8139fc3bc1fb0a4ecf86bcc2a26dbbfea0a950536b72503d6af1b82f50674da9",
     "services/api/internal/auth/google.go": "c2f8052eaf2419412d421a13c311de99d6a26eeb467537bbb95217add8253be9",
     "services/api/internal/auth/handler.go": "5745d4396a4eb2e1b54651f016678017a3974542dcc7328b129e2648dd80135a",
@@ -203,6 +205,7 @@
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
     "services/api/internal/platform/httpapi/observability.go": "fcd3be9dfa325d37e96c7720e4b9df9e6ba010bd4f38bc02f71e3611fc4d7dd0",
     "services/api/internal/platform/httpapi/server.go": "53c326ef0a15351bcd181a9037030e7f0f3d736bbb6d40a6accd89f621b5bbaf",
+    "services/api/internal/platform/postgres/hosted.go": "476e24fff253951af65b4ca25420495b35dc43e831fc13bc50292e39bc64b1d7",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
     "services/api/internal/platform/postgres/readiness.go": "5b381653f71c3150f207d50c42523c39feee6f2fa82601598bbea810d63ce7ed",
     "services/api/internal/privacy/handler.go": "0e9cd6b1624dc3f9994c60304ea6ba31de5408a79950ae6b24925cbbe280fc0d",
@@ -265,6 +268,7 @@
     "tools/food_catalog_package.py": "25811a0cc7d74a196fc2f2c838300e250dd1a2aa54985e4787048086a9932446",
     "tools/food_catalog_publish.py": "8e84e4fbf02a24581064d8475fabb4d2fc7a461f36a543283213fb417da7984d",
     "tools/food_catalog_resume.py": "0ee37a7388b619c647fa3ef845c2518dd1e72e996579169fb1de2a13ca206ff9",
+    "tools/food_catalog_slim.py": "10ccf531ee965cff3237b2f6ba698da898480a2c029c500cebd8a937f5c2084a",
     "tools/gerar_catalogo_m1_swagger.py": "4ccdc44d5be7869a0d9769ec02b4614b008478606f335c710c7bcd40a1d1d82c",
     "tools/gerar_diagramas.py": "5081a43639b7b4cb443692c1d1505ea43a97e0e783ae8bb6ef0cfde5d2d983f6",
     "tools/gerar_documentacao.py": "8e9717d497eb9f9bc912facb8de9e2e04f5c7d965f72493a6526d3c91f2de1fb",
@@ -341,7 +345,7 @@
   "coverage": {
     "dartFiles": 114,
     "httpCalls": 34,
-    "goFiles": 95,
+    "goFiles": 98,
     "goRegistrations": 53
   },
   "groups": [
@@ -2725,6 +2729,7 @@
   ],
   "go": {
     "files": [
+      "services/api/api/index.go",
       "services/api/cmd/api/main.go",
       "services/api/cmd/catalog/main.go",
       "services/api/cmd/catalog-migrate/main.go",
@@ -2744,6 +2749,7 @@
       "services/api/internal/activity/prescription.go",
       "services/api/internal/activity/service.go",
       "services/api/internal/activity/session.go",
+      "services/api/internal/app/app.go",
       "services/api/internal/auth/doc.go",
       "services/api/internal/auth/google.go",
       "services/api/internal/auth/handler.go",
@@ -2805,6 +2811,7 @@
       "services/api/internal/platform/httpapi/network.go",
       "services/api/internal/platform/httpapi/observability.go",
       "services/api/internal/platform/httpapi/server.go",
+      "services/api/internal/platform/postgres/hosted.go",
       "services/api/internal/platform/postgres/pool.go",
       "services/api/internal/platform/postgres/readiness.go",
       "services/api/internal/privacy/handler.go",
@@ -4148,6 +4155,7 @@
       }
     ],
     "packages": [
+      "api",
       "cmd/api",
       "cmd/catalog",
       "cmd/catalog-migrate",
@@ -4162,6 +4170,7 @@
       "cmd/privacy-maintenance",
       "cmd/privacy-restore",
       "internal/activity",
+      "internal/app",
       "internal/auth",
       "internal/catalog",
       "internal/catalogauthority",
@@ -4182,24 +4191,16 @@
     ],
     "imports": [
       [
-        "cmd/api",
-        "internal/activity"
+        "api",
+        "internal/app"
+      ],
+      [
+        "api",
+        "internal/platform/config"
       ],
       [
         "cmd/api",
-        "internal/auth"
-      ],
-      [
-        "cmd/api",
-        "internal/catalog"
-      ],
-      [
-        "cmd/api",
-        "internal/catalogbridge"
-      ],
-      [
-        "cmd/api",
-        "internal/nutrition"
+        "internal/app"
       ],
       [
         "cmd/api",
@@ -4208,26 +4209,6 @@
       [
         "cmd/api",
         "internal/platform/httpapi"
-      ],
-      [
-        "cmd/api",
-        "internal/platform/postgres"
-      ],
-      [
-        "cmd/api",
-        "internal/privacy"
-      ],
-      [
-        "cmd/api",
-        "internal/publiccatalog"
-      ],
-      [
-        "cmd/api",
-        "internal/swaggerdocs"
-      ],
-      [
-        "cmd/api",
-        "internal/trainingconfig"
       ],
       [
         "cmd/catalog",
@@ -4282,6 +4263,10 @@
         "internal/nutrition"
       ],
       [
+        "cmd/import-food-catalog",
+        "internal/platform/postgres"
+      ],
+      [
         "cmd/migrate",
         "migrations"
       ],
@@ -4304,6 +4289,54 @@
       [
         "internal/activity",
         "internal/platform/httpapi"
+      ],
+      [
+        "internal/app",
+        "internal/activity"
+      ],
+      [
+        "internal/app",
+        "internal/auth"
+      ],
+      [
+        "internal/app",
+        "internal/catalog"
+      ],
+      [
+        "internal/app",
+        "internal/catalogbridge"
+      ],
+      [
+        "internal/app",
+        "internal/nutrition"
+      ],
+      [
+        "internal/app",
+        "internal/platform/config"
+      ],
+      [
+        "internal/app",
+        "internal/platform/httpapi"
+      ],
+      [
+        "internal/app",
+        "internal/platform/postgres"
+      ],
+      [
+        "internal/app",
+        "internal/privacy"
+      ],
+      [
+        "internal/app",
+        "internal/publiccatalog"
+      ],
+      [
+        "internal/app",
+        "internal/swaggerdocs"
+      ],
+      [
+        "internal/app",
+        "internal/trainingconfig"
       ],
       [
         "internal/auth",

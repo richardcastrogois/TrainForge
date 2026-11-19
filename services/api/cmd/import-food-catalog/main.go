@@ -14,6 +14,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"trainforge.local/api/internal/nutrition"
+	"trainforge.local/api/internal/platform/postgres"
 )
 
 func main() {
@@ -55,11 +56,12 @@ func run(args []string, getenv func(string) string, out io.Writer) error {
 	}
 	dsn := getenv("TF_FOOD_CATALOG_DATABASE_URL")
 	cfg, e := pgx.ParseConfig(dsn)
-	if dsn == "" || e != nil || cfg.Host != "127.0.0.1" || cfg.Port != 15432 || cfg.User != "trainforge_migrator" || (cfg.Database != "trainforge_v1_dev" && !regexp.MustCompile(`^trainforge_v1_privacy_test_[a-f0-9]{12}$`).MatchString(cfg.Database)) || len(cfg.RuntimeParams) != 0 {
+	hosted := e == nil && postgres.HostedTarget(cfg, getenv)
+	if dsn == "" || e != nil || (!hosted && (cfg.Host != "127.0.0.1" || cfg.Port != 15432 || cfg.User != "trainforge_migrator" || (cfg.Database != "trainforge_v1_dev" && !regexp.MustCompile(`^trainforge_v1_privacy_test_[a-f0-9]{12}$`).MatchString(cfg.Database)) || len(cfg.RuntimeParams) != 0)) {
 		return errors.New("catalog writes require explicit owned local migrator target; connection details withheld")
 	}
 	for _, fallback := range cfg.Fallbacks {
-		if fallback.Host != "127.0.0.1" || fallback.Port != 15432 {
+		if !hosted && fallback.Host != "127.0.0.1" || fallback.Port != 15432 {
 			return errors.New("external catalog database fallback refused")
 		}
 	}
@@ -73,7 +75,7 @@ func run(args []string, getenv func(string) string, out io.Writer) error {
 	}
 	defer pool.Close()
 	var role string
-	if pool.QueryRow(ctx, "SELECT current_user").Scan(&role) != nil || role != "trainforge_migrator" {
+	if pool.QueryRow(ctx, "SELECT current_user").Scan(&role) != nil || (role != "trainforge_migrator" && !(hosted && role == postgres.HostedRole)) {
 		return errors.New("catalog writer role refused")
 	}
 	var result nutrition.CatalogImportResult

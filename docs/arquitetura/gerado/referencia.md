@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `a794d850f51539dc`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `37ad486e9fb14a57`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -11,7 +11,7 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 | Arquivos Dart | 114 |
 | Telas/widgets | 32 |
 | Literais HTTP Flutter | 34 |
-| Arquivos Go de produção | 95 |
+| Arquivos Go de produção | 98 |
 | Registros HTTP Go | 53 |
 | Operações em especificações versionadas | 58 |
 | Tabelas do núcleo declaradas em migrations | 38 |
@@ -154,7 +154,8 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 
 | Pacote | Importa internamente |
 | --- | --- |
-| cmd/api | internal/activity, internal/auth, internal/catalog, internal/catalogbridge, internal/nutrition, internal/platform/config, internal/platform/httpapi, internal/platform/postgres, internal/privacy, internal/publiccatalog, internal/swaggerdocs, internal/trainingconfig |
+| api | internal/app, internal/platform/config |
+| cmd/api | internal/app, internal/platform/config, internal/platform/httpapi |
 | cmd/catalog | internal/catalogruntime |
 | cmd/catalog-migrate | internal/catalogschema |
 | cmd/catalog-release | internal/catalogauthority, internal/catalogtarget |
@@ -163,11 +164,12 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 | cmd/food-names | internal/foodnamesops |
 | cmd/import-content | internal/catalog, internal/platform/postgres |
 | cmd/import-food | internal/nutrition, internal/platform/postgres |
-| cmd/import-food-catalog | internal/nutrition |
+| cmd/import-food-catalog | internal/nutrition, internal/platform/postgres |
 | cmd/migrate | migrations |
 | cmd/privacy-maintenance | internal/privacy |
 | cmd/privacy-restore | internal/privacy |
 | internal/activity | internal/auth, internal/catalogauthority, internal/platform/httpapi |
+| internal/app | internal/activity, internal/auth, internal/catalog, internal/catalogbridge, internal/nutrition, internal/platform/config, internal/platform/httpapi, internal/platform/postgres, internal/privacy, internal/publiccatalog, internal/swaggerdocs, internal/trainingconfig |
 | internal/auth | internal/platform/httpapi |
 | internal/catalog | internal/platform/httpapi |
 | internal/catalogauthority | nenhum import interno detectado |
