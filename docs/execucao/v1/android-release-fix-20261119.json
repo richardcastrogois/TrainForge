@@ -53,5 +53,12 @@
     "downloadUrl": "https://github.com/richardcastrogois/TrainForge/releases/latest/download/TrainForge.apk",
     "publicLatestDownloadHashVerified": true,
     "implementationCommit": "83f2225"
+  },
+  "ciBuildOutputFix": {
+    "workflow": ".github/workflows/documentacao.yml",
+    "observedFailure": "go: build output api already exists and is a directory",
+    "change": "Use RUNNER_TEMP/trainforge-api as explicit output",
+    "localBuildPassed": true,
+    "changesAppOrApiBehavior": false
   }
 }
