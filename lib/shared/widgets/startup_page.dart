@@ -11,11 +11,11 @@ class StartupPage extends StatelessWidget {
     value: const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: TrainForgeTheme.primary,
+      systemNavigationBarColor: TrainForgeTheme.canvas,
       systemNavigationBarIconBrightness: Brightness.light,
     ),
     child: Scaffold(
-      backgroundColor: TrainForgeTheme.primary,
+      backgroundColor: TrainForgeTheme.canvas,
       body: LayoutBuilder(
         builder: (context, constraints) => constraints.maxHeight < 400
             ? SafeArea(
@@ -25,7 +25,10 @@ class StartupPage extends StatelessWidget {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const TrainForgeMark(size: 64),
+                        const TrainForgeMark(
+                          size: 64,
+                          background: TrainForgeTheme.deep,
+                        ),
                         const SizedBox(height: 12),
                         Text(
                           label,
@@ -41,46 +44,35 @@ class StartupPage extends StatelessWidget {
                   ),
                 ),
               )
-            : SafeArea(
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    const Center(child: TrainForgeMark(size: 124)),
-                    Positioned(
-                      top: constraints.maxHeight / 2 + 70,
-                      left: 24,
-                      right: 24,
-                      child: const Text(
-                        'trainforge',
+            : Stack(
+                children: [
+                  // Same position and tile as the native splash and the first
+                  // frame of the entry sequence, so the hand-off is seamless.
+                  const Center(
+                    child: TrainForgeMark(
+                      size: 124,
+                      background: TrainForgeTheme.deep,
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 32 + MediaQuery.paddingOf(context).bottom,
+                    left: 24,
+                    right: 24,
+                    child: Semantics(
+                      liveRegion: true,
+                      child: Text(
+                        label,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontFamily: 'Inter',
-                          fontSize: 28,
-                          fontWeight: FontWeight.w700,
-                          color: TrainForgeTheme.accent,
+                          fontSize: 13,
+                          height: 1.35,
+                          color: Colors.white,
                         ),
                       ),
                     ),
-                    Positioned(
-                      bottom: 32,
-                      left: 24,
-                      right: 24,
-                      child: Semantics(
-                        liveRegion: true,
-                        child: Text(
-                          label,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontFamily: 'Inter',
-                            fontSize: 13,
-                            height: 1.35,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
       ),
     ),

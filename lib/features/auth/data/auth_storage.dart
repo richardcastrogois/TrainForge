@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../domain/auth_user.dart';
+import '../domain/auth_profile.dart';
 
 class AuthStorage {
   // A keystore/I/O failure must surface for retry, never silently erase tokens.
@@ -27,6 +28,34 @@ class AuthStorage {
       _serial(() async => (await _read())?['accessToken'] as String?);
   Future<String?> getRefreshToken() =>
       _serial(() async => (await _read())?['refreshToken'] as String?);
+  Future<AuthProfile?> offlineProfile(String expectedToken) => _serial(
+    () async {
+      final value = await _read();
+      if (value?['accessToken'] != expectedToken || value?['profile'] is! Map) {
+        return null;
+      }
+      return AuthProfile.fromJson(
+        Map<String, dynamic>.from(value!['profile'] as Map),
+      );
+    },
+  );
+  Future<void> cacheProfile(String expectedToken, AuthProfile profile) =>
+      _serial(() async {
+        final value = await _read();
+        if (value?['accessToken'] != expectedToken) return;
+        await _storage.write(
+          key: _key,
+          value: jsonEncode({
+            ...value!,
+            'profile': {
+              'id': profile.id,
+              'name': profile.name,
+              'email': profile.email,
+              'image': profile.image,
+            },
+          }),
+        );
+      });
   Future<void> saveSession(AuthUser session) => _serial(() async {
     await _write(session);
     await _storage.delete(key: 'auth_token');
@@ -36,6 +65,12 @@ class AuthStorage {
     value: jsonEncode({
       'accessToken': session.token,
       'refreshToken': session.refreshToken,
+      'profile': {
+        'id': session.id,
+        'name': session.name,
+        'email': session.email,
+        'image': session.image,
+      },
     }),
   );
   // Serialize compare-and-replace with login/logout to prevent stale refresh

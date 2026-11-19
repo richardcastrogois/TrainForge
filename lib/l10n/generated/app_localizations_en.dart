@@ -105,7 +105,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get connecting => 'Connecting…';
 
   @override
-  String get signInGoogle => 'Sign in with Google';
+  String get signInGoogle => 'Continue with Google';
 
   @override
   String get noAccount => 'Don\'t have an account yet?';
@@ -220,11 +220,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get googleConfiguration =>
-      'Google sign-in is not configured in this environment. Check the evaluation guide.';
+      'Google sign-in is not available in this version of the app. You can explore without an account.';
 
   @override
   String get authConfiguration =>
-      'The authentication environment needs configuration. Check the evaluation guide.';
+      'Sign-in is temporarily unavailable. Try again later or explore without an account.';
 
   @override
   String get sessionExpired =>
@@ -2208,4 +2208,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get activityPendingExit =>
       'If you leave or close the app while a response is pending, check this session before recording again.';
+
+  @override
+  String get googleUnavailable =>
+      'Google sign-in could not open on this device. Try again or explore without an account.';
+
+  @override
+  String get exploreWithoutAccount => 'Explore the app without an account';
+
+  @override
+  String get moreOptions => 'More options';
+
+  @override
+  String get guestTitle => 'Explore TrainForge';
+
+  @override
+  String get guestHint =>
+      'Browse the exercise library and foods. To save workouts and meals, continue with Google.';
+
+  @override
+  String get guestLibraryHint => 'Movements with instructions and sources.';
+
+  @override
+  String get guestFoodHint => 'Nutrients per portion, without logging intake.';
+
+  @override
+  String get brandTraining => 'Training';
+
+  @override
+  String get brandFood => 'Food';
+
+  @override
+  String get brandProgress => 'Progress';
+
+  @override
+  String get firstAccessLink => 'First time? See how it works';
+
+  @override
+  String get firstAccessTitle => 'How your first access works';
+
+  @override
+  String get firstAccessStep1Title => 'Continue with Google';
+
+  @override
+  String get firstAccessStep1Body =>
+      'Your TrainForge account is created right away. There is no new password to remember.';
+
+  @override
+  String get firstAccessStep2Title => 'What we keep';
+
+  @override
+  String get firstAccessStep2Body =>
+      'Only your name and the verified email of your Google account. Your workouts and meals stay in your account, and you can delete them in Privacy.';
+
+  @override
+  String get firstAccessStep3Title => 'Rather look around first?';
+
+  @override
+  String get firstAccessStep3Body =>
+      'Browse the movement library and foods without creating an account.';
+
+  @override
+  String get brandPillars => 'Training, food and progress';
+
+  @override
+  String get brandTagline => 'Training, food and progress in one place.';
+
+  @override
+  String get ringTrainingLow =>
+      'Training often gives you more energy for your day.';
+
+  @override
+  String get ringFoodLow =>
+      'Eating well fuels your training and your recovery.';
+
+  @override
+  String get ringProgressLow => 'Tracking your progress shows what is working.';
+
+  @override
+  String get logoPulse => 'Feel TrainForge\'s pulse';
 }

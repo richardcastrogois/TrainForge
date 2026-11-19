@@ -32,8 +32,9 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      expect(find.byType(TrainForgeBrand), findsOneWidget);
-      await t.scrollUntilVisible(find.text('Entrar com Google'), 100);
+      expect(find.byType(TrainForgeMark), findsWidgets);
+      expect(find.text('TrainForge'), findsOneWidget);
+      await t.scrollUntilVisible(find.text('Continuar com o Google'), 100);
       expect(t.takeException(), isNull);
       expect(find.byType(TextField), findsNothing);
     },

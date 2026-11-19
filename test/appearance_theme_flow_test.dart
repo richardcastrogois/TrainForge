@@ -140,11 +140,8 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.scrollUntilVisible(
-        find.text('Aparência'),
-        160,
-        scrollable: find.byType(Scrollable).first,
-      );
+      await t.tap(find.byTooltip('Mais opções'));
+      await t.pumpAndSettle();
       await t.tap(find.text('Aparência'));
       await t.pumpAndSettle();
       await t.tap(find.text('Escuro'));
@@ -168,7 +165,7 @@ void main() {
       await t.pumpAndSettle();
       expect(second.mode, ThemeMode.dark);
       expect(
-        Theme.of(t.element(find.text('Entrar com Google'))).brightness,
+        Theme.of(t.element(find.text('Que bom ter você por aqui.'))).brightness,
         Brightness.dark,
       );
     },

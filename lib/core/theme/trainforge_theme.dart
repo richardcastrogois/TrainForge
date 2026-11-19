@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
+import 'brand_mark.dart';
 import 'trainforge_colors.dart';
 export 'trainforge_colors.dart';
 
@@ -8,6 +9,13 @@ abstract final class TrainForgeTheme {
   static const ink = Color(0xff142f2c), muted = Color(0xff64736e);
   static const primary = Color(0xff215e52), accent = Color(0xffd8eb90);
   static const nutrition = Color(0xfff5e3d5), soft = Color(0xffe8eee3);
+
+  /// Deep green used for the mark tile on the brand-green canvas.
+  static const deep = Color(0xff174639);
+
+  /// Softer green canvas of the splash and the signed-out entry; native
+  /// launch screens use the same value (tf_canvas_green / LaunchScreen).
+  static const canvas = Color(0xff2b6b5e);
   static ThemeData get light => build(Brightness.light);
   static ThemeData get dark => build(Brightness.dark);
   static ThemeData build(Brightness brightness) {
@@ -210,31 +218,57 @@ abstract final class TrainForgeTheme {
 
 class TrainForgeMark extends StatelessWidget {
   final double size;
-  const TrainForgeMark({super.key, this.size = 34});
+
+  /// Tile colour; the deep variant sits on the brand-green canvas.
+  final Color background;
+  const TrainForgeMark({
+    super.key,
+    this.size = 34,
+    this.background = TrainForgeTheme.primary,
+  });
   @override
-  Widget build(BuildContext context) => Container(
-    width: size,
-    height: size,
-    alignment: Alignment.center,
-    decoration: BoxDecoration(
-      color: TrainForgeTheme.primary,
-      borderRadius: BorderRadius.circular(size * 11 / 34),
-    ),
-    child: Text(
-      'TF',
-      textScaler: TextScaler.noScaling,
-      style: TextStyle(
-        fontFamily: 'Inter',
-        fontSize: size * 18 / 34,
-        fontWeight: FontWeight.w700,
-        color: TrainForgeTheme.accent,
+  Widget build(BuildContext context) => Semantics(
+    label: 'TF',
+    excludeSemantics: true,
+    child: Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        color: background,
+        borderRadius: BorderRadius.circular(size * 11 / 34),
       ),
+      child: CustomPaint(painter: TrainForgeMarkPainter()),
     ),
   );
 }
 
+class TrainForgeMarkPainter extends CustomPainter {
+  final double progress;
+  TrainForgeMarkPainter({this.progress = 1});
+  @override
+  void paint(Canvas canvas, Size size) {
+    final inset = size.width * .1;
+    HeartbeatGlyph.paint(
+      canvas,
+      Rect.fromLTWH(
+        inset,
+        inset,
+        size.width - inset * 2,
+        size.height - inset * 2,
+      ),
+      TrainForgeTheme.accent,
+      progress: progress,
+    );
+  }
+
+  @override
+  bool shouldRepaint(TrainForgeMarkPainter old) => old.progress != progress;
+}
+
 class TrainForgeBrand extends StatelessWidget {
-  const TrainForgeBrand({super.key});
+  /// Lime wordmark and deep tile for the brand-green canvas.
+  final bool onBrand;
+  const TrainForgeBrand({super.key, this.onBrand = false});
   @override
   Widget build(BuildContext context) => Semantics(
     label: 'TrainForge',
@@ -242,16 +276,24 @@ class TrainForgeBrand extends StatelessWidget {
     child: Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const TrainForgeMark(),
+        TrainForgeMark(
+          background: onBrand ? TrainForgeTheme.deep : TrainForgeTheme.primary,
+        ),
         const SizedBox(width: 10),
         Flexible(
-          child: Text(
-            'trainforge',
-            style: TextStyle(
-              fontFamily: 'Inter',
-              fontSize: 23,
-              fontWeight: FontWeight.w700,
-              color: context.tf.primary,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'TrainForge',
+              maxLines: 1,
+              softWrap: false,
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 23,
+                fontWeight: FontWeight.w700,
+                color: onBrand ? TrainForgeTheme.accent : context.tf.primary,
+              ),
             ),
           ),
         ),

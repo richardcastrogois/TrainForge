@@ -279,7 +279,7 @@ abstract class AppLocalizations {
   /// No description provided for @signInGoogle.
   ///
   /// In en, this message translates to:
-  /// **'Sign in with Google'**
+  /// **'Continue with Google'**
   String get signInGoogle;
 
   /// No description provided for @noAccount.
@@ -501,13 +501,13 @@ abstract class AppLocalizations {
   /// No description provided for @googleConfiguration.
   ///
   /// In en, this message translates to:
-  /// **'Google sign-in is not configured in this environment. Check the evaluation guide.'**
+  /// **'Google sign-in is not available in this version of the app. You can explore without an account.'**
   String get googleConfiguration;
 
   /// No description provided for @authConfiguration.
   ///
   /// In en, this message translates to:
-  /// **'The authentication environment needs configuration. Check the evaluation guide.'**
+  /// **'Sign-in is temporarily unavailable. Try again later or explore without an account.'**
   String get authConfiguration;
 
   /// No description provided for @sessionExpired.
@@ -4007,6 +4007,150 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you leave or close the app while a response is pending, check this session before recording again.'**
   String get activityPendingExit;
+
+  /// No description provided for @googleUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Google sign-in could not open on this device. Try again or explore without an account.'**
+  String get googleUnavailable;
+
+  /// No description provided for @exploreWithoutAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the app without an account'**
+  String get exploreWithoutAccount;
+
+  /// No description provided for @moreOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'More options'**
+  String get moreOptions;
+
+  /// No description provided for @guestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore TrainForge'**
+  String get guestTitle;
+
+  /// No description provided for @guestHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse the exercise library and foods. To save workouts and meals, continue with Google.'**
+  String get guestHint;
+
+  /// No description provided for @guestLibraryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Movements with instructions and sources.'**
+  String get guestLibraryHint;
+
+  /// No description provided for @guestFoodHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Nutrients per portion, without logging intake.'**
+  String get guestFoodHint;
+
+  /// No description provided for @brandTraining.
+  ///
+  /// In en, this message translates to:
+  /// **'Training'**
+  String get brandTraining;
+
+  /// No description provided for @brandFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food'**
+  String get brandFood;
+
+  /// No description provided for @brandProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get brandProgress;
+
+  /// No description provided for @firstAccessLink.
+  ///
+  /// In en, this message translates to:
+  /// **'First time? See how it works'**
+  String get firstAccessLink;
+
+  /// No description provided for @firstAccessTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How your first access works'**
+  String get firstAccessTitle;
+
+  /// No description provided for @firstAccessStep1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get firstAccessStep1Title;
+
+  /// No description provided for @firstAccessStep1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your TrainForge account is created right away. There is no new password to remember.'**
+  String get firstAccessStep1Body;
+
+  /// No description provided for @firstAccessStep2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'What we keep'**
+  String get firstAccessStep2Title;
+
+  /// No description provided for @firstAccessStep2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Only your name and the verified email of your Google account. Your workouts and meals stay in your account, and you can delete them in Privacy.'**
+  String get firstAccessStep2Body;
+
+  /// No description provided for @firstAccessStep3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Rather look around first?'**
+  String get firstAccessStep3Title;
+
+  /// No description provided for @firstAccessStep3Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse the movement library and foods without creating an account.'**
+  String get firstAccessStep3Body;
+
+  /// No description provided for @brandPillars.
+  ///
+  /// In en, this message translates to:
+  /// **'Training, food and progress'**
+  String get brandPillars;
+
+  /// No description provided for @brandTagline.
+  ///
+  /// In en, this message translates to:
+  /// **'Training, food and progress in one place.'**
+  String get brandTagline;
+
+  /// No description provided for @ringTrainingLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Training often gives you more energy for your day.'**
+  String get ringTrainingLow;
+
+  /// No description provided for @ringFoodLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Eating well fuels your training and your recovery.'**
+  String get ringFoodLow;
+
+  /// No description provided for @ringProgressLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Tracking your progress shows what is working.'**
+  String get ringProgressLow;
+
+  /// No description provided for @logoPulse.
+  ///
+  /// In en, this message translates to:
+  /// **'Feel TrainForge\'s pulse'**
+  String get logoPulse;
 }
 
 class _AppLocalizationsDelegate

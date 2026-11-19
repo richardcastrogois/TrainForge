@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import '../domain/auth_profile.dart';
 
 enum AuthAction { restore, login, logout }
@@ -10,10 +11,13 @@ enum AuthFeedback {
     "A confirmação da sessão demorou mais que o esperado. Sua sessão foi preservada; tente novamente ou consulte a biblioteca sem entrar.",
   ),
   googleConfiguration(
-    "O login Google não está configurado neste ambiente. Confira o roteiro de avaliação.",
+    "O login com Google não está disponível nesta versão do app. Você pode explorar sem conta.",
   ),
   authConfiguration(
-    "O ambiente de autenticação precisa de configuração. Confira o roteiro de avaliação.",
+    "O acesso está indisponível no momento. Tente mais tarde ou explore sem conta.",
+  ),
+  googleUnavailable(
+    "Não foi possível abrir o login do Google neste aparelho. Tente novamente ou explore sem conta.",
   ),
   sessionExpired(
     "A sessão expirou ou foi revogada. Entre novamente com Google.",
@@ -42,10 +46,14 @@ class AuthController extends ChangeNotifier {
   final Duration restoreTimeout;
   AuthController(
     this.repository, {
-    this.restoreTimeout = const Duration(seconds: 30),
+    this.restoreTimeout = const Duration(seconds: 10),
   });
   AuthProfile? profile;
   bool busy = false;
+
+  /// Action in flight; only [AuthAction.restore] should cover the screen.
+  AuthAction? running;
+  bool get restoring => busy && running == AuthAction.restore;
   AuthFeedback? feedback;
   String? get message => feedback?.fallback;
   AuthAction? failedAction;
@@ -71,6 +79,7 @@ class AuthController extends ChangeNotifier {
   Future<void> _run(AuthAction action) async {
     if (busy || _disposed) return;
     busy = true;
+    running = action;
     feedback = null;
     failedAction = null;
     notifyListeners();
@@ -97,6 +106,22 @@ class AuthController extends ChangeNotifier {
         failedAction = action;
       }
       // Cancellation leaves the signed-out screen usable, without treating consent as failure.
+    } on GoogleSignInException catch (error) {
+      // Cancellation keeps the signed-out screen usable without blaming the user.
+      switch (error.code) {
+        case GoogleSignInExceptionCode.canceled:
+          break;
+        case GoogleSignInExceptionCode.clientConfigurationError:
+        case GoogleSignInExceptionCode.providerConfigurationError:
+          feedback = AuthFeedback.googleConfiguration;
+          failedAction = action;
+        case GoogleSignInExceptionCode.uiUnavailable:
+          feedback = AuthFeedback.googleUnavailable;
+          failedAction = action;
+        default:
+          feedback = AuthFeedback.signInFailed;
+          failedAction = action;
+      }
     } on StateError catch (_) {
       feedback = AuthFeedback.authConfiguration;
       failedAction = action;
@@ -123,6 +148,7 @@ class AuthController extends ChangeNotifier {
       failedAction = action;
     } finally {
       busy = false;
+      running = null;
       if (!_disposed) notifyListeners();
     }
   }

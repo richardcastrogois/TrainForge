@@ -6,14 +6,26 @@ import '../domain/auth_user.dart';
 import '../domain/auth_profile.dart';
 import 'auth_api.dart';
 import 'auth_storage.dart';
+import '../../nutrition/data/nutrition_local_store.dart';
 
 class AuthRepository implements SessionRepository {
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
   final AuthApi _api;
   final AuthStorage _storage;
-  AuthRepository({AuthApi? api, AuthStorage? storage})
-    : _api = api ?? AuthApi(),
-      _storage = storage ?? AuthStorage();
+  final Future<bool> Function(String) _accountErased;
+  final Future<bool> Function(String) _accountLocked;
+  final Future<void> Function(String) _unlockAccount;
+  AuthRepository({
+    AuthApi? api,
+    AuthStorage? storage,
+    Future<bool> Function(String)? accountErased,
+    Future<bool> Function(String)? accountLocked,
+    Future<void> Function(String)? unlockAccount,
+  }) : _api = api ?? AuthApi(),
+       _storage = storage ?? AuthStorage(),
+       _accountErased = accountErased ?? NutritionLocalStore.isErased,
+       _accountLocked = accountLocked ?? NutritionLocalStore.isLocked,
+       _unlockAccount = unlockAccount ?? NutritionLocalStore.unlockAccount;
 
   static Future<void>? _initialization;
   Future<void> _ensureInitialized() async {
@@ -59,6 +71,7 @@ class AuthRepository implements SessionRepository {
     }
     final session = await _api.loginWithGoogleIdToken(idToken);
     await _storage.saveSession(session);
+    await _unlockAccount(session.id);
     return session;
   }
 
@@ -80,11 +93,28 @@ class AuthRepository implements SessionRepository {
     final token = await _storage.getToken();
     if (token == null || token.isEmpty) return null;
     try {
-      return AuthProfile.fromJson(await _api.getMe());
+      final profile = AuthProfile.fromJson(await _api.getMe());
+      if (await _accountErased(profile.id)) {
+        await _storage.clearIfAccessToken(token);
+        return null;
+      }
+      await _storage.cacheProfile(token, profile);
+      await _unlockAccount(profile.id);
+      return profile;
     } on DioException catch (error) {
       if (error.response?.statusCode == 401) {
         await _storage.clearIfAccessToken(token);
         return null;
+      }
+      // A cached profile unlocks only account-scoped local data. All HTTP
+      // operations still require live authorization and the normal interceptor.
+      if (error.response == null || (error.response?.statusCode ?? 0) >= 500) {
+        final cached = await _storage.offlineProfile(token);
+        if (cached != null &&
+            !await _accountErased(cached.id) &&
+            !await _accountLocked(cached.id)) {
+          return cached;
+        }
       }
       rethrow;
     }

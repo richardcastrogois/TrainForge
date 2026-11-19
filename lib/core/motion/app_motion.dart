@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 abstract final class AppMotion {
   static const duration = Duration(milliseconds: 220);
+
+  /// Long brand sequences (entry splash, idle heartbeat). Widget tests turn it
+  /// off in `test/flutter_test_config.dart` so `pumpAndSettle` can settle.
+  static bool ambient = true;
   static bool reduced(BuildContext context) {
     final media = MediaQuery.maybeOf(context);
     if (media != null) {

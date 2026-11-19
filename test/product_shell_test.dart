@@ -216,7 +216,7 @@ void main() {
       auth.accountErased(fixtureProfile.id);
       await t.pumpAndSettle();
       expect(find.text(fixtureProfile.email), findsNothing);
-      expect(find.text('Entrar com Google'), findsOneWidget);
+      expect(find.text('Continuar com o Google'), findsOneWidget);
       expect(find.byType(ProductShell), findsNothing);
     },
   );

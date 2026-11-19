@@ -116,7 +116,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(repo.logouts, 2);
       expect(repo.restores, 1);
-      expect(find.text('Entrar com Google'), findsOneWidget);
+      expect(find.text('Continuar com o Google'), findsOneWidget);
       controller.dispose();
     },
   );
@@ -141,6 +141,8 @@ void main() {
       expect(find.textContaining('Sua sessão foi preservada'), findsOneWidget);
       expect(find.textContaining('secret'), findsNothing);
       repo.restoreError = null;
+      await tester.ensureVisible(find.text('Tentar novamente'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Tentar novamente'));
       await tester.pumpAndSettle();
       expect(repo.restores, 2);
@@ -173,7 +175,7 @@ void main() {
         ..loginError = const SessionException(SessionFailure.configuration);
       final controller = AuthController(repo);
       await controller.login();
-      expect(controller.message, contains('não está configurado'));
+      expect(controller.message, contains('não está disponível nesta versão'));
       final req = RequestOptions(path: '/api/v1/auth/google');
       repo.loginError = DioException(
         requestOptions: req,

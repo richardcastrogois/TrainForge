@@ -56,13 +56,15 @@ class _AuthGateState extends State<AuthGate> {
     listenable: controller,
     builder: (context, _) {
       final profile = controller.profile;
-      if (controller.busy && profile == null) {
+      // Only session restoration covers the screen; sign-in keeps the entry visible.
+      if (controller.restoring && profile == null) {
         return StartupPage(label: context.l10n.restoringSession);
       }
       if (profile == null) {
-        return AppAppear(
+        // No fade: the entry continues the splash on the same green canvas.
+        return AuthPage(
           key: const ValueKey('signed-out'),
-          child: AuthPage(controller: controller),
+          controller: controller,
         );
       }
       return AppAppear(

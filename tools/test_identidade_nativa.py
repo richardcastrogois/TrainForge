@@ -22,7 +22,7 @@ class NativeBrandTests(unittest.TestCase):
         for directory in ['values-v31','values-night-v31']:
             tree=ET.parse(brand.ROOT/('android/app/src/main/res/'+directory+'/styles.xml')).getroot()
             values={n.get('name'):n.text for n in tree.find('style').findall('item')}
-            self.assertEqual(values['android:windowSplashScreenBackground'],'@color/tf_brand_green')
+            self.assertEqual(values['android:windowSplashScreenBackground'],'@color/tf_canvas_green')
             self.assertEqual(values['android:windowSplashScreenAnimatedIcon'],'@drawable/tf_splash')
         ET.parse(brand.ROOT/'ios/Runner/Base.lproj/LaunchScreen.storyboard')
         self.assertIn('LaunchImage',(brand.ROOT/'ios/Runner/Base.lproj/LaunchScreen.storyboard').read_text())

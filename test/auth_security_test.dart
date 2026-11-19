@@ -5,14 +5,27 @@ import 'package:trainforge/core/http/app_dio.dart';
 import 'package:trainforge/features/auth/data/auth_api.dart';
 import 'package:trainforge/features/auth/data/auth_repository.dart';
 import 'package:trainforge/features/auth/data/auth_storage.dart';
+import 'package:trainforge/features/auth/domain/auth_profile.dart';
 
 class MemoryStorage extends AuthStorage {
   String? token = 'access-secret';
+  AuthProfile? cachedProfile;
+  @override
+  Future<AuthProfile?> offlineProfile(String expectedToken) async =>
+      token == expectedToken ? cachedProfile : null;
+  @override
+  Future<void> cacheProfile(String expectedToken, AuthProfile profile) async {
+    if (token == expectedToken) cachedProfile = profile;
+  }
+
   @override
   Future<String?> getToken() async => token;
   @override
   Future<void> clearIfAccessToken(String expected) async {
-    if (token == expected) token = null;
+    if (token == expected) {
+      token = null;
+      cachedProfile = null;
+    }
   }
 
   @override
@@ -28,6 +41,15 @@ class FailingApi extends AuthApi {
   FailingApi(this.failure);
   @override
   Future<Map<String, dynamic>> getMe() async => throw failure;
+}
+
+class SuccessfulApi extends AuthApi {
+  @override
+  Future<Map<String, dynamic>> getMe() async => {
+    'id': 'fixture-account',
+    'name': 'Fixture',
+    'email': 'fixture@example.invalid',
+  };
 }
 
 class ResponseAdapter implements HttpClientAdapter {
@@ -120,4 +142,114 @@ void main() {
       },
     );
   }
+  test(
+    'offline profile restores only after prior login and never bypasses a confirmed 401',
+    () async {
+      final storage = MemoryStorage()
+        ..cachedProfile = const AuthProfile(
+          id: 'fixture-account',
+          name: 'Fixture',
+          email: 'fixture@example.invalid',
+        );
+      final request = RequestOptions(path: '/me');
+      final offline = AuthRepository(
+        storage: storage,
+        accountErased: (_) async => false,
+        accountLocked: (_) async => false,
+        api: FailingApi(
+          DioException(
+            requestOptions: request,
+            type: DioExceptionType.connectionError,
+          ),
+        ),
+      );
+      expect((await offline.restoreSession())?.id, 'fixture-account');
+      final revoked = AuthRepository(
+        storage: storage,
+        accountErased: (_) async => false,
+        api: FailingApi(
+          DioException(
+            requestOptions: request,
+            type: DioExceptionType.badResponse,
+            response: Response(requestOptions: request, statusCode: 401),
+          ),
+        ),
+      );
+      expect(await revoked.restoreSession(), isNull);
+      expect(storage.cachedProfile, isNull);
+    },
+  );
+  test(
+    'an erasure tombstone prevents offline reopening with cached credentials',
+    () async {
+      final storage = MemoryStorage()
+        ..cachedProfile = const AuthProfile(
+          id: 'erased-fixture',
+          name: 'Fixture',
+          email: 'fixture@example.invalid',
+        );
+      final request = RequestOptions(path: '/me');
+      final repository = AuthRepository(
+        storage: storage,
+        accountErased: (_) async => true,
+        api: FailingApi(
+          DioException(
+            requestOptions: request,
+            type: DioExceptionType.connectionError,
+          ),
+        ),
+      );
+      await expectLater(
+        repository.restoreSession(),
+        throwsA(isA<DioException>()),
+      );
+    },
+  );
+  test(
+    'a persisted reauthentication lock blocks cached offline restore after repository recreation',
+    () async {
+      final storage = MemoryStorage()
+        ..cachedProfile = const AuthProfile(
+          id: 'locked-fixture',
+          name: 'Fixture',
+          email: 'fixture@example.invalid',
+        );
+      final request = RequestOptions(path: '/me');
+      final reopened = AuthRepository(
+        storage: storage,
+        accountErased: (_) async => false,
+        accountLocked: (_) async => true,
+        api: FailingApi(
+          DioException(
+            requestOptions: request,
+            type: DioExceptionType.connectionError,
+          ),
+        ),
+      );
+      await expectLater(
+        reopened.restoreSession(),
+        throwsA(isA<DioException>()),
+      );
+      expect(storage.cachedProfile?.id, 'locked-fixture');
+    },
+  );
+  test(
+    'a successful online identity check unlocks only the returned account',
+    () async {
+      final storage = MemoryStorage();
+      final unlocked = <String>[];
+      final repository = AuthRepository(
+        storage: storage,
+        api: SuccessfulApi(),
+        accountErased: (_) async => false,
+        accountLocked: (_) async => true,
+        unlockAccount: (id) async {
+          unlocked.add(id);
+        },
+      );
+      expect((await repository.restoreSession())?.id, 'fixture-account');
+      expect(unlocked, ['fixture-account']);
+      expect(storage.cachedProfile?.id, 'fixture-account');
+    },
+  );
 }
